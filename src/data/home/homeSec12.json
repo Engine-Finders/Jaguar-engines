@@ -1,0 +1,33 @@
+{
+  "subHeadline": "Built on real data, verified by specialists, and completely independent — no sponsors, no bias, just honest advice.",
+  "headerImage": {
+    "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=900&q=80",
+    "alt": "BMW trust"
+  },
+  "signals": [
+    {
+      "id": 1,
+      "icon": "📊",
+      "title": "Built on Real Data",
+      "description": "Every reliability rating and cost range comes from genuine UK quote and enquiry data — not manufacturer marketing, not forum guesswork. 24,650+ real enquiries in 2025 [BMW-VERIFIED]."
+    },
+    {
+      "id": 2,
+      "icon": "💚",
+      "title": "We Tell You When Not to Repair",
+      "description": "Where replacement cost exceeds what the car is worth, we say so. That's the difference between a knowledge base and a sales page. Our 70% BMW threshold is the line."
+    },
+    {
+      "id": 3,
+      "icon": "🔧",
+      "title": "Vetted BMW Specialists",
+      "description": "Every specialist in our network is vetted specifically for BMW work — not generalists who happen to take on BMW jobs. 20+ vetted BMW specialists across the UK."
+    },
+    {
+      "id": 4,
+      "icon": "🏆",
+      "title": "Part of Engine Finders",
+      "description": "BMWEngines.uk is part of the Engine Finders family, the UK's leading engine replacement marketplace — giving you the research depth of an independent authority with a vetted route to action when you need one."
+    }
+  ]
+}

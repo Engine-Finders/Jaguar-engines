@@ -1,65 +1,57 @@
-import Image from "next/image";
+import Navbar from "@/components/shared/Navbar";
+import Footer from "@/components/shared/Footer";
+import HomeSec1 from "@/components/home/HomeSec1";
+import HomeSec2 from "@/components/home/HomeSec2";
+import HomeSec3 from "@/components/home/HomeSec3";
+import HomeSec4 from "@/components/home/HomeSec4";
+import HomeSec5 from "@/components/home/HomeSec5";
+import HomeSec6 from "@/components/home/HomeSec6";
+import HomeSec7 from "@/components/home/HomeSec7";
+import HomeSec8 from "@/components/home/HomeSec8";
+import HomeSec9 from "@/components/home/HomeSec9";
+import HomeSec10 from "@/components/home/HomeSec10";
+import HomeSec11 from "@/components/home/HomeSec11";
+import HomeSec12 from "@/components/home/HomeSec12";
+import HomeSec13 from "@/components/home/HomeSec13";
+import HomeSec14 from "@/components/home/HomeSec14";
+import navbarData from "@/data/shared/navbar.json";
+import footerData from "@/data/shared/footer.json";
+import homeSec1Data from "@/data/home/homeSec1.json";
+import homeSec2Data from "@/data/home/homeSec2.json";
+import homeSec3Data from "@/data/home/homeSec3.json";
+import homeSec4Data from "@/data/home/homeSec4.json";
+import homeSec5Data from "@/data/home/homeSec5.json";
+import homeSec6Data from "@/data/home/homeSec6.json";
+import homeSec7Data from "@/data/home/homeSec7.json";
+import homeSec8Data from "@/data/home/homeSec8.json";
+import homeSec9Data from "@/data/home/homeSec9.json";
+import homeSec10Data from "@/data/home/homeSec10.json";
+import homeSec11Data from "@/data/home/homeSec11.json";
+import homeSec12Data from "@/data/home/homeSec12.json";
+import homeSec13Data from "@/data/home/homeSec13.json";
+import homeSec14Data from "@/data/home/homeSec14.json";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+    <div className="flex min-h-full flex-col bg-white text-black">
+      <Navbar data={navbarData} />
+      <main className="flex-1">
+        <HomeSec1 data={homeSec1Data} />
+        <HomeSec2 data={homeSec2Data} />
+        <HomeSec3 data={homeSec3Data} />
+        <HomeSec4 data={homeSec4Data} />
+        <HomeSec5 data={homeSec5Data} />
+        <HomeSec6 data={homeSec6Data} />
+        <HomeSec7 data={homeSec7Data} />
+        <HomeSec8 data={homeSec8Data} />
+        <HomeSec9 data={homeSec9Data} />
+        <HomeSec10 data={homeSec10Data} />
+        <HomeSec11 data={homeSec11Data} />
+        <HomeSec12 data={homeSec12Data} />
+        <HomeSec13 data={homeSec13Data} />
+        <HomeSec14 data={homeSec14Data} />
       </main>
+      <Footer data={footerData} />
     </div>
   );
 }

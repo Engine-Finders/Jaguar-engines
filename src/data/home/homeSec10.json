@@ -1,0 +1,122 @@
+{
+  "subHeadline": "Drawn from real UK enquiries, not estimates. This is the data competitors can't replicate — 24,650+ real enquiries, 50+ engine codes tracked, and live market insights updated monthly.",
+  "headerImage": {
+    "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=900&q=80",
+    "alt": "BMW market intelligence"
+  },
+  "stats": [
+    { "icon": "👥", "label": "24,650+ Real UK Enquiries in 2025" },
+    { "icon": "⚙️", "label": "50+ Engine Codes Tracked" },
+    { "icon": "🔄", "label": "Updated Monthly" }
+  ],
+  "engines": {
+    "title": "Most-Enquired BMW Engines (2025)",
+    "icon": "⚙️",
+    "columns": ["RANK", "ENGINE CODE", "LABEL", "ENQUIRIES"],
+    "rows": [
+      { "rank": 1, "code": "N47D20C", "label": "2.0L Diesel", "enquiries": "1,450 [BMW-VERIFIED]" },
+      { "rank": 2, "code": "B47D20A", "label": "2.0L Diesel", "enquiries": "930 [BMW-VERIFIED]" },
+      { "rank": 3, "code": "N57D30", "label": "3.0L Diesel", "enquiries": "830 [BMW-VERIFIED]" },
+      { "rank": 4, "code": "B58B30", "label": "3.0L Petrol", "enquiries": "540 [BMW-VERIFIED]" },
+      { "rank": 5, "code": "B57D30", "label": "3.0L Diesel", "enquiries": "460 [BMW-VERIFIED]" },
+      { "rank": 6, "code": "N63B44", "label": "4.4L V8 Petrol", "enquiries": "440 [BMW-VERIFIED]" },
+      { "rank": 7, "code": "S63B44", "label": "4.4L V8 M Engine", "enquiries": "410 [BMW-VERIFIED]" }
+    ]
+  },
+  "models": {
+    "title": "Most-Enquired BMW Models (2025)",
+    "icon": "🚗",
+    "columns": ["RANK", "MODEL", "ENQUIRIES"],
+    "rows": [
+      { "rank": 1, "model": "BMW 3 Series F30", "enquiries": "380 [BMW-VERIFIED]" },
+      { "rank": 2, "model": "BMW 1 Series F20", "enquiries": "344 [BMW-VERIFIED]" },
+      { "rank": 3, "model": "BMW X3 F25", "enquiries": "316 [BMW-VERIFIED]" },
+      { "rank": 4, "model": "BMW 5 Series F10", "enquiries": "300 [BMW-VERIFIED]" },
+      { "rank": 5, "model": "BMW X5 F15", "enquiries": "288 [BMW-VERIFIED]" },
+      { "rank": 6, "model": "BMW 3 Series E90", "enquiries": "256 [BMW-VERIFIED]" }
+    ]
+  },
+  "replacementCosts": {
+    "title": "Replacement Cost Index (Reconditioned, Supply-Only)",
+    "icon": "£",
+    "columns": ["ENGINE CODE", "COST RANGE"],
+    "rows": [
+      { "code": "N47D20C", "cost": "£3,200–£5,500 [BMW-QUOTE]" },
+      { "code": "B47D20A", "cost": "£2,800–£4,500 [BMW-QUOTE]" },
+      { "code": "N57D30", "cost": "£4,500–£7,000 [BMW-QUOTE]" },
+      { "code": "B58B30", "cost": "£3,800–£6,000 [BMW-QUOTE]" },
+      { "code": "B57D30", "cost": "£5,000–£8,000 [BMW-QUOTE]" },
+      { "code": "N63B44", "cost": "£6,000–£10,000 [BMW-QUOTE]" },
+      { "code": "S63B44", "cost": "£9,000–£14,000 [BMW-QUOTE]" }
+    ]
+  },
+  "failures": {
+    "title": "Most Common BMW Failures",
+    "icon": "⚠️",
+    "columns": ["RANK", "FAILURE", "RISK LEVEL"],
+    "rows": [
+      {
+        "rank": 1,
+        "failure": "N47 timing chain stretch and tensioner failure",
+        "risk": { "icon": "🔴", "label": "Catastrophic", "type": "catastrophic" }
+      },
+      {
+        "rank": 2,
+        "failure": "N57 turbocharger and timing chain wear",
+        "risk": { "icon": "🟠", "label": "Immediate", "type": "immediate" }
+      },
+      {
+        "rank": 3,
+        "failure": "B58 coolant leaks (expansion tank, water pump, plastic fittings)",
+        "risk": { "icon": "🟡", "label": "Monitor", "type": "monitor" }
+      },
+      {
+        "rank": 4,
+        "failure": "N63 valve stem seals and hot-vee issues",
+        "risk": { "icon": "🔴", "label": "Catastrophic", "type": "catastrophic" }
+      },
+      {
+        "rank": 5,
+        "failure": "S63 timing chain tensioner wear",
+        "risk": { "icon": "🔴", "label": "Catastrophic", "type": "catastrophic" }
+      }
+    ]
+  },
+  "regionalDemand": {
+    "title": "Regional Demand",
+    "icon": "🌐",
+    "columns": ["REGION", "PERCENTAGE"],
+    "rows": [
+      { "region": "London", "percentage": "22% [EM-VERIFIED]" },
+      { "region": "South East", "percentage": "18% [EM-VERIFIED]" },
+      { "region": "North West", "percentage": "12% [EM-VERIFIED]" },
+      { "region": "Midlands", "percentage": "11% [EM-VERIFIED]" }
+    ]
+  },
+  "liveFeed": {
+    "title": "Live Enquiry Feed",
+    "icon": "📡",
+    "columns": ["VEHICLE", "LOCATION", "ISSUE", "TIMESTAMP"],
+    "rows": [
+      {
+        "vehicle": "BMW 320d (N47)",
+        "location": "London",
+        "issue": "Timing chain rattle",
+        "timestamp": "2 hours ago"
+      },
+      {
+        "vehicle": "BMW X5 (B57)",
+        "location": "Manchester",
+        "issue": "Loss of power",
+        "timestamp": "4 hours ago"
+      },
+      {
+        "vehicle": "BMW M4 (S63)",
+        "location": "Birmingham",
+        "issue": "Turbo failure",
+        "timestamp": "6 hours ago"
+      }
+    ],
+    "footer": "Updated monthly from BMWEngines.uk CRM data"
+  }
+}

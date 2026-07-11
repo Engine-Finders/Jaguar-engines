@@ -1,0 +1,95 @@
+{
+  "subHeadline": "Answer a few questions about your symptoms — we'll match you against 15+ known BMW failure patterns, show you the likely diagnosis, OEM part references, and an honest repair vs. replace cost estimate.",
+  "headerImage": {
+    "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=900&q=80",
+    "alt": "BMW for diagnostic calculator"
+  },
+  "trustStrip": [
+    { "icon": "📊", "label": "Powered by 24,650+ real UK enquiries" },
+    { "icon": "🔧", "label": "20+ vetted BMW specialists" },
+    { "icon": "📖", "label": "OEM part references included" },
+    { "icon": "🏆", "label": "Part of Engine Finders" }
+  ],
+  "howItWorks": {
+    "steps": [
+      {
+        "step": 1,
+        "title": "Tell us your symptoms",
+        "text": "Select from common failure categories or use the shortcut grid if you already know the fault."
+      },
+      {
+        "step": 2,
+        "title": "Tell us about your vehicle",
+        "text": "Age and estimated value help us calculate whether repair or replacement makes financial sense."
+      },
+      {
+        "step": 3,
+        "title": "Get your diagnosis",
+        "text": "We'll show you the likely fault, OEM part numbers, severity level, and a transparent cost breakdown."
+      }
+    ]
+  },
+  "calculator": {
+    "stepLabel": "STEP 1 OF 3",
+    "title": "Tell us your symptoms",
+    "instruction": "Select from common failure categories or use the shortcut grid if you already know the fault.",
+    "symptoms": [
+      { "icon": "⚙️", "label": "Engine Performance Issues", "href": "#" },
+      { "icon": "🛢️", "label": "Oil Leaks & Consumption", "href": "#" },
+      { "icon": "🌡️", "label": "Cooling System", "href": "#" },
+      { "icon": "⏱️", "label": "Timing Chain / VANOS", "href": "#" },
+      { "icon": "💨", "label": "Turbocharger", "href": "#" },
+      { "icon": "🔋", "label": "Battery / Electrical", "href": "#" },
+      { "icon": "⚡", "label": "Spark / Ignition", "href": "#" },
+      { "icon": "🌫️", "label": "Exhaust / Emissions", "href": "#" },
+      { "icon": "🔊", "label": "Noise / Vibration", "href": "#" },
+      { "icon": "❓", "label": "Other / Not Sure", "href": "#" }
+    ],
+    "cta": {
+      "label": "CONTINUE TO STEP 2",
+      "href": "#"
+    }
+  },
+  "whyTrust": {
+    "signals": [
+      {
+        "icon": "🛡️",
+        "title": "BMW-VERIFIED Data",
+        "text": "Every cost range and enquiry volume comes from real 2025 UK data — not estimates or guesswork."
+      },
+      {
+        "icon": "⚙️",
+        "title": "BMW-Specific Knowledge",
+        "text": "We use exact BMW terminology (N47, B58, VANOS, Valvetronic) and OEM part numbers."
+      },
+      {
+        "icon": "👥",
+        "title": "Vetted Specialist Network",
+        "text": "Our recommendations route you to 20+ BMW specialists who work on these engines daily."
+      },
+      {
+        "icon": "🏆",
+        "title": "Honest Verdict System",
+        "text": "We tell you when replacement isn't worth it — not every site does that."
+      }
+    ]
+  },
+  "exampleResult": {
+    "badge": "EXAMPLE RESULT",
+    "title": "Likely Diagnosis",
+    "fault": "Oil Filter Housing Gasket Leak",
+    "likelihood": "High Likelihood",
+    "commonOn": "N47 / B47 engines",
+    "symptomsMatch": "Oil smell, low oil level, under-car drip",
+    "repairCost": "£180–£420",
+    "replaceCost": "£2,800–£4,500",
+    "footer": "Based on verified UK enquiries"
+  },
+  "bottomCta": {
+    "title": "Get your exact verdict",
+    "text": "Answer a few questions for a diagnosis matched to your BMW.",
+    "buttonLabel": "START DIAGNOSIS",
+    "href": "#",
+    "trustLine": "100% Independent • No Sponsorship • Completely Unbiased"
+  }
+}

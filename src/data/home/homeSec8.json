@@ -1,0 +1,101 @@
+{
+  "subHeadline": "Deep, permanent reference hubs for the engines BMW owners research most — not blog posts, not one-off articles. Every guide is built on real UK enquiry data and BMW-specific expertise.",
+  "headerImage": {
+    "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=900&q=80",
+    "alt": "BMW engine knowledge"
+  },
+  "centres": [
+    {
+      "id": 1,
+      "title": "N47 Knowledge Centre",
+      "icon": "⛓️",
+      "description": "Every variant, every failure, every generation it was fitted to — the definitive N47 guide. Covering 1,450 enquiries in 2025, this is the most-researched BMW diesel [BMW-VERIFIED].",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=400&q=80",
+        "alt": "N47 Knowledge Centre"
+      },
+      "link": { "label": "Explore →", "href": "#" }
+    },
+    {
+      "id": 2,
+      "title": "B58 Knowledge Centre",
+      "icon": "🔧",
+      "description": "The modern straight-six's full ownership profile — performance, reliability, and known issues. The engine BMW owners trust most, with just 540 enquiries in 2025 [BMW-VERIFIED].",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=400&q=80",
+        "alt": "B58 Knowledge Centre"
+      },
+      "link": { "label": "Explore →", "href": "#" }
+    },
+    {
+      "id": 3,
+      "title": "N57 Knowledge Centre",
+      "icon": "🔧",
+      "description": "The 3.0 diesel's complete guide — 330d, 530d, X3, X5, and known wear patterns. 830 enquiries in 2025 [BMW-VERIFIED].",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=400&q=80",
+        "alt": "N57 Knowledge Centre"
+      },
+      "link": { "label": "Explore →", "href": "#" }
+    },
+    {
+      "id": 4,
+      "title": "B47 Knowledge Centre",
+      "icon": "⛓️",
+      "description": "The post-chain-revision diesel that changed BMW's reliability story. 930 enquiries in 2025, predominantly due-diligence, not failure [BMW-VERIFIED].",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=400&q=80",
+        "alt": "B47 Knowledge Centre"
+      },
+      "link": { "label": "Explore →", "href": "#" }
+    },
+    {
+      "id": 5,
+      "title": "N63/S63 Knowledge Centre",
+      "icon": "🏆",
+      "description": "The hot-vee V8's full story — valve seals, turbo lines, and when to walk away. 440 enquiries (N63) + 410 (S63) in 2025 [BMW-VERIFIED].",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=400&q=80",
+        "alt": "N63/S63 Knowledge Centre"
+      },
+      "link": { "label": "Explore →", "href": "#" }
+    },
+    {
+      "id": 6,
+      "title": "B57 Knowledge Centre",
+      "icon": "🔧",
+      "description": "The B57 3.0 diesel's full profile — the G30/G20/G05 diesel of choice. Robust, well-supported, and increasingly common in the used market.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=400&q=80",
+        "alt": "B57 Knowledge Centre"
+      },
+      "link": { "label": "Explore →", "href": "#" }
+    },
+    {
+      "id": 7,
+      "title": "M54 Classic Engine Guide",
+      "icon": "🏆",
+      "description": "The bulletproof E46-era straight-six — why it's the keeper engine, what goes wrong, and why values are rising. The classic BMW engine hub.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=400&q=80",
+        "alt": "M54 Classic Engine Guide"
+      },
+      "link": { "label": "Explore →", "href": "#" }
+    },
+    {
+      "id": 8,
+      "title": "Timing Chain Knowledge Centre",
+      "icon": "⛓️",
+      "description": "The complete guide to BMW timing chain failures — N47, N57, S63 and more. The #1 failure category in our 2025 data, with N47 alone generating 1,450 enquiries [BMW-VERIFIED].",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=400&q=80",
+        "alt": "Timing Chain Knowledge Centre"
+      },
+      "link": { "label": "Explore →", "href": "#" }
+    }
+  ],
+  "footer": {
+    "title": "100% Data-Verified. Built for BMW Owners.",
+    "text": "Every knowledge centre is built on real UK enquiry data and BMW-specific expertise."
+  }
+}

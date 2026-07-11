@@ -1,0 +1,41 @@
+{
+  "subHeadline": "From the carburetted M10 to the modular B58, mapped against the models that carried it. The complete BMW engine timeline.",
+  "headerImage": {
+    "src": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=900&q=80",
+    "alt": "BMW engine history"
+  },
+  "columns": ["ERA", "KEY ENGINES", "ICONIC MODELS"],
+  "eras": [
+    {
+      "era": "1960s–1970s",
+      "engines": "M10, M30",
+      "models": "2002, E3, E9"
+    },
+    {
+      "era": "1980s",
+      "engines": "M20, M30B35, S14",
+      "models": "E30, E28, E24"
+    },
+    {
+      "era": "1990s",
+      "engines": "M42, M50, M52, S50, S52",
+      "models": "E36, E34, E31"
+    },
+    {
+      "era": "2000s",
+      "engines": "M54, N52, N54, S54, S62",
+      "models": "E46, E39, E38, E53"
+    },
+    {
+      "era": "2010s",
+      "engines": "N47, N55, N57, S63, S55",
+      "models": "E90, F10, F30, F15"
+    },
+    {
+      "era": "2020s",
+      "engines": "B47, B48, B58, S58",
+      "models": "G20, G30, G05, G07"
+    }
+  ],
+  "keyTakeaway": "The N47 and N57 defined the diesel era — but the B58 and B47 reversed the reliability perception. The M54 and M57 remain the classic keeper engines; the B58 is the modern gold standard."
+}
