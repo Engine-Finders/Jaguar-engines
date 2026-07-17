@@ -1,82 +1,79 @@
 {
-  "subHeadline": "The comparisons BMW buyers actually want — generation vs generation, engine vs engine, model vs model. Honest, data-backed, and built for real-world decision-making.",
+  "subHeadline": "The comparisons Jaguar buyers actually want — model vs model, engine vs engine, and the one comparison nobody else can make.",
   "headerImages": [
     {
       "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=500&q=80",
-      "alt": "BMW 3 Series"
+      "alt": "Jaguar XE"
     },
     {
       "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=500&q=80",
-      "alt": "BMW 5 Series"
+      "alt": "Jaguar XF"
     }
   ],
   "comparisons": [
     {
       "id": 1,
-      "title": "E90 vs F30 vs G20 3 Series",
-      "preview": "Which 3 Series generation to buy — the verdict on reliability, running costs, and long-term value. The F30 LCI (2016+) is the sweet spot; the E90 is the bargain-with-risk; the G20 is the safest.",
-      "vsLabels": ["E90", "F30", "G20"],
+      "title": "XE vs XF",
+      "preview": "Which compact/mid executive to buy — reliability, running costs and resale value compared.",
+      "vsLabels": ["XE", "XF"],
       "image": {
         "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=600&q=80",
-        "alt": "E90 vs F30 vs G20"
+        "alt": "XE vs XF"
       },
       "link": { "label": "Read the verdict →", "href": "#" }
     },
     {
       "id": 2,
-      "title": "N47 vs B47 Diesel",
-      "preview": "The chain-tensioner risk vs the revised architecture. N47: 1,450 enquiries in 2025, mostly timing chain [BMW-VERIFIED]. B47: 930 enquiries, significantly lower failure rate [BMW-VERIFIED]. The B47 wins on reliability; the N47 wins on purchase price — but only with documented chain history.",
-      "vsLabels": ["⚠️ N47", "✅ B47"],
+      "title": "F-Pace vs E-Pace",
+      "preview": "Size vs value — which SUV suits your budget and ownership horizon.",
+      "vsLabels": ["F-Pace", "E-Pace"],
       "image": {
         "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=600&q=80",
-        "alt": "N47 vs B47 Diesel"
+        "alt": "F-Pace vs E-Pace"
       },
       "link": { "label": "Read the verdict →", "href": "#" }
     },
     {
       "id": 3,
-      "title": "B58 vs N55 Petrol",
-      "preview": "The modern straight-six vs its twin-scroll predecessor. B58: 540 enquiries, well-understood cooling issues [BMW-VERIFIED]. N55: pattern-data tier, solid but older. The B58 is more reliable; the N55 is cheaper to buy. Both are better than the N54's HPFP woes.",
-      "vsLabels": ["✅ B58", "🔘 N55", "❌ N54"],
+      "title": "AJ126 vs AJ133",
+      "preview": "V6 vs V8 — performance, reliability and replacement costs compared side-by-side.",
+      "vsLabels": ["AJ126 V6", "AJ133 V8"],
       "image": {
         "src": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=600&q=80",
-        "alt": "B58 vs N55 Petrol"
+        "alt": "AJ126 vs AJ133"
       },
       "link": { "label": "Read the verdict →", "href": "#" }
     },
     {
       "id": 4,
-      "title": "3 Series vs 5 Series",
-      "preview": "Which offers better value for money over 3-5 years — the compact saloon or the executive estate? They share engines, so buy on condition, not badge. The 5 Series is heavier but more refined; the 3 Series is lighter and more agile. Both are excellent if you pick the right engine.",
-      "vsLabels": ["3 Series", "5 Series"],
+      "title": "Ingenium vs AJD-V6",
+      "preview": "Which diesel should you buy? Fuel economy, reliability and long-term ownership costs.",
+      "vsLabels": ["Ingenium Diesel", "AJD-V6"],
       "image": {
         "src": "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=600&q=80",
-        "alt": "3 Series vs 5 Series"
+        "alt": "Ingenium vs AJD-V6"
       },
       "link": { "label": "Read the verdict →", "href": "#" }
     },
     {
       "id": 5,
-      "title": "X3 vs X5",
-      "preview": "The mid-size SUV vs the large SUV — which one should you own? X3 F25: 316 enquiries [BMW-VERIFIED]. X5 F15: 288 enquiries [BMW-VERIFIED]. The X3 is cheaper to run; the X5 offers more space. Both share engines — choose based on your space needs, not reliability.",
-      "vsLabels": [
-        "X3 316 enquiries [BMW-VERIFIED]",
-        "X5 288 enquiries [BMW-VERIFIED]"
-      ],
+      "title": "XF vs XJ",
+      "preview": "Is the flagship's extra outlay worth it? Ownership costs, reliability and resale value compared.",
+      "vsLabels": ["XF", "XJ"],
       "image": {
         "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=600&q=80",
-        "alt": "X3 vs X5"
+        "alt": "XF vs XJ"
       },
       "link": { "label": "Read the verdict →", "href": "#" }
     },
     {
       "id": 6,
-      "title": "Petrol vs Diesel Running Costs",
-      "preview": "Which fuel type is cheaper to own in 2026? Diesel: better motorway economy but higher DPF/EGR maintenance. Petrol: lower purchase price (used market) but higher fuel costs. The B47 diesel is the motorway champion; the B48 petrol is the urban winner.",
-      "vsLabels": ["DIESEL", "PETROL"],
+      "title": "Jaguar vs Land Rover (Shared Engines)",
+      "preview": "Same engines, different badges — how ownership economics actually compare across the two brands.",
+      "vsLabels": ["JAGUAR", "LAND ROVER"],
       "image": {
         "src": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=600&q=80",
-        "alt": "Petrol vs Diesel"
+        "alt": "Jaguar vs Land Rover"
       },
       "link": { "label": "Read the verdict →", "href": "#" }
     }

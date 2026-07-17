@@ -1,16 +1,15 @@
 import Link from "next/link";
 
-const logoText = "BMW RELIABILITY GUIDE";
+const logoText = "JAGUAR ENGINES GUIDE";
 const links = [
-  { label: "1 SERIES", href: "#" },
-  { label: "3 SERIES", href: "#" },
-  { label: "5 SERIES", href: "#" },
-  { label: "X3", href: "#" },
-  { label: "X5", href: "#" },
-  { label: "M CARS", href: "#" },
+  { label: "XE", href: "#" },
+  { label: "XF", href: "#" },
+  { label: "XJ", href: "#" },
+  { label: "F-PACE", href: "#" },
+  { label: "E-PACE", href: "#" },
+  { label: "F-TYPE", href: "#" },
   { label: "GUIDES", href: "#" },
   { label: "ABOUT", href: "#" },
-  { label: "FORUM", href: "#" },
 ];
 const cta = { label: "START YOUR RESEARCH", href: "#" };
 

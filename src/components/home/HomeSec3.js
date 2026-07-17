@@ -9,7 +9,7 @@ export default function HomeSec3({ data }) {
         <div className="mb-2 flex items-start gap-3">
           <div className="min-w-0 flex-1">
             <h2 className="text-2xl font-bold text-black md:text-4xl">
-              Diagnose Your BMW Engine Problem
+              Diagnose Your Jaguar Problem
             </h2>
             <p className="text-sm text-gray-600">{data.subHeadline}</p>
           </div>

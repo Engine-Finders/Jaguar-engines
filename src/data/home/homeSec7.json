@@ -1,158 +1,94 @@
 {
-  "subHeadline": "The engines BMW owners search for most, ranked by real 2025 enquiry volume — with our honest verdict on each.",
+  "subHeadline": "The engines Jaguar owners search for most, ranked by real 2025 enquiry volume — with our honest verdict on each.",
   "headerImage": {
     "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=900&q=80",
-    "alt": "BMW engine bay"
+    "alt": "Jaguar engine bay"
   },
   "trustStrip": [
-    { "icon": "📊", "label": "Powered by 24,650+ real UK enquiries" },
-    { "icon": "🔧", "label": "20+ vetted BMW specialists" },
+    { "icon": "📊", "label": "Powered by 1,700+ real UK enquiries" },
+    { "icon": "🔧", "label": "15+ vetted Jaguar specialists" },
     { "icon": "📖", "label": "OEM part references included" },
     { "icon": "🏆", "label": "Part of Engine Finders" }
   ],
   "columns": ["ENGINE", "FUEL", "YEARS", "2025 ENQUIRIES", "VERDICT"],
   "engines": [
     {
-      "code": "N47",
-      "spec": "2.0L Diesel",
+      "code": "AJ200D / 204DTD",
+      "spec": "2.0L Diesel (Ingenium)",
       "fuel": "Diesel",
       "fuelIcon": "🛢️",
-      "years": "2007–2015",
-      "enquiries": "1,450 enquiries",
-      "sourceTag": "[BMW-VERIFIED]",
+      "years": "2015–Present",
+      "enquiries": "590 enquiries",
+      "sourceTag": "[EM-VERIFIED]",
       "verdict": {
         "icon": "⚠️",
         "label": "Watch",
-        "text": "rear-chain risk; buy with documented history. The defining diesel of a generation.",
+        "text": "pre-2019 timing chain tensioner wear — revised 2019 onward much improved",
         "type": "watch"
       },
       "href": "#"
     },
     {
-      "code": "B47D20A",
-      "spec": "2.0L Diesel",
-      "fuel": "Diesel",
-      "fuelIcon": "🛢️",
-      "years": "2015–Present",
-      "enquiries": "930 enquiries",
-      "sourceTag": "[BMW-VERIFIED]",
-      "verdict": {
-        "icon": "✅",
-        "label": "Safe",
-        "text": "revised front-chain architecture; much improved reliability. The modern sensible choice.",
-        "type": "safe"
-      },
-      "href": "#"
-    },
-    {
-      "code": "N57D30",
-      "spec": "3.0L Diesel",
-      "fuel": "Diesel",
-      "fuelIcon": "🛢️",
-      "years": "2008–2018",
-      "enquiries": "830 enquiries",
-      "sourceTag": "[BMW-VERIFIED]",
+      "code": "AJ126",
+      "spec": "3.0L V6 Supercharged",
+      "fuel": "Petrol",
+      "fuelIcon": "⛽",
+      "years": "2013–2020",
+      "enquiries": "560 enquiries",
+      "sourceTag": "[EM-VERIFIED]",
       "verdict": {
         "icon": "⚠️",
         "label": "Watch",
-        "text": "rear-chain complexity; well-maintained examples are fine. The 330d/530d workhorse.",
+        "text": "cooling system & plastic crossover pipe — well-documented weak point",
         "type": "watch"
       },
       "href": "#"
     },
     {
-      "code": "B58B30",
-      "spec": "3.0L Petrol",
-      "fuel": "Petrol",
-      "fuelIcon": "⛽",
-      "years": "2015–Present",
-      "enquiries": "540 enquiries",
-      "sourceTag": "[BMW-VERIFIED]",
-      "verdict": {
-        "icon": "🏆",
-        "label": "Best",
-        "text": "modern straight-six gold standard. The engine BMW owners trust most.",
-        "type": "best"
-      },
-      "href": "#"
-    },
-    {
-      "code": "B57D30",
-      "spec": "3.0L Diesel",
+      "code": "276DT",
+      "spec": "2.7L TDV6",
       "fuel": "Diesel",
       "fuelIcon": "🛢️",
-      "years": "2015–Present",
-      "enquiries": "460 enquiries",
-      "sourceTag": "[BMW-VERIFIED]",
-      "verdict": {
-        "icon": "✅",
-        "label": "Safe",
-        "text": "robust modern diesel; minor cooling issues only. The G-series 30d choice.",
-        "type": "safe"
-      },
-      "href": "#"
-    },
-    {
-      "code": "N63B44",
-      "spec": "4.4L V8 Petrol",
-      "fuel": "Petrol",
-      "fuelIcon": "⛽",
-      "years": "2008–Present",
-      "enquiries": "440 enquiries",
-      "sourceTag": "[BMW-VERIFIED]",
+      "years": "2004–2010",
+      "enquiries": "700 enquiries",
+      "sourceTag": "[EM-VERIFIED]",
       "verdict": {
         "icon": "🔴",
         "label": "Avoid",
-        "text": "hot-vee failures; high ownership cost. Known as the \"N63 nightmare.\"",
+        "text": "oil pump failure can kill the engine outright — shared with Land Rover",
         "type": "avoid"
       },
       "href": "#"
     },
     {
-      "code": "S63B44",
-      "spec": "4.4L V8 M Engine",
+      "code": "AJ200P / 204PT",
+      "spec": "2.0L Petrol (Ingenium)",
       "fuel": "Petrol",
       "fuelIcon": "⛽",
-      "years": "2010–Present",
-      "enquiries": "410 enquiries",
-      "sourceTag": "[BMW-VERIFIED]",
-      "verdict": {
-        "icon": "🔴",
-        "label": "Avoid",
-        "text": "similar to N63; M-division complexity adds cost. Buy only with deep pockets.",
-        "type": "avoid"
-      },
-      "href": "#"
-    },
-    {
-      "code": "N55B30",
-      "spec": "3.0L Petrol",
-      "fuel": "Petrol",
-      "fuelIcon": "⛽",
-      "years": "2010–2019",
-      "enquiries": "Pattern data",
-      "sourceTag": "[PATTERN DATA]",
-      "verdict": {
-        "icon": "⭐",
-        "label": "Solid",
-        "text": "the bridge engine between N54 and B58. Reliable, well-understood, widely available. A safer used buy than the N54.",
-        "type": "solid"
-      },
-      "href": "#"
-    },
-    {
-      "code": "M54",
-      "spec": "3.0L Petrol",
-      "fuel": "Petrol",
-      "fuelIcon": "⛽",
-      "years": "2000–2006",
-      "enquiries": "Classic icon",
-      "sourceTag": "[PATTERN DATA]",
+      "years": "2016–Present",
+      "enquiries": "500 enquiries",
+      "sourceTag": "[EM-VERIFIED]",
       "verdict": {
         "icon": "🏆",
         "label": "Best",
-        "text": "bulletproof E46-era straight-six. The classic keeper engine.",
+        "text": "most reliable modern Jaguar engine — only water pump weakness",
         "type": "best"
+      },
+      "href": "#"
+    },
+    {
+      "code": "AJ133 / 508PN",
+      "spec": "5.0L V8",
+      "fuel": "Petrol",
+      "fuelIcon": "⛽",
+      "years": "2009–Present",
+      "enquiries": "330 enquiries",
+      "sourceTag": "[EM-VERIFIED]",
+      "verdict": {
+        "icon": "⚠️",
+        "label": "Watch",
+        "text": "pre-2013 timing chain tensioner risk; 2013+ much improved",
+        "type": "watch"
       },
       "href": "#"
     }

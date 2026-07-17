@@ -1,13 +1,13 @@
 {
-  "title": "Ready to Make a Decision?",
-  "subHeadline": "Not sure where to start? Search by model to see the full reliability picture, run the ownership decision tool on your specific car, or go straight to a vetted BMW specialist for a quote.",
+  "title": "Not Sure Where to Start?",
+  "subHeadline": "Search by model to see the full reliability picture, run the ownership decision tool on your specific car, or go straight to a vetted Jaguar specialist for a quote.",
   "primaryCta": {
-    "label": "Compare BMW Engine Prices Now →",
+    "label": "Compare Jaguar Engine Prices Now →",
     "href": "#",
     "note": "routes to EnginesMarket"
   },
   "secondaryCta": {
-    "label": "Explore BMW Models →",
+    "label": "Explore Jaguar Models →",
     "href": "#",
     "note": "routes to internal model finder"
   }

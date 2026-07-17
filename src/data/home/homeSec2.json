@@ -2,257 +2,121 @@
   "subHeadline": "Choose your model to explore reliability, common faults and real running costs.",
   "headerImage": {
     "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=900&q=80",
-    "alt": "White BMW front detail"
+    "alt": "Jaguar front detail"
   },
   "searchPlaceholder": "Search model...",
   "filters": [
     { "label": "ALL MODELS", "value": "all" },
-    { "label": "1-8 SERIES", "value": "series" },
-    { "label": "X MODELS", "value": "x" },
-    { "label": "M CARS", "value": "m" },
-    { "label": "Z / i / CLASSIC", "value": "other" }
+    { "label": "SALOONS & EXECUTIVE", "value": "saloons" },
+    { "label": "SUVs & SPORTS", "value": "suvs" }
   ],
   "columns": ["MODEL", "GENERATIONS", "VERDICT"],
   "models": [
     {
-      "model": "1 Series",
-      "generations": "E81, E87, F20, F40",
-      "verdict": { "icon": "⚠️", "text": "Check Value (E87 sub-£4k)", "type": "warning" },
+      "model": "XE",
+      "generations": "1 Generation",
+      "verdict": { "icon": "✅", "text": "Safe Buy", "type": "success" },
       "image": {
         "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=200&q=80",
-        "alt": "BMW 1 Series"
+        "alt": "Jaguar XE"
       },
       "href": "#"
     },
     {
-      "model": "2 Series",
-      "generations": "F22, F44, G42",
-      "verdict": { "icon": "✅", "text": "Modern Choice", "type": "success" },
-      "image": {
-        "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=200&q=80",
-        "alt": "BMW 2 Series"
-      },
-      "href": "#"
-    },
-    {
-      "model": "3 Series",
-      "generations": "E21, E30, E36, E46, E90, F30, G20",
-      "verdict": {
-        "icon": "🏆",
-        "text": "Most Enquired (F30: 380 enquiries [BMW-VERIFIED])",
-        "type": "trophy"
-      },
-      "image": {
-        "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=200&q=80",
-        "alt": "BMW 3 Series"
-      },
-      "href": "#"
-    },
-    {
-      "model": "4 Series",
-      "generations": "F32, F33, F36, G22",
-      "verdict": { "icon": "💎", "text": "Coupe Style", "type": "diamond" },
-      "image": {
-        "src": "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=200&q=80",
-        "alt": "BMW 4 Series"
-      },
-      "href": "#"
-    },
-    {
-      "model": "5 Series",
-      "generations": "E28, E34, E39, E60, F10, G30",
-      "verdict": { "icon": "✅", "text": "Best Executive Buy", "type": "success" },
-      "image": {
-        "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=200&q=80",
-        "alt": "BMW 5 Series"
-      },
-      "href": "#"
-    },
-    {
-      "model": "6 Series",
-      "generations": "E63, F06, F12, G32",
-      "verdict": { "icon": "🔴", "text": "High V8 Risk (N63)", "type": "danger" },
-      "image": {
-        "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=200&q=80",
-        "alt": "BMW 6 Series"
-      },
-      "href": "#"
-    },
-    {
-      "model": "7 Series",
-      "generations": "E23, E32, E38, E65, F01, G11, G70",
-      "verdict": { "icon": "👑", "text": "Flagship Choice", "type": "crown" },
-      "image": {
-        "src": "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=200&q=80",
-        "alt": "BMW 7 Series"
-      },
-      "href": "#"
-    },
-    {
-      "model": "8 Series",
-      "generations": "E31, G15",
-      "verdict": { "icon": "✅", "text": "Grand Tourer", "type": "success" },
-      "image": {
-        "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=200&q=80",
-        "alt": "BMW 8 Series"
-      },
-      "href": "#"
-    },
-    {
-      "model": "Z Series",
-      "generations": "Z3 (E36), Z4 (E85/E89/G29), Z8",
-      "verdict": { "icon": "🏆", "text": "Roadster Legends", "type": "trophy" },
-      "image": {
-        "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=200&q=80",
-        "alt": "BMW Z Series"
-      },
-      "href": "#"
-    },
-    {
-      "model": "i Series",
-      "generations": "i3, i4, i5, i7, iX",
-      "verdict": { "icon": "✅", "text": "Electric Future", "type": "success" },
-      "image": {
-        "src": "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=200&q=80",
-        "alt": "BMW i Series"
-      },
-      "href": "#"
-    },
-    {
-      "model": "X1",
-      "generations": "E84, F48, U11",
-      "verdict": { "icon": "✅", "text": "Family Crossover", "type": "success" },
-      "image": {
-        "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=200&q=80",
-        "alt": "BMW X1"
-      },
-      "href": "#"
-    },
-    {
-      "model": "X2",
-      "generations": "F39, U10",
-      "verdict": { "icon": "💎", "text": "Style SUV", "type": "diamond" },
-      "image": {
-        "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=200&q=80",
-        "alt": "BMW X2"
-      },
-      "href": "#"
-    },
-    {
-      "model": "X3",
-      "generations": "E83, F25, G01, G45",
+      "model": "XF",
+      "generations": "2 Generations",
       "verdict": {
         "icon": "🔥",
-        "text": "Most Enquired SUV (F25: 316 enquiries [BMW-VERIFIED])",
+        "text": "Most Enquired",
         "type": "fire"
       },
       "image": {
-        "src": "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=200&q=80",
-        "alt": "BMW X3"
+        "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=200&q=80",
+        "alt": "Jaguar XF"
       },
       "href": "#"
     },
     {
-      "model": "X4",
-      "generations": "F26, G02",
-      "verdict": { "icon": "⚠️", "text": "Watch (N57 on older examples)", "type": "warning" },
+      "model": "XJ",
+      "generations": "Multiple Generations",
+      "verdict": { "icon": "👑", "text": "Flagship Choice", "type": "crown" },
+      "image": {
+        "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=200&q=80",
+        "alt": "Jaguar XJ"
+      },
+      "href": "#"
+    },
+    {
+      "model": "S-Type",
+      "generations": "1 Generation",
+      "verdict": { "icon": "⚠️", "text": "Check Value", "type": "warning" },
+      "image": {
+        "src": "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=200&q=80",
+        "alt": "Jaguar S-Type"
+      },
+      "href": "#"
+    },
+    {
+      "model": "X-Type",
+      "generations": "1 Generation",
+      "verdict": { "icon": "⚠️", "text": "Check Value", "type": "warning" },
       "image": {
         "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=200&q=80",
-        "alt": "BMW X4"
+        "alt": "Jaguar X-Type"
       },
       "href": "#"
     },
     {
-      "model": "X5",
-      "generations": "E53, E70, F15, G05",
+      "model": "F-Pace",
+      "generations": "1 Generation",
       "verdict": {
-        "icon": "⚠️",
-        "text": "V8 Watch (N63) / ✅ Safe (B57/B58)",
-        "type": "warning"
+        "icon": "👨‍👩‍👧‍👦",
+        "text": "Best Family",
+        "type": "best"
       },
       "image": {
         "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=200&q=80",
-        "alt": "BMW X5"
+        "alt": "Jaguar F-Pace"
       },
       "href": "#"
     },
     {
-      "model": "X6",
-      "generations": "E71, F16, G06",
-      "verdict": { "icon": "🔴", "text": "High Risk (N63 hot-vee)", "type": "danger" },
-      "image": {
-        "src": "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=200&q=80",
-        "alt": "BMW X6"
-      },
-      "href": "#"
-    },
-    {
-      "model": "X7",
-      "generations": "G07",
-      "verdict": { "icon": "👑", "text": "Large SUV", "type": "crown" },
+      "model": "E-Pace",
+      "generations": "1 Generation",
+      "verdict": { "icon": "🚀", "text": "High Demand", "type": "fire" },
       "image": {
         "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=200&q=80",
-        "alt": "BMW X7"
+        "alt": "Jaguar E-Pace"
       },
       "href": "#"
     },
     {
-      "model": "XM",
-      "generations": "G09",
-      "verdict": { "icon": "🔥", "text": "High-Performance Hybrid", "type": "fire" },
+      "model": "I-Pace",
+      "generations": "1 Generation",
+      "verdict": { "icon": "⚡", "text": "EV — Drive Unit Info", "type": "ev" },
+      "image": {
+        "src": "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=200&q=80",
+        "alt": "Jaguar I-Pace"
+      },
+      "href": "#"
+    },
+    {
+      "model": "F-Type",
+      "generations": "1 Generation",
+      "verdict": { "icon": "🏆", "text": "Safest Buy", "type": "trophy" },
       "image": {
         "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=200&q=80",
-        "alt": "BMW XM"
+        "alt": "Jaguar F-Type"
       },
       "href": "#"
     },
     {
-      "model": "M2 / M3",
-      "generations": "F87, G80 / E30, E36, E46, E90, F80, G80",
-      "verdict": { "icon": "🏆", "text": "M Sweet Spot", "type": "trophy" },
-      "image": {
-        "src": "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=200&q=80",
-        "alt": "BMW M2 M3"
-      },
-      "href": "#"
-    },
-    {
-      "model": "M4 / M5",
-      "generations": "F82, G82 / E28, E34, E39, E60, F10, F90",
-      "verdict": { "icon": "⚠️", "text": "S63 Power / High Cost", "type": "warning" },
+      "model": "XK",
+      "generations": "2 Generations",
+      "verdict": { "icon": "💎", "text": "Premium Style", "type": "diamond" },
       "image": {
         "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=200&q=80",
-        "alt": "BMW M4 M5"
-      },
-      "href": "#"
-    },
-    {
-      "model": "M6 / M8",
-      "generations": "E63, F06, F12 / F92, G15",
-      "verdict": { "icon": "🔴", "text": "Expensive Failure (S63)", "type": "danger" },
-      "image": {
-        "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=200&q=80",
-        "alt": "BMW M6 M8"
-      },
-      "href": "#"
-    },
-    {
-      "model": "2002",
-      "generations": "1968–1976",
-      "verdict": { "icon": "🏆", "text": "Classic Icon", "type": "trophy" },
-      "image": {
-        "src": "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=200&q=80",
-        "alt": "BMW 2002"
-      },
-      "href": "#"
-    },
-    {
-      "model": "M1",
-      "generations": "1978–1981",
-      "verdict": { "icon": "🏆", "text": "Legend", "type": "trophy" },
-      "image": {
-        "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=200&q=80",
-        "alt": "BMW M1"
+        "alt": "Jaguar XK"
       },
       "href": "#"
     }
@@ -262,7 +126,7 @@
     "href": "#"
   },
   "cta": {
-    "title": "Not sure which BMW to buy?",
+    "title": "Not sure which Jaguar to buy?",
     "text": "Start with our research tools — rankings, faults and real running costs.",
     "buttonLabel": "START YOUR RESEARCH",
     "href": "#"

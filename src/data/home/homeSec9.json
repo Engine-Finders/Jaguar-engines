@@ -2,7 +2,7 @@
   "subHeadline": "A permanent, categorised reference — not symptom-chasing blog posts. Every entry links to a full breakdown of symptoms, root cause, mileage window, repair cost, and replacement cost.",
   "headerImage": {
     "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=900&q=80",
-    "alt": "BMW engine failure database"
+    "alt": "Jaguar failure database"
   },
   "engineFailures": {
     "title": "Engine Failures",
@@ -11,72 +11,184 @@
     "rows": [
       {
         "id": 1,
-        "title": "N47 Timing Chain Failure",
-        "description": "The defining BMW diesel issue and our #1 enquiry driver. Cold-start rattle from the rear of the engine is the early warning; ignored, chain slip means full engine replacement. 1,450 enquiries in 2025 [BMW-VERIFIED]. £3,200–£5,500 recon [BMW-QUOTE].",
+        "title": "276DT Oil Pump Housing Failure",
+        "description": "Shared with Land Rover — often kills the engine outright before any other symptom appears. Fitted to XF X250 and XJ X351.",
         "severity": { "icon": "🔴", "label": "Catastrophic", "type": "catastrophic" },
         "link": { "label": "Read more →", "href": "#" }
       },
       {
         "id": 2,
-        "title": "B58 Coolant Leaks",
-        "description": "The modern straight-six's primary weak point — expansion tank, water pump, and plastic fittings all degrade over time. Well-understood, non-catastrophic if caught early. 540 enquiries in 2025 [BMW-VERIFIED]. £400–£800 repair [BMW-QUOTE].",
+        "title": "AJ133 Pre-2013 Timing Chain Tensioner Wear",
+        "description": "The 5.0 V8's early-build weak point — chain tensioner design was revised in 2013 with a marked reliability improvement.",
         "severity": { "icon": "🟡", "label": "Monitor", "type": "monitor" },
         "link": { "label": "Read more →", "href": "#" }
       },
       {
         "id": 3,
-        "title": "N57 Turbocharger & Timing Chain Wear",
-        "description": "Similar rear-chain complexity to N47, plus turbocharger failure at higher mileages. The 330d/530d workhorse has known weak points. 830 enquiries in 2025 [BMW-VERIFIED]. £1,200–£2,500 repair; £4,500–£7,000 recon [BMW-QUOTE].",
-        "severity": { "icon": "🟠", "label": "Immediate", "type": "immediate" },
+        "title": "AJ200D / 204DTD Ingenium Timing Chain",
+        "description": "Same engine, same issue as Land Rover's Ingenium diesel — pre-2019 tensioner wear, improved from 2019 onward.",
+        "severity": { "icon": "🟡", "label": "Monitor", "type": "monitor" },
         "link": { "label": "Read more →", "href": "#" }
       },
       {
         "id": 4,
-        "title": "N63 Valve Stem Seals",
-        "description": "Hot-vee architecture causes heat-related seal failure at 60k–100k miles. Known as the \"N63 nightmare.\" 440 enquiries in 2025 [BMW-VERIFIED]. £3,000–£6,000 repair; £6,000–£10,000 recon [BMW-QUOTE].",
-        "severity": { "icon": "🔴", "label": "Catastrophic", "type": "catastrophic" },
-        "link": { "label": "Read more →", "href": "#" }
-      },
-      {
-        "id": 5,
-        "title": "S63 Timing Chain Tensioner",
-        "description": "High-performance M-division V8 with similar weaknesses to N63. Chain tensioner wear can lead to catastrophic failure. 410 enquiries in 2025 [BMW-VERIFIED]. Engine replacement often required at £9,000–£14,000 recon [BMW-QUOTE].",
-        "severity": { "icon": "🔴", "label": "Catastrophic", "type": "catastrophic" },
+        "title": "AJ126 Cooling System & Plastic Crossover Pipe Failure",
+        "description": "Well-documented weak point — plastic coolant pipes crack with age, and these engines cannot tolerate overheating without head-gasket damage.",
+        "severity": { "icon": "🟠", "label": "Immediate", "type": "immediate" },
         "link": { "label": "Read more →", "href": "#" }
       }
     ]
   },
-  "warningSigns": {
-    "title": "Common BMW Warning Signs",
+  "suspensionFailures": {
+    "title": "Suspension Failures",
+    "icon": "🚙",
+    "columns": ["#", "TITLE", "DESCRIPTION", "SEVERITY", "LINK"],
+    "rows": [
+      {
+        "id": 1,
+        "title": "Air Suspension Compressor Failure",
+        "description": "The most common air suspension complaint across XJ, XF and F-Pace. Burnout presents a fire risk.",
+        "severity": { "icon": "🔴", "label": "Catastrophic", "type": "catastrophic" },
+        "link": { "label": "Read more →", "href": "#" }
+      },
+      {
+        "id": 2,
+        "title": "Height Sensor Faults",
+        "description": "Trigger warning lights and uneven ride height well before a full system failure. £200–£500 repair cost.",
+        "severity": { "icon": "🟢", "label": "Low", "type": "low" },
+        "link": { "label": "Read more →", "href": "#" }
+      },
+      {
+        "id": 3,
+        "title": "Valve Block & Air Spring Leaks",
+        "description": "Slow leaks often mistaken for compressor failure. £300–£800 repair cost.",
+        "severity": { "icon": "🟢", "label": "Low", "type": "low" },
+        "link": { "label": "Read more →", "href": "#" }
+      }
+    ]
+  },
+  "drivetrainFailures": {
+    "title": "Drivetrain Failures",
+    "icon": "⚙️",
+    "columns": ["#", "TITLE", "DESCRIPTION", "SEVERITY", "LINK"],
+    "rows": [
+      {
+        "id": 1,
+        "title": "ZF 8-Speed Gearbox Faults",
+        "description": "Shared across the JLR range — mechatronic unit and torque converter issues are the most common cause.",
+        "severity": { "icon": "🟡", "label": "Monitor", "type": "monitor" },
+        "link": { "label": "Read more →", "href": "#" }
+      },
+      {
+        "id": 2,
+        "title": "Supercharger Coupler / Torsion Isolator Rattle",
+        "description": "A well-known shared quirk of the AJ126 and AJ133 — rattly but rarely catastrophic on its own.",
+        "severity": { "icon": "🟡", "label": "Monitor", "type": "monitor" },
+        "link": { "label": "Read more →", "href": "#" }
+      },
+      {
+        "id": 3,
+        "title": "X-Type Driveshaft & CV Joint Wear",
+        "description": "A legacy of the Ford Mondeo-derived platform — most common on early (pre-2007) cars.",
+        "severity": { "icon": "🟢", "label": "Low", "type": "low" },
+        "link": { "label": "Read more →", "href": "#" }
+      }
+    ]
+  },
+  "electricalFailures": {
+    "title": "Electrical Failures",
     "icon": "⚠️",
     "columns": ["#", "TITLE", "DESCRIPTION", "SEVERITY", "LINK"],
     "rows": [
       {
         "id": 1,
-        "title": "Cold-Start Rattle",
-        "description": "The N47's signature symptom — 1-2 seconds of chain noise on start-up. The earlier it's caught, the cheaper the fix. Ignored, it becomes a £3,200–£5,500 recon [BMW-QUOTE].",
-        "severity": { "icon": "🟠", "label": "Immediate", "type": "immediate" },
+        "title": "Infotainment & Software Glitches",
+        "description": "Particularly common on pre-2018 Touch Pro systems. Usually resolved with a software update.",
+        "severity": { "icon": "🟢", "label": "Low", "type": "low" },
         "link": { "label": "Read more →", "href": "#" }
       },
       {
         "id": 2,
-        "title": "Loss of Power / Limp Mode",
-        "description": "Multiple causes — turbo failure, EGR clogging, DPF blockage, or HPFP failure on N54/N55. The N54's HPFP is the defining petrol issue.",
+        "title": "Battery Drain / Parasitic Drain",
+        "description": "Modules failing to sleep correctly — a frequent no-start complaint.",
+        "severity": { "icon": "🟢", "label": "Low", "type": "low" },
+        "link": { "label": "Read more →", "href": "#" }
+      },
+      {
+        "id": 3,
+        "title": "X-Type Era Electrical Gremlins",
+        "description": "Window regulators, central locking modules and connector corrosion — the source of Jaguar's older 'electrical' reputation.",
+        "severity": { "icon": "🟡", "label": "Monitor", "type": "monitor" },
+        "link": { "label": "Read more →", "href": "#" }
+      }
+    ]
+  },
+  "warningSigns": {
+    "title": "Warning Signs",
+    "icon": "⚠️",
+    "columns": ["#", "TITLE", "DESCRIPTION", "SEVERITY", "LINK"],
+    "rows": [
+      {
+        "id": 1,
+        "title": "Air Suspension Compressor Failure",
+        "description": "The most common air suspension complaint across XJ, XF and F-Pace. Burnout presents a fire risk.",
+        "severity": { "icon": "🔴", "label": "Catastrophic", "type": "catastrophic" },
+        "link": { "label": "Read more →", "href": "#" }
+      },
+      {
+        "id": 2,
+        "title": "ZF 8-Speed Gearbox Faults",
+        "description": "Shared across the JLR range — mechatronic unit and torque converter issues are the most common cause.",
         "severity": { "icon": "🟡", "label": "Monitor", "type": "monitor" },
         "link": { "label": "Read more →", "href": "#" }
       },
       {
         "id": 3,
-        "title": "Coolant Loss (No Visible Leak)",
-        "description": "B58/N63 expansion tank or water pump failure — can lead to overheating if ignored. The B58's most common failure, costing £400–£800 to repair [BMW-QUOTE].",
-        "severity": { "icon": "🟡", "label": "Monitor", "type": "monitor" },
+        "title": "Infotainment & Software Glitches",
+        "description": "Particularly common on pre-2018 Touch Pro systems. Usually resolved with a software update.",
+        "severity": { "icon": "🟢", "label": "Low", "type": "low" },
         "link": { "label": "Read more →", "href": "#" }
       },
       {
         "id": 4,
-        "title": "Blue Smoke on Start-Up",
-        "description": "N63 valve stem seal failure — oil seeping past seals into the combustion chamber. The telltale sign of the \"N63 nightmare.\"",
+        "title": "Battery Drain / Parasitic Drain",
+        "description": "Modules failing to sleep correctly — a frequent no-start complaint.",
+        "severity": { "icon": "🟢", "label": "Low", "type": "low" },
+        "link": { "label": "Read more →", "href": "#" }
+      }
+    ]
+  },
+  "warningSigns": {
+    "title": "Warning Signs",
+    "icon": "⚠️",
+    "columns": ["#", "TITLE", "DESCRIPTION", "SEVERITY", "LINK"],
+    "rows": [
+      {
+        "id": 1,
+        "title": "Air Suspension Compressor Failure",
+        "description": "The most common air suspension complaint across XJ, XF and F-Pace. Burnout presents a fire risk.",
         "severity": { "icon": "🔴", "label": "Catastrophic", "type": "catastrophic" },
+        "link": { "label": "Read more →", "href": "#" }
+      },
+      {
+        "id": 2,
+        "title": "ZF 8-Speed Gearbox Faults",
+        "description": "Shared across the JLR range — mechatronic unit and torque converter issues are the most common cause.",
+        "severity": { "icon": "🟡", "label": "Monitor", "type": "monitor" },
+        "link": { "label": "Read more →", "href": "#" }
+      },
+      {
+        "id": 3,
+        "title": "Infotainment & Software Glitches",
+        "description": "Particularly common on pre-2018 Touch Pro systems. Usually resolved with a software update.",
+        "severity": { "icon": "🟢", "label": "Low", "type": "low" },
+        "link": { "label": "Read more →", "href": "#" }
+      },
+      {
+        "id": 4,
+        "title": "Battery Drain / Parasitic Drain",
+        "description": "Modules failing to sleep correctly — a frequent no-start complaint.",
+        "severity": { "icon": "🟢", "label": "Low", "type": "low" },
         "link": { "label": "Read more →", "href": "#" }
       }
     ]

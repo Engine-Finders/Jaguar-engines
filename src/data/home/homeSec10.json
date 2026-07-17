@@ -1,39 +1,37 @@
 {
-  "subHeadline": "Drawn from real UK enquiries, not estimates. This is the data competitors can't replicate — 24,650+ real enquiries, 50+ engine codes tracked, and live market insights updated monthly.",
+  "subHeadline": "Drawn from real UK enquiries, not estimates. This is the data competitors can't replicate — 1,700+ real enquiries, 5+ engine codes tracked, and live market insights updated monthly.",
   "headerImage": {
     "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=900&q=80",
-    "alt": "BMW market intelligence"
+    "alt": "Jaguar market intelligence"
   },
   "stats": [
-    { "icon": "👥", "label": "24,650+ Real UK Enquiries in 2025" },
-    { "icon": "⚙️", "label": "50+ Engine Codes Tracked" },
+    { "icon": "👥", "label": "1,700+ Real UK Enquiries in 2025" },
+    { "icon": "⚙️", "label": "5+ Engine Codes Tracked" },
     { "icon": "🔄", "label": "Updated Monthly" }
   ],
   "engines": {
-    "title": "Most-Enquired BMW Engines (2025)",
+    "title": "Most-Enquired Jaguar Engines (2025)",
     "icon": "⚙️",
     "columns": ["RANK", "ENGINE CODE", "LABEL", "ENQUIRIES"],
     "rows": [
-      { "rank": 1, "code": "N47D20C", "label": "2.0L Diesel", "enquiries": "1,450 [BMW-VERIFIED]" },
-      { "rank": 2, "code": "B47D20A", "label": "2.0L Diesel", "enquiries": "930 [BMW-VERIFIED]" },
-      { "rank": 3, "code": "N57D30", "label": "3.0L Diesel", "enquiries": "830 [BMW-VERIFIED]" },
-      { "rank": 4, "code": "B58B30", "label": "3.0L Petrol", "enquiries": "540 [BMW-VERIFIED]" },
-      { "rank": 5, "code": "B57D30", "label": "3.0L Diesel", "enquiries": "460 [BMW-VERIFIED]" },
-      { "rank": 6, "code": "N63B44", "label": "4.4L V8 Petrol", "enquiries": "440 [BMW-VERIFIED]" },
-      { "rank": 7, "code": "S63B44", "label": "4.4L V8 M Engine", "enquiries": "410 [BMW-VERIFIED]" }
+      { "rank": 1, "code": "276DT", "label": "2.7L TDV6 (shared w/ Land Rover)", "enquiries": "700 [EM-VERIFIED]" },
+      { "rank": 2, "code": "AJ200D / 204DTD", "label": "Ingenium Diesel", "enquiries": "590 [EM-VERIFIED]" },
+      { "rank": 3, "code": "AJ126", "label": "3.0 V6 Supercharged", "enquiries": "560 [EM-VERIFIED]" },
+      { "rank": 4, "code": "AJ200P / 204PT", "label": "Ingenium Petrol", "enquiries": "500 [EM-VERIFIED]" },
+      { "rank": 5, "code": "AJ133 / 508PN", "label": "5.0 V8", "enquiries": "330 [EM-VERIFIED]" }
     ]
   },
   "models": {
-    "title": "Most-Enquired BMW Models (2025)",
+    "title": "Most-Enquired Jaguar Models (2025)",
     "icon": "🚗",
     "columns": ["RANK", "MODEL", "ENQUIRIES"],
     "rows": [
-      { "rank": 1, "model": "BMW 3 Series F30", "enquiries": "380 [BMW-VERIFIED]" },
-      { "rank": 2, "model": "BMW 1 Series F20", "enquiries": "344 [BMW-VERIFIED]" },
-      { "rank": 3, "model": "BMW X3 F25", "enquiries": "316 [BMW-VERIFIED]" },
-      { "rank": 4, "model": "BMW 5 Series F10", "enquiries": "300 [BMW-VERIFIED]" },
-      { "rank": 5, "model": "BMW X5 F15", "enquiries": "288 [BMW-VERIFIED]" },
-      { "rank": 6, "model": "BMW 3 Series E90", "enquiries": "256 [BMW-VERIFIED]" }
+      { "rank": 1, "model": "XF X260", "enquiries": "276 [EM-VERIFIED]" },
+      { "rank": 2, "model": "XE X760", "enquiries": "260 [EM-VERIFIED]" },
+      { "rank": 3, "model": "F-Pace X761", "enquiries": "220 [EM-VERIFIED]" },
+      { "rank": 4, "model": "XF X250", "enquiries": "178 [EM-VERIFIED]" },
+      { "rank": 5, "model": "XJ X351", "enquiries": "151 [EM-VERIFIED]" },
+      { "rank": 6, "model": "E-Pace X540", "enquiries": "140 [EM-VERIFIED]" }
     ]
   },
   "replacementCosts": {
@@ -41,56 +39,59 @@
     "icon": "£",
     "columns": ["ENGINE CODE", "COST RANGE"],
     "rows": [
-      { "code": "N47D20C", "cost": "£3,200–£5,500 [BMW-QUOTE]" },
-      { "code": "B47D20A", "cost": "£2,800–£4,500 [BMW-QUOTE]" },
-      { "code": "N57D30", "cost": "£4,500–£7,000 [BMW-QUOTE]" },
-      { "code": "B58B30", "cost": "£3,800–£6,000 [BMW-QUOTE]" },
-      { "code": "B57D30", "cost": "£5,000–£8,000 [BMW-QUOTE]" },
-      { "code": "N63B44", "cost": "£6,000–£10,000 [BMW-QUOTE]" },
-      { "code": "S63B44", "cost": "£9,000–£14,000 [BMW-QUOTE]" }
+      { "code": "AJ200D / 204DTD", "cost": "£3,500–£5,800 [EM-QUOTE]" },
+      { "code": "AJ126", "cost": "£4,500–£7,500 [EM-QUOTE]" },
+      { "code": "276DT", "cost": "£5,000–£7,500 [EM-QUOTE]" },
+      { "code": "AJ200P / 204PT", "cost": "£3,000–£5,000 [EM-QUOTE]" },
+      { "code": "AJ133 / 508PN", "cost": "£5,500–£9,000 [EM-QUOTE]" }
     ]
   },
   "failures": {
-    "title": "Most Common BMW Failures",
+    "title": "Highest-Risk Failures",
     "icon": "⚠️",
     "columns": ["RANK", "FAILURE", "RISK LEVEL"],
     "rows": [
       {
         "rank": 1,
-        "failure": "N47 timing chain stretch and tensioner failure",
+        "failure": "276DT Oil Pump Housing Failure",
         "risk": { "icon": "🔴", "label": "Catastrophic", "type": "catastrophic" }
       },
       {
         "rank": 2,
-        "failure": "N57 turbocharger and timing chain wear",
-        "risk": { "icon": "🟠", "label": "Immediate", "type": "immediate" }
-      },
-      {
-        "rank": 3,
-        "failure": "B58 coolant leaks (expansion tank, water pump, plastic fittings)",
+        "failure": "AJ133 Pre-2013 Timing Chain Tensioner Wear",
         "risk": { "icon": "🟡", "label": "Monitor", "type": "monitor" }
       },
       {
-        "rank": 4,
-        "failure": "N63 valve stem seals and hot-vee issues",
-        "risk": { "icon": "🔴", "label": "Catastrophic", "type": "catastrophic" }
-      },
-      {
-        "rank": 5,
-        "failure": "S63 timing chain tensioner wear",
-        "risk": { "icon": "🔴", "label": "Catastrophic", "type": "catastrophic" }
+        "rank": 3,
+        "failure": "AJ200D Pre-2019 Timing Chain Tensioner Wear",
+        "risk": { "icon": "🟡", "label": "Monitor", "type": "monitor" }
       }
     ]
   },
   "regionalDemand": {
-    "title": "Regional Demand",
-    "icon": "🌐",
-    "columns": ["REGION", "PERCENTAGE"],
+    "title": "Regional Demand Breakdown (2025)",
+    "icon": "📍",
     "rows": [
-      { "region": "London", "percentage": "22% [EM-VERIFIED]" },
-      { "region": "South East", "percentage": "18% [EM-VERIFIED]" },
-      { "region": "North West", "percentage": "12% [EM-VERIFIED]" },
-      { "region": "Midlands", "percentage": "11% [EM-VERIFIED]" }
+      { "region": "London & South East", "percentage": "32%" },
+      { "region": "North West", "percentage": "18%" },
+      { "region": "West Midlands", "percentage": "15%" },
+      { "region": "Yorkshire & Humber", "percentage": "12%" },
+      { "region": "South West", "percentage": "10%" },
+      { "region": "Scotland", "percentage": "8%" },
+      { "region": "East of England", "percentage": "5%" }
+    ]
+  },
+  "regionalDemand": {
+    "title": "Regional Demand Breakdown (2025)",
+    "icon": "📍",
+    "rows": [
+      { "region": "London & South East", "percentage": "32%" },
+      { "region": "North West", "percentage": "18%" },
+      { "region": "West Midlands", "percentage": "15%" },
+      { "region": "Yorkshire & Humber", "percentage": "12%" },
+      { "region": "South West", "percentage": "10%" },
+      { "region": "Scotland", "percentage": "8%" },
+      { "region": "East of England", "percentage": "5%" }
     ]
   },
   "liveFeed": {
@@ -99,24 +100,30 @@
     "columns": ["VEHICLE", "LOCATION", "ISSUE", "TIMESTAMP"],
     "rows": [
       {
-        "vehicle": "BMW 320d (N47)",
-        "location": "London",
-        "issue": "Timing chain rattle",
-        "timestamp": "2 hours ago"
-      },
-      {
-        "vehicle": "BMW X5 (B57)",
+        "vehicle": "F-Pace (AJ200D)",
         "location": "Manchester",
-        "issue": "Loss of power",
+        "issue": "Timing chain rattle",
         "timestamp": "4 hours ago"
       },
       {
-        "vehicle": "BMW M4 (S63)",
-        "location": "Birmingham",
-        "issue": "Turbo failure",
+        "vehicle": "XF (AJ126)",
+        "location": "London",
+        "issue": "Coolant crossover pipe leak",
         "timestamp": "6 hours ago"
+      },
+      {
+        "vehicle": "XJ (AJ133)",
+        "location": "Bristol",
+        "issue": "Pre-purchase inspection",
+        "timestamp": "9 hours ago"
+      },
+      {
+        "vehicle": "XE (AJ200P)",
+        "location": "Leeds",
+        "issue": "Water pump replacement quote",
+        "timestamp": "11 hours ago"
       }
     ],
-    "footer": "Updated monthly from BMWEngines.uk CRM data"
+    "footer": "Updated monthly from JaguarEngines.uk CRM data"
   }
 }

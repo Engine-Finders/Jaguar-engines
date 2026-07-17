@@ -1,8 +1,8 @@
 {
-  "subHeadline": "The question every BMW owner eventually faces, answered honestly rather than sold around. We tell you when to repair, when to replace, and when to scrap — based on real UK data, not estimates.",
+  "subHeadline": "The question every Jaguar owner eventually faces, answered honestly rather than sold around. We tell you when to repair, when to replace, and when to scrap — based on real UK data, not estimates.",
   "headerImage": {
     "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=900&q=80",
-    "alt": "BMW ownership economics"
+    "alt": "Jaguar ownership economics"
   },
   "matrix": {
     "columns": [
@@ -13,131 +13,131 @@
     ],
     "rows": [
       {
-        "model": "3 Series E90 (N47D20C)",
+        "model": "XF X250 (AJ126)",
         "image": {
           "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=200&q=80",
-          "alt": "3 Series E90"
+          "alt": "XF X250"
         },
-        "vehicleValue": "£2,500–£7,500 [THIRD-PARTY]",
-        "replacementCost": "£3,200–£5,500 [BMW-QUOTE]",
+        "vehicleValue": "£4,000–£12,000 [THIRD-PARTY]",
+        "replacementCost": "£4,500–£7,500 [EM-QUOTE]",
+        "verdict": {
+          "icon": "⚠️",
+          "text": "Watch — sub-£7k examples approach the threshold",
+          "type": "watch"
+        },
+        "href": "#"
+      },
+      {
+        "model": "X-Type X400",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=200&q=80",
+          "alt": "X-Type X400"
+        },
+        "vehicleValue": "£1,500–£5,000 [THIRD-PARTY]",
+        "replacementCost": "£2,500–£5,800 [EM-QUOTE]",
         "verdict": {
           "icon": "🔴",
-          "text": "Scrap threshold — recon cost frequently exceeds car value on sub-£4k examples. The 70% BMW threshold is live here.",
+          "text": "Scrap threshold — recon cost frequently exceeds car value",
           "type": "scrap"
         },
         "href": "#"
       },
       {
-        "model": "3 Series F30 (B47D20A)",
-        "image": {
-          "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=200&q=80",
-          "alt": "3 Series F30"
-        },
-        "vehicleValue": "£7,000–£20,000 [THIRD-PARTY]",
-        "replacementCost": "£2,800–£4,500 [BMW-QUOTE]",
-        "verdict": {
-          "icon": "✅",
-          "text": "Safe — replacement well within value. The B47 is the sensible daily choice.",
-          "type": "safe"
-        },
-        "href": "#"
-      },
-      {
-        "model": "3 Series G20 (B58B30)",
+        "model": "F-Pace X761",
         "image": {
           "src": "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=200&q=80",
-          "alt": "3 Series G20"
+          "alt": "F-Pace X761"
         },
-        "vehicleValue": "£18,000–£35,000 [THIRD-PARTY]",
-        "replacementCost": "£3,800–£6,000 [BMW-QUOTE]",
+        "vehicleValue": "£12,000–£38,000 [THIRD-PARTY]",
+        "replacementCost": "£3,000–£5,800 [EM-QUOTE]",
         "verdict": {
           "icon": "✅",
-          "text": "Safe — very safe across all variants. The safest 3 Series generation for engine reliability.",
+          "text": "Safe — replacement viable across all engine variants",
           "type": "safe"
         },
         "href": "#"
       },
       {
-        "model": "5 Series F10 (N57D30)",
+        "model": "XJ X351 (AJ133)",
         "image": {
           "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=200&q=80",
-          "alt": "5 Series F10"
+          "alt": "XJ X351"
         },
-        "vehicleValue": "£5,000–£16,000 [THIRD-PARTY]",
-        "replacementCost": "£4,500–£7,000 [BMW-QUOTE]",
+        "vehicleValue": "£8,000–£25,000 [THIRD-PARTY]",
+        "replacementCost": "£4,500–£9,000 [EM-QUOTE]",
         "verdict": {
-          "icon": "⚠️",
-          "text": "Watch — sub-£8k examples approach the 70% threshold. Buy with documented service history.",
-          "type": "watch"
+          "icon": "✅",
+          "text": "Safe — flagship values absorb even the upper recon cost",
+          "type": "safe"
         },
         "href": "#"
       },
       {
-        "model": "X5 F15 (N63B44)",
+        "model": "XF X260",
         "image": {
           "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=200&q=80",
-          "alt": "X5 F15"
+          "alt": "XF X260"
         },
-        "vehicleValue": "£10,000–£28,000 [THIRD-PARTY]",
-        "replacementCost": "£6,000–£10,000 [BMW-QUOTE]",
+        "vehicleValue": "£8,000–£25,000 [THIRD-PARTY]",
+        "replacementCost": "£3,000–£5,800 [EM-QUOTE]",
         "verdict": {
-          "icon": "⚠️",
-          "text": "Watch — N63 recon can be 40–60% of vehicle value. The \"N63 nightmare\" is real.",
-          "type": "watch"
+          "icon": "✅",
+          "text": "Safe — well within value even at the upper recon cost",
+          "type": "safe"
         },
         "href": "#"
       },
       {
-        "model": "F10 M5 (S63B44)",
+        "model": "S-Type X200",
         "image": {
           "src": "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=200&q=80",
-          "alt": "F10 M5"
+          "alt": "S-Type X200"
         },
-        "vehicleValue": "£8,000–£22,000 [THIRD-PARTY]",
-        "replacementCost": "£9,000–£14,000 [BMW-QUOTE]",
+        "vehicleValue": "£1,500–£5,500 [THIRD-PARTY]",
+        "replacementCost": "£4,500–£7,500 [EM-QUOTE]",
         "verdict": {
-          "icon": "⚠️",
-          "text": "Watch — M-division V8 recon frequently approaches or exceeds vehicle value on older examples. Buy only with full service history and a specialist PPI.",
-          "type": "watch"
+          "icon": "🔴",
+          "text": "Scrap threshold — recon cost seldom justified",
+          "type": "scrap"
         },
         "href": "#"
       }
     ]
   },
   "ruleOfThumb": {
-    "title": "The BMW Rule of Thumb",
-    "percent": "70%",
-    "percentLabel": "BMW THRESHOLD",
-    "text": "If reconditioned engine cost runs at 70% or more of what your car is actually worth on today's market, get a scrap valuation alongside any repair quote — don't decide on repair cost alone. This is our BMW-specific threshold, derived from analysing 826 3 Series enquiries in 2025 [BMW-VERIFIED] and the real cost-vs-value data behind them."
+    "title": "The Rule of Thumb",
+    "percent": "60%",
+    "percentLabel": "JAGUAR THRESHOLD",
+    "text": "If reconditioned engine cost runs at 60% or more of what your car is actually worth on today's market, get a scrap valuation alongside any repair quote — don't decide on repair cost alone."
   },
   "deeperLinks": [
     {
       "id": 1,
-      "label": "Is It Worth Replacing a 3 Series Engine? →",
-      "purpose": "Full breakdown of E90/F30/G20 ownership economics",
+      "label": "Is It Worth Replacing an XF Engine? →",
+      "purpose": "Full breakdown of XF ownership economics",
       "href": "#"
     },
     {
       "id": 2,
-      "label": "Is a BMW N47 Failure a Write-Off? →",
+      "label": "Is an AJ126 Failure a Write-Off? →",
       "purpose": "When repair makes sense vs when to walk away",
       "href": "#"
     },
     {
       "id": 3,
-      "label": "When Should You Scrap a BMW? →",
+      "label": "When Should You Scrap a Jaguar? →",
       "purpose": "The decision framework for older vehicles",
       "href": "#"
     },
     {
       "id": 4,
-      "label": "Most Expensive BMW Repairs →",
+      "label": "Most Expensive Jaguar Repairs →",
       "purpose": "The top 5 repairs and what they cost",
       "href": "#"
     },
     {
       "id": 5,
-      "label": "Cheapest BMWs to Own →",
+      "label": "Cheapest Jaguars to Own →",
       "purpose": "Which models offer the best value for money",
       "href": "#"
     }

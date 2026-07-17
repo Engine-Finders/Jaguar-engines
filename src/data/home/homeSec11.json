@@ -1,41 +1,29 @@
 {
-  "subHeadline": "From the carburetted M10 to the modular B58, mapped against the models that carried it. The complete BMW engine timeline.",
+  "subHeadline": "Not a navigation grid — a verdict on every generation, drawn from real enquiry volume and replacement economics.",
   "headerImage": {
     "src": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=900&q=80",
-    "alt": "BMW engine history"
+    "alt": "Jaguar model lineup"
   },
-  "columns": ["ERA", "KEY ENGINES", "ICONIC MODELS"],
+  "columns": ["MODEL", "GENERATIONS", "VERDICT"],
+  "keyTakeaway": "Every Jaguar generation has a clear winner and loser from a reliability and replacement cost perspective. The F-Pace X761 stands alone as the only model with a clean Safe verdict across every engine variant in our data.",
   "eras": [
-    {
-      "era": "1960s–1970s",
-      "engines": "M10, M30",
-      "models": "2002, E3, E9"
-    },
-    {
-      "era": "1980s",
-      "engines": "M20, M30B35, S14",
-      "models": "E30, E28, E24"
-    },
-    {
-      "era": "1990s",
-      "engines": "M42, M50, M52, S50, S52",
-      "models": "E36, E34, E31"
-    },
-    {
-      "era": "2000s",
-      "engines": "M54, N52, N54, S54, S62",
-      "models": "E46, E39, E38, E53"
-    },
-    {
-      "era": "2010s",
-      "engines": "N47, N55, N57, S63, S55",
-      "models": "E90, F10, F30, F15"
-    },
-    {
-      "era": "2020s",
-      "engines": "B47, B48, B58, S58",
-      "models": "G20, G30, G05, G07"
-    }
+    { "era": "XE", "engines": "1 Generation (X760)", "models": "✅ Safe Buy" },
+    { "era": "XF", "engines": "2 Generations (X250, X260)", "models": "🔥 Most Enquired" },
+    { "era": "XJ", "engines": "X300, X308, X351 (primary)", "models": "👑 Flagship Choice" },
+    { "era": "S-Type", "engines": "1 Generation (X200)", "models": "⚠️ Check Value" },
+    { "era": "X-Type", "engines": "1 Generation (X400)", "models": "⚠️ Check Value" },
+    { "era": "F-Pace", "engines": "1 Generation (X761)", "models": "👨‍👩‍👧‍👦 Best Family" },
+    { "era": "E-Pace", "engines": "1 Generation (X540)", "models": "🚀 High Demand" },
+    { "era": "I-Pace", "engines": "1 Generation (X590)", "models": "⚡ EV — Drive Unit Info" },
+    { "era": "F-Type", "engines": "1 Generation (X152)", "models": "🏆 Safest Buy" },
+    { "era": "XK", "engines": "2 Generations (X100, X150)", "models": "💎 Premium Style" }
   ],
-  "keyTakeaway": "The N47 and N57 defined the diesel era — but the B58 and B47 reversed the reliability perception. The M54 and M57 remain the classic keeper engines; the B58 is the modern gold standard."
+  "exampleVerdict": {
+    "model": "Jaguar F-Pace",
+    "bestGeneration": "The only F-Pace generation (X761), for its strong retained values and the widest safe engine coverage in the range.",
+    "worstEngine": "Early AJ200D units without documented chain-tensioner inspection — same caveat as Land Rover's Ingenium diesel.",
+    "mostReliableEngine": "The AJ200P/204PT Ingenium petrol — no meaningful weak point beyond routine water pump replacement.",
+    "highestRisk": "None flagged at the model level — F-Pace is the one Jaguar with a clean ✅ Safe verdict across every engine variant in our data.",
+    "bestUsedBuy": "A 2019+ F-Pace with full service history — the strongest all-round ownership profile of any Jaguar currently on sale."
+  }
 }

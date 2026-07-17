@@ -1,12 +1,12 @@
 {
-  "subHeadline": "Answer a few questions about your symptoms — we'll match you against 15+ known BMW failure patterns, show you the likely diagnosis, OEM part references, and an honest repair vs. replace cost estimate.",
+  "subHeadline": "Answer a few questions about your symptoms — we'll match you against known Jaguar failure patterns, show you the likely diagnosis, OEM part references, and an honest repair vs. replace cost estimate.",
   "headerImage": {
     "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=900&q=80",
-    "alt": "BMW for diagnostic calculator"
+    "alt": "Jaguar diagnostic calculator"
   },
   "trustStrip": [
-    { "icon": "📊", "label": "Powered by 24,650+ real UK enquiries" },
-    { "icon": "🔧", "label": "20+ vetted BMW specialists" },
+    { "icon": "📊", "label": "Powered by 1,700+ real UK enquiries" },
+    { "icon": "🔧", "label": "15+ vetted Jaguar specialists" },
     { "icon": "📖", "label": "OEM part references included" },
     { "icon": "🏆", "label": "Part of Engine Finders" }
   ],
@@ -37,7 +37,7 @@
       { "icon": "⚙️", "label": "Engine Performance Issues", "href": "#" },
       { "icon": "🛢️", "label": "Oil Leaks & Consumption", "href": "#" },
       { "icon": "🌡️", "label": "Cooling System", "href": "#" },
-      { "icon": "⏱️", "label": "Timing Chain / VANOS", "href": "#" },
+      { "icon": "⏱️", "label": "Timing Chain / Tensioner", "href": "#" },
       { "icon": "💨", "label": "Turbocharger", "href": "#" },
       { "icon": "🔋", "label": "Battery / Electrical", "href": "#" },
       { "icon": "⚡", "label": "Spark / Ignition", "href": "#" },
@@ -54,18 +54,18 @@
     "signals": [
       {
         "icon": "🛡️",
-        "title": "BMW-VERIFIED Data",
+        "title": "EM-VERIFIED Data",
         "text": "Every cost range and enquiry volume comes from real 2025 UK data — not estimates or guesswork."
       },
       {
         "icon": "⚙️",
-        "title": "BMW-Specific Knowledge",
-        "text": "We use exact BMW terminology (N47, B58, VANOS, Valvetronic) and OEM part numbers."
+        "title": "Jaguar-Specific Knowledge",
+        "text": "We use exact factory terminology (AJ126, AJ133, AJ200D, Ingenium) and OEM part numbers."
       },
       {
         "icon": "👥",
         "title": "Vetted Specialist Network",
-        "text": "Our recommendations route you to 20+ BMW specialists who work on these engines daily."
+        "text": "Our recommendations route you to 15+ Jaguar specialists who work on these vehicles daily."
       },
       {
         "icon": "🏆",
@@ -77,17 +77,28 @@
   "exampleResult": {
     "badge": "EXAMPLE RESULT",
     "title": "Likely Diagnosis",
-    "fault": "Oil Filter Housing Gasket Leak",
+    "fault": "AJ200D Timing Chain Tensioner Wear",
     "likelihood": "High Likelihood",
-    "commonOn": "N47 / B47 engines",
-    "symptomsMatch": "Oil smell, low oil level, under-car drip",
-    "repairCost": "£180–£420",
-    "replaceCost": "£2,800–£4,500",
+    "commonOn": "Ingenium Diesel engines (pre-2019)",
+    "symptomsMatch": "Cold-start rattle, rough idle, engine warning light",
+    "repairCost": "£1,500–£2,500",
+    "replaceCost": "£3,500–£5,800",
     "footer": "Based on verified UK enquiries"
+  },
+  "costTable": {
+    "title": "Typical UK Jaguar Replacement Costs",
+    "columns": ["FAILURE TYPE", "RECONDITIONED S&F", "REBUILT S&F", "USED S&F", "MAIN DEALER EST."],
+    "rows": [
+      { "failure": "Ingenium Timing Chain (AJ200D/204DTD)", "recon": "£3,500–£5,800", "rebuilt": "£4,800–£7,000", "used": "£2,000–£3,500", "dealer": "£7,000–£10,500" },
+      { "failure": "AJ133 5.0 V8 Chain Tensioner (pre-2013)", "recon": "£5,500–£9,000", "rebuilt": "£8,000–£12,000", "used": "£3,000–£5,500", "dealer": "£11,000–£16,500" },
+      { "failure": "276DT Oil Pump Failure", "recon": "£5,000–£7,500", "rebuilt": "£6,500–£9,500", "used": "£2,800–£4,500", "dealer": "£9,500–£14,000" },
+      { "failure": "AJ126 Cooling System / Chain Tensioner", "recon": "£4,500–£7,500", "rebuilt": "£6,000–£9,500", "used": "£2,500–£4,500", "dealer": "£8,500–£13,000" },
+      { "failure": "Ingenium Petrol Water Pump (AJ200P/204PT)", "recon": "£3,000–£5,000", "rebuilt": "£4,200–£6,500", "used": "£1,500–£2,800", "dealer": "£6,000–£9,000" }
+    ]
   },
   "bottomCta": {
     "title": "Get your exact verdict",
-    "text": "Answer a few questions for a diagnosis matched to your BMW.",
+    "text": "Answer a few questions for a diagnosis matched to your Jaguar.",
     "buttonLabel": "START DIAGNOSIS",
     "href": "#",
     "trustLine": "100% Independent • No Sponsorship • Completely Unbiased"

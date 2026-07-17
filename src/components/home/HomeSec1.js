@@ -20,7 +20,7 @@ export default function HomeSec1({ data }) {
         {/* Text: second on mobile, left on desktop */}
         <div className="order-2 flex w-full flex-col gap-2 md:order-1 md:w-1/2">
           <h1 className="text-3xl font-bold text-black md:text-5xl">
-            The UK&apos;s Most Trusted BMW Ownership Guide
+            The UK&apos;s Most Trusted Jaguar Ownership Guide
           </h1>
 
           <p className="text-sm text-gray-700">{data.subHeadline}</p>
