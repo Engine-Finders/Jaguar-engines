@@ -39,7 +39,7 @@ export async function generateMetadata({ params }) {
       ? {
           title: meta.openGraph.title,
           description: meta.openGraph.description,
-          type: meta.openGraph.type,
+          type: meta.openGraph.type || "website",
           url: meta.openGraph.url,
           images: meta.openGraph.image ? [meta.openGraph.image] : undefined,
           siteName: meta.openGraph.siteName,
