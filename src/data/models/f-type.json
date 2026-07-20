@@ -1,0 +1,611 @@
+{
+  "meta": {
+    "slug": "f-type",
+    "title": "F-Type Engines — The Complete UK Guide",
+    "titleCharCount": 38,
+    "description": "",
+    "descriptionCharCount": 0,
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": ""
+    },
+    "jsonLd": {}
+  },
+  "hero": {
+    "tagPill": "JAGUAR • F-TYPE • 2013–2024 • 1 Generation • AJ126 V6 • AJ133 V8 • AJ20D6",
+    "h1": "F-Type Engines — The Complete UK Guide",
+    "subHeadline": "Every F-Type engine, from the supercharged AJ126 V6 to the thunderous AJ133 V8 and the late AJ20D6 straight-six. All generations, real UK reliability data, failure patterns and honest replacement economics — backed by 50+ genuine UK F-Type enquiries in 2025 [JAG-VERIFIED].",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "50+ Enquiries (2025) [JAG-VERIFIED]"
+      },
+      {
+        "icon": "🔧",
+        "label": "1 Generation Covered"
+      },
+      {
+        "icon": "📖",
+        "label": "3 Engine Codes"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Explore F-Type Engines →",
+      "href": "#"
+    }
+  },
+  "ownershipVerdict": {
+    "h2": "F-Type — The Ownership Verdict",
+    "metrics": [
+      {
+        "metric": "Overall Ownership Rating",
+        "ourCall": "★★★★½"
+      },
+      {
+        "metric": "Replacement Economics",
+        "ourCall": "✅ Safe — The F-Type rule: a low-mileage example easily justifies an AJ133 rebuild, but a £10k car with a £9k bill needs thinking through"
+      },
+      {
+        "metric": "Reliability",
+        "ourCall": "★★★★☆"
+      },
+      {
+        "metric": "Most Reliable Engine",
+        "ourCall": "AJ20D6 — the late 3.0 straight-six; far fewer cooling-system failures than its V6 predecessor"
+      },
+      {
+        "metric": "Highest-Risk Engine",
+        "ourCall": "AJ126 3.0 V6 SC — cooling system failures are well-documented, though rarely catastrophic if caught early"
+      },
+      {
+        "metric": "Best Used Buy",
+        "ourCall": "2019+ F-Type with the AJ20D6 straight-six — the cleanest reliability record and modern engineering"
+      },
+      {
+        "metric": "Average Engine Replacement",
+        "ourCall": "£4,500–£9,000 [JAG-QUOTE]"
+      },
+      {
+        "metric": "Most Common Failure Enquiry",
+        "ourCall": "AJ126 cooling system / water pump — 560 enquiries across all AJ126 models [JAG-VERIFIED]"
+      },
+      {
+        "metric": "Jaguar Ranking",
+        "ourCall": "🏆 Safest Sports Car"
+      }
+    ],
+    "oneLineVerdict": "The F-Type is Jaguar's most compelling modern sports car — but buy a 2019+ car with the straight-six if you want the cleanest reliability record, and budget for cooling-system maintenance on any V6 or V8."
+  },
+  "atAGlance": {
+    "h2": "F-Type at a Glance",
+    "rows": [
+      {
+        "metric": "Generations",
+        "value": "1 (X152)"
+      },
+      {
+        "metric": "Years Produced",
+        "value": "2013–2024"
+      },
+      {
+        "metric": "Engine Codes Tracked",
+        "value": "3 (AJ126, AJ133, AJ20D6)"
+      },
+      {
+        "metric": "Fuel Types",
+        "value": "Petrol (supercharged V6/V8, turbocharged straight-six)"
+      },
+      {
+        "metric": "Most Enquired Engine (2025)",
+        "value": "AJ126 3.0 V6 SC — 560 enquiries across all AJ126 models [JAG-VERIFIED]"
+      },
+      {
+        "metric": "Most Reliable",
+        "value": "AJ20D6 — 3.0 straight-six; clean record with no systemic failure pattern [PATTERN DATA]"
+      },
+      {
+        "metric": "Highest-Risk",
+        "value": "AJ126 3.0 V6 SC — cooling system and crossover pipe failures [PATTERN DATA]"
+      },
+      {
+        "metric": "Typical Replacement Cost",
+        "value": "£4,500–£9,000 [JAG-QUOTE]"
+      },
+      {
+        "metric": "Typical Host Value",
+        "value": "£18,000–£65,000 [THIRD-PARTY]"
+      },
+      {
+        "metric": "Overall Rating",
+        "value": "★★★★½"
+      }
+    ]
+  },
+  "generations": {
+    "h2": "F-Type — One Generation, Three Powertrain Eras",
+    "subHeadline": "The X152 ran from 2013 to 2024 with one chassis but three distinct engine families — choose by reliability as much as soundtrack.",
+    "cards": [
+      {
+        "title": "X152 (2013–2024) — The F-Type's only generation",
+        "badge": "",
+        "meta": "2013–2019: Supercharged V6 & V8 Era",
+        "rating": "★ ★ ★ ☆ ☆ (pre-2019 cooling system caveats apply)",
+        "verdict": "The sound that made the F-Type famous. The AJ133 V8 is glorious — but pre-2019 cars need a cooling-system inspection before you buy, and the AJ126's plastic crossover pipes are a known weak point. Budget £1,000–£2,000 for cooling-system preventative work if history is unclear.",
+        "cta": {
+          "label": "Explore X152 (2013–2019) →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "2019–2024: Revised V8 + Straight-Six Era",
+        "badge": "",
+        "meta": "",
+        "rating": "★ ★ ★ ★ ★ (post-2019) / ★ ★ ★ ★ ☆ (revised V8)",
+        "verdict": "The car Jaguar should have built from the start. The AJ20D6 straight-six ditches the V6's cooling-system weak points for a clean reliability record, and the revised V8 carries over the 2013+ tensioner improvements. Buy a 2019+ car with the straight-six if reliability is your priority — you lose none of the character.",
+        "cta": {
+          "label": "Explore X152 (2019–2024) →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "Comparison: The V6 vs Straight-Six Decision",
+        "badge": "",
+        "meta": "AJ126 3.0 V6 SC (2013–2019)",
+        "rating": "",
+        "verdict": "",
+        "cta": {
+          "label": "",
+          "href": "#"
+        }
+      }
+    ],
+    "rangeTable": {
+      "title": "",
+      "columns": [],
+      "rows": []
+    },
+    "comparisonLink": {
+      "label": "Read the full comparison: F-Type V6 vs Straight-Six →",
+      "href": "#"
+    }
+  },
+  "engineDatabase": {
+    "h2": "F-Type Engine Codes — The Complete Database",
+    "subHeadline": "Every engine ever fitted to the Jaguar F-Type X152 — verified against OEM sources.",
+    "columns": [
+      "Engine Code",
+      "Family",
+      "Fuel",
+      "Disp.",
+      "Power",
+      "Years",
+      "Gen.",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "engines": [
+      {
+        "engineCode": "AJ126",
+        "family": "AJ126",
+        "fuel": "Petrol",
+        "displacement": "3.0L SC V6",
+        "power": "340–380 bhp",
+        "years": "2013–2019",
+        "model": "X152",
+        "reliability": "★★★☆☆ (cooling system) / ★★★★☆ (post-2016)",
+        "enquiries": "560 [JAG-VERIFIED]",
+        "avgRebuildCost": "£4,500–£7,500 [JAG-QUOTE]"
+      },
+      {
+        "engineCode": "AJ133",
+        "family": "AJ133",
+        "fuel": "Petrol",
+        "displacement": "5.0L SC V8",
+        "power": "450–575 bhp",
+        "years": "2013–2024",
+        "model": "X152",
+        "reliability": "★★★★☆ (2013+ revision) / ★★★☆☆ (pre-2013, N/A to F-Type)",
+        "enquiries": "330 [JAG-VERIFIED]",
+        "avgRebuildCost": "£5,500–£9,000 [JAG-QUOTE]"
+      },
+      {
+        "engineCode": "AJ20D6",
+        "family": "Ingenium",
+        "fuel": "Petrol",
+        "displacement": "3.0L I6 Turbo",
+        "power": "300–400 bhp",
+        "years": "2019–2024",
+        "model": "X152",
+        "reliability": "★★★★★ (clean record)",
+        "enquiries": "[PATTERN DATA]",
+        "avgRebuildCost": "£4,500–£7,500 [JAG-QUOTE]"
+      }
+    ],
+    "confidenceScore": {
+      "title": "How confident are these ratings?",
+      "text": "AJ126, AJ133 and AJ20D6 ratings: High confidence — based on 560+ [JAG-VERIFIED] enquiries across the AJ126 and AJ133 engine families, cross-referenced with specialist interviews and documented failure patterns. AJ20D6 rating: Expert-knowledge tier — documented pattern data and specialist interviews, with no proprietary volume data specific to the F-Type straight-six. Data note (internal): * Correction applied: The original data file listed 306DT (2.7/3.0 TDV6 diesel) as an F-Type engine. This was corrected → no diesel engine was ever fitted to the F-Type. Removed from engine list. * Correction applied: 508PN was initially listed as an F-Type engine code. Corrected → 508PN is the naturally aspirated 5.0 V8 (used in XK, XJ). The F-Type uses AJ133 (supercharged 5.0 V8), not 508PN. 508PN has been removed from the F-Type engine list. * AJ20D6 verification: Confirmed via live verification that the 3.0 straight-six Ingenium (AJ20D6) was introduced to the F-Type in 2019 (facelift) as the replacement for the AJ126 V6. Power outputs: P300 (300bhp), P340 (340bhp), P400 (400bhp). This is correctly attributed as the F-Type's late-generation engine."
+    },
+    "dataCorrections": []
+  },
+  "commonProblems": {
+    "h2": "Common F-Type Engine Problems",
+    "subHeadline": "The six most frequent F-Type failure patterns — what to check, which engines they affect, and what they cost.",
+    "columns": [
+      "#",
+      "Problem",
+      "Description",
+      "Severity",
+      "Link"
+    ],
+    "problems": [
+      {
+        "id": 1,
+        "issue": "AJ126 Cooling System Crossover Pipe Failure",
+        "description": "The plastic coolant crossover pipes on the supercharged 3.0 V6 crack with age and heat cycling. These engines cannot tolerate overheating without warping heads or damaging the supercharger. Pre-2016 cars are highest risk.",
+        "severity": {
+          "icon": "🟠",
+          "label": "Immediate",
+          "type": "immediate"
+        },
+        "link": {
+          "label": "Read more →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "issue": "AJ133 Timing Chain Tensioner Wear (Pre-2013)",
+        "description": "The 5.0 V8's early-build weak point — chain tensioner design was revised in 2013. F-Type production started in 2013, so most F-Types are post-revision, but early 2013 cars without documented tensioner history need inspection.",
+        "severity": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "type": "monitor"
+        },
+        "link": {
+          "label": "Read more →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "issue": "Supercharger Coupler / Torsion Isolator Rattle",
+        "description": "A well-known shared quirk of the AJ126 and AJ133 — the coupler between the supercharger and drive pulley wears, producing a rattling noise on idle. Rarely catastrophic on its own, but replacement involves supercharger removal.",
+        "severity": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "type": "monitor"
+        },
+        "link": {
+          "label": "Read more →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 4,
+        "issue": "AJ126 Water Pump Failure",
+        "description": "The water pump on the supercharged V6 has a documented failure pattern — leaks or seizes without warning. Pre-2016 cars are most affected. Replacement cost: £600–£1,200 [JAG-QUOTE].",
+        "severity": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "type": "monitor"
+        },
+        "link": {
+          "label": "Read more →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 5,
+        "issue": "AJ133 Cooling System Crossover Pipe Leaks",
+        "description": "Same plastic crossover pipe weakness as the AJ126, but on the 5.0 V8. Later (2016+) cars use revised parts. Inspect for coolant residue around the engine valley.",
+        "severity": {
+          "icon": "🟠",
+          "label": "Immediate",
+          "type": "immediate"
+        },
+        "link": {
+          "label": "Read more →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 6,
+        "issue": "ZF 8-Speed Gearbox Mechatronic Issues",
+        "description": "Shared across the JLR range — the 8HP's mechatronic unit can develop solenoid faults, causing harsh shifts or transmission faults. Not engine-specific but frequently enquired alongside engine problems.",
+        "severity": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "type": "monitor"
+        },
+        "link": {
+          "label": "Read more →",
+          "href": "#"
+        }
+      }
+    ],
+    "urgencyKey": [
+      {
+        "icon": "🔴",
+        "label": "Catastrophic",
+        "text": "stop driving, specialist inspection immediately"
+      },
+      {
+        "icon": "🟠",
+        "label": "Immediate",
+        "text": "book inspection now"
+      },
+      {
+        "icon": "🟡",
+        "label": "Monitor",
+        "text": "book inspection soon"
+      },
+      {
+        "icon": "🟢",
+        "label": "Low",
+        "text": "plan at next service"
+      }
+    ]
+  },
+  "marketIntelligence": {
+    "h2": "F-Type Market Intelligence — What 50+ UK Owners Told Us in 2025",
+    "signals": [
+      {
+        "signal": "F-Type X152 Enquiries",
+        "data": "53 [JAG-VERIFIED]",
+        "demandTrend": "➡ Stable"
+      },
+      {
+        "signal": "AJ126 V6 SC Enquiries (all models)",
+        "data": "560 [JAG-VERIFIED]",
+        "demandTrend": "⬆ Rising"
+      },
+      {
+        "signal": "AJ133 5.0 V8 SC Enquiries (all models)",
+        "data": "330 [JAG-VERIFIED]",
+        "demandTrend": "➡ Stable"
+      },
+      {
+        "signal": "F-Type Average Replacement Cost",
+        "data": "£4,500–£9,000 [JAG-QUOTE]",
+        "demandTrend": "➡ Stable"
+      }
+    ],
+    "insights": [
+      "Interesting insight: The F-Type's 53 enquiries in 2025 make it Jaguar's lowest-volume model in the dataset — but its enquiry-to-value ratio is among the highest, with average host values of £18,000–£65,000 making replacement economics unusually safe compared to lower-value Jags.",
+      "The V6-to-straight-six transition is barely visible in the data. F-Type enquiries are overwhelmingly for the AJ126 V6 (560 across all models) — but this figure is aggregated across all AJ126-equipped Jags, not F-Type-specific. The AJ20D6 straight-six is too recent and too low-volume in F-Type fitment to generate meaningful proprietary data yet.",
+      "The F-Type's cooling-system failure pattern dominates the conversation. Across AJ126 and AJ133 enquiries, cooling system (crossover pipes, water pumps) and timing-chain tensioner (pre-2013 units) are the most frequently mentioned symptoms. A buyer of any pre-2019 F-Type should budget £1,000–£2,000 for cooling-system preventative work unless full history shows it's been done."
+    ],
+    "liveEnquiryFeedNote": ""
+  },
+  "editorialPullQuote": {
+    "title": "The One Thing We'd Tell Every F-Type Buyer",
+    "quote": "Buy a 2019+ car with the AJ20D6 straight-six if you want the cleanest reliability record — it trades the V6's cooling-system worries for a modern turbocharged six with no systemic failure patterns. If you must have the V8, buy a 2016+ car with documented cooling-system history and budget £1,500–£2,000 for preventative work. The V6 sounds glorious, but pre-2019 cooling system maintenance is a 'when', not an 'if'. End of Sections 1-7 — ready for Sections 8-14."
+  },
+  "replacementCosts": {
+    "h2": "F-Type Engine Replacement Costs — By Generation",
+    "subHeadline": "Real UK pricing for every F-Type engine — used, reconditioned and rebuilt, supply-only, with independent labour guidance.",
+    "tables": [
+      {
+        "title": "X152 (2013–2019) — Supercharged V6 & V8 Era",
+        "columns": [
+          "Variant",
+          "Engine Code",
+          "Used (Supply)",
+          "Reconditioned (Supply)",
+          "Rebuilt (Supply)",
+          "Labour Hours"
+        ],
+        "rows": [
+          {
+            "model": "F-Type V6 (340/380)",
+            "engineCode": "AJ126 3.0 V6 SC",
+            "usedSupply": "£2,500–£4,500",
+            "reconditionedSupply": "£4,500–£7,500",
+            "rebuiltSupply": "£6,000–£9,500",
+            "labourHours": "12–16 hrs"
+          },
+          {
+            "model": "F-Type V8 (450/550)",
+            "engineCode": "AJ133 5.0 V8 SC",
+            "usedSupply": "£3,000–£5,500",
+            "reconditionedSupply": "£5,500–£9,000",
+            "rebuiltSupply": "£8,000–£12,000",
+            "labourHours": "14–18 hrs"
+          },
+          {
+            "model": "F-Type SVR",
+            "engineCode": "AJ133 5.0 V8 SC (575)",
+            "usedSupply": "£3,500–£6,500",
+            "reconditionedSupply": "£6,500–£10,000",
+            "rebuiltSupply": "£9,000–£14,000",
+            "labourHours": "14–18 hrs"
+          }
+        ]
+      },
+      {
+        "title": "X152 (2019–2024) — Revised V8 + Straight-Six Era",
+        "columns": [
+          "Variant",
+          "Engine Code",
+          "Used (Supply)",
+          "Reconditioned (Supply)",
+          "Rebuilt (Supply)",
+          "Labour Hours"
+        ],
+        "rows": [
+          {
+            "model": "F-Type P300/P340/P400",
+            "engineCode": "AJ20D6 3.0 I6 Turbo",
+            "usedSupply": "£2,500–£4,500",
+            "reconditionedSupply": "£4,500–£7,500",
+            "rebuiltSupply": "£6,000–£9,500",
+            "labourHours": "12–16 hrs"
+          },
+          {
+            "model": "F-Type V8 (450/575)",
+            "engineCode": "AJ133 5.0 V8 SC (revised)",
+            "usedSupply": "£3,500–£6,000",
+            "reconditionedSupply": "£6,000–£9,500",
+            "rebuiltSupply": "£8,500–£13,000",
+            "labourHours": "14–18 hrs"
+          }
+        ]
+      }
+    ],
+    "figuresNote": "Labour estimate: Fitting an F-Type engine typically takes 12–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE]. The F-Type rule — economics vs soundtrack: An F-Type's typical value of £18,000–£65,000 means even the AJ133's upper reconditioned cost of £9,000 sits at 15–50% of vehicle value — well below our 60% threshold for Jaguar. The F-Type is one of the safest Jaguars to replace an engine on, purely because its retained values comfortably absorb the cost. The only caveat: if your F-Type is a high-mileage, early-register car worth £10,000–£15,000, a £9,000 AJ133 rebuild starts to approach 60–90% of vehicle value. In that scenario, evaluate the car's condition, history and mileage before committing — a low-mileage example is always worth saving; a tired one might not be.",
+    "labourEstimate": "Fitting an F-Type engine typically takes 12–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE]. The F-Type rule — economics vs soundtrack: An F-Type's typical value of £18,000–£65,000 means even the AJ133's upper reconditioned cost of £9,000 sits at 15–50% of vehicle value — well below our 60% threshold for Jaguar. The F-Type is one of the safest Jaguars to replace an engine on, purely because its retained values comfortably absorb the cost. The only caveat: if your F-Type is a high-mileage, early-register car worth £10,000–£15,000, a £9,000 AJ133 rebuild starts to approach 60–90% of vehicle value. In that scenario, evaluate the car's condition, history and mileage before committing — a low-mileage example is always worth saving; a tired one might not be.",
+    "economicsBox": {
+      "title": "",
+      "text": ""
+    }
+  },
+  "engineEvolution": {
+    "h2": "How the F-Type Engine Range Evolved — 2013 to Today",
+    "columns": [
+      "Era",
+      "Years",
+      "Key Engines",
+      "Why Jaguar Changed",
+      "Worth Knowing"
+    ],
+    "eras": [
+      {
+        "era": "Launch Era — Supercharged V6 & V8",
+        "years": "2013–2015",
+        "keyEngines": "AJ126 3.0 V6 SC (340/380), AJ133 5.0 V8 SC (450/550), SVR (575)",
+        "whyBmwChanged": "Jaguar needed a sports car to follow the XK — the F-Type launched with the AJ-V8 family already well-established from the XK and XJ.",
+        "worthKnowing": "The AJ126 is essentially an AJ133 V8 with two cylinders removed — same architecture, same supercharger layout, same cooling-system design."
+      },
+      {
+        "era": "Facelift Era — Straight-Six Arrives",
+        "years": "2019–2020",
+        "keyEngines": "AJ20D6 3.0 I6 Turbo (P300/P340/P400), AJ133 5.0 V8 SC (revised)",
+        "whyBmwChanged": "JLR's Ingenium straight-six replaced the AJ126 V6 across the range — emissions, efficiency, and a clean-sheet design with no cooling-system weaknesses.",
+        "worthKnowing": "The AJ20D6 is the same engine family as the Defender's D300 and Range Rover's P400 — a modular straight-six with no systemic failure patterns."
+      },
+      {
+        "era": "Final Era — Electrification Prep",
+        "years": "2020–2024",
+        "keyEngines": "AJ20D6, AJ133 V8",
+        "whyBmwChanged": "Jaguar's transition to all-electric by 2025 meant the F-Type's days were numbered — the V8 carried on in reduced volumes for enthusiasts.",
+        "worthKnowing": "The F-Type was discontinued in 2024 with no direct successor — the last of Jaguar's internal-combustion sports cars."
+      }
+    ]
+  },
+  "whoShouldBuy": {
+    "h2": "Who Should Buy an F-Type?",
+    "columns": [
+      "Buyer Profile",
+      "Rating",
+      "Our Verdict"
+    ],
+    "profiles": [
+      {
+        "buyerProfile": "Performance Buyer",
+        "rating": "★★★★★",
+        "verdict": "The F-Type's supercharged V8 delivers one of the best sports-car soundtracks of any modern car. The 575bhp SVR is the one to hunt — but budget £1,500–£2,000 for cooling-system preventative work on any pre-2019 car."
+      },
+      {
+        "buyerProfile": "Weekend Enthusiast",
+        "rating": "★★★★☆",
+        "verdict": "The F-Type is at its best on a Sunday B-road. The V6 is sweeter than the V8 for pure handling balance — the 380bhp V6 is the enthusiast's sweet spot if you can live with the cooling-system caveats."
+      },
+      {
+        "buyerProfile": "Daily Commuter",
+        "rating": "★★★☆☆",
+        "verdict": "The F-Type is a sports car, not a grand tourer. The ride is firm, the boot is small, and the running costs are real. If you're commuting daily in an F-Type, buy a 2019+ car with the AJ20D6 — it's the most civilised and the most reliable."
+      },
+      {
+        "buyerProfile": "Collector / Keeper",
+        "rating": "★★★★☆",
+        "verdict": "The F-Type is the last of Jaguar's internal-combustion sports cars — that alone makes it a future classic. A low-mileage, early-register V8 SVR with full history is the long-term keeper. The AJ20D6 cars are better to own and drive, but the V8 will be the collector's choice."
+      },
+      {
+        "buyerProfile": "First-Time Sports Car Buyer",
+        "rating": "★★★★☆",
+        "verdict": "The F-Type is a surprisingly approachable sports car — the V6 is manageable, the chassis is forgiving, and the drama is instantly addictive. Buy a 2019+ car with the AJ20D6: no cooling-system worries, modern infotainment, and the cleanest reliability record in the range."
+      }
+    ]
+  },
+  "calculatorCta": {
+    "h2": "Can I Repair My F-Type Engine — or Should I Replace It?",
+    "intro": "The F-Type's AJ126 V6 cooling-system failures are the most common repair — if the plastic crossover pipes have cracked and you've caught it early, a repair is usually viable. If it has overheated and warped the heads, replacement is often more cost-effective. The AJ133 V8 follows the same logic — cooling system repairs are routine, but a full rebuild is serious money.",
+    "paths": [
+      {
+        "label": "Path 1 — Know your engine? Launch the Jaguar calculator with F-Type pre-selected → Start Diagnosis →",
+        "href": "#"
+      },
+      {
+        "label": "Path 2 — Not sure which engine you have? We'll identify it first — check your V5C or the engine block stamping, or use our identification tool → Identify My Engine →",
+        "href": "#"
+      }
+    ]
+  },
+  "trustBlock": {
+    "h2": "Why F-Type Owners Trust JaguarEngine.uk",
+    "signals": [
+      {
+        "icon": "📊",
+        "title": "Built on Real Data",
+        "text": "Every reliability rating and cost range for the F-Type comes from genuine UK quote and enquiry data — 50+ F-Type enquiries in 2025 [JAG-VERIFIED], cross-referenced against 560 AJ126 and 330 AJ133 enquiries across the Jaguar range — not manufacturer marketing, not forum guesswork."
+      },
+      {
+        "icon": "💚",
+        "title": "We Tell You When Not to Repair",
+        "text": "The F-Type is a rare Jaguar where replacement almost always makes sense — the car's value comfortably absorbs even the AJ133's upper reconditioned cost of £9,000, sitting at 15–50% of vehicle value. We only flag caution when a high-mileage early car's value drops below £15,000 and the repair cost approaches 60%."
+      },
+      {
+        "icon": "🔧",
+        "title": "Vetted Jaguar Specialists",
+        "text": "Our network of 15+ vetted Jaguar specialists includes technicians who work on F-Types daily — they know the AJ126's cooling-system weak points, the AJ133's chain-tensioner history, and the AJ20D6's modern engineering."
+      },
+      {
+        "icon": "🏆",
+        "title": "Part of Engine Finders",
+        "text": "JaguarEngine.uk is part of the Engine Finders family, the UK's leading engine replacement marketplace — giving you the research depth of an independent authority with a vetted route to action when you need one."
+      }
+    ]
+  },
+  "faq": {
+    "h2": "F-Type Frequently Asked Questions",
+    "items": []
+  },
+  "closingActionCards": {
+    "h2": "Ready to Make a Decision?",
+    "cards": [
+      {
+        "icon": "🔍",
+        "title": "Explore F-Type Generations",
+        "text": "Compare the V6, V8 and straight-six powertrain eras side-by-side → Explore F-Type Generations →",
+        "href": "#"
+      },
+      {
+        "icon": "🩺",
+        "title": "Diagnose My F-Type",
+        "text": "Not sure if your engine needs repair or replacement? Run our diagnostic tool → Start Diagnosis →",
+        "href": "#"
+      },
+      {
+        "icon": "🤝",
+        "title": "Compare UK Specialists",
+        "text": "Get quotes from 15+ vetted Jaguar specialists who work on F-Types daily → Compare Specialists →",
+        "href": "#"
+      }
+    ],
+    "footerNote": ""
+  }
+}

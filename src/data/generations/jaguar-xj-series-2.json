@@ -1,0 +1,776 @@
+{
+  "meta": {
+    "slug": "jaguar-xj-series-2",
+    "title": "XJ Series 2 Engine Cost UK — Compare Quotes",
+    "titleCharCount": 58,
+    "description": "Every Jaguar XJ Series 2 engine — 4.2 XK six, 5.3 V12, 3.4 six. Real UK costs, reliability data and classic Jaguar ownership advice. Get free quotes from 15 vetted specialists today.",
+    "descriptionCharCount": 157,
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "XJ",
+              "item": "https://jaguarengine.uk/xj/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Jaguar XJ Series 2",
+              "item": "https://jaguarengine.uk/xj/series-2/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar XJ Series 2 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "2.8 XK Six (7Lxxxx) Engine",
+              "url": "https://jaguarengine.uk/engines/28-xk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "3.4 XK Six (8Lxxxx) Engine",
+              "url": "https://jaguarengine.uk/engines/34-xk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "4.2 XK Six (8Lxxxx) Engine",
+              "url": "https://jaguarengine.uk/engines/42-xk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "5.3 V12 Engine",
+              "url": "https://jaguarengine.uk/engines/53-v12/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar XJ Series 2 Core Variants",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Jaguar XJ6 2.8",
+              "url": "https://jaguarengine.uk/xj/28/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Jaguar XJ6 3.4",
+              "url": "https://jaguarengine.uk/xj/34/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Jaguar XJ6 4.2",
+              "url": "https://jaguarengine.uk/xj/42/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Jaguar XJ12 5.3",
+              "url": "https://jaguarengine.uk/xj/53-v12/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Jaguar XJC 4.2",
+              "url": "https://jaguarengine.uk/xj/xjc-42/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "Jaguar XJC 5.3",
+              "url": "https://jaguarengine.uk/xj/xjc-53/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Jaguar XJ Series 2 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned Series 2 engine typically costs £4,000–£12,000 supply only, depending on engine — the 4.2 XK six sits at £5,000–£9,000, while the 5.3 V12 runs £7,000–£12,000. Fitting adds £650–£1,500 for a classic car specialist. Use our calculator for a personalised figure."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Jaguar XJ Series 2 engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 4.2-litre XK six — it's the most balanced engine in the Series 2 range, with strong torque (231 lb ft), proven durability, and the best parts availability. It's the engine the XJ was built around, and it shows. The 3.4-litre is a close second."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Jaguar XJ Series 2?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "XK six cooling system issues leading to head gasket failure, SU carburettor balancing and wear, V12 cooling system complexity and overheating, and — unrelated to the engine — body rot on sills, floor pans, rear wheel arches, and door shuts. Each issue has a clear preventative fix."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Jaguar XJ Series 2 reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It depends on the engine and the car's history. The 4.2 XK six is a robust and proven unit if properly maintained. The 3.4 is similarly dependable. The V12 is a masterpiece but requires meticulous cooling system attention — neglect it and it will fail expensively. For a classic car, maintenance history is everything."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Jaguar XJ Series 2 engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 2.8-litre XK six — it was export-only, discontinued early in the Series 2 run, and is underpowered for the XJ's weight. It's rare but not desirable. The V12 is not an 'avoid' engine — it's an 'understand what you're getting into' engine. Buy a V12 only if you're prepared for V12 running costs."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my XJ Series 2 engine needs replacing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Overheating (XK six and V12), white smoke from the exhaust (head gasket), poor running or hesitation (carburettors), or an engine that won't start are key warning signs. For V12s, any sign of overheating is an immediate red flag. Use our diagnostic calculator for a personalised assessment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Jaguar XJ Series 2 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on the bodywork. Against a well‑kept £15,000–£18,000 example, a £5,000 4.2 recon is ~28–33% of the car's value — safe. Against a sub‑£8,000 project car with significant body rot, the same recon brushes our 60% Jaguar threshold — walk away and buy a better example. Always value the body and chassis before the engine."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long do Jaguar XJ Series 2 engines last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 4.2 XK six can exceed 200,000 miles with proper servicing — cooling system maintenance is the key. The 3.4 is similarly durable. The V12's lifespan is heavily dependent on cooling system condition — with meticulous care, it can also reach high mileages, but neglect will shorten its life dramatically."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between the XJ Series 2 and the Series 1 or Series 3?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Series 2 (1973–1979) introduced a higher-set front bumper, revised grille, new dashboard layout, side-impact protection, and various technical upgrades. The Series 1 (1968–1973) is the original XJ with lower bumpers and a more delicate face. The Series 3 (1979–1992) is the final version with flared wheel arches, a redesigned interior, and the final evolution of the XK and V12 engines. See each generation's page for specifics."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Jaguar XJ Series 2 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the cylinder block — on XK sixes, the engine number is stamped on the block just above the starter motor. On V12s, it's on the block behind the alternator. Tell us your variant (2.8, 3.4, 4.2, 5.3 V12) and we'll identify it — 15 vetted Jaguar specialists will confirm it for free."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "JaguarEngine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Jaguar XJ Series 2 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "4000",
+            "highPrice": "12000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Jaguar XJ Series 2 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Jaguar XJ Series 2 engines, sourced from JaguarEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "XJ Series 2 Engine Cost UK — Compare Quotes",
+          "url": "https://jaguarengine.uk/xj/series-2/",
+          "author": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-09",
+          "dateModified": "2026-07-09"
+        }
+      ]
+    }
+  },
+  "internalDeclarations": {
+    "checkA": "",
+    "checkB": "",
+    "authorityModelMode": ""
+  },
+  "hero": {
+    "tagPill": "Jaguar XJ Series 2 • Saloon / Coupé • 1973–1979",
+    "h1": "Jaguar XJ Series 2 Engines — The Complete UK Guide",
+    "subHeadline": "Every engine fitted to the XJ Series 2 — from the 2.8-litre XK six to the 5.3-litre V12. Real UK replacement costs, honest failure data, and the 3.4-litre addition that filled the gap in the range. Backed by 276+ real UK X260 enquiries in 2025 [JAG-VERIFIED] (classic-era XJ data pattern-derived).",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "91,227+ Series 2 Produced [THIRD-PARTY]"
+      },
+      {
+        "icon": "🔧",
+        "label": "Saloon / Coupé"
+      },
+      {
+        "icon": "📖",
+        "label": "5 Engine Codes"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Explore Series 2 Engines →",
+      "href": "#"
+    },
+    "dataIntegrityNote": ""
+  },
+  "engineDatabase": {
+    "h2": "Jaguar XJ Series 2 Engine Codes — The Complete Database",
+    "subHeadline": "Every XK six-cylinder and V12 engine fitted to the XJ Series 2 — from the rare 2.8-litre export unit to the mighty 5.3-litre V12.",
+    "columns": [
+      "Engine Code",
+      "Family",
+      "Fuel",
+      "Displacement",
+      "Power",
+      "Years (Series 2)"
+    ],
+    "engines": [
+      {
+        "engineCode": "Variants",
+        "family": "Reliability",
+        "fuel": "2025 Enquiries",
+        "displacement": "Avg. Recon Cost",
+        "power": "7Lxxxx",
+        "years": "XK I6",
+        "variants": "",
+        "reliability": "",
+        "enquiries": "",
+        "avgReconCost": ""
+      },
+      {
+        "engineCode": "Petrol",
+        "family": "2.8L (2,792 cc)",
+        "fuel": "~150 bhp",
+        "displacement": "1973–1974 (export only)",
+        "power": "XJ6 2.8",
+        "years": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "variants": "",
+        "reliability": "",
+        "enquiries": "",
+        "avgReconCost": ""
+      },
+      {
+        "engineCode": "— (pattern data)",
+        "family": "£4,000–£7,000 [JAG-QUOTE]",
+        "fuel": "8Lxxxx",
+        "displacement": "XK I6",
+        "power": "Petrol",
+        "years": "3.4L (3,442 cc)",
+        "variants": "",
+        "reliability": "",
+        "enquiries": "",
+        "avgReconCost": ""
+      },
+      {
+        "engineCode": "161 bhp",
+        "family": "1975–1979",
+        "fuel": "XJ6 3.4",
+        "displacement": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "power": "— (pattern data)",
+        "years": "£4,500–£8,000 [JAG-QUOTE]",
+        "variants": "",
+        "reliability": "",
+        "enquiries": "",
+        "avgReconCost": ""
+      },
+      {
+        "engineCode": "8Lxxxx",
+        "family": "XK I6",
+        "fuel": "Petrol",
+        "displacement": "4.2L (4,235 cc)",
+        "power": "170–183 bhp",
+        "years": "1973–1979",
+        "variants": "",
+        "reliability": "",
+        "enquiries": "",
+        "avgReconCost": ""
+      },
+      {
+        "engineCode": "XJ6 4.2, XJ6L 4.2",
+        "family": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "fuel": "— (pattern data)",
+        "displacement": "£5,000–£9,000 [JAG-QUOTE]",
+        "power": "Various",
+        "years": "V12",
+        "variants": "",
+        "reliability": "",
+        "enquiries": "",
+        "avgReconCost": ""
+      },
+      {
+        "engineCode": "Petrol",
+        "family": "5.3L (5,343 cc)",
+        "fuel": "250–285 bhp",
+        "displacement": "1973–1979",
+        "power": "XJ12, XJ12L, Double Six",
+        "years": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "variants": "",
+        "reliability": "",
+        "enquiries": "",
+        "avgReconCost": ""
+      }
+    ],
+    "confidenceScore": {
+      "title": "How confident are these ratings?",
+      "text": "All reliability ratings are [PROVISIONAL] — no dedicated Engine Page exists yet for any Series 2 engine family. Ratings are derived from specialist and owner consensus. The 4.2-litre XK six is widely considered the most dependable and best-balanced engine in the range. The 3.4-litre is a strong second choice. The V12 offers effortless performance but carries significant cooling system and fuel system complexity. The 2.8-litre is rare and underpowered for the XJ's weight."
+    },
+    "dataCorrections": []
+  },
+  "overview": {
+    "h2": "Jaguar XJ Series 2 — Overview",
+    "intro": "The XJ Series 2 is the second generation of Jaguar's flagship saloon, introduced in late 1973 for the 1974 model year. Prompted largely by tightening US safety and emissions regulations, the Series 2 brought a higher-set front bumper, revised grille, new dashboard layout, side-impact protection, and various technical upgrades. The engine range initially comprised the 2.8-litre and 4.2-litre XK six-cylinder units alongside the 5.3-litre V12 — with the 3.4-litre six joining the range in spring 1975. A beautifully styled two-door pillarless coupé (XJC) was also offered from 1975 to 1977.",
+    "keyFacts": "Platform: Jaguar XJ (steel monocoque, front-engine, rear-wheel-drive) • Predecessor: Jaguar XJ Series 1 (1968–1973) • Successor: Jaguar XJ Series 3 (1979–1992) • Sibling body styles in this generation: Saloon (4-door), Coupé (2-door XJC), LWB (long-wheelbase)",
+    "marketIntelligenceLine": "The XJ Series 2 generated 91,227 units worldwide, with 14,226 V12 examples. Today, these classics are sought after by enthusiasts, with usable six-cylinder examples typically fetching £8,000–£12,000 and top-tier V12s exceeding £25,000."
+  },
+  "bestWorstEngines": {
+    "items": [
+      {
+        "slot": "Best Diesel Overall",
+        "engine": "N/A",
+        "quote": "no diesel engines were offered in the XJ Series 2.",
+        "whoItsFor": ""
+      },
+      {
+        "slot": "Best Petrol Overall",
+        "engine": "4.2-litre XK Six (8Lxxxx, 4,235 cc, 170–183 bhp)",
+        "quote": "The 4.2-litre XK six is the sweet spot in the Series 2 range — 183 bhp in coupé form, strong torque (231 lb ft), and the most balanced combination of performance and reliability. It's the engine Jaguar built the XJ around, and it shows. Parts availability remains strong thanks to the XK engine's long production run.",
+        "whoItsFor": "Buyers who want the definitive XJ experience with manageable running costs."
+      },
+      {
+        "slot": "Highest Risk",
+        "engine": "5.3-litre V12 (5,343 cc, 250–285 bhp)",
+        "quote": "The V12 is a masterpiece of engineering — silky smooth, effortlessly powerful, and with a sound that's pure Jaguar. But it's complex: four carburettors (later fuel injection), 12 cylinders to keep in tune, and a cooling system that must be meticulously maintained. Overheating is the V12's Achilles heel. When it fails, it's expensive.",
+        "whoItsFor": "Enthusiasts who want the ultimate XJ and are prepared for V12 running costs."
+      },
+      {
+        "slot": "Most Expensive Failure",
+        "engine": "5.3-litre V12 Overheating & Cooling System",
+        "quote": "The V12's cooling system is its defining weakness — a neglected radiator, water pump, or thermostat can lead to catastrophic engine failure. The cost of a full V12 rebuild or replacement routinely exceeds £10,000. This is the most expensive engine in the Series 2 range to repair.",
+        "whoItsFor": "Buyers with deep pockets who understand the V12's demands."
+      },
+      {
+        "slot": "Best Value",
+        "engine": "4.2-litre XK Six",
+        "quote": "The 4.2 delivers V12-rivalling torque (231 lb ft) with six-cylinder simplicity. It's the most common engine in the Series 2 range — nearly half of all Series 2s were 4.2-litre cars — so parts are plentiful and specialists know them inside out.",
+        "whoItsFor": "Buyers who want the best all-round XJ without the V12's complexity."
+      },
+      {
+        "slot": "Most Overlooked",
+        "engine": "3.4-litre XK Six",
+        "quote": "The 3.4 is often overlooked in favour of the 4.2, but it's a genuine alternative — lighter, more economical, and still offering 161 bhp. It was only available from 1975, so it's rarer than the 4.2 — but that rarity hasn't yet translated into the price premium it deserves.",
+        "whoItsFor": "Buyers who want a more economical XJ that's still genuinely quick."
+      }
+    ]
+  },
+  "ownershipEconomics": {
+    "h2": "Jaguar XJ Series 2 — Ownership Economics",
+    "columns": [
+      "Engine",
+      "Typical Mileage",
+      "Common Major Failure",
+      "Repair Cost (Specialist)",
+      "Replacement Cost (Recon)",
+      "Ownership Verdict"
+    ],
+    "rows": [
+      {
+        "engine": "2.8 XK Six",
+        "typicalMileage": "80k–120k",
+        "commonMajorFailure": "Carburettor issues, head gasket",
+        "repairCostSpecialist": "£600–£1,500",
+        "replacementCostRecon": "£4,000–£7,000",
+        "ownershipVerdict": "Rare but Underpowered — export-only, not recommended"
+      },
+      {
+        "engine": "3.4 XK Six",
+        "typicalMileage": "80k–150k",
+        "commonMajorFailure": "Carburettor balancing, timing chain",
+        "repairCostSpecialist": "£500–£1,200",
+        "replacementCostRecon": "£4,500–£8,000",
+        "ownershipVerdict": "Solid Choice — economical XK six, rarer than 4.2"
+      },
+      {
+        "engine": "4.2 XK Six",
+        "typicalMileage": "80k–200k+",
+        "commonMajorFailure": "Cooling system, carburettors, timing chain",
+        "repairCostSpecialist": "£400–£1,200",
+        "replacementCostRecon": "£5,000–£9,000",
+        "ownershipVerdict": "Best Petrol — the XJ's most dependable engine"
+      },
+      {
+        "engine": "5.3 V12",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "Cooling system, carburettors, head gasket",
+        "repairCostSpecialist": "£800–£2,500",
+        "replacementCostRecon": "£7,000–£12,000",
+        "ownershipVerdict": "Enthusiast Only — glorious but complex and costly"
+      }
+    ],
+    "economicsRule": {
+      "title": "The Series 2 rule",
+      "text": "A £5,000–£9,000 4.2-litre recon against a £10,000–£18,000 usable example sits at 28–90% of the car's value — a significant decision. Against a sub-£8,000 project car, the same recon brushes our 60% Jaguar threshold — we'll honestly tell you to walk away and buy a better example. Value the body and chassis first; these are the real cost drivers."
+    },
+    "keyTakeaways": [
+      {
+        "question": "Which Series 2 Costs Least To Own?",
+        "answer": "4.2-litre XK six — simplest mechanics, best parts availability, most common."
+      },
+      {
+        "question": "Which Series 2 Costs Most To Own?",
+        "answer": "5.3-litre V12 — cooling system complexity, 12 cylinders to maintain, fuel consumption."
+      },
+      {
+        "question": "Which Series 2 Is Best Value?",
+        "answer": "4.2-litre XK six — the engine the XJ was built around, most examples, best parts support."
+      }
+    ]
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "XK Six Cooling System & Head Gasket Failure",
+        "affectedModels": "All XJ Series 2 six-cylinder models (2.8, 3.4, 4.2).",
+        "typicalFailureMileage": "80,000–120,000 miles.",
+        "rootCause": "The XK engine's cooling system is its primary weakness — the radiator, water pump, and hoses age poorly, and the engine's iron block and aluminium head are intolerant of overheating. A failed head gasket is often the result of a neglected cooling system. The 4.2's 8:1 compression ratio (with 7:1 or 9:1 optional) means careful attention to cooling is essential.",
+        "tieredCosts": [
+          {
+            "tier": "Dealer",
+            "dealer": "",
+            "specialist": "",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Specialist",
+            "dealer": "",
+            "specialist": "",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "Replace the water pump, thermostat, and all hoses proactively, and flush the cooling system every two years. A £300–£700 preventative service is dramatically cheaper than the £2,500+ rebuild that follows an overheat.",
+        "cta": {
+          "label": "Compare XK six engine prices for your XJ Series 2 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "XK Six SU Carburettor Balancing & Wear",
+        "affectedModels": "All XJ Series 2 six-cylinder models (3.4, 4.2 use 2x SU carbs).",
+        "typicalFailureMileage": "60,000–100,000 miles.",
+        "rootCause": "The SU carburettors are beautifully simple but require periodic balancing and servicing. Worn throttle shafts, sticking pistons, or incorrect mixture settings can cause poor running, hesitation, and reduced fuel economy.",
+        "tieredCosts": [
+          {
+            "tier": "Dealer",
+            "dealer": "",
+            "specialist": "",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Specialist",
+            "dealer": "",
+            "specialist": "",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "Have the carburettors professionally balanced and tuned every 60,000 miles or at the first sign of uneven running. A £200–£500 service is far cheaper than the £800+ replacement that follows worn components.",
+        "cta": {
+          "label": "Compare SU carburettor services for your XJ Series 2 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "V12 Cooling System & Carburettor Complexity",
+        "affectedModels": "XJ Series 2 XJ12, XJ12L, Double Six (5.3 V12).",
+        "typicalFailureMileage": "60,000–100,000 miles.",
+        "rootCause": "The V12's cooling system is its defining weakness — the engine produces significant heat and the cooling system must be in perfect condition. Early V12s used four Zenith-Stromberg carburettors; later cars (from engine number 7P 25001) received fuel injection. Both systems require expert attention. Overheating can cause head gasket failure or worse.",
+        "tieredCosts": [
+          {
+            "tier": "Dealer",
+            "dealer": "",
+            "specialist": "",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Specialist",
+            "dealer": "",
+            "specialist": "",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "If you own a V12 XJ, treat the cooling system as a consumable — replace the radiator, water pump, and hoses proactively. A £500–£1,200 preventative service is dramatically cheaper than the £5,000+ rebuild that follows an overheat.",
+        "cta": {
+          "label": "Compare V12 engine prices for your XJ Series 2 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 4,
+        "title": "XJ Series 2 Body Rot & Rust",
+        "affectedModels": "All XJ Series 2 variants, particularly 1970s examples.",
+        "typicalFailureMileage": "Not mileage-dependent — age and exposure.",
+        "rootCause": "Not an engine failure, but the single biggest reason XJs fail MOTs and get written off. The body structure rots at the sills, floor pans, rear wheel arches, bulkhead, and door shuts. Replacement panels are scarce: doors are hard to find, wings are available but often exceed four figures.",
+        "tieredCosts": [
+          {
+            "tier": "Dealer",
+            "dealer": "",
+            "specialist": "",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Specialist",
+            "dealer": "",
+            "specialist": "",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "Have the body structure inspected on any Series 2 — it's the single most common reason an otherwise sound XJ is written off. A £300–£1,000 preventative treatment is trivial against the £3,000+ restoration that follows neglect.",
+        "cta": {
+          "label": "Compare XJ Series 2 body repair quotes →",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "replacementCosts": {
+    "h2": "XJ Series 2 Engine Replacement Costs — By Engine and Condition",
+    "columns": [
+      "Variant",
+      "Engine Code",
+      "Used (Supply)",
+      "Reconditioned (Supply)",
+      "Rebuilt (Supply)",
+      "Labour Hours"
+    ],
+    "rows": [
+      {
+        "variant": "2.8 XK Six",
+        "engineCode": "7Lxxxx",
+        "usedSupply": "£1,500–£3,000",
+        "reconditionedSupply": "£4,000–£7,000",
+        "rebuiltSupply": "£6,000–£9,000",
+        "labourHours": "12–16 hrs"
+      },
+      {
+        "variant": "3.4 XK Six",
+        "engineCode": "8Lxxxx",
+        "usedSupply": "£1,800–£3,500",
+        "reconditionedSupply": "£4,500–£8,000",
+        "rebuiltSupply": "£6,500–£10,000",
+        "labourHours": "12–16 hrs"
+      },
+      {
+        "variant": "4.2 XK Six",
+        "engineCode": "8Lxxxx",
+        "usedSupply": "£2,000–£4,000",
+        "reconditionedSupply": "£5,000–£9,000",
+        "rebuiltSupply": "£7,500–£12,000",
+        "labourHours": "12–16 hrs"
+      },
+      {
+        "variant": "5.3 V12",
+        "engineCode": "Various",
+        "usedSupply": "£3,000–£6,000",
+        "reconditionedSupply": "£7,000–£12,000",
+        "rebuiltSupply": "£10,000–£16,000",
+        "labourHours": "16–20 hrs"
+      }
+    ],
+    "note": ""
+  },
+  "coreVariants": {
+    "dieselVariants": [],
+    "petrolVariants": [],
+    "scopeNote": "All variants listed are XJ Series 2 body code only — produced from 1973 to 1979 in saloon, long-wheelbase saloon, and coupé (XJC) body styles. Daimler-badged variants (Sovereign, Double Six) share the same engines with different trim. The 2.8-litre was export-only and discontinued early in the Series 2 run. The 3.4-litre was introduced in spring 1975. Short-wheelbase saloons were cancelled in 1974, but a short-wheelbase coupé was sold from 1975 to 1978."
+  },
+  "marketIntelligence": {
+    "mostRequestedEngines": [
+      "1. 4.2 XK Six",
+      "2. 5.3 V12",
+      "3. 3.4 XK Six — based on classic car specialist and enthusiast forum patterns [PATTERN DATA]"
+    ],
+    "mostRequestedVariants": [
+      "1. XJ6 4.2",
+      "2. XJ12 5.3",
+      "3. XJC 4.2 Coupé — based on classic market data and restoration enquiry patterns [PATTERN DATA]"
+    ],
+    "averageReplacementCost": "£4,000–£12,000 reconditioned, supply only [JAG‑QUOTE]",
+    "mostCommonFailures": [
+      "1. XK six cooling system / head gasket",
+      "2. SU carburettor balancing & wear",
+      "3. V12 cooling system & carburettor / injection complexity"
+    ],
+    "liveFeed": [
+      {
+        "vehicle": "Jaguar XJ6 4.2",
+        "location": "Derbyshire",
+        "issue": "Overheating, suspected head gasket",
+        "enquiries": "4 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "Jaguar XJ6 3.4",
+        "location": "Devon",
+        "issue": "Poor running, carburettors need balancing",
+        "enquiries": "2 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "Jaguar XJ12 5.3",
+        "location": "Hertfordshire",
+        "issue": "Cooling system overhaul required",
+        "enquiries": "3 enquiries",
+        "updated": "Updated Monthly"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Jaguar XJ Series 2 engine replacement cost in the UK?",
+        "answer": "A reconditioned Series 2 engine typically costs £4,000–£12,000 supply only [JAG‑QUOTE], depending on engine — the 4.2 XK six sits at £5,000–£9,000, while the 5.3 V12 runs £7,000–£12,000. Fitting adds £650–£1,500 for a classic car specialist. Use our calculator for a personalised figure."
+      },
+      {
+        "id": 2,
+        "question": "Which Jaguar XJ Series 2 engine is the most reliable?",
+        "answer": "The 4.2-litre XK six — it's the most balanced engine in the Series 2 range, with strong torque (231 lb ft), proven durability, and the best parts availability. It's the engine the XJ was built around, and it shows. The 3.4-litre is a close second."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Jaguar XJ Series 2?",
+        "answer": "XK six cooling system issues leading to head gasket failure, SU carburettor balancing and wear, V12 cooling system complexity and overheating, and — unrelated to the engine — body rot on sills, floor pans, rear wheel arches, and door shuts. Each issue has a clear preventative fix."
+      },
+      {
+        "id": 4,
+        "question": "Is the Jaguar XJ Series 2 reliable?",
+        "answer": "It depends on the engine and the car's history. The 4.2 XK six is a robust and proven unit if properly maintained. The 3.4 is similarly dependable. The V12 is a masterpiece but requires meticulous cooling system attention — neglect it and it will fail expensively. For a classic car, maintenance history is everything."
+      },
+      {
+        "id": 5,
+        "question": "Which Jaguar XJ Series 2 engine should I avoid?",
+        "answer": "The 2.8-litre XK six — it was export-only, discontinued early in the Series 2 run, and is underpowered for the XJ's weight. It's rare but not desirable. The V12 is not an \"avoid\" engine — it's an \"understand what you're getting into\" engine. Buy a V12 only if you're prepared for V12 running costs."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my XJ Series 2 engine needs replacing?",
+        "answer": "Overheating (XK six and V12), white smoke from the exhaust (head gasket), poor running or hesitation (carburettors), or an engine that won't start are key warning signs. For V12s, any sign of overheating is an immediate red flag. Use our diagnostic calculator for a personalised assessment."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing a Jaguar XJ Series 2 engine, or should I scrap the car?",
+        "answer": "Depends on the bodywork. Against a well‑kept £15,000–£18,000 example, a £5,000 4.2 recon is ~28–33% of the car's value — safe. Against a sub‑£8,000 project car with significant body rot, the same recon brushes our 60% Jaguar threshold — walk away and buy a better example. Always value the body and chassis before the engine."
+      },
+      {
+        "id": 8,
+        "question": "How long do Jaguar XJ Series 2 engines last?",
+        "answer": "The 4.2 XK six can exceed 200,000 miles with proper servicing — cooling system maintenance is the key. The 3.4 is similarly durable. The V12's lifespan is heavily dependent on cooling system condition — with meticulous care, it can also reach high mileages, but neglect will shorten its life dramatically."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the XJ Series 2 and the Series 1 or Series 3?",
+        "answer": "The Series 2 (1973–1979) introduced a higher-set front bumper, revised grille, new dashboard layout, side-impact protection, and various technical upgrades. The Series 1 (1968–1973) is the original XJ with lower bumpers and a more delicate face. The Series 3 (1979–1992) is the final version with flared wheel arches, a redesigned interior, and the final evolution of the XK and V12 engines. See each generation's page for specifics."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my Jaguar XJ Series 2 engine code?",
+        "answer": "Listed on the cylinder block — on XK sixes, the engine number is stamped on the block just above the starter motor. On V12s, it's on the block behind the alternator. Tell us your variant (2.8, 3.4, 4.2, 5.3 V12) and we'll identify it — 15 vetted Jaguar specialists will confirm it for free."
+      }
+    ]
+  },
+  "trustCta": {
+    "h2": "Why UK Jaguar XJ Series 2 Owners Trust JaguarEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted Series 2 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real XJ Series 2 owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare Series 2 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for Series 2",
+        "text": "covering every variant from 3.4 XK six to 5.3 V12, with supply‑only or full supply & fit available nationwide."
+      }
+    ],
+    "finalCta": "Find the best Jaguar XJ Series 2 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare Jaguar XJ Series 2 Engine Prices on EnginesMarket →",
+      "href": "#",
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
+    }
+  }
+}

@@ -1,0 +1,443 @@
+{
+  "meta": {
+    "slug": "ajd-v6-diesel",
+    "title": "Jaguar AJD-V6 Diesel Engine — Reliability & Cost",
+    "description": "The AJD-V6 offers strong torque but has crankshaft and oil pump risks — rated from 1,680+ real UK enquiries. Compare quotes from 15+ vetted specialists today.",
+    "canonical": "https://jaguarengine.uk/engines/ajd-v6-diesel/",
+    "openGraph": {
+      "title": "Jaguar AJD-V6 Diesel Engine — Reliability & Cost",
+      "description": "The AJD-V6 offers strong torque but has crankshaft and oil pump risks — rated from 1,680+ real UK enquiries. Compare quotes from 15+ vetted specialists today.",
+      "type": "website",
+      "url": "https://jaguarengine.uk/engines/ajd-v6-diesel/",
+      "image": "https://jaguarengine.uk/images/jaguar/engines/ajd-v6-diesel.jpg",
+      "siteName": "jaguarengine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Jaguar AJD-V6 Diesel Engine — Reliability & Cost",
+      "description": "The AJD-V6 offers strong torque but has crankshaft and oil pump risks — rated from 1,680+ real UK enquiries. Compare quotes from 15+ vetted specialists today.",
+      "image": "https://jaguarengine.uk/images/jaguar/engines/ajd-v6-diesel.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Engines",
+              "item": "https://jaguarengine.uk/engines/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Jaguar AJD-V6 Diesel",
+              "item": "https://jaguarengine.uk/engines/ajd-v6-diesel/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar models fitted with the AJD-V6 Diesel",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "S-Type X200 2.7D V6",
+              "url": "https://jaguarengine.uk/jaguar/s-type-x200/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "XF X250 2.7D / 3.0D V6",
+              "url": "https://jaguarengine.uk/jaguar/xf-x250/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "XF X260 3.0D V6",
+              "url": "https://jaguarengine.uk/jaguar/xf-x260/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "XJ X350 / X358 2.7D V6",
+              "url": "https://jaguarengine.uk/jaguar/xj-x350/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "XJ X351 3.0D V6",
+              "url": "https://jaguarengine.uk/jaguar/xj-x351/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "F-Pace X761 3.0D V6",
+              "url": "https://jaguarengine.uk/jaguar/f-pace-x761/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Jaguar AJD-V6 engine replacement cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned AJD-V6 typically costs £4,500–£6,000 supply only [JAG-QUOTE], varying by displacement and specific sub-variant. Fitting adds £650–£1,300 depending on labour rates. Use our calculator for a figure specific to your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Jaguar AJD-V6 a reliable engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We rate the AJD-V6 at 3 stars out of 5 with 88% confidence, based on 1,680 UK enquiries and cross-referenced specialist reports. It delivers strong performance when maintained, but known issues can be costly if neglected."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the most common Jaguar AJD-V6 failure?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Crankshaft failure and spun bearings are the most devastating faults, with oil pump casting cracks causing sudden pressure loss. Timing belt replacement is critical at 105,000–110,000 miles."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Jaguar models use the AJD-V6?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The AJD-V6 powers the S-Type (2.7D), XF (2.7D/3.0D), XJ (2.7D/3.0D), and F-Pace (3.0D) — covering over a decade of Jaguar diesel production across six model generations."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Jaguar AJD-V6 the same as Land Rover’s version?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the AJD-V6 is the same base engine as Land Rover’s 276DT (2.7 TDV6) and 306DT (3.0 SDV6). The core block, crankshaft, and oil pump design are identical; only ECU mapping and some peripherals differ."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "jaguarengine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "https://jaguarengine.uk/images/logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "Jaguar AJD-V6 Diesel Engine",
+          "brand": {
+            "@type": "Brand",
+            "name": "Jaguar"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "3.0",
+            "bestRating": "5",
+            "ratingCount": "1",
+            "reviewCount": "1"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Jaguar AJD-V6 Diesel Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2800",
+            "highPrice": "9500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Jaguar AJD-V6 Diesel UK Enquiry & Reliability Data 2025",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the Jaguar AJD-V6 Diesel, sourced from jaguarengine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Jaguar AJD-V6 Diesel Engine — Reliability & Cost",
+          "url": "https://jaguarengine.uk/engines/ajd-v6-diesel/",
+          "author": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-14",
+          "dateModified": "2026-07-14"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Jaguar • AJD-V6 Diesel • Diesel • 2.7L / 3.0L V6 • 2004–2020",
+    "h1": "Jaguar AJD-V6 Diesel Engine — Specs, Reliability & Replacement Cost",
+    "subHeadline": "The Jaguar AJD-V6 is a 2.7/3.0 V6 turbodiesel — a strong torque monster, but crankshaft and oil pump failures are well-documented. Backed by 1,680+ real UK enquiries in 2025 [JAG-VERIFIED].",
+    "trustStrip": [],
+    "primaryCta": {
+      "label": "Compare AJD-V6 Engine Prices →",
+      "href": "#"
+    }
+  },
+  "atAGlance": {
+    "rows": [
+      {
+        "metric": "Engine Family",
+        "value": "AJD-V6 (Lion / DT17)"
+      },
+      {
+        "metric": "Fuel",
+        "value": "Diesel"
+      },
+      {
+        "metric": "Configuration / Displacement",
+        "value": "60° V6, 2.7L (2,720cc) / 3.0L (2,993cc)"
+      },
+      {
+        "metric": "Power Range",
+        "value": "190–306 PS (140–225 kW)"
+      },
+      {
+        "metric": "Years Produced",
+        "value": "2004–2020"
+      },
+      {
+        "metric": "Models Fitted (Jaguar)",
+        "value": "6 models"
+      },
+      {
+        "metric": "Cross-Brand Fitment",
+        "value": "Also fitted to Land Rover"
+      },
+      {
+        "metric": "Overall Engine Score",
+        "value": "60/100"
+      },
+      {
+        "metric": "SECTION 3 — VERDICT & RATING",
+        "value": "Star rating: 3★ out of 5"
+      },
+      {
+        "metric": "Confidence: 88% confidence — based on 1,680 UK enquiries and cross-referenced specialist rebuild reports.",
+        "value": "Engine Score breakdown:"
+      },
+      {
+        "metric": "Dimension",
+        "value": "Score (of 20)"
+      },
+      {
+        "metric": "How it's determined",
+        "value": "Reliability"
+      },
+      {
+        "metric": "12",
+        "value": "3★ × 4 = 12"
+      },
+      {
+        "metric": "Repair Cost",
+        "value": "12"
+      },
+      {
+        "metric": "Midpoint of Reconditioned range (£5,250) falls in £5,000–£6,999 bracket → 12",
+        "value": "Repairability"
+      },
+      {
+        "metric": "8",
+        "value": "Mixed failures — some cheap fixes (inlet manifolds, EGR), but crankshaft and oil pump failures are often catastrophic, full-replacement events"
+      },
+      {
+        "metric": "Parts Supply",
+        "value": "16"
+      },
+      {
+        "metric": "Well-supported; parts available through multiple UK suppliers and specialist networks",
+        "value": "Replacement Economics"
+      },
+      {
+        "metric": "12",
+        "value": "Recon cost (£4,500–£6,000) as % of lowest Jaguar host value (~£8,000) = 45–59% bracket → 12"
+      },
+      {
+        "metric": "Total",
+        "value": "60/100"
+      },
+      {
+        "metric": "Sum of five rows above",
+        "value": "One-line verdict: The AJD-V6 delivers effortless torque and refinement — but crankshaft failure and oil pump weakness can write off the engine — buy only with full service history and documented oil pump revisions."
+      },
+      {
+        "metric": "Best for: high-mileage motorway drivers who maintain strict oil change intervals.",
+        "value": "Avoid if: no documented oil pump revision or timing belt history above 80,000 miles."
+      }
+    ]
+  },
+  "verdictRating": {
+    "starRating": "",
+    "confidence": "",
+    "scoreNote": "",
+    "scoreBreakdown": {
+      "columns": [
+        "Dimension",
+        "Score (of 20)"
+      ],
+      "rows": []
+    },
+    "oneLineVerdict": "",
+    "bestFor": "",
+    "avoidIf": ""
+  },
+  "compatibility": {
+    "columns": [
+      "Model",
+      "Generation",
+      "Variant/Badge",
+      "Years"
+    ],
+    "rows": [
+      {
+        "model": "S-Type",
+        "generation": "X200",
+        "variantBadge": "2.7D V6",
+        "years": "2004–2008"
+      },
+      {
+        "model": "XF",
+        "generation": "X250",
+        "variantBadge": "2.7D / 3.0D V6",
+        "years": "2008–2015"
+      },
+      {
+        "model": "XF",
+        "generation": "X260",
+        "variantBadge": "3.0D V6",
+        "years": "2015–2020"
+      },
+      {
+        "model": "XJ",
+        "generation": "X350 / X358",
+        "variantBadge": "2.7D V6",
+        "years": "2005–2009"
+      },
+      {
+        "model": "XJ",
+        "generation": "X351",
+        "variantBadge": "3.0D V6",
+        "years": "2010–2019"
+      },
+      {
+        "model": "F-Pace",
+        "generation": "X761",
+        "variantBadge": "3.0D V6",
+        "years": "2016–2020"
+      }
+    ],
+    "crossBrandNote": "Also powers the Land Rover Discovery 3/4, Range Rover Sport, and Range Rover L405 → [link to Land Rover 276DT/306DT pages]."
+  },
+  "costGuide": {
+    "columns": [
+      "Condition",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty"
+    ],
+    "rows": [
+      {
+        "condition": "Used",
+        "supplyOnly": "£2,800–£4,500",
+        "fittedIndie": "£3,500–£5,500",
+        "warranty": "3–6 months"
+      },
+      {
+        "condition": "Reconditioned",
+        "supplyOnly": "£4,500–£6,000",
+        "fittedIndie": "£5,500–£7,500",
+        "warranty": "12 months unlimited mileage"
+      },
+      {
+        "condition": "Rebuilt",
+        "supplyOnly": "£6,000–£9,500",
+        "fittedIndie": "£7,500–£11,000",
+        "warranty": "12–24 months"
+      }
+    ],
+    "labourEstimate": "Fitting an AJD-V6 typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE].",
+    "sharedCostNote": "Parts cost is identical across Jaguar and Land Rover applications; labour time varies slightly by engine bay access.",
+    "cta": {
+      "label": "→ Compare Jaguar AJD-V6 engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "Cost — “How much does a Jaguar AJD-V6 engine replacement cost?”",
+        "answer": "A reconditioned AJD-V6 typically costs £4,500–£6,000 supply only [JAG-QUOTE], varying by displacement and specific sub-variant. Fitting adds £650–£1,300 depending on labour rates. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Reliability — “Is the Jaguar AJD-V6 a reliable engine?”",
+        "answer": "We rate the AJD-V6 at 3 stars out of 5 with 88% confidence, based on 1,680 UK enquiries and cross-referenced specialist reports. It delivers strong performance when maintained, but known issues can be costly if neglected."
+      },
+      {
+        "id": 3,
+        "question": "Common failure — “What is the most common Jaguar AJD-V6 failure?”",
+        "answer": "Crankshaft failure and spun bearings are the most devastating faults, with oil pump casting cracks causing sudden pressure loss. Timing belt replacement is critical at 105,000–110,000 miles."
+      },
+      {
+        "id": 4,
+        "question": "Fitment — “Which Jaguar models use the AJD-V6?”",
+        "answer": "The AJD-V6 powers the S-Type (2.7D), XF (2.7D/3.0D), XJ (2.7D/3.0D), and F-Pace (3.0D) — covering over a decade of Jaguar diesel production across six model generations."
+      },
+      {
+        "id": 5,
+        "question": "Shared mode — “Is the Jaguar AJD-V6 the same as Land Rover’s version?”",
+        "answer": "Yes — the AJD-V6 is the same base engine as Land Rover’s 276DT (2.7 TDV6) and 306DT (3.0 SDV6). The core block, crankshaft, and oil pump design are identical; only ECU mapping and some peripherals differ."
+      }
+    ]
+  },
+  "trustCta": {
+    "trustPoints": [
+      "Trusted Suppliers — Every garage and engine rebuilder in our network is vetted, rated and reviewed by real AJD-V6 owners, as part of the Engine Finders network.",
+      "Compare Companies — We help you compare quotes from multiple UK specialists in one place, so you get the best deal without endless phone calls.",
+      "UK Coverage — Our network spans the entire UK, from Cornwall to Scotland, with specialists who know the AJD-V6 inside out."
+    ],
+    "finalCta": "Find the best Jaguar AJD-V6 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare Jaguar AJD-V6 Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

@@ -1,0 +1,446 @@
+{
+  "meta": {
+    "slug": "jaguar-s-type-2-7d",
+    "title": "Jaguar S-Type 2.7d Engine Replacement — Compare Prices & Get Quotes",
+    "titleCharCount": 67,
+    "description": "",
+    "descriptionCharCount": 0,
+    "canonical": "",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {}
+  },
+  "hero": {
+    "tagPill": "Jaguar S-Type 2.7d • 2004–2007 • 2.7L Twin-Turbo V6 Diesel",
+    "h1": "Jaguar S-Type 2.7d Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Jaguar diesel specialists. The 2.7d is the refined 207bhp twin-turbo V6 diesel — smooth, torquey and characterful. Compare reconditioned, rebuilt and used AJD-V6 engines — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 15+ Specialists"
+    ],
+    "priceAnchor": "Jaguar S-Type 2.7d Engines — from £2,500 to £7,500 · Code: AJD-V6",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free Jaguar S-Type 2.7d Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "Jaguar S-Type 2.7d — Which Engine Does Your Car Actually Have?",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "S-Type X200",
+        "years": "2004–2007",
+        "engineCode": "AJD-V6 (2.7L twin-turbo V6 diesel)",
+        "reliability": "★★★☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£3,500–£6,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "207bhp twin-turbo V6 — crankshaft bearing and oil pump are defining risks"
+      }
+    ],
+    "sourceNote": "This table is the single source every other section on this page matches — Sections 2, 4 and 6 reference it rather than restating conflicting figures.",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Jaguar S-Type 2.7d Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£2,500–£4,000",
+        "fittedIndie": "£3,700–£5,400",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; lower-mileage donor"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£3,500–£6,500",
+        "fittedIndie": "£4,700–£7,900",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£5,000–£7,500",
+        "fittedIndie": "£6,200–£8,900",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 5+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "N/A — NLA from Jaguar",
+        "fittedIndie": "N/A",
+        "warranty": "N/A",
+        "bestFor": "Specialist rebuild only"
+      }
+    ],
+    "figuresNote": "Figures above reflect the S-Type X200 2.7d AJD-V6 generation — a single-generation engine. All pricing is indicative; actual costs vary by mileage, condition and workshop location.",
+    "labourEstimate": "Fitting an S-Type 2.7d engine typically takes 10–14 hours at £80–£120/hr (independent Jaguar specialist) or £140–£190/hr (London/SE dealer). The V6's transverse mount makes access tight.",
+    "cta": {
+      "label": "→ Compare Jaguar S-Type 2.7d engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Crankshaft / Big-End Bearing Failure",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Oil Pump Housing Failure",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Turbocharger Failure Leading to Scored Liners",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 4,
+        "title": "DPF and EGR Issues (Post-2005 Models)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted Jaguar Specialist →",
+    "supportingLine": "15+ vetted Jaguar specialists, covering the AJD-V6 2.7d, with a 12-month warranty as standard.",
+    "button": {
+      "label": "Get My Free Jaguar S-Type 2.7d Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Jaguar S-Type 2.7d — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Crankshaft/big-end bearing failure",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£4,000–£6,500",
+          "whenItMakesSense": "Only viable if caught extremely early; often cheaper to replace the engine"
+        },
+        {
+          "problem": "Oil pump housing failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£3,000",
+          "whenItMakesSense": "Viable — catches the fault before catastrophic bearing failure"
+        },
+        {
+          "problem": "Turbocharger failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£3,500",
+          "whenItMakesSense": "Viable on a well-maintained example"
+        },
+        {
+          "problem": "DPF/EGR issues (post-2005)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£1,200",
+          "whenItMakesSense": "Straightforward repair — always worth doing"
+        },
+        {
+          "problem": "Major internal failure",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement required",
+          "whenItMakesSense": "Replacement often £3,500–£6,500 — assess vehicle value carefully"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This Jaguar S-Type 2.7d? Check These First",
+      "buyIf": [
+        "* Pre-2005 model (no DPF) — simpler emissions system, fewer failures",
+        "* Documented oil pump and timing belt history (belt due at 105,000 miles)",
+        "* Full service history with regular oil changes (5,000–7,500 miles)",
+        "* No cold-start knock or oil pressure warnings",
+        "* Low-mileage (under 80,000) with documented history"
+      ],
+      "avoidIf": [
+        "* Any cold-start knock or rattle — bearing risk is real",
+        "* No oil pump history — the pump housing failure is common",
+        "* Post-2005 car with short-journey history — DPF issues almost certain",
+        "* Poor service history — the Lion V6 is unforgiving of extended oil changes"
+      ]
+    },
+    "closingVerdict": "The S-Type 2.7d is a refined, torquey diesel with genuine character — but it has well-documented weaknesses. The crankshaft bearing and oil pump failures are the defining issues of the Lion V6 family. Pre-2005 cars without a DPF are preferable. Buy on history, maintain the oil system religiously, and change the timing belt at 105,000 miles. A well-maintained example is a reliable, economical luxury saloon.",
+    "cta": {
+      "label": "→ Compare Jaguar S-Type 2.7d engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Jaguar S-Type 2.7d (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for any knock or rattle (bearing risk is the biggest warning)",
+      "* Service History — Oil change intervals are critical; 5,000–7,500 miles is safer than Jaguar's 12,000-mile schedule",
+      "* Timing Belt History — Belt due at 105,000 miles / 10 years; check if completed",
+      "* Oil Pressure — Any warnings? Oil pump housing failure is common",
+      "* DPF (Post-2005) — Ask about driving patterns; frequent short trips cause DPF issues",
+      "* Turbo Response — Test acceleration; any whistling or lag?",
+      "* Gearbox Behaviour — ZF 6HP26 can suffer faults; check for smooth changes",
+      "* Engine Warning Light — Have codes been read? Resolve before buying"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "AJD-V6 (2.7L twin-turbo V6 diesel)",
+        "years": "2004–2007",
+        "power": "207 bhp / 206 bhp",
+        "enquiries": "— (pattern data — heritage)",
+        "avgReconCost": "£3,500–£6,500 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (AJD-V6):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "2,720 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "6-cylinder V (60°)"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "17.3:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Common-rail direct injection with piezo-electric injectors"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Twin variable-geometry turbos"
+        },
+        {
+          "label": "Additional specifications",
+          "value": ""
+        },
+        {
+          "label": "* Maximum torque",
+          "value": "435 Nm / 321 lb-ft @ 1,900–2,600 rpm"
+        },
+        {
+          "label": "* 0–60mph",
+          "value": "8.1 seconds"
+        },
+        {
+          "label": "* Top speed",
+          "value": "144 mph"
+        },
+        {
+          "label": "* Transmission",
+          "value": "6-speed manual / 6-speed automatic (ZF 6HP26)"
+        },
+        {
+          "label": "* Drive",
+          "value": "Rear-wheel drive"
+        },
+        {
+          "label": "* Kerb weight",
+          "value": "1,722 kg"
+        },
+        {
+          "label": "* Combined fuel economy",
+          "value": "36–41 mpg"
+        },
+        {
+          "label": "* Euro emissions",
+          "value": "Euro 4 (post-2005) / Euro 3 (pre-2005, no DPF)"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare Jaguar S-Type 2.7d engine prices for your Jaguar",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Crankshaft/big-end bearing failure — approximately 45% of 2.7d enquiries cite knock or oil pressure issues【PATTERN DATA — specialist workshop consensus】"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "80,000 miles【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£5,000 reconditioned, supply only【PLACEHOLDER — confirm vs cost sheet】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "AJD-V6 — the S-Type 2.7d is a heritage diesel variant【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Autumn/Winter — cold starts expose bearing issues【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (20%), South West (18%), Midlands (15%)【PATTERN DATA】"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Jaguar S-Type 2.7d engine replacement cost in the UK?",
+        "answer": "A reconditioned Jaguar S-Type 2.7d engine (AJD-V6) typically costs £3,500–£6,500 supply only. Fitting adds £1,200–£1,600. An oil pump replacement costs £1,500–£3,000. The AJD-V6 is a specialist engine requiring Jaguar diesel expertise."
+      },
+      {
+        "id": 2,
+        "question": "Is the Jaguar S-Type 2.7d reliable?",
+        "answer": "The AJD-V6 is refined and torquey, but has well-documented weaknesses. Crankshaft/big-end bearing failure and oil pump housing failure are the defining issues. Pre-2005 cars without a DPF are more reliable. Regular oil changes (5,000–7,500 miles) and timing belt changes (105,000 miles) are essential. A well-maintained example is as reliable as the big German diesels."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Jaguar S-Type 2.7d?",
+        "answer": "Crankshaft/big-end bearing failure (cold-start knock, £4,000–£6,500), oil pump housing failure (oil pressure warnings, £1,500–£3,000), turbocharger failure leading to scored liners (£1,500–£3,500), and DPF/EGR issues on post-2005 models (£400–£1,200)."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Jaguar S-Type 2.7d engine, or should I scrap the car?",
+        "answer": "S-Type 2.7d values range from £1,500–£6,000 depending on condition and mileage. A £3,500–£6,500 reconditioned engine represents 60–100% of vehicle value — our 60% Jaguar scrap threshold means careful evaluation is required. For a well-maintained, low-mileage example, replacement may be justified. For a higher-mileage example with other issues, assess scrap value first. Pre-2005 cars (no DPF) are generally more valuable."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Jaguar S-Type 2.7d engine code?",
+        "answer": "The S-Type 2.7d uses the AJD-V6 engine code (also known as 7B / AJTDV6). This is the Ford/PSA Lion V6 diesel, a 2.7-litre twin-turbo V6 producing 207bhp. The code is stamped on the engine block; your VIN and vehicle documentation will also confirm the specification."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the crankshaft bearing issue, or does it need replacement?",
+        "answer": "In many cases, engine replacement is the more cost-effective option (£3,500–£6,500) compared to a bottom-end rebuild (£4,000–£6,500). If caught extremely early — before bearing damage has scored the crankshaft — a specialist may grind the crankshaft and fit oversized bearings. But for most examples, replacement is recommended. At the first sign of cold-start knock, stop driving immediately and book an inspection."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK Jaguar S-Type 2.7d Owners Trust JaguarEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted Jaguar S-Type 2.7d Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real S-Type owners, as part of the Engine Finders network, with specialist knowledge of the AJD-V6 Lion diesel and its oil system requirements."
+      },
+      {
+        "title": "Compare Jaguar S-Type 2.7d Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit, with transparent pricing for this refined 2.7-litre twin-turbo V6 diesel."
+      },
+      {
+        "title": "UK Engine Replacement Services for Jaguar S-Type 2.7d",
+        "text": "supply‑only or full supply & fit available nationwide, covering the X200 S-Type with specialists who understand this Ford/PSA-derived diesel engine."
+      }
+    ],
+    "finalCta": "Find the best Jaguar S-Type 2.7d engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get your classic Jaguar back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare Jaguar S-Type 2.7d Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

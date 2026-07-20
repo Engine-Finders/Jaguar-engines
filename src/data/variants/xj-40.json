@@ -1,0 +1,626 @@
+{
+  "meta": {
+    "slug": "xj-40",
+    "title": "XJ 4.0 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 56,
+    "description": "The Jaguar XJ 4.0 — AJ6 and AJ16 4.0L straight‑six engines. Real UK costs, timing chain advice, and honest reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
+    "descriptionCharCount": 160,
+    "canonical": "https://jaguarengine.uk/xj/40/",
+    "openGraph": {
+      "title": "XJ 4.0 Engine Replacement Cost UK — Compare Quotes",
+      "description": "The Jaguar XJ 4.0 — AJ6 and AJ16 4.0L straight‑six engines. Real UK costs, timing chain advice, and honest reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
+      "type": "website",
+      "url": "https://jaguarengine.uk/xj/40/",
+      "image": "https://jaguarengine.uk/images/jaguar/hero/xj-40.jpg",
+      "siteName": "JaguarEngine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "XJ 4.0 Engine Replacement Cost UK — Compare Quotes",
+      "description": "The Jaguar XJ 4.0 — AJ6 and AJ16 4.0L straight‑six engines. Real UK costs, timing chain advice, and honest reliability data.",
+      "image": "https://jaguarengine.uk/images/jaguar/hero/xj-40.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "XJ",
+              "item": "https://jaguarengine.uk/xj/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "4.0",
+              "item": "https://jaguarengine.uk/xj/40/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar XJ 4.0 Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "AJ6 (XJ40, 1990-1994)",
+              "url": "https://jaguarengine.uk/xj/40/#aj6"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "AJ16 (X300, 1994-1997)",
+              "url": "https://jaguarengine.uk/xj/40/#aj16"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar XJ 4.0 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "AJ6",
+              "url": "https://jaguarengine.uk/engines/aj6/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "AJ16",
+              "url": "https://jaguarengine.uk/engines/aj16/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Jaguar XJ 4.0 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned XJ 4.0 engine (AJ6 or AJ16) typically costs £1,500–£3,200 supply only depending on generation. Low-mileage Jaguar XJ replacement engines in the UK typically range from £3,000 to £6,000. Fitting adds £1,000–£1,500. Use our calculator for a figure specific to your vehicle."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Jaguar XJ 4.0 engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The AJ6 and AJ16 are widely regarded as 'the most robust and reliable engine Jaguar ever made'. Both are tough and durable engines, capable of racking up big mileages. The AJ6 is said to be slightly more prone to head gasket failure on the rear two cylinders, while the AJ16 is less prone to head gasket problems but more prone to exhaust manifold cracks."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Jaguar XJ 4.0?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The most common issues are upper timing chain tensioner wear (rattling on start-up or at 1,700‑1,800 rpm when hot), head gasket failure on the AJ6, water pump failure, and AJ16 ignition coil problems. With regular maintenance, these engines are exceptionally durable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing an XJ 4.0 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on vehicle value and condition. Against a tidy £3,000–£10,000 XJ, a £1,500–£3,500 recon is 15‑50% of the car's value – often worth it on well‑maintained examples. The XJ is becoming a modern classic, so well‑preserved examples may justify the investment. Get a full diagnostic assessment before committing."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my XJ's engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The XJ40 (1990–1994) uses the AJ6 engine. The X300 (1994–1997) uses the AJ16 engine. The engine code is stamped on the engine block and listed on your V5C."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair an XJ 4.0 engine issue, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most issues – timing chain tensioner wear (if caught early), head gasket failure, water pump failure, ignition coil issues – are repairable. However, if the timing chain has skipped or the engine has suffered major internal failure, a full engine replacement is usually more cost‑effective than a rebuild."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "JaguarEngine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Jaguar XJ 4.0 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "800",
+            "highPrice": "3500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Jaguar XJ 4.0 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for the Jaguar XJ 4.0 engines (AJ6, AJ16), sourced from JaguarEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "XJ 4.0 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://jaguarengine.uk/xj/40/",
+          "author": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-12",
+          "dateModified": "2026-07-12"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Jaguar XJ 4.0 • 1990–1997 • 2 Engine Generations",
+    "h1": "Jaguar XJ 4.0 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Jaguar specialists. Compare reconditioned, rebuilt and used AJ6 and AJ16 4.0‑litre straight‑six engines for the XJ — the silky, robust heart of Jaguar's flagship saloon. Supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12‑Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 15+ Specialists"
+    ],
+    "priceAnchor": "Jaguar XJ 4.0 Engines — from £800 to £3,500 · Common codes: AJ6, AJ16",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "See XJ 4.0 Engine Options →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK‑Wide Network"
+  },
+  "eraMap": {
+    "title": "Jaguar XJ 4.0 — Which Engine Does Your Car Actually Have?",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "XJ40",
+        "years": "1990–1994",
+        "engineCode": "AJ6 (4.0L I6)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£1,500–£2,800 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "175‑183 kW, 387‑392 Nm — the most robust and reliable Jaguar engine ever made"
+      },
+      {
+        "generation": "X300",
+        "years": "1994–1997",
+        "engineCode": "AJ16 (4.0L I6)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£1,800–£3,200 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "183 kW, 392 Nm — AJ6 evolution, electronic ignition, slightly more refined"
+      }
+    ],
+    "sourceNote": "This table is the single source every other section on this page must match. Sections 2, 4, and 6 reference it rather than restating conflicting figures.",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Jaguar XJ 4.0 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£800–£1,500",
+        "fittedIndie": "£1,400–£2,500",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; short‑term ownership"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£1,500–£2,800",
+        "fittedIndie": "£2,500–£4,000",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£2,200–£3,500",
+        "fittedIndie": "£3,200–£4,800",
+        "warranty": "12–24 months",
+        "bestFor": "Long‑term ownership; maximum reliability"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "N/A (NLA from Jaguar)",
+        "fittedIndie": "N/A",
+        "warranty": "N/A",
+        "bestFor": "Not available — all engines are rebuilt or used"
+      }
+    ],
+    "figuresNote": "Figures above reflect the XJ 4.0 pricing. Low-mileage Jaguar XJ replacement engines in the UK typically range from £3,000 to £6,000.",
+    "labourEstimate": "Fitting an XJ 4.0 engine typically takes 10‑14 hours at £75‑£110/hr (independent Jaguar specialist).",
+    "cta": {
+      "label": "→ Compare XJ 4.0 engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Upper Timing Chain Tensioner Wear (The Defining Weakness)",
+        "symptoms": "Engine rattle immediately after a cold or hot start, lasting 1‑2 seconds until oil pressure builds up. The noise has been identified as relaxation of the upper (secondary) timing chain tensioner resulting in temporary chain slack. A rattle at 1,700‑1,800 rpm when hot is also common.",
+        "typicalMileage": "80,000‑150,000 miles.",
+        "repairCost": "£500–£1,500 [PLACEHOLDER] (upper tensioner replacement).",
+        "replacementCost": "£1,800–£3,500 [PLACEHOLDER] (if the chain skips and causes damage).",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "if you hear rattling on start-up, book an inspection immediately."
+        },
+        "recommendation": "The upper chain tensioner is a common issue on older AJ16 and AJ6 engines, as the tensioner wears and loses its ability to hold oil pressure as the oil leaks past the tensioner piston, especially when the oil is hot. This can lead to timing chain slack and, if ignored, potential engine damage. The timing chain drive to the camshafts is located at the rear of the engine, making replacement a very big job that likely requires engine removal. Higher-quality synthetic oils (5W-40, 0W-40) may reduce the scoring. Frequent oil changes are essential to prevent sludge build-up.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/timing-chain-failure/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Head Gasket Failure (More Common on AJ6)",
+        "symptoms": "Coolant loss, white smoke from exhaust, overheating, oil in coolant, misfire, rough running.",
+        "typicalMileage": "100,000‑150,000 miles.",
+        "repairCost": "£800–£2,000 [PLACEHOLDER] (head gasket replacement).",
+        "replacementCost": "£1,500–£3,500 [PLACEHOLDER] (if ignored and engine overheats).",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently if coolant loss or overheating occurs."
+        },
+        "recommendation": "The AJ6 engine is all-alloy, and the coolant should be changed every other year to prevent corrosion. Head gasket failure is not uncommon on these engines, particularly on the rear two cylinders. The AJ16 is less prone to head gasket problems. If you notice coolant loss or overheating, have the cooling system and head gasket checked immediately.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/head-gasket-failure/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Water Pump Failure",
+        "symptoms": "Coolant leaking from the front of the engine, coolant loss, sweet smell of antifreeze, overheating, bearing noise during operation.",
+        "typicalMileage": "60,000‑100,000 miles.",
+        "repairCost": "£200–£600 [PLACEHOLDER] (water pump replacement).",
+        "replacementCost": "N/A — repair only (if caught early; catastrophic overheating can cause engine damage).",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "if you smell antifreeze or see a coolant leak, stop driving immediately."
+        },
+        "recommendation": "A revised water pump assembly was introduced on 4.0-litre engines beginning with engine number 157275. A failing water pump typically presents with coolant leaking from the front of the engine, bearing noise during operation, or engine overheating. If you notice coolant loss or a leak, have the water pump inspected immediately.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/water-pump-failure/"
+        }
+      },
+      {
+        "id": 4,
+        "title": "AJ16 Ignition Coil & Driveability Issues",
+        "symptoms": "High idle that can only be corrected with a dealer diagnostic unit, coil failures, driveability issues, power loss when warm.",
+        "typicalMileage": "Any mileage — more common on AJ16 engines.",
+        "repairCost": "£200–£600 [PLACEHOLDER] (coil replacement or diagnostic).",
+        "replacementCost": "N/A — repair only.",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon if symptoms develop."
+        },
+        "recommendation": "The AJ16 uses coil‑on‑plug ignition and can suffer from coil failures and driveability issues. High idle can only be corrected with an almost extinct dealer diagnostic unit. If you experience ignition or idle issues, find a specialist with the correct dealer diagnostic equipment. The AJ6, with its traditional distributor ignition, is generally considered more robust in this regard.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/ignition-system-failure/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Weighing Your Options? Compare Specialist Quotes When You're Ready →",
+    "supportingLine": "15+ vetted Jaguar specialists, covering both the AJ6 and AJ16 engines of the XJ 4.0, with a 12‑month warranty as standard.",
+    "button": {
+      "label": "See XJ 4.0 Engine Options →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Jaguar XJ 4.0 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Upper timing chain tensioner wear",
+          "repairable": "✅ Yes (if caught early)",
+          "typicalCost": "£500–£1,500 [PLACEHOLDER]",
+          "whenItMakesSense": "Catch it early — cheaper than engine replacement"
+        },
+        {
+          "problem": "Head gasket failure (AJ6)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£2,000 [PLACEHOLDER]",
+          "whenItMakesSense": "Worth fixing — common and well‑understood repair"
+        },
+        {
+          "problem": "Water pump failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£200–£600 [PLACEHOLDER]",
+          "whenItMakesSense": "Essential maintenance — always worth doing"
+        },
+        {
+          "problem": "AJ16 ignition coil failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£200–£600 [PLACEHOLDER]",
+          "whenItMakesSense": "Worth fixing — common issue"
+        },
+        {
+          "problem": "Major internal failure (crank, bearings)",
+          "repairable": "❌ Usually No",
+          "typicalCost": "£1,800–£3,500+",
+          "whenItMakesSense": "Full engine replacement often more cost‑effective"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This Jaguar XJ 4.0? Check These First",
+      "buyIf": [
+        "* Full service history with regular oil changes",
+        "* Timing chain quiet — no rattling on cold start",
+        "* Cooling system in good condition — coolant changed every two years",
+        "* No signs of head gasket failure (AJ6) or exhaust manifold cracks (AJ16)",
+        "* A well-maintained example — the AJ6/AJ16 are tough and durable engines"
+      ],
+      "avoidIf": [
+        "* Any sign of timing chain rattle on start-up — the defining weakness of these engines",
+        "* Any sign of coolant loss or overheating — head gasket warning",
+        "* AJ16 with unresolved ignition or idle issues",
+        "* Poor service history — these engines are intolerant of neglect"
+      ]
+    },
+    "closingVerdict": "The Jaguar XJ 4.0 is powered by the AJ6 and AJ16 engines, which are widely regarded as \"the most robust and reliable engine Jaguar ever made\". Both engines are tough and durable, capable of racking up big mileages. However, they have known weaknesses: the upper timing chain tensioner is the primary concern, followed by head gasket issues on the AJ6 and ignition coil problems on the AJ16. Buy on service history above all else — a well-maintained XJ 4.0 is a rewarding and increasingly collectable car; a neglected example can be expensive to repair.",
+    "cta": {
+      "label": "→ Compare XJ 4.0 engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Jaguar XJ 4.0 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "1. Cold Start — Any rattling for 1‑2 seconds? (timing chain tensioner warning)",
+      "2. Service History — Regular oil changes (every 5,000‑10,000 miles) — this is non‑negotiable",
+      "3. Timing Chain Noise — Any rattle at 1,700‑1,800 rpm when hot? (tensioner warning)",
+      "4. Coolant Loss — Any sign of coolant loss? (head gasket or water pump warning)",
+      "5. AJ16 Ignition — Any high idle or coil issues? (AJ16 specific)",
+      "6. Exhaust Manifold — Any signs of cracks? (AJ16 specific)",
+      "7. Oil Pressure — Check oil pressure when hot; these engines need good oil pressure",
+      "8. MOT History — Check for emissions‑related failures or any advisory notes"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "AJ6 (4.0L I6)",
+        "years": "1990–1994",
+        "power": "175‑183 kW / 387‑392 Nm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£1,500–£2,800 [PLACEHOLDER]"
+      },
+      {
+        "engineCode": "AJ16 (4.0L I6)",
+        "years": "1994–1997",
+        "power": "183 kW / 392 Nm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£1,800–£3,200 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (AJ6 / AJ16 — 4.0L Straight‑Six):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "3,980 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "6‑cylinder inline"
+        },
+        {
+          "label": "* Bore x Stroke",
+          "value": "91 mm x 102 mm"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "9.5‑9.75:1"
+        },
+        {
+          "label": "* Block Material",
+          "value": "Aluminium"
+        },
+        {
+          "label": "* Head Material",
+          "value": "Aluminium"
+        },
+        {
+          "label": "* Valvetrain",
+          "value": "DOHC, 4 valves per cylinder"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Multi‑point fuel injection"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare XJ 4.0 engine prices for your Jaguar",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Upper timing chain tensioner wear — the defining weakness of the AJ6/AJ16"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "80,000‑120,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£2,000 reconditioned, supply only [PLACEHOLDER]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "AJ6 — the earlier engine is more common on the used market [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring/Summer — classic car interest peaks [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (20%), South West (14%), Midlands (12%) — Jaguar strongholds [PATTERN DATA]"
+      },
+      {
+        "label": "SECTION 8 — FAQ",
+        "value": "1. How much does a Jaguar XJ 4.0 engine replacement cost in the UK?"
+      },
+      {
+        "label": "A reconditioned XJ 4.0 engine (AJ6 or AJ16) typically costs £1,500–£3,200 supply only depending on generation. Low-mileage Jaguar XJ replacement engines in the UK typically range from £3,000 to £6,000. Fitting adds £1,000–£1,500. Use our calculator for a figure specific to your vehicle.",
+        "value": "2. Is the Jaguar XJ 4.0 engine reliable?"
+      },
+      {
+        "label": "The AJ6 and AJ16 are widely regarded as \"the most robust and reliable engine Jaguar ever made\". Both are tough and durable engines, capable of racking up big mileages. The AJ6 is said to be slightly more prone to head gasket failure on the rear two cylinders, while the AJ16 is less prone to head gasket problems but more prone to exhaust manifold cracks.",
+        "value": "3. What are the common problems with the Jaguar XJ 4.0?"
+      },
+      {
+        "label": "The most common issues are upper timing chain tensioner wear (rattling on start-up or at 1,700‑1,800 rpm when hot), head gasket failure on the AJ6, water pump failure, and AJ16 ignition coil problems. With regular maintenance, these engines are exceptionally durable.",
+        "value": "4. Is it worth replacing an XJ 4.0 engine, or should I scrap the car?"
+      },
+      {
+        "label": "Depends on vehicle value and condition. Against a tidy £3,000–£10,000 XJ, a £1,500–£3,500 recon is 15‑50% of the car's value — often worth it on well‑maintained examples. The XJ is becoming a modern classic, so well‑preserved examples may justify the investment. Get a full diagnostic assessment before committing.",
+        "value": "5. How do I find my XJ's engine code?"
+      },
+      {
+        "label": "The XJ40 (1990–1994) uses the AJ6 engine. The X300 (1994–1997) uses the AJ16 engine. The engine code is stamped on the engine block and listed on your V5C.",
+        "value": "6. Can I repair an XJ 4.0 engine issue, or does it need replacement?"
+      },
+      {
+        "label": "Most issues — timing chain tensioner wear (if caught early), head gasket failure, water pump failure, ignition coil issues — are repairable. However, if the timing chain has skipped or the engine has suffered major internal failure, a full engine replacement is usually more cost‑effective than a rebuild.",
+        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
+      },
+      {
+        "label": "Section 9 (Trust + Final CTA), meta tags, Open Graph, Twitter Card, and complete JSON‑LD schema.",
+        "value": "* Brand: Jaguar"
+      },
+      {
+        "label": "* Domain: jaguarengine.uk",
+        "value": "* Data tag: JAG‑"
+      },
+      {
+        "label": "* Specialist count: 15+",
+        "value": "* Scrap threshold: 60%"
+      },
+      {
+        "label": "* CTA Mode: Consultative (Priority M)",
+        "value": "* Era Map rows: 2 (AJ6 XJ40, AJ16 X300)"
+      },
+      {
+        "label": "* Engine codes: AJ6, AJ16",
+        "value": "* Service schema price range: £800 (lowest used) to £3,500 (highest rebuilt) — spans full Era Map history"
+      },
+      {
+        "label": "* Model Page needed: Jaguar XJ Generation Pages (XJ40, X300)",
+        "value": "* Generation Pages needed: Jaguar XJ Generation Pages (for cost inheritance)"
+      }
+    ]
+  },
+  "faq": {
+    "items": [],
+    "disclaimer": ""
+  },
+  "trustCta": {
+    "h2": "Why UK Jaguar XJ 4.0 Owners Trust JaguarEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted XJ 4.0 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real XJ owners, as part of the Engine Finders network, covering both the AJ6 and AJ16 4.0‑litre straight‑six engines."
+      },
+      {
+        "title": "Compare XJ 4.0 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit, with specialists who understand the AJ6/AJ16's timing chain tensioner requirements, head gasket vulnerabilities, and the importance of regular oil changes."
+      },
+      {
+        "title": "UK Engine Replacement Services for the XJ",
+        "text": "supply‑only or full supply & fit available nationwide, covering the XJ40 and X300 generations of the XJ 4.0, with specialist knowledge of Jaguar's classic straight‑six engines."
+      }
+    ],
+    "finalCta": "Find the best Jaguar XJ 4.0 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Explore Jaguar XJ 4.0 Engine Quotes →",
+      "href": "#"
+    }
+  }
+}

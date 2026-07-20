@@ -1,0 +1,541 @@
+{
+  "meta": {
+    "slug": "f-pace-p400",
+    "title": "F-Pace S / P400 Engine Cost UK — Compare Quotes",
+    "titleCharCount": 58,
+    "description": "Jaguar F-Pace S and P400 – AJ126 and AJ20P6 six-cylinder engines. Real UK costs, coolant pipe and timing chain facts, and specialist quotes. Get free prices from 15+ vetted specialists today.",
+    "descriptionCharCount": 158,
+    "canonical": "https://jaguarengine.uk/f-pace/p400/",
+    "openGraph": {
+      "title": "F-Pace S / P400 Engine Cost UK — Compare Quotes",
+      "description": "Jaguar F-Pace S and P400 – AJ126 and AJ20P6 six-cylinder engines. Real UK costs, coolant pipe and timing chain facts, and specialist quotes. Get free prices from 15+ vetted specialists today.",
+      "type": "website",
+      "url": "https://jaguarengine.uk/f-pace/p400/",
+      "image": "https://jaguarengine.uk/images/jaguar/hero/f-pace-p400.jpg",
+      "siteName": "JaguarEngine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "F-Pace S / P400 Engine Cost UK — Compare Quotes",
+      "description": "Jaguar F-Pace S and P400 – AJ126 and AJ20P6 six-cylinder engines. Real UK costs, coolant pipe and timing chain facts, and specialist quotes.",
+      "image": "https://jaguarengine.uk/images/jaguar/hero/f-pace-p400.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "F-Pace",
+              "item": "https://jaguarengine.uk/f-pace/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "S / P400",
+              "item": "https://jaguarengine.uk/f-pace/p400/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar F-Pace S / P400 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "X761 F-Pace S (AJ126, 2016-2020)",
+              "url": "https://jaguarengine.uk/f-pace/x761/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "X761 F-Pace P400 (AJ20P6, 2021-present)",
+              "url": "https://jaguarengine.uk/f-pace/x761-facelift/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar F-Pace S / P400 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "AJ126",
+              "url": "https://jaguarengine.uk/engines/aj126/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "AJ20P6",
+              "url": "https://jaguarengine.uk/engines/aj20p6/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Jaguar F-Pace S or P400 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned AJ126 engine typically costs £4,500–£7,500 supply only; a reconditioned AJ20P6 costs £5,000–£8,500. Used units are available from £3,000–£5,000. Fitting adds £1,500–£2,500. One owner reported a shocking £23,000 bill for an engine replacement on a low-mileage F-Pace — highlighting the importance of warranty coverage."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Jaguar F-Pace S / P400 engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It depends on the generation. The AJ126 (2016–2020) has well-documented weaknesses: plastic coolant pipes that crack catastrophically and timing chain tensioner wear. The AJ20P6 (2021+) Ingenium straight-six is more modern with promising early reliability, but the complex 48V mild-hybrid system is unproven long-term. Both demand diligent maintenance."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Jaguar F-Pace S and P400?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "AJ126: plastic coolant pipe failure (catastrophic — upgrade to aluminium pipes), timing chain tensioner wear (at 60,000–90,000 miles), supercharger coupler wear, oil leaks. AJ20P6: mild-hybrid system complexity, potential oil filter housing issues (subject to recall), and general Ingenium petrol engine maintenance. The AJ126's cooling system is the single biggest concern."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Jaguar F-Pace S / P400 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "F-Pace values remain strong — a well-kept example is often worth £18,000–£40,000+. A £4,500–£8,500 reconditioned engine is 15–35% of the vehicle's value — within the Jaguar 60% scrap threshold. If the car is a cherished example with good bodywork and interior, replacement is often worthwhile. However, given the £23,000 replacement bill reported, ensure you understand the full cost before committing."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Jaguar F-Pace S or P400 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation. Pre-facelift (2016–2020) uses AJ126; facelift (2021+) uses AJ20P6. Tell us your registration date and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the AJ126 plastic coolant pipes, or do they need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "They need replacement — the plastic pipes crack and cannot be reliably repaired. Replacement with upgraded aluminium pipes costs £600–£1,500 and is highly recommended. If the pipes fail and cause overheating, the engine can be destroyed. At the first sign of coolant loss or bubbling coolant, book an inspection immediately."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "JaguarEngine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Jaguar F-Pace S / P400 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "3000",
+            "highPrice": "8500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Jaguar F-Pace S / P400 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Jaguar F-Pace S and P400 engines (AJ126, AJ20P6), sourced from JaguarEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "F-Pace S / P400 Engine Cost UK — Compare Quotes",
+          "url": "https://jaguarengine.uk/f-pace/p400/",
+          "author": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Jaguar F-Pace S / P400 • 2016–present • 2 Engine Generations",
+    "h1": "Jaguar F-Pace S 3.0 SC / P400 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "The F-Pace S and P400 are powered by two of Jaguar's most potent six-cylinder engines — the supercharged AJ126 V6 in pre-facelift cars and the electrified Ingenium straight-six in later models. Both deliver effortless performance, but cooling system weaknesses and timing chain risks are well-documented. Get quotes from UK specialists for reconditioned, rebuilt and used units today.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 15+ Specialists"
+    ],
+    "priceAnchor": "Jaguar F-Pace S / P400 Engines — from £3,000 to £8,500 · Common codes: AJ126, AJ20P6",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free F-Pace Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The F-PACE S / P400 THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Jaguar F-Pace S / P400 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£3,000–£5,000",
+        "fittedIndie": "£4,500–£7,000",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; lower‑mileage examples"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£4,500–£7,500",
+        "fittedIndie": "£6,000–£9,000",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£6,000–£8,500",
+        "fittedIndie": "£7,500–£10,500",
+        "warranty": "12–24 months",
+        "bestFor": "Long‑term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£8,000–£12,000+",
+        "fittedIndie": "£10,000–£14,000+",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "Figures above reflect the current F-Pace S/P400 market. AJ126-engined cars sit at the lower end of the range; AJ20P6 Ingenium straight-six examples command a premium. One owner reported a £23,000 engine replacement bill on a low-mileage F-Pace — highlighting the importance of warranty coverage on these complex engines.",
+    "labourEstimate": "Fitting an F-Pace S/P400 engine typically takes 14–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). The V6's supercharger and the inline-six's mild-hybrid system add complexity.",
+    "cta": {
+      "label": "→ Compare F-Pace S / P400 engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Plastic Coolant Pipe Failure (AJ126 — Pre-Facelift)",
+        "symptoms": "Coolant loss with no visible external leak, rising temperature gauge, steam from the engine bay, overheating, bubbling coolant, warning light",
+        "typicalMileage": "40,000–80,000 miles",
+        "repairCost": "£600–£1,500 (replacement of plastic coolant crossover pipes)",
+        "replacementCost": "£4,500–£7,500 (if overheating causes engine damage)",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "a cracked plastic coolant pipe can dump coolant rapidly, leading to catastrophic engine failure"
+        },
+        "recommendation": "The AJ126's cooling system is its single biggest weakness. The plastic crossover pipes under the supercharger become brittle with repeated heat cycles and can crack catastrophically. One owner reported: \"It began with overheating, which I later traced to the cracked plastic V pipe under the supercharger—apparently a well-known weak spot on these engines that often fails catastrophically\". Upgraded aluminium pipes are available on eBay and are highly recommended. Check coolant levels regularly. If you see bubbling coolant, stop driving immediately — the engine may already be damaged.",
+        "failureLink": {
+          "label": "Read the full coolant leak guide",
+          "href": "/failures/coolant-leak/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Timing Chain Tensioner and Guide Wear (AJ126)",
+        "symptoms": "Rattling noise on cold start, metallic ticking from the front or top of the engine, engine warning light, cam timing errors, eventual chain slip",
+        "typicalMileage": "62,000–93,000 miles (100,000–150,000 km)",
+        "repairCost": "£1,500–£3,500 (timing chain, tensioner, guide and sprocket replacement)",
+        "replacementCost": "£4,500–£7,500 (if chain jumps and causes valve interference)",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "if the timing chain fails on this interference engine, pistons hit valves and the engine is destroyed"
+        },
+        "recommendation": "The AJ126 shares the same timing chain tensioner issues as the larger AJ133 V8, though they tend to occur at higher mileages. The timing chain's service life is typically 100,000–150,000 km (62,000–93,000 miles). If you hear rattling on cold start, book an inspection immediately. A preventative tensioner and guide replacement is far cheaper than a full engine replacement. Regular oil changes with the correct 5W-20 specification are essential.",
+        "failureLink": {
+          "label": "Read the full timing chain failure guide",
+          "href": "/failures/timing-chain-failure/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Supercharger Coupler Wear (AJ126)",
+        "symptoms": "Rattling noise from the supercharger at idle, metallic tick that changes with engine speed, reduced power delivery",
+        "typicalMileage": "60,000–120,000 miles",
+        "repairCost": "£400–£900 (supercharger coupler replacement)",
+        "replacementCost": "£2,500–£5,000 (if supercharger requires full rebuild)",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon"
+        },
+        "recommendation": "The supercharger coupler/torsion isolator is a known wear item on both the AJ126 and AJ133 engines. It can become \"very rattly\" at higher mileages. If you hear a rattling noise from the engine at idle that changes with revs, have the supercharger coupler inspected. Replacement is a specialist job but far cheaper than a full supercharger rebuild.",
+        "failureLink": {
+          "label": "Read the full supercharger failure guide",
+          "href": "/failures/supercharger-failure/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted Jaguar Specialist →",
+    "supportingLine": "15+ vetted Jaguar specialists, every F-Pace engine era covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "Get My Free F-Pace Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "F-Pace S / P400 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Plastic coolant pipe failure (AJ126)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£600–£1,500",
+          "whenItMakesSense": "Upgrade to aluminium pipes — cheaper than a new engine"
+        },
+        {
+          "problem": "Timing chain tensioner (AJ126)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£3,500",
+          "whenItMakesSense": "Labour-intensive but far cheaper than a full engine replacement"
+        },
+        {
+          "problem": "Timing chain failure (engine damage)",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "If chain jumps and valves hit pistons, replacement is the only option"
+        },
+        {
+          "problem": "Supercharger coupler wear (AJ126)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£900",
+          "whenItMakesSense": "Specialist replacement — well-understood and cost-effective"
+        },
+        {
+          "problem": "MHEV system issues (AJ20P6)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£500–£2,000",
+          "whenItMakesSense": "New technology — ensure warranty coverage"
+        },
+        {
+          "problem": "Oil filter housing crack (AJ20P6)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£1,800",
+          "whenItMakesSense": "Replacement under recall if applicable"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This F-Pace S / P400? Check These First",
+      "buyIf": [
+        "* Facelift model (2021+) with the AJ20P6 Ingenium straight-six — the more modern and efficient engine with promising reliability",
+        "* AJ126-engined car with documented coolant pipe upgrade (aluminium pipes fitted) — the defining weakness addressed",
+        "* Evidence of timing chain inspection or replacement on AJ126 cars over 60,000 miles",
+        "* Full service history with correct JAG-spec oil (5W-20 for AJ126, 0W-20 for AJ20P6)",
+        "* Car still under manufacturer warranty — these are complex, expensive engines to repair"
+      ],
+      "avoidIf": [
+        "* AJ126 with no proof of coolant pipe work — plastic pipes will fail",
+        "* AJ126 with any cold-start rattle — timing chain wear is likely",
+        "* AJ126 with evidence of repeated coolant top-ups — the cooling system is failing",
+        "* Poor service history — both engines are unforgiving of neglect",
+        "* Any engine warning light without a clear diagnosis"
+      ]
+    },
+    "closingVerdict": "The F-Pace S and P400 are powered by two very different six-cylinder engines. The AJ126 (2016–2020) is a supercharged V6 with a well-documented Achilles' heel — plastic coolant pipes that fail catastrophically, and timing chain tensioner wear at higher mileages. The AJ20P6 (2021+) is a modern straight-six with mild-hybrid technology — early reliability is promising, but the complex 48V system is unproven long-term. Buy on history, maintain religiously, and keep it under warranty. Skip the history and it will punish you.",
+    "cta": {
+      "label": "→ Compare F-Pace S / P400 engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Jaguar F-Pace S or P400 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "1. Coolant Level — Any unexplained loss? (AJ126 plastic coolant pipe warning — the most critical check on the pre-facelift car)",
+      "2. Cold Start — Any rattling? (AJ126 timing chain tensioner warning)",
+      "3. Supercharger Noise — Any rattling at idle? (AJ126 coupler wear warning)",
+      "4. Service History — including which generation (AJ126 or AJ20P6) and evidence of major maintenance",
+      "5. Oil Leaks — Any oil under the car? (AJ126 oil leaks or AJ20P6 oil filter housing recall)",
+      "6. MHEV Health (AJ20P6) — Any warning lights or reduced performance? (48V system issues)",
+      "7. Engine Warning Light — Have codes been read? Any unresolved issues?",
+      "8. MOT History — Check for emissions-related failures (catalyst, O2 sensors)"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "AJ126",
+        "years": "2016–2020",
+        "power": "380 hp",
+        "enquiries": "[PATTERN DATA]",
+        "avgReconCost": "£4,500–£7,500 [JAG-QUOTE]"
+      },
+      {
+        "engineCode": "AJ20P6",
+        "years": "2021–present",
+        "power": "395–400 hp",
+        "enquiries": "[PATTERN DATA]",
+        "avgReconCost": "£5,000–£8,500 [JAG-QUOTE]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly — two engine families across the F-Pace S/P400's history.",
+    "technicalSpecs": {
+      "title": "Technical Specs (AJ20P6 — facelift):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "2,995cc (3.0-litre)"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "V6"
+        },
+        {
+          "label": "* Bore x Stroke",
+          "value": "84.5 mm x 89 mm"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection"
+        },
+        {
+          "label": "* Supercharger",
+          "value": "Root-type supercharger"
+        },
+        {
+          "label": "* Valvetrain",
+          "value": "DOHC, 4 valves per cylinder"
+        },
+        {
+          "label": "* Oil Specification",
+          "value": "SAE 5W-20"
+        },
+        {
+          "label": "* Displacement",
+          "value": "2,996cc (3.0-litre)"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "Straight-6"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Twin-scroll turbocharger with electric supercharger"
+        },
+        {
+          "label": "* MHEV",
+          "value": "48V mild-hybrid system"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare F-Pace S / P400 engine prices for your Jaguar",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": []
+  },
+  "faq": {
+    "items": [],
+    "disclaimer": ""
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [
+      {
+        "title": "Trusted F-Pace Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real F-Pace S and P400 owners, as part of the Engine Finders network, across both the AJ126 and AJ20P6 generations — no matter which six-cylinder era your F-Pace belongs to."
+      },
+      {
+        "title": "Compare F-Pace S / P400 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit, with specialists who genuinely understand the AJ126's coolant pipe, timing chain, and supercharger nuances, and the AJ20P6's mild-hybrid complexity."
+      },
+      {
+        "title": "UK Engine Replacement Services for F-Pace S / P400",
+        "text": "supply‑only or full supply & fit available nationwide, covering Jaguar's most powerful six-cylinder SUVs with a 12‑month warranty as standard."
+      }
+    ],
+    "finalCta": "Find the best Jaguar F-Pace S or P400 engine replacement UK drivers rely on. Compare prices from trusted specialists on JaguarEngine.uk today and keep your performance SUV performing at its best.",
+    "ctaButton": {
+      "label": "Compare Jaguar F-Pace S / P400 Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

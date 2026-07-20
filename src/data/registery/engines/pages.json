@@ -1,18 +1,58 @@
 [
   {
-    "slug": "aj133",
-    "dataFile": "aj133"
+    "slug": "aj-v6-petrol",
+    "dataFile": "aj-v6-petrol"
   },
   {
-    "slug": "200-300tdi",
-    "dataFile": "200-300tdi"
+    "slug": "ajd-v6-diesel",
+    "dataFile": "ajd-v6-diesel"
   },
   {
-    "slug": "aj20d6",
-    "dataFile": "aj20d6"
+    "slug": "ingenium-20-petrol",
+    "dataFile": "ingenium-20-petrol"
   },
   {
-    "slug": "volvo-si6",
-    "dataFile": "volvo-si6"
+    "slug": "jaguar-306dt-306ps",
+    "dataFile": "jaguar-306dt-306ps"
+  },
+  {
+    "slug": "jaguar-aj-v8-4-0-4-2",
+    "dataFile": "jaguar-aj-v8-4-0-4-2"
+  },
+  {
+    "slug": "jaguar-aj133",
+    "dataFile": "jaguar-aj133"
+  },
+  {
+    "slug": "jaguar-aj20d6",
+    "dataFile": "jaguar-aj20d6"
+  },
+  {
+    "slug": "jaguar-aj20p6",
+    "dataFile": "jaguar-aj20p6"
+  },
+  {
+    "slug": "jaguar-aj6-aj16",
+    "dataFile": "jaguar-aj6-aj16"
+  },
+  {
+    "slug": "jaguar-ajd4-204dtd",
+    "dataFile": "jaguar-ajd4-204dtd"
+  },
+  {
+    "slug": "jaguar-ingenium-2-0-diesel",
+    "dataFile": "jaguar-ingenium-2-0-diesel"
+  },
+  {
+    "slug": "jaguar-p510",
+    "dataFile": "jaguar-p510"
+  },
+  {
+    "slug": "jaguar-xk-straight-six",
+    "dataFile": "jaguar-xk-straight-six"
+  },
+  {
+    "slug": "v12-he",
+    "dataFile": "v12-he"
   }
 ]

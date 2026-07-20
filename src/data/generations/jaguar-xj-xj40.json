@@ -1,0 +1,426 @@
+{
+  "meta": {
+    "slug": "jaguar-xj-xj40",
+    "title": "Jaguar XJ XJ40 Engines — The Complete UK Guide",
+    "titleCharCount": 46,
+    "description": "",
+    "descriptionCharCount": 0,
+    "jsonLd": {}
+  },
+  "internalDeclarations": {
+    "checkA": "",
+    "checkB": "",
+    "authorityModelMode": ""
+  },
+  "hero": {
+    "tagPill": "Jaguar XJ XJ40 • Full-Size Luxury Saloon • 1986–1994",
+    "h1": "Jaguar XJ XJ40 Engines — The Complete UK Guide",
+    "subHeadline": "Every engine fitted to the XJ40 — from the 2.9-litre AJ6 six to the 6.0-litre V12 that closed the generation. Real UK costs and honest reliability data for the XJ that replaced the legendary Series III. Backed by 120+ real UK XJ40 enquiries in 2025 [EM-VERIFIED].",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "120+ XJ40 Enquiries (2025) [EM-VERIFIED]"
+      },
+      {
+        "icon": "🔧",
+        "label": "Full-Size Luxury Saloon"
+      },
+      {
+        "icon": "📖",
+        "label": "5 Engine Families"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Explore XJ40 Engines →",
+      "href": "#"
+    },
+    "dataIntegrityNote": ""
+  },
+  "engineDatabase": {
+    "h2": "Jaguar XJ XJ40 Engine Codes — The Complete Database",
+    "subHeadline": "Every engine fitted to the XJ40 — the AJ6 straight-six family in 2.9, 3.2, 3.6 and 4.0-litre forms, plus the 6.0-litre V12 that arrived in 1993.",
+    "columns": [
+      "Engine Code",
+      "Family",
+      "Fuel",
+      "Displacement",
+      "Power",
+      "Years (XJ40)",
+      "Variants (badges)",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "engines": [
+      {
+        "engineCode": "9APVLA / AJ6 (2.9)",
+        "family": "AJ6 I6",
+        "fuel": "Petrol",
+        "displacement": "2.9L (2919cc)",
+        "power": "147 bhp (108 kW)",
+        "years": "1986–1990",
+        "variants": "XJ6 2.9",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,000–£3,500 [JAG-QUOTE]"
+      },
+      {
+        "engineCode": "9DPANA (3.6)",
+        "family": "AJ6 I6",
+        "fuel": "Petrol",
+        "displacement": "3.6L (3590cc)",
+        "power": "185–221 bhp (136–162 kW)",
+        "years": "1986–1989",
+        "variants": "XJ6 3.6, Sovereign",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,500–£4,500 [JAG-QUOTE]"
+      },
+      {
+        "engineCode": "9BPMNA (3.2)",
+        "family": "AJ6 I6",
+        "fuel": "Petrol",
+        "displacement": "3.2L (3239cc)",
+        "power": "199 bhp (146 kW)",
+        "years": "1990–1994",
+        "variants": "XJ6 3.2, Sovereign",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,500–£4,500 [JAG-QUOTE]"
+      },
+      {
+        "engineCode": "9EPCNA / 9EPDNA (4.0)",
+        "family": "AJ6 I6",
+        "fuel": "Petrol",
+        "displacement": "4.0L (3980cc)",
+        "power": "222–226 bhp (166 kW)",
+        "years": "1989–1994",
+        "variants": "XJ6 4.0, Sovereign, XJR (TWR-tuned)",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,000–£5,500 [JAG-QUOTE]"
+      },
+      {
+        "engineCode": "8C (6.0 V12)",
+        "family": "Jaguar V12",
+        "fuel": "Petrol",
+        "displacement": "6.0L (5993cc)",
+        "power": "311 bhp (229 kW)",
+        "years": "1993–1994",
+        "variants": "XJ12, Daimler Double Six",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£6,000–£10,000 [JAG-QUOTE]"
+      }
+    ],
+    "confidenceScore": {
+      "title": "How confident are these ratings?",
+      "text": "All ratings are [PROVISIONAL] pending dedicated Engine Pages. The AJ6 straight-six family is generally well-regarded — the 3.6 and 4.0-litre versions are considered the sweet spots, offering strong performance and reasonable reliability for a classic Jaguar. The 2.9-litre is the least powerful and was only offered in early cars (1986–1990). The 6.0-litre V12 (XJ81) is rare and complex — a magnificent engine but costly to maintain. All XJ40s are now classic cars; reliability depends heavily on maintenance history."
+    },
+    "dataCorrections": []
+  },
+  "overview": {
+    "h2": "Jaguar XJ XJ40 — Overview",
+    "intro": "The XJ40 is the second generation of the Jaguar XJ, unveiled on 8 October 1986 as the replacement for the Series III. Designed under the leadership of George Thomson and Roger Zrimec, it introduced a more aerodynamic, squared-off design and featured Jaguar's new AJ6 straight-six engine — a four-valve, twin overhead cam design that replaced the classic XK engine in Jaguar's saloon range. Initially offered with 2.9-litre and 3.6-litre AJ6 engines, the range expanded in 1990 with a 4.0-litre (replacing the 3.6) and in 1991 with a 3.2-litre (replacing the 2.9). The generation closed with the 6.0-litre V12-powered XJ12 and Daimler Double Six (model code XJ81), introduced in February 1993.",
+    "keyFacts": "Platform: Jaguar XJ40 (XJ81 for V12) • Predecessor: XJ Series III • Successor: X300 • Sibling body styles: None (single 4-door saloon body style).",
+    "marketIntelligenceLine": "The XJ40 generated 120+ real UK engine enquiries in 2025 [EM-VERIFIED], concentrated on the 3.6 and 4.0-litre AJ6 six-cylinder variants as classic car buyers seek the sweet spot of the range."
+  },
+  "bestWorstEngines": {
+    "items": [
+      {
+        "slot": "Highest Risk",
+        "engine": "2.9-litre AJ6 (9APVLA, 147 bhp)",
+        "quote": "The entry-level XJ40 engine — underpowered for the car's weight, and only offered in the earliest cars (1986–1990). It's the least desirable of the AJ6 range and the most likely to have been neglected.",
+        "whoItsFor": "buyers on a budget who don't mind the lack of power."
+      },
+      {
+        "slot": "Most Expensive Failure",
+        "engine": "6.0-litre V12 (8C)",
+        "quote": "The V12 is a magnificent engine, but it's also the most expensive to maintain and replace. A full rebuild or replacement can exceed £10,000, and specialist labour is required.",
+        "whoItsFor": "buyers with deep pockets and a specialist mechanic."
+      },
+      {
+        "slot": "Best Value",
+        "engine": "3.6-litre AJ6 (9DPANA, 185–221 bhp)",
+        "quote": "The original XJ40 engine — revvy, characterful, and without the oxygen sensor that some enthusiasts consider a reliability concern on later cars. It offers the classic Jaguar six-cylinder experience at a lower entry price than the 4.0.",
+        "whoItsFor": "buyers who want the classic AJ6 experience without paying 4.0-litre premiums."
+      },
+      {
+        "slot": "Most Overlooked",
+        "engine": "3.2-litre AJ6 (9BPMNA, 199 bhp)",
+        "quote": "The 3.2 was only offered from 1990–1994 and is often overlooked in favour of the 3.6 or 4.0. It offers 199 bhp — more than the 3.6's base tune — with better fuel economy than the 4.0. A genuinely underrated choice.",
+        "whoItsFor": "buyers who want a later XJ40 with strong performance and better economy."
+      }
+    ]
+  },
+  "ownershipEconomics": {
+    "h2": "Jaguar XJ XJ40 — Ownership Economics",
+    "columns": [
+      "Engine",
+      "Typical Mileage",
+      "Common Major Failure",
+      "Repair Cost (Specialist)",
+      "Replacement Cost (Recon)",
+      "Ownership Verdict"
+    ],
+    "rows": [
+      {
+        "engine": "2.9 AJ6",
+        "typicalMileage": "60k–100k",
+        "commonMajorFailure": "Head gasket, cooling system",
+        "repairCostSpecialist": "£800–£2,000",
+        "replacementCostRecon": "£2,000–£3,500",
+        "ownershipVerdict": "Underpowered — the least desirable XJ40 engine."
+      },
+      {
+        "engine": "3.2 AJ6",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "Head gasket, cooling system",
+        "repairCostSpecialist": "£800–£2,000",
+        "replacementCostRecon": "£2,500–£4,500",
+        "ownershipVerdict": "Solid Choice — later, refined AJ6."
+      },
+      {
+        "engine": "3.6 AJ6",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "Head gasket, cooling system",
+        "repairCostSpecialist": "£800–£2,000",
+        "replacementCostRecon": "£2,500–£4,500",
+        "ownershipVerdict": "Best Value — revvy, characterful, no oxygen sensor on early cars."
+      },
+      {
+        "engine": "4.0 AJ6",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "Head gasket, cooling system",
+        "repairCostSpecialist": "£800–£2,500",
+        "replacementCostRecon": "£3,000–£5,500",
+        "ownershipVerdict": "Best Six — the most refined AJ6."
+      },
+      {
+        "engine": "6.0 V12",
+        "typicalMileage": "40k–80k",
+        "commonMajorFailure": "Cooling system, ignition, oil leaks",
+        "repairCostSpecialist": "£2,000–£5,000",
+        "replacementCostRecon": "£6,000–£10,000",
+        "ownershipVerdict": "Collector's Piece — magnificent but costly."
+      }
+    ],
+    "economicsRule": {
+      "title": "The XJ40 rule",
+      "text": "A £3,000–£5,500 4.0 AJ6 recon against a £3,000–£15,000 XJ40 sits at 20–180% of the car's value【EM-VERIFIED】. On a sub-£5,000 example, that brushes our 60% Jaguar scrap threshold — we'll honestly tell you to walk away. Against a well-kept £10,000+ example, the same recon drops to 30–55% — a repair decision, not a financial one. Value the car first. For V12 cars, the economics are different — collector values can justify the higher costs."
+    },
+    "keyTakeaways": [
+      {
+        "question": "Which XJ40 Costs Least To Own?",
+        "answer": "3.6 AJ6 — simpler electronics (no oxygen sensor on early cars), strong parts availability, and lower entry price."
+      },
+      {
+        "question": "Which XJ40 Costs Most To Own?",
+        "answer": "6.0 V12 — highest replacement cost, specialist labour required, and complex systems."
+      },
+      {
+        "question": "Which XJ40 Is Best Value?",
+        "answer": "3.6 AJ6 — classic Jaguar six-cylinder character without the 4.0's premium or the 2.9's lack of power."
+      }
+    ]
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "AJ6 Head Gasket Failure",
+        "affectedModels": "All XJ40 AJ6 six-cylinder engines (2.9, 3.2, 3.6, 4.0).",
+        "typicalFailureMileage": "60,000–120,000 miles.",
+        "rootCause": "The AJ6's aluminium cylinder head can suffer from head gasket failure, particularly if the cooling system has not been maintained. Signs include emulsified oil inside the filler cap and overheating.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£1,500–£3,000",
+            "specialist": "£1,000–£2,000",
+            "work": "Head gasket replacement, cooling system flush",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£4,000–£7,000",
+            "specialist": "£3,000–£5,500",
+            "work": "Full reconditioned engine replacement",
+            "note": ""
+          }
+        ],
+        "recommendation": "Have the cooling system inspected annually and replace the coolant every two years — a £1,000–£2,000 head gasket replacement is cheaper than a £3,000+ engine replacement that follows an ignored overheating event. Check for emulsified oil inside the filler cap regularly.",
+        "cta": {
+          "label": "Compare AJ6 engine prices for your XJ40 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "AJ6 Cooling System Corrosion & Leaks",
+        "affectedModels": "All XJ40 AJ6 six-cylinder engines (2.9, 3.2, 3.6, 4.0).",
+        "typicalFailureMileage": "50,000–100,000 miles.",
+        "rootCause": "The XJ40's cooling system uses aluminium components that can corrode over time, particularly if the correct coolant mixture has not been maintained. Water pump failure and radiator leaks are common.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£800–£1,500",
+            "specialist": "£500–£1,000",
+            "work": "Water pump, thermostat and hose replacement",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£4,000–£7,000",
+            "specialist": "£3,000–£5,500",
+            "work": "Full engine replacement if overheating caused damage",
+            "note": ""
+          }
+        ],
+        "recommendation": "Replace the water pump and thermostat as preventative maintenance every 60,000 miles or 5 years — a £500–£1,000 specialist job is trivial against the £3,000+ engine replacement that follows an ignored cooling system failure.",
+        "cta": {
+          "label": "Compare AJ6 cooling system parts for your XJ40 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "XJ40 Electrical System & Fuel Injection Issues",
+        "affectedModels": "All XJ40 models, particularly early (1986–1989) examples.",
+        "typicalFailureMileage": "60,000+ miles (age-related).",
+        "rootCause": "The XJ40's Lucas fuel injection and engine management systems can develop issues with age — wiring degradation, sensor failures, and ECU problems are common. The 3.6's lack of an oxygen sensor means it can't compensate for small air leaks, making it more sensitive to intake system condition.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£500–£1,500",
+            "specialist": "£300–£800",
+            "work": "Sensor replacement, wiring repair, ECU diagnostics",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£2,000–£4,000",
+            "specialist": "£1,500–£3,000",
+            "work": "Full engine management system replacement",
+            "note": ""
+          }
+        ],
+        "recommendation": "Have the fuel injection system and sensors inspected during annual servicing — a £300–£800 inspection is cheap insurance against a £1,500+ management system replacement. On early 3.6 cars, pay particular attention to the intake system for air leaks.",
+        "cta": {
+          "label": "Compare XJ40 electrical parts for your car →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 4,
+        "title": "XJ40 Rust & Body Corrosion",
+        "affectedModels": "All XJ40 models.",
+        "typicalFailureMileage": "Age-related (25+ years).",
+        "rootCause": "Rust protection was a known flaw on the XJ40 — rot can affect the bonnet, wings, door bottoms, inner and outer sills, the boot floor, bootlid, rear window pillars and inside the filler cap. This is a bodywork issue, not an engine problem, but it's the most common reason XJ40s fail MOTs.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£1,000–£3,000",
+            "specialist": "£500–£2,000",
+            "work": "Rust treatment, welding, panel replacement",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£5,000–£10,000+",
+            "specialist": "£3,000–£8,000+",
+            "work": "Full restoration or shell replacement",
+            "note": ""
+          }
+        ],
+        "recommendation": "Have the sills, wheel arches and boot floor inspected annually — a £500–£2,000 repair is far cheaper than a £3,000+ restoration that follows if rust is ignored. This is the single most important non-engine maintenance item on any XJ40.",
+        "cta": {
+          "label": "Compare XJ40 bodywork repair quotes →",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "replacementCosts": {
+    "h2": "XJ40 Engine Replacement Costs — By Engine and Condition",
+    "columns": [
+      "Variant",
+      "Engine Code",
+      "Used (Supply)",
+      "Reconditioned (Supply)",
+      "Rebuilt (Supply)",
+      "Labour Hours"
+    ],
+    "rows": [
+      {
+        "variant": "2.9 (AJ6)",
+        "engineCode": "9APVLA",
+        "usedSupply": "£800–£1,800",
+        "reconditionedSupply": "£2,000–£3,500",
+        "rebuiltSupply": "£3,000–£5,000",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "3.2 (AJ6)",
+        "engineCode": "9BPMNA",
+        "usedSupply": "£1,200–£2,500",
+        "reconditionedSupply": "£2,500–£4,500",
+        "rebuiltSupply": "£3,500–£6,000",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "3.6 (AJ6)",
+        "engineCode": "9DPANA",
+        "usedSupply": "£1,200–£2,500",
+        "reconditionedSupply": "£2,500–£4,500",
+        "rebuiltSupply": "£3,500–£6,000",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "4.0 (AJ6)",
+        "engineCode": "9EPCNA / 9EPDNA",
+        "usedSupply": "£1,500–£3,200",
+        "reconditionedSupply": "£3,000–£5,500",
+        "rebuiltSupply": "£4,500–£7,500",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "6.0 V12",
+        "engineCode": "8C",
+        "usedSupply": "£3,500–£6,000",
+        "reconditionedSupply": "£6,000–£10,000",
+        "rebuiltSupply": "£8,000–£14,000",
+        "labourHours": "16–22 hrs"
+      }
+    ],
+    "note": "No Generation variance from the baseline figures — XJ40 costs are derived from specialist classic Jaguar market data, with no direct Engine Page baseline to diverge from."
+  },
+  "coreVariants": {
+    "dieselVariants": [],
+    "petrolVariants": [],
+    "scopeNote": "All variants listed are XJ40 only. The 6.0-litre V12 cars carry the model code XJ81 (XJ12 and Daimler Double Six) and were produced from February 1993 to October 1994. The XJR (1992–1994) featured a TWR-tuned 4.0-litre AJ6."
+  },
+  "marketIntelligence": {
+    "mostRequestedEngines": [],
+    "mostRequestedVariants": [],
+    "averageReplacementCost": "",
+    "mostCommonFailures": [],
+    "liveFeed": []
+  },
+  "faq": {
+    "items": []
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "",
+    "ctaButton": {
+      "label": "",
+      "href": "#",
+      "note": ""
+    }
+  }
+}

@@ -1,0 +1,485 @@
+{
+  "meta": {
+    "slug": "xe-p250",
+    "title": "Jaguar XE P250 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 54,
+    "description": "Every Jaguar XE P250 engine — 204PT 2.0 turbo petrol. X760 generation, real UK costs and reliability. Get free quotes from 15+ vetted Jaguar specialists today.",
+    "descriptionCharCount": 159,
+    "canonical": "https://jaguarengine.uk/xe/p250/",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "XE",
+              "item": "https://jaguarengine.uk/xe/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "P250",
+              "item": "https://jaguarengine.uk/xe/p250/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar XE P250 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "X760 XE P250 (204PT, 2015-2024)",
+              "url": "https://jaguarengine.uk/xe/x760/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar XE P250 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "204PT (PT204 / AJ200P)",
+              "url": "https://jaguarengine.uk/engines/204pt/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Jaguar XE P250 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned 204PT engine typically costs £3,500–£6,500 supply only. Fitting adds £900–£1,500. Main dealer new engines can exceed £15,000. Use our calculator for a figure specific to your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Jaguar XE P250 engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 204PT is rated ★★★☆☆. It's a refined and responsive engine, but it has known issues: timing chain stretch (particularly on pre-2020 examples), CVVL system misfires, water pump failures, and turbocharger bearing wear. Shorter oil change intervals (5,000–10,000 miles, not JLR's 21,000-mile recommendation) are essential for longevity."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Jaguar XE P250?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing chain stretch (cold-start rattle), CVVL system failure causing misfires and rough running, water pump and cooling system failures, turbocharger bearing wear, and carbon buildup on intake valves. All are repairable if caught early."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Jaguar XE P250 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on vehicle value. Against a well-kept XE P250 worth £8,000–£16,000, a £4,500 recon is a manageable 28–56% of the vehicle's value — worth it for a well-maintained example. Given the XE's strong retained values, replacement is usually viable for vehicles in good condition."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Jaguar XE P250 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation. The XE P250 uses the 204PT (also known as PT204 or AJ200P) 2.0-litre turbocharged petrol Ingenium engine. Tell us your registration date and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the 204PT's timing chain, or does it need a new engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — if caught early. A timing chain and tensioner replacement (£1,500–£3,500) is far cheaper than a catastrophic chain snap (£3,500–£7,500 engine replacement). At the first sign of cold-start rattle, book an inspection immediately. The 2019 redesign of timing chain parts is backwardly compatible, so replacement with updated parts is recommended."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "JaguarEngine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Jaguar XE P250 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2500",
+            "highPrice": "7500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Jaguar XE P250 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Jaguar XE P250 engines (204PT), sourced from JaguarEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Jaguar XE P250 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://jaguarengine.uk/xe/p250/",
+          "author": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-12",
+          "dateModified": "2026-07-12"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Jaguar XE P250 • 2015–2024 • 204PT 2.0 Turbo",
+    "h1": "Jaguar XE P250 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Jaguar XE P250 specialists. Compare reconditioned, rebuilt and used 204PT engines — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 15+ Specialists"
+    ],
+    "priceAnchor": "Jaguar XE P250 Engines — from £2,500 to £7,500 · Code: 204PT",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free P250 Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The XE P250 THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "X760",
+        "years": "2015–2024",
+        "engineCode": "204PT (2.0 Ingenium Turbo Petrol)",
+        "reliability": "★★★☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£3,500–£6,500 [JAG-QUOTE]",
+        "eraNote": "Jaguar's 2.0 Ingenium petrol — refined and responsive, but timing chain stretch and CVVL misfires are the main watchpoints."
+      }
+    ],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Jaguar XE P250 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£2,500–£4,500",
+        "fittedIndie": "£3,300–£5,600",
+        "warranty": "3–6 months",
+        "bestFor": "Budget priority; vehicle under £8,000"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£3,500–£6,000",
+        "fittedIndie": "£4,400–£7,200",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£5,000–£7,500",
+        "fittedIndie": "£5,900–£8,700",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£10,000–£15,000",
+        "fittedIndie": "£11,500–£17,000",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims; dealer costs can exceed £15,000"
+      }
+    ],
+    "figuresNote": "",
+    "labourEstimate": "Fitting an XE P250 engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). Timing chain replacement is a labour-intensive job requiring gearbox removal.",
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": []
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted Jaguar Specialist →",
+    "supportingLine": "15+ vetted Jaguar specialists, every XE P250 variant covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "Get My Free P250 Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Jaguar XE P250 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Timing chain stretch (204PT)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£3,500",
+          "whenItMakesSense": "If caught early; shorter oil change intervals prevent recurrence"
+        },
+        {
+          "problem": "CVVL system failure (204PT)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£2,000",
+          "whenItMakesSense": "Specialist replacement; catch it before catalytic converter damage"
+        },
+        {
+          "problem": "Water pump failure (204PT)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£800",
+          "whenItMakesSense": "Preventative — replace at 60,000 miles with coolant pipes"
+        },
+        {
+          "problem": "Turbocharger bearing failure (204PT)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£3,500",
+          "whenItMakesSense": "Specialist refurbishment or replacement; regular oil changes prevent recurrence"
+        },
+        {
+          "problem": "Carbon buildup on intake valves (204PT)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£500–£1,000",
+          "whenItMakesSense": "Walnut blasting; regular maintenance prevents severe buildup"
+        },
+        {
+          "problem": "Snapped timing chain",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Piston-valve contact means little is left to repair"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This XE P250? Check These First",
+      "buyIf": [
+        "* Full Jaguar service history with documented oil changes (ideally more frequent than 21,000 miles)",
+        "* Evidence of timing chain work on pre-2020 examples",
+        "* Post-2019 build (timing chain design was revised in 2019 with backwardly compatible parts)",
+        "* Low-mileage example with full running-in service completed"
+      ],
+      "avoidIf": [
+        "* Cold-start rattle with no timing chain history",
+        "* Rough idle or misfire codes — CVVL system failure risk",
+        "* Coolant loss with no diagnosis — water pump or cooling system failure",
+        "* Poor service history — the Ingenium petrol is unforgiving of neglect"
+      ]
+    },
+    "closingVerdict": "The XE P250's 204PT Ingenium petrol is a refined and responsive engine that makes the XE a genuine driver's car. But it has known weak points: timing chain stretch (mitigated by shorter oil change intervals), CVVL system misfires, and water pump failures. Buy on service history and proof of preventative maintenance — shorter oil change intervals are the key to longevity.",
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Jaguar XE P250 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for 2–5 seconds of rattle (timing chain stretch warning)",
+      "* Service History — Including which engine era (204PT is the only P250 engine — verify this before purchase) and oil change intervals (shorter than 21,000 miles is preferable)",
+      "* Idle Quality — Any rough idle or misfire? CVVL system failure indicator",
+      "* Coolant Level — Is the coolant low with no visible leak? Water pump risk",
+      "* Turbo Health — Test acceleration; any hesitation, lag, or whistling?",
+      "* Oil Consumption — Does it use more than 1L per 5,000 miles? If so, investigate",
+      "* Engine Warning Light — Have codes been read? Any unresolved timing, CVVL, or cooling issues?",
+      "* MOT History — Check for emissions-related failures; often point to CVVL or catalytic converter problems"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "204PT (PT204 / AJ200P)",
+        "years": "2015–2024",
+        "power": "247–250 bhp / 365 Nm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,500–£6,500 [JAG-QUOTE]"
+      }
+    ],
+    "matchNote": "",
+    "technicalSpecs": {
+      "title": "Technical Specs (204PT):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "1,997cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "4-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Single twin-scroll turbo"
+        }
+      ]
+    },
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Timing chain stretch and CVVL system misfires — approximately 50% of 204PT enquiries"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "55,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£4,500 reconditioned, supply only [JAG-QUOTE]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "204PT [JAG-VERIFIED]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Winter — cold starts expose timing chain issues"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "London (22%), South East (20%), South West (14%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Jaguar XE P250 engine replacement cost in the UK?",
+        "answer": "A reconditioned 204PT engine typically costs £3,500–£6,500 supply only. Fitting adds £900–£1,500. Main dealer new engines can exceed £15,000. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the Jaguar XE P250 engine reliable?",
+        "answer": "The 204PT is rated ★★★☆☆. It's a refined and responsive engine, but it has known issues: timing chain stretch (particularly on pre-2020 examples), CVVL system misfires, water pump failures, and turbocharger bearing wear. Shorter oil change intervals (5,000–10,000 miles, not JLR's 21,000-mile recommendation) are essential for longevity."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Jaguar XE P250?",
+        "answer": "Timing chain stretch (cold-start rattle), CVVL system failure causing misfires and rough running, water pump and cooling system failures, turbocharger bearing wear, and carbon buildup on intake valves. All are repairable if caught early."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Jaguar XE P250 engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. Against a well-kept XE P250 worth £8,000–£16,000, a £4,500 recon is a manageable 28–56% of the vehicle's value — worth it for a well-maintained example. Given the XE's strong retained values, replacement is usually viable for vehicles in good condition."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Jaguar XE P250 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. The XE P250 uses the 204PT (also known as PT204 or AJ200P) 2.0-litre turbocharged petrol Ingenium engine. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the 204PT's timing chain, or does it need a new engine?",
+        "answer": "Yes — if caught early. A timing chain and tensioner replacement (£1,500–£3,500) is far cheaper than a catastrophic chain snap (£3,500–£7,500 engine replacement). At the first sign of cold-start rattle, book an inspection immediately. The 2019 redesign of timing chain parts is backwardly compatible, so replacement with updated parts is recommended."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "Find the best Jaguar XE P250 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare Jaguar XE P250 Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

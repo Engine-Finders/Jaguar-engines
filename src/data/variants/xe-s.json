@@ -1,0 +1,547 @@
+{
+  "meta": {
+    "slug": "xe-s",
+    "title": "XE S Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 55,
+    "description": "Jaguar XE S (AJ126) engine costs, reliability, and common faults. Cooling system, supercharger coupler and timing chain insights. Get free quotes from 15+ vetted Jaguar specialists today.",
+    "descriptionCharCount": 158,
+    "canonical": "https://jaguarengine.uk/xe/s/",
+    "openGraph": {
+      "title": "XE S Engine Replacement Cost UK — Compare Quotes",
+      "description": "Jaguar XE S (AJ126) engine costs, reliability, and common faults. Cooling system, supercharger coupler and timing chain insights. Get free quotes from 15+ vetted Jaguar specialists today.",
+      "type": "website",
+      "url": "https://jaguarengine.uk/xe/s/",
+      "image": "https://jaguarengine.uk/images/jaguar/hero/xe-s.jpg",
+      "siteName": "JaguarEngine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "XE S Engine Replacement Cost UK — Compare Quotes",
+      "description": "Jaguar XE S (AJ126) engine costs, reliability, and common faults. Cooling system, supercharger coupler and timing chain insights.",
+      "image": "https://jaguarengine.uk/images/jaguar/hero/xe-s.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "XE",
+              "item": "https://jaguarengine.uk/xe/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "S",
+              "item": "https://jaguarengine.uk/xe/s/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar XE S Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "XE X760 (2015–2019) 306PS",
+              "url": "https://jaguarengine.uk/xe/x760/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar XE S Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "306PS (AJ126)",
+              "url": "https://jaguarengine.uk/engines/306ps/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Jaguar XE S engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned XE S (306PS AJ126) engine typically costs £5,000–£11,000 supply only. Fitting adds £900–£2,000 depending on workshop location. JLR have quoted £16,000 for parts only, while independent specialists quote around £10,500 for a second-hand engine fitted. Use our calculator for a figure specific to your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Jaguar XE S engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The AJ126 is a great engine, but its cooling system requires attention. Coolant warnings are extremely common and should never be ignored — they can lead to overheating, warped cylinder heads, or even full engine failure. The engine is also sensitive to oil sludge build-up, making frequent oil changes (every 8,000 miles) critical. Timing chain issues are less common than on the 5.0-litre V8 but can occur at higher mileage."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Jaguar XE S?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cooling system failures (water pump, plastic coolant pipes), supercharger coupler wear (rattling and 'clonk' on shutdown), and timing chain tensioner wear (rattle on cold start). The cooling system is the most common and urgent issue."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Jaguar XE S engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Apply the 60% Jaguar scrap threshold: if your XE S is worth £15,000–£20,000 and a recon engine is £7,000 (35–47%), it's worth it. If the vehicle is a tired £10,000 example, the same engine exceeds 50% — get a scrap valuation first. These are performance vehicles that often justify replacement spend."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Jaguar XE S engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The engine code is listed on the VIN plate and vehicle documentation. The XE S uses the 306PS (also known as the AJ126) — a 3.0-litre supercharged V6 producing 340 bhp. It was fitted to the X760 XE from 2015 to 2019. Tell us your registration date and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the cooling system, or does the engine need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cooling system components can be repaired individually — water pump, coolant pipes, thermostat. The water pump costs under £200 from Jaguar. However, ignoring coolant warnings can lead to catastrophic engine failure, requiring a full replacement. Address any coolant leaks immediately."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "JaguarEngine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "https://jaguarengine.uk/images/jaguarengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Jaguar XE S Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "3000",
+            "highPrice": "16000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Jaguar XE S UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for the XE S (AJ126) engine in the X760, sourced from JaguarEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "XE S Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://jaguarengine.uk/xe/s/",
+          "author": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-12",
+          "dateModified": "2026-07-12"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Jaguar XE S • 2015–2019 • 1 Engine Code",
+    "h1": "Jaguar XE S Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "The XE S is the range-topping supercharged V6 — a 3.0-litre AJ126 producing 340 bhp and 450 Nm, shared with the entry-level F-Type. Get quotes from trusted UK Jaguar specialists who understand this complex engine, supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 15+ Specialists"
+    ],
+    "priceAnchor": "Jaguar XE S Engines — from £3,000 to £11,000 · Common code: 306PS (AJ126)",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "See Jaguar XE S Engine Options →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The XE S THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "XE X760",
+        "years": "2015–2019",
+        "engineCode": "306PS (AJ126)",
+        "reliability": "★★★☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£5,000–£11,000 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "One engine throughout this badge's history — no era ambiguity."
+      }
+    ],
+    "sourceNote": "This table is the single source every other section on this page matches — Sections 2, 4 and 6 reference it rather than restating conflicting figures.",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Jaguar XE S Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£3,000–£5,500",
+        "fittedIndie": "£4,000–£7,500",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; short-term ownership"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£5,000–£11,000",
+        "fittedIndie": "£6,500–£13,500",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£7,000–£12,000",
+        "fittedIndie": "£8,500–£14,500",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£12,000–£16,000",
+        "fittedIndie": "£14,000–£19,000",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "Figures above reflect the only engine generation this badge ever used — the 306PS (AJ126). See the Era Map above for era-specific pricing. JLR have quoted £16,000 for parts only, while independent specialists quote around £10,500 for a second-hand engine fitted.",
+    "labourEstimate": "Fitting an XE S engine typically takes 12–16 hours at £65–£95/hr (independent). The tightly packed engine bay and complex supercharger system add significant labour time compared to simpler engines. The water pump replacement cost is around £300, with the pump itself under £200 from Jaguar.",
+    "cta": {
+      "label": "→ Compare XE S engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Cooling System Failures — Water Pump & Coolant Pipes",
+        "symptoms": "Coolant level low warning, white smoke from engine bay, visible coolant leak, overheating, rattling noise from pump pulley.",
+        "typicalMileage": "50,000–70,000 miles — failure reported at just 54,000 miles.",
+        "repairCost": "£200–£500 (water pump replacement); £300–£800 (coolant pipe replacement).",
+        "replacementCost": "N/A — repair only; ignoring coolant warnings can lead to catastrophic engine failure.",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "if the coolant warning comes on, pull over immediately."
+        },
+        "recommendation": "The cooling system is the Achilles' heel of the AJ126. The water pump is a weak point on the XE S, along with the plastic coolant pipes. Failure can be sudden and dramatic — one owner reported a huge cloud of white smoke from the engine bay when the water pump failed at 54,000 miles. The plastic cooling tee often bursts. If you see any coolant warnings, have the system inspected immediately. Many specialists recommend replacing the water pump and coolant pipes as a precautionary measure.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/coolant-leak/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Supercharger Coupler Wear",
+        "symptoms": "Diesel-like ticking and rattling from the engine, loud \"clonk\" from the top of the engine when turning off, rattling that sounds like \"marbles in a tin can\" — loudest on cold start, decreasing as the engine warms up.",
+        "typicalMileage": "60,000–100,000 miles.",
+        "repairCost": "£400–£800 (supercharger coupler replacement). Not expensive if you change it yourself.",
+        "replacementCost": "N/A — repair only; if left for many thousands of miles, supercharger performance will degrade.",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon if you hear rattling or the \"clonk\"."
+        },
+        "recommendation": "The supercharger coupler/torsion isolator is a known wear item on the AJ126. The good news is that a worn coupler is normally nothing to worry about and is just annoying. However, if it is left for many thousands of miles, it will eventually wear so much that supercharger performance will degrade. If you hear the characteristic \"clonk\" when turning off the engine or a \"marbles in a tin can\" rattle on cold start, have the coupler inspected.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/supercharger-coupler-failure/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Timing Chain Tensioner Wear",
+        "symptoms": "Rattling timing chains — much more regular and higher pitched than a coupler rattle, worse with a cold engine. Can eventually lead to a stretched or skipped chain, causing pistons to hit valves and destroying the engine.",
+        "typicalMileage": "100,000+ miles — normally they go near 100k miles, but early cars can suffer from 57,000 miles.",
+        "repairCost": "£1,500–£3,500 (chain, tensioner, and guide replacement).",
+        "replacementCost": "N/A — repair only; if the chain snaps, it's an interference engine — catastrophic failure requiring full engine replacement.",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "at first sign of metallic rattle on cold start, book inspection today."
+        },
+        "recommendation": "The AJ126 is nowhere near as bad for timing chain failure as the early 5.0-litre AJ133 V8, but timing chains can still be a problem. The tensioners wear a hole in the guides. The number one enemy of these engines is oil sludge build-up. To prevent timing chain issues, change the engine oil far more often than the scheduled 16,000-mile interval — roughly every 8,000 miles. If you hear a regular, high-pitched rattle on cold start, book an inspection immediately.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/timing-chain-failure/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Weighing Your Options? Compare Specialist Quotes When You're Ready →",
+    "supportingLine": "15+ vetted Jaguar specialists, each experienced with the complex AJ126 supercharged V6, with a 12-month warranty as standard.",
+    "button": {
+      "label": "See Jaguar XE S Engine Options →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "XE S — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Water pump failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£200–£500",
+          "whenItMakesSense": "Simple fix — do it immediately to avoid overheating"
+        },
+        {
+          "problem": "Coolant pipe failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£300–£800",
+          "whenItMakesSense": "Well-known weak point — repair when symptoms appear"
+        },
+        {
+          "problem": "Supercharger coupler wear",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£800",
+          "whenItMakesSense": "Cost-effective repair — prevents performance degradation"
+        },
+        {
+          "problem": "Timing chain tensioner wear",
+          "repairable": "✅ Yes (if caught early)",
+          "typicalCost": "£1,500–£3,500",
+          "whenItMakesSense": "Preventative — catches fault before catastrophic failure"
+        },
+        {
+          "problem": "Snapped timing chain",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Interference engine — piston-valve contact means little is left to repair"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This XE S? Check These First",
+      "buyIf": [
+        "* Water pump and coolant pipes recently replaced — the most critical maintenance item",
+        "* No coolant warnings or evidence of coolant leaks",
+        "* Full service history with oil changes every 8,000 miles or less (not the 16,000-mile interval)",
+        "* Supercharger coupler inspected and confirmed healthy"
+      ],
+      "avoidIf": [
+        "* Coolant warning lights or evidence of leaks — cooling system issues are common",
+        "* Rattling from the engine — could be timing chain or supercharger coupler wear",
+        "* Poor service history — these engines are sensitive to oil sludge build-up",
+        "* Overheating or coolant loss — can cause warped cylinder heads or full engine failure"
+      ]
+    },
+    "closingVerdict": "The AJ126 is a great engine when properly maintained, but its cooling system requires attention and it is sensitive to oil sludge build-up. The water pump and plastic coolant pipes are known weak points. Coolant warnings are extremely common and should never be ignored. A £7,000 reconditioned engine on an XE S valued at £15,000–£20,000 is 35–47% of the car's value — worth it for a well-maintained example. On a sub-£10,000 example, think carefully. The 60% Jaguar scrap threshold applies.",
+    "cta": {
+      "label": "→ Compare XE S engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Jaguar XE S (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Coolant Level — Check for low coolant or visible leaks — the most common issue",
+      "* Coolant Warning — Any intermittent \"Coolant Level Low\" warnings?",
+      "* Cold Start — Listen for rattling on startup (timing chain or supercharger coupler wear)",
+      "* Supercharger Noise — Any \"clonk\" when turning off? \"Marbles in a tin can\" rattle?",
+      "* Service History — Oil changes every 8,000 miles (not the 16,000-mile interval)",
+      "* Engine Bay — Check for coolant residue or crusted coolant on hoses",
+      "* Engine Warning Light — Have codes been read? Any unresolved issues?",
+      "* MOT History — Check for emissions-related failures"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "306PS (AJ126)",
+        "years": "2015–2019",
+        "power": "340 bhp (250 kW)",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£5,000–£11,000 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs:",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "2,995 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "V6, 24-valve DOHC"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection"
+        },
+        {
+          "label": "* Supercharger",
+          "value": "Eaton M112"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare XE S engine prices for your Jaguar",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Cooling system — water pump and coolant pipes are weak points"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "65,000 miles 【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£7,000 reconditioned, supply only 【PLACEHOLDER — confirm vs cost sheet】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "306PS (AJ126) — only code for this badge 【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Summer — cooling system issues more apparent in hot weather 【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (22%), London (18%), South West (16%) 【PATTERN DATA】"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Jaguar XE S engine replacement cost in the UK?",
+        "answer": "A reconditioned XE S (306PS AJ126) engine typically costs £5,000–£11,000 supply only. Fitting adds £900–£2,000 depending on workshop location. JLR have quoted £16,000 for parts only, while independent specialists quote around £10,500 for a second-hand engine fitted. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the Jaguar XE S engine reliable?",
+        "answer": "The AJ126 is a great engine, but its cooling system requires attention. Coolant warnings are extremely common and should never be ignored — they can lead to overheating, warped cylinder heads, or even full engine failure. The engine is also sensitive to oil sludge build-up, making frequent oil changes (every 8,000 miles) critical. Timing chain issues are less common than on the 5.0-litre V8 but can occur at higher mileage."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Jaguar XE S?",
+        "answer": "Cooling system failures (water pump, plastic coolant pipes), supercharger coupler wear (rattling and \"clonk\" on shutdown), and timing chain tensioner wear (rattle on cold start). The cooling system is the most common and urgent issue."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Jaguar XE S engine, or should I scrap the car?",
+        "answer": "Apply the 60% Jaguar scrap threshold: if your XE S is worth £15,000–£20,000 and a recon engine is £7,000 (35–47%), it's worth it. If the vehicle is a tired £10,000 example, the same engine exceeds 50% — get a scrap valuation first. These are performance vehicles that often justify replacement spend."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Jaguar XE S engine code?",
+        "answer": "The engine code is listed on the VIN plate and vehicle documentation. The XE S uses the 306PS (also known as the AJ126) — a 3.0-litre supercharged V6 producing 340 bhp. It was fitted to the X760 XE from 2015 to 2019. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the cooling system, or does the engine need replacement?",
+        "answer": "Cooling system components can be repaired individually — water pump, coolant pipes, thermostat. The water pump costs under £200 from Jaguar. However, ignoring coolant warnings can lead to catastrophic engine failure, requiring a full replacement. Address any coolant leaks immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK Jaguar XE S Owners Trust JaguarEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted Jaguar XE S Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real XE S owners, with specialists who understand the AJ126 supercharged V6 — including its cooling system, supercharger coupler, and timing chain vulnerabilities."
+      },
+      {
+        "title": "Compare Jaguar XE S Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit, all from specialists experienced with this complex 3.0-litre supercharged V6."
+      },
+      {
+        "title": "UK Engine Replacement Services for XE S",
+        "text": "supply-only or full supply & fit available nationwide, covering everything from cooling system repair to full engine swaps on your X760 XE S."
+      }
+    ],
+    "finalCta": "Find the best Jaguar XE S engine replacement UK drivers rely on. Compare prices from trusted specialists on JaguarEngine.uk today and keep your supercharged V6 XE on the road with confidence.",
+    "ctaButton": {
+      "label": "Explore Jaguar XE S Engine Quotes →",
+      "href": "#"
+    }
+  }
+}

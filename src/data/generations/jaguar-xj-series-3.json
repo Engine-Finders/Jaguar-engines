@@ -1,0 +1,673 @@
+{
+  "meta": {
+    "slug": "jaguar-xj-series-3",
+    "title": "Series 3 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 58,
+    "description": "Every Jaguar XJ Series 3 engine — XK 3.4/4.2 six, 5.3 V12, 6.0 V12. Real UK costs, classic ownership data, and honest advice. Get free quotes from 15+ vetted Jaguar specialists today.",
+    "descriptionCharCount": 158,
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "XJ",
+              "item": "https://jaguarengine.uk/xj/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Jaguar XJ Series 3",
+              "item": "https://jaguarengine.uk/xj/series-3/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar XJ Series 3 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "XK 3.4 Engine",
+              "url": "https://jaguarengine.uk/engines/xk-34/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "XK 4.2 Engine",
+              "url": "https://jaguarengine.uk/engines/xk-42/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "V12 5.3 Engine",
+              "url": "https://jaguarengine.uk/engines/v12-53/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "V12 5.3 HE Engine",
+              "url": "https://jaguarengine.uk/engines/v12-53-he/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "V12 6.0 Engine",
+              "url": "https://jaguarengine.uk/engines/v12-60/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar XJ Series 3 Core Variants",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "XJ 3.4",
+              "url": "https://jaguarengine.uk/xj/series-3/34/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "XJ 4.2",
+              "url": "https://jaguarengine.uk/xj/series-3/42/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "XJ 5.3 V12",
+              "url": "https://jaguarengine.uk/xj/series-3/53-v12/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Jaguar XJ Series 3 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned Series 3 engine typically costs £3,500–£14,000 supply only, depending on engine — the 3.4-litre six sits at £3,500–£5,500, while the 6.0 V12 can reach £8,000–£14,000. Fitting adds £780–£1,430. Use our calculator for a personalised figure."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Jaguar XJ Series 3 engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The XK 4.2-litre straight-six is generally considered the most reliable Series 3 engine — it's simpler than the V12, has better parts availability, and is less complex to maintain. The 5.3-litre V12 HE (High Efficiency) models from 1981 onwards are also reliable but require specialist knowledge."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Jaguar XJ Series 3?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cooling system failures on all engines — particularly critical on the V12 where overheating can be catastrophic. Fuel injection system issues on the V12 (Lucas/Bosch systems), carburettor problems on early 3.4-litre cars, and — unrelated to the engine — the rust-prone floor pans, sills, and rear suspension mounts."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Jaguar XJ Series 3 reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Reliability depends heavily on maintenance history and engine choice. The XK six-cylinder is robust and well-understood, with good parts availability. The V12 is more complex and specialist-only, but the HE models are significantly improved over the pre-HE units. Any Series 3 requires careful inspection and a healthy maintenance budget."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Jaguar XJ Series 3 engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The pre-HE 5.3-litre V12 (1979–1981) without documented history — it has less efficient cylinder heads, higher fuel consumption, and more complex injection systems. The rare 6.0-litre V12 conversions are specialist-only and should only be considered by experienced collectors."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my Series 3 engine needs replacing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Overheating with no obvious external leak (cooling system failure), persistent coolant loss, white smoke from the exhaust (head gasket), or rough running and poor fuel economy (fuel injection issues) are the key warning signs. Use our diagnostic calculator for a personalised assessment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Jaguar XJ Series 3 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on the car's value. Against a well-kept £15,000 V12, a £7,000 V12 recon is 47% — borderline but justifiable. Against a tired £6,000 example, the same recon is 117% — walk away. Our 60% Jaguar threshold is the line. A properly rebuilt engine adds significant value to a Series 3."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long do Jaguar XJ Series 3 engines last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The XK straight-six can exceed 200,000 miles with proper maintenance. The V12 can also reach high mileage — but it demands meticulous cooling system maintenance and specialist care. Many V12s are rebuilt around 100,000–150,000 miles as a preventative measure."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between the Series 3 and the XJ40?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Series 3 is the final evolution of the first-generation XJ (1979–1992), built on the long-wheelbase platform only with a Pininfarina-redesigned body. The XJ40 (1986–1994) is the second-generation XJ — a completely new design with a square-edged body, different engine range (AJ6 straight-sixes), and significantly more electronics. The V12 continued in the Series 3 alongside the XJ40."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Jaguar XJ Series 3 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The engine type is stamped on the cylinder block — for the XK six, it's on the left-hand side; for the V12, it's on the block near the front. The VIN plate also identifies the engine type. Tell us your variant (3.4, 4.2, 5.3 V12) and we'll identify it — 15+ vetted specialists will confirm it for free."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "JaguarEngine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Jaguar XJ Series 3 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "3500",
+            "highPrice": "14000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Jaguar XJ Series 3 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Jaguar XJ Series 3 engines, sourced from JaguarEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Series 3 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://jaguarengine.uk/xj/series-3/",
+          "author": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-09",
+          "dateModified": "2026-07-09"
+        }
+      ]
+    }
+  },
+  "internalDeclarations": {
+    "checkA": "",
+    "checkB": "",
+    "authorityModelMode": ""
+  },
+  "hero": {
+    "tagPill": "Jaguar XJ Series 3 • Saloon • 1979–1992",
+    "h1": "Jaguar XJ Series 3 Engines — The Complete UK Guide",
+    "subHeadline": "Every engine fitted to the third-series XJ — from the carburetted 3.4-litre straight-six to the 5.3-litre V12 and the rare 6.0-litre HE. Real UK costs, honest classic ownership data, and the V12's legendary smoothness.",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "Classic Model — Pattern Data"
+      },
+      {
+        "icon": "🔧",
+        "label": "Saloon"
+      },
+      {
+        "icon": "📖",
+        "label": "5 Engine Codes"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Explore Series 3 Engines →",
+      "href": "#"
+    },
+    "dataIntegrityNote": ""
+  },
+  "engineDatabase": {
+    "h2": "Jaguar XJ Series 3 Engine Codes — The Complete Database",
+    "subHeadline": "Every engine fitted to the Series 3 — from the 3.4-litre and 4.2-litre XK straight-sixes to the 5.3-litre V12 and the late-production 6.0-litre.",
+    "columns": [
+      "Engine Code",
+      "Family",
+      "Fuel",
+      "Displacement",
+      "Power",
+      "Years (Series 3)"
+    ],
+    "engines": [
+      {
+        "engineCode": "Variants",
+        "family": "Reliability",
+        "fuel": "2025 Enquiries",
+        "displacement": "Avg. Recon Cost",
+        "power": "XK 3.4",
+        "years": "XK",
+        "variants": "",
+        "reliability": "",
+        "enquiries": "",
+        "avgReconCost": ""
+      },
+      {
+        "engineCode": "Petrol, carburetted",
+        "family": "3.4L (3442cc)",
+        "fuel": "161 bhp",
+        "displacement": "1979–1987",
+        "power": "XJ6 3.4, Sovereign 3.4",
+        "years": "★★★☆☆ [PATTERN DATA]",
+        "variants": "",
+        "reliability": "",
+        "enquiries": "",
+        "avgReconCost": ""
+      },
+      {
+        "engineCode": "— (pattern data)",
+        "family": "£3,500–£5,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "fuel": "XK 4.2",
+        "displacement": "XK",
+        "power": "Petrol, fuel-injected",
+        "years": "4.2L (4235cc)",
+        "variants": "",
+        "reliability": "",
+        "enquiries": "",
+        "avgReconCost": ""
+      },
+      {
+        "engineCode": "200 bhp",
+        "family": "1979–1987",
+        "fuel": "XJ6 4.2, Sovereign 4.2, Daimler 4.2",
+        "displacement": "★★★☆☆ [PATTERN DATA]",
+        "power": "— (pattern data)",
+        "years": "£4,000–£6,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "variants": "",
+        "reliability": "",
+        "enquiries": "",
+        "avgReconCost": ""
+      },
+      {
+        "engineCode": "V12 5.3",
+        "family": "V12",
+        "fuel": "Petrol, fuel-injected",
+        "displacement": "5.3L (5343cc)",
+        "power": "285 bhp",
+        "years": "1979–1981",
+        "variants": "",
+        "reliability": "",
+        "enquiries": "",
+        "avgReconCost": ""
+      },
+      {
+        "engineCode": "XJ12 5.3, Daimler Double Six",
+        "family": "★★★☆☆ [PATTERN DATA]",
+        "fuel": "— (pattern data)",
+        "displacement": "£5,500–£9,000 [PLACEHOLDER — confirm vs cost sheet]",
+        "power": "V12 5.3 HE",
+        "years": "V12",
+        "variants": "",
+        "reliability": "",
+        "enquiries": "",
+        "avgReconCost": ""
+      },
+      {
+        "engineCode": "Petrol, fuel-injected",
+        "family": "5.3L (5343cc)",
+        "fuel": "295 bhp",
+        "displacement": "1981–1992",
+        "power": "XJ12 5.3 HE, Daimler Double Six HE",
+        "years": "★★★★☆ [PATTERN DATA]",
+        "variants": "",
+        "reliability": "",
+        "enquiries": "",
+        "avgReconCost": ""
+      },
+      {
+        "engineCode": "— (pattern data)",
+        "family": "£5,500–£9,000 [PLACEHOLDER — confirm vs cost sheet]",
+        "fuel": "V12 6.0",
+        "displacement": "V12",
+        "power": "Petrol, fuel-injected",
+        "years": "6.0L (5994cc)",
+        "variants": "",
+        "reliability": "",
+        "enquiries": "",
+        "avgReconCost": ""
+      },
+      {
+        "engineCode": "300+ bhp",
+        "family": "1989–1992",
+        "fuel": "TWR/aftermarket conversions",
+        "displacement": "★★★★☆ [PATTERN DATA]",
+        "power": "— (pattern data)",
+        "years": "£8,000–£14,000 [PLACEHOLDER — confirm vs cost sheet]",
+        "variants": "",
+        "reliability": "",
+        "enquiries": "",
+        "avgReconCost": ""
+      }
+    ],
+    "confidenceScore": {
+      "title": "",
+      "text": ""
+    },
+    "dataCorrections": []
+  },
+  "overview": {
+    "h2": "Jaguar XJ Series 3 — Overview",
+    "intro": "The Series 3 is the final evolution of the first-generation Jaguar XJ, launched in April 1979 with a subtle redesign by Pininfarina. Built on the long-wheelbase platform only, it introduced flush door handles, a revised roofline with increased glass area, and thicker rubber bumpers. The 6-cylinder models were produced until early 1987, while the V12 variants continued until 1992.",
+    "keyFacts": "Platform: First-generation XJ (long-wheelbase only) • Predecessor: Jaguar XJ Series 2 • Successor: Jaguar XJ40 (6-cylinder) / XJ12 continued until 1992 • Sibling body styles in this generation: 4-door saloon only",
+    "marketIntelligenceLine": "As a classic model now over 30 years old, the Series 3 is a niche enthusiast vehicle — the V12 models remain the most sought-after, while the 4.2-litre six-cylinder is the most accessible entry point."
+  },
+  "bestWorstEngines": {
+    "items": [
+      {
+        "slot": "Thin-Data Summary",
+        "engine": "",
+        "quote": "The Series 3's engine range divides into two distinct eras. The XK 4.2-litre straight-six is the most accessible and practical choice — 200bhp, Bosch L-Jetronic fuel injection, and the legendary XK durability that defined Jaguar for decades. The 5.3-litre V12 is the heart of the Series 3 experience — 285bhp, velvet-smooth power delivery, and the ultimate expression of Jaguar grand touring. But the V12 carries this generation's defining costs: a 12-cylinder engine with 24 spark plugs, complex fuel injection, and specialist-only maintenance. The later HE (High Efficiency) V12 models (1981 onwards) are significantly more reliable and economical than the earlier pre-HE cars, thanks to the Michael May-designed \"fireball\" cylinder heads. If you're buying a Series 3, the 4.2 six-cylinder is the sensible choice; the V12 is the emotional one — budget accordingly.",
+        "whoItsFor": ""
+      }
+    ]
+  },
+  "ownershipEconomics": {
+    "h2": "Jaguar XJ Series 3 — Ownership Economics",
+    "columns": [
+      "Engine",
+      "Typical Mileage",
+      "Common Major Failure",
+      "Repair Cost (Specialist)",
+      "Replacement Cost (Recon)",
+      "Ownership Verdict"
+    ],
+    "rows": [
+      {
+        "engine": "XK 3.4",
+        "typicalMileage": "80k–150k",
+        "commonMajorFailure": "Carburettor issues, cooling system",
+        "repairCostSpecialist": "£500–£1,200",
+        "replacementCostRecon": "£3,500–£5,500",
+        "ownershipVerdict": "Solid Choice — simple, but underpowered"
+      },
+      {
+        "engine": "XK 4.2",
+        "typicalMileage": "80k–150k",
+        "commonMajorFailure": "Fuel injection, cooling system",
+        "repairCostSpecialist": "£600–£1,500",
+        "replacementCostRecon": "£4,000–£6,500",
+        "ownershipVerdict": "Best Value — the sweet spot of the range"
+      },
+      {
+        "engine": "V12 5.3 (pre-HE)",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "Fuel injection, ignition, cooling",
+        "repairCostSpecialist": "£1,000–£3,000",
+        "replacementCostRecon": "£5,500–£9,000",
+        "ownershipVerdict": "High Risk — complex, thirsty, specialist-only"
+      },
+      {
+        "engine": "V12 5.3 HE",
+        "typicalMileage": "80k–150k",
+        "commonMajorFailure": "Ignition, cooling, oil leaks",
+        "repairCostSpecialist": "£800–£2,500",
+        "replacementCostRecon": "£5,500–£9,000",
+        "ownershipVerdict": "Best V12 — the HE is a significant improvement"
+      },
+      {
+        "engine": "V12 6.0",
+        "typicalMileage": "50k–100k",
+        "commonMajorFailure": "Specialist-only, very rare",
+        "repairCostSpecialist": "£2,000–£5,000",
+        "replacementCostRecon": "£8,000–£14,000",
+        "ownershipVerdict": "Collector's Piece — rare and expensive"
+      }
+    ],
+    "economicsRule": {
+      "title": "The Series 3 rule",
+      "text": "A £5,500–£9,000 V12 recon against a £10,000 Series 3 sits at 55–90% of the car's value — right at our 60% Jaguar threshold. Against a £6,000 example, a V12 replacement is a financial write-off. Against a well-kept £15,000+ V12, the same recon drops to 37–60% — a repair decision, not a financial one. Value the car first."
+    },
+    "keyTakeaways": [
+      {
+        "question": "Which Series 3 Costs Least To Own?",
+        "answer": "XK 4.2 — simpler than the V12, more parts availability."
+      },
+      {
+        "question": "Which Series 3 Costs Most To Own?",
+        "answer": "V12 5.3 (pre-HE) — complex fuel injection and ignition systems."
+      },
+      {
+        "question": "Which Series 3 Is Best Value?",
+        "answer": "XK 4.2 — the most accessible and practical Series 3 engine."
+      }
+    ]
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "V12 Cooling System & Thermostat Issues",
+        "affectedModels": "Series 3 XJ12, Daimler Double Six (all V12s, 1979–1992).",
+        "typicalFailureMileage": "60,000–120,000 miles.",
+        "rootCause": "The V12's cooling system is marginal at best — the engine generates significant heat and the cooling system is complex. Thermostats can fail closed, causing overheating. The cooling system also has many hoses and connections that can develop leaks with age. An overheated V12 can warp heads or blow head gaskets.",
+        "tieredCosts": [],
+        "recommendation": "On any Series 3 V12, treat the cooling system as a maintenance item, not a \"fix when broken\" item. Replace the thermostat, hoses, and water pump proactively — a £500–£1,200 job is far cheaper than a £5,500+ engine rebuild.",
+        "cta": {
+          "label": "Compare Series 3 V12 engine prices for your XJ →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "V12 Lucas/Bosch Fuel Injection System",
+        "affectedModels": "Series 3 XJ12, Daimler Double Six (V12, 1979–1992).",
+        "typicalFailureMileage": "60,000–100,000 miles.",
+        "rootCause": "The V12's fuel injection system is complex — early cars used Lucas injection (made under licence from Bosch), while later HE cars used a more sophisticated system. Injection components can fail, injectors can clog, and the ECU can develop issues. Diagnosis is specialist-only.",
+        "tieredCosts": [],
+        "recommendation": "If your V12 runs poorly, starts hard, or has poor fuel economy, suspect the fuel injection system first. Find a specialist who knows the Jaguar V12 — this is not a DIY job.",
+        "cta": {
+          "label": "Compare Series 3 V12 injection parts for your XJ →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "XK Straight-Six Cooling System & Head Gasket",
+        "affectedModels": "Series 3 XJ6 3.4, 4.2 (1979–1987).",
+        "typicalFailureMileage": "80,000–150,000 miles.",
+        "rootCause": "The XK straight-six is a robust engine, but the cooling system is ageing. Thermostats can fail, water pumps can leak, and the radiator can clog. Overheating can cause head gasket failure, which is a labour-intensive repair on the six-cylinder.",
+        "tieredCosts": [],
+        "recommendation": "The XK six is the most practical Series 3 engine — but it's still an ageing classic. Replace the thermostat and water pump proactively, and monitor the temperature gauge. A £250–£500 preventative job is far cheaper than a £1,000+ head gasket repair.",
+        "cta": {
+          "label": "Compare Series 3 XK engine prices for your XJ →",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "replacementCosts": {
+    "h2": "Series 3 Engine Replacement Costs — By Engine and Condition",
+    "columns": [
+      "Variant",
+      "Engine Code",
+      "Used (Supply)",
+      "Reconditioned (Supply)",
+      "Rebuilt (Supply)",
+      "Labour Hours"
+    ],
+    "rows": [
+      {
+        "variant": "3.4",
+        "engineCode": "XK 3.4",
+        "usedSupply": "£1,500–£2,800",
+        "reconditionedSupply": "£3,500–£5,500",
+        "rebuiltSupply": "£5,000–£7,500",
+        "labourHours": "12–16 hrs"
+      },
+      {
+        "variant": "4.2",
+        "engineCode": "XK 4.2",
+        "usedSupply": "£2,000–£3,500",
+        "reconditionedSupply": "£4,000–£6,500",
+        "rebuiltSupply": "£5,500–£8,500",
+        "labourHours": "12–16 hrs"
+      },
+      {
+        "variant": "5.3 V12 (pre-HE)",
+        "engineCode": "V12 5.3",
+        "usedSupply": "£3,000–£5,000",
+        "reconditionedSupply": "£5,500–£9,000",
+        "rebuiltSupply": "£8,000–£12,000",
+        "labourHours": "16–20 hrs"
+      },
+      {
+        "variant": "5.3 V12 HE",
+        "engineCode": "V12 5.3 HE",
+        "usedSupply": "£3,000–£5,000",
+        "reconditionedSupply": "£5,500–£9,000",
+        "rebuiltSupply": "£8,000–£12,000",
+        "labourHours": "16–20 hrs"
+      },
+      {
+        "variant": "6.0 V12",
+        "engineCode": "V12 6.0",
+        "usedSupply": "£5,000–£8,000",
+        "reconditionedSupply": "£8,000–£14,000",
+        "rebuiltSupply": "£12,000–£18,000",
+        "labourHours": "18–22 hrs"
+      }
+    ],
+    "note": ""
+  },
+  "coreVariants": {
+    "dieselVariants": [],
+    "petrolVariants": [
+      "3.4",
+      "4.2",
+      "5.3 V12",
+      "5.3 V12 HE",
+      "6.0 V12"
+    ],
+    "scopeNote": "All variants listed are Series 3-generation XJ only (1979–1992). The Series 3 was only available as a 4-door saloon."
+  },
+  "marketIntelligence": {
+    "mostRequestedEngines": [],
+    "mostRequestedVariants": [],
+    "averageReplacementCost": "",
+    "mostCommonFailures": [],
+    "liveFeed": []
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Jaguar XJ Series 3 engine replacement cost in the UK?",
+        "answer": "A reconditioned Series 3 engine typically costs £3,500–£14,000 supply only [PLACEHOLDER — confirm vs cost sheet], depending on engine — the 3.4-litre six sits at £3,500–£5,500, while the 6.0 V12 can reach £8,000–£14,000. Fitting adds £780–£1,430. Use our calculator for a personalised figure."
+      },
+      {
+        "id": 2,
+        "question": "Which Jaguar XJ Series 3 engine is the most reliable?",
+        "answer": "The XK 4.2-litre straight-six is generally considered the most reliable Series 3 engine — it's simpler than the V12, has better parts availability, and is less complex to maintain. The 5.3-litre V12 HE (High Efficiency) models from 1981 onwards are also reliable but require specialist knowledge."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Jaguar XJ Series 3?",
+        "answer": "Cooling system failures on all engines — particularly critical on the V12 where overheating can be catastrophic. Fuel injection system issues on the V12 (Lucas/Bosch systems), carburettor problems on early 3.4-litre cars, and — unrelated to the engine — the rust-prone floor pans, sills, and rear suspension mounts."
+      },
+      {
+        "id": 4,
+        "question": "Is the Jaguar XJ Series 3 reliable?",
+        "answer": "Reliability depends heavily on maintenance history and engine choice. The XK six-cylinder is robust and well-understood, with good parts availability. The V12 is more complex and specialist-only, but the HE models are significantly improved over the pre-HE units. Any Series 3 requires careful inspection and a healthy maintenance budget."
+      },
+      {
+        "id": 5,
+        "question": "Which Jaguar XJ Series 3 engine should I avoid?",
+        "answer": "The pre-HE 5.3-litre V12 (1979–1981) without documented history — it has less efficient cylinder heads, higher fuel consumption, and more complex injection systems. The rare 6.0-litre V12 conversions are specialist-only and should only be considered by experienced collectors."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my Series 3 engine needs replacing?",
+        "answer": "Overheating with no obvious external leak (cooling system failure), persistent coolant loss, white smoke from the exhaust (head gasket), or rough running and poor fuel economy (fuel injection issues) are the key warning signs. Use our diagnostic calculator for a personalised assessment."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing a Jaguar XJ Series 3 engine, or should I scrap the car?",
+        "answer": "Depends on the car's value. Against a well-kept £15,000 V12, a £7,000 V12 recon is 47% — borderline but justifiable. Against a tired £6,000 example, the same recon is 117% — walk away. Our 60% Jaguar threshold is the line. A properly rebuilt engine adds significant value to a Series 3."
+      },
+      {
+        "id": 8,
+        "question": "How long do Jaguar XJ Series 3 engines last?",
+        "answer": "The XK straight-six can exceed 200,000 miles with proper maintenance. The V12 can also reach high mileage — but it demands meticulous cooling system maintenance and specialist care. Many V12s are rebuilt around 100,000–150,000 miles as a preventative measure."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the Series 3 and the XJ40?",
+        "answer": "The Series 3 is the final evolution of the first-generation XJ (1979–1992), built on the long-wheelbase platform only with a Pininfarina-redesigned body. The XJ40 (1986–1994) is the second-generation XJ — a completely new design with a square-edged body, different engine range (AJ6 straight-sixes), and significantly more electronics. The V12 continued in the Series 3 alongside the XJ40."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my Jaguar XJ Series 3 engine code?",
+        "answer": "The engine type is stamped on the cylinder block — for the XK six, it's on the left-hand side; for the V12, it's on the block near the front. The VIN plate also identifies the engine type. Tell us your variant (3.4, 4.2, 5.3 V12) and we'll identify it — 15+ vetted specialists will confirm it for free."
+      }
+    ]
+  },
+  "trustCta": {
+    "h2": "Why UK Jaguar XJ Series 3 Owners Trust JaguarEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted Series 3 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Series 3 owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare Series 3 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for Series 3",
+        "text": "covering every variant from 3.4 to 6.0 V12, with supply-only or full supply & fit available nationwide."
+      }
+    ],
+    "finalCta": "Find the best Jaguar XJ Series 3 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare Jaguar XJ Series 3 Engine Prices on EnginesMarket →",
+      "href": "#",
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
+    }
+  }
+}

@@ -1,0 +1,489 @@
+{
+  "meta": {
+    "slug": "e-pace-d150",
+    "title": "Jaguar E‑Pace D150 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 57,
+    "description": "Every Jaguar E‑Pace D150 engine — 204DTD 2.0 diesel. X540 generation, real UK costs and reliability. Get free quotes from 15+ vetted Jaguar specialists today.",
+    "descriptionCharCount": 161,
+    "canonical": "https://jaguarengine.uk/e-pace/d150/",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "E‑Pace",
+              "item": "https://jaguarengine.uk/e-pace/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "D150",
+              "item": "https://jaguarengine.uk/e-pace/d150/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar E‑Pace D150 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "X540 E‑Pace D150 (204DTD, 2017-2024)",
+              "url": "https://jaguarengine.uk/e-pace/x540/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar E‑Pace D150 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "204DTD (AJ200D)",
+              "url": "https://jaguarengine.uk/engines/204dtd/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Jaguar E‑Pace D150 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned 204DTD engine typically costs £3,500–£6,500 supply only. Fitting adds £900–£1,500. Main dealer new engines can exceed £15,000. Timing chain replacement alone can cost £1,800–£4,500 if caught early. Use our calculator for a figure specific to your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Jaguar E‑Pace D150 engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 204DTD is rated ★★☆☆☆ — it has a poor reputation for reliability. Known issues include rear‑mounted timing chain stretch (the defining weakness), DPF clogging and oil dilution, EGR valve clogging, and balance shaft bearing wear on early examples. Short oil change intervals (8,000–10,000 miles) and regular motorway runs are essential for longevity."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Jaguar E‑Pace D150?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing chain stretch (cold‑start rattle), DPF clogging and oil dilution, EGR valve clogging, AdBlue system leaks, and balance shaft bearing wear on early examples. The timing chain is the most critical — if it fails, the engine is usually scrap."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Jaguar E‑Pace D150 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on vehicle value. Against a well‑kept E‑Pace D150 worth £8,000–£16,000, a £4,500 recon is a manageable 28–56% of the vehicle's value — worth it for a well‑maintained example. However, given the engine's poor reputation, many owners choose to cut their losses. If the rest of the car is in excellent condition, replacement can be worthwhile."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Jaguar E‑Pace D150 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation. The E‑Pace D150 uses the 204DTD (also known as AJ200D) 2.0‑litre turbocharged diesel Ingenium engine. Tell us your registration date and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the 204DTD's timing chain, or does it need a new engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — if caught early. A timing chain and tensioner replacement (£1,800–£4,500) is far cheaper than a catastrophic chain snap (£4,000–£8,000+ engine replacement). At the first sign of cold‑start rattle, book an inspection immediately. The 2019 redesign of timing chain parts is backwardly compatible, so replacement with updated parts is recommended."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "JaguarEngine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Jaguar E‑Pace D150 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2500",
+            "highPrice": "7500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Jaguar E‑Pace D150 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Jaguar E‑Pace D150 engines (204DTD), sourced from JaguarEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Jaguar E‑Pace D150 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://jaguarengine.uk/e-pace/d150/",
+          "author": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-12",
+          "dateModified": "2026-07-12"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Jaguar E‑Pace D150 • 2017–2024 • 204DTD 2.0 Diesel",
+    "h1": "Jaguar E‑Pace D150 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Jaguar E‑Pace D150 specialists. Compare reconditioned, rebuilt and used 204DTD engines — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12‑Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 15+ Specialists"
+    ],
+    "priceAnchor": "Jaguar E‑Pace D150 Engines — from £2,500 to £7,500 · Code: 204DTD",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free D150 Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK‑Wide Network"
+  },
+  "eraMap": {
+    "title": "The E‑PACE D150 THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "X540",
+        "years": "2017–2024",
+        "engineCode": "204DTD (2.0 Ingenium Diesel)",
+        "reliability": "★★☆☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£3,500–£6,500 [JAG‑QUOTE]",
+        "eraNote": "The D150's 2.0 Ingenium diesel — rear‑mounted timing chain is the defining weakness; DPF and EGR issues are also common."
+      }
+    ],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Jaguar E‑Pace D150 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£2,500–£4,500",
+        "fittedIndie": "£3,300–£5,600",
+        "warranty": "3–6 months",
+        "bestFor": "Budget priority; vehicle under £8,000"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£3,500–£6,000",
+        "fittedIndie": "£4,400–£7,200",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£5,000–£7,500",
+        "fittedIndie": "£5,900–£8,700",
+        "warranty": "12–24 months",
+        "bestFor": "Long‑term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£10,000–£15,000",
+        "fittedIndie": "£11,500–£17,000",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "",
+    "labourEstimate": "Fitting an E‑Pace D150 engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). Timing chain replacement is a labour‑intensive job requiring gearbox removal.",
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": []
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted Jaguar Specialist →",
+    "supportingLine": "15+ vetted Jaguar specialists, every D150 variant covered, with a 12‑month warranty as standard.",
+    "button": {
+      "label": "Get My Free D150 Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Jaguar E‑Pace D150 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Timing chain stretch (204DTD)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,800–£4,500",
+          "whenItMakesSense": "If caught early; shorter oil change intervals (8,000–10,000 miles) prevent recurrence"
+        },
+        {
+          "problem": "DPF clogging (204DTD)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£1,200",
+          "whenItMakesSense": "Preventative — regular motorway runs are the best prevention"
+        },
+        {
+          "problem": "EGR valve clogging (204DTD)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£300–£800",
+          "whenItMakesSense": "Regular cleaning; use quality fuel and motorway runs to prevent"
+        },
+        {
+          "problem": "AdBlue system failure (204DTD)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£1,000",
+          "whenItMakesSense": "Specialist repair; check for leaks from hoses and filler caps"
+        },
+        {
+          "problem": "Balance shaft bearing wear (204DTD — early)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£2,000",
+          "whenItMakesSense": "Early examples (2015–2019) are prone to balance shaft bearing wear"
+        },
+        {
+          "problem": "Snapped timing chain",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Piston‑valve contact means little is left to repair"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This E‑Pace D150? Check These First",
+      "buyIf": [
+        "* Full Jaguar service history with documented oil changes (ideally more frequent than 21,000 miles)",
+        "* Evidence of timing chain work (particularly on 2017–2019 examples)",
+        "* Post‑2019 build (timing chain design was revised in 2019 with backwardly compatible parts)",
+        "* Evidence of regular motorway driving (to keep the DPF clear)"
+      ],
+      "avoidIf": [
+        "* Cold‑start rattle with no timing chain history — this is the single most important check",
+        "* DPF warning lights or regeneration issues with no diagnosis",
+        "* Poor service history — the Ingenium diesel is unforgiving of neglect",
+        "* Engine warning light with no diagnosis documentation"
+      ]
+    },
+    "closingVerdict": "The E‑Pace D150's 204DTD Ingenium diesel is a refined and economical engine when it's working, but it has a well‑deserved reputation for reliability issues. The rear‑mounted timing chain is the most significant weakness — it can stretch and snap, causing catastrophic engine failure. DPF clogging, oil dilution, and EGR issues are also common. Buy on service history and proof of preventative maintenance — shorter oil change intervals and regular motorway runs are the keys to longevity.",
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Jaguar E‑Pace D150 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for 2–5 seconds of rattle (timing chain stretch warning — the most critical check)",
+      "* Service History — Including which engine era (204DTD is the only D150 engine — verify this before purchase) and oil change intervals (shorter than 21,000 miles is preferable)",
+      "* DPF Status — Check the DPF status via the Jaguar app if available; any regeneration issues?",
+      "* Oil Level — Is the oil above the max mark? This indicates diesel contamination from failed DPF regens",
+      "* Turbo Health — Test acceleration; any hesitation, lag, or whistling?",
+      "* AdBlue System — Any leaks from hoses or filler caps?",
+      "* Engine Warning Light — Have codes been read? Any unresolved timing, DPF, EGR, or AdBlue issues?",
+      "* MOT History — Check for emissions‑related failures; often point to DPF or EGR problems"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "204DTD (AJ200D)",
+        "years": "2017–2024",
+        "power": "150 bhp / 380 Nm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,500–£6,500 [JAG‑QUOTE]"
+      }
+    ],
+    "matchNote": "",
+    "technicalSpecs": {
+      "title": "Technical Specs (204DTD):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "1,999cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "4‑cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "15.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Common‑rail direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Single turbo (Mitsubishi TD04)"
+        },
+        {
+          "label": "* Timing Drive",
+          "value": "Chain (rear‑mounted, against the firewall)"
+        }
+      ]
+    },
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Timing chain stretch and DPF clogging — approximately 60% of 204DTD enquiries [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "52,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£4,500 reconditioned, supply only [JAG‑QUOTE]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "204DTD [JAG‑VERIFIED]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Winter — cold starts expose timing chain issues; DPF problems worsen in colder conditions [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "London (22%), South East (20%), South West (14%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Jaguar E‑Pace D150 engine replacement cost in the UK?",
+        "answer": "A reconditioned 204DTD engine typically costs £3,500–£6,500 supply only. Fitting adds £900–£1,500. Main dealer new engines can exceed £15,000. Timing chain replacement alone can cost £1,800–£4,500 if caught early. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the Jaguar E‑Pace D150 engine reliable?",
+        "answer": "The 204DTD is rated ★★☆☆☆ — it has a poor reputation for reliability. Known issues include rear‑mounted timing chain stretch (the defining weakness), DPF clogging and oil dilution, EGR valve clogging, and balance shaft bearing wear on early examples. Short oil change intervals (8,000–10,000 miles, not JLR's 21,000‑mile recommendation) and regular motorway runs are essential for longevity."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Jaguar E‑Pace D150?",
+        "answer": "Timing chain stretch (cold‑start rattle), DPF clogging and oil dilution, EGR valve clogging, AdBlue system leaks, and balance shaft bearing wear on early examples. The timing chain is the most critical — if it fails, the engine is usually scrap."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Jaguar E‑Pace D150 engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. Against a well‑kept E‑Pace D150 worth £8,000–£16,000, a £4,500 recon is a manageable 28–56% of the vehicle's value — worth it for a well‑maintained example. However, given the engine's poor reputation, many owners choose to cut their losses and walk away. If the rest of the car is in excellent condition, replacement can be worthwhile."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Jaguar E‑Pace D150 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. The E‑Pace D150 uses the 204DTD (also known as AJ200D) 2.0‑litre turbocharged diesel Ingenium engine. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the 204DTD's timing chain, or does it need a new engine?",
+        "answer": "Yes — if caught early. A timing chain and tensioner replacement (£1,800–£4,500) is far cheaper than a catastrophic chain snap (£4,000–£8,000+ engine replacement). At the first sign of cold‑start rattle, book an inspection immediately — this is the single most important check on any D150. The 2019 redesign of timing chain parts is backwardly compatible, so replacement with updated parts is recommended."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "Find the best Jaguar E‑Pace D150 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare Jaguar E‑Pace D150 Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

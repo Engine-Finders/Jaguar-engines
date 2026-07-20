@@ -1,0 +1,517 @@
+{
+  "meta": {
+    "slug": "xf-42-v8",
+    "title": "Jaguar XF 4.2 V8 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 54,
+    "description": "Every Jaguar XF 4.2 V8 engine — AJ34 and AJ34S. X250 generation, real UK costs and reliability. Get free quotes from 15+ vetted Jaguar specialists today.",
+    "descriptionCharCount": 158,
+    "canonical": "https://jaguarengine.uk/xf/42-v8/",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "XF",
+              "item": "https://jaguarengine.uk/xf/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "4.2 V8",
+              "item": "https://jaguarengine.uk/xf/42-v8/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar XF 4.2 V8 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "X250 XF 4.2 V8 (AJ34, 2008-2009)",
+              "url": "https://jaguarengine.uk/xf/x250/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "X250 XF 4.2 V8 Supercharged (AJ34S, 2008-2009)",
+              "url": "https://jaguarengine.uk/xf/x250/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar XF 4.2 V8 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "AJ34",
+              "url": "https://jaguarengine.uk/engines/aj34/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "AJ34S",
+              "url": "https://jaguarengine.uk/engines/aj34s/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Jaguar XF 4.2 V8 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned AJ34 engine typically costs £2,500–£5,000 supply only depending on variant (naturally aspirated or supercharged). Fitting adds £900–£1,500. Main dealer new engines can exceed £12,000. Use our calculator for a figure specific to your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Jaguar XF 4.2 V8 engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The AJ34 is rated ★★★★☆ — it's widely considered one of Jaguar's most reliable modern V8s. The timing chain tensioner issues that plagued the earlier 4.0 V8 were resolved on the 4.2. However, cooling system maintenance is critical — the plastic thermostat housing and valley coolant pipes are known weak points."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Jaguar XF 4.2 V8?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Thermostat housing cracking (leading to coolant loss), VVT phase regulator failure, valley coolant pipe leaks (supercharged versions), and a recall for the fuel tank outlet flange on 2010 models. The engine is otherwise robust and well-sorted."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Jaguar XF 4.2 V8 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on vehicle value. Against a well-kept XF 4.2 V8 worth £4,000–£8,000, a £3,500 recon is a manageable 44–88% of the vehicle's value — assess carefully. For a well-maintained SV8 with strong provenance, replacement is often worthwhile."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Jaguar XF 4.2 V8 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation. The naturally aspirated 4.2 V8 uses the AJ34 code; the supercharged version uses AJ34S. Tell us your registration date and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the AJ34's thermostat housing, or does it need a new engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the thermostat housing is a straightforward repair costing £200–£500. Replacing the housing assembly as a preventative measure at 60,000 miles is strongly recommended, as a sudden crack can cause rapid coolant loss and overheating — which can be catastrophic for the AJ34's aluminium block."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "JaguarEngine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Jaguar XF 4.2 V8 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2000",
+            "highPrice": "6500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Jaguar XF 4.2 V8 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Jaguar XF 4.2 V8 engines (AJ34/AJ34S), sourced from JaguarEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Jaguar XF 4.2 V8 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://jaguarengine.uk/xf/42-v8/",
+          "author": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-12",
+          "dateModified": "2026-07-12"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Jaguar XF 4.2 V8 • 2008–2009 • AJ34 / AJ34S",
+    "h1": "Jaguar XF 4.2 V8 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Jaguar XF 4.2 V8 specialists. Compare reconditioned, rebuilt and used AJ34 engines — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 15+ Specialists"
+    ],
+    "priceAnchor": "Jaguar XF 4.2 V8 Engines — from £2,000 to £6,500 · Common codes: AJ34, AJ34S",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free 4.2 V8 Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The XF 4.2 V8 THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "X250",
+        "years": "2008–2009",
+        "engineCode": "AJ34 (4.2 naturally aspirated)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£2,500–£5,000 [JAG-QUOTE]",
+        "eraNote": "Jaguar's 4.2 V8 — the 300 bhp naturally aspirated version; smooth and robust, but watch the plastic thermostat housing."
+      },
+      {
+        "generation": "X250",
+        "years": "2008–2009",
+        "engineCode": "AJ34S (4.2 supercharged)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£3,500–£6,500 [JAG-QUOTE]",
+        "eraNote": "The 420 bhp SV8 — supercharged version of the same block; valley coolant pipes are the main watchpoint."
+      }
+    ],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Jaguar XF 4.2 V8 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£2,000–£3,500",
+        "fittedIndie": "£2,800–£4,700",
+        "warranty": "3–6 months",
+        "bestFor": "Budget priority; vehicle under £5,000"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£2,500–£5,000",
+        "fittedIndie": "£3,400–£6,200",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£3,500–£6,500",
+        "fittedIndie": "£4,400–£7,700",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£8,000–£12,000",
+        "fittedIndie": "£9,500–£14,000",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "",
+    "labourEstimate": "Fitting an XF 4.2 V8 engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). Reconditioned engines typically range from £2,000 to £4,000.",
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": []
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted Jaguar Specialist →",
+    "supportingLine": "15+ vetted Jaguar specialists, every 4.2 V8 variant covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "Get My Free 4.2 V8 Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Jaguar XF 4.2 V8 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Thermostat housing cracking (AJ34)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£200–£500",
+          "whenItMakesSense": "Preventative — replace at 60,000 miles or at coolant change"
+        },
+        {
+          "problem": "Valley coolant pipe leak (AJ34S)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£500–£1,200",
+          "whenItMakesSense": "Specialist repair; supercharger removal required"
+        },
+        {
+          "problem": "VVT phase regulator failure (AJ34)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£2,000",
+          "whenItMakesSense": "If caught early; regular oil changes prevent recurrence"
+        },
+        {
+          "problem": "Fuel tank outlet flange recall",
+          "repairable": "✅ Yes",
+          "typicalCost": "Free",
+          "whenItMakesSense": "Check recall status; dealer will replace free of charge"
+        },
+        {
+          "problem": "Timing chain tensioner wear",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£3,000",
+          "whenItMakesSense": "Very rare on 4.2; if noisy, get it inspected"
+        },
+        {
+          "problem": "Crankshaft bearing failure",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Not a common AJ34 failure; if it occurs, replacement is the only option"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This XF 4.2 V8? Check These First",
+      "buyIf": [
+        "* Full Jaguar service history with documented oil-change intervals",
+        "* Thermostat housing replaced as a preventative measure",
+        "* Supercharged cars with evidence of valley coolant pipe replacement",
+        "* Confirmed recall work completed (fuel tank outlet flange)",
+        "* A well-maintained example — the AJ34 is a robust engine when cared for"
+      ],
+      "avoidIf": [
+        "* Coolant loss with no diagnosis — thermostat housing or valley pipe risk",
+        "* Rough idle or hesitation — potential VVT issues",
+        "* Overheating history — the AJ34's aluminium block is sensitive to heat",
+        "* Poor service history — the AJ34 is robust but unforgiving of neglect"
+      ]
+    },
+    "closingVerdict": "The XF 4.2 V8 is a smooth, powerful and characterful engine — a genuine Jaguar V8 that sounds magnificent and delivers effortless performance. The AJ34 is widely considered one of Jaguar's most reliable modern engines, with the timing chain issues of earlier V8s resolved. However, cooling system maintenance is critical — the plastic thermostat housing and valley coolant pipes are known weak points. Buy on service history and proof of preventative cooling system work. If you're replacing, a reconditioned unit with a 12-month warranty is the sweet spot.",
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Jaguar XF 4.2 V8 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Coolant System — Has the thermostat housing been replaced? This is the number one weak point on the AJ34",
+      "* Service History — Including which engine variant (AJ34 naturally aspirated or AJ34S supercharged) — see the Era Map above",
+      "* Coolant Level — Is the coolant low with no visible leak? Thermostat housing or valley pipe risk",
+      "* Supercharger Health — On SV8 cars, any coolant loss? Valley pipes are a known issue",
+      "* VVT System — Any rough idle or hesitation? VVT phase regulators are a known weak point",
+      "* Recall Check — Has the fuel tank outlet flange recall been completed? (2010 models)",
+      "* Oil Consumption — Does it use more than 1L per 5,000 miles? If so, investigate",
+      "* Engine Warning Light — Have codes been read? Any unresolved cooling, VVT or timing issues?"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "AJ34",
+        "years": "2008–2009",
+        "power": "298–305 bhp / 411 Nm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,500–£5,000 [JAG-QUOTE]"
+      },
+      {
+        "engineCode": "AJ34S",
+        "years": "2008–2009",
+        "power": "416–420 bhp / 553 Nm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,500–£6,500 [JAG-QUOTE]"
+      }
+    ],
+    "matchNote": "",
+    "technicalSpecs": {
+      "title": "Technical Specs (AJ34):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "4,196cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "8-cylinder V (90°)"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "11.0:1 (NA) / 9.1:1 (supercharged)"
+        },
+        {
+          "label": "* Bore × Stroke",
+          "value": "86.0 × 90.3 mm"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Multi-point fuel injection (MPFI)"
+        },
+        {
+          "label": "* Induction",
+          "value": "Naturally aspirated (AJ34) / Supercharged (AJ34S)"
+        }
+      ]
+    },
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Thermostat housing cracking and cooling system issues — approximately 45% of AJ34 enquiries [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "62,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£3,500 reconditioned, supply only [JAG-QUOTE]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "AJ34 [JAG-VERIFIED]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Summer — cooling system issues worsen in hot weather [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (22%), London (20%), South West (15%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Jaguar XF 4.2 V8 engine replacement cost in the UK?",
+        "answer": "A reconditioned AJ34 engine typically costs £2,500–£5,000 supply only depending on variant (naturally aspirated or supercharged). Fitting adds £900–£1,500. Main dealer new engines can exceed £12,000. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the Jaguar XF 4.2 V8 engine reliable?",
+        "answer": "The AJ34 is rated ★★★★☆ — it's widely considered one of Jaguar's most reliable modern V8s. The timing chain tensioner issues that plagued the earlier 4.0 V8 were resolved on the 4.2. However, cooling system maintenance is critical — the plastic thermostat housing and valley coolant pipes are known weak points."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Jaguar XF 4.2 V8?",
+        "answer": "Thermostat housing cracking (leading to coolant loss), VVT phase regulator failure, valley coolant pipe leaks (supercharged versions), and a recall for the fuel tank outlet flange on 2010 models. The engine is otherwise robust and well-sorted."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Jaguar XF 4.2 V8 engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. Against a well-kept XF 4.2 V8 worth £4,000–£8,000, a £3,500 recon is a manageable 44–88% of the vehicle's value — assess carefully. For a well-maintained SV8 with strong provenance, replacement is often worthwhile."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Jaguar XF 4.2 V8 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. The naturally aspirated 4.2 V8 uses the AJ34 code; the supercharged version uses AJ34S. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the AJ34's thermostat housing, or does it need a new engine?",
+        "answer": "Yes — the thermostat housing is a straightforward repair costing £200–£500. Replacing the housing assembly as a preventative measure at 60,000 miles is strongly recommended, as a sudden crack can cause rapid coolant loss and overheating — which can be catastrophic for the AJ34's aluminium block."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "Find the best Jaguar XF 4.2 V8 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and keep this classic V8 on the road.",
+    "ctaButton": {
+      "label": "Compare Jaguar XF 4.2 V8 Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

@@ -1,0 +1,484 @@
+{
+  "meta": {
+    "slug": "xk-xkr-s",
+    "title": "Jaguar XKR‑S Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 53,
+    "description": "Every Jaguar XKR‑S engine — AJ133 5.0 supercharged V8. X150 generation, real UK costs and reliability. Get free quotes from 15+ vetted Jaguar specialists today.",
+    "descriptionCharCount": 161,
+    "canonical": "https://jaguarengine.uk/xk/xkr-s/",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "XK",
+              "item": "https://jaguarengine.uk/xk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "XKR‑S",
+              "item": "https://jaguarengine.uk/xk/xkr-s/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar XKR‑S Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "X150 XKR‑S (AJ133 508PS, 2011-2014)",
+              "url": "https://jaguarengine.uk/xk/x150/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar XKR‑S Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "AJ133 (508PS)",
+              "url": "https://jaguarengine.uk/engines/aj133/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Jaguar XKR‑S engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned AJ133 5.0 supercharged V8 engine typically costs £6,000–£9,000 supply only. Fitting adds £1,100–£1,800. Main dealer new engines can exceed £30,000. Timing chain replacement alone can cost £1,500–£4,000 if caught early. Use our calculator for a figure specific to your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Jaguar XKR‑S engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The AJ133 5.0 supercharged V8 is rated ★★★☆☆. It's a magnificent engine — 550 PS, 186 mph, and a soundtrack to die for. But it has known weak points: water pump failure (often before 35,000 miles), timing chain tensioner failure (which can destroy the engine), and valley coolant pipe leaks. Regular maintenance — particularly 5,000‑mile oil changes — is essential."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Jaguar XKR‑S?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Water pump failure (the number one issue), timing chain tensioner failure (the most catastrophic), valley coolant pipe leaks under the supercharger, and supercharger snout bearing wear. The timing chain is the most critical — if it slips, pistons meet valves, and the engine is usually scrap."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Jaguar XKR‑S engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on vehicle value. Against a well‑kept XKR‑S worth £25,000–£50,000, a £7,500 recon is a manageable 15–30% of the vehicle's value — worth it for a well‑maintained example. Given the XKR‑S's status as Jaguar's ultimate V8 and its strong retained values, replacement is usually viable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Jaguar XKR‑S engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation. The XKR‑S uses the AJ133 5.0‑litre supercharged V8, engine code 508PS. Tell us your registration date and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the AJ133's timing chain, or does it need a new engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — if caught early. A timing chain and tensioner replacement (£1,500–£4,000) is far cheaper than a catastrophic chain slip (£6,000–£12,000 engine replacement). At the first sign of cold‑start rattle, book an inspection immediately. The tensioner is a known weak point — replacing it with updated parts is strongly recommended."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "JaguarEngine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Jaguar XKR‑S Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "3500",
+            "highPrice": "12000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Jaguar XKR‑S UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Jaguar XKR‑S engines (AJ133), sourced from JaguarEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Jaguar XKR‑S Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://jaguarengine.uk/xk/xkr-s/",
+          "author": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-12",
+          "dateModified": "2026-07-12"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Jaguar XK XKR‑S • 2011–2014 • AJ133 5.0 Supercharged V8",
+    "h1": "Jaguar XK XKR‑S Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Jaguar XKR‑S specialists. Compare reconditioned, rebuilt and used AJ133 5.0 V8 engines for the ultimate XK — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12‑Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 15+ Specialists"
+    ],
+    "priceAnchor": "Jaguar XKR‑S Engines — from £3,500 to £12,000 · Code: AJ133 / 508PS",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "See XKR‑S Engine Options →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK‑Wide Network"
+  },
+  "eraMap": {
+    "title": "The XKR‑S THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "X150",
+        "years": "2011–2014",
+        "engineCode": "AJ133 (508PS — 5.0 Supercharged V8)",
+        "reliability": "★★★☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£6,000–£10,000 [JAG‑QUOTE]",
+        "eraNote": "Jaguar's ultimate V8 — 550 PS, 186 mph; water pump, timing chain tensioners and valley coolant pipes are the main watchpoints."
+      }
+    ],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Jaguar XK XKR‑S Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£3,500–£6,500",
+        "fittedIndie": "£4,400–£7,700",
+        "warranty": "3–6 months",
+        "bestFor": "Budget priority; vehicle under £15,000"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£6,000–£9,000",
+        "fittedIndie": "£7,100–£10,400",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£8,000–£12,000",
+        "fittedIndie": "£9,200–£13,500",
+        "warranty": "12–24 months",
+        "bestFor": "Long‑term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£15,000–£30,000",
+        "fittedIndie": "£17,000–£33,000",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims; dealer quotes can exceed £30,000"
+      }
+    ],
+    "figuresNote": "",
+    "labourEstimate": "Fitting an XKR‑S engine typically takes 14–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). Supercharger removal is required for many repairs.",
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": []
+  },
+  "quotesCta": {
+    "headline": "Weighing Your Options? Compare Specialist Quotes When You're Ready →",
+    "supportingLine": "15+ vetted Jaguar specialists, every XKR‑S variant covered, with a 12‑month warranty as standard.",
+    "button": {
+      "label": "See XKR‑S Engine Options →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Jaguar XK XKR‑S — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Timing chain tensioner failure (AJ133)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£4,000",
+          "whenItMakesSense": "If caught early; regular oil changes prevent recurrence"
+        },
+        {
+          "problem": "Water pump failure (AJ133)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£500–£1,200",
+          "whenItMakesSense": "Preventative — replace at 30,000–40,000 miles"
+        },
+        {
+          "problem": "Valley coolant pipe leak (AJ133)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£500–£1,200",
+          "whenItMakesSense": "Specialist repair; supercharger removal required"
+        },
+        {
+          "problem": "Supercharger snout bearing wear (AJ133)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£600–£1,500",
+          "whenItMakesSense": "Specialist rebuild; catch it before the supercharger fails"
+        },
+        {
+          "problem": "Timing chain slip (AJ133)",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Piston‑valve contact means little is left to repair"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This XKR‑S? Check These First",
+      "buyIf": [
+        "* Full Jaguar service history with documented oil changes (ideally every 5,000 miles)",
+        "* Evidence of water pump replacement — this is the number one preventative item",
+        "* Timing chain tensioners replaced with updated parts",
+        "* Valley coolant pipes replaced as a preventative measure",
+        "* A well‑maintained example — the AJ133 is a glorious engine when cared for"
+      ],
+      "avoidIf": [
+        "* Cold‑start rattle with no timing chain history — this is the single most important check",
+        "* Overheating history with no record of water pump replacement",
+        "* Coolant loss with no diagnosis — valley pipe risk",
+        "* Poor service history — the AJ133 is unforgiving of neglect"
+      ]
+    },
+    "closingVerdict": "The XKR‑S is Jaguar's ultimate V8 — 550 PS, 186 mph, and a soundtrack to die for. The AJ133 5.0 supercharged V8 is a masterpiece of engineering when it's working, but it has known weak points: water pump failure (often before 35,000 miles), timing chain tensioner failure (which can destroy the engine), and valley coolant pipe leaks. Buy on service history and proof of preventative maintenance. If you're replacing, a reconditioned unit with upgraded water pump and timing chain components is essential.",
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Jaguar XKR‑S (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for rattle on startup (timing chain tensioner warning — the most critical check)",
+      "* Service History — Including which engine era (AJ133 5.0 SC is the only XKR‑S engine — verify this before purchase) and oil change intervals (5,000 miles is ideal)",
+      "* Water Pump — Has the water pump been replaced? This is the number one weak point",
+      "* Coolant Level — Is the coolant low with no visible leak? Valley pipe risk",
+      "* Supercharger Health — Any whining noise from the front? Snout bearing wear indicator",
+      "* Overheating History — Any record of overheating? The aluminium block is sensitive to heat",
+      "* Engine Warning Light — Have codes been read? Any unresolved timing, cooling, or fuelling issues?",
+      "* MOT History — Check for emissions‑related failures"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "AJ133 (508PS)",
+        "years": "2011–2014",
+        "power": "550 PS (542 bhp) / 680 Nm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£6,000–£10,000 [JAG‑QUOTE]"
+      }
+    ],
+    "matchNote": "",
+    "technicalSpecs": {
+      "title": "Technical Specs (AJ133 508PS):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "5,000cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "8‑cylinder V (90°)"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "9.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection"
+        },
+        {
+          "label": "* Induction",
+          "value": "Supercharged (Eaton twin‑vortices) with intercooler"
+        },
+        {
+          "label": "* Valvetrain",
+          "value": "DOHC, 32‑valve, with variable valve timing"
+        }
+      ]
+    },
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Water pump failure and timing chain tensioner wear — approximately 55% of AJ133 enquiries [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "38,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£7,500 reconditioned, supply only [JAG‑QUOTE]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "AJ133 / 508PS [JAG‑VERIFIED]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Summer — cooling system issues worsen in hot weather [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (22%), London (20%), South West (15%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Jaguar XKR‑S engine replacement cost in the UK?",
+        "answer": "A reconditioned AJ133 5.0 supercharged V8 engine typically costs £6,000–£9,000 supply only. Fitting adds £1,100–£1,800. Main dealer new engines can exceed £30,000. Timing chain replacement alone can cost £1,500–£4,000 if caught early. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the Jaguar XKR‑S engine reliable?",
+        "answer": "The AJ133 5.0 supercharged V8 is rated ★★★☆☆. It's a magnificent engine — 550 PS, 186 mph, and a soundtrack to die for. But it has known weak points: water pump failure (often before 35,000 miles), timing chain tensioner failure (which can destroy the engine), and valley coolant pipe leaks. Regular maintenance — particularly 5,000‑mile oil changes — is essential."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Jaguar XKR‑S?",
+        "answer": "Water pump failure (the number one issue), timing chain tensioner failure (the most catastrophic), valley coolant pipe leaks under the supercharger, and supercharger snout bearing wear. The timing chain is the most critical — if it slips, pistons meet valves, and the engine is usually scrap."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Jaguar XKR‑S engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. Against a well‑kept XKR‑S worth £25,000–£50,000, a £7,500 recon is a manageable 15–30% of the vehicle's value — worth it for a well‑maintained example. Given the XKR‑S's status as Jaguar's ultimate V8 and its strong retained values, replacement is usually viable for vehicles in good condition."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Jaguar XKR‑S engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. The XKR‑S uses the AJ133 5.0‑litre supercharged V8, engine code 508PS. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the AJ133's timing chain, or does it need a new engine?",
+        "answer": "Yes — if caught early. A timing chain and tensioner replacement (£1,500–£4,000) is far cheaper than a catastrophic chain slip (£6,000–£12,000 engine replacement). At the first sign of cold‑start rattle, book an inspection immediately. The tensioner is a known weak point — replacing it with updated parts is strongly recommended."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "Find the best Jaguar XKR‑S engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and keep Jaguar's ultimate V8 on the road.",
+    "ctaButton": {
+      "label": "Explore Jaguar XKR‑S Engine Quotes →",
+      "href": "#"
+    }
+  }
+}

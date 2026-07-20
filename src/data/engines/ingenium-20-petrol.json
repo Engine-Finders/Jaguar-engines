@@ -1,0 +1,448 @@
+{
+  "meta": {
+    "slug": "ingenium-20-petrol",
+    "title": "Jaguar Ingenium 2.0 Petrol Engine — Specs, Reliability & Replacement Cost",
+    "description": "Solid, efficient turbo four with timing chain tensioner wear as the main risk — rated from 500+ real UK enquiries. Compare quotes from 15+ vetted specialists today.",
+    "canonical": "",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Engines",
+              "item": "https://jaguarengine.uk/engines/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Ingenium 2.0 Petrol",
+              "item": "https://jaguarengine.uk/engines/ingenium-20-petrol/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar models fitted with the Ingenium 2.0 Petrol",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Jaguar XE X760 P200/P250/P300",
+              "url": "https://jaguarengine.uk/models/xe-x760/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Jaguar XF X260 P200/P250/P300",
+              "url": "https://jaguarengine.uk/models/xf-x260/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Jaguar F-Pace X761 P200/P250/P300",
+              "url": "https://jaguarengine.uk/models/f-pace-x761/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Jaguar E-Pace X540 P200/P250/P300",
+              "url": "https://jaguarengine.uk/models/e-pace-x540/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Jaguar F-Type X152 P300",
+              "url": "https://jaguarengine.uk/models/f-type-x152/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Jaguar Ingenium 2.0 petrol engine replacement cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned 204PT typically costs £3,200–£4,500 supply only [JAG-QUOTE], varying by power output (200PS vs 300PS) and mileage on the donor unit. Fitting adds £650–£910 depending on labour rates."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Jaguar Ingenium 2.0 petrol a reliable engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We rate the Ingenium 2.0 petrol at 3.5★ out of 5 with 88% confidence, based on 500 UK enquiries and specialist reports. It is significantly more reliable than its diesel counterpart, with fewer catastrophic failures reported."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the most common Jaguar Ingenium 2.0 petrol failure?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing chain tensioner wear and guide degradation is the most common issue, typically appearing from 50,000–70,000 miles, often presenting as a cold-start rattle that lasts 2–5 seconds."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Jaguar models use the Ingenium 2.0 petrol engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Ingenium 2.0 petrol powers the XE, XF, F-Pace, E-Pace and F-Type from 2017 onward, in P200 (200PS), P250 (250PS) and P300 (300PS) states of tune."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Jaguar Ingenium 2.0 Petrol the same as Land Rover's version?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, the Jaguar 204PT and Land Rover 204PT are mechanically identical Ingenium petrol engines, sharing the same architecture, components and failure patterns. Only the ECU mapping differs by model."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "jaguarengine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "https://jaguarengine.uk/images/logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "Jaguar Ingenium 2.0 Petrol Engine",
+          "brand": {
+            "@type": "Brand",
+            "name": "Jaguar"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "3.5",
+            "bestRating": "5",
+            "ratingCount": "1",
+            "reviewCount": "1"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Jaguar Ingenium 2.0 Petrol Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2700",
+            "highPrice": "6500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Jaguar Ingenium 2.0 Petrol UK Enquiry & Reliability Data 2025",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the Jaguar Ingenium 2.0 Petrol, sourced from jaguarengine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Jaguar Ingenium 2.0 Petrol Engine — Specs, Reliability & Replacement Cost",
+          "url": "https://jaguarengine.uk/engines/ingenium-20-petrol/",
+          "author": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk Specialist Network"
+          },
+          "datePublished": "2025-07-14",
+          "dateModified": "2025-07-14"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Jaguar • Ingenium 2.0 Petrol • Petrol • 2.0L I4 Turbo • 2017–present",
+    "h1": "Jaguar Ingenium 2.0 Petrol Engine — Specs, Reliability & Replacement Cost",
+    "subHeadline": "The Jaguar Ingenium 2.0 petrol is a modern four-cylinder turbo — generally reliable, but timing chain tensioner wear is its defining risk. Backed by 500+ real UK enquiries in 2025 [JAG-VERIFIED].",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "500+ Enquiries"
+      },
+      {
+        "icon": "🔧",
+        "label": "5 Models Fitted"
+      },
+      {
+        "icon": "💯",
+        "label": "70/100 Engine Score"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Compare Ingenium 2.0 Petrol Engine Prices →",
+      "href": "#"
+    }
+  },
+  "atAGlance": {
+    "rows": [
+      {
+        "metric": "Engine Family",
+        "value": "Ingenium 2.0 Petrol (204PT / AJ200P)"
+      },
+      {
+        "metric": "Fuel",
+        "value": "Petrol"
+      },
+      {
+        "metric": "Configuration / Displacement",
+        "value": "2.0L I4 Turbo"
+      },
+      {
+        "metric": "Power Range",
+        "value": "200–300 PS [THIRD-PARTY]"
+      },
+      {
+        "metric": "Years Produced",
+        "value": "2017–present"
+      },
+      {
+        "metric": "Models Fitted (Jaguar only)",
+        "value": "5 models [JAG-VERIFIED]"
+      },
+      {
+        "metric": "Cross-Brand Fitment",
+        "value": "Also fitted to Land Rover"
+      },
+      {
+        "metric": "Overall Engine Score",
+        "value": "70/100"
+      },
+      {
+        "metric": "SECTION 3 — VERDICT & RATING",
+        "value": "Star rating: 3.5★ out of 5"
+      },
+      {
+        "metric": "Confidence: 88% confidence — based on 500 UK enquiries and cross-referenced specialist repair reports.",
+        "value": "Engine Score breakdown:"
+      },
+      {
+        "metric": "Dimension",
+        "value": "Score (of 20)"
+      },
+      {
+        "metric": "How it's determined",
+        "value": "Reliability"
+      },
+      {
+        "metric": "14",
+        "value": "3.5★ × 4 = 14"
+      },
+      {
+        "metric": "Repair Cost",
+        "value": "12"
+      },
+      {
+        "metric": "Reconditioned midpoint ~£3,700 — falls in £3,000–£4,999 bracket",
+        "value": "Repairability"
+      },
+      {
+        "metric": "16",
+        "value": "Most failures are manageable repairs (water pump, phase regulators); timing chain work is heavier but not catastrophic"
+      },
+      {
+        "metric": "Parts Supply",
+        "value": "16"
+      },
+      {
+        "metric": "Good availability across UK specialists; shared with Land Rover increases supply base",
+        "value": "Replacement Economics"
+      },
+      {
+        "metric": "12",
+        "value": "Recon cost ~45–60% of lowest Jaguar host value (XE ~£7,000)"
+      },
+      {
+        "metric": "Total",
+        "value": "70/100"
+      },
+      {
+        "metric": "Sum of five rows above",
+        "value": "One-line verdict: The Ingenium 2.0 petrol is a solid, efficient turbo four — but timing chain tensioner wear and cooling system issues need monitoring — buy with full service history and annual oil changes."
+      },
+      {
+        "metric": "Best for: motorway drivers who change oil annually and avoid repeated short trips.",
+        "value": "Avoid if: no documented oil change history or a cold-start rattle is present."
+      }
+    ]
+  },
+  "verdictRating": {
+    "starRating": "",
+    "confidence": "",
+    "scoreNote": "",
+    "scoreBreakdown": {
+      "columns": [
+        "Dimension",
+        "Score (of 20)"
+      ],
+      "rows": []
+    },
+    "oneLineVerdict": "",
+    "bestFor": "",
+    "avoidIf": ""
+  },
+  "compatibility": {
+    "columns": [
+      "Model",
+      "Generation",
+      "Variant/Badge",
+      "Years"
+    ],
+    "rows": [
+      {
+        "model": "Jaguar XE",
+        "generation": "X760",
+        "variantBadge": "P200 / P250 / P300",
+        "years": "2017–present"
+      },
+      {
+        "model": "Jaguar XF",
+        "generation": "X260",
+        "variantBadge": "P200 / P250 / P300",
+        "years": "2017–present"
+      },
+      {
+        "model": "Jaguar F-Pace",
+        "generation": "X761",
+        "variantBadge": "P200 / P250 / P300",
+        "years": "2017–present"
+      },
+      {
+        "model": "Jaguar E-Pace",
+        "generation": "X540",
+        "variantBadge": "P200 / P250 / P300",
+        "years": "2018–present"
+      },
+      {
+        "model": "Jaguar F-Type",
+        "generation": "X152",
+        "variantBadge": "P300",
+        "years": "2017–present"
+      }
+    ],
+    "crossBrandNote": "Also powers the Land Rover Discovery Sport, Evoque, Velar and Freelander 2 → [Land Rover Ingenium 2.0 Petrol page]."
+  },
+  "costGuide": {
+    "columns": [
+      "Condition",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty"
+    ],
+    "rows": [
+      {
+        "condition": "Used",
+        "supplyOnly": "£2,700–£3,500 [JAG-QUOTE]",
+        "fittedIndie": "£3,250–£4,050",
+        "warranty": "3–6 months"
+      },
+      {
+        "condition": "Reconditioned",
+        "supplyOnly": "£3,200–£4,500 [JAG-QUOTE]",
+        "fittedIndie": "£3,750–£5,050",
+        "warranty": "12 months"
+      },
+      {
+        "condition": "Rebuilt",
+        "supplyOnly": "£4,200–£6,500 [JAG-QUOTE]",
+        "fittedIndie": "£4,750–£7,050",
+        "warranty": "12–24 months"
+      }
+    ],
+    "labourEstimate": "Fitting an Ingenium 2.0 petrol typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE].",
+    "sharedCostNote": "Parts cost is identical across Jaguar and Land Rover applications; labour time varies slightly by engine bay access.",
+    "cta": {
+      "label": "→ Compare Ingenium 2.0 Petrol engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "Cost — \"How much does a Jaguar Ingenium 2.0 petrol engine replacement cost?\"",
+        "answer": "A reconditioned 204PT typically costs £3,200–£4,500 supply only [JAG-QUOTE], varying by power output (200PS vs 300PS) and mileage on the donor unit. Fitting adds £650–£910 depending on labour rates."
+      },
+      {
+        "id": 2,
+        "question": "Reliability — \"Is the Jaguar Ingenium 2.0 petrol a reliable engine?\"",
+        "answer": "We rate the Ingenium 2.0 petrol at 3.5★ out of 5 with 88% confidence, based on 500 UK enquiries and specialist reports. It is significantly more reliable than its diesel counterpart, with fewer catastrophic failures reported."
+      },
+      {
+        "id": 3,
+        "question": "Common failure — \"What is the most common Jaguar Ingenium 2.0 petrol failure?\"",
+        "answer": "Timing chain tensioner wear and guide degradation is the most common issue, typically appearing from 50,000–70,000 miles, often presenting as a cold-start rattle that lasts 2–5 seconds."
+      },
+      {
+        "id": 4,
+        "question": "Fitment — \"Which Jaguar models use the Ingenium 2.0 petrol engine?\"",
+        "answer": "The Ingenium 2.0 petrol powers the XE, XF, F-Pace, E-Pace and F-Type from 2017 onward, in P200 (200PS), P250 (250PS) and P300 (300PS) states of tune."
+      },
+      {
+        "id": 5,
+        "question": "Longevity — \"How long does the Jaguar Ingenium 2.0 petrol engine last?\"",
+        "answer": "With annual oil changes and proper maintenance, the Ingenium 2.0 petrol is capable of 150,000+ miles. The most critical factor is oil change frequency — Jaguar's 2-year intervals are too long; yearly changes are strongly recommended."
+      }
+    ]
+  },
+  "trustCta": {
+    "trustPoints": [
+      "Trusted Suppliers — Every garage and engine rebuilder in our network is vetted, rated and reviewed by real Ingenium owners, as part of the Engine Finders network.",
+      "Compare Companies — We compare real-time prices from UK-wide specialists so you see exactly what you're paying for, with no hidden fees.",
+      "UK Coverage — Our network spans England, Scotland, Wales and Northern Ireland, connecting you with vetted specialists wherever you are."
+    ],
+    "finalCta": "Find the best Jaguar Ingenium 2.0 petrol engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare Jaguar Ingenium 2.0 Petrol Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

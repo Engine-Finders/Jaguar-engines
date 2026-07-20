@@ -1,0 +1,489 @@
+{
+  "meta": {
+    "slug": "f-type-p300",
+    "title": "Jaguar F‑Type P300 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 54,
+    "description": "Every Jaguar F‑Type P300 engine — 204PT 2.0 turbo petrol. X152 generation, real UK costs and reliability. Get free quotes from 15+ vetted Jaguar specialists today.",
+    "descriptionCharCount": 158,
+    "canonical": "https://jaguarengine.uk/f-type/p300/",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "F‑Type",
+              "item": "https://jaguarengine.uk/f-type/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "P300",
+              "item": "https://jaguarengine.uk/f-type/p300/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar F‑Type P300 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "X152 F‑Type P300 (204PT, 2017-2024)",
+              "url": "https://jaguarengine.uk/f-type/x152/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar F‑Type P300 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "204PT (PT204)",
+              "url": "https://jaguarengine.uk/engines/204pt/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Jaguar F‑Type P300 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned 204PT engine typically costs £4,000–£6,500 supply only. Fitting adds £1,000–£1,600. Main dealer new engines can exceed £18,000. Timing chain replacement alone can cost £1,500–£4,000 if caught early. Use our calculator for a figure specific to your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Jaguar F‑Type P300 engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 204PT is rated ★★★☆☆ — more reliable than its diesel Ingenium counterparts, but it has known issues: timing chain stretch (particularly on early examples), VCT solenoid failure, engine mount failures, and water pump issues. Early P300s had some issues that were corrected from 2019 onwards."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Jaguar F‑Type P300?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing chain stretch (cold‑start rattle), VCT solenoid failure causing rough idle and misfires, excessive cold‑start vibrations (engine mounts), water pump failure, and rear crankshaft oil seal leaks. The timing chain is the most critical — if it fails, the engine is usually scrap."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Jaguar F‑Type P300 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on vehicle value. Against a well‑kept F‑Type P300 worth £15,000–£30,000, a £5,000 recon is a manageable 17–33% of the vehicle's value — worth it for a well‑maintained example. Given the F‑Type's strong retained values and sports car appeal, replacement is usually viable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Jaguar F‑Type P300 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation. The F‑Type P300 uses the 204PT (also known as PT204) 2.0‑litre turbocharged petrol Ingenium engine. Tell us your registration date and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the 204PT's timing chain, or does it need a new engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — if caught early. A timing chain and tensioner replacement (£1,500–£4,000) is far cheaper than a catastrophic chain snap (£4,000–£8,500+ engine replacement). At the first sign of cold‑start rattle or rattle at 2000–2500 rpm, book an inspection immediately. The 2019 redesign of timing chain parts is backwardly compatible, so replacement with updated parts is recommended."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "JaguarEngine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Jaguar F‑Type P300 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "3000",
+            "highPrice": "8500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Jaguar F‑Type P300 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Jaguar F‑Type P300 engines (204PT), sourced from JaguarEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Jaguar F‑Type P300 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://jaguarengine.uk/f-type/p300/",
+          "author": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-12",
+          "dateModified": "2026-07-12"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Jaguar F‑Type P300 • 2017–2024 • 204PT 2.0 Turbo",
+    "h1": "Jaguar F‑Type P300 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Jaguar F‑Type P300 specialists. Compare reconditioned, rebuilt and used 204PT engines — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12‑Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 15+ Specialists"
+    ],
+    "priceAnchor": "Jaguar F‑Type P300 Engines — from £3,000 to £8,500 · Code: 204PT",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free P300 Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK‑Wide Network"
+  },
+  "eraMap": {
+    "title": "The F‑TYPE P300 THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "X152",
+        "years": "2017–2024",
+        "engineCode": "204PT (2.0 Ingenium Turbo Petrol)",
+        "reliability": "★★★☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£4,000–£7,500 [JAG‑QUOTE]",
+        "eraNote": "The 2.0‑litre Ingenium petrol in the F‑Type — refined and responsive, but timing chain stretch and VCT solenoid issues are the main watchpoints."
+      }
+    ],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Jaguar F‑Type P300 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£3,000–£5,000",
+        "fittedIndie": "£3,900–£6,200",
+        "warranty": "3–6 months",
+        "bestFor": "Budget priority; vehicle under £12,000"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£4,000–£6,500",
+        "fittedIndie": "£5,000–£7,800",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£5,500–£8,500",
+        "fittedIndie": "£6,500–£9,800",
+        "warranty": "12–24 months",
+        "bestFor": "Long‑term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£12,000–£18,000",
+        "fittedIndie": "£13,500–£20,000",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "",
+    "labourEstimate": "Fitting an F‑Type P300 engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). Timing chain replacement is a labour‑intensive job.",
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": []
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted Jaguar Specialist →",
+    "supportingLine": "15+ vetted Jaguar specialists, every F‑Type P300 variant covered, with a 12‑month warranty as standard.",
+    "button": {
+      "label": "Get My Free P300 Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Jaguar F‑Type P300 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Timing chain stretch (204PT)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£4,000",
+          "whenItMakesSense": "If caught early; shorter oil change intervals prevent recurrence"
+        },
+        {
+          "problem": "VCT solenoid failure (204PT)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£1,200",
+          "whenItMakesSense": "Specialist replacement; catch it before catalytic converter damage"
+        },
+        {
+          "problem": "Engine mount failure (204PT)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£300–£800",
+          "whenItMakesSense": "Straightforward replacement; improves drivability"
+        },
+        {
+          "problem": "Water pump failure (204PT)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£500–£1,200",
+          "whenItMakesSense": "Preventative — replace at 60,000 miles with coolant pipes"
+        },
+        {
+          "problem": "Rear crankshaft oil seal leak (204PT)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£600–£1,500",
+          "whenItMakesSense": "Labour‑intensive but repairable; catch it before low oil levels"
+        },
+        {
+          "problem": "Snapped timing chain",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Piston‑valve contact means little is left to repair"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This F‑Type P300? Check These First",
+      "buyIf": [
+        "* Full Jaguar service history with documented oil changes (ideally more frequent than manufacturer recommendations)",
+        "* 2019+ build (timing chain and VCT issues were improved from 2019)",
+        "* Evidence of timing chain work on early examples",
+        "* Good service history — the P300 is a sports car that demands care"
+      ],
+      "avoidIf": [
+        "* Cold‑start rattle with no timing chain history — this is the single most important check",
+        "* Excessive cold‑start vibrations — potential engine mount issues",
+        "* Rough idle or misfire codes — VCT solenoid failure risk",
+        "* Poor service history — the Ingenium petrol is unforgiving of neglect"
+      ]
+    },
+    "closingVerdict": "The F‑Type P300 is a genuine driver's car — a lightweight, well‑balanced sports car powered by the 2.0‑litre Ingenium petrol. While not as sonorous as the V6 or V8, the P300 offers 296 bhp and 0–60 mph in 5.5 seconds. The 204PT is more reliable than its diesel Ingenium counterparts, but it has known weak points: timing chain stretch, VCT solenoid issues, engine mount failures, and water pump failures. Buy on service history and proof of preventative maintenance — shorter oil change intervals are the key to longevity.",
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Jaguar F‑Type P300 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for rattle or dragging noise (timing chain stretch warning — the most critical check)",
+      "* Service History — Including which engine era (204PT is the only P300 engine — verify this before purchase) and oil change intervals (shorter than manufacturer recommendations is preferable)",
+      "* Cold Start Vibrations — Any excessive vibrations that disappear when warm? Engine mount failure indicator",
+      "* Idle Quality — Any rough idle or misfire? VCT solenoid failure risk",
+      "* Coolant Level — Is the coolant low with no visible leak? Water pump risk",
+      "* Oil Leaks — Any oil spots under the car? Rear crankshaft oil seal leaks are common on higher‑mileage examples",
+      "* Engine Warning Light — Have codes been read? Any unresolved timing, VCT, or cooling issues?",
+      "* MOT History — Check for emissions‑related failures; often point to VCT or catalytic converter problems"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "204PT (PT204)",
+        "years": "2017–2024",
+        "power": "296–300 bhp / 400 Nm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£4,000–£7,500 [JAG‑QUOTE]"
+      }
+    ],
+    "matchNote": "",
+    "technicalSpecs": {
+      "title": "Technical Specs (204PT):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "1,997cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "4‑cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "9.5:1 (some sources indicate 10:1)"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Single twin‑scroll turbo"
+        },
+        {
+          "label": "* Valvetrain",
+          "value": "DOHC with Ti‑VCT"
+        }
+      ]
+    },
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Timing chain stretch and VCT solenoid issues — approximately 45% of 204PT enquiries [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "45,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£5,000 reconditioned, supply only [JAG‑QUOTE]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "204PT [JAG‑VERIFIED]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Winter — cold starts expose timing chain and VCT issues [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "London (22%), South East (20%), South West (15%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Jaguar F‑Type P300 engine replacement cost in the UK?",
+        "answer": "A reconditioned 204PT engine typically costs £4,000–£6,500 supply only. Fitting adds £1,000–£1,600. Main dealer new engines can exceed £18,000. Timing chain replacement alone can cost £1,500–£4,000 if caught early. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the Jaguar F‑Type P300 engine reliable?",
+        "answer": "The 204PT is rated ★★★☆☆ — more reliable than its diesel Ingenium counterparts, but it has known issues: timing chain stretch (particularly on early examples), VCT solenoid failure, engine mount failures, and water pump issues. Early P300s had some issues that were corrected from 2019 onwards."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Jaguar F‑Type P300?",
+        "answer": "Timing chain stretch (cold‑start rattle), VCT solenoid failure causing rough idle and misfires, excessive cold‑start vibrations (engine mounts), water pump failure, and rear crankshaft oil seal leaks. The timing chain is the most critical — if it fails, the engine is usually scrap."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Jaguar F‑Type P300 engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. Against a well‑kept F‑Type P300 worth £15,000–£30,000, a £5,000 recon is a manageable 17–33% of the vehicle's value — worth it for a well‑maintained example. Given the F‑Type's strong retained values and sports car appeal, replacement is usually viable for vehicles in good condition."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Jaguar F‑Type P300 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. The F‑Type P300 uses the 204PT (also known as PT204) 2.0‑litre turbocharged petrol Ingenium engine. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the 204PT's timing chain, or does it need a new engine?",
+        "answer": "Yes — if caught early. A timing chain and tensioner replacement (£1,500–£4,000) is far cheaper than a catastrophic chain snap (£4,000–£8,500+ engine replacement). At the first sign of cold‑start rattle or rattle at 2000–2500 rpm, book an inspection immediately. The 2019 redesign of timing chain parts is backwardly compatible, so replacement with updated parts is recommended."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "Find the best Jaguar F‑Type P300 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare Jaguar F‑Type P300 Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

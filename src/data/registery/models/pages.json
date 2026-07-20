@@ -1,137 +1,52 @@
 [
   {
-    "slug": "2002",
+    "slug": "e-pace",
     "type": "models",
-    "dataFile": "2002"
+    "dataFile": "e-pace"
   },
   {
-    "slug": "bmw-2002",
+    "slug": "f-pace",
     "type": "models",
-    "dataFile": "bmw-2002"
+    "dataFile": "f-pace"
   },
   {
-    "slug": "1-series",
+    "slug": "f-type",
     "type": "models",
-    "dataFile": "1-series"
+    "dataFile": "f-type"
   },
   {
-    "slug": "2-series",
+    "slug": "i-pace-drive-unit-guide",
     "type": "models",
-    "dataFile": "2-series"
+    "dataFile": "i-pace-drive-unit-guide"
   },
   {
-    "slug": "3-series",
+    "slug": "s-type",
     "type": "models",
-    "dataFile": "3-series"
+    "dataFile": "s-type"
   },
   {
-    "slug": "4-series",
+    "slug": "x-type",
     "type": "models",
-    "dataFile": "4-series"
+    "dataFile": "x-type"
   },
   {
-    "slug": "5-series",
+    "slug": "xe",
     "type": "models",
-    "dataFile": "5-series"
+    "dataFile": "xe"
   },
   {
-    "slug": "6-series",
+    "slug": "xf",
     "type": "models",
-    "dataFile": "6-series"
+    "dataFile": "xf"
   },
   {
-    "slug": "7-series",
+    "slug": "xj",
     "type": "models",
-    "dataFile": "7-series"
+    "dataFile": "xj"
   },
   {
-    "slug": "8-series",
+    "slug": "xk",
     "type": "models",
-    "dataFile": "8-series"
-  },
-  {
-    "slug": "i-series-electric-motors",
-    "type": "models",
-    "dataFile": "i-series-electric-motors"
-  },
-  {
-    "slug": "m1",
-    "type": "models",
-    "dataFile": "m1"
-  },
-  {
-    "slug": "m2",
-    "type": "models",
-    "dataFile": "m2"
-  },
-  {
-    "slug": "m3",
-    "type": "models",
-    "dataFile": "m3"
-  },
-  {
-    "slug": "m4",
-    "type": "models",
-    "dataFile": "m4"
-  },
-  {
-    "slug": "m5",
-    "type": "models",
-    "dataFile": "m5"
-  },
-  {
-    "slug": "m6",
-    "type": "models",
-    "dataFile": "m6"
-  },
-  {
-    "slug": "m8",
-    "type": "models",
-    "dataFile": "m8"
-  },
-  {
-    "slug": "x1",
-    "type": "models",
-    "dataFile": "x1"
-  },
-  {
-    "slug": "x2",
-    "type": "models",
-    "dataFile": "x2"
-  },
-  {
-    "slug": "x3",
-    "type": "models",
-    "dataFile": "x3"
-  },
-  {
-    "slug": "x4",
-    "type": "models",
-    "dataFile": "x4"
-  },
-  {
-    "slug": "x5",
-    "type": "models",
-    "dataFile": "x5"
-  },
-  {
-    "slug": "x6",
-    "type": "models",
-    "dataFile": "x6"
-  },
-  {
-    "slug": "x7",
-    "type": "models",
-    "dataFile": "x7"
-  },
-  {
-    "slug": "xm",
-    "type": "models",
-    "dataFile": "xm"
-  },
-  {
-    "slug": "z-series",
-    "type": "models",
-    "dataFile": "z-series"
+    "dataFile": "xk"
   }
 ]

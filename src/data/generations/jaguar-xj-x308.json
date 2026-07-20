@@ -1,0 +1,593 @@
+{
+  "meta": {
+    "slug": "jaguar-xj-x308",
+    "title": "X308 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 48,
+    "description": "Every Jaguar XJ X308 engine — from the 3.2 V8 to the 4.0 and supercharged XJR. Real UK costs, honest reliability data. Compare prices from 15 vetted Jaguar specialists today.",
+    "descriptionCharCount": 154,
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "XJ",
+              "item": "https://jaguarengine.uk/xj/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Jaguar XJ X308",
+              "item": "https://jaguarengine.uk/xj/x308/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar XJ X308 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "AJ26/AJ27 3.2 V8",
+              "url": "https://jaguarengine.uk/engines/aj26/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "AJ26/AJ27 4.0 V8",
+              "url": "https://jaguarengine.uk/engines/aj26/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "AJ26/AJ27 4.0 Supercharged V8 (XJR)",
+              "url": "https://jaguarengine.uk/engines/aj26-supercharged/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar XJ X308 Core Variants",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "3.2 V8",
+              "url": "https://jaguarengine.uk/xj/x308/3-2-v8/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "4.0 V8",
+              "url": "https://jaguarengine.uk/xj/x308/4-0-v8/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "XJR",
+              "url": "https://jaguarengine.uk/xj/x308/xjr/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Daimler Super V8",
+              "url": "https://jaguarengine.uk/xj/x308/daimler-super-v8/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Jaguar XJ X308 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned X308 V8 costs between £4,000 and £9,000 supply-only, depending on the engine — the 3.2 V8 ranges £4,000–£7,000, the 4.0 V8 runs £4,500–£8,000, and the supercharged XJR engine runs £5,000–£9,000. Fitting adds 12–18 hours of labour at £65–£90/hr. Use our calculator for a personalised quote."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Jaguar XJ X308 engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 4.0-litre naturally aspirated V8 (290 bhp) is the most common, best-supported, and most reliable option in the X308 range — if you choose a post-June 2000 example with steel cylinder liners and documented timing-chain work. The 3.2-litre is underpowered for the car's weight, while the XJR adds supercharger complexity."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Jaguar XJ X308?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing chain tensioner failure on higher-mileage units (80,000+ miles), Nikasil bore lining degradation on pre-2000 engines, and ZF 5HP24 transmission issues including pressure control valve problems and cracked A-drums. Upgraded metal tensioners are available as a preventative fix."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Jaguar XJ X308 reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "With preventative maintenance, yes — but the timing chain tensioners are the defining reliability question. Any X308 approaching 80,000 miles with no documented timing-chain work is a risk. Post-2000 engines with steel liners are significantly more durable than early Nikasil-engined cars."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Jaguar XJ X308 engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pre-June 2000 3.2 or 4.0 V8s with Nikasil bore linings are the highest risk — bore wear leads to oil consumption and compression loss. Also avoid any X308 without documented timing-chain replacement approaching 80,000 miles. If you must buy an early car, budget for a compression test and bore scope inspection."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my X308 engine needs replacing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing chain rattle on startup, excessive oil consumption (indicating bore wear), blue smoke from the exhaust, or persistent misfires on any cylinder are the key warning signs. On the ZF transmission, harsh downshifts or transmission fault warnings indicate valve body issues. Use our diagnostic tool for a personalised assessment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Jaguar XJ X308 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Apply the 60% Jaguar scrap threshold — but this is a classic car, so value assessment differs. Against a well-kept £10,000 X308, a £4,500 4.0 V8 recon is 45% of the car's value. Against a tired £4,000 example, the same recon is 112% — we'd recommend walking away. For a cherished XJR or low-mileage example, the emotional value may justify the spend."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long do Jaguar XJ X308 engines last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Post-2000 engines with steel liners can exceed 150,000 miles with proper maintenance, provided the timing chain tensioners are addressed proactively. Pre-2000 Nikasil engines are more variable — some lasted 100,000 miles, others failed much sooner depending on fuel quality and usage patterns."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between the X308 and other XJ generations?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The X308 is the third and final evolution of the XJ40 platform, built from 1997 to 2002. It's the first XJ generation to be powered exclusively by V8 engines. It replaced the X300 (which offered both six-cylinder and V8 power) and was succeeded by the all-aluminium X350 in 2003. The X308 kept the classic round four-headlamp design of the X300."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Jaguar XJ X308 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The engine code is listed on the VIN plate, vehicle documentation, and on a casting on the engine block. All X308 engines are AJ-V8 family — the 3.2-litre is AJ26/AJ27, the 4.0-litre naturally aspirated is AJ26/AJ27, and the supercharged 4.0-litre XJR is AJ26/AJ27 with an Eaton M112 supercharger. Tell us your variant and year, and we'll confirm."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "JaguarEngine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Jaguar XJ X308 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "4000",
+            "highPrice": "9000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "name": "X308 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://jaguarengine.uk/xj/x308/",
+          "author": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-09",
+          "dateModified": "2026-07-09"
+        }
+      ]
+    }
+  },
+  "internalDeclarations": {
+    "checkA": "",
+    "checkB": "",
+    "authorityModelMode": ""
+  },
+  "hero": {
+    "tagPill": "Jaguar XJ X308 • Saloon • 1997–2003",
+    "h1": "Jaguar XJ X308 Engines — The Complete UK Guide",
+    "subHeadline": "Every engine fitted to the X308-generation Jaguar XJ — from the 3.2-litre V8 to the 4.0-litre and the supercharged XJR. Real UK costs, honest reliability data, and the timing-chain question that defines ownership of Jaguar's first V8-powered saloon. Backed by real UK XJ enquiries in 2025 [JAG-VERIFIED].",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "X308 Enquiries (2025) [JAG-VERIFIED]"
+      },
+      {
+        "icon": "🔧",
+        "label": "Saloon"
+      },
+      {
+        "icon": "📖",
+        "label": "3 Engine Codes"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Explore X308 Engines →",
+      "href": "#"
+    },
+    "dataIntegrityNote": ""
+  },
+  "engineDatabase": {
+    "h2": "Jaguar XJ X308 Engine Codes — The Complete Database",
+    "subHeadline": "Every engine fitted to the X308-generation XJ specifically — Jaguar's first V8-powered saloon, offered exclusively with the AJ-V8 engine family from 1997 to 2003.",
+    "columns": [
+      "Engine Code",
+      "Family",
+      "Fuel",
+      "Displacement",
+      "Power",
+      "Years (X308)",
+      "Variants (badges)",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "engines": [
+      {
+        "engineCode": "AJ26/AJ27",
+        "family": "AJ-V8",
+        "fuel": "Petrol",
+        "displacement": "3.2L (3248cc)",
+        "power": "240 bhp (179 kW)",
+        "years": "1997–2003",
+        "variants": "XJ8 3.2, Sovereign 3.2",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£4,000–£7,000"
+      },
+      {
+        "engineCode": "AJ26/AJ27",
+        "family": "AJ-V8",
+        "fuel": "Petrol",
+        "displacement": "4.0L (3996cc)",
+        "power": "290 bhp (216 kW)",
+        "years": "1997–2003",
+        "variants": "XJ8 4.0, Sovereign 4.0, Vanden Plas",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£4,500–£8,000"
+      },
+      {
+        "engineCode": "AJ26/AJ27 (supercharged)",
+        "family": "AJ-V8",
+        "fuel": "Petrol, supercharged",
+        "displacement": "4.0L (3996cc)",
+        "power": "370 bhp (276 kW)",
+        "years": "1997–2003",
+        "variants": "XJR, Daimler Super V8",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£5,000–£9,000"
+      }
+    ],
+    "confidenceScore": {
+      "title": "",
+      "text": ""
+    },
+    "dataCorrections": []
+  },
+  "overview": {
+    "h2": "Jaguar XJ X308 — Overview",
+    "intro": "The Jaguar XJ X308 is a full-size luxury saloon manufactured by Jaguar Cars from July 1997 to December 2002. It was the third and final evolution of the XJ40 platform that had been in production since 1986, and the first XJ-generation to be powered exclusively by Jaguar's new AJ-V8 engine. Offered in 3.2-litre and 4.0-litre naturally aspirated forms, plus a supercharged 4.0-litre in the XJR and Daimler Super V8, the X308 kept the rounded four-headlamp bonnet, low roofline, sloping tail, and wrap-around rear light clusters of its X300 predecessor. It was succeeded by the all-aluminium X350 in 2003.",
+    "keyFacts": "Platform: XJ40 (third and final evolution) • Predecessor: Jaguar XJ (X300) • Successor: Jaguar XJ (X350) • Sibling body styles: None — X308 is sole XJ body style; available in SWB and LWB",
+    "marketIntelligenceLine": "The X308-generation XJ is now a modern classic; enquiries are concentrated on timing-chain replacement and ZF 5HP24 transmission service, with values ranging from £4,000 for entry-level examples to £15,000+ for low-mileage XJRs."
+  },
+  "bestWorstEngines": {
+    "items": []
+  },
+  "ownershipEconomics": {
+    "h2": "Jaguar XJ X308 — Ownership Economics",
+    "columns": [
+      "Engine",
+      "Typical Mileage",
+      "Common Major Failure",
+      "Repair Cost (Specialist)",
+      "Replacement Cost (Recon)",
+      "Ownership Verdict"
+    ],
+    "rows": [
+      {
+        "engine": "3.2 V8 (240 bhp)",
+        "typicalMileage": "80k–120k",
+        "commonMajorFailure": "Timing chain tensioners, Nikasil bore (pre-2000)",
+        "repairCostSpecialist": "£1,000–£2,500",
+        "replacementCostRecon": "£4,000–£7,000",
+        "ownershipVerdict": "Underpowered — best avoided unless exceptional"
+      },
+      {
+        "engine": "4.0 V8 (290 bhp)",
+        "typicalMileage": "80k–150k",
+        "commonMajorFailure": "Timing chain tensioners, Nikasil bore (pre-2000)",
+        "repairCostSpecialist": "£1,000–£2,500",
+        "replacementCostRecon": "£4,500–£8,000",
+        "ownershipVerdict": "Best Choice — the sweet spot in the range"
+      },
+      {
+        "engine": "4.0 V8 Supercharged (370 bhp)",
+        "typicalMileage": "80k–120k",
+        "commonMajorFailure": "Timing chain tensioners, supercharger coupler",
+        "repairCostSpecialist": "£1,500–£3,500",
+        "replacementCostRecon": "£5,000–£9,000",
+        "ownershipVerdict": "Premium Choice — XJR ownership costs more"
+      }
+    ],
+    "economicsRule": {
+      "title": "The X308 rule",
+      "text": "A £4,500–£8,000 4.0 V8 recon against a £4,000–£6,000 early X308 sits at 75–200% of the car's value — on a sub-£6,000 example, that brushes our 60% Jaguar threshold, and we'll honestly tell you to walk away. Against a well-kept £10,000+ example, the same recon drops to a routine 45–80% — a repair decision, not a financial one. Value the car first."
+    },
+    "keyTakeaways": [
+      {
+        "question": "Which X308 Costs Least To Own?",
+        "answer": "4.0 V8 naturally aspirated — best parts availability, simplest architecture."
+      },
+      {
+        "question": "Which X308 Costs Most To Own?",
+        "answer": "XJR supercharged V8 — supercharger service and timing-chain work add cost."
+      },
+      {
+        "question": "Which X308 Is Best Value?",
+        "answer": "4.0 V8 XJ8 — the most common, best-supported, and most characterful engine in the range."
+      }
+    ]
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "AJ-V8 Timing Chain Tensioner Failure",
+        "affectedModels": "X308 3.2 V8, 4.0 V8, and XJR (all variants), particularly higher-mileage units.",
+        "typicalFailureMileage": "80,000–120,000 miles.",
+        "rootCause": "The plastic timing chain tensioners degrade over time, leading to chain rattle, potential chain skip, and in catastrophic cases, valve damage. Secondary timing chain slip is a known failure mode that upsets emissions and can bend valves. Upgraded metal tensioners are available.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£1,500–£3,000",
+            "specialist": "£1,000–£2,500",
+            "work": "Chain, tensioners, guides replacement",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£6,000–£9,000",
+            "specialist": "£4,500–£8,000",
+            "work": "Full reconditioned engine",
+            "note": ""
+          }
+        ],
+        "recommendation": "On any X308 approaching 80,000 miles with no documented timing-chain work, have the tensioners inspected immediately — £1,000–£2,500 preventative repair is dramatically cheaper than the £4,500–£8,000 replacement that follows if ignored.",
+        "cta": {
+          "label": "Compare AJ-V8 engine prices for your X308 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "ZF 5HP24 Transmission Issues",
+        "affectedModels": "X308 3.2 V8 and 4.0 V8 (all naturally aspirated models).",
+        "typicalFailureMileage": "80,000–120,000 miles.",
+        "rootCause": "The ZF 5HP24 transmission has well-documented issues including pressure control valve problems and cracked A-drums. Common symptoms include harsh downshifts, torque converter lockup issues, and transmission fault warnings. The TransGo repair kit can address pressure regulator issues.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£1,500–£2,500",
+            "specialist": "£800–£1,800",
+            "work": "Valve body repair, TransGo kit, fluid service",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£3,500–£5,000",
+            "specialist": "£2,500–£4,000",
+            "work": "Full reconditioned transmission",
+            "note": ""
+          }
+        ],
+        "recommendation": "On any X308, service the ZF 5HP24 transmission every 60,000 miles — an £800–£1,800 preventative service is cheaper than the £2,500–£4,000 replacement that follows if ignored.",
+        "cta": {
+          "label": "Compare 5HP24 transmission prices for your X308 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Nikasil Bore Lining Degradation (Pre-2000 Engines)",
+        "affectedModels": "X308 3.2 V8 and 4.0 V8 manufactured before June 2000.",
+        "typicalFailureMileage": "60,000–100,000 miles.",
+        "rootCause": "Early AJ-V8 engines used Nikasil (nickel-silicon carbide) bore linings which are intolerant to high-sulphur fuel, leading to bore wear, oil consumption, and compression loss. Jaguar switched to steel liners from mid-2000 onwards.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "N/A — no preventative fix",
+            "specialist": "N/A — no preventative fix",
+            "work": "—",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£6,000–£9,000",
+            "specialist": "£4,500–£8,000",
+            "work": "Full reconditioned engine with steel liners",
+            "note": ""
+          }
+        ],
+        "recommendation": "When buying an X308, prioritise post-June 2000 models with steel liners. If you own a pre-2000 example, monitor oil consumption closely and have a compression test performed at the first sign of excessive consumption.",
+        "cta": {
+          "label": "Compare AJ-V8 engine prices for your X308 →",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "replacementCosts": {
+    "h2": "X308 Engine Replacement Costs — By Engine and Condition",
+    "columns": [
+      "Variant",
+      "Engine Code",
+      "Used (Supply)",
+      "Reconditioned (Supply)",
+      "Rebuilt (Supply)",
+      "Labour Hours"
+    ],
+    "rows": [
+      {
+        "variant": "3.2 V8",
+        "engineCode": "AJ26/AJ27",
+        "usedSupply": "£1,500–£3,000",
+        "reconditionedSupply": "£4,000–£7,000",
+        "rebuiltSupply": "£5,500–£8,500",
+        "labourHours": "12–16 hrs"
+      },
+      {
+        "variant": "4.0 V8",
+        "engineCode": "AJ26/AJ27",
+        "usedSupply": "£1,800–£3,500",
+        "reconditionedSupply": "£4,500–£8,000",
+        "rebuiltSupply": "£6,000–£9,500",
+        "labourHours": "12–16 hrs"
+      },
+      {
+        "variant": "4.0 V8 Supercharged (XJR)",
+        "engineCode": "AJ26/AJ27 (supercharged)",
+        "usedSupply": "£2,500–£4,500",
+        "reconditionedSupply": "£5,000–£9,000",
+        "rebuiltSupply": "£7,000–£11,000",
+        "labourHours": "14–18 hrs"
+      }
+    ],
+    "note": ""
+  },
+  "coreVariants": {
+    "dieselVariants": [],
+    "petrolVariants": [
+      "3.2 V8",
+      "4.0 V8",
+      "XJR (supercharged 4.0 V8)",
+      "Daimler Super V8"
+    ],
+    "scopeNote": "All variants listed are X308 XJ only. The X308 was the first XJ generation to be offered exclusively with V8 engines. The Daimler Super V8 was the top-of-the-range model, featuring the supercharged 4.0-litre V8 with enhanced luxury trim. In the United States, the 3.2-litre engine was not offered — all cars received the 4.0-litre V8."
+  },
+  "marketIntelligence": {
+    "mostRequestedEngines": [],
+    "mostRequestedVariants": [],
+    "averageReplacementCost": "",
+    "mostCommonFailures": [],
+    "liveFeed": []
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Jaguar XJ X308 engine replacement cost in the UK?",
+        "answer": "A reconditioned X308 V8 costs between £4,000 and £9,000 supply-only [JAG-QUOTE], depending on the engine — the 3.2 V8 ranges £4,000–£7,000, the 4.0 V8 runs £4,500–£8,000, and the supercharged XJR engine runs £5,000–£9,000. Fitting adds 12–18 hours of labour at £65–£90/hr. Use our calculator for a personalised quote."
+      },
+      {
+        "id": 2,
+        "question": "Which Jaguar XJ X308 engine is the most reliable?",
+        "answer": "The 4.0-litre naturally aspirated V8 (290 bhp) is the most common, best-supported, and most reliable option in the X308 range — if you choose a post-June 2000 example with steel cylinder liners and documented timing-chain work. The 3.2-litre is underpowered for the car's weight, while the XJR adds supercharger complexity."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Jaguar XJ X308?",
+        "answer": "Timing chain tensioner failure on higher-mileage units (80,000+ miles), Nikasil bore lining degradation on pre-2000 engines, and ZF 5HP24 transmission issues including pressure control valve problems and cracked A-drums. Upgraded metal tensioners are available as a preventative fix."
+      },
+      {
+        "id": 4,
+        "question": "Is the Jaguar XJ X308 reliable?",
+        "answer": "With preventative maintenance, yes — but the timing chain tensioners are the defining reliability question. Any X308 approaching 80,000 miles with no documented timing-chain work is a risk. Post-2000 engines with steel liners are significantly more durable than early Nikasil-engined cars."
+      },
+      {
+        "id": 5,
+        "question": "Which Jaguar XJ X308 engine should I avoid?",
+        "answer": "Pre-June 2000 3.2 or 4.0 V8s with Nikasil bore linings are the highest risk — bore wear leads to oil consumption and compression loss. Also avoid any X308 without documented timing-chain replacement approaching 80,000 miles. If you must buy an early car, budget for a compression test and bore scope inspection."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my X308 engine needs replacing?",
+        "answer": "Timing chain rattle on startup, excessive oil consumption (indicating bore wear), blue smoke from the exhaust, or persistent misfires on any cylinder are the key warning signs. On the ZF transmission, harsh downshifts or transmission fault warnings indicate valve body issues. Use our diagnostic tool for a personalised assessment."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing a Jaguar XJ X308 engine, or should I scrap the car?",
+        "answer": "Apply the 60% Jaguar scrap threshold — but this is a classic car, so value assessment differs. Against a well-kept £10,000 X308, a £4,500 4.0 V8 recon is 45% of the car's value. Against a tired £4,000 example, the same recon is 112% — we'd recommend walking away. For a cherished XJR or low-mileage example, the emotional value may justify the spend."
+      },
+      {
+        "id": 8,
+        "question": "How long do Jaguar XJ X308 engines last?",
+        "answer": "Post-2000 engines with steel liners can exceed 150,000 miles with proper maintenance, provided the timing chain tensioners are addressed proactively. Pre-2000 Nikasil engines are more variable — some lasted 100,000 miles, others failed much sooner depending on fuel quality and usage patterns."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the X308 and other XJ generations?",
+        "answer": "The X308 is the third and final evolution of the XJ40 platform, built from 1997 to 2002. It's the first XJ generation to be powered exclusively by V8 engines. It replaced the X300 (which offered both six-cylinder and V8 power) and was succeeded by the all-aluminium X350 in 2003. The X308 kept the classic round four-headlamp design of the X300."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my Jaguar XJ X308 engine code?",
+        "answer": "The engine code is listed on the VIN plate, vehicle documentation, and on a casting on the engine block. All X308 engines are AJ-V8 family — the 3.2-litre is AJ26/AJ27, the 4.0-litre naturally aspirated is AJ26/AJ27, and the supercharged 4.0-litre XJR is AJ26/AJ27 with an Eaton M112 supercharger. Tell us your variant and year, and we'll confirm."
+      }
+    ]
+  },
+  "trustCta": {
+    "h2": "Why UK Jaguar XJ X308 Owners Trust JaguarEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted X308 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real XJ owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare X308 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for X308",
+        "text": "covering every variant from 3.2 V8 to XJR, with supply-only or full supply & fit available nationwide."
+      }
+    ],
+    "finalCta": "Find the best Jaguar XJ X308 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare Jaguar XJ X308 Engine Prices on EnginesMarket →",
+      "href": "#",
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
+    }
+  }
+}

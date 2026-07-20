@@ -1,0 +1,427 @@
+{
+  "meta": {
+    "slug": "jaguar-s-type-x200",
+    "title": "Jaguar S-Type X200 Engines — The Complete UK Guide",
+    "titleCharCount": 50,
+    "description": "",
+    "descriptionCharCount": 0,
+    "jsonLd": {}
+  },
+  "internalDeclarations": {
+    "checkA": "",
+    "checkB": "",
+    "authorityModelMode": ""
+  },
+  "hero": {
+    "tagPill": "Jaguar S-Type X200 • Saloon • 1999–2008",
+    "h1": "Jaguar S-Type X200 Engines — The Complete UK Guide",
+    "subHeadline": "Every engine fitted to the S-Type X200 — from the 3.0-litre AJ-V6 to the 4.0-litre V8, the supercharged 4.2 S-Type R, and the PSA-developed 2.7-litre diesel. Real UK costs, honest failure data, and Jaguar's Ford-era revival. Backed by 70+ real UK X200 enquiries in 2025 [EM-VERIFIED].",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "70+ X200 Enquiries (2025) [EM-VERIFIED]"
+      },
+      {
+        "icon": "🔧",
+        "label": "Saloon"
+      },
+      {
+        "icon": "📖",
+        "label": "8 Engine Codes"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Explore X200 Engines →",
+      "href": "#"
+    },
+    "dataIntegrityNote": ""
+  },
+  "engineDatabase": {
+    "h2": "Jaguar S-Type X200 Engine Codes — The Complete Database",
+    "subHeadline": "Every engine fitted to the S-Type X200 specifically — from the launch 3.0 V6 and 4.0 V8 to the later 2.5 V6, 4.2 V8, supercharged S-Type R and the 2.7 diesel.",
+    "columns": [
+      "Engine Code",
+      "Family",
+      "Fuel",
+      "Displacement",
+      "Power",
+      "Years (X200)",
+      "Variants (badges)",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "engines": [
+      {
+        "engineCode": "AJ-V6, FB",
+        "family": "AJ-V6",
+        "fuel": "Petrol",
+        "displacement": "3.0L (2967 cc)",
+        "power": "238–240 PS (175–177 kW)",
+        "years": "1999–2008",
+        "variants": "3.0 V6",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "70 (model-level) [EM-VERIFIED]",
+        "avgReconCost": "£2,500–£4,500 [JAG-QUOTE]"
+      },
+      {
+        "engineCode": "AJ25, JB (AJ-V6)",
+        "family": "AJ-V6",
+        "fuel": "Petrol",
+        "displacement": "2.5L (2494 cc)",
+        "power": "200 PS (147 kW)",
+        "years": "2002–2007",
+        "variants": "2.5 V6",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,200–£4,000 [JAG-QUOTE]"
+      },
+      {
+        "engineCode": "AJ-V8 (AJ28)",
+        "family": "AJ-V8",
+        "fuel": "Petrol",
+        "displacement": "4.0L (3996 cc)",
+        "power": "276–286 PS (203–210 kW)",
+        "years": "1999–2002",
+        "variants": "4.0 V8",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,500–£6,500 [JAG-QUOTE]"
+      },
+      {
+        "engineCode": "AJ8FT",
+        "family": "AJ-V8",
+        "fuel": "Petrol",
+        "displacement": "4.2L (4196 cc)",
+        "power": "298 PS (219 kW)",
+        "years": "2002–2007",
+        "variants": "4.2 V8",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£4,000–£7,000 [JAG-QUOTE]"
+      },
+      {
+        "engineCode": "AJ8FT",
+        "family": "AJ-V8 (supercharged)",
+        "fuel": "Petrol",
+        "displacement": "4.2L (4196 cc)",
+        "power": "396–405 PS (291–298 kW)",
+        "years": "2002–2008",
+        "variants": "S-Type R",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£5,000–£9,000 [JAG-QUOTE]"
+      },
+      {
+        "engineCode": "AJD (AJTDV6), 7B, 7G",
+        "family": "AJD-V6",
+        "fuel": "Diesel",
+        "displacement": "2.7L (2720 cc)",
+        "power": "207 PS (152 kW)",
+        "years": "2004–2007",
+        "variants": "2.7 D",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,500–£5,800 [JAG-QUOTE]"
+      }
+    ],
+    "confidenceScore": {
+      "title": "",
+      "text": ""
+    },
+    "dataCorrections": []
+  },
+  "overview": {
+    "h2": "Jaguar S-Type X200 — Overview",
+    "intro": "The S-Type (project code X200) marked Jaguar's return to the mid-size executive sector, launched at the 1998 British International Motor Show and entering UK sales in 1999. Built at Castle Bromwich, it was the first all-new saloon introduced after Ford's 1989 takeover. The engine range launched with Jaguar's AJ-V6 (3.0 litres) and AJ-V8 (4.0 litres). A 2002 revision brought a 2.5-litre V6 and replaced the 4.0 with a 4.2-litre V8; the supercharged 4.2 S-Type R followed. A 2004 facelift added a 2.7-litre diesel developed with PSA, and a final 2007 revision brought further updates before the XF replaced it in 2008.",
+    "keyFacts": "Platform: Ford DEW98 (shared with Lincoln LS) • Predecessor: N/A (return to segment) • Successor: Jaguar XF (X250) • Sibling body styles in this generation: N/A — X200 is the sole body style.",
+    "marketIntelligenceLine": "The S-Type X200 generated 70 real UK engine enquiries in 2025 [EM-VERIFIED], concentrated on the 3.0 V6 and 2.7 diesel as these Ford-era Jaguars enter affordable-classic territory."
+  },
+  "bestWorstEngines": {
+    "items": [
+      {
+        "slot": "Best Petrol Overall",
+        "engine": "AJ-V6 3.0L — 3.0 V6",
+        "quote": "The 3.0-litre AJ-V6 is the most common S-Type engine and the one to trust — smooth, reliable and well-supported. It's the engine that defined the X200's driving character.",
+        "whoItsFor": "buyers who want the classic S-Type experience without V8 complexity."
+      },
+      {
+        "slot": "Highest Risk",
+        "engine": "AJD 2.7L V6 Diesel",
+        "quote": "The 2.7 diesel is a PSA-Ford joint venture engine — the same unit used in Land Rover and Peugeot/Citroën products. Known for injector, EGR and turbo issues; it's the most complex engine in the X200 range.",
+        "whoItsFor": "buyers who want diesel economy and are prepared for specialist maintenance."
+      },
+      {
+        "slot": "Most Expensive Failure",
+        "engine": "AJ8FT Supercharged 4.2L — S-Type R",
+        "quote": "Supercharger rebuilds, cooling system failures and timing chain work on the 4.2 SC can run into thousands. This is the most expensive S-Type to maintain — but also the most rewarding.",
+        "whoItsFor": "enthusiasts who want 400bhp and are ready for the bills that come with it."
+      },
+      {
+        "slot": "Best Value",
+        "engine": "AJ-V6 3.0L",
+        "quote": "The most common X200 engine by far, with cheap parts, nationwide specialist coverage, and a well-understood failure profile. A £2,500–£4,500 recon makes financial sense against a £1,500–£5,500 vehicle.",
+        "whoItsFor": "buyers who want the most cost-effective S-Type ownership."
+      },
+      {
+        "slot": "Most Overlooked",
+        "engine": "AJ25 2.5L V6",
+        "quote": "The 2.5 V6 is rarer than the 3.0 but offers similar reliability with slightly better economy. It's often overlooked by buyers chasing the bigger engines — but it's a genuinely solid choice.",
+        "whoItsFor": "buyers who want the S-Type experience with lower running costs."
+      }
+    ]
+  },
+  "ownershipEconomics": {
+    "h2": "Jaguar S-Type X200 — Ownership Economics",
+    "columns": [
+      "Engine",
+      "Typical Mileage",
+      "Common Major Failure",
+      "Repair Cost (Specialist)",
+      "Replacement Cost (Recon)",
+      "Ownership Verdict"
+    ],
+    "rows": [
+      {
+        "engine": "3.0 V6 (AJ-V6)",
+        "typicalMileage": "80k–150k",
+        "commonMajorFailure": "Thermostat housing, coolant leaks",
+        "repairCostSpecialist": "£300–£700",
+        "replacementCostRecon": "£2,500–£4,500",
+        "ownershipVerdict": "Solid Choice — the most common and reliable S-Type"
+      },
+      {
+        "engine": "2.5 V6 (AJ25)",
+        "typicalMileage": "80k–150k",
+        "commonMajorFailure": "Thermostat housing, coolant leaks",
+        "repairCostSpecialist": "£300–£700",
+        "replacementCostRecon": "£2,200–£4,000",
+        "ownershipVerdict": "Solid Choice — rarer but reliable"
+      },
+      {
+        "engine": "4.0 V8 (AJ-V8)",
+        "typicalMileage": "80k–130k",
+        "commonMajorFailure": "Timing chain tensioners, cooling system",
+        "repairCostSpecialist": "£800–£1,800",
+        "replacementCostRecon": "£3,500–£6,500",
+        "ownershipVerdict": "Watch Closely — early V8s need chain attention"
+      },
+      {
+        "engine": "4.2 V8 (AJ8FT)",
+        "typicalMileage": "80k–150k",
+        "commonMajorFailure": "Cooling system, water pump",
+        "repairCostSpecialist": "£500–£1,200",
+        "replacementCostRecon": "£4,000–£7,000",
+        "ownershipVerdict": "Best V8 — more refined and reliable than the 4.0"
+      },
+      {
+        "engine": "4.2 SC (AJ8FT)",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "Supercharger, cooling, timing chain",
+        "repairCostSpecialist": "£1,000–£3,000",
+        "replacementCostRecon": "£5,000–£9,000",
+        "ownershipVerdict": "Most Expensive — fast, but costly to maintain"
+      },
+      {
+        "engine": "2.7 D (AJD)",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "Injectors, EGR, turbo, DPF",
+        "repairCostSpecialist": "£600–£1,800",
+        "replacementCostRecon": "£3,500–£5,800",
+        "ownershipVerdict": "Watch Closely — complex PSA-Ford diesel"
+      }
+    ],
+    "economicsRule": {
+      "title": "The X200 rule",
+      "text": "A £2,500–£4,500 3.0 V6 recon against a £1,500–£5,500 S-Type sits at 45–300% of the car's value. On a sub-£2,500 high-mileage example, that brushes our 60% Jaguar threshold — we'll honestly tell you to walk away. Against a well-kept £4,000+ example, the same recon drops to a routine 63–100% — assess carefully. Value the car first."
+    },
+    "keyTakeaways": []
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "3.0/2.5 V6 Thermostat Housing & Coolant Leaks",
+        "affectedModels": "S-Type 2.5 V6, 3.0 V6 (1999–2008).",
+        "typicalFailureMileage": "80,000–150,000 miles.",
+        "rootCause": "The plastic thermostat housing can crack with age and heat cycling; coolant leaks are the most common V6 failure. The engine is otherwise robust — this is the main weak point.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£500–£900",
+            "specialist": "£300–£700",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£3,500–£5,500",
+            "specialist": "£2,500–£4,500",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "On any high-mileage V6 S-Type, inspect the thermostat housing for cracks and check for coolant loss. A £300–£700 preventative repair is cheaper than the £2,500+ replacement that follows an overheating failure.",
+        "cta": {
+          "label": "Compare 3.0 V6 engine prices for your S-Type →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "4.0 V8 Timing Chain Tensioner Wear",
+        "affectedModels": "S-Type 4.0 V8 (1999–2002).",
+        "typicalFailureMileage": "80,000–130,000 miles.",
+        "rootCause": "Early AJ-V8 engines suffer from timing chain tensioner wear — a well-documented issue on the 4.0-litre unit. Rattle on startup is the classic early warning. The 4.2-litre that replaced it in 2002 is improved.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£1,200–£2,200",
+            "specialist": "£800–£1,600",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£4,500–£7,500",
+            "specialist": "£3,500–£6,500",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "If your 4.0 V8 S-Type has no documented chain history, treat it as a priority inspection — £800–£1,600 now is far cheaper than the £3,500+ replacement that follows a failure. Cold-start rattle is the warning sign to watch for.",
+        "cta": {
+          "label": "Compare 4.0 V8 engine prices for your S-Type →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "2.7 Diesel Injector & EGR Failure",
+        "affectedModels": "S-Type 2.7 D (2004–2007).",
+        "typicalFailureMileage": "60,000–120,000 miles.",
+        "rootCause": "The 2.7-litre PSA-Ford diesel (AJD/AJTDV6) is known for injector failure, EGR clogging and turbocharger issues. It's a complex engine that requires specialist attention — the same unit used in Land Rover and Peugeot/Citroën products.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£800–£1,800",
+            "specialist": "£600–£1,500",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£4,500–£7,000",
+            "specialist": "£3,500–£5,800",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "The 2.7 diesel is the most complex engine in the X200 range — regular servicing and early intervention are essential. At the first sign of rough running or smoke, get it inspected by a specialist who knows this PSA-Ford unit.",
+        "cta": {
+          "label": "Compare 2.7 D engine prices for your S-Type →",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "replacementCosts": {
+    "h2": "X200 Engine Replacement Costs — By Engine and Condition",
+    "columns": [
+      "Variant",
+      "Engine Code",
+      "Used (Supply)",
+      "Reconditioned (Supply)",
+      "Rebuilt (Supply)",
+      "Labour Hours"
+    ],
+    "rows": [
+      {
+        "variant": "2.5 V6",
+        "engineCode": "AJ25 (JB)",
+        "usedSupply": "£800–£1,800",
+        "reconditionedSupply": "£2,200–£4,000",
+        "rebuiltSupply": "£3,500–£5,500",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "3.0 V6",
+        "engineCode": "AJ-V6 (FB)",
+        "usedSupply": "£1,000–£2,200",
+        "reconditionedSupply": "£2,500–£4,500",
+        "rebuiltSupply": "£4,000–£6,000",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "4.0 V8",
+        "engineCode": "AJ-V8 (AJ28)",
+        "usedSupply": "£1,500–£3,000",
+        "reconditionedSupply": "£3,500–£6,500",
+        "rebuiltSupply": "£5,000–£8,000",
+        "labourHours": "12–16 hrs"
+      },
+      {
+        "variant": "4.2 V8",
+        "engineCode": "AJ8FT",
+        "usedSupply": "£1,800–£3,500",
+        "reconditionedSupply": "£4,000–£7,000",
+        "rebuiltSupply": "£5,500–£9,000",
+        "labourHours": "12–16 hrs"
+      },
+      {
+        "variant": "4.2 Supercharged",
+        "engineCode": "AJ8FT (SC)",
+        "usedSupply": "£2,500–£4,500",
+        "reconditionedSupply": "£5,000–£9,000",
+        "rebuiltSupply": "£7,000–£12,000",
+        "labourHours": "14–18 hrs"
+      },
+      {
+        "variant": "2.7 D",
+        "engineCode": "AJD (AJTDV6)",
+        "usedSupply": "£1,500–£2,800",
+        "reconditionedSupply": "£3,500–£5,800",
+        "rebuiltSupply": "£5,000–£7,500",
+        "labourHours": "10–14 hrs"
+      }
+    ],
+    "note": "No Generation variance from the Engine Page baseline — no dedicated Engine Pages exist for these families yet, so baseline figures are drawn from the EM_Proprietary_Data Table A. Labour hours estimated at 10–14 hours for V6 and diesel engines, 12–16 for V8s, and 14–18 for the supercharged V8 due to additional complexity."
+  },
+  "coreVariants": {
+    "dieselVariants": [
+      "2.7 D"
+    ],
+    "petrolVariants": [
+      "2.5 V6",
+      "3.0 V6",
+      "4.0 V8",
+      "4.2 V8",
+      "4.2 V8 Supercharged (S-Type R)"
+    ],
+    "scopeNote": "All variants listed are S-Type X200 only. The S-Type R is the supercharged 4.2-litre V8 performance flagship. The 4.0 V8 was produced 1999–2002; the 4.2 V8 replaced it from 2002. The 2.5 V6 was introduced in 2002. The 2.7 diesel joined in 2004."
+  },
+  "marketIntelligence": {
+    "mostRequestedEngines": [],
+    "mostRequestedVariants": [],
+    "averageReplacementCost": "",
+    "mostCommonFailures": [],
+    "liveFeed": []
+  },
+  "faq": {
+    "items": []
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "",
+    "ctaButton": {
+      "label": "",
+      "href": "#",
+      "note": ""
+    }
+  }
+}

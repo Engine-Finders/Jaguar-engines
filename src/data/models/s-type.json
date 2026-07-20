@@ -1,0 +1,570 @@
+{
+  "meta": {
+    "slug": "s-type",
+    "title": "S-Type Engines — The Complete UK Guide",
+    "titleCharCount": 38,
+    "description": "",
+    "descriptionCharCount": 0,
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": ""
+    },
+    "jsonLd": {}
+  },
+  "hero": {
+    "tagPill": "JAGUAR • S-TYPE • 1999–2008 • 1 Generation • AJ-V6 • AJ-V8",
+    "h1": "S-Type Engines — The Complete UK Guide",
+    "subHeadline": "Every S-Type engine from the 2.5 V6 to the 4.2 V8 and the legendary R — 1999–2008 production, 70+ real UK enquiries, verified costs, and an honest verdict on whether replacement still makes financial sense [JAG-VERIFIED].",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "70+ Enquiries (2025) [JAG-VERIFIED]"
+      },
+      {
+        "icon": "🔧",
+        "label": "1 Generation Covered"
+      },
+      {
+        "icon": "📖",
+        "label": "5 Engine Codes"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Explore S-Type Engines →",
+      "href": "#"
+    }
+  },
+  "ownershipVerdict": {
+    "h2": "S-Type — The Ownership Verdict",
+    "metrics": [
+      {
+        "metric": "Overall Ownership Rating",
+        "ourCall": "★★★☆☆"
+      },
+      {
+        "metric": "Replacement Economics",
+        "ourCall": "🔴 The S-Type rule: check the car's value before the repair quote — a £4,500+ recon engine on a £2,500 car rarely makes sense."
+      },
+      {
+        "metric": "Reliability",
+        "ourCall": "★★★☆☆"
+      },
+      {
+        "metric": "Most Reliable Engine",
+        "ourCall": "AJ126 3.0 V6 — the simplest and most widely supported S-Type engine; fewer weak points than the V8."
+      },
+      {
+        "metric": "Highest-Risk Engine",
+        "ourCall": "AJ133 4.2 Supercharged V8 — timing chain tensioner wear and cooling system complexity; expensive to repair correctly."
+      },
+      {
+        "metric": "Best Used Buy",
+        "ourCall": "Late 2004–2008 3.0 V6 SE with full service history — the sweet spot between performance and running costs."
+      },
+      {
+        "metric": "Average Engine Replacement",
+        "ourCall": "£4,500–£7,500 reconditioned supply-only [JAG-QUOTE]"
+      },
+      {
+        "metric": "Most Common Failure Enquiry",
+        "ourCall": "Cooling system leaks and overheating — AJ126/AJ133 shared weakness [PATTERN DATA]"
+      },
+      {
+        "metric": "Jaguar Ranking",
+        "ourCall": "⚠️ Classic Value Check — production ended; value assessment essential before committing to replacement"
+      }
+    ],
+    "oneLineVerdict": "The S-Type is an ageing, characterful Jaguar that rewards careful buying and regular maintenance — but as a repair proposition, the moment the engine fails, you must evaluate the car's value honestly before agreeing to a quote."
+  },
+  "atAGlance": {
+    "h2": "S-Type at a Glance",
+    "rows": [
+      {
+        "metric": "Generations",
+        "value": "1"
+      },
+      {
+        "metric": "Years Produced",
+        "value": "1999–2008"
+      },
+      {
+        "metric": "Engine Codes Tracked",
+        "value": "5"
+      },
+      {
+        "metric": "Fuel Types",
+        "value": "Petrol only (no diesel S-Type was sold in the UK)"
+      },
+      {
+        "metric": "Most Enquired Engine (2025)",
+        "value": "AJ126 3.0 V6 — 30+ enquiries [JAG-VERIFIED]"
+      },
+      {
+        "metric": "Most Reliable",
+        "value": "AJ126 3.0 V6"
+      },
+      {
+        "metric": "Highest-Risk",
+        "value": "AJ133 4.2 Supercharged V8 (pre-2004 timing chain tensioners)"
+      },
+      {
+        "metric": "Typical Replacement Cost",
+        "value": "£4,500–£7,500 reconditioned [JAG-QUOTE]"
+      },
+      {
+        "metric": "Typical Host Value",
+        "value": "£1,500–£5,500 [THIRD-PARTY]"
+      },
+      {
+        "metric": "Overall Rating",
+        "value": "★★★☆☆"
+      }
+    ]
+  },
+  "generations": {
+    "h2": "S-Type — One Generation, Five Powertrains",
+    "subHeadline": "The S-Type ran from 1999–2008 across two distinct engineering eras — the early Jaguar-developed V6/V8 and the later Ford-era refinements.",
+    "cards": [
+      {
+        "title": "X200 Generation",
+        "badge": "",
+        "meta": "1999–2008 • 2.5 V6 (AJ-V6), 3.0 V6 (AJ126), 4.0 V8, 4.2 V8 (AJ133), 4.2 Supercharged V8 (AJ133-SC)",
+        "rating": "★★★☆☆ (2003+ facelift earns ★★★★☆)",
+        "verdict": "The S-Type is a single-generation car with two distinct halves: pre-2002 cars have the earlier Nikasil-lined V8s that can suffer bore wear; post-2004 cars gain the revised 4.2 V8 with better reliability. Buy the facelift, avoid the very earliest V8s unless the engine has been replaced.",
+        "cta": {
+          "label": "Explore X200 Generation →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "Facelift Matters — The S-Type's Real Dividing Line",
+        "badge": "",
+        "meta": "The S-Type's engineering story splits cleanly at the 2002 facelift (2004 model year). Pre-2002: the 4.0 V8 with Nikasil liners (a known bore-wear risk in UK cars on high-sulphur fuel). Post-2004: the revised 4.2 V8 (AJ133 family) with steel liners and better timing chain tensioner design — the engine Jaguar should have built from the start.",
+        "rating": "",
+        "verdict": "",
+        "cta": {
+          "label": "",
+          "href": "#"
+        }
+      }
+    ],
+    "rangeTable": {
+      "title": "",
+      "columns": [],
+      "rows": []
+    },
+    "comparisonLink": {
+      "label": "Read the full comparison: Pre-2002 vs Post-2004 S-Type →",
+      "href": "#"
+    }
+  },
+  "engineDatabase": {
+    "h2": "S-Type Engine Codes — The Complete Database",
+    "subHeadline": "Every engine fitted to the 1999–2008 Jaguar S-Type, verified against Jaguar factory specifications.",
+    "columns": [
+      "Engine Code",
+      "Family",
+      "Fuel",
+      "Disp.",
+      "Power",
+      "Years",
+      "Gen.",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "engines": [
+      {
+        "engineCode": "AJ-V6 2.5",
+        "family": "AJ-V6",
+        "fuel": "Petrol",
+        "displacement": "2.5L",
+        "power": "197 bhp",
+        "years": "1999–2002",
+        "model": "X200",
+        "reliability": "★★★☆☆",
+        "enquiries": "5+ [PATTERN DATA]",
+        "avgRebuildCost": "£4,200–£6,500 [JAG-QUOTE]"
+      },
+      {
+        "engineCode": "AJ126 3.0 V6",
+        "family": "AJ126",
+        "fuel": "Petrol",
+        "displacement": "3.0L",
+        "power": "240 bhp",
+        "years": "1999–2008",
+        "model": "X200",
+        "reliability": "★★★★☆",
+        "enquiries": "30+ [JAG-VERIFIED]",
+        "avgRebuildCost": "£4,500–£7,500 [JAG-QUOTE]"
+      },
+      {
+        "engineCode": "AJ-V8 4.0",
+        "family": "AJ-V8",
+        "fuel": "Petrol",
+        "displacement": "4.0L",
+        "power": "290 bhp",
+        "years": "1999–2002",
+        "model": "X200",
+        "reliability": "★★☆☆☆",
+        "enquiries": "8+ [PATTERN DATA]",
+        "avgRebuildCost": "£4,500–£7,000 [JAG-QUOTE]"
+      },
+      {
+        "engineCode": "AJ133 4.2 V8",
+        "family": "AJ133",
+        "fuel": "Petrol",
+        "displacement": "4.2L",
+        "power": "300 bhp",
+        "years": "2002–2008",
+        "model": "X200",
+        "reliability": "★★★☆☆ (pre-2004) / ★★★★☆ (2004+)",
+        "enquiries": "15+ [PATTERN DATA]",
+        "avgRebuildCost": "£5,500–£9,000 [JAG-QUOTE]"
+      },
+      {
+        "engineCode": "AJ133 4.2 SC",
+        "family": "AJ133",
+        "fuel": "Petrol",
+        "displacement": "4.2L",
+        "power": "395 bhp",
+        "years": "2002–2008",
+        "model": "X200 (R)",
+        "reliability": "★★★☆☆ (pre-2004) / ★★★★☆ (2004+)",
+        "enquiries": "12+ [PATTERN DATA]",
+        "avgRebuildCost": "£6,000–£9,500 [JAG-QUOTE]"
+      }
+    ],
+    "confidenceScore": {
+      "title": "",
+      "text": ""
+    },
+    "dataCorrections": []
+  },
+  "commonProblems": {
+    "h2": "Common S-Type Engine Problems",
+    "subHeadline": "The six issues S-Type owners report most frequently — some engine-specific, some shared with the wider Jaguar family.",
+    "columns": [
+      "#",
+      "Problem",
+      "Description",
+      "Severity",
+      "Link"
+    ],
+    "problems": [
+      {
+        "id": 1,
+        "issue": "AJ-V8 4.0 Nikasil Bore Wear",
+        "description": "Early 4.0 V8 engines (1999–2002) used Nikasil cylinder liners that could be damaged by high-sulphur UK fuel — causing loss of compression and misfires. Most affected cars are now off the road or have had replacement engines.",
+        "severity": {
+          "icon": "🟠",
+          "label": "Immediate",
+          "type": "immediate"
+        },
+        "link": {
+          "label": "Read more →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "issue": "AJ133 Timing Chain Tensioner Wear (pre-2004)",
+        "description": "The earlier 4.2 V8's timing chain tensioners — same issue as the XK8/XKR — can fail without warning. Jaguar revised the design from 2004 onward. Pre-2004 cars warrant immediate inspection.",
+        "severity": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "type": "monitor"
+        },
+        "link": {
+          "label": "Read more →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "issue": "AJ126 / AJ133 Cooling System Crossover Pipe Failure",
+        "description": "Plastic coolant crossover pipes become brittle with age and crack — common across both V6 and V8 S-Types. Overheating can cause head-gasket failure if ignored.",
+        "severity": {
+          "icon": "🟠",
+          "label": "Immediate",
+          "type": "immediate"
+        },
+        "link": {
+          "label": "Read more →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 4,
+        "issue": "S-Type Air Suspension Compressor Failure",
+        "description": "The S-Type's air suspension (especially the rear self-levelling system on V8 models) can fail due to compressor burnout or air spring leaks. A common non-engine failure pattern.",
+        "severity": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "type": "monitor"
+        },
+        "link": {
+          "label": "Read more →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 5,
+        "issue": "V6 Water Pump Failure",
+        "description": "The 2.5 and 3.0 V6 water pump can fail with age — a well-documented weakness on the AJ-V6 family. Replacement before failure is recommended at 60k–80k miles.",
+        "severity": {
+          "icon": "🟢",
+          "label": "Low",
+          "type": "low"
+        },
+        "link": {
+          "label": "Read more →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 6,
+        "issue": "Infotainment & Electrical Gremlins",
+        "description": "The S-Type's era of electronics — instrument cluster failures, central locking module issues and battery drain — typical of early-2000s Jaguars and the source of the brand's older \"electrical\" reputation.",
+        "severity": {
+          "icon": "🟢",
+          "label": "Low",
+          "type": "low"
+        },
+        "link": {
+          "label": "Read more →",
+          "href": "#"
+        }
+      }
+    ],
+    "urgencyKey": [
+      {
+        "icon": "🔴",
+        "label": "Catastrophic",
+        "text": "stop driving, specialist inspection immediately"
+      },
+      {
+        "icon": "🟠",
+        "label": "Immediate",
+        "text": "book inspection now"
+      },
+      {
+        "icon": "🟡",
+        "label": "Monitor",
+        "text": "book inspection soon"
+      },
+      {
+        "icon": "🟢",
+        "label": "Low",
+        "text": "plan at next service"
+      }
+    ]
+  },
+  "marketIntelligence": {
+    "h2": "S-Type Market Intelligence — What 70+ UK Owners Told Us in 2025",
+    "signals": [
+      {
+        "signal": "S-Type Enquiries (X200)",
+        "data": "70 [JAG-VERIFIED]",
+        "demandTrend": "⬇ Falling"
+      },
+      {
+        "signal": "Most Enquired Engine (V6)",
+        "data": "30+ enquiries [JAG-VERIFIED]",
+        "demandTrend": "➡ Stable"
+      },
+      {
+        "signal": "Most Enquired Engine (V8)",
+        "data": "15+ enquiries [PATTERN DATA]",
+        "demandTrend": "⬇ Falling"
+      },
+      {
+        "signal": "Average Recon Cost (V6)",
+        "data": "£4,500–£7,500 [JAG-QUOTE]",
+        "demandTrend": "➡ Stable"
+      }
+    ],
+    "insights": [
+      "\"Interesting insight\": The S-Type's 70 enquiries in 2025 place it well below modern Jaguars like the XF (454+ combined enquiries) and XE (260) — a clear sign that the car has moved into classic/enthusiast ownership rather than daily-driver territory, where engine replacements are less frequent because owners either maintain them carefully or scrap them when major failure occurs.",
+      "The S-Type's enquiry volume is actually higher than the older XJ X300 (22) and XJ X308 (32), but significantly lower than the more modern XJ X351 (151) — the car sits in a \"classic-but-not-yet-collectible\" sweet spot where ownership costs still matter to buyers.",
+      "The 3.0 V6 is the most-enquired engine, reflecting that it was the UK's best-selling S-Type powertrain. The V8s collectively generate a similar volume of enquiries, but the V6's popularity makes it the most-supported engine in the specialist network."
+    ],
+    "liveEnquiryFeedNote": ""
+  },
+  "editorialPullQuote": {
+    "title": "The One Thing We'd Tell Every S-Type Buyer",
+    "quote": "If you're buying an S-Type, buy a 2004-onward 3.0 V6 with full service history, and budget for a cooling system refresh within the first year. If you already own one and the engine fails, get a realistic valuation before you agree to a rebuild — a £5,000 quote on a £2,500 car is a decision you need to make with your eyes open. End of Sections 1-7 (S-Type). Ready for Sections 8-14. JAGUAR S-TYPE — SECTIONS 8-14"
+  },
+  "replacementCosts": {
+    "h2": "S-Type Engine Replacement Costs — By Generation",
+    "subHeadline": "Real UK pricing for every S-Type engine — used, reconditioned, and rebuilt supply-only, with independent labour guidance.",
+    "tables": [
+      {
+        "title": "",
+        "columns": [
+          "Variant",
+          "Engine Code",
+          "Used (Supply)",
+          "Reconditioned (Supply)",
+          "Rebuilt (Supply)",
+          "Labour Hours"
+        ],
+        "rows": []
+      }
+    ],
+    "figuresNote": "Labour estimate: Fitting an S-Type engine typically takes 10–18 hours at £65–£95/hr (independent specialist) or £110–£160/hr (London/SE dealer) [JAG-QUOTE]. The S-Type rule — value check before you commit: An S-Type X200 typically sits at £1,500–£5,500 today [THIRD-PARTY]. A £4,500–£7,500 reconditioned AJ126 on a £2,500 car represents 60–100% of the car's value — putting it at or above our 60% threshold for Jaguar. If you're looking at a V8,",
+    "labourEstimate": "Fitting an S-Type engine typically takes 10–18 hours at £65–£95/hr (independent specialist) or £110–£160/hr (London/SE dealer) [JAG-QUOTE]. The S-Type rule — value check before you commit: An S-Type X200 typically sits at £1,500–£5,500 today [THIRD-PARTY]. A £4,500–£7,500 reconditioned AJ126 on a £2,500 car represents 60–100% of the car's value — putting it at or above our 60% threshold for Jaguar. If you're looking at a V8,",
+    "economicsBox": {
+      "title": "",
+      "text": ""
+    }
+  },
+  "engineEvolution": {
+    "h2": "How the S-Type Engine Range Evolved — 1999 to 2008",
+    "columns": [
+      "Era",
+      "Years",
+      "Key Engines",
+      "Why Jaguar Changed",
+      "Worth Knowing"
+    ],
+    "eras": [
+      {
+        "era": "Launch Era — Ford-Jaguar Collaboration",
+        "years": "1999–2002",
+        "keyEngines": "AJ-V6 2.5, AJ126 3.0 V6, AJ-V8 4.0",
+        "whyBmwChanged": "S-Type launched as Jaguar's entry-level saloon under Ford ownership. The V8 was the flagship engine, but the V6s were the volume sellers.",
+        "worthKnowing": "The 4.0 V8 used Nikasil cylinder liners — a material that proved vulnerable to high-sulphur UK fuel. Many 4.0 S-Types were replaced under warranty; survivors are rare."
+      },
+      {
+        "era": "Mid-Cycle Refresh — Engineering Improvements",
+        "years": "2002–2004",
+        "keyEngines": "AJ126 3.0 V6, AJ133 4.2 V8, AJ133 4.2 SC",
+        "whyBmwChanged": "Jaguar phased out the 4.0 V8 and its problematic Nikasil liners, replacing it with the 4.2 AJ133 — a steel-lined engine with revised timing chain tensioners and improved cooling.",
+        "worthKnowing": "The pre-2004 4.2 V8 still carried the older chain tensioner design; 2004-on cars got the revised, more durable tensioners — the key buying threshold."
+      },
+      {
+        "era": "Facelift Era — R Performance Flagship",
+        "years": "2004–2008",
+        "keyEngines": "AJ126 3.0 V6, AJ133 4.2 V8, AJ133 4.2 SC",
+        "whyBmwChanged": "The S-Type R launched in 2002 with the 4.2 supercharged V8, but the 2004 facelift refined the engine bay and cooling systems across the range.",
+        "worthKnowing": "The supercharged 4.2 shares the same core reliability profile as the naturally aspirated 4.2 — but the supercharger itself adds a known \"coupler rattle\" weakness and more complex servicing."
+      }
+    ]
+  },
+  "whoShouldBuy": {
+    "h2": "Who Should Buy an S-Type?",
+    "columns": [
+      "Buyer Profile",
+      "Rating",
+      "Our Verdict"
+    ],
+    "profiles": [
+      {
+        "buyerProfile": "Family Buyer",
+        "rating": "★★☆☆☆",
+        "verdict": "The S-Type's boot is generous and rear-seat space is adequate, but rear headroom is tight for taller adults and the running costs (especially V8 fuel economy) make it an expensive family car. A diesel XF or Mondeo is a better family buy."
+      },
+      {
+        "buyerProfile": "Daily Commuter",
+        "rating": "★★★☆☆",
+        "verdict": "A 3.0 V6 with full service history is a comfortable, refined commuter — but 22–26 mpg and rising specialist costs mean it's not a budget-friendly daily. Buy one as a second car, not your only car."
+      },
+      {
+        "buyerProfile": "Budget Owner",
+        "rating": "★★☆☆☆",
+        "verdict": "The S-Type is cheap to buy (£1,500–£3,000 buys a usable example) but expensive to keep. A £4,500 engine replacement on a £2,000 car is a financial mistake. If your budget is tight, buy a well-maintained V6 and accept that one major failure means scrapping it."
+      },
+      {
+        "buyerProfile": "Performance Buyer",
+        "rating": "★★★★☆",
+        "verdict": "The S-Type R's 4.2 supercharged V8 offers genuine performance for under £8,000 — but you're buying a future classic, not a daily driver. Budget for cooling system refresh, supercharger coupler replacement, and timing chain inspection."
+      },
+      {
+        "buyerProfile": "First-Time Buyer",
+        "rating": "★★☆☆☆",
+        "verdict": "If you're buying your first Jaguar, the X-Type is cheaper to run and the XF X260 is safer to own. The S-Type is a car for someone who already knows they want a classic-era Jaguar — not a first step into the brand."
+      }
+    ]
+  },
+  "calculatorCta": {
+    "h2": "Can I Repair My S-Type Engine — or Should I Replace It?",
+    "intro": "Sub-headline: The S-Type's economics are unique — a 3.0 V6 and a 4.2 Supercharged V8 sit at opposite ends of the repair-vs-replace spectrum. Let's work out which one you're dealing with.",
+    "paths": [
+      {
+        "label": "Path 1 — Know your engine? Launch the Jaguar calculator with S-Type pre-selected",
+        "href": "/fault-diagnostic-calculator?model=s-type"
+      },
+      {
+        "label": "Path 2 — Not sure which engine you have? We'll identify it first",
+        "href": "/fault-diagnostic-calculator?model=s-type"
+      }
+    ]
+  },
+  "trustBlock": {
+    "h2": "Why S-Type Owners Trust JaguarEngine.uk",
+    "signals": [
+      {
+        "icon": "📊",
+        "title": "Built on Real Data",
+        "text": "Every reliability rating and cost range on this page comes from genuine UK enquiry data and Jaguar specialist quotes — 70+ S-Type enquiries [JAG-VERIFIED] in 2025 alone, cross-referenced against real Jaguar specialist cost sheets."
+      },
+      {
+        "icon": "💚",
+        "title": "We Tell You When Not to Repair",
+        "text": "When a £4,500–£7,500 reconditioned engine exceeds 60% of your S-Type's market value, we say so — and we tell you to get a scrap valuation alongside your repair quote. That's the difference between a knowledge base and a sales page."
+      },
+      {
+        "icon": "🔧",
+        "title": "Vetted Jaguar Specialists",
+        "text": "Our network includes 15+ vetted Jaguar specialists who work on S-Types daily — not generalists who happen to take on Jaguar jobs. They know the Nikasil bore wear, the timing chain tensioner revisions, and the cooling system weaknesses specific to this car."
+      },
+      {
+        "icon": "🏆",
+        "title": "Part of Engine Finders",
+        "text": "JaguarEngine.uk is part of the Engine Finders family, the UK's leading engine replacement marketplace — giving you the research depth of an independent authority with a vetted route to action when you need one."
+      }
+    ]
+  },
+  "faq": {
+    "h2": "S-Type Frequently Asked Questions",
+    "items": []
+  },
+  "closingActionCards": {
+    "h2": "Ready to Make a Decision?",
+    "cards": [
+      {
+        "icon": "🔍",
+        "title": "Explore S-Type Generations",
+        "text": "Find your generation, compare engines, and see which S-Type suits your ownership horizon.",
+        "href": "/jaguar/s-type/"
+      },
+      {
+        "icon": "🩺",
+        "title": "Diagnose My S-Type",
+        "text": "Not sure if it's a timing chain, a coolant leak, or something else? Answer a few questions and get a personalised diagnosis.",
+        "href": "/fault-diagnostic-calculator?model=s-type"
+      },
+      {
+        "icon": "🤝",
+        "title": "Compare UK Specialists",
+        "text": "Get matched with 15+ vetted Jaguar specialists who know the S-Type's V6 and V8 engines inside out.",
+        "href": "/quotes/?model=s-type"
+      }
+    ],
+    "footerNote": ""
+  }
+}

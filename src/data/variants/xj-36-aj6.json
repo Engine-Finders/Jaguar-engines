@@ -1,0 +1,486 @@
+{
+  "meta": {
+    "slug": "xj-36-aj6",
+    "title": "XJ 3.6 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 57,
+    "description": "Jaguar XJ 3.6 – AJ6 3.6-litre inline-six. Real UK costs, head gasket and timing chain facts, and specialist quotes. Get free prices from 15+ vetted specialists today.",
+    "descriptionCharCount": 158,
+    "canonical": "https://jaguarengine.uk/xj/36-aj6/",
+    "openGraph": {
+      "title": "XJ 3.6 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Jaguar XJ 3.6 – AJ6 3.6-litre inline-six. Real UK costs, head gasket and timing chain facts, and specialist quotes. Get free prices from 15+ vetted specialists today.",
+      "type": "website",
+      "url": "https://jaguarengine.uk/xj/36-aj6/",
+      "image": "https://jaguarengine.uk/images/jaguar/hero/xj-36-aj6.jpg",
+      "siteName": "JaguarEngine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "XJ 3.6 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Jaguar XJ 3.6 – AJ6 3.6-litre inline-six. Real UK costs, head gasket and timing chain facts, and specialist quotes.",
+      "image": "https://jaguarengine.uk/images/jaguar/hero/xj-36-aj6.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "XJ",
+              "item": "https://jaguarengine.uk/xj/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "3.6",
+              "item": "https://jaguarengine.uk/xj/36-aj6/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar XJ 3.6 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "XJ40 3.6 (AJ6, 1986-1989)",
+              "url": "https://jaguarengine.uk/xj/xj40/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar XJ 3.6 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "AJ6 (3.6)",
+              "url": "https://jaguarengine.uk/engines/aj6/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Jaguar XJ 3.6 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned AJ6 engine typically costs £1,200–£2,800 supply only, with used units available from £500–£1,200. Fitting adds £1,200–£1,800 depending on the workshop. The AJ6 is 'not the most expensive of Jaguar engines to maintain, or even replace'. Use our calculator for a figure specific to your XJ."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Jaguar XJ 3.6 engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the AJ6 is widely regarded as 'almost bullet proof' and 'one of the best and most reliable engines ever, let alone Jaguars'. It's a robust, all-aluminium DOHC inline-six that is simple to work with. The main concerns are corrosion around water passages (use the correct antifreeze) and timing chain tensioner wear."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Jaguar XJ 3.6?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Corrosion around water passages leading to head gasket failure (use 50/50 ethylene glycol and change coolant every two years), timing chain tensioner wear (rattle on cold start — replace with revised unit), light throttle driveability issues (CPS or fuel system), and oil leaks from the tensioner housing. The AJ6 is fundamentally robust."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Jaguar XJ 3.6 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "XJ40 values range from £2,000–£10,000+ depending on condition. A £1,200–£2,800 reconditioned engine is 20–50% of the vehicle's value — apply the Jaguar 60% scrap threshold. If the car is a cherished example with good bodywork (rust is the main enemy), replacement is often worthwhile."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Jaguar XJ 3.6 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The engine code is AJ6 — it's the only 3.6-litre DOHC inline-six used in the XJ40. You can find it on the VIN plate, in the vehicle documentation, or on a label on the engine itself. Production ran from 1986 to 1989, when it was replaced by the 4.0-litre."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the AJ6 timing chain tensioner, or does the engine need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The timing chain tensioner can be replaced — it's a wear item. Replacement costs £100–£400 and is a relatively straightforward job. If the chain fails and jumps timing, the engine is typically destroyed. A preventative tensioner replacement is far cheaper than a full engine replacement (£1,200+). At the first sign of rattling from the front of the engine on cold start, replace the tensioner with the revised unit."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "JaguarEngine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Jaguar XJ 3.6 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "500",
+            "highPrice": "3500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Jaguar XJ 3.6 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Jaguar XJ 3.6 engines (AJ6), sourced from JaguarEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "XJ 3.6 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://jaguarengine.uk/xj/36-aj6/",
+          "author": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-12",
+          "dateModified": "2026-07-12"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Jaguar XJ 3.6 • 1986–1989 • 3.6-litre AJ6 Inline-Six",
+    "h1": "Jaguar XJ 3.6 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "The XJ 3.6 is powered by Jaguar's first all-new engine in decades — the AJ6 3.6-litre DOHC inline-six. It's one of the most reliable and robust engines Jaguar ever built, but corrosion around water passages and timing chain tensioner wear are well-documented with age. Get quotes from UK specialists for reconditioned, rebuilt and used units today.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 15+ Specialists"
+    ],
+    "priceAnchor": "Jaguar XJ 3.6 Engines — from £500 to £3,500 · Code: AJ6",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "See Jaguar XJ 3.6 Engine Options →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The 3.6 THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Jaguar XJ 3.6 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£500–£1,200",
+        "fittedIndie": "£1,200–£2,200",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; project cars"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£1,200–£2,800",
+        "fittedIndie": "£2,500–£4,000",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£2,200–£3,500",
+        "fittedIndie": "£3,500–£5,000",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "N/A — no longer available",
+        "fittedIndie": "N/A",
+        "warranty": "—",
+        "bestFor": "N/A — specialist rebuild only"
+      }
+    ],
+    "figuresNote": "Figures above reflect the current XJ 3.6 market. The AJ6 is \"not the most expensive of Jaguar engines to maintain, or even replace\". Used engines are relatively affordable, with reconditioned examples typically fetching £1,200–£2,800. Specialist rebuilds are available for long-term ownership.",
+    "labourEstimate": "Fitting an XJ 3.6 engine typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). The inline-six is relatively straightforward to work on compared to Jaguar's V12 or later V8s.",
+    "cta": {
+      "label": "→ Compare XJ 3.6 engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Corrosion Around Water Passages and Head Gasket Failure",
+        "symptoms": "Coolant loss, overheating, white smoke from exhaust, \"mayo\" under the oil filler cap, pressurised cooling system, engine misfire",
+        "typicalMileage": "80,000–150,000 miles",
+        "repairCost": "£800–£1,800 (head gasket replacement)",
+        "replacementCost": "£1,200–£2,800 (if overheating causes bottom-end damage)",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "if the head gasket fails on an all-aluminium AJ6, stop driving immediately"
+        },
+        "recommendation": "The AJ6 is an all-aluminium engine, and corrosion around the water passages can cause head gasket failure. The head gasket leak from the exhaust cam oil feed gallery has been \"a plague since the AJ6 engine introduction\". Jaguar issued several superseded head gaskets for the AJ6/AJ16 engines. Use the correct 50/50 ethylene glycol antifreeze and change the coolant every two years. If you notice coolant loss or overheating, have the head gasket inspected immediately.",
+        "failureLink": {
+          "label": "Read the full head gasket failure guide",
+          "href": "/failures/head-gasket-failure/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Timing Chain Tensioner Wear",
+        "symptoms": "Rattling or screeching noise from the front/top of the engine on cold start, metallic ticking, oil leaks from the tensioner housing",
+        "typicalMileage": "80,000–150,000 miles",
+        "repairCost": "£100–£400 (upper timing chain tensioner replacement)",
+        "replacementCost": "£1,200–£2,800 (if chain jumps and causes valve interference)",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently"
+        },
+        "recommendation": "The upper timing chain tensioner is \"a common issue on older AJ16 and AJ6 engines\". As the tensioner wears, it loses its ability to hold oil pressure, especially when the oil is hot. A non-return valve in the tensioner is designed to trap pressurised engine oil to maintain tension. If you hear a rattle or screech from the front of the engine on cold start, replace the upper timing chain tensioner with the revised version. It's a relatively inexpensive job (£100–£400) that can prevent catastrophic engine failure.",
+        "failureLink": {
+          "label": "Read the full timing chain failure guide",
+          "href": "/failures/timing-chain-failure/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Light Throttle Driveability and Idle Issues",
+        "symptoms": "Poor idle quality, hesitation on light throttle, shunting on trailing throttle, high CO levels at MOT, engine misfire at idle",
+        "typicalMileage": "Any mileage — often linked to age and storage",
+        "repairCost": "£200–£800 (fuel injection system diagnosis and repair)",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon"
+        },
+        "recommendation": "Early 3.6 AJ6 engines are known for light throttle driveability and idle quality issues. These can manifest as \"shunting in a trailing throttle over-run condition\" or abnormally high CO levels. A common cause is the crank position sensor (CPS) getting dirty. The idle can be stubbornly low — one owner reported 400rpm with no apparent fix. Have the fuel injection system and sensors checked by a specialist familiar with the Lucas system.",
+        "failureLink": {
+          "label": "Read the full idle and driveability issues guide",
+          "href": "/failures/driveability-issues/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Weighing Your Options? Compare Specialist Quotes When You're Ready →",
+    "supportingLine": "15+ vetted Jaguar specialists, every XJ engine era covered, with a 12‑month warranty as standard.",
+    "button": {
+      "label": "See Jaguar XJ 3.6 Engine Options →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "XJ 3.6 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Head gasket failure (corrosion)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£1,800",
+          "whenItMakesSense": "Well-understood job; use the latest superseded gasket"
+        },
+        {
+          "problem": "Timing chain tensioner wear",
+          "repairable": "✅ Yes",
+          "typicalCost": "£100–£400",
+          "whenItMakesSense": "Simple replacement — the most important preventative maintenance on the AJ6"
+        },
+        {
+          "problem": "Timing chain failure (engine damage)",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "If chain jumps and valves hit pistons, replacement is the only option"
+        },
+        {
+          "problem": "Light throttle driveability issues",
+          "repairable": "✅ Yes",
+          "typicalCost": "£200–£800",
+          "whenItMakesSense": "Fuel system diagnosis — well-understood by AJ6 specialists"
+        },
+        {
+          "problem": "CPS or sensor issues",
+          "repairable": "✅ Yes",
+          "typicalCost": "£100–£300",
+          "whenItMakesSense": "Simple sensor replacement — restore idle and driveability"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This XJ 3.6? Check These First",
+      "buyIf": [
+        "* Evidence of regular coolant changes (every two years with 50/50 ethylene glycol) — the single most important check on the AJ6",
+        "* No rattling or screeching from the front of the engine on cold start — timing chain tensioner should be healthy",
+        "* Full service history — the AJ6 is robust but benefits from good maintenance",
+        "* A well-maintained example — rust is the main enemy, not the engine"
+      ],
+      "avoidIf": [
+        "* Evidence of repeated coolant top-ups without a diagnosed leak — head gasket or corrosion issues likely",
+        "* Any rattling from the front/top of the engine — timing chain tensioner wear is likely",
+        "* Poor service history or evidence of incorrect coolant — the all-aluminium engine is unforgiving of neglect",
+        "* Significant body rust — the engine is the least of your worries on an XJ40"
+      ]
+    },
+    "closingVerdict": "The AJ6 is widely regarded as one of the best and most reliable engines Jaguar ever built. It's \"almost bullet proof\", simple to work with, and \"not the most expensive of Jaguar engines to maintain, or even replace\". The main concerns are corrosion around water passages (use the correct antifreeze and change it regularly), timing chain tensioner wear, and light throttle driveability issues. Buy on history, maintain on schedule, and the AJ6 will reward you with smooth, effortless power and remarkable longevity.",
+    "cta": {
+      "label": "→ Compare XJ 3.6 engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Jaguar XJ 3.6 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "1. Cold Start — Listen for rattles or screeching from the front/top of the engine (timing chain tensioner warning — a common issue on the AJ6)",
+      "2. Service History — including evidence of regular coolant changes (50/50 ethylene glycol every two years)",
+      "3. Coolant Level — Any unexplained loss? (head gasket or corrosion warning)",
+      "4. Oil Condition — Any signs of coolant contamination? (milky appearance — head gasket failure)",
+      "5. Idle Quality — Any stumbles, hesitation or rough idle? (CPS or fuel system issues)",
+      "6. Temperature Gauge — Any history of overheating? (cooling system or head gasket warning)",
+      "7. Engine Warning Light — Have codes been read? Any unresolved issues?",
+      "8. Bodywork — Check for rust; the engine is the least of your worries on an XJ40"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "AJ6 (3.6)",
+        "years": "1986–1989",
+        "power": "165 kW / 221 bhp",
+        "enquiries": "[PATTERN DATA]",
+        "avgReconCost": "£1,200–£2,800 [JAG-QUOTE]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly — one engine throughout this badge's production run.",
+    "technicalSpecs": {
+      "title": "Technical Specs (AJ6 3.6):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "3,590cc (3.6‑litre)"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "Inline-6"
+        },
+        {
+          "label": "* Bore x Stroke",
+          "value": "91.0 mm x 92.0 mm"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Lucas electronic fuel injection"
+        },
+        {
+          "label": "* Valvetrain",
+          "value": "DOHC, 4 valves per cylinder, timing chain"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare XJ 3.6 engine prices for your Jaguar",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": []
+  },
+  "faq": {
+    "items": [],
+    "disclaimer": ""
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [
+      {
+        "title": "Trusted XJ 3.6 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real XJ 3.6 owners, as part of the Engine Finders network, across the XJ40 generation."
+      },
+      {
+        "title": "Compare XJ 3.6 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit, with specialists who genuinely understand the AJ6's head gasket, timing chain tensioner and driveability nuances."
+      },
+      {
+        "title": "UK Engine Replacement Services for XJ 3.6",
+        "text": "supply‑only or full supply & fit available nationwide, covering Jaguar's legendary AJ6 inline-six with a 12‑month warranty as standard."
+      }
+    ],
+    "finalCta": "Find the best Jaguar XJ 3.6 engine replacement UK owners trust. Compare prices from trusted specialists on JaguarEngine.uk today and keep your AJ6-powered XJ on the road.",
+    "ctaButton": {
+      "label": "Explore Jaguar XJ 3.6 Engine Quotes →",
+      "href": "#"
+    }
+  }
+}

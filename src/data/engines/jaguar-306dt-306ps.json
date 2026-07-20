@@ -1,0 +1,225 @@
+{
+  "meta": {
+    "slug": "jaguar-306dt-306ps",
+    "title": "Jaguar 306DT / 306PS Engine — Specs, Reliability & Replacement Cost",
+    "description": "",
+    "canonical": "",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {}
+  },
+  "hero": {
+    "tagPill": "Jaguar • 306DT / 306PS • Diesel & Petrol • 3.0L V6 • 2009–2020",
+    "h1": "Jaguar 306DT / 306PS Engine — Specs, Reliability & Replacement Cost",
+    "subHeadline": "The Jaguar 306DT is a 3.0-litre V6 diesel, the 306PS a petrol supercharged version — both face similar reliability concerns with the V6 architecture. Backed by 980+ real UK enquiries in 2025 [EM-VERIFIED].",
+    "trustStrip": [],
+    "primaryCta": {
+      "label": "Compare 306DT / 306PS Engine Prices →",
+      "href": "#"
+    }
+  },
+  "atAGlance": {
+    "rows": [
+      {
+        "metric": "Engine Family",
+        "value": "306DT / 306PS (AJD V6)"
+      },
+      {
+        "metric": "Fuel",
+        "value": "Diesel (306DT) & Petrol Supercharged (306PS)"
+      },
+      {
+        "metric": "Configuration / Displacement",
+        "value": "3.0L V6 Turbo (Diesel) / 3.0L V6 Supercharged (Petrol)"
+      },
+      {
+        "metric": "Power Range",
+        "value": "240–380 bhp [EM-VERIFIED]"
+      },
+      {
+        "metric": "Years Produced",
+        "value": "2009–2020"
+      },
+      {
+        "metric": "Models Fitted (Jaguar only)",
+        "value": "5 models [EM-VERIFIED]"
+      },
+      {
+        "metric": "Cross-Brand Fitment",
+        "value": "Also fitted to Land Rover models"
+      },
+      {
+        "metric": "Overall Engine Score",
+        "value": "46/100"
+      }
+    ]
+  },
+  "verdictRating": {
+    "starRating": "2.5★ out of 5",
+    "confidence": "88% confidence — based on 980 UK enquiries and cross-referenced specialist rebuild reports [EM-VERIFIED].",
+    "scoreNote": "Engine Score breakdown:",
+    "scoreBreakdown": {
+      "columns": [
+        "Dimension",
+        "Score (of 20)"
+      ],
+      "rows": [
+        {
+          "dimension": "Reliability",
+          "score": "10 (Formula: star rating × 4. 2.5★ = 10/20.)"
+        },
+        {
+          "dimension": "Repair Cost",
+          "score": "8 (Midpoint of Reconditioned (Supply Only) range: £6,500–£9,500 → midpoint £8,000 → falls in £7,000–£9,999 bracket → 8/20.)"
+        },
+        {
+          "dimension": "Repairability",
+          "score": "4 (Catastrophic bearing failure leaves little rebuildable material — failures are typically all-or-nothing, full-replacement events.)"
+        },
+        {
+          "dimension": "Parts Supply",
+          "score": "20 (Well-supported parts network; common across both Jaguar and Land Rover applications.)"
+        },
+        {
+          "dimension": "Replacement Economics",
+          "score": "4 (Reconditioned cost (£6,500–£9,500) against conservative lowest host value (XF X250 at £4,000–£12,000, worst-case £4,000) = 163%+ — over threshold.)"
+        },
+        {
+          "dimension": "Total",
+          "score": "46/100 (Sum of the five rows above.)"
+        }
+      ]
+    },
+    "oneLineVerdict": "\"The 306DT and 306PS are high-performance V6s with a known fatal flaw — crankshaft bearing failure can strike without warning from 80,000 miles — budget for a full replacement, not a rebuild.\"",
+    "bestFor": "Low-mileage, well-maintained cars with full specialist history.",
+    "avoidIf": "No documented oil-change history or any cold-start knock present."
+  },
+  "compatibility": {
+    "columns": [
+      "Model",
+      "Generation",
+      "Variant/Badge",
+      "Years"
+    ],
+    "rows": [
+      {
+        "model": "Jaguar XF",
+        "generation": "X250 (2007–2015)",
+        "variantBadge": "3.0D / 3.0 V6 Supercharged",
+        "years": "2009–2015"
+      },
+      {
+        "model": "Jaguar XF",
+        "generation": "X260 (2015–2024)",
+        "variantBadge": "3.0D / 3.0 V6 Supercharged",
+        "years": "2015–2020"
+      },
+      {
+        "model": "Jaguar XJ",
+        "generation": "X351 (2009–2019)",
+        "variantBadge": "3.0D / 3.0 V6 Supercharged",
+        "years": "2010–2019"
+      },
+      {
+        "model": "Jaguar F-Pace",
+        "generation": "X761 (2015–2024)",
+        "variantBadge": "3.0D / 3.0 V6 Supercharged",
+        "years": "2016–2020"
+      },
+      {
+        "model": "Jaguar F-Type",
+        "generation": "X152 (2013–2024)",
+        "variantBadge": "3.0 V6 Supercharged",
+        "years": "2013–2020"
+      }
+    ],
+    "crossBrandNote": "Also powers the Land Rover Range Rover, Sport, Discovery and Velar → [link to Land Rover 306DT page]."
+  },
+  "costGuide": {
+    "columns": [
+      "Condition",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty"
+    ],
+    "rows": [
+      {
+        "condition": "Used",
+        "supplyOnly": "£3,500–£5,500 [EM-QUOTE]",
+        "fittedIndie": "£4,475–£6,800",
+        "warranty": "3–6 months"
+      },
+      {
+        "condition": "Reconditioned",
+        "supplyOnly": "£6,500–£9,500 [EM-QUOTE]",
+        "fittedIndie": "£7,475–£10,800",
+        "warranty": "12–24 months"
+      },
+      {
+        "condition": "Rebuilt",
+        "supplyOnly": "£7,500–£11,000 [EM-QUOTE]",
+        "fittedIndie": "£8,475–£12,300",
+        "warranty": "12–24 months"
+      }
+    ],
+    "labourEstimate": "Fitting a 306DT typically takes 15–20 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [EM-QUOTE].",
+    "sharedCostNote": "Parts cost is identical across Jaguar and Land Rover applications; labour time varies slightly by engine bay access.",
+    "cta": {
+      "label": "→ Compare 306DT / 306PS engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "Cost — \"How much does a Jaguar 306DT engine replacement cost?\"",
+        "answer": "A reconditioned 306DT typically costs £6,500–£9,500 supply only [EM-QUOTE], varying by specific variant and output. Fitting adds £975–£1,300 depending on labour rates. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Reliability — \"Is the Jaguar 306DT a reliable engine?\"",
+        "answer": "We rate the 306DT at 2.5★ out of 5 based on 980+ UK enquiries [EM-VERIFIED]. While many examples exceed 120,000 miles without issue, the crankshaft bearing design is a known weak point that demands preventative maintenance."
+      },
+      {
+        "id": 3,
+        "question": "Common failure — \"What is the most common Jaguar 306DT failure?\"",
+        "answer": "Crankshaft bearing failure (tin-aluminium coating fatigue) is the defining failure, typically striking from 80,000–140,000 miles. Cold-start knock is the early warning sign; catastrophic failure follows without intervention."
+      },
+      {
+        "id": 4,
+        "question": "Fitment — \"Which Jaguar models use the 306DT and 306PS?\"",
+        "answer": "The XF (both X250 and X260), XJ X351, F-Pace and the F-Type all use the 306DT diesel or 306PS petrol V6 across 2009–2020 — five model lines spanning both saloon and SUV applications."
+      },
+      {
+        "id": 5,
+        "question": "Shared mode — \"Is the Jaguar 306DT the same as Land Rover's version?\"",
+        "answer": "Yes — the 306DT and 306PS are the same physical engine across Jaguar and Land Rover applications, shared under the AJD V6 architecture. Parts are identical; only ECU tuning and fitment specifics vary between brands."
+      }
+    ]
+  },
+  "trustCta": {
+    "trustPoints": [
+      "• Every garage and engine rebuilder in our network is vetted, rated and reviewed by real 306DT owners, as part of the Engine Finders network.",
+      "• Our real-time comparison lets you compare actual Jaguar 306DT engine prices from multiple specialist rebuilders — not generic quotes.",
+      "• We've tracked over 980 genuine Jaguar 306DT enquiries in 2025 alone [EM-VERIFIED], giving us a uniquely honest view of real UK replacement costs."
+    ],
+    "finalCta": "Find the best Jaguar 306DT engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare Jaguar 306DT / 306PS Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

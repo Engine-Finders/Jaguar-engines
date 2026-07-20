@@ -1,0 +1,506 @@
+{
+  "meta": {
+    "slug": "f-type-svr",
+    "title": "F-Type SVR Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 49,
+    "description": "Jaguar F-Type SVR 5.0 V8 — real UK costs, cooling system & supercharger watchpoints. Get free quotes from 15+ vetted Jaguar specialists today.",
+    "descriptionCharCount": 159,
+    "canonical": "https://jaguarengine.uk/f-type/svr/",
+    "openGraph": {
+      "title": "F-Type SVR Engine Replacement Cost UK — Compare Quotes",
+      "description": "Jaguar F-Type SVR 5.0 V8 — real UK costs, cooling system & supercharger watchpoints. Get free quotes from 15+ vetted Jaguar specialists today.",
+      "type": "website",
+      "url": "https://jaguarengine.uk/f-type/svr/",
+      "image": "https://jaguarengine.uk/images/jaguar/hero/f-type-svr.jpg",
+      "siteName": "JaguarEngine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "F-Type SVR Engine Replacement Cost UK — Compare Quotes",
+      "description": "Jaguar F-Type SVR 5.0 V8 — real UK costs, cooling system & supercharger watchpoints.",
+      "image": "https://jaguarengine.uk/images/jaguar/hero/f-type-svr.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "F-Type",
+              "item": "https://jaguarengine.uk/f-type/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "F-Type X152",
+              "item": "https://jaguarengine.uk/f-type/x152/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "SVR",
+              "item": "https://jaguarengine.uk/f-type/svr/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar F-Type SVR Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "X152 SVR (508PS AJ133, 2016–present)",
+              "url": "https://jaguarengine.uk/f-type/x152/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar F-Type SVR Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "508PS (AJ133, 5.0 SC V8)",
+              "url": "https://jaguarengine.uk/engines/508ps/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Jaguar F‑Type SVR engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned 508PS AJ133 V8 typically costs £6,000–£10,000 supply only, with rebuilt units reaching £14,000. Fitting adds £1,500–£2,500. A new engine from JLR can exceed £23,000. Use our calculator for a figure specific to your F‑Type SVR."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Jaguar F‑Type SVR (AJ133 V8) engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The AJ133 is generally a robust and reliable engine when properly maintained. However, the supercharged V8 has known weak points: cooling system failures (plastic crossover pipes, water pump), timing chain tensioner and guide wear, and supercharger coupler wear. Regular 8,000‑mile oil changes are essential."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Jaguar F‑Type SVR engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cooling system failure (plastic crossover pipes splitting, water pump leaks, radiator issues), timing chain tensioner and guide wear, supercharger coupler wear, and water pump failure."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing an F‑Type SVR engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "F‑Type SVR values range from £40,000 to over £80,000+ — a £7,000–£10,000 recon is a small fraction of the car's value, making replacement a clear decision. This is well within our 60% Jaguar scrap threshold."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Jaguar F‑Type SVR engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation. The F‑Type SVR engine code is 508PS (AJ133) — a 5.0‑litre supercharged V8. Tell us your registration date and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I prevent the common failures on an F‑Type SVR?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — upgrade the plastic cooling crossover pipes to aluminium as a preventative measure. Replace the supercharger coupler at the first sign of rattle. Change the engine oil every 8,000 miles or annually — half the factory interval. At the first sign of coolant loss, supercharger rattle or cold‑start rattle, book an inspection immediately."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "JaguarEngine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Jaguar F-Type SVR Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "5000",
+            "highPrice": "14000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Jaguar F-Type SVR UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Jaguar F-Type SVR engines, sourced from JaguarEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "F-Type SVR Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://jaguarengine.uk/f-type/svr/",
+          "author": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-12",
+          "dateModified": "2026-07-12"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Jaguar F-Type SVR • 2016–present • 508PS (AJ133)",
+    "h1": "Jaguar F-Type SVR Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "The F-Type SVR is powered by Jaguar Land Rover's ultimate 5.0‑litre supercharged V8 — 575 PS, 700 Nm, and a titanium‑Inconel exhaust. A rare, all‑weather supercar from Jaguar's Special Vehicle Operations team.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 15+ Specialists"
+    ],
+    "priceAnchor": "Jaguar F-Type SVR Engines — from £5,000 to £14,000 · 508PS AJ133 V8",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "See Jaguar F-Type SVR Engine Options →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The F‑TYPE SVR THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [],
+    "sourceNote": "This table is the single source every other section on this page matches — Sections 2, 4 and 6 reference it rather than restating conflicting figures.",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Jaguar F‑Type SVR Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£5,000–£7,500",
+        "fittedIndie": "£6,500–£9,200",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; lower-mileage donor"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£6,000–£10,000",
+        "fittedIndie": "£7,500–£12,000",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£8,000–£14,000",
+        "fittedIndie": "£9,500–£16,000",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£12,000–£18,000",
+        "fittedIndie": "£13,800–£20,500",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "Figures above reflect the current AJ133 V8 generation. A new 5.0‑litre supercharged V8 from JLR can cost in excess of £23,000, making reconditioned units a significantly more viable option. JLR has been known to contribute 50% towards replacement costs in some cases, but this can still leave owners with an £8,500+ bill.",
+    "labourEstimate": "Fitting an F‑Type SVR V8 engine typically takes 16–22 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). The supercharger and cooling system require significant disassembly.",
+    "cta": {
+      "label": "→ Compare F‑Type SVR engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Cooling System Failure (Plastic Crossover Pipes, Water Pump, Radiators)",
+        "symptoms": "Coolant loss, overheating, temperature gauge fluctuations, steam from the engine bay, low coolant warning light.",
+        "typicalMileage": "30,000–60,000 miles",
+        "repairCost": "£800–£2,500 (coolant pipe replacement, water pump, radiator) [PLACEHOLDER — confirm vs cost sheet]",
+        "replacementCost": "N/A — repair only (if caught before overheating)",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "if you notice coolant loss or overheating, stop driving and book an inspection today"
+        },
+        "recommendation": "The AJ133's cooling system is the single most common failure point. Plastic crossover pipes (particularly the front Y‑pipes) are prone to splitting along seams, causing sudden coolant loss and rapid overheating. Water pumps are also known to leak. JLR has introduced aluminium crossover pipes on later models, but earlier cars remain vulnerable. If you notice coolant loss or temperature fluctuations, have the cooling system pressure‑tested immediately. Many specialists recommend upgrading to aluminium pipes as a preventative measure when the supercharger is removed for other work.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/cooling-system-failure/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Supercharger Coupler Wear",
+        "symptoms": "Rattling or \"marbles in a tin can\" noise from the supercharger on cold start, rattle at idle, a loud \"clonk\" when shutting the engine down.",
+        "typicalMileage": "25,000–60,000 miles",
+        "repairCost": "£500–£1,200 (coupler replacement) [PLACEHOLDER — confirm vs cost sheet]",
+        "replacementCost": "£3,000–£6,000 (complete supercharger replacement if bearings are also damaged)",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon"
+        },
+        "recommendation": "The supercharger coupler (also called an isolator) is a spring‑loaded component that connects the drive pulley to the supercharger rotors. As it wears, the drive coupling develops play, creating a characteristic rattle at idle and a clonk on shutdown. If caught early, replacing the coupler is a straightforward and relatively inexpensive repair. If ignored, bearing wear can necessitate a complete supercharger replacement — a far more expensive proposition. An uprated coupler is available that removes the troublesome spring.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/supercharger-coupler-failure/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Timing Chain Tensioner / Guide Wear",
+        "symptoms": "Rattling noise on cold start, metallic ticking, engine warning light, loss of power. In severe cases, chain guide disintegration can send metal fragments into the oil pan, requiring a complete engine replacement.",
+        "typicalMileage": "40,000–80,000 miles",
+        "repairCost": "£1,500–£4,000 (chain guides, tensioners and chain replacement) [PLACEHOLDER — confirm vs cost sheet]",
+        "replacementCost": "£6,000–£14,000 (full engine replacement if chain jumps or guide fragments cause damage)",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "if you hear rattle, book an inspection today"
+        },
+        "recommendation": "Timing chain tensioner and guide wear is a known issue on the AJ133. The tensioner piston is made of aluminium and can wear against the guide over time. If you hear a rattling noise on cold start, have the timing chain system inspected immediately — ignoring it can lead to catastrophic engine failure. Regular oil changes with the correct JLR‑spec oil are essential to maintaining tensioner health.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/timing-chain-tensioner-failure/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Weighing Your Options? Compare Specialist Quotes When You're Ready →",
+    "supportingLine": "15+ vetted Jaguar specialists, every F‑Type SVR engine covered, with a 12‑month warranty as standard.",
+    "button": {
+      "label": "See Jaguar F‑Type SVR Engine Options →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "F‑Type SVR — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Cooling system failure (pipes, pump, radiator)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£2,500",
+          "whenItMakesSense": "Upgrade to aluminium pipes — permanent fix"
+        },
+        {
+          "problem": "Supercharger coupler wear",
+          "repairable": "✅ Yes",
+          "typicalCost": "£500–£1,200",
+          "whenItMakesSense": "Replace coupler early — cheaper than a new supercharger"
+        },
+        {
+          "problem": "Timing chain tensioner/guide wear",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£4,000",
+          "whenItMakesSense": "Catch it early — before chain snaps or guide fragments cause damage"
+        },
+        {
+          "problem": "Water pump failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£900",
+          "whenItMakesSense": "Routine maintenance — do preventatively"
+        },
+        {
+          "problem": "Severe engine damage (overheating / oil starvation)",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Little left to salvage — replacement is the only option"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This F‑Type SVR? Check These First",
+      "buyIf": [
+        "* Cooling system upgraded with aluminium crossover pipes",
+        "* Supercharger coupler replaced or inspected",
+        "* Timing chain tensioners and guides replaced or inspected",
+        "* Full Jaguar service history with oil changes at 8,000 miles or annually (not the 16,000‑mile JLR schedule)"
+      ],
+      "avoidIf": [
+        "* Coolant loss with no diagnosis — cooling system may be compromised — walk away",
+        "* Rattling from the supercharger at idle — coupler or bearings may be failing",
+        "* Cold‑start rattle — timing chain tensioners or guides may be failing",
+        "* Poor service history — AJ133 engines demand meticulous care"
+      ]
+    },
+    "closingVerdict": "The F‑Type SVR is Jaguar's halo performance car — a 575 PS supercharged V8 with a titanium‑Inconel exhaust and all‑weather capability. The AJ133 is a robust and rewarding engine when properly maintained, but it has three non‑negotiable watchpoints: the cooling system (plastic pipes), the supercharger coupler, and the timing chain tensioners. Buy on full service history with evidence of 8,000‑mile oil changes, and budget for cooling system upgrades. A well‑maintained SVR is a future classic; a neglected one is a £10,000+ bill waiting to happen.",
+    "cta": {
+      "label": "→ Compare F‑Type SVR engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Jaguar F‑Type SVR (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Coolant Level — Check for unexplained loss; cooling system failure is the most common issue",
+      "* Cold Start — Listen for rattling; timing chain or supercharger coupler indicator",
+      "* Supercharger Noise — Listen for rattling at idle or a \"clonk\" on shutdown; coupler wear indicator",
+      "* Service History — including engine era (508PS AJ133) and confirmed 8,000‑mile oil changes",
+      "* Oil Leaks — Check under the car and around the engine; valve cover and oil pan leaks are common",
+      "* Oil Consumption — Does it use more than 1L per 1,000 miles?",
+      "* Engine Warning Light — Have codes been read? Any unresolved issues?",
+      "* MOT History — Check for emissions‑related failures"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "508PS (AJ133) 5.0 SC V8",
+        "years": "2016–present",
+        "power": "575 PS (423 kW) @ 6,500 rpm; 700 Nm (516 lb‑ft) @ 3,500–5,000 rpm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£6,000–£10,000 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (508PS AJ133 5.0 SC V8):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "5,000 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "8‑cylinder V‑configuration"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "9.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection"
+        },
+        {
+          "label": "* Supercharger",
+          "value": "Eaton‑type twin‑vortex supercharger"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare F‑Type SVR engine prices for your Jaguar",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": []
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Jaguar F‑Type SVR engine replacement cost in the UK?",
+        "answer": "A reconditioned 508PS AJ133 V8 typically costs £6,000–£10,000 supply only, with rebuilt units reaching £14,000. Fitting adds £1,500–£2,500. A new engine from JLR can exceed £23,000. Use our calculator for a figure specific to your F‑Type SVR."
+      },
+      {
+        "id": 2,
+        "question": "Is the Jaguar F‑Type SVR (AJ133 V8) engine reliable?",
+        "answer": "The AJ133 is generally a robust and reliable engine when properly maintained. However, the supercharged V8 has known weak points: cooling system failures (plastic crossover pipes, water pump), timing chain tensioner and guide wear, and supercharger coupler wear. Regular 8,000‑mile oil changes are essential."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Jaguar F‑Type SVR engine?",
+        "answer": "Cooling system failure (plastic crossover pipes splitting, water pump leaks, radiator issues), timing chain tensioner and guide wear, supercharger coupler wear, and water pump failure."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing an F‑Type SVR engine, or should I scrap the car?",
+        "answer": "F‑Type SVR values range from £40,000 to over £80,000+ — a £7,000–£10,000 recon is a small fraction of the car's value, making replacement a clear decision. This is well within our 60% Jaguar scrap threshold."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Jaguar F‑Type SVR engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. The F‑Type SVR engine code is 508PS (AJ133) — a 5.0‑litre supercharged V8. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I prevent the common failures on an F‑Type SVR?",
+        "answer": "Yes — upgrade the plastic cooling crossover pipes to aluminium as a preventative measure. Replace the supercharger coupler at the first sign of rattle. Change the engine oil every 8,000 miles or annually — half the factory interval. At the first sign of coolant loss, supercharger rattle or cold‑start rattle, book an inspection immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "Find the best Jaguar F‑Type SVR engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence — from £5,000 for a used unit to £14,000 for a fully rebuilt supercharged V8.",
+    "ctaButton": {
+      "label": "Explore Jaguar F‑Type SVR Engine Quotes →",
+      "href": "#"
+    }
+  }
+}

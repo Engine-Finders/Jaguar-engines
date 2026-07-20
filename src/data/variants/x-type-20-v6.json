@@ -1,0 +1,486 @@
+{
+  "meta": {
+    "slug": "x-type-20-v6",
+    "title": "X-Type 2.0 V6 Engine Cost UK — Compare Quotes",
+    "titleCharCount": 57,
+    "description": "Jaguar X-Type 2.0 V6 – AJ-V6 2.0-litre petrol. Real UK costs, timing chain and ignition coil facts, and specialist quotes. Get free prices from 15+ vetted specialists today.",
+    "descriptionCharCount": 158,
+    "canonical": "https://jaguarengine.uk/x-type/20-v6/",
+    "openGraph": {
+      "title": "X-Type 2.0 V6 Engine Cost UK — Compare Quotes",
+      "description": "Jaguar X-Type 2.0 V6 – AJ-V6 2.0-litre petrol. Real UK costs, timing chain and ignition coil facts, and specialist quotes. Get free prices from 15+ vetted specialists today.",
+      "type": "website",
+      "url": "https://jaguarengine.uk/x-type/20-v6/",
+      "image": "https://jaguarengine.uk/images/jaguar/hero/x-type-20-v6.jpg",
+      "siteName": "JaguarEngine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "X-Type 2.0 V6 Engine Cost UK — Compare Quotes",
+      "description": "Jaguar X-Type 2.0 V6 – AJ-V6 2.0-litre petrol. Real UK costs, timing chain and ignition coil facts, and specialist quotes.",
+      "image": "https://jaguarengine.uk/images/jaguar/hero/x-type-20-v6.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "X-Type",
+              "item": "https://jaguarengine.uk/x-type/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "2.0 V6",
+              "item": "https://jaguarengine.uk/x-type/20-v6/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar X-Type 2.0 V6 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "X400 X-Type 2.0 V6 (AJ20/YB, 2001-2009)",
+              "url": "https://jaguarengine.uk/x-type/x400/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar X-Type 2.0 V6 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "AJ20 / YB (AJ-V6)",
+              "url": "https://jaguarengine.uk/engines/aj-v6/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Jaguar X-Type 2.0 V6 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned AJ20 / YB engine typically costs £1,500–£2,500 supply only, with used units available from £500–£1,200. Fitting adds £1,200–£1,800 depending on the workshop. Use our calculator for a figure specific to your X-Type."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Jaguar X-Type 2.0 V6 engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The AJ-V6 is a robust engine, but it has well-documented weaknesses: timing chain tensioners (especially pre-2005), ignition coils, and plastic cooling system components. With regular oil changes (5W-30) and preventative maintenance, the engine is capable of high mileage."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Jaguar X-Type 2.0 V6?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing chain tensioner wear (rattling on cold start), ignition coil failure (misfires), cooling system leaks (header tank, thermostat housing), and head gasket failure (if overheating occurs). The timing chain tensioner is the most critical concern."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Jaguar X-Type 2.0 V6 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "X-Type values are modest — a well-kept example is often worth £1,000–£3,000. A £1,500–£2,500 reconditioned engine can be 50–80% of the vehicle's value — apply the Jaguar 60% scrap threshold. If the car is a cherished example with good bodywork, replacement may be worthwhile."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Jaguar X-Type 2.0 V6 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The engine code is AJ20 or YB (AJ-V6) — it's the only 2.0-litre V6 used in the X-Type. You can find it on the VIN plate, in the vehicle documentation, or on a label on the engine itself. Production ran from 2001 to 2009."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the AJ-V6 timing chain tensioner, or does the engine need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The timing chain tensioner can be replaced preventatively — it's a wear item. Replacement costs £600–£1,500. If the chain fails and jumps timing, the engine is typically destroyed. A preventative tensioner replacement is far cheaper than a full engine replacement (£1,500+). At the first sign of rattling from the front of the engine, book an inspection immediately."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "JaguarEngine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Jaguar X-Type 2.0 V6 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "500",
+            "highPrice": "3500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Jaguar X-Type 2.0 V6 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Jaguar X-Type 2.0 V6 engines (AJ20/YB), sourced from JaguarEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "X-Type 2.0 V6 Engine Cost UK — Compare Quotes",
+          "url": "https://jaguarengine.uk/x-type/20-v6/",
+          "author": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-12",
+          "dateModified": "2026-07-12"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Jaguar X-Type 2.0 V6 • 2001–2009 • 2.0-litre AJ-V6",
+    "h1": "Jaguar X-Type 2.0 V6 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "The X-Type 2.0 V6 is powered by Jaguar's entry-level AJ-V6 — a 2.0-litre, 24-valve engine shared with the Ford Mondeo. It's a smooth, high-revving unit, but timing chain tensioners, ignition coils and cooling system leaks are well-documented weaknesses. Get quotes from UK specialists for reconditioned, rebuilt and used units today.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 15+ Specialists"
+    ],
+    "priceAnchor": "Jaguar X-Type 2.0 V6 Engines — from £500 to £3,500 · Code: AJ20 / YB (AJ-V6)",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "See Jaguar X-Type 2.0 V6 Engine Options →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The 2.0 V6 THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Jaguar X-Type 2.0 V6 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£500–£1,200",
+        "fittedIndie": "£1,200–£2,200",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; project cars"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£1,500–£2,500",
+        "fittedIndie": "£2,500–£3,800",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£2,200–£3,500",
+        "fittedIndie": "£3,200–£4,800",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "N/A — no longer available",
+        "fittedIndie": "N/A",
+        "warranty": "—",
+        "bestFor": "N/A — specialist rebuild only"
+      }
+    ],
+    "figuresNote": "Figures above reflect the current X-Type 2.0 V6 market. Replacement engines start around £500 for used units, with reconditioned examples fetching £1,500–£2,500. This engine is much cheaper to replace than the 3.0-litre V6 or the 5.0-litre AJ133, making it a more viable proposition for budget-conscious owners.",
+    "labourEstimate": "Fitting an X-Type 2.0 V6 engine typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). The transverse V6 layout makes it a tighter job than the longitudinal engines in other Jaguars.",
+    "cta": {
+      "label": "→ Compare X-Type 2.0 V6 engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Timing Chain Tensioner Wear",
+        "symptoms": "Rattling noise from the front of the engine on cold start, metallic ticking, rough idle, poor performance, engine warning light",
+        "typicalMileage": "80,000–150,000 miles",
+        "repairCost": "£600–£1,500 (timing chain tensioner and guide replacement)",
+        "replacementCost": "£1,500–£2,500 (if chain jumps and causes valve interference)",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "timing chain tensioner failure is a known issue on the AJ-V6, and if the chain jumps, piston-valve contact is likely"
+        },
+        "recommendation": "The AJ-V6 is chain-driven, which is a significant advantage over belt-driven engines. However, the timing chain tensioners can wear over time. Some X-Types may experience issues with the timing chain tensioner, leading to noise, poor performance, or even engine damage. The 2.0L petrol engines in the X-Type were known for timing chain tensioner failures. Pre-2005 examples are particularly susceptible. Regular oil changes with the correct 5W-30 spec are essential — the chain and tensioner rely on good oil pressure. If you hear rattling from the front of the engine, book an inspection immediately.",
+        "failureLink": {
+          "label": "Read the full timing chain failure guide",
+          "href": "/failures/timing-chain-failure/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Ignition Coil Failure (Misfires)",
+        "symptoms": "Misfire under load or at idle, engine warning light, rough running, reduced power, poor fuel economy",
+        "typicalMileage": "60,000–120,000 miles",
+        "repairCost": "£120–£240 (ignition coil replacement — £20–£40 each)",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon"
+        },
+        "recommendation": "Ignition coil failure is a well-documented issue on the AJ-V6, leading to misfires. One owner reported changing all six ignition coils after experiencing misfires. The coils are \"coil-on-plug\" units, and each cylinder has its own coil. Replacing a faulty coil is a straightforward job. If you experience a misfire, have the fault codes read to identify the affected cylinder — and consider replacing all six if the car has high mileage.",
+        "failureLink": {
+          "label": "Read the full ignition coil failure guide",
+          "href": "/failures/ignition-coil-failure/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Cooling System Leaks (Header Tank, Thermostat Housing)",
+        "symptoms": "Coolant loss with no visible external leak, rising temperature gauge, steam from the engine bay, heater not working properly",
+        "typicalMileage": "60,000–120,000 miles",
+        "repairCost": "£150–£400 (header tank, thermostat housing, or hose replacement)",
+        "replacementCost": "£1,500–£2,500 (if overheating causes engine damage)",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently"
+        },
+        "recommendation": "The X-Type's cooling system is a known weak point. The plastic header tank is prone to hairline cracks that only leak when the system is under pressure — the coolant evaporates before it hits the ground. The thermostat housing and coolant hoses are also known to fail. Check coolant levels regularly. If you notice the level dropping, inspect the header tank, thermostat housing and hoses for signs of leakage. A £150–£400 repair is far cheaper than a £1,500+ engine replacement if overheating causes head gasket failure.",
+        "failureLink": {
+          "label": "Read the full coolant leak guide",
+          "href": "/failures/coolant-leak/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Weighing Your Options? Compare Specialist Quotes When You're Ready →",
+    "supportingLine": "15+ vetted Jaguar specialists, every X-Type engine era covered, with a 12‑month warranty as standard.",
+    "button": {
+      "label": "See Jaguar X-Type 2.0 V6 Engine Options →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "X-Type 2.0 V6 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Timing chain tensioner (preventative)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£600–£1,500",
+          "whenItMakesSense": "Labour-intensive but far cheaper than a full engine replacement"
+        },
+        {
+          "problem": "Timing chain failure (engine damage)",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "If chain jumps and valves hit pistons, replacement is the only option"
+        },
+        {
+          "problem": "Ignition coil failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£120–£240",
+          "whenItMakesSense": "Simple and cheap — replace all six if high mileage"
+        },
+        {
+          "problem": "Header tank/thermostat housing leak",
+          "repairable": "✅ Yes",
+          "typicalCost": "£150–£400",
+          "whenItMakesSense": "Straightforward replacement — catch before overheating"
+        },
+        {
+          "problem": "Head gasket failure (overheating)",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£800–£1,800",
+          "whenItMakesSense": "Viable on a low-mileage example; borderline on high-mileage"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This X-Type 2.0 V6? Check These First",
+      "buyIf": [
+        "* Post-2005 build — timing chain tensioner issues were addressed in later production",
+        "* Documented timing chain tensioner replacement — the single most important check on the AJ-V6",
+        "* Evidence of cooling system maintenance — header tank, thermostat housing and hoses replaced",
+        "* Full service history with regular oil changes (5W‑30) — the chain and tensioner rely on good oil pressure"
+      ],
+      "avoidIf": [
+        "* Any rattling from the front of the engine — timing chain tensioner wear is likely",
+        "* Repeated coolant top-ups without a diagnosed leak — the cooling system is failing",
+        "* Misfire codes without a clear diagnosis — ignition coil or injector issues are likely",
+        "* Poor service history — the AJ-V6 is forgiving but not indestructible"
+      ]
+    },
+    "closingVerdict": "The 2.0 V6 is a smooth, high-revving engine that offers a taste of Jaguar V6 refinement at an entry-level price. It's chain-driven, which is a significant advantage over belt-driven rivals. However, timing chain tensioners, ignition coils and cooling system components are known weaknesses — and they're all well-understood by specialists. Buy on history, maintain on schedule, and the 2.0 V6 will reward you with a surprisingly engaging driving experience.",
+    "cta": {
+      "label": "→ Compare X-Type 2.0 V6 engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Jaguar X-Type 2.0 V6 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "1. Cold Start — Listen for rattles from the front of the engine (timing chain tensioner warning — the most critical check on the AJ-V6)",
+      "2. Service History — including evidence of timing chain tensioner work and regular oil changes",
+      "3. Coolant Level — Any unexplained loss? (header tank, thermostat housing or hose leak warning)",
+      "4. Misfire Codes — Any misfire codes stored? (ignition coil warning)",
+      "5. Oil Condition — Any signs of coolant contamination? (head gasket warning)",
+      "6. Temperature Gauge — Any history of overheating? (cooling system failure warning)",
+      "7. Engine Warning Light — Have codes been read? Any unresolved issues?",
+      "8. MOT History — Check for emissions-related failures (catalyst, O2 sensors)"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "AJ20 / YB (AJ-V6)",
+        "years": "2001–2009",
+        "power": "156–159 PS",
+        "enquiries": "[PATTERN DATA]",
+        "avgReconCost": "£1,500–£2,500 [JAG-QUOTE]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly — one engine throughout this badge's production run.",
+    "technicalSpecs": {
+      "title": "Technical Specs (AJ20 / YB — AJ-V6 2.0):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "1,998–2,099cc (2.0–2.1‑litre)"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "V6, 60° configuration"
+        },
+        {
+          "label": "* Bore x Stroke",
+          "value": "81.6 mm x 66.9 mm"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.8:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Electronic fuel injection"
+        },
+        {
+          "label": "* Valvetrain",
+          "value": "DOHC, 4 valves per cylinder, timing chain"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare X-Type 2.0 V6 engine prices for your Jaguar",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": []
+  },
+  "faq": {
+    "items": [],
+    "disclaimer": ""
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [
+      {
+        "title": "Trusted X-Type 2.0 V6 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real X-Type 2.0 V6 owners, as part of the Engine Finders network, across the X400 generation."
+      },
+      {
+        "title": "Compare X-Type 2.0 V6 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit, with specialists who genuinely understand the AJ-V6's timing chain, ignition coil and cooling system nuances."
+      },
+      {
+        "title": "UK Engine Replacement Services for X-Type 2.0 V6",
+        "text": "supply‑only or full supply & fit available nationwide, covering Jaguar's entry-level V6 with a 12‑month warranty as standard."
+      }
+    ],
+    "finalCta": "Find the best Jaguar X-Type 2.0 V6 engine replacement UK owners trust. Compare prices from trusted specialists on JaguarEngine.uk today and keep your X-Type on the road.",
+    "ctaButton": {
+      "label": "Explore Jaguar X-Type 2.0 V6 Engine Quotes →",
+      "href": "#"
+    }
+  }
+}

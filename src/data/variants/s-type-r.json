@@ -1,0 +1,560 @@
+{
+  "meta": {
+    "slug": "s-type-r",
+    "title": "Jaguar S-Type R Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 59,
+    "description": "Every Jaguar S-Type R engine — the 4.2-litre AJ34 supercharged V8. Real UK costs, timing chain tensioner advice, and honest reliability data. Get free quotes from 15 vetted Jaguar specialists today.",
+    "descriptionCharCount": 158,
+    "canonical": "https://jaguarengine.uk/s-type/r/",
+    "openGraph": {
+      "title": "Jaguar S-Type R Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Jaguar S-Type R engine — the 4.2-litre AJ34 supercharged V8. Real UK costs, timing chain tensioner advice, and honest reliability data. Get free quotes from 15 vetted Jaguar specialists today.",
+      "type": "website",
+      "url": "https://jaguarengine.uk/s-type/r/",
+      "image": "https://jaguarengine.uk/images/jaguar/hero/s-type-r.jpg",
+      "siteName": "JaguarEngine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Jaguar S-Type R Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every Jaguar S-Type R engine — the 4.2-litre AJ34 supercharged V8. Real UK costs, timing chain tensioner advice, and honest reliability data.",
+      "image": "https://jaguarengine.uk/images/jaguar/hero/s-type-r.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "S-Type",
+              "item": "https://jaguarengine.uk/s-type/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "X200",
+              "item": "https://jaguarengine.uk/s-type/x200/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "R",
+              "item": "https://jaguarengine.uk/s-type/r/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar S-Type R Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "X200/X202/X204 S-Type R (AJ34, 2002–2008)",
+              "url": "https://jaguarengine.uk/s-type/x200/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar S-Type R Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "AJ34 (AJ34S)",
+              "url": "https://jaguarengine.uk/engines/aj34/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Jaguar S-Type R engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned S-Type R engine typically costs £3,500–£6,500 supply only. Fitting adds £2,000–£3,000 depending on location and workshop rates. An engine rebuild typically costs over £6,000. Used engines start from around £800–£2,500. Main dealer new engines are no longer available. Use our calculator for a figure specific to your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Jaguar S-Type R engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The AJ-V8 is a solid engine when properly maintained, but it has well-documented weaknesses: timing chain tensioner failure is the most critical — Jaguar AJ series engines are of a zero clearance design, so if a tensioner fails, the cylinder head will sustain severe damage. Oil pump drive failures are also a known issue. With proper maintenance and preventative tensioner replacement, these engines can be reliable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Jaguar S-Type R?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The main known issues are: (1) Timing chain tensioner failure — the most critical weakness, causing cold-start rattle and risk of catastrophic engine damage, (2) Oil pump drive failure — can cause timing chain damage and engine failure, (3) Supercharger coupler wear — causing rattling at idle, and (4) Cooling system failures — thermostat housing and water pump issues."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Jaguar S-Type R engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on vehicle value and condition. Against a well-kept £4,000–£10,000 S-Type R, a £4,000–£6,000 recon is 40–150% of the car's value. For a clean, low-mileage example, replacement can be worthwhile given the S-Type R's rising classic status. However, if the car has other issues (transmission, rust, electrical faults), evaluate total restoration costs before committing."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Jaguar S-Type R engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The S-Type R uses the AJ34 (AJ34S) — a 4.2-litre supercharged V8 producing 400 hp and 413 lb-ft of torque. The engine code is stamped on the cylinder block. Tell us your registration and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I replace the timing chain tensioners, or does it need engine replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the tensioners can be replaced with upgraded parts without removing the engine. A preventative replacement of the secondary tensioners is the single most important maintenance item on any S-Type R. At the first sign of rattling, book an inspection immediately. If the tensioner fails and the chain snaps, a full engine replacement is usually the only option — these are zero clearance engines."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "JaguarEngine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Jaguar S-Type R Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "800",
+            "highPrice": "9000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Jaguar S-Type R UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Jaguar S-Type R engines, sourced from JaguarEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Jaguar S-Type R Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://jaguarengine.uk/s-type/r/",
+          "author": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-12",
+          "dateModified": "2026-07-12"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Jaguar S-Type R • 2002–2008 • 1 Engine Generation",
+    "h1": "Jaguar S-Type R Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Jaguar S-Type R specialists. The 4.2-litre supercharged AJ-V8 is a genuine performance icon — compare reconditioned, rebuilt and used engines with supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 15 Specialists"
+    ],
+    "priceAnchor": "Jaguar S-Type R Engines — from £800 to £9,000 · Engine code: AJ34 (AJ34S)",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "See S-Type R Engine Options →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "Jaguar S-Type R — Which Engine Does Your Car Actually Have?",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "X200/X202/X204",
+        "years": "2002–2008",
+        "engineCode": "AJ34 (AJ34S)",
+        "reliability": "★★★☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£3,500–£6,500 [JAG-QUOTE]",
+        "eraNote": "4.2L supercharged V8 — 400 hp, 413 lb-ft. Timing chain tensioners, oil pump and supercharger coupler are the key weak points"
+      }
+    ],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Jaguar S-Type R Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£800–£2,500",
+        "fittedIndie": "£1,500–£4,000",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; donor for rebuild"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£3,500–£6,500",
+        "fittedIndie": "£5,500–£8,500",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£4,500–£7,500",
+        "fittedIndie": "£6,500–£9,500",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "N/A",
+        "fittedIndie": "N/A",
+        "warranty": "N/A",
+        "bestFor": "No longer manufactured"
+      }
+    ],
+    "figuresNote": "",
+    "labourEstimate": "Fitting an S-Type R engine typically takes 14–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). The supercharged V8's complexity and the need for correct ECU calibration add labour time.",
+    "cta": {
+      "label": "→ Compare S-Type R engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Timing Chain Tensioner Failure (The Achilles Heel)",
+        "symptoms": "Rattling or knocking noise from the front of the engine, especially on cold start or during acceleration; check engine light with timing-related codes; sudden engine failure if tensioner breaks",
+        "typicalMileage": "50,000–100,000 miles — plastic tensioners fail with age",
+        "repairCost": "£800–£2,500 (secondary tensioners) / £2,000–£4,000 (full timing chain kit)",
+        "replacementCost": "£5,500–£9,500 (if chain snaps — full engine replacement)",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "if you hear rattling, book an inspection today"
+        },
+        "recommendation": "The timing chain tensioners are the most critical weak point on the AJ-V8. Jaguar AJ series engines are of a zero clearance design — if a secondary timing chain tensioner fails, the cylinder head on that side will sustain severe damage due to pistons striking the valves. If you do not replace the primary chains and associated parts with the secondary chains and tensioners, you are really on borrowed time. At the first sign of rattling, get the tensioners inspected immediately. A £800–£2,500 preventative repair is dramatically cheaper than a £5,500–£9,500 engine replacement.",
+        "failureLink": {
+          "label": "Read the full timing chain tensioner guide → /failures/jaguar-timing-chain-tensioners/ [NEW FAILURE PAGE NEEDED]",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Oil Pump Drive Failure (AJ8 V8)",
+        "symptoms": "Low oil pressure warning, rattling from the engine, timing chain damage, sudden engine failure",
+        "typicalMileage": "60,000–120,000 miles — a known weakness on the AJ8 4.2L V8",
+        "repairCost": "£1,500–£3,500 (oil pump and timing chain replacement)",
+        "replacementCost": "£5,500–£9,500 (if ignored — full engine replacement)",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "if the oil pressure warning appears, stop driving immediately"
+        },
+        "recommendation": "The specific oil pump drive failure in AJ8 4.2L V8 S-Type R (2002–2008) can cause timing chain damage when the oil pump fails. Reconditioned engines often include upgraded oil pump components to address this common issue. If you see an oil pressure warning, stop driving immediately — continued driving can destroy the engine. A £1,500–£3,500 oil pump and timing chain replacement is far cheaper than a £5,500–£9,500 engine replacement.",
+        "failureLink": {
+          "label": "Read the full oil pump failure guide → /failures/jaguar-oil-pump-failure/ [NEW FAILURE PAGE NEEDED]",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Supercharger Coupler & Oil Leaks",
+        "symptoms": "Rattling or clattering noise from the supercharger at idle, loss of boost, reduced power, oil leaks from the supercharger",
+        "typicalMileage": "60,000–100,000 miles — the Eaton supercharger coupler wears over time",
+        "repairCost": "£300–£800 (supercharger coupler replacement) / £800–£1,500 (supercharger rebuild)",
+        "replacementCost": "N/A — repair only (does not progress to engine replacement if addressed)",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection if rattling develops"
+        },
+        "recommendation": "The supercharger coupler is a common wear item on the S-Type R's Eaton supercharger. A worn coupler causes a rattling noise at idle. Reconditioned engines often include upgraded supercharger internals specifically for the S-Type R's forced induction system. If you hear rattling from the supercharger, have the coupler inspected. Replacement is a straightforward specialist job that restores full supercharger performance.",
+        "failureLink": {
+          "label": "Read the full supercharger coupler guide → /failures/supercharger-coupler-wear/ [NEW FAILURE PAGE NEEDED]",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Weighing Your Options? Compare Specialist Quotes When You're Ready →",
+    "supportingLine": "15 vetted Jaguar specialists, every S-Type R engine covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "See S-Type R Engine Options →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "S-Type R — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Timing chain tensioner rattle (early detection)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£2,500",
+          "whenItMakesSense": "Preventative — upgraded metal tensioners eliminate the risk"
+        },
+        {
+          "problem": "Timing chain snapped",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Interference engine — piston-valve contact means full replacement required"
+        },
+        {
+          "problem": "Oil pump drive failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£3,500",
+          "whenItMakesSense": "Catch early to prevent engine damage"
+        },
+        {
+          "problem": "Supercharger coupler wear",
+          "repairable": "✅ Yes",
+          "typicalCost": "£300–£800",
+          "whenItMakesSense": "Straightforward component replacement"
+        },
+        {
+          "problem": "Cooling system failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£300–£800",
+          "whenItMakesSense": "Preventative replacement recommended"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This S-Type R? Check These First",
+      "buyIf": [
+        "* Documented timing chain tensioner replacement with upgraded parts — this is the critical item",
+        "* Full service history with regular oil changes using correct specification oil",
+        "* No rattling from the supercharger or timing chain area",
+        "* Cooling system overhaul completed (thermostat housing, hoses, water pump)"
+      ],
+      "avoidIf": [
+        "* Rattling or ticking from the front of the engine — tensioner warning",
+        "* Low oil pressure warning history — oil pump failure risk",
+        "* Supercharger rattle at idle — coupler wear",
+        "* Poor service history — the AJ-V8 is a solid engine but needs proper maintenance"
+      ]
+    },
+    "closingVerdict": "The Jaguar S-Type R is a genuine performance icon — a 4.2-litre supercharged V8 with 400 hp that took on the BMW M5 and Mercedes E55 AMG. The AJ-V8 engine is solid when properly maintained, but it has well-documented weaknesses: timing chain tensioners that can fail and destroy the engine, oil pump drive failures, and supercharger coupler wear. Buy a well-maintained example with documented tensioner work. Without history? The repair bills can be substantial — engine rebuilds can cost over £6,000.",
+    "cta": {
+      "label": "→ Compare S-Type R engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Jaguar S-Type R (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for rattling or ticking from the front of the engine (tensioner warning — this is critical)",
+      "* Tensioner History — Have the plastic tensioners been replaced with upgraded parts? This is the single most important question",
+      "* Oil Pressure — Any history of low oil pressure warnings? (Oil pump failure risk)",
+      "* Supercharger Noise — Any rattling at idle? (Coupler wear)",
+      "* Service History — Including the AJ34 engine and confirmed oil change intervals",
+      "* Cooling System — Check for coolant leaks; ask about thermostat housing and water pump history",
+      "* Engine Warning Light — Have codes been read? Look for timing-related codes",
+      "* MOT History — Check for emissions-related failures"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "AJ34 (AJ34S)",
+        "years": "2002–2008",
+        "power": "400 hp (298 kW) / 413 lb-ft (553 Nm)",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,500–£6,500【JAG-QUOTE】"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (AJ34 / AJ34S):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "4,196 cc (4.2L)"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "8-cylinder V"
+        },
+        {
+          "label": "* Bore",
+          "value": "86.1 mm / Stroke: 90.4 mm"
+        },
+        {
+          "label": "* Cylinder Block",
+          "value": "Aluminium V8"
+        },
+        {
+          "label": "* Cylinder Head",
+          "value": "Aluminium 32-valve DOHC"
+        },
+        {
+          "label": "* Valvetrain",
+          "value": "DOHC, 4 valves per cylinder, chain-driven, VVT"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "9.1:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Multi-Point Fuel Injection (MPFI)"
+        },
+        {
+          "label": "* Supercharger",
+          "value": "Eaton supercharger with intercooler"
+        },
+        {
+          "label": "* Power",
+          "value": "400 hp (298 kW) @ 6,100 rpm"
+        },
+        {
+          "label": "* Torque",
+          "value": "413 lb-ft (553 Nm) @ 3,500 rpm"
+        },
+        {
+          "label": "* 0-60 mph",
+          "value": "5.3 seconds"
+        },
+        {
+          "label": "* Top Speed",
+          "value": "155 mph (electronically limited)"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare S-Type R engine prices for your Jaguar",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": []
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Jaguar S-Type R engine replacement cost in the UK?",
+        "answer": "A reconditioned S-Type R engine typically costs £3,500–£6,500 supply only. Fitting adds £2,000–£3,000 depending on location and workshop rates. An engine rebuild typically costs over £6,000. Used engines start from around £800–£2,500. Main dealer new engines are no longer available. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the Jaguar S-Type R engine reliable?",
+        "answer": "The AJ-V8 is a solid engine when properly maintained, but it has well-documented weaknesses: timing chain tensioner failure is the most critical — Jaguar AJ series engines are of a zero clearance design, so if a tensioner fails, the cylinder head will sustain severe damage. Oil pump drive failures are also a known issue. With proper maintenance and preventative tensioner replacement, these engines can be reliable."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Jaguar S-Type R?",
+        "answer": "The main known issues are: (1) Timing chain tensioner failure — the most critical weakness, causing cold-start rattle and risk of catastrophic engine damage, (2) Oil pump drive failure — can cause timing chain damage and engine failure, (3) Supercharger coupler wear — causing rattling at idle, and (4) Cooling system failures — thermostat housing and water pump issues."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Jaguar S-Type R engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value and condition. Against a well-kept £4,000–£10,000 S-Type R, a £4,000–£6,000 recon is 40–150% of the car's value. For a clean, low-mileage example, replacement can be worthwhile given the S-Type R's rising classic status. However, if the car has other issues (transmission, rust, electrical faults), evaluate total restoration costs before committing."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Jaguar S-Type R engine code?",
+        "answer": "The S-Type R uses the AJ34 (AJ34S) — a 4.2-litre supercharged V8 producing 400 hp and 413 lb-ft of torque. The engine code is stamped on the cylinder block. Tell us your registration and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I replace the timing chain tensioners, or does it need engine replacement?",
+        "answer": "Yes — the tensioners can be replaced with upgraded parts without removing the engine. A preventative replacement of the secondary tensioners is the single most important maintenance item on any S-Type R. At the first sign of rattling, book an inspection immediately. If the tensioner fails and the chain snaps, a full engine replacement is usually the only option — these are zero clearance engines."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK Jaguar S-Type R Owners Trust JaguarEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted S-Type R Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real S-Type R owners, across the AJ34 supercharged V8, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare S-Type R Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for S-Type R",
+        "text": "supply-only or full supply & fit available nationwide, covering every X200, X202 and X204 S-Type R since 2002."
+      }
+    ],
+    "finalCta": "Find the best Jaguar S-Type R engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Explore Jaguar S-Type R Engine Quotes →",
+      "href": "#"
+    }
+  }
+}

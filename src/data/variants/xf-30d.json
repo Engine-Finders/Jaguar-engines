@@ -1,0 +1,523 @@
+{
+  "meta": {
+    "slug": "xf-30d",
+    "title": "XF 3.0d Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 57,
+    "description": "Jaguar XF 3.0d – 306DT V6 diesel. Real UK costs, timing chain and oil pump facts, and specialist quotes. Get free prices from 15+ vetted specialists today.",
+    "descriptionCharCount": 158,
+    "canonical": "https://jaguarengine.uk/xf/30d/",
+    "openGraph": {
+      "title": "XF 3.0d Engine Replacement Cost UK — Compare Quotes",
+      "description": "Jaguar XF 3.0d – 306DT V6 diesel. Real UK costs, timing chain and oil pump facts, and specialist quotes. Get free prices from 15+ vetted specialists today.",
+      "type": "website",
+      "url": "https://jaguarengine.uk/xf/30d/",
+      "image": "https://jaguarengine.uk/images/jaguar/hero/xf-30d.jpg",
+      "siteName": "JaguarEngine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "XF 3.0d Engine Replacement Cost UK — Compare Quotes",
+      "description": "Jaguar XF 3.0d – 306DT V6 diesel. Real UK costs, timing chain and oil pump facts, and specialist quotes.",
+      "image": "https://jaguarengine.uk/images/jaguar/hero/xf-30d.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "XF",
+              "item": "https://jaguarengine.uk/xf/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "3.0d",
+              "item": "https://jaguarengine.uk/xf/30d/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar XF 3.0d Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "XF X250 3.0d (306DT, 2009-2015)",
+              "url": "https://jaguarengine.uk/xf/x250/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "XF X260 3.0d (306DT, 2015-present)",
+              "url": "https://jaguarengine.uk/xf/x260/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar XF 3.0d Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "306DT",
+              "url": "https://jaguarengine.uk/engines/306dt/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Jaguar XF 3.0d engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned 306DT engine typically costs £3,500–£5,800 supply only, with used units available from £1,500–£3,800. Fitting adds £1,500–£2,500 depending on the workshop. Use our calculator for a figure specific to your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Jaguar XF 3.0d engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 306DT is a powerful and refined engine, but it has well-documented weaknesses. Timing chain tensioner failure is the biggest risk — it can destroy the engine without warning. Oil pump issues (especially on early cars), injector seal leaks, and EGR/DPF problems are also common. With diligent maintenance and preventative timing chain work, the engine can be reliable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Jaguar XF 3.0d?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing chain tensioner failure (catastrophic — replace preventatively), oil pump failure and lubrication pressure issues (especially early cars), injector seal leaks (diesel smell, rough idle), EGR cooler failure, DPF clogging, and plastic inlet manifold splitting. The timing chain is the single most critical concern."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Jaguar XF 3.0d engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "XF values remain strong — a well-kept X260 is often worth £8,000–£18,000+. A £3,500–£5,800 reconditioned engine is 25–50% of the vehicle's value — apply the Jaguar 60% scrap threshold. If the car is a cherished example with good bodywork and interior, replacement is often worthwhile. Against a tired X250 with significant other issues, get a scrap valuation first."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Jaguar XF 3.0d engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The engine code is 306DT (also known as AJD-V6 or AJV6D). It's the only 3.0-litre V6 diesel used in the XF. You can find it on the VIN plate, in the vehicle documentation, or on a label on the engine itself. Production began in 2009 and continues in the X260."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the 306DT timing chain tensioner, or does the engine need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The timing chain tensioner can be replaced preventatively — it's a wear item. Replacement costs £800–£2,500 and is a labour-intensive job. If the chain fails and jumps timing, the engine is typically destroyed. A preventative tensioner replacement is far cheaper than a full engine replacement (£3,500+). At the first sign of cold-start rattle, book an inspection immediately. Jaguar issued a TSB (J-TIS-2013-018) for this issue."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "JaguarEngine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Jaguar XF 3.0d Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "1500",
+            "highPrice": "7500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Jaguar XF 3.0d UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Jaguar XF 3.0d engines (306DT), sourced from JaguarEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "XF 3.0d Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://jaguarengine.uk/xf/30d/",
+          "author": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Jaguar XF 3.0d • 2009–present • 2 Engine Generations",
+    "h1": "Jaguar XF 3.0d Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "The XF 3.0d is powered by Jaguar's 306DT V6 diesel — a 3.0-litre twin-turbo that delivers 600 Nm of effortless torque. But beneath the refinement lies a well-documented weakness: timing chain tensioner failure that can destroy the engine without warning. Get quotes from UK specialists for reconditioned, rebuilt and used units today.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 15+ Specialists"
+    ],
+    "priceAnchor": "Jaguar XF 3.0d Engines — from £1,500 to £7,500 · Code: 306DT",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free 3.0d Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The 3.0d THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Jaguar XF 3.0d Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£1,500–£3,800",
+        "fittedIndie": "£3,000–£5,500",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; lower‑mileage examples"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£3,500–£5,800",
+        "fittedIndie": "£5,000–£7,500",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£4,500–£7,500",
+        "fittedIndie": "£6,000–£9,000",
+        "warranty": "12–24 months",
+        "bestFor": "Long‑term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£5,800–£7,200",
+        "fittedIndie": "£7,000–£9,000",
+        "warranty": "12 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "Figures above reflect the current XF 3.0d market. Used engines typically range from £3,595–£4,995 supply only. Fitting costs vary from £300–£1,000 depending on the workshop. See the Era Map above for generation-specific context.",
+    "labourEstimate": "Fitting an XF 3.0d engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). The V6's complexity makes it a specialist job.",
+    "cta": {
+      "label": "→ Compare 3.0d engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Timing Chain Tensioner Failure (Catastrophic)",
+        "symptoms": "Rattling noise on cold start (especially after sitting overnight), metallic ticking from the front of the V engine, engine warning light, sudden loss of power, catastrophic engine failure",
+        "typicalMileage": "80,000–130,000 miles",
+        "repairCost": "£800–£2,500 (timing chain tensioner and guide replacement)",
+        "replacementCost": "£3,500–£5,800 (if chain fails and destroys the engine)",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "if the timing chain fails, the engine is typically destroyed. One Jaguar forum member reported: \"The driver side drive chain failed leading to catastrophic engine failure on the driver side of the V engine. No indication whatsoever on this component\""
+        },
+        "recommendation": "The 306DT's timing chain tensioner is the single biggest risk on this engine. Jaguar issued a Technical Service Bulletin (J-TIS-2013-018) for timing chain tensioner issues. If you hear any rattling on cold start — especially if it lasts more than a second or two — book an inspection immediately. A preventative tensioner replacement is far cheaper than a full engine replacement. Regular oil changes (every 8,000–10,000 miles) are essential to keep the tensioner healthy.",
+        "failureLink": {
+          "label": "Read the full timing chain failure guide",
+          "href": "/failures/timing-chain-failure/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Oil Pump Failure and Lubrication Pressure Issues",
+        "symptoms": "Low oil pressure warning light, knocking from the bottom end, sudden engine failure, metal fragments in the oil",
+        "typicalMileage": "80,000–140,000 miles",
+        "repairCost": "£1,000–£3,000 (oil pump replacement and bottom-end inspection)",
+        "replacementCost": "£3,500–£5,800 (if oil starvation destroys the engine)",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "low oil pressure on a 306DT is a critical emergency"
+        },
+        "recommendation": "Almost all problems with the AJV6D are related to lubrication pressure. Early cars had a weak oil pump that could fail, leading to crankshaft and bearing damage. The oil pump was later revised, but oil pressure still needs to be closely monitored. Check oil levels regularly and never ignore a low oil pressure warning. Some owners report the oil cooler heat exchanger and front crankshaft oil seal can also leak.",
+        "failureLink": {
+          "label": "Read the full oil pump failure guide",
+          "href": "/failures/oil-pump-failure/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Injector Seal Leaks and EGR Cooler Failure",
+        "symptoms": "Diesel smell inside or around the car, rough idle, knocking noise when cold, loss of power, poor fuel economy, engine warning light",
+        "typicalMileage": "60,000–120,000 miles",
+        "repairCost": "£400–£1,200 (injector seal replacement or EGR cooler replacement)",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently"
+        },
+        "recommendation": "Injector seal leaks are among the most reported faults on the AJD-V6. Leaking seals allow combustion gases to escape, causing a knocking noise when cold and a diesel smell inside the car. EGR cooler failures are also common. If you notice a diesel smell or rough running, have the injector seals checked promptly. Catching seal leaks early prevents more serious damage.",
+        "failureLink": {
+          "label": "Read the full injector seal failure guide",
+          "href": "/failures/injector-seal-failure/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted Jaguar Specialist →",
+    "supportingLine": "15+ vetted Jaguar specialists, every XF engine era covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "Get My Free 3.0d Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "XF 3.0d — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Timing chain tensioner (preventative)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£2,500",
+          "whenItMakesSense": "Labour-intensive but far cheaper than a full engine replacement"
+        },
+        {
+          "problem": "Timing chain failure (engine damage)",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "If the chain fails, the engine is typically destroyed"
+        },
+        {
+          "problem": "Oil pump failure (caught early)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,000–£3,000",
+          "whenItMakesSense": "Expensive but cheaper than a new engine"
+        },
+        {
+          "problem": "Oil pump failure (engine damage)",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Oil starvation destroys bearings and crankshaft"
+        },
+        {
+          "problem": "Injector seal leaks",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£1,200",
+          "whenItMakesSense": "Well-understood repair — catch before further damage"
+        },
+        {
+          "problem": "EGR cooler failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£1,200",
+          "whenItMakesSense": "Straightforward replacement — catch before DPF damage"
+        },
+        {
+          "problem": "DPF clogging",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£1,200",
+          "whenItMakesSense": "Forced regeneration or cleaning — prevention is key"
+        },
+        {
+          "problem": "Plastic inlet manifold split",
+          "repairable": "✅ Yes",
+          "typicalCost": "£300–£800",
+          "whenItMakesSense": "Replacement — a known weak point"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This XF 3.0d? Check These First",
+      "buyIf": [
+        "* Documented timing chain tensioner replacement — the single most important check on the 306DT",
+        "* Evidence of regular oil changes (every 8,000–10,000 miles) with the correct JAG-spec oil",
+        "* No cold-start rattle — a quiet start-up suggests healthy timing chain tension",
+        "* Evidence of injector seal work — a common wear item that should be addressed",
+        "* Post-2013 car with revised oil pump — the early weak pump was improved"
+      ],
+      "avoidIf": [
+        "* Any cold-start rattle — timing chain tensioner wear is likely",
+        "* No proof of timing chain work on a car with over 80,000 miles — you're buying a known risk",
+        "* Evidence of repeated low oil pressure warnings — the engine may have suffered bottom-end damage",
+        "* Poor service history — the 306DT is unforgiving of neglect",
+        "* Any engine warning light without a clear diagnosis"
+      ]
+    },
+    "closingVerdict": "The 306DT is a genuinely impressive engine — 600 Nm of torque, effortless refinement, and the heart of the XF's appeal. But it has well-documented weaknesses: timing chain tensioner failure (catastrophic), oil pump issues, injector seal leaks, and EGR/DPF problems. The timing chain is the single biggest concern — if it fails, the engine is typically destroyed. Buy on history, maintain religiously (oil changes every 8,000–10,000 miles), and the 306DT will reward you with effortless performance. Skip the history and it will punish you.",
+    "cta": {
+      "label": "→ Compare 3.0d engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Jaguar XF 3.0d (or before you commit to an engine replacement), check these:",
+    "items": [
+      "1. Cold Start — Listen for rattles lasting more than 1–2 seconds (timing chain tensioner warning — the most critical check on the 306DT)",
+      "2. Service History — including which generation (X250 or X260) and evidence of timing chain work",
+      "3. Oil Pressure — Any history of low oil pressure warnings? (oil pump or bearing wear warning)",
+      "4. Diesel Smell — Any smell inside the car? (injector seal leak warning)",
+      "5. DPF Health — Any warning lights or reduced power? (DPF clogging is common)",
+      "6. Inlet Manifold — Any hissing or vacuum leaks? (plastic inlet manifold can split)",
+      "7. Engine Warning Light — Have codes been read? Any unresolved issues?",
+      "8. MOT History — Check for emissions-related failures (DPF, EGR, NOx sensors)"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "306DT (AJD-V6)",
+        "years": "2009–2015",
+        "power": "240–275 bhp",
+        "enquiries": "700 [EM-VERIFIED]",
+        "avgReconCost": "£3,500–£5,800 [JAG-QUOTE]"
+      },
+      {
+        "engineCode": "306DT (AJD-V6)",
+        "years": "2015–present",
+        "power": "300 bhp",
+        "enquiries": "700 [EM-VERIFIED]",
+        "avgReconCost": "£3,800–£6,500 [JAG-QUOTE]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly — one engine family across two generations with different output tunes.",
+    "technicalSpecs": {
+      "title": "Technical Specs (306DT — 3.0D 300PS):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "2,993 cc (3.0-litre)"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "V6, 60° bank angle"
+        },
+        {
+          "label": "* Bore x Stroke",
+          "value": "84.0 mm x 90.0 mm"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "16.1–16.4:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Common-rail direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Twin sequential turbochargers (Garrett GTB1749VK + GT1444Z)"
+        },
+        {
+          "label": "* Timing Drive",
+          "value": "Chains & belt"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare 3.0d engine prices for your Jaguar",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": []
+  },
+  "faq": {
+    "items": [],
+    "disclaimer": ""
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [
+      {
+        "title": "Trusted 3.0d Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real XF 3.0d owners, as part of the Engine Finders network, across both the X250 and X260 generations — no matter which 306DT era your XF belongs to."
+      },
+      {
+        "title": "Compare 3.0d Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit, with specialists who genuinely understand the 306DT's timing chain, oil pump, and injector seal nuances."
+      },
+      {
+        "title": "UK Engine Replacement Services for XF 3.0d",
+        "text": "supply‑only or full supply & fit available nationwide, covering Jaguar's V6 diesel with a 12‑month warranty as standard."
+      }
+    ],
+    "finalCta": "Find the best Jaguar XF 3.0d engine replacement UK owners trust. Compare prices from trusted specialists on JaguarEngine.uk today and keep your V6 diesel performing at its best.",
+    "ctaButton": {
+      "label": "Compare Jaguar XF 3.0d Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

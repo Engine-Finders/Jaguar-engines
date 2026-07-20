@@ -1,0 +1,612 @@
+{
+  "meta": {
+    "slug": "xk",
+    "title": "XK Engines — The Complete UK Guide",
+    "titleCharCount": 34,
+    "description": "",
+    "descriptionCharCount": 0,
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": ""
+    },
+    "jsonLd": {}
+  },
+  "hero": {
+    "tagPill": "Jaguar • XK • 1996–2014 • 2 Generations • AJ-V8",
+    "h1": "XK Engines — The Complete UK Guide",
+    "subHeadline": "Two generations of Jaguar's V8-powered grand tourer — X100 and X150 — covered from the 4.0 AJ27 to the 5.0 AJ133 supercharged. Real UK failure patterns, honest replacement economics, and costs you can actually trust. Backed by 290+ real UK XK engine enquiries in 2025 [JAG-VERIFIED].",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "290+ Enquiries (2025) [JAG-VERIFIED]"
+      },
+      {
+        "icon": "🔧",
+        "label": "2 Generations Covered"
+      },
+      {
+        "icon": "📖",
+        "label": "6 Engine Codes"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Explore XK Engines →",
+      "href": "#"
+    }
+  },
+  "ownershipVerdict": {
+    "h2": "XK — The Ownership Verdict",
+    "metrics": [
+      {
+        "metric": "Overall Ownership Rating",
+        "ourCall": "★★★★☆"
+      },
+      {
+        "metric": "Replacement Economics",
+        "ourCall": "⚠️ The XK rule: generation and engine choice determine whether replacement makes financial sense — an early 4.0 XK8 can fail the threshold, a 5.0 XKR-S comfortably passes it"
+      },
+      {
+        "metric": "Reliability",
+        "ourCall": "★★★★☆"
+      },
+      {
+        "metric": "Most Reliable Engine",
+        "ourCall": "AJ133 5.0 V8 — revised timing chain tensioner design from 2009 onward, robust supercharged V8"
+      },
+      {
+        "metric": "Highest-Risk Engine",
+        "ourCall": "AJ27 4.0 V8 — bore wear and timing chain tensioner issues on early X100 cars [PATTERN DATA]"
+      },
+      {
+        "metric": "Best Used Buy",
+        "ourCall": "X150 (2009–2014) 5.0 naturally aspirated — facelift car, revised engine, strong value retention"
+      },
+      {
+        "metric": "Average Engine Replacement",
+        "ourCall": "£3,000–£9,000 supply-only [JAG-QUOTE]"
+      },
+      {
+        "metric": "Most Common Failure Enquiry",
+        "ourCall": "AJ133 5.0 V8 timing chain tensioner [JAG-VERIFIED]"
+      },
+      {
+        "metric": "Jaguar Ranking",
+        "ourCall": "💎 Premium Style — the grand tourer that defines Jaguar elegance"
+      }
+    ],
+    "oneLineVerdict": ""
+  },
+  "atAGlance": {
+    "h2": "XK at a Glance",
+    "rows": [
+      {
+        "metric": "Generations",
+        "value": "2 (X100 1996–2006, X150 2006–2014)"
+      },
+      {
+        "metric": "Years Produced",
+        "value": "1996–2014"
+      },
+      {
+        "metric": "Engine Codes Tracked",
+        "value": "6"
+      },
+      {
+        "metric": "Fuel Types",
+        "value": "Petrol"
+      },
+      {
+        "metric": "Most Enquired Engine (2025)",
+        "value": "AJ133 / 508PN (5.0 V8) — 330 enquiries [JAG-VERIFIED]"
+      },
+      {
+        "metric": "Most Reliable",
+        "value": "AJ133 5.0 V8 (post-2009)"
+      },
+      {
+        "metric": "Highest-Risk",
+        "value": "AJ27 4.0 V8 (pre-2000 bore wear)"
+      },
+      {
+        "metric": "Typical Replacement Cost",
+        "value": "£3,000–£9,000 supply-only [JAG-QUOTE]"
+      },
+      {
+        "metric": "Typical Host Value",
+        "value": "£4,000–£35,000 [THIRD-PARTY]"
+      },
+      {
+        "metric": "Overall Rating",
+        "value": "★★★★☆"
+      }
+    ]
+  },
+  "generations": {
+    "h2": "XK Generations — Find Your Vehicle",
+    "subHeadline": "Two generations of V8-powered grand touring — the steel-bodied X100 and the aluminium-monocoque X150.",
+    "cards": [
+      {
+        "title": "X100 (1996–2006) —",
+        "badge": "🔥 Most Enquired — 120 enquiries (2025) [JAG-VERIFIED]",
+        "meta": "1996–2006 • 4.0 AJ27 V8 • 4.2 AJ34 V8",
+        "rating": "★★★★☆",
+        "verdict": "The original modern XK — beautiful, characterful, and increasingly collectable. Buy a 2003+ 4.2 car with full history; early 4.0 cars need bore-wear checks and timing chain inspection before purchase.",
+        "cta": {
+          "label": "Explore X100 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "X150 (2006–2014)",
+        "badge": "",
+        "meta": "2006–2014 • 4.2 AJ34 V8 • 5.0 AJ133 V8 • 5.0 AJ133 Supercharged V8",
+        "rating": "★★★★★",
+        "verdict": "The definitive XK — Ian Callum's aluminium masterpiece. The 2009 facelift brought the 5.0 V8 with much-improved timing chain design. This is the one to buy, especially the naturally aspirated 5.0 Portfolio or the thunderous XKR-S.",
+        "cta": {
+          "label": "Explore X150 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "The 2009 Facelift — The Dividing Line",
+        "badge": "",
+        "meta": "Pre-2009 (4.2-litre): The original X150 launched in 2006 with the 4.2 AJ34 V8 — a proven unit, but the 5.0 that replaced it is objectively better in every way.",
+        "rating": "",
+        "verdict": "",
+        "cta": {
+          "label": "",
+          "href": "#"
+        }
+      }
+    ],
+    "rangeTable": {
+      "title": "",
+      "columns": [],
+      "rows": []
+    },
+    "comparisonLink": {
+      "label": "Read the full comparison: X100 vs X150 →",
+      "href": "#"
+    }
+  },
+  "engineDatabase": {
+    "h2": "XK Engine Codes — The Complete Database",
+    "subHeadline": "Every V8 that powered the XK — verified factory codes, real UK enquiry data, and honest reliability ratings.",
+    "columns": [
+      "Engine Code",
+      "Family",
+      "Fuel",
+      "Disp.",
+      "Power",
+      "Years",
+      "Gen.",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "engines": [
+      {
+        "engineCode": "AJ27",
+        "family": "AJ-V8",
+        "fuel": "Petrol",
+        "displacement": "4.0L",
+        "power": "284–290 bhp",
+        "years": "1996–2002",
+        "model": "X100",
+        "reliability": "★★★☆☆",
+        "enquiries": "[PATTERN DATA]",
+        "avgRebuildCost": "£3,000–£5,000 [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "engineCode": "AJ27S",
+        "family": "AJ-V8 Supercharged",
+        "fuel": "Petrol",
+        "displacement": "4.0L",
+        "power": "370 bhp",
+        "years": "1998–2002",
+        "model": "X100",
+        "reliability": "★★★☆☆",
+        "enquiries": "[PATTERN DATA]",
+        "avgRebuildCost": "£3,500–£5,500 [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "engineCode": "AJ34",
+        "family": "AJ-V8 Gen II",
+        "fuel": "Petrol",
+        "displacement": "4.2L",
+        "power": "300–305 bhp",
+        "years": "2002–2009",
+        "model": "X100 (2002–06) / X150 (2006–09)",
+        "reliability": "★★★★☆",
+        "enquiries": "[PATTERN DATA]",
+        "avgRebuildCost": "£3,500–£6,000 [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "engineCode": "AJ34S",
+        "family": "AJ-V8 Gen II Supercharged",
+        "fuel": "Petrol",
+        "displacement": "4.2L",
+        "power": "390–420 bhp",
+        "years": "2002–2009",
+        "model": "X100 (2002–06) / X150 (2006–09)",
+        "reliability": "★★★★☆",
+        "enquiries": "[PATTERN DATA]",
+        "avgRebuildCost": "£4,500–£7,000 [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "engineCode": "AJ133",
+        "family": "AJ-V8 Gen III",
+        "fuel": "Petrol",
+        "displacement": "5.0L",
+        "power": "385 bhp",
+        "years": "2009–2014",
+        "model": "X150",
+        "reliability": "★★★★★",
+        "enquiries": "330 [JAG-VERIFIED]",
+        "avgRebuildCost": "£5,500–£9,000 [JAG-QUOTE]"
+      },
+      {
+        "engineCode": "AJ133S",
+        "family": "AJ-V8 Gen III Supercharged",
+        "fuel": "Petrol",
+        "displacement": "5.0L",
+        "power": "503–542 bhp",
+        "years": "2009–2014",
+        "model": "X150",
+        "reliability": "★★★★★",
+        "enquiries": "[JAG-VERIFIED]",
+        "avgRebuildCost": "£6,500–£10,000 [JAG-QUOTE]"
+      }
+    ],
+    "confidenceScore": {
+      "title": "",
+      "text": ""
+    },
+    "dataCorrections": []
+  },
+  "commonProblems": {
+    "h2": "Common XK Engine Problems",
+    "subHeadline": "What actually fails on the XK's AJ-V8 engines — and what it costs to fix.",
+    "columns": [
+      "#",
+      "Problem",
+      "Description",
+      "Severity",
+      "Link"
+    ],
+    "problems": [
+      {
+        "id": 1,
+        "issue": "AJ27 4.0 V8 Bore Wear",
+        "description": "Early X100 engines (pre-2000) can suffer cylinder bore wear, causing misfires and blue exhaust smoke on throttle. Full engine rebuild is the only permanent fix.",
+        "severity": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "type": "monitor"
+        },
+        "link": {
+          "label": "Read more →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "issue": "AJ-V8 Timing Chain Tensioner Wear",
+        "description": "Pre-2009 AJ27 and early AJ34 engines have a documented timing chain tensioner weakness. Cold-start rattle is the early warning sign — catastrophic if ignored.",
+        "severity": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "type": "monitor"
+        },
+        "link": {
+          "label": "Read more →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "issue": "AJ133 5.0 V8 Water Pump Failure",
+        "description": "The 5.0 V8's water pump is a known weak point across the AJ133 family. Owner reports confirm it's a routine replacement item — catch it before overheating causes head-gasket damage.",
+        "severity": {
+          "icon": "🟠",
+          "label": "Immediate",
+          "type": "immediate"
+        },
+        "link": {
+          "label": "Read more →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 4,
+        "issue": "ZF 6-Speed Gearbox Torque Converter",
+        "description": "Shared across the X150 range — torque converter lock-up clutch failure causes gearbox slippage, grinding noises and transmission warning lights.",
+        "severity": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "type": "monitor"
+        },
+        "link": {
+          "label": "Read more →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 5,
+        "issue": "Battery Drain & Electrical Gremlins",
+        "description": "XKs are sensitive to battery condition — modules failing to sleep correctly is a frequent no-start complaint. Always use a premium battery.",
+        "severity": {
+          "icon": "🟢",
+          "label": "Low",
+          "type": "low"
+        },
+        "link": {
+          "label": "Read more →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 6,
+        "issue": "Fuel Injector Failure (5.0 V8)",
+        "description": "Faulty injectors on the 5.0 AJ133 cause rough running, reduced power, stalling and excessive fuel consumption.",
+        "severity": {
+          "icon": "🟢",
+          "label": "Low",
+          "type": "low"
+        },
+        "link": {
+          "label": "Read more →",
+          "href": "#"
+        }
+      }
+    ],
+    "urgencyKey": [
+      {
+        "icon": "🔴",
+        "label": "Catastrophic",
+        "text": "stop driving, specialist inspection immediately"
+      },
+      {
+        "icon": "🟠",
+        "label": "Immediate",
+        "text": "book inspection now"
+      },
+      {
+        "icon": "🟡",
+        "label": "Monitor",
+        "text": "book inspection soon"
+      },
+      {
+        "icon": "🟢",
+        "label": "Low",
+        "text": "plan at next service"
+      }
+    ]
+  },
+  "marketIntelligence": {
+    "h2": "XK Market Intelligence — What 290+ UK Owners Told Us in 2025",
+    "signals": [
+      {
+        "signal": "X100 Enquiries",
+        "data": "120 [JAG-VERIFIED]",
+        "demandTrend": "➡ Stable"
+      },
+      {
+        "signal": "X150 Enquiries",
+        "data": "Approx 170 [JAG-VERIFIED]",
+        "demandTrend": "⬆ Rising"
+      },
+      {
+        "signal": "AJ133 / 508PN Enquiries (all models)",
+        "data": "330 [JAG-VERIFIED]",
+        "demandTrend": "⬆ Rising"
+      },
+      {
+        "signal": "Most Enquired Generation",
+        "data": "X150 (2006–2014)",
+        "demandTrend": "⬆ Rising"
+      }
+    ],
+    "insights": [
+      "Interesting insight: The X150 generation accounts for roughly 60% of all XK enquiries in 2025 — the aluminium grand tourer is the one buyers are actively researching, while the X100 is increasingly the preserve of collectors and enthusiasts",
+      "The 5.0 AJ133 engine (fitted to 2009–2014 X150s) generates significantly more enquiry volume than any other XK engine — buyers are actively seeking the post-facelift car, and specialists report this is the generation with the strongest reliability record",
+      "Early 4.0 X100 cars generate relatively low enquiry volume but high forum activity — the enthusiast community is active, but the cars are now cheap enough that a full engine replacement often fails the economics threshold for all but the best examples"
+    ],
+    "liveEnquiryFeedNote": ""
+  },
+  "editorialPullQuote": {
+    "title": "The One Thing We'd Tell Every XK Buyer",
+    "quote": "Buy a 2009–2014 X150 with the 5.0 naturally aspirated V8, full service history, and evidence the water pump has been replaced. It's the sweet spot — the most reliable engine, the best-looking generation, and values that are still £10,000–£20,000 below where they should be."
+  },
+  "replacementCosts": {
+    "h2": "XK Engine Replacement Costs — By Generation",
+    "subHeadline": "Real UK pricing for every XK V8 — used, reconditioned and rebuilt, supply-only, with independent labour guidance.",
+    "tables": [
+      {
+        "title": "",
+        "columns": [
+          "Variant",
+          "Engine Code",
+          "Used (Supply)",
+          "Reconditioned (Supply)",
+          "Rebuilt (Supply)",
+          "Labour Hours"
+        ],
+        "rows": []
+      },
+      {
+        "title": "XKR / XKR-S 5.0 (2009–2014)",
+        "columns": [
+          "Variant",
+          "Engine Code",
+          "Used (Supply)",
+          "Reconditioned (Supply)",
+          "Rebuilt (Supply)",
+          "Labour Hours"
+        ],
+        "rows": []
+      }
+    ],
+    "figuresNote": "Labour estimate: Fitting an XK engine typically takes 12–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE]. The XK rule — the value swing is the story: The XK's value range is one of the widest in the Jaguar line-up. An early X100 XK8 worth £4,000–£5,000 facing a £5,000+ reconditioned engine sits at 100%+ of vehicle value — well above our 60% scrap threshold for Jaguar. The same engine in a 2014 XKR-S worth £30,000–£35,000 sits at just 20–30% of vehicle value — a no-brainer replacement. Before committing to a recon engine, get a realistic market valuation for your specific car and run the numbers. For X100s, used engines often make more sense; for X150s, a reconditioned unit is usually the right call.",
+    "labourEstimate": "Fitting an XK engine typically takes 12–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE]. The XK rule — the value swing is the story: The XK's value range is one of the widest in the Jaguar line-up. An early X100 XK8 worth £4,000–£5,000 facing a £5,000+ reconditioned engine sits at 100%+ of vehicle value — well above our 60% scrap threshold for Jaguar. The same engine in a 2014 XKR-S worth £30,000–£35,000 sits at just 20–30% of vehicle value — a no-brainer replacement. Before committing to a recon engine, get a realistic market valuation for your specific car and run the numbers. For X100s, used engines often make more sense; for X150s, a reconditioned unit is usually the right call.",
+    "economicsBox": {
+      "title": "",
+      "text": ""
+    }
+  },
+  "engineEvolution": {
+    "h2": "How the XK Engine Range Evolved — 1996 to 2014",
+    "columns": [
+      "Era",
+      "Years",
+      "Key Engines",
+      "Why Jaguar Changed",
+      "Worth Knowing"
+    ],
+    "eras": [
+      {
+        "era": "The AJ27 Era",
+        "years": "1996–2002",
+        "keyEngines": "AJ27 4.0 V8, AJ27S 4.0 Supercharged",
+        "whyBmwChanged": "The original XK8 launched with Jaguar's new 4.0-litre V8 — a clean-sheet design replacing the straight-six XJS.",
+        "worthKnowing": "Early cars (pre-2000) have a reputation for bore wear — always inspect before buying."
+      },
+      {
+        "era": "The 4.2 Upgrade",
+        "years": "2002–2006",
+        "keyEngines": "AJ34 4.2 V8, AJ34S 4.2 Supercharged",
+        "whyBmwChanged": "Jaguar increased displacement to 4.2 litres in 2002, bringing more power and improved reliability — the bore-wear issues were largely resolved.",
+        "worthKnowing": "The 4.2 is significantly more robust than the early 4.0 — this is the X100 to target."
+      },
+      {
+        "era": "The Aluminium Revolution",
+        "years": "2006–2009",
+        "keyEngines": "AJ34 4.2 V8, AJ34S 4.2 Supercharged",
+        "whyBmwChanged": "The X150 launched with an aluminium monocoque, losing 150kg over the X100 — the 4.2 engine carried over initially.",
+        "worthKnowing": "The X150 chassis is a masterpiece — Ian Callum's finest work."
+      },
+      {
+        "era": "The 5.0 Transformation",
+        "years": "2009–2014",
+        "keyEngines": "AJ133 5.0 V8, AJ133S 5.0 Supercharged",
+        "whyBmwChanged": "The 2009 facelift brought the 5.0-litre AJ133 V8 with 385bhp (naturally aspirated) and up to 542bhp (supercharged) — plus a revised timing chain tensioner design.",
+        "worthKnowing": "This is the definitive XK engine — more power, stronger reliability, and the one specialists recommend."
+      }
+    ]
+  },
+  "whoShouldBuy": {
+    "h2": "Who Should Buy an XK?",
+    "columns": [
+      "Buyer Profile",
+      "Rating",
+      "Our Verdict"
+    ],
+    "profiles": [
+      {
+        "buyerProfile": "Performance Buyer",
+        "rating": "★★★★★",
+        "verdict": "The XKR-S is one of the most underrated performance cars on the used market — 542bhp, 200mph+, and values that haven't yet caught up to the driving experience. Buy a 2012+ car with full service history."
+      },
+      {
+        "buyerProfile": "Daily Commuter",
+        "rating": "★★★☆☆",
+        "verdict": "The XK is a genuine GT — comfortable, refined, and capable of daily use. But be realistic: fuel economy is 18–25mpg, and maintenance costs reflect the original £70,000 price tag. A 2009+ 5.0 naturally aspirated is the sweet spot."
+      },
+      {
+        "buyerProfile": "Family Buyer",
+        "rating": "★★☆☆☆",
+        "verdict": "The XK is a 2+2 at best — rear seats are tiny, and even children will complain. This is a car for couples, not families. If you need practicality, look at the F-Pace instead."
+      },
+      {
+        "buyerProfile": "Budget Owner",
+        "rating": "★★☆☆☆",
+        "verdict": "An early X100 can be bought for under £5,000 — but a £5,000 engine replacement will quickly exceed the car's value. Buy the best X150 5.0 you can afford, not the cheapest X100 you can find."
+      },
+      {
+        "buyerProfile": "Collector / Keeper",
+        "rating": "★★★★★",
+        "verdict": "The XK, especially the X150, is a future classic. Low-mileage examples with full service history are already appreciating. The XKR-S and Portfolio models are the ones to hold long-term."
+      }
+    ]
+  },
+  "calculatorCta": {
+    "h2": "Can I Repair My XK Engine — or Should I Replace It?",
+    "intro": "The XK presents one of the widest economics swings in the Jaguar range — a £5,000 reconditioned engine in a £4,000 X100 is a financial mistake, but the same engine in a £30,000 XKR-S is a no-brainer. Run the numbers before you commit.",
+    "paths": [
+      {
+        "label": "Path 1 — Know your engine? Launch the Jaguar calculator with XK pre-selected",
+        "href": "/fault-diagnostic-calculator"
+      },
+      {
+        "label": "Path 2 — Not sure which engine you have? We'll identify it first",
+        "href": "/fault-diagnostic-calculator"
+      }
+    ]
+  },
+  "trustBlock": {
+    "h2": "Why XK Owners Trust jaguarengine.uk",
+    "signals": [
+      {
+        "icon": "📊",
+        "title": "Built on Real Data",
+        "text": "Every reliability rating and cost range in this XK guide comes from genuine UK quote and enquiry data — 290+ real XK enquiries in 2025 [JAG-VERIFIED] — not manufacturer marketing, not forum guesswork."
+      },
+      {
+        "icon": "💚",
+        "title": "We Tell You When Not to Repair",
+        "text": "The XK rule is clear: if reconditioned engine cost exceeds roughly 60% of what your specific car is worth, get a scrap valuation alongside any repair quote. We tell XK owners when replacement doesn't make financial sense."
+      },
+      {
+        "icon": "🔧",
+        "title": "Vetted Jaguar Specialists",
+        "text": "Our network includes 15+ vetted Jaguar specialists who work on XK engines daily — from AJ27 bore-wear diagnosis to AJ133 water pump replacement. No generalists — only Jaguar-specific expertise."
+      },
+      {
+        "icon": "🏆",
+        "title": "Part of Engine Finders",
+        "text": "JaguarEngine.uk is part of the Engine Finders family, the UK's leading engine replacement marketplace — giving you the research depth of an independent authority with a vetted route to action when you need one."
+      }
+    ]
+  },
+  "faq": {
+    "h2": "XK Frequently Asked Questions",
+    "items": []
+  },
+  "closingActionCards": {
+    "h2": "Ready to Make a Decision?",
+    "cards": [
+      {
+        "icon": "🔍",
+        "title": "Explore XK Generations",
+        "text": "Compare the X100 and X150 side-by-side to find your perfect grand tourer. → Explore XK Generations",
+        "href": "#"
+      },
+      {
+        "icon": "🩺",
+        "title": "Diagnose My XK",
+        "text": "Run our diagnostic calculator on your specific XK — real costs, honest verdicts, and a route to a vetted specialist. → Diagnose My XK",
+        "href": "#"
+      },
+      {
+        "icon": "🤝",
+        "title": "Compare UK Specialists",
+        "text": "Get matched with one of our 15+ vetted Jaguar specialists for a genuine XK engine quote. → Compare UK Specialists",
+        "href": "#"
+      }
+    ],
+    "footerNote": ""
+  }
+}

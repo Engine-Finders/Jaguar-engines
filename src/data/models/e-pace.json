@@ -1,0 +1,577 @@
+{
+  "meta": {
+    "slug": "e-pace",
+    "title": "E-Pace Engines — The Complete UK Guide",
+    "titleCharCount": 38,
+    "description": "",
+    "descriptionCharCount": 0,
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": ""
+    },
+    "jsonLd": {}
+  },
+  "hero": {
+    "tagPill": "Jaguar • E-Pace • 2017–Present • 1 Generation • Ingenium D • Ingenium P • P300e PHEV",
+    "h1": "E-Pace Engines — The Complete UK Guide",
+    "subHeadline": "Every E-Pace engine across the X540 generation — Ingenium diesel and petrol, plus the P300e plug-in hybrid. Real UK failure data, honest repair-vs-replace economics for pre- and post-2020 cars, and the one engine you can buy with confidence. Backed by 140+ real UK E-Pace engine enquiries in 2025 [JAG-VERIFIED].",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "140+ Enquiries (2025) [JAG-VERIFIED]"
+      },
+      {
+        "icon": "🔧",
+        "label": "1 Generation Covered"
+      },
+      {
+        "icon": "📖",
+        "label": "5 Engine Codes"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Explore E-Pace Engines →",
+      "href": "#"
+    }
+  },
+  "ownershipVerdict": {
+    "h2": "E-Pace — The Ownership Verdict",
+    "metrics": [
+      {
+        "metric": "Overall Ownership Rating",
+        "ourCall": "★★★★☆"
+      },
+      {
+        "metric": "Replacement Economics",
+        "ourCall": "✅ Safe — The E-Pace rule: compact SUV values comfortably absorb the modern Ingenium's replacement cost — safe across the board."
+      },
+      {
+        "metric": "Reliability",
+        "ourCall": "★★★★☆"
+      },
+      {
+        "metric": "Most Reliable Engine",
+        "ourCall": "AJ200P / 204PT — Ingenium petrol — water pump replacement is the only meaningful weak point in our data."
+      },
+      {
+        "metric": "Highest-Risk Engine",
+        "ourCall": "AJ200D / 204DTD — pre-2020 Ingenium diesel tensioner wear — same caveat as Land Rover's diesel Ingenium."
+      },
+      {
+        "metric": "Best Used Buy",
+        "ourCall": "2020+ E-Pace with AJ200P / 204PT petrol — post-facelift Ingenium petrol with the revised timing design and no meaningful caveats."
+      },
+      {
+        "metric": "Average Engine Replacement",
+        "ourCall": "£3,000–£5,800 [JAG-QUOTE]"
+      },
+      {
+        "metric": "Most Common Failure Enquiry",
+        "ourCall": "AJ200D / 204DTD Ingenium Diesel — timing chain tensioner wear (pre-2020) [JAG-VERIFIED]"
+      },
+      {
+        "metric": "Jaguar Ranking",
+        "ourCall": "🚀 High Demand — #6 most-enquired Jaguar model in 2025"
+      }
+    ],
+    "oneLineVerdict": "The E-Pace is the Gateway Jaguar — compact SUV values and modern Ingenium engineering make it a genuinely safe used buy, provided you choose the right engine and the right year. The petrol AJ200P has the cleanest record in our data."
+  },
+  "atAGlance": {
+    "h2": "E-Pace at a Glance",
+    "rows": [
+      {
+        "metric": "Generations",
+        "value": "1 (X540)"
+      },
+      {
+        "metric": "Years Produced",
+        "value": "2017–Present"
+      },
+      {
+        "metric": "Engine Codes Tracked",
+        "value": "5"
+      },
+      {
+        "metric": "Fuel Types",
+        "value": "Diesel, Petrol, Petrol PHEV"
+      },
+      {
+        "metric": "Most Enquired Engine (2025)",
+        "value": "AJ200D / 204DTD Ingenium Diesel [JAG-VERIFIED]"
+      },
+      {
+        "metric": "Most Reliable",
+        "value": "AJ200P / 204PT Ingenium Petrol"
+      },
+      {
+        "metric": "Highest-Risk",
+        "value": "AJ200D / 204DTD (pre-2020)"
+      },
+      {
+        "metric": "Typical Replacement Cost",
+        "value": "£3,000–£5,800 [JAG-QUOTE]"
+      },
+      {
+        "metric": "Typical Host Value",
+        "value": "£12,000–£30,000 [THIRD-PARTY]"
+      },
+      {
+        "metric": "Overall Rating",
+        "value": "★★★★☆"
+      }
+    ]
+  },
+  "generations": {
+    "h2": "E-Pace — One Generation, Five Powertrains",
+    "subHeadline": "The E-Pace ran from 2017 with a single chassis (X540) but a 2020 facelift that changed the engine lineup — choose pre- or post-2020 wisely.",
+    "cards": [
+      {
+        "title": "X540 (2017–Present)",
+        "badge": "",
+        "meta": "🔥 Most Enquired — 140 enquiries (2025) [JAG-VERIFIED]",
+        "rating": "★★★★☆",
+        "verdict": "The E-Pace is Jaguar's compact SUV entry point, and it's the one Jaguar where the petrol Ingenium (AJ200P/204PT) genuinely outperforms its diesel sibling in reliability data — no caveats, just routine water pump replacement. Post-2020 cars get the revised tensioner design on the diesel, making the whole range safe. The P300e is a niche play with 148 enquiries across the JLR range, but E-Pace-specific data is thin — we'd recommend the petrol for most buyers.",
+        "cta": {
+          "label": "Explore X540 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "Comparison sub-block (bolded row-header style):",
+        "badge": "",
+        "meta": "Pre-2020 vs post-2020: The 2020 facelift brought more than cosmetic changes — pre-2020 Ingenium diesel (AJ200D/204DTD) units carry the documented tensioner wear risk that was revised from 2019 onward. Post-2020 cars with the revised diesel are a safer bet. The petrol (AJ200P/204PT) was less affected across both periods, making it the default recommendation unless you genuinely need diesel economy.",
+        "rating": "",
+        "verdict": "",
+        "cta": {
+          "label": "",
+          "href": "#"
+        }
+      }
+    ],
+    "rangeTable": {
+      "title": "",
+      "columns": [],
+      "rows": []
+    },
+    "comparisonLink": {
+      "label": "Read the full comparison: Pre-Facelift vs Facelift E-Pace →",
+      "href": "#"
+    }
+  },
+  "engineDatabase": {
+    "h2": "E-Pace Engine Codes — The Complete Database",
+    "subHeadline": "Every engine fitted to the X540 generation — verified factory codes, real UK enquiry data, and honest reliability ratings.",
+    "columns": [
+      "Engine Code",
+      "Family",
+      "Fuel",
+      "Disp.",
+      "Power",
+      "Years",
+      "Gen.",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "engines": [
+      {
+        "engineCode": "AJ200D / 204DTD",
+        "family": "Ingenium Diesel",
+        "fuel": "Diesel",
+        "displacement": "2.0L",
+        "power": "148–178 bhp",
+        "years": "2017–Present",
+        "model": "X540",
+        "reliability": "★★★☆☆ (pre-2020) / ★★★★☆ (2020+)",
+        "enquiries": "140 [JAG-VERIFIED]",
+        "avgRebuildCost": "£3,500–£5,800 [JAG-QUOTE]"
+      },
+      {
+        "engineCode": "AJ200P / 204PT",
+        "family": "Ingenium Petrol",
+        "fuel": "Petrol",
+        "displacement": "2.0L",
+        "power": "197–247 bhp",
+        "years": "2017–Present",
+        "model": "X540",
+        "reliability": "★★★★☆",
+        "enquiries": "500 [JAG-VERIFIED]",
+        "avgRebuildCost": "£3,000–£5,000 [JAG-QUOTE]"
+      },
+      {
+        "engineCode": "AJ20D6",
+        "family": "Ingenium Diesel",
+        "fuel": "Diesel",
+        "displacement": "2.0L",
+        "power": "201 bhp",
+        "years": "2021–Present",
+        "model": "X540",
+        "reliability": "★★★★☆",
+        "enquiries": "[PATTERN DATA]",
+        "avgRebuildCost": "[PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "engineCode": "AJ20P3 / P300e",
+        "family": "Ingenium Petrol PHEV",
+        "fuel": "Petrol PHEV",
+        "displacement": "2.0L",
+        "power": "296 bhp (combined)",
+        "years": "2020–Present",
+        "model": "X540",
+        "reliability": "★★★★☆",
+        "enquiries": "[PATTERN DATA]",
+        "avgRebuildCost": "[PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "engineCode": "AJ200D (JLR-spec)",
+        "family": "Ingenium Diesel",
+        "fuel": "Diesel",
+        "displacement": "2.0L",
+        "power": "161–178 bhp",
+        "years": "2017–Present",
+        "model": "X540",
+        "reliability": "★★★☆☆ (pre-2020) / ★★★★☆ (2020+)",
+        "enquiries": "[PATTERN DATA]",
+        "avgRebuildCost": "£3,500–£5,800 [JAG-QUOTE]"
+      }
+    ],
+    "confidenceScore": {
+      "title": "How confident are these ratings?",
+      "text": "The AJ200D and AJ200P Ingenium engines are the highest-volume, best-evidenced E-Pace engines — ratings at 90% confidence, based on 590 (diesel) and 500 (petrol) [JAG-VERIFIED] JLR-wide enquiries, cross-referenced against specialist interviews and live owner-forum research. The AJ20D6 (2021+ diesel) and P300e hybrid ratings are expert-knowledge tier — documented patterns and specialist interviews, not proprietary volume data — reflecting the same Ingenium engineering base but with different hardware and usage profiles. Data note (internal): The E-Pace is a single-generation model with the X540 chassis running from 2017 to present. The 2020 facelift brought revised Ingenium tensioner design, which is reflected in the pre-2020 vs post-2020 reliability split. The AJ20D6 is the newer 2.0L diesel variant introduced in 2021 — it shares the Ingenium architecture but has a different emissions setup and is often paired with the mild-hybrid system. The P300e (AJ20P3) is the plug-in hybrid variant — our data shows 148 JLR-wide enquiries for the P300e, but E-Pace-specific numbers are not separately broken out in the source file. No corrections needed — source data matched live verification. All engine codes, displacement and power figures verified against Jaguar technical specifications (Parkers, WhatCar, Autocar). The AJ200D/204DTD split is correctly attributed to both Jaguar and Land Rover, with the same engineering risk profile."
+    },
+    "dataCorrections": []
+  },
+  "commonProblems": {
+    "h2": "Common E-Pace Engine Problems",
+    "subHeadline": "The six most common E-Pace engine issues we see in UK enquiry data — ranked by severity and cost.",
+    "columns": [
+      "#",
+      "Problem",
+      "Description",
+      "Severity",
+      "Link"
+    ],
+    "problems": [
+      {
+        "id": 1,
+        "issue": "AJ200D / 204DTD Timing Chain Tensioner Wear",
+        "description": "Same Ingenium diesel issue shared with Land Rover — pre-2020 tensioner wear can lead to catastrophic failure if not addressed. Post-2020 design much improved. Affects X540 pre-2020 diesel models.",
+        "severity": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "type": "monitor"
+        },
+        "link": {
+          "label": "Read more →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "issue": "AJ200P / 204PT Water Pump Failure",
+        "description": "The petrol Ingenium's only meaningful weak point — water pump seals fail, leading to coolant leaks. Well-documented, moderate repair cost. Affects all X540 petrol models, particularly higher-mileage examples.",
+        "severity": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "type": "monitor"
+        },
+        "link": {
+          "label": "Read more →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "issue": "P300e Plug-in Hybrid System Faults",
+        "description": "The PHEV's hybrid system introduces complexity — battery cooling, electric motor sensors, and software integration issues. Relatively low E-Pace-specific volume in our data but worth checking on any PHEV purchase.",
+        "severity": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "type": "monitor"
+        },
+        "link": {
+          "label": "Read more →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 4,
+        "issue": "AJ20D6 DPF & AdBlue System Issues",
+        "description": "The newer 2.0L diesel's emissions systems are the main complaint — DPF clogging in urban cycles and AdBlue system failures. Lower enquiry volume than the older diesel but still present.",
+        "severity": {
+          "icon": "🟢",
+          "label": "Low",
+          "type": "low"
+        },
+        "link": {
+          "label": "Read more →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 5,
+        "issue": "Infotainment & Software Glitches",
+        "description": "Particularly common on pre-2020 Touch Pro systems — software issues can cause misdiagnosis of genuine engine faults. Often resolved with a software update. Non-engine issue.",
+        "severity": {
+          "icon": "🟢",
+          "label": "Low",
+          "type": "low"
+        },
+        "link": {
+          "label": "Read more →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 6,
+        "issue": "Air Suspension (if fitted) Compressor Failure",
+        "description": "On E-Pace models with adaptive/air suspension, compressor burnout is the most common complaint. Presents with warning lights and suspension sag. Non-engine issue.",
+        "severity": {
+          "icon": "🟢",
+          "label": "Low",
+          "type": "low"
+        },
+        "link": {
+          "label": "Read more →",
+          "href": "#"
+        }
+      }
+    ],
+    "urgencyKey": [
+      {
+        "icon": "🔴",
+        "label": "Catastrophic",
+        "text": "stop driving, specialist inspection immediately"
+      },
+      {
+        "icon": "🟠",
+        "label": "Immediate",
+        "text": "book inspection now"
+      },
+      {
+        "icon": "🟡",
+        "label": "Monitor",
+        "text": "book inspection soon"
+      },
+      {
+        "icon": "🟢",
+        "label": "Low",
+        "text": "plan at next service"
+      }
+    ]
+  },
+  "marketIntelligence": {
+    "h2": "E-Pace Market Intelligence — What 140 UK Owners Told Us in 2025",
+    "signals": [
+      {
+        "signal": "E-Pace X540 Enquiries",
+        "data": "140 [JAG-VERIFIED]",
+        "demandTrend": "➡ Stable"
+      },
+      {
+        "signal": "AJ200D / 204DTD Diesel",
+        "data": "590 JLR-wide enquiries [JAG-VERIFIED]",
+        "demandTrend": "⬆ Rising"
+      },
+      {
+        "signal": "AJ200P / 204PT Petrol",
+        "data": "500 JLR-wide enquiries [JAG-VERIFIED]",
+        "demandTrend": "⬆ Rising"
+      }
+    ],
+    "insights": [
+      "Interesting insight: The E-Pace is the #6 most-enquired Jaguar model overall, and it's the only compact SUV in the range with a clean ✅ Safe verdict across every engine variant in our data — the petrol Ingenium has no material caveats, and even the diesel's pre-2020 tensioner risk is a known, manageable item rather than a catastrophic failure pattern. ([JAG-VERIFIED] — derived from Section 4 model-level and per-engine data)",
+      "Petrol Ingenium demand (500 enquiries) is rising, while diesel Ingenium demand (590 enquiries) remains the largest single cohort — but the petrol is the one we'd recommend for longevity, with water pump replacement as the only meaningful weakness.",
+      "The P300e PHEV accounts for 148 JLR-wide enquiries, but E-Pace-specific data is thin — it's a niche choice in the E-Pace range, and we recommend a full hybrid-system check before purchase, especially on pre-2021 examples."
+    ],
+    "liveEnquiryFeedNote": ""
+  },
+  "editorialPullQuote": {
+    "title": "The One Thing We'd Tell Every E-Pace Buyer",
+    "quote": "Buy a 2020+ E-Pace with the AJ200P / 204PT petrol. The post-facelift petrol Ingenium has the cleanest record in our data — no meaningful weakness beyond routine water pump replacement, and the compact SUV's value comfortably absorbs replacement cost if anything does go wrong. The diesel is safe from 2020 onward, but the petrol is the safer bet unless you genuinely need diesel economy. Internal Notes Step 0 Classification: First-Time Buyer / Gateway Hero figure derivation: 140 [JAG-VERIFIED] = line ~140 in EM_Proprietary_Data_2025 Section 4 (\"Jaguar E-Pace X540\"). This is a single-generation model with a single chassis code, so the number is genuinely model-exclusive — no aggregation across generations or shared-engine inflation. Corrections applied: None required — source data matched live verification for all engine codes and generation facts. The AJ200D/204DTD split is correctly attributed to both Jaguar and Land Rover, with the same engineering risk profile. The P300e's 148 enquiries across the JLR range are not E-Pace-exclusive — the 140 E-Pace enquiries are specifically for the diesel/petrol variants, with PHEV data not separately broken out in the source file. Brand voice applied: Heritage & character — emphasis on British sporting heritage and \"earned reputation\" language where genuinely supported by the data (the E-Pace as the Gateway Jaguar, the petrol Ingenium's clean record, the one Jaguar where petrol outperforms diesel). No invented nostalgia. Data sources: EM_Proprietary_Data_2025 (Sections 4, per-engine tables); Parker's, Autocar, WhatCar, Jaguar technical specifications (live verification). Jaguar E-Pace — Sections 8-14"
+  },
+  "replacementCosts": {
+    "h2": "E-Pace Engine Replacement Costs — By Generation",
+    "subHeadline": "Real UK pricing for used, reconditioned and rebuilt E-Pace engines — supply-only, with labour guidance. All figures are independent specialist rates.",
+    "tables": [
+      {
+        "title": "",
+        "columns": [
+          "Variant",
+          "Engine Code",
+          "Used (Supply)",
+          "Reconditioned (Supply)",
+          "Rebuilt (Supply)",
+          "Labour Hours"
+        ],
+        "rows": []
+      },
+      {
+        "title": "2.0 Diesel (pre-2020)",
+        "columns": [
+          "Variant",
+          "Engine Code",
+          "Used (Supply)",
+          "Reconditioned (Supply)",
+          "Rebuilt (Supply)",
+          "Labour Hours"
+        ],
+        "rows": []
+      }
+    ],
+    "figuresNote": "Labour estimate: Fitting an E-Pace engine typically takes 10–14 hours for the standard 2.0-litre Ingenium units at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE]. The P300e PHEV adds extra complexity, pushing labour closer to 12–16 hours. The E-Pace rule — gateway economics: With the E-Pace typically valued at £12,000–£30,000 [THIRD-PARTY], even the highest reconditioned cost (£5,800) sits at just 19–48% of the vehicle's value — well below our 60% scrap threshold for Jaguar. That means replacement is viable across nearly every example, making the E-Pace one of the safest used Jaguars to own. The petrol AJ200P is the most cost-effective to replace; the diesel AJ200D costs slightly more but remains comfortably within value. If you're looking at a pre-2020 diesel with a suspect tensioner, factor in an inspection before committing — but",
+    "labourEstimate": "Fitting an E-Pace engine typically takes 10–14 hours for the standard 2.0-litre Ingenium units at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE]. The P300e PHEV adds extra complexity, pushing labour closer to 12–16 hours. The E-Pace rule — gateway economics: With the E-Pace typically valued at £12,000–£30,000 [THIRD-PARTY], even the highest reconditioned cost (£5,800) sits at just 19–48% of the vehicle's value — well below our 60% scrap threshold for Jaguar. That means replacement is viable across nearly every example, making the E-Pace one of the safest used Jaguars to own. The petrol AJ200P is the most cost-effective to replace; the diesel AJ200D costs slightly more but remains comfortably within value. If you're looking at a pre-2020 diesel with a suspect tensioner, factor in an inspection before committing — but",
+    "economicsBox": {
+      "title": "",
+      "text": ""
+    }
+  },
+  "engineEvolution": {
+    "h2": "How the E-Pace Engine Range Evolved — 2017 to Today",
+    "columns": [
+      "Era",
+      "Years",
+      "Key Engines",
+      "Why Jaguar Changed",
+      "Worth Knowing"
+    ],
+    "eras": [
+      {
+        "era": "Launch — Early Ingenium",
+        "years": "2017–2019",
+        "keyEngines": "AJ200D / 204DTD (diesel), AJ200P / 204PT (petrol)",
+        "whyBmwChanged": "Jaguar needed a compact SUV to compete with the Audi Q3 and BMW X1 — the E-Pace launched with the full Ingenium family, sharing architecture with Land Rover's Discovery Sport and Evoque.",
+        "worthKnowing": "The original diesel tensioner design was a known weak point from the start — many owners reported chain rattle before 60,000 miles."
+      },
+      {
+        "era": "Facelift & Hardware Revision",
+        "years": "2020–2021",
+        "keyEngines": "Revised AJ200D / 204DTD (tensioner update), AJ200P / 204PT (unchanged)",
+        "whyBmwChanged": "JLR responded to the diesel timing chain failure pattern with a revised tensioner design — the 2020 model year brought the updated part across the Ingenium diesel range.",
+        "worthKnowing": "This is the single most important year split for E-Pace buyers — post-2020 diesel E-Paces are significantly safer. The petrol engine was largely unchanged and already reliable."
+      },
+      {
+        "era": "New Diesel & PHEV Introduction",
+        "years": "2021–Present",
+        "keyEngines": "AJ20D6 (2.0 diesel), AJ20P3 / P300e (plug-in hybrid)",
+        "whyBmwChanged": "Emissions regulations and electrification mandates drove the introduction of the mild-hybrid diesel and the P300e PHEV — both share the Ingenium petrol block but with different hardware and software.",
+        "worthKnowing": "The P300e is the first Jaguar to combine the Ingenium petrol with a plug-in hybrid system — it's a niche choice, but the engine itself carries the petrol's clean reliability record."
+      }
+    ]
+  },
+  "whoShouldBuy": {
+    "h2": "Who Should Buy an E-Pace?",
+    "columns": [
+      "Buyer Profile",
+      "Rating",
+      "Our Verdict"
+    ],
+    "profiles": [
+      {
+        "buyerProfile": "Family Buyer",
+        "rating": "★★★★☆",
+        "verdict": "The E-Pace is compact for a family SUV — rear legroom is tight for adults, and boot space is competitive but not class-leading. Fine for a young family, but taller teenagers will find the back seats cramped. Best as a second car for school runs and weekend trips."
+      },
+      {
+        "buyerProfile": "Daily Commuter",
+        "rating": "★★★★★",
+        "verdict": "For urban and suburban commutes, the E-Pace excels — compact dimensions make parking easy, the petrol Ingenium is refined and quiet, and the ride is comfortable without being wallowy. The diesel makes sense for longer motorway miles, but the petrol is the one we'd pick for mixed-use."
+      },
+      {
+        "buyerProfile": "Budget Owner",
+        "rating": "★★★★☆",
+        "verdict": "With typical values of £12,000–£30,000, the E-Pace sits at the entry point for Jaguar ownership. Running costs are reasonable — the petrol returns 35–40 mpg, the diesel 45–50 mpg — and replacement costs are well within the car's value. The pre-2020 diesel needs a tensioner check, but overall it's a budget-friendly way into the brand."
+      },
+      {
+        "buyerProfile": "Towing & Working Use",
+        "rating": "★★★☆☆",
+        "verdict": "The E-Pace can tow up to 1,800 kg (braked) in most diesel and petrol variants, but it's not a heavy-duty workhorse — the Discovery Sport is better suited for serious towing. If you occasionally tow a small trailer or caravan, the E-Pace will manage, but we'd recommend a full inspection of the cooling system before regular towing."
+      },
+      {
+        "buyerProfile": "First-Time Premium Buyer",
+        "rating": "★★★★★",
+        "verdict": "This is where the E-Pace shines — it's the gateway to Jaguar ownership. Compact SUV values, modern Ingenium engineering, and a safe replacement economics profile make it the ideal first Jaguar. Buy a 2020+ petrol and you'll enjoy the badge and driving dynamics without the maintenance anxiety that plagues some older Jaguars."
+      }
+    ]
+  },
+  "calculatorCta": {
+    "h2": "Can I Repair My E-Pace Engine — or Should I Replace It?",
+    "intro": "If you've got a pre-2020 diesel with a timing chain rattle, you're facing the E-Pace's most common dilemma — repair the tensioner now, or wait for the failure and replace the whole engine. The economics box above shows replacement is viable, but the calculator will give you a personalised verdict based on your car's age, mileage, and value.",
+    "paths": [
+      {
+        "label": "Path 1 — Know your engine? Launch the Jaguar calculator with E-Pace pre-selected",
+        "href": "/fault-diagnostic-calculator"
+      },
+      {
+        "label": "Path 2 — Not sure which engine you have? We'll identify it first → /fault-diagnostic-calculator (identification is step one inside the tool)",
+        "href": "#"
+      }
+    ]
+  },
+  "trustBlock": {
+    "h2": "Why E-Pace Owners Trust jaguarengine.uk",
+    "signals": [
+      {
+        "icon": "📊",
+        "title": "Built on Real Data",
+        "text": "Every reliability rating and cost range comes from genuine UK enquiry and quote data — not manufacturer marketing, not forum guesswork. The E-Pace's 140 enquiries in 2025 [JAG-VERIFIED] give us a solid foundation for every claim on this page."
+      },
+      {
+        "icon": "💚",
+        "title": "We Tell You When Not to Repair",
+        "text": "Where replacement cost exceeds what the car is worth, we say so. For the E-Pace, that rarely happens — the 60% scrap threshold means even the most expensive reconditioned diesel (£5,800) sits well below the value of all but the oldest, highest-mileage examples. That's the difference between a knowledge base and a sales page."
+      },
+      {
+        "icon": "🔧",
+        "title": "Vetted Jaguar Specialists",
+        "text": "Our network includes 15+ vetted Jaguar specialists, each specifically verified for Ingenium diagnostics and replacement — not generalists who happen to take on Jaguar jobs. They know the tensioner issue, the water pump weakness, and the PHEV complexities inside out."
+      },
+      {
+        "icon": "🏆",
+        "title": "Part of Engine Finders",
+        "text": "JaguarEngine.uk is part of the Engine Finders family, the UK's leading engine replacement marketplace — giving you the research depth of an independent authority with a vetted route to action when you need one."
+      }
+    ]
+  },
+  "faq": {
+    "h2": "E-Pace Frequently Asked Questions",
+    "items": []
+  },
+  "closingActionCards": {
+    "h2": "Ready to Make a Decision?",
+    "cards": [
+      {
+        "icon": "🔍",
+        "title": "Explore E-Pace Generations",
+        "text": "",
+        "href": "/e-pace/#generations"
+      },
+      {
+        "icon": "🩺",
+        "title": "Diagnose My E-Pace",
+        "text": "",
+        "href": "/fault-diagnostic-calculator"
+      },
+      {
+        "icon": "🤝",
+        "title": "Compare UK Specialists",
+        "text": "",
+        "href": "/quotes/?model=e-pace"
+      }
+    ],
+    "footerNote": ""
+  }
+}

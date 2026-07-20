@@ -1,0 +1,509 @@
+{
+  "meta": {
+    "slug": "xk-42",
+    "title": "XK 4.2 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 58,
+    "description": "Jaguar XK 4.2 – AJ34 4.2-litre V8. Real UK costs, VVT and cooling system facts, and specialist quotes. Get free prices from 15+ vetted specialists today.",
+    "descriptionCharCount": 158,
+    "canonical": "https://jaguarengine.uk/xk/42/",
+    "openGraph": {
+      "title": "XK 4.2 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Jaguar XK 4.2 – AJ34 4.2-litre V8. Real UK costs, VVT and cooling system facts, and specialist quotes. Get free prices from 15+ vetted specialists today.",
+      "type": "website",
+      "url": "https://jaguarengine.uk/xk/42/",
+      "image": "https://jaguarengine.uk/images/jaguar/hero/xk-42.jpg",
+      "siteName": "JaguarEngine.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "XK 4.2 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Jaguar XK 4.2 – AJ34 4.2-litre V8. Real UK costs, VVT and cooling system facts, and specialist quotes.",
+      "image": "https://jaguarengine.uk/images/jaguar/hero/xk-42.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "XK",
+              "item": "https://jaguarengine.uk/xk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "4.2",
+              "item": "https://jaguarengine.uk/xk/42/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar XK 4.2 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "X100 XK8 4.2 (AJ34, 2002-2006)",
+              "url": "https://jaguarengine.uk/xk/x100/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "X150 XK 4.2 (AJ34, 2006-2009)",
+              "url": "https://jaguarengine.uk/xk/x150/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar XK 4.2 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "AJ34",
+              "url": "https://jaguarengine.uk/engines/aj34/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Jaguar XK 4.2 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned AJ34 engine typically costs £3,000–£5,500 supply only, with used units available from £1,500–£3,000. Fitting adds £1,500–£2,500 depending on the workshop. Engine rebuilds typically cost around £5,000. Use our calculator for a figure specific to your XK."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Jaguar XK 4.2 engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the AJ34 is widely regarded as one of Jaguar's most reliable V8s. It was a vast improvement over the 4.0-litre, with the catastrophic plastic timing chain tensioner issue resolved. Known weaknesses include VVT phase regulator wear, cooling system leaks, and CCV valve clogging."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Jaguar XK 4.2?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "VVT phase regulator wear (rattling on cold start), cooling system leaks from plastic pipes (can cause overheating), crankcase ventilation valve clogging (oil consumption), and oil leaks from the rear crank seal. The 4.2 is significantly more reliable than the earlier 4.0-litre."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Jaguar XK 4.2 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "XK values remain strong — a well-kept X150 is often worth £8,000–£20,000+. A £3,000–£5,500 reconditioned engine is 20–40% of the vehicle's value — within the Jaguar 60% scrap threshold. If the car is a cherished example with good bodywork and interior, replacement is often worthwhile."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Jaguar XK 4.2 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The engine code is AJ34 — it's the only 4.2-litre naturally aspirated V8 used in the XK. You can find it on the VIN plate, in the vehicle documentation, or on a label on the engine itself. Production years: X100 (2002–2006) and X150 (2006–2009)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the AJ34 VVT system, or does the engine need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The VVT phase regulators can be replaced — they are wear items. Replacement costs £800–£2,000 and is a labour-intensive job. If VVT failure causes timing chain issues, the engine can be destroyed. A preventative VVT solenoid and regulator replacement is far cheaper than a full engine replacement (£3,000+). At the first sign of rattling from the front/top of the engine, book an inspection immediately."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "JaguarEngine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Jaguar XK 4.2 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "1500",
+            "highPrice": "7500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Jaguar XK 4.2 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Jaguar XK 4.2 engines (AJ34), sourced from JaguarEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "XK 4.2 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://jaguarengine.uk/xk/42/",
+          "author": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-12",
+          "dateModified": "2026-07-12"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Jaguar XK 4.2 • 2002–2009 • 4.2-litre V8",
+    "h1": "Jaguar XK 4.2 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "The XK 4.2 is powered by Jaguar's AJ34 V8 — a 4.2-litre naturally aspirated engine that delivers 300 PS of smooth, effortless power. It's significantly more reliable than the earlier 4.0-litre, but cooling system and VVT issues are well-documented. Get quotes from UK specialists for reconditioned, rebuilt and used units today.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 15+ Specialists"
+    ],
+    "priceAnchor": "Jaguar XK 4.2 Engines — from £1,500 to £7,500 · Code: AJ34",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free XK 4.2 Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The 4.2 THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "Jaguar XK 4.2 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£1,500–£3,000",
+        "fittedIndie": "£3,500–£5,000",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; lower‑mileage examples"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£3,000–£5,500",
+        "fittedIndie": "£5,000–£7,500",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£4,500–£7,500",
+        "fittedIndie": "£6,500–£9,500",
+        "warranty": "12–24 months",
+        "bestFor": "Long‑term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "N/A — no longer available",
+        "fittedIndie": "N/A",
+        "warranty": "—",
+        "bestFor": "N/A — specialist rebuild only"
+      }
+    ],
+    "figuresNote": "Figures above reflect the current XK 4.2 market. Engine rebuilds typically cost around £5,000, with £3,000 in parts and £2,000 in labour excl. VAT. Used 4.2 engines are significantly more affordable than 5.0 units. See the Era Map above for generation-specific context.",
+    "labourEstimate": "Fitting an XK 4.2 engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). These V8s are \"in and out\" jobs — engine drops out the bottom of the car.",
+    "cta": {
+      "label": "→ Compare XK 4.2 engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "VVT Phase Regulator Wear",
+        "symptoms": "Rattling noise from the front/top of the engine, especially on cold start or at idle, rough idle, hesitation on acceleration, engine warning light, poor low-end torque",
+        "typicalMileage": "60,000–100,000 miles",
+        "repairCost": "£800–£2,000 (VVT solenoid and phase regulator replacement)",
+        "replacementCost": "£3,000–£5,500 (if VVT failure causes timing chain damage)",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "VVT phase regulator failure can lead to timing chain issues and catastrophic engine damage"
+        },
+        "recommendation": "The AJ34's VVT phase regulators have a limited resource — sometimes less than 100,000 km. If you hear rattling from the front of the engine on cold start or at idle, book an inspection immediately. A preventative VVT solenoid and regulator replacement is far cheaper than a full engine rebuild. Use the correct 5W-30 oil and change it regularly to keep the VVT system healthy.",
+        "failureLink": {
+          "label": "Read the full VVT failure guide",
+          "href": "/failures/vvt-failure/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Cooling System Leaks (Plastic Pipes)",
+        "symptoms": "Coolant loss with no visible external leak, rising temperature gauge, steam from the engine bay, overheating, bubbling coolant, warning light",
+        "typicalMileage": "60,000–100,000 miles",
+        "repairCost": "£400–£1,200 (plastic coolant pipe replacement)",
+        "replacementCost": "£3,000–£5,500 (if overheating causes engine damage)",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "a cracked plastic coolant pipe can dump coolant rapidly, leading to catastrophic engine failure"
+        },
+        "recommendation": "The AJ34's cooling system is a known weak point. On long runs, antifreeze leaks often occur due to burst pipes. The aluminium engine is very afraid of overheating. Replace the water pump and plastic pipes preventatively when doing any major engine work. Check coolant levels regularly. If you see bubbling coolant, stop driving immediately — the engine may already be damaged.",
+        "failureLink": {
+          "label": "Read the full coolant leak guide",
+          "href": "/failures/coolant-leak/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Crankcase Ventilation Valve (CCV) Clogging",
+        "symptoms": "Increased oil consumption, blue smoke on startup, rough idle, oil leaks from seals, engine warning light",
+        "typicalMileage": "60,000–100,000 miles",
+        "repairCost": "£200–£500 (CCV valve replacement)",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon"
+        },
+        "recommendation": "The AJ34's crankcase ventilation valve clogs rather quickly, which leads to high oil consumption. If you notice oil consumption increasing, have the CCV system checked. Replacement is inexpensive and straightforward. Ignoring it can lead to oil leaks from seals and, eventually, low oil pressure.",
+        "failureLink": {
+          "label": "Read the full PCV / CCV failure guide",
+          "href": "/failures/pcv-valve-failure/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted Jaguar Specialist →",
+    "supportingLine": "15+ vetted Jaguar specialists, every XK engine era covered, with a 12‑month warranty as standard.",
+    "button": {
+      "label": "Get My Free XK 4.2 Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "XK 4.2 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "VVT phase regulator wear",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£2,000",
+          "whenItMakesSense": "Labour-intensive but far cheaper than a full engine replacement"
+        },
+        {
+          "problem": "Cooling system leaks",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£1,200",
+          "whenItMakesSense": "Replace plastic pipes with upgraded components — catch before overheating"
+        },
+        {
+          "problem": "CCV valve clogging",
+          "repairable": "✅ Yes",
+          "typicalCost": "£200–£500",
+          "whenItMakesSense": "Simple replacement — don't ignore oil consumption"
+        },
+        {
+          "problem": "Timing chain tensioner wear",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£2,000",
+          "whenItMakesSense": "The 4.2 is improved over the 4.0, but tensioners can still wear"
+        },
+        {
+          "problem": "Head gasket failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£3,000",
+          "whenItMakesSense": "Straightforward V8 job — viable on a cherished example"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This XK 4.2? Check These First",
+      "buyIf": [
+        "* Post-2012 engine with updated timing chain components — the most robust version",
+        "* Evidence of cooling system maintenance — water pump, thermostat and plastic pipes replaced",
+        "* No rattling from the front of the engine — VVT system should be healthy",
+        "* Full service history with correct 5W-30 oil — the AJ34 rewards good maintenance",
+        "* A well-maintained example — the 4.2 is widely considered the most reliable XK engine"
+      ],
+      "avoidIf": [
+        "* Any rattling from the front/top of the engine — VVT phase regulator wear is likely",
+        "* Evidence of repeated coolant top-ups without a diagnosed leak — plastic pipes are failing",
+        "* Blue smoke on startup — CCV valve or valve stem seals are failing",
+        "* Poor service history — the AJ34 is robust but unforgiving of neglect",
+        "* Low oil pressure (below 40 psi hot) — indicates main bearing wear or oil pump issues"
+      ]
+    },
+    "closingVerdict": "The AJ34 is widely regarded as one of Jaguar's most reliable V8s — a vast improvement over the troublesome 4.0-litre. The 4.2 doesn't have the catastrophic timing chain tensioner issue that plagued the earlier engine. Its weaknesses are well-understood: VVT phase regulator wear, cooling system leaks from plastic pipes, and CCV valve clogging. Buy on history, maintain on schedule, and the AJ34 will reward you with one of the most refined V8 experiences of any grand tourer.",
+    "cta": {
+      "label": "→ Compare XK 4.2 engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used Jaguar XK 4.2 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "1. Cold Start — Listen for rattles from the front/top of the engine (VVT phase regulator warning — the most critical check on the AJ34)",
+      "2. Service History — including which generation (X100 or X150) and evidence of major maintenance",
+      "3. Coolant Level — Any unexplained loss? (cooling system plastic pipe warning)",
+      "4. Oil Consumption — Does it use more than 1L per 1,000 miles? (CCV valve or valve stem seal warning)",
+      "5. Oil Pressure — Should be at least 40 psi hot; low pressure indicates bearing or oil pump issues",
+      "6. Blue Smoke — Any smoke on startup? (valve stem seals or CCV warning)",
+      "7. Engine Warning Light — Have codes been read? Any unresolved issues?",
+      "8. MOT History — Check for emissions-related failures (catalyst, O2 sensors)"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "AJ34",
+        "years": "2002–2006",
+        "power": "298 hp / 300 PS",
+        "enquiries": "[PATTERN DATA]",
+        "avgReconCost": "£3,000–£5,500 [JAG-QUOTE]"
+      },
+      {
+        "engineCode": "AJ34",
+        "years": "2006–2009",
+        "power": "298 hp / 300 PS",
+        "enquiries": "[PATTERN DATA]",
+        "avgReconCost": "£3,000–£5,500 [JAG-QUOTE]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly — one engine across two generations of the XK 4.2.",
+    "technicalSpecs": {
+      "title": "Technical Specs (AJ34 — 4.2 V8):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "4,196cc (4.2‑litre)"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "V8"
+        },
+        {
+          "label": "* Bore x Stroke",
+          "value": "86.0 x 90.3 mm"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "11.0:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Distributed injection"
+        },
+        {
+          "label": "* Valvetrain",
+          "value": "DOHC, 4 valves per cylinder, VVT on intake"
+        },
+        {
+          "label": "* Timing Drive",
+          "value": "Chain"
+        },
+        {
+          "label": "* Oil Specification",
+          "value": "5W-30"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare XK 4.2 engine prices for your Jaguar",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": []
+  },
+  "faq": {
+    "items": [],
+    "disclaimer": ""
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [
+      {
+        "title": "Trusted XK 4.2 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real XK 4.2 owners, as part of the Engine Finders network, across both the X100 and X150 generations."
+      },
+      {
+        "title": "Compare XK 4.2 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit, with specialists who genuinely understand the AJ34's VVT, cooling system, and CCV nuances."
+      },
+      {
+        "title": "UK Engine Replacement Services for XK 4.2",
+        "text": "supply‑only or full supply & fit available nationwide, covering Jaguar's most reliable V8 with a 12‑month warranty as standard."
+      }
+    ],
+    "finalCta": "Find the best Jaguar XK 4.2 engine replacement UK owners trust. Compare prices from trusted specialists on JaguarEngine.uk today and keep your V8 grand tourer performing at its best.",
+    "ctaButton": {
+      "label": "Compare Jaguar XK 4.2 Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

@@ -1,0 +1,435 @@
+{
+  "meta": {
+    "slug": "v12-he",
+    "title": "Jaguar V12 HE Engine — Specs, Reliability & Replacement Cost",
+    "description": "Glorious V12 with cooling and ignition fragility — rated from 40+ real UK enquiries. Compare prices from 15+ vetted specialists today.",
+    "canonical": "",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Engines",
+              "item": "https://jaguarengine.uk/engines/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "V12 HE",
+              "item": "https://jaguarengine.uk/engines/v12-he/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar models fitted with the V12 HE",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Jaguar XJS XJ27/XJ40 V12 HE",
+              "url": "https://jaguarengine.uk/models/xjs/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Jaguar XJ12 XJ40/X300 V12 HE",
+              "url": "https://jaguarengine.uk/models/xj12/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Jaguar XJ6 XJ40/X300 V12 HE (late)",
+              "url": "https://jaguarengine.uk/models/xj6/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Jaguar V12 HE engine replacement cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned V12 HE typically costs £7,000–£10,000 supply only [JAG-QUOTE], reflecting its rarity, 12-cylinder complexity and specialist-only rebuild requirements. Fitting adds £1,170–£1,560."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Jaguar V12 HE a reliable engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We rate the V12 HE at 2.5★ out of 5 with 75% confidence, based on 40 UK enquiries and specialist reports. Cooling system integrity and ignition reliability are the primary concerns on this ageing V12."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the most common Jaguar V12 HE failure?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cooling system failures — especially water pump leaks, radiator blockages and thermostat housing cracks — are the most frequent issues, typically from 40,000–60,000 miles, often causing overheating and head gasket damage."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Jaguar models use the V12 HE engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The V12 HE was fitted to the XJS, XJ12 and late XJ6 from 1981 to 1997, all in 5.3-litre form with approximately 285–310 PS depending on model and year."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does the Jaguar V12 HE engine last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "With meticulous maintenance and cooling system vigilance, the V12 HE can exceed 150,000 miles. The key to longevity is regular coolant changes and keeping the twin ignition systems in perfect order."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "jaguarengine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "https://jaguarengine.uk/images/logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "Jaguar V12 HE Engine",
+          "brand": {
+            "@type": "Brand",
+            "name": "Jaguar"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "2.5",
+            "bestRating": "5",
+            "ratingCount": "1",
+            "reviewCount": "1"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Jaguar V12 HE Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "4500",
+            "highPrice": "15000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Jaguar V12 HE UK Enquiry & Reliability Data 2025",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the Jaguar V12 HE, sourced from jaguarengine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Jaguar V12 HE Engine — Specs, Reliability & Replacement Cost",
+          "url": "https://jaguarengine.uk/engines/v12-he/",
+          "author": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk Specialist Network"
+          },
+          "datePublished": "2025-07-14",
+          "dateModified": "2025-07-14"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "Jaguar • V12 HE • Petrol • 5.3L V12 • 1981–1997",
+    "h1": "Jaguar V12 HE Engine — Specs, Reliability & Replacement Cost",
+    "subHeadline": "The Jaguar V12 HE is a 5.3-litre petrol V12 — smooth and powerful, but cooling system fragility and ignition complexity are its defining weaknesses. Backed by 40+ real UK enquiries in 2025 [JAG-VERIFIED].",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "40+ Enquiries"
+      },
+      {
+        "icon": "🔧",
+        "label": "3 Models Fitted"
+      },
+      {
+        "icon": "💯",
+        "label": "48/100 Engine Score"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Compare V12 HE Engine Prices →",
+      "href": "#"
+    }
+  },
+  "atAGlance": {
+    "rows": [
+      {
+        "metric": "Engine Family",
+        "value": "V12 HE (High Efficiency)"
+      },
+      {
+        "metric": "Fuel",
+        "value": "Petrol"
+      },
+      {
+        "metric": "Configuration / Displacement",
+        "value": "5.3L V12"
+      },
+      {
+        "metric": "Power Range",
+        "value": "285–310 PS [THIRD-PARTY]"
+      },
+      {
+        "metric": "Years Produced",
+        "value": "1981–1997"
+      },
+      {
+        "metric": "Models Fitted (Jaguar only)",
+        "value": "3 models [JAG-VERIFIED]"
+      },
+      {
+        "metric": "Cross-Brand Fitment",
+        "value": "Exclusive to Jaguar"
+      },
+      {
+        "metric": "Overall Engine Score",
+        "value": "48/100"
+      },
+      {
+        "metric": "SECTION 3 — VERDICT & RATING",
+        "value": "Star rating: 2.5★ out of 5"
+      },
+      {
+        "metric": "Confidence: 75% confidence — based on 40 UK enquiries, limited specialist rebuild reports and enthusiast community consensus.",
+        "value": "Engine Score breakdown:"
+      },
+      {
+        "metric": "Dimension",
+        "value": "Score (of 20)"
+      },
+      {
+        "metric": "How it's determined",
+        "value": "Reliability"
+      },
+      {
+        "metric": "10",
+        "value": "2.5★ × 4 = 10"
+      },
+      {
+        "metric": "Repair Cost",
+        "value": "8"
+      },
+      {
+        "metric": "Reconditioned midpoint ~£8,500 — falls in £7,000–£9,999 bracket",
+        "value": "Repairability"
+      },
+      {
+        "metric": "8",
+        "value": "Complex V12 with dual ignition systems and cooling issues; only a handful of UK specialists will touch it"
+      },
+      {
+        "metric": "Parts Supply",
+        "value": "8"
+      },
+      {
+        "metric": "Some parts still available via specialists and club networks; many components are dealer-only or NLA",
+        "value": "Replacement Economics"
+      },
+      {
+        "metric": "14",
+        "value": "Recon cost ~50–65% of lowest XJS value (£12,000–£15,000); classics may justify spend"
+      },
+      {
+        "metric": "Total",
+        "value": "48/100"
+      },
+      {
+        "metric": "Sum of five rows above",
+        "value": "One-line verdict: The V12 HE is a glorious, smooth engine with serious cooling and ignition vulnerabilities — ownership demands specialist maintenance — buy only with a recent cooling system overhaul."
+      },
+      {
+        "metric": "Best for: committed enthusiasts with access to a V12 specialist and a warm garage.",
+        "value": "Avoid if: you need daily-driver reliability or lack a trusted specialist nearby."
+      }
+    ]
+  },
+  "verdictRating": {
+    "starRating": "",
+    "confidence": "",
+    "scoreNote": "",
+    "scoreBreakdown": {
+      "columns": [
+        "Dimension",
+        "Score (of 20)"
+      ],
+      "rows": []
+    },
+    "oneLineVerdict": "",
+    "bestFor": "",
+    "avoidIf": ""
+  },
+  "compatibility": {
+    "columns": [
+      "Model",
+      "Generation",
+      "Variant/Badge",
+      "Years"
+    ],
+    "rows": [
+      {
+        "model": "Jaguar XJS",
+        "generation": "XJ27 / XJ40",
+        "variantBadge": "V12 HE",
+        "years": "1981–1996"
+      },
+      {
+        "model": "Jaguar XJ12",
+        "generation": "XJ40 / X300",
+        "variantBadge": "V12 HE",
+        "years": "1981–1997"
+      },
+      {
+        "model": "Jaguar XJ6",
+        "generation": "XJ40 / X300",
+        "variantBadge": "V12 HE (late)",
+        "years": "1981–1997"
+      },
+      {
+        "model": "SECTION 5 — COST GUIDE",
+        "generation": "H2: \"V12 HE Replacement Costs\"",
+        "variantBadge": "Condition",
+        "years": "Supply Only"
+      },
+      {
+        "model": "Fitted (Indie)",
+        "generation": "Warranty",
+        "variantBadge": "Used",
+        "years": "£4,500–£7,000 [JAG-QUOTE]"
+      },
+      {
+        "model": "£5,400–£8,400",
+        "generation": "3 months",
+        "variantBadge": "Reconditioned",
+        "years": "£7,000–£10,000 [JAG-QUOTE]"
+      },
+      {
+        "model": "£8,500–£12,000",
+        "generation": "6–12 months",
+        "variantBadge": "Rebuilt",
+        "years": "£10,000–£15,000 [JAG-QUOTE]"
+      },
+      {
+        "model": "£12,000–£18,000",
+        "generation": "12 months",
+        "variantBadge": "Labour estimate: Fitting a V12 HE typically takes 18–24 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE].",
+        "years": "CTA line: → Compare V12 HE engine prices from UK specialists"
+      }
+    ],
+    "crossBrandNote": ""
+  },
+  "costGuide": {
+    "columns": [
+      "Condition",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty"
+    ],
+    "rows": [],
+    "labourEstimate": "",
+    "sharedCostNote": "",
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "Cost — \"How much does a Jaguar V12 HE engine replacement cost?\"",
+        "answer": "A reconditioned V12 HE typically costs £7,000–£10,000 supply only [JAG-QUOTE], reflecting its rarity, 12-cylinder complexity and specialist-only rebuild requirements. Fitting adds £1,170–£1,560."
+      },
+      {
+        "id": 2,
+        "question": "Reliability — \"Is the Jaguar V12 HE a reliable engine?\"",
+        "answer": "We rate the V12 HE at 2.5★ out of 5 with 75% confidence, based on 40 UK enquiries and specialist reports. Cooling system integrity and ignition reliability are the primary concerns on this ageing V12."
+      },
+      {
+        "id": 3,
+        "question": "Common failure — \"What is the most common Jaguar V12 HE failure?\"",
+        "answer": "Cooling system failures — especially water pump leaks, radiator blockages and thermostat housing cracks — are the most frequent issues, typically from 40,000–60,000 miles, often causing overheating and head gasket damage."
+      },
+      {
+        "id": 4,
+        "question": "Fitment — \"Which Jaguar models use the V12 HE engine?\"",
+        "answer": "The V12 HE was fitted to the XJS, XJ12 and late XJ6 from 1981 to 1997, all in 5.3-litre form with approximately 285–310 PS depending on model and year."
+      },
+      {
+        "id": 5,
+        "question": "Longevity — \"How long does the Jaguar V12 HE engine last?\"",
+        "answer": "With meticulous maintenance and cooling system vigilance, the V12 HE can exceed 150,000 miles. The key to longevity is regular coolant changes and keeping the twin ignition systems in perfect order."
+      }
+    ]
+  },
+  "trustCta": {
+    "trustPoints": [
+      "Trusted Suppliers — Every garage and engine rebuilder in our network is vetted, rated and reviewed by real V12 owners, as part of the Engine Finders network.",
+      "Compare Companies — We compare real-time prices from UK-wide specialists so you see exactly what you're paying for, with no hidden fees.",
+      "UK Coverage — Our network spans England, Scotland, Wales and Northern Ireland, connecting you with vetted specialists wherever you are."
+    ],
+    "finalCta": "Find the best Jaguar V12 HE engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and preserve your classic with confidence.",
+    "ctaButton": {
+      "label": "Compare Jaguar V12 HE Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}
