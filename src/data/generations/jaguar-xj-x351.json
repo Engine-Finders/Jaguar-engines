@@ -717,7 +717,58 @@
     "liveFeed": []
   },
   "faq": {
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Jaguar XJ X351 engine replacement cost in the UK?",
+        "answer": "A reconditioned X351 engine typically costs £2,500–£10,000 supply only [JAG-QUOTE], depending on the engine — the 3.0 V6 diesel sits at £4,500–£7,000, the 5.0 V8 at £4,000–£6,500, and the supercharged XJR at £5,500–£10,000. Fitting adds £650–£1,170. Use our calculator for a personalised figure."
+      },
+      {
+        "id": 2,
+        "question": "Which X351 engine is the most reliable?",
+        "answer": "The 3.0-litre V6 diesel (AJV6D) is the X351's most dependable engine — documented examples exceeding 200,000 km without major issues. The 3.0-litre supercharged V6 (306PS) is also robust, though cooling system pipework and supercharger insulator springs need attention. The 5.0 naturally aspirated V8 is reliable but watch for early timing chain guide wear on pre-2013 cars."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Jaguar XJ X351?",
+        "answer": "Early 5.0-litre AJ133 engines (pre-2013) suffer from timing chain guide wear — an engine-out job costing £2,500–£4,500. PCV diaphragm failure on 5.0 V8s causes oil consumption and lean running codes. The 3.0 supercharged V6 has cooling system pipework leaks and supercharger insulator spring issues. Battery-related electrical gremlins and sticky buttons (rubberised coating breakdown) affect all models."
+      },
+      {
+        "id": 4,
+        "question": "Is the Jaguar XJ X351 reliable?",
+        "answer": "It depends on the engine and year. The 3.0 V6 diesel is genuinely robust — many examples exceed 150,000 miles. The 5.0-litre AJ133 is generally reliable but pre-2013 examples need timing chain work. The supercharged variants add complexity — PCV diaphragms, vacuum pump oil leaks, and cooling system issues are common. Regular maintenance is critical; these are high-performance, high-maintenance flagships."
+      },
+      {
+        "id": 5,
+        "question": "Which X351 engine should I avoid?",
+        "answer": "Pre-2013 5.0-litre supercharged AJ133 (XJR, Supersport) without documented timing chain work — the aluminium guide wear issue is well-documented and expensive to fix. A 2.0 i4 Turbo without clear service history is also high-risk, primarily due to parts scarcity in the UK. Avoid any engine without full service history."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my X351 engine needs replacing?",
+        "answer": "Timing chain rattle on cold start (5.0 AJ133), persistent oil consumption or lean running codes (5.0 PCV diaphragm failure), coolant loss or overheating (3.0 V6 SC), persistent warning lights caused by low battery voltage, or sticky buttons and sunroof corrosion are the key warning signs. Use our diagnostic calculator for a personalised assessment."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing an X351 engine, or should I scrap the car?",
+        "answer": "Depends on the car's value. Against a £20,000 XJR, a £5,500–£9,000 recon is 28–45% of the car's value — well within our 60% Jaguar threshold. Against a £10,000 3.0 V6 diesel, a £4,500–£7,000 recon is 45–70% — borderline but often viable for a well-kept example. For a £15,000 5.0 naturally aspirated, a £4,000–£6,500 recon is 27–43% — a repair decision, not a scrap question. Value the car and its condition first; if it's a pre-2013 5.0 without chain history, walk away or budget for the work immediately."
+      },
+      {
+        "id": 8,
+        "question": "How long do X351 engines last?",
+        "answer": "The 3.0 V6 diesel can exceed 200,000 km with proper servicing. The 5.0-litre V8 is capable of high mileage but timing chain guides are the limiting factor on early cars — addressed proactively, it can comfortably reach 120,000+ miles. The 3.0 supercharged V6 is robust but cooling system maintenance is critical. The 2.0 i4 Turbo is less documented, but parts availability may limit longevity in the UK."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the X351, X350, and other XJ generations?",
+        "answer": "The X351 (2010–2019) is the fourth-generation XJ — it featured an all-aluminium architecture and Ian Callum's dramatic new design language. It's fundamentally different from the X350 (2003–2009), which had a steel chassis and more traditional styling. The X350 is covered on its own Generation Page. The X351 was the last traditionally-powered XJ; it was succeeded by the all-electric XJ which was cancelled in 2021."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my X351 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the cylinder block. For the diesel, look for AJV6D (3.0 V6). For petrol, it's AJV6 (3.0 naturally aspirated), AJV6 / 306PS (3.0 supercharged), 2.0T (2.0 i4 Turbo), AJ133 / 508PN (5.0 naturally aspirated), or AJ133 / 508PS (5.0 supercharged). Tell us your variant and registration year and we'll identify it — 15+ vetted Jaguar specialists will confirm it for free."
+      }
+    ]
   },
   "trustCta": {
     "h2": "",

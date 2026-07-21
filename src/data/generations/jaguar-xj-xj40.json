@@ -411,7 +411,58 @@
     "liveFeed": []
   },
   "faq": {
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Jaguar XJ40 engine replacement cost in the UK?",
+        "answer": "A reconditioned XJ40 engine typically costs £2,000–£10,000 supply only [JAG-QUOTE], depending on engine — the 4.0 AJ6 sits at £3,000–£5,500, while the 6.0 V12 can reach £10,000. Fitting adds £650–£1,500 depending on engine and specialist location. For classic cars, value the car carefully before committing."
+      },
+      {
+        "id": 2,
+        "question": "Which Jaguar XJ40 engine is the most reliable?",
+        "answer": "The 4.0-litre AJ6 is considered the most reliable and refined of the XJ40 six-cylinder engines — it benefits from revised cooling and improved electronics over the earlier 3.6. The 3.6 is also well-regarded, particularly in its 1988-onwards form with the ZF 4HP22 gearbox [PROVISIONAL — pending dedicated Engine Page]."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Jaguar XJ40?",
+        "answer": "Head gasket failure and cooling system corrosion on all AJ6 six-cylinder engines are the most significant engine problems. Electrical and fuel injection issues (particularly on early Lucas-equipped cars) and body rust (sills, wheel arches, boot floor) are also common. The 6.0 V12 can suffer from cooling system and ignition issues."
+      },
+      {
+        "id": 4,
+        "question": "Is the Jaguar XJ40 reliable?",
+        "answer": "For a classic car of its era, the XJ40 is reasonably reliable — but it requires careful maintenance. The AJ6 straight-six is a robust engine, but cooling system neglect and electrical gremlins are common failure points. Buy a well-maintained example and budget for regular specialist servicing. The 2.9 is underpowered and best avoided."
+      },
+      {
+        "id": 5,
+        "question": "Which Jaguar XJ40 engine should I avoid?",
+        "answer": "The 2.9-litre AJ6 is the least desirable XJ40 engine — underpowered for the car's weight, only offered on early (1986–1990) cars, and often neglected. The 6.0 V12 is magnificent but very expensive to maintain — only buy one if you have specialist support and deep pockets. For most buyers, the 3.6 or 4.0 AJ6 is the sweet spot."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my XJ40 engine needs replacing?",
+        "answer": "Head gasket failure signs include emulsified oil inside the filler cap and overheating. Cooling system issues show as coolant loss and overheating. Electrical issues show as rough running and warning lights. A pre-purchase inspection by a Jaguar specialist is strongly recommended — they will be able to assess engine and body condition."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing a Jaguar XJ40 engine, or should I scrap the car?",
+        "answer": "Depends on the car's value. Against a well-kept £10,000 XJ40, a £3,000–£5,500 4.0 AJ6 recon is 30–55% of the car's value — safe. Against a tired £4,000 example, the same recon is 75–138% — walk away. Our 60% Jaguar scrap threshold is the line: if replacement cost exceeds 60% of the car's value, evaluate scrap first [EM-VERIFIED]. For V12 cars, collector values may justify higher costs."
+      },
+      {
+        "id": 8,
+        "question": "How long do Jaguar XJ40 engines last?",
+        "answer": "The AJ6 straight-six can exceed 150,000 miles with proper servicing — cooling system maintenance is the key to longevity. The 4.0 is considered the most durable of the AJ6 family. The V12 can also achieve high mileages, but requires more regular specialist attention. All XJ40s are now 30+ years old — condition and history matter more than mileage."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the XJ40 and X300?",
+        "answer": "The XJ40 (1986–1994) introduced the AJ6 engine and a more modern, squared-off design. The X300 (1994–1997) was a significant revision with more rounded styling, improved interior quality, and upgraded engines (AJ16 six and V8 options). The X300 is generally considered more reliable and better built, but the XJ40 has a devoted following for its classic design."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my Jaguar XJ40 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the engine block. Tell us your variant (2.9, 3.2, 3.6, 4.0, or 6.0 V12) and we'll identify it — 15 vetted Jaguar specialists will confirm it for free."
+      }
+    ]
   },
   "trustCta": {
     "h2": "",

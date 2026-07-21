@@ -626,7 +626,58 @@
     "liveFeed": []
   },
   "faq": {
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Jaguar XK X150 engine replacement cost in the UK?",
+        "answer": "A reconditioned X150 engine typically costs £3,500–£11,000 supply only [JAG-QUOTE], depending on the engine — the 4.2-litre AJ34 sits at £3,500–£6,000, the 5.0-litre AJ133 at £4,000–£6,500, and the supercharged XKR at £5,500–£11,000. Fitting adds £650–£1,300. Use our calculator for a personalised figure."
+      },
+      {
+        "id": 2,
+        "question": "Which X150 engine is the most reliable?",
+        "answer": "The 4.2-litre naturally aspirated AJ34 (XK 4.2, 2005–2009) is the X150's most dependable engine — no supercharger complexity, simpler timing system, and a proven track record from the X100. The 5.0-litre naturally aspirated AJ133 is also robust but watch for early timing chain guide wear on pre-2012 cars."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Jaguar XK X150?",
+        "answer": "Early 5.0-litre AJ133 engines suffer from timing chain guide wear (pre-2012) — an engine-out job costing £2,500–£4,500. The 4.2-litre AJ34 and AJ34S have cooling system issues — thermostat housing and water pump failures are common. Supercharger coupler wear affects all XKR variants, causing a rattling noise on overrun. Electrical gremlins are often caused by a weak battery."
+      },
+      {
+        "id": 4,
+        "question": "Is the Jaguar XK X150 reliable?",
+        "answer": "It depends on the engine and year. The 4.2-litre naturally aspirated AJ34 is genuinely robust — many examples exceed 150,000 miles. The 5.0-litre AJ133 is generally reliable but pre-2012 examples need timing chain work. The supercharged variants add complexity — cooling systems and supercharger couplers are the primary concerns. Regular maintenance is critical; these are high-performance, high-maintenance grand tourers."
+      },
+      {
+        "id": 5,
+        "question": "Which X150 engine should I avoid?",
+        "answer": "Pre-2012 5.0-litre supercharged AJ133 (XKR, XKR-S) without documented timing chain work — the aluminium guide wear issue is well-documented and expensive to fix. A neglected 4.2-litre XKR without cooling system history is also high-risk. Avoid any engine without full service history. The XKR-S GT is rare and collectable but parts are scarce and running costs are astronomical."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my X150 engine needs replacing?",
+        "answer": "Timing chain rattle on cold start (5.0 AJ133), coolant loss or overheating (4.2 AJ34/AJ34S), rattling from the supercharger on overrun (XKR), or persistent warning lights caused by low battery voltage are the key warning signs. Use our diagnostic calculator for a personalised assessment."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing an X150 engine, or should I scrap the car?",
+        "answer": "Depends on the car's value. Against a £20,000 XKR, a £5,500–£9,000 recon is 28–45% of the car's value — well within our 60% Jaguar threshold. Against a £10,000 4.2 XK, a £3,500–£6,000 recon is 35–60% — borderline but often viable for a well-kept example. For a £35,000 XKR-S, a £6,000–£10,000 recon is 17–29% — a straightforward repair decision. Value the car and its condition first; if it's a pre-2012 5.0 without chain history, walk away or budget for the work immediately."
+      },
+      {
+        "id": 8,
+        "question": "How long do X150 engines last?",
+        "answer": "The 4.2-litre naturally aspirated AJ34 can exceed 150,000 miles with proper servicing. The 5.0-litre AJ133 is capable of high mileage but timing chain guides are the limiting factor — addressed proactively, it can comfortably reach 120,000+ miles. Supercharged variants require more attention to cooling systems and supercharger couplers but are fundamentally robust."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the XK, XKR, XKR-S and XKR-S GT?",
+        "answer": "All four share the X150 chassis. The XK uses a naturally aspirated V8 (4.2-litre AJ34, 296–305 bhp; or 5.0-litre AJ133, 385 bhp). The XKR uses a supercharged V8 (4.2-litre AJ34S, 396–416 bhp; or 5.0-litre AJ133, 510 bhp). The XKR-S (530 bhp) and XKR-S GT (550 bhp) are higher-output versions of the 5.0-litre supercharged engine, with the GT being a limited-production track-focused variant. Running costs increase significantly with each step up."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my X150 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the cylinder block. For the 4.2-litre, look for AJ34 (naturally aspirated) or AJ34S (supercharged). For the 5.0-litre, it's AJ133 / 508PN (naturally aspirated, 385 bhp) or AJ133 / 508PS (supercharged, 510–550 bhp). Tell us your variant and registration year and we'll identify it — 15+ vetted Jaguar specialists will confirm it for free."
+      }
+    ]
   },
   "trustCta": {
     "h2": "",

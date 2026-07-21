@@ -386,7 +386,58 @@
     "liveFeed": []
   },
   "faq": {
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Jaguar E-Pace X540 engine replacement cost in the UK?",
+        "answer": "A reconditioned X540 engine typically costs £3,000–£9,500 supply only [EM-QUOTE], depending on engine — the 2.0-litre diesel sits at £3,500–£6,500, while the P300e plug-in hybrid can reach £9,500. Fitting adds £650–£1,300 depending on engine and specialist location. Evaluate the car's value carefully before committing."
+      },
+      {
+        "id": 2,
+        "question": "Which Jaguar E-Pace X540 engine is the most reliable?",
+        "answer": "The P200 and P250 2.0-litre Ingenium petrols are the most reliable options — they have fewer major failure modes than the diesels, no DPF or oil dilution issues, and a proven architecture. The 1.5-litre three-cylinder (P160, P300e) is newer, with fewer long-term data points [PROVISIONAL — pending dedicated Engine Page]."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Jaguar E-Pace X540?",
+        "answer": "Timing chain wear and oil dilution from DPF regeneration on the 2.0-litre diesel Ingenium are the two most significant engine problems — both can lead to premature engine failure. The 2.0-litre petrol Ingenium can suffer from cooling system leaks, which are cheap to prevent but expensive if ignored. The P300e PHEV may experience battery degradation over time."
+      },
+      {
+        "id": 4,
+        "question": "Is the Jaguar E-Pace X540 reliable?",
+        "answer": "It depends heavily on which engine you choose. Petrol-powered X540s (P200, P250, P300) are generally reliable, well-understood designs. The diesel range (D150, D165, D180, D200) carries the Ingenium diesel reputation — timing chain and oil dilution risks are the primary concerns. The P300e PHEV is the most complex; early reliability is promising, but the battery is a long-term risk."
+      },
+      {
+        "id": 5,
+        "question": "Which Jaguar E-Pace X540 engine should I avoid?",
+        "answer": "No engine is a hard avoid, but the 2.0-litre diesel Ingenium (D150, D165, D180, D200) requires careful consideration — timing chain wear and oil dilution are well-documented risks. Without documented chain work or evidence of regular short-interval oil changes, it's a higher-risk purchase. The P300e PHEV's battery replacement cost (£6,500+) is also a significant long-term consideration."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my E-Pace engine needs replacing?",
+        "answer": "Cold-start rattle on any diesel E-Pace is the classic early warning of timing chain wear — investigate immediately. Oil dilution (fuel in oil) can be detected by checking the dipstick for a fuel smell. Coolant loss, rough running, or warning lights on any engine are also key warning signs. Use our diagnostic tool for a personalised assessment."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing a Jaguar E-Pace engine, or should I scrap the car?",
+        "answer": "Depends on the car's value. Against a well-kept £15,000 E-Pace, a £4,500–£6,500 diesel recon is 30–43% of the car's value — safe. Against a tired £7,000 example, the same recon is 64–93% — walk away. Our 60% Jaguar scrap threshold is the line: if replacement cost exceeds 60% of the car's value, evaluate scrap first [EM-VERIFIED]."
+      },
+      {
+        "id": 8,
+        "question": "How long do Jaguar E-Pace engines last?",
+        "answer": "The 2.0-litre Ingenium petrols can exceed 120,000 miles with proper servicing — cooling system maintenance is the key to longevity. The diesel Ingenium is limited by its timing chain and oil dilution risks; addressed proactively with chain work and 6,000-mile oil changes, it can reach 100,000+ miles. The P300e battery is rated for approximately 1,500–2,000 charge cycles before significant degradation."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the pre-facelift and facelift E-Pace?",
+        "answer": "The 2020 facelift introduced mild-hybrid technology across most of the range, the 1.5-litre three-cylinder (P160 and P300e), and updated infotainment. The facelift also brought D165 (replacing D150 in some markets) and D200 (replacing D180 at the top of the range). Costs and reliability profiles are similar, but the MHEV systems add complexity — see our facelift-specific analysis for details."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my Jaguar E-Pace X540 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the engine block. Tell us your variant (D150, D165, D180, D200, P160, P200, P250, P300, or P300e) and we'll identify it — 15 vetted Jaguar specialists will confirm it for free."
+      }
+    ]
   },
   "trustCta": {
     "h2": "",

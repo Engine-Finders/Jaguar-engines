@@ -412,7 +412,58 @@
     "liveFeed": []
   },
   "faq": {
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Jaguar S-Type engine replacement cost in the UK?",
+        "answer": "A reconditioned X200 engine typically costs £2,200–£9,000 supply only [JAG-QUOTE], depending on engine — the common 3.0 V6 sits at £2,500–£4,500, while the supercharged S-Type R runs £5,000–£9,000. Fitting adds £650–£1,170. Use our calculator for a personalised figure."
+      },
+      {
+        "id": 2,
+        "question": "Which S-Type X200 engine is the most reliable?",
+        "answer": "The 3.0-litre AJ-V6 is the most dependable — the most common S-Type engine, with a smooth, reliable character and well-understood maintenance needs. The 4.2-litre V8 (post-2002) is also highly reliable and improved over the earlier 4.0 unit."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the S-Type X200?",
+        "answer": "Thermostat housing and coolant leaks on the V6 petrols, timing chain tensioner wear on the 4.0 V8, and injector/EGR/turbo issues on the 2.7 diesel. The 4.2 V8 is improved; the supercharged S-Type R has additional supercharger maintenance costs."
+      },
+      {
+        "id": 4,
+        "question": "Is the S-Type X200 reliable overall?",
+        "answer": "Yes — the S-Type is generally considered one of Jaguar's more dependable Ford-era models. The 3.0 V6 is the sweet spot; the 4.2 V8 is refined and reliable; the 2.7 diesel is more complex but manageable with specialist care. The 4.0 V8 (1999–2002) needs chain attention."
+      },
+      {
+        "id": 5,
+        "question": "Which S-Type X200 engine should I avoid?",
+        "answer": "No engine outright — but a 4.0 V8 without documented timing chain history deserves a thorough inspection. A 2.7 diesel without injector or EGR service history is also a potential liability. The 3.0 V6 is the safest bet."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my S-Type X200 engine needs replacing?",
+        "answer": "Coolant loss or overheating (V6 thermostat housing), cold-start rattle (V8 timing chain), or rough running and smoke (2.7 diesel injectors/EGR) are key warnings. Use our diagnostic calculator for a personalised assessment."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing an S-Type X200 engine, or should I scrap the car?",
+        "answer": "Depends on the car's value. Against a well-kept £4,000+ S-Type, a £2,800 3.0 V6 recon is 70% of the car's value — approaching our 60% Jaguar threshold, assess carefully. Against a tired £2,500 example, the same recon is 112% — walk away. Value the car first."
+      },
+      {
+        "id": 8,
+        "question": "How long do S-Type X200 engines last?",
+        "answer": "The 3.0 V6 can comfortably exceed 150,000 miles with regular servicing. The 4.2 V8 is similarly durable. The 4.0 V8's longevity depends on chain care — addressed proactively, it can reach 150,000+ miles. The 2.7 diesel is complex but capable of 150,000+ miles with rigorous maintenance."
+      },
+      {
+        "id": 9,
+        "question": "What is the S-Type R and how does it differ?",
+        "answer": "The S-Type R (2002–2008) is the performance flagship — powered by a supercharged 4.2-litre V8 producing 396–405 PS. It features uprated suspension, larger brakes and unique styling. It's the most expensive S-Type to maintain but also the most rewarding."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my S-Type X200 engine code?",
+        "answer": "Check the VIN plate, vehicle documentation, or the engine block — 3.0 V6 engines are marked AJ-V6 or FB, 4.2 V8 as AJ8FT, 4.2 supercharged as AJ8FT SC, 2.7 diesel as AJD or AJTDV6. Tell us your variant and registration year and we'll identify it — 15+ vetted Jaguar specialists will confirm it for free."
+      }
+    ]
   },
   "trustCta": {
     "h2": "",
