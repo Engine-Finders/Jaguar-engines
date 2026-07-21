@@ -1,294 +1,73 @@
 [
-  {
-    "slug": "defender-25-diesel",
-    "dataFile": "defender-25-diesel"
-  },
-  {
-    "slug": "defender-d250",
-    "dataFile": "defender-d250"
-  },
-  {
-    "slug": "discovery-sd4",
-    "dataFile": "discovery-sd4"
-  },
-  {
-    "slug": "e-pace-d150",
-    "dataFile": "e-pace-d150"
-  },
-  {
-    "slug": "e-pace-d165",
-    "dataFile": "e-pace-d165"
-  },
-  {
-    "slug": "e-pace-d180",
-    "dataFile": "e-pace-d180"
-  },
-  {
-    "slug": "e-pace-d240",
-    "dataFile": "e-pace-d240"
-  },
-  {
-    "slug": "e-pace-p200",
-    "dataFile": "e-pace-p200"
-  },
-  {
-    "slug": "e-pace-p250",
-    "dataFile": "e-pace-p250"
-  },
-  {
-    "slug": "e-pace-p300",
-    "dataFile": "e-pace-p300"
-  },
-  {
-    "slug": "e-pace-p300e",
-    "dataFile": "e-pace-p300e"
-  },
-  {
-    "slug": "f-pace-20d",
-    "dataFile": "f-pace-20d"
-  },
-  {
-    "slug": "f-pace-25t-p250",
-    "dataFile": "f-pace-25t-p250"
-  },
-  {
-    "slug": "f-pace-d300",
-    "dataFile": "f-pace-d300"
-  },
-  {
-    "slug": "f-pace-p300",
-    "dataFile": "f-pace-p300"
-  },
-  {
-    "slug": "f-pace-p400",
-    "dataFile": "f-pace-p400"
-  },
-  {
-    "slug": "f-pace-p400e",
-    "dataFile": "f-pace-p400e"
-  },
-  {
-    "slug": "f-pace-svr",
-    "dataFile": "f-pace-svr"
-  },
-  {
-    "slug": "f-type-3-0-v6-340",
-    "dataFile": "f-type-3-0-v6-340"
-  },
-  {
-    "slug": "f-type-30-v6-s",
-    "dataFile": "f-type-30-v6-s"
-  },
-  {
-    "slug": "f-type-p300",
-    "dataFile": "f-type-p300"
-  },
-  {
-    "slug": "f-type-r",
-    "dataFile": "f-type-r"
-  },
-  {
-    "slug": "f-type-svr",
-    "dataFile": "f-type-svr"
-  },
-  {
-    "slug": "i-pace-ev400",
-    "dataFile": "i-pace-ev400"
-  },
-  {
-    "slug": "jaguar-e-pace-d200",
-    "dataFile": "jaguar-e-pace-d200"
-  },
-  {
-    "slug": "jaguar-f-pace-25d-30d",
-    "dataFile": "jaguar-f-pace-25d-30d"
-  },
-  {
-    "slug": "jaguar-f-type-p450",
-    "dataFile": "jaguar-f-type-p450"
-  },
-  {
-    "slug": "jaguar-s-type-2-7d",
-    "dataFile": "jaguar-s-type-2-7d"
-  },
-  {
-    "slug": "jaguar-xe-sv-project-8",
-    "dataFile": "jaguar-xe-sv-project-8"
-  },
-  {
-    "slug": "jaguar-xj-4-2-v8",
-    "dataFile": "jaguar-xj-4-2-v8"
-  },
-  {
-    "slug": "jaguar-xj-4-2-xk6",
-    "dataFile": "jaguar-xj-4-2-xk6"
-  },
-  {
-    "slug": "s-type-2-5-v6",
-    "dataFile": "s-type-2-5-v6"
-  },
-  {
-    "slug": "s-type-30-v6",
-    "dataFile": "s-type-30-v6"
-  },
-  {
-    "slug": "s-type-40-v8",
-    "dataFile": "s-type-40-v8"
-  },
-  {
-    "slug": "s-type-42-v8",
-    "dataFile": "s-type-42-v8"
-  },
-  {
-    "slug": "s-type-r",
-    "dataFile": "s-type-r"
-  },
-  {
-    "slug": "x-type-2-2d",
-    "dataFile": "x-type-2-2d"
-  },
-  {
-    "slug": "x-type-20-v6",
-    "dataFile": "x-type-20-v6"
-  },
-  {
-    "slug": "x-type-20d",
-    "dataFile": "x-type-20d"
-  },
-  {
-    "slug": "x-type-25-v6",
-    "dataFile": "x-type-25-v6"
-  },
-  {
-    "slug": "x-type-30-v6",
-    "dataFile": "x-type-30-v6"
-  },
-  {
-    "slug": "xe-20d",
-    "dataFile": "xe-20d"
-  },
-  {
-    "slug": "xe-20t-25t",
-    "dataFile": "xe-20t-25t"
-  },
-  {
-    "slug": "xe-p250",
-    "dataFile": "xe-p250"
-  },
-  {
-    "slug": "xe-p300-30t",
-    "dataFile": "xe-p300-30t"
-  },
-  {
-    "slug": "xe-s",
-    "dataFile": "xe-s"
-  },
-  {
-    "slug": "xf-20-petrol",
-    "dataFile": "xf-20-petrol"
-  },
-  {
-    "slug": "xf-20d-d200",
-    "dataFile": "xf-20d-d200"
-  },
-  {
-    "slug": "xf-22d",
-    "dataFile": "xf-22d"
-  },
-  {
-    "slug": "xf-27d",
-    "dataFile": "xf-27d"
-  },
-  {
-    "slug": "xf-30-sc",
-    "dataFile": "xf-30-sc"
-  },
-  {
-    "slug": "xf-30d",
-    "dataFile": "xf-30d"
-  },
-  {
-    "slug": "xf-42-v8",
-    "dataFile": "xf-42-v8"
-  },
-  {
-    "slug": "xf-5-0-v8-xfr",
-    "dataFile": "xf-5-0-v8-xfr"
-  },
-  {
-    "slug": "xj-27d",
-    "dataFile": "xj-27d"
-  },
-  {
-    "slug": "xj-28-34-xk6",
-    "dataFile": "xj-28-34-xk6"
-  },
-  {
-    "slug": "xj-3-0-v6",
-    "dataFile": "xj-3-0-v6"
-  },
-  {
-    "slug": "xj-30-sc-petrol",
-    "dataFile": "xj-30-sc-petrol"
-  },
-  {
-    "slug": "xj-30d",
-    "dataFile": "xj-30d"
-  },
-  {
-    "slug": "xj-32-v8",
-    "dataFile": "xj-32-v8"
-  },
-  {
-    "slug": "xj-32",
-    "dataFile": "xj-32"
-  },
-  {
-    "slug": "xj-35-v8",
-    "dataFile": "xj-35-v8"
-  },
-  {
-    "slug": "xj-36-aj6",
-    "dataFile": "xj-36-aj6"
-  },
-  {
-    "slug": "xj-40-v8",
-    "dataFile": "xj-40-v8"
-  },
-  {
-    "slug": "xj-40",
-    "dataFile": "xj-40"
-  },
-  {
-    "slug": "xj-50-v8",
-    "dataFile": "xj-50-v8"
-  },
-  {
-    "slug": "xj-53-v12",
-    "dataFile": "xj-53-v12"
-  },
-  {
-    "slug": "xj-60-v12",
-    "dataFile": "xj-60-v12"
-  },
-  {
-    "slug": "xk-40",
-    "dataFile": "xk-40"
-  },
-  {
-    "slug": "xk-42",
-    "dataFile": "xk-42"
-  },
-  {
-    "slug": "xk-50-v8",
-    "dataFile": "xk-50-v8"
-  },
-  {
-    "slug": "xk-xkr-s",
-    "dataFile": "xk-xkr-s"
-  },
-  {
-    "slug": "xk-xkr",
-    "dataFile": "xk-xkr"
-  }
+  { "parent": "discovery", "slug": "sd4", "dataFile": "discovery-sd4" },
+  { "parent": "e-pace", "slug": "d150", "dataFile": "e-pace-d150" },
+  { "parent": "e-pace", "slug": "d165", "dataFile": "e-pace-d165" },
+  { "parent": "e-pace", "slug": "d180", "dataFile": "e-pace-d180" },
+  { "parent": "e-pace", "slug": "d200", "dataFile": "jaguar-e-pace-d200" },
+  { "parent": "e-pace", "slug": "d240", "dataFile": "e-pace-d240" },
+  { "parent": "e-pace", "slug": "p200", "dataFile": "e-pace-p200" },
+  { "parent": "e-pace", "slug": "p250", "dataFile": "e-pace-p250" },
+  { "parent": "e-pace", "slug": "p300", "dataFile": "e-pace-p300" },
+  { "parent": "e-pace", "slug": "p300e", "dataFile": "e-pace-p300e" },
+  { "parent": "f-pace", "slug": "20d", "dataFile": "f-pace-20d" },
+  { "parent": "f-pace", "slug": "25t-p250", "dataFile": "f-pace-25t-p250" },
+  { "parent": "f-pace", "slug": "25d-30d", "dataFile": "jaguar-f-pace-25d-30d" },
+  { "parent": "f-pace", "slug": "d300", "dataFile": "f-pace-d300" },
+  { "parent": "f-pace", "slug": "p300", "dataFile": "f-pace-p300" },
+  { "parent": "f-pace", "slug": "p400", "dataFile": "f-pace-p400" },
+  { "parent": "f-pace", "slug": "p400e", "dataFile": "f-pace-p400e" },
+  { "parent": "f-pace", "slug": "svr", "dataFile": "f-pace-svr" },
+  { "parent": "f-type", "slug": "3-0-v6-340", "dataFile": "f-type-3-0-v6-340" },
+  { "parent": "f-type", "slug": "30-v6-s", "dataFile": "f-type-30-v6-s" },
+  { "parent": "f-type", "slug": "p300", "dataFile": "f-type-p300" },
+  { "parent": "f-type", "slug": "p450", "dataFile": "jaguar-f-type-p450" },
+  { "parent": "f-type", "slug": "r", "dataFile": "f-type-r" },
+  { "parent": "f-type", "slug": "svr", "dataFile": "f-type-svr" },
+  { "parent": "i-pace", "slug": "ev400", "dataFile": "i-pace-ev400" },
+  { "parent": "s-type", "slug": "2-7d", "dataFile": "jaguar-s-type-2-7d" },
+  { "parent": "s-type", "slug": "2-5-v6", "dataFile": "s-type-2-5-v6" },
+  { "parent": "s-type", "slug": "30-v6", "dataFile": "s-type-30-v6" },
+  { "parent": "s-type", "slug": "40-v8", "dataFile": "s-type-40-v8" },
+  { "parent": "s-type", "slug": "42-v8", "dataFile": "s-type-42-v8" },
+  { "parent": "s-type", "slug": "r", "dataFile": "s-type-r" },
+  { "parent": "x-type", "slug": "2-2d", "dataFile": "x-type-2-2d" },
+  { "parent": "x-type", "slug": "20-v6", "dataFile": "x-type-20-v6" },
+  { "parent": "x-type", "slug": "20d", "dataFile": "x-type-20d" },
+  { "parent": "x-type", "slug": "25-v6", "dataFile": "x-type-25-v6" },
+  { "parent": "x-type", "slug": "30-v6", "dataFile": "x-type-30-v6" },
+  { "parent": "xe", "slug": "20d", "dataFile": "xe-20d" },
+  { "parent": "xe", "slug": "20t-25t", "dataFile": "xe-20t-25t" },
+  { "parent": "xe", "slug": "p250", "dataFile": "xe-p250" },
+  { "parent": "xe", "slug": "p300-30t", "dataFile": "xe-p300-30t" },
+  { "parent": "xe", "slug": "s", "dataFile": "xe-s" },
+  { "parent": "xe", "slug": "sv-project-8", "dataFile": "jaguar-xe-sv-project-8" },
+  { "parent": "xf", "slug": "20-petrol", "dataFile": "xf-20-petrol" },
+  { "parent": "xf", "slug": "20d-d200", "dataFile": "xf-20d-d200" },
+  { "parent": "xf", "slug": "22d", "dataFile": "xf-22d" },
+  { "parent": "xf", "slug": "27d", "dataFile": "xf-27d" },
+  { "parent": "xf", "slug": "30-sc", "dataFile": "xf-30-sc" },
+  { "parent": "xf", "slug": "30d", "dataFile": "xf-30d" },
+  { "parent": "xf", "slug": "42-v8", "dataFile": "xf-42-v8" },
+  { "parent": "xf", "slug": "5-0-v8-xfr", "dataFile": "xf-5-0-v8-xfr" },
+  { "parent": "xj", "slug": "27d", "dataFile": "xj-27d" },
+  { "parent": "xj", "slug": "28-34-xk6", "dataFile": "xj-28-34-xk6" },
+  { "parent": "xj", "slug": "3-0-v6", "dataFile": "xj-3-0-v6" },
+  { "parent": "xj", "slug": "30-sc-petrol", "dataFile": "xj-30-sc-petrol" },
+  { "parent": "xj", "slug": "30d", "dataFile": "xj-30d" },
+  { "parent": "xj", "slug": "32-v8", "dataFile": "xj-32-v8" },
+  { "parent": "xj", "slug": "32", "dataFile": "xj-32" },
+  { "parent": "xj", "slug": "35-v8", "dataFile": "xj-35-v8" },
+  { "parent": "xj", "slug": "36-aj6", "dataFile": "xj-36-aj6" },
+  { "parent": "xj", "slug": "40-v8", "dataFile": "xj-40-v8" },
+  { "parent": "xj", "slug": "40", "dataFile": "xj-40" },
+  { "parent": "xj", "slug": "4-2-v8", "dataFile": "jaguar-xj-4-2-v8" },
+  { "parent": "xj", "slug": "4-2-xk6", "dataFile": "jaguar-xj-4-2-xk6" },
+  { "parent": "xj", "slug": "50-v8", "dataFile": "xj-50-v8" },
+  { "parent": "xj", "slug": "53-v12", "dataFile": "xj-53-v12" },
+  { "parent": "xj", "slug": "60-v12", "dataFile": "xj-60-v12" },
+  { "parent": "xk", "slug": "40", "dataFile": "xk-40" },
+  { "parent": "xk", "slug": "42", "dataFile": "xk-42" },
+  { "parent": "xk", "slug": "50-v8", "dataFile": "xk-50-v8" },
+  { "parent": "xk", "slug": "xkr-s", "dataFile": "xk-xkr-s" },
+  { "parent": "xk", "slug": "xkr", "dataFile": "xk-xkr" }
 ]

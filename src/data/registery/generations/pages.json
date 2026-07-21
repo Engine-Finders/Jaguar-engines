@@ -1,78 +1,21 @@
 [
-  {
-    "slug": "jaguar-f-pace-x761",
-    "dataFile": "jaguar-f-pace-x761"
-  },
-  {
-    "slug": "jaguar-f-type-x152",
-    "dataFile": "jaguar-f-type-x152"
-  },
-  {
-    "slug": "jaguar-i-pace-x590",
-    "dataFile": "jaguar-i-pace-x590"
-  },
-  {
-    "slug": "jaguar-x-type-x400",
-    "dataFile": "jaguar-x-type-x400"
-  },
-  {
-    "slug": "jaguar-xe-x760",
-    "dataFile": "jaguar-xe-x760"
-  },
-  {
-    "slug": "jaguar-xf-x250",
-    "dataFile": "jaguar-xf-x250"
-  },
-  {
-    "slug": "jaguar-xf-x260",
-    "dataFile": "jaguar-xf-x260"
-  },
-  {
-    "slug": "jaguar-xj-series-1",
-    "dataFile": "jaguar-xj-series-1"
-  },
-  {
-    "slug": "jaguar-xj-series-2",
-    "dataFile": "jaguar-xj-series-2"
-  },
-  {
-    "slug": "jaguar-xj-series-3",
-    "dataFile": "jaguar-xj-series-3"
-  },
-  {
-    "slug": "jaguar-xj-x300",
-    "dataFile": "jaguar-xj-x300"
-  },
-  {
-    "slug": "jaguar-xj-x308",
-    "dataFile": "jaguar-xj-x308"
-  },
-  {
-    "slug": "jaguar-xj-x350-x358",
-    "dataFile": "jaguar-xj-x350-x358"
-  },
-  {
-    "slug": "jaguar-xj-x351",
-    "dataFile": "jaguar-xj-x351"
-  },
-  {
-    "slug": "jaguar-xk-x100",
-    "dataFile": "jaguar-xk-x100"
-  },
-  {
-    "slug": "jaguar-xk-x150",
-    "dataFile": "jaguar-xk-x150"
-  },
-  {
-    "slug": "jaguar-e-pace-x540",
-    "dataFile": "jaguar-e-pace-x540"
-  },
-  {
-    "slug": "jaguar-s-type-x200",
-    "dataFile": "jaguar-s-type-x200"
-  },
-  {
-    "slug": "jaguar-xj-xj40",
-    "dataFile": "jaguar-xj-xj40"
-  }
+  { "parent": "f-pace", "slug": "x761", "dataFile": "jaguar-f-pace-x761" },
+  { "parent": "f-type", "slug": "x152", "dataFile": "jaguar-f-type-x152" },
+  { "parent": "i-pace", "slug": "x590", "dataFile": "jaguar-i-pace-x590" },
+  { "parent": "x-type", "slug": "x400", "dataFile": "jaguar-x-type-x400" },
+  { "parent": "xe", "slug": "x760", "dataFile": "jaguar-xe-x760" },
+  { "parent": "xf", "slug": "x250", "dataFile": "jaguar-xf-x250" },
+  { "parent": "xf", "slug": "x260", "dataFile": "jaguar-xf-x260" },
+  { "slug": "xj-series-1", "dataFile": "jaguar-xj-series-1" },
+  { "slug": "xj-series-2", "dataFile": "jaguar-xj-series-2" },
+  { "slug": "xj-series-3", "dataFile": "jaguar-xj-series-3" },
+  { "parent": "xj", "slug": "x300", "dataFile": "jaguar-xj-x300" },
+  { "parent": "xj", "slug": "x308", "dataFile": "jaguar-xj-x308" },
+  { "parent": "xj", "slug": "x350-x358", "dataFile": "jaguar-xj-x350-x358" },
+  { "parent": "xj", "slug": "x351", "dataFile": "jaguar-xj-x351" },
+  { "parent": "xk", "slug": "x100", "dataFile": "jaguar-xk-x100" },
+  { "parent": "xk", "slug": "x150", "dataFile": "jaguar-xk-x150" },
+  { "parent": "e-pace", "slug": "x540", "dataFile": "jaguar-e-pace-x540" },
+  { "parent": "s-type", "slug": "x200", "dataFile": "jaguar-s-type-x200" },
+  { "parent": "xj", "slug": "xj40", "dataFile": "jaguar-xj-xj40" }
 ]
