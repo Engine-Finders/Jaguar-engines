@@ -529,44 +529,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (22%), London (18%), South West (15%)【PATTERN DATA】"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a Jaguar E‑Pace D165 engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned E‑Pace D165 (204DTD/AJ200D) engine typically costs £4,000–£7,500 supply only. Most Jaguar engine replacements range from £3,000 to £9,000 depending on the model and engine type. A timing chain replacement alone costs £1,800–£4,500+. Fitting adds £1,000–£1,800 at independent specialist rates. Use our calculator for a figure specific to your car.",
-        "value": "2. Is the Jaguar E‑Pace D165 engine reliable?"
-      },
-      {
-        "label": "The Ingenium 2.0‑litre diesel has a mixed reputation. The common finding is that the timing chain has begun to stretch — unlike a front‑mounted chain on many older engines, the Ingenium's primary timing chain sits at the rear of the engine, against the firewall. Early vehicles (2015–2019) are most frequently affected. The D165 sits in this affected period. Other common issues include DPF clogging, oil dilution, and EGR/AdBlue system failures. The 2.0 D165 engine in the E‑Pace is generally reliable, but like any car, regular maintenance is key. Regular 5,000–8,000 mile oil changes are absolutely essential.",
-        "value": "3. What are the common problems with the Jaguar E‑Pace D165?"
-      },
-      {
-        "label": "Timing chain stretch and tensioner failure (the defining weak point), DPF clogging and oil dilution, EGR system failure, AdBlue system issues (leaks from hoses and filler caps), and ZF 9‑speed transmission issues (jerky gearchanges, delays). See the Era Map above for detailed advice.",
-        "value": "4. Is it worth replacing a Jaguar E‑Pace D165 engine, or should I scrap the car?"
-      },
-      {
-        "label": "Depends on vehicle value. Against a well‑kept E‑Pace (values £12,000–£25,000+ depending on year and mileage), a £4,500–£5,500 reconditioned engine is 20–40% of the vehicle's value — often worth it for a solid example. The Jaguar scrap threshold of 60% means evaluating the whole vehicle and its condition before committing.",
-        "value": "5. How do I find my Jaguar E‑Pace D165 engine code?"
-      },
-      {
-        "label": "The engine code (204DTD or AJ200D) is listed on the VIN plate and vehicle documentation. The D165 badge was introduced with the 2020 E‑Pace facelift and replaced the earlier D150 (148 bhp). The D165 is the entry‑level diesel, available with front‑wheel drive and a six‑speed manual, or all‑wheel drive and a nine‑speed automatic. Tell us your registration and we'll confirm for free.",
-        "value": "6. Can I repair the Ingenium timing chain, or does it require engine replacement?"
-      },
-      {
-        "label": "Yes — if caught early. A preventative timing chain, guide and tensioner replacement costs £1,800–£4,500+. However, the Ingenium timing chain is rear‑mounted, making access disproportionately labour‑intensive. If the chain snaps, a full engine replacement (£4,000–£8,500+) is usually required. At the first sign of cold‑start rattle, book an inspection immediately. Regular oil changes every 5,000–8,000 miles are the best prevention.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "SECTION 9, META AND SCHEMA",
-        "value": "PART 2 — SECTION 9 + META + SCHEMA"
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Jaguar E‑Pace D165 engine replacement cost in the UK?",
+        "answer": "A reconditioned E‑Pace D165 (204DTD/AJ200D) engine typically costs £4,000–£7,500 supply only. Most Jaguar engine replacements range from £3,000 to £9,000 depending on the model and engine type. A timing chain replacement alone costs £1,800–£4,500+. Fitting adds £1,000–£1,800 at independent specialist rates. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the Jaguar E‑Pace D165 engine reliable?",
+        "answer": "The Ingenium 2.0‑litre diesel has a mixed reputation. The common finding is that the timing chain has begun to stretch — unlike a front‑mounted chain on many older engines, the Ingenium's primary timing chain sits at the rear of the engine, against the firewall. Early vehicles (2015–2019) are most frequently affected. The D165 sits in this affected period. Other common issues include DPF clogging, oil dilution, and EGR/AdBlue system failures. The 2.0 D165 engine in the E‑Pace is generally reliable, but like any car, regular maintenance is key. Regular 5,000–8,000 mile oil changes are absolutely essential."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Jaguar E‑Pace D165?",
+        "answer": "Timing chain stretch and tensioner failure (the defining weak point), DPF clogging and oil dilution, EGR system failure, AdBlue system issues (leaks from hoses and filler caps), and ZF 9‑speed transmission issues (jerky gearchanges, delays). See the Era Map above for detailed advice."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Jaguar E‑Pace D165 engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. Against a well‑kept E‑Pace (values £12,000–£25,000+ depending on year and mileage), a £4,500–£5,500 reconditioned engine is 20–40% of the vehicle's value — often worth it for a solid example. The Jaguar scrap threshold of 60% means evaluating the whole vehicle and its condition before committing."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Jaguar E‑Pace D165 engine code?",
+        "answer": "The engine code (204DTD or AJ200D) is listed on the VIN plate and vehicle documentation. The D165 badge was introduced with the 2020 E‑Pace facelift and replaced the earlier D150 (148 bhp). The D165 is the entry‑level diesel, available with front‑wheel drive and a six‑speed manual, or all‑wheel drive and a nine‑speed automatic. Tell us your registration and we'll confirm for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the Ingenium timing chain, or does it require engine replacement?",
+        "answer": "Yes — if caught early. A preventative timing chain, guide and tensioner replacement costs £1,800–£4,500+. However, the Ingenium timing chain is rear‑mounted, making access disproportionately labour‑intensive. If the chain snaps, a full engine replacement (£4,000–£8,500+) is usually required. At the first sign of cold‑start rattle, book an inspection immediately. Regular oil changes every 5,000–8,000 miles are the best prevention."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK Jaguar E‑Pace D165 Owners Trust JaguarEngine.uk",

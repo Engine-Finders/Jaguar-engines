@@ -1,24 +1,209 @@
 {
   "meta": {
-    "slug": "jaguar-aj-v8-4-0-4-2",
-    "title": "Jaguar AJ-V8 4.0/4.2 Engine — Specs, Reliability & Replacement Cost",
-    "description": "",
-    "canonical": "",
+    "slug": "aj-v8-40-42",
+    "title": "Jaguar AJ-V8 4.0/4.2 Engine — Reliability & Replacement Cost",
+    "description": "AJ-V8 is smooth and characterful, but early tensioners can destroy it — rated from UK owner enquiries. Compare quotes from vetted specialists today.",
+    "canonical": "https://jaguarengine.uk/engines/aj-v8-40-42/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "Jaguar AJ-V8 4.0/4.2 Engine — Reliability & Replacement Cost",
+      "description": "AJ-V8 is smooth and characterful, but early tensioners can destroy it — rated from UK owner enquiries. Compare quotes from vetted specialists today.",
+      "type": "website",
+      "url": "https://jaguarengine.uk/engines/aj-v8-40-42/",
+      "image": "https://jaguarengine.uk/images/jaguar/engines/aj-v8-40-42.jpg",
+      "siteName": "jaguarengine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "Jaguar AJ-V8 4.0/4.2 Engine — Reliability & Replacement Cost",
+      "description": "AJ-V8 is smooth and characterful, but early tensioners can destroy it — rated from UK owner enquiries. Compare quotes from vetted specialists today.",
+      "image": "https://jaguarengine.uk/images/jaguar/engines/aj-v8-40-42.jpg"
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Engines",
+              "item": "https://jaguarengine.uk/engines/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "AJ-V8 4.0/4.2",
+              "item": "https://jaguarengine.uk/engines/aj-v8-40-42/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar models fitted with the AJ-V8 4.0/4.2",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "XK8 / XKR X100 4.0L / 4.2L (NA & SC) 1996–2006"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "XJ8 / XJR X308 4.0L / 4.2L 1997–2003"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "XJ8 / XJR X350 / X358 4.2L 2003–2009"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "S-Type X200 4.0L / 4.2L (NA & SC) 1999–2008"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "S-Type R X200 4.2L Supercharged 2002–2007"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "XF X250 4.2L 2008–2009"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "XK X150 4.2L 2006–2009"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "Daimler Super Eight X350 4.2L Supercharged 2005–2009"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Jaguar AJ-V8 engine replacement cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned AJ-V8 typically costs £4,500–£7,500 supply only, varying by displacement (4.0L vs 4.2L) and whether it's naturally aspirated or supercharged. Fitting adds £650–£1,300 depending on labour rates."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Jaguar AJ-V8 a reliable engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The AJ-V8 earns 3.5★ out of 5, based on UK enquiry data and specialist reports — a smooth, characterful V8 with genuine longevity potential, provided the timing chain tensioners have been updated."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the most common Jaguar AJ-V8 failure?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Plastic timing chain tensioners on pre-2002 4.0L engines — they crack, allowing chain slack and catastrophic valve/piston contact. The 4.2L received revised, more durable tensioners."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Jaguar models use the AJ-V8?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The AJ-V8 powered the XK8/XKR (X100), XJ8/XJR (X308/X350), S-Type/S-Type R, and early XF (X250) — eight Jaguar models in total across naturally aspirated and supercharged forms."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Jaguar AJ-V8 the same as Land Rover's version?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the same AJ-V8 family was also fitted to the Land Rover Range Rover L322 (4.4L variant). The core architecture is identical, though Land Rover applications use different ECU calibrations and ancillaries."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "jaguarengine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "https://jaguarengine.uk/images/logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "Jaguar AJ-V8 4.0/4.2 Engine",
+          "brand": {
+            "@type": "Brand",
+            "name": "Jaguar"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "3.5",
+            "bestRating": "5",
+            "ratingCount": "1",
+            "reviewCount": "1"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Jaguar AJ-V8 4.0/4.2 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2500",
+            "highPrice": "9500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Jaguar AJ-V8 UK Enquiry & Reliability Data 2025",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the Jaguar AJ-V8 4.0/4.2, sourced from jaguarengine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Jaguar AJ-V8 4.0/4.2 Engine — Reliability & Replacement Cost",
+          "url": "https://jaguarengine.uk/engines/aj-v8-40-42/",
+          "author": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-14",
+          "dateModified": "2026-07-14"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "Jaguar • AJ-V8 • Petrol • 4.0–4.2L V8 • 1996–2009",
@@ -80,639 +265,48 @@
       {
         "metric": "Overall Engine Score",
         "value": "—"
-      },
-      {
-        "metric": "AJ-V8 — Our Verdict & Rating",
-        "value": "Star rating: 3.5★ out of 5"
-      },
-      {
-        "metric": "Confidence: 90% confidence — based on UK enquiries and cross-referenced specialist rebuild reports.",
-        "value": "Engine Score breakdown:"
-      },
-      {
-        "metric": "Dimension",
-        "value": "Score (of 20)"
-      },
-      {
-        "metric": "How it's determined",
-        "value": "Reliability"
-      },
-      {
-        "metric": "14",
-        "value": "3.5★ × 4"
-      },
-      {
-        "metric": "Repair Cost",
-        "value": "12"
-      },
-      {
-        "metric": "Reconditioned supply midpoint £5,500–£7,000 → falls in £5,000–£6,999 band",
-        "value": "Repairability"
-      },
-      {
-        "metric": "12",
-        "value": "Mix of cheap fixes (tensioners, water pump) and a few expensive ones (crankshaft/bottom-end)"
-      },
-      {
-        "metric": "Parts Supply",
-        "value": "16"
-      },
-      {
-        "metric": "Well-supported but some parts (Nikasil-era blocks) now scarce",
-        "value": "Replacement Economics"
-      },
-      {
-        "metric": "12",
-        "value": "Reconditioned cost ~45–59% of lowest host-vehicle value"
-      },
-      {
-        "metric": "Total",
-        "value": "66/100"
-      },
-      {
-        "metric": "Sum of the five rows above",
-        "value": "One-line verdict: The AJ-V8 is a smooth, characterful V8 with genuine longevity — but early plastic tensioners can destroy it without warning — buy only with proof of updated metal tensioners fitted."
-      },
-      {
-        "metric": "Best for: Enthusiasts who appreciate a refined V8 and maintain it diligently.",
-        "value": "Avoid if: You cannot verify the timing chain tensioners have been updated to the metal-spec units."
-      },
-      {
-        "metric": "AJ-V8 — Where It's Fitted (Jaguar Models)",
-        "value": "Model"
-      },
-      {
-        "metric": "Generation",
-        "value": "Variant/Badge"
-      },
-      {
-        "metric": "Years",
-        "value": "XK8 / XKR"
-      },
-      {
-        "metric": "X100",
-        "value": "4.0L / 4.2L (NA & SC)"
-      },
-      {
-        "metric": "1996–2006",
-        "value": "XJ8 / XJR"
-      },
-      {
-        "metric": "X308",
-        "value": "4.0L / 4.2L"
-      },
-      {
-        "metric": "1997–2003",
-        "value": "XJ8 / XJR"
-      },
-      {
-        "metric": "X350 / X358",
-        "value": "4.2L"
-      },
-      {
-        "metric": "2003–2009",
-        "value": "S-Type"
-      },
-      {
-        "metric": "X200",
-        "value": "4.0L / 4.2L (NA & SC)"
-      },
-      {
-        "metric": "1999–2008",
-        "value": "S-Type R"
-      },
-      {
-        "metric": "X200",
-        "value": "4.2L Supercharged"
-      },
-      {
-        "metric": "2002–2007",
-        "value": "XF"
-      },
-      {
-        "metric": "X250",
-        "value": "4.2L"
-      },
-      {
-        "metric": "2008–2009",
-        "value": "XK"
-      },
-      {
-        "metric": "X150",
-        "value": "4.2L"
-      },
-      {
-        "metric": "2006–2009",
-        "value": "Daimler Super Eight"
-      },
-      {
-        "metric": "X350",
-        "value": "4.2L Supercharged"
-      },
-      {
-        "metric": "2005–2009",
-        "value": "Also powers the Land Rover Range Rover L322 4.4 → landroverengine.uk"
-      },
-      {
-        "metric": "AJ-V8 Replacement Costs",
-        "value": "Condition"
-      },
-      {
-        "metric": "Supply Only",
-        "value": "Fitted (Indie)"
-      },
-      {
-        "metric": "Warranty",
-        "value": "Used"
-      },
-      {
-        "metric": "£2,500–£4,500",
-        "value": "£3,500–£5,500"
-      },
-      {
-        "metric": "3–6 months",
-        "value": "Reconditioned"
-      },
-      {
-        "metric": "£4,500–£7,500",
-        "value": "£5,500–£8,500"
-      },
-      {
-        "metric": "12 months",
-        "value": "Rebuilt"
-      },
-      {
-        "metric": "£6,000–£9,500",
-        "value": "£7,000–£11,000"
-      },
-      {
-        "metric": "12–24 months",
-        "value": "Labour estimate: Fitting a Jaguar AJ-V8 typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer)."
-      },
-      {
-        "metric": "Shared-cost note: Parts cost is similar across Jaguar and Land Rover applications; labour time varies by engine bay access — the XK's tight bay adds time versus the XJ's more generous layout.",
-        "value": "→ Compare AJ-V8 engine prices from UK specialists"
-      },
-      {
-        "metric": "FAQ",
-        "value": "How much does a Jaguar AJ-V8 engine replacement cost?"
-      },
-      {
-        "metric": "A reconditioned AJ-V8 typically costs £4,500–£7,500 supply only, varying by displacement (4.0L vs 4.2L) and whether it's naturally aspirated or supercharged. Fitting adds £650–£1,300 depending on labour rates.",
-        "value": "Is the Jaguar AJ-V8 a reliable engine?"
-      },
-      {
-        "metric": "The AJ-V8 earns 3.5★ out of 5, based on UK enquiry data and specialist reports — a smooth, characterful V8 with genuine longevity potential, provided the timing chain tensioners have been updated.",
-        "value": "What is the most common Jaguar AJ-V8 failure?"
-      },
-      {
-        "metric": "Plastic timing chain tensioners on pre-2002 4.0L engines — they crack, allowing chain slack and catastrophic valve/piston contact. The 4.2L received revised, more durable tensioners.",
-        "value": "Which Jaguar models use the AJ-V8?"
-      },
-      {
-        "metric": "The AJ-V8 powered the XK8/XKR (X100), XJ8/XJR (X308/X350), S-Type/S-Type R, and early XF (X250) — eight Jaguar models in total across naturally aspirated and supercharged forms.",
-        "value": "Is the Jaguar AJ-V8 the same as Land Rover's version?"
-      },
-      {
-        "metric": "Yes — the same AJ-V8 family was also fitted to the Land Rover Range Rover L322 (4.4L variant). The core architecture is identical, though Land Rover applications use different ECU calibrations and ancillaries.",
-        "value": "Why UK AJ-V8 Owners Trust JaguarEngine.uk"
-      },
-      {
-        "metric": "* Trusted Suppliers — Every garage and engine rebuilder in our network is vetted, rated and reviewed by real AJ-V8 owners, as part of the Engine Finders network.",
-        "value": "* Compare Companies — We show you real quotes from multiple UK specialists side by side, so you can compare prices, warranties and lead times before you commit."
-      },
-      {
-        "metric": "* UK Coverage — Our network spans England, Scotland, Wales and Northern Ireland, with specialists who know the AJ-V8 inside out.",
-        "value": "Find the best Jaguar AJ-V8 engine replacement UK drivers rely on. Compare real prices from trusted specialists on Engine Finders today and get back on the road with confidence."
-      },
-      {
-        "metric": "CTA Button: Compare Jaguar AJ-V8 Engine Prices Now →",
-        "value": "Part 2 — Metadata & Schema Stack for Jaguar AJ-V8 4.0/4.2"
-      },
-      {
-        "metric": "Meta Title",
-        "value": "Jaguar AJ-V8 4.0/4.2 Engine — Reliability & Replacement Cost"
-      },
-      {
-        "metric": "Length: 60 characters",
-        "value": "Pattern follows the Engine Page rule (H1‑aligned, not commercial‑first)."
-      },
-      {
-        "metric": "Meta Description",
-        "value": "AJ-V8 is smooth and characterful, but early tensioners can destroy it — rated from UK owner enquiries. Compare quotes from vetted specialists today."
-      },
-      {
-        "metric": "Length: 147 characters",
-        "value": "Open Graph & Twitter Card Tags"
-      },
-      {
-        "metric": "<meta property=\"og:title\" content=\"Jaguar AJ-V8 4.0/4.2 Engine — Reliability & Replacement Cost\" />",
-        "value": "<meta property=\"og:description\" content=\"AJ-V8 is smooth and characterful, but early tensioners can destroy it — rated from UK owner enquiries. Compare quotes from vetted specialists today.\" />"
-      },
-      {
-        "metric": "<meta property=\"og:type\" content=\"website\" />",
-        "value": "<meta property=\"og:url\" content=\"https://jaguarengine.uk/engines/aj-v8-40-42/\" />"
-      },
-      {
-        "metric": "<meta property=\"og:image\" content=\"https://jaguarengine.uk/images/jaguar/engines/aj-v8-40-42.jpg\" />",
-        "value": "<meta property=\"og:site_name\" content=\"jaguarengine.uk\" />"
-      },
-      {
-        "metric": "<meta name=\"twitter:card\" content=\"summary_large_image\" />",
-        "value": "<meta name=\"twitter:title\" content=\"Jaguar AJ-V8 4.0/4.2 Engine — Reliability & Replacement Cost\" />"
-      },
-      {
-        "metric": "<meta name=\"twitter:description\" content=\"AJ-V8 is smooth and characterful, but early tensioners can destroy it — rated from UK owner enquiries. Compare quotes from vetted specialists today.\" />",
-        "value": "<meta name=\"twitter:image\" content=\"https://jaguarengine.uk/images/jaguar/engines/aj-v8-40-42.jpg\" />"
-      },
-      {
-        "metric": "JSON‑LD Schema Markup (@graph array)",
-        "value": "{"
-      },
-      {
-        "metric": "\"@context\": \"https://schema.org\",",
-        "value": "\"@graph\": ["
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"BreadcrumbList\","
-      },
-      {
-        "metric": "\"itemListElement\": [",
-        "value": "{"
-      },
-      {
-        "metric": "\"@type\": \"ListItem\",",
-        "value": "\"position\": 1,"
-      },
-      {
-        "metric": "\"name\": \"Home\",",
-        "value": "\"item\": \"https://jaguarengine.uk/\""
-      },
-      {
-        "metric": "},",
-        "value": "{"
-      },
-      {
-        "metric": "\"@type\": \"ListItem\",",
-        "value": "\"position\": 2,"
-      },
-      {
-        "metric": "\"name\": \"Engines\",",
-        "value": "\"item\": \"https://jaguarengine.uk/engines/\""
-      },
-      {
-        "metric": "},",
-        "value": "{"
-      },
-      {
-        "metric": "\"@type\": \"ListItem\",",
-        "value": "\"position\": 3,"
-      },
-      {
-        "metric": "\"name\": \"AJ-V8 4.0/4.2\",",
-        "value": "\"item\": \"https://jaguarengine.uk/engines/aj-v8-40-42/\""
-      },
-      {
-        "metric": "}",
-        "value": "]"
-      },
-      {
-        "metric": "},",
-        "value": "{"
-      },
-      {
-        "metric": "\"@type\": \"ItemList\",",
-        "value": "\"name\": \"Jaguar models fitted with the AJ-V8 4.0/4.2\","
-      },
-      {
-        "metric": "\"itemListElement\": [",
-        "value": "{"
-      },
-      {
-        "metric": "\"@type\": \"ListItem\",",
-        "value": "\"position\": 1,"
-      },
-      {
-        "metric": "\"name\": \"XK8 / XKR X100 4.0L / 4.2L (NA & SC) 1996–2006\"",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"ListItem\","
-      },
-      {
-        "metric": "\"position\": 2,",
-        "value": "\"name\": \"XJ8 / XJR X308 4.0L / 4.2L 1997–2003\""
-      },
-      {
-        "metric": "},",
-        "value": "{"
-      },
-      {
-        "metric": "\"@type\": \"ListItem\",",
-        "value": "\"position\": 3,"
-      },
-      {
-        "metric": "\"name\": \"XJ8 / XJR X350 / X358 4.2L 2003–2009\"",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"ListItem\","
-      },
-      {
-        "metric": "\"position\": 4,",
-        "value": "\"name\": \"S-Type X200 4.0L / 4.2L (NA & SC) 1999–2008\""
-      },
-      {
-        "metric": "},",
-        "value": "{"
-      },
-      {
-        "metric": "\"@type\": \"ListItem\",",
-        "value": "\"position\": 5,"
-      },
-      {
-        "metric": "\"name\": \"S-Type R X200 4.2L Supercharged 2002–2007\"",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"ListItem\","
-      },
-      {
-        "metric": "\"position\": 6,",
-        "value": "\"name\": \"XF X250 4.2L 2008–2009\""
-      },
-      {
-        "metric": "},",
-        "value": "{"
-      },
-      {
-        "metric": "\"@type\": \"ListItem\",",
-        "value": "\"position\": 7,"
-      },
-      {
-        "metric": "\"name\": \"XK X150 4.2L 2006–2009\"",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"ListItem\","
-      },
-      {
-        "metric": "\"position\": 8,",
-        "value": "\"name\": \"Daimler Super Eight X350 4.2L Supercharged 2005–2009\""
-      },
-      {
-        "metric": "}",
-        "value": "]"
-      },
-      {
-        "metric": "},",
-        "value": "{"
-      },
-      {
-        "metric": "\"@type\": \"FAQPage\",",
-        "value": "\"mainEntity\": ["
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"Question\","
-      },
-      {
-        "metric": "\"name\": \"How much does a Jaguar AJ-V8 engine replacement cost?\",",
-        "value": "\"acceptedAnswer\": {"
-      },
-      {
-        "metric": "\"@type\": \"Answer\",",
-        "value": "\"text\": \"A reconditioned AJ-V8 typically costs £4,500–£7,500 supply only, varying by displacement (4.0L vs 4.2L) and whether it's naturally aspirated or supercharged. Fitting adds £650–£1,300 depending on labour rates.\""
-      },
-      {
-        "metric": "}",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"Question\","
-      },
-      {
-        "metric": "\"name\": \"Is the Jaguar AJ-V8 a reliable engine?\",",
-        "value": "\"acceptedAnswer\": {"
-      },
-      {
-        "metric": "\"@type\": \"Answer\",",
-        "value": "\"text\": \"The AJ-V8 earns 3.5★ out of 5, based on UK enquiry data and specialist reports — a smooth, characterful V8 with genuine longevity potential, provided the timing chain tensioners have been updated.\""
-      },
-      {
-        "metric": "}",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"Question\","
-      },
-      {
-        "metric": "\"name\": \"What is the most common Jaguar AJ-V8 failure?\",",
-        "value": "\"acceptedAnswer\": {"
-      },
-      {
-        "metric": "\"@type\": \"Answer\",",
-        "value": "\"text\": \"Plastic timing chain tensioners on pre-2002 4.0L engines — they crack, allowing chain slack and catastrophic valve/piston contact. The 4.2L received revised, more durable tensioners.\""
-      },
-      {
-        "metric": "}",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"Question\","
-      },
-      {
-        "metric": "\"name\": \"Which Jaguar models use the AJ-V8?\",",
-        "value": "\"acceptedAnswer\": {"
-      },
-      {
-        "metric": "\"@type\": \"Answer\",",
-        "value": "\"text\": \"The AJ-V8 powered the XK8/XKR (X100), XJ8/XJR (X308/X350), S-Type/S-Type R, and early XF (X250) — eight Jaguar models in total across naturally aspirated and supercharged forms.\""
-      },
-      {
-        "metric": "}",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"Question\","
-      },
-      {
-        "metric": "\"name\": \"Is the Jaguar AJ-V8 the same as Land Rover's version?\",",
-        "value": "\"acceptedAnswer\": {"
-      },
-      {
-        "metric": "\"@type\": \"Answer\",",
-        "value": "\"text\": \"Yes — the same AJ-V8 family was also fitted to the Land Rover Range Rover L322 (4.4L variant). The core architecture is identical, though Land Rover applications use different ECU calibrations and ancillaries.\""
-      },
-      {
-        "metric": "}",
-        "value": "}"
-      },
-      {
-        "metric": "]",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"Organization\","
-      },
-      {
-        "metric": "\"name\": \"jaguarengine.uk\",",
-        "value": "\"url\": \"https://jaguarengine.uk/\","
-      },
-      {
-        "metric": "\"logo\": \"https://jaguarengine.uk/images/logo.png\",",
-        "value": "\"parentOrganization\": {"
-      },
-      {
-        "metric": "\"@type\": \"Organization\",",
-        "value": "\"name\": \"Engine Finders\""
-      },
-      {
-        "metric": "}",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"Product\","
-      },
-      {
-        "metric": "\"name\": \"Jaguar AJ-V8 4.0/4.2 Engine\",",
-        "value": "\"brand\": {"
-      },
-      {
-        "metric": "\"@type\": \"Brand\",",
-        "value": "\"name\": \"Jaguar\""
-      },
-      {
-        "metric": "},",
-        "value": "\"aggregateRating\": {"
-      },
-      {
-        "metric": "\"@type\": \"AggregateRating\",",
-        "value": "\"ratingValue\": \"3.5\","
-      },
-      {
-        "metric": "\"bestRating\": \"5\",",
-        "value": "\"ratingCount\": \"1\","
-      },
-      {
-        "metric": "\"reviewCount\": \"1\"",
-        "value": "}"
-      },
-      {
-        "metric": "},",
-        "value": "{"
-      },
-      {
-        "metric": "\"@type\": \"Service\",",
-        "value": "\"serviceType\": \"Jaguar AJ-V8 4.0/4.2 Engine Replacement\","
-      },
-      {
-        "metric": "\"provider\": {",
-        "value": "\"@type\": \"Organization\","
-      },
-      {
-        "metric": "\"name\": \"jaguarengine.uk\"",
-        "value": "},"
-      },
-      {
-        "metric": "\"areaServed\": \"GB\",",
-        "value": "\"offers\": {"
-      },
-      {
-        "metric": "\"@type\": \"AggregateOffer\",",
-        "value": "\"priceCurrency\": \"GBP\","
-      },
-      {
-        "metric": "\"lowPrice\": \"2500\",",
-        "value": "\"highPrice\": \"9500\","
-      },
-      {
-        "metric": "\"availability\": \"https://schema.org/InStock\"",
-        "value": "}"
-      },
-      {
-        "metric": "},",
-        "value": "{"
-      },
-      {
-        "metric": "\"@type\": \"Dataset\",",
-        "value": "\"name\": \"Jaguar AJ-V8 UK Enquiry & Reliability Data 2025\","
-      },
-      {
-        "metric": "\"description\": \"Proprietary UK enquiry volumes and reliability scoring data for the Jaguar AJ-V8 4.0/4.2, sourced from jaguarengine.uk's specialist marketplace activity.\",",
-        "value": "\"creator\": {"
-      },
-      {
-        "metric": "\"@type\": \"Organization\",",
-        "value": "\"name\": \"jaguarengine.uk\""
-      },
-      {
-        "metric": "},",
-        "value": "\"temporalCoverage\": \"2025\","
-      },
-      {
-        "metric": "\"spatialCoverage\": \"United Kingdom\"",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"WebPage\","
-      },
-      {
-        "metric": "\"name\": \"Jaguar AJ-V8 4.0/4.2 Engine — Reliability & Replacement Cost\",",
-        "value": "\"url\": \"https://jaguarengine.uk/engines/aj-v8-40-42/\","
-      },
-      {
-        "metric": "\"author\": {",
-        "value": "\"@type\": \"Organization\","
-      },
-      {
-        "metric": "\"name\": \"jaguarengine.uk Editorial Team\"",
-        "value": "},"
-      },
-      {
-        "metric": "\"reviewedBy\": {",
-        "value": "\"@type\": \"Organization\","
-      },
-      {
-        "metric": "\"name\": \"jaguarengine.uk Specialist Network\"",
-        "value": "},"
-      },
-      {
-        "metric": "\"datePublished\": \"2026-07-14\",",
-        "value": "\"dateModified\": \"2026-07-14\""
-      },
-      {
-        "metric": "}",
-        "value": "]"
       }
     ]
   },
   "verdictRating": {
-    "starRating": "",
-    "confidence": "",
-    "scoreNote": "",
+    "starRating": "3.5★ out of 5",
+    "confidence": "90% confidence — based on UK enquiries and cross-referenced specialist rebuild reports.",
+    "scoreNote": "Engine Score breakdown:",
     "scoreBreakdown": {
       "columns": [
         "Dimension",
         "Score (of 20)"
       ],
-      "rows": []
+      "rows": [
+        {
+          "dimension": "Reliability",
+          "score": "14 (3.5★ × 4)"
+        },
+        {
+          "dimension": "Repair Cost",
+          "score": "12 (Reconditioned supply midpoint £5,500–£7,000 → falls in £5,000–£6,999 band)"
+        },
+        {
+          "dimension": "Repairability",
+          "score": "12 (Mix of cheap fixes (tensioners, water pump) and a few expensive ones (crankshaft/bottom-end))"
+        },
+        {
+          "dimension": "Parts Supply",
+          "score": "16 (Well-supported but some parts (Nikasil-era blocks) now scarce)"
+        },
+        {
+          "dimension": "Replacement Economics",
+          "score": "12 (Reconditioned cost ~45–59% of lowest host-vehicle value)"
+        },
+        {
+          "dimension": "Total",
+          "score": "66/100 (Sum of the five rows above)"
+        }
+      ]
     },
-    "oneLineVerdict": "",
-    "bestFor": "",
-    "avoidIf": ""
+    "oneLineVerdict": "The AJ-V8 is a smooth, characterful V8 with genuine longevity — but early plastic tensioners can destroy it without warning — buy only with proof of updated metal tensioners fitted.",
+    "bestFor": "Enthusiasts who appreciate a refined V8 and maintain it diligently.",
+    "avoidIf": "You cannot verify the timing chain tensioners have been updated to the metal-spec units."
   },
   "compatibility": {
     "columns": [
@@ -721,8 +315,57 @@
       "Variant/Badge",
       "Years"
     ],
-    "rows": [],
-    "crossBrandNote": ""
+    "rows": [
+      {
+        "model": "XK8 / XKR",
+        "generation": "X100",
+        "variantBadge": "4.0L / 4.2L (NA & SC)",
+        "years": "1996–2006"
+      },
+      {
+        "model": "XJ8 / XJR",
+        "generation": "X308",
+        "variantBadge": "4.0L / 4.2L",
+        "years": "1997–2003"
+      },
+      {
+        "model": "XJ8 / XJR",
+        "generation": "X350 / X358",
+        "variantBadge": "4.2L",
+        "years": "2003–2009"
+      },
+      {
+        "model": "S-Type",
+        "generation": "X200",
+        "variantBadge": "4.0L / 4.2L (NA & SC)",
+        "years": "1999–2008"
+      },
+      {
+        "model": "S-Type R",
+        "generation": "X200",
+        "variantBadge": "4.2L Supercharged",
+        "years": "2002–2007"
+      },
+      {
+        "model": "XF",
+        "generation": "X250",
+        "variantBadge": "4.2L",
+        "years": "2008–2009"
+      },
+      {
+        "model": "XK",
+        "generation": "X150",
+        "variantBadge": "4.2L",
+        "years": "2006–2009"
+      },
+      {
+        "model": "Daimler Super Eight",
+        "generation": "X350",
+        "variantBadge": "4.2L Supercharged",
+        "years": "2005–2009"
+      }
+    ],
+    "crossBrandNote": "Also powers the Land Rover Range Rover L322 4.4 → landroverengine.uk"
   },
   "costGuide": {
     "columns": [
@@ -731,22 +374,67 @@
       "Fitted (Indie)",
       "Warranty"
     ],
-    "rows": [],
-    "labourEstimate": "",
-    "sharedCostNote": "",
+    "rows": [
+      {
+        "condition": "Used",
+        "supplyOnly": "£2,500–£4,500",
+        "fittedIndie": "£3,500–£5,500",
+        "warranty": "3–6 months"
+      },
+      {
+        "condition": "Reconditioned",
+        "supplyOnly": "£4,500–£7,500",
+        "fittedIndie": "£5,500–£8,500",
+        "warranty": "12 months"
+      },
+      {
+        "condition": "Rebuilt",
+        "supplyOnly": "£6,000–£9,500",
+        "fittedIndie": "£7,000–£11,000",
+        "warranty": "12–24 months"
+      }
+    ],
+    "labourEstimate": "Fitting a Jaguar AJ-V8 typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "sharedCostNote": "Parts cost is similar across Jaguar and Land Rover applications; labour time varies by engine bay access — the XK's tight bay adds time versus the XJ's more generous layout.",
     "cta": {
       "label": "",
       "href": "#"
     }
   },
   "faq": {
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Jaguar AJ-V8 engine replacement cost?",
+        "answer": "A reconditioned AJ-V8 typically costs £4,500–£7,500 supply only, varying by displacement (4.0L vs 4.2L) and whether it's naturally aspirated or supercharged. Fitting adds £650–£1,300 depending on labour rates."
+      },
+      {
+        "id": 2,
+        "question": "Is the Jaguar AJ-V8 a reliable engine?",
+        "answer": "The AJ-V8 earns 3.5★ out of 5, based on UK enquiry data and specialist reports — a smooth, characterful V8 with genuine longevity potential, provided the timing chain tensioners have been updated."
+      },
+      {
+        "id": 3,
+        "question": "What is the most common Jaguar AJ-V8 failure?",
+        "answer": "Plastic timing chain tensioners on pre-2002 4.0L engines — they crack, allowing chain slack and catastrophic valve/piston contact. The 4.2L received revised, more durable tensioners."
+      },
+      {
+        "id": 4,
+        "question": "Which Jaguar models use the AJ-V8?",
+        "answer": "The AJ-V8 powered the XK8/XKR (X100), XJ8/XJR (X308/X350), S-Type/S-Type R, and early XF (X250) — eight Jaguar models in total across naturally aspirated and supercharged forms."
+      },
+      {
+        "id": 5,
+        "question": "Is the Jaguar AJ-V8 the same as Land Rover's version?",
+        "answer": "Yes — the same AJ-V8 family was also fitted to the Land Rover Range Rover L322 (4.4L variant). The core architecture is identical, though Land Rover applications use different ECU calibrations and ancillaries."
+      }
+    ]
   },
   "trustCta": {
     "trustPoints": [],
     "finalCta": "",
     "ctaButton": {
-      "label": "",
+      "label": "Compare Jaguar AJ-V8 Engine Prices Now →",
       "href": "#"
     }
   }

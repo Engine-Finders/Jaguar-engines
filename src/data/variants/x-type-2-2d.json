@@ -534,44 +534,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (22%), South West (18%), East Anglia (12%)【PATTERN DATA】"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a Jaguar X‑Type 2.2d engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned X‑Type 2.2d (Duratorq) engine typically costs £3,200–£7,000 supply only. A used X‑Type 2.2d engine is available from approximately £300–£495. Fitting adds £800–£1,500 at independent specialist rates. Use our calculator for a figure specific to your car.",
-        "value": "2. Is the Jaguar X‑Type 2.2d engine reliable?"
-      },
-      {
-        "label": "The Duratorq 2.2 TDCi is a chain‑driven workhorse, proven in commercial vehicles and capable of 200,000+ miles with proper maintenance. However, it has well‑documented issues: injector failure (clogging or piezo problems), turbocharger actuator and oil leak issues, DPF blockage (especially on urban cars), and EGR valve sticking. Regular maintenance is essential.",
-        "value": "3. What are the common problems with the Jaguar X‑Type 2.2d?"
-      },
-      {
-        "label": "Fuel injector failure (rough idle, smoke, loss of power), turbocharger actuator and oil leak issues (whistling, power loss, oil spots), DPF blockage (warning lights, limp mode), EGR valve sticking (rough idle, stalling), and ZF 6‑speed transmission issues (jerky gearchanges). The X‑Type itself is known for sill corrosion and electrical niggles. See the Era Map above for detailed advice.",
-        "value": "4. Is it worth replacing a Jaguar X‑Type 2.2d engine, or should I scrap the car?"
-      },
-      {
-        "label": "Depends on vehicle value. Against a well‑kept X‑Type (values £2,000–£8,000+ depending on condition and mileage), a £3,500–£4,500 reconditioned engine is 40–80% of the vehicle's value — often worth it for a solid example. The Jaguar scrap threshold of 60% means evaluating the whole vehicle and its condition before committing. Given the X‑Type's status as a future classic, engine replacement is often worth it for a good example with no corrosion.",
-        "value": "5. How do I find my Jaguar X‑Type 2.2d engine code?"
-      },
-      {
-        "label": "The engine code (Duratorq ZSD‑422) is listed on the VIN plate and vehicle documentation. The 2.2d was introduced in 2005 and offered until the X‑Type was discontinued in 2009. The engine code is also known as FMBA, FMBB or LJ46G. Tell us your registration and we'll confirm for free.",
-        "value": "6. Can I repair the Duratorq injectors, or does it require engine replacement?"
-      },
-      {
-        "label": "Injector failure is repairable without replacing the engine — if caught early. Injector replacement costs £400–£1,200. However, if a faulty injector causes catalytic converter failure or engine damage, more extensive work may be required. At the first sign of rough idle or smoke, book an inspection immediately. Regular fuel filter changes and using premium diesel are the best prevention.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "SECTION 9, META AND SCHEMA",
-        "value": "PART 2 — SECTION 9 + META + SCHEMA"
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Jaguar X‑Type 2.2d engine replacement cost in the UK?",
+        "answer": "A reconditioned X‑Type 2.2d (Duratorq) engine typically costs £3,200–£7,000 supply only. A used X‑Type 2.2d engine is available from approximately £300–£495. Fitting adds £800–£1,500 at independent specialist rates. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the Jaguar X‑Type 2.2d engine reliable?",
+        "answer": "The Duratorq 2.2 TDCi is a chain‑driven workhorse, proven in commercial vehicles and capable of 200,000+ miles with proper maintenance. However, it has well‑documented issues: injector failure (clogging or piezo problems), turbocharger actuator and oil leak issues, DPF blockage (especially on urban cars), and EGR valve sticking. Regular maintenance is essential."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Jaguar X‑Type 2.2d?",
+        "answer": "Fuel injector failure (rough idle, smoke, loss of power), turbocharger actuator and oil leak issues (whistling, power loss, oil spots), DPF blockage (warning lights, limp mode), EGR valve sticking (rough idle, stalling), and ZF 6‑speed transmission issues (jerky gearchanges). The X‑Type itself is known for sill corrosion and electrical niggles. See the Era Map above for detailed advice."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Jaguar X‑Type 2.2d engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. Against a well‑kept X‑Type (values £2,000–£8,000+ depending on condition and mileage), a £3,500–£4,500 reconditioned engine is 40–80% of the vehicle's value — often worth it for a solid example. The Jaguar scrap threshold of 60% means evaluating the whole vehicle and its condition before committing. Given the X‑Type's status as a future classic, engine replacement is often worth it for a good example with no corrosion."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Jaguar X‑Type 2.2d engine code?",
+        "answer": "The engine code (Duratorq ZSD‑422) is listed on the VIN plate and vehicle documentation. The 2.2d was introduced in 2005 and offered until the X‑Type was discontinued in 2009. The engine code is also known as FMBA, FMBB or LJ46G. Tell us your registration and we'll confirm for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the Duratorq injectors, or does it require engine replacement?",
+        "answer": "Injector failure is repairable without replacing the engine — if caught early. Injector replacement costs £400–£1,200. However, if a faulty injector causes catalytic converter failure or engine damage, more extensive work may be required. At the first sign of rough idle or smoke, book an inspection immediately. Regular fuel filter changes and using premium diesel are the best prevention."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK Jaguar X‑Type 2.2d Owners Trust JaguarEngine.uk",

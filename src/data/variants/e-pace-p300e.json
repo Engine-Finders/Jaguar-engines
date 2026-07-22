@@ -540,64 +540,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (22%), London (18%), South West (12%) — premium SUV strongholds [PATTERN DATA]"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a Jaguar E-Pace P300e engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned E-Pace P300e engine (PT153 with hybrid system) typically costs £2,800‑£4,200 supply only. Fitting adds £1,200‑£1,800. Most Jaguar engine replacements range from £3,000 to £9,000 depending on the model and engine type. Use our calculator for a figure specific to your vehicle.",
-        "value": "2. Is the Jaguar E-Pace P300e engine reliable?"
-      },
-      {
-        "label": "The petrol models are better than the diesels, but the PHEVs do have some fairly common issues. A safety recall (R/2023/088) was issued for the coolant pump drive belt, which can fail and cause rapid overheating and potential fire risk. Other concerns include PHEV software and hybrid system failures, HV battery degradation, and timing chain tensioner wear. With regular maintenance and proper battery care, it can be a reliable powertrain.",
-        "value": "3. What are the common problems with the Jaguar E-Pace P300e?"
-      },
-      {
-        "label": "The most serious issue is the coolant pump drive belt recall — if the belt fails, coolant flow is lost, causing rapid overheating and potential fire risk. Other concerns include PHEV software and hybrid system failures (the car won't go into EV mode or jumps erratically between petrol and EV), HV battery degradation (reduced electric range), and timing chain tensioner wear causing cold‑start rattle.",
-        "value": "4. Is it worth replacing an E-Pace P300e engine, or should I scrap the car?"
-      },
-      {
-        "label": "Depends on vehicle value and condition. Against a tidy £20,000‑£35,000 E-Pace, a £2,800‑£5,000 recon is 10‑25% of the car's value — often worth it on well‑maintained examples. However, if the HV battery has also failed (costing £2,000‑£5,000+), the total repair cost may be substantial. Get a full diagnostic assessment before committing. Extended warranty is highly recommended — repairs can be eye‑wateringly expensive.",
-        "value": "5. How do I find my E-Pace's engine code?"
-      },
-      {
-        "label": "The E-Pace P300e uses the PT153 (AJ20P3) 1.5‑litre three‑cylinder turbo petrol engine combined with a 108 bhp electric motor. The engine code is stamped on the engine block and listed on your V5C. The P300e badge itself confirms the powertrain — it's the 309 PS plug‑in hybrid offered in the X540 E-Pace from 2020 onwards.",
-        "value": "6. Can I repair an E-Pace P300e engine issue, or does it need replacement?"
-      },
-      {
-        "label": "Most issues — coolant pump belt (recall), PHEV software updates, timing chain wear (if caught early) — are repairable. HV battery degradation may be covered under warranty if the vehicle is still within the warranty period. However, if the engine suffers major internal failure, a full engine replacement is usually more cost‑effective than a rebuild. The E-Pace is subject to unexpected component failures, so a good warranty is vital.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "Section 9 (Trust + Final CTA), meta tags, Open Graph, Twitter Card, and complete JSON‑LD schema.",
-        "value": "* Brand: Jaguar"
-      },
-      {
-        "label": "* Domain: jaguarengine.uk",
-        "value": "* Data tag: JAG‑"
-      },
-      {
-        "label": "* Specialist count: 15+",
-        "value": "* Scrap threshold: 60%"
-      },
-      {
-        "label": "* CTA Mode: Consultative (Priority M)",
-        "value": "* Era Map rows: 1 (PT153 / AJ20P3 + 108 bhp e‑motor)"
-      },
-      {
-        "label": "* Engine codes: PT153 (AJ20P3)",
-        "value": "* Service schema price range: £1,500 (lowest used) to £5,000 (highest rebuilt) — spans full Era Map history"
-      },
-      {
-        "label": "* Model Page needed: Jaguar E-Pace X540 Generation Page",
-        "value": "* Generation Page needed: Jaguar E-Pace X540 Generation Page (for cost inheritance)"
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Jaguar E-Pace P300e engine replacement cost in the UK?",
+        "answer": "A reconditioned E-Pace P300e engine (PT153 with hybrid system) typically costs £2,800‑£4,200 supply only. Fitting adds £1,200‑£1,800. Most Jaguar engine replacements range from £3,000 to £9,000 depending on the model and engine type. Use our calculator for a figure specific to your vehicle."
+      },
+      {
+        "id": 2,
+        "question": "Is the Jaguar E-Pace P300e engine reliable?",
+        "answer": "The petrol models are better than the diesels, but the PHEVs do have some fairly common issues. A safety recall (R/2023/088) was issued for the coolant pump drive belt, which can fail and cause rapid overheating and potential fire risk. Other concerns include PHEV software and hybrid system failures, HV battery degradation, and timing chain tensioner wear. With regular maintenance and proper battery care, it can be a reliable powertrain."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Jaguar E-Pace P300e?",
+        "answer": "The most serious issue is the coolant pump drive belt recall — if the belt fails, coolant flow is lost, causing rapid overheating and potential fire risk. Other concerns include PHEV software and hybrid system failures (the car won't go into EV mode or jumps erratically between petrol and EV), HV battery degradation (reduced electric range), and timing chain tensioner wear causing cold‑start rattle."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing an E-Pace P300e engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value and condition. Against a tidy £20,000‑£35,000 E-Pace, a £2,800‑£5,000 recon is 10‑25% of the car's value — often worth it on well‑maintained examples. However, if the HV battery has also failed (costing £2,000‑£5,000+), the total repair cost may be substantial. Get a full diagnostic assessment before committing. Extended warranty is highly recommended — repairs can be eye‑wateringly expensive."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my E-Pace's engine code?",
+        "answer": "The E-Pace P300e uses the PT153 (AJ20P3) 1.5‑litre three‑cylinder turbo petrol engine combined with a 108 bhp electric motor. The engine code is stamped on the engine block and listed on your V5C. The P300e badge itself confirms the powertrain — it's the 309 PS plug‑in hybrid offered in the X540 E-Pace from 2020 onwards."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair an E-Pace P300e engine issue, or does it need replacement?",
+        "answer": "Most issues — coolant pump belt (recall), PHEV software updates, timing chain wear (if caught early) — are repairable. HV battery degradation may be covered under warranty if the vehicle is still within the warranty period. However, if the engine suffers major internal failure, a full engine replacement is usually more cost‑effective than a rebuild. The E-Pace is subject to unexpected component failures, so a good warranty is vital."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK Jaguar E-Pace P300e Owners Trust JaguarEngine.uk",

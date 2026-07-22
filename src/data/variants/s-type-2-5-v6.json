@@ -545,44 +545,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (22%), South West (18%), East Anglia (12%)【PATTERN DATA】"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a Jaguar S‑Type 2.5 V6 engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned S‑Type 2.5 V6 (AJ25) engine typically costs £3,200–£6,500 supply only. Fitting adds £1,000–£1,800 at independent specialist rates. Engine Finders reports savings of up to £1,800 versus main dealer pricing. Customers have reported dealer quotes of around £15,000–£30,000 for engine replacement. Use our calculator for a figure specific to your car.",
-        "value": "2. Is the Jaguar S‑Type 2.5 V6 engine reliable?"
-      },
-      {
-        "label": "The AJ25 unit is quite reliable, but it has well‑documented weaknesses. The main problems are associated with timing chain tensioner failures (shared across the AJ‑V6 and AJ‑V8 families), air leaks due to drying gaskets, VCT solenoid clogging, cooling system issues (more prevalent on the 2.5 than the 3.0), and oil consumption at high mileage. Regular maintenance is essential.",
-        "value": "3. What are the common problems with the Jaguar S‑Type 2.5 V6?"
-      },
-      {
-        "label": "Timing chain tensioner failure (the defining weak point of the AJ‑V6 family), VCT solenoid clogging, cooling system leaks (hoses, header tank, thermostat), air leaks from drying gaskets, crankcase ventilation valve issues, and oil consumption at high mileage. See the Era Map above for detailed advice.",
-        "value": "4. Is it worth replacing a Jaguar S‑Type 2.5 V6 engine, or should I scrap the car?"
-      },
-      {
-        "label": "Depends on vehicle value. Against a well‑kept S‑Type (values £3,000–£10,000+ depending on condition and mileage), a £3,500–£4,500 reconditioned engine is 35–70% of the vehicle's value — often worth it for a solid example. The Jaguar scrap threshold of 60% means evaluating the whole vehicle and its condition before committing. Given the S‑Type's status as a classic, engine replacement is often worth it for a good example.",
-        "value": "5. How do I find my Jaguar S‑Type 2.5 V6 engine code?"
-      },
-      {
-        "label": "The engine code AJ25 is listed on the VIN plate and vehicle documentation. The 2.5 V6 was the entry‑level petrol engine, offered from 2001 until the S‑Type was replaced by the XF in 2007. It is a 2.5‑litre V6 from the Duratec V6 family, producing 200 bhp. Tell us your registration and we'll confirm for free.",
-        "value": "6. Can I repair the AJ25 timing chain, or does it require engine replacement?"
-      },
-      {
-        "label": "Yes — if caught early. A preventative timing chain, guide and tensioner replacement costs £1,200–£3,000. Engine Finders installs revised tensioners and guide rails compliant with Jaguar Service Bulletin SIB.037.18. However, if the chain snaps, a full engine replacement (£3,200–£6,500) is usually required. At the first sign of cold‑start rattle, book an inspection immediately.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "SECTION 9, META AND SCHEMA",
-        "value": "PART 2 — SECTION 9 + META + SCHEMA"
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Jaguar S‑Type 2.5 V6 engine replacement cost in the UK?",
+        "answer": "A reconditioned S‑Type 2.5 V6 (AJ25) engine typically costs £3,200–£6,500 supply only. Fitting adds £1,000–£1,800 at independent specialist rates. Engine Finders reports savings of up to £1,800 versus main dealer pricing. Customers have reported dealer quotes of around £15,000–£30,000 for engine replacement. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the Jaguar S‑Type 2.5 V6 engine reliable?",
+        "answer": "The AJ25 unit is quite reliable, but it has well‑documented weaknesses. The main problems are associated with timing chain tensioner failures (shared across the AJ‑V6 and AJ‑V8 families), air leaks due to drying gaskets, VCT solenoid clogging, cooling system issues (more prevalent on the 2.5 than the 3.0), and oil consumption at high mileage. Regular maintenance is essential."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Jaguar S‑Type 2.5 V6?",
+        "answer": "Timing chain tensioner failure (the defining weak point of the AJ‑V6 family), VCT solenoid clogging, cooling system leaks (hoses, header tank, thermostat), air leaks from drying gaskets, crankcase ventilation valve issues, and oil consumption at high mileage. See the Era Map above for detailed advice."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Jaguar S‑Type 2.5 V6 engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. Against a well‑kept S‑Type (values £3,000–£10,000+ depending on condition and mileage), a £3,500–£4,500 reconditioned engine is 35–70% of the vehicle's value — often worth it for a solid example. The Jaguar scrap threshold of 60% means evaluating the whole vehicle and its condition before committing. Given the S‑Type's status as a classic, engine replacement is often worth it for a good example."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Jaguar S‑Type 2.5 V6 engine code?",
+        "answer": "The engine code AJ25 is listed on the VIN plate and vehicle documentation. The 2.5 V6 was the entry‑level petrol engine, offered from 2001 until the S‑Type was replaced by the XF in 2007. It is a 2.5‑litre V6 from the Duratec V6 family, producing 200 bhp. Tell us your registration and we'll confirm for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the AJ25 timing chain, or does it require engine replacement?",
+        "answer": "Yes — if caught early. A preventative timing chain, guide and tensioner replacement costs £1,200–£3,000. Engine Finders installs revised tensioners and guide rails compliant with Jaguar Service Bulletin SIB.037.18. However, if the chain snaps, a full engine replacement (£3,200–£6,500) is usually required. At the first sign of cold‑start rattle, book an inspection immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK Jaguar S‑Type 2.5 V6 Owners Trust JaguarEngine.uk",

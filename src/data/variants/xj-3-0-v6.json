@@ -554,44 +554,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (22%), South West (18%), East Anglia (12%)【PATTERN DATA】"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a Jaguar XJ 3.0 V6 engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned XJ 3.0 V6 (AJ30) engine typically costs £4,000–£7,500 supply only. Jaguar XJ 3.0 V6 engine replacement costs typically range from £4,500 – £7,500. Customers have reported dealer quotes of around £15,000–£30,000 for engine replacement, while reconditioning is often in the £8,000–£10,000 range. Fitting adds £1,000–£1,800 at independent specialist rates. Use our calculator for a figure specific to your car.",
-        "value": "2. Is the Jaguar XJ 3.0 V6 engine reliable?"
-      },
-      {
-        "label": "The AJ30 is highly reliable overall, but it has well‑documented weaknesses. The main problems are associated with plastic coolant pipes that can fail catastrophically, timing chain tensioner wear (early cars are most affected, with running improvements made later), suction in the intake due to cracked gaskets, VVT system issues, and oil consumption at high mileage from piston ring wear. Regular maintenance is essential.",
-        "value": "3. What are the common problems with the Jaguar XJ 3.0 V6?"
-      },
-      {
-        "label": "Plastic coolant pipe failure (the most critical issue), timing chain tensioner wear, VVT system issues, intake air leaks from cracked gaskets, and oil consumption at high mileage. The X350 XJ itself also suffers from complex air suspension issues and electrical gremlins. See the Era Map above for detailed advice.",
-        "value": "4. Is it worth replacing a Jaguar XJ 3.0 V6 engine, or should I scrap the car?"
-      },
-      {
-        "label": "Depends on vehicle value. Against a well‑kept X350 XJ (values £2,000–£19,000+ depending on condition and mileage), a £4,000–£5,500 reconditioned engine is 25–80% of the vehicle's value — often worth it for a solid example. The Jaguar scrap threshold of 60% means evaluating the whole vehicle and its condition before committing. Given the X350's status as a future classic and rising interest, engine replacement is often worth it for a good example.",
-        "value": "5. How do I find my Jaguar XJ 3.0 V6 engine code?"
-      },
-      {
-        "label": "The engine code AJ30 is listed on the VIN plate and vehicle documentation. The 3.0 V6 was the entry‑level petrol engine, offered from 2003 until 2006. It was replaced in 2005 by the 2.7‑litre diesel, with petrol V6 production ending in 2006. A 237bhp 3.0‑litre V6 petrol engine marked the starting point of the range. Tell us your registration and we'll confirm for free.",
-        "value": "6. Can I repair the AJ30 timing chain, or does it require engine replacement?"
-      },
-      {
-        "label": "Yes — if caught early. A preventative timing chain, guide and tensioner replacement costs £1,200–£3,000. Early cars had more problems, as Jaguar made running changes to improve the design — somewhere around model year 2014 they did the latest upgrade. However, if the chain snaps, a full engine replacement (£4,000–£7,500) is usually required. At the first sign of cold‑start rattle, book an inspection immediately.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "SECTION 9, META AND SCHEMA",
-        "value": "PART 2 — SECTION 9 + META + SCHEMA"
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Jaguar XJ 3.0 V6 engine replacement cost in the UK?",
+        "answer": "A reconditioned XJ 3.0 V6 (AJ30) engine typically costs £4,000–£7,500 supply only. Jaguar XJ 3.0 V6 engine replacement costs typically range from £4,500 – £7,500. Customers have reported dealer quotes of around £15,000–£30,000 for engine replacement, while reconditioning is often in the £8,000–£10,000 range. Fitting adds £1,000–£1,800 at independent specialist rates. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the Jaguar XJ 3.0 V6 engine reliable?",
+        "answer": "The AJ30 is highly reliable overall, but it has well‑documented weaknesses. The main problems are associated with plastic coolant pipes that can fail catastrophically, timing chain tensioner wear (early cars are most affected, with running improvements made later), suction in the intake due to cracked gaskets, VVT system issues, and oil consumption at high mileage from piston ring wear. Regular maintenance is essential."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Jaguar XJ 3.0 V6?",
+        "answer": "Plastic coolant pipe failure (the most critical issue), timing chain tensioner wear, VVT system issues, intake air leaks from cracked gaskets, and oil consumption at high mileage. The X350 XJ itself also suffers from complex air suspension issues and electrical gremlins. See the Era Map above for detailed advice."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Jaguar XJ 3.0 V6 engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. Against a well‑kept X350 XJ (values £2,000–£19,000+ depending on condition and mileage), a £4,000–£5,500 reconditioned engine is 25–80% of the vehicle's value — often worth it for a solid example. The Jaguar scrap threshold of 60% means evaluating the whole vehicle and its condition before committing. Given the X350's status as a future classic and rising interest, engine replacement is often worth it for a good example."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Jaguar XJ 3.0 V6 engine code?",
+        "answer": "The engine code AJ30 is listed on the VIN plate and vehicle documentation. The 3.0 V6 was the entry‑level petrol engine, offered from 2003 until 2006. It was replaced in 2005 by the 2.7‑litre diesel, with petrol V6 production ending in 2006. A 237bhp 3.0‑litre V6 petrol engine marked the starting point of the range. Tell us your registration and we'll confirm for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the AJ30 timing chain, or does it require engine replacement?",
+        "answer": "Yes — if caught early. A preventative timing chain, guide and tensioner replacement costs £1,200–£3,000. Early cars had more problems, as Jaguar made running changes to improve the design — somewhere around model year 2014 they did the latest upgrade. However, if the chain snaps, a full engine replacement (£4,000–£7,500) is usually required. At the first sign of cold‑start rattle, book an inspection immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK Jaguar XJ 3.0 V6 Owners Trust JaguarEngine.uk",

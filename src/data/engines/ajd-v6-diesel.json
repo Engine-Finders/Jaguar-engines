@@ -244,62 +244,6 @@
       {
         "metric": "Overall Engine Score",
         "value": "60/100"
-      },
-      {
-        "metric": "SECTION 3 — VERDICT & RATING",
-        "value": "Star rating: 3★ out of 5"
-      },
-      {
-        "metric": "Confidence: 88% confidence — based on 1,680 UK enquiries and cross-referenced specialist rebuild reports.",
-        "value": "Engine Score breakdown:"
-      },
-      {
-        "metric": "Dimension",
-        "value": "Score (of 20)"
-      },
-      {
-        "metric": "How it's determined",
-        "value": "Reliability"
-      },
-      {
-        "metric": "12",
-        "value": "3★ × 4 = 12"
-      },
-      {
-        "metric": "Repair Cost",
-        "value": "12"
-      },
-      {
-        "metric": "Midpoint of Reconditioned range (£5,250) falls in £5,000–£6,999 bracket → 12",
-        "value": "Repairability"
-      },
-      {
-        "metric": "8",
-        "value": "Mixed failures — some cheap fixes (inlet manifolds, EGR), but crankshaft and oil pump failures are often catastrophic, full-replacement events"
-      },
-      {
-        "metric": "Parts Supply",
-        "value": "16"
-      },
-      {
-        "metric": "Well-supported; parts available through multiple UK suppliers and specialist networks",
-        "value": "Replacement Economics"
-      },
-      {
-        "metric": "12",
-        "value": "Recon cost (£4,500–£6,000) as % of lowest Jaguar host value (~£8,000) = 45–59% bracket → 12"
-      },
-      {
-        "metric": "Total",
-        "value": "60/100"
-      },
-      {
-        "metric": "Sum of five rows above",
-        "value": "One-line verdict: The AJD-V6 delivers effortless torque and refinement — but crankshaft failure and oil pump weakness can write off the engine — buy only with full service history and documented oil pump revisions."
-      },
-      {
-        "metric": "Best for: high-mileage motorway drivers who maintain strict oil change intervals.",
-        "value": "Avoid if: no documented oil pump revision or timing belt history above 80,000 miles."
       }
     ]
   },

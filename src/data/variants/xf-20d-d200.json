@@ -7,18 +7,18 @@
     "descriptionCharCount": 159,
     "canonical": "https://jaguarengine.uk/xf/20d-d200/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "XF 2.0d/D200 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Jaguar XF 2.0d & D200 engines — 204DTD and AJ20D6. Real UK costs, timing chain & DPF insight, and honest reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
+      "type": "website",
+      "url": "https://jaguarengine.uk/xf/20d-d200/",
+      "image": "https://jaguarengine.uk/images/jaguar/hero/xf-20d-d200.jpg",
+      "siteName": "JaguarEngine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "XF 2.0d/D200 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Jaguar XF 2.0d & D200 engines — 204DTD and AJ20D6. Real UK costs, timing chain & DPF insight, and honest reliability data.",
+      "image": "https://jaguarengine.uk/images/jaguar/hero/xf-20d-d200.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",

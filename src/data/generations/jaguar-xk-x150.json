@@ -1,6 +1,6 @@
 {
   "meta": {
-    "slug": "jaguar-xk-x150",
+    "slug": "bmw-xk-x150",
     "title": "X150 Engine Replacement Cost UK — Compare Quotes",
     "titleCharCount": 50,
     "description": "Every Jaguar XK X150 engine — 4.2-litre AJ34, 5.0-litre AJ133, XKR supercharged. Real UK costs and honest reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
@@ -619,11 +619,45 @@
     "scopeNote": "All variants listed are X150 only. The XK and XKR were available as both coupé and convertible. The XKR-S and XKR-S GT are coupé‑only, higher‑output versions of the 5.0-litre supercharged V8."
   },
   "marketIntelligence": {
-    "mostRequestedEngines": [],
-    "mostRequestedVariants": [],
-    "averageReplacementCost": "",
-    "mostCommonFailures": [],
-    "liveFeed": []
+    "mostRequestedEngines": [
+      "1. AJ133 / 508PS 5.0 Supercharged (560 requests across XK/XJ/XF applications [JAG-VERIFIED])",
+      "2. AJ133 / 508PN 5.0 Naturally Aspirated (330 requests across XJ/XF applications [JAG-VERIFIED])",
+      "3. AJ34 4.2 Naturally Aspirated (pattern data)"
+    ],
+    "mostRequestedVariants": [
+      "1. XKR (5.0 supercharged)",
+      "2. XK (5.0 naturally aspirated)",
+      "3. XKR (4.2 supercharged)"
+    ],
+    "averageReplacementCost": "£4,500–£7,500 (reconditioned, supply only) [JAG-QUOTE]",
+    "mostCommonFailures": [
+      "1. 5.0 AJ133 timing chain guide wear (pre-2012)",
+      "2. 4.2 AJ34/AJ34S cooling system & thermostat housing",
+      "3. Supercharger coupler wear (XKR/XKR-S)"
+    ],
+    "liveFeed": [
+      {
+        "vehicle": "Jaguar XKR X150 (5.0 AJ133)",
+        "location": "London",
+        "issue": "Timing chain rattle, specialist inspection",
+        "enquiries": "3 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "Jaguar XK X150 (4.2 AJ34)",
+        "location": "Manchester",
+        "issue": "Coolant leak, suspected thermostat housing",
+        "enquiries": "2 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "Jaguar XKR X150 (4.2 AJ34S)",
+        "location": "Birmingham",
+        "issue": "Supercharger rattle on overrun",
+        "enquiries": "2 enquiries",
+        "updated": "Updated Monthly"
+      }
+    ]
   },
   "faq": {
     "items": [
@@ -680,13 +714,26 @@
     ]
   },
   "trustCta": {
-    "h2": "",
-    "trustPoints": [],
-    "finalCta": "",
+    "h2": "Why UK Jaguar XK X150 Owners Trust JaguarEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted XK Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real XK owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare XK Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for XK",
+        "text": "covering every variant from XK 4.2 to XKR-S GT, with supply‑only or full supply & fit available nationwide."
+      }
+    ],
+    "finalCta": "Find the best Jaguar XK X150 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
-      "label": "",
+      "label": "Compare Jaguar XK X150 Engine Prices on EnginesMarket →",
       "href": "#",
-      "note": ""
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
     }
   }
 }

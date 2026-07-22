@@ -1,24 +1,199 @@
 {
   "meta": {
-    "slug": "jaguar-306dt-306ps",
-    "title": "Jaguar 306DT / 306PS Engine — Specs, Reliability & Replacement Cost",
-    "description": "",
-    "canonical": "",
+    "slug": "306dt-306ps",
+    "title": "<title>Jaguar 306DT / 306PS Engine — Reliability & Replacement Cost</title>",
+    "description": "<meta name=\"description\" content=\"The 306DT is a high-performance V6 with a fatal crankshaft bearing flaw — rated from 980+ real UK enquiries. Compare quotes from 15+ vetted specialists today.\" />",
+    "canonical": "https://jaguarengine.uk/engines/306dt-306ps/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "Jaguar 306DT / 306PS Engine — Reliability & Replacement Cost",
+      "description": "The 306DT is a high-performance V6 with a fatal crankshaft bearing flaw — rated from 980+ real UK enquiries. Compare quotes from 15+ vetted specialists today.",
+      "type": "website",
+      "url": "https://jaguarengine.uk/engines/306dt-306ps/",
+      "image": "https://jaguarengine.uk/images/jaguar/engines/306dt-306ps.jpg",
+      "siteName": "jaguarengine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "Jaguar 306DT / 306PS Engine — Reliability & Replacement Cost",
+      "description": "The 306DT is a high-performance V6 with a fatal crankshaft bearing flaw — rated from 980+ real UK enquiries. Compare quotes from 15+ vetted specialists today.",
+      "image": "https://jaguarengine.uk/images/jaguar/engines/306dt-306ps.jpg"
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Engines",
+              "item": "https://jaguarengine.uk/engines/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "306DT / 306PS",
+              "item": "https://jaguarengine.uk/engines/306dt-306ps/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar models fitted with the 306DT / 306PS",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Jaguar XF X250 (2007–2015) 3.0D / 3.0 V6 Supercharged",
+              "url": "https://jaguarengine.uk/models/xf-x250/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Jaguar XF X260 (2015–2024) 3.0D / 3.0 V6 Supercharged",
+              "url": "https://jaguarengine.uk/models/xf-x260/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Jaguar XJ X351 (2009–2019) 3.0D / 3.0 V6 Supercharged",
+              "url": "https://jaguarengine.uk/models/xj-x351/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Jaguar F-Pace X761 (2015–2024) 3.0D / 3.0 V6 Supercharged",
+              "url": "https://jaguarengine.uk/models/f-pace-x761/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Jaguar F-Type X152 (2013–2024) 3.0 V6 Supercharged",
+              "url": "https://jaguarengine.uk/models/f-type-x152/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Jaguar 306DT engine replacement cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned 306DT typically costs £6,500–£9,500 supply only [EM-QUOTE], varying by specific variant and output. Fitting adds £975–£1,300 depending on labour rates. Use our calculator for a figure specific to your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Jaguar 306DT a reliable engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We rate the 306DT at 2.5★ out of 5 based on 980+ UK enquiries [EM-VERIFIED]. While many examples exceed 120,000 miles without issue, the crankshaft bearing design is a known weak point that demands preventative maintenance."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the most common Jaguar 306DT failure?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Crankshaft bearing failure (tin-aluminium coating fatigue) is the defining failure, typically striking from 80,000–140,000 miles. Cold-start knock is the early warning sign; catastrophic failure follows without intervention."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Jaguar models use the 306DT and 306PS?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The XF (both X250 and X260), XJ X351, F-Pace and the F-Type all use the 306DT diesel or 306PS petrol V6 across 2009–2020 — five model lines spanning both saloon and SUV applications."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Jaguar 306DT the same as Land Rover's version?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the 306DT and 306PS are the same physical engine across Jaguar and Land Rover applications, shared under the AJD V6 architecture. Parts are identical; only ECU tuning and fitment specifics vary between brands."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "jaguarengine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "https://jaguarengine.uk/images/logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "Jaguar 306DT / 306PS Engine",
+          "brand": {
+            "@type": "Brand",
+            "name": "Jaguar"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "2.5",
+            "bestRating": "5",
+            "ratingCount": "1",
+            "reviewCount": "1"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Jaguar 306DT / 306PS Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "3500",
+            "highPrice": "11000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Jaguar 306DT / 306PS UK Enquiry & Reliability Data 2025",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the Jaguar 306DT / 306PS, sourced from jaguarengine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Jaguar 306DT / 306PS Engine — Reliability & Replacement Cost",
+          "url": "https://jaguarengine.uk/engines/306dt-306ps/",
+          "author": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-14",
+          "dateModified": "2026-07-14"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "Jaguar • 306DT / 306PS • Diesel & Petrol • 3.0L V6 • 2009–2020",

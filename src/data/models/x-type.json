@@ -748,7 +748,7 @@
       {
         "id": 4,
         "question": "How do I know if my X-Type needs a new engine?",
-        "answer": "Watch for these warning signs by engine type: * Petrol V6: Overheating from cooling system failure (thermostat housing cracks, water pump failure) — if ignored, head gasket damage follows. Also rough idle from throttle body issues. * Diesel (AJ200D): Cold-start rattle from timing chain tensioner wear, EGR-related smoke and reduced power, or DPF blockages on urban-driven cars. If you're experiencing any of these, get a specialist inspection — the repair cost may be lower than you think, but ignoring it will make it worse."
+        "answer": "Watch for these warning signs by engine type: Petrol V6: Overheating from cooling system failure (thermostat housing cracks, water pump failure) — if ignored, head gasket damage follows. Also rough idle from throttle body issues. Diesel (AJ200D): Cold-start rattle from timing chain tensioner wear, EGR-related smoke and reduced power, or DPF blockages on urban-driven cars. If you're experiencing any of these, get a specialist inspection — the repair cost may be lower than you think, but ignoring it will make it worse."
       },
       {
         "id": 5,
@@ -763,7 +763,27 @@
       {
         "id": 7,
         "question": "How do I find my X-Type engine code?",
-        "answer": "Your X-Type's engine code is stamped on the engine block (visible from the front, near the timing cover) and listed on the VIN plate under the bonnet. The code also appears in your service documentation. The codes used in this guide are: * 2.0 V6 — AJ-V6 (Ford-sourced 2.0) * 2.5 V6 — AJ-V6 (Ford-sourced 2.5) * 3.0 V6 — AJ-V6 (Ford-sourced 3.0) * 2.0 Diesel — AJ200D (early Ingenium derivative) Not sure which code you have? Use our identification tool or contact one of our 15+ vetted Jaguar specialists."
+        "answer": "Your X-Type's engine code is stamped on the engine block (visible from the front, near the timing cover) and listed on the VIN plate under the bonnet. The code also appears in your service documentation. The codes used in this guide are:"
+      },
+      {
+        "id": 2,
+        "question": "0 V6 — AJ-V6 (Ford-sourced 2.0)",
+        "answer": ""
+      },
+      {
+        "id": 2,
+        "question": "5 V6 — AJ-V6 (Ford-sourced 2.5)",
+        "answer": ""
+      },
+      {
+        "id": 3,
+        "question": "0 V6 — AJ-V6 (Ford-sourced 3.0)",
+        "answer": ""
+      },
+      {
+        "id": 2,
+        "question": "0 Diesel — AJ200D (early Ingenium derivative)",
+        "answer": "Not sure which code you have? Use our identification tool or contact one of our 15+ vetted Jaguar specialists."
       },
       {
         "id": 8,

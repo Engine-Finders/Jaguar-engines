@@ -457,7 +457,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Cooling system failure (plastic crossover pipes, water pump, radiators) — the most frequently reported AJ133 issue【PATTERN DATA】"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "30,000–50,000 miles【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£8,000 reconditioned, supply only【PLACEHOLDER — confirm vs cost sheet】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "508PS (AJ133)【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Summer — cooling issues exposed by warmer weather【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (19%), London (17%), South West (14%)【PATTERN DATA】"
+      }
+    ]
   },
   "faq": {
     "items": [

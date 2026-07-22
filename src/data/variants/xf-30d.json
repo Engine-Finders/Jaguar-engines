@@ -492,11 +492,67 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Timing chain tensioner wear — the defining risk of the 306DT; can fail catastrophically without warning"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "80,000–130,000 miles【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£3,500–£5,800 reconditioned, supply only"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "306DT — the Jaguar V6 diesel【EM-VERIFIED】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring — pre‑summer vehicle preparation【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (20%), London (18%), South West (14%)【PATTERN DATA】"
+      }
+    ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Jaguar XF 3.0d engine replacement cost in the UK?",
+        "answer": "A reconditioned 306DT engine typically costs £3,500–£5,800 supply only, with used units available from £1,500–£3,800. Fitting adds £1,500–£2,500 depending on the workshop. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the Jaguar XF 3.0d engine reliable?",
+        "answer": "The 306DT is a powerful and refined engine, but it has well-documented weaknesses. Timing chain tensioner failure is the biggest risk — it can destroy the engine without warning. Oil pump issues (especially on early cars), injector seal leaks, and EGR/DPF problems are also common. With diligent maintenance and preventative timing chain work, the engine can be reliable."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Jaguar XF 3.0d?",
+        "answer": "Timing chain tensioner failure (catastrophic — replace preventatively), oil pump failure and lubrication pressure issues (especially early cars), injector seal leaks (diesel smell, rough idle), EGR cooler failure, DPF clogging, and plastic inlet manifold splitting. The timing chain is the single most critical concern."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Jaguar XF 3.0d engine, or should I scrap the car?",
+        "answer": "XF values remain strong — a well-kept X260 is often worth £8,000–£18,000+. A £3,500–£5,800 reconditioned engine is 25–50% of the vehicle's value — apply the Jaguar 60% scrap threshold. If the car is a cherished example with good bodywork and interior, replacement is often worthwhile. Against a tired X250 with significant other issues, get a scrap valuation first."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Jaguar XF 3.0d engine code?",
+        "answer": "The engine code is 306DT (also known as AJD-V6 or AJV6D). It's the only 3.0-litre V6 diesel used in the XF. You can find it on the VIN plate, in the vehicle documentation, or on a label on the engine itself. Production began in 2009 and continues in the X260."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the 306DT timing chain tensioner, or does the engine need replacement?",
+        "answer": "The timing chain tensioner can be replaced preventatively — it's a wear item. Replacement costs £800–£2,500 and is a labour-intensive job. If the chain fails and jumps timing, the engine is typically destroyed. A preventative tensioner replacement is far cheaper than a full engine replacement (£3,500+). At the first sign of cold-start rattle, book an inspection immediately. Jaguar issued a TSB (J-TIS-2013-018) for this issue."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "",

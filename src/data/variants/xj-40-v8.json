@@ -491,40 +491,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (22%), London (20%), South West (15%) [PATTERN DATA]"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a Jaguar XJ 4.0 V8 engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned AJ27 engine typically costs £2,500–£5,500 supply only, with the supercharged AJ27S sitting at £3,500–£8,500. Fitting adds £900–£1,500. Main dealer new engines can exceed £25,000. Timing chain tensioner replacement alone can cost £800–£2,500 if caught early. Use our calculator for a figure specific to your car.",
-        "value": "2. Is the Jaguar XJ 4.0 V8 engine reliable?"
-      },
-      {
-        "label": "The AJ26/AJ27 is rated ★★★☆☆. It's a magnificent engine when properly maintained, but it has two notorious weak points: Nikasil cylinder bore lining failure on pre‑2000 engines (resolved with cast‑iron liners from 1999) and plastic timing chain tensioners that break up with age. The aluminium block is also sensitive to overheating.",
-        "value": "3. What are the common problems with the Jaguar XJ 4.0 V8?"
-      },
-      {
-        "label": "Plastic timing chain tensioner failure (the most critical — can destroy the engine), Nikasil liner failure on pre‑2000 cars, water pump and cooling system issues, and overheating damage. The plastic tensioners should be replaced with metal units as a preventative measure.",
-        "value": "4. Is it worth replacing a Jaguar XJ 4.0 V8 engine, or should I scrap the car?"
-      },
-      {
-        "label": "Depends on vehicle value and body condition. Against a well‑kept X308 XJ worth £3,000–£8,000, a £3,800 recon is a significant investment — assess carefully. For an XJR with strong provenance, replacement is often worthwhile. The XJ's classic status and aluminium body mean good examples are worth saving.",
-        "value": "5. How do I find my Jaguar XJ 4.0 V8 engine code?"
-      },
-      {
-        "label": "Listed on the VIN plate and vehicle documentation. The 4.0 V8 uses AJ26 (pre‑2000) or AJ27 (2000‑2009) codes; the supercharged version is AJ27S. Tell us your registration date and we'll confirm it for free.",
-        "value": "6. Can I repair the AJ27's timing chain tensioners, or does it need a new engine?"
-      },
-      {
-        "label": "Yes — if caught early. Replacing the plastic tensioners with metal units (£800–£2,500) is far cheaper than a catastrophic chain failure (£2,500–£8,500 engine replacement). At the first sign of cold‑start rattle, book an inspection immediately. Make sure the plastic timing gear has been replaced with factory metal components.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Jaguar XJ 4.0 V8 engine replacement cost in the UK?",
+        "answer": "A reconditioned AJ27 engine typically costs £2,500–£5,500 supply only, with the supercharged AJ27S sitting at £3,500–£8,500. Fitting adds £900–£1,500. Main dealer new engines can exceed £25,000. Timing chain tensioner replacement alone can cost £800–£2,500 if caught early. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the Jaguar XJ 4.0 V8 engine reliable?",
+        "answer": "The AJ26/AJ27 is rated ★★★☆☆. It's a magnificent engine when properly maintained, but it has two notorious weak points: Nikasil cylinder bore lining failure on pre‑2000 engines (resolved with cast‑iron liners from 1999) and plastic timing chain tensioners that break up with age. The aluminium block is also sensitive to overheating."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Jaguar XJ 4.0 V8?",
+        "answer": "Plastic timing chain tensioner failure (the most critical — can destroy the engine), Nikasil liner failure on pre‑2000 cars, water pump and cooling system issues, and overheating damage. The plastic tensioners should be replaced with metal units as a preventative measure."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Jaguar XJ 4.0 V8 engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value and body condition. Against a well‑kept X308 XJ worth £3,000–£8,000, a £3,800 recon is a significant investment — assess carefully. For an XJR with strong provenance, replacement is often worthwhile. The XJ's classic status and aluminium body mean good examples are worth saving."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Jaguar XJ 4.0 V8 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. The 4.0 V8 uses AJ26 (pre‑2000) or AJ27 (2000‑2009) codes; the supercharged version is AJ27S. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the AJ27's timing chain tensioners, or does it need a new engine?",
+        "answer": "Yes — if caught early. Replacing the plastic tensioners with metal units (£800–£2,500) is far cheaper than a catastrophic chain failure (£2,500–£8,500 engine replacement). At the first sign of cold‑start rattle, book an inspection immediately. Make sure the plastic timing gear has been replaced with factory metal components."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "",

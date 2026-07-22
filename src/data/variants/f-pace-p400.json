@@ -510,11 +510,67 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "AJ126: Plastic coolant pipe failure / AJ20P6: Unproven long-term reliability — the defining risks of each generation"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "AJ126: 50,000–80,000 miles / AJ20P6: 20,000–40,000 miles【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "AJ126: £4,500–£7,500 / AJ20P6: £5,000–£8,500 reconditioned, supply only【JAG-QUOTE】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "AJ126 — the supercharged V6【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring — performance SUV season【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "London (22%), South East (18%), South West (14%)【PATTERN DATA】"
+      }
+    ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Jaguar F-Pace S or P400 engine replacement cost in the UK?",
+        "answer": "A reconditioned AJ126 engine typically costs £4,500–£7,500 supply only; a reconditioned AJ20P6 costs £5,000–£8,500. Used units are available from £3,000–£5,000. Fitting adds £1,500–£2,500. One owner reported a shocking £23,000 bill for an engine replacement on a low-mileage F-Pace — highlighting the importance of warranty coverage."
+      },
+      {
+        "id": 2,
+        "question": "Is the Jaguar F-Pace S / P400 engine reliable?",
+        "answer": "It depends on the generation. The AJ126 (2016–2020) has well-documented weaknesses: plastic coolant pipes that crack catastrophically and timing chain tensioner wear. The AJ20P6 (2021+) Ingenium straight-six is more modern with promising early reliability, but the complex 48V mild-hybrid system is unproven long-term. Both demand diligent maintenance."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Jaguar F-Pace S and P400?",
+        "answer": "AJ126: plastic coolant pipe failure (catastrophic — upgrade to aluminium pipes), timing chain tensioner wear (at 60,000–90,000 miles), supercharger coupler wear, oil leaks. AJ20P6: mild-hybrid system complexity, potential oil filter housing issues (subject to recall), and general Ingenium petrol engine maintenance. The AJ126's cooling system is the single biggest concern."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Jaguar F-Pace S / P400 engine, or should I scrap the car?",
+        "answer": "F-Pace values remain strong — a well-kept example is often worth £18,000–£40,000+. A £4,500–£8,500 reconditioned engine is 15–35% of the vehicle's value — within the Jaguar 60% scrap threshold. If the car is a cherished example with good bodywork and interior, replacement is often worthwhile. However, given the £23,000 replacement bill reported, ensure you understand the full cost before committing."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Jaguar F-Pace S or P400 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. Pre-facelift (2016–2020) uses AJ126; facelift (2021+) uses AJ20P6. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the AJ126 plastic coolant pipes, or do they need replacement?",
+        "answer": "They need replacement — the plastic pipes crack and cannot be reliably repaired. Replacement with upgraded aluminium pipes costs £600–£1,500 and is highly recommended. If the pipes fail and cause overheating, the engine can be destroyed. At the first sign of coolant loss or bubbling coolant, book an inspection immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "",

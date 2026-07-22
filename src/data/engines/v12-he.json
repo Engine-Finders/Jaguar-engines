@@ -3,20 +3,20 @@
     "slug": "v12-he",
     "title": "Jaguar V12 HE Engine — Specs, Reliability & Replacement Cost",
     "description": "Glorious V12 with cooling and ignition fragility — rated from 40+ real UK enquiries. Compare prices from 15+ vetted specialists today.",
-    "canonical": "",
+    "canonical": "https://jaguarengine.uk/engines/v12-he/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "Jaguar V12 HE Engine — Specs, Reliability & Replacement Cost",
+      "description": "Glorious V12 with cooling and ignition fragility — rated from 40+ real UK enquiries. Compare prices from 15+ vetted specialists today.",
+      "type": "website",
+      "url": "https://jaguarengine.uk/engines/v12-he/",
+      "image": "https://jaguarengine.uk/images/jaguar/engines/v12-he.jpg",
+      "siteName": "jaguarengine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "Jaguar V12 HE Engine — Specs, Reliability & Replacement Cost",
+      "description": "Glorious V12 with cooling and ignition fragility — rated from 40+ real UK enquiries. Compare prices from 15+ vetted specialists today.",
+      "image": "https://jaguarengine.uk/images/jaguar/engines/v12-he.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -243,79 +243,48 @@
       {
         "metric": "Overall Engine Score",
         "value": "48/100"
-      },
-      {
-        "metric": "SECTION 3 — VERDICT & RATING",
-        "value": "Star rating: 2.5★ out of 5"
-      },
-      {
-        "metric": "Confidence: 75% confidence — based on 40 UK enquiries, limited specialist rebuild reports and enthusiast community consensus.",
-        "value": "Engine Score breakdown:"
-      },
-      {
-        "metric": "Dimension",
-        "value": "Score (of 20)"
-      },
-      {
-        "metric": "How it's determined",
-        "value": "Reliability"
-      },
-      {
-        "metric": "10",
-        "value": "2.5★ × 4 = 10"
-      },
-      {
-        "metric": "Repair Cost",
-        "value": "8"
-      },
-      {
-        "metric": "Reconditioned midpoint ~£8,500 — falls in £7,000–£9,999 bracket",
-        "value": "Repairability"
-      },
-      {
-        "metric": "8",
-        "value": "Complex V12 with dual ignition systems and cooling issues; only a handful of UK specialists will touch it"
-      },
-      {
-        "metric": "Parts Supply",
-        "value": "8"
-      },
-      {
-        "metric": "Some parts still available via specialists and club networks; many components are dealer-only or NLA",
-        "value": "Replacement Economics"
-      },
-      {
-        "metric": "14",
-        "value": "Recon cost ~50–65% of lowest XJS value (£12,000–£15,000); classics may justify spend"
-      },
-      {
-        "metric": "Total",
-        "value": "48/100"
-      },
-      {
-        "metric": "Sum of five rows above",
-        "value": "One-line verdict: The V12 HE is a glorious, smooth engine with serious cooling and ignition vulnerabilities — ownership demands specialist maintenance — buy only with a recent cooling system overhaul."
-      },
-      {
-        "metric": "Best for: committed enthusiasts with access to a V12 specialist and a warm garage.",
-        "value": "Avoid if: you need daily-driver reliability or lack a trusted specialist nearby."
       }
     ]
   },
   "verdictRating": {
-    "starRating": "",
-    "confidence": "",
-    "scoreNote": "",
+    "starRating": "2.5★ out of 5",
+    "confidence": "75% confidence — based on 40 UK enquiries, limited specialist rebuild reports and enthusiast community consensus.",
+    "scoreNote": "Engine Score breakdown:",
     "scoreBreakdown": {
       "columns": [
         "Dimension",
         "Score (of 20)"
       ],
-      "rows": []
+      "rows": [
+        {
+          "dimension": "Reliability",
+          "score": "10 (2.5★ × 4 = 10)"
+        },
+        {
+          "dimension": "Repair Cost",
+          "score": "8 (Reconditioned midpoint ~£8,500 — falls in £7,000–£9,999 bracket)"
+        },
+        {
+          "dimension": "Repairability",
+          "score": "8 (Complex V12 with dual ignition systems and cooling issues; only a handful of UK specialists will touch it)"
+        },
+        {
+          "dimension": "Parts Supply",
+          "score": "8 (Some parts still available via specialists and club networks; many components are dealer-only or NLA)"
+        },
+        {
+          "dimension": "Replacement Economics",
+          "score": "14 (Recon cost ~50–65% of lowest XJS value (£12,000–£15,000); classics may justify spend)"
+        },
+        {
+          "dimension": "Total",
+          "score": "48/100 (Sum of five rows above)"
+        }
+      ]
     },
-    "oneLineVerdict": "",
-    "bestFor": "",
-    "avoidIf": ""
+    "oneLineVerdict": "The V12 HE is a glorious, smooth engine with serious cooling and ignition vulnerabilities — ownership demands specialist maintenance — buy only with a recent cooling system overhaul.",
+    "bestFor": "committed enthusiasts with access to a V12 specialist and a warm garage.",
+    "avoidIf": "you need daily-driver reliability or lack a trusted specialist nearby."
   },
   "compatibility": {
     "columns": [
@@ -342,36 +311,6 @@
         "generation": "XJ40 / X300",
         "variantBadge": "V12 HE (late)",
         "years": "1981–1997"
-      },
-      {
-        "model": "SECTION 5 — COST GUIDE",
-        "generation": "H2: \"V12 HE Replacement Costs\"",
-        "variantBadge": "Condition",
-        "years": "Supply Only"
-      },
-      {
-        "model": "Fitted (Indie)",
-        "generation": "Warranty",
-        "variantBadge": "Used",
-        "years": "£4,500–£7,000 [JAG-QUOTE]"
-      },
-      {
-        "model": "£5,400–£8,400",
-        "generation": "3 months",
-        "variantBadge": "Reconditioned",
-        "years": "£7,000–£10,000 [JAG-QUOTE]"
-      },
-      {
-        "model": "£8,500–£12,000",
-        "generation": "6–12 months",
-        "variantBadge": "Rebuilt",
-        "years": "£10,000–£15,000 [JAG-QUOTE]"
-      },
-      {
-        "model": "£12,000–£18,000",
-        "generation": "12 months",
-        "variantBadge": "Labour estimate: Fitting a V12 HE typically takes 18–24 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE].",
-        "years": "CTA line: → Compare V12 HE engine prices from UK specialists"
       }
     ],
     "crossBrandNote": ""
@@ -383,11 +322,30 @@
       "Fitted (Indie)",
       "Warranty"
     ],
-    "rows": [],
-    "labourEstimate": "",
+    "rows": [
+      {
+        "condition": "Used",
+        "supplyOnly": "£4,500–£7,000 [JAG-QUOTE]",
+        "fittedIndie": "£5,400–£8,400",
+        "warranty": "3 months"
+      },
+      {
+        "condition": "Reconditioned",
+        "supplyOnly": "£7,000–£10,000 [JAG-QUOTE]",
+        "fittedIndie": "£8,500–£12,000",
+        "warranty": "6–12 months"
+      },
+      {
+        "condition": "Rebuilt",
+        "supplyOnly": "£10,000–£15,000 [JAG-QUOTE]",
+        "fittedIndie": "£12,000–£18,000",
+        "warranty": "12 months"
+      }
+    ],
+    "labourEstimate": "Fitting a V12 HE typically takes 18–24 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE].",
     "sharedCostNote": "",
     "cta": {
-      "label": "",
+      "label": "→ Compare V12 HE engine prices from UK specialists",
       "href": "#"
     }
   },

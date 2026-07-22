@@ -1,6 +1,6 @@
 {
   "meta": {
-    "slug": "jaguar-xj-x351",
+    "slug": "bmw-xj-x351",
     "title": "X351 Engine Replacement Cost UK — Compare Quotes",
     "titleCharCount": 49,
     "description": "Every Jaguar XJ X351 engine — 3.0 V6 diesel, 5.0 V8, XJR supercharged. Real UK costs and honest reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
@@ -710,11 +710,45 @@
     "scopeNote": "All variants listed are X351 only. The 2.0T was primarily offered in the Chinese market but is also present in limited numbers in the UK. The XJR (550 PS) arrived in 2013, with the XJR 575 and XJ50 special editions launched in 2018."
   },
   "marketIntelligence": {
-    "mostRequestedEngines": [],
-    "mostRequestedVariants": [],
-    "averageReplacementCost": "",
-    "mostCommonFailures": [],
-    "liveFeed": []
+    "mostRequestedEngines": [
+      "1. AJ133 / 508PS 5.0 Supercharged (560 requests across XK/XJ/XF applications [JAG-VERIFIED])",
+      "2. AJV6D 3.0 V6 Diesel (pattern data)",
+      "3. AJ133 / 508PN 5.0 Naturally Aspirated (330 requests across XJ/XF applications [JAG-VERIFIED])"
+    ],
+    "mostRequestedVariants": [
+      "1. 3.0 V6 Diesel",
+      "2. XJR (5.0 supercharged)",
+      "3. Supersport (5.0 supercharged)"
+    ],
+    "averageReplacementCost": "£4,500–£7,500 (reconditioned, supply only) [JAG-QUOTE]",
+    "mostCommonFailures": [
+      "1. 5.0 AJ133 timing chain guide wear (pre-2013)",
+      "2. 5.0 AJ133 PCV diaphragm failure",
+      "3. 3.0 V6 SC cooling system pipework leaks"
+    ],
+    "liveFeed": [
+      {
+        "vehicle": "Jaguar XJ X351 (5.0 AJ133)",
+        "location": "London",
+        "issue": "Timing chain rattle, specialist inspection",
+        "enquiries": "3 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "Jaguar XJ X351 (3.0 V6 Diesel)",
+        "location": "Birmingham",
+        "issue": "DPF clogging, urban driving",
+        "enquiries": "2 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "Jaguar XJR X351 (5.0 SC)",
+        "location": "Manchester",
+        "issue": "PCV diaphragm failure, oil consumption",
+        "enquiries": "2 enquiries",
+        "updated": "Updated Monthly"
+      }
+    ]
   },
   "faq": {
     "items": [
@@ -771,13 +805,26 @@
     ]
   },
   "trustCta": {
-    "h2": "",
-    "trustPoints": [],
-    "finalCta": "",
+    "h2": "Why UK Jaguar XJ X351 Owners Trust JaguarEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted XJ Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real XJ owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare XJ Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for XJ",
+        "text": "covering every variant from 3.0 V6 diesel to XJR 575, with supply‑only or full supply & fit available nationwide."
+      }
+    ],
+    "finalCta": "Find the best Jaguar XJ X351 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
-      "label": "",
+      "label": "Compare Jaguar XJ X351 Engine Prices on EnginesMarket →",
       "href": "#",
-      "note": ""
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
     }
   }
 }

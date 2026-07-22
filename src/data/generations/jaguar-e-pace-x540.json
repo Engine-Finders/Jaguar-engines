@@ -1,11 +1,295 @@
 {
   "meta": {
-    "slug": "jaguar-e-pace-x540",
-    "title": "Jaguar E-Pace X540 Engines — The Complete UK Guide",
-    "titleCharCount": 50,
-    "description": "",
-    "descriptionCharCount": 0,
-    "jsonLd": {}
+    "slug": "bmw-e-pace-x540",
+    "title": "X540 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 58,
+    "description": "Every Jaguar E-Pace X540 engine — D150, D165, D180, D200, P200, P250, P300, P300e. Real UK costs and honest reliability data. Get free quotes from 15 vetted Jaguar specialists today.",
+    "descriptionCharCount": 158,
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "E-Pace",
+              "item": "https://jaguarengine.uk/e-pace/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Jaguar E-Pace X540",
+              "item": "https://jaguarengine.uk/e-pace/x540/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar E-Pace X540 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "D150 2.0 Diesel Engine",
+              "url": "https://jaguarengine.uk/engines/204dtd/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "D165 2.0 Diesel Engine",
+              "url": "https://jaguarengine.uk/engines/204dtd/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "D180 2.0 Diesel Engine",
+              "url": "https://jaguarengine.uk/engines/204dtd/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "D200 2.0 Diesel Engine",
+              "url": "https://jaguarengine.uk/engines/204dtd/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "P160 1.5 MHEV Engine",
+              "url": "https://jaguarengine.uk/engines/aj150/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "P200 2.0 MHEV Engine",
+              "url": "https://jaguarengine.uk/engines/pt204/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "P250 2.0 MHEV Engine",
+              "url": "https://jaguarengine.uk/engines/pt204/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "P300 2.0 Twin-Turbo Engine",
+              "url": "https://jaguarengine.uk/engines/pt204/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "P300e 1.5 PHEV Engine",
+              "url": "https://jaguarengine.uk/engines/aj150-phev/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar E-Pace X540 Core Variants",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "D150",
+              "url": "https://jaguarengine.uk/e-pace/x540/d150/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "D165",
+              "url": "https://jaguarengine.uk/e-pace/x540/d165/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "D180",
+              "url": "https://jaguarengine.uk/e-pace/x540/d180/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "D200",
+              "url": "https://jaguarengine.uk/e-pace/x540/d200/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "P160",
+              "url": "https://jaguarengine.uk/e-pace/x540/p160/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "P200",
+              "url": "https://jaguarengine.uk/e-pace/x540/p200/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "P250",
+              "url": "https://jaguarengine.uk/e-pace/x540/p250/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "P300",
+              "url": "https://jaguarengine.uk/e-pace/x540/p300/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "P300e",
+              "url": "https://jaguarengine.uk/e-pace/x540/p300e/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Jaguar E-Pace X540 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned X540 engine typically costs £3,000–£9,500 supply only [EM-QUOTE], depending on engine — the 2.0-litre diesel sits at £3,500–£6,500, while the P300e plug-in hybrid can reach £9,500. Fitting adds £650–£1,300 depending on engine and specialist location. Evaluate the car's value carefully before committing."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Jaguar E-Pace X540 engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The P200 and P250 2.0-litre Ingenium petrols are the most reliable options — they have fewer major failure modes than the diesels, no DPF or oil dilution issues, and a proven architecture. The 1.5-litre three-cylinder is newer, with fewer long-term data points [PROVISIONAL — pending dedicated Engine Page]."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Jaguar E-Pace X540?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing chain wear and oil dilution from DPF regeneration on the 2.0-litre diesel Ingenium are the two most significant engine problems — both can lead to premature engine failure. The 2.0-litre petrol Ingenium can suffer from cooling system leaks, which are cheap to prevent but expensive if ignored. The P300e PHEV may experience battery degradation over time."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Jaguar E-Pace X540 reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It depends heavily on which engine you choose. Petrol-powered X540s are generally reliable, well-understood designs. The diesel range carries the Ingenium diesel reputation — timing chain and oil dilution risks are the primary concerns. The P300e PHEV is the most complex; early reliability is promising, but the battery is a long-term risk."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Jaguar E-Pace X540 engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No engine is a hard avoid, but the 2.0-litre diesel Ingenium requires careful consideration — timing chain wear and oil dilution are well-documented risks. Without documented chain work or evidence of regular short-interval oil changes, it's a higher-risk purchase. The P300e PHEV's battery replacement cost (£6,500+) is also a significant long-term consideration."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my E-Pace engine needs replacing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cold-start rattle on any diesel E-Pace is the classic early warning of timing chain wear — investigate immediately. Oil dilution can be detected by checking the dipstick for a fuel smell. Coolant loss, rough running, or warning lights on any engine are also key warning signs. Use our diagnostic tool for a personalised assessment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Jaguar E-Pace engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on the car's value. Against a well-kept £15,000 E-Pace, a £4,500–£6,500 diesel recon is 30–43% of the car's value — safe. Against a tired £7,000 example, the same recon is 64–93% — walk away. Our 60% Jaguar scrap threshold is the line: if replacement cost exceeds 60% of the car's value, evaluate scrap first [EM-VERIFIED]."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long do Jaguar E-Pace engines last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 2.0-litre Ingenium petrols can exceed 120,000 miles with proper servicing — cooling system maintenance is the key to longevity. The diesel Ingenium is limited by its timing chain and oil dilution risks; addressed proactively with chain work and 6,000-mile oil changes, it can reach 100,000+ miles. The P300e battery is rated for approximately 1,500–2,000 charge cycles before significant degradation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between the pre-facelift and facelift E-Pace?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 2020 facelift introduced mild-hybrid technology across most of the range, the 1.5-litre three-cylinder (P160 and P300e), and updated infotainment. The facelift also brought D165 and D200. Costs and reliability profiles are similar, but the MHEV systems add complexity — see our facelift-specific analysis for details."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Jaguar E-Pace X540 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the engine block. Tell us your variant (D150, D165, D180, D200, P160, P200, P250, P300, or P300e) and we'll identify it — 15 vetted Jaguar specialists will confirm it for free."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "JaguarEngine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Jaguar E-Pace X540 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "3000",
+            "highPrice": "9500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Jaguar E-Pace X540 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Jaguar E-Pace X540 engines, sourced from JaguarEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "X540 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://jaguarengine.uk/e-pace/x540/",
+          "author": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-09",
+          "dateModified": "2026-07-09"
+        }
+      ]
+    }
   },
   "internalDeclarations": {
     "checkA": "",
@@ -379,11 +663,45 @@
     "scopeNote": "All variants listed are E-Pace X540 only. P160 and P300e use the 1.5-litre three-cylinder Ingenium AJ150; P300e is the plug-in hybrid with an 80 kW rear-axle electric motor. D165 and D200 are facelift-only variants (2020–2024)."
   },
   "marketIntelligence": {
-    "mostRequestedEngines": [],
-    "mostRequestedVariants": [],
-    "averageReplacementCost": "",
-    "mostCommonFailures": [],
-    "liveFeed": []
+    "mostRequestedEngines": [
+      "1. D180/D200 (largest share of diesel enquiries)",
+      "2. P250",
+      "3. D150"
+    ],
+    "mostRequestedVariants": [
+      "1. D180",
+      "2. P250",
+      "3. D200"
+    ],
+    "averageReplacementCost": "£4,500 reconditioned, supply only [EM-QUOTE]",
+    "mostCommonFailures": [
+      "1. Diesel timing chain wear",
+      "2. Diesel oil dilution (DPF)",
+      "3. Petrol cooling system leaks"
+    ],
+    "liveFeed": [
+      {
+        "vehicle": "Jaguar E-Pace X540 D180",
+        "location": "Birmingham",
+        "issue": "Cold-start rattle",
+        "enquiries": "4 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "Jaguar E-Pace X540 P250",
+        "location": "London",
+        "issue": "Coolant system inspection",
+        "enquiries": "3 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "Jaguar E-Pace X540 P300e",
+        "location": "Manchester",
+        "issue": "Battery health check",
+        "enquiries": "2 enquiries",
+        "updated": "Updated Monthly"
+      }
+    ]
   },
   "faq": {
     "items": [
@@ -440,13 +758,26 @@
     ]
   },
   "trustCta": {
-    "h2": "",
-    "trustPoints": [],
-    "finalCta": "",
+    "h2": "Why UK Jaguar E-Pace X540 Owners Trust JaguarEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted X540 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real E-Pace owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare X540 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for X540",
+        "text": "covering every variant from D150 to P300e, with supply-only or full supply & fit available nationwide."
+      }
+    ],
+    "finalCta": "Find the best Jaguar E-Pace X540 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
-      "label": "",
+      "label": "Compare Jaguar E-Pace X540 Engine Prices on EnginesMarket →",
       "href": "#",
-      "note": ""
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
     }
   }
 }

@@ -531,64 +531,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (20%), South West (14%), Midlands (12%) — Jaguar strongholds [PATTERN DATA]"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a Jaguar X-Type 2.5 V6 engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned X-Type 2.5 V6 engine (AJ‑V6 / XB) typically costs £1,412–£1,800 supply only. A replacement XB engine costs on average £1,412 in good condition. Fitting adds £800–£1,200. Use our calculator for a figure specific to your vehicle.",
-        "value": "2. Is the Jaguar X-Type 2.5 V6 engine reliable?"
-      },
-      {
-        "label": "The AJ‑V6 is a fundamentally reliable engine when properly maintained. Examples with frequent oil changes (every 5,000 km) have exceeded 190,000 miles. However, it has known weaknesses: timing chain tensioner wear (the primary concern), water pump failure, vacuum leaks, and VVT mechanism faults. The engine is reportedly non‑interference, meaning a chain skip is less catastrophic than on interference designs.",
-        "value": "3. What are the common problems with the Jaguar X-Type 2.5 V6?"
-      },
-      {
-        "label": "The most common issues are timing chain tensioner wear (rattling on cold start), water pump failure (coolant leaks), vacuum leaks (P0171/P0174 codes), and VVT mechanism faults. Battery cable corrosion is also a known electrical issue. The transfer case can also fail, sounding like \"a box of rocks\" from the engine bay.",
-        "value": "4. Is it worth replacing an X-Type 2.5 V6 engine, or should I scrap the car?"
-      },
-      {
-        "label": "Depends on vehicle value and condition. Against a tidy £2,000–£5,000 X‑Type, a £1,412–£2,800 recon is 30‑70% of the car's value — often worth it on well‑maintained examples. If the timing chain has skipped, the engine is non‑interference, so repair may still be possible. Get a full diagnostic assessment before committing.",
-        "value": "5. How do I find my X-Type's engine code?"
-      },
-      {
-        "label": "The X-Type 2.5 V6 uses the AJ‑V6 (also known as XB) engine code. This is a 2.5-litre 24-valve V6 producing 196 PS. The engine code is stamped on the engine block and listed on your V5C.",
-        "value": "6. Can I repair an X-Type 2.5 V6 engine issue, or does it need replacement?"
-      },
-      {
-        "label": "Most issues — timing chain tensioner wear (if caught early), water pump failure, vacuum leaks, VVT issues — are repairable. The engine is reportedly non‑interference, so even if the chain skips, piston‑to‑valve contact may not occur. However, if the engine suffers major internal failure (crank, bearings), a full engine replacement is usually more cost‑effective than a rebuild.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "Section 9 (Trust + Final CTA), meta tags, Open Graph, Twitter Card, and complete JSON‑LD schema.",
-        "value": "* Brand: Jaguar"
-      },
-      {
-        "label": "* Domain: jaguarengine.uk",
-        "value": "* Data tag: JAG‑"
-      },
-      {
-        "label": "* Specialist count: 15+",
-        "value": "* Scrap threshold: 60%"
-      },
-      {
-        "label": "* CTA Mode: Consultative (Priority M)",
-        "value": "* Era Map rows: 1 (AJ‑V6 / XB)"
-      },
-      {
-        "label": "* Engine codes: AJ‑V6 (XB)",
-        "value": "* Service schema price range: £800 (lowest used) to £2,800 (highest rebuilt) — spans full Era Map history"
-      },
-      {
-        "label": "* Model Page needed: Jaguar X-Type X400 Generation Page",
-        "value": "* Generation Page needed: Jaguar X-Type X400 Generation Page (for cost inheritance)"
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Jaguar X-Type 2.5 V6 engine replacement cost in the UK?",
+        "answer": "A reconditioned X-Type 2.5 V6 engine (AJ‑V6 / XB) typically costs £1,412–£1,800 supply only. A replacement XB engine costs on average £1,412 in good condition. Fitting adds £800–£1,200. Use our calculator for a figure specific to your vehicle."
+      },
+      {
+        "id": 2,
+        "question": "Is the Jaguar X-Type 2.5 V6 engine reliable?",
+        "answer": "The AJ‑V6 is a fundamentally reliable engine when properly maintained. Examples with frequent oil changes (every 5,000 km) have exceeded 190,000 miles. However, it has known weaknesses: timing chain tensioner wear (the primary concern), water pump failure, vacuum leaks, and VVT mechanism faults. The engine is reportedly non‑interference, meaning a chain skip is less catastrophic than on interference designs."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Jaguar X-Type 2.5 V6?",
+        "answer": "The most common issues are timing chain tensioner wear (rattling on cold start), water pump failure (coolant leaks), vacuum leaks (P0171/P0174 codes), and VVT mechanism faults. Battery cable corrosion is also a known electrical issue. The transfer case can also fail, sounding like \"a box of rocks\" from the engine bay."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing an X-Type 2.5 V6 engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value and condition. Against a tidy £2,000–£5,000 X‑Type, a £1,412–£2,800 recon is 30‑70% of the car's value — often worth it on well‑maintained examples. If the timing chain has skipped, the engine is non‑interference, so repair may still be possible. Get a full diagnostic assessment before committing."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my X-Type's engine code?",
+        "answer": "The X-Type 2.5 V6 uses the AJ‑V6 (also known as XB) engine code. This is a 2.5-litre 24-valve V6 producing 196 PS. The engine code is stamped on the engine block and listed on your V5C."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair an X-Type 2.5 V6 engine issue, or does it need replacement?",
+        "answer": "Most issues — timing chain tensioner wear (if caught early), water pump failure, vacuum leaks, VVT issues — are repairable. The engine is reportedly non‑interference, so even if the chain skips, piston‑to‑valve contact may not occur. However, if the engine suffers major internal failure (crank, bearings), a full engine replacement is usually more cost‑effective than a rebuild."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK Jaguar X-Type 2.5 V6 Owners Trust JaguarEngine.uk",

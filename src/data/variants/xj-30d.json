@@ -457,7 +457,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Crankshaft bearing failure — approximately 35% of AJD‑V6 enquiries [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "105,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£8,000 reconditioned, supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "AJD‑V6 3.0 [JAG-VERIFIED]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Winter — cold starts expose bearing wear [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (19%), South West (17%), London (14%) [PATTERN DATA]"
+      }
+    ]
   },
   "faq": {
     "items": [

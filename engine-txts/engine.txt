@@ -36,7 +36,7 @@ Metric
 	________________
 
 
-AJ133 — Our Verdict & Rating
+SECTION 3 — VERDICT & RATING
 Star rating: ★★★½ out of 5
 Confidence: 90% — based on 330 UK enquiries and cross‑referenced specialist rebuild reports.
 Engine Score breakdown:
@@ -67,7 +67,7 @@ Avoid if: Budget buyers looking at pre‑2013 cars with no chain history.
 ________________
 
 
-AJ133 — Where It's Fitted (Jaguar Models)
+SECTION 4 — COMPATIBILITY
 Model
 	Generation
 	Variant/Badge
@@ -96,7 +96,7 @@ Model
 ________________
 
 
-AJ133 Replacement Costs
+SECTION 5 — COST GUIDE
 Condition
 	Supply Only
 	Fitted (Indie)
@@ -119,7 +119,7 @@ Shared‑cost note: Parts cost is identical across Jaguar and Land Rover applica
 ________________
 
 
-Frequently Asked Questions
+SECTION 6 — FAQ
 How much does a Jaguar AJ133 engine replacement cost?
 A reconditioned AJ133 typically costs £5,500–£9,000 supply only [JAG‑QUOTE], varying by specification and whether it's naturally aspirated or supercharged. Fitting adds £910–£1,170 depending on labour rates.
 Is the Jaguar AJ133 a reliable engine?
@@ -133,7 +133,7 @@ Yes — it's the same 5.0‑litre V8 engine, used across both brands with identi
 ________________
 
 
-Why UK AJ133 Owners Trust jaguarengine.uk
+SECTION 7 — TRUST + FINAL CTA
    * Every garage and engine rebuilder in our network is vetted, rated and reviewed by real AJ133 owners, as part of the Engine Finders network.
    * We compare real companies, not just lead‑gen sites — every specialist on EnginesMarket has genuine UK workshop premises and verified AJ133 experience.
    * Our data is sourced from 330+ real UK AJ133 enquiries in 2025, combined with direct interviews with Jaguar specialists across the country.
@@ -460,7 +460,7 @@ Metric
 	________________
 
 
-AJ-V8 — Our Verdict & Rating
+SECTION 3 — VERDICT & RATING
 Star rating: 3.5★ out of 5
 Confidence: 90% confidence — based on UK enquiries and cross-referenced specialist rebuild reports.
 Engine Score breakdown:
@@ -491,7 +491,7 @@ Avoid if: You cannot verify the timing chain tensioners have been updated to the
 ________________
 
 
-AJ-V8 — Where It's Fitted (Jaguar Models)
+SECTION 4 — COMPATIBILITY
 Model
 	Generation
 	Variant/Badge
@@ -532,7 +532,7 @@ Model
 ________________
 
 
-AJ-V8 Replacement Costs
+SECTION 5 — COST GUIDE
 Condition
 	Supply Only
 	Fitted (Indie)
@@ -555,7 +555,7 @@ Shared-cost note: Parts cost is similar across Jaguar and Land Rover application
 ________________
 
 
-FAQ
+SECTION 6 — FAQ
 How much does a Jaguar AJ-V8 engine replacement cost?
 A reconditioned AJ-V8 typically costs £4,500–£7,500 supply only, varying by displacement (4.0L vs 4.2L) and whether it's naturally aspirated or supercharged. Fitting adds £650–£1,300 depending on labour rates.
 Is the Jaguar AJ-V8 a reliable engine?
@@ -569,7 +569,7 @@ Yes — the same AJ-V8 family was also fitted to the Land Rover Range Rover L322
 ________________
 
 
-Why UK AJ-V8 Owners Trust JaguarEngine.uk
+SECTION 7 — TRUST + FINAL CTA
    * Trusted Suppliers — Every garage and engine rebuilder in our network is vetted, rated and reviewed by real AJ-V8 owners, as part of the Engine Finders network.
    * Compare Companies — We show you real quotes from multiple UK specialists side by side, so you can compare prices, warranties and lead times before you commit.
    * UK Coverage — Our network spans England, Scotland, Wales and Northern Ireland, with specialists who know the AJ-V8 inside out.
@@ -1757,7 +1757,7 @@ Metric
 	________________
 
 
-Ingenium 2.0 Diesel — Our Verdict & Rating
+SECTION 3 — VERDICT & RATING
 Star rating: ★★★ out of 5
 Confidence: 88% — based on 590 UK enquiries and cross‑referenced specialist rebuild reports.
 Engine Score breakdown:
@@ -1788,7 +1788,7 @@ Avoid if: Budget buyers looking at pre‑2019 cars with no documented chain hist
 ________________
 
 
-Ingenium 2.0 Diesel — Where It's Fitted (Jaguar Models)
+SECTION 4 — COMPATIBILITY
 Model
 	Generation
 	Variant/Badge
@@ -1813,7 +1813,7 @@ Model
 ________________
 
 
-Ingenium 2.0 Diesel Replacement Costs
+SECTION 5 — COST GUIDE
 Condition
 	Supply Only
 	Fitted (Indie)
@@ -1836,7 +1836,7 @@ Shared‑cost note: Parts cost is identical across Jaguar and Land Rover applica
 ________________
 
 
-Frequently Asked Questions
+SECTION 6 — FAQ
 How much does a Jaguar Ingenium 2.0 diesel engine replacement cost?
 A reconditioned Ingenium 2.0 diesel typically costs £3,500–£5,800 supply only [JAG‑QUOTE], varying by power output and specification. Fitting adds £650–£910 depending on labour rates.
 Is the Jaguar Ingenium 2.0 diesel a reliable engine?
@@ -1850,7 +1850,7 @@ Yes — it's the same 2.0‑litre four‑cylinder diesel engine, used across bot
 ________________
 
 
-Why UK Ingenium 2.0 Diesel Owners Trust jaguarengine.uk
+SECTION 7 — TRUST + FINAL CTA
    * Every garage and engine rebuilder in our network is vetted, rated and reviewed by real Ingenium owners, as part of the Engine Finders network.
    * We compare real companies, not just lead‑gen sites — every specialist on EnginesMarket has genuine UK workshop premises and verified Ingenium experience.
    * Our data is sourced from 590+ real UK Ingenium enquiries in 2025, combined with direct interviews with Jaguar specialists across the country.
@@ -2928,7 +2928,7 @@ Metric
 	Also fitted to Land Rover (DT306)
 	Overall Engine Score
 	56/100
-	AJ20D6 — Our Verdict & Rating
+	SECTION 3 — VERDICT & RATING
 Star rating: ★★★☆☆ (3.0 out of 5)
 Confidence: 72% confidence — based on UK enquiry data, JLR technical service bulletins, and specialist workshop reports.
 Engine Score breakdown:
@@ -2956,7 +2956,7 @@ Dimension
 	One-line verdict: The AJ20D6 is a smooth, powerful six-cylinder diesel — but early MHEV glitches and 2,500-bar fuel system sensitivity demand careful ownership — buy with a full service history and a JLR-backed warranty. (Clause 1: 12 words. Clause 2: 10 words. Clause 3: 11 words. Total: 33 words.)
 Best for: high-mileage drivers wanting effortless torque and refinement.
 Avoid if: you do mostly short urban trips — DPF and EGR issues will follow.
-AJ20D6 — Where It's Fitted (Jaguar Models)
+SECTION 4 — COMPATIBILITY
 Model
 	Generation
 	Variant/Badge
@@ -2974,7 +2974,7 @@ Model
 	3.0D
 	2020–present
 	Cross-link line (Shared mode): Also powers the Land Rover Defender, Range Rover, and Range Rover Sport (DT306) → [link].
-AJ20D6 Replacement Costs
+SECTION 5 — COST GUIDE
 Condition
 	Supply Only
 	Fitted (Indie)
@@ -2994,7 +2994,7 @@ Condition
 	Labour estimate: Fitting an AJ20D6 typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE].
 Shared-cost note: Parts cost is identical across Jaguar and Land Rover applications; labour time varies slightly by engine bay access.
 CTA line: → Compare AJ20D6 engine prices from UK specialists
-AJ20D6 — FAQ
+SECTION 6 — FAQ
 1. How much does a Jaguar AJ20D6 engine replacement cost?
 A reconditioned AJ20D6 typically costs £5,500–£9,000 supply only [JAG-QUOTE], varying by mileage, warranty length, and supplier. Fitting adds £800–£1,500 depending on labour rates and vehicle access.
 2. Is the Jaguar AJ20D6 a reliable engine?
@@ -3005,7 +3005,7 @@ JLR has issued a technical service bulletin (SSM75934) for accessory drive noise
 The AJ20D6 is fitted to the Jaguar F-Pace (D300 MHEV) and XF, primarily from 2020 onwards.
 5. Is the Jaguar AJ20D6 the same as Land Rover's version?
 Yes — the engine is shared across JLR. Jaguar calls it AJ20D6 (or AJ300D); Land Rover uses the DT306 code. The core engine is identical, with model-specific ECU calibrations.
-Why UK AJ20D6 Owners Trust JaguarEngine.uk
+SECTION 7 — TRUST + FINAL CTA
    * Trusted Suppliers: Every garage and engine rebuilder in our network is vetted, rated and reviewed by real AJ20D6 owners, as part of the Engine Finders network.
    * Compare Companies: We compare real, like-for-like quotes from UK-wide specialists — no hidden fees, no bait-and-switch pricing.
    * UK Coverage: Our network spans independent specialists and main-dealer alternatives across England, Scotland, Wales and Northern Ireland.
@@ -3308,7 +3308,7 @@ Metric
 	________________
 
 
-AJ20P6 — Our Verdict & Rating
+SECTION 3 — VERDICT & RATING
 Star rating: ★★★½ out of 5
 Confidence: 85% — based on 80 UK enquiries and early‑market specialist feedback.
 Engine Score breakdown:
@@ -3339,7 +3339,7 @@ Avoid if: Buyers expecting the simplicity of older naturally‑aspirated sixes.
 ________________
 
 
-AJ20P6 — Where It's Fitted (Jaguar Models)
+SECTION 4 — COMPATIBILITY
 Model
 	Generation
 	Variant/Badge
@@ -3356,7 +3356,7 @@ Model
 ________________
 
 
-AJ20P6 Replacement Costs
+SECTION 5 — COST GUIDE
 Condition
 	Supply Only
 	Fitted (Indie)
@@ -3379,7 +3379,7 @@ Shared‑cost note: Parts cost is identical across Jaguar and Land Rover applica
 ________________
 
 
-Frequently Asked Questions
+SECTION 6 — FAQ
 How much does a Jaguar AJ20P6 engine replacement cost?
 A reconditioned AJ20P6 typically costs £4,500–£7,500 supply only [EM‑QUOTE], varying by specification and power output. Fitting adds £780–£1,040 depending on labour rates.
 Is the Jaguar AJ20P6 a reliable engine?
@@ -3393,7 +3393,7 @@ Yes — it's the same 3.0‑litre straight‑six Ingenium petrol engine, used ac
 ________________
 
 
-Why UK AJ20P6 Owners Trust jaguarengine.uk
+SECTION 7 — TRUST + FINAL CTA
    * Every garage and engine rebuilder in our network is vetted, rated and reviewed by real AJ20P6 owners, as part of the Engine Finders network.
    * We compare real companies, not just lead‑gen sites — every specialist on EnginesMarket has genuine UK workshop premises and verified modern Jaguar experience.
    * Our data is sourced from real UK AJ20P6 enquiries, combined with direct interviews with Jaguar specialists across the country.
@@ -3642,7 +3642,7 @@ Metric
 	Exclusive to Jaguar (also military: Alvis, Daimler)
 	Overall Engine Score
 	—
-	XK Straight-Six — Our Verdict & Rating
+	SECTION 3 — VERDICT & RATING
 Star rating: 4.0★ out of 5
 Confidence: 85% confidence — based on historical production data and specialist rebuild reports.
 Engine Score breakdown:
@@ -3670,7 +3670,7 @@ Dimension
 	One-line verdict: The XK straight-six is one of the great British engines — durable and rebuildable, but tensioner wear and carburettor setup need specialist care — buy with documented rebuild history.
 Best for: Classic Jaguar enthusiasts who appreciate a robust, characterful engine and don't mind specialist maintenance.
 Avoid if: You're looking for a modern, low-maintenance daily driver or don't have access to a specialist.
-XK Straight-Six — Where It's Fitted (Jaguar Models)
+SECTION 4 — COMPATIBILITY
 The XK6 engine was produced in five displacements across six decades:
 Displacement
 	Models
@@ -3688,7 +3688,7 @@ Displacement
 	420, 420G, E-Type (Series 1.5–3), XJ6 (Series 1–3), Daimler Sovereign, Daimler DS420 Limousine
 	1965–1992
 	The last Jaguar car fitted with the XK6 engine was the 1986 XJ6; the final production application was the 1992 Daimler DS420 Limousine.
-XK Straight-Six Replacement Costs
+SECTION 5 — COST GUIDE
 Condition
 	Supply Only
 	Fitted (Indie)
@@ -3707,7 +3707,7 @@ Condition
 	12–24 months
 	Labour estimate: Fitting a Jaguar XK straight-six typically takes 14–20 hours at £65–£95/hr (independent specialist) — classic Jaguar specialists like Guy Broad or P&K Thornton are recommended.
 → Compare XK Straight-Six engine prices from UK specialists
-FAQ
+SECTION 6 — FAQ
 How much does a Jaguar XK straight-six engine replacement cost?
 A reconditioned XK straight-six typically costs £5,000–£7,500 supply only, varying by displacement (3.4L vs 3.8L vs 4.2L) and specification (carburettor vs fuel injection). Full rebuilds by specialists often exceed £10,000.
 Is the Jaguar XK straight-six a reliable engine?
@@ -3718,7 +3718,7 @@ Which Jaguar models use the XK straight-six?
 The XK6 powered over 20 models across six decades — from the 1949 XK120 sports car through the Mk VII/VIII saloons, Mk 2, E-Type, S-Type, 420/420G, and XJ6 saloons through to 1986.
 How long does the Jaguar XK straight-six last?
 With proper maintenance, the XK straight-six is capable of 100,000+ miles before requiring a rebuild. The engine is renowned for its durability — five of the top six cars at the 1957 Le Mans 24 Hours were Jaguar D-Types powered by XK engines. Regular servicing and avoiding overheating are key to longevity.
-Why UK XK Straight-Six Owners Trust JaguarEngine.uk
+SECTION 7 — TRUST + FINAL CTA
    * Trusted Suppliers — Every garage and engine rebuilder in our network is vetted, rated and reviewed by real XK straight-six owners, as part of the Engine Finders network.
    * Compare Companies — We show you real quotes from multiple UK specialists side by side, so you can compare prices, warranties and lead times before you commit.
    * UK Coverage — Our network spans England, Scotland, Wales and Northern Ireland, with specialists who know the classic XK straight-six inside out.

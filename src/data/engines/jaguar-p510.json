@@ -1,24 +1,181 @@
 {
   "meta": {
-    "slug": "jaguar-p510",
-    "title": "Jaguar P510 Engine — Specs, Reliability & Replacement Cost",
-    "description": "",
-    "canonical": "",
+    "slug": "p510",
+    "title": "<title>Jaguar P510 Engine — Specs, Reliability & Replacement Cost</title>",
+    "description": "<meta name=\"description\" content=\"The P510 is Jaguar's 3.0-litre Ingenium PHEV — a robust twin-turbo I6 with hybrid efficiency. Backed by real UK enquiries. Compare quotes from 15+ vetted specialists today.\" />",
+    "canonical": "https://jaguarengine.uk/engines/p510/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "Jaguar P510 Engine — Specs, Reliability & Replacement Cost",
+      "description": "The P510 is Jaguar's 3.0-litre Ingenium PHEV — a robust twin-turbo I6 with hybrid efficiency. Backed by real UK enquiries. Compare quotes from 15+ vetted specialists today.",
+      "type": "website",
+      "url": "https://jaguarengine.uk/engines/p510/",
+      "image": "https://jaguarengine.uk/images/jaguar/engines/p510.jpg",
+      "siteName": "jaguarengine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "Jaguar P510 Engine — Specs, Reliability & Replacement Cost",
+      "description": "The P510 is Jaguar's 3.0-litre Ingenium PHEV — a robust twin-turbo I6 with hybrid efficiency. Backed by real UK enquiries. Compare quotes from 15+ vetted specialists today.",
+      "image": "https://jaguarengine.uk/images/jaguar/engines/p510.jpg"
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Engines",
+              "item": "https://jaguarengine.uk/engines/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "P510",
+              "item": "https://jaguarengine.uk/engines/p510/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar models fitted with the P510",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Jaguar F-Pace X761 (2015–2024) P510e",
+              "url": "https://jaguarengine.uk/models/f-pace-x761/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Jaguar F-Pace X761 (facelift) P510e",
+              "url": "https://jaguarengine.uk/models/f-pace-x761-facelift/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Jaguar P510 engine replacement cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned P510 typically costs £4,500–£7,000 supply only [ESTIMATED], varying by specific variant and PHEV system integration. Fitting adds £780–£1,300 depending on labour rates and hybrid system re-calibration."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Jaguar P510 a reliable engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We rate the P510 at 3.5★ out of 5 based on emerging UK data [ESTIMATED]. The 3.0-litre Ingenium straight-six is considered more robust than earlier V6 units, but timing chain and cooling system issues have been reported on some versions."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the most common Jaguar P510 failure?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing chain wear and cooling system leaks are the most reported concerns — the Ingenium I6 shares some of the 2.0-litre unit's chain tensioner vulnerabilities. Regular oil changes and coolant system inspections are essential preventative measures."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Jaguar models use the P510?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The F-Pace (X761) is the primary Jaguar application for the P510 PHEV powertrain, offered from 2021 onwards. The same engine also appears in various Land Rover models including the Range Rover and Range Rover Sport."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Jaguar P510 the same as Land Rover's version?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the P510 is the same 3.0-litre Ingenium I6 PHEV powertrain across Jaguar and Land Rover applications, badged as P510e. Parts are identical; only ECU tuning and emissions calibration vary between brands."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "jaguarengine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "https://jaguarengine.uk/images/logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "Jaguar P510 Engine",
+          "brand": {
+            "@type": "Brand",
+            "name": "Jaguar"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "3.5",
+            "bestRating": "5",
+            "ratingCount": "1",
+            "reviewCount": "1"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Jaguar P510 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "3500",
+            "highPrice": "9500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Jaguar P510 UK Enquiry & Reliability Data 2025",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the Jaguar P510, sourced from jaguarengine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Jaguar P510 Engine — Specs, Reliability & Replacement Cost",
+          "url": "https://jaguarengine.uk/engines/p510/",
+          "author": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-14",
+          "dateModified": "2026-07-14"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "Jaguar • P510 • Petrol PHEV • 3.0L I6 Twin-Turbo • 2021–present",
@@ -63,79 +220,48 @@
       {
         "metric": "Overall Engine Score",
         "value": "TBC/100"
-      },
-      {
-        "metric": "SECTION 3 — VERDICT & RATING",
-        "value": "H2: P510 — Our Verdict & Rating"
-      },
-      {
-        "metric": "Star rating: 3.5★ out of 5 [ESTIMATED]",
-        "value": "Confidence: 65% confidence — based on limited UK enquiry data and emerging specialist reports [ESTIMATED]."
-      },
-      {
-        "metric": "Engine Score breakdown:",
-        "value": "Dimension"
-      },
-      {
-        "metric": "Score (of 20)",
-        "value": "How it's determined"
-      },
-      {
-        "metric": "Reliability",
-        "value": "14"
-      },
-      {
-        "metric": "Formula: star rating × 4. 3.5★ = 14/20 [ESTIMATED].",
-        "value": "Repair Cost"
-      },
-      {
-        "metric": "12",
-        "value": "Midpoint of Reconditioned (Supply Only) range: estimated £4,500–£7,000 → midpoint £5,750 → falls in £5,000–£6,999 bracket → 12/20 [ESTIMATED]."
-      },
-      {
-        "metric": "Repairability",
-        "value": "12"
-      },
-      {
-        "metric": "Modern Ingenium I6 with known timing chain and cooling system concerns — a mix of manageable repairs and complex PHEV system integration [ESTIMATED].",
-        "value": "Parts Supply"
-      },
-      {
-        "metric": "16",
-        "value": "JLR dealer network supports the Ingenium range; specialist independent supply growing but still developing for newer PHEV variants [ESTIMATED]."
-      },
-      {
-        "metric": "Replacement Economics",
-        "value": "16"
-      },
-      {
-        "metric": "Reconditioned cost (£4,500–£7,000) against conservative lowest host value (F-Pace at £15,000+) = under 50% — replacement viable [ESTIMATED].",
-        "value": "Total"
-      },
-      {
-        "metric": "70/100",
-        "value": "Sum of the five rows above [ESTIMATED]."
-      },
-      {
-        "metric": "One-line verdict: \"The P510 is Jaguar's most advanced Ingenium PHEV — generally robust but complex — budget for specialist maintenance and don't skip service intervals.\"",
-        "value": "Best for: Company car drivers and urban owners who can charge at home."
       }
     ]
   },
   "verdictRating": {
-    "starRating": "",
-    "confidence": "",
-    "scoreNote": "",
+    "starRating": "3.5★ out of 5 [ESTIMATED]",
+    "confidence": "65% confidence — based on limited UK enquiry data and emerging specialist reports [ESTIMATED].",
+    "scoreNote": "Engine Score breakdown:",
     "scoreBreakdown": {
       "columns": [
         "Dimension",
         "Score (of 20)"
       ],
-      "rows": []
+      "rows": [
+        {
+          "dimension": "Reliability",
+          "score": "14 (Formula: star rating × 4. 3.5★ = 14/20 [ESTIMATED].)"
+        },
+        {
+          "dimension": "Repair Cost",
+          "score": "12 (Midpoint of Reconditioned (Supply Only) range: estimated £4,500–£7,000 → midpoint £5,750 → falls in £5,000–£6,999 bracket → 12/20 [ESTIMATED].)"
+        },
+        {
+          "dimension": "Repairability",
+          "score": "12 (Modern Ingenium I6 with known timing chain and cooling system concerns — a mix of manageable repairs and complex PHEV system integration [ESTIMATED].)"
+        },
+        {
+          "dimension": "Parts Supply",
+          "score": "16 (JLR dealer network supports the Ingenium range; specialist independent supply growing but still developing for newer PHEV variants [ESTIMATED].)"
+        },
+        {
+          "dimension": "Replacement Economics",
+          "score": "16 (Reconditioned cost (£4,500–£7,000) against conservative lowest host value (F-Pace at £15,000+) = under 50% — replacement viable [ESTIMATED].)"
+        },
+        {
+          "dimension": "Total",
+          "score": "70/100 (Sum of the five rows above [ESTIMATED].)"
+        }
+      ]
     },
-    "oneLineVerdict": "",
-    "bestFor": "",
-    "avoidIf": ""
+    "oneLineVerdict": "\"The P510 is Jaguar's most advanced Ingenium PHEV — generally robust but complex — budget for specialist maintenance and don't skip service intervals.\"",
+    "bestFor": "Company car drivers and urban owners who can charge at home.",
+    "avoidIf": "No access to home charging or you're uncomfortable with hybrid system complexity."
   },
   "compatibility": {
     "columns": [

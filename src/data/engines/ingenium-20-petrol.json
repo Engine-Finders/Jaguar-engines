@@ -3,20 +3,20 @@
     "slug": "ingenium-20-petrol",
     "title": "Jaguar Ingenium 2.0 Petrol Engine — Specs, Reliability & Replacement Cost",
     "description": "Solid, efficient turbo four with timing chain tensioner wear as the main risk — rated from 500+ real UK enquiries. Compare quotes from 15+ vetted specialists today.",
-    "canonical": "",
+    "canonical": "https://jaguarengine.uk/engines/ingenium-20-petrol/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "Jaguar Ingenium 2.0 Petrol Engine — Specs, Reliability & Replacement Cost",
+      "description": "Solid, efficient turbo four with timing chain tensioner wear as the main risk — rated from 500+ real UK enquiries. Compare quotes from 15+ vetted specialists today.",
+      "type": "website",
+      "url": "https://jaguarengine.uk/engines/ingenium-20-petrol/",
+      "image": "https://jaguarengine.uk/images/jaguar/engines/ingenium-20-petrol.jpg",
+      "siteName": "jaguarengine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "Jaguar Ingenium 2.0 Petrol Engine — Specs, Reliability & Replacement Cost",
+      "description": "Solid, efficient turbo four with timing chain tensioner wear as the main risk — rated from 500+ real UK enquiries. Compare quotes from 15+ vetted specialists today.",
+      "image": "https://jaguarengine.uk/images/jaguar/engines/ingenium-20-petrol.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -255,79 +255,48 @@
       {
         "metric": "Overall Engine Score",
         "value": "70/100"
-      },
-      {
-        "metric": "SECTION 3 — VERDICT & RATING",
-        "value": "Star rating: 3.5★ out of 5"
-      },
-      {
-        "metric": "Confidence: 88% confidence — based on 500 UK enquiries and cross-referenced specialist repair reports.",
-        "value": "Engine Score breakdown:"
-      },
-      {
-        "metric": "Dimension",
-        "value": "Score (of 20)"
-      },
-      {
-        "metric": "How it's determined",
-        "value": "Reliability"
-      },
-      {
-        "metric": "14",
-        "value": "3.5★ × 4 = 14"
-      },
-      {
-        "metric": "Repair Cost",
-        "value": "12"
-      },
-      {
-        "metric": "Reconditioned midpoint ~£3,700 — falls in £3,000–£4,999 bracket",
-        "value": "Repairability"
-      },
-      {
-        "metric": "16",
-        "value": "Most failures are manageable repairs (water pump, phase regulators); timing chain work is heavier but not catastrophic"
-      },
-      {
-        "metric": "Parts Supply",
-        "value": "16"
-      },
-      {
-        "metric": "Good availability across UK specialists; shared with Land Rover increases supply base",
-        "value": "Replacement Economics"
-      },
-      {
-        "metric": "12",
-        "value": "Recon cost ~45–60% of lowest Jaguar host value (XE ~£7,000)"
-      },
-      {
-        "metric": "Total",
-        "value": "70/100"
-      },
-      {
-        "metric": "Sum of five rows above",
-        "value": "One-line verdict: The Ingenium 2.0 petrol is a solid, efficient turbo four — but timing chain tensioner wear and cooling system issues need monitoring — buy with full service history and annual oil changes."
-      },
-      {
-        "metric": "Best for: motorway drivers who change oil annually and avoid repeated short trips.",
-        "value": "Avoid if: no documented oil change history or a cold-start rattle is present."
       }
     ]
   },
   "verdictRating": {
-    "starRating": "",
-    "confidence": "",
-    "scoreNote": "",
+    "starRating": "3.5★ out of 5",
+    "confidence": "88% confidence — based on 500 UK enquiries and cross-referenced specialist repair reports.",
+    "scoreNote": "Engine Score breakdown:",
     "scoreBreakdown": {
       "columns": [
         "Dimension",
         "Score (of 20)"
       ],
-      "rows": []
+      "rows": [
+        {
+          "dimension": "Reliability",
+          "score": "14 (3.5★ × 4 = 14)"
+        },
+        {
+          "dimension": "Repair Cost",
+          "score": "12 (Reconditioned midpoint ~£3,700 — falls in £3,000–£4,999 bracket)"
+        },
+        {
+          "dimension": "Repairability",
+          "score": "16 (Most failures are manageable repairs (water pump, phase regulators); timing chain work is heavier but not catastrophic)"
+        },
+        {
+          "dimension": "Parts Supply",
+          "score": "16 (Good availability across UK specialists; shared with Land Rover increases supply base)"
+        },
+        {
+          "dimension": "Replacement Economics",
+          "score": "12 (Recon cost ~45–60% of lowest Jaguar host value (XE ~£7,000))"
+        },
+        {
+          "dimension": "Total",
+          "score": "70/100 (Sum of five rows above)"
+        }
+      ]
     },
-    "oneLineVerdict": "",
-    "bestFor": "",
-    "avoidIf": ""
+    "oneLineVerdict": "The Ingenium 2.0 petrol is a solid, efficient turbo four — but timing chain tensioner wear and cooling system issues need monitoring — buy with full service history and annual oil changes.",
+    "bestFor": "motorway drivers who change oil annually and avoid repeated short trips.",
+    "avoidIf": "no documented oil change history or a cold-start rattle is present."
   },
   "compatibility": {
     "columns": [

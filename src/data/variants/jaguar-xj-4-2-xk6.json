@@ -1,26 +1,194 @@
 {
   "meta": {
-    "slug": "jaguar-xj-4-2-xk6",
-    "title": "Jaguar XJ 4.2 Engine Replacement — Compare Prices & Get Quotes",
-    "titleCharCount": 62,
-    "description": "",
-    "descriptionCharCount": 0,
-    "canonical": "",
+    "slug": "xj-42-xk6",
+    "title": "XJ 4.2 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 57,
+    "description": "Jaguar XJ 4.2 — XK6 straight-six engine. Real UK costs, common cooling, block and tappet guide issues, and honest reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
+    "descriptionCharCount": 160,
+    "canonical": "https://jaguarengine.uk/xj/42-xk6/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "XJ 4.2 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Jaguar XJ 4.2 — XK6 straight-six engine. Real UK costs, common cooling, block and tappet guide issues, and honest reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
+      "type": "website",
+      "url": "https://jaguarengine.uk/xj/42-xk6/",
+      "image": "https://jaguarengine.uk/images/jaguar/hero/xj-42-xk6.jpg",
+      "siteName": "JaguarEngine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "XJ 4.2 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Jaguar XJ 4.2 — XK6 straight-six engine. Real UK costs, common cooling, block and tappet guide issues, and honest reliability data.",
+      "image": "https://jaguarengine.uk/images/jaguar/hero/xj-42-xk6.jpg"
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "XJ",
+              "item": "https://jaguarengine.uk/xj/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "4.2",
+              "item": "https://jaguarengine.uk/xj/42-xk6/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar XJ 4.2 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "XJ Series 1 (XK6 4.2, 1968–1973)",
+              "url": "https://jaguarengine.uk/xj/42-xk6/#series1"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "XJ Series 2 (XK6 4.2, 1973–1979)",
+              "url": "https://jaguarengine.uk/xj/42-xk6/#series2"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "XJ Series 3 (XK6 4.2, 1979–1986)",
+              "url": "https://jaguarengine.uk/xj/42-xk6/#series3"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar XJ 4.2 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "XK6 4.2L Straight-Six",
+              "url": "https://jaguarengine.uk/engines/xk6-42/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Jaguar XJ 4.2 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned Jaguar XJ 4.2 engine (XK6) typically costs £4,500–£7,000 supply only. Fitting adds £1,000–£1,500. A full rebuild typically costs around £5,000. These are specialist-only replacements — the XK6 requires classic Jaguar engine expertise."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Jaguar XJ 4.2 engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The XK6 4.2 is one of Jaguar's most legendary engines — famously durable and characterful. However, early blocks (pre-1983) are prone to cracking between bores. The Series 3 block (1983-on) has slotted water passages that prevent this. Tappet guides can loosen on higher-mileage examples. With proper maintenance, these engines are extremely robust."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Jaguar XJ 4.2?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pre-1983 block cracking (coolant loss, overheating, £4,000–£6,000), tappet guide loosening (tapping noise, £1,500–£3,500), cooling system wear (water pump, thermostat, £300–£800), and head gasket failure (£1,500–£3,000). The Series 3 (1983-on) is the most reliable version."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Jaguar XJ 4.2 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "XJ values range from £5,000–£20,000 depending on Series, condition and mileage. A £4,500–£7,000 reconditioned engine represents 20–80% of vehicle value — our 60% Jaguar scrap threshold means careful evaluation is required. For a well-maintained Series 3, replacement is often justified. For an ageing Series 1/2 with other issues, assess scrap value first."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Jaguar XJ 4.2 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The XJ 4.2 uses the XK6 engine code — Jaguar's legendary 4.2-litre straight-six. The engine was used across Series 1 (1968–1973), Series 2 (1973–1979) and Series 3 (1979–1986) XJs. The code is stamped on the engine block; your VIN and vehicle documentation will also confirm the specification."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the block cracking issue, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pre-1983 blocks can sometimes be repaired using a stitching process (£4,000–£6,000) — but in many cases, a replacement block or complete engine is more cost-effective (£4,500–£7,000). The later Series 3 block (1983-on) has slotted water passages that prevent the issue. At the first sign of coolant loss or overheating in a pre-1983 car, book an inspection immediately."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "JaguarEngine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Jaguar XJ 4.2 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "3000",
+            "highPrice": "8500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Jaguar XJ 4.2 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Jaguar XJ 4.2 engines, sourced from JaguarEngine.uk's specialist marketplace activity for the XK6 straight-six.",
+          "creator": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "XJ 4.2 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://jaguarengine.uk/xj/42-xk6/",
+          "author": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-12",
+          "dateModified": "2026-07-12"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "Jaguar XJ 4.2 (XK6) • 1968–1986 • 4.2L Straight-Six",

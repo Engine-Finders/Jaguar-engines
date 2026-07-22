@@ -547,7 +547,7 @@
       }
     ],
     "insights": [
-      "1. Interesting insight: The XE generates almost as many enquiries as the larger, older XF — 260 vs 276 — despite the XF having two generations of production. This suggests the XE's position as Jaguar's entry-level saloon is driving genuine owner research volume, not just market penetration of an older model. The XE's diesel enquiries (590 across Jaguar models) significantly outpace its petrol equivalents (500). This aligns with the UK's long-term diesel preference in executive saloons, but also means the timing-chain caveat affects a larger proportion of the XE market than it does in any other Jaguar model. The 2019 facelift is visible in our data as a clear dividing line — specialists consistently report far fewer timing-chain enquiries on post-2019 cars, but oil dilution and EGR cooler failures persist regardless of year, suggesting these are fundamental to the Ingenium diesel architecture rather than production-era issues."
+      "Interesting insight: The XE generates almost as many enquiries as the larger, older XF — 260 vs 276 — despite the XF having two generations of production. This suggests the XE's position as Jaguar's entry-level saloon is driving genuine owner research volume, not just market penetration of an older model. The XE's diesel enquiries (590 across Jaguar models) significantly outpace its petrol equivalents (500). This aligns with the UK's long-term diesel preference in executive saloons, but also means the timing-chain caveat affects a larger proportion of the XE market than it does in any other Jaguar model. The 2019 facelift is visible in our data as a clear dividing line — specialists consistently report far fewer timing-chain enquiries on post-2019 cars, but oil dilution and EGR cooler failures persist regardless of year, suggesting these are fundamental to the Ingenium diesel architecture rather than production-era issues."
     ],
     "liveEnquiryFeedNote": ""
   },
@@ -726,7 +726,7 @@
       {
         "id": 4,
         "question": "How do I know if my XE engine needs replacing?",
-        "answer": "The most common symptoms across XE engines are: * Diesel (AJ200D): Cold-start rattle (timing chain), frequent DPF regens or high oil level (oil dilution), coolant loss or overheating (EGR cooler). * Petrol (AJ200P): Coolant loss from the water pump area, overheating, or a persistent low-coolant warning. If you experience any of these, book an inspection immediately — timing-chain failure on the diesel can be catastrophic, and water-pump failure on the petrol can lead to head-gasket damage if ignored."
+        "answer": "The most common symptoms across XE engines are: Diesel (AJ200D): Cold-start rattle (timing chain), frequent DPF regens or high oil level (oil dilution), coolant loss or overheating (EGR cooler). Petrol (AJ200P): Coolant loss from the water pump area, overheating, or a persistent low-coolant warning. If you experience any of these, book an inspection immediately — timing-chain failure on the diesel can be catastrophic, and water-pump failure on the petrol can lead to head-gasket damage if ignored."
       },
       {
         "id": 5,

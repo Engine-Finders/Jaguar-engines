@@ -1,26 +1,182 @@
 {
   "meta": {
-    "slug": "jaguar-s-type-2-7d",
-    "title": "Jaguar S-Type 2.7d Engine Replacement — Compare Prices & Get Quotes",
-    "titleCharCount": 67,
-    "description": "",
-    "descriptionCharCount": 0,
-    "canonical": "",
+    "slug": "s-type-27d",
+    "title": "S-Type 2.7d Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 57,
+    "description": "The 207bhp AJD-V6 twin-turbo diesel — real UK costs, common bearing and oil pump issues, and honest reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
+    "descriptionCharCount": 160,
+    "canonical": "https://jaguarengine.uk/s-type/27d/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "S-Type 2.7d Engine Replacement Cost UK — Compare Quotes",
+      "description": "The 207bhp AJD-V6 twin-turbo diesel — real UK costs, common bearing and oil pump issues, and honest reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
+      "type": "website",
+      "url": "https://jaguarengine.uk/s-type/27d/",
+      "image": "https://jaguarengine.uk/images/jaguar/hero/s-type-27d.jpg",
+      "siteName": "JaguarEngine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "S-Type 2.7d Engine Replacement Cost UK — Compare Quotes",
+      "description": "The 207bhp AJD-V6 twin-turbo diesel — real UK costs, common bearing and oil pump issues, and honest reliability data.",
+      "image": "https://jaguarengine.uk/images/jaguar/hero/s-type-27d.jpg"
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "S-Type",
+              "item": "https://jaguarengine.uk/s-type/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "2.7d",
+              "item": "https://jaguarengine.uk/s-type/27d/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar S-Type 2.7d Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "S-Type X200 2.7d (AJD-V6, 2004–2007)",
+              "url": "https://jaguarengine.uk/s-type/27d/#ajd-v6"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar S-Type 2.7d Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "AJD-V6 2.7L Twin-Turbo Diesel",
+              "url": "https://jaguarengine.uk/engines/ajd-v6/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Jaguar S-Type 2.7d engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned Jaguar S-Type 2.7d engine (AJD-V6) typically costs £3,500–£6,500 supply only. Fitting adds £1,200–£1,600. An oil pump replacement costs £1,500–£3,000. The AJD-V6 is a specialist engine requiring Jaguar diesel expertise."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Jaguar S-Type 2.7d reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The AJD-V6 is refined and torquey, but has well-documented weaknesses. Crankshaft/big-end bearing failure and oil pump housing failure are the defining issues. Pre-2005 cars without a DPF are more reliable. Regular oil changes (5,000–7,500 miles) and timing belt changes (105,000 miles) are essential. A well-maintained example is as reliable as the big German diesels."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Jaguar S-Type 2.7d?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Crankshaft/big-end bearing failure (cold-start knock, £4,000–£6,500), oil pump housing failure (oil pressure warnings, £1,500–£3,000), turbocharger failure leading to scored liners (£1,500–£3,500), and DPF/EGR issues on post-2005 models (£400–£1,200)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Jaguar S-Type 2.7d engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "S-Type 2.7d values range from £1,500–£6,000 depending on condition and mileage. A £3,500–£6,500 reconditioned engine represents 60–100% of vehicle value — our 60% Jaguar scrap threshold means careful evaluation is required. For a well-maintained, low-mileage example, replacement may be justified. For a higher-mileage example with other issues, assess scrap value first."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Jaguar S-Type 2.7d engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The S-Type 2.7d uses the AJD-V6 engine code (also known as 7B / AJTDV6). This is the Ford/PSA Lion V6 diesel, a 2.7-litre twin-turbo V6 producing 207bhp. The code is stamped on the engine block; your VIN and vehicle documentation will also confirm the specification."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the crankshaft bearing issue, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "In many cases, engine replacement is the more cost-effective option (£3,500–£6,500) compared to a bottom-end rebuild (£4,000–£6,500). If caught extremely early — before bearing damage has scored the crankshaft — a specialist may grind the crankshaft and fit oversized bearings. But for most examples, replacement is recommended. At the first sign of cold-start knock, stop driving immediately and book an inspection."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "JaguarEngine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Jaguar S-Type 2.7d Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2500",
+            "highPrice": "7500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Jaguar S-Type 2.7d UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Jaguar S-Type 2.7d engines, sourced from JaguarEngine.uk's specialist marketplace activity for the AJD-V6.",
+          "creator": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "S-Type 2.7d Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://jaguarengine.uk/s-type/27d/",
+          "author": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-12",
+          "dateModified": "2026-07-12"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "Jaguar S-Type 2.7d • 2004–2007 • 2.7L Twin-Turbo V6 Diesel",

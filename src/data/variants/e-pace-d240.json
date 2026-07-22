@@ -7,18 +7,18 @@
     "descriptionCharCount": 159,
     "canonical": "https://jaguarengine.uk/e-pace/d240/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "D240 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Jaguar E-Pace D240 2.0 twin-turbo diesel — real UK costs, timing chain & DPF insight, and honest reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
+      "type": "website",
+      "url": "https://jaguarengine.uk/e-pace/d240/",
+      "image": "https://jaguarengine.uk/images/jaguar/hero/e-pace-d240.jpg",
+      "siteName": "JaguarEngine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "D240 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Jaguar E-Pace D240 2.0 twin-turbo diesel — real UK costs, timing chain & DPF insight, and honest reliability data.",
+      "image": "https://jaguarengine.uk/images/jaguar/hero/e-pace-d240.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",

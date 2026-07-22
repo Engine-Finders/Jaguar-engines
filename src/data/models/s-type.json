@@ -751,7 +751,12 @@
       {
         "id": 4,
         "question": "How do I know if my S-Type engine needs replacing?",
-        "answer": "Common symptoms by engine: * V6 (AJ126/AJ-V6): Overheating from coolant leaks, water pump failure, or head-gasket failure (from ignored overheating). White smoke or persistent coolant loss is a warning sign. * V8 (AJ133): Rattling on cold start (timing chain tensioners), overheating from coolant crossover pipe failure, loss of power (supercharger coupler wear on R models). * 4.0 V8 (AJ-V8): Misfires, poor compression, oil consumption — all signs of Nikasil bore wear. Get a compression test before buying any pre-2002 4.0."
+        "answer": "Common symptoms by engine: V6 (AJ126/AJ-V6): Overheating from coolant leaks, water pump failure, or head-gasket failure (from ignored overheating). White smoke or persistent coolant loss is a warning sign. V8 (AJ133): Rattling on cold start (timing chain tensioners), overheating from coolant crossover pipe failure, loss of power (supercharger coupler wear on R models)."
+      },
+      {
+        "id": 4,
+        "question": "0 V8 (AJ-V8): Misfires, poor compression, oil consumption — all signs of Nikasil bore wear. Get a compression test before buying any pre-2002 4.0.",
+        "answer": ""
       },
       {
         "id": 5,

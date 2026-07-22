@@ -1,24 +1,193 @@
 {
   "meta": {
-    "slug": "jaguar-ajd4-204dtd",
-    "title": "Jaguar AJD4 / 204DTD Engine — Specs, Reliability & Replacement Cost",
-    "description": "",
-    "canonical": "",
+    "slug": "ajd4-204dtd",
+    "title": "Jaguar AJD4 Engine — Specs, Reliability & Replacement Cost",
+    "description": "The AJD4 is a capable diesel, but timing chain and EGR issues are common. 590+ UK enquiries [JAG-VERIFIED]. Compare quotes from vetted specialists today.",
+    "canonical": "https://jaguarengine.uk/engines/ajd4-204dtd/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "Jaguar AJD4 Engine — Specs, Reliability & Replacement Cost",
+      "description": "The AJD4 is a capable diesel, but timing chain and EGR issues are common. 590+ UK enquiries [JAG-VERIFIED]. Compare quotes from vetted specialists today.",
+      "type": "website",
+      "url": "https://jaguarengine.uk/engines/ajd4-204dtd/",
+      "image": "https://jaguarengine.uk/images/jaguar/engines/ajd4-204dtd.jpg",
+      "siteName": "jaguarengine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "Jaguar AJD4 Engine — Specs, Reliability & Replacement Cost",
+      "description": "The AJD4 is a capable diesel, but timing chain and EGR issues are common. 590+ UK enquiries [JAG-VERIFIED]. Compare quotes from vetted specialists today.",
+      "image": "https://jaguarengine.uk/images/jaguar/engines/ajd4-204dtd.jpg"
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Engines",
+              "item": "https://jaguarengine.uk/engines/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Jaguar AJD4 Engine",
+              "item": "https://jaguarengine.uk/engines/ajd4-204dtd/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar models fitted with the AJD4 / 204DTD",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Jaguar XF X250 2.2D",
+              "url": "https://jaguarengine.uk/jaguar/xf-x250/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Jaguar XJ X351 2.2D",
+              "url": "https://jaguarengine.uk/jaguar/xj-x351/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Jaguar XE X760 2.0D / 2.2D (early)",
+              "url": "https://jaguarengine.uk/jaguar/xe-x760/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Jaguar F-Pace X761 2.2D (early production)",
+              "url": "https://jaguarengine.uk/jaguar/f-pace-x761/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Jaguar AJD4 / 204DTD engine replacement cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned AJD4 typically costs £3,500–£5,800 supply only [JAG-QUOTE], varying by mileage, condition, and supplier warranty. Fitting adds £650–£1,300 depending on labour rates. Use our calculator for a figure specific to your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Jaguar AJD4 / 204DTD a reliable engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The AJD4 scores 3.5★ out of 5, with 88% confidence based on 590+ real UK enquiries [JAG-VERIFIED]. It's a capable motorway diesel, but timing chain tensioner wear and EGR clogging are documented weak points."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the most common Jaguar AJD4 / 204DTD failure?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing chain tensioner wear is the most reported failure — it can stretch and cause rattling on cold start, typically appearing between 70,000–120,000 miles. EGR cooler leaks and oil dilution from DPF regeneration are also common."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Jaguar models use the AJD4 / 204DTD?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The AJD4 / 204DTD was fitted to the XF (X250), XJ (X351), and early examples of the XE (X760) and F-Pace (X761) — primarily 2011–2015 production."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does the Jaguar AJD4 / 204DTD last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "With regular servicing and timely timing-chain maintenance, the AJD4 / 204DTD can reach 150,000–180,000 miles. Short urban trips accelerate DPF and EGR issues — motorway usage extends engine life significantly."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "jaguarengine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "https://jaguarengine.uk/images/logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "Jaguar AJD4 / 204DTD Engine",
+          "brand": {
+            "@type": "Brand",
+            "name": "Jaguar"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "3.5",
+            "bestRating": "5",
+            "ratingCount": "1",
+            "reviewCount": "1"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Jaguar AJD4 / 204DTD Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2000",
+            "highPrice": "7000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Jaguar AJD4 / 204DTD UK Enquiry & Reliability Data 2025",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the Jaguar AJD4 / 204DTD, sourced from jaguarengine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Jaguar AJD4 Engine — Specs, Reliability & Replacement Cost",
+          "url": "https://jaguarengine.uk/engines/ajd4-204dtd/",
+          "author": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-14",
+          "dateModified": "2026-07-14"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "Jaguar • AJD4 / 204DTD • Diesel • 2.2 I4 Turbo • 2011–2015",
@@ -63,79 +232,48 @@
       {
         "metric": "Overall Engine Score",
         "value": "66/100"
-      },
-      {
-        "metric": "SECTION 3 — VERDICT & RATING",
-        "value": "AJD4 / 204DTD — Our Verdict & Rating"
-      },
-      {
-        "metric": "Star rating: 3.5★ out of 5",
-        "value": "Confidence: 88% confidence — based on 590 UK enquiries and cross-referenced specialist reports."
-      },
-      {
-        "metric": "Engine Score breakdown:",
-        "value": "Dimension"
-      },
-      {
-        "metric": "Score (of 20)",
-        "value": "How it's determined"
-      },
-      {
-        "metric": "Reliability",
-        "value": "14"
-      },
-      {
-        "metric": "Formula: star rating × 4 = 3.5 × 4 = 14",
-        "value": "Repair Cost"
-      },
-      {
-        "metric": "16",
-        "value": "Reconditioned midpoint: £4,650 (£3,500–£5,800) → £3,000–£4,999 band → 16"
-      },
-      {
-        "metric": "Repairability",
-        "value": "12"
-      },
-      {
-        "metric": "A mix of cheap fixes (EGR, injectors) and a few expensive ones (timing chain, oil dilution) — anchored to the middle anchor point",
-        "value": "Parts Supply"
-      },
-      {
-        "metric": "12",
-        "value": "Available but with some wait or aftermarket-only options — Jaguar specialist network is smaller than BMW/Mercedes"
-      },
-      {
-        "metric": "Replacement Economics",
-        "value": "12"
-      },
-      {
-        "metric": "Reconditioned £7,250 (fitted) against conservative £8,000 host value = 45–59% band → 12",
-        "value": "Total"
-      },
-      {
-        "metric": "66/100",
-        "value": "Sum of the five rows above"
-      },
-      {
-        "metric": "One-line verdict: \"The AJD4 is a capable, economical diesel — but timing chain tensioner wear and EGR issues are common — buy only with full service history.\" (Clause 1: 8 words. Clause 2: 9 words. Clause 3: 6 words. Total: 23 words.)",
-        "value": "Best for: High-mileage motorway drivers who service on schedule."
       }
     ]
   },
   "verdictRating": {
-    "starRating": "",
-    "confidence": "",
-    "scoreNote": "",
+    "starRating": "3.5★ out of 5",
+    "confidence": "88% confidence — based on 590 UK enquiries and cross-referenced specialist reports.",
+    "scoreNote": "Engine Score breakdown:",
     "scoreBreakdown": {
       "columns": [
         "Dimension",
         "Score (of 20)"
       ],
-      "rows": []
+      "rows": [
+        {
+          "dimension": "Reliability",
+          "score": "14 (Formula: star rating × 4 = 3.5 × 4 = 14)"
+        },
+        {
+          "dimension": "Repair Cost",
+          "score": "16 (Reconditioned midpoint: £4,650 (£3,500–£5,800) → £3,000–£4,999 band → 16)"
+        },
+        {
+          "dimension": "Repairability",
+          "score": "12 (A mix of cheap fixes (EGR, injectors) and a few expensive ones (timing chain, oil dilution) — anchored to the middle anchor point)"
+        },
+        {
+          "dimension": "Parts Supply",
+          "score": "12 (Available but with some wait or aftermarket-only options — Jaguar specialist network is smaller than BMW/Mercedes)"
+        },
+        {
+          "dimension": "Replacement Economics",
+          "score": "12 (Reconditioned £7,250 (fitted) against conservative £8,000 host value = 45–59% band → 12)"
+        },
+        {
+          "dimension": "Total",
+          "score": "66/100 (Sum of the five rows above)"
+        }
+      ]
     },
-    "oneLineVerdict": "",
-    "bestFor": "",
-    "avoidIf": ""
+    "oneLineVerdict": "\"The AJD4 is a capable, economical diesel — but timing chain tensioner wear and EGR issues are common — buy only with full service history.\" (Clause 1: 8 words. Clause 2: 9 words. Clause 3: 6 words. Total: 23 words.)",
+    "bestFor": "High-mileage motorway drivers who service on schedule.",
+    "avoidIf": "No documented timing-chain or EGR service above 70,000 miles."
   },
   "compatibility": {
     "columns": [
