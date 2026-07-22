@@ -1,24 +1,212 @@
 {
   "meta": {
     "slug": "e-pace",
-    "title": "E-Pace Engines — The Complete UK Guide",
-    "titleCharCount": 38,
-    "description": "",
-    "descriptionCharCount": 0,
+    "title": "E-Pace Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 53,
+    "description": "Every E-Pace engine — Ingenium diesel, petrol, and P300e hybrid. 5 engine codes, real UK costs and reliability data. See real costs, then compare quotes from our vetted Jaguar specialist network.",
+    "descriptionCharCount": 158,
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
+      "title": "E-Pace Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every E-Pace engine — Ingenium diesel, petrol, and P300e hybrid. 5 engine codes, real UK costs and reliability data. See real costs, then compare quotes from our vetted Jaguar specialist network.",
+      "type": "website",
+      "url": "https://jaguarengine.uk/e-pace/",
       "image": "",
-      "siteName": ""
+      "siteName": "jaguarengine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": ""
+      "card": "summary_large_image",
+      "title": "E-Pace Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every E-Pace engine — Ingenium diesel, petrol, and P300e hybrid. 5 engine codes, real UK costs and reliability data. See real costs, then compare quotes from our vetted Jaguar specialist network."
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "E-Pace",
+              "item": "https://jaguarengine.uk/e-pace/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "E-Pace Generations",
+          "description": "The X540 generation of Jaguar E-Pace, with its five powertrain variants.",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "X540 (2017–Present)",
+              "url": "https://jaguarengine.uk/e-pace/x540/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "E-Pace Engine Codes",
+          "description": "Every Jaguar E-Pace engine code with reliability ratings and cost data.",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "AJ200D / 204DTD — 2.0L Diesel",
+              "url": "https://jaguarengine.uk/engines/aj200d-204dtd/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "AJ200P / 204PT — 2.0L Petrol",
+              "url": "https://jaguarengine.uk/engines/aj200p-204pt/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "AJ20D6 — 2.0L Diesel (2021+)",
+              "url": "https://jaguarengine.uk/engines/aj20d6/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "AJ20P3 / P300e — 2.0L PHEV",
+              "url": "https://jaguarengine.uk/engines/aj20p3-p300e/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "AJ200D (JLR-spec) — 2.0L Diesel",
+              "url": "https://jaguarengine.uk/engines/aj200d-jlr/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does an E-Pace engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For the 2.0-litre Ingenium engines, reconditioned supply costs range from £3,000–£5,000 for the petrol (AJ200P) and £3,500–£5,800 for the diesel (AJ200D) [JAG-QUOTE]. Labour adds 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). The P300e PHEV costs are not yet fully established in our data — we recommend a specialist quote for those. Use our diagnostic calculator for a personalised estimate → /fault-diagnostic-calculator."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which E-Pace engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The AJ200P / 204PT Ingenium petrol has the cleanest record in our data — consistently outperforms the diesel in failure frequency, and the only meaningful weakness is water pump replacement (a routine job, not catastrophic). We recommend it for most buyers. [JAG-VERIFIED] — 500 enquiries across the JLR range confirm its popularity and reliability."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which E-Pace engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No engine is outright \"avoid,\" but the pre-2020 AJ200D / 204DTD diesel carries a caveat — early tensioner wear can lead to timing chain failure if not addressed. Post-2020 cars with the revised design are much safer. If you're looking at a pre-2020 diesel, insist on documented tensioner inspection or a specialist check before buying. We'd also advise caution on the P300e without a full hybrid-system health check — the engine itself is solid, but the hybrid complexity adds risk."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the E-Pace timing chain problem real?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — it's the same Ingenium diesel issue shared with Land Rover. Pre-2020 cars can experience tensioner wear, leading to chain stretch and eventual failure. Symptoms include a rattling noise on cold start, engine warning lights, and timing-related faults. If you hear that rattle, book an inspection immediately — catching it early means a tensioner replacement; ignoring it can mean a full engine. Post-2020 cars have a revised tensioner design and are far less prone."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing an E-Pace engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Almost always yes. With the E-Pace valued at £12,000–£30,000 [THIRD-PARTY], even the most expensive reconditioned diesel (£5,800) sits at just 19–48% of the car's value — well below our 60% scrap threshold for Jaguar. That makes replacement viable across nearly every example, regardless of the engine. The only exception might be a very high-mileage, pre-2020 diesel with other issues — but even then, we'd suggest getting a scrap valuation alongside any repair quote."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which E-Pace should I buy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Buy a 2020+ E-Pace with the AJ200P / 204PT petrol. The post-facelift petrol Ingenium has the cleanest record in our data — no meaningful weakness beyond routine water pump replacement. The 2020 facelift also brought improved interior tech and revised suspension. If you genuinely need diesel economy, go for a 2020+ diesel (revised tensioner) and get a full service history check."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my E-Pace engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The engine code is stamped on a plate on the engine block — often visible near the front or top. It's also listed on the V5C (logbook) and the VIN plate. For E-Pace models, the code will be one of: AJ200D, AJ200P, AJ20D6, AJ20P3 (P300e). If you're unsure, our diagnostic calculator can help identify it from your registration or symptoms → /fault-diagnostic-calculator."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "E-Pace vs Evoque — which is more reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Both share the same Ingenium engines and many mechanicals, but the E-Pace has a slightly cleaner reliability record in our data — the Evoque's earlier models (pre-2019) had more reported cooling and electrical issues. The E-Pace's later launch (2017) means most examples have the revised engineering from the start. However, both are safe buys post-2020. See our full comparison for the detailed verdict → E-Pace vs Evoque."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "jaguarengine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "[logo asset URL]",
+          "sameAs": []
+        },
+        {
+          "@type": "Service",
+          "serviceType": "E-Pace Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "3000",
+            "highPrice": "5800"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "E-Pace UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Jaguar E-Pace engines, sourced from jaguarengine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "E-Pace Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://jaguarengine.uk/e-pace/",
+          "author": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-07",
+          "dateModified": "2026-07-07"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "Jaguar • E-Pace • 2017–Present • 1 Generation • Ingenium D • Ingenium P • P300e PHEV",
@@ -548,7 +736,48 @@
   },
   "faq": {
     "h2": "E-Pace Frequently Asked Questions",
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does an E-Pace engine replacement cost in the UK?",
+        "answer": "For the 2.0-litre Ingenium engines, reconditioned supply costs range from £3,000–£5,000 for the petrol (AJ200P) and £3,500–£5,800 for the diesel (AJ200D) [JAG-QUOTE]. Labour adds 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). The P300e PHEV costs are not yet fully established in our data — we recommend a specialist quote for those. Use our diagnostic calculator for a personalised estimate → /fault-diagnostic-calculator."
+      },
+      {
+        "id": 2,
+        "question": "Which E-Pace engine is the most reliable?",
+        "answer": "The AJ200P / 204PT Ingenium petrol has the cleanest record in our data — consistently outperforms the diesel in failure frequency, and the only meaningful weakness is water pump replacement (a routine job, not catastrophic). We recommend it for most buyers. [JAG-VERIFIED] — 500 enquiries across the JLR range confirm its popularity and reliability."
+      },
+      {
+        "id": 3,
+        "question": "Which E-Pace engine should I avoid?",
+        "answer": "No engine is outright \"avoid,\" but the pre-2020 AJ200D / 204DTD diesel carries a caveat — early tensioner wear can lead to timing chain failure if not addressed. Post-2020 cars with the revised design are much safer. If you're looking at a pre-2020 diesel, insist on documented tensioner inspection or a specialist check before buying. We'd also advise caution on the P300e without a full hybrid-system health check — the engine itself is solid, but the hybrid complexity adds risk."
+      },
+      {
+        "id": 4,
+        "question": "Is the E-Pace timing chain problem real?",
+        "answer": "Yes — it's the same Ingenium diesel issue shared with Land Rover. Pre-2020 cars can experience tensioner wear, leading to chain stretch and eventual failure. Symptoms include a rattling noise on cold start, engine warning lights, and timing-related faults. If you hear that rattle, book an inspection immediately — catching it early means a tensioner replacement; ignoring it can mean a full engine. Post-2020 cars have a revised tensioner design and are far less prone."
+      },
+      {
+        "id": 5,
+        "question": "Is it worth replacing an E-Pace engine?",
+        "answer": "Almost always yes. With the E-Pace valued at £12,000–£30,000 [THIRD-PARTY], even the most expensive reconditioned diesel (£5,800) sits at just 19–48% of the car's value — well below our 60% scrap threshold for Jaguar. That makes replacement viable across nearly every example, regardless of the engine. The only exception might be a very high-mileage, pre-2020 diesel with other issues — but even then, we'd suggest getting a scrap valuation alongside any repair quote."
+      },
+      {
+        "id": 6,
+        "question": "Which E-Pace should I buy?",
+        "answer": "Buy a 2020+ E-Pace with the AJ200P / 204PT petrol. The post-facelift petrol Ingenium has the cleanest record in our data — no meaningful weakness beyond routine water pump replacement. The 2020 facelift also brought improved interior tech and revised suspension. If you genuinely need diesel economy, go for a 2020+ diesel (revised tensioner) and get a full service history check."
+      },
+      {
+        "id": 7,
+        "question": "How do I find my E-Pace engine code?",
+        "answer": "The engine code is stamped on a plate on the engine block — often visible near the front or top. It's also listed on the V5C (logbook) and the VIN plate. For E-Pace models, the code will be one of: AJ200D, AJ200P, AJ20D6, AJ20P3 (P300e). If you're unsure, our diagnostic calculator can help identify it from your registration or symptoms → /fault-diagnostic-calculator."
+      },
+      {
+        "id": 8,
+        "question": "E-Pace vs Evoque — which is more reliable?",
+        "answer": "Both share the same Ingenium engines and many mechanicals, but the E-Pace has a slightly cleaner reliability record in our data — the Evoque's earlier models (pre-2019) had more reported cooling and electrical issues. The E-Pace's later launch (2017) means most examples have the revised engineering from the start. However, both are safe buys post-2020. See our full comparison for the detailed verdict → E-Pace vs Evoque."
+      }
+    ]
   },
   "closingActionCards": {
     "h2": "Ready to Make a Decision?",

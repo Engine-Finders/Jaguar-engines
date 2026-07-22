@@ -1,24 +1,226 @@
 {
   "meta": {
     "slug": "f-pace",
-    "title": "F-Pace Engines — The Complete UK Guide",
-    "titleCharCount": 38,
-    "description": "",
-    "descriptionCharCount": 0,
+    "title": "F-Pace Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 54,
+    "description": "Every F-Pace engine — AJ200D diesel, AJ200P petrol, AJ20D6 and AJ20P3 hybrids. 1 generation, real UK costs and reliability data. Compare prices from 15+ vetted Jaguar specialists today.",
+    "descriptionCharCount": 157,
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
+      "title": "F-Pace Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every F-Pace engine — AJ200D diesel, AJ200P petrol, AJ20D6 and AJ20P3 hybrids. 1 generation, real UK costs and reliability data. Compare prices from 15+ vetted Jaguar specialists today.",
+      "type": "website",
+      "url": "https://jaguarengine.uk/f-pace/",
       "image": "",
-      "siteName": ""
+      "siteName": "jaguarengine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": ""
+      "card": "summary_large_image",
+      "title": "F-Pace Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every F-Pace engine — AJ200D diesel, AJ200P petrol, AJ20D6 and AJ20P3 hybrids. 1 generation, real UK costs and reliability data. Compare prices from 15+ vetted Jaguar specialists today."
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "F-Pace",
+              "item": "https://jaguarengine.uk/f-pace/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "F-Pace Generations",
+          "description": "The one and only F-Pace generation — X761 (2016-2024)",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "F-Pace X761 (2016-2024)",
+              "url": "https://jaguarengine.uk/f-pace/x761/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "F-Pace Engine Codes",
+          "description": "Every verified engine code fitted to the Jaguar F-Pace X761",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "AJ200D / 204DTD (early) — Ingenium Diesel 2.0L (2016-2019)",
+              "url": "https://jaguarengine.uk/engines/aj200d/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "AJ200D / 204DTD (revised) — Ingenium Diesel 2.0L (2019-2024)",
+              "url": "https://jaguarengine.uk/engines/aj200d/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "AJ200P / 204PT — Ingenium Petrol 2.0L (2017-2024)",
+              "url": "https://jaguarengine.uk/engines/aj200p/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "AJ20D6 — Ingenium Diesel MHEV 3.0L (2019-2024)",
+              "url": "https://jaguarengine.uk/engines/aj20d6/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "AJ20P3 — Ingenium Petrol PHEV 2.0L + EV (2021-2024)",
+              "url": "https://jaguarengine.uk/engines/aj20p3/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does an F-Pace engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For the most common 2.0-litre Ingenium engines, a reconditioned supply-only unit costs £3,000–£5,800 JAG-QUOTE. Add 10–14 hours of labour at £65–£95/hr (independent) for a fitted price of roughly £3,650–£7,130. The 3.0-litre and PHEV variants are more expensive — we're still gathering verified data for those. Use our calculator for a personalised quote."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which F-Pace engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The AJ200P / 204PT petrol Ingenium has the cleanest record in our data — water-pump replacement is the only meaningful weak point, and it's a routine, relatively inexpensive fix. The post-2019 diesel AJ200D is also solid, but the petrol is the one we'd recommend for buyers who want zero caveats."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which F-Pace engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No engine to avoid outright, but the pre-2019 AJ200D diesel carries a timing-chain tensioner caveat that the 2019 revision largely resolved. We recommend buying 2019+ diesel cars, or insisting on a chain inspection before purchase if you're looking at an earlier car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the F-Pace timing-chain problem real?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — it's the same Ingenium diesel issue that affected Land Rovers. Pre-2019 cars can develop tensioner wear, leading to chain stretch and eventual catastrophic failure if ignored. Symptoms include a cold-start rattle, rough running, and occasionally the engine warning light. If you hear any of these, get a specialist inspection immediately."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing an F-Pace engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Almost always — the F-Pace's retained values (£12,000–£38,000 THIRD-PARTY) comfortably exceed even the most expensive diesel recon (£5,800). At worst, a recon sits at roughly 15–48% of the car's value — well below our 60% scrap threshold for Jaguar. Replacement is financially viable across every engine variant."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which F-Pace should I buy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A 2019+ F-Pace with the AJ200P petrol and full service history is the strongest all-round ownership profile of any Jaguar. If you need a diesel, the same year-range with the revised AJ200D is also a safe bet — just ensure the timing-chain inspection is on the service record."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my F-Pace engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You'll find the engine code on the VIN plate (visible through the windscreen), on the driver's-door jamb sticker, and stamped on the engine block itself (usually near the front). The code is also on your V5C registration document. If you're unsure, our specialist network can identify it for you — just use the calculator and we'll guide you."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "F-Pace vs E-Pace — which is more reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Both carry a ✅ Safe verdict, but the F-Pace wins on sheer safety coverage — it has a clean bill of health across every engine variant, while the E-Pace's data is more limited. The F-Pace also has stronger retained values, making it the safer long-term ownership proposition. Read our full comparison here."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "jaguarengine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "[logo asset URL — use the site's primary logo]",
+          "sameAs": [],
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "F-Pace Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "1500",
+            "highPrice": "5800"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "F-Pace UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Jaguar F-Pace engines, sourced from jaguarengine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "F-Pace Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://jaguarengine.uk/f-pace/",
+          "author": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-07",
+          "dateModified": "2026-07-07",
+          "inLanguage": "en-GB",
+          "about": {
+            "@type": "Thing",
+            "name": "Jaguar F-Pace Engines",
+            "description": "Complete guide to Jaguar F-Pace engines — reliability, common faults, replacement costs and ownership economics for the X761 generation."
+          },
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "url": "https://jaguarengine.uk/f-pace/"
+          }
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "JAGUAR • F-PACE • 2016–2024 • 1 Generation • AJ200D / AJ200P / AJ20D6",
@@ -582,7 +784,48 @@
   },
   "faq": {
     "h2": "F‑Pace Frequently Asked Questions",
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does an F‑Pace engine replacement cost in the UK?",
+        "answer": "For the most common 2.0‑litre Ingenium engines, a reconditioned supply‑only unit costs £3,000–£5,800 [JAG‑QUOTE]. Add 10–14 hours of labour at £65–£95/hr (independent) for a fitted price of roughly £3,650–£7,130. The 3.0‑litre and PHEV variants are more expensive — we’re still gathering verified data for those. Use our calculator for a personalised quote."
+      },
+      {
+        "id": 2,
+        "question": "Which F‑Pace engine is the most reliable?",
+        "answer": "The AJ200P / 204PT petrol Ingenium has the cleanest record in our data — water‑pump replacement is the only meaningful weak point, and it’s a routine, relatively inexpensive fix. The post‑2019 diesel AJ200D is also solid, but the petrol is the one we’d recommend for buyers who want zero caveats."
+      },
+      {
+        "id": 3,
+        "question": "Which F‑Pace engine should I avoid?",
+        "answer": "No engine to avoid outright, but the pre‑2019 AJ200D diesel carries a timing‑chain tensioner caveat that the 2019 revision largely resolved. We recommend buying 2019+ diesel cars, or insisting on a chain inspection before purchase if you’re looking at an earlier car."
+      },
+      {
+        "id": 4,
+        "question": "Is the F‑Pace timing‑chain problem real?",
+        "answer": "Yes — it’s the same Ingenium diesel issue that affected Land Rovers. Pre‑2019 cars can develop tensioner wear, leading to chain stretch and eventual catastrophic failure if ignored. Symptoms include a cold‑start rattle, rough running, and occasionally the engine warning light. If you hear any of these, get a specialist inspection immediately."
+      },
+      {
+        "id": 5,
+        "question": "Is it worth replacing an F‑Pace engine?",
+        "answer": "Almost always — the F‑Pace’s retained values (£12,000–£38,000 [THIRD‑PARTY]) comfortably exceed even the most expensive diesel recon (£5,800). At worst, a recon sits at roughly 15–48% of the car’s value — well below our 60% scrap threshold for Jaguar. Replacement is financially viable across every engine variant."
+      },
+      {
+        "id": 6,
+        "question": "Which F‑Pace should I buy?",
+        "answer": "A 2019+ F‑Pace with the AJ200P petrol and full service history is the strongest all‑round ownership profile of any Jaguar. If you need a diesel, the same year‑range with the revised AJ200D is also a safe bet — just ensure the timing‑chain inspection is on the service record."
+      },
+      {
+        "id": 7,
+        "question": "How do I find my F‑Pace engine code?",
+        "answer": "You’ll find the engine code on the VIN plate (visible through the windscreen), on the driver’s‑door jamb sticker, and stamped on the engine block itself (usually near the front). The code is also on your V5C registration document. If you’re unsure, our specialist network can identify it for you — just use the calculator and we’ll guide you."
+      },
+      {
+        "id": 8,
+        "question": "F‑Pace vs E‑Pace — which is more reliable?",
+        "answer": "Both carry a ✅ Safe verdict, but the F‑Pace wins on sheer safety coverage — it has a clean bill of health across every engine variant, while the E‑Pace’s data is more limited. The F‑Pace also has stronger retained values, making it the safer long‑term ownership proposition. Read our full comparison →"
+      }
+    ]
   },
   "closingActionCards": {
     "h2": "Ready to Make a Decision?",

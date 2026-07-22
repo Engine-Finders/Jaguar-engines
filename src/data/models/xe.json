@@ -1,24 +1,197 @@
 {
   "meta": {
     "slug": "xe",
-    "title": "XE Engines — The Complete UK Guide",
-    "titleCharCount": 34,
-    "description": "",
-    "descriptionCharCount": 0,
+    "title": "XE Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 51,
+    "description": "Every XE engine — AJ200D diesel and AJ200P petrol. One generation, real UK costs and reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
+    "descriptionCharCount": 156,
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "XE Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every XE engine — AJ200D diesel and AJ200P petrol. One generation, real UK costs and reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
+      "type": "website",
+      "url": "https://jaguarengine.uk/xe/",
+      "image": "https://jaguarengine.uk/images/models/jaguar-xe-hero.jpg",
+      "siteName": "jaguarengine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": ""
+      "card": "summary_large_image",
+      "title": "XE Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every XE engine — AJ200D diesel and AJ200P petrol. One generation, real UK costs and reliability data. Get free quotes from 15+ vetted Jaguar specialists today."
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "XE",
+              "item": "https://jaguarengine.uk/xe/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "XE Generations",
+          "description": "Jaguar XE generations covered in this guide",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "XE X760 (2015–2024)",
+              "url": "https://jaguarengine.uk/xe/x760/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "XE Engine Codes",
+          "description": "Complete database of Jaguar XE engine codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "AJ200D / 204DTD (Ingenium Diesel)",
+              "url": "https://jaguarengine.uk/engines/aj200d/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "AJ200P / 204PT (Ingenium Petrol)",
+              "url": "https://jaguarengine.uk/engines/aj200p/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does an XE engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "An XE engine replacement costs between £3,000 and £5,800 for a reconditioned supply unit [JAG-QUOTE], plus 10–14 hours of labour at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). The petrol AJ200P sits at the lower end (£3,000–£5,000), while the diesel AJ200D runs from £3,500–£5,800. Use our diagnostic calculator for a personalised quote based on your exact vehicle."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which XE engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The AJ200P / 204PT Ingenium petrol is the most reliable XE engine by a clear margin. It has no meaningful failure pattern beyond routine water pump replacement, which is a predictable £400–£800 job. The diesel, by contrast, carries the pre-2019 timing-chain caveat shared with Land Rover's Ingenium."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which XE engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Avoid any pre-2019 AJ200D / 204DTD diesel without documented chain-tensioner inspection history. The early tensioner design is prone to wear and can fail catastrophically. If you're buying a pre-2019 diesel, insist on a cold-start listen for rattle and a full specialist inspection. Post-2019 diesels have a revised tensioner and are significantly safer."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my XE engine needs replacing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The most common symptoms across XE engines are: Diesel (AJ200D): Cold-start rattle (timing chain), frequent DPF regens or high oil level (oil dilution), coolant loss or overheating (EGR cooler). Petrol (AJ200P): Coolant loss from the water pump area, overheating, or a persistent low-coolant warning. If you experience any of these, book an inspection immediately."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing an XE engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It depends on your car's value. For a 2019+ XE worth £12,000–£20,000, a £3,000–£5,800 recon sits at 25–48% of the car's value — well within our 60% threshold, so replacement is a no-brainer. For a pre-2019 diesel worth under £8,000, a £5,800 recon is 72.5% — that's scrap-threshold territory. Use our decision tool to assess your specific case."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which XE should I buy — 2015–2019 or 2019+?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Buy a 2019+ car with the AJ200P petrol. The facelift brought the timing-chain hardware revision for diesels, but the petrol was always clean — and the 2019 car gives you the revised interior, the newer infotainment, and crucially, the peace of mind of being past the pre-2019 tensioner risk. If you must have a diesel, insist on a 2019+ car with documented service history and 6k oil-change intervals."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my XE engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Your XE's engine code is stamped on the cylinder block (visible from underneath or through the wheel arch) and also appears on your V5C registration document. For the diesel, look for AJ200D or 204DTD; for the petrol, AJ200P or 204PT. If you're unsure, use our diagnostic calculator — we'll identify your engine from your VIN or registration number."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "XE vs XF — which is more reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Both carry a ✅ Safe verdict, but for different reasons. The XE benefits from the modern Ingenium range in its single generation — buy a 2019+ petrol and you're golden. The XF's later X260 generation is similarly safe, while the older X250 with the AJ126 V6 carries cooling-system risks. Read our full comparison: XE vs XF — Head-to-Head Verdict."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "jaguarengine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "https://jaguarengine.uk/images/logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "XE Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "3000",
+            "highPrice": "5800"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "XE UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for XE engines, sourced from jaguarengine.uk's specialist marketplace activity. 260 enquiries in 2025 [JAG-VERIFIED].",
+          "creator": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "XE Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://jaguarengine.uk/xe/",
+          "author": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-07",
+          "dateModified": "2026-07-07"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "Jaguar • XE • 2015–2024 • 1 Generation • AJ200D • AJ200P • 260 Enquiries (2025)",
@@ -534,7 +707,48 @@
   },
   "faq": {
     "h2": "XE Frequently Asked Questions",
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does an XE engine replacement cost in the UK?",
+        "answer": "An XE engine replacement costs between £3,000 and £5,800 for a reconditioned supply unit [JAG-QUOTE], plus 10–14 hours of labour at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). The petrol AJ200P sits at the lower end (£3,000–£5,000), while the diesel AJ200D runs from £3,500–£5,800. Use our diagnostic calculator for a personalised quote based on your exact vehicle."
+      },
+      {
+        "id": 2,
+        "question": "Which XE engine is the most reliable?",
+        "answer": "The AJ200P / 204PT Ingenium petrol is the most reliable XE engine by a clear margin. It has no meaningful failure pattern beyond routine water pump replacement, which is a predictable £400–£800 job. The diesel, by contrast, carries the pre-2019 timing-chain caveat shared with Land Rover's Ingenium. Read more about the petrol Ingenium →"
+      },
+      {
+        "id": 3,
+        "question": "Which XE engine should I avoid?",
+        "answer": "Avoid any pre-2019 AJ200D / 204DTD diesel without documented chain-tensioner inspection history. The early tensioner design is prone to wear and can fail catastrophically. If you're buying a pre-2019 diesel, insist on a cold-start listen for rattle and a full specialist inspection. Post-2019 diesels have a revised tensioner and are significantly safer. Read more about the diesel Ingenium caveat →"
+      },
+      {
+        "id": 4,
+        "question": "How do I know if my XE engine needs replacing?",
+        "answer": "The most common symptoms across XE engines are: * Diesel (AJ200D): Cold-start rattle (timing chain), frequent DPF regens or high oil level (oil dilution), coolant loss or overheating (EGR cooler). * Petrol (AJ200P): Coolant loss from the water pump area, overheating, or a persistent low-coolant warning. If you experience any of these, book an inspection immediately — timing-chain failure on the diesel can be catastrophic, and water-pump failure on the petrol can lead to head-gasket damage if ignored."
+      },
+      {
+        "id": 5,
+        "question": "Is it worth replacing an XE engine?",
+        "answer": "It depends on your car's value. For a 2019+ XE worth £12,000–£20,000, a £3,000–£5,800 recon sits at 25–48% of the car's value — well within our 60% threshold, so replacement is a no-brainer. For a pre-2019 diesel worth under £8,000, a £5,800 recon is 72.5% — that's scrap-threshold territory. Use our decision tool to assess your specific case."
+      },
+      {
+        "id": 6,
+        "question": "Which XE should I buy — 2015–2019 or 2019+?",
+        "answer": "Buy a 2019+ car with the AJ200P petrol. The facelift brought the timing-chain hardware revision for diesels, but the petrol was always clean — and the 2019 car gives you the revised interior, the newer infotainment, and crucially, the peace of mind of being past the pre-2019 tensioner risk. If you must have a diesel, insist on a 2019+ car with documented service history and 6k oil-change intervals."
+      },
+      {
+        "id": 7,
+        "question": "How do I find my XE engine code?",
+        "answer": "Your XE's engine code is stamped on the cylinder block (visible from underneath or through the wheel arch) and also appears on your V5C registration document. For the diesel, look for AJ200D or 204DTD; for the petrol, AJ200P or 204PT. If you're unsure, use our diagnostic calculator — we'll identify your engine from your VIN or registration number."
+      },
+      {
+        "id": 8,
+        "question": "XE vs XF — which is more reliable?",
+        "answer": "Both carry a ✅ Safe verdict, but for different reasons. The XE benefits from the modern Ingenium range in its single generation — buy a 2019+ petrol and you're golden. The XF's later X260 generation is similarly safe, while the older X250 with the AJ126 V6 carries cooling-system risks. Read our full comparison: XE vs XF — Head-to-Head Verdict →"
+      }
+    ]
   },
   "closingActionCards": {
     "h2": "Ready to Make a Decision?",

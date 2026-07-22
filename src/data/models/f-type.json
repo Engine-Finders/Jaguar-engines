@@ -1,24 +1,209 @@
 {
   "meta": {
     "slug": "f-type",
-    "title": "F-Type Engines — The Complete UK Guide",
-    "titleCharCount": 38,
-    "description": "",
-    "descriptionCharCount": 0,
+    "title": "F-Type Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 52,
+    "description": "Every F-Type engine — AJ126 V6, AJ133 V8 and AJ20D6 straight-six. 1 generation, real UK costs from £4,500–£9,000 and reliability data. Compare prices from 15+ vetted Jaguar specialists today.",
+    "descriptionCharCount": 158,
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "F-Type Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every F-Type engine — AJ126 V6, AJ133 V8 and AJ20D6 straight-six. 1 generation, real UK costs from £4,500–£9,000 and reliability data. Compare prices from 15+ vetted Jaguar specialists today.",
+      "type": "website",
+      "url": "https://jaguarengine.uk/f-type/",
+      "image": "https://jaguarengine.uk/images/models/f-type-hero.jpg",
+      "siteName": "jaguarengine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": ""
+      "card": "summary_large_image",
+      "title": "F-Type Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every F-Type engine — AJ126 V6, AJ133 V8 and AJ20D6 straight-six. 1 generation, real UK costs from £4,500–£9,000 and reliability data. Compare prices from 15+ vetted Jaguar specialists today."
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "F-Type",
+              "item": "https://jaguarengine.uk/f-type/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "F-Type Generations",
+          "description": "F-Type X152 generation breakdown",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "X152 (2013–2019) — Supercharged V6 & V8 Era",
+              "url": "https://jaguarengine.uk/f-type/x152/pre-2019/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "X152 (2019–2024) — Revised V8 + Straight-Six Era",
+              "url": "https://jaguarengine.uk/f-type/x152/post-2019/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "F-Type Engine Codes",
+          "description": "Verified engine codes for the Jaguar F-Type X152",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "AJ126 3.0 V6 SC — 340–380 bhp (2013–2019)",
+              "url": "https://jaguarengine.uk/engines/aj126/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "AJ133 5.0 V8 SC — 450–575 bhp (2013–2024)",
+              "url": "https://jaguarengine.uk/engines/aj133/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "AJ20D6 3.0 I6 Turbo — 300–400 bhp (2019–2024)",
+              "url": "https://jaguarengine.uk/engines/aj20d6/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does an F-Type engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "An F-Type engine replacement typically costs £4,500–£9,000 for a reconditioned engine, supply-only [JAG-QUOTE]. Labour adds 12–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). The AJ126 V6 sits at the lower end (£4,500–£7,500), while the AJ133 V8 sits higher (£5,500–£9,000). The AJ20D6 straight-six sits in the middle (£4,500–£7,500). Use our diagnostic calculator above to get a personalised quote for your specific car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which F-Type engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The AJ20D6 3.0 straight-six (fitted to 2019+ P300/P340/P400 cars) is the most reliable F-Type engine. It has no systemic cooling-system weaknesses, no chain-tensioner caveats, and no supercharger-coupler wear issues — it's a clean-sheet design that has proven robust across the JLR range. Read our AJ20D6 Knowledge Centre for the full breakdown."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which F-Type engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No engine outright — but the AJ126 3.0 V6 SC (2013–2019) carries a real caveat: pre-2019 cars have documented cooling-system crossover pipe failures. If you're buying an early V6, insist on evidence that the cooling system has been inspected and the pipes replaced if needed. The AJ133 5.0 V8 is robust post-2013, but cooling-system maintenance is still a 'when', not an 'if'."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the F-Type timing chain problem real?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The timing chain tensioner issue affects the AJ133 5.0 V8 built before 2013 — the design was revised in 2013 with a marked reliability improvement. F-Type production started in 2013, so most F-Types are post-revision, but early 2013 cars without documented chain-tensioner history warrant an inspection. Symptoms include a rattle on cold start — if you hear it, have a specialist check it immediately."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing an F-Type engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — almost always. The F-Type's typical value of £18,000–£65,000 means even the AJ133's upper reconditioned cost of £9,000 sits at 15–50% of vehicle value, well below our 60% threshold for Jaguar. The only exception is a high-mileage, early-register car worth £10,000–£15,000 where a £9,000 V8 rebuild starts to approach 60–90% of value. In that scenario, evaluate the car's condition and history before committing."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which F-Type year should I buy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Buy a 2019+ car with the AJ20D6 straight-six if your priority is reliability and modern engineering. Buy a 2013–2019 V6 if the supercharged soundtrack is non-negotiable — but budget £1,000–£2,000 for cooling-system preventative work unless history shows it's been done. Buy the V8 if you want the full-fat experience — the post-2013 tensioner revisions make it robust, but cooling-system maintenance is essential."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my F-Type engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Your F-Type's engine code is on the VIN plate (character 4–8), stamped on the engine block (passenger side, rear), and on the V5C registration document. The codes are: AJ126 (3.0 V6 SC, 2013–2019), AJ133 (5.0 V8 SC, 2013–2024), and AJ20D6 (3.0 straight-six, 2019–2024). If you're unsure, use our identification tool."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "F-Type vs XK — which is more reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The F-Type's AJ133 V8 is the direct descendant of the XK's AJ133 — the F-Type benefits from the 2013+ timing-chain revisions that transformed the V8's reliability record. The XK carries the pre-2013 risk on its 5.0 cars. For V6 buyers, the F-Type's AJ126 is the same engine as the XK's later V6 — identical cooling-system caveats. The F-Type wins on reliability purely because of age: it's a newer car with more recent engineering."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "jaguarengine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "https://jaguarengine.uk/images/jaguar-engine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "F-Type Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2500",
+            "highPrice": "14000"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "F-Type UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for F-Type engines, sourced from jaguarengine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "F-Type Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://jaguarengine.uk/f-type/",
+          "author": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-07",
+          "dateModified": "2026-07-07"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "JAGUAR • F-TYPE • 2013–2024 • 1 Generation • AJ126 V6 • AJ133 V8 • AJ20D6",
@@ -582,7 +767,48 @@
   },
   "faq": {
     "h2": "F-Type Frequently Asked Questions",
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does an F-Type engine replacement cost in the UK?",
+        "answer": "An F-Type engine replacement typically costs £4,500–£9,000 for a reconditioned engine, supply-only [JAG-QUOTE]. Labour adds 12–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). The AJ126 V6 sits at the lower end (£4,500–£7,500), while the AJ133 V8 sits higher (£5,500–£9,000). The AJ20D6 straight-six sits in the middle (£4,500–£7,500). Use our diagnostic calculator above to get a personalised quote for your specific car."
+      },
+      {
+        "id": 2,
+        "question": "Which F-Type engine is the most reliable?",
+        "answer": "The AJ20D6 3.0 straight-six (fitted to 2019+ P300/P340/P400 cars) is the most reliable F-Type engine. It has no systemic cooling-system weaknesses, no chain-tensioner caveats, and no supercharger-coupler wear issues — it's a clean-sheet design that has proven robust across the JLR range. Read our AJ20D6 Knowledge Centre → for the full breakdown."
+      },
+      {
+        "id": 3,
+        "question": "Which F-Type engine should I avoid?",
+        "answer": "No engine outright — but the AJ126 3.0 V6 SC (2013–2019) carries a real caveat: pre-2019 cars have documented cooling-system crossover pipe failures. If you're buying an early V6, insist on evidence that the cooling system has been inspected and the pipes replaced if needed. The AJ133 5.0 V8 is robust post-2013, but cooling-system maintenance is still a \"when\", not an \"if\"."
+      },
+      {
+        "id": 4,
+        "question": "Is the F-Type timing chain problem real?",
+        "answer": "The timing chain tensioner issue affects the AJ133 5.0 V8 built before 2013 — the design was revised in 2013 with a marked reliability improvement. F-Type production started in 2013, so most F-Types are post-revision, but early 2013 cars without documented chain-tensioner history warrant an inspection. Symptoms include a rattle on cold start — if you hear it, have a specialist check it immediately."
+      },
+      {
+        "id": 5,
+        "question": "Is it worth replacing an F-Type engine?",
+        "answer": "Yes — almost always. The F-Type's typical value of £18,000–£65,000 means even the AJ133's upper reconditioned cost of £9,000 sits at 15–50% of vehicle value, well below our 60% threshold for Jaguar. The only exception is a high-mileage, early-register car worth £10,000–£15,000 where a £9,000 V8 rebuild starts to approach 60–90% of value. In that scenario, evaluate the car's condition and history before committing."
+      },
+      {
+        "id": 6,
+        "question": "Which F-Type year should I buy?",
+        "answer": "Buy a 2019+ car with the AJ20D6 straight-six if your priority is reliability and modern engineering. Buy a 2013–2019 V6 if the supercharged soundtrack is non-negotiable — but budget £1,000–£2,000 for cooling-system preventative work unless history shows it's been done. Buy the V8 if you want the full-fat experience — the post-2013 tensioner revisions make it robust, but cooling-system maintenance is essential."
+      },
+      {
+        "id": 7,
+        "question": "How do I find my F-Type engine code?",
+        "answer": "Your F-Type's engine code is on the VIN plate (character 4–8), stamped on the engine block (passenger side, rear), and on the V5C registration document. The codes are: AJ126 (3.0 V6 SC, 2013–2019), AJ133 (5.0 V8 SC, 2013–2024), and AJ20D6 (3.0 straight-six, 2019–2024). If you're unsure, use our identification tool → Identify My Engine →"
+      },
+      {
+        "id": 8,
+        "question": "F-Type vs XK — which is more reliable?",
+        "answer": "The F-Type's AJ133 V8 is the direct descendant of the XK's AJ133 — the F-Type benefits from the 2013+ timing-chain revisions that transformed the V8's reliability record. The XK carries the pre-2013 risk on its 5.0 cars. For V6 buyers, the F-Type's AJ126 is the same engine as the XK's later V6 — identical cooling-system caveats. The F-Type wins on reliability purely because of age: it's a newer car with more recent engineering. Read our full F-Type vs XK comparison →"
+      }
+    ]
   },
   "closingActionCards": {
     "h2": "Ready to Make a Decision?",
