@@ -423,14 +423,47 @@
   "replacementCosts": {
     "h2": "X590 Powertrain Replacement Costs — By Component",
     "columns": [
-      "Variant",
-      "Engine Code",
+      "Component",
+      "Component Code",
       "Used (Supply)",
       "Reconditioned (Supply)",
-      "Rebuilt (Supply)",
+      "New (Supply)",
       "Labour Hours"
     ],
-    "rows": [],
+    "rows": [
+      {
+        "component": "Front Motor",
+        "componentCode": "TZ‑204‑X‑S‑A",
+        "usedSupply": "£1,500–£3,000",
+        "reconditionedSupply": "£2,500–£4,000",
+        "newSupply": "£4,000–£6,000",
+        "labourHours": "6–10 hrs"
+      },
+      {
+        "component": "Rear Motor",
+        "componentCode": "TZ‑204‑X‑S‑A",
+        "usedSupply": "£1,500–£3,000",
+        "reconditionedSupply": "£2,500–£4,000",
+        "newSupply": "£4,000–£6,000",
+        "labourHours": "6–10 hrs"
+      },
+      {
+        "component": "Complete Motor Set",
+        "componentCode": "TZ‑204‑X‑S‑A (x2)",
+        "usedSupply": "£3,000–£5,500",
+        "reconditionedSupply": "£5,000–£8,000",
+        "newSupply": "£8,000–£12,000",
+        "labourHours": "10–16 hrs"
+      },
+      {
+        "component": "HV Battery Pack (90 kWh)",
+        "componentCode": "—",
+        "usedSupply": "£5,000–£10,000",
+        "reconditionedSupply": "£9,000–£15,000",
+        "newSupply": "£20,000–£35,000",
+        "labourHours": "8–12 hrs"
+      }
+    ],
     "note": ""
   },
   "coreVariants": {

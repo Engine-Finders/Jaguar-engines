@@ -313,7 +313,32 @@
     "marketIntelligenceLine": "The X308-generation XJ is now a modern classic; enquiries are concentrated on timing-chain replacement and ZF 5HP24 transmission service, with values ranging from £4,000 for entry-level examples to £15,000+ for low-mileage XJRs."
   },
   "bestWorstEngines": {
-    "items": []
+    "items": [
+      {
+        "slot": "Highest Risk",
+        "engine": "3.2 V8 (AJ26/AJ27)",
+        "quote": "The 3.2 V8 is underpowered for the XJ's 1,800 kg kerb weight and carries the same timing chain tensioner and Nikasil risks as its larger sibling — but with less performance to justify the ownership anxiety.",
+        "whoItsFor": "buyers on a tight budget who absolutely must have an X308 — but the 4.0 is a better choice every time."
+      },
+      {
+        "slot": "Most Expensive Failure",
+        "engine": "4.0 V8 Supercharged (XJR)",
+        "quote": "A reconditioned supercharged XJR engine costs £5,000–£9,000 supply-only, plus the supercharger itself adds maintenance complexity. Timing chain failure on these engines can be catastrophic if ignored.",
+        "whoItsFor": "enthusiasts with deep pockets who understand the ongoing maintenance costs."
+      },
+      {
+        "slot": "Best Value",
+        "engine": "4.0 V8 (290 bhp) — post-June 2000",
+        "quote": "The 4.0-litre naturally aspirated V8 with steel cylinder liners and documented timing-chain work is the sweet spot in the range — best parts availability, simplest architecture, and the engine that defines the X308 character.",
+        "whoItsFor": "the majority of X308 buyers — smooth, effortless V8 performance without the supercharger complexity."
+      },
+      {
+        "slot": "Most Overlooked",
+        "engine": "4.0 V8 Naturally Aspirated (290 bhp)",
+        "quote": "The standard 4.0 V8 is often overshadowed by the XJR, but it delivers the same refinement and character with significantly lower running costs. A well-maintained 4.0 XJ8 with steel liners and updated tensioners is one of the best-value classic Jaguars on the market.",
+        "whoItsFor": "buyers who want classic V8 character without the supercharger's running costs."
+      }
+    ]
   },
   "ownershipEconomics": {
     "h2": "Jaguar XJ X308 — Ownership Economics",

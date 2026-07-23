@@ -546,10 +546,32 @@
       "Era",
       "Years",
       "Key Engines",
-      "Why Land Rover Changed",
+      "Why Jaguar Changed",
       "Worth Knowing"
     ],
-    "eras": []
+    "eras": [
+      {
+        "era": "Launch Era",
+        "years": "2018–2020",
+        "keyEngines": "Touch Pro Duo infotainment, original rear motor bearings, 90kWh LG Chem pack, 100kW DC charging",
+        "whyBmwChanged": "Jaguar's first production EV, developed under pressure to compete with Tesla Model X and Audi e-tron",
+        "worthKnowing": "Early cars suffer from laggy infotainment and rear motor bearing wear; these are well-documented and repairable, but the 2021 update addresses both"
+      },
+      {
+        "era": "Facelift / Pivi Pro Era",
+        "years": "2021–2024",
+        "keyEngines": "Pivi Pro infotainment, revised rear motor bearings, improved battery management, OTA updates, 100kW charging remains",
+        "whyBmwChanged": "Customer feedback-driven — the Touch Pro Duo system was widely criticised; Pivi Pro was Jaguar's response, along with bearing revisions from real-world failure data",
+        "worthKnowing": "This is the era to buy — Pivi Pro is genuinely quick, the battery management is better calibrated, and the rear motor bearing issue is resolved. The same 90kWh battery but better thermal management"
+      },
+      {
+        "era": "Production End",
+        "years": "2024",
+        "keyEngines": "Production ends ahead of Jaguar's EV-only relaunch in 2025",
+        "whyBmwChanged": "Jaguar's strategic pivot — the brand is moving upmarket with a new EV-only range starting in 2025; the I‑Pace is discontinued",
+        "worthKnowing": "The I‑Pace is the end of an era — the last Jaguar with any combustion-era platform, and the only Jaguar EV until the new range arrives"
+      }
+    ]
   },
   "whoShouldBuy": {
     "h2": "Who Should Buy a Jaguar I‑Pace?",
