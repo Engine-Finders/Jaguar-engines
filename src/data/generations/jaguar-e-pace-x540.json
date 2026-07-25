@@ -362,20 +362,47 @@
     ],
     "note": "No Generation variance from the EM_Proprietary_Data baseline figures — X540 E-Pace shares the PTA platform with the Range Rover Evoque L551, with similar engine-bay access, so costs are inherited directly per the Authority Model, with no divergence note required."
   },
-  "coreVariants": {
-    "dieselVariants": [
-      "D150",
-      "D165",
-      "D180",
-      "D200"
-    ],
-    "petrolVariants": [
-      "P160",
-      "P200",
-      "P250",
-      "P300",
-      "P300e"
-    ],
+"coreVariants": {
+  "dieselVariants": [
+    {
+      "name": "D150",
+      "url": "https://jaguarengines.uk/e-pace/d150"
+    },
+    {
+      "name": "D165",
+      "url": "https://jaguarengines.uk/e-pace/d165"
+    },
+    {
+      "name": "D180",
+      "url": "https://jaguarengines.uk/e-pace/d180"
+    },
+    {
+      "name": "D200",
+      "url": "https://jaguarengines.uk/e-pace/d200"
+    }
+  ],
+  "petrolVariants": [
+    {
+      "name": "P160",
+      "url": "#"
+    },
+    {
+      "name": "P200",
+      "url": "https://jaguarengines.uk/e-pace/p200"
+    },
+    {
+      "name": "P250",
+      "url": "https://jaguarengines.uk/e-pace/p250"
+    },
+    {
+      "name": "P300",
+      "url": "https://jaguarengines.uk/e-pace/p300"
+    },
+    {
+      "name": "P300e",
+      "url": "https://jaguarengines.uk/e-pace/p300e"
+    }
+  ],
     "scopeNote": "All variants listed are E-Pace X540 only. P160 and P300e use the 1.5-litre three-cylinder Ingenium AJ150; P300e is the plug-in hybrid with an 80 kW rear-axle electric motor. D165 and D200 are facelift-only variants (2020–2024)."
   },
   "marketIntelligence": {

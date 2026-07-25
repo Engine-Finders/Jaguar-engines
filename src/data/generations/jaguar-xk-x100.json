@@ -606,16 +606,28 @@
     ],
     "note": ""
   },
-  "coreVariants": {
-    "dieselVariants": [],
-    "petrolVariants": [
-      "XK8",
-      "XKR",
-      "XK8 4.2",
-      "XKR 4.2"
-    ],
-    "scopeNote": "All variants listed are X100 only. The X150 (2006–2014) shares the XK name but is a completely different generation with its own engine line-up — see the X150 Generation Page for those specifications."
-  },
+"coreVariants": {
+  "dieselVariants": [],
+  "petrolVariants": [
+    {
+      "name": "XK8",
+      "url": "https://jaguarengines.uk/xk/40"
+    },
+    {
+      "name": "XKR",
+      "url": "https://jaguarengines.uk/xk/xkr"
+    },
+    {
+      "name": "XK8 4.2",
+      "url": "https://jaguarengines.uk/xk/42"
+    },
+    {
+      "name": "XKR 4.2",
+      "url": "https://jaguarengines.uk/xk/xkr"
+    }
+  ],
+  "scopeNote": "All variants listed are X100 only. The X150 (2006–2014) shares the XK name but is a completely different generation with its own engine line-up — see the X150 Generation Page for those specifications."
+},
   "marketIntelligence": {
     "mostRequestedEngines": [
       "1. AJ26 (4.0 naturally aspirated) – highest enquiry volume due to timing chain tensioner concerns",

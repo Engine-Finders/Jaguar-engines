@@ -496,16 +496,28 @@
     ],
     "note": ""
   },
-  "coreVariants": {
-    "dieselVariants": [],
-    "petrolVariants": [
-      "3.2 V8",
-      "4.0 V8",
-      "XJR (supercharged 4.0 V8)",
-      "Daimler Super V8"
-    ],
-    "scopeNote": "All variants listed are X308 XJ only. The X308 was the first XJ generation to be offered exclusively with V8 engines. The Daimler Super V8 was the top-of-the-range model, featuring the supercharged 4.0-litre V8 with enhanced luxury trim. In the United States, the 3.2-litre engine was not offered — all cars received the 4.0-litre V8."
-  },
+"coreVariants": {
+  "dieselVariants": [],
+  "petrolVariants": [
+    {
+      "name": "3.2 V8",
+      "url": "https://jaguarengines.uk/xj/32-v8"
+    },
+    {
+      "name": "4.0 V8",
+      "url": "https://jaguarengines.uk/xj/40-v8"
+    },
+    {
+      "name": "XJR (supercharged 4.0 V8)",
+      "url": "https://jaguarengines.uk/xj/40-v8"
+    },
+    {
+      "name": "Daimler Super V8",
+      "url": "https://jaguarengines.uk/xj/40-v8"
+    }
+  ],
+  "scopeNote": "All variants listed are X308 XJ only. The X308 was the first XJ generation to be offered exclusively with V8 engines. The Daimler Super V8 was the top-of-the-range model, featuring the supercharged 4.0-litre V8 with enhanced luxury trim. In the United States, the 3.2-litre engine was not offered — all cars received the 4.0-litre V8."
+},
   "marketIntelligence": {
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],

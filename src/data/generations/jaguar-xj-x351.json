@@ -691,24 +691,57 @@
     ],
     "note": ""
   },
-  "coreVariants": {
-    "dieselVariants": [
-      "3.0D",
-      "3.0D LWB"
-    ],
-    "petrolVariants": [
-      "2.0T",
-      "2.0T LWB",
-      "3.0 V6",
-      "3.0 SC V6",
-      "5.0 V8",
-      "Supersport",
-      "XJR",
-      "XJR 575",
-      "XJ50"
-    ],
-    "scopeNote": "All variants listed are X351 only. The 2.0T was primarily offered in the Chinese market but is also present in limited numbers in the UK. The XJR (550 PS) arrived in 2013, with the XJR 575 and XJ50 special editions launched in 2018."
-  },
+"coreVariants": {
+  "dieselVariants": [
+    {
+      "name": "3.0D",
+      "url": "https://jaguarengines.uk/xj/30d"
+    },
+    {
+      "name": "3.0D LWB",
+      "url": "https://jaguarengines.uk/xj/30d"
+    }
+  ],
+  "petrolVariants": [
+    {
+      "name": "2.0T",
+      "url": "#"
+    },
+    {
+      "name": "2.0T LWB",
+      "url": "#"
+    },
+    {
+      "name": "3.0 V6",
+      "url": "https://jaguarengines.uk/xj/3-0-v6"
+    },
+    {
+      "name": "3.0 SC V6",
+      "url": "https://jaguarengines.uk/xj/30-sc-petrol"
+    },
+    {
+      "name": "5.0 V8",
+      "url": "https://jaguarengines.uk/xj/50-v8"
+    },
+    {
+      "name": "Supersport",
+      "url": "https://jaguarengines.uk/xj/50-v8"
+    },
+    {
+      "name": "XJR",
+      "url": "https://jaguarengines.uk/xj/50-v8"
+    },
+    {
+      "name": "XJR 575",
+      "url": "https://jaguarengines.uk/xj/50-v8"
+    },
+    {
+      "name": "XJ50",
+      "url": "https://jaguarengines.uk/xj/50-v8"
+    }
+  ],
+  "scopeNote": "All variants listed are X351 only. The 2.0T was primarily offered in the Chinese market but is also present in limited numbers in the UK. The XJR (550 PS) arrived in 2013, with the XJR 575 and XJ50 special editions launched in 2018."
+},
   "marketIntelligence": {
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],

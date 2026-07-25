@@ -575,17 +575,32 @@
     ],
     "note": ""
   },
-  "coreVariants": {
-    "dieselVariants": [],
-    "petrolVariants": [
-      "3.4",
-      "4.2",
-      "5.3 V12",
-      "5.3 V12 HE",
-      "6.0 V12"
-    ],
-    "scopeNote": "All variants listed are Series 3-generation XJ only (1979–1992). The Series 3 was only available as a 4-door saloon."
-  },
+"coreVariants": {
+  "dieselVariants": [],
+  "petrolVariants": [
+    {
+      "name": "3.4",
+      "url": "https://jaguarengines.uk/xj/28-34-xk6"
+    },
+    {
+      "name": "4.2",
+      "url": "https://jaguarengines.uk/xj/4-2-xk6"
+    },
+    {
+      "name": "5.3 V12",
+      "url": "https://jaguarengines.uk/xj/53-v12"
+    },
+    {
+      "name": "5.3 V12 HE",
+      "url": "https://jaguarengines.uk/xj/53-v12"
+    },
+    {
+      "name": "6.0 V12",
+      "url": "https://jaguarengines.uk/xj/60-v12"
+    }
+  ],
+  "scopeNote": "All variants listed are Series 3-generation XJ only (1979–1992). The Series 3 was only available as a 4-door saloon."
+},
   "marketIntelligence": {
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],

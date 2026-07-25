@@ -569,17 +569,32 @@
     ],
     "note": ""
   },
-  "coreVariants": {
-    "dieselVariants": [],
-    "petrolVariants": [
-      "3.2",
-      "4.0",
-      "XJR",
-      "XJ12",
-      "Daimler Double Six"
-    ],
-    "scopeNote": "All variants listed are X300 saloon only. The XJR is the supercharged 4.0‑litre performance variant. The XJ12 and Daimler Double Six share the 6.0‑litre V12. Daimler‑badged variants (Daimler Six, Daimler Double Six) were trim‑level equivalents of the Sovereign and XJ12 respectively. The X300 was also available as the XJ Sport, Sovereign, and Vanden Plas models."
-  },
+"coreVariants": {
+  "dieselVariants": [],
+  "petrolVariants": [
+    {
+      "name": "3.2",
+      "url": "https://jaguarengines.uk/xj/32"
+    },
+    {
+      "name": "4.0",
+      "url": "https://jaguarengines.uk/xj/40"
+    },
+    {
+      "name": "XJR",
+      "url": "https://jaguarengines.uk/xj/32"
+    },
+    {
+      "name": "XJ12",
+      "url": "https://jaguarengines.uk/xj/60-v12"
+    },
+    {
+      "name": "Daimler Double Six",
+      "url": "https://jaguarengines.uk/xj/60-v12"
+    }
+  ],
+  "scopeNote": "All variants listed are X300 saloon only. The XJR is the supercharged 4.0‑litre performance variant. The XJ12 and Daimler Double Six share the 6.0‑litre V12. Daimler‑badged variants (Daimler Six, Daimler Double Six) were trim‑level equivalents of the Sovereign and XJ12 respectively. The X300 was also available as the XJ Sport, Sovereign, and Vanden Plas models."
+},
   "marketIntelligence": {
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],

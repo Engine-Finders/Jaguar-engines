@@ -398,11 +398,24 @@
     ],
     "note": "No Generation variance from the baseline figures — XJ40 costs are derived from specialist classic Jaguar market data, with no direct Engine Page baseline to diverge from."
   },
-  "coreVariants": {
-    "dieselVariants": [],
-    "petrolVariants": [],
-    "scopeNote": "All variants listed are XJ40 only. The 6.0-litre V12 cars carry the model code XJ81 (XJ12 and Daimler Double Six) and were produced from February 1993 to October 1994. The XJR (1992–1994) featured a TWR-tuned 4.0-litre AJ6."
-  },
+"coreVariants": {
+  "dieselVariants": [],
+  "petrolVariants": [
+    {
+      "name": "3.6 AJ6",
+      "url": "https://jaguarengines.uk/xj/36-aj6"
+    },
+    {
+      "name": "4.0",
+      "url": "https://jaguarengines.uk/xj/40"
+    },
+    {
+      "name": "6.0 V12",
+      "url": "https://jaguarengines.uk/xj/60-v12"
+    }
+  ],
+  "scopeNote": "All variants listed are XJ40 only. The 6.0-litre V12 cars carry the model code XJ81 (XJ12 and Daimler Double Six) and were produced from February 1993 to October 1994. The XJR (1992–1994) featured a TWR-tuned 4.0-litre AJ6."
+},
   "marketIntelligence": {
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],

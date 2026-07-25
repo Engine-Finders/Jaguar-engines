@@ -557,17 +557,29 @@
     ],
     "note": "No Generation variance note required — no Engine Page baseline exists for these engines yet. Costs are sourced from UK specialist suppliers [JAG-QUOTE]."
   },
-  "coreVariants": {
-    "dieselVariants": [
-      "2.0D",
-      "2.2D"
-    ],
-    "petrolVariants": [
-      "2.5 V6",
-      "3.0 V6"
-    ],
-    "scopeNote": ""
-  },
+"coreVariants": {
+  "dieselVariants": [
+    {
+      "name": "2.0D",
+      "url": "https://jaguarengines.uk/x-type/20d"
+    },
+    {
+      "name": "2.2D",
+      "url": "https://jaguarengines.uk/x-type/2-2d"
+    }
+  ],
+  "petrolVariants": [
+    {
+      "name": "2.5 V6",
+      "url": "https://jaguarengines.uk/x-type/25-v6"
+    },
+    {
+      "name": "3.0 V6",
+      "url": "https://jaguarengines.uk/x-type/30-v6"
+    }
+  ],
+  "scopeNote": ""
+},
   "marketIntelligence": {
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
