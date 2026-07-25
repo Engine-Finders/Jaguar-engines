@@ -614,44 +614,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (22%), London (18%), South West (15%)【PATTERN DATA】"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a Jaguar XF 5.0 V8 / XFR engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned XF 5.0 V8 (AJ133) engine typically costs £4,000–£7,500 supply only for the naturally aspirated version, while the supercharged XFR engine costs £5,500–£10,000. Fitting adds £1,000–£1,800 at independent specialist rates. A timing chain replacement alone costs £2,000–£4,000, while head gasket replacement is a 25-hour labour job. Use our calculator for a figure specific to your car.",
-        "value": "2. Is the Jaguar XF 5.0 V8 / XFR engine reliable?"
-      },
-      {
-        "label": "The AJ133 is a glorious engine but has a mixed reputation. Early cars (2009–2011) suffered from timing chain guide wear — Jaguar revised the chains, sprockets, guides and tensioners in 2012. All AJ133s suffer from plastic coolant pipe failures (the most common issue), water pump and thermostat housing failures, and HPFP issues. The XFR adds supercharger coupler wear. Regular 5,000–6,000 mile oil changes are absolutely essential.",
-        "value": "3. What are the common problems with the Jaguar XF 5.0 V8 / XFR?"
-      },
-      {
-        "label": "Timing chain guide wear (pre-2012 cars are the highest risk), plastic coolant pipe and crossover pipe failure (the defining weak point of the AJ133), supercharger coupler wear (XFR), high-pressure fuel pump failure, water pump and thermostat housing failure, and injector/PCV issues. See the Era Map above for generation-specific advice.",
-        "value": "4. Is it worth replacing a Jaguar XF 5.0 V8 / XFR engine, or should I scrap the car?"
-      },
-      {
-        "label": "Depends on vehicle value. Against a well-kept XFR (values £8,000–£25,000+ depending on condition and mileage), a £5,500–£7,000 reconditioned engine is 25–70% of the vehicle's value — often worth it for a solid example. The Jaguar scrap threshold of 60% means evaluating the whole vehicle and its condition before committing. Given the XFR's status as a future classic and rising values, engine replacement is often worth it for a good example.",
-        "value": "5. How do I find my Jaguar XF 5.0 V8 / XFR engine code?"
-      },
-      {
-        "label": "The engine code (AJ133 or AJ133S) is listed on the VIN plate and vehicle documentation. The naturally aspirated 5.0 V8 (385 PS) uses the AJ133, while the supercharged XFR (510 PS) and XFR-S (550 PS) use the AJ133S. The XFR was offered from 2009–2015, with the 8-speed automatic introduced in 2013. Tell us your registration and we'll confirm for free.",
-        "value": "6. Can I repair the AJ133 timing chain, or does it require engine replacement?"
-      },
-      {
-        "label": "Yes — if caught early. A preventative timing chain, guide, tensioner and sprocket replacement costs £2,000–£4,000. However, if the chain snaps, a full engine replacement (£5,500–£10,000) is usually required. At the first sign of cold-start rattle, book an inspection immediately. If you own a pre-2012 XFR, the timing chain issue is a known weakness that should be addressed proactively.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "SECTION 9, META AND SCHEMA",
-        "value": "PART 2 — SECTION 9 + META + SCHEMA"
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Jaguar XF 5.0 V8 / XFR engine replacement cost in the UK?",
+        "answer": "A reconditioned XF 5.0 V8 (AJ133) engine typically costs £4,000–£7,500 supply only for the naturally aspirated version, while the supercharged XFR engine costs £5,500–£10,000. Fitting adds £1,000–£1,800 at independent specialist rates. A timing chain replacement alone costs £2,000–£4,000, while head gasket replacement is a 25-hour labour job. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the Jaguar XF 5.0 V8 / XFR engine reliable?",
+        "answer": "The AJ133 is a glorious engine but has a mixed reputation. Early cars (2009–2011) suffered from timing chain guide wear — Jaguar revised the chains, sprockets, guides and tensioners in 2012. All AJ133s suffer from plastic coolant pipe failures (the most common issue), water pump and thermostat housing failures, and HPFP issues. The XFR adds supercharger coupler wear. Regular 5,000–6,000 mile oil changes are absolutely essential."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Jaguar XF 5.0 V8 / XFR?",
+        "answer": "Timing chain guide wear (pre-2012 cars are the highest risk), plastic coolant pipe and crossover pipe failure (the defining weak point of the AJ133), supercharger coupler wear (XFR), high-pressure fuel pump failure, water pump and thermostat housing failure, and injector/PCV issues. See the Era Map above for generation-specific advice."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Jaguar XF 5.0 V8 / XFR engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. Against a well-kept XFR (values £8,000–£25,000+ depending on condition and mileage), a £5,500–£7,000 reconditioned engine is 25–70% of the vehicle's value — often worth it for a solid example. The Jaguar scrap threshold of 60% means evaluating the whole vehicle and its condition before committing. Given the XFR's status as a future classic and rising values, engine replacement is often worth it for a good example."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Jaguar XF 5.0 V8 / XFR engine code?",
+        "answer": "The engine code (AJ133 or AJ133S) is listed on the VIN plate and vehicle documentation. The naturally aspirated 5.0 V8 (385 PS) uses the AJ133, while the supercharged XFR (510 PS) and XFR-S (550 PS) use the AJ133S. The XFR was offered from 2009–2015, with the 8-speed automatic introduced in 2013. Tell us your registration and we'll confirm for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the AJ133 timing chain, or does it require engine replacement?",
+        "answer": "Yes — if caught early. A preventative timing chain, guide, tensioner and sprocket replacement costs £2,000–£4,000. However, if the chain snaps, a full engine replacement (£5,500–£10,000) is usually required. At the first sign of cold-start rattle, book an inspection immediately. If you own a pre-2012 XFR, the timing chain issue is a known weakness that should be addressed proactively."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK Jaguar XF 5.0 V8 / XFR Owners Trust JaguarEngine.uk",

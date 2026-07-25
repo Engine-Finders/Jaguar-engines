@@ -524,7 +524,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Crankshaft / bearing failure — snapped crankshafts and spun bearings are well-documented on the 2.7d"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "60,000–100,000 miles【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£3,000 reconditioned, supply only【JAG-QUOTE】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "276DT【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Winter — cold starts expose crankshaft and DPF issues【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (18%), London (15%), South West (10%)【PATTERN DATA】"
+      }
+    ]
   },
   "faq": {
     "items": [

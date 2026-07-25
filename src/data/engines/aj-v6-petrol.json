@@ -1,22 +1,22 @@
 {
   "meta": {
     "slug": "aj-v6-petrol",
-    "title": "Jaguar AJ‑V6 Petrol Engine — Specs, Reliability & Replacement Cost",
-    "description": "",
-    "canonical": "",
+    "title": "Jaguar AJ-V6 Petrol Engine — Specs, Reliability & Cost",
+    "description": "The AJ-V6 is a smooth, reliable V6, but cooling system and timing chain issues are common. 500+ UK enquiries [ESTIMATED]. Compare quotes from vetted specialists today.",
+    "canonical": "https://jaguarengine.uk/engines/aj-v6-petrol/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "Jaguar AJ-V6 Petrol Engine — Specs, Reliability & Cost",
+      "description": "The AJ-V6 is a smooth, reliable V6, but cooling system and timing chain issues are common. 500+ UK enquiries [ESTIMATED]. Compare quotes from vetted specialists today.",
+      "type": "website",
+      "url": "https://jaguarengine.uk/engines/aj-v6-petrol/",
+      "image": "https://jaguarengine.uk/images/jaguar/engines/aj-v6-petrol.jpg",
+      "siteName": "jaguarengine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "Jaguar AJ-V6 Petrol Engine — Specs, Reliability & Cost",
+      "description": "The AJ-V6 is a smooth, reliable V6, but cooling system and timing chain issues are common. 500+ UK enquiries [ESTIMATED]. Compare quotes from vetted specialists today.",
+      "image": "https://jaguarengine.uk/images/jaguar/engines/aj-v6-petrol.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -238,79 +238,48 @@
       {
         "metric": "Overall Engine Score",
         "value": "62/100"
-      },
-      {
-        "metric": "SECTION 3 — VERDICT & RATING",
-        "value": "AJ‑V6 Petrol — Our Verdict & Rating"
-      },
-      {
-        "metric": "Star rating: 3.5★ out of 5",
-        "value": "Confidence: 80% confidence — based on market data and specialist workshop consensus; proprietary enquiry volume for this specific family is not yet isolated."
-      },
-      {
-        "metric": "Engine Score breakdown:",
-        "value": "Dimension"
-      },
-      {
-        "metric": "Score (of 20)",
-        "value": "How it's determined"
-      },
-      {
-        "metric": "Reliability",
-        "value": "14"
-      },
-      {
-        "metric": "Formula: star rating × 4 = 3.5 × 4 = 14",
-        "value": "Repair Cost"
-      },
-      {
-        "metric": "16",
-        "value": "Reconditioned midpoint: £3,250 (£2,500–£4,000 [ESTIMATED]) → £3,000–£4,999 band → 16"
-      },
-      {
-        "metric": "Repairability",
-        "value": "12"
-      },
-      {
-        "metric": "Mix of straightforward repairs (water pumps, coil packs) and more involved ones (timing tensioners, coolant crossover pipes) — anchored to the middle point",
-        "value": "Parts Supply"
-      },
-      {
-        "metric": "16",
-        "value": "Well‑supported across UK Jaguar specialists; many parts available aftermarket and genuine; some specific items (e.g. 3.2 timing parts) may have lead times"
-      },
-      {
-        "metric": "Replacement Economics",
-        "value": "4"
-      },
-      {
-        "metric": "Reconditioned supply £3,250 against the lowest host value (X‑Type ~£2,000) = 162% — well above the 75% scrap threshold",
-        "value": "Total"
-      },
-      {
-        "metric": "62/100",
-        "value": "Sum of the five rows above"
-      },
-      {
-        "metric": "One-line verdict: \"The AJ‑V6 is a smooth, reliable petrol six — but cooling system seals and timing tensioners wear with age — buy only with documented recent maintenance.\" (Clause 1: 8 words. Clause 2: 8 words. Clause 3: 7 words. Total: 23 words.)",
-        "value": "Best for: Enthusiasts who value a silky V6 character and regular servicing."
       }
     ]
   },
   "verdictRating": {
-    "starRating": "",
-    "confidence": "",
-    "scoreNote": "",
+    "starRating": "3.5★ out of 5",
+    "confidence": "80% confidence — based on market data and specialist workshop consensus; proprietary enquiry volume for this specific family is not yet isolated.",
+    "scoreNote": "Engine Score breakdown:",
     "scoreBreakdown": {
       "columns": [
         "Dimension",
         "Score (of 20)"
       ],
-      "rows": []
+      "rows": [
+        {
+          "dimension": "Reliability",
+          "score": "14 (Formula: star rating × 4 = 3.5 × 4 = 14)"
+        },
+        {
+          "dimension": "Repair Cost",
+          "score": "16 (Reconditioned midpoint: £3,250 (£2,500–£4,000 [ESTIMATED]) → £3,000–£4,999 band → 16)"
+        },
+        {
+          "dimension": "Repairability",
+          "score": "12 (Mix of straightforward repairs (water pumps, coil packs) and more involved ones (timing tensioners, coolant crossover pipes) — anchored to the middle point)"
+        },
+        {
+          "dimension": "Parts Supply",
+          "score": "16 (Well‑supported across UK Jaguar specialists; many parts available aftermarket and genuine; some specific items (e.g. 3.2 timing parts) may have lead times)"
+        },
+        {
+          "dimension": "Replacement Economics",
+          "score": "4 (Reconditioned supply £3,250 against the lowest host value (X‑Type ~£2,000) = 162% — well above the 75% scrap threshold)"
+        },
+        {
+          "dimension": "Total",
+          "score": "62/100 (Sum of the five rows above)"
+        }
+      ]
     },
-    "oneLineVerdict": "",
-    "bestFor": "",
-    "avoidIf": ""
+    "oneLineVerdict": "\"The AJ‑V6 is a smooth, reliable petrol six — but cooling system seals and timing tensioners wear with age — buy only with documented recent maintenance.\" (Clause 1: 8 words. Clause 2: 8 words. Clause 3: 7 words. Total: 23 words.)",
+    "bestFor": "Enthusiasts who value a silky V6 character and regular servicing.",
+    "avoidIf": "You're on a tight budget — older X‑Type host values can make replacement uneconomical."
   },
   "compatibility": {
     "columns": [

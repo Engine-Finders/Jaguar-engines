@@ -551,7 +551,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Valve stem seal failure — a common leak point on these engines, causing blue smoke on start-up"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "80,000–120,000 miles【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£3,500 reconditioned, supply only【PLACEHOLDER】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "AJ16 (X300 generation)【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring / Summer — classic car season【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (18%), London (15%), South West (10%)【PATTERN DATA】"
+      }
+    ]
   },
   "faq": {
     "items": [

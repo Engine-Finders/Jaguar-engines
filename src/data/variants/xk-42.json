@@ -478,11 +478,67 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "VVT phase regulator wear — the defining weakness of the AJ34"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "70,000–120,000 miles【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£3,000–£5,500 reconditioned, supply only【JAG-QUOTE】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "AJ34 — the 4.2-litre V8【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring — classic and performance car season【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "London (20%), South East (18%), South West (14%)【PATTERN DATA】"
+      }
+    ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Jaguar XK 4.2 engine replacement cost in the UK?",
+        "answer": "A reconditioned AJ34 engine typically costs £3,000–£5,500 supply only, with used units available from £1,500–£3,000. Fitting adds £1,500–£2,500 depending on the workshop. Engine rebuilds typically cost around £5,000. Use our calculator for a figure specific to your XK."
+      },
+      {
+        "id": 2,
+        "question": "Is the Jaguar XK 4.2 engine reliable?",
+        "answer": "Yes — the AJ34 is widely regarded as one of Jaguar's most reliable V8s. It was a vast improvement over the 4.0-litre, with the catastrophic plastic timing chain tensioner issue resolved. Known weaknesses include VVT phase regulator wear, cooling system leaks, and CCV valve clogging."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Jaguar XK 4.2?",
+        "answer": "VVT phase regulator wear (rattling on cold start), cooling system leaks from plastic pipes (can cause overheating), crankcase ventilation valve clogging (oil consumption), and oil leaks from the rear crank seal. The 4.2 is significantly more reliable than the earlier 4.0-litre."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Jaguar XK 4.2 engine, or should I scrap the car?",
+        "answer": "XK values remain strong — a well-kept X150 is often worth £8,000–£20,000+. A £3,000–£5,500 reconditioned engine is 20–40% of the vehicle's value — within the Jaguar 60% scrap threshold. If the car is a cherished example with good bodywork and interior, replacement is often worthwhile. The 4.2 engine is also cheaper to replace than the 5.0."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Jaguar XK 4.2 engine code?",
+        "answer": "The engine code is AJ34 — it's the only 4.2-litre naturally aspirated V8 used in the XK. You can find it on the VIN plate, in the vehicle documentation, or on a label on the engine itself. Production years: X100 (2002–2006) and X150 (2006–2009)."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the AJ34 VVT system, or does the engine need replacement?",
+        "answer": "The VVT phase regulators can be replaced — they are wear items. Replacement costs £800–£2,000 and is a labour-intensive job. If VVT failure causes timing chain issues, the engine can be destroyed. A preventative VVT solenoid and regulator replacement is far cheaper than a full engine replacement (£3,000+). At the first sign of rattling from the front/top of the engine, book an inspection immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "",

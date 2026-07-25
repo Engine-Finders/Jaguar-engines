@@ -37,16 +37,24 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_INPUT = ROOT / "engine-txts" / "engine.txt"
 DEFAULT_OUT = ROOT / "engine-outputs"
 
+# Allow leading spaces/tabs on headers
 PAGE_START_RE = re.compile(
-    r"^SECTION\s+1\s*[—\-:]+\s*HERO\b",
+    r"^[ \t]*SECTION\s+1\s*[—\-:]+\s*HERO\b",
     re.MULTILINE | re.IGNORECASE,
 )
 SECTION_RE = re.compile(
-    r"^SECTION\s+(?P<num>\d+)\s*[—\-:]+\s*(?P<label>.+?)\s*$",
+    r"^[ \t]*SECTION\s+(?P<num>\d+)\s*[—\-:]+\s*(?P<label>.+?)\s*$",
     re.MULTILINE | re.IGNORECASE,
 )
-PART2_RE = re.compile(
-    r"^Part\s*2\s*[—\-]\s*Meta\b.*$",
+# Meta Part 2 only — not "PART 2 — SECTIONS 4–7"
+PART2_META_RE = re.compile(
+    r"^Part\s*2\s*[—\-]?\s*(?:Meta(?:data)?|METADATA)\b.*$",
+    re.MULTILINE | re.IGNORECASE,
+)
+# Back-compat alias used elsewhere in file
+PART2_RE = PART2_META_RE
+META_TITLE_LINE_RE = re.compile(
+    r"^[ \t]*META\s+TITLE\b.*$",
     re.MULTILINE | re.IGNORECASE,
 )
 
@@ -272,8 +280,9 @@ def extract_json_object(text: str) -> str:
 
 
 def strip_ignored_content(text: str) -> str:
+    # Stop at ANY section — do not wipe later pages
     text = re.sub(
-        r"Step\s+0\s*[—\-]\s*Cross[-‑]Brand Fitment Check:.*?(?=SECTION\s+1\b|\Z)",
+        r"Step\s+0\s*[—\-]\s*Cross[-‑]Brand Fitment Check:.*?(?=SECTION\s+\d+\b|\Z)",
         "\n",
         text,
         flags=re.I | re.S,
@@ -285,27 +294,28 @@ def strip_ignored_content(text: str) -> str:
         flags=re.I | re.M,
     )
     text = re.sub(
-        r"^PRODUCTION NOTE\s*\(internal\).*?(?=^PRE[-‑]PUBLISH|^Part\s*2\s*[—\-]\s*Meta|^SECTION\s+\d|\Z)",
+        r"^PRODUCTION NOTE\s*\(internal\).*?(?=^PRE[-‑]PUBLISH|^Part\s*2\b|^SECTION\s+\d|\Z)",
         "\n",
         text,
         flags=re.I | re.S | re.M,
     )
     text = re.sub(
-        r"PRE[-‑]PUBLISH VALIDATION CHECKLIST.*?(?=Part\s*2\s*[—\-]\s*Meta|SECTION\s+1\b|\Z)",
+        r"PRE[-‑]PUBLISH VALIDATION CHECKLIST.*?(?=Part\s*2\b|SECTION\s+\d+\b|\Z)",
         "\n",
         text,
         flags=re.I | re.S,
     )
+    # Must stop at Part 2 OR next SECTION — otherwise eats following pages
     text = re.sub(
         r"(?:Next step:|Generate Part 2|We need to generate Part 2|Given: the content from Part 1).*?"
-        r"(?=Part\s*2\s*[—\-]\s*Meta|\Z)",
+        r"(?=Part\s*2\b|SECTION\s+\d+\b|\Z)",
         "\n",
         text,
         flags=re.I | re.S,
     )
     text = re.sub(
         r"(?:End of Part\s*1|PART\s*1\s+COMPLETE|This completes Part\s*1).*?"
-        r"(?=SECTION\s+\d+\b|Part\s*2\s*[—\-]\s*Meta|\Z)",
+        r"(?=SECTION\s+\d+\b|Part\s*2\b|\Z)",
         "\n",
         text,
         flags=re.I | re.S | re.M,
@@ -324,6 +334,43 @@ def strip_ignored_content(text: str) -> str:
         flags=re.I | re.M,
     )
     return text
+
+
+def normalize_section_headers(text: str) -> str:
+    """Trim leading spaces/tabs before SECTION / Part 2 / META header lines."""
+    out: list[str] = []
+    for ln in text.splitlines():
+        stripped = ln.lstrip(" \t")
+        if re.match(
+            r"(SECTION\s+\d+\b|Part\s*2\b|META\s+TITLE\b|META\s+DESCRIPTION\b)",
+            stripped,
+            re.IGNORECASE,
+        ):
+            out.append(stripped)
+        else:
+            out.append(ln)
+    return "\n".join(out) + ("\n" if text.endswith("\n") else "")
+
+
+def find_meta_block_start(page_text: str) -> int | None:
+    """
+    Start index of metadata/schema block.
+    Prefer Part 2 — Meta/METADATA; else plain Part 2 that leads into Meta Title;
+    else META TITLE line. Never treat 'PART 2 — SECTIONS 4–7' as meta.
+    """
+    m = PART2_META_RE.search(page_text)
+    if m:
+        return m.start()
+
+    for m in re.finditer(r"^Part\s*2\s*$", page_text, re.MULTILINE | re.IGNORECASE):
+        after = page_text[m.end() : m.end() + 2500]
+        if re.search(r"Meta Title|META TITLE|OPEN GRAPH|JSON[-‑]?LD", after, re.I):
+            return m.start()
+
+    m = META_TITLE_LINE_RE.search(page_text)
+    if m:
+        return m.start()
+    return None
 
 
 def filter_internal_lines(lines: list[str]) -> list[str]:
@@ -613,7 +660,7 @@ def parse_faq(body: str) -> dict[str, Any]:
         lines = lines[1:]
 
     items: list[dict[str, Any]] = []
-    q_re = re.compile(r"^(\d+)\.\s+(.*)$")
+    q_re = re.compile(r"^(?:Q\s*)?(\d+)\s*[.:]\s*(.*)$", re.IGNORECASE)
     current: dict[str, Any] | None = None
 
     for ln in lines:
@@ -631,6 +678,22 @@ def parse_faq(body: str) -> dict[str, Any]:
 
     if current:
         items.append(current)
+
+    if not items:
+        current = None
+        for ln in lines:
+            if ln.endswith("?"):
+                if current:
+                    items.append(current)
+                current = {
+                    "id": len(items) + 1,
+                    "question": normalize_faq_question(ln),
+                    "answer": "",
+                }
+            elif current is not None:
+                current["answer"] = clean((current["answer"] + " " + ln).strip())
+        if current:
+            items.append(current)
 
     return {"items": items}
 
@@ -715,11 +778,11 @@ def parse_meta_and_schema(page_text: str) -> dict[str, Any]:
         "jsonLd": {},
     }
 
-    part2_m = PART2_RE.search(page_text)
-    if not part2_m:
+    meta_start = find_meta_block_start(page_text)
+    if meta_start is None:
         return meta
 
-    meta_block = page_text[part2_m.end() :]
+    meta_block = page_text[meta_start:]
     meta_block = re.split(
         r"Production Note\s*\(internal\)|Pre[-‑]Publish Validation Checklist",
         meta_block,
@@ -766,6 +829,32 @@ def parse_meta_and_schema(page_text: str) -> dict[str, Any]:
             key = tw_m.group(1).lower()
             if key in tw_mapping:
                 meta["twitter"][tw_mapping[key]] = tw_m.group(2)
+            continue
+        # og:title = … / twitter:card = …
+        kv = re.match(
+            r"^(?P<key>(?:og|twitter):[A-Za-z0-9_:]+)\s*[=:]\s*(?P<val>.+)$",
+            ln,
+            re.I,
+        )
+        if not kv:
+            continue
+        key = kv.group("key").lower()
+        val = clean(kv.group("val"))
+        if val.startswith("[") and val.endswith("]"):
+            val = ""
+        if key.startswith("og:"):
+            og_key = key[3:]
+            if og_key in og_mapping:
+                meta["openGraph"][og_mapping[og_key]] = val
+        elif key.startswith("twitter:"):
+            tw_key = key[8:]
+            if tw_key in tw_mapping:
+                meta["twitter"][tw_mapping[tw_key]] = val
+
+    if not meta["title"] and meta["openGraph"].get("title"):
+        meta["title"] = meta["openGraph"]["title"]
+    if not meta["description"] and meta["openGraph"].get("description"):
+        meta["description"] = meta["openGraph"]["description"]
 
     json_m = re.search(r"JSON[-‑]LD.*?$", meta_block, re.I | re.M)
     schema_block = meta_block[json_m.end() :] if json_m else meta_block
@@ -789,6 +878,8 @@ def parse_meta_and_schema(page_text: str) -> dict[str, Any]:
         slug = slug_from_url(meta["openGraph"]["url"])
     if not slug and meta["jsonLd"]:
         slug = slug_from_webpage_url(meta["jsonLd"])
+    if not slug and meta.get("canonical"):
+        slug = slug_from_url(meta["canonical"])
     if slug:
         meta["slug"] = slug
 
@@ -919,8 +1010,8 @@ def guess_page_title(preamble: str, hero: dict[str, Any]) -> str:
 def build_page(preamble: str, page_text: str) -> dict[str, Any]:
     page = empty_page_skeleton()
 
-    part2_m = PART2_RE.search(page_text)
-    content = page_text[: part2_m.start()] if part2_m else page_text
+    meta_start = find_meta_block_start(page_text)
+    content = page_text[:meta_start] if meta_start is not None else page_text
     content = re.sub(
         r"PRODUCTION NOTE\s*\(internal\).*$",
         "",
@@ -973,6 +1064,53 @@ def build_page(preamble: str, page_text: str) -> dict[str, Any]:
     }
 
 
+def find_missing_sections(page_text: str) -> list[str]:
+    meta_start = find_meta_block_start(page_text)
+    content = page_text[:meta_start] if meta_start is not None else page_text
+    found = {key for key, _label, _body in iter_sections(content)}
+    return [key for key in SECTION_KEY_BY_NUM.values() if key not in found]
+
+
+def find_empty_critical_sections(page: dict[str, Any]) -> list[str]:
+    empty: list[str] = []
+    faq = page.get("faq") or {}
+    if not faq.get("items"):
+        empty.append("faq")
+    meta = page.get("meta") or {}
+    og = meta.get("openGraph") or {}
+    if not meta.get("jsonLd") and not meta.get("description") and not og.get("url"):
+        empty.append("schema")
+    return empty
+
+
+def collect_page_gaps(page_text: str, page: dict[str, Any]) -> list[str]:
+    gaps: list[str] = []
+    seen: set[str] = set()
+    for key in find_missing_sections(page_text) + find_empty_critical_sections(page):
+        if key not in seen:
+            seen.add(key)
+            gaps.append(key)
+    return gaps
+
+
+def write_missing_sections_log(
+    out_dir: Path, entries: list[tuple[str, list[str]]]
+) -> Path:
+    lines: list[str] = []
+    for page_name, missing in entries:
+        if not missing:
+            continue
+        lines.append(page_name)
+        for key in missing:
+            lines.append(f"missing {key}")
+        lines.append("")
+    if not lines:
+        lines = ["No missing sections.\n"]
+    log_path = out_dir / "loging.txt"
+    log_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
+    return log_path
+
+
 def main() -> int:
     if hasattr(sys.stdout, "reconfigure"):
         try:
@@ -1010,11 +1148,13 @@ def main() -> int:
 
     text = input_path.read_text(encoding="utf-8-sig")
     text = strip_ignored_content(text)
+    text = normalize_section_headers(text)
     pages = split_pages(text)
     print(f"Found {len(pages)} page(s) in {input_path.name}")
 
     written: list[tuple[str, Path]] = []
     used_slugs: set[str] = set()
+    missing_log_entries: list[tuple[str, list[str]]] = []
     for preamble, page_text in pages:
         try:
             data = build_page(preamble, page_text)
@@ -1034,6 +1174,11 @@ def main() -> int:
             data["meta"]["slug"] = slug
         used_slugs.add(slug)
 
+        missing = collect_page_gaps(page_text, data)
+        missing_log_entries.append((slug, missing))
+        if missing:
+            print(f"  ! missing sections: {', '.join(missing)}", file=sys.stderr)
+
         out_path = out_dir / f"{slug}.json"
         out_path.write_text(
             json.dumps(data, indent=2, ensure_ascii=False) + "\n",
@@ -1042,6 +1187,8 @@ def main() -> int:
         written.append((slug, out_path))
         print(f"  → {out_path.relative_to(ROOT)}")
 
+    log_path = write_missing_sections_log(out_dir, missing_log_entries)
+    print(f"Missing-section log → {log_path.relative_to(ROOT)}")
     print(f"Done. Wrote {len(written)} file(s).")
     if written:
         print("Slugs:", ", ".join(slug for slug, _ in written))

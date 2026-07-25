@@ -494,11 +494,67 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Timing chain tensioner and guide wear — the defining risk of the AJ133; steel tensioner pistons eat into aluminium guides"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "60,000–100,000 miles【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£4,000–£10,000 reconditioned, supply only depending on version【JAG-QUOTE】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "AJ133 — the 5.0-litre V8【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring — luxury performance car season【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "London (22%), South East (18%), South West (14%)【PATTERN DATA】"
+      }
+    ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Jaguar XJ 5.0 V8 engine replacement cost in the UK?",
+        "answer": "A reconditioned AJ133 engine typically costs £4,000–£10,000 supply only depending on which version (naturally aspirated or supercharged), with used units available from £2,000–£4,500. Fitting adds £2,000–£3,000. Customers have reported dealer quotes of around £15,000–£30,000. Use our calculator for a figure specific to your XJ."
+      },
+      {
+        "id": 2,
+        "question": "Is the Jaguar XJ 5.0 V8 engine reliable?",
+        "answer": "The AJ133 is a powerful and refined V8, but it has well-documented weaknesses. The most common serious problems are timing chain tensioner guide wear (steel tensioner pistons eat into aluminium guides), plastic coolant pipe failure (cracks at the seams), and PCV diaphragm failure. The naturally aspirated version is slightly more reliable than the supercharged. The 2017/2018 revisions to coolant pipes are significant improvements."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Jaguar XJ 5.0 V8?",
+        "answer": "Timing chain tensioner and guide wear (rattling on cold start — the most critical concern), plastic coolant pipe failure (cracking at seams — can cause catastrophic overheating), PCV diaphragm failure (oil consumption, lean running codes), carbon build-up on intake valves, and supercharger coupler wear on SC versions."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Jaguar XJ 5.0 V8 engine, or should I scrap the car?",
+        "answer": "XJ values range from £8,000–£25,000+ depending on condition and spec. A £4,000–£10,000 reconditioned engine is 20–50% of the vehicle's value — apply the Jaguar 60% scrap threshold. If the car is a cherished example with good bodywork, replacement is often worthwhile. However, given the dealer quotes of £15,000–£30,000, ensure you understand the full cost before committing."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Jaguar XJ 5.0 V8 engine code?",
+        "answer": "The engine code is AJ133 — it's the only 5.0-litre V8 used in the XJ. You can find it on the VIN plate, in the vehicle documentation, or on a label on the engine itself. Production ran from 2009 to 2019."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the AJ133 timing chain tensioner, or does the engine need replacement?",
+        "answer": "The timing chain tensioners and guides can be replaced — they are wear items. Replacement costs £2,000–£4,000 and is a labour-intensive job (18+ hours). If the chain fails and jumps timing, the engine is typically destroyed. A preventative tensioner and guide replacement is far cheaper than a full engine replacement (£4,000+). The early Tsubaki chains are no longer available — if they fail, all sprockets must be updated to INA 8mm chains. At the first sign of rattling from the front of the engine, book an inspection immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "",

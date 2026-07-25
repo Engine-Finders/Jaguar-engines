@@ -1,26 +1,194 @@
 {
   "meta": {
-    "slug": "jaguar-f-pace-25d-30d",
-    "title": "Jaguar F-Pace 25d / 30d Engine Replacement — Compare Prices & Get Quotes",
-    "titleCharCount": 72,
-    "description": "",
-    "descriptionCharCount": 0,
-    "canonical": "",
+    "slug": "f-pace-25d-30d",
+    "title": "F-Pace 25d / 30d Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 57,
+    "description": "Jaguar F-Pace 25d/30d — 306DT V6 and AJ20D6 I6 diesels. Real UK costs, common bearing and DPF issues, and honest reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
+    "descriptionCharCount": 160,
+    "canonical": "https://jaguarengine.uk/f-pace/25d-30d/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "F-Pace 25d / 30d Engine Replacement Cost UK — Compare Quotes",
+      "description": "Jaguar F-Pace 25d/30d — 306DT V6 and AJ20D6 I6 diesels. Real UK costs, common bearing and DPF issues, and honest reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
+      "type": "website",
+      "url": "https://jaguarengine.uk/f-pace/25d-30d/",
+      "image": "https://jaguarengine.uk/images/jaguar/hero/f-pace-25d-30d.jpg",
+      "siteName": "JaguarEngine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "F-Pace 25d / 30d Engine Replacement Cost UK — Compare Quotes",
+      "description": "Jaguar F-Pace 25d/30d — 306DT V6 and AJ20D6 I6 diesels. Real UK costs, common bearing and DPF issues, and honest reliability data.",
+      "image": "https://jaguarengine.uk/images/jaguar/hero/f-pace-25d-30d.jpg"
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "F-Pace",
+              "item": "https://jaguarengine.uk/f-pace/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "25d / 30d",
+              "item": "https://jaguarengine.uk/f-pace/25d-30d/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar F-Pace 25d / 30d Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "F-Pace X761 25d/30d (306DT, 2016–2020)",
+              "url": "https://jaguarengine.uk/f-pace/25d-30d/#306dt"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "F-Pace X761 25d/30d (AJ20D6, 2021–present)",
+              "url": "https://jaguarengine.uk/f-pace/25d-30d/#aj20d6"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar F-Pace 25d / 30d Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "306DT 3.0L V6 Diesel",
+              "url": "https://jaguarengine.uk/engines/306dt/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "AJ20D6 3.0L I6 Diesel",
+              "url": "https://jaguarengine.uk/engines/aj20d6/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Jaguar F-Pace 25d / 30d engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned Jaguar F-Pace 3.0 diesel engine costs £5,000–£8,000 supply only, varying by generation: 306DT £4,500–£7,500, AJ20D6 £5,500–£9,500. Fitting adds £1,200–£1,800. Check the Era Map above for your engine code."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Jaguar F-Pace 25d / 30d reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "That depends on which engine your F-Pace has. The 306DT V6 (2016–2020) has a well-documented crankshaft bearing failure risk — this is the defining issue of the pre-facelift cars. The AJ20D6 Ingenium I6 (2021+) is a significant improvement, replacing the V6 with a smoother, more reliable inline-six. Buy the facelift if you can."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Jaguar F-Pace 25d / 30d?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "306DT V6: crankshaft bearing failure (cold-start knock, £5,500–£7,500), oil pump failure (£1,500–£3,500), turbo failure (£1,500–£3,500), DPF/EGR issues (£400–£1,200). AJ20D6 I6: DPF/EGR issues (£400–£1,200), cooling system leaks (£400–£1,000)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Jaguar F-Pace 25d / 30d engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "F-Pace values range from £10,000–£45,000 depending on generation, condition and mileage. A £5,000–£8,000 reconditioned engine represents 15–80% of vehicle value — our 60% Jaguar scrap threshold means careful evaluation is required. For a well-maintained facelift (AJ20D6), replacement is often justified. For an ageing pre-facelift 306DT with other issues, assess scrap value first."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Jaguar F-Pace 25d / 30d engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The F-Pace 25d/30d has used two engines: 306DT (2016–2020, 3.0L V6 diesel, 237/296bhp) and AJ20D6 (2021+, 3.0L I6 diesel, 300bhp). Check your VIN or registration year — pre-2021 is 306DT, 2021+ is AJ20D6. The code is stamped on the engine block."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the 306DT crankshaft bearing issue, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "In many cases, engine replacement is the more cost-effective option (£4,500–£7,500) compared to a bottom-end rebuild (£5,500–£7,500). If caught extremely early — before bearing damage has scored the crankshaft — a specialist rebuild may be possible. But for most examples, replacement is recommended. At the first sign of cold-start knock, stop driving immediately and book an inspection."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "JaguarEngine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Jaguar F-Pace 25d / 30d Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "3500",
+            "highPrice": "15000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Jaguar F-Pace 25d / 30d UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Jaguar F-Pace 25d / 30d engines, sourced from JaguarEngine.uk's specialist marketplace activity for 306DT and AJ20D6 variants.",
+          "creator": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "F-Pace 25d / 30d Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://jaguarengine.uk/f-pace/25d-30d/",
+          "author": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "JaguarEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-12",
+          "dateModified": "2026-07-12"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "Jaguar F-Pace 25d / 30d • 2016–present • 3.0L Diesel",

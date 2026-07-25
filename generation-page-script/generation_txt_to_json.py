@@ -33,17 +33,27 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_INPUT = ROOT / "generation-page-txt" / "EM Generation Pages 1 (1).txt"
 DEFAULT_OUT = ROOT / "generation-page-outputs"
 
+# Allow leading spaces/tabs on headers (export sometimes indents SECTION/META/SCHEMA)
 PAGE_START_RE = re.compile(
-    r"^SECTION\s+1\s*[—\-:]+\s*HERO\b",
+    r"^[ \t]*SECTION\s+1\s*[—\-:]+\s*HERO\b",
     re.MULTILINE | re.IGNORECASE,
 )
 SECTION_RE = re.compile(
-    r"^SECTION\s+(?P<num>\d+)\s*[—\-:]+\s*(?P<label>.+?)"
+    r"^[ \t]*SECTION\s+(?P<num>\d+)\s*[—\-:]+\s*(?P<label>.+?)"
     r"(?:\s*[—\-]+\s*(?:<\s*(?P<component>[A-Za-z0-9_]+)\s*>)?)?\s*$",
     re.MULTILINE | re.IGNORECASE,
 )
-META_SECTION_RE = re.compile(r"^META\s*$", re.MULTILINE | re.IGNORECASE)
-SCHEMA_SECTION_RE = re.compile(r"^SCHEMA\s*(?:\(JSON[-‑]LD\))?\s*$", re.MULTILINE | re.IGNORECASE)
+META_SECTION_RE = re.compile(r"^[ \t]*META\s*$", re.MULTILINE | re.IGNORECASE)
+SCHEMA_SECTION_RE = re.compile(
+    r"^[ \t]*SCHEMA\s*(?:\(JSON[-‑–—]LD\))?\s*$",
+    re.MULTILINE | re.IGNORECASE,
+)
+META_TITLE_BLOCK_RE = re.compile(
+    r"^[ \t]*META\s*\n"
+    r"(?:[ \t]*Meta Title[^\n]*\n)?"
+    r"(?:[ \t]*Meta Description[^\n]*\n)?",
+    re.MULTILINE | re.IGNORECASE,
+)
 
 FIELD_RE = re.compile(
     r"^(Tag Pill|H1|Sub-headline|Sub-Headline|Trust Strip|Primary CTA|H2)\s*:\s*(.*)$",
@@ -350,9 +360,10 @@ def strip_ignored_content(text: str) -> str:
     """
     Strip blocks that must never enter JSON (shared ignore rules).
     """
-    # Step 0 Check Results (Check A / B / Authority Model) before SECTION 1
+    # Step 0 Check Results — stop at ANY section (not only SECTION 1).
+    # Restated Step 0 before Part 2 sections must not wipe FAQ/META/SCHEMA.
     text = re.sub(
-        r"Step\s+0\s+Check\s+Results.*?(?=SECTION\s+1\b|\Z)",
+        r"Step\s+0\s+Check\s+Results.*?(?=SECTION\s+\d+\b|\Z)",
         "\n",
         text,
         flags=re.I | re.S,
@@ -379,6 +390,22 @@ def strip_ignored_content(text: str) -> str:
         flags=re.I | re.M,
     )
     return text
+
+
+def normalize_section_headers(text: str) -> str:
+    """Trim leading spaces/tabs before SECTION / META / SCHEMA header lines only."""
+    out: list[str] = []
+    for ln in text.splitlines():
+        stripped = ln.lstrip(" \t")
+        if re.match(
+            r"(SECTION\s+\d+\b|META\s*$|SCHEMA\b)",
+            stripped,
+            re.IGNORECASE,
+        ):
+            out.append(stripped)
+        else:
+            out.append(ln)
+    return "\n".join(out) + ("\n" if text.endswith("\n") else "")
 
 
 def parse_hero(body: str) -> dict[str, Any]:
@@ -923,9 +950,89 @@ def parse_core_variants(body: str) -> dict[str, Any]:
     }
 
 
+def _live_feed_from_lines(live_lines: list[str]) -> list[dict[str, str]]:
+    live_feed: list[dict[str, str]] = []
+    for ln in live_lines:
+        parts = [clean(p) for p in re.split(r"\s+[—\-]\s+", ln) if clean(p)]
+        if len(parts) >= 5:
+            live_feed.append(
+                {
+                    "vehicle": parts[0],
+                    "location": parts[1],
+                    "issue": parts[2],
+                    "enquiries": parts[3],
+                    "updated": parts[4],
+                }
+            )
+        elif len(parts) >= 4:
+            live_feed.append(
+                {
+                    "vehicle": parts[0],
+                    "location": parts[1],
+                    "issue": parts[2],
+                    "enquiries": parts[3],
+                    "updated": "",
+                }
+            )
+    return live_feed
+
+
+def _parse_mi_colon_blocks(
+    lines: list[str],
+) -> tuple[list[str], list[str], str, list[str], list[dict[str, str]]]:
+    """Parse Market Intelligence written as labeled lists (C219 style)."""
+    engines: list[str] = []
+    variants: list[str] = []
+    failures: list[str] = []
+    live_raw: list[str] = []
+    avg = ""
+    current: str | None = None
+
+    def take_inline(ln: str) -> str:
+        return clean(ln.split(":", 1)[1]) if ":" in ln else ""
+
+    for ln in lines:
+        low = ln.lower()
+        if low.startswith("most requested") and "engine" in low:
+            current = "engines"
+            inline = take_inline(ln)
+            if inline:
+                engines.append(inline)
+            continue
+        if low.startswith("most requested") and "variant" in low:
+            current = "variants"
+            inline = take_inline(ln)
+            if inline:
+                variants.append(inline)
+            continue
+        if "average" in low and ("cost" in low or "replacement" in low):
+            current = None
+            avg = take_inline(ln) or clean(ln)
+            continue
+        if low.startswith("most common") and "failure" in low:
+            current = "failures"
+            inline = take_inline(ln)
+            if inline:
+                failures.append(inline)
+            continue
+        if low.startswith("live feed"):
+            current = "live"
+            continue
+        if current == "engines":
+            engines.append(ln)
+        elif current == "variants":
+            variants.append(ln)
+        elif current == "failures":
+            failures.append(ln)
+        elif current == "live":
+            live_raw.append(ln)
+
+    return engines, variants, avg, failures, _live_feed_from_lines(live_raw)
+
+
 def parse_market_intelligence(body: str) -> dict[str, Any]:
     joined = clean(" ".join(non_empty_lines(body)))
-    if re.search(r"absent\s*\(thin-data fallback", joined, re.I):
+    if re.search(r"absent\s*\(thin-data fallback|fully omitted.*thin-data", joined, re.I):
         return {
             "mostRequestedEngines": [],
             "mostRequestedVariants": [],
@@ -993,30 +1100,11 @@ def parse_market_intelligence(body: str) -> dict[str, Any]:
     variants = split_ranked(find_metric("most requested", "variants"))
     failures = split_ranked(find_metric("most common", "failures"))
     avg_cost = find_metric("average", "replacement cost")
+    live_feed = _live_feed_from_lines(live_lines)
 
-    live_feed = []
-    for ln in live_lines:
-        parts = [clean(p) for p in re.split(r"\s+[—\-]\s+", ln) if clean(p)]
-        if len(parts) >= 5:
-            live_feed.append(
-                {
-                    "vehicle": parts[0],
-                    "location": parts[1],
-                    "issue": parts[2],
-                    "enquiries": parts[3],
-                    "updated": parts[4],
-                }
-            )
-        elif len(parts) >= 4:
-            live_feed.append(
-                {
-                    "vehicle": parts[0],
-                    "location": parts[1],
-                    "issue": parts[2],
-                    "enquiries": parts[3],
-                    "updated": "",
-                }
-            )
+    # Colon-header list format (C219) when Metric/Display table is absent
+    if not engines and not variants and not avg_cost:
+        engines, variants, avg_cost, failures, live_feed = _parse_mi_colon_blocks(lines)
 
     return {
         "mostRequestedEngines": engines,
@@ -1032,8 +1120,9 @@ def parse_faq(body: str) -> dict[str, Any]:
     if lines and lines[0].lower().startswith("h2:"):
         lines = lines[1:]
 
-    items = []
-    q_re = re.compile(r"^(\d+)\.\s+(.*)$")
+    items: list[dict[str, Any]] = []
+    # Numbered: "1. …" / "Q1: …"
+    q_re = re.compile(r"^(?:Q\s*)?(\d+)\s*[.:]\s*(.*)$", re.IGNORECASE)
     current: dict[str, Any] | None = None
     for ln in lines:
         m = q_re.match(ln)
@@ -1045,6 +1134,24 @@ def parse_faq(body: str) -> dict[str, Any]:
             current["answer"] = clean((current["answer"] + " " + ln).strip())
     if current:
         items.append(current)
+
+    # Unnumbered S204-style: question lines end with "?"
+    if not items:
+        current = None
+        for ln in lines:
+            if ln.endswith("?"):
+                if current:
+                    items.append(current)
+                current = {
+                    "id": len(items) + 1,
+                    "question": clean(ln),
+                    "answer": "",
+                }
+            elif current is not None:
+                current["answer"] = clean((current["answer"] + " " + ln).strip())
+        if current:
+            items.append(current)
+
     return {"items": items}
 
 
@@ -1127,18 +1234,10 @@ def parse_meta_and_schema(page_text: str) -> dict[str, Any]:
         "jsonLd": {},
     }
 
-    meta_m = META_SECTION_RE.search(page_text)
-    if not meta_m:
-        return meta
-
-    after_meta = page_text[meta_m.end() :]
-    schema_m = SCHEMA_SECTION_RE.search(after_meta)
-    meta_block = after_meta[: schema_m.start()] if schema_m else after_meta
-    schema_block = after_meta[schema_m.end() :] if schema_m else ""
-
+    # Prefer Meta Title/Description lines anywhere (some pages put META before Sec 9)
     tm = re.search(
         r"Meta Title\s*\((\d+)\s*chars?\)\s*:\s*(.+)$",
-        meta_block,
+        page_text,
         re.I | re.M,
     )
     if tm:
@@ -1147,7 +1246,7 @@ def parse_meta_and_schema(page_text: str) -> dict[str, Any]:
 
     dm = re.search(
         r"Meta Description\s*\((\d+)\s*chars?\)\s*:\s*(.+)$",
-        meta_block,
+        page_text,
         re.I | re.M,
     )
     if dm:
@@ -1159,7 +1258,12 @@ def parse_meta_and_schema(page_text: str) -> dict[str, Any]:
     if meta["description"] and not meta["descriptionCharCount"]:
         meta["descriptionCharCount"] = len(meta["description"])
 
-    if schema_block:
+    # Use the last SCHEMA block (real schema sits at page end)
+    schema_m = None
+    for m in SCHEMA_SECTION_RE.finditer(page_text):
+        schema_m = m
+    if schema_m:
+        schema_block = page_text[schema_m.end() :]
         brace_start = schema_block.find("{")
         if brace_start >= 0:
             raw = extract_json_object(schema_block[brace_start:])
@@ -1181,6 +1285,21 @@ def parse_meta_and_schema(page_text: str) -> dict[str, Any]:
             meta["slug"] = slug
 
     return meta
+
+
+def content_for_sections(page_text: str) -> str:
+    """
+    Body used for SECTION parsers.
+
+    Do NOT cut at the first META — some pages place META title before Sec 9–11.
+    Cut only before SCHEMA, and strip META title blocks so they don't pollute Sec 8.
+    """
+    schema_m = None
+    for m in SCHEMA_SECTION_RE.finditer(page_text):
+        schema_m = m
+    content = page_text[: schema_m.start()] if schema_m else page_text
+    content = META_TITLE_BLOCK_RE.sub("\n", content)
+    return content
 
 
 def extract_json_object(text: str) -> str:
@@ -1253,15 +1372,13 @@ def build_page(preamble: str, page_text: str) -> dict[str, Any]:
         "authorityModelMode": "",
     }
 
-    content = page_text
-    meta_m = META_SECTION_RE.search(page_text)
-    if meta_m:
-        content = page_text[: meta_m.start()]
+    content = content_for_sections(page_text)
 
     sections = iter_sections(content)
     for key, label, body in sections:
-        if key == "marketIntelligence" and re.search(
-            r"absent\s*\(thin-data fallback", label, re.I
+        if key == "marketIntelligence" and (
+            re.search(r"absent\s*\(thin-data fallback", label, re.I)
+            or re.search(r"fully omitted|thin-data fallback", body, re.I)
         ):
             page[key] = empty_page_skeleton()["marketIntelligence"]
             continue
@@ -1296,6 +1413,68 @@ def build_page(preamble: str, page_text: str) -> dict[str, Any]:
         page["meta"]["titleCharCount"] = len(page["meta"]["title"])
 
     return page
+
+
+def find_missing_sections(page_text: str) -> list[str]:
+    """Expected section keys with no SECTION marker in the content body."""
+    content = content_for_sections(page_text)
+    found = {key for key, _label, _body in iter_sections(content)}
+    return [key for key in SECTION_KEY_BY_NUM.values() if key not in found]
+
+
+def find_empty_critical_sections(page: dict[str, Any]) -> list[str]:
+    """Flag faq / schema (and empty marketIntelligence) when data didn't parse."""
+    empty: list[str] = []
+    faq = page.get("faq") or {}
+    if not faq.get("items"):
+        empty.append("faq")
+
+    meta = page.get("meta") or {}
+    if not meta.get("jsonLd") and not meta.get("description"):
+        empty.append("schema")
+
+    mi = page.get("marketIntelligence") or {}
+    if not mi.get("mostRequestedEngines") and not mi.get("liveFeed"):
+        # Marker may exist with Thin-Data omission note — still log as missing
+        empty.append("marketIntelligence")
+
+    return empty
+
+
+def collect_page_gaps(page_text: str, page: dict[str, Any]) -> list[str]:
+    gaps: list[str] = []
+    seen: set[str] = set()
+    for key in find_missing_sections(page_text) + find_empty_critical_sections(page):
+        if key not in seen:
+            seen.add(key)
+            gaps.append(key)
+    return gaps
+
+
+def write_missing_sections_log(
+    out_dir: Path, entries: list[tuple[str, list[str]]]
+) -> Path:
+    """
+    Write loging.txt listing pages with missing sections.
+    Format:
+      Jaguar XJ X351
+      missing faq
+    """
+    lines: list[str] = []
+    for page_name, missing in entries:
+        if not missing:
+            continue
+        lines.append(page_name)
+        for key in missing:
+            lines.append(f"missing {key}")
+        lines.append("")
+
+    if not lines:
+        lines = ["No missing sections.\n"]
+
+    log_path = out_dir / "loging.txt"
+    log_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
+    return log_path
 
 
 def main() -> int:
@@ -1335,11 +1514,13 @@ def main() -> int:
 
     text = input_path.read_text(encoding="utf-8-sig")
     text = strip_ignored_content(text)
+    text = normalize_section_headers(text)
     pages = split_pages(text)
     print(f"Found {len(pages)} page(s) in {input_path.name}")
 
     written = []
     used_slugs: set[str] = set()
+    missing_log_entries: list[tuple[str, list[str]]] = []
     for preamble, page_text, _ in pages:
         try:
             data = build_page(preamble, page_text)
@@ -1349,6 +1530,11 @@ def main() -> int:
 
         title = guess_page_title(preamble, data.get("hero", {}))
         print(f"- Parsing: {title}")
+
+        missing = collect_page_gaps(page_text, data)
+        missing_log_entries.append((title, missing))
+        if missing:
+            print(f"  ! missing sections: {', '.join(missing)}", file=sys.stderr)
 
         slug = data["meta"]["slug"] or slugify(title)
         if slug in used_slugs:
@@ -1367,6 +1553,8 @@ def main() -> int:
         written.append(out_path)
         print(f"  → {out_path.relative_to(ROOT)}")
 
+    log_path = write_missing_sections_log(out_dir, missing_log_entries)
+    print(f"Missing-section log → {log_path.relative_to(ROOT)}")
     print(f"Done. Wrote {len(written)} file(s).")
     return 0
 

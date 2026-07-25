@@ -1,24 +1,203 @@
 {
   "meta": {
-    "slug": "i-pace-drive-unit-guide",
-    "title": "I‑Pace Drive Unit Guide — The Complete UK EV Ownership Guide",
-    "titleCharCount": 60,
-    "description": "",
-    "descriptionCharCount": 0,
+    "slug": "i-pace",
+    "title": "Jaguar I-Pace Drive Unit Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 57,
+    "description": "Every Jaguar I-Pace drive unit — rear motor, front motor, and dual-motor system. 1 generation, real UK costs (£6,500–£9,000) and reliability data. Compare quotes from 15+ vetted Jaguar specialists today.",
+    "descriptionCharCount": 158,
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
+      "title": "Jaguar I-Pace Drive Unit Replacement Cost UK — Compare Quotes",
+      "description": "Every Jaguar I-Pace drive unit — rear motor, front motor, and dual-motor system. 1 generation, real UK costs (£6,500–£9,000) and reliability data. Compare quotes from 15+ vetted Jaguar specialists today.",
+      "type": "website",
+      "url": "https://jaguarengine.uk/i-pace/",
       "image": "",
-      "siteName": ""
+      "siteName": "jaguarengine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": ""
+      "card": "summary_large_image",
+      "title": "Jaguar I-Pace Drive Unit Replacement Cost UK — Compare Quotes",
+      "description": "Every Jaguar I-Pace drive unit — rear motor, front motor, and dual-motor system. 1 generation, real UK costs (£6,500–£9,000) and reliability data. Compare quotes from 15+ vetted Jaguar specialists today."
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "I-Pace",
+              "item": "https://jaguarengine.uk/i-pace/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar I-Pace Generations",
+          "description": "The generations of Jaguar I-Pace covered in this guide",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Jaguar I-Pace X590 (2018–2024)",
+              "url": "https://jaguarengine.uk/i-pace/x590/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar I-Pace Drive Unit Codes",
+          "description": "Complete database of I-Pace drive unit codes with reliability and cost data",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "E-Drive Rear (90kW) — Permanent Magnet Synchronous Motor",
+              "url": "https://jaguarengine.uk/engines/e-drive-rear/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "E-Drive Front (90kW) — Permanent Magnet Synchronous Motor",
+              "url": "https://jaguarengine.uk/engines/e-drive-front/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Dual Motor Total (294kW/394bhp) — Dual Permanent Magnet Synchronous",
+              "url": "https://jaguarengine.uk/engines/dual-motor-total/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Jaguar I-Pace drive unit replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A single rear drive unit costs £3,500–£5,000 reconditioned supply-only [JAG-QUOTE]; a complete dual-motor system is £6,500–£9,000 [JAG-QUOTE]. Labour adds £650–£1,300 depending on location. The 12V battery is a much cheaper £200–£400 fix."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which I-Pace drive unit is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The post-2021 rear motor and the front motor (all years) carry the cleanest record in our data. Early rear motors (2018–2020) have a documented bearing wear issue that was revised from 2021 onward. The 2021+ rear motor is the one to target."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which I-Pace should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No model year to avoid outright, but pre-2021 cars without Pivi Pro come with a significant caveat — the Touch Pro Duo infotainment is slow and laggy, and early rear motors carry the bearing wear risk. A 2018–2020 car at a £5,000–£8,000 discount is still a good buy if you accept the trade-offs."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the I-Pace battery degradation problem real?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "All EV batteries degrade — it's normal. The I-Pace's LG Chem 90kWh pack typically holds 85–95% state of health at 5–7 years, meaning 10–25 miles of range loss. Rapid degradation is rare and covered by the 8-year/100,000-mile battery warranty. Always ask for a battery health certificate before buying."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing an I-Pace drive unit?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the typical £6,500–£9,000 dual-motor replacement cost is well within the £18,000–£45,000 vehicle value (18–40% of value). This passes our 60% scrap threshold with room to spare. Battery replacement is the bigger economics question — not covered here, but a £15k–£20k battery on a £20k car is a tougher decision."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which I-Pace generation should I buy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "2021+ — the Pivi Pro infotainment upgrade and rear motor bearing revision make it the definitive I-Pace. A 2021 car costs £5,000–£8,000 more than a 2018 example, but the reduced hassle and better residuals justify the premium. If budget is tight, a 2019–2020 car with verified battery health is a good second choice."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my I-Pace drive unit code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The drive unit code is stamped on the motor housing (visible from underneath) and is also listed in the vehicle's documentation under 'motor type.' For the I-Pace, it's either E-Drive Front (90kW) or E-Drive Rear (90kW). If you're unsure, our specialists can identify it for you — reach out to our vetted network."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "I-Pace vs Tesla Model Y — which is more reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The I-Pace is more engaging to drive and has a more premium interior; the Model Y has better range, charging infrastructure, and tech. On reliability, the I-Pace's drive units are generally robust (post-2021), but the 12V battery is a known weak point. Tesla's build quality is more variable — the I-Pace is the more consistent ownership proposition, especially if you value driving dynamics over range."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "jaguarengine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "https://jaguarengine.uk/images/jaguar-engine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Jaguar I-Pace Drive Unit Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2000",
+            "highPrice": "11500"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Jaguar I-Pace UK Drive Unit Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for Jaguar I-Pace drive units and components, sourced from jaguarengine.uk's specialist marketplace activity. 40+ real enquiries tracked in 2025.",
+          "creator": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Jaguar I-Pace Drive Unit Replacement Cost UK — Compare Quotes",
+          "url": "https://jaguarengine.uk/i-pace/",
+          "author": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-07",
+          "dateModified": "2026-07-07"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "Jaguar • I‑Pace • 2018–2024 • 1 Generation • EV Drive Units",
@@ -367,10 +546,32 @@
       "Era",
       "Years",
       "Key Engines",
-      "Why Land Rover Changed",
+      "Why Jaguar Changed",
       "Worth Knowing"
     ],
-    "eras": []
+    "eras": [
+      {
+        "era": "Launch Era",
+        "years": "2018–2020",
+        "keyEngines": "Touch Pro Duo infotainment, original rear motor bearings, 90kWh LG Chem pack, 100kW DC charging",
+        "whyBmwChanged": "Jaguar's first production EV, developed under pressure to compete with Tesla Model X and Audi e-tron",
+        "worthKnowing": "Early cars suffer from laggy infotainment and rear motor bearing wear; these are well-documented and repairable, but the 2021 update addresses both"
+      },
+      {
+        "era": "Facelift / Pivi Pro Era",
+        "years": "2021–2024",
+        "keyEngines": "Pivi Pro infotainment, revised rear motor bearings, improved battery management, OTA updates, 100kW charging remains",
+        "whyBmwChanged": "Customer feedback-driven — the Touch Pro Duo system was widely criticised; Pivi Pro was Jaguar's response, along with bearing revisions from real-world failure data",
+        "worthKnowing": "This is the era to buy — Pivi Pro is genuinely quick, the battery management is better calibrated, and the rear motor bearing issue is resolved. The same 90kWh battery but better thermal management"
+      },
+      {
+        "era": "Production End",
+        "years": "2024",
+        "keyEngines": "Production ends ahead of Jaguar's EV-only relaunch in 2025",
+        "whyBmwChanged": "Jaguar's strategic pivot — the brand is moving upmarket with a new EV-only range starting in 2025; the I‑Pace is discontinued",
+        "worthKnowing": "The I‑Pace is the end of an era — the last Jaguar with any combustion-era platform, and the only Jaguar EV until the new range arrives"
+      }
+    ]
   },
   "whoShouldBuy": {
     "h2": "Who Should Buy a Jaguar I‑Pace?",
@@ -448,7 +649,48 @@
   },
   "faq": {
     "h2": "Jaguar I‑Pace Frequently Asked Questions",
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Jaguar I‑Pace drive unit replacement cost in the UK?",
+        "answer": "A single rear drive unit costs £3,500–£5,000 reconditioned supply-only [JAG-QUOTE]; a complete dual-motor system is £6,500–£9,000 [JAG-QUOTE]. Labour adds £650–£1,300 depending on location. The 12V battery is a much cheaper £200–£400 fix. Use our diagnostic calculator →"
+      },
+      {
+        "id": 2,
+        "question": "Which I‑Pace drive unit is the most reliable?",
+        "answer": "The post-2021 rear motor and the front motor (all years) carry the cleanest record in our data. Early rear motors (2018–2020) have a documented bearing wear issue that was revised from 2021 onward. The 2021+ rear motor is the one to target."
+      },
+      {
+        "id": 3,
+        "question": "Which I‑Pace should I avoid?",
+        "answer": "No model year to avoid outright, but pre-2021 cars without Pivi Pro come with a significant caveat — the Touch Pro Duo infotainment is slow and laggy, and early rear motors carry the bearing wear risk. A 2018–2020 car at a £5,000–£8,000 discount is still a good buy if you accept the trade-offs."
+      },
+      {
+        "id": 4,
+        "question": "Is the I‑Pace battery degradation problem real?",
+        "answer": "All EV batteries degrade — it's normal. The I‑Pace's LG Chem 90kWh pack typically holds 85–95% state of health at 5–7 years, meaning 10–25 miles of range loss. Rapid degradation is rare and covered by the 8-year/100,000-mile battery warranty. Always ask for a battery health certificate before buying."
+      },
+      {
+        "id": 5,
+        "question": "Is it worth replacing an I‑Pace drive unit?",
+        "answer": "Yes — the typical £6,500–£9,000 dual-motor replacement cost is well within the £18,000–£45,000 vehicle value (18–40% of value). This passes our 60% scrap threshold with room to spare. Battery replacement is the bigger economics question — not covered here, but a £15k–£20k battery on a £20k car is a tougher decision."
+      },
+      {
+        "id": 6,
+        "question": "Which I‑Pace generation should I buy?",
+        "answer": "2021+ — the Pivi Pro infotainment upgrade and rear motor bearing revision make it the definitive I‑Pace. A 2021 car costs £5,000–£8,000 more than a 2018 example, but the reduced hassle and better residuals justify the premium. If budget is tight, a 2019–2020 car with verified battery health is a good second choice."
+      },
+      {
+        "id": 7,
+        "question": "How do I find my I‑Pace drive unit code?",
+        "answer": "The drive unit code is stamped on the motor housing (visible from underneath) and is also listed in the vehicle's documentation under \"motor type.\" For the I‑Pace, it's either E‑Drive Front (90kW) or E‑Drive Rear (90kW). If you're unsure, our specialists can identify it for you — reach out to our vetted network."
+      },
+      {
+        "id": 8,
+        "question": "I‑Pace vs Tesla Model Y — which is more reliable?",
+        "answer": "The I‑Pace is more engaging to drive and has a more premium interior; the Model Y has better range, charging infrastructure, and tech. On reliability, the I‑Pace's drive units are generally robust (post-2021), but the 12V battery is a known weak point. Tesla's build quality is more variable — the I‑Pace is the more consistent ownership proposition, especially if you value driving dynamics over range. Read the full comparison →"
+      }
+    ]
   },
   "closingActionCards": {
     "h2": "Ready to Make a Decision?",

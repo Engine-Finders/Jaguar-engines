@@ -455,11 +455,67 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Timing chain tensioner wear — the defining risk of the AJ-V6"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "80,000–130,000 miles【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£1,500–£2,500 reconditioned, supply only【JAG-QUOTE】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "AJ20 / YB (AJ-V6) — the 2.0-litre V6【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring — classic and budget performance car season【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "London (18%), South East (16%), South West (12%)【PATTERN DATA】"
+      }
+    ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Jaguar X-Type 2.0 V6 engine replacement cost in the UK?",
+        "answer": "A reconditioned AJ20 / YB engine typically costs £1,500–£2,500 supply only, with used units available from £500–£1,200. Fitting adds £1,200–£1,800 depending on the workshop. Use our calculator for a figure specific to your X-Type."
+      },
+      {
+        "id": 2,
+        "question": "Is the Jaguar X-Type 2.0 V6 engine reliable?",
+        "answer": "The AJ-V6 is a robust engine, but it has well-documented weaknesses: timing chain tensioners (especially pre-2005), ignition coils, and plastic cooling system components. With regular oil changes (5W‑30) and preventative maintenance, the engine is capable of high mileage."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Jaguar X-Type 2.0 V6?",
+        "answer": "Timing chain tensioner wear (rattling on cold start), ignition coil failure (misfires), cooling system leaks (header tank, thermostat housing), and head gasket failure (if overheating occurs). The timing chain tensioner is the most critical concern."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Jaguar X-Type 2.0 V6 engine, or should I scrap the car?",
+        "answer": "X-Type values are modest — a well-kept example is often worth £1,000–£3,000. A £1,500–£2,500 reconditioned engine can be 50–80% of the vehicle's value — apply the Jaguar 60% scrap threshold. If the car is a cherished example with good bodywork, replacement may be worthwhile. Against a tired example with other issues, get a scrap valuation first."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Jaguar X-Type 2.0 V6 engine code?",
+        "answer": "The engine code is AJ20 or YB (AJ-V6) — it's the only 2.0-litre V6 used in the X-Type. You can find it on the VIN plate, in the vehicle documentation, or on a label on the engine itself. Production ran from 2001 to 2009."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the AJ-V6 timing chain tensioner, or does the engine need replacement?",
+        "answer": "The timing chain tensioner can be replaced preventatively — it's a wear item. Replacement costs £600–£1,500. If the chain fails and jumps timing, the engine is typically destroyed. A preventative tensioner replacement is far cheaper than a full engine replacement (£1,500+). At the first sign of rattling from the front of the engine, book an inspection immediately. Jaguar Service Bulletin SWE-18-01 addressed some timing chain concerns in AJ-V6 variants."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "",

@@ -524,7 +524,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Water pump failure (pre-2015 models) — can fail within 20,000 miles and destroy the engine if ignored"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "40,000–80,000 miles【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£4,500–£7,500 reconditioned, supply only【JAG-QUOTE】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "AJ126 (306PS)【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Summer — cooling system issues become more apparent【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (18%), London (15%), South West (10%)【PATTERN DATA】"
+      }
+    ]
   },
   "faq": {
     "items": [

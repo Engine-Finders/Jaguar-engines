@@ -1,24 +1,225 @@
 {
   "meta": {
     "slug": "xk",
-    "title": "XK Engines — The Complete UK Guide",
-    "titleCharCount": 34,
-    "description": "",
-    "descriptionCharCount": 0,
+    "title": "XK Engine Replacement Cost UK --- Compare Quotes",
+    "titleCharCount": 48,
+    "description": "Every XK engine — AJ27, AJ34 and AJ133 V8s. 2 generations, real UK costs and reliability data. Compare prices from 15+ vetted Jaguar specialists today.",
+    "descriptionCharCount": 150,
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
+      "title": "XK Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every XK engine — AJ27, AJ34 and AJ133 V8s. 2 generations, real UK costs and reliability data. Compare prices from 15+ vetted Jaguar specialists today.",
+      "type": "website",
+      "url": "https://jaguarengine.uk/xk/",
       "image": "",
-      "siteName": ""
+      "siteName": "jaguarengine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": ""
+      "card": "summary_large_image",
+      "title": "XK Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every XK engine — AJ27, AJ34 and AJ133 V8s. 2 generations, real UK costs and reliability data. Compare prices from 15+ vetted Jaguar specialists today."
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "XK",
+              "item": "https://jaguarengine.uk/xk/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "XK Generations",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "X100 (1996–2006)",
+              "url": "https://jaguarengine.uk/xk/x100/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "X150 (2006–2014)",
+              "url": "https://jaguarengine.uk/xk/x150/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "XK Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "AJ27 4.0 V8",
+              "url": "https://jaguarengine.uk/engines/aj27/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "AJ27S 4.0 Supercharged V8",
+              "url": "https://jaguarengine.uk/engines/aj27s/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "AJ34 4.2 V8",
+              "url": "https://jaguarengine.uk/engines/aj34/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "AJ34S 4.2 Supercharged V8",
+              "url": "https://jaguarengine.uk/engines/aj34s/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "AJ133 5.0 V8",
+              "url": "https://jaguarengine.uk/engines/aj133/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "AJ133S 5.0 Supercharged V8",
+              "url": "https://jaguarengine.uk/engines/aj133s/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does an XK engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "An XK engine replacement costs between £3,000 and £10,000 supply-only depending on engine choice — the 4.0 AJ27 sits at the lower end (£3,000–£5,500), while the 5.0 AJ133 supercharged sits at the top (£6,500–£10,000) [JAG-QUOTE]. Labour adds approximately 12–18 hours at £65–£95/hr for an independent specialist. Use our diagnostic calculator to get a personalised estimate for your specific XK."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which XK engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The AJ133 5.0 V8 (2009–2014) is the most reliable XK engine. The 2009 facelift brought a revised timing chain tensioner design that resolved the weakness of earlier AJ-V8s, and the 5.0-litre unit has proven robust across the X150 range. The naturally aspirated 385bhp version is the sweet spot — simpler than the supercharged variant with fewer potential failure points."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which XK engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Avoid the early AJ27 4.0 V8 (1996–2000) without documented history — these engines suffer from bore wear (blue smoke on throttle, misfires) and timing chain tensioner issues. If you're set on an X100, buy a 2003+ 4.2 car — the AJ34 is significantly more robust. For the X150, all engines are solid, but prioritise a 2009+ 5.0 car for the best reliability."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does the XK have timing chain problems?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — pre-2009 AJ-V8 engines (AJ27, early AJ34) have a documented timing chain tensioner weakness. Cold-start rattle is the early warning sign. If you hear it, book an inspection immediately — ignoring it can cause catastrophic engine failure. Post-2009 5.0 AJ133 engines have a revised design and are much more robust."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing an XK engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It depends entirely on the car's value. A 2014 XKR-S worth £30,000–£35,000 with a £6,500–£10,000 recon cost sits at 20–30% of vehicle value — absolutely worth replacing. A 1998 XK8 worth £4,000–£5,000 facing a £5,000+ recon cost sits at over 100% of vehicle value — not worth it. If replacement cost exceeds roughly 60% of your car's market value, get a scrap valuation before committing. Use our diagnostic calculator for a personalised assessment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which XK should I buy — X100 or X150?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Buy an X150 (2009–2014) with the 5.0 naturally aspirated V8 — it's the best-looking generation, the most reliable engine, and values are still £10,000–£20,000, which is remarkably low for a car of this quality. The X100 is a beautiful classic but the economics are tighter — only buy one if you're prepared for classic-car ownership costs."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my XK engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Your XK's engine code can be found in three places: (1) on the VIN plate inside the driver's door sill — the engine code is part of the VIN; (2) on the engine block itself — stamped on the front of the AJ-V8 block; (3) in your service documentation or V5C logbook. Our 15+ vetted Jaguar specialists can also identify your engine if you're unsure."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "XK vs XKR — which is more reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Both use the same AJ-V8 engine family — the XKR simply adds a supercharger. The naturally aspirated XK has fewer components to fail (no supercharger, no intercooler), so it's technically the more reliable option. However, the XKR's supercharged V8 is robust when maintained — 2009+ examples with the 5.0 AJ133S have proven very reliable. Our honest advice: buy the XKR if you want the performance; the reliability difference is minor. Read the full comparison: XK vs XKR → /compare/xk-vs-xkr/"
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "jaguarengine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "[logo asset URL]",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "XK Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "3000",
+            "highPrice": "10000"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "XK UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for XK engines, sourced from jaguarengine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "XK Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://jaguarengine.uk/xk/",
+          "author": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-07",
+          "dateModified": "2026-07-07"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "Jaguar • XK • 1996–2014 • 2 Generations • AJ-V8",
@@ -583,7 +784,48 @@
   },
   "faq": {
     "h2": "XK Frequently Asked Questions",
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does an XK engine replacement cost in the UK?",
+        "answer": "An XK engine replacement costs between £3,000 and £10,000 supply-only depending on engine choice — the 4.0 AJ27 sits at the lower end (£3,000–£5,500), while the 5.0 AJ133 supercharged sits at the top (£6,500–£10,000) [JAG-QUOTE]. Labour adds approximately 12–18 hours at £65–£95/hr for an independent specialist. Use our diagnostic calculator to get a personalised estimate for your specific XK."
+      },
+      {
+        "id": 2,
+        "question": "Which XK engine is the most reliable?",
+        "answer": "The AJ133 5.0 V8 (2009–2014) is the most reliable XK engine. The 2009 facelift brought a revised timing chain tensioner design that resolved the weakness of earlier AJ-V8s, and the 5.0-litre unit has proven robust across the X150 range. The naturally aspirated 385bhp version is the sweet spot — simpler than the supercharged variant with fewer potential failure points."
+      },
+      {
+        "id": 3,
+        "question": "Which XK engine should I avoid?",
+        "answer": "Avoid the early AJ27 4.0 V8 (1996–2000) without documented history — these engines suffer from bore wear (blue smoke on throttle, misfires) and timing chain tensioner issues. If you're set on an X100, buy a 2003+ 4.2 car — the AJ34 is significantly more robust. For the X150, all engines are solid, but prioritise a 2009+ 5.0 car for the best reliability."
+      },
+      {
+        "id": 4,
+        "question": "Does the XK have timing chain problems?",
+        "answer": "Yes — pre-2009 AJ-V8 engines (AJ27, early AJ34) have a documented timing chain tensioner weakness. Cold-start rattle is the early warning sign. If you hear it, book an inspection immediately — ignoring it can cause catastrophic engine failure. Post-2009 5.0 AJ133 engines have a revised design and are much more robust."
+      },
+      {
+        "id": 5,
+        "question": "Is it worth replacing an XK engine?",
+        "answer": "It depends entirely on the car's value. A 2014 XKR-S worth £30,000–£35,000 with a £6,500–£10,000 recon cost sits at 20–30% of vehicle value — absolutely worth replacing. A 1998 XK8 worth £4,000–£5,000 facing a £5,000+ recon cost sits at over 100% of vehicle value — not worth it. If replacement cost exceeds roughly 60% of your car's market value, get a scrap valuation before committing. Use our diagnostic calculator for a personalised assessment."
+      },
+      {
+        "id": 6,
+        "question": "Which XK should I buy — X100 or X150?",
+        "answer": "Buy an X150 (2009–2014) with the 5.0 naturally aspirated V8 — it's the best-looking generation, the most reliable engine, and values are still £10,000–£20,000, which is remarkably low for a car of this quality. The X100 is a beautiful classic but the economics are tighter — only buy one if you're prepared for classic-car ownership costs."
+      },
+      {
+        "id": 7,
+        "question": "How do I find my XK engine code?",
+        "answer": "Your XK's engine code can be found in three places: (1) on the VIN plate inside the driver's door sill — the engine code is part of the VIN; (2) on the engine block itself — stamped on the front of the AJ-V8 block; (3) in your service documentation or V5C logbook. Our 15+ vetted Jaguar specialists can also identify your engine if you're unsure."
+      },
+      {
+        "id": 8,
+        "question": "XK vs XKR — which is more reliable?",
+        "answer": "Both use the same AJ-V8 engine family — the XKR simply adds a supercharger. The naturally aspirated XK has fewer components to fail (no supercharger, no intercooler), so it's technically the more reliable option. However, the XKR's supercharged V8 is robust when maintained — 2009+ examples with the 5.0 AJ133S have proven very reliable. Our honest advice: buy the XKR if you want the performance; the reliability difference is minor. Read the full comparison: XK vs XKR →"
+      }
+    ]
   },
   "closingActionCards": {
     "h2": "Ready to Make a Decision?",

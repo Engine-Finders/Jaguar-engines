@@ -498,7 +498,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Timing chain tensioner failure — the most critical weak point on the AJ-V8, with rattling noises as the key warning sign"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "50,000–100,000 miles【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£4,000–£5,500 reconditioned, supply only【JAG-QUOTE】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "AJ34 (AJ34S)【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring / Summer — classic car season【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (18%), London (15%), South West (10%)【PATTERN DATA】"
+      }
+    ]
   },
   "faq": {
     "items": [

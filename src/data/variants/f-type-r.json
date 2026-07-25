@@ -7,18 +7,18 @@
     "descriptionCharCount": 159,
     "canonical": "https://jaguarengine.uk/f-type/r/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "F-Type R Engine Replacement Cost UK — Compare Quotes",
+      "description": "Jaguar F-Type R 5.0 supercharged V8 — real UK costs, timing chain & cooling system insight, and honest reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
+      "type": "website",
+      "url": "https://jaguarengine.uk/f-type/r/",
+      "image": "https://jaguarengine.uk/images/jaguar/hero/f-type-r.jpg",
+      "siteName": "JaguarEngine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "F-Type R Engine Replacement Cost UK — Compare Quotes",
+      "description": "Jaguar F-Type R 5.0 supercharged V8 — real UK costs, timing chain & cooling system insight, and honest reliability data.",
+      "image": "https://jaguarengine.uk/images/jaguar/hero/f-type-r.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",

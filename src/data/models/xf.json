@@ -1,24 +1,216 @@
 {
   "meta": {
     "slug": "xf",
-    "title": "XF Engines — The Complete UK Guide",
-    "titleCharCount": 34,
-    "description": "",
-    "descriptionCharCount": 0,
+    "title": "XF Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 48,
+    "description": "Every XF engine — AJ126 V6, Ingenium diesel and petrol. 2 generations, real UK costs and reliability data. Compare prices from 15+ vetted Jaguar specialists today.",
+    "descriptionCharCount": 156,
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
+      "title": "XF Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every XF engine — AJ126 V6, Ingenium diesel and petrol. 2 generations, real UK costs and reliability data. Compare prices from 15+ vetted Jaguar specialists today.",
+      "type": "website",
+      "url": "https://jaguarengine.uk/xf/",
       "image": "",
-      "siteName": ""
+      "siteName": "jaguarengine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": ""
+      "card": "summary_large_image",
+      "title": "XF Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every XF engine — AJ126 V6, Ingenium diesel and petrol. 2 generations, real UK costs and reliability data. Compare prices from 15+ vetted Jaguar specialists today."
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "XF",
+              "item": "https://jaguarengine.uk/xf/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "XF Generations",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "X250 (2008-2015)",
+              "url": "https://jaguarengine.uk/xf/x250/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "X260 (2015-2024)",
+              "url": "https://jaguarengine.uk/xf/x260/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "XF Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "AJ126 3.0 V6 SC",
+              "url": "https://jaguarengine.uk/engines/aj126/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "276DT 2.7 TDV6",
+              "url": "https://jaguarengine.uk/engines/276dt/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "306DT 3.0 TDV6",
+              "url": "https://jaguarengine.uk/engines/306dt/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "AJ200D / 204DTD Ingenium Diesel",
+              "url": "https://jaguarengine.uk/engines/aj200d/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "AJ200P / 204PT Ingenium Petrol",
+              "url": "https://jaguarengine.uk/engines/aj200p/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does an XF engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "An XF engine replacement costs £3,000-£5,800 for the Ingenium range (X260) and £4,500-£7,500 for the AJ126 V6 (X250) — supply-only, plus 10-20 hours of labour at £65-£95/hr independent rates. Total fitted cost typically lands at £4,000-£9,500 depending on engine and generation. Use our diagnostic calculator for a personalised estimate."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which XF engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The AJ200P / 204PT petrol Ingenium is the most reliable XF engine in our data — the water pump is the only meaningful weak point, and replacement costs are sensible (£400-£800). The diesel Ingenium (AJ200D) is also solid from 2019 onward, but the petrol has the cleaner reliability record overall."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which XF engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No engine outright, but the AJ126 3.0 V6 Supercharged (X250, 2008-2015) carries two genuine caveats: cooling system failures (plastic crossover pipes crack with age) and pre-2013 timing chain tensioner wear. Buy a 2013+ car with documented coolant system work, or walk away. The pre-2019 diesel Ingenium also carries a timing chain tensioner risk — buy 2019+."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the XF timing chain problem real?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — but it depends on the engine. The AJ126 V6 (X250, pre-2013) and AJ200D diesel Ingenium (X260, pre-2019) both have documented timing chain tensioner issues. The revised 2013 chain tensioner on the AJ126 and the 2019 redesign on the Ingenium diesel largely resolved the problem. Cold-start rattle is the primary warning — investigate immediately."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing an XF engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It depends entirely on generation and vehicle value. An X260 replacement (£3,000-£5,800) against an £8,000-£25,000 car sits at 30-50% — safe. An X250 AJ126 replacement (£4,500-£7,500) against a £4,000-£12,000 car can approach 60-80% on sub-£7k examples — borderline. If replacement cost exceeds roughly 60% of what the car is worth, get a scrap valuation before committing."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which XF generation should I buy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Buy a 2019+ X260 with the AJ200P petrol Ingenium. It's the cleanest reliability profile in the XF range, replacement costs are sensible, and you avoid the pre-2019 diesel timing chain caveat entirely. If you're considering an X250, buy a 2013+ car with documented cooling system work and be prepared for V6 running costs."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my XF engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Your XF's engine code is stamped on the engine block (visible near the front), on the VIN plate (character 4-7), and in your vehicle documentation. For X260, look for '204DTD' (diesel) or '204PT' (petrol) on the block. For X250, look for 'AJ126' (V6 petrol) or the TDV6 codes. Our diagnostic calculator can identify your engine from your VIN or registration."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "XF vs XE — which is more reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Both carry a Safe verdict in our data, but for different reasons. The XF X260 benefits from the modern Ingenium range — the petrol is genuinely reliable, and the diesel is improved from 2019 onward. The XE is the more affordable entry point, but the XF offers better refinement and a more spacious cabin. Read our full comparison here: /compare/xf-vs-xe/"
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "jaguarengine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "https://jaguarengine.uk/logo.png",
+          "sameAs": []
+        },
+        {
+          "@type": "Service",
+          "serviceType": "XF Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "1500",
+            "highPrice": "11000"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "XF UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for XF engines, sourced from jaguarengine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "XF Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://jaguarengine.uk/xf/",
+          "author": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-07",
+          "dateModified": "2026-07-07"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "Jaguar • XF • 2008-2024 • 2 Generations • AJ126 V6 • AJ200D Ingenium • AJ200P",
@@ -606,7 +798,48 @@
   },
   "faq": {
     "h2": "XF Frequently Asked Questions",
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does an XF engine replacement cost in the UK?",
+        "answer": "An XF engine replacement costs £3,000-£5,800 for the Ingenium range (X260) and £4,500-£7,500 for the AJ126 V6 (X250) — supply-only, plus 10-20 hours of labour at £65-£95/hr independent rates [JAG-QUOTE]. Total fitted cost typically lands at £4,000-£9,500 depending on engine and generation. Use our diagnostic calculator above for a personalised estimate."
+      },
+      {
+        "id": 2,
+        "question": "Which XF engine is the most reliable?",
+        "answer": "The AJ200P / 204PT petrol Ingenium is the most reliable XF engine in our data — the water pump is the only meaningful weak point, and replacement costs are sensible (£400-£800). The diesel Ingenium (AJ200D) is also solid from 2019 onward, but the petrol has the cleaner reliability record overall."
+      },
+      {
+        "id": 3,
+        "question": "Which XF engine should I avoid?",
+        "answer": "No engine outright, but the AJ126 3.0 V6 Supercharged (X250, 2008-2015) carries two genuine caveats: cooling system failures (plastic crossover pipes crack with age) and pre-2013 timing chain tensioner wear. Buy a 2013+ car with documented coolant system work, or walk away. The pre-2019 diesel Ingenium also carries a timing chain tensioner risk — buy 2019+."
+      },
+      {
+        "id": 4,
+        "question": "Is the XF timing chain problem real?",
+        "answer": "Yes — but it depends on the engine. The AJ126 V6 (X250, pre-2013) and AJ200D diesel Ingenium (X260, pre-2019) both have documented timing chain tensioner issues. The revised 2013 chain tensioner on the AJ126 and the 2019 redesign on the Ingenium diesel largely resolved the problem. Cold-start rattle is the primary warning — investigate immediately."
+      },
+      {
+        "id": 5,
+        "question": "Is it worth replacing an XF engine?",
+        "answer": "It depends entirely on generation and vehicle value. An X260 replacement (£3,000-£5,800) against an £8,000-£25,000 car sits at 30-50% — ✅ safe. An X250 AJ126 replacement (£4,500-£7,500) against a £4,000-£12,000 car can approach 60-80% on sub-£7k examples — ⚠️ borderline. If replacement cost exceeds roughly 60% of what the car is worth, get a scrap valuation before committing."
+      },
+      {
+        "id": 6,
+        "question": "Which XF generation should I buy?",
+        "answer": "Buy a 2019+ X260 with the AJ200P petrol Ingenium. It's the cleanest reliability profile in the XF range, replacement costs are sensible, and you avoid the pre-2019 diesel timing chain caveat entirely. If you're considering an X250, buy a 2013+ car with documented cooling system work and be prepared for V6 running costs."
+      },
+      {
+        "id": 7,
+        "question": "How do I find my XF engine code?",
+        "answer": "Your XF's engine code is stamped on the engine block (visible near the front), on the VIN plate (character 4-7), and in your vehicle documentation. For X260, look for \"204DTD\" (diesel) or \"204PT\" (petrol) on the block. For X250, look for \"AJ126\" (V6 petrol) or the TDV6 codes. Not sure? Our diagnostic calculator can identify your engine from your VIN or registration."
+      },
+      {
+        "id": 8,
+        "question": "XF vs XE — which is more reliable?",
+        "answer": "Both carry a ✅ Safe verdict in our data, but for different reasons. The XF X260 benefits from the modern Ingenium range — the petrol is genuinely reliable, and the diesel is improved from 2019 onward. The XE is the more affordable entry point, but the XF offers better refinement and a more spacious cabin. Read our full comparison here: XF vs XE — Which is More Reliable?"
+      }
+    ]
   },
   "closingActionCards": {
     "h2": "Ready to Make a Decision?",

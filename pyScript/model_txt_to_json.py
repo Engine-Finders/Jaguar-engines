@@ -32,8 +32,24 @@ PAGE_START_RE = re.compile(
     r"^SECTION\s+1\s*[:—\-]\s*.*?[—\-]\s*<ModelHero>\s*.*$",
     re.MULTILINE | re.IGNORECASE,
 )
+# Match headers like:
+#   JAGUAR XF — METADATA & SCHEMA
+#   Jaguar E-Pace — Metadata & Schema
+#   … METADATA & SCHEMA PACKAGE
 META_START_RE = re.compile(
-    r"^(?P<title>.+?)\s+[—\-]+\s+METADATA\s*&\s*SCHEMA PACKAGE\s*$",
+    r"^(?P<title>.+?)\s+[—\-]+\s+METADATA\s*&\s*SCHEMA(?:\s+PACKAGE)?\s*$",
+    re.MULTILINE | re.IGNORECASE,
+)
+# Fallback when meta starts with no model header (XE / F-Type / XK style):
+#   PART A — META TITLE
+#   META TITLE
+#   META TITLE (50–60 characters)
+META_FALLBACK_START_RE = re.compile(
+    r"^(?:PART\s+A\s*[—\-]\s*)?META\s+TITLE(?:\s*\([^)]*\))?\s*$",
+    re.MULTILINE | re.IGNORECASE,
+)
+OG_LINE_RE = re.compile(
+    r"^(?P<key>(?:og|twitter):[A-Za-z0-9_:]+)\s*[=:]\s*(?P<val>.+)$",
     re.MULTILINE | re.IGNORECASE,
 )
 # Match by section number + component tag (label text varies by model)
@@ -280,7 +296,9 @@ def slug_from_url(url: str) -> str:
     path = urlparse(url).path.strip("/")
     if not path:
         return "page"
-    return path.split("/")[0]
+    parts = [p for p in path.split("/") if p]
+    # Prefer leaf segment so /jaguar/s-type/ → s-type (not jaguar)
+    return parts[-1]
 
 
 def parse_hero(body: str) -> dict[str, Any]:
@@ -983,7 +1001,8 @@ def parse_faq(body: str) -> dict[str, Any]:
         h2 = clean(lines[0].split(":", 1)[1])
         lines = lines[1:]
     items = []
-    q_re = re.compile(r"^(\d+)\.\s+(.*)$")
+    # Jaguar TXT uses "Q1: …"; some older exports use "1. …"
+    q_re = re.compile(r"^(?:Q\s*)?(\d+)\s*[.:]\s*(.*)$", re.IGNORECASE)
     current: dict[str, Any] | None = None
     for ln in lines:
         m = q_re.match(ln)
@@ -1048,6 +1067,10 @@ COMPONENT_PARSERS = {
     "FAQAccordion": ("faq", parse_faq),
     "ClosingActionCards": ("closingActionCards", parse_closing),
 }
+
+# Expected section keys (JSON field names) for missing-section logging
+EXPECTED_SECTION_KEYS = [key for key, _ in COMPONENT_PARSERS.values()]
+COMPONENT_TO_KEY = {comp: key for comp, (key, _) in COMPONENT_PARSERS.items()}
 
 
 def empty_page_skeleton() -> dict[str, Any]:
@@ -1124,38 +1147,167 @@ def empty_page_skeleton() -> dict[str, Any]:
     }
 
 
+def _extract_meta_text_field(meta_text: str, field_name: str) -> tuple[str, int]:
+    """
+    Pull META TITLE / META DESCRIPTION value + optional character count.
+    Handles PART A wrappers, 'text' labels, and varied count lines.
+    """
+    header = re.search(
+        rf"(?:PART\s+[AB]\s*[—\-]\s*)?META\s+{field_name}"
+        rf"(?:\s*\([^)]*\))?\s*:?\s*",
+        meta_text,
+        re.I,
+    )
+    if not header:
+        return "", 0
+
+    after = meta_text[header.end() :]
+    value = ""
+    count = 0
+    for ln in after.splitlines():
+        cl = clean(ln)
+        if not cl or re.fullmatch(r"_+", cl) or cl == "________________":
+            if value:
+                break
+            continue
+        low = cl.lower()
+        if low in {"text", "html", "json", "yaml", "script"}:
+            continue
+        if low in {"meta title:", "meta description:", "meta title", "meta description"}:
+            continue
+        if low.startswith("part ") and value:
+            break
+        if low.startswith("open graph") or low.startswith("json-ld") or low.startswith(
+            "schema markup"
+        ):
+            break
+        if low.startswith("meta description") and field_name.lower() == "title":
+            break
+        if low.startswith("open graph") or (
+            field_name.lower() == "description"
+            and (low.startswith("part c") or low.startswith("part d"))
+        ):
+            break
+
+        cm = re.search(r"(?:character count|length)\s*:?\s*(\d+)", cl, re.I)
+        if not cm:
+            cm = re.search(r"\((\d+)\s*characters?", cl, re.I)
+        if cm and ("character" in low or "length" in low or cl.startswith("(")):
+            count = int(cm.group(1))
+            if value:
+                break
+            continue
+        if low.startswith("* ") and value:
+            # annotation bullets after the value (XJ style)
+            cm = re.search(r"(?:character count|length)\s*:?\s*(\d+)", cl, re.I)
+            if cm:
+                count = int(cm.group(1))
+            continue
+        if not value:
+            value = cl
+            continue
+        # Title/description are single-line; stop once we have one.
+        break
+
+    if value and not count:
+        count = len(value)
+    return value, count
+
+
+def _parse_og_lines(meta_text: str) -> dict[str, str]:
+    """Parse `og:title = …` / `og:title: …` / twitter equivalents."""
+    tags: dict[str, str] = {}
+    for m in OG_LINE_RE.finditer(meta_text):
+        key = m.group("key").lower()
+        val = clean(m.group("val"))
+        # Skip placeholder image notes
+        if val.startswith("[") and val.endswith("]"):
+            val = ""
+        tags[key] = val
+    return tags
+
+
+def _extract_balanced_json_object(text: str, at: int) -> str | None:
+    """Return the JSON object that contains index `at` (walk back to its '{')."""
+    i = text.rfind("{", 0, at + 1)
+    if i < 0:
+        return None
+    depth = 0
+    in_str = False
+    escape = False
+    for j in range(i, len(text)):
+        ch = text[j]
+        if in_str:
+            if escape:
+                escape = False
+            elif ch == "\\":
+                escape = True
+            elif ch == '"':
+                in_str = False
+            continue
+        if ch == '"':
+            in_str = True
+        elif ch == "{":
+            depth += 1
+        elif ch == "}":
+            depth -= 1
+            if depth == 0:
+                return text[i : j + 1]
+    return None
+
+
+def _parse_json_ld(meta_text: str) -> dict[str, Any]:
+    candidates: list[str] = []
+    for sm in re.finditer(
+        r"<script[^>]*type=[\"']application/ld\+json[\"'][^>]*>(.*?)</script>",
+        meta_text,
+        re.I | re.S,
+    ):
+        raw = sm.group(1).strip()
+        # Ignore prose mentions like: one <script type="application/ld+json"> block)
+        if raw.startswith("{"):
+            candidates.append(raw)
+
+    if not candidates:
+        ctx = re.search(r'["\']@context["\']', meta_text)
+        if ctx:
+            raw = _extract_balanced_json_object(meta_text, ctx.start())
+            if raw:
+                candidates.append(raw)
+
+    for raw in candidates:
+        try:
+            data = json.loads(raw)
+            if isinstance(data, dict):
+                return data
+        except json.JSONDecodeError:
+            cleaned = re.sub(r",\s*}", "}", raw)
+            cleaned = re.sub(r",\s*]", "]", cleaned)
+            try:
+                data = json.loads(cleaned)
+                if isinstance(data, dict):
+                    return data
+            except json.JSONDecodeError as e:
+                print(f"  ! warning: could not parse JSON-LD ({e})", file=sys.stderr)
+    return {}
+
+
 def parse_meta_block(meta_text: str) -> dict[str, Any]:
     meta = empty_page_skeleton()["meta"]
 
-    tm = re.search(
-        r"META TITLE.*?\n(?:text\n)?(?P<title>.+?)\n(?:\((?P<count>\d+)\s*characters?\)|)",
-        meta_text,
-        re.I | re.S,
-    )
-    if tm:
-        title = clean(tm.group("title"))
-        if title.lower() != "text":
-            meta["title"] = title
-        if tm.group("count"):
-            meta["titleCharCount"] = int(tm.group("count"))
-        else:
-            meta["titleCharCount"] = len(meta["title"])
+    title, title_count = _extract_meta_text_field(meta_text, "TITLE")
+    if title:
+        meta["title"] = title
+        meta["titleCharCount"] = title_count or len(title)
 
-    dm = re.search(
-        r"META DESCRIPTION.*?\n(?:text\n)?(?P<desc>.+?)\n(?:\((?P<count>\d+)\s*characters?\)|)",
-        meta_text,
-        re.I | re.S,
-    )
-    if dm:
-        desc = clean(dm.group("desc"))
-        if desc.lower() != "text":
-            meta["description"] = desc
-        if dm.group("count"):
-            meta["descriptionCharCount"] = int(dm.group("count"))
-        else:
-            meta["descriptionCharCount"] = len(meta["description"])
+    desc, desc_count = _extract_meta_text_field(meta_text, "DESCRIPTION")
+    if desc:
+        meta["description"] = desc
+        meta["descriptionCharCount"] = desc_count or len(desc)
 
     tags = {m.group("key"): m.group("val") for m in META_TAG_RE.finditer(meta_text)}
+    tags.update(_parse_og_lines(meta_text))
+
     meta["openGraph"] = {
         "title": tags.get("og:title", meta["title"]),
         "description": tags.get("og:description", meta["description"]),
@@ -1172,23 +1324,7 @@ def parse_meta_block(meta_text: str) -> dict[str, Any]:
     if meta["openGraph"]["url"]:
         meta["slug"] = slug_from_url(meta["openGraph"]["url"])
 
-    jm = re.search(
-        r"<script[^>]*type=[\"']application/ld\+json[\"'][^>]*>\s*(\{.*?\})\s*</script>",
-        meta_text,
-        re.I | re.S,
-    )
-    if jm:
-        raw = jm.group(1)
-        try:
-            meta["jsonLd"] = json.loads(raw)
-        except json.JSONDecodeError:
-            cleaned = re.sub(r",\s*}", "}", raw)
-            cleaned = re.sub(r",\s*]", "]", cleaned)
-            try:
-                meta["jsonLd"] = json.loads(cleaned)
-            except json.JSONDecodeError as e:
-                print(f"  ! warning: could not parse JSON-LD ({e})", file=sys.stderr)
-                meta["jsonLd"] = {}
+    meta["jsonLd"] = _parse_json_ld(meta_text)
     return meta
 
 
@@ -1314,10 +1450,24 @@ def split_pages(text: str) -> list[tuple[str, str]]:
 
 
 def split_content_and_meta(page_text: str) -> tuple[str, str]:
-    m = META_START_RE.search(page_text)
-    if not m:
+    """
+    Split page body from trailing metadata/schema block.
+
+    Accepts:
+      Model — METADATA & SCHEMA
+      Model — Metadata & Schema Package
+      PART A — META TITLE / META TITLE  (no header)
+    Prefers the latest match so content notes mentioning 'meta' don't win.
+    """
+    starts: list[int] = []
+    for m in META_START_RE.finditer(page_text):
+        starts.append(m.start())
+    for m in META_FALLBACK_START_RE.finditer(page_text):
+        starts.append(m.start())
+    if not starts:
         return page_text, ""
-    return page_text[: m.start()], page_text[m.end() :]
+    start = max(starts)
+    return page_text[:start], page_text[start:]
 
 
 def iter_sections(content: str) -> list[tuple[str, str, str]]:
@@ -1328,6 +1478,74 @@ def iter_sections(content: str) -> list[tuple[str, str, str]]:
         end = matches[i + 1].start() if i + 1 < len(matches) else len(content)
         sections.append((m.group("component"), m.group("label"), content[start:end]))
     return sections
+
+
+def find_missing_sections(page_text: str) -> list[str]:
+    """Return expected JSON section keys that have no SECTION marker on this page."""
+    content, _meta_text = split_content_and_meta(page_text)
+    found_keys = set()
+    for component, _label, _body in iter_sections(content):
+        key = COMPONENT_TO_KEY.get(component)
+        if key:
+            found_keys.add(key)
+    return [key for key in EXPECTED_SECTION_KEYS if key not in found_keys]
+
+
+def find_empty_critical_sections(page: dict[str, Any]) -> list[str]:
+    """
+    Flag faq / schema when the section marker existed but parsed data is empty.
+    Logged as: missing faq / missing schema
+    """
+    empty: list[str] = []
+    faq = page.get("faq") or {}
+    if not faq.get("items"):
+        empty.append("faq")
+
+    meta = page.get("meta") or {}
+    og = meta.get("openGraph") or {}
+    schema_ok = bool(meta.get("jsonLd")) or bool(meta.get("description")) or bool(
+        og.get("url")
+    )
+    if not schema_ok:
+        empty.append("schema")
+    return empty
+
+
+def collect_page_gaps(page_text: str, page: dict[str, Any]) -> list[str]:
+    """Marker-missing sections + empty faq/schema (deduped, stable order)."""
+    gaps: list[str] = []
+    seen: set[str] = set()
+    for key in find_missing_sections(page_text) + find_empty_critical_sections(page):
+        if key not in seen:
+            seen.add(key)
+            gaps.append(key)
+    return gaps
+
+
+def write_missing_sections_log(
+    out_dir: Path, entries: list[tuple[str, list[str]]]
+) -> Path:
+    """
+    Write loging.txt listing pages with missing sections.
+    Format:
+      jaguar xe
+      missing faq
+    """
+    lines: list[str] = []
+    for page_name, missing in entries:
+        if not missing:
+            continue
+        lines.append(page_name)
+        for key in missing:
+            lines.append(f"missing {key}")
+        lines.append("")
+
+    if not lines:
+        lines = ["No missing sections.\n"]
+
+    log_path = out_dir / "loging.txt"
+    log_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
+    return log_path
 
 
 def build_page(page_name: str, page_text: str) -> dict[str, Any]:
@@ -1415,6 +1633,7 @@ def main() -> int:
 
     written = []
     used_slugs: set[str] = set()
+    missing_log_entries: list[tuple[str, list[str]]] = []
     for name, page_text in pages:
         print(f"- Parsing: {name}")
         try:
@@ -1422,6 +1641,11 @@ def main() -> int:
         except Exception as e:
             print(f"  ! failed page '{name}': {e}", file=sys.stderr)
             continue
+
+        missing = collect_page_gaps(page_text, data)
+        missing_log_entries.append((name, missing))
+        if missing:
+            print(f"  ! missing sections: {', '.join(missing)}", file=sys.stderr)
 
         slug = data["meta"]["slug"] or slugify(name)
         if slug in used_slugs:
@@ -1440,6 +1664,8 @@ def main() -> int:
         written.append(out_path)
         print(f"  → {out_path.relative_to(ROOT)}")
 
+    log_path = write_missing_sections_log(out_dir, missing_log_entries)
+    print(f"Missing-section log → {log_path.relative_to(ROOT)}")
     print(f"Done. Wrote {len(written)} file(s).")
     return 0
 

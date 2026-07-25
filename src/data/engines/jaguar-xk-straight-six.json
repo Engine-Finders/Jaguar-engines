@@ -1,24 +1,269 @@
 {
   "meta": {
-    "slug": "jaguar-xk-straight-six",
-    "title": "Jaguar XK Straight-Six Engine — Specs, Reliability & Replacement Cost",
-    "description": "",
-    "canonical": "",
+    "slug": "xk-straight-six",
+    "title": "Jaguar XK Straight-Six — Reliability & Replacement Cost",
+    "description": "The XK straight-six is one of the great British engines — durable and rebuildable, rated from UK owner enquiries. Compare quotes from vetted specialists today.",
+    "canonical": "https://jaguarengine.uk/engines/xk-straight-six/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "Jaguar XK Straight-Six — Reliability & Replacement Cost",
+      "description": "The XK straight-six is one of the great British engines — durable and rebuildable, rated from UK owner enquiries. Compare quotes from vetted specialists today.",
+      "type": "website",
+      "url": "https://jaguarengine.uk/engines/xk-straight-six/",
+      "image": "https://jaguarengine.uk/images/jaguar/engines/xk-straight-six.jpg",
+      "siteName": "jaguarengine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "Jaguar XK Straight-Six — Reliability & Replacement Cost",
+      "description": "The XK straight-six is one of the great British engines — durable and rebuildable, rated from UK owner enquiries. Compare quotes from vetted specialists today.",
+      "image": "https://jaguarengine.uk/images/jaguar/engines/xk-straight-six.jpg"
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jaguarengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Engines",
+              "item": "https://jaguarengine.uk/engines/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "XK Straight-Six",
+              "item": "https://jaguarengine.uk/engines/xk-straight-six/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Jaguar models fitted with the XK Straight-Six",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "XK120 (3.4L) 1949–1954"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "XK140 (3.4L) 1954–1957"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "XK150 (3.4L / 3.8L) 1957–1961"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Mk VII (3.4L) 1950–1956"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Mk VIII (3.4L) 1956–1958"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "Mk IX (3.8L) 1958–1961"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "Mk X / 420G (3.8L / 4.2L) 1961–1970"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "Mk 2 (2.4L / 3.4L / 3.8L) 1959–1967"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "240 / 340 (2.4L / 3.4L) 1967–1969"
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "name": "420 (4.2L) 1966–1968"
+            },
+            {
+              "@type": "ListItem",
+              "position": 11,
+              "name": "S-Type (original) (3.4L / 3.8L) 1963–1968"
+            },
+            {
+              "@type": "ListItem",
+              "position": 12,
+              "name": "E-Type Series 1 (3.8L) 1961–1964"
+            },
+            {
+              "@type": "ListItem",
+              "position": 13,
+              "name": "E-Type Series 1.5 / 2 (4.2L) 1964–1971"
+            },
+            {
+              "@type": "ListItem",
+              "position": 14,
+              "name": "E-Type Series 3 V12 (4.2L not used) — XK6 phase ended in 1971"
+            },
+            {
+              "@type": "ListItem",
+              "position": 15,
+              "name": "XJ6 Series 1–3 (2.8L / 3.4L / 4.2L) 1968–1986"
+            },
+            {
+              "@type": "ListItem",
+              "position": 16,
+              "name": "Daimler Sovereign (4.2L) 1966–1986"
+            },
+            {
+              "@type": "ListItem",
+              "position": 17,
+              "name": "Daimler DS420 Limousine (4.2L) 1968–1992"
+            },
+            {
+              "@type": "ListItem",
+              "position": 18,
+              "name": "C-Type (3.4L) 1951–1953"
+            },
+            {
+              "@type": "ListItem",
+              "position": 19,
+              "name": "D-Type (3.4L / 3.8L) 1954–1957"
+            },
+            {
+              "@type": "ListItem",
+              "position": 20,
+              "name": "XKSS (3.4L) 1957"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a Jaguar XK straight-six engine replacement cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned XK straight-six typically costs £5,000–£7,500 supply only, varying by displacement (3.4L vs 3.8L vs 4.2L) and specification (carburettor vs fuel injection). Full rebuilds by specialists often exceed £10,000."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Jaguar XK straight-six a reliable engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The XK straight-six earns 4.0★ out of 5 — it's fundamentally well-engineered and robust. Most issues stem from poor maintenance, infrequent use, or incorrect carburettor setup rather than design flaws."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the most common Jaguar XK straight-six failure?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing chain tensioner wear is the most significant concern — the tensioners have small oil passages that can become blocked, reducing pressure on the chain. Rattling on startup is an early warning sign. A tensioner and chain upgrade typically costs £1,200–£2,000."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Jaguar models use the XK straight-six?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The XK6 powered over 20 models across six decades — from the 1949 XK120 sports car through the Mk VII/VIII saloons, Mk 2, E-Type, S-Type, 420/420G, and XJ6 saloons through to 1986."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does the Jaguar XK straight-six last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "With proper maintenance, the XK straight-six is capable of 100,000+ miles before requiring a rebuild. The engine is renowned for its durability — five of the top six cars at the 1957 Le Mans 24 Hours were Jaguar D-Types powered by XK engines."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "jaguarengine.uk",
+          "url": "https://jaguarengine.uk/",
+          "logo": "https://jaguarengine.uk/images/logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "Jaguar XK Straight-Six Engine",
+          "brand": {
+            "@type": "Brand",
+            "name": "Jaguar"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.0",
+            "bestRating": "5",
+            "ratingCount": "1",
+            "reviewCount": "1"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Jaguar XK Straight-Six Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2500",
+            "highPrice": "10000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "Jaguar XK Straight-Six UK Enquiry & Reliability Data 2025",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the Jaguar XK Straight-Six, sourced from jaguarengine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Jaguar XK Straight-Six — Reliability & Replacement Cost",
+          "url": "https://jaguarengine.uk/engines/xk-straight-six/",
+          "author": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "jaguarengine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-14",
+          "dateModified": "2026-07-14"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "Jaguar • XK Straight-Six • Petrol • 2.4–4.2L I6 • 1949–1992",
@@ -80,719 +325,48 @@
       {
         "metric": "Overall Engine Score",
         "value": "—"
-      },
-      {
-        "metric": "XK Straight-Six — Our Verdict & Rating",
-        "value": "Star rating: 4.0★ out of 5"
-      },
-      {
-        "metric": "Confidence: 85% confidence — based on historical production data and specialist rebuild reports.",
-        "value": "Engine Score breakdown:"
-      },
-      {
-        "metric": "Dimension",
-        "value": "Score (of 20)"
-      },
-      {
-        "metric": "How it's determined",
-        "value": "Reliability"
-      },
-      {
-        "metric": "16",
-        "value": "4.0★ × 4"
-      },
-      {
-        "metric": "Repair Cost",
-        "value": "12"
-      },
-      {
-        "metric": "Reconditioned supply midpoint falls in £5,000–£6,999 band",
-        "value": "Repairability"
-      },
-      {
-        "metric": "16",
-        "value": "Robust design; most failures are rebuildable rather than catastrophic"
-      },
-      {
-        "metric": "Parts Supply",
-        "value": "12"
-      },
-      {
-        "metric": "Specialist parts available but not off-the-shelf; growing remanufacturing support",
-        "value": "Replacement Economics"
-      },
-      {
-        "metric": "16",
-        "value": "Reconditioned cost ~30–44% of lowest classic host-vehicle value"
-      },
-      {
-        "metric": "Total",
-        "value": "72/100"
-      },
-      {
-        "metric": "Sum of the five rows above",
-        "value": "One-line verdict: The XK straight-six is one of the great British engines — durable and rebuildable, but tensioner wear and carburettor setup need specialist care — buy with documented rebuild history."
-      },
-      {
-        "metric": "Best for: Classic Jaguar enthusiasts who appreciate a robust, characterful engine and don't mind specialist maintenance.",
-        "value": "Avoid if: You're looking for a modern, low-maintenance daily driver or don't have access to a specialist."
-      },
-      {
-        "metric": "XK Straight-Six — Where It's Fitted (Jaguar Models)",
-        "value": "The XK6 engine was produced in five displacements across six decades:"
-      },
-      {
-        "metric": "Displacement",
-        "value": "Models"
-      },
-      {
-        "metric": "Years",
-        "value": "2.4L"
-      },
-      {
-        "metric": "Mk1, Mk2, 240",
-        "value": "1955–1969"
-      },
-      {
-        "metric": "3.4L",
-        "value": "XK120, XK140, XK150, Mk VII, Mk VIII, Mk 2, 340, S-Type (original), C-Type, XJ6"
-      },
-      {
-        "metric": "1949–1970",
-        "value": "3.8L"
-      },
-      {
-        "metric": "XK150, Mk 2, Mk IX, Mk X, E-Type (Series 1), S-Type (original), XKSS, D-Type",
-        "value": "1958–1968"
-      },
-      {
-        "metric": "4.2L",
-        "value": "420, 420G, E-Type (Series 1.5–3), XJ6 (Series 1–3), Daimler Sovereign, Daimler DS420 Limousine"
-      },
-      {
-        "metric": "1965–1992",
-        "value": "The last Jaguar car fitted with the XK6 engine was the 1986 XJ6; the final production application was the 1992 Daimler DS420 Limousine."
-      },
-      {
-        "metric": "XK Straight-Six Replacement Costs",
-        "value": "Condition"
-      },
-      {
-        "metric": "Supply Only",
-        "value": "Fitted (Indie)"
-      },
-      {
-        "metric": "Warranty",
-        "value": "Used"
-      },
-      {
-        "metric": "£2,500–£4,500",
-        "value": "£3,500–£5,500"
-      },
-      {
-        "metric": "3–6 months",
-        "value": "Reconditioned"
-      },
-      {
-        "metric": "£5,000–£7,500",
-        "value": "£6,000–£9,000"
-      },
-      {
-        "metric": "12 months",
-        "value": "Rebuilt"
-      },
-      {
-        "metric": "£7,000–£10,000",
-        "value": "£8,500–£12,000"
-      },
-      {
-        "metric": "12–24 months",
-        "value": "Labour estimate: Fitting a Jaguar XK straight-six typically takes 14–20 hours at £65–£95/hr (independent specialist) — classic Jaguar specialists like Guy Broad or P&K Thornton are recommended."
-      },
-      {
-        "metric": "→ Compare XK Straight-Six engine prices from UK specialists",
-        "value": "FAQ"
-      },
-      {
-        "metric": "How much does a Jaguar XK straight-six engine replacement cost?",
-        "value": "A reconditioned XK straight-six typically costs £5,000–£7,500 supply only, varying by displacement (3.4L vs 3.8L vs 4.2L) and specification (carburettor vs fuel injection). Full rebuilds by specialists often exceed £10,000."
-      },
-      {
-        "metric": "Is the Jaguar XK straight-six a reliable engine?",
-        "value": "The XK straight-six earns 4.0★ out of 5 — it's fundamentally well-engineered and robust. Most issues stem from poor maintenance, infrequent use, or incorrect carburettor setup rather than design flaws."
-      },
-      {
-        "metric": "What is the most common Jaguar XK straight-six failure?",
-        "value": "Timing chain tensioner wear is the most significant concern — the tensioners have small oil passages that can become blocked, reducing pressure on the chain. Rattling on startup is an early warning sign. A tensioner and chain upgrade typically costs £1,200–£2,000."
-      },
-      {
-        "metric": "Which Jaguar models use the XK straight-six?",
-        "value": "The XK6 powered over 20 models across six decades — from the 1949 XK120 sports car through the Mk VII/VIII saloons, Mk 2, E-Type, S-Type, 420/420G, and XJ6 saloons through to 1986."
-      },
-      {
-        "metric": "How long does the Jaguar XK straight-six last?",
-        "value": "With proper maintenance, the XK straight-six is capable of 100,000+ miles before requiring a rebuild. The engine is renowned for its durability — five of the top six cars at the 1957 Le Mans 24 Hours were Jaguar D-Types powered by XK engines. Regular servicing and avoiding overheating are key to longevity."
-      },
-      {
-        "metric": "Why UK XK Straight-Six Owners Trust JaguarEngine.uk",
-        "value": "* Trusted Suppliers — Every garage and engine rebuilder in our network is vetted, rated and reviewed by real XK straight-six owners, as part of the Engine Finders network."
-      },
-      {
-        "metric": "* Compare Companies — We show you real quotes from multiple UK specialists side by side, so you can compare prices, warranties and lead times before you commit.",
-        "value": "* UK Coverage — Our network spans England, Scotland, Wales and Northern Ireland, with specialists who know the classic XK straight-six inside out."
-      },
-      {
-        "metric": "Find the best Jaguar XK straight-six engine replacement UK drivers rely on. Compare real prices from trusted specialists on Engine Finders today and get back on the road with confidence.",
-        "value": "CTA Button: Compare Jaguar XK Straight-Six Engine Prices Now →"
-      },
-      {
-        "metric": "Part 2 — Metadata & Schema Stack for Jaguar XK Straight‑Six",
-        "value": "Meta Title"
-      },
-      {
-        "metric": "Jaguar XK Straight-Six — Reliability & Replacement Cost",
-        "value": "Length: 55 characters"
-      },
-      {
-        "metric": "Pattern follows the Engine Page rule (H1‑aligned, but shortened to stay within 60‑character limit by dropping \"Engine\" and \"Specs,\").",
-        "value": "Meta Description"
-      },
-      {
-        "metric": "The XK straight-six is one of the great British engines — durable and rebuildable, rated from UK owner enquiries. Compare quotes from vetted specialists today.",
-        "value": "Length: 158 characters"
-      },
-      {
-        "metric": "Open Graph & Twitter Card Tags",
-        "value": "<meta property=\"og:title\" content=\"Jaguar XK Straight-Six — Reliability & Replacement Cost\" />"
-      },
-      {
-        "metric": "<meta property=\"og:description\" content=\"The XK straight-six is one of the great British engines — durable and rebuildable, rated from UK owner enquiries. Compare quotes from vetted specialists today.\" />",
-        "value": "<meta property=\"og:type\" content=\"website\" />"
-      },
-      {
-        "metric": "<meta property=\"og:url\" content=\"https://jaguarengine.uk/engines/xk-straight-six/\" />",
-        "value": "<meta property=\"og:image\" content=\"https://jaguarengine.uk/images/jaguar/engines/xk-straight-six.jpg\" />"
-      },
-      {
-        "metric": "<meta property=\"og:site_name\" content=\"jaguarengine.uk\" />",
-        "value": "<meta name=\"twitter:card\" content=\"summary_large_image\" />"
-      },
-      {
-        "metric": "<meta name=\"twitter:title\" content=\"Jaguar XK Straight-Six — Reliability & Replacement Cost\" />",
-        "value": "<meta name=\"twitter:description\" content=\"The XK straight-six is one of the great British engines — durable and rebuildable, rated from UK owner enquiries. Compare quotes from vetted specialists today.\" />"
-      },
-      {
-        "metric": "<meta name=\"twitter:image\" content=\"https://jaguarengine.uk/images/jaguar/engines/xk-straight-six.jpg\" />",
-        "value": "JSON‑LD Schema Markup (@graph array)"
-      },
-      {
-        "metric": "{",
-        "value": "\"@context\": \"https://schema.org\","
-      },
-      {
-        "metric": "\"@graph\": [",
-        "value": "{"
-      },
-      {
-        "metric": "\"@type\": \"BreadcrumbList\",",
-        "value": "\"itemListElement\": ["
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"ListItem\","
-      },
-      {
-        "metric": "\"position\": 1,",
-        "value": "\"name\": \"Home\","
-      },
-      {
-        "metric": "\"item\": \"https://jaguarengine.uk/\"",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"ListItem\","
-      },
-      {
-        "metric": "\"position\": 2,",
-        "value": "\"name\": \"Engines\","
-      },
-      {
-        "metric": "\"item\": \"https://jaguarengine.uk/engines/\"",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"ListItem\","
-      },
-      {
-        "metric": "\"position\": 3,",
-        "value": "\"name\": \"XK Straight-Six\","
-      },
-      {
-        "metric": "\"item\": \"https://jaguarengine.uk/engines/xk-straight-six/\"",
-        "value": "}"
-      },
-      {
-        "metric": "]",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"ItemList\","
-      },
-      {
-        "metric": "\"name\": \"Jaguar models fitted with the XK Straight-Six\",",
-        "value": "\"itemListElement\": ["
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"ListItem\","
-      },
-      {
-        "metric": "\"position\": 1,",
-        "value": "\"name\": \"XK120 (3.4L) 1949–1954\""
-      },
-      {
-        "metric": "},",
-        "value": "{"
-      },
-      {
-        "metric": "\"@type\": \"ListItem\",",
-        "value": "\"position\": 2,"
-      },
-      {
-        "metric": "\"name\": \"XK140 (3.4L) 1954–1957\"",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"ListItem\","
-      },
-      {
-        "metric": "\"position\": 3,",
-        "value": "\"name\": \"XK150 (3.4L / 3.8L) 1957–1961\""
-      },
-      {
-        "metric": "},",
-        "value": "{"
-      },
-      {
-        "metric": "\"@type\": \"ListItem\",",
-        "value": "\"position\": 4,"
-      },
-      {
-        "metric": "\"name\": \"Mk VII (3.4L) 1950–1956\"",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"ListItem\","
-      },
-      {
-        "metric": "\"position\": 5,",
-        "value": "\"name\": \"Mk VIII (3.4L) 1956–1958\""
-      },
-      {
-        "metric": "},",
-        "value": "{"
-      },
-      {
-        "metric": "\"@type\": \"ListItem\",",
-        "value": "\"position\": 6,"
-      },
-      {
-        "metric": "\"name\": \"Mk IX (3.8L) 1958–1961\"",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"ListItem\","
-      },
-      {
-        "metric": "\"position\": 7,",
-        "value": "\"name\": \"Mk X / 420G (3.8L / 4.2L) 1961–1970\""
-      },
-      {
-        "metric": "},",
-        "value": "{"
-      },
-      {
-        "metric": "\"@type\": \"ListItem\",",
-        "value": "\"position\": 8,"
-      },
-      {
-        "metric": "\"name\": \"Mk 2 (2.4L / 3.4L / 3.8L) 1959–1967\"",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"ListItem\","
-      },
-      {
-        "metric": "\"position\": 9,",
-        "value": "\"name\": \"240 / 340 (2.4L / 3.4L) 1967–1969\""
-      },
-      {
-        "metric": "},",
-        "value": "{"
-      },
-      {
-        "metric": "\"@type\": \"ListItem\",",
-        "value": "\"position\": 10,"
-      },
-      {
-        "metric": "\"name\": \"420 (4.2L) 1966–1968\"",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"ListItem\","
-      },
-      {
-        "metric": "\"position\": 11,",
-        "value": "\"name\": \"S-Type (original) (3.4L / 3.8L) 1963–1968\""
-      },
-      {
-        "metric": "},",
-        "value": "{"
-      },
-      {
-        "metric": "\"@type\": \"ListItem\",",
-        "value": "\"position\": 12,"
-      },
-      {
-        "metric": "\"name\": \"E-Type Series 1 (3.8L) 1961–1964\"",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"ListItem\","
-      },
-      {
-        "metric": "\"position\": 13,",
-        "value": "\"name\": \"E-Type Series 1.5 / 2 (4.2L) 1964–1971\""
-      },
-      {
-        "metric": "},",
-        "value": "{"
-      },
-      {
-        "metric": "\"@type\": \"ListItem\",",
-        "value": "\"position\": 14,"
-      },
-      {
-        "metric": "\"name\": \"E-Type Series 3 V12 (4.2L not used) — XK6 phase ended in 1971\"",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"ListItem\","
-      },
-      {
-        "metric": "\"position\": 15,",
-        "value": "\"name\": \"XJ6 Series 1–3 (2.8L / 3.4L / 4.2L) 1968–1986\""
-      },
-      {
-        "metric": "},",
-        "value": "{"
-      },
-      {
-        "metric": "\"@type\": \"ListItem\",",
-        "value": "\"position\": 16,"
-      },
-      {
-        "metric": "\"name\": \"Daimler Sovereign (4.2L) 1966–1986\"",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"ListItem\","
-      },
-      {
-        "metric": "\"position\": 17,",
-        "value": "\"name\": \"Daimler DS420 Limousine (4.2L) 1968–1992\""
-      },
-      {
-        "metric": "},",
-        "value": "{"
-      },
-      {
-        "metric": "\"@type\": \"ListItem\",",
-        "value": "\"position\": 18,"
-      },
-      {
-        "metric": "\"name\": \"C-Type (3.4L) 1951–1953\"",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"ListItem\","
-      },
-      {
-        "metric": "\"position\": 19,",
-        "value": "\"name\": \"D-Type (3.4L / 3.8L) 1954–1957\""
-      },
-      {
-        "metric": "},",
-        "value": "{"
-      },
-      {
-        "metric": "\"@type\": \"ListItem\",",
-        "value": "\"position\": 20,"
-      },
-      {
-        "metric": "\"name\": \"XKSS (3.4L) 1957\"",
-        "value": "}"
-      },
-      {
-        "metric": "]",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"FAQPage\","
-      },
-      {
-        "metric": "\"mainEntity\": [",
-        "value": "{"
-      },
-      {
-        "metric": "\"@type\": \"Question\",",
-        "value": "\"name\": \"How much does a Jaguar XK straight-six engine replacement cost?\","
-      },
-      {
-        "metric": "\"acceptedAnswer\": {",
-        "value": "\"@type\": \"Answer\","
-      },
-      {
-        "metric": "\"text\": \"A reconditioned XK straight-six typically costs £5,000–£7,500 supply only, varying by displacement (3.4L vs 3.8L vs 4.2L) and specification (carburettor vs fuel injection). Full rebuilds by specialists often exceed £10,000.\"",
-        "value": "}"
-      },
-      {
-        "metric": "},",
-        "value": "{"
-      },
-      {
-        "metric": "\"@type\": \"Question\",",
-        "value": "\"name\": \"Is the Jaguar XK straight-six a reliable engine?\","
-      },
-      {
-        "metric": "\"acceptedAnswer\": {",
-        "value": "\"@type\": \"Answer\","
-      },
-      {
-        "metric": "\"text\": \"The XK straight-six earns 4.0★ out of 5 — it's fundamentally well-engineered and robust. Most issues stem from poor maintenance, infrequent use, or incorrect carburettor setup rather than design flaws.\"",
-        "value": "}"
-      },
-      {
-        "metric": "},",
-        "value": "{"
-      },
-      {
-        "metric": "\"@type\": \"Question\",",
-        "value": "\"name\": \"What is the most common Jaguar XK straight-six failure?\","
-      },
-      {
-        "metric": "\"acceptedAnswer\": {",
-        "value": "\"@type\": \"Answer\","
-      },
-      {
-        "metric": "\"text\": \"Timing chain tensioner wear is the most significant concern — the tensioners have small oil passages that can become blocked, reducing pressure on the chain. Rattling on startup is an early warning sign. A tensioner and chain upgrade typically costs £1,200–£2,000.\"",
-        "value": "}"
-      },
-      {
-        "metric": "},",
-        "value": "{"
-      },
-      {
-        "metric": "\"@type\": \"Question\",",
-        "value": "\"name\": \"Which Jaguar models use the XK straight-six?\","
-      },
-      {
-        "metric": "\"acceptedAnswer\": {",
-        "value": "\"@type\": \"Answer\","
-      },
-      {
-        "metric": "\"text\": \"The XK6 powered over 20 models across six decades — from the 1949 XK120 sports car through the Mk VII/VIII saloons, Mk 2, E-Type, S-Type, 420/420G, and XJ6 saloons through to 1986.\"",
-        "value": "}"
-      },
-      {
-        "metric": "},",
-        "value": "{"
-      },
-      {
-        "metric": "\"@type\": \"Question\",",
-        "value": "\"name\": \"How long does the Jaguar XK straight-six last?\","
-      },
-      {
-        "metric": "\"acceptedAnswer\": {",
-        "value": "\"@type\": \"Answer\","
-      },
-      {
-        "metric": "\"text\": \"With proper maintenance, the XK straight-six is capable of 100,000+ miles before requiring a rebuild. The engine is renowned for its durability — five of the top six cars at the 1957 Le Mans 24 Hours were Jaguar D-Types powered by XK engines.\"",
-        "value": "}"
-      },
-      {
-        "metric": "}",
-        "value": "]"
-      },
-      {
-        "metric": "},",
-        "value": "{"
-      },
-      {
-        "metric": "\"@type\": \"Organization\",",
-        "value": "\"name\": \"jaguarengine.uk\","
-      },
-      {
-        "metric": "\"url\": \"https://jaguarengine.uk/\",",
-        "value": "\"logo\": \"https://jaguarengine.uk/images/logo.png\","
-      },
-      {
-        "metric": "\"parentOrganization\": {",
-        "value": "\"@type\": \"Organization\","
-      },
-      {
-        "metric": "\"name\": \"Engine Finders\"",
-        "value": "}"
-      },
-      {
-        "metric": "},",
-        "value": "{"
-      },
-      {
-        "metric": "\"@type\": \"Product\",",
-        "value": "\"name\": \"Jaguar XK Straight-Six Engine\","
-      },
-      {
-        "metric": "\"brand\": {",
-        "value": "\"@type\": \"Brand\","
-      },
-      {
-        "metric": "\"name\": \"Jaguar\"",
-        "value": "},"
-      },
-      {
-        "metric": "\"aggregateRating\": {",
-        "value": "\"@type\": \"AggregateRating\","
-      },
-      {
-        "metric": "\"ratingValue\": \"4.0\",",
-        "value": "\"bestRating\": \"5\","
-      },
-      {
-        "metric": "\"ratingCount\": \"1\",",
-        "value": "\"reviewCount\": \"1\""
-      },
-      {
-        "metric": "}",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"Service\","
-      },
-      {
-        "metric": "\"serviceType\": \"Jaguar XK Straight-Six Engine Replacement\",",
-        "value": "\"provider\": {"
-      },
-      {
-        "metric": "\"@type\": \"Organization\",",
-        "value": "\"name\": \"jaguarengine.uk\""
-      },
-      {
-        "metric": "},",
-        "value": "\"areaServed\": \"GB\","
-      },
-      {
-        "metric": "\"offers\": {",
-        "value": "\"@type\": \"AggregateOffer\","
-      },
-      {
-        "metric": "\"priceCurrency\": \"GBP\",",
-        "value": "\"lowPrice\": \"2500\","
-      },
-      {
-        "metric": "\"highPrice\": \"10000\",",
-        "value": "\"availability\": \"https://schema.org/InStock\""
-      },
-      {
-        "metric": "}",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"Dataset\","
-      },
-      {
-        "metric": "\"name\": \"Jaguar XK Straight-Six UK Enquiry & Reliability Data 2025\",",
-        "value": "\"description\": \"Proprietary UK enquiry volumes and reliability scoring data for the Jaguar XK Straight-Six, sourced from jaguarengine.uk's specialist marketplace activity.\","
-      },
-      {
-        "metric": "\"creator\": {",
-        "value": "\"@type\": \"Organization\","
-      },
-      {
-        "metric": "\"name\": \"jaguarengine.uk\"",
-        "value": "},"
-      },
-      {
-        "metric": "\"temporalCoverage\": \"2025\",",
-        "value": "\"spatialCoverage\": \"United Kingdom\""
-      },
-      {
-        "metric": "},",
-        "value": "{"
-      },
-      {
-        "metric": "\"@type\": \"WebPage\",",
-        "value": "\"name\": \"Jaguar XK Straight-Six — Reliability & Replacement Cost\","
-      },
-      {
-        "metric": "\"url\": \"https://jaguarengine.uk/engines/xk-straight-six/\",",
-        "value": "\"author\": {"
-      },
-      {
-        "metric": "\"@type\": \"Organization\",",
-        "value": "\"name\": \"jaguarengine.uk Editorial Team\""
-      },
-      {
-        "metric": "},",
-        "value": "\"reviewedBy\": {"
-      },
-      {
-        "metric": "\"@type\": \"Organization\",",
-        "value": "\"name\": \"jaguarengine.uk Specialist Network\""
-      },
-      {
-        "metric": "},",
-        "value": "\"datePublished\": \"2026-07-14\","
-      },
-      {
-        "metric": "\"dateModified\": \"2026-07-14\"",
-        "value": "}"
-      },
-      {
-        "metric": "]",
-        "value": "}"
       }
     ]
   },
   "verdictRating": {
-    "starRating": "",
-    "confidence": "",
-    "scoreNote": "",
+    "starRating": "4.0★ out of 5",
+    "confidence": "85% confidence — based on historical production data and specialist rebuild reports.",
+    "scoreNote": "Engine Score breakdown:",
     "scoreBreakdown": {
       "columns": [
         "Dimension",
         "Score (of 20)"
       ],
-      "rows": []
+      "rows": [
+        {
+          "dimension": "Reliability",
+          "score": "16 (4.0★ × 4)"
+        },
+        {
+          "dimension": "Repair Cost",
+          "score": "12 (Reconditioned supply midpoint falls in £5,000–£6,999 band)"
+        },
+        {
+          "dimension": "Repairability",
+          "score": "16 (Robust design; most failures are rebuildable rather than catastrophic)"
+        },
+        {
+          "dimension": "Parts Supply",
+          "score": "12 (Specialist parts available but not off-the-shelf; growing remanufacturing support)"
+        },
+        {
+          "dimension": "Replacement Economics",
+          "score": "16 (Reconditioned cost ~30–44% of lowest classic host-vehicle value)"
+        },
+        {
+          "dimension": "Total",
+          "score": "72/100 (Sum of the five rows above)"
+        }
+      ]
     },
-    "oneLineVerdict": "",
-    "bestFor": "",
-    "avoidIf": ""
+    "oneLineVerdict": "The XK straight-six is one of the great British engines — durable and rebuildable, but tensioner wear and carburettor setup need specialist care — buy with documented rebuild history.",
+    "bestFor": "Classic Jaguar enthusiasts who appreciate a robust, characterful engine and don't mind specialist maintenance.",
+    "avoidIf": "You're looking for a modern, low-maintenance daily driver or don't have access to a specialist."
   },
   "compatibility": {
     "columns": [
@@ -811,8 +385,27 @@
       "Fitted (Indie)",
       "Warranty"
     ],
-    "rows": [],
-    "labourEstimate": "",
+    "rows": [
+      {
+        "condition": "Used",
+        "supplyOnly": "£2,500–£4,500",
+        "fittedIndie": "£3,500–£5,500",
+        "warranty": "3–6 months"
+      },
+      {
+        "condition": "Reconditioned",
+        "supplyOnly": "£5,000–£7,500",
+        "fittedIndie": "£6,000–£9,000",
+        "warranty": "12 months"
+      },
+      {
+        "condition": "Rebuilt",
+        "supplyOnly": "£7,000–£10,000",
+        "fittedIndie": "£8,500–£12,000",
+        "warranty": "12–24 months"
+      }
+    ],
+    "labourEstimate": "Fitting a Jaguar XK straight-six typically takes 14–20 hours at £65–£95/hr (independent specialist) — classic Jaguar specialists like Guy Broad or P&K Thornton are recommended.",
     "sharedCostNote": "",
     "cta": {
       "label": "",
@@ -820,13 +413,39 @@
     }
   },
   "faq": {
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a Jaguar XK straight-six engine replacement cost?",
+        "answer": "A reconditioned XK straight-six typically costs £5,000–£7,500 supply only, varying by displacement (3.4L vs 3.8L vs 4.2L) and specification (carburettor vs fuel injection). Full rebuilds by specialists often exceed £10,000."
+      },
+      {
+        "id": 2,
+        "question": "Is the Jaguar XK straight-six a reliable engine?",
+        "answer": "The XK straight-six earns 4.0★ out of 5 — it's fundamentally well-engineered and robust. Most issues stem from poor maintenance, infrequent use, or incorrect carburettor setup rather than design flaws."
+      },
+      {
+        "id": 3,
+        "question": "What is the most common Jaguar XK straight-six failure?",
+        "answer": "Timing chain tensioner wear is the most significant concern — the tensioners have small oil passages that can become blocked, reducing pressure on the chain. Rattling on startup is an early warning sign. A tensioner and chain upgrade typically costs £1,200–£2,000."
+      },
+      {
+        "id": 4,
+        "question": "Which Jaguar models use the XK straight-six?",
+        "answer": "The XK6 powered over 20 models across six decades — from the 1949 XK120 sports car through the Mk VII/VIII saloons, Mk 2, E-Type, S-Type, 420/420G, and XJ6 saloons through to 1986."
+      },
+      {
+        "id": 5,
+        "question": "How long does the Jaguar XK straight-six last?",
+        "answer": "With proper maintenance, the XK straight-six is capable of 100,000+ miles before requiring a rebuild. The engine is renowned for its durability — five of the top six cars at the 1957 Le Mans 24 Hours were Jaguar D-Types powered by XK engines. Regular servicing and avoiding overheating are key to longevity."
+      }
+    ]
   },
   "trustCta": {
     "trustPoints": [],
     "finalCta": "",
     "ctaButton": {
-      "label": "",
+      "label": "Compare Jaguar XK Straight-Six Engine Prices Now →",
       "href": "#"
     }
   }
