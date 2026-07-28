@@ -366,6 +366,50 @@
     "subHeadline": "Nine generations of Jaguar's flagship — but the data-led choice for most buyers is the X351. Here's why.",
     "cards": [
       {
+  "title": "Series 1 (1968–1973)",
+  "badge": "",
+  "meta": "1968–1973 • XK I6 (2.8L, 3.4L, 4.2L) • V12 5.3L",
+  "rating": "★★★☆☆",
+  "verdict": "The original XJ—Sir William Lyons' definitive Jaguar saloon. The 4.2-litre XK straight-six is the pick: 173 bhp, proven durability, and the best balance of performance and reliability. The 2.8-litre is underpowered; the V12 is glorious but complex. Values range from £5k project cars to £20k+ restored examples—replace the 4.2 only if the body is sound.",
+  "cta": {
+    "label": "Explore Series 1 →",
+    "href": "https://jaguarengines.uk/xj-series-1"
+  }
+},
+{
+  "title": "Series 2 (1973–1979)",
+  "badge": "",
+  "meta": "1973–1979 • XK I6 (2.8L, 3.4L, 4.2L) • V12 5.3L",
+  "rating": "★★★☆☆",
+  "verdict": "The revised XJ—higher bumpers, revised grille, and improved safety. The 4.2-litre XK six remains the sweet spot with 170–183 bhp and strong torque. The V12 offers effortless performance but carries significant cooling system complexity. Usable examples fetch £8k–£12k; top-tier V12s exceed £25k. Always value the body and chassis before the engine—the 4.2 recon at £5k–£9k is viable on a well-kept car.",
+  "cta": {
+    "label": "Explore Series 2 →",
+    "href": "https://jaguarengines.uk/xj-series-2"
+  }
+},
+{
+  "title": "Series 3 (1979–1992)",
+  "badge": "",
+  "meta": "1979–1992 • XK I6 (3.4L, 4.2L) • V12 5.3L HE • V12 6.0L",
+  "rating": "★★★☆☆",
+  "verdict": "The final first-generation XJ—redesigned by Pininfarina with flush door handles and a more modern look. The XK 4.2-litre six is the most accessible choice at 200 bhp; the V12 HE (1981 onwards) is significantly improved over pre-HE cars. The 6.0 V12 is rare and specialist-only. For most buyers, the 4.2 six offers classic Jaguar character without the V12's running costs.",
+  "cta": {
+    "label": "Explore Series 3 →",
+    "href": "https://jaguarengines.uk/xj-series-3"
+  }
+},
+{
+  "title": "XJ40 (1986–1994)",
+  "badge": "",
+  "meta": "1986–1994 • AJ6 I6 (2.9L, 3.2L, 3.6L, 4.0L) • V12 6.0L",
+  "rating": "★★★☆☆",
+  "verdict": "The second-generation XJ—a more modern, aerodynamic design with Jaguar's new AJ6 engine. The 4.0-litre AJ6 is the most refined and reliable six; the 3.6 offers classic character without the 4.0's premium. The 6.0 V12 (XJ81) is rare and magnificent but costly. Values range from £3k–£15k—the 4.0 AJ6 recon at £3k–£5.5k is viable on a well-kept £10k+ car.",
+  "cta": {
+    "label": "Explore XJ40 →",
+    "href": "https://jaguarengines.uk/xj/xj40"
+  }
+},
+      {
         "title": "XJ X300 (1994–1997)",
         "badge": "",
         "meta": "1994–1997 • AJ16 4.0 I6, 3.2 I6",

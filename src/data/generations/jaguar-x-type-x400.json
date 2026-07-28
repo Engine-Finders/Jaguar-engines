@@ -570,6 +570,10 @@
   ],
   "petrolVariants": [
     {
+  "name": "2.0 V6",
+  "url": "https://jaguarengines.uk/x-type/20-v6"
+},
+    {
       "name": "2.5 V6",
       "url": "https://jaguarengines.uk/x-type/25-v6"
     },

@@ -692,6 +692,10 @@
   },
 "coreVariants": {
   "dieselVariants": [
+     {
+    "name": "20D",
+    "url": "https://jaguarengines.uk/f-pace/20d"
+  },
     {
       "name": "D165",
       "url": "#"
@@ -722,10 +726,10 @@
       "name": "P200",
       "url": "#"
     },
-    {
-      "name": "P250",
-      "url": "#"
-    },
+{
+    "name": "25T P250",
+    "url": "https://jaguarengines.uk/f-pace/25t-p250"
+  },
     {
       "name": "P300",
       "url": "https://jaguarengines.uk/f-pace/p300"
@@ -738,6 +742,10 @@
       "name": "P380",
       "url": "#"
     },
+      {
+    "name": "P400",
+    "url": "https://jaguarengines.uk/f-pace/p400"
+  },
     {
       "name": "P400e",
       "url": "https://jaguarengines.uk/f-pace/p400e"
