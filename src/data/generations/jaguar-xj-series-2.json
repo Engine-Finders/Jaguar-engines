@@ -650,11 +650,24 @@
     ],
     "note": ""
   },
-  "coreVariants": {
-    "dieselVariants": [],
-    "petrolVariants": [],
-    "scopeNote": "All variants listed are XJ Series 2 body code only — produced from 1973 to 1979 in saloon, long-wheelbase saloon, and coupé (XJC) body styles. Daimler-badged variants (Sovereign, Double Six) share the same engines with different trim. The 2.8-litre was export-only and discontinued early in the Series 2 run. The 3.4-litre was introduced in spring 1975. Short-wheelbase saloons were cancelled in 1974, but a short-wheelbase coupé was sold from 1975 to 1978."
-  },
+"coreVariants": {
+  "dieselVariants": [],
+  "petrolVariants": [
+    {
+      "name": "3.4 XK6",
+      "url": "https://jaguarengines.uk/xj/28-34-xk6"
+    },
+    {
+      "name": "4.2 XK6",
+      "url": "https://jaguarengines.uk/xj/4-2-xk6"
+    },
+    {
+      "name": "5.3 V12",
+      "url": "https://jaguarengines.uk/xj/53-v12"
+    }
+  ],
+  "scopeNote": "All variants listed are XJ Series 2 body code only — produced from 1973 to 1979 in saloon, long-wheelbase saloon, and coupé (XJC) body styles. Daimler-badged variants (Sovereign, Double Six) share the same engines with different trim. The 2.8-litre was export-only and discontinued early in the Series 2 run. The 3.4-litre was introduced in spring 1975. Short-wheelbase saloons were cancelled in 1974, but a short-wheelbase coupé was sold from 1975 to 1978."
+},
   "marketIntelligence": {
     "mostRequestedEngines": [
       "1. 4.2 XK Six",

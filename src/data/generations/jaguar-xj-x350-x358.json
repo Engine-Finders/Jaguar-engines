@@ -646,19 +646,37 @@
     ],
     "note": ""
   },
-  "coreVariants": {
-    "dieselVariants": [
-      "2.7D",
-      "2.7 TDVi"
-    ],
-    "petrolVariants": [
-      "3.0 V6",
-      "3.5 V8",
-      "4.2 V8",
-      "4.2 Supercharged V8 (XJR/Super V8)"
-    ],
-    "scopeNote": "All variants listed are X350/X358 only. The X351 (2010–2019) is a completely different generation with its own engine line-up – see the X351 Generation Page for those specifications."
-  },
+"coreVariants": {
+  "dieselVariants": [
+    {
+      "name": "2.7D",
+      "url": "https://jaguarengines.uk/xj/27d"
+    },
+    {
+      "name": "2.7 TDVi",
+      "url": "https://jaguarengines.uk/xj/27d"
+    }
+  ],
+  "petrolVariants": [
+    {
+      "name": "3.0 V6",
+      "url": "https://jaguarengines.uk/xj/3-0-v6"
+    },
+    {
+      "name": "3.5 V8",
+      "url": "https://jaguarengines.uk/xj/35-v8"
+    },
+    {
+      "name": "4.2 V8",
+      "url": "https://jaguarengines.uk/xj/4-2-v8"
+    },
+    {
+      "name": "4.2 Supercharged V8 (XJR/Super V8)",
+      "url": "https://jaguarengines.uk/xj/4-2-v8"
+    }
+  ],
+  "scopeNote": "All variants listed are X350/X358 only. The X351 (2010–2019) is a completely different generation with its own engine line-up – see the X351 Generation Page for those specifications."
+},
   "marketIntelligence": {
     "mostRequestedEngines": [
       "1. 4.2 V8 (AJ33/AJ34) – highest enquiry volume due to cooling system and general maintenance concerns",

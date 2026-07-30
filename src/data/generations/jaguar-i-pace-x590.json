@@ -466,11 +466,16 @@
     ],
     "note": ""
   },
-  "coreVariants": {
-    "dieselVariants": [],
-    "petrolVariants": [],
-    "scopeNote": "All UK‑market I‑Pace X590 models use the identical EV400 powertrain — twin permanent‑magnet motors producing 400 PS and 696 Nm, with a 90 kWh battery. Trims affect equipment and interior specification only; powertrain costs and failure patterns are identical across all variants. The First Edition was a launch‑year special. R‑Dynamic was introduced from 2020."
-  },
+"coreVariants": {
+  "dieselVariants": [],
+  "petrolVariants": [
+    {
+      "name": "EV400",
+      "url": "https://jaguarengines.uk/i-pace/ev400"
+    }
+  ],
+  "scopeNote": "All UK‑market I‑Pace X590 models use the identical EV400 powertrain — twin permanent‑magnet motors producing 400 PS and 696 Nm, with a 90 kWh battery. Trims affect equipment and interior specification only; powertrain costs and failure patterns are identical across all variants. The First Edition was a launch‑year special. R‑Dynamic was introduced from 2020."
+},
   "marketIntelligence": {
     "mostRequestedEngines": [],
     "mostRequestedVariants": [

@@ -690,26 +690,73 @@
     ],
     "note": ""
   },
-  "coreVariants": {
-    "dieselVariants": [
-      "D165",
-      "D180",
-      "D200",
-      "D275",
-      "D300 (4-cyl)",
-      "D300 (V6)"
-    ],
-    "petrolVariants": [
-      "P200",
-      "P250",
-      "P300",
-      "P340",
-      "P380",
-      "P400e",
-      "P550 SVR"
-    ],
-    "scopeNote": "All variants listed are X761-generation F-Pace only (2015–2025). The F-Pace was only available as a 5-door SUV."
+"coreVariants": {
+  "dieselVariants": [
+     {
+    "name": "20D",
+    "url": "https://jaguarengines.uk/f-pace/20d"
   },
+    {
+      "name": "D165",
+      "url": "#"
+    },
+    {
+      "name": "D180",
+      "url": "#"
+    },
+    {
+      "name": "D200",
+      "url": "#"
+    },
+    {
+      "name": "D275",
+      "url": "#"
+    },
+    {
+      "name": "D300 (4-cyl)",
+      "url": "https://jaguarengines.uk/f-pace/d300"
+    },
+    {
+      "name": "D300 (V6)",
+      "url": "https://jaguarengines.uk/f-pace/d300"
+    }
+  ],
+  "petrolVariants": [
+    {
+      "name": "P200",
+      "url": "#"
+    },
+{
+    "name": "25T P250",
+    "url": "https://jaguarengines.uk/f-pace/25t-p250"
+  },
+    {
+      "name": "P300",
+      "url": "https://jaguarengines.uk/f-pace/p300"
+    },
+    {
+      "name": "P340",
+      "url": "#"
+    },
+    {
+      "name": "P380",
+      "url": "#"
+    },
+      {
+    "name": "P400",
+    "url": "https://jaguarengines.uk/f-pace/p400"
+  },
+    {
+      "name": "P400e",
+      "url": "https://jaguarengines.uk/f-pace/p400e"
+    },
+    {
+      "name": "P550 SVR",
+      "url": "https://jaguarengines.uk/f-pace/svr"
+    }
+  ],
+  "scopeNote": "All variants listed are X761-generation F-Pace only (2015–2025). The F-Pace was only available as a 5-door SUV."
+},
   "marketIntelligence": {
     "mostRequestedEngines": [
       "1. AJ20D4 2.0 D200/D300",

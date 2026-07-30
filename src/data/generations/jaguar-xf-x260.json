@@ -702,11 +702,20 @@
     ],
     "note": ""
   },
-  "coreVariants": {
-    "dieselVariants": [],
-    "petrolVariants": [],
-    "scopeNote": "All variants listed are X260 body code only — the second-generation XF produced from 2015 to 2024 in both saloon and Sportbrake estate body styles. The first-generation X250 (2008–2015) is covered on its own Generation Page."
-  },
+"coreVariants": {
+  "dieselVariants": [
+    {
+      "name": "20d",
+      "url": "https://jaguarengines.uk/xf/20d-d200"
+    },
+    {
+      "name": "D200",
+      "url": "https://jaguarengines.uk/xf/20d-d200"
+    }
+  ],
+  "petrolVariants": [],
+  "scopeNote": "All variants listed are X260 body code only — the second-generation XF produced from 2015 to 2024 in both saloon and Sportbrake estate body styles. The first-generation X250 (2008–2015) is covered on its own Generation Page."
+},
   "marketIntelligence": {
     "mostRequestedEngines": [
       "1. 2.0D / D180 (2.0-litre Ingenium diesel)",

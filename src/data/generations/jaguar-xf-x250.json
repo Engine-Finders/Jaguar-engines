@@ -745,24 +745,57 @@
     ],
     "note": "No Generation variance from the Model Page's baseline figures — X250 saloon and Sportbrake share identical engine‑bay access, so costs are inherited directly per the Authority Model, with no divergence note required. All costs are [EM-QUOTE] from Table A — Engine Replacement Economics."
   },
-  "coreVariants": {
-    "dieselVariants": [
-      "2.7 TDV6",
-      "3.0 TDV6",
-      "3.0 SDV6",
-      "2.2 Diesel"
-    ],
-    "petrolVariants": [
-      "3.0 V6",
-      "3.0 V6 Supercharged",
-      "4.2 V8",
-      "4.2 Supercharged",
-      "5.0 V8",
-      "5.0 Supercharged (XFR/XFR-S)",
-      "2.0 Turbo"
-    ],
-    "scopeNote": "All variants listed are Jaguar XF X250 (first generation) only — saloon and Sportbrake estate share the same engine line‑up. X260 (second generation) is covered on its own Generation Page."
-  },
+"coreVariants": {
+  "dieselVariants": [
+    {
+      "name": "2.7 TDV6",
+      "url": "https://jaguarengines.uk/xf/27d"
+    },
+    {
+      "name": "3.0 TDV6",
+      "url": "https://jaguarengines.uk/xf/30d"
+    },
+    {
+      "name": "3.0 SDV6",
+      "url": "https://jaguarengines.uk/xf/30d"
+    },
+    {
+      "name": "2.2 Diesel",
+      "url": "https://jaguarengines.uk/xf/22d"
+    }
+  ],
+  "petrolVariants": [
+    {
+      "name": "3.0 V6",
+      "url": "#"
+    },
+    {
+      "name": "3.0 V6 Supercharged",
+      "url": "https://jaguarengines.uk/xf/30-sc"
+    },
+    {
+      "name": "4.2 V8",
+      "url": "https://jaguarengines.uk/xf/42-v8"
+    },
+    {
+      "name": "4.2 Supercharged",
+      "url": "https://jaguarengines.uk/xf/42-v8"
+    },
+    {
+      "name": "5.0 V8",
+      "url": "https://jaguarengines.uk/xf/5-0-v8-xfr"
+    },
+    {
+      "name": "5.0 Supercharged (XFR/XFR-S)",
+      "url": "https://jaguarengines.uk/xf/5-0-v8-xfr"
+    },
+    {
+      "name": "2.0 Turbo",
+      "url": "https://jaguarengines.uk/xf/20-petrol"
+    }
+  ],
+  "scopeNote": "All variants listed are Jaguar XF X250 (first generation) only — saloon and Sportbrake estate share the same engine line‑up. X260 (second generation) is covered on its own Generation Page."
+},
   "marketIntelligence": {
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],

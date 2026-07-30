@@ -680,22 +680,52 @@
     ],
     "note": ""
   },
-  "coreVariants": {
-    "dieselVariants": [],
-    "petrolVariants": [
-      "P300",
-      "P340",
-      "P380",
-      "P400",
-      "P450",
-      "P575",
-      "R",
-      "S",
-      "SVR",
-      "V8 S"
-    ],
-    "scopeNote": "All variants listed are X152 F-Type only. Engine fitment varies by year — the 2.0-litre Ingenium P300 was added in 2017; the 2020 facelift introduced the P450 (detuned 5.0 V8) and R P575, while discontinuing the V6 option in most markets. The SVR (575 bhp) was introduced in 2015 and continued through 2020. The Project 7 (575 bhp, limited to 250 units) was produced in 2015."
-  },
+"coreVariants": {
+  "dieselVariants": [],
+  "petrolVariants": [
+    {
+      "name": "P300",
+      "url": "https://jaguarengines.uk/f-type/p300"
+    },
+    {
+      "name": "P340",
+      "url": "https://jaguarengines.uk/f-type/3-0-v6-340"
+    },
+    {
+      "name": "P380",
+      "url": "https://jaguarengines.uk/f-type/30-v6-s"
+    },
+    {
+      "name": "P400",
+      "url": "#"
+    },
+    {
+      "name": "P450",
+      "url": "https://jaguarengines.uk/f-type/p450"
+    },
+    {
+      "name": "P575",
+      "url": "https://jaguarengines.uk/f-type/r"
+    },
+    {
+      "name": "R",
+      "url": "https://jaguarengines.uk/f-type/r"
+    },
+    {
+      "name": "S",
+      "url": "https://jaguarengines.uk/f-type/30-v6-s"
+    },
+    {
+      "name": "SVR",
+      "url": "https://jaguarengines.uk/f-type/svr"
+    },
+    {
+      "name": "V8 S",
+      "url": "#"
+    }
+  ],
+  "scopeNote": "All variants listed are X152 F-Type only. Engine fitment varies by year — the 2.0-litre Ingenium P300 was added in 2017; the 2020 facelift introduced the P450 (detuned 5.0 V8) and R P575, while discontinuing the V6 option in most markets. The SVR (575 bhp) was introduced in 2015 and continued through 2020. The Project 7 (575 bhp, limited to 250 units) was produced in 2015."
+},
   "marketIntelligence": {
     "mostRequestedEngines": [
       "1. 306PS 3.0 V6 Supercharged (560 JLR-wide enquiries)",

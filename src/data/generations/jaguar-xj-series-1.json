@@ -498,11 +498,20 @@
     ],
     "note": "No Generation variance from the Model Page's baseline figures — XJ Series 1 saloon shares identical engine‑bay access across all variants, so costs are inherited directly per the Authority Model, with no divergence note required. All costs are [EM-QUOTE] from Table A — Engine Replacement Economics (classic engine costs estimated from specialist supplier data)."
   },
-  "coreVariants": {
-    "dieselVariants": [],
-    "petrolVariants": [],
-    "scopeNote": "All variants listed are Jaguar XJ Series 1 (1968–1973) only — 4‑door saloon body style. Daimler Sovereign variants were virtually identical to the Jaguar‑badged cars and share the same engine line‑up. Series 2 (1973–1979) is covered on its own Generation Page."
-  },
+"coreVariants": {
+  "dieselVariants": [],
+  "petrolVariants": [
+    {
+      "name": "2.8 XK6",
+      "url": "https://jaguarengines.uk/xj/28-34-xk6"
+    },
+    {
+      "name": "4.2 XK6",
+      "url": "https://jaguarengines.uk/xj/4-2-xk6"
+    }
+  ],
+  "scopeNote": "All variants listed are Jaguar XJ Series 1 (1968–1973) only — 4‑door saloon body style. Daimler Sovereign variants were virtually identical to the Jaguar‑badged cars and share the same engine line‑up. Series 2 (1973–1979) is covered on its own Generation Page."
+},
   "marketIntelligence": {
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
