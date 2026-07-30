@@ -112,10 +112,11 @@ export async function generateMetadata({ params }) {
   if (!result?.data?.meta) return {};
 
   const { meta } = result.data;
+  const canonical = meta.canonical || `/${slug.join("/")}`;
   return {
     title: meta.title || undefined,
     description: meta.description || undefined,
-    alternates: meta.canonical ? { canonical: meta.canonical } : undefined,
+    alternates: { canonical },
     openGraph: meta.openGraph
       ? {
           title: meta.openGraph.title || undefined,

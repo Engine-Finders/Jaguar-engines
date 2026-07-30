@@ -27,6 +27,12 @@ import homeSec12Data from "@/data/home/homeSec12.json";
 import homeSec13Data from "@/data/home/homeSec13.json";
 import homeSec14Data from "@/data/home/homeSec14.json";
 
+export function generateMetadata() {
+  return {
+    alternates: { canonical: "/" },
+  };
+}
+
 export default function Home() {
   return (
     <main>
