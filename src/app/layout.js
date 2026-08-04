@@ -3,6 +3,7 @@ import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 
 export const metadata = {
+  metadataBase: new URL("https://jaguarengines.uk"),
   title: "JaguarEngines.uk — The Complete Ownership Guide",
   description: "The UK's Most Trusted Jaguar Ownership Guide. Reliability rankings, real failure data, honest repair-vs-replace economics for every XE, XF, XJ, F-Pace, E-Pace, F-Type, XK, S-Type and X-Type ever sold in the UK.",
 };

@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Shell(npx next build 2 >& 1)",
+      "powershell",
+      "Shell(cd \"E:\\4 WEBS\\jaguar\\.next\\server\\app\\[...slug]\" && dir /b /s *.html 2>nul | head -1)",
+      "Shell(cd \"E:\\4 WEBS\\jaguar\\.next\\server\\app\\e-pace\\p250.html\" && findstr \"canonical\" p250.html 2>nul || type \"E:\\4 WEBS\\jaguar\\.next\\server\\app\\e-pace\\p250.html\" | findstr \"canonical\")"
+    ],
+    "deny": [],
+    "defaultMode": "default"
+  }
+}

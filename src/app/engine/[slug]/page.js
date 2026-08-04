@@ -29,12 +29,11 @@ export async function generateMetadata({ params }) {
   if (!data?.meta) return {};
 
   const { meta } = data;
+  const canonical = meta.canonical || `/engine/${slug}`;
   return {
     title: meta.title,
     description: meta.description,
-    alternates: meta.canonical
-      ? { canonical: meta.canonical }
-      : undefined,
+    alternates: { canonical },
     openGraph: meta.openGraph
       ? {
           title: meta.openGraph.title,

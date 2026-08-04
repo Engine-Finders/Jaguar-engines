@@ -1,5 +1,4 @@
 [
-  { "parent": "discovery", "slug": "sd4", "dataFile": "discovery-sd4" },
   { "parent": "e-pace", "slug": "d150", "dataFile": "e-pace-d150" },
   { "parent": "e-pace", "slug": "d165", "dataFile": "e-pace-d165" },
   { "parent": "e-pace", "slug": "d180", "dataFile": "e-pace-d180" },
