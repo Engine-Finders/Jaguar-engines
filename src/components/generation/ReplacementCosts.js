@@ -3,31 +3,31 @@ export default function ReplacementCosts({ data }) {
 
   return (
     <section style={{ paddingBottom: 8 }}>
-      <h2>{data.h2}</h2>
+      <h2 dangerouslySetInnerHTML={{ __html: data.h2 }} />
 
       <table border="1" cellPadding="4" cellSpacing="0">
         <thead>
           <tr>
             {data.columns?.map((col) => (
-              <th key={col}>{col}</th>
+              <th key={col} dangerouslySetInnerHTML={{ __html: col }} />
             ))}
           </tr>
         </thead>
         <tbody>
-          {data.rows?.map((row) => (
-            <tr key={`${row.variant}-${row.engineCode}`}>
-              <td>{row.variant}</td>
-              <td>{row.engineCode}</td>
-              <td>{row.usedSupply}</td>
-              <td>{row.reconditionedSupply}</td>
-              <td>{row.rebuiltSupply}</td>
-              <td>{row.labourHours}</td>
-            </tr>
-          ))}
-        </tbody>
+  {data.rows?.map((row) => (
+    <tr key={`${row.component}-${row.componentCode}`}>
+      <td dangerouslySetInnerHTML={{ __html: row.variant || row.component || "" }} />
+      <td dangerouslySetInnerHTML={{ __html: row.engineCode || row.componentCode || "" }} />
+      <td dangerouslySetInnerHTML={{ __html: row.usedSupply || "" }} />
+      <td dangerouslySetInnerHTML={{ __html: row.reconditionedSupply || "" }} />
+      <td dangerouslySetInnerHTML={{ __html: row.rebuiltSupply || row.newSupply || "" }} />
+      <td dangerouslySetInnerHTML={{ __html: row.labourHours || "" }} />
+    </tr>
+  ))}
+</tbody>
       </table>
 
-      {data.note && <p>{data.note}</p>}
+      {data.note && <div dangerouslySetInnerHTML={{ __html: data.note }} />}
       <hr />
     </section>
   );

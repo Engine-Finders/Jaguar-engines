@@ -5,7 +5,7 @@
     "titleCharCount": 54,
     "description": "Every Jaguar XF 4.2 V8 engine — AJ34 and AJ34S. X250 generation, real UK costs and reliability. Get free quotes from 15+ vetted Jaguar specialists today.",
     "descriptionCharCount": 158,
-    "canonical": "https://jaguarengine.uk/xf/42-v8/",
+    "canonical": "https://jaguarengines.uk/xf/42-v8/",
     "openGraph": {
       "title": "",
       "description": "",
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://jaguarengine.uk/"
+              "item": "https://jaguarengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "XF",
-              "item": "https://jaguarengine.uk/xf/"
+              "item": "https://jaguarengines.uk/xf/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "4.2 V8",
-              "item": "https://jaguarengine.uk/xf/42-v8/"
+              "item": "https://jaguarengines.uk/xf/42-v8/"
             }
           ]
         },
@@ -54,13 +54,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "X250 XF 4.2 V8 (AJ34, 2008-2009)",
-              "url": "https://jaguarengine.uk/xf/x250/"
+              "url": "https://jaguarengines.uk/xf/x250/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "X250 XF 4.2 V8 Supercharged (AJ34S, 2008-2009)",
-              "url": "https://jaguarengine.uk/xf/x250/"
+              "url": "https://jaguarengines.uk/xf/x250/"
             }
           ]
         },
@@ -72,13 +72,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ34",
-              "url": "https://jaguarengine.uk/engines/aj34/"
+              "url": "https://jaguarengines.uk/engines/aj34/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "AJ34S",
-              "url": "https://jaguarengine.uk/engines/aj34s/"
+              "url": "https://jaguarengines.uk/engines/aj34s/"
             }
           ]
         },
@@ -138,8 +138,8 @@
         {
           "@type": "Organization",
           "name": "JaguarEngine.uk",
-          "url": "https://jaguarengine.uk/",
-          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "url": "https://jaguarengines.uk/",
+          "logo": "https://jaguarengines.uk/images/jaguarengine-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -175,7 +175,7 @@
         {
           "@type": "WebPage",
           "name": "Jaguar XF 4.2 V8 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://jaguarengine.uk/xf/42-v8/",
+          "url": "https://jaguarengines.uk/xf/42-v8/",
           "author": {
             "@type": "Organization",
             "name": "JaguarEngine.uk Editorial Team"

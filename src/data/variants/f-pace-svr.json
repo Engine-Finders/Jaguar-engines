@@ -5,27 +5,27 @@
     "titleCharCount": 57,
     "description": "Every Jaguar F-Pace SVR engine — AJ133 5.0L supercharged V8, 2018–2024. Real UK costs, coolant pipe advice, and honest reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
     "descriptionCharCount": 160,
-    "canonical": "https://jaguarengine.uk/f-pace/svr/",
+    "canonical": "https://jaguarengines.uk/f-pace/svr/",
     "openGraph": {
       "title": "F-Pace SVR Engine Replacement Cost UK — Compare Quotes",
       "description": "Every Jaguar F-Pace SVR engine — AJ133 5.0L supercharged V8, 2018–2024. Real UK costs, coolant pipe advice, and honest reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
       "type": "website",
-      "url": "https://jaguarengine.uk/f-pace/svr/",
-      "image": "https://jaguarengine.uk/images/jaguar/hero/f-pace-svr.jpg",
+      "url": "https://jaguarengines.uk/f-pace/svr/",
+      "image": "https://jaguarengines.uk/images/jaguar/hero/f-pace-svr.jpg",
       "siteName": "JaguarEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "F-Pace SVR Engine Replacement Cost UK — Compare Quotes",
       "description": "Every Jaguar F-Pace SVR engine — AJ133 5.0L supercharged V8, 2018–2024. Real UK costs, coolant pipe advice, and honest reliability data.",
-      "image": "https://jaguarengine.uk/images/jaguar/hero/f-pace-svr.jpg"
+      "image": "https://jaguarengines.uk/images/jaguar/hero/f-pace-svr.jpg"
     },
     "jsonLd": {}
   },
   "hero": {
     "tagPill": "Jaguar F-Pace SVR • 2018–2024 • 2 Engine Generations",
     "h1": "Jaguar F-Pace SVR Engine Replacement — Compare Prices & Get Quotes",
-    "subHeadline": "Get quotes today from trusted UK Jaguar F-Pace SVR specialists. Compare reconditioned, rebuilt and used 5.0-litre supercharged V8 engines — AJ133 variants across the X761 SVR range — supply & fit available nationwide.",
+    "subHeadline": "Get quotes today from trusted UK Jaguar F-Pace SVR specialists. Compare reconditioned, rebuilt and used 5.0-litre supercharged V8 engines — <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> variants across the X761 SVR range — supply & fit available nationwide.",
     "trustBadges": [
       "🔧 Supply & Fit Available",
       "✅ 12-Month Warranty",

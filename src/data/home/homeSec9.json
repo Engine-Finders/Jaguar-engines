@@ -25,7 +25,7 @@
       },
       {
         "id": 3,
-        "title": "AJ200D / 204DTD Ingenium Timing Chain",
+        "title": "AJ200D / <a href='https://jaguarengines.uk/engine/ajd4-204dtd'>204DTD</a> Ingenium Timing Chain",
         "description": "Same engine, same issue as Land Rover's Ingenium diesel — pre-2019 tensioner wear, improved from 2019 onward.",
         "severity": { "icon": "🟡", "label": "Monitor", "type": "monitor" },
         "link": { "label": "Read more →", "href": "#" }
@@ -82,7 +82,7 @@
       {
         "id": 2,
         "title": "Supercharger Coupler / Torsion Isolator Rattle",
-        "description": "A well-known shared quirk of the AJ126 and AJ133 — rattly but rarely catastrophic on its own.",
+        "description": "A well-known shared quirk of the AJ126 and <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> — rattly but rarely catastrophic on its own.",
         "severity": { "icon": "🟡", "label": "Monitor", "type": "monitor" },
         "link": { "label": "Read more →", "href": "#" }
       },

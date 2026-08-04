@@ -3,13 +3,16 @@ export default function CalculatorCTA({ data }) {
 
   return (
     <section style={{ paddingBottom: 8 }}>
-      <h2>{data.h2}</h2>
-      {data.intro && <p>{data.intro}</p>}
+      <h2 dangerouslySetInnerHTML={{ __html: data.h2 }} />
+      {data.intro && <div dangerouslySetInnerHTML={{ __html: data.intro }} />}
       <ul>
         {data.paths?.map((path) => (
           <li key={path.label}>
-            <a href={path.href}>{path.label}</a>
-            {path.note ? ` (${path.note})` : ""}
+            <a
+              href={path.href}
+              dangerouslySetInnerHTML={{ __html: path.label }}
+            />
+            {path.note ? <span> (<span dangerouslySetInnerHTML={{ __html: path.note }} />)</span> : ""}
           </li>
         ))}
       </ul>

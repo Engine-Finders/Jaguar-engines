@@ -5,20 +5,20 @@
     "titleCharCount": 57,
     "description": "Every Jaguar F-Type 3.0 V6 (340) engine — AJ126 supercharged. Real UK costs, timing chain, coolant pipe and reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
     "descriptionCharCount": 160,
-    "canonical": "https://jaguarengine.uk/f-type/3-0-v6-340/",
+    "canonical": "https://jaguarengines.uk/f-type/3-0-v6-340/",
     "openGraph": {
       "title": "F-Type 3.0 V6 Engine Replacement Cost UK — Compare Quotes",
       "description": "Every Jaguar F-Type 3.0 V6 (340) engine — AJ126 supercharged. Real UK costs, timing chain, coolant pipe and reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
       "type": "website",
-      "url": "https://jaguarengine.uk/f-type/3-0-v6-340/",
-      "image": "https://jaguarengine.uk/images/jaguar/hero/f-type-3-0-v6-340.jpg",
+      "url": "https://jaguarengines.uk/f-type/3-0-v6-340/",
+      "image": "https://jaguarengines.uk/images/jaguar/hero/f-type-3-0-v6-340.jpg",
       "siteName": "JaguarEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "F-Type 3.0 V6 Engine Replacement Cost UK — Compare Quotes",
       "description": "Every Jaguar F-Type 3.0 V6 (340) engine — AJ126 supercharged. Real UK costs, timing chain, coolant pipe and reliability data.",
-      "image": "https://jaguarengine.uk/images/jaguar/hero/f-type-3-0-v6-340.jpg"
+      "image": "https://jaguarengines.uk/images/jaguar/hero/f-type-3-0-v6-340.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://jaguarengine.uk/"
+              "item": "https://jaguarengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "F-Type",
-              "item": "https://jaguarengine.uk/f-type/"
+              "item": "https://jaguarengines.uk/f-type/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "3.0 V6 (340)",
-              "item": "https://jaguarengine.uk/f-type/3-0-v6-340/"
+              "item": "https://jaguarengines.uk/f-type/3-0-v6-340/"
             }
           ]
         },
@@ -54,7 +54,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "F-Type X152 3.0 V6 (AJ126, 340 PS, 2013-2020)",
-              "url": "https://jaguarengine.uk/f-type/x152/"
+              "url": "https://jaguarengines.uk/f-type/x152/"
             }
           ]
         },
@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ126",
-              "url": "https://jaguarengine.uk/engines/aj126/"
+              "url": "https://jaguarengines.uk/engines/aj126/"
             }
           ]
         },
@@ -126,8 +126,8 @@
         {
           "@type": "Organization",
           "name": "JaguarEngine.uk",
-          "url": "https://jaguarengine.uk/",
-          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "url": "https://jaguarengines.uk/",
+          "logo": "https://jaguarengines.uk/images/jaguarengine-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -163,7 +163,7 @@
         {
           "@type": "WebPage",
           "name": "F-Type 3.0 V6 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://jaguarengine.uk/f-type/3-0-v6-340/",
+          "url": "https://jaguarengines.uk/f-type/3-0-v6-340/",
           "author": {
             "@type": "Organization",
             "name": "JaguarEngine.uk Editorial Team"

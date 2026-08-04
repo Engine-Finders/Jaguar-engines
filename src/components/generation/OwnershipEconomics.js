@@ -3,25 +3,25 @@ export default function OwnershipEconomics({ data }) {
 
   return (
     <section style={{ paddingBottom: 8 }}>
-      <h2>{data.h2}</h2>
+      <h2 dangerouslySetInnerHTML={{ __html: data.h2 }} />
 
       <table border="1" cellPadding="4" cellSpacing="0">
         <thead>
           <tr>
-            {data.columns?.map((col) => (
-              <th key={col}>{col}</th>
+            {data.columns.length > 0 && data.columns.map((col) => (
+              <th key={col} dangerouslySetInnerHTML={{ __html: col }} />
             ))}
           </tr>
         </thead>
         <tbody>
-          {data.rows?.map((row) => (
+          {data.rows.length > 0 && data.rows.map((row) => (
             <tr key={row.engine}>
-              <td>{row.engine}</td>
-              <td>{row.typicalMileage}</td>
-              <td>{row.commonMajorFailure}</td>
-              <td>{row.repairCostSpecialist}</td>
-              <td>{row.replacementCostRecon}</td>
-              <td>{row.ownershipVerdict}</td>
+              <td dangerouslySetInnerHTML={{ __html: row.engine }} />
+              <td dangerouslySetInnerHTML={{ __html: row.typicalMileage }} />
+              <td dangerouslySetInnerHTML={{ __html: row.commonMajorFailure }} />
+              <td dangerouslySetInnerHTML={{ __html: row.repairCostSpecialist }} />
+              <td dangerouslySetInnerHTML={{ __html: row.replacementCostRecon }} />
+              <td dangerouslySetInnerHTML={{ __html: row.ownershipVerdict }} />
             </tr>
           ))}
         </tbody>
@@ -29,18 +29,18 @@ export default function OwnershipEconomics({ data }) {
 
       {data.economicsRule && (
         <>
-          <h3>{data.economicsRule.title}</h3>
-          <p>{data.economicsRule.text}</p>
+          <h3 dangerouslySetInnerHTML={{ __html: data.economicsRule.title }} />
+          <div dangerouslySetInnerHTML={{ __html: data.economicsRule.text }} />
         </>
       )}
 
-      {data.keyTakeaways?.length > 0 && (
+      {data.keyTakeaways.length > 0 && (
         <>
-          <h3>Key takeaways</h3>
+          <h3 dangerouslySetInnerHTML={{ __html: "Key takeaways" }} />
           <ul>
             {data.keyTakeaways.map((item) => (
               <li key={item.question}>
-                <strong>{item.question}</strong> — {item.answer}
+                <strong dangerouslySetInnerHTML={{ __html: item.question }} /> — <span dangerouslySetInnerHTML={{ __html: item.answer }} />
               </li>
             ))}
           </ul>

@@ -15,7 +15,7 @@
     "columns": ["RANK", "ENGINE CODE", "LABEL", "ENQUIRIES"],
     "rows": [
       { "rank": 1, "code": "276DT", "label": "2.7L TDV6 (shared w/ Land Rover)", "enquiries": "700 [EM-VERIFIED]" },
-      { "rank": 2, "code": "AJ200D / 204DTD", "label": "Ingenium Diesel", "enquiries": "590 [EM-VERIFIED]" },
+      { "rank": 2, "code": "AJ200D / <a href='https://jaguarengines.uk/engine/ajd4-204dtd'>204DTD</a>", "label": "Ingenium Diesel", "enquiries": "590 [EM-VERIFIED]" },
       { "rank": 3, "code": "AJ126", "label": "3.0 V6 Supercharged", "enquiries": "560 [EM-VERIFIED]" },
       { "rank": 4, "code": "AJ200P / 204PT", "label": "Ingenium Petrol", "enquiries": "500 [EM-VERIFIED]" },
       { "rank": 5, "code": "AJ133 / 508PN", "label": "5.0 V8", "enquiries": "330 [EM-VERIFIED]" }
@@ -58,7 +58,7 @@
       },
       {
         "rank": 2,
-        "failure": "AJ133 Pre-2013 Timing Chain Tensioner Wear",
+        "failure": "<a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> Pre-2013 Timing Chain Tensioner Wear",
         "risk": { "icon": "🟡", "label": "Monitor", "type": "monitor" }
       },
       {

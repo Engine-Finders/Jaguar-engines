@@ -5,27 +5,27 @@
     "titleCharCount": 54,
     "description": "Every Jaguar XKR engine — AJ26S 4.0, AJ34S 4.2 and AJ133 5.0 supercharged V8s, 1998–2014. Real UK costs, timing chain advice, and honest reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
     "descriptionCharCount": 160,
-    "canonical": "https://jaguarengine.uk/xk/xkr/",
+    "canonical": "https://jaguarengines.uk/xk/xkr/",
     "openGraph": {
       "title": "XKR Engine Replacement Cost UK — Compare Quotes",
       "description": "Every Jaguar XKR engine — AJ26S 4.0, AJ34S 4.2 and AJ133 5.0 supercharged V8s, 1998–2014. Real UK costs, timing chain advice, and honest reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
       "type": "website",
-      "url": "https://jaguarengine.uk/xk/xkr/",
-      "image": "https://jaguarengine.uk/images/jaguar/hero/xkr.jpg",
+      "url": "https://jaguarengines.uk/xk/xkr/",
+      "image": "https://jaguarengines.uk/images/jaguar/hero/xkr.jpg",
       "siteName": "JaguarEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "XKR Engine Replacement Cost UK — Compare Quotes",
       "description": "Every Jaguar XKR engine — AJ26S 4.0, AJ34S 4.2 and AJ133 5.0 supercharged V8s, 1998–2014. Real UK costs, timing chain advice, and honest reliability data.",
-      "image": "https://jaguarengine.uk/images/jaguar/hero/xkr.jpg"
+      "image": "https://jaguarengines.uk/images/jaguar/hero/xkr.jpg"
     },
     "jsonLd": {}
   },
   "hero": {
     "tagPill": "Jaguar XKR • 1998–2014 • 3 Engine Generations",
     "h1": "Jaguar XKR Engine Replacement — Compare Prices & Get Quotes",
-    "subHeadline": "Get quotes today from trusted UK Jaguar XKR specialists. Compare reconditioned, rebuilt and used supercharged V8 engines — from the 4.0-litre AJ26S to the 5.0-litre AJ133 — supply & fit available nationwide.",
+    "subHeadline": "Get quotes today from trusted UK Jaguar XKR specialists. Compare reconditioned, rebuilt and used supercharged V8 engines — from the 4.0-litre AJ26S to the 5.0-litre <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> — supply & fit available nationwide.",
     "trustBadges": [
       "🔧 Supply & Fit Available",
       "✅ 12-Month Warranty",

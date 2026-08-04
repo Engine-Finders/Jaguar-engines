@@ -15,19 +15,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://jaguarengine.uk/"
+              "item": "https://jaguarengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "XJ",
-              "item": "https://jaguarengine.uk/xj/"
+              "item": "https://jaguarengines.uk/xj/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Jaguar XJ X308",
-              "item": "https://jaguarengine.uk/xj/x308/"
+              "item": "https://jaguarengines.uk/xj/x308/"
             }
           ]
         },
@@ -39,19 +39,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ26/AJ27 3.2 V8",
-              "url": "https://jaguarengine.uk/engines/aj26/"
+              "url": "https://jaguarengines.uk/engines/aj26/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "AJ26/AJ27 4.0 V8",
-              "url": "https://jaguarengine.uk/engines/aj26/"
+              "url": "https://jaguarengines.uk/engines/aj26/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "AJ26/AJ27 4.0 Supercharged V8 (XJR)",
-              "url": "https://jaguarengine.uk/engines/aj26-supercharged/"
+              "url": "https://jaguarengines.uk/engines/aj26-supercharged/"
             }
           ]
         },
@@ -63,25 +63,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "3.2 V8",
-              "url": "https://jaguarengine.uk/xj/x308/3-2-v8/"
+              "url": "https://jaguarengines.uk/xj/x308/3-2-v8/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "4.0 V8",
-              "url": "https://jaguarengine.uk/xj/x308/4-0-v8/"
+              "url": "https://jaguarengines.uk/xj/x308/4-0-v8/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "XJR",
-              "url": "https://jaguarengine.uk/xj/x308/xjr/"
+              "url": "https://jaguarengines.uk/xj/x308/xjr/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "Daimler Super V8",
-              "url": "https://jaguarengine.uk/xj/x308/daimler-super-v8/"
+              "url": "https://jaguarengines.uk/xj/x308/daimler-super-v8/"
             }
           ]
         },
@@ -173,8 +173,8 @@
         {
           "@type": "Organization",
           "name": "JaguarEngine.uk",
-          "url": "https://jaguarengine.uk/",
-          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "url": "https://jaguarengines.uk/",
+          "logo": "https://jaguarengines.uk/images/jaguarengine-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -199,7 +199,7 @@
         {
           "@type": "WebPage",
           "name": "X308 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://jaguarengine.uk/xj/x308/",
+          "url": "https://jaguarengines.uk/xj/x308/",
           "author": {
             "@type": "Organization",
             "name": "JaguarEngine.uk Editorial Team"

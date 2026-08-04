@@ -5,12 +5,17 @@ export default function HomeSec11({ data }) {
     <section className="bg-white px-3 py-3">
       <div className="mx-auto w-full max-w-8xl">
         <div className="mb-3 flex items-start gap-3">
-          <div className="min-w-0 flex-1">
+          <div className="min-0 flex-1">
             <h2 className="text-2xl font-bold text-black md:text-4xl">
               Every Model. Every Generation. Honestly Rated.
             </h2>
-            <p className="text-sm text-gray-600">{data.subHeadline}</p>
+
+            <div
+              className="text-sm text-gray-600"
+              dangerouslySetInnerHTML={{ __html: data.subHeadline }}
+            />
           </div>
+
           <div className="relative h-20 w-28 shrink-0 md:h-28 md:w-48">
             <Image
               src={data.headerImage.src}
@@ -25,7 +30,7 @@ export default function HomeSec11({ data }) {
         <div className="mb-2 border border-gray-200">
           <div className="hidden bg-blue-700 px-2 py-1 text-xs font-semibold text-white md:grid md:grid-cols-3 md:gap-2">
             {data.columns.map((col) => (
-              <span key={col}>{col}</span>
+              <span key={col} dangerouslySetInnerHTML={{ __html: col }} />
             ))}
           </div>
 
@@ -34,22 +39,33 @@ export default function HomeSec11({ data }) {
               key={row.era}
               className="border-b border-gray-200 px-2 py-2 last:border-b-0 md:grid md:grid-cols-3 md:gap-2"
             >
-              <p className="text-sm font-bold text-black">{row.era}</p>
+              <p
+                className="text-sm font-bold text-black"
+                dangerouslySetInnerHTML={{ __html: row.era }}
+              />
+
               <p className="text-xs text-gray-700">
                 <span className="md:hidden text-gray-500">Engines: </span>
-                {row.engines}
+                <span dangerouslySetInnerHTML={{ __html: row.engines }} />
               </p>
+
               <p className="text-xs text-gray-700">
                 <span className="md:hidden text-gray-500">Models: </span>
-                {row.models}
+                <span dangerouslySetInnerHTML={{ __html: row.models }} />
               </p>
             </div>
           ))}
         </div>
 
         <div className="border border-blue-200 bg-blue-50 p-2">
-          <p className="text-sm font-bold text-blue-700">Key Takeaway</p>
-          <p className="text-xs text-gray-700">{data.keyTakeaway}</p>
+          <p className="text-sm font-bold text-blue-700">
+            Key Takeaway
+          </p>
+
+          <div
+            className="text-xs text-gray-700"
+            dangerouslySetInnerHTML={{ __html: data.keyTakeaway }}
+          />
         </div>
       </div>
     </section>

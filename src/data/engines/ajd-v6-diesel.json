@@ -3,20 +3,20 @@
     "slug": "ajd-v6-diesel",
     "title": "Jaguar AJD-V6 Diesel Engine — Reliability & Cost",
     "description": "The AJD-V6 offers strong torque but has crankshaft and oil pump risks — rated from 1,680+ real UK enquiries. Compare quotes from 15+ vetted specialists today.",
-    "canonical": "https://jaguarengine.uk/engines/ajd-v6-diesel/",
+    "canonical": "https://jaguarengines.uk/engines/ajd-v6-diesel/",
     "openGraph": {
       "title": "Jaguar AJD-V6 Diesel Engine — Reliability & Cost",
       "description": "The AJD-V6 offers strong torque but has crankshaft and oil pump risks — rated from 1,680+ real UK enquiries. Compare quotes from 15+ vetted specialists today.",
       "type": "website",
-      "url": "https://jaguarengine.uk/engines/ajd-v6-diesel/",
-      "image": "https://jaguarengine.uk/images/jaguar/engines/ajd-v6-diesel.jpg",
-      "siteName": "jaguarengine.uk"
+      "url": "https://jaguarengines.uk/engines/ajd-v6-diesel/",
+      "image": "https://jaguarengines.uk/images/jaguar/engines/ajd-v6-diesel.jpg",
+      "siteName": "jaguarengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "Jaguar AJD-V6 Diesel Engine — Reliability & Cost",
       "description": "The AJD-V6 offers strong torque but has crankshaft and oil pump risks — rated from 1,680+ real UK enquiries. Compare quotes from 15+ vetted specialists today.",
-      "image": "https://jaguarengine.uk/images/jaguar/engines/ajd-v6-diesel.jpg"
+      "image": "https://jaguarengines.uk/images/jaguar/engines/ajd-v6-diesel.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -28,19 +28,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://jaguarengine.uk/"
+              "item": "https://jaguarengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://jaguarengine.uk/engines/"
+              "item": "https://jaguarengines.uk/engines/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Jaguar AJD-V6 Diesel",
-              "item": "https://jaguarengine.uk/engines/ajd-v6-diesel/"
+              "item": "https://jaguarengines.uk/engines/ajd-v6-diesel/"
             }
           ]
         },
@@ -52,37 +52,37 @@
               "@type": "ListItem",
               "position": 1,
               "name": "S-Type X200 2.7D V6",
-              "url": "https://jaguarengine.uk/jaguar/s-type-x200/"
+              "url": "https://jaguarengines.uk/jaguar/s-type-x200/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "XF X250 2.7D / 3.0D V6",
-              "url": "https://jaguarengine.uk/jaguar/xf-x250/"
+              "url": "https://jaguarengines.uk/jaguar/xf-x250/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "XF X260 3.0D V6",
-              "url": "https://jaguarengine.uk/jaguar/xf-x260/"
+              "url": "https://jaguarengines.uk/jaguar/xf-x260/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "XJ X350 / X358 2.7D V6",
-              "url": "https://jaguarengine.uk/jaguar/xj-x350/"
+              "url": "https://jaguarengines.uk/jaguar/xj-x350/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "XJ X351 3.0D V6",
-              "url": "https://jaguarengine.uk/jaguar/xj-x351/"
+              "url": "https://jaguarengines.uk/jaguar/xj-x351/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "F-Pace X761 3.0D V6",
-              "url": "https://jaguarengine.uk/jaguar/f-pace-x761/"
+              "url": "https://jaguarengines.uk/jaguar/f-pace-x761/"
             }
           ]
         },
@@ -133,9 +133,9 @@
         },
         {
           "@type": "Organization",
-          "name": "jaguarengine.uk",
-          "url": "https://jaguarengine.uk/",
-          "logo": "https://jaguarengine.uk/images/logo.png",
+          "name": "jaguarengines.uk",
+          "url": "https://jaguarengines.uk/",
+          "logo": "https://jaguarengines.uk/images/logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -161,7 +161,7 @@
           "serviceType": "Jaguar AJD-V6 Diesel Engine Replacement",
           "provider": {
             "@type": "Organization",
-            "name": "jaguarengine.uk"
+            "name": "jaguarengines.uk"
           },
           "areaServed": "GB",
           "offers": {
@@ -175,10 +175,10 @@
         {
           "@type": "Dataset",
           "name": "Jaguar AJD-V6 Diesel UK Enquiry & Reliability Data 2025",
-          "description": "Proprietary UK enquiry volumes and reliability scoring data for the Jaguar AJD-V6 Diesel, sourced from jaguarengine.uk's specialist marketplace activity.",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the Jaguar AJD-V6 Diesel, sourced from jaguarengines.uk's specialist marketplace activity.",
           "creator": {
             "@type": "Organization",
-            "name": "jaguarengine.uk"
+            "name": "jaguarengines.uk"
           },
           "temporalCoverage": "2025",
           "spatialCoverage": "United Kingdom"
@@ -186,14 +186,14 @@
         {
           "@type": "WebPage",
           "name": "Jaguar AJD-V6 Diesel Engine — Reliability & Cost",
-          "url": "https://jaguarengine.uk/engines/ajd-v6-diesel/",
+          "url": "https://jaguarengines.uk/engines/ajd-v6-diesel/",
           "author": {
             "@type": "Organization",
-            "name": "jaguarengine.uk Editorial Team"
+            "name": "jaguarengines.uk Editorial Team"
           },
           "reviewedBy": {
             "@type": "Organization",
-            "name": "jaguarengine.uk Specialist Network"
+            "name": "jaguarengines.uk Specialist Network"
           },
           "datePublished": "2026-07-14",
           "dateModified": "2026-07-14"
@@ -307,7 +307,7 @@
         "years": "2016–2020"
       }
     ],
-    "crossBrandNote": "Also powers the Land Rover Discovery 3/4, Range Rover Sport, and Range Rover L405 → [link to Land Rover 276DT/306DT pages]."
+    "crossBrandNote": "Also powers the Land Rover Discovery 3/4, Range Rover Sport, and Range Rover L405 → [link to Land Rover 276DT/<a href='https://jaguarengines.uk/engine/306dt-306ps'>306DT</a> pages]."
   },
   "costGuide": {
     "columns": [

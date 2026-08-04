@@ -3,13 +3,21 @@ export default function QuotesCta({ data }) {
 
   return (
     <section style={{ paddingBottom: 8 }}>
-      <h2>{data.headline}</h2>
-      {data.supportingLine && <p>{data.supportingLine}</p>}
+      <h2 dangerouslySetInnerHTML={{ __html: data.headline }} />
+
+      {data.supportingLine && (
+        <div dangerouslySetInnerHTML={{ __html: data.supportingLine }} />
+      )}
+
       {data.button && (
         <p>
-          <a href={data.button.href}>{data.button.label}</a>
+          <a
+            href={data.button.href}
+            dangerouslySetInnerHTML={{ __html: data.button.label }}
+          />
         </p>
       )}
+
       <hr />
     </section>
   );

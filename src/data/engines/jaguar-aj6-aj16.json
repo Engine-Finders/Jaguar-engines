@@ -3,20 +3,20 @@
     "slug": "aj6-aj16",
     "title": "Jaguar AJ6 / AJ16 Engine — Reliability & Cost",
     "description": "The AJ6/AJ16 straight‑six is a smooth classic — robust but prone to cooling system neglect. See real replacement costs and compare specialist quotes today.",
-    "canonical": "https://jaguarengine.uk/engines/aj6-aj16/",
+    "canonical": "https://jaguarengines.uk/engines/aj6-aj16/",
     "openGraph": {
       "title": "Jaguar AJ6 / AJ16 Engine — Reliability & Cost",
       "description": "The AJ6/AJ16 straight‑six is a smooth classic — robust but prone to cooling system neglect. See real replacement costs and compare specialist quotes today.",
       "type": "website",
-      "url": "https://jaguarengine.uk/engines/aj6-aj16/",
-      "image": "https://jaguarengine.uk/images/jaguar/engines/aj6-aj16.jpg",
-      "siteName": "jaguarengine.uk"
+      "url": "https://jaguarengines.uk/engines/aj6-aj16/",
+      "image": "https://jaguarengines.uk/images/jaguar/engines/aj6-aj16.jpg",
+      "siteName": "jaguarengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "Jaguar AJ6 / AJ16 Engine — Reliability & Cost",
       "description": "The AJ6/AJ16 straight‑six is a smooth classic — robust but prone to cooling system neglect. See real replacement costs and compare specialist quotes today.",
-      "image": "https://jaguarengine.uk/images/jaguar/engines/aj6-aj16.jpg"
+      "image": "https://jaguarengines.uk/images/jaguar/engines/aj6-aj16.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -28,19 +28,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://jaguarengine.uk/"
+              "item": "https://jaguarengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://jaguarengine.uk/engines/"
+              "item": "https://jaguarengines.uk/engines/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Jaguar AJ6 / AJ16",
-              "item": "https://jaguarengine.uk/engines/aj6-aj16/"
+              "item": "https://jaguarengines.uk/engines/aj6-aj16/"
             }
           ]
         },
@@ -52,25 +52,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "XJ6 XJ40 3.6 / 4.0",
-              "url": "https://jaguarengine.uk/jaguar/xj40/"
+              "url": "https://jaguarengines.uk/jaguar/xj40/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "XJ6 X300 3.2 / 4.0",
-              "url": "https://jaguarengine.uk/jaguar/x300/"
+              "url": "https://jaguarengines.uk/jaguar/x300/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "XJS XJ-S 3.6 / 4.0",
-              "url": "https://jaguarengine.uk/jaguar/xjs/"
+              "url": "https://jaguarengines.uk/jaguar/xjs/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "XJ6 Series III (late) 4.2",
-              "url": "https://jaguarengine.uk/jaguar/xj6-series-iii/"
+              "url": "https://jaguarengines.uk/jaguar/xj6-series-iii/"
             }
           ]
         },
@@ -121,9 +121,9 @@
         },
         {
           "@type": "Organization",
-          "name": "jaguarengine.uk",
-          "url": "https://jaguarengine.uk/",
-          "logo": "https://jaguarengine.uk/images/logo.png",
+          "name": "jaguarengines.uk",
+          "url": "https://jaguarengines.uk/",
+          "logo": "https://jaguarengines.uk/images/logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -149,7 +149,7 @@
           "serviceType": "Jaguar AJ6 / AJ16 Engine Replacement",
           "provider": {
             "@type": "Organization",
-            "name": "jaguarengine.uk"
+            "name": "jaguarengines.uk"
           },
           "areaServed": "GB",
           "offers": {
@@ -163,10 +163,10 @@
         {
           "@type": "Dataset",
           "name": "Jaguar AJ6 / AJ16 UK Enquiry & Reliability Data 2025",
-          "description": "Proprietary UK enquiry volumes and reliability scoring data for the Jaguar AJ6 and AJ16 straight‑six engines, sourced from jaguarengine.uk's specialist marketplace activity and classic car workshop feedback.",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the Jaguar AJ6 and AJ16 straight‑six engines, sourced from jaguarengines.uk's specialist marketplace activity and classic car workshop feedback.",
           "creator": {
             "@type": "Organization",
-            "name": "jaguarengine.uk"
+            "name": "jaguarengines.uk"
           },
           "temporalCoverage": "2025",
           "spatialCoverage": "United Kingdom"
@@ -174,14 +174,14 @@
         {
           "@type": "WebPage",
           "name": "Jaguar AJ6 / AJ16 Engine — Reliability & Cost",
-          "url": "https://jaguarengine.uk/engines/aj6-aj16/",
+          "url": "https://jaguarengines.uk/engines/aj6-aj16/",
           "author": {
             "@type": "Organization",
-            "name": "jaguarengine.uk Editorial Team"
+            "name": "jaguarengines.uk Editorial Team"
           },
           "reviewedBy": {
             "@type": "Organization",
-            "name": "jaguarengine.uk Specialist Network"
+            "name": "jaguarengines.uk Specialist Network"
           },
           "datePublished": "2026-07-14",
           "dateModified": "2026-07-14"

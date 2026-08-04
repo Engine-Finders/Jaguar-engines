@@ -3,18 +3,21 @@ export default function TrustCta({ data }) {
 
   return (
     <section style={{ paddingBottom: 8 }}>
-      <h2>{data.h2}</h2>
+      <h2 dangerouslySetInnerHTML={{ __html: data.h2 }} />
       {data.trustPoints?.map((point) => (
         <div key={point.title}>
-          <h3>{point.title}</h3>
-          <p>{point.text}</p>
+          <h3 dangerouslySetInnerHTML={{ __html: point.title }} />
+          <div dangerouslySetInnerHTML={{ __html: point.text }} />
         </div>
       ))}
-      {data.finalCta && <p>{data.finalCta}</p>}
+      {data.finalCta && <div dangerouslySetInnerHTML={{ __html: data.finalCta }} />}
       {data.ctaButton && (
         <p>
-          <a href={data.ctaButton.href}>{data.ctaButton.label}</a>
-          {data.ctaButton.note && <> — {data.ctaButton.note}</>}
+          <a
+            href={data.ctaButton.href}
+            dangerouslySetInnerHTML={{ __html: data.ctaButton.label }}
+          />
+          {data.ctaButton.note && <span> — <span dangerouslySetInnerHTML={{ __html: data.ctaButton.note }} /></span>}
         </p>
       )}
       <hr />

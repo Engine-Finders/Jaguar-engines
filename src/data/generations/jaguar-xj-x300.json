@@ -15,19 +15,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://jaguarengine.uk/"
+              "item": "https://jaguarengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "XJ",
-              "item": "https://jaguarengine.uk/xj/"
+              "item": "https://jaguarengines.uk/xj/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Jaguar XJ X300",
-              "item": "https://jaguarengine.uk/xj/x300/"
+              "item": "https://jaguarengines.uk/xj/x300/"
             }
           ]
         },
@@ -39,25 +39,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "9HPGNB 3.2 AJ16 Engine",
-              "url": "https://jaguarengine.uk/engines/aj16-3-2/"
+              "url": "https://jaguarengines.uk/engines/aj16-3-2/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "9JPFRB 4.0 AJ16 Engine",
-              "url": "https://jaguarengine.uk/engines/aj16-4-0/"
+              "url": "https://jaguarengines.uk/engines/aj16-4-0/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "9KPDRB 4.0 Supercharged AJ16 Engine",
-              "url": "https://jaguarengine.uk/engines/aj16-sc/"
+              "url": "https://jaguarengines.uk/engines/aj16-sc/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "6.0 V12 Engine",
-              "url": "https://jaguarengine.uk/engines/v12-6-0/"
+              "url": "https://jaguarengines.uk/engines/v12-6-0/"
             }
           ]
         },
@@ -69,31 +69,31 @@
               "@type": "ListItem",
               "position": 1,
               "name": "XJ6 3.2",
-              "url": "https://jaguarengine.uk/xj/x300/3-2/"
+              "url": "https://jaguarengines.uk/xj/x300/3-2/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "XJ6 4.0",
-              "url": "https://jaguarengine.uk/xj/x300/4-0/"
+              "url": "https://jaguarengines.uk/xj/x300/4-0/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "XJR",
-              "url": "https://jaguarengine.uk/xj/x300/xjr/"
+              "url": "https://jaguarengines.uk/xj/x300/xjr/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "XJ12",
-              "url": "https://jaguarengine.uk/xj/x300/xj12/"
+              "url": "https://jaguarengines.uk/xj/x300/xj12/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "Daimler Double Six",
-              "url": "https://jaguarengine.uk/xj/x300/daimler-double-six/"
+              "url": "https://jaguarengines.uk/xj/x300/daimler-double-six/"
             }
           ]
         },
@@ -185,8 +185,8 @@
         {
           "@type": "Organization",
           "name": "JaguarEngine.uk",
-          "url": "https://jaguarengine.uk/",
-          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "url": "https://jaguarengines.uk/",
+          "logo": "https://jaguarengines.uk/images/jaguarengine-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -211,7 +211,7 @@
         {
           "@type": "WebPage",
           "name": "X300 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://jaguarengine.uk/xj/x300/",
+          "url": "https://jaguarengines.uk/xj/x300/",
           "author": {
             "@type": "Organization",
             "name": "JaguarEngine.uk Editorial Team"
@@ -358,7 +358,7 @@
     ],
     "confidenceScore": {
       "title": "How confident are these ratings?",
-      "text": "The X300 is a classic car with a well‑documented enthusiast following. The AJ16 six‑cylinder engines (both 3.2 and 4.0) are considered the most reliable XJ engines of their era — distributorless ignition, revised pistons, and magnesium‑alloy valve covers made them significantly more dependable than earlier AJ6 units. The supercharged XJR engine is also well‑regarded but more complex. The V12 is the most costly to maintain and the least reliable of the range — it was deleted in 1997 when all V12 engine production finished. All ratings are [PATTERN DATA] sourced from Jaguar enthusiast clubs and specialist forums."
+      "text": "The X300 is a classic car with a well‑documented enthusiast following. The AJ16 six‑cylinder engines (both 3.2 and 4.0) are considered the most reliable XJ engines of their era — distributorless ignition, revised pistons, and magnesium‑alloy valve covers made them significantly more dependable than earlier <a href='https://jaguarengines.uk/engine/aj6-aj16'>AJ6</a> units. The supercharged XJR engine is also well‑regarded but more complex. The V12 is the most costly to maintain and the least reliable of the range — it was deleted in 1997 when all V12 engine production finished. All ratings are [PATTERN DATA] sourced from Jaguar enthusiast clubs and specialist forums."
     },
     "dataCorrections": []
   },

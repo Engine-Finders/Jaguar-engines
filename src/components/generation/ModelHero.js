@@ -3,15 +3,15 @@ export default function ModelHero({ data }) {
 
   return (
     <section style={{ paddingBottom: 8 }}>
-      {data.tagPill && <p>{data.tagPill}</p>}
-      <h1>{data.h1}</h1>
-      {data.subHeadline && <p>{data.subHeadline}</p>}
+      {data.tagPill && <div dangerouslySetInnerHTML={{ __html: data.tagPill }} />}
+      <h1 dangerouslySetInnerHTML={{ __html: data.h1 }} />
+      {data.subHeadline && <div dangerouslySetInnerHTML={{ __html: data.subHeadline }} />}
 
       {data.trustStrip?.length > 0 && (
         <ul>
           {data.trustStrip.map((item) => (
             <li key={item.label}>
-              {item.icon} {item.label}
+              {item.icon} <span dangerouslySetInnerHTML={{ __html: item.label }} />
             </li>
           ))}
         </ul>
@@ -19,11 +19,14 @@ export default function ModelHero({ data }) {
 
       {data.primaryCta && (
         <p>
-          <a href={data.primaryCta.href}>{data.primaryCta.label}</a>
+          <a
+            href={data.primaryCta.href}
+            dangerouslySetInnerHTML={{ __html: data.primaryCta.label }}
+          />
         </p>
       )}
 
-      {data.dataIntegrityNote && <p>{data.dataIntegrityNote}</p>}
+      {data.dataIntegrityNote && <div dangerouslySetInnerHTML={{ __html: data.dataIntegrityNote }} />}
       <hr />
     </section>
   );

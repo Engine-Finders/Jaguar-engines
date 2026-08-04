@@ -3,20 +3,20 @@
     "slug": "aj20d6",
     "title": "Jaguar AJ20D6 Engine — Specs, Reliability & Replacement Cost",
     "description": "The AJ20D6 is a smooth, torquey six-cylinder diesel — but early MHEV glitches and fuel-system sensitivity are worth knowing — backed by real UK enquiries [JAG-VERIFIED]. Compare quotes from vetted specialists today.",
-    "canonical": "https://jaguarengine.uk/engines/aj20d6/",
+    "canonical": "https://jaguarengines.uk/engines/aj20d6/",
     "openGraph": {
       "title": "Jaguar AJ20D6 Engine — Specs, Reliability & Replacement Cost",
       "description": "The AJ20D6 is a smooth, torquey six-cylinder diesel — but early MHEV glitches and fuel-system sensitivity are worth knowing — backed by real UK enquiries [JAG-VERIFIED]. Compare quotes from vetted specialists today.",
       "type": "website",
-      "url": "https://jaguarengine.uk/engines/aj20d6/",
-      "image": "https://jaguarengine.uk/images/jaguar/engines/aj20d6.jpg",
-      "siteName": "jaguarengine.uk"
+      "url": "https://jaguarengines.uk/engines/aj20d6/",
+      "image": "https://jaguarengines.uk/images/jaguar/engines/aj20d6.jpg",
+      "siteName": "jaguarengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "Jaguar AJ20D6 Engine — Specs, Reliability & Replacement Cost",
       "description": "The AJ20D6 is a smooth, torquey six-cylinder diesel — but early MHEV glitches and fuel-system sensitivity are worth knowing — backed by real UK enquiries [JAG-VERIFIED]. Compare quotes from vetted specialists today.",
-      "image": "https://jaguarengine.uk/images/jaguar/engines/aj20d6.jpg"
+      "image": "https://jaguarengines.uk/images/jaguar/engines/aj20d6.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -28,19 +28,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://jaguarengine.uk/"
+              "item": "https://jaguarengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://jaguarengine.uk/engines/"
+              "item": "https://jaguarengines.uk/engines/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "AJ20D6",
-              "item": "https://jaguarengine.uk/engines/aj20d6/"
+              "item": "https://jaguarengines.uk/engines/aj20d6/"
             }
           ]
         },
@@ -52,19 +52,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Jaguar F-Pace X761 3.0d D300 MHEV",
-              "url": "https://jaguarengine.uk/jaguar/f-pace/x761/"
+              "url": "https://jaguarengines.uk/jaguar/f-pace/x761/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Jaguar F-Pace X761 30d (300 PS)",
-              "url": "https://jaguarengine.uk/jaguar/f-pace/x761/"
+              "url": "https://jaguarengines.uk/jaguar/f-pace/x761/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Jaguar XF X260 3.0D",
-              "url": "https://jaguarengine.uk/jaguar/xf/x260/"
+              "url": "https://jaguarengines.uk/jaguar/xf/x260/"
             }
           ]
         },
@@ -115,9 +115,9 @@
         },
         {
           "@type": "Organization",
-          "name": "jaguarengine.uk",
-          "url": "https://jaguarengine.uk/",
-          "logo": "https://jaguarengine.uk/images/logo.png",
+          "name": "jaguarengines.uk",
+          "url": "https://jaguarengines.uk/",
+          "logo": "https://jaguarengines.uk/images/logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -143,7 +143,7 @@
           "serviceType": "Jaguar AJ20D6 Engine Replacement",
           "provider": {
             "@type": "Organization",
-            "name": "jaguarengine.uk"
+            "name": "jaguarengines.uk"
           },
           "areaServed": "GB",
           "offers": {
@@ -157,10 +157,10 @@
         {
           "@type": "Dataset",
           "name": "Jaguar AJ20D6 UK Enquiry & Reliability Data 2025",
-          "description": "Proprietary UK enquiry volumes and reliability scoring data for the Jaguar AJ20D6, sourced from jaguarengine.uk's specialist marketplace activity.",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the Jaguar AJ20D6, sourced from jaguarengines.uk's specialist marketplace activity.",
           "creator": {
             "@type": "Organization",
-            "name": "jaguarengine.uk"
+            "name": "jaguarengines.uk"
           },
           "temporalCoverage": "2025",
           "spatialCoverage": "United Kingdom"
@@ -168,14 +168,14 @@
         {
           "@type": "WebPage",
           "name": "Jaguar AJ20D6 Engine — Specs, Reliability & Replacement Cost",
-          "url": "https://jaguarengine.uk/engines/aj20d6/",
+          "url": "https://jaguarengines.uk/engines/aj20d6/",
           "author": {
             "@type": "Organization",
-            "name": "jaguarengine.uk Editorial Team"
+            "name": "jaguarengines.uk Editorial Team"
           },
           "reviewedBy": {
             "@type": "Organization",
-            "name": "jaguarengine.uk Specialist Network"
+            "name": "jaguarengines.uk Specialist Network"
           },
           "datePublished": "2025-01-15",
           "dateModified": "2025-06-14"

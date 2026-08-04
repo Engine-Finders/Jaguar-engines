@@ -33,6 +33,7 @@
 //   );
 // }
 
+
 import Link from "next/link";
 
 export default function CoreVariants({ data }) {
@@ -40,15 +41,19 @@ export default function CoreVariants({ data }) {
 
   return (
     <section style={{ paddingBottom: 8 }}>
-      <h2>Core Variants</h2>
+      <h2 dangerouslySetInnerHTML={{ __html: "Core Variants" }} />
 
       {data.dieselVariants?.length > 0 && (
         <>
-          <h3>Diesel</h3>
+          <h3 dangerouslySetInnerHTML={{ __html: "Diesel" }} />
           <ul>
             {data.dieselVariants.map((v) => (
               <li key={v.url}>
-                <Link class="" href={v.url}>{v.name}</Link>
+                <Link
+                  class=""
+                  href={v.url}
+                  dangerouslySetInnerHTML={{ __html: v.name }}
+                />
               </li>
             ))}
           </ul>
@@ -57,18 +62,21 @@ export default function CoreVariants({ data }) {
 
       {data.petrolVariants?.length > 0 && (
         <>
-          <h3>Petrol</h3>
+          <h3 dangerouslySetInnerHTML={{ __html: "Petrol" }} />
           <ul>
             {data.petrolVariants.map((v) => (
               <li key={v.url}>
-                <Link href={v.url}>{v.name}</Link>
+                <Link
+                  href={v.url}
+                  dangerouslySetInnerHTML={{ __html: v.name }}
+                />
               </li>
             ))}
           </ul>
         </>
       )}
 
-      {data.scopeNote && <p>{data.scopeNote}</p>}
+      {data.scopeNote && <div dangerouslySetInnerHTML={{ __html: data.scopeNote }} />}
       <hr />
     </section>
   );

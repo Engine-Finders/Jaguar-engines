@@ -15,19 +15,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://jaguarengine.uk/"
+              "item": "https://jaguarengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "F-Pace",
-              "item": "https://jaguarengine.uk/f-pace/"
+              "item": "https://jaguarengines.uk/f-pace/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Jaguar F-Pace X761",
-              "item": "https://jaguarengine.uk/f-pace/x761/"
+              "item": "https://jaguarengines.uk/f-pace/x761/"
             }
           ]
         },
@@ -39,37 +39,37 @@
               "@type": "ListItem",
               "position": 1,
               "name": "204DTD AJ200D Engine",
-              "url": "https://jaguarengine.uk/engines/204dtd/"
+              "url": "https://jaguarengines.uk/engines/204dtd/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "AJ20D4 Engine",
-              "url": "https://jaguarengine.uk/engines/aj20d4/"
+              "url": "https://jaguarengines.uk/engines/aj20d4/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "306DT Engine",
-              "url": "https://jaguarengine.uk/engines/306dt/"
+              "url": "https://jaguarengines.uk/engines/306dt/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "PT204 Engine",
-              "url": "https://jaguarengine.uk/engines/pt204/"
+              "url": "https://jaguarengines.uk/engines/pt204/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "AJ126 Engine",
-              "url": "https://jaguarengine.uk/engines/aj126/"
+              "url": "https://jaguarengines.uk/engines/aj126/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "508PS AJ133 Engine",
-              "url": "https://jaguarengine.uk/engines/aj133/"
+              "url": "https://jaguarengines.uk/engines/aj133/"
             }
           ]
         },
@@ -81,25 +81,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "F-Pace D180",
-              "url": "https://jaguarengine.uk/f-pace/x761/d180/"
+              "url": "https://jaguarengines.uk/f-pace/x761/d180/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "F-Pace P250",
-              "url": "https://jaguarengine.uk/f-pace/x761/p250/"
+              "url": "https://jaguarengines.uk/f-pace/x761/p250/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "F-Pace P380",
-              "url": "https://jaguarengine.uk/f-pace/x761/p380/"
+              "url": "https://jaguarengines.uk/f-pace/x761/p380/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "F-Pace P550 SVR",
-              "url": "https://jaguarengine.uk/f-pace/x761/p550-svr/"
+              "url": "https://jaguarengines.uk/f-pace/x761/p550-svr/"
             }
           ]
         },
@@ -191,8 +191,8 @@
         {
           "@type": "Organization",
           "name": "JaguarEngine.uk",
-          "url": "https://jaguarengine.uk/",
-          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "url": "https://jaguarengines.uk/",
+          "logo": "https://jaguarengines.uk/images/jaguarengine-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -228,7 +228,7 @@
         {
           "@type": "WebPage",
           "name": "X761 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://jaguarengine.uk/f-pace/x761/",
+          "url": "https://jaguarengines.uk/f-pace/x761/",
           "author": {
             "@type": "Organization",
             "name": "JaguarEngine.uk Editorial Team"
@@ -337,7 +337,7 @@
         "avgReconCost": ""
       },
       {
-        "engineCode": "306DT",
+        "engineCode": "<a href='https://jaguarengines.uk/engine/306dt-306ps'>306DT</a>",
         "family": "3.0 Ingenium",
         "fuel": "Diesel",
         "displacement": "3.0L (2993cc)",
@@ -461,14 +461,14 @@
       },
       {
         "slot": "Highest Risk",
-        "engine": "204DTD/AJ200D 2.0 Ingenium Diesel (pre-2019, no chain history)",
+        "engine": "<a href='https://jaguarengines.uk/engine/ajd4-204dtd'>204DTD</a>/AJ200D 2.0 Ingenium Diesel (pre-2019, no chain history)",
         "quote": "The 2.0-litre Ingenium diesel has a rear-mounted timing chain that stretches and can fail catastrophically — cold-start rattle is the warning.",
         "whoItsFor": "Only buyers with documented chain replacement history."
       },
       {
         "slot": "Most Expensive Failure",
         "engine": "508PS 5.0 Supercharged V8 SVR",
-        "quote": "The supercharged AJ133 V8 delivers 550bhp but when it fails — typically timing chain tensioner wear or supercharger isolator failure — repairs require specialist intervention and five-figure bills.",
+        "quote": "The supercharged <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> V8 delivers 550bhp but when it fails — typically timing chain tensioner wear or supercharger isolator failure — repairs require specialist intervention and five-figure bills.",
         "whoItsFor": "Buyers who can absorb £20k+ repair bills."
       },
       {
@@ -665,7 +665,7 @@
       },
       {
         "variant": "P340 / P380",
-        "engineCode": "AJ126 (306PS)",
+        "engineCode": "AJ126 (<a href='https://jaguarengines.uk/engine/306dt-306ps'>306PS</a>)",
         "usedSupply": "£2,500–£4,500",
         "reconditionedSupply": "£4,500–£7,500",
         "rebuiltSupply": "£6,000–£9,500",

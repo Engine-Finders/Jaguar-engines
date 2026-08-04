@@ -3,20 +3,20 @@
     "slug": "aj-v8-40-42",
     "title": "Jaguar AJ-V8 4.0/4.2 Engine — Reliability & Replacement Cost",
     "description": "AJ-V8 is smooth and characterful, but early tensioners can destroy it — rated from UK owner enquiries. Compare quotes from vetted specialists today.",
-    "canonical": "https://jaguarengine.uk/engines/aj-v8-40-42/",
+    "canonical": "https://jaguarengines.uk/engines/aj-v8-40-42/",
     "openGraph": {
       "title": "Jaguar AJ-V8 4.0/4.2 Engine — Reliability & Replacement Cost",
       "description": "AJ-V8 is smooth and characterful, but early tensioners can destroy it — rated from UK owner enquiries. Compare quotes from vetted specialists today.",
       "type": "website",
-      "url": "https://jaguarengine.uk/engines/aj-v8-40-42/",
-      "image": "https://jaguarengine.uk/images/jaguar/engines/aj-v8-40-42.jpg",
-      "siteName": "jaguarengine.uk"
+      "url": "https://jaguarengines.uk/engines/aj-v8-40-42/",
+      "image": "https://jaguarengines.uk/images/jaguar/engines/aj-v8-40-42.jpg",
+      "siteName": "jaguarengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "Jaguar AJ-V8 4.0/4.2 Engine — Reliability & Replacement Cost",
       "description": "AJ-V8 is smooth and characterful, but early tensioners can destroy it — rated from UK owner enquiries. Compare quotes from vetted specialists today.",
-      "image": "https://jaguarengine.uk/images/jaguar/engines/aj-v8-40-42.jpg"
+      "image": "https://jaguarengines.uk/images/jaguar/engines/aj-v8-40-42.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -28,19 +28,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://jaguarengine.uk/"
+              "item": "https://jaguarengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://jaguarengine.uk/engines/"
+              "item": "https://jaguarengines.uk/engines/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "AJ-V8 4.0/4.2",
-              "item": "https://jaguarengine.uk/engines/aj-v8-40-42/"
+              "item": "https://jaguarengines.uk/engines/aj-v8-40-42/"
             }
           ]
         },
@@ -137,9 +137,9 @@
         },
         {
           "@type": "Organization",
-          "name": "jaguarengine.uk",
-          "url": "https://jaguarengine.uk/",
-          "logo": "https://jaguarengine.uk/images/logo.png",
+          "name": "jaguarengines.uk",
+          "url": "https://jaguarengines.uk/",
+          "logo": "https://jaguarengines.uk/images/logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -165,7 +165,7 @@
           "serviceType": "Jaguar AJ-V8 4.0/4.2 Engine Replacement",
           "provider": {
             "@type": "Organization",
-            "name": "jaguarengine.uk"
+            "name": "jaguarengines.uk"
           },
           "areaServed": "GB",
           "offers": {
@@ -179,10 +179,10 @@
         {
           "@type": "Dataset",
           "name": "Jaguar AJ-V8 UK Enquiry & Reliability Data 2025",
-          "description": "Proprietary UK enquiry volumes and reliability scoring data for the Jaguar AJ-V8 4.0/4.2, sourced from jaguarengine.uk's specialist marketplace activity.",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the Jaguar AJ-V8 4.0/4.2, sourced from jaguarengines.uk's specialist marketplace activity.",
           "creator": {
             "@type": "Organization",
-            "name": "jaguarengine.uk"
+            "name": "jaguarengines.uk"
           },
           "temporalCoverage": "2025",
           "spatialCoverage": "United Kingdom"
@@ -190,14 +190,14 @@
         {
           "@type": "WebPage",
           "name": "Jaguar AJ-V8 4.0/4.2 Engine — Reliability & Replacement Cost",
-          "url": "https://jaguarengine.uk/engines/aj-v8-40-42/",
+          "url": "https://jaguarengines.uk/engines/aj-v8-40-42/",
           "author": {
             "@type": "Organization",
-            "name": "jaguarengine.uk Editorial Team"
+            "name": "jaguarengines.uk Editorial Team"
           },
           "reviewedBy": {
             "@type": "Organization",
-            "name": "jaguarengine.uk Specialist Network"
+            "name": "jaguarengines.uk Specialist Network"
           },
           "datePublished": "2026-07-14",
           "dateModified": "2026-07-14"

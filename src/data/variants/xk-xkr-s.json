@@ -5,7 +5,7 @@
     "titleCharCount": 53,
     "description": "Every Jaguar XKR‑S engine — AJ133 5.0 supercharged V8. X150 generation, real UK costs and reliability. Get free quotes from 15+ vetted Jaguar specialists today.",
     "descriptionCharCount": 161,
-    "canonical": "https://jaguarengine.uk/xk/xkr-s/",
+    "canonical": "https://jaguarengines.uk/xk/xkr-s/",
     "openGraph": {
       "title": "",
       "description": "",
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://jaguarengine.uk/"
+              "item": "https://jaguarengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "XK",
-              "item": "https://jaguarengine.uk/xk/"
+              "item": "https://jaguarengines.uk/xk/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "XKR‑S",
-              "item": "https://jaguarengine.uk/xk/xkr-s/"
+              "item": "https://jaguarengines.uk/xk/xkr-s/"
             }
           ]
         },
@@ -54,7 +54,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "X150 XKR‑S (AJ133 508PS, 2011-2014)",
-              "url": "https://jaguarengine.uk/xk/x150/"
+              "url": "https://jaguarengines.uk/xk/x150/"
             }
           ]
         },
@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ133 (508PS)",
-              "url": "https://jaguarengine.uk/engines/aj133/"
+              "url": "https://jaguarengines.uk/engines/aj133/"
             }
           ]
         },
@@ -126,8 +126,8 @@
         {
           "@type": "Organization",
           "name": "JaguarEngine.uk",
-          "url": "https://jaguarengine.uk/",
-          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "url": "https://jaguarengines.uk/",
+          "logo": "https://jaguarengines.uk/images/jaguarengine-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -163,7 +163,7 @@
         {
           "@type": "WebPage",
           "name": "Jaguar XKR‑S Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://jaguarengine.uk/xk/xkr-s/",
+          "url": "https://jaguarengines.uk/xk/xkr-s/",
           "author": {
             "@type": "Organization",
             "name": "JaguarEngine.uk Editorial Team"
@@ -181,7 +181,7 @@
   "hero": {
     "tagPill": "Jaguar XK XKR‑S • 2011–2014 • AJ133 5.0 Supercharged V8",
     "h1": "Jaguar XK XKR‑S Engine Replacement — Compare Prices & Get Quotes",
-    "subHeadline": "Get quotes today from trusted UK Jaguar XKR‑S specialists. Compare reconditioned, rebuilt and used AJ133 5.0 V8 engines for the ultimate XK — supply & fit available nationwide.",
+    "subHeadline": "Get quotes today from trusted UK Jaguar XKR‑S specialists. Compare reconditioned, rebuilt and used <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> 5.0 V8 engines for the ultimate XK — supply & fit available nationwide.",
     "trustBadges": [
       "🔧 Supply & Fit Available",
       "✅ 12‑Month Warranty",

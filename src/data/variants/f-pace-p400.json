@@ -5,20 +5,20 @@
     "titleCharCount": 58,
     "description": "Jaguar F-Pace S and P400 – AJ126 and AJ20P6 six-cylinder engines. Real UK costs, coolant pipe and timing chain facts, and specialist quotes. Get free prices from 15+ vetted specialists today.",
     "descriptionCharCount": 158,
-    "canonical": "https://jaguarengine.uk/f-pace/p400/",
+    "canonical": "https://jaguarengines.uk/f-pace/p400/",
     "openGraph": {
       "title": "F-Pace S / P400 Engine Cost UK — Compare Quotes",
       "description": "Jaguar F-Pace S and P400 – AJ126 and AJ20P6 six-cylinder engines. Real UK costs, coolant pipe and timing chain facts, and specialist quotes. Get free prices from 15+ vetted specialists today.",
       "type": "website",
-      "url": "https://jaguarengine.uk/f-pace/p400/",
-      "image": "https://jaguarengine.uk/images/jaguar/hero/f-pace-p400.jpg",
+      "url": "https://jaguarengines.uk/f-pace/p400/",
+      "image": "https://jaguarengines.uk/images/jaguar/hero/f-pace-p400.jpg",
       "siteName": "JaguarEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "F-Pace S / P400 Engine Cost UK — Compare Quotes",
       "description": "Jaguar F-Pace S and P400 – AJ126 and AJ20P6 six-cylinder engines. Real UK costs, coolant pipe and timing chain facts, and specialist quotes.",
-      "image": "https://jaguarengine.uk/images/jaguar/hero/f-pace-p400.jpg"
+      "image": "https://jaguarengines.uk/images/jaguar/hero/f-pace-p400.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://jaguarengine.uk/"
+              "item": "https://jaguarengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "F-Pace",
-              "item": "https://jaguarengine.uk/f-pace/"
+              "item": "https://jaguarengines.uk/f-pace/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "S / P400",
-              "item": "https://jaguarengine.uk/f-pace/p400/"
+              "item": "https://jaguarengines.uk/f-pace/p400/"
             }
           ]
         },
@@ -54,13 +54,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "X761 F-Pace S (AJ126, 2016-2020)",
-              "url": "https://jaguarengine.uk/f-pace/x761/"
+              "url": "https://jaguarengines.uk/f-pace/x761/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "X761 F-Pace P400 (AJ20P6, 2021-present)",
-              "url": "https://jaguarengine.uk/f-pace/x761-facelift/"
+              "url": "https://jaguarengines.uk/f-pace/x761-facelift/"
             }
           ]
         },
@@ -72,13 +72,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ126",
-              "url": "https://jaguarengine.uk/engines/aj126/"
+              "url": "https://jaguarengines.uk/engines/aj126/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "AJ20P6",
-              "url": "https://jaguarengine.uk/engines/aj20p6/"
+              "url": "https://jaguarengines.uk/engines/aj20p6/"
             }
           ]
         },
@@ -138,8 +138,8 @@
         {
           "@type": "Organization",
           "name": "JaguarEngine.uk",
-          "url": "https://jaguarengine.uk/",
-          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "url": "https://jaguarengines.uk/",
+          "logo": "https://jaguarengines.uk/images/jaguarengine-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -175,7 +175,7 @@
         {
           "@type": "WebPage",
           "name": "F-Pace S / P400 Engine Cost UK — Compare Quotes",
-          "url": "https://jaguarengine.uk/f-pace/p400/",
+          "url": "https://jaguarengines.uk/f-pace/p400/",
           "author": {
             "@type": "Organization",
             "name": "JaguarEngine.uk Editorial Team"
@@ -200,7 +200,7 @@
       "🚚 Nationwide Delivery",
       "👥 15+ Specialists"
     ],
-    "priceAnchor": "Jaguar F-Pace S / P400 Engines — from £3,000 to £8,500 · Common codes: AJ126, AJ20P6",
+    "priceAnchor": "Jaguar F-Pace S / P400 Engines — from £3,000 to £8,500 · Common codes: AJ126, <a style='https://jaguarengines.uk/engine/aj20p6'>AJ20P6</a>",
     "registrationInput": {
       "flag": "🇬🇧 GB",
       "placeholder": "Enter your reg — e.g. AB12 CDE",
@@ -321,7 +321,7 @@
           "label": "Monitor",
           "text": "book inspection soon"
         },
-        "recommendation": "The supercharger coupler/torsion isolator is a known wear item on both the AJ126 and AJ133 engines. It can become \"very rattly\" at higher mileages. If you hear a rattling noise from the engine at idle that changes with revs, have the supercharger coupler inspected. Replacement is a specialist job but far cheaper than a full supercharger rebuild.",
+        "recommendation": "The supercharger coupler/torsion isolator is a known wear item on both the AJ126 and <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> engines. It can become \"very rattly\" at higher mileages. If you hear a rattling noise from the engine at idle that changes with revs, have the supercharger coupler inspected. Replacement is a specialist job but far cheaper than a full supercharger rebuild.",
         "failureLink": {
           "label": "Read the full supercharger failure guide",
           "href": "/failures/supercharger-failure/"

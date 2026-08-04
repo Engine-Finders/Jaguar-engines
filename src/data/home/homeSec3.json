@@ -60,7 +60,7 @@
       {
         "icon": "⚙️",
         "title": "Jaguar-Specific Knowledge",
-        "text": "We use exact factory terminology (AJ126, AJ133, AJ200D, Ingenium) and OEM part numbers."
+        "text": "We use exact factory terminology (AJ126, <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a>, AJ200D, Ingenium) and OEM part numbers."
       },
       {
         "icon": "👥",
@@ -89,7 +89,7 @@
     "title": "Typical UK Jaguar Replacement Costs",
     "columns": ["FAILURE TYPE", "RECONDITIONED S&F", "REBUILT S&F", "USED S&F", "MAIN DEALER EST."],
     "rows": [
-      { "failure": "Ingenium Timing Chain (AJ200D/204DTD)", "recon": "£3,500–£5,800", "rebuilt": "£4,800–£7,000", "used": "£2,000–£3,500", "dealer": "£7,000–£10,500" },
+      { "failure": "Ingenium Timing Chain (AJ200D/<a href='https://jaguarengines.uk/engine/ajd4-204dtd'>204DTD</a>)", "recon": "£3,500–£5,800", "rebuilt": "£4,800–£7,000", "used": "£2,000–£3,500", "dealer": "£7,000–£10,500" },
       { "failure": "AJ133 5.0 V8 Chain Tensioner (pre-2013)", "recon": "£5,500–£9,000", "rebuilt": "£8,000–£12,000", "used": "£3,000–£5,500", "dealer": "£11,000–£16,500" },
       { "failure": "276DT Oil Pump Failure", "recon": "£5,000–£7,500", "rebuilt": "£6,500–£9,500", "used": "£2,800–£4,500", "dealer": "£9,500–£14,000" },
       { "failure": "AJ126 Cooling System / Chain Tensioner", "recon": "£4,500–£7,500", "rebuilt": "£6,000–£9,500", "used": "£2,500–£4,500", "dealer": "£8,500–£13,000" },

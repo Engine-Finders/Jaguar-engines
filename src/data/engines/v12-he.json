@@ -3,20 +3,20 @@
     "slug": "v12-he",
     "title": "Jaguar V12 HE Engine — Specs, Reliability & Replacement Cost",
     "description": "Glorious V12 with cooling and ignition fragility — rated from 40+ real UK enquiries. Compare prices from 15+ vetted specialists today.",
-    "canonical": "https://jaguarengine.uk/engines/v12-he/",
+    "canonical": "https://jaguarengines.uk/engines/v12-he/",
     "openGraph": {
       "title": "Jaguar V12 HE Engine — Specs, Reliability & Replacement Cost",
       "description": "Glorious V12 with cooling and ignition fragility — rated from 40+ real UK enquiries. Compare prices from 15+ vetted specialists today.",
       "type": "website",
-      "url": "https://jaguarengine.uk/engines/v12-he/",
-      "image": "https://jaguarengine.uk/images/jaguar/engines/v12-he.jpg",
-      "siteName": "jaguarengine.uk"
+      "url": "https://jaguarengines.uk/engines/v12-he/",
+      "image": "https://jaguarengines.uk/images/jaguar/engines/v12-he.jpg",
+      "siteName": "jaguarengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "Jaguar V12 HE Engine — Specs, Reliability & Replacement Cost",
       "description": "Glorious V12 with cooling and ignition fragility — rated from 40+ real UK enquiries. Compare prices from 15+ vetted specialists today.",
-      "image": "https://jaguarengine.uk/images/jaguar/engines/v12-he.jpg"
+      "image": "https://jaguarengines.uk/images/jaguar/engines/v12-he.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -28,19 +28,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://jaguarengine.uk/"
+              "item": "https://jaguarengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://jaguarengine.uk/engines/"
+              "item": "https://jaguarengines.uk/engines/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "V12 HE",
-              "item": "https://jaguarengine.uk/engines/v12-he/"
+              "item": "https://jaguarengines.uk/engines/v12-he/"
             }
           ]
         },
@@ -52,19 +52,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Jaguar XJS XJ27/XJ40 V12 HE",
-              "url": "https://jaguarengine.uk/models/xjs/"
+              "url": "https://jaguarengines.uk/models/xjs/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Jaguar XJ12 XJ40/X300 V12 HE",
-              "url": "https://jaguarengine.uk/models/xj12/"
+              "url": "https://jaguarengines.uk/models/xj12/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Jaguar XJ6 XJ40/X300 V12 HE (late)",
-              "url": "https://jaguarengine.uk/models/xj6/"
+              "url": "https://jaguarengines.uk/models/xj6/"
             }
           ]
         },
@@ -115,9 +115,9 @@
         },
         {
           "@type": "Organization",
-          "name": "jaguarengine.uk",
-          "url": "https://jaguarengine.uk/",
-          "logo": "https://jaguarengine.uk/images/logo.png",
+          "name": "jaguarengines.uk",
+          "url": "https://jaguarengines.uk/",
+          "logo": "https://jaguarengines.uk/images/logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -143,7 +143,7 @@
           "serviceType": "Jaguar V12 HE Engine Replacement",
           "provider": {
             "@type": "Organization",
-            "name": "jaguarengine.uk"
+            "name": "jaguarengines.uk"
           },
           "areaServed": "GB",
           "offers": {
@@ -157,10 +157,10 @@
         {
           "@type": "Dataset",
           "name": "Jaguar V12 HE UK Enquiry & Reliability Data 2025",
-          "description": "Proprietary UK enquiry volumes and reliability scoring data for the Jaguar V12 HE, sourced from jaguarengine.uk's specialist marketplace activity.",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the Jaguar V12 HE, sourced from jaguarengines.uk's specialist marketplace activity.",
           "creator": {
             "@type": "Organization",
-            "name": "jaguarengine.uk"
+            "name": "jaguarengines.uk"
           },
           "temporalCoverage": "2025",
           "spatialCoverage": "United Kingdom"
@@ -168,14 +168,14 @@
         {
           "@type": "WebPage",
           "name": "Jaguar V12 HE Engine — Specs, Reliability & Replacement Cost",
-          "url": "https://jaguarengine.uk/engines/v12-he/",
+          "url": "https://jaguarengines.uk/engines/v12-he/",
           "author": {
             "@type": "Organization",
-            "name": "jaguarengine.uk Editorial Team"
+            "name": "jaguarengines.uk Editorial Team"
           },
           "reviewedBy": {
             "@type": "Organization",
-            "name": "jaguarengine.uk Specialist Network"
+            "name": "jaguarengines.uk Specialist Network"
           },
           "datePublished": "2025-07-14",
           "dateModified": "2025-07-14"

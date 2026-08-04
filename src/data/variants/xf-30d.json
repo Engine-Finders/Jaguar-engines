@@ -5,20 +5,20 @@
     "titleCharCount": 57,
     "description": "Jaguar XF 3.0d – 306DT V6 diesel. Real UK costs, timing chain and oil pump facts, and specialist quotes. Get free prices from 15+ vetted specialists today.",
     "descriptionCharCount": 158,
-    "canonical": "https://jaguarengine.uk/xf/30d/",
+    "canonical": "https://jaguarengines.uk/xf/30d/",
     "openGraph": {
       "title": "XF 3.0d Engine Replacement Cost UK — Compare Quotes",
       "description": "Jaguar XF 3.0d – 306DT V6 diesel. Real UK costs, timing chain and oil pump facts, and specialist quotes. Get free prices from 15+ vetted specialists today.",
       "type": "website",
-      "url": "https://jaguarengine.uk/xf/30d/",
-      "image": "https://jaguarengine.uk/images/jaguar/hero/xf-30d.jpg",
+      "url": "https://jaguarengines.uk/xf/30d/",
+      "image": "https://jaguarengines.uk/images/jaguar/hero/xf-30d.jpg",
       "siteName": "JaguarEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "XF 3.0d Engine Replacement Cost UK — Compare Quotes",
       "description": "Jaguar XF 3.0d – 306DT V6 diesel. Real UK costs, timing chain and oil pump facts, and specialist quotes.",
-      "image": "https://jaguarengine.uk/images/jaguar/hero/xf-30d.jpg"
+      "image": "https://jaguarengines.uk/images/jaguar/hero/xf-30d.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://jaguarengine.uk/"
+              "item": "https://jaguarengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "XF",
-              "item": "https://jaguarengine.uk/xf/"
+              "item": "https://jaguarengines.uk/xf/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "3.0d",
-              "item": "https://jaguarengine.uk/xf/30d/"
+              "item": "https://jaguarengines.uk/xf/30d/"
             }
           ]
         },
@@ -54,13 +54,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "XF X250 3.0d (306DT, 2009-2015)",
-              "url": "https://jaguarengine.uk/xf/x250/"
+              "url": "https://jaguarengines.uk/xf/x250/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "XF X260 3.0d (306DT, 2015-present)",
-              "url": "https://jaguarengine.uk/xf/x260/"
+              "url": "https://jaguarengines.uk/xf/x260/"
             }
           ]
         },
@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "306DT",
-              "url": "https://jaguarengine.uk/engines/306dt/"
+              "url": "https://jaguarengines.uk/engines/306dt/"
             }
           ]
         },
@@ -132,8 +132,8 @@
         {
           "@type": "Organization",
           "name": "JaguarEngine.uk",
-          "url": "https://jaguarengine.uk/",
-          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "url": "https://jaguarengines.uk/",
+          "logo": "https://jaguarengines.uk/images/jaguarengine-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -169,7 +169,7 @@
         {
           "@type": "WebPage",
           "name": "XF 3.0d Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://jaguarengine.uk/xf/30d/",
+          "url": "https://jaguarengines.uk/xf/30d/",
           "author": {
             "@type": "Organization",
             "name": "JaguarEngine.uk Editorial Team"
@@ -187,7 +187,7 @@
   "hero": {
     "tagPill": "Jaguar XF 3.0d • 2009–present • 2 Engine Generations",
     "h1": "Jaguar XF 3.0d Engine Replacement — Compare Prices & Get Quotes",
-    "subHeadline": "The XF 3.0d is powered by Jaguar's 306DT V6 diesel — a 3.0-litre twin-turbo that delivers 600 Nm of effortless torque. But beneath the refinement lies a well-documented weakness: timing chain tensioner failure that can destroy the engine without warning. Get quotes from UK specialists for reconditioned, rebuilt and used units today.",
+    "subHeadline": "The XF 3.0d is powered by Jaguar's <a href='https://jaguarengines.uk/engine/306dt-306ps'>306DT</a> V6 diesel — a 3.0-litre twin-turbo that delivers 600 Nm of effortless torque. But beneath the refinement lies a well-documented weakness: timing chain tensioner failure that can destroy the engine without warning. Get quotes from UK specialists for reconditioned, rebuilt and used units today.",
     "trustBadges": [
       "🔧 Supply & Fit Available",
       "✅ 12-Month Warranty",
@@ -315,7 +315,7 @@
           "label": "Check",
           "text": "book inspection urgently"
         },
-        "recommendation": "Injector seal leaks are among the most reported faults on the AJD-V6. Leaking seals allow combustion gases to escape, causing a knocking noise when cold and a diesel smell inside the car. EGR cooler failures are also common. If you notice a diesel smell or rough running, have the injector seals checked promptly. Catching seal leaks early prevents more serious damage.",
+        "recommendation": "Injector seal leaks are among the most reported faults on the <a href='https://jaguarengines.uk/engine/ajd-v6-diesel'>AJD-V6</a>. Leaking seals allow combustion gases to escape, causing a knocking noise when cold and a diesel smell inside the car. EGR cooler failures are also common. If you notice a diesel smell or rough running, have the injector seals checked promptly. Catching seal leaks early prevents more serious damage.",
         "failureLink": {
           "label": "Read the full injector seal failure guide",
           "href": "/failures/injector-seal-failure/"

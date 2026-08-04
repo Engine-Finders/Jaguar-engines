@@ -20,16 +20,22 @@ export default function HomeSec1({ data }) {
         {/* Text: second on mobile, left on desktop */}
         <div className="order-2 flex w-full flex-col gap-2 md:order-1 md:w-1/2">
           <h1 className="text-3xl font-bold text-black md:text-5xl">
-            The UK&apos;s Most Trusted Jaguar Ownership Guide
+             The UK&apos;s Most Trusted Jaguar Ownership Guide
           </h1>
 
-          <p className="text-sm text-gray-700">{data.subHeadline}</p>
+          <div
+            className="text-sm text-gray-700"
+            dangerouslySetInnerHTML={{ __html: data.subHeadline }}
+          />
 
           <ul className="flex flex-col gap-2 border border-gray-200 bg-gray-50 p-2 md:flex-row md:items-start md:gap-3">
             {data.trustStrip.map((item) => (
-              <li key={item.label} className="flex items-center gap-2 text-sm text-black md:flex-1 md:flex-col md:items-start">
-                <span>{item.icon}</span>
-                <span>{item.label}</span>
+              <li
+                key={item.label}
+                className="flex items-center gap-2 text-sm text-black md:flex-1 md:flex-col md:items-start"
+              >
+                <span dangerouslySetInnerHTML={{ __html: item.icon }} />
+                <span dangerouslySetInnerHTML={{ __html: item.label }} />
               </li>
             ))}
           </ul>
@@ -37,9 +43,8 @@ export default function HomeSec1({ data }) {
           <Link
             href={data.cta.href}
             className="inline-block w-full bg-blue-700 px-3 py-2 text-center text-sm font-semibold text-white md:w-auto"
-          >
-            {data.cta.label} →
-          </Link>
+            dangerouslySetInnerHTML={{ __html: `${data.cta.label} →` }}
+          />
         </div>
       </div>
     </section>

@@ -13,7 +13,7 @@
   "columns": ["ENGINE", "FUEL", "YEARS", "2025 ENQUIRIES", "VERDICT"],
   "engines": [
     {
-      "code": "AJ200D / 204DTD",
+      "code": "AJ200D / <a href='https://jaguarengines.uk/engine/ajd4-204dtd'>204DTD</a>",
       "spec": "2.0L Diesel (Ingenium)",
       "fuel": "Diesel",
       "fuelIcon": "🛢️",
@@ -77,7 +77,7 @@
       "href": "#"
     },
     {
-      "code": "AJ133 / 508PN",
+      "code": "<a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> / 508PN",
       "spec": "5.0L V8",
       "fuel": "Petrol",
       "fuelIcon": "⛽",

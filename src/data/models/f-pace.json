@@ -9,9 +9,9 @@
       "title": "F-Pace Engine Replacement Cost UK — Compare Quotes",
       "description": "Every F-Pace engine — AJ200D diesel, AJ200P petrol, AJ20D6 and AJ20P3 hybrids. 1 generation, real UK costs and reliability data. Compare prices from 15+ vetted Jaguar specialists today.",
       "type": "website",
-      "url": "https://jaguarengine.uk/f-pace/",
+      "url": "https://jaguarengines.uk/f-pace/",
       "image": "",
-      "siteName": "jaguarengine.uk"
+      "siteName": "jaguarengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
@@ -28,13 +28,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://jaguarengine.uk/"
+              "item": "https://jaguarengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "F-Pace",
-              "item": "https://jaguarengine.uk/f-pace/"
+              "item": "https://jaguarengines.uk/f-pace/"
             }
           ]
         },
@@ -47,7 +47,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "F-Pace X761 (2016-2024)",
-              "url": "https://jaguarengine.uk/f-pace/x761/"
+              "url": "https://jaguarengines.uk/f-pace/x761/"
             }
           ]
         },
@@ -60,31 +60,31 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ200D / 204DTD (early) — Ingenium Diesel 2.0L (2016-2019)",
-              "url": "https://jaguarengine.uk/engines/aj200d/"
+              "url": "https://jaguarengines.uk/engines/aj200d/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "AJ200D / 204DTD (revised) — Ingenium Diesel 2.0L (2019-2024)",
-              "url": "https://jaguarengine.uk/engines/aj200d/"
+              "url": "https://jaguarengines.uk/engines/aj200d/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "AJ200P / 204PT — Ingenium Petrol 2.0L (2017-2024)",
-              "url": "https://jaguarengine.uk/engines/aj200p/"
+              "url": "https://jaguarengines.uk/engines/aj200p/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "AJ20D6 — Ingenium Diesel MHEV 3.0L (2019-2024)",
-              "url": "https://jaguarengine.uk/engines/aj20d6/"
+              "url": "https://jaguarengines.uk/engines/aj20d6/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "AJ20P3 — Ingenium Petrol PHEV 2.0L + EV (2021-2024)",
-              "url": "https://jaguarengine.uk/engines/aj20p3/"
+              "url": "https://jaguarengines.uk/engines/aj20p3/"
             }
           ]
         },
@@ -159,8 +159,8 @@
         },
         {
           "@type": "Organization",
-          "name": "jaguarengine.uk",
-          "url": "https://jaguarengine.uk/",
+          "name": "jaguarengines.uk",
+          "url": "https://jaguarengines.uk/",
           "logo": "[logo asset URL — use the site's primary logo]",
           "sameAs": [],
           "parentOrganization": {
@@ -173,7 +173,7 @@
           "serviceType": "F-Pace Engine Replacement",
           "provider": {
             "@type": "Organization",
-            "name": "jaguarengine.uk"
+            "name": "jaguarengines.uk"
           },
           "areaServed": "GB",
           "offers": {
@@ -186,10 +186,10 @@
         {
           "@type": "Dataset",
           "name": "F-Pace UK Engine Enquiry Data 2025",
-          "description": "Proprietary UK enquiry volumes and demand trends for Jaguar F-Pace engines, sourced from jaguarengine.uk's specialist marketplace activity.",
+          "description": "Proprietary UK enquiry volumes and demand trends for Jaguar F-Pace engines, sourced from jaguarengines.uk's specialist marketplace activity.",
           "creator": {
             "@type": "Organization",
-            "name": "jaguarengine.uk"
+            "name": "jaguarengines.uk"
           },
           "temporalCoverage": "2025",
           "spatialCoverage": "United Kingdom"
@@ -197,14 +197,14 @@
         {
           "@type": "WebPage",
           "name": "F-Pace Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://jaguarengine.uk/f-pace/",
+          "url": "https://jaguarengines.uk/f-pace/",
           "author": {
             "@type": "Organization",
-            "name": "jaguarengine.uk Editorial Team"
+            "name": "jaguarengines.uk Editorial Team"
           },
           "reviewedBy": {
             "@type": "Organization",
-            "name": "jaguarengine.uk Specialist Network"
+            "name": "jaguarengines.uk Specialist Network"
           },
           "datePublished": "2026-07-07",
           "dateModified": "2026-07-07",
@@ -216,14 +216,14 @@
           },
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "url": "https://jaguarengine.uk/f-pace/"
+            "url": "https://jaguarengines.uk/f-pace/"
           }
         }
       ]
     }
   },
   "hero": {
-    "tagPill": "JAGUAR • F-PACE • 2016–2024 • 1 Generation • AJ200D / AJ200P / AJ20D6",
+    "tagPill": "JAGUAR • F-PACE • 2016–2024 • 1 Generation • AJ200D / AJ200P / <a href='https://jaguarengines.uk/engine/aj20d6'>AJ20D6</a>",
     "h1": "F-Pace Engines — The Complete UK Guide",
     "subHeadline": "One generation, two clean powertrain eras and a genuine ✅ Safe verdict across every engine variant — backed by 220 real UK F-Pace engine enquiries in 2025 [JAG-VERIFIED]. Whether you're weighing the diesel timing-chain caveat, the petrol's water-pump weakness, or simply want to know if your F-Pace is worth fixing, this is the honest, data-led ownership guide.",
     "trustStrip": [
@@ -390,7 +390,7 @@
     ],
     "engines": [
       {
-        "engineCode": "AJ200D / 204DTD (early)",
+        "engineCode": "AJ200D / <a href='https://jaguarengines.uk/engine/ajd4-204dtd'>204DTD</a> (early)",
         "family": "Ingenium",
         "fuel": "Diesel",
         "displacement": "2.0L",
@@ -758,7 +758,7 @@
     ]
   },
   "trustBlock": {
-    "h2": "Why F‑Pace Owners Trust jaguarengine.uk",
+    "h2": "Why F‑Pace Owners Trust jaguarengines.uk",
     "signals": [
       {
         "icon": "📊",

@@ -3,16 +3,24 @@ export default function MarketIntelligence({ data }) {
 
   return (
     <section style={{ paddingBottom: 8 }}>
-      <h2>Market Intelligence</h2>
+      <h2 dangerouslySetInnerHTML={{ __html: "Market Intelligence" }} />
+
       {data.items?.length > 0 && (
         <ul>
           {data.items.map((item) => (
             <li key={item.label}>
-              <strong>{item.label}:</strong> {item.value}
+              <strong
+                dangerouslySetInnerHTML={{ __html: `${item.label}:` }}
+              />
+              {" "}
+              <span
+                dangerouslySetInnerHTML={{ __html: item.value }}
+              />
             </li>
           ))}
         </ul>
       )}
+
       <hr />
     </section>
   );

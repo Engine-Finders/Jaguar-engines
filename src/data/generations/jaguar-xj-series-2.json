@@ -15,19 +15,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://jaguarengine.uk/"
+              "item": "https://jaguarengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "XJ",
-              "item": "https://jaguarengine.uk/xj/"
+              "item": "https://jaguarengines.uk/xj/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Jaguar XJ Series 2",
-              "item": "https://jaguarengine.uk/xj/series-2/"
+              "item": "https://jaguarengines.uk/xj/series-2/"
             }
           ]
         },
@@ -39,25 +39,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "2.8 XK Six (7Lxxxx) Engine",
-              "url": "https://jaguarengine.uk/engines/28-xk/"
+              "url": "https://jaguarengines.uk/engines/28-xk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "3.4 XK Six (8Lxxxx) Engine",
-              "url": "https://jaguarengine.uk/engines/34-xk/"
+              "url": "https://jaguarengines.uk/engines/34-xk/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "4.2 XK Six (8Lxxxx) Engine",
-              "url": "https://jaguarengine.uk/engines/42-xk/"
+              "url": "https://jaguarengines.uk/engines/42-xk/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "5.3 V12 Engine",
-              "url": "https://jaguarengine.uk/engines/53-v12/"
+              "url": "https://jaguarengines.uk/engines/53-v12/"
             }
           ]
         },
@@ -69,37 +69,37 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Jaguar XJ6 2.8",
-              "url": "https://jaguarengine.uk/xj/28/"
+              "url": "https://jaguarengines.uk/xj/28/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Jaguar XJ6 3.4",
-              "url": "https://jaguarengine.uk/xj/34/"
+              "url": "https://jaguarengines.uk/xj/34/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Jaguar XJ6 4.2",
-              "url": "https://jaguarengine.uk/xj/42/"
+              "url": "https://jaguarengines.uk/xj/42/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "Jaguar XJ12 5.3",
-              "url": "https://jaguarengine.uk/xj/53-v12/"
+              "url": "https://jaguarengines.uk/xj/53-v12/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "Jaguar XJC 4.2",
-              "url": "https://jaguarengine.uk/xj/xjc-42/"
+              "url": "https://jaguarengines.uk/xj/xjc-42/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "Jaguar XJC 5.3",
-              "url": "https://jaguarengine.uk/xj/xjc-53/"
+              "url": "https://jaguarengines.uk/xj/xjc-53/"
             }
           ]
         },
@@ -191,8 +191,8 @@
         {
           "@type": "Organization",
           "name": "JaguarEngine.uk",
-          "url": "https://jaguarengine.uk/",
-          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "url": "https://jaguarengines.uk/",
+          "logo": "https://jaguarengines.uk/images/jaguarengine-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -228,7 +228,7 @@
         {
           "@type": "WebPage",
           "name": "XJ Series 2 Engine Cost UK — Compare Quotes",
-          "url": "https://jaguarengine.uk/xj/series-2/",
+          "url": "https://jaguarengines.uk/xj/series-2/",
           "author": {
             "@type": "Organization",
             "name": "JaguarEngine.uk Editorial Team"

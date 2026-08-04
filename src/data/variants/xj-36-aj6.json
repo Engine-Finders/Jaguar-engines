@@ -5,20 +5,20 @@
     "titleCharCount": 57,
     "description": "Jaguar XJ 3.6 – AJ6 3.6-litre inline-six. Real UK costs, head gasket and timing chain facts, and specialist quotes. Get free prices from 15+ vetted specialists today.",
     "descriptionCharCount": 158,
-    "canonical": "https://jaguarengine.uk/xj/36-aj6/",
+    "canonical": "https://jaguarengines.uk/xj/36-aj6/",
     "openGraph": {
       "title": "XJ 3.6 Engine Replacement Cost UK — Compare Quotes",
       "description": "Jaguar XJ 3.6 – AJ6 3.6-litre inline-six. Real UK costs, head gasket and timing chain facts, and specialist quotes. Get free prices from 15+ vetted specialists today.",
       "type": "website",
-      "url": "https://jaguarengine.uk/xj/36-aj6/",
-      "image": "https://jaguarengine.uk/images/jaguar/hero/xj-36-aj6.jpg",
+      "url": "https://jaguarengines.uk/xj/36-aj6/",
+      "image": "https://jaguarengines.uk/images/jaguar/hero/xj-36-aj6.jpg",
       "siteName": "JaguarEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "XJ 3.6 Engine Replacement Cost UK — Compare Quotes",
       "description": "Jaguar XJ 3.6 – AJ6 3.6-litre inline-six. Real UK costs, head gasket and timing chain facts, and specialist quotes.",
-      "image": "https://jaguarengine.uk/images/jaguar/hero/xj-36-aj6.jpg"
+      "image": "https://jaguarengines.uk/images/jaguar/hero/xj-36-aj6.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://jaguarengine.uk/"
+              "item": "https://jaguarengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "XJ",
-              "item": "https://jaguarengine.uk/xj/"
+              "item": "https://jaguarengines.uk/xj/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "3.6",
-              "item": "https://jaguarengine.uk/xj/36-aj6/"
+              "item": "https://jaguarengines.uk/xj/36-aj6/"
             }
           ]
         },
@@ -54,7 +54,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "XJ40 3.6 (AJ6, 1986-1989)",
-              "url": "https://jaguarengine.uk/xj/xj40/"
+              "url": "https://jaguarengines.uk/xj/xj40/"
             }
           ]
         },
@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ6 (3.6)",
-              "url": "https://jaguarengine.uk/engines/aj6/"
+              "url": "https://jaguarengines.uk/engines/aj6/"
             }
           ]
         },
@@ -126,8 +126,8 @@
         {
           "@type": "Organization",
           "name": "JaguarEngine.uk",
-          "url": "https://jaguarengine.uk/",
-          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "url": "https://jaguarengines.uk/",
+          "logo": "https://jaguarengines.uk/images/jaguarengine-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -163,7 +163,7 @@
         {
           "@type": "WebPage",
           "name": "XJ 3.6 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://jaguarengine.uk/xj/36-aj6/",
+          "url": "https://jaguarengines.uk/xj/36-aj6/",
           "author": {
             "@type": "Organization",
             "name": "JaguarEngine.uk Editorial Team"
@@ -181,7 +181,7 @@
   "hero": {
     "tagPill": "Jaguar XJ 3.6 • 1986–1989 • 3.6-litre AJ6 Inline-Six",
     "h1": "Jaguar XJ 3.6 Engine Replacement — Compare Prices & Get Quotes",
-    "subHeadline": "The XJ 3.6 is powered by Jaguar's first all-new engine in decades — the AJ6 3.6-litre DOHC inline-six. It's one of the most reliable and robust engines Jaguar ever built, but corrosion around water passages and timing chain tensioner wear are well-documented with age. Get quotes from UK specialists for reconditioned, rebuilt and used units today.",
+    "subHeadline": "The XJ 3.6 is powered by Jaguar's first all-new engine in decades — the <a href='https://jaguarengines.uk/engine/aj6-aj16'>AJ6</a> 3.6-litre DOHC inline-six. It's one of the most reliable and robust engines Jaguar ever built, but corrosion around water passages and timing chain tensioner wear are well-documented with age. Get quotes from UK specialists for reconditioned, rebuilt and used units today.",
     "trustBadges": [
       "🔧 Supply & Fit Available",
       "✅ 12-Month Warranty",

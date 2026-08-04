@@ -3,35 +3,59 @@ export default function VariantHero({ data }) {
 
   return (
     <section style={{ paddingBottom: 8 }}>
-      {data.tagPill && <p>{data.tagPill}</p>}
-      <h1>{data.h1}</h1>
-      {data.subHeadline && <p>{data.subHeadline}</p>}
+      {data.tagPill && (
+        <div dangerouslySetInnerHTML={{ __html: data.tagPill }} />
+      )}
+
+      <h1 dangerouslySetInnerHTML={{ __html: data.h1 }} />
+
+      {data.subHeadline && (
+        <div dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
+      )}
 
       {data.trustBadges?.length > 0 && (
         <ul>
           {data.trustBadges.map((badge) => (
-            <li key={badge}>{badge}</li>
+            <li key={badge} dangerouslySetInnerHTML={{ __html: badge }} />
           ))}
         </ul>
       )}
 
-      {data.priceAnchor && <p>{data.priceAnchor}</p>}
+      {data.priceAnchor && (
+        <div dangerouslySetInnerHTML={{ __html: data.priceAnchor }} />
+      )}
 
       {data.registrationInput && (
         <p>
-          {data.registrationInput.flag} {data.registrationInput.placeholder}
+          <span
+            dangerouslySetInnerHTML={{
+              __html: data.registrationInput.flag,
+            }}
+          />{" "}
+          <span
+            dangerouslySetInnerHTML={{
+              __html: data.registrationInput.placeholder,
+            }}
+          />
+
           {data.registrationInput.cta && (
             <>
               {" — "}
-              <a href={data.registrationInput.cta.href}>
-                {data.registrationInput.cta.label}
-              </a>
+              <a
+                href={data.registrationInput.cta.href}
+                dangerouslySetInnerHTML={{
+                  __html: data.registrationInput.cta.label,
+                }}
+              />
             </>
           )}
         </p>
       )}
 
-      {data.ticker && <p>{data.ticker}</p>}
+      {data.ticker && (
+        <div dangerouslySetInnerHTML={{ __html: data.ticker }} />
+      )}
+
       <hr />
     </section>
   );

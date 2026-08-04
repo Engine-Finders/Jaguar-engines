@@ -3,21 +3,21 @@ export default function WhoShouldBuy({ data }) {
 
   return (
     <section style={{ paddingBottom: 8 }}>
-      <h2>{data.h2}</h2>
+      <h2 dangerouslySetInnerHTML={{ __html: data.h2 }} />
       <table border="1" cellPadding="4" cellSpacing="0">
         <thead>
           <tr>
             {data.columns?.map((col) => (
-              <th key={col}>{col}</th>
+              <th key={col} dangerouslySetInnerHTML={{ __html: col }} />
             ))}
           </tr>
         </thead>
         <tbody>
           {data.profiles?.map((row) => (
             <tr key={row.buyerProfile}>
-              <td>{row.buyerProfile}</td>
-              <td>{row.rating}</td>
-              <td>{row.verdict}</td>
+              <td dangerouslySetInnerHTML={{ __html: row.buyerProfile }} />
+              <td dangerouslySetInnerHTML={{ __html: row.rating }} />
+              <td dangerouslySetInnerHTML={{ __html: row.verdict }} />
             </tr>
           ))}
         </tbody>

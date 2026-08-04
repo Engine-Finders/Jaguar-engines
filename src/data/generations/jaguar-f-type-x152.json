@@ -15,19 +15,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://jaguarengine.uk/"
+              "item": "https://jaguarengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "F-Type",
-              "item": "https://jaguarengine.uk/f-type/"
+              "item": "https://jaguarengines.uk/f-type/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Jaguar F-Type X152",
-              "item": "https://jaguarengine.uk/f-type/x152/"
+              "item": "https://jaguarengines.uk/f-type/x152/"
             }
           ]
         },
@@ -39,19 +39,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "PT204 Ingenium 2.0 Turbo Petrol",
-              "url": "https://jaguarengine.uk/engines/pt204/"
+              "url": "https://jaguarengines.uk/engines/pt204/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "306PS AJ126 V6 Supercharged Petrol",
-              "url": "https://jaguarengine.uk/engines/306ps/"
+              "url": "https://jaguarengines.uk/engines/306ps/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "508PS AJ133 V8 Supercharged Petrol",
-              "url": "https://jaguarengine.uk/engines/508ps/"
+              "url": "https://jaguarengines.uk/engines/508ps/"
             }
           ]
         },
@@ -63,55 +63,55 @@
               "@type": "ListItem",
               "position": 1,
               "name": "P300",
-              "url": "https://jaguarengine.uk/f-type/x152/p300/"
+              "url": "https://jaguarengines.uk/f-type/x152/p300/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "V6",
-              "url": "https://jaguarengine.uk/f-type/x152/v6/"
+              "url": "https://jaguarengines.uk/f-type/x152/v6/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "V6 S",
-              "url": "https://jaguarengine.uk/f-type/x152/v6-s/"
+              "url": "https://jaguarengines.uk/f-type/x152/v6-s/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "400 Sport",
-              "url": "https://jaguarengine.uk/f-type/x152/400-sport/"
+              "url": "https://jaguarengines.uk/f-type/x152/400-sport/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "V8 S",
-              "url": "https://jaguarengine.uk/f-type/x152/v8-s/"
+              "url": "https://jaguarengines.uk/f-type/x152/v8-s/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "R",
-              "url": "https://jaguarengine.uk/f-type/x152/r/"
+              "url": "https://jaguarengines.uk/f-type/x152/r/"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "SVR",
-              "url": "https://jaguarengine.uk/f-type/x152/svr/"
+              "url": "https://jaguarengines.uk/f-type/x152/svr/"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "P450",
-              "url": "https://jaguarengine.uk/f-type/x152/p450/"
+              "url": "https://jaguarengines.uk/f-type/x152/p450/"
             },
             {
               "@type": "ListItem",
               "position": 9,
               "name": "P575",
-              "url": "https://jaguarengine.uk/f-type/x152/p575/"
+              "url": "https://jaguarengines.uk/f-type/x152/p575/"
             }
           ]
         },
@@ -203,8 +203,8 @@
         {
           "@type": "Organization",
           "name": "JaguarEngine.uk",
-          "url": "https://jaguarengine.uk/",
-          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "url": "https://jaguarengines.uk/",
+          "logo": "https://jaguarengines.uk/images/jaguarengine-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -240,7 +240,7 @@
         {
           "@type": "WebPage",
           "name": "X152 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://jaguarengine.uk/f-type/x152/",
+          "url": "https://jaguarengines.uk/f-type/x152/",
           "author": {
             "@type": "Organization",
             "name": "JaguarEngine.uk Editorial Team"
@@ -317,7 +317,7 @@
         "avgReconCost": "£3,000–£5,000"
       },
       {
-        "engineCode": "306PS (AJ126)",
+        "engineCode": "<a href='https://jaguarengines.uk/engine/306dt-306ps'>306PS</a> (AJ126)",
         "family": "AJ126 V6",
         "fuel": "Petrol, supercharged",
         "displacement": "3.0L",
@@ -365,7 +365,7 @@
         "avgReconCost": "£5,500–£9,000"
       },
       {
-        "engineCode": "508PS (AJ133)",
+        "engineCode": "508PS (<a href='https://jaguarengines.uk/engine/aj133'>AJ133</a>)",
         "family": "AJ133 V8",
         "fuel": "Petrol, supercharged",
         "displacement": "5.0L",

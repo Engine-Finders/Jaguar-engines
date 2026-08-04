@@ -3,20 +3,20 @@
     "slug": "ingenium-20-diesel",
     "title": "Jaguar Ingenium 2.0 Diesel Engine — Specs, Reliability & Cost",
     "description": "Efficient but timing‑chain stretch before 70k is a real risk — rated from 590+ real UK enquiries. Compare quotes from 15 vetted specialists today.",
-    "canonical": "https://jaguarengine.uk/engines/ingenium-20-diesel/",
+    "canonical": "https://jaguarengines.uk/engines/ingenium-20-diesel/",
     "openGraph": {
       "title": "Jaguar Ingenium 2.0 Diesel Engine — Specs, Reliability & Cost",
       "description": "Efficient but timing‑chain stretch before 70k is a real risk — rated from 590+ real UK enquiries. Compare quotes from 15 vetted specialists today.",
       "type": "website",
-      "url": "https://jaguarengine.uk/engines/ingenium-20-diesel/",
-      "image": "https://jaguarengine.uk/images/jaguar/engines/ingenium-20-diesel.jpg",
-      "siteName": "jaguarengine.uk"
+      "url": "https://jaguarengines.uk/engines/ingenium-20-diesel/",
+      "image": "https://jaguarengines.uk/images/jaguar/engines/ingenium-20-diesel.jpg",
+      "siteName": "jaguarengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "Jaguar Ingenium 2.0 Diesel Engine — Specs, Reliability & Cost",
       "description": "Efficient but timing‑chain stretch before 70k is a real risk — rated from 590+ real UK enquiries. Compare quotes from 15 vetted specialists today.",
-      "image": "https://jaguarengine.uk/images/jaguar/engines/ingenium-20-diesel.jpg"
+      "image": "https://jaguarengines.uk/images/jaguar/engines/ingenium-20-diesel.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -28,19 +28,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://jaguarengine.uk/"
+              "item": "https://jaguarengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://jaguarengine.uk/engines/"
+              "item": "https://jaguarengines.uk/engines/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Ingenium 2.0 Diesel",
-              "item": "https://jaguarengine.uk/engines/ingenium-20-diesel/"
+              "item": "https://jaguarengines.uk/engines/ingenium-20-diesel/"
             }
           ]
         },
@@ -52,25 +52,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "XE X760 2.0 D",
-              "url": "https://jaguarengine.uk/models/xe/x760/"
+              "url": "https://jaguarengines.uk/models/xe/x760/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "XF X260 2.0 D",
-              "url": "https://jaguarengine.uk/models/xf/x260/"
+              "url": "https://jaguarengines.uk/models/xf/x260/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "F‑Pace X761 2.0 D",
-              "url": "https://jaguarengine.uk/models/f-pace/x761/"
+              "url": "https://jaguarengines.uk/models/f-pace/x761/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "E‑Pace X540 2.0 D",
-              "url": "https://jaguarengine.uk/models/e-pace/x540/"
+              "url": "https://jaguarengines.uk/models/e-pace/x540/"
             }
           ]
         },
@@ -121,9 +121,9 @@
         },
         {
           "@type": "Organization",
-          "name": "jaguarengine.uk",
-          "url": "https://jaguarengine.uk/",
-          "logo": "https://jaguarengine.uk/images/logo.png",
+          "name": "jaguarengines.uk",
+          "url": "https://jaguarengines.uk/",
+          "logo": "https://jaguarengines.uk/images/logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -149,7 +149,7 @@
           "serviceType": "Jaguar Ingenium 2.0 Diesel Engine Replacement",
           "provider": {
             "@type": "Organization",
-            "name": "jaguarengine.uk"
+            "name": "jaguarengines.uk"
           },
           "areaServed": "GB",
           "offers": {
@@ -163,10 +163,10 @@
         {
           "@type": "Dataset",
           "name": "Jaguar Ingenium 2.0 Diesel UK Enquiry & Reliability Data 2025",
-          "description": "Proprietary UK enquiry volumes and reliability scoring data for the Jaguar Ingenium 2.0 Diesel, sourced from jaguarengine.uk's specialist marketplace activity.",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the Jaguar Ingenium 2.0 Diesel, sourced from jaguarengines.uk's specialist marketplace activity.",
           "creator": {
             "@type": "Organization",
-            "name": "jaguarengine.uk"
+            "name": "jaguarengines.uk"
           },
           "temporalCoverage": "2025",
           "spatialCoverage": "United Kingdom"
@@ -174,14 +174,14 @@
         {
           "@type": "WebPage",
           "name": "Jaguar Ingenium 2.0 Diesel Engine — Specs, Reliability & Cost",
-          "url": "https://jaguarengine.uk/engines/ingenium-20-diesel/",
+          "url": "https://jaguarengines.uk/engines/ingenium-20-diesel/",
           "author": {
             "@type": "Organization",
-            "name": "jaguarengine.uk Editorial Team"
+            "name": "jaguarengines.uk Editorial Team"
           },
           "reviewedBy": {
             "@type": "Organization",
-            "name": "jaguarengine.uk Specialist Network"
+            "name": "jaguarengines.uk Specialist Network"
           },
           "datePublished": "2025-01-01",
           "dateModified": "2026-07-14"
@@ -220,7 +220,7 @@
     "rows": [
       {
         "metric": "Engine Family",
-        "value": "Ingenium 2.0 Diesel / 204DTD / AJ200D"
+        "value": "Ingenium 2.0 Diesel / <a href='https://jaguarengines.uk/engine/ajd4-204dtd'>204DTD</a> / AJ200D"
       },
       {
         "metric": "Fuel",

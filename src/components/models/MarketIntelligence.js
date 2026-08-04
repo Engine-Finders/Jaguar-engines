@@ -3,23 +3,23 @@ export default function MarketIntelligence({ data }) {
 
   return (
     <section style={{ paddingBottom: 8 }}>
-      <h2>{data.h2}</h2>
+      <h2 dangerouslySetInnerHTML={{ __html: data.h2 }} />
 
       {data.signals?.length > 0 && (
         <table border="1" cellPadding="4" cellSpacing="0">
           <thead>
             <tr>
-              <th>Signal</th>
-              <th>Data</th>
-              <th>Demand Trend</th>
+              <th dangerouslySetInnerHTML={{ __html: "Signal" }} />
+              <th dangerouslySetInnerHTML={{ __html: "Data" }} />
+              <th dangerouslySetInnerHTML={{ __html: "Demand Trend" }} />
             </tr>
           </thead>
           <tbody>
             {data.signals.map((row) => (
               <tr key={row.signal}>
-                <td>{row.signal}</td>
-                <td>{row.data}</td>
-                <td>{row.demandTrend}</td>
+                <td dangerouslySetInnerHTML={{ __html: row.signal }} />
+                <td dangerouslySetInnerHTML={{ __html: row.data }} />
+                <td dangerouslySetInnerHTML={{ __html: row.demandTrend }} />
               </tr>
             ))}
           </tbody>
@@ -28,14 +28,14 @@ export default function MarketIntelligence({ data }) {
 
       {data.insights?.length > 0 && (
         <>
-          <h3>Insights from the data</h3>
+          <h3 dangerouslySetInnerHTML={{ __html: "Insights from the data" }} />
           {data.insights.map((insight) => (
-            <p key={insight}>{insight}</p>
+            <div key={insight} dangerouslySetInnerHTML={{ __html: insight }} />
           ))}
         </>
       )}
 
-      {data.liveEnquiryFeedNote && <p>{data.liveEnquiryFeedNote}</p>}
+      {data.liveEnquiryFeedNote && <div dangerouslySetInnerHTML={{ __html: data.liveEnquiryFeedNote }} />}
       <hr />
     </section>
   );

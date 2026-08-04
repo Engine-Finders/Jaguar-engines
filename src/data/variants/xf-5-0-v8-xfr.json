@@ -5,20 +5,20 @@
     "titleCharCount": 56,
     "description": "Every Jaguar XF 5.0 V8 & XFR engine — AJ133 V8. Real UK costs, timing chain, coolant pipe and reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
     "descriptionCharCount": 160,
-    "canonical": "https://jaguarengine.uk/xf/5-0-v8-xfr/",
+    "canonical": "https://jaguarengines.uk/xf/5-0-v8-xfr/",
     "openGraph": {
       "title": "XF 5.0 V8 Engine Replacement Cost UK — Compare Quotes",
       "description": "Every Jaguar XF 5.0 V8 & XFR engine — AJ133 V8. Real UK costs, timing chain, coolant pipe and reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
       "type": "website",
-      "url": "https://jaguarengine.uk/xf/5-0-v8-xfr/",
-      "image": "https://jaguarengine.uk/images/jaguar/hero/xf-5-0-v8-xfr.jpg",
+      "url": "https://jaguarengines.uk/xf/5-0-v8-xfr/",
+      "image": "https://jaguarengines.uk/images/jaguar/hero/xf-5-0-v8-xfr.jpg",
       "siteName": "JaguarEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "XF 5.0 V8 Engine Replacement Cost UK — Compare Quotes",
       "description": "Every Jaguar XF 5.0 V8 & XFR engine — AJ133 V8. Real UK costs, timing chain, coolant pipe and reliability data.",
-      "image": "https://jaguarengine.uk/images/jaguar/hero/xf-5-0-v8-xfr.jpg"
+      "image": "https://jaguarengines.uk/images/jaguar/hero/xf-5-0-v8-xfr.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://jaguarengine.uk/"
+              "item": "https://jaguarengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "XF",
-              "item": "https://jaguarengine.uk/xf/"
+              "item": "https://jaguarengines.uk/xf/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "5.0 V8 / XFR",
-              "item": "https://jaguarengine.uk/xf/5-0-v8-xfr/"
+              "item": "https://jaguarengines.uk/xf/5-0-v8-xfr/"
             }
           ]
         },
@@ -54,19 +54,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "XF X250 5.0 V8 (AJ133, 385 PS, 2009-2015)",
-              "url": "https://jaguarengine.uk/xf/x250/"
+              "url": "https://jaguarengines.uk/xf/x250/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "XF X250 XFR (AJ133S, 510 PS, 2009-2013)",
-              "url": "https://jaguarengine.uk/xf/xfr/"
+              "url": "https://jaguarengines.uk/xf/xfr/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "XF X250 XFR / XFR-S (AJ133S, 510-550 PS, 2013-2015)",
-              "url": "https://jaguarengine.uk/xf/xfr-s/"
+              "url": "https://jaguarengines.uk/xf/xfr-s/"
             }
           ]
         },
@@ -78,13 +78,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ133",
-              "url": "https://jaguarengine.uk/engines/aj133/"
+              "url": "https://jaguarengines.uk/engines/aj133/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "AJ133S",
-              "url": "https://jaguarengine.uk/engines/aj133/"
+              "url": "https://jaguarengines.uk/engines/aj133/"
             }
           ]
         },
@@ -144,8 +144,8 @@
         {
           "@type": "Organization",
           "name": "JaguarEngine.uk",
-          "url": "https://jaguarengine.uk/",
-          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "url": "https://jaguarengines.uk/",
+          "logo": "https://jaguarengines.uk/images/jaguarengine-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -181,7 +181,7 @@
         {
           "@type": "WebPage",
           "name": "XF 5.0 V8 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://jaguarengine.uk/xf/5-0-v8-xfr/",
+          "url": "https://jaguarengines.uk/xf/5-0-v8-xfr/",
           "author": {
             "@type": "Organization",
             "name": "JaguarEngine.uk Editorial Team"
@@ -199,7 +199,7 @@
   "hero": {
     "tagPill": "Jaguar XF 5.0 V8 / XFR • 2009–2015 • AJ133 V8",
     "h1": "Jaguar XF 5.0 V8 / XFR Engine Replacement — Compare Prices & Get Quotes",
-    "subHeadline": "Get quotes today from trusted UK Jaguar XF 5.0 V8 and XFR specialists. Compare reconditioned, rebuilt and used AJ133 5.0-litre V8 engines — supply & fit available nationwide for Jaguar's performance saloon.",
+    "subHeadline": "Get quotes today from trusted UK Jaguar XF 5.0 V8 and XFR specialists. Compare reconditioned, rebuilt and used <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> 5.0-litre V8 engines — supply & fit available nationwide for Jaguar's performance saloon.",
     "trustBadges": [
       "🔧 Supply & Fit Available",
       "✅ 12-Month Warranty",

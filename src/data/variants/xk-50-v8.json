@@ -5,20 +5,20 @@
     "titleCharCount": 56,
     "description": "The Jaguar XK 5.0 V8 (AJ133) — 385–510 PS of naturally aspirated or supercharged V8 power. Real UK costs, water pump advice, and honest reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
     "descriptionCharCount": 160,
-    "canonical": "https://jaguarengine.uk/xk/50-v8/",
+    "canonical": "https://jaguarengines.uk/xk/50-v8/",
     "openGraph": {
       "title": "XK 5.0 V8 Engine Replacement Cost UK — Compare Quotes",
       "description": "The Jaguar XK 5.0 V8 (AJ133) — 385–510 PS of naturally aspirated or supercharged V8 power. Real UK costs, water pump advice, and honest reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
       "type": "website",
-      "url": "https://jaguarengine.uk/xk/50-v8/",
-      "image": "https://jaguarengine.uk/images/jaguar/hero/xk-50-v8.jpg",
+      "url": "https://jaguarengines.uk/xk/50-v8/",
+      "image": "https://jaguarengines.uk/images/jaguar/hero/xk-50-v8.jpg",
       "siteName": "JaguarEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "XK 5.0 V8 Engine Replacement Cost UK — Compare Quotes",
       "description": "The Jaguar XK 5.0 V8 (AJ133) — 385–510 PS of naturally aspirated or supercharged V8 power. Real UK costs, water pump advice, and honest reliability data.",
-      "image": "https://jaguarengine.uk/images/jaguar/hero/xk-50-v8.jpg"
+      "image": "https://jaguarengines.uk/images/jaguar/hero/xk-50-v8.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,25 +30,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://jaguarengine.uk/"
+              "item": "https://jaguarengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "XK",
-              "item": "https://jaguarengine.uk/xk/"
+              "item": "https://jaguarengines.uk/xk/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "X150",
-              "item": "https://jaguarengine.uk/xk/x150/"
+              "item": "https://jaguarengines.uk/xk/x150/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "5.0 V8",
-              "item": "https://jaguarengine.uk/xk/50-v8/"
+              "item": "https://jaguarengines.uk/xk/50-v8/"
             }
           ]
         },
@@ -60,13 +60,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ133 (5.0 V8 NA, 2009-2014)",
-              "url": "https://jaguarengine.uk/xk/50-v8/#na"
+              "url": "https://jaguarengines.uk/xk/50-v8/#na"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "AJ133 (5.0 V8 SC XKR, 2009-2014)",
-              "url": "https://jaguarengine.uk/xk/50-v8/#xkr"
+              "url": "https://jaguarengines.uk/xk/50-v8/#xkr"
             }
           ]
         },
@@ -78,7 +78,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ133",
-              "url": "https://jaguarengine.uk/engines/aj133/"
+              "url": "https://jaguarengines.uk/engines/aj133/"
             }
           ]
         },
@@ -138,8 +138,8 @@
         {
           "@type": "Organization",
           "name": "JaguarEngine.uk",
-          "url": "https://jaguarengine.uk/",
-          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "url": "https://jaguarengines.uk/",
+          "logo": "https://jaguarengines.uk/images/jaguarengine-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -175,7 +175,7 @@
         {
           "@type": "WebPage",
           "name": "XK 5.0 V8 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://jaguarengine.uk/xk/50-v8/",
+          "url": "https://jaguarengines.uk/xk/50-v8/",
           "author": {
             "@type": "Organization",
             "name": "JaguarEngine.uk Editorial Team"
@@ -193,7 +193,7 @@
   "hero": {
     "tagPill": "Jaguar XK 5.0 V8 • 2009–2014 • 2 Variants",
     "h1": "Jaguar XK 5.0 V8 Engine Replacement — Compare Prices & Get Quotes",
-    "subHeadline": "Get quotes today from trusted UK Jaguar specialists. Compare reconditioned, rebuilt and used AJ133 5.0‑litre V8 engines for the XK 5.0 and XKR — the naturally aspirated and supercharged heart of Jaguar's grand tourer. Supply & fit available nationwide.",
+    "subHeadline": "Get quotes today from trusted UK Jaguar specialists. Compare reconditioned, rebuilt and used <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> 5.0‑litre V8 engines for the XK 5.0 and XKR — the naturally aspirated and supercharged heart of Jaguar's grand tourer. Supply & fit available nationwide.",
     "trustBadges": [
       "🔧 Supply & Fit Available",
       "✅ 12‑Month Warranty",

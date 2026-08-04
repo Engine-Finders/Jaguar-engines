@@ -3,16 +3,16 @@ export default function BestWorstEngines({ data }) {
 
   return (
     <section style={{ paddingBottom: 8 }}>
-      <h2>Best & Worst Engines</h2>
+      <h2 dangerouslySetInnerHTML={{ __html: "Best & Worst Engines" }} />
       {data.items?.map((item) => (
         <div key={item.slot}>
-          <h3>{item.slot}</h3>
+          <h3 dangerouslySetInnerHTML={{ __html: item.slot }} />
           <p>
-            <strong>{item.engine}</strong>
+            <strong dangerouslySetInnerHTML={{ __html: item.engine }} />
           </p>
-          <p>{item.quote}</p>
-          {item.whoItsFor && <p>Who it&apos;s for: {item.whoItsFor}</p>}
-          {item.modelWideNote && <p>{item.modelWideNote}</p>}
+          <div dangerouslySetInnerHTML={{ __html: item.quote }} />
+          {item.whoItsFor && <p>Who it&apos;s for: <span dangerouslySetInnerHTML={{ __html: item.whoItsFor }} /></p>}
+          {item.modelWideNote && <div dangerouslySetInnerHTML={{ __html: item.modelWideNote }} />}
           {item.checkBFlag && <p>Check B flag: true</p>}
         </div>
       ))}

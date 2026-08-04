@@ -15,19 +15,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://jaguarengine.uk/"
+              "item": "https://jaguarengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "XJ",
-              "item": "https://jaguarengine.uk/xj/"
+              "item": "https://jaguarengines.uk/xj/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Jaguar XJ X351",
-              "item": "https://jaguarengine.uk/xj/x351/"
+              "item": "https://jaguarengines.uk/xj/x351/"
             }
           ]
         },
@@ -39,43 +39,43 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJV6D 3.0 V6 Diesel Engine",
-              "url": "https://jaguarengine.uk/engines/ajv6d/"
+              "url": "https://jaguarengines.uk/engines/ajv6d/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "AJV6 / 306PS 3.0 Supercharged V6 Engine",
-              "url": "https://jaguarengine.uk/engines/306ps/"
+              "url": "https://jaguarengines.uk/engines/306ps/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "AJV6 3.0 Naturally Aspirated V6 Engine",
-              "url": "https://jaguarengine.uk/engines/ajv6/"
+              "url": "https://jaguarengines.uk/engines/ajv6/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "2.0 i4 Turbo Engine",
-              "url": "https://jaguarengine.uk/engines/20t/"
+              "url": "https://jaguarengines.uk/engines/20t/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "AJ133 / 508PN 5.0 V8 Engine",
-              "url": "https://jaguarengine.uk/engines/aj133/"
+              "url": "https://jaguarengines.uk/engines/aj133/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "AJ133 / 508PS 5.0 Supercharged V8 Engine",
-              "url": "https://jaguarengine.uk/engines/aj133s/"
+              "url": "https://jaguarengines.uk/engines/aj133s/"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "AJ133 / 508PS XJR 5.0 Supercharged V8 Engine",
-              "url": "https://jaguarengine.uk/engines/aj133-xjr/"
+              "url": "https://jaguarengines.uk/engines/aj133-xjr/"
             }
           ]
         },
@@ -87,61 +87,61 @@
               "@type": "ListItem",
               "position": 1,
               "name": "3.0D",
-              "url": "https://jaguarengine.uk/xj/30d/"
+              "url": "https://jaguarengines.uk/xj/30d/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "3.0D LWB",
-              "url": "https://jaguarengine.uk/xj/30d-lwb/"
+              "url": "https://jaguarengines.uk/xj/30d-lwb/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "2.0T",
-              "url": "https://jaguarengine.uk/xj/20t/"
+              "url": "https://jaguarengines.uk/xj/20t/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "3.0 V6",
-              "url": "https://jaguarengine.uk/xj/30-v6/"
+              "url": "https://jaguarengines.uk/xj/30-v6/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "3.0 SC V6",
-              "url": "https://jaguarengine.uk/xj/30-sc-v6/"
+              "url": "https://jaguarengines.uk/xj/30-sc-v6/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "5.0 V8",
-              "url": "https://jaguarengine.uk/xj/50-v8/"
+              "url": "https://jaguarengines.uk/xj/50-v8/"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "Supersport",
-              "url": "https://jaguarengine.uk/xj/supersport/"
+              "url": "https://jaguarengines.uk/xj/supersport/"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "XJR",
-              "url": "https://jaguarengine.uk/xj/xjr/"
+              "url": "https://jaguarengines.uk/xj/xjr/"
             },
             {
               "@type": "ListItem",
               "position": 9,
               "name": "XJR 575",
-              "url": "https://jaguarengine.uk/xj/xjr-575/"
+              "url": "https://jaguarengines.uk/xj/xjr-575/"
             },
             {
               "@type": "ListItem",
               "position": 10,
               "name": "XJ50",
-              "url": "https://jaguarengine.uk/xj/xj50/"
+              "url": "https://jaguarengines.uk/xj/xj50/"
             }
           ]
         },
@@ -233,8 +233,8 @@
         {
           "@type": "Organization",
           "name": "JaguarEngine.uk",
-          "url": "https://jaguarengine.uk/",
-          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "url": "https://jaguarengines.uk/",
+          "logo": "https://jaguarengines.uk/images/jaguarengine-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -270,7 +270,7 @@
         {
           "@type": "WebPage",
           "name": "X351 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://jaguarengine.uk/xj/x351/",
+          "url": "https://jaguarengines.uk/xj/x351/",
           "author": {
             "@type": "Organization",
             "name": "JaguarEngine.uk Editorial Team"
@@ -421,7 +421,7 @@
     ],
     "confidenceScore": {
       "title": "How confident are these ratings?",
-      "text": "All ratings are provisional — no dedicated Engine Page exists for any X351 engine family. The 3.0 V6 diesel (AJV6D) is widely regarded as the most dependable, with documented examples exceeding 200,000 km without major issues. The 3.0 supercharged V6 (306PS) is also robust, though cooling system pipework and supercharger insulator springs can fail. The 5.0 V8 naturally aspirated (508PN) is generally reliable but watch for timing chain guide wear on earlier examples. The 5.0 supercharged V8s (508PS) add complexity — PCV diaphragms, vacuum pump oil leaks, and cooling system issues are common. The 2.0 i4 turbo is the least common and primarily served the Chinese market; its reliability is less documented."
+      "text": "All ratings are provisional — no dedicated Engine Page exists for any X351 engine family. The 3.0 V6 diesel (AJV6D) is widely regarded as the most dependable, with documented examples exceeding 200,000 km without major issues. The 3.0 supercharged V6 (<a href='https://jaguarengines.uk/engine/306dt-306ps'>306PS</a>) is also robust, though cooling system pipework and supercharger insulator springs can fail. The 5.0 V8 naturally aspirated (508PN) is generally reliable but watch for timing chain guide wear on earlier examples. The 5.0 supercharged V8s (508PS) add complexity — PCV diaphragms, vacuum pump oil leaks, and cooling system issues are common. The 2.0 i4 turbo is the least common and primarily served the Chinese market; its reliability is less documented."
     },
     "dataCorrections": []
   },
@@ -442,7 +442,7 @@
       {
         "slot": "Highest Risk",
         "engine": "5.0 Supercharged V8 (508PS, early pre‑2013)",
-        "quote": "Timing chain guide wear on early 5.0-litre AJ133 engines is a known issue. PCV diaphragms rip with age, causing oil consumption and lean running codes. Vacuum pump oil leaks are common. Later cars received updated tensioners.",
+        "quote": "Timing chain guide wear on early 5.0-litre <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> engines is a known issue. PCV diaphragms rip with age, causing oil consumption and lean running codes. Vacuum pump oil leaks are common. Later cars received updated tensioners.",
         "whoItsFor": "buyers with documented timing chain work or post‑2013 cars."
       },
       {

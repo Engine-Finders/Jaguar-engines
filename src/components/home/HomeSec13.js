@@ -12,10 +12,17 @@ export default function HomeSec13({ data }) {
               key={item.id}
               className="border-b border-gray-200 last:border-b-0"
             >
-              <summary className="cursor-pointer px-2 py-2 text-sm font-semibold text-black hover:bg-gray-50">
-                Q{item.id}: {item.question}
-              </summary>
-              <p className="px-2 pb-2 text-xs text-gray-600">{item.answer}</p>
+              <summary
+                className="cursor-pointer px-2 py-2 text-sm font-semibold text-black hover:bg-gray-50"
+                dangerouslySetInnerHTML={{
+                  __html: `Q${item.id}: ${item.question}`,
+                }}
+              />
+
+              <div
+                className="px-2 pb-2 text-xs text-gray-600"
+                dangerouslySetInnerHTML={{ __html: item.answer }}
+              />
             </details>
           ))}
         </div>

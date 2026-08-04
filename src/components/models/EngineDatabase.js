@@ -3,30 +3,30 @@ export default function EngineDatabase({ data }) {
 
   return (
     <section style={{ paddingBottom: 8 }}>
-      <h2>{data.h2}</h2>
-      {data.subHeadline && <p>{data.subHeadline}</p>}
+      <h2 dangerouslySetInnerHTML={{ __html: data.h2 }} />
+      {data.subHeadline && <div dangerouslySetInnerHTML={{ __html: data.subHeadline }} />}
 
       <table border="1" cellPadding="4" cellSpacing="0">
         <thead>
           <tr>
             {data.columns?.map((col) => (
-              <th key={col}>{col}</th>
+              <th key={col} dangerouslySetInnerHTML={{ __html: col }} />
             ))}
           </tr>
         </thead>
         <tbody>
           {data.engines?.map((row) => (
             <tr key={row.engineCode}>
-              <td>{row.engineCode}</td>
-              <td>{row.family}</td>
-              <td>{row.fuel}</td>
-              <td>{row.displacement}</td>
-              <td>{row.power}</td>
-              <td>{row.years}</td>
-              <td>{row.model}</td>
-              <td>{row.reliability}</td>
-              <td>{row.enquiries}</td>
-              <td>{row.avgRebuildCost}</td>
+              <td dangerouslySetInnerHTML={{ __html: row.engineCode }} />
+              <td dangerouslySetInnerHTML={{ __html: row.family }} />
+              <td dangerouslySetInnerHTML={{ __html: row.fuel }} />
+              <td dangerouslySetInnerHTML={{ __html: row.displacement }} />
+              <td dangerouslySetInnerHTML={{ __html: row.power }} />
+              <td dangerouslySetInnerHTML={{ __html: row.years }} />
+              <td dangerouslySetInnerHTML={{ __html: row.model }} />
+              <td dangerouslySetInnerHTML={{ __html: row.reliability }} />
+              <td dangerouslySetInnerHTML={{ __html: row.enquiries }} />
+              <td dangerouslySetInnerHTML={{ __html: row.avgRebuildCost }} />
             </tr>
           ))}
         </tbody>
@@ -34,17 +34,17 @@ export default function EngineDatabase({ data }) {
 
       {data.confidenceScore && (
         <>
-          <h3>{data.confidenceScore.title}</h3>
-          <p>{data.confidenceScore.text}</p>
+          <h3 dangerouslySetInnerHTML={{ __html: data.confidenceScore.title }} />
+          <div dangerouslySetInnerHTML={{ __html: data.confidenceScore.text }} />
         </>
       )}
 
       {data.dataCorrections?.length > 0 && (
         <>
-          <h3>Data notes</h3>
+          <h3 dangerouslySetInnerHTML={{ __html: "Data notes" }} />
           <ul>
             {data.dataCorrections.map((note) => (
-              <li key={note}>{note}</li>
+              <li key={note} dangerouslySetInnerHTML={{ __html: note }} />
             ))}
           </ul>
         </>

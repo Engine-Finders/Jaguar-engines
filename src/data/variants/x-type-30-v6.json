@@ -5,27 +5,27 @@
     "titleCharCount": 56,
     "description": "Every Jaguar X-Type 3.0 V6 engine — AJ30 3.0L V6, 2001–2009. Real UK costs, timing chain advice, and honest reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
     "descriptionCharCount": 160,
-    "canonical": "https://jaguarengine.uk/x-type/30-v6/",
+    "canonical": "https://jaguarengines.uk/x-type/30-v6/",
     "openGraph": {
       "title": "X-Type 3.0 V6 Engine Replacement Cost UK — Compare Quotes",
       "description": "Every Jaguar X-Type 3.0 V6 engine — AJ30 3.0L V6, 2001–2009. Real UK costs, timing chain advice, and honest reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
       "type": "website",
-      "url": "https://jaguarengine.uk/x-type/30-v6/",
-      "image": "https://jaguarengine.uk/images/jaguar/hero/x-type-30-v6.jpg",
+      "url": "https://jaguarengines.uk/x-type/30-v6/",
+      "image": "https://jaguarengines.uk/images/jaguar/hero/x-type-30-v6.jpg",
       "siteName": "JaguarEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "X-Type 3.0 V6 Engine Replacement Cost UK — Compare Quotes",
       "description": "Every Jaguar X-Type 3.0 V6 engine — AJ30 3.0L V6, 2001–2009. Real UK costs, timing chain advice, and honest reliability data.",
-      "image": "https://jaguarengine.uk/images/jaguar/hero/x-type-30-v6.jpg"
+      "image": "https://jaguarengines.uk/images/jaguar/hero/x-type-30-v6.jpg"
     },
     "jsonLd": {}
   },
   "hero": {
     "tagPill": "Jaguar X-Type 3.0 V6 • 2001–2009 • 1 Engine Generation",
     "h1": "Jaguar X-Type 3.0 V6 Engine Replacement — Compare Prices & Get Quotes",
-    "subHeadline": "Get quotes today from trusted UK Jaguar X-Type 3.0 V6 specialists. Compare reconditioned, rebuilt and used 3.0-litre V6 engines — AJ30 / AJ-V6 variants across the X400 generation — supply & fit available nationwide.",
+    "subHeadline": "Get quotes today from trusted UK Jaguar X-Type 3.0 V6 specialists. Compare reconditioned, rebuilt and used 3.0-litre V6 engines — AJ30 / <a href='https://jaguarengines.uk/engine/aj-v6-petrol'>AJ-V6</a> variants across the X400 generation — supply & fit available nationwide.",
     "trustBadges": [
       "🔧 Supply & Fit Available",
       "✅ 12-Month Warranty",

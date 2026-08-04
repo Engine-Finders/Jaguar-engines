@@ -3,20 +3,20 @@
     "slug": "aj20p6",
     "title": "Jaguar AJ20P6 Engine — Specs, Reliability & Replacement Cost",
     "description": "Modern 3.0‑litre straight‑six petrol — strong but cooling system vigilance is key. Rated from 80+ real UK enquiries. Compare quotes from 15 vetted specialists.",
-    "canonical": "https://jaguarengine.uk/engines/aj20p6/",
+    "canonical": "https://jaguarengines.uk/engines/aj20p6/",
     "openGraph": {
       "title": "Jaguar AJ20P6 Engine — Specs, Reliability & Replacement Cost",
       "description": "Modern 3.0‑litre straight‑six petrol — strong but cooling system vigilance is key. Rated from 80+ real UK enquiries. Compare quotes from 15 vetted specialists.",
       "type": "website",
-      "url": "https://jaguarengine.uk/engines/aj20p6/",
-      "image": "https://jaguarengine.uk/images/jaguar/engines/aj20p6.jpg",
-      "siteName": "jaguarengine.uk"
+      "url": "https://jaguarengines.uk/engines/aj20p6/",
+      "image": "https://jaguarengines.uk/images/jaguar/engines/aj20p6.jpg",
+      "siteName": "jaguarengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "Jaguar AJ20P6 Engine — Specs, Reliability & Replacement Cost",
       "description": "Modern 3.0‑litre straight‑six petrol — strong but cooling system vigilance is key. Rated from 80+ real UK enquiries. Compare quotes from 15 vetted specialists.",
-      "image": "https://jaguarengine.uk/images/jaguar/engines/aj20p6.jpg"
+      "image": "https://jaguarengines.uk/images/jaguar/engines/aj20p6.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -28,19 +28,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://jaguarengine.uk/"
+              "item": "https://jaguarengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://jaguarengine.uk/engines/"
+              "item": "https://jaguarengines.uk/engines/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "AJ20P6",
-              "item": "https://jaguarengine.uk/engines/aj20p6/"
+              "item": "https://jaguarengines.uk/engines/aj20p6/"
             }
           ]
         },
@@ -52,13 +52,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "F‑Pace X761 P400",
-              "url": "https://jaguarengine.uk/models/f-pace/x761/"
+              "url": "https://jaguarengines.uk/models/f-pace/x761/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "XF X260 P400",
-              "url": "https://jaguarengine.uk/models/xf/x260/"
+              "url": "https://jaguarengines.uk/models/xf/x260/"
             }
           ]
         },
@@ -109,9 +109,9 @@
         },
         {
           "@type": "Organization",
-          "name": "jaguarengine.uk",
-          "url": "https://jaguarengine.uk/",
-          "logo": "https://jaguarengine.uk/images/logo.png",
+          "name": "jaguarengines.uk",
+          "url": "https://jaguarengines.uk/",
+          "logo": "https://jaguarengines.uk/images/logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -137,7 +137,7 @@
           "serviceType": "Jaguar AJ20P6 Engine Replacement",
           "provider": {
             "@type": "Organization",
-            "name": "jaguarengine.uk"
+            "name": "jaguarengines.uk"
           },
           "areaServed": "GB",
           "offers": {
@@ -151,10 +151,10 @@
         {
           "@type": "Dataset",
           "name": "Jaguar AJ20P6 UK Enquiry & Reliability Data 2025",
-          "description": "Proprietary UK enquiry volumes and reliability scoring data for the Jaguar AJ20P6, sourced from jaguarengine.uk's specialist marketplace activity.",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the Jaguar AJ20P6, sourced from jaguarengines.uk's specialist marketplace activity.",
           "creator": {
             "@type": "Organization",
-            "name": "jaguarengine.uk"
+            "name": "jaguarengines.uk"
           },
           "temporalCoverage": "2025",
           "spatialCoverage": "United Kingdom"
@@ -162,14 +162,14 @@
         {
           "@type": "WebPage",
           "name": "Jaguar AJ20P6 Engine — Specs, Reliability & Replacement Cost",
-          "url": "https://jaguarengine.uk/engines/aj20p6/",
+          "url": "https://jaguarengines.uk/engines/aj20p6/",
           "author": {
             "@type": "Organization",
-            "name": "jaguarengine.uk Editorial Team"
+            "name": "jaguarengines.uk Editorial Team"
           },
           "reviewedBy": {
             "@type": "Organization",
-            "name": "jaguarengine.uk Specialist Network"
+            "name": "jaguarengines.uk Specialist Network"
           },
           "datePublished": "2025-01-01",
           "dateModified": "2026-07-14"

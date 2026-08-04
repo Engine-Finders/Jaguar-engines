@@ -3,15 +3,15 @@ export default function OwnershipVerdict({ data }) {
 
   return (
     <section style={{ paddingBottom: 8 }}>
-      <h2>{data.h2}</h2>
+      <h2 dangerouslySetInnerHTML={{ __html: data.h2 }} />
       {data.metrics?.map((row) => (
         <p key={row.metric}>
-          <strong>{row.metric}:</strong> {row.ourCall}
+          <strong dangerouslySetInnerHTML={{ __html: row.metric }} />: <span dangerouslySetInnerHTML={{ __html: row.ourCall }} />
         </p>
       ))}
       {data.oneLineVerdict && (
         <p>
-          <strong>One-line verdict:</strong> {data.oneLineVerdict}
+          <strong dangerouslySetInnerHTML={{ __html: "One-line verdict:" }} /> <span dangerouslySetInnerHTML={{ __html: data.oneLineVerdict }} />
         </p>
       )}
       <hr />

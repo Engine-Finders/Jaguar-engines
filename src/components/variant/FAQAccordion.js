@@ -3,16 +3,22 @@ export default function FAQAccordion({ data }) {
 
   return (
     <section style={{ paddingBottom: 8 }}>
-      <h2>FAQ</h2>
+      <h2 dangerouslySetInnerHTML={{ __html: "FAQ" }} />
+
       {data.items?.map((item) => (
         <div key={item.id}>
           <h3>
-            {item.id}. {item.question}
+            <span dangerouslySetInnerHTML={{ __html: `${item.id}. ` }} />
+            <span dangerouslySetInnerHTML={{ __html: item.question }} />
           </h3>
-          <p>{item.answer}</p>
+          <p dangerouslySetInnerHTML={{ __html: item.answer }} />
         </div>
       ))}
-      {data.disclaimer && <p>{data.disclaimer}</p>}
+
+      {data.disclaimer && (
+        <div dangerouslySetInnerHTML={{ __html: data.disclaimer }} />
+      )}
+
       <hr />
     </section>
   );

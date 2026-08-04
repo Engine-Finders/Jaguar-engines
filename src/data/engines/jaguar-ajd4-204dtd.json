@@ -3,20 +3,20 @@
     "slug": "ajd4-204dtd",
     "title": "Jaguar AJD4 Engine — Specs, Reliability & Replacement Cost",
     "description": "The AJD4 is a capable diesel, but timing chain and EGR issues are common. 590+ UK enquiries [JAG-VERIFIED]. Compare quotes from vetted specialists today.",
-    "canonical": "https://jaguarengine.uk/engines/ajd4-204dtd/",
+    "canonical": "https://jaguarengines.uk/engines/ajd4-204dtd/",
     "openGraph": {
       "title": "Jaguar AJD4 Engine — Specs, Reliability & Replacement Cost",
       "description": "The AJD4 is a capable diesel, but timing chain and EGR issues are common. 590+ UK enquiries [JAG-VERIFIED]. Compare quotes from vetted specialists today.",
       "type": "website",
-      "url": "https://jaguarengine.uk/engines/ajd4-204dtd/",
-      "image": "https://jaguarengine.uk/images/jaguar/engines/ajd4-204dtd.jpg",
-      "siteName": "jaguarengine.uk"
+      "url": "https://jaguarengines.uk/engines/ajd4-204dtd/",
+      "image": "https://jaguarengines.uk/images/jaguar/engines/ajd4-204dtd.jpg",
+      "siteName": "jaguarengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "Jaguar AJD4 Engine — Specs, Reliability & Replacement Cost",
       "description": "The AJD4 is a capable diesel, but timing chain and EGR issues are common. 590+ UK enquiries [JAG-VERIFIED]. Compare quotes from vetted specialists today.",
-      "image": "https://jaguarengine.uk/images/jaguar/engines/ajd4-204dtd.jpg"
+      "image": "https://jaguarengines.uk/images/jaguar/engines/ajd4-204dtd.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -28,19 +28,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://jaguarengine.uk/"
+              "item": "https://jaguarengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://jaguarengine.uk/engines/"
+              "item": "https://jaguarengines.uk/engines/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Jaguar AJD4 Engine",
-              "item": "https://jaguarengine.uk/engines/ajd4-204dtd/"
+              "item": "https://jaguarengines.uk/engines/ajd4-204dtd/"
             }
           ]
         },
@@ -52,25 +52,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Jaguar XF X250 2.2D",
-              "url": "https://jaguarengine.uk/jaguar/xf-x250/"
+              "url": "https://jaguarengines.uk/jaguar/xf-x250/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Jaguar XJ X351 2.2D",
-              "url": "https://jaguarengine.uk/jaguar/xj-x351/"
+              "url": "https://jaguarengines.uk/jaguar/xj-x351/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Jaguar XE X760 2.0D / 2.2D (early)",
-              "url": "https://jaguarengine.uk/jaguar/xe-x760/"
+              "url": "https://jaguarengines.uk/jaguar/xe-x760/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "Jaguar F-Pace X761 2.2D (early production)",
-              "url": "https://jaguarengine.uk/jaguar/f-pace-x761/"
+              "url": "https://jaguarengines.uk/jaguar/f-pace-x761/"
             }
           ]
         },
@@ -121,9 +121,9 @@
         },
         {
           "@type": "Organization",
-          "name": "jaguarengine.uk",
-          "url": "https://jaguarengine.uk/",
-          "logo": "https://jaguarengine.uk/images/logo.png",
+          "name": "jaguarengines.uk",
+          "url": "https://jaguarengines.uk/",
+          "logo": "https://jaguarengines.uk/images/logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -149,7 +149,7 @@
           "serviceType": "Jaguar AJD4 / 204DTD Engine Replacement",
           "provider": {
             "@type": "Organization",
-            "name": "jaguarengine.uk"
+            "name": "jaguarengines.uk"
           },
           "areaServed": "GB",
           "offers": {
@@ -163,10 +163,10 @@
         {
           "@type": "Dataset",
           "name": "Jaguar AJD4 / 204DTD UK Enquiry & Reliability Data 2025",
-          "description": "Proprietary UK enquiry volumes and reliability scoring data for the Jaguar AJD4 / 204DTD, sourced from jaguarengine.uk's specialist marketplace activity.",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the Jaguar AJD4 / 204DTD, sourced from jaguarengines.uk's specialist marketplace activity.",
           "creator": {
             "@type": "Organization",
-            "name": "jaguarengine.uk"
+            "name": "jaguarengines.uk"
           },
           "temporalCoverage": "2025",
           "spatialCoverage": "United Kingdom"
@@ -174,14 +174,14 @@
         {
           "@type": "WebPage",
           "name": "Jaguar AJD4 Engine — Specs, Reliability & Replacement Cost",
-          "url": "https://jaguarengine.uk/engines/ajd4-204dtd/",
+          "url": "https://jaguarengines.uk/engines/ajd4-204dtd/",
           "author": {
             "@type": "Organization",
-            "name": "jaguarengine.uk Editorial Team"
+            "name": "jaguarengines.uk Editorial Team"
           },
           "reviewedBy": {
             "@type": "Organization",
-            "name": "jaguarengine.uk Specialist Network"
+            "name": "jaguarengines.uk Specialist Network"
           },
           "datePublished": "2026-07-14",
           "dateModified": "2026-07-14"

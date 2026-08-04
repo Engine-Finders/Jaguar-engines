@@ -3,38 +3,45 @@ export default function EngineCodes({ data }) {
 
   return (
     <section style={{ paddingBottom: 8 }}>
-      <h2>Engine Codes</h2>
+      <h2 dangerouslySetInnerHTML={{ __html: "Engine Codes" }} />
 
       <table border="1" cellPadding="4" cellSpacing="0">
         <thead>
           <tr>
             {data.columns?.map((col) => (
-              <th key={col}>{col}</th>
+              <th key={col} dangerouslySetInnerHTML={{ __html: col }} />
             ))}
           </tr>
         </thead>
         <tbody>
           {data.rows?.map((row) => (
             <tr key={row.engineCode}>
-              <td>{row.engineCode}</td>
-              <td>{row.years}</td>
-              <td>{row.power}</td>
-              <td>{row.enquiries}</td>
-              <td>{row.avgReconCost}</td>
+              <td dangerouslySetInnerHTML={{ __html: row.engineCode }} />
+              <td dangerouslySetInnerHTML={{ __html: row.years }} />
+              <td dangerouslySetInnerHTML={{ __html: row.power }} />
+              <td dangerouslySetInnerHTML={{ __html: row.enquiries }} />
+              <td dangerouslySetInnerHTML={{ __html: row.avgReconCost }} />
             </tr>
           ))}
         </tbody>
       </table>
 
-      {data.matchNote && <p>{data.matchNote}</p>}
+      {data.matchNote && (
+        <div dangerouslySetInnerHTML={{ __html: data.matchNote }} />
+      )}
 
       {data.technicalSpecs && (
         <>
-          <h3>{data.technicalSpecs.title}</h3>
+          <h3
+            dangerouslySetInnerHTML={{
+              __html: data.technicalSpecs.title,
+            }}
+          />
           <ul>
             {data.technicalSpecs.items?.map((item) => (
               <li key={item.label}>
-                {item.label}: {item.value}
+                <span dangerouslySetInnerHTML={{ __html: `${item.label}: ` }} />
+                <span dangerouslySetInnerHTML={{ __html: item.value }} />
               </li>
             ))}
           </ul>
@@ -43,7 +50,10 @@ export default function EngineCodes({ data }) {
 
       {data.cta && (
         <p>
-          <a href={data.cta.href}>{data.cta.label}</a>
+          <a
+            href={data.cta.href}
+            dangerouslySetInnerHTML={{ __html: data.cta.label }}
+          />
         </p>
       )}
       <hr />

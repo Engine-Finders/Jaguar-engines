@@ -3,23 +3,26 @@ export default function GenerationsGrid({ data }) {
 
   return (
     <section style={{ paddingBottom: 8 }}>
-      <h2>{data.h2}</h2>
-      {data.subHeadline && <p>{data.subHeadline}</p>}
+      <h2 dangerouslySetInnerHTML={{ __html: data.h2 }} />
+      {data.subHeadline && <div dangerouslySetInnerHTML={{ __html: data.subHeadline }} />}
 
       {data.cards?.map((card) => (
         <div key={card.title}>
-          <h3>{card.title}</h3>
-          {card.badge && <p>{card.badge}</p>}
-          {card.meta && <p>{card.meta}</p>}
-          {card.rating && <p>{card.rating}</p>}
+          <h3 dangerouslySetInnerHTML={{ __html: card.title }} />
+          {card.badge && <div dangerouslySetInnerHTML={{ __html: card.badge }} />}
+          {card.meta && <div dangerouslySetInnerHTML={{ __html: card.meta }} />}
+          {card.rating && <div dangerouslySetInnerHTML={{ __html: card.rating }} />}
           {card.verdict && (
             <p>
-              <strong>Our Verdict:</strong> {card.verdict}
+              <strong dangerouslySetInnerHTML={{ __html: "Our Verdict:" }} /> <span dangerouslySetInnerHTML={{ __html: card.verdict }} />
             </p>
           )}
           {card.cta && (
             <p>
-              <a href={card.cta.href}>{card.cta.label}</a>
+              <a
+                href={card.cta.href}
+                dangerouslySetInnerHTML={{ __html: card.cta.label }}
+              />
             </p>
           )}
         </div>
@@ -27,24 +30,24 @@ export default function GenerationsGrid({ data }) {
 
       {data.rangeTable && (
         <>
-          <h3>{data.rangeTable.title}</h3>
+          <h3 dangerouslySetInnerHTML={{ __html: data.rangeTable.title }} />
           <table border="1" cellPadding="4" cellSpacing="0">
             <thead>
               <tr>
                 {data.rangeTable.columns?.map((col) => (
-                  <th key={col}>{col}</th>
+                  <th key={col} dangerouslySetInnerHTML={{ __html: col }} />
                 ))}
               </tr>
             </thead>
             <tbody>
               {data.rangeTable.rows?.map((row) => (
                 <tr key={row.model}>
-                  <td>{row.model}</td>
-                  <td>{row.engineCode}</td>
-                  <td>{row.power}</td>
-                  <td>{row.induction}</td>
-                  <td>{row.years}</td>
-                  <td>{row.notes}</td>
+                  <td dangerouslySetInnerHTML={{ __html: row.model }} />
+                  <td dangerouslySetInnerHTML={{ __html: row.engineCode }} />
+                  <td dangerouslySetInnerHTML={{ __html: row.power }} />
+                  <td dangerouslySetInnerHTML={{ __html: row.induction }} />
+                  <td dangerouslySetInnerHTML={{ __html: row.years }} />
+                  <td dangerouslySetInnerHTML={{ __html: row.notes }} />
                 </tr>
               ))}
             </tbody>
@@ -54,7 +57,10 @@ export default function GenerationsGrid({ data }) {
 
       {data.comparisonLink && (
         <p>
-          <a href={data.comparisonLink.href}>{data.comparisonLink.label}</a>
+          <a
+            href={data.comparisonLink.href}
+            dangerouslySetInnerHTML={{ __html: data.comparisonLink.label }}
+          />
         </p>
       )}
       <hr />

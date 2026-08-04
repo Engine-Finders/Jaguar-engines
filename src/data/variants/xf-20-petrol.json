@@ -366,7 +366,7 @@
           "label": "Immediate",
           "text": "if you hear rattling on cold start, book an inspection immediately."
         },
-        "recommendation": "The Ingenium 2.0 petrol can suffer from timing chain tensioner wear, leading to chain stretch and potential failure. Symptoms include rattling from the engine on cold start. Many timing chain failures are linked to extended oil intervals. A preventative chain and tensioner replacement is far cheaper than a full engine replacement. Change the oil at 8,000‑10,000 mile intervals.",
+        "recommendation": "The <a href='https://jaguarengines.uk/engine/ingenium-20-petrol'>Ingenium 2.0 petrol</a>  can suffer from timing chain tensioner wear, leading to chain stretch and potential failure. Symptoms include rattling from the engine on cold start. Many timing chain failures are linked to extended oil intervals. A preventative chain and tensioner replacement is far cheaper than a full engine replacement. Change the oil at 8,000‑10,000 mile intervals.",
         "failureLink": {
           "label": "",
           "href": "/failures/timing-chain-failure/"

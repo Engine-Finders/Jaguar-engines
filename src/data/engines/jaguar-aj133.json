@@ -3,20 +3,20 @@
     "slug": "aj133",
     "title": "Jaguar AJ133 Engine — Specs, Reliability & Replacement Cost",
     "description": "Superb V8, but early timing‑chain tensioners fail before 100k — backed by 330+ real UK enquiries. Compare quotes from 15 vetted specialists today.",
-    "canonical": "https://jaguarengine.uk/engines/aj133/",
+    "canonical": "https://jaguarengines.uk/engines/aj133/",
     "openGraph": {
       "title": "Jaguar AJ133 Engine — Specs, Reliability & Replacement Cost",
       "description": "Superb V8, but early timing‑chain tensioners fail before 100k — backed by 330+ real UK enquiries. Compare quotes from 15 vetted specialists today.",
       "type": "website",
-      "url": "https://jaguarengine.uk/engines/aj133/",
-      "image": "https://jaguarengine.uk/images/jaguar/engines/aj133.jpg",
-      "siteName": "jaguarengine.uk"
+      "url": "https://jaguarengines.uk/engines/aj133/",
+      "image": "https://jaguarengines.uk/images/jaguar/engines/aj133.jpg",
+      "siteName": "jaguarengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "Jaguar AJ133 Engine — Specs, Reliability & Replacement Cost",
       "description": "Superb V8, but early timing‑chain tensioners fail before 100k — backed by 330+ real UK enquiries. Compare quotes from 15 vetted specialists today.",
-      "image": "https://jaguarengine.uk/images/jaguar/engines/aj133.jpg"
+      "image": "https://jaguarengines.uk/images/jaguar/engines/aj133.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -28,19 +28,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://jaguarengine.uk/"
+              "item": "https://jaguarengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://jaguarengine.uk/engines/"
+              "item": "https://jaguarengines.uk/engines/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "AJ133",
-              "item": "https://jaguarengine.uk/engines/aj133/"
+              "item": "https://jaguarengines.uk/engines/aj133/"
             }
           ]
         },
@@ -52,31 +52,31 @@
               "@type": "ListItem",
               "position": 1,
               "name": "XF X250 5.0 V8 NA/SC",
-              "url": "https://jaguarengine.uk/models/xf/x250/"
+              "url": "https://jaguarengines.uk/models/xf/x250/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "XJ X351 5.0 V8 NA/SC",
-              "url": "https://jaguarengine.uk/models/xj/x351/"
+              "url": "https://jaguarengines.uk/models/xj/x351/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "F‑Type X152 5.0 V8 SC",
-              "url": "https://jaguarengine.uk/models/f-type/x152/"
+              "url": "https://jaguarengines.uk/models/f-type/x152/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "XK X150 5.0 V8 NA/SC",
-              "url": "https://jaguarengine.uk/models/xk/x150/"
+              "url": "https://jaguarengines.uk/models/xk/x150/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "XFR X250 5.0 V8 SC",
-              "url": "https://jaguarengine.uk/models/xfr/x250/"
+              "url": "https://jaguarengines.uk/models/xfr/x250/"
             }
           ]
         },
@@ -127,9 +127,9 @@
         },
         {
           "@type": "Organization",
-          "name": "jaguarengine.uk",
-          "url": "https://jaguarengine.uk/",
-          "logo": "https://jaguarengine.uk/images/logo.png",
+          "name": "jaguarengines.uk",
+          "url": "https://jaguarengines.uk/",
+          "logo": "https://jaguarengines.uk/images/logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -155,7 +155,7 @@
           "serviceType": "Jaguar AJ133 Engine Replacement",
           "provider": {
             "@type": "Organization",
-            "name": "jaguarengine.uk"
+            "name": "jaguarengines.uk"
           },
           "areaServed": "GB",
           "offers": {
@@ -169,10 +169,10 @@
         {
           "@type": "Dataset",
           "name": "Jaguar AJ133 UK Enquiry & Reliability Data 2025",
-          "description": "Proprietary UK enquiry volumes and reliability scoring data for the Jaguar AJ133, sourced from jaguarengine.uk's specialist marketplace activity.",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the Jaguar AJ133, sourced from jaguarengines.uk's specialist marketplace activity.",
           "creator": {
             "@type": "Organization",
-            "name": "jaguarengine.uk"
+            "name": "jaguarengines.uk"
           },
           "temporalCoverage": "2025",
           "spatialCoverage": "United Kingdom"
@@ -180,14 +180,14 @@
         {
           "@type": "WebPage",
           "name": "Jaguar AJ133 Engine — Specs, Reliability & Replacement Cost",
-          "url": "https://jaguarengine.uk/engines/aj133/",
+          "url": "https://jaguarengines.uk/engines/aj133/",
           "author": {
             "@type": "Organization",
-            "name": "jaguarengine.uk Editorial Team"
+            "name": "jaguarengines.uk Editorial Team"
           },
           "reviewedBy": {
             "@type": "Organization",
-            "name": "jaguarengine.uk Specialist Network"
+            "name": "jaguarengines.uk Specialist Network"
           },
           "datePublished": "2025-01-01",
           "dateModified": "2026-07-14"

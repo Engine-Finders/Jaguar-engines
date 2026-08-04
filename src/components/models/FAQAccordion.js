@@ -3,13 +3,14 @@ export default function FAQAccordion({ data }) {
 
   return (
     <section style={{ paddingBottom: 8 }}>
-      <h2>{data.h2}</h2>
+      <h2 dangerouslySetInnerHTML={{ __html: data.h2 }} />
       {data.items?.map((item) => (
         <div key={item.id}>
           <h3>
-            {item.id}. {item.question}
+            <span dangerouslySetInnerHTML={{ __html: `${item.id}. ` }} />
+            <span dangerouslySetInnerHTML={{ __html: item.question }} />
           </h3>
-          <p>{item.answer}</p>
+          <div dangerouslySetInnerHTML={{ __html: item.answer }} />
         </div>
       ))}
       <hr />

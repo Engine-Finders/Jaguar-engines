@@ -5,7 +5,7 @@
     "titleCharCount": 54,
     "description": "Every Jaguar X‑Type 2.0d engine — Duratorq diesel. X400 generation, real UK costs and reliability. Get free quotes from 15+ vetted Jaguar specialists today.",
     "descriptionCharCount": 159,
-    "canonical": "https://jaguarengine.uk/x-type/20d/",
+    "canonical": "https://jaguarengines.uk/x-type/20d/",
     "openGraph": {
       "title": "",
       "description": "",
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://jaguarengine.uk/"
+              "item": "https://jaguarengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "X‑Type",
-              "item": "https://jaguarengine.uk/x-type/"
+              "item": "https://jaguarengines.uk/x-type/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "2.0d",
-              "item": "https://jaguarengine.uk/x-type/20d/"
+              "item": "https://jaguarengines.uk/x-type/20d/"
             }
           ]
         },
@@ -54,7 +54,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "X400 X‑Type 2.0d (Duratorq, 2001-2009)",
-              "url": "https://jaguarengine.uk/x-type/x400/"
+              "url": "https://jaguarengines.uk/x-type/x400/"
             }
           ]
         },
@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "FMBA / FMBB / AJ20D4",
-              "url": "https://jaguarengine.uk/engines/duratorq/"
+              "url": "https://jaguarengines.uk/engines/duratorq/"
             }
           ]
         },
@@ -126,8 +126,8 @@
         {
           "@type": "Organization",
           "name": "JaguarEngine.uk",
-          "url": "https://jaguarengine.uk/",
-          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "url": "https://jaguarengines.uk/",
+          "logo": "https://jaguarengines.uk/images/jaguarengine-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -163,7 +163,7 @@
         {
           "@type": "WebPage",
           "name": "Jaguar X‑Type 2.0d Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://jaguarengine.uk/x-type/20d/",
+          "url": "https://jaguarengines.uk/x-type/20d/",
           "author": {
             "@type": "Organization",
             "name": "JaguarEngine.uk Editorial Team"

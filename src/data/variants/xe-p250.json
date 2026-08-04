@@ -5,7 +5,7 @@
     "titleCharCount": 54,
     "description": "Every Jaguar XE P250 engine — 204PT 2.0 turbo petrol. X760 generation, real UK costs and reliability. Get free quotes from 15+ vetted Jaguar specialists today.",
     "descriptionCharCount": 159,
-    "canonical": "https://jaguarengine.uk/xe/p250/",
+    "canonical": "https://jaguarengines.uk/xe/p250/",
     "openGraph": {
       "title": "",
       "description": "",
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://jaguarengine.uk/"
+              "item": "https://jaguarengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "XE",
-              "item": "https://jaguarengine.uk/xe/"
+              "item": "https://jaguarengines.uk/xe/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "P250",
-              "item": "https://jaguarengine.uk/xe/p250/"
+              "item": "https://jaguarengines.uk/xe/p250/"
             }
           ]
         },
@@ -54,7 +54,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "X760 XE P250 (204PT, 2015-2024)",
-              "url": "https://jaguarengine.uk/xe/x760/"
+              "url": "https://jaguarengines.uk/xe/x760/"
             }
           ]
         },
@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "204PT (PT204 / AJ200P)",
-              "url": "https://jaguarengine.uk/engines/204pt/"
+              "url": "https://jaguarengines.uk/engines/204pt/"
             }
           ]
         },
@@ -126,8 +126,8 @@
         {
           "@type": "Organization",
           "name": "JaguarEngine.uk",
-          "url": "https://jaguarengine.uk/",
-          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "url": "https://jaguarengines.uk/",
+          "logo": "https://jaguarengines.uk/images/jaguarengine-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -163,7 +163,7 @@
         {
           "@type": "WebPage",
           "name": "Jaguar XE P250 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://jaguarengine.uk/xe/p250/",
+          "url": "https://jaguarengines.uk/xe/p250/",
           "author": {
             "@type": "Organization",
             "name": "JaguarEngine.uk Editorial Team"

@@ -15,19 +15,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://jaguarengine.uk/"
+              "item": "https://jaguarengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "XF",
-              "item": "https://jaguarengine.uk/xf/"
+              "item": "https://jaguarengines.uk/xf/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Jaguar XF X250",
-              "item": "https://jaguarengine.uk/xf/x250/"
+              "item": "https://jaguarengines.uk/xf/x250/"
             }
           ]
         },
@@ -39,61 +39,61 @@
               "@type": "ListItem",
               "position": 1,
               "name": "2.7 TDV6 Engine",
-              "url": "https://jaguarengine.uk/engines/27-tdv6/"
+              "url": "https://jaguarengines.uk/engines/27-tdv6/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "3.0 TDV6/SDV6 Engine",
-              "url": "https://jaguarengine.uk/engines/30-tdv6/"
+              "url": "https://jaguarengines.uk/engines/30-tdv6/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "2.2 Diesel Engine",
-              "url": "https://jaguarengine.uk/engines/22-diesel/"
+              "url": "https://jaguarengines.uk/engines/22-diesel/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "3.0 V6 Petrol Engine",
-              "url": "https://jaguarengine.uk/engines/30-v6-petrol/"
+              "url": "https://jaguarengines.uk/engines/30-v6-petrol/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "3.0 V6 Supercharged Engine",
-              "url": "https://jaguarengine.uk/engines/30-v6-sc/"
+              "url": "https://jaguarengines.uk/engines/30-v6-sc/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "4.2 V8 Engine",
-              "url": "https://jaguarengine.uk/engines/42-v8/"
+              "url": "https://jaguarengines.uk/engines/42-v8/"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "4.2 V8 Supercharged Engine",
-              "url": "https://jaguarengine.uk/engines/42-v8-sc/"
+              "url": "https://jaguarengines.uk/engines/42-v8-sc/"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "5.0 V8 Engine",
-              "url": "https://jaguarengine.uk/engines/50-v8/"
+              "url": "https://jaguarengines.uk/engines/50-v8/"
             },
             {
               "@type": "ListItem",
               "position": 9,
               "name": "5.0 V8 Supercharged Engine",
-              "url": "https://jaguarengine.uk/engines/50-v8-sc/"
+              "url": "https://jaguarengines.uk/engines/50-v8-sc/"
             },
             {
               "@type": "ListItem",
               "position": 10,
               "name": "2.0 Turbo Petrol Engine",
-              "url": "https://jaguarengine.uk/engines/20-turbo-petrol/"
+              "url": "https://jaguarengines.uk/engines/20-turbo-petrol/"
             }
           ]
         },
@@ -105,61 +105,61 @@
               "@type": "ListItem",
               "position": 1,
               "name": "2.7 TDV6",
-              "url": "https://jaguarengine.uk/xf/x250/27-tdv6/"
+              "url": "https://jaguarengines.uk/xf/x250/27-tdv6/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "3.0 TDV6",
-              "url": "https://jaguarengine.uk/xf/x250/30-tdv6/"
+              "url": "https://jaguarengines.uk/xf/x250/30-tdv6/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "3.0 SDV6",
-              "url": "https://jaguarengine.uk/xf/x250/30-sdv6/"
+              "url": "https://jaguarengines.uk/xf/x250/30-sdv6/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "2.2 Diesel",
-              "url": "https://jaguarengine.uk/xf/x250/22-diesel/"
+              "url": "https://jaguarengines.uk/xf/x250/22-diesel/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "3.0 V6",
-              "url": "https://jaguarengine.uk/xf/x250/30-v6/"
+              "url": "https://jaguarengines.uk/xf/x250/30-v6/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "3.0 V6 Supercharged",
-              "url": "https://jaguarengine.uk/xf/x250/30-v6-sc/"
+              "url": "https://jaguarengines.uk/xf/x250/30-v6-sc/"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "4.2 V8",
-              "url": "https://jaguarengine.uk/xf/x250/42-v8/"
+              "url": "https://jaguarengines.uk/xf/x250/42-v8/"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "4.2 Supercharged",
-              "url": "https://jaguarengine.uk/xf/x250/42-sc/"
+              "url": "https://jaguarengines.uk/xf/x250/42-sc/"
             },
             {
               "@type": "ListItem",
               "position": 9,
               "name": "5.0 V8",
-              "url": "https://jaguarengine.uk/xf/x250/50-v8/"
+              "url": "https://jaguarengines.uk/xf/x250/50-v8/"
             },
             {
               "@type": "ListItem",
               "position": 10,
               "name": "XFR",
-              "url": "https://jaguarengine.uk/xf/x250/xfr/"
+              "url": "https://jaguarengines.uk/xf/x250/xfr/"
             }
           ]
         },
@@ -251,8 +251,8 @@
         {
           "@type": "Organization",
           "name": "JaguarEngine.uk",
-          "url": "https://jaguarengine.uk/",
-          "logo": "https://jaguarengine.uk/images/jaguarengine-logo.png",
+          "url": "https://jaguarengines.uk/",
+          "logo": "https://jaguarengines.uk/images/jaguarengine-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -277,7 +277,7 @@
         {
           "@type": "WebPage",
           "name": "X250 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://jaguarengine.uk/xf/x250/",
+          "url": "https://jaguarengines.uk/xf/x250/",
           "author": {
             "@type": "Organization",
             "name": "JaguarEngine.uk Editorial Team"
@@ -390,7 +390,7 @@
         "avgReconCost": "£3,000–£5,000 [EM-QUOTE]"
       },
       {
-        "engineCode": "AJ126 / 306PS",
+        "engineCode": "AJ126 / <a href='https://jaguarengines.uk/engine/306dt-306ps'>306PS</a>",
         "family": "3.0 V6 S/C",
         "fuel": "Petrol V6, supercharged",
         "displacement": "3.0L",
@@ -479,7 +479,7 @@
       {
         "slot": "Thin-Data Summary",
         "engine": "",
-        "quote": "Most dependable: The 3.0 TDV6/SDV6 (AJ‑V6D/306DT) — a Ford‑PSA joint‑venture engine also used in Land Rover products — offers strong torque, refined power delivery, and proven durability. The 2.2‑litre diesel (224DT) is also a solid choice, especially with the later eight‑speed ZF gearbox. The 5.0 V8 supercharged (AJ133S) is the performance pick — 510 PS in XFR guise — but carries higher running costs and potential timing‑chain concerns on earlier cars. The 4.2 V8s are now ageing and less common; the naturally aspirated 3.0 V6 petrol was underpowered for the XF's weight. Buyers should prioritise a well‑maintained 3.0 TDV6 or 2.2 diesel with documented service history.",
+        "quote": "Most dependable: The 3.0 TDV6/SDV6 (AJ‑V6D/<a href='https://jaguarengines.uk/engine/306dt-306ps'>306DT</a>) — a Ford‑PSA joint‑venture engine also used in Land Rover products — offers strong torque, refined power delivery, and proven durability. The 2.2‑litre diesel (224DT) is also a solid choice, especially with the later eight‑speed ZF gearbox. The 5.0 V8 supercharged (AJ133S) is the performance pick — 510 PS in XFR guise — but carries higher running costs and potential timing‑chain concerns on earlier cars. The 4.2 V8s are now ageing and less common; the naturally aspirated 3.0 V6 petrol was underpowered for the XF's weight. Buyers should prioritise a well‑maintained 3.0 TDV6 or 2.2 diesel with documented service history.",
         "whoItsFor": ""
       }
     ]
@@ -615,7 +615,7 @@
         "title": "5.0 V8 Water Pump & Cooling System Failure",
         "affectedModels": "X250 5.0 V8 naturally aspirated and supercharged (2009–2015).",
         "typicalFailureMileage": "60,000–120,000 miles.",
-        "rootCause": "The 5.0 AJ133 V8's water pump is a known weak point — coolant leaks from the pump are common. Left unaddressed, overheating leads to head gasket failure or, in extreme cases, engine damage.",
+        "rootCause": "The 5.0 <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> V8's water pump is a known weak point — coolant leaks from the pump are common. Left unaddressed, overheating leads to head gasket failure or, in extreme cases, engine damage.",
         "tieredCosts": [],
         "recommendation": "On any 5.0‑powered X250, a £250–£600 water pump replacement at the first sign of coolant loss is cheap insurance against the £4,000–£7,000 replacement that follows a neglected overheat.",
         "cta": {
