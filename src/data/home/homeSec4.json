@@ -4,6 +4,16 @@
     "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=900&q=80",
     "alt": "Jaguar ownership rankings"
   },
+  "heroImages": {
+    "light": {
+      "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=900&q=80",
+      "alt": "Jaguar ownership rankings"
+    },
+    "dark": {
+      "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=900&q=80",
+      "alt": "Jaguar ownership rankings"
+    }
+  },
   "columns": ["RANKING", "WINNER", "WHY", "VERDICT"],
   "rankings": [
     {

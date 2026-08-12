@@ -4,6 +4,16 @@
     "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=900&q=80",
     "alt": "Jaguar diagnostic calculator"
   },
+  "heroImages": {
+    "light": {
+      "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=900&q=80",
+      "alt": "Jaguar diagnostic calculator"
+    },
+    "dark": {
+      "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=900&q=80",
+      "alt": "Jaguar diagnostic calculator"
+    }
+  },
   "trustStrip": [
     { "icon": "📊", "label": "Powered by 1,700+ real UK enquiries" },
     { "icon": "🔧", "label": "15+ vetted Jaguar specialists" },

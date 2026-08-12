@@ -1,8 +1,35 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: var(--color-page);
+  --foreground: var(--color-text);
+  --color-page: #ffffff;
+  --color-page-soft: #f4f7fb;
+  --color-surface: #ffffff;
+  --color-surface-raised: rgba(255, 255, 255, 0.9);
+  --color-surface-glass: rgba(244, 247, 251, 0.55);
+  --color-table-surface: rgba(255, 255, 255, 0.9);
+  --color-text: #071827;
+  --color-text-muted: #27384a;
+  --color-text-soft: #617084;
+  --color-border: #d7dde6;
+  --color-border-strong: #b7c2d1;
+  --color-primary: #075fd8;
+  --color-primary-strong: #034daf;
+  --color-primary-soft: #dceaff;
+  --color-accent: #1581ff;
+  --color-accent-red: #ed1c24;
+  --color-accent-red-soft: #fff0f0;
+  --color-accent-green: #13884a;
+  --color-accent-green-soft: #eefaf3;
+  --color-shadow: rgba(10, 26, 43, 0.16);
+  --color-hero-overlay: rgba(255, 255, 255, 0.72);
+  --color-hero-fade: rgba(255, 255, 255, 0.96);
+  --color-navbar: rgba(255, 255, 255, 0.96);
+  --color-glass-border: rgba(0, 0, 0, 0.1);
+  --color-glass-shadow: rgba(0, 0, 0, 0.06);
+  --color-btn-hover: rgba(0, 0, 0, 0.15);
+  --color-btn-hover-text: #ffffff;
 }
 
 @theme inline {
@@ -17,7 +44,45 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.glass-panel {
+  background: var(--color-surface-glass);
+  border: 1px solid var(--color-glass-border);
+  box-shadow: 0 8px 24px var(--color-glass-shadow);
+  backdrop-filter: blur(24px) saturate(160%);
+  -webkit-backdrop-filter: blur(24px) saturate(160%);
+}
+
+button,
 a {
-  font-weight: 900;
+  cursor: pointer;
+}
+
+@layer base {
+  a {
+    font-weight: 900;
+    text-decoration: none;
+  }
+}
+
+/* Keep underlines only in Find Your Vehicle (homeSec2) */
+.find-your-vehicle a {
   text-decoration: underline;
+}
+
+/* Accent spans inside headings loaded from JSON */
+.heading-accent {
+  color: var(--color-primary);
+}
+
+.heading-accent-red {
+  color: var(--color-accent-red);
+}
+
+/* CTA button — primary solid background, dark overlay on hover */
+.btn-cta {
+  transition: all 0.2s ease;
+}
+.btn-cta:hover {
+  box-shadow: inset 0 0 0 9999px var(--color-btn-hover);
+  color: var(--color-btn-hover-text);
 }

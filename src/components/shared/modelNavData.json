@@ -1,0 +1,1557 @@
+{
+  "groups": [
+    {
+      "title": "Saloons & Tourers",
+      "items": [
+        {
+          "label": "1 Series",
+          "href": "/1-series",
+          "variants": [
+            {
+              "label": "114d",
+              "href": "/1-series/114d"
+            },
+            {
+              "label": "114i",
+              "href": "/1-series/114i"
+            },
+            {
+              "label": "116d",
+              "href": "/1-series/116d"
+            },
+            {
+              "label": "116i",
+              "href": "/1-series/116i"
+            },
+            {
+              "label": "118d",
+              "href": "/1-series/118d"
+            },
+            {
+              "label": "118i",
+              "href": "/1-series/118i"
+            },
+            {
+              "label": "120",
+              "href": "/1-series/120"
+            },
+            {
+              "label": "120d",
+              "href": "/1-series/120d"
+            },
+            {
+              "label": "120i",
+              "href": "/1-series/120i"
+            },
+            {
+              "label": "123d",
+              "href": "/1-series/123d"
+            },
+            {
+              "label": "125d",
+              "href": "/1-series/125d"
+            },
+            {
+              "label": "125i",
+              "href": "/1-series/125i"
+            },
+            {
+              "label": "128ti",
+              "href": "/1-series/128ti"
+            },
+            {
+              "label": "130i",
+              "href": "/1-series/130i"
+            },
+            {
+              "label": "135i",
+              "href": "/1-series/135i"
+            },
+            {
+              "label": "M135i",
+              "href": "/1-series/m135i"
+            },
+            {
+              "label": "M140i",
+              "href": "/1-series/m140i"
+            }
+          ],
+          "generations": [
+            {
+              "label": "E81",
+              "href": "/1-series/e81"
+            },
+            {
+              "label": "E82",
+              "href": "/1-series/e82"
+            },
+            {
+              "label": "E87",
+              "href": "/1-series/e87"
+            },
+            {
+              "label": "E88",
+              "href": "/1-series/e88"
+            },
+            {
+              "label": "F20",
+              "href": "/1-series/f20"
+            },
+            {
+              "label": "F21",
+              "href": "/1-series/f21"
+            },
+            {
+              "label": "F40",
+              "href": "/1-series/f40"
+            },
+            {
+              "label": "F70",
+              "href": "/1-series/f70"
+            }
+          ],
+          "variantCount": 17,
+          "generationCount": 8
+        },
+        {
+          "label": "2 Series",
+          "href": "/2-series",
+          "variants": [
+            {
+              "label": "214d",
+              "href": "/2-series/214d"
+            },
+            {
+              "label": "216d",
+              "href": "/2-series/216d"
+            },
+            {
+              "label": "216i",
+              "href": "/2-series/216i"
+            },
+            {
+              "label": "218d",
+              "href": "/2-series/218d"
+            },
+            {
+              "label": "218i",
+              "href": "/2-series/218i"
+            },
+            {
+              "label": "220d",
+              "href": "/2-series/220d"
+            },
+            {
+              "label": "220i",
+              "href": "/2-series/220i"
+            },
+            {
+              "label": "223i",
+              "href": "/2-series/223i"
+            },
+            {
+              "label": "225xe",
+              "href": "/2-series/225xe"
+            },
+            {
+              "label": "230i",
+              "href": "/2-series/230i"
+            },
+            {
+              "label": "M235i",
+              "href": "/2-series/m235i"
+            },
+            {
+              "label": "M240i",
+              "href": "/2-series/m240i"
+            }
+          ],
+          "generations": [
+            {
+              "label": "E10",
+              "href": "/2-series/e10"
+            },
+            {
+              "label": "F22",
+              "href": "/2-series/f22"
+            },
+            {
+              "label": "F23",
+              "href": "/2-series/f23"
+            },
+            {
+              "label": "F44",
+              "href": "/2-series/f44"
+            },
+            {
+              "label": "F45",
+              "href": "/2-series/f45"
+            },
+            {
+              "label": "F46",
+              "href": "/2-series/f46"
+            },
+            {
+              "label": "F74",
+              "href": "/2-series/f74"
+            },
+            {
+              "label": "G42",
+              "href": "/2-series/g42"
+            },
+            {
+              "label": "U06",
+              "href": "/2-series/u06"
+            }
+          ],
+          "variantCount": 12,
+          "generationCount": 9
+        },
+        {
+          "label": "3 Series",
+          "href": "/3-series",
+          "variants": [
+            {
+              "label": "316",
+              "href": "/3-series/316"
+            },
+            {
+              "label": "316d",
+              "href": "/3-series/316d"
+            },
+            {
+              "label": "316i",
+              "href": "/3-series/316i"
+            },
+            {
+              "label": "318d",
+              "href": "/3-series/318d"
+            },
+            {
+              "label": "318i",
+              "href": "/3-series/318i"
+            },
+            {
+              "label": "318is",
+              "href": "/3-series/318is"
+            },
+            {
+              "label": "318tds",
+              "href": "/3-series/318tds"
+            },
+            {
+              "label": "318ti",
+              "href": "/3-series/318ti"
+            },
+            {
+              "label": "320d",
+              "href": "/3-series/320d"
+            },
+            {
+              "label": "320e",
+              "href": "/3-series/320e"
+            },
+            {
+              "label": "320i",
+              "href": "/3-series/320i"
+            },
+            {
+              "label": "320si",
+              "href": "/3-series/320si"
+            },
+            {
+              "label": "323i",
+              "href": "/3-series/323i"
+            },
+            {
+              "label": "324d",
+              "href": "/3-series/324d"
+            },
+            {
+              "label": "325d",
+              "href": "/3-series/325d"
+            },
+            {
+              "label": "325e",
+              "href": "/3-series/325e"
+            },
+            {
+              "label": "325i",
+              "href": "/3-series/325i"
+            },
+            {
+              "label": "328i",
+              "href": "/3-series/328i"
+            },
+            {
+              "label": "330d",
+              "href": "/3-series/330d"
+            },
+            {
+              "label": "330e",
+              "href": "/3-series/330e"
+            },
+            {
+              "label": "330i",
+              "href": "/3-series/330i"
+            },
+            {
+              "label": "335d",
+              "href": "/3-series/335d"
+            },
+            {
+              "label": "335i",
+              "href": "/3-series/335i"
+            },
+            {
+              "label": "340i",
+              "href": "/3-series/340i"
+            },
+            {
+              "label": "Activehybrid3",
+              "href": "/3-series/activehybrid3"
+            },
+            {
+              "label": "M340d",
+              "href": "/3-series/m340d"
+            },
+            {
+              "label": "M340i",
+              "href": "/3-series/m340i"
+            }
+          ],
+          "generations": [
+            {
+              "label": "E21",
+              "href": "/3-series/e21"
+            },
+            {
+              "label": "E30",
+              "href": "/3-series/e30"
+            },
+            {
+              "label": "E36",
+              "href": "/3-series/e36"
+            },
+            {
+              "label": "E36 Compact",
+              "href": "/3-series/e36-compact"
+            },
+            {
+              "label": "E46",
+              "href": "/3-series/e46"
+            },
+            {
+              "label": "E46 Compact",
+              "href": "/3-series/e46-compact"
+            },
+            {
+              "label": "E90",
+              "href": "/3-series/e90"
+            },
+            {
+              "label": "E91",
+              "href": "/3-series/e91"
+            },
+            {
+              "label": "E92",
+              "href": "/3-series/e92"
+            },
+            {
+              "label": "E93",
+              "href": "/3-series/e93"
+            },
+            {
+              "label": "F30",
+              "href": "/3-series/f30"
+            },
+            {
+              "label": "F31",
+              "href": "/3-series/f31"
+            },
+            {
+              "label": "F34",
+              "href": "/3-series/f34"
+            },
+            {
+              "label": "G20",
+              "href": "/3-series/g20"
+            },
+            {
+              "label": "G21",
+              "href": "/3-series/g21"
+            }
+          ],
+          "variantCount": 27,
+          "generationCount": 15
+        },
+        {
+          "label": "4 Series",
+          "href": "/4-series",
+          "variants": [
+            {
+              "label": "418d",
+              "href": "/4-series/418d"
+            },
+            {
+              "label": "418i",
+              "href": "/4-series/418i"
+            },
+            {
+              "label": "420d",
+              "href": "/4-series/420d"
+            },
+            {
+              "label": "420i",
+              "href": "/4-series/420i"
+            },
+            {
+              "label": "425d",
+              "href": "/4-series/425d"
+            },
+            {
+              "label": "428i",
+              "href": "/4-series/428i"
+            },
+            {
+              "label": "430d",
+              "href": "/4-series/430d"
+            },
+            {
+              "label": "430i",
+              "href": "/4-series/430i"
+            },
+            {
+              "label": "435d",
+              "href": "/4-series/435d"
+            },
+            {
+              "label": "435i",
+              "href": "/4-series/435i"
+            },
+            {
+              "label": "440i",
+              "href": "/4-series/440i"
+            },
+            {
+              "label": "M440d",
+              "href": "/4-series/m440d"
+            },
+            {
+              "label": "M440i",
+              "href": "/4-series/m440i"
+            }
+          ],
+          "generations": [
+            {
+              "label": "F32",
+              "href": "/4-series/f32"
+            },
+            {
+              "label": "F33",
+              "href": "/4-series/f33"
+            },
+            {
+              "label": "F36",
+              "href": "/4-series/f36"
+            },
+            {
+              "label": "G22",
+              "href": "/4-series/g22"
+            },
+            {
+              "label": "G23",
+              "href": "/4-series/g23"
+            },
+            {
+              "label": "G26",
+              "href": "/4-series/g26"
+            }
+          ],
+          "variantCount": 13,
+          "generationCount": 6
+        },
+        {
+          "label": "5 Series",
+          "href": "/5-series",
+          "variants": [
+            {
+              "label": "518d",
+              "href": "/5-series/518d"
+            },
+            {
+              "label": "518i",
+              "href": "/5-series/518i"
+            },
+            {
+              "label": "520d",
+              "href": "/5-series/520d"
+            },
+            {
+              "label": "520e",
+              "href": "/5-series/520e"
+            },
+            {
+              "label": "520i",
+              "href": "/5-series/520i"
+            },
+            {
+              "label": "523i",
+              "href": "/5-series/523i"
+            },
+            {
+              "label": "524td 524d",
+              "href": "/5-series/524td-524d"
+            },
+            {
+              "label": "525d",
+              "href": "/5-series/525d"
+            },
+            {
+              "label": "525e",
+              "href": "/5-series/525e"
+            },
+            {
+              "label": "525i",
+              "href": "/5-series/525i"
+            },
+            {
+              "label": "525td",
+              "href": "/5-series/525td"
+            },
+            {
+              "label": "528i",
+              "href": "/5-series/528i"
+            },
+            {
+              "label": "530d",
+              "href": "/5-series/530d"
+            },
+            {
+              "label": "530e",
+              "href": "/5-series/530e"
+            },
+            {
+              "label": "530i",
+              "href": "/5-series/530i"
+            },
+            {
+              "label": "535d",
+              "href": "/5-series/535d"
+            },
+            {
+              "label": "535i",
+              "href": "/5-series/535i"
+            },
+            {
+              "label": "540d",
+              "href": "/5-series/540d"
+            },
+            {
+              "label": "540i",
+              "href": "/5-series/540i"
+            },
+            {
+              "label": "545e",
+              "href": "/5-series/545e"
+            },
+            {
+              "label": "545i",
+              "href": "/5-series/545i"
+            },
+            {
+              "label": "550i",
+              "href": "/5-series/550i"
+            },
+            {
+              "label": "M550d",
+              "href": "/5-series/m550d"
+            },
+            {
+              "label": "M550i",
+              "href": "/5-series/m550i"
+            }
+          ],
+          "generations": [
+            {
+              "label": "E12",
+              "href": "/5-series/e12"
+            },
+            {
+              "label": "E28",
+              "href": "/5-series/e28"
+            },
+            {
+              "label": "E34",
+              "href": "/5-series/e34"
+            },
+            {
+              "label": "E39",
+              "href": "/5-series/e39"
+            },
+            {
+              "label": "E60",
+              "href": "/5-series/e60"
+            },
+            {
+              "label": "E61",
+              "href": "/5-series/e61"
+            },
+            {
+              "label": "F07",
+              "href": "/5-series/f07"
+            },
+            {
+              "label": "F10",
+              "href": "/5-series/f10"
+            },
+            {
+              "label": "F11",
+              "href": "/5-series/f11"
+            },
+            {
+              "label": "G30",
+              "href": "/5-series/g30"
+            },
+            {
+              "label": "G31",
+              "href": "/5-series/g31"
+            },
+            {
+              "label": "G60",
+              "href": "/5-series/g60"
+            },
+            {
+              "label": "G61",
+              "href": "/5-series/g61"
+            }
+          ],
+          "variantCount": 24,
+          "generationCount": 13
+        },
+        {
+          "label": "6 Series",
+          "href": "/6-series",
+          "variants": [
+            {
+              "label": "620d",
+              "href": "/6-series/620d"
+            },
+            {
+              "label": "628 635csi",
+              "href": "/6-series/628-635csi"
+            },
+            {
+              "label": "630d",
+              "href": "/6-series/630d"
+            },
+            {
+              "label": "630i",
+              "href": "/6-series/630i"
+            },
+            {
+              "label": "635d",
+              "href": "/6-series/635d"
+            },
+            {
+              "label": "640d",
+              "href": "/6-series/640d"
+            },
+            {
+              "label": "640i",
+              "href": "/6-series/640i"
+            },
+            {
+              "label": "645ci",
+              "href": "/6-series/645ci"
+            },
+            {
+              "label": "650i",
+              "href": "/6-series/650i"
+            }
+          ],
+          "generations": [
+            {
+              "label": "E24",
+              "href": "/6-series/e24"
+            },
+            {
+              "label": "E63",
+              "href": "/6-series/e63"
+            },
+            {
+              "label": "E64",
+              "href": "/6-series/e64"
+            },
+            {
+              "label": "F06",
+              "href": "/6-series/f06"
+            },
+            {
+              "label": "F12",
+              "href": "/6-series/f12"
+            },
+            {
+              "label": "F13",
+              "href": "/6-series/f13"
+            },
+            {
+              "label": "G32",
+              "href": "/6-series/g32"
+            }
+          ],
+          "variantCount": 9,
+          "generationCount": 7
+        },
+        {
+          "label": "7 Series",
+          "href": "/7-series",
+          "variants": [
+            {
+              "label": "725tds",
+              "href": "/7-series/725tds"
+            },
+            {
+              "label": "728i",
+              "href": "/7-series/728i"
+            },
+            {
+              "label": "730d",
+              "href": "/7-series/730d"
+            },
+            {
+              "label": "730i",
+              "href": "/7-series/730i"
+            },
+            {
+              "label": "735i",
+              "href": "/7-series/735i"
+            },
+            {
+              "label": "740d",
+              "href": "/7-series/740d"
+            },
+            {
+              "label": "740i",
+              "href": "/7-series/740i"
+            },
+            {
+              "label": "745e",
+              "href": "/7-series/745e"
+            },
+            {
+              "label": "745i",
+              "href": "/7-series/745i"
+            },
+            {
+              "label": "750e",
+              "href": "/7-series/750e"
+            },
+            {
+              "label": "750i",
+              "href": "/7-series/750i"
+            },
+            {
+              "label": "760i",
+              "href": "/7-series/760i"
+            }
+          ],
+          "generations": [
+            {
+              "label": "E23",
+              "href": "/7-series/e23"
+            },
+            {
+              "label": "E32",
+              "href": "/7-series/e32"
+            },
+            {
+              "label": "E38",
+              "href": "/7-series/e38"
+            },
+            {
+              "label": "E65 E66",
+              "href": "/7-series/e65-e66"
+            },
+            {
+              "label": "F01 F02",
+              "href": "/7-series/f01-f02"
+            },
+            {
+              "label": "G11 G12",
+              "href": "/7-series/g11-g12"
+            },
+            {
+              "label": "G70",
+              "href": "/7-series/g70"
+            }
+          ],
+          "variantCount": 12,
+          "generationCount": 7
+        },
+        {
+          "label": "8 Series",
+          "href": "/8-series",
+          "variants": [
+            {
+              "label": "840ci",
+              "href": "/8-series/840ci"
+            },
+            {
+              "label": "840d",
+              "href": "/8-series/840d"
+            },
+            {
+              "label": "840i",
+              "href": "/8-series/840i"
+            },
+            {
+              "label": "850csi",
+              "href": "/8-series/850csi"
+            },
+            {
+              "label": "850i 850ci",
+              "href": "/8-series/850i-850ci"
+            },
+            {
+              "label": "M850i",
+              "href": "/8-series/m850i"
+            }
+          ],
+          "generations": [
+            {
+              "label": "E31",
+              "href": "/8-series/e31"
+            },
+            {
+              "label": "G14",
+              "href": "/8-series/g14"
+            },
+            {
+              "label": "G15",
+              "href": "/8-series/g15"
+            },
+            {
+              "label": "G16",
+              "href": "/8-series/g16"
+            }
+          ],
+          "variantCount": 6,
+          "generationCount": 4
+        }
+      ]
+    },
+    {
+      "title": "SUV (X)",
+      "items": [
+        {
+          "label": "X1",
+          "href": "/x1",
+          "variants": [
+            {
+              "label": "16d",
+              "href": "/x1/16d"
+            },
+            {
+              "label": "18d",
+              "href": "/x1/18d"
+            },
+            {
+              "label": "18i",
+              "href": "/x1/18i"
+            },
+            {
+              "label": "20d",
+              "href": "/x1/20d"
+            },
+            {
+              "label": "20i",
+              "href": "/x1/20i"
+            },
+            {
+              "label": "23d",
+              "href": "/x1/23d"
+            },
+            {
+              "label": "23i",
+              "href": "/x1/23i"
+            },
+            {
+              "label": "25d",
+              "href": "/x1/25d"
+            },
+            {
+              "label": "25e 30e",
+              "href": "/x1/25e-30e"
+            },
+            {
+              "label": "28i",
+              "href": "/x1/28i"
+            },
+            {
+              "label": "28i xDrive",
+              "href": "/x1/28i-xdrive"
+            }
+          ],
+          "generations": [
+            {
+              "label": "E84",
+              "href": "/x1/e84"
+            },
+            {
+              "label": "F48",
+              "href": "/x1/f48"
+            },
+            {
+              "label": "U11",
+              "href": "/x1/u11"
+            }
+          ],
+          "variantCount": 11,
+          "generationCount": 3
+        },
+        {
+          "label": "X2",
+          "href": "/x2",
+          "variants": [
+            {
+              "label": "18d",
+              "href": "/x2/18d"
+            },
+            {
+              "label": "18i",
+              "href": "/x2/18i"
+            },
+            {
+              "label": "20d",
+              "href": "/x2/20d"
+            },
+            {
+              "label": "20i",
+              "href": "/x2/20i"
+            },
+            {
+              "label": "M35i",
+              "href": "/x2/m35i"
+            },
+            {
+              "label": "xDrive25e",
+              "href": "/x2/xdrive25e"
+            }
+          ],
+          "generations": [
+            {
+              "label": "F39",
+              "href": "/x2/f39"
+            },
+            {
+              "label": "U10",
+              "href": "/x2/u10"
+            }
+          ],
+          "variantCount": 6,
+          "generationCount": 2
+        },
+        {
+          "label": "X3",
+          "href": "/x3",
+          "variants": [
+            {
+              "label": "18d",
+              "href": "/x3/18d"
+            },
+            {
+              "label": "20d",
+              "href": "/x3/20d"
+            },
+            {
+              "label": "20d xDrive",
+              "href": "/x3/20d-xdrive"
+            },
+            {
+              "label": "20i",
+              "href": "/x3/20i"
+            },
+            {
+              "label": "28i",
+              "href": "/x3/28i"
+            },
+            {
+              "label": "30d",
+              "href": "/x3/30d"
+            },
+            {
+              "label": "30d 30sd",
+              "href": "/x3/30d-30sd"
+            },
+            {
+              "label": "30e",
+              "href": "/x3/30e"
+            },
+            {
+              "label": "30e xDrive",
+              "href": "/x3/30e-xdrive"
+            },
+            {
+              "label": "30i",
+              "href": "/x3/30i"
+            },
+            {
+              "label": "35d",
+              "href": "/x3/35d"
+            },
+            {
+              "label": "35i",
+              "href": "/x3/35i"
+            },
+            {
+              "label": "M40i",
+              "href": "/x3/m40i"
+            }
+          ],
+          "generations": [
+            {
+              "label": "E83",
+              "href": "/x3/e83"
+            },
+            {
+              "label": "E83 Petrol",
+              "href": "/x3/e83-petrol"
+            },
+            {
+              "label": "F25",
+              "href": "/x3/f25"
+            },
+            {
+              "label": "G01",
+              "href": "/x3/g01"
+            },
+            {
+              "label": "G45",
+              "href": "/x3/g45"
+            }
+          ],
+          "variantCount": 13,
+          "generationCount": 5
+        },
+        {
+          "label": "X4",
+          "href": "/x4",
+          "variants": [
+            {
+              "label": "20d",
+              "href": "/x4/20d"
+            },
+            {
+              "label": "20i",
+              "href": "/x4/20i"
+            },
+            {
+              "label": "30d",
+              "href": "/x4/30d"
+            },
+            {
+              "label": "35d",
+              "href": "/x4/35d"
+            },
+            {
+              "label": "M40d",
+              "href": "/x4/m40d"
+            },
+            {
+              "label": "M40i",
+              "href": "/x4/m40i"
+            }
+          ],
+          "generations": [
+            {
+              "label": "F26",
+              "href": "/x4/f26"
+            },
+            {
+              "label": "G02",
+              "href": "/x4/g02"
+            }
+          ],
+          "variantCount": 6,
+          "generationCount": 2
+        },
+        {
+          "label": "X5",
+          "href": "/x5",
+          "variants": [
+            {
+              "label": "25d",
+              "href": "/x5/25d"
+            },
+            {
+              "label": "30i",
+              "href": "/x5/30i"
+            },
+            {
+              "label": "30sd 35d",
+              "href": "/x5/30sd-35d"
+            },
+            {
+              "label": "30si",
+              "href": "/x5/30si"
+            },
+            {
+              "label": "40i",
+              "href": "/x5/40i"
+            },
+            {
+              "label": "44i",
+              "href": "/x5/44i"
+            },
+            {
+              "label": "46is 48is",
+              "href": "/x5/46is-48is"
+            },
+            {
+              "label": "M50d",
+              "href": "/x5/m50d"
+            },
+            {
+              "label": "M50i M60i",
+              "href": "/x5/m50i-m60i"
+            },
+            {
+              "label": "X5 M",
+              "href": "/x5/x5-m"
+            },
+            {
+              "label": "xDrive30d",
+              "href": "/x5/xdrive30d"
+            },
+            {
+              "label": "xDrive35i",
+              "href": "/x5/xdrive35i"
+            },
+            {
+              "label": "xDrive40d",
+              "href": "/x5/xdrive40d"
+            },
+            {
+              "label": "xDrive40e",
+              "href": "/x5/xdrive40e"
+            },
+            {
+              "label": "xDrive45e",
+              "href": "/x5/xdrive45e"
+            },
+            {
+              "label": "xDrive50e",
+              "href": "/x5/xdrive50e"
+            },
+            {
+              "label": "xDrive50i",
+              "href": "/x5/xdrive50i"
+            }
+          ],
+          "generations": [
+            {
+              "label": "E53",
+              "href": "/x5/e53"
+            },
+            {
+              "label": "E70",
+              "href": "/x5/e70"
+            },
+            {
+              "label": "F15",
+              "href": "/x5/f15"
+            },
+            {
+              "label": "G05",
+              "href": "/x5/g05"
+            }
+          ],
+          "variantCount": 17,
+          "generationCount": 4
+        },
+        {
+          "label": "X6",
+          "href": "/x6",
+          "variants": [
+            {
+              "label": "35i 40i",
+              "href": "/x6/35i-40i"
+            },
+            {
+              "label": "M50d",
+              "href": "/x6/m50d"
+            },
+            {
+              "label": "M50i M60i",
+              "href": "/x6/m50i-m60i"
+            },
+            {
+              "label": "X6 M",
+              "href": "/x6/x6-m"
+            },
+            {
+              "label": "xDrive30d",
+              "href": "/x6/xdrive30d"
+            },
+            {
+              "label": "xDrive35d 40d",
+              "href": "/x6/xdrive35d-40d"
+            },
+            {
+              "label": "xDrive50i",
+              "href": "/x6/xdrive50i"
+            }
+          ],
+          "generations": [
+            {
+              "label": "E71",
+              "href": "/x6/e71"
+            },
+            {
+              "label": "F16",
+              "href": "/x6/f16"
+            },
+            {
+              "label": "G06",
+              "href": "/x6/g06"
+            }
+          ],
+          "variantCount": 7,
+          "generationCount": 3
+        },
+        {
+          "label": "X7",
+          "href": "/x7",
+          "variants": [
+            {
+              "label": "40i",
+              "href": "/x7/40i"
+            },
+            {
+              "label": "M50d",
+              "href": "/x7/m50d"
+            },
+            {
+              "label": "M50i M60i",
+              "href": "/x7/m50i-m60i"
+            },
+            {
+              "label": "xDrive30d",
+              "href": "/x7/xdrive30d"
+            },
+            {
+              "label": "xDrive40d",
+              "href": "/x7/xdrive40d"
+            }
+          ],
+          "generations": [
+            {
+              "label": "G07",
+              "href": "/x7/g07"
+            }
+          ],
+          "variantCount": 5,
+          "generationCount": 1
+        }
+      ]
+    },
+    {
+      "title": "M Performance",
+      "items": [
+        {
+          "label": "M1",
+          "href": "/m1",
+          "variants": [
+            {
+              "label": "35",
+              "href": "/m1/35"
+            }
+          ],
+          "generations": [
+            {
+              "label": "E26",
+              "href": "/m1/e26"
+            }
+          ],
+          "variantCount": 1,
+          "generationCount": 1
+        },
+        {
+          "label": "M2",
+          "href": "/m2",
+          "variants": [],
+          "generations": [
+            {
+              "label": "F87",
+              "href": "/m2/f87"
+            },
+            {
+              "label": "G87",
+              "href": "/m2/g87"
+            }
+          ],
+          "variantCount": 0,
+          "generationCount": 2
+        },
+        {
+          "label": "M3",
+          "href": "/m3",
+          "variants": [],
+          "generations": [
+            {
+              "label": "E30",
+              "href": "/m3/e30"
+            },
+            {
+              "label": "E36",
+              "href": "/m3/e36"
+            },
+            {
+              "label": "E46",
+              "href": "/m3/e46"
+            },
+            {
+              "label": "E90 E92 E93",
+              "href": "/m3/e90-e92-e93"
+            },
+            {
+              "label": "F80",
+              "href": "/m3/f80"
+            },
+            {
+              "label": "G80 G81",
+              "href": "/m3/g80-g81"
+            }
+          ],
+          "variantCount": 0,
+          "generationCount": 6
+        },
+        {
+          "label": "M4",
+          "href": "/m4",
+          "variants": [],
+          "generations": [
+            {
+              "label": "F82 F83",
+              "href": "/m4/f82-f83"
+            },
+            {
+              "label": "G82 G83",
+              "href": "/m4/g82-g83"
+            }
+          ],
+          "variantCount": 0,
+          "generationCount": 2
+        },
+        {
+          "label": "M5",
+          "href": "/m5",
+          "variants": [],
+          "generations": [
+            {
+              "label": "E28",
+              "href": "/m5/e28"
+            },
+            {
+              "label": "E34",
+              "href": "/m5/e34"
+            },
+            {
+              "label": "E39",
+              "href": "/m5/e39"
+            },
+            {
+              "label": "E60 E61",
+              "href": "/m5/e60-e61"
+            },
+            {
+              "label": "F10",
+              "href": "/m5/f10"
+            },
+            {
+              "label": "F90",
+              "href": "/m5/f90"
+            },
+            {
+              "label": "G90 G99",
+              "href": "/m5/g90-g99"
+            }
+          ],
+          "variantCount": 0,
+          "generationCount": 7
+        },
+        {
+          "label": "M6",
+          "href": "/m6",
+          "variants": [],
+          "generations": [
+            {
+              "label": "E24",
+              "href": "/m6/e24"
+            },
+            {
+              "label": "E63 E64",
+              "href": "/m6/e63-e64"
+            },
+            {
+              "label": "F06 F12 F13",
+              "href": "/m6/f06-f12-f13"
+            }
+          ],
+          "variantCount": 0,
+          "generationCount": 3
+        },
+        {
+          "label": "M8",
+          "href": "/m8",
+          "variants": [],
+          "generations": [
+            {
+              "label": "F91 F92 F93",
+              "href": "/m8/f91-f92-f93"
+            }
+          ],
+          "variantCount": 0,
+          "generationCount": 1
+        }
+      ]
+    },
+    {
+      "title": "Other",
+      "items": [
+        {
+          "label": "2002",
+          "href": "/2002",
+          "variants": [
+            {
+              "label": "Variants",
+              "href": "/2002/variants"
+            }
+          ],
+          "generations": [],
+          "variantCount": 1,
+          "generationCount": 0
+        },
+        {
+          "label": "i Series",
+          "href": "/i-series-electric-motors",
+          "variants": [],
+          "generations": [],
+          "variantCount": 0,
+          "generationCount": 0
+        },
+        {
+          "label": "XM",
+          "href": "/xm",
+          "variants": [],
+          "generations": [],
+          "variantCount": 0,
+          "generationCount": 0
+        },
+        {
+          "label": "Z Series",
+          "href": "/z-series",
+          "variants": [
+            {
+              "label": "Z1",
+              "href": "/z-series/z1"
+            },
+            {
+              "label": "Z1 25",
+              "href": "/z-series/z1-25"
+            },
+            {
+              "label": "Z3 18 19",
+              "href": "/z-series/z3-18-19"
+            },
+            {
+              "label": "Z3 20 22i",
+              "href": "/z-series/z3-20-22i"
+            },
+            {
+              "label": "Z3 28 30i",
+              "href": "/z-series/z3-28-30i"
+            },
+            {
+              "label": "Z3 M",
+              "href": "/z-series/z3-m"
+            },
+            {
+              "label": "Z4 18i 20i",
+              "href": "/z-series/z4-18i-20i"
+            },
+            {
+              "label": "Z4 20i 22i",
+              "href": "/z-series/z4-20i-22i"
+            },
+            {
+              "label": "Z4 23i",
+              "href": "/z-series/z4-23i"
+            },
+            {
+              "label": "Z4 25i 25si",
+              "href": "/z-series/z4-25i-25si"
+            },
+            {
+              "label": "Z4 30i 30si",
+              "href": "/z-series/z4-30i-30si"
+            },
+            {
+              "label": "Z4 M40i",
+              "href": "/z-series/z4-m40i"
+            },
+            {
+              "label": "Z4 sDrive28i 30i",
+              "href": "/z-series/z4-sdrive28i-30i"
+            },
+            {
+              "label": "Z4 sDrive35i 35is",
+              "href": "/z-series/z4-sdrive35i-35is"
+            },
+            {
+              "label": "Z4 Z4m",
+              "href": "/z-series/z4-z4m"
+            },
+            {
+              "label": "Z8 49",
+              "href": "/z-series/z8-49"
+            }
+          ],
+          "generations": [
+            {
+              "label": "Z3 E36 7",
+              "href": "/z-series/z3-e36-7"
+            },
+            {
+              "label": "Z3 E36 8",
+              "href": "/z-series/z3-e36-8"
+            },
+            {
+              "label": "Z4 E85",
+              "href": "/z-series/z4-e85"
+            },
+            {
+              "label": "Z4 E86",
+              "href": "/z-series/z4-e86"
+            },
+            {
+              "label": "Z4 E89",
+              "href": "/z-series/z4-e89"
+            },
+            {
+              "label": "Z4 G29",
+              "href": "/z-series/z4-g29"
+            },
+            {
+              "label": "Z8 E52",
+              "href": "/z-series/z8-e52"
+            }
+          ],
+          "variantCount": 16,
+          "generationCount": 7
+        }
+      ]
+    }
+  ]
+}
