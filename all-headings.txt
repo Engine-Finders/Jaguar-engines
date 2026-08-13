@@ -85,9 +85,9 @@ H1 TEMPLATE: Jaguar {Engine Name} — Specs, Reliability & Replacement Cost
 H1 EXAMPLE:  Jaguar AJ-V6 Petrol Engine — Specs, Reliability & Replacement Cost
 
 H2 (by section/component):
-- At a Glance                                         (AtAGlance)
+- Jaguar {Engine Name} Engine Overview               (AtAGlance)
 - Verdict & Rating                                    (VerdictRating)
-- Compatibility                                       (Compatibility)
-- Cost Guide                                          (CostGuide)
-- FAQ                                                 (FAQAccordion)
+- Compatible Jaguar Models                            (Compatibility)
+- Jaguar {Engine Code} Engine Price Guide             (CostGuide)
+- Frequently Asked Questions                          (FAQAccordion)
 - Why Owners Trust Us                                 (TrustCta)

@@ -122,7 +122,7 @@ export default function HomeSec5({ data }) {
 
       <div className="relative mx-auto w-full max-w-8xl">
         <div className="max-w-[720px] pt-1 md:pt-9">
-          <h2 className={`text-[2.1rem] font-bold leading-[1.03] tracking-normal md:text-[3.3rem] ${isDark ? "text-white" : "text-[#071827]"}`} dangerouslySetInnerHTML={{ __html: data.h2 || "Jaguar Comparisons" }} />
+          <h2 className={`text-[2.1rem] font-bold leading-[1.03] tracking-normal md:text-[3.3rem] ${isDark ? "text-white" : "text-[#071827]"}`}>Comparison Hub — Head-to-Head Verdicts</h2>
           <div className="mt-4">
             <MStripe />
           </div>

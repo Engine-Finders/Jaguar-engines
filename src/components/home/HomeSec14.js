@@ -73,7 +73,7 @@ export default function HomeSec14({ data }) {
 
         <div className="relative px-5 py-5 md:grid md:grid-cols-[minmax(0,1fr)_34%] md:gap-5 md:px-10 md:py-6">
           <div>
-            <h2 className={`text-[2rem] font-bold leading-tight tracking-normal md:text-[2.18rem] ${isDark ? "text-white" : "text-[#071827]"}`} dangerouslySetInnerHTML={{ __html: data.h2 || data.title || "Not Sure Where to Start?" }} />
+            <h2 className={`text-[2rem] font-bold leading-tight tracking-normal md:text-[2.18rem] ${isDark ? "text-white" : "text-[#071827]"}`}>Not Sure Where to Start?</h2>
             <div className="mt-3">
               <MStripe />
             </div>
@@ -93,7 +93,7 @@ export default function HomeSec14({ data }) {
             ) : null}
 
             <div className="mt-6 grid gap-3 md:grid-cols-[272px_240px_minmax(0,1fr)] md:items-center">
-              <Link href={primaryCta.href} className="btn-cta flex min-h-16 items-center gap-4 rounded-lg bg-[var(--color-primary)] px-5 py-3 text-white">
+              <Link href="/quote" className="btn-cta flex min-h-16 items-center gap-4 rounded-lg bg-[var(--color-primary)] px-5 py-3 text-white">
                 <Icon name="chat" className="h-8 w-8 shrink-0" />
                 <span className="min-w-0">
                   <span className="block text-[0.88rem] font-bold leading-tight">{primaryCta.label}</span>

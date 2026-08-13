@@ -51,7 +51,7 @@ export default function HomeSec12({ data }) {
 
       <div className="relative mx-auto w-full max-w-8xl">
         <div className="max-w-[680px] pt-4 md:pt-7">
-          <h2 className={`text-[2.7rem] font-bold leading-[1.04] tracking-normal md:text-[3.25rem] ${isDark ? "text-white" : "text-[#071827]"}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
+          <h2 className={`text-[2.7rem] font-bold leading-[1.04] tracking-normal md:text-[3.25rem] ${isDark ? "text-white" : "text-[#071827]"}`}>Why Jaguar Owners Trust This Site</h2>
           <div className="mt-4">
             <MStripe />
           </div>

@@ -86,6 +86,18 @@ function cleanText(value = "") {
     .trim();
 }
 
+function stripTags(value = "") {
+  return cleanText(value).replace(/<[^>]*>/g, "").trim();
+}
+
+/** Convert anchors to spans so HTML can sit inside a parent <Link>/<a> without hydration issues. */
+function unlinkHtml(value = "") {
+  return cleanText(value).replace(
+    /<a\b[^>]*>([\s\S]*?)<\/a>/gi,
+    '<span class="font-semibold text-[var(--color-primary)]">$1</span>'
+  );
+}
+
 function Icon({ name, className = "h-5 w-5", strokeWidth = 2 }) {
   return (
     <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
@@ -94,17 +106,24 @@ function Icon({ name, className = "h-5 w-5", strokeWidth = 2 }) {
   );
 }
 
-function modelParts(model) {
-  const match = model.match(/^(.+?)\s+([A-Z]\d+|F10 M5|X5)\s+\((.+)\)$/);
-  if (!match) {
-    return { family: model, generation: "", engine: "" };
+function modelParts(model = "") {
+  const plain = stripTags(model);
+  const withEngine = plain.match(/^(.+?)\s+([A-Z][\w-]*)\s+\((.+)\)$/);
+  if (withEngine) {
+    const engineHtml = (model.match(/\(([\s\S]+)\)$/) || [])[1] || withEngine[3];
+    return {
+      family: withEngine[1],
+      generation: withEngine[2],
+      engine: engineHtml,
+    };
   }
 
-  return {
-    family: match[1] === "F10 M5" ? "F10 M5" : match[1],
-    generation: match[2],
-    engine: match[3],
-  };
+  const noEngine = plain.match(/^(.+?)\s+([A-Z][\w-]*)$/);
+  if (noEngine) {
+    return { family: noEngine[1], generation: noEngine[2], engine: "" };
+  }
+
+  return { family: plain || model, generation: "", engine: "" };
 }
 
 function ValueBlock({ value, className = "" }) {
@@ -151,7 +170,12 @@ function MatrixRow({ row, isDark }) {
         <div className="min-w-0 md:pr-3 md:text-left">
           <p className="text-[0.82rem] font-bold leading-[1.16] md:text-[0.9rem]">{parts.family}</p>
           {parts.generation ? <p className="text-[0.82rem] font-bold leading-[1.16] md:text-[0.86rem]">{parts.generation}</p> : null}
-          {parts.engine ? <p className={`mt-1 text-[0.62rem] leading-[1.15] md:text-[0.68rem] ${isDark ? "text-white/74" : "text-[#172b4a]"}`}>({parts.engine})</p> : null}
+          {parts.engine ? (
+            <p
+              className={`mt-1 text-[0.62rem] leading-[1.15] md:text-[0.68rem] ${isDark ? "text-white/74" : "text-[#172b4a]"}`}
+              dangerouslySetInnerHTML={{ __html: `(${unlinkHtml(parts.engine)})` }}
+            />
+          ) : null}
         </div>
       </div>
 
@@ -164,7 +188,7 @@ function MatrixRow({ row, isDark }) {
         <div className="mb-2 md:mb-1">
           <VerdictMark type={row.verdict.type} showLabel />
         </div>
-        <p className={`text-[0.7rem] font-medium leading-[1.35] md:text-[0.68rem] ${isDark ? "text-white/80" : "text-[#071827]"}`} dangerouslySetInnerHTML={{ __html: verdictText }} />
+        <p className={`text-[0.7rem] font-medium leading-[1.35] md:text-[0.68rem] ${isDark ? "text-white/80" : "text-[#071827]"}`} dangerouslySetInnerHTML={{ __html: unlinkHtml(verdictText) }} />
       </div>
 
       <span className="justify-self-end text-[var(--color-primary)] md:hidden">
@@ -206,7 +230,7 @@ function DecisionMatrix({ data, isDark }) {
 
       <div>
         {data.matrix.rows.map((row) => (
-          <MatrixRow key={row.model} row={row} isDark={isDark} />
+          <MatrixRow key={stripTags(row.model) || row.href} row={row} isDark={isDark} />
         ))}
       </div>
     </div>
@@ -323,7 +347,7 @@ function MobileCta({ isDark }) {
         <p className={`text-[0.94rem] font-bold ${isDark ? "text-white" : "text-[#071827]"}`}>Honest. Data-Backed. Unbiased.</p>
         <p className={`mt-1 text-[0.74rem] leading-[1.45] ${isDark ? "text-white/76" : "text-[#27384a]"}`}>We tell you the truth - even when it means walking away. That&apos;s the Engine Finders promise.</p>
       </div>
-      <Link href="#" className="btn-cta hidden shrink-0 items-center gap-4 rounded-md bg-[var(--color-primary)] px-6 py-4 text-[0.9rem] font-bold text-white sm:flex">
+      <Link href="/quote" className="btn-cta hidden shrink-0 items-center gap-4 rounded-md bg-[var(--color-primary)] px-6 py-4 text-[0.9rem] font-bold text-white sm:flex">
         Start Your Research
         <Icon name="arrow" />
       </Link>
@@ -346,7 +370,7 @@ export default function HomeSec6({ data }) {
 
       <div className="relative mx-auto w-full max-w-8xl">
         <div className="max-w-[710px] pt-2 md:pt-7">
-          <h2 className={`text-[2.4rem] font-bold leading-[1.02] tracking-normal md:text-[3.6rem] ${isDark ? "text-white" : "text-[#071827]"}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
+          <h2 className={`text-[2.4rem] font-bold leading-[1.02] tracking-normal md:text-[3.6rem] ${isDark ? "text-white" : "text-[#071827]"}`}>The Ownership Economics Centre</h2>
           <div className="mt-4">
             <MStripe />
           </div>

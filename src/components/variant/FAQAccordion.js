@@ -41,7 +41,7 @@ export default function FAQAccordion({ data }) {
     <section className="w-full bg-[var(--color-page)] py-8 text-[var(--color-text)] md:py-10">
       <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
         <h2 className="text-[2.15rem] font-bold leading-[1.1] tracking-normal md:text-[3rem]">
-          BMW 320d - Frequently Asked Questions
+          Frequently Asked Questions
         </h2>
         <div className="mt-3">
           <MStripe />

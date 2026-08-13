@@ -414,8 +414,9 @@ export default function HomeSec2({ data }) {
         <div className="max-w-[560px] pt-2 md:max-w-[700px] md:pt-4">
           <h2
             className={`text-[2.4rem] font-bold leading-[0.94] md:text-[3.35rem] ${isDark ? "text-white md:text-[var(--color-text)]" : "text-[var(--color-text)]"}`}
-            dangerouslySetInnerHTML={{ __html: data.h2 }}
-          />
+          >
+            Find Your Vehicle
+          </h2>
           <div className="mt-3">
             <MStripe />
           </div>
@@ -532,7 +533,7 @@ export default function HomeSec2({ data }) {
               </p>
             </div>
             <Link
-              href={data.cta.href}
+              href="/quote"
               className="btn-cta mt-4 flex items-center justify-center gap-4 rounded-md bg-[var(--color-primary)] px-5 py-3.5 text-[0.92rem] font-semibold text-white"
             >
               <span>{data.cta.buttonLabel}</span>

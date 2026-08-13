@@ -1,4 +1,5 @@
 {
+  "h2": "Jaguar Diagnostic <span class=\"heading-accent\">Calculator</span>",
   "subHeadline": "Answer a few questions about your symptoms — we'll match you against known Jaguar failure patterns, show you the likely diagnosis, OEM part references, and an honest repair vs. replace cost estimate.",
   "headerImage": {
     "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=900&q=80",
@@ -15,70 +16,949 @@
     }
   },
   "trustStrip": [
-    { "icon": "📊", "label": "Powered by 1,700+ real UK enquiries" },
-    { "icon": "🔧", "label": "15+ vetted Jaguar specialists" },
-    { "icon": "📖", "label": "OEM part references included" },
-    { "icon": "🏆", "label": "Part of Engine Finders" }
+    {
+      "icon": "chart",
+      "value": "1,700+",
+      "text": "real UK enquiries tracked"
+    },
+    {
+      "icon": "engine",
+      "value": "10",
+      "text": "tracked diagnosis paths"
+    },
+    {
+      "icon": "gear",
+      "value": "15+",
+      "text": "vetted Jaguar specialists"
+    },
+    {
+      "icon": "shield",
+      "value": "OEM",
+      "text": "part references included"
+    }
   ],
   "howItWorks": {
     "steps": [
       {
         "step": 1,
+        "icon": "shortcut",
         "title": "Tell us your symptoms",
         "text": "Select from common failure categories or use the shortcut grid if you already know the fault."
       },
       {
         "step": 2,
+        "icon": "car",
         "title": "Tell us about your vehicle",
         "text": "Age and estimated value help us calculate whether repair or replacement makes financial sense."
       },
       {
         "step": 3,
+        "icon": "clipboard",
         "title": "Get your diagnosis",
         "text": "We'll show you the likely fault, OEM part numbers, severity level, and a transparent cost breakdown."
       }
     ]
   },
   "calculator": {
-    "stepLabel": "STEP 1 OF 3",
-    "title": "Tell us your symptoms",
-    "instruction": "Select from common failure categories or use the shortcut grid if you already know the fault.",
-    "symptoms": [
-      { "icon": "⚙️", "label": "Engine Performance Issues", "href": "#" },
-      { "icon": "🛢️", "label": "Oil Leaks & Consumption", "href": "#" },
-      { "icon": "🌡️", "label": "Cooling System", "href": "#" },
-      { "icon": "⏱️", "label": "Timing Chain / Tensioner", "href": "#" },
-      { "icon": "💨", "label": "Turbocharger", "href": "#" },
-      { "icon": "🔋", "label": "Battery / Electrical", "href": "#" },
-      { "icon": "⚡", "label": "Spark / Ignition", "href": "#" },
-      { "icon": "🌫️", "label": "Exhaust / Emissions", "href": "#" },
-      { "icon": "🔊", "label": "Noise / Vibration", "href": "#" },
-      { "icon": "❓", "label": "Other / Not Sure", "href": "#" }
+    "stepLabels": [
+      "Symptoms",
+      "Vehicle",
+      "Engine Type"
     ],
-    "cta": {
-      "label": "CONTINUE TO STEP 2",
-      "href": "#"
-    }
-  },
-  "whyTrust": {
-    "signals": [
+    "valueSteps": [
+      1500,
+      3000,
+      5000,
+      8000,
+      12000,
+      18000,
+      25000
+    ],
+    "ageOptions": [
       {
-        "icon": "🛡️",
+        "id": "under5",
+        "label": "Under 5 years"
+      },
+      {
+        "id": "5to10",
+        "label": "5-10 years"
+      },
+      {
+        "id": "10to15",
+        "label": "10-15 years"
+      },
+      {
+        "id": "over15",
+        "label": "Over 15 years"
+      }
+    ],
+    "engineOptions": [
+      {
+        "id": "reconditioned",
+        "label": "Reconditioned Engine",
+        "subLabel": "Best long-term fix",
+        "multiplier": 1
+      },
+      {
+        "id": "rebuilt",
+        "label": "Rebuilt Engine",
+        "subLabel": "Lower entry cost",
+        "multiplier": 0.82
+      },
+      {
+        "id": "used",
+        "label": "Used Engine",
+        "subLabel": "Fastest budget route",
+        "multiplier": 0.68
+      }
+    ],
+    "ctas": {
+      "quote": {
+        "label": "Get Replacement Quotes",
+        "href": "/quote"
+      },
+      "specialist": {
+        "label": "Speak to a Jaguar Specialist",
+        "href": "/quote"
+      }
+    },
+    "knownFaultOrder": [
+      "ingeniumTimingChain",
+      "aj133ChainTensioner",
+      "oilPump276dt",
+      "aj126CoolingChain",
+      "ingeniumWaterPump",
+      "turboFailure",
+      "oilConsumption",
+      "exhaustEmissions",
+      "batteryElectrical",
+      "sparkIgnition"
+    ],
+    "categories": [
+      {
+        "id": "performance",
+        "icon": "engine",
+        "label": "Engine Performance Issues",
+        "description": "Limp mode, hesitation, rough idle",
+        "question": "Which performance symptom sounds closest?",
+        "answers": [
+          {
+            "label": "Cold-start rattle then rough running on an Ingenium diesel",
+            "diagnosisKey": "ingeniumTimingChain"
+          },
+          {
+            "label": "Misfire, rough idle, or coil/plug feel on petrol",
+            "diagnosisKey": "sparkIgnition"
+          },
+          {
+            "label": "Whistle, smoke under load, or limp mode on boost",
+            "diagnosisKey": "turboFailure"
+          },
+          {
+            "label": "Sudden power loss with oil-pressure concern on older TDV6",
+            "diagnosisKey": "oilPump276dt"
+          }
+        ]
+      },
+      {
+        "id": "oil",
+        "icon": "drop",
+        "label": "Oil Leaks & Consumption",
+        "description": "Oil smell, blue smoke, rising use",
+        "question": "What oil-related symptom are you seeing?",
+        "answers": [
+          {
+            "label": "External leaks, oil smell, or cover seepage",
+            "diagnosisKey": "oilConsumption"
+          },
+          {
+            "label": "Blue smoke after idle or on overrun",
+            "diagnosisKey": "oilConsumption"
+          },
+          {
+            "label": "Low oil pressure warning or sudden cut-out on 2.7 TDV6",
+            "diagnosisKey": "oilPump276dt"
+          }
+        ]
+      },
+      {
+        "id": "cooling",
+        "icon": "thermometer",
+        "label": "Cooling System",
+        "description": "Overheating, coolant loss, warnings",
+        "question": "What cooling-system symptom are you seeing?",
+        "answers": [
+          {
+            "label": "Coolant loss on Ingenium petrol — likely water pump path",
+            "diagnosisKey": "ingeniumWaterPump"
+          },
+          {
+            "label": "Overheating plus timing concern on AJ126 V6",
+            "diagnosisKey": "aj126CoolingChain"
+          },
+          {
+            "label": "Heat warnings with diesel emissions/EGR history",
+            "diagnosisKey": "exhaustEmissions"
+          }
+        ]
+      },
+      {
+        "id": "timing",
+        "icon": "disc",
+        "label": "Timing Chain / Tensioner",
+        "description": "Cold-start rattle, chain noise",
+        "question": "Which timing symptom matches the car?",
+        "answers": [
+          {
+            "label": "Cold-start rattle on pre-2019 Ingenium diesel",
+            "diagnosisKey": "ingeniumTimingChain"
+          },
+          {
+            "label": "Chain/tensioner concern on pre-2013 AJ133 5.0 V8",
+            "diagnosisKey": "aj133ChainTensioner"
+          },
+          {
+            "label": "Timing noise with cooling issues on AJ126",
+            "diagnosisKey": "aj126CoolingChain"
+          }
+        ]
+      },
+      {
+        "id": "other",
+        "icon": "question",
+        "label": "Electrical, Exhaust & Other",
+        "description": "Battery, emissions, not sure",
+        "question": "Which of these is closest to the issue?",
+        "answers": [
+          {
+            "label": "Flat battery, start-stop, or electrical warnings",
+            "diagnosisKey": "batteryElectrical"
+          },
+          {
+            "label": "DPF / EGR / emissions warning lights",
+            "diagnosisKey": "exhaustEmissions"
+          },
+          {
+            "label": "Turbo smoke, whistle, or boost loss",
+            "diagnosisKey": "turboFailure"
+          },
+          {
+            "label": "Not sure — start from the most common Ingenium chain path",
+            "diagnosisKey": "ingeniumTimingChain"
+          }
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "key": "ingeniumTimingChain",
+        "shortcutLabel": "Ingenium Timing Chain",
+        "icon": "disc",
+        "severity": "catastrophic",
+        "headline": "AJ200D Timing Chain Tensioner Wear",
+        "summary": "Cold-start rattle on pre-2019 Ingenium diesels that can progress from tensioner wear to chain failure and serious engine damage if ignored.",
+        "engineCodes": [
+          "AJ200D",
+          "204DTD"
+        ],
+        "evidenceLabel": "EM-VERIFIED high-likelihood Ingenium diesel path",
+        "repairCost": {
+          "low": 1500,
+          "high": 2500
+        },
+        "replacementBase": {
+          "low": 3500,
+          "high": 5800
+        },
+        "dealerMultiplier": 1.85,
+        "chassis": [
+          {
+            "code": "X260",
+            "model": "XF",
+            "years": "2015-2024"
+          },
+          {
+            "code": "X761",
+            "model": "F-Pace",
+            "years": "2016-present"
+          },
+          {
+            "code": "X540",
+            "model": "E-Pace",
+            "years": "2017-present"
+          },
+          {
+            "code": "X760",
+            "model": "XE",
+            "years": "2015-2024"
+          }
+        ],
+        "oemParts": [
+          {
+            "label": "Timing chain kit",
+            "part": "Jaguar Ingenium chain kit (AJ200D)"
+          },
+          {
+            "label": "Chain tensioner",
+            "part": "OEM tensioner assembly"
+          },
+          {
+            "label": "Guide rails",
+            "part": "OEM guide set"
+          }
+        ],
+        "overrideCopy": {
+          "headline": "Do not keep driving on a cold-start chain rattle",
+          "body": "If the Ingenium chain slips, the car can move from a tensioner repair into full engine replacement territory in one event.",
+          "actions": [
+            "Avoid repeated cold restarts if the rattle is already severe.",
+            "Arrange recovery rather than driving long distances.",
+            "Confirm chain stretch and tensioner condition before pricing the rest of the car."
+          ]
+        },
+        "nextSteps": [
+          "Confirm cold-start rattle from the timing-chain area, not accessory drive noise.",
+          "Have a Jaguar specialist inspect tensioner and chain stretch before authorising replacement.",
+          "Compare car value against the reconditioned engine range before committing."
+        ]
+      },
+      {
+        "key": "aj133ChainTensioner",
+        "shortcutLabel": "AJ133 Chain Tensioner",
+        "icon": "warning",
+        "severity": "catastrophic",
+        "headline": "AJ133 5.0 V8 Chain Tensioner (pre-2013)",
+        "summary": "Documented timing-chain tensioner risk on early AJ133 5.0 V8 engines. The 2013 revision largely resolved it, but pre-2013 cars still need a careful check.",
+        "engineCodes": [
+          "AJ133"
+        ],
+        "evidenceLabel": "EM-VERIFIED pre-2013 AJ133 tensioner caveat",
+        "repairCost": {
+          "low": 2200,
+          "high": 3800
+        },
+        "replacementBase": {
+          "low": 5500,
+          "high": 9000
+        },
+        "dealerMultiplier": 1.85,
+        "chassis": [
+          {
+            "code": "X351",
+            "model": "XJ",
+            "years": "2010-2013"
+          },
+          {
+            "code": "X250",
+            "model": "XF",
+            "years": "2009-2013"
+          },
+          {
+            "code": "X150",
+            "model": "XK",
+            "years": "2009-2013"
+          },
+          {
+            "code": "X152",
+            "model": "F-Type",
+            "years": "2013 early"
+          }
+        ],
+        "oemParts": [
+          {
+            "label": "Timing chain tensioner",
+            "part": "AJ133 revised tensioner"
+          },
+          {
+            "label": "Timing chain kit",
+            "part": "AJ133 primary chain kit"
+          },
+          {
+            "label": "Guides",
+            "part": "OEM guide set"
+          }
+        ],
+        "overrideCopy": {
+          "headline": "Treat early AJ133 chain noise as urgent",
+          "body": "Pre-2013 AJ133 tensioner failure can escalate quickly from a warning rattle into catastrophic valvetrain damage.",
+          "actions": [
+            "Stop long-distance driving if chain noise is present.",
+            "Verify whether the engine is a pre-2013 build or revised unit.",
+            "Budget for specialist inspection before any major ownership decision."
+          ]
+        },
+        "nextSteps": [
+          "Confirm build date and whether the tensioner revision was completed.",
+          "Get a Jaguar specialist to inspect chain condition and oil history.",
+          "Use XJ/XF retained values against the upper recon range before walking away."
+        ]
+      },
+      {
+        "key": "oilPump276dt",
+        "shortcutLabel": "276DT Oil Pump",
+        "icon": "drop",
+        "severity": "catastrophic",
+        "headline": "276DT (2.7 TDV6) Oil Pump Failure",
+        "summary": "Shared with Land Rover Discovery 3 — oil pump failure often kills the engine outright with little warning. One of the most expensive Jaguar failure paths in our data.",
+        "engineCodes": [
+          "276DT"
+        ],
+        "evidenceLabel": "EM-VERIFIED sudden-failure diesel path",
+        "repairCost": {
+          "low": 2800,
+          "high": 4500
+        },
+        "replacementBase": {
+          "low": 5000,
+          "high": 7500
+        },
+        "dealerMultiplier": 1.85,
+        "chassis": [
+          {
+            "code": "X250",
+            "model": "XF",
+            "years": "2008-2011"
+          },
+          {
+            "code": "X350",
+            "model": "XJ",
+            "years": "2003-2009"
+          },
+          {
+            "code": "X200",
+            "model": "S-Type",
+            "years": "2004-2008"
+          }
+        ],
+        "oemParts": [
+          {
+            "label": "Oil pump assembly",
+            "part": "276DT oil pump"
+          },
+          {
+            "label": "Oil cooler / related seals",
+            "part": "OEM sealing kit"
+          },
+          {
+            "label": "Oil filter housing parts",
+            "part": "OEM housing kit"
+          }
+        ],
+        "overrideCopy": {
+          "headline": "Oil-pressure loss on a 276DT is an emergency",
+          "body": "This failure mode often ends as a dead engine. Continuing to drive after low oil pressure or sudden cut-out risks a total write-off of the unit.",
+          "actions": [
+            "Stop driving immediately if oil pressure warning or sudden power loss appears.",
+            "Recover the car — do not restart repeatedly.",
+            "Confirm whether repair is still possible before pricing a replacement engine."
+          ]
+        },
+        "nextSteps": [
+          "Capture fault codes and oil-pressure history if the engine still runs.",
+          "Get a specialist strip assessment before committing to recon.",
+          "Compare vehicle value carefully — many 276DT cars sit close to replacement cost."
+        ]
+      },
+      {
+        "key": "aj126CoolingChain",
+        "shortcutLabel": "AJ126 Cooling / Chain",
+        "icon": "thermometer",
+        "severity": "immediate",
+        "headline": "AJ126 Cooling System / Chain Tensioner",
+        "summary": "AJ126 V6 cars can combine cooling-system weakness with chain-tensioner concerns. Heat and timing noise together should be treated as an urgent ownership decision.",
+        "engineCodes": [
+          "AJ126"
+        ],
+        "evidenceLabel": "EM-VERIFIED AJ126 ownership risk path",
+        "repairCost": {
+          "low": 1800,
+          "high": 3200
+        },
+        "replacementBase": {
+          "low": 4500,
+          "high": 7500
+        },
+        "dealerMultiplier": 1.8,
+        "chassis": [
+          {
+            "code": "X250",
+            "model": "XF",
+            "years": "2012-2015"
+          },
+          {
+            "code": "X351",
+            "model": "XJ",
+            "years": "2012-2015"
+          },
+          {
+            "code": "X152",
+            "model": "F-Type",
+            "years": "2013-2015"
+          }
+        ],
+        "oemParts": [
+          {
+            "label": "Cooling system components",
+            "part": "AJ126 thermostat / water pump set"
+          },
+          {
+            "label": "Chain tensioner",
+            "part": "AJ126 tensioner assembly"
+          },
+          {
+            "label": "Associated gaskets",
+            "part": "OEM gasket set"
+          }
+        ],
+        "overrideCopy": {
+          "headline": "Do not ignore overheating plus timing noise",
+          "body": "On AJ126, cooling faults and chain concerns can stack into a much larger bill if secondary damage starts.",
+          "actions": [
+            "Park up if temperature climbs or coolant loss is visible.",
+            "Check for chain noise on cold start before authorising limited repairs.",
+            "Ask for a full cooling + timing inspection, not a single-part guess."
+          ]
+        },
+        "nextSteps": [
+          "Pressure-test the cooling system and inspect for external leaks.",
+          "Confirm chain condition before quoting repair alone.",
+          "Compare recon vs rebuild once the full fault set is known."
+        ]
+      },
+      {
+        "key": "ingeniumWaterPump",
+        "shortcutLabel": "Ingenium Water Pump",
+        "icon": "drop",
+        "severity": "monitor",
+        "headline": "Ingenium Petrol Water Pump (AJ200P / 204PT)",
+        "summary": "The Ingenium petrol is one of the cleaner Jaguar engines in our data — water pump replacement is the main meaningful weak point rather than a catastrophic failure pattern.",
+        "engineCodes": [
+          "AJ200P",
+          "204PT"
+        ],
+        "evidenceLabel": "EM-VERIFIED common Ingenium petrol service path",
+        "repairCost": {
+          "low": 450,
+          "high": 900
+        },
+        "replacementBase": {
+          "low": 3000,
+          "high": 5000
+        },
+        "dealerMultiplier": 1.85,
+        "chassis": [
+          {
+            "code": "X761",
+            "model": "F-Pace",
+            "years": "2017-present"
+          },
+          {
+            "code": "X540",
+            "model": "E-Pace",
+            "years": "2017-present"
+          },
+          {
+            "code": "X260",
+            "model": "XF",
+            "years": "2017-2024"
+          },
+          {
+            "code": "X760",
+            "model": "XE",
+            "years": "2017-2024"
+          }
+        ],
+        "oemParts": [
+          {
+            "label": "Water pump",
+            "part": "AJ200P / 204PT water pump"
+          },
+          {
+            "label": "Thermostat housing",
+            "part": "OEM thermostat assembly"
+          },
+          {
+            "label": "Coolant",
+            "part": "Jaguar-spec coolant fill"
+          }
+        ],
+        "overrideCopy": {
+          "headline": "Monitor coolant loss early",
+          "body": "This path is usually repairable if caught before overheating damage spreads into the rest of the engine.",
+          "actions": [
+            "Check coolant level regularly once seepage starts.",
+            "Avoid long trips with a low coolant warning.",
+            "Replace the pump before secondary heat damage appears."
+          ]
+        },
+        "nextSteps": [
+          "Confirm whether the leak is pump, housing, or hose related.",
+          "Repair is usually proportionate — replacement is rarely the first answer.",
+          "Keep service history notes; this engine otherwise has a strong record in our data."
+        ]
+      },
+      {
+        "key": "turboFailure",
+        "shortcutLabel": "Turbocharger",
+        "icon": "smoke",
+        "severity": "immediate",
+        "headline": "Turbocharger Wear / Failure",
+        "summary": "Whistle, smoke under load, or limp mode on turbocharged Jaguar engines often points to turbo wear, actuator faults, or related oil feed issues.",
+        "engineCodes": [
+          "AJ200D",
+          "204DTD",
+          "AJ126"
+        ],
+        "evidenceLabel": "Common forced-induction complaint path",
+        "repairCost": {
+          "low": 900,
+          "high": 2200
+        },
+        "replacementBase": {
+          "low": 3500,
+          "high": 5800
+        },
+        "dealerMultiplier": 1.8,
+        "chassis": [
+          {
+            "code": "X761",
+            "model": "F-Pace",
+            "years": "2016-present"
+          },
+          {
+            "code": "X260",
+            "model": "XF",
+            "years": "2015-2024"
+          },
+          {
+            "code": "X540",
+            "model": "E-Pace",
+            "years": "2017-present"
+          }
+        ],
+        "oemParts": [
+          {
+            "label": "Turbocharger assembly",
+            "part": "OEM turbo unit"
+          },
+          {
+            "label": "Oil feed / return lines",
+            "part": "OEM line set"
+          },
+          {
+            "label": "Gaskets and clamps",
+            "part": "Turbo install kit"
+          }
+        ],
+        "overrideCopy": {
+          "headline": "Limp mode plus smoke needs a stop-and-check",
+          "body": "Continuing to drive a failing turbo can push metal debris through the engine and turn a turbo job into a full replacement.",
+          "actions": [
+            "Reduce load and avoid boost if smoke or whistle worsens.",
+            "Check oil level and recent service history.",
+            "Inspect for shaft play and oil feed restriction before quoting."
+          ]
+        },
+        "nextSteps": [
+          "Confirm turbo vs intake/boost-leak symptoms with a specialist.",
+          "Budget actuator or turbo assembly repair first where possible.",
+          "Only escalate to engine replacement if secondary damage is confirmed."
+        ]
+      },
+      {
+        "key": "oilConsumption",
+        "shortcutLabel": "Oil Leaks / Consumption",
+        "icon": "drop",
+        "severity": "monitor",
+        "headline": "Oil Leaks & Consumption",
+        "summary": "Rising oil use, blue smoke, or external leaks are common ownership complaints. Severity depends on whether the issue is a gasket leak or internal consumption.",
+        "engineCodes": [
+          "AJ133",
+          "AJ126",
+          "AJ200D",
+          "AJ200P"
+        ],
+        "evidenceLabel": "High-volume Jaguar enquiry theme",
+        "repairCost": {
+          "low": 250,
+          "high": 1200
+        },
+        "replacementBase": {
+          "low": 3500,
+          "high": 7500
+        },
+        "dealerMultiplier": 1.8,
+        "chassis": [
+          {
+            "code": "X351",
+            "model": "XJ",
+            "years": "2010-2019"
+          },
+          {
+            "code": "X250",
+            "model": "XF",
+            "years": "2008-2015"
+          },
+          {
+            "code": "X761",
+            "model": "F-Pace",
+            "years": "2016-present"
+          }
+        ],
+        "oemParts": [
+          {
+            "label": "Valve cover / cam cover gasket",
+            "part": "OEM gasket set"
+          },
+          {
+            "label": "Oil cooler seals",
+            "part": "OEM seal kit"
+          },
+          {
+            "label": "PCV / breather components",
+            "part": "OEM breather parts"
+          }
+        ],
+        "overrideCopy": {
+          "headline": "Track oil use before it becomes an engine decision",
+          "body": "External leaks are often contained. Rapid internal consumption needs diagnosis before you assume a full engine is required.",
+          "actions": [
+            "Log oil top-ups over a fixed mileage window.",
+            "Inspect for external leaks before authorising major work.",
+            "Smoke on overrun points more toward internal sealing issues."
+          ]
+        },
+        "nextSteps": [
+          "Separate external leak from true burning/consumption.",
+          "Repair gaskets or breathers first where evidence supports it.",
+          "Reassess against car value only if consumption stays severe after basic fixes."
+        ]
+      },
+      {
+        "key": "exhaustEmissions",
+        "shortcutLabel": "Exhaust / Emissions",
+        "icon": "exhaust",
+        "severity": "monitor",
+        "headline": "Exhaust / Emissions System Faults",
+        "summary": "DPF, EGR, and emissions warnings are frequent on Jaguar diesels. Many stay repairable, but ignored clogging can cascade into turbo and engine damage.",
+        "engineCodes": [
+          "AJ200D",
+          "204DTD",
+          "276DT"
+        ],
+        "evidenceLabel": "Common diesel emissions enquiry path",
+        "repairCost": {
+          "low": 400,
+          "high": 1800
+        },
+        "replacementBase": {
+          "low": 3500,
+          "high": 5800
+        },
+        "dealerMultiplier": 1.8,
+        "chassis": [
+          {
+            "code": "X260",
+            "model": "XF",
+            "years": "2015-2024"
+          },
+          {
+            "code": "X761",
+            "model": "F-Pace",
+            "years": "2016-present"
+          },
+          {
+            "code": "X250",
+            "model": "XF",
+            "years": "2008-2015"
+          }
+        ],
+        "oemParts": [
+          {
+            "label": "EGR valve / cooler",
+            "part": "OEM EGR assembly"
+          },
+          {
+            "label": "DPF related sensors",
+            "part": "OEM sensor set"
+          },
+          {
+            "label": "Intake cleaning parts",
+            "part": "Service kit"
+          }
+        ],
+        "overrideCopy": {
+          "headline": "Do not ignore repeated DPF or EGR warnings",
+          "body": "Emissions faults left unresolved often become boost, overheating, or oil-contamination problems.",
+          "actions": [
+            "Avoid repeated aborted regenerations on short trips.",
+            "Scan for EGR/DPF codes before replacing random sensors.",
+            "Check for oil or coolant contamination if the fault keeps returning."
+          ]
+        },
+        "nextSteps": [
+          "Get a proper diagnostics session, not a parts-cannon approach.",
+          "Confirm whether cleaning, sensor repair, or EGR replacement is the real fix.",
+          "Escalate only if contamination or turbo damage is already present."
+        ]
+      },
+      {
+        "key": "batteryElectrical",
+        "shortcutLabel": "Battery / Electrical",
+        "icon": "bolt",
+        "severity": "low",
+        "headline": "Battery / Electrical Issues",
+        "summary": "Flat batteries, warning clusters, and start-stop faults are common and usually far cheaper than engine work — but they can mask charging or module problems.",
+        "engineCodes": [
+          "AJ200D",
+          "AJ200P",
+          "AJ133",
+          "AJ126"
+        ],
+        "evidenceLabel": "High-frequency low-severity enquiry path",
+        "repairCost": {
+          "low": 120,
+          "high": 650
+        },
+        "replacementBase": {
+          "low": 3000,
+          "high": 5500
+        },
+        "dealerMultiplier": 1.75,
+        "chassis": [
+          {
+            "code": "X761",
+            "model": "F-Pace",
+            "years": "2016-present"
+          },
+          {
+            "code": "X540",
+            "model": "E-Pace",
+            "years": "2017-present"
+          },
+          {
+            "code": "X260",
+            "model": "XF",
+            "years": "2015-2024"
+          }
+        ],
+        "oemParts": [
+          {
+            "label": "AGM battery",
+            "part": "Jaguar-spec AGM battery"
+          },
+          {
+            "label": "Battery monitoring sensor",
+            "part": "OEM IBS sensor"
+          },
+          {
+            "label": "Alternator (if required)",
+            "part": "OEM alternator"
+          }
+        ],
+        "overrideCopy": {
+          "headline": "Rule out the simple electrical faults first",
+          "body": "Most electrical complaints do not justify engine replacement maths. Diagnose battery and charging health before escalating.",
+          "actions": [
+            "Test battery and charging system under load.",
+            "Check for parasitic drain if the car goes flat overnight.",
+            "Confirm software/module warnings after a quality battery fit."
+          ]
+        },
+        "nextSteps": [
+          "Start with battery health and IBS coding where required.",
+          "Only investigate deeper modules after a healthy charge system is confirmed.",
+          "Keep this path separate from true mechanical engine failures."
+        ]
+      },
+      {
+        "key": "sparkIgnition",
+        "shortcutLabel": "Spark / Ignition",
+        "icon": "flame",
+        "severity": "low",
+        "headline": "Spark / Ignition Faults",
+        "summary": "Misfires, rough idle, and coil or plug failures are common on petrol Jaguars and usually land in repair territory rather than replacement.",
+        "engineCodes": [
+          "AJ200P",
+          "204PT",
+          "AJ133",
+          "AJ126"
+        ],
+        "evidenceLabel": "Common petrol drivability path",
+        "repairCost": {
+          "low": 180,
+          "high": 750
+        },
+        "replacementBase": {
+          "low": 3000,
+          "high": 5500
+        },
+        "dealerMultiplier": 1.75,
+        "chassis": [
+          {
+            "code": "X761",
+            "model": "F-Pace",
+            "years": "2017-present"
+          },
+          {
+            "code": "X351",
+            "model": "XJ",
+            "years": "2010-2019"
+          },
+          {
+            "code": "X152",
+            "model": "F-Type",
+            "years": "2013-present"
+          }
+        ],
+        "oemParts": [
+          {
+            "label": "Spark plugs",
+            "part": "OEM plug set"
+          },
+          {
+            "label": "Ignition coils",
+            "part": "OEM coil pack(s)"
+          },
+          {
+            "label": "Related leads / connectors",
+            "part": "Service parts"
+          }
+        ],
+        "overrideCopy": {
+          "headline": "Misfire is usually a repair-first problem",
+          "body": "Unless the misfire has already caused catalyst or internal damage, coils and plugs are the proportionate first move.",
+          "actions": [
+            "Do not keep driving in severe misfire for long distances.",
+            "Scan for cylinder-specific codes before replacing parts at random.",
+            "Inspect for oil in plug wells if covers are leaking."
+          ]
+        },
+        "nextSteps": [
+          "Replace plugs/coils on the affected bank or as a set where recommended.",
+          "Recheck for misfire after repair before considering deeper engine work.",
+          "Only escalate if compression or catalyst damage is confirmed."
+        ]
+      }
+    ],
+    "whyTrust": [
+      {
+        "icon": "shield",
         "title": "EM-VERIFIED Data",
         "text": "Every cost range and enquiry volume comes from real 2025 UK data — not estimates or guesswork."
       },
       {
-        "icon": "⚙️",
+        "icon": "gear",
         "title": "Jaguar-Specific Knowledge",
-        "text": "We use exact factory terminology (AJ126, <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a>, AJ200D, Ingenium) and OEM part numbers."
+        "text": "We use exact factory terminology (AJ126, AJ133, AJ200D, Ingenium) and OEM part numbers."
       },
       {
-        "icon": "👥",
+        "icon": "users",
         "title": "Vetted Specialist Network",
         "text": "Our recommendations route you to 15+ Jaguar specialists who work on these vehicles daily."
       },
       {
-        "icon": "🏆",
+        "icon": "chart",
         "title": "Honest Verdict System",
         "text": "We tell you when replacement isn't worth it — not every site does that."
       }
@@ -97,13 +977,49 @@
   },
   "costTable": {
     "title": "Typical UK Jaguar Replacement Costs",
-    "columns": ["FAILURE TYPE", "RECONDITIONED S&F", "REBUILT S&F", "USED S&F", "MAIN DEALER EST."],
+    "columns": [
+      "FAILURE TYPE",
+      "RECONDITIONED S&F",
+      "REBUILT S&F",
+      "USED S&F",
+      "MAIN DEALER EST."
+    ],
     "rows": [
-      { "failure": "Ingenium Timing Chain (AJ200D/<a href='https://jaguarengines.uk/engine/ajd4-204dtd'>204DTD</a>)", "recon": "£3,500–£5,800", "rebuilt": "£4,800–£7,000", "used": "£2,000–£3,500", "dealer": "£7,000–£10,500" },
-      { "failure": "AJ133 5.0 V8 Chain Tensioner (pre-2013)", "recon": "£5,500–£9,000", "rebuilt": "£8,000–£12,000", "used": "£3,000–£5,500", "dealer": "£11,000–£16,500" },
-      { "failure": "276DT Oil Pump Failure", "recon": "£5,000–£7,500", "rebuilt": "£6,500–£9,500", "used": "£2,800–£4,500", "dealer": "£9,500–£14,000" },
-      { "failure": "AJ126 Cooling System / Chain Tensioner", "recon": "£4,500–£7,500", "rebuilt": "£6,000–£9,500", "used": "£2,500–£4,500", "dealer": "£8,500–£13,000" },
-      { "failure": "Ingenium Petrol Water Pump (AJ200P/204PT)", "recon": "£3,000–£5,000", "rebuilt": "£4,200–£6,500", "used": "£1,500–£2,800", "dealer": "£6,000–£9,000" }
+      {
+        "failure": "Ingenium Timing Chain (AJ200D/<a href='https://jaguarengines.uk/engine/ajd4-204dtd'>204DTD</a>)",
+        "recon": "£3,500–£5,800",
+        "rebuilt": "£4,800–£7,000",
+        "used": "£2,000–£3,500",
+        "dealer": "£7,000–£10,500"
+      },
+      {
+        "failure": "AJ133 5.0 V8 Chain Tensioner (pre-2013)",
+        "recon": "£5,500–£9,000",
+        "rebuilt": "£8,000–£12,000",
+        "used": "£3,000–£5,500",
+        "dealer": "£11,000–£16,500"
+      },
+      {
+        "failure": "276DT Oil Pump Failure",
+        "recon": "£5,000–£7,500",
+        "rebuilt": "£6,500–£9,500",
+        "used": "£2,800–£4,500",
+        "dealer": "£9,500–£14,000"
+      },
+      {
+        "failure": "AJ126 Cooling System / Chain Tensioner",
+        "recon": "£4,500–£7,500",
+        "rebuilt": "£6,000–£9,500",
+        "used": "£2,500–£4,500",
+        "dealer": "£8,500–£13,000"
+      },
+      {
+        "failure": "Ingenium Petrol Water Pump (AJ200P/204PT)",
+        "recon": "£3,000–£5,000",
+        "rebuilt": "£4,200–£6,500",
+        "used": "£1,500–£2,800",
+        "dealer": "£6,000–£9,000"
+      }
     ]
   },
   "bottomCta": {

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useTheme } from "@/components/shared/themeProvider";
 
@@ -61,8 +62,8 @@ export const footerColumns = [
 ];
 
 export const footerLegal = {
-  copyright: "© 2026 BMW Reliability Guide, part of the Engine Finders network.",
-  disclaimer: "Independent editorial content; not affiliated with BMW AG.",
+  copyright: "© 2026 Jaguar Reliability Guide, part of the Engine Finders network.",
+  disclaimer: "Independent editorial content; not affiliated with Jaguar Land Rover.",
   links: [
     { label: "Privacy Policy", href: "/privacy" },
     { label: "Terms", href: "/terms" },
@@ -70,16 +71,15 @@ export const footerLegal = {
   ],
 };
 
-function LogoMark() {
+function LogoMark({ isDark }) {
   return (
-    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-[var(--color-text)] bg-[var(--color-surface)] text-[10px] font-bold leading-none">
-      <span className="grid h-8 w-8 grid-cols-2 overflow-hidden rounded-full border border-[var(--color-border-strong)]">
-        <span className="bg-[var(--color-surface)]" />
-        <span className="bg-[var(--color-primary)]" />
-        <span className="bg-[var(--color-primary)]" />
-        <span className="bg-[var(--color-surface)]" />
-      </span>
-    </span>
+    <Image
+      src="/jaguar-logo.png"
+      alt="Jaguar"
+      width={124}
+      height={63}
+      className={`h-auto w-[124px] object-contain ${isDark ? "brightness-0 invert" : ""}`}
+    />
   );
 }
 
@@ -98,11 +98,7 @@ export default function FooterColumns() {
   return (
     <div className="mx-auto w-full max-w-8xl px-4 py-6 md:px-8 md:py-8">
       <Link href="/" className={`mb-6 inline-flex items-center gap-3 no-underline ${brandTextClass}`}>
-        <LogoMark />
-        <span className="leading-tight">
-          <span className="block text-xl font-extrabold tracking-normal">BMW</span>
-          <span className="block text-sm font-semibold tracking-normal">RELIABILITY GUIDE</span>
-        </span>
+        <LogoMark isDark={isDark} />
       </Link>
 
       <div className="grid grid-cols-2 gap-x-4 gap-y-6 lg:grid-cols-4 lg:gap-6">

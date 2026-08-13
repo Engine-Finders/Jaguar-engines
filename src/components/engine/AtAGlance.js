@@ -34,8 +34,8 @@ function getRowMap(rows = []) {
 }
 
 function extractEngineName(rows) {
-  const family = cleanText(rows["Engine Family"] || "BMW Engine");
-  return family.startsWith("BMW ") ? family : `BMW ${family}`;
+  const family = cleanText(rows["Engine Family"] || "Jaguar Engine");
+  return family.startsWith("Jaguar ") ? family : `Jaguar ${family}`;
 }
 
 function parseScore(value = "") {
@@ -121,7 +121,7 @@ function SectionHeading({ engineName, isDark }) {
   return (
     <div className="mx-auto max-w-[860px] text-center">
       <h2 className={`font-bold tracking-normal ${sectionH2} ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
-        BMW <span className="text-[var(--color-primary)]">{engineName.replace(/^BMW\s+/, "")}</span> Engine Overview
+        Jaguar <span className="text-[var(--color-primary)]">{engineName.replace(/^Jaguar\s+/, "")}</span> Engine Overview
       </h2>
       <div className="mt-3 flex justify-center">
         <MStripe />

@@ -105,29 +105,43 @@ function RankingIcon({ row }) {
 }
 
 function RankingRow({ row, isDark }) {
+  // Use a div (not Link/<a>) so `why` HTML can safely include nested <a> tags
+  // without invalid <a>-in-<a> nesting that breaks hydration.
+  const rowClassName = `relative grid grid-cols-[72px_78px_minmax(0,1fr)_74px_12px] items-center gap-1 border-b px-2 py-3 last:border-b-0 sm:grid-cols-[82px_90px_minmax(0,1fr)_86px_14px] sm:gap-2 sm:px-3 md:grid-cols-[minmax(320px,1.3fr)_minmax(180px,0.78fr)_minmax(430px,2.3fr)_126px_24px] md:gap-5 md:px-6 md:py-4 ${
+    isDark ? "border-[#223a51] text-white hover:bg-[rgba(20,46,68,0.45)]" : "border-[#dfe5ed] text-[#071827] hover:bg-[#f8fbff]"
+  }`;
+
   return (
-    <Link
-      href={row.href}
-      className={`grid grid-cols-[72px_78px_minmax(0,1fr)_74px_12px] items-center gap-1 border-b px-2 py-3 last:border-b-0 sm:grid-cols-[82px_90px_minmax(0,1fr)_86px_14px] sm:gap-2 sm:px-3 md:grid-cols-[minmax(320px,1.3fr)_minmax(180px,0.78fr)_minmax(430px,2.3fr)_126px_24px] md:gap-5 md:px-6 md:py-4 ${
-        isDark ? "border-[#223a51] text-white hover:bg-[rgba(20,46,68,0.45)]" : "border-[#dfe5ed] text-[#071827] hover:bg-[#f8fbff]"
-      }`}
-    >
-      <div className="flex min-w-0 flex-col items-center gap-2 text-center md:flex-row md:gap-5 md:text-left">
+    <div className={rowClassName}>
+      {row.href ? (
+        <Link href={row.href} className="absolute inset-0 z-0" aria-label={row.ranking}>
+          <span className="sr-only">{row.ranking}</span>
+        </Link>
+      ) : null}
+      <div className="relative z-10 pointer-events-none flex min-w-0 flex-col items-center gap-2 text-center md:flex-row md:gap-5 md:text-left">
         <RankingIcon row={row} />
         <span className="text-[0.7rem] font-bold leading-[1.2] sm:text-[0.76rem] md:text-[1.08rem]">{row.ranking}</span>
       </div>
-      <div className={`min-w-0 border-l pl-2 md:pl-5 ${isDark ? "border-[#223a51]" : "border-[#dfe5ed]"}`}>
-        <p className="text-[0.78rem] font-bold leading-tight sm:text-[0.86rem] md:text-[1.12rem]">{row.winner}</p>
-        {row.winnerNote ? <p className={`mt-1 text-[0.62rem] leading-[1.2] sm:text-[0.68rem] md:text-[0.85rem] ${isDark ? "text-white/75" : "text-[#27384a]"}`} dangerouslySetInnerHTML={{ __html: row.winnerNote }} /> : null}
+      <div className={`relative z-10 pointer-events-none min-w-0 border-l pl-2 md:pl-5 ${isDark ? "border-[#223a51]" : "border-[#dfe5ed]"}`}>
+        <span className="block text-[0.78rem] font-bold leading-tight sm:text-[0.86rem] md:text-[1.12rem]">{row.winner}</span>
+        {row.winnerNote ? (
+          <span
+            className={`mt-1 block text-[0.62rem] leading-[1.2] sm:text-[0.68rem] md:text-[0.85rem] ${isDark ? "text-white/75" : "text-[#27384a]"}`}
+            dangerouslySetInnerHTML={{ __html: row.winnerNote }}
+          />
+        ) : null}
       </div>
-      <p className={`min-w-0 border-l pl-2 text-[0.66rem] leading-[1.32] sm:text-[0.72rem] md:pl-5 md:text-[0.9rem] ${isDark ? "border-[#223a51] text-white/82" : "border-[#dfe5ed] text-[#172b4a]"}`} dangerouslySetInnerHTML={{ __html: row.why }} />
-      <div className="flex justify-center">
+      <div
+        className={`relative z-10 min-w-0 border-l pl-2 text-[0.66rem] leading-[1.32] sm:text-[0.72rem] md:pl-5 md:text-[0.9rem] ${isDark ? "border-[#223a51] text-white/82" : "border-[#dfe5ed] text-[#172b4a]"}`}
+        dangerouslySetInnerHTML={{ __html: row.why }}
+      />
+      <div className="relative z-10 pointer-events-none flex justify-center">
         <VerdictBadge verdict={row.verdict} />
       </div>
-      <span className={isDark ? "text-white" : "text-[#071827]"}>
+      <span className={`relative z-10 pointer-events-none ${isDark ? "text-white" : "text-[#071827]"}`}>
         <ChevronIcon />
       </span>
-    </Link>
+    </div>
   );
 }
 
@@ -157,7 +171,7 @@ export default function HomeSec4({ data }) {
 
       <div className="relative mx-auto w-full max-w-8xl">
         <div className="max-w-[760px] pt-2 md:pt-8">
-          <h2 className={`text-[2.35rem] font-bold leading-[0.98] tracking-normal md:text-[3.6rem] ${isDark ? "text-white" : "text-[#071827]"}`} dangerouslySetInnerHTML={{ __html: data.h2 || "Jaguar Ownership Rankings" }} />
+          <h2 className={`text-[2.35rem] font-bold leading-[0.98] tracking-normal md:text-[3.6rem] ${isDark ? "text-white" : "text-[#071827]"}`}>Jaguar Ownership Rankings</h2>
           <div className="mt-4">
             <MStripe />
           </div>

@@ -318,7 +318,7 @@ export default function Compatibility({
         <div className="grid max-w-[720px] items-start gap-4 md:grid-cols-[minmax(0,1fr)_auto] md:gap-5">
           <div className="min-w-0">
             <h2 className={`font-bold tracking-normal ${sectionH2}`}>
-              Compatible <span className="text-[var(--color-primary)]">BMW Models</span>
+              Compatible <span className="text-[var(--color-primary)]">Jaguar Models</span>
             </h2>
             <div className="mt-3">
               <MStripe />

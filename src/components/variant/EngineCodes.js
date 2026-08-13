@@ -154,7 +154,7 @@ export default function EngineCodes({ data }) {
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-12">
           <div className="lg:col-span-8">
             <h2 className="text-[2.15rem] font-bold leading-[1.1] tracking-normal md:text-[3rem]">
-              BMW 320d Engine Codes
+              Engine Codes
             </h2>
             <div className="mt-3">
               <MStripe />

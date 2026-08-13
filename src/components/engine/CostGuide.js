@@ -203,7 +203,7 @@ export default function CostGuide({ data, engineLabel = "BMW Engine" }) {
           <div className="hidden gap-4 md:grid md:grid-cols-[minmax(240px,0.85fr)_minmax(0,1.7fr)] md:items-stretch">
             <div className="flex flex-col">
               <h2 className={`font-bold tracking-normal ${sectionH2}`}>
-                BMW <span className="text-[var(--color-primary)]">{engineCode}</span> Engine Price Guide
+                Jaguar <span className="text-[var(--color-primary)]">{engineCode}</span> Engine Price Guide
               </h2>
               <div className="mt-3">
                 <MStripe />
@@ -253,7 +253,7 @@ export default function CostGuide({ data, engineLabel = "BMW Engine" }) {
           {/* Mobile */}
           <div className="md:hidden">
             <h2 className={`font-bold tracking-normal ${sectionH2}`}>
-              BMW <span className="text-[var(--color-primary)]">{engineCode}</span> Engine Price Guide
+              Jaguar <span className="text-[var(--color-primary)]">{engineCode}</span> Engine Price Guide
             </h2>
             <div className="mt-3">
               <MStripe />

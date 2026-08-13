@@ -275,7 +275,7 @@ function SideInfo({ data, isDark }) {
                 </span>
                 <div>
                   <p className={`text-[0.88rem] font-semibold leading-tight ${isDark ? "text-white" : "text-[#071827]"}`}>{item.title}</p>
-                  <p className={`mt-1 text-[0.76rem] leading-[1.4] ${isDark ? "text-white/72" : "text-[#27384a]"}`}>{item.text}</p>
+                  <p className={`mt-1 text-[0.76rem] leading-[1.4] ${isDark ? "text-white/72" : "text-[#27384a]"}`} dangerouslySetInnerHTML={{ __html: item.text }} />
                 </div>
               </div>
             </li>
@@ -287,7 +287,7 @@ function SideInfo({ data, isDark }) {
 }
 
 function ShortcutCard({ diagnosis, isDark, onSelect }) {
-  const severity = severityMeta[diagnosis.severity];
+  const severity = severityMeta[diagnosis.severity] || severityMeta.monitor;
 
   return (
     <button
@@ -347,13 +347,13 @@ function AnswerButton({ answer, isDark, onSelect }) {
 }
 
 function SeverityBadge({ severity, isDark }) {
-  const meta = severityMeta[severity];
+  const meta = severityMeta[severity] || severityMeta.monitor;
 
   return <span className={`inline-flex rounded-full border px-3 py-1.5 text-[0.72rem] font-bold uppercase tracking-[0.08em] ${isDark ? meta.darkBadge : meta.badge}`}>{meta.label}</span>;
 }
 
 function OverridePanel({ diagnosis, isDark, onContinue }) {
-  const meta = severityMeta[diagnosis.severity];
+  const meta = severityMeta[diagnosis.severity] || severityMeta.monitor;
 
   return (
     <div className={`rounded-xl border p-5 md:p-6 ${isDark ? meta.darkPanel : meta.panel}`}>
@@ -398,7 +398,7 @@ function CostCard({ title, value, note, highlight, isDark }) {
 }
 
 function ResultsScreen({ diagnosis, verdict, engineOption, ctas, isDark, calculatorContext }) {
-  const severity = severityMeta[diagnosis.severity];
+  const severity = severityMeta[diagnosis.severity] || severityMeta.monitor;
   const verdictInfo = verdictMeta[verdict.decision];
   const dealerRange = getMainDealerRange(verdict.replacement, diagnosis.dealerMultiplier);
 
@@ -649,7 +649,7 @@ export default function HomeSec3({ data }) {
 
       <div className="relative mx-auto w-full max-w-8xl">
         <div className="max-w-[760px]">
-          <h2 className={`text-[2.35rem] font-bold leading-[0.98] tracking-normal md:text-[3.45rem] ${isDark ? "text-white" : "text-[#071827]"}`} dangerouslySetInnerHTML={{ __html: data.h2 || "Jaguar Diagnostic Calculator" }} />
+          <h2 className={`text-[2.35rem] font-bold leading-[0.98] tracking-normal md:text-[3.45rem] ${isDark ? "text-white" : "text-[#071827]"}`}>Diagnose Your Jaguar Problem</h2>
           <div className="mt-4">
             <MStripe />
           </div>
@@ -675,7 +675,9 @@ export default function HomeSec3({ data }) {
                       <p className="text-[0.76rem] font-bold uppercase tracking-[0.08em] text-[var(--color-primary)]">Known fault shortcuts</p>
                       <h3 className={`mt-2 text-[1.35rem] font-bold leading-tight md:text-[1.7rem] ${isDark ? "text-white" : "text-[#071827]"}`}>Jump straight to the likely failure</h3>
                     </div>
-                    <p className={`max-w-[300px] text-[0.8rem] leading-[1.4] md:text-right ${isDark ? "text-white/66" : "text-[#607085]"}`}>15 shortcut cards for drivers who already know the problem, plus the symptom route below for everyone else.</p>
+                    <p className={`max-w-[300px] text-[0.8rem] leading-[1.4] md:text-right ${isDark ? "text-white/66" : "text-[#607085]"}`}>
+                      {knownFaults.length} shortcut cards for drivers who already know the problem, plus the symptom route below for everyone else.
+                    </p>
                   </div>
 
                   <div className="mt-5 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">

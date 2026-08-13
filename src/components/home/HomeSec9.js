@@ -95,9 +95,10 @@ function DesktopRows({ block, isDark }) {
           <div className={`border-r px-6 py-4 text-[1.55rem] font-bold leading-none text-[var(--color-primary)] ${isDark ? "border-[#223343]" : "border-[#e5e9ef]"}`}>
             {row.id}
           </div>
-          <div className={`border-r px-6 py-4 text-[1rem] font-bold leading-tight ${isDark ? "border-[#223343] text-white" : "border-[#e5e9ef] text-[#071827]"}`}>
-            {row.title}
-          </div>
+          <div
+            className={`border-r px-6 py-4 text-[1rem] font-bold leading-tight ${isDark ? "border-[#223343] text-white" : "border-[#e5e9ef] text-[#071827]"}`}
+            dangerouslySetInnerHTML={{ __html: row.title }}
+          />
           <p className={`border-r px-6 py-3 text-[0.82rem] leading-[1.25] ${isDark ? "border-[#223343] text-white/76" : "border-[#e5e9ef] text-[#171f2a]"}`} dangerouslySetInnerHTML={{ __html: row.description }} />
           <div className={`border-r px-6 py-4 ${isDark ? "border-[#223343]" : "border-[#e5e9ef]"}`}>
             <Severity severity={row.severity} />
@@ -122,7 +123,7 @@ function MobileRows({ block, isDark }) {
               {row.id}
             </span>
             <div className="min-w-0 flex-1">
-              <h4 className={`text-[1.05rem] font-bold leading-tight ${isDark ? "text-white" : "text-[#07113a]"}`}>{row.title}</h4>
+              <h4 className={`text-[1.05rem] font-bold leading-tight ${isDark ? "text-white" : "text-[#07113a]"}`} dangerouslySetInnerHTML={{ __html: row.title }} />
               <div className="mt-2">
                 <Severity severity={row.severity} />
               </div>
@@ -187,7 +188,7 @@ export default function HomeSec9({ data }) {
 
       <div className="relative mx-auto w-full max-w-8xl">
         <div className="max-w-[740px] pt-3 md:pt-6">
-          <h2 className={`text-[2.9rem] font-bold leading-[1.03] tracking-normal md:text-[3.45rem] ${isDark ? "text-white" : "text-[#07113a] md:text-black"}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
+          <h2 className={`text-[2.9rem] font-bold leading-[1.03] tracking-normal md:text-[3.45rem] ${isDark ? "text-white" : "text-[#07113a] md:text-black"}`}>The Jaguar Failure Database</h2>
           <div className="mt-4">
             <MStripe />
           </div>

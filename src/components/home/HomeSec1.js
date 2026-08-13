@@ -98,7 +98,7 @@ export default function HomeSec1({ data }) {
 
       <div className="relative mx-auto flex w-full max-w-8xl flex-col px-4 pb-5 pt-8 md:min-h-[620px] md:justify-center md:px-0 md:py-8">
         <div className="relative flex w-full max-w-[720px] flex-col gap-3 md:-ml-6 md:mt-0 md:gap-4">
-          <HeroTitle html={data.h1} />
+          <HeroTitle html="The UK&apos;s Most Trusted Jaguar Ownership Guide" />
 
           <MStripe />
 
@@ -147,11 +147,11 @@ export default function HomeSec1({ data }) {
           </ul>
 
           <Link
-            href={data.cta.href}
+            href="/quote"
             className={`btn-cta rounded-[1.15rem] border p-4 shadow-lg md:hidden ${
               isDark
-                ? "border-[rgba(41,115,219,0.75)] bg-[linear-gradient(180deg,rgba(14,79,184,0.98)_0%,rgba(8,59,143,0.98)_100%)] text-white shadow-black/30"
-                : "border-[rgba(41,115,219,0.28)] bg-[linear-gradient(180deg,rgba(14,79,184,0.98)_0%,rgba(8,59,143,0.98)_100%)] text-white shadow-[var(--color-shadow)]"
+                ? "border-[var(--color-border-strong)] bg-[var(--color-primary)] text-white shadow-black/30"
+                : "border-[var(--color-border-strong)] bg-[var(--color-primary)] text-white shadow-[var(--color-shadow)]"
             }`}
           >
             <div className="flex items-center gap-3">
@@ -175,8 +175,8 @@ export default function HomeSec1({ data }) {
           </Link>
 
           <Link
-            href={data.cta.href}
-            className="btn-cta hidden w-full items-center justify-between rounded-[1.25rem] border border-[rgba(41,115,219,0.75)] bg-[linear-gradient(180deg,rgba(14,79,184,0.98)_0%,rgba(8,59,143,0.98)_100%)] px-5 py-4 text-white shadow-lg shadow-black/30 md:flex md:w-fit md:justify-start md:gap-5 md:rounded md:border-0 md:bg-[var(--color-primary)] md:px-7 md:py-3.5 md:text-base md:shadow-lg md:shadow-[var(--color-shadow)]"
+            href="/quote"
+            className="btn-cta hidden w-full items-center justify-between rounded-[1.25rem] border border-[var(--color-border-strong)] bg-[var(--color-primary)] px-5 py-4 text-white shadow-lg shadow-black/30 md:flex md:w-fit md:justify-start md:gap-5 md:rounded md:border-0 md:bg-[var(--color-primary)] md:px-7 md:py-3.5 md:text-base md:shadow-lg md:shadow-[var(--color-shadow)]"
           >
             <span className="text-left">
               <span className="block text-lg font-bold tracking-[0.08em] md:text-[1.05rem] md:tracking-normal">{data.cta.label}</span>

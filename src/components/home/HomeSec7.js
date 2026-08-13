@@ -47,6 +47,17 @@ function cleanText(value = "") {
     .trim();
 }
 
+function stripTags(value = "") {
+  return cleanText(value).replace(/<[^>]*>/g, "").trim();
+}
+
+function unlinkHtml(value = "") {
+  return cleanText(value).replace(
+    /<a\b[^>]*>([\s\S]*?)<\/a>/gi,
+    '<span class="font-semibold text-[var(--color-primary)]">$1</span>'
+  );
+}
+
 function Icon({ name, className = "h-5 w-5", strokeWidth = 2 }) {
   return (
     <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
@@ -80,7 +91,7 @@ function VerdictIcon({ type, mobile = false }) {
 function EngineCell({ row }) {
   return (
     <div className="min-w-0">
-      <p className="text-[1.02rem] font-bold leading-tight md:text-[1.08rem]">{row.code}</p>
+      <p className="text-[1.02rem] font-bold leading-tight md:text-[1.08rem]" dangerouslySetInnerHTML={{ __html: unlinkHtml(row.code) }} />
       <p className="mt-1 text-[0.75rem] font-medium leading-tight text-[var(--color-primary)] md:text-[0.78rem]">{cleanText(row.spec)}</p>
     </div>
   );
@@ -126,7 +137,7 @@ function EngineRow({ row, isDark }) {
         <p className="text-[0.84rem] leading-[1.42]">
           <span className="font-medium">{row.verdict.label}</span>
           {" - "}
-          <span dangerouslySetInnerHTML={{ __html: cleanText(row.verdict.text) }} />
+          <span dangerouslySetInnerHTML={{ __html: unlinkHtml(row.verdict.text) }} />
         </p>
       </div>
     </Link>
@@ -169,7 +180,7 @@ function EngineTable({ data, isDark }) {
       </div>
 
       {data.engines.map((row) => (
-        <EngineRow key={row.code} row={row} isDark={isDark} />
+        <EngineRow key={stripTags(row.code) || row.href} row={row} isDark={isDark} />
       ))}
     </div>
   );
@@ -206,7 +217,7 @@ export default function HomeSec7({ data }) {
 
       <div className="relative mx-auto w-full max-w-8xl">
         <div className="max-w-[640px] pt-4 md:pt-8">
-          <h2 className={`text-[3rem] font-bold leading-[1.03] tracking-normal md:text-[3.6rem] ${isDark ? "text-white" : "text-[#071827]"}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
+          <h2 className={`text-[3rem] font-bold leading-[1.03] tracking-normal md:text-[3.6rem] ${isDark ? "text-white" : "text-[#071827]"}`}>Jaguar Engine Families — The Pillars</h2>
           <div className="mt-4">
             <MStripe />
           </div>

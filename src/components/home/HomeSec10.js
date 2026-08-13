@@ -42,6 +42,13 @@ function Icon({ name, className = "h-5 w-5", strokeWidth = 2 }) {
   );
 }
 
+function stripTags(value = "") {
+  return String(value || "")
+    .replace(/<[^>]*>/g, "")
+    .replaceAll("Â£", "£")
+    .trim();
+}
+
 function PanelTitle({ block, isDark }) {
   return (
     <div className={`flex items-center gap-4 border-b px-4 py-4 md:px-5 ${isDark ? "border-[#223343]" : "border-[#dfe5ed]"}`}>
@@ -74,9 +81,9 @@ function EnginesTable({ data, isDark }) {
         ))}
       </div>
       {data.rows.map((row) => (
-        <div key={row.code} className={`grid grid-cols-[58px_1fr_1fr_1.1fr] border-b px-4 py-2.5 text-[0.88rem] last:border-b-0 ${isDark ? "border-[#223343]" : "border-[#e7ebf0]"}`}>
+        <div key={stripTags(row.code) || row.rank} className={`grid grid-cols-[58px_1fr_1fr_1.1fr] border-b px-4 py-2.5 text-[0.88rem] last:border-b-0 ${isDark ? "border-[#223343]" : "border-[#e7ebf0]"}`}>
           <span className="text-center text-[1.15rem] font-bold leading-none text-[var(--color-primary)]">{row.rank}</span>
-          <span className={`font-semibold ${isDark ? "text-white" : "text-[#071827]"}`}>{row.code}</span>
+          <span className={`font-semibold ${isDark ? "text-white" : "text-[#071827]"}`} dangerouslySetInnerHTML={{ __html: row.code }} />
           <span className={`${isDark ? "text-white/76" : "text-[#172334]"}`}>{row.label}</span>
           <span className="font-medium text-[var(--color-primary)]">{row.enquiries}</span>
         </div>
@@ -133,7 +140,7 @@ function FailuresTable({ data, isDark }) {
       {data.rows.map((row) => (
         <div key={row.rank} className={`grid grid-cols-[52px_1fr_110px] items-center border-b px-4 py-3 text-[0.88rem] last:border-b-0 md:grid-cols-[58px_1fr_120px] md:py-2.5 ${isDark ? "border-[#223343]" : "border-[#e7ebf0]"}`}>
           <span className="text-center text-[1.25rem] font-bold leading-none text-[var(--color-primary)]">{row.rank}</span>
-          <span className={`pr-3 leading-snug ${isDark ? "text-white/84" : "text-[#071827]"}`}>{row.failure}</span>
+          <span className={`pr-3 leading-snug ${isDark ? "text-white/84" : "text-[#071827]"}`} dangerouslySetInnerHTML={{ __html: row.failure }} />
           <span className={`justify-self-end rounded px-3 py-1 text-[0.78rem] font-bold ${riskClass[row.risk.type] || "bg-gray-100 text-gray-800"}`}>
             {row.risk.label}
           </span>
@@ -232,7 +239,7 @@ export default function HomeSec10({ data }) {
       <div className="relative mx-auto w-full max-w-8xl">
         <div className="grid gap-6 md:grid-cols-[minmax(0,1fr)_280px] md:items-start">
           <div className="max-w-[690px]">
-            <h2 className={`text-[2.55rem] font-bold leading-[1.08] tracking-normal md:text-[3rem] ${isDark ? "text-white" : "text-[#071827]"}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
+            <h2 className={`text-[2.55rem] font-bold leading-[1.08] tracking-normal md:text-[3rem] ${isDark ? "text-white" : "text-[#071827]"}`}>Jaguar Market Intelligence</h2>
             <div className="mt-4">
               <MStripe />
             </div>

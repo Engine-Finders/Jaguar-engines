@@ -1,17 +1,15 @@
 import { notFound } from "next/navigation";
-import genPages from "@/data/registery/generations/pages.json";
-import varPages from "@/data/registery/variants/pages.json";
 import modelPages from "@/data/registery/models/pages.json";
+import genPages from "@/data/registery/generations/pages.json";
+import variantPages from "@/data/registery/variants/pages.json";
 
-// ---- Model components ----
 import ModelHero from "@/components/models/ModelHero";
 import OwnershipVerdict from "@/components/models/OwnershipVerdict";
 import AtAGlance from "@/components/models/AtAGlance";
 import GenerationsGrid from "@/components/models/GenerationsGrid";
 import EngineDatabase from "@/components/models/EngineDatabase";
-import ModelCommonProblems from "@/components/models/CommonProblems";
+import CommonProblems from "@/components/models/CommonProblems";
 import MarketIntelligence from "@/components/models/MarketIntelligence";
-import EditorialPullQuote from "@/components/models/EditorialPullQuote";
 import ReplacementCosts from "@/components/models/ReplacementCosts";
 import EngineEvolution from "@/components/models/EngineEvolution";
 import WhoShouldBuy from "@/components/models/WhoShouldBuy";
@@ -20,24 +18,22 @@ import TrustBlock from "@/components/models/TrustBlock";
 import FAQAccordion from "@/components/models/FAQAccordion";
 import ClosingActionCards from "@/components/models/ClosingActionCards";
 
-// ---- Generation components ----
-import GenModelHero from "@/components/generation/ModelHero";
+import GenHero from "@/components/generation/ModelHero";
 import GenEngineDatabase from "@/components/generation/EngineDatabase";
 import Overview from "@/components/generation/Overview";
 import BestWorstEngines from "@/components/generation/BestWorstEngines";
 import OwnershipEconomics from "@/components/generation/OwnershipEconomics";
-import GenCommonProblems from "@/components/generation/CommonProblems";
+import GenProblems from "@/components/generation/CommonProblems";
 import GenReplacementCosts from "@/components/generation/ReplacementCosts";
 import CoreVariants from "@/components/generation/CoreVariants";
 import GenMarketIntelligence from "@/components/generation/MarketIntelligence";
 import GenFAQAccordion from "@/components/generation/FAQAccordion";
 import GenTrustCta from "@/components/generation/TrustCta";
 
-// ---- Variant components ----
 import VariantHero from "@/components/variant/VariantHero";
 import EraMap from "@/components/variant/EraMap";
 import VarReplacementCosts from "@/components/variant/ReplacementCosts";
-import VarCommonProblems from "@/components/variant/CommonProblems";
+import VarProblems from "@/components/variant/CommonProblems";
 import QuotesCta from "@/components/variant/QuotesCta";
 import RepairBuyOrReplace from "@/components/variant/RepairBuyOrReplace";
 import BuyingChecklist from "@/components/variant/BuyingChecklist";
@@ -46,85 +42,107 @@ import VarMarketIntelligence from "@/components/variant/MarketIntelligence";
 import VarFAQAccordion from "@/components/variant/FAQAccordion";
 import VarTrustCta from "@/components/variant/TrustCta";
 
-function findEntry(segments, pages) {
-  if (segments.length === 2) {
-    return pages.find(
-      (p) => p.parent === segments[0] && p.slug === segments[1]
-    );
-  }
-  return pages.find(
-    (p) => !p.parent && p.slug === segments[0]
-  );
-}
-
-async function getData(type, dataFile) {
+async function getModelData(dataFile) {
   try {
-    const data = await import(`@/data/${type}/${dataFile}.json`);
+    const data = await import(`@/data/models/${dataFile}.json`);
     return data.default;
   } catch {
     return null;
   }
 }
 
-export async function generateStaticParams() {
-  const gen = genPages.map((p) => ({
-    slug: p.parent ? [p.parent, p.slug] : [p.slug],
-  }));
-  const vr = varPages.map((p) => ({
-    slug: p.parent ? [p.parent, p.slug] : [p.slug],
-  }));
-  const md = modelPages.map((p) => ({ slug: [p.slug] }));
-  return [...gen, ...vr, ...md];
+async function getGenData(dataFile) {
+  try {
+    const data = await import(`@/data/generations/${dataFile}.json`);
+    return data.default;
+  } catch {
+    return null;
+  }
 }
 
-async function resolvePage(slug) {
-  const segments = slug;
+async function getVariantData(dataFile) {
+  try {
+    const data = await import(`@/data/variants/${dataFile}.json`);
+    return data.default;
+  } catch {
+    return null;
+  }
+}
 
-  // Models — single segment
-  if (segments.length === 1) {
-    const entry = modelPages.find((p) => p.slug === segments[0]);
-    if (entry) {
-      const data = await getData(entry.type, entry.dataFile);
-      return data ? { type: "model", data } : null;
-    }
+function findEntry(slugSegments) {
+  if (slugSegments.length === 1) {
+    const single = slugSegments[0];
+    const model = modelPages.find((p) => p.slug === single);
+    if (model) return { entry: model, type: "models" };
+    notFound();
   }
 
-  // Generations
-  const genEntry = findEntry(segments, genPages);
-  if (genEntry) {
-    const data = await getData("generations", genEntry.dataFile);
-    return data ? { type: "generation", data } : null;
+  if (slugSegments.length === 2) {
+    const [parent, child] = slugSegments;
+    const gen = genPages.find((p) => p.parent === parent && p.slug === child);
+    if (gen) return { entry: gen, type: "generations" };
+
+    const variant = variantPages.find((p) => p.parent === parent && p.slug === child);
+    if (variant) return { entry: variant, type: "variants" };
+
+    notFound();
   }
 
-  // Variants
-  const varEntry = findEntry(segments, varPages);
-  if (varEntry) {
-    const data = await getData("variants", varEntry.dataFile);
-    return data ? { type: "variant", data } : null;
+  notFound();
+}
+
+export async function generateStaticParams() {
+  const paths = [];
+
+  for (const page of modelPages) {
+    if (!page?.slug) continue;
+    paths.push({ slug: [page.slug] });
   }
 
-  return null;
+  for (const page of genPages) {
+    if (!page?.parent || !page?.slug) continue;
+    paths.push({ slug: [page.parent, page.slug] });
+  }
+
+  for (const page of variantPages) {
+    if (!page?.parent || !page?.slug) continue;
+    paths.push({ slug: [page.parent, page.slug] });
+  }
+
+  return paths;
 }
 
 export async function generateMetadata({ params }) {
-  const { slug } = await params;
-  const result = await resolvePage(slug);
-  if (!result?.data?.meta) return {};
+  const { slug: slugSegments } = await params;
+  const result = findEntry(slugSegments);
+  if (!result) return {};
 
-  const { meta } = result.data;
-  const canonical = meta.canonical || `/${slug.join("/")}`;
+  const { entry, type } = result;
+
+  let data;
+  if (type === "models") data = await getModelData(entry.dataFile);
+  else if (type === "generations") data = await getGenData(entry.dataFile);
+  else if (type === "variants") data = await getVariantData(entry.dataFile);
+
+  if (!data?.meta) return {};
+
+  const { meta } = data;
+  const og = meta.openGraph;
+  const hasOg = og && (og.title || og.description || og.url || og.image || og.siteName || og.type);
+  const canonical = meta.canonical || `https://bmwengines.uk/${slugSegments.join("/")}`;
+
   return {
     title: meta.title || undefined,
     description: meta.description || undefined,
     alternates: { canonical },
-    openGraph: meta.openGraph
+    openGraph: hasOg
       ? {
-          title: meta.openGraph.title || undefined,
-          description: meta.openGraph.description || undefined,
-          type: meta.openGraph.type || "website",
-          url: meta.openGraph.url || undefined,
-          images: meta.openGraph.image ? [meta.openGraph.image] : undefined,
-          siteName: meta.openGraph.siteName || undefined,
+          title: og.title || undefined,
+          description: og.description || undefined,
+          type: og.type || "website",
+          url: og.url || undefined,
+          images: og.image ? [og.image] : undefined,
+          siteName: og.siteName || undefined,
         }
       : undefined,
     twitter: meta.twitter?.title || meta.twitter?.description
@@ -139,26 +157,45 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function CatchAllPage({ params }) {
-  const { slug } = await params;
-  const result = await resolvePage(slug);
-  if (!result) notFound();
+  const { slug: slugSegments } = await params;
+  const result = findEntry(slugSegments);
 
-  const { type, data } = result;
+  const { entry, type } = result;
 
-  if (type === "model") {
+  let data;
+  if (type === "models") data = await getModelData(entry.dataFile);
+  else if (type === "generations") data = await getGenData(entry.dataFile);
+  else if (type === "variants") data = await getVariantData(entry.dataFile);
+
+  if (!data) notFound();
+
+  if (type === "models") {
     return (
-      <main style={{ padding: "24px 16px 64px", maxWidth: 900, margin: "0 auto", lineHeight: 1.5, display: "flex", flexDirection: "column", gap: 40 }}>
+      <main
+        style={{
+          padding: "8px 4px",
+          width: "100%",
+          maxWidth: "88rem",
+          margin: "0 auto",
+          lineHeight: 1.5,
+          display: "flex",
+          flexDirection: "column",
+          
+        }}
+      >
         {data.meta?.jsonLd && (
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data.meta.jsonLd) }} />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(data.meta.jsonLd) }}
+          />
         )}
         <ModelHero data={data.hero} />
         <OwnershipVerdict data={data.ownershipVerdict} />
         <AtAGlance data={data.atAGlance} />
         <GenerationsGrid data={data.generations} />
         <EngineDatabase data={data.engineDatabase} />
-        <ModelCommonProblems data={data.commonProblems} />
-        <MarketIntelligence data={data.marketIntelligence} />
-        <EditorialPullQuote data={data.editorialPullQuote} />
+        <CommonProblems data={data.commonProblems} />
+        <MarketIntelligence data={data.marketIntelligence} quoteData={data.editorialPullQuote} />
         <ReplacementCosts data={data.replacementCosts} />
         <EngineEvolution data={data.engineEvolution} />
         <WhoShouldBuy data={data.whoShouldBuy} />
@@ -170,20 +207,23 @@ export default async function CatchAllPage({ params }) {
     );
   }
 
-  if (type === "generation") {
+  if (type === "generations") {
     return (
-      <main style={{ padding: "24px 16px 64px", maxWidth: 1100, margin: "0 auto", lineHeight: 1.5, display: "flex", flexDirection: "column", gap: 40 }}>
+      <main className="flex flex-col">
         {data.meta?.jsonLd && (
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data.meta.jsonLd) }} />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(data.meta.jsonLd) }}
+          />
         )}
-        <GenModelHero data={data.hero} />
+        <GenHero data={data.hero} />
         <GenEngineDatabase data={data.engineDatabase} />
         <Overview data={data.overview} />
         <BestWorstEngines data={data.bestWorstEngines} />
         <OwnershipEconomics data={data.ownershipEconomics} />
-        <GenCommonProblems data={data.commonProblems} />
+        <GenProblems data={data.commonProblems} />
         <GenReplacementCosts data={data.replacementCosts} />
-        <CoreVariants data={data.coreVariants} />
+        <CoreVariants data={data.coreVariants} parentSlug={entry.parent} />
         <GenMarketIntelligence data={data.marketIntelligence} />
         <GenFAQAccordion data={data.faq} />
         <GenTrustCta data={data.trustCta} />
@@ -191,16 +231,19 @@ export default async function CatchAllPage({ params }) {
     );
   }
 
-  if (type === "variant") {
+  if (type === "variants") {
     return (
-      <main style={{ padding: "24px 16px 64px", maxWidth: 1100, margin: "0 auto", lineHeight: 1.5, display: "flex", flexDirection: "column", gap: 40 }}>
+      <main className="flex flex-col">
         {data.meta?.jsonLd && (
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data.meta.jsonLd) }} />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(data.meta.jsonLd) }}
+          />
         )}
         <VariantHero data={data.hero} />
         <EraMap data={data.eraMap} />
         <VarReplacementCosts data={data.replacementCosts} />
-        <VarCommonProblems data={data.commonProblems} />
+        <VarProblems data={data.commonProblems} />
         <QuotesCta data={data.quotesCta} />
         <RepairBuyOrReplace data={data.repairBuyOrReplace} />
         <BuyingChecklist data={data.buyingChecklist} />

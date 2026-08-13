@@ -26,7 +26,7 @@ export default function HomeSec13({ data }) {
       <div className="mx-auto w-full max-w-8xl">
         <div className="mb-3 flex flex-col gap-2 md:flex-row md:items-start md:justify-between">
           <div>
-            <h2 className={`text-[1.55rem] font-bold leading-tight tracking-normal md:text-[2rem] ${isDark ? "text-white" : "text-[#071827]"}`} dangerouslySetInnerHTML={{ __html: data.h2 || "Frequently Asked Questions" }} />
+            <h2 className={`text-[1.55rem] font-bold leading-tight tracking-normal md:text-[2rem] ${isDark ? "text-white" : "text-[#071827]"}`}>Frequently Asked Questions</h2>
             <div className="mt-3">
               <MStripe />
             </div>
