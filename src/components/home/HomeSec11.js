@@ -193,7 +193,7 @@ function KeyTakeaway({ text, isDark }) {
   return (
     <div className={`mt-4 rounded-md border px-4 py-4 shadow-[0_12px_28px_rgba(10,26,43,0.04)] md:mt-4 md:px-8 md:py-5 ${isDark ? "border-[#223343] bg-[linear-gradient(180deg,#0a1520_0%,#07121d_100%)]" : "border-[#dfe5ed] bg-[linear-gradient(180deg,#ffffff_0%,#f8fbff_100%)]"}`}>
       <div className="grid gap-4 md:grid-cols-[92px_1fr] md:items-center">
-        <span className="flex h-15 w-15 items-center justify-center rounded-md bg-[var(--color-primary)] text-white shadow-[0_12px_26px_rgba(7,95,216,0.2)] md:h-16 md:w-16">
+        <span className={`flex h-15 w-15 items-center justify-center rounded-md text-white shadow-[0_12px_26px_rgba(7,95,216,0.2)] md:h-16 md:w-16 ${isDark ? "bg-[#0c2748]" : "bg-[var(--color-primary)]"}`}>
           <Icon name="insight" className="h-9 w-9 md:h-8 md:w-8" strokeWidth={2.2} />
         </span>
         <p className={`text-[0.9rem] leading-[1.52] md:text-[1.02rem] ${isDark ? "text-white/84" : "text-[#172334]"}`}>

@@ -57,9 +57,9 @@ function Severity({ severity }) {
   );
 }
 
-function SectionIcon({ icon }) {
+function SectionIcon({ icon, isDark }) {
   return (
-    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded bg-[var(--color-primary)] text-white md:h-9 md:w-11">
+    <span className={`flex h-12 w-12 shrink-0 items-center justify-center rounded text-white md:h-9 md:w-11 ${isDark ? "bg-[#0c2748]" : "bg-[var(--color-primary)]"}`}>
       <Icon name={icon} className="h-7 w-7 md:h-5 md:w-5" strokeWidth={2.3} />
     </span>
   );
@@ -68,7 +68,7 @@ function SectionIcon({ icon }) {
 function TableHeader({ block, isDark }) {
   return (
     <div className={`flex items-center border-b ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.94)]" : "border-[#dfe5ed] bg-white"}`}>
-      <SectionIcon icon={block.icon} />
+      <SectionIcon icon={block.icon} isDark={isDark} />
       <h3 className={`px-4 py-3 text-[1.15rem] font-bold uppercase text-[var(--color-primary)] md:py-2 md:text-[1rem] ${isDark ? "md:text-white" : "md:text-[#071827]"}`}>
         {block.title}
       </h3>

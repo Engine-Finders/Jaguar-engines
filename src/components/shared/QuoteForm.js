@@ -226,10 +226,10 @@ export default function QuoteForm({ onSuccess, compact = false }) {
               type="button"
               onClick={lookupVehicle}
               disabled={lookupLoading}
-              className="inline-flex min-h-11 items-center justify-center gap-2 rounded bg-[var(--color-primary)] px-4 py-2.5 text-sm font-bold text-white disabled:opacity-60"
+              className="btn-cta inline-flex min-h-11 items-center justify-center gap-2 rounded bg-[var(--color-primary)] px-4 py-2.5 text-sm font-bold text-white disabled:opacity-60"
             >
               {lookupLoading ? (
-                <span className="h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent" />
+                <span className="h-4 w-4 animate-spin rounded-full border-2 border-current border-t-transparent" />
               ) : null}
               <span>{lookupLoading ? "Searching…" : "Search Vehicle"}</span>
             </button>
@@ -382,9 +382,9 @@ export default function QuoteForm({ onSuccess, compact = false }) {
           type="submit"
           id="btnSubmit"
           disabled={!canSubmit}
-          className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded bg-[var(--color-primary)] px-4 py-3 text-sm font-bold text-white disabled:cursor-not-allowed disabled:opacity-45"
+          className="btn-cta inline-flex min-h-12 w-full items-center justify-center gap-2 rounded bg-[var(--color-primary)] px-4 py-3 text-sm font-bold text-white disabled:cursor-not-allowed disabled:opacity-45"
         >
-          {submitLoading ? <span className="h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent" /> : null}
+          {submitLoading ? <span className="h-4 w-4 animate-spin rounded-full border-2 border-current border-t-transparent" /> : null}
           <span>{submitLoading ? "Sending…" : "Send Me Price Quote"}</span>
         </button>
         {!vehicleReady ? (

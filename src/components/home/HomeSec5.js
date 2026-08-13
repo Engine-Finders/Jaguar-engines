@@ -39,9 +39,9 @@ function ArrowIcon() {
   );
 }
 
-function NumberBadge({ id }) {
+function NumberBadge({ id, isDark }) {
   return (
-    <span className="absolute left-0 top-0 z-20 flex h-12 w-12 items-center justify-center rounded-br-xl rounded-tl-xl bg-[var(--color-primary)] text-[1.35rem] font-bold text-white md:h-10 md:w-10 md:text-[1.2rem]">
+    <span className={`absolute left-0 top-0 z-20 flex h-12 w-12 items-center justify-center rounded-br-xl rounded-tl-xl text-[1.35rem] font-bold text-white md:h-10 md:w-10 md:text-[1.2rem] ${isDark ? "bg-[#0c2748]" : "bg-[var(--color-primary)]"}`}>
       {id}
     </span>
   );
@@ -77,7 +77,7 @@ function ComparisonCard({ item, isDark }) {
         isDark ? "border-[#223a51] bg-[rgba(7,23,36,0.88)]" : "border-[#d7dde6] bg-white"
       }`}
     >
-      <NumberBadge id={item.id} />
+      <NumberBadge id={item.id} isDark={isDark} />
       <div className="grid md:grid-cols-[minmax(260px,0.98fr)_minmax(280px,1fr)]">
         <div className={`min-w-0 border-b md:border-b-0 md:border-r ${isDark ? "border-[#223a51]" : "border-[#dfe5ed]"}`}>
           <div className="relative h-40 md:h-36">

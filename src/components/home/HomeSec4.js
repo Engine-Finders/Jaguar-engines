@@ -94,8 +94,8 @@ function VerdictBadge({ verdict }) {
   );
 }
 
-function RankingIcon({ row }) {
-  const dangerClass = row.verdict.type === "avoid" ? "bg-[#ed1c24]" : row.verdict.type === "watch" ? "bg-[#f59e0b]" : "bg-[var(--color-primary)]";
+function RankingIcon({ row, isDark }) {
+  const dangerClass = row.verdict.type === "avoid" ? "bg-[#ed1c24]" : row.verdict.type === "watch" ? "bg-[#f59e0b]" : isDark ? "bg-[#0c2748]" : "bg-[var(--color-primary)]";
 
   return (
     <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-white md:h-14 md:w-14 ${dangerClass}`}>
@@ -119,7 +119,7 @@ function RankingRow({ row, isDark }) {
         </Link>
       ) : null}
       <div className="relative z-10 pointer-events-none flex min-w-0 flex-col items-center gap-2 text-center md:flex-row md:gap-5 md:text-left">
-        <RankingIcon row={row} />
+        <RankingIcon row={row} isDark={isDark} />
         <span className="text-[0.7rem] font-bold leading-[1.2] sm:text-[0.76rem] md:text-[1.08rem]">{row.ranking}</span>
       </div>
       <div className={`relative z-10 pointer-events-none min-w-0 border-l pl-2 md:pl-5 ${isDark ? "border-[#223a51]" : "border-[#dfe5ed]"}`}>
@@ -189,7 +189,7 @@ export default function HomeSec4({ data }) {
             isDark ? "border-[#223a51] bg-[rgba(7,23,36,0.88)]" : "border-[#d7dde6] bg-white"
           }`}
         >
-          <div className="grid grid-cols-[72px_78px_minmax(0,1fr)_74px_12px] gap-1 bg-[var(--color-primary)] px-2 py-3 text-[0.58rem] font-bold text-white sm:grid-cols-[82px_90px_minmax(0,1fr)_86px_14px] sm:gap-2 sm:px-3 sm:text-[0.64rem] md:grid-cols-[minmax(320px,1.3fr)_minmax(180px,0.78fr)_minmax(430px,2.3fr)_126px_24px] md:gap-5 md:px-6 md:text-[0.82rem]">
+          <div className={`grid grid-cols-[72px_78px_minmax(0,1fr)_74px_12px] gap-1 px-2 py-3 text-[0.58rem] font-bold text-white sm:grid-cols-[82px_90px_minmax(0,1fr)_86px_14px] sm:gap-2 sm:px-3 sm:text-[0.64rem] md:grid-cols-[minmax(320px,1.3fr)_minmax(180px,0.78fr)_minmax(430px,2.3fr)_126px_24px] md:gap-5 md:px-6 md:text-[0.82rem] ${isDark ? "bg-[#0c2748]" : "bg-[var(--color-primary)]"}`}>
             <span className="text-center md:text-left md:pl-10">{data.columns[0]}</span>
             <span>{data.columns[1]}</span>
             <span>{data.columns[2]}</span>
@@ -208,7 +208,7 @@ export default function HomeSec4({ data }) {
             }`}
           >
             <div className="flex items-center gap-4">
-              <span className="flex h-15 w-15 shrink-0 items-center justify-center rounded-lg bg-[var(--color-primary)] text-white">
+              <span className={`flex h-15 w-15 shrink-0 items-center justify-center rounded-lg text-white ${isDark ? "bg-[#0c2748]" : "bg-[var(--color-primary)]"}`}>
                 <Icon name={bottomCta.icon} className="h-9 w-9" />
               </span>
               <div>

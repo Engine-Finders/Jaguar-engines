@@ -41,7 +41,7 @@ function iconName(item) {
 function CentreCard({ item, isDark }) {
   return (
     <article className={`relative overflow-hidden rounded-md border shadow-[0_14px_34px_rgba(10,26,43,0.08)] ${isDark ? "border-[#223a51] bg-[rgba(7,23,36,0.9)]" : "border-[#dfe5ed] bg-white"}`}>
-      <span className="absolute left-0 top-0 z-20 flex h-9 w-9 items-center justify-center rounded-br-md bg-[var(--color-primary)] text-[1.05rem] font-bold text-white md:h-8 md:w-8 md:text-[0.9rem]">
+      <span className={`absolute left-0 top-0 z-20 flex h-9 w-9 items-center justify-center rounded-br-md text-[1.05rem] font-bold text-white md:h-8 md:w-8 md:text-[0.9rem] ${isDark ? "bg-[#0c2748]" : "bg-[var(--color-primary)]"}`}>
         {item.id}
       </span>
 

@@ -12,6 +12,7 @@
 - When rebranding, change only user-visible brand text (logo text, headings, copyright/disclaimer); leave URLs, route slugs, and link labels untouched. Confidence: 0.70
 
 # ui
+- Prefers proper dark theme support across the UI — chrome elements (table headers, step/number badges, icon circles, selected tab/filter button states) and interactive elements (CTA/sticky buttons, form buttons, spinners) must stay readable in dark mode rather than rendering white-on-white or keeping hardcoded light-only backgrounds/text. Confidence: 0.90
 - Prefers CTA/button colors to match the main theme (near-black `--color-primary`), replacing hardcoded off-brand colors like blue gradients. Confidence: 0.75
 - Primary CTA buttons should link to the conversion/quote page (`/quote`) rather than placeholder `#` or stale data-driven hrefs. Confidence: 0.70
 

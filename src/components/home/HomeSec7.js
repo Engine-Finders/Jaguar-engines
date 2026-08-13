@@ -189,7 +189,7 @@ function EngineTable({ data, isDark }) {
 function LegendCard({ legend, isDark }) {
   return (
     <Link href={legend.href} className={`flex items-center gap-5 rounded-md border p-5 shadow-[0_16px_36px_rgba(10,26,43,0.08)] md:hidden ${isDark ? "border-[#223a51] bg-[rgba(7,23,36,0.9)] text-white" : "border-[#dfe5ed] bg-white text-[#071827]"}`}>
-      <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-md bg-[var(--color-primary)] text-white shadow-[0_12px_26px_rgba(7,95,216,0.28)]">
+      <span className={`flex h-16 w-16 shrink-0 items-center justify-center rounded-md text-white shadow-[0_12px_26px_rgba(7,95,216,0.28)] ${isDark ? "bg-[#0c2748]" : "bg-[var(--color-primary)]"}`}>
         <Icon name="bulb" className="h-9 w-9" />
       </span>
       <span className="min-w-0 flex-1">

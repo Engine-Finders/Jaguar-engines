@@ -203,7 +203,9 @@ function StepIndicator({ labels, stageIndex, isDark }) {
               <span
                 className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full border text-[0.82rem] font-bold ${
                   done || active
-                    ? "border-[var(--color-primary)] bg-[var(--color-primary)] text-white"
+                    ? isDark
+                      ? "border-[#0c2748] bg-[#0c2748] text-white"
+                      : "border-[var(--color-primary)] bg-[var(--color-primary)] text-white"
                     : isDark
                       ? "border-[#375067] bg-transparent text-white/64"
                       : "border-[#d7dde6] bg-transparent text-[#607085]"
@@ -250,7 +252,7 @@ function SideInfo({ data, isDark }) {
           {data.steps.map((step) => (
             <li key={step.step} className={`rounded-lg border p-3 ${isDark ? "border-[#223343] bg-[rgba(14,28,41,0.84)]" : "border-[#e4e9f0] bg-[#fbfdff]"}`}>
               <div className="flex items-start gap-3">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[var(--color-primary)] text-white">
+                <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg text-white ${isDark ? "bg-[#0c2748]" : "bg-[var(--color-primary)]"}`}>
                   <Icon name={step.icon} className="h-5 w-5" />
                 </span>
                 <div>
@@ -368,7 +370,7 @@ function OverridePanel({ diagnosis, isDark, onContinue }) {
           <ul className="mt-4 grid gap-2">
             {diagnosis.overrideCopy.actions.map((action) => (
               <li key={action} className={`flex items-start gap-3 text-[0.82rem] leading-[1.45] ${isDark ? "text-white/74" : "text-[#27384a]"}`}>
-                <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
+                <span className={`mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-white ${isDark ? "bg-[#0c2748]" : "bg-[var(--color-primary)]"}`}>
                   <Icon name="shield" className="h-3 w-3" strokeWidth={2.3} />
                 </span>
                 <span>{action}</span>
@@ -496,7 +498,7 @@ function ResultsScreen({ diagnosis, verdict, engineOption, ctas, isDark, calcula
               <ul className="mt-3 grid gap-2">
                 {diagnosis.nextSteps.map((step) => (
                   <li key={step} className={`flex items-start gap-3 text-[0.8rem] leading-[1.45] ${isDark ? "text-white/76" : "text-[#27384a]"}`}>
-                    <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
+                    <span className={`mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-white ${isDark ? "bg-[#0c2748]" : "bg-[var(--color-primary)]"}`}>
                       <Icon name="shield" className="h-3 w-3" strokeWidth={2.3} />
                     </span>
                     <span>{step}</span>

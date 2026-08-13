@@ -205,7 +205,7 @@ function DecisionMatrix({ data, isDark }) {
         <span className={`flex h-6 w-6 items-center justify-center rounded-md ${isDark ? "bg-[#0c2748] text-[#7fb0ff]" : "bg-[#eef5ff] text-[var(--color-primary)]"}`}>
           <Icon name="chart" className="h-5 w-5" />
         </span>
-        <h3 className="text-[1rem] font-bold uppercase text-[var(--color-primary)] md:text-[#071827]">The Decision Matrix</h3>
+        <h3 className={`text-[1rem] font-bold uppercase ${isDark ? "text-white" : "text-[var(--color-primary)] md:text-[#071827]"}`}>The Decision Matrix</h3>
       </div>
 
       <div className={`hidden grid-cols-[112px_minmax(140px,1fr)_minmax(165px,1fr)_minmax(165px,1fr)_minmax(175px,1.12fr)] border-b px-5 py-3 text-[0.66rem] font-bold uppercase md:grid ${isDark ? "border-[#223a51] text-white/78" : "border-[#e3e8ef] text-[#071827]"}`}>
@@ -244,7 +244,7 @@ function RuleCard({ data, isDark }) {
     <div className={`rounded-md border p-5 shadow-[0_16px_36px_rgba(10,26,43,0.08)] md:min-h-[260px] md:p-6 ${isDark ? "border-[#223a51] bg-[rgba(7,23,36,0.9)]" : "border-[#dfe5ed] bg-white"}`}>
       <div className="md:hidden">
         <div className="flex items-start gap-4">
-          <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white shadow-[0_10px_22px_rgba(7,95,216,0.28)]">
+          <span className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full text-white shadow-[0_10px_22px_rgba(7,95,216,0.28)] ${isDark ? "bg-[#0c2748]" : "bg-[var(--color-primary)]"}`}>
             <Icon name="shield" className="h-7 w-7" />
           </span>
           <h3 className={`min-w-0 flex-1 pt-1 text-[0.98rem] font-bold uppercase ${isDark ? "text-white" : "text-[#071827]"}`}>{data.ruleOfThumb.title}</h3>
@@ -268,7 +268,7 @@ function RuleCard({ data, isDark }) {
       </div>
 
       <div className="hidden items-start gap-4 md:flex">
-        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white shadow-[0_10px_22px_rgba(7,95,216,0.28)]">
+        <span className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full text-white shadow-[0_10px_22px_rgba(7,95,216,0.28)] ${isDark ? "bg-[#0c2748]" : "bg-[var(--color-primary)]"}`}>
           <Icon name="shield" className="h-7 w-7" />
         </span>
         <div className="min-w-0 flex-1">
@@ -297,7 +297,7 @@ function LinksCard({ links, isDark }) {
   return (
     <div className={`overflow-hidden rounded-md border shadow-[0_16px_36px_rgba(10,26,43,0.08)] ${isDark ? "border-[#223a51] bg-[rgba(7,23,36,0.9)]" : "border-[#dfe5ed] bg-white"}`}>
       <div className="flex items-center gap-4 px-5 py-4">
-        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
+        <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-white ${isDark ? "bg-[#0c2748]" : "bg-[var(--color-primary)]"}`}>
           <Icon name="link" className="h-5 w-5" />
         </span>
         <h3 className={`text-[0.95rem] font-bold uppercase ${isDark ? "text-white" : "text-[#071827]"}`}>Deeper Analysis Links</h3>
@@ -340,7 +340,7 @@ function TrustStrip({ isDark }) {
 function MobileCta({ isDark }) {
   return (
     <div className={`flex items-center gap-5 rounded-md border p-5 shadow-[0_16px_36px_rgba(10,26,43,0.08)] md:hidden ${isDark ? "border-[#223a51] bg-[rgba(7,23,36,0.9)]" : "border-[#dfe5ed] bg-[#f2f7ff]"}`}>
-      <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white shadow-[0_10px_22px_rgba(7,95,216,0.28)]">
+      <span className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full text-white shadow-[0_10px_22px_rgba(7,95,216,0.28)] ${isDark ? "bg-[#0c2748]" : "bg-[var(--color-primary)]"}`}>
         <Icon name="shield" className="h-8 w-8" />
       </span>
       <div className="min-w-0 flex-1">
