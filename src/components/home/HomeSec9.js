@@ -59,7 +59,7 @@ function Severity({ severity }) {
 
 function SectionIcon({ icon, isDark }) {
   return (
-    <span className={`flex h-12 w-12 shrink-0 items-center justify-center rounded text-white md:h-9 md:w-11 ${isDark ? "bg-[#0c2748]" : "bg-[var(--color-primary)]"}`}>
+    <span className={`flex h-12 w-12 shrink-0 items-center justify-center rounded text-white md:h-9 md:w-11 ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}>
       <Icon name={icon} className="h-7 w-7 md:h-5 md:w-5" strokeWidth={2.3} />
     </span>
   );
@@ -67,7 +67,7 @@ function SectionIcon({ icon, isDark }) {
 
 function TableHeader({ block, isDark }) {
   return (
-    <div className={`flex items-center border-b ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.94)]" : "border-[#dfe5ed] bg-white"}`}>
+    <div className={`flex items-center border-b ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#dfe5ed] bg-white"}`}>
       <SectionIcon icon={block.icon} isDark={isDark} />
       <h3 className={`px-4 py-3 text-[1.15rem] font-bold uppercase text-[var(--color-primary)] md:py-2 md:text-[1rem] ${isDark ? "md:text-white" : "md:text-[#071827]"}`}>
         {block.title}
@@ -79,9 +79,9 @@ function TableHeader({ block, isDark }) {
 function DesktopRows({ block, isDark }) {
   return (
     <div className="hidden md:block">
-      <div className={`grid grid-cols-[60px_minmax(230px,0.95fr)_minmax(420px,1.8fr)_180px_170px] border-b text-[0.72rem] font-bold uppercase ${isDark ? "border-[#223343] bg-[rgba(14,27,41,0.95)] text-white/88" : "border-[#dfe5ed] bg-[#fbfcfe] text-[#071827]"}`}>
+      <div className={`grid grid-cols-[60px_minmax(230px,0.95fr)_minmax(420px,1.8fr)_180px_170px] border-b text-[0.72rem] font-bold uppercase ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)] text-white/88" : "border-[#dfe5ed] bg-[#fbfcfe] text-[#071827]"}`}>
         {block.columns.map((column) => (
-          <span key={column} className={`border-r px-6 py-2 last:border-r-0 ${isDark ? "border-[#223343]" : "border-[#e5e9ef]"}`}>
+          <span key={column} className={`border-r px-6 py-2 last:border-r-0 ${isDark ? "border-[var(--color-border)]" : "border-[#e5e9ef]"}`}>
             {column}
           </span>
         ))}
@@ -90,17 +90,17 @@ function DesktopRows({ block, isDark }) {
       {block.rows.map((row) => (
         <div
           key={row.id}
-          className={`grid grid-cols-[60px_minmax(230px,0.95fr)_minmax(420px,1.8fr)_180px_170px] border-b last:border-b-0 ${isDark ? "border-[#223343]" : "border-[#e5e9ef]"}`}
+          className={`grid grid-cols-[60px_minmax(230px,0.95fr)_minmax(420px,1.8fr)_180px_170px] border-b last:border-b-0 ${isDark ? "border-[var(--color-border)]" : "border-[#e5e9ef]"}`}
         >
-          <div className={`border-r px-6 py-4 text-[1.55rem] font-bold leading-none text-[var(--color-primary)] ${isDark ? "border-[#223343]" : "border-[#e5e9ef]"}`}>
+          <div className={`border-r px-6 py-4 text-[1.55rem] font-bold leading-none text-[var(--color-primary)] ${isDark ? "border-[var(--color-border)]" : "border-[#e5e9ef]"}`}>
             {row.id}
           </div>
           <div
-            className={`border-r px-6 py-4 text-[1rem] font-bold leading-tight ${isDark ? "border-[#223343] text-white" : "border-[#e5e9ef] text-[#071827]"}`}
+            className={`border-r px-6 py-4 text-[1rem] font-bold leading-tight ${isDark ? "border-[var(--color-border)] text-white" : "border-[#e5e9ef] text-[#071827]"}`}
             dangerouslySetInnerHTML={{ __html: row.title }}
           />
-          <p className={`border-r px-6 py-3 text-[0.82rem] leading-[1.25] ${isDark ? "border-[#223343] text-white/76" : "border-[#e5e9ef] text-[#171f2a]"}`} dangerouslySetInnerHTML={{ __html: row.description }} />
-          <div className={`border-r px-6 py-4 ${isDark ? "border-[#223343]" : "border-[#e5e9ef]"}`}>
+          <p className={`border-r px-6 py-3 text-[0.82rem] leading-[1.25] ${isDark ? "border-[var(--color-border)] text-white/76" : "border-[#e5e9ef] text-[#171f2a]"}`} dangerouslySetInnerHTML={{ __html: row.description }} />
+          <div className={`border-r px-6 py-4 ${isDark ? "border-[var(--color-border)]" : "border-[#e5e9ef]"}`}>
             <Severity severity={row.severity} />
           </div>
           <Link href={row.link.href} className="flex items-center gap-3 px-6 py-4 text-[0.9rem] font-medium text-[var(--color-primary)]">
@@ -117,7 +117,7 @@ function MobileRows({ block, isDark }) {
   return (
     <div className="md:hidden">
       {block.rows.map((row) => (
-        <div key={row.id} className={`border-b px-4 py-4 last:border-b-0 ${isDark ? "border-[#223343]" : "border-[#dfe5ed]"}`}>
+        <div key={row.id} className={`border-b px-4 py-4 last:border-b-0 ${isDark ? "border-[var(--color-border)]" : "border-[#dfe5ed]"}`}>
           <div className="flex items-start gap-3">
             <span className="w-8 shrink-0 text-[1.65rem] font-bold leading-none text-[var(--color-primary)]">
               {row.id}
@@ -142,7 +142,7 @@ function MobileRows({ block, isDark }) {
 
 function FailureTable({ block, isDark }) {
   return (
-    <div className={`border-y md:overflow-hidden md:rounded-md md:border md:shadow-[0_12px_32px_rgba(10,26,43,0.06)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.92)]" : "border-[#dfe5ed] bg-white"}`}>
+    <div className={`border-y md:overflow-hidden md:rounded-md md:border md:shadow-[0_12px_32px_rgba(10,26,43,0.06)] ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#dfe5ed] bg-white"}`}>
       <TableHeader block={block} isDark={isDark} />
       <DesktopRows block={block} isDark={isDark} />
       <MobileRows block={block} isDark={isDark} />
@@ -152,7 +152,7 @@ function FailureTable({ block, isDark }) {
 
 function UrgencyKey({ items, isDark }) {
   return (
-    <div className={`border-y px-4 py-4 md:rounded-md md:border md:px-8 md:shadow-[0_12px_32px_rgba(10,26,43,0.04)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.92)]" : "border-[#dfe5ed] bg-white"}`}>
+    <div className={`border-y px-4 py-4 md:rounded-md md:border md:px-8 md:shadow-[0_12px_32px_rgba(10,26,43,0.04)] ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#dfe5ed] bg-white"}`}>
       <div className="flex flex-col gap-3 md:flex-row md:items-center md:gap-8">
         <p className={`text-[0.9rem] font-bold uppercase md:mr-2 ${isDark ? "text-white" : "text-[#071827]"}`}>Urgency Key:</p>
         {items.map((item) => (

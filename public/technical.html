@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaguar Engine Technical Library | Specs, Service & Guides</title>
+    <meta name="description" content="Complete Jaguar engine technical library: oil capacities, timing chain or belt info, service schedules, torque specs, and engine number locations. Expert-verified data.">
+    <link rel="canonical" href="https://jaguarengines.uk/technical">
+    <link rel="stylesheet" href="/assets/jaguar/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Playfair+Display:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <style>
+        /* Minimal critical CSS for hero and summary box above-the-fold */
+        :root {
+            --jag-black: #0A0A0A;
+            --jag-ink: #1A1A1A;
+            --jag-grey-700: #4A4A4A;
+            --jag-grey-500: #7A7A7A;
+            --jag-grey-300: #D8D8D8;
+            --jag-grey-100: #F0F0F0;
+            --jag-bg: #FFFFFF;
+            --jag-bg-alt: #F7F7F7;
+            --jag-accent: #9E1B32;
+            --sev-critical: #C0392B;
+            --sev-high: #E07B2C;
+            --sev-medium: #E3B23C;
+            --sev-low: #4E9A51;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-sans); background: var(--jag-bg); color: var(--jag-ink); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+        img { max-width: 100%; height: auto; display: block; }
+        a { color: var(--jag-ink); text-decoration: underline; text-underline-offset: 2px; }
+        a:hover { color: var(--jag-accent); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        .section { padding: 72px 0; }
+        .section-alt { background: var(--jag-bg-alt); }
+        .section-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+        /* Hero */
+        .hero { padding: 80px 0 48px; background: var(--jag-bg); text-align: center; border-bottom: 1px solid var(--jag-grey-300); }
+        .hero-eyebrow { font-size: 12px; text-transform: uppercase; letter-spacing: 0.16em; color: var(--jag-grey-500); margin-bottom: 12px; }
+        .hero-eyebrow span { background: var(--jag-bg-alt); padding: 2px 12px; border-radius: 20px; }
+        .hero h1 { font-family: var(--font-serif); font-weight: 300; font-size: clamp(2.2rem, 5vw, 4rem); letter-spacing: 0.02em; color: var(--jag-black); max-width: 800px; margin: 0 auto 16px; }
+        .hero h1 .accent { color: var(--jag-accent); }
+        .hero-sub { font-size: 1.1rem; color: var(--jag-grey-700); max-width: 660px; margin: 0 auto 20px; font-weight: 300; }
+        .hero-rule { width: 60px; height: 2px; background: var(--jag-accent); margin: 0 auto 24px; }
+        .hero .stat-strip { display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; padding-top: 24px; border-top: 1px solid var(--jag-grey-300); margin-top: 16px; }
+        .hero .stat-strip .stat-item { text-align: center; }
+        .hero .stat-strip .stat-num { font-family: var(--font-serif); font-weight: 300; font-size: 1.8rem; color: var(--jag-black); }
+        .hero .stat-strip .stat-label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--jag-grey-500); }
+
+        /* Summary Box */
+        .summary-box { max-width: 820px; margin: -24px auto 24px; background: var(--jag-bg-alt); border: 1px solid var(--jag-grey-300); border-radius: 4px; padding: 28px 36px; position: relative; z-index: 2; }
+        .summary-box h2 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--jag-grey-500); margin-bottom: 8px; font-weight: 600; }
+        .summary-box p { font-size: 1rem; margin-bottom: 8px; }
+        .summary-box ul { list-style: none; padding: 0; margin: 12px 0 0; }
+        .summary-box ul li { padding: 4px 0 4px 24px; position: relative; font-size: 0.95rem; }
+        .summary-box ul li::before { content: "•"; position: absolute; left: 4px; color: var(--jag-accent); font-weight: bold; }
+        .summary-box .closing { font-weight: 500; margin-top: 12px; }
+
+        /* TOC Bar */
+        .toc-bar { background: var(--jag-bg); border-bottom: 1px solid var(--jag-grey-300); padding: 0 24px; height: 56px; display: flex; align-items: center; overflow-x: auto; gap: 8px; scrollbar-width: none; position: sticky; top: 0; z-index: 10; }
+        .toc-bar::-webkit-scrollbar { display: none; }
+        .toc-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--jag-grey-500); margin-right: 12px; flex-shrink: 0; }
+        .toc-bar ul { display: flex; gap: 4px; list-style: none; padding: 0; margin: 0; }
+        .toc-bar ul li { flex-shrink: 0; }
+        .toc-bar ul li a { display: block; padding: 6px 14px; font-size: 0.8rem; color: var(--jag-ink); text-decoration: none; border-radius: 20px; background: var(--jag-bg-alt); white-space: nowrap; transition: background 0.2s; }
+        .toc-bar ul li a:hover, .toc-bar ul li a.active { background: var(--jag-accent); color: white; }
+
+        /* Hub Index */
+        .hub-index { display: grid; grid-template-columns: 1fr 1fr; gap: 32px 48px; }
+        .hub-index-category { margin-bottom: 24px; }
+        .hub-index-category h3 { font-size: 1.1rem; font-weight: 600; color: var(--jag-black); margin-bottom: 12px; border-bottom: 1px solid var(--jag-grey-300); padding-bottom: 6px; }
+        .hub-index-category ul { list-style: none; padding: 0; }
+        .hub-index-category ul li { padding: 4px 0; }
+        .hub-index-category ul li a { font-size: 0.95rem; color: var(--jag-ink); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s; }
+        .hub-index-category ul li a:hover { border-bottom-color: var(--jag-accent); color: var(--jag-accent); }
+
+        /* Verdict */
+        .verdict-block { background: var(--jag-bg-alt); border-left: 4px solid var(--jag-accent); padding: 24px 32px; border-radius: 2px; }
+        .verdict-block h3 { font-size: 1.2rem; font-weight: 600; margin-bottom: 8px; }
+        .verdict-block p { font-size: 0.95rem; color: var(--jag-grey-700); }
+
+        /* FAQ */
+        .faq-list { max-width: 800px; margin: 0 auto; }
+        .faq-item { border-bottom: 1px solid var(--jag-grey-300); padding: 20px 0; }
+        .faq-item summary { font-weight: 600; cursor: pointer; font-size: 1.05rem; }
+        .faq-item summary:hover { color: var(--jag-accent); }
+        .faq-item .faq-answer { padding-top: 12px; color: var(--jag-grey-700); font-size: 0.95rem; }
+
+        /* Trust + CTA */
+        .trust-cta { background: var(--jag-bg-alt); border-top: 1px solid var(--jag-grey-300); padding: 48px 0; text-align: center; }
+        .trust-grid { display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; margin-bottom: 32px; }
+        .trust-item { text-align: center; }
+        .trust-item .num { font-family: var(--font-serif); font-size: 2rem; font-weight: 300; color: var(--jag-black); }
+        .trust-item .label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--jag-grey-500); }
+        .cta-button { display: inline-block; background: var(--jag-black); color: white; padding: 14px 40px; text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.85rem; font-weight: 500; text-decoration: none; border: none; border-radius: 2px; transition: background 0.2s; }
+        .cta-button:hover { background: var(--jag-accent); color: white; }
+
+        /* Fade directions */
+        .fade-up { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+        .fade-down { opacity: 0; transform: translateY(-30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+        .fade-left { opacity: 0; transform: translateX(-30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+        .fade-right { opacity: 0; transform: translateX(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+        .fade-up.visible, .fade-down.visible, .fade-left.visible, .fade-right.visible { opacity: 1; transform: translate(0); }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero { padding: 48px 0 32px; }
+            .hero h1 { font-size: clamp(1.8rem, 6vw, 2.6rem); }
+            .summary-box { padding: 20px; margin: -16px 12px 16px; }
+            .hub-index { grid-template-columns: 1fr; gap: 16px; }
+            .trust-grid { gap: 24px; }
+            .toc-bar ul li a { font-size: 0.7rem; padding: 4px 10px; }
+            .section { padding: 48px 0; }
+        }
+        @media (max-width: 480px) {
+            .hero .stat-strip { gap: 16px; }
+            .hero .stat-strip .stat-num { font-size: 1.3rem; }
+        }
+    </style>
+    <script defer src="/assets/jaguar/effects.js"></script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://jaguarengines.uk/#organization",
+      "name": "Jaguar Engines UK",
+      "url": "https://jaguarengines.uk",
+      "logo": "https://jaguarengines.uk/assets/jaguar/logo.png",
+      "description": "Independent editorial resource for Jaguar engine information, part of the Engine Finders network.",
+      "sameAs": []
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://jaguarengines.uk/#website",
+      "url": "https://jaguarengines.uk",
+      "name": "Jaguar Engines UK",
+      "publisher": {
+        "@id": "https://jaguarengines.uk/#organization"
+      },
+      "description": "Jaguar engine specifications, technical data, and expert advice."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://jaguarengines.uk/technical#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://jaguarengines.uk"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Technical Library",
+          "item": "https://jaguarengines.uk/technical"
+        }
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://jaguarengines.uk/technical#page",
+      "url": "https://jaguarengines.uk/technical",
+      "name": "Jaguar Engine Technical Library",
+      "description": "Complete Jaguar engine technical library: oil capacities, timing chain or belt info, service schedules, torque specs, and engine number locations. Expert-verified data.",
+      "isPartOf": {
+        "@id": "https://jaguarengines.uk/#website"
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "Jaguar Engine Technical Specifications"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Jaguar Engines UK Editorial Team"
+      },
+      "publisher": {
+        "@id": "https://jaguarengines.uk/#organization"
+      },
+      "datePublished": "2025-01-15",
+      "dateModified": "2026-08-09",
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "204DTD (Ingenium D) — Oil Capacity & Specs",
+            "url": "https://jaguarengines.uk/technical/204dtd-oil-capacity"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "204DTD — Timing Chain or Belt?",
+            "url": "https://jaguarengines.uk/technical/204dtd-timing-chain-or-belt"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "204PT (Ingenium P) — Oil Capacity & Specs",
+            "url": "https://jaguarengines.uk/technical/204pt-oil-capacity"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "204PT — Timing Chain or Belt?",
+            "url": "https://jaguarengines.uk/technical/204pt-timing-chain-or-belt"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "AJ126 3.0 V6 SC — Oil Capacity & Specs",
+            "url": "https://jaguarengines.uk/technical/aj126-oil-capacity"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "AJ126 — Timing Chain or Belt?",
+            "url": "https://jaguarengines.uk/technical/aj126-timing-chain-or-belt"
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "name": "AJ133 5.0 V8 SC — Oil Capacity & Specs",
+            "url": "https://jaguarengines.uk/technical/aj133-oil-capacity"
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "name": "AJ133 — Timing Chain or Belt?",
+            "url": "https://jaguarengines.uk/technical/aj133-timing-chain-or-belt"
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "name": "AJ20D6 (2.0 Diesel) — Oil Capacity & Specs",
+            "url": "https://jaguarengines.uk/technical/aj20d6-oil-capacity"
+          },
+          {
+            "@type": "ListItem",
+            "position": 10,
+            "name": "AJ20D6 — Timing Chain or Belt?",
+            "url": "https://jaguarengines.uk/technical/aj20d6-timing-chain-or-belt"
+          },
+          {
+            "@type": "ListItem",
+            "position": 11,
+            "name": "AJ20P3 (1.5 PHEV) — Oil Capacity & Specs",
+            "url": "https://jaguarengines.uk/technical/aj20p3-oil-capacity"
+          },
+          {
+            "@type": "ListItem",
+            "position": 12,
+            "name": "AJ20P3 — Timing Chain or Belt?",
+            "url": "https://jaguarengines.uk/technical/aj20p3-timing-chain-or-belt"
+          },
+          {
+            "@type": "ListItem",
+            "position": 13,
+            "name": "AJ20P6 (2.0 PHEV) — Oil Capacity & Specs",
+            "url": "https://jaguarengines.uk/technical/aj20p6-oil-capacity"
+          },
+          {
+            "@type": "ListItem",
+            "position": 14,
+            "name": "AJ20P6 — Timing Chain or Belt?",
+            "url": "https://jaguarengines.uk/technical/aj20p6-timing-chain-or-belt"
+          },
+          {
+            "@type": "ListItem",
+            "position": 15,
+            "name": "AJ-V6 (2.5/3.0) — Oil Capacity & Specs",
+            "url": "https://jaguarengines.uk/technical/aj-v6-oil-capacity"
+          },
+          {
+            "@type": "ListItem",
+            "position": 16,
+            "name": "AJ-V6 — Timing Chain or Belt?",
+            "url": "https://jaguarengines.uk/technical/aj-v6-timing-chain-or-belt"
+          },
+          {
+            "@type": "ListItem",
+            "position": 17,
+            "name": "AJ-V8 (4.0/4.2) — Oil Capacity & Specs",
+            "url": "https://jaguarengines.uk/technical/aj-v8-oil-capacity"
+          },
+          {
+            "@type": "ListItem",
+            "position": 18,
+            "name": "AJ-V8 — Timing Chain or Belt?",
+            "url": "https://jaguarengines.uk/technical/aj-v8-timing-chain-or-belt"
+          },
+          {
+            "@type": "ListItem",
+            "position": 19,
+            "name": "AJ6 / AJ16 — Oil Capacity & Specs",
+            "url": "https://jaguarengines.uk/technical/aj6-aj16-oil-capacity"
+          },
+          {
+            "@type": "ListItem",
+            "position": 20,
+            "name": "AJ6 / AJ16 — Timing Chain or Belt?",
+            "url": "https://jaguarengines.uk/technical/aj6-aj16-timing-chain-or-belt"
+          },
+          {
+            "@type": "ListItem",
+            "position": 21,
+            "name": "XK6 (6-cylinder) — Oil Capacity & Specs",
+            "url": "https://jaguarengines.uk/technical/xk6-oil-capacity"
+          },
+          {
+            "@type": "ListItem",
+            "position": 22,
+            "name": "XK6 — Timing Chain or Belt?",
+            "url": "https://jaguarengines.uk/technical/xk6-timing-chain-or-belt"
+          },
+          {
+            "@type": "ListItem",
+            "position": 23,
+            "name": "V12 — Oil Capacity & Specs",
+            "url": "https://jaguarengines.uk/technical/v12-oil-capacity"
+          },
+          {
+            "@type": "ListItem",
+            "position": 24,
+            "name": "V12 — Timing Chain or Belt?",
+            "url": "https://jaguarengines.uk/technical/v12-timing-chain-or-belt"
+          },
+          {
+            "@type": "ListItem",
+            "position": 25,
+            "name": "X-Type Service Schedule",
+            "url": "https://jaguarengines.uk/technical/x-type-service-schedule"
+          },
+          {
+            "@type": "ListItem",
+            "position": 26,
+            "name": "XE Service Schedule",
+            "url": "https://jaguarengines.uk/technical/xe-service-schedule"
+          },
+          {
+            "@type": "ListItem",
+            "position": 27,
+            "name": "XF Service Schedule",
+            "url": "https://jaguarengines.uk/technical/xf-service-schedule"
+          },
+          {
+            "@type": "ListItem",
+            "position": 28,
+            "name": "XJ Service Schedule",
+            "url": "https://jaguarengines.uk/technical/xj-service-schedule"
+          },
+          {
+            "@type": "ListItem",
+            "position": 29,
+            "name": "S-Type Service Schedule",
+            "url": "https://jaguarengines.uk/technical/s-type-service-schedule"
+          },
+          {
+            "@type": "ListItem",
+            "position": 30,
+            "name": "E-Pace Service Schedule",
+            "url": "https://jaguarengines.uk/technical/e-pace-service-schedule"
+          },
+          {
+            "@type": "ListItem",
+            "position": 31,
+            "name": "F-Pace Service Schedule",
+            "url": "https://jaguarengines.uk/technical/f-pace-service-schedule"
+          },
+          {
+            "@type": "ListItem",
+            "position": 32,
+            "name": "I-Pace Service Schedule",
+            "url": "https://jaguarengines.uk/technical/i-pace-service-schedule"
+          },
+          {
+            "@type": "ListItem",
+            "position": 33,
+            "name": "F-Type Service Schedule",
+            "url": "https://jaguarengines.uk/technical/f-type-service-schedule"
+          },
+          {
+            "@type": "ListItem",
+            "position": 34,
+            "name": "XK Service Schedule",
+            "url": "https://jaguarengines.uk/technical/xk-service-schedule"
+          },
+          {
+            "@type": "ListItem",
+            "position": 35,
+            "name": "Engine Number Location Guide",
+            "url": "https://jaguarengines.uk/technical/engine-number-location"
+          },
+          {
+            "@type": "ListItem",
+            "position": 36,
+            "name": "Jaguar Engine Code Decoder",
+            "url": "https://jaguarengines.uk/technical/engine-code-decoder"
+          },
+          {
+            "@type": "ListItem",
+            "position": 37,
+            "name": "Torque Specifications",
+            "url": "https://jaguarengines.uk/technical/torque-specifications"
+          },
+          {
+            "@type": "ListItem",
+            "position": 38,
+            "name": "Coolant Specification & Types",
+            "url": "https://jaguarengines.uk/technical/coolant-specification"
+          },
+          {
+            "@type": "ListItem",
+            "position": 39,
+            "name": "Glow Plug Reference",
+            "url": "https://jaguarengines.uk/technical/glow-plug-reference"
+          },
+          {
+            "@type": "ListItem",
+            "position": 40,
+            "name": "DPF & Emissions Explained",
+            "url": "https://jaguarengines.uk/technical/dpf-emissions-explained"
+          },
+          {
+            "@type": "ListItem",
+            "position": 41,
+            "name": "VIN Decoder Tool",
+            "url": "https://jaguarengines.uk/tools/vin-decoder"
+          },
+          {
+            "@type": "ListItem",
+            "position": 42,
+            "name": "Oil Finder Tool",
+            "url": "https://jaguarengines.uk/tools/oil-finder"
+          },
+          {
+            "@type": "ListItem",
+            "position": 43,
+            "name": "Engine Fitment Matrix",
+            "url": "https://jaguarengines.uk/fitment/matrix"
+          },
+          {
+            "@type": "ListItem",
+            "position": 44,
+            "name": "Registration Lookup",
+            "url": "https://jaguarengines.uk/tools/registration-lookup"
+          },
+          {
+            "@type": "ListItem",
+            "position": 45,
+            "name": "Engine Compatibility Checker",
+            "url": "https://jaguarengines.uk/tools/engine-compatibility-checker"
+          }
+        ]
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero" id="top">
+    <div class="container">
+        <div class="hero-eyebrow"><span>Jaguar Engine Technical Library</span></div>
+        <h1>Jaguar Engine <span class="accent">Technical Library</span></h1>
+        <p class="hero-sub">Complete technical specifications, service schedules, oil capacities, and timing chain information for every Jaguar engine — from the classic XK6 to the modern Ingenium range.</p>
+        <div class="hero-rule"></div>
+        <div class="stat-strip">
+            <div class="stat-item"><div class="stat-num">15+</div><div class="stat-label">Vetted Specialists</div></div>
+            <div class="stat-item"><div class="stat-num">9,000+</div><div class="stat-label">Enquiries (2025)</div></div>
+            <div class="stat-item"><div class="stat-num">100%</div><div class="stat-label">Independent Data</div></div>
+            <div class="stat-item"><div class="stat-num">60%</div><div class="stat-label">Repair-to-Value Threshold</div></div>
+        </div>
+    </div>
+</header>
+
+<!-- SUMMARY BOX -->
+<div class="summary-box">
+    <h2>The Short Answer</h2>
+    <p><strong>This technical library is the definitive reference for Jaguar engine specifications, service data, and maintenance intervals.</strong> Every figure — from oil capacities and torque specs to timing chain types — is verified against factory data and proprietary enquiry records [EM-VERIFIED]. Whether you need the correct oil for your AJ133 or the service schedule for an X260, this is the starting point.</p>
+    <ul>
+        <li><strong>Engine code lookup:</strong> Find your engine's oil capacity, timing chain type, and service schedule in one place.</li>
+        <li><strong>Service schedules:</strong> Detailed maintenance intervals for every Jaguar model from the X-Type to the F-Pace.</li>
+        <li><strong>Technical data:</strong> Torque specifications, coolant types, glow plug references, and VIN/engine number locations.</li>
+    </ul>
+    <p class="closing">Use the index below to navigate to your engine or model. All data is independently verified and updated monthly.</p>
+</div>
+
+<!-- TOC BAR -->
+<nav class="toc-bar" aria-label="On this page">
+    <span class="toc-label">On this page</span>
+    <ul>
+        <li><a href="#engine-specs">Engine Specs</a></li>
+        <li><a href="#service-schedules">Service Schedules</a></li>
+        <li><a href="#technical-refs">Technical References</a></li>
+        <li><a href="#verdict">Verdict</a></li>
+        <li><a href="#faq">FAQ</a></li>
+    </ul>
+</nav>
+
+<!-- SECTION 1 — ENGINE SPECIFICATIONS (fade-up, no data-lazy) -->
+<section class="section" id="engine-specs">
+    <div class="section-inner fade-up">
+        <h2 style="font-family:var(--font-serif);font-weight:300;font-size:2rem;margin-bottom:8px;">Engine Specifications</h2>
+        <p style="color:var(--jag-grey-700);margin-bottom:32px;">Oil capacities, timing chain or belt type, and key technical data for every Jaguar engine.</p>
+        <div class="hub-index">
+            <div class="hub-index-category">
+                <h3>Modern Jaguar Engines</h3>
+                <ul>
+                    <li><a href="https://jaguarengines.uk/technical/204dtd-oil-capacity">204DTD (Ingenium D) — Oil Capacity & Specs</a></li>
+                    <li><a href="https://jaguarengines.uk/technical/204dtd-timing-chain-or-belt">204DTD — Timing Chain or Belt?</a></li>
+                    <li><a href="https://jaguarengines.uk/technical/204pt-oil-capacity">204PT (Ingenium P) — Oil Capacity & Specs</a></li>
+                    <li><a href="https://jaguarengines.uk/technical/204pt-timing-chain-or-belt">204PT — Timing Chain or Belt?</a></li>
+                    <li><a href="https://jaguarengines.uk/technical/aj126-oil-capacity">AJ126 3.0 V6 SC — Oil Capacity & Specs</a></li>
+                    <li><a href="https://jaguarengines.uk/technical/aj126-timing-chain-or-belt">AJ126 — Timing Chain or Belt?</a></li>
+                    <li><a href="https://jaguarengines.uk/technical/aj133-oil-capacity">AJ133 5.0 V8 SC — Oil Capacity & Specs</a></li>
+                    <li><a href="https://jaguarengines.uk/technical/aj133-timing-chain-or-belt">AJ133 — Timing Chain or Belt?</a></li>
+                    <li><a href="https://jaguarengines.uk/technical/aj20d6-oil-capacity">AJ20D6 (2.0 Diesel) — Oil Capacity & Specs</a></li>
+                    <li><a href="https://jaguarengines.uk/technical/aj20d6-timing-chain-or-belt">AJ20D6 — Timing Chain or Belt?</a></li>
+                    <li><a href="https://jaguarengines.uk/technical/aj20p3-oil-capacity">AJ20P3 (1.5 PHEV) — Oil Capacity & Specs</a></li>
+                    <li><a href="https://jaguarengines.uk/technical/aj20p3-timing-chain-or-belt">AJ20P3 — Timing Chain or Belt?</a></li>
+                    <li><a href="https://jaguarengines.uk/technical/aj20p6-oil-capacity">AJ20P6 (2.0 PHEV) — Oil Capacity & Specs</a></li>
+                    <li><a href="https://jaguarengines.uk/technical/aj20p6-timing-chain-or-belt">AJ20P6 — Timing Chain or Belt?</a></li>
+                </ul>
+            </div>
+            <div class="hub-index-category">
+                <h3>Classic & V8 Engines</h3>
+                <ul>
+                    <li><a href="https://jaguarengines.uk/technical/aj-v6-oil-capacity">AJ-V6 (2.5/3.0) — Oil Capacity & Specs</a></li>
+                    <li><a href="https://jaguarengines.uk/technical/aj-v6-timing-chain-or-belt">AJ-V6 — Timing Chain or Belt?</a></li>
+                    <li><a href="https://jaguarengines.uk/technical/aj-v8-oil-capacity">AJ-V8 (4.0/4.2) — Oil Capacity & Specs</a></li>
+                    <li><a href="https://jaguarengines.uk/technical/aj-v8-timing-chain-or-belt">AJ-V8 — Timing Chain or Belt?</a></li>
+                    <li><a href="https://jaguarengines.uk/technical/aj6-aj16-oil-capacity">AJ6 / AJ16 — Oil Capacity & Specs</a></li>
+                    <li><a href="https://jaguarengines.uk/technical/aj6-aj16-timing-chain-or-belt">AJ6 / AJ16 — Timing Chain or Belt?</a></li>
+                    <li><a href="https://jaguarengines.uk/technical/xk6-oil-capacity">XK6 (6-cylinder) — Oil Capacity & Specs</a></li>
+                    <li><a href="https://jaguarengines.uk/technical/xk6-timing-chain-or-belt">XK6 — Timing Chain or Belt?</a></li>
+                    <li><a href="https://jaguarengines.uk/technical/v12-oil-capacity">V12 — Oil Capacity & Specs</a></li>
+                    <li><a href="https://jaguarengines.uk/technical/v12-timing-chain-or-belt">V12 — Timing Chain or Belt?</a></li>
+                </ul>
+            </div>
+        </div>
+        <p style="margin-top:24px;font-size:0.9rem;color:var(--jag-grey-500);">Looking for another engine? <a href="https://jaguarengines.uk/engine">Visit the Engine Knowledge Centre</a> for the full list.</p>
+    </div>
+</section>
+
+<!-- SECTION 2 — SERVICE SCHEDULES (fade-down, no data-lazy) -->
+<section class="section section-alt" id="service-schedules">
+    <div class="section-inner fade-down">
+        <h2 style="font-family:var(--font-serif);font-weight:300;font-size:2rem;margin-bottom:8px;">Service Schedules</h2>
+        <p style="color:var(--jag-grey-700);margin-bottom:32px;">Factory-recommended maintenance intervals and service schedules for every Jaguar model.</p>
+        <div class="hub-index" style="grid-template-columns:1fr 1fr 1fr;">
+            <div>
+                <h3 style="font-size:1rem;font-weight:600;border-bottom:1px solid var(--jag-grey-300);padding-bottom:6px;">Saloon & Estate</h3>
+                <ul style="list-style:none;padding:0;margin-top:12px;">
+                    <li><a href="https://jaguarengines.uk/technical/x-type-service-schedule">X-Type Service Schedule</a></li>
+                    <li><a href="https://jaguarengines.uk/technical/xe-service-schedule">XE Service Schedule</a></li>
+                    <li><a href="https://jaguarengines.uk/technical/xf-service-schedule">XF Service Schedule</a></li>
+                    <li><a href="https://jaguarengines.uk/technical/xj-service-schedule">XJ Service Schedule</a></li>
+                    <li><a href="https://jaguarengines.uk/technical/s-type-service-schedule">S-Type Service Schedule</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 style="font-size:1rem;font-weight:600;border-bottom:1px solid var(--jag-grey-300);padding-bottom:6px;">SUV & Crossover</h3>
+                <ul style="list-style:none;padding:0;margin-top:12px;">
+                    <li><a href="https://jaguarengines.uk/technical/e-pace-service-schedule">E-Pace Service Schedule</a></li>
+                    <li><a href="https://jaguarengines.uk/technical/f-pace-service-schedule">F-Pace Service Schedule</a></li>
+                    <li><a href="https://jaguarengines.uk/technical/i-pace-service-schedule">I-Pace Service Schedule</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 style="font-size:1rem;font-weight:600;border-bottom:1px solid var(--jag-grey-300);padding-bottom:6px;">Sports</h3>
+                <ul style="list-style:none;padding:0;margin-top:12px;">
+                    <li><a href="https://jaguarengines.uk/technical/f-type-service-schedule">F-Type Service Schedule</a></li>
+                    <li><a href="https://jaguarengines.uk/technical/xk-service-schedule">XK Service Schedule</a></li>
+                </ul>
+            </div>
+        </div>
+        <p style="margin-top:24px;font-size:0.9rem;color:var(--jag-grey-500);">For full model details, <a href="https://jaguarengines.uk">visit the Jaguar Engines homepage</a>.</p>
+    </div>
+</section>
+
+<!-- SECTION 3 — TECHNICAL REFERENCES (fade-left, data-lazy) -->
+<section class="section" id="technical-refs" data-lazy-section>
+    <div class="section-inner fade-left">
+        <h2 style="font-family:var(--font-serif);font-weight:300;font-size:2rem;margin-bottom:8px;">Technical References & Tools</h2>
+        <p style="color:var(--jag-grey-700);margin-bottom:32px;">Engine number locations, VIN decoders, torque specs, coolant types, and more.</p>
+        <div class="hub-index" style="grid-template-columns:1fr 1fr 1fr;">
+            <div>
+                <ul style="list-style:none;padding:0;">
+                    <li><a href="https://jaguarengines.uk/technical/engine-number-location">Engine Number Location Guide</a></li>
+                    <li><a href="https://jaguarengines.uk/technical/engine-code-decoder">Jaguar Engine Code Decoder</a></li>
+                    <li><a href="https://jaguarengines.uk/technical/torque-specifications">Torque Specifications</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul style="list-style:none;padding:0;">
+                    <li><a href="https://jaguarengines.uk/technical/coolant-specification">Coolant Specification & Types</a></li>
+                    <li><a href="https://jaguarengines.uk/technical/glow-plug-reference">Glow Plug Reference</a></li>
+                    <li><a href="https://jaguarengines.uk/technical/dpf-emissions-explained">DPF & Emissions Explained</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul style="list-style:none;padding:0;">
+                    <li><a href="https://jaguarengines.uk/tools/vin-decoder">VIN Decoder Tool</a></li>
+                    <li><a href="https://jaguarengines.uk/tools/oil-finder">Oil Finder Tool</a></li>
+                    <li><a href="https://jaguarengines.uk/fitment/matrix">Engine Fitment Matrix</a></li>
+                </ul>
+            </div>
+        </div>
+        <p style="margin-top:24px;font-size:0.9rem;color:var(--jag-grey-500);">Need to confirm your engine? Use the <a href="https://jaguarengines.uk/tools/registration-lookup">Registration Lookup</a> or <a href="https://jaguarengines.uk/tools/engine-compatibility-checker">Engine Compatibility Checker</a>.</p>
+    </div>
+</section>
+
+<!-- SECTION 4 — VERDICT (fade-right, data-lazy) -->
+<section class="section section-alt" id="verdict" data-lazy-section>
+    <div class="section-inner fade-right">
+        <div class="verdict-block">
+            <h3>Our Verdict</h3>
+            <p><strong>The Jaguar Technical Library is the most comprehensive independent technical resource for Jaguar owners and specialists in the UK.</strong> Every specification is cross-referenced against factory data and verified against real-world enquiry patterns [EM-VERIFIED]. Whether you're a DIY owner or a professional mechanic, this index provides the authoritative data you need — without the marketing fluff. <strong>Bookmark this page as your first stop for Jaguar technical data.</strong></p>
+        </div>
+        <p style="margin-top:16px;font-size:0.9rem;color:var(--jag-grey-500);">For failure data and reliability trends, see the <a href="https://jaguarengines.uk/data/engine-failure-index-2026">Engine Failure Index 2026</a>.</p>
+    </div>
+</section>
+
+<!-- SECTION 5 — FAQ (fade-up, data-lazy) -->
+<section class="section" id="faq" data-lazy-section>
+    <div class="section-inner fade-up">
+        <h2 style="font-family:var(--font-serif);font-weight:300;font-size:2rem;text-align:center;margin-bottom:32px;">Frequently Asked Questions</h2>
+        <div class="faq-list">
+            <div class="faq-item">
+                <details>
+                    <summary>Where can I find the engine number on my Jaguar?</summary>
+                    <div class="faq-answer">The engine number is typically stamped on the engine block. For most Jaguar engines, it's located on the lower front-left side of the block (near the oil filter housing) or on the rear of the block adjacent to the bellhousing. <a href="https://jaguarengines.uk/technical/engine-number-location">See the full guide with diagrams here.</a></div>
+                </details>
+            </div>
+            <div class="faq-item">
+                <details>
+                    <summary>Does the Ingenium diesel have a timing chain or belt?</summary>
+                    <div class="faq-answer">The Ingenium diesel (204DTD) uses a timing chain, not a belt. However, early models (pre-2019) are known for tensioner wear. <a href="https://jaguarengines.uk/technical/204dtd-timing-chain-or-belt">Full details on the 204DTD timing chain here.</a></div>
+                </details>
+            </div>
+            <div class="faq-item">
+                <details>
+                    <summary>What is the oil capacity of the AJ133 5.0 V8?</summary>
+                    <div class="faq-answer">The AJ133 5.0 V8 has a dry fill capacity of approximately 7.8 litres (with filter). Always use oil meeting Jaguar specification WSS-M2C913-D or equivalent. <a href="https://jaguarengines.uk/technical/aj133-oil-capacity">Complete oil spec and capacity guide.</a></div>
+                </details>
+            </div>
+            <div class="faq-item">
+                <details>
+                    <summary>How often should I service my Jaguar XF?</summary>
+                    <div class="faq-answer">The XF (X260) service interval is typically 12 months or 16,000 miles, whichever comes first. However, for high-mileage or heavily used vehicles, many specialists recommend a 10,000-mile / 12-month schedule. <a href="https://jaguarengines.uk/technical/xf-service-schedule">Full XF service schedule.</a></div>
+                </details>
+            </div>
+            <div class="faq-item">
+                <details>
+                    <summary>What does the "Restricted Performance" warning light mean?</summary>
+                    <div class="faq-answer">The "Restricted Performance" light indicates the engine ECU has detected a fault and is limiting power to protect the engine. Common causes include fuel pressure issues, turbo problems, or DPF blockages. <a href="https://jaguarengines.uk/warning-lights/restricted-performance">Full guide to Restricted Performance.</a></div>
+                </details>
+            </div>
+            <div class="faq-item">
+                <details>
+                    <summary>Can I use my VIN to check which engine is fitted?</summary>
+                    <div class="faq-answer">Yes. The 8th character of your Jaguar VIN usually denotes the engine code. Our <a href="https://jaguarengines.uk/tools/vin-decoder">VIN Decoder tool</a> can decode this for you, or you can use the <a href="https://jaguarengines.uk/fitment/matrix">Fitment Matrix</a> to cross-reference.</div>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TRUST STRIP + CTA -->
+<section class="trust-cta" id="trust-cta">
+    <div class="container">
+        <div class="trust-grid">
+            <div class="trust-item">
+                <div class="num">15+</div>
+                <div class="label">Vetted Specialists</div>
+            </div>
+            <div class="trust-item">
+                <div class="num">9,000+</div>
+                <div class="label">Real UK Enquiries</div>
+            </div>
+            <div class="trust-item">
+                <div class="num">100%</div>
+                <div class="label">Independent Editorial</div>
+            </div>
+            <div class="trust-item">
+                <div class="num">60%</div>
+                <div class="label">Scrap Threshold</div>
+            </div>
+        </div>
+        <p style="max-width:600px;margin:0 auto 24px;color:var(--jag-grey-700);font-size:0.95rem;">Part of the Engine Finders network — independently verified, rated and reviewed. Compare trusted specialists for your Jaguar engine work.</p>
+        <a href="https://jaguarengines.uk/tools/registration-lookup" class="cta-button">Compare Prices Now</a>
+        <p style="margin-top:16px;font-size:0.8rem;color:var(--jag-grey-500);">No email required. Get a real quote from vetted specialists.</p>
+    </div>
+</section>
+
+<!-- FOOTER LINKS (minimal, for completeness) -->
+<footer style="padding:24px 0;border-top:1px solid var(--jag-grey-300);background:var(--jag-bg);text-align:center;font-size:0.8rem;color:var(--jag-grey-500);">
+    <p>© 2026 Jaguar Engines UK. Part of the Engine Finders network. <a href="https://jaguarengines.uk/about">About</a> · <a href="https://jaguarengines.uk/about/editorial-standards">Editorial Standards</a> · <a href="https://jaguarengines.uk/data/methodology">Data Methodology</a></p>
+</footer>
+
+</body>
+</html>

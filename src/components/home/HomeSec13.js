@@ -46,14 +46,14 @@ export default function HomeSec13({ data }) {
             <div
               key={column[0]?.id ?? columnIndex}
               className={`flex flex-col gap-3 md:w-1/3 md:px-4 md:first:pl-0 md:last:pr-0 md:border-r md:last:border-r-0 ${
-                isDark ? "md:border-[#375067]" : "md:border-[var(--color-primary)]"
+                isDark ? "md:border-[var(--color-border)]" : "md:border-[var(--color-primary)]"
               }`}
             >
               {column.map((item) => (
                 <details
                   key={item.id}
                   className={`group rounded-lg border shadow-[0_8px_22px_rgba(10,26,43,0.04)] ${
-                    isDark ? "border-[#223343] bg-[rgba(10,21,32,0.92)]" : "border-[#dfe5ed] bg-white"
+                    isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#dfe5ed] bg-white"
                   }`}
                 >
                   <summary className={`flex min-h-12 cursor-pointer list-none items-center gap-3 px-4 py-3 text-[0.93rem] marker:hidden ${isDark ? "text-white" : "text-[#071827]"}`}>
@@ -62,7 +62,7 @@ export default function HomeSec13({ data }) {
                       <PlusIcon />
                     </span>
                   </summary>
-                  <p className={`border-t px-4 pb-4 pt-3 text-[0.84rem] leading-[1.5] ${isDark ? "border-[#223343] text-white/74" : "border-[#e7ebf0] text-[#27384a]"}`} dangerouslySetInnerHTML={{ __html: item.answer }} />
+                  <p className={`border-t px-4 pb-4 pt-3 text-[0.84rem] leading-[1.5] ${isDark ? "border-[var(--color-border)] text-white/74" : "border-[#e7ebf0] text-[#27384a]"}`} dangerouslySetInnerHTML={{ __html: item.answer }} />
                 </details>
               ))}
             </div>

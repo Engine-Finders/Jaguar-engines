@@ -9,7 +9,7 @@ const verdictStyles = {
   warning: { icon: "warning", light: "text-[#d97517]", dark: "text-[#ffb05a]" },
   success: { icon: "check", light: "text-[#13884a]", dark: "text-[#67d99a]" },
   danger: { icon: "warning", light: "text-[#db2e2e]", dark: "text-[#ff8b90]" },
-  info: { icon: "info", light: "text-[var(--color-primary)]", dark: "text-[#7fb2ff]" },
+  info: { icon: "info", light: "text-[var(--color-primary)]", dark: "text-[var(--color-text)]" },
 };
 
 function VerdictPill({ verdictType, text, isDark }) {
@@ -83,7 +83,7 @@ export default function OwnershipEconomics({ data }) {
   if (!data) return null;
 
   const isDark = theme === "dark";
-  const headerBg = isDark ? "bg-[#0a1f44]" : "bg-[var(--color-primary)]";
+  const headerBg = isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]";
   const headerDivider = isDark ? "border-white/20" : "border-white/25";
   const bodyWrapperBg = isDark ? "bg-black" : "bg-[var(--color-table-surface)]";
   const headerImage = isDark ? "/e90/engine_replacement_dark.webp" : "/e90/engine_replacement_light.webp";

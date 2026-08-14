@@ -22,8 +22,8 @@ const verdictStyles = {
   trophy: {
     badge: "bg-[#edf3ff] text-[#1f57d4] border-[#d4e1ff]",
     iconBg: "bg-[#e6efff] text-[#215be0]",
-    darkBadge: "bg-[rgba(36,132,255,0.16)] text-[#7fb2ff] border-[rgba(36,132,255,0.34)]",
-    darkIconBg: "bg-[rgba(36,132,255,0.2)] text-[#7fb2ff]",
+    darkBadge: "bg-[rgba(36,132,255,0.16)] text-[var(--color-text)] border-[rgba(36,132,255,0.34)]",
+    darkIconBg: "bg-[rgba(36,132,255,0.2)] text-[var(--color-text)]",
   },
   diamond: {
     badge: "bg-[#f5efff] text-[#6d44d7] border-[#e4d8ff]",
@@ -202,7 +202,7 @@ function VerdictBadge({ verdict, mobile = false }) {
 
 function DesktopHeader({ columns, isDark }) {
   return (
-    <div className={`grid grid-cols-[190px_minmax(0,1fr)_185px_28px] items-center rounded-t-[0.35rem] px-5 py-3 text-[0.98rem] font-semibold text-white ${isDark ? "bg-[#0c2748]" : "bg-[var(--color-primary)]"}`}>
+    <div className={`grid grid-cols-[190px_minmax(0,1fr)_185px_28px] items-center rounded-t-[0.35rem] px-5 py-3 text-[0.98rem] font-semibold text-white ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}>
       <span>{columns[0]}</span>
       <span>{columns[1]}</span>
       <span>{columns[2]}</span>
@@ -432,7 +432,7 @@ export default function HomeSec2({ data }) {
           <div
             className={`relative overflow-hidden rounded-md border shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur ${
               isDark
-                ? "border-white/10 bg-[rgba(10,21,32,0.8)] text-white/60"
+                ? "border-white/10 bg-[var(--color-surface-raised)] text-white/60"
                 : "border-[var(--color-border)] bg-[rgba(255,255,255,0.86)] text-[var(--color-text-soft)]"
             }`}
           >
@@ -461,10 +461,10 @@ export default function HomeSec2({ data }) {
                   className={`rounded-full border px-4 py-2 text-[0.8rem] font-medium ${
                     isActive
                       ? isDark
-                        ? "border-[#0c2748] bg-[#0c2748] text-white"
+                        ? "border-[var(--color-chrome)] bg-[var(--color-chrome)] text-white"
                         : "border-[var(--color-primary)] bg-[var(--color-primary)] text-white"
                       : isDark
-                        ? "border-white/12 bg-[rgba(10,21,32,0.8)] text-white"
+                        ? "border-white/12 bg-[var(--color-surface-raised)] text-white"
                         : "border-[var(--color-border)] bg-white/90 text-[var(--color-text)]"
                   }`}
                 >
@@ -477,7 +477,7 @@ export default function HomeSec2({ data }) {
           <div
             className={`mt-5 overflow-hidden rounded-md border shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur ${
               isDark
-                ? "border-white/10 bg-[rgba(10,21,32,0.82)]"
+                ? "border-white/10 bg-[var(--color-surface-raised)]"
                 : "border-[var(--color-border)] bg-[rgba(255,255,255,0.88)]"
             }`}
           >
@@ -517,13 +517,13 @@ export default function HomeSec2({ data }) {
           <div
             className={`mt-5 rounded-md border p-4 shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur ${
               isDark
-                ? "border-white/10 bg-[rgba(10,21,32,0.82)]"
+                ? "border-white/10 bg-[var(--color-surface-raised)]"
                 : "border-[var(--color-border)] bg-[rgba(255,255,255,0.84)]"
             }`}
           >
             <div className="grid grid-cols-[60px_minmax(0,1fr)] gap-x-3 gap-y-2">
               <div className="row-span-2 flex items-start justify-center pt-0.5">
-                <div className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full text-white ${isDark ? "bg-[#0c2748]" : "bg-[var(--color-primary)]"}`}>
+                <div className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full text-white ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}>
                   <svg aria-hidden="true" viewBox="0 0 24 24" className="h-7 w-7" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm-2 9 1.6 1.6L15 10" />
                   </svg>
@@ -550,7 +550,7 @@ export default function HomeSec2({ data }) {
           <div
             className={`mb-3 overflow-hidden rounded-md border shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur ${
               isDark
-                ? "border-white/10 bg-[rgba(10,21,32,0.8)]"
+                ? "border-white/10 bg-[var(--color-surface-raised)]"
                 : "border-[var(--color-border)] bg-[rgba(255,255,255,0.86)]"
             }`}
           >
@@ -579,10 +579,10 @@ export default function HomeSec2({ data }) {
                   className={`rounded-full border px-4 py-2 text-[0.8rem] font-medium ${
                     isActive
                       ? isDark
-                        ? "border-[#0c2748] bg-[#0c2748] text-white"
+                        ? "border-[var(--color-chrome)] bg-[var(--color-chrome)] text-white"
                         : "border-[var(--color-primary)] bg-[var(--color-primary)] text-white"
                       : isDark
-                        ? "border-white/12 bg-[rgba(10,21,32,0.8)] text-white"
+                        ? "border-white/12 bg-[var(--color-surface-raised)] text-white"
                         : "border-[var(--color-border)] bg-white/90 text-[var(--color-text)]"
                   }`}
                 >

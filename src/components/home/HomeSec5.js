@@ -41,7 +41,7 @@ function ArrowIcon() {
 
 function NumberBadge({ id, isDark }) {
   return (
-    <span className={`absolute left-0 top-0 z-20 flex h-12 w-12 items-center justify-center rounded-br-xl rounded-tl-xl text-[1.35rem] font-bold text-white md:h-10 md:w-10 md:text-[1.2rem] ${isDark ? "bg-[#0c2748]" : "bg-[var(--color-primary)]"}`}>
+    <span className={`absolute left-0 top-0 z-20 flex h-12 w-12 items-center justify-center rounded-br-xl rounded-tl-xl text-[1.35rem] font-bold text-white md:h-10 md:w-10 md:text-[1.2rem] ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}>
       {id}
     </span>
   );
@@ -49,7 +49,7 @@ function NumberBadge({ id, isDark }) {
 
 function OptionRow({ options, isDark }) {
   return (
-    <div className={`flex items-center justify-center gap-4 border-t px-3 py-3 md:gap-5 ${isDark ? "border-[#223a51]" : "border-[#dfe5ed]"}`}>
+    <div className={`flex items-center justify-center gap-4 border-t px-3 py-3 md:gap-5 ${isDark ? "border-[var(--color-border)]" : "border-[#dfe5ed]"}`}>
       {options.map((option, index) => (
         <div key={`${option.label}-${index}`} className="flex min-w-0 items-center gap-2">
           {index > 0 ? <span className={`mr-2 text-[0.8rem] font-bold ${isDark ? "text-white/78" : "text-[#071827]"}`}>vs</span> : null}
@@ -74,12 +74,12 @@ function ComparisonCard({ item, isDark }) {
   return (
     <article
       className={`relative overflow-hidden rounded-md border shadow-[0_12px_32px_rgba(10,26,43,0.08)] ${
-        isDark ? "border-[#223a51] bg-[rgba(7,23,36,0.88)]" : "border-[#d7dde6] bg-white"
+        isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#d7dde6] bg-white"
       }`}
     >
       <NumberBadge id={item.id} isDark={isDark} />
       <div className="grid md:grid-cols-[minmax(260px,0.98fr)_minmax(280px,1fr)]">
-        <div className={`min-w-0 border-b md:border-b-0 md:border-r ${isDark ? "border-[#223a51]" : "border-[#dfe5ed]"}`}>
+        <div className={`min-w-0 border-b md:border-b-0 md:border-r ${isDark ? "border-[var(--color-border)]" : "border-[#dfe5ed]"}`}>
           <div className="relative h-40 md:h-36">
             <Image src={item.image.src} alt={item.image.alt} fill className="object-cover object-center" sizes="(max-width: 768px) 100vw, 360px" />
             <div className={isDark ? "absolute inset-0 bg-[rgba(2,7,11,0.14)]" : "absolute inset-0 bg-[rgba(255,255,255,0.1)]"} />
@@ -137,7 +137,7 @@ export default function HomeSec5({ data }) {
 
         <div className="mt-7 hidden h-3 items-center md:flex">
           <span className="h-full flex-[1.1] -skew-x-[28deg] bg-[var(--color-primary)]" />
-          <span className="h-full flex-[1.25] -skew-x-[28deg] bg-[#7aa4dd]" />
+          <span className="h-full flex-[1.25] -skew-x-[28deg] bg-[var(--color-chrome)]" />
           <span className="h-full flex-[1.8] -skew-x-[28deg] bg-[var(--color-accent-red)]" />
           <span className="h-full flex-[1.5] -skew-x-[28deg] bg-[linear-gradient(90deg,#ed1c24_0%,rgba(237,28,36,0)_100%)]" />
         </div>

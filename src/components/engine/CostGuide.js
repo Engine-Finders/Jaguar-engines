@@ -16,7 +16,7 @@ function cleanText(text = "") {
 }
 
 function shortEngineName(engineLabel = "") {
-  return cleanText(engineLabel).replace(/^BMW\s+/i, "") || "Engine";
+  return cleanText(engineLabel).replace(/^Jaguar\s+/i, "") || "Engine";
 }
 
 function parseQuotedPrice(value = "") {
@@ -81,7 +81,7 @@ function PriceCard({ row, popular = false, isDark, compact = false }) {
       }`}
     >
       {popular ? (
-        <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 rounded-md bg-[var(--color-primary)] px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-[0.04em] text-white">
+        <span className={`absolute -top-2.5 left-1/2 -translate-x-1/2 rounded-md px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-[0.04em] text-white ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}>
           Most Popular
         </span>
       ) : null}
@@ -106,7 +106,7 @@ function PriceCard({ row, popular = false, isDark, compact = false }) {
           </div>
           <div className="flex items-center justify-between gap-3 pt-2.5">
             <p className="text-[10px] font-semibold uppercase tracking-[0.04em] text-[var(--color-text-soft)]">Warranty</p>
-            <span className="rounded-full bg-[var(--color-primary)] px-2.5 py-1 text-[11px] font-semibold text-white">
+            <span className={`rounded-full px-2.5 py-1 text-[11px] font-semibold text-white ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}>
               {warranty}
             </span>
           </div>
@@ -123,7 +123,7 @@ function PriceCard({ row, popular = false, isDark, compact = false }) {
           </div>
 
           <div className="mt-3">
-            <span className="inline-flex rounded-full bg-[var(--color-primary)] px-2.5 py-1 text-[11px] font-semibold text-white">
+            <span className={`inline-flex rounded-full px-2.5 py-1 text-[11px] font-semibold text-white ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}>
               {warranty}
             </span>
           </div>
@@ -133,7 +133,7 @@ function PriceCard({ row, popular = false, isDark, compact = false }) {
   );
 }
 
-function CompareCta({ cta, engineCode, desktop = false }) {
+function CompareCta({ cta, engineCode, desktop = false, isDark }) {
   if (!cta?.href) return null;
 
   const label = cleanText(cta.label)
@@ -142,7 +142,7 @@ function CompareCta({ cta, engineCode, desktop = false }) {
 
   if (desktop) {
     return (
-      <article className="flex h-full flex-col justify-between rounded-xl bg-[var(--color-primary)] p-4 text-white">
+      <article className={`flex h-full flex-col justify-between rounded-xl p-4 text-white ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}>
         <div>
           <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/35 bg-white/10 text-white">
             <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.9">
@@ -158,7 +158,7 @@ function CompareCta({ cta, engineCode, desktop = false }) {
         </div>
         <Link
           href="/quote"
-          className="btn-cta mt-5 inline-flex min-h-11 items-center justify-center rounded-lg bg-[var(--color-surface)] px-4 text-[13px] font-bold uppercase tracking-[0.04em] text-[var(--color-text)]"
+          className={`mt-5 inline-flex min-h-11 items-center justify-center rounded-lg px-4 text-[13px] font-bold uppercase tracking-[0.04em] ${isDark ? "bg-[var(--color-surface)] text-white" : "bg-[var(--color-surface)] text-[var(--color-text)]"}`}
         >
           Compare Prices →
         </Link>
@@ -169,7 +169,7 @@ function CompareCta({ cta, engineCode, desktop = false }) {
   return (
     <Link
       href="/quote"
-      className="btn-cta mt-1 flex min-h-12 items-center justify-between gap-3 rounded-xl bg-[var(--color-primary)] px-3.5 py-3 text-white shadow-[0_12px_28px_var(--color-shadow)]"
+      className={`btn-cta mt-1 flex min-h-12 items-center justify-between gap-3 rounded-xl px-3.5 py-3 text-white shadow-[0_12px_28px_var(--color-shadow)] ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}
     >
       <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-white/40">
         <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.9">
@@ -177,14 +177,14 @@ function CompareCta({ cta, engineCode, desktop = false }) {
         </svg>
       </span>
       <span className="min-w-0 flex-1 text-[13px] font-bold leading-[1.25]">
-        {label || `Compare BMW ${engineCode} engine prices from UK specialists`}
+        {label || `Compare Jaguar ${engineCode} engine prices from UK specialists`}
       </span>
       <span aria-hidden="true" className="text-[18px] font-bold">→</span>
     </Link>
   );
 }
 
-export default function CostGuide({ data, engineLabel = "BMW Engine" }) {
+export default function CostGuide({ data, engineLabel = "Jaguar Engine" }) {
   const { theme } = useTheme();
   if (!data) return null;
 
@@ -192,7 +192,7 @@ export default function CostGuide({ data, engineLabel = "BMW Engine" }) {
   const engineCode = shortEngineName(engineLabel);
   const rows = data.rows || [];
   const exclusiveNote = cleanText(data.sharedCostNote || "(Exclusive mode – no cross-link)");
-  const quoteTag = parseQuotedPrice(rows[0]?.supplyOnly || "").tag || "[BMW-QUOTE]";
+  const quoteTag = parseQuotedPrice(rows[0]?.supplyOnly || "").tag || "[JAGUAR-QUOTE]";
 
   return (
     <section className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden bg-[var(--color-page)] py-6 text-[var(--color-text)] md:py-9">
@@ -246,7 +246,7 @@ export default function CostGuide({ data, engineLabel = "BMW Engine" }) {
                   isDark={isDark}
                 />
               ))}
-              <CompareCta cta={data.cta} engineCode={engineCode} desktop />
+              <CompareCta cta={data.cta} engineCode={engineCode} desktop isDark={isDark} />
             </div>
           </div>
 
@@ -297,7 +297,7 @@ export default function CostGuide({ data, engineLabel = "BMW Engine" }) {
             </div>
 
             <div className="mt-3">
-              <CompareCta cta={data.cta} engineCode={engineCode} />
+              <CompareCta cta={data.cta} engineCode={engineCode} isDark={isDark} />
             </div>
           </div>
       </div>

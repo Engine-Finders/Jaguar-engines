@@ -9,7 +9,7 @@ const styles = {
   },
   "NEWLY ASSIGNED": {
     light: "border-[rgba(11,103,220,0.3)] bg-[var(--color-primary-soft)] text-[var(--color-primary)]",
-    dark: "border-[rgba(36,132,255,0.34)] bg-[rgba(36,132,255,0.16)] text-[#7fb2ff]",
+    dark: "border-[rgba(36,132,255,0.34)] bg-[rgba(36,132,255,0.16)] text-[var(--color-text)]",
   },
   NEW: {
     light: "border-[rgba(11,103,220,0.3)] bg-[var(--color-primary)] text-white",

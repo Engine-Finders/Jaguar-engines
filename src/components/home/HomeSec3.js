@@ -204,10 +204,10 @@ function StepIndicator({ labels, stageIndex, isDark }) {
                 className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full border text-[0.82rem] font-bold ${
                   done || active
                     ? isDark
-                      ? "border-[#0c2748] bg-[#0c2748] text-white"
+                      ? "border-[var(--color-chrome)] bg-[var(--color-chrome)] text-white"
                       : "border-[var(--color-primary)] bg-[var(--color-primary)] text-white"
                     : isDark
-                      ? "border-[#375067] bg-transparent text-white/64"
+                      ? "border-[var(--color-border)] bg-transparent text-white/64"
                       : "border-[#d7dde6] bg-transparent text-[#607085]"
                 }`}
               >
@@ -217,7 +217,7 @@ function StepIndicator({ labels, stageIndex, isDark }) {
                 {label}
               </span>
             </div>
-            {index < labels.length - 1 ? <span className={`h-px flex-1 ${done ? "bg-[var(--color-primary)]" : isDark ? "bg-[#375067]" : "bg-[#d7dde6]"}`} /> : null}
+            {index < labels.length - 1 ? <span className={`h-px flex-1 ${done ? "bg-[var(--color-primary)]" : isDark ? "bg-[var(--color-border)]" : "bg-[#d7dde6]"}`} /> : null}
           </div>
         );
       })}
@@ -227,9 +227,9 @@ function StepIndicator({ labels, stageIndex, isDark }) {
 
 function TrustStrip({ items, isDark }) {
   return (
-    <ul className={`mt-6 grid grid-cols-2 overflow-hidden rounded-xl border shadow-[0_14px_34px_rgba(10,26,43,0.08)] md:grid-cols-4 ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.86)]" : "border-[#d7dde6] bg-white/95"}`}>
+    <ul className={`mt-6 grid grid-cols-2 overflow-hidden rounded-xl border shadow-[0_14px_34px_rgba(10,26,43,0.08)] md:grid-cols-4 ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#d7dde6] bg-white/95"}`}>
       {items.map((item, index) => (
-        <li key={`trust-strip-${index}`} className={`flex items-center gap-3 border-b px-3 py-4 md:border-b-0 md:border-r md:px-4 last:border-b-0 md:last:border-r-0 ${isDark ? "border-[#223343]" : "border-[#d7dde6]"}`}>
+        <li key={`trust-strip-${index}`} className={`flex items-center gap-3 border-b px-3 py-4 md:border-b-0 md:border-r md:px-4 last:border-b-0 md:last:border-r-0 ${isDark ? "border-[var(--color-border)]" : "border-[#d7dde6]"}`}>
           <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
             <Icon name={item.icon} className="h-5 w-5" />
           </span>
@@ -246,13 +246,13 @@ function TrustStrip({ items, isDark }) {
 function SideInfo({ data, isDark }) {
   return (
     <div className="grid gap-4">
-      <section className={`rounded-xl border p-4 shadow-[0_12px_34px_rgba(10,26,43,0.05)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.88)]" : "border-[#d7dde6] bg-white"}`}>
+      <section className={`rounded-xl border p-4 shadow-[0_12px_34px_rgba(10,26,43,0.05)] ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#d7dde6] bg-white"}`}>
         <h3 className="text-[0.82rem] font-bold uppercase tracking-[0.08em] text-[var(--color-primary)]">How It Works</h3>
         <ul className="mt-4 grid gap-3">
           {data.steps.map((step) => (
-            <li key={step.step} className={`rounded-lg border p-3 ${isDark ? "border-[#223343] bg-[rgba(14,28,41,0.84)]" : "border-[#e4e9f0] bg-[#fbfdff]"}`}>
+            <li key={step.step} className={`rounded-lg border p-3 ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface)]" : "border-[#e4e9f0] bg-[#fbfdff]"}`}>
               <div className="flex items-start gap-3">
-                <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg text-white ${isDark ? "bg-[#0c2748]" : "bg-[var(--color-primary)]"}`}>
+                <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg text-white ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}>
                   <Icon name={step.icon} className="h-5 w-5" />
                 </span>
                 <div>
@@ -266,11 +266,11 @@ function SideInfo({ data, isDark }) {
         </ul>
       </section>
 
-      <section className={`rounded-xl border p-4 shadow-[0_12px_34px_rgba(10,26,43,0.05)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.88)]" : "border-[#d7dde6] bg-white"}`}>
+      <section className={`rounded-xl border p-4 shadow-[0_12px_34px_rgba(10,26,43,0.05)] ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#d7dde6] bg-white"}`}>
         <h3 className="text-[0.82rem] font-bold uppercase tracking-[0.08em] text-[var(--color-primary)]">Why Trust This Tool</h3>
         <ul className="mt-4 grid gap-3">
           {data.items.map((item) => (
-            <li key={item.title} className={`rounded-lg border p-3 ${isDark ? "border-[#223343] bg-[rgba(14,28,41,0.84)]" : "border-[#e4e9f0] bg-[#fbfdff]"}`}>
+            <li key={item.title} className={`rounded-lg border p-3 ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface)]" : "border-[#e4e9f0] bg-[#fbfdff]"}`}>
               <div className="flex items-start gap-3">
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
                   <Icon name={item.icon} className="h-5 w-5" />
@@ -295,7 +295,7 @@ function ShortcutCard({ diagnosis, isDark, onSelect }) {
     <button
       type="button"
       onClick={() => onSelect(diagnosis.key)}
-      className={`rounded-lg border p-3 text-left transition hover:border-[var(--color-primary)] ${isDark ? "border-[#223343] bg-[rgba(14,28,41,0.84)] hover:bg-[rgba(18,38,56,0.9)]" : "border-[#d7dde6] bg-white hover:bg-[#f8fbff]"}`}
+      className={`rounded-lg border p-3 text-left transition hover:border-[var(--color-primary)] ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface)] hover:bg-[var(--color-surface-raised)]" : "border-[#d7dde6] bg-white hover:bg-[#f8fbff]"}`}
     >
       <div className="flex items-start justify-between gap-3">
         <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
@@ -320,7 +320,7 @@ function CategoryCard({ category, selected, isDark, onSelect }) {
         selected
           ? "border-[var(--color-primary)] bg-[var(--color-primary-soft)]"
           : isDark
-            ? "border-[#223343] bg-[rgba(14,28,41,0.84)] hover:border-[#375067]"
+            ? "border-[var(--color-border)] bg-[var(--color-surface)] hover:border-[var(--color-border)]"
             : "border-[#d7dde6] bg-white hover:border-[var(--color-primary)]"
       }`}
     >
@@ -338,7 +338,7 @@ function AnswerButton({ answer, isDark, onSelect }) {
     <button
       type="button"
       onClick={() => onSelect(answer.diagnosisKey)}
-      className={`flex w-full items-center justify-between gap-4 rounded-lg border px-4 py-4 text-left transition ${isDark ? "border-[#223343] bg-[rgba(14,28,41,0.84)] text-white hover:border-[#375067]" : "border-[#d7dde6] bg-white text-[#071827] hover:border-[var(--color-primary)] hover:bg-[#f8fbff]"}`}
+      className={`flex w-full items-center justify-between gap-4 rounded-lg border px-4 py-4 text-left transition ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface)] text-white hover:border-[var(--color-border)]" : "border-[#d7dde6] bg-white text-[#071827] hover:border-[var(--color-primary)] hover:bg-[#f8fbff]"}`}
     >
       <span className="text-[0.88rem] leading-[1.4]">{answer.label}</span>
       <span className="shrink-0 text-[var(--color-primary)]">
@@ -370,7 +370,7 @@ function OverridePanel({ diagnosis, isDark, onContinue }) {
           <ul className="mt-4 grid gap-2">
             {diagnosis.overrideCopy.actions.map((action) => (
               <li key={action} className={`flex items-start gap-3 text-[0.82rem] leading-[1.45] ${isDark ? "text-white/74" : "text-[#27384a]"}`}>
-                <span className={`mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-white ${isDark ? "bg-[#0c2748]" : "bg-[var(--color-primary)]"}`}>
+                <span className={`mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-white ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}>
                   <Icon name="shield" className="h-3 w-3" strokeWidth={2.3} />
                 </span>
                 <span>{action}</span>
@@ -391,7 +391,7 @@ function OverridePanel({ diagnosis, isDark, onContinue }) {
 
 function CostCard({ title, value, note, highlight, isDark }) {
   return (
-    <article className={`rounded-lg border p-4 ${highlight ? "border-[var(--color-primary)] bg-[var(--color-primary-soft)]" : isDark ? "border-[#223343] bg-[rgba(14,28,41,0.84)]" : "border-[#d7dde6] bg-white"}`}>
+    <article className={`rounded-lg border p-4 ${highlight ? "border-[var(--color-primary)] bg-[var(--color-primary-soft)]" : isDark ? "border-[var(--color-border)] bg-[var(--color-surface)]" : "border-[#d7dde6] bg-white"}`}>
       <p className={`text-[0.72rem] font-bold uppercase tracking-[0.08em] ${highlight ? "text-[var(--color-primary)]" : isDark ? "text-white/62" : "text-[#607085]"}`}>{title}</p>
       <p className={`mt-2 text-[1.1rem] font-bold leading-tight ${highlight ? "text-[#071827]" : isDark ? "text-white" : "text-[#071827]"}`}>{value}</p>
       <p className={`mt-1 text-[0.76rem] leading-[1.35] ${highlight ? "text-[#27384a]" : isDark ? "text-white/68" : "text-[#27384a]"}`}>{note}</p>
@@ -438,7 +438,7 @@ function ResultsScreen({ diagnosis, verdict, engineOption, ctas, isDark, calcula
 
   return (
     <div className="grid gap-5">
-      <section className={`rounded-xl border p-5 shadow-[0_12px_34px_rgba(10,26,43,0.06)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.9)]" : "border-[#d7dde6] bg-white"}`}>
+      <section className={`rounded-xl border p-5 shadow-[0_12px_34px_rgba(10,26,43,0.06)] ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#d7dde6] bg-white"}`}>
         <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
           <div className="min-w-0">
             <div className="flex flex-wrap items-center gap-3">
@@ -462,13 +462,13 @@ function ResultsScreen({ diagnosis, verdict, engineOption, ctas, isDark, calcula
         </div>
       </section>
 
-      <section className={`rounded-xl border p-5 shadow-[0_12px_34px_rgba(10,26,43,0.06)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.9)]" : "border-[#d7dde6] bg-white"}`}>
+      <section className={`rounded-xl border p-5 shadow-[0_12px_34px_rgba(10,26,43,0.06)] ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#d7dde6] bg-white"}`}>
         <div className="grid gap-5 lg:grid-cols-[minmax(0,1.25fr)_minmax(0,0.95fr)]">
           <div>
             <h4 className={`text-[0.82rem] font-bold uppercase tracking-[0.08em] text-[var(--color-primary)]`}>Commonly affecting</h4>
             <div className="mt-3 flex flex-wrap gap-2">
               {diagnosis.chassis.map((item) => (
-                <span key={`${item.code}-${item.model}`} className={`rounded-lg border px-3 py-2 text-[0.78rem] ${isDark ? "border-[#223343] bg-[rgba(14,28,41,0.84)] text-white" : "border-[#d7dde6] bg-[#fbfdff] text-[#071827]"}`}>
+                <span key={`${item.code}-${item.model}`} className={`rounded-lg border px-3 py-2 text-[0.78rem] ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface)] text-white" : "border-[#d7dde6] bg-[#fbfdff] text-[#071827]"}`}>
                   <strong>{item.model}</strong> {item.code}
                   <span className={`${isDark ? "text-white/64" : "text-[#607085]"}`}> {item.years}</span>
                 </span>
@@ -476,9 +476,9 @@ function ResultsScreen({ diagnosis, verdict, engineOption, ctas, isDark, calcula
             </div>
 
             <h4 className="mt-5 text-[0.82rem] font-bold uppercase tracking-[0.08em] text-[var(--color-primary)]">OEM references</h4>
-            <div className={`mt-3 overflow-hidden rounded-lg border ${isDark ? "border-[#223343]" : "border-[#d7dde6]"}`}>
+            <div className={`mt-3 overflow-hidden rounded-lg border ${isDark ? "border-[var(--color-border)]" : "border-[#d7dde6]"}`}>
               {diagnosis.oemParts.map((part) => (
-                <div key={part.part} className={`grid grid-cols-[minmax(0,1fr)_minmax(140px,0.8fr)] gap-3 border-b px-4 py-3 last:border-b-0 ${isDark ? "border-[#223343] bg-[rgba(14,28,41,0.84)]" : "border-[#d7dde6] bg-white"}`}>
+                <div key={part.part} className={`grid grid-cols-[minmax(0,1fr)_minmax(140px,0.8fr)] gap-3 border-b px-4 py-3 last:border-b-0 ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface)]" : "border-[#d7dde6] bg-white"}`}>
                   <span className={`text-[0.82rem] ${isDark ? "text-white/78" : "text-[#27384a]"}`}>{part.label}</span>
                   <span className={`text-[0.82rem] font-semibold ${isDark ? "text-white" : "text-[#071827]"}`}>{part.part}</span>
                 </div>
@@ -493,12 +493,12 @@ function ResultsScreen({ diagnosis, verdict, engineOption, ctas, isDark, calcula
               <p className="mt-2 text-[0.82rem] leading-[1.45]" dangerouslySetInnerHTML={{ __html: verdictInfo.text }} />
             </div>
 
-            <div className={`mt-4 rounded-xl border p-4 ${isDark ? "border-[#223343] bg-[rgba(14,28,41,0.84)]" : "border-[#d7dde6] bg-[#fbfdff]"}`}>
+            <div className={`mt-4 rounded-xl border p-4 ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface)]" : "border-[#d7dde6] bg-[#fbfdff]"}`}>
               <p className="text-[0.82rem] font-bold uppercase tracking-[0.08em] text-[var(--color-primary)]">Next steps</p>
               <ul className="mt-3 grid gap-2">
                 {diagnosis.nextSteps.map((step) => (
                   <li key={step} className={`flex items-start gap-3 text-[0.8rem] leading-[1.45] ${isDark ? "text-white/76" : "text-[#27384a]"}`}>
-                    <span className={`mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-white ${isDark ? "bg-[#0c2748]" : "bg-[var(--color-primary)]"}`}>
+                    <span className={`mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-white ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}>
                       <Icon name="shield" className="h-3 w-3" strokeWidth={2.3} />
                     </span>
                     <span>{step}</span>
@@ -515,7 +515,7 @@ function ResultsScreen({ diagnosis, verdict, engineOption, ctas, isDark, calcula
                   <span>{ctas.quote.label}</span>
                   <ArrowIcon className="h-4 w-4" />
                 </button>
-                <Link href={ctas.specialist.href} className={`flex items-center justify-center gap-3 rounded-lg border px-5 py-3 text-[0.86rem] font-bold ${isDark ? "border-[#375067] bg-[rgba(14,28,41,0.84)] text-white" : "border-[#d7dde6] bg-white text-[#071827]"}`}>
+                <Link href={ctas.specialist.href} className={`flex items-center justify-center gap-3 rounded-lg border px-5 py-3 text-[0.86rem] font-bold ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface)] text-white" : "border-[#d7dde6] bg-white text-[#071827]"}`}>
                   <span>{ctas.specialist.label}</span>
                   <ArrowIcon className="h-4 w-4" />
                 </Link>
@@ -661,7 +661,7 @@ export default function HomeSec3({ data }) {
         <TrustStrip items={data.trustStrip || []} isDark={isDark} />
 
         <div className="mt-6 grid gap-4 lg:grid-cols-[minmax(0,1.6fr)_320px] lg:items-start">
-          <div className={`overflow-hidden rounded-2xl border shadow-[0_14px_36px_rgba(10,26,43,0.08)] ${isDark ? "border-[#223343] bg-[rgba(7,18,29,0.92)]" : "border-[#d7dde6] bg-white"}`}>
+          <div className={`overflow-hidden rounded-2xl border shadow-[0_14px_36px_rgba(10,26,43,0.08)] ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#d7dde6] bg-white"}`}>
             <div className="px-4 pt-4 md:px-6 md:pt-6">
               <ProgressBar percent={progressMap[stage]} />
               <div className="mt-4">
@@ -688,7 +688,7 @@ export default function HomeSec3({ data }) {
                     ))}
                   </div>
 
-                  <div className={`mt-6 border-t pt-6 ${isDark ? "border-[#223343]" : "border-[#d7dde6]"}`}>
+                  <div className={`mt-6 border-t pt-6 ${isDark ? "border-[var(--color-border)]" : "border-[#d7dde6]"}`}>
                     <p className="text-[0.76rem] font-bold uppercase tracking-[0.08em] text-[var(--color-primary)]">Symptom route</p>
                     <h3 className={`mt-2 text-[1.35rem] font-bold leading-tight md:text-[1.7rem] ${isDark ? "text-white" : "text-[#071827]"}`}>Tell us where the issue starts</h3>
                     <p className={`mt-2 text-[0.82rem] leading-[1.45] ${isDark ? "text-white/72" : "text-[#27384a]"}`}>Pick the category that best matches the fault. The next screen narrows it into a specific diagnosis path.</p>
@@ -749,7 +749,7 @@ export default function HomeSec3({ data }) {
                           key={item.id}
                           type="button"
                           onClick={() => setSelectedAgeId(item.id)}
-                          className={`rounded-full border px-4 py-2 text-[0.82rem] font-semibold ${selectedAgeId === item.id ? "border-[var(--color-primary)] bg-[var(--color-primary)] text-white" : isDark ? "border-[#375067] bg-[rgba(14,28,41,0.84)] text-white" : "border-[#d7dde6] bg-white text-[#071827]"}`}
+                          className={`rounded-full border px-4 py-2 text-[0.82rem] font-semibold ${selectedAgeId === item.id ? "border-[var(--color-primary)] bg-[var(--color-primary)] text-white" : isDark ? "border-[var(--color-border)] bg-[var(--color-surface)] text-white" : "border-[#d7dde6] bg-white text-[#071827]"}`}
                         >
                           {item.label}
                         </button>
@@ -759,7 +759,7 @@ export default function HomeSec3({ data }) {
 
                   <div className="mt-6">
                     <p className={`text-[0.78rem] font-bold uppercase tracking-[0.08em] ${isDark ? "text-white/64" : "text-[#607085]"}`}>Estimated current value</p>
-                    <div className={`mt-3 rounded-xl border px-5 py-4 ${isDark ? "border-[#223343] bg-[rgba(14,28,41,0.84)]" : "border-[#d7dde6] bg-[#fbfdff]"}`}>
+                    <div className={`mt-3 rounded-xl border px-5 py-4 ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface)]" : "border-[#d7dde6] bg-[#fbfdff]"}`}>
                       <strong className={`block text-[2rem] leading-none ${isDark ? "text-white" : "text-[#071827]"}`}>{fmtCurrency(carValue)}</strong>
                       <span className={`mt-1 block text-[0.76rem] ${isDark ? "text-white/64" : "text-[#607085]"}`}>What would the car roughly sell for in its current condition?</span>
                       <input
@@ -808,7 +808,7 @@ export default function HomeSec3({ data }) {
                         key={option.id}
                         type="button"
                         onClick={() => setSelectedEngine(option.id)}
-                        className={`rounded-xl border p-4 text-left ${selectedEngine === option.id ? "border-[var(--color-primary)] bg-[var(--color-primary-soft)]" : isDark ? "border-[#223343] bg-[rgba(14,28,41,0.84)]" : "border-[#d7dde6] bg-white"}`}
+                        className={`rounded-xl border p-4 text-left ${selectedEngine === option.id ? "border-[var(--color-primary)] bg-[var(--color-primary-soft)]" : isDark ? "border-[var(--color-border)] bg-[var(--color-surface)]" : "border-[#d7dde6] bg-white"}`}
                       >
                         <p className={`text-[0.92rem] font-semibold leading-tight ${selectedEngine === option.id ? "text-[#071827]" : isDark ? "text-white" : "text-[#071827]"}`}>{option.label}</p>
                         <p className={`mt-2 text-[0.76rem] leading-[1.35] ${selectedEngine === option.id ? "text-[#27384a]" : isDark ? "text-white/72" : "text-[#607085]"}`}>{option.subLabel}</p>

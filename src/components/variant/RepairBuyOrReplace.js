@@ -100,7 +100,7 @@ export default function RepairBuyOrReplace({ data }) {
   const isDark = theme === "dark";
   const image = isDark ? "/320d/repair_dark.webp" : "/320d/repair_light.webp";
   const imageMobile = isDark ? "/320d/repair_mobile_dark.webp" : "/320d/repair_mobile_light.webp";
-  const headerBg = isDark ? "bg-[#0a1f44]" : "bg-[var(--color-primary)]";
+  const headerBg = isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]";
   const headerDivider = isDark ? "border-white/20" : "border-white/25";
   const headingClass = isDark ? "text-white" : "text-[var(--color-text)]";
   const bodyTextClass = isDark ? "text-white/80" : "text-[var(--color-text-muted)]";

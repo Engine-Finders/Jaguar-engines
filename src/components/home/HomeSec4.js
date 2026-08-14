@@ -67,11 +67,11 @@ function TrustStrip({ items, isDark }) {
   return (
     <ul
       className={`grid grid-cols-4 overflow-hidden rounded-md border shadow-[0_14px_34px_rgba(10,26,43,0.1)] md:hidden ${
-        isDark ? "border-[#1f3c57] bg-[rgba(7,23,36,0.86)]" : "border-[#d7dde6] bg-white"
+        isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#d7dde6] bg-white"
       }`}
     >
       {items.map((item, index) => (
-        <li key={item.text || item.label || index} className={`flex min-w-0 flex-col items-center gap-2 border-r px-1.5 py-4 text-center last:border-r-0 ${isDark ? "border-[#29445e]" : "border-[#d7dde6]"}`}>
+        <li key={item.text || item.label || index} className={`flex min-w-0 flex-col items-center gap-2 border-r px-1.5 py-4 text-center last:border-r-0 ${isDark ? "border-[var(--color-border)]" : "border-[#d7dde6]"}`}>
           <span className="flex h-8 w-8 items-center justify-center text-[var(--color-primary)]">
             <Icon name={item.icon} className="h-8 w-8" />
           </span>
@@ -95,7 +95,7 @@ function VerdictBadge({ verdict }) {
 }
 
 function RankingIcon({ row, isDark }) {
-  const dangerClass = row.verdict.type === "avoid" ? "bg-[#ed1c24]" : row.verdict.type === "watch" ? "bg-[#f59e0b]" : isDark ? "bg-[#0c2748]" : "bg-[var(--color-primary)]";
+  const dangerClass = row.verdict.type === "avoid" ? "bg-[#ed1c24]" : row.verdict.type === "watch" ? "bg-[#f59e0b]" : isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]";
 
   return (
     <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-white md:h-14 md:w-14 ${dangerClass}`}>
@@ -108,7 +108,7 @@ function RankingRow({ row, isDark }) {
   // Use a div (not Link/<a>) so `why` HTML can safely include nested <a> tags
   // without invalid <a>-in-<a> nesting that breaks hydration.
   const rowClassName = `relative grid grid-cols-[72px_78px_minmax(0,1fr)_74px_12px] items-center gap-1 border-b px-2 py-3 last:border-b-0 sm:grid-cols-[82px_90px_minmax(0,1fr)_86px_14px] sm:gap-2 sm:px-3 md:grid-cols-[minmax(320px,1.3fr)_minmax(180px,0.78fr)_minmax(430px,2.3fr)_126px_24px] md:gap-5 md:px-6 md:py-4 ${
-    isDark ? "border-[#223a51] text-white hover:bg-[rgba(20,46,68,0.45)]" : "border-[#dfe5ed] text-[#071827] hover:bg-[#f8fbff]"
+    isDark ? "border-[var(--color-border)] text-white hover:bg-[var(--color-page-soft)]" : "border-[#dfe5ed] text-[#071827] hover:bg-[#f8fbff]"
   }`;
 
   return (
@@ -122,7 +122,7 @@ function RankingRow({ row, isDark }) {
         <RankingIcon row={row} isDark={isDark} />
         <span className="text-[0.7rem] font-bold leading-[1.2] sm:text-[0.76rem] md:text-[1.08rem]">{row.ranking}</span>
       </div>
-      <div className={`relative z-10 pointer-events-none min-w-0 border-l pl-2 md:pl-5 ${isDark ? "border-[#223a51]" : "border-[#dfe5ed]"}`}>
+      <div className={`relative z-10 pointer-events-none min-w-0 border-l pl-2 md:pl-5 ${isDark ? "border-[var(--color-border)]" : "border-[#dfe5ed]"}`}>
         <span className="block text-[0.78rem] font-bold leading-tight sm:text-[0.86rem] md:text-[1.12rem]">{row.winner}</span>
         {row.winnerNote ? (
           <span
@@ -132,7 +132,7 @@ function RankingRow({ row, isDark }) {
         ) : null}
       </div>
       <div
-        className={`relative z-10 min-w-0 border-l pl-2 text-[0.66rem] leading-[1.32] sm:text-[0.72rem] md:pl-5 md:text-[0.9rem] ${isDark ? "border-[#223a51] text-white/82" : "border-[#dfe5ed] text-[#172b4a]"}`}
+        className={`relative z-10 min-w-0 border-l pl-2 text-[0.66rem] leading-[1.32] sm:text-[0.72rem] md:pl-5 md:text-[0.9rem] ${isDark ? "border-[var(--color-border)] text-white/82" : "border-[#dfe5ed] text-[#172b4a]"}`}
         dangerouslySetInnerHTML={{ __html: row.why }}
       />
       <div className="relative z-10 pointer-events-none flex justify-center">
@@ -186,10 +186,10 @@ export default function HomeSec4({ data }) {
 
         <div
           className={`mt-6 overflow-hidden rounded-md border shadow-[0_14px_36px_rgba(10,26,43,0.08)] md:mt-10 ${
-            isDark ? "border-[#223a51] bg-[rgba(7,23,36,0.88)]" : "border-[#d7dde6] bg-white"
+            isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#d7dde6] bg-white"
           }`}
         >
-          <div className={`grid grid-cols-[72px_78px_minmax(0,1fr)_74px_12px] gap-1 px-2 py-3 text-[0.58rem] font-bold text-white sm:grid-cols-[82px_90px_minmax(0,1fr)_86px_14px] sm:gap-2 sm:px-3 sm:text-[0.64rem] md:grid-cols-[minmax(320px,1.3fr)_minmax(180px,0.78fr)_minmax(430px,2.3fr)_126px_24px] md:gap-5 md:px-6 md:text-[0.82rem] ${isDark ? "bg-[#0c2748]" : "bg-[var(--color-primary)]"}`}>
+          <div className={`grid grid-cols-[72px_78px_minmax(0,1fr)_74px_12px] gap-1 px-2 py-3 text-[0.58rem] font-bold text-white sm:grid-cols-[82px_90px_minmax(0,1fr)_86px_14px] sm:gap-2 sm:px-3 sm:text-[0.64rem] md:grid-cols-[minmax(320px,1.3fr)_minmax(180px,0.78fr)_minmax(430px,2.3fr)_126px_24px] md:gap-5 md:px-6 md:text-[0.82rem] ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}>
             <span className="text-center md:text-left md:pl-10">{data.columns[0]}</span>
             <span>{data.columns[1]}</span>
             <span>{data.columns[2]}</span>
@@ -204,11 +204,11 @@ export default function HomeSec4({ data }) {
         {bottomCta ? (
           <div
             className={`mt-7 flex flex-col gap-4 rounded-md border p-4 md:hidden ${
-              isDark ? "border-[#223a51] bg-[rgba(7,23,36,0.88)]" : "border-[#d7dde6] bg-[#f8fbff]"
+              isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#d7dde6] bg-[#f8fbff]"
             }`}
           >
             <div className="flex items-center gap-4">
-              <span className={`flex h-15 w-15 shrink-0 items-center justify-center rounded-lg text-white ${isDark ? "bg-[#0c2748]" : "bg-[var(--color-primary)]"}`}>
+              <span className={`flex h-15 w-15 shrink-0 items-center justify-center rounded-lg text-white ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}>
                 <Icon name={bottomCta.icon} className="h-9 w-9" />
               </span>
               <div>

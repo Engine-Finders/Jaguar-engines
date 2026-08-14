@@ -40,17 +40,17 @@ function iconName(item) {
 
 function CentreCard({ item, isDark }) {
   return (
-    <article className={`relative overflow-hidden rounded-md border shadow-[0_14px_34px_rgba(10,26,43,0.08)] ${isDark ? "border-[#223a51] bg-[rgba(7,23,36,0.9)]" : "border-[#dfe5ed] bg-white"}`}>
-      <span className={`absolute left-0 top-0 z-20 flex h-9 w-9 items-center justify-center rounded-br-md text-[1.05rem] font-bold text-white md:h-8 md:w-8 md:text-[0.9rem] ${isDark ? "bg-[#0c2748]" : "bg-[var(--color-primary)]"}`}>
+    <article className={`relative overflow-hidden rounded-md border shadow-[0_14px_34px_rgba(10,26,43,0.08)] ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#dfe5ed] bg-white"}`}>
+      <span className={`absolute left-0 top-0 z-20 flex h-9 w-9 items-center justify-center rounded-br-md text-[1.05rem] font-bold text-white md:h-8 md:w-8 md:text-[0.9rem] ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}>
         {item.id}
       </span>
 
       <div className="relative h-38 md:h-30">
         <Image src={item.image.src} alt={item.image.alt} fill className="object-cover object-center" sizes="(max-width: 768px) 100vw, 25vw" />
-        <div className={isDark ? "absolute inset-x-0 bottom-0 h-14 bg-[linear-gradient(0deg,rgba(7,23,36,0.94)_0%,transparent_100%)]" : "absolute inset-x-0 bottom-0 h-14 bg-[linear-gradient(0deg,white_0%,rgba(255,255,255,0)_100%)]"} />
+        <div className={isDark ? "absolute inset-x-0 bottom-0 h-14 bg-[linear-gradient(0deg,var(--color-surface-raised)_0%,transparent_100%)]" : "absolute inset-x-0 bottom-0 h-14 bg-[linear-gradient(0deg,white_0%,rgba(255,255,255,0)_100%)]"} />
       </div>
 
-      <span className={`absolute left-6 top-14 z-20 flex h-18 w-18 items-center justify-center rounded-full md:left-12 md:top-3 md:h-12 md:w-12 ${isDark ? "bg-[#0c2748] text-[#7fb0ff]" : "bg-[#eef5ff] text-[var(--color-primary)]"} border ${isDark ? "border-[#29445e]" : "border-[#b8d4ff]"}`}>
+      <span className={`absolute left-6 top-14 z-20 flex h-18 w-18 items-center justify-center rounded-full md:left-12 md:top-3 md:h-12 md:w-12 ${isDark ? "bg-[var(--color-chrome)] text-[var(--color-text)]" : "bg-[#eef5ff] text-[var(--color-primary)]"} border ${isDark ? "border-[var(--color-border)]" : "border-[#b8d4ff]"}`}>
         <Icon name={iconName(item)} className="h-9 w-9 md:h-6 md:w-6" />
       </span>
 
@@ -97,7 +97,7 @@ export default function HomeSec8({ data }) {
 
         <div className="mt-8 hidden h-3 items-center md:flex">
           <span className="h-full flex-[1.3] -skew-x-[28deg] bg-[var(--color-primary)]" />
-          <span className="h-full flex-[1.15] -skew-x-[28deg] bg-[#6f98df]" />
+          <span className="h-full flex-[1.15] -skew-x-[28deg] bg-[var(--color-chrome)]" />
           <span className="h-full flex-[1.6] -skew-x-[28deg] bg-[#8a6fa2]" />
           <span className="h-full flex-[1.2] -skew-x-[28deg] bg-[var(--color-accent-red)]" />
           <span className="h-full flex-[0.35] -skew-x-[28deg] bg-[linear-gradient(90deg,#ed1c24_0%,rgba(237,28,36,0)_100%)]" />

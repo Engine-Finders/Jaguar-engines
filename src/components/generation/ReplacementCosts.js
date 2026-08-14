@@ -13,7 +13,7 @@ function DesktopRow({ row, isDark }) {
     : "bg-[var(--color-table-surface)] text-[var(--color-text)]";
   const cellDivider = isDark ? "border-white/15" : "border-[var(--color-border)]";
   const mutedText = isDark ? "text-white/70" : "text-[var(--color-text-muted)]";
-  const codeText = isDark ? "text-[#7fb2ff]" : "text-[var(--color-primary)]";
+  const codeText = isDark ? "text-[var(--color-text)]" : "text-[var(--color-primary)]";
   const borderBottom = isDark ? "border-white/15" : "border-[var(--color-border)]";
 
   return (
@@ -41,7 +41,7 @@ function FuelTable({ title, icon, rows, isDark, tone }) {
   if (!rows?.length) return null;
 
   const toneBg = tone === "diesel" ? "bg-[var(--color-primary)]" : "bg-[#189454]";
-  const tabBg = isDark ? (tone === "diesel" ? "bg-[#0a1f44]" : "bg-[#0f3b28]") : toneBg;
+  const tabBg = isDark ? (tone === "diesel" ? "bg-[var(--color-chrome)]" : "bg-[#0f3b28]") : toneBg;
   const rowBg = isDark ? "bg-black" : "bg-[var(--color-table-surface)]";
   const cellDivider = isDark ? "border-white/15" : "border-[var(--color-border)]";
   const rowText = isDark ? "text-white" : "text-[var(--color-text)]";
@@ -114,7 +114,7 @@ export default function ReplacementCosts({ data }) {
   if (!data) return null;
 
   const isDark = theme === "dark";
-  const headerBg = isDark ? "bg-[#0a1f44]" : "bg-[var(--color-primary)]";
+  const headerBg = isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]";
   const headerDivider = isDark ? "border-white/20" : "border-white/25";
   const bodyWrapperBg = isDark ? "bg-black" : "bg-[var(--color-table-surface)]";
 

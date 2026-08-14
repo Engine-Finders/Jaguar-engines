@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaguar Fitment & Engine Identification Hub | Engine Compatibility Guide</title>
+    <meta name="description" content="Complete Jaguar engine fitment and identification hub. Find which engines fit your model, decode engine codes, and use the fitment matrix to match your vehicle.">
+    <link rel="canonical" href="https://jaguarengines.uk/fitment">
+    <link rel="stylesheet" href="/assets/jaguar/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Playfair+Display:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <style>
+        /* Minimal critical CSS for hero and summary box */
+        :root {
+            --jag-black: #0A0A0A;
+            --jag-ink: #1A1A1A;
+            --jag-grey-700: #4A4A4A;
+            --jag-grey-500: #7A7A7A;
+            --jag-grey-300: #D8D8D8;
+            --jag-grey-100: #F0F0F0;
+            --jag-bg: #FFFFFF;
+            --jag-bg-alt: #F7F7F7;
+            --jag-accent: #9E1B32;
+            --sev-critical: #C0392B;
+            --sev-high: #E07B2C;
+            --sev-medium: #E3B23C;
+            --sev-low: #4E9A51;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-sans); background: var(--jag-bg); color: var(--jag-ink); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+        img { max-width: 100%; height: auto; display: block; }
+        a { color: var(--jag-ink); text-decoration: underline; text-underline-offset: 2px; }
+        a:hover { color: var(--jag-accent); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        .section { padding: 72px 0; }
+        .section-alt { background: var(--jag-bg-alt); }
+        .section-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+        /* Hero */
+        .hero { padding: 80px 0 48px; background: var(--jag-bg); text-align: center; border-bottom: 1px solid var(--jag-grey-300); }
+        .hero-eyebrow { font-size: 12px; text-transform: uppercase; letter-spacing: 0.16em; color: var(--jag-grey-500); margin-bottom: 12px; }
+        .hero-eyebrow span { background: var(--jag-bg-alt); padding: 2px 12px; border-radius: 20px; }
+        .hero h1 { font-family: var(--font-serif); font-weight: 300; font-size: clamp(2.2rem, 5vw, 4rem); letter-spacing: 0.02em; color: var(--jag-black); max-width: 800px; margin: 0 auto 16px; }
+        .hero h1 .accent { color: var(--jag-accent); }
+        .hero-sub { font-size: 1.1rem; color: var(--jag-grey-700); max-width: 660px; margin: 0 auto 20px; font-weight: 300; }
+        .hero-rule { width: 60px; height: 2px; background: var(--jag-accent); margin: 0 auto 24px; }
+        .hero .stat-strip { display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; padding-top: 24px; border-top: 1px solid var(--jag-grey-300); margin-top: 16px; }
+        .hero .stat-strip .stat-item { text-align: center; }
+        .hero .stat-strip .stat-num { font-family: var(--font-serif); font-weight: 300; font-size: 1.8rem; color: var(--jag-black); }
+        .hero .stat-strip .stat-label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--jag-grey-500); }
+
+        /* Summary Box */
+        .summary-box { max-width: 820px; margin: -24px auto 24px; background: var(--jag-bg-alt); border: 1px solid var(--jag-grey-300); border-radius: 4px; padding: 28px 36px; position: relative; z-index: 2; }
+        .summary-box h2 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--jag-grey-500); margin-bottom: 8px; font-weight: 600; }
+        .summary-box p { font-size: 1rem; margin-bottom: 8px; }
+        .summary-box ul { list-style: none; padding: 0; margin: 12px 0 0; }
+        .summary-box ul li { padding: 4px 0 4px 24px; position: relative; font-size: 0.95rem; }
+        .summary-box ul li::before { content: "•"; position: absolute; left: 4px; color: var(--jag-accent); font-weight: bold; }
+        .summary-box .closing { font-weight: 500; margin-top: 12px; }
+
+        /* TOC Bar */
+        .toc-bar { background: var(--jag-bg); border-bottom: 1px solid var(--jag-grey-300); padding: 0 24px; height: 56px; display: flex; align-items: center; overflow-x: auto; gap: 8px; scrollbar-width: none; position: sticky; top: 0; z-index: 10; }
+        .toc-bar::-webkit-scrollbar { display: none; }
+        .toc-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--jag-grey-500); margin-right: 12px; flex-shrink: 0; }
+        .toc-bar ul { display: flex; gap: 4px; list-style: none; padding: 0; margin: 0; }
+        .toc-bar ul li { flex-shrink: 0; }
+        .toc-bar ul li a { display: block; padding: 6px 14px; font-size: 0.8rem; color: var(--jag-ink); text-decoration: none; border-radius: 20px; background: var(--jag-bg-alt); white-space: nowrap; transition: background 0.2s; }
+        .toc-bar ul li a:hover, .toc-bar ul li a.active { background: var(--jag-accent); color: white; }
+
+        /* Hub index grid */
+        .hub-index { display: grid; grid-template-columns: 1fr 1fr; gap: 32px 48px; }
+        .hub-category { margin-bottom: 24px; }
+        .hub-category h3 { font-size: 1.1rem; font-weight: 600; color: var(--jag-black); border-bottom: 1px solid var(--jag-grey-300); padding-bottom: 6px; margin-bottom: 12px; }
+        .hub-category ul { list-style: none; padding: 0; }
+        .hub-category ul li { padding: 4px 0; }
+        .hub-category ul li a { font-size: 0.95rem; color: var(--jag-ink); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s; display: inline-block; }
+        .hub-category ul li a:hover { border-bottom-color: var(--jag-accent); color: var(--jag-accent); }
+        .hub-category .desc { font-size: 0.85rem; color: var(--jag-grey-500); margin-left: 4px; }
+
+        /* Verdict block */
+        .verdict-block { background: var(--jag-bg-alt); border-left: 4px solid var(--jag-accent); padding: 24px 32px; border-radius: 2px; }
+        .verdict-block h3 { font-size: 1.2rem; font-weight: 600; margin-bottom: 8px; }
+        .verdict-block p { font-size: 0.95rem; color: var(--jag-grey-700); }
+
+        /* FAQ */
+        .faq-list { max-width: 800px; margin: 0 auto; }
+        .faq-item { border-bottom: 1px solid var(--jag-grey-300); padding: 20px 0; }
+        .faq-item summary { font-weight: 600; cursor: pointer; font-size: 1.05rem; }
+        .faq-item summary:hover { color: var(--jag-accent); }
+        .faq-item .faq-answer { padding-top: 12px; color: var(--jag-grey-700); font-size: 0.95rem; }
+
+        /* Trust + CTA */
+        .trust-cta { background: var(--jag-bg-alt); border-top: 1px solid var(--jag-grey-300); padding: 48px 0; text-align: center; }
+        .trust-grid { display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; margin-bottom: 32px; }
+        .trust-item { text-align: center; }
+        .trust-item .num { font-family: var(--font-serif); font-size: 2rem; font-weight: 300; color: var(--jag-black); }
+        .trust-item .label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--jag-grey-500); }
+        .cta-button { display: inline-block; background: var(--jag-black); color: white; padding: 14px 40px; text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.85rem; font-weight: 500; text-decoration: none; border: none; border-radius: 2px; transition: background 0.2s; }
+        .cta-button:hover { background: var(--jag-accent); color: white; }
+
+        /* Fade directions */
+        .fade-up { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+        .fade-down { opacity: 0; transform: translateY(-30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+        .fade-left { opacity: 0; transform: translateX(-30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+        .fade-right { opacity: 0; transform: translateX(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+        .fade-up.visible, .fade-down.visible, .fade-left.visible, .fade-right.visible { opacity: 1; transform: translate(0); }
+
+        @media (max-width: 768px) {
+            .hero { padding: 48px 0 32px; }
+            .hero h1 { font-size: clamp(1.8rem, 6vw, 2.6rem); }
+            .summary-box { padding: 20px; margin: -16px 12px 16px; }
+            .hub-index { grid-template-columns: 1fr; gap: 16px; }
+            .trust-grid { gap: 24px; }
+            .toc-bar ul li a { font-size: 0.7rem; padding: 4px 10px; }
+            .section { padding: 48px 0; }
+        }
+        @media (max-width: 480px) {
+            .hero .stat-strip { gap: 16px; }
+            .hero .stat-strip .stat-num { font-size: 1.3rem; }
+        }
+    </style>
+    <script defer src="/assets/jaguar/effects.js"></script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://jaguarengines.uk/#organization",
+      "name": "Jaguar Engines UK",
+      "url": "https://jaguarengines.uk",
+      "logo": "https://jaguarengines.uk/assets/jaguar/logo.png",
+      "description": "Independent editorial resource for Jaguar engine fitment and identification, part of the Engine Finders network."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://jaguarengines.uk/#website",
+      "url": "https://jaguarengines.uk",
+      "name": "Jaguar Engines UK",
+      "publisher": {
+        "@id": "https://jaguarengines.uk/#organization"
+      },
+      "description": "Jaguar engine fitment, identification, and compatibility resources."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://jaguarengines.uk/fitment#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://jaguarengines.uk"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Fitment & Identification",
+          "item": "https://jaguarengines.uk/fitment"
+        }
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://jaguarengines.uk/fitment#page",
+      "url": "https://jaguarengines.uk/fitment",
+      "name": "Jaguar Fitment & Engine Identification Hub",
+      "description": "Complete Jaguar engine fitment and identification hub. Find which engines fit your model, decode engine codes, and use the fitment matrix to match your vehicle.",
+      "isPartOf": {
+        "@id": "https://jaguarengines.uk/#website"
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "Jaguar Engine Fitment"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Jaguar Engines UK Editorial Team"
+      },
+      "publisher": {
+        "@id": "https://jaguarengines.uk/#organization"
+      },
+      "datePublished": "2025-01-15",
+      "dateModified": "2026-08-09",
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "204PT (2.0 Petrol Ingenium) Fitment",
+            "url": "https://jaguarengines.uk/fitment/204pt"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "AJ20D6 (2.0 Diesel) Fitment",
+            "url": "https://jaguarengines.uk/fitment/aj20d6"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "AJD‑V6 (2.7/3.0 TDV6) Fitment",
+            "url": "https://jaguarengines.uk/fitment/ajd-v6"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "AJ‑V8 Lineage Fitment",
+            "url": "https://jaguarengines.uk/fitment/aj-v8-lineage"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Jaguar Engine Fitment Matrix",
+            "url": "https://jaguarengines.uk/fitment/matrix"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "Jaguar Engine Code Decoder",
+            "url": "https://jaguarengines.uk/fitment/engine-code-guide"
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "name": "Engine Number Location Guide",
+            "url": "https://jaguarengines.uk/technical/engine-number-location"
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "name": "VIN Decoder Tool",
+            "url": "https://jaguarengines.uk/tools/vin-decoder"
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "name": "Engine Compatibility Checker",
+            "url": "https://jaguarengines.uk/tools/engine-compatibility-checker"
+          }
+        ]
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero" id="top">
+    <div class="container">
+        <div class="hero-eyebrow"><span>Jaguar Fitment & Engine Identification Hub</span></div>
+        <h1>Jaguar <span class="accent">Fitment & Engine Identification</span></h1>
+        <p class="hero-sub">The definitive resource for Jaguar engine fitment – discover which engine goes in which model, decode engine codes, and use our fitment matrix to ensure compatibility when replacing or upgrading.</p>
+        <div class="hero-rule"></div>
+        <div class="stat-strip">
+            <div class="stat-item"><div class="stat-num">15+</div><div class="stat-label">Vetted Specialists</div></div>
+            <div class="stat-item"><div class="stat-num">9,000+</div><div class="stat-label">Enquiries (2025)</div></div>
+            <div class="stat-item"><div class="stat-num">60%</div><div class="stat-label">Scrap Threshold</div></div>
+            <div class="stat-item"><div class="stat-num">100%</div><div class="stat-label">Independent Data</div></div>
+        </div>
+    </div>
+</header>
+
+<!-- SUMMARY BOX -->
+<div class="summary-box">
+    <h2>The Short Answer</h2>
+    <p><strong>Jaguar engine fitment is about matching the correct engine code to your vehicle’s chassis, model year, and specification.</strong> This hub brings together every fitment resource we have – from specific engine guides to the master fitment matrix and engine code decoder.</p>
+    <ul>
+        <li><strong>Engine‑specific fitment:</strong> Detailed guides for major Jaguar engines, including 204PT, AJ20D6, AJD‑V6, and the AJ‑V8 lineage.</li>
+        <li><strong>Fitment matrix:</strong> A comprehensive cross‑reference of engines to models and chassis codes.</li>
+        <li><strong>Identification tools:</strong> Learn where to find your engine number and how to decode VIN and engine codes.</li>
+    </ul>
+    <p class="closing">Use the guides below to confirm fitment before buying a replacement engine or identifying an unknown unit. All data is verified against Jaguar factory records and our proprietary enquiry database.</p>
+</div>
+
+<!-- TOC BAR -->
+<nav class="toc-bar" aria-label="On this page">
+    <span class="toc-label">On this page</span>
+    <ul>
+        <li><a href="#engine-fitment-guides">Engine Fitment Guides</a></li>
+        <li><a href="#fitment-resources">Resources & Tools</a></li>
+        <li><a href="#identification">How to Identify Your Engine</a></li>
+        <li><a href="#verdict">Verdict</a></li>
+        <li><a href="#faq">FAQ</a></li>
+    </ul>
+</nav>
+
+<!-- SECTION 1 — ENGINE FITMENT GUIDES (fade-up, no data-lazy) -->
+<section class="section" id="engine-fitment-guides">
+    <div class="section-inner fade-up">
+        <h2 style="font-family:var(--font-serif);font-weight:300;font-size:2rem;margin-bottom:8px;">Engine Fitment Guides</h2>
+        <p style="color:var(--jag-grey-700);margin-bottom:32px;">Detailed guides covering specific Jaguar engine families – their applications, chassis codes, years, and key compatibility notes.</p>
+        <div class="hub-index">
+            <div class="hub-category">
+                <h3>Ingenium & Modern</h3>
+                <ul>
+                    <li><a href="https://jaguarengines.uk/fitment/204pt">204PT (2.0 Petrol Ingenium) Fitment</a> <span class="desc">XE, XF, F‑Pace, E‑Pace</span></li>
+                    <li><a href="https://jaguarengines.uk/fitment/aj20d6">AJ20D6 (2.0 Diesel) Fitment</a> <span class="desc">XE, XF, F‑Pace</span></li>
+                    <li><a href="https://jaguarengines.uk/fitment/ajd-v6">AJD‑V6 (2.7/3.0 TDV6) Fitment</a> <span class="desc">XF, XJ, S‑Type</span></li>
+                </ul>
+            </div>
+            <div class="hub-category">
+                <h3>V8 & Classic</h3>
+                <ul>
+                    <li><a href="https://jaguarengines.uk/fitment/aj-v8-lineage">AJ‑V8 Lineage Fitment</a> <span class="desc">4.0, 4.2, 5.0 SC – XK, XJ, F‑Type</span></li>
+                </ul>
+            </div>
+        </div>
+        <p style="margin-top:24px;font-size:0.9rem;color:var(--jag-grey-500);">Looking for an engine not listed? Visit the <a href="https://jaguarengines.uk/engine">Engine Knowledge Centre</a> for all Jaguar engine codes.</p>
+    </div>
+</section>
+
+<!-- SECTION 2 — RESOURCES & TOOLS (fade-down, no data-lazy) -->
+<section class="section section-alt" id="fitment-resources">
+    <div class="section-inner fade-down">
+        <h2 style="font-family:var(--font-serif);font-weight:300;font-size:2rem;margin-bottom:8px;">Fitment Resources & Tools</h2>
+        <p style="color:var(--jag-grey-700);margin-bottom:32px;">Essential reference materials for cross‑checking engine compatibility and decoding identification numbers.</p>
+        <div class="hub-index">
+            <div class="hub-category">
+                <h3>Master Reference</h3>
+                <ul>
+                    <li><a href="https://jaguarengines.uk/fitment/matrix">Jaguar Engine Fitment Matrix</a> <span class="desc">Complete engine-to-model cross‑reference</span></li>
+                    <li><a href="https://jaguarengines.uk/fitment/engine-code-guide">Jaguar Engine Code Decoder</a> <span class="desc">Understand every code and suffix</span></li>
+                </ul>
+            </div>
+            <div class="hub-category">
+                <h3>Identification Tools</h3>
+                <ul>
+                    <li><a href="https://jaguarengines.uk/technical/engine-number-location">Engine Number Location Guide</a> <span class="desc">Where to find it on each engine type</span></li>
+                    <li><a href="https://jaguarengines.uk/tools/vin-decoder">VIN Decoder Tool</a> <span class="desc">Extract engine code from your VIN</span></li>
+                    <li><a href="https://jaguarengines.uk/tools/engine-compatibility-checker">Engine Compatibility Checker</a> <span class="desc">Interactive tool to match replacement engines</span></li>
+                </ul>
+            </div>
+        </div>
+        <p style="margin-top:24px;font-size:0.9rem;color:var(--jag-grey-500);">For technical specifications, see the <a href="https://jaguarengines.uk/technical">Technical Library</a>.</p>
+    </div>
+</section>
+
+<!-- SECTION 3 — HOW TO IDENTIFY YOUR ENGINE (fade-left, data-lazy) -->
+<section class="section" id="identification" data-lazy-section>
+    <div class="section-inner fade-left">
+        <h2 style="font-family:var(--font-serif);font-weight:300;font-size:2rem;margin-bottom:8px;">How to Identify Your Jaguar Engine</h2>
+        <p style="color:var(--jag-grey-700);margin-bottom:16px;">Correct identification is the first step to ensuring proper fitment. Here’s how to pinpoint exactly which engine you have.</p>
+        <ol style="padding-left:24px;color:var(--jag-grey-700);margin-bottom:16px;">
+            <li><strong>Check the VIN (8th character):</strong> The 8th digit of your Jaguar VIN is the engine code. Use our <a href="https://jaguarengines.uk/fitment/engine-code-guide">Engine Code Decoder</a> to interpret it.</li>
+            <li><strong>Locate the engine number:</strong> Typically stamped on the block – see the <a href="https://jaguarengines.uk/technical/engine-number-location">Engine Number Location Guide</a> for exact positions per model.</li>
+            <li><strong>Consult the fitment matrix:</strong> Once you have the engine code, cross‑reference it with your model and year using the <a href="https://jaguarengines.uk/fitment/matrix">Fitment Matrix</a> to confirm compatibility.</li>
+            <li><strong>Use our compatibility checker:</strong> Enter your VIN or engine code into the <a href="https://jaguarengines.uk/tools/engine-compatibility-checker">Engine Compatibility Checker</a> for an instant fitment report.</li>
+        </ol>
+        <p>Getting this right saves you from buying the wrong engine or mis‑ordering parts. Our resources are built from factory data and real‑world enquiry patterns [EM‑VERIFIED].</p>
+    </div>
+</section>
+
+<!-- SECTION 4 — VERDICT (fade-right, data-lazy) -->
+<section class="section section-alt" id="verdict" data-lazy-section>
+    <div class="section-inner fade-right">
+        <div class="verdict-block">
+            <h3>Our Verdict</h3>
+            <p><strong>Accurate fitment data is the foundation of any successful engine replacement or identification.</strong> This hub consolidates every fitment resource Jaguar owners and specialists need – from engine‑specific guides to the master matrix and VIN tools. Bookmark this page as your go‑to reference whenever you need to confirm an engine fitment or decode an engine code. <strong>Always double‑check against the matrix before purchasing a used or reconditioned engine – it could save you from a costly mistake.</strong></p>
+        </div>
+        <p style="margin-top:16px;font-size:0.9rem;color:var(--jag-grey-500);">For real‑world reliability data, see the <a href="https://jaguarengines.uk/data/engine-failure-index-2026">Engine Failure Index 2026</a>.</p>
+    </div>
+</section>
+
+<!-- SECTION 5 — FAQ (fade-up, data-lazy) -->
+<section class="section" id="faq" data-lazy-section>
+    <div class="section-inner fade-up">
+        <h2 style="font-family:var(--font-serif);font-weight:300;font-size:2rem;text-align:center;margin-bottom:32px;">Frequently Asked Questions</h2>
+        <div class="faq-list">
+            <div class="faq-item">
+                <details>
+                    <summary>How do I find the engine code for my Jaguar?</summary>
+                    <div class="faq-answer">The 8th character of your 17‑digit VIN is the engine code. You can also find the engine number stamped on the block – our <a href="https://jaguarengines.uk/technical/engine-number-location">Engine Number Location Guide</a> shows where. Use the <a href="https://jaguarengines.uk/fitment/engine-code-guide">Engine Code Decoder</a> to interpret the code.</div>
+                </details>
+            </div>
+            <div class="faq-item">
+                <details>
+                    <summary>What is the fitment matrix and how do I use it?</summary>
+                    <div class="faq-answer">The <a href="https://jaguarengines.uk/fitment/matrix">Fitment Matrix</a> is a comprehensive table that maps every Jaguar engine to the models, chassis codes, and model years it was fitted to. Use it to verify that an engine is compatible with your vehicle before buying a replacement.</div>
+                </details>
+            </div>
+            <div class="faq-item">
+                <details>
+                    <summary>Can I fit an engine from a different Jaguar model into mine?</summary>
+                    <div class="faq-answer">It depends. The <a href="https://jaguarengines.uk/fitment/matrix">Fitment Matrix</a> shows exactly which models share the same engine. However, you also need to consider ECU mapping, wiring harnesses, and mounts. Always consult a specialist – we can connect you with a <a href="https://jaguarengines.uk/about/specialist-vetting">vetted specialist</a> for a definitive answer.</div>
+                </details>
+            </div>
+            <div class="faq-item">
+                <details>
+                    <summary>Where is the engine number located on the 204PT Ingenium?</summary>
+                    <div class="faq-answer">The 204PT (2.0 petrol Ingenium) engine number is stamped on the rear of the engine block, near the bellhousing, just above the starter motor. See our <a href="https://jaguarengines.uk/technical/engine-number-location">Engine Number Location Guide</a> for detailed diagrams.</div>
+                </details>
+            </div>
+            <div class="faq-item">
+                <details>
+                    <summary>Does the fitment matrix include diesel and petrol engines separately?</summary>
+                    <div class="faq-answer">Yes – the matrix lists each engine variant (e.g. 204DTD diesel vs 204PT petrol) with its own row, and shows exactly which models and years each was used in. This prevents confusion between similar codes.</div>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TRUST STRIP + CTA -->
+<section class="trust-cta" id="trust-cta">
+    <div class="container">
+        <div class="trust-grid">
+            <div class="trust-item">
+                <div class="num">15+</div>
+                <div class="label">Vetted Specialists</div>
+            </div>
+            <div class="trust-item">
+                <div class="num">9,000+</div>
+                <div class="label">Real UK Enquiries</div>
+            </div>
+            <div class="trust-item">
+                <div class="num">100%</div>
+                <div class="label">Independent Editorial</div>
+            </div>
+            <div class="trust-item">
+                <div class="num">60%</div>
+                <div class="label">Scrap Threshold</div>
+            </div>
+        </div>
+        <p style="max-width:600px;margin:0 auto 24px;color:var(--jag-grey-700);font-size:0.95rem;">Part of the Engine Finders network – independently verified, rated and reviewed. Need to confirm fitment for a replacement? Use our compatibility checker or get a quote from a specialist.</p>
+        <a href="https://jaguarengines.uk/tools/engine-compatibility-checker" class="cta-button">Check Compatibility</a>
+        <p style="margin-top:16px;font-size:0.8rem;color:var(--jag-grey-500);">No email required – get instant fitment results.</p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="padding:24px 0;border-top:1px solid var(--jag-grey-300);background:var(--jag-bg);text-align:center;font-size:0.8rem;color:var(--jag-grey-500);">
+    <p>© 2026 Jaguar Engines UK. Part of the Engine Finders network. <a href="https://jaguarengines.uk/about">About</a> · <a href="https://jaguarengines.uk/about/editorial-standards">Editorial Standards</a> · <a href="https://jaguarengines.uk/data/methodology">Data Methodology</a> · <a href="https://jaguarengines.uk/contact">Contact</a></p>
+</footer>
+
+</body>
+</html>

@@ -63,11 +63,11 @@ export default function HomeSec14({ data }) {
 
   return (
     <section className={`px-3 pb-7 pt-2 md:px-6 md:pb-8 ${isDark ? "bg-[#02070b]" : "bg-white"}`}>
-      <div className={`relative mx-auto w-full max-w-8xl overflow-hidden rounded-lg border ${isDark ? "border-[#223343] bg-[#07121d]" : "border-[#dfe5ed] bg-white"}`}>
+      <div className={`relative mx-auto w-full max-w-8xl overflow-hidden rounded-lg border ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface)]" : "border-[#dfe5ed] bg-white"}`}>
         {showDesktopImage && image?.src ? (
           <div className="absolute inset-y-0 right-0 hidden w-[42%] md:block">
             <Image src={image.src} alt={image.alt || ""} fill className="object-cover object-center" sizes="42vw" />
-            <div className={isDark ? "absolute inset-0 bg-[linear-gradient(90deg,#07121d_0%,rgba(7,18,29,0.68)_28%,rgba(7,18,29,0.1)_100%)]" : "absolute inset-0 bg-[linear-gradient(90deg,white_0%,rgba(255,255,255,0.64)_28%,rgba(255,255,255,0.04)_100%)]"} />
+            <div className={isDark ? "absolute inset-0 bg-[linear-gradient(90deg,var(--color-surface)_0%,var(--color-surface-raised)_28%,var(--color-surface-raised)_100%)]" : "absolute inset-0 bg-[linear-gradient(90deg,white_0%,rgba(255,255,255,0.64)_28%,rgba(255,255,255,0.04)_100%)]"} />
           </div>
         ) : null}
 
@@ -82,7 +82,7 @@ export default function HomeSec14({ data }) {
             {stats.length ? (
               <ul className="mt-5 grid gap-2 text-[0.88rem] md:grid-cols-4 md:gap-0">
                 {stats.map((stat) => (
-                  <li key={stat} className={`flex items-center gap-2 md:border-r md:px-4 md:first:pl-0 md:last:border-r-0 ${isDark ? "text-white/78 md:border-[#375067]" : "text-[#172334] md:border-[#d7dde6]"}`}>
+                  <li key={stat} className={`flex items-center gap-2 md:border-r md:px-4 md:first:pl-0 md:last:border-r-0 ${isDark ? "text-white/78 md:border-[var(--color-border)]" : "text-[#172334] md:border-[#d7dde6]"}`}>
                     <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
                       <Icon name="check" className="h-3.5 w-3.5" />
                     </span>
@@ -101,7 +101,7 @@ export default function HomeSec14({ data }) {
                 </span>
               </Link>
 
-              <Link href={secondaryCta.href} className={`flex min-h-16 items-center gap-4 rounded-lg border px-5 py-3 ${isDark ? "border-[#375067] bg-[#0a1520] text-white" : "border-[#d7dde6] bg-white text-[#071827]"}`}>
+              <Link href={secondaryCta.href} className={`flex min-h-16 items-center gap-4 rounded-lg border px-5 py-3 ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface)] text-white" : "border-[#d7dde6] bg-white text-[#071827]"}`}>
                 <Icon name="phone" className="h-7 w-7 shrink-0" />
                 <span className="min-w-0">
                   <span className="block text-[0.88rem] font-bold leading-tight">{secondaryCta.label}</span>

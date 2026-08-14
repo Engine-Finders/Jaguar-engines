@@ -98,7 +98,7 @@ export default function EngineDatabase({ data }) {
   const isDark = theme === "dark";
 
   // Theme-aware header styling — light uses primary blue, dark uses deep navy
-  const headerBg = isDark ? "bg-[#0a1f44]" : "bg-[var(--color-primary)]";
+  const headerBg = isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]";
   const headerDivider = isDark ? "border-white/20" : "border-white/25";
   const bodyWrapperBg = isDark ? "bg-black" : "bg-[var(--color-table-surface)]";
 

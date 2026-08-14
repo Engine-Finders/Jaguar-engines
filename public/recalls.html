@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaguar Recall Centre | Official Recalls & Safety Information</title>
+    <meta name="description" content="Complete Jaguar recall centre: check recalls by model, VIN lookup, official safety and emissions recall data for every Jaguar. Free repairs for affected vehicles.">
+    <link rel="canonical" href="https://jaguarengines.uk/recalls">
+    <link rel="stylesheet" href="/assets/jaguar/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Playfair+Display:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <style>
+        /* Minimal critical CSS for hero and summary box */
+        :root {
+            --jag-black: #0A0A0A;
+            --jag-ink: #1A1A1A;
+            --jag-grey-700: #4A4A4A;
+            --jag-grey-500: #7A7A7A;
+            --jag-grey-300: #D8D8D8;
+            --jag-grey-100: #F0F0F0;
+            --jag-bg: #FFFFFF;
+            --jag-bg-alt: #F7F7F7;
+            --jag-accent: #9E1B32;
+            --sev-critical: #C0392B;
+            --sev-high: #E07B2C;
+            --sev-medium: #E3B23C;
+            --sev-low: #4E9A51;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-sans); background: var(--jag-bg); color: var(--jag-ink); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+        img { max-width: 100%; height: auto; display: block; }
+        a { color: var(--jag-ink); text-decoration: underline; text-underline-offset: 2px; }
+        a:hover { color: var(--jag-accent); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        .section { padding: 72px 0; }
+        .section-alt { background: var(--jag-bg-alt); }
+        .section-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+        /* Hero */
+        .hero { padding: 80px 0 48px; background: var(--jag-bg); text-align: center; border-bottom: 1px solid var(--jag-grey-300); }
+        .hero-eyebrow { font-size: 12px; text-transform: uppercase; letter-spacing: 0.16em; color: var(--jag-grey-500); margin-bottom: 12px; }
+        .hero-eyebrow span { background: var(--jag-bg-alt); padding: 2px 12px; border-radius: 20px; }
+        .hero h1 { font-family: var(--font-serif); font-weight: 300; font-size: clamp(2.2rem, 5vw, 4rem); letter-spacing: 0.02em; color: var(--jag-black); max-width: 800px; margin: 0 auto 16px; }
+        .hero h1 .accent { color: var(--jag-accent); }
+        .hero-sub { font-size: 1.1rem; color: var(--jag-grey-700); max-width: 660px; margin: 0 auto 20px; font-weight: 300; }
+        .hero-rule { width: 60px; height: 2px; background: var(--jag-accent); margin: 0 auto 24px; }
+        .hero .stat-strip { display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; padding-top: 24px; border-top: 1px solid var(--jag-grey-300); margin-top: 16px; }
+        .hero .stat-strip .stat-item { text-align: center; }
+        .hero .stat-strip .stat-num { font-family: var(--font-serif); font-weight: 300; font-size: 1.8rem; color: var(--jag-black); }
+        .hero .stat-strip .stat-label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--jag-grey-500); }
+
+        /* Summary Box */
+        .summary-box { max-width: 820px; margin: -24px auto 24px; background: var(--jag-bg-alt); border: 1px solid var(--jag-grey-300); border-radius: 4px; padding: 28px 36px; position: relative; z-index: 2; }
+        .summary-box h2 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--jag-grey-500); margin-bottom: 8px; font-weight: 600; }
+        .summary-box p { font-size: 1rem; margin-bottom: 8px; }
+        .summary-box ul { list-style: none; padding: 0; margin: 12px 0 0; }
+        .summary-box ul li { padding: 4px 0 4px 24px; position: relative; font-size: 0.95rem; }
+        .summary-box ul li::before { content: "•"; position: absolute; left: 4px; color: var(--jag-accent); font-weight: bold; }
+        .summary-box .closing { font-weight: 500; margin-top: 12px; }
+
+        /* TOC Bar */
+        .toc-bar { background: var(--jag-bg); border-bottom: 1px solid var(--jag-grey-300); padding: 0 24px; height: 56px; display: flex; align-items: center; overflow-x: auto; gap: 8px; scrollbar-width: none; position: sticky; top: 0; z-index: 10; }
+        .toc-bar::-webkit-scrollbar { display: none; }
+        .toc-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--jag-grey-500); margin-right: 12px; flex-shrink: 0; }
+        .toc-bar ul { display: flex; gap: 4px; list-style: none; padding: 0; margin: 0; }
+        .toc-bar ul li { flex-shrink: 0; }
+        .toc-bar ul li a { display: block; padding: 6px 14px; font-size: 0.8rem; color: var(--jag-ink); text-decoration: none; border-radius: 20px; background: var(--jag-bg-alt); white-space: nowrap; transition: background 0.2s; }
+        .toc-bar ul li a:hover, .toc-bar ul li a.active { background: var(--jag-accent); color: white; }
+
+        /* Hub index */
+        .recall-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 24px; margin-top: 16px; }
+        .recall-category { margin-bottom: 32px; }
+        .recall-category h3 { font-size: 1.2rem; font-weight: 600; color: var(--jag-black); border-bottom: 2px solid var(--jag-grey-300); padding-bottom: 6px; margin-bottom: 12px; }
+        .recall-category ul { list-style: none; padding: 0; }
+        .recall-category ul li { padding: 6px 0; }
+        .recall-category ul li a { font-size: 1rem; color: var(--jag-ink); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s; display: inline-block; }
+        .recall-category ul li a:hover { border-bottom-color: var(--jag-accent); color: var(--jag-accent); }
+        .recall-category .desc { font-size: 0.85rem; color: var(--jag-grey-500); margin-left: 4px; }
+
+        /* Verdict block */
+        .verdict-block { background: var(--jag-bg-alt); border-left: 4px solid var(--jag-accent); padding: 24px 32px; border-radius: 2px; }
+        .verdict-block h3 { font-size: 1.2rem; font-weight: 600; margin-bottom: 8px; }
+        .verdict-block p { font-size: 0.95rem; color: var(--jag-grey-700); }
+
+        /* FAQ */
+        .faq-list { max-width: 800px; margin: 0 auto; }
+        .faq-item { border-bottom: 1px solid var(--jag-grey-300); padding: 20px 0; }
+        .faq-item summary { font-weight: 600; cursor: pointer; font-size: 1.05rem; }
+        .faq-item summary:hover { color: var(--jag-accent); }
+        .faq-item .faq-answer { padding-top: 12px; color: var(--jag-grey-700); font-size: 0.95rem; }
+
+        /* Trust + CTA */
+        .trust-cta { background: var(--jag-bg-alt); border-top: 1px solid var(--jag-grey-300); padding: 48px 0; text-align: center; }
+        .trust-grid { display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; margin-bottom: 32px; }
+        .trust-item { text-align: center; }
+        .trust-item .num { font-family: var(--font-serif); font-size: 2rem; font-weight: 300; color: var(--jag-black); }
+        .trust-item .label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--jag-grey-500); }
+        .cta-button { display: inline-block; background: var(--jag-black); color: white; padding: 14px 40px; text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.85rem; font-weight: 500; text-decoration: none; border: none; border-radius: 2px; transition: background 0.2s; }
+        .cta-button:hover { background: var(--jag-accent); color: white; }
+
+        /* Fade directions */
+        .fade-up { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+        .fade-down { opacity: 0; transform: translateY(-30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+        .fade-left { opacity: 0; transform: translateX(-30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+        .fade-right { opacity: 0; transform: translateX(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+        .fade-up.visible, .fade-down.visible, .fade-left.visible, .fade-right.visible { opacity: 1; transform: translate(0); }
+
+        @media (max-width: 768px) {
+            .hero { padding: 48px 0 32px; }
+            .hero h1 { font-size: clamp(1.8rem, 6vw, 2.6rem); }
+            .summary-box { padding: 20px; margin: -16px 12px 16px; }
+            .recall-grid { grid-template-columns: 1fr; }
+            .trust-grid { gap: 24px; }
+            .toc-bar ul li a { font-size: 0.7rem; padding: 4px 10px; }
+            .section { padding: 48px 0; }
+        }
+        @media (max-width: 480px) {
+            .hero .stat-strip { gap: 16px; }
+            .hero .stat-strip .stat-num { font-size: 1.3rem; }
+        }
+    </style>
+    <script defer src="/assets/jaguar/effects.js"></script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://jaguarengines.uk/#organization",
+      "name": "Jaguar Engines UK",
+      "url": "https://jaguarengines.uk",
+      "logo": "https://jaguarengines.uk/assets/jaguar/logo.png",
+      "description": "Independent editorial resource for Jaguar engine information and recalls, part of the Engine Finders network."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://jaguarengines.uk/#website",
+      "url": "https://jaguarengines.uk",
+      "name": "Jaguar Engines UK",
+      "publisher": {
+        "@id": "https://jaguarengines.uk/#organization"
+      },
+      "description": "Jaguar recall centre, technical data, and expert advice."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://jaguarengines.uk/recalls#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://jaguarengines.uk"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Recalls",
+          "item": "https://jaguarengines.uk/recalls"
+        }
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://jaguarengines.uk/recalls#page",
+      "url": "https://jaguarengines.uk/recalls",
+      "name": "Jaguar Recall Centre",
+      "description": "Complete Jaguar recall centre: check recalls by model, VIN lookup, official safety and emissions recall data for every Jaguar. Free repairs for affected vehicles.",
+      "isPartOf": {
+        "@id": "https://jaguarengines.uk/#website"
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "Jaguar Recalls"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Jaguar Engines UK Editorial Team"
+      },
+      "publisher": {
+        "@id": "https://jaguarengines.uk/#organization"
+      },
+      "datePublished": "2025-01-15",
+      "dateModified": "2026-08-09",
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "XE Recall Information",
+            "url": "https://jaguarengines.uk/recalls/xe"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "XF Recall Information",
+            "url": "https://jaguarengines.uk/recalls/xf"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "XJ Recall Information",
+            "url": "https://jaguarengines.uk/recalls/xj"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "S-Type Recall Information",
+            "url": "https://jaguarengines.uk/recalls/s-type"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "X-Type Recall Information",
+            "url": "https://jaguarengines.uk/recalls/x-type"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "F-Pace Recall Information",
+            "url": "https://jaguarengines.uk/recalls/f-pace"
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "name": "E-Pace Recall Information",
+            "url": "https://jaguarengines.uk/recalls/e-pace"
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "name": "I-Pace Recall Information",
+            "url": "https://jaguarengines.uk/recalls/i-pace"
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "name": "F-Type Recall Information",
+            "url": "https://jaguarengines.uk/recalls/f-type"
+          },
+          {
+            "@type": "ListItem",
+            "position": 10,
+            "name": "XK Recall Information",
+            "url": "https://jaguarengines.uk/recalls/xk"
+          }
+        ]
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero" id="top">
+    <div class="container">
+        <div class="hero-eyebrow"><span>Jaguar Recall Centre</span></div>
+        <h1>Jaguar <span class="accent">Recall Centre</span></h1>
+        <p class="hero-sub">Official recall information for every Jaguar model — check your VIN, find affected engines, and understand what to do next. All recalls are manufacturer‑issued and free of charge.</p>
+        <div class="hero-rule"></div>
+        <div class="stat-strip">
+            <div class="stat-item"><div class="stat-num">15+</div><div class="stat-label">Vetted Specialists</div></div>
+            <div class="stat-item"><div class="stat-num">9,000+</div><div class="stat-label">Enquiries (2025)</div></div>
+            <div class="stat-item"><div class="stat-num">60%</div><div class="stat-label">Scrap Threshold</div></div>
+            <div class="stat-item"><div class="stat-num">100%</div><div class="stat-label">Independent Data</div></div>
+        </div>
+    </div>
+</header>
+
+<!-- SUMMARY BOX -->
+<div class="summary-box">
+    <h2>The Short Answer</h2>
+    <p><strong>Jaguar recalls are safety‑ or emissions‑related corrections issued by the manufacturer, and they are always free to fix.</strong> This centre compiles every recall affecting Jaguar models from 2000 onward, with official TSB references, affected VIN ranges, and remedy details.</p>
+    <ul>
+        <li><strong>All recall data</strong> sourced from the DVSA and Jaguar official bulletins [THIRD-PARTY].</li>
+        <li><strong>Check by model</strong> below to see if your car is affected.</li>
+        <li><strong>Use our VIN tool</strong> to get a personalised recall check.</li>
+    </ul>
+    <p class="closing">If you own a Jaguar, checking for outstanding recalls is the most important first step in protecting your safety and resale value.</p>
+</div>
+
+<!-- TOC BAR -->
+<nav class="toc-bar" aria-label="On this page">
+    <span class="toc-label">On this page</span>
+    <ul>
+        <li><a href="#recalls-by-model">Recalls by Model</a></li>
+        <li><a href="#how-to-check">How to Check</a></li>
+        <li><a href="#why-recalls-matter">Why Recalls Matter</a></li>
+        <li><a href="#verdict">Verdict</a></li>
+        <li><a href="#faq">FAQ</a></li>
+    </ul>
+</nav>
+
+<!-- SECTION 1 — RECALLS BY MODEL (fade-up, no data-lazy) -->
+<section class="section" id="recalls-by-model">
+    <div class="section-inner fade-up">
+        <h2 style="font-family:var(--font-serif);font-weight:300;font-size:2rem;margin-bottom:8px;">Recalls by Model</h2>
+        <p style="color:var(--jag-grey-700);margin-bottom:16px;">Select your Jaguar model to view all outstanding recalls, affected engines, and the official remedy.</p>
+        <div class="recall-grid">
+            <div class="recall-category">
+                <h3>Saloon & Estate</h3>
+                <ul>
+                    <li><a href="https://jaguarengines.uk/recalls/xe">XE Recall Information</a> <span class="desc">(2015–2024)</span></li>
+                    <li><a href="https://jaguarengines.uk/recalls/xf">XF Recall Information</a> <span class="desc">(X250, X260)</span></li>
+                    <li><a href="https://jaguarengines.uk/recalls/xj">XJ Recall Information</a> <span class="desc">(X350, X351)</span></li>
+                    <li><a href="https://jaguarengines.uk/recalls/s-type">S‑Type Recall Information</a> <span class="desc">(X200)</span></li>
+                    <li><a href="https://jaguarengines.uk/recalls/x-type">X‑Type Recall Information</a> <span class="desc">(X400)</span></li>
+                </ul>
+            </div>
+            <div class="recall-category">
+                <h3>SUV & Crossover</h3>
+                <ul>
+                    <li><a href="https://jaguarengines.uk/recalls/f-pace">F‑Pace Recall Information</a> <span class="desc">(X761)</span></li>
+                    <li><a href="https://jaguarengines.uk/recalls/e-pace">E‑Pace Recall Information</a> <span class="desc">(X540)</span></li>
+                    <li><a href="https://jaguarengines.uk/recalls/i-pace">I‑Pace Recall Information</a> <span class="desc">(X590, EV)</span></li>
+                </ul>
+            </div>
+            <div class="recall-category">
+                <h3>Sports & GT</h3>
+                <ul>
+                    <li><a href="https://jaguarengines.uk/recalls/f-type">F‑Type Recall Information</a> <span class="desc">(X152)</span></li>
+                    <li><a href="https://jaguarengines.uk/recalls/xk">XK Recall Information</a> <span class="desc">(X100, X150)</span></li>
+                </ul>
+            </div>
+        </div>
+        <p style="margin-top:16px;font-size:0.9rem;color:var(--jag-grey-500);">Can't find your model? <a href="https://jaguarengines.uk/contact">Contact us</a> or use the <a href="https://jaguarengines.uk/tools/vin-decoder">VIN Decoder</a> to check directly.</p>
+    </div>
+</section>
+
+<!-- SECTION 2 — HOW TO CHECK (fade-down, no data-lazy) -->
+<section class="section section-alt" id="how-to-check">
+    <div class="section-inner fade-down">
+        <h2 style="font-family:var(--font-serif);font-weight:300;font-size:2rem;margin-bottom:8px;">How to Check Your Recall Status</h2>
+        <p style="color:var(--jag-grey-700);margin-bottom:16px;">There are three reliable ways to find out if your Jaguar has an outstanding recall.</p>
+        <ol style="padding-left:24px;margin-bottom:16px;">
+            <li><strong>Use the DVSA recall checker</strong> with your vehicle registration – the official government service covers all UK cars.</li>
+            <li><strong>Enter your VIN (17‑digit chassis number)</strong> into our <a href="https://jaguarengines.uk/tools/vin-decoder">VIN Decoder tool</a> – it will cross‑reference known recall campaigns.</li>
+            <li><strong>Contact your nearest Jaguar main dealer</strong> – they are obliged to check and perform any outstanding recall work free of charge.</li>
+        </ol>
+        <p>We recommend checking at least once a year, as new recalls are issued regularly. <a href="https://jaguarengines.uk/tools/registration-lookup">Use our Registration Lookup</a> for a quick start.</p>
+    </div>
+</section>
+
+<!-- SECTION 3 — WHY RECALLS MATTER (fade-left, data-lazy) -->
+<section class="section" id="why-recalls-matter" data-lazy-section>
+    <div class="section-inner fade-left">
+        <h2 style="font-family:var(--font-serif);font-weight:300;font-size:2rem;margin-bottom:8px;">Why Recalls Matter</h2>
+        <p style="color:var(--jag-grey-700);margin-bottom:16px;">Recalls are not a sign of poor engineering – they are a sign of a manufacturer taking responsibility. Every recall addresses a verified safety, emissions, or compliance issue that could affect your vehicle's performance, safety, or legality.</p>
+        <ul style="padding-left:24px;color:var(--jag-grey-700);">
+            <li><strong>Safety first:</strong> Recalls often involve airbags, brakes, fuel systems, or engine components that could fail unexpectedly.</li>
+            <li><strong>Emissions compliance:</strong> Many recalls correct software or hardware to meet Euro standards – ignoring them can lead to MOT failure.</li>
+            <li><strong>Resale value:</strong> An outstanding recall on a vehicle history report can reduce its market value significantly.</li>
+            <li><strong>It's free:</strong> Manufacturer recalls are always repaired at no cost to the owner, regardless of mileage or warranty status.</li>
+        </ul>
+        <p style="margin-top:12px;">For a complete overview of Jaguar reliability and common issues, see our <a href="https://jaguarengines.uk/data/engine-failure-index-2026">Engine Failure Index</a> and <a href="https://jaguarengines.uk/failures">Failure Pages</a>.</p>
+    </div>
+</section>
+
+<!-- SECTION 4 — VERDICT (fade-right, data-lazy) -->
+<section class="section section-alt" id="verdict" data-lazy-section>
+    <div class="section-inner fade-right">
+        <div class="verdict-block">
+            <h3>Our Verdict</h3>
+            <p><strong>Checking your Jaguar's recall status is not optional – it is the single most important maintenance task you can do.</strong> Recalls are free, they protect you and your passengers, and they preserve your car's value. Use the links above to check your model today. If you're buying a used Jaguar, always run the VIN through the recall checker before committing – it could save you thousands in hidden repair costs.</p>
+        </div>
+        <p style="margin-top:12px;font-size:0.9rem;color:var(--jag-grey-500);">For more detailed recall data and case studies, visit our <a href="https://jaguarengines.uk/data">Data Centre</a> and <a href="https://jaguarengines.uk/about/specialist-vetting">Specialist Vetting</a> pages.</p>
+    </div>
+</section>
+
+<!-- SECTION 5 — FAQ (fade-up, data-lazy) -->
+<section class="section" id="faq" data-lazy-section>
+    <div class="section-inner fade-up">
+        <h2 style="font-family:var(--font-serif);font-weight:300;font-size:2rem;text-align:center;margin-bottom:32px;">Frequently Asked Questions</h2>
+        <div class="faq-list">
+            <div class="faq-item">
+                <details>
+                    <summary>Are Jaguar recalls really free to fix?</summary>
+                    <div class="faq-answer">Yes. Manufacturer recalls are always performed at no cost to the owner, regardless of the vehicle's age, mileage, or service history. The manufacturer covers all parts and labour. If a dealer tries to charge you, contact Jaguar UK directly.</div>
+                </details>
+            </div>
+            <div class="faq-item">
+                <details>
+                    <summary>How do I know if my Jaguar has an outstanding recall?</summary>
+                    <div class="faq-answer">You can check using our <a href="https://jaguarengines.uk/tools/vin-decoder">VIN Decoder</a> or the official DVSA recall checker. Simply enter your registration number or 17‑digit VIN. We also list all recalls by model on this page.</div>
+                </details>
+            </div>
+            <div class="faq-item">
+                <details>
+                    <summary>Do I need to fix a recall before selling my car?</summary>
+                    <div class="faq-answer">It is strongly recommended – an outstanding recall can devalue your car and may be flagged in a vehicle history check. Many buyers will walk away from a car with open recalls. The repair is free, so it's always worth doing before sale.</div>
+                </details>
+            </div>
+            <div class="faq-item">
+                <details>
+                    <summary>Can a recall affect my engine reliability?</summary>
+                    <div class="faq-answer">Most recalls improve reliability by fixing known defects – e.g., timing chain tensioner updates, EGR cooler replacements, or software remaps that prevent fuel dilution. Ignoring a recall can actually cause catastrophic engine failure later on.</div>
+                </details>
+            </div>
+            <div class="faq-item">
+                <details>
+                    <summary>What if I missed a recall from years ago – can I still get it fixed?</summary>
+                    <div class="faq-answer">Yes. Recalls do not expire. A Jaguar dealer is legally obliged to perform any outstanding recall work free of charge, even if the vehicle is many years old. Just book it in – they will check your VIN against the manufacturer's database.</div>
+                </details>
+            </div>
+            <div class="faq-item">
+                <details>
+                    <summary>Are recalls only for safety issues?</summary>
+                    <div class="faq-answer">No. Recalls also cover emissions compliance (e.g., diesel emissions fixes) and, in some cases, software updates that prevent non‑safety related failures. However, all recalls are manufacturer‑initiated and free.</div>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TRUST STRIP + CTA -->
+<section class="trust-cta" id="trust-cta">
+    <div class="container">
+        <div class="trust-grid">
+            <div class="trust-item">
+                <div class="num">15+</div>
+                <div class="label">Vetted Specialists</div>
+            </div>
+            <div class="trust-item">
+                <div class="num">9,000+</div>
+                <div class="label">Real UK Enquiries</div>
+            </div>
+            <div class="trust-item">
+                <div class="num">100%</div>
+                <div class="label">Independent Editorial</div>
+            </div>
+            <div class="trust-item">
+                <div class="num">60%</div>
+                <div class="label">Scrap Threshold</div>
+            </div>
+        </div>
+        <p style="max-width:600px;margin:0 auto 24px;color:var(--jag-grey-700);font-size:0.95rem;">Part of the Engine Finders network – independently verified, rated and reviewed. Need more help? Use our registration lookup to check your car's specific recall status and get a quote for any related repairs.</p>
+        <a href="https://jaguarengines.uk/tools/registration-lookup" class="cta-button">Check Your Registration</a>
+        <p style="margin-top:16px;font-size:0.8rem;color:var(--jag-grey-500);">No email required – get a free recall and price check.</p>
+    </div>
+</section>
+
+<!-- FOOTER LINKS -->
+<footer style="padding:24px 0;border-top:1px solid var(--jag-grey-300);background:var(--jag-bg);text-align:center;font-size:0.8rem;color:var(--jag-grey-500);">
+    <p>© 2026 Jaguar Engines UK. Part of the Engine Finders network. <a href="https://jaguarengines.uk/about">About</a> · <a href="https://jaguarengines.uk/about/editorial-standards">Editorial Standards</a> · <a href="https://jaguarengines.uk/data/methodology">Data Methodology</a> · <a href="https://jaguarengines.uk/contact">Contact</a></p>
+</footer>
+
+</body>
+</html>

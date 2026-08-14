@@ -30,7 +30,7 @@ function Icon({ name, className = "h-5 w-5", strokeWidth = 2 }) {
 
 function EraIcon({ isDark }) {
   return (
-    <span className={`relative z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 text-[var(--color-primary)] shadow-[0_8px_20px_rgba(7,95,216,0.12)] md:h-14 md:w-14 ${isDark ? "border-[#3e5e7c] bg-[#0a1520]" : "border-[var(--color-primary)] bg-white"}`}>
+    <span className={`relative z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 text-[var(--color-primary)] shadow-[0_8px_20px_rgba(7,95,216,0.12)] md:h-14 md:w-14 ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface)]" : "border-[var(--color-primary)] bg-white"}`}>
       <Icon name="car" className="h-5.5 w-5.5 md:h-6 md:w-6" strokeWidth={2.1} />
     </span>
   );
@@ -38,7 +38,7 @@ function EraIcon({ isDark }) {
 
 function HeaderImage({ data, isDark }) {
   return (
-    <div className={`relative mt-5 overflow-hidden rounded-md border shadow-[0_12px_28px_rgba(10,26,43,0.06)] md:mt-0 md:h-[308px] md:rounded-none md:border-0 md:bg-transparent md:shadow-none ${isDark ? "border-[#223343] bg-[#0a1520]" : "border-[#dfe5ed] bg-white"}`}>
+    <div className={`relative mt-5 overflow-hidden rounded-md border shadow-[0_12px_28px_rgba(10,26,43,0.06)] md:mt-0 md:h-[308px] md:rounded-none md:border-0 md:bg-transparent md:shadow-none ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface)]" : "border-[#dfe5ed] bg-white"}`}>
       <div className="relative h-[220px] sm:h-[250px] md:h-full">
         <Image
           src={data.headerImage.src}
@@ -85,8 +85,8 @@ function MobileHeader({ data, isDark }) {
 
 function DesktopTimeline({ data, isDark }) {
   return (
-    <div className={`hidden overflow-hidden rounded-md border shadow-[0_14px_36px_rgba(10,26,43,0.06)] md:block ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.92)]" : "border-[#dfe5ed] bg-white"}`}>
-      <div className="grid grid-cols-[300px_1fr_680px] bg-[linear-gradient(90deg,#3478f6_0%,#1f63df_100%)] text-white">
+    <div className={`hidden overflow-hidden rounded-md border shadow-[0_14px_36px_rgba(10,26,43,0.06)] md:block ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#dfe5ed] bg-white"}`}>
+      <div className="grid grid-cols-[300px_1fr_680px] bg-[var(--color-chrome)] text-white">
         {data.columns.map((column) => (
           <div key={column} className="border-r border-white/18 px-8 py-3 text-center text-[1rem] font-bold uppercase last:border-r-0">
             {column}
@@ -97,13 +97,13 @@ function DesktopTimeline({ data, isDark }) {
       <div className="relative">
         <div className="absolute bottom-5 left-[53px] top-5 w-px bg-[var(--color-primary)]" />
         {data.eras.map((row) => (
-          <div key={row.era} className={`grid grid-cols-[300px_1fr_680px] border-b last:border-b-0 ${isDark ? "border-[#223343]" : "border-[#e7ebf0]"}`}>
+          <div key={row.era} className={`grid grid-cols-[300px_1fr_680px] border-b last:border-b-0 ${isDark ? "border-[var(--color-border)]" : "border-[#e7ebf0]"}`}>
             <div className="flex items-center gap-6 px-6 py-5">
               <EraIcon isDark={isDark} />
               <p className={`text-[1.05rem] font-bold ${isDark ? "text-white" : "text-[#071827]"}`}>{row.era}</p>
             </div>
 
-            <div className={`grid grid-cols-[1fr_156px] items-center gap-5 border-l px-6 py-4 ${isDark ? "border-[#223343]" : "border-[#e7ebf0]"}`}>
+            <div className={`grid grid-cols-[1fr_156px] items-center gap-5 border-l px-6 py-4 ${isDark ? "border-[var(--color-border)]" : "border-[#e7ebf0]"}`}>
               <p className={`text-[1rem] font-semibold leading-[1.4] ${isDark ? "text-white/84" : "text-[#172334]"}`}>{row.engines}</p>
               {row.engineImage?.src ? (
                 <div className="relative h-28 overflow-hidden rounded-md">
@@ -114,7 +114,7 @@ function DesktopTimeline({ data, isDark }) {
               )}
             </div>
 
-            <div className={`grid grid-cols-[1fr_168px] items-center gap-6 border-l px-6 py-4 ${isDark ? "border-[#223343]" : "border-[#e7ebf0]"}`}>
+            <div className={`grid grid-cols-[1fr_168px] items-center gap-6 border-l px-6 py-4 ${isDark ? "border-[var(--color-border)]" : "border-[#e7ebf0]"}`}>
               <div className="grid grid-cols-3 gap-3">
                 {(row.modelImages || []).map((image, index) => (
                   <div key={`${row.era}-${index}`} className="relative h-20 overflow-hidden rounded-md">
@@ -142,13 +142,13 @@ function MobileTimeline({ data, isDark }) {
               <EraIcon isDark={isDark} />
             </div>
 
-            <article className={`min-w-0 flex-1 rounded-md border px-4 py-4 shadow-[0_10px_24px_rgba(10,26,43,0.05)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.92)]" : "border-[#dfe5ed] bg-white"}`}>
+            <article className={`min-w-0 flex-1 rounded-md border px-4 py-4 shadow-[0_10px_24px_rgba(10,26,43,0.05)] ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#dfe5ed] bg-white"}`}>
               <div className="grid gap-4 sm:grid-cols-[120px_1fr]">
                 <div>
                   <p className={`text-[0.92rem] font-bold sm:text-[0.98rem] ${isDark ? "text-white" : "text-[#071827]"}`}>{row.era}</p>
                 </div>
 
-                <div className={`grid gap-4 border-t pt-3 sm:border-l sm:border-t-0 sm:pl-4 sm:pt-0 ${isDark ? "border-[#223343]" : "border-[#e7ebf0]"}`}>
+                <div className={`grid gap-4 border-t pt-3 sm:border-l sm:border-t-0 sm:pl-4 sm:pt-0 ${isDark ? "border-[var(--color-border)]" : "border-[#e7ebf0]"}`}>
                   <div className="grid gap-2 sm:grid-cols-[1fr_110px] sm:items-center">
                     <div>
                       <p className="text-[0.76rem] font-bold uppercase text-[var(--color-primary)]">Key Engines</p>
@@ -161,7 +161,7 @@ function MobileTimeline({ data, isDark }) {
                     ) : null}
                   </div>
 
-                  <div className={`grid gap-2 border-t pt-3 sm:grid-cols-[1fr_auto] sm:items-center ${isDark ? "border-[#223343]" : "border-[#e7ebf0]"}`}>
+                  <div className={`grid gap-2 border-t pt-3 sm:grid-cols-[1fr_auto] sm:items-center ${isDark ? "border-[var(--color-border)]" : "border-[#e7ebf0]"}`}>
                     <div>
                       <p className="text-[0.76rem] font-bold uppercase text-[var(--color-primary)]">Iconic Models</p>
                       {(row.modelImages || []).length ? (
@@ -191,9 +191,9 @@ function MobileTimeline({ data, isDark }) {
 
 function KeyTakeaway({ text, isDark }) {
   return (
-    <div className={`mt-4 rounded-md border px-4 py-4 shadow-[0_12px_28px_rgba(10,26,43,0.04)] md:mt-4 md:px-8 md:py-5 ${isDark ? "border-[#223343] bg-[linear-gradient(180deg,#0a1520_0%,#07121d_100%)]" : "border-[#dfe5ed] bg-[linear-gradient(180deg,#ffffff_0%,#f8fbff_100%)]"}`}>
+    <div className={`mt-4 rounded-md border px-4 py-4 shadow-[0_12px_28px_rgba(10,26,43,0.04)] md:mt-4 md:px-8 md:py-5 ${isDark ? "border-[var(--color-border)] bg-[linear-gradient(180deg,var(--color-surface)_0%,var(--color-surface)_100%)]" : "border-[#dfe5ed] bg-[linear-gradient(180deg,#ffffff_0%,#f8fbff_100%)]"}`}>
       <div className="grid gap-4 md:grid-cols-[92px_1fr] md:items-center">
-        <span className={`flex h-15 w-15 items-center justify-center rounded-md text-white shadow-[0_12px_26px_rgba(7,95,216,0.2)] md:h-16 md:w-16 ${isDark ? "bg-[#0c2748]" : "bg-[var(--color-primary)]"}`}>
+        <span className={`flex h-15 w-15 items-center justify-center rounded-md text-white shadow-[0_12px_26px_rgba(7,95,216,0.2)] md:h-16 md:w-16 ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}>
           <Icon name="insight" className="h-9 w-9 md:h-8 md:w-8" strokeWidth={2.2} />
         </span>
         <p className={`text-[0.9rem] leading-[1.52] md:text-[1.02rem] ${isDark ? "text-white/84" : "text-[#172334]"}`}>

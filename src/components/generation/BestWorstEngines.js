@@ -18,7 +18,7 @@ const typeStyles = {
     color: "var(--color-primary)",
     accent: "border-b-[var(--color-primary)]",
     light: "text-[var(--color-primary)] bg-[var(--color-primary-soft)]",
-    dark: "text-[#7fb2ff] bg-[rgba(36,132,255,0.16)]",
+    dark: "text-[var(--color-text)] bg-[rgba(36,132,255,0.16)]",
   },
   danger: {
     icon: "warning",
@@ -46,7 +46,7 @@ const typeStyles = {
     color: "var(--color-primary)",
     accent: "border-b-[var(--color-primary)]",
     light: "text-[var(--color-primary)] bg-[var(--color-primary-soft)]",
-    dark: "text-[#7fb2ff] bg-[rgba(36,132,255,0.16)]",
+    dark: "text-[var(--color-text)] bg-[rgba(36,132,255,0.16)]",
   },
 };
 

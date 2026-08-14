@@ -113,12 +113,12 @@ function EngineRow({ row, isDark }) {
     <Link
       href={row.href}
       className={`grid grid-cols-[minmax(76px,0.95fr)_minmax(106px,1.22fr)_minmax(116px,1.32fr)_40px] items-center border-b px-3 py-3.5 last:border-b-0 md:grid-cols-[minmax(170px,1.05fr)_minmax(130px,0.78fr)_minmax(140px,0.82fr)_minmax(170px,1.05fr)_minmax(390px,2.2fr)] md:px-9 md:py-3.5 ${
-        isDark ? "border-[#223a51] text-white hover:bg-[rgba(22,51,74,0.42)]" : "border-[#e3e8ef] text-[#071827] hover:bg-[#f8fbff]"
+        isDark ? "border-[var(--color-border)] text-white hover:bg-[var(--color-page-soft)]" : "border-[#e3e8ef] text-[#071827] hover:bg-[#f8fbff]"
       }`}
     >
       <EngineCell row={row} />
 
-      <div className={`grid min-w-0 gap-1.5 border-l pl-3 md:contents ${isDark ? "border-[#223a51]" : "border-[#dfe7f1]"}`}>
+      <div className={`grid min-w-0 gap-1.5 border-l pl-3 md:contents ${isDark ? "border-[var(--color-border)]" : "border-[#dfe7f1]"}`}>
         <p className="flex items-center gap-3 text-[0.84rem] leading-tight md:text-[0.92rem]">
           <FuelIcon fuel={row.fuel} className="h-6 w-6 md:h-6 md:w-6" />
           <span>{row.fuel}</span>
@@ -146,13 +146,13 @@ function EngineRow({ row, isDark }) {
 
 function TrustStrip({ items, isDark }) {
   return (
-    <ul className={`grid grid-cols-4 overflow-hidden rounded-md border shadow-[0_16px_36px_rgba(10,26,43,0.08)] md:hidden ${isDark ? "border-[#223a51] bg-[rgba(7,23,36,0.9)]" : "border-[#dfe5ed] bg-white"}`}>
+    <ul className={`grid grid-cols-4 overflow-hidden rounded-md border shadow-[0_16px_36px_rgba(10,26,43,0.08)] md:hidden ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#dfe5ed] bg-white"}`}>
       {items.map((item, index) => {
         const text = cleanText(item.label);
         const parts = text.match(/^(Powered by|20\+ vetted|OEM part|Part of)\s*(.*)$/);
 
         return (
-          <li key={item.label} className={`flex min-w-0 flex-col items-center border-r px-2 py-5 text-center last:border-r-0 ${isDark ? "border-[#223a51]" : "border-[#dfe7f1]"}`}>
+          <li key={item.label} className={`flex min-w-0 flex-col items-center border-r px-2 py-5 text-center last:border-r-0 ${isDark ? "border-[var(--color-border)]" : "border-[#dfe7f1]"}`}>
             <Icon name={trustIconByIndex[index] || "chart"} className="h-8 w-8 text-[var(--color-primary)]" strokeWidth={2.2} />
             <span className={`mt-3 text-[0.78rem] leading-[1.28] ${isDark ? "text-white/78" : "text-[#172b4a]"}`}>
               {parts ? parts[1] : text}
@@ -167,10 +167,10 @@ function TrustStrip({ items, isDark }) {
 
 function EngineTable({ data, isDark }) {
   return (
-    <div className={`overflow-hidden rounded-md border shadow-[0_16px_36px_rgba(10,26,43,0.08)] ${isDark ? "border-[#223a51] bg-[rgba(7,23,36,0.9)]" : "border-[#dfe5ed] bg-white"}`}>
-      <div className={`grid grid-cols-[minmax(76px,0.95fr)_minmax(106px,1.22fr)_minmax(116px,1.32fr)_40px] border-b px-3 py-3.5 text-[0.68rem] font-bold uppercase text-[var(--color-primary)] md:grid-cols-[minmax(170px,1.05fr)_minmax(130px,0.78fr)_minmax(140px,0.82fr)_minmax(170px,1.05fr)_minmax(390px,2.2fr)] md:px-9 md:py-3.5 md:text-[0.82rem] ${isDark ? "border-[#223a51]" : "border-[#e3e8ef]"}`}>
+    <div className={`overflow-hidden rounded-md border shadow-[0_16px_36px_rgba(10,26,43,0.08)] ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#dfe5ed] bg-white"}`}>
+      <div className={`grid grid-cols-[minmax(76px,0.95fr)_minmax(106px,1.22fr)_minmax(116px,1.32fr)_40px] border-b px-3 py-3.5 text-[0.68rem] font-bold uppercase text-[var(--color-primary)] md:grid-cols-[minmax(170px,1.05fr)_minmax(130px,0.78fr)_minmax(140px,0.82fr)_minmax(170px,1.05fr)_minmax(390px,2.2fr)] md:px-9 md:py-3.5 md:text-[0.82rem] ${isDark ? "border-[var(--color-border)]" : "border-[#e3e8ef]"}`}>
         <span>{data.columns[0]}</span>
-        <span className={`border-l pl-4 md:border-l-0 md:pl-0 ${isDark ? "border-[#223a51]" : "border-[#dfe7f1]"}`}>
+        <span className={`border-l pl-4 md:border-l-0 md:pl-0 ${isDark ? "border-[var(--color-border)]" : "border-[#dfe7f1]"}`}>
           Fuel
           <span className="block md:hidden">Years</span>
         </span>
@@ -188,8 +188,8 @@ function EngineTable({ data, isDark }) {
 
 function LegendCard({ legend, isDark }) {
   return (
-    <Link href={legend.href} className={`flex items-center gap-5 rounded-md border p-5 shadow-[0_16px_36px_rgba(10,26,43,0.08)] md:hidden ${isDark ? "border-[#223a51] bg-[rgba(7,23,36,0.9)] text-white" : "border-[#dfe5ed] bg-white text-[#071827]"}`}>
-      <span className={`flex h-16 w-16 shrink-0 items-center justify-center rounded-md text-white shadow-[0_12px_26px_rgba(7,95,216,0.28)] ${isDark ? "bg-[#0c2748]" : "bg-[var(--color-primary)]"}`}>
+    <Link href={legend.href} className={`flex items-center gap-5 rounded-md border p-5 shadow-[0_16px_36px_rgba(10,26,43,0.08)] md:hidden ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)] text-white" : "border-[#dfe5ed] bg-white text-[#071827]"}`}>
+      <span className={`flex h-16 w-16 shrink-0 items-center justify-center rounded-md text-white shadow-[0_12px_26px_rgba(7,95,216,0.28)] ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}>
         <Icon name="bulb" className="h-9 w-9" />
       </span>
       <span className="min-w-0 flex-1">

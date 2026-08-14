@@ -9,10 +9,10 @@ export const footerColumns = [
     title: "Ownership & Data",
     links: [
       { label: "Research Centre", href: "/data" },
-      { label: "Reliability Index 2026", href: "/data/engine-failure-index-2026" },
-      { label: "Failure Trends 2026", href: "/data/bmw-failure-trends-2026" },
-      { label: "Engine Cost Index 2026", href: "/data/bmw-cost-index-2026" },
-      { label: "Most Reliable by Year", href: "/data/most-reliable-bmw-engines-by-year" },
+      { label: "Engine Failure Index 2026", href: "/data/engine-failure-index-2026" },
+      { label: "Failure Rate by Engine", href: "/data/failure-rate-by-engine" },
+      { label: "Average Replacement Cost", href: "/data/average-replacement-cost" },
+      { label: "Most Enquired Models", href: "/data/most-enquired-models" },
       { label: "Methodology", href: "/data/methodology" },
       { label: "Ownership Economics", href: "/economics" },
       { label: "Repair, Replace or Scrap", href: "/economics/repair-replace-scrap-framework" },
@@ -40,7 +40,6 @@ export const footerColumns = [
       { label: "Fitment Guide", href: "/fitment" },
       { label: "Technical Library", href: "/technical" },
       { label: "Case Studies", href: "/case-studies" },
-      { label: "Guides & Blog", href: "/blog" },
       { label: "Recalls", href: "/recalls" },
       { label: "Contact", href: "/contact" },
     ],
@@ -48,15 +47,14 @@ export const footerColumns = [
   {
     title: "About & Trust",
     links: [
-      { label: "About Us", href: "/about" },
       { label: "How It Works", href: "/about/how-it-works" },
-      { label: "Our Expert Panel", href: "/about/expert-panel" },
-      { label: "Data Verification & Methodology", href: "/about/data-verification" },
+      { label: "Expert Panel", href: "/about/expert-panel" },
+      { label: "Data Verification", href: "/about/data-verification" },
       { label: "Editorial Standards", href: "/about/editorial-standards" },
       { label: "Specialist Vetting", href: "/about/specialist-vetting" },
       { label: "Warranty Standards", href: "/about/warranty-standards" },
       { label: "Verified Outcomes", href: "/about/verified-outcomes" },
-      { label: "Corrections Log", href: "/about/corrections" },
+      { label: "Corrections", href: "/about/corrections" },
     ],
   },
 ];
@@ -64,11 +62,7 @@ export const footerColumns = [
 export const footerLegal = {
   copyright: "© 2026 Jaguar Reliability Guide, part of the Engine Finders network.",
   disclaimer: "Independent editorial content; not affiliated with Jaguar Land Rover.",
-  links: [
-    { label: "Privacy Policy", href: "/privacy" },
-    { label: "Terms", href: "/terms" },
-    { label: "Cookie Policy", href: "/cookies" },
-  ],
+  links: [],
 };
 
 function LogoMark({ isDark }) {

@@ -32,7 +32,7 @@ function stripTags(text = "") {
 }
 
 function shortEngineName(engineLabel = "") {
-  return cleanText(engineLabel).replace(/^BMW\s+/i, "") || "Engine";
+  return cleanText(engineLabel).replace(/^Jaguar\s+/i, "") || "Engine";
 }
 
 function seriesParts(model = "") {
@@ -141,16 +141,16 @@ function ExclusiveBadge({ isDark }) {
         <ShieldIcon className="h-3.5 w-3.5" />
       </span>
       <div className="min-w-0">
-        <p className="text-[10px] font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">BMW Exclusive Engine</p>
+        <p className="text-[10px] font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">Jaguar Exclusive Engine</p>
         <p className="mt-0.5 text-[10px] leading-[1.35] text-[var(--color-text-muted)]">
-          This is an exclusive BMW engine. No cross-platform sharing.
+          This is an exclusive Jaguar engine. No cross-platform sharing.
         </p>
       </div>
     </div>
   );
 }
 
-function ProductionTimeline({ start, end, span }) {
+function ProductionTimeline({ start, end, span, isDark }) {
   if (!start || !end) return null;
 
   return (
@@ -159,7 +159,7 @@ function ProductionTimeline({ start, end, span }) {
       <div className="relative h-px flex-1 bg-[var(--color-primary)]">
         <span className="absolute left-0 top-1/2 h-2.5 w-2.5 -translate-y-1/2 rounded-full bg-[var(--color-primary)]" />
         <span className="absolute right-0 top-1/2 h-2.5 w-2.5 -translate-y-1/2 rounded-full bg-[var(--color-primary)]" />
-        <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap rounded-full bg-[var(--color-primary)] px-3 py-1 text-[10px] font-bold uppercase tracking-[0.04em] text-white md:text-[11px]">
+        <span className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-[0.04em] text-white md:text-[11px] ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}>
           {span} Years of Production
         </span>
       </div>
@@ -253,8 +253,8 @@ function VerifiedStrip() {
       <div className="min-w-0">
         <p className="text-[12px] font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">Compatibility Verified</p>
         <p className="mt-0.5 text-[12px] leading-[1.4] text-[var(--color-text-muted)]">
-          All compatibility data verified from BMW parts catalogues and specialist databases.{" "}
-          <span className="font-semibold text-[var(--color-primary)]">[BMW-VERIFIED]</span>
+          All compatibility data verified from Jaguar parts catalogues and specialist databases.{" "}
+          <span className="font-semibold text-[var(--color-primary)]">[JAGUAR-VERIFIED]</span>
         </p>
       </div>
     </article>
@@ -263,7 +263,7 @@ function VerifiedStrip() {
 
 export default function Compatibility({
   data,
-  engineLabel = "BMW Engine",
+  engineLabel = "Jaguar Engine",
   yearsProduced = "",
   modelsFitted = "",
   crossBrandFitment = "",
@@ -324,7 +324,7 @@ export default function Compatibility({
               <MStripe />
             </div>
             <p className={`mt-4 max-w-[540px] ${sectionDescription} ${isDark ? "text-white/80" : "text-[var(--color-text-muted)]"}`}>
-              BMW {engineCode} engines are fitted across{" "}
+              Jaguar {engineCode} engines are fitted across{" "}
               <span className="font-semibold text-[var(--color-primary)]">{modelCountLabel}</span> from{" "}
               <span className="font-semibold text-[var(--color-primary)]">
                 {bounds.start && bounds.end ? `${bounds.start}\u2013${bounds.end}` : stripTags(yearsProduced) || "multiple years"}
@@ -338,7 +338,7 @@ export default function Compatibility({
           </div>
         </div>
 
-        <ProductionTimeline start={bounds.start} end={bounds.end} span={bounds.span} />
+        <ProductionTimeline start={bounds.start} end={bounds.end} span={bounds.span} isDark={isDark} />
 
         {/* Desktop cards */}
         <div className="mt-4 hidden md:block">
@@ -351,7 +351,7 @@ export default function Compatibility({
               <span className="flex h-7 w-7 items-center justify-center rounded-full border border-[var(--color-primary)] text-[16px] font-bold text-[var(--color-primary)]">
                 +
               </span>
-              <p className="mt-2 text-[11px] font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">Other BMW Models</p>
+              <p className="mt-2 text-[11px] font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">Other Jaguar Models</p>
               <p className="mt-1 text-[11px] leading-[1.35] text-[var(--color-text-muted)]">
                 {engineCode} also appears in limited variants and markets.
               </p>
@@ -375,7 +375,7 @@ export default function Compatibility({
               +
             </span>
             <div className="min-w-0 flex-1">
-              <p className="text-[12px] font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">Other BMW Models</p>
+              <p className="text-[12px] font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">Other Jaguar Models</p>
               <p className="mt-0.5 text-[11px] leading-[1.35] text-[var(--color-text-muted)]">
                 {engineCode} also appears in limited variants and markets.
               </p>
