@@ -9,16 +9,16 @@ Usage:
   python engine-script/engine_txt_to_json.py path/to/input.txt --out engine-outputs
 
 IGNORE RULES (apply to this script and future TXT→JSON converters):
-  1. Step 0 / Cross-Brand Fitment Check — never put in JSON.
+  1. Step 0 / Cross-Brand Fitment Check - never put in JSON.
   2. "Data Note (internal):" / "Data-integrity note (internal):" /
      "Production Note (internal):" / "PRODUCTION NOTE (internal)" /
-     "Correction applied (internal):" — never put in JSON.
-  3. Part 1 / Part 2 chat fluff ("End of Part 1", "Part 2 — Meta" preamble
+     "Correction applied (internal):" - never put in JSON.
+  3. Part 1 / Part 2 chat fluff ("End of Part 1", "Part 2 - Meta" preamble
      thinking, "Proceed to Part 2", "This completes the metadata",
-     LLM thinking like "Let's generate.", "We need to produce...") — strip;
+     LLM thinking like "Let's generate.", "We need to produce...") - strip;
      never put in JSON (except the actual Part 2 meta/schema values).
-  4. PRE-PUBLISH VALIDATION CHECKLIST blocks — ignore entirely.
-  5. Meta "Reasoning:" / "Length:" / "Construction:" prose — ignore (only take
+  4. PRE-PUBLISH VALIDATION CHECKLIST blocks - ignore entirely.
+  5. Meta "Reasoning:" / "Length:" / "Construction:" prose - ignore (only take
      Meta Title / Meta Description values and OG/Twitter/schema).
 """
 
@@ -39,16 +39,16 @@ DEFAULT_OUT = ROOT / "engine-outputs"
 
 # Allow leading spaces/tabs on headers
 PAGE_START_RE = re.compile(
-    r"^[ \t]*SECTION\s+1\s*[—\-:]+\s*HERO\b",
+    r"^[ \t]*SECTION\s+1\s*[-\-:]+\s*HERO\b",
     re.MULTILINE | re.IGNORECASE,
 )
 SECTION_RE = re.compile(
-    r"^[ \t]*SECTION\s+(?P<num>\d+)\s*[—\-:]+\s*(?P<label>.+?)\s*$",
+    r"^[ \t]*SECTION\s+(?P<num>\d+)\s*[-\-:]+\s*(?P<label>.+?)\s*$",
     re.MULTILINE | re.IGNORECASE,
 )
-# Meta Part 2 only — not "PART 2 — SECTIONS 4–7"
+# Meta Part 2 only - not "PART 2 - SECTIONS 4–7"
 PART2_META_RE = re.compile(
-    r"^Part\s*2\s*[—\-]?\s*(?:Meta(?:data)?|METADATA)\b.*$",
+    r"^Part\s*2\s*[-\-]?\s*(?:Meta(?:data)?|METADATA)\b.*$",
     re.MULTILINE | re.IGNORECASE,
 )
 # Back-compat alias used elsewhere in file
@@ -135,7 +135,7 @@ def parse_href_and_label(text: str) -> tuple[str, str]:
     m = re.search(r"^(.*?)\s*(?:→|->)\s*(\S+)\s*$", text)
     if m:
         return clean(m.group(1)), m.group(2)
-    m = re.search(r"^(.*?)\s+[—\-]\s+(\/\S+)\s*$", text)
+    m = re.search(r"^(.*?)\s+[-\-]\s+(\/\S+)\s*$", text)
     if m:
         return clean(m.group(1)), m.group(2)
     if text.startswith("/"):
@@ -280,9 +280,9 @@ def extract_json_object(text: str) -> str:
 
 
 def strip_ignored_content(text: str) -> str:
-    # Stop at ANY section — do not wipe later pages
+    # Stop at ANY section - do not wipe later pages
     text = re.sub(
-        r"Step\s+0\s*[—\-]\s*Cross[-‑]Brand Fitment Check:.*?(?=SECTION\s+\d+\b|\Z)",
+        r"Step\s+0\s*[-\-]\s*Cross[-‑]Brand Fitment Check:.*?(?=SECTION\s+\d+\b|\Z)",
         "\n",
         text,
         flags=re.I | re.S,
@@ -305,7 +305,7 @@ def strip_ignored_content(text: str) -> str:
         text,
         flags=re.I | re.S,
     )
-    # Must stop at Part 2 OR next SECTION — otherwise eats following pages
+    # Must stop at Part 2 OR next SECTION - otherwise eats following pages
     text = re.sub(
         r"(?:Next step:|Generate Part 2|We need to generate Part 2|Given: the content from Part 1).*?"
         r"(?=Part\s*2\b|SECTION\s+\d+\b|\Z)",
@@ -355,8 +355,8 @@ def normalize_section_headers(text: str) -> str:
 def find_meta_block_start(page_text: str) -> int | None:
     """
     Start index of metadata/schema block.
-    Prefer Part 2 — Meta/METADATA; else plain Part 2 that leads into Meta Title;
-    else META TITLE line. Never treat 'PART 2 — SECTIONS 4–7' as meta.
+    Prefer Part 2 - Meta/METADATA; else plain Part 2 that leads into Meta Title;
+    else META TITLE line. Never treat 'PART 2 - SECTIONS 4–7' as meta.
     """
     m = PART2_META_RE.search(page_text)
     if m:
@@ -642,7 +642,7 @@ def parse_cost_guide(body: str) -> dict[str, Any]:
 
 def normalize_faq_question(q: str) -> str:
     q = clean(q)
-    for sep in (" — ", " - "):
+    for sep in (" - ", " - "):
         if sep in q:
             after = q.split(sep, 1)[1].strip()
             if after.endswith("?") or re.match(
@@ -966,7 +966,7 @@ def split_pages(text: str) -> list[tuple[str, str]]:
     if not starts:
         raise SystemExit(
             "No engine pages found. Expected lines like "
-            "'SECTION 1 — HERO' or 'SECTION 1: HERO'."
+            "'SECTION 1 - HERO' or 'SECTION 1: HERO'."
         )
 
     pages: list[tuple[str, str]] = []
@@ -999,7 +999,7 @@ def guess_page_title(preamble: str, hero: dict[str, Any]) -> str:
     if hero.get("tagPill"):
         return hero["tagPill"].split("•")[0].strip()
     if hero.get("h1"):
-        return re.split(r"\s+[—\-]\s+", hero["h1"])[0]
+        return re.split(r"\s+[-\-]\s+", hero["h1"])[0]
     lines = [clean(ln) for ln in preamble.splitlines() if clean(ln)]
     for ln in reversed(lines[-20:]):
         if re.search(r"\bengine page\b", ln, re.I):
@@ -1046,7 +1046,7 @@ def build_page(preamble: str, page_text: str) -> dict[str, Any]:
                 "",
                 h1,
                 flags=re.I,
-            ).strip(" —-")
+            ).strip(" --")
         page["meta"]["slug"] = slugify(raw or guess_page_title(preamble, page.get("hero", {})))
 
     if not page["meta"]["title"] and page.get("hero", {}).get("h1"):

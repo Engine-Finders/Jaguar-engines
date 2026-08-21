@@ -1,13 +1,13 @@
 {
   "meta": {
     "slug": "x-type",
-    "title": "X-Type Engine Replacement Cost UK — Compare Quotes",
+    "title": "X-Type Engine Replacement Cost UK - Compare Quotes",
     "titleCharCount": 52,
-    "description": "Every X-Type engine — V6 petrol and early diesel. 1 generation, real UK costs and reliability data. Compare prices from 15+ vetted Jaguar specialists today.",
+    "description": "Every X-Type engine - V6 petrol and early diesel. 1 generation, real UK costs and reliability data. Compare prices from 15+ vetted Jaguar specialists today.",
     "descriptionCharCount": 156,
     "openGraph": {
-      "title": "X-Type Engine Replacement Cost UK — Compare Quotes",
-      "description": "Every X-Type engine — V6 petrol and early diesel. 1 generation, real UK costs and reliability data. Compare prices from 15+ vetted Jaguar specialists today.",
+      "title": "X-Type Engine Replacement Cost UK - Compare Quotes",
+      "description": "Every X-Type engine - V6 petrol and early diesel. 1 generation, real UK costs and reliability data. Compare prices from 15+ vetted Jaguar specialists today.",
       "type": "website",
       "url": "https://jaguarengines.uk/jaguar/x-type/",
       "image": "/images/models/jaguar-x-type-hero.jpg",
@@ -15,8 +15,8 @@
     },
     "twitter": {
       "card": "summary_large_image",
-      "title": "X-Type Engine Replacement Cost UK — Compare Quotes",
-      "description": "Every X-Type engine — V6 petrol and early diesel. 1 generation, real UK costs and reliability data. Compare prices from 15+ vetted Jaguar specialists today."
+      "title": "X-Type Engine Replacement Cost UK - Compare Quotes",
+      "description": "Every X-Type engine - V6 petrol and early diesel. 1 generation, real UK costs and reliability data. Compare prices from 15+ vetted Jaguar specialists today."
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -59,25 +59,25 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "AJ200D (early) — 2.0 Diesel",
+              "name": "AJ200D (early) - 2.0 Diesel",
               "url": "https://jaguarengines.uk/engines/aj200d-early/"
             },
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "AJ-V6 2.0 — 2.0 V6 Petrol",
+              "name": "AJ-V6 2.0 - 2.0 V6 Petrol",
               "url": "https://jaguarengines.uk/engines/aj-v6-2-0/"
             },
             {
               "@type": "ListItem",
               "position": 3,
-              "name": "AJ-V6 2.5 — 2.5 V6 Petrol",
+              "name": "AJ-V6 2.5 - 2.5 V6 Petrol",
               "url": "https://jaguarengines.uk/engines/aj-v6-2-5/"
             },
             {
               "@type": "ListItem",
               "position": 4,
-              "name": "AJ-V6 3.0 — 3.0 V6 Petrol",
+              "name": "AJ-V6 3.0 - 3.0 V6 Petrol",
               "url": "https://jaguarengines.uk/engines/aj-v6-3-0/"
             }
           ]
@@ -106,7 +106,7 @@
               "name": "Which X-Type engine should I avoid?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The early AJ200D diesel — particularly pre-2007 examples. The timing chain tensioner concerns that later became infamous in Land Rover's Ingenium diesels are present in early X-Type applications, and with typical vehicle values under £3,000, the replacement cost (£2,500–£5,800) frequently exceeds the car's worth."
+                "text": "The early AJ200D diesel - particularly pre-2007 examples. The timing chain tensioner concerns that later became infamous in Land Rover's Ingenium diesels are present in early X-Type applications, and with typical vehicle values under £3,000, the replacement cost (£2,500–£5,800) frequently exceeds the car's worth."
               }
             },
             {
@@ -114,7 +114,7 @@
               "name": "How do I know if my X-Type needs a new engine?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Watch for these warning signs by engine type: Petrol V6 — Overheating from cooling system failure (thermostat housing cracks, water pump failure) — if ignored, head gasket damage follows. Also rough idle from throttle body issues. Diesel (AJ200D) — Cold-start rattle from timing chain tensioner wear, EGR-related smoke and reduced power, or DPF blockages on urban-driven cars. If you're experiencing any of these, get a specialist inspection — the repair cost may be lower than you think, but ignoring it will make it worse."
+                "text": "Watch for these warning signs by engine type: Petrol V6 - Overheating from cooling system failure (thermostat housing cracks, water pump failure) - if ignored, head gasket damage follows. Also rough idle from throttle body issues. Diesel (AJ200D) - Cold-start rattle from timing chain tensioner wear, EGR-related smoke and reduced power, or DPF blockages on urban-driven cars. If you're experiencing any of these, get a specialist inspection - the repair cost may be lower than you think, but ignoring it will make it worse."
               }
             },
             {
@@ -138,15 +138,15 @@
               "name": "How do I find my X-Type engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Your X-Type's engine code is stamped on the engine block (visible from the front, near the timing cover) and listed on the VIN plate under the bonnet. The code also appears in your service documentation. The codes used in this guide are: 2.0 V6 — AJ-V6 (Ford-sourced 2.0), 2.5 V6 — AJ-V6 (Ford-sourced 2.5), 3.0 V6 — AJ-V6 (Ford-sourced 3.0), 2.0 Diesel — AJ200D (early Ingenium derivative). Not sure which code you have? Use our identification tool or contact one of our 15+ vetted Jaguar specialists."
+                "text": "Your X-Type's engine code is stamped on the engine block (visible from the front, near the timing cover) and listed on the VIN plate under the bonnet. The code also appears in your service documentation. The codes used in this guide are: 2.0 V6 - AJ-V6 (Ford-sourced 2.0), 2.5 V6 - AJ-V6 (Ford-sourced 2.5), 3.0 V6 - AJ-V6 (Ford-sourced 3.0), 2.0 Diesel - AJ200D (early Ingenium derivative). Not sure which code you have? Use our identification tool or contact one of our 15+ vetted Jaguar specialists."
               }
             },
             {
               "@type": "Question",
-              "name": "X-Type vs S-Type — which is more reliable?",
+              "name": "X-Type vs S-Type - which is more reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The S-Type is the more expensive, older-generation Jaguar (based on the Lincoln LS platform) while the X-Type is the cheaper, Mondeo-derived model. In our data, the X-Type's petrol V6 engines actually score slightly higher on reliability than the S-Type's AJ126 V6 and AJ133 V8 — but the X-Type's much lower vehicle values mean replacement cost is more likely to exceed the car's worth. The S-Type carries a higher base value, making repair more viable on a £5,000+ example. Read the full comparison: X-Type vs S-Type →"
+                "text": "The S-Type is the more expensive, older-generation Jaguar (based on the Lincoln LS platform) while the X-Type is the cheaper, Mondeo-derived model. In our data, the X-Type's petrol V6 engines actually score slightly higher on reliability than the S-Type's AJ126 V6 and AJ133 V8 - but the X-Type's much lower vehicle values mean replacement cost is more likely to exceed the car's worth. The S-Type carries a higher base value, making repair more viable on a £5,000+ example. Read the full comparison: X-Type vs S-Type →"
               }
             }
           ]
@@ -191,7 +191,7 @@
         },
         {
           "@type": "WebPage",
-          "name": "X-Type Engine Replacement Cost UK — Compare Quotes",
+          "name": "X-Type Engine Replacement Cost UK - Compare Quotes",
           "url": "https://jaguarengines.uk/jaguar/x-type/",
           "author": {
             "@type": "Organization",
@@ -219,8 +219,8 @@
   },
   "hero": {
     "tagPill": "Jaguar • X-Type • 2001–2009 • 1 Generation • AJ200D • Duratec V6",
-    "h1": "X-Type Engines — The Complete UK Guide",
-    "subHeadline": "One generation, three engine families — the Ford-derived 2.0/2.5/3.0 V6 and the early Ingenium diesel. Real failure data, honest repair-vs-replace economics, and a verdict on whether ownership still makes sense for the UK's most affordable entry-point Jaguar. Backed by 120+ real UK X-Type engine enquiries in 2025 [JAG-VERIFIED].",
+    "h1": "X-Type Engines - The Complete UK Guide",
+    "subHeadline": "One generation, three engine families - the Ford-derived 2.0/2.5/3.0 V6 and the early Ingenium diesel. Real failure data, honest repair-vs-replace economics, and a verdict on whether ownership still makes sense for the UK's most affordable entry-point Jaguar. Backed by 120+ real UK X-Type engine enquiries in 2025 [JAG-VERIFIED].",
     "trustStrip": [
       {
         "icon": "📊",
@@ -245,7 +245,7 @@
     }
   },
   "ownershipVerdict": {
-    "h2": "X-Type — The Ownership Verdict",
+    "h2": "X-Type - The Ownership Verdict",
     "metrics": [
       {
         "metric": "Overall Ownership Rating",
@@ -253,7 +253,7 @@
       },
       {
         "metric": "Replacement Economics",
-        "ourCall": "⚠️ The X-Type rule: check the value before the engine — a £2,500–£5,800 recon against a £1,500–£5,000 car puts many examples above the 60% scrap threshold."
+        "ourCall": "⚠️ The X-Type rule: check the value before the engine - a £2,500–£5,800 recon against a £1,500–£5,000 car puts many examples above the 60% scrap threshold."
       },
       {
         "metric": "Reliability",
@@ -261,15 +261,15 @@
       },
       {
         "metric": "Most Reliable Engine",
-        "ourCall": "2.5 V6 AJ-V6 — the most widely available petrol option, though age-related cooling system issues are common"
+        "ourCall": "2.5 V6 AJ-V6 - the most widely available petrol option, though age-related cooling system issues are common"
       },
       {
         "metric": "Highest-Risk Engine",
-        "ourCall": "AJ200D (early Ingenium diesel) — early diesel units share timing chain concerns with later Ingenium engines, paired with host values that rarely justify replacement"
+        "ourCall": "AJ200D (early Ingenium diesel) - early diesel units share timing chain concerns with later Ingenium engines, paired with host values that rarely justify replacement"
       },
       {
         "metric": "Best Used Buy",
-        "ourCall": "2007+ 2.5 V6 with full service history — the later cars have the most resolved electrical gremlins and the V6 is cheaper to replace than the diesel"
+        "ourCall": "2007+ 2.5 V6 with full service history - the later cars have the most resolved electrical gremlins and the V6 is cheaper to replace than the diesel"
       },
       {
         "metric": "Average Engine Replacement",
@@ -277,14 +277,14 @@
       },
       {
         "metric": "Most Common Failure Enquiry",
-        "ourCall": "Cooling system failures (water pump, thermostat housing) — 35% of petrol X-Type engine enquiries [PATTERN DATA]"
+        "ourCall": "Cooling system failures (water pump, thermostat housing) - 35% of petrol X-Type engine enquiries [PATTERN DATA]"
       },
       {
         "metric": "Jaguar Ranking",
-        "ourCall": "⚠️ Check Value — the most affordable Jaguar to buy, but the most expensive to keep if something fails"
+        "ourCall": "⚠️ Check Value - the most affordable Jaguar to buy, but the most expensive to keep if something fails"
       }
     ],
-    "oneLineVerdict": "The X-Type is the cheapest Jaguar you'll find on AutoTrader — and the one we're most likely to tell you to scrap if the engine fails. Buy one with cash, not credit, and treat it as a gamble you can afford to lose."
+    "oneLineVerdict": "The X-Type is the cheapest Jaguar you'll find on AutoTrader - and the one we're most likely to tell you to scrap if the engine fails. Buy one with cash, not credit, and treat it as a gamble you can afford to lose."
   },
   "atAGlance": {
     "h2": "X-Type at a Glance",
@@ -307,15 +307,15 @@
       },
       {
         "metric": "Most Enquired Engine (2025)",
-        "value": "AJ200D — early Ingenium diesel [JAG-VERIFIED]"
+        "value": "AJ200D - early Ingenium diesel [JAG-VERIFIED]"
       },
       {
         "metric": "Most Reliable",
-        "value": "2.5 V6 — most widely available, cheapest parts"
+        "value": "2.5 V6 - most widely available, cheapest parts"
       },
       {
         "metric": "Highest-Risk",
-        "value": "AJ200D — early diesel timing chain concerns"
+        "value": "AJ200D - early diesel timing chain concerns"
       },
       {
         "metric": "Typical Replacement Cost",
@@ -323,7 +323,7 @@
       },
       {
         "metric": "Typical Host Value",
-        "value": "£1,500–£5,000 [THIRD-PARTY — AutoTrader UK 2025]"
+        "value": "£1,500–£5,000 [THIRD-PARTY - AutoTrader UK 2025]"
       },
       {
         "metric": "Overall Rating",
@@ -332,15 +332,15 @@
     ]
   },
   "generations": {
-    "h2": "X-Type — One Generation, Four Powertrains",
-    "subHeadline": "The X400 ran from 2001 to 2009 with a single body shape — but engine choice and facelift year define the ownership experience more than any other Jaguar we cover.",
+    "h2": "X-Type - One Generation, Four Powertrains",
+    "subHeadline": "The X400 ran from 2001 to 2009 with a single body shape - but engine choice and facelift year define the ownership experience more than any other Jaguar we cover.",
     "cards": [
       {
-        "title": "X400 (2001–2009) — 1 Generation",
+        "title": "X400 (2001–2009) - 1 Generation",
         "badge": "",
         "meta": "",
         "rating": "★ ★½☆☆",
-        "verdict": "The X400 is a Ford Mondeo underneath — and that's both its strength and its curse. Mechanical parts are cheap, but the Jaguar-branded electrical and cooling components are not. The later the car, the better the odds.",
+        "verdict": "The X400 is a Ford Mondeo underneath - and that's both its strength and its curse. Mechanical parts are cheap, but the Jaguar-branded electrical and cooling components are not. The later the car, the better the odds.",
         "cta": {
           "label": "Explore X400 Generation →",
           "href": "https://jaguarengines.uk/x-type/x400"
@@ -358,8 +358,8 @@
     }
   },
   "engineDatabase": {
-    "h2": "X-Type Engine Codes — The Complete Database",
-    "subHeadline": "Four engines across one generation — verified factory codes, real UK enquiry data, and honest reliability ratings.",
+    "h2": "X-Type Engine Codes - The Complete Database",
+    "subHeadline": "Four engines across one generation - verified factory codes, real UK enquiry data, and honest reliability ratings.",
     "columns": [
       "Engine Code",
       "Family",
@@ -430,7 +430,7 @@
   },
   "commonProblems": {
     "h2": "Common X-Type Engine Problems",
-    "subHeadline": "The failures that actually occur — from cooling system leaks to the early diesel's timing chain concerns.",
+    "subHeadline": "The failures that actually occur - from cooling system leaks to the early diesel's timing chain concerns.",
     "columns": [
       "#",
       "Problem",
@@ -442,7 +442,7 @@
       {
         "id": 1,
         "issue": "Thermostat Housing & Cooling System Leaks",
-        "description": "The <a href='https://jaguarengines.uk/engine/aj-v6-petrol'>AJ-V6</a>'s plastic thermostat housing is a known weak point — cracks with age, dumping coolant and causing overheating if ignored. Affects all petrol V6 engines, particularly pre-2005 cars.",
+        "description": "The <a href='https://jaguarengines.uk/engine/aj-v6-petrol'>AJ-V6</a>'s plastic thermostat housing is a known weak point - cracks with age, dumping coolant and causing overheating if ignored. Affects all petrol V6 engines, particularly pre-2005 cars.",
         "severity": {
           "icon": "🟠",
           "label": "Immediate",
@@ -456,7 +456,7 @@
       {
         "id": 2,
         "issue": "AJ200D Timing Chain Tensioner Wear",
-        "description": "The early Ingenium diesel shares the same pre-2019 tensioner concern as Land Rover's <a href='https://jaguarengines.uk/engine/ajd4-204dtd'>204DTD</a> — cold-start rattle and eventual chain failure if not caught early. X-Type values mean replacement cost often exceeds car value.",
+        "description": "The early Ingenium diesel shares the same pre-2019 tensioner concern as Land Rover's <a href='https://jaguarengines.uk/engine/ajd4-204dtd'>204DTD</a> - cold-start rattle and eventual chain failure if not caught early. X-Type values mean replacement cost often exceeds car value.",
         "severity": {
           "icon": "🔴",
           "label": "Catastrophic",
@@ -470,7 +470,7 @@
       {
         "id": 3,
         "issue": "Diesel EGR & DPF Clogging",
-        "description": "Urban-driven diesel X-Types suffer EGR valve and DPF blockages — the engine's emissions system isn't designed for city-only use. Common on 2007–2009 diesel cars.",
+        "description": "Urban-driven diesel X-Types suffer EGR valve and DPF blockages - the engine's emissions system isn't designed for city-only use. Common on 2007–2009 diesel cars.",
         "severity": {
           "icon": "🟡",
           "label": "Monitor",
@@ -484,7 +484,7 @@
       {
         "id": 4,
         "issue": "Water Pump Failure (Petrol)",
-        "description": "The AJ-V6 water pump is prone to bearing failure and leakage — typically 60k–100k miles. Warning signs: coolant loss, squealing from the front of the engine, or visible leaks.",
+        "description": "The AJ-V6 water pump is prone to bearing failure and leakage - typically 60k–100k miles. Warning signs: coolant loss, squealing from the front of the engine, or visible leaks.",
         "severity": {
           "icon": "🟠",
           "label": "Immediate",
@@ -498,7 +498,7 @@
       {
         "id": 5,
         "issue": "X-Type Electrical Gremlins",
-        "description": "Window regulators, central locking and connector corrosion — a legacy of the Ford Mondeo platform and the source of Jaguar's older \"electrical\" reputation. Not engine-related, but frequently mistyped as an engine problem.",
+        "description": "Window regulators, central locking and connector corrosion - a legacy of the Ford Mondeo platform and the source of Jaguar's older \"electrical\" reputation. Not engine-related, but frequently mistyped as an engine problem.",
         "severity": {
           "icon": "🟢",
           "label": "Low",
@@ -512,7 +512,7 @@
       {
         "id": 6,
         "issue": "Throttle Body & Idle Control Valve Issues",
-        "description": "A common AJ-V6 complaint — idle speed hunting, stalling at junctions, and rough running. Typically traced to a sticking idle control valve or failing throttle position sensor.",
+        "description": "A common AJ-V6 complaint - idle speed hunting, stalling at junctions, and rough running. Typically traced to a sticking idle control valve or failing throttle position sensor.",
         "severity": {
           "icon": "🟡",
           "label": "Monitor",
@@ -548,7 +548,7 @@
     ]
   },
   "marketIntelligence": {
-    "h2": "X-Type Market Intelligence — What 120 UK Owners Told Us in 2025",
+    "h2": "X-Type Market Intelligence - What 120 UK Owners Told Us in 2025",
     "signals": [
       {
         "signal": "Total X-Type enquiries",
@@ -562,29 +562,29 @@
       },
       {
         "signal": "Most-enquired engine",
-        "data": "AJ200D diesel — 45 enquiries [JAG-VERIFIED]",
+        "data": "AJ200D diesel - 45 enquiries [JAG-VERIFIED]",
         "demandTrend": "⬇ Falling"
       },
       {
         "signal": "Most-enquired failure",
-        "data": "Cooling system issues — 35% of petrol enquiries [PATTERN DATA]",
+        "data": "Cooling system issues - 35% of petrol enquiries [PATTERN DATA]",
         "demandTrend": "➡ Stable"
       }
     ],
     "insights": [
-      "\"Interesting insight: Diesel X-Types generate fewer enquiries than petrols, but the enquiries they do generate are much more likely to be catastrophic — the AJ200D's timing chain concerns and the car's low value often combine to make replacement uneconomical.\"",
+      "\"Interesting insight: Diesel X-Types generate fewer enquiries than petrols, but the enquiries they do generate are much more likely to be catastrophic - the AJ200D's timing chain concerns and the car's low value often combine to make replacement uneconomical.\"",
       "The petrol V6 engines account for 70% of enquiries, with cooling system failures (thermostat housing, water pump, radiator) being the single most common complaint.",
-      "With typical X-Type values now sitting under £3,000 for most examples, replacement cost consistently exceeds 60% of vehicle value across all engine variants — making the X-Type one of the highest-risk Jaguars to own in 2025."
+      "With typical X-Type values now sitting under £3,000 for most examples, replacement cost consistently exceeds 60% of vehicle value across all engine variants - making the X-Type one of the highest-risk Jaguars to own in 2025."
     ],
     "liveEnquiryFeedNote": ""
   },
   "editorialPullQuote": {
     "title": "The One Thing We'd Tell Every X-Type Buyer",
-    "quote": "Buy the 2.5 V6, buy it with cash, and don't fall in love with it. The X-Type is a Mondeo under the skin — and when it breaks, you'll be paying Jaguar prices to fix a Ford. At under £3,000, it's a disposable car, not a keeper. End of Sections 1-7 for Jaguar X-Type. Ready for Sections 8-14. Jaguar X-Type — Sections 8-14"
+    "quote": "Buy the 2.5 V6, buy it with cash, and don't fall in love with it. The X-Type is a Mondeo under the skin - and when it breaks, you'll be paying Jaguar prices to fix a Ford. At under £3,000, it's a disposable car, not a keeper. End of Sections 1-7 for Jaguar X-Type. Ready for Sections 8-14. Jaguar X-Type - Sections 8-14"
   },
   "replacementCosts": {
-    "h2": "X-Type Engine Replacement Costs — By Generation",
-    "subHeadline": "Real UK pricing for every X-Type engine — used, reconditioned and rebuilt supply-only, with independent labour guidance.",
+    "h2": "X-Type Engine Replacement Costs - By Generation",
+    "subHeadline": "Real UK pricing for every X-Type engine - used, reconditioned and rebuilt supply-only, with independent labour guidance.",
     "tables": [
       {
         "title": "",
@@ -599,15 +599,15 @@
         "rows": []
       }
     ],
-    "figuresNote": "Labour estimate: Fitting an X-Type engine typically takes 8–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE]. The X-Type rule — check the value before the engine: An X-Type worth £2,000–£3,000 with a failed AJ200D diesel requiring a £2,500–£5,800 recon is sitting at 85–125% of the car's value — well above our 60% Jaguar scrap threshold. Even the cheaper petrol V6 recon at £1,800–£3,500 represents 60–120% of the car's worth on lower-value examples. We'd tell most owners to scrap it, get a valuation, and put the money towards a newer car rather than repair. This is the model where \"repair vs replace\" stops being a financial decision and becomes a question of sentiment — and sentiment doesn't pay garage bills. Use our diagnostic tool below to run the numbers for your specific car.",
-    "labourEstimate": "Fitting an X-Type engine typically takes 8–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE]. The X-Type rule — check the value before the engine: An X-Type worth £2,000–£3,000 with a failed AJ200D diesel requiring a £2,500–£5,800 recon is sitting at 85–125% of the car's value — well above our 60% Jaguar scrap threshold. Even the cheaper petrol V6 recon at £1,800–£3,500 represents 60–120% of the car's worth on lower-value examples. We'd tell most owners to scrap it, get a valuation, and put the money towards a newer car rather than repair. This is the model where \"repair vs replace\" stops being a financial decision and becomes a question of sentiment — and sentiment doesn't pay garage bills. Use our diagnostic tool below to run the numbers for your specific car.",
+    "figuresNote": "Labour estimate: Fitting an X-Type engine typically takes 8–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE]. The X-Type rule - check the value before the engine: An X-Type worth £2,000–£3,000 with a failed AJ200D diesel requiring a £2,500–£5,800 recon is sitting at 85–125% of the car's value - well above our 60% Jaguar scrap threshold. Even the cheaper petrol V6 recon at £1,800–£3,500 represents 60–120% of the car's worth on lower-value examples. We'd tell most owners to scrap it, get a valuation, and put the money towards a newer car rather than repair. This is the model where \"repair vs replace\" stops being a financial decision and becomes a question of sentiment - and sentiment doesn't pay garage bills. Use our diagnostic tool below to run the numbers for your specific car.",
+    "labourEstimate": "Fitting an X-Type engine typically takes 8–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE]. The X-Type rule - check the value before the engine: An X-Type worth £2,000–£3,000 with a failed AJ200D diesel requiring a £2,500–£5,800 recon is sitting at 85–125% of the car's value - well above our 60% Jaguar scrap threshold. Even the cheaper petrol V6 recon at £1,800–£3,500 represents 60–120% of the car's worth on lower-value examples. We'd tell most owners to scrap it, get a valuation, and put the money towards a newer car rather than repair. This is the model where \"repair vs replace\" stops being a financial decision and becomes a question of sentiment - and sentiment doesn't pay garage bills. Use our diagnostic tool below to run the numbers for your specific car.",
     "economicsBox": {
       "title": "",
       "text": ""
     }
   },
   "engineEvolution": {
-    "h2": "How the X-Type Engine Range Evolved — 2001 to 2009",
+    "h2": "How the X-Type Engine Range Evolved - 2001 to 2009",
     "columns": [
       "Era",
       "Years",
@@ -620,36 +620,36 @@
         "era": "Launch Era",
         "years": "2001–2003",
         "keyEngines": "2.5 V6, 3.0 V6",
-        "whyBmwChanged": "Jaguar needed a compact executive to compete with BMW 3 Series and Mercedes C-Class — the X-Type was built on the Ford Mondeo (CD132) platform to keep costs down",
+        "whyBmwChanged": "Jaguar needed a compact executive to compete with BMW 3 Series and Mercedes C-Class - the X-Type was built on the Ford Mondeo (CD132) platform to keep costs down",
         "worthKnowing": "The 2.5 V6 was the volume seller at launch; the 3.0 V6 was the performance flagship but carried a significant fuel economy penalty"
       },
       {
         "era": "Engine Expansion",
         "years": "2003–2005",
         "keyEngines": "2.0 V6 added, 2.0D diesel introduced",
-        "whyBmwChanged": "Emissions regulations and fuel costs pushed Jaguar to add smaller engines — the 2.0 V6 lowered the entry price, the diesel responded to corporate demand",
-        "worthKnowing": "The 2.0D was a PSA/Ford-sourced HDi unit, not a Jaguar-designed engine — the first diesel in a Jaguar since the 1950s"
+        "whyBmwChanged": "Emissions regulations and fuel costs pushed Jaguar to add smaller engines - the 2.0 V6 lowered the entry price, the diesel responded to corporate demand",
+        "worthKnowing": "The 2.0D was a PSA/Ford-sourced HDi unit, not a Jaguar-designed engine - the first diesel in a Jaguar since the 1950s"
       },
       {
         "era": "Facelift Era",
         "years": "2005–2007",
         "keyEngines": "All engines carried forward, minor power hikes",
-        "whyBmwChanged": "Mid-cycle refresh across the X-Type range — cosmetic updates and minor mechanical revisions rather than powertrain changes",
-        "worthKnowing": "The facelift cars have better electrical reliability than the pre-2005 cars — a genuine upgrade worth chasing"
+        "whyBmwChanged": "Mid-cycle refresh across the X-Type range - cosmetic updates and minor mechanical revisions rather than powertrain changes",
+        "worthKnowing": "The facelift cars have better electrical reliability than the pre-2005 cars - a genuine upgrade worth chasing"
       },
       {
         "era": "Final Years",
         "years": "2007–2009",
         "keyEngines": "AJ200D diesel introduced (early Ingenium), petrol V6 range continued",
-        "whyBmwChanged": "Jaguar began phasing in its own Ingenium diesel architecture — the first X-Types to carry the engine code that would later become infamous in Land Rovers",
-        "worthKnowing": "The AJ200D in the X-Type is a rare early example of the Ingenium diesel before its widespread adoption — and before the timing chain concerns were fully understood"
+        "whyBmwChanged": "Jaguar began phasing in its own Ingenium diesel architecture - the first X-Types to carry the engine code that would later become infamous in Land Rovers",
+        "worthKnowing": "The AJ200D in the X-Type is a rare early example of the Ingenium diesel before its widespread adoption - and before the timing chain concerns were fully understood"
       },
       {
         "era": "End of Production",
         "years": "2009",
         "keyEngines": "All engines discontinued with the X-Type",
-        "whyBmwChanged": "Jaguar discontinued the X-Type to focus on the XF and XJ — the compact executive segment was abandoned until the XE arrived in 2015",
-        "worthKnowing": "The X-Type was the last Jaguar built on a Ford platform — a link to the Ford ownership era that ended in 2008"
+        "whyBmwChanged": "Jaguar discontinued the X-Type to focus on the XF and XJ - the compact executive segment was abandoned until the XE arrived in 2015",
+        "worthKnowing": "The X-Type was the last Jaguar built on a Ford platform - a link to the Ford ownership era that ended in 2008"
       }
     ]
   },
@@ -664,12 +664,12 @@
       {
         "buyerProfile": "Family Buyer",
         "rating": "★★☆☆☆",
-        "verdict": "The X-Type is small by modern SUV standards — rear legroom is tight and the boot is modest. Buy it as a second car, not the family workhorse. The estate is more practical but less common."
+        "verdict": "The X-Type is small by modern SUV standards - rear legroom is tight and the boot is modest. Buy it as a second car, not the family workhorse. The estate is more practical but less common."
       },
       {
         "buyerProfile": "Daily Commuter",
         "rating": "★★½☆☆",
-        "verdict": "The 2.5 V6 will return 28–32 mpg on a run, 22–25 mpg around town — not terrible for a V6, but the diesel would be better if it weren't for the timing chain risk. Factor in premium fuel if you want to keep the V6 happy."
+        "verdict": "The 2.5 V6 will return 28–32 mpg on a run, 22–25 mpg around town - not terrible for a V6, but the diesel would be better if it weren't for the timing chain risk. Factor in premium fuel if you want to keep the V6 happy."
       },
       {
         "buyerProfile": "Budget Owner",
@@ -679,25 +679,25 @@
       {
         "buyerProfile": "First-Time Buyer",
         "rating": "★★½☆☆",
-        "verdict": "Cheap to buy, but the insurance group is higher than you'd expect (Group 16–18 for the V6s). The 2.0 V6 is the sensible first-time choice — lower insurance, better economy, and if it breaks, you're not losing a valuable car."
+        "verdict": "Cheap to buy, but the insurance group is higher than you'd expect (Group 16–18 for the V6s). The 2.0 V6 is the sensible first-time choice - lower insurance, better economy, and if it breaks, you're not losing a valuable car."
       },
       {
         "buyerProfile": "First-Time Premium Buyer",
         "rating": "★★☆☆☆",
-        "verdict": "It's the cheapest way into a Jaguar badge — but it's also the least Jaguar-like Jaguar. The Mondeo underpinnings are obvious when you drive it back-to-back with an XF or XJ. Buy it for the badge, but know you're not getting the full Jaguar experience."
+        "verdict": "It's the cheapest way into a Jaguar badge - but it's also the least Jaguar-like Jaguar. The Mondeo underpinnings are obvious when you drive it back-to-back with an XF or XJ. Buy it for the badge, but know you're not getting the full Jaguar experience."
       }
     ]
   },
   "calculatorCta": {
-    "h2": "Can I Repair My X-Type Engine — or Should I Replace It?",
-    "intro": "Your X-Type is worth £1,500–£5,000 on today's market. That £2,500–£5,800 recon cost sits at a critical threshold — the difference between a financially sensible repair and a car you scrap. Use our calculator to get a personalised verdict based on your actual vehicle value and symptoms.",
+    "h2": "Can I Repair My X-Type Engine - or Should I Replace It?",
+    "intro": "Your X-Type is worth £1,500–£5,000 on today's market. That £2,500–£5,800 recon cost sits at a critical threshold - the difference between a financially sensible repair and a car you scrap. Use our calculator to get a personalised verdict based on your actual vehicle value and symptoms.",
     "paths": [
       {
-        "label": "Path 1 — Know your engine? Launch the Jaguar calculator with X-Type pre-selected",
+        "label": "Path 1 - Know your engine? Launch the Jaguar calculator with X-Type pre-selected",
         "href": "jaguarengines.uk/#engine-calculator?model=x-type"
       },
       {
-        "label": "Path 2 — Not sure which engine you have? We'll identify it first → jaguarengines.uk/#engine-calculator?model=x-type (identification happens as step one inside the tool)",
+        "label": "Path 2 - Not sure which engine you have? We'll identify it first → jaguarengines.uk/#engine-calculator?model=x-type (identification happens as step one inside the tool)",
         "href": "#"
       }
     ]
@@ -713,17 +713,17 @@
       {
         "icon": "💚",
         "title": "We Tell You When Not to Repair",
-        "text": "The X-Type is the model we're most likely to tell you to scrap. When replacement cost exceeds 60% of vehicle value, we say so — that's the difference between a knowledge base and a sales page."
+        "text": "The X-Type is the model we're most likely to tell you to scrap. When replacement cost exceeds 60% of vehicle value, we say so - that's the difference between a knowledge base and a sales page."
       },
       {
         "icon": "🔧",
         "title": "Vetted Jaguar Specialists",
-        "text": "Our network of 15+ vetted Jaguar specialists includes technicians who have worked on X-Types since the early 2000s — they know the cooling system weak points and the early diesel timing chain concerns better than anyone."
+        "text": "Our network of 15+ vetted Jaguar specialists includes technicians who have worked on X-Types since the early 2000s - they know the cooling system weak points and the early diesel timing chain concerns better than anyone."
       },
       {
         "icon": "🏆",
         "title": "Part of Engine Finders",
-        "text": "JaguarEngine.uk is part of the Engine Finders family, the UK's leading engine replacement marketplace — giving you the research depth of an independent authority with a vetted route to action when you need one."
+        "text": "JaguarEngine.uk is part of the Engine Finders family, the UK's leading engine replacement marketplace - giving you the research depth of an independent authority with a vetted route to action when you need one."
       }
     ]
   },
@@ -743,12 +743,12 @@
       {
         "id": 3,
         "question": "Which X-Type engine should I avoid?",
-        "answer": "The early AJ200D diesel — particularly pre-2007 examples. The timing chain tensioner concerns that later became infamous in Land Rover's Ingenium diesels are present in early X-Type applications, and with typical vehicle values under £3,000, the replacement cost (£2,500–£5,800) frequently exceeds the car's worth. [JAG-VERIFIED]"
+        "answer": "The early AJ200D diesel - particularly pre-2007 examples. The timing chain tensioner concerns that later became infamous in Land Rover's Ingenium diesels are present in early X-Type applications, and with typical vehicle values under £3,000, the replacement cost (£2,500–£5,800) frequently exceeds the car's worth. [JAG-VERIFIED]"
       },
       {
         "id": 4,
         "question": "How do I know if my X-Type needs a new engine?",
-        "answer": "Watch for these warning signs by engine type: Petrol V6: Overheating from cooling system failure (thermostat housing cracks, water pump failure) — if ignored, head gasket damage follows. Also rough idle from throttle body issues. Diesel (AJ200D): Cold-start rattle from timing chain tensioner wear, EGR-related smoke and reduced power, or DPF blockages on urban-driven cars. If you're experiencing any of these, get a specialist inspection — the repair cost may be lower than you think, but ignoring it will make it worse."
+        "answer": "Watch for these warning signs by engine type: Petrol V6: Overheating from cooling system failure (thermostat housing cracks, water pump failure) - if ignored, head gasket damage follows. Also rough idle from throttle body issues. Diesel (AJ200D): Cold-start rattle from timing chain tensioner wear, EGR-related smoke and reduced power, or DPF blockages on urban-driven cars. If you're experiencing any of these, get a specialist inspection - the repair cost may be lower than you think, but ignoring it will make it worse."
       },
       {
         "id": 5,
@@ -767,28 +767,28 @@
       },
       {
         "id": 2,
-        "question": "0 V6 — AJ-V6 (Ford-sourced 2.0)",
+        "question": "0 V6 - AJ-V6 (Ford-sourced 2.0)",
         "answer": ""
       },
       {
         "id": 2,
-        "question": "5 V6 — AJ-V6 (Ford-sourced 2.5)",
+        "question": "5 V6 - AJ-V6 (Ford-sourced 2.5)",
         "answer": ""
       },
       {
         "id": 3,
-        "question": "0 V6 — AJ-V6 (Ford-sourced 3.0)",
+        "question": "0 V6 - AJ-V6 (Ford-sourced 3.0)",
         "answer": ""
       },
       {
         "id": 2,
-        "question": "0 Diesel — AJ200D (early Ingenium derivative)",
+        "question": "0 Diesel - AJ200D (early Ingenium derivative)",
         "answer": "Not sure which code you have? Use our identification tool or contact one of our 15+ vetted Jaguar specialists."
       },
       {
         "id": 8,
-        "question": "X-Type vs S-Type — which is more reliable?",
-        "answer": "The S-Type is the more expensive, older-generation Jaguar (based on the Lincoln LS platform) while the X-Type is the cheaper, Mondeo-derived model. In our data, the X-Type's petrol V6 engines actually score slightly higher on reliability than the S-Type's AJ126 V6 and <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> V8 — but the X-Type's much lower vehicle values mean replacement cost is more likely to exceed the car's worth. The S-Type carries a higher base value, making repair more viable on a £5,000+ example. Read the full comparison: X-Type vs S-Type →"
+        "question": "X-Type vs S-Type - which is more reliable?",
+        "answer": "The S-Type is the more expensive, older-generation Jaguar (based on the Lincoln LS platform) while the X-Type is the cheaper, Mondeo-derived model. In our data, the X-Type's petrol V6 engines actually score slightly higher on reliability than the S-Type's AJ126 V6 and <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> V8 - but the X-Type's much lower vehicle values mean replacement cost is more likely to exceed the car's worth. The S-Type carries a higher base value, making repair more viable on a £5,000+ example. Read the full comparison: X-Type vs S-Type →"
       }
     ]
   },

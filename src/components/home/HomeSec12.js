@@ -3,6 +3,7 @@
 import Image from "next/image";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
+import HomeIcon from "@/components/home/homeIcons";
 
 const iconPaths = {
   chart: <path d="M4 19V9m5 10V5m5 14v-7m5 7H3" />,
@@ -31,10 +32,10 @@ function Icon({ name, className = "h-5 w-5", strokeWidth = 2 }) {
 
 function signalIcon(title) {
   const lower = title.toLowerCase();
-  if (lower.includes("real data")) return "chart";
-  if (lower.includes("not to repair")) return "shield";
-  if (lower.includes("specialists")) return "wrench";
-  return "trophy";
+  if (lower.includes("real data")) return "real-data";
+  if (lower.includes("not to repair")) return "repair-vs-replace";
+  if (lower.includes("specialists")) return "vetted-specialist";
+  return "genuine-failure-data";
 }
 
 export default function HomeSec12({ data }) {
@@ -65,8 +66,8 @@ export default function HomeSec12({ data }) {
                 <span className={`flex h-8 w-8 items-center justify-center rounded-md text-[0.85rem] font-bold text-white ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}>
                   {item.id}
                 </span>
-                <span className={`flex h-10 w-10 items-center justify-center rounded-full border ${isDark ? "border-[var(--color-border)] bg-[var(--color-chrome)] text-[var(--color-text)]" : "border-[#cfe0ff] bg-[#eef5ff] text-[var(--color-primary)]"}`}>
-                  <Icon name={signalIcon(item.title)} className="h-5 w-5" strokeWidth={2.1} />
+                <span className="flex h-10 w-10 items-center justify-center">
+                  <HomeIcon name={signalIcon(item.title)} isDark={isDark} className="h-8 w-8" />
                 </span>
               </div>
               <h3 className={`text-[1rem] font-bold leading-tight ${isDark ? "text-white" : "text-[#071827]"}`}>{item.title}</h3>

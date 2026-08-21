@@ -1,13 +1,13 @@
 {
   "meta": {
     "slug": "xe",
-    "title": "XE Engine Replacement Cost UK — Compare Quotes",
+    "title": "XE Engine Replacement Cost UK - Compare Quotes",
     "titleCharCount": 51,
-    "description": "Every XE engine — AJ200D diesel and AJ200P petrol. One generation, real UK costs and reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
+    "description": "Every XE engine - AJ200D diesel and AJ200P petrol. One generation, real UK costs and reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
     "descriptionCharCount": 156,
     "openGraph": {
-      "title": "XE Engine Replacement Cost UK — Compare Quotes",
-      "description": "Every XE engine — AJ200D diesel and AJ200P petrol. One generation, real UK costs and reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
+      "title": "XE Engine Replacement Cost UK - Compare Quotes",
+      "description": "Every XE engine - AJ200D diesel and AJ200P petrol. One generation, real UK costs and reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
       "type": "website",
       "url": "https://jaguarengines.uk/xe/",
       "image": "https://jaguarengines.uk/images/models/jaguar-xe-hero.jpg",
@@ -15,8 +15,8 @@
     },
     "twitter": {
       "card": "summary_large_image",
-      "title": "XE Engine Replacement Cost UK — Compare Quotes",
-      "description": "Every XE engine — AJ200D diesel and AJ200P petrol. One generation, real UK costs and reliability data. Get free quotes from 15+ vetted Jaguar specialists today."
+      "title": "XE Engine Replacement Cost UK - Compare Quotes",
+      "description": "Every XE engine - AJ200D diesel and AJ200P petrol. One generation, real UK costs and reliability data. Get free quotes from 15+ vetted Jaguar specialists today."
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -110,15 +110,15 @@
               "name": "Is it worth replacing an XE engine?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "It depends on your car's value. For a 2019+ XE worth £12,000–£20,000, a £3,000–£5,800 recon sits at 25–48% of the car's value — well within our 60% threshold, so replacement is a no-brainer. For a pre-2019 diesel worth under £8,000, a £5,800 recon is 72.5% — that's scrap-threshold territory. Use our decision tool to assess your specific case."
+                "text": "It depends on your car's value. For a 2019+ XE worth £12,000–£20,000, a £3,000–£5,800 recon sits at 25–48% of the car's value - well within our 60% threshold, so replacement is a no-brainer. For a pre-2019 diesel worth under £8,000, a £5,800 recon is 72.5% - that's scrap-threshold territory. Use our decision tool to assess your specific case."
               }
             },
             {
               "@type": "Question",
-              "name": "Which XE should I buy — 2015–2019 or 2019+?",
+              "name": "Which XE should I buy - 2015–2019 or 2019+?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Buy a 2019+ car with the AJ200P petrol. The facelift brought the timing-chain hardware revision for diesels, but the petrol was always clean — and the 2019 car gives you the revised interior, the newer infotainment, and crucially, the peace of mind of being past the pre-2019 tensioner risk. If you must have a diesel, insist on a 2019+ car with documented service history and 6k oil-change intervals."
+                "text": "Buy a 2019+ car with the AJ200P petrol. The facelift brought the timing-chain hardware revision for diesels, but the petrol was always clean - and the 2019 car gives you the revised interior, the newer infotainment, and crucially, the peace of mind of being past the pre-2019 tensioner risk. If you must have a diesel, insist on a 2019+ car with documented service history and 6k oil-change intervals."
               }
             },
             {
@@ -126,15 +126,15 @@
               "name": "How do I find my XE engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Your XE's engine code is stamped on the cylinder block (visible from underneath or through the wheel arch) and also appears on your V5C registration document. For the diesel, look for AJ200D or 204DTD; for the petrol, AJ200P or 204PT. If you're unsure, use our diagnostic calculator — we'll identify your engine from your VIN or registration number."
+                "text": "Your XE's engine code is stamped on the cylinder block (visible from underneath or through the wheel arch) and also appears on your V5C registration document. For the diesel, look for AJ200D or 204DTD; for the petrol, AJ200P or 204PT. If you're unsure, use our diagnostic calculator - we'll identify your engine from your VIN or registration number."
               }
             },
             {
               "@type": "Question",
-              "name": "XE vs XF — which is more reliable?",
+              "name": "XE vs XF - which is more reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Both carry a ✅ Safe verdict, but for different reasons. The XE benefits from the modern Ingenium range in its single generation — buy a 2019+ petrol and you're golden. The XF's later X260 generation is similarly safe, while the older X250 with the AJ126 V6 carries cooling-system risks. Read our full comparison: XE vs XF — Head-to-Head Verdict."
+                "text": "Both carry a ✅ Safe verdict, but for different reasons. The XE benefits from the modern Ingenium range in its single generation - buy a 2019+ petrol and you're golden. The XF's later X260 generation is similarly safe, while the older X250 with the AJ126 V6 carries cooling-system risks. Read our full comparison: XE vs XF - Head-to-Head Verdict."
               }
             }
           ]
@@ -177,7 +177,7 @@
         },
         {
           "@type": "WebPage",
-          "name": "XE Engine Replacement Cost UK — Compare Quotes",
+          "name": "XE Engine Replacement Cost UK - Compare Quotes",
           "url": "https://jaguarengines.uk/xe/",
           "author": {
             "@type": "Organization",
@@ -195,8 +195,8 @@
   },
   "hero": {
     "tagPill": "Jaguar • XE • 2015–2024 • 1 Generation • AJ200D • AJ200P • 260 Enquiries (2025)",
-    "h1": "XE Engines — The Complete UK Guide",
-    "subHeadline": "Every XE generation (one chassis, two distinct engine eras) — from the pre-2019 AJ200D timing-chain tensioner risk to the revised 2019+ units, real UK failure data, honest replacement costs, and 260 real owner enquiries in 2025 [JAG-VERIFIED]. No brand bias, just what we'd tell a friend.",
+    "h1": "XE Engines - The Complete UK Guide",
+    "subHeadline": "Every XE generation (one chassis, two distinct engine eras) - from the pre-2019 AJ200D timing-chain tensioner risk to the revised 2019+ units, real UK failure data, honest replacement costs, and 260 real owner enquiries in 2025 [JAG-VERIFIED]. No brand bias, just what we'd tell a friend.",
     "trustStrip": [
       {
         "icon": "📊",
@@ -221,7 +221,7 @@
     }
   },
   "ownershipVerdict": {
-    "h2": "XE — The Ownership Verdict",
+    "h2": "XE - The Ownership Verdict",
     "metrics": [
       {
         "metric": "Overall Ownership Rating",
@@ -229,7 +229,7 @@
       },
       {
         "metric": "Replacement Economics",
-        "ourCall": "✅ Safe — The XE rule: the 2019 facelift separates a risk engine from a keeper"
+        "ourCall": "✅ Safe - The XE rule: the 2019 facelift separates a risk engine from a keeper"
       },
       {
         "metric": "Reliability",
@@ -237,11 +237,11 @@
       },
       {
         "metric": "Most Reliable Engine",
-        "ourCall": "AJ200P / 204PT — Ingenium petrol, no meaningful failure pattern beyond routine water pump replacement"
+        "ourCall": "AJ200P / 204PT - Ingenium petrol, no meaningful failure pattern beyond routine water pump replacement"
       },
       {
         "metric": "Highest-Risk Engine",
-        "ourCall": "AJ200D / <a href='https://jaguarengines.uk/engine/ajd4-204dtd'>204DTD</a> (pre-2019) — timing chain tensioner wear shares Land Rover's Ingenium diesel caveat"
+        "ourCall": "AJ200D / <a href='https://jaguarengines.uk/engine/ajd4-204dtd'>204DTD</a> (pre-2019) - timing chain tensioner wear shares Land Rover's Ingenium diesel caveat"
       },
       {
         "metric": "Best Used Buy",
@@ -260,7 +260,7 @@
         "ourCall": "🚀 Most Enquired Saloon"
       }
     ],
-    "oneLineVerdict": "The XE is the gateway Jaguar that actually makes sense — but only if you buy 2019+ or stick to the petrol Ingenium; pre-2019 diesels carry the same timing-chain caveat as Land Rover's most expensive failures."
+    "oneLineVerdict": "The XE is the gateway Jaguar that actually makes sense - but only if you buy 2019+ or stick to the petrol Ingenium; pre-2019 diesels carry the same timing-chain caveat as Land Rover's most expensive failures."
   },
   "atAGlance": {
     "h2": "XE at a Glance",
@@ -308,22 +308,22 @@
     ]
   },
   "generations": {
-    "h2": "XE — One Generation, Two Engine Eras",
-    "subHeadline": "The XE ran from 2015 to 2024 on a single chassis — but the 2019 facelift divided the engine range into two eras with meaningfully different reliability profiles.",
+    "h2": "XE - One Generation, Two Engine Eras",
+    "subHeadline": "The XE ran from 2015 to 2024 on a single chassis - but the 2019 facelift divided the engine range into two eras with meaningfully different reliability profiles.",
     "cards": [
       {
         "title": "XE X760 (2015–2024)",
         "badge": "",
         "meta": "2015–2024 • AJ200D (diesel) • AJ200P (petrol)",
         "rating": "★★★☆☆ (pre-2019 diesel) / ★★★★☆ (2019+)",
-        "verdict": "The XE is the most sensible Jaguar saloon you can buy — provided you either choose the petrol Ingenium or insist on a 2019+ diesel with documented chain-inspection history. The pre-2019 diesel is the one caveat in an otherwise safe buy.",
+        "verdict": "The XE is the most sensible Jaguar saloon you can buy - provided you either choose the petrol Ingenium or insist on a 2019+ diesel with documented chain-inspection history. The pre-2019 diesel is the one caveat in an otherwise safe buy.",
         "cta": {
           "label": "Explore XE X760 →",
           "href": "https://jaguarengines.uk/xe/x760"
         }
       },
       {
-        "title": "The 2019 Line — The Only Line That Matters",
+        "title": "The 2019 Line - The Only Line That Matters",
         "badge": "",
         "meta": "Before 2019",
         "rating": "",
@@ -345,8 +345,8 @@
     }
   },
   "engineDatabase": {
-    "h2": "XE Engine Codes — The Complete Database",
-    "subHeadline": "Every engine ever fitted to the Jaguar XE — verified against OEM specifications, with real UK enquiry data and replacement costs.",
+    "h2": "XE Engine Codes - The Complete Database",
+    "subHeadline": "Every engine ever fitted to the Jaguar XE - verified against OEM specifications, with real UK enquiry data and replacement costs.",
     "columns": [
       "Engine Code",
       "Family",
@@ -399,13 +399,13 @@
     ],
     "confidenceScore": {
       "title": "How confident are these ratings?",
-      "text": "The AJ200D and AJ200P ratings: 85% confidence — based on 590 and 500 enquiries respectively [JAG-VERIFIED], cross-referenced against specialist interviews and owner-forum data. The 2019 split is documented in JLR service bulletins and confirmed by specialist consensus. All generation years and power figures have been verified against Parkers and Jaguar UK press materials. Data note (internal): No corrections needed — source data matched live verification. The AJ200D and AJ200P are correctly attributed to the X760 chassis; the 2019 facelift split is the only meaningful variant, and it has been correctly reflected in the reliability rating. All engine codes verified against Jaguar UK technical specifications."
+      "text": "The AJ200D and AJ200P ratings: 85% confidence - based on 590 and 500 enquiries respectively [JAG-VERIFIED], cross-referenced against specialist interviews and owner-forum data. The 2019 split is documented in JLR service bulletins and confirmed by specialist consensus. All generation years and power figures have been verified against Parkers and Jaguar UK press materials. Data note (internal): No corrections needed - source data matched live verification. The AJ200D and AJ200P are correctly attributed to the X760 chassis; the 2019 facelift split is the only meaningful variant, and it has been correctly reflected in the reliability rating. All engine codes verified against Jaguar UK technical specifications."
     },
     "dataCorrections": []
   },
   "commonProblems": {
     "h2": "Common XE Engine Problems",
-    "subHeadline": "What actually fails on Jaguar XE engines — ranked by severity, with real UK cost guidance.",
+    "subHeadline": "What actually fails on Jaguar XE engines - ranked by severity, with real UK cost guidance.",
     "columns": [
       "#",
       "Problem",
@@ -417,7 +417,7 @@
       {
         "id": 1,
         "issue": "AJ200D Timing Chain Tensioner Wear",
-        "description": "The same Ingenium diesel issue shared with Land Rover — pre-2019 tensioner design stretches and fails, often with little warning. Cold-start rattle is the primary symptom. Fitted to pre-2019 XE diesel models.",
+        "description": "The same Ingenium diesel issue shared with Land Rover - pre-2019 tensioner design stretches and fails, often with little warning. Cold-start rattle is the primary symptom. Fitted to pre-2019 XE diesel models.",
         "severity": {
           "icon": "🟡",
           "label": "Monitor",
@@ -459,7 +459,7 @@
       {
         "id": 4,
         "issue": "AJ200P Water Pump Failure",
-        "description": "The petrol Ingenium's only meaningful weak point — water pumps fail with age, leading to coolant leaks and potential overheating if ignored.",
+        "description": "The petrol Ingenium's only meaningful weak point - water pumps fail with age, leading to coolant leaks and potential overheating if ignored.",
         "severity": {
           "icon": "🟡",
           "label": "Monitor",
@@ -472,22 +472,22 @@
       },
       {
         "id": 5,
-        "issue": "Air Suspension — XE Not Applicable",
-        "description": "The XE uses conventional coil springs on all models — no air suspension system to fail. This category does not apply.",
+        "issue": "Air Suspension - XE Not Applicable",
+        "description": "The XE uses conventional coil springs on all models - no air suspension system to fail. This category does not apply.",
         "severity": {
           "icon": "",
-          "label": "—",
-          "type": "—"
+          "label": "-",
+          "type": "-"
         },
         "link": {
-          "label": "—",
+          "label": "-",
           "href": "#"
         }
       },
       {
         "id": 6,
         "issue": "Infotainment & Software Glitches",
-        "description": "Touch Pro system hangs, black screens and connectivity issues — particularly common on pre-2018 cars. Usually resolved with a software update.",
+        "description": "Touch Pro system hangs, black screens and connectivity issues - particularly common on pre-2018 cars. Usually resolved with a software update.",
         "severity": {
           "icon": "🟢",
           "label": "Low",
@@ -523,7 +523,7 @@
     ]
   },
   "marketIntelligence": {
-    "h2": "XE Market Intelligence — What 260+ UK Owners Told Us in 2025",
+    "h2": "XE Market Intelligence - What 260+ UK Owners Told Us in 2025",
     "signals": [
       {
         "signal": "XE X760 Enquiries",
@@ -547,20 +547,20 @@
       }
     ],
     "insights": [
-      "Interesting insight: The XE generates almost as many enquiries as the larger, older XF — 260 vs 276 — despite the XF having two generations of production. This suggests the XE's position as Jaguar's entry-level saloon is driving genuine owner research volume, not just market penetration of an older model. The XE's diesel enquiries (590 across Jaguar models) significantly outpace its petrol equivalents (500). This aligns with the UK's long-term diesel preference in executive saloons, but also means the timing-chain caveat affects a larger proportion of the XE market than it does in any other Jaguar model. The 2019 facelift is visible in our data as a clear dividing line — specialists consistently report far fewer timing-chain enquiries on post-2019 cars, but oil dilution and EGR cooler failures persist regardless of year, suggesting these are fundamental to the Ingenium diesel architecture rather than production-era issues."
+      "Interesting insight: The XE generates almost as many enquiries as the larger, older XF - 260 vs 276 - despite the XF having two generations of production. This suggests the XE's position as Jaguar's entry-level saloon is driving genuine owner research volume, not just market penetration of an older model. The XE's diesel enquiries (590 across Jaguar models) significantly outpace its petrol equivalents (500). This aligns with the UK's long-term diesel preference in executive saloons, but also means the timing-chain caveat affects a larger proportion of the XE market than it does in any other Jaguar model. The 2019 facelift is visible in our data as a clear dividing line - specialists consistently report far fewer timing-chain enquiries on post-2019 cars, but oil dilution and EGR cooler failures persist regardless of year, suggesting these are fundamental to the Ingenium diesel architecture rather than production-era issues."
     ],
     "liveEnquiryFeedNote": ""
   },
   "editorialPullQuote": {
     "title": "The One Thing We'd Tell Every XE Buyer",
-    "quote": "Buy 2019 or newer, and buy the petrol — the AJ200P has none of the diesel's timing-chain anxiety, water pump replacement is the only routine cost, and the XE's value proposition finally makes it the sensible Jaguar it always promised to be. If you absolutely must have the diesel, insist on documented chain-inspection history and 6k oil-change intervals. End of Sections 1-7"
+    "quote": "Buy 2019 or newer, and buy the petrol - the AJ200P has none of the diesel's timing-chain anxiety, water pump replacement is the only routine cost, and the XE's value proposition finally makes it the sensible Jaguar it always promised to be. If you absolutely must have the diesel, insist on documented chain-inspection history and 6k oil-change intervals. End of Sections 1-7"
   },
   "replacementCosts": {
-    "h2": "XE Engine Replacement Costs — By Generation",
-    "subHeadline": "Real UK supply-only pricing for used, reconditioned and rebuilt XE engines — with independent labour guidance.",
+    "h2": "XE Engine Replacement Costs - By Generation",
+    "subHeadline": "Real UK supply-only pricing for used, reconditioned and rebuilt XE engines - with independent labour guidance.",
     "tables": [
       {
-        "title": "Generation 1 — X760 (2015–2024)",
+        "title": "Generation 1 - X760 (2015–2024)",
         "columns": [
           "Variant",
           "Engine Code",
@@ -584,15 +584,15 @@
         "rows": []
       }
     ],
-    "figuresNote": "Labour estimate: Fitting an XE engine typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE]. The XE rule — gateway economics: The XE's value range (£7k–£20k) sits comfortably above even the upper end of its recon cost (£5,800) for most examples. A £5,800 reconditioned AJ200D against a £10,000 XE is 58% — just under our 60% scrap threshold, so it's borderline on cheaper examples but safe on most. For the petrol AJ200P at £5,000 against an £8,000 car, that's 62.5% — right on the threshold. Our honest call: if your XE is worth under £8,000 and needs a full recon, get a scrap valuation alongside any repair quote. If it's worth more than £10,000 and has good history, replace it without hesitation.",
-    "labourEstimate": "Fitting an XE engine typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE]. The XE rule — gateway economics: The XE's value range (£7k–£20k) sits comfortably above even the upper end of its recon cost (£5,800) for most examples. A £5,800 reconditioned AJ200D against a £10,000 XE is 58% — just under our 60% scrap threshold, so it's borderline on cheaper examples but safe on most. For the petrol AJ200P at £5,000 against an £8,000 car, that's 62.5% — right on the threshold. Our honest call: if your XE is worth under £8,000 and needs a full recon, get a scrap valuation alongside any repair quote. If it's worth more than £10,000 and has good history, replace it without hesitation.",
+    "figuresNote": "Labour estimate: Fitting an XE engine typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE]. The XE rule - gateway economics: The XE's value range (£7k–£20k) sits comfortably above even the upper end of its recon cost (£5,800) for most examples. A £5,800 reconditioned AJ200D against a £10,000 XE is 58% - just under our 60% scrap threshold, so it's borderline on cheaper examples but safe on most. For the petrol AJ200P at £5,000 against an £8,000 car, that's 62.5% - right on the threshold. Our honest call: if your XE is worth under £8,000 and needs a full recon, get a scrap valuation alongside any repair quote. If it's worth more than £10,000 and has good history, replace it without hesitation.",
+    "labourEstimate": "Fitting an XE engine typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE]. The XE rule - gateway economics: The XE's value range (£7k–£20k) sits comfortably above even the upper end of its recon cost (£5,800) for most examples. A £5,800 reconditioned AJ200D against a £10,000 XE is 58% - just under our 60% scrap threshold, so it's borderline on cheaper examples but safe on most. For the petrol AJ200P at £5,000 against an £8,000 car, that's 62.5% - right on the threshold. Our honest call: if your XE is worth under £8,000 and needs a full recon, get a scrap valuation alongside any repair quote. If it's worth more than £10,000 and has good history, replace it without hesitation.",
     "economicsBox": {
       "title": "",
       "text": ""
     }
   },
   "engineEvolution": {
-    "h2": "How the XE Engine Range Evolved — 2015 to Today",
+    "h2": "How the XE Engine Range Evolved - 2015 to Today",
     "columns": [
       "Era",
       "Years",
@@ -602,21 +602,21 @@
     ],
     "eras": [
       {
-        "era": "Launch — Ingenium Diesel Introduction",
+        "era": "Launch - Ingenium Diesel Introduction",
         "years": "2015–2017",
         "keyEngines": "AJ200D / 204DTD (2.0 diesel)",
         "whyBmwChanged": "Jaguar's first in-house four-cylinder diesel, replacing Ford-sourced units across the range",
-        "worthKnowing": "The diesel Ingenium was always the volume engine in the UK — 590 enquiries in 2025 prove it remains the most-researched XE engine."
+        "worthKnowing": "The diesel Ingenium was always the volume engine in the UK - 590 enquiries in 2025 prove it remains the most-researched XE engine."
       },
       {
         "era": "Petrol Ingenium Arrives",
         "years": "2017–2019",
         "keyEngines": "AJ200P / 204PT (2.0 petrol) added",
         "whyBmwChanged": "Emissions regulations and diesel backlash drove JLR to develop the petrol variant",
-        "worthKnowing": "The petrol Ingenium has consistently outperformed its diesel sibling in reliability data — our cleanest XE engine by some margin."
+        "worthKnowing": "The petrol Ingenium has consistently outperformed its diesel sibling in reliability data - our cleanest XE engine by some margin."
       },
       {
-        "era": "Facelift — Timing Chain Hardware Revision",
+        "era": "Facelift - Timing Chain Hardware Revision",
         "years": "2019–2024",
         "keyEngines": "AJ200D / 204DTD (revised tensioner)",
         "whyBmwChanged": "JLR silently updated the timing chain tensioner design in response to widespread failures on pre-2019 cars",
@@ -627,7 +627,7 @@
         "years": "2024",
         "keyEngines": "All Ingenium variants",
         "whyBmwChanged": "JLR's transition to full EV production ended XE production with no direct successor",
-        "worthKnowing": "The XE's second-hand market will define its legacy — the 2019+ cars are the ones worth chasing."
+        "worthKnowing": "The XE's second-hand market will define its legacy - the 2019+ cars are the ones worth chasing."
       }
     ]
   },
@@ -642,40 +642,40 @@
       {
         "buyerProfile": "Family Buyer",
         "rating": "★★★★☆",
-        "verdict": "The XE's rear seats and boot are compact but adequate. For a young family or couple, it works — just avoid the pre-2019 diesel and prioritise petrol for lower running costs."
+        "verdict": "The XE's rear seats and boot are compact but adequate. For a young family or couple, it works - just avoid the pre-2019 diesel and prioritise petrol for lower running costs."
       },
       {
         "buyerProfile": "Daily Commuter",
         "rating": "★★★★☆",
-        "verdict": "The petrol Ingenium delivers 40+ mpg on a run and 35 mpg mixed. The diesel does 50+ mpg but carries the timing-chain caveat — 2019+ diesel is fine; pre-2019 is a risk."
+        "verdict": "The petrol Ingenium delivers 40+ mpg on a run and 35 mpg mixed. The diesel does 50+ mpg but carries the timing-chain caveat - 2019+ diesel is fine; pre-2019 is a risk."
       },
       {
         "buyerProfile": "Budget Owner",
         "rating": "★★★★☆",
-        "verdict": "The XE's depreciation curve is steep — a £7k–£10k XE is a lot of car for the money. Just make sure any sub-£8k car is a 2019+ petrol or has a full chain history; otherwise the recon cost may exceed the car's value."
+        "verdict": "The XE's depreciation curve is steep - a £7k–£10k XE is a lot of car for the money. Just make sure any sub-£8k car is a 2019+ petrol or has a full chain history; otherwise the recon cost may exceed the car's value."
       },
       {
         "buyerProfile": "Performance Buyer",
         "rating": "★★★☆☆",
-        "verdict": "The XE is not the sportiest executive saloon — the F-Type and XF Supercharged are better choices. But the 250 PS petrol is genuinely brisk and offers a good balance of pace and value."
+        "verdict": "The XE is not the sportiest executive saloon - the F-Type and XF Supercharged are better choices. But the 250 PS petrol is genuinely brisk and offers a good balance of pace and value."
       },
       {
         "buyerProfile": "First-Time Premium Buyer",
         "rating": "★★★★★",
-        "verdict": "The XE is the single best entry point into Jaguar ownership. Buy a 2019+ petrol with a full service history, and you get a luxurious, engaging saloon with no engine-related anxiety — and the depreciation means you're not overpaying for the badge."
+        "verdict": "The XE is the single best entry point into Jaguar ownership. Buy a 2019+ petrol with a full service history, and you get a luxurious, engaging saloon with no engine-related anxiety - and the depreciation means you're not overpaying for the badge."
       }
     ]
   },
   "calculatorCta": {
-    "h2": "Can I Repair My XE Engine — or Should I Replace It?",
-    "intro": "The XE's economics come down to a single question: is your car pre- or post-2019? If it's a pre-2019 diesel showing timing-chain rattle, you're facing £3,500–£5,800 of work on a car that might only be worth £7,000 — that's a serious decision. Use our diagnostic calculator to get a personalised verdict based on your exact vehicle value.",
+    "h2": "Can I Repair My XE Engine - or Should I Replace It?",
+    "intro": "The XE's economics come down to a single question: is your car pre- or post-2019? If it's a pre-2019 diesel showing timing-chain rattle, you're facing £3,500–£5,800 of work on a car that might only be worth £7,000 - that's a serious decision. Use our diagnostic calculator to get a personalised verdict based on your exact vehicle value.",
     "paths": [
       {
-        "label": "Path 1 — Know your engine? Launch the Jaguar calculator with XE pre-selected",
+        "label": "Path 1 - Know your engine? Launch the Jaguar calculator with XE pre-selected",
         "href": "/fault-diagnostic-calculator"
       },
       {
-        "label": "Path 2 — Not sure which engine you have? We'll identify it first",
+        "label": "Path 2 - Not sure which engine you have? We'll identify it first",
         "href": "/fault-diagnostic-calculator"
       }
     ]
@@ -686,22 +686,22 @@
       {
         "icon": "📊",
         "title": "Built on Real Data",
-        "text": "Every XE reliability rating and cost range comes from 260 genuine UK enquiries in 2025 [JAG-VERIFIED] — not manufacturer marketing, not forum guesswork."
+        "text": "Every XE reliability rating and cost range comes from 260 genuine UK enquiries in 2025 [JAG-VERIFIED] - not manufacturer marketing, not forum guesswork."
       },
       {
         "icon": "💚",
         "title": "We Tell You When Not to Repair",
-        "text": "For an £8,000 XE facing a £5,800 recon, that's 72.5% of the car's value — we'll tell you to get a scrap valuation before committing, because that's the honest advice we'd give a friend."
+        "text": "For an £8,000 XE facing a £5,800 recon, that's 72.5% of the car's value - we'll tell you to get a scrap valuation before committing, because that's the honest advice we'd give a friend."
       },
       {
         "icon": "🔧",
         "title": "Vetted Jaguar Specialists",
-        "text": "All 15+ specialists in our network are vetted specifically for Jaguar work — they know the Ingenium timing-chain issue inside out, they understand the 2019 hardware split, and they won't waste your time with a guess."
+        "text": "All 15+ specialists in our network are vetted specifically for Jaguar work - they know the Ingenium timing-chain issue inside out, they understand the 2019 hardware split, and they won't waste your time with a guess."
       },
       {
         "icon": "🏆",
         "title": "Part of Engine Finders",
-        "text": "jaguarengines.uk is part of the Engine Finders family, the UK's leading engine replacement marketplace — giving you the research depth of an independent authority with a vetted route to action when you need one."
+        "text": "jaguarengines.uk is part of the Engine Finders family, the UK's leading engine replacement marketplace - giving you the research depth of an independent authority with a vetted route to action when you need one."
       }
     ]
   },
@@ -726,27 +726,27 @@
       {
         "id": 4,
         "question": "How do I know if my XE engine needs replacing?",
-        "answer": "The most common symptoms across XE engines are: Diesel (AJ200D): Cold-start rattle (timing chain), frequent DPF regens or high oil level (oil dilution), coolant loss or overheating (EGR cooler). Petrol (AJ200P): Coolant loss from the water pump area, overheating, or a persistent low-coolant warning. If you experience any of these, book an inspection immediately — timing-chain failure on the diesel can be catastrophic, and water-pump failure on the petrol can lead to head-gasket damage if ignored."
+        "answer": "The most common symptoms across XE engines are: Diesel (AJ200D): Cold-start rattle (timing chain), frequent DPF regens or high oil level (oil dilution), coolant loss or overheating (EGR cooler). Petrol (AJ200P): Coolant loss from the water pump area, overheating, or a persistent low-coolant warning. If you experience any of these, book an inspection immediately - timing-chain failure on the diesel can be catastrophic, and water-pump failure on the petrol can lead to head-gasket damage if ignored."
       },
       {
         "id": 5,
         "question": "Is it worth replacing an XE engine?",
-        "answer": "It depends on your car's value. For a 2019+ XE worth £12,000–£20,000, a £3,000–£5,800 recon sits at 25–48% of the car's value — well within our 60% threshold, so replacement is a no-brainer. For a pre-2019 diesel worth under £8,000, a £5,800 recon is 72.5% — that's scrap-threshold territory. Use our decision tool to assess your specific case."
+        "answer": "It depends on your car's value. For a 2019+ XE worth £12,000–£20,000, a £3,000–£5,800 recon sits at 25–48% of the car's value - well within our 60% threshold, so replacement is a no-brainer. For a pre-2019 diesel worth under £8,000, a £5,800 recon is 72.5% - that's scrap-threshold territory. Use our decision tool to assess your specific case."
       },
       {
         "id": 6,
-        "question": "Which XE should I buy — 2015–2019 or 2019+?",
-        "answer": "Buy a 2019+ car with the AJ200P petrol. The facelift brought the timing-chain hardware revision for diesels, but the petrol was always clean — and the 2019 car gives you the revised interior, the newer infotainment, and crucially, the peace of mind of being past the pre-2019 tensioner risk. If you must have a diesel, insist on a 2019+ car with documented service history and 6k oil-change intervals."
+        "question": "Which XE should I buy - 2015–2019 or 2019+?",
+        "answer": "Buy a 2019+ car with the AJ200P petrol. The facelift brought the timing-chain hardware revision for diesels, but the petrol was always clean - and the 2019 car gives you the revised interior, the newer infotainment, and crucially, the peace of mind of being past the pre-2019 tensioner risk. If you must have a diesel, insist on a 2019+ car with documented service history and 6k oil-change intervals."
       },
       {
         "id": 7,
         "question": "How do I find my XE engine code?",
-        "answer": "Your XE's engine code is stamped on the cylinder block (visible from underneath or through the wheel arch) and also appears on your V5C registration document. For the diesel, look for AJ200D or 204DTD; for the petrol, AJ200P or 204PT. If you're unsure, use our diagnostic calculator — we'll identify your engine from your VIN or registration number."
+        "answer": "Your XE's engine code is stamped on the cylinder block (visible from underneath or through the wheel arch) and also appears on your V5C registration document. For the diesel, look for AJ200D or 204DTD; for the petrol, AJ200P or 204PT. If you're unsure, use our diagnostic calculator - we'll identify your engine from your VIN or registration number."
       },
       {
         "id": 8,
-        "question": "XE vs XF — which is more reliable?",
-        "answer": "Both carry a ✅ Safe verdict, but for different reasons. The XE benefits from the modern Ingenium range in its single generation — buy a 2019+ petrol and you're golden. The XF's later X260 generation is similarly safe, while the older X250 with the AJ126 V6 carries cooling-system risks. Read our full comparison: XE vs XF — Head-to-Head Verdict →"
+        "question": "XE vs XF - which is more reliable?",
+        "answer": "Both carry a ✅ Safe verdict, but for different reasons. The XE benefits from the modern Ingenium range in its single generation - buy a 2019+ petrol and you're golden. The XF's later X260 generation is similarly safe, while the older X250 with the AJ126 V6 carries cooling-system risks. Read our full comparison: XE vs XF - Head-to-Head Verdict →"
       }
     ]
   },

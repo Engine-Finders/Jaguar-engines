@@ -1,13 +1,13 @@
 {
   "meta": {
     "slug": "xj",
-    "title": "XJ Engine Replacement Cost UK — Compare Quotes",
+    "title": "XJ Engine Replacement Cost UK - Compare Quotes",
     "titleCharCount": 48,
-    "description": "Every XJ engine — AJ133 5.0 V8, AJ126 3.0 V6, and 2.7/3.0 TDV6 diesels. 9 generations, real UK costs and reliability data. Compare prices from 15+ vetted Jaguar specialists today.",
+    "description": "Every XJ engine - AJ133 5.0 V8, AJ126 3.0 V6, and 2.7/3.0 TDV6 diesels. 9 generations, real UK costs and reliability data. Compare prices from 15+ vetted Jaguar specialists today.",
     "descriptionCharCount": 158,
     "openGraph": {
-      "title": "XJ Engine Replacement Cost UK — Compare Quotes",
-      "description": "Every XJ engine — AJ133 5.0 V8, AJ126 3.0 V6, and 2.7/3.0 TDV6 diesels. 9 generations, real UK costs and reliability data. Compare prices from 15+ vetted Jaguar specialists today.",
+      "title": "XJ Engine Replacement Cost UK - Compare Quotes",
+      "description": "Every XJ engine - AJ133 5.0 V8, AJ126 3.0 V6, and 2.7/3.0 TDV6 diesels. 9 generations, real UK costs and reliability data. Compare prices from 15+ vetted Jaguar specialists today.",
       "type": "website",
       "url": "https://jaguarengines.uk/xj/",
       "image": "https://jaguarengines.uk/images/jaguar-xj-hero.jpg",
@@ -15,8 +15,8 @@
     },
     "twitter": {
       "card": "summary_large_image",
-      "title": "XJ Engine Replacement Cost UK — Compare Quotes",
-      "description": "Every XJ engine — AJ133 5.0 V8, AJ126 3.0 V6, and 2.7/3.0 TDV6 diesels. 9 generations, real UK costs and reliability data. Compare prices from 15+ vetted Jaguar specialists today."
+      "title": "XJ Engine Replacement Cost UK - Compare Quotes",
+      "description": "Every XJ engine - AJ133 5.0 V8, AJ126 3.0 V6, and 2.7/3.0 TDV6 diesels. 9 generations, real UK costs and reliability data. Compare prices from 15+ vetted Jaguar specialists today."
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -83,43 +83,43 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "AJ133 / 508PN — 5.0 V8",
+              "name": "AJ133 / 508PN - 5.0 V8",
               "url": "https://jaguarengines.uk/engines/aj133/"
             },
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "AJ126 — 3.0 V6 Supercharged",
+              "name": "AJ126 - 3.0 V6 Supercharged",
               "url": "https://jaguarengines.uk/engines/aj126/"
             },
             {
               "@type": "ListItem",
               "position": 3,
-              "name": "AJ200D / 204DTD — 2.0 Ingenium Diesel",
+              "name": "AJ200D / 204DTD - 2.0 Ingenium Diesel",
               "url": "https://jaguarengines.uk/engines/aj200d/"
             },
             {
               "@type": "ListItem",
               "position": 4,
-              "name": "276DT — 2.7 TDV6 Diesel",
+              "name": "276DT - 2.7 TDV6 Diesel",
               "url": "https://jaguarengines.uk/engines/276dt/"
             },
             {
               "@type": "ListItem",
               "position": 5,
-              "name": "AJ-V8 4.2 — 4.2 V8",
+              "name": "AJ-V8 4.2 - 4.2 V8",
               "url": "https://jaguarengines.uk/engines/aj-v8-4.2/"
             },
             {
               "@type": "ListItem",
               "position": 6,
-              "name": "AJ-V8 4.0 — 4.0 V8",
+              "name": "AJ-V8 4.0 - 4.0 V8",
               "url": "https://jaguarengines.uk/engines/aj-v8-4.0/"
             },
             {
               "@type": "ListItem",
               "position": 7,
-              "name": "AJ16 — 4.0 I6",
+              "name": "AJ16 - 4.0 I6",
               "url": "https://jaguarengines.uk/engines/aj16/"
             }
           ]
@@ -140,7 +140,7 @@
               "name": "Which XJ engine is the most reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The AJ133 5.0 V8, post-2013. The revised timing chain tensioners resolved the pre-2013 weakness, making it the strongest engine in the XJ range. The AJ126 3.0 V6 supercharged is a close second — it's a detuned version of the same architecture and has a clean record in our data."
+                "text": "The AJ133 5.0 V8, post-2013. The revised timing chain tensioners resolved the pre-2013 weakness, making it the strongest engine in the XJ range. The AJ126 3.0 V6 supercharged is a close second - it's a detuned version of the same architecture and has a clean record in our data."
               }
             },
             {
@@ -148,7 +148,7 @@
               "name": "Which XJ engine should I avoid?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The 276DT 2.7 TDV6. It's the same engine that causes problems in Land Rover's Discovery 3 — oil pump housing failure can kill the engine without warning. If you're buying a diesel XJ, seek out the later 3.0 V6 (AJ200D) instead."
+                "text": "The 276DT 2.7 TDV6. It's the same engine that causes problems in Land Rover's Discovery 3 - oil pump housing failure can kill the engine without warning. If you're buying a diesel XJ, seek out the later 3.0 V6 (AJ200D) instead."
               }
             },
             {
@@ -156,7 +156,7 @@
               "name": "How do I know if my XJ timing chain needs replacing?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Listen for a cold-start rattle that lasts 1–2 seconds — this is the chain tensioner bleeding down. If the rattle persists, stop driving and get it inspected. The AJ133 pre-2013 is the highest-risk variant; post-2013 cars have a revised tensioner design that rarely fails."
+                "text": "Listen for a cold-start rattle that lasts 1–2 seconds - this is the chain tensioner bleeding down. If the rattle persists, stop driving and get it inspected. The AJ133 pre-2013 is the highest-risk variant; post-2013 cars have a revised tensioner design that rarely fails."
               }
             },
             {
@@ -164,7 +164,7 @@
               "name": "Is it worth replacing an XJ engine?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes, almost always. The XJ's flagship values mean even a £9,000 reconditioned engine is well within the car's value on a £15,000+ X351. For older X300/X308 models, the value equation is tighter — get a scrap valuation alongside any repair quote, but the XJ is the keeper's car."
+                "text": "Yes, almost always. The XJ's flagship values mean even a £9,000 reconditioned engine is well within the car's value on a £15,000+ X351. For older X300/X308 models, the value equation is tighter - get a scrap valuation alongside any repair quote, but the XJ is the keeper's car."
               }
             },
             {
@@ -172,7 +172,7 @@
               "name": "Which XJ should I buy?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A 2013+ X351 with the 5.0 V8. The 2013 timing chain revision is the single most important engineering improvement in the entire XJ lineage. If you're on a tighter budget, the X350/X358 with the 4.2 V8 is a reliable used buy — just watch for cooling system issues."
+                "text": "A 2013+ X351 with the 5.0 V8. The 2013 timing chain revision is the single most important engineering improvement in the entire XJ lineage. If you're on a tighter budget, the X350/X358 with the 4.2 V8 is a reliable used buy - just watch for cooling system issues."
               }
             },
             {
@@ -180,12 +180,12 @@
               "name": "How do I find my XJ engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Check the VIN plate — the engine code is part of the VIN (positions 4-8). Alternatively, look on the engine block itself: the AJ133 has the code stamped on the front of the left cylinder head. If you're unsure, one of our 15+ vetted Jaguar specialists can identify it for you."
+                "text": "Check the VIN plate - the engine code is part of the VIN (positions 4-8). Alternatively, look on the engine block itself: the AJ133 has the code stamped on the front of the left cylinder head. If you're unsure, one of our 15+ vetted Jaguar specialists can identify it for you."
               }
             },
             {
               "@type": "Question",
-              "name": "XJ vs XF — which is more reliable?",
+              "name": "XJ vs XF - which is more reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "Both carry a ✅ Safe verdict in our data, but for different reasons. The XF benefits from the modern, more dependable Ingenium range in its later X260 generation. The XJ's flagship values comfortably absorb even the AJ133 V8's upper replacement cost, though pre-2013 cars warrant a chain-tensioner check. Read the full comparison here."
@@ -231,7 +231,7 @@
         },
         {
           "@type": "WebPage",
-          "name": "XJ Engine Replacement Cost UK — Compare Quotes",
+          "name": "XJ Engine Replacement Cost UK - Compare Quotes",
           "url": "https://jaguarengines.uk/xj/",
           "author": {
             "@type": "Organization",
@@ -249,8 +249,8 @@
   },
   "hero": {
     "tagPill": "Jaguar • XJ • 1968–2019 • 9 Generations • AJ133 V8 • AJ126 V6 • AJ200D Diesel",
-    "h1": "XJ Engines — The Complete UK Guide",
-    "subHeadline": "Every XJ generation covered — from the Series 1 to the X351. Real-world reliability data on the <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> 5.0 V8, the AJ126 3.0 V6 supercharged, and the 2.7/3.0 TDV6 diesels. Honest economics on when to repair, when to replace, and when to walk away. Backed by 1,700+ real UK Jaguar enquiries in 2025 [JAG-VERIFIED].",
+    "h1": "XJ Engines - The Complete UK Guide",
+    "subHeadline": "Every XJ generation covered - from the Series 1 to the X351. Real-world reliability data on the <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> 5.0 V8, the AJ126 3.0 V6 supercharged, and the 2.7/3.0 TDV6 diesels. Honest economics on when to repair, when to replace, and when to walk away. Backed by 1,700+ real UK Jaguar enquiries in 2025 [JAG-VERIFIED].",
     "trustStrip": [
       {
         "icon": "📊",
@@ -275,7 +275,7 @@
     }
   },
   "ownershipVerdict": {
-    "h2": "XJ — The Ownership Verdict",
+    "h2": "XJ - The Ownership Verdict",
     "metrics": [
       {
         "metric": "Overall Ownership Rating",
@@ -283,7 +283,7 @@
       },
       {
         "metric": "Replacement Economics",
-        "ourCall": "✅ Safe — The XJ rule: flagship values comfortably absorb even the AJ133's upper recon cost."
+        "ourCall": "✅ Safe - The XJ rule: flagship values comfortably absorb even the AJ133's upper recon cost."
       },
       {
         "metric": "Reliability",
@@ -291,11 +291,11 @@
       },
       {
         "metric": "Most Reliable Engine",
-        "ourCall": "AJ133 5.0 V8 (Post-2013) — revised timing chain tensioners resolved the pre-2013 weakness."
+        "ourCall": "AJ133 5.0 V8 (Post-2013) - revised timing chain tensioners resolved the pre-2013 weakness."
       },
       {
         "metric": "Highest-Risk Engine",
-        "ourCall": "276DT 2.7 TDV6 — oil pump housing failure can kill the engine without warning."
+        "ourCall": "276DT 2.7 TDV6 - oil pump housing failure can kill the engine without warning."
       },
       {
         "metric": "Best Used Buy",
@@ -314,7 +314,7 @@
         "ourCall": "👑 Flagship Choice"
       }
     ],
-    "oneLineVerdict": "The XJ is the keeper's Jaguar — its flagship values absorb even the costliest V8 replacements, but pre-2013 cars demand a chain-tensioner check before you commit.【1†L41】【2†L8】"
+    "oneLineVerdict": "The XJ is the keeper's Jaguar - its flagship values absorb even the costliest V8 replacements, but pre-2013 cars demand a chain-tensioner check before you commit.【1†L41】【2†L8】"
   },
   "atAGlance": {
     "h2": "XJ at a Glance",
@@ -337,7 +337,7 @@
       },
       {
         "metric": "Most Enquired Engine (2025)",
-        "value": "AJ133 / 508PN (5.0 V8) — 330 enquiries [JAG-VERIFIED]"
+        "value": "AJ133 / 508PN (5.0 V8) - 330 enquiries [JAG-VERIFIED]"
       },
       {
         "metric": "Most Reliable",
@@ -362,15 +362,15 @@
     ]
   },
   "generations": {
-    "h2": "XJ Generations — Find Your Vehicle",
-    "subHeadline": "Nine generations of Jaguar's flagship — but the data-led choice for most buyers is the X351. Here's why.",
+    "h2": "XJ Generations - Find Your Vehicle",
+    "subHeadline": "Nine generations of Jaguar's flagship - but the data-led choice for most buyers is the X351. Here's why.",
     "cards": [
       {
   "title": "Series 1 (1968–1973)",
   "badge": "",
   "meta": "1968–1973 • XK I6 (2.8L, 3.4L, 4.2L) • V12 5.3L",
   "rating": "★★★☆☆",
-  "verdict": "The original XJ—Sir William Lyons' definitive Jaguar saloon. The 4.2-litre <a href='https://jaguarengines.uk/engine/xk-straight-six'>XK straight-six</a> is the pick: 173 bhp, proven durability, and the best balance of performance and reliability. The 2.8-litre is underpowered; the V12 is glorious but complex. Values range from £5k project cars to £20k+ restored examples—replace the 4.2 only if the body is sound.",
+  "verdict": "The original XJ-Sir William Lyons' definitive Jaguar saloon. The 4.2-litre <a href='https://jaguarengines.uk/engine/xk-straight-six'>XK straight-six</a> is the pick: 173 bhp, proven durability, and the best balance of performance and reliability. The 2.8-litre is underpowered; the V12 is glorious but complex. Values range from £5k project cars to £20k+ restored examples-replace the 4.2 only if the body is sound.",
   "cta": {
     "label": "Explore Series 1 →",
     "href": "https://jaguarengines.uk/xj-series-1"
@@ -381,7 +381,7 @@
   "badge": "",
   "meta": "1973–1979 • XK I6 (2.8L, 3.4L, 4.2L) • V12 5.3L",
   "rating": "★★★☆☆",
-  "verdict": "The revised XJ—higher bumpers, revised grille, and improved safety. The 4.2-litre XK six remains the sweet spot with 170–183 bhp and strong torque. The V12 offers effortless performance but carries significant cooling system complexity. Usable examples fetch £8k–£12k; top-tier V12s exceed £25k. Always value the body and chassis before the engine—the 4.2 recon at £5k–£9k is viable on a well-kept car.",
+  "verdict": "The revised XJ-higher bumpers, revised grille, and improved safety. The 4.2-litre XK six remains the sweet spot with 170–183 bhp and strong torque. The V12 offers effortless performance but carries significant cooling system complexity. Usable examples fetch £8k–£12k; top-tier V12s exceed £25k. Always value the body and chassis before the engine-the 4.2 recon at £5k–£9k is viable on a well-kept car.",
   "cta": {
     "label": "Explore Series 2 →",
     "href": "https://jaguarengines.uk/xj-series-2"
@@ -392,7 +392,7 @@
   "badge": "",
   "meta": "1979–1992 • XK I6 (3.4L, 4.2L) • V12 5.3L HE • V12 6.0L",
   "rating": "★★★☆☆",
-  "verdict": "The final first-generation XJ—redesigned by Pininfarina with flush door handles and a more modern look. The XK 4.2-litre six is the most accessible choice at 200 bhp; the <a href='https://jaguarengines.uk/engine/v12-he'>V12 HE</a> (1981 onwards) is significantly improved over pre-HE cars. The 6.0 V12 is rare and specialist-only. For most buyers, the 4.2 six offers classic Jaguar character without the V12's running costs.",
+  "verdict": "The final first-generation XJ-redesigned by Pininfarina with flush door handles and a more modern look. The XK 4.2-litre six is the most accessible choice at 200 bhp; the <a href='https://jaguarengines.uk/engine/v12-he'>V12 HE</a> (1981 onwards) is significantly improved over pre-HE cars. The 6.0 V12 is rare and specialist-only. For most buyers, the 4.2 six offers classic Jaguar character without the V12's running costs.",
   "cta": {
     "label": "Explore Series 3 →",
     "href": "https://jaguarengines.uk/xj-series-3"
@@ -403,7 +403,7 @@
   "badge": "",
   "meta": "1986–1994 • AJ6 I6 (2.9L, 3.2L, 3.6L, 4.0L) • V12 6.0L",
   "rating": "★★★☆☆",
-  "verdict": "The second-generation XJ—a more modern, aerodynamic design with Jaguar's new <a href='https://jaguarengines.uk/engine/aj6-aj16'>AJ6</a> engine. The 4.0-litre AJ6 is the most refined and reliable six; the 3.6 offers classic character without the 4.0's premium. The 6.0 V12 (XJ81) is rare and magnificent but costly. Values range from £3k–£15k—the 4.0 AJ6 recon at £3k–£5.5k is viable on a well-kept £10k+ car.",
+  "verdict": "The second-generation XJ-a more modern, aerodynamic design with Jaguar's new <a href='https://jaguarengines.uk/engine/aj6-aj16'>AJ6</a> engine. The 4.0-litre AJ6 is the most refined and reliable six; the 3.6 offers classic character without the 4.0's premium. The 6.0 V12 (XJ81) is rare and magnificent but costly. Values range from £3k–£15k-the 4.0 AJ6 recon at £3k–£5.5k is viable on a well-kept £10k+ car.",
   "cta": {
     "label": "Explore XJ40 →",
     "href": "https://jaguarengines.uk/xj/xj40"
@@ -425,7 +425,7 @@
         "badge": "",
         "meta": "1997–2003 • AJ-V8 4.0 / 3.2",
         "rating": "★★★☆☆",
-        "verdict": "Ford-era V8 power. The 4.0 V8 is characterful, but the 3.2 is the one to seek out for better long-term value. Both suffer from Nikasil bore wear on early cars — check history.",
+        "verdict": "Ford-era V8 power. The 4.0 V8 is characterful, but the 3.2 is the one to seek out for better long-term value. Both suffer from Nikasil bore wear on early cars - check history.",
         "cta": {
           "label": "Explore XJ X308 →",
           "href": "https://jaguarengines.uk/xj/x308"
@@ -436,7 +436,7 @@
         "badge": "",
         "meta": "2003–2009 • AJ-V8 4.2 / 3.5",
         "rating": "★★★★☆",
-        "verdict": "The first aluminium-bodied XJ. The 4.2 V8 is a strong, reliable unit — a genuinely good used buy if you find one with full service history.",
+        "verdict": "The first aluminium-bodied XJ. The 4.2 V8 is a strong, reliable unit - a genuinely good used buy if you find one with full service history.",
         "cta": {
           "label": "Explore XJ X350 →",
           "href": "https://jaguarengines.uk/xj/x350-x358"
@@ -447,7 +447,7 @@
         "badge": "",
         "meta": "2007–2009 • AJ-V8 4.2 / 3.5",
         "rating": "★★★★☆",
-        "verdict": "The facelifted X350. Same reliable 4.2 V8, sharper styling. A sweet spot in the XJ lineage — values are still sensible.",
+        "verdict": "The facelifted X350. Same reliable 4.2 V8, sharper styling. A sweet spot in the XJ lineage - values are still sensible.",
         "cta": {
           "label": "Explore XJ X358 →",
           "href": "https://jaguarengines.uk/xj/x350-x358"
@@ -455,10 +455,10 @@
       },
       {
         "title": "XJ X351 (2010–2019)",
-        "badge": "🔥 \"Most Enquired — 151 enquiries (2025) [JAG-VERIFIED]\"",
+        "badge": "🔥 \"Most Enquired - 151 enquiries (2025) [JAG-VERIFIED]\"",
         "meta": "2010–2019 • AJ133 5.0 V8, AJ126 3.0 V6 SC, AJ200D 3.0 V6 Diesel, 276DT 2.7 TDV6",
         "rating": "★★★★☆",
-        "verdict": "The definitive modern XJ. The 5.0 V8 is the one to own — post-2013 cars have the revised timing chain tensioners and are the safest buy in the range. The 3.0 V6 diesel (AJ200D) is a strong alternative for high-mileage buyers.",
+        "verdict": "The definitive modern XJ. The 5.0 V8 is the one to own - post-2013 cars have the revised timing chain tensioners and are the safest buy in the range. The 3.0 V6 diesel (AJ200D) is a strong alternative for high-mileage buyers.",
         "cta": {
           "label": "Explore XJ X351 →",
           "href": "https://jaguarengines.uk/xj/x351"
@@ -467,7 +467,7 @@
       {
         "title": "Comparison sub-block (bolded row-header style):",
         "badge": "",
-        "meta": "The pre-2013 vs post-2013 X351 divide: The AJ133 5.0 V8's timing chain tensioner was revised in 2013. Pre-2013 cars carry a known risk; post-2013 cars are significantly more robust. If you're buying an X351, stretch to a 2013+ car — it's the single most important check you can make.【1†L42】",
+        "meta": "The pre-2013 vs post-2013 X351 divide: The AJ133 5.0 V8's timing chain tensioner was revised in 2013. Pre-2013 cars carry a known risk; post-2013 cars are significantly more robust. If you're buying an X351, stretch to a 2013+ car - it's the single most important check you can make.【1†L42】",
         "rating": "",
         "verdict": "",
         "cta": {
@@ -487,7 +487,7 @@
     }
   },
   "engineDatabase": {
-    "h2": "XJ Engine Codes — The Complete Database",
+    "h2": "XJ Engine Codes - The Complete Database",
     "subHeadline": "Every engine fitted to the XJ, verified against manufacturer data and UK specialist sources.",
     "columns": [
       "Engine Code",
@@ -560,7 +560,7 @@
         "model": "X350, X358",
         "reliability": "★★★★☆",
         "enquiries": "[PATTERN DATA]",
-        "avgRebuildCost": "[PLACEHOLDER — confirm vs cost sheet]"
+        "avgRebuildCost": "[PLACEHOLDER - confirm vs cost sheet]"
       },
       {
         "engineCode": "<a href='https://jaguarengines.uk/engine/aj-v8-4-0-4-2'>AJ-V8 4.0</a>",
@@ -572,7 +572,7 @@
         "model": "X308",
         "reliability": "★★★☆☆ (Nikasil risk on early cars)",
         "enquiries": "[PATTERN DATA]",
-        "avgRebuildCost": "[PLACEHOLDER — confirm vs cost sheet]"
+        "avgRebuildCost": "[PLACEHOLDER - confirm vs cost sheet]"
       },
       {
         "engineCode": "AJ16 4.0",
@@ -584,12 +584,12 @@
         "model": "X300",
         "reliability": "★★★★☆",
         "enquiries": "[PATTERN DATA]",
-        "avgRebuildCost": "[PLACEHOLDER — confirm vs cost sheet]"
+        "avgRebuildCost": "[PLACEHOLDER - confirm vs cost sheet]"
       }
     ],
     "confidenceScore": {
       "title": "How confident are these ratings?",
-      "text": "The AJ133, AJ126, AJ200D and 276DT ratings are based on 1,700+ [JAG-VERIFIED] enquiries and specialist interviews — 95% confidence. The older AJ-V8 and AJ16 ratings are expert-knowledge tier — documented failure patterns and specialist interviews, not proprietary volume data. Data note (internal): Correction applied: The XJ X351 is confirmed to have been offered with the 276DT 2.7 TDV6 (shared with Land Rover) in early production, alongside the later AJ200D 3.0 V6 diesel. The source data file lists both under Jaguar, and this has been verified against live sources.【2†L8】【1†L41】 Correction applied: The XJ X300 and X308 are included despite low [JAG-VERIFIED] enquiry volume, as they form part of the \"Complete UK Guide\" claim and are well-documented in specialist forums. Their data is tagged [PATTERN DATA] accordingly.【2†L8】 No further corrections needed — source data matched live verification."
+      "text": "The AJ133, AJ126, AJ200D and 276DT ratings are based on 1,700+ [JAG-VERIFIED] enquiries and specialist interviews - 95% confidence. The older AJ-V8 and AJ16 ratings are expert-knowledge tier - documented failure patterns and specialist interviews, not proprietary volume data. Data note (internal): Correction applied: The XJ X351 is confirmed to have been offered with the 276DT 2.7 TDV6 (shared with Land Rover) in early production, alongside the later AJ200D 3.0 V6 diesel. The source data file lists both under Jaguar, and this has been verified against live sources.【2†L8】【1†L41】 Correction applied: The XJ X300 and X308 are included despite low [JAG-VERIFIED] enquiry volume, as they form part of the \"Complete UK Guide\" claim and are well-documented in specialist forums. Their data is tagged [PATTERN DATA] accordingly.【2†L8】 No further corrections needed - source data matched live verification."
     },
     "dataCorrections": []
   },
@@ -607,7 +607,7 @@
       {
         "id": 1,
         "issue": "276DT Oil Pump Housing Failure",
-        "description": "Shared with Land Rover's 2.7 TDV6 — the oil pump housing can fail catastrophically, often killing the engine without warning. Fitted to early X351 diesel models.",
+        "description": "Shared with Land Rover's 2.7 TDV6 - the oil pump housing can fail catastrophically, often killing the engine without warning. Fitted to early X351 diesel models.",
         "severity": {
           "icon": "🔴",
           "label": "Catastrophic",
@@ -621,7 +621,7 @@
       {
         "id": 2,
         "issue": "AJ133 Pre-2013 Timing Chain Tensioner Wear",
-        "description": "The 5.0 V8's early-build weak point — chain tensioner design was revised in 2013 with a marked reliability improvement. Pre-2013 cars should be inspected immediately.",
+        "description": "The 5.0 V8's early-build weak point - chain tensioner design was revised in 2013 with a marked reliability improvement. Pre-2013 cars should be inspected immediately.",
         "severity": {
           "icon": "🟡",
           "label": "Monitor",
@@ -635,7 +635,7 @@
       {
         "id": 3,
         "issue": "AJ126 Cooling System & Plastic Crossover Pipe Failure",
-        "description": "Well-documented weak point — plastic coolant pipes crack with age, and these engines cannot tolerate overheating without head-gasket damage.",
+        "description": "Well-documented weak point - plastic coolant pipes crack with age, and these engines cannot tolerate overheating without head-gasket damage.",
         "severity": {
           "icon": "🟠",
           "label": "Immediate",
@@ -663,7 +663,7 @@
       {
         "id": 5,
         "issue": "ZF 8-Speed Gearbox Faults",
-        "description": "Shared across the JLR range — mechatronic unit and torque converter issues are the most common cause.",
+        "description": "Shared across the JLR range - mechatronic unit and torque converter issues are the most common cause.",
         "severity": {
           "icon": "🟡",
           "label": "Monitor",
@@ -713,7 +713,7 @@
     ]
   },
   "marketIntelligence": {
-    "h2": "XJ Market Intelligence — What 325 UK Owners Told Us in 2025",
+    "h2": "XJ Market Intelligence - What 325 UK Owners Told Us in 2025",
     "signals": [
       {
         "signal": "XJ X351 Enquiries",
@@ -737,17 +737,17 @@
       }
     ],
     "insights": [
-      "Interesting insight: The XJ X351 (2010–2019) accounts for nearly half of all XJ enquiries (151 of 325) [JAG-VERIFIED], confirming it is the generation most UK owners are actively researching or repairing. The AJ133 5.0 V8 is the most-enquired XJ engine, driven by concerns over pre-2013 timing chain tensioner wear. Post-2013 cars are significantly less represented in the data, suggesting the revision worked. The 276DT 2.7 TDV6, despite being fitted to the X351, carries the highest-risk profile — its oil pump failure is often terminal, and enquiries for this engine are consistently accompanied by requests for full replacement quotes."
+      "Interesting insight: The XJ X351 (2010–2019) accounts for nearly half of all XJ enquiries (151 of 325) [JAG-VERIFIED], confirming it is the generation most UK owners are actively researching or repairing. The AJ133 5.0 V8 is the most-enquired XJ engine, driven by concerns over pre-2013 timing chain tensioner wear. Post-2013 cars are significantly less represented in the data, suggesting the revision worked. The 276DT 2.7 TDV6, despite being fitted to the X351, carries the highest-risk profile - its oil pump failure is often terminal, and enquiries for this engine are consistently accompanied by requests for full replacement quotes."
     ],
     "liveEnquiryFeedNote": ""
   },
   "editorialPullQuote": {
     "title": "The One Thing We'd Tell Every XJ Buyer",
-    "quote": "If you buy one XJ based on this page, buy a 2013+ X351 with the 5.0 V8 — the revised timing chain tensioners make it the safest flagship Jaguar you can own. Pre-2013? Get that tensioner inspected before you hand over a penny. This completes Sections 1-7 for Jaguar XJ. Ready for Sections 8-14 when you are."
+    "quote": "If you buy one XJ based on this page, buy a 2013+ X351 with the 5.0 V8 - the revised timing chain tensioners make it the safest flagship Jaguar you can own. Pre-2013? Get that tensioner inspected before you hand over a penny. This completes Sections 1-7 for Jaguar XJ. Ready for Sections 8-14 when you are."
   },
   "replacementCosts": {
-    "h2": "XJ Engine Replacement Costs — By Generation",
-    "subHeadline": "Real UK pricing for used, reconditioned and rebuilt XJ engines — supply-only, with independent labour guidance.",
+    "h2": "XJ Engine Replacement Costs - By Generation",
+    "subHeadline": "Real UK pricing for used, reconditioned and rebuilt XJ engines - supply-only, with independent labour guidance.",
     "tables": [
       {
         "title": "",
@@ -762,15 +762,15 @@
         "rows": []
       }
     ],
-    "figuresNote": "Labour estimate: Fitting an XJ engine typically takes 10–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE]. The XJ rule — flagship values absorb the cost: A £9,000 recon on an X351 worth £15,000 sits at 60% — exactly our 60% threshold. The difference? For the XJ, that £9,000 spend unlocks a car that's still worth £15,000+. For an older X-Type, that same £9,000 would be a write-off. The XJ is the keeper's Jaguar — fix it if the rest of the car is solid.",
-    "labourEstimate": "Fitting an XJ engine typically takes 10–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE]. The XJ rule — flagship values absorb the cost: A £9,000 recon on an X351 worth £15,000 sits at 60% — exactly our 60% threshold. The difference? For the XJ, that £9,000 spend unlocks a car that's still worth £15,000+. For an older X-Type, that same £9,000 would be a write-off. The XJ is the keeper's Jaguar — fix it if the rest of the car is solid.",
+    "figuresNote": "Labour estimate: Fitting an XJ engine typically takes 10–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE]. The XJ rule - flagship values absorb the cost: A £9,000 recon on an X351 worth £15,000 sits at 60% - exactly our 60% threshold. The difference? For the XJ, that £9,000 spend unlocks a car that's still worth £15,000+. For an older X-Type, that same £9,000 would be a write-off. The XJ is the keeper's Jaguar - fix it if the rest of the car is solid.",
+    "labourEstimate": "Fitting an XJ engine typically takes 10–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE]. The XJ rule - flagship values absorb the cost: A £9,000 recon on an X351 worth £15,000 sits at 60% - exactly our 60% threshold. The difference? For the XJ, that £9,000 spend unlocks a car that's still worth £15,000+. For an older X-Type, that same £9,000 would be a write-off. The XJ is the keeper's Jaguar - fix it if the rest of the car is solid.",
     "economicsBox": {
       "title": "",
       "text": ""
     }
   },
   "engineEvolution": {
-    "h2": "How the XJ Engine Range Evolved — 1968 to Today",
+    "h2": "How the XJ Engine Range Evolved - 1968 to Today",
     "columns": [
       "Era",
       "Years",
@@ -783,25 +783,25 @@
         "era": "Classic Era",
         "years": "1968–1992",
         "keyEngines": "XK I6 2.8/4.2, V12 5.3/6.0",
-        "whyBmwChanged": "The original XJ formula — large saloon with a sporting heart. The V12 was added to compete with Mercedes and BMW in the luxury sector.",
+        "whyBmwChanged": "The original XJ formula - large saloon with a sporting heart. The V12 was added to compete with Mercedes and BMW in the luxury sector.",
         "worthKnowing": "The V12 is a masterpiece, but its complexity and fuel consumption make it a collector's item today."
       },
       {
-        "era": "Ford Era — X300/X308",
+        "era": "Ford Era - X300/X308",
         "years": "1994–2003",
         "keyEngines": "AJ16 I6, AJ-V8 4.0/3.2",
         "whyBmwChanged": "Jaguar's own AJ16 replaced the XK I6, but the future was V8. The AJ-V8 was Jaguar's first all-new V8, co-developed with Ford.",
-        "worthKnowing": "Early AJ-V8s (pre-1999) can suffer from Nikasil bore wear due to high-sulphur fuel — check the engine number before buying."
+        "worthKnowing": "Early AJ-V8s (pre-1999) can suffer from Nikasil bore wear due to high-sulphur fuel - check the engine number before buying."
       },
       {
-        "era": "Aluminium Era — X350/X358",
+        "era": "Aluminium Era - X350/X358",
         "years": "2003–2009",
         "keyEngines": "AJ-V8 4.2/3.5",
         "whyBmwChanged": "The X350 introduced the aluminium monocoque, saving 200kg. The AJ-V8 was revised to 4.2 litres, with the 3.5 added for lower-tax markets.",
-        "worthKnowing": "The 4.2 V8 is considered one of Jaguar's most reliable engines — a safe used buy."
+        "worthKnowing": "The 4.2 V8 is considered one of Jaguar's most reliable engines - a safe used buy."
       },
       {
-        "era": "Modern Era — X351",
+        "era": "Modern Era - X351",
         "years": "2010–2019",
         "keyEngines": "AJ133 5.0 V8, AJ126 3.0 V6 SC, AJ200D 3.0 V6 Diesel, 276DT 2.7 TDV6",
         "whyBmwChanged": "A completely new car, designed under Ford then launched under Tata ownership. The 5.0 V8 was new, and the 3.0 V6 diesel (AJ200D) replaced the 2.7.",
@@ -840,20 +840,20 @@
       {
         "buyerProfile": "Collector / Keeper",
         "rating": "🏆 Best",
-        "verdict": "This is where the XJ shines. The X300, X308, and X351 are all future classics. The XJ's flagship values and timeless design make it a car you can keep for years — and the economics of a full engine rebuild will still make sense."
+        "verdict": "This is where the XJ shines. The X300, X308, and X351 are all future classics. The XJ's flagship values and timeless design make it a car you can keep for years - and the economics of a full engine rebuild will still make sense."
       }
     ]
   },
   "calculatorCta": {
-    "h2": "Can I Repair My XJ Engine — or Should I Replace It?",
-    "intro": "The AJ133's timing chain tensioner is the XJ's defining fault. If you hear a rattle on start-up, get it inspected immediately — but don't assume the worst. The XJ's value means a full engine replacement is often viable.",
+    "h2": "Can I Repair My XJ Engine - or Should I Replace It?",
+    "intro": "The AJ133's timing chain tensioner is the XJ's defining fault. If you hear a rattle on start-up, get it inspected immediately - but don't assume the worst. The XJ's value means a full engine replacement is often viable.",
     "paths": [
       {
-        "label": "Path 1 — Know your engine? Launch the Jaguar calculator with XJ pre-selected",
+        "label": "Path 1 - Know your engine? Launch the Jaguar calculator with XJ pre-selected",
         "href": "/fault-diagnostic-calculator"
       },
       {
-        "label": "Path 2 — Not sure which engine you have? We'll identify it first → /fault-diagnostic-calculator (Identification happens as step one inside the tool)",
+        "label": "Path 2 - Not sure which engine you have? We'll identify it first → /fault-diagnostic-calculator (Identification happens as step one inside the tool)",
         "href": "#"
       }
     ]
@@ -864,22 +864,22 @@
       {
         "icon": "📊",
         "title": "Built on Real Data",
-        "text": "Every reliability rating and cost range for the XJ comes from genuine UK quote and enquiry data — not manufacturer marketing, not forum guesswork. 325 XJ-specific enquiries [JAG-VERIFIED] inform this page."
+        "text": "Every reliability rating and cost range for the XJ comes from genuine UK quote and enquiry data - not manufacturer marketing, not forum guesswork. 325 XJ-specific enquiries [JAG-VERIFIED] inform this page."
       },
       {
         "icon": "💚",
         "title": "We Tell You When Not to Repair",
-        "text": "The XJ is the keeper's Jaguar — its flagship values mean a full engine replacement almost always makes sense. But if your X300 is worth £2,000 and the repair quote is £6,000, we'll tell you to walk away."
+        "text": "The XJ is the keeper's Jaguar - its flagship values mean a full engine replacement almost always makes sense. But if your X300 is worth £2,000 and the repair quote is £6,000, we'll tell you to walk away."
       },
       {
         "icon": "🔧",
         "title": "Vetted Jaguar Specialists",
-        "text": "Our network of 15+ vetted Jaguar specialists works on XJ engines daily — from AJ133 timing chain diagnosis to 276DT oil pump failure assessment. They know the XJ's quirks better than any generalist."
+        "text": "Our network of 15+ vetted Jaguar specialists works on XJ engines daily - from AJ133 timing chain diagnosis to 276DT oil pump failure assessment. They know the XJ's quirks better than any generalist."
       },
       {
         "icon": "🏆",
         "title": "Part of Engine Finders",
-        "text": "JaguarEngine.uk is part of the Engine Finders family, the UK's leading engine replacement marketplace — giving you the research depth of an independent authority with a vetted route to action when you need one."
+        "text": "JaguarEngine.uk is part of the Engine Finders family, the UK's leading engine replacement marketplace - giving you the research depth of an independent authority with a vetted route to action when you need one."
       }
     ]
   },
@@ -894,36 +894,36 @@
       {
         "id": 2,
         "question": "Which XJ engine is the most reliable?",
-        "answer": "The AJ133 5.0 V8, post-2013. The revised timing chain tensioners resolved the pre-2013 weakness, making it the strongest engine in the XJ range. The AJ126 3.0 V6 supercharged is a close second — it's a detuned version of the same architecture and has a clean record in our data."
+        "answer": "The AJ133 5.0 V8, post-2013. The revised timing chain tensioners resolved the pre-2013 weakness, making it the strongest engine in the XJ range. The AJ126 3.0 V6 supercharged is a close second - it's a detuned version of the same architecture and has a clean record in our data."
       },
       {
         "id": 3,
         "question": "Which XJ engine should I avoid?",
-        "answer": "The 276DT 2.7 TDV6. It's the same engine that causes problems in Land Rover's Discovery 3 — oil pump housing failure can kill the engine without warning. If you're buying a diesel XJ, seek out the later 3.0 V6 (AJ200D) instead."
+        "answer": "The 276DT 2.7 TDV6. It's the same engine that causes problems in Land Rover's Discovery 3 - oil pump housing failure can kill the engine without warning. If you're buying a diesel XJ, seek out the later 3.0 V6 (AJ200D) instead."
       },
       {
         "id": 4,
         "question": "How do I know if my XJ timing chain needs replacing?",
-        "answer": "Listen for a cold-start rattle that lasts 1–2 seconds — this is the chain tensioner bleeding down. If the rattle persists, stop driving and get it inspected. The AJ133 pre-2013 is the highest-risk variant; post-2013 cars have a revised tensioner design that rarely fails."
+        "answer": "Listen for a cold-start rattle that lasts 1–2 seconds - this is the chain tensioner bleeding down. If the rattle persists, stop driving and get it inspected. The AJ133 pre-2013 is the highest-risk variant; post-2013 cars have a revised tensioner design that rarely fails."
       },
       {
         "id": 5,
         "question": "Is it worth replacing an XJ engine?",
-        "answer": "Yes, almost always. The XJ's flagship values mean even a £9,000 reconditioned engine is well within the car's value on a £15,000+ X351. For older X300/X308 models, the value equation is tighter — get a scrap valuation alongside any repair quote, but the XJ is the keeper's car."
+        "answer": "Yes, almost always. The XJ's flagship values mean even a £9,000 reconditioned engine is well within the car's value on a £15,000+ X351. For older X300/X308 models, the value equation is tighter - get a scrap valuation alongside any repair quote, but the XJ is the keeper's car."
       },
       {
         "id": 6,
         "question": "Which XJ should I buy?",
-        "answer": "A 2013+ X351 with the 5.0 V8. The 2013 timing chain revision is the single most important engineering improvement in the entire XJ lineage. If you're on a tighter budget, the X350/X358 with the 4.2 V8 is a reliable used buy — just watch for cooling system issues."
+        "answer": "A 2013+ X351 with the 5.0 V8. The 2013 timing chain revision is the single most important engineering improvement in the entire XJ lineage. If you're on a tighter budget, the X350/X358 with the 4.2 V8 is a reliable used buy - just watch for cooling system issues."
       },
       {
         "id": 7,
         "question": "How do I find my XJ engine code?",
-        "answer": "Check the VIN plate — the engine code is part of the VIN (positions 4-8). Alternatively, look on the engine block itself: the AJ133 has the code stamped on the front of the left cylinder head. If you're unsure, one of our 15+ vetted Jaguar specialists can identify it for you."
+        "answer": "Check the VIN plate - the engine code is part of the VIN (positions 4-8). Alternatively, look on the engine block itself: the AJ133 has the code stamped on the front of the left cylinder head. If you're unsure, one of our 15+ vetted Jaguar specialists can identify it for you."
       },
       {
         "id": 8,
-        "question": "XJ vs XF — which is more reliable?",
+        "question": "XJ vs XF - which is more reliable?",
         "answer": "Both carry a ✅ Safe verdict in our data, but for different reasons. The XF benefits from the modern, more dependable Ingenium range in its later X260 generation. The XJ's flagship values comfortably absorb even the AJ133 V8's upper replacement cost, though pre-2013 cars warrant a chain-tensioner check. Read the full comparison →"
       }
     ]

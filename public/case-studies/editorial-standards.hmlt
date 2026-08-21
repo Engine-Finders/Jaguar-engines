@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Our Editorial Standards &amp; Independence Policy — Jaguar Engines UK</title>
+<title>Our Editorial Standards &amp; Independence Policy - Jaguar Engines UK</title>
 <meta name="description" content="Our published editorial standards: how we source data, verify claims, handle corrections, and maintain independence from JLR and commercial partners.">
 <link rel="canonical" href="https://jaguarengines.uk/about/editorial-standards">
 
@@ -57,11 +57,11 @@
 <div class="summary-box">
   <p><strong>We are an independent editorial resource, not a garage, not a dealership, and not affiliated with Jaguar Land Rover Limited.</strong> We research Jaguar engines, publish what we find, and route enquiries to a vetted network of specialists who do the actual work.</p>
   <ul>
-    <li><strong>6 published editorial standards</strong> — every piece of content on this site is held to them</li>
-    <li><strong>Every number is tagged</strong> to its source — no untagged claims, no invented statistics</li>
-    <li><strong>A public corrections log</strong> — when we get something wrong, we say so, openly</li>
-    <li><strong>We are paid by specialists for enquiries</strong> — and we disclose that fact plainly, because it's the right thing to do</li>
-    <li><strong>We tell people not to replace their engine</strong> when the numbers don't add up — even though it costs us an enquiry</li>
+    <li><strong>6 published editorial standards</strong> - every piece of content on this site is held to them</li>
+    <li><strong>Every number is tagged</strong> to its source - no untagged claims, no invented statistics</li>
+    <li><strong>A public corrections log</strong> - when we get something wrong, we say so, openly</li>
+    <li><strong>We are paid by specialists for enquiries</strong> - and we disclose that fact plainly, because it's the right thing to do</li>
+    <li><strong>We tell people not to replace their engine</strong> when the numbers don't add up - even though it costs us an enquiry</li>
   </ul>
   <p>Full standards, our commercial model, and how we handle corrections, below.</p>
 </div>
@@ -86,7 +86,7 @@
       <table class="data-table">
         <thead><tr><th>#</th><th>Standard</th><th>What It Means In Practice</th></tr></thead>
         <tbody>
-          <tr><td>1</td><td>Independence</td><td>No commercial partner — including the specialists who pay us for enquiries — has editorial approval over anything we publish. We do not run copy past them.</td></tr>
+          <tr><td>1</td><td>Independence</td><td>No commercial partner - including the specialists who pay us for enquiries - has editorial approval over anything we publish. We do not run copy past them.</td></tr>
           <tr><td>2</td><td>Data provenance</td><td>Every number on this site carries a tag identifying its source: <code>[EM-VERIFIED]</code>, <code>[EM-QUOTE]</code>, <code>[EM-SURVEY]</code>, <code>[EM-INTERVIEW]</code>, <code>[PATTERN DATA]</code>, <code>[THIRD-PARTY]</code>, or <code>[PLACEHOLDER]</code>. Untagged numbers are a build failure.</td></tr>
           <tr><td>3</td><td>No invented individuals</td><td>We never publish named or anonymised individual customer stories. Our case studies are aggregate analyses of real data, not fabricated testimonials.</td></tr>
           <tr><td>4</td><td>Corrections are public</td><td>When we make a factual error, we correct it and log the correction publicly. The <a href="/about/corrections">corrections log</a> is linked from every page on the site.</td></tr>
@@ -102,14 +102,14 @@
   <div class="section-inner fade-down">
     <h2>Editorial Independence, Stated Plainly</h2>
     <p style="max-width:760px; color:var(--jag-grey-700);">We are not affiliated with Jaguar Land Rover Limited. We are not a dealership. We are not a garage. We are an independent editorial resource that researches Jaguar engines, publishes what we find, and routes enquiries to a vetted specialist network.</p>
-    <p style="max-width:760px; color:var(--jag-grey-700);">No commercial partner — including the specialists who pay us for enquiries — has editorial approval over anything we publish. They see the same page you do, at the same time you do, when it goes live. We do not run copy past them, we do not let them review drafts, and we do not change a verdict because they'd prefer we didn't say it. Our <a href="/about/expert-panel">expert panel</a> reviews our technical accuracy, not our editorial stance — and their role is disclosed, not hidden.</p>
+    <p style="max-width:760px; color:var(--jag-grey-700);">No commercial partner - including the specialists who pay us for enquiries - has editorial approval over anything we publish. They see the same page you do, at the same time you do, when it goes live. We do not run copy past them, we do not let them review drafts, and we do not change a verdict because they'd prefer we didn't say it. Our <a href="/about/expert-panel">expert panel</a> reviews our technical accuracy, not our editorial stance - and their role is disclosed, not hidden.</p>
   </div>
 </section>
 
 <section class="section" id="data" data-lazy-section>
   <div class="section-inner fade-left">
     <h2>How We Source Data</h2>
-    <p style="max-width:760px; color:var(--jag-grey-700);">Our primary data source is <strong>EnginesMarket.co.uk</strong> — the UK's largest engine enquiry platform — which supplied 24,650 unique quote requests in 2025 across all brands, including 9,000+ Jaguar-specific enquiries. That data is tagged <code>[EM-VERIFIED]</code> and is the backbone of every failure rate, cost range, and decision split we publish.</p>
+    <p style="max-width:760px; color:var(--jag-grey-700);">Our primary data source is <strong>EnginesMarket.co.uk</strong> - the UK's largest engine enquiry platform - which supplied 24,650 unique quote requests in 2025 across all brands, including 9,000+ Jaguar-specific enquiries. That data is tagged <code>[EM-VERIFIED]</code> and is the backbone of every failure rate, cost range, and decision split we publish.</p>
     <p style="max-width:760px; color:var(--jag-grey-700);">We supplement this with three other channels: direct interviews with 100+ UK engine specialists <code>[EM-INTERVIEW]</code>, post-sale customer surveys conducted 3-6 months after replacement <code>[EM-SURVEY]</code>, and external sources such as manufacturer TSBs, Auto Trader, and Parkers <code>[THIRD-PARTY]</code>. Our full <a href="/data/methodology">data methodology</a> is published in full, including what we count as a failure and what we don't.</p>
   </div>
 </section>
@@ -117,8 +117,8 @@
 <section class="section section-alt" id="verification" data-lazy-section>
   <div class="section-inner fade-right">
     <h2>How We Verify Claims</h2>
-    <p style="max-width:760px; color:var(--jag-grey-700);">Verification is a three-stage process. <strong>First</strong>, every number is tagged to its source at the point of writing — no untagged claims are allowed to ship. <strong>Second</strong>, every page is reviewed for factual accuracy by a member of our <a href="/about/expert-panel">expert panel</a> before publication; their role is to catch technical errors, not to approve editorial stance. <strong>Third</strong>, we maintain a public <a href="/about/corrections">corrections log</a> of any factual errors we've made and corrected, with the date and the corrected text.</p>
-    <p style="max-width:760px; color:var(--jag-grey-700);">We do not publish anything we cannot source. Where a claim requires a number that isn't in our primary data, we mark it <code>[ESTIMATED]</code> and use relative language — "typically", "many owners", "a common pattern" — rather than presenting it as a verified fact. Our <a href="/about/data-verification">data verification page</a> sets out the full process, including how we handle data that doesn't meet our threshold for publication.</p>
+    <p style="max-width:760px; color:var(--jag-grey-700);">Verification is a three-stage process. <strong>First</strong>, every number is tagged to its source at the point of writing - no untagged claims are allowed to ship. <strong>Second</strong>, every page is reviewed for factual accuracy by a member of our <a href="/about/expert-panel">expert panel</a> before publication; their role is to catch technical errors, not to approve editorial stance. <strong>Third</strong>, we maintain a public <a href="/about/corrections">corrections log</a> of any factual errors we've made and corrected, with the date and the corrected text.</p>
+    <p style="max-width:760px; color:var(--jag-grey-700);">We do not publish anything we cannot source. Where a claim requires a number that isn't in our primary data, we mark it <code>[ESTIMATED]</code> and use relative language - "typically", "many owners", "a common pattern" - rather than presenting it as a verified fact. Our <a href="/about/data-verification">data verification page</a> sets out the full process, including how we handle data that doesn't meet our threshold for publication.</p>
   </div>
 </section>
 
@@ -134,7 +134,7 @@
   <div class="section-inner fade-down">
     <h2>Our Commercial Model, Disclosed</h2>
     <p style="max-width:760px; color:var(--jag-grey-700);">This site is free to use because specialists pay us for the enquiries we send them. You pay us nothing, and we take no commission on the work itself. We'd rather explain that openly than let you assume the site runs on goodwill.</p>
-    <p style="max-width:760px; color:var(--jag-grey-700);">And it's precisely why our editorial independence matters: if we only ever told people to replace their engine, we'd generate more enquiries in the short term and destroy the reason anyone trusts us in the long term. That's why our <a href="/economics/repair-replace-scrap-framework">repair vs replace framework</a> is published in full — including the 60% threshold above which we tell people <em>not</em> to replace — and why pages like <a href="/economics/is-it-worth-replacing-an-x-type-engine">is it worth replacing an X-Type engine</a> and <a href="/economics/when-should-you-scrap-a-jaguar">when should you scrap a Jaguar</a> exist at all. We lose an enquiry every time we tell someone to scrap their car. We publish the framework anyway.</p>
+    <p style="max-width:760px; color:var(--jag-grey-700);">And it's precisely why our editorial independence matters: if we only ever told people to replace their engine, we'd generate more enquiries in the short term and destroy the reason anyone trusts us in the long term. That's why our <a href="/economics/repair-replace-scrap-framework">repair vs replace framework</a> is published in full - including the 60% threshold above which we tell people <em>not</em> to replace - and why pages like <a href="/economics/is-it-worth-replacing-an-x-type-engine">is it worth replacing an X-Type engine</a> and <a href="/economics/when-should-you-scrap-a-jaguar">when should you scrap a Jaguar</a> exist at all. We lose an enquiry every time we tell someone to scrap their car. We publish the framework anyway.</p>
   </div>
 </section>
 
@@ -155,7 +155,7 @@
 </section>
 
 <footer>
-  <p>Jaguar Engines UK — part of the Engine Finders network. Independent editorial content; not affiliated with Jaguar Land Rover Limited or JLR Engines.</p>
+  <p>Jaguar Engines UK - part of the Engine Finders network. Independent editorial content; not affiliated with Jaguar Land Rover Limited or JLR Engines.</p>
   <p><a href="/about/editorial-standards">Editorial Standards</a> · <a href="/about/data-verification">Data Verification</a> · <a href="/about/corrections">Corrections Log</a></p>
 </footer>
 

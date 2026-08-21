@@ -9,7 +9,7 @@ import GenIcon from "../generation/GenIcons";
 const DESKTOP_COLS = "grid-cols-[1.6fr_0.9fr_1fr_1.7fr]";
 const MOBILE_COLS = "grid-cols-[220px_110px_140px_240px]";
 
-// Generic trust guarantees for the bottom ticker bar — not tied to page-specific copy.
+// Generic trust guarantees for the bottom ticker bar - not tied to page-specific copy.
 const TRUST_TICKER = [
   { icon: "shield", label: "20+ Vetted Specialists UK Network" },
   { icon: "check", label: "12-Month Warranty as Standard" },
@@ -25,7 +25,7 @@ function repairableTone(repairable = "") {
 }
 
 // Header + every row live in ONE shared grid (not one grid per row) so the
-// column edges are guaranteed pixel-identical — stacking separate same-spec
+// column edges are guaranteed pixel-identical - stacking separate same-spec
 // grids can drift a fraction of a px apart per instance with gap-px tracks,
 // which is what made the header background fall short of the row content.
 function Table({ columns, rows, cols, headerBg, headerDivider, isDark }) {
@@ -131,7 +131,7 @@ export default function RepairBuyOrReplace({ data }) {
         </div>
       </div>
 
-      {/* Desktop: unchanged — bg image behind title/subtitle only */}
+      {/* Desktop: unchanged - bg image behind title/subtitle only */}
       <div className="relative hidden w-full overflow-hidden md:block">
         <div className="absolute inset-0">
           <Image src={image} alt="BMW 320d" fill className="object-cover object-right" sizes="100vw" />

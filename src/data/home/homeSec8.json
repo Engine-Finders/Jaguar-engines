@@ -1,5 +1,5 @@
 {
-  "subHeadline": "Deep, permanent reference hubs for the engines and systems Jaguar owners research most — not blog posts, not one-off articles. Every guide is built on real UK enquiry data and Jaguar-specific expertise.",
+  "subHeadline": "Deep, permanent reference hubs for the engines and systems Jaguar owners research most - not blog posts, not one-off articles. Every guide is built on real UK enquiry data and Jaguar-specific expertise.",
   "headerImage": {
     "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=900&q=80",
     "alt": "Jaguar engine knowledge"
@@ -9,7 +9,7 @@
       "id": 1,
       "title": "AJ-V8 Knowledge Centre",
       "icon": "🏆",
-      "description": "Every displacement and state of tune, 4.2 to 5.0 SC — the complete AJ-V8/<a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> ownership guide.",
+      "description": "Every displacement and state of tune, 4.2 to 5.0 SC - the complete AJ-V8/<a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> ownership guide.",
       "image": {
         "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=400&q=80",
         "alt": "AJ-V8 Knowledge Centre"
@@ -20,7 +20,7 @@
       "id": 2,
       "title": "AJD-V6 Knowledge Centre",
       "icon": "🔧",
-      "description": "The 2.7 and 3.0 TDV6 diesel's full ownership profile — the same engine family as Land Rover's 276DT/<a href='https://jaguarengines.uk/engine/306dt-306ps'>306DT</a>.",
+      "description": "The 2.7 and 3.0 TDV6 diesel's full ownership profile - the same engine family as Land Rover's 276DT/<a href='https://jaguarengines.uk/engine/306dt-306ps'>306DT</a>.",
       "image": {
         "src": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=400&q=80",
         "alt": "AJD-V6 Knowledge Centre"
@@ -53,7 +53,7 @@
       "id": 5,
       "title": "V12 Heritage Knowledge Centre",
       "icon": "👑",
-      "description": "The legendary 5.3/6.0 HE V12 — ownership, rebuilds, and what collectors need to know.",
+      "description": "The legendary 5.3/6.0 HE V12 - ownership, rebuilds, and what collectors need to know.",
       "image": {
         "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=400&q=80",
         "alt": "V12 Heritage Knowledge Centre"
@@ -75,7 +75,7 @@
       "id": 7,
       "title": "ZF Gearbox Problems",
       "icon": "🔄",
-      "description": "The 8-speed automatic's known issues across the JLR range — mechatronic, torque converter, and more.",
+      "description": "The 8-speed automatic's known issues across the JLR range - mechatronic, torque converter, and more.",
       "image": {
         "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=400&q=80",
         "alt": "ZF Gearbox Problems"
@@ -86,7 +86,7 @@
       "id": 8,
       "title": "XK Legacy Engine Knowledge Centre",
       "icon": "🐆",
-      "description": "The straight-six that powered every Jaguar saloon from the Mark 2 to the XJS — heritage ownership guide.",
+      "description": "The straight-six that powered every Jaguar saloon from the Mark 2 to the XJS - heritage ownership guide.",
       "image": {
         "src": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=400&q=80",
         "alt": "XK Legacy Engine Knowledge Centre"

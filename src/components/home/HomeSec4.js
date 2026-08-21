@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
+import HomeIcon from "@/components/home/homeIcons";
 
 const iconPaths = {
   chart: <path d="M4 19V9m5 10V5m5 14v-7m5 7H3" />,
@@ -21,22 +22,33 @@ const iconPaths = {
   check: <path d="m5 12 4 4L19 6" />,
   x: <path d="M8 8l8 8M16 8l-8 8" />,
   alert: <path d="M12 8v5m0 4h.01M12 3 2 21h20L12 3Z" />,
+  clock: <path d="M12 7v5l3 2M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z" />,
 };
 
+const rankingIcons = ["engine", "car", "tag", "flame", "shield", "warning", "users", "clock"];
+
 const verdictStyles = {
-  best: "border-[#d7eadb] bg-[#f2fbf4] text-[#071827]",
-  safe: "border-[#d7eadb] bg-[#eefaf3] text-[#071827]",
-  avoid: "border-[#f4cfd2] bg-[#fff0f1] text-[#071827]",
-  watch: "border-[#f4dfbf] bg-[#fff7ea] text-[#5b3200]",
-  family: "border-[#d5e8fb] bg-[#f0f8ff] text-[#06316f]",
+  best: "border-[#cfe8d6] bg-[#eefaf3] text-[#13884a]",
+  safe: "border-[#cfe8d6] bg-[#eefaf3] text-[#13884a]",
+  avoid: "border-[#f4cfd2] bg-[#fff0f1] text-[#c42430]",
+  watch: "border-[#f4dfbf] bg-[#fff7ea] text-[#c77700]",
+  family: "border-[#d5e8fb] bg-[#f0f8ff] text-[#2f6feb]",
 };
 
 const verdictIconColors = {
-  best: "text-[#f6a400]",
+  best: "text-[#d4a017]",
   safe: "text-[#35a853]",
   avoid: "text-[#df232a]",
   watch: "text-[#f59e0b]",
   family: "text-[var(--color-primary)]",
+};
+
+const categoryColors = {
+  best: "text-[#13884a]",
+  safe: "text-[#13884a]",
+  avoid: "text-[#c42430]",
+  watch: "text-[#c77700]",
+  family: "text-[#2f6feb]",
 };
 
 function Icon({ name, className = "h-6 w-6" }) {
@@ -55,60 +67,53 @@ function ChevronIcon() {
   );
 }
 
-function ArrowIcon() {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M5 12h14m-6-6 6 6-6 6" />
-    </svg>
-  );
+function resolveIcon(row, index) {
+  if (row.icon && iconPaths[row.icon]) return row.icon;
+  if (row.verdict?.type === "best") return index === 6 ? "best-family-icon" : "top-choice";
+  if (row.verdict?.type === "safe") return "safe-buy";
+  if (row.verdict?.type === "avoid") return "flame";
+  if (row.verdict?.type === "watch") return "warning";
+  return rankingIcons[index] || "top-choice";
 }
 
-function TrustStrip({ items, isDark }) {
+function resolveVerdictIcon(verdict) {
+  if (verdict.type === "best") return "top-choice";
+  if (verdict.type === "safe") return "safe-buy";
+  if (verdict.type === "avoid") return "check-watch";
+  if (verdict.type === "watch") return "check-watch";
+  return "top-choice";
+}
+
+function VerdictBadge({ verdict, fullWidth = false }) {
+  const { theme } = useTheme();
+  const isDark = theme === "dark";
+  const iconName = resolveVerdictIcon(verdict);
+
   return (
-    <ul
-      className={`grid grid-cols-4 overflow-hidden rounded-md border shadow-[0_14px_34px_rgba(10,26,43,0.1)] md:hidden ${
-        isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#d7dde6] bg-white"
-      }`}
+    <span
+      className={`inline-flex items-center justify-center gap-1.5 rounded-full border px-2.5 py-1.5 text-[0.72rem] font-bold md:min-w-[104px] md:gap-2 md:rounded-md md:px-3 md:py-2 md:text-[0.86rem] ${
+        fullWidth ? "w-full" : ""
+      } ${verdictStyles[verdict.type] || verdictStyles.best}`}
     >
-      {items.map((item, index) => (
-        <li key={item.text || item.label || index} className={`flex min-w-0 flex-col items-center gap-2 border-r px-1.5 py-4 text-center last:border-r-0 ${isDark ? "border-[var(--color-border)]" : "border-[#d7dde6]"}`}>
-          <span className="flex h-8 w-8 items-center justify-center text-[var(--color-primary)]">
-            <Icon name={item.icon} className="h-8 w-8" />
-          </span>
-          <span className={isDark ? "text-white" : "text-[#071827]"}>
-            <strong className="block text-[0.94rem] leading-tight">{item.value}</strong>
-            <span className={`block text-[0.66rem] leading-[1.28] ${isDark ? "text-white/78" : "text-[#27384a]"}`}>{item.text || item.label}</span>
-          </span>
-        </li>
-      ))}
-    </ul>
-  );
-}
-
-function VerdictBadge({ verdict }) {
-  return (
-    <span className={`inline-flex min-w-[74px] items-center justify-center gap-1.5 rounded-md border px-2 py-1.5 text-[0.76rem] font-bold md:min-w-[104px] md:gap-3 md:px-3 md:py-2 md:text-[0.9rem] ${verdictStyles[verdict.type] || verdictStyles.best}`}>
-      <Icon name={verdict.icon} className={`h-4 w-4 md:h-5 md:w-5 ${verdictIconColors[verdict.type] || verdictIconColors.best}`} />
+      <HomeIcon name={iconName} isDark={isDark} className="h-6 w-6 md:h-7 md:w-7" />
       <span>{verdict.text}</span>
     </span>
   );
 }
 
-function RankingIcon({ row, isDark }) {
-  const dangerClass = row.verdict.type === "avoid" ? "bg-[#ed1c24]" : row.verdict.type === "watch" ? "bg-[#f59e0b]" : isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]";
+function RankingIcon({ row, index, isDark }) {
+  const iconName = resolveIcon(row, index);
 
   return (
-    <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-white md:h-14 md:w-14 ${dangerClass}`}>
-      <Icon name={row.icon} className="h-6 w-6 md:h-8 md:w-8" />
+    <span className="flex h-10 w-10 shrink-0 items-center justify-center md:h-12 md:w-12">
+      <HomeIcon name={iconName} isDark={isDark} className="h-9 w-9 md:h-10 md:w-10" />
     </span>
   );
 }
 
-function RankingRow({ row, isDark }) {
-  // Use a div (not Link/<a>) so `why` HTML can safely include nested <a> tags
-  // without invalid <a>-in-<a> nesting that breaks hydration.
-  const rowClassName = `relative grid grid-cols-[72px_78px_minmax(0,1fr)_74px_12px] items-center gap-1 border-b px-2 py-3 last:border-b-0 sm:grid-cols-[82px_90px_minmax(0,1fr)_86px_14px] sm:gap-2 sm:px-3 md:grid-cols-[minmax(320px,1.3fr)_minmax(180px,0.78fr)_minmax(430px,2.3fr)_126px_24px] md:gap-5 md:px-6 md:py-4 ${
-    isDark ? "border-[var(--color-border)] text-white hover:bg-[var(--color-page-soft)]" : "border-[#dfe5ed] text-[#071827] hover:bg-[#f8fbff]"
+function RankingRow({ row, index, isDark }) {
+  const rowClassName = `relative grid grid-cols-[minmax(280px,1.2fr)_minmax(160px,0.7fr)_minmax(0,2fr)_120px_24px] items-center gap-4 border-b px-5 py-3.5 last:border-b-0 ${
+    isDark ? "border-[var(--color-border)] text-white hover:bg-[var(--color-page-soft)]" : "border-[var(--color-border)] text-[var(--color-text)] hover:bg-[var(--color-page-soft)]"
   }`;
 
   return (
@@ -118,29 +123,140 @@ function RankingRow({ row, isDark }) {
           <span className="sr-only">{row.ranking}</span>
         </Link>
       ) : null}
-      <div className="relative z-10 pointer-events-none flex min-w-0 flex-col items-center gap-2 text-center md:flex-row md:gap-5 md:text-left">
-        <RankingIcon row={row} isDark={isDark} />
-        <span className="text-[0.7rem] font-bold leading-[1.2] sm:text-[0.76rem] md:text-[1.08rem]">{row.ranking}</span>
+      <div className="relative z-10 pointer-events-none flex min-w-0 items-center gap-4">
+        <span
+          className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-[0.78rem] font-bold ${
+            isDark ? "bg-[var(--color-chrome)] text-[var(--color-page)]" : "bg-[var(--color-primary)] text-white"
+          }`}
+        >
+          {index + 1}
+        </span>
+        <RankingIcon row={row} index={index} isDark={isDark} />
+        <span className="text-[0.78rem] font-bold uppercase tracking-[0.04em]">{row.ranking}</span>
       </div>
-      <div className={`relative z-10 pointer-events-none min-w-0 border-l pl-2 md:pl-5 ${isDark ? "border-[var(--color-border)]" : "border-[#dfe5ed]"}`}>
-        <span className="block text-[0.78rem] font-bold leading-tight sm:text-[0.86rem] md:text-[1.12rem]">{row.winner}</span>
+      <div className="relative z-10 pointer-events-none min-w-0">
+        <span className="block text-[0.95rem] font-bold leading-tight">{row.winner}</span>
         {row.winnerNote ? (
           <span
-            className={`mt-1 block text-[0.62rem] leading-[1.2] sm:text-[0.68rem] md:text-[0.85rem] ${isDark ? "text-white/75" : "text-[#27384a]"}`}
+            className={`mt-1 block text-[0.78rem] leading-[1.25] ${isDark ? "text-white/75" : "text-[var(--color-text-muted)]"}`}
             dangerouslySetInnerHTML={{ __html: row.winnerNote }}
           />
         ) : null}
       </div>
       <div
-        className={`relative z-10 min-w-0 border-l pl-2 text-[0.66rem] leading-[1.32] sm:text-[0.72rem] md:pl-5 md:text-[0.9rem] ${isDark ? "border-[var(--color-border)] text-white/82" : "border-[#dfe5ed] text-[#172b4a]"}`}
+        className={`relative z-10 min-w-0 text-[0.86rem] leading-[1.35] ${isDark ? "text-white/82" : "text-[var(--color-chrome-bright)]"}`}
         dangerouslySetInnerHTML={{ __html: row.why }}
       />
-      <div className="relative z-10 pointer-events-none flex justify-center">
+      <div className="relative z-10 pointer-events-none flex justify-end">
         <VerdictBadge verdict={row.verdict} />
       </div>
-      <span className={`relative z-10 pointer-events-none ${isDark ? "text-white" : "text-[#071827]"}`}>
+      <span className={`relative z-10 pointer-events-none ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
         <ChevronIcon />
       </span>
+    </div>
+  );
+}
+
+function MobileRankingCard({ row, index, isDark }) {
+  const iconName = resolveIcon(row, index);
+  const rank = String(index + 1).padStart(2, "0");
+  const categoryColor = categoryColors[row.verdict.type] || categoryColors.best;
+  const content = (
+    <>
+      <div className="flex items-start justify-between gap-2">
+        <span
+          className={`flex h-6 w-6 items-center justify-center rounded-[3px] text-[0.64rem] font-bold ${
+            isDark ? "bg-[var(--color-chrome)] text-[var(--color-page)]" : "bg-[var(--color-primary)] text-white"
+          }`}
+        >
+          {rank}
+        </span>
+        <span className={`max-w-[68%] text-right text-[0.58rem] font-bold uppercase leading-[1.15] tracking-[0.04em] ${categoryColor}`}>
+          {row.ranking}
+        </span>
+      </div>
+
+      <h3 className={`mt-2 text-[0.82rem] font-bold leading-[1.2] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+        {row.winner}
+      </h3>
+
+      <div className="mt-2.5 flex justify-center py-1">
+        <span
+          className={`flex h-11 w-11 items-center justify-center rounded-full ${
+            row.verdict.type === "avoid"
+              ? "bg-[#ed1c24] text-white"
+              : row.verdict.type === "watch"
+                ? "bg-[#f59e0b] text-white"
+                : isDark
+                  ? "bg-[var(--color-chrome-soft)] text-white"
+                  : "bg-[var(--color-primary-soft)] text-[var(--color-text)]"
+          }`}
+        >
+          <Icon name={iconName} className="h-5 w-5" />
+        </span>
+      </div>
+
+      <div
+        className={`mt-1.5 flex-1 text-[0.68rem] leading-[1.3] ${isDark ? "text-white/75" : "text-[var(--color-chrome-bright)]"}`}
+        dangerouslySetInnerHTML={{ __html: row.why }}
+      />
+
+      <div className="mt-auto pt-2.5">
+        <VerdictBadge verdict={row.verdict} fullWidth />
+      </div>
+    </>
+  );
+
+  const cardClass = `flex h-full flex-col rounded-lg border p-2.5 ${
+    isDark
+      ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
+      : "border-[var(--color-border)] bg-[var(--color-surface)] shadow-[0_4px_12px_rgba(16,18,16,0.06)]"
+  }`;
+
+  if (row.href) {
+    return (
+      <Link href={row.href} className={cardClass}>
+        {content}
+      </Link>
+    );
+  }
+
+  return <article className={cardClass}>{content}</article>;
+}
+
+function DataNote({ dataSources, isDark }) {
+  if (!dataSources) return null;
+  const summary =
+    dataSources.note ||
+    (dataSources.rows || [])
+      .map((row) => row.claim)
+      .filter(Boolean)
+      .slice(0, 2)
+      .join(" ");
+
+  return (
+    <div
+      className={`mt-4 flex items-start gap-3 rounded-xl border px-3.5 py-3.5 md:mt-6 md:px-5 ${
+        isDark
+          ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
+          : "border-[var(--color-border)] bg-[var(--color-surface)]"
+      }`}
+    >
+      <span
+        className={`mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${
+          isDark ? "bg-[var(--color-chrome)] text-[var(--color-page)]" : "bg-[var(--color-primary)] text-white"
+        }`}
+      >
+        <Icon name="book" className="h-4 w-4" />
+      </span>
+      <div className="min-w-0">
+        <p className={`text-[0.72rem] font-bold uppercase tracking-[0.08em] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+          {dataSources.title || "Data Note"}
+        </p>
+        <p className={`mt-1 text-[0.78rem] leading-[1.4] ${isDark ? "text-white/75" : "text-[var(--color-text-muted)]"}`}>
+          {summary || "Rankings are drawn from live UK enquiry data and specialist-verified failure patterns."}
+        </p>
+      </div>
     </div>
   );
 }
@@ -148,80 +264,93 @@ function RankingRow({ row, isDark }) {
 export default function HomeSec4({ data }) {
   const { theme } = useTheme();
   const isDark = theme === "dark";
-  const fallbackImage = data.headerImage || {
-    src: "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=900&q=80",
-    alt: "Jaguar ownership rankings",
-  };
   const heroImage =
-    (isDark ? data.heroImages?.dark : data.heroImages?.light) || fallbackImage;
-  const trustStrip = (data.trustStrip || []).map((item) => ({
-    icon: item.icon,
-    value: item.value || "",
-    text: item.text || item.label || "",
-  }));
-  const bottomCta = data.bottomCta || null;
+    (isDark ? data.heroImages?.dark : data.heroImages?.light) ||
+    data.headerImage || {
+      src: "/home-image/sec2-bg.webp",
+      alt: "Jaguar ownership rankings",
+    };
+  const rankings = data.rankings || [];
 
   return (
-    <section className={`relative overflow-hidden px-3 py-6 md:py-8 ${isDark ? "bg-[#02070b]" : "bg-white"}`}>
-      <div className="absolute inset-x-0 top-0 hidden h-[320px] md:block">
-        <Image src={heroImage.src} alt={heroImage.alt} fill className="object-cover object-[82%_center]" sizes="100vw" />
-        <div className={isDark ? "absolute inset-0 bg-[linear-gradient(90deg,rgba(2,7,11,0.96)_0%,rgba(2,7,11,0.8)_38%,rgba(2,7,11,0.35)_74%)]" : "absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.98)_0%,rgba(255,255,255,0.88)_44%,rgba(255,255,255,0.1)_78%)]"} />
-        <div className={isDark ? "absolute inset-x-0 bottom-0 h-24 bg-[linear-gradient(0deg,#02070b_0%,transparent_100%)]" : "absolute inset-x-0 bottom-0 h-24 bg-[linear-gradient(0deg,white_0%,transparent_100%)]"} />
+    <section className="relative overflow-hidden bg-[var(--color-page)]">
+      {/* Header - image on right only, same treatment as Sec2 */}
+      <div className="relative overflow-hidden">
+        <div className="absolute inset-y-0 right-0 w-[58%] md:w-[46%]">
+          <Image
+            src={heroImage.src}
+            alt={heroImage.alt || ""}
+            fill
+            className="object-cover object-right"
+            sizes="(max-width: 768px) 58vw, 46vw"
+          />
+          <div
+            className={
+              isDark
+                ? "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(11,12,12,0.82)_34%,rgba(11,12,12,0.18)_100%)]"
+                : "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(243,243,241,0.88)_34%,rgba(243,243,241,0.18)_100%)]"
+            }
+          />
+        </div>
+
+        <div className="relative mx-auto w-full max-w-8xl px-3 py-6 md:px-6 md:py-10 lg:px-8">
+          <div className="max-w-[720px]">
+            <h2
+              className={`text-[2.2rem] font-bold leading-[0.98] md:text-[3.4rem] md:leading-[0.96] ${
+                isDark ? "text-white" : "text-[var(--color-text)]"
+              }`}
+            >
+              Jaguar{" "}
+              <span className="text-[var(--color-chrome-bright)]">Ownership Rankings</span>
+            </h2>
+            <div className="mt-3">
+              <MStripe />
+            </div>
+            <p
+              className={`mt-3 max-w-[640px] text-[0.88rem] leading-[1.4] md:text-[1.05rem] md:leading-[1.45] ${
+                isDark ? "text-white/80" : "text-[var(--color-text-muted)]"
+              }`}
+              dangerouslySetInnerHTML={{ __html: data.subHeadline }}
+            />
+          </div>
+        </div>
       </div>
 
-      <div className="relative mx-auto w-full max-w-8xl">
-        <div className="max-w-[760px] pt-2 md:pt-8">
-          <h2 className={`text-[2.35rem] font-bold leading-[0.98] tracking-normal md:text-[3.6rem] ${isDark ? "text-white" : "text-[#071827]"}`}>Jaguar Ownership Rankings</h2>
-          <div className="mt-4">
-            <MStripe />
+      <div className="bg-[var(--color-page-soft)]">
+        <div className="mx-auto w-full max-w-8xl px-3 py-4 md:px-6 md:py-8 lg:px-8">
+          {/* Mobile cards - 2-col tight grid */}
+          <div className="grid grid-cols-2 gap-2.5 md:hidden">
+            {rankings.map((row, index) => (
+              <MobileRankingCard key={row.ranking} row={row} index={index} isDark={isDark} />
+            ))}
           </div>
-          <p className={`mt-4 max-w-[700px] text-[0.86rem] leading-[1.45] md:text-[1.08rem] ${isDark ? "text-white/82" : "text-[#172b4a]"}`} dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
-        </div>
 
-        {trustStrip.length ? (
-          <div className="mt-6">
-            <TrustStrip items={trustStrip} isDark={isDark} />
-          </div>
-        ) : null}
-
-        <div
-          className={`mt-6 overflow-hidden rounded-md border shadow-[0_14px_36px_rgba(10,26,43,0.08)] md:mt-10 ${
-            isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#d7dde6] bg-white"
-          }`}
-        >
-          <div className={`grid grid-cols-[72px_78px_minmax(0,1fr)_74px_12px] gap-1 px-2 py-3 text-[0.58rem] font-bold text-white sm:grid-cols-[82px_90px_minmax(0,1fr)_86px_14px] sm:gap-2 sm:px-3 sm:text-[0.64rem] md:grid-cols-[minmax(320px,1.3fr)_minmax(180px,0.78fr)_minmax(430px,2.3fr)_126px_24px] md:gap-5 md:px-6 md:text-[0.82rem] ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}>
-            <span className="text-center md:text-left md:pl-10">{data.columns[0]}</span>
-            <span>{data.columns[1]}</span>
-            <span>{data.columns[2]}</span>
-            <span className="text-center">{data.columns[3]}</span>
-            <span />
-          </div>
-          {data.rankings.map((row) => (
-            <RankingRow key={row.ranking} row={row} isDark={isDark} />
-          ))}
-        </div>
-
-        {bottomCta ? (
+          {/* Desktop table / list */}
           <div
-            className={`mt-7 flex flex-col gap-4 rounded-md border p-4 md:hidden ${
-              isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#d7dde6] bg-[#f8fbff]"
+            className={`hidden overflow-hidden rounded-xl border md:block ${
+              isDark
+                ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
+                : "border-[var(--color-border)] bg-[var(--color-surface)] shadow-[0_12px_32px_var(--color-shadow)]"
             }`}
           >
-            <div className="flex items-center gap-4">
-              <span className={`flex h-15 w-15 shrink-0 items-center justify-center rounded-lg text-white ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}>
-                <Icon name={bottomCta.icon} className="h-9 w-9" />
-              </span>
-              <div>
-                <p className={`text-[0.9rem] font-bold ${isDark ? "text-white" : "text-[#071827]"}`}>{bottomCta.title}</p>
-                <p className={`mt-1 text-[0.74rem] leading-[1.35] ${isDark ? "text-white/76" : "text-[#27384a]"}`} dangerouslySetInnerHTML={{ __html: bottomCta.text }} />
-              </div>
+            <div
+              className={`grid grid-cols-[minmax(280px,1.2fr)_minmax(160px,0.7fr)_minmax(0,2fr)_120px_24px] gap-4 px-5 py-3 text-[0.72rem] font-bold uppercase tracking-[0.06em] text-white ${
+                isDark ? "bg-[var(--color-chrome)] text-[var(--color-page)]" : "bg-[var(--color-primary)]"
+              }`}
+            >
+              <span>{data.columns?.[0] || "Ranking"}</span>
+              <span>{data.columns?.[1] || "Winner"}</span>
+              <span>{data.columns?.[2] || "Why"}</span>
+              <span className="text-right">{data.columns?.[3] || "Verdict"}</span>
+              <span />
             </div>
-            <Link href={bottomCta.href} className="btn-cta flex items-center justify-center gap-5 rounded-md bg-[var(--color-primary)] px-4 py-3 text-[0.82rem] font-bold text-white">
-              <span>{bottomCta.buttonLabel}</span>
-              <ArrowIcon />
-            </Link>
+            {rankings.map((row, index) => (
+              <RankingRow key={row.ranking} row={row} index={index} isDark={isDark} />
+            ))}
           </div>
-        ) : null}
+
+          <DataNote dataSources={data.dataSources} isDark={isDark} />
+        </div>
       </div>
     </section>
   );

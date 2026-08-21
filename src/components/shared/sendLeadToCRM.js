@@ -74,7 +74,7 @@ export function buildQuoteLeadPayload({ contact, vehicle, calculator = null }) {
     honeypot: contact.honeypot || "",
   };
 
-  // Attached for email only — stripped before CRM send.
+  // Attached for email only - stripped before CRM send.
   if (calculator && typeof calculator === "object") {
     payload.calculator = calculator;
   }
@@ -99,4 +99,4 @@ export function toCrmLeadPayload(payload = {}) {
     honeypot: payload.honeypot || "",
   };
 }
-
+

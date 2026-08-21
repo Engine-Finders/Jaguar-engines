@@ -1,5 +1,5 @@
 /* ============================================================
-   JAGUAR RELIABILITY INDEX 2026 — CHART CONFIGURATIONS
+   JAGUAR RELIABILITY INDEX 2026 - CHART CONFIGURATIONS
    Chart.js loaded via CDN in page <head>. This file holds only
    this report's chart configs, lives in assets/jaguar/.
    ============================================================ */

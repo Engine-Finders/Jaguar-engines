@@ -1,5 +1,5 @@
 {
-  "subHeadline": "Built on real data, verified by specialists, and completely independent — no sponsors, no bias, just honest advice.",
+  "subHeadline": "Built on real data, verified by specialists, and completely independent - no sponsors, no bias, just honest advice.",
   "headerImage": {
     "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=900&q=80",
     "alt": "Jaguar trust"
@@ -9,7 +9,7 @@
       "id": 1,
       "icon": "📊",
       "title": "Built on Real Data",
-      "description": "Every reliability rating and cost range comes from genuine UK quote and enquiry data — not manufacturer marketing, not forum guesswork."
+      "description": "Every reliability rating and cost range comes from genuine UK quote and enquiry data - not manufacturer marketing, not forum guesswork."
     },
     {
       "id": 2,
@@ -21,13 +21,13 @@
       "id": 3,
       "icon": "🔧",
       "title": "Vetted Jaguar Specialists",
-      "description": "Every specialist in our network is vetted specifically for Jaguar work — not generalists who happen to take on Jaguar jobs."
+      "description": "Every specialist in our network is vetted specifically for Jaguar work - not generalists who happen to take on Jaguar jobs."
     },
     {
       "id": 4,
       "icon": "🏆",
       "title": "Part of Engine Finders",
-      "description": "JaguarEngine.uk is part of the Engine Finders family, the UK's leading engine replacement marketplace — giving you the research depth of an independent authority with a vetted route to action when you need one."
+      "description": "JaguarEngine.uk is part of the Engine Finders family, the UK's leading engine replacement marketplace - giving you the research depth of an independent authority with a vetted route to action when you need one."
     }
   ]
 }

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
+import HomeIcon from "@/components/home/homeIcons";
 
 const severityConfig = {
   catastrophic: { dot: "bg-[#ff2b2b]", text: "text-[#07113a]" },
@@ -59,8 +60,8 @@ function Severity({ severity }) {
 
 function SectionIcon({ icon, isDark }) {
   return (
-    <span className={`flex h-12 w-12 shrink-0 items-center justify-center rounded text-white md:h-9 md:w-11 ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}>
-      <Icon name={icon} className="h-7 w-7 md:h-5 md:w-5" strokeWidth={2.3} />
+    <span className="flex h-12 w-12 shrink-0 items-center justify-center md:h-9 md:w-11">
+      <HomeIcon name={icon} isDark={isDark} className="h-7 w-7 md:h-6 md:w-6" />
     </span>
   );
 }

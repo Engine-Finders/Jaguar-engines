@@ -7,7 +7,7 @@ import GenIcon from "../generation/GenIcons";
 
 const pointIcons = ["shield", "scale", "truck"];
 
-// Generic trust guarantees, not tied to page-specific copy — same 5 columns
+// Generic trust guarantees, not tied to page-specific copy - same 5 columns
 // regardless of which variant page this renders on.
 const TICKER_ITEMS = [
   { icon: "tag", title: "100% Free", text: "No hidden fees" },

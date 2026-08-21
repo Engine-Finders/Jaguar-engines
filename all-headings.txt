@@ -1,4 +1,4 @@
-# ALL H1 + H2 HEADINGS — 5 PAGE TYPES
+# ALL H1 + H2 HEADINGS - 5 PAGE TYPES
 # Purpose: hardcode these in components later because they stay the same across all dynamic pages.
 # H1 = one per page type. H2 = one per section (component) per page type.
 
@@ -11,34 +11,34 @@ H2 (by section/component):
 - Find Your Vehicle                                 (HomeSec2)
 - Diagnose Your Jaguar Problem                       (HomeSec3)
 - Jaguar Ownership Rankings                          (HomeSec4)
-- Comparison Hub — Head-to-Head Verdicts             (HomeSec5)
+- Comparison Hub - Head-to-Head Verdicts             (HomeSec5)
 - The Ownership Economics Centre                     (HomeSec6)
-- Jaguar Engine Families — The Pillars               (HomeSec7)
+- Jaguar Engine Families - The Pillars               (HomeSec7)
 - Knowledge Centres                                  (HomeSec8)
 - The Jaguar Failure Database                        (HomeSec9)
 - Jaguar Market Intelligence                         (HomeSec10)
 - Every Model. Every Generation. Honestly Rated.     (HomeSec11)
 - Why Jaguar Owners Trust This Site                  (HomeSec12)
 - Frequently Asked Questions                         (HomeSec13)
-- Not Sure Where to Start?                           (HomeSec14 — from JSON data.title)
+- Not Sure Where to Start?                           (HomeSec14 - from JSON data.title)
 
 ============================================================
 2. MODEL PAGE  (e.g. /e-pace)
 ============================================================
-H1 TEMPLATE: {Model} Engines — The Complete UK Guide
-H1 EXAMPLE:  E-Pace Engines — The Complete UK Guide
+H1 TEMPLATE: {Model} Engines - The Complete UK Guide
+H1 EXAMPLE:  E-Pace Engines - The Complete UK Guide
 
 H2 (by section/component):
-- {Model} — The Ownership Verdict                   (OwnershipVerdict)
+- {Model} - The Ownership Verdict                   (OwnershipVerdict)
 - {Model} at a Glance                                (AtAGlance)
-- {Model} — One Generation, Five Powertrains         (GenerationsGrid)
-- {Model} Engine Codes — The Complete Database       (EngineDatabase)
+- {Model} - One Generation, Five Powertrains         (GenerationsGrid)
+- {Model} Engine Codes - The Complete Database       (EngineDatabase)
 - Common {Model} Engine Problems                     (CommonProblems)
-- {Model} Market Intelligence — What {N} UK Owners Told Us in {Year}  (MarketIntelligence)
-- {Model} Engine Replacement Costs — By Generation   (ReplacementCosts)
-- How the {Model} Engine Range Evolved — {Years}     (EngineEvolution)
+- {Model} Market Intelligence - What {N} UK Owners Told Us in {Year}  (MarketIntelligence)
+- {Model} Engine Replacement Costs - By Generation   (ReplacementCosts)
+- How the {Model} Engine Range Evolved - {Years}     (EngineEvolution)
 - Who Should Buy an {Model}?                         (WhoShouldBuy)
-- Can I Repair My {Model} Engine — or Should I Replace It?  (CalculatorCTA)
+- Can I Repair My {Model} Engine - or Should I Replace It?  (CalculatorCTA)
 - Why {Model} Owners Trust jaguarengines.uk          (TrustBlock)
 - {Model} Frequently Asked Questions                 (FAQAccordion)
 - Ready to Make a Decision?                          (ClosingActionCards)
@@ -46,16 +46,16 @@ H2 (by section/component):
 ============================================================
 3. GENERATION PAGE  (e.g. /e-pace/x540)
 ============================================================
-H1 TEMPLATE: Jaguar {Model} {Generation} Engines — The Complete UK Guide
-H1 EXAMPLE:  Jaguar E-Pace X540 Engines — The Complete UK Guide
+H1 TEMPLATE: Jaguar {Model} {Generation} Engines - The Complete UK Guide
+H1 EXAMPLE:  Jaguar E-Pace X540 Engines - The Complete UK Guide
 
 H2 (by section/component):
-- Jaguar {Model} {Generation} Engine Codes — The Complete Database  (EngineDatabase)
-- Jaguar {Model} {Generation} — Overview              (Overview)
+- Jaguar {Model} {Generation} Engine Codes - The Complete Database  (EngineDatabase)
+- Jaguar {Model} {Generation} - Overview              (Overview)
 - Best & Worst Engines                                (BestWorstEngines)
-- Jaguar {Model} {Generation} — Ownership Economics   (OwnershipEconomics)
+- Jaguar {Model} {Generation} - Ownership Economics   (OwnershipEconomics)
 - Common Problems                                     (CommonProblems)
-- {Generation} Engine Replacement Costs — By Engine and Condition  (ReplacementCosts)
+- {Generation} Engine Replacement Costs - By Engine and Condition  (ReplacementCosts)
 - Core Variants                                       (CoreVariants)
 - Market Intelligence                                 (MarketIntelligence)
 - FAQ                                                 (FAQAccordion)
@@ -64,14 +64,14 @@ H2 (by section/component):
 ============================================================
 4. VARIANT PAGE  (e.g. /e-pace/p250)
 ============================================================
-H1 TEMPLATE: Jaguar {Model} {Variant} Engine Replacement — Compare Prices & Get Quotes
-H1 EXAMPLE:  Jaguar E-Pace P250 Engine Replacement — Compare Prices & Get Quotes
+H1 TEMPLATE: Jaguar {Model} {Variant} Engine Replacement - Compare Prices & Get Quotes
+H1 EXAMPLE:  Jaguar E-Pace P250 Engine Replacement - Compare Prices & Get Quotes
 
 H2 (by section/component):
-- Jaguar {Model} {Variant} — Which Engine Does Your Car Actually Have?  (EraMap)
+- Jaguar {Model} {Variant} - Which Engine Does Your Car Actually Have?  (EraMap)
 - Jaguar {Model} {Variant} Engine Replacement Costs  (ReplacementCosts)
 - Common Problems                                     (CommonProblems)
-- {Variant} — Repair, Buy, or Replace?                (RepairBuyOrReplace)
+- {Variant} - Repair, Buy, or Replace?                (RepairBuyOrReplace)
 - Buying Checklist                                    (BuyingChecklist)
 - Engine Codes                                        (EngineCodes)
 - Market Intelligence                                 (MarketIntelligence)
@@ -81,8 +81,8 @@ H2 (by section/component):
 ============================================================
 5. ENGINE PAGE  (e.g. /engine/aj-v6-petrol)
 ============================================================
-H1 TEMPLATE: Jaguar {Engine Name} — Specs, Reliability & Replacement Cost
-H1 EXAMPLE:  Jaguar AJ-V6 Petrol Engine — Specs, Reliability & Replacement Cost
+H1 TEMPLATE: Jaguar {Engine Name} - Specs, Reliability & Replacement Cost
+H1 EXAMPLE:  Jaguar AJ-V6 Petrol Engine - Specs, Reliability & Replacement Cost
 
 H2 (by section/component):
 - Jaguar {Engine Name} Engine Overview               (AtAGlance)

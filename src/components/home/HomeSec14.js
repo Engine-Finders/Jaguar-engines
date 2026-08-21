@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
+import HomeIcon from "@/components/home/homeIcons";
 
 const iconPaths = {
   check: <path d="m5 12 4 4L19 6" />,
@@ -94,7 +95,7 @@ export default function HomeSec14({ data }) {
 
             <div className="mt-6 grid gap-3 md:grid-cols-[272px_240px_minmax(0,1fr)] md:items-center">
               <Link href="/quote" className="btn-cta flex min-h-16 items-center gap-4 rounded-lg bg-[var(--color-primary)] px-5 py-3 text-white">
-                <Icon name="chat" className="h-8 w-8 shrink-0" />
+                <HomeIcon name="chat" isDark={isDark} className="h-8 w-8 shrink-0" />
                 <span className="min-w-0">
                   <span className="block text-[0.88rem] font-bold leading-tight">{primaryCta.label}</span>
                   <span className="mt-1 block text-[0.78rem] leading-tight text-white/84">{primaryCta.subLabel || primaryCta.note || ""}</span>
@@ -102,7 +103,7 @@ export default function HomeSec14({ data }) {
               </Link>
 
               <Link href={secondaryCta.href} className={`flex min-h-16 items-center gap-4 rounded-lg border px-5 py-3 ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface)] text-white" : "border-[#d7dde6] bg-white text-[#071827]"}`}>
-                <Icon name="phone" className="h-7 w-7 shrink-0" />
+                <HomeIcon name="phone" isDark={isDark} className="h-7 w-7 shrink-0" />
                 <span className="min-w-0">
                   <span className="block text-[0.88rem] font-bold leading-tight">{secondaryCta.label}</span>
                   <span className={`mt-1 block text-[0.78rem] leading-tight ${isDark ? "text-white/70" : "text-[#27384a]"}`}>{secondaryCta.subLabel || secondaryCta.note || ""}</span>

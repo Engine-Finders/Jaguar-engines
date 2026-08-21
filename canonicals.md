@@ -2,7 +2,7 @@
 
 3-step setup so every page auto-generates `<link rel="canonical">` with no manual maintenance.
 
-## 1. Root layout — metadataBase
+## 1. Root layout - metadataBase
 
 In `src/app/layout.js`, add `metadataBase` to the static metadata export:
 
@@ -16,7 +16,7 @@ export const metadata = {
 
 This gives Next.js the base URL so relative canonicals (`/`) become absolute (`https://jaguarengines.uk/`).
 
-## 2. Every page — generateMetadata with canonical
+## 2. Every page - generateMetadata with canonical
 
 Each `page.js` exports a `generateMetadata()` that returns `alternates.canonical`. If data files have a `meta.canonical` field, use it; otherwise auto-generate from route params.
 
@@ -86,4 +86,4 @@ Every page outputs:
 <link rel="canonical" href="https://jaguarengines.uk/1-series/e87" />
 ```
 
-— either from data or auto-generated. No per-page manual work needed.
+- either from data or auto-generated. No per-page manual work needed.

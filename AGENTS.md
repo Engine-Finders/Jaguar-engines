@@ -1,4 +1,4 @@
-# BMW Web — Agent Notes
+# BMW Web - Agent Notes
 
 ## Goal
 Build a multi-page site (3–4 pages). Start with the **home page**. Priority is **data flow**, not UI polish. UI is a basic white-theme skeleton only (minimal padding/spacing). Later: swap JSON → DB with minimal changes.
@@ -24,7 +24,7 @@ sfd
 
 ### Pages
 - Home entry: `src/app/page.js`
-- Other pages (later): same pattern — page + section JSONs + section components.
+- Other pages (later): same pattern - page + section JSONs + section components.
 - Shared Navbar + Footer on all pages (simple skeleton for now).
 
 ### Images
@@ -33,7 +33,7 @@ sfd
 - `next.config.mjs` must allow remote image hosts when using `next/image`.
 
 ### UI rules (strict)
-- **No UI focus** — skeleton only: white theme, basic layout, tight spacing.
+- **No UI focus** - skeleton only: white theme, basic layout, tight spacing.
 - Section reference images (when provided) are only for **structure** (e.g. image left / text right), not visual polish.
 - Do not spend tokens on styling, animations, or design systems.
 - Do **not** render "/ SECTION N" labels on sections.
@@ -41,15 +41,15 @@ sfd
 ## Workflow
 1. User provides section content (and optional layout ref image).
 2. Create `src/data/home/homeSecN.json` with **all** content except H1/H2 (nothing omitted).
-3. Create matching `src/components/home/HomeSecN.js` — hardcode H1/H2; rest from `data` props.
+3. Create matching `src/components/home/HomeSecN.js` - hardcode H1/H2; rest from `data` props.
 4. Wire in `src/app/page.js`: import JSON → pass props → render component.
 5. Repeat section by section.
 
 ## Status
 - [x] Folder structure + shared Navbar/Footer
-- [x] homeSec1 — Hero (desktop: text left / image right; mobile: image first)
-- [x] homeSec2 — Find Your Vehicle (desktop: 2-col tables; mobile: stacked list + filters/CTA)
-- [x] homeSec3 — Diagnostic Calculator (desktop: 3-col how/calc/trust; mobile: stacked + example/CTA)
+- [x] homeSec1 - Hero (desktop: text left / image right; mobile: image first)
+- [x] homeSec2 - Find Your Vehicle (desktop: 2-col tables; mobile: stacked list + filters/CTA)
+- [x] homeSec3 - Diagnostic Calculator (desktop: 3-col how/calc/trust; mobile: stacked + example/CTA)
 - [ ] Home sections 4+ (awaiting content)
 - [ ] Other pages (later)
 

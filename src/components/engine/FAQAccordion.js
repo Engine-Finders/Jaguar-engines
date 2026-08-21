@@ -25,7 +25,7 @@ function shortEngineName(engineLabel = "") {
 
 function parseQuestion(question = "") {
   const clean = cleanText(question);
-  const match = clean.match(/^(.+?)\s*[-–—]\s*[“"']?(.+?)[”"']?\s*$/);
+  const match = clean.match(/^(.+?)\s*[-–-]\s*[“"']?(.+?)[”"']?\s*$/);
   if (!match) return { topic: "", title: clean };
   return {
     topic: match[1].trim(),

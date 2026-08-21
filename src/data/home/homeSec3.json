@@ -1,40 +1,36 @@
 {
-  "h2": "Jaguar Diagnostic <span class=\"heading-accent\">Calculator</span>",
-  "subHeadline": "Answer a few questions about your symptoms — we'll match you against known Jaguar failure patterns, show you the likely diagnosis, OEM part references, and an honest repair vs. replace cost estimate.",
+  "h2": "Diagnose Your Jaguar Problem",
+  "subHeadline": "Answer a few questions about your symptoms - we'll match you against known Jaguar failure patterns, show you the likely diagnosis, OEM part references, and an honest repair vs. replace cost estimate.",
   "headerImage": {
-    "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=900&q=80",
+    "src": "/home-image/sec2-bg.webp",
     "alt": "Jaguar diagnostic calculator"
   },
   "heroImages": {
     "light": {
-      "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=900&q=80",
+      "src": "/home-image/sec2-bg.webp",
       "alt": "Jaguar diagnostic calculator"
     },
     "dark": {
-      "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=900&q=80",
+      "src": "/home-image/sec2-bg.webp",
       "alt": "Jaguar diagnostic calculator"
     }
   },
   "trustStrip": [
     {
       "icon": "chart",
-      "value": "1,700+",
-      "text": "real UK enquiries tracked"
+      "text": "Powered by 1,700+ real UK enquiries"
     },
     {
-      "icon": "engine",
-      "value": "10",
-      "text": "tracked diagnosis paths"
+      "icon": "wrench",
+      "text": "15+ vetted Jaguar specialists"
     },
     {
-      "icon": "gear",
-      "value": "15+",
-      "text": "vetted Jaguar specialists"
+      "icon": "book",
+      "text": "OEM part references included"
     },
     {
-      "icon": "shield",
-      "value": "OEM",
-      "text": "part references included"
+      "icon": "trophy",
+      "text": "Part of Engine Finders"
     }
   ],
   "howItWorks": {
@@ -189,7 +185,7 @@
         "question": "What cooling-system symptom are you seeing?",
         "answers": [
           {
-            "label": "Coolant loss on Ingenium petrol — likely water pump path",
+            "label": "Coolant loss on Ingenium petrol - likely water pump path",
             "diagnosisKey": "ingeniumWaterPump"
           },
           {
@@ -243,7 +239,7 @@
             "diagnosisKey": "turboFailure"
           },
           {
-            "label": "Not sure — start from the most common Ingenium chain path",
+            "label": "Not sure - start from the most common Ingenium chain path",
             "diagnosisKey": "ingeniumTimingChain"
           }
         ]
@@ -399,7 +395,7 @@
         "icon": "drop",
         "severity": "catastrophic",
         "headline": "276DT (2.7 TDV6) Oil Pump Failure",
-        "summary": "Shared with Land Rover Discovery 3 — oil pump failure often kills the engine outright with little warning. One of the most expensive Jaguar failure paths in our data.",
+        "summary": "Shared with Land Rover Discovery 3 - oil pump failure often kills the engine outright with little warning. One of the most expensive Jaguar failure paths in our data.",
         "engineCodes": [
           "276DT"
         ],
@@ -449,14 +445,14 @@
           "body": "This failure mode often ends as a dead engine. Continuing to drive after low oil pressure or sudden cut-out risks a total write-off of the unit.",
           "actions": [
             "Stop driving immediately if oil pressure warning or sudden power loss appears.",
-            "Recover the car — do not restart repeatedly.",
+            "Recover the car - do not restart repeatedly.",
             "Confirm whether repair is still possible before pricing a replacement engine."
           ]
         },
         "nextSteps": [
           "Capture fault codes and oil-pressure history if the engine still runs.",
           "Get a specialist strip assessment before committing to recon.",
-          "Compare vehicle value carefully — many 276DT cars sit close to replacement cost."
+          "Compare vehicle value carefully - many 276DT cars sit close to replacement cost."
         ]
       },
       {
@@ -531,7 +527,7 @@
         "icon": "drop",
         "severity": "monitor",
         "headline": "Ingenium Petrol Water Pump (AJ200P / 204PT)",
-        "summary": "The Ingenium petrol is one of the cleaner Jaguar engines in our data — water pump replacement is the main meaningful weak point rather than a catastrophic failure pattern.",
+        "summary": "The Ingenium petrol is one of the cleaner Jaguar engines in our data - water pump replacement is the main meaningful weak point rather than a catastrophic failure pattern.",
         "engineCodes": [
           "AJ200P",
           "204PT"
@@ -593,7 +589,7 @@
         },
         "nextSteps": [
           "Confirm whether the leak is pump, housing, or hose related.",
-          "Repair is usually proportionate — replacement is rarely the first answer.",
+          "Repair is usually proportionate - replacement is rarely the first answer.",
           "Keep service history notes; this engine otherwise has a strong record in our data."
         ]
       },
@@ -808,7 +804,7 @@
         "icon": "bolt",
         "severity": "low",
         "headline": "Battery / Electrical Issues",
-        "summary": "Flat batteries, warning clusters, and start-stop faults are common and usually far cheaper than engine work — but they can mask charging or module problems.",
+        "summary": "Flat batteries, warning clusters, and start-stop faults are common and usually far cheaper than engine work - but they can mask charging or module problems.",
         "engineCodes": [
           "AJ200D",
           "AJ200P",
@@ -945,10 +941,10 @@
       {
         "icon": "shield",
         "title": "EM-VERIFIED Data",
-        "text": "Every cost range and enquiry volume comes from real 2025 UK data — not estimates or guesswork."
+        "text": "Every cost range and enquiry volume comes from real 2025 UK data - not estimates or guesswork."
       },
       {
-        "icon": "gear",
+        "icon": "clipboard",
         "title": "Jaguar-Specific Knowledge",
         "text": "We use exact factory terminology (AJ126, AJ133, AJ200D, Ingenium) and OEM part numbers."
       },
@@ -958,9 +954,9 @@
         "text": "Our recommendations route you to 15+ Jaguar specialists who work on these vehicles daily."
       },
       {
-        "icon": "chart",
+        "icon": "scales",
         "title": "Honest Verdict System",
-        "text": "We tell you when replacement isn't worth it — not every site does that."
+        "text": "We tell you when replacement isn't worth it - not every site does that."
       }
     ]
   },
@@ -977,16 +973,17 @@
   },
   "costTable": {
     "title": "Typical UK Jaguar Replacement Costs",
+    "footnote": "S&F = Supply & Fit",
     "columns": [
-      "FAILURE TYPE",
-      "RECONDITIONED S&F",
-      "REBUILT S&F",
-      "USED S&F",
-      "MAIN DEALER EST."
+      "Failure Type",
+      "Recond. S&F",
+      "Rebuilt S&F",
+      "Used S&F",
+      "Main Dealer Est."
     ],
     "rows": [
       {
-        "failure": "Ingenium Timing Chain (AJ200D/<a href='https://jaguarengines.uk/engine/ajd4-204dtd'>204DTD</a>)",
+        "failure": "Ingenium Timing Chain (AJ200D/204DTD)",
         "recon": "£3,500–£5,800",
         "rebuilt": "£4,800–£7,000",
         "used": "£2,000–£3,500",
@@ -1023,10 +1020,14 @@
     ]
   },
   "bottomCta": {
-    "title": "Get your exact verdict",
-    "text": "Answer a few questions for a diagnosis matched to your Jaguar.",
-    "buttonLabel": "START DIAGNOSIS",
-    "href": "#",
+    "title": "Built on real-world data. Backed by specialists. Focused on what's best for you. No guesswork. No upselling. Just the truth about your Jaguar.",
+    "text": "",
+    "buttonLabel": "START YOUR DIAGNOSIS →",
+    "href": "#diagnostic-calculator",
     "trustLine": "100% Independent • No Sponsorship • Completely Unbiased"
+  },
+  "iPaceNote": {
+    "label": "I-Pace note:",
+    "text": "fully electric - no engine replacement content applies. Listed for completeness; visitors are routed to drive-unit/battery information rather than the engine-replacement research this site is built around."
   }
 }

@@ -1,134 +1,131 @@
 {
   "subHeadline": "Choose your model to explore reliability, common faults and real running costs.",
   "headerImage": {
-    "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=900&q=80",
-    "alt": "Jaguar front detail"
+    "src": "/home-image/sec2-bg.webp",
+    "alt": "Jaguar front grille and headlight"
   },
-  "searchPlaceholder": "Search model...",
-  "filters": [
-    { "label": "ALL MODELS", "value": "all" },
-    { "label": "SALOONS & EXECUTIVE", "value": "saloons" },
-    { "label": "SUVs & SPORTS", "value": "suvs" }
-  ],
-  "columns": ["MODEL", "GENERATIONS", "VERDICT"],
-  "models": [
+  "headerImageDark": {
+    "src": "/home-image/sec2-bg.webp",
+    "alt": "Jaguar front grille and headlight"
+  },
+  "categories": [
     {
-      "model": "XE",
-      "generations": "1 Generation",
-      "verdict": { "icon": "✅", "text": "Safe Buy", "type": "success" },
-      "image": {
-        "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=200&q=80",
-        "alt": "Jaguar XE"
-      },
-      "href": "https://jaguarengines.uk/xe"
+      "id": "saloons",
+      "label": "SALOONS & EXECUTIVE",
+      "icon": "sedan",
+      "models": [
+        {
+          "model": "XE",
+          "generations": "1 Generation",
+          "verdict": { "icon": "✅", "text": "Safe Buy", "type": "success" },
+          "image": {
+            "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=640&q=80",
+            "alt": "Jaguar XE"
+          },
+          "href": "/xe"
+        },
+        {
+          "model": "XF",
+          "generations": "2 Generations",
+          "verdict": { "icon": "🔥", "text": "Most Enquired", "type": "fire" },
+          "image": {
+            "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=640&q=80",
+            "alt": "Jaguar XF"
+          },
+          "href": "/xf"
+        },
+        {
+          "model": "XJ",
+          "generations": "Multiple Generations",
+          "verdict": { "icon": "👑", "text": "Flagship Choice", "type": "crown" },
+          "image": {
+            "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=640&q=80",
+            "alt": "Jaguar XJ"
+          },
+          "href": "/xj"
+        },
+        {
+          "model": "S-Type",
+          "generations": "1 Generation",
+          "verdict": { "icon": "⚠️", "text": "Check Value", "type": "warning" },
+          "image": {
+            "src": "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=640&q=80",
+            "alt": "Jaguar S-Type"
+          },
+          "href": "/s-type"
+        },
+        {
+          "model": "X-Type",
+          "generations": "1 Generation",
+          "verdict": { "icon": "⚠️", "text": "Check Value", "type": "warning" },
+          "image": {
+            "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=640&q=80",
+            "alt": "Jaguar X-Type"
+          },
+          "href": "/x-type"
+        }
+      ]
     },
     {
-      "model": "XF",
-      "generations": "2 Generations",
-      "verdict": {
-        "icon": "🔥",
-        "text": "Most Enquired",
-        "type": "fire"
-      },
-      "image": {
-        "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=200&q=80",
-        "alt": "Jaguar XF"
-      },
-      "href": "https://jaguarengines.uk/xf"
-    },
-    {
-      "model": "XJ",
-      "generations": "Multiple Generations",
-      "verdict": { "icon": "👑", "text": "Flagship Choice", "type": "crown" },
-      "image": {
-        "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=200&q=80",
-        "alt": "Jaguar XJ"
-      },
-      "href": "https://jaguarengines.uk/xj"
-    },
-    {
-      "model": "S-Type",
-      "generations": "1 Generation",
-      "verdict": { "icon": "⚠️", "text": "Check Value", "type": "warning" },
-      "image": {
-        "src": "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=200&q=80",
-        "alt": "Jaguar S-Type"
-      },
-      "href": "https://jaguarengines.uk/s-type"
-    },
-    {
-      "model": "X-Type",
-      "generations": "1 Generation",
-      "verdict": { "icon": "⚠️", "text": "Check Value", "type": "warning" },
-      "image": {
-        "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=200&q=80",
-        "alt": "Jaguar X-Type"
-      },
-      "href": "https://jaguarengines.uk/x-type"
-    },
-    {
-      "model": "F-Pace",
-      "generations": "1 Generation",
-      "verdict": {
-        "icon": "👨‍👩‍👧‍👦",
-        "text": "Best Family",
-        "type": "best"
-      },
-      "image": {
-        "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=200&q=80",
-        "alt": "Jaguar F-Pace"
-      },
-      "href": "https://jaguarengines.uk/f-pace"
-    },
-    {
-      "model": "E-Pace",
-      "generations": "1 Generation",
-      "verdict": { "icon": "🚀", "text": "High Demand", "type": "fire" },
-      "image": {
-        "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=200&q=80",
-        "alt": "Jaguar E-Pace"
-      },
-      "href": "https://jaguarengines.uk/e-pace"
-    },
-    {
-      "model": "I-Pace",
-      "generations": "1 Generation",
-      "verdict": { "icon": "⚡", "text": "EV — Drive Unit Info", "type": "ev" },
-      "image": {
-        "src": "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=200&q=80",
-        "alt": "Jaguar I-Pace"
-      },
-      "href": "https://jaguarengines.uk/i-pace-drive-unit-guide"
-    },
-    {
-      "model": "F-Type",
-      "generations": "1 Generation",
-      "verdict": { "icon": "🏆", "text": "Safest Buy", "type": "trophy" },
-      "image": {
-        "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=200&q=80",
-        "alt": "Jaguar F-Type"
-      },
-      "href": "https://jaguarengines.uk/f-type"
-    },
-    {
-      "model": "XK",
-      "generations": "2 Generations",
-      "verdict": { "icon": "💎", "text": "Premium Style", "type": "diamond" },
-      "image": {
-        "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=200&q=80",
-        "alt": "Jaguar XK"
-      },
-      "href": "https://jaguarengines.uk/xk"
+      "id": "suvs",
+      "label": "SUVS & SPORTS",
+      "icon": "suv",
+      "models": [
+        {
+          "model": "F-Pace",
+          "generations": "1 Generation",
+          "verdict": { "icon": "👨‍👩‍👧‍👦", "text": "Best Family", "type": "family" },
+          "image": {
+            "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=640&q=80",
+            "alt": "Jaguar F-Pace"
+          },
+          "href": "/f-pace"
+        },
+        {
+          "model": "E-Pace",
+          "generations": "1 Generation",
+          "verdict": { "icon": "🚀", "text": "High Demand", "type": "demand" },
+          "image": {
+            "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=640&q=80",
+            "alt": "Jaguar E-Pace"
+          },
+          "href": "/e-pace"
+        },
+        {
+          "model": "I-Pace",
+          "generations": "1 Generation",
+          "verdict": { "icon": "⚡", "text": "EV – Drive Unit Info", "type": "ev" },
+          "image": {
+            "src": "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=640&q=80",
+            "alt": "Jaguar I-Pace"
+          },
+          "href": "/i-pace-drive-unit-guide"
+        },
+        {
+          "model": "F-Type",
+          "generations": "1 Generation",
+          "verdict": { "icon": "🏆", "text": "Safest Buy", "type": "trophy" },
+          "image": {
+            "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=640&q=80",
+            "alt": "Jaguar F-Type"
+          },
+          "href": "/f-type"
+        },
+        {
+          "model": "XK",
+          "generations": "2 Generations",
+          "verdict": { "icon": "💎", "text": "Premium Style", "type": "diamond" },
+          "image": {
+            "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=640&q=80",
+            "alt": "Jaguar XK"
+          },
+          "href": "/xk"
+        }
+      ]
     }
   ],
-  "viewAll": {
-    "label": "View all models",
-    "href": "#"
-  },
-  "cta": {
-    "title": "Not sure which Jaguar to buy?",
-    "text": "Start with our research tools — rankings, faults and real running costs.",
-    "buttonLabel": "START YOUR RESEARCH",
-    "href": "#"
+  "iPaceNote": {
+    "label": "I-Pace note:",
+    "text": "fully electric - no engine replacement content applies. Listed for completeness; visitors are routed to drive-unit/battery information rather than the engine-replacement research this site is built around."
   }
 }

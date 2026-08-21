@@ -1,5 +1,5 @@
 {
-  "subHeadline": "The engines Jaguar owners search for most, ranked by real 2025 enquiry volume — with our honest verdict on each.",
+  "subHeadline": "The engines Jaguar owners search for most, ranked by real 2025 enquiry volume - with our honest verdict on each.",
   "headerImage": {
     "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=900&q=80",
     "alt": "Jaguar engine bay"
@@ -23,7 +23,7 @@
       "verdict": {
         "icon": "⚠️",
         "label": "Watch",
-        "text": "pre-2019 timing chain tensioner wear — revised 2019 onward much improved",
+        "text": "pre-2019 timing chain tensioner wear - revised 2019 onward much improved",
         "type": "watch"
       },
       "href": "#"
@@ -39,7 +39,7 @@
       "verdict": {
         "icon": "⚠️",
         "label": "Watch",
-        "text": "cooling system & plastic crossover pipe — well-documented weak point",
+        "text": "cooling system & plastic crossover pipe - well-documented weak point",
         "type": "watch"
       },
       "href": "#"
@@ -55,7 +55,7 @@
       "verdict": {
         "icon": "🔴",
         "label": "Avoid",
-        "text": "oil pump failure can kill the engine outright — shared with Land Rover",
+        "text": "oil pump failure can kill the engine outright - shared with Land Rover",
         "type": "avoid"
       },
       "href": "#"
@@ -71,7 +71,7 @@
       "verdict": {
         "icon": "🏆",
         "label": "Best",
-        "text": "most reliable modern Jaguar engine — only water pump weakness",
+        "text": "most reliable modern Jaguar engine - only water pump weakness",
         "type": "best"
       },
       "href": "#"

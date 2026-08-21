@@ -367,7 +367,7 @@ export default function QuoteForm({ onSuccess, compact = false }) {
           <input id="honeypot" name="honeypot" tabIndex={-1} autoComplete="off" value={honeypot} onChange={(event) => setHoneypot(event.target.value)} />
         </div>
 
-        {/* Hidden vehicle fields — same names as the reference form / CRM API */}
+        {/* Hidden vehicle fields - same names as the reference form / CRM API */}
         <input type="hidden" name="vehicle_vrm" value={vehicle.vrm} />
         <input type="hidden" name="vehicle_brand" value={vehicle.brand} />
         <input type="hidden" name="vehicle_series" value={vehicle.series} />

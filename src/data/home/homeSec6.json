@@ -1,5 +1,5 @@
 {
-  "subHeadline": "The question every Jaguar owner eventually faces, answered honestly rather than sold around. We tell you when to repair, when to replace, and when to scrap — based on real UK data, not estimates.",
+  "subHeadline": "The question every Jaguar owner eventually faces, answered honestly rather than sold around. We tell you when to repair, when to replace, and when to scrap - based on real UK data, not estimates.",
   "headerImage": {
     "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=900&q=80",
     "alt": "Jaguar ownership economics"
@@ -22,7 +22,7 @@
         "replacementCost": "£4,500–£7,500 [EM-QUOTE]",
         "verdict": {
           "icon": "⚠️",
-          "text": "Watch — sub-£7k examples approach the threshold",
+          "text": "Watch - sub-£7k examples approach the threshold",
           "type": "watch"
         },
         "href": "#"
@@ -37,7 +37,7 @@
         "replacementCost": "£2,500–£5,800 [EM-QUOTE]",
         "verdict": {
           "icon": "🔴",
-          "text": "Scrap threshold — recon cost frequently exceeds car value",
+          "text": "Scrap threshold - recon cost frequently exceeds car value",
           "type": "scrap"
         },
         "href": "#"
@@ -52,7 +52,7 @@
         "replacementCost": "£3,000–£5,800 [EM-QUOTE]",
         "verdict": {
           "icon": "✅",
-          "text": "Safe — replacement viable across all engine variants",
+          "text": "Safe - replacement viable across all engine variants",
           "type": "safe"
         },
         "href": "#"
@@ -67,7 +67,7 @@
         "replacementCost": "£4,500–£9,000 [EM-QUOTE]",
         "verdict": {
           "icon": "✅",
-          "text": "Safe — flagship values absorb even the upper recon cost",
+          "text": "Safe - flagship values absorb even the upper recon cost",
           "type": "safe"
         },
         "href": "#"
@@ -82,7 +82,7 @@
         "replacementCost": "£3,000–£5,800 [EM-QUOTE]",
         "verdict": {
           "icon": "✅",
-          "text": "Safe — well within value even at the upper recon cost",
+          "text": "Safe - well within value even at the upper recon cost",
           "type": "safe"
         },
         "href": "#"
@@ -97,7 +97,7 @@
         "replacementCost": "£4,500–£7,500 [EM-QUOTE]",
         "verdict": {
           "icon": "🔴",
-          "text": "Scrap threshold — recon cost seldom justified",
+          "text": "Scrap threshold - recon cost seldom justified",
           "type": "scrap"
         },
         "href": "#"
@@ -108,7 +108,7 @@
     "title": "The Rule of Thumb",
     "percent": "60%",
     "percentLabel": "JAGUAR THRESHOLD",
-    "text": "If reconditioned engine cost runs at 60% or more of what your car is actually worth on today's market, get a scrap valuation alongside any repair quote — don't decide on repair cost alone."
+    "text": "If reconditioned engine cost runs at 60% or more of what your car is actually worth on today's market, get a scrap valuation alongside any repair quote - don't decide on repair cost alone."
   },
   "deeperLinks": [
     {

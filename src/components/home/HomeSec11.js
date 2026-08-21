@@ -3,6 +3,7 @@
 import Image from "next/image";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
+import HomeIcon from "@/components/home/homeIcons";
 
 const iconPaths = {
   timeline: <path d="M12 8v8M8 12h8M5 5h14v14H5z" />,
@@ -30,8 +31,8 @@ function Icon({ name, className = "h-5 w-5", strokeWidth = 2 }) {
 
 function EraIcon({ isDark }) {
   return (
-    <span className={`relative z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 text-[var(--color-primary)] shadow-[0_8px_20px_rgba(7,95,216,0.12)] md:h-14 md:w-14 ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface)]" : "border-[var(--color-primary)] bg-white"}`}>
-      <Icon name="car" className="h-5.5 w-5.5 md:h-6 md:w-6" strokeWidth={2.1} />
+    <span className="relative z-10 flex h-12 w-12 shrink-0 items-center justify-center md:h-14 md:w-14">
+      <HomeIcon name="timeline" isDark={isDark} className="h-7 w-7 md:h-8 md:w-8" />
     </span>
   );
 }
@@ -193,8 +194,8 @@ function KeyTakeaway({ text, isDark }) {
   return (
     <div className={`mt-4 rounded-md border px-4 py-4 shadow-[0_12px_28px_rgba(10,26,43,0.04)] md:mt-4 md:px-8 md:py-5 ${isDark ? "border-[var(--color-border)] bg-[linear-gradient(180deg,var(--color-surface)_0%,var(--color-surface)_100%)]" : "border-[#dfe5ed] bg-[linear-gradient(180deg,#ffffff_0%,#f8fbff_100%)]"}`}>
       <div className="grid gap-4 md:grid-cols-[92px_1fr] md:items-center">
-        <span className={`flex h-15 w-15 items-center justify-center rounded-md text-white shadow-[0_12px_26px_rgba(7,95,216,0.2)] md:h-16 md:w-16 ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}>
-          <Icon name="insight" className="h-9 w-9 md:h-8 md:w-8" strokeWidth={2.2} />
+        <span className="flex h-15 w-15 items-center justify-center md:h-16 md:w-16">
+          <HomeIcon name="insight" isDark={isDark} className="h-9 w-9 md:h-8 md:w-8" />
         </span>
         <p className={`text-[0.9rem] leading-[1.52] md:text-[1.02rem] ${isDark ? "text-white/84" : "text-[#172334]"}`}>
           <span className="mr-2 font-bold uppercase text-[var(--color-primary)]">Key Takeaway:</span>

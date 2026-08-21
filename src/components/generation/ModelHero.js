@@ -59,7 +59,7 @@ export default function ModelHero({ data }) {
 
   return (
     <section className="relative min-h-[560px] overflow-hidden bg-[var(--color-page)] text-[var(--color-text)] md:min-h-[620px]">
-      {/* Full-bleed background image on every breakpoint — mobile: vertical fade (dark for text up top, car visible lower down); desktop: left-to-right fade */}
+      {/* Full-bleed background image on every breakpoint - mobile: vertical fade (dark for text up top, car visible lower down); desktop: left-to-right fade */}
       <div className="absolute inset-0">
         {/* Mobile: dedicated portrait crop, narrowed and centered so it reads tall/slim rather than stretched full-width */}
         <div className="absolute inset-x-0 top-[20%] bottom-[2%] md:hidden">
@@ -132,10 +132,10 @@ export default function ModelHero({ data }) {
             dangerouslySetInnerHTML={{ __html: data.h1 }}
           />
 
-          {/* MStripe decorative accent — matches home hero (blue / blue / red / grey slashes + trailing line) */}
+          {/* MStripe decorative accent - matches home hero (blue / blue / red / grey slashes + trailing line) */}
           <MStripe />
 
-          {/* subHeadline — sits over the top-heavy fade on mobile, and over the solid background on desktop */}
+          {/* subHeadline - sits over the top-heavy fade on mobile, and over the solid background on desktop */}
           <p
             className={`max-w-[78%] text-[0.88rem] leading-[1.42] md:max-w-[620px] md:text-[1.08rem] md:leading-[1.42] ${
               isDark ? "text-white/88" : "text-[var(--color-text-muted)]"
@@ -146,7 +146,7 @@ export default function ModelHero({ data }) {
           {/* Mobile: spacer so the CTA/stats sit lower, clear of the car in the lower portion of the image */}
           <div className="h-[130px] md:hidden" aria-hidden="true" />
 
-          {/* Mobile: full-width primary CTA — sits below the image card in normal flow */}
+          {/* Mobile: full-width primary CTA - sits below the image card in normal flow */}
           {data.primaryCta ? (
             <Link
               href="/quote"
@@ -157,7 +157,7 @@ export default function ModelHero({ data }) {
             </Link>
           ) : null}
 
-          {/* Trust strip — single horizontal bar, icon-first vertical stack per badge, floating dividers */}
+          {/* Trust strip - single horizontal bar, icon-first vertical stack per badge, floating dividers */}
           {data.trustStrip?.length > 0 ? (
             <div className="glass-panel mt-5 flex items-stretch justify-center rounded-md px-3 py-2.5 shadow-[0_10px_30px_var(--color-shadow)] md:max-w-fit md:rounded-lg md:px-4 md:py-3">
               {data.trustStrip.map((item, index) => {

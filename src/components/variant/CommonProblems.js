@@ -112,7 +112,7 @@ export default function CommonProblems({ data }) {
           <MStripe />
         </div>
 
-        {/* Mobile: tab switcher — one problem shown at a time */}
+        {/* Mobile: tab switcher - one problem shown at a time */}
         <div className="mt-6 flex gap-2 overflow-x-auto rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-1.5 md:hidden">
           {problems.map((problem, index) => {
             const accent = ACCENT_BY_INDEX[index % ACCENT_BY_INDEX.length];

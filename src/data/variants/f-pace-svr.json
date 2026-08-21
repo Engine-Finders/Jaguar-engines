@@ -1,13 +1,13 @@
 {
   "meta": {
     "slug": "f-pace-svr",
-    "title": "F-Pace SVR Engine Replacement Cost UK — Compare Quotes",
+    "title": "F-Pace SVR Engine Replacement Cost UK - Compare Quotes",
     "titleCharCount": 57,
-    "description": "Every Jaguar F-Pace SVR engine — AJ133 5.0L supercharged V8, 2018–2024. Real UK costs, coolant pipe advice, and honest reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
+    "description": "Every Jaguar F-Pace SVR engine - AJ133 5.0L supercharged V8, 2018–2024. Real UK costs, coolant pipe advice, and honest reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
     "descriptionCharCount": 160,
     "openGraph": {
-      "title": "F-Pace SVR Engine Replacement Cost UK — Compare Quotes",
-      "description": "Every Jaguar F-Pace SVR engine — AJ133 5.0L supercharged V8, 2018–2024. Real UK costs, coolant pipe advice, and honest reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
+      "title": "F-Pace SVR Engine Replacement Cost UK - Compare Quotes",
+      "description": "Every Jaguar F-Pace SVR engine - AJ133 5.0L supercharged V8, 2018–2024. Real UK costs, coolant pipe advice, and honest reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
       "type": "website",
       "url": "https://jaguarengines.uk/f-pace/svr/",
       "image": "https://jaguarengines.uk/images/jaguar/hero/f-pace-svr.jpg",
@@ -15,26 +15,26 @@
     },
     "twitter": {
       "card": "summary_large_image",
-      "title": "F-Pace SVR Engine Replacement Cost UK — Compare Quotes",
-      "description": "Every Jaguar F-Pace SVR engine — AJ133 5.0L supercharged V8, 2018–2024. Real UK costs, coolant pipe advice, and honest reliability data.",
+      "title": "F-Pace SVR Engine Replacement Cost UK - Compare Quotes",
+      "description": "Every Jaguar F-Pace SVR engine - AJ133 5.0L supercharged V8, 2018–2024. Real UK costs, coolant pipe advice, and honest reliability data.",
       "image": "https://jaguarengines.uk/images/jaguar/hero/f-pace-svr.jpg"
     },
     "jsonLd": {}
   },
   "hero": {
     "tagPill": "Jaguar F-Pace SVR • 2018–2024 • 2 Engine Generations",
-    "h1": "Jaguar F-Pace SVR Engine Replacement — Compare Prices & Get Quotes",
-    "subHeadline": "Get quotes today from trusted UK Jaguar F-Pace SVR specialists. Compare reconditioned, rebuilt and used 5.0-litre supercharged V8 engines — <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> variants across the X761 SVR range — supply & fit available nationwide.",
+    "h1": "Jaguar F-Pace SVR Engine Replacement - Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Jaguar F-Pace SVR specialists. Compare reconditioned, rebuilt and used 5.0-litre supercharged V8 engines - <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> variants across the X761 SVR range - supply & fit available nationwide.",
     "trustBadges": [
       "🔧 Supply & Fit Available",
       "✅ 12-Month Warranty",
       "🚚 Nationwide Delivery",
       "👥 15+ Specialists"
     ],
-    "priceAnchor": "Jaguar F-Pace SVR Engines — from £2,500 to £12,000 · Engine code: AJ133",
+    "priceAnchor": "Jaguar F-Pace SVR Engines - from £2,500 to £12,000 · Engine code: AJ133",
     "registrationInput": {
       "flag": "🇬🇧 GB",
-      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "Get My Free SVR Engine Quotes Now →",
         "href": "#"
@@ -43,7 +43,7 @@
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
   },
   "eraMap": {
-    "title": "The F-PACE SVR THROUGH TIME — Era Map",
+    "title": "The F-PACE SVR THROUGH TIME - Era Map",
     "columns": [
       "Generation",
       "Years",
@@ -57,28 +57,28 @@
         "generation": "F-Pace SVR X761 (P550)",
         "years": "2018–2020",
         "engineCode": "AJ133",
-        "reliability": "★★★☆☆ [NEWLY ASSIGNED — see Data Note]",
-        "reconCost": "£6,000–£9,500 [PLACEHOLDER — confirm vs cost sheet]",
-        "eraNote": "5.0L supercharged V8 — 550 PS (542 bhp), 680 Nm; plastic coolant pipes are the critical weakness"
+        "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
+        "reconCost": "£6,000–£9,500 [PLACEHOLDER - confirm vs cost sheet]",
+        "eraNote": "5.0L supercharged V8 - 550 PS (542 bhp), 680 Nm; plastic coolant pipes are the critical weakness"
       },
       {
         "generation": "F-Pace SVR X761 (P550 facelift)",
         "years": "2021–2023",
         "engineCode": "AJ133",
-        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
-        "reconCost": "£6,500–£10,000 [PLACEHOLDER — confirm vs cost sheet]",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
+        "reconCost": "£6,500–£10,000 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "Revised 5.0L V8 with 550 PS, 700 Nm; updated cooling system and lighter internals; later cars have upgraded metal coolant pipes"
       },
       {
         "generation": "F-Pace SVR 575 Edition",
         "years": "2024",
         "engineCode": "AJ133",
-        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
-        "reconCost": "£7,000–£12,000 [PLACEHOLDER — confirm vs cost sheet]",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
+        "reconCost": "£7,000–£12,000 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "Final 575 PS (567 bhp) edition of the supercharged V8; cooling pipes upgraded to cast aluminium for long-term durability"
       }
     ],
-    "sourceNote": "This table is the single source every other section on this page matches — Sections 2, 4 and 6 reference it rather than restating conflicting figures.",
+    "sourceNote": "This table is the single source every other section on this page matches - Sections 2, 4 and 6 reference it rather than restating conflicting figures.",
     "dataNote": ""
   },
   "replacementCosts": {
@@ -103,7 +103,7 @@
         "supplyOnly": "£6,000–£9,500",
         "fittedIndie": "£7,000–£11,000",
         "warranty": "12–24 months",
-        "bestFor": "Most owners — best cost/warranty balance"
+        "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
@@ -131,7 +131,7 @@
     "problems": [
       {
         "id": 1,
-        "title": "Plastic Coolant Crossover Pipe Failure (All Early Models — Critical)",
+        "title": "Plastic Coolant Crossover Pipe Failure (All Early Models - Critical)",
         "symptoms": "",
         "typicalMileage": "",
         "repairCost": "",
@@ -149,7 +149,7 @@
       },
       {
         "id": 2,
-        "title": "Timing Chain Tensioner Failure (2019–2023 Models — Critical)",
+        "title": "Timing Chain Tensioner Failure (2019–2023 Models - Critical)",
         "symptoms": "",
         "typicalMileage": "",
         "repairCost": "",
@@ -194,7 +194,7 @@
     }
   },
   "repairBuyOrReplace": {
-    "h2": "F-Pace SVR — Repair, Buy, or Replace?",
+    "h2": "F-Pace SVR - Repair, Buy, or Replace?",
     "canItBeRepaired": {
       "title": "Can It Be Repaired?",
       "columns": [
@@ -208,10 +208,10 @@
           "problem": "Coolant pipe failure (preventative)",
           "repairable": "✅ Yes",
           "typicalCost": "£800–£1,500",
-          "whenItMakesSense": "Essential maintenance — upgrade to aluminium pipes"
+          "whenItMakesSense": "Essential maintenance - upgrade to aluminium pipes"
         },
         {
-          "problem": "Coolant pipe failure (catastrophic — head damage)",
+          "problem": "Coolant pipe failure (catastrophic - head damage)",
           "repairable": "⚠️ Sometimes",
           "typicalCost": "£3,000–£6,000",
           "whenItMakesSense": "Only if caught early; often more cost-effective to replace the engine"
@@ -220,7 +220,7 @@
           "problem": "Timing chain tensioner failure (preventative)",
           "repairable": "✅ Yes",
           "typicalCost": "£1,200–£1,800",
-          "whenItMakesSense": "Essential maintenance — catch it before catastrophic failure"
+          "whenItMakesSense": "Essential maintenance - catch it before catastrophic failure"
         },
         {
           "problem": "Snapped timing chain",
@@ -232,7 +232,7 @@
           "problem": "Supercharger coupler wear",
           "repairable": "✅ Yes",
           "typicalCost": "£500–£1,200",
-          "whenItMakesSense": "Catch it early — far cheaper than supercharger replacement"
+          "whenItMakesSense": "Catch it early - far cheaper than supercharger replacement"
         },
         {
           "problem": "Supercharger seal leaks",
@@ -245,22 +245,22 @@
     "buyingChecks": {
       "title": "Buying This F-Pace SVR? Check These First",
       "buyIf": [
-        "* Post-2021 facelift with updated cooling system — revised pipes and lighter internals",
+        "* Post-2021 facelift with updated cooling system - revised pipes and lighter internals",
         "* 2024 575 Edition with cast aluminium cooling pipes",
         "* Coolant pipes upgraded to aftermarket aluminium replacements",
-        "* Full service history with frequent oil changes — do not rely on JLR's 16,000-mile interval",
+        "* Full service history with frequent oil changes - do not rely on JLR's 16,000-mile interval",
         "* No cold-start rattling (timing chain and supercharger health)",
         "* Auxiliary radiators checked for leaks (known issue with mounting brackets)"
       ],
       "avoidIf": [
         "* Pre-2018 models with original plastic coolant pipes and no history of replacement",
-        "* Cold-start rattling — timing chain tensioner or supercharger coupler may be failing",
-        "* No service history or evidence of extended oil change intervals — the AJ133 is unforgiving of neglect",
-        "* Any history of overheating or coolant loss — cooling system damage may have occurred",
-        "* Oil consumption exceeding 1L per 1,000 miles — may indicate bottom-end wear"
+        "* Cold-start rattling - timing chain tensioner or supercharger coupler may be failing",
+        "* No service history or evidence of extended oil change intervals - the AJ133 is unforgiving of neglect",
+        "* Any history of overheating or coolant loss - cooling system damage may have occurred",
+        "* Oil consumption exceeding 1L per 1,000 miles - may indicate bottom-end wear"
       ]
     },
-    "closingVerdict": "The F-Pace SVR is Jaguar's fire-breathing supercharged V8 SUV — the highest-selling Jaguar SV product ever, powered by the 5.0-litre AJ133. The engine is a masterpiece of power, delivering 550–575 PS and up to 700 Nm torque, but it's plagued by three well-documented flaws that UK owners know all too well: plastic coolant crossover pipes that can crack catastrophically, timing chain tensioner failure (especially in 2019–2023 models), and supercharger coupler wear. Later 2024 575 Edition cars received cast aluminium cooling pipes for improved durability. The F-Pace SVR has a smaller oil pan than Range Rover products, so more frequent oil changes are essential. With typical SVR values ranging from £28,000 (high-mileage pre-facelift) to £78,000+ (low-mileage facelift), an engine replacement is a major financial commitment. A well-maintained 2021-on facelift or 575 Edition with documented frequent oil changes and upgraded cooling system pipes is the safest choice.",
+    "closingVerdict": "The F-Pace SVR is Jaguar's fire-breathing supercharged V8 SUV - the highest-selling Jaguar SV product ever, powered by the 5.0-litre AJ133. The engine is a masterpiece of power, delivering 550–575 PS and up to 700 Nm torque, but it's plagued by three well-documented flaws that UK owners know all too well: plastic coolant crossover pipes that can crack catastrophically, timing chain tensioner failure (especially in 2019–2023 models), and supercharger coupler wear. Later 2024 575 Edition cars received cast aluminium cooling pipes for improved durability. The F-Pace SVR has a smaller oil pan than Range Rover products, so more frequent oil changes are essential. With typical SVR values ranging from £28,000 (high-mileage pre-facelift) to £78,000+ (low-mileage facelift), an engine replacement is a major financial commitment. A well-maintained 2021-on facelift or 575 Edition with documented frequent oil changes and upgraded cooling system pipes is the safest choice.",
     "cta": {
       "label": "→ Compare F-Pace SVR engine prices before you buy",
       "href": "#"
@@ -269,15 +269,15 @@
   "buyingChecklist": {
     "intro": "Before you buy a used Jaguar F-Pace SVR (or before you commit to an engine replacement), check these:",
     "items": [
-      "* Coolant System — Check for leaks around the supercharger area; inspect coolant crossover pipes for cracks or signs of failure — see the map above",
-      "* Cold Start — Listen for metallic rattling (supercharger coupler) or rough running (timing chain tensioner)",
-      "* Coolant Level — Check reservoir when cold; any low or loss may indicate pipe, water pump or radiator issues",
-      "* Service History — Including which generation (pre-facelift, facelift or 575 Edition) and oil-change frequency",
-      "* Oil Consumption — Ask about oil top-up frequency; AJ133 engines can burn 1L per 1,000 miles",
-      "* Supercharger Health — Listen for \"clonk\" when shutting down (coupler wear)",
-      "* Auxiliary Radiators — Check for leaks (known issue with mounting brackets on early cars)",
-      "* Engine Warning Light — Have codes read; unresolved issues may indicate timing, cooling or sensor problems (O2 sensors are common)",
-      "* MOT History — Check for emissions-related failures"
+      "* Coolant System - Check for leaks around the supercharger area; inspect coolant crossover pipes for cracks or signs of failure - see the map above",
+      "* Cold Start - Listen for metallic rattling (supercharger coupler) or rough running (timing chain tensioner)",
+      "* Coolant Level - Check reservoir when cold; any low or loss may indicate pipe, water pump or radiator issues",
+      "* Service History - Including which generation (pre-facelift, facelift or 575 Edition) and oil-change frequency",
+      "* Oil Consumption - Ask about oil top-up frequency; AJ133 engines can burn 1L per 1,000 miles",
+      "* Supercharger Health - Listen for \"clonk\" when shutting down (coupler wear)",
+      "* Auxiliary Radiators - Check for leaks (known issue with mounting brackets on early cars)",
+      "* Engine Warning Light - Have codes read; unresolved issues may indicate timing, cooling or sensor problems (O2 sensors are common)",
+      "* MOT History - Check for emissions-related failures"
     ]
   },
   "engineCodes": {
@@ -293,27 +293,27 @@
         "engineCode": "AJ133 (P550)",
         "years": "2018–2020 (X761 pre-facelift)",
         "power": "550 PS (542 bhp) @ 6,500rpm",
-        "enquiries": "— (within AJ133 family volume)",
+        "enquiries": "- (within AJ133 family volume)",
         "avgReconCost": "£6,000–£9,500 [PLACEHOLDER]"
       },
       {
         "engineCode": "AJ133 (P550 facelift)",
         "years": "2021–2023 (X761 facelift)",
         "power": "550 PS @ 6,500rpm",
-        "enquiries": "— (within AJ133 family volume)",
+        "enquiries": "- (within AJ133 family volume)",
         "avgReconCost": "£6,500–£10,000 [PLACEHOLDER]"
       },
       {
         "engineCode": "AJ133 (575 Edition)",
         "years": "2024 (X761 575 Edition)",
         "power": "575 PS (567 bhp) @ 6,500rpm",
-        "enquiries": "— (within AJ133 family volume)",
+        "enquiries": "- (within AJ133 family volume)",
         "avgReconCost": "£7,000–£12,000 [PLACEHOLDER]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
     "technicalSpecs": {
-      "title": "Technical Specs (AJ133 — F-Pace SVR):",
+      "title": "Technical Specs (AJ133 - F-Pace SVR):",
       "items": [
         {
           "label": "* Displacement",
@@ -362,7 +362,7 @@
     "items": [
       {
         "label": "Most Common Failure",
-        "value": "Plastic coolant crossover pipe failure — the defining issue of the AJ133 in the F-Pace SVR"
+        "value": "Plastic coolant crossover pipe failure - the defining issue of the AJ133 in the F-Pace SVR"
       },
       {
         "label": "Average Enquiry Mileage",
@@ -378,7 +378,7 @@
       },
       {
         "label": "Peak Enquiry Season",
-        "value": "Summer — cooling system failures emerge in warmer weather [PATTERN DATA]"
+        "value": "Summer - cooling system failures emerge in warmer weather [PATTERN DATA]"
       },
       {
         "label": "Regional Demand",
@@ -396,17 +396,17 @@
       {
         "id": 2,
         "question": "Is the Jaguar F-Pace SVR engine reliable?",
-        "answer": "The AJ133 is a masterpiece of power, but it's plagued by three well-documented flaws. The plastic coolant crossover pipes are the critical weakness — early two-piece pipes can crack catastrophically. Timing chain tensioner failure has given the SVR a \"notorious reputation,\" especially in 2019–2023 models. Supercharger coupler wear is also common. The F-Pace SVR has a smaller oil pan than Range Rover products, so more frequent oil changes are essential. Later 2024 575 Edition cars received cast aluminium cooling pipes for improved durability. With proper maintenance and upgraded cooling pipes, the AJ133 can be a rewarding engine."
+        "answer": "The AJ133 is a masterpiece of power, but it's plagued by three well-documented flaws. The plastic coolant crossover pipes are the critical weakness - early two-piece pipes can crack catastrophically. Timing chain tensioner failure has given the SVR a \"notorious reputation,\" especially in 2019–2023 models. Supercharger coupler wear is also common. The F-Pace SVR has a smaller oil pan than Range Rover products, so more frequent oil changes are essential. Later 2024 575 Edition cars received cast aluminium cooling pipes for improved durability. With proper maintenance and upgraded cooling pipes, the AJ133 can be a rewarding engine."
       },
       {
         "id": 3,
         "question": "What are the common problems with the Jaguar F-Pace SVR?",
-        "answer": "The most common issues are plastic coolant crossover pipe failure (cracked \"Y pipes\" or \"valley pipes\" in the V of the engine — causes sudden coolant loss and overheating), timing chain tensioner failure (especially 2019–2023 models — rattling on cold start is the warning sign), supercharger coupler wear (metallic rattling on cold start and \"clonk\" on shutdown), auxiliary radiator leaks (mounting brackets can dig into them), and oxygen sensor failures. Later 2024 575 Edition cars have upgraded cooling pipes."
+        "answer": "The most common issues are plastic coolant crossover pipe failure (cracked \"Y pipes\" or \"valley pipes\" in the V of the engine - causes sudden coolant loss and overheating), timing chain tensioner failure (especially 2019–2023 models - rattling on cold start is the warning sign), supercharger coupler wear (metallic rattling on cold start and \"clonk\" on shutdown), auxiliary radiator leaks (mounting brackets can dig into them), and oxygen sensor failures. Later 2024 575 Edition cars have upgraded cooling pipes."
       },
       {
         "id": 4,
         "question": "Is it worth replacing an F-Pace SVR engine, or should I scrap the car?",
-        "answer": "Depends on the vehicle value and condition. Against a well-kept facelift SVR worth £40,000–£60,000, a £7,000–£9,500 recon is 15–20% of the car's value — often worth it. Against a tired pre-facelift example worth £20,000–£30,000, the same recon may approach our 60% Jaguar threshold — get a scrap valuation first. The SVR's rarity and desirability mean engine replacement is often worthwhile for cherished examples."
+        "answer": "Depends on the vehicle value and condition. Against a well-kept facelift SVR worth £40,000–£60,000, a £7,000–£9,500 recon is 15–20% of the car's value - often worth it. Against a tired pre-facelift example worth £20,000–£30,000, the same recon may approach our 60% Jaguar threshold - get a scrap valuation first. The SVR's rarity and desirability mean engine replacement is often worthwhile for cherished examples."
       },
       {
         "id": 5,
@@ -416,17 +416,17 @@
       {
         "id": 6,
         "question": "Can I repair the AJ133 coolant crossover pipes, or do they need replacement?",
-        "answer": "The plastic pipes must be replaced — they are the weak point. Many owners upgrade to aftermarket aluminium pipes for a permanent fix. A preventative replacement costs £800–£1,500. Ignoring a coolant leak can lead to sudden overheating and catastrophic engine damage. At the first sign of coolant loss, book an inspection immediately. Later 2024 575 Edition cars have upgraded cast aluminium pipes as standard."
+        "answer": "The plastic pipes must be replaced - they are the weak point. Many owners upgrade to aftermarket aluminium pipes for a permanent fix. A preventative replacement costs £800–£1,500. Ignoring a coolant leak can lead to sudden overheating and catastrophic engine damage. At the first sign of coolant loss, book an inspection immediately. Later 2024 575 Edition cars have upgraded cast aluminium pipes as standard."
       }
     ],
-    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine condition, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine condition, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK Jaguar F-Pace SVR Owners Trust JaguarEngine.uk",
     "trustPoints": [
       {
         "title": "Trusted SVR Engine Suppliers",
-        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real F-Pace SVR owners, as part of the Engine Finders network, across every generation — pre-facelift, facelift and 575 Edition — covering the AJ133 supercharged V8 in all its variants."
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real F-Pace SVR owners, as part of the Engine Finders network, across every generation - pre-facelift, facelift and 575 Edition - covering the AJ133 supercharged V8 in all its variants."
       },
       {
         "title": "Compare SVR Engine Replacement Companies",

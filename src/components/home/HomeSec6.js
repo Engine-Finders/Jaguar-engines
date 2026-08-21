@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
+import HomeIcon from "@/components/home/homeIcons";
 
 const iconPaths = {
   chart: <path d="M4 19V9m5 10V5m5 14v-7m5 7H3" />,
@@ -41,22 +42,22 @@ const statusConfig = {
 
 const trustItems = [
   {
-    icon: "chart",
+    icon: "market-value",
     title: "Real UK Market Values",
     text: "Live third-party pricing data.",
   },
   {
-    icon: "file",
-    title: "BMW-Verified Enquiries",
+    icon: "verified-enquiries",
+    title: "Jaguar-Verified Enquiries",
     text: "Based on 24,650+ real enquiries.",
   },
   {
-    icon: "wrench",
+    icon: "vetted-specialist",
     title: "20+ Vetted Specialists",
     text: "Trusted by thousands of owners.",
   },
   {
-    icon: "shield",
+    icon: "honest-advice",
     title: "Honest Advice",
     text: "We tell you the truth, not what you want to hear.",
   },
@@ -202,8 +203,8 @@ function DecisionMatrix({ data, isDark }) {
   return (
     <div className={`overflow-hidden rounded-md border shadow-[0_16px_36px_rgba(10,26,43,0.08)] ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#dfe5ed] bg-white"}`}>
       <div className={`flex items-center gap-3 border-b px-4 py-4 md:px-5 md:py-4 ${isDark ? "border-[var(--color-border)]" : "border-[#dfe5ed]"}`}>
-        <span className={`flex h-6 w-6 items-center justify-center rounded-md ${isDark ? "bg-[var(--color-chrome)] text-[var(--color-text)]" : "bg-[#eef5ff] text-[var(--color-primary)]"}`}>
-          <Icon name="chart" className="h-5 w-5" />
+        <span className="shrink-0">
+          <HomeIcon name="chart" isDark={isDark} className="h-6 w-6" />
         </span>
         <h3 className={`text-[1rem] font-bold uppercase ${isDark ? "text-white" : "text-[var(--color-primary)] md:text-[#071827]"}`}>The Decision Matrix</h3>
       </div>
@@ -244,8 +245,8 @@ function RuleCard({ data, isDark }) {
     <div className={`rounded-md border p-5 shadow-[0_16px_36px_rgba(10,26,43,0.08)] md:min-h-[260px] md:p-6 ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#dfe5ed] bg-white"}`}>
       <div className="md:hidden">
         <div className="flex items-start gap-4">
-          <span className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full text-white shadow-[0_10px_22px_rgba(7,95,216,0.28)] ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}>
-            <Icon name="shield" className="h-7 w-7" />
+          <span className="shrink-0">
+            <HomeIcon name="honest-advice" isDark={isDark} className="h-8 w-8" />
           </span>
           <h3 className={`min-w-0 flex-1 pt-1 text-[0.98rem] font-bold uppercase ${isDark ? "text-white" : "text-[#071827]"}`}>{data.ruleOfThumb.title}</h3>
         </div>
@@ -268,8 +269,8 @@ function RuleCard({ data, isDark }) {
       </div>
 
       <div className="hidden items-start gap-4 md:flex">
-        <span className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full text-white shadow-[0_10px_22px_rgba(7,95,216,0.28)] ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}>
-          <Icon name="shield" className="h-7 w-7" />
+        <span className="shrink-0">
+          <HomeIcon name="honest-advice" isDark={isDark} className="h-8 w-8" />
         </span>
         <div className="min-w-0 flex-1">
           <h3 className={`text-[0.98rem] font-bold uppercase ${isDark ? "text-white" : "text-[#071827]"}`}>{data.ruleOfThumb.title}</h3>
@@ -297,8 +298,8 @@ function LinksCard({ links, isDark }) {
   return (
     <div className={`overflow-hidden rounded-md border shadow-[0_16px_36px_rgba(10,26,43,0.08)] ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#dfe5ed] bg-white"}`}>
       <div className="flex items-center gap-4 px-5 py-4">
-        <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-white ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}>
-          <Icon name="link" className="h-5 w-5" />
+        <span className="shrink-0">
+          <HomeIcon name="link" isDark={isDark} className="h-7 w-7" />
         </span>
         <h3 className={`text-[0.95rem] font-bold uppercase ${isDark ? "text-white" : "text-[#071827]"}`}>Deeper Analysis Links</h3>
       </div>
@@ -324,8 +325,8 @@ function TrustStrip({ isDark }) {
     <ul className={`hidden overflow-hidden rounded-md border shadow-[0_16px_36px_rgba(10,26,43,0.08)] md:grid md:grid-cols-4 ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#dfe5ed] bg-white"}`}>
       {trustItems.map((item) => (
         <li key={item.title} className={`flex items-center gap-5 border-r px-8 py-4 last:border-r-0 ${isDark ? "border-[var(--color-border)]" : "border-[#e3e8ef]"}`}>
-          <span className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full border ${isDark ? "border-[var(--color-border)] bg-[var(--color-chrome)] text-[var(--color-text)]" : "border-[#dbe7f7] bg-white text-[var(--color-primary)]"}`}>
-            <Icon name={item.icon} className="h-8 w-8" />
+          <span className="shrink-0">
+            <HomeIcon name={item.icon} isDark={isDark} className="h-9 w-9" />
           </span>
           <span>
             <strong className={`block text-[0.95rem] ${isDark ? "text-white" : "text-[#071827]"}`}>{item.title}</strong>
@@ -340,8 +341,8 @@ function TrustStrip({ isDark }) {
 function MobileCta({ isDark }) {
   return (
     <div className={`flex items-center gap-5 rounded-md border p-5 shadow-[0_16px_36px_rgba(10,26,43,0.08)] md:hidden ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#dfe5ed] bg-[#f2f7ff]"}`}>
-      <span className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full text-white shadow-[0_10px_22px_rgba(7,95,216,0.28)] ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}>
-        <Icon name="shield" className="h-8 w-8" />
+      <span className="shrink-0">
+        <HomeIcon name="honest-advice" isDark={isDark} className="h-9 w-9" />
       </span>
       <div className="min-w-0 flex-1">
         <p className={`text-[0.94rem] font-bold ${isDark ? "text-white" : "text-[#071827]"}`}>Honest. Data-Backed. Unbiased.</p>

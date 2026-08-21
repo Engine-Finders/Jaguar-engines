@@ -33,7 +33,7 @@ function DesktopRow({ row, icon, isDark }) {
   );
 }
 
-// Mobile only: accordion (one open at a time) — a collapsed summary
+// Mobile only: accordion (one open at a time) - a collapsed summary
 // card expanding to reveal the full price/warranty/best-for detail, each
 // divided by a thin hairline.
 function AccordionRow({ row, icon, isOpen, onToggle }) {

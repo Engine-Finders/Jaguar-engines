@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
+import HomeIcon from "@/components/home/homeIcons";
 
 const iconPaths = {
   link: <path d="M10 13a5 5 0 0 0 7.1 0l1.4-1.4a5 5 0 0 0-7.1-7.1l-.8.8M14 11a5 5 0 0 0-7.1 0l-1.4 1.4a5 5 0 0 0 7.1 7.1l.8-.8" />,
@@ -33,8 +34,8 @@ function Icon({ name, className = "h-5 w-5", strokeWidth = 2 }) {
 
 function iconName(item) {
   const title = item.title.toLowerCase();
-  if (title.includes("m54") || title.includes("n63") || title.includes("s63")) return "trophy";
-  if (title.includes("b58") || title.includes("b57") || title.includes("n57")) return "wrench";
+  if (title.includes("knowledge") || title.includes("guide")) return "book";
+  if (title.includes("engine") || title.includes("technical")) return "wrench";
   return "link";
 }
 
@@ -50,8 +51,8 @@ function CentreCard({ item, isDark }) {
         <div className={isDark ? "absolute inset-x-0 bottom-0 h-14 bg-[linear-gradient(0deg,var(--color-surface-raised)_0%,transparent_100%)]" : "absolute inset-x-0 bottom-0 h-14 bg-[linear-gradient(0deg,white_0%,rgba(255,255,255,0)_100%)]"} />
       </div>
 
-      <span className={`absolute left-6 top-14 z-20 flex h-18 w-18 items-center justify-center rounded-full md:left-12 md:top-3 md:h-12 md:w-12 ${isDark ? "bg-[var(--color-chrome)] text-[var(--color-text)]" : "bg-[#eef5ff] text-[var(--color-primary)]"} border ${isDark ? "border-[var(--color-border)]" : "border-[#b8d4ff]"}`}>
-        <Icon name={iconName(item)} className="h-9 w-9 md:h-6 md:w-6" />
+      <span className={`absolute left-6 top-14 z-20 flex h-18 w-18 items-center justify-center md:left-12 md:top-3 md:h-12 md:w-12`}>
+        <HomeIcon name={iconName(item)} isDark={isDark} className="h-9 w-9 md:h-7 md:w-7" />
       </span>
 
       <div className="p-5 pt-2 md:p-4 md:pt-2">

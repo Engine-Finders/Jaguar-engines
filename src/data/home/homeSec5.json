@@ -1,86 +1,149 @@
 {
   "subHeadline": "The comparisons Jaguar buyers actually want — model vs model, engine vs engine, and the one comparison nobody else can make.",
-  "headerImages": [
-    {
-      "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=500&q=80",
-      "alt": "Jaguar XE"
+  "headerImage": {
+    "src": "/home-image/sec2-bg.webp",
+    "alt": "Jaguar comparison hub"
+  },
+  "heroImages": {
+    "light": {
+      "src": "/home-image/sec2-bg.webp",
+      "alt": "Jaguar comparison hub"
     },
-    {
-      "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=500&q=80",
-      "alt": "Jaguar XF"
+    "dark": {
+      "src": "/home-image/sec2-bg.webp",
+      "alt": "Jaguar comparison hub"
     }
-  ],
+  },
   "comparisons": [
     {
-      "id": 1,
+      "id": "01",
       "title": "XE vs XF",
       "preview": "Which compact/mid executive to buy — reliability, running costs and resale value compared.",
-      "vsLabels": ["XE", "XF"],
-      "image": {
-        "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=600&q=80",
-        "alt": "XE vs XF"
+      "icon": "scales",
+      "left": {
+        "label": "XE",
+        "image": {
+          "src": "/home-image/left.webp",
+          "alt": "Jaguar XE"
+        }
       },
-      "link": { "label": "Read the verdict →", "href": "#" }
+      "right": {
+        "label": "XF",
+        "image": {
+          "src": "/home-image/right.webp",
+          "alt": "Jaguar XF"
+        }
+      },
+      "link": { "label": "Read the verdict", "href": "#" }
     },
     {
-      "id": 2,
+      "id": "02",
       "title": "F-Pace vs E-Pace",
       "preview": "Size vs value — which SUV suits your budget and ownership horizon.",
-      "vsLabels": ["F-Pace", "E-Pace"],
-      "image": {
-        "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=600&q=80",
-        "alt": "F-Pace vs E-Pace"
+      "icon": "car",
+      "left": {
+        "label": "F-Pace",
+        "image": {
+          "src": "/home-image/left.webp",
+          "alt": "Jaguar F-Pace"
+        }
       },
-      "link": { "label": "Read the verdict →", "href": "#" }
+      "right": {
+        "label": "E-Pace",
+        "image": {
+          "src": "/home-image/right.webp",
+          "alt": "Jaguar E-Pace"
+        }
+      },
+      "link": { "label": "Read the verdict", "href": "#" }
     },
     {
-      "id": 3,
+      "id": "03",
       "title": "AJ126 vs AJ133",
       "preview": "V6 vs V8 — performance, reliability and replacement costs compared side-by-side.",
-      "vsLabels": ["AJ126 V6", "AJ133 V8"],
-      "image": {
-        "src": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=600&q=80",
-        "alt": "AJ126 vs AJ133"
+      "icon": "engine",
+      "left": {
+        "label": "AJ126 V6",
+        "image": {
+          "src": "/home-image/left.webp",
+          "alt": "AJ126 engine"
+        }
       },
-      "link": { "label": "Read the verdict →", "href": "#" }
+      "right": {
+        "label": "AJ133 V8",
+        "image": {
+          "src": "/home-image/right.webp",
+          "alt": "AJ133 engine"
+        }
+      },
+      "link": { "label": "Read the verdict", "href": "#" }
     },
     {
-      "id": 4,
+      "id": "04",
       "title": "Ingenium vs AJD-V6",
       "preview": "Which diesel should you buy? Fuel economy, reliability and long-term ownership costs.",
-      "vsLabels": ["Ingenium Diesel", "AJD-V6"],
-      "image": {
-        "src": "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=600&q=80",
-        "alt": "Ingenium vs AJD-V6"
+      "icon": "fuel",
+      "left": {
+        "label": "Ingenium",
+        "image": {
+          "src": "/home-image/left.webp",
+          "alt": "Ingenium diesel"
+        }
       },
-      "link": { "label": "Read the verdict →", "href": "#" }
+      "right": {
+        "label": "AJD-V6",
+        "image": {
+          "src": "/home-image/right.webp",
+          "alt": "AJD-V6 diesel"
+        }
+      },
+      "link": { "label": "Read the verdict", "href": "#" }
     },
     {
-      "id": 5,
+      "id": "05",
       "title": "XF vs XJ",
       "preview": "Is the flagship's extra outlay worth it? Ownership costs, reliability and resale value compared.",
-      "vsLabels": ["XF", "XJ"],
-      "image": {
-        "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=600&q=80",
-        "alt": "XF vs XJ"
+      "icon": "crown",
+      "left": {
+        "label": "XF",
+        "image": {
+          "src": "/home-image/left.webp",
+          "alt": "Jaguar XF"
+        }
       },
-      "link": { "label": "Read the verdict →", "href": "#" }
+      "right": {
+        "label": "XJ",
+        "image": {
+          "src": "/home-image/right.webp",
+          "alt": "Jaguar XJ"
+        }
+      },
+      "link": { "label": "Read the verdict", "href": "#" }
     },
     {
-      "id": 6,
-      "title": "Jaguar vs Land Rover (Shared Engines)",
+      "id": "06",
+      "title": "Jaguar vs Land Rover",
       "preview": "Same engines, different badges — how ownership economics actually compare across the two brands.",
-      "vsLabels": ["JAGUAR", "LAND ROVER"],
-      "image": {
-        "src": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=600&q=80",
-        "alt": "Jaguar vs Land Rover"
+      "icon": "shield",
+      "left": {
+        "label": "Jaguar",
+        "image": {
+          "src": "/home-image/left.webp",
+          "alt": "Jaguar"
+        }
       },
-      "link": { "label": "Read the verdict →", "href": "#" }
+      "right": {
+        "label": "Land Rover",
+        "image": {
+          "src": "/home-image/right.webp",
+          "alt": "Land Rover"
+        }
+      },
+      "link": { "label": "Read the verdict", "href": "#" }
     }
   ],
-  "bottomCta": {
-    "text": "Not sure which is right for you? Use our diagnostic tool to get a personalised verdict in minutes.",
-    "buttonLabel": "Start Your Diagnosis",
-    "href": "#"
+  "dataNote": {
+    "label": "Data Note:",
+    "text": "All comparison pages pull from EM-VERIFIED enquiry data, replacement cost tables, and ownership decision indices. Each comparison includes a clear winner and an honest breakdown of pros and cons."
   }
 }

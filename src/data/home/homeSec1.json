@@ -1,26 +1,44 @@
 {
-  "subHeadline": "Reliability rankings, real failure data, honest repair-vs-replace economics — for every XE, XF, XJ, F-Pace, E-Pace, F-Type, XK, S-Type and X-Type ever sold in the UK.",
+  "subHeadline": "Reliability rankings, real failure data, honest repair-vs-replace economics - for every XE, XF, XJ, F-Pace, E-Pace, F-Type, XK, S-Type and X-Type ever sold in the UK.",
   "trustStrip": [
     {
-      "icon": "📊",
+      "icon": "chart",
       "label": "1,700+ Real Enquiries"
     },
     {
-      "icon": "🔧",
+      "icon": "tool",
       "label": "15+ Vetted Jaguar Specialists"
     },
     {
-      "icon": "📖",
+      "icon": "book",
       "label": "Every Generation, Honestly Rated"
     },
     {
-      "icon": "🏆",
+      "icon": "trophy",
       "label": "Part of Engine Finders"
+    }
+  ],
+  "trustBadges": [
+    {
+      "icon": "shield",
+      "text": "Genuine failure data from thousands of UK owners"
+    },
+    {
+      "icon": "pie",
+      "text": "Honest repair vs replace economics"
+    },
+    {
+      "icon": "tool",
+      "text": "Expertly verified by 15+ vetted Jaguar specialists"
+    },
+    {
+      "icon": "star",
+      "text": "100% independent. No sponsors. No bias."
     }
   ],
   "cta": {
     "label": "START YOUR RESEARCH →",
-    "href": "#"
+    "href": "/quote"
   },
   "image": {
     "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1200&q=80",

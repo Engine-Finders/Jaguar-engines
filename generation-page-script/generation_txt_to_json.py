@@ -9,13 +9,13 @@ Usage:
   python generation-page-script/generation_txt_to_json.py path/to/input.txt --out generation-page-outputs
 
 IGNORE RULES (apply to this script and future TXT→JSON converters):
-  1. Step 0 Check Results (Check A / Check B / Authority Model mode) — never put in JSON.
-  2. Hero "Data-integrity note (internal): ..." — never put in JSON (leave dataIntegrityNote empty).
-  3. Sec 2 "Data sources note:" and "Data note (internal) — corrections..." / "Correction applied..."
-     — never put in JSON (leave dataCorrections empty).
+  1. Step 0 Check Results (Check A / Check B / Authority Model mode) - never put in JSON.
+  2. Hero "Data-integrity note (internal): ..." - never put in JSON (leave dataIntegrityNote empty).
+  3. Sec 2 "Data sources note:" and "Data note (internal) - corrections..." / "Correction applied..."
+     - never put in JSON (leave dataCorrections empty).
   4. Part 1 / Part 2 chat fluff ("End of Part 1 Output", "Part 2", LLM thinking paragraphs)
-     — strip anywhere; never put in JSON.
-  5. Sec 2 "Confidence Score panel:" — ALWAYS include in confidenceScore; empty title/text if missing.
+     - strip anywhere; never put in JSON.
+  5. Sec 2 "Confidence Score panel:" - ALWAYS include in confidenceScore; empty title/text if missing.
 """
 
 from __future__ import annotations
@@ -35,17 +35,17 @@ DEFAULT_OUT = ROOT / "generation-page-outputs"
 
 # Allow leading spaces/tabs on headers (export sometimes indents SECTION/META/SCHEMA)
 PAGE_START_RE = re.compile(
-    r"^[ \t]*SECTION\s+1\s*[—\-:]+\s*HERO\b",
+    r"^[ \t]*SECTION\s+1\s*[-\-:]+\s*HERO\b",
     re.MULTILINE | re.IGNORECASE,
 )
 SECTION_RE = re.compile(
-    r"^[ \t]*SECTION\s+(?P<num>\d+)\s*[—\-:]+\s*(?P<label>.+?)"
-    r"(?:\s*[—\-]+\s*(?:<\s*(?P<component>[A-Za-z0-9_]+)\s*>)?)?\s*$",
+    r"^[ \t]*SECTION\s+(?P<num>\d+)\s*[-\-:]+\s*(?P<label>.+?)"
+    r"(?:\s*[-\-]+\s*(?:<\s*(?P<component>[A-Za-z0-9_]+)\s*>)?)?\s*$",
     re.MULTILINE | re.IGNORECASE,
 )
 META_SECTION_RE = re.compile(r"^[ \t]*META\s*$", re.MULTILINE | re.IGNORECASE)
 SCHEMA_SECTION_RE = re.compile(
-    r"^[ \t]*SCHEMA\s*(?:\(JSON[-‑–—]LD\))?\s*$",
+    r"^[ \t]*SCHEMA\s*(?:\(JSON[-‑–-]LD\))?\s*$",
     re.MULTILINE | re.IGNORECASE,
 )
 META_TITLE_BLOCK_RE = re.compile(
@@ -152,7 +152,7 @@ def parse_href_and_label(text: str) -> tuple[str, str]:
     m = re.search(r"^(.*?)\s*(?:→|->)\s*(\S+)\s*$", text)
     if m:
         return clean(m.group(1)), m.group(2)
-    m = re.search(r"^(.*?)\s+[—\-]\s+(\/\S+)\s*$", text)
+    m = re.search(r"^(.*?)\s+[-\-]\s+(\/\S+)\s*$", text)
     if m:
         return clean(m.group(1)), m.group(2)
     return text, "#"
@@ -360,7 +360,7 @@ def strip_ignored_content(text: str) -> str:
     """
     Strip blocks that must never enter JSON (shared ignore rules).
     """
-    # Step 0 Check Results — stop at ANY section (not only SECTION 1).
+    # Step 0 Check Results - stop at ANY section (not only SECTION 1).
     # Restated Step 0 before Part 2 sections must not wipe FAQ/META/SCHEMA.
     text = re.sub(
         r"Step\s+0\s+Check\s+Results.*?(?=SECTION\s+\d+\b|\Z)",
@@ -432,7 +432,7 @@ def parse_hero(body: str) -> dict[str, Any]:
         "subHeadline": sub,
         "trustStrip": parse_trust_strip(trust),
         "primaryCta": {"label": label or cta, "href": href or "#"},
-        # Always empty — Data-integrity note (internal) is ignored
+        # Always empty - Data-integrity note (internal) is ignored
         "dataIntegrityNote": "",
     }
 
@@ -523,7 +523,7 @@ def parse_engine_database(body: str) -> dict[str, Any]:
         "columns": header,
         "engines": engines,
         "confidenceScore": {"title": conf_title, "text": conf_text},
-        # Always empty — data sources / correction notes are ignored
+        # Always empty - data sources / correction notes are ignored
         "dataCorrections": [],
     }
 
@@ -612,7 +612,7 @@ def parse_best_worst_engines(body: str) -> dict[str, Any]:
         quote = ""
         who = ""
 
-        qm = re.search(r'[—\-]\s*"([^"]+)"\s*', rest)
+        qm = re.search(r'[-\-]\s*"([^"]+)"\s*', rest)
         if qm:
             quote = clean(qm.group(1))
             before = rest[: qm.start()].strip()
@@ -624,10 +624,10 @@ def parse_best_worst_engines(body: str) -> dict[str, Any]:
         else:
             wm = re.search(r"Who it'?s for:\s*(.*)$", rest, re.I)
             if wm:
-                engine = clean(rest[: wm.start()].strip(" —-"))
+                engine = clean(rest[: wm.start()].strip(" --"))
                 who = clean(wm.group(1))
             else:
-                dash = re.split(r"\s+[—\-]\s+", rest, maxsplit=1)
+                dash = re.split(r"\s+[-\-]\s+", rest, maxsplit=1)
                 if len(dash) == 2:
                     engine = clean(dash[0])
                     quote = clean(dash[1].strip('"'))
@@ -791,7 +791,7 @@ def parse_tiered_cost_table(block_lines: list[str]) -> list[dict[str, str]]:
 
 def parse_common_problems(body: str) -> dict[str, Any]:
     text = body
-    chunks = re.split(r"(?=Problem\s+\d+\s*[—\-])", text, flags=re.I)
+    chunks = re.split(r"(?=Problem\s+\d+\s*[-\-])", text, flags=re.I)
     problems = []
 
     for chunk in chunks:
@@ -800,7 +800,7 @@ def parse_common_problems(body: str) -> dict[str, Any]:
             continue
 
         lines = strip_section_noise(non_empty_lines(chunk))
-        title_m = re.match(r"Problem\s+(\d+)\s*[—\-]\s*(.+)$", lines[0], re.I)
+        title_m = re.match(r"Problem\s+(\d+)\s*[-\-]\s*(.+)$", lines[0], re.I)
         if not title_m:
             continue
         pid = int(title_m.group(1))
@@ -953,7 +953,7 @@ def parse_core_variants(body: str) -> dict[str, Any]:
 def _live_feed_from_lines(live_lines: list[str]) -> list[dict[str, str]]:
     live_feed: list[dict[str, str]] = []
     for ln in live_lines:
-        parts = [clean(p) for p in re.split(r"\s+[—\-]\s+", ln) if clean(p)]
+        parts = [clean(p) for p in re.split(r"\s+[-\-]\s+", ln) if clean(p)]
         if len(parts) >= 5:
             live_feed.append(
                 {
@@ -1193,8 +1193,8 @@ def parse_trust_cta(body: str) -> dict[str, Any]:
             item = clean(ln.lstrip("* ").strip())
             if not item:
                 continue
-            if " — " in item:
-                title, text = [clean(x) for x in item.split(" — ", 1)]
+            if " - " in item:
+                title, text = [clean(x) for x in item.split(" - ", 1)]
             elif " – " in item:
                 title, text = [clean(x) for x in item.split(" – ", 1)]
             else:
@@ -1291,7 +1291,7 @@ def content_for_sections(page_text: str) -> str:
     """
     Body used for SECTION parsers.
 
-    Do NOT cut at the first META — some pages place META title before Sec 9–11.
+    Do NOT cut at the first META - some pages place META title before Sec 9–11.
     Cut only before SCHEMA, and strip META title blocks so they don't pollute Sec 8.
     """
     schema_m = None
@@ -1321,7 +1321,7 @@ def guess_page_title(preamble: str, hero: dict[str, Any]) -> str:
     if hero.get("tagPill"):
         return hero["tagPill"].split("•")[0].strip()
     if hero.get("h1"):
-        return re.split(r"\s+[—\-]\s+", hero["h1"])[0]
+        return re.split(r"\s+[-\-]\s+", hero["h1"])[0]
     lines = [clean(ln) for ln in preamble.splitlines() if clean(ln)]
     for ln in reversed(lines[-20:]):
         if re.search(r"\b(e\d{2}|f\d{2}|g\d{2}|u\d{2})\b", ln, re.I):
@@ -1334,7 +1334,7 @@ def split_pages(text: str) -> list[tuple[str, str, str]]:
     if not starts:
         raise SystemExit(
             "No generation pages found. Expected lines like "
-            "'SECTION 1 — HERO' or 'SECTION 1 — HERO — <GenerationHero>'."
+            "'SECTION 1 - HERO' or 'SECTION 1 - HERO - <GenerationHero>'."
         )
 
     pages: list[tuple[str, str, str]] = []
@@ -1365,7 +1365,7 @@ def iter_sections(content: str) -> list[tuple[str, str, str]]:
 
 def build_page(preamble: str, page_text: str) -> dict[str, Any]:
     page = empty_page_skeleton()
-    # Step 0 / internal declarations are ignored — keep empty structure only
+    # Step 0 / internal declarations are ignored - keep empty structure only
     page["internalDeclarations"] = {
         "checkA": "",
         "checkB": "",
@@ -1399,13 +1399,13 @@ def build_page(preamble: str, page_text: str) -> dict[str, Any]:
         if tag:
             raw = tag.split("•")[0].strip()
         elif h1:
-            raw = re.split(r"\s+[—\-]\s+", h1)[0]
+            raw = re.split(r"\s+[-\-]\s+", h1)[0]
             raw = re.sub(
                 r"\b(engines?|engine replacement|the complete uk guide)\b",
                 "",
                 raw,
                 flags=re.I,
-            ).strip(" —-")
+            ).strip(" --")
         page["meta"]["slug"] = slugify(raw or guess_page_title(preamble, page.get("hero", {})))
 
     if not page["meta"]["title"] and page.get("hero", {}).get("h1"):
@@ -1435,7 +1435,7 @@ def find_empty_critical_sections(page: dict[str, Any]) -> list[str]:
 
     mi = page.get("marketIntelligence") or {}
     if not mi.get("mostRequestedEngines") and not mi.get("liveFeed"):
-        # Marker may exist with Thin-Data omission note — still log as missing
+        # Marker may exist with Thin-Data omission note - still log as missing
         empty.append("marketIntelligence")
 
     return empty

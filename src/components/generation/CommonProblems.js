@@ -254,7 +254,7 @@ export default function CommonProblems({ data }) {
           />
         ) : null}
 
-        {/* Mobile: accordion — one card open at a time */}
+        {/* Mobile: accordion - one card open at a time */}
         <div className="mt-6 flex flex-col gap-3 md:hidden">
           {data.problems?.map((problem) => (
             <AccordionCard

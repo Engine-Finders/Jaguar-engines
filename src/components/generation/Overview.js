@@ -205,7 +205,7 @@ export default function Overview({ data }) {
                 : "bg-[linear-gradient(180deg,transparent_40%,rgba(255,255,255,0.75)_75%,rgba(255,255,255,1)_97%)]"
             }`}
           />
-          {/* Solid strip guarantees full opacity at the very edge — no sub-pixel seam from the gradient's asymptotic stop */}
+          {/* Solid strip guarantees full opacity at the very edge - no sub-pixel seam from the gradient's asymptotic stop */}
           <div className="absolute inset-x-0 bottom-0 h-3 bg-[var(--color-page)]" />
         </div>
 

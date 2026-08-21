@@ -19,7 +19,7 @@ function Stars({ value = "", className = "text-[1rem]" }) {
 }
 
 function DesktopRow({ engine, isDark }) {
-  // Theme-aware row styling — light keeps the original white surface + dark text; dark gets black + white text
+  // Theme-aware row styling - light keeps the original white surface + dark text; dark gets black + white text
   const rowClass = isDark
     ? "bg-black text-white"
     : "bg-[var(--color-table-surface)] text-[var(--color-text)]";
@@ -97,7 +97,7 @@ export default function EngineDatabase({ data }) {
 
   const isDark = theme === "dark";
 
-  // Theme-aware header styling — light uses primary blue, dark uses deep navy
+  // Theme-aware header styling - light uses primary blue, dark uses deep navy
   const headerBg = isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]";
   const headerDivider = isDark ? "border-white/20" : "border-white/25";
   const bodyWrapperBg = isDark ? "bg-black" : "bg-[var(--color-table-surface)]";

@@ -39,13 +39,13 @@ function HeroHeadline({ h1 = "" }) {
   const accent = h1.slice(dashIndex + 3);
   return (
     <>
-      <span dangerouslySetInnerHTML={{ __html: `${lead} — ` }} />
+      <span dangerouslySetInnerHTML={{ __html: `${lead} - ` }} />
       <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: accent }} />
     </>
   );
 }
 
-// Inline UK flag — emoji regional-indicator flags don't render as a flag glyph
+// Inline UK flag - emoji regional-indicator flags don't render as a flag glyph
 // on Windows (shows "GB" letter tiles instead), so use a real vector icon.
 function UkFlagIcon({ className = "h-4 w-5" }) {
   return (

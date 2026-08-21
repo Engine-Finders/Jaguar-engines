@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
+import HomeIcon from "@/components/home/homeIcons";
 
 const iconPaths = {
   chart: <path d="M4 19V9m5 10V5m5 14v-7m5 7H3" />,
@@ -66,8 +67,8 @@ function Icon({ name, className = "h-5 w-5", strokeWidth = 2 }) {
   );
 }
 
-function FuelIcon({ fuel, className = "h-6 w-6" }) {
-  return <Icon name={fuel === "Petrol" ? "pump" : "droplet"} className={`${className} text-[var(--color-primary)]`} strokeWidth={2.1} />;
+function FuelIcon({ fuel, isDark, className = "h-6 w-6" }) {
+  return <HomeIcon name={fuel === "Petrol" ? "pump" : "droplet"} isDark={isDark} className={className} />;
 }
 
 function VerdictIcon({ type, mobile = false }) {
@@ -120,7 +121,7 @@ function EngineRow({ row, isDark }) {
 
       <div className={`grid min-w-0 gap-1.5 border-l pl-3 md:contents ${isDark ? "border-[var(--color-border)]" : "border-[#dfe7f1]"}`}>
         <p className="flex items-center gap-3 text-[0.84rem] leading-tight md:text-[0.92rem]">
-          <FuelIcon fuel={row.fuel} className="h-6 w-6 md:h-6 md:w-6" />
+          <FuelIcon fuel={row.fuel} isDark={isDark} className="h-6 w-6 md:h-6 md:w-6" />
           <span>{row.fuel}</span>
         </p>
         <p className={`text-[0.82rem] leading-[1.22] md:text-[0.9rem] ${isDark ? "text-white/78" : "text-[#071827]"}`}>{cleanText(row.years)}</p>
@@ -153,7 +154,7 @@ function TrustStrip({ items, isDark }) {
 
         return (
           <li key={item.label} className={`flex min-w-0 flex-col items-center border-r px-2 py-5 text-center last:border-r-0 ${isDark ? "border-[var(--color-border)]" : "border-[#dfe7f1]"}`}>
-            <Icon name={trustIconByIndex[index] || "chart"} className="h-8 w-8 text-[var(--color-primary)]" strokeWidth={2.2} />
+            <HomeIcon name={trustIconByIndex[index] || "chart"} isDark={isDark} className="h-8 w-8" />
             <span className={`mt-3 text-[0.78rem] leading-[1.28] ${isDark ? "text-white/78" : "text-[#172b4a]"}`}>
               {parts ? parts[1] : text}
               {parts?.[2] ? <strong className={isDark ? "block text-white" : "block text-[#071827]"}>{parts[2]}</strong> : null}
@@ -189,8 +190,8 @@ function EngineTable({ data, isDark }) {
 function LegendCard({ legend, isDark }) {
   return (
     <Link href={legend.href} className={`flex items-center gap-5 rounded-md border p-5 shadow-[0_16px_36px_rgba(10,26,43,0.08)] md:hidden ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)] text-white" : "border-[#dfe5ed] bg-white text-[#071827]"}`}>
-      <span className={`flex h-16 w-16 shrink-0 items-center justify-center rounded-md text-white shadow-[0_12px_26px_rgba(7,95,216,0.28)] ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}>
-        <Icon name="bulb" className="h-9 w-9" />
+      <span className="shrink-0">
+        <HomeIcon name="bulb" isDark={isDark} className="h-10 w-10" />
       </span>
       <span className="min-w-0 flex-1">
         <strong className="block text-[1rem]">{legend.title}</strong>
@@ -217,7 +218,7 @@ export default function HomeSec7({ data }) {
 
       <div className="relative mx-auto w-full max-w-8xl">
         <div className="max-w-[640px] pt-4 md:pt-8">
-          <h2 className={`text-[3rem] font-bold leading-[1.03] tracking-normal md:text-[3.6rem] ${isDark ? "text-white" : "text-[#071827]"}`}>Jaguar Engine Families — The Pillars</h2>
+          <h2 className={`text-[3rem] font-bold leading-[1.03] tracking-normal md:text-[3.6rem] ${isDark ? "text-white" : "text-[#071827]"}`}>Jaguar Engine Families - The Pillars</h2>
           <div className="mt-4">
             <MStripe />
           </div>

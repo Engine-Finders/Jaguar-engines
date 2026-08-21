@@ -1,0 +1,200 @@
+# ICON INVENTORY
+# Source folders: public/Jaguar Black and public/Jaguar Silver
+# All files are .png
+
+============================================================
+JAGUAR BLACK (96 icons)
+============================================================
+1-01.png
+100% independent icon-01.png
+2-01.png
+AdBlue-01.png
+Air suspension knowledge Icon-01.png
+Amg icon-01.png
+Best Family Icon 2-01.png
+Best Family Icon-01.png
+Best Long term Icon-01.png
+Best Used buy icon-01.png
+Best used buy icon 2-01.png
+Calculator icon-01.png
+Call a specialist Icon-01.png
+Chain icon-01.png
+Chassis Icon-01.png
+Check Watch 2-01.png
+Check Watch-01.png
+Check-01.png
+Commercial Icon-01.png
+Cooling System icon-01.png
+Cooling system icon 2-01.png
+Database Icon-01.png
+Drivetrain failures icon-01.png
+Egr icon-01.png
+Electric failures icon-01.png
+Engine icon-01.png
+Ev Icon-01.png
+Expensive failure icon-01.png
+Faq Icon-01.png
+Flagship choice icon-01.png
+Flywheel Icon-01.png
+Gearbox problem  Icon-01.png
+Generation Honest Rated Icon-01.png
+Genuine Failure Data Icon-01.png
+Get Guidance Icon-01.png
+Good choice-01.png
+HPFP icon-01.png
+High demand icon-01.png
+Hill Icon-01.png
+Hones repair vs replace icon-01.png
+INjector ICON-01.png
+Independent and impartial Icon-01.png
+Ingenium Icon-01.png
+Ipace note icon-01.png
+Knowledge centre icon-01.png
+Live Feed icon-01.png
+Market Insight Icon-01.png
+Meter Icon-01.png
+Modern Choice-01.png
+Most Enquired Icon-01.png
+Niche style icon-01.png
+Not sure icon-01.png
+Note Icon-01.png
+Numbe 7-01.png
+Number 1-01.png
+Number 10-01.png
+Number 2-01.png
+Number 3-01.png
+Number 4-01.png
+Number 5-01.png
+Number 6-01.png
+Number 8-01.png
+Number 9-01.png
+Oem references Icon-01.png
+Oil Leaks.png
+Part of Engine finders Icon-01.png
+Petrol Icon-01.png
+Phone Icon-01.png
+Quote Icon-01.png
+Real Inquiries Icon-01.png
+Real data icon-01.png
+Rod Bearing-01.png
+Safe buy icon-01.png
+Scale Icon-01.png
+Scope decision Icon-01.png
+Specific knowledge icon-01.png
+Starting and charging icon-01.png
+Symptoms Icon-01.png
+Terrain response Icon-01.png
+Timing Chain-01.png
+Top choice-01.png
+Transparent data icon-01.png
+Trend icon-01.png
+Turbo-01.png
+Two cars icon-01.png
+Uk focused Icon-01.png
+Uk wide delivery Icon-01.png
+Users Icon-01.png
+Value icon-01.png
+Valve stem-01.png
+Vehicle Icon-01.png
+Vetted Specialist Icon-01.png
+Vetted specialist Icon 2-01.png
+crankshaft-01.png
+dpf filter ICON-01.png
+exhaust and emission icon-01.png
+
+============================================================
+JAGUAR SILVER (93 icons)
+============================================================
+1-01.png
+100% independent icon-01.png
+2-01.png
+AdBlue-01.png
+Air suspension knowledge Icon-01.png
+Amg icon-01.png
+Best Family Icon 2-01.png
+Best Family Icon-01.png
+Best Long term Icon-01.png
+Best Used buy icon-01.png
+Best used buy icon 2-01.png
+Calculator icon-01.png
+Call a specialist Icon-01.png
+Chain icon-01.png
+Chassis Icon-01.png
+Check Watch 2-01.png
+Check Watch-01.png
+Check-01.png
+Commercial Icon-01.png
+Cooling System icon-01.png
+Cooling system icon 2-01.png
+Database Icon-01.png
+Drivetrain failures icon-01.png
+Egr icon-01.png
+Electric failures icon-01.png
+Engine icon-01.png
+Ev Icon-01.png
+Expensive failure icon-01.png
+Expert Verified Icon-01.png
+Faq Icon-01.png
+Flagship choice icon-01.png
+Flywheel Icon-01.png
+Gearbox problem  Icon-01.png
+Generation Honest Rated Icon-01.png
+Genuine Failure Data Icon-01.png
+Get Guidance Icon-01.png
+Good choice-01.png
+High demand icon-01.png
+Hill Icon-01.png
+Hones repair vs replace icon-01.png
+INjector ICON-01.png
+Independent and impartial Icon-01.png
+Ingenium Icon-01.png
+Ipace note icon-01.png
+Knowledge centre icon-01.png
+Live Feed icon-01.png
+Market Insight Icon-01.png
+Meter Icon-01.png
+Modern Choice-01.png
+Most Enquired Icon-01.png
+Niche style icon-01.png
+Not sure icon-01.png
+Note Icon-01.png
+Numbe 7-01.png
+Number 1-01.png
+Number 10-01.png
+Number 2-01.png
+Number 3-01.png
+Number 4-01.png
+Number 5-01.png
+Number 6-01.png
+Oem references Icon-01.png
+Oil Leaks.png
+Part of Engine finders Icon-01.png
+Petrol Icon-01.png
+Phone Icon-01.png
+Quote Icon-01.png
+Real Inquiries Icon-01.png
+Real data icon-01.png
+Rod Bearing-01.png
+Safe buy icon-01.png
+Scale Icon-01.png
+Scope decision Icon-01.png
+Specific knowledge icon-01.png
+Starting and charging icon-01.png
+Symptoms Icon-01.png
+Terrain response Icon-01.png
+Timing Chain-01.png
+Top choice.png
+Transparent data icon-01.png
+Trend icon-01.png
+Two cars icon-01.png
+Uk focused Icon-01.png
+Uk wide delivery Icon-01.png
+Users Icon-01.png
+Value icon-01.png
+Valve stem-01.png
+Vehicle Icon-01.png
+Vetted Specialist Icon-01.png
+Vetted specialist Icon 2-01.png
+crankshaft-01.png
+dpf filter ICON-01.png
+exhaust and emission icon-01.png

@@ -1,5 +1,5 @@
 {
-  "subHeadline": "Not a navigation grid — a verdict on every generation, drawn from real enquiry volume and replacement economics.",
+  "subHeadline": "Not a navigation grid - a verdict on every generation, drawn from real enquiry volume and replacement economics.",
   "headerImage": {
     "src": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=900&q=80",
     "alt": "Jaguar model lineup"
@@ -14,16 +14,16 @@
     { "era": "X-Type", "engines": "1 Generation (X400)", "models": "⚠️ Check Value" },
     { "era": "F-Pace", "engines": "1 Generation (X761)", "models": "👨‍👩‍👧‍👦 Best Family" },
     { "era": "E-Pace", "engines": "1 Generation (X540)", "models": "🚀 High Demand" },
-    { "era": "I-Pace", "engines": "1 Generation (X590)", "models": "⚡ EV — Drive Unit Info" },
+    { "era": "I-Pace", "engines": "1 Generation (X590)", "models": "⚡ EV - Drive Unit Info" },
     { "era": "F-Type", "engines": "1 Generation (X152)", "models": "🏆 Safest Buy" },
     { "era": "XK", "engines": "2 Generations (X100, X150)", "models": "💎 Premium Style" }
   ],
   "exampleVerdict": {
     "model": "Jaguar F-Pace",
     "bestGeneration": "The only F-Pace generation (X761), for its strong retained values and the widest safe engine coverage in the range.",
-    "worstEngine": "Early AJ200D units without documented chain-tensioner inspection — same caveat as Land Rover's Ingenium diesel.",
-    "mostReliableEngine": "The AJ200P/204PT Ingenium petrol — no meaningful weak point beyond routine water pump replacement.",
-    "highestRisk": "None flagged at the model level — F-Pace is the one Jaguar with a clean ✅ Safe verdict across every engine variant in our data.",
-    "bestUsedBuy": "A 2019+ F-Pace with full service history — the strongest all-round ownership profile of any Jaguar currently on sale."
+    "worstEngine": "Early AJ200D units without documented chain-tensioner inspection - same caveat as Land Rover's Ingenium diesel.",
+    "mostReliableEngine": "The AJ200P/204PT Ingenium petrol - no meaningful weak point beyond routine water pump replacement.",
+    "highestRisk": "None flagged at the model level - F-Pace is the one Jaguar with a clean ✅ Safe verdict across every engine variant in our data.",
+    "bestUsedBuy": "A 2019+ F-Pace with full service history - the strongest all-round ownership profile of any Jaguar currently on sale."
   }
 }

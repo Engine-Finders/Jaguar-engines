@@ -8,7 +8,7 @@ const ITEM_ICONS = ["warning", "gauge", "dollar", "tag", "clock", "chart"];
 const UK_REGIONS_GEO = "/320d/uk-regions-topo.json";
 
 // England's 9 electoral regions (used as a stand-in for Government Office
-// Regions — free boundary file, see martinjc/UK-GeoJSON). Any region not
+// Regions - free boundary file, see martinjc/UK-GeoJSON). Any region not
 // explicitly called out in the data rolls up into the "Other Regions" share.
 const NAMED_REGIONS = ["London", "South East", "North West"];
 
@@ -35,7 +35,7 @@ const BUBBLE_POSITION = {
   "Other Regions": "left-[6%] bottom-0",
 };
 
-// Connector line endpoints (percent of the map container) — start is the edge
+// Connector line endpoints (percent of the map container) - start is the edge
 // of each bubble facing the map, end is roughly where that region sits on it.
 const CONNECTOR_LINE = {
   London: { x1: 78, y1: 62, x2: 61, y2: 56 },

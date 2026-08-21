@@ -90,7 +90,7 @@ export default function CoreVariants({ data }) {
 
   return (
     <section className="w-full bg-[var(--color-page)]">
-      {/* MOBILE: no background image — plain page background, content stacks in normal flow */}
+      {/* MOBILE: no background image - plain page background, content stacks in normal flow */}
       <div className="px-4 py-8 text-[var(--color-text)] md:hidden">
         <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
           {data.subheading || "Core Variants"}

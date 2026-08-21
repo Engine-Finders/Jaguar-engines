@@ -1,6 +1,6 @@
 import { Resend } from "resend";
 
-/** Ops inbox — notification only (never emailed to the customer). */
+/** Ops inbox - notification only (never emailed to the customer). */
 const TO_EMAIL = "ef2crm@gmail.com";
 const FROM_EMAIL = process.env.RESEND_FROM || "BMW Engines <leads@bmwengines.uk>";
 
@@ -13,7 +13,7 @@ function escapeHtml(value) {
 }
 
 function row(label, value) {
-  const display = value === undefined || value === null || String(value).trim() === "" ? "—" : String(value);
+  const display = value === undefined || value === null || String(value).trim() === "" ? "-" : String(value);
   return `<tr>
     <td style="padding:8px 12px;border-bottom:1px solid #e5e7eb;color:#64748b;font-size:13px;width:38%;">${escapeHtml(label)}</td>
     <td style="padding:8px 12px;border-bottom:1px solid #e5e7eb;color:#0f172a;font-size:14px;font-weight:600;">${escapeHtml(display)}</td>
@@ -85,7 +85,7 @@ function buildLeadEmailHtml(payload = {}) {
 /**
  * Notify ops that a customer requested a quote.
  * Always sends to the ops inbox (email on the form is optional).
- * Does NOT send any email to the customer — on-page success message covers that.
+ * Does NOT send any email to the customer - on-page success message covers that.
  */
 export async function sendLeadEmail(payload) {
   const apiKey = process.env.RESEND_API_KEY;

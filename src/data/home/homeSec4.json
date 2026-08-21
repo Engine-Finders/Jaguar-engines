@@ -1,16 +1,16 @@
 {
-  "subHeadline": "The verdicts people actually want before they read a single spec sheet — the calls we'd make for a friend, backed by real UK enquiry and failure data.",
+  "subHeadline": "The verdicts people actually want before they read a single spec sheet - the calls we'd make for a friend, backed by real UK enquiry and failure data.",
   "headerImage": {
-    "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=900&q=80",
+    "src": "/home-image/sec2-bg.webp",
     "alt": "Jaguar ownership rankings"
   },
   "heroImages": {
     "light": {
-      "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=900&q=80",
+      "src": "/home-image/sec2-bg.webp",
       "alt": "Jaguar ownership rankings"
     },
     "dark": {
-      "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=900&q=80",
+      "src": "/home-image/sec2-bg.webp",
       "alt": "Jaguar ownership rankings"
     }
   },
@@ -20,7 +20,7 @@
       "ranking": "Most Reliable Engine",
       "icon": "⚙️",
       "winner": "AJ200P / 204PT (Ingenium Petrol)",
-      "why": "Consistently outperforms its diesel sibling in our data — water pump replacement is the only meaningful weak point.",
+      "why": "Consistently outperforms its diesel sibling in our data - water pump replacement is the only meaningful weak point.",
       "verdict": { "icon": "🏆", "text": "Best", "type": "best" },
       "href": "#"
     },
@@ -28,7 +28,7 @@
       "ranking": "Most Reliable Model",
       "icon": "🚗",
       "winner": "F-Pace X761",
-      "why": "Strong retained values and a clean ✅ Safe verdict across every engine variant — no caveat in the data at all.",
+      "why": "Strong retained values and a clean ✅ Safe verdict across every engine variant - no caveat in the data at all.",
       "verdict": { "icon": "🏆", "text": "Best", "type": "best" },
       "href": "#"
     },
@@ -44,7 +44,7 @@
       "ranking": "Most Expensive Failure",
       "icon": "💥",
       "winner": "276DT (2.7 TDV6) Oil Pump Failure",
-      "why": "Shared with Land Rover's Discovery 3 — often kills the engine outright with little warning. £5,000–£7,500 recon.",
+      "why": "Shared with Land Rover's Discovery 3 - often kills the engine outright with little warning. £5,000–£7,500 recon.",
       "verdict": { "icon": "🔴", "text": "Avoid", "type": "avoid" },
       "href": "#"
     },
@@ -52,7 +52,7 @@
       "ranking": "Safest Jaguar to Buy",
       "icon": "🛡️",
       "winner": "E-Pace X540 (2017–present)",
-      "why": "Compact SUV values comfortably absorb the modern Ingenium's replacement cost — safe across the board.",
+      "why": "Compact SUV values comfortably absorb the modern Ingenium's replacement cost - safe across the board.",
       "verdict": { "icon": "✅", "text": "Safe", "type": "safe" },
       "href": "#"
     },
@@ -60,7 +60,7 @@
       "ranking": "Highest Risk Purchase",
       "icon": "⚠️",
       "winner": "X-Type X400 (2001–2009)",
-      "why": "Rapid depreciation plus genuine reliability concerns on pre-2007 cars — replacement cost frequently exceeds vehicle value.",
+      "why": "Rapid depreciation plus genuine reliability concerns on pre-2007 cars - replacement cost frequently exceeds vehicle value.",
       "verdict": { "icon": "⚠️", "text": "Watch", "type": "watch" },
       "href": "#"
     },
@@ -76,18 +76,19 @@
       "ranking": "Best Long-Term Keeper",
       "icon": "⏳",
       "winner": "XJ X351 (2010–2019)",
-      "why": "Flagship values comfortably absorb even the <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a>'s upper recon cost — the keeper's Jaguar.",
+      "why": "Flagship values comfortably absorb even the <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a>'s upper recon cost - the keeper's Jaguar.",
       "verdict": { "icon": "🏆", "text": "Best", "type": "best" },
       "href": "#"
     }
   ],
   "dataSources": {
-    "title": "Where Our Data Comes From",
+    "title": "Data Note",
+    "note": "Rankings are drawn from 1,700+ real UK enquiries tracked in 2025 and engine failure data verified by independent Jaguar specialists. Replacement cost data is updated monthly from supplier quotes.",
     "columns": ["CLAIM", "SOURCE"],
     "rows": [
-      { "claim": "1,700+ real UK enquiries tracked in 2025", "source": "JaguarEngines.uk CRM — live enquiry data" },
-      { "claim": "Engine failure data verified by independent specialists", "source": "Partner garage network — 12+ UK specialists" },
-      { "claim": "Replacement cost data updated monthly", "source": "Reconditioned engine supplier quotes — supply-only" },
+      { "claim": "1,700+ real UK enquiries tracked in 2025", "source": "JaguarEngines.uk CRM - live enquiry data" },
+      { "claim": "Engine failure data verified by independent specialists", "source": "Partner garage network - 12+ UK specialists" },
+      { "claim": "Replacement cost data updated monthly", "source": "Reconditioned engine supplier quotes - supply-only" },
       { "claim": "Model reliability rankings", "source": "Aggregated from enquiry volume, failure frequency, and replacement economics" }
     ]
   }

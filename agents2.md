@@ -1,4 +1,4 @@
-# Agents2 — Multi-Page Architecture
+# Agents2 - Multi-Page Architecture
 
 ## Scope
 - **Home** stays as-is (`src/app/page.js` + home JSON/components). Do not touch unless asked.

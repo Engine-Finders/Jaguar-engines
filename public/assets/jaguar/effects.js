@@ -1,5 +1,5 @@
 /* ============================================================
-   JAGUARENGINES.UK — SCROLL EFFECTS
+   JAGUARENGINES.UK - SCROLL EFFECTS
    Fade-in on scroll for sections 3+ (data-lazy-section), with
    prefers-reduced-motion respected. Sections 1-2 render immediately.
    ============================================================ */

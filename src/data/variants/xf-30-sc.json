@@ -1,13 +1,13 @@
 {
   "meta": {
     "slug": "xf-30-sc",
-    "title": "XF 3.0 SC Engine Replacement Cost UK — Compare Quotes",
+    "title": "XF 3.0 SC Engine Replacement Cost UK - Compare Quotes",
     "titleCharCount": 56,
-    "description": "Every Jaguar XF 3.0 SC engine — AJ126 3.0L supercharged V6, 2012–2024. Real UK costs, coolant pipe advice, and honest reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
+    "description": "Every Jaguar XF 3.0 SC engine - AJ126 3.0L supercharged V6, 2012–2024. Real UK costs, coolant pipe advice, and honest reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
     "descriptionCharCount": 160,
     "openGraph": {
-      "title": "XF 3.0 SC Engine Replacement Cost UK — Compare Quotes",
-      "description": "Every Jaguar XF 3.0 SC engine — AJ126 3.0L supercharged V6, 2012–2024. Real UK costs, coolant pipe advice, and honest reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
+      "title": "XF 3.0 SC Engine Replacement Cost UK - Compare Quotes",
+      "description": "Every Jaguar XF 3.0 SC engine - AJ126 3.0L supercharged V6, 2012–2024. Real UK costs, coolant pipe advice, and honest reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
       "type": "website",
       "url": "https://jaguarengines.uk/xf/30-sc/",
       "image": "https://jaguarengines.uk/images/jaguar/hero/xf-30-sc.jpg",
@@ -15,26 +15,26 @@
     },
     "twitter": {
       "card": "summary_large_image",
-      "title": "XF 3.0 SC Engine Replacement Cost UK — Compare Quotes",
-      "description": "Every Jaguar XF 3.0 SC engine — AJ126 3.0L supercharged V6, 2012–2024. Real UK costs, coolant pipe advice, and honest reliability data.",
+      "title": "XF 3.0 SC Engine Replacement Cost UK - Compare Quotes",
+      "description": "Every Jaguar XF 3.0 SC engine - AJ126 3.0L supercharged V6, 2012–2024. Real UK costs, coolant pipe advice, and honest reliability data.",
       "image": "https://jaguarengines.uk/images/jaguar/hero/xf-30-sc.jpg"
     },
     "jsonLd": {}
   },
   "hero": {
     "tagPill": "Jaguar XF 3.0 SC • 2012–2024 • 2 Engine Generations",
-    "h1": "Jaguar XF 3.0 SC Engine Replacement — Compare Prices & Get Quotes",
-    "subHeadline": "Get quotes today from trusted UK Jaguar XF 3.0 SC specialists. Compare reconditioned, rebuilt and used 3.0-litre supercharged V6 engines — AJ126 variants across the X250 and X260 generations — supply & fit available nationwide.",
+    "h1": "Jaguar XF 3.0 SC Engine Replacement - Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Jaguar XF 3.0 SC specialists. Compare reconditioned, rebuilt and used 3.0-litre supercharged V6 engines - AJ126 variants across the X250 and X260 generations - supply & fit available nationwide.",
     "trustBadges": [
       "🔧 Supply & Fit Available",
       "✅ 12-Month Warranty",
       "🚚 Nationwide Delivery",
       "👥 15+ Specialists"
     ],
-    "priceAnchor": "Jaguar XF 3.0 SC Engines — from £1,500 to £8,500 · Engine code: AJ126",
+    "priceAnchor": "Jaguar XF 3.0 SC Engines - from £1,500 to £8,500 · Engine code: AJ126",
     "registrationInput": {
       "flag": "🇬🇧 GB",
-      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "Get My Free XF 3.0 SC Engine Quotes Now →",
         "href": "#"
@@ -43,7 +43,7 @@
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
   },
   "eraMap": {
-    "title": "The XF 3.0 SC THROUGH TIME — Era Map",
+    "title": "The XF 3.0 SC THROUGH TIME - Era Map",
     "columns": [
       "Generation",
       "Years",
@@ -57,20 +57,20 @@
         "generation": "XF X250",
         "years": "2012–2015",
         "engineCode": "AJ126 (3.0 SC V6)",
-        "reliability": "★★★☆☆ [NEWLY ASSIGNED — see Data Note]",
-        "reconCost": "£4,500–£7,000 [PLACEHOLDER — confirm vs cost sheet]",
-        "eraNote": "3.0L supercharged V6 — 340 bhp, 450 Nm; plastic coolant pipes are the critical weakness"
+        "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
+        "reconCost": "£4,500–£7,000 [PLACEHOLDER - confirm vs cost sheet]",
+        "eraNote": "3.0L supercharged V6 - 340 bhp, 450 Nm; plastic coolant pipes are the critical weakness"
       },
       {
         "generation": "XF X260",
         "years": "2015–2024",
         "engineCode": "AJ126 (3.0 SC V6)",
-        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
-        "reconCost": "£5,000–£8,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
+        "reconCost": "£5,000–£8,500 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "Revised timing gear and updated coolant pipes from 2018; supercharger coupler and cooling system remain primary watch items"
       }
     ],
-    "sourceNote": "This table is the single source every other section on this page matches — Sections 2, 4 and 6 reference it rather than restating conflicting figures.",
+    "sourceNote": "This table is the single source every other section on this page matches - Sections 2, 4 and 6 reference it rather than restating conflicting figures.",
     "dataNote": ""
   },
   "replacementCosts": {
@@ -95,7 +95,7 @@
         "supplyOnly": "£4,500–£7,000",
         "fittedIndie": "£5,300–£8,200",
         "warranty": "12–24 months",
-        "bestFor": "Most owners — best cost/warranty balance"
+        "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
@@ -123,7 +123,7 @@
     "problems": [
       {
         "id": 1,
-        "title": "Plastic Coolant Crossover Pipe Failure (All Early Models — Critical)",
+        "title": "Plastic Coolant Crossover Pipe Failure (All Early Models - Critical)",
         "symptoms": "",
         "typicalMileage": "",
         "repairCost": "",
@@ -159,7 +159,7 @@
       },
       {
         "id": 3,
-        "title": "Timing Chain Stretch (Poor Maintenance — All Models)",
+        "title": "Timing Chain Stretch (Poor Maintenance - All Models)",
         "symptoms": "",
         "typicalMileage": "",
         "repairCost": "",
@@ -186,7 +186,7 @@
     }
   },
   "repairBuyOrReplace": {
-    "h2": "XF 3.0 SC — Repair, Buy, or Replace?",
+    "h2": "XF 3.0 SC - Repair, Buy, or Replace?",
     "canItBeRepaired": {
       "title": "Can It Be Repaired?",
       "columns": [
@@ -200,10 +200,10 @@
           "problem": "Coolant pipe failure (preventative)",
           "repairable": "✅ Yes",
           "typicalCost": "£800–£1,500",
-          "whenItMakesSense": "Essential maintenance — upgrade to aluminium pipes"
+          "whenItMakesSense": "Essential maintenance - upgrade to aluminium pipes"
         },
         {
-          "problem": "Coolant pipe failure (catastrophic — head damage)",
+          "problem": "Coolant pipe failure (catastrophic - head damage)",
           "repairable": "⚠️ Sometimes",
           "typicalCost": "£3,000–£6,000",
           "whenItMakesSense": "Only if caught early; often more cost-effective to replace the engine"
@@ -212,13 +212,13 @@
           "problem": "Supercharger coupler wear",
           "repairable": "✅ Yes",
           "typicalCost": "£500–£1,200",
-          "whenItMakesSense": "Catch it early — far cheaper than supercharger replacement"
+          "whenItMakesSense": "Catch it early - far cheaper than supercharger replacement"
         },
         {
           "problem": "Timing chain stretch (preventative)",
           "repairable": "✅ Yes",
           "typicalCost": "£2,000–£4,000",
-          "whenItMakesSense": "Essential maintenance — catch it before catastrophic failure"
+          "whenItMakesSense": "Essential maintenance - catch it before catastrophic failure"
         },
         {
           "problem": "Snapped timing chain",
@@ -230,7 +230,7 @@
           "problem": "Water pump failure",
           "repairable": "✅ Yes",
           "typicalCost": "£400–£900",
-          "whenItMakesSense": "Catch it early — before overheating"
+          "whenItMakesSense": "Catch it early - before overheating"
         },
         {
           "problem": "Injector failure",
@@ -243,21 +243,21 @@
     "buyingChecks": {
       "title": "Buying This XF 3.0 SC? Check These First",
       "buyIf": [
-        "* Post-2018 X260 with updated one-piece coolant pipes (smooth pipes — no seam)",
+        "* Post-2018 X260 with updated one-piece coolant pipes (smooth pipes - no seam)",
         "* Coolant pipes upgraded to aluminium replacements",
         "* Full service history with regular oil changes (critical for chain longevity)",
         "* No cold-start rattling (supercharger coupler and timing chain health)",
         "* Water pump and thermostat recently replaced"
       ],
       "avoidIf": [
-        "* Any history of overheating or coolant loss — cooling system damage may have occurred",
-        "* Cold-start rattling — supercharger coupler or timing chain may be failing",
-        "* No service history — the AJ126 is sensitive to oil quality",
-        "* Visible coolant leaks around the supercharger area — pipes may be failing",
+        "* Any history of overheating or coolant loss - cooling system damage may have occurred",
+        "* Cold-start rattling - supercharger coupler or timing chain may be failing",
+        "* No service history - the AJ126 is sensitive to oil quality",
+        "* Visible coolant leaks around the supercharger area - pipes may be failing",
         "* Oil leaks or unexplained coolant consumption"
       ]
     },
-    "closingVerdict": "The XF 3.0 SC is Jaguar's supercharged V6 petrol offering across the X250 and X260 generations — delivering 340 bhp and a distinctive supercharger whine. The AJ126 is a development of the AJ133 V8, sharing much of its architecture. The engine's main vulnerability is the plastic coolant crossover pipes — early two-piece pipes with plasti-welded seams are prone to catastrophic failure. Later one-piece pipes (2018+) are improved, but many owners upgrade to aluminium replacements for peace of mind. Other common issues include supercharger coupler wear and timing chain stretch on poorly maintained examples. With typical XF values ranging from £8,000 to £25,000+, an engine replacement is a significant investment — a well-maintained post-2018 X260 with upgraded cooling system pipes is the safest choice.",
+    "closingVerdict": "The XF 3.0 SC is Jaguar's supercharged V6 petrol offering across the X250 and X260 generations - delivering 340 bhp and a distinctive supercharger whine. The AJ126 is a development of the AJ133 V8, sharing much of its architecture. The engine's main vulnerability is the plastic coolant crossover pipes - early two-piece pipes with plasti-welded seams are prone to catastrophic failure. Later one-piece pipes (2018+) are improved, but many owners upgrade to aluminium replacements for peace of mind. Other common issues include supercharger coupler wear and timing chain stretch on poorly maintained examples. With typical XF values ranging from £8,000 to £25,000+, an engine replacement is a significant investment - a well-maintained post-2018 X260 with upgraded cooling system pipes is the safest choice.",
     "cta": {
       "label": "→ Compare XF 3.0 SC engine prices before you buy",
       "href": "#"
@@ -266,14 +266,14 @@
   "buyingChecklist": {
     "intro": "Before you buy a used Jaguar XF 3.0 SC (or before you commit to an engine replacement), check these:",
     "items": [
-      "* Coolant System — Check for leaks around the supercharger area; inspect coolant crossover pipes for cracks or signs of failure — see the map above",
-      "* Cold Start — Listen for metallic rattling (supercharger coupler) or rough running (timing chain)",
-      "* Coolant Level — Check reservoir when cold; any low or loss may indicate pipe or water pump issues",
-      "* Service History — Including which generation (X250 or X260) and oil-change discipline",
-      "* Supercharger Health — Listen for \"clonk\" when shutting down (coupler wear)",
-      "* Water Pump — Check for recent replacement (common failure item)",
-      "* Engine Warning Light — Have codes read; unresolved issues may indicate timing, cooling or sensor problems",
-      "* MOT History — Check for emissions-related failures"
+      "* Coolant System - Check for leaks around the supercharger area; inspect coolant crossover pipes for cracks or signs of failure - see the map above",
+      "* Cold Start - Listen for metallic rattling (supercharger coupler) or rough running (timing chain)",
+      "* Coolant Level - Check reservoir when cold; any low or loss may indicate pipe or water pump issues",
+      "* Service History - Including which generation (X250 or X260) and oil-change discipline",
+      "* Supercharger Health - Listen for \"clonk\" when shutting down (coupler wear)",
+      "* Water Pump - Check for recent replacement (common failure item)",
+      "* Engine Warning Light - Have codes read; unresolved issues may indicate timing, cooling or sensor problems",
+      "* MOT History - Check for emissions-related failures"
     ]
   },
   "engineCodes": {
@@ -295,7 +295,7 @@
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
     "technicalSpecs": {
-      "title": "Technical Specs (AJ126 — XF 3.0 SC):",
+      "title": "Technical Specs (AJ126 - XF 3.0 SC):",
       "items": [
         {
           "label": "* Displacement",
@@ -340,7 +340,7 @@
     "items": [
       {
         "label": "Most Common Failure",
-        "value": "Plastic coolant crossover pipe failure — the defining issue of the AJ126"
+        "value": "Plastic coolant crossover pipe failure - the defining issue of the AJ126"
       },
       {
         "label": "Average Enquiry Mileage",
@@ -352,11 +352,11 @@
       },
       {
         "label": "Most Requested Engine Code",
-        "value": "AJ126 [EM-VERIFIED — 560 enquiries]"
+        "value": "AJ126 [EM-VERIFIED - 560 enquiries]"
       },
       {
         "label": "Peak Enquiry Season",
-        "value": "Summer — cooling system failures emerge in warmer weather [PATTERN DATA]"
+        "value": "Summer - cooling system failures emerge in warmer weather [PATTERN DATA]"
       },
       {
         "label": "Regional Demand",
@@ -374,17 +374,17 @@
       {
         "id": 2,
         "question": "Is the Jaguar XF 3.0 SC engine reliable?",
-        "answer": "The AJ126 is a development of the <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> V8 and is generally considered a good engine. However, it has well-documented vulnerabilities. The plastic coolant crossover pipes are the critical weakness — early two-piece pipes can crack catastrophically. JLR updated the design in 2017/18. Other issues include supercharger coupler wear and timing chain stretch on poorly maintained examples. With proper maintenance and upgraded coolant pipes, the AJ126 is a reliable and rewarding engine."
+        "answer": "The AJ126 is a development of the <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> V8 and is generally considered a good engine. However, it has well-documented vulnerabilities. The plastic coolant crossover pipes are the critical weakness - early two-piece pipes can crack catastrophically. JLR updated the design in 2017/18. Other issues include supercharger coupler wear and timing chain stretch on poorly maintained examples. With proper maintenance and upgraded coolant pipes, the AJ126 is a reliable and rewarding engine."
       },
       {
         "id": 3,
         "question": "What are the common problems with the Jaguar XF 3.0 SC?",
-        "answer": "The most common issues are plastic coolant crossover pipe failure (cracked \"Y pipes\" or \"V pipes\" under the supercharger — causes sudden coolant loss and overheating), supercharger coupler wear (metallic rattling on cold start and \"clonk\" on shutdown), water pump failure, timing chain stretch (poor maintenance), and injector failure. The V6 received improved timing gear from launch in 2012."
+        "answer": "The most common issues are plastic coolant crossover pipe failure (cracked \"Y pipes\" or \"V pipes\" under the supercharger - causes sudden coolant loss and overheating), supercharger coupler wear (metallic rattling on cold start and \"clonk\" on shutdown), water pump failure, timing chain stretch (poor maintenance), and injector failure. The V6 received improved timing gear from launch in 2012."
       },
       {
         "id": 4,
         "question": "Is it worth replacing an XF 3.0 SC engine, or should I scrap the car?",
-        "answer": "Depends on the vehicle value and condition. Against a well-kept X260 worth £12,000–£25,000, a £5,000–£7,000 recon is 20–40% of the car's value — often worth it. Against a tired X250 with significant body issues, the same recon may exceed our 60% Jaguar threshold — get a scrap valuation first. Post-2018 X260 models with updated cooling system pipes command a premium."
+        "answer": "Depends on the vehicle value and condition. Against a well-kept X260 worth £12,000–£25,000, a £5,000–£7,000 recon is 20–40% of the car's value - often worth it. Against a tired X250 with significant body issues, the same recon may exceed our 60% Jaguar threshold - get a scrap valuation first. Post-2018 X260 models with updated cooling system pipes command a premium."
       },
       {
         "id": 5,
@@ -394,17 +394,17 @@
       {
         "id": 6,
         "question": "Can I repair the coolant crossover pipes, or do they need replacement?",
-        "answer": "The plastic pipes must be replaced — they are the weak point. Many owners upgrade to aftermarket aluminium pipes for a permanent fix. A preventative replacement costs £800–£1,500. Ignoring a coolant leak can lead to sudden overheating and catastrophic engine damage. At the first sign of coolant loss, book an inspection immediately."
+        "answer": "The plastic pipes must be replaced - they are the weak point. Many owners upgrade to aftermarket aluminium pipes for a permanent fix. A preventative replacement costs £800–£1,500. Ignoring a coolant leak can lead to sudden overheating and catastrophic engine damage. At the first sign of coolant loss, book an inspection immediately."
       }
     ],
-    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine condition, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine condition, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK Jaguar XF 3.0 SC Owners Trust JaguarEngine.uk",
     "trustPoints": [
       {
         "title": "Trusted XF 3.0 SC Engine Suppliers",
-        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real XF 3.0 SC owners, as part of the Engine Finders network, across every generation — X250 and X260 — covering the AJ126 supercharged V6 in all its variants."
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real XF 3.0 SC owners, as part of the Engine Finders network, across every generation - X250 and X260 - covering the AJ126 supercharged V6 in all its variants."
       },
       {
         "title": "Compare XF 3.0 SC Engine Replacement Companies",

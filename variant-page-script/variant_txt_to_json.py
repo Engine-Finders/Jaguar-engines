@@ -9,12 +9,12 @@ Usage:
   python variant-page-script/variant_txt_to_json.py path/to/input.txt --out variant-page-output
 
 IGNORE RULES (apply to this script and future TXT→JSON converters):
-  1. Step 0 Check Results / STEP 0 DECLARATIONS — never put in JSON.
-  2. "Data Note (internal):" / "Data-integrity note (internal):" — never put in JSON
+  1. Step 0 Check Results / STEP 0 DECLARATIONS - never put in JSON.
+  2. "Data Note (internal):" / "Data-integrity note (internal):" - never put in JSON
      (eraMap.dataNote is always "").
   3. Part 1 / Part 2 chat fluff ("End of Part 1", "Part 2", "Proceed to Part 2",
-     LLM thinking paragraphs) — strip anywhere; never put in JSON.
-  4. PRODUCTION NOTE (Internal) — ignore.
+     LLM thinking paragraphs) - strip anywhere; never put in JSON.
+  4. PRODUCTION NOTE (Internal) - ignore.
 """
 
 from __future__ import annotations
@@ -34,11 +34,11 @@ DEFAULT_OUT = ROOT / "variant-page-output"
 
 # Allow leading spaces/tabs on headers (export sometimes indents SECTION/META/SCHEMA)
 PAGE_START_RE = re.compile(
-    r"^[ \t]*SECTION\s+1\s*[—\-:]+\s*HERO\b",
+    r"^[ \t]*SECTION\s+1\s*[-\-:]+\s*HERO\b",
     re.MULTILINE | re.IGNORECASE,
 )
 SECTION_RE = re.compile(
-    r"^[ \t]*SECTION\s+(?P<num>\d+[A-Z]?)\s*[—\-:]+\s*(?P<label>.+?)\s*$",
+    r"^[ \t]*SECTION\s+(?P<num>\d+[A-Z]?)\s*[-\-:]+\s*(?P<label>.+?)\s*$",
     re.MULTILINE | re.IGNORECASE,
 )
 # META  |  META TITLE  |  META TITLE & DESCRIPTION
@@ -47,7 +47,7 @@ META_SECTION_RE = re.compile(
     re.MULTILINE | re.IGNORECASE,
 )
 SCHEMA_SECTION_RE = re.compile(
-    r"^[ \t]*SCHEMA\s*(?:\(JSON[-‑–—]LD\))?\s*$",
+    r"^[ \t]*SCHEMA\s*(?:\(JSON[-‑–-]LD\))?\s*$",
     re.MULTILINE | re.IGNORECASE,
 )
 META_TITLE_BLOCK_RE = re.compile(
@@ -139,7 +139,7 @@ def parse_href_and_label(text: str) -> tuple[str, str]:
     m = re.search(r"^(.*?)\s*(?:→|->)\s*(\S+)\s*$", text)
     if m:
         return clean(m.group(1)), m.group(2)
-    m = re.search(r"^(.*?)\s+[—\-]\s+(\/\S+)\s*$", text)
+    m = re.search(r"^(.*?)\s+[-\-]\s+(\/\S+)\s*$", text)
     if m:
         return clean(m.group(1)), m.group(2)
     if text.startswith("/"):
@@ -286,7 +286,7 @@ def extract_json_object(text: str) -> str:
 
 
 def strip_ignored_content(text: str) -> str:
-    # Stop at ANY section — restated Step 0 before Part 2 must not wipe FAQ/META/SCHEMA
+    # Stop at ANY section - restated Step 0 before Part 2 must not wipe FAQ/META/SCHEMA
     text = re.sub(
         r"(?:Step\s+0\s+Check\s+Results|STEP\s+0\s+DECLARATIONS).*?(?=SECTION\s+\d+\b|\Z)",
         "\n",
@@ -307,7 +307,7 @@ def strip_ignored_content(text: str) -> str:
         flags=re.I | re.S | re.M,
     )
     text = re.sub(
-        r"^(?:Part\s*2|PART\s*2)(?:\s*[—\-][^\n]*)?\s*\n(?:(?!SECTION\s+\d+\b|META\b|SCHEMA\b).)*",
+        r"^(?:Part\s*2|PART\s*2)(?:\s*[-\-][^\n]*)?\s*\n(?:(?!SECTION\s+\d+\b|META\b|SCHEMA\b).)*",
         "\n",
         text,
         flags=re.I | re.S | re.M,
@@ -421,9 +421,9 @@ def parse_hero(body: str) -> dict[str, Any]:
 def era_map_title_from_label(label: str) -> str:
     label = clean(label)
     label = re.sub(r"^THE\s+", "The ", label, flags=re.I)
-    label = re.sub(r"\s*[—\-]\s*ERA\s+MAP\s*$", "", label, flags=re.I)
+    label = re.sub(r"\s*[-\-]\s*ERA\s+MAP\s*$", "", label, flags=re.I)
     if label and not label.lower().endswith("era map"):
-        label = label + " — Era Map"
+        label = label + " - Era Map"
     return label
 
 
@@ -556,8 +556,8 @@ def parse_urgency(text: str) -> dict[str, str]:
 
     label = text
     detail = ""
-    if " — " in text:
-        label, detail = [clean(x) for x in text.split(" — ", 1)]
+    if " - " in text:
+        label, detail = [clean(x) for x in text.split(" - ", 1)]
     elif " - " in text:
         label, detail = [clean(x) for x in text.split(" - ", 1)]
 
@@ -956,8 +956,8 @@ def parse_trust_cta(body: str) -> dict[str, Any]:
             item = clean(ln.lstrip("* ").strip())
             if not item:
                 continue
-            if " — " in item:
-                title, text = [clean(x) for x in item.split(" — ", 1)]
+            if " - " in item:
+                title, text = [clean(x) for x in item.split(" - ", 1)]
             elif " – " in item:
                 title, text = [clean(x) for x in item.split(" – ", 1)]
             else:
@@ -1237,7 +1237,7 @@ def split_pages(text: str) -> list[tuple[str, str]]:
     if not starts:
         raise SystemExit(
             "No variant pages found. Expected lines like "
-            "'SECTION 1 — HERO' or 'SECTION 1: HERO'."
+            "'SECTION 1 - HERO' or 'SECTION 1: HERO'."
         )
 
     pages: list[tuple[str, str]] = []
@@ -1270,7 +1270,7 @@ def guess_page_title(preamble: str, hero: dict[str, Any]) -> str:
     if hero.get("tagPill"):
         return hero["tagPill"].split("•")[0].strip()
     if hero.get("h1"):
-        return re.split(r"\s+[—\-]\s+", hero["h1"])[0]
+        return re.split(r"\s+[-\-]\s+", hero["h1"])[0]
     lines = [clean(ln) for ln in preamble.splitlines() if clean(ln)]
     for ln in reversed(lines[-20:]):
         if re.search(r"\bvariant page\b", ln, re.I):
@@ -1308,13 +1308,13 @@ def build_page(preamble: str, page_text: str) -> dict[str, Any]:
         if tag:
             raw = tag.split("•")[0].strip()
         elif h1:
-            raw = re.split(r"\s+[—\-]\s+", h1)[0]
+            raw = re.split(r"\s+[-\-]\s+", h1)[0]
             raw = re.sub(
                 r"\b(engines?|engine replacement)\b",
                 "",
                 raw,
                 flags=re.I,
-            ).strip(" —-")
+            ).strip(" --")
         page["meta"]["slug"] = slugify(raw or guess_page_title(preamble, page.get("hero", {})))
 
     if not page["meta"]["title"] and page.get("hero", {}).get("h1"):

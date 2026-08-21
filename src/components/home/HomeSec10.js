@@ -3,6 +3,7 @@
 import Image from "next/image";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
+import HomeIcon from "@/components/home/homeIcons";
 
 const riskClass = {
   catastrophic: "bg-[#ed1c24] text-white",
@@ -52,8 +53,8 @@ function stripTags(value = "") {
 function PanelTitle({ block, isDark }) {
   return (
     <div className={`flex items-center gap-4 border-b px-4 py-4 md:px-5 ${isDark ? "border-[var(--color-border)]" : "border-[#dfe5ed]"}`}>
-      <span className={`shrink-0 text-[var(--color-primary)] ${block.icon === "warning" ? "text-[#ff9d00]" : ""}`}>
-        <Icon name={block.icon} className="h-8 w-8" strokeWidth={2.1} />
+      <span className="shrink-0">
+        <HomeIcon name={block.icon} isDark={isDark} className="h-7 w-7" />
       </span>
       <h3 className={`text-[1rem] font-bold uppercase leading-tight ${isDark ? "text-white" : "text-[#071827]"}`}>
         {block.title}
@@ -194,8 +195,8 @@ function MobileAccordion({ block, children, isDark }) {
   return (
     <details className={`group rounded-md border shadow-[0_10px_28px_rgba(10,26,43,0.06)] ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#dfe5ed] bg-white"}`}>
       <summary className="flex cursor-pointer list-none items-center gap-4 px-5 py-4 marker:hidden">
-        <span className="shrink-0 text-[var(--color-primary)]">
-          <Icon name={block.icon} className="h-8 w-8" />
+        <span className="shrink-0">
+          <HomeIcon name={block.icon} isDark={isDark} className="h-7 w-7" />
         </span>
         <h3 className={`min-w-0 flex-1 text-[1rem] font-bold uppercase leading-tight ${isDark ? "text-white" : "text-[#071827]"}`}>
           {block.title}
@@ -213,7 +214,7 @@ function StatsPanel({ stats, isDark }) {
     <ul className={`grid rounded-md border px-7 shadow-[0_10px_28px_rgba(10,26,43,0.05)] ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#dfe5ed] bg-white"}`}>
       {stats.map((stat) => (
         <li key={stat.label} className={`flex items-center gap-5 border-b py-6 last:border-b-0 ${isDark ? "border-[var(--color-border)]" : "border-[#e7ebf0]"}`}>
-          <Icon name={stat.icon} className="h-9 w-9 text-[var(--color-primary)]" strokeWidth={2.2} />
+          <HomeIcon name={stat.icon} isDark={isDark} className="h-8 w-8" />
           <span>
             <strong className={`block text-[1.9rem] leading-none ${isDark ? "text-white" : "text-[#071827]"}`}>{stat.value}</strong>
             <span className={`mt-1 block text-[0.82rem] ${isDark ? "text-white/74" : "text-[#172334]"}`}>{stat.label}</span>

@@ -1,9 +1,9 @@
 {
   "meta": {
     "slug": "x-type-20d",
-    "title": "Jaguar X‑Type 2.0d Engine Replacement Cost UK — Compare Quotes",
+    "title": "Jaguar X‑Type 2.0d Engine Replacement Cost UK - Compare Quotes",
     "titleCharCount": 54,
-    "description": "Every Jaguar X‑Type 2.0d engine — Duratorq diesel. X400 generation, real UK costs and reliability. Get free quotes from 15+ vetted Jaguar specialists today.",
+    "description": "Every Jaguar X‑Type 2.0d engine - Duratorq diesel. X400 generation, real UK costs and reliability. Get free quotes from 15+ vetted Jaguar specialists today.",
     "descriptionCharCount": 159,
     "openGraph": {
       "title": "",
@@ -85,7 +85,7 @@
               "name": "Is the Jaguar X‑Type 2.0d engine reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The Duratorq is rated ★★★☆☆ — it's more reliable than its reputation suggests, but it has known issues: EGR valve clogging and downpipe splitting (the most common), turbo actuator seizure, fuel pump failure, and electrical faults. Regular maintenance is essential."
+                "text": "The Duratorq is rated ★★★☆☆ - it's more reliable than its reputation suggests, but it has known issues: EGR valve clogging and downpipe splitting (the most common), turbo actuator seizure, fuel pump failure, and electrical faults. Regular maintenance is essential."
               }
             },
             {
@@ -101,7 +101,7 @@
               "name": "Is it worth replacing a Jaguar X‑Type 2.0d engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on vehicle value and body condition. Against an X‑Type worth £1,000–£3,000, a £1,800 recon is a significant investment. Assess the body for rust — if the body is solid, replacement can be worthwhile."
+                "text": "Depends on vehicle value and body condition. Against an X‑Type worth £1,000–£3,000, a £1,800 recon is a significant investment. Assess the body for rust - if the body is solid, replacement can be worthwhile."
               }
             },
             {
@@ -117,7 +117,7 @@
               "name": "Can I repair the 2.0d's EGR system, or does it need a new engine?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes — EGR cleaning or replacement is a straightforward repair costing £100–£400. The EGR downpipe is also prone to splitting and can be replaced. Neither issue typically requires engine replacement."
+                "text": "Yes - EGR cleaning or replacement is a straightforward repair costing £100–£400. The EGR downpipe is also prone to splitting and can be replaced. Neither issue typically requires engine replacement."
               }
             }
           ]
@@ -161,7 +161,7 @@
         },
         {
           "@type": "WebPage",
-          "name": "Jaguar X‑Type 2.0d Engine Replacement Cost UK — Compare Quotes",
+          "name": "Jaguar X‑Type 2.0d Engine Replacement Cost UK - Compare Quotes",
           "url": "https://jaguarengines.uk/x-type/20d/",
           "author": {
             "@type": "Organization",
@@ -179,18 +179,18 @@
   },
   "hero": {
     "tagPill": "Jaguar X‑Type 2.0d • 2001–2009 • Duratorq ZSD‑420",
-    "h1": "Jaguar X‑Type 2.0d Engine Replacement — Compare Prices & Get Quotes",
-    "subHeadline": "Get quotes today from trusted UK Jaguar X‑Type specialists. Compare reconditioned, rebuilt and used Duratorq engines — supply & fit available nationwide.",
+    "h1": "Jaguar X‑Type 2.0d Engine Replacement - Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK Jaguar X‑Type specialists. Compare reconditioned, rebuilt and used Duratorq engines - supply & fit available nationwide.",
     "trustBadges": [
       "🔧 Supply & Fit Available",
       "✅ 12‑Month Warranty",
       "🚚 Nationwide Delivery",
       "👥 15+ Specialists"
     ],
-    "priceAnchor": "Jaguar X‑Type 2.0d Engines — from £800 to £3,500 · Codes: FMBA / FMBB / AJ20D4",
+    "priceAnchor": "Jaguar X‑Type 2.0d Engines - from £800 to £3,500 · Codes: FMBA / FMBB / AJ20D4",
     "registrationInput": {
       "flag": "🇬🇧 GB",
-      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "Get My Free 2.0d Engine Quotes Now →",
         "href": "#"
@@ -199,7 +199,7 @@
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK‑Wide Network"
   },
   "eraMap": {
-    "title": "The X‑TYPE 2.0d THROUGH TIME — Era Map",
+    "title": "The X‑TYPE 2.0d THROUGH TIME - Era Map",
     "columns": [
       "Generation",
       "Years",
@@ -213,9 +213,9 @@
         "generation": "X400",
         "years": "2001–2009",
         "engineCode": "FMBA / FMBB / AJ20D4 (Ford Duratorq ZSD‑420)",
-        "reliability": "★★★☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
         "reconCost": "£1,200–£3,000 [JAG‑QUOTE]",
-        "eraNote": "Ford‑sourced Puma diesel — robust but EGR and electrical gremlins are the main watchpoints; no DPF on 2.0d."
+        "eraNote": "Ford‑sourced Puma diesel - robust but EGR and electrical gremlins are the main watchpoints; no DPF on 2.0d."
       }
     ],
     "sourceNote": "",
@@ -243,7 +243,7 @@
         "supplyOnly": "£1,200–£2,500",
         "fittedIndie": "£1,800–£3,300",
         "warranty": "12 months",
-        "bestFor": "Most owners — best cost/warranty balance"
+        "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
@@ -256,7 +256,7 @@
         "engineType": "Main Dealer New",
         "supplyOnly": "N/A (NLA)",
         "fittedIndie": "N/A",
-        "warranty": "—",
+        "warranty": "-",
         "bestFor": "No longer available from Jaguar"
       }
     ],
@@ -279,7 +279,7 @@
     }
   },
   "repairBuyOrReplace": {
-    "h2": "Jaguar X‑Type 2.0d — Repair, Buy, or Replace?",
+    "h2": "Jaguar X‑Type 2.0d - Repair, Buy, or Replace?",
     "canItBeRepaired": {
       "title": "Can It Be Repaired?",
       "columns": [
@@ -330,19 +330,19 @@
     "buyingChecks": {
       "title": "Buying This X‑Type 2.0d? Check These First",
       "buyIf": [
-        "* Full service history with regular oil changes — the Duratorq is robust when maintained",
-        "* Evidence of EGR cleaning or replacement — this is the number one issue",
-        "* Good bodywork — rust is a bigger problem than the engine on many X‑Types",
+        "* Full service history with regular oil changes - the Duratorq is robust when maintained",
+        "* Evidence of EGR cleaning or replacement - this is the number one issue",
+        "* Good bodywork - rust is a bigger problem than the engine on many X‑Types",
         "* Low‑mileage example with documented history"
       ],
       "avoidIf": [
         "* EGR issues (hesitation, flat spots) with no diagnosis",
-        "* Engine cutting out — potential fuel pump failure",
-        "* Heavy rust on the rear suspension and subframe — this can be uneconomical to repair",
-        "* Poor service history — the X‑Type is unforgiving of neglect"
+        "* Engine cutting out - potential fuel pump failure",
+        "* Heavy rust on the rear suspension and subframe - this can be uneconomical to repair",
+        "* Poor service history - the X‑Type is unforgiving of neglect"
       ]
     },
-    "closingVerdict": "The X‑Type 2.0d's Duratorq engine is a robust Ford‑sourced unit that's more reliable than its reputation suggests — and far more reliable than the later Ingenium diesels. It's a 2000s diesel with 2000s diesel problems: EGR clogging, turbo actuator issues, and the occasional fuel pump failure. But the real enemy of the X‑Type isn't the engine — it's rust. Buy on bodywork, not on engine size.",
+    "closingVerdict": "The X‑Type 2.0d's Duratorq engine is a robust Ford‑sourced unit that's more reliable than its reputation suggests - and far more reliable than the later Ingenium diesels. It's a 2000s diesel with 2000s diesel problems: EGR clogging, turbo actuator issues, and the occasional fuel pump failure. But the real enemy of the X‑Type isn't the engine - it's rust. Buy on bodywork, not on engine size.",
     "cta": {
       "label": "",
       "href": "#"
@@ -351,14 +351,14 @@
   "buyingChecklist": {
     "intro": "Before you buy a used Jaguar X‑Type 2.0d (or before you commit to an engine replacement), check these:",
     "items": [
-      "* EGR System — Any hesitation or flat spots? EGR valve and downpipe are the number one issue",
-      "* Service History — Including which engine era (Duratorq is the only 2.0d engine — verify this before purchase)",
-      "* Turbo Health — Test acceleration; any lack of power or black smoke? Turbo actuator may be seized",
-      "* Fuel System — Any cutting out or hard starting? Fuel pump failure is a known issue",
-      "* Rust — Check rear suspension and subframe — rust is a regular problem on X‑Types",
-      "* Electrical System — Any intermittent faults? Electrical gremlins are common",
-      "* Engine Warning Light — Have codes been read? Any unresolved EGR, turbo, or fuel issues?",
-      "* MOT History — Check for emissions‑related failures; often point to EGR or turbo problems"
+      "* EGR System - Any hesitation or flat spots? EGR valve and downpipe are the number one issue",
+      "* Service History - Including which engine era (Duratorq is the only 2.0d engine - verify this before purchase)",
+      "* Turbo Health - Test acceleration; any lack of power or black smoke? Turbo actuator may be seized",
+      "* Fuel System - Any cutting out or hard starting? Fuel pump failure is a known issue",
+      "* Rust - Check rear suspension and subframe - rust is a regular problem on X‑Types",
+      "* Electrical System - Any intermittent faults? Electrical gremlins are common",
+      "* Engine Warning Light - Have codes been read? Any unresolved EGR, turbo, or fuel issues?",
+      "* MOT History - Check for emissions‑related failures; often point to EGR or turbo problems"
     ]
   },
   "engineCodes": {
@@ -374,7 +374,7 @@
         "engineCode": "FMBA / FMBB / AJ20D4",
         "years": "2001–2009",
         "power": "128–130 bhp / 330 Nm",
-        "enquiries": "— (pattern data)",
+        "enquiries": "- (pattern data)",
         "avgReconCost": "£1,200–£3,000 [JAG‑QUOTE]"
       }
     ],
@@ -417,7 +417,7 @@
     "items": [
       {
         "label": "Most Common Failure",
-        "value": "EGR valve clogging and downpipe splitting — approximately 50% of 2.0d enquiries [PATTERN DATA]"
+        "value": "EGR valve clogging and downpipe splitting - approximately 50% of 2.0d enquiries [PATTERN DATA]"
       },
       {
         "label": "Average Enquiry Mileage",
@@ -433,7 +433,7 @@
       },
       {
         "label": "Peak Enquiry Season",
-        "value": "Autumn/Winter — emissions test season exposes EGR issues [PATTERN DATA]"
+        "value": "Autumn/Winter - emissions test season exposes EGR issues [PATTERN DATA]"
       },
       {
         "label": "Regional Demand",
@@ -451,7 +451,7 @@
       {
         "id": 2,
         "question": "Is the Jaguar X‑Type 2.0d engine reliable?",
-        "answer": "The Duratorq is rated ★★★☆☆ — it's more reliable than its reputation suggests, but it has known issues: EGR valve clogging and downpipe splitting (the most common), turbo actuator seizure, fuel pump failure, and electrical faults. Regular maintenance is essential."
+        "answer": "The Duratorq is rated ★★★☆☆ - it's more reliable than its reputation suggests, but it has known issues: EGR valve clogging and downpipe splitting (the most common), turbo actuator seizure, fuel pump failure, and electrical faults. Regular maintenance is essential."
       },
       {
         "id": 3,
@@ -461,7 +461,7 @@
       {
         "id": 4,
         "question": "Is it worth replacing a Jaguar X‑Type 2.0d engine, or should I scrap the car?",
-        "answer": "Depends on vehicle value and body condition. Against an X‑Type worth £1,000–£3,000, a £1,800 recon is a significant investment. Assess the body for rust — the engine is the least of your worries. If the body is solid, replacement can be worthwhile."
+        "answer": "Depends on vehicle value and body condition. Against an X‑Type worth £1,000–£3,000, a £1,800 recon is a significant investment. Assess the body for rust - the engine is the least of your worries. If the body is solid, replacement can be worthwhile."
       },
       {
         "id": 5,
@@ -471,10 +471,10 @@
       {
         "id": 6,
         "question": "Can I repair the 2.0d's EGR system, or does it need a new engine?",
-        "answer": "Yes — EGR cleaning or replacement is a straightforward repair costing £100–£400. The EGR downpipe is also prone to splitting and can be replaced. Neither issue typically requires engine replacement. Regular cleaning is the best prevention."
+        "answer": "Yes - EGR cleaning or replacement is a straightforward repair costing £100–£400. The EGR downpipe is also prone to splitting and can be replaced. Neither issue typically requires engine replacement. Regular cleaning is the best prevention."
       }
     ],
-    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty - always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "",

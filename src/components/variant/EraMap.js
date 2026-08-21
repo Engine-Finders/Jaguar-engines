@@ -64,7 +64,7 @@ function DesktopRow({ row, isDark }) {
   );
 }
 
-// Mobile: a collapsible accordion card per generation — a spacious 3-column
+// Mobile: a collapsible accordion card per generation - a spacious 3-column
 // grid header (generation badge/years/thumbnail | engine code | reliability
 // + recon cost, each split from their trailing [TAG]), chevron pinned to the
 // card's top-right corner; era note revealed only when expanded.

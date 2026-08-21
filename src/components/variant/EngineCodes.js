@@ -45,7 +45,7 @@ function DesktopRow({ row, isDark }) {
 }
 
 // Mobile: a tab switcher (one engine code selected at a time), matching the
-// reference — scrollable pills up top, a single two-column detail card
+// reference - scrollable pills up top, a single two-column detail card
 // (engine visual left, key-value rows right) below.
 function DetailCard({ row }) {
   return (
