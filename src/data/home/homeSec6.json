@@ -1,27 +1,19 @@
 {
   "subHeadline": "The question every Jaguar owner eventually faces, answered honestly rather than sold around. We tell you when to repair, when to replace, and when to scrap - based on real UK data, not estimates.",
-  "headerImage": {
-    "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=900&q=80",
-    "alt": "Jaguar ownership economics"
-  },
   "matrix": {
     "columns": [
-      "MODEL & ENGINE",
-      "TYPICAL VEHICLE VALUE",
-      "REPLACEMENT COST (RECON)",
-      "VERDICT"
+      { "label": "MODEL & ENGINE", "icon": "vehicle" },
+      { "label": "TYPICAL VEHICLE VALUE", "icon": "pound" },
+      { "label": "REPLACEMENT COST", "icon": "repair" },
+      { "label": "VERDICT", "icon": "check" }
     ],
     "rows": [
       {
         "model": "XF X250 (AJ126)",
-        "image": {
-          "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=200&q=80",
-          "alt": "XF X250"
-        },
+        "image": { "src": "/home-image/right.webp", "alt": "XF X250" },
         "vehicleValue": "£4,000–£12,000 [THIRD-PARTY]",
         "replacementCost": "£4,500–£7,500 [EM-QUOTE]",
         "verdict": {
-          "icon": "⚠️",
           "text": "Watch - sub-£7k examples approach the threshold",
           "type": "watch"
         },
@@ -29,14 +21,10 @@
       },
       {
         "model": "X-Type X400",
-        "image": {
-          "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=200&q=80",
-          "alt": "X-Type X400"
-        },
+        "image": { "src": "/home-image/right.webp", "alt": "X-Type X400" },
         "vehicleValue": "£1,500–£5,000 [THIRD-PARTY]",
         "replacementCost": "£2,500–£5,800 [EM-QUOTE]",
         "verdict": {
-          "icon": "🔴",
           "text": "Scrap threshold - recon cost frequently exceeds car value",
           "type": "scrap"
         },
@@ -44,14 +32,10 @@
       },
       {
         "model": "F-Pace X761",
-        "image": {
-          "src": "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=200&q=80",
-          "alt": "F-Pace X761"
-        },
+        "image": { "src": "/home-image/right.webp", "alt": "F-Pace X761" },
         "vehicleValue": "£12,000–£38,000 [THIRD-PARTY]",
         "replacementCost": "£3,000–£5,800 [EM-QUOTE]",
         "verdict": {
-          "icon": "✅",
           "text": "Safe - replacement viable across all engine variants",
           "type": "safe"
         },
@@ -59,14 +43,10 @@
       },
       {
         "model": "XJ X351 (<a href='https://jaguarengines.uk/engine/aj133'>AJ133</a>)",
-        "image": {
-          "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=200&q=80",
-          "alt": "XJ X351"
-        },
+        "image": { "src": "/home-image/right.webp", "alt": "XJ X351" },
         "vehicleValue": "£8,000–£25,000 [THIRD-PARTY]",
         "replacementCost": "£4,500–£9,000 [EM-QUOTE]",
         "verdict": {
-          "icon": "✅",
           "text": "Safe - flagship values absorb even the upper recon cost",
           "type": "safe"
         },
@@ -74,14 +54,10 @@
       },
       {
         "model": "XF X260",
-        "image": {
-          "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=200&q=80",
-          "alt": "XF X260"
-        },
+        "image": { "src": "/home-image/right.webp", "alt": "XF X260" },
         "vehicleValue": "£8,000–£25,000 [THIRD-PARTY]",
         "replacementCost": "£3,000–£5,800 [EM-QUOTE]",
         "verdict": {
-          "icon": "✅",
           "text": "Safe - well within value even at the upper recon cost",
           "type": "safe"
         },
@@ -89,14 +65,10 @@
       },
       {
         "model": "S-Type X200",
-        "image": {
-          "src": "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=200&q=80",
-          "alt": "S-Type X200"
-        },
+        "image": { "src": "/home-image/right.webp", "alt": "S-Type X200" },
         "vehicleValue": "£1,500–£5,500 [THIRD-PARTY]",
         "replacementCost": "£4,500–£7,500 [EM-QUOTE]",
         "verdict": {
-          "icon": "🔴",
           "text": "Scrap threshold - recon cost seldom justified",
           "type": "scrap"
         },
@@ -106,40 +78,49 @@
   },
   "ruleOfThumb": {
     "title": "The Rule of Thumb",
-    "percent": "60%",
-    "percentLabel": "JAGUAR THRESHOLD",
-    "text": "If reconditioned engine cost runs at 60% or more of what your car is actually worth on today's market, get a scrap valuation alongside any repair quote - don't decide on repair cost alone."
+    "lead": "If reconditioned engine cost runs at",
+    "highlight": "60% or more",
+    "body": "of what your car is actually worth on today's market, get a scrap valuation alongside any repair quote — don't decide on repair cost alone."
   },
   "deeperLinks": [
     {
-      "id": 1,
-      "label": "Is It Worth Replacing an XF Engine? →",
+      "id": "01",
+      "label": "Is It Worth Replacing an XF Engine?",
       "purpose": "Full breakdown of XF ownership economics",
+      "icon": "engine",
       "href": "#"
     },
     {
-      "id": 2,
-      "label": "Is an AJ126 Failure a Write-Off? →",
+      "id": "02",
+      "label": "Is an AJ126 Failure a Write-Off?",
       "purpose": "When repair makes sense vs when to walk away",
+      "icon": "flame",
       "href": "#"
     },
     {
-      "id": 3,
-      "label": "When Should You Scrap a Jaguar? →",
+      "id": "03",
+      "label": "When Should You Scrap a Jaguar?",
       "purpose": "The decision framework for older vehicles",
+      "icon": "scales",
       "href": "#"
     },
     {
-      "id": 4,
-      "label": "Most Expensive Jaguar Repairs →",
+      "id": "04",
+      "label": "Most Expensive Jaguar Repairs",
       "purpose": "The top 5 repairs and what they cost",
+      "icon": "pound",
       "href": "#"
     },
     {
-      "id": 5,
-      "label": "Cheapest Jaguars to Own →",
+      "id": "05",
+      "label": "Cheapest Jaguars to Own",
       "purpose": "Which models offer the best value for money",
+      "icon": "value",
       "href": "#"
     }
-  ]
+  ],
+  "dataNote": {
+    "label": "Data Note:",
+    "text": "Vehicle value bands [THIRD-PARTY] reflect typical UK private-sale and dealer asking ranges. Replacement costs [EM-QUOTE] are Engine Finders reconditioned-engine quote bands. Verdicts compare recon cost against vehicle value using the 60% rule of thumb."
+  }
 }

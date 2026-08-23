@@ -26,11 +26,24 @@ import homeSec11Data from "@/data/home/homeSec11.json";
 import homeSec12Data from "@/data/home/homeSec12.json";
 import homeSec13Data from "@/data/home/homeSec13.json";
 import homeSec14Data from "@/data/home/homeSec14.json";
+import homeSchema from "@/data/home/homeSchema.json";
 
 export function generateMetadata() {
   return {
+    title: "Jaguar Engines UK — The Complete Ownership Guide",
+    description:
+      "The UK's Most Trusted Jaguar Ownership Guide. Reliability rankings, real failure data, honest repair-vs-replace economics for every Jaguar model. Powered by 1,700+ real UK enquiries.",
     alternates: {
       canonical: "https://jaguarengines.uk/",
+    },
+    openGraph: {
+      title: "Jaguar Engines UK — The Complete Ownership Guide",
+      description:
+        "The UK's Most Trusted Jaguar Ownership Guide. Reliability rankings, real failure data, honest repair-vs-replace economics for every Jaguar model. Powered by 1,700+ real UK enquiries.",
+      url: "https://jaguarengines.uk/",
+      siteName: "JaguarEngines.uk",
+      locale: "en_GB",
+      type: "website",
     },
   };
 }
@@ -38,13 +51,17 @@ export function generateMetadata() {
 export default function Home() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeSchema) }}
+      />
       <HomeSec1 data={homeSec1Data} />
       <HomeSec2 data={homeSec2Data} />
       <HomeSec3 data={homeSec3Data} />
       <HomeSec4 data={homeSec4Data} />
       <HomeSec5 data={homeSec5Data} />
       <HomeSec6 data={homeSec6Data} />
-      <HomeSec7 data={homeSec7Data} />
+      {/* <HomeSec7 data={homeSec7Data} /> */}
       <HomeSec8 data={homeSec8Data} />
       <HomeSec9 data={homeSec9Data} />
       <HomeSec10 data={homeSec10Data} />

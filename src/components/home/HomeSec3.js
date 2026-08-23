@@ -473,26 +473,26 @@ function BottomBar({ cta, isDark, onStart }) {
 
   return (
     <div
-      className={`mt-5 flex flex-col gap-3 rounded-xl border px-4 py-4 md:mt-6 md:flex-row md:items-center md:justify-between md:px-5 ${
+      className={`mt-4 flex flex-col gap-2.5 rounded-xl border px-3.5 py-3 md:mt-5 md:flex-row md:items-center md:justify-between md:gap-4 md:px-4 md:py-2.5 ${
         isDark
           ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
           : "border-[var(--color-border)] bg-[var(--color-page-soft)]"
       }`}
     >
-      <div className="flex items-start gap-3">
+      <div className="flex items-center gap-2.5 md:gap-3">
         <span
-          className={`mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full border ${
+          className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full border md:h-9 md:w-9 ${
             isDark ? "border-white/20 text-white" : "border-[var(--color-chrome)] text-[var(--color-text)]"
           }`}
         >
           <Icon name="shield" className="h-4 w-4" />
         </span>
-        <div>
-          <p className={`text-[0.88rem] font-semibold leading-[1.35] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+        <div className="min-w-0">
+          <p className={`text-[0.84rem] font-semibold leading-[1.3] md:text-[0.86rem] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
             {cta.title}
           </p>
           {cta.text ? (
-            <p className={`mt-0.5 text-[0.78rem] ${isDark ? "text-white/70" : "text-[var(--color-text-muted)]"}`}>
+            <p className={`mt-0.5 text-[0.74rem] leading-[1.3] ${isDark ? "text-white/70" : "text-[var(--color-text-muted)]"}`}>
               {cta.text}
             </p>
           ) : null}
@@ -501,7 +501,7 @@ function BottomBar({ cta, isDark, onStart }) {
       <button
         type="button"
         onClick={onStart}
-        className="btn-cta inline-flex shrink-0 items-center justify-center gap-2 rounded-md px-5 py-3 text-[0.82rem] font-bold"
+        className="btn-cta inline-flex shrink-0 items-center justify-center gap-2 rounded-md px-4 py-2.5 text-[0.8rem] font-bold md:px-5"
       >
         <span>{(cta.buttonLabel || "START DIAGNOSIS").replace(/\s*→\s*$/, "")}</span>
         <ArrowIcon className="h-4 w-4" />
@@ -515,20 +515,20 @@ function IPaceNote({ note, isDark }) {
 
   return (
     <div
-      className={`mt-4 flex items-start gap-3 rounded-xl border px-4 py-3.5 ${
+      className={`mt-3 flex items-center gap-2.5 rounded-xl border px-3.5 py-2.5 md:mt-3.5 md:gap-3 md:px-4 md:py-2.5 ${
         isDark
           ? "border-white/12 bg-[rgba(18,18,18,0.55)]"
           : "border-[var(--color-border)] bg-[var(--color-surface)]"
       }`}
     >
       <span
-        className={`mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full border ${
+        className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full border md:h-9 md:w-9 ${
           isDark ? "border-white/20 text-white/85" : "border-[var(--color-chrome)] text-[var(--color-text)]"
         }`}
       >
         <Icon name="bolt" className="h-4 w-4" />
       </span>
-      <p className={`text-[0.82rem] leading-[1.4] ${isDark ? "text-white/80" : "text-[var(--color-text-muted)]"}`}>
+      <p className={`min-w-0 text-[0.78rem] leading-[1.35] md:text-[0.8rem] ${isDark ? "text-white/80" : "text-[var(--color-text-muted)]"}`}>
         <strong className={isDark ? "text-white" : "text-[var(--color-text)]"}>{note.label}</strong> {note.text}
       </p>
     </div>

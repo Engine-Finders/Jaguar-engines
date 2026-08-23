@@ -1,102 +1,76 @@
 {
-  "subHeadline": "Drawn from real UK enquiries, not estimates. This is the data competitors can't replicate - 1,700+ real enquiries, 5+ engine codes tracked, and live market insights updated monthly.",
-  "headerImage": {
-    "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=900&q=80",
-    "alt": "Jaguar market intelligence"
-  },
-  "stats": [
-    { "icon": "👥", "label": "1,700+ Real UK Enquiries in 2025" },
-    { "icon": "⚙️", "label": "5+ Engine Codes Tracked" },
-    { "icon": "🔄", "label": "Updated Monthly" }
-  ],
+  "subHeadline": "Drawn from real UK enquiries, not estimates. This is the data competitors can't replicate — 1,700+ real enquiries, 5+ engine codes tracked, and live market insights updated monthly.",
   "engines": {
-    "title": "Most-Enquired Jaguar Engines (2025)",
-    "icon": "⚙️",
+    "title": "Most-Enquired Engines (2025)",
+    "icon": "engine",
     "columns": ["RANK", "ENGINE CODE", "LABEL", "ENQUIRIES"],
     "rows": [
-      { "rank": 1, "code": "276DT", "label": "2.7L TDV6 (shared w/ Land Rover)", "enquiries": "700 [EM-VERIFIED]" },
-      { "rank": 2, "code": "AJ200D / <a href='https://jaguarengines.uk/engine/ajd4-204dtd'>204DTD</a>", "label": "Ingenium Diesel", "enquiries": "590 [EM-VERIFIED]" },
-      { "rank": 3, "code": "AJ126", "label": "3.0 V6 Supercharged", "enquiries": "560 [EM-VERIFIED]" },
-      { "rank": 4, "code": "AJ200P / 204PT", "label": "Ingenium Petrol", "enquiries": "500 [EM-VERIFIED]" },
-      { "rank": 5, "code": "AJ133 / 508PN", "label": "5.0 V8", "enquiries": "330 [EM-VERIFIED]" }
-    ]
+      { "rank": 1, "code": "AJ200D / <a href='https://jaguarengines.uk/engine/ajd4-204dtd'>204DTD</a>", "label": "Ingenium Diesel", "enquiries": "590", "tag": "EM-VERIFIED" },
+      { "rank": 2, "code": "AJ126", "label": "3.0 V6 Supercharged", "enquiries": "560", "tag": "EM-VERIFIED" },
+      { "rank": 3, "code": "276DT", "label": "2.7L TDV6 (shared w/ Land Rover)", "enquiries": "700", "tag": "EM-VERIFIED" },
+      { "rank": 4, "code": "AJ200P / 204PT", "label": "Ingenium Petrol", "enquiries": "500", "tag": "EM-VERIFIED" },
+      { "rank": 5, "code": "AJ133 / 508PN", "label": "5.0 V8", "enquiries": "330", "tag": "EM-VERIFIED" }
+    ],
+    "footer": { "label": "View full engine insights", "href": "#" }
   },
   "models": {
-    "title": "Most-Enquired Jaguar Models (2025)",
-    "icon": "🚗",
+    "title": "Most-Enquired Models (2025)",
+    "icon": "vehicle",
     "columns": ["RANK", "MODEL", "ENQUIRIES"],
     "rows": [
-      { "rank": 1, "model": "XF X260", "enquiries": "276 [EM-VERIFIED]" },
-      { "rank": 2, "model": "XE X760", "enquiries": "260 [EM-VERIFIED]" },
-      { "rank": 3, "model": "F-Pace X761", "enquiries": "220 [EM-VERIFIED]" },
-      { "rank": 4, "model": "XF X250", "enquiries": "178 [EM-VERIFIED]" },
-      { "rank": 5, "model": "XJ X351", "enquiries": "151 [EM-VERIFIED]" },
-      { "rank": 6, "model": "E-Pace X540", "enquiries": "140 [EM-VERIFIED]" }
-    ]
+      { "rank": 1, "model": "XF X260", "enquiries": "276", "tag": "EM-VERIFIED" },
+      { "rank": 2, "model": "XE X760", "enquiries": "260", "tag": "EM-VERIFIED" },
+      { "rank": 3, "model": "F-Pace X761", "enquiries": "220", "tag": "EM-VERIFIED" },
+      { "rank": 4, "model": "XF X250", "enquiries": "178", "tag": "EM-VERIFIED" },
+      { "rank": 5, "model": "XJ X351", "enquiries": "151", "tag": "EM-VERIFIED" },
+      { "rank": 6, "model": "E-Pace X540", "enquiries": "140", "tag": "EM-VERIFIED" }
+    ],
+    "footer": { "label": "View full model insights", "href": "#" }
   },
   "replacementCosts": {
-    "title": "Replacement Cost Index (Reconditioned, Supply-Only)",
-    "icon": "£",
+    "title": "Replacement Cost Index",
+    "subtitle": "Reconditioned, Supply-Only",
+    "icon": "pound",
     "columns": ["ENGINE CODE", "COST RANGE"],
     "rows": [
-      { "code": "AJ200D / 204DTD", "cost": "£3,500–£5,800 [EM-QUOTE]" },
-      { "code": "AJ126", "cost": "£4,500–£7,500 [EM-QUOTE]" },
-      { "code": "276DT", "cost": "£5,000–£7,500 [EM-QUOTE]" },
-      { "code": "AJ200P / 204PT", "cost": "£3,000–£5,000 [EM-QUOTE]" },
-      { "code": "AJ133 / 508PN", "cost": "£5,500–£9,000 [EM-QUOTE]" }
-    ]
+      { "code": "AJ200D / 204DTD", "cost": "£3,500–£5,800" },
+      { "code": "AJ126", "cost": "£4,500–£7,500" },
+      { "code": "276DT", "cost": "£5,000–£7,500" },
+      { "code": "AJ200P / 204PT", "cost": "£3,000–£5,000" },
+      { "code": "AJ133 / 508PN", "cost": "£5,500–£9,000" }
+    ],
+    "footer": { "label": "View cost methodology", "href": "#" }
   },
   "failures": {
     "title": "Highest-Risk Failures",
-    "icon": "⚠️",
-    "columns": ["RANK", "FAILURE", "RISK LEVEL"],
+    "icon": "warning",
+    "columns": ["FAILURE", "RISK LEVEL", "NOTE"],
     "rows": [
       {
-        "rank": 1,
         "failure": "276DT Oil Pump Housing Failure",
-        "risk": { "icon": "🔴", "label": "Catastrophic", "type": "catastrophic" }
+        "icon": "engine",
+        "risk": { "label": "Catastrophic", "type": "catastrophic" },
+        "note": "Often kills the engine outright"
       },
       {
-        "rank": 2,
         "failure": "<a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> Pre-2013 Timing Chain Tensioner Wear",
-        "risk": { "icon": "🟡", "label": "Monitor", "type": "monitor" }
+        "icon": "chain",
+        "risk": { "label": "Monitor", "type": "monitor" },
+        "note": "Revised design from 2013 onward much improved"
       },
       {
-        "rank": 3,
         "failure": "AJ200D Pre-2019 Timing Chain Tensioner Wear",
-        "risk": { "icon": "🟡", "label": "Monitor", "type": "monitor" }
+        "icon": "chain",
+        "risk": { "label": "Monitor", "type": "monitor" },
+        "note": "Same Ingenium diesel issue shared with Land Rover"
       }
-    ]
-  },
-  "regionalDemand": {
-    "title": "Regional Demand Breakdown (2025)",
-    "icon": "📍",
-    "rows": [
-      { "region": "London & South East", "percentage": "32%" },
-      { "region": "North West", "percentage": "18%" },
-      { "region": "West Midlands", "percentage": "15%" },
-      { "region": "Yorkshire & Humber", "percentage": "12%" },
-      { "region": "South West", "percentage": "10%" },
-      { "region": "Scotland", "percentage": "8%" },
-      { "region": "East of England", "percentage": "5%" }
-    ]
-  },
-  "regionalDemand": {
-    "title": "Regional Demand Breakdown (2025)",
-    "icon": "📍",
-    "rows": [
-      { "region": "London & South East", "percentage": "32%" },
-      { "region": "North West", "percentage": "18%" },
-      { "region": "West Midlands", "percentage": "15%" },
-      { "region": "Yorkshire & Humber", "percentage": "12%" },
-      { "region": "South West", "percentage": "10%" },
-      { "region": "Scotland", "percentage": "8%" },
-      { "region": "East of England", "percentage": "5%" }
-    ]
+    ],
+    "footer": { "label": "See all common issues", "href": "#" }
   },
   "liveFeed": {
     "title": "Live Enquiry Feed",
-    "icon": "📡",
+    "icon": "live",
+    "liveBadge": "Live - Updated Monthly",
     "columns": ["VEHICLE", "LOCATION", "ISSUE", "TIMESTAMP"],
     "rows": [
       {
@@ -123,7 +97,10 @@
         "issue": "Water pump replacement quote",
         "timestamp": "11 hours ago"
       }
-    ],
-    "footer": "Updated monthly from JaguarEngines.uk CRM data"
+    ]
+  },
+  "dataNote": {
+    "label": "Data Note:",
+    "text": "Live feed updated monthly from EM_Proprietary_Data_2025.txt. All enquiry volumes are [EM-VERIFIED]."
   }
 }

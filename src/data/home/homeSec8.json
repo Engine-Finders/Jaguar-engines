@@ -1,101 +1,70 @@
 {
-  "subHeadline": "Deep, permanent reference hubs for the engines and systems Jaguar owners research most - not blog posts, not one-off articles. Every guide is built on real UK enquiry data and Jaguar-specific expertise.",
+  "subHeadline": "Deep, permanent reference hubs for the engines and systems Jaguar owners research most — not blog posts, not one-off articles. Every guide is built on real UK enquiry data and Jaguar-specific expertise.",
   "headerImage": {
-    "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=900&q=80",
-    "alt": "Jaguar engine knowledge"
+    "src": "/home-image/sec2-bg.webp",
+    "alt": "Jaguar knowledge centres"
   },
   "centres": [
     {
-      "id": 1,
+      "id": "01",
       "title": "AJ-V8 Knowledge Centre",
-      "icon": "🏆",
-      "description": "Every displacement and state of tune, 4.2 to 5.0 SC - the complete AJ-V8/<a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> ownership guide.",
-      "image": {
-        "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=400&q=80",
-        "alt": "AJ-V8 Knowledge Centre"
-      },
-      "link": { "label": "Explore →", "href": "#" }
+      "icon": "trophy",
+      "description": "Every displacement and state of tune, 4.2 to 5.0 SC — the complete AJ-V8/<a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> ownership guide.",
+      "link": { "label": "Explore", "href": "#" }
     },
     {
-      "id": 2,
+      "id": "02",
       "title": "AJD-V6 Knowledge Centre",
-      "icon": "🔧",
-      "description": "The 2.7 and 3.0 TDV6 diesel's full ownership profile - the same engine family as Land Rover's 276DT/<a href='https://jaguarengines.uk/engine/306dt-306ps'>306DT</a>.",
-      "image": {
-        "src": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=400&q=80",
-        "alt": "AJD-V6 Knowledge Centre"
-      },
-      "link": { "label": "Explore →", "href": "#" }
+      "icon": "repair",
+      "description": "The 2.7 and 3.0 TDV6 diesel's full ownership profile — the same engine family as Land Rover's 276DT/<a href='https://jaguarengines.uk/engine/306dt-306ps'>306DT</a>.",
+      "link": { "label": "Explore", "href": "#" }
     },
     {
-      "id": 3,
+      "id": "03",
       "title": "Ingenium Knowledge Centre",
-      "icon": "⛓️",
+      "icon": "ingenium",
       "description": "Petrol vs diesel reliability, pre- and post-2019 changes, and what to look for when buying.",
-      "image": {
-        "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=400&q=80",
-        "alt": "Ingenium Knowledge Centre"
-      },
-      "link": { "label": "Explore →", "href": "#" }
+      "link": { "label": "Explore", "href": "#" }
     },
     {
-      "id": 4,
+      "id": "04",
       "title": "AJ126 V6 Knowledge Centre",
-      "icon": "⚙️",
+      "icon": "engine",
       "description": "The supercharged 3.0 V6's full reliability record, cooling-system upgrades, and running costs.",
-      "image": {
-        "src": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=400&q=80",
-        "alt": "AJ126 V6 Knowledge Centre"
-      },
-      "link": { "label": "Explore →", "href": "#" }
+      "link": { "label": "Explore", "href": "#" }
     },
     {
-      "id": 5,
+      "id": "05",
       "title": "V12 Heritage Knowledge Centre",
-      "icon": "👑",
-      "description": "The legendary 5.3/6.0 HE V12 - ownership, rebuilds, and what collectors need to know.",
-      "image": {
-        "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=400&q=80",
-        "alt": "V12 Heritage Knowledge Centre"
-      },
-      "link": { "label": "Explore →", "href": "#" }
+      "icon": "crown",
+      "description": "The legendary 5.3/6.0 HE V12 — ownership, rebuilds, and what collectors need to know.",
+      "link": { "label": "Explore", "href": "#" }
     },
     {
-      "id": 6,
+      "id": "06",
       "title": "Air Suspension Knowledge Centre",
-      "icon": "🚙",
+      "icon": "suspension",
       "description": "Common faults, compressor failure, replacement costs, and how to diagnose air-suspension issues.",
-      "image": {
-        "src": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=400&q=80",
-        "alt": "Air Suspension Knowledge Centre"
-      },
-      "link": { "label": "Explore →", "href": "#" }
+      "link": { "label": "Explore", "href": "#" }
     },
     {
-      "id": 7,
+      "id": "07",
       "title": "ZF Gearbox Problems",
-      "icon": "🔄",
-      "description": "The 8-speed automatic's known issues across the JLR range - mechatronic, torque converter, and more.",
-      "image": {
-        "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=400&q=80",
-        "alt": "ZF Gearbox Problems"
-      },
-      "link": { "label": "Explore →", "href": "#" }
+      "icon": "refresh",
+      "description": "The 8-speed automatic's known issues across the JLR range — mechatronic, torque converter, and more.",
+      "link": { "label": "Explore", "href": "#" }
     },
     {
-      "id": 8,
+      "id": "08",
       "title": "XK Legacy Engine Knowledge Centre",
-      "icon": "🐆",
-      "description": "The straight-six that powered every Jaguar saloon from the Mark 2 to the XJS - heritage ownership guide.",
-      "image": {
-        "src": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=400&q=80",
-        "alt": "XK Legacy Engine Knowledge Centre"
-      },
-      "link": { "label": "Explore →", "href": "#" }
+      "icon": "knowledge",
+      "description": "The straight-six that powered every Jaguar saloon from the Mark 2 to the XJS — heritage ownership guide.",
+      "link": { "label": "Explore", "href": "#" }
     }
   ],
-  "footer": {
-    "title": "100% Data-Verified. Built for Jaguar Owners.",
-    "text": "Every knowledge centre is built on real UK enquiry data and Jaguar-specific expertise."
+  "dataNote": {
+    "label": "Data Note:",
+    "text": "Ingenium, AJD-V6, AJ126 and AJ-V8 Knowledge Centres are backed by [EM-VERIFIED] enquiry data. Air Suspension, ZF Gearbox, V12 Heritage and XK Legacy content is built on documented patterns and specialist interviews.",
+    "badge": "EM-VERIFIED"
   }
 }

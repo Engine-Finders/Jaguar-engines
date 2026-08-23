@@ -5,76 +5,248 @@ import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
 
-const iconPaths = {
-  chart: <path d="M4 19V9m5 10V5m5 14v-7m5 7H3" />,
-  shield: <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm-2 9 1.5 1.5L15 10" />,
-  wrench: <path d="m14.7 6.3 3-3a4 4 0 0 1 0 5.7l-1.4 1.4-2.7-2.7L7 14.3V17H4.3l6.6-6.6-2.7-2.7 1.4-1.4a4 4 0 0 1 5.1 0Z" />,
-  trophy: <path d="M8 4h8v4a4 4 0 0 1-8 0V4Zm0 2H4v2a3 3 0 0 0 4 2.8M16 6h4v2a3 3 0 0 1-4 2.8M12 12v5m-3 3h6m-7 0h8" />,
-};
+const ICON_LG = "h-12 w-12 md:h-14 md:w-14";
+const ICON_MD = "h-8 w-8 md:h-9 md:w-9";
 
 function cleanText(value = "") {
-  return value
-    .replaceAll("â€”", "-")
-    .replaceAll("ðŸ“Š", "")
-    .replaceAll("ðŸ’š", "")
-    .replaceAll("ðŸ”§", "")
-    .replaceAll("ðŸ†", "")
+  return String(value || "")
+    .replaceAll("Â£", "£")
+    .replaceAll("â€“", "–")
+    .replaceAll("â€”", "—")
+    .replaceAll("✅", "")
     .trim();
 }
 
-function Icon({ name, className = "h-5 w-5", strokeWidth = 2 }) {
+function formatAnswer(value = "") {
+  return cleanText(value).replace(
+    /<span class=["']safe-verdict["']>([\s\S]*?)<\/span>/gi,
+    '<span class="inline-flex items-center gap-1 font-semibold text-[#1c8b3d]"><svg aria-hidden="true" viewBox="0 0 24 24" class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg>$1</span>'
+  );
+}
+
+function ChevronIcon({ className = "h-5 w-5" }) {
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
-      {iconPaths[name] || iconPaths.chart}
+    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="m6 9 6 6 6-6" />
     </svg>
   );
 }
 
-function signalIcon(title) {
-  const lower = title.toLowerCase();
-  if (lower.includes("real data")) return "real-data";
-  if (lower.includes("not to repair")) return "repair-vs-replace";
-  if (lower.includes("specialists")) return "vetted-specialist";
-  return "genuine-failure-data";
+function TrustCard({ item, isDark }) {
+  return (
+    <article
+      className={`relative flex h-full flex-col overflow-hidden rounded-xl border px-3 pb-3.5 pt-4 md:px-3.5 md:pb-4 md:pt-4 ${
+        isDark
+          ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
+          : "border-[#e8e8e6] bg-white shadow-[0_8px_22px_rgba(16,18,16,0.05)]"
+      }`}
+    >
+      <span
+        className={`absolute left-0 top-0 flex h-6 min-w-6 items-center justify-center rounded-br-md px-1.5 text-[0.72rem] font-bold ${
+          isDark ? "bg-[var(--color-chrome)] text-[var(--color-page)]" : "bg-black text-white"
+        }`}
+      >
+        {item.id}
+      </span>
+
+      <div
+        className={`mx-auto mt-1 flex h-14 w-14 items-center justify-center rounded-full md:h-16 md:w-16 ${
+          isDark ? "bg-white/10" : "bg-[#ececeb]"
+        }`}
+      >
+        <HomeIcon name={item.icon} isDark={isDark} className={ICON_LG} />
+      </div>
+
+      <h3
+        className={`mt-2.5 text-center text-[0.9rem] font-bold leading-tight md:mt-3 md:text-[0.95rem] ${
+          isDark ? "text-white" : "text-black"
+        }`}
+      >
+        {item.title}
+      </h3>
+      <p
+        className={`mt-1.5 text-center text-[0.76rem] leading-[1.4] md:text-[0.78rem] ${
+          isDark ? "text-white/70" : "text-[var(--color-text-muted)]"
+        }`}
+        dangerouslySetInnerHTML={{ __html: cleanText(item.description) }}
+      />
+    </article>
+  );
+}
+
+function FaqItem({ item, isDark }) {
+  return (
+    <details
+      className={`group border-b last:border-b-0 ${
+        isDark ? "border-[var(--color-border)]" : "border-[#ececeb]"
+      }`}
+    >
+      <summary
+        className={`flex cursor-pointer list-none items-start gap-2.5 px-3.5 py-3 marker:hidden md:gap-3 md:px-4 md:py-3 ${
+          isDark ? "text-white" : "text-black"
+        }`}
+      >
+        <span
+          className={`mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-[0.72rem] font-bold md:h-7 md:w-7 ${
+            isDark ? "bg-[var(--color-chrome)] text-[var(--color-page)]" : "bg-black text-white"
+          }`}
+        >
+          {item.id}
+        </span>
+        <span className="min-w-0 flex-1 pt-0.5 text-[0.84rem] font-semibold leading-snug md:text-[0.9rem]">
+          {item.question}
+        </span>
+        <ChevronIcon
+          className={`mt-0.5 h-4 w-4 shrink-0 transition-transform group-open:rotate-180 md:h-5 md:w-5 ${
+            isDark ? "text-white/55" : "text-[#8a8a88]"
+          }`}
+        />
+      </summary>
+      <div className="px-3.5 pb-3 pl-[2.75rem] md:px-4 md:pb-3.5 md:pl-[3.1rem]">
+        <p
+          className={`text-[0.76rem] leading-[1.45] md:text-[0.8rem] ${
+            isDark ? "text-white/70" : "text-[var(--color-text-muted)]"
+          }`}
+          dangerouslySetInnerHTML={{ __html: formatAnswer(item.answer) }}
+        />
+      </div>
+    </details>
+  );
+}
+
+function FaqBlock({ faq, isDark }) {
+  if (!faq?.items?.length) return null;
+
+  const left = faq.items.slice(0, 3);
+  const right = faq.items.slice(3, 6);
+
+  return (
+    <div
+      className={`mt-4 overflow-hidden rounded-xl border md:mt-5 ${
+        isDark
+          ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
+          : "border-[#e8e8e6] bg-white shadow-[0_8px_24px_rgba(16,18,16,0.05)]"
+      }`}
+    >
+      <div className={`border-b px-4 py-3 md:px-5 md:py-3.5 ${isDark ? "border-[var(--color-border)]" : "border-[#ececeb]"}`}>
+        <h3 className={`text-[1.05rem] font-bold md:text-[1.15rem] ${isDark ? "text-white" : "text-black"}`}>
+          {faq.title}
+        </h3>
+      </div>
+
+      <div className="grid md:grid-cols-2">
+        <div className={isDark ? "md:border-r md:border-[var(--color-border)]" : "md:border-r md:border-[#ececeb]"}>
+          {left.map((item) => (
+            <FaqItem key={item.id} item={item} isDark={isDark} />
+          ))}
+        </div>
+        <div>
+          {right.map((item) => (
+            <FaqItem key={item.id} item={item} isDark={isDark} />
+          ))}
+        </div>
+      </div>
+
+      {faq.dataNote ? (
+        <div
+          className={`flex flex-col gap-2 border-t px-3 py-2 sm:flex-row sm:items-center sm:justify-between md:px-3.5 md:py-2 ${
+            isDark ? "border-[var(--color-border)] bg-white/[0.03]" : "border-[#ececeb] bg-[#f3f3f2]"
+          }`}
+        >
+          <div className="flex items-center gap-2 md:gap-2.5">
+            <span className="flex h-8 w-8 shrink-0 items-center justify-center md:h-9 md:w-9">
+              <HomeIcon name="info" isDark={isDark} className={ICON_MD} />
+            </span>
+            <p className={`min-w-0 text-[0.7rem] leading-[1.35] md:text-[0.74rem] ${isDark ? "text-white/70" : "text-[var(--color-text-muted)]"}`}>
+              <strong className={isDark ? "text-white" : "text-black"}>{faq.dataNote.label}</strong>{" "}
+              {cleanText(faq.dataNote.text)}
+            </p>
+          </div>
+          {faq.dataNote.badge ? (
+            <span
+              className={`inline-flex shrink-0 self-start rounded-full border px-2.5 py-0.5 text-[0.58rem] font-bold uppercase tracking-[0.06em] sm:self-center ${
+                isDark
+                  ? "border-white/20 text-white/75"
+                  : "border-[#d0d0ce] text-[var(--color-text-muted)]"
+              }`}
+            >
+              {faq.dataNote.badge}
+            </span>
+          ) : null}
+        </div>
+      ) : null}
+    </div>
+  );
 }
 
 export default function HomeSec12({ data }) {
   const { theme } = useTheme();
   const isDark = theme === "dark";
+  const headerImage = data.headerImage || {
+    src: "/home-image/sec2-bg.webp",
+    alt: "Jaguar trust",
+  };
+  const signals = data.signals || [];
 
   return (
-    <section className={`relative overflow-hidden px-3 py-7 md:px-6 md:py-8 ${isDark ? "bg-[#02070b]" : "bg-white"}`}>
-      <div className="absolute inset-x-0 top-0 h-[320px] md:h-[260px]">
-        <Image src={data.headerImage.src} alt={data.headerImage.alt} fill className="object-cover object-[72%_center]" sizes="100vw" />
-        <div className={isDark ? "absolute inset-0 bg-[linear-gradient(90deg,#02070b_0%,rgba(2,7,11,0.92)_42%,rgba(2,7,11,0.24)_78%)]" : "absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.99)_0%,rgba(255,255,255,0.92)_42%,rgba(255,255,255,0.24)_78%)]"} />
-        <div className={isDark ? "absolute inset-x-0 bottom-0 h-24 bg-[linear-gradient(0deg,#02070b_0%,transparent_100%)]" : "absolute inset-x-0 bottom-0 h-24 bg-[linear-gradient(0deg,white_0%,transparent_100%)]"} />
+    <section className={`overflow-x-hidden ${isDark ? "bg-[var(--color-page)]" : "bg-[#f8f8f7]"}`}>
+      {/* Header — same pattern as Sec2 */}
+      <div className="relative overflow-hidden bg-[var(--color-page)]">
+        <div className="absolute inset-y-0 right-0 w-[62%] md:w-[48%]">
+          <Image
+            src={headerImage.src}
+            alt={headerImage.alt || ""}
+            fill
+            className="object-cover object-right"
+            sizes="(max-width: 768px) 62vw, 48vw"
+          />
+          <div
+            className={
+              isDark
+                ? "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(11,12,12,0.82)_34%,rgba(11,12,12,0.18)_100%)]"
+                : "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(243,243,241,0.88)_34%,rgba(243,243,241,0.18)_100%)]"
+            }
+          />
+        </div>
+
+        <div className="relative mx-auto w-full max-w-8xl px-4 py-5 md:px-6 md:py-6 lg:px-8">
+          <div className="max-w-[620px]">
+            <p
+              className={`text-[0.64rem] font-bold uppercase tracking-[0.14em] ${
+                isDark ? "text-white/55" : "text-[var(--color-text-muted)]"
+              }`}
+            >
+              Trust + FAQ
+            </p>
+            <h2
+              className={`mt-1.5 text-[2rem] font-bold leading-[0.98] md:text-[2.6rem] md:leading-[0.96] ${
+                isDark ? "text-white" : "text-[var(--color-text)]"
+              }`}
+            >
+              Why Jaguar Owners{" "}
+              <span className="text-[var(--color-chrome-bright)]">Trust This Site</span>
+            </h2>
+            <div className="mt-2.5">
+              <MStripe />
+            </div>
+            <p
+              className={`mt-2.5 max-w-[520px] text-[0.86rem] leading-[1.35] md:text-[0.95rem] md:leading-[1.4] ${
+                isDark ? "text-white/80" : "text-[var(--color-text-muted)]"
+              }`}
+              dangerouslySetInnerHTML={{ __html: cleanText(data.subHeadline) }}
+            />
+          </div>
+        </div>
       </div>
 
-      <div className="relative mx-auto w-full max-w-8xl">
-        <div className="max-w-[680px] pt-4 md:pt-7">
-          <h2 className={`text-[2.7rem] font-bold leading-[1.04] tracking-normal md:text-[3.25rem] ${isDark ? "text-white" : "text-[#071827]"}`}>Why Jaguar Owners Trust This Site</h2>
-          <div className="mt-4">
-            <MStripe />
-          </div>
-          <p className={`mt-5 max-w-[620px] text-[0.9rem] leading-[1.58] md:text-[1rem] ${isDark ? "text-white/78" : "text-[#27384a]"}`} dangerouslySetInnerHTML={{ __html: cleanText(data.subHeadline) }} />
-        </div>
-
-        <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2 md:mt-7 md:grid-cols-4 md:gap-4">
-          {data.signals.map((item) => (
-            <article key={item.id} className={`rounded-md border p-4 shadow-[0_12px_28px_rgba(10,26,43,0.06)] ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#dfe5ed] bg-white"}`}>
-              <div className="mb-3 flex items-center gap-3">
-                <span className={`flex h-8 w-8 items-center justify-center rounded-md text-[0.85rem] font-bold text-white ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}>
-                  {item.id}
-                </span>
-                <span className="flex h-10 w-10 items-center justify-center">
-                  <HomeIcon name={signalIcon(item.title)} isDark={isDark} className="h-8 w-8" />
-                </span>
-              </div>
-              <h3 className={`text-[1rem] font-bold leading-tight ${isDark ? "text-white" : "text-[#071827]"}`}>{item.title}</h3>
-              <p className={`mt-3 text-[0.86rem] leading-[1.52] ${isDark ? "text-white/76" : "text-[#27384a]"}`} dangerouslySetInnerHTML={{ __html: cleanText(item.description) }} />
-            </article>
+      <div className="mx-auto w-full min-w-0 max-w-8xl px-4 py-4 md:px-6 md:py-5 lg:px-8">
+        <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:grid-cols-4 lg:gap-3">
+          {signals.map((item) => (
+            <TrustCard key={item.id} item={item} isDark={isDark} />
           ))}
         </div>
+
+        <FaqBlock faq={data.faq} isDark={isDark} />
       </div>
     </section>
   );

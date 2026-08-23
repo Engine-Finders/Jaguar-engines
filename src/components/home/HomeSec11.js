@@ -1,207 +1,213 @@
 "use client";
 
 import Image from "next/image";
-import MStripe from "@/components/reusableComponents/MStripe";
+import Link from "next/link";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
 
-const iconPaths = {
-  timeline: <path d="M12 8v8M8 12h8M5 5h14v14H5z" />,
-  car: <path d="m5 13 1.4-4.2A3 3 0 0 1 9.2 7h5.6a3 3 0 0 1 2.8 1.8L19 13m-15 0h16v5H4v-5Zm2 5v2m12-2v2M7 13l-2-1m12 1 2-1M8 16h.01M16 16h.01" />,
-  insight: <path d="M4 20h16M7 16V9m5 7V5m5 11v-4m-9 8 4-4 3 3 5-7" />,
-  chevron: <path d="m9 6 6 6-6 6" />,
-};
+const ROW_IMAGE = "/home-image/right.webp";
+const ICON_LG = "h-12 w-12 md:h-14 md:w-14";
+const ICON_MD = "h-8 w-8 md:h-9 md:w-9";
+const ICON_CIRCLE = "h-12 w-12 md:h-14 md:w-14";
 
-function Icon({ name, className = "h-5 w-5", strokeWidth = 2 }) {
+function cleanText(value = "") {
+  return String(value || "")
+    .replaceAll("Â£", "£")
+    .replaceAll("â€“", "–")
+    .replaceAll("â€”", "—")
+    .trim();
+}
+
+function ModelCard({ model, isDark }) {
   return (
-    <svg
-      aria-hidden="true"
-      viewBox="0 0 24 24"
-      className={className}
-      fill="none"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={strokeWidth}
+    <Link
+      href={model.href || "#"}
+      className={`group flex h-full flex-col overflow-hidden rounded-xl border transition ${
+        isDark
+          ? "border-[var(--color-border)] bg-[var(--color-surface-raised)] hover:border-white/25"
+          : "border-[#e8e8e6] bg-white shadow-[0_8px_22px_rgba(16,18,16,0.05)] hover:border-[var(--color-chrome)]"
+      }`}
     >
-      {iconPaths[name] || iconPaths.car}
-    </svg>
-  );
-}
-
-function EraIcon({ isDark }) {
-  return (
-    <span className="relative z-10 flex h-12 w-12 shrink-0 items-center justify-center md:h-14 md:w-14">
-      <HomeIcon name="timeline" isDark={isDark} className="h-7 w-7 md:h-8 md:w-8" />
-    </span>
-  );
-}
-
-function HeaderImage({ data, isDark }) {
-  return (
-    <div className={`relative mt-5 overflow-hidden rounded-md border shadow-[0_12px_28px_rgba(10,26,43,0.06)] md:mt-0 md:h-[308px] md:rounded-none md:border-0 md:bg-transparent md:shadow-none ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface)]" : "border-[#dfe5ed] bg-white"}`}>
-      <div className="relative h-[220px] sm:h-[250px] md:h-full">
-        <Image
-          src={data.headerImage.src}
-          alt={data.headerImage.alt}
-          fill
-          className="object-cover object-center"
-          sizes="(max-width: 768px) 100vw, 48vw"
-        />
-        <div className={isDark ? "absolute inset-0 bg-[linear-gradient(180deg,rgba(2,7,11,0.14)_0%,rgba(2,7,11,0.32)_100%)] md:hidden" : "absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.03)_0%,rgba(255,255,255,0.06)_100%)] md:hidden"} />
-        <div className={`absolute left-[-28px] top-0 hidden h-full w-18 skew-x-[-22deg] md:block ${isDark ? "bg-[#02070b]" : "bg-white"}`} />
-        <div className="absolute left-[-10px] top-0 hidden h-full w-2 skew-x-[-22deg] bg-[var(--color-primary)] md:block" />
-      </div>
-    </div>
-  );
-}
-
-function DesktopHeader({ data, isDark }) {
-  return (
-    <div className="hidden md:grid md:grid-cols-[minmax(0,1fr)_48%] md:items-start">
-      <div className="relative z-10 max-w-[640px] pt-6">
-        <h2 className={`text-[3.35rem] font-bold leading-[1.05] tracking-normal ${isDark ? "text-white" : "text-[#071827]"}`}>Every Model. Every Generation. Honestly Rated.</h2>
-        <div className="mt-4">
-          <MStripe />
-        </div>
-        <p className={`mt-5 max-w-[520px] text-[0.96rem] leading-[1.55] ${isDark ? "text-white/78" : "text-[#172334]"}`} dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
-      </div>
-      <HeaderImage data={data} isDark={isDark} />
-    </div>
-  );
-}
-
-function MobileHeader({ data, isDark }) {
-  return (
-    <div className="md:hidden">
-      <h2 className={`mt-3 text-[2rem] font-bold leading-[1.06] tracking-normal sm:text-[2.35rem] ${isDark ? "text-white" : "text-[#071827]"}`}>Every Model. Every Generation. Honestly Rated.</h2>
-      <div className="mt-4">
-        <MStripe />
-      </div>
-      <p className={`mt-4 max-w-[380px] text-[0.94rem] leading-[1.5] sm:text-[0.98rem] ${isDark ? "text-white/78" : "text-[#172334]"}`} dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
-      <HeaderImage data={data} isDark={isDark} />
-    </div>
-  );
-}
-
-function DesktopTimeline({ data, isDark }) {
-  return (
-    <div className={`hidden overflow-hidden rounded-md border shadow-[0_14px_36px_rgba(10,26,43,0.06)] md:block ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#dfe5ed] bg-white"}`}>
-      <div className="grid grid-cols-[300px_1fr_680px] bg-[var(--color-chrome)] text-white">
-        {data.columns.map((column) => (
-          <div key={column} className="border-r border-white/18 px-8 py-3 text-center text-[1rem] font-bold uppercase last:border-r-0">
-            {column}
-          </div>
-        ))}
-      </div>
-
-      <div className="relative">
-        <div className="absolute bottom-5 left-[53px] top-5 w-px bg-[var(--color-primary)]" />
-        {data.eras.map((row) => (
-          <div key={row.era} className={`grid grid-cols-[300px_1fr_680px] border-b last:border-b-0 ${isDark ? "border-[var(--color-border)]" : "border-[#e7ebf0]"}`}>
-            <div className="flex items-center gap-6 px-6 py-5">
-              <EraIcon isDark={isDark} />
-              <p className={`text-[1.05rem] font-bold ${isDark ? "text-white" : "text-[#071827]"}`}>{row.era}</p>
-            </div>
-
-            <div className={`grid grid-cols-[1fr_156px] items-center gap-5 border-l px-6 py-4 ${isDark ? "border-[var(--color-border)]" : "border-[#e7ebf0]"}`}>
-              <p className={`text-[1rem] font-semibold leading-[1.4] ${isDark ? "text-white/84" : "text-[#172334]"}`}>{row.engines}</p>
-              {row.engineImage?.src ? (
-                <div className="relative h-28 overflow-hidden rounded-md">
-                  <Image src={row.engineImage.src} alt={row.engineImage.alt || ""} fill className="object-contain" sizes="156px" />
-                </div>
-              ) : (
-                <div />
-              )}
-            </div>
-
-            <div className={`grid grid-cols-[1fr_168px] items-center gap-6 border-l px-6 py-4 ${isDark ? "border-[var(--color-border)]" : "border-[#e7ebf0]"}`}>
-              <div className="grid grid-cols-3 gap-3">
-                {(row.modelImages || []).map((image, index) => (
-                  <div key={`${row.era}-${index}`} className="relative h-20 overflow-hidden rounded-md">
-                    <Image src={image.src} alt={image.alt || ""} fill className="object-contain" sizes="140px" />
-                  </div>
-                ))}
-              </div>
-              <p className={`text-[1rem] font-medium ${isDark ? "text-white/84" : "text-[#172334]"}`}>{row.models}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-function MobileTimeline({ data, isDark }) {
-  return (
-    <div className="relative mt-4 md:hidden">
-      <div className="absolute bottom-6 left-[29px] top-6 w-px bg-[var(--color-primary)]" />
-      <div className="grid gap-3">
-        {data.eras.map((row) => (
-          <div key={row.era} className="relative flex gap-3">
-            <div className="w-11 shrink-0 pt-4">
-              <EraIcon isDark={isDark} />
-            </div>
-
-            <article className={`min-w-0 flex-1 rounded-md border px-4 py-4 shadow-[0_10px_24px_rgba(10,26,43,0.05)] ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]" : "border-[#dfe5ed] bg-white"}`}>
-              <div className="grid gap-4 sm:grid-cols-[120px_1fr]">
-                <div>
-                  <p className={`text-[0.92rem] font-bold sm:text-[0.98rem] ${isDark ? "text-white" : "text-[#071827]"}`}>{row.era}</p>
-                </div>
-
-                <div className={`grid gap-4 border-t pt-3 sm:border-l sm:border-t-0 sm:pl-4 sm:pt-0 ${isDark ? "border-[var(--color-border)]" : "border-[#e7ebf0]"}`}>
-                  <div className="grid gap-2 sm:grid-cols-[1fr_110px] sm:items-center">
-                    <div>
-                      <p className="text-[0.76rem] font-bold uppercase text-[var(--color-primary)]">Key Engines</p>
-                      <p className={`mt-1.5 text-[0.9rem] leading-[1.4] sm:text-[0.95rem] ${isDark ? "text-white/84" : "text-[#172334]"}`}>{row.engines}</p>
-                    </div>
-                    {row.engineImage?.src ? (
-                      <div className="relative mx-auto h-22 w-full max-w-[112px] overflow-hidden rounded-md sm:h-24 sm:max-w-[120px]">
-                        <Image src={row.engineImage.src} alt={row.engineImage.alt || ""} fill className="object-contain" sizes="120px" />
-                      </div>
-                    ) : null}
-                  </div>
-
-                  <div className={`grid gap-2 border-t pt-3 sm:grid-cols-[1fr_auto] sm:items-center ${isDark ? "border-[var(--color-border)]" : "border-[#e7ebf0]"}`}>
-                    <div>
-                      <p className="text-[0.76rem] font-bold uppercase text-[var(--color-primary)]">Iconic Models</p>
-                      {(row.modelImages || []).length ? (
-                        <div className="mt-1.5 grid grid-cols-3 gap-1.5">
-                          {(row.modelImages || []).map((image, index) => (
-                            <div key={`${row.era}-mobile-${index}`} className="relative h-12 overflow-hidden rounded-md sm:h-14">
-                              <Image src={image.src} alt={image.alt || ""} fill className="object-contain" sizes="90px" />
-                            </div>
-                          ))}
-                        </div>
-                      ) : null}
-                      <p className={`mt-1.5 text-[0.9rem] leading-[1.4] sm:text-[0.95rem] ${isDark ? "text-white/84" : "text-[#172334]"}`}>{row.models}</p>
-                    </div>
-                    <span className="hidden text-[var(--color-primary)] sm:block">
-                      <Icon name="chevron" className="h-7 w-7" />
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-function KeyTakeaway({ text, isDark }) {
-  return (
-    <div className={`mt-4 rounded-md border px-4 py-4 shadow-[0_12px_28px_rgba(10,26,43,0.04)] md:mt-4 md:px-8 md:py-5 ${isDark ? "border-[var(--color-border)] bg-[linear-gradient(180deg,var(--color-surface)_0%,var(--color-surface)_100%)]" : "border-[#dfe5ed] bg-[linear-gradient(180deg,#ffffff_0%,#f8fbff_100%)]"}`}>
-      <div className="grid gap-4 md:grid-cols-[92px_1fr] md:items-center">
-        <span className="flex h-15 w-15 items-center justify-center md:h-16 md:w-16">
-          <HomeIcon name="insight" isDark={isDark} className="h-9 w-9 md:h-8 md:w-8" />
+      <div className="relative px-3 pt-3 md:px-3 md:pt-3">
+        <span
+          className={`pointer-events-none absolute left-2.5 top-2 font-serif text-[1.05rem] font-semibold leading-none md:left-3 md:top-2.5 md:text-[1.1rem] ${
+            isDark ? "text-white/14" : "text-[#d8d8d6]"
+          }`}
+        >
+          {model.id}
         </span>
-        <p className={`text-[0.9rem] leading-[1.52] md:text-[1.02rem] ${isDark ? "text-white/84" : "text-[#172334]"}`}>
-          <span className="mr-2 font-bold uppercase text-[var(--color-primary)]">Key Takeaway:</span>
-          <span dangerouslySetInnerHTML={{ __html: text }} />
+
+        <h3
+          className={`relative z-[1] pl-7 text-[1rem] font-bold leading-none md:text-[1.05rem] ${
+            isDark ? "text-white" : "text-black"
+          }`}
+        >
+          {model.name}
+        </h3>
+        <p
+          className={`relative z-[1] mt-1 pl-7 text-[0.7rem] leading-[1.25] md:text-[0.72rem] ${
+            isDark ? "text-white/60" : "text-[var(--color-text-muted)]"
+          }`}
+        >
+          {model.generations}
+        </p>
+
+        <div className="relative mt-1.5 h-[80px] w-full md:mt-2 md:h-[92px]">
+          <Image
+            src={ROW_IMAGE}
+            alt={model.name}
+            fill
+            className="object-contain object-center transition duration-300 group-hover:scale-[1.03]"
+            sizes="(max-width: 768px) 45vw, 180px"
+          />
+        </div>
+      </div>
+
+      <div
+        className={`mt-auto flex items-center gap-1.5 border-t px-2.5 py-2 md:gap-2 md:px-3 md:py-2 ${
+          isDark ? "border-[var(--color-border)] bg-white/[0.03]" : "border-[#ececeb] bg-[#f3f3f2]"
+        }`}
+      >
+        <HomeIcon name={model.verdict?.icon || "safe-buy"} isDark={false} className={`${ICON_MD} shrink-0`} />
+        <span className={`text-[0.74rem] font-semibold leading-tight md:text-[0.78rem] ${isDark ? "text-white" : "text-black"}`}>
+          {model.verdict?.label}
+        </span>
+      </div>
+    </Link>
+  );
+}
+
+function CategoryBlock({ category, isDark }) {
+  return (
+    <div>
+      <div className="mb-2 flex items-center gap-2 md:mb-2.5">
+        <HomeIcon name={category.icon || "vehicle"} isDark={isDark} className={ICON_LG} />
+        <p
+          className={`text-[0.68rem] font-bold uppercase tracking-[0.12em] ${
+            isDark ? "text-white/70" : "text-[var(--color-text-muted)]"
+          }`}
+        >
+          {category.label}
         </p>
       </div>
+
+      <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-5 md:gap-2.5">
+        {(category.models || []).map((model) => (
+          <ModelCard key={`${category.id}-${model.name}`} model={model} isDark={isDark} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function ExampleVerdict({ data, isDark }) {
+  if (!data) return null;
+
+  return (
+    <div
+      className={`mt-5 overflow-hidden rounded-xl border md:mt-6 ${
+        isDark
+          ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
+          : "border-[#e8e8e6] bg-[#f3f3f2]"
+      }`}
+    >
+      <div className="grid gap-4 p-4 md:grid-cols-[minmax(180px,0.85fr)_minmax(200px,1fr)_minmax(260px,1.25fr)] md:items-center md:gap-4 md:p-5 lg:gap-5">
+        {/* Left */}
+        <div>
+          <p
+            className={`text-[0.64rem] font-bold uppercase tracking-[0.12em] ${
+              isDark ? "text-white/55" : "text-[var(--color-text-muted)]"
+            }`}
+          >
+            {data.eyebrow}
+          </p>
+          <h3
+            className={`mt-1.5 font-serif text-[1.55rem] font-semibold leading-[1.05] md:text-[1.85rem] ${
+              isDark ? "text-white" : "text-black"
+            }`}
+          >
+            {data.model}
+          </h3>
+
+          <ul className="mt-3 grid gap-2.5 md:mt-3.5 md:gap-2.5">
+            {(data.highlights || []).map((item) => (
+              <li key={item.title} className="flex items-start gap-2.5">
+                <span
+                  className={`mt-0.5 flex ${ICON_CIRCLE} shrink-0 items-center justify-center rounded-full ${
+                    isDark ? "bg-white/10" : "bg-white"
+                  }`}
+                >
+                  <HomeIcon name={item.icon} isDark={false} className={ICON_MD} />
+                </span>
+                <span className="min-w-0 pt-0.5">
+                  <strong className={`block text-[0.84rem] leading-tight md:text-[0.88rem] ${isDark ? "text-white" : "text-black"}`}>
+                    {item.title}
+                  </strong>
+                  <span className={`mt-0.5 block text-[0.72rem] ${isDark ? "text-white/60" : "text-[var(--color-text-muted)]"}`}>
+                    {item.text}
+                  </span>
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Center image */}
+        <div className="relative mx-auto h-[150px] w-full max-w-[300px] md:h-[180px] lg:h-[190px]">
+          <Image
+            src={data.image?.src || ROW_IMAGE}
+            alt={data.image?.alt || data.model || ""}
+            fill
+            className="object-contain object-center"
+            sizes="(max-width: 768px) 80vw, 300px"
+          />
+        </div>
+
+        {/* Right details grid */}
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-x-4 sm:gap-y-3.5">
+          {(data.details || []).map((item) => (
+            <div key={item.title} className="flex items-start gap-2.5">
+              <span className={`mt-0.5 flex ${ICON_CIRCLE} shrink-0 items-center justify-center rounded-full bg-black`}>
+                <HomeIcon name={item.icon} isDark className={ICON_MD} />
+              </span>
+              <div className="min-w-0">
+                <p className={`text-[0.8rem] font-bold leading-tight md:text-[0.84rem] ${isDark ? "text-white" : "text-black"}`}>
+                  {item.title}
+                </p>
+                <p
+                  className={`mt-0.5 text-[0.7rem] leading-[1.35] md:text-[0.72rem] ${
+                    isDark ? "text-white/65" : "text-[var(--color-text-muted)]"
+                  }`}
+                >
+                  {cleanText(item.text)}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function DataNote({ note, isDark }) {
+  if (!note) return null;
+
+  return (
+    <div
+      className={`mt-3 flex items-center gap-2 rounded-xl border px-3 py-2 md:mt-3.5 md:gap-2.5 md:px-3.5 md:py-2 ${
+        isDark
+          ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
+          : "border-[#e8e8e6] bg-[#f3f3f2]"
+      }`}
+    >
+      <span className={`flex h-9 w-9 shrink-0 items-center justify-center md:h-10 md:w-10`}>
+        <HomeIcon name="info" isDark={isDark} className="h-8 w-8 md:h-9 md:w-9" />
+      </span>
+      <p className={`min-w-0 flex-1 text-[0.72rem] leading-[1.35] md:text-[0.76rem] ${isDark ? "text-white/75" : "text-[var(--color-text-muted)]"}`}>
+        <strong className={isDark ? "text-white" : "text-black"}>{note.label}</strong>{" "}
+        <span dangerouslySetInnerHTML={{ __html: cleanText(note.text) }} />
+      </p>
     </div>
   );
 }
@@ -209,21 +215,37 @@ function KeyTakeaway({ text, isDark }) {
 export default function HomeSec11({ data }) {
   const { theme } = useTheme();
   const isDark = theme === "dark";
+  const categories = data.categories || [];
 
   return (
-    <section className={`relative overflow-hidden px-4 py-7 md:px-6 md:py-8 ${isDark ? "bg-[#02070b]" : "bg-white"}`}>
-      <div className="absolute inset-x-0 top-0 hidden h-[318px] md:block">
-        <div className={isDark ? "absolute inset-0 bg-[linear-gradient(90deg,#02070b_0%,rgba(2,7,11,0.96)_44%,rgba(2,7,11,0)_70%)]" : "absolute inset-0 bg-[linear-gradient(90deg,white_0%,rgba(255,255,255,0.96)_44%,rgba(255,255,255,0)_70%)]"} />
-      </div>
-
-      <div className="relative mx-auto w-full max-w-8xl">
-        <DesktopHeader data={data} isDark={isDark} />
-        <MobileHeader data={data} isDark={isDark} />
-        <div className="mt-6">
-          <DesktopTimeline data={data} isDark={isDark} />
-          <MobileTimeline data={data} isDark={isDark} />
+    <section className={`overflow-x-hidden ${isDark ? "bg-[var(--color-page)]" : "bg-[#f8f8f7]"}`}>
+      <div className="mx-auto w-full min-w-0 max-w-8xl px-4 pb-4 pt-3 md:px-6 md:pb-5 md:pt-4 lg:px-8">
+        <div className="mx-auto max-w-[720px] text-center">
+          <h2
+            className={`font-serif text-[1.75rem] font-semibold leading-[1.08] md:text-[2.35rem] md:leading-[1.05] ${
+              isDark ? "text-white" : "text-black"
+            }`}
+          >
+            Every Model. Every Generation. Honestly Rated.
+          </h2>
+          <p
+            className={`mx-auto mt-2 max-w-[640px] text-[0.84rem] leading-[1.4] md:mt-2.5 md:text-[0.9rem] ${
+              isDark ? "text-white/75" : "text-[var(--color-text-muted)]"
+            }`}
+          >
+            {cleanText(data.subHeadline)}
+          </p>
+          <div className={`mx-auto mt-2.5 h-px w-12 md:mt-3 ${isDark ? "bg-white/25" : "bg-[#cfcfcd]"}`} />
         </div>
-        <KeyTakeaway text={data.keyTakeaway} isDark={isDark} />
+
+        <div className="mt-4 grid gap-5 md:mt-5 md:gap-4">
+          {categories.map((category) => (
+            <CategoryBlock key={category.id} category={category} isDark={isDark} />
+          ))}
+        </div>
+
+        <ExampleVerdict data={data.exampleVerdict} isDark={isDark} />
+        <DataNote note={data.dataNote} isDark={isDark} />
       </div>
     </section>
   );

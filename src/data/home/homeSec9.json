@@ -1,218 +1,126 @@
 {
-  "subHeadline": "A permanent, categorised reference - not symptom-chasing blog posts. Every entry links to a full breakdown of symptoms, root cause, mileage window, repair cost, and replacement cost.",
+  "subHeadline": "A permanent, categorised reference — not symptom-chasing blog posts. Every entry links to a full breakdown of symptoms, root cause, mileage window, repair cost, and replacement cost.",
   "headerImage": {
-    "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=900&q=80",
+    "src": "/home-image/sec2-bg.webp",
     "alt": "Jaguar failure database"
   },
   "engineFailures": {
     "title": "Engine Failures",
-    "icon": "🔧",
-    "columns": ["#", "TITLE", "DESCRIPTION", "SEVERITY", "LINK"],
+    "icon": "engine",
     "rows": [
       {
-        "id": 1,
+        "id": "1",
         "title": "276DT Oil Pump Housing Failure",
-        "description": "Shared with Land Rover - often kills the engine outright before any other symptom appears. Fitted to XF X250 and XJ X351.",
-        "severity": { "icon": "🔴", "label": "Catastrophic", "type": "catastrophic" },
-        "link": { "label": "Read more →", "href": "#" }
+        "description": "Shared with Land Rover — often kills the engine outright before any other symptom appears. Fitted to XF X250 and XJ X351.",
+        "severity": { "label": "Catastrophic", "type": "catastrophic" },
+        "link": { "label": "Read more", "href": "#" }
       },
       {
-        "id": 2,
+        "id": "2",
         "title": "AJ133 Pre-2013 Timing Chain Tensioner Wear",
-        "description": "The 5.0 V8's early-build weak point - chain tensioner design was revised in 2013 with a marked reliability improvement.",
-        "severity": { "icon": "🟡", "label": "Monitor", "type": "monitor" },
-        "link": { "label": "Read more →", "href": "#" }
+        "description": "The 5.0 V8's early-build weak point — chain tensioner design was revised in 2013 with a marked reliability improvement.",
+        "severity": { "label": "Monitor", "type": "monitor" },
+        "link": { "label": "Read more", "href": "#" }
       },
       {
-        "id": 3,
+        "id": "3",
         "title": "AJ200D / <a href='https://jaguarengines.uk/engine/ajd4-204dtd'>204DTD</a> Ingenium Timing Chain",
-        "description": "Same engine, same issue as Land Rover's Ingenium diesel - pre-2019 tensioner wear, improved from 2019 onward.",
-        "severity": { "icon": "🟡", "label": "Monitor", "type": "monitor" },
-        "link": { "label": "Read more →", "href": "#" }
+        "description": "Same engine, same issue as Land Rover's Ingenium diesel — pre-2019 tensioner wear, improved from 2019 onward.",
+        "severity": { "label": "Monitor", "type": "monitor" },
+        "link": { "label": "Read more", "href": "#" }
       },
       {
-        "id": 4,
+        "id": "4",
         "title": "AJ126 Cooling System & Plastic Crossover Pipe Failure",
-        "description": "Well-documented weak point - plastic coolant pipes crack with age, and these engines cannot tolerate overheating without head-gasket damage.",
-        "severity": { "icon": "🟠", "label": "Immediate", "type": "immediate" },
-        "link": { "label": "Read more →", "href": "#" }
+        "description": "Well-documented weak point — plastic coolant pipes crack with age, and these engines cannot tolerate overheating without head-gasket damage.",
+        "severity": { "label": "Immediate", "type": "immediate" },
+        "link": { "label": "Read more", "href": "#" }
       }
     ]
   },
   "suspensionFailures": {
     "title": "Suspension Failures",
-    "icon": "🚙",
-    "columns": ["#", "TITLE", "DESCRIPTION", "SEVERITY", "LINK"],
+    "icon": "suspension",
     "rows": [
       {
-        "id": 1,
+        "id": "1",
         "title": "Air Suspension Compressor Failure",
         "description": "The most common air suspension complaint across XJ, XF and F-Pace. Burnout presents a fire risk.",
-        "severity": { "icon": "🔴", "label": "Catastrophic", "type": "catastrophic" },
-        "link": { "label": "Read more →", "href": "#" }
+        "severity": { "label": "Catastrophic", "type": "catastrophic" },
+        "link": { "label": "Read more", "href": "#" }
       },
       {
-        "id": 2,
+        "id": "2",
         "title": "Height Sensor Faults",
         "description": "Trigger warning lights and uneven ride height well before a full system failure. £200–£500 repair cost.",
-        "severity": { "icon": "🟢", "label": "Low", "type": "low" },
-        "link": { "label": "Read more →", "href": "#" }
+        "severity": { "label": "Low", "type": "low" },
+        "link": { "label": "Read more", "href": "#" }
       },
       {
-        "id": 3,
+        "id": "3",
         "title": "Valve Block & Air Spring Leaks",
         "description": "Slow leaks often mistaken for compressor failure. £300–£800 repair cost.",
-        "severity": { "icon": "🟢", "label": "Low", "type": "low" },
-        "link": { "label": "Read more →", "href": "#" }
+        "severity": { "label": "Low", "type": "low" },
+        "link": { "label": "Read more", "href": "#" }
       }
     ]
   },
   "drivetrainFailures": {
     "title": "Drivetrain Failures",
-    "icon": "⚙️",
-    "columns": ["#", "TITLE", "DESCRIPTION", "SEVERITY", "LINK"],
+    "icon": "drivetrain",
     "rows": [
       {
-        "id": 1,
+        "id": "1",
         "title": "ZF 8-Speed Gearbox Faults",
-        "description": "Shared across the JLR range - mechatronic unit and torque converter issues are the most common cause.",
-        "severity": { "icon": "🟡", "label": "Monitor", "type": "monitor" },
-        "link": { "label": "Read more →", "href": "#" }
+        "description": "Shared across the JLR range — mechatronic unit and torque converter issues are the most common cause.",
+        "severity": { "label": "Monitor", "type": "monitor" },
+        "link": { "label": "Read more", "href": "#" }
       },
       {
-        "id": 2,
+        "id": "2",
         "title": "Supercharger Coupler / Torsion Isolator Rattle",
-        "description": "A well-known shared quirk of the AJ126 and <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> - rattly but rarely catastrophic on its own.",
-        "severity": { "icon": "🟡", "label": "Monitor", "type": "monitor" },
-        "link": { "label": "Read more →", "href": "#" }
+        "description": "A well-known shared quirk of the AJ126 and <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> — rattly but rarely catastrophic on its own.",
+        "severity": { "label": "Monitor", "type": "monitor" },
+        "link": { "label": "Read more", "href": "#" }
       },
       {
-        "id": 3,
+        "id": "3",
         "title": "X-Type Driveshaft & CV Joint Wear",
-        "description": "A legacy of the Ford Mondeo-derived platform - most common on early (pre-2007) cars.",
-        "severity": { "icon": "🟢", "label": "Low", "type": "low" },
-        "link": { "label": "Read more →", "href": "#" }
+        "description": "A legacy of the Ford Mondeo-derived platform — most common on early (pre-2007) cars.",
+        "severity": { "label": "Low", "type": "low" },
+        "link": { "label": "Read more", "href": "#" }
       }
     ]
   },
   "electricalFailures": {
     "title": "Electrical Failures",
-    "icon": "⚠️",
-    "columns": ["#", "TITLE", "DESCRIPTION", "SEVERITY", "LINK"],
+    "icon": "electrical",
     "rows": [
       {
-        "id": 1,
+        "id": "1",
         "title": "Infotainment & Software Glitches",
         "description": "Particularly common on pre-2018 Touch Pro systems. Usually resolved with a software update.",
-        "severity": { "icon": "🟢", "label": "Low", "type": "low" },
-        "link": { "label": "Read more →", "href": "#" }
+        "severity": { "label": "Low", "type": "low" },
+        "link": { "label": "Read more", "href": "#" }
       },
       {
-        "id": 2,
+        "id": "2",
         "title": "Battery Drain / Parasitic Drain",
-        "description": "Modules failing to sleep correctly - a frequent no-start complaint.",
-        "severity": { "icon": "🟢", "label": "Low", "type": "low" },
-        "link": { "label": "Read more →", "href": "#" }
+        "description": "Modules failing to sleep correctly — a frequent no-start complaint.",
+        "severity": { "label": "Low", "type": "low" },
+        "link": { "label": "Read more", "href": "#" }
       },
       {
-        "id": 3,
+        "id": "3",
         "title": "X-Type Era Electrical Gremlins",
-        "description": "Window regulators, central locking modules and connector corrosion - the source of Jaguar's older 'electrical' reputation.",
-        "severity": { "icon": "🟡", "label": "Monitor", "type": "monitor" },
-        "link": { "label": "Read more →", "href": "#" }
+        "description": "Window regulators, central locking modules and connector corrosion — the source of Jaguar's older \"electrical\" reputation.",
+        "severity": { "label": "Monitor", "type": "monitor" },
+        "link": { "label": "Read more", "href": "#" }
       }
     ]
   },
-  "warningSigns": {
-    "title": "Warning Signs",
-    "icon": "⚠️",
-    "columns": ["#", "TITLE", "DESCRIPTION", "SEVERITY", "LINK"],
-    "rows": [
-      {
-        "id": 1,
-        "title": "Air Suspension Compressor Failure",
-        "description": "The most common air suspension complaint across XJ, XF and F-Pace. Burnout presents a fire risk.",
-        "severity": { "icon": "🔴", "label": "Catastrophic", "type": "catastrophic" },
-        "link": { "label": "Read more →", "href": "#" }
-      },
-      {
-        "id": 2,
-        "title": "ZF 8-Speed Gearbox Faults",
-        "description": "Shared across the JLR range - mechatronic unit and torque converter issues are the most common cause.",
-        "severity": { "icon": "🟡", "label": "Monitor", "type": "monitor" },
-        "link": { "label": "Read more →", "href": "#" }
-      },
-      {
-        "id": 3,
-        "title": "Infotainment & Software Glitches",
-        "description": "Particularly common on pre-2018 Touch Pro systems. Usually resolved with a software update.",
-        "severity": { "icon": "🟢", "label": "Low", "type": "low" },
-        "link": { "label": "Read more →", "href": "#" }
-      },
-      {
-        "id": 4,
-        "title": "Battery Drain / Parasitic Drain",
-        "description": "Modules failing to sleep correctly - a frequent no-start complaint.",
-        "severity": { "icon": "🟢", "label": "Low", "type": "low" },
-        "link": { "label": "Read more →", "href": "#" }
-      }
-    ]
-  },
-  "warningSigns": {
-    "title": "Warning Signs",
-    "icon": "⚠️",
-    "columns": ["#", "TITLE", "DESCRIPTION", "SEVERITY", "LINK"],
-    "rows": [
-      {
-        "id": 1,
-        "title": "Air Suspension Compressor Failure",
-        "description": "The most common air suspension complaint across XJ, XF and F-Pace. Burnout presents a fire risk.",
-        "severity": { "icon": "🔴", "label": "Catastrophic", "type": "catastrophic" },
-        "link": { "label": "Read more →", "href": "#" }
-      },
-      {
-        "id": 2,
-        "title": "ZF 8-Speed Gearbox Faults",
-        "description": "Shared across the JLR range - mechatronic unit and torque converter issues are the most common cause.",
-        "severity": { "icon": "🟡", "label": "Monitor", "type": "monitor" },
-        "link": { "label": "Read more →", "href": "#" }
-      },
-      {
-        "id": 3,
-        "title": "Infotainment & Software Glitches",
-        "description": "Particularly common on pre-2018 Touch Pro systems. Usually resolved with a software update.",
-        "severity": { "icon": "🟢", "label": "Low", "type": "low" },
-        "link": { "label": "Read more →", "href": "#" }
-      },
-      {
-        "id": 4,
-        "title": "Battery Drain / Parasitic Drain",
-        "description": "Modules failing to sleep correctly - a frequent no-start complaint.",
-        "severity": { "icon": "🟢", "label": "Low", "type": "low" },
-        "link": { "label": "Read more →", "href": "#" }
-      }
-    ]
-  },
-  "urgencyKey": [
-    {
-      "icon": "🔴",
-      "label": "Catastrophic",
-      "text": "stop driving, specialist inspection immediately"
-    },
-    {
-      "icon": "🟠",
-      "label": "Immediate",
-      "text": "book inspection now"
-    },
-    {
-      "icon": "🟡",
-      "label": "Monitor",
-      "text": "book inspection soon"
-    },
-    {
-      "icon": "🟢",
-      "label": "Low",
-      "text": "plan at next service"
-    }
-  ]
+  "dataNote": {
+    "label": "DATA NOTE:",
+    "text": "Engine Failures are backed by [EM-VERIFIED] enquiry, mileage, and cost data. Suspension, Drivetrain, and Electrical categories are built on documented patterns and specialist/owner-forum sources rather than proprietary volume data."
+  }
 }

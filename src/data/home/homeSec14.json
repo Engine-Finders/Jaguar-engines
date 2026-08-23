@@ -1,14 +1,40 @@
 {
-  "title": "Not Sure Where to Start?",
-  "subHeadline": "Search by model to see the full reliability picture, run the ownership decision tool on your specific car, or go straight to a vetted Jaguar specialist for a quote.",
-  "primaryCta": {
-    "label": "Compare Jaguar Engine Prices Now →",
-    "href": "#",
-    "note": "routes to EnginesMarket"
+  "subHeadline": "Free, expert guidance. Real data. Honest advice.",
+  "headerImage": {
+    "src": "/home-image/sec2-bg.webp",
+    "alt": "Jaguar specialist guidance"
   },
-  "secondaryCta": {
-    "label": "Explore Jaguar Models →",
-    "href": "#",
-    "note": "routes to internal model finder"
+  "stats": [
+    {
+      "icon": "real-data",
+      "label": "24,650+ UK enquiries analysed"
+    },
+    {
+      "icon": "engine",
+      "label": "50+ engine codes tracked"
+    },
+    {
+      "icon": "note",
+      "label": "Real quotes, real costs"
+    },
+    {
+      "icon": "independent",
+      "label": "Independent & unbiased"
+    }
+  ],
+  "guidance": {
+    "eyebrow": "Get Your Free Guidance",
+    "title": "Ask a Jaguar engine specialist",
+    "cta": {
+      "label": "Call a Specialist",
+      "subLabel": "Speak to a Jaguar expert now",
+      "href": "#"
+    }
+  },
+  "review": {
+    "brand": "Trustpilot",
+    "stars": 5,
+    "score": "4.8 out of 5 from 1200+ reviews",
+    "footer": "Rated 'Excellent' by Jaguar owners across the UK"
   }
 }

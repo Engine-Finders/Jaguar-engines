@@ -1,29 +1,150 @@
 {
-  "subHeadline": "Not a navigation grid - a verdict on every generation, drawn from real enquiry volume and replacement economics.",
-  "headerImage": {
-    "src": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=900&q=80",
-    "alt": "Jaguar model lineup"
-  },
-  "columns": ["MODEL", "GENERATIONS", "VERDICT"],
-  "keyTakeaway": "Every Jaguar generation has a clear winner and loser from a reliability and replacement cost perspective. The F-Pace X761 stands alone as the only model with a clean Safe verdict across every engine variant in our data.",
-  "eras": [
-    { "era": "XE", "engines": "1 Generation (X760)", "models": "✅ Safe Buy" },
-    { "era": "XF", "engines": "2 Generations (X250, X260)", "models": "🔥 Most Enquired" },
-    { "era": "XJ", "engines": "X300, X308, X351 (primary)", "models": "👑 Flagship Choice" },
-    { "era": "S-Type", "engines": "1 Generation (X200)", "models": "⚠️ Check Value" },
-    { "era": "X-Type", "engines": "1 Generation (X400)", "models": "⚠️ Check Value" },
-    { "era": "F-Pace", "engines": "1 Generation (X761)", "models": "👨‍👩‍👧‍👦 Best Family" },
-    { "era": "E-Pace", "engines": "1 Generation (X540)", "models": "🚀 High Demand" },
-    { "era": "I-Pace", "engines": "1 Generation (X590)", "models": "⚡ EV - Drive Unit Info" },
-    { "era": "F-Type", "engines": "1 Generation (X152)", "models": "🏆 Safest Buy" },
-    { "era": "XK", "engines": "2 Generations (X100, X150)", "models": "💎 Premium Style" }
+  "subHeadline": "Not a navigation grid — a verdict on every generation, drawn from real enquiry volume and replacement economics. Every model page answers six questions: which generation is best, which engines to avoid, which engines are most reliable, what replacement actually costs, what fails most often, and whether ownership still makes financial sense.",
+  "categories": [
+    {
+      "id": "saloons",
+      "label": "Saloons & Executive",
+      "icon": "vehicle",
+      "models": [
+        {
+          "id": "01",
+          "name": "XE",
+          "generations": "1 Generation (X760)",
+          "href": "#",
+          "verdict": { "label": "Safe Buy", "icon": "safe-buy" }
+        },
+        {
+          "id": "02",
+          "name": "XF",
+          "generations": "2 Generations (X250, X260)",
+          "href": "#",
+          "verdict": { "label": "Most Enquired", "icon": "most-enquired" }
+        },
+        {
+          "id": "03",
+          "name": "XJ",
+          "generations": "Multiple Generations (X300, X308, X351 primary)",
+          "href": "#",
+          "verdict": { "label": "Flagship Choice", "icon": "flagship-choice" }
+        },
+        {
+          "id": "04",
+          "name": "S-Type",
+          "generations": "1 Generation (X200)",
+          "href": "#",
+          "verdict": { "label": "Check Value", "icon": "check-watch" }
+        },
+        {
+          "id": "05",
+          "name": "X-Type",
+          "generations": "1 Generation (X400)",
+          "href": "#",
+          "verdict": { "label": "Check Value", "icon": "check-watch" }
+        }
+      ]
+    },
+    {
+      "id": "suvs",
+      "label": "SUVs & Sports",
+      "icon": "vehicle",
+      "models": [
+        {
+          "id": "01",
+          "name": "F-Pace",
+          "generations": "1 Generation (X761)",
+          "href": "#",
+          "verdict": { "label": "Best Family", "icon": "best-family" }
+        },
+        {
+          "id": "02",
+          "name": "E-Pace",
+          "generations": "1 Generation (X540)",
+          "href": "#",
+          "verdict": { "label": "High Demand", "icon": "high-demand" }
+        },
+        {
+          "id": "03",
+          "name": "I-Pace",
+          "generations": "1 Generation (X590)",
+          "href": "#",
+          "verdict": { "label": "EV — Drive Unit Info", "icon": "ev" }
+        },
+        {
+          "id": "04",
+          "name": "F-Type",
+          "generations": "1 Generation (X152)",
+          "href": "#",
+          "verdict": { "label": "Safest Buy", "icon": "safest-buy" }
+        },
+        {
+          "id": "05",
+          "name": "XK",
+          "generations": "2 Generations (X100, X150)",
+          "href": "#",
+          "verdict": { "label": "Premium Style", "icon": "premium-style" }
+        }
+      ]
+    }
   ],
   "exampleVerdict": {
+    "eyebrow": "Example Verdict",
     "model": "Jaguar F-Pace",
-    "bestGeneration": "The only F-Pace generation (X761), for its strong retained values and the widest safe engine coverage in the range.",
-    "worstEngine": "Early AJ200D units without documented chain-tensioner inspection - same caveat as Land Rover's Ingenium diesel.",
-    "mostReliableEngine": "The AJ200P/204PT Ingenium petrol - no meaningful weak point beyond routine water pump replacement.",
-    "highestRisk": "None flagged at the model level - F-Pace is the one Jaguar with a clean ✅ Safe verdict across every engine variant in our data.",
-    "bestUsedBuy": "A 2019+ F-Pace with full service history - the strongest all-round ownership profile of any Jaguar currently on sale."
+    "image": {
+      "src": "/home-image/right.webp",
+      "alt": "Jaguar F-Pace"
+    },
+    "highlights": [
+      {
+        "icon": "best-family",
+        "title": "Best Family",
+        "text": "Our overall verdict"
+      },
+      {
+        "icon": "safe-buy",
+        "title": "Safe Across All Engines",
+        "text": "No critical issues flagged"
+      },
+      {
+        "icon": "residuals",
+        "title": "Strong Residuals",
+        "text": "High retained values"
+      }
+    ],
+    "details": [
+      {
+        "icon": "star",
+        "title": "Best generation",
+        "text": "The only F-Pace generation (X761), for its strong retained values and the widest safe engine coverage in the range."
+      },
+      {
+        "icon": "warning",
+        "title": "Worst engine to buy without history",
+        "text": "Early AJ200D units without documented chain-tensioner inspection — same caveat as Land Rover's Ingenium diesel."
+      },
+      {
+        "icon": "check",
+        "title": "Most reliable engine across the range",
+        "text": "The AJ200P/204PT Ingenium petrol — no meaningful weak point beyond routine water pump replacement."
+      },
+      {
+        "icon": "safe-buy",
+        "title": "Highest risk",
+        "text": "None flagged at the model level — F-Pace is the one Jaguar with a clean Safe verdict across every engine variant in our data."
+      },
+      {
+        "icon": "best-used",
+        "title": "Best used buy",
+        "text": "A 2019+ F-Pace with full service history — the strongest all-round ownership profile of any Jaguar currently on sale."
+      },
+      {
+        "icon": "pound",
+        "title": "Replacement cost (supply-only)",
+        "text": "£3,000 – £5,800 typical reconditioned supply-only band for core F-Pace engines."
+      }
+    ]
+  },
+  "dataNote": {
+    "label": "Data Note:",
+    "text": "Live enquiry data and replacement cost economics power every verdict on this site. Model value bands sourced from major UK marketplaces and [EM-VERIFIED] enquiry database."
   }
 }

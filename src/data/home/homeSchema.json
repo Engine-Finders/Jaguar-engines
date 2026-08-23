@@ -1,0 +1,624 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://jaguarengines.uk/#website",
+      "url": "https://jaguarengines.uk/",
+      "name": "JaguarEngines.uk",
+      "description": "The UK's Most Trusted Jaguar Ownership Guide. Reliability rankings, real failure data, honest repair-vs-replace economics for every XE, XF, XJ, F‑Pace, E‑Pace, F‑Type, XK, S‑Type and X‑Type ever sold in the UK.",
+      "publisher": {
+        "@id": "https://jaguarengines.uk/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://jaguarengines.uk/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://jaguarengines.uk/#organization",
+      "name": "JaguarEngines.uk",
+      "url": "https://jaguarengines.uk/",
+      "logo": "https://jaguarengines.uk/images/jaguarengines-logo.png",
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Engine Finders",
+        "url": "https://enginefinders.co.uk/"
+      },
+      "description": "The UK's definitive Jaguar engine knowledge base, built from 1,700+ real UK enquiry records. Part of the Engine Finders family, the UK's leading engine replacement marketplace.",
+      "sameAs": [
+        "https://facebook.com/jaguarenginesuk",
+        "https://twitter.com/jaguarenginesuk",
+        "https://instagram.com/jaguarenginesuk"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "support@jaguarengines.uk",
+        "url": "https://jaguarengines.uk/contact"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://jaguarengines.uk/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://jaguarengines.uk/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://jaguarengines.uk/#webpage",
+      "url": "https://jaguarengines.uk/",
+      "name": "Jaguar Engines UK — The Complete Ownership Guide",
+      "description": "The UK's Most Trusted Jaguar Ownership Guide. Reliability rankings, real failure data, honest repair-vs-replace economics for every Jaguar model. Powered by 1,700+ real UK enquiries.",
+      "isPartOf": {
+        "@id": "https://jaguarengines.uk/#website"
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "Jaguar Engine Replacement and Ownership Information"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "JaguarEngines.uk Editorial Team"
+      },
+      "reviewedBy": {
+        "@type": "Organization",
+        "name": "JaguarEngines.uk Specialist Network"
+      },
+      "datePublished": "2026-07-06",
+      "dateModified": "2026-07-06",
+      "inLanguage": "en-GB",
+      "breadcrumb": {
+        "@id": "https://jaguarengines.uk/#breadcrumb"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://jaguarengines.uk/images/jaguar-homepage-hero.jpg",
+        "caption": "Jaguar Engines UK — Complete Ownership Guide",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://jaguarengines.uk/#diagnostic-calculator",
+      "name": "Jaguar Engine Diagnostic Calculator",
+      "description": "Answer a few questions about your Jaguar symptoms — we'll match you against known failure patterns, show you the likely diagnosis, OEM part references, and an honest repair vs. replace cost estimate.",
+      "url": "https://jaguarengines.uk/#diagnostic-calculator",
+      "applicationCategory": "Automotive Diagnostic Tool",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "GBP"
+      },
+      "potentialAction": {
+        "@type": "Action",
+        "name": "Diagnose My Jaguar Engine",
+        "url": "https://jaguarengines.uk/#diagnostic-calculator"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://jaguarengines.uk/#service",
+      "serviceType": "Jaguar Engine Replacement and Repair",
+      "provider": {
+        "@id": "https://jaguarengines.uk/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United Kingdom"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "GBP",
+        "lowPrice": "3000",
+        "highPrice": "9000",
+        "offerCount": 5,
+        "availability": "https://schema.org/InStock",
+        "description": "Reconditioned Jaguar engine supply and fit, priced by engine code. Prices range from £3,000 for AJ200P/204PT to £9,000 for AJ133/508PN. All engines supplied through EnginesMarket carry a minimum 12-month unlimited-mileage warranty."
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Jaguar Engine Replacement Prices",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "AJ200D / 204DTD Reconditioned Engine",
+              "description": "Ingenium 2.0L diesel. 590 UK enquiries in 2025.",
+              "sku": "AJ200D-RECON",
+              "brand": { "@type": "Brand", "name": "Jaguar" }
+            },
+            "price": "3500",
+            "priceCurrency": "GBP",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "minPrice": "3500",
+              "maxPrice": "5800",
+              "priceCurrency": "GBP"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "AJ126 Reconditioned Engine",
+              "description": "3.0 V6 Supercharged petrol. 560 UK enquiries in 2025.",
+              "sku": "AJ126-RECON",
+              "brand": { "@type": "Brand", "name": "Jaguar" }
+            },
+            "price": "4500",
+            "priceCurrency": "GBP",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "minPrice": "4500",
+              "maxPrice": "7500",
+              "priceCurrency": "GBP"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "276DT Reconditioned Engine",
+              "description": "2.7 TDV6 diesel (shared with Land Rover). 700 UK enquiries in 2025.",
+              "sku": "276DT-RECON",
+              "brand": { "@type": "Brand", "name": "Jaguar" }
+            },
+            "price": "5000",
+            "priceCurrency": "GBP",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "minPrice": "5000",
+              "maxPrice": "7500",
+              "priceCurrency": "GBP"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "AJ200P / 204PT Reconditioned Engine",
+              "description": "Ingenium 2.0L petrol. 500 UK enquiries in 2025.",
+              "sku": "AJ200P-RECON",
+              "brand": { "@type": "Brand", "name": "Jaguar" }
+            },
+            "price": "3000",
+            "priceCurrency": "GBP",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "minPrice": "3000",
+              "maxPrice": "5000",
+              "priceCurrency": "GBP"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "AJ133 / 508PN Reconditioned Engine",
+              "description": "5.0 V8 Supercharged petrol. 330 UK enquiries in 2025.",
+              "sku": "AJ133-RECON",
+              "brand": { "@type": "Brand", "name": "Jaguar" }
+            },
+            "price": "5500",
+            "priceCurrency": "GBP",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "minPrice": "5500",
+              "maxPrice": "9000",
+              "priceCurrency": "GBP"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://jaguarengines.uk/#models",
+      "name": "Jaguar Model Finder",
+      "description": "Find your Jaguar model to explore reliability, common faults and real running costs.",
+      "about": {
+        "@type": "Thing",
+        "name": "Jaguar Models"
+      },
+      "hasPart": {
+        "@type": "ItemList",
+        "itemListElement": [
+          { "@type": "Thing", "name": "Jaguar XE", "position": 1 },
+          { "@type": "Thing", "name": "Jaguar XF", "position": 2 },
+          { "@type": "Thing", "name": "Jaguar XJ", "position": 3 },
+          { "@type": "Thing", "name": "Jaguar S-Type", "position": 4 },
+          { "@type": "Thing", "name": "Jaguar X-Type", "position": 5 },
+          { "@type": "Thing", "name": "Jaguar F-Pace", "position": 6 },
+          { "@type": "Thing", "name": "Jaguar E-Pace", "position": 7 },
+          { "@type": "Thing", "name": "Jaguar I-Pace", "position": 8 },
+          { "@type": "Thing", "name": "Jaguar F-Type", "position": 9 },
+          { "@type": "Thing", "name": "Jaguar XK", "position": 10 }
+        ]
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://jaguarengines.uk/#engine-families",
+      "name": "Most-Enquired Jaguar Engines (2025)",
+      "description": "The engines Jaguar owners search for most, ranked by real 2025 enquiry volume.",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Product",
+            "name": "AJ200D / 204DTD (Ingenium Diesel)",
+            "description": "2.0L diesel. 590 enquiries in 2025. Known for pre-2019 timing chain tensioner wear.",
+            "sku": "JAG-AJ200D",
+            "brand": { "@type": "Brand", "name": "Jaguar" }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Product",
+            "name": "AJ126 (3.0 V6 Supercharged)",
+            "description": "3.0L supercharged petrol. 560 enquiries in 2025. Cooling system and chain tensioner are primary weak points.",
+            "sku": "JAG-AJ126",
+            "brand": { "@type": "Brand", "name": "Jaguar" }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Product",
+            "name": "276DT (2.7 TDV6)",
+            "description": "2.7L diesel (shared with Land Rover). 700 enquiries in 2025. Oil pump housing failure can kill the engine outright.",
+            "sku": "JAG-276DT",
+            "brand": { "@type": "Brand", "name": "Jaguar" }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Product",
+            "name": "AJ200P / 204PT (Ingenium Petrol)",
+            "description": "2.0L petrol. 500 enquiries in 2025. Most reliable modern Jaguar engine — only water pump weakness.",
+            "sku": "JAG-AJ200P",
+            "brand": { "@type": "Brand", "name": "Jaguar" }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "Product",
+            "name": "AJ133 / 508PN (5.0 V8)",
+            "description": "5.0L supercharged V8. 330 enquiries in 2025. Pre-2013 chain tensioner risk; revised 2013+ much improved.",
+            "sku": "JAG-AJ133",
+            "brand": { "@type": "Brand", "name": "Jaguar" }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://jaguarengines.uk/#ownership-rankings",
+      "name": "Jaguar Ownership Rankings",
+      "description": "The verdicts Jaguar owners actually want — backed by real UK enquiry and failure data.",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Thing",
+            "name": "Most Reliable Engine",
+            "description": "AJ200P / 204PT (Ingenium Petrol) — water pump replacement is the only meaningful weak point."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Thing",
+            "name": "Most Reliable Model",
+            "description": "F-Pace X761 — strong retained values and a clean Safe verdict across every engine variant."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Thing",
+            "name": "Best Used Buy",
+            "description": "XF X260 (2015–2024) — well-valued executive saloon with the revised Ingenium range."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Thing",
+            "name": "Most Expensive Failure",
+            "description": "276DT (2.7 TDV6) Oil Pump Failure — often kills the engine outright. £5,000–£7,500 recon."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "Thing",
+            "name": "Safest Jaguar to Buy",
+            "description": "E-Pace X540 (2017–present) — compact SUV values comfortably absorb modern Ingenium replacement cost."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "Thing",
+            "name": "Highest Risk Purchase",
+            "description": "X-Type X400 (2001–2009) — rapid depreciation plus reliability concerns; replacement cost frequently exceeds vehicle value."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "Thing",
+            "name": "Best Family Jaguar",
+            "description": "F-Pace X761 — the only genuinely practical SUV in the range, paired with the strongest ownership-safety profile."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "item": {
+            "@type": "Thing",
+            "name": "Best Long-Term Keeper",
+            "description": "XJ X351 (2010–2019) — flagship values comfortably absorb even the AJ133's upper recon cost."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://jaguarengines.uk/#failure-database",
+      "name": "Jaguar Failure Database",
+      "description": "Permanent, categorised reference for Jaguar engine failures and common warning signs.",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Thing",
+            "name": "276DT Oil Pump Housing Failure",
+            "description": "Often kills the engine outright before any other symptom appears. Fitted to XF X250 and XJ X351."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Thing",
+            "name": "AJ133 Pre-2013 Timing Chain Tensioner Wear",
+            "description": "5.0 V8's early-build weak point — design revised in 2013 with a marked reliability improvement."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Thing",
+            "name": "AJ200D / 204DTD Ingenium Timing Chain",
+            "description": "Pre-2019 tensioner wear — improved from 2019 onward. 590 enquiries in 2025."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Thing",
+            "name": "AJ126 Cooling System & Plastic Crossover Pipe Failure",
+            "description": "Plastic coolant pipes crack with age; overheating leads to head-gasket damage. 560 enquiries in 2025."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "Thing",
+            "name": "Air Suspension Compressor Failure",
+            "description": "Most common air suspension complaint across XJ, XF and F-Pace. Burnout presents a fire risk."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "Thing",
+            "name": "ZF 8-Speed Gearbox Faults",
+            "description": "Mechatronic unit and torque converter issues — the most common ZF failure across the JLR range."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "Thing",
+            "name": "Supercharger Coupler / Torsion Isolator Rattle",
+            "description": "A well-known shared quirk of the AJ126 and AJ133 — rattly but rarely catastrophic on its own."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "item": {
+            "@type": "Thing",
+            "name": "Battery Drain / Parasitic Drain",
+            "description": "Modules failing to sleep correctly — a frequent no-start complaint on modern Jaguars."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://jaguarengines.uk/#knowledge-centres",
+      "name": "Jaguar Knowledge Centres",
+      "description": "Deep, permanent reference hubs for the engines and systems Jaguar owners research most.",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Thing",
+            "name": "AJ-V8 Knowledge Centre",
+            "description": "Every displacement and state of tune, 4.2 to 5.0 SC — the complete AJ-V8/AJ133 ownership guide."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Thing",
+            "name": "AJD-V6 Knowledge Centre",
+            "description": "The 2.7 and 3.0 TDV6 diesel's full ownership profile — shared with Land Rover's 276DT/306DT."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Thing",
+            "name": "Ingenium Knowledge Centre",
+            "description": "Petrol vs diesel reliability, pre- and post-2019 changes, and what to look for when buying."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Thing",
+            "name": "AJ126 V6 Knowledge Centre",
+            "description": "The supercharged 3.0 V6's full reliability record, cooling-system upgrades, and running costs."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "Thing",
+            "name": "V12 Heritage Knowledge Centre",
+            "description": "The legendary 5.3/6.0 HE V12 — ownership, rebuilds, and what collectors need to know."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "Thing",
+            "name": "Air Suspension Knowledge Centre",
+            "description": "Common faults, compressor failure, replacement costs, and how to diagnose air-suspension issues."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "Thing",
+            "name": "ZF Gearbox Problems",
+            "description": "The 8-speed automatic's known issues across the JLR range — mechatronic, torque converter, and more."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "item": {
+            "@type": "Thing",
+            "name": "XK Legacy Engine Knowledge Centre",
+            "description": "The straight-six that powered every Jaguar saloon from the Mark 2 to the XJS — heritage ownership guide."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://jaguarengines.uk/#dataset",
+      "name": "Jaguar UK Engine Enquiry Data 2025",
+      "description": "Proprietary UK enquiry volumes and demand trends for Jaguar engines, sourced from JaguarEngines.uk's specialist marketplace activity.",
+      "creator": {
+        "@id": "https://jaguarengines.uk/#organization"
+      },
+      "temporalCoverage": "2025",
+      "spatialCoverage": "United Kingdom",
+      "keywords": ["Jaguar engine enquiries", "Jaguar replacement costs", "Jaguar reliability data"],
+      "url": "https://jaguarengines.uk/market-intelligence"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://jaguarengines.uk/#faq",
+      "description": "Frequently asked questions about Jaguar engine replacement, reliability, and ownership costs.",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is it worth replacing a Jaguar engine?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends entirely on vehicle value versus replacement cost. An F-Pace or XJ will almost always justify replacement — the car is worth far more than the engine. An X-Type or S-Type often won't; replacement cost can exceed what the car is worth outright. Use our diagnostic calculator above to get a personalised verdict."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Jaguar engine should I avoid?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No engine outright, but two carry real caveats: the shared 276DT (2.7 TDV6) can suffer sudden oil pump failure with little warning, and the AJ133 5.0 V8 built before 2013 carries a documented timing chain tensioner risk that the 2013 revision largely resolved. The Ingenium petrol has the cleanest record in our data. See our Engine Rankings for the full breakdown."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the Ingenium engine reliable in a Jaguar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The petrol Ingenium (AJ200P/204PT) has a noticeably better reliability record than the diesel (AJ200D/204DTD), which is the same engine — and the same pre-2019 timing chain tensioner caveat — as Land Rover's diesel Ingenium. JLR revised the design from 2019 onward. Check our Ingenium Knowledge Centre for full details."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "XF vs XJ — which is more reliable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Both carry a Safe verdict in our data, but for different reasons. The XF benefits from the modern, more dependable Ingenium range in its later X260 generation. The XJ's flagship values comfortably absorb even the AJ133 V8's upper replacement cost, though pre-2013 cars warrant a chain-tensioner check. Read our full comparison here."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I know if my Jaguar is worth repairing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Compare your realistic vehicle value against the full replacement quote, not just the repair estimate. As a rule, if replacement cost sits above roughly 60% of what the car is worth, it's worth getting a scrap valuation before committing. Use our Ownership Decision Tool for a personalised assessment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which is the safest used Jaguar to buy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The F-Pace X761 carries the cleanest Safe verdict of any Jaguar in our data — strong retained values and no flagged engine-specific caveat across its range. The E-Pace and later XF X260 are close behind. See our full Jaguar Rankings for details."
+          }
+        }
+      ]
+    }
+  ]
+}
