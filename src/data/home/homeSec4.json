@@ -1,5 +1,5 @@
 {
-  "subHeadline": "The verdicts people actually want before they read a single spec sheet - the calls we'd make for a friend, backed by real UK enquiry and failure data.",
+  "subHeadline": "The verdicts people actually want before they read a single spec sheet — the calls we'd make for a friend, backed by real UK enquiry and failure data.",
   "headerImage": {
     "src": "/home-image/sec2-bg.webp",
     "alt": "Jaguar ownership rankings"
@@ -18,78 +18,71 @@
   "rankings": [
     {
       "ranking": "Most Reliable Engine",
-      "icon": "⚙️",
+      "icon": "engine",
       "winner": "AJ200P / 204PT (Ingenium Petrol)",
-      "why": "Consistently outperforms its diesel sibling in our data - water pump replacement is the only meaningful weak point.",
-      "verdict": { "icon": "🏆", "text": "Best", "type": "best" },
+      "why": "Consistently outperforms its diesel sibling in our data — water pump replacement is the only meaningful weak point.",
+      "verdict": { "text": "Best", "type": "best" },
       "href": "#"
     },
     {
       "ranking": "Most Reliable Model",
-      "icon": "🚗",
+      "icon": "car",
       "winner": "F-Pace X761",
-      "why": "Strong retained values and a clean ✅ Safe verdict across every engine variant - no caveat in the data at all.",
-      "verdict": { "icon": "🏆", "text": "Best", "type": "best" },
+      "why": "Strong retained values and a clean Safe verdict across every engine variant — no caveat in the data at all.",
+      "verdict": { "text": "Best", "type": "best" },
       "href": "#"
     },
     {
       "ranking": "Best Used Buy",
-      "icon": "🏷️",
+      "icon": "tag",
       "winner": "XF X260 (2015–2024)",
       "why": "A well-valued executive saloon with the revised Ingenium range and replacement viable across almost every example.",
-      "verdict": { "icon": "✅", "text": "Safe", "type": "safe" },
+      "verdict": { "text": "Safe", "type": "safe" },
       "href": "#"
     },
     {
       "ranking": "Most Expensive Failure",
-      "icon": "💥",
+      "icon": "flame",
       "winner": "276DT (2.7 TDV6) Oil Pump Failure",
-      "why": "Shared with Land Rover's Discovery 3 - often kills the engine outright with little warning. £5,000–£7,500 recon.",
-      "verdict": { "icon": "🔴", "text": "Avoid", "type": "avoid" },
+      "why": "Shared with Land Rover's Discovery 3 — often kills the engine outright with little warning. £5,000–£7,500 recon.",
+      "verdict": { "text": "Avoid", "type": "avoid" },
       "href": "#"
     },
     {
       "ranking": "Safest Jaguar to Buy",
-      "icon": "🛡️",
+      "icon": "shield",
       "winner": "E-Pace X540 (2017–present)",
-      "why": "Compact SUV values comfortably absorb the modern Ingenium's replacement cost - safe across the board.",
-      "verdict": { "icon": "✅", "text": "Safe", "type": "safe" },
+      "why": "Compact SUV values comfortably absorb the modern Ingenium's replacement cost — safe across the board.",
+      "verdict": { "text": "Safe", "type": "safe" },
       "href": "#"
     },
     {
       "ranking": "Highest Risk Purchase",
-      "icon": "⚠️",
+      "icon": "warning",
       "winner": "X-Type X400 (2001–2009)",
-      "why": "Rapid depreciation plus genuine reliability concerns on pre-2007 cars - replacement cost frequently exceeds vehicle value.",
-      "verdict": { "icon": "⚠️", "text": "Watch", "type": "watch" },
+      "why": "Rapid depreciation plus genuine reliability concerns on pre-2007 cars — replacement cost frequently exceeds vehicle value.",
+      "verdict": { "text": "Watch", "type": "watch" },
       "href": "#"
     },
     {
       "ranking": "Best Family Jaguar",
-      "icon": "👨‍👩‍👧‍👦",
+      "icon": "best-family",
       "winner": "F-Pace X761",
       "why": "The only genuinely practical SUV in the range, paired with the strongest ownership-safety profile of any Jaguar.",
-      "verdict": { "icon": "👨‍👩‍👧‍👦", "text": "Best", "type": "best" },
+      "verdict": { "text": "Best", "type": "best" },
       "href": "#"
     },
     {
       "ranking": "Best Long-Term Keeper",
-      "icon": "⏳",
+      "icon": "long-term",
       "winner": "XJ X351 (2010–2019)",
-      "why": "Flagship values comfortably absorb even the <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a>'s upper recon cost - the keeper's Jaguar.",
-      "verdict": { "icon": "🏆", "text": "Best", "type": "best" },
+      "why": "Flagship values comfortably absorb even the <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a>'s upper recon cost — the keeper's Jaguar.",
+      "verdict": { "text": "Best", "type": "best" },
       "href": "#"
     }
   ],
   "dataSources": {
     "title": "Data Note",
-    "note": "Rankings are drawn from 1,700+ real UK enquiries tracked in 2025 and engine failure data verified by independent Jaguar specialists. Replacement cost data is updated monthly from supplier quotes.",
-    "columns": ["CLAIM", "SOURCE"],
-    "rows": [
-      { "claim": "1,700+ real UK enquiries tracked in 2025", "source": "JaguarEngines.uk CRM - live enquiry data" },
-      { "claim": "Engine failure data verified by independent specialists", "source": "Partner garage network - 12+ UK specialists" },
-      { "claim": "Replacement cost data updated monthly", "source": "Reconditioned engine supplier quotes - supply-only" },
-      { "claim": "Model reliability rankings", "source": "Aggregated from enquiry volume, failure frequency, and replacement economics" }
-    ]
+    "note": "Entries drawing directly on enquiry volume, replacement cost, and R-to-V flag data are marked as verified in the source file. \"Most Reliable Model,\" \"Best Family Jaguar,\" and the specific engine/model pairings are our editorial synthesis of the failure-pattern data, cross-referenced against live specialist and owner-forum sources — worth a Jaguar specialist sense-check before publishing."
   }
 }

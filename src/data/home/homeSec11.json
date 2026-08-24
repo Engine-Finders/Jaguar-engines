@@ -1,5 +1,9 @@
 {
   "subHeadline": "Not a navigation grid — a verdict on every generation, drawn from real enquiry volume and replacement economics. Every model page answers six questions: which generation is best, which engines to avoid, which engines are most reliable, what replacement actually costs, what fails most often, and whether ownership still makes financial sense.",
+  "headerImage": {
+    "src": "/home-image/sec2-bg.webp",
+    "alt": "Jaguar models"
+  },
   "categories": [
     {
       "id": "saloons",

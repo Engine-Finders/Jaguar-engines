@@ -43,7 +43,7 @@ function SeverityBadge({ severity, isDark }) {
 
 function CategoryLabel({ title, icon, isDark }) {
   return (
-    <div className="mb-2.5 flex items-center gap-2 md:mb-3">
+    <div className="mb-2 flex items-center gap-2 md:mb-2.5">
       <HomeIcon name={icon} isDark={isDark} className={ICON_LG} />
       <p
         className={`text-[0.68rem] font-bold uppercase tracking-[0.12em] ${
@@ -189,12 +189,39 @@ function FailureColumn({ block, isDark }) {
   );
 }
 
+function NoteWithBadge({ text, badge, isDark }) {
+  const cleaned = cleanText(text);
+  const marker = badge ? `[${badge}]` : null;
+  const parts = marker && cleaned.includes(marker) ? cleaned.split(marker) : [cleaned];
+
+  return (
+    <>
+      {parts.map((part, i) => (
+        <span key={i}>
+          {part}
+          {i < parts.length - 1 ? (
+            <span
+              className={`mx-1 inline-flex translate-y-[-1px] items-center rounded border px-1.5 py-[1px] text-[0.58rem] font-bold uppercase tracking-[0.06em] ${
+                isDark
+                  ? "border-white/25 bg-white/5 text-white/80"
+                  : "border-[#d0d0ce] bg-white text-[var(--color-text-muted)]"
+              }`}
+            >
+              {badge}
+            </span>
+          ) : null}
+        </span>
+      ))}
+    </>
+  );
+}
+
 function DataNote({ note, isDark }) {
   if (!note) return null;
 
   return (
     <div
-      className={`mt-4 flex items-center gap-2.5 rounded-xl border px-3 py-2.5 md:mt-5 md:px-3.5 md:py-2.5 ${
+      className={`mt-3 flex items-center gap-2.5 rounded-xl border px-3 py-2.5 md:mt-3.5 md:px-3.5 md:py-2.5 ${
         isDark
           ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
           : "border-[#e8e8e6] bg-[#f3f3f2]"
@@ -205,7 +232,7 @@ function DataNote({ note, isDark }) {
       </span>
       <p className={`min-w-0 text-[0.72rem] leading-[1.35] md:text-[0.76rem] ${isDark ? "text-white/70" : "text-[var(--color-text-muted)]"}`}>
         <strong className={isDark ? "text-white" : "text-black"}>{note.label}</strong>{" "}
-        {cleanText(note.text)}
+        <NoteWithBadge text={note.text} badge={note.badge} isDark={isDark} />
       </p>
     </div>
   );
@@ -220,11 +247,12 @@ export default function HomeSec9({ data }) {
   };
   const engine = data.engineFailures;
   const columns = [data.suspensionFailures, data.drivetrainFailures, data.electricalFailures].filter(Boolean);
+  const sectionBg = isDark ? "bg-[var(--color-page)]" : "bg-[#ececea]";
 
   return (
-    <section className={`overflow-x-hidden ${isDark ? "bg-[var(--color-page)]" : "bg-[#f8f8f7]"}`}>
-      {/* Header — same pattern as Sec2 */}
-      <div className="relative overflow-hidden bg-[var(--color-page)]">
+    <section className={`overflow-x-hidden ${sectionBg}`}>
+      {/* Header — same pattern as Sec2/Sec3 */}
+      <div className={`relative overflow-hidden ${sectionBg}`}>
         <div className="absolute inset-y-0 right-0 w-[62%] md:w-[48%]">
           <Image
             src={headerImage.src}
@@ -237,12 +265,12 @@ export default function HomeSec9({ data }) {
             className={
               isDark
                 ? "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(11,12,12,0.82)_34%,rgba(11,12,12,0.18)_100%)]"
-                : "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(243,243,241,0.88)_34%,rgba(243,243,241,0.18)_100%)]"
+                : "absolute inset-0 bg-[linear-gradient(90deg,#ececea_0%,rgba(236,236,234,0.88)_34%,rgba(236,236,234,0.18)_100%)]"
             }
           />
         </div>
 
-        <div className="relative mx-auto w-full max-w-8xl px-4 py-5 md:px-6 md:py-7 lg:px-8">
+        <div className="relative mx-auto w-full max-w-8xl px-4 pb-3 pt-5 md:px-6 md:pb-3.5 md:pt-7 lg:px-8">
           <div className="max-w-[620px]">
             <p
               className={`text-[0.64rem] font-bold uppercase tracking-[0.14em] ${
@@ -263,7 +291,7 @@ export default function HomeSec9({ data }) {
               <MStripe />
             </div>
             <p
-              className={`mt-2.5 max-w-[540px] text-[0.86rem] leading-[1.4] md:text-[0.95rem] ${
+              className={`mt-2 max-w-[540px] text-[0.86rem] leading-[1.4] md:text-[0.95rem] ${
                 isDark ? "text-white/80" : "text-[var(--color-text-muted)]"
               }`}
               dangerouslySetInnerHTML={{ __html: cleanText(data.subHeadline) }}
@@ -272,7 +300,7 @@ export default function HomeSec9({ data }) {
         </div>
       </div>
 
-      <div className="mx-auto w-full min-w-0 max-w-8xl px-4 py-4 md:px-6 md:py-5 lg:px-8">
+      <div className="mx-auto w-full min-w-0 max-w-8xl px-4 pb-5 pt-2 md:px-6 md:pb-6 md:pt-2.5 lg:px-8">
         {/* Engine failures — 4 cards */}
         {engine?.rows?.length ? (
           <div>
@@ -286,7 +314,7 @@ export default function HomeSec9({ data }) {
         ) : null}
 
         {/* Suspension / Drivetrain / Electrical */}
-        <div className="mt-5 grid gap-3 md:mt-6 md:grid-cols-3 md:gap-3.5">
+        <div className="mt-4 grid gap-2.5 md:mt-4 md:grid-cols-3 md:gap-3">
           {columns.map((block) => (
             <FailureColumn key={block.title} block={block} isDark={isDark} />
           ))}

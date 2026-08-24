@@ -7,6 +7,7 @@ const FILES = {
   "real-inquiries": "Real Inquiries Icon-01.png",
   "vetted-specialist": "Vetted Specialist Icon-01.png",
   "vetted-specialist-2": "Vetted specialist Icon 2-01.png",
+  "expert-verified": "Expert Verified Icon-01.png",
   "generation-honest-rated": "Generation Honest Rated Icon-01.png",
   "engine-finders": "Part of Engine finders Icon-01.png",
   "genuine-failure-data": "Genuine Failure Data Icon-01.png",

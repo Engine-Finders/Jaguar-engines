@@ -1,8 +1,12 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
+import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
+
+const ICON_LG = "h-12 w-12 md:h-14 md:w-14";
 
 const riskDot = {
   catastrophic: "bg-[#ed1c24]",
@@ -62,11 +66,17 @@ function VerifiedPill({ tag, isDark }) {
 function PanelFooter({ footer, isDark }) {
   if (!footer?.label) return null;
   return (
-    <div className={`border-t px-4 py-3 md:px-5 ${isDark ? "border-[var(--color-border)]" : "border-[#ececeb]"}`}>
+    <div
+      className={`border-t px-3.5 py-2.5 md:px-4 md:py-2.5 ${
+        isDark
+          ? "border-[var(--color-border)] bg-white/[0.03]"
+          : "border-[#ececeb] bg-[#f5f5f4]"
+      }`}
+    >
       <Link
         href={footer.href || "#"}
-        className={`inline-flex items-center gap-1.5 text-[0.8rem] font-semibold ${
-          isDark ? "text-white" : "text-black"
+        className={`inline-flex items-center gap-1.5 text-[0.78rem] font-medium md:text-[0.8rem] ${
+          isDark ? "text-white/85" : "text-[#3a3a38]"
         }`}
       >
         <span>{footer.label}</span>
@@ -78,16 +88,16 @@ function PanelFooter({ footer, isDark }) {
 
 function PanelTitle({ block, isDark, trailing = null }) {
   return (
-    <div className={`flex items-center gap-3 border-b px-4 py-3.5 md:px-5 ${isDark ? "border-[var(--color-border)]" : "border-[#ececeb]"}`}>
+    <div className={`flex items-center gap-2.5 border-b px-3.5 py-2.5 md:gap-3 md:px-2 md:py-1 ${isDark ? "border-[var(--color-border)]" : "border-[#ececeb]"}`}>
       <span className="shrink-0">
-        <HomeIcon name={block.icon} isDark={isDark} className="h-10 w-10 md:h-11 md:w-11" />
+        <HomeIcon name={block.icon} isDark={isDark} className={ICON_LG} />
       </span>
       <div className="min-w-0 flex-1">
-        <h3 className={`text-[0.82rem] font-bold uppercase tracking-[0.04em] md:text-[0.88rem] ${isDark ? "text-white" : "text-black"}`}>
+        <h3 className={`text-[0.78rem] font-bold uppercase tracking-[0.04em] md:text-[0.84rem] ${isDark ? "text-white" : "text-black"}`}>
           {block.title}
         </h3>
         {block.subtitle ? (
-          <p className={`mt-0.5 text-[0.72rem] ${isDark ? "text-white/60" : "text-[var(--color-text-muted)]"}`}>
+          <p className={`mt-0.5 text-[0.7rem] ${isDark ? "text-white/60" : "text-[var(--color-text-muted)]"}`}>
             {block.subtitle}
           </p>
         ) : null}
@@ -117,7 +127,7 @@ function EnginesTable({ data, isDark }) {
   return (
     <div className="min-w-[480px] md:min-w-0">
       <div
-        className={`grid grid-cols-[44px_minmax(110px,1.1fr)_minmax(100px,1fr)_minmax(110px,1fr)] gap-2 border-b px-4 py-2 text-[0.6rem] font-bold uppercase tracking-[0.04em] md:px-5 ${
+        className={`grid grid-cols-[44px_minmax(110px,1.1fr)_minmax(100px,1fr)_minmax(110px,1fr)] gap-2 border-b px-3.5 py-1.5 text-[0.6rem] font-bold uppercase tracking-[0.04em] md:px-4 ${
           isDark ? "border-[var(--color-border)] text-white/55" : "border-[#ececeb] text-[var(--color-text-muted)]"
         }`}
       >
@@ -128,7 +138,7 @@ function EnginesTable({ data, isDark }) {
       {data.rows.map((row) => (
         <div
           key={stripTags(row.code) || row.rank}
-          className={`grid grid-cols-[44px_minmax(110px,1.1fr)_minmax(100px,1fr)_minmax(110px,1fr)] items-center gap-2 border-b px-4 py-2.5 text-[0.8rem] last:border-b-0 md:px-5 md:text-[0.84rem] ${
+          className={`grid grid-cols-[44px_minmax(110px,1.1fr)_minmax(100px,1fr)_minmax(110px,1fr)] items-center gap-2 border-b px-3.5 py-2 text-[0.78rem] last:border-b-0 md:px-4 md:text-[0.82rem] ${
             isDark ? "border-[var(--color-border)]" : "border-[#ececeb]"
           }`}
         >
@@ -152,7 +162,7 @@ function ModelsTable({ data, isDark }) {
   return (
     <div className="min-w-[320px] md:min-w-0">
       <div
-        className={`grid grid-cols-[44px_1fr_minmax(110px,0.9fr)] gap-2 border-b px-4 py-2 text-[0.6rem] font-bold uppercase tracking-[0.04em] md:px-5 ${
+        className={`grid grid-cols-[44px_1fr_minmax(110px,0.9fr)] gap-2 border-b px-3.5 py-1.5 text-[0.6rem] font-bold uppercase tracking-[0.04em] md:px-4 ${
           isDark ? "border-[var(--color-border)] text-white/55" : "border-[#ececeb] text-[var(--color-text-muted)]"
         }`}
       >
@@ -163,7 +173,7 @@ function ModelsTable({ data, isDark }) {
       {data.rows.map((row) => (
         <div
           key={row.model}
-          className={`grid grid-cols-[44px_1fr_minmax(110px,0.9fr)] items-center gap-2 border-b px-4 py-2.5 text-[0.8rem] last:border-b-0 md:px-5 md:text-[0.84rem] ${
+          className={`grid grid-cols-[44px_1fr_minmax(110px,0.9fr)] items-center gap-2 border-b px-3.5 py-2 text-[0.78rem] last:border-b-0 md:px-4 md:text-[0.82rem] ${
             isDark ? "border-[var(--color-border)]" : "border-[#ececeb]"
           }`}
         >
@@ -183,7 +193,7 @@ function CostsTable({ data, isDark }) {
   return (
     <div className="min-w-[280px] md:min-w-0">
       <div
-        className={`grid grid-cols-[1fr_1fr] gap-2 border-b px-4 py-2 text-[0.6rem] font-bold uppercase tracking-[0.04em] md:px-5 ${
+        className={`grid grid-cols-[1fr_1fr] gap-2 border-b px-3.5 py-1.5 text-[0.6rem] font-bold uppercase tracking-[0.04em] md:px-4 ${
           isDark ? "border-[var(--color-border)] text-white/55" : "border-[#ececeb] text-[var(--color-text-muted)]"
         }`}
       >
@@ -194,7 +204,7 @@ function CostsTable({ data, isDark }) {
       {data.rows.map((row) => (
         <div
           key={row.code}
-          className={`grid grid-cols-[1fr_1fr] items-center gap-2 border-b px-4 py-2.5 text-[0.8rem] last:border-b-0 md:px-5 md:text-[0.84rem] ${
+          className={`grid grid-cols-[1fr_1fr] items-center gap-2 border-b px-3.5 py-2 text-[0.78rem] last:border-b-0 md:px-4 md:text-[0.82rem] ${
             isDark ? "border-[var(--color-border)]" : "border-[#ececeb]"
           }`}
         >
@@ -210,7 +220,7 @@ function FailuresTable({ data, isDark }) {
   return (
     <div className="min-w-[520px] md:min-w-0">
       <div
-        className={`grid grid-cols-[minmax(180px,1.3fr)_minmax(110px,0.7fr)_minmax(160px,1fr)] gap-2 border-b px-4 py-2 text-[0.6rem] font-bold uppercase tracking-[0.04em] md:px-5 ${
+        className={`grid grid-cols-[minmax(180px,1.3fr)_minmax(110px,0.7fr)_minmax(160px,1fr)] gap-2 border-b px-3.5 py-1.5 text-[0.6rem] font-bold uppercase tracking-[0.04em] md:px-4 ${
           isDark ? "border-[var(--color-border)] text-white/55" : "border-[#ececeb] text-[var(--color-text-muted)]"
         }`}
       >
@@ -223,11 +233,11 @@ function FailuresTable({ data, isDark }) {
         return (
           <div
             key={stripTags(row.failure)}
-            className={`grid grid-cols-[minmax(180px,1.3fr)_minmax(110px,0.7fr)_minmax(160px,1fr)] items-center gap-2 border-b px-4 py-3 text-[0.8rem] last:border-b-0 md:px-5 md:text-[0.84rem] ${
+            className={`grid grid-cols-[minmax(180px,1.3fr)_minmax(110px,0.7fr)_minmax(160px,1fr)] items-center gap-2 border-b px-3.5 py-2 text-[0.78rem] last:border-b-0 md:px-4 md:text-[0.82rem] ${
               isDark ? "border-[var(--color-border)]" : "border-[#ececeb]"
             }`}
           >
-            <div className="flex min-w-0 items-start gap-2.5">
+            <div className="flex min-w-0 items-start gap-2">
               <span
                 className={`mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-full md:h-12 md:w-12 ${
                   isDark ? "bg-white/10" : "bg-[#ececeb]"
@@ -260,7 +270,7 @@ function FeedTable({ data, isDark }) {
   return (
     <div className="min-w-[520px] md:min-w-0">
       <div
-        className={`grid grid-cols-[minmax(120px,1.1fr)_minmax(90px,0.8fr)_minmax(120px,1.1fr)_minmax(90px,0.7fr)] gap-2 border-b px-4 py-2 text-[0.6rem] font-bold uppercase tracking-[0.04em] md:px-5 ${
+        className={`grid grid-cols-[minmax(140px,1.2fr)_minmax(90px,0.8fr)_minmax(120px,1.1fr)_minmax(90px,0.7fr)] gap-2 border-b px-3.5 py-1.5 text-[0.6rem] font-bold uppercase tracking-[0.04em] md:px-4 ${
           isDark ? "border-[var(--color-border)] text-white/55" : "border-[#ececeb] text-[var(--color-text-muted)]"
         }`}
       >
@@ -271,11 +281,22 @@ function FeedTable({ data, isDark }) {
       {data.rows.map((row) => (
         <div
           key={`${row.vehicle}-${row.timestamp}`}
-          className={`grid grid-cols-[minmax(120px,1.1fr)_minmax(90px,0.8fr)_minmax(120px,1.1fr)_minmax(90px,0.7fr)] items-center gap-2 border-b px-4 py-2.5 text-[0.78rem] last:border-b-0 md:px-5 md:text-[0.82rem] ${
+          className={`grid grid-cols-[minmax(140px,1.2fr)_minmax(90px,0.8fr)_minmax(120px,1.1fr)_minmax(90px,0.7fr)] items-center gap-2 border-b px-3.5 py-2 text-[0.76rem] last:border-b-0 md:px-4 md:text-[0.8rem] ${
             isDark ? "border-[var(--color-border)]" : "border-[#ececeb]"
           }`}
         >
-          <span className={`font-semibold ${isDark ? "text-white" : "text-black"}`}>{row.vehicle}</span>
+          <span className={`flex min-w-0 items-center gap-2 font-semibold ${isDark ? "text-white" : "text-black"}`}>
+            <span className="relative h-8 w-11 shrink-0 overflow-hidden rounded-sm md:h-9 md:w-12">
+              <Image
+                src="/home-image/right.webp"
+                alt=""
+                fill
+                className="object-contain object-center"
+                sizes="48px"
+              />
+            </span>
+            <span className="min-w-0 leading-snug">{row.vehicle}</span>
+          </span>
           <span className={`inline-flex items-center gap-1 ${isDark ? "text-white/75" : "text-[var(--color-text)]"}`}>
             <PinIcon className={`h-3.5 w-3.5 shrink-0 ${isDark ? "text-white/55" : "text-[#8a8a88]"}`} />
             {row.location}
@@ -307,16 +328,16 @@ function MobileAccordion({ block, children, isDark, trailing = null }) {
           : "border-[#e8e8e6] bg-white shadow-[0_8px_24px_rgba(16,18,16,0.05)]"
       }`}
     >
-      <summary className="flex cursor-pointer list-none items-center gap-3 px-4 py-3.5 marker:hidden md:px-5">
+      <summary className="flex cursor-pointer list-none items-center gap-2.5 px-3.5 py-2.5 marker:hidden md:px-4">
         <span className="shrink-0">
-          <HomeIcon name={block.icon} isDark={isDark} className="h-10 w-10" />
+          <HomeIcon name={block.icon} isDark={isDark} className={ICON_LG} />
         </span>
         <div className="min-w-0 flex-1">
-          <h3 className={`text-[0.82rem] font-bold uppercase tracking-[0.04em] ${isDark ? "text-white" : "text-black"}`}>
+          <h3 className={`text-[0.78rem] font-bold uppercase tracking-[0.04em] ${isDark ? "text-white" : "text-black"}`}>
             {block.title}
           </h3>
           {block.subtitle ? (
-            <p className={`mt-0.5 text-[0.72rem] ${isDark ? "text-white/60" : "text-[var(--color-text-muted)]"}`}>
+            <p className={`mt-0.5 text-[0.7rem] ${isDark ? "text-white/60" : "text-[var(--color-text-muted)]"}`}>
               {block.subtitle}
             </p>
           ) : null}
@@ -324,7 +345,7 @@ function MobileAccordion({ block, children, isDark, trailing = null }) {
         {trailing}
         <ChevronIcon className={`h-5 w-5 shrink-0 transition-transform group-open:rotate-180 ${isDark ? "text-white/60" : "text-[#8a8a88]"}`} />
       </summary>
-      <div className={`border-t overflow-x-auto ${isDark ? "border-[var(--color-border)]" : "border-[#ececeb]"}`}>
+      <div className={`overflow-x-auto border-t ${isDark ? "border-[var(--color-border)]" : "border-[#ececeb]"}`}>
         {children}
       </div>
       <PanelFooter footer={block.footer} isDark={isDark} />
@@ -336,16 +357,16 @@ function DataNote({ note, isDark }) {
   if (!note) return null;
   return (
     <div
-      className={`mt-5 flex items-start gap-3 rounded-2xl border px-4 py-3.5 md:mt-6 md:items-center md:px-5 ${
+      className={`mt-3 flex items-center gap-2.5 rounded-xl border px-3 py-2.5 md:mt-3.5 md:px-3.5 md:py-2.5 ${
         isDark
           ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
           : "border-[#e8e8e6] bg-[#f3f3f2]"
       }`}
     >
-      <span className="flex h-9 w-9 shrink-0 items-center justify-center">
-        <HomeIcon name="info" isDark={isDark} className="h-10 w-10 md:h-11 md:w-11" />
+      <span className="flex h-10 w-10 shrink-0 items-center justify-center md:h-11 md:w-11">
+        <HomeIcon name="info" isDark={isDark} className={ICON_LG} />
       </span>
-      <p className={`min-w-0 flex-1 text-[0.76rem] leading-[1.45] md:text-[0.82rem] ${isDark ? "text-white/75" : "text-[var(--color-text-muted)]"}`}>
+      <p className={`min-w-0 flex-1 text-[0.72rem] leading-[1.35] md:text-[0.78rem] ${isDark ? "text-white/75" : "text-[var(--color-text-muted)]"}`}>
         <strong className={isDark ? "text-white" : "text-black"}>{note.label}</strong>{" "}
         <span dangerouslySetInnerHTML={{ __html: cleanText(note.text) }} />
       </p>
@@ -356,30 +377,66 @@ function DataNote({ note, isDark }) {
 export default function HomeSec10({ data }) {
   const { theme } = useTheme();
   const isDark = theme === "dark";
+  const sectionBg = "bg-[var(--color-page)]";
+  const headerImage = data.headerImage || {
+    src: "/home-image/sec2-bg.webp",
+    alt: "Jaguar market intelligence",
+  };
 
   return (
-    <section className={`overflow-x-hidden ${isDark ? "bg-[var(--color-page)]" : "bg-[#f8f8f7]"}`}>
-      <div className="mx-auto w-full min-w-0 max-w-8xl px-4 py-8 md:px-6 md:py-12 lg:px-8">
-        {/* Centered header */}
-        <div className="mx-auto max-w-[720px] text-center">
-          <h2
-            className={`font-serif text-[2rem] font-semibold leading-[1.05] md:text-[2.75rem] md:leading-[1.02] ${
-              isDark ? "text-white" : "text-black"
-            }`}
-          >
-            Jaguar Market Intelligence
-          </h2>
-          <p
-            className={`mx-auto mt-3 max-w-[640px] text-[0.88rem] leading-[1.5] md:mt-4 md:text-[0.98rem] ${
-              isDark ? "text-white/75" : "text-[var(--color-text-muted)]"
-            }`}
-            dangerouslySetInnerHTML={{ __html: cleanText(data.subHeadline) }}
+    <section className={`overflow-x-hidden ${sectionBg}`}>
+      {/* Header — same pattern as other home sections */}
+      <div className={`relative overflow-hidden ${sectionBg}`}>
+        <div className="absolute inset-y-0 right-0 w-[62%] md:w-[48%]">
+          <Image
+            src={headerImage.src}
+            alt={headerImage.alt || ""}
+            fill
+            className="object-cover object-right"
+            sizes="(max-width: 768px) 62vw, 48vw"
           />
-          <div className={`mx-auto mt-4 h-px w-14 md:mt-5 ${isDark ? "bg-white/25" : "bg-[#cfcfcd]"}`} />
+          <div
+            className={
+              isDark
+                ? "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(11,12,12,0.82)_34%,rgba(11,12,12,0.18)_100%)]"
+                : "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(243,243,241,0.88)_34%,rgba(243,243,241,0.18)_100%)]"
+            }
+          />
         </div>
 
+        <div className="relative mx-auto w-full max-w-8xl px-4 pb-3 pt-5 md:px-6 md:pb-3.5 md:pt-7 lg:px-8">
+          <div className="max-w-[720px]">
+            <p
+              className={`text-[0.64rem] font-bold uppercase tracking-[0.14em] ${
+                isDark ? "text-white/55" : "text-[var(--color-text-muted)]"
+              }`}
+            >
+              Market Intelligence
+            </p>
+            <h2
+              className={`mt-1.5 whitespace-nowrap font-serif text-[1.65rem] font-semibold leading-[0.98] sm:text-[2rem] md:text-[2.55rem] md:leading-[0.96] lg:text-[2.75rem] ${
+                isDark ? "text-white" : "text-black"
+              }`}
+            >
+              Jaguar{" "}
+              <span className="text-[var(--color-chrome-bright)]">Market Intelligence</span>
+            </h2>
+            <div className="mt-2.5">
+              <MStripe />
+            </div>
+            <p
+              className={`mt-2 max-w-[640px] text-[0.86rem] leading-[1.4] md:text-[0.98rem] ${
+                isDark ? "text-white/80" : "text-[var(--color-text-muted)]"
+              }`}
+              dangerouslySetInnerHTML={{ __html: cleanText(data.subHeadline) }}
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className="mx-auto w-full min-w-0 max-w-8xl px-4 pb-5 pt-2 md:px-6 md:pb-6 md:pt-2.5 lg:px-8">
         {/* Desktop: 3 + 2 card grid */}
-        <div className="mt-8 hidden gap-4 md:mt-10 md:grid md:grid-cols-3">
+        <div className="hidden gap-3 md:grid md:grid-cols-3">
           <DataPanel block={data.engines} isDark={isDark}>
             <EnginesTable data={data.engines} isDark={isDark} />
           </DataPanel>
@@ -391,7 +448,7 @@ export default function HomeSec10({ data }) {
           </DataPanel>
         </div>
 
-        <div className="mt-4 hidden gap-4 md:grid md:grid-cols-2">
+        <div className="mt-3 hidden gap-3 md:grid md:grid-cols-2">
           <DataPanel block={data.failures} isDark={isDark}>
             <FailuresTable data={data.failures} isDark={isDark} />
           </DataPanel>
@@ -405,7 +462,7 @@ export default function HomeSec10({ data }) {
         </div>
 
         {/* Mobile: keep existing accordion pattern for top 3; panels for failures + live feed */}
-        <div className="mt-8 grid gap-3 md:hidden">
+        <div className="grid gap-2.5 md:hidden">
           <MobileAccordion block={data.engines} isDark={isDark}>
             <EnginesTable data={data.engines} isDark={isDark} />
           </MobileAccordion>
@@ -416,7 +473,7 @@ export default function HomeSec10({ data }) {
             <CostsTable data={data.replacementCosts} isDark={isDark} />
           </MobileAccordion>
 
-          <DataPanel block={data.failures} isDark={isDark} className="mt-1">
+          <DataPanel block={data.failures} isDark={isDark} className="mt-0.5">
             <FailuresTable data={data.failures} isDark={isDark} />
           </DataPanel>
           <DataPanel

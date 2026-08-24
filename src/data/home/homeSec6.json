@@ -1,5 +1,9 @@
 {
   "subHeadline": "The question every Jaguar owner eventually faces, answered honestly rather than sold around. We tell you when to repair, when to replace, and when to scrap - based on real UK data, not estimates.",
+  "headerImage": {
+    "src": "/home-image/sec2-bg.webp",
+    "alt": "Jaguar ownership economics"
+  },
   "matrix": {
     "columns": [
       { "label": "MODEL & ENGINE", "icon": "vehicle" },

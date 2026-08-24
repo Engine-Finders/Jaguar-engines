@@ -20,7 +20,7 @@ function cleanText(value = "") {
 function unlinkHtml(value = "") {
   return cleanText(value).replace(
     /<a\b[^>]*>([\s\S]*?)<\/a>/gi,
-    '<span class="font-semibold text-[var(--color-chrome-bright)]">$1</span>'
+    '<span class="text-[var(--color-chrome-bright)]">$1</span>'
   );
 }
 
@@ -55,7 +55,7 @@ function CentreCard({ item, isDark }) {
       </h3>
 
       <p
-        className={`relative z-[1] mt-2 flex-1 text-[0.74rem] leading-[1.4] md:text-[0.78rem] ${
+        className={`relative z-[1] mt-2 flex-1 text-[0.74rem] font-normal leading-[1.4] md:text-[0.78rem] ${
           isDark ? "text-white/65" : "text-[var(--color-text-muted)]"
         }`}
         dangerouslySetInnerHTML={{ __html: unlinkHtml(item.description) }}
@@ -104,7 +104,7 @@ function DataNote({ note, isDark }) {
 
   return (
     <div
-      className={`mt-4 flex items-center gap-2.5 rounded-xl border px-3 py-2.5 md:mt-5 md:px-3.5 md:py-2.5 ${
+      className={`mt-3 flex items-center gap-2.5 rounded-xl border px-3 py-2.5 md:mt-3.5 md:px-3.5 md:py-2.5 ${
         isDark
           ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
           : "border-[#e8e8e6] bg-[#f3f3f2]"
@@ -129,11 +129,12 @@ export default function HomeSec8({ data }) {
     alt: "Jaguar knowledge centres",
   };
   const centres = data.centres || [];
+  const sectionBg = "bg-[var(--color-page)]";
 
   return (
-    <section className={`overflow-x-hidden ${isDark ? "bg-[var(--color-page)]" : "bg-[#f8f8f7]"}`}>
+    <section className={`overflow-x-hidden ${sectionBg}`}>
       {/* Header — same pattern as Sec2 */}
-      <div className="relative overflow-hidden bg-[var(--color-page)]">
+      <div className={`relative overflow-hidden ${sectionBg}`}>
         <div className="absolute inset-y-0 right-0 w-[62%] md:w-[48%]">
           <Image
             src={headerImage.src}
@@ -151,7 +152,7 @@ export default function HomeSec8({ data }) {
           />
         </div>
 
-        <div className="relative mx-auto w-full max-w-8xl px-4 py-5 md:px-6 md:py-7 lg:px-8">
+        <div className="relative mx-auto w-full max-w-8xl px-4 pb-3 pt-5 md:px-6 md:pb-3.5 md:pt-7 lg:px-8">
           <div className="max-w-[620px]">
             <p
               className={`text-[0.64rem] font-bold uppercase tracking-[0.14em] ${
@@ -172,7 +173,7 @@ export default function HomeSec8({ data }) {
               <MStripe />
             </div>
             <p
-              className={`mt-2.5 max-w-[540px] text-[0.86rem] leading-[1.4] md:text-[0.95rem] ${
+              className={`mt-2 max-w-[540px] text-[0.86rem] leading-[1.4] md:text-[0.95rem] ${
                 isDark ? "text-white/80" : "text-[var(--color-text-muted)]"
               }`}
             >
@@ -182,7 +183,7 @@ export default function HomeSec8({ data }) {
         </div>
       </div>
 
-      <div className="mx-auto w-full min-w-0 max-w-8xl px-4 py-4 md:px-6 md:py-5 lg:px-8">
+      <div className="mx-auto w-full min-w-0 max-w-8xl px-4 pb-5 pt-2 md:px-6 md:pb-6 md:pt-2.5 lg:px-8">
         <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:grid-cols-4 lg:gap-3">
           {centres.map((item) => (
             <CentreCard key={item.id} item={item} isDark={isDark} />

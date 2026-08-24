@@ -2,13 +2,15 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
 
 const ROW_IMAGE = "/home-image/right.webp";
 const ICON_LG = "h-12 w-12 md:h-14 md:w-14";
-const ICON_MD = "h-8 w-8 md:h-9 md:w-9";
-const ICON_CIRCLE = "h-12 w-12 md:h-14 md:w-14";
+const ICON_MD = "h-9 w-9 md:h-10 md:w-10";
+const ICON_XL = "h-11 w-11 md:h-12 md:w-12";
+const ICON_CIRCLE = "h-14 w-14 md:h-16 md:w-16";
 
 function cleanText(value = "") {
   return String(value || "")
@@ -38,14 +40,14 @@ function ModelCard({ model, isDark }) {
         </span>
 
         <h3
-          className={`relative z-[1] pl-7 text-[1rem] font-bold leading-none md:text-[1.05rem] ${
+          className={`relative z-[1] pl-7 text-[1rem] font-medium leading-none md:text-[1.05rem] ${
             isDark ? "text-white" : "text-black"
           }`}
         >
           {model.name}
         </h3>
         <p
-          className={`relative z-[1] mt-1 pl-7 text-[0.7rem] leading-[1.25] md:text-[0.72rem] ${
+          className={`relative z-[1] mt-1 pl-7 text-[0.7rem] font-normal leading-[1.25] md:text-[0.72rem] ${
             isDark ? "text-white/60" : "text-[var(--color-text-muted)]"
           }`}
         >
@@ -64,12 +66,12 @@ function ModelCard({ model, isDark }) {
       </div>
 
       <div
-        className={`mt-auto flex items-center gap-1.5 border-t px-2.5 py-2 md:gap-2 md:px-3 md:py-2 ${
-          isDark ? "border-[var(--color-border)] bg-white/[0.03]" : "border-[#ececeb] bg-[#f3f3f2]"
+        className={`mt-auto flex items-center justify-center gap-1.5 border-t px-2.5 py-2 md:gap-2 md:px-3 md:py-2 ${
+          isDark ? "border-[var(--color-border)] bg-white/[0.03]" : "border-[#ececeb] bg-[#f6f6f5]"
         }`}
       >
         <HomeIcon name={model.verdict?.icon || "safe-buy"} isDark={false} className={`${ICON_MD} shrink-0`} />
-        <span className={`text-[0.74rem] font-semibold leading-tight md:text-[0.78rem] ${isDark ? "text-white" : "text-black"}`}>
+        <span className={`text-center text-[0.74rem] font-medium leading-tight md:text-[0.78rem] ${isDark ? "text-white" : "text-black"}`}>
           {model.verdict?.label}
         </span>
       </div>
@@ -80,15 +82,16 @@ function ModelCard({ model, isDark }) {
 function CategoryBlock({ category, isDark }) {
   return (
     <div>
-      <div className="mb-2 flex items-center gap-2 md:mb-2.5">
+      <div className="mb-2 flex items-center gap-2.5 md:mb-2.5 md:gap-3">
         <HomeIcon name={category.icon || "vehicle"} isDark={isDark} className={ICON_LG} />
         <p
-          className={`text-[0.68rem] font-bold uppercase tracking-[0.12em] ${
+          className={`shrink-0 text-[0.68rem] font-bold uppercase tracking-[0.12em] ${
             isDark ? "text-white/70" : "text-[var(--color-text-muted)]"
           }`}
         >
           {category.label}
         </p>
+        <span className={`h-px flex-1 ${isDark ? "bg-white/18" : "bg-[#d8d8d6]"}`} />
       </div>
 
       <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-5 md:gap-2.5">
@@ -111,7 +114,7 @@ function ExampleVerdict({ data, isDark }) {
           : "border-[#e8e8e6] bg-[#f3f3f2]"
       }`}
     >
-      <div className="grid gap-4 p-4 md:grid-cols-[minmax(180px,0.85fr)_minmax(200px,1fr)_minmax(260px,1.25fr)] md:items-center md:gap-4 md:p-5 lg:gap-5">
+      <div className="grid gap-4 p-4 md:grid-cols-[minmax(180px,0.85fr)_minmax(240px,1.1fr)_minmax(260px,1.25fr)] md:items-center md:gap-4 md:p-5 lg:gap-5">
         {/* Left */}
         <div>
           <p
@@ -129,17 +132,17 @@ function ExampleVerdict({ data, isDark }) {
             {data.model}
           </h3>
 
-          <ul className="mt-3 grid gap-2.5 md:mt-3.5 md:gap-2.5">
+          <ul className="mt-3 grid gap-3 md:mt-3.5 md:gap-3">
             {(data.highlights || []).map((item) => (
-              <li key={item.title} className="flex items-start gap-2.5">
+              <li key={item.title} className="flex items-start gap-3">
                 <span
                   className={`mt-0.5 flex ${ICON_CIRCLE} shrink-0 items-center justify-center rounded-full ${
                     isDark ? "bg-white/10" : "bg-white"
                   }`}
                 >
-                  <HomeIcon name={item.icon} isDark={false} className={ICON_MD} />
+                  <HomeIcon name={item.icon} isDark={false} className={ICON_XL} />
                 </span>
-                <span className="min-w-0 pt-0.5">
+                <span className="min-w-0 pt-1">
                   <strong className={`block text-[0.84rem] leading-tight md:text-[0.88rem] ${isDark ? "text-white" : "text-black"}`}>
                     {item.title}
                   </strong>
@@ -152,25 +155,25 @@ function ExampleVerdict({ data, isDark }) {
           </ul>
         </div>
 
-        {/* Center image */}
-        <div className="relative mx-auto h-[150px] w-full max-w-[300px] md:h-[180px] lg:h-[190px]">
+        {/* Center image — larger */}
+        <div className="relative mx-auto h-[190px] w-full max-w-[360px] md:h-[230px] lg:h-[250px]">
           <Image
             src={data.image?.src || ROW_IMAGE}
             alt={data.image?.alt || data.model || ""}
             fill
             className="object-contain object-center"
-            sizes="(max-width: 768px) 80vw, 300px"
+            sizes="(max-width: 768px) 85vw, 360px"
           />
         </div>
 
         {/* Right details grid */}
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-x-4 sm:gap-y-3.5">
+        <div className="grid grid-cols-1 gap-3.5 sm:grid-cols-2 sm:gap-x-4 sm:gap-y-4">
           {(data.details || []).map((item) => (
-            <div key={item.title} className="flex items-start gap-2.5">
+            <div key={item.title} className="flex items-start gap-3">
               <span className={`mt-0.5 flex ${ICON_CIRCLE} shrink-0 items-center justify-center rounded-full bg-black`}>
-                <HomeIcon name={item.icon} isDark className={ICON_MD} />
+                <HomeIcon name={item.icon} isDark className={ICON_XL} />
               </span>
-              <div className="min-w-0">
+              <div className="min-w-0 pt-1">
                 <p className={`text-[0.8rem] font-bold leading-tight md:text-[0.84rem] ${isDark ? "text-white" : "text-black"}`}>
                   {item.title}
                 </p>
@@ -201,8 +204,8 @@ function DataNote({ note, isDark }) {
           : "border-[#e8e8e6] bg-[#f3f3f2]"
       }`}
     >
-      <span className={`flex h-9 w-9 shrink-0 items-center justify-center md:h-10 md:w-10`}>
-        <HomeIcon name="info" isDark={isDark} className="h-8 w-8 md:h-9 md:w-9" />
+      <span className="flex h-10 w-10 shrink-0 items-center justify-center md:h-11 md:w-11">
+        <HomeIcon name="info" isDark={isDark} className={ICON_LG} />
       </span>
       <p className={`min-w-0 flex-1 text-[0.72rem] leading-[1.35] md:text-[0.76rem] ${isDark ? "text-white/75" : "text-[var(--color-text-muted)]"}`}>
         <strong className={isDark ? "text-white" : "text-black"}>{note.label}</strong>{" "}
@@ -216,29 +219,66 @@ export default function HomeSec11({ data }) {
   const { theme } = useTheme();
   const isDark = theme === "dark";
   const categories = data.categories || [];
+  const sectionBg = isDark ? "bg-[var(--color-page)]" : "bg-[#ececea]";
+  const headerImage = data.headerImage || {
+    src: "/home-image/sec2-bg.webp",
+    alt: "Jaguar models",
+  };
 
   return (
-    <section className={`overflow-x-hidden ${isDark ? "bg-[var(--color-page)]" : "bg-[#f8f8f7]"}`}>
-      <div className="mx-auto w-full min-w-0 max-w-8xl px-4 pb-4 pt-3 md:px-6 md:pb-5 md:pt-4 lg:px-8">
-        <div className="mx-auto max-w-[720px] text-center">
-          <h2
-            className={`font-serif text-[1.75rem] font-semibold leading-[1.08] md:text-[2.35rem] md:leading-[1.05] ${
-              isDark ? "text-white" : "text-black"
-            }`}
-          >
-            Every Model. Every Generation. Honestly Rated.
-          </h2>
-          <p
-            className={`mx-auto mt-2 max-w-[640px] text-[0.84rem] leading-[1.4] md:mt-2.5 md:text-[0.9rem] ${
-              isDark ? "text-white/75" : "text-[var(--color-text-muted)]"
-            }`}
-          >
-            {cleanText(data.subHeadline)}
-          </p>
-          <div className={`mx-auto mt-2.5 h-px w-12 md:mt-3 ${isDark ? "bg-white/25" : "bg-[#cfcfcd]"}`} />
+    <section className={`overflow-x-hidden ${sectionBg}`}>
+      {/* Header — same pattern as other home sections */}
+      <div className={`relative overflow-hidden ${sectionBg}`}>
+        <div className="absolute inset-y-0 right-0 w-[62%] md:w-[48%]">
+          <Image
+            src={headerImage.src}
+            alt={headerImage.alt || ""}
+            fill
+            className="object-cover object-right"
+            sizes="(max-width: 768px) 62vw, 48vw"
+          />
+          <div
+            className={
+              isDark
+                ? "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(11,12,12,0.82)_34%,rgba(11,12,12,0.18)_100%)]"
+                : "absolute inset-0 bg-[linear-gradient(90deg,#ececea_0%,rgba(236,236,234,0.88)_34%,rgba(236,236,234,0.18)_100%)]"
+            }
+          />
         </div>
 
-        <div className="mt-4 grid gap-5 md:mt-5 md:gap-4">
+        <div className="relative mx-auto w-full max-w-8xl px-4 pb-3 pt-5 md:px-6 md:pb-3.5 md:pt-7 lg:px-8">
+          <div className="max-w-[760px]">
+            <p
+              className={`text-[0.64rem] font-bold uppercase tracking-[0.14em] ${
+                isDark ? "text-white/55" : "text-[var(--color-text-muted)]"
+              }`}
+            >
+              Every Model
+            </p>
+            <h2
+              className={`mt-1.5 font-serif text-[1.55rem] font-semibold leading-[1.05] sm:text-[1.85rem] md:text-[2.35rem] md:leading-[1.02] lg:text-[2.5rem] ${
+                isDark ? "text-white" : "text-black"
+              }`}
+            >
+              Every Model. Every Generation.{" "}
+              <span className="text-[var(--color-chrome-bright)]">Honestly Rated.</span>
+            </h2>
+            <div className="mt-2.5">
+              <MStripe />
+            </div>
+            <p
+              className={`mt-2 max-w-[640px] text-[0.86rem] leading-[1.4] md:text-[0.95rem] ${
+                isDark ? "text-white/80" : "text-[var(--color-text-muted)]"
+              }`}
+            >
+              {cleanText(data.subHeadline)}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="mx-auto w-full min-w-0 max-w-8xl px-4 pb-5 pt-2 md:px-6 md:pb-6 md:pt-2.5 lg:px-8">
+        <div className="grid gap-5 md:gap-4">
           {categories.map((category) => (
             <CategoryBlock key={category.id} category={category} isDark={isDark} />
           ))}

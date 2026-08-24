@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
 
@@ -35,10 +36,12 @@ function stripTags(value = "") {
   return cleanText(value).replace(/<[^>]*>/g, "").trim();
 }
 
-function unlinkHtml(value = "") {
+function unlinkHtml(value = "", { emphasize = true } = {}) {
   return cleanText(value).replace(
     /<a\b[^>]*>([\s\S]*?)<\/a>/gi,
-    '<span class="font-semibold text-[var(--color-chrome-bright)]">$1</span>'
+    emphasize
+      ? '<span class="font-semibold text-[var(--color-chrome-bright)]">$1</span>'
+      : '<span class="font-normal text-[var(--color-chrome-bright)]">$1</span>'
   );
 }
 
@@ -89,8 +92,8 @@ function VerdictCell({ verdict, isDark }) {
         <StatusSvg name={status.icon} className="h-2.5 w-2.5 md:h-3 md:w-3" />
       </span>
       <p
-        className={`min-w-0 text-[0.65rem] leading-[1.3] md:text-[0.78rem] md:leading-[1.35] ${isDark ? "text-white/80" : "text-[var(--color-text)]"}`}
-        dangerouslySetInnerHTML={{ __html: unlinkHtml(verdict?.text || "") }}
+        className={`min-w-0 text-[0.65rem] font-normal leading-[1.3] md:text-[0.78rem] md:leading-[1.35] ${isDark ? "text-white/80" : "text-[var(--color-text)]"}`}
+        dangerouslySetInnerHTML={{ __html: unlinkHtml(verdict?.text || "", { emphasize: false }) }}
       />
     </div>
   );
@@ -159,17 +162,20 @@ function DecisionMatrix({ data, isDark }) {
                 isDark ? "border-[var(--color-border)] bg-white/[0.03]" : "border-[#ececeb] bg-[#f7f7f6]"
               }`}
             >
-              {columns.map((col) => (
-                <div
-                  key={col.label}
-                  className={`flex items-center gap-1.5 text-[0.58rem] font-bold uppercase tracking-[0.05em] md:text-[0.62rem] md:tracking-[0.06em] ${
-                    isDark ? "text-white/65" : "text-[var(--color-text-muted)]"
-                  }`}
-                >
-                  <HomeIcon name={col.icon} isDark={isDark} className="h-5 w-5 shrink-0 md:h-6 md:w-6" />
-                  <span className="leading-tight">{col.label}</span>
-                </div>
-              ))}
+              {columns.map((col) => {
+                const isVerdict = String(col.label || "").toUpperCase() === "VERDICT";
+                return (
+                  <div
+                    key={col.label}
+                    className={`flex items-center gap-1.5 text-[0.58rem] uppercase tracking-[0.05em] md:text-[0.62rem] md:tracking-[0.06em] ${
+                      isVerdict ? "font-normal" : "font-bold"
+                    } ${isDark ? "text-white/65" : "text-[var(--color-text-muted)]"}`}
+                  >
+                    <HomeIcon name={col.icon} isDark={isDark} className="h-5 w-5 shrink-0 md:h-6 md:w-6" />
+                    <span className="leading-tight">{col.label}</span>
+                  </div>
+                );
+              })}
             </div>
 
             <div>
@@ -189,7 +195,7 @@ function RuleCard({ data, isDark }) {
 
   return (
     <div
-      className={`flex h-full min-h-full flex-col items-center rounded-xl border px-5 py-7 text-center md:px-6 md:py-8 ${
+      className={`flex h-full min-h-full flex-col items-center rounded-xl border px-4 py-5 text-center md:px-4 md:py-6 ${
         isDark
           ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
           : "border-[#e8e8e6] bg-white shadow-[0_8px_24px_rgba(16,18,16,0.06)]"
@@ -266,60 +272,65 @@ function DeeperLinks({ links, isDark }) {
   if (!links?.length) return null;
 
   return (
-    <div className="mt-8 md:mt-10">
-      <p
-        className={`mb-2.5 text-[0.68rem] font-bold uppercase tracking-[0.14em] ${
-          isDark ? "text-white/70" : "text-[var(--color-text-muted)]"
-        }`}
-      >
-        Deeper Analysis Links
-      </p>
+    <div className="mt-6 md:mt-7">
+      <div className="mb-2.5 flex items-center gap-2.5 md:mb-3 md:gap-3">
+        <p
+          className={`shrink-0 text-[0.68rem] font-bold uppercase tracking-[0.14em] ${
+            isDark ? "text-white/70" : "text-[var(--color-text-muted)]"
+          }`}
+        >
+          Deeper Analysis Links
+        </p>
+        <span className={`h-px flex-1 ${isDark ? "bg-white/18" : "bg-[#d8d8d6]"}`} />
+      </div>
 
-      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-5 lg:gap-3.5">
-        {links.map((link) => (
-          <Link
-            key={link.id}
-            href={link.href || "#"}
-            className={`relative flex min-h-[168px] flex-col items-center rounded-xl border px-4 pb-5 pt-6 text-center transition ${
-              isDark
-                ? "border-[var(--color-border)] bg-[var(--color-surface-raised)] hover:border-white/25"
-                : "border-[#e8e8e6] bg-white shadow-[0_8px_22px_rgba(16,18,16,0.05)] hover:border-[var(--color-chrome)]"
-            }`}
-          >
-            <span
-              className={`pointer-events-none absolute left-3 top-2 font-serif text-[2.4rem] font-semibold leading-none ${
-                isDark ? "text-white/10" : "text-[#e4e4e2]"
+      <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:grid-cols-5 lg:gap-3">
+        {links.map((link) => {
+          const title = cleanText(link.label).replace(/\s*→\s*$/, "");
+
+          return (
+            <Link
+              key={link.id}
+              href={link.href || "#"}
+              className={`relative flex min-h-[158px] flex-col items-center rounded-xl border px-3 pb-4 pt-5 text-center transition md:px-3.5 md:pb-4 md:pt-5 ${
+                isDark
+                  ? "border-[var(--color-border)] bg-[var(--color-surface-raised)] hover:border-white/25"
+                  : "border-[#e8e8e6] bg-white shadow-[0_8px_22px_rgba(16,18,16,0.05)] hover:border-[var(--color-chrome)]"
               }`}
             >
-              {String(link.id).padStart(2, "0")}
-            </span>
-
-            <span className="relative z-[1] mt-1">
-              <HomeIcon name={link.icon || "link"} isDark={isDark} className="h-11 w-11 md:h-12 md:w-12" />
-            </span>
-
-            <h3
-              className={`relative z-[1] mt-3 text-[0.86rem] font-semibold leading-[1.25] ${
-                isDark ? "text-white" : "text-black"
-              }`}
-            >
-              {cleanText(link.label)}{" "}
-              <span aria-hidden="true" className="inline-block">
-                →
+              <span
+                className={`pointer-events-none absolute left-3 top-2 font-serif text-[2.2rem] font-semibold leading-none ${
+                  isDark ? "text-white/10" : "text-[#e4e4e2]"
+                }`}
+              >
+                {String(link.id).padStart(2, "0")}
               </span>
-            </h3>
 
-            <div className={`my-2.5 h-px w-10 ${isDark ? "bg-white/20" : "bg-[#d8d8d6]"}`} />
+              <span className="relative z-[1] mt-1">
+                <HomeIcon name={link.icon || "link"} isDark={isDark} className="h-11 w-11 md:h-12 md:w-12" />
+              </span>
 
-            <p
-              className={`relative z-[1] text-[0.72rem] leading-[1.4] ${
-                isDark ? "text-white/65" : "text-[var(--color-text-muted)]"
-              }`}
-            >
-              {cleanText(link.purpose)}
-            </p>
-          </Link>
-        ))}
+              <h3
+                className={`relative z-[1] mt-2.5 mx-auto max-w-[10rem] text-balance text-[0.82rem] font-medium leading-[1.3] md:max-w-[10.5rem] md:text-[0.86rem] ${
+                  isDark ? "text-white" : "text-black"
+                }`}
+              >
+                {title}
+                {"\u00A0→"}
+              </h3>
+
+              <div className={`my-2 h-px w-10 ${isDark ? "bg-white/20" : "bg-[#d8d8d6]"}`} />
+
+              <p
+                className={`relative z-[1] text-[0.72rem] font-normal leading-[1.4] ${
+                  isDark ? "text-white/65" : "text-[var(--color-text-muted)]"
+                }`}
+              >
+                {cleanText(link.purpose)}
+              </p>
+            </Link>
+          );
+        })}
       </div>
     </div>
   );
@@ -330,7 +341,7 @@ function DataNote({ note, isDark }) {
 
   return (
     <div
-      className={`mt-6 flex items-start gap-3 rounded-xl border px-4 py-4 md:mt-8 md:items-center md:px-5 ${
+      className={`mt-4 flex items-start gap-3 rounded-xl border px-3.5 py-3 md:mt-5 md:items-center md:px-4 md:py-2.5 ${
         isDark
           ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
           : "border-[#e8e8e6] bg-white"
@@ -350,30 +361,66 @@ function DataNote({ note, isDark }) {
 export default function HomeSec6({ data }) {
   const { theme } = useTheme();
   const isDark = theme === "dark";
+  const sectionBg = "bg-[var(--color-page)]";
+  const headerImage = data.headerImage || {
+    src: "/home-image/sec2-bg.webp",
+    alt: "Jaguar ownership economics",
+  };
 
   return (
-    <section className={`overflow-x-hidden ${isDark ? "bg-[var(--color-page)]" : "bg-[#f8f8f7]"}`}>
-      <div className="mx-auto w-full min-w-0 max-w-8xl px-4 py-8 md:px-6 md:py-12 lg:px-8">
-        {/* Centered header — matches ref */}
-        <div className="mx-auto max-w-[720px] text-center">
-          <h2
-            className={`font-serif text-[2rem] font-semibold leading-[1.05] md:text-[2.75rem] md:leading-[1.02] ${
-              isDark ? "text-white" : "text-black"
-            }`}
-          >
-            The Ownership Economics Centre
-          </h2>
-          <p
-            className={`mx-auto mt-3 max-w-[620px] text-[0.88rem] leading-[1.5] md:mt-4 md:text-[0.98rem] ${
-              isDark ? "text-white/75" : "text-[var(--color-text-muted)]"
-            }`}
-            dangerouslySetInnerHTML={{ __html: cleanText(data.subHeadline) }}
+    <section className={`overflow-x-hidden ${sectionBg}`}>
+      {/* Header — same pattern as other home sections */}
+      <div className={`relative overflow-hidden ${sectionBg}`}>
+        <div className="absolute inset-y-0 right-0 w-[62%] md:w-[48%]">
+          <Image
+            src={headerImage.src}
+            alt={headerImage.alt || ""}
+            fill
+            className="object-cover object-right"
+            sizes="(max-width: 768px) 62vw, 48vw"
           />
-          <div className={`mx-auto mt-4 h-px w-14 md:mt-5 ${isDark ? "bg-white/25" : "bg-[#cfcfcd]"}`} />
+          <div
+            className={
+              isDark
+                ? "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(11,12,12,0.82)_34%,rgba(11,12,12,0.18)_100%)]"
+                : "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(243,243,241,0.88)_34%,rgba(243,243,241,0.18)_100%)]"
+            }
+          />
         </div>
 
+        <div className="relative mx-auto w-full max-w-8xl px-4 pb-3 pt-5 md:px-6 md:pb-3.5 md:pt-7 lg:px-8">
+          <div className="max-w-[720px]">
+            <p
+              className={`text-[0.64rem] font-bold uppercase tracking-[0.14em] ${
+                isDark ? "text-white/55" : "text-[var(--color-text-muted)]"
+              }`}
+            >
+              Ownership Economics
+            </p>
+            <h2
+              className={`mt-1.5 whitespace-nowrap font-serif text-[1.65rem] font-semibold leading-[0.98] sm:text-[2rem] md:text-[2.55rem] md:leading-[0.96] lg:text-[2.75rem] ${
+                isDark ? "text-white" : "text-black"
+              }`}
+            >
+              The Ownership{" "}
+              <span className="text-[var(--color-chrome-bright)]">Economics Centre</span>
+            </h2>
+            <div className="mt-2.5">
+              <MStripe />
+            </div>
+            <p
+              className={`mt-2 max-w-[620px] text-[0.86rem] leading-[1.4] md:text-[0.98rem] ${
+                isDark ? "text-white/80" : "text-[var(--color-text-muted)]"
+              }`}
+              dangerouslySetInnerHTML={{ __html: cleanText(data.subHeadline) }}
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className="mx-auto w-full min-w-0 max-w-8xl px-4 pb-5 pt-2 md:px-6 md:pb-6 md:pt-2.5 lg:px-8">
         {/* Matrix + Rule of Thumb */}
-        <div className="mt-8 grid min-w-0 gap-5 md:mt-10 md:grid-cols-[minmax(0,1.7fr)_minmax(260px,0.7fr)] md:items-stretch md:gap-5">
+        <div className="grid min-w-0 gap-4 md:grid-cols-[minmax(0,1fr)_minmax(220px,270px)] md:items-stretch md:gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(230px,280px)]">
           <DecisionMatrix data={data} isDark={isDark} />
           <div className="flex min-h-0 flex-col">
             <div className="mb-2.5 hidden h-[0.68rem] md:block" aria-hidden="true" />

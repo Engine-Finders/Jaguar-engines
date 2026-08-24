@@ -23,15 +23,15 @@ function ComparisonCard({ item, isDark }) {
 
   return (
     <article
-      className={`relative flex h-full flex-col overflow-hidden rounded-2xl border ${
+      className={`relative flex h-full flex-col overflow-hidden rounded-xl border ${
         isDark
           ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
-          : "border-transparent bg-white shadow-[0_10px_28px_rgba(16,18,16,0.08)]"
+          : "border-[#e8e8e6] bg-white shadow-[0_8px_20px_rgba(16,18,16,0.06)]"
       }`}
     >
       {/* Number tab — top left */}
       <span
-        className={`absolute left-0 top-0 z-20 flex h-[26px] min-w-[34px] items-center justify-center rounded-br-[10px] px-2.5 font-serif text-[0.8rem] font-semibold leading-none ${
+        className={`absolute left-0 top-0 z-20 flex h-[22px] min-w-[30px] items-center justify-center rounded-br-[8px] px-2 font-serif text-[0.74rem] font-semibold leading-none ${
           isDark ? "bg-[var(--color-chrome)] text-[var(--color-page)]" : "bg-black text-white"
         }`}
       >
@@ -39,9 +39,9 @@ function ComparisonCard({ item, isDark }) {
       </span>
 
       {/* Visual half — labels + cars + center line */}
-      <div className="relative px-4 pb-1 pt-9 md:px-5 md:pt-10">
+      <div className="relative px-3 pb-0.5 pt-7 md:px-3.5 md:pt-8">
         <div
-          className={`pointer-events-none absolute bottom-1 left-1/2 top-9 w-px -translate-x-1/2 md:top-10 ${
+          className={`pointer-events-none absolute bottom-0.5 left-1/2 top-7 w-px -translate-x-1/2 md:top-8 ${
             isDark ? "bg-white/20" : "bg-[#d8d8d6]"
           }`}
           aria-hidden="true"
@@ -50,21 +50,21 @@ function ComparisonCard({ item, isDark }) {
         {/* Labels row with vs on the line */}
         <div className="relative grid grid-cols-2">
           <p
-            className={`pr-5 text-center font-serif text-[0.95rem] font-medium leading-none md:pr-6 md:text-[1.05rem] ${
+            className={`pr-5 text-center font-serif text-[0.95rem] font-bold leading-none md:pr-6 md:text-[1.05rem] ${
               isDark ? "text-white" : "text-black"
             }`}
           >
             {left.label}
           </p>
           <p
-            className={`pl-5 text-center font-serif text-[0.95rem] font-medium leading-none md:pl-6 md:text-[1.05rem] ${
+            className={`pl-5 text-center font-serif text-[0.95rem] font-bold leading-none md:pl-6 md:text-[1.05rem] ${
               isDark ? "text-white" : "text-black"
             }`}
           >
             {right.label}
           </p>
           <span
-            className={`absolute left-1/2 top-1/2 z-10 flex h-[22px] w-[22px] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full text-[0.62rem] font-semibold lowercase leading-none md:h-6 md:w-6 ${
+            className={`absolute left-1/2 top-1/2 z-10 flex h-7 w-7 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full text-[0.72rem] font-bold lowercase leading-none md:h-8 md:w-8 md:text-[0.8rem] ${
               isDark ? "bg-[var(--color-chrome)] text-[var(--color-page)]" : "bg-black text-white"
             }`}
           >
@@ -72,8 +72,8 @@ function ComparisonCard({ item, isDark }) {
           </span>
         </div>
 
-        <div className="relative mt-3 grid grid-cols-2 md:mt-3.5">
-          <div className="relative h-[92px] pr-3 md:h-[108px] md:pr-4">
+        <div className="relative mt-2 grid grid-cols-2 md:mt-2.5">
+          <div className="relative h-[80px] pr-2.5 md:h-[96px] md:pr-3">
             <Image
               src={LEFT_IMAGE}
               alt={left.image?.alt || left.label || ""}
@@ -82,7 +82,7 @@ function ComparisonCard({ item, isDark }) {
               sizes="(max-width: 768px) 42vw, 180px"
             />
           </div>
-          <div className="relative h-[92px] pl-3 md:h-[108px] md:pl-4">
+          <div className="relative h-[80px] pl-2.5 md:h-[96px] md:pl-3">
             <Image
               src={RIGHT_IMAGE}
               alt={right.image?.alt || right.label || ""}
@@ -95,25 +95,25 @@ function ComparisonCard({ item, isDark }) {
       </div>
 
       {/* Info half */}
-      <div className="flex flex-1 flex-col px-4 pb-4 pt-3 md:px-5 md:pb-5 md:pt-3.5">
-        <div className="flex items-start gap-3">
+      <div className="flex flex-1 flex-col px-3 pb-3 pt-2 md:px-3.5 md:pb-3.5 md:pt-2.5">
+        <div className="flex items-start gap-2.5">
           <span
-            className={`mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${
+            className={`mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full md:h-10 md:w-10 ${
               isDark ? "bg-white/10" : "bg-[#ececeb]"
             }`}
           >
-            <HomeIcon name={item.icon} isDark={isDark} className="h-6 w-6" />
+            <HomeIcon name={item.icon} isDark={isDark} className="h-6 w-6 md:h-7 md:w-7" />
           </span>
           <div className="min-w-0 flex-1">
             <h3
-              className={`text-[0.98rem] font-bold leading-tight md:text-[1.08rem] ${
+              className={`text-[0.92rem] font-bold leading-tight md:text-[1rem] ${
                 isDark ? "text-white" : "text-black"
               }`}
             >
               {item.title}
             </h3>
             <p
-              className={`mt-1 text-[0.78rem] leading-[1.4] md:text-[0.84rem] ${
+              className={`mt-1 text-[0.74rem] leading-[1.35] md:text-[0.8rem] ${
                 isDark ? "text-white/72" : "text-[#5c5c5a]"
               }`}
               dangerouslySetInnerHTML={{ __html: item.preview }}
@@ -121,10 +121,10 @@ function ComparisonCard({ item, isDark }) {
           </div>
         </div>
 
-        <div className="mt-auto flex justify-end pt-3">
+        <div className="mt-auto flex justify-end pt-2">
           <Link
             href={item.link?.href || "#"}
-            className={`inline-flex items-center gap-1.5 text-[0.82rem] font-semibold md:text-[0.88rem] ${
+            className={`inline-flex items-center gap-1.5 text-[0.78rem] font-semibold md:text-[0.84rem] ${
               isDark ? "text-white" : "text-black"
             }`}
           >
@@ -142,22 +142,19 @@ function DataNote({ note, isDark }) {
 
   return (
     <div
-      className={`mt-4 flex items-start gap-3 rounded-xl border px-3.5 py-3.5 md:mt-6 md:items-center md:px-5 ${
+      className={`mt-3 flex items-center gap-2.5 rounded-xl border px-3 py-2.5 md:mt-3.5 md:px-3.5 md:py-2.5 ${
         isDark
           ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
-          : "border-[var(--color-border)] bg-[var(--color-page-soft)]"
+          : "border-[#e8e8e6] bg-white"
       }`}
     >
-      <span className="flex h-9 w-9 shrink-0 items-center justify-center">
-        <HomeIcon name="info" isDark={isDark} className="h-8 w-8" />
+      <span className="flex h-9 w-9 shrink-0 items-center justify-center md:h-10 md:w-10">
+        <HomeIcon name="info" isDark={isDark} className="h-8 w-8 md:h-9 md:w-9" />
       </span>
-      <p className={`min-w-0 flex-1 text-[0.78rem] leading-[1.4] md:text-[0.86rem] ${isDark ? "text-white/78" : "text-[var(--color-text-muted)]"}`}>
+      <p className={`min-w-0 flex-1 text-[0.72rem] leading-[1.35] md:text-[0.78rem] ${isDark ? "text-white/78" : "text-[var(--color-text-muted)]"}`}>
         <strong className={isDark ? "text-white" : "text-[var(--color-text)]"}>{note.label}</strong>{" "}
         <span dangerouslySetInnerHTML={{ __html: note.text }} />
       </p>
-      <span className={`hidden shrink-0 text-[var(--color-chrome)] md:block`}>
-        <HomeIcon name="info" isDark={isDark} className="h-10 w-10 opacity-40" />
-      </span>
     </div>
   );
 }
@@ -172,11 +169,12 @@ export default function HomeSec5({ data }) {
       alt: "Jaguar comparison hub",
     };
   const comparisons = data.comparisons || [];
+  const sectionBg = isDark ? "bg-[var(--color-page)]" : "bg-[#ececea]";
 
   return (
-    <section className="relative overflow-hidden bg-[var(--color-page)]">
-      {/* Header — same as Sec2 */}
-      <div className="relative overflow-hidden">
+    <section className={`relative overflow-hidden ${sectionBg}`}>
+      {/* Header — same as Sec2/Sec3 */}
+      <div className={`relative overflow-hidden ${sectionBg}`}>
         <div className="absolute inset-y-0 right-0 w-[58%] md:w-[46%]">
           <Image
             src={heroImage.src}
@@ -189,26 +187,33 @@ export default function HomeSec5({ data }) {
             className={
               isDark
                 ? "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(11,12,12,0.82)_34%,rgba(11,12,12,0.18)_100%)]"
-                : "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(243,243,241,0.88)_34%,rgba(243,243,241,0.18)_100%)]"
+                : "absolute inset-0 bg-[linear-gradient(90deg,#ececea_0%,rgba(236,236,234,0.88)_34%,rgba(236,236,234,0.18)_100%)]"
             }
           />
         </div>
 
-        <div className="relative mx-auto w-full max-w-8xl px-3 py-6 md:px-6 md:py-10 lg:px-8">
+        <div className="relative mx-auto w-full max-w-8xl px-3 pb-3 pt-5 md:px-6 md:pb-3.5 md:pt-8 lg:px-8">
           <div className="max-w-[720px]">
+            <p
+              className={`text-[0.64rem] font-bold uppercase tracking-[0.14em] ${
+                isDark ? "text-white/55" : "text-[var(--color-text-muted)]"
+              }`}
+            >
+              Comparison Hub
+            </p>
             <h2
-              className={`text-[2.1rem] font-bold leading-[0.98] md:text-[3.2rem] md:leading-[0.96] ${
+              className={`mt-1.5 text-[2.1rem] font-bold leading-[0.98] md:text-[3.2rem] md:leading-[0.96] ${
                 isDark ? "text-white" : "text-[var(--color-text)]"
               }`}
             >
               Comparison Hub —{" "}
               <span className="text-[var(--color-chrome-bright)]">Head-to-Head Verdicts</span>
             </h2>
-            <div className="mt-3">
+            <div className="mt-2.5">
               <MStripe />
             </div>
             <p
-              className={`mt-3 max-w-[640px] text-[0.88rem] leading-[1.4] md:text-[1.02rem] md:leading-[1.45] ${
+              className={`mt-2 max-w-[640px] text-[0.88rem] leading-[1.4] md:text-[1.02rem] md:leading-[1.45] ${
                 isDark ? "text-white/80" : "text-[var(--color-text-muted)]"
               }`}
               dangerouslySetInnerHTML={{ __html: data.subHeadline }}
@@ -217,16 +222,14 @@ export default function HomeSec5({ data }) {
         </div>
       </div>
 
-      <div className="bg-[var(--color-page-soft)]">
-        <div className="mx-auto w-full max-w-8xl px-3 py-4 md:px-6 md:py-8 lg:px-8">
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-3 lg:grid-cols-3 lg:gap-4">
-            {comparisons.map((item) => (
-              <ComparisonCard key={item.id} item={item} isDark={isDark} />
-            ))}
-          </div>
-
-          <DataNote note={data.dataNote} isDark={isDark} />
+      <div className="mx-auto w-full max-w-8xl px-3 pb-5 pt-2 md:px-6 md:pb-6 md:pt-2.5 lg:px-8">
+        <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 sm:gap-2.5 lg:grid-cols-3 lg:gap-3">
+          {comparisons.map((item) => (
+            <ComparisonCard key={item.id} item={item} isDark={isDark} />
+          ))}
         </div>
+
+        <DataNote note={data.dataNote} isDark={isDark} />
       </div>
     </section>
   );

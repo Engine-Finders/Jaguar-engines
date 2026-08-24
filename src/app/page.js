@@ -59,11 +59,13 @@ export default function Home() {
       <HomeSec2 data={homeSec2Data} />
       <HomeSec3 data={homeSec3Data} />
       <HomeSec4 data={homeSec4Data} />
+      <HomeSec9 data={homeSec9Data} />
+      <HomeSec8 data={homeSec8Data} />
       <HomeSec5 data={homeSec5Data} />
+
       <HomeSec6 data={homeSec6Data} />
       {/* <HomeSec7 data={homeSec7Data} /> */}
-      <HomeSec8 data={homeSec8Data} />
-      <HomeSec9 data={homeSec9Data} />
+
       <HomeSec10 data={homeSec10Data} />
       <HomeSec11 data={homeSec11Data} />
       <HomeSec12 data={homeSec12Data} />

@@ -120,7 +120,8 @@
     ]
   },
   "dataNote": {
-    "label": "DATA NOTE:",
-    "text": "Engine Failures are backed by [EM-VERIFIED] enquiry, mileage, and cost data. Suspension, Drivetrain, and Electrical categories are built on documented patterns and specialist/owner-forum sources rather than proprietary volume data."
+    "label": "Data Note:",
+    "text": "Engine Failures are backed by [EM-VERIFIED] enquiry, mileage, and cost data. Suspension, Drivetrain, and Electrical categories are built on documented patterns and specialist/owner-forum sources rather than proprietary volume data.",
+    "badge": "EM-VERIFIED"
   }
 }

@@ -271,7 +271,7 @@ function CategoryHeader({ label, icon }) {
   const isDark = theme === "dark";
 
   return (
-    <div className="mb-3 flex items-center gap-2.5 md:mb-4 md:gap-3">
+    <div className="mb-2 flex items-center gap-2.5 md:mb-2.5 md:gap-3">
       <span
         className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full border ${
           isDark ? "border-white/20 text-white/85" : "border-[var(--color-chrome)] text-[var(--color-text-muted)]"
@@ -303,7 +303,7 @@ function DesktopCard({ item }) {
   return (
     <Link
       href={href}
-      className={`group flex h-full flex-col items-center rounded-xl border px-3 pb-3.5 pt-4 text-center transition ${
+      className={`group flex h-full flex-col items-center rounded-xl border px-3 pb-0 pt-3.5 text-center transition ${
         isDark
           ? "border-white/12 bg-[rgba(18,18,18,0.62)] shadow-[0_12px_28px_rgba(0,0,0,0.35)] backdrop-blur-md hover:border-white/22"
           : "border-[var(--color-border)] bg-white shadow-[0_8px_22px_rgba(16,18,16,0.08)] hover:border-[var(--color-chrome)]"
@@ -317,7 +317,7 @@ function DesktopCard({ item }) {
         <p className="mt-1.5 text-[0.78rem] text-white/65">{item.generations}</p>
       ) : null}
 
-      <div className="relative mt-3 h-[120px] w-full overflow-hidden rounded-md md:h-[140px]">
+      <div className="relative mt-2.5 h-[120px] w-full overflow-hidden rounded-md md:h-[140px]">
         <Image
           src="/home-image/right.webp"
           alt={item.image.alt || name}
@@ -328,10 +328,15 @@ function DesktopCard({ item }) {
       </div>
 
       {!isDark ? (
-        <p className="mt-2 text-[0.78rem] text-[var(--color-text-soft)]">{item.generations}</p>
+        <p className="mt-1.5 text-[0.78rem] text-[var(--color-text-soft)]">{item.generations}</p>
       ) : null}
 
-      <div className="mt-2.5">
+      <span
+        aria-hidden="true"
+        className={`mt-1.5 h-px w-full ${isDark ? "bg-white/10" : "bg-[#e8e8e6]"}`}
+      />
+
+      <div className="mt-1.5">
         <VerdictBadge verdict={item.verdict} variant={isDark ? "pill" : "plain"} />
       </div>
     </Link>
@@ -458,12 +463,12 @@ export default function HomeSec2({ data }) {
         </div>
       </div>
 
-      {/* Model grid / list */}
-      <div className={isDark ? "bg-[var(--color-page-soft)]" : "bg-[#f8f8f7]"}>
-        <div className="mx-auto w-full max-w-8xl px-4 py-5 md:px-6 md:py-8 lg:px-8">
+      {/* Model grid / list — same bg as header */}
+      <div>
+        <div className="mx-auto w-full max-w-8xl px-4 py-5 md:px-6 md:py-7 lg:px-8">
           <div className="hidden md:block">
             {categories.map((category) => (
-              <div key={category.id} className="mb-7 last:mb-0">
+              <div key={category.id} className="mb-4 last:mb-0 md:mb-5">
                 <CategoryHeader label={category.label} icon={category.icon} />
                 <div className="grid grid-cols-5 gap-3 lg:gap-4">
                   {(category.models || []).map((item) => (
@@ -477,7 +482,7 @@ export default function HomeSec2({ data }) {
 
           <div className="md:hidden">
             {categories.map((category) => (
-              <div key={category.id} className="mb-5 last:mb-0">
+              <div key={category.id} className="mb-3.5 last:mb-0">
                 <CategoryHeader label={category.label} icon={category.icon} />
                 <div className="flex flex-col gap-2.5">
                   {(category.models || []).map((item) => (

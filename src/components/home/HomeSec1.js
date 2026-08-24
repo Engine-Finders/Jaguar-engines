@@ -16,7 +16,7 @@ const trustStripIconKeys = [
 const trustBadgeIconKeys = [
   "genuine-failure-data",
   "repair-vs-replace",
-  "vetted-specialist",
+  "expert-verified",
   "independent",
 ];
 
@@ -136,14 +136,21 @@ export default function HomeSec1({ data }) {
       <div className="relative mx-auto flex w-full max-w-8xl flex-col px-4 pb-6 pt-8 md:min-h-[640px] md:justify-center md:px-6 md:py-10 lg:px-8">
         <div className="relative flex w-full max-w-[720px] flex-col gap-3.5 md:gap-4">
           {/* H1 hardcoded - two lines like ref */}
+          <p
+            className={`text-[0.73rem] font-bold uppercase tracking-[0.14em] ${
+              isDark ? "text-white/55" : "text-[var(--color-text-muted)]"
+            }`}
+          >
+            The UK&apos;s Most
+          </p>
           <h1
             className={`max-w-[660px] text-[32px] font-bold leading-[0.98] tracking-normal md:max-w-[720px] md:text-[3.5rem] md:leading-[0.96] lg:text-[4rem] ${
               isDark ? "text-white" : "text-[var(--color-text)]"
             }`}
           >
-            Trusted <span className="text-[var(--color-chrome-bright)]">Jaguar</span>
+            Trusted <span className="text-[#bdbcbd]">Jaguar</span>
             <br />
-            <span className="text-[var(--color-chrome-bright)]">Ownership Guide</span>
+            <span className="text-[#bdbcbd]">Ownership Guide</span>
           </h1>
 
           <MStripe />
@@ -177,8 +184,8 @@ export default function HomeSec1({ data }) {
                     isDark ? "border-white/18" : "border-[var(--color-chrome)]/55"
                   }`}
                 >
-                  <span className="flex h-9 w-9 shrink-0 items-center justify-center md:h-10 md:w-10">
-                    <HomeIcon name={iconKey} isDark={isDark} className="h-8 w-8 md:h-10 md:w-10" />
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center md:h-12 md:w-12">
+                    <HomeIcon name={iconKey} isDark={isDark} className="h-10 w-10 md:h-12 md:w-12" />
                   </span>
                   <span className={`min-w-0 ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
                     {stat.value ? (
@@ -224,8 +231,8 @@ export default function HomeSec1({ data }) {
                     isDark ? "border-white/12" : "border-[var(--color-chrome)]/45"
                   }`}
                 >
-                  <span className={`flex h-8 w-8 shrink-0 items-center justify-center ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
-                    <HomeIcon name={trustBadgeIconKeys[index]} isDark={isDark} className="h-7 w-7" />
+                  <span className={`flex h-12 w-12 shrink-0 items-center justify-center md:h-14 md:w-14 ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+                    <HomeIcon name={trustBadgeIconKeys[index]} isDark={isDark} className="h-11 w-11 md:h-14 md:w-14" />
                   </span>
                   <p
                     className={`min-w-0 text-[0.78rem] leading-[1.3] md:text-[0.82rem] ${
