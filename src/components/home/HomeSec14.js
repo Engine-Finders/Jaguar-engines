@@ -6,7 +6,8 @@ import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
 
-const ICON_LG = "h-10 w-10 md:h-11 md:w-11";
+const ICON_LG = "h-11 w-11 md:h-12 md:w-12";
+const ICON_XL = "h-12 w-12 md:h-14 md:w-14";
 
 function ArrowIcon({ className = "h-4 w-4" }) {
   return (
@@ -27,11 +28,11 @@ function TrustpilotMark({ className = "h-5 w-5" }) {
 function StarBox({ isDark }) {
   return (
     <span
-      className={`flex h-6 w-6 items-center justify-center md:h-7 md:w-7 ${
+      className={`flex h-8 w-8 items-center justify-center md:h-9 md:w-9 ${
         isDark ? "bg-[var(--color-chrome)] text-[var(--color-page)]" : "bg-black text-white"
       }`}
     >
-      <svg aria-hidden="true" viewBox="0 0 24 24" className="h-3.5 w-3.5 md:h-4 md:w-4" fill="currentColor">
+      <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4 md:h-5 md:w-5" fill="currentColor">
         <path d="m12 2.8 2.8 5.8 6.4.9-4.6 4.5 1.1 6.3-5.7-3-5.7 3 1.1-6.3-4.6-4.5 6.4-.9L12 2.8Z" />
       </svg>
     </span>
@@ -93,25 +94,36 @@ export default function HomeSec14({ data }) {
             </p>
 
             {stats.length ? (
-              <ul className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-4 md:mt-6 md:max-w-[560px] md:gap-3">
-                {stats.map((stat) => (
-                  <li key={stat.label} className="flex flex-col items-start gap-2">
-                    <span
-                      className={`flex h-12 w-12 items-center justify-center rounded-full md:h-14 md:w-14 ${
-                        isDark ? "bg-white/10" : "bg-[#ececeb]"
-                      }`}
+              <ul className="mt-5 grid grid-cols-2 md:mt-6 md:max-w-[600px] md:grid-cols-4">
+                {stats.map((stat, index) => {
+                  const borderMobile = index % 2 === 1;
+                  const borderDesktop = index > 0;
+                  const borderColor = isDark ? "border-white/15" : "border-[#d8d8d6]";
+
+                  return (
+                    <li
+                      key={stat.label}
+                      className={`flex flex-col items-center px-2 py-2 text-center md:px-3 ${
+                        borderMobile ? `border-l ${borderColor}` : ""
+                      } ${borderDesktop ? `md:border-l ${borderColor}` : "md:border-l-0"}`}
                     >
-                      <HomeIcon name={stat.icon} isDark={isDark} className={ICON_LG} />
-                    </span>
-                    <span
-                      className={`max-w-[130px] text-[0.74rem] leading-[1.3] md:text-[0.78rem] ${
-                        isDark ? "text-white/80" : "text-[var(--color-text)]"
-                      }`}
-                    >
-                      {stat.label}
-                    </span>
-                  </li>
-                ))}
+                      <span
+                        className={`flex h-12 w-12 items-center justify-center rounded-full md:h-14 md:w-14 ${
+                          isDark ? "bg-white/10" : "bg-[#ececeb]"
+                        }`}
+                      >
+                        <HomeIcon name={stat.icon} isDark={isDark} className={ICON_XL} />
+                      </span>
+                      <span
+                        className={`mt-2 max-w-[130px] text-center text-[0.74rem] leading-[1.3] md:text-[0.78rem] ${
+                          isDark ? "text-white/80" : "text-[var(--color-text)]"
+                        }`}
+                      >
+                        {stat.label}
+                      </span>
+                    </li>
+                  );
+                })}
               </ul>
             ) : null}
           </div>
@@ -179,18 +191,18 @@ export default function HomeSec14({ data }) {
                   : "border-[#e8e8e6] bg-white shadow-[0_8px_22px_rgba(16,18,16,0.04)]"
               }`}
             >
-              <div className={`flex items-center gap-1.5 text-[1.05rem] font-bold md:text-[1.15rem] ${isDark ? "text-white" : "text-black"}`}>
-                <TrustpilotMark className="h-5 w-5 md:h-6 md:w-6" />
+              <div className={`flex items-center gap-2 text-[1.25rem] font-bold md:gap-2.5 md:text-[1.45rem] ${isDark ? "text-white" : "text-black"}`}>
+                <TrustpilotMark className="h-7 w-7 md:h-8 md:w-8" />
                 <span>{review.brand}</span>
               </div>
 
-              <div className="mt-3 flex gap-0.5 md:mt-3.5">
+              <div className="mt-3.5 flex gap-1 md:mt-4">
                 {Array.from({ length: review.stars || 5 }).map((_, index) => (
                   <StarBox key={index} isDark={isDark} />
                 ))}
               </div>
 
-              <p className={`mt-2.5 text-[0.82rem] md:text-[0.88rem] ${isDark ? "text-white/80" : "text-black"}`}>
+              <p className={`mt-3 text-[0.9rem] md:text-[1rem] ${isDark ? "text-white/80" : "text-black"}`}>
                 {review.score}
               </p>
 

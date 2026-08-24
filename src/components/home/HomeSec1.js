@@ -43,30 +43,47 @@ function TrustLabel({ label }) {
   if (label === "Part of Engine Finders") {
     return (
       <>
-        <span className="block md:inline">Part of</span>
-        <span className="block md:ml-1 md:inline">Engine Finders</span>
+        <span className="block">Part of</span>
+        <span className="block">Engine Finders</span>
       </>
     );
   }
 
   if (label === "Real Enquiries") {
-    return (
-      <>
-        <span className="block md:inline">Real Enquiries</span>
-      </>
-    );
+    return <span className="block">Real Enquiries</span>;
   }
 
   if (label === "Vetted Jaguar Specialists") {
     return (
       <>
-        <span className="block md:inline">Vetted Jaguar</span>
-        <span className="block md:ml-1 md:inline">Specialists</span>
+        <span className="block">Vetted Jaguar</span>
+        <span className="block">Specialists</span>
       </>
     );
   }
 
   return label;
+}
+
+function TrustBadgeText({ text = "" }) {
+  const lines = {
+    "Genuine failure data from thousands of UK owners": ["Genuine failure data from", "thousands of UK owners"],
+    "Honest repair vs replace economics": ["Honest repair vs replace", "economics"],
+    "Expertly verified by 15+ vetted Jaguar specialists": ["Expertly verified by 15+", "vetted Jaguar specialists"],
+    "100% independent. No sponsors. No bias.": ["100% independent.", "No sponsors. No bias."],
+  };
+
+  const pair = lines[text];
+  if (pair) {
+    return (
+      <>
+        <span className="block">{pair[0]}</span>
+        <span className="block">{pair[1]}</span>
+      </>
+    );
+  }
+
+  return text;
 }
 
 function ArrowIcon({ className = "h-4 w-4" }) {
@@ -214,10 +231,10 @@ export default function HomeSec1({ data }) {
           </Link>
         </div>
 
-        {/* Trust badges glass panel */}
+        {/* Trust badges glass panel — slightly narrower than full section */}
         {trustBadges.length > 0 ? (
           <div
-            className={`mt-4 overflow-hidden rounded-xl border backdrop-blur-xl md:mt-5 ${
+            className={`mt-4 w-full max-w-[1000px] overflow-hidden rounded-xl border backdrop-blur-xl md:mt-5 ${
               isDark
                 ? "border-white/16 bg-[rgba(12,12,12,0.55)] shadow-[0_16px_40px_rgba(0,0,0,0.45)]"
                 : "border-[var(--color-border)] bg-[rgba(246,246,244,0.78)] shadow-[0_14px_36px_rgba(16,18,16,0.1)]"
@@ -239,7 +256,7 @@ export default function HomeSec1({ data }) {
                       isDark ? "text-white/88" : "text-[var(--color-text)]"
                     }`}
                   >
-                    {badge.text}
+                    <TrustBadgeText text={badge.text} />
                   </p>
                 </li>
               ))}

@@ -337,7 +337,7 @@ function DesktopCard({ item }) {
       />
 
       <div className="mt-1.5">
-        <VerdictBadge verdict={item.verdict} variant={isDark ? "pill" : "plain"} />
+        <VerdictBadge verdict={item.verdict} variant="plain" />
       </div>
     </Link>
   );

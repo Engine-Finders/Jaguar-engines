@@ -6,7 +6,6 @@ import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
 
 const ICON_LG = "h-12 w-12 md:h-14 md:w-14";
-const ICON_MD = "h-8 w-8 md:h-9 md:w-9";
 
 function cleanText(value = "") {
   return String(value || "")
@@ -35,37 +34,43 @@ function ChevronIcon({ className = "h-5 w-5" }) {
 function TrustCard({ item, isDark }) {
   return (
     <article
-      className={`relative flex h-full flex-col overflow-hidden rounded-xl border px-3 pb-3.5 pt-4 md:px-3.5 md:pb-4 md:pt-4 ${
+      className={`relative flex h-full flex-col overflow-hidden rounded-xl border px-3.5 pb-3.5 pt-5 md:px-4 md:pb-4 md:pt-5 ${
         isDark
           ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
           : "border-[#e8e8e6] bg-white shadow-[0_8px_22px_rgba(16,18,16,0.05)]"
       }`}
     >
+      {/* Number tab — top left like ref */}
       <span
-        className={`absolute left-0 top-0 flex h-6 min-w-6 items-center justify-center rounded-br-md px-1.5 text-[0.72rem] font-bold ${
+        className={`absolute left-0 top-0 flex h-[22px] min-w-[26px] items-center justify-center rounded-br-md px-1.5 text-[0.72rem] font-bold ${
           isDark ? "bg-[var(--color-chrome)] text-[var(--color-page)]" : "bg-black text-white"
         }`}
       >
         {item.id}
       </span>
 
-      <div
-        className={`mx-auto mt-1 flex h-14 w-14 items-center justify-center rounded-full md:h-16 md:w-16 ${
-          isDark ? "bg-white/10" : "bg-[#ececeb]"
-        }`}
-      >
-        <HomeIcon name={item.icon} isDark={isDark} className={ICON_LG} />
+      {/* Icon left — title right */}
+      <div className="mt-1 flex items-center gap-3 md:gap-3.5">
+        <div
+          className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full md:h-16 md:w-16 ${
+            isDark ? "bg-white/10" : "bg-[#ececeb]"
+          }`}
+        >
+          <HomeIcon name={item.icon} isDark={isDark} className={ICON_LG} />
+        </div>
+
+        <h3
+          className={`min-w-0 flex-1 text-[0.9rem] font-bold leading-tight md:text-[0.95rem] ${
+            isDark ? "text-white" : "text-black"
+          }`}
+        >
+          {item.title}
+        </h3>
       </div>
 
-      <h3
-        className={`mt-2.5 text-center text-[0.9rem] font-bold leading-tight md:mt-3 md:text-[0.95rem] ${
-          isDark ? "text-white" : "text-black"
-        }`}
-      >
-        {item.title}
-      </h3>
+      {/* Description full-width below the icon row */}
       <p
-        className={`mt-1.5 text-center text-[0.76rem] leading-[1.4] md:text-[0.78rem] ${
+        className={`mt-2.5 text-[0.76rem] leading-[1.4] md:mt-3 md:text-[0.78rem] ${
           isDark ? "text-white/70" : "text-[var(--color-text-muted)]"
         }`}
         dangerouslySetInnerHTML={{ __html: cleanText(item.description) }}
@@ -129,7 +134,7 @@ function FaqBlock({ faq, isDark }) {
       }`}
     >
       <div className={`border-b px-4 py-3 md:px-5 md:py-3.5 ${isDark ? "border-[var(--color-border)]" : "border-[#ececeb]"}`}>
-        <h3 className={`text-[1.05rem] font-bold md:text-[1.15rem] ${isDark ? "text-white" : "text-black"}`}>
+        <h3 className={`font-serif text-[1.15rem] font-semibold md:text-[1.3rem] ${isDark ? "text-white" : "text-black"}`}>
           {faq.title}
         </h3>
       </div>
@@ -146,35 +151,6 @@ function FaqBlock({ faq, isDark }) {
           ))}
         </div>
       </div>
-
-      {faq.dataNote ? (
-        <div
-          className={`flex flex-col gap-2 border-t px-3 py-2 sm:flex-row sm:items-center sm:justify-between md:px-3.5 md:py-2 ${
-            isDark ? "border-[var(--color-border)] bg-white/[0.03]" : "border-[#ececeb] bg-[#f3f3f2]"
-          }`}
-        >
-          <div className="flex items-center gap-2 md:gap-2.5">
-            <span className="flex h-8 w-8 shrink-0 items-center justify-center md:h-9 md:w-9">
-              <HomeIcon name="info" isDark={isDark} className={ICON_MD} />
-            </span>
-            <p className={`min-w-0 text-[0.7rem] leading-[1.35] md:text-[0.74rem] ${isDark ? "text-white/70" : "text-[var(--color-text-muted)]"}`}>
-              <strong className={isDark ? "text-white" : "text-black"}>{faq.dataNote.label}</strong>{" "}
-              {cleanText(faq.dataNote.text)}
-            </p>
-          </div>
-          {faq.dataNote.badge ? (
-            <span
-              className={`inline-flex shrink-0 self-start rounded-full border px-2.5 py-0.5 text-[0.58rem] font-bold uppercase tracking-[0.06em] sm:self-center ${
-                isDark
-                  ? "border-white/20 text-white/75"
-                  : "border-[#d0d0ce] text-[var(--color-text-muted)]"
-              }`}
-            >
-              {faq.dataNote.badge}
-            </span>
-          ) : null}
-        </div>
-      ) : null}
     </div>
   );
 }
@@ -187,11 +163,12 @@ export default function HomeSec12({ data }) {
     alt: "Jaguar trust",
   };
   const signals = data.signals || [];
+  const sectionBg = "bg-[var(--color-page)]";
 
   return (
-    <section className={`overflow-x-hidden ${isDark ? "bg-[var(--color-page)]" : "bg-[#f8f8f7]"}`}>
-      {/* Header — same pattern as Sec2 */}
-      <div className="relative overflow-hidden bg-[var(--color-page)]">
+    <section className={`overflow-x-hidden ${sectionBg}`}>
+      {/* Header — same pattern as other home sections */}
+      <div className={`relative overflow-hidden ${sectionBg}`}>
         <div className="absolute inset-y-0 right-0 w-[62%] md:w-[48%]">
           <Image
             src={headerImage.src}
@@ -209,8 +186,8 @@ export default function HomeSec12({ data }) {
           />
         </div>
 
-        <div className="relative mx-auto w-full max-w-8xl px-4 py-5 md:px-6 md:py-6 lg:px-8">
-          <div className="max-w-[620px]">
+        <div className="relative mx-auto w-full max-w-8xl px-4 pb-3 pt-5 md:px-6 md:pb-3.5 md:pt-7 lg:px-8">
+          <div className="max-w-[720px]">
             <p
               className={`text-[0.64rem] font-bold uppercase tracking-[0.14em] ${
                 isDark ? "text-white/55" : "text-[var(--color-text-muted)]"
@@ -219,7 +196,7 @@ export default function HomeSec12({ data }) {
               Trust + FAQ
             </p>
             <h2
-              className={`mt-1.5 text-[2rem] font-bold leading-[0.98] md:text-[2.6rem] md:leading-[0.96] ${
+              className={`mt-1.5 whitespace-nowrap text-[1.55rem] font-bold leading-[0.98] sm:text-[1.85rem] md:text-[2.45rem] md:leading-[0.96] lg:text-[2.6rem] ${
                 isDark ? "text-white" : "text-[var(--color-text)]"
               }`}
             >
@@ -230,7 +207,7 @@ export default function HomeSec12({ data }) {
               <MStripe />
             </div>
             <p
-              className={`mt-2.5 max-w-[520px] text-[0.86rem] leading-[1.35] md:text-[0.95rem] md:leading-[1.4] ${
+              className={`mt-2 max-w-[560px] text-[0.86rem] leading-[1.35] md:text-[0.95rem] md:leading-[1.4] ${
                 isDark ? "text-white/80" : "text-[var(--color-text-muted)]"
               }`}
               dangerouslySetInnerHTML={{ __html: cleanText(data.subHeadline) }}
@@ -239,7 +216,7 @@ export default function HomeSec12({ data }) {
         </div>
       </div>
 
-      <div className="mx-auto w-full min-w-0 max-w-8xl px-4 py-4 md:px-6 md:py-5 lg:px-8">
+      <div className="mx-auto w-full min-w-0 max-w-8xl px-4 pb-5 pt-2 md:px-6 md:pb-6 md:pt-2.5 lg:px-8">
         <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:grid-cols-4 lg:gap-3">
           {signals.map((item) => (
             <TrustCard key={item.id} item={item} isDark={isDark} />

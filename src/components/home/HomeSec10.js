@@ -75,7 +75,7 @@ function PanelFooter({ footer, isDark }) {
     >
       <Link
         href={footer.href || "#"}
-        className={`inline-flex items-center gap-1.5 text-[0.78rem] font-medium md:text-[0.8rem] ${
+        className={`flex w-full items-center justify-center gap-1.5 text-center text-[0.78rem] font-medium md:text-[0.8rem] ${
           isDark ? "text-white/85" : "text-[#3a3a38]"
         }`}
       >

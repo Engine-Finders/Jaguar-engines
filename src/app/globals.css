@@ -104,3 +104,32 @@ a {
 [data-theme="dark"] .btn-cta:hover {
   color: #000000;
 }
+
+/* Site-wide: Cormorant Garamond for all h1/h2 only (loaded via next/font — no manual download) */
+h1,
+h2 {
+  font-family: var(--font-heading, "Cormorant Garamond"), "Cormorant Garamond", ui-serif, Georgia, serif !important;
+  font-weight: 700 !important;
+  line-height: calc(1em + 2px) !important;
+}
+
+/* Heading sizes */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 48px !important;
+  }
+
+  h2 {
+    font-size: 36px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 68px !important;
+  }
+
+  h2 {
+    font-size: 55px !important;
+  }
+}
