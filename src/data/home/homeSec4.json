@@ -82,7 +82,7 @@
     }
   ],
   "dataSources": {
-    "title": "Data Note",
+    "title": "Data Note :",
     "note": "Entries drawing directly on enquiry volume, replacement cost, and R-to-V flag data are marked as verified in the source file. \"Most Reliable Model,\" \"Best Family Jaguar,\" and the specific engine/model pairings are our editorial synthesis of the failure-pattern data, cross-referenced against live specialist and owner-forum sources — worth a Jaguar specialist sense-check before publishing."
   }
 }

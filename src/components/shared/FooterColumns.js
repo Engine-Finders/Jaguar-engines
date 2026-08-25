@@ -98,7 +98,7 @@ export default function FooterColumns() {
       <div className="grid grid-cols-2 gap-x-4 gap-y-6 lg:grid-cols-4 lg:gap-6">
         {footerColumns.map((column) => (
           <div key={column.title}>
-            <h2 className="mb-2 text-[0.75rem] font-extrabold uppercase tracking-wide text-[var(--color-text)]">{column.title}</h2>
+            <p className="mb-2 text-[0.75rem] font-extrabold uppercase tracking-wide text-[var(--color-text)]">{column.title}</p>
             <ul className="grid gap-1.5">
               {column.links.map((link) => (
                 <li key={link.href}>

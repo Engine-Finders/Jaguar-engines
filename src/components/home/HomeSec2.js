@@ -147,7 +147,7 @@ function BoltIcon() {
 
 function SedanIcon() {
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.8">
+    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5 md:h-4 md:w-4" fill="none" stroke="currentColor" strokeWidth="1.8">
       <path d="M3 14h18l-1.5-4.5A3 3 0 0 0 16.6 7.5H7.4A3 3 0 0 0 4.5 9.5L3 14Zm2 0v3m14-3v3M7 17a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm10 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" />
     </svg>
   );
@@ -155,7 +155,7 @@ function SedanIcon() {
 
 function SuvIcon() {
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.8">
+    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5 md:h-4 md:w-4" fill="none" stroke="currentColor" strokeWidth="1.8">
       <path d="M4 14h16l-1-5H9L6.5 12H4v2Zm2 0v3m12-3v3M7.5 17a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm9 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM9 9V7h6" />
     </svg>
   );
@@ -163,7 +163,7 @@ function SuvIcon() {
 
 function InfoBoltIcon() {
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">
+    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6 md:h-5 md:w-5" fill="none" stroke="currentColor" strokeWidth="2">
       <path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z" />
     </svg>
   );
@@ -252,7 +252,7 @@ function VerdictBadge({ verdict, variant = "plain" }) {
             : "border-[var(--color-border)] bg-[var(--color-surface)] text-[var(--color-text)]"
         }`}
       >
-        <HomeIcon name={iconKey} isDark={isDark} className="h-6 w-6" />
+        <HomeIcon name={iconKey} isDark={isDark} className="h-8 w-8 md:h-6 md:w-6" />
         <span className={colorClass}>{text}</span>
       </span>
     );
@@ -260,7 +260,7 @@ function VerdictBadge({ verdict, variant = "plain" }) {
 
   return (
     <span className={`inline-flex items-center gap-1.5 text-[0.74rem] font-medium leading-tight ${colorClass}`}>
-      <HomeIcon name={iconKey} isDark={isDark} className="h-6 w-6" />
+      <HomeIcon name={iconKey} isDark={isDark} className="h-8 w-8 md:h-6 md:w-6" />
       <span>{text}</span>
     </span>
   );
@@ -273,7 +273,7 @@ function CategoryHeader({ label, icon }) {
   return (
     <div className="mb-2 flex items-center gap-2.5 md:mb-2.5 md:gap-3">
       <span
-        className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full border ${
+        className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full border md:h-7 md:w-7 ${
           isDark ? "border-white/20 text-white/85" : "border-[var(--color-chrome)] text-[var(--color-text-muted)]"
         }`}
       >
@@ -309,7 +309,7 @@ function DesktopCard({ item }) {
           : "border-[var(--color-border)] bg-white shadow-[0_8px_22px_rgba(16,18,16,0.08)] hover:border-[var(--color-chrome)]"
       }`}
     >
-      <h3 className={`text-[1.15rem] font-semibold leading-none ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+      <h3 className={`font-heading text-[1.15rem] font-semibold leading-none ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
         {name}
       </h3>
 
@@ -352,10 +352,10 @@ function MobileRow({ item }) {
   return (
     <Link
       href={href}
-      className={`grid grid-cols-[72px_minmax(0,1fr)_auto_16px] items-center gap-2.5 rounded-xl border px-3 py-2.5 ${
+      className={`grid grid-cols-[72px_minmax(0,1fr)_auto_16px] items-center gap-2.5 border-b px-3 py-3 last:border-b-0 ${
         isDark
           ? "border-white/12 bg-[rgba(18,18,18,0.72)]"
-          : "border-[var(--color-border)] bg-white shadow-[0_6px_16px_rgba(16,18,16,0.06)]"
+          : "border-[#e4e4e2] bg-white"
       }`}
     >
       <div className="relative h-11 w-[4.5rem] overflow-hidden rounded-md">
@@ -363,7 +363,7 @@ function MobileRow({ item }) {
       </div>
 
       <div className="min-w-0">
-        <p className={`text-[0.92rem] font-semibold leading-tight ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+        <p className={`font-heading text-[0.92rem] font-semibold leading-tight ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
           {name}
         </p>
         <p className={`mt-0.5 text-[0.76rem] leading-[1.25] ${isDark ? "text-white/65" : "text-[var(--color-text-muted)]"}`}>
@@ -371,7 +371,13 @@ function MobileRow({ item }) {
         </p>
       </div>
 
-      <VerdictBadge verdict={item.verdict} />
+      <div
+        className={`flex items-center border-l pl-2.5 ${
+          isDark ? "border-white/12" : "border-[#e8e8e6]"
+        }`}
+      >
+        <VerdictBadge verdict={item.verdict} />
+      </div>
 
       <span className={`flex justify-end ${isDark ? "text-white/55" : "text-[var(--color-text-soft)]"}`}>
         <ChevronIcon className="h-4 w-4" />
@@ -394,7 +400,7 @@ function IPaceNote({ note }) {
       }`}
     >
       <span
-        className={`mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full border ${
+        className={`mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-full border md:h-9 md:w-9 ${
           isDark ? "border-white/20 text-white/85" : "border-[var(--color-chrome)] text-[var(--color-text)]"
         }`}
       >
@@ -437,16 +443,16 @@ export default function HomeSec2({ data }) {
           />
         </div>
 
-        <div className="relative mx-auto w-full max-w-8xl px-4 py-7 md:px-6 md:py-10 lg:px-8">
+        <div className="relative mx-auto w-full max-w-8xl px-4 pt-7 pb-4 md:px-6 md:pt-10 md:pb-5 lg:px-8">
           <div className="max-w-[560px]">
             <h2
               className={`text-[2.2rem] font-bold leading-[0.98] md:text-[3.1rem] md:leading-[0.96] ${
                 isDark ? "text-white" : "text-[var(--color-text)]"
               }`}
             >
-              Find{" "}
-              <br className="md:hidden" />
-              <span className="text-[var(--color-chrome-bright)]">Your Vehicle</span>
+              Find Your
+              <br className="md:hidden" />{" "}
+              <span className="text-[var(--color-chrome-bright)]">Vehicle</span>
             </h2>
 
             <div className="mt-3">
@@ -454,7 +460,7 @@ export default function HomeSec2({ data }) {
             </div>
 
             <p
-              className={`mt-3 max-w-[420px] text-[0.9rem] leading-[1.35] md:max-w-[520px] md:text-[1.05rem] md:leading-[1.4] ${
+              className={`mt-2 max-w-[420px] text-[0.9rem] leading-[1.35] md:max-w-[520px] md:text-[1.05rem] md:leading-[1.4] ${
                 isDark ? "text-white/80" : "text-[var(--color-text-muted)]"
               }`}
               dangerouslySetInnerHTML={{ __html: data.subHeadline }}
@@ -465,7 +471,7 @@ export default function HomeSec2({ data }) {
 
       {/* Model grid / list — same bg as header */}
       <div>
-        <div className="mx-auto w-full max-w-8xl px-4 py-5 md:px-6 md:py-7 lg:px-8">
+        <div className="mx-auto w-full max-w-8xl px-4 pt-2 pb-5 md:px-6 md:pt-3 md:pb-7 lg:px-8">
           <div className="hidden md:block">
             {categories.map((category) => (
               <div key={category.id} className="mb-4 last:mb-0 md:mb-5">
@@ -484,7 +490,7 @@ export default function HomeSec2({ data }) {
             {categories.map((category) => (
               <div key={category.id} className="mb-3.5 last:mb-0">
                 <CategoryHeader label={category.label} icon={category.icon} />
-                <div className="flex flex-col gap-2.5">
+                <div className="flex flex-col">
                   {(category.models || []).map((item) => (
                     <MobileRow key={getModelName(item)} item={item} />
                   ))}

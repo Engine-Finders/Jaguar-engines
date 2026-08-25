@@ -35,7 +35,7 @@ function CentreCard({ item, isDark }) {
       }`}
     >
       <span
-        className={`pointer-events-none absolute left-3 top-2 font-serif text-[1.6rem] font-semibold italic leading-none md:text-[1.85rem] ${
+        className={`pointer-events-none absolute left-3 top-2 font-heading text-[1.6rem] font-semibold italic leading-none md:text-[1.85rem] ${
           isDark ? "text-white/12" : "text-[#e4e4e2]"
         }`}
       >
@@ -184,7 +184,7 @@ export default function HomeSec8({ data }) {
       </div>
 
       <div className="mx-auto w-full min-w-0 max-w-8xl px-4 pb-5 pt-2 md:px-6 md:pb-6 md:pt-2.5 lg:px-8">
-        <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:grid-cols-4 lg:gap-3">
+        <div className="grid grid-cols-2 gap-2.5 lg:grid-cols-4 lg:gap-3">
           {centres.map((item) => (
             <CentreCard key={item.id} item={item} isDark={isDark} />
           ))}

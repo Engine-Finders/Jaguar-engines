@@ -34,7 +34,9 @@ function TrustLabel({ label }) {
   if (label === "Every Generation, Honestly Rated") {
     return (
       <>
-        <span className="block">Every Generation,</span>
+        <span className="block md:hidden">Every</span>
+        <span className="block md:hidden">Generation,</span>
+        <span className="hidden md:block">Every Generation,</span>
         <span className="block">Honestly Rated</span>
       </>
     );
@@ -150,11 +152,11 @@ export default function HomeSec1({ data }) {
         />
       </div>
 
-      <div className="relative mx-auto flex w-full max-w-8xl flex-col px-4 pb-6 pt-8 md:min-h-[640px] md:justify-center md:px-6 md:py-10 lg:px-8">
-        <div className="relative flex w-full max-w-[720px] flex-col gap-3.5 md:gap-4">
+      <div className="relative mx-auto flex w-full max-w-8xl flex-col px-4 pb-5 pt-6 md:min-h-[640px] md:justify-center md:px-6 md:py-10 md:pb-6 md:pt-8 lg:px-8">
+        <div className="relative flex w-full max-w-[720px] flex-col gap-3 md:gap-4">
           {/* H1 hardcoded - two lines like ref */}
           <p
-            className={`text-[0.73rem] font-bold uppercase tracking-[0.14em] ${
+            className={`text-[0.68rem] font-bold uppercase tracking-[0.16em] md:text-[0.73rem] md:tracking-[0.14em] ${
               isDark ? "text-white/55" : "text-[var(--color-text-muted)]"
             }`}
           >
@@ -173,23 +175,17 @@ export default function HomeSec1({ data }) {
           <MStripe />
 
           <p
-            className={`max-w-[620px] text-[0.88rem] leading-[1.45] md:text-[1.08rem] md:leading-[1.45] ${
+            className={`max-w-[620px] text-[0.84rem] leading-[1.4] md:text-[1.08rem] md:leading-[1.45] ${
               isDark ? "text-white/86" : "text-[var(--color-text-muted)]"
             }`}
             dangerouslySetInnerHTML={{ __html: data.subHeadline }}
           />
 
-          {/* Mobile spacer for car visibility */}
-          <div className="relative mt-1 h-[210px] md:hidden" />
+          {/* Mobile spacer for car visibility — matches ref gap above stats */}
+          <div className="relative h-[168px] md:hidden" aria-hidden="true" />
 
-          {/* Stats strip - mobile fog/glass band for readability */}
-          <ul
-            className={`grid grid-cols-4 md:max-w-[700px] md:bg-transparent md:backdrop-blur-none md:border-0 md:shadow-none ${
-              isDark
-                ? "rounded-lg border border-white/14 bg-[rgba(8,8,8,0.55)] py-3 shadow-[0_10px_28px_rgba(0,0,0,0.35)] backdrop-blur-md md:rounded-none md:border-0 md:bg-transparent md:py-0 md:shadow-none"
-                : "rounded-lg border border-[var(--color-chrome)]/40 bg-[rgba(236,236,232,0.72)] py-3 shadow-[0_10px_28px_rgba(16,18,16,0.1)] backdrop-blur-md md:rounded-none md:border-0 md:bg-transparent md:py-0 md:shadow-none"
-            }`}
-          >
+          {/* Stats strip — open columns on mobile (no glass card), desktop unchanged */}
+          <ul className="grid grid-cols-4 md:max-w-[700px]">
             {trustStrip.map((item, index) => {
               const stat = splitStat(item.label);
               const iconKey = trustStripIconKeys[index] || "real-inquiries";
@@ -197,19 +193,19 @@ export default function HomeSec1({ data }) {
               return (
                 <li
                   key={item.label}
-                  className={`flex flex-col items-center gap-2 border-r px-1.5 py-1 text-center last:border-r-0 md:flex-row md:items-start md:gap-2.5 md:px-3 md:py-2 md:text-left ${
+                  className={`flex flex-col items-center gap-1.5 border-r px-1 py-0.5 text-center last:border-r-0 md:flex-row md:items-start md:gap-2.5 md:px-3 md:py-2 md:text-left ${
                     isDark ? "border-white/18" : "border-[var(--color-chrome)]/55"
                   }`}
                 >
-                  <span className="flex h-11 w-11 shrink-0 items-center justify-center md:h-12 md:w-12">
-                    <HomeIcon name={iconKey} isDark={isDark} className="h-10 w-10 md:h-12 md:w-12" />
+                  <span className="flex h-14 w-14 shrink-0 items-center justify-center md:h-12 md:w-12">
+                    <HomeIcon name={iconKey} isDark={isDark} className="h-14 w-14 md:h-12 md:w-12" />
                   </span>
                   <span className={`min-w-0 ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
                     {stat.value ? (
-                      <strong className="block text-[0.86rem] font-bold leading-none md:text-[1.05rem]">{stat.value}</strong>
+                      <strong className="block text-[0.9rem] font-bold leading-none md:text-[1.05rem]">{stat.value}</strong>
                     ) : null}
                     <span
-                      className={`mt-1 block text-[10px] leading-[1.25] md:mt-0.5 md:text-[0.78rem] md:leading-[1.3] ${
+                      className={`mt-0.5 block text-[11px] leading-[1.25] md:mt-0.5 md:text-[0.78rem] md:leading-[1.3] ${
                         isDark ? "text-white/76" : "text-[var(--color-text-muted)]"
                       } ${stat.value ? "" : "md:pt-1"}`}
                     >
@@ -231,28 +227,28 @@ export default function HomeSec1({ data }) {
           </Link>
         </div>
 
-        {/* Trust badges glass panel — slightly narrower than full section */}
+        {/* Trust badges glass panel — larger icons on mobile only */}
         {trustBadges.length > 0 ? (
           <div
-            className={`mt-4 w-full max-w-[1000px] overflow-hidden rounded-xl border backdrop-blur-xl md:mt-5 ${
+            className={`mt-3.5 w-full max-w-[1000px] overflow-hidden rounded-md backdrop-blur-xl md:mt-5 md:rounded-xl md:border md:shadow-[0_14px_36px_rgba(16,18,16,0.1)] ${
               isDark
-                ? "border-white/16 bg-[rgba(12,12,12,0.55)] shadow-[0_16px_40px_rgba(0,0,0,0.45)]"
-                : "border-[var(--color-border)] bg-[rgba(246,246,244,0.78)] shadow-[0_14px_36px_rgba(16,18,16,0.1)]"
+                ? "bg-[rgba(12,12,12,0.55)] md:border-white/16 md:shadow-[0_16px_40px_rgba(0,0,0,0.45)]"
+                : "bg-[rgba(246,246,244,0.78)] md:border-[var(--color-border)]"
             }`}
           >
             <ul className="grid md:grid-cols-4">
               {trustBadges.map((badge, index) => (
                 <li
                   key={badge.text}
-                  className={`flex items-center gap-2.5 border-b px-3 py-2.5 last:border-b-0 md:border-b-0 md:border-r md:px-3.5 md:py-3 md:last:border-r-0 ${
+                  className={`flex items-center gap-3 border-b px-3.5 py-3 last:border-b-0 md:gap-2.5 md:border-b-0 md:border-r md:px-3.5 md:py-3 md:last:border-r-0 ${
                     isDark ? "border-white/12" : "border-[var(--color-chrome)]/45"
                   }`}
                 >
-                  <span className={`flex h-12 w-12 shrink-0 items-center justify-center md:h-14 md:w-14 ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
-                    <HomeIcon name={trustBadgeIconKeys[index]} isDark={isDark} className="h-11 w-11 md:h-14 md:w-14" />
+                  <span className={`flex h-16 w-16 shrink-0 items-center justify-center md:h-14 md:w-14 ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+                    <HomeIcon name={trustBadgeIconKeys[index]} isDark={isDark} className="h-16 w-16 md:h-14 md:w-14" />
                   </span>
                   <p
-                    className={`min-w-0 text-[0.78rem] leading-[1.3] md:text-[0.82rem] ${
+                    className={`min-w-0 text-[0.8rem] leading-[1.3] md:text-[0.82rem] ${
                       isDark ? "text-white/88" : "text-[var(--color-text)]"
                     }`}
                   >

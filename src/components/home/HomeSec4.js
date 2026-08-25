@@ -59,7 +59,7 @@ function VerdictBadge({ verdict, fullWidth = false }) {
         fullWidth ? "w-full" : ""
       } ${styles[verdict.type] || styles.best}`}
     >
-      <HomeIcon name={iconName} isDark={isDark} className="h-5 w-5 md:h-6 md:w-6" />
+      <HomeIcon name={iconName} isDark={isDark} className="h-8 w-8 md:h-9 md:w-9" />
       <span>{verdict.text}</span>
     </span>
   );
@@ -71,11 +71,11 @@ function RankingIcon({ row, index, isDark }) {
 
   return (
     <span
-      className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full md:h-10 md:w-10 ${
+      className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full md:h-14 md:w-14 ${
         isDark ? "bg-[#1a1a1a] ring-1 ring-white/15" : "bg-[#d8d8d6]"
       }`}
     >
-      <HomeIcon name={iconName} isDark={isDark} className="h-5 w-5 md:h-6 md:w-6" />
+      <HomeIcon name={iconName} isDark={isDark} className="h-8 w-8 md:h-9 md:w-9" />
     </span>
   );
 }
@@ -131,11 +131,11 @@ function RankingRow({ row, index, isDark }) {
       </div>
 
       <div
-        className={`relative z-10 min-w-0 px-3 py-2.5 text-[0.8rem] leading-[1.35] md:px-4 md:text-[0.84rem] ${
+        className={`relative z-10 min-w-0 px-3 py-2.5 text-[0.8rem] font-normal leading-[1.35] md:px-4 md:text-[0.84rem] ${
           isDark ? "text-white/78" : "text-[var(--color-text-muted)]"
         }`}
       >
-        <span dangerouslySetInnerHTML={{ __html: row.why }} />
+        <span className="font-normal" dangerouslySetInnerHTML={{ __html: row.why }} />
         <ColRule isDark={isDark} />
       </div>
 
@@ -164,16 +164,15 @@ function MobileRankingCard({ row, index, isDark }) {
         </span>
       </div>
 
-      <h3 className={`mt-1.5 text-[0.82rem] font-bold leading-[1.2] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
-        {row.winner}
-      </h3>
-
-      <div className="mt-2 flex justify-center py-0.5">
+      <div className="mt-2 flex items-center gap-2.5">
         <RankingIcon row={row} index={index} isDark={isDark} />
+        <h3 className={`min-w-0 flex-1 text-[0.82rem] font-bold leading-[1.2] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+          {row.winner}
+        </h3>
       </div>
 
       <div
-        className={`mt-1.5 flex-1 text-[0.68rem] leading-[1.3] ${isDark ? "text-white/75" : "text-[var(--color-text-muted)]"}`}
+        className={`mt-1.5 flex-1 text-[0.68rem] font-normal leading-[1.3] ${isDark ? "text-white/75" : "text-[var(--color-text-muted)]"}`}
         dangerouslySetInnerHTML={{ __html: row.why }}
       />
 
@@ -212,21 +211,23 @@ function DataNote({ dataSources, isDark }) {
 
   return (
     <div
-      className={`mt-3 flex items-center gap-2.5 rounded-xl border px-3 py-2.5 md:mt-4 md:px-3.5 md:py-2.5 ${
+      className={`mt-3 rounded-xl border px-3 py-2.5 md:mt-4 md:px-3.5 md:py-2.5 ${
         isDark
           ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
           : "border-[#e8e8e6] bg-white"
       }`}
     >
-      <span className="flex h-10 w-10 shrink-0 items-center justify-center md:h-11 md:w-11">
-        <HomeIcon name="info" isDark={isDark} className="h-9 w-9 md:h-10 md:w-10" />
-      </span>
-      <div className="min-w-0">
-        <p className={`text-[0.72rem] leading-[1.35] md:text-[0.76rem] ${isDark ? "text-white/70" : "text-[var(--color-text-muted)]"}`}>
-          <strong className={isDark ? "text-white" : "text-black"}>{dataSources.title || "Data Note"}:</strong>{" "}
-          {summary || "Rankings are drawn from live UK enquiry data and specialist-verified failure patterns."}
+      <div className="flex items-center gap-2 md:gap-2.5">
+        <span className="flex h-9 w-9 shrink-0 items-center justify-center md:h-10 md:w-10">
+          <HomeIcon name="info" isDark={isDark} className="h-8 w-8 md:h-9 md:w-9" />
+        </span>
+        <p className={`text-[0.78rem] font-bold leading-none md:text-[0.82rem] ${isDark ? "text-white" : "text-black"}`}>
+          {dataSources.title || "Data Note :"}
         </p>
       </div>
+      <p className={`mt-1.5 text-[0.72rem] font-normal leading-[1.35] md:mt-1 md:pl-[2.625rem] md:text-[0.76rem] ${isDark ? "text-white/70" : "text-[var(--color-text-muted)]"}`}>
+        {summary || "Rankings are drawn from live UK enquiry data and specialist-verified failure patterns."}
+      </p>
     </div>
   );
 }

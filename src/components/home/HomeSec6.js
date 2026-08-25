@@ -229,7 +229,7 @@ function RuleCard({ data, isDark }) {
       </p>
 
       <p
-        className={`mt-3 font-serif text-[2.1rem] font-semibold leading-none md:text-[2.35rem] ${
+        className={`mt-3 font-heading text-[2.1rem] font-semibold leading-none md:text-[2.35rem] ${
           isDark ? "text-white" : "text-black"
         }`}
       >
@@ -284,7 +284,7 @@ function DeeperLinks({ links, isDark }) {
         <span className={`h-px flex-1 ${isDark ? "bg-white/18" : "bg-[#d8d8d6]"}`} />
       </div>
 
-      <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:grid-cols-5 lg:gap-3">
+      <div className="grid grid-cols-2 gap-2.5 lg:grid-cols-5 lg:gap-3">
         {links.map((link) => {
           const title = cleanText(link.label).replace(/\s*→\s*$/, "");
 
@@ -292,14 +292,14 @@ function DeeperLinks({ links, isDark }) {
             <Link
               key={link.id}
               href={link.href || "#"}
-              className={`relative flex min-h-[158px] flex-col items-center rounded-xl border px-3 pb-4 pt-5 text-center transition md:px-3.5 md:pb-4 md:pt-5 ${
+              className={`relative flex min-h-[158px] flex-col items-center rounded-xl border px-3 pb-4 pt-5 text-center transition last:col-span-2 last:mx-auto last:w-[calc(50%-0.3125rem)] md:px-3.5 md:pb-4 md:pt-5 lg:last:col-span-1 lg:last:mx-0 lg:last:w-auto ${
                 isDark
                   ? "border-[var(--color-border)] bg-[var(--color-surface-raised)] hover:border-white/25"
                   : "border-[#e8e8e6] bg-white shadow-[0_8px_22px_rgba(16,18,16,0.05)] hover:border-[var(--color-chrome)]"
               }`}
             >
               <span
-                className={`pointer-events-none absolute left-3 top-2 font-serif text-[2.2rem] font-semibold leading-none ${
+                className={`pointer-events-none absolute left-3 top-2 font-heading text-[2.2rem] font-semibold leading-none ${
                   isDark ? "text-white/10" : "text-[#e4e4e2]"
                 }`}
               >
@@ -311,7 +311,7 @@ function DeeperLinks({ links, isDark }) {
               </span>
 
               <h3
-                className={`relative z-[1] mt-2.5 mx-auto max-w-[10rem] text-balance text-[0.82rem] font-medium leading-[1.3] md:max-w-[10.5rem] md:text-[0.86rem] ${
+                className={`relative z-[1] mt-2.5 mx-auto max-w-[10rem] text-balance font-heading text-[0.82rem] font-medium leading-[1.3] md:max-w-[10.5rem] md:text-[0.86rem] ${
                   isDark ? "text-white" : "text-black"
                 }`}
               >

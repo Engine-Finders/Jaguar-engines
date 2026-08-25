@@ -10,10 +10,30 @@ const ENGINE_IMAGE = "/engine.webp";
 const ICON_LG = "h-10 w-10 md:h-11 md:w-11";
 
 const severityStyle = {
-  catastrophic: { dot: "bg-[#ed1c24]", text: "text-[#ed1c24]" },
-  immediate: { dot: "bg-[#ff7900]", text: "text-[#e06a00]" },
-  monitor: { dot: "bg-[#f6b800]", text: "text-[#c77700]" },
-  low: { dot: "bg-[#20a84a]", text: "text-[#1c8b3d]" },
+  catastrophic: {
+    dot: "bg-[#ed1c24]",
+    text: "text-[#ed1c24]",
+    pill: "border-[#f7c8cc] bg-[#fff0f1] text-[#c42430]",
+    darkPill: "border-[rgba(255,90,100,0.34)] bg-[rgba(255,45,53,0.14)] text-[#ff9aa0]",
+  },
+  immediate: {
+    dot: "bg-[#ff7900]",
+    text: "text-[#e06a00]",
+    pill: "border-[#f5d4ad] bg-[#fff6ea] text-[#d97810]",
+    darkPill: "border-[rgba(246,161,73,0.34)] bg-[rgba(246,161,73,0.14)] text-[#ffba6c]",
+  },
+  monitor: {
+    dot: "bg-[#f6b800]",
+    text: "text-[#c77700]",
+    pill: "border-[#ecd7a7] bg-[#fff9ea] text-[#9c6a00]",
+    darkPill: "border-[rgba(222,177,65,0.34)] bg-[rgba(222,177,65,0.13)] text-[#ffd473]",
+  },
+  low: {
+    dot: "bg-[#20a84a]",
+    text: "text-[#1c8b3d]",
+    pill: "border-[#cce7d7] bg-[#eefaf3] text-[#17824f]",
+    darkPill: "border-[rgba(77,198,124,0.34)] bg-[rgba(24,148,84,0.13)] text-[#74d7a1]",
+  },
 };
 
 function cleanText(value = "") {
@@ -31,8 +51,22 @@ function unlinkHtml(value = "") {
   );
 }
 
-function SeverityBadge({ severity, isDark }) {
+function SeverityBadge({ severity, isDark, variant = "plain" }) {
   const style = severityStyle[severity?.type] || severityStyle.monitor;
+
+  if (variant === "pill") {
+    return (
+      <span
+        className={`inline-flex shrink-0 items-center gap-1.5 rounded-full border px-2 py-1 text-[0.58rem] font-bold uppercase tracking-[0.04em] ${
+          isDark ? style.darkPill : style.pill
+        }`}
+      >
+        <span className={`h-1.5 w-1.5 shrink-0 rounded-full ${style.dot}`} />
+        {severity?.label}
+      </span>
+    );
+  }
+
   return (
     <span className={`inline-flex items-center gap-1.5 text-[0.68rem] font-bold uppercase tracking-[0.04em] ${style.text}`}>
       <span className={`h-2 w-2 shrink-0 rounded-full ${style.dot}`} />
@@ -43,7 +77,7 @@ function SeverityBadge({ severity, isDark }) {
 
 function CategoryLabel({ title, icon, isDark }) {
   return (
-    <div className="mb-2 flex items-center gap-2 md:mb-2.5">
+    <div className="mb-1 flex items-center gap-1.5 md:mb-1.5 md:gap-2">
       <HomeIcon name={icon} isDark={isDark} className={ICON_LG} />
       <p
         className={`text-[0.68rem] font-bold uppercase tracking-[0.12em] ${
@@ -57,56 +91,106 @@ function CategoryLabel({ title, icon, isDark }) {
 }
 
 function EngineCard({ row, isDark }) {
+  const linkLabel = (row.link?.label || "Read more").replace(/\s*→\s*$/, "");
+
   return (
     <article
-      className={`relative flex h-full flex-col overflow-hidden rounded-xl border ${
+      className={`relative overflow-hidden rounded-lg border md:flex md:h-full md:flex-col md:rounded-xl ${
         isDark
           ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
           : "border-[#e8e8e6] bg-white shadow-[0_8px_20px_rgba(16,18,16,0.04)]"
       }`}
     >
-      <span
-        className={`pointer-events-none absolute left-3 top-2 font-serif text-[1.4rem] font-semibold leading-none ${
-          isDark ? "text-white/12" : "text-[#e0e0de]"
-        }`}
-      >
-        {row.id}
-      </span>
+      {/* Mobile: horizontal ref layout */}
+      <div className="flex gap-3 p-3 md:hidden">
+        <span
+          className={`absolute left-2.5 top-2.5 z-10 flex h-6 w-6 items-center justify-center rounded-full text-[0.7rem] font-bold ${
+            isDark ? "bg-white/12 text-white/80" : "bg-[#ececeb] text-[#5c5c5a]"
+          }`}
+        >
+          {row.id}
+        </span>
 
-      <div className="relative mx-auto mt-7 h-[88px] w-full max-w-[160px] md:mt-8 md:h-[100px]">
-        <Image
-          src={ENGINE_IMAGE}
-          alt=""
-          fill
-          className="object-contain object-center"
-          sizes="160px"
-        />
+        <div className="relative mt-5 h-[92px] w-[88px] shrink-0">
+          <Image
+            src={ENGINE_IMAGE}
+            alt=""
+            fill
+            className="object-contain object-center"
+            sizes="88px"
+          />
+        </div>
+
+        <div className="min-w-0 flex-1 pt-0.5">
+          <div className="flex items-start justify-between gap-2">
+            <h3
+              className={`min-w-0 flex-1 text-[0.88rem] font-bold leading-tight ${
+                isDark ? "text-white" : "text-black"
+              }`}
+              dangerouslySetInnerHTML={{ __html: unlinkHtml(row.title) }}
+            />
+            <SeverityBadge severity={row.severity} isDark={isDark} variant="pill" />
+          </div>
+
+          <p
+            className={`mt-1.5 text-[0.72rem] font-normal leading-[1.35] ${
+              isDark ? "text-white/65" : "text-[var(--color-text-muted)]"
+            }`}
+            dangerouslySetInnerHTML={{ __html: unlinkHtml(row.description) }}
+          />
+
+          <div className="mt-2.5 flex justify-end">
+            <Link
+              href={row.link?.href || "#"}
+              className={`text-[0.76rem] font-semibold ${isDark ? "text-white" : "text-black"}`}
+            >
+              {linkLabel} →
+            </Link>
+          </div>
+        </div>
       </div>
 
-      <div className="flex flex-1 flex-col px-3.5 pb-3.5 pt-2 md:px-4 md:pb-4">
-        <h3
-          className={`text-[0.88rem] font-bold leading-tight md:text-[0.92rem] ${
-            isDark ? "text-white" : "text-black"
+      {/* Desktop: vertical card (unchanged) */}
+      <div className="hidden h-full flex-col md:flex">
+        <span
+          className={`pointer-events-none absolute left-3 top-2 font-heading text-[1.4rem] font-semibold leading-none ${
+            isDark ? "text-white/12" : "text-[#e0e0de]"
           }`}
-          dangerouslySetInnerHTML={{ __html: unlinkHtml(row.title) }}
-        />
-        <p
-          className={`mt-1.5 text-[0.74rem] leading-[1.35] md:text-[0.76rem] ${
-            isDark ? "text-white/65" : "text-[var(--color-text-muted)]"
-          }`}
-          dangerouslySetInnerHTML={{ __html: unlinkHtml(row.description) }}
-        />
+        >
+          {row.id}
+        </span>
 
-        <div className="mt-auto flex items-center justify-between gap-2 pt-3">
-          <SeverityBadge severity={row.severity} isDark={isDark} />
-          <Link
-            href={row.link?.href || "#"}
-            className={`shrink-0 text-[0.76rem] font-semibold md:text-[0.8rem] ${
-              isDark ? "text-white" : "text-black"
+        <div className="relative mx-auto mt-8 h-[100px] w-full max-w-[160px]">
+          <Image
+            src={ENGINE_IMAGE}
+            alt=""
+            fill
+            className="object-contain object-center"
+            sizes="160px"
+          />
+        </div>
+
+        <div className="flex flex-1 flex-col px-4 pb-4 pt-2">
+          <h3
+            className={`text-[0.92rem] font-bold leading-tight ${isDark ? "text-white" : "text-black"}`}
+            dangerouslySetInnerHTML={{ __html: unlinkHtml(row.title) }}
+          />
+          <p
+            className={`mt-1.5 text-[0.76rem] leading-[1.35] ${
+              isDark ? "text-white/65" : "text-[var(--color-text-muted)]"
             }`}
-          >
-            {(row.link?.label || "Read more").replace(/\s*→\s*$/, "")} →
-          </Link>
+            dangerouslySetInnerHTML={{ __html: unlinkHtml(row.description) }}
+          />
+
+          <div className="mt-auto flex items-center justify-between gap-2 pt-3">
+            <SeverityBadge severity={row.severity} isDark={isDark} />
+            <Link
+              href={row.link?.href || "#"}
+              className={`shrink-0 text-[0.8rem] font-semibold ${isDark ? "text-white" : "text-black"}`}
+            >
+              {linkLabel} →
+            </Link>
+          </div>
         </div>
       </div>
     </article>
@@ -121,7 +205,7 @@ function FailureListItem({ row, isDark }) {
       }`}
     >
       <span
-        className={`w-4 shrink-0 text-[0.9rem] font-bold leading-none md:w-5 md:text-[1rem] ${
+        className={`w-4 shrink-0 font-heading text-[0.9rem] font-bold leading-none md:w-5 md:text-[1rem] ${
           isDark ? "text-white/45" : "text-[#c8c8c6]"
         }`}
       >
@@ -140,24 +224,24 @@ function FailureListItem({ row, isDark }) {
 
       <div className="min-w-0 flex-1">
         <p
-          className={`text-[0.8rem] font-bold leading-tight md:text-[0.84rem] ${
+          className={`text-[0.88rem] font-bold leading-tight ${
             isDark ? "text-white" : "text-black"
           }`}
           dangerouslySetInnerHTML={{ __html: unlinkHtml(row.title) }}
         />
         <p
-          className={`mt-0.5 text-[0.7rem] leading-[1.3] md:text-[0.72rem] ${
-            isDark ? "text-white/60" : "text-[var(--color-text-muted)]"
+          className={`mt-1.5 text-[0.72rem] font-normal leading-[1.35] ${
+            isDark ? "text-white/65" : "text-[var(--color-text-muted)]"
           }`}
           dangerouslySetInnerHTML={{ __html: unlinkHtml(row.description) }}
         />
       </div>
 
       <div className="flex shrink-0 flex-col items-end gap-1.5 pl-1">
-        <SeverityBadge severity={row.severity} isDark={isDark} />
+        <SeverityBadge severity={row.severity} isDark={isDark} variant="pill" />
         <Link
           href={row.link?.href || "#"}
-          className={`text-[0.7rem] font-semibold md:text-[0.74rem] ${
+          className={`text-[0.76rem] font-semibold ${
             isDark ? "text-white" : "text-black"
           }`}
         >
@@ -172,15 +256,15 @@ function FailureColumn({ block, isDark }) {
   if (!block?.rows?.length) return null;
 
   return (
-    <div
-      className={`rounded-xl border px-3 py-3 md:px-3.5 md:py-3.5 ${
-        isDark
-          ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
-          : "border-[#e8e8e6] bg-white shadow-[0_8px_20px_rgba(16,18,16,0.04)]"
-      }`}
-    >
+    <div>
       <CategoryLabel title={block.title} icon={block.icon} isDark={isDark} />
-      <div>
+      <div
+        className={`rounded-xl border px-3 py-1.5 md:px-3.5 md:py-2 ${
+          isDark
+            ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
+            : "border-[#e8e8e6] bg-white shadow-[0_8px_20px_rgba(16,18,16,0.04)]"
+        }`}
+      >
         {block.rows.map((row) => (
           <FailureListItem key={`${block.title}-${row.id}`} row={row} isDark={isDark} />
         ))}
@@ -270,7 +354,7 @@ export default function HomeSec9({ data }) {
           />
         </div>
 
-        <div className="relative mx-auto w-full max-w-8xl px-4 pb-3 pt-5 md:px-6 md:pb-3.5 md:pt-7 lg:px-8">
+        <div className="relative mx-auto w-full max-w-8xl px-4 pt-5 pb-4 md:px-6 md:pt-7 md:pb-5 lg:px-8">
           <div className="max-w-[620px]">
             <p
               className={`text-[0.64rem] font-bold uppercase tracking-[0.14em] ${
@@ -291,7 +375,7 @@ export default function HomeSec9({ data }) {
               <MStripe />
             </div>
             <p
-              className={`mt-2 max-w-[540px] text-[0.86rem] leading-[1.4] md:text-[0.95rem] ${
+              className={`mt-1.5 max-w-[540px] text-[0.86rem] leading-[1.4] md:text-[0.95rem] ${
                 isDark ? "text-white/80" : "text-[var(--color-text-muted)]"
               }`}
               dangerouslySetInnerHTML={{ __html: cleanText(data.subHeadline) }}
@@ -300,7 +384,7 @@ export default function HomeSec9({ data }) {
         </div>
       </div>
 
-      <div className="mx-auto w-full min-w-0 max-w-8xl px-4 pb-5 pt-2 md:px-6 md:pb-6 md:pt-2.5 lg:px-8">
+      <div className="mx-auto w-full min-w-0 max-w-8xl px-4 pt-1 pb-5 md:px-6 md:pt-1.5 md:pb-6 lg:px-8">
         {/* Engine failures — 4 cards */}
         {engine?.rows?.length ? (
           <div>
@@ -314,7 +398,7 @@ export default function HomeSec9({ data }) {
         ) : null}
 
         {/* Suspension / Drivetrain / Electrical */}
-        <div className="mt-4 grid gap-2.5 md:mt-4 md:grid-cols-3 md:gap-3">
+        <div className="mt-3 grid gap-2 md:mt-3 md:grid-cols-3 md:gap-2.5">
           {columns.map((block) => (
             <FailureColumn key={block.title} block={block} isDark={isDark} />
           ))}

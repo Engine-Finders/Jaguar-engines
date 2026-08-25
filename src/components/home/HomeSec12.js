@@ -5,7 +5,7 @@ import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
 
-const ICON_LG = "h-12 w-12 md:h-14 md:w-14";
+const ICON_LG = "h-14 w-14 md:h-16 md:w-16";
 
 function cleanText(value = "") {
   return String(value || "")
@@ -34,7 +34,7 @@ function ChevronIcon({ className = "h-5 w-5" }) {
 function TrustCard({ item, isDark }) {
   return (
     <article
-      className={`relative flex h-full flex-col overflow-hidden rounded-xl border px-3.5 pb-3.5 pt-5 md:px-4 md:pb-4 md:pt-5 ${
+      className={`relative flex h-full overflow-hidden rounded-xl border px-3.5 pb-3.5 pt-5 md:px-4 md:pb-4 md:pt-5 ${
         isDark
           ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
           : "border-[#e8e8e6] bg-white shadow-[0_8px_22px_rgba(16,18,16,0.05)]"
@@ -42,39 +42,39 @@ function TrustCard({ item, isDark }) {
     >
       {/* Number tab — top left like ref */}
       <span
-        className={`absolute left-0 top-0 flex h-[22px] min-w-[26px] items-center justify-center rounded-br-md px-1.5 text-[0.72rem] font-bold ${
+        className={`absolute left-0 top-0 flex h-[22px] min-w-[26px] items-center justify-center rounded-br-md px-1.5 font-heading text-[0.72rem] font-bold ${
           isDark ? "bg-[var(--color-chrome)] text-[var(--color-page)]" : "bg-black text-white"
         }`}
       >
         {item.id}
       </span>
 
-      {/* Icon left — title right */}
-      <div className="mt-1 flex items-center gap-3 md:gap-3.5">
+      {/* Icon left — heading + description right */}
+      <div className="mt-1 flex items-start gap-3 md:gap-3.5">
         <div
-          className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full md:h-16 md:w-16 ${
+          className={`flex h-16 w-16 shrink-0 items-center justify-center rounded-full md:h-[4.5rem] md:w-[4.5rem] ${
             isDark ? "bg-white/10" : "bg-[#ececeb]"
           }`}
         >
           <HomeIcon name={item.icon} isDark={isDark} className={ICON_LG} />
         </div>
 
-        <h3
-          className={`min-w-0 flex-1 text-[0.9rem] font-bold leading-tight md:text-[0.95rem] ${
-            isDark ? "text-white" : "text-black"
-          }`}
-        >
-          {item.title}
-        </h3>
+        <div className="min-w-0 flex-1">
+          <h3
+            className={`text-[0.9rem] font-bold leading-tight md:text-[0.95rem] ${
+              isDark ? "text-white" : "text-black"
+            }`}
+          >
+            {item.title}
+          </h3>
+          <p
+            className={`mt-1.5 text-[0.76rem] font-normal leading-[1.4] md:text-[0.78rem] ${
+              isDark ? "text-white/70" : "text-[var(--color-text-muted)]"
+            }`}
+            dangerouslySetInnerHTML={{ __html: cleanText(item.description) }}
+          />
+        </div>
       </div>
-
-      {/* Description full-width below the icon row */}
-      <p
-        className={`mt-2.5 text-[0.76rem] leading-[1.4] md:mt-3 md:text-[0.78rem] ${
-          isDark ? "text-white/70" : "text-[var(--color-text-muted)]"
-        }`}
-        dangerouslySetInnerHTML={{ __html: cleanText(item.description) }}
-      />
     </article>
   );
 }
@@ -134,7 +134,7 @@ function FaqBlock({ faq, isDark }) {
       }`}
     >
       <div className={`border-b px-4 py-3 md:px-5 md:py-3.5 ${isDark ? "border-[var(--color-border)]" : "border-[#ececeb]"}`}>
-        <h3 className={`font-serif text-[1.15rem] font-semibold md:text-[1.3rem] ${isDark ? "text-white" : "text-black"}`}>
+        <h3 className={`font-heading text-[1.15rem] font-semibold md:text-[1.3rem] ${isDark ? "text-white" : "text-black"}`}>
           {faq.title}
         </h3>
       </div>

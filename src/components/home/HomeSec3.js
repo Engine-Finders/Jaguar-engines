@@ -229,41 +229,94 @@ function StepIndicator({ labels, stageIndex, isDark }) {
   );
 }
 
-function TrustStrip({ items, isDark }) {
-  const cols = items.length === 3 ? "grid-cols-3" : items.length === 4 ? "grid-cols-4" : "grid-cols-2";
+function TrustStripText({ text = "" }) {
+  // Split leading metrics like hero strip (1,700+ / 15+)
+  const metricMatch = text.match(/^((?:Powered by\s+)?[\d,]+(?:\+)?)\s+(.+)$/i);
+  if (metricMatch) {
+    const rawMetric = metricMatch[1].replace(/^Powered by\s+/i, "");
+    const rest = metricMatch[2]
+      .replace(/^real\s+/i, "Real ")
+      .replace(/^vetted\s+/i, "Vetted ");
 
+    let lines;
+    if (/real uk enquiries/i.test(rest) || /real enquiries/i.test(rest)) {
+      lines = ["Real Enquiries"];
+    } else if (/vetted jaguar/i.test(rest)) {
+      lines = ["Vetted Jaguar", "Specialists"];
+    } else {
+      const words = rest.split(" ");
+      const mid = Math.ceil(words.length / 2);
+      lines = [words.slice(0, mid).join(" "), words.slice(mid).join(" ")].filter(Boolean);
+    }
+
+    return { value: rawMetric, lines };
+  }
+
+  if (text === "OEM part references included") {
+    return { value: "", lines: ["OEM part", "references included"] };
+  }
+
+  if (text === "Part of Engine Finders") {
+    return { value: "", lines: ["Part of", "Engine Finders"] };
+  }
+
+  const pair = {
+    "Powered by 1,700+ real UK enquiries": { value: "1,700+", lines: ["Real Enquiries"] },
+    "15+ vetted Jaguar specialists": { value: "15+", lines: ["Vetted Jaguar", "Specialists"] },
+  }[text];
+
+  if (pair) return pair;
+
+  return { value: "", lines: [text] };
+}
+
+function InvertedIconCircle({ name, isDark, wrapClass = "h-12 w-12 md:h-14 md:w-14", iconClass = "h-10 w-10 md:h-12 md:w-12" }) {
   return (
-    <ul
-      className={`grid overflow-hidden rounded-lg border ${cols} ${
-        isDark
-          ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
-          : "border-[var(--color-border)] bg-[var(--color-surface)] shadow-[0_8px_20px_var(--color-shadow)]"
+    <span
+      className={`flex shrink-0 items-center justify-center rounded-full ${wrapClass} ${
+        isDark ? "bg-[#ececea]" : "bg-black"
       }`}
     >
-      {items.map((item, index) => (
-        <li
-          key={`trust-strip-${index}`}
-          className="flex flex-col items-center gap-1.5 border-r border-[var(--color-border)] px-1.5 py-2.5 text-center last:border-r-0 md:flex-row md:items-center md:gap-2.5 md:px-3 md:py-3 md:text-left"
-        >
-          <span className="flex h-10 w-10 shrink-0 items-center justify-center md:h-12 md:w-12">
-            <HomeIcon name={item.icon} isDark={isDark} className="h-9 w-9 md:h-11 md:w-11" />
-          </span>
-          <span className="min-w-0">
-            {item.value ? (
-              <strong className={`block text-[0.68rem] leading-tight md:text-[0.86rem] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
-                {item.value}
-              </strong>
-            ) : null}
-            <span
-              className={`block text-[0.54rem] leading-[1.2] md:text-[0.72rem] md:leading-[1.25] ${
-                isDark ? "text-white/78" : "text-[var(--color-text-muted)]"
-              } ${item.value ? "mt-0.5" : ""}`}
-            >
-              {item.text || item.label}
+      <HomeIcon name={name} isDark={!isDark} className={iconClass} />
+    </span>
+  );
+}
+
+function TrustStrip({ items, isDark }) {
+  return (
+    <ul className="grid grid-cols-4 md:max-w-[700px]">
+      {items.map((item, index) => {
+        const { value, lines } = TrustStripText({ text: item.text || item.label || "" });
+
+        return (
+          <li
+            key={`trust-strip-${index}`}
+            className={`flex flex-col items-center gap-1.5 border-r px-1 py-0.5 text-center last:border-r-0 md:flex-row md:items-start md:gap-2.5 md:px-3 md:py-2 md:text-left ${
+              isDark ? "border-white/18" : "border-[var(--color-chrome)]/55"
+            }`}
+          >
+            <span className="flex h-14 w-14 shrink-0 items-center justify-center md:h-12 md:w-12">
+              <HomeIcon name={item.icon} isDark={isDark} className="h-14 w-14 md:h-12 md:w-12" />
             </span>
-          </span>
-        </li>
-      ))}
+            <span className={`min-w-0 ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+              {value ? (
+                <strong className="block text-[0.9rem] font-bold leading-none md:text-[1.05rem]">{value}</strong>
+              ) : null}
+              <span
+                className={`mt-0.5 block text-[11px] leading-[1.25] md:mt-0.5 md:text-[0.78rem] md:leading-[1.3] ${
+                  isDark ? "text-white/76" : "text-[var(--color-text-muted)]"
+                } ${value ? "" : "md:pt-1"}`}
+              >
+                {lines.map((line) => (
+                  <span key={line} className="block">
+                    {line}
+                  </span>
+                ))}
+              </span>
+            </span>
+          </li>
+        );
+      })}
     </ul>
   );
 }
@@ -280,7 +333,10 @@ function HowItWorksCard({ steps, isDark, onStart, showButton = true }) {
       <h3 className="text-[0.78rem] font-bold uppercase tracking-[0.08em] text-[var(--color-chrome-bright)]">
         How It Works
       </h3>
-      <ul className="mt-4 grid gap-4">
+      <div className="mt-2">
+        <MStripe />
+      </div>
+      <ul className="mt-3.5 grid gap-4">
         {steps.map((step) => (
           <li key={step.step} className="flex items-start gap-3">
             <span
@@ -327,12 +383,18 @@ function WhyTrustCard({ items, isDark }) {
       <h3 className="text-[0.78rem] font-bold uppercase tracking-[0.08em] text-[var(--color-chrome-bright)]">
         Why Trust This Diagnosis?
       </h3>
-      <ul className="mt-3.5 grid gap-3.5">
+      <div className="mt-2">
+        <MStripe />
+      </div>
+      <ul className="mt-3 grid gap-3.5">
         {items.map((item) => (
           <li key={item.title} className="flex items-start gap-2.5">
-            <span className="flex h-11 w-11 shrink-0 items-center justify-center md:h-12 md:w-12">
-              <HomeIcon name={item.icon} isDark={isDark} className="h-10 w-10 md:h-11 md:w-11" />
-            </span>
+            <InvertedIconCircle
+              name={item.icon}
+              isDark={isDark}
+              wrapClass="h-14 w-14 md:h-16 md:w-16"
+              iconClass="h-11 w-11 md:h-14 md:w-14"
+            />
             <div className="min-w-0">
               <p className={`text-[0.88rem] font-semibold leading-tight ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
                 {item.title}
@@ -382,6 +444,9 @@ function CostTablePanel({ table, isDark }) {
       <h3 className="text-[0.78rem] font-bold uppercase tracking-[0.08em] text-[var(--color-chrome-bright)]">
         {table.title}
       </h3>
+      <div className="mt-2">
+        <MStripe />
+      </div>
 
       {/* Mobile stacked cards */}
       <ul className="mt-3 grid gap-3 md:hidden">

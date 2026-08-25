@@ -9,7 +9,7 @@
       { "label": "MODEL & ENGINE", "icon": "vehicle" },
       { "label": "TYPICAL VEHICLE VALUE", "icon": "pound" },
       { "label": "REPLACEMENT COST", "icon": "repair" },
-      { "label": "VERDICT", "icon": "check" }
+      { "label": "VERDICT", "icon": "shield" }
     ],
     "rows": [
       {

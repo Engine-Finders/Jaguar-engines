@@ -94,28 +94,26 @@ export default function HomeSec14({ data }) {
             </p>
 
             {stats.length ? (
-              <ul className="mt-5 grid grid-cols-2 md:mt-6 md:max-w-[600px] md:grid-cols-4">
+              <ul className="mt-5 grid max-w-[600px] grid-cols-4 md:mt-6">
                 {stats.map((stat, index) => {
-                  const borderMobile = index % 2 === 1;
-                  const borderDesktop = index > 0;
                   const borderColor = isDark ? "border-white/15" : "border-[#d8d8d6]";
 
                   return (
                     <li
                       key={stat.label}
-                      className={`flex flex-col items-center px-2 py-2 text-center md:px-3 ${
-                        borderMobile ? `border-l ${borderColor}` : ""
-                      } ${borderDesktop ? `md:border-l ${borderColor}` : "md:border-l-0"}`}
+                      className={`flex flex-col items-center px-1.5 py-2 text-center md:px-3 ${
+                        index > 0 ? `border-l ${borderColor}` : ""
+                      }`}
                     >
                       <span
                         className={`flex h-12 w-12 items-center justify-center rounded-full md:h-14 md:w-14 ${
                           isDark ? "bg-white/10" : "bg-[#ececeb]"
                         }`}
                       >
-                        <HomeIcon name={stat.icon} isDark={isDark} className={ICON_XL} />
+                        <HomeIcon name={stat.icon} isDark={isDark} className="h-11 w-11 md:h-12 md:w-12" />
                       </span>
                       <span
-                        className={`mt-2 max-w-[130px] text-center text-[0.74rem] leading-[1.3] md:text-[0.78rem] ${
+                        className={`mt-1.5 max-w-[120px] text-center text-[0.62rem] leading-[1.25] md:mt-2 md:text-[0.78rem] ${
                           isDark ? "text-white/80" : "text-[var(--color-text)]"
                         }`}
                       >
@@ -149,7 +147,7 @@ export default function HomeSec14({ data }) {
               {guidance.eyebrow}
             </p>
             <h3
-              className={`mt-2 font-serif text-[1.35rem] font-semibold leading-tight md:text-[1.55rem] ${
+              className={`mt-2 font-heading text-[1.35rem] font-semibold leading-tight md:text-[1.55rem] ${
                 isDark ? "text-white" : "text-black"
               }`}
             >

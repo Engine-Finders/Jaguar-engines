@@ -31,7 +31,7 @@ function ComparisonCard({ item, isDark }) {
     >
       {/* Number tab — top left */}
       <span
-        className={`absolute left-0 top-0 z-20 flex h-[22px] min-w-[30px] items-center justify-center rounded-br-[8px] px-2 font-serif text-[0.74rem] font-semibold leading-none ${
+        className={`absolute left-0 top-0 z-20 flex h-[22px] min-w-[30px] items-center justify-center rounded-br-[8px] px-2 font-heading text-[0.74rem] font-semibold leading-none ${
           isDark ? "bg-[var(--color-chrome)] text-[var(--color-page)]" : "bg-black text-white"
         }`}
       >
@@ -192,7 +192,7 @@ export default function HomeSec5({ data }) {
           />
         </div>
 
-        <div className="relative mx-auto w-full max-w-8xl px-3 pb-3 pt-5 md:px-6 md:pb-3.5 md:pt-8 lg:px-8">
+        <div className="relative mx-auto w-full max-w-8xl px-3 pt-5 pb-4 md:px-6 md:pt-8 md:pb-5 lg:px-8">
           <div className="max-w-[720px]">
             <p
               className={`text-[0.64rem] font-bold uppercase tracking-[0.14em] ${
@@ -206,14 +206,15 @@ export default function HomeSec5({ data }) {
                 isDark ? "text-white" : "text-[var(--color-text)]"
               }`}
             >
-              Comparison Hub —{" "}
+              Comparison Hub
+              <br />
               <span className="text-[var(--color-chrome-bright)]">Head-to-Head Verdicts</span>
             </h2>
             <div className="mt-2.5">
               <MStripe />
             </div>
             <p
-              className={`mt-2 max-w-[640px] text-[0.88rem] leading-[1.4] md:text-[1.02rem] md:leading-[1.45] ${
+              className={`mt-1.5 max-w-[640px] text-[0.88rem] leading-[1.4] md:text-[1.02rem] md:leading-[1.45] ${
                 isDark ? "text-white/80" : "text-[var(--color-text-muted)]"
               }`}
               dangerouslySetInnerHTML={{ __html: data.subHeadline }}
@@ -222,7 +223,7 @@ export default function HomeSec5({ data }) {
         </div>
       </div>
 
-      <div className="mx-auto w-full max-w-8xl px-3 pb-5 pt-2 md:px-6 md:pb-6 md:pt-2.5 lg:px-8">
+      <div className="mx-auto w-full max-w-8xl px-3 pt-1 pb-5 md:px-6 md:pt-1.5 md:pb-6 lg:px-8">
         <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 sm:gap-2.5 lg:grid-cols-3 lg:gap-3">
           {comparisons.map((item) => (
             <ComparisonCard key={item.id} item={item} isDark={isDark} />

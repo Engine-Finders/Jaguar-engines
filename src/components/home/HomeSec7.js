@@ -76,15 +76,15 @@ function VerdictIcon({ type, mobile = false }) {
 
   if (type === "safe" || type === "avoid") {
     return (
-      <span className={`flex shrink-0 items-center justify-center rounded-full border-2 ${mobile ? "h-9 w-9" : "h-7 w-7"} ${config.color}`}>
-        <Icon name={config.icon} className={mobile ? "h-6 w-6" : "h-4.5 w-4.5"} strokeWidth={2.3} />
+      <span className={`flex shrink-0 items-center justify-center rounded-full border-2 ${mobile ? "h-10 w-10" : "h-8 w-8"} ${config.color}`}>
+        <Icon name={config.icon} className={mobile ? "h-7 w-7" : "h-5 w-5"} strokeWidth={2.3} />
       </span>
     );
   }
 
   return (
     <span className={`flex shrink-0 items-center justify-center ${config.color}`}>
-      <Icon name={config.icon} className={mobile ? "h-10 w-10" : "h-7 w-7"} strokeWidth={type === "warning" ? 1.8 : 2} />
+      <Icon name={config.icon} className={mobile ? "h-11 w-11" : "h-8 w-8"} strokeWidth={type === "warning" ? 1.8 : 2} />
     </span>
   );
 }
@@ -121,7 +121,7 @@ function EngineRow({ row, isDark }) {
 
       <div className={`grid min-w-0 gap-1.5 border-l pl-3 md:contents ${isDark ? "border-[var(--color-border)]" : "border-[#dfe7f1]"}`}>
         <p className="flex items-center gap-3 text-[0.84rem] leading-tight md:text-[0.92rem]">
-          <FuelIcon fuel={row.fuel} isDark={isDark} className="h-6 w-6 md:h-6 md:w-6" />
+          <FuelIcon fuel={row.fuel} isDark={isDark} className="h-8 w-8 md:h-9 md:w-9" />
           <span>{row.fuel}</span>
         </p>
         <p className={`text-[0.82rem] leading-[1.22] md:text-[0.9rem] ${isDark ? "text-white/78" : "text-[#071827]"}`}>{cleanText(row.years)}</p>
@@ -154,7 +154,7 @@ function TrustStrip({ items, isDark }) {
 
         return (
           <li key={item.label} className={`flex min-w-0 flex-col items-center border-r px-2 py-5 text-center last:border-r-0 ${isDark ? "border-[var(--color-border)]" : "border-[#dfe7f1]"}`}>
-            <HomeIcon name={trustIconByIndex[index] || "chart"} isDark={isDark} className="h-8 w-8" />
+            <HomeIcon name={trustIconByIndex[index] || "chart"} isDark={isDark} className="h-10 w-10" />
             <span className={`mt-3 text-[0.78rem] leading-[1.28] ${isDark ? "text-white/78" : "text-[#172b4a]"}`}>
               {parts ? parts[1] : text}
               {parts?.[2] ? <strong className={isDark ? "block text-white" : "block text-[#071827]"}>{parts[2]}</strong> : null}
@@ -191,7 +191,7 @@ function LegendCard({ legend, isDark }) {
   return (
     <Link href={legend.href} className={`flex items-center gap-5 rounded-md border p-5 shadow-[0_16px_36px_rgba(10,26,43,0.08)] md:hidden ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)] text-white" : "border-[#dfe5ed] bg-white text-[#071827]"}`}>
       <span className="shrink-0">
-        <HomeIcon name="bulb" isDark={isDark} className="h-10 w-10" />
+        <HomeIcon name="bulb" isDark={isDark} className="h-12 w-12" />
       </span>
       <span className="min-w-0 flex-1">
         <strong className="block text-[1rem]">{legend.title}</strong>
