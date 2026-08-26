@@ -19,7 +19,7 @@
   --color-primary-soft: #ececea;
   --color-chrome: #b7b8b3;
   --color-chrome-strong: #9b9c97;
-  --color-chrome-bright: #90908d;
+  --color-chrome-bright: #90908d; /* day H1/H2 accent; dark override via themeProvider → #bdbcbd */
   --color-chrome-soft: rgba(183, 184, 179, 0.22);
   --color-accent: #292b29;
   --color-accent-red: #9f1d28;
@@ -77,7 +77,15 @@ a {
 
 /* Accent spans inside headings loaded from JSON */
 .heading-accent {
-  color: var(--color-primary);
+  color: var(--color-chrome-bright);
+}
+
+/* H1/H2 chrome accent shades (day / night) */
+main h1 .text-chrome-accent,
+main h2 .text-chrome-accent,
+main h1 .heading-chrome,
+main h2 .heading-chrome {
+  color: var(--color-chrome-bright);
 }
 
 .heading-accent-red {

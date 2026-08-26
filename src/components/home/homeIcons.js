@@ -98,9 +98,15 @@ const FILES = {
   // HomeSec11
   timeline: "Generation Honest Rated Icon-01.png",
   insight: "Market Insight Icon-01.png",
-  // HomeSec14 CTA
-  chat: "Call a specialist Icon-01.png",
-  phone: "Phone Icon-01.png",
+  // Model / ownership pages
+  cart: "Best Used buy icon-01.png",
+  alert: "Check Watch-01.png",
+  scale: "Scale Icon-01.png",
+  ranking: "Flagship choice icon-01.png",
+  quote: "Quote Icon-01.png",
+  "most-enquired-stat": "Most Enquired Icon-01.png",
+  generations: "Generation Honest Rated Icon-01.png",
+  "engine-codes": "Database Icon-01.png",
 };
 
 // Silver folder uses a few different filenames

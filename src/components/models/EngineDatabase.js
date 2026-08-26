@@ -1,10 +1,14 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
-import { sectionDescription } from "@/components/models/sectionTypography";
+import HomeIcon from "@/components/home/homeIcons";
+import { sectionDescription, sectionH2 } from "@/components/models/sectionTypography";
+
+const HEADER_IMAGE = "/home-image/sec2-bg.webp";
 
 const defaultFilters = {
   query: "",
@@ -15,7 +19,7 @@ const defaultFilters = {
 };
 
 function cleanText(text = "") {
-  return String(text)
+  return String(text ?? "")
     .replaceAll("ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£", "\u00a3")
     .replaceAll("Ãƒâ€šÃ‚Â£", "\u00a3")
     .replaceAll("Ã‚Â£", "\u00a3")
@@ -53,7 +57,13 @@ function splitTitle(title = "") {
   const marker = "The Complete Database";
   const index = clean.indexOf(marker);
 
-  if (index === -1) return { main: clean, accent: "" };
+  if (index === -1) {
+    const dash = clean.indexOf(" - ");
+    if (dash !== -1) {
+      return { main: clean.slice(0, dash).trim(), accent: clean.slice(dash + 3).trim() };
+    }
+    return { main: clean, accent: "" };
+  }
 
   return {
     main: clean.slice(0, index).trim(),
@@ -61,43 +71,8 @@ function splitTitle(title = "") {
   };
 }
 
-function shortTitle(title = "") {
-  return cleanText(title)
-    .replace(/^BMW\s+/i, "")
-    .replace("The Complete Database", "The Database");
-}
-
-function statIcon(type) {
-  const paths = {
-    cube: <path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Zm0 9 8-4.5M12 12 4 7.5M12 12v9" />,
-    shield: <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm-2 9 1.6 1.6L15 10" />,
-    chart: <path d="M5 19V9m5 10V5m5 14v-7m5 7H3" />,
-    pound: <path d="M17 6.5A5 5 0 0 0 8 9v8m-3 0h10M6 13h7" />,
-    database: <path d="M5 6c0-1.7 3.1-3 7-3s7 1.3 7 3-3.1 3-7 3-7-1.3-7-3Zm0 0v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3" />,
-    search: <path d="m21 21-4.3-4.3M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z" />,
-    file: <path d="M7 3h8l4 4v14H7V3Zm8 0v5h5M10 13h6m-6 4h6" />,
-    droplet: <path d="M12 3s5 5.2 5 9a5 5 0 0 1-10 0c0-3.8 5-9 5-9Z" />,
-    arrow: <path d="M5 12h14m-6-6 6 6-6 6" />,
-    reset: <path d="M20 12a8 8 0 1 1-2.3-5.7M20 4v6h-6" />,
-  };
-
-  return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">
-      {paths[type] || paths.cube}
-    </svg>
-  );
-}
-
-function StatCard({ icon, value, label }) {
-  return (
-    <div className="min-h-[98px] rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-5 shadow-[0_8px_22px_var(--color-shadow)]">
-      <div className="flex items-center gap-4">
-        <span className="shrink-0 text-[var(--color-primary)]">{statIcon(icon)}</span>
-        <strong className="text-[1.05rem] leading-none text-[var(--color-text)]">{cleanText(value)}</strong>
-      </div>
-      <p className="mt-3 text-[13px] leading-[1.45] text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: label }} />
-    </div>
-  );
+function StatIcon({ name, isDark, className = "h-5 w-5 object-contain" }) {
+  return <HomeIcon name={name} isDark={isDark} className={className} />;
 }
 
 function Rating({ value }) {
@@ -112,7 +87,10 @@ function Rating({ value }) {
   return (
     <span className="inline-flex gap-0.5 text-[15px] leading-none">
       {stars.map((state, index) => (
-        <span key={index} className={state === "empty" ? "text-[#cfd5dd]" : "text-[var(--color-primary)]"}>
+        <span
+          key={index}
+          className={state === "empty" ? "text-[#cfd5dd]" : "text-[var(--color-chrome-bright)]"}
+        >
           {state === "half" ? "\u00bd" : "\u2605"}
         </span>
       ))}
@@ -123,7 +101,8 @@ function Rating({ value }) {
 function cleanCost(value = "") {
   return cleanText(value)
     .replace(/\s*\[PLACEHOLDER.*?\]/, "")
-    .replace(/\s*\[BMW-QUOTE\]/, "");
+    .replace(/\s*\[BMW-QUOTE\]/, "")
+    .replace(/\s*\[JAG-QUOTE\]/, "");
 }
 
 function enquiryNumber(value = "") {
@@ -153,7 +132,10 @@ function engineMatchesQuery(engine, query) {
     engine.model,
     engine.enquiries,
     engine.avgRebuildCost,
-  ].map(cleanText).join(" ").toLowerCase();
+  ]
+    .map(cleanText)
+    .join(" ")
+    .toLowerCase();
 
   return haystack.includes(query.trim().toLowerCase());
 }
@@ -180,7 +162,12 @@ function filterAndSortEngines(engines, filters) {
 }
 
 function filterOptions(engines) {
-  const generations = engines.flatMap((engine) => cleanText(engine.model).split(",").map((item) => item.trim()).filter(Boolean));
+  const generations = engines.flatMap((engine) =>
+    cleanText(engine.model)
+      .split(",")
+      .map((item) => item.trim())
+      .filter(Boolean)
+  );
 
   return {
     fuels: uniqueOptions(engines.map((engine) => engine.fuel)),
@@ -226,8 +213,22 @@ function DesktopTable({ engines }) {
       <table className="w-full border-collapse text-left text-[13px] text-[var(--color-text)]">
         <thead>
           <tr className="bg-[var(--color-page-soft)]">
-            {["Engine Code", "Family", "Fuel", "Disp.", "Power", "Years", "Gen.", "Reliability", "2025 Enquiries", "Avg. Recon Cost"].map((column) => (
-              <th key={column} className="border-b border-r border-[var(--color-border)] px-3 py-3 text-center text-[13px] font-bold last:border-r-0">
+            {[
+              "Engine Code",
+              "Family",
+              "Fuel",
+              "Disp.",
+              "Power",
+              "Years",
+              "Gen.",
+              "Reliability",
+              "2025 Enquiries",
+              "Avg. Recon Cost",
+            ].map((column) => (
+              <th
+                key={column}
+                className="border-b border-r border-[var(--color-border)] px-3 py-3 text-center text-[13px] font-bold last:border-r-0"
+              >
                 {column}
               </th>
             ))}
@@ -236,16 +237,45 @@ function DesktopTable({ engines }) {
         <tbody>
           {engines.slice(0, 10).map((row) => (
             <tr key={row.engineCode}>
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 font-bold" dangerouslySetInnerHTML={{ __html: cleanText(row.engineCode) }} />
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center" dangerouslySetInnerHTML={{ __html: cleanText(row.family) }} />
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center" dangerouslySetInnerHTML={{ __html: cleanText(row.fuel) }} />
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center" dangerouslySetInnerHTML={{ __html: cleanText(row.displacement) }} />
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center" dangerouslySetInnerHTML={{ __html: cleanText(row.power) }} />
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center" dangerouslySetInnerHTML={{ __html: cleanText(row.years) }} />
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center" dangerouslySetInnerHTML={{ __html: cleanText(row.model) }} />
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center"><Rating value={row.reliability} /></td>
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center" dangerouslySetInnerHTML={{ __html: cleanText(row.enquiries) }} />
-              <td className="border-t border-[var(--color-border)] px-3 py-2.5 text-center" dangerouslySetInnerHTML={{ __html: cleanCost(row.avgRebuildCost) }} />
+              <td
+                className="border-r border-t border-[var(--color-border)] px-3 py-2.5 font-bold"
+                dangerouslySetInnerHTML={{ __html: cleanText(row.engineCode) }}
+              />
+              <td
+                className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center"
+                dangerouslySetInnerHTML={{ __html: cleanText(row.family) }}
+              />
+              <td
+                className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center"
+                dangerouslySetInnerHTML={{ __html: cleanText(row.fuel) }}
+              />
+              <td
+                className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center"
+                dangerouslySetInnerHTML={{ __html: cleanText(row.displacement) }}
+              />
+              <td
+                className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center"
+                dangerouslySetInnerHTML={{ __html: cleanText(row.power) }}
+              />
+              <td
+                className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center"
+                dangerouslySetInnerHTML={{ __html: cleanText(row.years) }}
+              />
+              <td
+                className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center"
+                dangerouslySetInnerHTML={{ __html: cleanText(row.model) }}
+              />
+              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center">
+                <Rating value={row.reliability} />
+              </td>
+              <td
+                className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center font-heading text-[1.05rem] font-semibold"
+                dangerouslySetInnerHTML={{ __html: cleanText(row.enquiries) }}
+              />
+              <td
+                className="border-t border-[var(--color-border)] px-3 py-2.5 text-center"
+                dangerouslySetInnerHTML={{ __html: cleanCost(row.avgRebuildCost) }}
+              />
             </tr>
           ))}
         </tbody>
@@ -254,14 +284,15 @@ function DesktopTable({ engines }) {
   );
 }
 
-function MobileControls({ filters, options, onChange, onReset }) {
-  const selectClass = "min-h-12 w-full rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] px-4 text-[15px] text-[var(--color-text)]";
+function MobileControls({ filters, options, onChange, onReset, isDark }) {
+  const selectClass =
+    "min-h-12 w-full rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] px-4 text-[15px] text-[var(--color-text)]";
   const updateQuery = (event) => onChange({ query: event.currentTarget.value });
 
   return (
     <div className="space-y-3">
       <label className="flex min-h-14 items-center gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] px-4 text-[15px] text-[var(--color-text-soft)]">
-        <span className="text-[var(--color-text)]">{statIcon("search")}</span>
+        <StatIcon name="diagnosis" isDark={isDark} className="h-6 w-6 object-contain" />
         <input
           type="search"
           data-filter="query"
@@ -273,83 +304,139 @@ function MobileControls({ filters, options, onChange, onReset }) {
         />
       </label>
       <div className="grid grid-cols-2 gap-3">
-        <select data-filter="fuel" className={selectClass} value={filters.fuel} onChange={(event) => onChange({ fuel: event.target.value })}>
+        <select
+          data-filter="fuel"
+          className={selectClass}
+          value={filters.fuel}
+          onChange={(event) => onChange({ fuel: event.target.value })}
+        >
           <option value="">Fuel Type</option>
-          {options.fuels.map((fuel) => <option key={fuel} value={fuel}>{fuel}</option>)}
+          {options.fuels.map((fuel) => (
+            <option key={fuel} value={fuel}>
+              {fuel}
+            </option>
+          ))}
         </select>
-        <select data-filter="displacement" className={selectClass} value={filters.displacement} onChange={(event) => onChange({ displacement: event.target.value })}>
+        <select
+          data-filter="displacement"
+          className={selectClass}
+          value={filters.displacement}
+          onChange={(event) => onChange({ displacement: event.target.value })}
+        >
           <option value="">Displacement</option>
-          {options.displacements.map((displacement) => <option key={displacement} value={displacement}>{displacement}</option>)}
+          {options.displacements.map((displacement) => (
+            <option key={displacement} value={displacement}>
+              {displacement}
+            </option>
+          ))}
         </select>
-        <select data-filter="generation" className={selectClass} value={filters.generation} onChange={(event) => onChange({ generation: event.target.value })}>
+        <select
+          data-filter="generation"
+          className={selectClass}
+          value={filters.generation}
+          onChange={(event) => onChange({ generation: event.target.value })}
+        >
           <option value="">Generations</option>
-          {options.generations.map((generation) => <option key={generation} value={generation}>{generation}</option>)}
+          {options.generations.map((generation) => (
+            <option key={generation} value={generation}>
+              {generation}
+            </option>
+          ))}
         </select>
-        <select data-filter="sort" className={selectClass} value={filters.sort} onChange={(event) => onChange({ sort: event.target.value })}>
+        <select
+          data-filter="sort"
+          className={selectClass}
+          value={filters.sort}
+          onChange={(event) => onChange({ sort: event.target.value })}
+        >
           <option value="enquiries">Sort by Enquiries</option>
           <option value="code">Sort by Engine Code</option>
           <option value="family">Sort by Family</option>
         </select>
       </div>
-      <button type="button" data-filter-reset onClick={onReset} className="flex min-h-12 w-full items-center justify-center gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] text-[15px] text-[var(--color-text)]">
-        <span className="text-[var(--color-primary)]">{statIcon("reset")}</span>
+      <button
+        type="button"
+        data-filter-reset
+        onClick={onReset}
+        className="flex min-h-12 w-full items-center justify-center gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] text-[15px] text-[var(--color-text)]"
+      >
+        <StatIcon name="refresh" isDark={isDark} className="h-5 w-5 object-contain" />
         Reset filters
       </button>
     </div>
   );
 }
 
-function MobileTable({ engines }) {
+function MobileTable({ engines, isDark }) {
   return (
     <div className="overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] text-[15px]">
-      <div className="grid grid-cols-[1.2fr_0.9fr_1fr_44px] bg-[var(--color-primary)] px-3 py-3 text-[15px] font-bold uppercase text-white">
+      <div className="grid grid-cols-[1.2fr_0.9fr_1fr_44px] bg-black px-3 py-3 text-[15px] font-bold uppercase text-white dark:bg-[var(--color-chrome)] dark:text-[var(--color-page)]">
         <span>Engine Code</span>
         <span>Fuel</span>
         <span>2025 Enquiries</span>
         <span>View</span>
       </div>
       <div className="flex flex-col">
-      {engines.map((row, index) => {
-        const enquiries = enquiryNumber(row.enquiries);
-        const generations = cleanText(row.model).split(",").map((item) => item.trim()).filter(Boolean);
-        const search = [
-          row.engineCode,
-          row.family,
-          row.fuel,
-          row.displacement,
-          row.power,
-          row.years,
-          row.model,
-          row.enquiries,
-          row.avgRebuildCost,
-        ].map(cleanText).join(" ").toLowerCase();
+        {engines.map((row, index) => {
+          const enquiries = enquiryNumber(row.enquiries);
+          const generations = cleanText(row.model)
+            .split(",")
+            .map((item) => item.trim())
+            .filter(Boolean);
+          const search = [
+            row.engineCode,
+            row.family,
+            row.fuel,
+            row.displacement,
+            row.power,
+            row.years,
+            row.model,
+            row.enquiries,
+            row.avgRebuildCost,
+          ]
+            .map(cleanText)
+            .join(" ")
+            .toLowerCase();
 
-        return (
-          <div
-            key={row.engineCode}
-            data-engine-row
-            data-search={search}
-            data-fuel={cleanText(row.fuel)}
-            data-displacement={cleanText(row.displacement)}
-            data-generations={generations.join("|")}
-            data-enquiries={enquiries}
-            data-code={cleanText(row.engineCode)}
-            data-family={cleanText(row.family)}
-            hidden={index >= 9}
-            className="grid grid-cols-[1.2fr_0.9fr_1fr_44px] items-center border-t border-[var(--color-border)] px-3 py-3"
-          >
-            <span className="font-bold text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: cleanText(row.engineCode) }} />
-            <span className="flex items-center gap-2">
-              <span className={fuelColor(row.fuel)}>{statIcon("droplet")}</span>
-              <span dangerouslySetInnerHTML={{ __html: cleanText(row.fuel) }} />
-            </span>
-            <span className="font-bold text-[var(--color-primary)]">{enquiries ? enquiries.toLocaleString("en-GB") : "-"}</span>
-            <Link href="#" className="text-[var(--color-primary)]">{statIcon("arrow")}</Link>
-          </div>
-        );
-      })}
+          return (
+            <div
+              key={row.engineCode}
+              data-engine-row
+              data-search={search}
+              data-fuel={cleanText(row.fuel)}
+              data-displacement={cleanText(row.displacement)}
+              data-generations={generations.join("|")}
+              data-enquiries={enquiries}
+              data-code={cleanText(row.engineCode)}
+              data-family={cleanText(row.family)}
+              hidden={index >= 9}
+              className="grid grid-cols-[1.2fr_0.9fr_1fr_44px] items-center border-t border-[var(--color-border)] px-3 py-3"
+            >
+              <span
+                className="font-bold text-[var(--color-text)]"
+                dangerouslySetInnerHTML={{ __html: cleanText(row.engineCode) }}
+              />
+              <span className="flex items-center gap-2">
+                <span className={fuelColor(row.fuel)}>
+                  <StatIcon name="fuel" isDark={isDark} className="h-5 w-5 object-contain" />
+                </span>
+                <span dangerouslySetInnerHTML={{ __html: cleanText(row.fuel) }} />
+              </span>
+              <span className="font-heading text-[1.15rem] font-semibold text-[var(--color-text)]">
+                {enquiries ? enquiries.toLocaleString("en-GB") : "-"}
+              </span>
+              <Link href="#" className="text-[var(--color-text)]">
+                <StatIcon name="insight" isDark={isDark} className="h-5 w-5 object-contain" />
+              </Link>
+            </div>
+          );
+        })}
       </div>
-      <div data-engine-empty hidden className="border-t border-[var(--color-border)] px-3 py-5 text-center text-[15px] text-[var(--color-text-muted)]">
+      <div
+        data-engine-empty
+        hidden
+        className="border-t border-[var(--color-border)] px-3 py-5 text-center text-[15px] text-[var(--color-text-muted)]"
+      >
         No engine codes match these filters.
       </div>
       {engines.length === 0 ? (
@@ -357,6 +444,54 @@ function MobileTable({ engines }) {
           No engine codes match these filters.
         </div>
       ) : null}
+    </div>
+  );
+}
+
+function SectionHeader({ title, subHeadline, isDark, sectionBg }) {
+  return (
+    <div className={`relative overflow-hidden ${sectionBg}`}>
+      <div className="absolute inset-y-0 right-0 w-[62%] md:w-[48%]">
+        <Image
+          src={HEADER_IMAGE}
+          alt=""
+          fill
+          className="object-cover object-right"
+          sizes="(max-width: 768px) 62vw, 48vw"
+        />
+        <div
+          className={
+            isDark
+              ? "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(11,12,12,0.82)_34%,rgba(11,12,12,0.18)_100%)]"
+              : "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(243,243,241,0.88)_34%,rgba(243,243,241,0.18)_100%)]"
+          }
+        />
+      </div>
+      <div className="relative mx-auto w-full max-w-8xl px-4 pb-3 pt-7 md:px-8 md:pb-4 md:pt-10">
+        <div className="max-w-[650px]">
+          <h2 className={`font-bold tracking-normal text-[var(--color-text)] ${sectionH2}`}>
+            <span dangerouslySetInnerHTML={{ __html: title.main }} />
+            {title.accent ? (
+              <>
+                <br />
+                <span
+                  className="text-[var(--color-chrome-bright)]"
+                  dangerouslySetInnerHTML={{ __html: title.accent }}
+                />
+              </>
+            ) : null}
+          </h2>
+          <div className="mt-3">
+            <MStripe />
+          </div>
+          {subHeadline ? (
+            <p
+              className={`mt-3 max-w-[610px] text-[var(--color-text-muted)] ${sectionDescription}`}
+              dangerouslySetInnerHTML={{ __html: cleanText(subHeadline) }}
+            />
+          ) : null}
+        </div>
+      </div>
     </div>
   );
 }
@@ -401,105 +536,143 @@ export default function EngineDatabase({ data }) {
 
   if (!data) return null;
 
+  const isDark = theme === "dark";
   const title = splitTitle(data.h2);
   const shownDesktopCount = Math.min(10, engines.length);
   const totalEngineCount = engines.length;
+  const sectionBg = isDark ? "bg-[var(--color-page)]" : "bg-[var(--color-page)]";
 
   function updateFilters(next) {
     setFilters((current) => ({ ...current, ...next }));
   }
 
   return (
-    <section id="engine-database" data-engine-database data-theme-mode={theme} className="bg-[var(--color-page)] py-6 text-[var(--color-text)]">
-      <div className="hidden md:block">
-        <div>
-          <div>
-            <h2 className="max-w-[650px] text-[27px] font-bold tracking-normal md:text-[39px]">
-              <span dangerouslySetInnerHTML={{ __html: title.main }} />
-              {title.accent ? (
-                <>
-                  <br />
-                  <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: title.accent }} />
-                </>
-              ) : null}
-            </h2>
-            <div className="mt-2">
-              <MStripe />
-            </div>
-            {data.subHeadline ? <p className="mt-2 max-w-[610px] text-[14px] leading-[1.45] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: cleanText(data.subHeadline) }} /> : null}
-          </div>
+    <section
+      id="engine-database"
+      data-engine-database
+      data-theme-mode={theme}
+      className={`overflow-hidden ${sectionBg} text-[var(--color-text)]`}
+    >
+      <SectionHeader title={title} subHeadline={data.subHeadline} isDark={isDark} sectionBg={sectionBg} />
 
-        </div>
-
-        <div className="mt-5">
+      <div className="relative mx-auto w-full max-w-8xl px-4 pb-7 pt-4 md:px-8 md:pb-8 md:pt-5">
+        <div className="hidden md:block">
           <DesktopTable engines={engines} />
-        </div>
 
-        <div className="mt-3 flex items-center justify-between gap-4">
-          <button type="button" className="flex min-h-11 min-w-[280px] items-center justify-between rounded-md border border-[var(--color-border)] px-5 text-[14px] font-medium text-[var(--color-primary)] transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)]">
-            <span className="flex items-center gap-3">{statIcon("file")} View all {totalEngineCount} engine codes</span>
-            <span>v</span>
-          </button>
-          <p className="mr-auto border-l border-[var(--color-border)] pl-7 text-[12px] text-[var(--color-text-muted)]">Showing {shownDesktopCount} of {totalEngineCount} engine codes</p>
-          <div className="flex items-center gap-5 rounded-md border border-[var(--color-border)] px-5 py-3 text-[13px]">
-            <span><Rating value="★☆☆☆☆" /> Poor</span>
-            <span><Rating value="★★★☆☆" /> Average</span>
-            <span><Rating value="★★★★☆" /> Good</span>
-            <span><Rating value="★★★★★" /> Excellent</span>
+          <div className="mt-3 flex flex-wrap items-center justify-between gap-4">
+            <button
+              type="button"
+              className="flex min-h-11 min-w-[280px] items-center justify-between rounded-md border border-[var(--color-border)] px-5 text-[14px] font-medium text-[var(--color-text)] transition-all duration-200 hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)]"
+            >
+              <span className="flex items-center gap-3">
+                <StatIcon name="database" isDark={isDark} className="h-5 w-5 object-contain" />
+                View all {totalEngineCount} engine codes
+              </span>
+              <span>v</span>
+            </button>
+            <p className="mr-auto border-l border-[var(--color-border)] pl-7 text-[12px] text-[var(--color-text-muted)]">
+              Showing {shownDesktopCount} of {totalEngineCount} engine codes
+            </p>
+            <div className="flex items-center gap-5 rounded-md border border-[var(--color-border)] px-5 py-3 text-[13px]">
+              <span>
+                <Rating value="★☆☆☆☆" /> Poor
+              </span>
+              <span>
+                <Rating value="★★★☆☆" /> Average
+              </span>
+              <span>
+                <Rating value="★★★★☆" /> Good
+              </span>
+              <span>
+                <Rating value="★★★★★" /> Excellent
+              </span>
+            </div>
+          </div>
+
+          <div className="mt-3 flex flex-wrap items-center justify-between gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-3 text-[12px] text-[var(--color-text-muted)]">
+            <p className="flex items-center gap-3">
+              <span
+                className={`flex h-8 w-8 items-center justify-center rounded-full ${
+                  isDark ? "bg-white/10" : "bg-[#ececeb]"
+                }`}
+              >
+                <StatIcon name="note" isDark={isDark} className="h-5 w-5 object-contain" />
+              </span>
+              All enquiries are from 2025 (to date) and verified via our internal system. Recon costs are supply only and
+              exclude fitting.
+            </p>
+            <Link
+              href="#"
+              className="flex items-center gap-2 font-bold text-[var(--color-text)] transition-all duration-200 hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)]"
+            >
+              How we collect engine data{" "}
+              <StatIcon name="insight" isDark={isDark} className="h-4 w-4 object-contain" />
+            </Link>
           </div>
         </div>
 
-        <div className="mt-3 flex items-center justify-between rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-3 text-[12px] text-[var(--color-text-muted)]">
-          <p className="flex items-center gap-3">
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--color-primary-soft)] font-bold text-[var(--color-primary)]">i</span>
-            All enquiries are from 2025 (to date) and verified via our internal system. Recon costs are supply only and exclude fitting.
-          </p>
-          <Link href="#" className="flex items-center gap-2 font-bold text-[var(--color-primary)] transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)]">How we collect engine data {statIcon("arrow")}</Link>
-        </div>
-      </div>
-
-      <div className="md:hidden">
-        <h2 className="text-[2rem] font-bold leading-[1.08] tracking-normal">
-          <span dangerouslySetInnerHTML={{ __html: shortTitle(data.h2).replace("Engine Codes - The Database", "Engine Codes -") }} />
-          <br />
-          <span className="text-[var(--color-primary)]">The Database</span>
-        </h2>
-        <div className="mt-3">
-          <MStripe />
-        </div>
-        <p className={`mt-4 ${sectionDescription} text-[var(--color-text-muted)]`}>
-          The complete database of BMW 3 Series engine codes with real UK enquiry data, fitted models, and replacement cost insights.
-        </p>
-
-        <div className="mt-6 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-4">
-          <div className="flex items-center gap-2.5">
-            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-[var(--color-primary-soft)] text-[var(--color-primary)]">{statIcon("database")}</span>
-            <h3 className="flex-1 text-left text-[28px] font-bold leading-[1.1] md:text-[50px]">Proprietary UK Data</h3>
+        <div className="md:hidden">
+          <div className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-4">
+            <div className="flex items-center gap-2.5">
+              <span
+                className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full ${
+                  isDark ? "bg-white/10" : "bg-[#ececeb]"
+                }`}
+              >
+                <StatIcon name="database" isDark={isDark} className="h-10 w-10 object-contain" />
+              </span>
+              <h3 className="flex-1 text-left font-heading text-[1.55rem] font-semibold leading-[1.1]">
+                Proprietary UK Data
+              </h3>
+            </div>
+            <p className="mt-3 text-center text-[14px] leading-[1.5]">
+              Every figure below is powered by real UK owner enquiries in 2025. This is data you won&apos;t find anywhere
+              else.
+            </p>
           </div>
-          <p className="mt-3 text-center text-[14px] leading-[1.5]">
-            Every figure below is powered by 24,650+ real UK owner enquiries in 2025. This is data you won&apos;t find anywhere else.
-          </p>
-        </div>
 
-        <div className="mt-5">
-          <MobileControls
-            filters={filters}
-            options={mobileOptions}
-            onChange={updateFilters}
-            onReset={() => setFilters(defaultFilters)}
-          />
-        </div>
+          <div className="mt-5">
+            <MobileControls
+              filters={filters}
+              options={mobileOptions}
+              onChange={updateFilters}
+              onReset={() => setFilters(defaultFilters)}
+              isDark={isDark}
+            />
+          </div>
 
-        <div className="mt-5">
-          <MobileTable engines={mobileEngines} />
-        </div>
+          <div className="mt-5">
+            <MobileTable engines={mobileEngines} isDark={isDark} />
+          </div>
 
-        <div className="mt-6 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-5 text-[15px] leading-[1.55]">
-          <h3 className="font-bold uppercase text-[var(--color-primary)]">Data sources:</h3>
-          <div className="mt-4 space-y-4">
-            <p className="flex gap-4"><span className="text-[var(--color-primary)]">{statIcon("chart")}</span><span><strong>Enquiry volumes:</strong><br />EM_Proprietary_Data_2025.txt [EM-VERIFIED]</span></p>
-            <p className="flex gap-4"><span className="text-[var(--color-primary)]">{statIcon("pound")}</span><span><strong>Costs:</strong><br />Table A - Engine Replacement Economics [EM-QUOTE]</span></p>
-            <p className="flex gap-4"><span className="text-[var(--color-primary)]">{statIcon("file")}</span><span><strong>Engine codes:</strong><br />Cross-referenced from your existing data</span></p>
+          <div className="mt-6 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-5 text-[15px] leading-[1.55]">
+            <h3 className="font-bold uppercase text-[var(--color-chrome-bright)]">Data sources:</h3>
+            <div className="mt-4 space-y-4">
+              <p className="flex gap-4">
+                <StatIcon name="chart" isDark={isDark} className="h-5 w-5 object-contain" />
+                <span>
+                  <strong>Enquiry volumes:</strong>
+                  <br />
+                  Proprietary UK enquiry data 2025 [JAG-VERIFIED]
+                </span>
+              </p>
+              <p className="flex gap-4">
+                <StatIcon name="pound" isDark={isDark} className="h-5 w-5 object-contain" />
+                <span>
+                  <strong>Costs:</strong>
+                  <br />
+                  Engine Replacement Economics [JAG-QUOTE]
+                </span>
+              </p>
+              <p className="flex gap-4">
+                <StatIcon name="database" isDark={isDark} className="h-5 w-5 object-contain" />
+                <span>
+                  <strong>Engine codes:</strong>
+                  <br />
+                  Cross-referenced from verified factory data
+                </span>
+              </p>
+            </div>
           </div>
         </div>
       </div>

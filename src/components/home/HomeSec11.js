@@ -74,7 +74,7 @@ function ModelCard({ model, isDark, centerLast = false }) {
           isDark ? "border-[var(--color-border)] bg-white/[0.03]" : "border-[#ececeb] bg-[#f6f6f5]"
         }`}
       >
-        <HomeIcon name={model.verdict?.icon || "safe-buy"} isDark={false} className={`${ICON_MD} shrink-0`} />
+        <HomeIcon name={model.verdict?.icon || "safe-buy"} isDark={isDark} className={`${ICON_MD} shrink-0`} />
         <span className={`text-center text-[0.74rem] font-medium leading-tight md:text-[0.78rem] ${isDark ? "text-white" : "text-black"}`}>
           {model.verdict?.label}
         </span>
@@ -123,9 +123,9 @@ function ExampleVerdict({ data, isDark }) {
           : "border-[#e8e8e6] bg-[#f3f3f2]"
       }`}
     >
-      <div className="grid gap-4 p-4 md:grid-cols-[minmax(170px,0.75fr)_minmax(280px,1.2fr)_minmax(300px,1.35fr)] md:items-center md:gap-5 md:p-5 lg:gap-6">
-        {/* Left */}
-        <div>
+      <div className="grid gap-4 p-4 md:grid-cols-[max-content_minmax(200px,260px)_minmax(0,1fr)] md:items-center md:gap-3 md:p-5">
+        {/* Left — only as wide as content */}
+        <div className="md:max-w-[220px] lg:max-w-[240px]">
           <p
             className={`text-[0.64rem] font-bold uppercase tracking-[0.12em] ${
               isDark ? "text-white/55" : "text-[var(--color-text-muted)]"
@@ -152,7 +152,7 @@ function ExampleVerdict({ data, isDark }) {
                     isDark ? "bg-white/10" : "bg-white"
                   }`}
                 >
-                  <HomeIcon name={item.icon} isDark={false} className="h-8 w-8 md:h-11 md:w-11" />
+                  <HomeIcon name={item.icon} isDark={isDark} className="h-8 w-8 md:h-11 md:w-11" />
                 </span>
                 <span className="min-w-0 md:pt-1">
                   <strong className={`block text-[0.72rem] leading-tight md:text-[0.88rem] ${isDark ? "text-white" : "text-black"}`}>
@@ -167,22 +167,26 @@ function ExampleVerdict({ data, isDark }) {
           </ul>
         </div>
 
-        {/* Center image — larger */}
-        <div className="relative mx-auto h-[210px] w-full max-w-[440px] md:h-[260px] lg:h-[280px]">
+        {/* Center image — side breathing room from left + right columns */}
+        <div className="relative mx-auto h-[210px] w-full md:mx-0 md:h-[240px] md:px-3.5 lg:h-[260px]">
           <Image
             src={data.image?.src || ROW_IMAGE}
             alt={data.image?.alt || data.model || ""}
             fill
             className="object-contain object-center"
-            sizes="(max-width: 768px) 90vw, 440px"
+            sizes="(max-width: 768px) 90vw, 260px"
           />
         </div>
 
-        {/* Right details grid */}
-        <div className="grid grid-cols-1 gap-3.5 sm:grid-cols-2 sm:gap-x-4 sm:gap-y-4">
+        {/* Right — takes remaining width */}
+        <div className="grid grid-cols-1 gap-3.5 sm:grid-cols-2 sm:gap-x-4 sm:gap-y-4 md:gap-x-5 md:gap-y-5">
           {(data.details || []).map((item) => (
             <div key={item.title} className="flex items-start gap-3">
-              <span className={`mt-0.5 flex ${ICON_CIRCLE} shrink-0 items-center justify-center rounded-full bg-black`}>
+              <span
+                className={`mt-0.5 flex ${ICON_CIRCLE} shrink-0 items-center justify-center rounded-full ${
+                  isDark ? "bg-white/10" : "bg-black"
+                }`}
+              >
                 <HomeIcon name={item.icon} isDark className={ICON_XL} />
               </span>
               <div className="min-w-0 pt-1">

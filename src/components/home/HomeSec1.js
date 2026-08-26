@@ -167,9 +167,9 @@ export default function HomeSec1({ data }) {
               isDark ? "text-white" : "text-[var(--color-text)]"
             }`}
           >
-            Trusted <span className="text-[#bdbcbd]">Jaguar</span>
+            Trusted <span className="text-[var(--color-chrome-bright)]">Jaguar</span>
             <br />
-            <span className="text-[#bdbcbd]">Ownership Guide</span>
+            <span className="text-[var(--color-chrome-bright)]">Ownership Guide</span>
           </h1>
 
           <MStripe />

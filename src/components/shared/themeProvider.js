@@ -55,7 +55,7 @@ const themes = {
     "--color-primary-soft": "rgba(216, 217, 213, 0.12)",
     "--color-chrome": "#c8c9c4",
     "--color-chrome-strong": "#ececea",
-    "--color-chrome-bright": "#c8c9c4",
+    "--color-chrome-bright": "#bdbcbd",
     "--color-chrome-soft": "rgba(200, 201, 196, 0.16)",
     "--color-accent": "#d8d9d5",
     "--color-accent-red": "#d36a70",
