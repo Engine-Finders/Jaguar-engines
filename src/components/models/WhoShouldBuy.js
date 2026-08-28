@@ -5,7 +5,7 @@ import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
-import { sectionBody, sectionDescription, sectionTableText } from "@/components/models/sectionTypography";
+import { sectionBody, sectionDescription, sectionTableText, tableHeaderClass } from "@/components/models/sectionTypography";
 
 const buyerImages = [
   "/model/Hero-bg-image.webp",
@@ -215,7 +215,7 @@ export default function WhoShouldBuy({ data }) {
         </div>
 
         <div className="mt-6 overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_12px_32px_var(--color-shadow)]">
-          <div className="hidden grid-cols-[40%_18%_42%] bg-black text-[14px] font-bold text-white lg:grid dark:bg-[var(--color-chrome)] dark:text-[var(--color-page)]">
+          <div className={`hidden grid-cols-[40%_18%_42%] text-[14px] font-bold lg:grid ${tableHeaderClass(isDark)}`}>
             {(data.columns || ["Buyer Profile", "Rating", "Our Verdict"]).map((column, index) => (
               <div key={column} className={`px-3 py-2.5 ${index > 0 ? "border-l border-white/20" : ""}`}>
                 {column}

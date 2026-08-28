@@ -4,7 +4,7 @@ import Image from "next/image";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
-import { sectionBody, sectionDescription, sectionH2, sectionTableText } from "@/components/models/sectionTypography";
+import { sectionBody, sectionDescription, sectionH2, sectionTableText, tableHeaderClass } from "@/components/models/sectionTypography";
 
 const metricIconKeys = {
   Generations: "generations",
@@ -64,12 +64,8 @@ function IconBox({ metric, isDark }) {
   const iconKey = metricIconKeys[metric] || "generations";
 
   return (
-    <span
-      className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full md:h-14 md:w-14 ${
-        isDark ? "bg-white/10" : "bg-white shadow-sm ring-1 ring-black/5"
-      }`}
-    >
-      <HomeIcon name={iconKey} isDark={isDark} className="h-10 w-10 object-contain md:h-12 md:w-12" />
+    <span className="flex h-8 w-8 shrink-0 items-center justify-center md:h-9 md:w-9">
+      <HomeIcon name={iconKey} isDark={isDark} className="h-7 w-7 object-contain md:h-8 md:w-8" />
     </span>
   );
 }
@@ -113,23 +109,23 @@ function DesktopTable({ rows, isDark }) {
       }`}
     >
       <div
-        className={`grid grid-cols-[72px_0.95fr_1.7fr] border-b border-[var(--color-border)] px-5 py-3 font-semibold text-[var(--color-text)] ${sectionTableText}`}
+        className={`grid grid-cols-[48px_0.95fr_1.7fr] border-b border-white/20 px-3 py-1.5 font-semibold md:px-3 md:py-2 ${tableHeaderClass(isDark)} ${sectionTableText}`}
       >
         <span />
-        <span>Metric</span>
-        <span>Value</span>
+        <span className="border-r border-white/20 pr-3 md:pr-4">Metric</span>
+        <span className="pl-3 md:pl-4">Value</span>
       </div>
       {rows.map((row) => (
         <div
           key={row.metric}
-          className="grid grid-cols-[72px_0.95fr_1.7fr] items-center border-b border-[var(--color-border)] px-5 py-3 last:border-b-0"
+          className="grid grid-cols-[48px_0.95fr_1.7fr] items-center border-b border-[var(--color-border)] px-3 py-1.5 last:border-b-0 md:py-2"
         >
           <IconBox metric={row.metric} isDark={isDark} />
           <span
-            className={`border-r border-[var(--color-border)] pr-5 font-semibold text-[var(--color-text)] ${sectionTableText}`}
+            className={`border-r border-[var(--color-border)] pr-3 font-semibold text-[var(--color-text)] md:pr-4 ${sectionTableText}`}
             dangerouslySetInnerHTML={{ __html: row.metric }}
           />
-          <span className={`pl-5 text-[var(--color-text-muted)] md:pl-6 ${sectionTableText}`}>
+          <span className={`pl-3 text-[var(--color-text-muted)] md:pl-4 ${sectionTableText}`}>
             <ValueWithBadges value={row.value} isDark={isDark} />
           </span>
         </div>
@@ -140,7 +136,7 @@ function DesktopTable({ rows, isDark }) {
 
 function MobileCard({ row, wide = false, isDark }) {
   return (
-    <li className={`${wide ? "col-span-2" : ""} border-b border-[var(--color-border)] p-3.5 last:border-b-0`}>
+    <li className={`${wide ? "col-span-2" : ""} border-b border-[var(--color-border)] p-2.5 last:border-b-0`}>
       <div className="flex items-center gap-2.5">
         <IconBox metric={row.metric} isDark={isDark} />
         <p

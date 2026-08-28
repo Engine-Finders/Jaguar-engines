@@ -5,6 +5,7 @@ import { useState } from "react";
 import { useTheme } from "@/components/shared/themeProvider";
 import MStripe from "@/components/reusableComponents/MStripe";
 import GenIcon from "../generation/GenIcons";
+import { variantSectionBg, splitSectionH2, tableHeaderClass, primaryBadgeClass } from "./variantSection";
 
 const DESKTOP_COLS = "grid-cols-[130px_110px_1.3fr_1.2fr_1.1fr_1.8fr]";
 const CAR_IMAGE = "/320d/era_map.webp";
@@ -24,10 +25,10 @@ function splitBracketTag(value = "") {
   return { main: match[1].trim(), tag: match[2] };
 }
 
-function GenerationBadge({ generation, className = "" }) {
+function GenerationBadge({ generation, className = "", isDark }) {
   return (
     <span
-      className={`absolute left-0 top-0 flex h-full w-12 items-start justify-center bg-[var(--color-primary)] pt-1 text-[0.72rem] font-bold text-white ${className}`}
+      className={`absolute left-0 top-0 flex h-full w-12 items-start justify-center pt-1 text-[0.72rem] font-bold ${primaryBadgeClass(isDark)} ${className}`}
       style={{ clipPath: "polygon(0 0, 100% 0, 45% 100%, 0 100%)" }}
     >
       {generation}
@@ -35,10 +36,10 @@ function GenerationBadge({ generation, className = "" }) {
   );
 }
 
-function GenerationThumb({ generation }) {
+function GenerationThumb({ generation, isDark }) {
   return (
     <div className="relative h-16 w-full">
-      <GenerationBadge generation={generation} />
+      <GenerationBadge generation={generation} isDark={isDark} />
       <Image src={CAR_IMAGE} alt={`BMW 320d ${generation}`} fill className="relative z-10 object-contain" sizes="130px" />
     </div>
   );
@@ -53,7 +54,7 @@ function DesktopRow({ row, isDark }) {
   return (
     <div className={`grid ${DESKTOP_COLS} items-stretch gap-px ${rowClass} text-[0.82rem] border-b ${borderBottom} last:border-b-0`}>
       <div className="flex items-center px-2 py-2">
-        <GenerationThumb generation={row.generation} />
+        <GenerationThumb generation={row.generation} isDark={isDark} />
       </div>
       <span className={`flex items-center px-3 border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.years }} />
       <span className={`flex items-center px-3 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.engineCode }} />
@@ -68,7 +69,7 @@ function DesktopRow({ row, isDark }) {
 // grid header (generation badge/years/thumbnail | engine code | reliability
 // + recon cost, each split from their trailing [TAG]), chevron pinned to the
 // card's top-right corner; era note revealed only when expanded.
-function MobileCard({ row, isOpen, onToggle }) {
+function MobileCard({ row, isOpen, onToggle, isDark }) {
   const reliability = splitBracketTag(row.reliability);
   const reconCost = splitBracketTag(row.reconCost);
 
@@ -78,7 +79,7 @@ function MobileCard({ row, isOpen, onToggle }) {
         <GenIcon name="chevronDown" className={`absolute right-3 top-3 h-4 w-4 shrink-0 text-[var(--color-primary)] transition-transform ${isOpen ? "rotate-180" : ""}`} />
 
         <div className="flex flex-col items-center gap-0.5 pr-2.5">
-          <span className="w-full rounded-md bg-[var(--color-primary)] px-2 py-0.5 text-center text-[0.7rem] font-bold leading-tight text-white">{row.generation}</span>
+          <span className={`w-full rounded-md px-2 py-0.5 text-center text-[0.7rem] font-bold leading-tight ${primaryBadgeClass(isDark)}`}>{row.generation}</span>
           <span className="text-center text-[0.64rem] leading-tight text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: row.years }} />
           <div className="relative h-20 w-full">
             <Image src={CAR_IMAGE} alt={`BMW 320d ${row.generation}`} fill className="object-contain" sizes="104px" />
@@ -118,20 +119,29 @@ export default function EraMap({ data }) {
   if (!data) return null;
 
   const isDark = theme === "dark";
-  const headerBg = isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]";
+  const headerBg = tableHeaderClass(isDark);
+  const titleParts = splitSectionH2(data.title);
   const headerDivider = isDark ? "border-white/20" : "border-white/25";
   const bodyWrapperBg = isDark ? "bg-black" : "bg-[var(--color-table-surface)]";
 
   return (
-    <section className="w-full bg-[var(--color-page)] py-8 text-[var(--color-text)] md:py-10">
+    <section className={`w-full overflow-x-hidden py-5 text-[var(--color-text)] md:py-6 ${variantSectionBg(isDark, false)}`}>
       <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
         <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
           <div>
             <div className="flex items-center gap-2.5">
-              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-[var(--color-primary)] text-white">
+              <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-md ${primaryBadgeClass(isDark)}`}>
                 <GenIcon name="clock" className="h-5 w-5" />
               </span>
-              <h2 className="text-[1.6rem] font-bold leading-[1.1] tracking-normal md:text-[2.4rem]">{data.title}</h2>
+              <h2 className="text-[1.6rem] font-bold leading-[1.1] tracking-normal md:text-[2.4rem]">
+                {titleParts.before ? <span dangerouslySetInnerHTML={{ __html: titleParts.before }} /> : null}
+                {titleParts.accent ? (
+                  <>
+                    {titleParts.before ? " " : null}
+                    <span className="text-[var(--color-chrome-bright)]" dangerouslySetInnerHTML={{ __html: titleParts.accent }} />
+                  </>
+                ) : null}
+              </h2>
             </div>
             <div className="mt-3">
               <MStripe />
@@ -149,12 +159,13 @@ export default function EraMap({ data }) {
               row={row}
               isOpen={openIndex === index}
               onToggle={() => setOpenIndex(openIndex === index ? null : index)}
+              isDark={isDark}
             />
           ))}
         </div>
 
         <div className="mt-6 hidden overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:block">
-          <div className={`grid ${DESKTOP_COLS} gap-px ${headerBg} px-2 py-2.5 text-[0.78rem] font-semibold text-white`}>
+          <div className={`grid ${DESKTOP_COLS} gap-px ${headerBg} px-2 py-2.5 text-[0.78rem] font-semibold`}>
             {data.columns?.map((col) => (
               <span key={col} className={`flex items-center px-3 border-r ${headerDivider} last:border-r-0`}>{col}</span>
             ))}
@@ -168,7 +179,7 @@ export default function EraMap({ data }) {
 
         <div className="mt-6 flex flex-col items-start gap-6 rounded-xl border border-[var(--color-border)] bg-[var(--color-card)] p-6 shadow-lg lg:flex-row lg:items-center lg:justify-between md:p-8">
           <div className="flex items-start gap-4 lg:max-w-[45%] lg:items-center">
-            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-blue-500/20 bg-blue-600/10 text-[var(--color-primary)]">
+            <span className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full border text-[var(--color-primary)] ${isDark ? "border-white/15 bg-white/5" : "border-[var(--color-border)] bg-[var(--color-surface)]"}`}>
               <GenIcon name="shield" className="h-5 w-5" />
             </span>
             <div>

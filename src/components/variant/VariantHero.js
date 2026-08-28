@@ -6,17 +6,24 @@ import { useRouter } from "next/navigation";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import GenIcon from "../generation/GenIcons";
+import HomeIcon from "@/components/home/homeIcons";
+import { primaryCtaClass } from "./variantSection";
 
-const BADGE_ICON_BY_EMOJI = {
-  "🔧": "wrench",
+const BADGE_HOME_ICON_BY_EMOJI = {
+  "🔧": "repair",
   "✅": "check",
-  "🚚": "truck",
-  "👥": "users",
+  "🚚": "uk-wide-delivery",
+  "👥": "users-team",
 };
 
-function parseBadge(badge = "") {
+const VARIANT_TRUST_BADGE_ICONS = ["repair", "check", "uk-wide-delivery", "users-team"];
+
+function parseBadge(badge = "", index = 0) {
   const [emoji, ...rest] = badge.split(" ");
-  return { icon: BADGE_ICON_BY_EMOJI[emoji] || "check", label: rest.join(" ") };
+  return {
+    icon: BADGE_HOME_ICON_BY_EMOJI[emoji] || VARIANT_TRUST_BADGE_ICONS[index] || "check",
+    label: rest.join(" "),
+  };
 }
 
 function splitPriceAnchor(priceAnchor = "") {
@@ -29,8 +36,7 @@ function splitTagPill(tagPill = "") {
   return { model: parts[0] || "", body: parts[1] || "", years: parts[2] || "" };
 }
 
-// Renders the trailing "Compare ... " action phrase after a dash in the H1
-// as the blue accent color, matching the hero mockup.
+// Trailing phrase after " - " uses the chrome accent, matching home/model heroes.
 function HeroHeadline({ h1 = "" }) {
   const dashIndex = h1.indexOf(" - ");
   if (dashIndex === -1) return <span dangerouslySetInnerHTML={{ __html: h1 }} />;
@@ -40,7 +46,7 @@ function HeroHeadline({ h1 = "" }) {
   return (
     <>
       <span dangerouslySetInnerHTML={{ __html: `${lead} - ` }} />
-      <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: accent }} />
+      <span className="text-[var(--color-chrome-bright)]" dangerouslySetInnerHTML={{ __html: accent }} />
     </>
   );
 }
@@ -86,14 +92,17 @@ export default function VariantHero({ data }) {
   const headingClass = isDark ? "text-white" : "text-[var(--color-text)]";
   const bodyTextClass = isDark ? "text-white/85" : "text-[var(--color-text-muted)]";
   const cardBorderClass = isDark ? "border-white/20" : "border-[var(--color-border)]";
-  const cardBgClass = isDark ? "bg-[rgba(2,7,17,0.45)]" : "bg-[rgba(255,255,255,0.7)]";
-  const innerBgClass = isDark ? "bg-[rgba(2,7,17,0.5)]" : "bg-[rgba(255,255,255,0.85)]";
-  const tagPillClass = isDark ? "border-white/30 bg-[rgba(2,7,17,0.5)] text-white" : "border-[rgba(11,103,220,0.4)] bg-[rgba(255,255,255,0.75)] text-[var(--color-text)]";
+  const cardBgClass = isDark ? "bg-[var(--color-surface-glass)]" : "bg-[rgba(255,255,255,0.7)]";
+  const innerBgClass = isDark ? "bg-[rgba(11,12,12,0.55)]" : "bg-[rgba(255,255,255,0.85)]";
+  const tagPillClass = isDark ? "border-white/30 bg-[rgba(11,12,12,0.55)] text-white" : "border-[var(--color-border-strong)] bg-[rgba(255,255,255,0.75)] text-[var(--color-text)]";
   // Stronger contrast than the plain --color-border token, since these sit on
   // a translucent card over a busy photo background rather than a solid surface.
   const dividerClass = isDark ? "bg-white/35" : "bg-[rgba(7,24,39,0.25)]";
   const dividerBorderClass = isDark ? "border-white/35" : "border-[rgba(7,24,39,0.25)]";
   const badgeTextClass = isDark ? "text-white/85" : "text-[var(--color-text)]";
+  const heroDescriptionShadow = isDark
+    ? ""
+    : "[text-shadow:0_0_8px_#fff,0_0_16px_#fff,0_0_24px_rgba(255,255,255,0.9),0_1px_2px_rgba(255,255,255,0.95)]";
 
   // Desktop: single row over the hero image, floating vertical dividers between every item.
   // Self-hides on mobile so it can stay embedded in the hero section for both breakpoints.
@@ -101,14 +110,16 @@ export default function VariantHero({ data }) {
     <div className={`mt-6 hidden rounded-md border ${cardBorderClass} ${cardBgClass} p-4 backdrop-blur-sm md:block`}>
       <div className="flex items-stretch py-1.5">
         {data.trustBadges.map((badge, index) => {
-          const { icon, label } = parseBadge(badge);
+          const { icon, label } = parseBadge(badge, index);
           return (
             <div key={badge} className="flex flex-1 items-stretch">
               {index > 0 ? (
                 <span aria-hidden="true" className={`mx-4 my-1 w-px shrink-0 self-center ${dividerClass}`} style={{ height: "70%" }} />
               ) : null}
               <div className="flex w-full items-center gap-2.5 text-left">
-                <GenIcon name={icon} className="h-7 w-7 shrink-0 text-[var(--color-primary)]" />
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center md:h-11 md:w-11">
+                  <HomeIcon name={icon} isDark={isDark} className="h-10 w-10 object-contain md:h-11 md:w-11" />
+                </span>
                 <span className={`text-[0.88rem] leading-[1.3] ${badgeTextClass}`}>{label}</span>
               </div>
             </div>
@@ -124,13 +135,15 @@ export default function VariantHero({ data }) {
     <div className={`rounded-md border ${cardBorderClass} ${cardBgClass} p-2 backdrop-blur-sm md:hidden`}>
       <div className="grid grid-cols-4 gap-x-1 text-center">
         {data.trustBadges.map((badge, index) => {
-          const { icon, label } = parseBadge(badge);
+          const { icon, label } = parseBadge(badge, index);
           return (
             <div
               key={badge}
               className={`flex flex-col items-center gap-1 px-0.5 ${index > 0 ? `border-l ${dividerBorderClass}` : ""}`}
             >
-              <GenIcon name={icon} className="h-5 w-5 shrink-0 text-[var(--color-primary)]" />
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center">
+                <HomeIcon name={icon} isDark={isDark} className="h-10 w-10 object-contain" />
+              </span>
               <span className={`text-[0.58rem] leading-tight ${badgeTextClass}`}>{label}</span>
             </div>
           );
@@ -175,7 +188,7 @@ export default function VariantHero({ data }) {
       {data.registrationInput.cta ? (
         <button
           type="submit"
-          className="flex w-full shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-[var(--color-primary)] px-2 py-2 text-center text-[0.68rem] font-bold text-white shadow-[0_12px_28px_var(--color-shadow)] md:w-auto md:py-3 md:px-6 md:text-[0.9rem]"
+          className={`${primaryCtaClass("flex w-full shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-md px-2 py-2 text-center text-[0.68rem] md:w-auto md:py-3 md:px-6 md:text-[0.9rem]")}`}
         >
           {data.registrationInput.cta.label.replace(/\s*→\s*$/, "")}
           <GenIcon name="arrow" className="h-4 w-4 shrink-0 md:h-5 md:w-5" />
@@ -224,8 +237,8 @@ export default function VariantHero({ data }) {
           <Image src={heroImage} alt="BMW 320d" fill className="hidden object-cover object-[68%_center] md:block" sizes="100vw" priority />
           {isDark ? (
             <>
-              <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(2,7,17,0.55)_0%,rgba(2,7,17,0.3)_45%,rgba(2,7,17,0.85)_100%)] md:hidden" />
-              <div className="absolute inset-0 hidden bg-[linear-gradient(90deg,rgba(2,7,17,0.85)_0%,rgba(2,7,17,0.5)_42%,rgba(2,7,17,0.15)_75%)] md:block" />
+              <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(11,12,12,0.55)_0%,rgba(11,12,12,0.3)_45%,rgba(11,12,12,0.85)_100%)] md:hidden" />
+              <div className="absolute inset-0 hidden bg-[linear-gradient(90deg,rgba(11,12,12,0.85)_0%,rgba(11,12,12,0.5)_42%,rgba(11,12,12,0.15)_75%)] md:block" />
             </>
           ) : (
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.92)_0%,rgba(255,255,255,0.5)_30%,transparent_48%)] md:hidden" />
@@ -258,7 +271,7 @@ export default function VariantHero({ data }) {
             <MStripe />
 
             <p
-              className={`max-w-[78%] text-[0.88rem] leading-[1.42] md:max-w-[560px] md:text-[0.92rem] md:leading-[1.35] ${bodyTextClass}`}
+              className={`max-w-[78%] text-[0.88rem] leading-[1.42] md:max-w-[560px] md:text-[0.92rem] md:leading-[1.35] ${isDark ? "text-white/85" : "text-black"} ${heroDescriptionShadow}`}
               dangerouslySetInnerHTML={{ __html: data.subHeadline }}
             />
           </div>

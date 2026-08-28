@@ -6,7 +6,7 @@ import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
-import { sectionDescription, sectionH2 } from "@/components/models/sectionTypography";
+import { sectionDescription, sectionH2, tableHeaderClass } from "@/components/models/sectionTypography";
 
 const HEADER_IMAGE = "/home-image/sec2-bg.webp";
 
@@ -207,12 +207,12 @@ function applyNativeMobileFilters(section) {
   if (empty) empty.hidden = visibleCount > 0;
 }
 
-function DesktopTable({ engines }) {
+function DesktopTable({ engines, isDark }) {
   return (
     <div className="overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface)]">
       <table className="w-full border-collapse text-left text-[13px] text-[var(--color-text)]">
         <thead>
-          <tr className="bg-[var(--color-page-soft)]">
+          <tr className={tableHeaderClass(isDark)}>
             {[
               "Engine Code",
               "Family",
@@ -227,7 +227,7 @@ function DesktopTable({ engines }) {
             ].map((column) => (
               <th
                 key={column}
-                className="border-b border-r border-[var(--color-border)] px-3 py-3 text-center text-[13px] font-bold last:border-r-0"
+                className="border-b border-r border-white/20 px-3 py-3 text-center text-[13px] font-bold last:border-r-0"
               >
                 {column}
               </th>
@@ -370,7 +370,7 @@ function MobileControls({ filters, options, onChange, onReset, isDark }) {
 function MobileTable({ engines, isDark }) {
   return (
     <div className="overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] text-[15px]">
-      <div className="grid grid-cols-[1.2fr_0.9fr_1fr_44px] bg-black px-3 py-3 text-[15px] font-bold uppercase text-white dark:bg-[var(--color-chrome)] dark:text-[var(--color-page)]">
+      <div className={`grid grid-cols-[1.2fr_0.9fr_1fr_44px] px-3 py-3 text-[15px] font-bold uppercase ${tableHeaderClass(isDark)}`}>
         <span>Engine Code</span>
         <span>Fuel</span>
         <span>2025 Enquiries</span>
@@ -557,7 +557,7 @@ export default function EngineDatabase({ data }) {
 
       <div className="relative mx-auto w-full max-w-8xl px-4 pb-7 pt-4 md:px-8 md:pb-8 md:pt-5">
         <div className="hidden md:block">
-          <DesktopTable engines={engines} />
+          <DesktopTable engines={engines} isDark={isDark} />
 
           <div className="mt-3 flex flex-wrap items-center justify-between gap-4">
             <button

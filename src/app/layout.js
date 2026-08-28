@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
         <ThemeProvider>
           <div className="flex min-h-screen flex-col bg-[var(--color-page)] text-[var(--color-text)]">
             <Navbar />
-            <div className="flex-1">{children}</div>
+            <div className="flex-1 overflow-x-hidden">{children}</div>
             <Footer />
           </div>
           <FreeQuoteSticky />

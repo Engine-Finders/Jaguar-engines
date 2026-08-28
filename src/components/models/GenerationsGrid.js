@@ -6,7 +6,7 @@ import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
-import { sectionDescription, sectionH2, sectionTableText } from "@/components/models/sectionTypography";
+import { sectionDescription, sectionH2, sectionTableText, tableHeaderClass } from "@/components/models/sectionTypography";
 
 const HEADER_IMAGE = "/home-image/sec2-bg.webp";
 const RIGHT_IMAGE = "/home-image/right.webp";
@@ -111,7 +111,7 @@ function ArrowIcon({ className = "h-4 w-4" }) {
 
 function ChevronIcon({ open = false }) {
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2.5">
+    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6 md:h-7 md:w-7" fill="none" stroke="currentColor" strokeWidth="2.5">
       <path d={open ? "m6 15 6-6 6 6" : "m6 9 6 6 6-6"} />
     </svg>
   );
@@ -129,37 +129,14 @@ function IndexBadge({ index, isDark }) {
   );
 }
 
-function VerdictSeeMore({ text }) {
-  const [expanded, setExpanded] = useState(false);
+function VerdictPanel({ text }) {
   const clean = cleanText(text);
   if (!clean) return null;
 
   return (
     <div className="mt-4 text-[15px] leading-[1.45]">
       <p className="font-bold">Our Verdict:</p>
-      {expanded ? (
-        <p className="mt-1">
-          <span dangerouslySetInnerHTML={{ __html: clean }} />{" "}
-          <button
-            type="button"
-            onClick={() => setExpanded(false)}
-            className="font-semibold text-[var(--color-chrome-bright)] underline underline-offset-2"
-          >
-            see less
-          </button>
-        </p>
-      ) : (
-        <p className="mt-1 flex items-baseline gap-1">
-          <span className="min-w-0 flex-1 truncate" dangerouslySetInnerHTML={{ __html: clean }} />
-          <button
-            type="button"
-            onClick={() => setExpanded(true)}
-            className="shrink-0 font-semibold text-[var(--color-chrome-bright)] underline underline-offset-2"
-          >
-            ...see more
-          </button>
-        </p>
-      )}
+      <p className="mt-1" dangerouslySetInnerHTML={{ __html: clean }} />
     </div>
   );
 }
@@ -219,11 +196,43 @@ function GenerationImage({ large = false }) {
   );
 }
 
+function CardDescription({ meta, clamped }) {
+  if (!meta.years && !meta.engines) return null;
+
+  return (
+    <div className={`mt-2 text-[12px] font-normal leading-[1.35] text-[var(--color-text-muted)] ${clamped ? "line-clamp-2" : ""}`}>
+      {meta.years ? (
+        <span className="text-[13px] md:text-[15px]" dangerouslySetInnerHTML={{ __html: meta.years }} />
+      ) : null}
+      {meta.engines ? (
+        <span>
+          {meta.years ? " • " : null}
+          <span dangerouslySetInnerHTML={{ __html: meta.engines }} />
+        </span>
+      ) : null}
+    </div>
+  );
+}
+
 function GenerationCard({ card, index, featured = false, onToggle, isDark }) {
+  const [expanded, setExpanded] = useState(false);
+  const isMobileAccordion = Boolean(onToggle);
   const title = splitCardTitle(card.title);
   const meta = splitMeta(card.meta);
   const label = cleanText(card.cta?.label || `Explore ${title.code}`);
   const href = card.cta?.href || "#";
+  const hasExpandableContent = Boolean(cleanText(card.meta) || card.verdict);
+  const showFullDescription = isMobileAccordion || expanded;
+  const showVerdict = isMobileAccordion ? Boolean(card.verdict) : expanded && Boolean(card.verdict);
+
+  const handleChevronClick = () => {
+    if (isMobileAccordion) {
+      setExpanded(false);
+      onToggle();
+      return;
+    }
+    setExpanded((open) => !open);
+  };
 
   return (
     <article
@@ -235,32 +244,31 @@ function GenerationCard({ card, index, featured = false, onToggle, isDark }) {
           : "border-[var(--color-border)]"
       }`}
     >
-      <button
-        type="button"
-        onClick={onToggle}
-        className={`flex w-full items-start gap-3 text-left ${onToggle ? "" : "pointer-events-none"}`}
-      >
-        <IndexBadge index={index} isDark={isDark} />
-        <div className="min-w-0 flex-1">
-          <p className={`${sectionTableText} font-semibold`} dangerouslySetInnerHTML={{ __html: title.series }} />
-          <h3 className="mt-0.5">
-            <GenerationCode>
-              <span dangerouslySetInnerHTML={{ __html: title.code }} />
-            </GenerationCode>
-          </h3>
-          <p className="mt-2 text-[12px] font-normal leading-[1.35] text-[var(--color-text-muted)]">
-            <span className="text-[13px] md:text-[15px]" dangerouslySetInnerHTML={{ __html: meta.years }} />
-          </p>
-          {meta.engines ? (
-            <p className="text-[12px] font-normal leading-[1.35] text-[var(--color-text-muted)]">
-              • <span dangerouslySetInnerHTML={{ __html: meta.engines }} />
-            </p>
-          ) : null}
+      <div className="flex items-start gap-3">
+        <div className="flex min-w-0 flex-1 items-start gap-3">
+          <IndexBadge index={index} isDark={isDark} />
+          <div className="min-w-0 flex-1">
+            <p className={`${sectionTableText} font-semibold`} dangerouslySetInnerHTML={{ __html: title.series }} />
+            <h3 className="mt-0.5">
+              <GenerationCode>
+                <span dangerouslySetInnerHTML={{ __html: title.code }} />
+              </GenerationCode>
+            </h3>
+            <CardDescription meta={meta} clamped={!showFullDescription} />
+          </div>
         </div>
-        <span className="text-[var(--color-chrome-bright)]">
-          <ChevronIcon open={featured} />
-        </span>
-      </button>
+        {hasExpandableContent ? (
+          <button
+            type="button"
+            aria-label={isMobileAccordion ? "Close card" : expanded ? "Hide details" : "Show details"}
+            aria-expanded={isMobileAccordion ? true : expanded}
+            onClick={handleChevronClick}
+            className="shrink-0 text-[var(--color-chrome-bright)]"
+          >
+            <ChevronIcon open={isMobileAccordion || expanded} />
+          </button>
+        ) : null}
+      </div>
 
       <div className={featured ? "mt-2" : "mt-4"}>
         <GenerationImage large={featured} />
@@ -280,7 +288,7 @@ function GenerationCard({ card, index, featured = false, onToggle, isDark }) {
         <Rating value={card.rating} compact={!featured} />
       </div>
 
-      {featured && card.verdict ? <VerdictSeeMore text={card.verdict} /> : null}
+      {showVerdict ? <VerdictPanel text={card.verdict} /> : null}
 
       {!featured && (
         <Link
@@ -291,12 +299,6 @@ function GenerationCard({ card, index, featured = false, onToggle, isDark }) {
           <ArrowIcon />
         </Link>
       )}
-
-      {!featured && card.verdict ? (
-        <div className="hidden md:block">
-          <VerdictSeeMore text={card.verdict} />
-        </div>
-      ) : null}
     </article>
   );
 }
@@ -321,10 +323,17 @@ function MobileGenerationRow({ card, index, onToggle, isDark }) {
           </GenerationCode>
         </h3>
         {badge ? <p className="mt-1 text-[13px] font-bold leading-[1.35]" dangerouslySetInnerHTML={{ __html: badge }} /> : null}
-        <p className="mt-1 text-[12px] font-normal leading-[1.35] text-[var(--color-text-muted)]">
-          <span className="text-[13px] md:text-[15px]" dangerouslySetInnerHTML={{ __html: meta.years }} />{" "}
-          <span className="px-1">•</span> <span dangerouslySetInnerHTML={{ __html: meta.engines }} />
-        </p>
+        <div className="mt-1 line-clamp-2 text-[12px] font-normal leading-[1.35] text-[var(--color-text-muted)]">
+          {meta.years ? (
+            <span className="text-[13px] md:text-[15px]" dangerouslySetInnerHTML={{ __html: meta.years }} />
+          ) : null}
+          {meta.engines ? (
+            <span>
+              {meta.years ? " • " : null}
+              <span dangerouslySetInnerHTML={{ __html: meta.engines }} />
+            </span>
+          ) : null}
+        </div>
       </div>
       <div className="w-[112px] shrink-0">
         <GenerationImage />
@@ -352,6 +361,9 @@ function ComparisonTable({ rangeTable, isDark }) {
   };
   const recommendation = cleanText(rows[4]?.model || "The model we recommend for daily ownership");
 
+  const headerCell = `border border-white/20 p-3 font-bold ${tableHeaderClass(isDark)}`;
+  const headerIconDark = !isDark;
+
   return (
     <div className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-3 shadow-[0_8px_22px_var(--color-shadow)]">
       <div className="mb-3 flex items-center gap-3">
@@ -366,28 +378,28 @@ function ComparisonTable({ rangeTable, isDark }) {
         <table className="min-w-[760px] w-full border-collapse overflow-hidden rounded-md text-left text-[15px] text-[var(--color-text)] md:min-w-0">
           <thead>
             <tr>
-              <th className="w-[15%] border border-[var(--color-border)] bg-[var(--color-page-soft)] p-3" />
-              <th className="w-[22%] border border-[var(--color-border)] bg-[var(--color-page-soft)] p-3 font-bold">
+              <th className={`w-[15%] ${headerCell}`} />
+              <th className={`w-[22%] ${headerCell}`}>
                 <span className="flex items-start gap-2">
-                  <TableIcon name="timeline" isDark={isDark} />
+                  <TableIcon name="timeline" isDark={headerIconDark} />
                   Pre-era
                 </span>
               </th>
-              <th className="w-[22%] border border-[var(--color-border)] bg-[var(--color-page-soft)] p-3 font-bold">
+              <th className={`w-[22%] ${headerCell}`}>
                 <span className="flex items-start gap-2">
-                  <TableIcon name="timeline" isDark={isDark} />
+                  <TableIcon name="timeline" isDark={headerIconDark} />
                   Mid-era
                 </span>
               </th>
-              <th className="w-[22%] border border-[var(--color-border)] bg-[var(--color-page-soft)] p-3 font-bold">
+              <th className={`w-[22%] ${headerCell}`}>
                 <span className="flex items-start gap-2">
-                  <TableIcon name="timeline" isDark={isDark} />
+                  <TableIcon name="timeline" isDark={headerIconDark} />
                   Later
                 </span>
               </th>
-              <th className="w-[19%] border border-green-100 bg-green-50 p-3 font-bold text-green-700">
+              <th className={`w-[19%] ${headerCell}`}>
                 <span className="flex items-center gap-2">
-                  <TableIcon name="star" isDark={isDark} />
+                  <TableIcon name="star" isDark={headerIconDark} />
                   Our position
                 </span>
               </th>

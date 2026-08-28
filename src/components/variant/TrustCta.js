@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
 import MStripe from "@/components/reusableComponents/MStripe";
 import GenIcon from "../generation/GenIcons";
+import { variantSectionBg, VariantSectionHeading, primaryBadgeClass } from "./variantSection";
 
 const pointIcons = ["shield", "scale", "truck"];
 
@@ -27,9 +28,9 @@ export default function TrustCta({ data }) {
   const bodyTextClass = isDark ? "text-white/80" : "text-[var(--color-text-muted)]";
 
   return (
-    <section className="w-full bg-[var(--color-page)] py-8 text-[var(--color-text)] md:py-10">
+    <section className={`w-full overflow-x-hidden py-5 text-[var(--color-text)] md:py-6 ${variantSectionBg(isDark, false)}`}>
       <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-        <h2 className="max-w-[720px] text-[2.15rem] font-bold leading-[1.1] tracking-normal md:text-[3rem]">{data.h2}</h2>
+        <VariantSectionHeading title={data.h2} className="max-w-[720px]" />
         <div className="mt-3">
           <MStripe />
         </div>
@@ -37,14 +38,14 @@ export default function TrustCta({ data }) {
         {data.trustPoints?.length > 0 ? (
           <ul className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-3">
             {data.trustPoints.map((point, index) => (
-              <li key={point.title} className="flex items-start gap-4 rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] p-5 shadow-sm">
-                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
-                  <GenIcon name={point.icon || pointIcons[index % pointIcons.length]} className="h-5.5 w-5.5" />
-                </span>
-                <div className="min-w-0">
-                  <p className="text-[1.02rem] font-bold leading-snug text-[var(--color-text)]">{point.title}</p>
-                  <p className="mt-2.5 text-[0.85rem] leading-relaxed text-[var(--color-text-muted)] md:text-[0.9rem]" dangerouslySetInnerHTML={{ __html: point.text }} />
+              <li key={point.title} className="flex flex-col gap-2.5 rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] p-5 shadow-sm">
+                <div className="flex items-start gap-4">
+                  <span className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full ${primaryBadgeClass(isDark)}`}>
+                    <GenIcon name={point.icon || pointIcons[index % pointIcons.length]} className="h-5.5 w-5.5" />
+                  </span>
+                  <p className="min-w-0 pt-1 text-[1.02rem] font-bold leading-snug text-[var(--color-text)]">{point.title}</p>
                 </div>
+                <p className="text-[0.85rem] leading-relaxed text-[var(--color-text-muted)] md:text-[0.9rem]" dangerouslySetInnerHTML={{ __html: point.text }} />
               </li>
             ))}
           </ul>

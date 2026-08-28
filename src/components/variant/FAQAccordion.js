@@ -1,10 +1,12 @@
 "use client";
 
 import { useState } from "react";
+import { useTheme } from "@/components/shared/themeProvider";
 import MStripe from "@/components/reusableComponents/MStripe";
 import GenIcon from "../generation/GenIcons";
+import { variantSectionBg, VariantSectionHeading } from "./variantSection";
 
-function FAQItem({ item, isOpen, onToggle }) {
+function FAQItem({ item, isOpen, onToggle, isDark }) {
   return (
     <div className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface)]">
       <button
@@ -17,9 +19,10 @@ function FAQItem({ item, isOpen, onToggle }) {
           {item.id}
         </span>
         <span className="flex-1 text-[0.92rem] font-semibold leading-snug text-[var(--color-text)]">{item.question}</span>
-        <span className={`shrink-0 text-[var(--color-primary)] transition-transform ${isOpen ? "rotate-45" : ""}`}>
-          <GenIcon name="plus" className="h-5 w-5" />
-        </span>
+        <GenIcon
+          name="chevronDown"
+          className={`h-4 w-4 shrink-0 transition-transform ${isDark ? "text-white/55" : "text-[#8a8a88]"} ${isOpen ? "rotate-180" : ""}`}
+        />
       </button>
       {isOpen ? (
         <p className="px-5 pb-4 pl-[60px] text-[0.85rem] leading-[1.55] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: item.answer }} />
@@ -29,20 +32,20 @@ function FAQItem({ item, isOpen, onToggle }) {
 }
 
 export default function FAQAccordion({ data }) {
+  const { theme } = useTheme();
   const [openId, setOpenId] = useState(null);
   if (!data) return null;
 
+  const isDark = theme === "dark";
   const items = data.items || [];
   const mid = Math.ceil(items.length / 2);
   const left = items.slice(0, mid);
   const right = items.slice(mid);
 
   return (
-    <section className="w-full bg-[var(--color-page)] py-8 text-[var(--color-text)] md:py-10">
+    <section className={`w-full overflow-x-hidden py-5 text-[var(--color-text)] md:py-6 ${variantSectionBg(isDark, true)}`}>
       <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-        <h2 className="text-[2.15rem] font-bold leading-[1.1] tracking-normal md:text-[3rem]">
-          Frequently Asked Questions
-        </h2>
+        <VariantSectionHeading title="Frequently Asked Questions" />
         <div className="mt-3">
           <MStripe />
         </div>
@@ -50,12 +53,12 @@ export default function FAQAccordion({ data }) {
         <div className="mt-6 grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-x-5">
           <div className="flex flex-col gap-3">
             {left.map((item) => (
-              <FAQItem key={item.id} item={item} isOpen={openId === item.id} onToggle={() => setOpenId(openId === item.id ? null : item.id)} />
+              <FAQItem key={item.id} item={item} isOpen={openId === item.id} onToggle={() => setOpenId(openId === item.id ? null : item.id)} isDark={isDark} />
             ))}
           </div>
           <div className="flex flex-col gap-3">
             {right.map((item) => (
-              <FAQItem key={item.id} item={item} isOpen={openId === item.id} onToggle={() => setOpenId(openId === item.id ? null : item.id)} />
+              <FAQItem key={item.id} item={item} isOpen={openId === item.id} onToggle={() => setOpenId(openId === item.id ? null : item.id)} isDark={isDark} />
             ))}
           </div>
         </div>

@@ -5,6 +5,7 @@ import { useState } from "react";
 import { useTheme } from "@/components/shared/themeProvider";
 import MStripe from "@/components/reusableComponents/MStripe";
 import GenIcon from "../generation/GenIcons";
+import { variantSectionBg, VariantSectionHeading, tableHeaderClass, primaryBadgeClass, primaryCtaClass } from "./variantSection";
 
 const DESKTOP_COLS = "grid-cols-[1.5fr_0.9fr_0.9fr_1.2fr_1.1fr]";
 const ENGINE_IMAGE = "/320d/engine.webp";
@@ -94,7 +95,7 @@ export default function EngineCodes({ data }) {
   if (!data) return null;
 
   const isDark = theme === "dark";
-  const headerBg = isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]";
+  const headerBg = tableHeaderClass(isDark);
   const headerDivider = isDark ? "border-white/20" : "border-white/25";
   const bodyWrapperBg = isDark ? "bg-black" : "bg-[var(--color-table-surface)]";
   const rows = data.rows || [];
@@ -129,33 +130,31 @@ export default function EngineCodes({ data }) {
   const quoteCtaBanner = data.cta?.label ? (
     <a
       href="/quote"
-      className="btn-cta relative flex items-center gap-4 overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-primary-strong)] p-5 text-white no-underline shadow-[0_12px_28px_var(--color-shadow)]"
+      className={`${primaryCtaClass("relative flex items-center gap-4 overflow-hidden rounded-xl border border-[var(--color-border)] p-5")} ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary-strong)]"}`}
     >
       <div className="absolute inset-0">
         <Image src={ENGINE_IMAGE} alt="" fill className="object-cover object-right opacity-60" sizes="400px" />
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,var(--color-primary-strong)_0%,rgba(3,20,55,0.75)_55%,transparent_100%)]" />
+        <div className={`absolute inset-0 ${isDark ? "bg-[linear-gradient(90deg,var(--color-primary-strong)_0%,rgba(11,12,12,0.85)_55%,transparent_100%)]" : "bg-[linear-gradient(90deg,var(--color-primary-strong)_0%,rgba(17,18,16,0.75)_55%,transparent_100%)]"}`} />
       </div>
 
       <div className="relative z-10 flex items-center gap-4">
-        <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-white/30 bg-[var(--color-primary)] shadow-lg">
+        <span className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full border shadow-lg ${isDark ? "border-[var(--color-page)]/30 bg-[var(--color-primary)] text-[var(--color-page)]" : "border-white/30 bg-[var(--color-primary)] text-white"}`}>
           <GenIcon name="arrow" className="h-5 w-5" />
         </span>
         <div className="min-w-0">
-          <p className="text-[0.95rem] font-bold leading-tight">{data.cta.label}</p>
-          <p className="mt-1 text-[0.78rem] leading-[1.4] text-white/80">Get quotes from trusted UK specialists in minutes.</p>
+          <p className={`text-[0.95rem] font-bold leading-tight ${isDark ? "text-[var(--color-page)]" : "text-white"}`}>{data.cta.label}</p>
+          <p className={`mt-1 text-[0.78rem] leading-[1.4] ${isDark ? "text-[var(--color-page)]/80" : "text-white/80"}`}>Get quotes from trusted UK specialists in minutes.</p>
         </div>
       </div>
     </a>
   ) : null;
 
   return (
-    <section className="w-full bg-[var(--color-page)] py-8 text-[var(--color-text)] md:py-10">
+    <section className={`w-full overflow-x-hidden py-5 text-[var(--color-text)] md:py-6 ${variantSectionBg(isDark, true)}`}>
       <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-12">
           <div className="lg:col-span-8">
-            <h2 className="text-[2.15rem] font-bold leading-[1.1] tracking-normal md:text-[3rem]">
-              Engine Codes
-            </h2>
+            <VariantSectionHeading title="Engine Codes" />
             <div className="mt-3">
               <MStripe />
             </div>
@@ -171,12 +170,14 @@ export default function EngineCodes({ data }) {
                   onClick={() => setActiveIndex(index)}
                   className={`flex min-w-0 flex-col items-center gap-0.5 rounded-md border px-1 py-2 text-center ${
                     activeIndex === index
-                      ? "border-[var(--color-primary)] bg-[var(--color-primary)] text-white"
+                      ? isDark
+                        ? "border-[var(--color-primary)] bg-[var(--color-primary)] text-[var(--color-page)]"
+                        : "border-[var(--color-primary)] bg-[var(--color-primary)] text-white"
                       : "border-[var(--color-border)] bg-[var(--color-surface)] text-[var(--color-text)]"
                   }`}
                 >
                   <span className="truncate text-[0.7rem] font-bold leading-tight">{shortCode(row.engineCode)}</span>
-                  <span className={`truncate text-[0.58rem] ${activeIndex === index ? "text-white/80" : "text-[var(--color-text-muted)]"}`}>{row.years}</span>
+                  <span className={`truncate text-[0.58rem] ${activeIndex === index ? (isDark ? "text-[var(--color-page)]/80" : "text-white/80") : "text-[var(--color-text-muted)]"}`}>{row.years}</span>
                 </button>
               ))}
             </div>
@@ -185,7 +186,7 @@ export default function EngineCodes({ data }) {
             </div>
 
             <div className="mt-6 hidden overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-lg backdrop-blur md:block">
-              <div className={`grid ${DESKTOP_COLS} gap-px ${headerBg} px-2 py-2.5 text-[0.78rem] font-semibold text-white`}>
+              <div className={`grid ${DESKTOP_COLS} gap-px ${headerBg} px-2 py-2.5 text-[0.78rem] font-semibold`}>
                 {data.columns?.map((col, index) => (
                   <span key={col} className={`px-2 ${index > 0 ? `border-l ${headerDivider}` : ""}`}>{col}</span>
                 ))}

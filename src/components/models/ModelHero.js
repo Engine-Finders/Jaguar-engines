@@ -85,33 +85,35 @@ function StatCard({ item, index, isDark }) {
 
   return (
     <li
-      className={`flex items-center gap-3 border-b px-3.5 py-3 last:border-b-0 md:border-b-0 md:border-r md:px-4 md:py-3.5 md:last:border-r-0 ${
+      className={`flex flex-col items-center gap-1.5 border-r px-1 py-0.5 text-center last:border-r-0 md:flex-row md:items-center md:gap-2.5 md:px-4 md:py-3 md:text-left ${
         isDark ? "border-white/12" : "border-[var(--color-chrome)]/45"
       }`}
     >
-      <span
-        className={`flex h-16 w-16 shrink-0 items-center justify-center rounded-full md:h-[4.5rem] md:w-[4.5rem] ${
-          isDark ? "bg-white/10" : "bg-[#ececeb]"
-        }`}
-      >
-        <HomeIcon name={iconKey} isDark={isDark} className="h-[3.35rem] w-[3.35rem] object-contain md:h-16 md:w-16" />
+      <span className="flex h-14 w-14 shrink-0 items-center justify-center md:h-14 md:w-14">
+        <HomeIcon name={iconKey} isDark={isDark} className="h-14 w-14 object-contain" />
       </span>
-      <div className={`min-w-0 ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+      <div className={`min-w-0 flex-1 ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
         {stat.value ? (
           <p className="leading-tight">
-            <strong className="font-heading text-[1.15rem] font-semibold md:text-[1.25rem]">{stat.value}</strong>
+            <strong className="block text-[0.9rem] font-bold leading-none md:inline md:text-[1.05rem]">
+              {stat.value}
+            </strong>
             {stat.label ? (
-              <span className={`ml-1.5 text-[0.78rem] font-medium md:text-[0.82rem] ${isDark ? "text-white/88" : "text-[var(--color-text)]"}`}>
+              <span
+                className={`mt-0.5 block text-[11px] leading-[1.25] md:mt-0 md:ml-1.5 md:inline md:text-[0.9rem] md:leading-snug ${
+                  isDark ? "text-white/88" : "text-[var(--color-text)]"
+                }`}
+              >
                 {stat.label}
               </span>
             ) : null}
           </p>
         ) : (
-          <p className="text-[0.82rem] font-semibold leading-tight md:text-[0.88rem]">{stat.label}</p>
+          <p className="text-[11px] font-semibold leading-tight md:text-[0.88rem]">{stat.label}</p>
         )}
         {stat.detail ? (
           <p
-            className={`mt-0.5 text-[0.68rem] leading-[1.3] md:text-[0.72rem] ${
+            className={`mt-0.5 text-[10px] leading-[1.25] md:text-[0.72rem] ${
               isDark ? "text-white/65" : "text-[var(--color-text-muted)]"
             }`}
             dangerouslySetInnerHTML={{ __html: stat.detail }}
@@ -154,7 +156,7 @@ export default function ModelHero({ data }) {
       <div className="relative mx-auto flex w-full max-w-8xl flex-col px-4 pb-5 pt-3 md:min-h-[620px] md:px-8 md:pb-7 md:pt-11">
         <div className="max-w-[650px]">
           <div
-            className={`inline-flex max-w-full items-center gap-x-2 overflow-x-auto whitespace-nowrap rounded-md border px-3 py-2 text-[12px] leading-none md:max-w-[760px] md:gap-x-2.5 md:px-4 md:py-2.5 md:text-[14px] ${
+            className={`inline-flex w-fit max-w-full flex-nowrap items-center gap-x-2 overflow-x-auto whitespace-nowrap rounded-md border px-3 py-2 text-[12px] leading-none md:overflow-x-visible md:gap-x-2.5 md:px-4 md:py-2.5 md:text-[14px] ${
               isDark
                 ? "border-white/20 bg-[rgba(12,12,12,0.55)] text-white/88"
                 : "border-[var(--color-border)] bg-[rgba(255,255,255,0.72)] text-[var(--color-text-muted)]"
@@ -193,24 +195,24 @@ export default function ModelHero({ data }) {
 
           <div className="mt-6 md:mt-8">
             <HeroTitle title={data.h1} isDark={isDark} />
-          </div>
-          <div className="mt-3">
-            <MStripe />
-          </div>
-          <p
-            className={`mt-4 max-w-[610px] ${sectionDescription} ${isDark ? "text-white/80" : "text-[var(--color-text-muted)]"}`}
-            dangerouslySetInnerHTML={{ __html: data.subHeadline }}
-          />
+            <div className="mt-3">
+              <MStripe />
+            </div>
+            <p
+              className={`mt-4 max-w-[610px] ${sectionDescription} ${isDark ? "text-white/80" : "text-[var(--color-text-muted)]"}`}
+              dangerouslySetInnerHTML={{ __html: data.subHeadline }}
+            />
 
-          {data.primaryCta ? (
-            <Link
-              href={ctaHref}
-              className={`btn-cta mt-5 inline-flex min-h-10 items-center justify-center gap-3 rounded-md px-4 py-2 font-bold shadow-[0_12px_28px_var(--color-shadow)] ${sectionButton} md:min-h-11 md:px-5`}
-            >
-              <span dangerouslySetInnerHTML={{ __html: data.primaryCta.label.replace(/\s*(?:→|â†’)\s*$/, "") }} />
-              <ArrowIcon />
-            </Link>
-          ) : null}
+            {data.primaryCta ? (
+              <Link
+                href={ctaHref}
+                className={`btn-cta mt-5 inline-flex min-h-10 items-center justify-center gap-3 rounded-md px-4 py-2 font-bold shadow-[0_12px_28px_var(--color-shadow)] ${sectionButton} md:min-h-11 md:px-5`}
+              >
+                <span dangerouslySetInnerHTML={{ __html: data.primaryCta.label.replace(/\s*(?:→|â†’)\s*$/, "") }} />
+                <ArrowIcon />
+              </Link>
+            ) : null}
+          </div>
         </div>
 
         {data.trustStrip?.length > 0 ? (
@@ -221,7 +223,7 @@ export default function ModelHero({ data }) {
                 : "bg-[rgba(246,246,244,0.86)] md:border-[var(--color-border)]"
             }`}
           >
-            <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+            <ul className="grid grid-cols-4">
               {data.trustStrip.map((item, index) => (
                 <StatCard key={item.label} item={item} index={index} isDark={isDark} />
               ))}

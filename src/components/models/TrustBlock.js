@@ -1,16 +1,14 @@
+"use client";
+
 import Image from "next/image";
 import MStripe from "@/components/reusableComponents/MStripe";
-import { sectionDescription } from "@/components/models/sectionTypography";
+import { useTheme } from "@/components/shared/themeProvider";
+import HomeIcon from "@/components/home/homeIcons";
 
-const iconPaths = {
-  data: <path d="M5 19V9m5 10V5m5 14v-7m5 7H3" />,
-  heart: <path d="M12 21s-7-4.5-9.2-9.1C1.2 8.6 3.3 5 6.8 5c2 0 3.5 1.1 4.2 2.5C11.7 6.1 13.2 5 15.2 5c3.5 0 5.6 3.6 4 6.9C19 16.5 12 21 12 21Z" />,
-  wrench: <path d="m14.7 6.3 3-3a5 5 0 0 1-6.4 6.4l-6.8 6.8a2.1 2.1 0 0 0 3 3l6.8-6.8a5 5 0 0 1 6.4-6.4l-3 3" />,
-  shield: <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm0 5 1.1 2.2 2.4.3-1.7 1.7.4 2.4-2.2-1.1-2.2 1.1.4-2.4-1.7-1.7 2.4-.3L12 8Z" />,
-};
+const ICON_LG = "h-10 w-10 md:h-12 md:w-12";
 
 function cleanText(text = "") {
-  return text
+  return String(text ?? "")
     .replaceAll("Ãƒâ€šÃ‚Â£", "\u00a3")
     .replaceAll("Ã‚Â£", "\u00a3")
     .replaceAll("Ã¢â‚¬â€œ", "-")
@@ -22,101 +20,137 @@ function cleanText(text = "") {
 
 function splitTitle(title = "") {
   const clean = cleanText(title);
-  const marker = "BMWEngines.uk";
-  const index = clean.indexOf(marker);
+  const markers = ["jaguarengines.uk", "JaguarEngine.uk", "jaguarengine.uk"];
 
-  if (index === -1) return { before: clean, accent: "" };
+  for (const marker of markers) {
+    const index = clean.toLowerCase().indexOf(marker.toLowerCase());
+    if (index !== -1) {
+      return {
+        before: clean.slice(0, index).trim(),
+        accent: clean.slice(index).trim(),
+      };
+    }
+  }
 
-  return {
-    before: clean.slice(0, index).trim(),
-    accent: clean.slice(index).trim(),
-  };
+  return { before: clean, accent: "" };
 }
 
-function iconKey(item = {}) {
-  const value = `${item.icon || ""} ${item.title || ""}`.toLowerCase();
-  if (value.includes("heart") || value.includes("not to repair") || value.includes("💚")) return "heart";
-  if (value.includes("wrench") || value.includes("specialist") || value.includes("🔧")) return "wrench";
-  if (value.includes("part of") || value.includes("trophy") || value.includes("🏆")) return "shield";
-  return "data";
+function signalIconKey(item = {}, index = 0) {
+  const value = `${item.icon || ""} ${item.title || ""} ${item.text || ""}`.toLowerCase();
+  if (value.includes("not to repair") || value.includes("💚")) return "honest-verdict";
+  if (value.includes("specialist") || value.includes("🔧")) return "vetted-specialist";
+  if (value.includes("engine finders") || value.includes("🏆")) return "engine-finders";
+  if (value.includes("real data") || value.includes("📊")) return "real-data";
+  return ["real-data", "honest-verdict", "vetted-specialist", "engine-finders"][index] || "real-data";
 }
 
-function SignalIcon({ item }) {
-  const key = iconKey(item);
-  const isHeart = key === "heart";
+function TrustCard({ item, index, isDark }) {
+  const iconKey = signalIconKey(item, index);
 
   return (
-    <span className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-md bg-[var(--color-page-soft)] md:h-16 md:w-16 ${isHeart ? "text-[#36b96d]" : "text-[var(--color-primary)]"}`}>
-      <svg aria-hidden="true" viewBox="0 0 24 24" className="h-8 w-8 md:h-9 md:w-9" fill={isHeart ? "currentColor" : "none"} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        {iconPaths[key]}
-      </svg>
-    </span>
+    <article
+      className={`relative flex h-full overflow-hidden rounded-xl border px-3.5 pb-3.5 pt-5 md:px-4 md:pb-4 md:pt-5 ${
+        isDark
+          ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
+          : "border-[#e8e8e6] bg-white shadow-[0_8px_22px_rgba(16,18,16,0.05)]"
+      }`}
+    >
+      <span
+        className={`absolute left-0 top-0 flex h-[22px] min-w-[26px] items-center justify-center rounded-br-md px-1.5 font-heading text-[0.72rem] font-bold ${
+          isDark ? "bg-[var(--color-chrome)] text-[var(--color-page)]" : "bg-black text-white"
+        }`}
+      >
+        {index + 1}
+      </span>
+
+      <div className="mt-1 overflow-hidden">
+        <span
+          className={`float-left mr-3 mb-1 flex h-16 w-16 items-center justify-center rounded-full md:mr-3.5 md:h-[4.5rem] md:w-[4.5rem] ${
+            isDark ? "bg-white/10" : "bg-[#ececeb]"
+          }`}
+        >
+          <HomeIcon name={iconKey} isDark={isDark} className={ICON_LG} />
+        </span>
+        <p
+          className={`text-[0.9rem] leading-[1.4] md:text-[0.95rem] ${
+            isDark ? "text-white/70" : "text-[var(--color-text-muted)]"
+          }`}
+        >
+          <strong
+            className={`font-bold ${isDark ? "text-white" : "text-black"}`}
+            dangerouslySetInnerHTML={{ __html: cleanText(item.title) }}
+          />{" "}
+          <span dangerouslySetInnerHTML={{ __html: cleanText(item.text) }} />
+        </p>
+      </div>
+    </article>
   );
 }
 
 export default function TrustBlock({ data }) {
+  const { theme } = useTheme();
+  const isDark = theme === "dark";
+
   if (!data) return null;
 
   const title = splitTitle(data.h2);
   const signals = data.signals || [];
+  const sectionBg = isDark ? "bg-[var(--color-page)]" : "bg-[#ececea]";
 
   return (
-    <section className="overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-3.5 text-[var(--color-text)] shadow-[0_10px_30px_var(--color-shadow)] md:p-5">
-      <div className="grid gap-4 lg:grid-cols-[minmax(0,0.92fr)_minmax(420px,1fr)] lg:items-center">
-        <div>
-          <h2 className="max-w-[650px] text-[29px] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[45px]">
-            <span dangerouslySetInnerHTML={{ __html: title.before }} />
-            {title.accent ? (
-              <>
-                <br />
-                <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: title.accent }} />
-              </>
-            ) : null}
-          </h2>
-          <div className="mt-2.5">
-            <MStripe />
-          </div>
-
-          <div className="mt-4">
-            {signals.map((item) => (
-              <article key={item.title} className="flex gap-3.5 border-b border-[var(--color-border)] py-3.5 first:pt-0 last:border-b-0 last:pb-0 md:gap-4 md:py-3.5">
-                <SignalIcon item={item} />
-                <p className="text-[var(--color-text)] text-[15px] leading-[1.42] md:text-[16px]">
-                  <strong className="font-bold text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: cleanText(item.title) }} />
-                  {" - "}
-                  <span dangerouslySetInnerHTML={{ __html: cleanText(item.text) }} />
-                </p>
-              </article>
-            ))}
-          </div>
+    <section className={`overflow-x-hidden ${sectionBg}`}>
+      <div className={`relative overflow-hidden ${sectionBg}`}>
+        <div className="absolute inset-y-0 right-0 w-[62%] md:w-[48%]">
+          <Image
+            src="/home-image/sec2-bg.webp"
+            alt=""
+            fill
+            className="object-cover object-right"
+            sizes="(max-width: 768px) 62vw, 48vw"
+          />
+          <div
+            className={
+              isDark
+                ? "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(11,12,12,0.82)_34%,rgba(11,12,12,0.18)_100%)]"
+                : "absolute inset-0 bg-[linear-gradient(90deg,#ececea_0%,rgba(236,236,234,0.88)_34%,rgba(236,236,234,0.18)_100%)]"
+            }
+          />
         </div>
 
-        <div className="relative hidden min-h-[340px] lg:block">
-          <div className="absolute right-8 top-0 h-[230px] w-[390px] opacity-30">
-            <svg aria-hidden="true" viewBox="0 0 430 260" className="h-full w-full text-[var(--color-primary)]" fill="none">
-              <path d="M12 220h400" stroke="currentColor" strokeOpacity=".25" />
-              {[40, 85, 130, 175, 220, 265, 310, 355, 400].map((x) => (
-                <path key={x} d={`M${x} 30v190`} stroke="currentColor" strokeOpacity=".12" />
-              ))}
-              <path d="M22 180 70 178 120 150 165 115 210 82 260 100 315 55" stroke="currentColor" strokeWidth="3" />
-              {[22, 70, 120, 165, 210, 260, 315].map((x, index) => (
-                <circle key={x} cx={x} cy={[180, 178, 150, 115, 82, 100, 55][index]} r="6" fill="var(--color-surface)" stroke="currentColor" strokeWidth="3" />
-              ))}
-              {[190, 220, 250, 285, 330, 370, 405].map((x, index) => (
-                <rect key={x} x={x} y={190 - index * 15} width="16" height={30 + index * 15} fill="currentColor" opacity=".18" />
-              ))}
-            </svg>
+        <div className="relative mx-auto w-full max-w-8xl px-4 pb-3 pt-5 md:px-6 md:pb-3.5 md:pt-7 lg:px-8">
+          <div className="max-w-[720px]">
+            <p
+              className={`text-[0.64rem] font-bold uppercase tracking-[0.14em] ${
+                isDark ? "text-white/55" : "text-[var(--color-text-muted)]"
+              }`}
+            >
+              Trust Signals
+            </p>
+            <h2
+              className={`mt-1.5 text-[1.55rem] font-bold leading-[1.02] sm:text-[1.85rem] md:text-[2.35rem] md:leading-[0.98] lg:text-[2.5rem] ${
+                isDark ? "text-white" : "text-[var(--color-text)]"
+              }`}
+            >
+              <span dangerouslySetInnerHTML={{ __html: title.before }} />
+              {title.accent ? (
+                <>
+                  <br />
+                  <span className="text-[var(--color-chrome-bright)]" dangerouslySetInnerHTML={{ __html: title.accent }} />
+                </>
+              ) : null}
+            </h2>
+            <div className="mt-2.5">
+              <MStripe />
+            </div>
           </div>
-          <div className="absolute left-0 top-10 h-[220px] w-[220px] opacity-25">
-            <svg aria-hidden="true" viewBox="0 0 240 240" className="h-full w-full text-[var(--color-primary)]">
-              {Array.from({ length: 210 }).map((_, index) => {
-                const x = 30 + ((index * 29) % 170);
-                const y = 20 + ((index * 47) % 190);
-                return <circle key={index} cx={x} cy={y} r="1.8" fill="currentColor" />;
-              })}
-            </svg>
-          </div>
-          <Image src="/model/Section 2-bg.webp" alt="" fill className="relative z-10 object-contain object-right-bottom" sizes="(min-width: 1024px) 48vw, 100vw" />
+        </div>
+      </div>
+
+      <div className="mx-auto w-full min-w-0 max-w-8xl px-4 pb-5 pt-2 md:px-6 md:pb-6 md:pt-2.5 lg:px-8">
+        <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:grid-cols-4 lg:gap-3">
+          {signals.map((item, index) => (
+            <TrustCard key={item.title || index} item={item} index={index} isDark={isDark} />
+          ))}
         </div>
       </div>
     </section>

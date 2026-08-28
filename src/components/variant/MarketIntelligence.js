@@ -1,8 +1,10 @@
 "use client";
 
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
+import { useTheme } from "@/components/shared/themeProvider";
 import MStripe from "@/components/reusableComponents/MStripe";
 import GenIcon from "../generation/GenIcons";
+import { variantSectionBg, VariantSectionHeading, primaryBadgeClass } from "./variantSection";
 
 const ITEM_ICONS = ["warning", "gauge", "dollar", "tag", "clock", "chart"];
 const UK_REGIONS_GEO = "/320d/uk-regions-topo.json";
@@ -79,16 +81,18 @@ function regionShare(regions, name) {
   return Number.isNaN(num) ? 0 : num;
 }
 
-function fillForRegionGeoName(geoName, regions) {
+function fillForRegionGeoName(geoName, regions, isDark) {
   const isNamed = NAMED_REGIONS.includes(geoName);
   const share = isNamed ? regionShare(regions, geoName) : regionShare(regions, "Other Regions") / 6;
-  // 0-25% share maps to a light-to-strong primary blue fill.
   const intensity = Math.min(share / 25, 1);
-  const alpha = 0.18 + intensity * 0.65;
-  return `rgba(11, 103, 220, ${alpha.toFixed(2)})`;
+  const alpha = 0.15 + intensity * (isDark ? 0.55 : 0.45);
+  if (isDark) {
+    return `rgba(216, 217, 213, ${alpha.toFixed(2)})`;
+  }
+  return `rgba(17, 18, 16, ${alpha.toFixed(2)})`;
 }
 
-function RegionalDemandMap({ regions }) {
+function RegionalDemandMap({ regions, isDark }) {
   const otherShare = regionShare(regions, "Other Regions");
   const bubbleRegions = [
     ...regions.filter((region) => NAMED_REGIONS.includes(region.name)),
@@ -112,7 +116,7 @@ function RegionalDemandMap({ regions }) {
                   <Geography
                     key={geo.rsmKey}
                     geography={geo}
-                    fill={fillForRegionGeoName(name, regions)}
+                    fill={fillForRegionGeoName(name, regions, isDark)}
                     stroke="var(--color-surface)"
                     strokeWidth={0.75}
                     style={{ default: { outline: "none" }, hover: { outline: "none" }, pressed: { outline: "none" } }}
@@ -159,20 +163,21 @@ function RegionalDemandMap({ regions }) {
 }
 
 export default function MarketIntelligence({ data }) {
+  const { theme } = useTheme();
   if (!data) return null;
+
+  const isDark = theme === "dark";
 
   const items = data.items || [];
   const regionalItem = items.find((item) => item.label === "Regional Demand");
   const { regions, tag } = regionalItem ? parseRegionalDemand(regionalItem.value) : { regions: [], tag: "" };
 
   return (
-    <section className="w-full border-t border-[var(--color-border)] bg-[var(--color-page)] py-8 text-[var(--color-text)] md:py-10">
+    <section className={`w-full overflow-x-hidden border-t border-[var(--color-border)] py-5 text-[var(--color-text)] md:py-6 ${variantSectionBg(isDark, false)}`}>
       <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-12">
           <div className="lg:col-span-8">
-            <h2 className="text-[2.15rem] font-bold leading-[1.1] tracking-normal md:text-[3rem]">
-              Market Intelligence
-            </h2>
+            <VariantSectionHeading title="Market Intelligence" />
             <div className="mt-3">
               <MStripe />
             </div>
@@ -205,7 +210,7 @@ export default function MarketIntelligence({ data }) {
                   return (
                     <div key={item.label} className="flex flex-col justify-between rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-5 shadow-sm">
                       <div className="flex items-center gap-3">
-                        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
+                        <span className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full ${primaryBadgeClass(isDark)}`}>
                           <GenIcon name={ITEM_ICONS[index % ITEM_ICONS.length]} className="h-5 w-5" />
                         </span>
                         <div className="flex min-w-0 flex-col gap-0.5">
@@ -231,7 +236,7 @@ export default function MarketIntelligence({ data }) {
 
           {regions.length > 0 ? (
             <div className="lg:col-span-4 lg:h-full">
-              <RegionalDemandMap regions={regions} />
+              <RegionalDemandMap regions={regions} isDark={isDark} />
             </div>
           ) : null}
         </div>

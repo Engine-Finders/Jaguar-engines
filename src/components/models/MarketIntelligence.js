@@ -5,6 +5,7 @@ import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
+import { tableHeaderClass } from "@/components/models/sectionTypography";
 
 const signalIconKeys = ["car", "engine"];
 const insightIconKeys = ["diagnosis", "shield", "star"];
@@ -130,7 +131,7 @@ function RichText({ value, strongFirst = false }) {
 function SignalTable({ rows, isDark }) {
   return (
     <div className="overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_10px_30px_var(--color-shadow)]">
-      <div className="grid grid-cols-[34%_30%_36%] bg-black text-[12px] font-bold text-white md:grid-cols-[32%_33%_35%] md:text-[14px] dark:bg-[var(--color-chrome)] dark:text-[var(--color-page)]">
+      <div className={`grid grid-cols-[34%_30%_36%] text-[12px] font-bold md:grid-cols-[32%_33%_35%] md:text-[14px] ${tableHeaderClass(isDark)}`}>
         <div className="px-2 py-2 md:px-5 md:py-3">Signal</div>
         <div className="border-l border-white/28 px-2 py-2 md:px-3 md:py-2">2025 Data</div>
         <div className="border-l border-white/28 px-2 py-2 md:px-3 md:py-2">Demand Trend</div>
@@ -145,7 +146,7 @@ function SignalTable({ rows, isDark }) {
             key={`${row.signal}-${index}`}
             className="grid grid-cols-[34%_30%_36%] border-t border-[var(--color-border)] text-[var(--color-text)] md:grid-cols-[32%_33%_35%]"
           >
-            <div className="flex min-w-0 items-center gap-2 px-2 py-3 md:gap-4 md:px-3 md:py-3">
+            <div className="flex items-center gap-2 px-2 py-3 md:gap-3 md:px-3">
               <CircleIcon name={signalIconKeys[isEngine ? 1 : 0]} isDark={isDark} small />
               <p
                 className="min-w-0 break-words text-[12px] font-bold leading-[1.25] md:text-[15px]"
@@ -155,7 +156,7 @@ function SignalTable({ rows, isDark }) {
             <div className="border-l border-[var(--color-border)] px-2 py-3 text-[12px] leading-[1.35] md:px-3 md:text-[15px]">
               <RichText value={row.data} />
             </div>
-            <div className="flex min-w-0 items-start gap-2 border-l border-[var(--color-border)] px-2 py-3 text-[12px] leading-[1.35] md:items-center md:gap-4 md:px-3 md:text-[15px]">
+            <div className="flex flex-col items-start gap-1.5 border-l border-[var(--color-border)] px-2 py-3 text-[12px] leading-[1.35] md:px-3 md:text-[15px]">
               <TrendIcon trend={trend.trend} isDark={isDark} />
               <p className="min-w-0 break-words hyphens-auto whitespace-normal">
                 <strong className="font-bold text-[var(--color-text)]">{trend.label.split(" ")[0]}</strong>
@@ -186,9 +187,11 @@ function InsightsPanel({ insights, isDark }) {
         {insights.map((insight, index) => (
           <article
             key={insight}
-            className="flex gap-3 border-[var(--color-border)] md:border-l md:px-3 md:first:border-l-0 md:first:pl-0 md:last:pr-0"
+            className="overflow-hidden border-[var(--color-border)] md:border-l md:px-3 md:first:border-l-0 md:first:pl-0 md:last:pr-0"
           >
-            <CircleIcon name={insightIconKeys[index] || insightIconKeys[0]} isDark={isDark} />
+            <span className="float-left mr-3 mb-1 md:mr-3.5">
+              <CircleIcon name={insightIconKeys[index] || insightIconKeys[0]} isDark={isDark} />
+            </span>
             <p className="text-[13px] leading-[1.42] text-[var(--color-text)] md:text-[14px]">
               <RichText value={insight} strongFirst />
             </p>
@@ -234,21 +237,19 @@ function PullQuote({ data, isDark }) {
   return (
     <div className="grid overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_10px_30px_var(--color-shadow)] md:grid-cols-[minmax(0,1.46fr)_minmax(290px,0.7fr)]">
       <div className="p-3 md:p-3.5">
-        <div className="flex gap-3">
-          <HomeIcon name="quote" isDark={isDark} className="mt-1 h-7 w-7 shrink-0 object-contain opacity-70" />
-          <div>
-            <p className="text-[11px] font-bold uppercase text-[var(--color-chrome-bright)] md:text-[12px]">
-              Editorial Pull-Quote
-            </p>
-            <h3
-              className="mt-1.5 max-w-[560px] font-heading text-[22px] font-semibold leading-[1.1] text-[var(--color-text)] md:text-[31px]"
-              dangerouslySetInnerHTML={{ __html: cleanText(data.title) }}
-            />
-            <blockquote className="mt-2 max-w-[760px] text-[12px] leading-[1.45] text-[var(--color-text)] md:text-[13px]">
-              &ldquo;<span dangerouslySetInnerHTML={{ __html: cleanText(data.quote) }} />&rdquo;
-            </blockquote>
-          </div>
+        <div className="flex items-center gap-2.5">
+          <HomeIcon name="quote" isDark={isDark} className="h-7 w-7 shrink-0 object-contain opacity-70" />
+          <p className="text-[11px] font-bold uppercase text-[var(--color-chrome-bright)] md:text-[12px]">
+            Editorial Pull-Quote
+          </p>
         </div>
+        <h3
+          className="mt-2 max-w-[560px] font-heading text-[22px] font-semibold leading-[1.1] text-[var(--color-text)] md:mt-2.5 md:text-[31px]"
+          dangerouslySetInnerHTML={{ __html: cleanText(data.title) }}
+        />
+        <blockquote className="mt-2 max-w-[760px] text-[12px] leading-[1.45] text-[var(--color-text)] md:text-[13px]">
+          &ldquo;<span dangerouslySetInnerHTML={{ __html: cleanText(data.quote) }} />&rdquo;
+        </blockquote>
       </div>
       <div className="relative min-h-[140px] md:min-h-full">
         <Image

@@ -4,3 +4,9 @@ export const sectionDescription = "text-[15px] leading-[1.5] md:text-[16px]";
 export const sectionBody = "text-[15px] leading-[1.45]";
 export const sectionButton = "text-[16px]";
 export const sectionTableText = "text-[14px] leading-[1.45]";
+
+export function tableHeaderClass(isDark) {
+  return isDark
+    ? "bg-[var(--color-chrome)] text-[var(--color-page)]"
+    : "bg-black text-white";
+}

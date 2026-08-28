@@ -107,6 +107,8 @@ const FILES = {
   "most-enquired-stat": "Most Enquired Icon-01.png",
   generations: "Generation Honest Rated Icon-01.png",
   "engine-codes": "Database Icon-01.png",
+  "uk-wide-delivery": "Uk wide delivery Icon-01.png",
+  "users-team": "Users Icon-01.png",
 };
 
 // Silver folder uses a few different filenames

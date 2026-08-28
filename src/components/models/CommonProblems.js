@@ -80,7 +80,7 @@ function ProblemImage({ index, isDark }) {
     <div className="relative h-full min-h-[150px] overflow-hidden bg-[var(--color-page-soft)] md:min-h-[210px]">
       <Image src={CARD_IMAGE} alt="" fill className="object-cover object-center" sizes="280px" />
       <span
-        className={`absolute left-3 top-3 flex h-9 min-w-9 items-center justify-center rounded-md px-2 font-heading text-[1.15rem] font-bold leading-none shadow-sm md:h-10 md:text-[1.25rem] ${
+        className={`absolute left-3 top-3 flex h-9 min-w-9 items-center justify-center rounded-md px-2 text-[14px] font-bold leading-none shadow-sm md:h-10 md:text-[15px] ${
           isDark ? "bg-[var(--color-chrome)] text-[var(--color-page)]" : "bg-black text-white"
         }`}
       >
@@ -131,23 +131,22 @@ function UrgencyKey({ items, isDark }) {
 
   return (
     <div className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-4 shadow-[0_8px_22px_var(--color-shadow)]">
-      <div className="grid gap-4 md:grid-cols-[1fr_repeat(4,1.2fr)] md:items-start">
-        <h3 className="text-[15px] font-bold uppercase text-[var(--color-text)]">Urgency Key</h3>
+      <h3 className="mb-3 text-[15px] font-bold uppercase text-[var(--color-text)] md:mb-4">Urgency Key</h3>
+      <div className="grid grid-cols-4 gap-1.5 sm:gap-3 md:gap-4">
         {items.map((item) => {
           const label = cleanText(item.label);
           const type = label.toLowerCase();
           const style = severityStyles[type] || severityStyles.monitor;
 
           return (
-            <div key={label} className="flex gap-3 border-[var(--color-border)] md:border-l md:pl-6">
-              <span
-                className={`mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${
-                  isDark ? "bg-white/10" : "bg-[#ececeb]"
-                }`}
-              >
-                <HomeIcon name={style.icon} isDark={isDark} className="h-7 w-7 object-contain" />
+            <div
+              key={label}
+              className="min-w-0 md:flex md:items-start md:gap-3 md:border-l md:pl-4 md:first:border-l-0 md:first:pl-0"
+            >
+              <span className="mx-auto flex h-8 w-8 shrink-0 items-center justify-center md:mx-0 md:h-9 md:w-9">
+                <HomeIcon name={style.icon} isDark={isDark} className="h-7 w-7 object-contain md:h-8 md:w-8" />
               </span>
-              <p className="text-[15px] leading-[1.35] text-[var(--color-text-muted)]">
+              <p className="mt-1.5 text-center text-[11px] leading-[1.3] text-[var(--color-text-muted)] md:mt-0 md:text-left md:text-[15px] md:leading-[1.35]">
                 <strong className="block text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: label }} />
                 <span dangerouslySetInnerHTML={{ __html: cleanText(item.text) }} />
               </p>

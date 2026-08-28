@@ -171,18 +171,7 @@ export default async function CatchAllPage({ params }) {
 
   if (type === "models") {
     return (
-      <main
-        style={{
-          padding: "8px 4px",
-          width: "100%",
-          maxWidth: "88rem",
-          margin: "0 auto",
-          lineHeight: 1.5,
-          display: "flex",
-          flexDirection: "column",
-          
-        }}
-      >
+      <main className="flex flex-col">
         {data.meta?.jsonLd && (
           <script
             type="application/ld+json"
@@ -233,7 +222,7 @@ export default async function CatchAllPage({ params }) {
 
   if (type === "variants") {
     return (
-      <main className="flex flex-col">
+      <main className="flex flex-col overflow-x-hidden">
         {data.meta?.jsonLd && (
           <script
             type="application/ld+json"

@@ -4,7 +4,7 @@ import Image from "next/image";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
-import { sectionBody, sectionDescription, sectionH2, sectionTableText } from "@/components/models/sectionTypography";
+import { sectionBody, sectionDescription, sectionH2, sectionTableText, tableHeaderClass } from "@/components/models/sectionTypography";
 
 const metricIconKeys = {
   "Overall Ownership Rating": "star",
@@ -62,12 +62,8 @@ function MetricIcon({ metric, isDark }) {
   const iconKey = metricIconKeys[metric] || "shield";
 
   return (
-    <span
-      className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full md:h-16 md:w-16 ${
-        isDark ? "bg-white/10" : "bg-white shadow-sm ring-1 ring-black/5"
-      }`}
-    >
-      <HomeIcon name={iconKey} isDark={isDark} className="h-12 w-12 object-contain md:h-[3.35rem] md:w-[3.35rem]" />
+    <span className="flex h-8 w-8 shrink-0 items-center justify-center md:h-9 md:w-9">
+      <HomeIcon name={iconKey} isDark={isDark} className="h-7 w-7 object-contain md:h-8 md:w-8" />
     </span>
   );
 }
@@ -94,9 +90,9 @@ function VerdictTable({ metrics, isDark }) {
       }`}
     >
       <div
-        className={`grid grid-cols-[40%_60%] border-b border-[var(--color-border)] px-3 py-2.5 font-semibold md:grid-cols-[42%_58%] md:px-4 md:py-3 ${sectionTableText} text-[13px]`}
+        className={`grid grid-cols-[40%_60%] border-b border-white/20 px-2 py-1.5 font-semibold md:grid-cols-[42%_58%] md:px-3 md:py-2 ${tableHeaderClass(isDark)} ${sectionTableText} text-[13px]`}
       >
-        <span>Verdict Metric</span>
+        <span className="border-r border-white/20 pr-2 md:pr-3">Verdict Metric</span>
         <span>Our Call</span>
       </div>
       {metrics.map((row) => (
@@ -104,7 +100,7 @@ function VerdictTable({ metrics, isDark }) {
           key={row.metric}
           className="grid grid-cols-[40%_60%] border-b border-[var(--color-border)] last:border-b-0 md:grid-cols-[42%_58%]"
         >
-          <div className="flex items-center gap-2.5 border-r border-[var(--color-border)] px-3 py-2.5 md:gap-3 md:px-4 md:py-3.5">
+          <div className="flex items-center gap-2 border-r border-[var(--color-border)] px-2 py-1.5 md:gap-2.5 md:px-3 md:py-2">
             <MetricIcon metric={row.metric} isDark={isDark} />
             <span
               className={`font-medium leading-[1.25] ${sectionTableText} text-[13px]`}
@@ -112,7 +108,7 @@ function VerdictTable({ metrics, isDark }) {
             />
           </div>
           <p
-            className={`px-3 py-2.5 text-[var(--color-text-muted)] md:px-4 md:py-3.5 ${sectionTableText} text-[13px]`}
+            className={`px-2 py-1.5 text-[var(--color-text-muted)] md:px-3 md:py-2 ${sectionTableText} text-[13px]`}
             dangerouslySetInnerHTML={{ __html: cleanText(row.ourCall) }}
           />
         </div>
@@ -124,29 +120,26 @@ function VerdictTable({ metrics, isDark }) {
 function OneLineVerdict({ text, isDark }) {
   return (
     <div
-      className={`flex gap-4 rounded-md border p-4 shadow-[0_14px_36px_var(--color-shadow)] backdrop-blur md:items-center md:p-5 ${
+      className={`overflow-hidden rounded-md border p-4 shadow-[0_14px_36px_var(--color-shadow)] backdrop-blur md:p-5 ${
         isDark ? "border-white/20 bg-[rgba(12,12,12,0.55)]" : "border-[var(--color-border)] bg-[rgba(255,255,255,0.92)]"
       }`}
     >
       <span
-        className={`flex h-16 w-16 shrink-0 items-center justify-center rounded-full md:h-20 md:w-20 ${
+        className={`float-left mr-3 mb-1 flex h-16 w-16 items-center justify-center rounded-full md:mr-4 md:h-20 md:w-20 ${
           isDark ? "bg-white/10" : "bg-white shadow-sm ring-1 ring-black/5"
         }`}
       >
         <HomeIcon name="shield" isDark={isDark} className="h-14 w-14 object-contain md:h-16 md:w-16" />
       </span>
-      <div className="min-w-0 flex-1">
-        <p className="font-bold text-[var(--color-chrome-bright)]">One-line verdict:</p>
-        <p
-          className={`mt-1 text-[var(--color-text-muted)] ${sectionBody}`}
-          dangerouslySetInnerHTML={{ __html: cleanText(text) }}
-        />
-      </div>
       <HomeIcon
         name="quote"
         isDark={isDark}
-        className="ml-auto hidden h-8 w-8 shrink-0 object-contain opacity-55 md:block"
+        className="float-right mb-1 hidden h-8 w-8 object-contain opacity-55 md:block"
       />
+      <p className={`${sectionBody} text-[var(--color-text-muted)]`}>
+        <strong className="font-bold text-[var(--color-chrome-bright)]">One-line verdict:</strong>{" "}
+        <span dangerouslySetInnerHTML={{ __html: cleanText(text) }} />
+      </p>
     </div>
   );
 }
@@ -180,7 +173,7 @@ export default function OwnershipVerdict({ data }) {
             <div className="mt-3">
               <MStripe />
             </div>
-            <div className="relative mt-4 overflow-hidden rounded-md border border-[var(--color-border)] bg-[rgba(255,255,255,0.18)] shadow-[0_10px_24px_var(--color-shadow)] md:mt-5 md:h-[360px]">
+            <div className="relative mt-4 h-[200px] max-w-[420px] overflow-hidden rounded-md border border-[var(--color-border)] bg-[rgba(255,255,255,0.18)] shadow-[0_10px_24px_var(--color-shadow)] md:mt-5 md:h-[260px] md:max-w-[480px]">
               <Image
                 src="/home-image/right.webp"
                 alt=""

@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
 import MStripe from "@/components/reusableComponents/MStripe";
 import GenIcon from "../generation/GenIcons";
+import { variantSectionBg, VariantSectionHeading, tableHeaderClass, primaryBadgeClass, primaryCtaClass } from "./variantSection";
 
 const DESKTOP_COLS = "grid-cols-[1.6fr_0.9fr_1fr_1.7fr]";
 const MOBILE_COLS = "grid-cols-[220px_110px_140px_240px]";
@@ -39,7 +40,7 @@ function Table({ columns, rows, cols, headerBg, headerDivider, isDark }) {
       {columns?.map((col, index) => (
         <span
           key={col}
-          className={`${headerBg} px-4 py-2.5 text-[0.72rem] font-semibold text-white ${index > 0 ? `border-l ${headerDivider}` : ""}`}
+          className={`${headerBg} px-4 py-2.5 text-[0.72rem] font-semibold ${index > 0 ? `border-l ${headerDivider}` : ""}`}
         >
           {col}
         </span>
@@ -100,13 +101,13 @@ export default function RepairBuyOrReplace({ data }) {
   const isDark = theme === "dark";
   const image = isDark ? "/320d/repair_dark.webp" : "/320d/repair_light.webp";
   const imageMobile = isDark ? "/320d/repair_mobile_dark.webp" : "/320d/repair_mobile_light.webp";
-  const headerBg = isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]";
+  const headerBg = tableHeaderClass(isDark);
   const headerDivider = isDark ? "border-white/20" : "border-white/25";
   const headingClass = isDark ? "text-white" : "text-[var(--color-text)]";
   const bodyTextClass = isDark ? "text-white/80" : "text-[var(--color-text-muted)]";
 
   return (
-    <section className="w-full bg-[var(--color-page)] text-[var(--color-text)]">
+    <section className={`w-full overflow-x-hidden text-[var(--color-text)] ${variantSectionBg(isDark, true)}`}>
       {/* Mobile: image sits at the top of the block (ModelHero pattern), with a
           seamless fade into the page background instead of a hard-edged box;
           text flows below it in normal page flow. */}
@@ -120,8 +121,8 @@ export default function RepairBuyOrReplace({ data }) {
           )}
         </div>
 
-        <div className="mx-auto w-full max-w-8xl px-4 pb-8">
-          <h2 className={`text-[2.15rem] font-bold leading-[1.1] tracking-normal ${headingClass}`}>{data.h2}</h2>
+        <div className="mx-auto w-full max-w-8xl px-4 pb-5">
+          <VariantSectionHeading title={data.h2} className={headingClass} />
           <div className="mt-3">
             <MStripe />
           </div>
@@ -136,12 +137,12 @@ export default function RepairBuyOrReplace({ data }) {
         <div className="absolute inset-0">
           <Image src={image} alt="BMW 320d" fill className="object-cover object-right" sizes="100vw" />
           {isDark ? (
-            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(2,7,17,0.95)_0%,rgba(2,7,17,0.75)_45%,rgba(2,7,17,0.15)_85%)]" />
+            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(11,12,12,0.95)_0%,rgba(11,12,12,0.75)_45%,rgba(11,12,12,0.15)_85%)]" />
           ) : null}
         </div>
 
-        <div className="relative mx-auto w-full max-w-8xl px-4 py-8 md:px-8 md:py-10">
-          <h2 className={`max-w-[600px] text-[2.15rem] font-bold leading-[1.1] tracking-normal md:text-[3rem] ${headingClass}`}>{data.h2}</h2>
+        <div className="relative mx-auto w-full max-w-8xl px-4 py-5 md:px-8 md:py-6">
+          <VariantSectionHeading title={data.h2} className={`max-w-[600px] md:text-[3rem] ${headingClass}`} />
           <div className="mt-3">
             <MStripe />
           </div>
@@ -151,7 +152,7 @@ export default function RepairBuyOrReplace({ data }) {
         </div>
       </div>
 
-      <div className="relative mx-auto w-full max-w-8xl px-4 py-8 md:px-8 md:py-10">
+      <div className="relative mx-auto w-full max-w-8xl px-4 py-5 md:px-8 md:py-6">
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
           {data.canItBeRepaired ? (
             <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-4 shadow-lg md:border-0 md:bg-transparent md:p-0 md:shadow-none">
@@ -159,7 +160,7 @@ export default function RepairBuyOrReplace({ data }) {
                 <GenIcon name="wrench" className="h-4.5 w-4.5 text-[var(--color-primary)]" />
                 {data.canItBeRepaired.title}
               </p>
-              <div className="mt-3 overflow-x-auto rounded-md border border-[var(--color-border)] shadow-[0_14px_40px_var(--color-shadow)]">
+              <div className="mt-3 max-w-full overflow-x-auto overscroll-x-contain rounded-md border border-[var(--color-border)] shadow-[0_14px_40px_var(--color-shadow)]">
                 <div className="min-w-[650px] lg:min-w-0">
                   <div className="hidden lg:block">
                     <Table
@@ -217,7 +218,7 @@ export default function RepairBuyOrReplace({ data }) {
         <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2">
           {data.closingVerdict ? (
             <div className="glass-panel flex gap-3 rounded-md p-4">
-              <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
+              <span className={`mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${primaryBadgeClass(isDark)}`}>
                 <GenIcon name="shield" className="h-4.5 w-4.5" />
               </span>
               <div className="min-w-0 flex-1">
@@ -249,7 +250,7 @@ export default function RepairBuyOrReplace({ data }) {
               </div>
               <a
                 href="/quote"
-                className="btn-cta relative z-10 flex w-fit items-center justify-center gap-2 whitespace-nowrap rounded-md bg-[var(--color-primary)] px-4 py-3.5 text-center text-[0.7rem] font-bold uppercase tracking-wide text-white no-underline shadow-[0_12px_28px_var(--color-shadow)]"
+                className={`${primaryCtaClass("relative z-10 flex w-fit items-center justify-center gap-2 whitespace-nowrap rounded-md px-4 py-3.5 text-center text-[0.7rem] uppercase tracking-wide")}`}
               >
                 <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
                 {data.cta.label}
@@ -264,13 +265,13 @@ export default function RepairBuyOrReplace({ data }) {
             <div
               className={`flex flex-row items-center gap-4 rounded-xl border p-5 shadow-sm ${
                 isDark
-                  ? "border-white/15 bg-[linear-gradient(90deg,rgba(10,31,68,0.9)_0%,rgba(10,31,68,0.5)_60%,var(--color-page)_100%)]"
-                  : "border-[rgba(11,103,220,0.2)] bg-[linear-gradient(90deg,var(--color-primary-soft)_0%,rgba(220,234,255,0.3)_60%,white_100%)]"
+                  ? "border-white/15 bg-[linear-gradient(90deg,rgba(11,12,12,0.95)_0%,rgba(11,12,12,0.55)_60%,var(--color-page)_100%)]"
+                  : "border-[var(--color-border)] bg-[linear-gradient(90deg,var(--color-surface)_0%,rgba(236,236,234,0.85)_60%,white_100%)]"
               }`}
             >
               <div className="flex min-w-0 flex-1 flex-col gap-3">
                 <div className="flex items-center gap-2.5">
-                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
+                  <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${primaryBadgeClass(isDark)}`}>
                     <GenIcon name="tag" className="h-4.5 w-4.5" />
                   </span>
                   <h3 className="text-[1rem] font-bold leading-tight text-[var(--color-text)]">Don&apos;t Guess. Compare.</h3>
@@ -280,7 +281,7 @@ export default function RepairBuyOrReplace({ data }) {
                 </p>
                 <a
                   href="/quote"
-                  className="btn-cta flex w-full items-center justify-center gap-2 rounded-xl bg-[var(--color-primary)] px-3 py-2.5 text-center text-[0.78rem] font-bold text-white no-underline shadow-md"
+                  className={`${primaryCtaClass("flex w-full items-center justify-center gap-2 rounded-xl px-3 py-2.5 text-center text-[0.78rem]")}`}
                 >
                   {data.cta.label}
                   <GenIcon name="arrow" className="h-4 w-4 shrink-0" />

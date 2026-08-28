@@ -5,7 +5,7 @@ import Image from "next/image";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
-import { sectionDescription, sectionH2, sectionTableText } from "@/components/models/sectionTypography";
+import { sectionDescription, sectionH2, sectionTableText, tableHeaderClass } from "@/components/models/sectionTypography";
 
 const RIGHT_IMAGE = "/home-image/right.webp";
 
@@ -161,6 +161,27 @@ function splitFiguresNote(note = "", economicsBox) {
   };
 }
 
+function FloatNoteText({ html, title, iconName, isDark }) {
+  const clean = cleanText(html);
+  if (!clean) return null;
+
+  return (
+    <div className="overflow-hidden">
+      <span
+        className={`float-left mr-3 mb-1 grid h-16 w-16 shrink-0 place-items-center rounded-full ${
+          isDark ? "bg-white/10" : "bg-[#ececeb]"
+        }`}
+      >
+        <HomeIcon name={iconName} isDark={isDark} className="h-10 w-10 object-contain" />
+      </span>
+      <p className="text-[15px] leading-[1.5] text-[var(--color-text)]">
+        <strong className="font-bold">{title}</strong>{" "}
+        <span dangerouslySetInnerHTML={{ __html: clean }} />
+      </p>
+    </div>
+  );
+}
+
 function TrustStrip({ isDark }) {
   return (
     <div className="grid grid-cols-4 overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_8px_24px_var(--color-shadow)]">
@@ -188,7 +209,7 @@ function TrustStrip({ isDark }) {
   );
 }
 
-function CostTable({ table }) {
+function CostTable({ table, isDark }) {
   if (!table) return null;
 
   const columns = table.columns || [];
@@ -197,7 +218,7 @@ function CostTable({ table }) {
     <div className="overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface)]">
       <table className="w-full border-collapse text-left text-[14px] text-[var(--color-text)] md:text-[15px]">
         <thead>
-          <tr className="bg-black text-white dark:bg-[var(--color-chrome)] dark:text-[var(--color-page)]">
+          <tr className={tableHeaderClass(isDark)}>
             {columns.map((column) => (
               <th
                 key={column}
@@ -237,7 +258,7 @@ function CostTable({ table }) {
   );
 }
 
-function DesktopGenerationRow({ table }) {
+function DesktopGenerationRow({ table, isDark }) {
   const { label, years } = tableLabel(table.title);
 
   return (
@@ -249,7 +270,7 @@ function DesktopGenerationRow({ table }) {
           <Image src={RIGHT_IMAGE} alt="" fill className="object-cover object-center" sizes="260px" />
         </div>
       </div>
-      <CostTable table={table} />
+      <CostTable table={table} isDark={isDark} />
     </div>
   );
 }
@@ -304,7 +325,7 @@ function MobileTabs({ tables, isDark }) {
         </div>
         <div className="mt-4 overflow-x-auto">
           <div className="min-w-[720px]">
-            <CostTable table={activeTable} />
+            <CostTable table={activeTable} isDark={isDark} />
           </div>
         </div>
         <div className="mt-4 flex items-center gap-3 rounded-md bg-[var(--color-page-soft)] px-4 py-3 text-[15px] text-[var(--color-text)]">
@@ -326,37 +347,11 @@ function Notes({ parts, isDark, ruleTitle }) {
   return (
     <div className="grid gap-4 md:grid-cols-[1.15fr_0.85fr]">
       <div className="grid gap-4 rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-5 md:grid-cols-2">
-        <div className="flex flex-col gap-3 border-[var(--color-border)] md:border-r md:pr-6">
-          <div className="flex items-center gap-4">
-            <span
-              className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full ${
-                isDark ? "bg-white/10" : "bg-[#ececeb]"
-              }`}
-            >
-              <HomeIcon name="note" isDark={isDark} className="h-11 w-11 object-contain" />
-            </span>
-            <h3 className="font-bold leading-none text-[var(--color-text)]">Important Notes</h3>
-          </div>
-          <p
-            className="text-[15px] leading-[1.5] text-[var(--color-text)]"
-            dangerouslySetInnerHTML={{ __html: parts.important }}
-          />
+        <div className="border-[var(--color-border)] md:border-r md:pr-6">
+          <FloatNoteText title="Important Notes" iconName="note" html={parts.important} isDark={isDark} />
         </div>
-        <div className="flex flex-col gap-3">
-          <div className="flex items-center gap-4">
-            <span
-              className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full ${
-                isDark ? "bg-white/10" : "bg-[#ececeb]"
-              }`}
-            >
-              <HomeIcon name="info" isDark={isDark} className="h-11 w-11 object-contain" />
-            </span>
-            <h3 className="font-bold leading-none text-[var(--color-text)]">Labour Estimate</h3>
-          </div>
-          <p
-            className="text-[15px] leading-[1.5] text-[var(--color-text)]"
-            dangerouslySetInnerHTML={{ __html: parts.labour }}
-          />
+        <div>
+          <FloatNoteText title="Labour Estimate" iconName="info" html={parts.labour} isDark={isDark} />
         </div>
       </div>
 
@@ -399,54 +394,71 @@ export default function ReplacementCosts({ data }) {
       : "The ownership rule - generation is everything:");
 
   return (
-    <section className={`${sectionBg} py-6 text-[var(--color-text)]`}>
-      <div className="mx-auto w-full max-w-8xl px-4 md:px-8">
-        <div className="flex flex-col gap-5 md:grid md:grid-cols-[minmax(0,1fr)_560px] md:items-start">
-          <div>
-            <h2 className={`max-w-[900px] ${sectionH2} tracking-normal`}>
-              <span dangerouslySetInnerHTML={{ __html: title.main }} />
-              {title.accent ? (
-                <>
-                  <br />
-                  <span
-                    className="text-[var(--color-chrome-bright)]"
-                    dangerouslySetInnerHTML={{ __html: title.accent }}
-                  />
-                </>
-              ) : null}
-            </h2>
-            <div className="mt-3">
-              <MStripe />
-            </div>
-            {data.subHeadline ? (
-              <p className={`mt-3 max-w-[520px] ${sectionDescription} text-[var(--color-text-muted)]`}>
-                {cleanText(data.subHeadline)}
-              </p>
-            ) : null}
-          </div>
-
-          <div className="hidden md:block">
-            <TrustStrip isDark={isDark} />
-          </div>
-
-          <div className="relative mt-1 h-[210px] w-full overflow-hidden rounded-md md:hidden">
-            <Image src={RIGHT_IMAGE} alt="" fill className="object-cover object-center" sizes="100vw" />
-          </div>
-
-          <div className="md:hidden">
-            <TrustStrip isDark={isDark} />
-          </div>
+    <section className={`overflow-x-hidden ${sectionBg} text-[var(--color-text)]`}>
+      <div className={`relative overflow-hidden ${sectionBg}`}>
+        <div className="absolute inset-y-0 right-0 w-[62%] md:w-[48%]">
+          <Image
+            src="/home-image/sec2-bg.webp"
+            alt=""
+            fill
+            className="object-cover object-right"
+            sizes="(max-width: 768px) 62vw, 48vw"
+          />
+          <div
+            className={
+              isDark
+                ? "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(11,12,12,0.82)_34%,rgba(11,12,12,0.18)_100%)]"
+                : "absolute inset-0 bg-[linear-gradient(90deg,#ececea_0%,rgba(236,236,234,0.88)_34%,rgba(236,236,234,0.18)_100%)]"
+            }
+          />
         </div>
 
+        <div className="relative mx-auto w-full max-w-8xl px-4 pb-3 pt-5 md:px-6 md:pb-3.5 md:pt-7 lg:px-8">
+          <div className="flex flex-col gap-5 md:grid md:grid-cols-[minmax(0,1fr)_560px] md:items-start">
+            <div>
+              <h2 className={`max-w-[900px] ${sectionH2} tracking-normal`}>
+                <span dangerouslySetInnerHTML={{ __html: title.main }} />
+                {title.accent ? (
+                  <>
+                    <br />
+                    <span
+                      className="text-[var(--color-chrome-bright)]"
+                      dangerouslySetInnerHTML={{ __html: title.accent }}
+                    />
+                  </>
+                ) : null}
+              </h2>
+              <div className="mt-3">
+                <MStripe />
+              </div>
+              {data.subHeadline ? (
+                <p className={`mt-3 max-w-[520px] ${sectionDescription} text-[var(--color-text-muted)]`}>
+                  {cleanText(data.subHeadline)}
+                </p>
+              ) : null}
+            </div>
+
+            <div className="hidden md:block">
+              <TrustStrip isDark={isDark} />
+            </div>
+
+            <div className="md:hidden">
+              <TrustStrip isDark={isDark} />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="mx-auto w-full min-w-0 max-w-8xl px-4 pb-5 pt-2 md:px-6 md:pb-6 md:pt-2.5 lg:px-8">
         {tables.length > 0 ? (
           <>
-            <div className="mt-6 hidden space-y-3 md:block">
+            <div className="hidden space-y-3 md:block">
               {tables.map((table) => (
-                <DesktopGenerationRow key={table.title} table={table} />
+                <DesktopGenerationRow key={table.title} table={table} isDark={isDark} />
               ))}
             </div>
 
-            <div className="mt-6">
+            <div>
               <MobileTabs tables={tables} isDark={isDark} />
             </div>
           </>

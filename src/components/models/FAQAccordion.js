@@ -1,9 +1,12 @@
-import Link from "next/link";
+"use client";
+
 import MStripe from "@/components/reusableComponents/MStripe";
-import { sectionBody, sectionButton, sectionH2, sectionTableText } from "@/components/models/sectionTypography";
+import Image from "next/image";
+import { useTheme } from "@/components/shared/themeProvider";
+import { sectionBody } from "@/components/models/sectionTypography";
 
 function cleanText(text = "") {
-  return text
+  return String(text ?? "")
     .replaceAll("Ãƒâ€šÃ‚Â£", "\u00a3")
     .replaceAll("Ã‚Â£", "\u00a3")
     .replaceAll("Ã¢â‚¬â€œ", "-")
@@ -14,6 +17,13 @@ function cleanText(text = "") {
     .replace(/\s+-\s+/g, " - ")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+function formatAnswer(value = "") {
+  return cleanText(value).replace(
+    /<span class=["']safe-verdict["']>([\s\S]*?)<\/span>/gi,
+    '<span class="inline-flex items-center gap-1 font-semibold text-[#1c8b3d]"><svg aria-hidden="true" viewBox="0 0 24 24" class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg>$1</span>'
+  );
 }
 
 function splitTitle(title = "") {
@@ -29,89 +39,158 @@ function splitTitle(title = "") {
   };
 }
 
-function Icon({ name, className = "h-6 w-6" }) {
-  const path =
-    name === "document" ? (
-      <path d="M7 3h8l4 4v14H7V3Zm8 0v5h5M10 12h6M10 16h6" />
-    ) : (
-      <path d="M5 12h14m-6-6 6 6-6 6" />
-    );
-
+function ChevronIcon({ className = "h-5 w-5", isDark }) {
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      {path}
+    <svg
+      aria-hidden="true"
+      viewBox="0 0 24 24"
+      className={`${className} ${isDark ? "text-white/55" : "text-[#8a8a88]"}`}
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="m6 9 6 6 6-6" />
     </svg>
   );
 }
 
-function FaqItem({ item, index }) {
+function FaqItem({ item, isDark }) {
   return (
-    <details className="group overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_6px_16px_var(--color-shadow)]">
-      <summary className="grid cursor-pointer list-none grid-cols-[auto_1fr_auto] items-center gap-3 px-4 py-3.5 marker:hidden md:px-4">
-        <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded bg-[var(--color-primary)] text-[14px] font-bold leading-none text-white">
-          {item.id || index + 1}
+    <details
+      className={`group border-b last:border-b-0 ${
+        isDark ? "border-[var(--color-border)]" : "border-[#ececeb]"
+      }`}
+    >
+      <summary
+        className={`flex cursor-pointer list-none items-start gap-2.5 px-3.5 py-3 marker:hidden md:gap-3 md:px-4 md:py-3 ${
+          isDark ? "text-white" : "text-black"
+        }`}
+      >
+        <span
+          className={`mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-[0.72rem] font-bold md:h-7 md:w-7 ${
+            isDark ? "bg-[var(--color-chrome)] text-[var(--color-page)]" : "bg-black text-white"
+          }`}
+        >
+          {item.id}
         </span>
-        <h3 className="font-bold text-[15px] leading-[1.15] text-[var(--color-text)] md:text-[17px]">{cleanText(item.question)}</h3>
-        <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4 shrink-0 text-[var(--color-text-muted)] transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" strokeWidth="2">
-          <path d="m6 9 6 6 6-6" />
-        </svg>
+        <span className="min-w-0 flex-1 pt-0.5 text-[0.84rem] font-semibold leading-snug md:text-[0.9rem]">
+          {cleanText(item.question)}
+        </span>
+        <ChevronIcon
+          className="mt-0.5 h-4 w-4 shrink-0 transition-transform group-open:rotate-180 md:h-5 md:w-5"
+          isDark={isDark}
+        />
       </summary>
-      <div className={`border-t border-[var(--color-border)] px-4 pb-4 pt-2.5 text-[var(--color-text-muted)] md:px-4 ${sectionBody}`}>
-        {cleanText(item.answer)}
+      <div className="px-3.5 pb-3 pl-[2.75rem] md:px-4 md:pb-3.5 md:pl-[3.1rem]">
+        <p
+          className={`${sectionBody} text-[0.76rem] leading-[1.45] md:text-[0.8rem] ${
+            isDark ? "text-white/70" : "text-[var(--color-text-muted)]"
+          }`}
+          dangerouslySetInnerHTML={{ __html: formatAnswer(item.answer) }}
+        />
       </div>
     </details>
   );
 }
 
 export default function FAQAccordion({ data }) {
+  const { theme } = useTheme();
+  const isDark = theme === "dark";
+
   if (!data) return null;
 
   const title = splitTitle(data.h2);
   const items = data.items || [];
-  const midpoint = Math.ceil(items.length / 2);
-  const columns = [items.slice(0, midpoint), items.slice(midpoint)];
+  const left = items.slice(0, Math.ceil(items.length / 2));
+  const right = items.slice(Math.ceil(items.length / 2));
+  const sectionBg = isDark ? "bg-[var(--color-page)]" : "bg-[var(--color-page)]";
 
   return (
-    <section className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-4 text-[var(--color-text)] shadow-[0_10px_30px_var(--color-shadow)] md:p-6">
-      <h2 className={`max-w-[980px] font-bold tracking-normal text-[var(--color-text)] ${sectionH2}`}>
-        <span dangerouslySetInnerHTML={{ __html: title.before }} />
-        {title.accent ? (
-          <>
-            {" "}
-            <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: title.accent }} />
-          </>
-        ) : null}
-      </h2>
-      <div className="mt-3">
-        <MStripe />
-      </div>
+    <section className={`overflow-x-hidden ${sectionBg}`}>
+      <div className={`relative overflow-hidden ${sectionBg}`}>
+        <div className="absolute inset-y-0 right-0 w-[62%] md:w-[48%]">
+          <Image
+            src="/home-image/sec2-bg.webp"
+            alt=""
+            fill
+            className="object-cover object-right"
+            sizes="(max-width: 768px) 62vw, 48vw"
+          />
+          <div
+            className={
+              isDark
+                ? "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(11,12,12,0.82)_34%,rgba(11,12,12,0.18)_100%)]"
+                : "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(243,243,241,0.88)_34%,rgba(243,243,241,0.18)_100%)]"
+            }
+          />
+        </div>
 
-      <div className="mt-5 grid gap-3 lg:grid-cols-2 lg:gap-x-6">
-        {columns.map((column, columnIndex) => (
-          <div key={columnIndex} className="grid gap-3">
-            {column.map((item, index) => (
-              <FaqItem key={item.id || item.question} item={item} index={columnIndex * midpoint + index} />
-            ))}
-          </div>
-        ))}
-      </div>
-
-      <div className="mt-5 flex flex-col gap-4 rounded-md bg-[var(--color-page-soft)] p-4 md:flex-row md:items-center md:justify-between md:p-5">
-        <div className="flex gap-4">
-          <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white md:h-16 md:w-16">
-            <Icon name="document" className="h-8 w-8 md:h-9 md:w-9" />
-          </span>
-          <div>
-            <h3 className="text-[18px] font-bold leading-tight text-[var(--color-text)] md:text-[20px]">Need a head-to-head comparison?</h3>
-            <p className={`mt-1 max-w-[620px] text-[var(--color-text-muted)] ${sectionBody} md:text-[16px]`}>
-              Read our in-depth BMW 3 Series vs 5 Series reliability guide.
+        <div className="relative mx-auto w-full max-w-8xl px-4 pb-3 pt-5 md:px-6 md:pb-3.5 md:pt-7 lg:px-8">
+          <div className="max-w-[760px]">
+            <p
+              className={`text-[0.64rem] font-bold uppercase tracking-[0.14em] ${
+                isDark ? "text-white/55" : "text-[var(--color-text-muted)]"
+              }`}
+            >
+              FAQ
             </p>
+            <h2
+              className={`mt-1.5 text-[1.55rem] font-bold leading-[1.02] sm:text-[1.85rem] md:text-[2.35rem] md:leading-[0.98] lg:text-[2.5rem] ${
+                isDark ? "text-white" : "text-[var(--color-text)]"
+              }`}
+            >
+              <span dangerouslySetInnerHTML={{ __html: title.before }} />
+              {title.accent ? (
+                <>
+                  <br />
+                  <span className="text-[var(--color-chrome-bright)]" dangerouslySetInnerHTML={{ __html: title.accent }} />
+                </>
+              ) : null}
+            </h2>
+            <div className="mt-2.5">
+              <MStripe />
+            </div>
           </div>
         </div>
-        <Link href="#" className={`inline-flex min-h-12 shrink-0 items-center justify-center gap-4 rounded-md bg-[var(--color-primary)] px-5 py-3 font-bold text-white shadow-[0_12px_28px_var(--color-shadow)] transition-all duration-200 hover:text-black md:min-w-[300px] ${sectionButton}`}>
-          Read the Full Head-to-Head
-          <Icon className="h-6 w-6" />
-        </Link>
+      </div>
+
+      <div className="mx-auto w-full min-w-0 max-w-8xl px-4 pb-5 pt-2 md:px-6 md:pb-6 md:pt-2.5 lg:px-8">
+        <div
+          className={`overflow-hidden rounded-xl border ${
+            isDark
+              ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
+              : "border-[#e8e8e6] bg-white shadow-[0_8px_24px_rgba(16,18,16,0.05)]"
+          }`}
+        >
+          <div
+            className={`border-b px-4 py-3 md:px-5 md:py-3.5 ${
+              isDark ? "border-[var(--color-border)]" : "border-[#ececeb]"
+            }`}
+          >
+            <h3
+              className={`font-heading text-[1.15rem] font-semibold md:text-[1.3rem] ${
+                isDark ? "text-white" : "text-black"
+              }`}
+            >
+              Common Questions
+            </h3>
+          </div>
+
+          <div className="grid md:grid-cols-2">
+            <div className={isDark ? "md:border-r md:border-[var(--color-border)]" : "md:border-r md:border-[#ececeb]"}>
+              {left.map((item) => (
+                <FaqItem key={item.id || item.question} item={item} isDark={isDark} />
+              ))}
+            </div>
+            <div>
+              {right.map((item) => (
+                <FaqItem key={item.id || item.question} item={item} isDark={isDark} />
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

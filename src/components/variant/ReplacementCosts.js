@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useTheme } from "@/components/shared/themeProvider";
 import MStripe from "@/components/reusableComponents/MStripe";
 import GenIcon from "../generation/GenIcons";
+import { variantSectionBg, VariantSectionHeading, tableHeaderClass, primaryBadgeClass, primaryCtaClass } from "./variantSection";
 
 const ROW_ICONS = ["tag", "refresh", "wrench", "crown"];
 const DESKTOP_COLS = "grid-cols-[1.2fr_1fr_1fr_0.9fr_1.4fr]";
@@ -36,7 +37,7 @@ function DesktopRow({ row, icon, isDark }) {
 // Mobile only: accordion (one open at a time) - a collapsed summary
 // card expanding to reveal the full price/warranty/best-for detail, each
 // divided by a thin hairline.
-function AccordionRow({ row, icon, isOpen, onToggle }) {
+function AccordionRow({ row, icon, isOpen, onToggle, isDark }) {
   return (
     <div
       className={`overflow-hidden rounded-xl border shadow-sm ${
@@ -45,7 +46,7 @@ function AccordionRow({ row, icon, isOpen, onToggle }) {
     >
       <button type="button" onClick={onToggle} aria-expanded={isOpen} className="flex w-full items-center justify-between gap-3 p-4 text-left">
         <div className="flex min-w-0 items-center gap-3">
-          <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
+          <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${primaryBadgeClass(isDark)}`}>
             <GenIcon name={icon} className="h-4.5 w-4.5" />
           </span>
           <div className="min-w-0">
@@ -98,14 +99,14 @@ export default function ReplacementCosts({ data }) {
   if (!data) return null;
 
   const isDark = theme === "dark";
-  const headerBg = isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]";
+  const headerBg = tableHeaderClass(isDark);
   const headerDivider = isDark ? "border-white/20" : "border-white/25";
   const bodyWrapperBg = isDark ? "bg-black" : "bg-[var(--color-table-surface)]";
 
   return (
-    <section className="w-full bg-[var(--color-page)] py-8 text-[var(--color-text)] md:py-10">
+    <section className={`w-full overflow-x-hidden py-5 text-[var(--color-text)] md:py-6 ${variantSectionBg(isDark, true)}`}>
       <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-        <h2 className="text-[2.15rem] font-bold leading-[1.1] tracking-normal md:text-[3rem]">{data.h2}</h2>
+        <VariantSectionHeading title={data.h2} />
         <div className="mt-3">
           <MStripe />
         </div>
@@ -119,13 +120,14 @@ export default function ReplacementCosts({ data }) {
               icon={ROW_ICONS[index % ROW_ICONS.length]}
               isOpen={openIndex === index}
               onToggle={() => setOpenIndex(openIndex === index ? null : index)}
+              isDark={isDark}
             />
           ))}
         </div>
 
         {/* Desktop only: original table */}
         <div className="mt-6 hidden overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:block">
-          <div className={`grid ${DESKTOP_COLS} gap-px ${headerBg} px-2 py-3 text-[0.82rem] font-semibold text-white`}>
+          <div className={`grid ${DESKTOP_COLS} gap-px ${headerBg} px-2 py-3 text-[0.82rem] font-semibold`}>
             {data.columns?.map((col, index) => (
               <span key={col} className={`px-2 ${index > 0 ? `border-l ${headerDivider}` : ""}`}>{col}</span>
             ))}
@@ -149,7 +151,7 @@ export default function ReplacementCosts({ data }) {
         {/* Mobile: labour estimate and CTA as two separate stacked cards */}
         {data.labourEstimate ? (
           <div className="mt-4 flex items-center gap-4 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-4 shadow-sm md:hidden">
-            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
+            <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${primaryBadgeClass(isDark)}`}>
               <GenIcon name="wrench" className="h-4.5 w-4.5" />
             </span>
             <p className="text-[0.82rem] leading-[1.45] text-[var(--color-text)]">
@@ -164,7 +166,7 @@ export default function ReplacementCosts({ data }) {
           <div className="mt-4 hidden items-center gap-4 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-4 shadow-sm md:flex">
             {data.labourEstimate ? (
               <>
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
+                <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${primaryBadgeClass(isDark)}`}>
                   <GenIcon name="wrench" className="h-4.5 w-4.5" />
                 </span>
                 <p className="flex-1 text-[0.82rem] leading-[1.45] text-[var(--color-text)]">
@@ -176,7 +178,7 @@ export default function ReplacementCosts({ data }) {
             {data.cta?.label ? (
               <a
                 href="/quote"
-                className="btn-cta flex shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-xl bg-[var(--color-primary)] px-4 py-2.5 text-[0.8rem] font-bold text-white no-underline shadow-[0_12px_28px_var(--color-shadow)]"
+                className={`${primaryCtaClass("flex shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-xl px-4 py-2.5 text-[0.8rem]")}`}
               >
                 <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
                 {data.cta.label}
@@ -188,7 +190,7 @@ export default function ReplacementCosts({ data }) {
         {data.cta?.label ? (
           <a
             href="/quote"
-            className="btn-cta mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-[var(--color-primary)] px-3 py-2.5 text-white no-underline shadow-[0_12px_28px_var(--color-shadow)] md:hidden"
+            className={`${primaryCtaClass("mt-4 flex w-full items-center justify-center gap-2 rounded-xl px-3 py-2.5 md:hidden")}`}
           >
             <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
             <span className="whitespace-nowrap text-center text-[0.78rem] font-bold md:text-[0.9rem]">{data.cta.label}</span>

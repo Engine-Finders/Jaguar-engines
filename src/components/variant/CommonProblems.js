@@ -4,8 +4,9 @@ import { useState } from "react";
 import { useTheme } from "@/components/shared/themeProvider";
 import MStripe from "@/components/reusableComponents/MStripe";
 import GenIcon from "../generation/GenIcons";
+import { variantSectionBg, VariantSectionHeading } from "./variantSection";
 
-const ACCENT_BY_INDEX = ["#e03232", "#da7a12", "#075fd8"];
+const ACCENT_BY_INDEX = ["#e03232", "#da7a12", "#6b6b68"];
 const URGENCY_TONE = {
   "🔴": { light: "text-[#db2e2e] bg-[#fff0f0]", dark: "text-[#ff8b90] bg-[rgba(255,45,53,0.15)]" },
   "🟠": { light: "text-[#da7a12] bg-[#fff5ea]", dark: "text-[#ffb66a] bg-[rgba(218,122,18,0.15)]" },
@@ -103,17 +104,15 @@ export default function CommonProblems({ data }) {
   const problems = data.problems || [];
 
   return (
-    <section className="w-full bg-[var(--color-page)] py-8 text-[var(--color-text)] md:py-10">
+    <section className={`w-full overflow-x-hidden py-5 text-[var(--color-text)] md:py-6 ${variantSectionBg(isDark, false)}`}>
       <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-        <h2 className="text-[2.15rem] font-bold leading-[1.1] tracking-normal md:text-[3rem]">
-          Common Problems
-        </h2>
+        <VariantSectionHeading title="Common Problems" />
         <div className="mt-3">
           <MStripe />
         </div>
 
         {/* Mobile: tab switcher - one problem shown at a time */}
-        <div className="mt-6 flex gap-2 overflow-x-auto rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-1.5 md:hidden">
+        <div className="mt-6 flex gap-2 overflow-x-auto overscroll-x-contain rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-1.5 md:hidden">
           {problems.map((problem, index) => {
             const accent = ACCENT_BY_INDEX[index % ACCENT_BY_INDEX.length];
             const isActive = activeIndex === index;
