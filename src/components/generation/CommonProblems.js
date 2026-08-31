@@ -3,8 +3,9 @@
 import { useState } from "react";
 import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
-import MStripe from "@/components/reusableComponents/MStripe";
 import GenIcon from "./GenIcons";
+import GenerationSectionHeader from "./GenerationSectionHeader";
+import { generationSectionBg, indexBadgeClass, splitCommonProblemsH2 } from "./generationSection";
 
 function TieredCostTable({ tiers, isDark }) {
   if (!tiers?.length) return null;
@@ -82,7 +83,7 @@ function AccordionCard({ problem, isDark, isOpen, onToggle }) {
         <div className="min-w-0 flex-1">
           <div className="flex items-start justify-between gap-2">
             <div className="flex min-w-0 items-center gap-2">
-              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-[var(--color-primary)] text-[0.7rem] font-bold text-white">
+              <span className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-md text-[0.7rem] font-bold ${indexBadgeClass(isDark)}`}>
                 {String(problem.id).padStart(2, "0")}
               </span>
               <p className="min-w-0 text-[0.88rem] font-bold leading-tight text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: problem.title }} />
@@ -134,7 +135,7 @@ function AccordionCard({ problem, isDark, isOpen, onToggle }) {
             <div className="px-4 py-4">
               <a
                 href="/quote"
-                className="btn-cta flex h-11 w-full items-center rounded-md bg-[var(--color-primary)] px-4 text-white"
+                className="btn-cta flex h-11 w-full items-center rounded-md px-4"
               >
                 <span className="flex-1 text-center text-[0.8rem] font-semibold" dangerouslySetInnerHTML={{ __html: problem.cta.label.replace(/\s*→\s*$/, "") }} />
                 <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
@@ -157,7 +158,7 @@ function ProblemCard({ problem, isDark }) {
         <div className="relative z-10 flex max-w-[62%] flex-col gap-2.5">
           <div>
             <div className="flex items-center gap-2">
-              <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-[var(--color-primary)] text-[0.8rem] font-bold text-white">
+              <span className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-md text-[0.8rem] font-bold ${indexBadgeClass(isDark)}`}>
                 {String(problem.id).padStart(2, "0")}
               </span>
               <p className="text-[1rem] font-bold leading-tight text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: code }} />
@@ -219,7 +220,7 @@ function ProblemCard({ problem, isDark }) {
         <div className="mt-auto border-t border-[var(--color-border)] px-4 py-4">
           <a
             href="/quote"
-            className="flex h-11 w-full items-center rounded-md bg-[var(--color-primary)] px-4 text-white"
+            className="btn-cta flex h-11 w-full items-center rounded-md px-4"
           >
             <span className="flex-1 text-center text-[0.8rem] font-semibold" dangerouslySetInnerHTML={{ __html: problem.cta.label.replace(/\s*→\s*$/, "") }} />
             <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
@@ -236,26 +237,16 @@ export default function CommonProblems({ data }) {
   if (!data) return null;
 
   const isDark = theme === "dark";
+  const sectionBg = generationSectionBg(isDark, true);
+  const title = splitCommonProblemsH2(data.h2 || "Common Problems");
 
   return (
-    <section className="w-full bg-[var(--color-page)] py-8 text-[var(--color-text)] md:py-10">
-      <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-        <h2
-          className="text-[2.15rem] font-bold leading-[1.1] tracking-normal text-[var(--color-text)] md:text-[3rem]"
-          dangerouslySetInnerHTML={{ __html: data.h2 || "Common Problems" }}
-        />
-        <div className="mt-3">
-          <MStripe />
-        </div>
-        {data.subHeadline ? (
-          <p
-            className="mt-4 max-w-[920px] text-[0.88rem] leading-[1.4] text-[var(--color-text-muted)] md:mt-5 md:text-[1.08rem] md:leading-[1.42]"
-            dangerouslySetInnerHTML={{ __html: data.subHeadline }}
-          />
-        ) : null}
+    <section className={`w-full overflow-x-hidden text-[var(--color-text)] ${sectionBg}`}>
+      <GenerationSectionHeader title={title} subHeadline={data.subHeadline} isDark={isDark} sectionBg={sectionBg} />
 
+      <div className="relative mx-auto w-full max-w-8xl px-4 pb-5 pt-4 md:px-8 md:pb-6 md:pt-5">
         {/* Mobile: accordion - one card open at a time */}
-        <div className="mt-6 flex flex-col gap-3 md:hidden">
+        <div className="flex flex-col gap-3 md:hidden">
           {data.problems?.map((problem) => (
             <AccordionCard
               key={problem.id}
@@ -268,19 +259,19 @@ export default function CommonProblems({ data }) {
         </div>
 
         {/* Desktop: full grid, all cards visible */}
-        <div className="mt-6 hidden gap-4 md:grid md:grid-cols-2 lg:grid-cols-4">
+        <div className="hidden gap-3 md:grid md:grid-cols-2 md:gap-4 lg:grid-cols-4">
           {data.problems?.map((problem) => (
             <ProblemCard key={problem.id} problem={problem} isDark={isDark} />
           ))}
         </div>
 
         {data.trustStrip?.length > 0 || data.footerNote ? (
-          <div className={`mt-6 overflow-hidden rounded-md border ${isDark ? "border-white/10 bg-black" : "border-[var(--color-border)] bg-[var(--color-table-surface)]"}`}>
-            <div className={`flex items-center gap-3 border-b px-4 py-3.5 ${isDark ? "border-white/10" : "border-[var(--color-border)]"}`}>
+          <div className="glass-panel mt-4 overflow-hidden rounded-md md:mt-5">
+            <div className="flex items-center gap-3 border-b border-[var(--color-border)] px-4 py-3.5">
               <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
                 <GenIcon name="shield" className="h-5 w-5" />
               </span>
-              <p className={`text-[1rem] font-bold leading-tight ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+              <p className="text-[1rem] font-bold leading-tight text-[var(--color-text)]">
                 How confident are these ratings?
               </p>
             </div>
@@ -288,18 +279,18 @@ export default function CommonProblems({ data }) {
             {data.trustStrip?.map((item, index) => (
               <div
                 key={item.title}
-                className={`flex items-center gap-3 px-4 py-3.5 ${index > 0 ? `border-t ${isDark ? "border-white/10" : "border-[var(--color-border)]"}` : ""}`}
+                className={`flex items-center gap-3 px-4 py-3.5 ${index > 0 ? "border-t border-[var(--color-border)]" : ""}`}
               >
                 <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
                   <GenIcon name={item.icon} className="h-4.5 w-4.5" />
                 </span>
                 <div className="min-w-0 flex-1">
                   <p
-                    className={`text-[0.85rem] font-semibold ${isDark ? "text-white" : "text-[var(--color-text)]"}`}
+                    className="text-[0.85rem] font-semibold text-[var(--color-text)]"
                     dangerouslySetInnerHTML={{ __html: item.title }}
                   />
                   <p
-                    className={`text-[0.76rem] leading-[1.35] ${isDark ? "text-white/70" : "text-[var(--color-text-muted)]"}`}
+                    className="text-[0.76rem] leading-[1.35] text-[var(--color-text-muted)]"
                     dangerouslySetInnerHTML={{ __html: item.text }}
                   />
                 </div>
@@ -308,14 +299,14 @@ export default function CommonProblems({ data }) {
             ))}
 
             {data.footerNote ? (
-              <div className={`flex items-center gap-3 border-t px-4 py-3.5 ${isDark ? "border-white/10" : "border-[var(--color-border)]"}`}>
+              <div className="flex items-center gap-3 border-t border-[var(--color-border)] px-4 py-3.5">
                 <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
                   <GenIcon name="tag" className="h-4.5 w-4.5" />
                 </span>
                 <div className="min-w-0 flex-1">
                   <p className="text-[0.85rem] font-semibold text-[var(--color-primary)]">Data Note</p>
                   <p
-                    className={`text-[0.76rem] leading-[1.35] ${isDark ? "text-white/70" : "text-[var(--color-text-muted)]"}`}
+                    className="text-[0.76rem] leading-[1.35] text-[var(--color-text-muted)]"
                     dangerouslySetInnerHTML={{ __html: data.footerNote }}
                   />
                 </div>

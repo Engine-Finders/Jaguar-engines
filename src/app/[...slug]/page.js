@@ -198,7 +198,7 @@ export default async function CatchAllPage({ params }) {
 
   if (type === "generations") {
     return (
-      <main className="flex flex-col">
+      <main className="flex flex-col overflow-x-hidden">
         {data.meta?.jsonLd && (
           <script
             type="application/ld+json"

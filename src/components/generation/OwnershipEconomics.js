@@ -1,21 +1,27 @@
 "use client";
 
-import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
-import MStripe from "@/components/reusableComponents/MStripe";
 import GenIcon from "./GenIcons";
+import GenerationSectionHeader from "./GenerationSectionHeader";
+import {
+  generationSectionBg,
+  indexBadgeClass,
+  splitOwnershipEconomicsH2,
+  tableHeaderClass,
+} from "./generationSection";
+import HomeIcon from "@/components/home/homeIcons";
 
 const verdictStyles = {
   warning: { icon: "warning", light: "text-[#d97517]", dark: "text-[#ffb05a]" },
   success: { icon: "check", light: "text-[#13884a]", dark: "text-[#67d99a]" },
   danger: { icon: "warning", light: "text-[#db2e2e]", dark: "text-[#ff8b90]" },
-  info: { icon: "info", light: "text-[var(--color-primary)]", dark: "text-[var(--color-text)]" },
+  info: { icon: "info", light: "text-[var(--color-primary)]", dark: "text-[var(--color-chrome-bright)]" },
 };
 
 function VerdictPill({ verdictType, text, isDark }) {
   const style = verdictStyles[verdictType] || verdictStyles.info;
   const iconColor = isDark ? style.dark : style.light;
-  const textColor = isDark ? "text-white" : "text-black";
+  const textColor = isDark ? "text-white/88" : "text-[var(--color-text)]";
 
   return (
     <span className={`inline-flex items-start gap-2 text-[0.78rem] leading-[1.25] ${textColor}`}>
@@ -35,13 +41,13 @@ function DesktopRow({ row, isDark }) {
 
   return (
     <div
-      className={`grid grid-cols-[110px_100px_1fr_130px_150px_1.4fr] items-center gap-px ${rowClass} px-5 py-3.5 text-[0.85rem] border-b ${borderBottom} last:border-b-0`}
+      className={`grid grid-cols-[110px_100px_1fr_130px_150px_1.4fr] items-center gap-px ${rowClass} border-b px-5 py-3 text-[0.85rem] ${borderBottom} last:border-b-0`}
     >
-      <span className={`px-3 font-semibold border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.engine }} />
-      <span className={`px-3 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.typicalMileage }} />
-      <span className={`px-3 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.commonMajorFailure }} />
-      <span className={`px-3 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.repairCostSpecialist }} />
-      <span className={`px-3 font-semibold border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.replacementCostRecon }} />
+      <span className={`border-r px-3 font-semibold ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.engine }} />
+      <span className={`border-r px-3 ${mutedText} ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.typicalMileage }} />
+      <span className={`border-r px-3 ${mutedText} ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.commonMajorFailure }} />
+      <span className={`border-r px-3 ${mutedText} ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.repairCostSpecialist }} />
+      <span className={`border-r px-3 font-semibold ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.replacementCostRecon }} />
       <div className="pl-3">
         <VerdictPill verdictType={row.verdictType} text={row.ownershipVerdict} isDark={isDark} />
       </div>
@@ -61,13 +67,13 @@ function MobileRow({ row, isDark }) {
 
   return (
     <div
-      className={`grid ${MOBILE_COLS} items-center gap-px ${rowClass} px-3 py-3 text-[0.72rem] leading-[1.3] border-b ${borderBottom} last:border-b-0`}
+      className={`grid ${MOBILE_COLS} items-center gap-px ${rowClass} border-b px-3 py-3 text-[0.72rem] leading-[1.3] ${borderBottom} last:border-b-0`}
     >
-      <span className={`px-2 font-semibold border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.engine }} />
-      <span className={`px-2 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.typicalMileage }} />
-      <span className={`px-2 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.commonMajorFailure }} />
-      <span className={`px-2 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.repairCostSpecialist }} />
-      <span className={`px-2 font-semibold border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.replacementCostRecon }} />
+      <span className={`border-r px-2 font-semibold ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.engine }} />
+      <span className={`border-r px-2 ${mutedText} ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.typicalMileage }} />
+      <span className={`border-r px-2 ${mutedText} ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.commonMajorFailure }} />
+      <span className={`border-r px-2 ${mutedText} ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.repairCostSpecialist }} />
+      <span className={`border-r px-2 font-semibold ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.replacementCostRecon }} />
       <div className="pl-2">
         <VerdictPill verdictType={row.verdictType} text={row.ownershipVerdict} isDark={isDark} />
       </div>
@@ -83,61 +89,21 @@ export default function OwnershipEconomics({ data }) {
   if (!data) return null;
 
   const isDark = theme === "dark";
-  const headerBg = isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]";
-  const headerDivider = isDark ? "border-white/20" : "border-white/25";
+  const sectionBg = generationSectionBg(isDark, false);
+  const title = splitOwnershipEconomicsH2(data.h2 || "Ownership Economics");
+  const headerBg = tableHeaderClass(isDark);
+  const headerDivider = isDark ? "border-[var(--color-page)]/20" : "border-white/25";
   const bodyWrapperBg = isDark ? "bg-black" : "bg-[var(--color-table-surface)]";
-  const headerImage = isDark ? "/e90/engine_replacement_dark.webp" : "/e90/engine_replacement_light.webp";
-  const headerImageMobile = isDark ? "/e90/engine_replacement_mobile_dark.webp" : "/e90/engine_replacement_mobile_light.webp";
-  const headerHeadingClass = isDark ? "text-white" : "text-[var(--color-text)]";
 
   return (
-    <section className="w-full bg-[var(--color-page)] py-8 text-[var(--color-text)] md:py-10">
-      <div className="relative overflow-hidden">
-        <div className="absolute inset-0 hidden md:block">
-          <Image src={headerImage} alt="" fill className="object-cover" sizes="100vw" priority />
-          {isDark ? (
-            <>
-              <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(2,7,17,0.9)_0%,rgba(2,7,11,0.72)_32%,transparent_60%)]" />
-              <div className="absolute inset-x-0 bottom-0 h-16 bg-[linear-gradient(0deg,rgba(2,7,17,0.65)_0%,transparent_100%)]" />
-            </>
-          ) : (
-            <>
-              <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.95)_0%,rgba(255,255,255,0.72)_32%,transparent_60%)]" />
-              <div className="absolute inset-x-0 bottom-0 h-16 bg-[linear-gradient(0deg,rgba(255,255,255,0.65)_0%,transparent_100%)]" />
-            </>
-          )}
-        </div>
+    <section className={`w-full overflow-x-hidden text-[var(--color-text)] ${sectionBg}`}>
+      <GenerationSectionHeader title={title} subHeadline={data.subHeadline} isDark={isDark} sectionBg={sectionBg} />
 
-        <div className="relative -mb-px h-[200px] w-full overflow-hidden md:hidden">
-          <Image src={headerImageMobile} alt="" fill className="object-cover" sizes="100vw" priority />
-          <div
-            className={`absolute inset-0 ${
-              isDark
-                ? "bg-[linear-gradient(180deg,transparent_55%,rgba(2,7,17,1)_97%)]"
-                : "bg-[linear-gradient(180deg,transparent_55%,rgba(255,255,255,1)_97%)]"
-            }`}
-          />
-          {/* Solid strip guarantees full opacity at the very edge - no sub-pixel seam from the gradient's asymptotic stop */}
-          <div className="absolute inset-x-0 bottom-0 h-3 bg-[var(--color-page)]" />
-        </div>
-
-        <div className="relative mx-auto w-full max-w-8xl px-4 py-6 md:px-8 md:py-10">
-          <h2
-            className={`max-w-[720px] text-[2.15rem] font-bold leading-[1.1] tracking-normal md:text-[3rem] ${headerHeadingClass}`}
-            dangerouslySetInnerHTML={{ __html: data.h2 }}
-          />
-          <div className="mt-3">
-            <MStripe />
-          </div>
-        </div>
-      </div>
-
-      <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-
-        <div className="mt-6 hidden overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:block">
-          <div className={`grid grid-cols-[110px_100px_1fr_130px_150px_1.4fr] gap-px ${headerBg} px-5 py-3 text-[0.82rem] font-semibold text-white`}>
+      <div className="relative mx-auto w-full max-w-8xl px-4 pb-5 pt-4 md:px-8 md:pb-6 md:pt-5">
+        <div className="hidden overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:block">
+          <div className={`grid grid-cols-[110px_100px_1fr_130px_150px_1.4fr] gap-px rounded-t-md ${headerBg} px-5 py-2.5 text-[0.82rem] font-semibold leading-[1.2]`}>
             {data.columns?.map((col, index) => (
-              <span key={col} className={`flex items-center gap-2 px-3 border-r ${headerDivider} last:border-r-0`}>
+              <span key={col} className={`flex items-center gap-2 border-r px-3 ${headerDivider} last:border-r-0`}>
                 <GenIcon name={COLUMN_ICONS[index]} className="h-4 w-4 shrink-0" />
                 {col}
               </span>
@@ -150,11 +116,11 @@ export default function OwnershipEconomics({ data }) {
           </div>
         </div>
 
-        <div className="mt-6 overflow-x-auto rounded-md border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:hidden">
+        <div className="overflow-x-auto rounded-md border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:hidden">
           <div className="min-w-[850px]">
-            <div className={`grid ${MOBILE_COLS} gap-px ${headerBg} px-3 py-2.5 text-[0.7rem] font-semibold leading-[1.2] text-white`}>
+            <div className={`grid ${MOBILE_COLS} gap-px ${headerBg} px-3 py-2.5 text-[0.7rem] font-semibold leading-[1.2]`}>
               {data.columns?.map((col, index) => (
-                <span key={col} className={`flex items-center gap-1.5 px-2 border-r ${headerDivider} last:border-r-0`}>
+                <span key={col} className={`flex items-center gap-1.5 border-r px-2 ${headerDivider} last:border-r-0`}>
                   <GenIcon name={COLUMN_ICONS[index]} className="h-3.5 w-3.5 shrink-0" />
                   {col}
                 </span>
@@ -168,11 +134,11 @@ export default function OwnershipEconomics({ data }) {
           </div>
         </div>
 
-        <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-[0.85fr_1.15fr]">
+        <div className="mt-4 grid grid-cols-1 gap-3 md:mt-5 md:grid-cols-[0.85fr_1.15fr] md:gap-4">
           {data.economicsRule ? (
-            <div className="flex items-center gap-4 rounded-md border border-[var(--color-primary)] bg-[var(--color-primary-soft)] p-3.5">
-              <span className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
-                <GenIcon name="scale" className="h-10 w-10" />
+            <div className="glass-panel flex items-center gap-4 rounded-md border border-[var(--color-primary)] p-3.5">
+              <span className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)]">
+                <HomeIcon name="scale" isDark={!isDark} className="h-12 w-12 object-contain" />
               </span>
               <div className="min-w-0 flex-1">
                 <p

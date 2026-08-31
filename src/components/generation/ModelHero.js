@@ -4,15 +4,23 @@ import Image from "next/image";
 import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
-import GenIcon from "./GenIcons";
+import HomeIcon from "@/components/home/homeIcons";
+import { splitGenerationHeroH1 } from "./generationSection";
+
+const TRUST_STRIP_ICON_BY_EMOJI = {
+  "📊": "real-inquiries",
+  "🔧": "vehicle",
+  "📖": "engine-codes",
+  "🏆": "engine-finders",
+};
+
+const TRUST_STRIP_ICONS = ["real-inquiries", "vehicle", "engine-codes", "engine-finders"];
 
 function splitTagPill(tagPill = "") {
   const parts = tagPill.split(" • ");
   return { model: parts[0] || "", body: parts[1] || "", years: parts[2] || "" };
 }
 
-// Split a trust-strip label into a leading bold value (a number/short token)
-// and the remaining text, plus any trailing [TAG] marker rendered as a separate line.
 function splitStat(label = "") {
   const tagMatch = label.match(/\s*\[([^\]]+)\]\s*$/);
   const tag = tagMatch ? tagMatch[1] : "";
@@ -26,6 +34,10 @@ function splitStat(label = "") {
     label: hasValue ? rest.join(" ") : text,
     tag,
   };
+}
+
+function trustStripIcon(item, index) {
+  return TRUST_STRIP_ICON_BY_EMOJI[item.icon] || TRUST_STRIP_ICONS[index] || "real-inquiries";
 }
 
 function TrustLabel({ label }) {
@@ -49,66 +61,176 @@ function TrustLabel({ label }) {
   return label;
 }
 
+function HeroHeadline({ h1 = "", isDark }) {
+  const parts = splitGenerationHeroH1(h1);
+  const textClass = isDark ? "text-white" : "text-[var(--color-text)]";
+
+  return (
+    <h1 className={`text-[32px] font-bold leading-[0.95] tracking-normal md:max-w-[720px] md:text-[3.5rem] md:leading-[0.94] ${textClass}`}>
+      {parts.before ? <span dangerouslySetInnerHTML={{ __html: parts.before }} /> : null}
+      {parts.accent ? (
+        <>
+          {parts.before ? " " : null}
+          <span className="text-[var(--color-chrome-bright)]" dangerouslySetInnerHTML={{ __html: parts.accent }} />
+        </>
+      ) : null}
+    </h1>
+  );
+}
+
 export default function ModelHero({ data }) {
   const { theme } = useTheme();
   if (!data) return null;
 
   const isDark = theme === "dark";
   const pill = splitTagPill(data.tagPill);
-  const imageSrc = isDark ? data.image?.dark : data.image?.light || data.image?.dark;
+  const heroImage = isDark ? "/e90/hero_dark.webp" : "/e90/hero_day.webp";
+  const heroImageMobile = isDark ? "/e90/hero_mobile_dark.webp" : "/e90/hero_mobile_day.webp";
+  const desktopImage = (isDark ? data.image?.dark : data.image?.light) || heroImage;
+  const mobileImage = (isDark ? data.image?.mobileDark : data.image?.mobileLight) || heroImageMobile;
+  const heroAlt = data.image?.alt || "";
+  const heroDescriptionShadow = isDark
+    ? ""
+    : "[text-shadow:0_0_8px_#fff,0_0_16px_#fff,0_0_24px_rgba(255,255,255,0.9),0_1px_2px_rgba(255,255,255,0.95)]";
+
+  const cardBorderClass = isDark ? "border-white/20" : "border-[var(--color-border)]";
+  const cardBgClass = isDark ? "bg-[var(--color-surface-glass)]" : "bg-[rgba(255,255,255,0.72)]";
+  const dividerBorderClass = isDark ? "border-white/35" : "border-[rgba(7,24,39,0.25)]";
+  const badgeTextClass = isDark ? "text-white/85" : "text-[var(--color-text)]";
+  const badgeMutedClass = isDark ? "text-white/55" : "text-[var(--color-text-soft)]";
+
+  const desktopTrustStrip =
+    data.trustStrip?.length > 0 ? (
+      <div className="glass-panel mt-4 hidden items-stretch justify-center rounded-md px-4 py-3 shadow-[0_10px_30px_var(--color-shadow)] md:flex md:max-w-fit md:rounded-lg">
+        {data.trustStrip.map((item, index) => {
+          const stat = splitStat(item.label);
+          const isSimple = !stat.value && !stat.tag && !stat.label.includes(" ");
+
+          return (
+            <div key={item.label} className="flex items-stretch">
+              {index > 0 ? (
+                <span
+                  aria-hidden="true"
+                  className={`mx-3 my-1.5 w-px shrink-0 self-center ${isDark ? "bg-white/15" : "bg-[var(--color-border)]"}`}
+                  style={{ height: "70%" }}
+                />
+              ) : null}
+              {isSimple ? (
+                <div className="flex w-full flex-col items-center gap-1.5 text-center">
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center">
+                    <HomeIcon name={trustStripIcon(item, index)} isDark={isDark} className="h-11 w-11 object-contain" />
+                  </span>
+                  <span className={`text-[0.82rem] leading-[1.3] ${badgeTextClass}`}>
+                    <TrustLabel label={stat.label} />
+                  </span>
+                </div>
+              ) : (
+                <div className="flex items-center gap-2 text-left">
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center">
+                    <HomeIcon name={trustStripIcon(item, index)} isDark={isDark} className="h-11 w-11 object-contain" />
+                  </span>
+                  <div className="flex flex-col gap-0.5">
+                    {stat.value ? (
+                      <strong className={`text-[1.2rem] font-bold leading-none ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+                        {stat.value}
+                      </strong>
+                    ) : null}
+                    <span className={`text-[0.82rem] leading-[1.3] ${badgeTextClass}`}>
+                      <TrustLabel label={stat.label} />
+                    </span>
+                    {stat.tag ? (
+                      <span className={`text-[10px] font-semibold uppercase leading-none tracking-wide ${badgeMutedClass}`}>
+                        {stat.tag}
+                      </span>
+                    ) : null}
+                  </div>
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    ) : null;
+
+  const mobileTrustStrip =
+    data.trustStrip?.length > 0 ? (
+      <div className={`mt-3 rounded-md border ${cardBorderClass} ${cardBgClass} p-2 backdrop-blur-sm md:hidden`}>
+        <div className="grid grid-cols-4 gap-x-0.5">
+          {data.trustStrip.map((item, index) => {
+            const stat = splitStat(item.label);
+
+            return (
+              <div
+                key={item.label}
+                className={`flex min-w-0 flex-col items-center gap-1 px-0.5 text-center ${index > 0 ? `border-l ${dividerBorderClass}` : ""}`}
+              >
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center">
+                  <HomeIcon name={trustStripIcon(item, index)} isDark={isDark} className="h-9 w-9 object-contain" />
+                </span>
+                {stat.value ? (
+                  <strong className={`text-[0.72rem] font-bold leading-none ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+                    {stat.value}
+                  </strong>
+                ) : null}
+                <span className={`text-[0.52rem] leading-[1.2] ${badgeTextClass}`}>
+                  <TrustLabel label={stat.label} />
+                </span>
+                {stat.tag ? (
+                  <span className={`text-[0.45rem] font-semibold uppercase leading-none tracking-wide ${badgeMutedClass}`}>
+                    {stat.tag}
+                  </span>
+                ) : null}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    ) : null;
 
   return (
-    <section className="relative min-h-[560px] overflow-hidden bg-[var(--color-page)] text-[var(--color-text)] md:min-h-[620px]">
-      {/* Full-bleed background image on every breakpoint - mobile: vertical fade (dark for text up top, car visible lower down); desktop: left-to-right fade */}
+    <section className="relative min-h-[calc(100svh-84px)] overflow-hidden bg-[var(--color-page)] text-[var(--color-text)] md:min-h-[580px]">
       <div className="absolute inset-0">
-        {/* Mobile: dedicated portrait crop, narrowed and centered so it reads tall/slim rather than stretched full-width */}
-        <div className="absolute inset-x-0 top-[20%] bottom-[2%] md:hidden">
-          <Image
-            src={isDark ? "/e90/hero_mobile_dark.webp" : "/e90/hero_mobile_day.webp"}
-            alt={data.image?.alt || ""}
-            fill
-            className="object-fill"
-            sizes="84vw"
-            priority
-          />
-        </div>
-        {imageSrc ? (
-          <Image
-            src={imageSrc}
-            alt={data.image?.alt || ""}
-            fill
-            className="hidden object-cover md:block"
-            sizes="100vw"
-            priority
-          />
-        ) : null}
-        {/* Mobile: top-heavy vertical fade so the tag/H1/subheadline stay readable, clearing by the time the car appears lower in frame */}
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,var(--color-hero-fade)_0%,var(--color-hero-overlay)_38%,transparent_68%)] md:hidden" />
-        <div className="absolute inset-0 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_22%)] md:hidden" />
-        {/* Mobile, light mode only: soften the top-left corner so the image blends into the white page background */}
-        {!isDark ? (
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.85)_0%,transparent_45%)] md:hidden" />
-        ) : null}
-        {/* Light mode only: extra white wash across the very top so it blends cleanly into the page above the hero */}
-        {!isDark ? (
-          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.9)_0%,transparent_30%)]" />
-        ) : null}
-        {/* Desktop: left-to-right + bottom fade so the image blends into the page color */}
-        <div className="absolute inset-0 hidden bg-[linear-gradient(90deg,var(--color-hero-fade)_0%,var(--color-hero-overlay)_35%,transparent_72%)] md:block" />
-        <div className="absolute inset-0 hidden bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_28%)] md:block" />
+        <Image
+          src={mobileImage}
+          alt={heroAlt}
+          fill
+          className="object-cover object-[center_58%] md:hidden"
+          sizes="100vw"
+          priority
+        />
+        <Image
+          src={desktopImage}
+          alt={heroAlt}
+          fill
+          className="hidden object-cover object-[68%_center] md:block"
+          sizes="100vw"
+          priority
+        />
+        {isDark ? (
+          <>
+            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(11,12,12,0.62)_0%,rgba(11,12,12,0.28)_42%,rgba(11,12,12,0.82)_100%)] md:hidden" />
+            <div className="absolute inset-0 hidden bg-[linear-gradient(90deg,var(--color-hero-fade)_0%,var(--color-hero-overlay)_35%,transparent_72%)] md:block" />
+            <div className="absolute inset-0 hidden bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_28%)] md:block" />
+          </>
+        ) : (
+          <>
+            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.94)_0%,rgba(255,255,255,0.55)_32%,rgba(255,255,255,0.12)_58%,rgba(255,255,255,0.72)_100%)] md:hidden" />
+            <div className="absolute inset-0 hidden bg-[linear-gradient(90deg,var(--color-hero-fade)_0%,var(--color-hero-overlay)_35%,transparent_72%)] md:block" />
+            <div className="absolute inset-0 hidden bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_28%)] md:block" />
+          </>
+        )}
       </div>
 
-      <div className="relative mx-auto flex w-full max-w-8xl flex-col px-4 pb-5 pt-8 md:min-h-[620px] md:justify-center md:px-8 md:py-10">
-        <div className="relative flex w-full max-w-[720px] flex-col gap-3 md:ml-0 md:mt-0 md:gap-4">
-          {/* Tag pill */}
+      <div className="relative mx-auto flex min-h-[calc(100svh-84px)] w-full max-w-8xl flex-col justify-between px-4 pb-4 pt-6 md:min-h-[580px] md:justify-center md:px-8 md:py-6">
+        <div className="relative flex w-full max-w-[720px] flex-col gap-2.5 md:gap-3">
           <span
             className={`inline-flex w-fit max-w-full flex-wrap items-center gap-x-2 gap-y-2 rounded-md border px-3 py-2 text-[0.82rem] leading-[1.35] md:px-4 md:py-2 md:text-[0.88rem] ${
               isDark
-                ? "border-white/30 bg-[rgba(2,7,17,0.5)] text-white"
-                : "border-[rgba(11,103,220,0.48)] bg-[rgba(255,255,255,0.58)] text-[var(--color-text-muted)]"
+                ? "border-white/30 bg-[rgba(11,12,12,0.55)] text-white"
+                : "border-[var(--color-border-strong)] bg-[rgba(255,255,255,0.58)] text-[var(--color-text-muted)]"
             }`}
           >
-            <GenIcon name="car" className="h-4 w-4 shrink-0 text-[var(--color-primary)]" />
+            <HomeIcon name="vehicle" isDark={isDark} className="h-4 w-4 shrink-0 object-contain" />
             <strong className="font-semibold text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: pill.model }} />
             {pill.body ? (
               <>
@@ -124,112 +246,40 @@ export default function ModelHero({ data }) {
             ) : null}
           </span>
 
-          {/* Headline */}
-          <h1
-            className={`text-[32px] font-bold leading-[0.95] tracking-normal md:max-w-[720px] md:text-[3.5rem] md:leading-[0.94] ${
-              isDark ? "text-white" : "text-[var(--color-text)]"
-            }`}
-            dangerouslySetInnerHTML={{ __html: data.h1 }}
-          />
+          <HeroHeadline h1={data.h1} isDark={isDark} />
 
-          {/* MStripe decorative accent - matches home hero (blue / blue / red / grey slashes + trailing line) */}
           <MStripe />
 
-          {/* subHeadline - sits over the top-heavy fade on mobile, and over the solid background on desktop */}
           <p
-            className={`max-w-[78%] text-[0.88rem] leading-[1.42] md:max-w-[620px] md:text-[1.08rem] md:leading-[1.42] ${
-              isDark ? "text-white/88" : "text-[var(--color-text-muted)]"
-            }`}
+            className={`max-w-[78%] text-[0.88rem] leading-[1.42] md:max-w-[620px] md:text-[1.08rem] md:leading-[1.42] ${isDark ? "text-white/88" : "text-black"} ${heroDescriptionShadow}`}
             dangerouslySetInnerHTML={{ __html: data.subHeadline }}
           />
 
-          {/* Mobile: spacer so the CTA/stats sit lower, clear of the car in the lower portion of the image */}
-          <div className="h-[130px] md:hidden" aria-hidden="true" />
+          {desktopTrustStrip}
 
-          {/* Mobile: full-width primary CTA - sits below the image card in normal flow */}
           {data.primaryCta ? (
             <Link
               href="/quote"
-              className="btn-cta mt-5 inline-flex w-full items-center justify-center gap-3 rounded-md bg-[var(--color-primary)] px-6 py-4 text-[1rem] font-bold text-white shadow-[0_12px_28px_var(--color-shadow)] md:hidden"
+              className="btn-cta mt-4 hidden w-fit items-center gap-5 rounded-md px-7 py-3.5 text-base font-bold shadow-[0_12px_28px_var(--color-shadow)] md:inline-flex"
             >
               <span dangerouslySetInnerHTML={{ __html: data.primaryCta.label.replace(/\s*→\s*$/, "") }} />
-              <GenIcon name="arrow" className="h-5 w-5" />
+              <HomeIcon name="quote" isDark={isDark} className="h-5 w-5 object-contain" />
             </Link>
           ) : null}
+        </div>
 
-          {/* Trust strip - single horizontal bar, icon-first vertical stack per badge, floating dividers */}
-          {data.trustStrip?.length > 0 ? (
-            <div className="glass-panel mt-5 flex items-stretch justify-center rounded-md px-3 py-2.5 shadow-[0_10px_30px_var(--color-shadow)] md:max-w-fit md:rounded-lg md:px-4 md:py-3">
-              {data.trustStrip.map((item, index) => {
-                const stat = splitStat(item.label);
-                const isSimple = !stat.value && !stat.tag && !stat.label.includes(" ");
-
-                return (
-                  <div key={item.label} className="flex items-stretch">
-                    {index > 0 ? (
-                      <span
-                        aria-hidden="true"
-                        className={`mx-2.5 my-1.5 w-px shrink-0 self-center md:mx-3 ${isDark ? "bg-white/15" : "bg-[var(--color-border)]"}`}
-                        style={{ height: "70%" }}
-                      />
-                    ) : null}
-                    {isSimple ? (
-                      /* Simple badge (e.g. Saloon): icon centered on top, single label below */
-                      <div className="flex w-full flex-col items-center gap-1.5 text-center">
-                        <GenIcon name={item.icon} className="h-5 w-5 text-[var(--color-primary)]" />
-                        <span
-                          className={`text-[0.7rem] leading-[1.3] ${isDark ? "text-white/85" : "text-[var(--color-text)]"} md:text-[0.82rem]`}
-                        >
-                          <TrustLabel label={stat.label} />
-                        </span>
-                      </div>
-                    ) : (
-                      /* Icon left, parallel with the text starting beside it */
-                      <div className="flex items-center gap-2 text-left">
-                        <GenIcon name={item.icon} className="h-5 w-5 shrink-0 text-[var(--color-primary)]" />
-                        <div className="flex flex-col gap-0.5">
-                          {stat.value ? (
-                            <strong
-                              className={`text-[1rem] font-bold leading-none md:text-[1.2rem] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}
-                              dangerouslySetInnerHTML={{ __html: stat.value }}
-                            />
-                          ) : null}
-                          <span
-                            className={`text-[0.7rem] leading-[1.3] ${isDark ? "text-white/85" : "text-[var(--color-text)]"} md:text-[0.82rem]`}
-                          >
-                            <TrustLabel label={stat.label} />
-                          </span>
-                          {stat.tag ? (
-                            <span
-                              className={`text-[9px] font-semibold uppercase leading-none tracking-wide ${
-                                isDark ? "text-white/55" : "text-[var(--color-text-soft)]"
-                              } md:text-[10px]`}
-                              dangerouslySetInnerHTML={{ __html: stat.tag }}
-                            />
-                          ) : null}
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
-          ) : null}
-
-          {/* Desktop-only CTA (pill button) */}
+        <div className="relative flex w-full max-w-[720px] flex-col md:hidden">
           {data.primaryCta ? (
             <Link
               href="/quote"
-              className="btn-cta hidden w-full items-center justify-between rounded-[1.25rem] border border-[var(--color-border-strong)] bg-[var(--color-primary)] px-5 py-4 text-white shadow-lg shadow-black/30 md:flex md:w-fit md:justify-start md:gap-5 md:rounded md:border-0 md:bg-[var(--color-primary)] md:px-7 md:py-3.5 md:text-base md:shadow-lg md:shadow-[var(--color-shadow)]"
+              className="btn-cta mt-2 inline-flex w-full items-center justify-center gap-3 rounded-md px-6 py-3.5 text-[1rem] font-bold shadow-[0_12px_28px_var(--color-shadow)]"
             >
-              <span className="text-left">
-                <span className="block text-lg font-bold tracking-[0.08em] md:text-[1.05rem] md:tracking-normal" dangerouslySetInnerHTML={{ __html: data.primaryCta.label.replace(/\s*→\s*$/, "") }} />
-              </span>
-              <span className="flex h-14 w-14 items-center justify-center rounded-full border border-white/10 bg-[rgba(3,14,31,0.55)] md:h-auto md:w-auto md:rounded-none md:border-0 md:bg-transparent">
-                <GenIcon name="arrow" className="h-7 w-7" />
-              </span>
+              <span dangerouslySetInnerHTML={{ __html: data.primaryCta.label.replace(/\s*→\s*$/, "") }} />
+              <HomeIcon name="quote" isDark={isDark} className="h-5 w-5 object-contain" />
             </Link>
           ) : null}
+
+          {mobileTrustStrip}
         </div>
       </div>
     </section>

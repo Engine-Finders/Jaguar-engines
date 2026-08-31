@@ -5,7 +5,16 @@ import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import GenIcon from "./GenIcons";
 import GenBadge from "./GenBadge";
+import {
+  generationSectionBg,
+  primaryBadgeClass,
+  sectionDescription,
+  sectionH2,
+  splitEngineDatabaseH2,
+  tableHeaderClass,
+} from "./generationSection";
 
+const HEADER_IMAGE = "/home-image/sec2-bg.webp";
 const DESKTOP_COLS = "grid-cols-[0.95fr_0.6fr_1.05fr_0.8fr_0.9fr_1.15fr_1fr_1.05fr_1fr_1.05fr]";
 const MOBILE_COLS = "grid-cols-[100px_70px_90px_110px_120px_110px_130px]";
 const MOBILE_HEADERS = ["Engine Code", "Fuel", "Power", "Years", "Reliability", "Enquiries", "Avg. Recon Cost"];
@@ -18,8 +27,55 @@ function Stars({ value = "", className = "text-[1rem]" }) {
   return <span className={`tracking-tight text-[var(--color-primary)] ${className}`}>{value}</span>;
 }
 
+function SectionHeader({ title, subHeadline, isDark, sectionBg }) {
+  return (
+    <div className={`relative overflow-hidden ${sectionBg}`}>
+      <div className="absolute inset-y-0 right-0 w-[62%] md:w-[48%]">
+        <Image
+          src={HEADER_IMAGE}
+          alt=""
+          fill
+          className="object-cover object-right"
+          sizes="(max-width: 768px) 62vw, 48vw"
+        />
+        <div
+          className={
+            isDark
+              ? "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(11,12,12,0.82)_34%,rgba(11,12,12,0.18)_100%)]"
+              : "absolute inset-0 bg-[linear-gradient(90deg,#ececea_0%,rgba(236,236,234,0.88)_34%,rgba(236,236,234,0.18)_100%)]"
+          }
+        />
+      </div>
+      <div className="relative mx-auto w-full max-w-8xl px-4 pb-3 pt-5 md:px-8 md:pb-4 md:pt-6">
+        <div className="max-w-[650px]">
+          <h2 className={`font-bold tracking-normal text-[var(--color-text)] ${sectionH2}`}>
+            <span dangerouslySetInnerHTML={{ __html: title.main }} />
+            {title.accent ? (
+              <>
+                <br />
+                <span
+                  className="text-[var(--color-chrome-bright)]"
+                  dangerouslySetInnerHTML={{ __html: title.accent }}
+                />
+              </>
+            ) : null}
+          </h2>
+          <div className="mt-2.5">
+            <MStripe />
+          </div>
+          {subHeadline ? (
+            <p
+              className={`mt-2.5 max-w-[610px] text-[var(--color-text-muted)] ${sectionDescription}`}
+              dangerouslySetInnerHTML={{ __html: subHeadline }}
+            />
+          ) : null}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function DesktopRow({ engine, isDark }) {
-  // Theme-aware row styling - light keeps the original white surface + dark text; dark gets black + white text
   const rowClass = isDark
     ? "bg-black text-white"
     : "bg-[var(--color-table-surface)] text-[var(--color-text)]";
@@ -96,43 +152,19 @@ export default function EngineDatabase({ data }) {
   if (!data) return null;
 
   const isDark = theme === "dark";
-
-  // Theme-aware header styling - light uses primary blue, dark uses deep navy
-  const headerBg = isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]";
-  const headerDivider = isDark ? "border-white/20" : "border-white/25";
+  const headerBg = tableHeaderClass(isDark);
+  const headerDivider = isDark ? "border-[var(--color-page)]/20" : "border-white/25";
   const bodyWrapperBg = isDark ? "bg-black" : "bg-[var(--color-table-surface)]";
+  const title = splitEngineDatabaseH2(data.h2);
+  const sectionBg = generationSectionBg(isDark, true);
 
   return (
-    <section className="w-full bg-[var(--color-page)] py-8 text-[var(--color-text)] md:py-10">
-      <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-        <div className="relative">
-          <span className="pointer-events-none absolute inset-y-0 right-0 hidden w-14 sm:block md:w-auto">
-            <Image
-              src="/e90/stripe.webp"
-              alt=""
-              width={220}
-              height={220}
-              className="h-full w-auto object-contain object-right"
-            />
-          </span>
+    <section className={`w-full overflow-x-hidden text-[var(--color-text)] ${sectionBg}`}>
+      <SectionHeader title={title} subHeadline={data.subHeadline} isDark={isDark} sectionBg={sectionBg} />
 
-          <h2
-            className="max-w-[760px] text-[2.15rem] font-bold leading-[1.1] tracking-normal text-[var(--color-text)] md:text-[3rem]"
-            dangerouslySetInnerHTML={{ __html: data.h2 }}
-          />
-          <div className="mt-3">
-            <MStripe />
-          </div>
-          {data.subHeadline ? (
-            <p
-              className="mt-4 max-w-[920px] text-[0.88rem] leading-[1.4] text-[var(--color-text-muted)] md:mt-5 md:text-[1.08rem] md:leading-[1.42]"
-              dangerouslySetInnerHTML={{ __html: data.subHeadline }}
-            />
-          ) : null}
-        </div>
-
-        <div className="mt-6 hidden overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:block">
-          <div className={`grid ${DESKTOP_COLS} gap-px rounded-t-md ${headerBg} px-4 py-2 text-[0.72rem] font-semibold leading-[1.2] text-white`}>
+      <div className="relative mx-auto w-full max-w-8xl px-4 pb-5 pt-4 md:px-8 md:pb-6 md:pt-5">
+        <div className="hidden overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:block">
+          <div className={`grid ${DESKTOP_COLS} gap-px rounded-t-md ${headerBg} px-4 py-2 text-[0.72rem] font-semibold leading-[1.2]`}>
             {data.columns?.map((col) => (
               <span key={col} className={`min-w-0 border-r px-2 ${headerDivider} last:border-r-0`}>{col}</span>
             ))}
@@ -144,9 +176,9 @@ export default function EngineDatabase({ data }) {
           </div>
         </div>
 
-        <div className="mt-6 overflow-x-auto rounded-md border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:hidden">
+        <div className="overflow-x-auto overscroll-x-contain rounded-md border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:hidden">
           <div className="min-w-[730px]">
-            <div className={`grid ${MOBILE_COLS} gap-px ${headerBg} px-3 py-2 text-[0.68rem] font-semibold leading-[1.2] text-white`}>
+            <div className={`grid ${MOBILE_COLS} gap-px ${headerBg} px-3 py-2 text-[0.68rem] font-semibold leading-[1.2]`}>
               {MOBILE_HEADERS.map((col) => (
                 <span key={col} className={`border-r px-1.5 ${headerDivider} last:border-r-0`}>{col}</span>
               ))}
@@ -160,14 +192,12 @@ export default function EngineDatabase({ data }) {
         </div>
 
         {data.confidenceScore?.items?.length > 0 ? (
-          <div className="mt-6 grid grid-cols-1 items-center gap-5 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-5 md:grid-cols-[72px_1fr_1fr_1fr_1.4fr] md:items-start md:gap-0 md:divide-x md:divide-[var(--color-border)]">
-            {/* Column 1: Shield icon */}
+          <div className="mt-5 grid grid-cols-1 items-center gap-4 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-4 md:grid-cols-[72px_1fr_1fr_1fr_1.4fr] md:items-start md:gap-0 md:divide-x md:divide-[var(--color-border)]">
             <div className="flex items-start justify-start md:pr-4">
-              <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-md bg-[var(--color-primary)] text-white">
+              <span className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-md ${primaryBadgeClass(isDark)}`}>
                 <GenIcon name="shield" className="h-8 w-8" />
               </span>
             </div>
-            {/* Columns 2-5: info blocks */}
             {data.confidenceScore.items.map((item, index) => {
               const iconTone =
                 item.iconColor === "success"

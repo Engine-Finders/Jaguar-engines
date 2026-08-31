@@ -2,8 +2,12 @@
 
 import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
-import MStripe from "@/components/reusableComponents/MStripe";
 import GenIcon from "./GenIcons";
+import GenerationSectionHeader from "./GenerationSectionHeader";
+import {
+  generationSectionBg,
+  splitBestWorstEnginesH2,
+} from "./generationSection";
 
 const typeStyles = {
   success: {
@@ -18,7 +22,7 @@ const typeStyles = {
     color: "var(--color-primary)",
     accent: "border-b-[var(--color-primary)]",
     light: "text-[var(--color-primary)] bg-[var(--color-primary-soft)]",
-    dark: "text-[var(--color-text)] bg-[rgba(36,132,255,0.16)]",
+    dark: "text-[var(--color-chrome-bright)] bg-[rgba(255,255,255,0.08)]",
   },
   danger: {
     icon: "warning",
@@ -46,7 +50,7 @@ const typeStyles = {
     color: "var(--color-primary)",
     accent: "border-b-[var(--color-primary)]",
     light: "text-[var(--color-primary)] bg-[var(--color-primary-soft)]",
-    dark: "text-[var(--color-text)] bg-[rgba(36,132,255,0.16)]",
+    dark: "text-[var(--color-chrome-bright)] bg-[rgba(255,255,255,0.08)]",
   },
 };
 
@@ -56,7 +60,7 @@ function MobileCard({ item, isDark }) {
 
   return (
     <div
-      className="flex gap-3 overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-3"
+      className="glass-panel flex gap-3 overflow-hidden rounded-md p-3"
       style={{ borderLeft: `4px solid ${style.color}` }}
     >
       <div className="flex w-20 shrink-0 flex-col items-center gap-1.5">
@@ -136,9 +140,9 @@ function OverlookedCard({ item, isDark }) {
   const badgeClass = isDark ? style.dark : style.light;
 
   return (
-    <div className={`overflow-hidden rounded-md border border-b-4 border-[var(--color-border)] bg-[var(--color-surface)] ${style.accent}`}>
+    <div className={`glass-panel overflow-hidden rounded-md border border-b-4 border-[var(--color-border)] ${style.accent}`}>
       <div className="grid grid-cols-1 md:grid-cols-[0.85fr_1.7fr_1fr] md:divide-x md:divide-[var(--color-border)]">
-        <div className="flex items-start gap-3 p-5">
+        <div className="flex items-start gap-3 p-4 md:p-5">
           <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${badgeClass}`}>
             <GenIcon name={style.icon} className="h-5 w-5" />
           </span>
@@ -149,11 +153,11 @@ function OverlookedCard({ item, isDark }) {
           </div>
         </div>
 
-        <div className="p-5 md:pt-5">
+        <div className="p-4 md:p-5 md:pt-5">
           <p className="text-[0.88rem] leading-[1.5] text-[var(--color-text-muted)]">&ldquo;<span dangerouslySetInnerHTML={{ __html: item.quote }} />&rdquo;</p>
         </div>
 
-        <div className="p-5 md:flex md:items-center">
+        <div className="p-4 md:flex md:items-center md:p-5">
           <p className="text-[0.82rem] leading-[1.5] text-[var(--color-text)]">
             <span className="font-semibold text-[var(--color-primary)]">Who it&apos;s for: </span>
             <span dangerouslySetInnerHTML={{ __html: item.whoItsFor }} />
@@ -169,34 +173,31 @@ export default function BestWorstEngines({ data }) {
   if (!data) return null;
 
   const isDark = theme === "dark";
+  const sectionBg = generationSectionBg(isDark, true);
+  const title = splitBestWorstEnginesH2(data.h2 || "Best &amp; Worst Engines");
   const items = data.items || [];
   const mainItems = items.filter((item) => !item.fullWidth);
   const wideItems = items.filter((item) => item.fullWidth);
 
   return (
-    <section className="w-full bg-[var(--color-page)] py-8 text-[var(--color-text)] md:py-10">
-      <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-        <h2 className="text-[2.15rem] font-bold leading-[1.1] tracking-normal text-[var(--color-text)] md:text-[3rem]">
-          {data.h2 || "Best &amp; Worst Engines"}
-        </h2>
-        <div className="mt-3">
-          <MStripe />
-        </div>
+    <section className={`w-full text-[var(--color-text)] ${sectionBg}`}>
+      <GenerationSectionHeader title={title} subHeadline={data.subHeadline} isDark={isDark} sectionBg={sectionBg} />
 
-        <div className="mt-6 flex flex-col gap-3 sm:hidden">
+      <div className="relative mx-auto w-full max-w-8xl px-4 pb-5 pt-4 md:px-8 md:pb-6 md:pt-5">
+        <div className="flex flex-col gap-3 sm:hidden">
           {mainItems.map((item) => (
             <MobileCard key={item.slot} item={item} isDark={isDark} />
           ))}
         </div>
 
-        <div className="mt-6 hidden items-stretch gap-4 sm:grid sm:grid-cols-2 lg:grid-cols-5">
+        <div className="hidden items-stretch gap-3 sm:grid sm:grid-cols-2 lg:grid-cols-5">
           {mainItems.map((item) => (
             <Card key={item.slot} item={item} isDark={isDark} />
           ))}
         </div>
 
         {wideItems.length > 0 ? (
-          <div className="mt-4 flex flex-col gap-4">
+          <div className="mt-3 flex flex-col gap-3 md:mt-4">
             {wideItems.map((item) => (
               <OverlookedCard key={item.slot} item={item} isDark={isDark} />
             ))}
