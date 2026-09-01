@@ -18,14 +18,48 @@ const verdictStyles = {
   info: { icon: "info", light: "text-[var(--color-primary)]", dark: "text-[var(--color-chrome-bright)]" },
 };
 
+function resolveVerdictType(verdict = "", explicitType) {
+  if (explicitType && verdictStyles[explicitType]) return explicitType;
+
+  const text = String(verdict).toLowerCase();
+  if (
+    text.includes("high risk") ||
+    text.includes("most expensive") ||
+    text.includes("avoid") ||
+    text.includes("write-off") ||
+    text.includes("scrap")
+  ) {
+    return "danger";
+  }
+  if (
+    text.includes("solid choice") ||
+    text.includes("best petrol") ||
+    text.includes("best diesel") ||
+    text.includes("best value") ||
+    text.includes("manageable")
+  ) {
+    return "success";
+  }
+  if (
+    text.includes("risk vs reward") ||
+    text.includes("borderline") ||
+    text.includes("attention") ||
+    text.includes("enthusiast")
+  ) {
+    return "warning";
+  }
+
+  return "info";
+}
+
 function VerdictPill({ verdictType, text, isDark }) {
-  const style = verdictStyles[verdictType] || verdictStyles.info;
-  const iconColor = isDark ? style.dark : style.light;
-  const textColor = isDark ? "text-white/88" : "text-[var(--color-text)]";
+  const resolvedType = resolveVerdictType(text, verdictType);
+  const style = verdictStyles[resolvedType] || verdictStyles.info;
+  const toneClass = isDark ? style.dark : style.light;
 
   return (
-    <span className={`inline-flex items-start gap-2 text-[0.78rem] leading-[1.25] ${textColor}`}>
-      <GenIcon name={style.icon} className={`mt-0.5 h-4 w-4 shrink-0 ${iconColor}`} />
+    <span className={`inline-flex items-start gap-2 text-[0.78rem] font-semibold leading-[1.25] ${toneClass}`}>
+      <GenIcon name={style.icon} className={`mt-0.5 h-4 w-4 shrink-0 ${toneClass}`} />
       <span dangerouslySetInnerHTML={{ __html: text }} />
     </span>
   );
@@ -41,21 +75,21 @@ function DesktopRow({ row, isDark }) {
 
   return (
     <div
-      className={`grid grid-cols-[110px_100px_1fr_130px_150px_1.4fr] items-center gap-px ${rowClass} border-b px-5 py-3 text-[0.85rem] ${borderBottom} last:border-b-0`}
+      className={`grid grid-cols-[118px_108px_1fr_130px_150px_1.4fr] items-center gap-px ${rowClass} border-b px-5 py-3 text-[0.85rem] ${borderBottom} last:border-b-0`}
     >
-      <span className={`border-r px-3 font-semibold ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.engine }} />
-      <span className={`border-r px-3 ${mutedText} ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.typicalMileage }} />
-      <span className={`border-r px-3 ${mutedText} ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.commonMajorFailure }} />
-      <span className={`border-r px-3 ${mutedText} ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.repairCostSpecialist }} />
-      <span className={`border-r px-3 font-semibold ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.replacementCostRecon }} />
-      <div className="pl-3">
+      <span className={`border-r pr-5 pl-3 font-semibold ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.engine }} />
+      <span className={`border-r pr-3 pl-5 ${mutedText} ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.typicalMileage }} />
+      <span className={`border-r px-4 ${mutedText} ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.commonMajorFailure }} />
+      <span className={`border-r px-4 ${mutedText} ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.repairCostSpecialist }} />
+      <span className={`border-r px-4 font-semibold ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.replacementCostRecon }} />
+      <div className="pl-4">
         <VerdictPill verdictType={row.verdictType} text={row.ownershipVerdict} isDark={isDark} />
       </div>
     </div>
   );
 }
 
-const MOBILE_COLS = "grid-cols-[90px_90px_140px_110px_120px_220px]";
+const MOBILE_COLS = "grid-cols-[98px_98px_140px_110px_120px_220px]";
 
 function MobileRow({ row, isDark }) {
   const rowClass = isDark
@@ -69,12 +103,12 @@ function MobileRow({ row, isDark }) {
     <div
       className={`grid ${MOBILE_COLS} items-center gap-px ${rowClass} border-b px-3 py-3 text-[0.72rem] leading-[1.3] ${borderBottom} last:border-b-0`}
     >
-      <span className={`border-r px-2 font-semibold ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.engine }} />
-      <span className={`border-r px-2 ${mutedText} ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.typicalMileage }} />
-      <span className={`border-r px-2 ${mutedText} ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.commonMajorFailure }} />
-      <span className={`border-r px-2 ${mutedText} ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.repairCostSpecialist }} />
-      <span className={`border-r px-2 font-semibold ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.replacementCostRecon }} />
-      <div className="pl-2">
+      <span className={`border-r pr-4 pl-2 font-semibold ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.engine }} />
+      <span className={`border-r pr-2 pl-4 ${mutedText} ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.typicalMileage }} />
+      <span className={`border-r px-3 ${mutedText} ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.commonMajorFailure }} />
+      <span className={`border-r px-3 ${mutedText} ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.repairCostSpecialist }} />
+      <span className={`border-r px-3 font-semibold ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.replacementCostRecon }} />
+      <div className="pl-3">
         <VerdictPill verdictType={row.verdictType} text={row.ownershipVerdict} isDark={isDark} />
       </div>
     </div>
@@ -89,7 +123,7 @@ export default function OwnershipEconomics({ data }) {
   if (!data) return null;
 
   const isDark = theme === "dark";
-  const sectionBg = generationSectionBg(isDark, false);
+  const sectionBg = generationSectionBg(isDark, true);
   const title = splitOwnershipEconomicsH2(data.h2 || "Ownership Economics");
   const headerBg = tableHeaderClass(isDark);
   const headerDivider = isDark ? "border-[var(--color-page)]/20" : "border-white/25";
@@ -101,9 +135,14 @@ export default function OwnershipEconomics({ data }) {
 
       <div className="relative mx-auto w-full max-w-8xl px-4 pb-5 pt-4 md:px-8 md:pb-6 md:pt-5">
         <div className="hidden overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:block">
-          <div className={`grid grid-cols-[110px_100px_1fr_130px_150px_1.4fr] gap-px rounded-t-md ${headerBg} px-5 py-2.5 text-[0.82rem] font-semibold leading-[1.2]`}>
+          <div className={`grid grid-cols-[118px_108px_1fr_130px_150px_1.4fr] gap-px rounded-t-md ${headerBg} px-5 py-2.5 text-[0.82rem] font-semibold leading-[1.2]`}>
             {data.columns?.map((col, index) => (
-              <span key={col} className={`flex items-center gap-2 border-r px-3 ${headerDivider} last:border-r-0`}>
+              <span
+                key={col}
+                className={`flex items-center gap-2 border-r last:border-r-0 ${
+                  index === 0 ? "pr-5 pl-3" : index === 1 ? "pr-3 pl-5" : "px-4"
+                } ${headerDivider}`}
+              >
                 <GenIcon name={COLUMN_ICONS[index]} className="h-4 w-4 shrink-0" />
                 {col}
               </span>
@@ -120,7 +159,12 @@ export default function OwnershipEconomics({ data }) {
           <div className="min-w-[850px]">
             <div className={`grid ${MOBILE_COLS} gap-px ${headerBg} px-3 py-2.5 text-[0.7rem] font-semibold leading-[1.2]`}>
               {data.columns?.map((col, index) => (
-                <span key={col} className={`flex items-center gap-1.5 border-r px-2 ${headerDivider} last:border-r-0`}>
+                <span
+                  key={col}
+                  className={`flex items-center gap-1.5 border-r last:border-r-0 ${
+                    index === 0 ? "pr-4 pl-2" : index === 1 ? "pr-2 pl-4" : "px-3"
+                  } ${headerDivider}`}
+                >
                   <GenIcon name={COLUMN_ICONS[index]} className="h-3.5 w-3.5 shrink-0" />
                   {col}
                 </span>

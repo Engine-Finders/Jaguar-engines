@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
 import GenIcon from "./GenIcons";
 import HomeIcon from "@/components/home/homeIcons";
@@ -19,7 +18,12 @@ const STAT_ICON_MAP = {
 };
 
 function splitVehicle(vehicle = "") {
-  const match = vehicle.match(/^(.*?)\s((?:E|F|G)\d{2}\b.*)$/);
+  const parenMatch = vehicle.match(/^(.*?)\s*\(([^)]+)\)\s*$/);
+  if (parenMatch) {
+    return { model: parenMatch[1].trim(), chassis: parenMatch[2].trim() };
+  }
+
+  const match = vehicle.match(/^(.*?)\s((?:E|F|G|X)\d{2}\b.*)$/);
   if (!match) return { model: vehicle, chassis: "" };
   return { model: match[1], chassis: match[2] };
 }
@@ -29,32 +33,193 @@ function splitEnquiries(enquiries = "") {
   return { count, label: rest.join(" ") };
 }
 
-function StatCard({ icon, title, children, isDark }) {
+function stripListPrefix(text = "") {
+  return String(text).replace(/^\d+\.\s*/, "");
+}
+
+function splitAverageCost(text = "") {
+  const quoteMatch = text.match(/(\[[^\]]+\])/);
+  const quote = quoteMatch ? quoteMatch[1] : "";
+  const main = text.replace(/\s*\[[^\]]+\]\s*/g, " ").trim();
+  const reconMatch = main.match(/^(.+?)\s+(reconditioned.*)$/i);
+
+  if (reconMatch) {
+    return { price: reconMatch[1].trim(), note: reconMatch[2].trim(), quote };
+  }
+
+  return { price: main, note: "", quote };
+}
+
+function StatCardIcon({ icon, isDark, compact = false, className = "" }) {
   const homeIcon = STAT_ICON_MAP[icon] || "real-inquiries";
+  const sizeClass = compact ? "h-8 w-8" : "h-9 w-9";
+  const iconSizeClass = compact ? "h-5 w-5" : "h-6 w-6";
 
   return (
-    <div className="glass-panel flex flex-col gap-2 rounded-md p-3">
-      <div className="flex items-center gap-2">
-        <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)]">
-          <HomeIcon name={homeIcon} isDark className="h-6 w-6 object-contain" />
-        </span>
-        <p className="text-[0.68rem] font-semibold uppercase leading-[1.25] tracking-wide text-[var(--color-primary)]">{title}</p>
+    <span className={`flex shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] ${sizeClass} ${className}`}>
+      <HomeIcon name={homeIcon} isDark={isDark} className={`${iconSizeClass} object-contain`} />
+    </span>
+  );
+}
+
+function StatCard({ icon, title, children, isDark }) {
+  return (
+    <div className="glass-panel flex h-full flex-col gap-2 rounded-md p-3">
+      <div className="flex items-start gap-2">
+        <StatCardIcon icon={icon} isDark={isDark} compact />
+        <p className="min-w-0 flex-1 text-[0.62rem] font-semibold uppercase leading-[1.25] tracking-wide text-[var(--color-primary)] md:text-[0.68rem]">
+          {title}
+        </p>
       </div>
-      {children}
+      <div className="min-h-0 flex-1">{children}</div>
     </div>
   );
 }
 
-function RankedList({ items }) {
+function RankedList({ items, compact = false }) {
   return (
-    <ol className="flex flex-col gap-1">
+    <ol className="flex flex-col gap-1.5">
       {items?.map((item, index) => (
-        <li key={item} className="flex gap-1.5 text-[0.74rem] leading-[1.3] text-[var(--color-text)]">
-          <span className="font-semibold text-[var(--color-primary)]">{index + 1}.</span>
-          <span dangerouslySetInnerHTML={{ __html: item }} />
+        <li
+          key={`${item}-${index}`}
+          className={`flex gap-1.5 leading-[1.3] text-[var(--color-text)] ${compact ? "text-[0.68rem]" : "text-[0.74rem]"}`}
+        >
+          <span className="shrink-0 font-semibold text-[var(--color-primary)]">{index + 1}.</span>
+          <span dangerouslySetInnerHTML={{ __html: stripListPrefix(item) }} />
         </li>
       ))}
     </ol>
+  );
+}
+
+function AverageCostCard({ value, note }) {
+  const { price, note: parsedNote, quote } = splitAverageCost(value);
+  const displayNote = note || parsedNote;
+
+  return (
+    <div className="flex h-full flex-col justify-between gap-2">
+      <div>
+        <p
+          className="text-[1.35rem] font-bold leading-[1.1] text-[var(--color-text)] md:text-[0.76rem] md:font-semibold"
+          dangerouslySetInnerHTML={{ __html: price }}
+        />
+        {displayNote ? (
+          <p
+            className="mt-1 text-[0.64rem] leading-[1.3] text-[var(--color-text-soft)] md:mt-0"
+            dangerouslySetInnerHTML={{ __html: displayNote }}
+          />
+        ) : null}
+      </div>
+      {quote ? (
+        <p className="text-[0.62rem] font-semibold text-[var(--color-primary)] md:text-[0.64rem]" dangerouslySetInnerHTML={{ __html: quote }} />
+      ) : null}
+    </div>
+  );
+}
+
+function LiveFeedHeader({ isDark, feedBorder, feedText }) {
+  return (
+    <div className={`flex items-center gap-2 border-b px-4 py-3 text-[0.82rem] font-semibold uppercase tracking-wide ${feedBorder} ${feedText}`}>
+      <HomeIcon name="live" isDark={isDark} className="h-5 w-5 object-contain" />
+      Live Feed
+    </div>
+  );
+}
+
+function MobileLiveFeedRow({ row, feedBorder, feedText, feedMuted, feedSoft, showUpdated }) {
+  const { model, chassis } = splitVehicle(row.vehicle);
+  const { count, label } = splitEnquiries(row.enquiries);
+
+  return (
+    <div className={`grid grid-cols-[minmax(0,1.15fr)_minmax(0,0.8fr)_minmax(0,0.95fr)_minmax(0,0.8fr)] items-stretch text-[0.68rem] ${feedText}`}>
+      <div className={`border-r px-2.5 py-3 ${feedBorder}`}>
+        <div className="min-w-0">
+          <p className="font-semibold leading-[1.25]" dangerouslySetInnerHTML={{ __html: model }} />
+          {chassis ? <p className={`mt-0.5 text-[0.6rem] ${feedSoft}`} dangerouslySetInnerHTML={{ __html: chassis }} /> : null}
+        </div>
+      </div>
+
+      <div className={`flex items-center gap-1 border-r px-2 py-3 ${feedBorder} ${feedMuted}`}>
+        <GenIcon name="pin" className="h-3 w-3 shrink-0 text-[var(--color-primary)]" />
+        <span className="min-w-0 break-words" dangerouslySetInnerHTML={{ __html: row.location }} />
+      </div>
+
+      <div className={`flex items-center gap-1 border-r px-2 py-3 ${feedBorder} ${feedMuted}`}>
+        <GenIcon name="warning" className="h-3 w-3 shrink-0 text-[var(--color-primary)]" />
+        <span className="min-w-0 break-words leading-[1.25]" dangerouslySetInnerHTML={{ __html: row.issue }} />
+      </div>
+
+      <div className="flex flex-col justify-center px-2 py-3 leading-[1.2]">
+        <p className="text-[0.95rem] font-bold leading-none" dangerouslySetInnerHTML={{ __html: count }} />
+        {label ? <p className={`text-[0.58rem] ${feedSoft}`} dangerouslySetInnerHTML={{ __html: label }} /> : null}
+        {showUpdated && row.updated ? (
+          <div className={`mt-1.5 flex items-center gap-1 text-[0.56rem] ${feedSoft}`}>
+            <GenIcon name="refresh" className="h-3 w-3 shrink-0 text-[var(--color-primary)]" />
+            <span dangerouslySetInnerHTML={{ __html: row.updated }} />
+          </div>
+        ) : null}
+      </div>
+    </div>
+  );
+}
+
+function DesktopLiveFeed({ liveFeed, isDark, feedBg, feedBorder, feedText, feedMuted, feedSoft, feedHeaderBg, feedHeaderDivider }) {
+  return (
+    <div className={`overflow-hidden rounded-md border shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur ${feedBorder} ${feedBg}`}>
+      <LiveFeedHeader isDark={isDark} feedBorder={feedBorder} feedText={feedText} />
+
+      <div className="overflow-x-auto">
+        <div className="min-w-[560px] md:min-w-0">
+          <div className={`grid grid-cols-[1.3fr_0.9fr_1fr_0.7fr] gap-2 border-b px-4 py-2 text-[0.68rem] font-semibold uppercase tracking-wide ${feedBorder} ${feedHeaderBg}`}>
+            <span className={`border-r pr-2 ${feedHeaderDivider}`}>Vehicle</span>
+            <span className={`border-r pr-2 ${feedHeaderDivider}`}>Location</span>
+            <span className={`border-r pr-2 ${feedHeaderDivider}`}>Issue</span>
+            <span>Enquiries</span>
+          </div>
+
+          {liveFeed.map((row, index) => {
+            const { model, chassis } = splitVehicle(row.vehicle);
+            const { count, label } = splitEnquiries(row.enquiries);
+
+            return (
+              <div
+                key={`${row.vehicle}-${row.location}`}
+                className={`grid grid-cols-[1.3fr_0.9fr_1fr_0.7fr] items-center gap-2 px-4 py-3 text-[0.8rem] ${feedText} ${
+                  index === liveFeed.length - 1 ? "" : `border-b ${feedBorder}`
+                }`}
+              >
+                <div className="min-w-0">
+                  <p className={`font-semibold leading-[1.25] ${feedText}`} dangerouslySetInnerHTML={{ __html: model }} />
+                  {chassis ? <p className={`mt-0.5 text-[0.7rem] ${feedSoft}`} dangerouslySetInnerHTML={{ __html: chassis }} /> : null}
+                </div>
+
+                <div className={`flex items-center gap-1.5 ${feedMuted}`}>
+                  <GenIcon name="pin" className="h-3.5 w-3.5 shrink-0 text-[var(--color-primary)]" />
+                  <span dangerouslySetInnerHTML={{ __html: row.location }} />
+                </div>
+
+                <div className={`flex items-center gap-1.5 ${feedMuted}`}>
+                  <GenIcon name="warning" className="h-3.5 w-3.5 shrink-0 text-[var(--color-primary)]" />
+                  <span dangerouslySetInnerHTML={{ __html: row.issue }} />
+                </div>
+
+                <div className="leading-[1.25]">
+                  <p className={`font-semibold ${feedText}`} dangerouslySetInnerHTML={{ __html: count }} />
+                  {label ? <p className={`text-[0.7rem] ${feedSoft}`} dangerouslySetInnerHTML={{ __html: label }} /> : null}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {liveFeed[0]?.updated ? (
+        <div className={`flex items-center justify-end gap-1.5 border-t px-4 py-2.5 text-[0.72rem] ${feedBorder} ${feedSoft}`}>
+          <GenIcon name="refresh" className="h-3.5 w-3.5 shrink-0 text-[var(--color-primary)]" />
+          <span dangerouslySetInnerHTML={{ __html: liveFeed[0].updated }} />
+        </div>
+      ) : null}
+    </div>
   );
 }
 
@@ -70,97 +235,89 @@ export default function MarketIntelligence({ data }) {
   const feedText = isDark ? "text-white" : "text-[var(--color-text)]";
   const feedMuted = isDark ? "text-white/70" : "text-[var(--color-text-muted)]";
   const feedSoft = isDark ? "text-white/50" : "text-[var(--color-text-soft)]";
-  const feedImageBg = isDark ? "bg-white/5" : "bg-[var(--color-page-soft)]";
   const feedHeaderBg = tableHeaderClass(isDark);
   const feedHeaderDivider = isDark ? "border-[var(--color-page)]/20" : "border-white/25";
 
+  const statCards = (
+    <>
+      <StatCard icon="chart" title={data.engineCardTitle || "Most Requested Engines (2025)"} isDark={isDark}>
+        <RankedList items={data.mostRequestedEngines} compact />
+      </StatCard>
+      <StatCard icon="car" title={data.variantCardTitle || "Most Requested Variants"} isDark={isDark}>
+        <RankedList items={data.mostRequestedVariants} compact />
+      </StatCard>
+      <StatCard icon="dollar" title={data.costCardTitle || "Average Replacement Cost"} isDark={isDark}>
+        <AverageCostCard value={data.averageReplacementCost} note={data.averageReplacementCostNote} />
+      </StatCard>
+      <StatCard icon="warning" title={data.failureCardTitle || "Most Common Failures"} isDark={isDark}>
+        <RankedList items={data.mostCommonFailures} compact />
+      </StatCard>
+    </>
+  );
+
   return (
     <section className={`w-full overflow-x-hidden text-[var(--color-text)] ${sectionBg}`}>
-      <GenerationSectionHeader title={title} subHeadline={data.subHeadline} isDark={isDark} sectionBg={sectionBg} />
+      <GenerationSectionHeader title={title} subHeadline={data.subHeadline} isDark={isDark} sectionBg={sectionBg} showHeaderImage={false} />
 
       <div className="relative mx-auto w-full max-w-8xl px-4 pb-5 pt-4 md:px-8 md:pb-6 md:pt-5">
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-[1.35fr_1fr] lg:items-start lg:gap-6">
-          <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
-            <StatCard icon="chart" title="Most Requested E90 Engines (2025)" isDark={isDark}>
-              <RankedList items={data.mostRequestedEngines} />
-            </StatCard>
-            <StatCard icon="car" title="Most Requested E90 Variants" isDark={isDark}>
-              <RankedList items={data.mostRequestedVariants} />
-            </StatCard>
-            <StatCard icon="dollar" title="Average E90 Replacement Cost" isDark={isDark}>
-              <p className="text-[0.72rem] font-semibold leading-[1.35] text-[var(--color-text)] md:text-[0.76rem]" dangerouslySetInnerHTML={{ __html: data.averageReplacementCost }} />
-              {data.averageReplacementCostNote ? (
-                <p className="text-[0.64rem] leading-[1.3] text-[var(--color-text-soft)]" dangerouslySetInnerHTML={{ __html: data.averageReplacementCostNote }} />
-              ) : null}
-            </StatCard>
-            <StatCard icon="warning" title="Most Common E90 Failures" isDark={isDark}>
-              <RankedList items={data.mostCommonFailures} />
-            </StatCard>
-          </div>
+        {/* Mobile: 2x2 stat grid + full-width live feed below */}
+        <div className="flex flex-col gap-3 md:hidden">
+          <div className="grid grid-cols-2 gap-3">{statCards}</div>
 
           {data.liveFeed?.length > 0 ? (
             <div className={`overflow-hidden rounded-md border shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur ${feedBorder} ${feedBg}`}>
-              <div className={`flex items-center gap-2 border-b px-4 py-3 text-[0.85rem] font-semibold uppercase tracking-wide ${feedBorder} ${feedText}`}>
-                <HomeIcon name="live" isDark className="h-5 w-5 object-contain" />
-                Live Feed
+              <LiveFeedHeader isDark={isDark} feedBorder={feedBorder} feedText={feedText} />
+              <div className="divide-y divide-[var(--color-border)]">
+                {data.liveFeed.map((row) => (
+                  <MobileLiveFeedRow
+                    key={`${row.vehicle}-${row.location}`}
+                    row={row}
+                    feedBorder={feedBorder}
+                    feedText={feedText}
+                    feedMuted={feedMuted}
+                    feedSoft={feedSoft}
+                    showUpdated
+                  />
+                ))}
               </div>
-
-              <div className="overflow-x-auto">
-                <div className="min-w-[560px] md:min-w-0">
-                  <div className={`grid grid-cols-[1.3fr_0.9fr_1fr_0.7fr] gap-2 border-b px-4 py-2 text-[0.68rem] font-semibold uppercase tracking-wide ${feedBorder} ${feedHeaderBg}`}>
-                    <span className={`border-r pr-2 ${feedHeaderDivider}`}>Vehicle</span>
-                    <span className={`border-r pr-2 ${feedHeaderDivider}`}>Location</span>
-                    <span className={`border-r pr-2 ${feedHeaderDivider}`}>Issue</span>
-                    <span>Enquiries</span>
-                  </div>
-
-                  {data.liveFeed.map((row, index) => {
-                    const { model, chassis } = splitVehicle(row.vehicle);
-                    const { count, label } = splitEnquiries(row.enquiries);
-                    return (
-                      <div
-                        key={`${row.vehicle}-${row.location}`}
-                        className={`grid grid-cols-[1.3fr_0.9fr_1fr_0.7fr] items-center gap-2 px-4 py-3 text-[0.8rem] ${feedText} ${
-                          index === data.liveFeed.length - 1 ? "" : `border-b ${feedBorder}`
-                        }`}
-                      >
-                        <div className="flex items-center gap-2.5">
-                          <span className={`relative h-8 w-11 shrink-0 overflow-hidden rounded ${feedImageBg}`}>
-                            <Image src="/live_feed.webp" alt={model} fill className="object-cover" sizes="44px" />
-                          </span>
-                          <div className="min-w-0">
-                            <p className={`truncate font-semibold ${feedText}`} dangerouslySetInnerHTML={{ __html: model }} />
-                            {chassis ? <p className={`truncate text-[0.7rem] ${feedSoft}`} dangerouslySetInnerHTML={{ __html: chassis }} /> : null}
-                          </div>
-                        </div>
-
-                        <div className={`flex items-center gap-1.5 ${feedMuted}`}>
-                          <GenIcon name="pin" className="h-3.5 w-3.5 shrink-0 text-[var(--color-primary)]" />
-                          <span dangerouslySetInnerHTML={{ __html: row.location }} />
-                        </div>
-
-                        <div className={`flex items-center gap-1.5 ${feedMuted}`}>
-                          <GenIcon name="warning" className="h-3.5 w-3.5 shrink-0 text-[var(--color-primary)]" />
-                          <span dangerouslySetInnerHTML={{ __html: row.issue }} />
-                        </div>
-
-                        <div className="leading-[1.25]">
-                          <p className={`font-semibold ${feedText}`} dangerouslySetInnerHTML={{ __html: count }} />
-                          {label ? <p className={`text-[0.7rem] ${feedSoft}`} dangerouslySetInnerHTML={{ __html: label }} /> : null}
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-
-              {data.liveFeed[0]?.updated ? (
-                <div className={`flex items-center justify-end gap-1.5 border-t px-4 py-2.5 text-[0.72rem] ${feedBorder} ${feedSoft}`}>
-                  <GenIcon name="refresh" className="h-3.5 w-3.5 shrink-0 text-[var(--color-primary)]" />
-                  <span dangerouslySetInnerHTML={{ __html: data.liveFeed[0].updated }} />
-                </div>
-              ) : null}
             </div>
+          ) : null}
+        </div>
+
+        {/* Desktop: stats row + live feed sidebar */}
+        <div className="hidden gap-4 lg:grid lg:grid-cols-[1.35fr_1fr] lg:items-start lg:gap-6">
+          <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">{statCards}</div>
+
+          {data.liveFeed?.length > 0 ? (
+            <DesktopLiveFeed
+              liveFeed={data.liveFeed}
+              isDark={isDark}
+              feedBg={feedBg}
+              feedBorder={feedBorder}
+              feedText={feedText}
+              feedMuted={feedMuted}
+              feedSoft={feedSoft}
+              feedHeaderBg={feedHeaderBg}
+              feedHeaderDivider={feedHeaderDivider}
+            />
+          ) : null}
+        </div>
+
+        {/* Tablet: stats grid only (no side-by-side live feed) */}
+        <div className="hidden md:flex md:flex-col md:gap-4 lg:hidden">
+          <div className="grid grid-cols-2 gap-3">{statCards}</div>
+          {data.liveFeed?.length > 0 ? (
+            <DesktopLiveFeed
+              liveFeed={data.liveFeed}
+              isDark={isDark}
+              feedBg={feedBg}
+              feedBorder={feedBorder}
+              feedText={feedText}
+              feedMuted={feedMuted}
+              feedSoft={feedSoft}
+              feedHeaderBg={feedHeaderBg}
+              feedHeaderDivider={feedHeaderDivider}
+            />
           ) : null}
         </div>
       </div>

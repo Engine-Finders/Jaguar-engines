@@ -16,7 +16,11 @@ import {
 
 const HEADER_IMAGE = "/home-image/sec2-bg.webp";
 const DESKTOP_COLS = "grid-cols-[0.95fr_0.6fr_1.05fr_0.8fr_0.9fr_1.15fr_1fr_1.05fr_1fr_1.05fr]";
-const MOBILE_COLS = "grid-cols-[100px_70px_90px_110px_120px_110px_130px]";
+const MOBILE_COLS =
+  "grid-cols-[minmax(112px,1.15fr)_minmax(84px,0.9fr)_minmax(92px,0.95fr)_minmax(100px,1fr)_minmax(156px,1.45fr)_minmax(108px,1.05fr)_minmax(144px,1.15fr)]";
+const MOBILE_MIN_WIDTH = "min-w-[820px]";
+const MOBILE_CELL = "min-w-0 break-words px-2.5 py-2.5 leading-[1.35]";
+const MOBILE_HEADER_CELL = "min-w-0 break-words px-2.5 py-2.5 leading-[1.3]";
 const MOBILE_HEADERS = ["Engine Code", "Fuel", "Power", "Years", "Reliability", "Enquiries", "Avg. Recon Cost"];
 
 function FuelIcon({ fuel = "", className }) {
@@ -122,26 +126,26 @@ function MobileRow({ engine, isDark }) {
 
   return (
     <div
-      className={`grid ${MOBILE_COLS} items-center gap-px ${rowClass} px-3 py-1.5 text-[0.68rem] leading-[1.25] border-b ${borderBottom} last:border-b-0`}
+      className={`grid ${MOBILE_COLS} items-start gap-px ${rowClass} text-[0.7rem] border-b ${borderBottom} last:border-b-0`}
     >
-      <span className={`px-1.5 border-r ${cellDivider}`}>
-        <span className="block font-semibold" dangerouslySetInnerHTML={{ __html: engine.engineCode }} />
-        <span className={`block text-[0.62rem] ${softText}`} dangerouslySetInnerHTML={{ __html: engine.family }} />
+      <span className={`${MOBILE_CELL} border-r ${cellDivider}`}>
+        <span className="block font-semibold [overflow-wrap:anywhere]" dangerouslySetInnerHTML={{ __html: engine.engineCode }} />
+        <span className={`mt-0.5 block text-[0.64rem] [overflow-wrap:anywhere] ${softText}`} dangerouslySetInnerHTML={{ __html: engine.family }} />
       </span>
-      <span className={`flex items-center gap-1 px-1.5 ${mutedText} border-r ${cellDivider}`}>
-        <FuelIcon fuel={engine.fuel} className="h-3.5 w-3.5 shrink-0" />
-        <span dangerouslySetInnerHTML={{ __html: engine.fuel }} />
+      <span className={`flex items-start gap-1.5 ${MOBILE_CELL} ${mutedText} border-r ${cellDivider}`}>
+        <FuelIcon fuel={engine.fuel} className="mt-0.5 h-3.5 w-3.5 shrink-0" />
+        <span className="min-w-0 [overflow-wrap:anywhere]" dangerouslySetInnerHTML={{ __html: engine.fuel }} />
       </span>
-      <span className={`px-1.5 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: engine.power }} />
-      <span className={`px-1.5 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: engine.years }} />
-      <span className={`flex flex-col items-start gap-1 px-1.5 border-r ${cellDivider}`}>
-        <Stars value={engine.reliability} className="text-[0.72rem]" />
+      <span className={`${MOBILE_CELL} ${mutedText} border-r ${cellDivider} [overflow-wrap:anywhere]`} dangerouslySetInnerHTML={{ __html: engine.power }} />
+      <span className={`${MOBILE_CELL} ${mutedText} border-r ${cellDivider} [overflow-wrap:anywhere]`} dangerouslySetInnerHTML={{ __html: engine.years }} />
+      <span className={`flex min-w-0 flex-col items-start gap-1 ${MOBILE_CELL} border-r ${cellDivider}`}>
+        <Stars value={engine.reliability} className="text-[0.72rem] [overflow-wrap:anywhere]" />
         <GenBadge tag={engine.reliabilityTag} isDark={isDark} />
       </span>
-      <span className={`px-1.5 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: engine.enquiries }} />
-      <span className="flex items-center gap-1 px-1.5 font-semibold">
-        <span dangerouslySetInnerHTML={{ __html: engine.avgReconCost }} />
-        <GenIcon name="chevron" className="h-3.5 w-3.5 shrink-0 text-[var(--color-primary)]" />
+      <span className={`${MOBILE_CELL} ${mutedText} border-r ${cellDivider} [overflow-wrap:anywhere]`} dangerouslySetInnerHTML={{ __html: engine.enquiries }} />
+      <span className={`flex min-w-0 items-start gap-1.5 ${MOBILE_CELL} font-semibold`}>
+        <span className="min-w-0 flex-1 [overflow-wrap:anywhere]" dangerouslySetInnerHTML={{ __html: engine.avgReconCost }} />
+        <GenIcon name="chevron" className="mt-0.5 h-3.5 w-3.5 shrink-0 text-[var(--color-primary)]" />
       </span>
     </div>
   );
@@ -177,10 +181,10 @@ export default function EngineDatabase({ data }) {
         </div>
 
         <div className="overflow-x-auto overscroll-x-contain rounded-md border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:hidden">
-          <div className="min-w-[730px]">
-            <div className={`grid ${MOBILE_COLS} gap-px ${headerBg} px-3 py-2 text-[0.68rem] font-semibold leading-[1.2]`}>
+          <div className={MOBILE_MIN_WIDTH}>
+            <div className={`grid ${MOBILE_COLS} gap-px ${headerBg} text-[0.7rem] font-semibold`}>
               {MOBILE_HEADERS.map((col) => (
-                <span key={col} className={`border-r px-1.5 ${headerDivider} last:border-r-0`}>{col}</span>
+                <span key={col} className={`border-r ${MOBILE_HEADER_CELL} ${headerDivider} last:border-r-0`}>{col}</span>
               ))}
             </div>
             <div className={bodyWrapperBg}>

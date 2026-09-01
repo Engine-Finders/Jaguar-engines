@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
 import GenIcon from "./GenIcons";
 import GenerationSectionHeader from "./GenerationSectionHeader";
-import { generationSectionBg, indexBadgeClass, splitCommonProblemsH2 } from "./generationSection";
+import { generationSectionBg, primaryBadgeClass, splitCommonProblemsH2 } from "./generationSection";
 
 function TieredCostTable({ tiers, isDark }) {
   if (!tiers?.length) return null;
@@ -57,6 +57,33 @@ function splitTitle(title = "") {
   return { code: title.slice(0, spaceIndex), name: title.slice(spaceIndex + 1) };
 }
 
+function ctaLabel(cta) {
+  if (!cta?.label) return "";
+  return cta.label.replace(/\s*→\s*$/, "").trim();
+}
+
+function hasCta(cta) {
+  return Boolean(ctaLabel(cta));
+}
+
+function ProblemCta({ cta }) {
+  const label = ctaLabel(cta);
+  if (!label) return null;
+
+  return (
+    <a
+      href={cta.href || "/quote"}
+      className="btn-cta flex h-11 w-full items-center rounded-md px-4 text-[var(--color-cta-text)] no-underline hover:text-[var(--color-btn-hover-text)]"
+    >
+      <span
+        className="flex-1 text-center text-[0.8rem] font-semibold text-inherit [&_a]:text-inherit [&_a]:no-underline"
+        dangerouslySetInnerHTML={{ __html: label }}
+      />
+      <GenIcon name="arrow" className="h-4 w-4 shrink-0 text-inherit" />
+    </a>
+  );
+}
+
 function RiskBadge({ riskLevel }) {
   if (!riskLevel) return null;
   const isHigh = riskLevel.toLowerCase().includes("high");
@@ -72,29 +99,106 @@ function RiskBadge({ riskLevel }) {
   );
 }
 
+function ProblemDetailFields({ problem, compact = false }) {
+  const textClass = compact ? "text-[0.68rem] leading-[1.35]" : "text-[0.8rem] leading-[1.45]";
+  const labelClass = compact ? "text-[0.68rem]" : "text-[0.8rem]";
+
+  return (
+    <div className={`flex flex-col ${compact ? "gap-2" : "gap-2.5"} ${labelClass}`}>
+      <div>
+        <p className="flex items-center gap-1.5 font-semibold text-[var(--color-primary)]">
+          <GenIcon name="car" className="h-3.5 w-3.5" />
+          Affected models:
+        </p>
+        <p className={`mt-0.5 text-[var(--color-text-muted)] ${textClass}`} dangerouslySetInnerHTML={{ __html: problem.affectedModels }} />
+      </div>
+      <div>
+        <p className="flex items-center gap-1.5 font-semibold text-[var(--color-primary)]">
+          <GenIcon name="gauge" className="h-3.5 w-3.5" />
+          Typical failure mileage:
+        </p>
+        <p className={`mt-0.5 text-[var(--color-text-muted)] ${textClass}`} dangerouslySetInnerHTML={{ __html: problem.typicalFailureMileage }} />
+      </div>
+      <div>
+        <p className="flex items-center gap-1.5 font-semibold text-[var(--color-primary)]">
+          <GenIcon name="wrench" className="h-3.5 w-3.5" />
+          Root cause:
+        </p>
+        <p className={`mt-0.5 text-[var(--color-text-muted)] ${textClass}`} dangerouslySetInnerHTML={{ __html: problem.rootCause }} />
+      </div>
+    </div>
+  );
+}
+
+function ProblemExpandedContent({ problem, isDark }) {
+  return (
+    <>
+      <div className="border-b border-[var(--color-border)] px-4 py-3">
+        <ProblemDetailFields problem={problem} />
+      </div>
+
+      {problem.tieredCosts?.length > 0 ? (
+        <div className="border-b border-[var(--color-border)] px-4 py-3">
+          <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-text-soft)]">
+            Tiered Cost Table
+          </p>
+          <div className="mt-2">
+            <TieredCostTable tiers={problem.tieredCosts} isDark={isDark} />
+          </div>
+        </div>
+      ) : null}
+
+      {problem.recommendation ? (
+        <div className="border-b border-[var(--color-border)] px-4 py-3">
+          <p className="flex items-center gap-1.5 text-[0.76rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
+            <GenIcon name="shield" className="h-3.5 w-3.5" />
+            Our Recommendation
+          </p>
+          <p className="mt-1 text-[0.8rem] leading-[1.45] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.recommendation }} />
+        </div>
+      ) : null}
+
+      {hasCta(problem.cta) ? (
+        <div className="px-4 py-4">
+          <ProblemCta cta={problem.cta} />
+        </div>
+      ) : null}
+    </>
+  );
+}
+
 function AccordionCard({ problem, isDark, isOpen, onToggle }) {
   return (
     <div className="glass-panel overflow-hidden rounded-md">
-      <button type="button" onClick={onToggle} aria-expanded={isOpen} className="flex w-full gap-3 py-3 pr-3 text-left">
-        <span className="relative h-20 w-20 shrink-0 overflow-hidden">
-          <Image src="/e90/section6.webp" alt={problem.title} fill className="object-cover object-[center_20%] scale-125" sizes="80px" />
-        </span>
+      <div className="flex">
+        <div className="relative w-[92px] shrink-0 self-stretch border-r border-[var(--color-border)]">
+          <Image
+            src="/e90/section6.webp"
+            alt={problem.title}
+            fill
+            className="object-cover object-[center_20%]"
+            sizes="92px"
+          />
+        </div>
 
-        <div className="min-w-0 flex-1">
+        <button type="button" onClick={onToggle} aria-expanded={isOpen} className="flex min-w-0 flex-1 flex-col gap-2 py-3 pr-3 pl-3 text-left">
           <div className="flex items-start justify-between gap-2">
-            <div className="flex min-w-0 items-center gap-2">
-              <span className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-md text-[0.7rem] font-bold ${indexBadgeClass(isDark)}`}>
+            <div className="flex min-w-0 items-start gap-2">
+              <span className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-sm text-[0.68rem] font-bold ${primaryBadgeClass(isDark)}`}>
                 {String(problem.id).padStart(2, "0")}
               </span>
-              <p className="min-w-0 text-[0.88rem] font-bold leading-tight text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: problem.title }} />
+              <p
+                className="min-w-0 text-[0.86rem] font-bold leading-[1.25] text-[var(--color-text)]"
+                dangerouslySetInnerHTML={{ __html: problem.title }}
+              />
             </div>
             <GenIcon
               name="chevronDown"
-              className={`h-4 w-4 shrink-0 text-[var(--color-primary)] transition-transform ${isOpen ? "rotate-180" : ""}`}
+              className={`mt-0.5 h-4 w-4 shrink-0 text-[var(--color-primary)] transition-transform ${isOpen ? "rotate-180" : ""}`}
             />
           </div>
 
-          <div className="mt-2 grid grid-cols-2 divide-x divide-[var(--color-border)] text-[0.7rem]">
+          <div className="grid grid-cols-2 divide-x divide-[var(--color-border)] text-[0.68rem] leading-[1.35]">
             <div className="flex items-start gap-1.5 pr-2">
               <GenIcon name="car" className="mt-0.5 h-3.5 w-3.5 shrink-0 text-[var(--color-primary)]" />
               <span className="text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.affectedModels }} />
@@ -105,43 +209,19 @@ function AccordionCard({ problem, isDark, isOpen, onToggle }) {
             </div>
           </div>
 
-          <div className="mt-2 flex items-center gap-1.5">
+          <div className="flex items-start gap-2">
             <RiskBadge riskLevel={problem.riskLevel} />
-            <span className="min-w-0 flex-1 truncate text-[0.7rem] leading-[1.3] text-[var(--color-text-soft)]" dangerouslySetInnerHTML={{ __html: problem.rootCause }} />
+            <span
+              className="min-w-0 flex-1 text-[0.68rem] leading-[1.35] text-[var(--color-text-soft)] line-clamp-2"
+              dangerouslySetInnerHTML={{ __html: problem.rootCause }}
+            />
           </div>
-        </div>
-      </button>
+        </button>
+      </div>
 
       {isOpen ? (
         <div className="border-t border-[var(--color-border)]">
-          <div className="border-b border-[var(--color-border)] px-4 py-3">
-            <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-text-soft)]">
-              Tiered Cost Table
-            </p>
-            <TieredCostTable tiers={problem.tieredCosts} isDark={isDark} />
-          </div>
-
-          {problem.recommendation ? (
-            <div className="border-b border-[var(--color-border)] px-4 py-3">
-              <p className="flex items-center gap-1.5 text-[0.76rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
-                <GenIcon name="shield" className="h-3.5 w-3.5" />
-                Our Recommendation
-              </p>
-              <p className="mt-1 text-[0.8rem] leading-[1.45] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.recommendation }} />
-            </div>
-          ) : null}
-
-          {problem.cta ? (
-            <div className="px-4 py-4">
-              <a
-                href="/quote"
-                className="btn-cta flex h-11 w-full items-center rounded-md px-4"
-              >
-                <span className="flex-1 text-center text-[0.8rem] font-semibold" dangerouslySetInnerHTML={{ __html: problem.cta.label.replace(/\s*→\s*$/, "") }} />
-                <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
-              </a>
-            </div>
-          ) : null}
+          <ProblemExpandedContent problem={problem} isDark={isDark} />
         </div>
       ) : null}
     </div>
@@ -158,19 +238,12 @@ function ProblemCard({ problem, isDark }) {
         <div className="relative z-10 flex max-w-[62%] flex-col gap-2.5">
           <div>
             <div className="flex items-center gap-2">
-              <span className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-md text-[0.8rem] font-bold ${indexBadgeClass(isDark)}`}>
+              <span className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-sm text-[0.8rem] font-bold ${primaryBadgeClass(isDark)}`}>
                 {String(problem.id).padStart(2, "0")}
               </span>
               <p className="text-[1rem] font-bold leading-tight text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: code }} />
             </div>
             {name ? <p className="mt-1 text-[1rem] font-bold leading-tight text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: name }} /> : null}
-          </div>
-          <div className="text-[0.8rem]">
-            <p className="flex items-center gap-1.5 font-semibold text-[var(--color-primary)]">
-              <GenIcon name="clock" className="h-3.5 w-3.5" />
-              Affected models:
-            </p>
-            <p className="mt-0.5 text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.affectedModels }} />
           </div>
         </div>
         <div className="absolute right-0 top-0 h-full w-[42%] overflow-hidden rounded-bl-md">
@@ -181,30 +254,21 @@ function ProblemCard({ problem, isDark }) {
       </div>
 
       {/* Info list */}
-      <div className="flex flex-col gap-2.5 px-4 py-3 text-[0.8rem]">
-        <div>
-          <p className="flex items-center gap-1.5 font-semibold text-[var(--color-primary)]">
-            <GenIcon name="clock" className="h-3.5 w-3.5" />
-            Typical failure mileage:
-          </p>
-          <p className="mt-0.5 text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.typicalFailureMileage }} />
-        </div>
-        <div>
-          <p className="flex items-center gap-1.5 font-semibold text-[var(--color-primary)]">
-            <GenIcon name="wrench" className="h-3.5 w-3.5" />
-            Root cause:
-          </p>
-          <p className="mt-0.5 leading-[1.45] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.rootCause }} />
-        </div>
+      <div className="px-4 py-3">
+        <ProblemDetailFields problem={problem} />
       </div>
 
       {/* Tiered cost table */}
-      <div className="border-t border-[var(--color-border)] px-4 py-3">
-        <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-text-soft)]">
-          Tiered Cost Table
-        </p>
-        <TieredCostTable tiers={problem.tieredCosts} isDark={isDark} />
-      </div>
+      {problem.tieredCosts?.length > 0 ? (
+        <div className="border-t border-[var(--color-border)] px-4 py-3">
+          <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-text-soft)]">
+            Tiered Cost Table
+          </p>
+          <div className="mt-2">
+            <TieredCostTable tiers={problem.tieredCosts} isDark={isDark} />
+          </div>
+        </div>
+      ) : null}
 
       {problem.recommendation ? (
         <div className="border-t border-[var(--color-border)] px-4 py-3">
@@ -216,15 +280,9 @@ function ProblemCard({ problem, isDark }) {
         </div>
       ) : null}
 
-      {problem.cta ? (
+      {hasCta(problem.cta) ? (
         <div className="mt-auto border-t border-[var(--color-border)] px-4 py-4">
-          <a
-            href="/quote"
-            className="btn-cta flex h-11 w-full items-center rounded-md px-4"
-          >
-            <span className="flex-1 text-center text-[0.8rem] font-semibold" dangerouslySetInnerHTML={{ __html: problem.cta.label.replace(/\s*→\s*$/, "") }} />
-            <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
-          </a>
+          <ProblemCta cta={problem.cta} />
         </div>
       ) : null}
     </div>

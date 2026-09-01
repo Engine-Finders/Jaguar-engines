@@ -285,56 +285,36 @@
       "Fuel",
       "Displacement",
       "Power",
-      "Years (X761)"
+      "Years (X761)",
+      "Variants (badges)",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
     ],
     "engines": [
       {
-        "engineCode": "Variants",
-        "family": "Reliability",
-        "fuel": "2025 Enquiries",
-        "displacement": "Avg. Recon Cost",
-        "power": "204DTD / AJ200D",
-        "years": "2.0 Ingenium",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "engineCode": "<a href='https://jaguarengines.uk/engine/ajd4-204dtd'>204DTD</a> / AJ200D",
+        "family": "2.0 Ingenium",
+        "fuel": "Diesel",
+        "displacement": "2.0L (1999cc)",
+        "power": "163–180 bhp",
+        "years": "2016–2020",
+        "variants": "D165, D180",
+        "reliability": "★★☆☆☆ [PROVISIONAL - pending dedicated Engine Page]",
+        "enquiries": "- (pattern data)",
+        "avgReconCost": "£3,500–£6,000 [JAG-QUOTE]"
       },
       {
-        "engineCode": "Diesel",
-        "family": "2.0L (1999cc)",
-        "fuel": "163–180 bhp",
-        "displacement": "2016–2020",
-        "power": "D165, D180",
-        "years": "★★☆☆☆ [PROVISIONAL - pending dedicated Engine Page]",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
-      },
-      {
-        "engineCode": "- (pattern data)",
-        "family": "£3,500–£6,000 [JAG-QUOTE]",
-        "fuel": "AJ20D4 / 204DTH",
-        "displacement": "2.0 Ingenium",
-        "power": "Diesel",
-        "years": "2.0L (1999cc)",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
-      },
-      {
-        "engineCode": "204–300 bhp",
-        "family": "2016–2024",
-        "fuel": "D200, D275, D300",
-        "displacement": "★★☆☆☆ [PROVISIONAL - pending dedicated Engine Page]",
-        "power": "- (pattern data)",
-        "years": "£3,500–£6,000 [JAG-QUOTE]",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "engineCode": "AJ20D4 / 204DTH",
+        "family": "2.0 Ingenium",
+        "fuel": "Diesel",
+        "displacement": "2.0L (1999cc)",
+        "power": "204–300 bhp",
+        "years": "2016–2024",
+        "variants": "D200, D275, D300",
+        "reliability": "★★☆☆☆ [PROVISIONAL - pending dedicated Engine Page]",
+        "enquiries": "- (pattern data)",
+        "avgReconCost": "£3,500–£6,000 [JAG-QUOTE]"
       },
       {
         "engineCode": "<a href='https://jaguarengines.uk/engine/306dt-306ps'>306DT</a>",
@@ -343,58 +323,34 @@
         "displacement": "3.0L (2993cc)",
         "power": "300 bhp",
         "years": "2016–2020",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "variants": "D300",
+        "reliability": "★★★☆☆ [PROVISIONAL - pending dedicated Engine Page]",
+        "enquiries": "- (pattern data)",
+        "avgReconCost": "£4,500–£7,500 [JAG-QUOTE]"
       },
       {
-        "engineCode": "D300",
-        "family": "★★★☆☆ [PROVISIONAL - pending dedicated Engine Page]",
-        "fuel": "- (pattern data)",
-        "displacement": "£4,500–£7,500 [JAG-QUOTE]",
-        "power": "PT204 (AJ20P4)",
-        "years": "2.0 Ingenium",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "engineCode": "PT204 (AJ20P4)",
+        "family": "2.0 Ingenium",
+        "fuel": "Petrol",
+        "displacement": "2.0L (1997cc)",
+        "power": "200–300 bhp",
+        "years": "2016–present",
+        "variants": "P200, P250, P300",
+        "reliability": "★★★☆☆ [PROVISIONAL - pending dedicated Engine Page]",
+        "enquiries": "- (pattern data)",
+        "avgReconCost": "£3,000–£5,000 [JAG-QUOTE]"
       },
       {
-        "engineCode": "Petrol",
-        "family": "2.0L (1997cc)",
-        "fuel": "200–300 bhp",
-        "displacement": "2016–present",
-        "power": "P200, P250, P300",
-        "years": "★★★☆☆ [PROVISIONAL - pending dedicated Engine Page]",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
-      },
-      {
-        "engineCode": "- (pattern data)",
-        "family": "£3,000–£5,000 [JAG-QUOTE]",
-        "fuel": "AJ126 (306PS)",
-        "displacement": "3.0 V6",
-        "power": "Petrol, supercharged",
-        "years": "3.0L (2995cc)",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
-      },
-      {
-        "engineCode": "340–380 bhp",
-        "family": "2016–2020",
-        "fuel": "P340, P380",
-        "displacement": "★★★☆☆ [PROVISIONAL - pending dedicated Engine Page]",
-        "power": "- (pattern data)",
-        "years": "£4,500–£7,500 [JAG-QUOTE]",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "engineCode": "AJ126 (306PS)",
+        "family": "3.0 V6",
+        "fuel": "Petrol, supercharged",
+        "displacement": "3.0L (2995cc)",
+        "power": "340–380 bhp",
+        "years": "2016–2020",
+        "variants": "P340, P380",
+        "reliability": "★★★☆☆ [PROVISIONAL - pending dedicated Engine Page]",
+        "enquiries": "- (pattern data)",
+        "avgReconCost": "£4,500–£7,500 [JAG-QUOTE]"
       },
       {
         "engineCode": "508PS (AJ133)",
@@ -403,34 +359,22 @@
         "displacement": "5.0L (5000cc)",
         "power": "550 bhp",
         "years": "2018–2024",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "variants": "P550 SVR",
+        "reliability": "★★★★☆ [PROVISIONAL - pending dedicated Engine Page]",
+        "enquiries": "- (pattern data)",
+        "avgReconCost": "£9,000–£14,000 [JAG-QUOTE]"
       },
       {
-        "engineCode": "P550 SVR",
-        "family": "★★★★☆ [PROVISIONAL - pending dedicated Engine Page]",
-        "fuel": "- (pattern data)",
-        "displacement": "£9,000–£14,000 [JAG-QUOTE]",
-        "power": "PT204 (PHEV)",
-        "years": "2.0 Ingenium",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
-      },
-      {
-        "engineCode": "Petrol PHEV",
-        "family": "2.0L (1997cc)",
-        "fuel": "404 bhp (combined)",
-        "displacement": "2020–present",
-        "power": "P400e",
-        "years": "★★★☆☆ [PROVISIONAL - pending dedicated Engine Page]",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "engineCode": "PT204 (PHEV)",
+        "family": "2.0 Ingenium",
+        "fuel": "Petrol PHEV",
+        "displacement": "2.0L (1997cc)",
+        "power": "404 bhp (combined)",
+        "years": "2020–present",
+        "variants": "P400e",
+        "reliability": "★★★☆☆ [PROVISIONAL - pending dedicated Engine Page]",
+        "enquiries": "- (pattern data)",
+        "avgReconCost": "£3,500–£6,500 [JAG-QUOTE]"
       }
     ],
     "confidenceScore": {
@@ -446,6 +390,12 @@
     "marketIntelligenceLine": "The X761 F-Pace generated 220 real UK engine enquiries in 2025 [JAG-VERIFIED], concentrated on the 2.0-litre Ingenium diesel as these vehicles exit warranty and face timing chain issues."
   },
   "bestWorstEngines": {
+    "generationCode": "X761",
+    "h2": "Best & Worst Engines",
+    "databaseCta": {
+      "label": "View Full Engine Database →",
+      "href": "#"
+    },
     "items": [
       {
         "slot": "Best Diesel Overall",

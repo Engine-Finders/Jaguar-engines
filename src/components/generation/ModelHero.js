@@ -5,6 +5,7 @@ import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
+import GenIcon from "./GenIcons";
 import { splitGenerationHeroH1 } from "./generationSection";
 
 const TRUST_STRIP_ICON_BY_EMOJI = {
@@ -26,12 +27,12 @@ function splitStat(label = "") {
   const tag = tagMatch ? tagMatch[1] : "";
   const text = tagMatch ? label.slice(0, tagMatch.index) : label;
 
-  const [first, ...rest] = text.split(" ");
-  const hasValue = /[0-9]/.test(first);
+  const [first, ...rest] = text.trim().split(" ");
+  const hasValue = /[0-9+]/.test(first);
 
   return {
     value: hasValue ? first : "",
-    label: hasValue ? rest.join(" ") : text,
+    label: hasValue ? rest.join(" ") : text.trim(),
     tag,
   };
 }
@@ -44,8 +45,8 @@ function TrustLabel({ label }) {
   if (label === "Part of Engine Finders") {
     return (
       <>
-        <span className="block">Part of Engine</span>
-        <span className="block">Finders</span>
+        <span className="block">Part of</span>
+        <span className="block">Engine Finders</span>
       </>
     );
   }
@@ -78,6 +79,96 @@ function HeroHeadline({ h1 = "", isDark }) {
   );
 }
 
+function DesktopTrustStrip({ items, isDark, cardBorderClass, dividerBorderClass }) {
+  if (!items?.length) return null;
+
+  const badgeTextClass = isDark ? "text-white/85" : "text-[var(--color-text)]";
+  const badgeMutedClass = isDark ? "text-white/55" : "text-[var(--color-text-soft)]";
+  const trustStripClass = `glass-panel hidden w-fit max-w-full shrink-0 rounded-md border ${cardBorderClass} backdrop-blur-sm shadow-[0_10px_30px_var(--color-shadow)] md:block`;
+
+  return (
+    <div className={trustStripClass}>
+      <div className="flex items-stretch">
+        {items.map((item, index) => {
+          const stat = splitStat(item.label);
+          const hasValue = Boolean(stat.value);
+          const isLast = index === items.length - 1;
+
+          return (
+            <div
+              key={item.label}
+              className={`flex shrink-0 items-center gap-3 px-4 py-3.5 text-left ${
+                isLast ? "min-w-[9.5rem] pr-5" : ""
+              } ${index > 0 ? `border-l ${dividerBorderClass}` : ""}`}
+            >
+              <span className="flex h-11 w-11 shrink-0 items-center justify-center">
+                <HomeIcon name={trustStripIcon(item, index)} isDark={isDark} className="h-11 w-11 object-contain" />
+              </span>
+              <div className="flex min-w-0 flex-col gap-0.5 whitespace-normal break-words">
+                {hasValue ? (
+                  <strong className={`text-[1.2rem] font-bold leading-none ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+                    {stat.value}
+                  </strong>
+                ) : (
+                  <strong className={`text-[0.95rem] font-bold leading-tight ${badgeTextClass}`}>
+                    <TrustLabel label={stat.label} />
+                  </strong>
+                )}
+                {hasValue && stat.label ? (
+                  <span className={`max-w-[11rem] text-[0.82rem] leading-[1.3] ${badgeTextClass}`}>{stat.label}</span>
+                ) : null}
+                {stat.tag ? (
+                  <span className={`text-[10px] font-semibold uppercase leading-none tracking-wide ${badgeMutedClass}`}>
+                    {stat.tag}
+                  </span>
+                ) : null}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+function MobileTrustStrip({ items, isDark, trustStripClass, dividerBorderClass, badgeTextClass, badgeMutedClass }) {
+  if (!items?.length) return null;
+
+  return (
+    <div className={`${trustStripClass} mt-3 p-2 md:hidden`}>
+      <div className="grid grid-cols-4 gap-x-0.5 text-center">
+        {items.map((item, index) => {
+          const stat = splitStat(item.label);
+
+          return (
+            <div
+              key={item.label}
+              className={`flex min-w-0 flex-col items-center gap-1 px-0.5 py-1 ${index > 0 ? `border-l ${dividerBorderClass}` : ""}`}
+            >
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center">
+                <HomeIcon name={trustStripIcon(item, index)} isDark={isDark} className="h-9 w-9 object-contain" />
+              </span>
+              {stat.value ? (
+                <strong className={`text-[0.72rem] font-bold leading-none ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+                  {stat.value}
+                </strong>
+              ) : null}
+              <span className={`text-[0.52rem] leading-[1.2] ${badgeTextClass}`}>
+                <TrustLabel label={stat.label} />
+              </span>
+              {stat.tag ? (
+                <span className={`text-[0.45rem] font-semibold uppercase leading-none tracking-wide ${badgeMutedClass}`}>
+                  {stat.tag}
+                </span>
+              ) : null}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
 export default function ModelHero({ data }) {
   const { theme } = useTheme();
   if (!data) return null;
@@ -94,98 +185,10 @@ export default function ModelHero({ data }) {
     : "[text-shadow:0_0_8px_#fff,0_0_16px_#fff,0_0_24px_rgba(255,255,255,0.9),0_1px_2px_rgba(255,255,255,0.95)]";
 
   const cardBorderClass = isDark ? "border-white/20" : "border-[var(--color-border)]";
-  const cardBgClass = isDark ? "bg-[var(--color-surface-glass)]" : "bg-[rgba(255,255,255,0.72)]";
   const dividerBorderClass = isDark ? "border-white/35" : "border-[rgba(7,24,39,0.25)]";
   const badgeTextClass = isDark ? "text-white/85" : "text-[var(--color-text)]";
   const badgeMutedClass = isDark ? "text-white/55" : "text-[var(--color-text-soft)]";
-
-  const desktopTrustStrip =
-    data.trustStrip?.length > 0 ? (
-      <div className="glass-panel mt-4 hidden items-stretch justify-center rounded-md px-4 py-3 shadow-[0_10px_30px_var(--color-shadow)] md:flex md:max-w-fit md:rounded-lg">
-        {data.trustStrip.map((item, index) => {
-          const stat = splitStat(item.label);
-          const isSimple = !stat.value && !stat.tag && !stat.label.includes(" ");
-
-          return (
-            <div key={item.label} className="flex items-stretch">
-              {index > 0 ? (
-                <span
-                  aria-hidden="true"
-                  className={`mx-3 my-1.5 w-px shrink-0 self-center ${isDark ? "bg-white/15" : "bg-[var(--color-border)]"}`}
-                  style={{ height: "70%" }}
-                />
-              ) : null}
-              {isSimple ? (
-                <div className="flex w-full flex-col items-center gap-1.5 text-center">
-                  <span className="flex h-11 w-11 shrink-0 items-center justify-center">
-                    <HomeIcon name={trustStripIcon(item, index)} isDark={isDark} className="h-11 w-11 object-contain" />
-                  </span>
-                  <span className={`text-[0.82rem] leading-[1.3] ${badgeTextClass}`}>
-                    <TrustLabel label={stat.label} />
-                  </span>
-                </div>
-              ) : (
-                <div className="flex items-center gap-2 text-left">
-                  <span className="flex h-11 w-11 shrink-0 items-center justify-center">
-                    <HomeIcon name={trustStripIcon(item, index)} isDark={isDark} className="h-11 w-11 object-contain" />
-                  </span>
-                  <div className="flex flex-col gap-0.5">
-                    {stat.value ? (
-                      <strong className={`text-[1.2rem] font-bold leading-none ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
-                        {stat.value}
-                      </strong>
-                    ) : null}
-                    <span className={`text-[0.82rem] leading-[1.3] ${badgeTextClass}`}>
-                      <TrustLabel label={stat.label} />
-                    </span>
-                    {stat.tag ? (
-                      <span className={`text-[10px] font-semibold uppercase leading-none tracking-wide ${badgeMutedClass}`}>
-                        {stat.tag}
-                      </span>
-                    ) : null}
-                  </div>
-                </div>
-              )}
-            </div>
-          );
-        })}
-      </div>
-    ) : null;
-
-  const mobileTrustStrip =
-    data.trustStrip?.length > 0 ? (
-      <div className={`mt-3 rounded-md border ${cardBorderClass} ${cardBgClass} p-2 backdrop-blur-sm md:hidden`}>
-        <div className="grid grid-cols-4 gap-x-0.5">
-          {data.trustStrip.map((item, index) => {
-            const stat = splitStat(item.label);
-
-            return (
-              <div
-                key={item.label}
-                className={`flex min-w-0 flex-col items-center gap-1 px-0.5 text-center ${index > 0 ? `border-l ${dividerBorderClass}` : ""}`}
-              >
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center">
-                  <HomeIcon name={trustStripIcon(item, index)} isDark={isDark} className="h-9 w-9 object-contain" />
-                </span>
-                {stat.value ? (
-                  <strong className={`text-[0.72rem] font-bold leading-none ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
-                    {stat.value}
-                  </strong>
-                ) : null}
-                <span className={`text-[0.52rem] leading-[1.2] ${badgeTextClass}`}>
-                  <TrustLabel label={stat.label} />
-                </span>
-                {stat.tag ? (
-                  <span className={`text-[0.45rem] font-semibold uppercase leading-none tracking-wide ${badgeMutedClass}`}>
-                    {stat.tag}
-                  </span>
-                ) : null}
-              </div>
-            );
-          })}
-        </div>
-      </div>
-    ) : null;
+  const trustStripClass = `glass-panel rounded-md border ${cardBorderClass} backdrop-blur-sm shadow-[0_10px_30px_var(--color-shadow)]`;
 
   return (
     <section className="relative min-h-[calc(100svh-84px)] overflow-hidden bg-[var(--color-page)] text-[var(--color-text)] md:min-h-[580px]">
@@ -255,31 +258,47 @@ export default function ModelHero({ data }) {
             dangerouslySetInnerHTML={{ __html: data.subHeadline }}
           />
 
-          {desktopTrustStrip}
-
           {data.primaryCta ? (
             <Link
-              href="/quote"
+              href={data.primaryCta.href || "/quote"}
               className="btn-cta mt-4 hidden w-fit items-center gap-5 rounded-md px-7 py-3.5 text-base font-bold shadow-[0_12px_28px_var(--color-shadow)] md:inline-flex"
             >
               <span dangerouslySetInnerHTML={{ __html: data.primaryCta.label.replace(/\s*→\s*$/, "") }} />
-              <HomeIcon name="quote" isDark={isDark} className="h-5 w-5 object-contain" />
+              <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
             </Link>
+          ) : null}
+
+          {data.trustStrip?.length > 0 ? (
+            <div className="mt-6 hidden md:block">
+              <DesktopTrustStrip
+                items={data.trustStrip}
+                isDark={isDark}
+                cardBorderClass={cardBorderClass}
+                dividerBorderClass={dividerBorderClass}
+              />
+            </div>
           ) : null}
         </div>
 
         <div className="relative flex w-full max-w-[720px] flex-col md:hidden">
           {data.primaryCta ? (
             <Link
-              href="/quote"
+              href={data.primaryCta.href || "/quote"}
               className="btn-cta mt-2 inline-flex w-full items-center justify-center gap-3 rounded-md px-6 py-3.5 text-[1rem] font-bold shadow-[0_12px_28px_var(--color-shadow)]"
             >
               <span dangerouslySetInnerHTML={{ __html: data.primaryCta.label.replace(/\s*→\s*$/, "") }} />
-              <HomeIcon name="quote" isDark={isDark} className="h-5 w-5 object-contain" />
+              <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
             </Link>
           ) : null}
 
-          {mobileTrustStrip}
+          <MobileTrustStrip
+            items={data.trustStrip}
+            isDark={isDark}
+            trustStripClass={trustStripClass}
+            dividerBorderClass={dividerBorderClass}
+            badgeTextClass={badgeTextClass}
+            badgeMutedClass={badgeMutedClass}
+          />
         </div>
       </div>
     </section>

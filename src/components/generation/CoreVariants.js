@@ -9,12 +9,8 @@ import { generationSectionBg, splitCoreVariantsH2 } from "./generationSection";
 function VariantPanel({ title, icon, variants, tone, isDark }) {
   if (!variants?.length) return null;
   const isDiesel = tone === "diesel";
-  const labelToneClass = isDiesel ? "text-[var(--color-primary)]" : "text-[#189454]";
-  const blockToneClass = isDiesel
-    ? isDark
-      ? "bg-[var(--color-chrome)]"
-      : "bg-[var(--color-primary)]"
-    : "bg-[#189454]";
+  const labelToneClass = isDiesel ? (isDark ? "text-[#2484ff]" : "text-[#0b67dc]") : "text-[#189454]";
+  const blockToneClass = isDiesel ? (isDark ? "bg-[#2484ff]" : "bg-[#0b67dc]") : "bg-[#189454]";
   const textClass = isDark ? "text-white/88" : "text-[var(--color-text)]";
   const separatorClass = isDark ? "text-white/50" : "text-[var(--color-text-soft)]";
 

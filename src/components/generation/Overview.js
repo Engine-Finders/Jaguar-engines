@@ -74,23 +74,39 @@ export default function Overview({ data }) {
       })()
     : [];
 
-  const factItem = (fact, index) => (
-    <div className="flex min-w-0 flex-1 items-start gap-2 px-1">
-      {factIconCircled[index % factIconCircled.length] ? (
-        <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] text-[var(--color-primary)]">
-          <GenIcon name={factIcons[index % factIcons.length]} className="h-3 w-3" />
-        </span>
-      ) : (
-        <span className="mt-0.5 shrink-0 text-[var(--color-primary)]">
-          <GenIcon name={factIcons[index % factIcons.length]} className="h-4 w-4" />
-        </span>
-      )}
-      <div className="min-w-0 flex-1">
-        <p className={`text-[0.8rem] font-semibold leading-[1.25] ${factLabelClass}`} dangerouslySetInnerHTML={{ __html: fact.label }} />
-        <p className={`mt-0.5 text-[0.74rem] leading-[1.3] ${factValueClass}`} dangerouslySetInnerHTML={{ __html: fact.value }} />
+  const factItem = (fact, index, { mobile = false } = {}) => {
+    const circled = factIconCircled[index % factIconCircled.length];
+    const iconName = factIcons[index % factIcons.length];
+    const iconBoxClass = mobile ? "h-10 w-10" : "h-8 w-8";
+    const circledIconClass = mobile ? "h-5 w-5" : "h-4 w-4";
+    const plainIconClass = mobile ? "h-7 w-7" : "h-5 w-5";
+
+    return (
+      <div className="flex min-w-0 flex-1 flex-col items-center gap-2 px-1 text-center">
+        {circled ? (
+          <span
+            className={`flex shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] text-[var(--color-primary)] ${iconBoxClass}`}
+          >
+            <GenIcon name={iconName} className={circledIconClass} />
+          </span>
+        ) : (
+          <span className={`flex shrink-0 items-center justify-center text-[var(--color-primary)] ${iconBoxClass}`}>
+            <GenIcon name={iconName} className={plainIconClass} />
+          </span>
+        )}
+        <div className="min-w-0 w-full">
+          <p
+            className={`font-semibold leading-[1.25] ${factLabelClass} ${mobile ? "text-[0.84rem]" : "text-[0.8rem]"}`}
+            dangerouslySetInnerHTML={{ __html: fact.label }}
+          />
+          <p
+            className={`mt-0.5 leading-[1.3] ${factValueClass} ${mobile ? "text-[0.78rem]" : "text-[0.74rem]"}`}
+            dangerouslySetInnerHTML={{ __html: fact.value }}
+          />
+        </div>
       </div>
-    </div>
-  );
+    );
+  };
 
   const keyFactsBlockMobile = keyFacts.length > 0 ? (
     <div className="glass-panel mt-4 rounded-lg p-3">
@@ -116,7 +132,7 @@ export default function Overview({ data }) {
                         style={{ height: "70%" }}
                       />
                     ) : null}
-                    {factItem(fact, index)}
+                    {factItem(fact, index, { mobile: true })}
                   </div>
                 );
               })}
@@ -136,21 +152,9 @@ export default function Overview({ data }) {
         {keyFacts.map((fact, index) => (
           <div
             key={fact.label}
-            className={`flex items-start gap-2 border-l py-0 pl-3 first:border-l-0 first:pl-0 ${cardDividerClass}`}
+            className={`border-l py-0 pl-3 first:border-l-0 first:pl-0 ${cardDividerClass}`}
           >
-            {factIconCircled[index % factIconCircled.length] ? (
-              <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] text-[var(--color-primary)]">
-                <GenIcon name={factIcons[index % factIcons.length]} className="h-3 w-3" />
-              </span>
-            ) : (
-              <span className="mt-0.5 shrink-0 text-[var(--color-primary)]">
-                <GenIcon name={factIcons[index % factIcons.length]} className="h-4 w-4" />
-              </span>
-            )}
-            <div className="min-w-0 flex-1">
-              <p className={`text-[0.8rem] font-semibold leading-[1.25] ${factLabelClass}`} dangerouslySetInnerHTML={{ __html: fact.label }} />
-              <p className={`mt-0.5 text-[0.74rem] leading-[1.3] ${factValueClass}`} dangerouslySetInnerHTML={{ __html: fact.value }} />
-            </div>
+            {factItem(fact, index)}
           </div>
         ))}
       </div>
