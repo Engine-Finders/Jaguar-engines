@@ -67,7 +67,7 @@ function StatCard({ icon, title, children, isDark }) {
     <div className="glass-panel flex h-full min-h-[168px] flex-col gap-2 rounded-md p-3">
       <div className="flex items-start gap-2">
         <StatCardIcon icon={icon} isDark={isDark} compact />
-        <p className="min-w-0 flex-1 text-[0.62rem] font-semibold uppercase leading-[1.25] tracking-wide text-[var(--color-primary)] md:text-[0.68rem]">
+        <p className="min-w-0 flex-1 text-[0.75rem] font-semibold uppercase leading-[1.25] tracking-wide text-[var(--color-primary)] md:text-[0.68rem]">
           {title}
         </p>
       </div>
@@ -82,7 +82,9 @@ function RankedList({ items, compact = false }) {
       {items?.map((item, index) => (
         <li
           key={`${item}-${index}`}
-          className={`flex gap-1.5 leading-[1.3] text-[var(--color-text)] ${compact ? "text-[0.68rem]" : "text-[0.74rem]"}`}
+          className={`flex gap-1.5 leading-[1.3] text-[var(--color-text)] ${
+            compact ? "text-[0.8rem] md:text-[0.68rem]" : "text-[0.74rem]"
+          }`}
         >
           <span className="shrink-0 font-semibold text-[var(--color-primary)]">{index + 1}.</span>
           <span dangerouslySetInnerHTML={{ __html: stripListPrefix(item) }} />
@@ -105,13 +107,13 @@ function AverageCostCard({ value, note }) {
         />
         {displayNote ? (
           <p
-            className="mt-1 text-[0.64rem] leading-[1.3] text-[var(--color-text-soft)]"
+            className="mt-1 text-[0.76rem] leading-[1.3] text-[var(--color-text-soft)] md:text-[0.64rem]"
             dangerouslySetInnerHTML={{ __html: displayNote }}
           />
         ) : null}
       </div>
       {quote ? (
-        <p className="text-[0.62rem] font-semibold text-[var(--color-primary)] md:text-[0.64rem]" dangerouslySetInnerHTML={{ __html: quote }} />
+        <p className="text-[0.74rem] font-semibold text-[var(--color-primary)] md:text-[0.64rem]" dangerouslySetInnerHTML={{ __html: quote }} />
       ) : null}
     </div>
   );
@@ -131,17 +133,17 @@ function MobileLiveFeedRow({ row, feedBorder, feedText, feedMuted, feedSoft, sho
   const { count, label } = splitEnquiries(row.enquiries);
 
   return (
-    <div className={`grid grid-cols-[minmax(0,1.15fr)_minmax(0,0.8fr)_minmax(0,0.95fr)_minmax(0,0.8fr)] items-stretch text-[0.68rem] ${feedText}`}>
+    <div className={`grid grid-cols-[minmax(0,1.15fr)_minmax(0,0.8fr)_minmax(0,0.95fr)_minmax(0,0.8fr)] items-stretch text-[0.8rem] md:text-[0.68rem] ${feedText}`}>
       <div className={`border-r px-2.5 py-3 ${feedBorder}`}>
         <div className="min-w-0">
           <p className="font-semibold leading-[1.25]" dangerouslySetInnerHTML={{ __html: model }} />
-          {chassis ? <p className={`mt-0.5 text-[0.6rem] ${feedSoft}`} dangerouslySetInnerHTML={{ __html: chassis }} /> : null}
+          {chassis ? <p className={`mt-0.5 text-[0.72rem] md:text-[0.6rem] ${feedSoft}`} dangerouslySetInnerHTML={{ __html: chassis }} /> : null}
         </div>
       </div>
 
-      <div className={`flex items-center gap-1 border-r px-2 py-3 ${feedBorder} ${feedMuted}`}>
-        <GenIcon name="pin" className="h-3 w-3 shrink-0 text-[var(--color-primary)]" />
-        <span className="min-w-0 break-words" dangerouslySetInnerHTML={{ __html: row.location }} />
+      <div className={`flex flex-col items-center gap-1 border-r px-2 py-3 text-center ${feedBorder} ${feedMuted}`}>
+        <GenIcon name="pin" className="h-3.5 w-3.5 shrink-0 text-[var(--color-primary)]" />
+        <span className="min-w-0 break-words leading-[1.25]" dangerouslySetInnerHTML={{ __html: row.location }} />
       </div>
 
       <div className={`flex items-center gap-1 border-r px-2 py-3 ${feedBorder} ${feedMuted}`}>

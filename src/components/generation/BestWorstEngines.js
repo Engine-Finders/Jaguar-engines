@@ -14,38 +14,50 @@ const typeStyles = {
   dieselBest: {
     icon: "check",
     color: "#189454",
+    colorDark: "#22a866",
     accent: "border-b-[#189454]",
     label: "text-[#189454]",
+    labelDark: "text-[#3ecf7a]",
   },
   petrolBest: {
     icon: "gauge",
     color: "#2484ff",
+    colorDark: "#4da0ff",
     accent: "border-b-[#2484ff]",
     label: "text-[#2484ff]",
+    labelDark: "text-[#6bb4ff]",
   },
   danger: {
     icon: "warning",
     color: "#e03232",
+    colorDark: "#f04a4a",
     accent: "border-b-[#e03232]",
     label: "text-[#e03232]",
+    labelDark: "text-[#ff6b6b]",
   },
   fire: {
     icon: "dollar",
     color: "#da7a12",
+    colorDark: "#f09028",
     accent: "border-b-[#da7a12]",
     label: "text-[#da7a12]",
+    labelDark: "text-[#ffb04a]",
   },
   diamond: {
     icon: "diamond",
     color: "#189454",
+    colorDark: "#22a866",
     accent: "border-b-[#189454]",
     label: "text-[#189454]",
+    labelDark: "text-[#3ecf7a]",
   },
   crown: {
     icon: "shield",
     color: "#111210",
+    colorDark: "#c8c9c4",
     accent: "border-b-[var(--color-primary)]",
     label: "text-[var(--color-text)]",
+    labelDark: "text-[var(--color-chrome-bright)]",
   },
 };
 
@@ -63,8 +75,19 @@ function slotStyleKey(slot = "", type) {
   return "dieselBest";
 }
 
-function resolveStyle(item) {
-  return typeStyles[slotStyleKey(item.slot, item.type)] || typeStyles.dieselBest;
+function resolveStyle(item, isDark = false) {
+  const key = slotStyleKey(item.slot, item.type);
+  const base = typeStyles[key] || typeStyles.dieselBest;
+  if (!isDark) {
+    return { ...base, iconTextClass: "text-white" };
+  }
+
+  return {
+    ...base,
+    color: base.colorDark || base.color,
+    label: base.labelDark || base.label,
+    iconTextClass: key === "crown" ? "text-black" : "text-white",
+  };
 }
 
 function isOverlookedItem(item) {
@@ -120,18 +143,22 @@ function SectionHeader({ data, isDark, sectionBg }) {
 }
 
 function EngineCard({ item, isDark }) {
-  const style = resolveStyle(item);
+  const style = resolveStyle(item, isDark);
+  const cardSurfaceClass = isDark
+    ? "border-white/15 bg-[rgba(20,21,21,0.96)] shadow-[0_10px_28px_rgba(0,0,0,0.4)]"
+    : "border-[var(--color-border)] bg-white shadow-[0_10px_28px_rgba(17,18,16,0.08)]";
+  const bodyTextClass = isDark ? "text-white/72" : "text-[var(--color-text-muted)]";
+  const titleTextClass = isDark ? "text-white" : "text-[var(--color-text)]";
+  const noteBgClass = isDark ? "bg-white/[0.06] text-white/55" : "bg-[var(--color-page-soft)] text-[var(--color-text-soft)]";
 
   return (
     <article
-      className={`flex h-full flex-col overflow-hidden rounded-xl border border-[var(--color-border)] bg-white shadow-[0_10px_28px_rgba(17,18,16,0.08)] ${style.accent} border-b-[4px] ${
-        isDark ? "bg-[rgba(20,21,21,0.92)]" : ""
-      }`}
+      className={`flex h-full flex-col overflow-hidden rounded-xl border ${cardSurfaceClass} ${style.accent} border-b-[4px]`}
     >
       <div className="flex flex-1 flex-col p-4">
         <div className="flex items-center gap-2.5">
           <span
-            className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-white"
+            className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full ${style.iconTextClass}`}
             style={{ backgroundColor: style.color }}
           >
             <GenIcon name={style.icon} className="h-4 w-4" />
@@ -139,10 +166,10 @@ function EngineCard({ item, isDark }) {
           <p className={`text-[0.68rem] font-bold uppercase tracking-[0.08em] ${style.label}`} dangerouslySetInnerHTML={{ __html: item.slot }} />
         </div>
 
-        <p className="mt-3 text-[0.98rem] font-bold leading-[1.25] text-[var(--color-text)]">
+        <p className={`mt-3 text-[0.98rem] font-bold leading-[1.25] ${titleTextClass}`}>
           <span dangerouslySetInnerHTML={{ __html: item.engine }} />
           {item.engineNote ? (
-            <span className="mt-0.5 block text-[0.72rem] font-normal text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: item.engineNote }} />
+            <span className={`mt-0.5 block text-[0.72rem] font-normal ${bodyTextClass}`} dangerouslySetInnerHTML={{ __html: item.engineNote }} />
           ) : null}
         </p>
 
@@ -150,11 +177,11 @@ function EngineCard({ item, isDark }) {
           <Image src="/e90/engine.webp" alt="" fill className="object-contain" sizes="210px" />
         </div>
 
-        <p className="text-[0.8rem] leading-[1.45] text-[var(--color-text-muted)]">
+        <p className={`text-[0.8rem] leading-[1.45] ${bodyTextClass}`}>
           &ldquo;<span dangerouslySetInnerHTML={{ __html: item.quote }} />&rdquo;
         </p>
 
-        <p className="mt-auto border-t border-[var(--color-border)] pt-3 text-[0.78rem] leading-[1.35] text-[var(--color-text)]">
+        <p className={`mt-auto border-t pt-3 text-[0.78rem] leading-[1.35] ${isDark ? "border-white/12 text-white/88" : "border-[var(--color-border)] text-[var(--color-text)]"}`}>
           <span className="font-semibold" style={{ color: style.color }}>
             Who it&apos;s for:
           </span>{" "}
@@ -162,7 +189,7 @@ function EngineCard({ item, isDark }) {
         </p>
 
         {item.modelWideNote ? (
-          <p className="mt-2 rounded-md bg-[var(--color-page-soft)] p-2 text-[0.68rem] leading-[1.3] text-[var(--color-text-soft)]" dangerouslySetInnerHTML={{ __html: item.modelWideNote }} />
+          <p className={`mt-2 rounded-md p-2 text-[0.68rem] leading-[1.3] ${noteBgClass}`} dangerouslySetInnerHTML={{ __html: item.modelWideNote }} />
         ) : null}
       </div>
     </article>

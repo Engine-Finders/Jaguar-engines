@@ -136,7 +136,9 @@ export default function EraMap({ data }) {
         <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
           <div>
             <div className="flex items-center gap-2.5">
-              <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-md ${primaryBadgeClass(isDark)}`}>
+              <span
+                className={`hidden h-9 w-9 shrink-0 items-center justify-center rounded-md md:flex ${primaryBadgeClass(isDark)}`}
+              >
                 <GenIcon name="clock" className="h-5 w-5" />
               </span>
               <h2 className="text-[1.6rem] font-bold leading-[1.1] tracking-normal md:text-[2.4rem]">
