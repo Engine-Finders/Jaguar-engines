@@ -268,3 +268,32 @@ export function splitGenerationHeroH1(h1 = "") {
 
   return { before: clean, accent: "" };
 }
+
+const GENERATION_HERO_FALLBACK = {
+  light: "/e90/hero_day.webp",
+  dark: "/e90/hero_dark.webp",
+  mobileLight: "/e90/hero_mobile_day.webp",
+  mobileDark: "/e90/hero_mobile_dark.webp",
+};
+
+export function resolveGenerationHeroImage(heroData, isDark, { mobile = false } = {}) {
+  const fallback = isDark
+    ? mobile
+      ? GENERATION_HERO_FALLBACK.mobileDark
+      : GENERATION_HERO_FALLBACK.dark
+    : mobile
+      ? GENERATION_HERO_FALLBACK.mobileLight
+      : GENERATION_HERO_FALLBACK.light;
+
+  if (!heroData?.image) return fallback;
+
+  if (mobile) {
+    return (isDark ? heroData.image.mobileDark : heroData.image.mobileLight) || fallback;
+  }
+
+  return (isDark ? heroData.image.dark : heroData.image.light) || fallback;
+}
+
+export function resolveGenerationHeroAlt(heroData) {
+  return heroData?.image?.alt || "";
+}

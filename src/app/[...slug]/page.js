@@ -25,8 +25,7 @@ import BestWorstEngines from "@/components/generation/BestWorstEngines";
 import OwnershipEconomics from "@/components/generation/OwnershipEconomics";
 import GenProblems from "@/components/generation/CommonProblems";
 import GenReplacementCosts from "@/components/generation/ReplacementCosts";
-import CoreVariants from "@/components/generation/CoreVariants";
-import GenMarketIntelligence from "@/components/generation/MarketIntelligence";
+import CoreVariantsMarketGroup from "@/components/generation/CoreVariantsMarketGroup";
 import GenFAQAccordion from "@/components/generation/FAQAccordion";
 import GenTrustCta from "@/components/generation/TrustCta";
 
@@ -212,10 +211,13 @@ export default async function CatchAllPage({ params }) {
         <OwnershipEconomics data={data.ownershipEconomics} />
         <GenProblems data={data.commonProblems} />
         <GenReplacementCosts data={data.replacementCosts} />
-        <CoreVariants data={data.coreVariants} parentSlug={entry.parent} />
-        <GenMarketIntelligence data={data.marketIntelligence} />
+        <CoreVariantsMarketGroup
+          coreVariants={data.coreVariants}
+          marketIntelligence={data.marketIntelligence}
+          hero={data.hero}
+        />
         <GenFAQAccordion data={data.faq} />
-        <GenTrustCta data={data.trustCta} />
+        <GenTrustCta data={data.trustCta} hero={data.hero} />
       </main>
     );
   }

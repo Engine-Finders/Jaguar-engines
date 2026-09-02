@@ -84,27 +84,26 @@ function DesktopTrustStrip({ items, isDark, cardBorderClass, dividerBorderClass 
 
   const badgeTextClass = isDark ? "text-white/85" : "text-[var(--color-text)]";
   const badgeMutedClass = isDark ? "text-white/55" : "text-[var(--color-text-soft)]";
-  const trustStripClass = `glass-panel hidden w-fit max-w-full shrink-0 rounded-md border ${cardBorderClass} backdrop-blur-sm shadow-[0_10px_30px_var(--color-shadow)] md:block`;
+  const trustStripClass = `glass-panel hidden w-max shrink-0 rounded-md border ${cardBorderClass} backdrop-blur-sm shadow-[0_10px_30px_var(--color-shadow)] md:block`;
 
   return (
     <div className={trustStripClass}>
-      <div className="flex items-stretch">
+      <div className="flex w-max items-stretch">
         {items.map((item, index) => {
           const stat = splitStat(item.label);
           const hasValue = Boolean(stat.value);
-          const isLast = index === items.length - 1;
 
           return (
             <div
               key={item.label}
-              className={`flex shrink-0 items-center gap-3 px-4 py-3.5 text-left ${
-                isLast ? "min-w-[9.5rem] pr-5" : ""
-              } ${index > 0 ? `border-l ${dividerBorderClass}` : ""}`}
+              className={`flex w-auto flex-none items-center gap-3 px-4 py-3.5 text-left ${
+                index > 0 ? `border-l ${dividerBorderClass}` : ""
+              }`}
             >
               <span className="flex h-11 w-11 shrink-0 items-center justify-center">
                 <HomeIcon name={trustStripIcon(item, index)} isDark={isDark} className="h-11 w-11 object-contain" />
               </span>
-              <div className="flex min-w-0 flex-col gap-0.5 whitespace-normal break-words">
+              <div className="flex w-max max-w-none flex-col gap-0.5 whitespace-normal">
                 {hasValue ? (
                   <strong className={`text-[1.2rem] font-bold leading-none ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
                     {stat.value}
@@ -115,7 +114,7 @@ function DesktopTrustStrip({ items, isDark, cardBorderClass, dividerBorderClass 
                   </strong>
                 )}
                 {hasValue && stat.label ? (
-                  <span className={`max-w-[11rem] text-[0.82rem] leading-[1.3] ${badgeTextClass}`}>{stat.label}</span>
+                  <span className={`max-w-[12rem] text-[0.82rem] leading-[1.3] ${badgeTextClass}`}>{stat.label}</span>
                 ) : null}
                 {stat.tag ? (
                   <span className={`text-[10px] font-semibold uppercase leading-none tracking-wide ${badgeMutedClass}`}>
@@ -225,51 +224,53 @@ export default function ModelHero({ data }) {
       </div>
 
       <div className="relative mx-auto flex min-h-[calc(100svh-84px)] w-full max-w-8xl flex-col justify-between px-4 pb-4 pt-6 md:min-h-[580px] md:justify-center md:px-8 md:py-6">
-        <div className="relative flex w-full max-w-[720px] flex-col gap-2.5 md:gap-3">
-          <span
-            className={`inline-flex w-fit max-w-full flex-wrap items-center gap-x-2 gap-y-2 rounded-md border px-3 py-2 text-[0.82rem] leading-[1.35] md:px-4 md:py-2 md:text-[0.88rem] ${
-              isDark
-                ? "border-white/30 bg-[rgba(11,12,12,0.55)] text-white"
-                : "border-[var(--color-border-strong)] bg-[rgba(255,255,255,0.58)] text-[var(--color-text-muted)]"
-            }`}
-          >
-            <HomeIcon name="vehicle" isDark={isDark} className="h-4 w-4 shrink-0 object-contain" />
-            <strong className="font-semibold text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: pill.model }} />
-            {pill.body ? (
-              <>
-                <span aria-hidden="true" className="opacity-50">•</span>
-                <span dangerouslySetInnerHTML={{ __html: pill.body }} />
-              </>
-            ) : null}
-            {pill.years ? (
-              <>
-                <span aria-hidden="true" className="opacity-50">•</span>
-                <span dangerouslySetInnerHTML={{ __html: pill.years }} />
-              </>
-            ) : null}
-          </span>
-
-          <HeroHeadline h1={data.h1} isDark={isDark} />
-
-          <MStripe />
-
-          <p
-            className={`max-w-[78%] text-[0.88rem] leading-[1.42] md:max-w-[620px] md:text-[1.08rem] md:leading-[1.42] ${isDark ? "text-white/88" : "text-black"} ${heroDescriptionShadow}`}
-            dangerouslySetInnerHTML={{ __html: data.subHeadline }}
-          />
-
-          {data.primaryCta ? (
-            <Link
-              href={data.primaryCta.href || "/quote"}
-              className="btn-cta mt-4 hidden w-fit items-center gap-5 rounded-md px-7 py-3.5 text-base font-bold shadow-[0_12px_28px_var(--color-shadow)] md:inline-flex"
+        <div className="relative flex w-full flex-col gap-2.5 md:gap-3">
+          <div className="relative flex w-full max-w-[720px] flex-col gap-2.5 md:gap-3">
+            <span
+              className={`inline-flex w-fit max-w-full flex-wrap items-center gap-x-2 gap-y-2 rounded-md border px-3 py-2 text-[0.82rem] leading-[1.35] md:px-4 md:py-2 md:text-[0.88rem] ${
+                isDark
+                  ? "border-white/30 bg-[rgba(11,12,12,0.55)] text-white"
+                  : "border-[var(--color-border-strong)] bg-[rgba(255,255,255,0.58)] text-[var(--color-text-muted)]"
+              }`}
             >
-              <span dangerouslySetInnerHTML={{ __html: data.primaryCta.label.replace(/\s*→\s*$/, "") }} />
-              <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
-            </Link>
-          ) : null}
+              <HomeIcon name="vehicle" isDark={isDark} className="h-4 w-4 shrink-0 object-contain" />
+              <strong className="font-semibold text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: pill.model }} />
+              {pill.body ? (
+                <>
+                  <span aria-hidden="true" className="opacity-50">•</span>
+                  <span dangerouslySetInnerHTML={{ __html: pill.body }} />
+                </>
+              ) : null}
+              {pill.years ? (
+                <>
+                  <span aria-hidden="true" className="opacity-50">•</span>
+                  <span dangerouslySetInnerHTML={{ __html: pill.years }} />
+                </>
+              ) : null}
+            </span>
+
+            <HeroHeadline h1={data.h1} isDark={isDark} />
+
+            <MStripe />
+
+            <p
+              className={`max-w-[78%] text-[0.88rem] leading-[1.42] md:max-w-[620px] md:text-[1.08rem] md:leading-[1.42] ${isDark ? "text-white/88" : "text-black"} ${heroDescriptionShadow}`}
+              dangerouslySetInnerHTML={{ __html: data.subHeadline }}
+            />
+
+            {data.primaryCta ? (
+              <Link
+                href={data.primaryCta.href || "/quote"}
+                className="btn-cta mt-4 hidden w-fit items-center gap-5 rounded-md px-7 py-3.5 text-base font-bold shadow-[0_12px_28px_var(--color-shadow)] md:inline-flex"
+              >
+                <span dangerouslySetInnerHTML={{ __html: data.primaryCta.label.replace(/\s*→\s*$/, "") }} />
+                <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
+              </Link>
+            ) : null}
+          </div>
 
           {data.trustStrip?.length > 0 ? (
-            <div className="mt-6 hidden md:block">
+            <div className="mt-6 hidden w-max max-w-none md:block">
               <DesktopTrustStrip
                 items={data.trustStrip}
                 isDark={isDark}

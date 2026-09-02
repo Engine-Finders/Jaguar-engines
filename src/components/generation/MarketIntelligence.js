@@ -64,7 +64,7 @@ function StatCardIcon({ icon, isDark, compact = false, className = "" }) {
 
 function StatCard({ icon, title, children, isDark }) {
   return (
-    <div className="glass-panel flex h-full flex-col gap-2 rounded-md p-3">
+    <div className="glass-panel flex h-full min-h-[168px] flex-col gap-2 rounded-md p-3">
       <div className="flex items-start gap-2">
         <StatCardIcon icon={icon} isDark={isDark} compact />
         <p className="min-w-0 flex-1 text-[0.62rem] font-semibold uppercase leading-[1.25] tracking-wide text-[var(--color-primary)] md:text-[0.68rem]">
@@ -100,12 +100,12 @@ function AverageCostCard({ value, note }) {
     <div className="flex h-full flex-col justify-between gap-2">
       <div>
         <p
-          className="text-[1.35rem] font-bold leading-[1.1] text-[var(--color-text)] md:text-[0.76rem] md:font-semibold"
+          className="text-[1.1rem] font-bold leading-[1.1] text-[var(--color-text)] md:text-[0.92rem]"
           dangerouslySetInnerHTML={{ __html: price }}
         />
         {displayNote ? (
           <p
-            className="mt-1 text-[0.64rem] leading-[1.3] text-[var(--color-text-soft)] md:mt-0"
+            className="mt-1 text-[0.64rem] leading-[1.3] text-[var(--color-text-soft)]"
             dangerouslySetInnerHTML={{ __html: displayNote }}
           />
         ) : null}
@@ -163,7 +163,31 @@ function MobileLiveFeedRow({ row, feedBorder, feedText, feedMuted, feedSoft, sho
   );
 }
 
-function DesktopLiveFeed({ liveFeed, isDark, feedBg, feedBorder, feedText, feedMuted, feedSoft, feedHeaderBg, feedHeaderDivider }) {
+function useFeedStyles(isDark) {
+  return {
+    feedBg: isDark ? "bg-black" : "bg-[var(--color-table-surface)]",
+    feedBorder: isDark ? "border-white/15" : "border-[var(--color-border)]",
+    feedText: isDark ? "text-white" : "text-[var(--color-text)]",
+    feedMuted: isDark ? "text-white/70" : "text-[var(--color-text-muted)]",
+    feedSoft: isDark ? "text-white/50" : "text-[var(--color-text-soft)]",
+    feedHeaderBg: tableHeaderClass(isDark),
+    feedHeaderDivider: isDark ? "border-[var(--color-page)]/20" : "border-white/25",
+  };
+}
+
+export function DesktopLiveFeed({ liveFeed, isDark }) {
+  const {
+    feedBg,
+    feedBorder,
+    feedText,
+    feedMuted,
+    feedSoft,
+    feedHeaderBg,
+    feedHeaderDivider,
+  } = useFeedStyles(isDark);
+
+  if (!liveFeed?.length) return null;
+
   return (
     <div className={`overflow-hidden rounded-md border shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur ${feedBorder} ${feedBg}`}>
       <LiveFeedHeader isDark={isDark} feedBorder={feedBorder} feedText={feedText} />
@@ -223,20 +247,17 @@ function DesktopLiveFeed({ liveFeed, isDark, feedBg, feedBorder, feedText, feedM
   );
 }
 
-export default function MarketIntelligence({ data }) {
+export function MarketIntelligenceSidebar({ data }) {
   const { theme } = useTheme();
-  if (!data) return null;
+  if (!data?.liveFeed?.length) return null;
 
   const isDark = theme === "dark";
-  const sectionBg = generationSectionBg(isDark, false);
+  return <DesktopLiveFeed liveFeed={data.liveFeed} isDark={isDark} />;
+}
+
+function MarketIntelligenceBody({ data, isDark, grouped, hideSidebar }) {
   const title = splitMarketIntelligenceH2(data.h2 || "Market Intelligence");
-  const feedBg = isDark ? "bg-black" : "bg-[var(--color-table-surface)]";
-  const feedBorder = isDark ? "border-white/15" : "border-[var(--color-border)]";
-  const feedText = isDark ? "text-white" : "text-[var(--color-text)]";
-  const feedMuted = isDark ? "text-white/70" : "text-[var(--color-text-muted)]";
-  const feedSoft = isDark ? "text-white/50" : "text-[var(--color-text-soft)]";
-  const feedHeaderBg = tableHeaderClass(isDark);
-  const feedHeaderDivider = isDark ? "border-[var(--color-page)]/20" : "border-white/25";
+  const feedStyles = useFeedStyles(isDark);
 
   const statCards = (
     <>
@@ -255,27 +276,28 @@ export default function MarketIntelligence({ data }) {
     </>
   );
 
-  return (
-    <section className={`w-full overflow-x-hidden text-[var(--color-text)] ${sectionBg}`}>
-      <GenerationSectionHeader title={title} subHeadline={data.subHeadline} isDark={isDark} sectionBg={sectionBg} showHeaderImage={false} />
+  const headerBg = grouped ? generationSectionBg(isDark, true) : generationSectionBg(isDark, false);
 
-      <div className="relative mx-auto w-full max-w-8xl px-4 pb-5 pt-4 md:px-8 md:pb-6 md:pt-5">
-        {/* Mobile: 2x2 stat grid + full-width live feed below */}
+  return (
+    <>
+      <GenerationSectionHeader title={title} subHeadline={data.subHeadline} isDark={isDark} sectionBg={headerBg} showHeaderImage={false} />
+
+      <div className={`relative mx-auto w-full max-w-8xl ${grouped ? "px-0 pb-6 pt-4 md:pb-6 md:pt-5" : "px-4 pb-5 pt-4 md:px-8 md:pb-6 md:pt-5"}`}>
         <div className="flex flex-col gap-3 md:hidden">
           <div className="grid grid-cols-2 gap-3">{statCards}</div>
 
-          {data.liveFeed?.length > 0 ? (
-            <div className={`overflow-hidden rounded-md border shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur ${feedBorder} ${feedBg}`}>
-              <LiveFeedHeader isDark={isDark} feedBorder={feedBorder} feedText={feedText} />
+          {!hideSidebar && data.liveFeed?.length > 0 ? (
+            <div className={`overflow-hidden rounded-md border shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur ${feedStyles.feedBorder} ${feedStyles.feedBg}`}>
+              <LiveFeedHeader isDark={isDark} feedBorder={feedStyles.feedBorder} feedText={feedStyles.feedText} />
               <div className="divide-y divide-[var(--color-border)]">
                 {data.liveFeed.map((row) => (
                   <MobileLiveFeedRow
                     key={`${row.vehicle}-${row.location}`}
                     row={row}
-                    feedBorder={feedBorder}
-                    feedText={feedText}
-                    feedMuted={feedMuted}
-                    feedSoft={feedSoft}
+                    feedBorder={feedStyles.feedBorder}
+                    feedText={feedStyles.feedText}
+                    feedMuted={feedStyles.feedMuted}
+                    feedSoft={feedStyles.feedSoft}
                     showUpdated
                   />
                 ))}
@@ -284,43 +306,42 @@ export default function MarketIntelligence({ data }) {
           ) : null}
         </div>
 
-        {/* Desktop: stats row + live feed sidebar */}
-        <div className="hidden gap-4 lg:grid lg:grid-cols-[1.35fr_1fr] lg:items-start lg:gap-6">
-          <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">{statCards}</div>
-
-          {data.liveFeed?.length > 0 ? (
-            <DesktopLiveFeed
-              liveFeed={data.liveFeed}
-              isDark={isDark}
-              feedBg={feedBg}
-              feedBorder={feedBorder}
-              feedText={feedText}
-              feedMuted={feedMuted}
-              feedSoft={feedSoft}
-              feedHeaderBg={feedHeaderBg}
-              feedHeaderDivider={feedHeaderDivider}
-            />
-          ) : null}
+        <div className="hidden md:grid md:grid-cols-2 md:gap-3 lg:hidden">
+          {statCards}
         </div>
 
-        {/* Tablet: stats grid only (no side-by-side live feed) */}
-        <div className="hidden md:flex md:flex-col md:gap-4 lg:hidden">
-          <div className="grid grid-cols-2 gap-3">{statCards}</div>
-          {data.liveFeed?.length > 0 ? (
-            <DesktopLiveFeed
-              liveFeed={data.liveFeed}
-              isDark={isDark}
-              feedBg={feedBg}
-              feedBorder={feedBorder}
-              feedText={feedText}
-              feedMuted={feedMuted}
-              feedSoft={feedSoft}
-              feedHeaderBg={feedHeaderBg}
-              feedHeaderDivider={feedHeaderDivider}
-            />
-          ) : null}
-        </div>
+        {!hideSidebar ? (
+          <div className="mt-4 hidden md:block lg:hidden">
+            <DesktopLiveFeed liveFeed={data.liveFeed} isDark={isDark} />
+          </div>
+        ) : null}
+
+        <div className="hidden lg:grid lg:grid-cols-4 lg:gap-3">{statCards}</div>
       </div>
+    </>
+  );
+}
+
+export default function MarketIntelligence({ data, grouped = false, hideSidebar = false, className = "" }) {
+  const { theme } = useTheme();
+  if (!data) return null;
+
+  const isDark = theme === "dark";
+  const sectionBg = grouped ? "" : generationSectionBg(isDark, false);
+
+  const body = <MarketIntelligenceBody data={data} isDark={isDark} grouped={grouped} hideSidebar={hideSidebar} />;
+
+  if (grouped) {
+    return (
+      <section className={`w-full text-[var(--color-text)] ${className}`.trim()}>
+        {body}
+      </section>
+    );
+  }
+
+  return (
+    <section className={`w-full overflow-x-hidden text-[var(--color-text)] ${sectionBg}`}>
+      {body}
     </section>
   );
 }

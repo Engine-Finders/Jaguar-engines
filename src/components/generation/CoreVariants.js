@@ -12,13 +12,12 @@ function VariantPanel({ title, icon, variants, tone, isDark }) {
   const labelToneClass = isDiesel ? (isDark ? "text-[#2484ff]" : "text-[#0b67dc]") : "text-[#189454]";
   const blockToneClass = isDiesel ? (isDark ? "bg-[#2484ff]" : "bg-[#0b67dc]") : "bg-[#189454]";
   const textClass = isDark ? "text-white/88" : "text-[var(--color-text)]";
-  const separatorClass = isDark ? "text-white/50" : "text-[var(--color-text-soft)]";
 
   return (
     <div className="glass-panel flex items-stretch overflow-hidden rounded-md">
       <span
-        className={`flex w-16 shrink-0 items-center justify-center text-white ${blockToneClass}`}
-        style={{ clipPath: "polygon(0 0, 100% 0, 60% 100%, 0 100%)" }}
+        className={`flex w-[4.25rem] shrink-0 items-center justify-center text-white ${blockToneClass}`}
+        style={{ clipPath: "polygon(0 0, 100% 0, 58% 100%, 0 100%)" }}
       >
         <GenIcon name={icon} className="h-7 w-7" />
       </span>
@@ -26,33 +25,29 @@ function VariantPanel({ title, icon, variants, tone, isDark }) {
         <p className={`text-[0.76rem] font-semibold uppercase tracking-wide ${labelToneClass}`}>
           {title}
         </p>
-        <p className={`mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-[0.98rem] font-bold leading-snug ${textClass}`}>
+        <ul className="mt-2 grid grid-cols-2 gap-x-3 gap-y-1.5">
           {variants.map((variant, index) => (
-            <span key={variant.url || variant.name || index} className="inline-flex items-center">
+            <li key={variant.url || variant.name || index} className="min-w-0">
               <Link
                 href={variant.url || "#"}
-                className={`cursor-pointer rounded-sm px-1 py-0.5 transition-colors duration-200 hover:text-[var(--color-primary)] focus-visible:text-[var(--color-primary)] focus-visible:outline-none active:text-[var(--color-primary)] ${textClass}`}
+                className={`block text-[0.88rem] font-bold leading-snug transition-colors duration-200 hover:text-[var(--color-primary)] focus-visible:text-[var(--color-primary)] focus-visible:outline-none ${textClass}`}
                 dangerouslySetInnerHTML={{ __html: variant.name }}
               />
-              {index < variants.length - 1 ? (
-                <span aria-hidden="true" className={separatorClass}>
-                  •
-                </span>
-              ) : null}
-            </span>
+            </li>
           ))}
-        </p>
+        </ul>
       </div>
     </div>
   );
 }
 
-export default function CoreVariants({ data }) {
+export default function CoreVariants({ data, grouped = false, className = "" }) {
   const { theme } = useTheme();
   if (!data) return null;
 
   const isDark = theme === "dark";
-  const sectionBg = generationSectionBg(isDark, true);
+  const sectionBg = grouped ? "" : generationSectionBg(isDark, true);
+  const headerBg = generationSectionBg(isDark, true);
   const headerText =
     data.h2 ||
     [data.subheading, "Diesel & Petrol Lineup"].filter(Boolean).join(" - ");
@@ -70,11 +65,17 @@ export default function CoreVariants({ data }) {
     </div>
   ) : null;
 
-  return (
-    <section className={`w-full text-[var(--color-text)] ${sectionBg}`}>
-      <GenerationSectionHeader title={title} subHeadline={data.subHeadline} isDark={isDark} sectionBg={sectionBg} />
+  const body = (
+    <>
+      <GenerationSectionHeader
+        title={title}
+        subHeadline={data.subHeadline}
+        isDark={isDark}
+        sectionBg={headerBg}
+        mobilePlain
+      />
 
-      <div className="relative mx-auto w-full max-w-8xl px-4 pb-5 pt-4 md:px-8 md:pb-6 md:pt-5">
+      <div className={`relative mx-auto w-full max-w-8xl ${grouped ? "px-0 pb-5 pt-4 md:pb-6 md:pt-5" : "px-4 pb-5 pt-4 md:px-8 md:pb-6 md:pt-5"}`}>
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:gap-4">
           <VariantPanel
             title="Diesel Variants"
@@ -85,7 +86,7 @@ export default function CoreVariants({ data }) {
           />
           <VariantPanel
             title="Petrol Variants"
-            icon="drum"
+            icon="engine"
             variants={data.petrolVariants}
             tone="petrol"
             isDark={isDark}
@@ -94,6 +95,20 @@ export default function CoreVariants({ data }) {
 
         {scopeNoteBlock ? <div className="mt-3 md:mt-4">{scopeNoteBlock}</div> : null}
       </div>
+    </>
+  );
+
+  if (grouped) {
+    return (
+      <section className={`w-full text-[var(--color-text)] ${className}`.trim()}>
+        {body}
+      </section>
+    );
+  }
+
+  return (
+    <section className={`w-full text-[var(--color-text)] ${sectionBg}`}>
+      {body}
     </section>
   );
 }

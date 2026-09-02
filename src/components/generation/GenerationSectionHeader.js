@@ -6,15 +6,30 @@ import { sectionDescription, sectionH2 } from "./generationSection";
 
 const HEADER_IMAGE = "/home-image/sec2-bg.webp";
 
-export default function GenerationSectionHeader({ title, subHeadline, isDark, sectionBg, showHeaderImage = true }) {
+export default function GenerationSectionHeader({
+  title,
+  subHeadline,
+  isDark,
+  sectionBg,
+  showHeaderImage = true,
+  mobilePlain = false,
+}) {
   const lightGradient = sectionBg?.includes("ececea")
     ? "absolute inset-0 bg-[linear-gradient(90deg,#ececea_0%,rgba(236,236,234,0.88)_34%,rgba(236,236,234,0.18)_100%)]"
     : "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(243,243,241,0.88)_34%,rgba(243,243,241,0.18)_100%)]";
 
+  const wrapperBg = mobilePlain
+    ? isDark
+      ? "bg-transparent md:bg-[var(--color-page)]"
+      : "bg-transparent md:bg-[#ececea]"
+    : sectionBg;
+
   return (
-    <div className={`relative overflow-hidden ${sectionBg}`}>
+    <div className={`relative overflow-hidden ${wrapperBg}`}>
       {showHeaderImage ? (
-        <div className="absolute inset-y-0 right-0 w-[62%] md:w-[48%]">
+        <div
+          className={`absolute inset-y-0 right-0 w-[62%] md:w-[48%] ${mobilePlain ? "hidden md:block" : ""}`}
+        >
           <Image
             src={HEADER_IMAGE}
             alt=""
