@@ -107,16 +107,16 @@ export default function VariantHero({ data }) {
   // Desktop: single row over the hero image, floating vertical dividers between every item.
   // Self-hides on mobile so it can stay embedded in the hero section for both breakpoints.
   const desktopTrustBadges = data.trustBadges?.length > 0 ? (
-    <div className={`mt-6 hidden rounded-md border ${cardBorderClass} ${cardBgClass} p-4 backdrop-blur-sm md:block`}>
-      <div className="flex items-stretch py-1.5">
+    <div className={`mt-6 hidden rounded-md border ${cardBorderClass} ${cardBgClass} px-3 py-2 backdrop-blur-sm md:block`}>
+      <div className="flex items-stretch py-0.5">
         {data.trustBadges.map((badge, index) => {
           const { icon, label } = parseBadge(badge, index);
           return (
             <div key={badge} className="flex flex-1 items-stretch">
               {index > 0 ? (
-                <span aria-hidden="true" className={`mx-4 my-1 w-px shrink-0 self-center ${dividerClass}`} style={{ height: "70%" }} />
+                <span aria-hidden="true" className={`mx-3 my-0.5 w-px shrink-0 self-center ${dividerClass}`} style={{ height: "70%" }} />
               ) : null}
-              <div className="flex w-full items-center gap-2.5 text-left">
+              <div className="flex w-full items-center gap-2 text-left">
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center md:h-11 md:w-11">
                   <HomeIcon name={icon} isDark={isDark} className="h-10 w-10 object-contain md:h-11 md:w-11" />
                 </span>

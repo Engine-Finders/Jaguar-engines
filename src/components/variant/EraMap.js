@@ -7,7 +7,7 @@ import MStripe from "@/components/reusableComponents/MStripe";
 import GenIcon from "../generation/GenIcons";
 import { variantSectionBg, splitSectionH2, tableHeaderClass, primaryBadgeClass } from "./variantSection";
 
-const DESKTOP_COLS = "grid-cols-[130px_110px_1.3fr_1.2fr_1.1fr_1.8fr]";
+const DESKTOP_COLS = "grid-cols-[96px_110px_1.3fr_1.2fr_1.1fr_1.8fr]";
 const CAR_IMAGE = "/320d/era_map.webp";
 
 const TRUST_POINTS = [
@@ -36,11 +36,17 @@ function GenerationBadge({ generation, className = "", isDark }) {
   );
 }
 
-function GenerationThumb({ generation, isDark }) {
+function GenerationThumb({ generation, isDark, imageOnly = false }) {
   return (
-    <div className="relative h-16 w-full">
-      <GenerationBadge generation={generation} isDark={isDark} />
-      <Image src={CAR_IMAGE} alt={`BMW 320d ${generation}`} fill className="relative z-10 object-contain" sizes="130px" />
+    <div className={`relative w-full ${imageOnly ? "h-14" : "h-16"}`}>
+      {!imageOnly ? <GenerationBadge generation={generation} isDark={isDark} /> : null}
+      <Image
+        src={CAR_IMAGE}
+        alt={`BMW 320d ${generation}`}
+        fill
+        className={`object-contain ${imageOnly ? "" : "relative z-10"}`}
+        sizes={imageOnly ? "96px" : "130px"}
+      />
     </div>
   );
 }
@@ -54,7 +60,7 @@ function DesktopRow({ row, isDark }) {
   return (
     <div className={`grid ${DESKTOP_COLS} items-stretch gap-px ${rowClass} text-[0.82rem] border-b ${borderBottom} last:border-b-0`}>
       <div className="flex items-center px-2 py-2">
-        <GenerationThumb generation={row.generation} isDark={isDark} />
+        <GenerationThumb generation={row.generation} isDark={isDark} imageOnly />
       </div>
       <span className={`flex items-center px-3 border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.years }} />
       <span className={`flex items-center px-3 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.engineCode }} />
@@ -177,7 +183,7 @@ export default function EraMap({ data }) {
           </div>
         </div>
 
-        <div className="mt-6 flex flex-col items-start gap-6 rounded-xl border border-[var(--color-border)] bg-[var(--color-card)] p-6 shadow-lg lg:flex-row lg:items-center lg:justify-between md:p-8">
+        <div className="mt-6 flex flex-col items-start gap-5 rounded-xl border border-[var(--color-border)] bg-[var(--color-card)] px-5 py-4 shadow-lg lg:flex-row lg:items-center lg:justify-between md:px-6 md:py-4">
           <div className="flex items-start gap-4 lg:max-w-[45%] lg:items-center">
             <span className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full border text-[var(--color-primary)] ${isDark ? "border-white/15 bg-white/5" : "border-[var(--color-border)] bg-[var(--color-surface)]"}`}>
               <GenIcon name="shield" className="h-5 w-5" />

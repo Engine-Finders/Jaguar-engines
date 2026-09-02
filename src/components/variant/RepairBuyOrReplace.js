@@ -217,14 +217,17 @@ export default function RepairBuyOrReplace({ data }) {
 
         <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2">
           {data.closingVerdict ? (
-            <div className="glass-panel flex gap-3 rounded-md p-4">
-              <span className={`mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${primaryBadgeClass(isDark)}`}>
-                <GenIcon name="shield" className="h-4.5 w-4.5" />
-              </span>
-              <div className="min-w-0 flex-1">
+            <div className="glass-panel flex flex-col gap-2 rounded-md p-4">
+              <div className="flex items-center gap-3">
+                <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${primaryBadgeClass(isDark)}`}>
+                  <GenIcon name="shield" className="h-4.5 w-4.5" />
+                </span>
                 <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">Closing Verdict</p>
-                <p className="mt-1 text-[0.85rem] leading-[1.5] text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: data.closingVerdict }} />
               </div>
+              <p
+                className="w-full text-[0.85rem] leading-[1.5] text-[var(--color-text)]"
+                dangerouslySetInnerHTML={{ __html: data.closingVerdict }}
+              />
             </div>
           ) : null}
 
