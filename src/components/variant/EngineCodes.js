@@ -130,20 +130,34 @@ export default function EngineCodes({ data }) {
   const quoteCtaBanner = data.cta?.label ? (
     <a
       href="/quote"
-      className={`${primaryCtaClass("relative flex items-center gap-4 overflow-hidden rounded-xl border border-[var(--color-border)] p-5")} ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary-strong)]"}`}
+      className={`relative flex items-center gap-4 overflow-hidden rounded-xl border p-5 no-underline backdrop-blur-xl backdrop-saturate-150 ${
+        isDark
+          ? "border-white/20 bg-[rgba(20,21,21,0.62)] text-white shadow-[0_12px_32px_rgba(0,0,0,0.45)]"
+          : `${primaryCtaClass("")} border-[var(--color-border)] bg-[var(--color-primary-strong)]`
+      }`}
     >
       <div className="absolute inset-0">
         <Image src={ENGINE_IMAGE} alt="" fill className="object-cover object-right opacity-60" sizes="400px" />
-        <div className={`absolute inset-0 ${isDark ? "bg-[linear-gradient(90deg,var(--color-primary-strong)_0%,rgba(11,12,12,0.85)_55%,transparent_100%)]" : "bg-[linear-gradient(90deg,var(--color-primary-strong)_0%,rgba(17,18,16,0.75)_55%,transparent_100%)]"}`} />
+        <div
+          className={`absolute inset-0 ${
+            isDark
+              ? "bg-[linear-gradient(90deg,rgba(11,12,12,0.82)_0%,rgba(11,12,12,0.55)_55%,rgba(11,12,12,0.18)_100%)]"
+              : "bg-[linear-gradient(90deg,var(--color-primary-strong)_0%,rgba(17,18,16,0.75)_55%,transparent_100%)]"
+          }`}
+        />
       </div>
 
       <div className="relative z-10 flex items-center gap-4">
-        <span className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full border shadow-lg ${isDark ? "border-[var(--color-page)]/30 bg-[var(--color-primary)] text-[var(--color-page)]" : "border-white/30 bg-[var(--color-primary)] text-white"}`}>
+        <span
+          className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full border shadow-lg ${
+            isDark ? "border-white/25 bg-white/10 text-white" : "border-white/30 bg-[var(--color-primary)] text-white"
+          }`}
+        >
           <GenIcon name="arrow" className="h-5 w-5" />
         </span>
         <div className="min-w-0">
-          <p className={`text-[0.95rem] font-bold leading-tight ${isDark ? "text-[var(--color-page)]" : "text-white"}`}>{data.cta.label}</p>
-          <p className={`mt-1 text-[0.78rem] leading-[1.4] ${isDark ? "text-[var(--color-page)]/80" : "text-white/80"}`}>Get quotes from trusted UK specialists in minutes.</p>
+          <p className={`text-[0.95rem] font-bold leading-tight ${isDark ? "text-white" : "text-white"}`}>{data.cta.label}</p>
+          <p className={`mt-1 text-[0.78rem] leading-[1.4] ${isDark ? "text-white/80" : "text-white/80"}`}>Get quotes from trusted UK specialists in minutes.</p>
         </div>
       </div>
     </a>

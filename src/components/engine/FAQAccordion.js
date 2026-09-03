@@ -1,13 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { sectionDescription, sectionH2 } from "@/components/models/sectionTypography";
-
-const ENGINE_IMAGE =
-  "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=900&q=80";
+import { engineSectionBg } from "./engineSection";
 
 function cleanText(text = "") {
   return String(text)
@@ -20,7 +17,7 @@ function cleanText(text = "") {
 }
 
 function shortEngineName(engineLabel = "") {
-  return cleanText(engineLabel).replace(/^BMW\s+/i, "") || "Engine";
+  return cleanText(engineLabel).replace(/^Jaguar\s+/i, "").replace(/^BMW\s+/i, "") || "Engine";
 }
 
 function parseQuestion(question = "") {
@@ -87,7 +84,7 @@ function FaqItem({ item, open, onToggle, isLast, isDark }) {
   );
 }
 
-export default function FAQAccordion({ data, engineLabel = "BMW Engine" }) {
+export default function FAQAccordion({ data, engineLabel = "Jaguar Engine" }) {
   const { theme } = useTheme();
   const items = data?.items || [];
   const [openId, setOpenId] = useState(items[0]?.id ?? null);
@@ -98,34 +95,8 @@ export default function FAQAccordion({ data, engineLabel = "BMW Engine" }) {
   const engineCode = shortEngineName(engineLabel);
 
   return (
-    <section className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden bg-[var(--color-page)] py-6 text-[var(--color-text)] md:py-9">
-      {/* Full-section engine background */}
-      <div className="absolute inset-0">
-        <div className={`absolute inset-0 ${isDark ? "bg-[var(--color-page)]" : "bg-[var(--color-page-soft)]"}`} />
-        <Image
-          src={ENGINE_IMAGE}
-          alt=""
-          fill
-          sizes="100vw"
-          className="object-cover object-[center_35%] opacity-80 md:opacity-90"
-        />
-        <div
-          className={`absolute inset-0 ${
-            isDark
-              ? "bg-[linear-gradient(90deg,var(--color-page)_0%,var(--color-hero-overlay)_42%,transparent_72%)]"
-              : "bg-[linear-gradient(90deg,var(--color-page-soft)_0%,var(--color-hero-overlay)_42%,transparent_72%)]"
-          }`}
-        />
-        <div
-          className={`absolute inset-0 ${
-            isDark
-              ? "bg-[linear-gradient(180deg,var(--color-hero-overlay)_0%,transparent_30%,transparent_70%,var(--color-hero-fade)_100%)]"
-              : "bg-[linear-gradient(180deg,var(--color-hero-overlay)_0%,transparent_32%,transparent_68%,var(--color-hero-fade)_100%)]"
-          }`}
-        />
-      </div>
-
-      <div className="relative z-[1] mx-auto w-full max-w-8xl px-4 md:px-8">
+    <section className={`relative w-full overflow-x-hidden py-6 text-[var(--color-text)] md:py-9 ${engineSectionBg(isDark, true)}`}>
+      <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
         <div className="grid items-start gap-5 md:grid-cols-[minmax(260px,0.85fr)_minmax(0,1.35fr)] md:gap-8 lg:gap-10">
           <div className="min-w-0 max-w-[480px]">
             <h2 className={`font-bold tracking-normal ${sectionH2}`}>
@@ -134,14 +105,14 @@ export default function FAQAccordion({ data, engineLabel = "BMW Engine" }) {
             <div className="mt-3">
               <MStripe />
             </div>
-            <p className={`mt-4 ${sectionDescription} ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
-              Expert answers to the most common BMW{" "}
+            <p className={`mt-4 ${sectionDescription} ${isDark ? "text-white/80" : "text-[var(--color-text-muted)]"}`}>
+              Expert answers to the most common Jaguar{" "}
               <span className="font-semibold text-[var(--color-primary)]">{engineCode}</span> engine questions.
             </p>
           </div>
 
           <div
-            className={`overflow-hidden rounded-xl border backdrop-blur-[2px] ${
+            className={`overflow-hidden rounded-xl border ${
               isDark
                 ? "border-[var(--color-border)] bg-[var(--color-surface)]"
                 : "border-[var(--color-border)] bg-[var(--color-surface)] shadow-[0_14px_36px_var(--color-shadow)]"

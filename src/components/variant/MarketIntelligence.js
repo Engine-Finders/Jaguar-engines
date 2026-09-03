@@ -101,7 +101,7 @@ function RegionalDemandMap({ regions, isDark }) {
 
   return (
     <div className="flex h-full flex-col rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-4">
-      <p className="text-[0.85rem] font-bold uppercase tracking-wide text-[var(--color-text)]">Regional Demand Breakdown</p>
+      <p className="font-heading text-[1.05rem] font-bold uppercase tracking-wide text-[var(--color-text)] md:text-[1.15rem]">Regional Demand Breakdown</p>
       <div className="relative mt-4 min-h-[320px] w-full flex-1">
         <ComposableMap
           projection="geoMercator"
@@ -192,7 +192,7 @@ export default function MarketIntelligence({ data }) {
                           <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
                             <GenIcon name="chart" className="h-4.5 w-4.5" />
                           </span>
-                          <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">{item.label}</p>
+                          <p className="text-[0.88rem] font-semibold uppercase tracking-wide text-[var(--color-primary)] md:text-[0.95rem]">{item.label}</p>
                         </div>
                         <div className="flex flex-col">
                           {regions.map((region) => (
@@ -214,12 +214,12 @@ export default function MarketIntelligence({ data }) {
                           <GenIcon name={ITEM_ICONS[index % ITEM_ICONS.length]} className="h-5 w-5" />
                         </span>
                         <div className="flex min-w-0 flex-col gap-0.5">
-                          <p className="text-[0.7rem] font-medium text-[var(--color-text-soft)]">{item.label}</p>
+                          <p className="text-[0.88rem] font-semibold leading-snug text-[var(--color-text)] md:text-[0.95rem]">{item.label}</p>
                           {title ? <p className="text-[0.8rem] font-bold leading-tight text-[var(--color-text)]">{title}</p> : null}
                         </div>
                       </div>
 
-                      <p className="mt-4 text-[16px] font-extrabold leading-none text-[var(--color-primary)] md:text-[18px]">{stat}</p>
+                      <p className="font-heading mt-4 text-[16px] font-bold leading-[1.3] text-[var(--color-primary)] md:text-[28px] md:leading-none">{stat}</p>
 
                       <div className="mt-2 flex flex-col gap-1">
                         {subtext ? <p className="text-[0.72rem] text-[var(--color-text-muted)]">{subtext}</p> : null}

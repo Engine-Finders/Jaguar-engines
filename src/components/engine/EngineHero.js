@@ -4,14 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTheme } from "@/components/shared/themeProvider";
 import MStripe from "@/components/reusableComponents/MStripe";
+import HomeIcon from "@/components/home/homeIcons";
 import { sectionButton, sectionDescription, sectionH1 } from "@/components/models/sectionTypography";
 
-const statIconPaths = [
-  <path key="chart" d="M5 19V9m5 10V5m5 14v-7m5 7H3" />,
-  <path key="tool" d="m14.7 6.3 3-3a4 4 0 0 1 0 5.7l-1.4 1.4-2.7-2.7L7 14.3V17H4.3l6.6-6.6-2.7-2.7 1.4-1.4a4 4 0 0 1 5.1 0Z" />,
-  <path key="shield" d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm-2 9 1.6 1.6L15 10" />,
-  <path key="trophy" d="M8 4h8v4a4 4 0 0 1-8 0V4Zm0 2H4v2a3 3 0 0 0 4 2.8M16 6h4v2a3 3 0 0 1-4 2.8M12 12v5m-3 3h6m-7 0h8" />,
-];
+const TRUST_STRIP_ICONS = ["real-inquiries", "vehicle", "expert-verified", "engine-finders"];
 
 function normalizeText(value = "") {
   return value
@@ -30,32 +26,6 @@ function splitTagPill(tagPill = "") {
     .filter(Boolean);
 }
 
-function splitStatLabel(label = "") {
-  const clean = normalizeText(label);
-  const match = clean.match(/^([0-9,/+.]+)\s+(.+)$/);
-
-  if (!match) {
-    return { value: "", lines: [clean] };
-  }
-
-  const [, value, rest] = match;
-  return {
-    value,
-    lines: rest.split(" ").reduce(
-      (acc, word) => {
-        if (acc[0].length <= acc[1].length) {
-          acc[0] = acc[0] ? `${acc[0]} ${word}` : word;
-        } else {
-          acc[1] = acc[1] ? `${acc[1]} ${word}` : word;
-        }
-
-        return acc;
-      },
-      ["", ""],
-    ),
-  };
-}
-
 function ArrowIcon() {
   return (
     <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">
@@ -67,15 +37,17 @@ function ArrowIcon() {
 function StatIcon({ index, isDark }) {
   return (
     <span
-      className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full border text-[var(--color-primary)] md:h-14 md:w-14 ${
+      className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full border text-[var(--color-primary)] md:h-16 md:w-16 ${
         isDark
           ? "border-white/14 bg-[radial-gradient(circle_at_30%_30%,rgba(31,90,185,0.24),rgba(4,12,26,0.92)_72%)]"
           : "border-[rgba(11,103,220,0.18)] bg-[radial-gradient(circle_at_30%_30%,rgba(220,234,255,0.95),rgba(255,255,255,0.98)_72%)]"
       }`}
     >
-      <svg aria-hidden="true" viewBox="0 0 24 24" className="h-7 w-7 md:h-8 md:w-8" fill="none" stroke="currentColor" strokeWidth="1.85">
-        {statIconPaths[index] || statIconPaths[0]}
-      </svg>
+      <HomeIcon
+        name={TRUST_STRIP_ICONS[index] || "real-inquiries"}
+        isDark={isDark}
+        className="h-10 w-10 object-contain md:h-11 md:w-11"
+      />
     </span>
   );
 }
@@ -101,47 +73,43 @@ function MetaPill({ items, isDark }) {
   );
 }
 
-function HeroTitle({ title, isDark, accentText }) {
+function HeroTitle({ title, isDark }) {
   const cleanTitle = normalizeText(title);
-  const accent = accentText && cleanTitle.includes(accentText) ? accentText : "Replacement Cost";
-  const accentIndex = cleanTitle.indexOf(accent);
+  const dash = cleanTitle.indexOf(" - ");
+  const before = dash === -1 ? cleanTitle : cleanTitle.slice(0, dash);
+  const accent = dash === -1 ? "" : cleanTitle.slice(dash + 3);
   const textClass = isDark ? "text-white" : "text-[var(--color-text)]";
-
-  if (accentIndex === -1) {
-    return <h1 className={`max-w-[700px] font-bold tracking-normal ${textClass} ${sectionH1}`}>{cleanTitle}</h1>;
-  }
 
   return (
     <h1 className={`max-w-[700px] font-bold tracking-normal ${textClass} ${sectionH1}`}>
-      {cleanTitle.slice(0, accentIndex)}
-      <span className="text-[var(--color-primary)]">{accent}</span>
-      {cleanTitle.slice(accentIndex + accent.length)}
+      {before}
+      {accent ? (
+        <>
+          {" - "}
+          <span className="text-[var(--color-chrome-bright)]">{accent}</span>
+        </>
+      ) : null}
     </h1>
   );
 }
 
 function StatCard({ item, index, isDark }) {
-  const stat = splitStatLabel(item.label);
+  const label = normalizeText(item.label);
 
   return (
     <li
-      className={`flex min-h-[108px] items-center gap-2 rounded-2xl border px-3 py-0 shadow-[0_20px_48px_rgba(0,0,0,0.22)] md:min-h-[82px] md:rounded-none md:border-0 md:border-r md:bg-transparent md:px-3 md:py-1.5 md:last:border-r-0 md:shadow-none ${
+      className={`flex min-h-[108px] w-full items-center gap-3 rounded-2xl border px-3 py-2 shadow-[0_20px_48px_rgba(0,0,0,0.22)] md:min-h-[96px] md:w-auto md:flex-none md:rounded-none md:border-0 md:border-r md:bg-transparent md:px-5 md:py-3 md:last:border-r-0 md:shadow-none ${
         isDark
           ? "border-white/14 bg-[linear-gradient(180deg,rgba(7,16,33,0.88)_0%,rgba(3,10,23,0.96)_100%)] md:border-white/14"
           : "border-[rgba(11,103,220,0.18)] bg-[linear-gradient(180deg,rgba(255,255,255,0.88)_0%,rgba(239,245,252,0.96)_100%)] md:border-[rgba(11,103,220,0.16)]"
       }`}
     >
       <StatIcon index={index} isDark={isDark} />
-      <div className="min-w-0">
-        {stat.value ? <p className={`text-[21px] font-bold leading-none md:text-[20px] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>{stat.value}</p> : null}
-        <div className={`${stat.value ? "mt-0.5" : ""} space-y-0`}>
-          {stat.lines.filter(Boolean).map((line) => (
-            <p key={line} className={`text-[11px] font-medium uppercase leading-[1.02] md:text-[11px] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
-              {line}
-            </p>
-          ))}
-        </div>
-      </div>
+      <p
+        className={`whitespace-nowrap text-[13px] font-semibold leading-none md:text-[15px] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}
+      >
+        {label}
+      </p>
     </li>
   );
 }
@@ -153,7 +121,6 @@ export default function EngineHero({ data }) {
 
   const isDark = theme === "dark";
   const metaItems = splitTagPill(data.tagPill);
-  const accentToken = metaItems[1] || "";
   const description = normalizeText(data.subHeadline);
   const ctaLabel = data.primaryCta?.label ? normalizeText(data.primaryCta.label).replace(/\s*\u2192$/, "") : "";
 
@@ -186,17 +153,17 @@ export default function EngineHero({ data }) {
             <MetaPill items={metaItems} isDark={isDark} />
 
             <div className="mt-3 md:mt-3">
-              <HeroTitle title={data.h1} isDark={isDark} accentText={accentToken} />
+              <HeroTitle title={data.h1} isDark={isDark} />
             </div>
             <div className="mt-3">
               <MStripe />
             </div>
 
             <p className={`mt-3 max-w-full break-words px-0 ${sectionDescription} ${isDark ? "text-white/88" : "text-[var(--color-text-muted)]"}`}>
-              {description.split("[BMW-VERIFIED]").map((part, index, array) => (
+              {description.split("[JAG-VERIFIED]").map((part, index, array) => (
                 <span key={`${part}-${index}`}>
                   {part}
-                  {index < array.length - 1 ? <span className="text-[var(--color-primary)]">[BMW-VERIFIED]</span> : null}
+                  {index < array.length - 1 ? <span className="text-[var(--color-primary)]">[JAG-VERIFIED]</span> : null}
                 </span>
               ))}
             </p>
@@ -238,7 +205,7 @@ export default function EngineHero({ data }) {
 
         {data.trustStrip?.length > 0 ? (
           <ul
-            className={`relative z-10 mt-3 grid grid-cols-2 gap-2.5 md:mt-[-10px] md:grid-cols-4 md:gap-0 md:overflow-hidden md:rounded-2xl md:border md:shadow-[0_22px_56px_rgba(0,0,0,0.24)] ${
+            className={`relative z-10 mt-3 grid grid-cols-2 gap-2.5 md:mt-[-10px] md:flex md:w-max md:grid-cols-none md:gap-0 md:overflow-hidden md:rounded-2xl md:border md:shadow-[0_22px_56px_rgba(0,0,0,0.24)] ${
               isDark
                 ? "md:border-white/14 md:bg-[linear-gradient(180deg,rgba(7,16,33,0.74)_0%,rgba(3,10,23,0.86)_100%)]"
                 : "md:border-[rgba(11,103,220,0.16)] md:bg-[linear-gradient(180deg,rgba(255,255,255,0.82)_0%,rgba(239,245,252,0.94)_100%)]"

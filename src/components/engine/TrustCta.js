@@ -3,7 +3,11 @@
 import Link from "next/link";
 import { useTheme } from "@/components/shared/themeProvider";
 import MStripe from "@/components/reusableComponents/MStripe";
+import HomeIcon from "@/components/home/homeIcons";
 import { sectionH2 } from "@/components/models/sectionTypography";
+import { engineSectionBg } from "./engineSection";
+
+const TRUST_ICONS = ["shield", "real-inquiries", "pin"];
 
 function cleanText(text = "") {
   return String(text)
@@ -16,7 +20,7 @@ function cleanText(text = "") {
 }
 
 function shortEngineName(engineLabel = "") {
-  return cleanText(engineLabel).replace(/^BMW\s+/i, "") || "Engine";
+  return cleanText(engineLabel).replace(/^Jaguar\s+/i, "").replace(/^BMW\s+/i, "") || "Engine";
 }
 
 function parseTrustPoint(point = "") {
@@ -29,31 +33,10 @@ function parseTrustPoint(point = "") {
   };
 }
 
-function TrustIcon({ title }) {
-  const key = cleanText(title).toLowerCase();
-  let path = <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm-2 9 1.6 1.6L15 10" />;
-
-  if (key.includes("compare")) {
-    path = (
-      <>
-        <circle cx="11" cy="11" r="6" />
-        <path d="m20 20-3.5-3.5M9 11h4M11 9v4" />
-      </>
-    );
-  } else if (key.includes("coverage") || key.includes("uk")) {
-    path = (
-      <>
-        <path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11Z" />
-        <circle cx="12" cy="10" r="2.2" />
-      </>
-    );
-  }
-
+function TrustIcon({ index, isDark }) {
   return (
-    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
-      <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.85">
-        {path}
-      </svg>
+    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)]">
+      <HomeIcon name={TRUST_ICONS[index % TRUST_ICONS.length]} isDark={isDark} className="h-7 w-7 object-contain" />
     </span>
   );
 }
@@ -74,23 +57,23 @@ function highlightConfidence(text = "") {
   );
 }
 
-export default function TrustCta({ data, engineLabel = "BMW Engine" }) {
+export default function TrustCta({ data, engineLabel = "Jaguar Engine" }) {
   const { theme } = useTheme();
   if (!data) return null;
 
   const isDark = theme === "dark";
   const engineCode = shortEngineName(engineLabel);
   const points = (data.trustPoints || []).map(parseTrustPoint);
-  const ctaLabel = cleanText(data.ctaButton?.label || "").replace(/\s*→\s*$/, "");
+  const ctaLabel = cleanText(data.ctaButton?.label || "")
+    .replace(/BMW/gi, "Jaguar")
+    .replace(/\s*→\s*$/, "");
 
   const lightCard =
     "border-[var(--color-border)] bg-[var(--color-surface)] shadow-[0_10px_28px_var(--color-shadow)]";
   const darkCard = "border-[var(--color-border)] bg-[var(--color-surface)]";
 
   return (
-    <section className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden bg-[var(--color-page)] py-6 text-[var(--color-text)] md:py-9">
-      <div className={`absolute inset-0 ${isDark ? "bg-[var(--color-page)]" : "bg-[var(--color-page)]"}`} />
-
+    <section className={`relative w-full overflow-x-hidden py-6 text-[var(--color-text)] md:py-9 ${engineSectionBg(isDark, false)}`}>
       <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
         <div>
           <h2 className={`font-bold tracking-normal ${sectionH2}`}>
@@ -101,15 +84,14 @@ export default function TrustCta({ data, engineLabel = "BMW Engine" }) {
           </div>
         </div>
 
-        {/* Desktop */}
         <div className="mt-4 hidden gap-3 md:grid md:grid-cols-3">
-          {points.map((point) => (
+          {points.map((point, index) => (
             <article
               key={point.title}
               className={`rounded-xl border px-4 py-4 ${isDark ? darkCard : lightCard}`}
             >
               <div className="flex items-start gap-3">
-                <TrustIcon title={point.title} />
+                <TrustIcon index={index} isDark={isDark} />
                 <div className="min-w-0">
                   <p className="text-[15px] font-bold text-[var(--color-text)]">{point.title}</p>
                   <p className="mt-1.5 text-[13px] leading-[1.45] text-[var(--color-text-muted)]">{point.text}</p>
@@ -126,32 +108,29 @@ export default function TrustCta({ data, engineLabel = "BMW Engine" }) {
               : "border-[var(--color-border)] bg-[var(--color-primary-soft)] shadow-[0_10px_28px_var(--color-shadow)]"
           }`}
         >
-          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--color-surface)] text-[var(--color-primary)] shadow-[0_4px_12px_var(--color-shadow)]">
-            <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.85">
-              <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm-2 9 1.6 1.6L15 10" />
-            </svg>
+          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--color-surface)] shadow-[0_4px_12px_var(--color-shadow)]">
+            <HomeIcon name="engine-finders" isDark={isDark} className="h-7 w-7 object-contain" />
           </span>
           <p className="min-w-0 flex-1 text-[13px] leading-[1.45] text-[var(--color-text)]">
-            {highlightConfidence(data.finalCta)}
+            {highlightConfidence(cleanText(data.finalCta || "").replace(/BMW/gi, "Jaguar"))}
           </p>
           {data.ctaButton?.href ? (
             <Link
               href="/quote"
               className="btn-cta inline-flex min-h-11 shrink-0 items-center justify-center rounded-lg bg-[var(--color-primary)] px-5 text-[13px] font-bold text-white"
             >
-              {ctaLabel || `Compare BMW ${engineCode} Engine Prices Now`} →
+              {ctaLabel || `Compare Jaguar ${engineCode} Engine Prices Now`} →
             </Link>
           ) : null}
         </div>
 
-        {/* Mobile */}
         <div className="mt-3 grid gap-2.5 md:hidden">
-          {points.map((point) => (
+          {points.map((point, index) => (
             <article
               key={point.title}
               className={`flex items-start gap-3 rounded-xl border px-3.5 py-3 ${isDark ? darkCard : lightCard}`}
             >
-              <TrustIcon title={point.title} />
+              <TrustIcon index={index} isDark={isDark} />
               <div className="min-w-0">
                 <p className="text-[14px] font-bold text-[var(--color-text)]">{point.title}</p>
                 <p className="mt-1 text-[12px] leading-[1.4] text-[var(--color-text-muted)]">{point.text}</p>
@@ -166,19 +145,21 @@ export default function TrustCta({ data, engineLabel = "BMW Engine" }) {
                 : "border-[var(--color-border)] bg-[var(--color-primary-soft)] shadow-[0_10px_28px_var(--color-shadow)]"
             }`}
           >
-            <span className="mx-auto flex h-11 w-11 items-center justify-center rounded-full bg-[var(--color-surface)] text-[var(--color-primary)] shadow-[0_4px_12px_var(--color-shadow)]">
-              <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.85">
-                <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm-2 9 1.6 1.6L15 10" />
-              </svg>
+            <span className="mx-auto flex h-11 w-11 items-center justify-center rounded-full bg-[var(--color-surface)] shadow-[0_4px_12px_var(--color-shadow)]">
+              <HomeIcon name="engine-finders" isDark={isDark} className="h-7 w-7 object-contain" />
             </span>
             <p className="mt-3 text-[20px] font-bold leading-[1.25] text-[var(--color-text)]">
-              Find the best BMW {engineCode} engine replacement UK drivers rely on.
+              Find the best Jaguar {engineCode} engine replacement UK drivers rely on.
             </p>
             <p className="mt-2 text-[12px] leading-[1.4] text-[var(--color-text-muted)]">
               {highlightConfidence(
-                data.finalCta?.includes("Compare")
-                  ? data.finalCta.slice(data.finalCta.indexOf("Compare"))
-                  : data.finalCta,
+                cleanText(data.finalCta || "")
+                  .replace(/BMW/gi, "Jaguar")
+                  .includes("Compare")
+                  ? cleanText(data.finalCta || "")
+                      .replace(/BMW/gi, "Jaguar")
+                      .slice(cleanText(data.finalCta || "").replace(/BMW/gi, "Jaguar").indexOf("Compare"))
+                  : cleanText(data.finalCta || "").replace(/BMW/gi, "Jaguar"),
               )}
             </p>
             {data.ctaButton?.href ? (
@@ -186,7 +167,7 @@ export default function TrustCta({ data, engineLabel = "BMW Engine" }) {
                 href="/quote"
                 className="btn-cta mt-3 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-lg bg-[var(--color-primary)] px-4 text-[13px] font-bold text-white"
               >
-                <span>{ctaLabel || `Compare BMW ${engineCode} Engine Prices Now`}</span>
+                <span>{ctaLabel || `Compare Jaguar ${engineCode} Engine Prices Now`}</span>
                 <span aria-hidden="true">→</span>
               </Link>
             ) : null}

@@ -65,11 +65,11 @@ export default async function EnginePage({ params }) {
 
   const glanceRows = data.atAGlance?.rows || [];
   const engineLabel =
-    glanceRows.find((row) => row.metric === "Engine Family")?.value || "BMW Engine";
+    glanceRows.find((row) => row.metric === "Engine Family")?.value || "Jaguar Engine";
   const yearsProduced =
     glanceRows.find((row) => row.metric === "Years Produced")?.value || "";
   const modelsFitted =
-    glanceRows.find((row) => row.metric === "Models Fitted (BMW only)")?.value || "";
+    glanceRows.find((row) => row.metric?.startsWith("Models Fitted"))?.value || "";
   const crossBrandFitment =
     glanceRows.find((row) => row.metric === "Cross-Brand Fitment")?.value || "";
 

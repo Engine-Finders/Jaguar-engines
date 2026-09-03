@@ -43,7 +43,7 @@ export default function TrustCta({ data }) {
                   <span className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full ${primaryBadgeClass(isDark)}`}>
                     <GenIcon name={point.icon || pointIcons[index % pointIcons.length]} className="h-5.5 w-5.5" />
                   </span>
-                  <p className="min-w-0 pt-1 text-[1.02rem] font-bold leading-snug text-[var(--color-text)]">{point.title}</p>
+                  <p className="font-heading min-w-0 pt-1 text-[1.15rem] font-bold leading-snug text-[var(--color-text)] md:text-[1.25rem]">{point.title}</p>
                 </div>
                 <p className="text-[0.85rem] leading-relaxed text-[var(--color-text-muted)] md:text-[0.9rem]" dangerouslySetInnerHTML={{ __html: point.text }} />
               </li>
@@ -60,7 +60,7 @@ export default function TrustCta({ data }) {
             <div className="relative flex w-full flex-col items-center gap-4 p-5 text-center md:min-h-[200px] md:flex-row md:justify-center md:p-8">
               <div className="flex max-w-[520px] flex-col items-center gap-3">
                 {data.finalCta ? (
-                  <p className={`text-[1rem] font-bold leading-[1.4] md:text-[1.2rem] ${headingClass}`} dangerouslySetInnerHTML={{ __html: data.finalCta }} />
+                  <p className={`font-heading text-[1.15rem] font-bold leading-[1.4] md:text-[1.4rem] ${headingClass}`} dangerouslySetInnerHTML={{ __html: data.finalCta }} />
                 ) : null}
                 {data.ctaButton ? (
                   <a

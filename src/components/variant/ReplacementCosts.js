@@ -1,13 +1,15 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
 import MStripe from "@/components/reusableComponents/MStripe";
 import GenIcon from "../generation/GenIcons";
-import { variantSectionBg, VariantSectionHeading, tableHeaderClass, primaryBadgeClass, primaryCtaClass } from "./variantSection";
+import { variantSectionBg, VariantSectionHeading, tableHeaderClass, primaryBadgeClass, primaryCtaClass, stripCtaArrow } from "./variantSection";
 
 const ROW_ICONS = ["tag", "refresh", "wrench", "crown"];
 const DESKTOP_COLS = "grid-cols-[1.2fr_1fr_1fr_0.9fr_1.4fr]";
+const HEADER_IMAGE = "/home-image/sec2-bg.webp";
 
 function DesktopRow({ row, icon, isDark }) {
   const rowClass = isDark ? "bg-black text-white" : "bg-[var(--color-table-surface)] text-[var(--color-text)]";
@@ -99,17 +101,33 @@ export default function ReplacementCosts({ data }) {
   if (!data) return null;
 
   const isDark = theme === "dark";
+  const sectionBg = variantSectionBg(isDark, true);
   const headerBg = tableHeaderClass(isDark);
   const headerDivider = isDark ? "border-white/20" : "border-white/25";
   const bodyWrapperBg = isDark ? "bg-black" : "bg-[var(--color-table-surface)]";
+  const ctaLabel = stripCtaArrow(data.cta?.label);
+  const headerGradient = isDark
+    ? "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(11,12,12,0.82)_34%,rgba(11,12,12,0.18)_100%)]"
+    : "absolute inset-0 bg-[linear-gradient(90deg,#ececea_0%,rgba(236,236,234,0.88)_34%,rgba(236,236,234,0.18)_100%)]";
 
   return (
-    <section className={`w-full overflow-x-hidden py-5 text-[var(--color-text)] md:py-6 ${variantSectionBg(isDark, true)}`}>
-      <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-        <VariantSectionHeading title={data.h2} />
-        <div className="mt-3">
-          <MStripe />
+    <section className={`w-full overflow-x-hidden text-[var(--color-text)] ${sectionBg}`}>
+      <div className={`relative overflow-hidden ${sectionBg}`}>
+        <div className="absolute inset-y-0 right-0 w-[62%] md:w-[48%]">
+          <Image src={HEADER_IMAGE} alt="" fill className="object-cover object-right" sizes="(max-width: 768px) 62vw, 48vw" />
+          <div className={headerGradient} />
         </div>
+        <div className="relative mx-auto w-full max-w-8xl px-4 pb-3 pt-5 md:px-8 md:pb-4 md:pt-6">
+          <div className="max-w-[650px]">
+            <VariantSectionHeading title={data.h2} />
+            <div className="mt-3">
+              <MStripe />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="relative mx-auto w-full max-w-8xl px-4 pb-5 md:px-8 md:pb-6">
 
         {/* Mobile only: accordion list */}
         <div className="mt-6 flex flex-col gap-3 md:hidden">
@@ -175,26 +193,25 @@ export default function ReplacementCosts({ data }) {
                 </p>
               </>
             ) : null}
-            {data.cta?.label ? (
+            {ctaLabel ? (
               <a
                 href="/quote"
                 className={`${primaryCtaClass("flex shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-xl px-4 py-2.5 text-[0.8rem]")}`}
               >
+                {ctaLabel}
                 <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
-                {data.cta.label}
               </a>
             ) : null}
           </div>
         ) : null}
 
-        {data.cta?.label ? (
+        {ctaLabel ? (
           <a
             href="/quote"
             className={`${primaryCtaClass("mt-4 flex w-full items-center justify-center gap-2 rounded-xl px-3 py-2.5 md:hidden")}`}
           >
+            <span className="whitespace-nowrap text-center text-[0.78rem] font-bold md:text-[0.9rem]">{ctaLabel}</span>
             <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
-            <span className="whitespace-nowrap text-center text-[0.78rem] font-bold md:text-[0.9rem]">{data.cta.label}</span>
-            <GenIcon name="chevron" className="h-4 w-4 shrink-0" />
           </a>
         ) : null}
       </div>

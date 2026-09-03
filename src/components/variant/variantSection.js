@@ -56,6 +56,13 @@ export function primaryCtaClass(extra = "") {
   return `btn-cta font-bold no-underline shadow-[0_12px_28px_var(--color-shadow)] ${extra}`.trim();
 }
 
+export function stripCtaArrow(label = "") {
+  return String(label)
+    .replace(/^\s*→\s*/, "")
+    .replace(/\s*→\s*$/, "")
+    .trim();
+}
+
 export function VariantSectionHeading({ title, className = "" }) {
   const parts = splitSectionH2(title);
   if (!title) return null;

@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
 import MStripe from "@/components/reusableComponents/MStripe";
 import GenIcon from "../generation/GenIcons";
-import { variantSectionBg, VariantSectionHeading, tableHeaderClass, primaryBadgeClass, primaryCtaClass } from "./variantSection";
+import { variantSectionBg, VariantSectionHeading, tableHeaderClass, primaryBadgeClass, primaryCtaClass, stripCtaArrow } from "./variantSection";
 
 const DESKTOP_COLS = "grid-cols-[1.6fr_0.9fr_1fr_1.7fr]";
 const MOBILE_COLS = "grid-cols-[220px_110px_140px_240px]";
@@ -73,7 +73,7 @@ function CheckList({ title, items, icon, tone, toneBorder, toneBg }) {
   if (!items?.length) return null;
   return (
     <div className={`flex h-full flex-1 flex-col rounded-md border ${toneBorder} ${toneBg}`}>
-      <p className={`flex items-center gap-2 border-b ${toneBorder} p-4 py-2.5 text-[0.82rem] font-semibold uppercase tracking-wide ${tone}`}>
+      <p className={`flex items-center gap-2 border-b ${toneBorder} px-3 py-2.5 text-[0.82rem] font-semibold uppercase tracking-wide ${tone}`}>
         <GenIcon name={icon} className="h-4 w-4" />
         {title}
       </p>
@@ -81,7 +81,7 @@ function CheckList({ title, items, icon, tone, toneBorder, toneBg }) {
         {items.map((item, index) => (
           <li
             key={item}
-            className={`flex items-start gap-2 px-4 py-2 text-[0.82rem] leading-[1.4] text-[var(--color-text-muted)] ${
+            className={`flex items-start gap-2 px-3 py-2 text-[0.82rem] leading-[1.4] text-[var(--color-text-muted)] ${
               index > 0 ? `border-t ${toneBorder}` : ""
             }`}
           >
@@ -105,6 +105,7 @@ export default function RepairBuyOrReplace({ data }) {
   const headerDivider = isDark ? "border-white/20" : "border-white/25";
   const headingClass = isDark ? "text-white" : "text-[var(--color-text)]";
   const bodyTextClass = isDark ? "text-white/80" : "text-[var(--color-text-muted)]";
+  const ctaLabel = stripCtaArrow(data.cta?.label);
 
   return (
     <section className={`w-full overflow-x-hidden text-[var(--color-text)] ${variantSectionBg(isDark, true)}`}>
@@ -217,7 +218,7 @@ export default function RepairBuyOrReplace({ data }) {
 
         <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2">
           {data.closingVerdict ? (
-            <div className="glass-panel flex flex-col gap-2 rounded-md p-4">
+            <div className="glass-panel flex flex-col gap-2 rounded-md p-4 md:px-3">
               <div className="flex items-center gap-3">
                 <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${primaryBadgeClass(isDark)}`}>
                   <GenIcon name="shield" className="h-4.5 w-4.5" />
@@ -232,8 +233,8 @@ export default function RepairBuyOrReplace({ data }) {
           ) : null}
 
           {/* Desktop: small CTA card with the engine graphic faded in on the right */}
-          {data.cta?.label ? (
-            <div className="glass-panel relative hidden flex-col gap-3 overflow-hidden rounded-md p-4 md:flex">
+          {ctaLabel ? (
+            <div className="glass-panel relative hidden flex-col gap-3 overflow-hidden rounded-md p-4 md:flex md:px-3">
               <div className="pointer-events-none absolute inset-y-0 right-0 w-2/3">
                 <Image src="/320d/engine.webp" alt="" fill className="object-contain object-right opacity-15" sizes="300px" />
                 <div
@@ -243,10 +244,10 @@ export default function RepairBuyOrReplace({ data }) {
               </div>
 
               <div className="relative z-10 flex items-start gap-3">
-                <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
-                  <GenIcon name="dollar" className="h-4.5 w-4.5" />
+                <span className="mt-0.5 flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
+                  <GenIcon name="dollar" className="h-6 w-6" />
                 </span>
-                <p className="text-[0.9rem] font-semibold leading-[1.4] text-[var(--color-text)]">
+                <p className="text-[1.15rem] font-semibold leading-[1.35] text-[var(--color-text)] md:text-[1.25rem]">
                   <span className="block">Don&apos;t guess.</span>
                   <span className="block">Get the right engine at the right price.</span>
                 </p>
@@ -255,8 +256,8 @@ export default function RepairBuyOrReplace({ data }) {
                 href="/quote"
                 className={`${primaryCtaClass("relative z-10 flex w-fit items-center justify-center gap-2 whitespace-nowrap rounded-md px-4 py-3.5 text-center text-[0.7rem] uppercase tracking-wide")}`}
               >
+                {ctaLabel}
                 <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
-                {data.cta.label}
               </a>
             </div>
           ) : null}
@@ -264,36 +265,39 @@ export default function RepairBuyOrReplace({ data }) {
 
         {/* Mobile only: Conversion CTA banner (image right, content left) + trust ticker */}
         <div className="mt-4 flex flex-col gap-4 md:hidden">
-          {data.cta?.label ? (
+          {ctaLabel ? (
             <div
-              className={`flex flex-row items-center gap-4 rounded-xl border p-5 shadow-sm ${
+              className={`flex flex-col gap-3 rounded-xl border p-4 shadow-sm ${
                 isDark
                   ? "border-white/15 bg-[linear-gradient(90deg,rgba(11,12,12,0.95)_0%,rgba(11,12,12,0.55)_60%,var(--color-page)_100%)]"
                   : "border-[var(--color-border)] bg-[linear-gradient(90deg,var(--color-surface)_0%,rgba(236,236,234,0.85)_60%,white_100%)]"
               }`}
             >
-              <div className="flex min-w-0 flex-1 flex-col gap-3">
-                <div className="flex items-center gap-2.5">
-                  <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${primaryBadgeClass(isDark)}`}>
-                    <GenIcon name="tag" className="h-4.5 w-4.5" />
-                  </span>
-                  <h3 className="text-[1rem] font-bold leading-tight text-[var(--color-text)]">Don&apos;t Guess. Compare.</h3>
+              <div className="flex flex-row items-center gap-3">
+                <div className="flex min-w-0 flex-1 flex-col gap-2">
+                  <div className="flex items-center gap-2.5">
+                    <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${primaryBadgeClass(isDark)}`}>
+                      <GenIcon name="tag" className="h-4.5 w-4.5" />
+                    </span>
+                    <h3 className="text-[1rem] font-bold leading-tight text-[var(--color-text)]">Don&apos;t Guess. Compare.</h3>
+                  </div>
+                  <p className="text-[0.8rem] leading-[1.45] text-[var(--color-text-muted)]">
+                    Get real quotes from vetted UK specialists and make the right call for your 320d.
+                  </p>
                 </div>
-                <p className="text-[0.8rem] leading-[1.45] text-[var(--color-text-muted)]">
-                  Get real quotes from vetted UK specialists and make the right call for your 320d.
-                </p>
-                <a
-                  href="/quote"
-                  className={`${primaryCtaClass("flex w-full items-center justify-center gap-2 rounded-xl px-3 py-2.5 text-center text-[0.78rem]")}`}
-                >
-                  {data.cta.label}
-                  <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
-                </a>
+
+                <div className="relative h-[96px] w-[96px] shrink-0">
+                  <Image src="/320d/engine.webp" alt="BMW 320d engine" fill className="object-contain" sizes="96px" />
+                </div>
               </div>
 
-              <div className="relative h-[110px] w-[110px] shrink-0">
-                <Image src="/320d/engine.webp" alt="BMW 320d engine" fill className="object-contain" sizes="110px" />
-              </div>
+              <a
+                href="/quote"
+                className={`${primaryCtaClass("flex w-full items-center justify-center gap-2 rounded-xl px-3 py-2.5 text-center text-[0.78rem]")}`}
+              >
+                {ctaLabel}
+                <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
+              </a>
             </div>
           ) : null}
 

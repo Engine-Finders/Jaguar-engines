@@ -2,23 +2,16 @@
 
 import { useTheme } from "@/components/shared/themeProvider";
 import MStripe from "@/components/reusableComponents/MStripe";
+import HomeIcon from "@/components/home/homeIcons";
 import { sectionH2 } from "@/components/models/sectionTypography";
+import { engineSectionBg } from "./engineSection";
 
-const dimensionIcons = {
-  Reliability: (
-    <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm-2 9 1.6 1.6L15 10" />
-  ),
-  "Repair Cost": <path d="M12 3v18m3-14H9.5a2.5 2.5 0 0 0 0 5h5a2.5 2.5 0 0 1 0 5H8" />,
-  Repairability: (
-    <path d="m14.7 6.3 3-3a4 4 0 0 1 0 5.7l-1.4 1.4-2.7-2.7L7 14.3V17H4.3l6.6-6.6-2.7-2.7 1.4-1.4a4 4 0 0 1 5.1 0Z" />
-  ),
-  "Parts Supply": (
-    <>
-      <path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Z" />
-      <path d="M12 12 4.2 7.5M12 12v9m0-9 7.8-4.5" />
-    </>
-  ),
-  "Replacement Economics": <path d="M5 19V9m5 10V5m5 14v-7m5 7H3" />,
+const DIMENSION_ICONS = {
+  Reliability: "shield",
+  "Repair Cost": "pound",
+  Repairability: "repair",
+  "Parts Supply": "uk-wide-delivery",
+  "Replacement Economics": "real-inquiries",
 };
 
 function cleanText(text = "") {
@@ -143,23 +136,24 @@ function StarRating({ value }) {
   );
 }
 
-function CircleIcon({ children, className = "" }) {
+function CircleIcon({ isDark, className = "", icon, iconClass = "h-5 w-5" }) {
   return (
     <span
-      className={`flex shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] bg-[var(--color-primary-soft)] text-[var(--color-primary)] ${className}`}
+      className={`flex shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] bg-[var(--color-primary-soft)] ${className}`}
     >
-      {children}
+      <HomeIcon name={icon} isDark={isDark} className={`${iconClass} object-contain`} />
     </span>
   );
 }
 
-function DimensionIcon({ dimension }) {
+function DimensionIcon({ dimension, isDark }) {
   return (
-    <CircleIcon className="h-8 w-8 md:h-10 md:w-10">
-      <svg aria-hidden="true" viewBox="0 0 24 24" className="h-3.5 w-3.5 md:h-5 md:w-5" fill="none" stroke="currentColor" strokeWidth="1.85">
-        {dimensionIcons[dimension] || dimensionIcons.Reliability}
-      </svg>
-    </CircleIcon>
+    <CircleIcon
+      isDark={isDark}
+      icon={DIMENSION_ICONS[dimension] || "shield"}
+      className="h-8 w-8 md:h-10 md:w-10"
+      iconClass="h-5 w-5 md:h-6 md:w-6"
+    />
   );
 }
 
@@ -180,11 +174,7 @@ function RatingCard({ starRating, confidence, isDark }) {
 
       <div className="mt-3 border-t border-[var(--color-border)] pt-3">
         <div className="flex items-start gap-2.5">
-          <CircleIcon className="mt-0.5 h-7 w-7 md:h-8 md:w-8">
-            <svg aria-hidden="true" viewBox="0 0 24 24" className="h-3.5 w-3.5 md:h-4 md:w-4" fill="none" stroke="currentColor" strokeWidth="1.9">
-              <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm-2 9 1.6 1.6L15 10" />
-            </svg>
-          </CircleIcon>
+          <CircleIcon isDark={isDark} icon="shield" className="mt-0.5 h-7 w-7 md:h-8 md:w-8" iconClass="h-4 w-4 md:h-5 md:w-5" />
           <p className="min-w-0 text-[12px] leading-[1.4] text-[var(--color-text-muted)] md:text-[13px]">
             {renderTaggedText(confidence)}
           </p>
@@ -230,9 +220,7 @@ function AdviceCards({ bestFor, avoidIf, isDark }) {
       >
         <div className="flex items-center gap-2 text-[var(--color-accent-green)]">
           <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[var(--color-accent-green)] bg-[var(--color-accent-green-soft)]">
-            <svg aria-hidden="true" viewBox="0 0 24 24" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth="2.2">
-              <path d="m6 12 4 4 8-8" />
-            </svg>
+            <HomeIcon name="check" isDark={isDark} className="h-4 w-4 object-contain" />
           </span>
           <p className="text-[13px] font-semibold md:text-[14px]">Best for:</p>
         </div>
@@ -248,9 +236,7 @@ function AdviceCards({ bestFor, avoidIf, isDark }) {
       >
         <div className="flex items-center gap-2 text-[var(--color-accent-red)]">
           <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[var(--color-accent-red)] bg-[var(--color-accent-red-soft)]">
-            <svg aria-hidden="true" viewBox="0 0 24 24" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M12 9v4m0 4h.01M10.3 4.9 2.7 18a2 2 0 0 0 1.75 3h15.1A2 2 0 0 0 21.3 18L13.7 4.9a2 2 0 0 0-3.4 0Z" />
-            </svg>
+            <HomeIcon name="warning" isDark={isDark} className="h-4 w-4 object-contain" />
           </span>
           <p className="text-[13px] font-semibold md:text-[14px]">Avoid if:</p>
         </div>
@@ -294,7 +280,7 @@ function ScoreBreakdown({ scoreNote, scoreBreakdown, isDark }) {
             className="grid grid-cols-[minmax(0,1fr)_auto] items-start gap-2 border-b border-[var(--color-border)] px-3 py-2.5 md:gap-4 md:px-5 md:py-3.5"
           >
             <div className="flex min-w-0 items-start gap-2 md:gap-3">
-              <DimensionIcon dimension={row.dimension} />
+              <DimensionIcon dimension={row.dimension} isDark={isDark} />
               <div className="min-w-0">
                 <p className="text-[12px] font-semibold leading-tight text-[var(--color-text)] md:text-[14px]">{row.dimension}</p>
                 {row.detail ? (
@@ -334,9 +320,7 @@ export default function VerdictRating({ data }) {
   const isDark = theme === "dark";
 
   return (
-    <section className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden bg-[var(--color-page)] py-6 text-[var(--color-text)] md:py-9">
-      <div className={`absolute inset-0 ${isDark ? "bg-[var(--color-page)]" : "bg-[var(--color-page-soft)]"}`} />
-
+    <section className={`relative w-full overflow-x-hidden py-6 text-[var(--color-text)] md:py-9 ${engineSectionBg(isDark, false)}`}>
       <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
         <div className="text-center md:text-left">
           <h2 className={`font-bold tracking-normal ${sectionH2}`}>
@@ -347,7 +331,6 @@ export default function VerdictRating({ data }) {
           </div>
         </div>
 
-        {/* Desktop */}
         <div className="mt-5 hidden gap-3 md:grid md:grid-cols-[0.95fr_1.05fr] md:items-start">
           <div className="grid gap-3">
             <RatingCard starRating={data.starRating} confidence={data.confidence} isDark={isDark} />
@@ -357,7 +340,6 @@ export default function VerdictRating({ data }) {
           <ScoreBreakdown scoreNote={data.scoreNote} scoreBreakdown={data.scoreBreakdown} isDark={isDark} />
         </div>
 
-        {/* Mobile */}
         <div className="mt-4 grid gap-2.5 md:hidden">
           <RatingCard starRating={data.starRating} confidence={data.confidence} isDark={isDark} />
           <VerdictQuote oneLineVerdict={data.oneLineVerdict} isDark={isDark} />

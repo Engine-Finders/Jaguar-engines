@@ -212,7 +212,7 @@ export default function EraMap({ data }) {
                   <span aria-hidden="true" className="h-6 w-px shrink-0 bg-[var(--color-border)] lg:h-8" />
                 ) : null}
                 <div className="flex items-center gap-2">
-                  <GenIcon name={point.icon} className="h-4.5 w-4.5 shrink-0 text-[var(--color-primary)]" />
+                  <GenIcon name={point.icon} className="h-7 w-7 shrink-0 text-[var(--color-primary)]" />
                   <span className="whitespace-nowrap text-[0.78rem] font-semibold text-[var(--color-text)]">{point.label}</span>
                 </div>
               </div>

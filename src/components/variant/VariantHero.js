@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import MStripe from "@/components/reusableComponents/MStripe";
@@ -53,6 +53,80 @@ function HeroHeadline({ h1 = "" }) {
 
 // Inline UK flag - emoji regional-indicator flags don't render as a flag glyph
 // on Windows (shows "GB" letter tiles instead), so use a real vector icon.
+function TickerItems({ items, isDark, dotSizeClass, keyPrefix }) {
+  return items.map((item, index) => (
+    <span key={`${keyPrefix}-${index}`} className="flex shrink-0 items-center gap-1.5">
+      <span
+        className={`${dotSizeClass} shrink-0 rounded-full ${
+          index === 0 ? "bg-[#189454]" : isDark ? "bg-white/40" : "bg-[var(--color-border-strong)]"
+        }`}
+        aria-hidden="true"
+      />
+      {item}
+    </span>
+  ));
+}
+
+function TickerHalf({ items, isDark, dotSizeClass, copies, keyPrefix }) {
+  return (
+    <div className="flex shrink-0 items-center gap-8 pr-8">
+      {Array.from({ length: copies }, (_, copyIndex) => (
+        <TickerItems
+          key={`${keyPrefix}-copy-${copyIndex}`}
+          items={items}
+          isDark={isDark}
+          dotSizeClass={dotSizeClass}
+          keyPrefix={`${keyPrefix}-${copyIndex}`}
+        />
+      ))}
+    </div>
+  );
+}
+
+function TickerTrack({ items, isDark, dotSizeClass = "h-2 w-2" }) {
+  const viewportRef = useRef(null);
+  const measureRef = useRef(null);
+  const [copies, setCopies] = useState(2);
+  const [duration, setDuration] = useState(32);
+
+  useEffect(() => {
+    const viewport = viewportRef.current;
+    const measure = measureRef.current;
+    if (!viewport || !measure || items.length === 0) return;
+
+    const update = () => {
+      const setWidth = measure.scrollWidth;
+      const viewWidth = viewport.offsetWidth;
+      if (!setWidth || !viewWidth) return;
+
+      const needed = Math.max(2, Math.ceil(viewWidth / setWidth) + 1);
+      setCopies(needed);
+      setDuration(Math.max(18, (setWidth * needed) / 42));
+    };
+
+    update();
+    const observer = new ResizeObserver(update);
+    observer.observe(viewport);
+    return () => observer.disconnect();
+  }, [items]);
+
+  return (
+    <div ref={viewportRef} className="relative overflow-hidden">
+      <div
+        ref={measureRef}
+        className="pointer-events-none invisible absolute left-0 top-0 flex items-center gap-8 pr-8"
+        aria-hidden="true"
+      >
+        <TickerItems items={items} isDark={isDark} dotSizeClass={dotSizeClass} keyPrefix="measure" />
+      </div>
+      <div className="flex w-max animate-ticker will-change-transform" style={{ animationDuration: `${duration}s` }}>
+        <TickerHalf items={items} isDark={isDark} dotSizeClass={dotSizeClass} copies={copies} keyPrefix="a" />
+        <TickerHalf items={items} isDark={isDark} dotSizeClass={dotSizeClass} copies={copies} keyPrefix="b" />
+      </div>
+    </div>
+  );
+}
+
 function UkFlagIcon({ className = "h-4 w-5" }) {
   return (
     <svg viewBox="0 0 20 14" className={className} aria-hidden="true">
@@ -154,11 +228,17 @@ export default function VariantHero({ data }) {
 
   // Price/code row, shared by the mobile "engine summary" card and the
   // desktop combined card.
+  const priceLinkClass = "[&_a]:text-[var(--color-primary)] [&_a]:underline [&_a]:underline-offset-2";
+
   const priceRow = data.priceAnchor ? (
     <div className="flex flex-wrap items-center gap-2 text-[0.74rem] md:text-[0.92rem]">
       <GenIcon name="tag" className="h-4 w-4 shrink-0 text-[var(--color-primary)] md:h-5 md:w-5" />
-      <span className={`font-semibold ${headingClass}`}>{price.headline}</span>
-      <span className={`hidden md:inline ${bodyTextClass}`}>{price.note ? `· ${price.note}` : ""}</span>
+      <span className={`font-semibold ${headingClass} ${priceLinkClass}`} dangerouslySetInnerHTML={{ __html: price.headline }} />
+      {price.note ? (
+        <span className={`hidden md:inline ${bodyTextClass} ${priceLinkClass}`}>
+          · <span dangerouslySetInnerHTML={{ __html: price.note }} />
+        </span>
+      ) : null}
     </div>
   ) : null;
 
@@ -203,8 +283,13 @@ export default function VariantHero({ data }) {
     <div className={`mt-1.5 flex w-full items-center gap-3 rounded-md border ${cardBorderClass} ${cardBgClass} p-2.5 backdrop-blur-sm md:hidden`}>
       <GenIcon name="tag" className="h-4 w-4 shrink-0 text-[var(--color-primary)]" />
       <div className="flex min-w-0 flex-col gap-0.5">
-        <span className={`text-[0.74rem] font-semibold ${headingClass}`}>{price.headline}</span>
-        {price.note ? <span className={`text-[0.7rem] ${bodyTextClass}`}>{price.note}</span> : null}
+        <span
+          className={`text-[0.74rem] font-semibold ${headingClass} ${priceLinkClass}`}
+          dangerouslySetInnerHTML={{ __html: price.headline }}
+        />
+        {price.note ? (
+          <span className={`text-[0.7rem] ${bodyTextClass} ${priceLinkClass}`} dangerouslySetInnerHTML={{ __html: price.note }} />
+        ) : null}
       </div>
     </div>
   ) : null;
@@ -229,7 +314,7 @@ export default function VariantHero({ data }) {
       {/* Mobile height accounts for the sticky Navbar above it (~84px) so the
           hero + navbar together fit exactly one screen, instead of the navbar
           pushing the hero's bottom content past the fold. */}
-      <section className={`relative h-[calc(100svh-84px)] w-full overflow-hidden bg-[var(--color-page)] md:h-[78svh] ${headingClass}`}>
+      <section className={`relative min-h-[calc(100svh-84px)] w-full overflow-x-hidden bg-[var(--color-page)] md:h-[78svh] md:min-h-0 md:overflow-hidden ${headingClass}`}>
         {/* Section is a fixed one-screen-tall block on mobile, so the image and
             content both fill exactly 100svh with no overflow/scroll inside the hero. */}
         <div className="absolute inset-0">
@@ -245,7 +330,7 @@ export default function VariantHero({ data }) {
           )}
         </div>
 
-        <div className="relative mx-auto flex h-full w-full max-w-8xl flex-col justify-between px-4 pb-3 pt-2 md:justify-start md:px-8 md:pb-6 md:pt-4">
+        <div className="relative mx-auto flex min-h-[calc(100svh-84px)] w-full max-w-8xl flex-col justify-between px-4 pb-3 pt-2 md:h-full md:min-h-0 md:justify-start md:px-8 md:pb-6 md:pt-4">
           <div className="flex w-full max-w-[640px] flex-col gap-1.5 md:gap-2">
             <span className={`inline-flex w-fit max-w-full flex-wrap items-center gap-x-2 gap-y-1 rounded-md border px-3 py-2 text-[0.82rem] leading-[1.35] md:px-2.5 md:py-1.5 md:text-[0.78rem] ${tagPillClass}`}>
               <GenIcon name="car" className="h-3.5 w-3.5 shrink-0 text-[var(--color-primary)]" />
@@ -286,16 +371,8 @@ export default function VariantHero({ data }) {
             {/* Bottom micro-feature ticker: compact card in the mobile stack,
                 matching the other hero cards; desktop keeps the full-bleed strip below. */}
             {tickerItems.length > 0 ? (
-              <div className={`mt-1.5 flex flex-wrap items-center justify-center gap-x-2.5 gap-y-1 rounded-md border ${cardBorderClass} ${isDark ? "bg-black/70" : "bg-white/85"} p-2.5 text-[0.65rem] ${bodyTextClass} md:hidden`}>
-                {tickerItems.map((item, index) => (
-                  <span key={item} className="flex shrink-0 items-center gap-1.5">
-                    <span
-                      className={`h-1.5 w-1.5 shrink-0 rounded-full ${index === 0 ? "bg-[#189454]" : isDark ? "bg-white/40" : "bg-[var(--color-border-strong)]"}`}
-                      aria-hidden="true"
-                    />
-                    {item}
-                  </span>
-                ))}
+              <div className={`mt-1.5 overflow-hidden rounded-md border ${cardBorderClass} ${isDark ? "bg-black/70" : "bg-white/85"} py-2.5 text-[0.65rem] ${bodyTextClass} md:hidden`}>
+                <TickerTrack items={tickerItems} isDark={isDark} dotSizeClass="h-1.5 w-1.5" />
               </div>
             ) : null}
           </div>
@@ -303,17 +380,9 @@ export default function VariantHero({ data }) {
       </section>
 
       {tickerItems.length > 0 ? (
-        <div className="hidden w-full border-b border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-3 md:block md:px-8">
-          <div className="mx-auto flex w-full max-w-8xl flex-wrap items-center justify-between gap-x-2 gap-y-1.5 text-[0.72rem] text-[var(--color-text-muted)] md:text-[0.8rem]">
-            {tickerItems.map((item, index) => (
-              <span key={item} className="flex shrink-0 items-center gap-1.5">
-                <span
-                  className={`h-2 w-2 shrink-0 rounded-full ${index === 0 ? "bg-[#189454]" : isDark ? "bg-white/40" : "bg-[var(--color-border-strong)]"}`}
-                  aria-hidden="true"
-                />
-                {item}
-              </span>
-            ))}
+        <div className="hidden w-full overflow-hidden border-b border-[var(--color-border)] bg-[var(--color-surface)] py-3 md:block">
+          <div className="text-[0.72rem] text-[var(--color-text-muted)] md:text-[0.8rem]">
+            <TickerTrack items={tickerItems} isDark={isDark} />
           </div>
         </div>
       ) : null}
