@@ -10,3 +10,4 @@
 itself. Confidence: 0.80
 - Prefers section/home icons rendered bare (no circular or chip backgrounds) so the icon itself stays visible — a solid background behind the icon can hide it (e.g., a dark/black background behind a dark icon makes it invisible), so remove the background rather than recolor it. Confidence: 0.85
 - Prefers section icons sized up generously and repeatedly to be clearly legible — when icons read as too small, bump the `h-* w-*` classes across all sections (Sec1–5) and keep increasing until they're clearly visible ("increase the sizes more and more"). Confidence: 0.85
+- When separate light and dark icon asset packs are available (e.g., "Jaguar Black" / "Jaguar Silver"), render theme-aware icons — the dark pack on light theme, the light/silver pack on dark theme — through a shared helper, and URL-encode filenames containing spaces or `%` so they actually resolve. Confidence: 0.75

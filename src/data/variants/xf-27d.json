@@ -5,7 +5,7 @@
     "titleCharCount": 58,
     "description": "Every Jaguar XF 2.7d engine - the 2.7-litre 276DT V6 diesel. Real UK costs, crankshaft and injector advice, and honest reliability data. Get free quotes from 15 vetted Jaguar specialists today.",
     "descriptionCharCount": 157,
-    "canonical": "https://jaguarengines.uk/xf/27d/",
+    "canonical": "https://jaguarengines.uk/xf/27d",
     "openGraph": {
       "title": "Jaguar XF 2.7d Engine Replacement Cost UK - Compare Quotes",
       "description": "Every Jaguar XF 2.7d engine - the 2.7-litre 276DT V6 diesel. Real UK costs, crankshaft and injector advice, and honest reliability data. Get free quotes from 15 vetted Jaguar specialists today.",
@@ -36,7 +36,7 @@
               "@type": "ListItem",
               "position": 2,
               "name": "XF",
-              "item": "https://jaguarengines.uk/xf/"
+              "item": "https://jaguarengines.uk/xf"
             },
             {
               "@type": "ListItem",

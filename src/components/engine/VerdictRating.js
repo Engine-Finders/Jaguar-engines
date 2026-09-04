@@ -165,7 +165,7 @@ function RatingCard({ starRating, confidence, isDark }) {
       <p className={`text-[12px] font-medium md:text-[14px] ${isDark ? "text-[var(--color-text)]" : "text-[var(--color-text-soft)]"}`}>Rating:</p>
 
       <div className="mt-1.5 flex flex-wrap items-end gap-x-2.5 gap-y-1 md:mt-2 md:gap-x-3">
-        <p className="text-[36px] font-bold leading-none text-[var(--color-primary)] md:text-[48px]">{rating.display}</p>
+        <p className="font-heading text-[36px] font-bold leading-none text-[var(--color-primary)] md:text-[48px]">{rating.display}</p>
         <div className="mb-0.5 flex items-center gap-1.5 md:mb-1 md:gap-2">
           <StarRating value={rating.numeric} />
           <span className="text-[11px] text-[var(--color-text-soft)] md:text-[13px]">out of 5</span>
@@ -218,13 +218,13 @@ function AdviceCards({ bestFor, avoidIf, isDark }) {
             : "border-[var(--color-border-strong)] bg-[var(--color-surface)] shadow-[0_8px_22px_var(--color-shadow)]"
         }`}
       >
-        <div className="flex items-center gap-2 text-[var(--color-accent-green)]">
-          <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[var(--color-accent-green)] bg-[var(--color-accent-green-soft)]">
-            <HomeIcon name="check" isDark={isDark} className="h-4 w-4 object-contain" />
+        <div className="flex items-center gap-2.5 text-[var(--color-accent-green)]">
+          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-[var(--color-accent-green)] bg-[var(--color-accent-green-soft)] md:h-9 md:w-9">
+            <HomeIcon name="check" isDark={isDark} className="h-5 w-5 object-contain md:h-6 md:w-6" />
           </span>
-          <p className="text-[13px] font-semibold md:text-[14px]">Best for:</p>
+          <p className="text-[15px] font-semibold md:text-[17px]">Best for:</p>
         </div>
-        <p className="mt-2 text-[12px] leading-[1.4] text-[var(--color-text)] md:text-[13px]">{cleanText(bestFor)}</p>
+        <p className="mt-2 text-[13px] leading-[1.45] text-[var(--color-text)] md:text-[14px]">{cleanText(bestFor)}</p>
       </article>
 
       <article
@@ -234,13 +234,13 @@ function AdviceCards({ bestFor, avoidIf, isDark }) {
             : "border-[var(--color-border-strong)] bg-[var(--color-surface)] shadow-[0_8px_22px_var(--color-shadow)]"
         }`}
       >
-        <div className="flex items-center gap-2 text-[var(--color-accent-red)]">
-          <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[var(--color-accent-red)] bg-[var(--color-accent-red-soft)]">
-            <HomeIcon name="warning" isDark={isDark} className="h-4 w-4 object-contain" />
+        <div className="flex items-center gap-2.5 text-[var(--color-accent-red)]">
+          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-[var(--color-accent-red)] bg-[var(--color-accent-red-soft)] md:h-9 md:w-9">
+            <HomeIcon name="warning" isDark={isDark} className="h-5 w-5 object-contain md:h-6 md:w-6" />
           </span>
-          <p className="text-[13px] font-semibold md:text-[14px]">Avoid if:</p>
+          <p className="text-[15px] font-semibold md:text-[17px]">Avoid if:</p>
         </div>
-        <p className="mt-2 text-[12px] leading-[1.4] text-[var(--color-text)] md:text-[13px]">{cleanText(avoidIf)}</p>
+        <p className="mt-2 text-[13px] leading-[1.45] text-[var(--color-text)] md:text-[14px]">{cleanText(avoidIf)}</p>
       </article>
     </div>
   );
@@ -282,14 +282,14 @@ function ScoreBreakdown({ scoreNote, scoreBreakdown, isDark }) {
             <div className="flex min-w-0 items-start gap-2 md:gap-3">
               <DimensionIcon dimension={row.dimension} isDark={isDark} />
               <div className="min-w-0">
-                <p className="text-[12px] font-semibold leading-tight text-[var(--color-text)] md:text-[14px]">{row.dimension}</p>
+                <p className="font-heading text-[12px] font-semibold leading-tight text-[var(--color-text)] md:text-[14px]">{row.dimension}</p>
                 {row.detail ? (
                   <p className="mt-0.5 text-[11px] leading-[1.35] text-[var(--color-text-soft)] md:mt-1 md:text-[12px]">{row.detail}</p>
                 ) : null}
               </div>
             </div>
             <p className="shrink-0 pt-0.5 text-right leading-none">
-              <span className="text-[20px] font-bold text-[var(--color-primary)] md:text-[26px]">{row.points}</span>
+              <span className="font-heading text-[20px] font-bold text-[var(--color-primary)] md:text-[26px]">{row.points}</span>
               <span className={`text-[11px] font-medium md:text-[13px] ${isDark ? "text-[var(--color-text)]" : "text-[var(--color-text-muted)]"}`}> /{row.outOf}</span>
             </p>
           </div>
@@ -301,11 +301,11 @@ function ScoreBreakdown({ scoreNote, scoreBreakdown, isDark }) {
           isDark ? "bg-[var(--color-page-soft)]" : "bg-[var(--color-primary-soft)]"
         }`}
       >
-        <p className="text-[11px] font-bold uppercase tracking-[0.04em] text-[var(--color-text)] md:text-[13px]">
+        <p className="font-heading text-[11px] font-bold uppercase tracking-[0.04em] text-[var(--color-text)] md:text-[13px]">
           Total Engine Score
         </p>
         <p className="text-right leading-none">
-          <span className="text-[26px] font-bold text-[var(--color-primary)] md:text-[34px]">{totalPoints}</span>
+          <span className="font-heading text-[26px] font-bold text-[var(--color-primary)] md:text-[34px]">{totalPoints}</span>
           <span className={`text-[12px] font-medium md:text-[14px] ${isDark ? "text-[var(--color-text)]" : "text-[var(--color-text-muted)]"}`}> / {totalOutOf}</span>
         </p>
       </div>
@@ -331,7 +331,7 @@ export default function VerdictRating({ data }) {
           </div>
         </div>
 
-        <div className="mt-5 hidden gap-3 md:grid md:grid-cols-[0.95fr_1.05fr] md:items-start">
+        <div className="mt-5 hidden gap-3 md:grid md:grid-cols-[2fr_3fr] md:items-start">
           <div className="grid gap-3">
             <RatingCard starRating={data.starRating} confidence={data.confidence} isDark={isDark} />
             <VerdictQuote oneLineVerdict={data.oneLineVerdict} isDark={isDark} />

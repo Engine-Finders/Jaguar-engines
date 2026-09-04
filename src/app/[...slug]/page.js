@@ -128,7 +128,7 @@ export async function generateMetadata({ params }) {
   const { meta } = data;
   const og = meta.openGraph;
   const hasOg = og && (og.title || og.description || og.url || og.image || og.siteName || og.type);
-  const canonical = meta.canonical || `https://bmwengines.uk/${slugSegments.join("/")}`;
+  const canonical = meta.canonical || `https://jaguarengines.uk/${slugSegments.join("/")}`;
 
   return {
     title: meta.title || undefined,

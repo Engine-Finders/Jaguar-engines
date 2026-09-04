@@ -1,10 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { sectionDescription, sectionH2 } from "@/components/models/sectionTypography";
 import { engineSectionBg } from "./engineSection";
+
+const ENGINE_IMAGE = "/e90/engine.webp";
 
 function cleanText(text = "") {
   return String(text)
@@ -34,7 +37,7 @@ function renderTaggedText(text = "") {
   return cleanText(text).split(/(\[[^\]]+\])/g).map((part, index) => {
     if (/^\[[^\]]+\]$/.test(part)) {
       return (
-        <span key={`${part}-${index}`} className="font-semibold text-[var(--color-primary)]">
+        <span key={`${part}-${index}`} className="font-semibold text-[var(--color-chrome-bright)]">
           {part}
         </span>
       );
@@ -54,7 +57,13 @@ function FaqItem({ item, open, onToggle, isLast, isDark }) {
         className="flex w-full items-start gap-3 px-4 py-3.5 text-left md:gap-3.5 md:px-5 md:py-4"
         aria-expanded={open}
       >
-        <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-[var(--color-primary-soft)] text-[13px] font-bold text-[var(--color-primary)]">
+        <span
+          className={`mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-md text-[13px] font-bold ${
+            isDark
+              ? "bg-[var(--color-primary-soft)] text-[var(--color-chrome-bright)]"
+              : "bg-[var(--color-primary-soft)] text-[var(--color-primary)]"
+          }`}
+        >
           {item.id}
         </span>
         <span className="min-w-0 flex-1">
@@ -68,14 +77,16 @@ function FaqItem({ item, open, onToggle, isLast, isDark }) {
             )}
           </span>
           {open ? (
-            <span className={`mt-1.5 block text-[13px] leading-[1.45] ${isDark ? "text-white/78" : "text-[var(--color-text-muted)]"}`}>
+            <span className={`mt-1.5 block text-[13px] leading-[1.45] ${isDark ? "text-white/80" : "text-[var(--color-text-muted)]"}`}>
               {renderTaggedText(item.answer)}
             </span>
           ) : null}
         </span>
         <span
           aria-hidden="true"
-          className={`mt-1 shrink-0 text-[15px] font-bold text-[var(--color-primary)] transition-transform ${open ? "rotate-180" : ""}`}
+          className={`mt-1 shrink-0 text-[15px] font-bold transition-transform ${open ? "rotate-180" : ""} ${
+            isDark ? "text-[var(--color-chrome-bright)]" : "text-[var(--color-primary)]"
+          }`}
         >
           ▾
         </span>
@@ -99,7 +110,7 @@ export default function FAQAccordion({ data, engineLabel = "Jaguar Engine" }) {
       <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
         <div className="grid items-start gap-5 md:grid-cols-[minmax(260px,0.85fr)_minmax(0,1.35fr)] md:gap-8 lg:gap-10">
           <div className="min-w-0 max-w-[480px]">
-            <h2 className={`font-bold tracking-normal ${sectionH2}`}>
+            <h2 className={`font-bold tracking-normal ${sectionH2} ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
               Frequently Asked Questions
             </h2>
             <div className="mt-3">
@@ -107,8 +118,18 @@ export default function FAQAccordion({ data, engineLabel = "Jaguar Engine" }) {
             </div>
             <p className={`mt-4 ${sectionDescription} ${isDark ? "text-white/80" : "text-[var(--color-text-muted)]"}`}>
               Expert answers to the most common Jaguar{" "}
-              <span className="font-semibold text-[var(--color-primary)]">{engineCode}</span> engine questions.
+              <span className="font-semibold text-[var(--color-chrome-bright)]">{engineCode}</span> engine questions.
             </p>
+
+            <div className="relative mx-auto mt-5 h-[130px] w-full max-w-[360px] md:mx-0 md:mt-6 md:h-[150px]">
+              <Image
+                src={ENGINE_IMAGE}
+                alt=""
+                fill
+                sizes="360px"
+                className="object-contain object-center drop-shadow-[0_16px_32px_rgba(0,0,0,0.25)] md:object-left"
+              />
+            </div>
           </div>
 
           <div

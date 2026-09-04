@@ -9,7 +9,7 @@
       "title": "E-Pace Engine Replacement Cost UK - Compare Quotes",
       "description": "Every E-Pace engine - Ingenium diesel, petrol, and P300e hybrid. 5 engine codes, real UK costs and reliability data. See real costs, then compare quotes from our vetted Jaguar specialist network.",
       "type": "website",
-      "url": "https://jaguarengines.uk/e-pace/",
+      "url": "https://jaguarengines.uk/e-pace",
       "image": "",
       "siteName": "jaguarengines.uk"
     },
@@ -34,7 +34,7 @@
               "@type": "ListItem",
               "position": 2,
               "name": "E-Pace",
-              "item": "https://jaguarengines.uk/e-pace/"
+              "item": "https://jaguarengines.uk/e-pace"
             }
           ]
         },
@@ -193,7 +193,7 @@
         {
           "@type": "WebPage",
           "name": "E-Pace Engine Replacement Cost UK - Compare Quotes",
-          "url": "https://jaguarengines.uk/e-pace/",
+          "url": "https://jaguarengines.uk/e-pace",
           "author": {
             "@type": "Organization",
             "name": "jaguarengines.uk Editorial Team"

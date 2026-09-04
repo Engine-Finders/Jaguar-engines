@@ -5,7 +5,7 @@
     "titleCharCount": 57,
     "description": "Jaguar XF 3.0d – 306DT V6 diesel. Real UK costs, timing chain and oil pump facts, and specialist quotes. Get free prices from 15+ vetted specialists today.",
     "descriptionCharCount": 158,
-    "canonical": "https://jaguarengines.uk/xf/30d/",
+    "canonical": "https://jaguarengines.uk/xf/30d",
     "openGraph": {
       "title": "XF 3.0d Engine Replacement Cost UK - Compare Quotes",
       "description": "Jaguar XF 3.0d – 306DT V6 diesel. Real UK costs, timing chain and oil pump facts, and specialist quotes. Get free prices from 15+ vetted specialists today.",
@@ -36,7 +36,7 @@
               "@type": "ListItem",
               "position": 2,
               "name": "XF",
-              "item": "https://jaguarengines.uk/xf/"
+              "item": "https://jaguarengines.uk/xf"
             },
             {
               "@type": "ListItem",

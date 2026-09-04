@@ -5,7 +5,7 @@
     "titleCharCount": 56,
     "description": "Jaguar XJ 2.8 / 3.4 (XK6) engine costs, reliability, and common faults. Cooling system, timing chain and classic straight-six insights. Get free quotes from 15+ vetted Jaguar specialists today.",
     "descriptionCharCount": 159,
-    "canonical": "https://jaguarengines.uk/xj/28-34-xk6/",
+    "canonical": "https://jaguarengines.uk/xj/28-34-xk6",
     "openGraph": {
       "title": "XJ 2.8 / 3.4 Engine Replacement Cost UK - Compare Quotes",
       "description": "Jaguar XJ 2.8 / 3.4 (XK6) engine costs, reliability, and common faults. Cooling system, timing chain and classic straight-six insights. Get free quotes from 15+ vetted Jaguar specialists today.",
@@ -36,7 +36,7 @@
               "@type": "ListItem",
               "position": 2,
               "name": "XJ",
-              "item": "https://jaguarengines.uk/xj/"
+              "item": "https://jaguarengines.uk/xj"
             },
             {
               "@type": "ListItem",

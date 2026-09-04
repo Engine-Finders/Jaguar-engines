@@ -5,7 +5,7 @@
     "titleCharCount": 53,
     "description": "Every Jaguar XKR‑S engine - AJ133 5.0 supercharged V8. X150 generation, real UK costs and reliability. Get free quotes from 15+ vetted Jaguar specialists today.",
     "descriptionCharCount": 161,
-    "canonical": "https://jaguarengines.uk/xk/xkr-s/",
+    "canonical": "https://jaguarengines.uk/xk/xkr-s",
     "openGraph": {
       "title": "",
       "description": "",
@@ -36,7 +36,7 @@
               "@type": "ListItem",
               "position": 2,
               "name": "XK",
-              "item": "https://jaguarengines.uk/xk/"
+              "item": "https://jaguarengines.uk/xk"
             },
             {
               "@type": "ListItem",

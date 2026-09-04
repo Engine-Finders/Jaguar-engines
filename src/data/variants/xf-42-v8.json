@@ -5,7 +5,7 @@
     "titleCharCount": 54,
     "description": "Every Jaguar XF 4.2 V8 engine - AJ34 and AJ34S. X250 generation, real UK costs and reliability. Get free quotes from 15+ vetted Jaguar specialists today.",
     "descriptionCharCount": 158,
-    "canonical": "https://jaguarengines.uk/xf/42-v8/",
+    "canonical": "https://jaguarengines.uk/xf/42-v8",
     "openGraph": {
       "title": "",
       "description": "",
@@ -36,7 +36,7 @@
               "@type": "ListItem",
               "position": 2,
               "name": "XF",
-              "item": "https://jaguarengines.uk/xf/"
+              "item": "https://jaguarengines.uk/xf"
             },
             {
               "@type": "ListItem",

@@ -14,7 +14,10 @@
 # ui
 See [ui/taste.md](ui/taste.md)
 # seo
-- Prefers SEO correctness - canonical tags, sitemap generation, and exact route/URL paths (domain spelling, singular vs plural segments like `/engine/` vs `/engines/`) must be precise and verified, not just plausible. Confidence: 0.65
+- Prefers SEO correctness - canonical tags, sitemap generation, and exact route/URL paths (domain spelling, singular vs plural segments like `/engine/` vs `/engines/`) must be precise and verified, not just plausible. Confidence: 0.80
+- URLs and canonical tags must not have a trailing slash — the user's SEO tool flags trailing-slash URLs as "Canonicalised", and the user explicitly wants no URL to end in `/`. Confidence: 0.90
+- When data files hold hardcoded values that contradict the correct dynamic pattern (e.g., stale canonical domains/paths), prefer deleting those values so auto-generated logic produces the correct output, rather than hand-correcting each record. Confidence: 0.70
+- When auditing/fixing canonical tags, treat `src/data/registery` (dynamic pages) and the navbar (navigation links) as the authoritative source of truth for the site's page URLs — cross-check each canonical against these rather than guessing or trusting existing values. Confidence: 0.65
 
 # workflow
 See [workflow/taste.md](workflow/taste.md)

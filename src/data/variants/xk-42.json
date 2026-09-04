@@ -5,7 +5,7 @@
     "titleCharCount": 58,
     "description": "Jaguar XK 4.2 – AJ34 4.2-litre V8. Real UK costs, VVT and cooling system facts, and specialist quotes. Get free prices from 15+ vetted specialists today.",
     "descriptionCharCount": 158,
-    "canonical": "https://jaguarengines.uk/xk/42/",
+    "canonical": "https://jaguarengines.uk/xk/42",
     "openGraph": {
       "title": "XK 4.2 Engine Replacement Cost UK - Compare Quotes",
       "description": "Jaguar XK 4.2 – AJ34 4.2-litre V8. Real UK costs, VVT and cooling system facts, and specialist quotes. Get free prices from 15+ vetted specialists today.",
@@ -36,7 +36,7 @@
               "@type": "ListItem",
               "position": 2,
               "name": "XK",
-              "item": "https://jaguarengines.uk/xk/"
+              "item": "https://jaguarengines.uk/xk"
             },
             {
               "@type": "ListItem",

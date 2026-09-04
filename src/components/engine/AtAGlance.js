@@ -68,7 +68,7 @@ function modelsFittedKey(rowMap) {
 function CircleIcon({ metric, isDark, compact = false }) {
   const icon = METRIC_ICONS[metric] || "engine";
   const sizeClass = compact ? "h-10 w-10 md:h-14 md:w-14" : "h-14 w-14";
-  const iconClass = compact ? "h-7 w-7 md:h-9 md:w-9" : "h-9 w-9";
+  const iconClass = compact ? "h-8 w-8 md:h-11 md:w-11" : "h-11 w-11";
 
   return (
     <span className={`flex shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] ${sizeClass}`}>
@@ -130,7 +130,7 @@ function DesktopSmallCard({ metric, value, isDark }) {
             </>
           ) : (
             <>
-              <p className={`mt-3 text-[16px] font-bold leading-snug ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+              <p className={`font-heading mt-3 text-[18px] font-bold leading-snug md:text-[20px] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
                 {verified ? verified.text : cleanText(value)}
               </p>
               {verified?.badge ? (
@@ -157,7 +157,7 @@ function DesktopWideCard({ metric, value, text, isDark, imageType = "none" }) {
           <p className={`text-[13px] font-medium uppercase leading-none tracking-[0.04em] ${isDark ? "text-white/72" : "text-[var(--color-text-soft)]"}`}>
             {metric}
           </p>
-          <p className={`mt-3 text-[16px] font-bold leading-snug ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+          <p className={`font-heading mt-3 text-[18px] font-bold leading-snug md:text-[20px] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
             {cleanText(value)}
           </p>
           {text ? (
@@ -217,10 +217,10 @@ function MobileRow({ metric, value, isDark }) {
   const score = metric === "Overall Engine Score" ? parseScore(value) : null;
 
   return (
-    <article className={`grid grid-cols-[92px_1px_minmax(0,1fr)] items-center overflow-hidden rounded-md border px-3 py-3 ${cardClass(isDark)}`}>
-      <div className="flex min-w-0 flex-col items-start gap-1.5 pr-2">
+    <article className={`grid grid-cols-[minmax(132px,0.42fr)_1px_minmax(0,1fr)] items-center overflow-hidden rounded-md border px-3 py-3 ${cardClass(isDark)}`}>
+      <div className="flex min-w-0 items-center gap-2 pr-2">
         <CircleIcon metric={metric} isDark={isDark} compact />
-        <p className={`w-full break-words text-[10px] leading-[1.2] ${isDark ? "text-white/78" : "text-[var(--color-text-muted)]"}`}>
+        <p className={`min-w-0 break-words text-[11px] font-medium leading-[1.2] ${isDark ? "text-white/85" : "text-[var(--color-text-muted)]"}`}>
           {metric}
         </p>
       </div>
@@ -237,7 +237,7 @@ function MobileRow({ metric, value, isDark }) {
           </>
         ) : (
           <>
-            <p className={`text-[15px] font-bold leading-[1.2] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+            <p className={`font-heading text-[17px] font-bold leading-[1.2] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
               {verified ? verified.text : cleanText(value)}
             </p>
             {verified?.badge ? (

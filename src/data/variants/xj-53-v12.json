@@ -5,7 +5,7 @@
     "titleCharCount": 56,
     "description": "Jaguar XJ 5.3 V12 - real UK costs, ignition & fuel system insight, and honest reliability data for Jaguar's legendary V12. Get free quotes from 15+ vetted Jaguar specialists today.",
     "descriptionCharCount": 159,
-    "canonical": "https://jaguarengines.uk/xj/53-v12/",
+    "canonical": "https://jaguarengines.uk/xj/53-v12",
     "openGraph": {
       "title": "XJ 5.3 V12 Engine Replacement Cost UK - Compare Quotes",
       "description": "Jaguar XJ 5.3 V12 - real UK costs, ignition & fuel system insight, and honest reliability data for Jaguar's legendary V12. Get free quotes from 15+ vetted Jaguar specialists today.",
@@ -36,7 +36,7 @@
               "@type": "ListItem",
               "position": 2,
               "name": "XJ",
-              "item": "https://jaguarengines.uk/xj/"
+              "item": "https://jaguarengines.uk/xj"
             },
             {
               "@type": "ListItem",
