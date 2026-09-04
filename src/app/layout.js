@@ -18,6 +18,19 @@ export const metadata = {
   title: "Jaguar Engines UK — The Complete Ownership Guide",
   description:
     "The UK's Most Trusted Jaguar Ownership Guide. Reliability rankings, real failure data, honest repair-vs-replace economics for every Jaguar model. Powered by 1,700+ real UK enquiries.",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   icons: {
     icon: [{ url: "/jaguar-fav.jpg", type: "image/jpeg" }],
     shortcut: "/jaguar-fav.jpg",
