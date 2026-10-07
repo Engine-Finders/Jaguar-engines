@@ -1,0 +1,77 @@
+THINGS TO CHECK / PORT TO OTHER WEBSITES
+========================================
+General reusable changes only (icons, section BG strip, typography scale).
+Theme colors / brand look → will be provided separately (with images).
+
+
+1) SECTION BACKGROUND STRIP (light theme)
+----------------------------------------
+- After hero, alternate section backgrounds one by one.
+- Pattern:
+  - Page / default: var(--color-page)  (or site page bg)
+  - Tinted stripe:  #ececea
+- Dark theme: keep all sections on page bg (no tint stripe needed).
+- Example order (engine page style — adjust per page, but keep alternating):
+  1. Hero          → page
+  2. Section 2     → tinted (#ececea)
+  3. Section 3     → page
+  4. Section 4     → tinted
+  5. Section 5     → page
+  6. Section 6     → tinted
+  7. Section 7     → page
+- Prefer one shared helper (e.g. sectionBg(isDark, tinted)) so all pages stay consistent.
+
+
+2) ICONS (SAME FILES + SAME PATHS ON EVERY SITE)
+----------------------------------------------
+- Master icon list / inventory file (copy with the project):
+  → silver-black-icons.txt
+  Lists every filename under Jaguar Black + Jaguar Silver. Use this as the
+  source of truth when wiring icons on other websites.
+- Use the SAME icon set / same filenames / same folder paths on every website.
+- Day (light):  /Jaguar Black/<filename>.png
+- Night (dark): /Jaguar Silver/<filename>.png
+- Example:
+  /Jaguar Black/Real Inquiries Icon-01.png
+  /Jaguar Silver/Real Inquiries Icon-01.png
+- Icon map lives in homeIcons.js (semantic key → exact filename from
+  silver-black-icons.txt). Copy the same key→filename map; do not rename files.
+- Brand folder names stay "Jaguar Black" / "Jaguar Silver" unless client
+  explicitly renames folders — until then, keep these exact path strings.
+- Replace emoji / ad-hoc SVG with HomeIcon using those keys.
+- Keep circle / soft BG size the same; increase ONLY the icon graphic inside.
+- Trust / badge strips, card headers, FAQ, CTA blocks — same icon system everywhere.
+- Hero trust badges: glassmorphism + rounded border (desktop + mobile).
+- When porting: copy public/Jaguar Black + public/Jaguar Silver + silver-black-icons.txt
+  as-is, and reuse the same HomeIcon component / FILES map from this project.
+
+
+3) TYPOGRAPHY SCALE (DESKTOP)
+-----------------------------
+Font family for H1: "Lora"
+  - font-size: 48px
+  - font-weight: 400 or 500 (based on style)
+
+H2: 40px
+H3: 30px
+H4: 24px
+Body text: 14–17px
+Small text / labels: 12–13px
+Buttons: 14–16px
+
+These sizes are for DESKTOP.
+
+
+4) TYPOGRAPHY SCALE (MOBILE)
+----------------------------
+- Same hierarchy as desktop.
+- Reduce sizes by ~3–5px (use judgment for responsiveness / line breaks).
+- Keep H1 readable in ~2–3 intentional lines where long titles wrap.
+- Do not shrink so much that hierarchy collapses.
+
+
+5) NOTES (do NOT invent theme here)
+-----------------------------------
+- Theme colors, chrome accents, day/night tokens → wait for client images + explanation.
+- Do not copy Jaguar-specific hex beyond the section tint strip (#ececea) unless confirmed for that site.
+- Content / copy / brand names stay per-site; only patterns above are portable.

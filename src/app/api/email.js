@@ -1,8 +1,9 @@
 import { Resend } from "resend";
+import { SITE_LABEL } from "./site";
 
-/** Ops inbox - notification only (never emailed to the customer). */
-const TO_EMAIL = "ef2crm@gmail.com";
-const FROM_EMAIL = process.env.RESEND_FROM || "BMW Engines <leads@bmwengines.uk>";
+// Hardcoded lead notification emails (do not put these in env)
+const LEAD_TO_EMAIL = "enginefinders7@gmail.com";
+const LEAD_FROM_EMAIL = "Jaguar Engines <leads@jaguarengines.uk>";
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -13,7 +14,10 @@ function escapeHtml(value) {
 }
 
 function row(label, value) {
-  const display = value === undefined || value === null || String(value).trim() === "" ? "-" : String(value);
+  const display =
+    value === undefined || value === null || String(value).trim() === ""
+      ? "-"
+      : String(value);
   return `<tr>
     <td style="padding:8px 12px;border-bottom:1px solid #e5e7eb;color:#64748b;font-size:13px;width:38%;">${escapeHtml(label)}</td>
     <td style="padding:8px 12px;border-bottom:1px solid #e5e7eb;color:#0f172a;font-size:14px;font-weight:600;">${escapeHtml(display)}</td>
@@ -24,7 +28,7 @@ function buildCalculatorSection(calculator) {
   if (!calculator || typeof calculator !== "object") return "";
 
   return `
-          <h2 style="margin:20px 0 10px;font-size:15px;color:#075fd8;text-transform:uppercase;letter-spacing:0.04em;">Diagnostic Calculator</h2>
+          <h2 style="margin:20px 0 10px;font-size:15px;color:#111;text-transform:uppercase;letter-spacing:0.04em;">Diagnostic Calculator</h2>
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #e5e7eb;border-radius:6px;">
             ${row("Category", calculator.category)}
             ${row("Diagnosis", calculator.diagnosis)}
@@ -49,14 +53,14 @@ function buildLeadEmailHtml(payload = {}) {
   <body style="margin:0;padding:24px;background:#f8fafc;font-family:Arial,Helvetica,sans-serif;">
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:640px;margin:0 auto;background:#ffffff;border:1px solid #e2e8f0;border-radius:8px;overflow:hidden;">
       <tr>
-        <td style="padding:20px 24px;background:#075fd8;color:#ffffff;">
+        <td style="padding:20px 24px;background:#111210;color:#ffffff;">
           <h1 style="margin:0;font-size:20px;">New quote request</h1>
-          <p style="margin:6px 0 0;font-size:13px;opacity:0.9;">Someone requested a quote on the BMW Engines site</p>
+          <p style="margin:6px 0 0;font-size:13px;opacity:0.9;">Someone requested a quote on ${SITE_LABEL}</p>
         </td>
       </tr>
       <tr>
         <td style="padding:20px 24px;">
-          <h2 style="margin:0 0 10px;font-size:15px;color:#075fd8;text-transform:uppercase;letter-spacing:0.04em;">Contact</h2>
+          <h2 style="margin:0 0 10px;font-size:15px;color:#111;text-transform:uppercase;letter-spacing:0.04em;">Contact</h2>
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #e5e7eb;border-radius:6px;margin-bottom:20px;">
             ${row("Name", payload.name)}
             ${row("Phone", payload.number)}
@@ -65,16 +69,20 @@ function buildLeadEmailHtml(payload = {}) {
             ${row("Remarks", payload.description)}
           </table>
 
-          <h2 style="margin:0 0 10px;font-size:15px;color:#075fd8;text-transform:uppercase;letter-spacing:0.04em;">Vehicle</h2>
+          <h2 style="margin:0 0 10px;font-size:15px;color:#111;text-transform:uppercase;letter-spacing:0.04em;">Vehicle</h2>
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #e5e7eb;border-radius:6px;">
-            ${row("Registration (VRM)", payload.vehicle_vrm)}
+            ${row("Registration (VRM)", payload.vehicle_vrm || payload.vehicle_reg)}
             ${row("Brand", payload.vehicle_brand)}
-            ${row("Series / Model", payload.vehicle_series)}
+            ${row("Model", payload.vehicle_model)}
+            ${row("Series", payload.vehicle_series)}
             ${row("Year", payload.vehicle_year)}
-            ${row("Fuel type", payload.fuelType)}
-            ${row("Engine capacity", payload.engin_capacity)}
+            ${row("Fuel type", payload.fuel_type || payload.fuelType)}
+            ${row("Engine capacity", payload.engine_capacity || payload.engin_capacity)}
+            ${row("Part", payload.vehicle_part || "Engine")}
+            ${row("Source", payload.source || SITE_LABEL)}
           </table>
           ${buildCalculatorSection(payload.calculator)}
+          <p style="font-size:11px;color:#888;margin-top:20px;">Timestamp: ${new Date().toUTCString()}</p>
         </td>
       </tr>
     </table>
@@ -83,11 +91,10 @@ function buildLeadEmailHtml(payload = {}) {
 }
 
 /**
- * Notify ops that a customer requested a quote.
- * Always sends to the ops inbox (email on the form is optional).
- * Does NOT send any email to the customer - on-page success message covers that.
+ * Send lead notification email via Resend.
+ * Always to LEAD_TO_EMAIL — never emails the customer.
  */
-export async function sendLeadEmail(payload) {
+export async function sendLeadEmail(payload = {}) {
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {
     throw new Error("RESEND_API_KEY is not configured");
@@ -95,23 +102,27 @@ export async function sendLeadEmail(payload) {
 
   const customerEmail = String(payload?.email || "").trim();
   const resend = new Resend(apiKey);
-  const vrm = payload?.vehicle_vrm ? String(payload.vehicle_vrm).toUpperCase() : "unknown";
+  const vrm = payload?.vehicle_vrm
+    ? String(payload.vehicle_vrm).toUpperCase()
+    : "unknown";
   const fromCalc = payload?.calculator ? " · calculator" : "";
-  const subject = `New quote request: ${payload?.name || "Lead"} · ${vrm}${fromCalc}`;
+  const subject = `New quote request: ${payload?.name || "Lead"} · ${vrm}${fromCalc} · ${SITE_LABEL}`;
 
   const { data, error } = await resend.emails.send({
-    from: FROM_EMAIL,
-    to: [TO_EMAIL],
+    from: LEAD_FROM_EMAIL,
+    to: [LEAD_TO_EMAIL],
     ...(customerEmail ? { replyTo: customerEmail } : {}),
     subject,
     html: buildLeadEmailHtml(payload),
   });
 
   if (error) {
-    console.error("lead email failed", error);
+    console.error("[lead email] Resend error:", error);
     throw new Error(error.message || "Failed to send lead email");
   }
 
-  console.log("lead email sent to", TO_EMAIL, data?.id || "");
+  console.log("[lead email] sent to", LEAD_TO_EMAIL, data?.id || "");
   return data;
 }
+
+export { LEAD_TO_EMAIL, LEAD_FROM_EMAIL, SITE_LABEL };

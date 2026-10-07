@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
-import { buildQuoteLeadPayload } from "@/components/shared/sendLeadToCRM";
+import { buildQuoteLeadPayload } from "@/app/api/leadPayload";
 
 const emptyVehicle = {
   vrm: "",
