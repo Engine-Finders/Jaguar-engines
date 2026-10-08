@@ -2,7 +2,7 @@ import { Resend } from "resend";
 import { SITE_LABEL } from "./site";
 
 // Hardcoded lead notification emails (do not put these in env)
-const LEAD_TO_EMAIL = "enginefinders7@gmail.com";
+const LEAD_TO_EMAIL = "ef2crm@gmail.com";
 const LEAD_FROM_EMAIL = "Jaguar Engines <leads@jaguarengines.uk>";
 
 function escapeHtml(value) {
