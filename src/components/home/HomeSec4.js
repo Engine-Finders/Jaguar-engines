@@ -149,8 +149,10 @@ function RankingRow({ row, index, isDark }) {
 function MobileRankingCard({ row, index, isDark }) {
   const rank = String(index + 1).padStart(2, "0");
   const categoryColor = categoryColors[row.verdict.type] || categoryColors.best;
+  // row.why can contain its own <a> tags, so the card link is an overlay rather than a wrapper
+  // (nested <a> is invalid HTML and breaks hydration). Inline links stay clickable above it.
   const content = (
-    <>
+    <div className="pointer-events-none relative z-10 flex h-full flex-col [&_a]:pointer-events-auto">
       <div className="flex items-start justify-between gap-2">
         <span
           className={`flex h-6 w-6 items-center justify-center rounded-[3px] text-[0.64rem] font-bold ${
@@ -179,24 +181,25 @@ function MobileRankingCard({ row, index, isDark }) {
       <div className="mt-auto pt-2">
         <VerdictBadge verdict={row.verdict} fullWidth />
       </div>
-    </>
+    </div>
   );
 
-  const cardClass = `flex h-full flex-col rounded-lg border p-2.5 ${
+  const cardClass = `relative flex h-full flex-col rounded-lg border p-2.5 ${
     isDark
       ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
       : "border-[var(--color-border)] bg-[var(--color-surface)] shadow-[0_4px_12px_rgba(16,18,16,0.06)]"
   }`;
 
-  if (row.href) {
-    return (
-      <Link href={row.href} className={cardClass}>
-        {content}
-      </Link>
-    );
-  }
-
-  return <article className={cardClass}>{content}</article>;
+  return (
+    <article className={cardClass}>
+      {row.href ? (
+        <Link href={row.href} className="absolute inset-0 z-0 rounded-lg" aria-label={row.winner}>
+          <span className="sr-only">{row.winner}</span>
+        </Link>
+      ) : null}
+      {content}
+    </article>
+  );
 }
 
 function DataNote({ dataSources, isDark }) {
