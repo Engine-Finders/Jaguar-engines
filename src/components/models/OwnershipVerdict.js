@@ -4,6 +4,7 @@ import Image from "next/image";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
+import { carImageFor } from "@/components/shared/carImage";
 import { sectionBody, sectionDescription, sectionH2, sectionTableText, tableHeaderClass } from "@/components/models/sectionTypography";
 
 const metricIconKeys = {
@@ -175,7 +176,7 @@ export default function OwnershipVerdict({ data }) {
             </div>
             <div className="relative mt-4 h-[200px] max-w-[420px] overflow-hidden rounded-md border border-[var(--color-border)] bg-[rgba(255,255,255,0.18)] shadow-[0_10px_24px_var(--color-shadow)] md:mt-5 md:h-[260px] md:max-w-[480px]">
               <Image
-                src="/home-image/right.webp"
+                src={carImageFor(data.h2) || "/home-image/right.webp"}
                 alt=""
                 fill
                 className="object-cover object-[35%_center] md:object-center"

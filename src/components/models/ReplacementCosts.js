@@ -5,6 +5,7 @@ import Image from "next/image";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
+import { carImageFor } from "@/components/shared/carImage";
 import { sectionDescription, sectionH2, sectionTableText, tableHeaderClass } from "@/components/models/sectionTypography";
 
 const RIGHT_IMAGE = "/home-image/right.webp";
@@ -267,7 +268,7 @@ function DesktopGenerationRow({ table, isDark }) {
         <h3 className="text-[17px] font-bold leading-[1.08] text-[var(--color-text)] md:text-[19px]">{label}</h3>
         <p className={`mt-1 ${sectionTableText}`}>{years}</p>
         <div className="relative mt-2 h-[130px] overflow-hidden rounded-md md:h-[160px]">
-          <Image src={RIGHT_IMAGE} alt="" fill className="object-cover object-center" sizes="260px" />
+          <Image src={table.image || RIGHT_IMAGE} alt="" fill className="object-cover object-center" sizes="260px" />
         </div>
       </div>
       <CostTable table={table} isDark={isDark} />
@@ -321,7 +322,7 @@ function MobileTabs({ tables, isDark }) {
           ) : null}
         </h3>
         <div className="relative mt-3 h-[230px] overflow-hidden rounded-md">
-          <Image src={RIGHT_IMAGE} alt="" fill className="object-cover object-center" sizes="100vw" />
+          <Image src={activeTable.image || RIGHT_IMAGE} alt="" fill className="object-cover object-center" sizes="100vw" />
         </div>
         <div className="mt-4 overflow-x-auto">
           <div className="min-w-[720px]">
@@ -380,7 +381,10 @@ function Notes({ parts, isDark, ruleTitle }) {
 
 export default function ReplacementCosts({ data }) {
   const { theme } = useTheme();
-  const tables = useMemo(() => normalizeTables(data?.tables || []), [data]);
+  const tables = useMemo(
+    () => normalizeTables(data?.tables || []).map((table) => ({ ...table, image: carImageFor(table.title, data?.h2) })),
+    [data]
+  );
   if (!data) return null;
 
   const isDark = theme === "dark";

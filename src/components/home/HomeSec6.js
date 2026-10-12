@@ -5,6 +5,7 @@ import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
+import { carImageFor } from "@/components/shared/carImage";
 
 const ROW_IMAGE = "/home-image/right.webp";
 
@@ -112,7 +113,7 @@ function MatrixRow({ row, isDark }) {
       <div className="flex min-w-0 items-center gap-2 md:gap-3">
         <div className="relative h-9 w-12 shrink-0 overflow-hidden rounded-sm md:h-11 md:w-16">
           <Image
-            src={ROW_IMAGE}
+            src={carImageFor(stripTags(row.model)) || ROW_IMAGE}
             alt={row.image?.alt || stripTags(row.model)}
             fill
             className="object-contain object-center"

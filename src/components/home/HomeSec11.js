@@ -5,6 +5,7 @@ import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
+import { carImageFor } from "@/components/shared/carImage";
 
 const ROW_IMAGE = "/home-image/right.webp";
 const ICON_LG = "h-9 w-9";
@@ -60,7 +61,7 @@ function ModelCard({ model, isDark, centerLast = false }) {
 
         <div className="relative mt-1.5 h-[80px] w-full md:mt-2 md:h-[92px]">
           <Image
-            src={ROW_IMAGE}
+            src={carImageFor(model.name) || ROW_IMAGE}
             alt={model.name}
             fill
             className="object-contain object-center transition duration-300 group-hover:scale-[1.03]"
@@ -170,7 +171,7 @@ function ExampleVerdict({ data, isDark }) {
         {/* Center image — side breathing room from left + right columns */}
         <div className="relative mx-auto h-[210px] w-full md:mx-0 md:h-[240px] md:px-3.5 lg:h-[260px]">
           <Image
-            src={data.image?.src || ROW_IMAGE}
+            src={carImageFor(data.model) || data.image?.src || ROW_IMAGE}
             alt={data.image?.alt || data.model || ""}
             fill
             className="object-contain object-center"

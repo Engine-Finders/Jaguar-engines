@@ -4,19 +4,14 @@ import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
 import MStripe from "@/components/reusableComponents/MStripe";
 import HomeIcon from "@/components/home/homeIcons";
+import { carImageFor as jaguarCarImage } from "@/components/shared/carImage";
 import { sectionDescription, sectionH2 } from "@/components/models/sectionTypography";
 import { engineSectionBg } from "./engineSection";
 
 const ENGINE_IMAGE = "/e90/engine.webp";
 
-const CAR_IMAGES = [
-  "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=640&q=80",
-  "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=640&q=80",
-  "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=640&q=80",
-  "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=640&q=80",
-  "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=640&q=80",
-  "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=640&q=80",
-];
+// Generic studio car for models we have no photo of (e.g. XJS, Daimler).
+const FALLBACK_CAR_IMAGE = "/home-image/right.webp";
 
 function cleanText(text = "") {
   return String(text)
@@ -120,11 +115,8 @@ function cardClass(isDark) {
     : "border-[var(--color-border-strong)] bg-[var(--color-surface)] shadow-[0_8px_20px_var(--color-shadow)]";
 }
 
-function carImageFor(model = "") {
-  const clean = cleanText(model);
-  let hash = 0;
-  for (let i = 0; i < clean.length; i += 1) hash += clean.charCodeAt(i);
-  return CAR_IMAGES[hash % CAR_IMAGES.length];
+function carImageFor(model = "", generation = "", years = "") {
+  return jaguarCarImage(cleanText(model), cleanText(generation), stripTags(years)) || FALLBACK_CAR_IMAGE;
 }
 
 function ShieldIcon({ isDark, className = "h-4 w-4" }) {
@@ -178,7 +170,7 @@ function DesktopModelCard({ item, isDark }) {
           ) : null}
         </div>
         <div className="relative h-11 w-[84px] shrink-0 overflow-hidden rounded-md">
-          <Image src={carImageFor(item.model)} alt="" fill sizes="84px" className="object-cover object-center" />
+          <Image src={carImageFor(item.model, item.generations[item.generations.length - 1])} alt="" fill sizes="84px" className="object-cover object-center" />
         </div>
       </div>
 
@@ -214,7 +206,7 @@ function MobileModelRow({ row, isDark }) {
             </p>
           ) : null}
           <div className="relative mt-1.5 h-10 w-full overflow-hidden rounded">
-            <Image src={carImageFor(row.model)} alt="" fill sizes="72px" className="object-cover object-center" />
+            <Image src={carImageFor(row.model, row.generation, row.years)} alt="" fill sizes="72px" className="object-cover object-center" />
           </div>
         </div>
 

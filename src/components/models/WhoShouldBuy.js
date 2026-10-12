@@ -5,6 +5,7 @@ import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
+import { carImageFor } from "@/components/shared/carImage";
 import { sectionBody, sectionDescription, sectionTableText, tableHeaderClass } from "@/components/models/sectionTypography";
 
 const buyerImages = [
@@ -136,16 +137,18 @@ function ProofStrip({ isDark }) {
 
 function BuyerRow({ row, index, model, isDark }) {
   const iconKey = profileIconKeys[profileIconKey(row.buyerProfile)] || "shield";
+  // Model first so a generation named in the verdict (e.g. "The X260 ...") picks its photo.
+  const carImage = carImageFor(model, row.verdict);
 
   return (
     <article className="grid overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_10px_26px_var(--color-shadow)] md:rounded-none md:border-0 md:border-t md:shadow-none lg:grid-cols-[40%_18%_42%]">
       <div className="grid grid-cols-[31%_69%] md:grid-cols-[300px_1fr] lg:border-r lg:border-[var(--color-border)]">
-        <div className="relative min-h-[150px] md:min-h-[124px]">
+        <div className={`relative min-h-[150px] md:min-h-[124px] ${carImage ? "bg-white" : ""}`}>
           <Image
-            src={buyerImages[index % buyerImages.length]}
+            src={carImage || buyerImages[index % buyerImages.length]}
             alt=""
             fill
-            className="object-cover"
+            className={carImage ? "object-contain p-2" : "object-cover"}
             sizes="(min-width: 1024px) 300px, (min-width: 768px) 300px, 31vw"
           />
         </div>

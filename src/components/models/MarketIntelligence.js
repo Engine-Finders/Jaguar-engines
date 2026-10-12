@@ -5,6 +5,7 @@ import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
+import { carImageFor } from "@/components/shared/carImage";
 import { tableHeaderClass } from "@/components/models/sectionTypography";
 
 const signalIconKeys = ["car", "engine"];
@@ -253,7 +254,7 @@ function PullQuote({ data, isDark }) {
       </div>
       <div className="relative min-h-[140px] md:min-h-full">
         <Image
-          src="/home-image/right.webp"
+          src={carImageFor(data.title, data.quote) || "/home-image/right.webp"}
           alt=""
           fill
           className="object-cover object-center"

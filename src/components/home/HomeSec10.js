@@ -5,6 +5,7 @@ import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
+import { carImageFor } from "@/components/shared/carImage";
 
 const ICON_LG = "h-9 w-9";
 
@@ -288,7 +289,7 @@ function FeedTable({ data, isDark }) {
           <span className={`flex min-w-0 items-center gap-2 font-semibold ${isDark ? "text-white" : "text-black"}`}>
             <span className="relative h-8 w-11 shrink-0 overflow-hidden rounded-sm md:h-9 md:w-12">
               <Image
-                src="/home-image/right.webp"
+                src={carImageFor(row.vehicle) || "/home-image/right.webp"}
                 alt=""
                 fill
                 className="object-contain object-center"
