@@ -89,8 +89,8 @@ function StatCard({ item, index, isDark }) {
         isDark ? "border-white/12" : "border-[var(--color-chrome)]/45"
       }`}
     >
-      <span className="flex h-14 w-14 shrink-0 items-center justify-center md:h-14 md:w-14">
-        <HomeIcon name={iconKey} isDark={isDark} className="h-14 w-14 object-contain" />
+      <span className="flex h-9 w-9 shrink-0 items-center justify-center">
+        <HomeIcon name={iconKey} isDark={isDark} className="h-9 w-9 object-contain" />
       </span>
       <div className={`min-w-0 flex-1 ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
         {stat.value ? (

@@ -79,7 +79,7 @@ export default function Overview({ data }) {
     const iconName = factIcons[index % factIcons.length];
     const iconBoxClass = mobile ? "h-10 w-10" : "h-8 w-8";
     const circledIconClass = mobile ? "h-5 w-5" : "h-4 w-4";
-    const plainIconClass = mobile ? "h-7 w-7" : "h-5 w-5";
+    const plainIconClass = "h-5 w-5";
 
     return (
       <div className="flex min-w-0 flex-1 flex-col items-center gap-2 px-1 text-center">
@@ -163,7 +163,7 @@ export default function Overview({ data }) {
 
   const marketIntelligenceBlockMobile = data.marketIntelligenceLine ? (
     <div className="glass-panel relative mt-2.5 flex items-center gap-3 rounded-lg p-3.5">
-      <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)]">
+      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)]">
         <HomeIcon name="insight" isDark={!isDark} className="h-8 w-8 object-contain" />
       </span>
       <div className="min-w-0 flex-1">

@@ -92,7 +92,7 @@ export default function BuyingChecklist({ data }) {
                       <span className={`absolute left-3 top-3 flex h-6 w-6 shrink-0 items-center justify-center rounded-md text-[0.7rem] font-bold ${indexBadgeClass(isDark)}`}>
                         {index + 1}
                       </span>
-                      <GenIcon name={ITEM_ICONS[index % ITEM_ICONS.length]} className="mt-2 h-10 w-10 text-[var(--color-primary)]" />
+                      <GenIcon name={ITEM_ICONS[index % ITEM_ICONS.length]} className="mt-2 h-6 w-6 text-[var(--color-primary)]" />
                       <p className="text-[0.92rem] font-bold leading-tight text-[var(--color-text)]">{label}</p>
                       {text ? <p className="text-[0.8rem] leading-[1.4] text-[var(--color-text-muted)]">{text}</p> : null}
                     </div>

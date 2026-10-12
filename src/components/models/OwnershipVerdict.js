@@ -73,11 +73,11 @@ function StatIcon({ iconKey, isDark }) {
 
   return (
     <span
-      className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full md:h-16 md:w-16 ${
+      className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${
         isDark ? "bg-white/10" : "bg-[#ececeb]"
       }`}
     >
-      <HomeIcon name={name} isDark={isDark} className="h-12 w-12 object-contain md:h-[3.35rem] md:w-[3.35rem]" />
+      <HomeIcon name={name} isDark={isDark} className="h-9 w-9 object-contain" />
     </span>
   );
 }
@@ -125,11 +125,11 @@ function OneLineVerdict({ text, isDark }) {
       }`}
     >
       <span
-        className={`float-left mr-3 mb-1 flex h-16 w-16 items-center justify-center rounded-full md:mr-4 md:h-20 md:w-20 ${
+        className={`float-left mr-3 mb-1 flex h-10 w-10 items-center justify-center rounded-full md:mr-4 ${
           isDark ? "bg-white/10" : "bg-white shadow-sm ring-1 ring-black/5"
         }`}
       >
-        <HomeIcon name="shield" isDark={isDark} className="h-14 w-14 object-contain md:h-16 md:w-16" />
+        <HomeIcon name="shield" isDark={isDark} className="h-9 w-9 object-contain" />
       </span>
       <HomeIcon
         name="quote"

@@ -102,11 +102,11 @@ function Stars({ rating }) {
 function CircleIcon({ name, isDark }) {
   return (
     <span
-      className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full md:h-16 md:w-16 ${
+      className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${
         isDark ? "bg-white/10" : "bg-[#ececeb]"
       }`}
     >
-      <HomeIcon name={name} isDark={isDark} className="h-10 w-10 object-contain md:h-12 md:w-12" />
+      <HomeIcon name={name} isDark={isDark} className="h-9 w-9 object-contain" />
     </span>
   );
 }
@@ -120,11 +120,11 @@ function ProofStrip({ isDark }) {
           className="flex flex-col items-center justify-start border-r border-[var(--color-border)] px-5 py-3.5 text-center last:border-r-0"
         >
           <span
-            className={`flex h-14 w-14 items-center justify-center rounded-full ${
+            className={`flex h-10 w-10 items-center justify-center rounded-full ${
               isDark ? "bg-white/10" : "bg-[#ececeb]"
             }`}
           >
-            <HomeIcon name={item.icon} isDark={isDark} className="h-10 w-10 object-contain" />
+            <HomeIcon name={item.icon} isDark={isDark} className="h-9 w-9 object-contain" />
           </span>
           <strong className="mt-1.5 text-[14px] leading-tight text-[var(--color-text)]">{item.title}</strong>
           <span className="mt-0.5 text-[13px] leading-[1.25] text-[var(--color-text-muted)]">{item.text}</span>
@@ -134,7 +134,7 @@ function ProofStrip({ isDark }) {
   );
 }
 
-function BuyerRow({ row, index, isDark }) {
+function BuyerRow({ row, index, model, isDark }) {
   const iconKey = profileIconKeys[profileIconKey(row.buyerProfile)] || "shield";
 
   return (
@@ -225,7 +225,7 @@ export default function WhoShouldBuy({ data }) {
 
           <div className="grid gap-5 bg-[var(--color-page)] md:gap-0 lg:block">
             {profiles.map((row, index) => (
-              <BuyerRow key={`${row.buyerProfile}-${index}`} row={row} index={index} isDark={isDark} />
+              <BuyerRow key={`${row.buyerProfile}-${index}`} row={row} index={index} model={modelName} isDark={isDark} />
             ))}
           </div>
         </div>
@@ -233,7 +233,7 @@ export default function WhoShouldBuy({ data }) {
         <div className="mt-5 flex flex-col gap-4 rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-4 shadow-[0_8px_24px_var(--color-shadow)] md:flex-row md:items-center md:justify-between md:p-5">
           <div className="flex gap-3.5">
             <span
-              className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full ${
+              className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${
                 isDark ? "bg-white/10" : "bg-[#ececeb]"
               }`}
             >

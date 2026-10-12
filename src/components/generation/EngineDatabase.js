@@ -198,8 +198,8 @@ export default function EngineDatabase({ data }) {
         {data.confidenceScore?.items?.length > 0 ? (
           <div className="mt-5 grid grid-cols-1 items-center gap-4 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-4 md:grid-cols-[72px_1fr_1fr_1fr_1.4fr] md:items-start md:gap-0 md:divide-x md:divide-[var(--color-border)]">
             <div className="flex items-start justify-start md:pr-4">
-              <span className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-md ${primaryBadgeClass(isDark)}`}>
-                <GenIcon name="shield" className="h-8 w-8" />
+              <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-md ${primaryBadgeClass(isDark)}`}>
+                <GenIcon name="shield" className="h-5 w-5" />
               </span>
             </div>
             {data.confidenceScore.items.map((item, index) => {

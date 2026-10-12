@@ -181,8 +181,8 @@ function RatingCard({ row, isDark }) {
         isDark ? "bg-[#141414] text-white" : "bg-[#1a1a1a] text-white"
       }`}
     >
-      <span className="flex h-24 w-24 shrink-0 items-center justify-center rounded-full bg-white/10">
-        <HomeIcon name="star" isDark className="h-14 w-14 object-contain" />
+      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/10">
+        <HomeIcon name="star" isDark className="h-9 w-9 object-contain" />
       </span>
       <div>
         <p className="text-[18px] font-bold">Overall Rating</p>

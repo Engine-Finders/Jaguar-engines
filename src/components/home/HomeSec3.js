@@ -270,7 +270,7 @@ function TrustStripText({ text = "" }) {
   return { value: "", lines: [text] };
 }
 
-function InvertedIconCircle({ name, isDark, wrapClass = "h-12 w-12 md:h-14 md:w-14", iconClass = "h-10 w-10 md:h-12 md:w-12" }) {
+function InvertedIconCircle({ name, isDark, wrapClass = "h-10 w-10", iconClass = "h-9 w-9" }) {
   return (
     <span
       className={`flex shrink-0 items-center justify-center rounded-full ${wrapClass} ${
@@ -295,8 +295,8 @@ function TrustStrip({ items, isDark }) {
               isDark ? "border-white/18" : "border-[var(--color-chrome)]/55"
             }`}
           >
-            <span className="flex h-14 w-14 shrink-0 items-center justify-center md:h-12 md:w-12">
-              <HomeIcon name={item.icon} isDark={isDark} className="h-14 w-14 md:h-12 md:w-12" />
+            <span className="flex h-9 w-9 shrink-0 items-center justify-center">
+              <HomeIcon name={item.icon} isDark={isDark} className="h-9 w-9" />
             </span>
             <span className={`min-w-0 ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
               {value ? (
@@ -392,8 +392,8 @@ function WhyTrustCard({ items, isDark }) {
             <InvertedIconCircle
               name={item.icon}
               isDark={isDark}
-              wrapClass="h-14 w-14 md:h-16 md:w-16"
-              iconClass="h-11 w-11 md:h-14 md:w-14"
+              wrapClass="h-10 w-10"
+              iconClass="h-9 w-9"
             />
             <div className="min-w-0">
               <p className={`text-[0.88rem] font-semibold leading-tight ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
@@ -548,7 +548,7 @@ function BottomBar({ cta, isDark, onStart }) {
     >
       <div className="flex items-center gap-2.5 md:gap-3">
         <span className="flex h-10 w-10 shrink-0 items-center justify-center md:h-11 md:w-11">
-          <HomeIcon name="shield" isDark={isDark} className="h-9 w-9 md:h-10 md:w-10" />
+          <HomeIcon name="shield" isDark={isDark} className="h-9 w-9" />
         </span>
         <div className="min-w-0">
           <p className={`text-[0.84rem] font-semibold leading-[1.3] md:text-[0.86rem] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
@@ -634,7 +634,7 @@ function CategoryCard({ category, selected, isDark, onSelect }) {
             : "border-[var(--color-border)] bg-[var(--color-surface)] hover:border-[var(--color-primary)]"
       }`}
     >
-      <span className={`flex h-11 w-11 items-center justify-center rounded-full ${selected ? "bg-[var(--color-primary)] text-white" : "bg-[var(--color-primary-soft)] text-[var(--color-primary)]"}`}>
+      <span className={`flex h-10 w-10 items-center justify-center rounded-full ${selected ? "bg-[var(--color-primary)] text-white" : "bg-[var(--color-primary-soft)] text-[var(--color-primary)]"}`}>
         <Icon name={category.icon} className="h-5 w-5" />
       </span>
       <p className={`mt-3 text-[0.92rem] font-semibold leading-tight ${selected ? "text-[var(--color-text)]" : isDark ? "text-white" : "text-[var(--color-text)]"}`}>{category.label}</p>
@@ -670,8 +670,8 @@ function OverridePanel({ diagnosis, isDark, onContinue }) {
   return (
     <div className={`rounded-xl border p-5 md:p-6 ${isDark ? meta.darkPanel : meta.panel}`}>
       <div className="flex items-start gap-4">
-        <span className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full ${isDark ? "bg-[rgba(255,255,255,0.08)] text-white" : "bg-[var(--color-surface)] text-[var(--color-text)]"}`}>
-          <Icon name={meta.icon} className="h-7 w-7" />
+        <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${isDark ? "bg-[rgba(255,255,255,0.08)] text-white" : "bg-[var(--color-surface)] text-[var(--color-text)]"}`}>
+          <Icon name={meta.icon} className="h-5 w-5" />
         </span>
         <div className="min-w-0">
           <SeverityBadge severity={diagnosis.severity} isDark={isDark} />

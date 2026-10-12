@@ -400,7 +400,7 @@ function IPaceNote({ note }) {
       }`}
     >
       <span
-        className={`mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-full border md:h-9 md:w-9 ${
+        className={`mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border md:h-9 md:w-9 ${
           isDark ? "border-white/20 text-white/85" : "border-[var(--color-chrome)] text-[var(--color-text)]"
         }`}
       >

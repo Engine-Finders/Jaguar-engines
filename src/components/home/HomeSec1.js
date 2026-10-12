@@ -197,8 +197,8 @@ export default function HomeSec1({ data }) {
                     isDark ? "border-white/18" : "border-[var(--color-chrome)]/55"
                   }`}
                 >
-                  <span className="flex h-14 w-14 shrink-0 items-center justify-center md:h-12 md:w-12">
-                    <HomeIcon name={iconKey} isDark={isDark} className="h-14 w-14 md:h-12 md:w-12" />
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center">
+                    <HomeIcon name={iconKey} isDark={isDark} className="h-9 w-9" />
                   </span>
                   <span className={`min-w-0 ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
                     {stat.value ? (
@@ -244,8 +244,8 @@ export default function HomeSec1({ data }) {
                     isDark ? "border-white/12" : "border-[var(--color-chrome)]/45"
                   }`}
                 >
-                  <span className={`flex h-16 w-16 shrink-0 items-center justify-center md:h-14 md:w-14 ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
-                    <HomeIcon name={trustBadgeIconKeys[index]} isDark={isDark} className="h-16 w-16 md:h-14 md:w-14" />
+                  <span className={`flex h-10 w-10 shrink-0 items-center justify-center ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+                    <HomeIcon name={trustBadgeIconKeys[index]} isDark={isDark} className="h-9 w-9" />
                   </span>
                   <p
                     className={`min-w-0 text-[0.8rem] leading-[1.3] md:text-[0.82rem] ${
