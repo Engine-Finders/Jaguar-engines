@@ -7,8 +7,8 @@ import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
 import { sectionBody, sectionButton, sectionDescription } from "@/components/models/sectionTypography";
 
-const ICON_LG = "h-12 w-12 md:h-14 md:w-14";
-const ICON_XL = "h-14 w-14 md:h-16 md:w-16";
+const ICON_LG = "h-9 w-9";
+const ICON_XL = "h-9 w-9";
 
 function cleanText(text = "") {
   return String(text ?? "")
@@ -55,10 +55,10 @@ function introParts(intro = "") {
 
 function CircleIcon({ name, isDark, large = false, compact = false }) {
   const circleClass = large
-    ? "h-[4.75rem] w-[4.75rem] md:h-[5.5rem] md:w-[5.5rem]"
+    ? "h-10 w-10"
     : compact
       ? "h-8 w-8 md:h-9 md:w-9"
-      : "h-12 w-12 md:h-14 md:w-14";
+      : "h-10 w-10";
 
   return (
     <span
@@ -71,7 +71,7 @@ function CircleIcon({ name, isDark, large = false, compact = false }) {
         isDark={isDark}
         className={
           large
-            ? "h-16 w-16 md:h-20 md:w-20"
+            ? "h-9 w-9"
             : compact
               ? "h-6 w-6 md:h-7 md:w-7"
               : ICON_LG
@@ -238,7 +238,7 @@ function SmartDecision({ isDark }) {
           : "border-[#e8e8e6] bg-white shadow-[0_8px_22px_rgba(16,18,16,0.05)]"
       }`}
     >
-      <HomeIcon name="calculator" isDark={isDark} className="h-9 w-9 shrink-0 md:h-11 md:w-11" />
+      <HomeIcon name="calculator" isDark={isDark} className="h-9 w-9 shrink-0" />
       <p className={`${sectionBody} md:text-[17px] ${isDark ? "text-white/85" : "text-[var(--color-text)]"}`}>
         <strong className={`font-bold ${isDark ? "text-[var(--color-chrome-bright)]" : "text-black"}`}>
           The smarter way to decide:
@@ -335,7 +335,7 @@ export default function CalculatorCTA({ data }) {
         >
           <div className="flex gap-4">
             <span
-              className={`flex h-16 w-16 shrink-0 items-center justify-center rounded-full md:h-[4.5rem] md:w-[4.5rem] ${
+              className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${
                 isDark ? "bg-white/10" : "bg-[#ececeb]"
               }`}
             >

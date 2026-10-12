@@ -6,6 +6,7 @@ import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
+import { carImageFor } from "@/components/shared/carImage";
 import { sectionDescription, sectionH2, sectionTableText, tableHeaderClass } from "@/components/models/sectionTypography";
 
 const HEADER_IMAGE = "/home-image/sec2-bg.webp";
@@ -178,7 +179,7 @@ function Rating({ value, compact = false }) {
   );
 }
 
-function GenerationImage({ large = false }) {
+function GenerationImage({ large = false, src = RIGHT_IMAGE }) {
   return (
     <div
       className={`relative flex w-full items-end justify-center overflow-hidden rounded-sm ${
@@ -186,7 +187,7 @@ function GenerationImage({ large = false }) {
       }`}
     >
       <Image
-        src={RIGHT_IMAGE}
+        src={src}
         alt=""
         fill
         className="object-cover object-center"
@@ -271,7 +272,7 @@ function GenerationCard({ card, index, featured = false, onToggle, isDark }) {
       </div>
 
       <div className={featured ? "mt-2" : "mt-4"}>
-        <GenerationImage large={featured} />
+        <GenerationImage large={featured} src={card.image} />
       </div>
 
       {featured ? (
@@ -336,7 +337,7 @@ function MobileGenerationRow({ card, index, onToggle, isDark }) {
         </div>
       </div>
       <div className="w-[112px] shrink-0">
-        <GenerationImage />
+        <GenerationImage src={card.image} />
       </div>
       <span className="shrink-0 text-[var(--color-chrome-bright)]">
         <ChevronIcon />
@@ -460,7 +461,7 @@ export default function GenerationsGrid({ data }) {
 
   const isDark = theme === "dark";
   const title = splitTitle(data.h2);
-  const cards = data.cards || [];
+  const cards = (data.cards || []).map((card) => ({ ...card, image: carImageFor(card.title, data.h2) }));
   const desktopSlides = [];
   const sectionBg = isDark ? "bg-[var(--color-page)]" : "bg-[#ececea]";
 

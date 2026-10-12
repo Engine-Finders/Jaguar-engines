@@ -154,7 +154,7 @@ function TrustStrip({ items, isDark }) {
 
         return (
           <li key={item.label} className={`flex min-w-0 flex-col items-center border-r px-2 py-5 text-center last:border-r-0 ${isDark ? "border-[var(--color-border)]" : "border-[#dfe7f1]"}`}>
-            <HomeIcon name={trustIconByIndex[index] || "chart"} isDark={isDark} className="h-10 w-10" />
+            <HomeIcon name={trustIconByIndex[index] || "chart"} isDark={isDark} className="h-9 w-9" />
             <span className={`mt-3 text-[0.78rem] leading-[1.28] ${isDark ? "text-white/78" : "text-[#172b4a]"}`}>
               {parts ? parts[1] : text}
               {parts?.[2] ? <strong className={isDark ? "block text-white" : "block text-[#071827]"}>{parts[2]}</strong> : null}
@@ -191,7 +191,7 @@ function LegendCard({ legend, isDark }) {
   return (
     <Link href={legend.href} className={`flex items-center gap-5 rounded-md border p-5 shadow-[0_16px_36px_rgba(10,26,43,0.08)] md:hidden ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface-raised)] text-white" : "border-[#dfe5ed] bg-white text-[#071827]"}`}>
       <span className="shrink-0">
-        <HomeIcon name="bulb" isDark={isDark} className="h-12 w-12" />
+        <HomeIcon name="bulb" isDark={isDark} className="h-9 w-9" />
       </span>
       <span className="min-w-0 flex-1">
         <strong className="block text-[1rem]">{legend.title}</strong>

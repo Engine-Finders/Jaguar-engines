@@ -37,7 +37,7 @@ function ArrowIcon() {
 function StatIcon({ index, isDark }) {
   return (
     <span
-      className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full border text-[var(--color-primary)] md:h-16 md:w-16 ${
+      className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full border text-[var(--color-primary)] ${
         isDark
           ? "border-white/14 bg-[var(--color-primary-soft)]"
           : "border-[var(--color-border)] bg-[var(--color-primary-soft)]"

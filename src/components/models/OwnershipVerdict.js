@@ -4,6 +4,7 @@ import Image from "next/image";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
+import { carImageFor } from "@/components/shared/carImage";
 import { sectionBody, sectionDescription, sectionH2, sectionTableText, tableHeaderClass } from "@/components/models/sectionTypography";
 
 const metricIconKeys = {
@@ -73,11 +74,11 @@ function StatIcon({ iconKey, isDark }) {
 
   return (
     <span
-      className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full md:h-16 md:w-16 ${
+      className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${
         isDark ? "bg-white/10" : "bg-[#ececeb]"
       }`}
     >
-      <HomeIcon name={name} isDark={isDark} className="h-12 w-12 object-contain md:h-[3.35rem] md:w-[3.35rem]" />
+      <HomeIcon name={name} isDark={isDark} className="h-9 w-9 object-contain" />
     </span>
   );
 }
@@ -125,11 +126,11 @@ function OneLineVerdict({ text, isDark }) {
       }`}
     >
       <span
-        className={`float-left mr-3 mb-1 flex h-16 w-16 items-center justify-center rounded-full md:mr-4 md:h-20 md:w-20 ${
+        className={`float-left mr-3 mb-1 flex h-10 w-10 items-center justify-center rounded-full md:mr-4 ${
           isDark ? "bg-white/10" : "bg-white shadow-sm ring-1 ring-black/5"
         }`}
       >
-        <HomeIcon name="shield" isDark={isDark} className="h-14 w-14 object-contain md:h-16 md:w-16" />
+        <HomeIcon name="shield" isDark={isDark} className="h-9 w-9 object-contain" />
       </span>
       <HomeIcon
         name="quote"
@@ -175,7 +176,7 @@ export default function OwnershipVerdict({ data }) {
             </div>
             <div className="relative mt-4 h-[200px] max-w-[420px] overflow-hidden rounded-md border border-[var(--color-border)] bg-[rgba(255,255,255,0.18)] shadow-[0_10px_24px_var(--color-shadow)] md:mt-5 md:h-[260px] md:max-w-[480px]">
               <Image
-                src="/home-image/right.webp"
+                src={carImageFor(data.h2) || "/home-image/right.webp"}
                 alt=""
                 fill
                 className="object-cover object-[35%_center] md:object-center"

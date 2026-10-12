@@ -6,7 +6,7 @@ import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
 
-const ICON_LG = "h-11 w-11 md:h-12 md:w-12";
+const ICON_LG = "h-9 w-9";
 
 function cleanText(value = "") {
   return String(value || "")

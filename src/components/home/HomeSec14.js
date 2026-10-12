@@ -6,8 +6,8 @@ import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
 
-const ICON_LG = "h-11 w-11 md:h-12 md:w-12";
-const ICON_XL = "h-12 w-12 md:h-14 md:w-14";
+const ICON_LG = "h-9 w-9";
+const ICON_XL = "h-9 w-9";
 
 function ArrowIcon({ className = "h-4 w-4" }) {
   return (
@@ -106,11 +106,11 @@ export default function HomeSec14({ data }) {
                       }`}
                     >
                       <span
-                        className={`flex h-12 w-12 items-center justify-center rounded-full md:h-14 md:w-14 ${
+                        className={`flex h-10 w-10 items-center justify-center rounded-full ${
                           isDark ? "bg-white/10" : "bg-[#ececeb]"
                         }`}
                       >
-                        <HomeIcon name={stat.icon} isDark={isDark} className="h-11 w-11 md:h-12 md:w-12" />
+                        <HomeIcon name={stat.icon} isDark={isDark} className="h-9 w-9" />
                       </span>
                       <span
                         className={`mt-1.5 max-w-[120px] text-center text-[0.62rem] leading-[1.25] md:mt-2 md:text-[0.78rem] ${
@@ -162,7 +162,7 @@ export default function HomeSec14({ data }) {
               }`}
             >
               <span
-                className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full md:h-11 md:w-11 ${
+                className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${
                   isDark ? "bg-[var(--color-page)]" : "bg-white"
                 }`}
               >

@@ -5,12 +5,13 @@ import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
+import { carImageFor } from "@/components/shared/carImage";
 
 const ROW_IMAGE = "/home-image/right.webp";
-const ICON_LG = "h-12 w-12 md:h-14 md:w-14";
-const ICON_MD = "h-9 w-9 md:h-10 md:w-10";
-const ICON_XL = "h-11 w-11 md:h-12 md:w-12";
-const ICON_CIRCLE = "h-14 w-14 md:h-16 md:w-16";
+const ICON_LG = "h-9 w-9";
+const ICON_MD = "h-9 w-9";
+const ICON_XL = "h-9 w-9";
+const ICON_CIRCLE = "h-10 w-10";
 
 function cleanText(value = "") {
   return String(value || "")
@@ -60,7 +61,7 @@ function ModelCard({ model, isDark, centerLast = false }) {
 
         <div className="relative mt-1.5 h-[80px] w-full md:mt-2 md:h-[92px]">
           <Image
-            src={ROW_IMAGE}
+            src={carImageFor(model.name) || ROW_IMAGE}
             alt={model.name}
             fill
             className="object-contain object-center transition duration-300 group-hover:scale-[1.03]"
@@ -148,11 +149,11 @@ function ExampleVerdict({ data, isDark }) {
                 className="flex flex-col items-center gap-1.5 text-center md:flex-row md:items-start md:gap-3 md:text-left"
               >
                 <span
-                  className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full md:mt-0.5 md:h-14 md:w-14 ${
+                  className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full md:mt-0.5 ${
                     isDark ? "bg-white/10" : "bg-white"
                   }`}
                 >
-                  <HomeIcon name={item.icon} isDark={isDark} className="h-8 w-8 md:h-11 md:w-11" />
+                  <HomeIcon name={item.icon} isDark={isDark} className="h-8 w-8 md:h-9 md:w-9" />
                 </span>
                 <span className="min-w-0 md:pt-1">
                   <strong className={`block text-[0.72rem] leading-tight md:text-[0.88rem] ${isDark ? "text-white" : "text-black"}`}>
@@ -170,7 +171,7 @@ function ExampleVerdict({ data, isDark }) {
         {/* Center image — side breathing room from left + right columns */}
         <div className="relative mx-auto h-[210px] w-full md:mx-0 md:h-[240px] md:px-3.5 lg:h-[260px]">
           <Image
-            src={data.image?.src || ROW_IMAGE}
+            src={carImageFor(data.model) || data.image?.src || ROW_IMAGE}
             alt={data.image?.alt || data.model || ""}
             fill
             className="object-contain object-center"

@@ -615,7 +615,7 @@ export default function EngineDatabase({ data }) {
           <div className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-4">
             <div className="flex items-center gap-2.5">
               <span
-                className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full ${
+                className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${
                   isDark ? "bg-white/10" : "bg-[#ececeb]"
                 }`}
               >

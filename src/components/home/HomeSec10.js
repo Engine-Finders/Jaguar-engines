@@ -5,8 +5,9 @@ import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
+import { carImageFor } from "@/components/shared/carImage";
 
-const ICON_LG = "h-12 w-12 md:h-14 md:w-14";
+const ICON_LG = "h-9 w-9";
 
 const riskDot = {
   catastrophic: "bg-[#ed1c24]",
@@ -239,7 +240,7 @@ function FailuresTable({ data, isDark }) {
           >
             <div className="flex min-w-0 items-start gap-2">
               <span
-                className={`mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-full md:h-12 md:w-12 ${
+                className={`mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${
                   isDark ? "bg-white/10" : "bg-[#ececeb]"
                 }`}
               >
@@ -288,7 +289,7 @@ function FeedTable({ data, isDark }) {
           <span className={`flex min-w-0 items-center gap-2 font-semibold ${isDark ? "text-white" : "text-black"}`}>
             <span className="relative h-8 w-11 shrink-0 overflow-hidden rounded-sm md:h-9 md:w-12">
               <Image
-                src="/home-image/right.webp"
+                src={carImageFor(row.vehicle) || "/home-image/right.webp"}
                 alt=""
                 fill
                 className="object-contain object-center"

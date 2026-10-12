@@ -71,7 +71,7 @@ function RankingIcon({ row, index, isDark }) {
 
   return (
     <span
-      className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full md:h-14 md:w-14 ${
+      className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${
         isDark ? "bg-[#1a1a1a] ring-1 ring-white/15" : "bg-[#d8d8d6]"
       }`}
     >

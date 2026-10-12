@@ -5,6 +5,7 @@ import Image from "next/image";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
+import { carImageFor } from "@/components/shared/carImage";
 import { sectionDescription, sectionH2, sectionTableText, tableHeaderClass } from "@/components/models/sectionTypography";
 
 const RIGHT_IMAGE = "/home-image/right.webp";
@@ -168,11 +169,11 @@ function FloatNoteText({ html, title, iconName, isDark }) {
   return (
     <div className="overflow-hidden">
       <span
-        className={`float-left mr-3 mb-1 grid h-16 w-16 shrink-0 place-items-center rounded-full ${
+        className={`float-left mr-3 mb-1 grid h-10 w-10 shrink-0 place-items-center rounded-full ${
           isDark ? "bg-white/10" : "bg-[#ececeb]"
         }`}
       >
-        <HomeIcon name={iconName} isDark={isDark} className="h-10 w-10 object-contain" />
+        <HomeIcon name={iconName} isDark={isDark} className="h-9 w-9 object-contain" />
       </span>
       <p className="text-[15px] leading-[1.5] text-[var(--color-text)]">
         <strong className="font-bold">{title}</strong>{" "}
@@ -191,11 +192,11 @@ function TrustStrip({ isDark }) {
           className="flex flex-col items-center justify-center border-r border-[var(--color-border)] px-1.5 py-3 text-center last:border-r-0 md:px-4 md:py-3.5"
         >
           <span
-            className={`flex h-12 w-12 items-center justify-center rounded-full md:h-14 md:w-14 ${
+            className={`flex h-10 w-10 items-center justify-center rounded-full ${
               isDark ? "bg-white/10" : "bg-[#ececeb]"
             }`}
           >
-            <HomeIcon name={item.icon} isDark={isDark} className="h-9 w-9 object-contain md:h-11 md:w-11" />
+            <HomeIcon name={item.icon} isDark={isDark} className="h-9 w-9 object-contain" />
           </span>
           <strong className="mt-1.5 text-[13px] leading-[1.1] text-[var(--color-text)] md:text-[15px]">
             {item.title}
@@ -267,7 +268,7 @@ function DesktopGenerationRow({ table, isDark }) {
         <h3 className="text-[17px] font-bold leading-[1.08] text-[var(--color-text)] md:text-[19px]">{label}</h3>
         <p className={`mt-1 ${sectionTableText}`}>{years}</p>
         <div className="relative mt-2 h-[130px] overflow-hidden rounded-md md:h-[160px]">
-          <Image src={RIGHT_IMAGE} alt="" fill className="object-cover object-center" sizes="260px" />
+          <Image src={table.image || RIGHT_IMAGE} alt="" fill className="object-cover object-center" sizes="260px" />
         </div>
       </div>
       <CostTable table={table} isDark={isDark} />
@@ -321,7 +322,7 @@ function MobileTabs({ tables, isDark }) {
           ) : null}
         </h3>
         <div className="relative mt-3 h-[230px] overflow-hidden rounded-md">
-          <Image src={RIGHT_IMAGE} alt="" fill className="object-cover object-center" sizes="100vw" />
+          <Image src={activeTable.image || RIGHT_IMAGE} alt="" fill className="object-cover object-center" sizes="100vw" />
         </div>
         <div className="mt-4 overflow-x-auto">
           <div className="min-w-[720px]">
@@ -357,11 +358,11 @@ function Notes({ parts, isDark, ruleTitle }) {
 
       <div className="inline-flex w-fit max-w-[620px] flex-row gap-4 self-start rounded-md border border-[var(--color-border-strong)] bg-[var(--color-surface-raised)] p-4 text-[var(--color-text)] md:p-5">
         <span
-          className={`hidden h-16 w-16 shrink-0 items-center justify-center rounded-full md:flex ${
+          className={`hidden h-10 w-10 shrink-0 items-center justify-center rounded-full md:flex ${
             isDark ? "bg-white/10" : "bg-[#ececeb]"
           }`}
         >
-          <HomeIcon name="crown" isDark={isDark} className="h-12 w-12 object-contain md:h-14 md:w-14" />
+          <HomeIcon name="crown" isDark={isDark} className="h-9 w-9 object-contain" />
         </span>
         <div className="max-w-[540px]">
           <h3 className="text-[24px] font-bold leading-[1.12] text-[var(--color-chrome-bright)] md:text-[30px]">
@@ -380,7 +381,10 @@ function Notes({ parts, isDark, ruleTitle }) {
 
 export default function ReplacementCosts({ data }) {
   const { theme } = useTheme();
-  const tables = useMemo(() => normalizeTables(data?.tables || []), [data]);
+  const tables = useMemo(
+    () => normalizeTables(data?.tables || []).map((table) => ({ ...table, image: carImageFor(table.title, data?.h2) })),
+    [data]
+  );
   if (!data) return null;
 
   const isDark = theme === "dark";

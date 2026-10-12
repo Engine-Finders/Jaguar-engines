@@ -192,7 +192,7 @@ export default function VariantHero({ data }) {
               ) : null}
               <div className="flex w-full items-center gap-2 text-left">
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center md:h-11 md:w-11">
-                  <HomeIcon name={icon} isDark={isDark} className="h-10 w-10 object-contain md:h-11 md:w-11" />
+                  <HomeIcon name={icon} isDark={isDark} className="h-9 w-9 object-contain" />
                 </span>
                 <span className={`text-[0.88rem] leading-[1.3] ${badgeTextClass}`}>{label}</span>
               </div>
@@ -216,7 +216,7 @@ export default function VariantHero({ data }) {
               className={`flex flex-col items-center gap-1 px-0.5 ${index > 0 ? `border-l ${dividerBorderClass}` : ""}`}
             >
               <span className="flex h-10 w-10 shrink-0 items-center justify-center">
-                <HomeIcon name={icon} isDark={isDark} className="h-10 w-10 object-contain" />
+                <HomeIcon name={icon} isDark={isDark} className="h-9 w-9 object-contain" />
               </span>
               <span className={`text-[0.58rem] leading-tight ${badgeTextClass}`}>{label}</span>
             </div>

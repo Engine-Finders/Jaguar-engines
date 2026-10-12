@@ -5,6 +5,7 @@ import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
+import { carImageFor } from "@/components/shared/carImage";
 
 function ArrowIcon({ className = "h-4 w-4" }) {
   return (
@@ -75,7 +76,7 @@ function ComparisonCard({ item, isDark }) {
         <div className="relative mt-2 grid grid-cols-2 md:mt-2.5">
           <div className="relative h-[80px] pr-2.5 md:h-[96px] md:pr-3">
             <Image
-              src={LEFT_IMAGE}
+              src={carImageFor(left.label) || LEFT_IMAGE}
               alt={left.image?.alt || left.label || ""}
               fill
               className="object-contain object-center"
@@ -84,7 +85,7 @@ function ComparisonCard({ item, isDark }) {
           </div>
           <div className="relative h-[80px] pl-2.5 md:h-[96px] md:pl-3">
             <Image
-              src={RIGHT_IMAGE}
+              src={carImageFor(right.label) || RIGHT_IMAGE}
               alt={right.image?.alt || right.label || ""}
               fill
               className="object-contain object-center"

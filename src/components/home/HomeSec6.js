@@ -5,6 +5,7 @@ import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
+import { carImageFor } from "@/components/shared/carImage";
 
 const ROW_IMAGE = "/home-image/right.webp";
 
@@ -112,7 +113,7 @@ function MatrixRow({ row, isDark }) {
       <div className="flex min-w-0 items-center gap-2 md:gap-3">
         <div className="relative h-9 w-12 shrink-0 overflow-hidden rounded-sm md:h-11 md:w-16">
           <Image
-            src={ROW_IMAGE}
+            src={carImageFor(stripTags(row.model)) || ROW_IMAGE}
             alt={row.image?.alt || stripTags(row.model)}
             fill
             className="object-contain object-center"
@@ -202,11 +203,11 @@ function RuleCard({ data, isDark }) {
       }`}
     >
       <span
-        className={`flex h-14 w-14 items-center justify-center rounded-full md:h-16 md:w-16 ${
+        className={`flex h-10 w-10 items-center justify-center rounded-full ${
           isDark ? "bg-white/10" : "bg-[#ececeb] shadow-[0_2px_8px_rgba(0,0,0,0.06)]"
         }`}
       >
-        <HomeIcon name="calculator" isDark={isDark} className="h-9 w-9 md:h-10 md:w-10" />
+        <HomeIcon name="calculator" isDark={isDark} className="h-9 w-9" />
       </span>
 
       <p
@@ -307,7 +308,7 @@ function DeeperLinks({ links, isDark }) {
               </span>
 
               <span className="relative z-[1] mt-1">
-                <HomeIcon name={link.icon || "link"} isDark={isDark} className="h-11 w-11 md:h-12 md:w-12" />
+                <HomeIcon name={link.icon || "link"} isDark={isDark} className="h-9 w-9" />
               </span>
 
               <h3
@@ -348,7 +349,7 @@ function DataNote({ note, isDark }) {
       }`}
     >
       <span className="flex h-11 w-11 shrink-0 items-center justify-center md:h-12 md:w-12">
-        <HomeIcon name="info" isDark={isDark} className="h-10 w-10 md:h-11 md:w-11" />
+        <HomeIcon name="info" isDark={isDark} className="h-9 w-9" />
       </span>
       <p className={`min-w-0 flex-1 text-[0.76rem] leading-[1.45] md:text-[0.82rem] ${isDark ? "text-white/75" : "text-[var(--color-text-muted)]"}`}>
         <strong className={isDark ? "text-white" : "text-[var(--color-text)]"}>{note.label}</strong>{" "}

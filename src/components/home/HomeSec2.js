@@ -5,6 +5,9 @@ import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
+import { carImageFor } from "@/components/shared/carImage";
+
+const FALLBACK_CAR_IMAGE = "/home-image/right.webp";
 
 const verdictStyles = {
   warning: {
@@ -319,7 +322,7 @@ function DesktopCard({ item }) {
 
       <div className="relative mt-2.5 h-[120px] w-full overflow-hidden rounded-md md:h-[140px]">
         <Image
-          src="/home-image/right.webp"
+          src={carImageFor(name) || FALLBACK_CAR_IMAGE}
           alt={item.image.alt || name}
           fill
           className="object-cover object-center transition duration-300 group-hover:scale-[1.03]"
@@ -359,7 +362,7 @@ function MobileRow({ item }) {
       }`}
     >
       <div className="relative h-11 w-[4.5rem] overflow-hidden rounded-md">
-        <Image src="/home-image/right.webp" alt={item.image.alt || name} fill className="object-cover object-center" sizes="72px" />
+        <Image src={carImageFor(name) || FALLBACK_CAR_IMAGE} alt={item.image.alt || name} fill className="object-cover object-center" sizes="72px" />
       </div>
 
       <div className="min-w-0">
@@ -400,7 +403,7 @@ function IPaceNote({ note }) {
       }`}
     >
       <span
-        className={`mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-full border md:h-9 md:w-9 ${
+        className={`mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border md:h-9 md:w-9 ${
           isDark ? "border-white/20 text-white/85" : "border-[var(--color-chrome)] text-[var(--color-text)]"
         }`}
       >

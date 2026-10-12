@@ -7,7 +7,7 @@ import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
 
 const ENGINE_IMAGE = "/engine.webp";
-const ICON_LG = "h-10 w-10 md:h-11 md:w-11";
+const ICON_LG = "h-9 w-9";
 
 const severityStyle = {
   catastrophic: {

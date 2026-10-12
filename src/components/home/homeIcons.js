@@ -116,22 +116,32 @@ const SILVER_FILES = {
   "Top choice-01.png": "Top choice.png",
 };
 
+// The icon artwork is trimmed edge-to-edge, but every icon box on the site was sized for
+// the previous artwork, whose glyph filled ~45% of its canvas. Drawing the glyph at half
+// the box restores those proportions (layout unchanged); the 12px floor keeps the
+// smallest boxes legible.
+const GLYPH_SCALE = "h-1/2 w-1/2 min-h-3 min-w-3";
+
 export default function HomeIcon({ name, isDark, className = "h-5 w-5" }) {
   const file = FILES[name];
   if (!file) return null;
 
   const folder = isDark ? "Jaguar Silver" : "Jaguar Black";
   const resolved = isDark ? SILVER_FILES[file] || file : file;
-  const src = `/${encodeURIComponent(folder)}/${encodeURIComponent(resolved)}`;
+  // Each PNG has a 192px WebP copy with the same name, sized for the largest icon box at 2x.
+  const webp = resolved.replace(/\.png$/i, ".webp");
+  const src = `/${encodeURIComponent(folder)}/${encodeURIComponent(webp)}`;
 
   return (
-    <Image
-      src={src}
-      alt=""
-      width={48}
-      height={48}
-      className={className}
-      unoptimized
-    />
+    <span className={`inline-flex shrink-0 items-center justify-center ${className}`}>
+      <Image
+        src={src}
+        alt=""
+        width={48}
+        height={48}
+        className={`${GLYPH_SCALE} object-contain`}
+        unoptimized
+      />
+    </span>
   );
 }

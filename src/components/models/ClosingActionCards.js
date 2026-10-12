@@ -139,7 +139,7 @@ function ActionCard({ card, index, isDark }) {
       )}
       <div className="relative z-10 flex h-full max-w-[78%] flex-col items-start md:max-w-[74%] lg:max-w-[78%]">
         <span className="flex h-12 w-12 items-center justify-center rounded-md bg-white/86 text-[var(--card-accent)] shadow-[0_12px_26px_rgba(10,26,43,0.10)] md:h-20 md:w-20">
-          <HomeIcon name={theme.icon} isDark={false} className="h-9 w-9 md:h-14 md:w-14" />
+          <HomeIcon name={theme.icon} isDark={false} className="h-9 w-9" />
         </span>
         <h3 className="mt-3 text-[18px] font-bold leading-[1.06] text-black dark:text-black md:mt-5 md:text-[26px] lg:text-[24px]">
           <span dangerouslySetInnerHTML={{ __html: titleParts.before }} />
