@@ -60,13 +60,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ133 (5.0 V8 NA, 2009-2014)",
-              "url": "https://jaguarengines.uk/xk/50-v8/#na"
+              "url": "https://jaguarengines.uk/xk/50-v8"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "AJ133 (5.0 V8 SC XKR, 2009-2014)",
-              "url": "https://jaguarengines.uk/xk/50-v8/#xkr"
+              "url": "https://jaguarengines.uk/xk/50-v8"
             }
           ]
         },
@@ -78,7 +78,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ133",
-              "url": "https://jaguarengines.uk/engines/aj133/"
+              "url": "https://jaguarengines.uk/engine/aj133"
             }
           ]
         },
@@ -206,7 +206,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "See XK 5.0 Engine Options →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK‑Wide Network"
@@ -285,7 +285,7 @@
     "labourEstimate": "Fitting an XK 5.0 V8 engine typically takes 14‑20 hours at £75‑£110/hr (independent Jaguar specialist). The V8's size and the XK's packaging add significant labour complexity.",
     "cta": {
       "label": "→ Compare XK 5.0 V8 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -305,7 +305,7 @@
         "recommendation": "The water pump is the single most critical weakness in the 5.0 V8 engine. It is a known failure point and should be considered a consumable item on these cars. The water pump has been revised multiple times with improved part numbers. One owner reported a water pump failure at 44,000 miles, and another at 33,000 km. There is no proper temperature gauge on these cars - just a warning light - so by the time you get a warning, it's often too late. Your nose is your best early warning system: if you smell antifreeze, investigate immediately. Replacing the water pump proactively at 40,000–50,000 miles is strongly recommended.",
         "failureLink": {
           "label": "",
-          "href": "/failures/water-pump-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -323,7 +323,7 @@
         "recommendation": "The AJ133 is known for timing chain tensioner issues. Early 5.0L models suffered from guide rails that were not strong enough - the metal part of the guide rails was made of aluminium which was weaker than the steel tensioner, causing the tensioner to dig into the guide and wear it down over time. JLR addressed this in 2015 with revised guide rails featuring a steel indent. There have been two interim upgrades before the latest version. The latest recommended upgrade parts are C2Z28431 and AJ813898. A Jaguar specialist noted that \"the tensioner failure is such a well-documented failure point with the 5 litre V8\". If the chain slips, piston-to-valve contact is likely. Change your oil frequently to prevent sludge build-up around the tensioner, which can restrict oil flow.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -341,7 +341,7 @@
         "recommendation": "Fuel injector issues are not uncommon on the direct-injection AJ133 engine. Direct injection engines require regular maintenance - dirty injectors can cause significant problems. Symptoms include rough idle, misfires, and hard starting. When replacing injectors, it's best to replace all four on the same bank due to the labour involved. Regular use of quality fuel and occasional fuel system cleaner can help prevent injector issues.",
         "failureLink": {
           "label": "",
-          "href": "/failures/fuel-injector-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -359,7 +359,7 @@
         "recommendation": "A recall was issued for 2010 XK and XF 5.0-litre models due to a faulty fuel pump relay that could cause the engine to stall shortly after start-up. Once restarted, the communication is regained and no further issues are said to result. However, if the engine cuts out while driving, pull over safely and have the vehicle recovered. Check your VIN against the recall database.",
         "failureLink": {
           "label": "",
-          "href": "/failures/fuel-pump-failure/"
+          "href": "/failures"
         }
       }
     ]
@@ -369,7 +369,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, covering the AJ133 V8 engine across the XK 5.0 and XKR, with a 12‑month warranty as standard.",
     "button": {
       "label": "See XK 5.0 Engine Options →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -440,7 +440,7 @@
     "closingVerdict": "The Jaguar XK 5.0 V8 is one of the great modern grand tourers - a silky, powerful V8 in a beautifully styled package. The naturally aspirated 5.0 offers 385 PS and a glorious soundtrack; the supercharged XKR offers 510 PS and devastating performance. However, the AJ133 engine has well‑documented weaknesses - the water pump is the single most critical issue, and timing chain tensioner failure is a well‑known vulnerability. Buy on service history above all else - a vehicle with a replaced water pump, upgraded tensioners, and regular oil changes is a safe bet; a neglected example can be expensive to repair. As one owner put it, \"It has been a very reliable car, the only issues I have had is with the water pump (a known issue that will need replacing)\".",
     "cta": {
       "label": "→ Compare XK 5.0 V8 engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -524,7 +524,7 @@
     },
     "cta": {
       "label": "→ Compare XK 5.0 V8 engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -609,7 +609,7 @@
     "finalCta": "Find the best Jaguar XK 5.0 V8 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Explore Jaguar XK 5.0 Engine Quotes →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

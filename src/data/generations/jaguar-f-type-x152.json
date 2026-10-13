@@ -39,19 +39,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "PT204 Ingenium 2.0 Turbo Petrol",
-              "url": "https://jaguarengines.uk/engines/pt204/"
+              "url": "https://jaguarengines.uk/engine/ingenium-20-petrol"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "306PS AJ126 V6 Supercharged Petrol",
-              "url": "https://jaguarengines.uk/engines/306ps/"
+              "url": "https://jaguarengines.uk/engine/306dt-306ps"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "508PS AJ133 V8 Supercharged Petrol",
-              "url": "https://jaguarengines.uk/engines/508ps/"
+              "url": "https://jaguarengines.uk/engine/aj133"
             }
           ]
         },
@@ -63,55 +63,55 @@
               "@type": "ListItem",
               "position": 1,
               "name": "P300",
-              "url": "https://jaguarengines.uk/f-type/x152/p300/"
+              "url": "https://jaguarengines.uk/f-type/x152"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "V6",
-              "url": "https://jaguarengines.uk/f-type/x152/v6/"
+              "url": "https://jaguarengines.uk/f-type/x152"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "V6 S",
-              "url": "https://jaguarengines.uk/f-type/x152/v6-s/"
+              "url": "https://jaguarengines.uk/f-type/x152"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "400 Sport",
-              "url": "https://jaguarengines.uk/f-type/x152/400-sport/"
+              "url": "https://jaguarengines.uk/f-type/x152"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "V8 S",
-              "url": "https://jaguarengines.uk/f-type/x152/v8-s/"
+              "url": "https://jaguarengines.uk/f-type/x152"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "R",
-              "url": "https://jaguarengines.uk/f-type/x152/r/"
+              "url": "https://jaguarengines.uk/f-type/x152"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "SVR",
-              "url": "https://jaguarengines.uk/f-type/x152/svr/"
+              "url": "https://jaguarengines.uk/f-type/x152"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "P450",
-              "url": "https://jaguarengines.uk/f-type/x152/p450/"
+              "url": "https://jaguarengines.uk/f-type/x152"
             },
             {
               "@type": "ListItem",
               "position": 9,
               "name": "P575",
-              "url": "https://jaguarengines.uk/f-type/x152/p575/"
+              "url": "https://jaguarengines.uk/f-type/x152"
             }
           ]
         },
@@ -284,7 +284,7 @@
     ],
     "primaryCta": {
       "label": "Explore X152 Engines →",
-      "href": "#"
+      "href": "/f-type/x152"
     },
     "dataIntegrityNote": ""
   },
@@ -549,7 +549,7 @@
         "recommendation": "On any X152 SCV6 or SCV8 approaching 60,000 miles, replace the water pump as preventative maintenance - £600–£1,600 now is cheaper than the £4,500+ engine replacement that follows an overheat.",
         "cta": {
           "label": "Compare 306PS/508PS engine prices for your F-Type →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -577,7 +577,7 @@
         "recommendation": "On any X152 V8, have the timing chain inspected at 60,000 miles - a £2,500–£4,500 preventative repair is cheaper than the £5,500–£9,000 replacement that follows if ignored.",
         "cta": {
           "label": "Compare 508PS engine prices for your F-Type →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -605,7 +605,7 @@
         "recommendation": "If your X152 V6 exhibits a rattling noise from the supercharger at idle, have the coupler inspected immediately - £500–£1,000 now is cheaper than the £3,000+ supercharger replacement that follows if ignored.",
         "cta": {
           "label": "Compare 306PS supercharger repair prices for your F-Type →",
-          "href": "#"
+          "href": "/quote"
         }
       }
     ]
@@ -697,7 +697,7 @@
     },
     {
       "name": "P400",
-      "url": "#"
+      "url": "/f-type"
     },
     {
       "name": "P450",
@@ -721,7 +721,7 @@
     },
     {
       "name": "V8 S",
-      "url": "#"
+      "url": "/f-type"
     }
   ],
   "scopeNote": "All variants listed are X152 F-Type only. Engine fitment varies by year - the 2.0-litre Ingenium P300 was added in 2017; the 2020 facelift introduced the P450 (detuned 5.0 V8) and R P575, while discontinuing the V6 option in most markets. The SVR (575 bhp) was introduced in 2015 and continued through 2020. The Project 7 (575 bhp, limited to 250 units) was produced in 2015."
@@ -840,7 +840,7 @@
     "finalCta": "Find the best Jaguar F-Type X152 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar F-Type X152 Engine Prices on EnginesMarket →",
-      "href": "#",
+      "href": "/quote",
       "note": "[PLACEHOLDER - confirm EnginesMarket URL structure]"
     }
   }

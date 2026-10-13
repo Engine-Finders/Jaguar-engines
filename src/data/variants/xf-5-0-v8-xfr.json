@@ -59,13 +59,13 @@
               "@type": "ListItem",
               "position": 2,
               "name": "XF X250 XFR (AJ133S, 510 PS, 2009-2013)",
-              "url": "https://jaguarengines.uk/xf/xfr/"
+              "url": "https://jaguarengines.uk/xf/5-0-v8-xfr"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "XF X250 XFR / XFR-S (AJ133S, 510-550 PS, 2013-2015)",
-              "url": "https://jaguarengines.uk/xf/xfr-s/"
+              "url": "https://jaguarengines.uk/xf"
             }
           ]
         },
@@ -77,13 +77,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ133",
-              "url": "https://jaguarengines.uk/engines/aj133/"
+              "url": "https://jaguarengines.uk/engine/aj133"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "AJ133S",
-              "url": "https://jaguarengines.uk/engines/aj133/"
+              "url": "https://jaguarengines.uk/engine/aj133"
             }
           ]
         },
@@ -211,7 +211,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "Get My Free XF 5.0 V8 / XFR Engine Quotes Now →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -298,7 +298,7 @@
     "labourEstimate": "Fitting an XF 5.0 V8 / XFR engine typically takes 14–18 hours at £75–£110/hr (independent) or £130–£180/hr (London/SE dealer). The V8's size and supercharger (on XFR) add significant complexity. Replacing head gaskets is a 25-hour labour job exclusive of machine work.",
     "cta": {
       "label": "→ Compare XF 5.0 V8 / XFR engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -318,7 +318,7 @@
         "recommendation": "The AJ133's timing chain system is the engine's Achilles' heel. Early 5.0L V8s (2009–2011) used magnesium alloy guides that were softer than the steel tensioners, causing the tensioners to wear into the guides and eventually run out of adjustment. Jaguar revised the chains, sprockets, guides and tensioners in 2012 and changed the oil spec to improve tensioner pressure. A cold-start rattle is the early warning sign - ignore it and you risk piston-valve contact and a full engine replacement. Frequent oil changes (every 5,000–6,000 miles) are essential to prevent timing chain issues.",
         "failureLink": {
           "label": "",
-          "href": "/failures/aj133-timing-chain/"
+          "href": "/failures/aj133-chain-tensioner"
         }
       },
       {
@@ -336,7 +336,7 @@
         "recommendation": "The most unreliable part of the AJ133 is the engine coolant system, specifically the plastic pipes, hoses and tubes - particularly the two cross-over pipes at the front of the engine and the heater pipe at the rear. On supercharged cars, the extra heat from the supercharger accelerates degradation of the plastic pipes. The original plastic pipes were notorious for splitting along welded seams - upgraded seamless designs were introduced around 2016. If your XFR hasn't had these pipes replaced with the updated design, consider it essential preventative maintenance. Supercharger removal is required for access, making this a labour-intensive job.",
         "failureLink": {
           "label": "",
-          "href": "/failures/coolant-pipe-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -354,7 +354,7 @@
         "recommendation": "The supercharger pulley coupler is a weak design by JLR. The factory OEM spring coupler is prone to fatigue and failure. The classic symptom of a badly worn coupler is a loud rattle from the top of the engine at cold start up. To check, disconnect the drive belt and rock the pulley forwards and back to check for play. Replacement couplers are available relatively cheaply, but fitting requires supercharger removal. At the first sign of rattling from the supercharger area, have the coupler inspected.",
         "failureLink": {
           "label": "",
-          "href": "/failures/supercharger-coupler/"
+          "href": "/failures/supercharger-coupler-rattle"
         }
       },
       {
@@ -372,7 +372,7 @@
         "recommendation": "The AJ133's high-pressure fuel pump is driven by the camshaft and works in tandem with a low-pressure fuel pump. Over time, wear, contamination, or internal failure can lead to drivability issues. Symptoms include hard starting, hesitation, misfires, or loss of power under load. If you experience any of these, have the HPFP inspected immediately. Replacing the pump before it fails completely can prevent damage to other fuel system components.",
         "failureLink": {
           "label": "",
-          "href": "/failures/hpfp-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -390,7 +390,7 @@
         "recommendation": "The AJ133's plastic thermostat housing is prone to cracking. The water pump can also fail. On supercharged cars, the oil cooler-to-water pump pipe is another known failure point. If you notice coolant loss or temperature fluctuations, have the cooling system pressure-tested immediately. Proactive replacement of the thermostat housing and water pump at 60,000 miles is recommended preventative maintenance.",
         "failureLink": {
           "label": "",
-          "href": "/failures/water-pump-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -408,7 +408,7 @@
         "recommendation": "The AJ133's fuel injectors can fail, with some owners reporting injectors stuck so tight that a chain needed to be wrapped around them for removal. PCV diaphragms can also split, causing running issues. If you experience rough idle or misfires, have the injectors and PCV system inspected.",
         "failureLink": {
           "label": "",
-          "href": "/failures/fuel-injector-failure/"
+          "href": "/failures"
         }
       }
     ]
@@ -418,7 +418,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, every XF engine variant covered, with a 12-month warranty as standard.",
     "button": {
       "label": "Get My Free XF 5.0 V8 / XFR Engine Quotes Now →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -498,7 +498,7 @@
     "closingVerdict": "The Jaguar XF 5.0 V8 and XFR represent the pinnacle of Jaguar's performance saloon range - a glorious supercharged V8 with 510–550 PS, a soundtrack to die for, and a chassis that rivals the best in the segment. The AJ133 is a clean-sheet JLR design with genuine character, but it demands respect: timing chain guide wear, plastic coolant pipe failure, supercharger coupler wear, and HPFP issues are the key weak points. Buy on service history, prioritise a 2012+ car with the revised timing system, and budget for preventative coolant pipe replacement. The XFR is a future classic - one owner described it as \"a wonderful car to drive, much loved\" but requiring vigilance. Neglect it, and the £30 part that fails can cost you an engine.",
     "cta": {
       "label": "→ Compare XF 5.0 V8 / XFR engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -585,7 +585,7 @@
     },
     "cta": {
       "label": "→ Compare XF 5.0 V8 / XFR engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -670,7 +670,7 @@
     "finalCta": "Find the best Jaguar XF 5.0 V8 or XFR engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back behind the wheel of your performance Jaguar with confidence - from £2,500 for a used engine to £10,000 for a full rebuild, we have options for every budget and every XF V8.",
     "ctaButton": {
       "label": "Compare Jaguar XF 5.0 V8 / XFR Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

@@ -39,61 +39,61 @@
               "@type": "ListItem",
               "position": 1,
               "name": "2.7 TDV6 Engine",
-              "url": "https://jaguarengines.uk/engines/27-tdv6/"
+              "url": "https://jaguarengines.uk/engine/ajd-v6-diesel"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "3.0 TDV6/SDV6 Engine",
-              "url": "https://jaguarengines.uk/engines/30-tdv6/"
+              "url": "https://jaguarengines.uk/engine/ajd-v6-diesel"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "2.2 Diesel Engine",
-              "url": "https://jaguarengines.uk/engines/22-diesel/"
+              "url": "https://jaguarengines.uk/engine"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "3.0 V6 Petrol Engine",
-              "url": "https://jaguarengines.uk/engines/30-v6-petrol/"
+              "url": "https://jaguarengines.uk/engine"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "3.0 V6 Supercharged Engine",
-              "url": "https://jaguarengines.uk/engines/30-v6-sc/"
+              "url": "https://jaguarengines.uk/engine"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "4.2 V8 Engine",
-              "url": "https://jaguarengines.uk/engines/42-v8/"
+              "url": "https://jaguarengines.uk/engine"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "4.2 V8 Supercharged Engine",
-              "url": "https://jaguarengines.uk/engines/42-v8-sc/"
+              "url": "https://jaguarengines.uk/engine"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "5.0 V8 Engine",
-              "url": "https://jaguarengines.uk/engines/50-v8/"
+              "url": "https://jaguarengines.uk/engine"
             },
             {
               "@type": "ListItem",
               "position": 9,
               "name": "5.0 V8 Supercharged Engine",
-              "url": "https://jaguarengines.uk/engines/50-v8-sc/"
+              "url": "https://jaguarengines.uk/engine"
             },
             {
               "@type": "ListItem",
               "position": 10,
               "name": "2.0 Turbo Petrol Engine",
-              "url": "https://jaguarengines.uk/engines/20-turbo-petrol/"
+              "url": "https://jaguarengines.uk/engine"
             }
           ]
         },
@@ -105,61 +105,61 @@
               "@type": "ListItem",
               "position": 1,
               "name": "2.7 TDV6",
-              "url": "https://jaguarengines.uk/xf/x250/27-tdv6/"
+              "url": "https://jaguarengines.uk/xf/x250"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "3.0 TDV6",
-              "url": "https://jaguarengines.uk/xf/x250/30-tdv6/"
+              "url": "https://jaguarengines.uk/xf/x250"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "3.0 SDV6",
-              "url": "https://jaguarengines.uk/xf/x250/30-sdv6/"
+              "url": "https://jaguarengines.uk/xf/x250"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "2.2 Diesel",
-              "url": "https://jaguarengines.uk/xf/x250/22-diesel/"
+              "url": "https://jaguarengines.uk/xf/x250"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "3.0 V6",
-              "url": "https://jaguarengines.uk/xf/x250/30-v6/"
+              "url": "https://jaguarengines.uk/xf/x250"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "3.0 V6 Supercharged",
-              "url": "https://jaguarengines.uk/xf/x250/30-v6-sc/"
+              "url": "https://jaguarengines.uk/xf/x250"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "4.2 V8",
-              "url": "https://jaguarengines.uk/xf/x250/42-v8/"
+              "url": "https://jaguarengines.uk/xf/x250"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "4.2 Supercharged",
-              "url": "https://jaguarengines.uk/xf/x250/42-sc/"
+              "url": "https://jaguarengines.uk/xf/x250"
             },
             {
               "@type": "ListItem",
               "position": 9,
               "name": "5.0 V8",
-              "url": "https://jaguarengines.uk/xf/x250/50-v8/"
+              "url": "https://jaguarengines.uk/xf/x250"
             },
             {
               "@type": "ListItem",
               "position": 10,
               "name": "XFR",
-              "url": "https://jaguarengines.uk/xf/x250/xfr/"
+              "url": "https://jaguarengines.uk/xf/x250"
             }
           ]
         },
@@ -321,7 +321,7 @@
     ],
     "primaryCta": {
       "label": "Explore X250 Engines →",
-      "href": "#"
+      "href": "/xf/x250"
     },
     "dataIntegrityNote": ""
   },
@@ -594,7 +594,7 @@
         "recommendation": "On any 3.0 TDV6, budget for crankshaft pulley inspection at 80k miles - a £200–£500 preventative replacement is dramatically cheaper than the £3,000–£5,500 replacement that follows a catastrophic failure.",
         "cta": {
           "label": "Compare 3.0 TDV6 engine prices for your X250 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -607,7 +607,7 @@
         "recommendation": "If your 2.2 diesel X250 is used primarily for short trips, a £150–£400 DPF and EGR service every 20k miles is cheap insurance against the £600–£1,200 replacement that follows.",
         "cta": {
           "label": "Compare 2.2 diesel DPF repair quotes →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -620,7 +620,7 @@
         "recommendation": "On any 5.0‑powered X250, a £250–£600 water pump replacement at the first sign of coolant loss is cheap insurance against the £4,000–£7,000 replacement that follows a neglected overheat.",
         "cta": {
           "label": "Compare 5.0 V8 engine prices for your X250 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -633,7 +633,7 @@
         "recommendation": "If your 2.7 TDV6 suffers from rough idle or poor starting, have the injectors inspected - a £200–£500 clean is far cheaper than the £800–£1,500 replacement that follows if ignored.",
         "cta": {
           "label": "Compare 2.7 TDV6 engine prices for your X250 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -646,7 +646,7 @@
         "recommendation": "Have the rear subframe inspected on any X250 - it's the single most common reason an otherwise sound X250 fails an MOT or becomes uneconomical to repair.",
         "cta": {
           "label": "Compare X250 subframe repair quotes →",
-          "href": "#"
+          "href": "/quote"
         }
       }
     ]
@@ -767,7 +767,7 @@
   "petrolVariants": [
     {
       "name": "3.0 V6",
-      "url": "#"
+      "url": "/xf/x250"
     },
     {
       "name": "3.0 V6 Supercharged",
@@ -876,7 +876,7 @@
     "finalCta": "Find the best Jaguar XF X250 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar XF X250 Engine Prices on EnginesMarket →",
-      "href": "#",
+      "href": "/quote",
       "note": "[PLACEHOLDER - confirm EnginesMarket URL structure]"
     }
   }

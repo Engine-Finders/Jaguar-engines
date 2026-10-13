@@ -77,7 +77,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "204DTD (AJ200D)",
-              "url": "https://jaguarengines.uk/engines/204dtd/"
+              "url": "https://jaguarengines.uk/engine/ingenium-2-0-diesel"
             }
           ]
         },
@@ -205,7 +205,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "Get My Free F-Pace 2.0 Diesel Engine Quotes Now →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -292,7 +292,7 @@
     "labourEstimate": "Fitting an F-Pace 2.0 diesel engine typically takes 12–16 hours at £65–£95/hr (independent). The Ingenium's rear-mounted timing chain makes access labour-intensive.",
     "cta": {
       "label": "→ Compare F-Pace 2.0 diesel engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -312,7 +312,7 @@
         "recommendation": "The Ingenium is an interference engine - if the timing chain stretches too far, it can \"jump\" a tooth or snap, causing pistons to strike open valves. Short UK trips, damp conditions and frequent cold starts accelerate symptoms. A cold-start metallic rattle is the earliest warning sign - do not ignore it. If you hear rattle, book a specialist diagnostic immediately. Many specialists recommend preventative chain replacement at 60,000–80,000 miles regardless of symptoms.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -330,7 +330,7 @@
         "recommendation": "The F-Pace 2.0 diesel needs regular motorway runs for DPF regeneration. If you primarily drive in town, the DPF will clog faster. Watch for reduced performance or blue smoke on a test drive. A forced regeneration or DPF clean can restore function, but if ignored, the turbocharger can be damaged.",
         "failureLink": {
           "label": "",
-          "href": "/failures/dpf-failure/"
+          "href": "/failures/dpf-blockage"
         }
       },
       {
@@ -358,7 +358,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, each experienced with the 2.0 Ingenium diesel, with a 12-month warranty as standard.",
     "button": {
       "label": "Get My Free F-Pace 2.0 Diesel Engine Quotes Now →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -423,7 +423,7 @@
     "closingVerdict": "The 2.0 Ingenium diesel is the backbone of the F-Pace range, but it has a well-earned reputation for timing chain vulnerability. Pre-2019 models are the highest risk - timing chain guides fail between 40,000–80,000 miles. Post-2019 models are improved but still require vigilance. A £5,000 reconditioned engine on an F-Pace valued at £12,000–£18,000 is 28–42% of the car's value - worth it for a well-maintained example. On a sub-£8,000 example, think carefully. The 60% Jaguar scrap threshold applies.",
     "cta": {
       "label": "→ Compare F-Pace 2.0 diesel engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -498,7 +498,7 @@
     },
     "cta": {
       "label": "→ Compare F-Pace 2.0 diesel engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -583,7 +583,7 @@
     "finalCta": "Find the best Jaguar F-Pace 2.0 diesel engine replacement UK drivers rely on. Compare prices from trusted specialists on JaguarEngine.uk today and get your F-Pace back on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar F-Pace 2.0 Diesel Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

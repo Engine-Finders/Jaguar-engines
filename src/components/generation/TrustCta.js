@@ -42,7 +42,7 @@ function TrustPoint({ point, icon, isDark }) {
   return (
     <li className="flex items-start gap-4">
       <span
-        className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-md border ${trustPointIconBoxClass(isDark)}`}
+        className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-md border ${trustPointIconBoxClass(isDark)}`}
       >
         <HomeIcon name={icon} isDark={isDark} className="h-8 w-8 object-contain" />
       </span>
@@ -107,12 +107,12 @@ export default function TrustCta({ data, hero }) {
             <div className="grid grid-cols-1 items-center gap-4 p-4 md:grid-cols-[72px_1fr_auto] md:gap-5 md:p-5">
               <div className="flex items-start justify-start md:justify-center">
                 <span
-                  className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full border-2 ${
+                  className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full border-2 ${
                     isDark ? "border-white/20 bg-[rgba(255,255,255,0.06)]" : "border-[var(--color-border)] bg-white"
                   }`}
                 >
                   <span
-                    className={`flex h-10 w-10 items-center justify-center rounded-full ${
+                    className={`flex h-11 w-11 items-center justify-center rounded-full ${
                       isDark ? "bg-white/10" : "bg-[var(--color-page-soft)]"
                     }`}
                   >

@@ -7,11 +7,12 @@ import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
 import { carImageFor } from "@/components/shared/carImage";
 
-const ROW_IMAGE = "/home-image/right.webp";
-const ICON_LG = "h-9 w-9";
-const ICON_MD = "h-9 w-9";
-const ICON_XL = "h-9 w-9";
-const ICON_CIRCLE = "h-10 w-10";
+// Fallback for models without a Jaguar photo yet (I-Pace): cut out and trimmed so it renders at the same size as the others.
+const ROW_IMAGE = "/home-image/right-cutout.webp";
+const ICON_LG = "h-12 w-12 md:h-14 md:w-14";
+const ICON_MD = "h-9 w-9 md:h-10 md:w-10";
+const ICON_XL = "h-11 w-11 md:h-12 md:w-12";
+const ICON_CIRCLE = "h-14 w-14 md:h-16 md:w-16";
 
 function cleanText(value = "") {
   return String(value || "")
@@ -124,9 +125,9 @@ function ExampleVerdict({ data, isDark }) {
           : "border-[#e8e8e6] bg-[#f3f3f2]"
       }`}
     >
-      <div className="grid gap-4 p-4 md:grid-cols-[max-content_minmax(200px,260px)_minmax(0,1fr)] md:items-center md:gap-3 md:p-5">
+      <div className="grid gap-4 p-4 md:grid-cols-[minmax(0,1fr)_minmax(240px,320px)] md:items-center md:gap-5 md:p-5 xl:grid-cols-[max-content_minmax(200px,260px)_minmax(0,1fr)] xl:gap-3">
         {/* Left — only as wide as content */}
-        <div className="md:max-w-[220px] lg:max-w-[240px]">
+        <div className="xl:max-w-[240px]">
           <p
             className={`text-[0.64rem] font-bold uppercase tracking-[0.12em] ${
               isDark ? "text-white/55" : "text-[var(--color-text-muted)]"
@@ -149,11 +150,11 @@ function ExampleVerdict({ data, isDark }) {
                 className="flex flex-col items-center gap-1.5 text-center md:flex-row md:items-start md:gap-3 md:text-left"
               >
                 <span
-                  className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full md:mt-0.5 ${
+                  className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full md:mt-0.5 md:h-14 md:w-14 ${
                     isDark ? "bg-white/10" : "bg-white"
                   }`}
                 >
-                  <HomeIcon name={item.icon} isDark={isDark} className="h-8 w-8 md:h-9 md:w-9" />
+                  <HomeIcon name={item.icon} isDark={isDark} className="h-8 w-8 md:h-11 md:w-11" />
                 </span>
                 <span className="min-w-0 md:pt-1">
                   <strong className={`block text-[0.72rem] leading-tight md:text-[0.88rem] ${isDark ? "text-white" : "text-black"}`}>
@@ -180,7 +181,7 @@ function ExampleVerdict({ data, isDark }) {
         </div>
 
         {/* Right — takes remaining width */}
-        <div className="grid grid-cols-1 gap-3.5 sm:grid-cols-2 sm:gap-x-4 sm:gap-y-4 md:gap-x-5 md:gap-y-5">
+        <div className="grid grid-cols-1 gap-3.5 sm:grid-cols-2 sm:gap-x-4 sm:gap-y-4 md:col-span-2 md:gap-x-5 md:gap-y-5 xl:col-span-1">
           {(data.details || []).map((item) => (
             <div key={item.title} className="flex items-start gap-3">
               <span

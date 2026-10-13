@@ -65,7 +65,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "204PT / AJ200P",
-              "url": "https://jaguarengines.uk/engines/204pt/"
+              "url": "https://jaguarengines.uk/engine/ingenium-20-petrol"
             }
           ]
         },
@@ -193,7 +193,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "See Jaguar E-Pace P300 Engine Options →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -255,7 +255,7 @@
     "labourEstimate": "Fitting an E-Pace P300 engine typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
     "cta": {
       "label": "→ Compare P300 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -275,7 +275,7 @@
         "recommendation": "The 204PT's cooling system is its most common weak point. The water pump and thermostat housing are known to develop leaks, especially on higher‑mileage examples. Catching it early avoids overheating damage. Replace the water pump as a preventative measure at around 60,000–70,000 miles - it's a well‑understood job for any JLR specialist. Unlike the diesel Ingenium, the petrol version does not suffer from oil dilution, but the cooling system components are similar and equally prone to wear.",
         "failureLink": {
           "label": "Read the full coolant leak guide",
-          "href": "/failures/coolant-leak/"
+          "href": "/failures"
         }
       },
       {
@@ -293,7 +293,7 @@
         "recommendation": "Unlike the diesel Ingenium, the 204PT's timing chain issues are less catastrophic and less frequent, but they do occur. The tensioner can wear over time. A cold‑start rattle that lasts more than a second or two should be investigated promptly. Preventative replacement at around 80,000–100,000 miles is cheaper than a full engine rebuild. Regular oil changes with the correct JLR-spec oil (0W-20) are essential to keep the tensioner healthy.",
         "failureLink": {
           "label": "Read the full timing chain failure guide",
-          "href": "/failures/timing-chain-wear/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -311,7 +311,7 @@
         "recommendation": "The PCV (positive crankcase ventilation) valve can fail, causing oil to be drawn into the intake. This leads to increased oil consumption and potentially carbon build‑up. Replacement is inexpensive and straightforward. Monitor your oil level between services – if it drops noticeably, have the PCV checked. Unlike the diesel Ingenium, the petrol version is not prone to oil dilution, but oil consumption through the PCV system is a known issue on higher‑mileage examples.",
         "failureLink": {
           "label": "Read the full PCV valve failure guide",
-          "href": "/failures/pcv-valve-failure/"
+          "href": "/failures"
         }
       }
     ]
@@ -321,7 +321,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, every E-Pace engine era covered, with a 12‑month warranty as standard.",
     "button": {
       "label": "See Jaguar E-Pace P300 Engine Options →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -385,7 +385,7 @@
     "closingVerdict": "The 204PT petrol is a solid engine that avoids the major reliability pitfalls of the diesel Ingenium. Its primary weaknesses are cooling system components and, occasionally, timing chain tensioners. A well‑serviced P300 with a fresh water pump is a dependable long‑term proposition. The engine is modern, refined, and parts availability is strong across the UK. This is the sweet spot in the E-Pace range for those seeking performance and reliability in equal measure.",
     "cta": {
       "label": "→ Compare P300 engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -450,7 +450,7 @@
     },
     "cta": {
       "label": "→ Compare P300 engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -535,7 +535,7 @@
     "finalCta": "Find the best Jaguar E-Pace P300 engine replacement UK drivers rely on. Compare prices from trusted specialists on JaguarEngine.uk today and keep your E-Pace performing at its best.",
     "ctaButton": {
       "label": "Explore Jaguar E-Pace P300 Engine Quotes →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

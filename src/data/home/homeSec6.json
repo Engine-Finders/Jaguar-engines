@@ -21,7 +21,7 @@
           "text": "Watch - sub-£7k examples approach the threshold",
           "type": "watch"
         },
-        "href": "#"
+        "href": "/xf/x250"
       },
       {
         "model": "X-Type X400",
@@ -32,7 +32,7 @@
           "text": "Scrap threshold - recon cost frequently exceeds car value",
           "type": "scrap"
         },
-        "href": "#"
+        "href": "/x-type/x400"
       },
       {
         "model": "F-Pace X761",
@@ -43,7 +43,7 @@
           "text": "Safe - replacement viable across all engine variants",
           "type": "safe"
         },
-        "href": "#"
+        "href": "/f-pace/x761"
       },
       {
         "model": "XJ X351 (<a href='https://jaguarengines.uk/engine/aj133'>AJ133</a>)",
@@ -54,7 +54,7 @@
           "text": "Safe - flagship values absorb even the upper recon cost",
           "type": "safe"
         },
-        "href": "#"
+        "href": "/xj/x351"
       },
       {
         "model": "XF X260",
@@ -65,7 +65,7 @@
           "text": "Safe - well within value even at the upper recon cost",
           "type": "safe"
         },
-        "href": "#"
+        "href": "/xf/x260"
       },
       {
         "model": "S-Type X200",
@@ -76,7 +76,7 @@
           "text": "Scrap threshold - recon cost seldom justified",
           "type": "scrap"
         },
-        "href": "#"
+        "href": "/s-type/x200"
       }
     ]
   },
@@ -92,35 +92,35 @@
       "label": "Is It Worth Replacing an XF Engine?",
       "purpose": "Full breakdown of XF ownership economics",
       "icon": "engine",
-      "href": "#"
+      "href": "/economics/is-it-worth-replacing-an-xf-engine"
     },
     {
       "id": "02",
       "label": "Is an AJ126 Failure a Write-Off?",
       "purpose": "When repair makes sense vs when to walk away",
       "icon": "flame",
-      "href": "#"
+      "href": "/economics/is-an-aj126-failure-a-write-off"
     },
     {
       "id": "03",
       "label": "When Should You Scrap a Jaguar?",
       "purpose": "The decision framework for older vehicles",
       "icon": "scales",
-      "href": "#"
+      "href": "/economics/when-should-you-scrap-a-jaguar"
     },
     {
       "id": "04",
       "label": "Most Expensive Jaguar Repairs",
       "purpose": "The top 5 repairs and what they cost",
       "icon": "pound",
-      "href": "#"
+      "href": "/economics/most-expensive-jaguar-repairs"
     },
     {
       "id": "05",
       "label": "Cheapest Jaguars to Own",
       "purpose": "Which models offer the best value for money",
       "icon": "value",
-      "href": "#"
+      "href": "/economics/cheapest-jaguars-to-own"
     }
   ],
   "dataNote": {

@@ -71,7 +71,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "306PS (AJ126)",
-              "url": "https://jaguarengines.uk/engines/306ps/"
+              "url": "https://jaguarengines.uk/engine/306dt-306ps"
             }
           ]
         },
@@ -199,7 +199,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "Get My Free F-Type V6 S Engine Quotes Now →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -278,7 +278,7 @@
     "labourEstimate": "Fitting an F-Type V6 S engine typically takes 14–18 hours at £65–£95/hr (independent). The tightly packed engine bay and complex supercharger system add significant labour time.",
     "cta": {
       "label": "→ Compare F-Type 3.0 V6 S engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -298,7 +298,7 @@
         "recommendation": "The cooling system is the Achilles' heel of the AJ126. The plastic V-pipe under the supercharger is notorious for cracking. The water pump is also a weak point. Upgraded aluminium parts are available for the supercharged engine. If you see any coolant warnings or smell coolant, have the system inspected immediately - ignoring these signs can lead to warped cylinder heads or full engine failure.",
         "failureLink": {
           "label": "",
-          "href": "/failures/coolant-leak/"
+          "href": "/failures"
         }
       },
       {
@@ -316,7 +316,7 @@
         "recommendation": "The supercharger coupler is a known wear item on the AJ126. The good news is that a worn coupler is normally nothing to worry about and is just annoying. However, if left for many thousands of miles, it will eventually wear so much that supercharger performance will degrade. If you hear the characteristic \"marbles in a tin can\" rattle on cold start, have the coupler inspected.",
         "failureLink": {
           "label": "",
-          "href": "/failures/supercharger-coupler-failure/"
+          "href": "/failures/supercharger-coupler-rattle"
         }
       },
       {
@@ -334,7 +334,7 @@
         "recommendation": "The AJ126 has the same tensioner/timing chain problems as the <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> 5.0-litre V8, just not as bad or frequently and not until much higher mileage. The AJ126 is nowhere near as bad for timing chain failure as the AJ133 was in the early days. To prevent timing chain issues, change the engine oil far more often than the scheduled interval - roughly every 8,000 miles. If you hear a regular, high-pitched rattle on cold start, book an inspection immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       }
     ]
@@ -344,7 +344,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, each experienced with the complex AJ126 supercharged V6, with a 12-month warranty as standard.",
     "button": {
       "label": "Get My Free F-Type V6 S Engine Quotes Now →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -408,7 +408,7 @@
     "closingVerdict": "The AJ126 is a great engine when properly maintained, but its cooling system requires attention and it's sensitive to oil quality. The plastic cooling components are well-known weak points. Coolant warnings should never be ignored. An £8,000–£10,000 reconditioned engine on an F-Type valued at £20,000–£30,000 is 27–50% of the car's value - worth it for a well-maintained example. On a sub-£15,000 example, think carefully. The 60% Jaguar scrap threshold applies.",
     "cta": {
       "label": "→ Compare F-Type V6 S engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -476,7 +476,7 @@
     },
     "cta": {
       "label": "→ Compare F-Type V6 S engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -561,7 +561,7 @@
     "finalCta": "Find the best Jaguar F-Type 3.0 V6 S engine replacement UK drivers rely on. Compare prices from trusted specialists on JaguarEngine.uk today and keep your supercharged V6 F-Type on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar F-Type 3.0 V6 S Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

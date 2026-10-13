@@ -7,7 +7,7 @@
       "title": "Jaguar AJ20D6 Engine - Specs, Reliability & Replacement Cost",
       "description": "The AJ20D6 is a smooth, torquey six-cylinder diesel - but early MHEV glitches and fuel-system sensitivity are worth knowing - backed by real UK enquiries [JAG-VERIFIED]. Compare quotes from vetted specialists today.",
       "type": "website",
-      "url": "https://jaguarengines.uk/engines/aj20d6/",
+      "url": "https://jaguarengines.uk/engine/aj20d6",
       "image": "https://jaguarengines.uk/images/jaguar/engines/aj20d6.jpg",
       "siteName": "jaguarengines.uk"
     },
@@ -51,19 +51,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Jaguar F-Pace X761 3.0d D300 MHEV",
-              "url": "https://jaguarengines.uk/jaguar/f-pace/x761/"
+              "url": "https://jaguarengines.uk/f-pace/x761"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Jaguar F-Pace X761 30d (300 PS)",
-              "url": "https://jaguarengines.uk/jaguar/f-pace/x761/"
+              "url": "https://jaguarengines.uk/f-pace/x761"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Jaguar XF X260 3.0D",
-              "url": "https://jaguarengines.uk/jaguar/xf/x260/"
+              "url": "https://jaguarengines.uk/xf/x260"
             }
           ]
         },
@@ -167,7 +167,7 @@
         {
           "@type": "WebPage",
           "name": "Jaguar AJ20D6 Engine - Specs, Reliability & Replacement Cost",
-          "url": "https://jaguarengines.uk/engines/aj20d6/",
+          "url": "https://jaguarengines.uk/engine/aj20d6",
           "author": {
             "@type": "Organization",
             "name": "jaguarengines.uk Editorial Team"
@@ -206,7 +206,7 @@
     ],
     "primaryCta": {
       "label": "Compare AJ20D6 Engine Prices →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "atAGlance": {
@@ -345,7 +345,7 @@
     "sharedCostNote": "Parts cost is identical across Jaguar and Land Rover applications; labour time varies slightly by engine bay access.",
     "cta": {
       "label": "→ Compare AJ20D6 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "faq": {
@@ -382,7 +382,7 @@
     "finalCta": "Find the best Jaguar AJ20D6 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar AJ20D6 Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

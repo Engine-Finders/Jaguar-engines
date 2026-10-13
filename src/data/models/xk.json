@@ -64,37 +64,37 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ27 4.0 V8",
-              "url": "https://jaguarengines.uk/engines/aj27/"
+              "url": "https://jaguarengines.uk/engine/aj-v8-4-0-4-2"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "AJ27S 4.0 Supercharged V8",
-              "url": "https://jaguarengines.uk/engines/aj27s/"
+              "url": "https://jaguarengines.uk/engine/aj-v8-4-0-4-2"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "AJ34 4.2 V8",
-              "url": "https://jaguarengines.uk/engines/aj34/"
+              "url": "https://jaguarengines.uk/engine/aj-v8-4-0-4-2"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "AJ34S 4.2 Supercharged V8",
-              "url": "https://jaguarengines.uk/engines/aj34s/"
+              "url": "https://jaguarengines.uk/engine/aj-v8-4-0-4-2"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "AJ133 5.0 V8",
-              "url": "https://jaguarengines.uk/engines/aj133/"
+              "url": "https://jaguarengines.uk/engine/aj133"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "AJ133S 5.0 Supercharged V8",
-              "url": "https://jaguarengines.uk/engines/aj133s/"
+              "url": "https://jaguarengines.uk/engine/aj133"
             }
           ]
         },
@@ -245,7 +245,7 @@
     ],
     "primaryCta": {
       "label": "Explore XK Engines →",
-      "href": "#"
+      "href": "/xk"
     }
   },
   "ownershipVerdict": {
@@ -369,7 +369,7 @@
         "verdict": "",
         "cta": {
           "label": "",
-          "href": "#"
+          "href": "/xk/x100"
         }
       }
     ],
@@ -380,7 +380,7 @@
     },
     "comparisonLink": {
       "label": "Read the full comparison: X100 vs X150 →",
-      "href": "#"
+      "href": "/compare/xk-x100-vs-x150"
     }
   },
   "engineDatabase": {
@@ -500,7 +500,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/engine/aj-v8-4-0-4-2"
         }
       },
       {
@@ -514,7 +514,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/engine/aj-v8-4-0-4-2"
         }
       },
       {
@@ -528,7 +528,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/engine/aj133"
         }
       },
       {
@@ -542,7 +542,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/failures/zf-8-speed-gearbox"
         }
       },
       {
@@ -556,7 +556,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/failures/x-type-electrical-gremlins"
         }
       },
       {
@@ -570,7 +570,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/failures"
         }
       }
     ],
@@ -749,11 +749,11 @@
     "paths": [
       {
         "label": "Path 1 - Know your engine? Launch the Jaguar calculator with XK pre-selected",
-        "href": "/fault-diagnostic-calculator"
+        "href": "/tools/diagnostic-wizard"
       },
       {
         "label": "Path 2 - Not sure which engine you have? We'll identify it first",
-        "href": "/fault-diagnostic-calculator"
+        "href": "/tools/diagnostic-wizard"
       }
     ]
   },
@@ -834,19 +834,19 @@
         "icon": "🔍",
         "title": "Explore XK Generations",
         "text": "Compare the X100 and X150 side-by-side to find your perfect grand tourer. → Explore XK Generations",
-        "href": "#"
+        "href": "/xk/x100"
       },
       {
         "icon": "🩺",
         "title": "Diagnose My XK",
         "text": "Run our diagnostic calculator on your specific XK - real costs, honest verdicts, and a route to a vetted specialist. → Diagnose My XK",
-        "href": "#"
+        "href": "/tools/diagnostic-wizard"
       },
       {
         "icon": "🤝",
         "title": "Compare UK Specialists",
         "text": "Get matched with one of our 15+ vetted Jaguar specialists for a genuine XK engine quote. → Compare UK Specialists",
-        "href": "#"
+        "href": "/quote"
       }
     ],
     "footerNote": ""

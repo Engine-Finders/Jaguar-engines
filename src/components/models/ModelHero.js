@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { carModelFor } from "@/components/shared/carImage";
 import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
@@ -89,8 +90,8 @@ function StatCard({ item, index, isDark }) {
         isDark ? "border-white/12" : "border-[var(--color-chrome)]/45"
       }`}
     >
-      <span className="flex h-9 w-9 shrink-0 items-center justify-center">
-        <HomeIcon name={iconKey} isDark={isDark} className="h-9 w-9 object-contain" />
+      <span className="flex h-14 w-14 shrink-0 items-center justify-center md:h-14 md:w-14">
+        <HomeIcon name={iconKey} isDark={isDark} className="h-14 w-14 object-contain" />
       </span>
       <div className={`min-w-0 flex-1 ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
         {stat.value ? (
@@ -131,15 +132,17 @@ export default function ModelHero({ data }) {
   const isDark = theme === "dark";
   const meta = splitTagPill(data.tagPill);
   const ctaHref = data.primaryCta?.href && data.primaryCta.href !== "#" ? data.primaryCta.href : "/quote";
+  const heroImageSrc = `/model/hero/${carModelFor(data.tagPill, data.h1) || "jaguar"}.webp`;
 
   return (
-    <section className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden bg-[var(--color-page)] text-[var(--color-text)] md:min-h-[620px]">
-      <div className="absolute inset-0">
+    <section className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden bg-[var(--color-page)] text-[var(--color-text)] xl:min-h-[620px]">
+      {/* Desktop: lineup photo behind the copy */}
+      <div className="absolute inset-0 hidden xl:block">
         <Image
-          src="/model/Hero-bg-image.webp"
+          src={heroImageSrc}
           alt=""
           fill
-          className="object-cover object-[62%_center] md:object-center"
+          className="object-cover object-center"
           sizes="100vw"
           priority
         />
@@ -150,10 +153,10 @@ export default function ModelHero({ data }) {
               : "bg-[linear-gradient(90deg,var(--color-hero-fade)_0%,rgba(255,255,255,0.91)_35%,rgba(255,255,255,0.2)_66%,rgba(255,255,255,0)_100%)]"
           }`}
         />
-        <div className="absolute inset-x-0 bottom-0 h-36 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)] md:h-44" />
+        <div className="absolute inset-x-0 bottom-0 h-44 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)]" />
       </div>
 
-      <div className="relative mx-auto flex w-full max-w-8xl flex-col px-4 pb-5 pt-3 md:min-h-[620px] md:px-8 md:pb-7 md:pt-11">
+      <div className="relative mx-auto flex w-full max-w-8xl flex-col px-4 pb-5 pt-3 md:px-8 md:pb-7 md:pt-11 xl:min-h-[620px]">
         <div className="max-w-[650px]">
           <div
             className={`inline-flex w-fit max-w-full flex-nowrap items-center gap-x-2 overflow-x-auto whitespace-nowrap rounded-md border px-3 py-2 text-[12px] leading-none md:overflow-x-visible md:gap-x-2.5 md:px-4 md:py-2.5 md:text-[14px] ${
@@ -215,9 +218,24 @@ export default function ModelHero({ data }) {
           </div>
         </div>
 
+        {/* Phones, tablets + small laptops: lineup photo as its own band, so it never sits behind the copy */}
+        <div className="relative -mx-4 mt-6 aspect-[16/10] max-h-[440px] w-[calc(100%+2rem)] overflow-hidden md:-mx-8 md:w-[calc(100%+4rem)] xl:hidden">
+          <Image
+            src={heroImageSrc}
+            alt=""
+            fill
+            className="object-cover object-[72%_70%]"
+            sizes="100vw"
+            priority
+          />
+          <div className="absolute inset-x-0 top-0 h-14 bg-[linear-gradient(180deg,var(--color-page)_0%,transparent_100%)]" />
+          <div className="absolute inset-x-0 bottom-0 h-14 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)]" />
+          {isDark ? <div className="absolute inset-0 bg-[rgba(2,7,17,0.28)]" /> : null}
+        </div>
+
         {data.trustStrip?.length > 0 ? (
           <div
-            className={`mt-8 w-full max-w-[1000px] overflow-hidden rounded-md backdrop-blur-xl md:mt-auto md:rounded-xl md:border md:shadow-[0_14px_36px_rgba(16,18,16,0.1)] ${
+            className={`mt-4 w-full max-w-[1000px] overflow-hidden rounded-md backdrop-blur-xl md:rounded-xl xl:mt-auto md:border md:shadow-[0_14px_36px_rgba(16,18,16,0.1)] ${
               isDark
                 ? "bg-[rgba(12,12,12,0.55)] md:border-white/16 md:shadow-[0_16px_40px_rgba(0,0,0,0.45)]"
                 : "bg-[rgba(246,246,244,0.86)] md:border-[var(--color-border)]"

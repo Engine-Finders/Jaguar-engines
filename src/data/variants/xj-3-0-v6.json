@@ -54,7 +54,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "XJ X350 3.0 V6 (AJ30, 2003-2006)",
-              "url": "https://jaguarengines.uk/xj/x350/"
+              "url": "https://jaguarengines.uk/xj/x350-x358"
             }
           ]
         },
@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ30",
-              "url": "https://jaguarengines.uk/engines/aj30/"
+              "url": "https://jaguarengines.uk/engine/aj-v8-4-0-4-2"
             }
           ]
         },
@@ -194,7 +194,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "See Jaguar XJ 3.0 V6 Engine Options →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK‑Wide Network"
@@ -265,7 +265,7 @@
     "labourEstimate": "Fitting an XJ 3.0 V6 engine typically takes 10–14 hours at £75–£110/hr (independent) or £130–£180/hr (London/SE dealer). The V6 layout and longitudinal mounting make the engine reasonably accessible, but the X350's aluminium construction requires specialist knowledge. [PLACEHOLDER - confirm vs cost sheet]",
     "cta": {
       "label": "→ Compare XJ 3.0 V6 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -285,7 +285,7 @@
         "recommendation": "The most common cause of catastrophic engine failure on the AJ30 is the failure of the plastic coolant pipes. This may be caused by a weakness in the plastic weld process of the coolant pipes. The plastic gets brittle after being heated and cooled over and over. If the pipe fails while driving, the system dumps most of its coolant, leading to rapid overheating and often a cracked cylinder head. Many specialists recommend replacing the plastic pipes proactively at 60,000‑mile intervals.",
         "failureLink": {
           "label": "",
-          "href": "/failures/coolant-pipe-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -303,7 +303,7 @@
         "recommendation": "Many Jaguar models - especially older XF, XJ, and S‑Type vehicles - are known for timing chain tensioner failures. Early cars had more problems, as Jaguar made running changes to improve the design - somewhere around model year 2014 they did the latest upgrade. The X350 XJ predates these improvements. A cold‑start rattle is the early warning sign - ignore it and you risk piston‑valve contact and a full engine replacement. Regular oil changes are the best prevention; many owners now do 6,000‑8,000 mile oil changes rather than factory intervals.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-tensioner/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -321,7 +321,7 @@
         "recommendation": "The AJ30 uses a phase regulator on the intake shaft. Problems with the VVT system can cause rough idle and hesitation. In some cases, the locking pin in the variable valve timing system can fail to engage, producing a loud ticking noise that sounds like a diesel. If you experience rough running, have the VVT system inspected promptly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/vvt-solenoid/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -339,7 +339,7 @@
         "recommendation": "The main problems with the AJ30 are associated with suction in the intake due to cracked gaskets. The electric drive for changing the intake geometry is also characterized by low reliability. If you do not regularly clean the crankcase ventilation valve, the oil will press from all the cracks. If you experience erratic idle or rough running, have the intake and vacuum system inspected for leaks.",
         "failureLink": {
           "label": "",
-          "href": "/failures/vacuum-leak/"
+          "href": "/failures"
         }
       },
       {
@@ -357,7 +357,7 @@
         "recommendation": "The X350 XJ features electronically controlled, self‑levelling adaptive air suspension. Air suspension issues are common on these cars - the compressor can fail, air springs can develop leaks, and the valve block can stick. Electrical gremlins are also a known issue, with faulty earth points behind the front headlights that can rot from the inside out. If you notice ride height issues or warning lights, have the suspension system inspected promptly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/air-suspension-failure/"
+          "href": "/failures/air-suspension-compressor"
         }
       }
     ]
@@ -367,7 +367,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, every XJ engine variant covered, with a 12‑month warranty as standard.",
     "button": {
       "label": "See Jaguar XJ 3.0 V6 Engine Options →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -441,7 +441,7 @@
     "closingVerdict": "The Jaguar XJ 3.0 V6 (X350) is the entry point into Jaguar's aluminium‑bodied flagship - a 238‑bhp V6 that offers smooth refinement and genuine luxury. The X350 generation was a landmark car, using aerospace‑style rivet‑bonded aluminium construction that made the body 40% lighter and 50% stiffer than the previous model. The AJ30 engine from the Ford Duratec V6 family is highly reliable overall, but it has well‑documented weaknesses: plastic coolant pipes that can fail catastrophically, timing chain tensioner wear on early cars, VVT system problems, and intake air leaks. The X350 also suffers from complex air suspension issues and electrical gremlins. Buy on service history, prioritise a car with upgraded coolant pipes, and maintain on a shortened schedule - this is a stylish classic that rewards careful ownership but punishes neglect. As Harrison Paganini‑Parker put it: \"It's a 2003 model and we spent £2500 on it\" - a lot of car for the money, but factor in maintenance.",
     "cta": {
       "label": "→ Compare XJ 3.0 V6 engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -526,7 +526,7 @@
     },
     "cta": {
       "label": "→ Compare XJ 3.0 V6 engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -611,7 +611,7 @@
     "finalCta": "Find the best Jaguar XJ 3.0 V6 engine replacement UK owners rely on. Compare prices from trusted specialists on EnginesMarket today and get back behind the wheel of your flagship Jaguar with confidence - from £1,800 for a used engine to £7,500 for a full rebuild, we have options for every budget and every XJ.",
     "ctaButton": {
       "label": "Explore Jaguar XJ 3.0 V6 Engine Quotes →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

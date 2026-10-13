@@ -59,13 +59,13 @@
               "@type": "ListItem",
               "position": 3,
               "name": "XJ X350 (2003–2009)",
-              "url": "https://jaguarengines.uk/xj/x350/"
+              "url": "https://jaguarengines.uk/xj/x350-x358"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "XJ X358 (2007–2009)",
-              "url": "https://jaguarengines.uk/xj/x358/"
+              "url": "https://jaguarengines.uk/xj/x350-x358"
             },
             {
               "@type": "ListItem",
@@ -84,43 +84,43 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ133 / 508PN - 5.0 V8",
-              "url": "https://jaguarengines.uk/engines/aj133/"
+              "url": "https://jaguarengines.uk/engine/aj133"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "AJ126 - 3.0 V6 Supercharged",
-              "url": "https://jaguarengines.uk/engines/aj126/"
+              "url": "https://jaguarengines.uk/engine/306dt-306ps"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "AJ200D / 204DTD - 2.0 Ingenium Diesel",
-              "url": "https://jaguarengines.uk/engines/aj200d/"
+              "url": "https://jaguarengines.uk/engine/ingenium-2-0-diesel"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "276DT - 2.7 TDV6 Diesel",
-              "url": "https://jaguarengines.uk/engines/276dt/"
+              "url": "https://jaguarengines.uk/engine/ajd-v6-diesel"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "AJ-V8 4.2 - 4.2 V8",
-              "url": "https://jaguarengines.uk/engines/aj-v8-4.2/"
+              "url": "https://jaguarengines.uk/engine/aj-v8-4-0-4-2"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "AJ-V8 4.0 - 4.0 V8",
-              "url": "https://jaguarengines.uk/engines/aj-v8-4.0/"
+              "url": "https://jaguarengines.uk/engine/aj-v8-4-0-4-2"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "AJ16 - 4.0 I6",
-              "url": "https://jaguarengines.uk/engines/aj16/"
+              "url": "https://jaguarengines.uk/engine/aj6-aj16"
             }
           ]
         },
@@ -271,7 +271,7 @@
     ],
     "primaryCta": {
       "label": "Explore XJ Engines →",
-      "href": "#"
+      "href": "/xj"
     }
   },
   "ownershipVerdict": {
@@ -373,7 +373,7 @@
   "verdict": "The original XJ-Sir William Lyons' definitive Jaguar saloon. The 4.2-litre <a href='https://jaguarengines.uk/engine/xk-straight-six'>XK straight-six</a> is the pick: 173 bhp, proven durability, and the best balance of performance and reliability. The 2.8-litre is underpowered; the V12 is glorious but complex. Values range from £5k project cars to £20k+ restored examples-replace the 4.2 only if the body is sound.",
   "cta": {
     "label": "Explore Series 1 →",
-    "href": "https://jaguarengines.uk/xj-series-1"
+    "href": "https://jaguarengines.uk/xj/xj-series-1"
   }
 },
 {
@@ -384,7 +384,7 @@
   "verdict": "The revised XJ-higher bumpers, revised grille, and improved safety. The 4.2-litre XK six remains the sweet spot with 170–183 bhp and strong torque. The V12 offers effortless performance but carries significant cooling system complexity. Usable examples fetch £8k–£12k; top-tier V12s exceed £25k. Always value the body and chassis before the engine-the 4.2 recon at £5k–£9k is viable on a well-kept car.",
   "cta": {
     "label": "Explore Series 2 →",
-    "href": "https://jaguarengines.uk/xj-series-2"
+    "href": "https://jaguarengines.uk/xj/xj-series-2"
   }
 },
 {
@@ -395,7 +395,7 @@
   "verdict": "The final first-generation XJ-redesigned by Pininfarina with flush door handles and a more modern look. The XK 4.2-litre six is the most accessible choice at 200 bhp; the <a href='https://jaguarengines.uk/engine/v12-he'>V12 HE</a> (1981 onwards) is significantly improved over pre-HE cars. The 6.0 V12 is rare and specialist-only. For most buyers, the 4.2 six offers classic Jaguar character without the V12's running costs.",
   "cta": {
     "label": "Explore Series 3 →",
-    "href": "https://jaguarengines.uk/xj-series-3"
+    "href": "https://jaguarengines.uk/xj/xj-series-3"
   }
 },
 {
@@ -472,7 +472,7 @@
         "verdict": "",
         "cta": {
           "label": "",
-          "href": "#"
+          "href": "/compare"
         }
       }
     ],
@@ -483,7 +483,7 @@
     },
     "comparisonLink": {
       "label": "Read the full comparison: XJ X351 pre-2013 vs post-2013 →",
-      "href": "#"
+      "href": "/compare"
     }
   },
   "engineDatabase": {
@@ -615,7 +615,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/engine/ajd-v6-diesel"
         }
       },
       {
@@ -629,7 +629,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/engine/aj133"
         }
       },
       {
@@ -643,7 +643,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/engine/306dt-306ps"
         }
       },
       {
@@ -657,7 +657,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/failures/air-suspension-compressor"
         }
       },
       {
@@ -671,7 +671,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/failures/zf-8-speed-gearbox"
         }
       },
       {
@@ -685,7 +685,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/failures/infotainment-software-glitches"
         }
       }
     ],
@@ -850,11 +850,11 @@
     "paths": [
       {
         "label": "Path 1 - Know your engine? Launch the Jaguar calculator with XJ pre-selected",
-        "href": "/fault-diagnostic-calculator"
+        "href": "/tools/diagnostic-wizard"
       },
       {
         "label": "Path 2 - Not sure which engine you have? We'll identify it first → /fault-diagnostic-calculator (Identification happens as step one inside the tool)",
-        "href": "#"
+        "href": "/tools/diagnostic-wizard"
       }
     ]
   },
@@ -935,19 +935,19 @@
         "icon": "🔍",
         "title": "Explore XJ Generations → Compare the X300, X308, X350, X358 and X351 side-by-side. Explore XJ generations →",
         "text": "",
-        "href": "#"
+        "href": "/xj/x300"
       },
       {
         "icon": "🩺",
         "title": "Diagnose My XJ → Run the Jaguar diagnostic calculator for a personalised repair-vs-replace assessment. Diagnose my XJ →",
         "text": "",
-        "href": "#"
+        "href": "/tools/diagnostic-wizard"
       },
       {
         "icon": "🤝",
         "title": "Compare UK Specialists → Get quotes from 15+ vetted Jaguar specialists who know the XJ inside out. Compare specialists →",
         "text": "",
-        "href": "#"
+        "href": "/quote"
       }
     ],
     "footerNote": ""

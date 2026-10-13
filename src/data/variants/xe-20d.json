@@ -59,13 +59,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "204DTD (AJ20D4, 2015-2019)",
-              "url": "https://jaguarengines.uk/xe/20d/#204dtd"
+              "url": "https://jaguarengines.uk/xe/20d"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "204DTH (AJ20D4, 2020-2024)",
-              "url": "https://jaguarengines.uk/xe/20d/#204dth"
+              "url": "https://jaguarengines.uk/xe/20d"
             }
           ]
         },
@@ -77,13 +77,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "204DTD",
-              "url": "https://jaguarengines.uk/engines/204dtd/"
+              "url": "https://jaguarengines.uk/engine/ingenium-2-0-diesel"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "204DTH",
-              "url": "https://jaguarengines.uk/engines/204dth/"
+              "url": "https://jaguarengines.uk/engine"
             }
           ]
         },
@@ -211,7 +211,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "Get My Free XE 20d Engine Quotes Now →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK‑Wide Network"
@@ -290,7 +290,7 @@
     "labourEstimate": "Fitting an XE 20d engine typically takes 10‑14 hours at £75‑£110/hr (independent Jaguar specialist). The rear‑mounted timing chain design adds complexity to any engine‑out work.",
     "cta": {
       "label": "→ Compare XE 20d engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -310,7 +310,7 @@
         "recommendation": "This is the single most critical issue affecting the Ingenium 2.0 diesel. The timing chain sits at the rear of the engine, against the firewall, making access disproportionately labour‑intensive. The chain, guides, and tensioners can wear prematurely, causing chain stretch. If the chain stretches too far, it can \"jump\" a tooth or snap, causing pistons to strike open valves in this interference engine. A £1,800–£4,500 preventative chain replacement is far cheaper than a £4,000–£8,000 engine replacement. At the first sign of cold‑start rattle - and if you own a 2.0‑litre Ingenium diesel from 2015 onwards - have the timing system inspected immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -328,7 +328,7 @@
         "recommendation": "The EGR system is a common failure point on the Ingenium 2.0 diesel. The EGR valve can become clogged with soot, and the EGR cooler can develop leaks. Some owners have reported that cleaning the EGR valve and cooler mesh does not always resolve the issue - replacement may be required. A faulty back pressure sensor can also restrict exhaust flow and affect the EGR valve. Regular motorway driving and using high‑quality diesel can help reduce EGR clogging.",
         "failureLink": {
           "label": "",
-          "href": "/failures/egr-valve-cooler-failure/"
+          "href": "/failures/egr-valve-cooler"
         }
       },
       {
@@ -346,7 +346,7 @@
         "recommendation": "The Ingenium diesel is sensitive to driving patterns. If used primarily for short urban trips, the Diesel Particulate Filter (DPF) will clog due to lack of proper regeneration cycles. A faulty back pressure sensor can also prevent DPF regeneration. Regular motorway runs (30+ minutes at 60+ mph) are essential to maintain the exhaust filtration system.",
         "failureLink": {
           "label": "",
-          "href": "/failures/dpf-failure/"
+          "href": "/failures/dpf-blockage"
         }
       },
       {
@@ -374,7 +374,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, covering the 2.0‑litre Ingenium diesel engine of the XE 20d, with a 12‑month warranty as standard.",
     "button": {
       "label": "Get My Free XE 20d Engine Quotes Now →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -444,7 +444,7 @@
     "closingVerdict": "The Jaguar XE 20d is the best‑selling diesel variant in Jaguar's compact executive saloon range - and for good reason. It offers excellent fuel economy (up to 67 mpg in some variants), refined performance, and a rewarding driving experience. However, the Ingenium 2.0 diesel has a well‑documented Achilles heel: timing chain stretch and failure. The rear‑mounted chain design makes access labour‑intensive, and failure can be catastrophic. Buy on service history above all else - a vehicle with documented timing chain maintenance and regular oil changes is a safe bet; a neglected example can be expensive to repair. As one specialist noted: \"The common finding is that the timing chain has begun to stretch\". The 2020‑2024 facelift models with the 204DTH engine offer improved injectors and ECU calibration, but the timing chain vulnerability remains a concern.",
     "cta": {
       "label": "→ Compare XE 20d engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -528,7 +528,7 @@
     },
     "cta": {
       "label": "→ Compare XE 20d engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -613,7 +613,7 @@
     "finalCta": "Find the best Jaguar XE 20d engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar XE 20d Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

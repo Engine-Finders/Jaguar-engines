@@ -7,7 +7,7 @@
       "title": "Jaguar AJD-V6 Diesel Engine - Reliability & Cost",
       "description": "The AJD-V6 offers strong torque but has crankshaft and oil pump risks - rated from 1,680+ real UK enquiries. Compare quotes from 15+ vetted specialists today.",
       "type": "website",
-      "url": "https://jaguarengines.uk/engines/ajd-v6-diesel/",
+      "url": "https://jaguarengines.uk/engine/ajd-v6-diesel",
       "image": "https://jaguarengines.uk/images/jaguar/engines/ajd-v6-diesel.jpg",
       "siteName": "jaguarengines.uk"
     },
@@ -51,37 +51,37 @@
               "@type": "ListItem",
               "position": 1,
               "name": "S-Type X200 2.7D V6",
-              "url": "https://jaguarengines.uk/jaguar/s-type-x200/"
+              "url": "https://jaguarengines.uk/s-type/x200"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "XF X250 2.7D / 3.0D V6",
-              "url": "https://jaguarengines.uk/jaguar/xf-x250/"
+              "url": "https://jaguarengines.uk/xf/x250"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "XF X260 3.0D V6",
-              "url": "https://jaguarengines.uk/jaguar/xf-x260/"
+              "url": "https://jaguarengines.uk/xf/x260"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "XJ X350 / X358 2.7D V6",
-              "url": "https://jaguarengines.uk/jaguar/xj-x350/"
+              "url": "https://jaguarengines.uk/xj/x350-x358"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "XJ X351 3.0D V6",
-              "url": "https://jaguarengines.uk/jaguar/xj-x351/"
+              "url": "https://jaguarengines.uk/xj/x351"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "F-Pace X761 3.0D V6",
-              "url": "https://jaguarengines.uk/jaguar/f-pace-x761/"
+              "url": "https://jaguarengines.uk/f-pace/x761"
             }
           ]
         },
@@ -185,7 +185,7 @@
         {
           "@type": "WebPage",
           "name": "Jaguar AJD-V6 Diesel Engine - Reliability & Cost",
-          "url": "https://jaguarengines.uk/engines/ajd-v6-diesel/",
+          "url": "https://jaguarengines.uk/engine/ajd-v6-diesel",
           "author": {
             "@type": "Organization",
             "name": "jaguarengines.uk Editorial Team"
@@ -207,7 +207,7 @@
     "trustStrip": [],
     "primaryCta": {
       "label": "Compare AJD-V6 Engine Prices →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "atAGlance": {
@@ -339,7 +339,7 @@
     "sharedCostNote": "Parts cost is identical across Jaguar and Land Rover applications; labour time varies slightly by engine bay access.",
     "cta": {
       "label": "→ Compare Jaguar AJD-V6 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "faq": {
@@ -380,7 +380,7 @@
     "finalCta": "Find the best Jaguar AJD-V6 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar AJD-V6 Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

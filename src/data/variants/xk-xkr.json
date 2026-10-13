@@ -224,7 +224,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "Get My Free XKR Engine Quotes Now →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -311,7 +311,7 @@
     "labourEstimate": "Fitting an XKR engine typically takes 14–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
     "cta": {
       "label": "→ Compare XKR engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -331,7 +331,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -349,7 +349,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/xk"
         }
       },
       {
@@ -367,7 +367,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/engine/aj133"
         }
       }
     ]
@@ -377,7 +377,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, every XKR variant covered, with a 12-month warranty as standard.",
     "button": {
       "label": "Get My Free XKR Engine Quotes Now →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -450,7 +450,7 @@
     "closingVerdict": "The XKR is Jaguar's supercharged V8 grand tourer - a 370–510 bhp masterpiece that delivers effortless performance and distinctive style. The engine choice defines the ownership experience. The 4.0-litre AJ26S (1998–2002) is the riskiest - plastic timing chain tensioners can fail catastrophically. The 4.2-litre AJ34S (2002–2006) is widely considered the most reliable - \"very robust\" with coolant valley pipes as the only real weakness. The 5.0-litre AJ133 (2007–2014) offers the most power (510 bhp) but suffers from timing chain tensioner issues - pre-2013 cars are most at risk, with a class action settlement reached for 2010-2016 vehicles. With typical XKR values ranging from £10,000 (early X100) to £30,000+ (late X150), an engine replacement is a major financial commitment - the 4.2-litre X100 (2002–2006) with documented maintenance is the safest choice for reliability-focused buyers.",
     "cta": {
       "label": "→ Compare XKR engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -554,7 +554,7 @@
     },
     "cta": {
       "label": "→ Compare XKR engine prices for your XK",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -639,7 +639,7 @@
     "finalCta": "Find the best Jaguar XKR engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and keep your supercharged V8 grand tourer on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar XKR Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

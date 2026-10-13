@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { engineHrefFor } from "@/components/shared/engineLink";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
@@ -425,7 +426,7 @@ function MobileTable({ engines, isDark }) {
               <span className="font-heading text-[1.15rem] font-semibold text-[var(--color-text)]">
                 {enquiries ? enquiries.toLocaleString("en-GB") : "-"}
               </span>
-              <Link href="#" className="text-[var(--color-text)]">
+              <Link href={engineHrefFor(row.engineCode, row.family)} className="text-[var(--color-text)]">
                 <StatIcon name="insight" isDark={isDark} className="h-5 w-5 object-contain" />
               </Link>
             </div>
@@ -602,7 +603,7 @@ export default function EngineDatabase({ data }) {
               exclude fitting.
             </p>
             <Link
-              href="#"
+              href="/data/methodology"
               className="flex items-center gap-2 font-bold text-[var(--color-text)] transition-all duration-200 hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)]"
             >
               How we collect engine data{" "}
@@ -615,7 +616,7 @@ export default function EngineDatabase({ data }) {
           <div className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-4">
             <div className="flex items-center gap-2.5">
               <span
-                className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${
+                className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full ${
                   isDark ? "bg-white/10" : "bg-[#ececeb]"
                 }`}
               >

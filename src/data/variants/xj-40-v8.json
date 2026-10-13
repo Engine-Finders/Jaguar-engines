@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 3,
               "name": "X350 XJ 4.0 V8 (AJ27, 2003-2009)",
-              "url": "https://jaguarengines.uk/xj/x350/"
+              "url": "https://jaguarengines.uk/xj/x350-x358"
             }
           ]
         },
@@ -78,19 +78,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ26",
-              "url": "https://jaguarengines.uk/engines/aj26/"
+              "url": "https://jaguarengines.uk/engine/aj-v8-4-0-4-2"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "AJ27",
-              "url": "https://jaguarengines.uk/engines/aj27/"
+              "url": "https://jaguarengines.uk/engine/aj-v8-4-0-4-2"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "AJ27S",
-              "url": "https://jaguarengines.uk/engines/aj27s/"
+              "url": "https://jaguarengines.uk/engine/aj-v8-4-0-4-2"
             }
           ]
         },
@@ -218,7 +218,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "Get My Free 4.0 V8 Engine Quotes Now →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK‑Wide Network"
@@ -305,7 +305,7 @@
     "labourEstimate": "Fitting an XJ 4.0 V8 engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). Timing chain tensioner replacement is a significant job but well documented.",
     "cta": {
       "label": "",
-      "href": "#"
+      "href": "/economics"
     }
   },
   "commonProblems": {
@@ -316,7 +316,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, every XJ 4.0 V8 variant covered, with a 12‑month warranty as standard.",
     "button": {
       "label": "Get My Free 4.0 V8 Engine Quotes Now →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -380,7 +380,7 @@
     "closingVerdict": "The XJ 4.0 V8 is a glorious engine - smooth, powerful and characterful. But it has two infamous weaknesses: Nikasil liners on pre‑2000 cars and plastic timing chain tensioners that can destroy the engine. Both are well understood and fixable, but you need to buy on documented history. If the tensioners have been replaced with metal units and the cooling system is well maintained, this is one of the most rewarding engines Jaguar ever built.",
     "cta": {
       "label": "",
-      "href": "#"
+      "href": "/xj"
     }
   },
   "buyingChecklist": {
@@ -463,7 +463,7 @@
     },
     "cta": {
       "label": "",
-      "href": "#"
+      "href": "/xj"
     }
   },
   "marketIntelligence": {
@@ -535,7 +535,7 @@
     "finalCta": "Find the best Jaguar XJ 4.0 V8 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and keep this classic V8 on the road.",
     "ctaButton": {
       "label": "Compare Jaguar XJ 4.0 V8 Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

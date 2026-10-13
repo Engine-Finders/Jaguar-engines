@@ -53,13 +53,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "F-Pace X761 25d/30d (306DT, 2016–2020)",
-              "url": "https://jaguarengines.uk/f-pace/25d-30d/#306dt"
+              "url": "https://jaguarengines.uk/f-pace/25d-30d"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "F-Pace X761 25d/30d (AJ20D6, 2021–present)",
-              "url": "https://jaguarengines.uk/f-pace/25d-30d/#aj20d6"
+              "url": "https://jaguarengines.uk/f-pace/25d-30d"
             }
           ]
         },
@@ -71,13 +71,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "306DT 3.0L V6 Diesel",
-              "url": "https://jaguarengines.uk/engines/306dt/"
+              "url": "https://jaguarengines.uk/engine/306dt"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "AJ20D6 3.0L I6 Diesel",
-              "url": "https://jaguarengines.uk/engines/aj20d6/"
+              "url": "https://jaguarengines.uk/engine/aj20d6"
             }
           ]
         },
@@ -205,7 +205,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "Get My Free Jaguar F-Pace Engine Quotes Now →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -284,7 +284,7 @@
     "labourEstimate": "Fitting an F-Pace 3.0 diesel engine typically takes 10–16 hours at £80–£120/hr (independent Jaguar specialist) or £140–£190/hr (London/SE dealer). The V6's transverse mount makes access tight.",
     "cta": {
       "label": "→ Compare Jaguar F-Pace 25d / 30d engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -304,7 +304,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/engine/ajd-v6-diesel"
         }
       },
       {
@@ -322,7 +322,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/engine/ajd-v6-diesel"
         }
       },
       {
@@ -340,7 +340,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/engine/ajd-v6-diesel"
         }
       },
       {
@@ -358,7 +358,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/engine/ajd-v6-diesel"
         }
       },
       {
@@ -376,7 +376,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/engine/ajd-v6-diesel"
         }
       }
     ]
@@ -386,7 +386,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, covering both 306DT and AJ20D6 F-Pace engines, with a 12-month warranty as standard.",
     "button": {
       "label": "Get My Free Jaguar F-Pace Engine Quotes Now →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -451,7 +451,7 @@
     "closingVerdict": "The F-Pace 25d/30d is a compelling luxury SUV, but the engine choice is critical. The 306DT V6 (2016–2020) is a powerful engine with a well-documented crankshaft bearing failure risk - avoid unless you have documented history. The AJ20D6 Ingenium I6 (2021+) is a significant improvement, smoother and more reliable. Buy the facelift, maintain the DPF/EGR system, and the F-Pace will reward you.",
     "cta": {
       "label": "→ Compare Jaguar F-Pace 25d / 30d engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -575,7 +575,7 @@
     },
     "cta": {
       "label": "→ Compare Jaguar F-Pace 25d / 30d engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -660,7 +660,7 @@
     "finalCta": "Find the best Jaguar F-Pace 25d/30d engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar F-Pace 25d / 30d Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

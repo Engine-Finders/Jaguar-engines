@@ -65,7 +65,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ20D6 / AJ300D (3.0L Straight-Six Twin-Turbo Diesel MHEV)",
-              "url": "https://jaguarengines.uk/engines/aj20d6/"
+              "url": "https://jaguarengines.uk/engine/aj20d6"
             }
           ]
         },
@@ -193,7 +193,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "Get My Free D300 Engine Quotes Now →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -264,7 +264,7 @@
     "labourEstimate": "Fitting an F-Pace D300 engine typically takes 14–18 hours at £75–£110/hr (independent) or £130–£180/hr (London/SE dealer).",
     "cta": {
       "label": "→ Compare D300 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -284,7 +284,7 @@
         "recommendation": "Oil dilution from failed DPF regenerations is a key contributor to timing chain wear on Ingenium diesel engines. Stretched timing chains can cause the DPF to fill prematurely, creating a cascade of failures. The 3.0-litre is less prone to this than the 2.0-litre, but vigilance is still required. At the first sign of cold-start rattle, get the chain and tensioners inspected immediately. Regular oil changes using the correct 0W-20 JLR-spec oil are essential.",
         "failureLink": {
           "label": "Read the full timing chain failure guide",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -302,7 +302,7 @@
         "recommendation": "The Ingenium diesel's DPF is sensitive to short urban journeys. The MHEV system helps but doesn't eliminate the risk. If you predominantly drive in town, ensure the vehicle completes regular regeneration cycles - a motorway run at 2,000+ rpm for 20 minutes at least once a week is recommended. The 3.0-litre is less prone to these issues than the 2.0-litre, but they remain a known pattern.",
         "failureLink": {
           "label": "Read the full DPF failure guide",
-          "href": "/failures/dpf-clogging/"
+          "href": "/failures/dpf-blockage"
         }
       },
       {
@@ -320,7 +320,7 @@
         "recommendation": "EGR cooler failure is a well-documented issue across the Ingenium diesel family. If you're experiencing unexplained coolant loss, have the EGR cooler inspected promptly. Ignoring it can lead to overheating and potential engine damage, though it doesn't typically progress to full engine replacement.",
         "failureLink": {
           "label": "Read the full EGR cooler failure guide",
-          "href": "/failures/egr-cooler-failure/"
+          "href": "/failures/egr-valve-cooler"
         }
       }
     ]
@@ -330,7 +330,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, every D300 Ingenium era covered, with a 12-month warranty as standard.",
     "button": {
       "label": "Get My Free D300 Engine Quotes Now →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -394,7 +394,7 @@
     "closingVerdict": "The D300 is the pick of the F-Pace diesel range - a smooth, powerful straight-six that represents JLR's most refined diesel engine. It's significantly more robust than the 2.0-litre diesel, with fewer reported issues. But it's still a modern diesel with modern diesel problems - timing chain vigilance, DPF maintenance, and EGR cooler attention are the price of entry. Buy on documented history, not on faith. A well-maintained D300 is a £35,000–£55,000 premium SUV; a neglected one is a £7,000 engine replacement waiting to happen.",
     "cta": {
       "label": "→ Compare D300 engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -455,7 +455,7 @@
     },
     "cta": {
       "label": "→ Compare D300 engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -540,7 +540,7 @@
     "finalCta": "Find the best Jaguar F-Pace D300 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get your F-Pace back on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar F-Pace D300 Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

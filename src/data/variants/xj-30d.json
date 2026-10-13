@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJD‑V6 3.0 (306DT‑family)",
-              "url": "https://jaguarengines.uk/engines/ajd-v6-30/"
+              "url": "https://jaguarengines.uk/engine/306dt-306ps"
             }
           ]
         },
@@ -200,7 +200,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "Get My Free XJ 3.0d Engine Quotes Now →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -262,7 +262,7 @@
     "labourEstimate": "Fitting an XJ 3.0d engine typically takes 15–20 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
     "cta": {
       "label": "→ Compare XJ 3.0d engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -282,7 +282,7 @@
         "recommendation": "This is the single most important issue on the AJD‑V6 - the crankshaft bearing design has a fatigue life. The key defence is aggressive oil change intervals: 5,000 miles max, not the factory 15,000‑mile schedule. If you hear a rumble or knock on cold start that fades as the engine warms up, have the oil pressure checked and the bearings inspected immediately. A bottom‑end rebuild (£5,500–£7,000) is cheaper than a full engine replacement, but only if caught early.",
         "failureLink": {
           "label": "",
-          "href": "/failures/crankshaft-bearing-failure/"
+          "href": "/failures/306dt-crankshaft-bearing"
         }
       },
       {
@@ -318,7 +318,7 @@
         "recommendation": "Ford‑sourced injectors are common across the AJD‑V6 and can clog over time, especially if fuel filter changes are skipped. A periodic injector clean and using premium diesel can reduce the risk. If you notice rough running or smoke, have the injectors tested - replacing a full set is far cheaper than the collateral damage they can cause.",
         "failureLink": {
           "label": "",
-          "href": "/failures/injector-failure/"
+          "href": "/failures"
         }
       }
     ]
@@ -328,7 +328,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, every XJ 3.0d engine covered, with a 12‑month warranty as standard.",
     "button": {
       "label": "Get My Free XJ 3.0d Engine Quotes Now →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -392,7 +392,7 @@
     "closingVerdict": "The AJD‑V6 3.0 is a torquey, refined engine that powers the XJ well. But it has a known Achilles heel - the crankshaft bearing design. Buy only on documented evidence of 5,000‑mile oil changes, and never ignore a cold‑start knock. A well‑maintained example is a reliable luxury saloon; a neglected one is a £7,000–£10,000 bill waiting to happen.",
     "cta": {
       "label": "→ Compare XJ 3.0d engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -453,7 +453,7 @@
     },
     "cta": {
       "label": "→ Compare XJ 3.0d engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -525,7 +525,7 @@
     "finalCta": "Find the best Jaguar XJ 3.0d engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence - from £3,500 for a used unit to £11,000 for a fully rebuilt diesel.",
     "ctaButton": {
       "label": "Compare Jaguar XJ 3.0d Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

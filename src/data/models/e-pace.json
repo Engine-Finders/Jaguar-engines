@@ -60,31 +60,31 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ200D / 204DTD - 2.0L Diesel",
-              "url": "https://jaguarengines.uk/engines/aj200d-204dtd/"
+              "url": "https://jaguarengines.uk/engine/ingenium-2-0-diesel"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "AJ200P / 204PT - 2.0L Petrol",
-              "url": "https://jaguarengines.uk/engines/aj200p-204pt/"
+              "url": "https://jaguarengines.uk/engine/ingenium-20-petrol"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "AJ20D6 - 2.0L Diesel (2021+)",
-              "url": "https://jaguarengines.uk/engines/aj20d6/"
+              "url": "https://jaguarengines.uk/engine/aj20d6"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "AJ20P3 / P300e - 2.0L PHEV",
-              "url": "https://jaguarengines.uk/engines/aj20p3-p300e/"
+              "url": "https://jaguarengines.uk/engine/ingenium-20-petrol"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "AJ200D (JLR-spec) - 2.0L Diesel",
-              "url": "https://jaguarengines.uk/engines/aj200d-jlr/"
+              "url": "https://jaguarengines.uk/engine/ingenium-2-0-diesel"
             }
           ]
         },
@@ -232,7 +232,7 @@
     ],
     "primaryCta": {
       "label": "Explore E-Pace Engines →",
-      "href": "#"
+      "href": "/e-pace"
     }
   },
   "ownershipVerdict": {
@@ -345,7 +345,7 @@
         "verdict": "",
         "cta": {
           "label": "",
-          "href": "#"
+          "href": "/compare"
         }
       }
     ],
@@ -356,7 +356,7 @@
     },
     "comparisonLink": {
       "label": "Read the full comparison: Pre-Facelift vs Facelift E-Pace →",
-      "href": "#"
+      "href": "/compare"
     }
   },
   "engineDatabase": {
@@ -464,7 +464,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/engine/ingenium-2-0-diesel"
         }
       },
       {
@@ -478,7 +478,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/failures"
         }
       },
       {
@@ -492,7 +492,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/failures"
         }
       },
       {
@@ -506,7 +506,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/engine/aj20d6"
         }
       },
       {
@@ -520,7 +520,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/failures/infotainment-software-glitches"
         }
       },
       {
@@ -534,7 +534,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/failures/air-suspension-compressor"
         }
       }
     ],
@@ -701,11 +701,11 @@
     "paths": [
       {
         "label": "Path 1 - Know your engine? Launch the Jaguar calculator with E-Pace pre-selected",
-        "href": "/fault-diagnostic-calculator"
+        "href": "/tools/diagnostic-wizard"
       },
       {
         "label": "Path 2 - Not sure which engine you have? We'll identify it first → /fault-diagnostic-calculator (identification is step one inside the tool)",
-        "href": "#"
+        "href": "/tools/diagnostic-wizard"
       }
     ]
   },
@@ -792,13 +792,13 @@
         "icon": "🩺",
         "title": "Diagnose My E-Pace",
         "text": "",
-        "href": "/fault-diagnostic-calculator"
+        "href": "/tools/diagnostic-wizard"
       },
       {
         "icon": "🤝",
         "title": "Compare UK Specialists",
         "text": "",
-        "href": "/quotes/?model=e-pace"
+        "href": "/quote"
       }
     ],
     "footerNote": ""

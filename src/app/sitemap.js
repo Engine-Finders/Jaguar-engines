@@ -1,19 +1,16 @@
-import fs from "fs";
-import path from "path";
 import genPages from "@/data/registery/generations/pages.json";
 import varPages from "@/data/registery/variants/pages.json";
 import modelPages from "@/data/registery/models/pages.json";
+import enginePages from "@/data/registery/engines/pages.json";
 
 const BASE_URL = "https://jaguarengines.uk";
 
+// Engine URLs come from the registry slugs (the route's source of truth), not data file names.
 function getEngineUrls() {
-    const dir = path.join(process.cwd(), "src/data", "engines");
-    return fs.readdirSync(dir)
-        .filter(file => file.endsWith(".json"))
-        .map(file => ({
-            url: `${BASE_URL}/engine/${file.replace(".json", "")}`,
-            lastModified: new Date(),
-        }));
+    return enginePages.map((p) => ({
+        url: `${BASE_URL}/engine/${p.slug}`,
+        lastModified: new Date(),
+    }));
 }
 
 export default function sitemap() {

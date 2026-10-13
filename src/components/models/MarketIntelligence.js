@@ -74,12 +74,12 @@ function CircleIcon({ name, isDark, small = false }) {
     <span
       className={`flex shrink-0 items-center justify-center rounded-full ${
         isDark ? "bg-white/10" : "bg-[#ececeb]"
-      } ${small ? "h-9 w-9" : "h-10 w-10"}`}
+      } ${small ? "h-10 w-10 md:h-11 md:w-11" : "h-16 w-16"}`}
     >
       <HomeIcon
         name={name}
         isDark={isDark}
-        className={`object-contain ${small ? "h-8 w-8" : "h-9 w-9"}`}
+        className={`object-contain ${small ? "h-8 w-8 md:h-9 md:w-9" : "h-12 w-12 md:h-14 md:w-14"}`}
       />
     </span>
   );
@@ -218,11 +218,11 @@ function LiveFeed({ note, isDark }) {
         </span>
       </div>
       <div className="mt-5 flex h-20 items-center justify-center">
-        <HomeIcon name="live" isDark={isDark} className="h-9 w-9 object-contain opacity-80" />
+        <HomeIcon name="live" isDark={isDark} className="h-14 w-14 object-contain opacity-80" />
       </div>
       <p className="mt-3 text-[14px] leading-[1.35] text-[var(--color-text-muted)]">{displayNote}</p>
       <Link
-        href="#"
+        href="/data/most-enquired-models"
         className="mt-4 inline-flex min-h-11 w-full items-center justify-center gap-3 rounded-md border border-[var(--color-border-strong)] px-5 py-3 text-[15px] font-bold text-[var(--color-text)] transition-all duration-200 hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)]"
       >
         View Live Feed
@@ -254,10 +254,10 @@ function PullQuote({ data, isDark }) {
       </div>
       <div className="relative min-h-[140px] md:min-h-full">
         <Image
-          src={carImageFor(data.title, data.quote) || "/home-image/right.webp"}
+          src={carImageFor(data.title, data.quote) || "/home-image/right-cutout.webp"}
           alt=""
           fill
-          className="object-cover object-center"
+          className="object-contain object-center p-3 md:p-4"
           sizes="(min-width: 768px) 35vw, 100vw"
         />
       </div>

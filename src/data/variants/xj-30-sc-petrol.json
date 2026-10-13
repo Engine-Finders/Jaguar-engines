@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ126 (306PS)",
-              "url": "https://jaguarengines.uk/engines/aj126/"
+              "url": "https://jaguarengines.uk/engine/306dt-306ps"
             }
           ]
         },
@@ -200,7 +200,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "Get My Free XJ Engine Quotes Now →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -271,7 +271,7 @@
     "labourEstimate": "Fitting an XJ 3.0 SC engine typically takes 14–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). The supercharger and complex cooling system add labour time.",
     "cta": {
       "label": "→ Compare XJ 3.0 SC Petrol engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -291,7 +291,7 @@
         "recommendation": "Both the V8 and V6 engines were fitted with a poorly designed water pump until 2015. Coolant gets inside the bearing housing, corroding the water pump bearing and causing leaks. If you get a \"low coolant\" alert, stop driving immediately - continuing can destroy the engine. The obvious solution is to get the pump changed as soon as possible after buying the car, ideally to the later revised pump. Replace the small coolant pipe that connects to the pump at the same time.",
         "failureLink": {
           "label": "Read the full water pump failure guide",
-          "href": "/failures/water-pump-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -309,7 +309,7 @@
         "recommendation": "The plastic \"V pipe\" under the supercharger is a \"well-known weak spot on these engines that often fails catastrophically\". When it fails, the system dumps most of its coolant, pressurising and spraying everywhere. This can lead to cracked cylinder heads and a \"new engine\" scenario. Upgraded metal replacements are available. If you experience overheating or coolant loss, have the plastic cooling pipes inspected and replaced with metal versions as a preventative measure.",
         "failureLink": {
           "label": "Read the full coolant pipe failure guide → /failures/aj126-coolant-pipe-failure/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/engine/306dt-306ps"
         }
       },
       {
@@ -327,7 +327,7 @@
         "recommendation": "The AJ126 supercharged 3.0 V6 has the \"exact same tensioner/timing chain problems as the earlier <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> supercharged 5.0 V8\". A design flaw in the tensioners and guides means the steel tensioner piston slowly wears away the aluminium guide button. If the chain jumps, pistons can hit valves. A £1,500–£3,500 preventative chain replacement is dramatically cheaper than a £5,500–£11,000 engine replacement.",
         "failureLink": {
           "label": "Read the full timing chain failure guide → /failures/aj126-timing-chain/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/engine/306dt-306ps"
         }
       },
       {
@@ -345,7 +345,7 @@
         "recommendation": "The 3.0 V6 gas engine has \"coolant issues relating to the pipework and leaking valve cover gasket\". Rubber PCV diaphragms rip with age, causing oil consumption and possible lean running error codes. Replacing PCV diaphragms is \"a pain\" with the supercharger on, so best done when the supercharger is off. If you notice a burning smell or oil spots, have the gaskets inspected promptly.",
         "failureLink": {
           "label": "Read the full oil leak guide → /failures/valve-cover-gasket-leak/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/failures"
         }
       }
     ]
@@ -355,7 +355,7 @@
     "supportingLine": "15 vetted Jaguar specialists, every XJ 3.0 SC engine covered, with a 12-month warranty as standard.",
     "button": {
       "label": "Get My Free XJ Engine Quotes Now →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -419,7 +419,7 @@
     "closingVerdict": "The XJ 3.0 SC's AJ126 supercharged V6 is a genuinely impressive engine - 340 bhp and 450 Nm in a lightweight, elegant luxury saloon. It's effectively a 5.0-litre V8 with two cylinders removed, sharing much of its architecture with the larger engine. However, it has well-documented weaknesses: the pre-2015 water pump is notoriously unreliable, the plastic coolant pipes fail catastrophically, and the timing chain tensioners wear over time. Buy a post-2015 model with documented cooling system work, or budget for these repairs immediately. Without history? Proceed with extreme caution - the repair bills can be eye-watering.",
     "cta": {
       "label": "→ Compare XJ 3.0 SC Petrol engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -520,7 +520,7 @@
     },
     "cta": {
       "label": "→ Compare XJ 3.0 SC Petrol engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -605,7 +605,7 @@
     "finalCta": "Find the best Jaguar XJ 3.0 SC Petrol engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar XJ 3.0 SC Petrol Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

@@ -181,8 +181,8 @@ export default function OwnershipEconomics({ data }) {
         <div className="mt-4 grid grid-cols-1 gap-3 md:mt-5 md:grid-cols-[0.85fr_1.15fr] md:gap-4">
           {data.economicsRule ? (
             <div className="glass-panel flex items-center gap-4 rounded-md border border-[var(--color-primary)] p-3.5">
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)]">
-                <HomeIcon name="scale" isDark={!isDark} className="h-9 w-9 object-contain" />
+              <span className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)]">
+                <HomeIcon name="scale" isDark={!isDark} className="h-12 w-12 object-contain" />
               </span>
               <div className="min-w-0 flex-1">
                 <p

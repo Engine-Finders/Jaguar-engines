@@ -54,7 +54,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "X350/X358 XJ 2.7d (AJD-V6 2.7, 2005–2009)",
-              "url": "https://jaguarengines.uk/xj/x350/"
+              "url": "https://jaguarengines.uk/xj/x350-x358"
             }
           ]
         },
@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJD-V6 2.7 / 7G (2.7L Twin-Turbo V6 Diesel)",
-              "url": "https://jaguarengines.uk/engines/ajd-v6-27/"
+              "url": "https://jaguarengines.uk/engine/ajd-v6-diesel"
             }
           ]
         },
@@ -194,7 +194,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "Get My Free XJ 2.7d Engine Quotes Now →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -265,7 +265,7 @@
     "labourEstimate": "Fitting an XJ 2.7d engine typically takes 12–16 hours at £70–£100/hr (independent) or £120–£180/hr (London/SE dealer). The aluminium-bodied XJ's engine bay is tight but accessible.",
     "cta": {
       "label": "→ Compare XJ 2.7d engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -285,7 +285,7 @@
         "recommendation": "Big end bearing wear is one of the most concerning faults reported on the 2.7d engine. When bearings wear excessively, they can stick to the crankshaft, leading to engine seizure. In severe cases, the crankshaft can snap entirely, destroying the engine block. Expert engineers can grind the crankshaft and install oversized bearings if caught early. Regular oil changes at 10,000-mile intervals are essential. If you hear knocking from the bottom end, do not drive the car - catastrophic engine failure is imminent.",
         "failureLink": {
           "label": "Read the full engine bearing failure guide",
-          "href": "/failures/engine-bearing-failure/"
+          "href": "/failures/306dt-crankshaft-bearing"
         }
       },
       {
@@ -321,7 +321,7 @@
         "recommendation": "The 2.7d has two EGR valves, one per bank of the V6 engine. Both are prone to clogging with soot, especially on urban-driven vehicles. The DPF is also sensitive to short journeys - the regeneration cycle can fail if the car is not driven on long enough runs. A few longer journeys every couple of weeks usually keeps the DPF in good order. If you experience restricted performance warnings or poor acceleration, have the EGR valves and DPF inspected.",
         "failureLink": {
           "label": "Read the full EGR & DPF failure guide",
-          "href": "/failures/egr-dpf-failure/"
+          "href": "/failures/dpf-blockage"
         }
       }
     ]
@@ -331,7 +331,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, every XJ 2.7d era covered, with a 12-month warranty as standard.",
     "button": {
       "label": "Get My Free XJ 2.7d Engine Quotes Now →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -396,7 +396,7 @@
     "closingVerdict": "The XJ 2.7d is a refined and powerful diesel option for the aluminium-bodied XJ, offering excellent fuel economy and low-down torque. The engine itself has a very good reputation for long-term reliability, but it has known weak points: big end bearing wear, turbocharger failure, EGR clogging, and DPF issues. These are well-understood and manageable with diligent maintenance. Buy on documented history, not on faith. A well-maintained XJ 2.7d is a £5,000–£12,000 future classic; a neglected one is a £5,000 engine replacement waiting to happen.",
     "cta": {
       "label": "→ Compare XJ 2.7d engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -465,7 +465,7 @@
     },
     "cta": {
       "label": "→ Compare XJ 2.7d engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -550,7 +550,7 @@
     "finalCta": "Find the best Jaguar XJ 2.7d engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get your XJ back on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar XJ 2.7d Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

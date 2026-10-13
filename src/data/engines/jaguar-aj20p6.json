@@ -7,7 +7,7 @@
       "title": "Jaguar AJ20P6 Engine - Specs, Reliability & Replacement Cost",
       "description": "Modern 3.0‑litre straight‑six petrol - strong but cooling system vigilance is key. Rated from 80+ real UK enquiries. Compare quotes from 15 vetted specialists.",
       "type": "website",
-      "url": "https://jaguarengines.uk/engines/aj20p6/",
+      "url": "https://jaguarengines.uk/engine/aj20p6",
       "image": "https://jaguarengines.uk/images/jaguar/engines/aj20p6.jpg",
       "siteName": "jaguarengines.uk"
     },
@@ -51,13 +51,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "F‑Pace X761 P400",
-              "url": "https://jaguarengines.uk/models/f-pace/x761/"
+              "url": "https://jaguarengines.uk/f-pace/x761"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "XF X260 P400",
-              "url": "https://jaguarengines.uk/models/xf/x260/"
+              "url": "https://jaguarengines.uk/xf/x260"
             }
           ]
         },
@@ -161,7 +161,7 @@
         {
           "@type": "WebPage",
           "name": "Jaguar AJ20P6 Engine - Specs, Reliability & Replacement Cost",
-          "url": "https://jaguarengines.uk/engines/aj20p6/",
+          "url": "https://jaguarengines.uk/engine/aj20p6",
           "author": {
             "@type": "Organization",
             "name": "jaguarengines.uk Editorial Team"
@@ -200,7 +200,7 @@
     ],
     "primaryCta": {
       "label": "Compare AJ20P6 Engine Prices →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "atAGlance": {
@@ -333,7 +333,7 @@
     "sharedCostNote": "Parts cost is identical across Jaguar and Land Rover applications; labour time varies slightly by engine bay access.",
     "cta": {
       "label": "",
-      "href": "#"
+      "href": "/engine/aj20p6"
     }
   },
   "faq": {
@@ -370,7 +370,7 @@
     "finalCta": "",
     "ctaButton": {
       "label": "Compare Jaguar AJ20P6 Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

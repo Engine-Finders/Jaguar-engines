@@ -39,25 +39,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "2.0 Diesel (AJ200D / Duratorq)",
-              "url": "https://jaguarengines.uk/engines/aj200d/"
+              "url": "https://jaguarengines.uk/engine/ingenium-2-0-diesel"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "2.2 Diesel (AJ200D / Duratorq)",
-              "url": "https://jaguarengines.uk/engines/aj200d-22/"
+              "url": "https://jaguarengines.uk/engine/ingenium-2-0-diesel"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "2.5 V6 (AJ25 / Duratec)",
-              "url": "https://jaguarengines.uk/engines/aj25/"
+              "url": "https://jaguarengines.uk/engine/aj-v6-petrol"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "3.0 V6 (AJ30 / Duratec)",
-              "url": "https://jaguarengines.uk/engines/aj30/"
+              "url": "https://jaguarengines.uk/engine/aj-v8-4-0-4-2"
             }
           ]
         },
@@ -69,25 +69,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "2.0D",
-              "url": "https://jaguarengines.uk/x-type/x400/2-0d/"
+              "url": "https://jaguarengines.uk/x-type/x400"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "2.2D",
-              "url": "https://jaguarengines.uk/x-type/x400/2-2d/"
+              "url": "https://jaguarengines.uk/x-type/x400"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "2.5 V6",
-              "url": "https://jaguarengines.uk/x-type/x400/2-5-v6/"
+              "url": "https://jaguarengines.uk/x-type/x400"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "3.0 V6",
-              "url": "https://jaguarengines.uk/x-type/x400/3-0-v6/"
+              "url": "https://jaguarengines.uk/x-type/x400"
             }
           ]
         },
@@ -249,7 +249,7 @@
     ],
     "primaryCta": {
       "label": "Explore X400 Engines →",
-      "href": "#"
+      "href": "/x-type/x400"
     },
     "dataIntegrityNote": ""
   },
@@ -422,7 +422,7 @@
         "recommendation": "If your V6 X400 develops a rattle on cold start, have the timing chain inspected immediately - but be realistic: a £600–£1,500 repair often exceeds the car's market value. On a low-value X400, it may be time to walk away.",
         "cta": {
           "label": "Compare V6 engine prices for your X400 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -450,7 +450,7 @@
         "recommendation": "At the first sign of rough running or excessive smoke on a diesel X400, have the injectors tested - a £300–£800 injector replacement is far cheaper than the £2,000–£3,500 engine replacement that follows if a failed injector causes piston damage.",
         "cta": {
           "label": "Compare diesel engine prices for your X400 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -478,7 +478,7 @@
         "recommendation": "Have the transfer case fluid changed every 60,000 miles - a £400–£900 fluid service is far cheaper than the £1,500–£2,800 replacement that follows a failed transfer case.",
         "cta": {
           "label": "Compare X400 transfer case repair quotes →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -506,7 +506,7 @@
         "recommendation": "If your diesel X400 develops a lack of power or turbo whine, have the turbo inspected immediately - a £400–£900 turbo repair is far cheaper than the £2,000–£3,500 engine replacement that follows if turbo debris enters the engine.",
         "cta": {
           "label": "Compare diesel turbo repair quotes for your X400 →",
-          "href": "#"
+          "href": "/quote"
         }
       }
     ]
@@ -664,7 +664,7 @@
     "finalCta": "Find the best Jaguar X-Type X400 engine replacement UK owners rely on. Compare real prices from trusted specialists on EnginesMarket today and get your X400 back on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar X-Type X400 Engine Prices on EnginesMarket →",
-      "href": "#",
+      "href": "/quote",
       "note": "[PLACEHOLDER - confirm EnginesMarket URL structure]"
     }
   }

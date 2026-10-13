@@ -34,7 +34,7 @@
           "alt": "Jaguar XF"
         }
       },
-      "link": { "label": "Read the verdict", "href": "#" }
+      "link": { "label": "Read the verdict", "href": "/compare/xe-vs-xf" }
     },
     {
       "id": "02",
@@ -55,7 +55,7 @@
           "alt": "Jaguar E-Pace"
         }
       },
-      "link": { "label": "Read the verdict", "href": "#" }
+      "link": { "label": "Read the verdict", "href": "/compare/f-pace-vs-e-pace" }
     },
     {
       "id": "03",
@@ -76,7 +76,7 @@
           "alt": "AJ133 engine"
         }
       },
-      "link": { "label": "Read the verdict", "href": "#" }
+      "link": { "label": "Read the verdict", "href": "/compare/aj126-vs-aj133" }
     },
     {
       "id": "04",
@@ -97,7 +97,7 @@
           "alt": "AJD-V6 diesel"
         }
       },
-      "link": { "label": "Read the verdict", "href": "#" }
+      "link": { "label": "Read the verdict", "href": "/compare/ingenium-vs-ajd-v6" }
     },
     {
       "id": "05",
@@ -118,7 +118,7 @@
           "alt": "Jaguar XJ"
         }
       },
-      "link": { "label": "Read the verdict", "href": "#" }
+      "link": { "label": "Read the verdict", "href": "/compare/xf-vs-xj" }
     },
     {
       "id": "06",
@@ -139,7 +139,7 @@
           "alt": "Land Rover"
         }
       },
-      "link": { "label": "Read the verdict", "href": "#" }
+      "link": { "label": "Read the verdict", "href": "/compare" }
     }
   ],
   "dataNote": {

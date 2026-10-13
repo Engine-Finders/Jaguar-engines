@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "276DT (AJD-V6)",
-              "url": "https://jaguarengines.uk/engines/276dt/"
+              "url": "https://jaguarengines.uk/engine/ajd-v6-diesel"
             }
           ]
         },
@@ -200,7 +200,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "See XF 2.7d Engine Options →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -271,7 +271,7 @@
     "labourEstimate": "Fitting an XF 2.7d engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
     "cta": {
       "label": "→ Compare XF 2.7d engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -291,7 +291,7 @@
         "recommendation": "This is the most devastating fault affecting the 2.7d engine. Known issues include \"snapped crankshafts\" and \"spun bearings\". One owner reported a \"2008 XF 2.7 diesel with crank that is knocking and appears to have snapped\". The 3.0-litre engine was updated to add a way of securing the bearings for the crankshaft. At the first sign of rhythmic knocking or an oil pressure warning, stop driving and arrange recovery to a specialist. A £1,500–£3,000 early intervention is dramatically cheaper than a £4,000–£7,000 engine replacement.",
         "failureLink": {
           "label": "Read the full crankshaft failure guide → /failures/ajd-v6-crankshaft-bearing-failure/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/engine/ajd-v6-diesel"
         }
       },
       {
@@ -309,7 +309,7 @@
         "recommendation": "The most troublesome component on the 2.7d engine is the Siemens fuel system with piezo injectors. These injectors are prone to failure and can cause rough running, misfires, and poor fuel economy. A new injector costs approximately £327. If you experience rough running or increased fuel consumption, have the injectors tested. Catching injector wear early prevents more serious engine damage.",
         "failureLink": {
           "label": "Read the full injector failure guide",
-          "href": "/failures/injector-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -327,7 +327,7 @@
         "recommendation": "The 2.7d engine \"doesn't like short runs due to the DPF system\". DPF clogging is a common issue on vehicles used primarily for short urban journeys. One owner reported replacing the DPF for approximately £250. Regular motorway runs are essential to allow passive DPF regeneration. If the warning appears, book a forced regeneration or have the DPF cleaned before it becomes clogged beyond repair.",
         "failureLink": {
           "label": "Read the full DPF clogging guide",
-          "href": "/failures/dpf-clogging/"
+          "href": "/failures/dpf-blockage"
         }
       },
       {
@@ -345,7 +345,7 @@
         "recommendation": "The 2.7d engine suffers from \"massive problem\" oil leaks, especially through the heat exchanger. Other weak points include the thermostat, EGR valve and crankshaft oil seals. If you notice a burning smell or oil spots, have the gaskets inspected promptly. Catching leaks early prevents oil contamination of other components and more serious engine damage.",
         "failureLink": {
           "label": "Read the full oil leak guide → /failures/ajd-v6-oil-leaks/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/engine/ajd-v6-diesel"
         }
       }
     ]
@@ -355,7 +355,7 @@
     "supportingLine": "15 vetted Jaguar specialists, every XF 2.7d engine covered, with a 12-month warranty as standard.",
     "button": {
       "label": "See XF 2.7d Engine Options →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -419,7 +419,7 @@
     "closingVerdict": "The XF 2.7d's 276DT engine offers a compelling blend of performance and economy - 207 hp and 435 Nm in a sleek executive saloon. However, it has well-documented weaknesses: crankshaft and bearing failure is the most devastating issue, followed by injector problems, DPF clogging, and oil leaks. The 2.7 is \"just an early version of the 3.0V6\", and the 3.0 was updated to address bearing security. Buy with full service history and evidence of regular long-distance driving. Without history? Proceed with caution - the repair bills can be substantial.",
     "cta": {
       "label": "→ Compare XF 2.7d engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -520,7 +520,7 @@
     },
     "cta": {
       "label": "→ Compare XF 2.7d engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -605,7 +605,7 @@
     "finalCta": "Find the best Jaguar XF 2.7d engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Explore Jaguar XF 2.7d Engine Quotes →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

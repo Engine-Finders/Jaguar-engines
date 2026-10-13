@@ -71,7 +71,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "PT204 (AJ200P)",
-              "url": "https://jaguarengines.uk/engines/pt204/"
+              "url": "https://jaguarengines.uk/engine/ingenium-20-petrol"
             }
           ]
         },
@@ -199,7 +199,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "Get My Free E-Pace Engine Quotes Now →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -270,7 +270,7 @@
     "labourEstimate": "Fitting an E-Pace P250 engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). The transverse engine layout adds complexity.",
     "cta": {
       "label": "→ Compare E-Pace P250 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -290,7 +290,7 @@
         "recommendation": "The only \"vaguely common issue\" with the petrol Ingenium is an issue with the VVT solenoid. Some owners have reported a fast ticking/light knocking sound on cold start as the RPM drops from cold idle to normal idle. If you hear this noise, have the VVT solenoid inspected. Catching this early prevents more serious valve train damage.",
         "failureLink": {
           "label": "Read the full VVT solenoid failure guide → /failures/vvt-solenoid-failure/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -308,7 +308,7 @@
         "recommendation": "High-pressure fuel pump failures are \"common in the P250 variant\". A failed fuel pump can lead to poor engine performance, reduced fuel economy, and potential stalling. If you notice a loss of power in the upper rev range or the engine stalling, have the fuel system inspected immediately. Catching this early prevents fuel contamination of the entire system.",
         "failureLink": {
           "label": "Read the full fuel pump failure guide → /failures/hpfp-failure/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/failures"
         }
       },
       {
@@ -326,7 +326,7 @@
         "recommendation": "Some E-Pace P250 owners have reported turbocharger failure within the first few months of ownership. Turbo whining typically indicates worn turbocharger bearings or boost leaks. If you hear a high-pitched whine or siren-like noise, inspect the turbocharger's shaft play and listen for unusual sounds. A £1,200–£2,500 repair is far cheaper than the engine damage that can follow if ignored. Regular oil changes with the correct 0W-20 specification are essential for turbo longevity.",
         "failureLink": {
           "label": "Read the full turbo failure guide",
-          "href": "/failures/turbo-failure/"
+          "href": "/failures/turbocharger-failure"
         }
       }
     ]
@@ -336,7 +336,7 @@
     "supportingLine": "15 vetted Jaguar specialists, every E-Pace P250 engine covered, with a 12-month warranty as standard.",
     "button": {
       "label": "Get My Free E-Pace Engine Quotes Now →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -400,7 +400,7 @@
     "closingVerdict": "The E-Pace P250's PT204 Ingenium petrol engine is the \"safer bet\" compared to the diesel variants. Timing chain problems are \"diesel related, no problems with the petrols\". The petrol Ingeniums \"aren't mechanically troubled in the same way\" as the diesels. However, the E-Pace itself has a poor reliability reputation - 11% of owners reported engine problems. Known issues include VVT solenoid failure, HPFP failure, and turbocharger wear. Buy with full service history and proper maintenance records, and you'll have a reliable and stylish compact SUV. Without history? Proceed with caution - the repair bills can be substantial.",
     "cta": {
       "label": "→ Compare E-Pace P250 engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -481,7 +481,7 @@
     },
     "cta": {
       "label": "→ Compare E-Pace P250 engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -566,7 +566,7 @@
     "finalCta": "Find the best Jaguar E-Pace P250 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar E-Pace P250 Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

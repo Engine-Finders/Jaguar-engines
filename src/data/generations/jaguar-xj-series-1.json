@@ -39,25 +39,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "2.8 XK I6 Engine",
-              "url": "https://jaguarengines.uk/engines/28-xk-i6/"
+              "url": "https://jaguarengines.uk/engine"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "4.2 XK I6 Engine",
-              "url": "https://jaguarengines.uk/engines/42-xk-i6/"
+              "url": "https://jaguarengines.uk/engine"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "3.4 XK I6 Engine",
-              "url": "https://jaguarengines.uk/engines/34-xk-i6/"
+              "url": "https://jaguarengines.uk/engine"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "5.3 V12 Engine",
-              "url": "https://jaguarengines.uk/engines/53-v12/"
+              "url": "https://jaguarengines.uk/engine/v12-he"
             }
           ]
         },
@@ -69,31 +69,31 @@
               "@type": "ListItem",
               "position": 1,
               "name": "2.8 XJ6",
-              "url": "https://jaguarengines.uk/xj/series-1/28/"
+              "url": "https://jaguarengines.uk/xj"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "3.4 XJ6",
-              "url": "https://jaguarengines.uk/xj/series-1/34/"
+              "url": "https://jaguarengines.uk/xj"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "4.2 XJ6",
-              "url": "https://jaguarengines.uk/xj/series-1/42/"
+              "url": "https://jaguarengines.uk/xj"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "5.3 XJ12",
-              "url": "https://jaguarengines.uk/xj/series-1/xj12/"
+              "url": "https://jaguarengines.uk/xj"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "Daimler Sovereign",
-              "url": "https://jaguarengines.uk/xj/series-1/daimler-sovereign/"
+              "url": "https://jaguarengines.uk/xj"
             }
           ]
         },
@@ -211,7 +211,7 @@
         {
           "@type": "WebPage",
           "name": "XJ Series 1 Engine Replacement Cost UK - Compare Quotes",
-          "url": "https://jaguarengines.uk/xj/series-1/",
+          "url": "https://jaguarengines.uk/xj/xj-series-1",
           "author": {
             "@type": "Organization",
             "name": "JaguarEngine.uk Editorial Team"
@@ -255,7 +255,7 @@
     ],
     "primaryCta": {
       "label": "Explore XJ Series 1 Engines →",
-      "href": "#"
+      "href": "/xj/xj-series-1"
     },
     "dataIntegrityNote": ""
   },
@@ -408,7 +408,7 @@
         "recommendation": "On any XK‑powered Series 1, a £250–£600 cooling system refresh is the single best insurance policy - it is dramatically cheaper than the £4,500–£8,000 replacement that follows a neglected overheat.",
         "cta": {
           "label": "Compare 4.2 XK engine prices for your XJ Series 1 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -421,7 +421,7 @@
         "recommendation": "On any V12‑powered Series 1, budget for regular carburettor balance and ignition checks - a £200–£500 service is cheap insurance against the £6,000–£12,000 replacement that follows a neglected misfire.",
         "cta": {
           "label": "Compare 5.3 V12 engine prices for your XJ Series 1 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -434,7 +434,7 @@
         "recommendation": "If your 2.8‑litre XJ suffers from overheating or poor running, have the cooling system and carburettors inspected - a £200–£500 preventative repair is far cheaper than the £3,500–£6,000 replacement that follows if ignored.",
         "cta": {
           "label": "Compare 2.8 XK engine prices for your XJ Series 1 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -447,7 +447,7 @@
         "recommendation": "Have the body and subframes inspected on any Series 1 - it's the single most common reason an otherwise sound XJ becomes a restoration project or is written off.",
         "cta": {
           "label": "Compare XJ Series 1 body repair quotes →",
-          "href": "#"
+          "href": "/quote"
         }
       }
     ]
@@ -592,7 +592,7 @@
     "finalCta": "Find the best Jaguar XJ Series 1 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and keep your classic on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar XJ Series 1 Engine Prices on EnginesMarket →",
-      "href": "#",
+      "href": "/quote",
       "note": "[PLACEHOLDER - confirm EnginesMarket URL structure]"
     }
   }

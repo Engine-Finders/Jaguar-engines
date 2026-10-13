@@ -15,7 +15,7 @@
       { "rank": 4, "code": "AJ200P / 204PT", "label": "Ingenium Petrol", "enquiries": "500", "tag": "EM-VERIFIED" },
       { "rank": 5, "code": "AJ133 / 508PN", "label": "5.0 V8", "enquiries": "330", "tag": "EM-VERIFIED" }
     ],
-    "footer": { "label": "View full engine insights", "href": "#" }
+    "footer": { "label": "View full engine insights", "href": "/data/failure-rate-by-engine" }
   },
   "models": {
     "title": "Most-Enquired Models (2025)",
@@ -29,7 +29,7 @@
       { "rank": 5, "model": "XJ X351", "enquiries": "151", "tag": "EM-VERIFIED" },
       { "rank": 6, "model": "E-Pace X540", "enquiries": "140", "tag": "EM-VERIFIED" }
     ],
-    "footer": { "label": "View full model insights", "href": "#" }
+    "footer": { "label": "View full model insights", "href": "/data/most-enquired-models" }
   },
   "replacementCosts": {
     "title": "Replacement Cost Index",
@@ -43,7 +43,7 @@
       { "code": "AJ200P / 204PT", "cost": "£3,000–£5,000" },
       { "code": "AJ133 / 508PN", "cost": "£5,500–£9,000" }
     ],
-    "footer": { "label": "View cost methodology", "href": "#" }
+    "footer": { "label": "View cost methodology", "href": "/data/methodology" }
   },
   "failures": {
     "title": "Highest-Risk Failures",
@@ -69,7 +69,7 @@
         "note": "Same Ingenium diesel issue shared with Land Rover"
       }
     ],
-    "footer": { "label": "See all common issues", "href": "#" }
+    "footer": { "label": "See all common issues", "href": "/failures" }
   },
   "liveFeed": {
     "title": "Live Enquiry Feed",

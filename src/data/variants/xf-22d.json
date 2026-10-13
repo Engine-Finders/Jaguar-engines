@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ‑i4D 2.2 (224DT)",
-              "url": "https://jaguarengines.uk/engines/224dt/"
+              "url": "https://jaguarengines.uk/engine/ajd4-204dtd"
             }
           ]
         },
@@ -200,7 +200,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "Get My Free XF 2.2d Engine Quotes Now →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -262,7 +262,7 @@
     "labourEstimate": "Fitting an XF 2.2d engine typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
     "cta": {
       "label": "→ Compare XF 2.2d engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -282,7 +282,7 @@
         "recommendation": "The 224DT uses a timing belt, not a chain. Jaguar specifies replacement at 112,000 miles or 7 years. If the belt snaps, piston‑valve contact is almost certain, requiring a full engine replacement - a £2,500–£5,500 bill. Many specialists recommend replacing the belt and water pump together every 80,000–100,000 miles for peace of mind.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-belt-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -300,7 +300,7 @@
         "recommendation": "Injector failure is a commonly reported issue on the 224DT. Symptoms include rough running, stalling and loss of power. Reconditioned Bosch injectors are available from around £190 each. Have the injectors tested at the first sign of rough running - catching a failing injector early can prevent damage to the DPF and catalytic converter.",
         "failureLink": {
           "label": "",
-          "href": "/failures/injector-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -318,7 +318,7 @@
         "recommendation": "The 224DT is prone to EGR valve clogging and DPF issues. Short‑journey use accelerates DPF clogging. Regular motorway runs help the DPF regenerate. If the engine warning light appears, have the EGR and DPF system inspected promptly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/egr-valve-cooler-failure/"
+          "href": "/failures/egr-valve-cooler"
         }
       }
     ]
@@ -328,7 +328,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, every XF 2.2d engine covered, with a 12‑month warranty as standard.",
     "button": {
       "label": "Get My Free XF 2.2d Engine Quotes Now →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -392,7 +392,7 @@
     "closingVerdict": "The 224DT is a durable, proven diesel when properly maintained - but it has non‑negotiable service items. The timing belt must be replaced every 112,000 miles or 7 years; ignoring this is a gamble that can cost you a £2,500+ engine replacement. Injector, EGR and DPF issues are manageable with regular maintenance. Buy on full service history with evidence of timing belt replacement - and never ignore a rough idle.",
     "cta": {
       "label": "→ Compare XF 2.2d engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -453,7 +453,7 @@
     },
     "cta": {
       "label": "→ Compare XF 2.2d engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -525,7 +525,7 @@
     "finalCta": "Find the best Jaguar XF 2.2d engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence - from £1,500 for a used unit to £6,500 for a fully rebuilt diesel engine.",
     "ctaButton": {
       "label": "Compare Jaguar XF 2.2d Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

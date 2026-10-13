@@ -98,3 +98,10 @@ export function carImageFor(...hints) {
   const file = facelift || (generation && generations[`${model}|${generation}`]) || carImages.models[model];
   return file ? `${carImages.basePath}${file}` : null;
 }
+
+/**
+ * Model key ("xf", "f-pace", ...) for free text such as a hero tag pill, or null.
+ */
+export function carModelFor(...hints) {
+  return findModel(normalise(hints.filter(Boolean).join(" ")));
+}

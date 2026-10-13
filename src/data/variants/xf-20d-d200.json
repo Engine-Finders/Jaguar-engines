@@ -60,7 +60,7 @@
               "@type": "ListItem",
               "position": 2,
               "name": "XF D200 (AJ20D6 MHEV, 2020–2024)",
-              "url": "https://jaguarengines.uk/xf/x260-facelift/"
+              "url": "https://jaguarengines.uk/xf"
             }
           ]
         },
@@ -72,13 +72,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "204DTD / AJ200D (2.0L 4-cyl Diesel)",
-              "url": "https://jaguarengines.uk/engines/204dtd/"
+              "url": "https://jaguarengines.uk/engine/ingenium-2-0-diesel"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "AJ20D6 / 204DTD MHEV (2.0L 4-cyl Diesel MHEV)",
-              "url": "https://jaguarengines.uk/engines/aj20d6/"
+              "url": "https://jaguarengines.uk/engine/aj20d6"
             }
           ]
         },
@@ -206,7 +206,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "Get My Free XF Diesel Engine Quotes Now →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -285,7 +285,7 @@
     "labourEstimate": "Fitting an XF 2.0d/D200 engine typically takes 10–14 hours at £70–£100/hr (independent) or £120–£160/hr (London/SE dealer).",
     "cta": {
       "label": "→ Compare XF diesel engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -305,7 +305,7 @@
         "recommendation": "Timing chain stretch is the single most notorious issue on the Ingenium diesel. The pre-2019 engines are particularly vulnerable. The problem is often exacerbated by oil dilution from failed DPF regenerations. A stretched timing chain can cause the DPF to fill prematurely, creating a cascade of failures. At the first sign of cold-start rattle, get the chain and tensioners inspected immediately. Regular oil changes at 10,000-mile intervals are essential.",
         "failureLink": {
           "label": "Read the full timing chain failure guide",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -323,7 +323,7 @@
         "recommendation": "The Ingenium diesel's DPF is sensitive to short urban journeys. Failed regenerations cause fuel to dilute the engine oil, leading to accelerated timing chain wear. The D200's MHEV system helps but doesn't eliminate the risk. If you predominantly drive in town, ensure the vehicle completes regular regeneration cycles - a motorway run at 2,000+ rpm for 20 minutes at least once a week is recommended.",
         "failureLink": {
           "label": "Read the full DPF failure guide",
-          "href": "/failures/dpf-clogging/"
+          "href": "/failures/dpf-blockage"
         }
       },
       {
@@ -341,7 +341,7 @@
         "recommendation": "EGR cooler failures are common across the Ingenium diesel family. The piston cooling jet solenoid is another known weak point - if it fails, pistons can overheat and cause catastrophic engine damage. If you're experiencing coolant loss or engine knocking, have the engine inspected promptly.",
         "failureLink": {
           "label": "Read the full EGR cooler failure guide",
-          "href": "/failures/egr-cooler-failure/"
+          "href": "/failures/egr-valve-cooler"
         }
       }
     ]
@@ -351,7 +351,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, every XF diesel era covered - from the 2.0d to the D200 MHEV - with a 12-month warranty as standard.",
     "button": {
       "label": "Get My Free XF Diesel Engine Quotes Now →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -421,7 +421,7 @@
     "closingVerdict": "The XF 2.0d and D200 are powered by JLR's Ingenium diesel - a capable and efficient engine that's let down by known weak points: timing chain stretch, oil dilution, DPF clogging, and EGR cooler failures. The post-2019 D200 MHEV benefits from revised timing chain components, but the reputation persists. Buy on documented history, not on faith. A well-maintained XF diesel is a £15,000–£30,000 executive saloon; a neglected one is a £5,000 engine replacement waiting to happen.",
     "cta": {
       "label": "→ Compare XF diesel engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -462,7 +462,7 @@
     },
     "cta": {
       "label": "→ Compare XF diesel engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -547,7 +547,7 @@
     "finalCta": "Find the best Jaguar XF 2.0d or D200 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get your XF back on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar XF Diesel Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

@@ -7,7 +7,7 @@
       "title": "Jaguar Ingenium 2.0 Diesel Engine - Specs, Reliability & Cost",
       "description": "Efficient but timing‑chain stretch before 70k is a real risk - rated from 590+ real UK enquiries. Compare quotes from 15 vetted specialists today.",
       "type": "website",
-      "url": "https://jaguarengines.uk/engines/ingenium-20-diesel/",
+      "url": "https://jaguarengines.uk/engine/ingenium-2-0-diesel",
       "image": "https://jaguarengines.uk/images/jaguar/engines/ingenium-20-diesel.jpg",
       "siteName": "jaguarengines.uk"
     },
@@ -51,25 +51,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "XE X760 2.0 D",
-              "url": "https://jaguarengines.uk/models/xe/x760/"
+              "url": "https://jaguarengines.uk/xe/x760"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "XF X260 2.0 D",
-              "url": "https://jaguarengines.uk/models/xf/x260/"
+              "url": "https://jaguarengines.uk/xf/x260"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "F‑Pace X761 2.0 D",
-              "url": "https://jaguarengines.uk/models/f-pace/x761/"
+              "url": "https://jaguarengines.uk/f-pace/x761"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "E‑Pace X540 2.0 D",
-              "url": "https://jaguarengines.uk/models/e-pace/x540/"
+              "url": "https://jaguarengines.uk/e-pace/x540"
             }
           ]
         },
@@ -173,7 +173,7 @@
         {
           "@type": "WebPage",
           "name": "Jaguar Ingenium 2.0 Diesel Engine - Specs, Reliability & Cost",
-          "url": "https://jaguarengines.uk/engines/ingenium-20-diesel/",
+          "url": "https://jaguarengines.uk/engine/ingenium-2-0-diesel",
           "author": {
             "@type": "Organization",
             "name": "jaguarengines.uk Editorial Team"
@@ -212,7 +212,7 @@
     ],
     "primaryCta": {
       "label": "Compare Ingenium 2.0 Diesel Engine Prices →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "atAGlance": {
@@ -357,7 +357,7 @@
     "sharedCostNote": "Parts cost is identical across Jaguar and Land Rover applications; labour time varies slightly by engine bay access.",
     "cta": {
       "label": "",
-      "href": "#"
+      "href": "/engine/ingenium-2-0-diesel"
     }
   },
   "faq": {
@@ -394,7 +394,7 @@
     "finalCta": "",
     "ctaButton": {
       "label": "Compare Jaguar Ingenium 2.0 Diesel Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

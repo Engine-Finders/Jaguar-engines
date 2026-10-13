@@ -39,37 +39,37 @@
               "@type": "ListItem",
               "position": 1,
               "name": "204DTD AJ200D Engine",
-              "url": "https://jaguarengines.uk/engines/204dtd/"
+              "url": "https://jaguarengines.uk/engine/ingenium-2-0-diesel"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "AJ20D4 Engine",
-              "url": "https://jaguarengines.uk/engines/aj20d4/"
+              "url": "https://jaguarengines.uk/engine"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "306DT Engine",
-              "url": "https://jaguarengines.uk/engines/306dt/"
+              "url": "https://jaguarengines.uk/engine/306dt"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "PT204 Engine",
-              "url": "https://jaguarengines.uk/engines/pt204/"
+              "url": "https://jaguarengines.uk/engine/ingenium-20-petrol"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "AJ126 Engine",
-              "url": "https://jaguarengines.uk/engines/aj126/"
+              "url": "https://jaguarengines.uk/engine/306dt-306ps"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "508PS AJ133 Engine",
-              "url": "https://jaguarengines.uk/engines/aj133/"
+              "url": "https://jaguarengines.uk/engine/aj133"
             }
           ]
         },
@@ -81,25 +81,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "F-Pace D180",
-              "url": "https://jaguarengines.uk/f-pace/x761/d180/"
+              "url": "https://jaguarengines.uk/f-pace/x761"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "F-Pace P250",
-              "url": "https://jaguarengines.uk/f-pace/x761/p250/"
+              "url": "https://jaguarengines.uk/f-pace/x761"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "F-Pace P380",
-              "url": "https://jaguarengines.uk/f-pace/x761/p380/"
+              "url": "https://jaguarengines.uk/f-pace/x761"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "F-Pace P550 SVR",
-              "url": "https://jaguarengines.uk/f-pace/x761/p550-svr/"
+              "url": "https://jaguarengines.uk/f-pace/x761"
             }
           ]
         },
@@ -272,7 +272,7 @@
     ],
     "primaryCta": {
       "label": "Explore X761 Engines →",
-      "href": "#"
+      "href": "/f-pace/x761"
     },
     "dataIntegrityNote": ""
   },
@@ -394,7 +394,7 @@
     "h2": "Best & Worst Engines",
     "databaseCta": {
       "label": "View Full Engine Database →",
-      "href": "#"
+      "href": "/engine"
     },
     "items": [
       {
@@ -526,7 +526,7 @@
         "recommendation": "At the first sign of cold-start rattle on a 2.0-litre diesel F-Pace, get the timing system inspected immediately. An £1,200–£3,500 preventative repair is dramatically cheaper than the £3,500–£6,000 replacement that follows if ignored. Avoid pre-2019 models without full recall compliance.",
         "cta": {
           "label": "Compare 204DTD engine prices for your F-Pace X761 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -539,7 +539,7 @@
         "recommendation": "Have the coolant Y-pipe inspected on any 3.0 V6 F-Pace, particularly 2017 models. Consider replacing it proactively as a preventative measure - a £500–£1,000 job is far cheaper than a £4,500+ engine replacement. Monitor the temperature gauge obsessively.",
         "cta": {
           "label": "Compare AJ126 engine prices for your F-Pace X761 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -552,7 +552,7 @@
         "recommendation": "If you own an SVR, be early on maintenance - shorten oil change intervals to 8,000–10,000 miles and consider oil analysis. Listen for supercharger rattle and have it investigated immediately.",
         "cta": {
           "label": "Compare 508PS engine prices for your F-Pace X761 SVR →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -565,7 +565,7 @@
         "recommendation": "Replace the water pump proactively at 60,000 miles on any 2.0-litre petrol F-Pace. Monitor the temperature gauge and investigate any coolant loss immediately.",
         "cta": {
           "label": "Compare PT204 engine prices for your F-Pace X761 →",
-          "href": "#"
+          "href": "/quote"
         }
       }
     ]
@@ -648,19 +648,19 @@
   },
     {
       "name": "D165",
-      "url": "#"
+      "url": "/f-pace/x761"
     },
     {
       "name": "D180",
-      "url": "#"
+      "url": "/f-pace/x761"
     },
     {
       "name": "D200",
-      "url": "#"
+      "url": "/f-pace/x761"
     },
     {
       "name": "D275",
-      "url": "#"
+      "url": "/f-pace/x761"
     },
     {
       "name": "D300 (4-cyl)",
@@ -674,7 +674,7 @@
   "petrolVariants": [
     {
       "name": "P200",
-      "url": "#"
+      "url": "/f-pace/x761"
     },
 {
     "name": "25T P250",
@@ -686,11 +686,11 @@
     },
     {
       "name": "P340",
-      "url": "#"
+      "url": "/f-pace/x761"
     },
     {
       "name": "P380",
-      "url": "#"
+      "url": "/f-pace/x761"
     },
       {
     "name": "P400",
@@ -821,7 +821,7 @@
     "finalCta": "Find the best Jaguar F-Pace X761 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar F-Pace X761 Engine Prices on EnginesMarket →",
-      "href": "#",
+      "href": "/quote",
       "note": "[PLACEHOLDER - confirm EnginesMarket URL structure]"
     }
   }

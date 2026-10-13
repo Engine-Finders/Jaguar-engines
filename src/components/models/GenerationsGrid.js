@@ -10,7 +10,7 @@ import { carImageFor } from "@/components/shared/carImage";
 import { sectionDescription, sectionH2, sectionTableText, tableHeaderClass } from "@/components/models/sectionTypography";
 
 const HEADER_IMAGE = "/home-image/sec2-bg.webp";
-const RIGHT_IMAGE = "/home-image/right.webp";
+const RIGHT_IMAGE = "/home-image/right-cutout.webp";
 
 function cleanText(text = "") {
   return String(text ?? "")
@@ -179,18 +179,18 @@ function Rating({ value, compact = false }) {
   );
 }
 
-function GenerationImage({ large = false, src = RIGHT_IMAGE }) {
+function GenerationImage({ large = false, src }) {
   return (
     <div
-      className={`relative flex w-full items-end justify-center overflow-hidden rounded-sm ${
+      className={`relative flex w-full items-center justify-center overflow-hidden rounded-sm ${
         large ? "h-[180px] md:h-[168px]" : "h-[96px] md:h-[150px]"
       }`}
     >
       <Image
-        src={src}
+        src={src || RIGHT_IMAGE}
         alt=""
         fill
-        className="object-cover object-center"
+        className="object-contain object-center"
         sizes={large ? "320px" : "220px"}
       />
     </div>

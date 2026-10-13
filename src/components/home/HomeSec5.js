@@ -16,7 +16,7 @@ function ArrowIcon({ className = "h-4 w-4" }) {
 }
 
 const LEFT_IMAGE = "/home-image/left.webp";
-const RIGHT_IMAGE = "/home-image/right.webp";
+const RIGHT_IMAGE = "/home-image/right-cutout.webp";
 
 function ComparisonCard({ item, isDark }) {
   const left = item.left || {};

@@ -8,7 +8,7 @@ import HomeIcon from "@/components/home/homeIcons";
 import { carImageFor } from "@/components/shared/carImage";
 import { sectionDescription, sectionTableText, tableHeaderClass } from "@/components/models/sectionTypography";
 
-const RIGHT_IMAGE = "/home-image/right.webp";
+const RIGHT_IMAGE = "/home-image/right-cutout.webp";
 
 function cleanText(text = "") {
   return String(text ?? "")
@@ -93,7 +93,7 @@ function Stats({ eras, isDark }) {
           className="flex flex-col items-center justify-center bg-[var(--color-surface-raised)] px-1.5 py-2.5 text-center md:px-4 md:py-3.5"
         >
           <span className="flex h-10 w-10 items-center justify-center md:h-14 md:w-14">
-            <HomeIcon name={item.icon} isDark={isDark} className="h-8 w-8 object-contain md:h-9 md:w-9" />
+            <HomeIcon name={item.icon} isDark={isDark} className="h-8 w-8 object-contain md:h-11 md:w-11" />
           </span>
           <strong className="mt-1.5 text-[12px] leading-tight text-[var(--color-text)] md:text-[15px]">
             {item.title}
@@ -155,7 +155,7 @@ function DesktopTable({ eras, columns, isDark }) {
                 ) : null}
               </h3>
               <div className="relative mt-2 h-[72px] w-full overflow-hidden rounded-md md:h-[88px]">
-                <Image src={era.image || RIGHT_IMAGE} alt="" fill className="object-cover object-center" sizes="220px" />
+                <Image src={era.image || RIGHT_IMAGE} alt="" fill className="object-contain object-center" sizes="220px" />
               </div>
             </div>
             <div
@@ -230,7 +230,7 @@ function MobileAccordion({ eras, isDark }) {
               className="flex w-full items-center gap-4 p-4 text-left"
             >
               <span className="relative h-[64px] w-[96px] shrink-0 overflow-hidden rounded-md">
-                <Image src={era.image || RIGHT_IMAGE} alt="" fill className="object-cover object-center" sizes="96px" />
+                <Image src={era.image || RIGHT_IMAGE} alt="" fill className="object-contain object-center" sizes="96px" />
               </span>
               <span className="min-w-0 flex-1">
                 <strong className="block text-[18px] leading-tight text-[var(--color-text)]">

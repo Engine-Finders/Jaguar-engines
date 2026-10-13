@@ -65,7 +65,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "204DTA / AJ20D4 (2.0L Twin-Turbo Diesel)",
-              "url": "https://jaguarengines.uk/engines/204dta/"
+              "url": "https://jaguarengines.uk/engine"
             }
           ]
         },
@@ -193,7 +193,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "See Jaguar E-Pace D240 Engine Options →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -264,7 +264,7 @@
     "labourEstimate": "Fitting an E-Pace D240 engine typically takes 10–14 hours at £70–£100/hr (independent) or £120–£160/hr (London/SE dealer). The transverse engine layout and tight engine bay make this a moderately labour-intensive job.",
     "cta": {
       "label": "→ Compare D240 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -284,7 +284,7 @@
         "recommendation": "Timing chain stretch is the single most notorious issue on the Ingenium diesel. The chain system is far more sensitive to wear than older \"lifetime\" designs. If you hear a rattle even once - it's worth getting checked. At the first sign of cold-start rattle, get the chain and tensioners inspected immediately. If ignored, timing chain failure can lead to catastrophic engine damage and repair bills exceeding £4,000–£8,000. Regular oil changes (10,000-mile intervals) are the single most effective preventative measure - the factory 21,000-mile interval is too long for these engines.",
         "failureLink": {
           "label": "Read the full timing chain failure guide",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -302,7 +302,7 @@
         "recommendation": "A blocked diesel particulate filter (DPF) is common on the Ingenium diesel. The E-Pace is particularly susceptible because the positioning of the firewall can exacerbate failed regeneration problems. Oil dilution can happen as a result of failed regenerations. If you predominantly drive in town, ensure the vehicle completes regular regeneration cycles - a motorway run at 2,000+ rpm for 20 minutes at least once a week is recommended.",
         "failureLink": {
           "label": "Read the full DPF failure guide",
-          "href": "/failures/dpf-clogging/"
+          "href": "/failures/dpf-blockage"
         }
       },
       {
@@ -320,7 +320,7 @@
         "recommendation": "EGR valve and cooler failures are common on the Ingenium diesel. A blocked EGR valve can quickly lead to DPF issues and limp mode. If you're experiencing coolant loss or engine management warnings, have the EGR system inspected promptly. Ignoring it can lead to overheating and potential engine damage.",
         "failureLink": {
           "label": "Read the full EGR cooler failure guide",
-          "href": "/failures/egr-cooler-failure/"
+          "href": "/failures/egr-valve-cooler"
         }
       }
     ]
@@ -330,7 +330,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, every D240 twin-turbo era covered, with a 12-month warranty as standard.",
     "button": {
       "label": "See Jaguar E-Pace D240 Engine Options →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -394,7 +394,7 @@
     "closingVerdict": "The E-Pace D240 offers the most powerful diesel engine in the range - 240 PS and 500 Nm from the twin-turbo Ingenium. It's a capable and responsive engine when running well. However, the Ingenium diesel family has a well-documented reputation for timing chain stretch, DPF clogging, and EGR issues. The E-Pace's transverse engine layout and firewall positioning can exacerbate DPF regeneration problems. Buy on documented history, not on faith. A well-maintained D240 is a £18,000–£30,000 premium compact SUV; a neglected one is a £5,000 engine replacement waiting to happen.",
     "cta": {
       "label": "→ Compare D240 engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -467,7 +467,7 @@
     },
     "cta": {
       "label": "→ Compare D240 engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -552,7 +552,7 @@
     "finalCta": "Find the best Jaguar E-Pace D240 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get your E-Pace back on the road with confidence.",
     "ctaButton": {
       "label": "Explore Jaguar E-Pace D240 Engine Quotes →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

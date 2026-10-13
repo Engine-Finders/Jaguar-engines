@@ -39,25 +39,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ26 Engine",
-              "url": "https://jaguarengines.uk/engines/aj26/"
+              "url": "https://jaguarengines.uk/engine/aj-v8-4-0-4-2"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "AJ27 Engine",
-              "url": "https://jaguarengines.uk/engines/aj27/"
+              "url": "https://jaguarengines.uk/engine/aj-v8-4-0-4-2"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "AJ33 Engine",
-              "url": "https://jaguarengines.uk/engines/aj33/"
+              "url": "https://jaguarengines.uk/engine/aj-v8-4-0-4-2"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "AJ34 Engine",
-              "url": "https://jaguarengines.uk/engines/aj34/"
+              "url": "https://jaguarengines.uk/engine/aj-v8-4-0-4-2"
             }
           ]
         },
@@ -69,7 +69,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "XK8",
-              "url": "https://jaguarengines.uk/xk/xk8/"
+              "url": "https://jaguarengines.uk/xk"
             },
             {
               "@type": "ListItem",
@@ -81,13 +81,13 @@
               "@type": "ListItem",
               "position": 3,
               "name": "XK8 4.2",
-              "url": "https://jaguarengines.uk/xk/xk8-4.2/"
+              "url": "https://jaguarengines.uk/xk"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "XKR 4.2",
-              "url": "https://jaguarengines.uk/xk/xkr-4.2/"
+              "url": "https://jaguarengines.uk/xk"
             }
           ]
         },
@@ -260,7 +260,7 @@
     ],
     "primaryCta": {
       "label": "Explore X100 Engines →",
-      "href": "#"
+      "href": "/xk/x100"
     },
     "dataIntegrityNote": ""
   },
@@ -471,7 +471,7 @@
         "recommendation": "If you own a 4.0-litre X100 with plastic tensioners, treat this as urgent preventative maintenance - £1,200–£2,500 now is dramatically cheaper than the £3,500–£6,000 replacement that follows a failure. Post-2001 cars were fitted with metal tensioners from the factory.",
         "cta": {
           "label": "Compare AJ26/AJ27 engine prices for your Jaguar X100 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -499,7 +499,7 @@
         "recommendation": "Any pre-1999 XK8 should have a cylinder compression and leak-down test performed before purchase. If the car has been run on high-sulphur fuel or shows cold-start issues, walk away or budget for a replacement engine.",
         "cta": {
           "label": "Compare AJ26 engine prices for your Jaguar X100 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -527,7 +527,7 @@
         "recommendation": "Replace the coolant reservoir and water pump proactively at 60,000 miles - £400–£800 now is cheap insurance against a £3,500+ replacement. Check for coolant leaks regularly.",
         "cta": {
           "label": "Compare cooling system repair quotes for your Jaguar X100 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -555,7 +555,7 @@
         "recommendation": "If your early X100 has any transmission hesitation or harsh shifts, have the valve body inspected immediately - £1,000–£2,000 now is far cheaper than a £2,500–£4,000 replacement. The 2002+ 6-speed cars are significantly more reliable.",
         "cta": {
           "label": "Compare transmission repair quotes for your Jaguar X100 →",
-          "href": "#"
+          "href": "/quote"
         }
       }
     ]
@@ -742,7 +742,7 @@
     "finalCta": "Find the best Jaguar XK X100 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar XK X100 Engine Prices on EnginesMarket →",
-      "href": "#",
+      "href": "/quote",
       "note": "[PLACEHOLDER - confirm EnginesMarket URL structure]"
     }
   }

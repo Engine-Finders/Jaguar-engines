@@ -39,31 +39,31 @@
               "@type": "ListItem",
               "position": 1,
               "name": "2.9 AJ6 Engine",
-              "url": "https://jaguarengines.uk/engines/9apvla/"
+              "url": "https://jaguarengines.uk/engine/aj6-aj16"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "3.2 AJ6 Engine",
-              "url": "https://jaguarengines.uk/engines/9bpmna/"
+              "url": "https://jaguarengines.uk/engine/aj6-aj16"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "3.6 AJ6 Engine",
-              "url": "https://jaguarengines.uk/engines/9dpana/"
+              "url": "https://jaguarengines.uk/engine/aj6-aj16"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "4.0 AJ6 Engine",
-              "url": "https://jaguarengines.uk/engines/9epcna/"
+              "url": "https://jaguarengines.uk/engine/aj6-aj16"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "6.0 V12 Engine",
-              "url": "https://jaguarengines.uk/engines/8c/"
+              "url": "https://jaguarengines.uk/engine/aj-v8-4-0-4-2"
             }
           ]
         },
@@ -75,37 +75,37 @@
               "@type": "ListItem",
               "position": 1,
               "name": "2.9",
-              "url": "https://jaguarengines.uk/xj/xj40/29/"
+              "url": "https://jaguarengines.uk/xj/xj40"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "3.2",
-              "url": "https://jaguarengines.uk/xj/xj40/32/"
+              "url": "https://jaguarengines.uk/xj/xj40"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "3.6",
-              "url": "https://jaguarengines.uk/xj/xj40/36/"
+              "url": "https://jaguarengines.uk/xj/xj40"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "4.0",
-              "url": "https://jaguarengines.uk/xj/xj40/40/"
+              "url": "https://jaguarengines.uk/xj/xj40"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "6.0 V12",
-              "url": "https://jaguarengines.uk/xj/xj40/v12/"
+              "url": "https://jaguarengines.uk/xj/xj40"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "XJR (4.0 TWR)",
-              "url": "https://jaguarengines.uk/xj/xj40/xjr/"
+              "url": "https://jaguarengines.uk/xj/xj40"
             }
           ]
         },
@@ -278,7 +278,7 @@
     ],
     "primaryCta": {
       "label": "Explore XJ40 Engines →",
-      "href": "#"
+      "href": "/xj/xj40"
     },
     "dataIntegrityNote": ""
   },
@@ -497,7 +497,7 @@
         "recommendation": "Have the cooling system inspected annually and replace the coolant every two years - a £1,000–£2,000 head gasket replacement is cheaper than a £3,000+ engine replacement that follows an ignored overheating event. Check for emulsified oil inside the filler cap regularly.",
         "cta": {
           "label": "Compare AJ6 engine prices for your XJ40 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -525,7 +525,7 @@
         "recommendation": "Replace the water pump and thermostat as preventative maintenance every 60,000 miles or 5 years - a £500–£1,000 specialist job is trivial against the £3,000+ engine replacement that follows an ignored cooling system failure.",
         "cta": {
           "label": "Compare AJ6 cooling system parts for your XJ40 →",
-          "href": "#"
+          "href": "/xj/xj40"
         }
       },
       {
@@ -553,7 +553,7 @@
         "recommendation": "Have the fuel injection system and sensors inspected during annual servicing - a £300–£800 inspection is cheap insurance against a £1,500+ management system replacement. On early 3.6 cars, pay particular attention to the intake system for air leaks.",
         "cta": {
           "label": "Compare XJ40 electrical parts for your car →",
-          "href": "#"
+          "href": "/xj/xj40"
         }
       },
       {
@@ -581,7 +581,7 @@
         "recommendation": "Have the sills, wheel arches and boot floor inspected annually - a £500–£2,000 repair is far cheaper than a £3,000+ restoration that follows if rust is ignored. This is the single most important non-engine maintenance item on any XJ40.",
         "cta": {
           "label": "Compare XJ40 bodywork repair quotes →",
-          "href": "#"
+          "href": "/quote"
         }
       }
     ]
@@ -772,7 +772,7 @@
     "finalCta": "Find the best Jaguar XJ XJ40 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and keep your classic on the road.",
     "ctaButton": {
       "label": "Compare Jaguar XJ XJ40 Engine Prices on EnginesMarket →",
-      "href": "#",
+      "href": "/quote",
       "note": "[PLACEHOLDER - confirm EnginesMarket URL structure]"
     }
   }

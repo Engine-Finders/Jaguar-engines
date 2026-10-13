@@ -60,13 +60,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ200D / 204DTD (Ingenium Diesel)",
-              "url": "https://jaguarengines.uk/engines/aj200d/"
+              "url": "https://jaguarengines.uk/engine/ingenium-2-0-diesel"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "AJ200P / 204PT (Ingenium Petrol)",
-              "url": "https://jaguarengines.uk/engines/aj200p/"
+              "url": "https://jaguarengines.uk/engine/ingenium-20-petrol"
             }
           ]
         },
@@ -217,7 +217,7 @@
     ],
     "primaryCta": {
       "label": "Explore XE Engines →",
-      "href": "#"
+      "href": "/xe"
     }
   },
   "ownershipVerdict": {
@@ -330,7 +330,7 @@
         "verdict": "Safe buy; maintain 6k oil intervals",
         "cta": {
           "label": "",
-          "href": "#"
+          "href": "/xe"
         }
       }
     ],
@@ -341,7 +341,7 @@
     },
     "comparisonLink": {
       "label": "",
-      "href": "#"
+      "href": "/xe"
     }
   },
   "engineDatabase": {
@@ -425,7 +425,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/engine/ingenium-2-0-diesel"
         }
       },
       {
@@ -439,7 +439,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/engine/ingenium-2-0-diesel"
         }
       },
       {
@@ -453,7 +453,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/engine/ingenium-2-0-diesel"
         }
       },
       {
@@ -467,7 +467,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/failures"
         }
       },
       {
@@ -481,7 +481,7 @@
         },
         "link": {
           "label": "-",
-          "href": "#"
+          "href": "/xe"
         }
       },
       {
@@ -495,7 +495,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/failures/infotainment-software-glitches"
         }
       }
     ],
@@ -672,11 +672,11 @@
     "paths": [
       {
         "label": "Path 1 - Know your engine? Launch the Jaguar calculator with XE pre-selected",
-        "href": "/fault-diagnostic-calculator"
+        "href": "/tools/diagnostic-wizard"
       },
       {
         "label": "Path 2 - Not sure which engine you have? We'll identify it first",
-        "href": "/fault-diagnostic-calculator"
+        "href": "/tools/diagnostic-wizard"
       }
     ]
   },
@@ -757,19 +757,19 @@
         "icon": "🔍",
         "title": "Explore XE Generations",
         "text": "",
-        "href": "#"
+        "href": "/xe"
       },
       {
         "icon": "🩺",
         "title": "Diagnose My XE",
         "text": "",
-        "href": "#"
+        "href": "/tools/diagnostic-wizard"
       },
       {
         "icon": "🤝",
         "title": "Compare UK Specialists",
         "text": "",
-        "href": "#"
+        "href": "/quote"
       }
     ],
     "footerNote": ""

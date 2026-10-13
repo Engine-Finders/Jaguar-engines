@@ -11,7 +11,7 @@ import { engineSectionBg } from "./engineSection";
 const ENGINE_IMAGE = "/e90/engine.webp";
 
 // Generic studio car for models we have no photo of (e.g. XJS, Daimler).
-const FALLBACK_CAR_IMAGE = "/home-image/right.webp";
+const FALLBACK_CAR_IMAGE = "/home-image/right-cutout.webp";
 
 function cleanText(text = "") {
   return String(text)
@@ -170,7 +170,7 @@ function DesktopModelCard({ item, isDark }) {
           ) : null}
         </div>
         <div className="relative h-11 w-[84px] shrink-0 overflow-hidden rounded-md">
-          <Image src={carImageFor(item.model, item.generations[item.generations.length - 1])} alt="" fill sizes="84px" className="object-cover object-center" />
+          <Image src={carImageFor(item.model, item.generations[item.generations.length - 1])} alt="" fill sizes="84px" className="object-contain object-center" />
         </div>
       </div>
 
@@ -206,7 +206,7 @@ function MobileModelRow({ row, isDark }) {
             </p>
           ) : null}
           <div className="relative mt-1.5 h-10 w-full overflow-hidden rounded">
-            <Image src={carImageFor(row.model, row.generation, row.years)} alt="" fill sizes="72px" className="object-cover object-center" />
+            <Image src={carImageFor(row.model, row.generation, row.years)} alt="" fill sizes="72px" className="object-contain object-center" />
           </div>
         </div>
 

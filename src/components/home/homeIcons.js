@@ -116,11 +116,10 @@ const SILVER_FILES = {
   "Top choice-01.png": "Top choice.png",
 };
 
-// The icon artwork is trimmed edge-to-edge, but every icon box on the site was sized for
-// the previous artwork, whose glyph filled ~45% of its canvas. Drawing the glyph at half
-// the box restores those proportions (layout unchanged); the 12px floor keeps the
-// smallest boxes legible.
-const GLYPH_SCALE = "h-1/2 w-1/2 min-h-3 min-w-3";
+// The icon artwork is trimmed edge-to-edge, so the glyph is drawn at 65% of its box: big
+// enough to read at a glance while keeping a little breathing room inside circles and
+// badges. The 16px floor keeps the smallest boxes legible.
+const GLYPH_SCALE = "h-[65%] w-[65%] min-h-4 min-w-4";
 
 export default function HomeIcon({ name, isDark, className = "h-5 w-5" }) {
   const file = FILES[name];

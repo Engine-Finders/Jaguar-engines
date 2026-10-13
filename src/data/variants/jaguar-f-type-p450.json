@@ -53,7 +53,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "F-Type X152 P450 (AJ133 5.0 SC, 2019–2024)",
-              "url": "https://jaguarengines.uk/f-type/p450/#aj133"
+              "url": "https://jaguarengines.uk/f-type/p450"
             }
           ]
         },
@@ -65,7 +65,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ133 5.0L Supercharged V8 (450PS)",
-              "url": "https://jaguarengines.uk/engines/aj133-p450/"
+              "url": "https://jaguarengines.uk/engine/aj133"
             }
           ]
         },
@@ -193,7 +193,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "See Jaguar F-Type P450 Engine Options →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -264,7 +264,7 @@
     "labourEstimate": "Fitting an F-Type P450 engine typically takes 14–18 hours at £80–£120/hr (independent Jaguar specialist) or £140–£190/hr (London/SE dealer). The supercharger and cooling system add complexity.",
     "cta": {
       "label": "→ Compare Jaguar F-Type P450 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -284,7 +284,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/engine/aj133"
         }
       },
       {
@@ -302,7 +302,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures"
         }
       },
       {
@@ -320,7 +320,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures/supercharger-coupler-rattle"
         }
       }
     ]
@@ -330,7 +330,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, covering the AJ133 P450 V8, with a 12-month warranty as standard.",
     "button": {
       "label": "See Jaguar F-Type P450 Engine Options →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -394,7 +394,7 @@
     "closingVerdict": "The F-Type P450 is the purist's F-Type - a 450PS supercharged V8 in a stunning body. The AJ133 engine is fundamentally robust and characterful, but timing chain guides and cooling system components demand vigilance. A post-2015 car with documented timing chain history and metal coolant pipes is the gold standard. Buy with your eyes open, maintain religiously, and the P450 will reward you.",
     "cta": {
       "label": "→ Compare Jaguar F-Type P450 engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -487,7 +487,7 @@
     },
     "cta": {
       "label": "→ Compare Jaguar F-Type P450 engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -572,7 +572,7 @@
     "finalCta": "Find the best Jaguar F-Type P450 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get your sports car back on the road with confidence.",
     "ctaButton": {
       "label": "Explore Jaguar F-Type P450 Engine Quotes →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

@@ -65,7 +65,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Duratorq ZSD-422",
-              "url": "https://jaguarengines.uk/engines/duratorq/"
+              "url": "https://jaguarengines.uk/engine"
             }
           ]
         },
@@ -193,7 +193,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "Get My Free X‑Type 2.2d Engine Quotes Now →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK‑Wide Network"
@@ -264,7 +264,7 @@
     "labourEstimate": "Fitting an X‑Type 2.2d engine typically takes 8–12 hours at £75–£110/hr (independent) or £130–£180/hr (London/SE dealer). The transverse engine layout makes the engine bay tight but accessible. [PLACEHOLDER - confirm vs cost sheet]",
     "cta": {
       "label": "→ Compare X‑Type 2.2d engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -284,7 +284,7 @@
         "recommendation": "Fuel injectors can become clogged or fail, leading to poor engine performance, increased fuel consumption, and rough idling. The modern fuel system with piezo injectors does not tolerate low‑quality fuel. If you experience rough idling, misfires or white smoke, have the injectors inspected immediately. Replacing a faulty injector before it fails completely can prevent damage to other engine components. Regular fuel filter changes and using premium diesel are the best prevention.",
         "failureLink": {
           "label": "",
-          "href": "/failures/fuel-injector-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -320,7 +320,7 @@
         "recommendation": "DPF clogging is a common issue on the X‑Type 2.2d, particularly on cars driven mostly in the city. A DPF regeneration cycle requires sustained motorway running; if you stop the engine before the regeneration is complete, the fans will stay on and the regen will try again next time. If you see a DPF warning light, take the car for a sustained motorway run at 2,000–2,500 rpm. If the light persists, have the DPF inspected. Regular motorway driving and using premium diesel can help keep the DPF healthy.",
         "failureLink": {
           "label": "",
-          "href": "/failures/dpf-failure/"
+          "href": "/failures/dpf-blockage"
         }
       },
       {
@@ -338,7 +338,7 @@
         "recommendation": "The EGR valve can become stuck with carbon buildup, leading to rough idle and stalling. If you experience rough running, have the EGR system inspected and cleaned. Regular use of premium diesel and occasional motorway runs can help reduce carbon buildup.",
         "failureLink": {
           "label": "",
-          "href": "/failures/egr-valve-cooler-failure/"
+          "href": "/failures/egr-valve-cooler"
         }
       },
       {
@@ -356,7 +356,7 @@
         "recommendation": "The ZF 6‑speed automatic transmission in the X‑Type 2.2d can develop issues, including jerky gearchanges and gearbox fault codes under hard acceleration. Take any used X‑Type on a lengthy test drive and feel for any jerky gearchanges. Regular transmission fluid changes are recommended.",
         "failureLink": {
           "label": "",
-          "href": "/failures/transmission-issues/"
+          "href": "/failures/zf-8-speed-gearbox"
         }
       }
     ]
@@ -366,7 +366,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, every X‑Type engine variant covered, with a 12‑month warranty as standard.",
     "button": {
       "label": "Get My Free X‑Type 2.2d Engine Quotes Now →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -440,7 +440,7 @@
     "closingVerdict": "The Jaguar X‑Type 2.2d is the range‑topping diesel for Jaguar's compact saloon - a handsome car with a Ford‑sourced Duratorq engine that is a genuine workhorse. The 2.2‑litre turbodiesel produces 155 PS and 360 Nm of torque, offering strong performance and excellent fuel economy (up to 50 mpg). The Duratorq 2.2 TDCi is chain‑driven, proven in commercial use, and capable of 200,000+ miles with proper maintenance. However, it has common issues: injector failure, turbocharger actuator problems, DPF clogging (especially on urban cars), EGR valve sticking, and ZF 6‑speed transmission issues. The X‑Type itself is known for sill corrosion and electrical niggles. As one owner put it: \"the last of the reliable engines, built by Ford refined by Jaguar\". Buy on service history, check for corrosion, and maintain on a regular schedule - this is a stylish classic that rewards careful ownership.",
     "cta": {
       "label": "→ Compare X‑Type 2.2d engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -505,7 +505,7 @@
     },
     "cta": {
       "label": "→ Compare X‑Type 2.2d engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -590,7 +590,7 @@
     "finalCta": "Find the best Jaguar X‑Type 2.2d engine replacement UK owners rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence - from £1,500 for a used engine to £7,000 for a full rebuild, we have options for every budget and every X‑Type.",
     "ctaButton": {
       "label": "Compare Jaguar X‑Type 2.2d Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

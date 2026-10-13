@@ -71,7 +71,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "PT204 (AJ200P)",
-              "url": "https://jaguarengines.uk/engines/pt204/"
+              "url": "https://jaguarengines.uk/engine/ingenium-20-petrol"
             }
           ]
         },
@@ -199,7 +199,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "Get My Free F-Pace Engine Quotes Now →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -270,7 +270,7 @@
     "labourEstimate": "Fitting an F-Pace 30t/P300 engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). The transverse engine layout adds complexity.",
     "cta": {
       "label": "→ Compare F-Pace 30t / P300 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -290,7 +290,7 @@
         "recommendation": "The 2.0-litre Ingenium petrol engine's timing chain is a known weakness. The 2-litre weak point is the timing chain guides which do fail leading to catastrophic engine failure between 40 and 80 thousand miles. Jaguar addressed timing chain and fuel pump flaws in all Ingenium engines from 2019 onwards. A Variable Camshaft Timing (VCT) unit internal seal below specification can also cause rattling and engine warning lights. At the first sign of cold-start rattling, get the chain inspected immediately. A £1,500–£3,500 preventative repair is dramatically cheaper than a £5,500–£8,500 engine replacement.",
         "failureLink": {
           "label": "Read the full timing chain failure guide",
-          "href": "/failures/ingenium-timing-chain/"
+          "href": "/failures/ingenium-diesel-timing-chain"
         }
       },
       {
@@ -308,7 +308,7 @@
         "recommendation": "A faulty PCV valve can cause excessive pressure in the crankcase, forcing oil into the combustion chamber and causing it to be burned. This leads to increased oil consumption and potential engine damage if not addressed. If you notice blue smoke from the exhaust or are regularly topping up oil, have the PCV system inspected. Catching this early prevents more serious engine damage.",
         "failureLink": {
           "label": "Read the full PCV valve failure guide → /failures/pcv-valve-failure/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/failures"
         }
       },
       {
@@ -326,7 +326,7 @@
         "recommendation": "F-Pace 30t turbos often whine due to bearing wear and boost pressure leaks. Turbo whining typically indicates worn turbocharger bearings or boost leaks. If you hear a high-pitched whine or siren-like noise, inspect the turbocharger's shaft play and listen for unusual sounds. A £1,200–£2,500 repair is far cheaper than the engine damage that can follow if ignored. Regular oil changes with the correct specification are essential for turbo longevity.",
         "failureLink": {
           "label": "Read the full turbo failure guide",
-          "href": "/failures/turbo-failure/"
+          "href": "/failures/turbocharger-failure"
         }
       }
     ]
@@ -336,7 +336,7 @@
     "supportingLine": "15 vetted Jaguar specialists, every F-Pace 30t/P300 engine covered, with a 12-month warranty as standard.",
     "button": {
       "label": "Get My Free F-Pace Engine Quotes Now →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -400,7 +400,7 @@
     "closingVerdict": "The F-Pace 30t/P300's PT204 Ingenium petrol engine offers impressive performance - 300 PS and 400 Nm in a stylish luxury SUV. However, early engines (pre-2019) have well-documented timing chain guide failures, with the 2-litre weak point being the timing chain guides which do fail leading to catastrophic engine failure between 40 and 80 thousand miles. Post-2019 engines are considered more reliable, with Jaguar addressing timing chain and fuel pump flaws. Buy a post-2019 model with full service history, or budget for timing chain work on earlier examples. Without history? Proceed with caution - the repair bills can be substantial.",
     "cta": {
       "label": "→ Compare F-Pace 30t / P300 engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -477,7 +477,7 @@
     },
     "cta": {
       "label": "→ Compare F-Pace 30t / P300 engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -562,7 +562,7 @@
     "finalCta": "Find the best Jaguar F-Pace 30t / P300 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar F-Pace 30t / P300 Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }
