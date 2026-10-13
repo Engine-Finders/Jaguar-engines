@@ -72,13 +72,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ34",
-              "url": "https://jaguarengines.uk/engines/aj34/"
+              "url": "https://jaguarengines.uk/engine/aj-v8-4-0-4-2"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "AJ34S",
-              "url": "https://jaguarengines.uk/engines/aj34s/"
+              "url": "https://jaguarengines.uk/engine/aj-v8-4-0-4-2"
             }
           ]
         },
@@ -206,7 +206,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "Get My Free 4.2 V8 Engine Quotes Now →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -285,7 +285,7 @@
     "labourEstimate": "Fitting an XF 4.2 V8 engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). Reconditioned engines typically range from £2,000 to £4,000.",
     "cta": {
       "label": "",
-      "href": "#"
+      "href": "/economics"
     }
   },
   "commonProblems": {
@@ -296,7 +296,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, every 4.2 V8 variant covered, with a 12-month warranty as standard.",
     "button": {
       "label": "Get My Free 4.2 V8 Engine Quotes Now →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -367,7 +367,7 @@
     "closingVerdict": "The XF 4.2 V8 is a smooth, powerful and characterful engine - a genuine Jaguar V8 that sounds magnificent and delivers effortless performance. The AJ34 is widely considered one of Jaguar's most reliable modern engines, with the timing chain issues of earlier V8s resolved. However, cooling system maintenance is critical - the plastic thermostat housing and valley coolant pipes are known weak points. Buy on service history and proof of preventative cooling system work. If you're replacing, a reconditioned unit with a 12-month warranty is the sweet spot.",
     "cta": {
       "label": "",
-      "href": "#"
+      "href": "/xf"
     }
   },
   "buyingChecklist": {
@@ -439,7 +439,7 @@
     },
     "cta": {
       "label": "",
-      "href": "#"
+      "href": "/xf"
     }
   },
   "marketIntelligence": {
@@ -511,7 +511,7 @@
     "finalCta": "Find the best Jaguar XF 4.2 V8 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and keep this classic V8 on the road.",
     "ctaButton": {
       "label": "Compare Jaguar XF 4.2 V8 Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

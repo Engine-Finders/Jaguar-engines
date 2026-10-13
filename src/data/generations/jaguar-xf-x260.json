@@ -39,31 +39,31 @@
               "@type": "ListItem",
               "position": 1,
               "name": "2.0 Ingenium Diesel (204DTD/204DTH) Engine",
-              "url": "https://jaguarengines.uk/engines/204dtd/"
+              "url": "https://jaguarengines.uk/engine/ingenium-2-0-diesel"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "2.0 Ingenium Diesel Twin-Turbo (204DTA) Engine",
-              "url": "https://jaguarengines.uk/engines/204dta/"
+              "url": "https://jaguarengines.uk/engine/ingenium-2-0-diesel"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "2.0 Ingenium Petrol (204PT) Engine",
-              "url": "https://jaguarengines.uk/engines/204pt/"
+              "url": "https://jaguarengines.uk/engine/ingenium-20-petrol"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "3.0 V6 Diesel (306DT) Engine",
-              "url": "https://jaguarengines.uk/engines/306dt/"
+              "url": "https://jaguarengines.uk/engine/306dt"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "3.0 V6 Supercharged (AJ126) Engine",
-              "url": "https://jaguarengines.uk/engines/aj126/"
+              "url": "https://jaguarengines.uk/engine/306dt-306ps"
             }
           ]
         },
@@ -75,31 +75,31 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Jaguar XF 2.0D",
-              "url": "https://jaguarengines.uk/xf/20d/"
+              "url": "https://jaguarengines.uk/xf"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Jaguar XF D180",
-              "url": "https://jaguarengines.uk/xf/d180/"
+              "url": "https://jaguarengines.uk/xf"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Jaguar XF 2.0D 240",
-              "url": "https://jaguarengines.uk/xf/20d-240/"
+              "url": "https://jaguarengines.uk/xf"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "Jaguar XF P200",
-              "url": "https://jaguarengines.uk/xf/p200/"
+              "url": "https://jaguarengines.uk/xf"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "Jaguar XF P250",
-              "url": "https://jaguarengines.uk/xf/p250/"
+              "url": "https://jaguarengines.uk/xf"
             },
             {
               "@type": "ListItem",
@@ -111,7 +111,7 @@
               "@type": "ListItem",
               "position": 7,
               "name": "Jaguar XF 3.0 V6 S/C",
-              "url": "https://jaguarengines.uk/xf/30-v6-sc/"
+              "url": "https://jaguarengines.uk/xf"
             }
           ]
         },
@@ -284,7 +284,7 @@
     ],
     "primaryCta": {
       "label": "Explore X260 Engines →",
-      "href": "#"
+      "href": "/xf/x260"
     },
     "dataIntegrityNote": ""
   },
@@ -559,7 +559,7 @@
         "recommendation": "At the first sign of cold-start rattle, have the timing chain inspected immediately. A £1,200–£2,200 preventative repair is dramatically cheaper than the £3,200+ replacement that follows if the chain snaps and destroys the engine. One owner reported a chain replacement at 35,000 miles costing £2,400 - this is a known issue that doesn't respect mileage.",
         "cta": {
           "label": "Compare 2.0 Ingenium diesel engine prices for your XF X260 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -587,7 +587,7 @@
         "recommendation": "Check the oil level regularly - if it rises between services, you have oil dilution. Change the oil every 8,000–10,000 miles (not the manufacturer's extended interval) and ensure the DPF is regenerating properly with regular motorway runs.",
         "cta": {
           "label": "Compare DPF and oil service prices for your XF X260 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -615,7 +615,7 @@
         "recommendation": "If you own a 3.0-litre diesel X260, change the oil every 8,000 miles maximum. Listen for any unusual knocking or rumbling - if you hear it, stop driving immediately and have the engine inspected. A £600–£1,000 preventative inspection is far cheaper than the £4,500+ replacement that follows catastrophic failure.",
         "cta": {
           "label": "Compare 3.0 V6 diesel engine prices for your XF X260 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -643,7 +643,7 @@
         "recommendation": "If your X260 is displaying random warning lights or behaving strangely, have the battery tested immediately. A £200–£350 battery replacement is dramatically cheaper than the £800+ diagnostic and repair work that follows if you ignore the warnings.",
         "cta": {
           "label": "Compare X260 electrical diagnosis and battery replacement quotes →",
-          "href": "#"
+          "href": "/tools/diagnostic-wizard"
         }
       }
     ]
@@ -835,7 +835,7 @@
     "finalCta": "Find the best Jaguar XF X260 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar XF X260 Engine Prices on EnginesMarket →",
-      "href": "#",
+      "href": "/quote",
       "note": "[PLACEHOLDER - confirm EnginesMarket URL structure]"
     }
   }

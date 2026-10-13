@@ -54,25 +54,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Series 1 XJ12 (5.3 V12, 1972–1973)",
-              "url": "https://jaguarengines.uk/xj/series-1/"
+              "url": "https://jaguarengines.uk/xj/xj-series-1"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Series 2 XJ12 (5.3 V12, 1973–1979)",
-              "url": "https://jaguarengines.uk/xj/series-2/"
+              "url": "https://jaguarengines.uk/xj/xj-series-2"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Series 3 XJ12 HE (5.3 V12 HE, 1979–1992)",
-              "url": "https://jaguarengines.uk/xj/series-3/"
+              "url": "https://jaguarengines.uk/xj/xj-series-3"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "XJ81 XJ12 / Daimler Double Six (5.3 V12 HE, 1992–1994)",
-              "url": "https://jaguarengines.uk/xj/xj81/"
+              "url": "https://jaguarengines.uk/xj"
             }
           ]
         },
@@ -84,13 +84,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Jaguar V12 5.3 (Carburetted / Early Injection)",
-              "url": "https://jaguarengines.uk/engines/jaguar-v12-53/"
+              "url": "https://jaguarengines.uk/engine/v12-he"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Jaguar V12 5.3 HE (May Heads)",
-              "url": "https://jaguarengines.uk/engines/jaguar-v12-53-he/"
+              "url": "https://jaguarengines.uk/engine/v12-he"
             }
           ]
         },
@@ -218,7 +218,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "See Jaguar XJ 5.3 V12 Engine Options →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -313,7 +313,7 @@
     "labourEstimate": "Fitting an XJ V12 engine typically takes 16–22 hours at £80–£120/hr (independent) or £140–£200/hr (London/SE dealer). The V12's complexity and tight engine bay make this a specialist job.",
     "cta": {
       "label": "→ Compare XJ 5.3 V12 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -333,7 +333,7 @@
         "recommendation": "The General Motors ignition module is the most frequent failure point in the V12 engine. When this module fails, the symptoms are exactly as described - intermittent stall while driving and crank/no start. It is very easily and inexpensively replaced. If you experience stalling or no-start conditions, have the ignition amplifier inspected.",
         "failureLink": {
           "label": "Read the full ignition failure guide",
-          "href": "/failures/ignition-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -351,7 +351,7 @@
         "recommendation": "The injector wiring harness on original V12s is often a source of problems. If your fuel injection problem is in just one bank, it is likely due to a failed fuel injector wiring harness or a failed Lucas Power Resistor (DAC2044). Original harnesses are well past due for replacement on these cars.",
         "failureLink": {
           "label": "Read the full fuel injection failure guide",
-          "href": "/failures/fuel-injection-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -369,7 +369,7 @@
         "recommendation": "Timing chain tensioner failure is a known issue on the V12. If the tensioner fails, the chain can become loose - one owner reported being able to wiggle the chain about an inch with a screwdriver. Some sources suggest the V12 is a non-interference engine, but timing failure can still cause significant damage. Cooling system blockages are also common - overheating is often caused by radiator blockage. A clogged rad can be a frequent problem. At the first sign of rattle or overheating, book an inspection immediately.",
         "failureLink": {
           "label": "Read the full timing chain failure guide",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       }
     ]
@@ -379,7 +379,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, every XJ V12 era covered - from Series 1 to XJ81 - with a 12-month warranty as standard.",
     "button": {
       "label": "See Jaguar XJ 5.3 V12 Engine Options →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -445,7 +445,7 @@
     "closingVerdict": "The Jaguar 5.3 V12 is one of the most significant engines in automotive history - a smooth, refined, and characterful powerplant that defined Jaguar's flagship for over two decades. The engine itself is strong and durable, but the supporting systems - ignition, fuel injection, and cooling - are the main challenge. The HE (High Efficiency) engine introduced in 1981 is significantly more reliable. Buy on documented history, not on faith. A well-maintained XJ V12 is a £10,000–£30,000 future classic; a neglected one is a £10,000 engine replacement waiting to happen.",
     "cta": {
       "label": "→ Compare XJ 5.3 V12 engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -525,7 +525,7 @@
     },
     "cta": {
       "label": "→ Compare XJ 5.3 V12 engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -610,7 +610,7 @@
     "finalCta": "Find the best Jaguar XJ 5.3 V12 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get your XJ back on the road with confidence.",
     "ctaButton": {
       "label": "Explore Jaguar XJ 5.3 V12 Engine Quotes →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

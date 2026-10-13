@@ -39,37 +39,37 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ-V6 3.0L Engine",
-              "url": "https://jaguarengines.uk/engines/aj-v6/"
+              "url": "https://jaguarengines.uk/engine/aj-v6-petrol"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "AJ25 2.5L V6 Engine",
-              "url": "https://jaguarengines.uk/engines/aj25/"
+              "url": "https://jaguarengines.uk/engine/aj-v6-petrol"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "AJ-V8 4.0L Engine",
-              "url": "https://jaguarengines.uk/engines/aj-v8-40/"
+              "url": "https://jaguarengines.uk/engine/aj-v8-4-0-4-2"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "AJ8FT 4.2L V8 Engine",
-              "url": "https://jaguarengines.uk/engines/aj8ft/"
+              "url": "https://jaguarengines.uk/engine"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "AJ8FT Supercharged 4.2L V8 Engine",
-              "url": "https://jaguarengines.uk/engines/aj8ft-sc/"
+              "url": "https://jaguarengines.uk/engine"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "AJD 2.7L Diesel Engine",
-              "url": "https://jaguarengines.uk/engines/ajd/"
+              "url": "https://jaguarengines.uk/engine"
             }
           ]
         },
@@ -81,7 +81,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "2.5 V6",
-              "url": "https://jaguarengines.uk/s-type/25-v6/"
+              "url": "https://jaguarengines.uk/s-type/2-5-v6"
             },
             {
               "@type": "ListItem",
@@ -105,13 +105,13 @@
               "@type": "ListItem",
               "position": 5,
               "name": "S-Type R",
-              "url": "https://jaguarengines.uk/s-type/s-type-r/"
+              "url": "https://jaguarengines.uk/s-type"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "2.7 D",
-              "url": "https://jaguarengines.uk/s-type/27-d/"
+              "url": "https://jaguarengines.uk/s-type/2-7d"
             }
           ]
         },
@@ -284,7 +284,7 @@
     ],
     "primaryCta": {
       "label": "Explore X200 Engines →",
-      "href": "#"
+      "href": "/s-type/x200"
     },
     "dataIntegrityNote": ""
   },
@@ -516,7 +516,7 @@
         "recommendation": "On any high-mileage V6 S-Type, inspect the thermostat housing for cracks and check for coolant loss. A £300–£700 preventative repair is cheaper than the £2,500+ replacement that follows an overheating failure.",
         "cta": {
           "label": "Compare 3.0 V6 engine prices for your S-Type →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -544,7 +544,7 @@
         "recommendation": "If your 4.0 V8 S-Type has no documented chain history, treat it as a priority inspection - £800–£1,600 now is far cheaper than the £3,500+ replacement that follows a failure. Cold-start rattle is the warning sign to watch for.",
         "cta": {
           "label": "Compare 4.0 V8 engine prices for your S-Type →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -572,7 +572,7 @@
         "recommendation": "The 2.7 diesel is the most complex engine in the X200 range - regular servicing and early intervention are essential. At the first sign of rough running or smoke, get it inspected by a specialist who knows this PSA-Ford unit.",
         "cta": {
           "label": "Compare 2.7 D engine prices for your S-Type →",
-          "href": "#"
+          "href": "/quote"
         }
       }
     ]
@@ -784,7 +784,7 @@
     "finalCta": "Find the best Jaguar S-Type X200 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar S-Type X200 Engine Prices on EnginesMarket →",
-      "href": "#",
+      "href": "/quote",
       "note": "[PLACEHOLDER - confirm EnginesMarket URL structure]"
     }
   }

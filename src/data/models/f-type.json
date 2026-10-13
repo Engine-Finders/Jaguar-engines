@@ -47,13 +47,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "X152 (2013–2019) - Supercharged V6 & V8 Era",
-              "url": "https://jaguarengines.uk/f-type/x152/pre-2019/"
+              "url": "https://jaguarengines.uk/f-type/x152"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "X152 (2019–2024) - Revised V8 + Straight-Six Era",
-              "url": "https://jaguarengines.uk/f-type/x152/post-2019/"
+              "url": "https://jaguarengines.uk/f-type/x152"
             }
           ]
         },
@@ -66,19 +66,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ126 3.0 V6 SC - 340–380 bhp (2013–2019)",
-              "url": "https://jaguarengines.uk/engines/aj126/"
+              "url": "https://jaguarengines.uk/engine/306dt-306ps"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "AJ133 5.0 V8 SC - 450–575 bhp (2013–2024)",
-              "url": "https://jaguarengines.uk/engines/aj133/"
+              "url": "https://jaguarengines.uk/engine/aj133"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "AJ20D6 3.0 I6 Turbo - 300–400 bhp (2019–2024)",
-              "url": "https://jaguarengines.uk/engines/aj20d6/"
+              "url": "https://jaguarengines.uk/engine/aj20d6"
             }
           ]
         },
@@ -229,7 +229,7 @@
     ],
     "primaryCta": {
       "label": "Explore F-Type Engines →",
-      "href": "#"
+      "href": "/f-type"
     }
   },
   "ownershipVerdict": {
@@ -342,7 +342,7 @@
         "verdict": "The car Jaguar should have built from the start. The AJ20D6 straight-six ditches the V6's cooling-system weak points for a clean reliability record, and the revised V8 carries over the 2013+ tensioner improvements. Buy a 2019+ car with the straight-six if reliability is your priority - you lose none of the character.",
         "cta": {
           "label": "Explore X152 (2019–2024) →",
-          "href": "#"
+          "href": "/engine/xk-straight-six"
         }
       },
       {
@@ -353,7 +353,7 @@
         "verdict": "",
         "cta": {
           "label": "",
-          "href": "#"
+          "href": "/compare"
         }
       }
     ],
@@ -364,7 +364,7 @@
     },
     "comparisonLink": {
       "label": "Read the full comparison: F-Type V6 vs Straight-Six →",
-      "href": "#"
+      "href": "/compare"
     }
   },
   "engineDatabase": {
@@ -448,7 +448,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/engine/306dt-306ps"
         }
       },
       {
@@ -462,7 +462,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/engine/aj133"
         }
       },
       {
@@ -476,7 +476,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/failures/supercharger-coupler-rattle"
         }
       },
       {
@@ -490,7 +490,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/engine/306dt-306ps"
         }
       },
       {
@@ -504,7 +504,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/engine/aj133"
         }
       },
       {
@@ -518,7 +518,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/failures/zf-8-speed-gearbox"
         }
       }
     ],
@@ -732,11 +732,11 @@
     "paths": [
       {
         "label": "Path 1 - Know your engine? Launch the Jaguar calculator with F-Type pre-selected → Start Diagnosis →",
-        "href": "#"
+        "href": "/tools/diagnostic-wizard"
       },
       {
         "label": "Path 2 - Not sure which engine you have? We'll identify it first - check your V5C or the engine block stamping, or use our identification tool → Identify My Engine →",
-        "href": "#"
+        "href": "/tools/registration-lookup"
       }
     ]
   },
@@ -817,19 +817,19 @@
         "icon": "🔍",
         "title": "Explore F-Type Generations",
         "text": "Compare the V6, V8 and straight-six powertrain eras side-by-side → Explore F-Type Generations →",
-        "href": "#"
+        "href": "/engine/xk-straight-six"
       },
       {
         "icon": "🩺",
         "title": "Diagnose My F-Type",
         "text": "Not sure if your engine needs repair or replacement? Run our diagnostic tool → Start Diagnosis →",
-        "href": "#"
+        "href": "/tools/diagnostic-wizard"
       },
       {
         "icon": "🤝",
         "title": "Compare UK Specialists",
         "text": "Get quotes from 15+ vetted Jaguar specialists who work on F-Types daily → Compare Specialists →",
-        "href": "#"
+        "href": "/quote"
       }
     ],
     "footerNote": ""

@@ -5,7 +5,7 @@ import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
 
-const ICON_LG = "h-9 w-9";
+const ICON_LG = "h-14 w-14 md:h-16 md:w-16";
 
 function cleanText(value = "") {
   return String(value || "")
@@ -52,7 +52,7 @@ function TrustCard({ item, isDark }) {
       {/* Icon left — heading + description right */}
       <div className="mt-1 flex items-start gap-3 md:gap-3.5">
         <div
-          className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${
+          className={`flex h-16 w-16 shrink-0 items-center justify-center rounded-full md:h-[4.5rem] md:w-[4.5rem] ${
             isDark ? "bg-white/10" : "bg-[#ececeb]"
           }`}
         >

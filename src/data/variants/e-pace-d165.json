@@ -65,7 +65,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "204DTD / AJ200D",
-              "url": "https://jaguarengines.uk/engines/204dtd/"
+              "url": "https://jaguarengines.uk/engine/ingenium-2-0-diesel"
             }
           ]
         },
@@ -193,7 +193,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "Get My Free E‑Pace D165 Engine Quotes Now →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK‑Wide Network"
@@ -264,7 +264,7 @@
     "labourEstimate": "Fitting an E‑Pace D165 engine typically takes 10–14 hours at £75–£110/hr (independent) or £130–£180/hr (London/SE dealer). The Ingenium timing chain replacement is an exceptionally complex job due to the rear‑mounted chain design. A timing chain replacement alone costs £1,800–£4,500+. [PLACEHOLDER - confirm vs cost sheet]",
     "cta": {
       "label": "→ Compare E‑Pace D165 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -284,7 +284,7 @@
         "recommendation": "The Ingenium diesel timing chain is the single biggest reliability concern on the D165. Unlike a front‑mounted chain, the Ingenium's primary timing chain sits at the rear of the engine, against the firewall - making access disproportionately labour‑intensive. The chain can stretch, and the tensioners can fail. Ignoring a cold‑start rattle risks catastrophic valve‑to‑piston contact, turning a repairable issue into a write‑off. Regular oil changes every 5,000–8,000 miles using the correct JLR‑spec Castrol oil are the best prevention. At the first sign of rattle, book an inspection immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/ingenium-timing-chain/"
+          "href": "/failures/ingenium-diesel-timing-chain"
         }
       },
       {
@@ -302,7 +302,7 @@
         "recommendation": "DPF clogging is one of the most common issues on the Ingenium diesel, particularly on cars driven mostly in the city. Failed DPF regeneration can cause oil dilution as unburnt fuel washes past the piston rings into the sump. If you see a DPF warning light, take the car for a sustained motorway run at 2,000–2,500 rpm. If the light persists or the oil level rises, have the DPF inspected immediately. Regular motorway driving and using premium diesel can help keep the DPF healthy.",
         "failureLink": {
           "label": "",
-          "href": "/failures/dpf-failure/"
+          "href": "/failures/dpf-blockage"
         }
       },
       {
@@ -320,7 +320,7 @@
         "recommendation": "The EGR system can become clogged or fail, leading to increased emissions and potential engine performance issues. On short‑distance driven cars, the EGR system is particularly prone to clogging. AdBlue fluid leaking from hoses and filler caps is another reported issue on the E‑Pace. If you notice a loss of power or a warning light, have the EGR system inspected promptly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/egr-valve-cooler-failure/"
+          "href": "/failures/egr-valve-cooler"
         }
       },
       {
@@ -356,7 +356,7 @@
         "recommendation": "The ZF 9‑speed automatic transmission (standard on AWD D165 models) has been known to exhibit jerky gearchanges and occasional delays. Take any used E‑Pace on a lengthy test drive and feel for any jerky gearchanges. Regular transmission fluid changes (every 60,000 miles) are recommended, despite BMW's \"lifetime fill\" claim.",
         "failureLink": {
           "label": "",
-          "href": "/failures/transmission-issues/"
+          "href": "/failures/zf-8-speed-gearbox"
         }
       }
     ]
@@ -366,7 +366,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, every E‑Pace engine variant covered, with a 12‑month warranty as standard.",
     "button": {
       "label": "Get My Free E‑Pace D165 Engine Quotes Now →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -439,7 +439,7 @@
     "closingVerdict": "The Jaguar E‑Pace D165 is the entry‑level diesel for Jaguar's compact SUV - 163 bhp, 380 Nm, and a heavy but stylish body. The <a href='https://jaguarengines.uk/engine/ingenium-2-0-diesel'>Ingenium 2.0‑litre diesel</a> delivers adequate performance for daily driving but demands respect: timing chain stretch is the defining weakness, exacerbated by Jaguar's extended service intervals. The rear‑mounted chain design makes replacement exceptionally labour‑intensive. DPF clogging, oil dilution, EGR and AdBlue issues are also common. The E‑Pace itself has had a number of reported issues: panel fit and paint defects, AdBlue fluid leaking from hoses and filler caps, air breather pipes rubbing on engine components, creaking rear suspension and glitches with the infotainment system. Buy on service history, maintain on a shortened schedule (5,000–8,000 mile oil changes), and this is a good compact SUV; neglect it, and you'll face expensive repairs.",
     "cta": {
       "label": "→ Compare E‑Pace D165 engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -500,7 +500,7 @@
     },
     "cta": {
       "label": "→ Compare E‑Pace D165 engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -585,7 +585,7 @@
     "finalCta": "Find the best Jaguar E‑Pace D165 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence - from £2,500 for a used engine to £8,500 for a full rebuild, we have options for every budget and every E‑Pace.",
     "ctaButton": {
       "label": "Compare Jaguar E‑Pace D165 Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

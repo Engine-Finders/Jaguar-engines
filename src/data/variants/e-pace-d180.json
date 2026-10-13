@@ -71,7 +71,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "204DTD (AJ200D)",
-              "url": "https://jaguarengines.uk/engines/204dtd/"
+              "url": "https://jaguarengines.uk/engine/ingenium-2-0-diesel"
             }
           ]
         },
@@ -199,7 +199,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "Get My Free E-Pace D180 Engine Quotes Now →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -278,7 +278,7 @@
     "labourEstimate": "Fitting an E-Pace D180 engine typically takes 12–16 hours at £65–£95/hr (independent). The Ingenium's rear-mounted timing chain makes access labour-intensive.",
     "cta": {
       "label": "→ Compare E-Pace D180 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -298,7 +298,7 @@
         "recommendation": "The Ingenium is an interference engine - if the timing chain stretches too far or snaps, pistons strike valves, destroying the engine. The timing chain sits at the rear of the engine, against the firewall, making it an engine-out job. JLR dealers can fit an upgraded, more robust chain design. If you hear any rattle on cold start, book an inspection immediately. Many specialists recommend preventative chain replacement at 60,000–80,000 miles regardless of symptoms.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -316,7 +316,7 @@
         "recommendation": "The E-Pace D180 needs regular motorway runs for DPF regeneration. Short urban journeys are the enemy - the DPF will clog faster and oil dilution can occur. One owner reports that after multiple DPF issues, they \"ditched\" their Jaguar for a P300 hybrid. If the DPF warning appears, a forced regeneration or clean can restore function, but if ignored, the turbocharger can be damaged by excessive back pressure.",
         "failureLink": {
           "label": "",
-          "href": "/failures/dpf-failure/"
+          "href": "/failures/dpf-blockage"
         }
       },
       {
@@ -344,7 +344,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, each experienced with the 2.0 Ingenium diesel, with a 12-month warranty as standard.",
     "button": {
       "label": "Get My Free E-Pace D180 Engine Quotes Now →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -410,7 +410,7 @@
     "closingVerdict": "The E-Pace D180 is a stylish compact SUV, but the 2.0-litre Ingenium diesel has a well-earned reputation for unreliability. The What Car? reliability survey placed the E-Pace 29th out of 34 cars in the family SUV category. Timing chain failure is the most critical concern - failures have been reported as low as 37,800 miles. A £4,500 reconditioned engine on an E-Pace valued at £10,000–£15,000 is 30–45% of the car's value - worth it for a well-maintained example. On a sub-£7,000 example, think carefully. The 60% Jaguar scrap threshold applies.",
     "cta": {
       "label": "→ Compare E-Pace D180 engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -478,7 +478,7 @@
     },
     "cta": {
       "label": "→ Compare E-Pace D180 engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -563,7 +563,7 @@
     "finalCta": "Find the best Jaguar E-Pace D180 engine replacement UK drivers rely on. Compare prices from trusted specialists on JaguarEngine.uk today and get your E-Pace back on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar E-Pace D180 Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

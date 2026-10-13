@@ -78,13 +78,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ26",
-              "url": "https://jaguarengines.uk/engines/aj26/"
+              "url": "https://jaguarengines.uk/engine/aj-v8-4-0-4-2"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "AJ27S",
-              "url": "https://jaguarengines.uk/engines/aj27s/"
+              "url": "https://jaguarengines.uk/engine/aj-v8-4-0-4-2"
             }
           ]
         },
@@ -212,7 +212,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "Get My Free XK Engine Quotes Now →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -291,7 +291,7 @@
     "labourEstimate": "Fitting an XK 4.0 engine typically takes 14–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). Timing chain tensioner replacement is a critical preventative job costing £250–£500 in parts and labour.",
     "cta": {
       "label": "→ Compare XK 4.0 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -311,7 +311,7 @@
         "recommendation": "The plastic-bodied upper timing chain tensioners are the \"major achilles heel\" of the 4.0 AJ-V8. Pre-2003 engines have four timing chains and four plastic tensioners that can break up over time. If a tensioner fails, the chain can snap and destroy the engine. The top \"secondary\" tensioners (which tension the short chain between the two camshafts) are the most at risk. A preventative replacement of the upper tensioners costs under £250 as a DIY using an upgraded metal tensioner kit. At the first sign of rattling, get the tensioners inspected immediately - this is the single most important maintenance item on any 4.0 XK.",
         "failureLink": {
           "label": "Read the full timing chain tensioner guide → /failures/aj-v8-timing-chain-tensioners/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/engine/aj-v8-4-0-4-2"
         }
       },
       {
@@ -329,7 +329,7 @@
         "recommendation": "Early AJ26 engines (pre-1999) used Nikasil-coated cylinder bores. In the late 1990s, low-quality fuel with high sulphur content caused the Nikasil lining to erode, leading to loss of compression and engine failure. By the end of 1999, Jaguar replaced Nikasil with more reliable cast-iron sleeves. If you're considering a pre-1999 XK, have a compression test performed. Most Nikasil engines that are still running today have survived the issue, but it's worth confirming with a specialist.",
         "failureLink": {
           "label": "Read the full Nikasil failure guide → /failures/nikasil-cylinder-liner-failure/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/failures/xk-nikasil-bore-wear"
         }
       },
       {
@@ -347,7 +347,7 @@
         "recommendation": "The 4.0 V8 has a \"plastic water pump\" as a known failure point. The coolant crossover pipe is another common failure, along with ageing hoses and the thermostat housing. Cooling system failures are a \"primary weakness\" that can cause \"premature engine failure if neglected\". Preventative replacement of the water pump, crossover pipe and thermostat at 60,000–80,000 miles is strongly recommended. If the temperature gauge rises, shut the engine down immediately - overheating an aluminium V8 can cause catastrophic damage.",
         "failureLink": {
           "label": "Read the full cooling system failure guide",
-          "href": "/failures/cooling-system-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -365,7 +365,7 @@
         "recommendation": "The supercharged AJ27S engine in the XKR uses an Eaton M112 supercharger. The supercharger coupler - a small plastic/nylon component that connects the supercharger rotor to the drive pulley - can wear over time, causing a rattling noise at idle. If you hear rattling from the supercharger, have the coupler inspected. Replacement is a straightforward specialist job that restores full supercharger performance.",
         "failureLink": {
           "label": "Read the full supercharger coupler guide → /failures/supercharger-coupler-wear/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/failures/supercharger-coupler-rattle"
         }
       }
     ]
@@ -375,7 +375,7 @@
     "supportingLine": "15 vetted Jaguar specialists, every XK 4.0 engine covered, with a 12-month warranty as standard.",
     "button": {
       "label": "Get My Free XK Engine Quotes Now →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -439,7 +439,7 @@
     "closingVerdict": "The Jaguar XK 4.0's AJ-V8 is a landmark engine - Jaguar's first production V8. It delivers a glorious soundtrack and effortless performance, with up to 294 hp in naturally aspirated form and 370 hp in the supercharged XKR. The engine has a solid reputation if properly maintained, but the plastic timing chain tensioners are the critical weak point - they must be replaced with upgraded metal versions as a matter of urgency. Pre-1999 Nikasil liners are also a concern. Buy a well-maintained example with documented tensioner work and cooling system history. Without history? The repair bills can be substantial.",
     "cta": {
       "label": "→ Compare XK 4.0 engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -579,7 +579,7 @@
     },
     "cta": {
       "label": "→ Compare XK 4.0 engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -664,7 +664,7 @@
     "finalCta": "Find the best Jaguar XK 4.0 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar XK 4.0 Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

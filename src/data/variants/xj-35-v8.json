@@ -54,13 +54,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "XJ X350 (2003–2007) AJ33",
-              "url": "https://jaguarengines.uk/xj/x350/"
+              "url": "https://jaguarengines.uk/xj/x350-x358"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "XJ X358 (2007–2009) AJ33",
-              "url": "https://jaguarengines.uk/xj/x358/"
+              "url": "https://jaguarengines.uk/xj/x350-x358"
             }
           ]
         },
@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ33 (AJ-V8)",
-              "url": "https://jaguarengines.uk/engines/aj33/"
+              "url": "https://jaguarengines.uk/engine/aj-v8-4-0-4-2"
             }
           ]
         },
@@ -200,7 +200,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "See Jaguar XJ 3.5 V8 Engine Options →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -279,7 +279,7 @@
     "labourEstimate": "Fitting an XJ 3.5 V8 engine typically takes 10–14 hours at £65–£95/hr (independent). The aluminium-bodied XJ is relatively straightforward to work on - \"decently easy to work on for European luxury standards\".",
     "cta": {
       "label": "→ Compare XJ 3.5 V8 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -299,7 +299,7 @@
         "recommendation": "The timing chain tensioners are the \"one known major weakness of the AJ-V8 design as originally produced\". Jaguar went through several redesigns of these tensioners, moving from plastic to metal replacements. Frequent oil changes (every 7,500 miles rather than Jaguar's 15,000-mile interval) significantly reduce the risk. At the first sign of rattle on startup, book an inspection immediately - preventative tensioner replacement is far cheaper than a full engine rebuild.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -317,7 +317,7 @@
         "recommendation": "The plastic thermostat housing is \"such a widespread problem that the aftermarket has tooled up aluminium replacement versions\". Upgrading to an aluminium housing is a cost-effective preventative measure. If you see any coolant warnings or notice the temperature gauge fluctuating, have the cooling system inspected immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/coolant-leak/"
+          "href": "/failures"
         }
       },
       {
@@ -335,7 +335,7 @@
         "recommendation": "Oil leakage at the valve covers or VVT seals is a common issue on the AJ-V8. If you pull an ignition coil and find oil on it, the valve cover gaskets and spark plug o-rings will need replacement. Ignoring oil leaks can lead to misfires, coil failure, and eventually catalytic converter damage. Regular inspection of the top end of the engine is recommended - \"a lot of the stuff on the top end of the engine is decently easy to get to\".",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-leak/"
+          "href": "/failures"
         }
       }
     ]
@@ -345,7 +345,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, each experienced with the AJ33 V8 engine, with a 12-month warranty as standard.",
     "button": {
       "label": "See Jaguar XJ 3.5 V8 Engine Options →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -409,7 +409,7 @@
     "closingVerdict": "The AJ33 V8 is a stout and reliable engine - \"stout and reliable, no real gotchas\" - but it has known weak points that require attention. Timing chain tensioners are the major concern; they should be replaced preventatively if there's any doubt. Cooling system components and valve cover gaskets are also common maintenance items. A £4,000–£6,000 reconditioned engine on an XJ valued at £5,000–£15,000 is 27–100% of the car's value - carefully assess the overall condition of the vehicle. With the 60% Jaguar scrap threshold, well-maintained examples justify replacement spend; tired examples may not.",
     "cta": {
       "label": "→ Compare XJ 3.5 V8 engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -485,7 +485,7 @@
     },
     "cta": {
       "label": "→ Compare XJ 3.5 V8 engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -570,7 +570,7 @@
     "finalCta": "Find the best Jaguar XJ 3.5 V8 engine replacement UK owners rely on. Compare prices from trusted specialists on JaguarEngine.uk today and keep your classic XJ on the road with confidence.",
     "ctaButton": {
       "label": "Explore Jaguar XJ 3.5 V8 Engine Quotes →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

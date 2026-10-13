@@ -38,7 +38,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "Get My Free XJ 3.2 V8 Engine Quotes Now →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -109,7 +109,7 @@
     "labourEstimate": "Fitting an XJ 3.2 V8 engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
     "cta": {
       "label": "→ Compare XJ 3.2 V8 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -129,7 +129,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures/xk-nikasil-bore-wear"
         }
       },
       {
@@ -147,7 +147,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -165,7 +165,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/xj"
         }
       }
     ]
@@ -175,7 +175,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, every XJ 3.2 V8 variant covered, with a 12-month warranty as standard.",
     "button": {
       "label": "Get My Free XJ 3.2 V8 Engine Quotes Now →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -247,7 +247,7 @@
     "closingVerdict": "The XJ 3.2 V8 is Jaguar's entry-level V8 in the X308 generation - a 3.2-litre AJ26 engine producing 240 bhp and offering a superbly quiet and refined ride. The engine is a significant departure from the straight-six and V12 engines it replaced. However, it has two critical vulnerabilities: Nikasil cylinder liners on pre-2000 cars (which can fail catastrophically) and plastic timing chain tensioners (which degrade and can cause engine destruction). Post-2000 cars with steel-liner engines and upgraded metal tensioners are the only safe choices. With typical X308 values ranging from £3,000 to £8,000, an engine replacement is a major financial commitment - a well-maintained post-2000 example with documented service history is the safest choice.",
     "cta": {
       "label": "→ Compare XJ 3.2 V8 engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -321,7 +321,7 @@
     },
     "cta": {
       "label": "→ Compare XJ 3.2 V8 engine prices for your XJ",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -406,7 +406,7 @@
     "finalCta": "Find the best Jaguar XJ 3.2 V8 engine replacement UK owners rely on. Compare prices from trusted specialists on EnginesMarket today and get your XJ back on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar XJ 3.2 V8 Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

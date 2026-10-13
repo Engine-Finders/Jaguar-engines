@@ -7,7 +7,7 @@
       "title": "Jaguar AJ-V6 Petrol Engine - Specs, Reliability & Cost",
       "description": "The AJ-V6 is a smooth, reliable V6, but cooling system and timing chain issues are common. 500+ UK enquiries [ESTIMATED]. Compare quotes from vetted specialists today.",
       "type": "website",
-      "url": "https://jaguarengines.uk/engines/aj-v6-petrol/",
+      "url": "https://jaguarengines.uk/engine/aj-v6-petrol",
       "image": "https://jaguarengines.uk/images/jaguar/engines/aj-v6-petrol.jpg",
       "siteName": "jaguarengines.uk"
     },
@@ -51,31 +51,31 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Jaguar X-Type X400 2.5 V6 / 3.0 V6",
-              "url": "https://jaguarengines.uk/jaguar/x-type-x400/"
+              "url": "https://jaguarengines.uk/x-type/x400"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Jaguar S-Type X200 3.0 V6",
-              "url": "https://jaguarengines.uk/jaguar/s-type-x200/"
+              "url": "https://jaguarengines.uk/s-type/x200"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Jaguar XF X250 3.0 V6 (early petrol)",
-              "url": "https://jaguarengines.uk/jaguar/xf-x250/"
+              "url": "https://jaguarengines.uk/xf/x250"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "Jaguar XJ X350/X358 3.0 V6 / 3.2 V6",
-              "url": "https://jaguarengines.uk/jaguar/xj-x350/"
+              "url": "https://jaguarengines.uk/xj/x350-x358"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "Jaguar XK X150 3.0 V6 (entry-level)",
-              "url": "https://jaguarengines.uk/jaguar/xk-x150/"
+              "url": "https://jaguarengines.uk/xk/x150"
             }
           ]
         },
@@ -179,7 +179,7 @@
         {
           "@type": "WebPage",
           "name": "Jaguar AJ-V6 Petrol Engine - Specs, Reliability & Cost",
-          "url": "https://jaguarengines.uk/engines/aj-v6-petrol/",
+          "url": "https://jaguarengines.uk/engine/aj-v6-petrol",
           "author": {
             "@type": "Organization",
             "name": "jaguarengines.uk Editorial Team"
@@ -201,7 +201,7 @@
     "trustStrip": [],
     "primaryCta": {
       "label": "Compare AJ‑V6 Petrol Engine Prices →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "atAGlance": {
@@ -302,7 +302,7 @@
     "sharedCostNote": "Not applicable - this engine is exclusive to Jaguar.",
     "cta": {
       "label": "→ Compare AJ‑V6 Petrol engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "faq": {
@@ -343,7 +343,7 @@
     "finalCta": "Find the best Jaguar AJ‑V6 petrol engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar AJ‑V6 Petrol Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

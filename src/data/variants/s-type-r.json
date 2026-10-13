@@ -71,7 +71,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ34 (AJ34S)",
-              "url": "https://jaguarengines.uk/engines/aj34/"
+              "url": "https://jaguarengines.uk/engine/aj-v8-4-0-4-2"
             }
           ]
         },
@@ -199,7 +199,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "See S-Type R Engine Options →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -270,7 +270,7 @@
     "labourEstimate": "Fitting an S-Type R engine typically takes 14–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). The supercharged V8's complexity and the need for correct ECU calibration add labour time.",
     "cta": {
       "label": "→ Compare S-Type R engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -290,7 +290,7 @@
         "recommendation": "The timing chain tensioners are the most critical weak point on the AJ-V8. Jaguar AJ series engines are of a zero clearance design - if a secondary timing chain tensioner fails, the cylinder head on that side will sustain severe damage due to pistons striking the valves. If you do not replace the primary chains and associated parts with the secondary chains and tensioners, you are really on borrowed time. At the first sign of rattling, get the tensioners inspected immediately. A £800–£2,500 preventative repair is dramatically cheaper than a £5,500–£9,500 engine replacement.",
         "failureLink": {
           "label": "Read the full timing chain tensioner guide → /failures/jaguar-timing-chain-tensioners/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -308,7 +308,7 @@
         "recommendation": "The specific oil pump drive failure in AJ8 4.2L V8 S-Type R (2002–2008) can cause timing chain damage when the oil pump fails. Reconditioned engines often include upgraded oil pump components to address this common issue. If you see an oil pressure warning, stop driving immediately - continued driving can destroy the engine. A £1,500–£3,500 oil pump and timing chain replacement is far cheaper than a £5,500–£9,500 engine replacement.",
         "failureLink": {
           "label": "Read the full oil pump failure guide → /failures/jaguar-oil-pump-failure/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/failures"
         }
       },
       {
@@ -326,7 +326,7 @@
         "recommendation": "The supercharger coupler is a common wear item on the S-Type R's Eaton supercharger. A worn coupler causes a rattling noise at idle. Reconditioned engines often include upgraded supercharger internals specifically for the S-Type R's forced induction system. If you hear rattling from the supercharger, have the coupler inspected. Replacement is a straightforward specialist job that restores full supercharger performance.",
         "failureLink": {
           "label": "Read the full supercharger coupler guide → /failures/supercharger-coupler-wear/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/failures/supercharger-coupler-rattle"
         }
       }
     ]
@@ -336,7 +336,7 @@
     "supportingLine": "15 vetted Jaguar specialists, every S-Type R engine covered, with a 12-month warranty as standard.",
     "button": {
       "label": "See S-Type R Engine Options →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -400,7 +400,7 @@
     "closingVerdict": "The Jaguar S-Type R is a genuine performance icon - a 4.2-litre supercharged V8 with 400 hp that took on the BMW M5 and Mercedes E55 AMG. The AJ-V8 engine is solid when properly maintained, but it has well-documented weaknesses: timing chain tensioners that can fail and destroy the engine, oil pump drive failures, and supercharger coupler wear. Buy a well-maintained example with documented tensioner work. Without history? The repair bills can be substantial - engine rebuilds can cost over £6,000.",
     "cta": {
       "label": "→ Compare S-Type R engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -493,7 +493,7 @@
     },
     "cta": {
       "label": "→ Compare S-Type R engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -578,7 +578,7 @@
     "finalCta": "Find the best Jaguar S-Type R engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Explore Jaguar S-Type R Engine Quotes →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

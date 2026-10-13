@@ -39,25 +39,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "2.0 Ingenium Diesel (204DTD/AJ200D)",
-              "url": "https://jaguarengines.uk/engines/aj200d/"
+              "url": "https://jaguarengines.uk/engine/ingenium-2-0-diesel"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "2.0 Ingenium Petrol (204PT/PT204)",
-              "url": "https://jaguarengines.uk/engines/pt204/"
+              "url": "https://jaguarengines.uk/engine/ingenium-20-petrol"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "3.0 V6 Supercharged (AJ126)",
-              "url": "https://jaguarengines.uk/engines/aj126/"
+              "url": "https://jaguarengines.uk/engine/306dt-306ps"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "5.0 V8 Supercharged (AJ133)",
-              "url": "https://jaguarengines.uk/engines/aj133/"
+              "url": "https://jaguarengines.uk/engine/aj133"
             }
           ]
         },
@@ -69,43 +69,43 @@
               "@type": "ListItem",
               "position": 1,
               "name": "20d",
-              "url": "https://jaguarengines.uk/xe/x760/20d/"
+              "url": "https://jaguarengines.uk/xe/x760"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "20t",
-              "url": "https://jaguarengines.uk/xe/x760/20t/"
+              "url": "https://jaguarengines.uk/xe/x760"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "P250",
-              "url": "https://jaguarengines.uk/xe/x760/p250/"
+              "url": "https://jaguarengines.uk/xe/x760"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "P300",
-              "url": "https://jaguarengines.uk/xe/x760/p300/"
+              "url": "https://jaguarengines.uk/xe/x760"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "35t",
-              "url": "https://jaguarengines.uk/xe/x760/35t/"
+              "url": "https://jaguarengines.uk/xe/x760"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "S",
-              "url": "https://jaguarengines.uk/xe/x760/s/"
+              "url": "https://jaguarengines.uk/xe/x760"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "Project 8",
-              "url": "https://jaguarengines.uk/xe/x760/project-8/"
+              "url": "https://jaguarengines.uk/xe/x760"
             }
           ]
         },
@@ -278,7 +278,7 @@
     ],
     "primaryCta": {
       "label": "Explore X760 Engines →",
-      "href": "#"
+      "href": "/xe/x760"
     },
     "dataIntegrityNote": ""
   },
@@ -509,7 +509,7 @@
         "recommendation": "At the first sign of a whine from the engine bay or a rattle on cold start, have the timing chain and balance shafts inspected immediately. A £800–£2,000 preventative repair is dramatically cheaper than the £4,500–£6,500 replacement that follows a snapped chain.",
         "cta": {
           "label": "Compare 2.0 Ingenium diesel engine prices for your X760 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -537,7 +537,7 @@
         "recommendation": "On any X760 V6 approaching 60,000 miles without documented cooling system history, have the water pump and crossover pipes inspected and proactively replaced. A £600–£1,500 preventative repair is far cheaper than the £4,500–£7,500 replacement that follows an overheating failure.",
         "cta": {
           "label": "Compare 3.0 V6 engine prices for your X760 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -565,7 +565,7 @@
         "recommendation": "Have the cooling system inspected at every service - a £400–£900 water pump replacement is far cheaper than the £2,800–£5,200 replacement that follows an overheating failure.",
         "cta": {
           "label": "Compare 2.0 Ingenium petrol engine prices for your X760 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -593,7 +593,7 @@
         "recommendation": "If your V6 XE develops a rattle from the supercharger at idle, have the coupler inspected immediately. A £500–£900 coupler replacement is far cheaper than the £900–£1,600 supercharger rebuild that follows if the coupler fails completely.",
         "cta": {
           "label": "Compare AJ126 supercharger repair quotes →",
-          "href": "#"
+          "href": "/quote"
         }
       }
     ]
@@ -805,7 +805,7 @@
     "finalCta": "Find the best Jaguar XE X760 engine replacement UK owners rely on. Compare real prices from trusted specialists on EnginesMarket today and get your X760 back on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar XE X760 Engine Prices on EnginesMarket →",
-      "href": "#",
+      "href": "/quote",
       "note": "[PLACEHOLDER - confirm EnginesMarket URL structure]"
     }
   }

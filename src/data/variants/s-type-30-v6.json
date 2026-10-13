@@ -71,7 +71,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ30",
-              "url": "https://jaguarengines.uk/engines/aj30/"
+              "url": "https://jaguarengines.uk/engine/aj-v8-4-0-4-2"
             }
           ]
         },
@@ -199,7 +199,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "Get My Free S-Type 3.0 V6 Engine Quotes Now →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -278,7 +278,7 @@
     "labourEstimate": "Fitting an S-Type 3.0 V6 engine typically takes 8–12 hours at £65–£95/hr (independent). The longitudinal V6 layout makes the engine relatively accessible compared to transverse installations.",
     "cta": {
       "label": "→ Compare S-Type 3.0 V6 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -298,7 +298,7 @@
         "recommendation": "The intake manifold gaskets on the AJ30 can crack over time, causing vacuum leaks. This leads to rough idle, hesitation, and poor fuel economy. The repair is relatively straightforward, but if ignored, the engine can run lean, potentially causing damage to the catalytic converters or even the engine itself. If you notice any of these symptoms, have the intake manifold gaskets inspected promptly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/vacuum-leak/"
+          "href": "/failures"
         }
       },
       {
@@ -316,7 +316,7 @@
         "recommendation": "The AJ30 features an electric drive for changing the intake geometry, which is known for low reliability. This system optimises torque delivery across the rev range. When it fails, you'll notice a loss of low-end torque and reduced throttle response. Replacement is the only solution, and it's best to use OEM-quality parts. If you notice a decline in performance, have the intake system inspected.",
         "failureLink": {
           "label": "",
-          "href": "/failures/intake-actuator-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -334,7 +334,7 @@
         "recommendation": "The crankcase ventilation valve on the AJ30 requires regular cleaning. If it becomes clogged, pressure builds in the crankcase, causing oil to be pushed out from various seals and gaskets. Regular maintenance of the PCV system is essential for preventing oil leaks. If you notice oil leaks or increased oil consumption, have the PCV system inspected.",
         "failureLink": {
           "label": "",
-          "href": "/failures/pcv-valve-failure/"
+          "href": "/failures"
         }
       }
     ]
@@ -344,7 +344,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, each experienced with the AJ30 V6 engine, with a 12-month warranty as standard.",
     "button": {
       "label": "Get My Free S-Type 3.0 V6 Engine Quotes Now →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -408,7 +408,7 @@
     "closingVerdict": "The AJ30 is a generally reliable and durable engine, but it's now an ageing unit with known weak points. Intake manifold gaskets, the variable intake actuator, and the PCV system are the main areas of concern. A £2,500 reconditioned engine on an S-Type valued at £3,000–£6,000 is 42–83% of the car's value - borderline on lower-value examples. With the 60% Jaguar scrap threshold, assess the overall condition of the vehicle carefully before committing to a replacement.",
     "cta": {
       "label": "→ Compare S-Type 3.0 V6 engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -476,7 +476,7 @@
     },
     "cta": {
       "label": "→ Compare S-Type 3.0 V6 engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -561,7 +561,7 @@
     "finalCta": "Find the best Jaguar S-Type 3.0 V6 engine replacement UK owners rely on. Compare prices from trusted specialists on JaguarEngine.uk today and keep your classic Jaguar on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar S-Type 3.0 V6 Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

@@ -101,7 +101,7 @@ function DesktopTrustStrip({ items, isDark, cardBorderClass, dividerBorderClass 
               }`}
             >
               <span className="flex h-11 w-11 shrink-0 items-center justify-center">
-                <HomeIcon name={trustStripIcon(item, index)} isDark={isDark} className="h-9 w-9 object-contain" />
+                <HomeIcon name={trustStripIcon(item, index)} isDark={isDark} className="h-11 w-11 object-contain" />
               </span>
               <div className="flex w-max max-w-none flex-col gap-0.5 whitespace-normal">
                 {hasValue ? (

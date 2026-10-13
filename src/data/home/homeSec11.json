@@ -14,35 +14,35 @@
           "id": "01",
           "name": "XE",
           "generations": "1 Generation (X760)",
-          "href": "#",
+          "href": "/xe",
           "verdict": { "label": "Safe Buy", "icon": "safe-buy" }
         },
         {
           "id": "02",
           "name": "XF",
           "generations": "2 Generations (X250, X260)",
-          "href": "#",
+          "href": "/xf",
           "verdict": { "label": "Most Enquired", "icon": "most-enquired" }
         },
         {
           "id": "03",
           "name": "XJ",
           "generations": "Multiple Generations (X300, X308, X351 primary)",
-          "href": "#",
+          "href": "/xj",
           "verdict": { "label": "Flagship Choice", "icon": "flagship-choice" }
         },
         {
           "id": "04",
           "name": "S-Type",
           "generations": "1 Generation (X200)",
-          "href": "#",
+          "href": "/s-type",
           "verdict": { "label": "Check Value", "icon": "check-watch" }
         },
         {
           "id": "05",
           "name": "X-Type",
           "generations": "1 Generation (X400)",
-          "href": "#",
+          "href": "/x-type",
           "verdict": { "label": "Check Value", "icon": "check-watch" }
         }
       ]
@@ -56,35 +56,35 @@
           "id": "01",
           "name": "F-Pace",
           "generations": "1 Generation (X761)",
-          "href": "#",
+          "href": "/f-pace",
           "verdict": { "label": "Best Family", "icon": "best-family" }
         },
         {
           "id": "02",
           "name": "E-Pace",
           "generations": "1 Generation (X540)",
-          "href": "#",
+          "href": "/e-pace",
           "verdict": { "label": "High Demand", "icon": "high-demand" }
         },
         {
           "id": "03",
           "name": "I-Pace",
           "generations": "1 Generation (X590)",
-          "href": "#",
+          "href": "/i-pace-drive-unit-guide",
           "verdict": { "label": "EV — Drive Unit Info", "icon": "ev" }
         },
         {
           "id": "04",
           "name": "F-Type",
           "generations": "1 Generation (X152)",
-          "href": "#",
+          "href": "/f-type",
           "verdict": { "label": "Safest Buy", "icon": "safest-buy" }
         },
         {
           "id": "05",
           "name": "XK",
           "generations": "2 Generations (X100, X150)",
-          "href": "#",
+          "href": "/xk",
           "verdict": { "label": "Premium Style", "icon": "premium-style" }
         }
       ]

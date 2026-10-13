@@ -7,7 +7,7 @@
       "title": "Jaguar AJ-V8 4.0/4.2 Engine - Reliability & Replacement Cost",
       "description": "AJ-V8 is smooth and characterful, but early tensioners can destroy it - rated from UK owner enquiries. Compare quotes from vetted specialists today.",
       "type": "website",
-      "url": "https://jaguarengines.uk/engines/aj-v8-40-42/",
+      "url": "https://jaguarengines.uk/engine/aj-v8-4-0-4-2",
       "image": "https://jaguarengines.uk/images/jaguar/engines/aj-v8-40-42.jpg",
       "siteName": "jaguarengines.uk"
     },
@@ -189,7 +189,7 @@
         {
           "@type": "WebPage",
           "name": "Jaguar AJ-V8 4.0/4.2 Engine - Reliability & Replacement Cost",
-          "url": "https://jaguarengines.uk/engines/aj-v8-40-42/",
+          "url": "https://jaguarengines.uk/engine/aj-v8-4-0-4-2",
           "author": {
             "@type": "Organization",
             "name": "jaguarengines.uk Editorial Team"
@@ -228,7 +228,7 @@
     ],
     "primaryCta": {
       "label": "Compare AJ-V8 Engine Prices →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "atAGlance": {
@@ -397,7 +397,7 @@
     "sharedCostNote": "Parts cost is similar across Jaguar and Land Rover applications; labour time varies by engine bay access - the XK's tight bay adds time versus the XJ's more generous layout.",
     "cta": {
       "label": "",
-      "href": "#"
+      "href": "/engine/aj-v8-4-0-4-2"
     }
   },
   "faq": {
@@ -434,7 +434,7 @@
     "finalCta": "",
     "ctaButton": {
       "label": "Compare Jaguar AJ-V8 Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

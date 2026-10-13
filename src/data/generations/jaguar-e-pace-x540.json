@@ -39,55 +39,55 @@
               "@type": "ListItem",
               "position": 1,
               "name": "D150 2.0 Diesel Engine",
-              "url": "https://jaguarengines.uk/engines/204dtd/"
+              "url": "https://jaguarengines.uk/engine/ingenium-2-0-diesel"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "D165 2.0 Diesel Engine",
-              "url": "https://jaguarengines.uk/engines/204dtd/"
+              "url": "https://jaguarengines.uk/engine/ingenium-2-0-diesel"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "D180 2.0 Diesel Engine",
-              "url": "https://jaguarengines.uk/engines/204dtd/"
+              "url": "https://jaguarengines.uk/engine/ingenium-2-0-diesel"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "D200 2.0 Diesel Engine",
-              "url": "https://jaguarengines.uk/engines/204dtd/"
+              "url": "https://jaguarengines.uk/engine/ingenium-2-0-diesel"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "P160 1.5 MHEV Engine",
-              "url": "https://jaguarengines.uk/engines/aj150/"
+              "url": "https://jaguarengines.uk/engine"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "P200 2.0 MHEV Engine",
-              "url": "https://jaguarengines.uk/engines/pt204/"
+              "url": "https://jaguarengines.uk/engine/ingenium-20-petrol"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "P250 2.0 MHEV Engine",
-              "url": "https://jaguarengines.uk/engines/pt204/"
+              "url": "https://jaguarengines.uk/engine/ingenium-20-petrol"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "P300 2.0 Twin-Turbo Engine",
-              "url": "https://jaguarengines.uk/engines/pt204/"
+              "url": "https://jaguarengines.uk/engine/ingenium-20-petrol"
             },
             {
               "@type": "ListItem",
               "position": 9,
               "name": "P300e 1.5 PHEV Engine",
-              "url": "https://jaguarengines.uk/engines/aj150-phev/"
+              "url": "https://jaguarengines.uk/engine"
             }
           ]
         },
@@ -99,55 +99,55 @@
               "@type": "ListItem",
               "position": 1,
               "name": "D150",
-              "url": "https://jaguarengines.uk/e-pace/x540/d150/"
+              "url": "https://jaguarengines.uk/e-pace/x540"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "D165",
-              "url": "https://jaguarengines.uk/e-pace/x540/d165/"
+              "url": "https://jaguarengines.uk/e-pace/x540"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "D180",
-              "url": "https://jaguarengines.uk/e-pace/x540/d180/"
+              "url": "https://jaguarengines.uk/e-pace/x540"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "D200",
-              "url": "https://jaguarengines.uk/e-pace/x540/d200/"
+              "url": "https://jaguarengines.uk/e-pace/x540"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "P160",
-              "url": "https://jaguarengines.uk/e-pace/x540/p160/"
+              "url": "https://jaguarengines.uk/e-pace/x540"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "P200",
-              "url": "https://jaguarengines.uk/e-pace/x540/p200/"
+              "url": "https://jaguarengines.uk/e-pace/x540"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "P250",
-              "url": "https://jaguarengines.uk/e-pace/x540/p250/"
+              "url": "https://jaguarengines.uk/e-pace/x540"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "P300",
-              "url": "https://jaguarengines.uk/e-pace/x540/p300/"
+              "url": "https://jaguarengines.uk/e-pace/x540"
             },
             {
               "@type": "ListItem",
               "position": 9,
               "name": "P300e",
-              "url": "https://jaguarengines.uk/e-pace/x540/p300e/"
+              "url": "https://jaguarengines.uk/e-pace/x540"
             }
           ]
         },
@@ -320,7 +320,7 @@
     ],
     "primaryCta": {
       "label": "Explore X540 Engines →",
-      "href": "#"
+      "href": "/e-pace/x540"
     },
     "dataIntegrityNote": ""
   },
@@ -479,7 +479,7 @@
         "recommendation": "At the first sign of cold-start rattle on any diesel E-Pace, get the chain inspected immediately - an £800–£1,800 preventative repair is dramatically cheaper than the £4,500–£7,500 replacement that follows if ignored. On an E-Pace worth under £8,000, this decision alone determines whether the car stays economically viable.",
         "cta": {
           "label": "Compare Ingenium diesel engine prices for your E-Pace →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -507,7 +507,7 @@
         "recommendation": "For urban-driven diesel E-Paces, shorten oil change intervals to 6,000 miles or annually - a £150–£350 oil change is cheap insurance against a £4,500+ engine replacement. Avoid repeated short trips without letting the DPF regeneration complete.",
         "cta": {
           "label": "Compare Ingenium diesel engine prices for your E-Pace →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -535,7 +535,7 @@
         "recommendation": "Have the PHEV battery health checked annually - a £300–£800 inspection is cheap insurance against a £6,500+ battery replacement. If you're buying a used P300e, get a battery health report before committing. The 34-mile electric range is a major selling point - protect it.",
         "cta": {
           "label": "Compare P300e battery prices for your E-Pace →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -563,7 +563,7 @@
         "recommendation": "Have the cooling system inspected annually and replace the water pump as preventative maintenance at 60,000 miles - a £400–£800 specialist job is trivial against the £4,000+ engine replacement that follows an ignored coolant leak.",
         "cta": {
           "label": "Compare Ingenium petrol engine prices for your E-Pace →",
-          "href": "#"
+          "href": "/quote"
         }
       }
     ]
@@ -668,7 +668,7 @@
   "petrolVariants": [
     {
       "name": "P160",
-      "url": "#"
+      "url": "/e-pace"
     },
     {
       "name": "P200",
@@ -803,7 +803,7 @@
     "finalCta": "Find the best Jaguar E-Pace X540 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar E-Pace X540 Engine Prices on EnginesMarket →",
-      "href": "#",
+      "href": "/quote",
       "note": "[PLACEHOLDER - confirm EnginesMarket URL structure]"
     }
   }

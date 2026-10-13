@@ -65,7 +65,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "204PT (PT204 / AJ200P)",
-              "url": "https://jaguarengines.uk/engines/204pt/"
+              "url": "https://jaguarengines.uk/engine/ingenium-20-petrol"
             }
           ]
         },
@@ -193,7 +193,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "Get My Free P250 Engine Quotes Now →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -264,7 +264,7 @@
     "labourEstimate": "Fitting an XE P250 engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). Timing chain replacement is a labour-intensive job requiring gearbox removal.",
     "cta": {
       "label": "",
-      "href": "#"
+      "href": "/economics"
     }
   },
   "commonProblems": {
@@ -275,7 +275,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, every XE P250 variant covered, with a 12-month warranty as standard.",
     "button": {
       "label": "Get My Free P250 Engine Quotes Now →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -345,7 +345,7 @@
     "closingVerdict": "The XE P250's 204PT Ingenium petrol is a refined and responsive engine that makes the XE a genuine driver's car. But it has known weak points: timing chain stretch (mitigated by shorter oil change intervals), CVVL system misfires, and water pump failures. Buy on service history and proof of preventative maintenance - shorter oil change intervals are the key to longevity.",
     "cta": {
       "label": "",
-      "href": "#"
+      "href": "/xe"
     }
   },
   "buyingChecklist": {
@@ -406,7 +406,7 @@
     },
     "cta": {
       "label": "",
-      "href": "#"
+      "href": "/xe"
     }
   },
   "marketIntelligence": {
@@ -478,7 +478,7 @@
     "finalCta": "Find the best Jaguar XE P250 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar XE P250 Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

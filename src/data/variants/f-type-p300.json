@@ -65,7 +65,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "204PT (PT204)",
-              "url": "https://jaguarengines.uk/engines/204pt/"
+              "url": "https://jaguarengines.uk/engine/ingenium-20-petrol"
             }
           ]
         },
@@ -193,7 +193,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "Get My Free P300 Engine Quotes Now →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK‑Wide Network"
@@ -264,7 +264,7 @@
     "labourEstimate": "Fitting an F‑Type P300 engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). Timing chain replacement is a labour‑intensive job.",
     "cta": {
       "label": "",
-      "href": "#"
+      "href": "/economics"
     }
   },
   "commonProblems": {
@@ -275,7 +275,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, every F‑Type P300 variant covered, with a 12‑month warranty as standard.",
     "button": {
       "label": "Get My Free P300 Engine Quotes Now →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -345,7 +345,7 @@
     "closingVerdict": "The F‑Type P300 is a genuine driver's car - a lightweight, well‑balanced sports car powered by the 2.0‑litre Ingenium petrol. While not as sonorous as the V6 or V8, the P300 offers 296 bhp and 0–60 mph in 5.5 seconds. The 204PT is more reliable than its diesel Ingenium counterparts, but it has known weak points: timing chain stretch, VCT solenoid issues, engine mount failures, and water pump failures. Buy on service history and proof of preventative maintenance - shorter oil change intervals are the key to longevity.",
     "cta": {
       "label": "",
-      "href": "#"
+      "href": "/f-type"
     }
   },
   "buyingChecklist": {
@@ -410,7 +410,7 @@
     },
     "cta": {
       "label": "",
-      "href": "#"
+      "href": "/f-type"
     }
   },
   "marketIntelligence": {
@@ -482,7 +482,7 @@
     "finalCta": "Find the best Jaguar F‑Type P300 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar F‑Type P300 Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

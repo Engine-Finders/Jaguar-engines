@@ -5,7 +5,7 @@ import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
 
-const ICON_LG = "h-9 w-9";
+const ICON_LG = "h-10 w-10 md:h-12 md:w-12";
 
 function cleanText(text = "") {
   return String(text ?? "")
@@ -65,7 +65,7 @@ function TrustCard({ item, index, isDark }) {
 
       <div className="mt-1 overflow-hidden">
         <span
-          className={`float-left mr-3 mb-1 flex h-10 w-10 items-center justify-center rounded-full md:mr-3.5 ${
+          className={`float-left mr-3 mb-1 flex h-16 w-16 items-center justify-center rounded-full md:mr-3.5 md:h-[4.5rem] md:w-[4.5rem] ${
             isDark ? "bg-white/10" : "bg-[#ececeb]"
           }`}
         >

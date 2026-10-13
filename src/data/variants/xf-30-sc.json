@@ -37,7 +37,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "Get My Free XF 3.0 SC Engine Quotes Now →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -116,7 +116,7 @@
     "labourEstimate": "Fitting an XF 3.0 SC engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). Mechanics typically charge £60–£100 per hour.",
     "cta": {
       "label": "→ Compare XF 3.0 SC engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -136,7 +136,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures"
         }
       },
       {
@@ -154,7 +154,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures/supercharger-coupler-rattle"
         }
       },
       {
@@ -172,7 +172,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       }
     ]
@@ -182,7 +182,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, every XF 3.0 SC variant covered, with a 12-month warranty as standard.",
     "button": {
       "label": "Get My Free XF 3.0 SC Engine Quotes Now →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -260,7 +260,7 @@
     "closingVerdict": "The XF 3.0 SC is Jaguar's supercharged V6 petrol offering across the X250 and X260 generations - delivering 340 bhp and a distinctive supercharger whine. The AJ126 is a development of the AJ133 V8, sharing much of its architecture. The engine's main vulnerability is the plastic coolant crossover pipes - early two-piece pipes with plasti-welded seams are prone to catastrophic failure. Later one-piece pipes (2018+) are improved, but many owners upgrade to aluminium replacements for peace of mind. Other common issues include supercharger coupler wear and timing chain stretch on poorly maintained examples. With typical XF values ranging from £8,000 to £25,000+, an engine replacement is a significant investment - a well-maintained post-2018 X260 with upgraded cooling system pipes is the safest choice.",
     "cta": {
       "label": "→ Compare XF 3.0 SC engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -333,7 +333,7 @@
     },
     "cta": {
       "label": "→ Compare XF 3.0 SC engine prices for your XF",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -418,7 +418,7 @@
     "finalCta": "Find the best Jaguar XF 3.0 SC engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get your XF back on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar XF 3.0 SC Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

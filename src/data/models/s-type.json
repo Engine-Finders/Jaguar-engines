@@ -9,7 +9,7 @@
       "title": "S-Type Engine Replacement Cost UK - Compare Quotes",
       "description": "Every S-Type engine - 2.5/3.0 V6 and 4.0/4.2 V8. 1 generation, real UK costs and reliability data from 70+ real enquiries. Compare prices from 15+ vetted Jaguar specialists today.",
       "type": "website",
-      "url": "https://jaguarengines.uk/jaguar/s-type/",
+      "url": "https://jaguarengines.uk/s-type",
       "image": "https://jaguarengines.uk/images/jaguar-s-type-hero.jpg",
       "siteName": "jaguarengines.uk"
     },
@@ -47,7 +47,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "X200 Generation (1999–2008)",
-              "url": "https://jaguarengines.uk/jaguar/s-type/x200/"
+              "url": "https://jaguarengines.uk/s-type/x200"
             }
           ]
         },
@@ -60,31 +60,31 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ-V6 2.5 - 2.5L V6 (197 bhp)",
-              "url": "https://jaguarengines.uk/engines/aj-v6-2-5/"
+              "url": "https://jaguarengines.uk/engine/aj-v6-petrol"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "AJ126 3.0 V6 - 3.0L V6 (240 bhp)",
-              "url": "https://jaguarengines.uk/engines/aj126/"
+              "url": "https://jaguarengines.uk/engine/306dt-306ps"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "AJ-V8 4.0 - 4.0L V8 (290 bhp)",
-              "url": "https://jaguarengines.uk/engines/aj-v8-4-0/"
+              "url": "https://jaguarengines.uk/engine/aj-v8-4-0-4-2"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "AJ133 4.2 V8 - 4.2L V8 (300 bhp)",
-              "url": "https://jaguarengines.uk/engines/aj133/"
+              "url": "https://jaguarengines.uk/engine/aj133"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "AJ133 4.2 SC - 4.2L Supercharged V8 (395 bhp)",
-              "url": "https://jaguarengines.uk/engines/aj133-sc/"
+              "url": "https://jaguarengines.uk/engine/aj133"
             }
           ]
         },
@@ -196,7 +196,7 @@
         {
           "@type": "WebPage",
           "name": "S-Type Engine Replacement Cost UK - Compare Quotes",
-          "url": "https://jaguarengines.uk/jaguar/s-type/",
+          "url": "https://jaguarengines.uk/s-type",
           "author": {
             "@type": "Organization",
             "name": "jaguarengines.uk Editorial Team"
@@ -235,7 +235,7 @@
     ],
     "primaryCta": {
       "label": "Explore S-Type Engines →",
-      "href": "#"
+      "href": "/s-type"
     }
   },
   "ownershipVerdict": {
@@ -348,7 +348,7 @@
         "verdict": "",
         "cta": {
           "label": "",
-          "href": "#"
+          "href": "/s-type"
         }
       }
     ],
@@ -359,7 +359,7 @@
     },
     "comparisonLink": {
       "label": "Read the full comparison: Pre-2002 vs Post-2004 S-Type →",
-      "href": "#"
+      "href": "/compare"
     }
   },
   "engineDatabase": {
@@ -467,7 +467,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/engine/aj-v8-4-0-4-2"
         }
       },
       {
@@ -481,7 +481,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/engine/aj133"
         }
       },
       {
@@ -495,7 +495,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/engine/aj133"
         }
       },
       {
@@ -509,7 +509,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/failures/air-suspension-compressor"
         }
       },
       {
@@ -523,7 +523,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/failures"
         }
       },
       {
@@ -537,7 +537,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/failures/x-type-electrical-gremlins"
         }
       }
     ],
@@ -697,11 +697,11 @@
     "paths": [
       {
         "label": "Path 1 - Know your engine? Launch the Jaguar calculator with S-Type pre-selected",
-        "href": "/fault-diagnostic-calculator?model=s-type"
+        "href": "/tools/repair-vs-replace-calculator"
       },
       {
         "label": "Path 2 - Not sure which engine you have? We'll identify it first",
-        "href": "/fault-diagnostic-calculator?model=s-type"
+        "href": "/tools/registration-lookup"
       }
     ]
   },
@@ -787,19 +787,19 @@
         "icon": "🔍",
         "title": "Explore S-Type Generations",
         "text": "Find your generation, compare engines, and see which S-Type suits your ownership horizon.",
-        "href": "/jaguar/s-type/"
+        "href": "/compare"
       },
       {
         "icon": "🩺",
         "title": "Diagnose My S-Type",
         "text": "Not sure if it's a timing chain, a coolant leak, or something else? Answer a few questions and get a personalised diagnosis.",
-        "href": "/fault-diagnostic-calculator?model=s-type"
+        "href": "/tools/diagnostic-wizard"
       },
       {
         "icon": "🤝",
         "title": "Compare UK Specialists",
         "text": "Get matched with 15+ vetted Jaguar specialists who know the S-Type's V6 and V8 engines inside out.",
-        "href": "/quotes/?model=s-type"
+        "href": "/quote"
       }
     ],
     "footerNote": ""

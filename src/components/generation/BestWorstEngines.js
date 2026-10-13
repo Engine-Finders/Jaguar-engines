@@ -254,7 +254,7 @@ function CarouselControls({ page, pageCount, onPrev, onNext, onSelectPage, isDar
 function OverlookedBanner({ item, databaseCta, isDark }) {
   if (!hasItemContent(item)) return null;
 
-  const cta = databaseCta || { label: "View Full Engine Database →", href: "#" };
+  const cta = databaseCta || { label: "View Full Engine Database →", href: "/engine" };
   const ctaLabel = cta.label?.replace(/\s*→\s*$/, "").trim();
 
   return (
@@ -266,11 +266,11 @@ function OverlookedBanner({ item, databaseCta, isDark }) {
       <div className="grid grid-cols-1 gap-4 p-4 md:grid-cols-[88px_1.2fr_0.95fr_auto] md:items-center md:gap-5 md:p-5">
         <div className="flex items-start justify-center md:justify-start">
           <span
-            className={`flex h-10 w-10 items-center justify-center rounded-full border-2 ${
+            className={`flex h-16 w-16 items-center justify-center rounded-full border-2 ${
               isDark ? "border-white/20 bg-[rgba(255,255,255,0.06)]" : "border-[var(--color-border)] bg-white"
             }`}
           >
-            <span className={`flex h-10 w-10 items-center justify-center rounded-full ${isDark ? "bg-white/10" : "bg-[var(--color-page-soft)]"}`}>
+            <span className={`flex h-12 w-12 items-center justify-center rounded-full ${isDark ? "bg-white/10" : "bg-[var(--color-page-soft)]"}`}>
               <HomeIcon name="shield" isDark={isDark} className="h-7 w-7 object-contain" />
             </span>
           </span>
@@ -296,7 +296,7 @@ function OverlookedBanner({ item, databaseCta, isDark }) {
 
         {ctaLabel ? (
           <a
-            href={cta.href || "#"}
+            href={cta.href || "/engine"}
             className={`inline-flex h-11 shrink-0 items-center justify-center gap-2 rounded-md border px-4 text-[0.78rem] font-semibold whitespace-nowrap ${
               isDark
                 ? "border-white/20 bg-transparent text-white hover:bg-white/5"

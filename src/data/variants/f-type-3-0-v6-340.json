@@ -65,7 +65,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ126",
-              "url": "https://jaguarengines.uk/engines/aj126/"
+              "url": "https://jaguarengines.uk/engine/306dt-306ps"
             }
           ]
         },
@@ -193,7 +193,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "Get My Free F‑Type 3.0 V6 Engine Quotes Now →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK‑Wide Network"
@@ -264,7 +264,7 @@
     "labourEstimate": "Fitting an F‑Type 3.0 V6 engine typically takes 12–16 hours at £75–£110/hr (independent) or £130–£180/hr (London/SE dealer). The supercharger and V6 layout add complexity. [PLACEHOLDER - confirm vs cost sheet]",
     "cta": {
       "label": "→ Compare F‑Type 3.0 V6 (340) engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -284,7 +284,7 @@
         "recommendation": "The AJ126's timing chain system is the engine's Achilles' heel. A well‑known design flaw sees the steel tensioner piston wear against an aluminium button on the guide, slowly wearing it away over time. If you're lucky, symptoms may start with a rattle on cold start or a restricted performance warning. But sometimes they will spontaneously fail, leaving no option other than a replacement engine or a potentially more expensive full rebuild including valves and pistons. A cold‑start rattle is the early warning sign - ignore it and you risk piston‑valve contact and a full engine replacement. Regular oil changes are the best prevention.",
         "failureLink": {
           "label": "",
-          "href": "/failures/aj126-timing-chain/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -302,7 +302,7 @@
         "recommendation": "The most common cause of catastrophic engine failure on the AJ126 is the plastic coolant \"V pipe\" under the supercharger cracking and dumping coolant. One owner described it as \"a well‑known weak spot on these engines that often fails catastrophically\". The accepted problem with plastic coolant pipes is that they become brittle due to repeated heat cycles. If the pipe fails while driving, the system dumps most of its coolant through the failed pipe, leading to rapid overheating and often a cracked cylinder head. Many specialists recommend replacing the plastic pipes with aluminium upgrades proactively.",
         "failureLink": {
           "label": "",
-          "href": "/failures/coolant-pipe-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -320,7 +320,7 @@
         "recommendation": "Water pumps on early supercharged models are prone to failure - sometimes they last less than 20,000 miles. This is because coolant gets inside the bearing housing, corroding the water pump bearing and causing excessive wear. Symptoms will likely be a low coolant level warning and traces of a coolant leak around the water pump pulley. Luckily, the water pump on the V6 is fairly easy to access at the front of the engine. We also recommend replacing the small coolant pipe that connects to the pump at the same time, as it has very fragile plastic connections that will likely break upon removal.",
         "failureLink": {
           "label": "",
-          "href": "/failures/water-pump-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -338,7 +338,7 @@
         "recommendation": "The supercharger drive coupling on the AJ126 can wear, with the holes in the coupling becoming slightly elongated and rattling at idle as the engine RPMs are uneven. The classic symptom is a loud rattle from the top of the engine at cold start. To check, disconnect the drive belt and rock the pulley forwards and back to check for play. Replacement couplers are available relatively cheaply, but fitting requires supercharger removal. At the first sign of rattling from the supercharger area, have the coupler inspected.",
         "failureLink": {
           "label": "",
-          "href": "/failures/supercharger-coupler/"
+          "href": "/failures/supercharger-coupler-rattle"
         }
       },
       {
@@ -356,7 +356,7 @@
         "recommendation": "Injector failure is a known issue on the AJ126. A leaking injector can allow fuel spray to bypass the rings and enter the oil sump, contaminating the oil and causing wear on engine components. Over time, moisture builds up in the cylinder head and causes oxidisation of the aluminium where the injector seats. One owner reported a leaking injector that also \"killed the catalytic converter\". If you experience rough running, misfires or white smoke, have the injectors inspected immediately. Replacing a faulty injector before it fails completely can prevent catalytic converter damage.",
         "failureLink": {
           "label": "",
-          "href": "/failures/fuel-injector-failure/"
+          "href": "/failures"
         }
       }
     ]
@@ -366,7 +366,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, every F‑Type engine variant covered, with a 12‑month warranty as standard.",
     "button": {
       "label": "Get My Free F‑Type 3.0 V6 Engine Quotes Now →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -439,7 +439,7 @@
     "closingVerdict": "The Jaguar F‑Type 3.0 V6 (340) represents the entry point into Jaguar's modern sports car - a glorious supercharged V6 with 340 PS, 450 Nm and a soundtrack to die for. The AJ126 is a fantastic engine with one of the best supercharger whines in the business. However, it demands respect: plastic coolant pipe failure (particularly the \"V pipe\") is the most common cause of catastrophic engine failure, timing chain guide wear is a well‑known design flaw, and water pump failure can strike early. Buy on service history, prioritise a car with aluminium coolant pipe upgrades, and budget for preventative maintenance. As one owner put it: \"The F‑Type is an addictive beast. It is the most beautiful, most engaging, most fun, and most interesting car on the road\". Just make sure you can afford to keep it that way.",
     "cta": {
       "label": "→ Compare F‑Type 3.0 V6 (340) engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -508,7 +508,7 @@
     },
     "cta": {
       "label": "→ Compare F‑Type 3.0 V6 (340) engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -593,7 +593,7 @@
     "finalCta": "Find the best Jaguar F‑Type 3.0 V6 (340) engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back behind the wheel of your sports car with confidence - from £2,500 for a used engine to £10,000 for a full rebuild, we have options for every budget and every F‑Type.",
     "ctaButton": {
       "label": "Compare Jaguar F‑Type 3.0 V6 (340) Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

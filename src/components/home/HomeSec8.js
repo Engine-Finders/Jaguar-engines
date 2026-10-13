@@ -6,7 +6,7 @@ import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
 
-const ICON_LG = "h-9 w-9";
+const ICON_LG = "h-[3.75rem] w-[3.75rem] md:h-[4.5rem] md:w-[4.5rem]";
 
 function cleanText(value = "") {
   return String(value || "")
@@ -111,7 +111,7 @@ function DataNote({ note, isDark }) {
       }`}
     >
       <span className="flex h-9 w-9 shrink-0 items-center justify-center md:h-10 md:w-10">
-        <HomeIcon name="info" isDark={isDark} className={ICON_LG} />
+        <HomeIcon name="info" isDark={isDark} className="h-11 w-11 md:h-12 md:w-12" />
       </span>
       <p className={`min-w-0 text-[0.72rem] leading-[1.35] md:text-[0.76rem] ${isDark ? "text-white/70" : "text-[var(--color-text-muted)]"}`}>
         <strong className={isDark ? "text-white" : "text-black"}>{note.label}</strong>{" "}

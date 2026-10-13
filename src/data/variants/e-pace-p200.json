@@ -71,7 +71,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "PT204 (AJ20P4, 2.0 4-cyl turbo petrol)",
-              "url": "https://jaguarengines.uk/engines/pt204/"
+              "url": "https://jaguarengines.uk/engine/ingenium-20-petrol"
             }
           ]
         },
@@ -199,7 +199,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "Get My Free E‑Pace P200 Engine Quotes Now →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -261,7 +261,7 @@
     "labourEstimate": "Fitting an E‑Pace P200 engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
     "cta": {
       "label": "→ Compare E‑Pace P200 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -281,7 +281,7 @@
         "recommendation": "Timing chain wear is a well‑documented issue on the Ingenium petrol engine, particularly in 2018–2021 cars. Jaguar dealers can fit an upgraded chain to eliminate the issue. If you hear a rattling noise on cold start, have the chain inspected immediately - ignoring it can lead to catastrophic engine failure. Regular oil changes with JLR‑spec oil are essential.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-stretch/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -317,7 +317,7 @@
         "recommendation": "The Ingenium petrol engine's cooling system - including the water pump and associated hoses - is a known weak point. If you notice temperature fluctuations or coolant loss, have the cooling system inspected. Replacing a failing water pump preventatively is far cheaper than the overheating damage it can cause.",
         "failureLink": {
           "label": "",
-          "href": "/failures/water-pump-failure/"
+          "href": "/failures"
         }
       }
     ]
@@ -327,7 +327,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, every E‑Pace P200 engine covered, with a 12‑month warranty as standard.",
     "button": {
       "label": "Get My Free E‑Pace P200 Engine Quotes Now →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -391,7 +391,7 @@
     "closingVerdict": "The P200 is the entry‑point to E‑Pace petrol ownership - a 2.0‑litre Ingenium turbo that delivers 200 PS and respectable economy. While the petrol Ingenium is generally more reliable than the diesel, early cars (2018–2021) are prone to timing chain and turbo issues. Post‑2021 models received improvements. Buy on full service history, prioritise newer examples, and never ignore a cold‑start rattle.",
     "cta": {
       "label": "→ Compare E‑Pace P200 engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -460,7 +460,7 @@
     },
     "cta": {
       "label": "→ Compare E‑Pace P200 engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -532,7 +532,7 @@
     "finalCta": "Find the best Jaguar E‑Pace P200 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence - from £2,000 for a used unit to £7,500 for a fully rebuilt Ingenium petrol engine.",
     "ctaButton": {
       "label": "Compare Jaguar E‑Pace P200 Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

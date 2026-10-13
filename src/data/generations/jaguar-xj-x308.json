@@ -39,19 +39,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ26/AJ27 3.2 V8",
-              "url": "https://jaguarengines.uk/engines/aj26/"
+              "url": "https://jaguarengines.uk/engine/aj-v8-4-0-4-2"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "AJ26/AJ27 4.0 V8",
-              "url": "https://jaguarengines.uk/engines/aj26/"
+              "url": "https://jaguarengines.uk/engine/aj-v8-4-0-4-2"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "AJ26/AJ27 4.0 Supercharged V8 (XJR)",
-              "url": "https://jaguarengines.uk/engines/aj26-supercharged/"
+              "url": "https://jaguarengines.uk/engine/aj-v8-4-0-4-2"
             }
           ]
         },
@@ -63,25 +63,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "3.2 V8",
-              "url": "https://jaguarengines.uk/xj/x308/3-2-v8/"
+              "url": "https://jaguarengines.uk/xj/x308"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "4.0 V8",
-              "url": "https://jaguarengines.uk/xj/x308/4-0-v8/"
+              "url": "https://jaguarengines.uk/xj/x308"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "XJR",
-              "url": "https://jaguarengines.uk/xj/x308/xjr/"
+              "url": "https://jaguarengines.uk/xj/x308"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "Daimler Super V8",
-              "url": "https://jaguarengines.uk/xj/x308/daimler-super-v8/"
+              "url": "https://jaguarengines.uk/xj/x308"
             }
           ]
         },
@@ -243,7 +243,7 @@
     ],
     "primaryCta": {
       "label": "Explore X308 Engines →",
-      "href": "#"
+      "href": "/xj/x308"
     },
     "dataIntegrityNote": ""
   },
@@ -422,7 +422,7 @@
         "recommendation": "On any X308 approaching 80,000 miles with no documented timing-chain work, have the tensioners inspected immediately - £1,000–£2,500 preventative repair is dramatically cheaper than the £4,500–£8,000 replacement that follows if ignored.",
         "cta": {
           "label": "Compare AJ-V8 engine prices for your X308 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -450,7 +450,7 @@
         "recommendation": "On any X308, service the ZF 5HP24 transmission every 60,000 miles - an £800–£1,800 preventative service is cheaper than the £2,500–£4,000 replacement that follows if ignored.",
         "cta": {
           "label": "Compare 5HP24 transmission prices for your X308 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -478,7 +478,7 @@
         "recommendation": "When buying an X308, prioritise post-June 2000 models with steel liners. If you own a pre-2000 example, monitor oil consumption closely and have a compression test performed at the first sign of excessive consumption.",
         "cta": {
           "label": "Compare AJ-V8 engine prices for your X308 →",
-          "href": "#"
+          "href": "/quote"
         }
       }
     ]
@@ -623,7 +623,7 @@
     "finalCta": "Find the best Jaguar XJ X308 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar XJ X308 Engine Prices on EnginesMarket →",
-      "href": "#",
+      "href": "/quote",
       "note": "[PLACEHOLDER - confirm EnginesMarket URL structure]"
     }
   }

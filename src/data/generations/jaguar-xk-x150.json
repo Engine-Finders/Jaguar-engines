@@ -39,31 +39,31 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ34 4.2 V8 Engine",
-              "url": "https://jaguarengines.uk/engines/aj34/"
+              "url": "https://jaguarengines.uk/engine/aj-v8-4-0-4-2"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "AJ34S 4.2 Supercharged V8 Engine",
-              "url": "https://jaguarengines.uk/engines/aj34s/"
+              "url": "https://jaguarengines.uk/engine/aj-v8-4-0-4-2"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "AJ133 / 508PN 5.0 V8 Engine",
-              "url": "https://jaguarengines.uk/engines/aj133/"
+              "url": "https://jaguarengines.uk/engine/aj133"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "AJ133 / 508PS 5.0 Supercharged V8 Engine",
-              "url": "https://jaguarengines.uk/engines/aj133s/"
+              "url": "https://jaguarengines.uk/engine/aj133"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "AJ133 / 508PS XKR-S Engine",
-              "url": "https://jaguarengines.uk/engines/aj133-xkrs/"
+              "url": "https://jaguarengines.uk/engine/aj133"
             }
           ]
         },
@@ -75,37 +75,37 @@
               "@type": "ListItem",
               "position": 1,
               "name": "XK 4.2",
-              "url": "https://jaguarengines.uk/xk/xk-42/"
+              "url": "https://jaguarengines.uk/xk"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "XKR 4.2",
-              "url": "https://jaguarengines.uk/xk/xkr-42/"
+              "url": "https://jaguarengines.uk/xk"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "XK 5.0",
-              "url": "https://jaguarengines.uk/xk/xk-50/"
+              "url": "https://jaguarengines.uk/xk"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "XKR 5.0",
-              "url": "https://jaguarengines.uk/xk/xkr-50/"
+              "url": "https://jaguarengines.uk/xk"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "XKR-S",
-              "url": "https://jaguarengines.uk/xk/xkrs/"
+              "url": "https://jaguarengines.uk/xk/xkr-s"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "XKR-S GT",
-              "url": "https://jaguarengines.uk/xk/xkrs-gt/"
+              "url": "https://jaguarengines.uk/xk"
             }
           ]
         },
@@ -278,7 +278,7 @@
     ],
     "primaryCta": {
       "label": "Explore XK X150 Engines →",
-      "href": "#"
+      "href": "/xk/x150"
     },
     "dataIntegrityNote": ""
   },
@@ -502,7 +502,7 @@
         "recommendation": "If you're buying a pre‑2012 5.0-litre X150, look for documented timing chain work or budget £2,500–£4,500 immediately. A preventative chain and tensioner replacement is dramatically cheaper than the £5,500+ replacement that follows a failure. On a car worth under £15,000, evaluate carefully before committing.",
         "cta": {
           "label": "Compare AJ133 engine prices for your XK X150 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -515,7 +515,7 @@
         "recommendation": "Have the cooling system inspected at every service - a £400–£800 preventative thermostat housing and water pump replacement is far cheaper than the £3,500+ replacement that follows an overheat. On a car worth over £10,000, this is a straightforward repair decision.",
         "cta": {
           "label": "Compare AJ34 cooling system repair quotes for your XK X150 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -528,7 +528,7 @@
         "recommendation": "If your XKR develops a rattling noise from the supercharger area, have the coupler inspected immediately - a £500–£1,000 coupler replacement is far cheaper than the £4,500+ supercharger rebuild that follows a failure. On a car worth over £20,000, this is a manageable cost of ownership.",
         "cta": {
           "label": "Compare supercharger coupler repair quotes for your XK X150 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -541,7 +541,7 @@
         "recommendation": "Before chasing electrical faults on an X150, check the battery voltage first. A weak battery (below 12.4V) can cause a cascade of warning lights that disappear with a new battery. If you're buying an X150, budget for a new battery immediately.",
         "cta": {
           "label": "Compare X150 electrical diagnosis quotes →",
-          "href": "#"
+          "href": "/tools/diagnostic-wizard"
         }
       }
     ]
@@ -744,7 +744,7 @@
     "finalCta": "Find the best Jaguar XK X150 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar XK X150 Engine Prices on EnginesMarket →",
-      "href": "#",
+      "href": "/quote",
       "note": "[PLACEHOLDER - confirm EnginesMarket URL structure]"
     }
   }

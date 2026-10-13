@@ -1,6 +1,6 @@
 {
-  "_note": "45-degree front-view Jaguar photos. Keys are model|generation (lower-case). Regenerate from the source folder rather than editing by hand.",
-  "basePath": "/cars/",
+  "_note": "45-degree front-view Jaguar photos, cut out on a transparent background. Keys are model|generation (lower-case). Regenerate from the source folder rather than editing by hand.",
+  "basePath": "/cars-cutout/",
   "generations": {
     "e-pace|x540": "jaguar-e-pace-x540-se-compact-suv-2017-2020-new-corris-grey-e-pace-se.webp",
     "f-pace|x761": "jaguar-f-pace-x761-s-suv-2016-2018-new-firenze-red-f-pace-s.webp",

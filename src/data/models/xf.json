@@ -64,31 +64,31 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ126 3.0 V6 SC",
-              "url": "https://jaguarengines.uk/engines/aj126/"
+              "url": "https://jaguarengines.uk/engine/306dt-306ps"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "276DT 2.7 TDV6",
-              "url": "https://jaguarengines.uk/engines/276dt/"
+              "url": "https://jaguarengines.uk/engine/ajd-v6-diesel"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "306DT 3.0 TDV6",
-              "url": "https://jaguarengines.uk/engines/306dt/"
+              "url": "https://jaguarengines.uk/engine/306dt"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "AJ200D / 204DTD Ingenium Diesel",
-              "url": "https://jaguarengines.uk/engines/aj200d/"
+              "url": "https://jaguarengines.uk/engine/ingenium-2-0-diesel"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "AJ200P / 204PT Ingenium Petrol",
-              "url": "https://jaguarengines.uk/engines/aj200p/"
+              "url": "https://jaguarengines.uk/engine/ingenium-20-petrol"
             }
           ]
         },
@@ -236,7 +236,7 @@
     ],
     "primaryCta": {
       "label": "Explore XF Engines →",
-      "href": "#"
+      "href": "/xf"
     }
   },
   "ownershipVerdict": {
@@ -360,7 +360,7 @@
         "verdict": "",
         "cta": {
           "label": "",
-          "href": "#"
+          "href": "/compare"
         }
       }
     ],
@@ -371,7 +371,7 @@
     },
     "comparisonLink": {
       "label": "Read the full comparison: X250 vs X260 →",
-      "href": "#"
+      "href": "/compare/xf-x250-vs-x260"
     }
   },
   "engineDatabase": {
@@ -479,7 +479,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/engine/306dt-306ps"
         }
       },
       {
@@ -493,7 +493,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/engine/ingenium-2-0-diesel"
         }
       },
       {
@@ -507,7 +507,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/engine/306dt-306ps"
         }
       },
       {
@@ -521,7 +521,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/engine/306dt-306ps"
         }
       },
       {
@@ -535,7 +535,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/engine/ingenium-20-petrol"
         }
       },
       {
@@ -549,7 +549,7 @@
         },
         "link": {
           "label": "Read more →",
-          "href": "#"
+          "href": "/failures/zf-8-speed-gearbox"
         }
       }
     ],
@@ -848,19 +848,19 @@
         "icon": "🔍",
         "title": "Explore XF Generations → Read the full X250 vs X260 breakdown before you buy. Explore Generations →",
         "text": "",
-        "href": "#"
+        "href": "/compare"
       },
       {
         "icon": "🩺",
         "title": "Diagnose My XF → Not sure if your engine is failing? Run our diagnostic tool for a personalised verdict. Diagnose My XF →",
         "text": "",
-        "href": "#"
+        "href": "/tools/diagnostic-wizard"
       },
       {
         "icon": "🤝",
         "title": "Compare UK Specialists → Get quotes from 15+ vetted Jaguar specialists who work on XFs daily. Compare Specialists →",
         "text": "",
-        "href": "#"
+        "href": "/quote"
       }
     ],
     "footerNote": ""

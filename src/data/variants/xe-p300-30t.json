@@ -71,7 +71,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "204PT / AJ200P",
-              "url": "https://jaguarengines.uk/engines/204pt/"
+              "url": "https://jaguarengines.uk/engine/ingenium-20-petrol"
             }
           ]
         },
@@ -199,7 +199,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "Get My Free XE P300 / 30t Engine Quotes Now →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -278,7 +278,7 @@
     "labourEstimate": "Fitting an XE P300 / 30t engine typically takes 10–14 hours at £75–£110/hr (independent) or £130–£180/hr (London/SE dealer). The Ingenium engine's timing chain replacement is an exceptionally complex job. [PLACEHOLDER - confirm vs cost sheet]",
     "cta": {
       "label": "→ Compare XE P300 / 30t engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -298,7 +298,7 @@
         "recommendation": "Timing chain stretch is the single biggest reliability concern on the Ingenium petrol engine. The factory-recommended 21,000-mile oil change intervals almost guarantee timing chain failure. The chain guides are prone to wear, and the tensioners can fail suddenly. JLR recognised this weakness in the timing chain design and issued a full recall on the engine in South Korea. A cold-start rattle is the early warning sign - ignore it and you risk piston-valve contact and a full engine replacement. Regular oil changes every 5,000–8,000 miles are the best prevention.",
         "failureLink": {
           "label": "",
-          "href": "/failures/ingenium-timing-chain/"
+          "href": "/failures/ingenium-diesel-timing-chain"
         }
       },
       {
@@ -316,7 +316,7 @@
         "recommendation": "The Ingenium petrol engine is known for VVT solenoid problems on early engines. The phase regulator clutch on the intake shaft has a modest lifespan. Symptoms include rough idle and hesitation. VVT solenoid failure is an easy fix and nothing to worry about if caught early. If you experience rough running, have the VVT system inspected promptly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/vvt-solenoid/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -334,7 +334,7 @@
         "recommendation": "Petrol AJ200 engines (P200–P300) share a failure-prone high-pressure fuel pump (OEM LR123456). JLR issued Technical Service Bulletin TSB-08-19-003 to address hesitation and power loss across all petrol variants. If you experience hesitation or power loss, have the HPFP inspected immediately. Replacing the pump before it fails completely can prevent damage to other fuel system components.",
         "failureLink": {
           "label": "",
-          "href": "/failures/hpfp-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -352,7 +352,7 @@
         "recommendation": "In units of the first years of production, the charge air pipe often breaks. The plastic pipe can become brittle due to heat cycles, leading to boost leaks and performance issues. If you notice a whistling sound or loss of power, have the charge air system inspected.",
         "failureLink": {
           "label": "",
-          "href": "/failures/boost-leak/"
+          "href": "/failures"
         }
       },
       {
@@ -370,7 +370,7 @@
         "recommendation": "The Ingenium engine has been marked by a number of problems, including too long crankshaft pulley fixing bolts causing oil pump wedge. If you experience an oil pressure warning, stop driving immediately and have the engine inspected. Regular oil changes are the best prevention.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-pump-failure/"
+          "href": "/failures"
         }
       }
     ]
@@ -380,7 +380,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, every XE engine variant covered, with a 12-month warranty as standard.",
     "button": {
       "label": "Get My Free XE P300 / 30t Engine Quotes Now →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -451,7 +451,7 @@
     "closingVerdict": "The Jaguar XE P300 and 30t represent the sporting pinnacle of Jaguar's compact saloon range - 300 PS, 400 Nm, and a chassis that rivals the best in the segment. The <a href='https://jaguarengines.uk/engine/ingenium-20-petrol'>Ingenium 2.0</a>-litre petrol engine delivers strong performance but demands respect: timing chain stretch is the defining weakness, exacerbated by Jaguar's overly optimistic 21,000-mile service intervals. Regular oil changes (every 5,000–8,000 miles) are absolutely essential. Buy on service history, maintain on a shortened schedule, and this is one of the most rewarding sports saloons you can own.",
     "cta": {
       "label": "→ Compare XE P300 / 30t engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -535,7 +535,7 @@
     },
     "cta": {
       "label": "→ Compare XE P300 / 30t engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -620,7 +620,7 @@
     "finalCta": "Find the best Jaguar XE P300 or 30t engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence - from £2,500 for a used engine to £8,500 for a full rebuild, we have options for every budget and every XE.",
     "ctaButton": {
       "label": "Compare Jaguar XE P300 / 30t Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

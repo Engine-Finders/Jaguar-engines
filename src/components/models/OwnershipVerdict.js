@@ -74,11 +74,11 @@ function StatIcon({ iconKey, isDark }) {
 
   return (
     <span
-      className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${
+      className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full md:h-16 md:w-16 ${
         isDark ? "bg-white/10" : "bg-[#ececeb]"
       }`}
     >
-      <HomeIcon name={name} isDark={isDark} className="h-9 w-9 object-contain" />
+      <HomeIcon name={name} isDark={isDark} className="h-12 w-12 object-contain md:h-[3.35rem] md:w-[3.35rem]" />
     </span>
   );
 }
@@ -126,11 +126,11 @@ function OneLineVerdict({ text, isDark }) {
       }`}
     >
       <span
-        className={`float-left mr-3 mb-1 flex h-10 w-10 items-center justify-center rounded-full md:mr-4 ${
+        className={`float-left mr-3 mb-1 flex h-16 w-16 items-center justify-center rounded-full md:mr-4 md:h-20 md:w-20 ${
           isDark ? "bg-white/10" : "bg-white shadow-sm ring-1 ring-black/5"
         }`}
       >
-        <HomeIcon name="shield" isDark={isDark} className="h-9 w-9 object-contain" />
+        <HomeIcon name="shield" isDark={isDark} className="h-14 w-14 object-contain md:h-16 md:w-16" />
       </span>
       <HomeIcon
         name="quote"
@@ -174,20 +174,19 @@ export default function OwnershipVerdict({ data }) {
             <div className="mt-3">
               <MStripe />
             </div>
-            <div className="relative mt-4 h-[200px] max-w-[420px] overflow-hidden rounded-md border border-[var(--color-border)] bg-[rgba(255,255,255,0.18)] shadow-[0_10px_24px_var(--color-shadow)] md:mt-5 md:h-[260px] md:max-w-[480px]">
+            {/* Car cut-out standing on the section background, with a soft ground shadow */}
+            <div className="relative mx-auto mt-4 aspect-[16/9] w-full max-w-[520px] md:mt-5 lg:mx-0">
+              <div
+                className={`absolute inset-x-[12%] bottom-[5%] h-[12%] rounded-[50%] blur-xl ${
+                  isDark ? "bg-black/70" : "bg-black/25"
+                }`}
+              />
               <Image
-                src={carImageFor(data.h2) || "/home-image/right.webp"}
+                src={carImageFor(data.h2) || "/home-image/right-cutout.webp"}
                 alt=""
                 fill
-                className="object-cover object-[35%_center] md:object-center"
-                sizes="(min-width: 768px) 640px, 100vw"
-              />
-              <div
-                className={`absolute inset-0 ${
-                  isDark
-                    ? "bg-[linear-gradient(180deg,rgba(2,13,25,0.05)_0%,rgba(2,13,25,0.35)_100%)]"
-                    : "bg-[linear-gradient(180deg,rgba(255,255,255,0.05)_0%,rgba(255,255,255,0.18)_100%)]"
-                }`}
+                className="object-contain object-bottom px-[4%] pb-[6%]"
+                sizes="(min-width: 1024px) 520px, (min-width: 640px) 520px, 92vw"
               />
             </div>
             {data.subHeadline ? (

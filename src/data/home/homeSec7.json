@@ -26,7 +26,7 @@
         "text": "pre-2019 timing chain tensioner wear - revised 2019 onward much improved",
         "type": "watch"
       },
-      "href": "#"
+      "href": "/engine/ingenium-2-0-diesel"
     },
     {
       "code": "AJ126",
@@ -42,7 +42,7 @@
         "text": "cooling system & plastic crossover pipe - well-documented weak point",
         "type": "watch"
       },
-      "href": "#"
+      "href": "/engine/306dt-306ps"
     },
     {
       "code": "276DT",
@@ -58,7 +58,7 @@
         "text": "oil pump failure can kill the engine outright - shared with Land Rover",
         "type": "avoid"
       },
-      "href": "#"
+      "href": "/engine/ajd-v6-diesel"
     },
     {
       "code": "AJ200P / 204PT",
@@ -74,7 +74,7 @@
         "text": "most reliable modern Jaguar engine - only water pump weakness",
         "type": "best"
       },
-      "href": "#"
+      "href": "/engine/ingenium-20-petrol"
     },
     {
       "code": "<a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> / 508PN",
@@ -90,12 +90,12 @@
         "text": "pre-2013 timing chain tensioner risk; 2013+ much improved",
         "type": "watch"
       },
-      "href": "#"
+      "href": "/engine/aj133"
     }
   ],
   "legend": {
     "title": "What do these verdicts mean?",
     "text": "Our verdicts combine failure frequency, repair complexity, and total cost of ownership to help you make the right decision.",
-    "href": "#"
+    "href": "/failures"
   }
 }

@@ -37,7 +37,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "See X-Type 3.0 V6 Engine Options →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -108,7 +108,7 @@
     "labourEstimate": "Fitting an X-Type 3.0 V6 engine typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
     "cta": {
       "label": "→ Compare X-Type 3.0 V6 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -128,7 +128,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -146,7 +146,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/x-type"
         }
       },
       {
@@ -164,7 +164,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures"
         }
       }
     ]
@@ -174,7 +174,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, every X-Type 3.0 V6 variant covered, with a 12-month warranty as standard.",
     "button": {
       "label": "See X-Type 3.0 V6 Engine Options →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -246,7 +246,7 @@
     "closingVerdict": "The X-Type 3.0 V6 is Jaguar's entry-level V6 in the X400 generation - a 3.0-litre AJ30 engine producing 227–231 bhp. Based on the Ford Duratec V6, it's a generally robust engine with well-documented vulnerabilities: timing chain tensioner wear, coolant leaks from the thermostat housing and reservoir, ignition coil failure, and oil leaks from valve cover gaskets. The engine itself is capable of high mileage with proper maintenance, but the X-Type's reputation for electrical and drivetrain issues (particularly the AWD transfer case) means the rest of the car should be carefully inspected too. With typical X-Type values ranging from £2,000 to £6,000, an engine replacement is a significant investment - a well-maintained example with documented service history is the safest choice.",
     "cta": {
       "label": "→ Compare X-Type 3.0 V6 engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -320,7 +320,7 @@
     },
     "cta": {
       "label": "→ Compare X-Type 3.0 V6 engine prices for your X-Type",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -405,7 +405,7 @@
     "finalCta": "Find the best Jaguar X-Type 3.0 V6 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get your X-Type back on the road with confidence.",
     "ctaButton": {
       "label": "Explore Jaguar X-Type 3.0 V6 Engine Quotes →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

@@ -7,7 +7,7 @@
       "title": "Jaguar AJD4 Engine - Specs, Reliability & Replacement Cost",
       "description": "The AJD4 is a capable diesel, but timing chain and EGR issues are common. 590+ UK enquiries [JAG-VERIFIED]. Compare quotes from vetted specialists today.",
       "type": "website",
-      "url": "https://jaguarengines.uk/engines/ajd4-204dtd/",
+      "url": "https://jaguarengines.uk/engine/ajd4-204dtd",
       "image": "https://jaguarengines.uk/images/jaguar/engines/ajd4-204dtd.jpg",
       "siteName": "jaguarengines.uk"
     },
@@ -51,25 +51,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Jaguar XF X250 2.2D",
-              "url": "https://jaguarengines.uk/jaguar/xf-x250/"
+              "url": "https://jaguarengines.uk/xf/x250"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Jaguar XJ X351 2.2D",
-              "url": "https://jaguarengines.uk/jaguar/xj-x351/"
+              "url": "https://jaguarengines.uk/xj/x351"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Jaguar XE X760 2.0D / 2.2D (early)",
-              "url": "https://jaguarengines.uk/jaguar/xe-x760/"
+              "url": "https://jaguarengines.uk/xe/x760"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "Jaguar F-Pace X761 2.2D (early production)",
-              "url": "https://jaguarengines.uk/jaguar/f-pace-x761/"
+              "url": "https://jaguarengines.uk/f-pace/x761"
             }
           ]
         },
@@ -173,7 +173,7 @@
         {
           "@type": "WebPage",
           "name": "Jaguar AJD4 Engine - Specs, Reliability & Replacement Cost",
-          "url": "https://jaguarengines.uk/engines/ajd4-204dtd/",
+          "url": "https://jaguarengines.uk/engine/ajd4-204dtd",
           "author": {
             "@type": "Organization",
             "name": "jaguarengines.uk Editorial Team"
@@ -195,7 +195,7 @@
     "trustStrip": [],
     "primaryCta": {
       "label": "Compare AJD4 / 204DTD Engine Prices →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "atAGlance": {
@@ -296,7 +296,7 @@
     "sharedCostNote": "Not applicable - this engine is exclusive to Jaguar.",
     "cta": {
       "label": "→ Compare AJD4 / 204DTD engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "faq": {
@@ -337,7 +337,7 @@
     "finalCta": "Find the best Jaguar AJD4 / 204DTD engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar AJD4 / 204DTD Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

@@ -54,31 +54,31 @@
               "@type": "ListItem",
               "position": 1,
               "name": "XJ Series 1 (1968–1973) XK6 2.8L",
-              "url": "https://jaguarengines.uk/xj/series-1/"
+              "url": "https://jaguarengines.uk/xj/xj-series-1"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "XJ Series 1 (1968–1973) XK6 3.4L",
-              "url": "https://jaguarengines.uk/xj/series-1/"
+              "url": "https://jaguarengines.uk/xj/xj-series-1"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "XJ Series 2 (1973–1979) XK6 2.8L",
-              "url": "https://jaguarengines.uk/xj/series-2/"
+              "url": "https://jaguarengines.uk/xj/xj-series-2"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "XJ Series 2 (1973–1979) XK6 3.4L",
-              "url": "https://jaguarengines.uk/xj/series-2/"
+              "url": "https://jaguarengines.uk/xj/xj-series-2"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "XJ Series 3 (1979–1987) XK6 3.4L",
-              "url": "https://jaguarengines.uk/xj/series-3/"
+              "url": "https://jaguarengines.uk/xj/xj-series-3"
             }
           ]
         },
@@ -90,13 +90,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "XK6 2.8L",
-              "url": "https://jaguarengines.uk/engines/xk6-28/"
+              "url": "https://jaguarengines.uk/engine/xk-straight-six"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "XK6 3.4L",
-              "url": "https://jaguarengines.uk/engines/xk6-34/"
+              "url": "https://jaguarengines.uk/engine/xk-straight-six"
             }
           ]
         },
@@ -224,7 +224,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "See Jaguar XJ 2.8 / 3.4 Engine Options →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -327,7 +327,7 @@
     "labourEstimate": "Fitting an XJ XK6 engine typically takes 10–14 hours at £65–£95/hr (independent). The straightforward inline-six layout makes these engines more accessible than modern V8s, but age-related seized fasteners can add time.",
     "cta": {
       "label": "→ Compare XJ 2.8 / 3.4 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -347,7 +347,7 @@
         "recommendation": "The XK engine's cooling system is its Achilles' heel. Internally restricted radiators, silt blocking the water jackets, poor coolant circulation and sticking thermostats or trapped air are all common issues. Behind the cylinder liners are cooling grooves which tended to get blocked with rust over time, often leading to overheating, piston seizure and a cracked cylinder block. Regular cooling system maintenance - flushing, new coolant, and checking the radiator - is essential. If you see any signs of overheating, have the system inspected immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/cooling-system-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -365,7 +365,7 @@
         "recommendation": "The XK engine uses both upper and lower timing chains. With age, these chains stretch and the tensioners wear. Some timing chain rattle on start-up is normal and should quieten down as the engine warms up. However, if the rattle doesn't go away, a new timing chain may be required. Significant chain wear usually means an engine rebuild or partial stripdown is approaching. At the first sign of persistent rattle, book an inspection.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -383,7 +383,7 @@
         "recommendation": "All XK engines use solid tappets, which means valve clearances must be adjusted manually using shims. Clearances can tighten over time due to valve seat wear, and tight clearances prevent valves from closing fully - this can lead to hard starting, loss of compression, burnt valves and misfires when hot. Regular valve clearance checks (every 30,000 miles) are essential for XK engine health. A ticking/tapping noise is the most common warning sign.",
         "failureLink": {
           "label": "",
-          "href": "/failures/valve-tappet-wear/"
+          "href": "/failures"
         }
       }
     ]
@@ -393,7 +393,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, each experienced with the classic XK6 straight-six, with a 12-month warranty as standard.",
     "button": {
       "label": "See Jaguar XJ 2.8 / 3.4 Engine Options →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -457,7 +457,7 @@
     "closingVerdict": "The XJ's XK6 engines are legendary - robust, smooth and characterful. The 3.4 is the better choice, offering more torque for the heavier XJ saloon. The 2.8 was the entry-level option, \"never particularly popular\" and dropped in favour of the 3.4 from 1975. Both engines require regular maintenance - valve clearances, cooling system care, and timing chain attention. A £4,000–£6,000 rebuilt engine on an XJ valued at £10,000–£20,000 is 20–60% of the car's value - worth it for a well-maintained example. With the 60% Jaguar scrap threshold, assess the overall condition of the vehicle carefully.",
     "cta": {
       "label": "→ Compare XJ 2.8 / 3.4 engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -525,7 +525,7 @@
     },
     "cta": {
       "label": "→ Compare XJ 2.8 / 3.4 engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -610,7 +610,7 @@
     "finalCta": "Find the best Jaguar XJ 2.8 / 3.4 engine replacement UK owners rely on. Compare prices from trusted specialists on JaguarEngine.uk today and keep your classic XJ on the road with confidence.",
     "ctaButton": {
       "label": "Explore Jaguar XJ 2.8 / 3.4 Engine Quotes →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

@@ -67,8 +67,8 @@ function modelsFittedKey(rowMap) {
 
 function CircleIcon({ metric, isDark, compact = false }) {
   const icon = METRIC_ICONS[metric] || "engine";
-  const sizeClass = compact ? "h-10 w-10" : "h-10 w-10";
-  const iconClass = compact ? "h-8 w-8 md:h-9 md:w-9" : "h-9 w-9";
+  const sizeClass = compact ? "h-10 w-10 md:h-14 md:w-14" : "h-14 w-14";
+  const iconClass = compact ? "h-8 w-8 md:h-11 md:w-11" : "h-11 w-11";
 
   return (
     <span className={`flex shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] ${sizeClass}`}>

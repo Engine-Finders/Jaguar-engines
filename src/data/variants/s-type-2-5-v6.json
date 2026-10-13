@@ -65,7 +65,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ25",
-              "url": "https://jaguarengines.uk/engines/aj25/"
+              "url": "https://jaguarengines.uk/engine/aj-v6-petrol"
             }
           ]
         },
@@ -193,7 +193,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "See Jaguar S‑Type 2.5 V6 Engine Options →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK‑Wide Network"
@@ -264,7 +264,7 @@
     "labourEstimate": "Fitting an S‑Type 2.5 V6 engine typically takes 10–14 hours at £75–£110/hr (independent) or £130–£180/hr (London/SE dealer). The V6 layout and longitudinal mounting make the engine reasonably accessible, but timing chain work requires significant disassembly. [PLACEHOLDER - confirm vs cost sheet]",
     "cta": {
       "label": "→ Compare S‑Type 2.5 V6 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -284,7 +284,7 @@
         "recommendation": "All Jaguar S‑Type variants (X200/X250 chassis) share timing chain tensioner failures (OEM LR108765) due to shared AJ‑V6/AJ‑V8 architecture. Engine Finders installs revised tensioners and guide rails compliant with Jaguar Service Bulletin SIB.037.18, eliminating premature wear and catastrophic chain failure. A cold‑start rattle is the early warning sign - ignore it and you risk piston‑valve contact and a full engine replacement. Regular oil changes are the best prevention. The chain should last the life of the engine with proper maintenance.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-tensioner/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -302,7 +302,7 @@
         "recommendation": "AJ‑V6 and AJ‑V8 engines across all S‑Type variants suffer from VCT solenoid clogging (OEM LR223456) causing rough idle and power loss. We replace these with upgraded OEM‑spec solenoids and perform full phaser inspections during timing chain service. If you experience rough running, have the VCT system inspected promptly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/vct-solenoid/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -320,7 +320,7 @@
         "recommendation": "Cooling system problems are more of an issue on the 2.5 than the 3.0. Common causes include small leaks in hoses, faulty header tanks, heater control valve leaks, failing thermostats, water pump issues, and in the worst case, head gasket failure. If you notice coolant loss or temperature fluctuations, have the cooling system pressure‑tested immediately. Replacing the header tank and checking for small hose leaks is a good starting point for diagnosis.",
         "failureLink": {
           "label": "",
-          "href": "/failures/coolant-leak/"
+          "href": "/failures"
         }
       },
       {
@@ -338,7 +338,7 @@
         "recommendation": "The main problems with the AJ25 are associated with air leaks due to drying gaskets. The electrically driven geometry change system often fails in the intake. The crankcase ventilation valve (CCV) requires regular cleaning or the lubricant will press from all the cracks. If you experience erratic idle or rough running, have the intake and vacuum system inspected for leaks and the CCV valve cleaned or replaced.",
         "failureLink": {
           "label": "",
-          "href": "/failures/vacuum-leak/"
+          "href": "/failures"
         }
       },
       {
@@ -356,7 +356,7 @@
         "recommendation": "At high mileage, oil consumption occurs due to the fault of stuck piston rings. The unit has many rare and expensive parts, so a full rebuild can be costly. Check your oil level regularly - this engine is not one you can neglect. Use the correct grade of fully synthetic oil (5W‑30 is recommended) and change it regularly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-consumption/"
+          "href": "/failures"
         }
       }
     ]
@@ -366,7 +366,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, every S‑Type engine variant covered, with a 12‑month warranty as standard.",
     "button": {
       "label": "See Jaguar S‑Type 2.5 V6 Engine Options →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -438,7 +438,7 @@
     "closingVerdict": "The Jaguar S‑Type 2.5 V6 is an elegant classic saloon with a smooth, refined V6 engine from the Ford Duratec family. The AJ25 is a 200‑bhp, 2.5‑litre V6 that offers adequate performance and a characterful soundtrack. However, it has well‑documented weaknesses: timing chain tensioner failure (shared across the AJ‑V6 and AJ‑V8 families), VCT solenoid clogging, cooling system issues (more prevalent on the 2.5 than the 3.0), air leaks from drying gaskets, and oil consumption at high mileage. The S‑Type itself has a reputation for electrical gremlins and some corrosion on chassis components. Buy on service history, prioritise a car with upgraded timing chain tensioners, and budget for preventative cooling system maintenance. This is a stylish classic that rewards careful ownership but punishes neglect.",
     "cta": {
       "label": "→ Compare S‑Type 2.5 V6 engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -516,7 +516,7 @@
     },
     "cta": {
       "label": "→ Compare S‑Type 2.5 V6 engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -601,7 +601,7 @@
     "finalCta": "Find the best Jaguar S‑Type 2.5 V6 engine replacement UK owners rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence - from £1,500 for a used engine to £6,500 for a full rebuild, we have options for every budget and every S‑Type.",
     "ctaButton": {
       "label": "Explore Jaguar S‑Type 2.5 V6 Engine Quotes →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

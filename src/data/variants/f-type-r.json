@@ -65,7 +65,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ133 (5.0L Supercharged V8)",
-              "url": "https://jaguarengines.uk/engines/aj133/"
+              "url": "https://jaguarengines.uk/engine/aj133"
             }
           ]
         },
@@ -193,7 +193,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "Get My Free F-Type R Engine Quotes Now →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -264,7 +264,7 @@
     "labourEstimate": "Fitting an F-Type R engine typically takes 16–22 hours at £80–£120/hr (independent) or £140–£200/hr (London/SE dealer). The supercharged V8's complexity and tight engine bay make this a specialist job.",
     "cta": {
       "label": "→ Compare F-Type R engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -284,7 +284,7 @@
         "recommendation": "Timing chain tensioner wear is the most significant issue on the AJ133 V8. Early 5.0L models used aluminium guide rails that were weaker than the steel tensioner, which would dig into the guide and wear it down over time. This issue was revised by JLR in 2015 with a steel insert, but continued failures have been reported beyond this date. If you hear a rattle on cold start, get the timing chain system inspected immediately. Regular oil changes are essential - the specified service interval of 16,000 miles is too long; change oil at half that mileage.",
         "failureLink": {
           "label": "Read the full timing chain failure guide",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -302,7 +302,7 @@
         "recommendation": "Water pump failures are a common issue on the 5.0-litre supercharged V8. The engine can be particularly susceptible to cooling system issues when driven hard, such as on a circuit. The water pump also drives the supercharger belt, making replacement a more involved job. Many specialists recommend proactively replacing the water pump around 60,000 miles, especially on the supercharged version.",
         "failureLink": {
           "label": "Read the full coolant leak guide",
-          "href": "/failures/coolant-leak/"
+          "href": "/failures"
         }
       },
       {
@@ -320,7 +320,7 @@
         "recommendation": "The supercharger coupler (also known as the torsion isolator) is a known weak point on both the V6 and V8 F-Types. A loud \"clonk\" from the top of the engine when it stops is a classic symptom. There is a Jaguar Technical Bulletin (JTB 00356NAS2) for this issue. The original coupler had a spring which could break; the upgrade is to a solid coupler. If you hear rattling or clunking, have the supercharger coupler inspected.",
         "failureLink": {
           "label": "Read the full supercharger failure guide",
-          "href": "/failures/supercharger-failure/"
+          "href": "/failures/supercharger-coupler-rattle"
         }
       }
     ]
@@ -330,7 +330,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, every F-Type R V8 era covered, with a 12-month warranty as standard.",
     "button": {
       "label": "Get My Free F-Type R Engine Quotes Now →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -396,7 +396,7 @@
     "closingVerdict": "The F-Type R is a genuine Jaguar icon - a 5.0-litre supercharged V8 in a lightweight sports car chassis. The AJ133 is a great engine with a proven track record across the JLR range. However, it has known weak points: timing chain tensioners, water pumps, supercharger couplers, and plastic cooling system components. These are well-understood and fixable issues, but they demand attention and budget. Buy on documented history, not on faith. A well-maintained F-Type R is a £40,000–£70,000 future classic; a neglected one is a £10,000 engine replacement waiting to happen.",
     "cta": {
       "label": "→ Compare F-Type R engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -461,7 +461,7 @@
     },
     "cta": {
       "label": "→ Compare F-Type R engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -546,7 +546,7 @@
     "finalCta": "Find the best Jaguar F-Type R engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get your F-Type back on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar F-Type R Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

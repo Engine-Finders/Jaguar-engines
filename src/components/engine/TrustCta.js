@@ -35,7 +35,7 @@ function parseTrustPoint(point = "") {
 
 function TrustIcon({ index, isDark }) {
   return (
-    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)]">
+    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)]">
       <HomeIcon name={TRUST_ICONS[index % TRUST_ICONS.length]} isDark={isDark} className="h-7 w-7 object-contain" />
     </span>
   );
@@ -108,7 +108,7 @@ export default function TrustCta({ data, engineLabel = "Jaguar Engine" }) {
               : "border-[var(--color-border)] bg-[var(--color-primary-soft)] shadow-[0_10px_28px_var(--color-shadow)]"
           }`}
         >
-          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--color-surface)] shadow-[0_4px_12px_var(--color-shadow)]">
+          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--color-surface)] shadow-[0_4px_12px_var(--color-shadow)]">
             <HomeIcon name="engine-finders" isDark={isDark} className="h-7 w-7 object-contain" />
           </span>
           <p className="min-w-0 flex-1 text-[13px] leading-[1.45] text-[var(--color-text)]">
@@ -145,7 +145,7 @@ export default function TrustCta({ data, engineLabel = "Jaguar Engine" }) {
                 : "border-[var(--color-border)] bg-[var(--color-primary-soft)] shadow-[0_10px_28px_var(--color-shadow)]"
             }`}
           >
-            <span className="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-[var(--color-surface)] shadow-[0_4px_12px_var(--color-shadow)]">
+            <span className="mx-auto flex h-11 w-11 items-center justify-center rounded-full bg-[var(--color-surface)] shadow-[0_4px_12px_var(--color-shadow)]">
               <HomeIcon name="engine-finders" isDark={isDark} className="h-7 w-7 object-contain" />
             </span>
             <p className="mt-3 text-[20px] font-bold leading-[1.25] text-[var(--color-text)]">

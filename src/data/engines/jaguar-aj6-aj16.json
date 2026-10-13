@@ -7,7 +7,7 @@
       "title": "Jaguar AJ6 / AJ16 Engine - Reliability & Cost",
       "description": "The AJ6/AJ16 straight‑six is a smooth classic - robust but prone to cooling system neglect. See real replacement costs and compare specialist quotes today.",
       "type": "website",
-      "url": "https://jaguarengines.uk/engines/aj6-aj16/",
+      "url": "https://jaguarengines.uk/engine/aj6-aj16",
       "image": "https://jaguarengines.uk/images/jaguar/engines/aj6-aj16.jpg",
       "siteName": "jaguarengines.uk"
     },
@@ -51,25 +51,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "XJ6 XJ40 3.6 / 4.0",
-              "url": "https://jaguarengines.uk/jaguar/xj40/"
+              "url": "https://jaguarengines.uk/xj/xj40"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "XJ6 X300 3.2 / 4.0",
-              "url": "https://jaguarengines.uk/jaguar/x300/"
+              "url": "https://jaguarengines.uk/xj/x300"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "XJS XJ-S 3.6 / 4.0",
-              "url": "https://jaguarengines.uk/jaguar/xjs/"
+              "url": "https://jaguarengines.uk/xj"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "XJ6 Series III (late) 4.2",
-              "url": "https://jaguarengines.uk/jaguar/xj6-series-iii/"
+              "url": "https://jaguarengines.uk/xj/xj-series-3"
             }
           ]
         },
@@ -173,7 +173,7 @@
         {
           "@type": "WebPage",
           "name": "Jaguar AJ6 / AJ16 Engine - Reliability & Cost",
-          "url": "https://jaguarengines.uk/engines/aj6-aj16/",
+          "url": "https://jaguarengines.uk/engine/aj6-aj16",
           "author": {
             "@type": "Organization",
             "name": "jaguarengines.uk Editorial Team"
@@ -195,7 +195,7 @@
     "trustStrip": [],
     "primaryCta": {
       "label": "Compare AJ6 / AJ16 Engine Prices →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "atAGlance": {
@@ -390,7 +390,7 @@
     "sharedCostNote": "(Exclusive mode - omit.)",
     "cta": {
       "label": "→ Compare Jaguar AJ6 / AJ16 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "faq": {
@@ -431,7 +431,7 @@
     "finalCta": "Find the best Jaguar AJ6 or AJ16 engine replacement UK enthusiasts rely on. Compare real prices from trusted specialists on EnginesMarket today and get your classic back on the road.",
     "ctaButton": {
       "label": "Compare Jaguar AJ6 / AJ16 Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

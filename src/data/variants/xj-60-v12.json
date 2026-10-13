@@ -60,13 +60,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "XJ81 6.0 V12 (8C, 1993–1994)",
-              "url": "https://jaguarengines.uk/xj/xj81/"
+              "url": "https://jaguarengines.uk/xj"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "X305 6.0 V12 (8C, 1994–1997)",
-              "url": "https://jaguarengines.uk/xj/x305/"
+              "url": "https://jaguarengines.uk/xj"
             }
           ]
         },
@@ -78,7 +78,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "8C (6.0 V12)",
-              "url": "https://jaguarengines.uk/engines/8c/"
+              "url": "https://jaguarengines.uk/engine/aj-v8-4-0-4-2"
             }
           ]
         },
@@ -206,7 +206,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "See Jaguar XJ 6.0 V12 Engine Options →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -268,7 +268,7 @@
     "labourEstimate": "Fitting an XJ 6.0 V12 engine typically takes 16–22 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). V12‑specific work requires specialist knowledge.",
     "cta": {
       "label": "→ Compare XJ 6.0 V12 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -288,7 +288,7 @@
         "recommendation": "The 6.0 V12 simply does not tolerate overheating. The cooling system is complex and the Achilles heel of these engines. Water pumps fail, radiators clog and hoses perish with age. If one component fails, it's wise to refresh the entire system - water pump, thermostat, radiator and all hoses. At the first sign of temperature fluctuation or coolant loss, stop driving immediately and have the system pressure‑tested.",
         "failureLink": {
           "label": "",
-          "href": "/failures/cooling-system-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -306,7 +306,7 @@
         "recommendation": "The V12's distributor‑based ignition system is vulnerable to heat and age. Distributor caps can shatter, HT leads degrade, and coils fail. A bank failure can cause unburnt fuel to enter the catalytic converters, leading to overheating and further damage. If you experience misfire or rough running, have the ignition system inspected immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/ignition-system-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -324,7 +324,7 @@
         "recommendation": "All fuel hoses should be changed, especially the short ones from the fuel rail to the injectors. The V12's engine bay heat degrades rubber over time. A fuel leak on a hot V12 is a serious fire risk. If you smell fuel, have the entire fuel system inspected immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/fuel-leak/"
+          "href": "/failures"
         }
       }
     ]
@@ -334,7 +334,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, every XJ 6.0 V12 engine covered, with a 12‑month warranty as standard.",
     "button": {
       "label": "See Jaguar XJ 6.0 V12 Engine Options →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -398,7 +398,7 @@
     "closingVerdict": "The 6.0‑litre V12 is the pinnacle of Jaguar's V12 development - a 311‑hp, 350‑lb‑ft masterpiece that defines the XJ's final, most refined V12 era. It is inherently strong but demands meticulous care. The cooling system, ignition system and fuel hoses are the three non‑negotiable watchpoints. Buy on full service history, budget for a cooling system refresh and never ignore a temperature gauge. A well‑maintained 6.0 V12 is one of the great Jaguar experiences; a neglected one is a £10,000+ bill waiting to happen.",
     "cta": {
       "label": "→ Compare XJ 6.0 V12 engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -459,7 +459,7 @@
     },
     "cta": {
       "label": "→ Compare XJ 6.0 V12 engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -531,7 +531,7 @@
     "finalCta": "Find the best Jaguar XJ 6.0 V12 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence - from £2,500 for a used unit to £12,000 for a fully rebuilt V12.",
     "ctaButton": {
       "label": "Explore Jaguar XJ 6.0 V12 Engine Quotes →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

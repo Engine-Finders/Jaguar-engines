@@ -37,7 +37,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "See I‑Pace EV400 Drive Unit Options →",
-        "href": "#"
+        "href": "/i-pace-drive-unit-guide"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK‑Wide Network"
@@ -70,7 +70,7 @@
     "labourEstimate": "Fitting an I‑Pace EV400 drive unit typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). Main dealer labour rates can reach £180–£240 per hour.",
     "cta": {
       "label": "→ Compare I‑Pace EV400 drive unit prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -90,7 +90,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures/306dt-crankshaft-bearing"
         }
       },
       {
@@ -108,7 +108,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/i-pace-drive-unit-guide"
         }
       },
       {
@@ -126,7 +126,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures"
         }
       }
     ]
@@ -136,7 +136,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, every I‑Pace EV400 variant covered, with a 12‑month warranty as standard.",
     "button": {
       "label": "See I‑Pace EV400 Drive Unit Options →",
-      "href": "#"
+      "href": "/i-pace-drive-unit-guide"
     }
   },
   "repairBuyOrReplace": {
@@ -208,7 +208,7 @@
     "closingVerdict": "The I‑Pace EV400 is Jaguar’s first all‑electric vehicle - a 400 PS dual‑motor SUV that delivers impressive performance and a premium driving experience. However, it has a reputation for reliability concerns. Owners have reported electric motor bearing wear, inverter capacitor degradation, 12V battery failures, steering rack failures, and windscreen leaks. A documented case reported a £26,000 USD motor replacement cost for a car with 77,000 km. Jaguar dealerships are not authorised to work on the electric motor - replacement requires removing the motor, sending it to Jaguar HQ, and installing a new unit. Independent specialists like Engine Finders offer reconditioned units with upgraded bearings and capacitors at significant savings versus main dealer pricing. With typical I‑Pace values ranging from £16,000 to £40,000+, a drive unit replacement is a major financial commitment - a car with an active battery warranty and a full service history is the safest choice.",
     "cta": {
       "label": "→ Compare I‑Pace EV400 drive unit prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -286,7 +286,7 @@
     },
     "cta": {
       "label": "→ Compare I‑Pace EV400 drive unit prices for your I‑Pace",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -371,7 +371,7 @@
     "finalCta": "Find the best Jaguar I‑Pace EV400 drive unit replacement UK owners rely on. Compare prices from trusted specialists on EnginesMarket today and get your I‑Pace back on the road with confidence.",
     "ctaButton": {
       "label": "Explore Jaguar I‑Pace EV400 Drive Unit Quotes →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

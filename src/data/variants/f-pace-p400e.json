@@ -59,7 +59,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "PT204 (AJ20P4) PHEV + 105 kW e‑motor (2020-present)",
-              "url": "https://jaguarengines.uk/f-pace/p400e/#engine"
+              "url": "https://jaguarengines.uk/f-pace/p400e"
             }
           ]
         },
@@ -71,7 +71,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "PT204",
-              "url": "https://jaguarengines.uk/engines/pt204/"
+              "url": "https://jaguarengines.uk/engine/ingenium-20-petrol"
             }
           ]
         },
@@ -199,7 +199,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "See F-Pace P400e Engine Options →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK‑Wide Network"
@@ -270,7 +270,7 @@
     "labourEstimate": "Fitting an F-Pace P400e engine typically takes 12‑16 hours at £75‑£110/hr (independent Jaguar specialist). Hybrid system integration adds to the complexity.",
     "cta": {
       "label": "→ Compare F-Pace P400e engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -290,7 +290,7 @@
         "recommendation": "A safety recall (R/2023/088) has been issued for Ingenium I4 2.0L Petrol PHEV engines where the coolant pump drive belt can become damaged leading to detachment. Where coolant pump drive is lost, there will be a loss of coolant flow, causing the engine to rapidly overheat and subsequently rupture an engine‑mounted plastic elbow in the cooling circuit. Coolant can leak onto the turbocharger heatshield which may lead to a fire in the engine compartment. Check your VIN against the recall database immediately. If you see any red warning lamps or signs of smoke, stop the vehicle and move away.",
         "failureLink": {
           "label": "",
-          "href": "/failures/coolant-pump-belt/"
+          "href": "/failures"
         }
       },
       {
@@ -308,7 +308,7 @@
         "recommendation": "HV battery failure is a significant concern on the F-Pace P400e. Owners have reported reduced electric range - fully charged indicating 27 miles rather than the claimed 33 miles. The 12V battery is also a known issue, with some owners experiencing starting problems on 3‑year‑old vehicles. If your vehicle displays HV battery warnings or starting issues, have it diagnosed promptly. Check whether your vehicle is still under warranty - battery replacement can be expensive.",
         "failureLink": {
           "label": "",
-          "href": "/failures/hybrid-battery-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -344,7 +344,7 @@
         "recommendation": "The Ingenium petrol engine can suffer from timing chain tensioner wear. Owners have reported that modified timing chains and guides on newer vehicles have resolved the issue. However, emission issues are common on engines at 50k plus. A rattling noise from the engine compartment may be caused by a Variable Camshaft Timing (VCT) unit internal seal that is below specification. A preventative chain and tensioner replacement is far cheaper than a full engine replacement.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       }
     ]
@@ -354,7 +354,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, covering the PT204 plug‑in hybrid powertrain of the F-Pace P400e, with a 12‑month warranty as standard.",
     "button": {
       "label": "See F-Pace P400e Engine Options →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -424,7 +424,7 @@
     "closingVerdict": "The Jaguar F-Pace P400e is a compelling plug‑in hybrid SUV, combining the PT204 2.0‑litre turbo petrol engine with a 105 kW electric motor for 404 PS and 640 Nm. It offers genuine electric‑only capability for short commutes (up to 33 miles) and impressive performance (0‑60 mph in 5.0 seconds). However, PHEV complexity brings potential issues - a safety recall for the coolant pump drive belt, HV battery degradation, 12V battery issues, turbo oil feed pipe leaks, and timing chain tensioner wear. Buy on service history above all else - a vehicle with documented recall completion, battery health checks, and regular maintenance is a safe bet; a neglected example can be expensive to repair.",
     "cta": {
       "label": "→ Compare F-Pace P400e engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -505,7 +505,7 @@
     },
     "cta": {
       "label": "→ Compare F-Pace P400e engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -590,7 +590,7 @@
     "finalCta": "Find the best Jaguar F-Pace P400e engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Explore Jaguar F-Pace P400e Engine Quotes →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

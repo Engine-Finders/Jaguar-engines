@@ -217,7 +217,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "See XF 2.0 Petrol Engine Options →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK‑Wide Network"
@@ -312,7 +312,7 @@
     "labourEstimate": "Fitting an XF 2.0 petrol engine typically takes 14‑18 hours at £75‑£110/hr (independent Jaguar specialist). The Ingenium engine platform was engineered with minimal service clearance, meaning removal often requires lifting the entire front subframe.",
     "cta": {
       "label": "→ Compare XF 2.0 Petrol engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -332,7 +332,7 @@
         "recommendation": "The 25t Ingenium engine is known for VCT (Variable Cam Timing) solenoid failure. Symptoms include vibration at around 1,500 rpm and 2,250 rpm. The solenoids are accessible from outside the engine, making replacement a relatively straightforward job. If you experience rough running or vibration, have the VCT solenoids checked. Early replacement prevents further issues.",
         "failureLink": {
           "label": "",
-          "href": "/failures/vct-solenoid-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -350,7 +350,7 @@
         "recommendation": "Over 60% of Jaguar XF 2.0L Ingenium petrol models (2017‑2021) entering limp mode after dealership software updates suffer from ECU calibration timeouts - not mechanical failure. This is a documented issue covered by Jaguar Land Rover Technical Service Bulletin JLR-TSB-305892/7. If your car enters limp mode after a service, have the ECU re‑calibrated by a specialist with JLR SDD or Pathfinder diagnostic tools.",
         "failureLink": {
           "label": "",
-          "href": "/failures/ecu-limp-mode/"
+          "href": "/failures"
         }
       },
       {
@@ -368,7 +368,7 @@
         "recommendation": "The <a href='https://jaguarengines.uk/engine/ingenium-20-petrol'>Ingenium 2.0 petrol</a>  can suffer from timing chain tensioner wear, leading to chain stretch and potential failure. Symptoms include rattling from the engine on cold start. Many timing chain failures are linked to extended oil intervals. A preventative chain and tensioner replacement is far cheaper than a full engine replacement. Change the oil at 8,000‑10,000 mile intervals.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -386,7 +386,7 @@
         "recommendation": "Early XF 2.0 petrol models (built between 1 April 2015 and 25 February 2016) may suffer from the low‑pressure fuel line falling off, causing the engine to cut out and fail to restart. Affected vehicles are to fit a different retaining clip. Check your VIN against the recall database. If the engine cuts out while driving, pull over safely and have the vehicle recovered.",
         "failureLink": {
           "label": "",
-          "href": "/failures/fuel-line-failure/"
+          "href": "/failures"
         }
       }
     ]
@@ -396,7 +396,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, covering the 2.0‑litre Ingenium petrol across 20t, 25t, P250 and P300 variants, with a 12‑month warranty as standard.",
     "button": {
       "label": "See XF 2.0 Petrol Engine Options →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -466,7 +466,7 @@
     "closingVerdict": "The Jaguar XF 2.0‑litre petrol is a refined and efficient engine from JLR's Ingenium family. The 20t offers accessible entry‑level performance; the 25t/P250 is the sweet‑spot tune with brisk performance and good economy; the P300 is the top‑of‑range performance option with 300 PS, 400 Nm and AWD. The Ingenium petrol is generally reliable, but potential issues include VCT solenoid failure (25t), ECU limp mode after software updates, timing chain tensioner wear, and early fuel line detachment. Buy on service history above all else - a well‑maintained XF 2.0 petrol is a rewarding and stylish car; a neglected example can be expensive to repair.",
     "cta": {
       "label": "→ Compare XF 2.0 Petrol engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -564,7 +564,7 @@
     },
     "cta": {
       "label": "→ Compare XF 2.0 Petrol engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -649,7 +649,7 @@
     "finalCta": "Find the best Jaguar XF 2.0 petrol engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Explore Jaguar XF 2.0 Petrol Engine Quotes →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

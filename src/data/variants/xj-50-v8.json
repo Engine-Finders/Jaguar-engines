@@ -72,13 +72,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ133 (NA)",
-              "url": "https://jaguarengines.uk/engines/aj133/"
+              "url": "https://jaguarengines.uk/engine/aj133"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "AJ133 (SC)",
-              "url": "https://jaguarengines.uk/engines/aj133/"
+              "url": "https://jaguarengines.uk/engine/aj133"
             }
           ]
         },
@@ -206,7 +206,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "Get My Free XJ 5.0 V8 Engine Quotes Now →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -268,7 +268,7 @@
     "labourEstimate": "Fitting an XJ 5.0 V8 engine typically takes 14–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). The AJ133 is a complex, tightly-packaged V8 that requires specialist knowledge.",
     "cta": {
       "label": "→ Compare XJ 5.0 V8 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -288,7 +288,7 @@
         "recommendation": "The most common serious engine problems on the AJ133 are loose/stretched timing chains due to the poor design of the timing chain tensioners - specifically the soft spots on the guide rails that the tensioners push against. The steel tensioner pistons ram directly into aluminium guide rails, and since steel is harder than aluminium, the tensioner pistons eat into the rails and lead to slack in the chain. JLR has acknowledged timing chain tensioner issues in the 5.0L V8, with primary TSB SSM 71932 addressing rattling noise and premature wear. The early Tsubaki 6.35mm pitch chains are no longer available - if they fail, all sprockets and hardware must be updated to accommodate INA 8mm chains. A timing job on a 5.0 V8 calls for over 18 hours of book labour. If you hear rattling on cold start, book an inspection immediately. Preventative tensioner and guide replacement is far cheaper than a full engine replacement.",
         "failureLink": {
           "label": "Read the full timing chain failure guide",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -306,7 +306,7 @@
         "recommendation": "The most unreliable part of the AJ133 is the engine coolant system, specifically the plastic pipes, hoses and tubes - particularly the two cross-over pipes at the front of the engine and the heater pipe at the rear. These pipes are notorious for cracking at the seams (two-piece plasti-welded). Early V8s (from 2009) had much better alloy main coolant pipes, but they were switched to the crappy plastic design in 2012. Plastic cooling pipes on 2010–2015 era XJs are a major weak point, with the plastic seam being particularly vulnerable. The pipes were revised around 2017/2018 to smooth one-piece designs which are far less problematic but still not immune to failure. Check coolant levels regularly. If you see bubbling coolant, stop driving immediately - the engine may already be damaged.",
         "failureLink": {
           "label": "Read the full coolant leak guide",
-          "href": "/failures/coolant-leak/"
+          "href": "/failures"
         }
       },
       {
@@ -324,7 +324,7 @@
         "recommendation": "Rubber PCV diaphragms rip with age and cause oil consumption and possible lean running error codes. Carbon fouling of the intake valves that requires removing the intake to clean is common - it was \"really bad\" on some 5.0L examples. The naturally aspirated V8 is easier to work on than the supercharged version for PCV replacement. If you notice oil consumption increasing or rough idle, have the PCV system and intake valves inspected.",
         "failureLink": {
           "label": "Read the full PCV valve failure guide",
-          "href": "/failures/pcv-valve-failure/"
+          "href": "/failures"
         }
       }
     ]
@@ -334,7 +334,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, every XJ engine era covered, with a 12‑month warranty as standard.",
     "button": {
       "label": "Get My Free XJ 5.0 V8 Engine Quotes Now →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -406,7 +406,7 @@
     "closingVerdict": "The AJ133 is one of Jaguar's most powerful and refined V8s - a genuine masterpiece of engineering. But it has well-documented weaknesses: timing chain tensioner guide wear (the steel tensioner eats into the aluminium guide), plastic coolant pipes that crack at the seams, PCV diaphragm failure, and carbon build-up. The naturally aspirated version is slightly more reliable than the supercharged. The 2017/2018 revisions to the coolant pipes and timing components are significant improvements. Buy on history, maintain on schedule, and the AJ133 will reward you with one of the finest V8 experiences of any luxury saloon. Skip the history and it will punish you.",
     "cta": {
       "label": "→ Compare XJ 5.0 V8 engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -490,7 +490,7 @@
     },
     "cta": {
       "label": "→ Compare XJ 5.0 V8 engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -575,7 +575,7 @@
     "finalCta": "Find the best Jaguar XJ 5.0 V8 engine replacement UK owners trust. Compare prices from trusted specialists on JaguarEngine.uk today and keep your V8-powered XJ performing at its best.",
     "ctaButton": {
       "label": "Compare Jaguar XJ 5.0 V8 Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

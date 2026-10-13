@@ -53,7 +53,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "E-Pace X540 D200 (204DTD MHEV, 2019–present)",
-              "url": "https://jaguarengines.uk/e-pace/d200/#204dtd"
+              "url": "https://jaguarengines.uk/e-pace/d200"
             }
           ]
         },
@@ -65,7 +65,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "204DTD MHEV 2.0L Ingenium Diesel",
-              "url": "https://jaguarengines.uk/engines/204dtd/"
+              "url": "https://jaguarengines.uk/engine/ingenium-2-0-diesel"
             }
           ]
         },
@@ -193,7 +193,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "Get My Free Jaguar E-Pace D200 Engine Quotes Now →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -264,7 +264,7 @@
     "labourEstimate": "Fitting an E-Pace 2.0 diesel engine typically takes 10–14 hours at £80–£120/hr (independent Jaguar specialist) or £140–£190/hr (London/SE dealer).",
     "cta": {
       "label": "→ Compare Jaguar E-Pace D200 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -284,7 +284,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures/egr-valve-cooler"
         }
       },
       {
@@ -302,7 +302,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures/ingenium-oil-dilution"
         }
       },
       {
@@ -320,7 +320,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures/adblue-scr-failure"
         }
       }
     ]
@@ -330,7 +330,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, covering the 204DTD Ingenium D200 MHEV, with a 12-month warranty as standard.",
     "button": {
       "label": "Get My Free Jaguar E-Pace D200 Engine Quotes Now →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -394,7 +394,7 @@
     "closingVerdict": "The X540 E-Pace D200 benefits from all the Ingenium improvements - revised timing chain tensioners, improved DPF logic, and the 48V MHEV system. This is a refined, efficient and significantly more reliable package than the pre-2019 Ingenium diesels. Buy on history, maintain the EGR and AdBlue systems, and the D200 will serve you well.",
     "cta": {
       "label": "→ Compare Jaguar E-Pace D200 engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -479,7 +479,7 @@
     },
     "cta": {
       "label": "→ Compare Jaguar E-Pace D200 engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -564,7 +564,7 @@
     "finalCta": "Find the best Jaguar E-Pace D200 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare Jaguar E-Pace D200 Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

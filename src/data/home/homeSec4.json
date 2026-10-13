@@ -22,7 +22,7 @@
       "winner": "AJ200P / 204PT (Ingenium Petrol)",
       "why": "Consistently outperforms its diesel sibling in our data — water pump replacement is the only meaningful weak point.",
       "verdict": { "text": "Best", "type": "best" },
-      "href": "#"
+      "href": "/engine/ingenium-2-0-diesel"
     },
     {
       "ranking": "Most Reliable Model",
@@ -30,7 +30,7 @@
       "winner": "F-Pace X761",
       "why": "Strong retained values and a clean Safe verdict across every engine variant — no caveat in the data at all.",
       "verdict": { "text": "Best", "type": "best" },
-      "href": "#"
+      "href": "/f-pace/x761"
     },
     {
       "ranking": "Best Used Buy",
@@ -38,7 +38,7 @@
       "winner": "XF X260 (2015–2024)",
       "why": "A well-valued executive saloon with the revised Ingenium range and replacement viable across almost every example.",
       "verdict": { "text": "Safe", "type": "safe" },
-      "href": "#"
+      "href": "/xf/x260"
     },
     {
       "ranking": "Most Expensive Failure",
@@ -46,7 +46,7 @@
       "winner": "276DT (2.7 TDV6) Oil Pump Failure",
       "why": "Shared with Land Rover's Discovery 3 — often kills the engine outright with little warning. £5,000–£7,500 recon.",
       "verdict": { "text": "Avoid", "type": "avoid" },
-      "href": "#"
+      "href": "/engine/ajd-v6-diesel"
     },
     {
       "ranking": "Safest Jaguar to Buy",
@@ -54,7 +54,7 @@
       "winner": "E-Pace X540 (2017–present)",
       "why": "Compact SUV values comfortably absorb the modern Ingenium's replacement cost — safe across the board.",
       "verdict": { "text": "Safe", "type": "safe" },
-      "href": "#"
+      "href": "/e-pace/x540"
     },
     {
       "ranking": "Highest Risk Purchase",
@@ -62,7 +62,7 @@
       "winner": "X-Type X400 (2001–2009)",
       "why": "Rapid depreciation plus genuine reliability concerns on pre-2007 cars — replacement cost frequently exceeds vehicle value.",
       "verdict": { "text": "Watch", "type": "watch" },
-      "href": "#"
+      "href": "/x-type/x400"
     },
     {
       "ranking": "Best Family Jaguar",
@@ -70,7 +70,7 @@
       "winner": "F-Pace X761",
       "why": "The only genuinely practical SUV in the range, paired with the strongest ownership-safety profile of any Jaguar.",
       "verdict": { "text": "Best", "type": "best" },
-      "href": "#"
+      "href": "/f-pace/x761"
     },
     {
       "ranking": "Best Long-Term Keeper",
@@ -78,7 +78,7 @@
       "winner": "XJ X351 (2010–2019)",
       "why": "Flagship values comfortably absorb even the <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a>'s upper recon cost — the keeper's Jaguar.",
       "verdict": { "text": "Best", "type": "best" },
-      "href": "#"
+      "href": "/xj/x351"
     }
   ],
   "dataSources": {

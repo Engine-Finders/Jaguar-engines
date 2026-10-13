@@ -65,7 +65,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ26 / AJ27 (4.0L V8)",
-              "url": "https://jaguarengines.uk/engines/aj-v8-40/"
+              "url": "https://jaguarengines.uk/engine/aj-v8-4-0-4-2"
             }
           ]
         },
@@ -193,7 +193,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "See Jaguar S-Type 4.0 V8 Engine Options →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -264,7 +264,7 @@
     "labourEstimate": "Fitting an S-Type 4.0 V8 engine typically takes 14–18 hours at £70–£100/hr (independent) or £120–£180/hr (London/SE dealer).",
     "cta": {
       "label": "→ Compare S-Type 4.0 V8 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -284,7 +284,7 @@
         "recommendation": "The AJ-V8 uses four timing chains and four tensioners. The upper tensioners are more prone to failure and are easier to replace. Early plastic tensioners can crack, causing the secondary chain to become slack. The AJ series engines are of a zero-clearance (interference) design - if a tensioner fails and the chain breaks, pistons will strike valves, requiring cylinder head removal and potentially engine replacement. A preventative upgrade to the latest metal-type tensioners is essential. Listen to the engine before turning up the radio - if you hear a rattle, have it inspected immediately.",
         "failureLink": {
           "label": "Read the full timing chain failure guide",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -302,7 +302,7 @@
         "recommendation": "Early AJ-V8 engines (up to mid-1999) used Nikasil-coated cylinder liners. High-sulphur fuel reacted with the Nikasil coating, causing engine failures. Jaguar replaced affected engines with conventional cast-iron liners. High-sulphur fuel is no longer used in the UK, so if an original Nikasil engine has survived this long, it's likely fine. However, if you're buying a pre-1999 S-Type 4.0 V8, check for a tag on the back of the engine block indicating whether it was replaced with a steel-lined unit. A compression or blow-by test can confirm cylinder health.",
         "failureLink": {
           "label": "Read the full Nikasil failure guide",
-          "href": "/failures/nikasil-cylinder-failure/"
+          "href": "/failures/xk-nikasil-bore-wear"
         }
       },
       {
@@ -320,7 +320,7 @@
         "recommendation": "Coolant crossover pipes are a known weakness on the AJ-V8. These aluminium parts can crack or corrode, leading to coolant leaks and overheating. Ignoring coolant leaks can result in warped heads or blown gaskets - repairs that can cost well over £3,000. If you're experiencing unexplained coolant loss, have the cooling system inspected promptly.",
         "failureLink": {
           "label": "Read the full coolant leak guide",
-          "href": "/failures/coolant-leak/"
+          "href": "/failures"
         }
       }
     ]
@@ -330,7 +330,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, every S-Type 4.0 V8 era covered, with a 12-month warranty as standard.",
     "button": {
       "label": "See Jaguar S-Type 4.0 V8 Engine Options →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -394,7 +394,7 @@
     "closingVerdict": "The S-Type 4.0 V8 was the performance flagship of the X200 range at launch, powered by Jaguar's all-aluminium AJ-V8. It's a smooth, refined, and characterful engine that's generally stout and reliable. However, it has known weak points: timing chain tensioners (upgrade to metal), Nikasil liner issues on early engines (pre-1999), and cooling system components. These are well-understood and fixable issues, but they demand attention and budget. Buy on documented history, not on faith. A well-maintained S-Type 4.0 V8 is a £3,000–£8,000 future classic; a neglected one is a £5,000 engine replacement waiting to happen.",
     "cta": {
       "label": "→ Compare S-Type 4.0 V8 engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -463,7 +463,7 @@
     },
     "cta": {
       "label": "→ Compare S-Type 4.0 V8 engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -548,7 +548,7 @@
     "finalCta": "Find the best Jaguar S-Type 4.0 V8 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get your S-Type back on the road with confidence.",
     "ctaButton": {
       "label": "Explore Jaguar S-Type 4.0 V8 Engine Quotes →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

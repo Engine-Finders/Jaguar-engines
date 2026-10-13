@@ -9,7 +9,7 @@
       "title": "XE Project 8 Engine Replacement Cost UK - Compare Quotes",
       "description": "The 600PS AJ133 supercharged V8 - real UK costs, common timing chain and cooling issues, and honest reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
       "type": "website",
-      "url": "https://jaguarengines.uk/xe/project-8/",
+      "url": "https://jaguarengines.uk/xe/sv-project-8",
       "image": "https://jaguarengines.uk/images/jaguar/hero/xe-project-8.jpg",
       "siteName": "JaguarEngine.uk"
     },
@@ -53,7 +53,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "XE X760 Project 8 (AJ133 5.0 SC, 2018–2024)",
-              "url": "https://jaguarengines.uk/xe/project-8/#aj133"
+              "url": "https://jaguarengines.uk/xe/sv-project-8"
             }
           ]
         },
@@ -65,7 +65,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ133 5.0L Supercharged V8 (600PS)",
-              "url": "https://jaguarengines.uk/engines/aj133-project8/"
+              "url": "https://jaguarengines.uk/engine/aj133"
             }
           ]
         },
@@ -162,7 +162,7 @@
         {
           "@type": "WebPage",
           "name": "XE Project 8 Engine Replacement Cost UK - Compare Quotes",
-          "url": "https://jaguarengines.uk/xe/project-8/",
+          "url": "https://jaguarengines.uk/xe/sv-project-8",
           "author": {
             "@type": "Organization",
             "name": "JaguarEngine.uk Editorial Team"
@@ -193,7 +193,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "See Jaguar XE Project 8 Engine Options →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -264,7 +264,7 @@
     "labourEstimate": "Fitting a Project 8 engine typically takes 14–18 hours at £80–£120/hr (independent Jaguar specialist) or £140–£190/hr (London/SE dealer). The supercharger and cooling system add complexity.",
     "cta": {
       "label": "→ Compare Jaguar XE Project 8 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -284,7 +284,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/engine/aj133"
         }
       },
       {
@@ -302,7 +302,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures"
         }
       },
       {
@@ -320,7 +320,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures/supercharger-coupler-rattle"
         }
       }
     ]
@@ -330,7 +330,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, covering the AJ133 Project 8 V8, with a 12-month warranty as standard.",
     "button": {
       "label": "See Jaguar XE Project 8 Engine Options →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -394,7 +394,7 @@
     "closingVerdict": "The Project 8 is a landmark Jaguar - the most powerful road car the company has ever built. But with only 300 examples worldwide and a 600PS supercharged V8, it's a high-stakes ownership proposition. The AJ133 engine is fundamentally robust, but timing chain guides and cooling system components demand vigilance. A post-2015 car with documented timing chain history and metal coolant pipes is the gold standard. Buy with your eyes open, maintain religiously, and the Project 8 will reward you.",
     "cta": {
       "label": "→ Compare Jaguar XE Project 8 engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -487,7 +487,7 @@
     },
     "cta": {
       "label": "→ Compare Jaguar XE Project 8 engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -572,7 +572,7 @@
     "finalCta": "Find the best Jaguar XE Project 8 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get your halo Jaguar back on the road with confidence.",
     "ctaButton": {
       "label": "Explore Jaguar XE Project 8 Engine Quotes →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

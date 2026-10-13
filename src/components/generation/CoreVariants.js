@@ -19,7 +19,7 @@ function VariantPanel({ title, icon, variants, tone, isDark }) {
         className={`flex w-[4.25rem] shrink-0 items-center justify-center text-white ${blockToneClass}`}
         style={{ clipPath: "polygon(0 0, 100% 0, 58% 100%, 0 100%)" }}
       >
-        <GenIcon name={icon} className="h-5 w-5" />
+        <GenIcon name={icon} className="h-7 w-7" />
       </span>
       <div className="min-w-0 flex-1 py-4 pl-3 pr-4">
         <p className={`text-[0.76rem] font-semibold uppercase tracking-wide ${labelToneClass}`}>

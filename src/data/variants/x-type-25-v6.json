@@ -59,7 +59,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ‑V6 (XB, 2001‑2009)",
-              "url": "https://jaguarengines.uk/x-type/25-v6/#engine"
+              "url": "https://jaguarengines.uk/x-type/25-v6"
             }
           ]
         },
@@ -71,7 +71,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ‑V6 (XB)",
-              "url": "https://jaguarengines.uk/engines/aj-v6-xb/"
+              "url": "https://jaguarengines.uk/engine/aj-v6-petrol"
             }
           ]
         },
@@ -199,7 +199,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "See X-Type 2.5 V6 Engine Options →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK‑Wide Network"
@@ -270,7 +270,7 @@
     "labourEstimate": "Fitting an X-Type 2.5 V6 engine typically takes 10‑14 hours at £75‑£110/hr (independent Jaguar specialist). The AWD system and engine bay packaging add some complexity.",
     "cta": {
       "label": "→ Compare X-Type 2.5 V6 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -290,7 +290,7 @@
         "recommendation": "The AJ-V6 uses timing chains (not belts). The primary concern is the timing chain tensioners, which can wear over time. Some owners have reported slack in the chain - one owner noted 1 cm of slack in the top run, with mechanics split on whether this is normal or a ticking time bomb. The engine is reportedly not an interference engine, which means a chain skip may not cause catastrophic piston-to-valve contact, but it will still cause significant running issues. Frequent oil changes (5,000 km / 3,000 miles) are essential to prevent sludge build-up around the tensioner. If you hear rattling on start-up, have the timing system inspected immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -308,7 +308,7 @@
         "recommendation": "The water pump is a known weak point on the AJ-V6, with failure reported at around 55,000 miles. The pump itself is relatively straightforward to replace - one owner described the job as taking about 20 minutes. However, if the pump fails and the engine overheats, the consequences can be severe. Regular coolant changes and inspections are essential. If you smell antifreeze or notice coolant loss, investigate immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/water-pump-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -326,7 +326,7 @@
         "recommendation": "The X-Type 2.5 V6 is prone to vacuum leaks from three common areas. These leaks will trigger lean condition codes (P0171 and/or P0174). The fix is relatively straightforward - replacing perished vacuum hoses. If you get a check engine light with these codes, have the vacuum system inspected. This is a common, inexpensive fix that many owners can tackle themselves.",
         "failureLink": {
           "label": "",
-          "href": "/failures/vacuum-leak/"
+          "href": "/failures"
         }
       },
       {
@@ -344,7 +344,7 @@
         "recommendation": "The VVT mechanism on the inlet cam sprocket can fail. This can cause rough running, hesitation, and reduced power. Diagnosis typically involves checking for VVT-related fault codes. If the VVT mechanism fails, replacement of the solenoid or sprocket is required. Regular oil changes are essential to prevent sludge build-up affecting the VVT system.",
         "failureLink": {
           "label": "",
-          "href": "/failures/vvt-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       }
     ]
@@ -354,7 +354,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, covering the AJ-V6 2.5‑litre engine of the X-Type, with a 12‑month warranty as standard.",
     "button": {
       "label": "See X-Type 2.5 V6 Engine Options →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -425,7 +425,7 @@
     "closingVerdict": "The Jaguar X-Type 2.5 V6 offers a smooth, refined V6 experience in a compact executive package - and it's actually a fundamentally reliable engine when properly maintained. The AJ-V6 has a strong reputation for durability, with examples exceeding 190,000 miles. The primary concerns are timing chain tensioner wear (which is manageable with preventative maintenance), water pump failure, and vacuum leaks. The engine is also reportedly non‑interference, meaning a chain skip may not be catastrophic. Buy on service history above all else - a vehicle with regular oil changes and a quiet timing chain is a safe bet; a neglected example can be expensive to repair.",
     "cta": {
       "label": "→ Compare X-Type 2.5 V6 engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -502,7 +502,7 @@
     },
     "cta": {
       "label": "→ Compare X-Type 2.5 V6 engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -587,7 +587,7 @@
     "finalCta": "Find the best Jaguar X-Type 2.5 V6 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Explore Jaguar X-Type 2.5 V6 Engine Quotes →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

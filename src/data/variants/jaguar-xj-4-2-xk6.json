@@ -9,7 +9,7 @@
       "title": "XJ 4.2 Engine Replacement Cost UK - Compare Quotes",
       "description": "Jaguar XJ 4.2 - XK6 straight-six engine. Real UK costs, common cooling, block and tappet guide issues, and honest reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
       "type": "website",
-      "url": "https://jaguarengines.uk/xj/42-xk6/",
+      "url": "https://jaguarengines.uk/xj/4-2-xk6",
       "image": "https://jaguarengines.uk/images/jaguar/hero/xj-42-xk6.jpg",
       "siteName": "JaguarEngine.uk"
     },
@@ -53,19 +53,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "XJ Series 1 (XK6 4.2, 1968–1973)",
-              "url": "https://jaguarengines.uk/xj/42-xk6/#series1"
+              "url": "https://jaguarengines.uk/xj/4-2-xk6"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "XJ Series 2 (XK6 4.2, 1973–1979)",
-              "url": "https://jaguarengines.uk/xj/42-xk6/#series2"
+              "url": "https://jaguarengines.uk/xj/4-2-xk6"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "XJ Series 3 (XK6 4.2, 1979–1986)",
-              "url": "https://jaguarengines.uk/xj/42-xk6/#series3"
+              "url": "https://jaguarengines.uk/xj/4-2-xk6"
             }
           ]
         },
@@ -77,7 +77,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "XK6 4.2L Straight-Six",
-              "url": "https://jaguarengines.uk/engines/xk6-42/"
+              "url": "https://jaguarengines.uk/engine/xk-straight-six"
             }
           ]
         },
@@ -174,7 +174,7 @@
         {
           "@type": "WebPage",
           "name": "XJ 4.2 Engine Replacement Cost UK - Compare Quotes",
-          "url": "https://jaguarengines.uk/xj/42-xk6/",
+          "url": "https://jaguarengines.uk/xj/4-2-xk6",
           "author": {
             "@type": "Organization",
             "name": "JaguarEngine.uk Editorial Team"
@@ -205,7 +205,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "See Jaguar XJ 4.2 Engine Options →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -292,7 +292,7 @@
     "labourEstimate": "Fitting an XJ 4.2 engine typically takes 10–14 hours at £75–£110/hr (independent Jaguar specialist) or £130–£180/hr (London/SE dealer). The straight-six is relatively accessible in the XJ's engine bay.",
     "cta": {
       "label": "→ Compare Jaguar XJ 4.2 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -312,7 +312,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/xj"
         }
       },
       {
@@ -330,7 +330,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/xj"
         }
       },
       {
@@ -348,7 +348,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/xj"
         }
       },
       {
@@ -366,7 +366,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures"
         }
       }
     ]
@@ -376,7 +376,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, covering the XK6 4.2, with a 12-month warranty as standard.",
     "button": {
       "label": "See Jaguar XJ 4.2 Engine Options →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -440,7 +440,7 @@
     "closingVerdict": "The XK6 4.2 is one of the greatest engines ever built - smooth, characterful and famously durable. The Series 3 (1983-on) with revised block is the most robust version. Tappet guides, cooling system components and head gaskets are the main concerns on higher-mileage examples. Buy the newest Series 3 you can afford, maintain the cooling system, and the XK6 will reward you.",
     "cta": {
       "label": "→ Compare Jaguar XJ 4.2 engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -536,7 +536,7 @@
     },
     "cta": {
       "label": "→ Compare Jaguar XJ 4.2 engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -621,7 +621,7 @@
     "finalCta": "Find the best Jaguar XJ 4.2 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get your classic Jaguar back on the road with confidence.",
     "ctaButton": {
       "label": "Explore Jaguar XJ 4.2 Engine Quotes →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

@@ -54,13 +54,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ6 (XJ40, 1990-1994)",
-              "url": "https://jaguarengines.uk/xj/40/#aj6"
+              "url": "https://jaguarengines.uk/xj/40"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "AJ16 (X300, 1994-1997)",
-              "url": "https://jaguarengines.uk/xj/40/#aj16"
+              "url": "https://jaguarengines.uk/xj/40"
             }
           ]
         },
@@ -72,13 +72,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ6",
-              "url": "https://jaguarengines.uk/engines/aj6/"
+              "url": "https://jaguarengines.uk/engine/aj6-aj16"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "AJ16",
-              "url": "https://jaguarengines.uk/engines/aj16/"
+              "url": "https://jaguarengines.uk/engine/aj6-aj16"
             }
           ]
         },
@@ -206,7 +206,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "See XJ 4.0 Engine Options →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK‑Wide Network"
@@ -285,7 +285,7 @@
     "labourEstimate": "Fitting an XJ 4.0 engine typically takes 10‑14 hours at £75‑£110/hr (independent Jaguar specialist).",
     "cta": {
       "label": "→ Compare XJ 4.0 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -305,7 +305,7 @@
         "recommendation": "The upper chain tensioner is a common issue on older AJ16 and AJ6 engines, as the tensioner wears and loses its ability to hold oil pressure as the oil leaks past the tensioner piston, especially when the oil is hot. This can lead to timing chain slack and, if ignored, potential engine damage. The timing chain drive to the camshafts is located at the rear of the engine, making replacement a very big job that likely requires engine removal. Higher-quality synthetic oils (5W-40, 0W-40) may reduce the scoring. Frequent oil changes are essential to prevent sludge build-up.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -323,7 +323,7 @@
         "recommendation": "The AJ6 engine is all-alloy, and the coolant should be changed every other year to prevent corrosion. Head gasket failure is not uncommon on these engines, particularly on the rear two cylinders. The AJ16 is less prone to head gasket problems. If you notice coolant loss or overheating, have the cooling system and head gasket checked immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/head-gasket-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -341,7 +341,7 @@
         "recommendation": "A revised water pump assembly was introduced on 4.0-litre engines beginning with engine number 157275. A failing water pump typically presents with coolant leaking from the front of the engine, bearing noise during operation, or engine overheating. If you notice coolant loss or a leak, have the water pump inspected immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/water-pump-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -359,7 +359,7 @@
         "recommendation": "The AJ16 uses coil‑on‑plug ignition and can suffer from coil failures and driveability issues. High idle can only be corrected with an almost extinct dealer diagnostic unit. If you experience ignition or idle issues, find a specialist with the correct dealer diagnostic equipment. The AJ6, with its traditional distributor ignition, is generally considered more robust in this regard.",
         "failureLink": {
           "label": "",
-          "href": "/failures/ignition-system-failure/"
+          "href": "/failures"
         }
       }
     ]
@@ -369,7 +369,7 @@
     "supportingLine": "15+ vetted Jaguar specialists, covering both the AJ6 and AJ16 engines of the XJ 4.0, with a 12‑month warranty as standard.",
     "button": {
       "label": "See XJ 4.0 Engine Options →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -434,7 +434,7 @@
     "closingVerdict": "The Jaguar XJ 4.0 is powered by the AJ6 and AJ16 engines, which are widely regarded as \"the most robust and reliable engine Jaguar ever made\". Both engines are tough and durable, capable of racking up big mileages. However, they have known weaknesses: the upper timing chain tensioner is the primary concern, followed by head gasket issues on the AJ6 and ignition coil problems on the AJ16. Buy on service history above all else - a well-maintained XJ 4.0 is a rewarding and increasingly collectable car; a neglected example can be expensive to repair.",
     "cta": {
       "label": "→ Compare XJ 4.0 engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -514,7 +514,7 @@
     },
     "cta": {
       "label": "→ Compare XJ 4.0 engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -599,7 +599,7 @@
     "finalCta": "Find the best Jaguar XJ 4.0 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Explore Jaguar XJ 4.0 Engine Quotes →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

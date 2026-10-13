@@ -72,13 +72,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "AJ6 (3.2L)",
-              "url": "https://jaguarengines.uk/engines/aj6/"
+              "url": "https://jaguarengines.uk/engine/aj6-aj16"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "AJ16 (3.2L)",
-              "url": "https://jaguarengines.uk/engines/aj16/"
+              "url": "https://jaguarengines.uk/engine/aj6-aj16"
             }
           ]
         },
@@ -206,7 +206,7 @@
       "placeholder": "Enter your reg - e.g. AB12 CDE",
       "cta": {
         "label": "See XJ 3.2 Engine Options →",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
@@ -285,7 +285,7 @@
     "labourEstimate": "Fitting an XJ 3.2 engine typically takes 12–16 hours at £65–£95/hr (independent). The engine is longitudinally mounted in a front-engine, rear-wheel-drive layout.",
     "cta": {
       "label": "→ Compare XJ 3.2 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "commonProblems": {
@@ -305,7 +305,7 @@
         "recommendation": "Valve stem seals are a \"common leak point\" on these engines. This is one of the most frequently reported issues on the AJ6/AJ16, allowing oil to dribble into the cylinders and causing blue smoke at start-up. If you notice blue smoke on first start-up after the car has been resting, have the valve stem seals inspected. Catching this early prevents fouled spark plugs and catalytic converter damage.",
         "failureLink": {
           "label": "Read the full valve stem seal guide → /failures/valve-stem-seals/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/failures"
         }
       },
       {
@@ -323,7 +323,7 @@
         "recommendation": "The upper timing chain tensioner is \"well documented as failing with age\" on the AJ16. There is NO adjustment for the AJ16 timing chain. The top tensioner in the cylinder head right-hand front corner can fail, and even \"new update\" versions can fail. At the first sign of rattling, get the tensioner inspected immediately. A £200–£500 preventative repair is dramatically cheaper than a £3,500–£7,000 engine replacement. Replacing the upper tensioner is a straightforward job - the timing cover does not need to be removed.",
         "failureLink": {
           "label": "Read the full timing chain tensioner guide",
-          "href": "/failures/timing-chain-tensioner/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -341,7 +341,7 @@
         "recommendation": "A common issue on the XJ 3.2 is running rich due to failed oxygen sensors. Symptoms include black smoke under acceleration, sooty spark plugs, rough idle, and fuel consumption dropping significantly - one owner reported consumption improving from 6 km/l to 10–11 km/l after replacing two broken O2 sensors. If you experience these symptoms, have the O2 sensors inspected. Catching this early prevents catalytic converter damage.",
         "failureLink": {
           "label": "Read the full oxygen sensor guide → /failures/oxygen-sensor-failure/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/failures"
         }
       }
     ]
@@ -351,7 +351,7 @@
     "supportingLine": "15 vetted Jaguar specialists, every XJ 3.2 engine covered, with a 12-month warranty as standard.",
     "button": {
       "label": "See XJ 3.2 Engine Options →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "repairBuyOrReplace": {
@@ -415,7 +415,7 @@
     "closingVerdict": "The Jaguar XJ 3.2's AJ6 and AJ16 engines are among Jaguar's most durable straight-sixes. These engines are \"TUFF\" and capable of 500,000 km (310,000 miles) with proper maintenance. The AJ6 was introduced in the XJ40 in 1992, replacing the 2.9L engine. The AJ16 was a \"much-modified version\" with distributor-less ignition. Common issues are manageable: valve stem seals, upper timing chain tensioner wear, and O2 sensor failure. Buy a well-maintained example with documented service history - these engines reward proper care with exceptional longevity.",
     "cta": {
       "label": "→ Compare XJ 3.2 engine prices before you buy",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "buyingChecklist": {
@@ -547,7 +547,7 @@
     },
     "cta": {
       "label": "→ Compare XJ 3.2 engine prices for your Jaguar",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "marketIntelligence": {
@@ -632,7 +632,7 @@
     "finalCta": "Find the best Jaguar XJ 3.2 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Explore Jaguar XJ 3.2 Engine Quotes →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }
