@@ -1,0 +1,1422 @@
+{
+ "_note": "Provenance of every photo in public/cars: published file -> source file in the shared 'Jaguar Split' folder, and its paint colour. Not imported by the site.",
+ "colours": {
+  "jaguar-e-pace-x540-chequered-flag-edition-compact-suv-2019-2020-special-corris-grey-e-pace-chequered-side.webp": {
+   "label": "corris grey",
+   "detected": "grey"
+  },
+  "jaguar-e-pace-x540-300-sport-black-compact-suv-2023-2024-special-ostuni-white-e-pace-300-black-side.webp": {
+   "label": "ostuni white",
+   "detected": "white"
+  },
+  "jaguar-e-pace-x540-r-dynamic-black-compact-suv-2021-2023-special-carpathian-grey-e-pace-black-side.webp": {
+   "label": "carpathian grey",
+   "detected": "grey"
+  },
+  "jaguar-e-pace-x540-hse-compact-suv-2017-2020-new-santorini-black-e-pace-hse-side.webp": {
+   "label": "santorini black",
+   "detected": "black"
+  },
+  "jaguar-e-pace-x540-300-sport-compact-suv-2024-new-ostuni-white-e-pace-300-2-side.webp": {
+   "label": "ostuni white",
+   "detected": "white"
+  },
+  "jaguar-e-pace-x540-r-dynamic-hse-compact-suv-2017-2020-new-carpathian-grey-e-pace-r-dyn-hse-side.webp": {
+   "label": "carpathian grey",
+   "detected": "grey"
+  },
+  "jaguar-e-pace-x540-r-dynamic-se-black-compact-suv-2021-2023-new-santorini-black-e-pace-se-black-side.webp": {
+   "label": "santorini black",
+   "detected": "black"
+  },
+  "jaguar-e-pace-x540-se-compact-suv-2017-2020-new-corris-grey-e-pace-se-side.webp": {
+   "label": "corris grey",
+   "detected": "grey"
+  },
+  "jaguar-e-pace-x540-first-edition-compact-suv-2017-2018-special-yulong-white-e-pace-first-side.webp": {
+   "label": "yulong white",
+   "detected": "white"
+  },
+  "jaguar-e-pace-x540-r-dynamic-s-compact-suv-2017-2020-new-yulong-white-e-pace-r-dyn-s-side.webp": {
+   "label": "yulong white",
+   "detected": "white"
+  },
+  "jaguar-e-pace-x540-chequered-flag-edition-compact-suv-2019-2020-special-corris-grey-e-pace-chequered-45.webp": {
+   "label": "corris grey",
+   "detected": "grey"
+  },
+  "jaguar-e-pace-x540-300-sport-black-compact-suv-2023-2024-special-ostuni-white-e-pace-300-black-45.webp": {
+   "label": "ostuni white",
+   "detected": "white"
+  },
+  "jaguar-e-pace-x540-r-dynamic-black-compact-suv-2021-2023-special-carpathian-grey-e-pace-black-45.webp": {
+   "label": "carpathian grey",
+   "detected": "grey"
+  },
+  "jaguar-e-pace-x540-hse-compact-suv-2017-2020-new-santorini-black-e-pace-hse-45.webp": {
+   "label": "santorini black",
+   "detected": "black"
+  },
+  "jaguar-e-pace-x540-300-sport-compact-suv-2024-new-ostuni-white-e-pace-300-2-45.webp": {
+   "label": "ostuni white",
+   "detected": "white"
+  },
+  "jaguar-e-pace-x540-r-dynamic-hse-compact-suv-2017-2020-new-carpathian-grey-e-pace-r-dyn-hse-45.webp": {
+   "label": "carpathian grey",
+   "detected": "grey"
+  },
+  "jaguar-e-pace-x540-r-dynamic-se-black-compact-suv-2021-2023-new-santorini-black-e-pace-se-black-45.webp": {
+   "label": "santorini black",
+   "detected": "black"
+  },
+  "jaguar-e-pace-x540-se-compact-suv-2017-2020-new-corris-grey-e-pace-se-45.webp": {
+   "label": "corris grey",
+   "detected": "grey"
+  },
+  "jaguar-e-pace-x540-first-edition-compact-suv-2017-2018-special-yulong-white-e-pace-first-45.webp": {
+   "label": "yulong white",
+   "detected": "white"
+  },
+  "jaguar-e-pace-x540-r-dynamic-s-compact-suv-2017-2020-new-yulong-white-e-pace-r-dyn-s-45.webp": {
+   "label": "yulong white",
+   "detected": "white"
+  },
+  "jaguar-e-pace-x540-chequered-flag-edition-compact-suv-2019-2020-special-corris-grey-e-pace-chequered-front.webp": {
+   "label": "corris grey",
+   "detected": "grey"
+  },
+  "jaguar-e-pace-x540-300-sport-black-compact-suv-2023-2024-special-ostuni-white-e-pace-300-black-front.webp": {
+   "label": "ostuni white",
+   "detected": "white"
+  },
+  "jaguar-e-pace-x540-r-dynamic-black-compact-suv-2021-2023-special-carpathian-grey-e-pace-black-front.webp": {
+   "label": "carpathian grey",
+   "detected": "grey"
+  },
+  "jaguar-e-pace-x540-hse-compact-suv-2017-2020-new-santorini-black-e-pace-hse-front.webp": {
+   "label": "santorini black",
+   "detected": "black"
+  },
+  "jaguar-e-pace-x540-300-sport-compact-suv-2024-new-ostuni-white-e-pace-300-2-front.webp": {
+   "label": "ostuni white",
+   "detected": "white"
+  },
+  "jaguar-e-pace-x540-r-dynamic-hse-compact-suv-2017-2020-new-carpathian-grey-e-pace-r-dyn-hse-front.webp": {
+   "label": "carpathian grey",
+   "detected": "grey"
+  },
+  "jaguar-e-pace-x540-r-dynamic-se-black-compact-suv-2021-2023-new-santorini-black-e-pace-se-black-front.webp": {
+   "label": "santorini black",
+   "detected": "black"
+  },
+  "jaguar-e-pace-x540-se-compact-suv-2017-2020-new-corris-grey-e-pace-se-front.webp": {
+   "label": "corris grey",
+   "detected": "grey"
+  },
+  "jaguar-e-pace-x540-first-edition-compact-suv-2017-2018-special-yulong-white-e-pace-first-front.webp": {
+   "label": "yulong white",
+   "detected": "white"
+  },
+  "jaguar-e-pace-x540-r-dynamic-s-compact-suv-2017-2020-new-yulong-white-e-pace-r-dyn-s-front.webp": {
+   "label": "yulong white",
+   "detected": "white"
+  },
+  "jaguar-f-pace-x761-300-sport-suv-2021-2024-new-carpathian-grey-f-pace-300-side.webp": {
+   "label": "carpathian grey",
+   "detected": "grey"
+  },
+  "jaguar-f-pace-x761-25d-r-sport-suv-2017-2019-group-narvik-black-f-pace-25d-side.webp": {
+   "label": "narvik black",
+   "detected": "black"
+  },
+  "jaguar-f-pace-x761-300-sport-suv-2018-2020-special-yulong-white-f-pace-300-sport-side.webp": {
+   "label": "yulong white",
+   "detected": "white"
+  },
+  "jaguar-f-pace-x761-400-sport-suv-2023-2024-special-carpathian-grey-f-pace-400-sport-side.webp": {
+   "label": "carpathian grey",
+   "detected": "grey"
+  },
+  "jaguar-f-pace-x761-r-dynamic-hse-suv-2021-2024-new-santorini-black-f-pace-r-dyn-hse-side.webp": {
+   "label": "santorini black",
+   "detected": "black"
+  },
+  "jaguar-f-pace-x761-portfolio-suv-2016-2018-new-yulong-white-f-pace-portfolio-side.webp": {
+   "label": "yulong white",
+   "detected": "white"
+  },
+  "jaguar-f-pace-x761-chequered-flag-edition-suv-2019-2020-special-corris-grey-f-pace-chequered-side.webp": {
+   "label": "corris grey",
+   "detected": "grey"
+  },
+  "jaguar-f-pace-x761-r-dynamic-black-suv-2023-2024-special-ostuni-white-f-pace-black-side.webp": {
+   "label": "ostuni white",
+   "detected": "white"
+  },
+  "jaguar-f-pace-x761-prestige-suv-2016-2018-new-corris-grey-f-pace-prestige-side.webp": {
+   "label": "corris grey",
+   "detected": "grey"
+  },
+  "jaguar-f-pace-x761-r-sport-awd-suv-2016-2019-group-corris-grey-f-pace-r-sport-awd-side.webp": {
+   "label": "corris grey",
+   "detected": "grey"
+  },
+  "jaguar-f-pace-x761-300-sport-suv-2021-2024-new-carpathian-grey-f-pace-300-front.webp": {
+   "label": "carpathian grey",
+   "detected": "grey"
+  },
+  "jaguar-f-pace-x761-25d-r-sport-suv-2017-2019-group-narvik-black-f-pace-25d-front.webp": {
+   "label": "narvik black",
+   "detected": "black"
+  },
+  "jaguar-f-pace-x761-300-sport-suv-2018-2020-special-yulong-white-f-pace-300-sport-front.webp": {
+   "label": "yulong white",
+   "detected": "white"
+  },
+  "jaguar-f-pace-x761-400-sport-suv-2023-2024-special-carpathian-grey-f-pace-400-sport-front.webp": {
+   "label": "carpathian grey",
+   "detected": "grey"
+  },
+  "jaguar-f-pace-x761-r-dynamic-hse-suv-2021-2024-new-santorini-black-f-pace-r-dyn-hse-front.webp": {
+   "label": "santorini black",
+   "detected": "black"
+  },
+  "jaguar-f-pace-x761-portfolio-suv-2016-2018-new-yulong-white-f-pace-portfolio-front.webp": {
+   "label": "yulong white",
+   "detected": "white"
+  },
+  "jaguar-f-pace-x761-chequered-flag-edition-suv-2019-2020-special-corris-grey-f-pace-chequered-front.webp": {
+   "label": "corris grey",
+   "detected": "grey"
+  },
+  "jaguar-f-pace-x761-r-dynamic-black-suv-2023-2024-special-ostuni-white-f-pace-black-front.webp": {
+   "label": "ostuni white",
+   "detected": "white"
+  },
+  "jaguar-f-pace-x761-prestige-suv-2016-2018-new-corris-grey-f-pace-prestige-front.webp": {
+   "label": "corris grey",
+   "detected": "grey"
+  },
+  "jaguar-f-pace-x761-r-sport-awd-suv-2016-2019-group-corris-grey-f-pace-r-sport-awd-front.webp": {
+   "label": "corris grey",
+   "detected": "grey"
+  },
+  "jaguar-f-pace-x761-300-sport-suv-2021-2024-new-carpathian-grey-f-pace-300-45.webp": {
+   "label": "carpathian grey",
+   "detected": "grey"
+  },
+  "jaguar-f-pace-x761-25d-r-sport-suv-2017-2019-group-narvik-black-f-pace-25d-45.webp": {
+   "label": "narvik black",
+   "detected": "black"
+  },
+  "jaguar-f-pace-x761-300-sport-suv-2018-2020-special-yulong-white-f-pace-300-sport-45.webp": {
+   "label": "yulong white",
+   "detected": "white"
+  },
+  "jaguar-f-pace-x761-400-sport-suv-2023-2024-special-carpathian-grey-f-pace-400-sport-45.webp": {
+   "label": "carpathian grey",
+   "detected": "grey"
+  },
+  "jaguar-f-pace-x761-r-dynamic-hse-suv-2021-2024-new-santorini-black-f-pace-r-dyn-hse-45.webp": {
+   "label": "santorini black",
+   "detected": "black"
+  },
+  "jaguar-f-pace-x761-portfolio-suv-2016-2018-new-yulong-white-f-pace-portfolio-45.webp": {
+   "label": "yulong white",
+   "detected": "white"
+  },
+  "jaguar-f-pace-x761-chequered-flag-edition-suv-2019-2020-special-corris-grey-f-pace-chequered-45.webp": {
+   "label": "corris grey",
+   "detected": "grey"
+  },
+  "jaguar-f-pace-x761-r-dynamic-black-suv-2023-2024-special-ostuni-white-f-pace-black-45.webp": {
+   "label": "ostuni white",
+   "detected": "white"
+  },
+  "jaguar-f-pace-x761-prestige-suv-2016-2018-new-corris-grey-f-pace-prestige-45.webp": {
+   "label": "corris grey",
+   "detected": "grey"
+  },
+  "jaguar-f-pace-x761-r-sport-awd-suv-2016-2019-group-corris-grey-f-pace-r-sport-awd-45.webp": {
+   "label": "corris grey",
+   "detected": "grey"
+  },
+  "jaguar-f-type-x152-400-sport-convertible-convertible-2017-2018-special-corris-grey-f-type-400-conv-side.webp": {
+   "label": "corris grey",
+   "detected": "grey"
+  },
+  "jaguar-f-type-x152-s-coupe-2013-2017-new-ultimate-black-f-type-s-side.webp": {
+   "label": "ultimate black",
+   "detected": "black"
+  },
+  "jaguar-f-type-x152-400-sport-coupe-coupe-2017-2018-special-yulong-white-f-type-400-sport-side.webp": {
+   "label": "yulong white",
+   "detected": "white"
+  },
+  "jaguar-f-type-x152-convertible-convertible-2013-2017-new-polaris-white-f-type-conv-side.webp": {
+   "label": "polaris white",
+   "detected": "white"
+  },
+  "jaguar-f-type-x152-v8-s-convertible-convertible-2013-2017-new-polaris-white-f-type-v8-conv-side.webp": {
+   "label": "polaris white",
+   "detected": "white"
+  },
+  "jaguar-f-type-x152-400-sport-convertible-convertible-2017-2018-special-corris-grey-f-type-400-conv-45.webp": {
+   "label": "corris grey",
+   "detected": "grey"
+  },
+  "jaguar-f-type-x152-s-coupe-2013-2017-new-ultimate-black-f-type-s-45.webp": {
+   "label": "ultimate black",
+   "detected": "black"
+  },
+  "jaguar-f-type-x152-400-sport-coupe-coupe-2017-2018-special-yulong-white-f-type-400-sport-45.webp": {
+   "label": "yulong white",
+   "detected": "white"
+  },
+  "jaguar-f-type-x152-convertible-convertible-2013-2017-new-polaris-white-f-type-conv-45.webp": {
+   "label": "polaris white",
+   "detected": "white"
+  },
+  "jaguar-f-type-x152-v8-s-convertible-convertible-2013-2017-new-polaris-white-f-type-v8-conv-45.webp": {
+   "label": "polaris white",
+   "detected": "white"
+  },
+  "jaguar-f-type-x152-400-sport-convertible-convertible-2017-2018-special-corris-grey-f-type-400-conv-front.webp": {
+   "label": "corris grey",
+   "detected": "grey"
+  },
+  "jaguar-f-type-x152-s-coupe-2013-2017-new-ultimate-black-f-type-s-front.webp": {
+   "label": "ultimate black",
+   "detected": "black"
+  },
+  "jaguar-f-type-x152-400-sport-coupe-coupe-2017-2018-special-yulong-white-f-type-400-sport-front.webp": {
+   "label": "yulong white",
+   "detected": "white"
+  },
+  "jaguar-f-type-x152-convertible-convertible-2013-2017-new-polaris-white-f-type-conv-front.webp": {
+   "label": "polaris white",
+   "detected": "white"
+  },
+  "jaguar-f-type-x152-v8-s-convertible-convertible-2013-2017-new-polaris-white-f-type-v8-conv-front.webp": {
+   "label": "polaris white",
+   "detected": "white"
+  },
+  "jaguar-f-type-x152-lci-p450-r-dynamic-coupe-2020-2024-new-santorini-black-f-type-p450-front.webp": {
+   "label": "santorini black",
+   "detected": "grey"
+  },
+  "jaguar-f-type-x152-lci-chequered-flag-coupe-coupe-2018-2020-special-fuji-white-f-type-chequered-front.webp": {
+   "label": "fuji white",
+   "detected": "white"
+  },
+  "jaguar-f-type-x152-lci-p450-r-dynamic-coupe-2020-2024-new-santorini-black-f-type-p450-side.webp": {
+   "label": "santorini black",
+   "detected": "black"
+  },
+  "jaguar-f-type-x152-lci-chequered-flag-coupe-coupe-2018-2020-special-fuji-white-f-type-chequered-side.webp": {
+   "label": "fuji white",
+   "detected": "white"
+  },
+  "jaguar-f-type-x152-lci-p450-r-dynamic-coupe-2020-2024-new-santorini-black-f-type-p450-45.webp": {
+   "label": "santorini black",
+   "detected": "grey"
+  },
+  "jaguar-f-type-x152-lci-chequered-flag-coupe-coupe-2018-2020-special-fuji-white-f-type-chequered-45.webp": {
+   "label": "fuji white",
+   "detected": "white"
+  },
+  "jaguar-s-type-x200-60th-anniversary-edition-saloon-2008-special-ultimate-black-s-type-60th-front.webp": {
+   "label": "ultimate black",
+   "detected": "grey"
+  },
+  "jaguar-s-type-x200-r-performance-saloon-2002-2007-special-ultimate-black-s-type-r-black-front.webp": {
+   "label": "ultimate black",
+   "detected": "grey"
+  },
+  "jaguar-s-type-x200-3-0-v6-se-saloon-1999-2002-new-platinum-silver-x200-30-se-2-front.webp": {
+   "label": "platinum silver",
+   "detected": "silver"
+  },
+  "jaguar-s-type-x200-3-0-v6-se-saloon-1999-2002-new-platinum-silver-x200-30-se-front.webp": {
+   "label": "platinum silver",
+   "detected": "grey"
+  },
+  "jaguar-s-type-x200-4-2-v8-r-performance-saloon-2002-2007-special-zircon-s-type-r-front.webp": {
+   "label": "zircon",
+   "detected": "grey"
+  },
+  "jaguar-s-type-x200-60th-anniversary-edition-saloon-2008-special-ultimate-black-s-type-60th-side.webp": {
+   "label": "ultimate black",
+   "detected": "black"
+  },
+  "jaguar-s-type-x200-r-performance-saloon-2002-2007-special-ultimate-black-s-type-r-black-side.webp": {
+   "label": "ultimate black",
+   "detected": "black"
+  },
+  "jaguar-s-type-x200-3-0-v6-se-saloon-1999-2002-new-platinum-silver-x200-30-se-2-side.webp": {
+   "label": "platinum silver",
+   "detected": "white"
+  },
+  "jaguar-s-type-x200-3-0-v6-se-saloon-1999-2002-new-platinum-silver-x200-30-se-side.webp": {
+   "label": "platinum silver",
+   "detected": "grey"
+  },
+  "jaguar-s-type-x200-4-2-v8-r-performance-saloon-2002-2007-special-zircon-s-type-r-side.webp": {
+   "label": "zircon",
+   "detected": "grey"
+  },
+  "jaguar-s-type-x200-60th-anniversary-edition-saloon-2008-special-ultimate-black-s-type-60th-45.webp": {
+   "label": "ultimate black",
+   "detected": "grey"
+  },
+  "jaguar-s-type-x200-r-performance-saloon-2002-2007-special-ultimate-black-s-type-r-black-45.webp": {
+   "label": "ultimate black",
+   "detected": "grey"
+  },
+  "jaguar-s-type-x200-3-0-v6-se-saloon-1999-2002-new-platinum-silver-x200-30-se-2-45.webp": {
+   "label": "platinum silver",
+   "detected": "silver"
+  },
+  "jaguar-s-type-x200-3-0-v6-se-saloon-1999-2002-new-platinum-silver-x200-30-se-45.webp": {
+   "label": "platinum silver",
+   "detected": "grey"
+  },
+  "jaguar-s-type-x200-4-2-v8-r-performance-saloon-2002-2007-special-zircon-s-type-r-45.webp": {
+   "label": "zircon",
+   "detected": "grey"
+  },
+  "jaguar-x-type-x400-2-2-d-se-saloon-2007-2010-new-vapour-grey-x-type-22d-45.webp": {
+   "label": "vapour grey",
+   "detected": "grey"
+  },
+  "jaguar-x-type-x400-2-0-v6-se-saloon-2001-2004-new-zircon-x-type-20-2-45.webp": {
+   "label": "zircon",
+   "detected": "grey"
+  },
+  "jaguar-x-type-x400-3-0-v6-sport-saloon-2001-2004-new-titanium-x-type-30-45.webp": {
+   "label": "titanium",
+   "detected": "silver"
+  },
+  "jaguar-x-type-x400-2-0-v6-se-saloon-2001-2004-new-zircon-x-type-20-45.webp": {
+   "label": "zircon",
+   "detected": "silver"
+  },
+  "jaguar-x-type-x400-2-2-d-se-saloon-2007-2010-new-vapour-grey-x-type-22d-front.webp": {
+   "label": "vapour grey",
+   "detected": "grey"
+  },
+  "jaguar-x-type-x400-2-0-v6-se-saloon-2001-2004-new-zircon-x-type-20-2-front.webp": {
+   "label": "zircon",
+   "detected": "grey"
+  },
+  "jaguar-x-type-x400-3-0-v6-sport-saloon-2001-2004-new-titanium-x-type-30-front.webp": {
+   "label": "titanium",
+   "detected": "silver"
+  },
+  "jaguar-x-type-x400-2-0-v6-se-saloon-2001-2004-new-zircon-x-type-20-front.webp": {
+   "label": "zircon",
+   "detected": "silver"
+  },
+  "jaguar-x-type-x400-2-2-d-se-saloon-2007-2010-new-vapour-grey-x-type-22d-side.webp": {
+   "label": "vapour grey",
+   "detected": "grey"
+  },
+  "jaguar-x-type-x400-2-0-v6-se-saloon-2001-2004-new-zircon-x-type-20-2-side.webp": {
+   "label": "zircon",
+   "detected": "grey"
+  },
+  "jaguar-x-type-x400-3-0-v6-sport-saloon-2001-2004-new-titanium-x-type-30-side.webp": {
+   "label": "titanium",
+   "detected": "silver"
+  },
+  "jaguar-x-type-x400-2-0-v6-se-saloon-2001-2004-new-zircon-x-type-20-side.webp": {
+   "label": "zircon",
+   "detected": "white"
+  },
+  "jaguar-xe-x760-prestige-saloon-2015-2017-new-corris-grey-xe-prestige-side.webp": {
+   "label": "corris grey",
+   "detected": "grey"
+  },
+  "jaguar-xe-x760-300-sport-saloon-2017-2019-special-santorini-black-xe-300-sport-2-side.webp": {
+   "label": "santorini black",
+   "detected": "black"
+  },
+  "jaguar-xe-x760-20t-prestige-saloon-2015-2017-group-glacier-white-xe-20t-side.webp": {
+   "label": "glacier white",
+   "detected": "white"
+  },
+  "jaguar-xe-x760-landmark-edition-saloon-2018-special-yulong-white-xe-landmark-side.webp": {
+   "label": "yulong white",
+   "detected": "white"
+  },
+  "jaguar-xe-x760-portfolio-saloon-2015-2017-new-ultimate-black-xe-portfolio-side.webp": {
+   "label": "ultimate black",
+   "detected": "grey"
+  },
+  "jaguar-xe-x760-se-saloon-2015-2017-new-polaris-white-xe-se-side.webp": {
+   "label": "polaris white",
+   "detected": "white"
+  },
+  "jaguar-xe-x760-prestige-saloon-2015-2017-new-corris-grey-xe-prestige-45.webp": {
+   "label": "corris grey",
+   "detected": "grey"
+  },
+  "jaguar-xe-x760-300-sport-saloon-2017-2019-special-santorini-black-xe-300-sport-2-45.webp": {
+   "label": "santorini black",
+   "detected": "black"
+  },
+  "jaguar-xe-x760-20t-prestige-saloon-2015-2017-group-glacier-white-xe-20t-45.webp": {
+   "label": "glacier white",
+   "detected": "white"
+  },
+  "jaguar-xe-x760-landmark-edition-saloon-2018-special-yulong-white-xe-landmark-45.webp": {
+   "label": "yulong white",
+   "detected": "white"
+  },
+  "jaguar-xe-x760-portfolio-saloon-2015-2017-new-ultimate-black-xe-portfolio-45.webp": {
+   "label": "ultimate black",
+   "detected": "black"
+  },
+  "jaguar-xe-x760-se-saloon-2015-2017-new-polaris-white-xe-se-45.webp": {
+   "label": "polaris white",
+   "detected": "white"
+  },
+  "jaguar-xe-x760-prestige-saloon-2015-2017-new-corris-grey-xe-prestige-front.webp": {
+   "label": "corris grey",
+   "detected": "grey"
+  },
+  "jaguar-xe-x760-300-sport-saloon-2017-2019-special-santorini-black-xe-300-sport-2-front.webp": {
+   "label": "santorini black",
+   "detected": "black"
+  },
+  "jaguar-xe-x760-20t-prestige-saloon-2015-2017-group-glacier-white-xe-20t-front.webp": {
+   "label": "glacier white",
+   "detected": "white"
+  },
+  "jaguar-xe-x760-landmark-edition-saloon-2018-special-yulong-white-xe-landmark-front.webp": {
+   "label": "yulong white",
+   "detected": "white"
+  },
+  "jaguar-xe-x760-portfolio-saloon-2015-2017-new-ultimate-black-xe-portfolio-front.webp": {
+   "label": "ultimate black",
+   "detected": "black"
+  },
+  "jaguar-xe-x760-se-saloon-2015-2017-new-polaris-white-xe-se-front.webp": {
+   "label": "polaris white",
+   "detected": "white"
+  },
+  "jaguar-xe-x760-lci-300-sport-black-saloon-2020-2021-special-carpathian-grey-xe-300-black-45.webp": {
+   "label": "carpathian grey",
+   "detected": "grey"
+  },
+  "jaguar-xe-x760-lci-r-dynamic-black-saloon-2021-2024-special-santorini-black-xe-black-45.webp": {
+   "label": "santorini black",
+   "detected": "black"
+  },
+  "jaguar-xe-x760-lci-300-sport-saloon-2019-2024-special-ostuni-white-xe-300-lci-45.webp": {
+   "label": "ostuni white",
+   "detected": "white"
+  },
+  "jaguar-xe-x760-lci-r-dynamic-hse-saloon-2019-2024-new-santorini-black-xe-r-dyn-hse-45.webp": {
+   "label": "santorini black",
+   "detected": "black"
+  },
+  "jaguar-xe-x760-lci-300-sport-black-saloon-2020-2021-special-carpathian-grey-xe-300-black-side.webp": {
+   "label": "carpathian grey",
+   "detected": "grey"
+  },
+  "jaguar-xe-x760-lci-r-dynamic-black-saloon-2021-2024-special-santorini-black-xe-black-side.webp": {
+   "label": "santorini black",
+   "detected": "black"
+  },
+  "jaguar-xe-x760-lci-300-sport-saloon-2019-2024-special-ostuni-white-xe-300-lci-side.webp": {
+   "label": "ostuni white",
+   "detected": "white"
+  },
+  "jaguar-xe-x760-lci-r-dynamic-hse-saloon-2019-2024-new-santorini-black-xe-r-dyn-hse-side.webp": {
+   "label": "santorini black",
+   "detected": "black"
+  },
+  "jaguar-xe-x760-lci-300-sport-black-saloon-2020-2021-special-carpathian-grey-xe-300-black-front.webp": {
+   "label": "carpathian grey",
+   "detected": "grey"
+  },
+  "jaguar-xe-x760-lci-r-dynamic-black-saloon-2021-2024-special-santorini-black-xe-black-front.webp": {
+   "label": "santorini black",
+   "detected": "black"
+  },
+  "jaguar-xe-x760-lci-300-sport-saloon-2019-2024-special-ostuni-white-xe-300-lci-front.webp": {
+   "label": "ostuni white",
+   "detected": "white"
+  },
+  "jaguar-xe-x760-lci-r-dynamic-hse-saloon-2019-2024-new-santorini-black-xe-r-dyn-hse-front.webp": {
+   "label": "santorini black",
+   "detected": "black"
+  },
+  "jaguar-xf-x250-luxury-saloon-2008-2011-new-vapour-grey-xf-luxury-45.webp": {
+   "label": "vapour grey",
+   "detected": "grey"
+  },
+  "jaguar-xf-x250-sv8-performance-saloon-2008-2009-new-ultimate-black-xf-sv8-45.webp": {
+   "label": "ultimate black",
+   "detected": "black"
+  },
+  "jaguar-xf-x250-premium-luxury-saloon-2008-2011-new-polaris-white-xf-premium-45.webp": {
+   "label": "polaris white",
+   "detected": "white"
+  },
+  "jaguar-xf-x250-xfr-performance-saloon-2009-2011-special-ultimate-black-xfr-45.webp": {
+   "label": "ultimate black",
+   "detected": "black"
+  },
+  "jaguar-xf-x250-sportbrake-estate-2012-2015-new-polaris-white-xf-sportbrake-45.webp": {
+   "label": "polaris white",
+   "detected": "white"
+  },
+  "jaguar-xf-x250-luxury-saloon-2008-2011-new-vapour-grey-xf-luxury-side.webp": {
+   "label": "vapour grey",
+   "detected": "grey"
+  },
+  "jaguar-xf-x250-sv8-performance-saloon-2008-2009-new-ultimate-black-xf-sv8-side.webp": {
+   "label": "ultimate black",
+   "detected": "black"
+  },
+  "jaguar-xf-x250-premium-luxury-saloon-2008-2011-new-polaris-white-xf-premium-side.webp": {
+   "label": "polaris white",
+   "detected": "white"
+  },
+  "jaguar-xf-x250-xfr-performance-saloon-2009-2011-special-ultimate-black-xfr-side.webp": {
+   "label": "ultimate black",
+   "detected": "black"
+  },
+  "jaguar-xf-x250-sportbrake-estate-2012-2015-new-polaris-white-xf-sportbrake-side.webp": {
+   "label": "polaris white",
+   "detected": "white"
+  },
+  "jaguar-xf-x250-luxury-saloon-2008-2011-new-vapour-grey-xf-luxury-front.webp": {
+   "label": "vapour grey",
+   "detected": "grey"
+  },
+  "jaguar-xf-x250-sv8-performance-saloon-2008-2009-new-ultimate-black-xf-sv8-front.webp": {
+   "label": "ultimate black",
+   "detected": "black"
+  },
+  "jaguar-xf-x250-premium-luxury-saloon-2008-2011-new-polaris-white-xf-premium-front.webp": {
+   "label": "polaris white",
+   "detected": "white"
+  },
+  "jaguar-xf-x250-xfr-performance-saloon-2009-2011-special-ultimate-black-xfr-front.webp": {
+   "label": "ultimate black",
+   "detected": "black"
+  },
+  "jaguar-xf-x250-sportbrake-estate-2012-2015-new-polaris-white-xf-sportbrake-front.webp": {
+   "label": "polaris white",
+   "detected": "white"
+  },
+  "jaguar-xf-x250-lci-luxury-saloon-2011-2015-new-stratus-grey-xf-lci-luxury-front.webp": {
+   "label": "stratus grey",
+   "detected": "grey"
+  },
+  "jaguar-xf-x250-lci-xfr-performance-saloon-2011-2015-special-ultimate-black-xfr-lci-front.webp": {
+   "label": "ultimate black",
+   "detected": "black"
+  },
+  "jaguar-xf-x250-lci-premium-luxury-saloon-2011-2015-new-polaris-white-xf-lci-premium-front.webp": {
+   "label": "polaris white",
+   "detected": "white"
+  },
+  "jaguar-xf-x250-lci-r-sport-saloon-2014-2015-new-dark-sapphire-xf-r-sport-front.webp": {
+   "label": "dark sapphire",
+   "detected": "black"
+  },
+  "jaguar-xf-x250-lci-luxury-saloon-2011-2015-new-stratus-grey-xf-lci-luxury-45.webp": {
+   "label": "stratus grey",
+   "detected": "grey"
+  },
+  "jaguar-xf-x250-lci-xfr-performance-saloon-2011-2015-special-ultimate-black-xfr-lci-45.webp": {
+   "label": "ultimate black",
+   "detected": "black"
+  },
+  "jaguar-xf-x250-lci-premium-luxury-saloon-2011-2015-new-polaris-white-xf-lci-premium-45.webp": {
+   "label": "polaris white",
+   "detected": "white"
+  },
+  "jaguar-xf-x250-lci-r-sport-saloon-2014-2015-new-dark-sapphire-xf-r-sport-45.webp": {
+   "label": "dark sapphire",
+   "detected": "black"
+  },
+  "jaguar-xf-x250-lci-luxury-saloon-2011-2015-new-stratus-grey-xf-lci-luxury-side.webp": {
+   "label": "stratus grey",
+   "detected": "grey"
+  },
+  "jaguar-xf-x250-lci-xfr-performance-saloon-2011-2015-special-ultimate-black-xfr-lci-side.webp": {
+   "label": "ultimate black",
+   "detected": "black"
+  },
+  "jaguar-xf-x250-lci-premium-luxury-saloon-2011-2015-new-polaris-white-xf-lci-premium-side.webp": {
+   "label": "polaris white",
+   "detected": "white"
+  },
+  "jaguar-xf-x250-lci-r-sport-saloon-2014-2015-new-dark-sapphire-xf-r-sport-side.webp": {
+   "label": "dark sapphire",
+   "detected": "blue-dark"
+  },
+  "jaguar-xf-x260-chequered-flag-saloon-2019-special-eiger-grey-xf-chequered-front.webp": {
+   "label": "eiger grey",
+   "detected": "grey"
+  },
+  "jaguar-xf-x260-r-dynamic-black-saloon-2020-2024-special-santorini-black-xf-black-front.webp": {
+   "label": "santorini black",
+   "detected": "black"
+  },
+  "jaguar-xf-x260-300-sport-sportbrake-2019-2024-special-yulong-white-xf-sb-300-front.webp": {
+   "label": "yulong white",
+   "detected": "white"
+  },
+  "jaguar-xf-x260-prestige-saloon-2016-2019-new-corris-grey-x260-prestige-front.webp": {
+   "label": "corris grey",
+   "detected": "grey"
+  },
+  "jaguar-xf-x260-r-dynamic-hse-saloon-2019-2024-new-santorini-black-xf-r-dyn-hse-front.webp": {
+   "label": "santorini black",
+   "detected": "black"
+  },
+  "jaguar-xf-x260-chequered-flag-sportbrake-2019-special-yulong-white-xf-sb-chequered-front.webp": {
+   "label": "yulong white",
+   "detected": "white"
+  },
+  "jaguar-xf-x260-r-dynamic-black-sportbrake-2021-2024-special-carpathian-grey-xf-sb-black-front.webp": {
+   "label": "carpathian grey",
+   "detected": "grey"
+  },
+  "jaguar-xf-x260-portfolio-saloon-2016-2019-new-yulong-white-x260-portfolio-front.webp": {
+   "label": "yulong white",
+   "detected": "white"
+  },
+  "jaguar-xf-x260-r-dynamic-se-saloon-2019-2024-new-carpathian-grey-xf-r-dyn-se-front.webp": {
+   "label": "carpathian grey",
+   "detected": "grey"
+  },
+  "jaguar-xf-x260-sportbrake-estate-2017-2020-new-corris-grey-x260-sportbrake-front.webp": {
+   "label": "corris grey",
+   "detected": "grey"
+  },
+  "jaguar-xf-x260-chequered-flag-saloon-2019-special-eiger-grey-xf-chequered-side.webp": {
+   "label": "eiger grey",
+   "detected": "grey"
+  },
+  "jaguar-xf-x260-r-dynamic-black-saloon-2020-2024-special-santorini-black-xf-black-side.webp": {
+   "label": "santorini black",
+   "detected": "black"
+  },
+  "jaguar-xf-x260-300-sport-sportbrake-2019-2024-special-yulong-white-xf-sb-300-side.webp": {
+   "label": "yulong white",
+   "detected": "white"
+  },
+  "jaguar-xf-x260-prestige-saloon-2016-2019-new-corris-grey-x260-prestige-side.webp": {
+   "label": "corris grey",
+   "detected": "grey"
+  },
+  "jaguar-xf-x260-r-dynamic-hse-saloon-2019-2024-new-santorini-black-xf-r-dyn-hse-side.webp": {
+   "label": "santorini black",
+   "detected": "black"
+  },
+  "jaguar-xf-x260-chequered-flag-sportbrake-2019-special-yulong-white-xf-sb-chequered-side.webp": {
+   "label": "yulong white",
+   "detected": "white"
+  },
+  "jaguar-xf-x260-r-dynamic-black-sportbrake-2021-2024-special-carpathian-grey-xf-sb-black-side.webp": {
+   "label": "carpathian grey",
+   "detected": "grey"
+  },
+  "jaguar-xf-x260-portfolio-saloon-2016-2019-new-yulong-white-x260-portfolio-side.webp": {
+   "label": "yulong white",
+   "detected": "white"
+  },
+  "jaguar-xf-x260-r-dynamic-se-saloon-2019-2024-new-carpathian-grey-xf-r-dyn-se-side.webp": {
+   "label": "carpathian grey",
+   "detected": "grey"
+  },
+  "jaguar-xf-x260-sportbrake-estate-2017-2020-new-corris-grey-x260-sportbrake-side.webp": {
+   "label": "corris grey",
+   "detected": "grey"
+  },
+  "jaguar-xf-x260-chequered-flag-saloon-2019-special-eiger-grey-xf-chequered-45.webp": {
+   "label": "eiger grey",
+   "detected": "grey"
+  },
+  "jaguar-xf-x260-r-dynamic-black-saloon-2020-2024-special-santorini-black-xf-black-45.webp": {
+   "label": "santorini black",
+   "detected": "black"
+  },
+  "jaguar-xf-x260-300-sport-sportbrake-2019-2024-special-yulong-white-xf-sb-300-45.webp": {
+   "label": "yulong white",
+   "detected": "white"
+  },
+  "jaguar-xf-x260-prestige-saloon-2016-2019-new-corris-grey-x260-prestige-45.webp": {
+   "label": "corris grey",
+   "detected": "grey"
+  },
+  "jaguar-xf-x260-r-dynamic-hse-saloon-2019-2024-new-santorini-black-xf-r-dyn-hse-45.webp": {
+   "label": "santorini black",
+   "detected": "black"
+  },
+  "jaguar-xf-x260-chequered-flag-sportbrake-2019-special-yulong-white-xf-sb-chequered-45.webp": {
+   "label": "yulong white",
+   "detected": "white"
+  },
+  "jaguar-xf-x260-r-dynamic-black-sportbrake-2021-2024-special-carpathian-grey-xf-sb-black-45.webp": {
+   "label": "carpathian grey",
+   "detected": "grey"
+  },
+  "jaguar-xf-x260-portfolio-saloon-2016-2019-new-yulong-white-x260-portfolio-45.webp": {
+   "label": "yulong white",
+   "detected": "white"
+  },
+  "jaguar-xf-x260-r-dynamic-se-saloon-2019-2024-new-carpathian-grey-xf-r-dyn-se-45.webp": {
+   "label": "carpathian grey",
+   "detected": "grey"
+  },
+  "jaguar-xf-x260-sportbrake-estate-2017-2020-new-corris-grey-x260-sportbrake-45.webp": {
+   "label": "corris grey",
+   "detected": "grey"
+  },
+  "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-regency-red-xj-s1-2-front.webp": {
+   "label": "regency red",
+   "detected": "red"
+  },
+  "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-regency-red-xj-s1-front.webp": {
+   "label": "regency red",
+   "detected": "red"
+  },
+  "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-regency-red-xj-s1-2-45.webp": {
+   "label": "regency red",
+   "detected": "red"
+  },
+  "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-regency-red-xj-s1-45.webp": {
+   "label": "regency red",
+   "detected": "red"
+  },
+  "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-regency-red-xj-s1-2-side.webp": {
+   "label": "regency red",
+   "detected": "red"
+  },
+  "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-regency-red-xj-s1-side.webp": {
+   "label": "regency red",
+   "detected": "red"
+  },
+  "jaguar-xj-series-ii-xj12-saloon-1973-1979-historical-british-racing-green-xj-s2-side.webp": {
+   "label": "british racing green",
+   "detected": "grey"
+  },
+  "jaguar-xj-series-ii-xj12-saloon-1973-1979-historical-british-racing-green-xj-s2-45.webp": {
+   "label": "british racing green",
+   "detected": "grey"
+  },
+  "jaguar-xj-series-ii-xj12-saloon-1973-1979-historical-british-racing-green-xj-s2-front.webp": {
+   "label": "british racing green",
+   "detected": "grey"
+  },
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-2-front.webp": {
+   "label": "british racing green",
+   "detected": "grey"
+  },
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-3-front.webp": {
+   "label": "british racing green",
+   "detected": "red"
+  },
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-front.webp": {
+   "label": "british racing green",
+   "detected": "grey"
+  },
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-2-side.webp": {
+   "label": "british racing green",
+   "detected": "grey"
+  },
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-3-side.webp": {
+   "label": "british racing green",
+   "detected": "red"
+  },
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-side.webp": {
+   "label": "british racing green",
+   "detected": "black"
+  },
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-2-45.webp": {
+   "label": "british racing green",
+   "detected": "grey"
+  },
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-3-45.webp": {
+   "label": "british racing green",
+   "detected": "red"
+  },
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-45.webp": {
+   "label": "british racing green",
+   "detected": "grey"
+  },
+  "jaguar-xj-x308-xjr-performance-saloon-1997-2003-special-anthracite-x308-xjr-front.webp": {
+   "label": "anthracite",
+   "detected": "grey"
+  },
+  "jaguar-xj-x308-xjr-performance-saloon-1997-2003-special-anthracite-x308-xjr-side.webp": {
+   "label": "anthracite",
+   "detected": "grey"
+  },
+  "jaguar-xj-x308-xjr-performance-saloon-1997-2003-special-anthracite-x308-xjr-45.webp": {
+   "label": "anthracite",
+   "detected": "grey"
+  },
+  "jaguar-xj-x350-xj-super-v8-portfolio-saloon-2005-2009-new-celestial-black-x350-portfolio-side.webp": {
+   "label": "celestial black",
+   "detected": "black"
+  },
+  "jaguar-xj-x350-xj8-saloon-2003-2007-new-midnight-x350-xj8-side.webp": {
+   "label": "midnight",
+   "detected": "black"
+  },
+  "jaguar-xj-x350-xjr-performance-saloon-2003-2007-special-ultimate-black-x350-xjr-side.webp": {
+   "label": "ultimate black",
+   "detected": "black"
+  },
+  "jaguar-xj-x350-xj-super-v8-portfolio-saloon-2005-2009-new-celestial-black-x350-portfolio-45.webp": {
+   "label": "celestial black",
+   "detected": "grey"
+  },
+  "jaguar-xj-x350-xj8-saloon-2003-2007-new-midnight-x350-xj8-45.webp": {
+   "label": "midnight",
+   "detected": "grey"
+  },
+  "jaguar-xj-x350-xjr-performance-saloon-2003-2007-special-ultimate-black-x350-xjr-45.webp": {
+   "label": "ultimate black",
+   "detected": "grey"
+  },
+  "jaguar-xj-x350-xj-super-v8-portfolio-saloon-2005-2009-new-celestial-black-x350-portfolio-front.webp": {
+   "label": "celestial black",
+   "detected": "grey"
+  },
+  "jaguar-xj-x350-xj6-saloon-2003-2007-new-zircon-x350-xj6-front.webp": {
+   "label": "zircon",
+   "detected": "silver"
+  },
+  "jaguar-xj-x350-xj8-saloon-2003-2007-new-midnight-x350-xj8-front.webp": {
+   "label": "midnight",
+   "detected": "grey"
+  },
+  "jaguar-xj-x350-xjr-performance-saloon-2003-2007-special-ultimate-black-x350-xjr-front.webp": {
+   "label": "ultimate black",
+   "detected": "black"
+  },
+  "jaguar-xj-x351-xj-luxury-saloon-2010-2012-new-vapour-grey-x351-luxury-front.webp": {
+   "label": "vapour grey",
+   "detected": "grey"
+  },
+  "jaguar-xj-x351-xj-supersport-performance-saloon-2010-2013-new-ultimate-black-x351-supersport-front.webp": {
+   "label": "ultimate black",
+   "detected": "black"
+  },
+  "jaguar-xj-x351-xj-premium-luxury-saloon-2010-2015-new-polaris-white-x351-premium-front.webp": {
+   "label": "polaris white",
+   "detected": "white"
+  },
+  "jaguar-xj-x351-xj-portfolio-saloon-2010-2015-new-stratus-grey-x351-portfolio-front.webp": {
+   "label": "stratus grey",
+   "detected": "grey"
+  },
+  "jaguar-xj-x351-xj50-special-edition-saloon-2018-2019-special-santorini-black-xj50-front.webp": {
+   "label": "santorini black",
+   "detected": "grey"
+  },
+  "jaguar-xj-x351-xj-luxury-saloon-2010-2012-new-vapour-grey-x351-luxury-side.webp": {
+   "label": "vapour grey",
+   "detected": "grey"
+  },
+  "jaguar-xj-x351-xj-supersport-performance-saloon-2010-2013-new-ultimate-black-x351-supersport-side.webp": {
+   "label": "ultimate black",
+   "detected": "black"
+  },
+  "jaguar-xj-x351-xj-premium-luxury-saloon-2010-2015-new-polaris-white-x351-premium-side.webp": {
+   "label": "polaris white",
+   "detected": "white"
+  },
+  "jaguar-xj-x351-xj-portfolio-saloon-2010-2015-new-stratus-grey-x351-portfolio-side.webp": {
+   "label": "stratus grey",
+   "detected": "grey"
+  },
+  "jaguar-xj-x351-xj50-special-edition-saloon-2018-2019-special-santorini-black-xj50-side.webp": {
+   "label": "santorini black",
+   "detected": "black"
+  },
+  "jaguar-xj-x351-xj-luxury-saloon-2010-2012-new-vapour-grey-x351-luxury-45.webp": {
+   "label": "vapour grey",
+   "detected": "grey"
+  },
+  "jaguar-xj-x351-xj-supersport-performance-saloon-2010-2013-new-ultimate-black-x351-supersport-45.webp": {
+   "label": "ultimate black",
+   "detected": "black"
+  },
+  "jaguar-xj-x351-xj-premium-luxury-saloon-2010-2015-new-polaris-white-x351-premium-45.webp": {
+   "label": "polaris white",
+   "detected": "white"
+  },
+  "jaguar-xj-x351-xj-portfolio-saloon-2010-2015-new-stratus-grey-x351-portfolio-45.webp": {
+   "label": "stratus grey",
+   "detected": "grey"
+  },
+  "jaguar-xj-x351-xj50-special-edition-saloon-2018-2019-special-santorini-black-xj50-45.webp": {
+   "label": "santorini black",
+   "detected": "grey"
+  },
+  "jaguar-xj-x358-xj-3-0d-sovereign-saloon-2007-2009-new-vapour-grey-x358-30d-side.webp": {
+   "label": "vapour grey",
+   "detected": "grey"
+  },
+  "jaguar-xj-x358-xjr-performance-saloon-2007-2009-special-ultimate-black-x358-xjr-side.webp": {
+   "label": "ultimate black",
+   "detected": "black"
+  },
+  "jaguar-xj-x358-xj-3-0d-sovereign-saloon-2007-2009-new-vapour-grey-x358-30d-45.webp": {
+   "label": "vapour grey",
+   "detected": "grey"
+  },
+  "jaguar-xj-x358-xjr-performance-saloon-2007-2009-special-ultimate-black-x358-xjr-45.webp": {
+   "label": "ultimate black",
+   "detected": "black"
+  },
+  "jaguar-xj-x358-xj-3-0d-sovereign-saloon-2007-2009-new-vapour-grey-x358-30d-front.webp": {
+   "label": "vapour grey",
+   "detected": "grey"
+  },
+  "jaguar-xj-x358-xjr-performance-saloon-2007-2009-special-ultimate-black-x358-xjr-front.webp": {
+   "label": "ultimate black",
+   "detected": "black"
+  },
+  "jaguar-xj-xj40-xj6-sovereign-saloon-1986-1994-new-westminster-blue-xj40-side.webp": {
+   "label": "westminster blue",
+   "detected": "blue-dark"
+  },
+  "jaguar-xj-xj40-xj6-sovereign-saloon-1986-1994-new-westminster-blue-xj40-45.webp": {
+   "label": "westminster blue",
+   "detected": "blue-dark"
+  },
+  "jaguar-xj-xj40-xj6-sovereign-saloon-1986-1994-new-westminster-blue-xj40-front.webp": {
+   "label": "westminster blue",
+   "detected": "blue-dark"
+  },
+  "jaguar-xk-x100-xkr-coupe-performance-coupe-1998-2002-new-titanium-x100-xkr-front.webp": {
+   "label": "titanium",
+   "detected": "grey"
+  },
+  "jaguar-xk-x100-xkr-100-special-edition-coupe-2001-special-platinum-silver-xkr-100-front.webp": {
+   "label": "platinum silver",
+   "detected": "silver"
+  },
+  "jaguar-xk-x100-xkr-silverstone-special-edition-coupe-2000-special-platinum-silver-silverstone-front.webp": {
+   "label": "platinum silver",
+   "detected": "white"
+  },
+  "jaguar-xk-x100-xkr-coupe-performance-coupe-1998-2002-new-titanium-x100-xkr-45.webp": {
+   "label": "titanium",
+   "detected": "silver"
+  },
+  "jaguar-xk-x100-xkr-100-special-edition-coupe-2001-special-platinum-silver-xkr-100-45.webp": {
+   "label": "platinum silver",
+   "detected": "silver"
+  },
+  "jaguar-xk-x100-xkr-silverstone-special-edition-coupe-2000-special-platinum-silver-silverstone-45.webp": {
+   "label": "platinum silver",
+   "detected": "white"
+  },
+  "jaguar-xk-x100-xkr-coupe-performance-coupe-1998-2002-new-titanium-x100-xkr-side.webp": {
+   "label": "titanium",
+   "detected": "grey"
+  },
+  "jaguar-xk-x100-xkr-100-special-edition-coupe-2001-special-platinum-silver-xkr-100-side.webp": {
+   "label": "platinum silver",
+   "detected": "silver"
+  },
+  "jaguar-xk-x100-xkr-silverstone-special-edition-coupe-2000-special-platinum-silver-silverstone-side.webp": {
+   "label": "platinum silver",
+   "detected": "white"
+  },
+  "jaguar-xk-x150-xk-artisan-se-coupe-special-edition-coupe-2012-special-celestial-black-artisan-2-side.webp": {
+   "label": "celestial black",
+   "detected": "white"
+  },
+  "jaguar-xk-x150-xk-convertible-convertible-2006-2011-new-polaris-white-x150-cab-side.webp": {
+   "label": "polaris white",
+   "detected": "white"
+  },
+  "jaguar-xk-x150-xk-coupe-coupe-2006-2011-new-liquid-silver-x150-xk-side.webp": {
+   "label": "liquid silver",
+   "detected": "white"
+  },
+  "jaguar-xk-x150-xk-signature-coupe-special-edition-coupe-2014-2015-special-dark-sapphire-xk-signature-side.webp": {
+   "label": "dark sapphire",
+   "detected": "blue-dark"
+  },
+  "jaguar-xk-x150-xk-artisan-se-coupe-special-edition-coupe-2012-special-celestial-black-artisan-side.webp": {
+   "label": "celestial black",
+   "detected": "black"
+  },
+  "jaguar-xk-x150-xkr-s-convertible-performance-convertible-2011-2014-special-polaris-white-xkrs-cab-side.webp": {
+   "label": "polaris white",
+   "detected": "white"
+  },
+  "jaguar-xk-x150-xk-dynamic-r-coupe-special-edition-coupe-2014-2015-special-ultimate-black-xk-dynamic-r-side.webp": {
+   "label": "ultimate black",
+   "detected": "black"
+  },
+  "jaguar-xk-x150-xkr-coupe-performance-coupe-2007-2011-new-ultimate-black-x150-xkr-side.webp": {
+   "label": "ultimate black",
+   "detected": "black"
+  },
+  "jaguar-xk-x150-xk-artisan-se-coupe-special-edition-coupe-2012-special-celestial-black-artisan-2-45.webp": {
+   "label": "celestial black",
+   "detected": "silver"
+  },
+  "jaguar-xk-x150-xk-convertible-convertible-2006-2011-new-polaris-white-x150-cab-45.webp": {
+   "label": "polaris white",
+   "detected": "white"
+  },
+  "jaguar-xk-x150-xk-coupe-coupe-2006-2011-new-liquid-silver-x150-xk-45.webp": {
+   "label": "liquid silver",
+   "detected": "silver"
+  },
+  "jaguar-xk-x150-xk-signature-coupe-special-edition-coupe-2014-2015-special-dark-sapphire-xk-signature-45.webp": {
+   "label": "dark sapphire",
+   "detected": "grey"
+  },
+  "jaguar-xk-x150-xk-artisan-se-coupe-special-edition-coupe-2012-special-celestial-black-artisan-45.webp": {
+   "label": "celestial black",
+   "detected": "black"
+  },
+  "jaguar-xk-x150-xkr-s-convertible-performance-convertible-2011-2014-special-polaris-white-xkrs-cab-45.webp": {
+   "label": "polaris white",
+   "detected": "white"
+  },
+  "jaguar-xk-x150-xk-dynamic-r-coupe-special-edition-coupe-2014-2015-special-ultimate-black-xk-dynamic-r-45.webp": {
+   "label": "ultimate black",
+   "detected": "black"
+  },
+  "jaguar-xk-x150-xkr-coupe-performance-coupe-2007-2011-new-ultimate-black-x150-xkr-45.webp": {
+   "label": "ultimate black",
+   "detected": "grey"
+  },
+  "jaguar-xk-x150-xk-artisan-se-coupe-special-edition-coupe-2012-special-celestial-black-artisan-2-front.webp": {
+   "label": "celestial black",
+   "detected": "grey"
+  },
+  "jaguar-xk-x150-xk-convertible-convertible-2006-2011-new-polaris-white-x150-cab-front.webp": {
+   "label": "polaris white",
+   "detected": "white"
+  },
+  "jaguar-xk-x150-xk-coupe-coupe-2006-2011-new-liquid-silver-x150-xk-front.webp": {
+   "label": "liquid silver",
+   "detected": "silver"
+  },
+  "jaguar-xk-x150-xk-signature-coupe-special-edition-coupe-2014-2015-special-dark-sapphire-xk-signature-front.webp": {
+   "label": "dark sapphire",
+   "detected": "blue-dark"
+  },
+  "jaguar-xk-x150-xk-artisan-se-coupe-special-edition-coupe-2012-special-celestial-black-artisan-front.webp": {
+   "label": "celestial black",
+   "detected": "black"
+  },
+  "jaguar-xk-x150-xkr-s-convertible-performance-convertible-2011-2014-special-polaris-white-xkrs-cab-front.webp": {
+   "label": "polaris white",
+   "detected": "white"
+  },
+  "jaguar-xk-x150-xk-dynamic-r-coupe-special-edition-coupe-2014-2015-special-ultimate-black-xk-dynamic-r-front.webp": {
+   "label": "ultimate black",
+   "detected": "black"
+  },
+  "jaguar-xk-x150-xkr-coupe-performance-coupe-2007-2011-new-ultimate-black-x150-xkr-front.webp": {
+   "label": "ultimate black",
+   "detected": "black"
+  }
+ },
+ "sources": {
+  "jaguar-e-pace-x540-chequered-flag-edition-compact-suv-2019-2020-special-corris-grey-e-pace-chequered-side.webp": "jaguar-e-pace-x540-chequered flag edition-compact suv-2019–2020-special-corris grey-e-pace chequered-flat-side-view.webp",
+  "jaguar-e-pace-x540-300-sport-black-compact-suv-2023-2024-special-ostuni-white-e-pace-300-black-side.webp": "jaguar-e-pace-x540-300 sport black-compact suv-2023–2024-special-ostuni white-e-pace 300 black-flat-side-view.webp",
+  "jaguar-e-pace-x540-r-dynamic-black-compact-suv-2021-2023-special-carpathian-grey-e-pace-black-side.webp": "jaguar-e-pace-x540-r-dynamic black-compact suv-2021–2023-special-carpathian grey-e-pace black-flat-side-view.webp",
+  "jaguar-e-pace-x540-hse-compact-suv-2017-2020-new-santorini-black-e-pace-hse-side.webp": "jaguar-e-pace-x540-hse-compact suv-2017–2020-new-santorini black-e-pace hse-flat-side-view.webp",
+  "jaguar-e-pace-x540-300-sport-compact-suv-2024-new-ostuni-white-e-pace-300-2-side.webp": "jaguar-e-pace-x540-300 sport-compact suv-2024–-new-ostuni white-e-pace 300 (2)-flat-side-view.webp",
+  "jaguar-e-pace-x540-r-dynamic-hse-compact-suv-2017-2020-new-carpathian-grey-e-pace-r-dyn-hse-side.webp": "jaguar-e-pace-x540-r-dynamic hse-compact suv-2017–2020-new-carpathian grey-e-pace r-dyn hse-flat-side-view.webp",
+  "jaguar-e-pace-x540-r-dynamic-se-black-compact-suv-2021-2023-new-santorini-black-e-pace-se-black-side.webp": "jaguar-e-pace-x540-r-dynamic se black-compact suv-2021–2023-new-santorini black-e-pace se black-flat-side-view.webp",
+  "jaguar-e-pace-x540-se-compact-suv-2017-2020-new-corris-grey-e-pace-se-side.webp": "jaguar-e-pace-x540-se-compact suv-2017–2020-new-corris grey-e-pace se-flat-side-view.webp",
+  "jaguar-e-pace-x540-first-edition-compact-suv-2017-2018-special-yulong-white-e-pace-first-side.webp": "jaguar-e-pace-x540-first edition-compact suv-2017–2018-special-yulong white-e-pace first-flat-side-view.webp",
+  "jaguar-e-pace-x540-r-dynamic-s-compact-suv-2017-2020-new-yulong-white-e-pace-r-dyn-s-side.webp": "jaguar-e-pace-x540-r-dynamic s-compact suv-2017–2020-new-yulong white-e-pace r-dyn s-flat-side-view.webp",
+  "jaguar-e-pace-x540-chequered-flag-edition-compact-suv-2019-2020-special-corris-grey-e-pace-chequered-45.webp": "jaguar-e-pace-x540-chequered flag edition-compact suv-2019–2020-special-corris grey-e-pace chequered-45-angle-front-view.webp",
+  "jaguar-e-pace-x540-300-sport-black-compact-suv-2023-2024-special-ostuni-white-e-pace-300-black-45.webp": "jaguar-e-pace-x540-300 sport black-compact suv-2023–2024-special-ostuni white-e-pace 300 black-45-angle-front-view.webp",
+  "jaguar-e-pace-x540-r-dynamic-black-compact-suv-2021-2023-special-carpathian-grey-e-pace-black-45.webp": "jaguar-e-pace-x540-r-dynamic black-compact suv-2021–2023-special-carpathian grey-e-pace black-45-angle-front-view.webp",
+  "jaguar-e-pace-x540-hse-compact-suv-2017-2020-new-santorini-black-e-pace-hse-45.webp": "jaguar-e-pace-x540-hse-compact suv-2017–2020-new-santorini black-e-pace hse-45-angle-front-view.webp",
+  "jaguar-e-pace-x540-300-sport-compact-suv-2024-new-ostuni-white-e-pace-300-2-45.webp": "jaguar-e-pace-x540-300 sport-compact suv-2024–-new-ostuni white-e-pace 300 (2)-45-angle-front-view.webp",
+  "jaguar-e-pace-x540-r-dynamic-hse-compact-suv-2017-2020-new-carpathian-grey-e-pace-r-dyn-hse-45.webp": "jaguar-e-pace-x540-r-dynamic hse-compact suv-2017–2020-new-carpathian grey-e-pace r-dyn hse-45-angle-front-view.webp",
+  "jaguar-e-pace-x540-r-dynamic-se-black-compact-suv-2021-2023-new-santorini-black-e-pace-se-black-45.webp": "jaguar-e-pace-x540-r-dynamic se black-compact suv-2021–2023-new-santorini black-e-pace se black-45-angle-front-view.webp",
+  "jaguar-e-pace-x540-se-compact-suv-2017-2020-new-corris-grey-e-pace-se-45.webp": "jaguar-e-pace-x540-se-compact suv-2017–2020-new-corris grey-e-pace se-45-angle-front-view.webp",
+  "jaguar-e-pace-x540-first-edition-compact-suv-2017-2018-special-yulong-white-e-pace-first-45.webp": "jaguar-e-pace-x540-first edition-compact suv-2017–2018-special-yulong white-e-pace first-45-angle-front-view.webp",
+  "jaguar-e-pace-x540-r-dynamic-s-compact-suv-2017-2020-new-yulong-white-e-pace-r-dyn-s-45.webp": "jaguar-e-pace-x540-r-dynamic s-compact suv-2017–2020-new-yulong white-e-pace r-dyn s-45-angle-front-view.webp",
+  "jaguar-e-pace-x540-chequered-flag-edition-compact-suv-2019-2020-special-corris-grey-e-pace-chequered-front.webp": "jaguar-e-pace-x540-chequered flag edition-compact suv-2019–2020-special-corris grey-e-pace chequered-front-view.webp",
+  "jaguar-e-pace-x540-300-sport-black-compact-suv-2023-2024-special-ostuni-white-e-pace-300-black-front.webp": "jaguar-e-pace-x540-300 sport black-compact suv-2023–2024-special-ostuni white-e-pace 300 black-front-view.webp",
+  "jaguar-e-pace-x540-r-dynamic-black-compact-suv-2021-2023-special-carpathian-grey-e-pace-black-front.webp": "jaguar-e-pace-x540-r-dynamic black-compact suv-2021–2023-special-carpathian grey-e-pace black-front-view.webp",
+  "jaguar-e-pace-x540-hse-compact-suv-2017-2020-new-santorini-black-e-pace-hse-front.webp": "jaguar-e-pace-x540-hse-compact suv-2017–2020-new-santorini black-e-pace hse-front-view.webp",
+  "jaguar-e-pace-x540-300-sport-compact-suv-2024-new-ostuni-white-e-pace-300-2-front.webp": "jaguar-e-pace-x540-300 sport-compact suv-2024–-new-ostuni white-e-pace 300 (2)-front-view.webp",
+  "jaguar-e-pace-x540-r-dynamic-hse-compact-suv-2017-2020-new-carpathian-grey-e-pace-r-dyn-hse-front.webp": "jaguar-e-pace-x540-r-dynamic hse-compact suv-2017–2020-new-carpathian grey-e-pace r-dyn hse-front-view.webp",
+  "jaguar-e-pace-x540-r-dynamic-se-black-compact-suv-2021-2023-new-santorini-black-e-pace-se-black-front.webp": "jaguar-e-pace-x540-r-dynamic se black-compact suv-2021–2023-new-santorini black-e-pace se black-front-view.webp",
+  "jaguar-e-pace-x540-se-compact-suv-2017-2020-new-corris-grey-e-pace-se-front.webp": "jaguar-e-pace-x540-se-compact suv-2017–2020-new-corris grey-e-pace se-front-view.webp",
+  "jaguar-e-pace-x540-first-edition-compact-suv-2017-2018-special-yulong-white-e-pace-first-front.webp": "jaguar-e-pace-x540-first edition-compact suv-2017–2018-special-yulong white-e-pace first-front-view.webp",
+  "jaguar-e-pace-x540-r-dynamic-s-compact-suv-2017-2020-new-yulong-white-e-pace-r-dyn-s-front.webp": "jaguar-e-pace-x540-r-dynamic s-compact suv-2017–2020-new-yulong white-e-pace r-dyn s-front-view.webp",
+  "jaguar-f-pace-x761-300-sport-suv-2021-2024-new-carpathian-grey-f-pace-300-side.webp": "jaguar-f-pace-x761-300 sport-suv-2021–2024-new-carpathian grey-f-pace 300-flat-side-view.webp",
+  "jaguar-f-pace-x761-25d-r-sport-suv-2017-2019-group-narvik-black-f-pace-25d-side.webp": "jaguar-f-pace-x761-25d r-sport-suv-2017–2019-group-narvik black-f-pace 25d-flat-side-view.webp",
+  "jaguar-f-pace-x761-300-sport-suv-2018-2020-special-yulong-white-f-pace-300-sport-side.webp": "jaguar-f-pace-x761-300 sport-suv-2018–2020-special-yulong white-f-pace 300 sport-flat-side-view.webp",
+  "jaguar-f-pace-x761-400-sport-suv-2023-2024-special-carpathian-grey-f-pace-400-sport-side.webp": "jaguar-f-pace-x761-400 sport-suv-2023–2024-special-carpathian grey-f-pace 400 sport-flat-side-view.webp",
+  "jaguar-f-pace-x761-r-dynamic-hse-suv-2021-2024-new-santorini-black-f-pace-r-dyn-hse-side.webp": "jaguar-f-pace-x761-r-dynamic hse-suv-2021–2024-new-santorini black-f-pace r-dyn hse-flat-side-view.webp",
+  "jaguar-f-pace-x761-portfolio-suv-2016-2018-new-yulong-white-f-pace-portfolio-side.webp": "jaguar-f-pace-x761-portfolio-suv-2016–2018-new-yulong white-f-pace portfolio-flat-side-view.webp",
+  "jaguar-f-pace-x761-chequered-flag-edition-suv-2019-2020-special-corris-grey-f-pace-chequered-side.webp": "jaguar-f-pace-x761-chequered flag edition-suv-2019–2020-special-corris grey-f-pace chequered-flat-side-view.webp",
+  "jaguar-f-pace-x761-r-dynamic-black-suv-2023-2024-special-ostuni-white-f-pace-black-side.webp": "jaguar-f-pace-x761-r-dynamic black-suv-2023–2024-special-ostuni white-f-pace black-flat-side-view.webp",
+  "jaguar-f-pace-x761-prestige-suv-2016-2018-new-corris-grey-f-pace-prestige-side.webp": "jaguar-f-pace-x761-prestige-suv-2016–2018-new-corris grey-f-pace prestige-flat-side-view.webp",
+  "jaguar-f-pace-x761-r-sport-awd-suv-2016-2019-group-corris-grey-f-pace-r-sport-awd-side.webp": "jaguar-f-pace-x761-r-sport awd-suv-2016–2019-group-corris grey-f-pace r-sport awd-flat-side-view.webp",
+  "jaguar-f-pace-x761-300-sport-suv-2021-2024-new-carpathian-grey-f-pace-300-front.webp": "jaguar-f-pace-x761-300 sport-suv-2021–2024-new-carpathian grey-f-pace 300-front-view.webp",
+  "jaguar-f-pace-x761-25d-r-sport-suv-2017-2019-group-narvik-black-f-pace-25d-front.webp": "jaguar-f-pace-x761-25d r-sport-suv-2017–2019-group-narvik black-f-pace 25d-front-view.webp",
+  "jaguar-f-pace-x761-300-sport-suv-2018-2020-special-yulong-white-f-pace-300-sport-front.webp": "jaguar-f-pace-x761-300 sport-suv-2018–2020-special-yulong white-f-pace 300 sport-front-view.webp",
+  "jaguar-f-pace-x761-400-sport-suv-2023-2024-special-carpathian-grey-f-pace-400-sport-front.webp": "jaguar-f-pace-x761-400 sport-suv-2023–2024-special-carpathian grey-f-pace 400 sport-front-view.webp",
+  "jaguar-f-pace-x761-r-dynamic-hse-suv-2021-2024-new-santorini-black-f-pace-r-dyn-hse-front.webp": "jaguar-f-pace-x761-r-dynamic hse-suv-2021–2024-new-santorini black-f-pace r-dyn hse-front-view.webp",
+  "jaguar-f-pace-x761-portfolio-suv-2016-2018-new-yulong-white-f-pace-portfolio-front.webp": "jaguar-f-pace-x761-portfolio-suv-2016–2018-new-yulong white-f-pace portfolio-front-view.webp",
+  "jaguar-f-pace-x761-chequered-flag-edition-suv-2019-2020-special-corris-grey-f-pace-chequered-front.webp": "jaguar-f-pace-x761-chequered flag edition-suv-2019–2020-special-corris grey-f-pace chequered-front-view.webp",
+  "jaguar-f-pace-x761-r-dynamic-black-suv-2023-2024-special-ostuni-white-f-pace-black-front.webp": "jaguar-f-pace-x761-r-dynamic black-suv-2023–2024-special-ostuni white-f-pace black-front-view.webp",
+  "jaguar-f-pace-x761-prestige-suv-2016-2018-new-corris-grey-f-pace-prestige-front.webp": "jaguar-f-pace-x761-prestige-suv-2016–2018-new-corris grey-f-pace prestige-front-view.webp",
+  "jaguar-f-pace-x761-r-sport-awd-suv-2016-2019-group-corris-grey-f-pace-r-sport-awd-front.webp": "jaguar-f-pace-x761-r-sport awd-suv-2016–2019-group-corris grey-f-pace r-sport awd-front-view.webp",
+  "jaguar-f-pace-x761-300-sport-suv-2021-2024-new-carpathian-grey-f-pace-300-45.webp": "jaguar-f-pace-x761-300 sport-suv-2021–2024-new-carpathian grey-f-pace 300-45-angle-front-view.webp",
+  "jaguar-f-pace-x761-25d-r-sport-suv-2017-2019-group-narvik-black-f-pace-25d-45.webp": "jaguar-f-pace-x761-25d r-sport-suv-2017–2019-group-narvik black-f-pace 25d-45-angle-front-view.webp",
+  "jaguar-f-pace-x761-300-sport-suv-2018-2020-special-yulong-white-f-pace-300-sport-45.webp": "jaguar-f-pace-x761-300 sport-suv-2018–2020-special-yulong white-f-pace 300 sport-45-angle-front-view.webp",
+  "jaguar-f-pace-x761-400-sport-suv-2023-2024-special-carpathian-grey-f-pace-400-sport-45.webp": "jaguar-f-pace-x761-400 sport-suv-2023–2024-special-carpathian grey-f-pace 400 sport-45-angle-front-view.webp",
+  "jaguar-f-pace-x761-r-dynamic-hse-suv-2021-2024-new-santorini-black-f-pace-r-dyn-hse-45.webp": "jaguar-f-pace-x761-r-dynamic hse-suv-2021–2024-new-santorini black-f-pace r-dyn hse-45-angle-front-view.webp",
+  "jaguar-f-pace-x761-portfolio-suv-2016-2018-new-yulong-white-f-pace-portfolio-45.webp": "jaguar-f-pace-x761-portfolio-suv-2016–2018-new-yulong white-f-pace portfolio-45-angle-front-view.webp",
+  "jaguar-f-pace-x761-chequered-flag-edition-suv-2019-2020-special-corris-grey-f-pace-chequered-45.webp": "jaguar-f-pace-x761-chequered flag edition-suv-2019–2020-special-corris grey-f-pace chequered-45-angle-front-view.webp",
+  "jaguar-f-pace-x761-r-dynamic-black-suv-2023-2024-special-ostuni-white-f-pace-black-45.webp": "jaguar-f-pace-x761-r-dynamic black-suv-2023–2024-special-ostuni white-f-pace black-45-angle-front-view.webp",
+  "jaguar-f-pace-x761-prestige-suv-2016-2018-new-corris-grey-f-pace-prestige-45.webp": "jaguar-f-pace-x761-prestige-suv-2016–2018-new-corris grey-f-pace prestige-45-angle-front-view.webp",
+  "jaguar-f-pace-x761-r-sport-awd-suv-2016-2019-group-corris-grey-f-pace-r-sport-awd-45.webp": "jaguar-f-pace-x761-r-sport awd-suv-2016–2019-group-corris grey-f-pace r-sport awd-45-angle-front-view.webp",
+  "jaguar-f-type-x152-400-sport-convertible-convertible-2017-2018-special-corris-grey-f-type-400-conv-side.webp": "jaguar-f-type-x152-400 sport convertible-convertible-2017–2018-special-corris grey-f-type 400 conv-flat-side-view.webp",
+  "jaguar-f-type-x152-s-coupe-2013-2017-new-ultimate-black-f-type-s-side.webp": "jaguar-f-type-x152-s-coupé-2013–2017-new-ultimate black-f-type s-flat-side-view.webp",
+  "jaguar-f-type-x152-400-sport-coupe-coupe-2017-2018-special-yulong-white-f-type-400-sport-side.webp": "jaguar-f-type-x152-400 sport coupé-coupé-2017–2018-special-yulong white-f-type 400 sport-flat-side-view.webp",
+  "jaguar-f-type-x152-convertible-convertible-2013-2017-new-polaris-white-f-type-conv-side.webp": "jaguar-f-type-x152-convertible-convertible-2013–2017-new-polaris white-f-type conv-flat-side-view.webp",
+  "jaguar-f-type-x152-v8-s-convertible-convertible-2013-2017-new-polaris-white-f-type-v8-conv-side.webp": "jaguar-f-type-x152-v8 s convertible-convertible-2013–2017-new-polaris white-f-type v8 conv-flat-side-view.webp",
+  "jaguar-f-type-x152-400-sport-convertible-convertible-2017-2018-special-corris-grey-f-type-400-conv-45.webp": "jaguar-f-type-x152-400 sport convertible-convertible-2017–2018-special-corris grey-f-type 400 conv-45-angle-front-view.webp",
+  "jaguar-f-type-x152-s-coupe-2013-2017-new-ultimate-black-f-type-s-45.webp": "jaguar-f-type-x152-s-coupé-2013–2017-new-ultimate black-f-type s-45-angle-front-view.webp",
+  "jaguar-f-type-x152-400-sport-coupe-coupe-2017-2018-special-yulong-white-f-type-400-sport-45.webp": "jaguar-f-type-x152-400 sport coupé-coupé-2017–2018-special-yulong white-f-type 400 sport-45-angle-front-view.webp",
+  "jaguar-f-type-x152-convertible-convertible-2013-2017-new-polaris-white-f-type-conv-45.webp": "jaguar-f-type-x152-convertible-convertible-2013–2017-new-polaris white-f-type conv-45-angle-front-view.webp",
+  "jaguar-f-type-x152-v8-s-convertible-convertible-2013-2017-new-polaris-white-f-type-v8-conv-45.webp": "jaguar-f-type-x152-v8 s convertible-convertible-2013–2017-new-polaris white-f-type v8 conv-45-angle-front-view.webp",
+  "jaguar-f-type-x152-400-sport-convertible-convertible-2017-2018-special-corris-grey-f-type-400-conv-front.webp": "jaguar-f-type-x152-400 sport convertible-convertible-2017–2018-special-corris grey-f-type 400 conv-front-view.webp",
+  "jaguar-f-type-x152-s-coupe-2013-2017-new-ultimate-black-f-type-s-front.webp": "jaguar-f-type-x152-s-coupé-2013–2017-new-ultimate black-f-type s-front-view.webp",
+  "jaguar-f-type-x152-400-sport-coupe-coupe-2017-2018-special-yulong-white-f-type-400-sport-front.webp": "jaguar-f-type-x152-400 sport coupé-coupé-2017–2018-special-yulong white-f-type 400 sport-front-view.webp",
+  "jaguar-f-type-x152-convertible-convertible-2013-2017-new-polaris-white-f-type-conv-front.webp": "jaguar-f-type-x152-convertible-convertible-2013–2017-new-polaris white-f-type conv-front-view.webp",
+  "jaguar-f-type-x152-v8-s-convertible-convertible-2013-2017-new-polaris-white-f-type-v8-conv-front.webp": "jaguar-f-type-x152-v8 s convertible-convertible-2013–2017-new-polaris white-f-type v8 conv-front-view.webp",
+  "jaguar-f-type-x152-lci-p450-r-dynamic-coupe-2020-2024-new-santorini-black-f-type-p450-front.webp": "jaguar-f-type-x152 lci-p450 r-dynamic-coupé-2020–2024-new-santorini black-f-type p450-front-view.webp",
+  "jaguar-f-type-x152-lci-chequered-flag-coupe-coupe-2018-2020-special-fuji-white-f-type-chequered-front.webp": "jaguar-f-type-x152 lci-chequered flag coupé-coupé-2018–2020-special-fuji white-f-type chequered-front-view.webp",
+  "jaguar-f-type-x152-lci-p450-r-dynamic-coupe-2020-2024-new-santorini-black-f-type-p450-side.webp": "jaguar-f-type-x152 lci-p450 r-dynamic-coupé-2020–2024-new-santorini black-f-type p450-flat-side-view.webp",
+  "jaguar-f-type-x152-lci-chequered-flag-coupe-coupe-2018-2020-special-fuji-white-f-type-chequered-side.webp": "jaguar-f-type-x152 lci-chequered flag coupé-coupé-2018–2020-special-fuji white-f-type chequered-flat-side-view.webp",
+  "jaguar-f-type-x152-lci-p450-r-dynamic-coupe-2020-2024-new-santorini-black-f-type-p450-45.webp": "jaguar-f-type-x152 lci-p450 r-dynamic-coupé-2020–2024-new-santorini black-f-type p450-45-angle-front-view.webp",
+  "jaguar-f-type-x152-lci-chequered-flag-coupe-coupe-2018-2020-special-fuji-white-f-type-chequered-45.webp": "jaguar-f-type-x152 lci-chequered flag coupé-coupé-2018–2020-special-fuji white-f-type chequered-45-angle-front-view.webp",
+  "jaguar-s-type-x200-60th-anniversary-edition-saloon-2008-special-ultimate-black-s-type-60th-front.webp": "jaguar-s-type-x200-60th anniversary edition-saloon-2008-special-ultimate black-s-type 60th-front-view.webp",
+  "jaguar-s-type-x200-r-performance-saloon-2002-2007-special-ultimate-black-s-type-r-black-front.webp": "jaguar-s-type-x200-r-performance saloon-2002–2007-special-ultimate black-s-type r black-front-view.webp",
+  "jaguar-s-type-x200-3-0-v6-se-saloon-1999-2002-new-platinum-silver-x200-30-se-2-front.webp": "jaguar-s-type-x200-3.0 v6 se-saloon-1999–2002-new-platinum silver-x200 30 se (2)-front-view.webp",
+  "jaguar-s-type-x200-3-0-v6-se-saloon-1999-2002-new-platinum-silver-x200-30-se-front.webp": "jaguar-s-type-x200-3.0 v6 se-saloon-1999–2002-new-platinum silver-x200 30 se-front-view.webp",
+  "jaguar-s-type-x200-4-2-v8-r-performance-saloon-2002-2007-special-zircon-s-type-r-front.webp": "jaguar-s-type-x200-4.2 v8 r-performance saloon-2002–2007-special-zircon-s-type r-front-view.webp",
+  "jaguar-s-type-x200-60th-anniversary-edition-saloon-2008-special-ultimate-black-s-type-60th-side.webp": "jaguar-s-type-x200-60th anniversary edition-saloon-2008-special-ultimate black-s-type 60th-flat-side-view.webp",
+  "jaguar-s-type-x200-r-performance-saloon-2002-2007-special-ultimate-black-s-type-r-black-side.webp": "jaguar-s-type-x200-r-performance saloon-2002–2007-special-ultimate black-s-type r black-flat-side-view.webp",
+  "jaguar-s-type-x200-3-0-v6-se-saloon-1999-2002-new-platinum-silver-x200-30-se-2-side.webp": "jaguar-s-type-x200-3.0 v6 se-saloon-1999–2002-new-platinum silver-x200 30 se (2)-flat-side-view.webp",
+  "jaguar-s-type-x200-3-0-v6-se-saloon-1999-2002-new-platinum-silver-x200-30-se-side.webp": "jaguar-s-type-x200-3.0 v6 se-saloon-1999–2002-new-platinum silver-x200 30 se-flat-side-view.webp",
+  "jaguar-s-type-x200-4-2-v8-r-performance-saloon-2002-2007-special-zircon-s-type-r-side.webp": "jaguar-s-type-x200-4.2 v8 r-performance saloon-2002–2007-special-zircon-s-type r-flat-side-view.webp",
+  "jaguar-s-type-x200-60th-anniversary-edition-saloon-2008-special-ultimate-black-s-type-60th-45.webp": "jaguar-s-type-x200-60th anniversary edition-saloon-2008-special-ultimate black-s-type 60th-45-angle-front-view.webp",
+  "jaguar-s-type-x200-r-performance-saloon-2002-2007-special-ultimate-black-s-type-r-black-45.webp": "jaguar-s-type-x200-r-performance saloon-2002–2007-special-ultimate black-s-type r black-45-angle-front-view.webp",
+  "jaguar-s-type-x200-3-0-v6-se-saloon-1999-2002-new-platinum-silver-x200-30-se-2-45.webp": "jaguar-s-type-x200-3.0 v6 se-saloon-1999–2002-new-platinum silver-x200 30 se (2)-45-angle-front-view.webp",
+  "jaguar-s-type-x200-3-0-v6-se-saloon-1999-2002-new-platinum-silver-x200-30-se-45.webp": "jaguar-s-type-x200-3.0 v6 se-saloon-1999–2002-new-platinum silver-x200 30 se-45-angle-front-view.webp",
+  "jaguar-s-type-x200-4-2-v8-r-performance-saloon-2002-2007-special-zircon-s-type-r-45.webp": "jaguar-s-type-x200-4.2 v8 r-performance saloon-2002–2007-special-zircon-s-type r-45-angle-front-view.webp",
+  "jaguar-x-type-x400-2-2-d-se-saloon-2007-2010-new-vapour-grey-x-type-22d-45.webp": "jaguar-x-type-x400-2.2 d se-saloon-2007–2010-new-vapour grey-x-type 22d-45-angle-front-view.webp",
+  "jaguar-x-type-x400-2-0-v6-se-saloon-2001-2004-new-zircon-x-type-20-2-45.webp": "jaguar-x-type-x400-2.0 v6 se-saloon-2001–2004-new-zircon-x-type 20 (2)-45-angle-front-view.webp",
+  "jaguar-x-type-x400-3-0-v6-sport-saloon-2001-2004-new-titanium-x-type-30-45.webp": "jaguar-x-type-x400-3.0 v6 sport-saloon-2001–2004-new-titanium-x-type 30-45-angle-front-view.webp",
+  "jaguar-x-type-x400-2-0-v6-se-saloon-2001-2004-new-zircon-x-type-20-45.webp": "jaguar-x-type-x400-2.0 v6 se-saloon-2001–2004-new-zircon-x-type 20-45-angle-front-view.webp",
+  "jaguar-x-type-x400-2-2-d-se-saloon-2007-2010-new-vapour-grey-x-type-22d-front.webp": "jaguar-x-type-x400-2.2 d se-saloon-2007–2010-new-vapour grey-x-type 22d-front-view.webp",
+  "jaguar-x-type-x400-2-0-v6-se-saloon-2001-2004-new-zircon-x-type-20-2-front.webp": "jaguar-x-type-x400-2.0 v6 se-saloon-2001–2004-new-zircon-x-type 20 (2)-front-view.webp",
+  "jaguar-x-type-x400-3-0-v6-sport-saloon-2001-2004-new-titanium-x-type-30-front.webp": "jaguar-x-type-x400-3.0 v6 sport-saloon-2001–2004-new-titanium-x-type 30-front-view.webp",
+  "jaguar-x-type-x400-2-0-v6-se-saloon-2001-2004-new-zircon-x-type-20-front.webp": "jaguar-x-type-x400-2.0 v6 se-saloon-2001–2004-new-zircon-x-type 20-front-view.webp",
+  "jaguar-x-type-x400-2-2-d-se-saloon-2007-2010-new-vapour-grey-x-type-22d-side.webp": "jaguar-x-type-x400-2.2 d se-saloon-2007–2010-new-vapour grey-x-type 22d-flat-side-view.webp",
+  "jaguar-x-type-x400-2-0-v6-se-saloon-2001-2004-new-zircon-x-type-20-2-side.webp": "jaguar-x-type-x400-2.0 v6 se-saloon-2001–2004-new-zircon-x-type 20 (2)-flat-side-view.webp",
+  "jaguar-x-type-x400-3-0-v6-sport-saloon-2001-2004-new-titanium-x-type-30-side.webp": "jaguar-x-type-x400-3.0 v6 sport-saloon-2001–2004-new-titanium-x-type 30-flat-side-view.webp",
+  "jaguar-x-type-x400-2-0-v6-se-saloon-2001-2004-new-zircon-x-type-20-side.webp": "jaguar-x-type-x400-2.0 v6 se-saloon-2001–2004-new-zircon-x-type 20-flat-side-view.webp",
+  "jaguar-xe-x760-prestige-saloon-2015-2017-new-corris-grey-xe-prestige-side.webp": "jaguar-xe-x760-prestige-saloon-2015–2017-new-corris grey-xe prestige-flat-side-view.webp",
+  "jaguar-xe-x760-300-sport-saloon-2017-2019-special-santorini-black-xe-300-sport-2-side.webp": "jaguar-xe-x760-300 sport-saloon-2017–2019-special-santorini black-xe 300 sport (2)-flat-side-view.webp",
+  "jaguar-xe-x760-20t-prestige-saloon-2015-2017-group-glacier-white-xe-20t-side.webp": "jaguar-xe-x760-20t prestige-saloon-2015–2017-group-glacier white-xe 20t-flat-side-view.webp",
+  "jaguar-xe-x760-landmark-edition-saloon-2018-special-yulong-white-xe-landmark-side.webp": "jaguar-xe-x760-landmark edition-saloon-2018-special-yulong white-xe landmark-flat-side-view.webp",
+  "jaguar-xe-x760-portfolio-saloon-2015-2017-new-ultimate-black-xe-portfolio-side.webp": "jaguar-xe-x760-portfolio-saloon-2015–2017-new-ultimate black-xe portfolio-flat-side-view.webp",
+  "jaguar-xe-x760-se-saloon-2015-2017-new-polaris-white-xe-se-side.webp": "jaguar-xe-x760-se-saloon-2015–2017-new-polaris white-xe se-flat-side-view.webp",
+  "jaguar-xe-x760-prestige-saloon-2015-2017-new-corris-grey-xe-prestige-45.webp": "jaguar-xe-x760-prestige-saloon-2015–2017-new-corris grey-xe prestige-45-angle-front-view.webp",
+  "jaguar-xe-x760-300-sport-saloon-2017-2019-special-santorini-black-xe-300-sport-2-45.webp": "jaguar-xe-x760-300 sport-saloon-2017–2019-special-santorini black-xe 300 sport (2)-45-angle-front-view.webp",
+  "jaguar-xe-x760-20t-prestige-saloon-2015-2017-group-glacier-white-xe-20t-45.webp": "jaguar-xe-x760-20t prestige-saloon-2015–2017-group-glacier white-xe 20t-45-angle-front-view.webp",
+  "jaguar-xe-x760-landmark-edition-saloon-2018-special-yulong-white-xe-landmark-45.webp": "jaguar-xe-x760-landmark edition-saloon-2018-special-yulong white-xe landmark-45-angle-front-view.webp",
+  "jaguar-xe-x760-portfolio-saloon-2015-2017-new-ultimate-black-xe-portfolio-45.webp": "jaguar-xe-x760-portfolio-saloon-2015–2017-new-ultimate black-xe portfolio-45-angle-front-view.webp",
+  "jaguar-xe-x760-se-saloon-2015-2017-new-polaris-white-xe-se-45.webp": "jaguar-xe-x760-se-saloon-2015–2017-new-polaris white-xe se-45-angle-front-view.webp",
+  "jaguar-xe-x760-prestige-saloon-2015-2017-new-corris-grey-xe-prestige-front.webp": "jaguar-xe-x760-prestige-saloon-2015–2017-new-corris grey-xe prestige-front-view.webp",
+  "jaguar-xe-x760-300-sport-saloon-2017-2019-special-santorini-black-xe-300-sport-2-front.webp": "jaguar-xe-x760-300 sport-saloon-2017–2019-special-santorini black-xe 300 sport (2)-front-view.webp",
+  "jaguar-xe-x760-20t-prestige-saloon-2015-2017-group-glacier-white-xe-20t-front.webp": "jaguar-xe-x760-20t prestige-saloon-2015–2017-group-glacier white-xe 20t-front-view.webp",
+  "jaguar-xe-x760-landmark-edition-saloon-2018-special-yulong-white-xe-landmark-front.webp": "jaguar-xe-x760-landmark edition-saloon-2018-special-yulong white-xe landmark-front-view.webp",
+  "jaguar-xe-x760-portfolio-saloon-2015-2017-new-ultimate-black-xe-portfolio-front.webp": "jaguar-xe-x760-portfolio-saloon-2015–2017-new-ultimate black-xe portfolio-front-view.webp",
+  "jaguar-xe-x760-se-saloon-2015-2017-new-polaris-white-xe-se-front.webp": "jaguar-xe-x760-se-saloon-2015–2017-new-polaris white-xe se-front-view.webp",
+  "jaguar-xe-x760-lci-300-sport-black-saloon-2020-2021-special-carpathian-grey-xe-300-black-45.webp": "jaguar-xe-x760 lci-300 sport black-saloon-2020–2021-special-carpathian grey-xe 300 black-45-angle-front-view.webp",
+  "jaguar-xe-x760-lci-r-dynamic-black-saloon-2021-2024-special-santorini-black-xe-black-45.webp": "jaguar-xe-x760 lci-r-dynamic black-saloon-2021–2024-special-santorini black-xe black-45-angle-front-view.webp",
+  "jaguar-xe-x760-lci-300-sport-saloon-2019-2024-special-ostuni-white-xe-300-lci-45.webp": "jaguar-xe-x760 lci-300 sport-saloon-2019–2024-special-ostuni white-xe 300 lci-45-angle-front-view.webp",
+  "jaguar-xe-x760-lci-r-dynamic-hse-saloon-2019-2024-new-santorini-black-xe-r-dyn-hse-45.webp": "jaguar-xe-x760 lci-r-dynamic hse-saloon-2019–2024-new-santorini black-xe r-dyn hse-45-angle-front-view.webp",
+  "jaguar-xe-x760-lci-300-sport-black-saloon-2020-2021-special-carpathian-grey-xe-300-black-side.webp": "jaguar-xe-x760 lci-300 sport black-saloon-2020–2021-special-carpathian grey-xe 300 black-flat-side-view.webp",
+  "jaguar-xe-x760-lci-r-dynamic-black-saloon-2021-2024-special-santorini-black-xe-black-side.webp": "jaguar-xe-x760 lci-r-dynamic black-saloon-2021–2024-special-santorini black-xe black-flat-side-view.webp",
+  "jaguar-xe-x760-lci-300-sport-saloon-2019-2024-special-ostuni-white-xe-300-lci-side.webp": "jaguar-xe-x760 lci-300 sport-saloon-2019–2024-special-ostuni white-xe 300 lci-flat-side-view.webp",
+  "jaguar-xe-x760-lci-r-dynamic-hse-saloon-2019-2024-new-santorini-black-xe-r-dyn-hse-side.webp": "jaguar-xe-x760 lci-r-dynamic hse-saloon-2019–2024-new-santorini black-xe r-dyn hse-flat-side-view.webp",
+  "jaguar-xe-x760-lci-300-sport-black-saloon-2020-2021-special-carpathian-grey-xe-300-black-front.webp": "jaguar-xe-x760 lci-300 sport black-saloon-2020–2021-special-carpathian grey-xe 300 black-front-view.webp",
+  "jaguar-xe-x760-lci-r-dynamic-black-saloon-2021-2024-special-santorini-black-xe-black-front.webp": "jaguar-xe-x760 lci-r-dynamic black-saloon-2021–2024-special-santorini black-xe black-front-view.webp",
+  "jaguar-xe-x760-lci-300-sport-saloon-2019-2024-special-ostuni-white-xe-300-lci-front.webp": "jaguar-xe-x760 lci-300 sport-saloon-2019–2024-special-ostuni white-xe 300 lci-front-view.webp",
+  "jaguar-xe-x760-lci-r-dynamic-hse-saloon-2019-2024-new-santorini-black-xe-r-dyn-hse-front.webp": "jaguar-xe-x760 lci-r-dynamic hse-saloon-2019–2024-new-santorini black-xe r-dyn hse-front-view.webp",
+  "jaguar-xf-x250-luxury-saloon-2008-2011-new-vapour-grey-xf-luxury-45.webp": "jaguar-xf-x250-luxury-saloon-2008–2011-new-vapour grey-xf luxury-45-angle-front-view.webp",
+  "jaguar-xf-x250-sv8-performance-saloon-2008-2009-new-ultimate-black-xf-sv8-45.webp": "jaguar-xf-x250-sv8-performance saloon-2008–2009-new-ultimate black-xf sv8-45-angle-front-view.webp",
+  "jaguar-xf-x250-premium-luxury-saloon-2008-2011-new-polaris-white-xf-premium-45.webp": "jaguar-xf-x250-premium luxury-saloon-2008–2011-new-polaris white-xf premium-45-angle-front-view.webp",
+  "jaguar-xf-x250-xfr-performance-saloon-2009-2011-special-ultimate-black-xfr-45.webp": "jaguar-xf-x250-xfr-performance saloon-2009–2011-special-ultimate black-xfr-45-angle-front-view.webp",
+  "jaguar-xf-x250-sportbrake-estate-2012-2015-new-polaris-white-xf-sportbrake-45.webp": "jaguar-xf-x250-sportbrake-estate-2012–2015-new-polaris white-xf sportbrake-45-angle-front-view.webp",
+  "jaguar-xf-x250-luxury-saloon-2008-2011-new-vapour-grey-xf-luxury-side.webp": "jaguar-xf-x250-luxury-saloon-2008–2011-new-vapour grey-xf luxury-flat-side-view.webp",
+  "jaguar-xf-x250-sv8-performance-saloon-2008-2009-new-ultimate-black-xf-sv8-side.webp": "jaguar-xf-x250-sv8-performance saloon-2008–2009-new-ultimate black-xf sv8-flat-side-view.webp",
+  "jaguar-xf-x250-premium-luxury-saloon-2008-2011-new-polaris-white-xf-premium-side.webp": "jaguar-xf-x250-premium luxury-saloon-2008–2011-new-polaris white-xf premium-flat-side-view.webp",
+  "jaguar-xf-x250-xfr-performance-saloon-2009-2011-special-ultimate-black-xfr-side.webp": "jaguar-xf-x250-xfr-performance saloon-2009–2011-special-ultimate black-xfr-flat-side-view.webp",
+  "jaguar-xf-x250-sportbrake-estate-2012-2015-new-polaris-white-xf-sportbrake-side.webp": "jaguar-xf-x250-sportbrake-estate-2012–2015-new-polaris white-xf sportbrake-flat-side-view.webp",
+  "jaguar-xf-x250-luxury-saloon-2008-2011-new-vapour-grey-xf-luxury-front.webp": "jaguar-xf-x250-luxury-saloon-2008–2011-new-vapour grey-xf luxury-front-view.webp",
+  "jaguar-xf-x250-sv8-performance-saloon-2008-2009-new-ultimate-black-xf-sv8-front.webp": "jaguar-xf-x250-sv8-performance saloon-2008–2009-new-ultimate black-xf sv8-front-view.webp",
+  "jaguar-xf-x250-premium-luxury-saloon-2008-2011-new-polaris-white-xf-premium-front.webp": "jaguar-xf-x250-premium luxury-saloon-2008–2011-new-polaris white-xf premium-front-view.webp",
+  "jaguar-xf-x250-xfr-performance-saloon-2009-2011-special-ultimate-black-xfr-front.webp": "jaguar-xf-x250-xfr-performance saloon-2009–2011-special-ultimate black-xfr-front-view.webp",
+  "jaguar-xf-x250-sportbrake-estate-2012-2015-new-polaris-white-xf-sportbrake-front.webp": "jaguar-xf-x250-sportbrake-estate-2012–2015-new-polaris white-xf sportbrake-front-view.webp",
+  "jaguar-xf-x250-lci-luxury-saloon-2011-2015-new-stratus-grey-xf-lci-luxury-front.webp": "jaguar-xf-x250 lci-luxury-saloon-2011–2015-new-stratus grey-xf lci luxury-front-view.webp",
+  "jaguar-xf-x250-lci-xfr-performance-saloon-2011-2015-special-ultimate-black-xfr-lci-front.webp": "jaguar-xf-x250 lci-xfr-performance saloon-2011–2015-special-ultimate black-xfr lci-front-view.webp",
+  "jaguar-xf-x250-lci-premium-luxury-saloon-2011-2015-new-polaris-white-xf-lci-premium-front.webp": "jaguar-xf-x250 lci-premium luxury-saloon-2011–2015-new-polaris white-xf lci premium-front-view.webp",
+  "jaguar-xf-x250-lci-r-sport-saloon-2014-2015-new-dark-sapphire-xf-r-sport-front.webp": "jaguar-xf-x250 lci-r-sport-saloon-2014–2015-new-dark sapphire-xf r-sport-front-view.webp",
+  "jaguar-xf-x250-lci-luxury-saloon-2011-2015-new-stratus-grey-xf-lci-luxury-45.webp": "jaguar-xf-x250 lci-luxury-saloon-2011–2015-new-stratus grey-xf lci luxury-45-angle-front-view.webp",
+  "jaguar-xf-x250-lci-xfr-performance-saloon-2011-2015-special-ultimate-black-xfr-lci-45.webp": "jaguar-xf-x250 lci-xfr-performance saloon-2011–2015-special-ultimate black-xfr lci-45-angle-front-view.webp",
+  "jaguar-xf-x250-lci-premium-luxury-saloon-2011-2015-new-polaris-white-xf-lci-premium-45.webp": "jaguar-xf-x250 lci-premium luxury-saloon-2011–2015-new-polaris white-xf lci premium-45-angle-front-view.webp",
+  "jaguar-xf-x250-lci-r-sport-saloon-2014-2015-new-dark-sapphire-xf-r-sport-45.webp": "jaguar-xf-x250 lci-r-sport-saloon-2014–2015-new-dark sapphire-xf r-sport-45-angle-front-view.webp",
+  "jaguar-xf-x250-lci-luxury-saloon-2011-2015-new-stratus-grey-xf-lci-luxury-side.webp": "jaguar-xf-x250 lci-luxury-saloon-2011–2015-new-stratus grey-xf lci luxury-flat-side-view.webp",
+  "jaguar-xf-x250-lci-xfr-performance-saloon-2011-2015-special-ultimate-black-xfr-lci-side.webp": "jaguar-xf-x250 lci-xfr-performance saloon-2011–2015-special-ultimate black-xfr lci-flat-side-view.webp",
+  "jaguar-xf-x250-lci-premium-luxury-saloon-2011-2015-new-polaris-white-xf-lci-premium-side.webp": "jaguar-xf-x250 lci-premium luxury-saloon-2011–2015-new-polaris white-xf lci premium-flat-side-view.webp",
+  "jaguar-xf-x250-lci-r-sport-saloon-2014-2015-new-dark-sapphire-xf-r-sport-side.webp": "jaguar-xf-x250 lci-r-sport-saloon-2014–2015-new-dark sapphire-xf r-sport-flat-side-view.webp",
+  "jaguar-xf-x260-chequered-flag-saloon-2019-special-eiger-grey-xf-chequered-front.webp": "jaguar-xf-x260-chequered flag-saloon-2019-special-eiger grey-xf chequered-front-view.webp",
+  "jaguar-xf-x260-r-dynamic-black-saloon-2020-2024-special-santorini-black-xf-black-front.webp": "jaguar-xf-x260-r-dynamic black-saloon-2020–2024-special-santorini black-xf black-front-view.webp",
+  "jaguar-xf-x260-300-sport-sportbrake-2019-2024-special-yulong-white-xf-sb-300-front.webp": "jaguar-xf-x260-300 sport-sportbrake-2019–2024-special-yulong white-xf sb 300-front-view.webp",
+  "jaguar-xf-x260-prestige-saloon-2016-2019-new-corris-grey-x260-prestige-front.webp": "jaguar-xf-x260-prestige-saloon-2016–2019-new-corris grey-x260 prestige-front-view.webp",
+  "jaguar-xf-x260-r-dynamic-hse-saloon-2019-2024-new-santorini-black-xf-r-dyn-hse-front.webp": "jaguar-xf-x260-r-dynamic hse-saloon-2019–2024-new-santorini black-xf r-dyn hse-front-view.webp",
+  "jaguar-xf-x260-chequered-flag-sportbrake-2019-special-yulong-white-xf-sb-chequered-front.webp": "jaguar-xf-x260-chequered flag-sportbrake-2019-special-yulong white-xf sb chequered-front-view.webp",
+  "jaguar-xf-x260-r-dynamic-black-sportbrake-2021-2024-special-carpathian-grey-xf-sb-black-front.webp": "jaguar-xf-x260-r-dynamic black-sportbrake-2021–2024-special-carpathian grey-xf sb black-front-view.webp",
+  "jaguar-xf-x260-portfolio-saloon-2016-2019-new-yulong-white-x260-portfolio-front.webp": "jaguar-xf-x260-portfolio-saloon-2016–2019-new-yulong white-x260 portfolio-front-view.webp",
+  "jaguar-xf-x260-r-dynamic-se-saloon-2019-2024-new-carpathian-grey-xf-r-dyn-se-front.webp": "jaguar-xf-x260-r-dynamic se-saloon-2019–2024-new-carpathian grey-xf r-dyn se-front-view.webp",
+  "jaguar-xf-x260-sportbrake-estate-2017-2020-new-corris-grey-x260-sportbrake-front.webp": "jaguar-xf-x260-sportbrake-estate-2017–2020-new-corris grey-x260 sportbrake-front-view.webp",
+  "jaguar-xf-x260-chequered-flag-saloon-2019-special-eiger-grey-xf-chequered-side.webp": "jaguar-xf-x260-chequered flag-saloon-2019-special-eiger grey-xf chequered-flat-side-view.webp",
+  "jaguar-xf-x260-r-dynamic-black-saloon-2020-2024-special-santorini-black-xf-black-side.webp": "jaguar-xf-x260-r-dynamic black-saloon-2020–2024-special-santorini black-xf black-flat-side-view.webp",
+  "jaguar-xf-x260-300-sport-sportbrake-2019-2024-special-yulong-white-xf-sb-300-side.webp": "jaguar-xf-x260-300 sport-sportbrake-2019–2024-special-yulong white-xf sb 300-flat-side-view.webp",
+  "jaguar-xf-x260-prestige-saloon-2016-2019-new-corris-grey-x260-prestige-side.webp": "jaguar-xf-x260-prestige-saloon-2016–2019-new-corris grey-x260 prestige-flat-side-view.webp",
+  "jaguar-xf-x260-r-dynamic-hse-saloon-2019-2024-new-santorini-black-xf-r-dyn-hse-side.webp": "jaguar-xf-x260-r-dynamic hse-saloon-2019–2024-new-santorini black-xf r-dyn hse-flat-side-view.webp",
+  "jaguar-xf-x260-chequered-flag-sportbrake-2019-special-yulong-white-xf-sb-chequered-side.webp": "jaguar-xf-x260-chequered flag-sportbrake-2019-special-yulong white-xf sb chequered-flat-side-view.webp",
+  "jaguar-xf-x260-r-dynamic-black-sportbrake-2021-2024-special-carpathian-grey-xf-sb-black-side.webp": "jaguar-xf-x260-r-dynamic black-sportbrake-2021–2024-special-carpathian grey-xf sb black-flat-side-view.webp",
+  "jaguar-xf-x260-portfolio-saloon-2016-2019-new-yulong-white-x260-portfolio-side.webp": "jaguar-xf-x260-portfolio-saloon-2016–2019-new-yulong white-x260 portfolio-flat-side-view.webp",
+  "jaguar-xf-x260-r-dynamic-se-saloon-2019-2024-new-carpathian-grey-xf-r-dyn-se-side.webp": "jaguar-xf-x260-r-dynamic se-saloon-2019–2024-new-carpathian grey-xf r-dyn se-flat-side-view.webp",
+  "jaguar-xf-x260-sportbrake-estate-2017-2020-new-corris-grey-x260-sportbrake-side.webp": "jaguar-xf-x260-sportbrake-estate-2017–2020-new-corris grey-x260 sportbrake-flat-side-view.webp",
+  "jaguar-xf-x260-chequered-flag-saloon-2019-special-eiger-grey-xf-chequered-45.webp": "jaguar-xf-x260-chequered flag-saloon-2019-special-eiger grey-xf chequered-45-angle-front-view.webp",
+  "jaguar-xf-x260-r-dynamic-black-saloon-2020-2024-special-santorini-black-xf-black-45.webp": "jaguar-xf-x260-r-dynamic black-saloon-2020–2024-special-santorini black-xf black-45-angle-front-view.webp",
+  "jaguar-xf-x260-300-sport-sportbrake-2019-2024-special-yulong-white-xf-sb-300-45.webp": "jaguar-xf-x260-300 sport-sportbrake-2019–2024-special-yulong white-xf sb 300-45-angle-front-view.webp",
+  "jaguar-xf-x260-prestige-saloon-2016-2019-new-corris-grey-x260-prestige-45.webp": "jaguar-xf-x260-prestige-saloon-2016–2019-new-corris grey-x260 prestige-45-angle-front-view.webp",
+  "jaguar-xf-x260-r-dynamic-hse-saloon-2019-2024-new-santorini-black-xf-r-dyn-hse-45.webp": "jaguar-xf-x260-r-dynamic hse-saloon-2019–2024-new-santorini black-xf r-dyn hse-45-angle-front-view.webp",
+  "jaguar-xf-x260-chequered-flag-sportbrake-2019-special-yulong-white-xf-sb-chequered-45.webp": "jaguar-xf-x260-chequered flag-sportbrake-2019-special-yulong white-xf sb chequered-45-angle-front-view.webp",
+  "jaguar-xf-x260-r-dynamic-black-sportbrake-2021-2024-special-carpathian-grey-xf-sb-black-45.webp": "jaguar-xf-x260-r-dynamic black-sportbrake-2021–2024-special-carpathian grey-xf sb black-45-angle-front-view.webp",
+  "jaguar-xf-x260-portfolio-saloon-2016-2019-new-yulong-white-x260-portfolio-45.webp": "jaguar-xf-x260-portfolio-saloon-2016–2019-new-yulong white-x260 portfolio-45-angle-front-view.webp",
+  "jaguar-xf-x260-r-dynamic-se-saloon-2019-2024-new-carpathian-grey-xf-r-dyn-se-45.webp": "jaguar-xf-x260-r-dynamic se-saloon-2019–2024-new-carpathian grey-xf r-dyn se-45-angle-front-view.webp",
+  "jaguar-xf-x260-sportbrake-estate-2017-2020-new-corris-grey-x260-sportbrake-45.webp": "jaguar-xf-x260-sportbrake-estate-2017–2020-new-corris grey-x260 sportbrake-45-angle-front-view.webp",
+  "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-regency-red-xj-s1-2-front.webp": "jaguar-xj-series i-xj6-saloon-1968–1973-historical-regency red-xj s1 (2)-front-view.webp",
+  "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-regency-red-xj-s1-front.webp": "jaguar-xj-series i-xj6-saloon-1968–1973-historical-regency red-xj s1-front-view.webp",
+  "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-regency-red-xj-s1-2-45.webp": "jaguar-xj-series i-xj6-saloon-1968–1973-historical-regency red-xj s1 (2)-45-angle-front-view.webp",
+  "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-regency-red-xj-s1-45.webp": "jaguar-xj-series i-xj6-saloon-1968–1973-historical-regency red-xj s1-45-angle-front-view.webp",
+  "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-regency-red-xj-s1-2-side.webp": "jaguar-xj-series i-xj6-saloon-1968–1973-historical-regency red-xj s1 (2)-flat-side-view.webp",
+  "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-regency-red-xj-s1-side.webp": "jaguar-xj-series i-xj6-saloon-1968–1973-historical-regency red-xj s1-flat-side-view.webp",
+  "jaguar-xj-series-ii-xj12-saloon-1973-1979-historical-british-racing-green-xj-s2-side.webp": "jaguar-xj-series ii-xj12-saloon-1973–1979-historical-british racing green-xj s2-flat-side-view.webp",
+  "jaguar-xj-series-ii-xj12-saloon-1973-1979-historical-british-racing-green-xj-s2-45.webp": "jaguar-xj-series ii-xj12-saloon-1973–1979-historical-british racing green-xj s2-45-angle-front-view.webp",
+  "jaguar-xj-series-ii-xj12-saloon-1973-1979-historical-british-racing-green-xj-s2-front.webp": "jaguar-xj-series ii-xj12-saloon-1973–1979-historical-british racing green-xj s2-front-view.webp",
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-2-front.webp": "jaguar-xj-x300-xj6 sovereign-saloon-1994–1997-new-british racing green-x300 (2)-front-view.webp",
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-3-front.webp": "jaguar-xj-x300-xj6 sovereign-saloon-1994–1997-new-british racing green-x300 (3)-front-view.webp",
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-front.webp": "jaguar-xj-x300-xj6 sovereign-saloon-1994–1997-new-british racing green-x300-front-view.webp",
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-2-side.webp": "jaguar-xj-x300-xj6 sovereign-saloon-1994–1997-new-british racing green-x300 (2)-flat-side-view.webp",
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-3-side.webp": "jaguar-xj-x300-xj6 sovereign-saloon-1994–1997-new-british racing green-x300 (3)-flat-side-view.webp",
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-side.webp": "jaguar-xj-x300-xj6 sovereign-saloon-1994–1997-new-british racing green-x300-flat-side-view.webp",
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-2-45.webp": "jaguar-xj-x300-xj6 sovereign-saloon-1994–1997-new-british racing green-x300 (2)-45-angle-front-view.webp",
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-3-45.webp": "jaguar-xj-x300-xj6 sovereign-saloon-1994–1997-new-british racing green-x300 (3)-45-angle-front-view.webp",
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-45.webp": "jaguar-xj-x300-xj6 sovereign-saloon-1994–1997-new-british racing green-x300-45-angle-front-view.webp",
+  "jaguar-xj-x308-xjr-performance-saloon-1997-2003-special-anthracite-x308-xjr-front.webp": "jaguar-xj-x308-xjr-performance saloon-1997–2003-special-anthracite-x308 xjr-front-view.webp",
+  "jaguar-xj-x308-xjr-performance-saloon-1997-2003-special-anthracite-x308-xjr-side.webp": "jaguar-xj-x308-xjr-performance saloon-1997–2003-special-anthracite-x308 xjr-flat-side-view.webp",
+  "jaguar-xj-x308-xjr-performance-saloon-1997-2003-special-anthracite-x308-xjr-45.webp": "jaguar-xj-x308-xjr-performance saloon-1997–2003-special-anthracite-x308 xjr-45-angle-front-view.webp",
+  "jaguar-xj-x350-xj-super-v8-portfolio-saloon-2005-2009-new-celestial-black-x350-portfolio-side.webp": "jaguar-xj-x350-xj super v8 portfolio-saloon-2005–2009-new-celestial black-x350 portfolio-flat-side-view.webp",
+  "jaguar-xj-x350-xj8-saloon-2003-2007-new-midnight-x350-xj8-side.webp": "jaguar-xj-x350-xj8-saloon-2003–2007-new-midnight-x350 xj8-flat-side-view.webp",
+  "jaguar-xj-x350-xjr-performance-saloon-2003-2007-special-ultimate-black-x350-xjr-side.webp": "jaguar-xj-x350-xjr-performance saloon-2003–2007-special-ultimate black-x350 xjr-flat-side-view.webp",
+  "jaguar-xj-x350-xj-super-v8-portfolio-saloon-2005-2009-new-celestial-black-x350-portfolio-45.webp": "jaguar-xj-x350-xj super v8 portfolio-saloon-2005–2009-new-celestial black-x350 portfolio-45-angle-front-view.webp",
+  "jaguar-xj-x350-xj8-saloon-2003-2007-new-midnight-x350-xj8-45.webp": "jaguar-xj-x350-xj8-saloon-2003–2007-new-midnight-x350 xj8-45-angle-front-view.webp",
+  "jaguar-xj-x350-xjr-performance-saloon-2003-2007-special-ultimate-black-x350-xjr-45.webp": "jaguar-xj-x350-xjr-performance saloon-2003–2007-special-ultimate black-x350 xjr-45-angle-front-view.webp",
+  "jaguar-xj-x350-xj-super-v8-portfolio-saloon-2005-2009-new-celestial-black-x350-portfolio-front.webp": "jaguar-xj-x350-xj super v8 portfolio-saloon-2005–2009-new-celestial black-x350 portfolio-front-view.webp",
+  "jaguar-xj-x350-xj6-saloon-2003-2007-new-zircon-x350-xj6-front.webp": "jaguar-xj-x350-xj6-saloon-2003–2007-new-zircon-x350 xj6-front-view.webp",
+  "jaguar-xj-x350-xj8-saloon-2003-2007-new-midnight-x350-xj8-front.webp": "jaguar-xj-x350-xj8-saloon-2003–2007-new-midnight-x350 xj8-front-view.webp",
+  "jaguar-xj-x350-xjr-performance-saloon-2003-2007-special-ultimate-black-x350-xjr-front.webp": "jaguar-xj-x350-xjr-performance saloon-2003–2007-special-ultimate black-x350 xjr-front-view.webp",
+  "jaguar-xj-x351-xj-luxury-saloon-2010-2012-new-vapour-grey-x351-luxury-front.webp": "jaguar-xj-x351-xj luxury-saloon-2010–2012-new-vapour grey-x351 luxury-front-view.webp",
+  "jaguar-xj-x351-xj-supersport-performance-saloon-2010-2013-new-ultimate-black-x351-supersport-front.webp": "jaguar-xj-x351-xj supersport-performance saloon-2010–2013-new-ultimate black-x351 supersport-front-view.webp",
+  "jaguar-xj-x351-xj-premium-luxury-saloon-2010-2015-new-polaris-white-x351-premium-front.webp": "jaguar-xj-x351-xj premium luxury-saloon-2010–2015-new-polaris white-x351 premium-front-view.webp",
+  "jaguar-xj-x351-xj-portfolio-saloon-2010-2015-new-stratus-grey-x351-portfolio-front.webp": "jaguar-xj-x351-xj portfolio-saloon-2010–2015-new-stratus grey-x351 portfolio-front-view.webp",
+  "jaguar-xj-x351-xj50-special-edition-saloon-2018-2019-special-santorini-black-xj50-front.webp": "jaguar-xj-x351-xj50-special edition saloon-2018–2019-special-santorini black-xj50-front-view.webp",
+  "jaguar-xj-x351-xj-luxury-saloon-2010-2012-new-vapour-grey-x351-luxury-side.webp": "jaguar-xj-x351-xj luxury-saloon-2010–2012-new-vapour grey-x351 luxury-flat-side-view.webp",
+  "jaguar-xj-x351-xj-supersport-performance-saloon-2010-2013-new-ultimate-black-x351-supersport-side.webp": "jaguar-xj-x351-xj supersport-performance saloon-2010–2013-new-ultimate black-x351 supersport-flat-side-view.webp",
+  "jaguar-xj-x351-xj-premium-luxury-saloon-2010-2015-new-polaris-white-x351-premium-side.webp": "jaguar-xj-x351-xj premium luxury-saloon-2010–2015-new-polaris white-x351 premium-flat-side-view.webp",
+  "jaguar-xj-x351-xj-portfolio-saloon-2010-2015-new-stratus-grey-x351-portfolio-side.webp": "jaguar-xj-x351-xj portfolio-saloon-2010–2015-new-stratus grey-x351 portfolio-flat-side-view.webp",
+  "jaguar-xj-x351-xj50-special-edition-saloon-2018-2019-special-santorini-black-xj50-side.webp": "jaguar-xj-x351-xj50-special edition saloon-2018–2019-special-santorini black-xj50-flat-side-view.webp",
+  "jaguar-xj-x351-xj-luxury-saloon-2010-2012-new-vapour-grey-x351-luxury-45.webp": "jaguar-xj-x351-xj luxury-saloon-2010–2012-new-vapour grey-x351 luxury-45-angle-front-view.webp",
+  "jaguar-xj-x351-xj-supersport-performance-saloon-2010-2013-new-ultimate-black-x351-supersport-45.webp": "jaguar-xj-x351-xj supersport-performance saloon-2010–2013-new-ultimate black-x351 supersport-45-angle-front-view.webp",
+  "jaguar-xj-x351-xj-premium-luxury-saloon-2010-2015-new-polaris-white-x351-premium-45.webp": "jaguar-xj-x351-xj premium luxury-saloon-2010–2015-new-polaris white-x351 premium-45-angle-front-view.webp",
+  "jaguar-xj-x351-xj-portfolio-saloon-2010-2015-new-stratus-grey-x351-portfolio-45.webp": "jaguar-xj-x351-xj portfolio-saloon-2010–2015-new-stratus grey-x351 portfolio-45-angle-front-view.webp",
+  "jaguar-xj-x351-xj50-special-edition-saloon-2018-2019-special-santorini-black-xj50-45.webp": "jaguar-xj-x351-xj50-special edition saloon-2018–2019-special-santorini black-xj50-45-angle-front-view.webp",
+  "jaguar-xj-x358-xj-3-0d-sovereign-saloon-2007-2009-new-vapour-grey-x358-30d-side.webp": "jaguar-xj-x358-xj 3.0d sovereign-saloon-2007–2009-new-vapour grey-x358 30d-flat-side-view.webp",
+  "jaguar-xj-x358-xjr-performance-saloon-2007-2009-special-ultimate-black-x358-xjr-side.webp": "jaguar-xj-x358-xjr-performance saloon-2007–2009-special-ultimate black-x358 xjr-flat-side-view.webp",
+  "jaguar-xj-x358-xj-3-0d-sovereign-saloon-2007-2009-new-vapour-grey-x358-30d-45.webp": "jaguar-xj-x358-xj 3.0d sovereign-saloon-2007–2009-new-vapour grey-x358 30d-45-angle-front-view.webp",
+  "jaguar-xj-x358-xjr-performance-saloon-2007-2009-special-ultimate-black-x358-xjr-45.webp": "jaguar-xj-x358-xjr-performance saloon-2007–2009-special-ultimate black-x358 xjr-45-angle-front-view.webp",
+  "jaguar-xj-x358-xj-3-0d-sovereign-saloon-2007-2009-new-vapour-grey-x358-30d-front.webp": "jaguar-xj-x358-xj 3.0d sovereign-saloon-2007–2009-new-vapour grey-x358 30d-front-view.webp",
+  "jaguar-xj-x358-xjr-performance-saloon-2007-2009-special-ultimate-black-x358-xjr-front.webp": "jaguar-xj-x358-xjr-performance saloon-2007–2009-special-ultimate black-x358 xjr-front-view.webp",
+  "jaguar-xj-xj40-xj6-sovereign-saloon-1986-1994-new-westminster-blue-xj40-side.webp": "jaguar-xj-xj40-xj6 sovereign-saloon-1986–1994-new-westminster blue-xj40-flat-side-view.webp",
+  "jaguar-xj-xj40-xj6-sovereign-saloon-1986-1994-new-westminster-blue-xj40-45.webp": "jaguar-xj-xj40-xj6 sovereign-saloon-1986–1994-new-westminster blue-xj40-45-angle-front-view.webp",
+  "jaguar-xj-xj40-xj6-sovereign-saloon-1986-1994-new-westminster-blue-xj40-front.webp": "jaguar-xj-xj40-xj6 sovereign-saloon-1986–1994-new-westminster blue-xj40-front-view.webp",
+  "jaguar-xk-x100-xkr-coupe-performance-coupe-1998-2002-new-titanium-x100-xkr-front.webp": "jaguar-xk-x100-xkr coupé-performance coupé-1998–2002-new-titanium-x100 xkr-front-view.webp",
+  "jaguar-xk-x100-xkr-100-special-edition-coupe-2001-special-platinum-silver-xkr-100-front.webp": "jaguar-xk-x100-xkr 100-special edition coupé-2001-special-platinum silver-xkr 100-front-view.webp",
+  "jaguar-xk-x100-xkr-silverstone-special-edition-coupe-2000-special-platinum-silver-silverstone-front.webp": "jaguar-xk-x100-xkr silverstone-special edition coupé-2000-special-platinum silver-silverstone-front-view.webp",
+  "jaguar-xk-x100-xkr-coupe-performance-coupe-1998-2002-new-titanium-x100-xkr-45.webp": "jaguar-xk-x100-xkr coupé-performance coupé-1998–2002-new-titanium-x100 xkr-45-angle-front-view.webp",
+  "jaguar-xk-x100-xkr-100-special-edition-coupe-2001-special-platinum-silver-xkr-100-45.webp": "jaguar-xk-x100-xkr 100-special edition coupé-2001-special-platinum silver-xkr 100-45-angle-front-view.webp",
+  "jaguar-xk-x100-xkr-silverstone-special-edition-coupe-2000-special-platinum-silver-silverstone-45.webp": "jaguar-xk-x100-xkr silverstone-special edition coupé-2000-special-platinum silver-silverstone-45-angle-front-view.webp",
+  "jaguar-xk-x100-xkr-coupe-performance-coupe-1998-2002-new-titanium-x100-xkr-side.webp": "jaguar-xk-x100-xkr coupé-performance coupé-1998–2002-new-titanium-x100 xkr-flat-side-view.webp",
+  "jaguar-xk-x100-xkr-100-special-edition-coupe-2001-special-platinum-silver-xkr-100-side.webp": "jaguar-xk-x100-xkr 100-special edition coupé-2001-special-platinum silver-xkr 100-flat-side-view.webp",
+  "jaguar-xk-x100-xkr-silverstone-special-edition-coupe-2000-special-platinum-silver-silverstone-side.webp": "jaguar-xk-x100-xkr silverstone-special edition coupé-2000-special-platinum silver-silverstone-flat-side-view.webp",
+  "jaguar-xk-x150-xk-artisan-se-coupe-special-edition-coupe-2012-special-celestial-black-artisan-2-side.webp": "jaguar-xk-x150-xk artisan se coupé-special edition coupé-2012-special-celestial black-artisan (2)-flat-side-view.webp",
+  "jaguar-xk-x150-xk-convertible-convertible-2006-2011-new-polaris-white-x150-cab-side.webp": "jaguar-xk-x150-xk convertible-convertible-2006–2011-new-polaris white-x150 cab-flat-side-view.webp",
+  "jaguar-xk-x150-xk-coupe-coupe-2006-2011-new-liquid-silver-x150-xk-side.webp": "jaguar-xk-x150-xk coupé-coupé-2006–2011-new-liquid silver-x150 xk-flat-side-view.webp",
+  "jaguar-xk-x150-xk-signature-coupe-special-edition-coupe-2014-2015-special-dark-sapphire-xk-signature-side.webp": "jaguar-xk-x150-xk signature coupé-special edition coupé-2014–2015-special-dark sapphire-xk signature-flat-side-view.webp",
+  "jaguar-xk-x150-xk-artisan-se-coupe-special-edition-coupe-2012-special-celestial-black-artisan-side.webp": "jaguar-xk-x150-xk artisan se coupé-special edition coupé-2012-special-celestial black-artisan-flat-side-view.webp",
+  "jaguar-xk-x150-xkr-s-convertible-performance-convertible-2011-2014-special-polaris-white-xkrs-cab-side.webp": "jaguar-xk-x150-xkr-s convertible-performance convertible-2011–2014-special-polaris white-xkrs cab-flat-side-view.webp",
+  "jaguar-xk-x150-xk-dynamic-r-coupe-special-edition-coupe-2014-2015-special-ultimate-black-xk-dynamic-r-side.webp": "jaguar-xk-x150-xk dynamic r coupé-special edition coupé-2014–2015-special-ultimate black-xk dynamic r-flat-side-view.webp",
+  "jaguar-xk-x150-xkr-coupe-performance-coupe-2007-2011-new-ultimate-black-x150-xkr-side.webp": "jaguar-xk-x150-xkr coupé-performance coupé-2007–2011-new-ultimate black-x150 xkr-flat-side-view.webp",
+  "jaguar-xk-x150-xk-artisan-se-coupe-special-edition-coupe-2012-special-celestial-black-artisan-2-45.webp": "jaguar-xk-x150-xk artisan se coupé-special edition coupé-2012-special-celestial black-artisan (2)-45-angle-front-view.webp",
+  "jaguar-xk-x150-xk-convertible-convertible-2006-2011-new-polaris-white-x150-cab-45.webp": "jaguar-xk-x150-xk convertible-convertible-2006–2011-new-polaris white-x150 cab-45-angle-front-view.webp",
+  "jaguar-xk-x150-xk-coupe-coupe-2006-2011-new-liquid-silver-x150-xk-45.webp": "jaguar-xk-x150-xk coupé-coupé-2006–2011-new-liquid silver-x150 xk-45-angle-front-view.webp",
+  "jaguar-xk-x150-xk-signature-coupe-special-edition-coupe-2014-2015-special-dark-sapphire-xk-signature-45.webp": "jaguar-xk-x150-xk signature coupé-special edition coupé-2014–2015-special-dark sapphire-xk signature-45-angle-front-view.webp",
+  "jaguar-xk-x150-xk-artisan-se-coupe-special-edition-coupe-2012-special-celestial-black-artisan-45.webp": "jaguar-xk-x150-xk artisan se coupé-special edition coupé-2012-special-celestial black-artisan-45-angle-front-view.webp",
+  "jaguar-xk-x150-xkr-s-convertible-performance-convertible-2011-2014-special-polaris-white-xkrs-cab-45.webp": "jaguar-xk-x150-xkr-s convertible-performance convertible-2011–2014-special-polaris white-xkrs cab-45-angle-front-view.webp",
+  "jaguar-xk-x150-xk-dynamic-r-coupe-special-edition-coupe-2014-2015-special-ultimate-black-xk-dynamic-r-45.webp": "jaguar-xk-x150-xk dynamic r coupé-special edition coupé-2014–2015-special-ultimate black-xk dynamic r-45-angle-front-view.webp",
+  "jaguar-xk-x150-xkr-coupe-performance-coupe-2007-2011-new-ultimate-black-x150-xkr-45.webp": "jaguar-xk-x150-xkr coupé-performance coupé-2007–2011-new-ultimate black-x150 xkr-45-angle-front-view.webp",
+  "jaguar-xk-x150-xk-artisan-se-coupe-special-edition-coupe-2012-special-celestial-black-artisan-2-front.webp": "jaguar-xk-x150-xk artisan se coupé-special edition coupé-2012-special-celestial black-artisan (2)-front-view.webp",
+  "jaguar-xk-x150-xk-convertible-convertible-2006-2011-new-polaris-white-x150-cab-front.webp": "jaguar-xk-x150-xk convertible-convertible-2006–2011-new-polaris white-x150 cab-front-view.webp",
+  "jaguar-xk-x150-xk-coupe-coupe-2006-2011-new-liquid-silver-x150-xk-front.webp": "jaguar-xk-x150-xk coupé-coupé-2006–2011-new-liquid silver-x150 xk-front-view.webp",
+  "jaguar-xk-x150-xk-signature-coupe-special-edition-coupe-2014-2015-special-dark-sapphire-xk-signature-front.webp": "jaguar-xk-x150-xk signature coupé-special edition coupé-2014–2015-special-dark sapphire-xk signature-front-view.webp",
+  "jaguar-xk-x150-xk-artisan-se-coupe-special-edition-coupe-2012-special-celestial-black-artisan-front.webp": "jaguar-xk-x150-xk artisan se coupé-special edition coupé-2012-special-celestial black-artisan-front-view.webp",
+  "jaguar-xk-x150-xkr-s-convertible-performance-convertible-2011-2014-special-polaris-white-xkrs-cab-front.webp": "jaguar-xk-x150-xkr-s convertible-performance convertible-2011–2014-special-polaris white-xkrs cab-front-view.webp",
+  "jaguar-xk-x150-xk-dynamic-r-coupe-special-edition-coupe-2014-2015-special-ultimate-black-xk-dynamic-r-front.webp": "jaguar-xk-x150-xk dynamic r coupé-special edition coupé-2014–2015-special-ultimate black-xk dynamic r-front-view.webp",
+  "jaguar-xk-x150-xkr-coupe-performance-coupe-2007-2011-new-ultimate-black-x150-xkr-front.webp": "jaguar-xk-x150-xkr coupé-performance coupé-2007–2011-new-ultimate black-x150 xkr-front-view.webp"
+ }
+}

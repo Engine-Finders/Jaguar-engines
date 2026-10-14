@@ -5,6 +5,7 @@ import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
+import { engineImageFor } from "@/components/shared/carImage";
 
 const ENGINE_IMAGE = "/engine.webp";
 const ICON_LG = "h-10 w-10 md:h-11 md:w-11";
@@ -91,6 +92,8 @@ function CategoryLabel({ title, icon, isDark }) {
 }
 
 function EngineCard({ row, isDark }) {
+  // Each engine failure shows the engine it names (276DT, AJ133, Ingenium, AJ126...).
+  const engineImage = engineImageFor(unlinkHtml(row.title)) || ENGINE_IMAGE;
   const linkLabel = (row.link?.label || "Read more").replace(/\s*→\s*$/, "");
 
   return (
@@ -113,7 +116,7 @@ function EngineCard({ row, isDark }) {
 
         <div className="relative mt-5 h-[92px] w-[88px] shrink-0">
           <Image
-            src={ENGINE_IMAGE}
+            src={engineImage}
             alt=""
             fill
             className="object-contain object-center"
@@ -162,7 +165,7 @@ function EngineCard({ row, isDark }) {
 
         <div className="relative mx-auto mt-8 h-[100px] w-full max-w-[160px]">
           <Image
-            src={ENGINE_IMAGE}
+            src={engineImage}
             alt=""
             fill
             className="object-contain object-center"

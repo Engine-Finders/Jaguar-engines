@@ -10,8 +10,6 @@ import { engineSectionBg } from "./engineSection";
 
 const ENGINE_IMAGE = "/e90/engine.webp";
 
-// Generic studio car for models we have no photo of (e.g. XJS, Daimler).
-const FALLBACK_CAR_IMAGE = "/home-image/right-cutout.webp";
 
 function cleanText(text = "") {
   return String(text)
@@ -116,7 +114,8 @@ function cardClass(isDark) {
 }
 
 function carImageFor(model = "", generation = "", years = "") {
-  return jaguarCarImage(cleanText(model), cleanText(generation), stripTags(years)) || FALLBACK_CAR_IMAGE;
+  // Models we have no photo of (e.g. XJS, Daimler) show no picture rather than another car.
+  return jaguarCarImage(cleanText(model), cleanText(generation), stripTags(years));
 }
 
 function ShieldIcon({ isDark, className = "h-4 w-4" }) {
@@ -170,7 +169,9 @@ function DesktopModelCard({ item, isDark }) {
           ) : null}
         </div>
         <div className="relative h-11 w-[84px] shrink-0 overflow-hidden rounded-md">
-          <Image src={carImageFor(item.model, item.generations[item.generations.length - 1])} alt="" fill sizes="84px" className="object-contain object-center" />
+          {carImageFor(item.model, item.generations[item.generations.length - 1]) ? (
+            <Image src={carImageFor(item.model, item.generations[item.generations.length - 1])} alt="" fill sizes="84px" className="object-contain object-center" />
+          ) : null}
         </div>
       </div>
 
@@ -206,7 +207,9 @@ function MobileModelRow({ row, isDark }) {
             </p>
           ) : null}
           <div className="relative mt-1.5 h-10 w-full overflow-hidden rounded">
-            <Image src={carImageFor(row.model, row.generation, row.years)} alt="" fill sizes="72px" className="object-contain object-center" />
+            {carImageFor(row.model, row.generation, row.years) ? (
+              <Image src={carImageFor(row.model, row.generation, row.years)} alt="" fill sizes="72px" className="object-contain object-center" />
+            ) : null}
           </div>
         </div>
 

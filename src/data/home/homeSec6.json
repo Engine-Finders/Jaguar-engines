@@ -14,7 +14,7 @@
     "rows": [
       {
         "model": "XF X250 (AJ126)",
-        "image": { "src": "/home-image/right.webp", "alt": "XF X250" },
+        "image": { "alt": "XF X250" },
         "vehicleValue": "£4,000–£12,000 [THIRD-PARTY]",
         "replacementCost": "£4,500–£7,500 [EM-QUOTE]",
         "verdict": {
@@ -25,7 +25,7 @@
       },
       {
         "model": "X-Type X400",
-        "image": { "src": "/home-image/right.webp", "alt": "X-Type X400" },
+        "image": { "alt": "X-Type X400" },
         "vehicleValue": "£1,500–£5,000 [THIRD-PARTY]",
         "replacementCost": "£2,500–£5,800 [EM-QUOTE]",
         "verdict": {
@@ -36,7 +36,7 @@
       },
       {
         "model": "F-Pace X761",
-        "image": { "src": "/home-image/right.webp", "alt": "F-Pace X761" },
+        "image": { "alt": "F-Pace X761" },
         "vehicleValue": "£12,000–£38,000 [THIRD-PARTY]",
         "replacementCost": "£3,000–£5,800 [EM-QUOTE]",
         "verdict": {
@@ -47,7 +47,7 @@
       },
       {
         "model": "XJ X351 (<a href='https://jaguarengines.uk/engine/aj133'>AJ133</a>)",
-        "image": { "src": "/home-image/right.webp", "alt": "XJ X351" },
+        "image": { "alt": "XJ X351" },
         "vehicleValue": "£8,000–£25,000 [THIRD-PARTY]",
         "replacementCost": "£4,500–£9,000 [EM-QUOTE]",
         "verdict": {
@@ -58,7 +58,7 @@
       },
       {
         "model": "XF X260",
-        "image": { "src": "/home-image/right.webp", "alt": "XF X260" },
+        "image": { "alt": "XF X260" },
         "vehicleValue": "£8,000–£25,000 [THIRD-PARTY]",
         "replacementCost": "£3,000–£5,800 [EM-QUOTE]",
         "verdict": {
@@ -69,7 +69,7 @@
       },
       {
         "model": "S-Type X200",
-        "image": { "src": "/home-image/right.webp", "alt": "S-Type X200" },
+        "image": { "alt": "S-Type X200" },
         "vehicleValue": "£1,500–£5,500 [THIRD-PARTY]",
         "replacementCost": "£4,500–£7,500 [EM-QUOTE]",
         "verdict": {

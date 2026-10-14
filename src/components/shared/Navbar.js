@@ -46,7 +46,6 @@ function LogoMark({ isDark }) {
       alt="Jaguar"
       width={124}
       height={63}
-      priority
       className={`h-auto w-[104px] object-contain md:w-[124px] ${isDark ? "brightness-0 invert" : ""}`}
     />
   );

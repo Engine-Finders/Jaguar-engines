@@ -8,7 +8,6 @@ import HomeIcon from "@/components/home/homeIcons";
 import { carImageFor } from "@/components/shared/carImage";
 
 // Fallback for models without a Jaguar photo yet (I-Pace): cut out and trimmed so it renders at the same size as the others.
-const ROW_IMAGE = "/home-image/right-cutout.webp";
 const ICON_LG = "h-12 w-12 md:h-14 md:w-14";
 const ICON_MD = "h-9 w-9 md:h-10 md:w-10";
 const ICON_XL = "h-11 w-11 md:h-12 md:w-12";
@@ -61,13 +60,20 @@ function ModelCard({ model, isDark, centerLast = false }) {
         </p>
 
         <div className="relative mt-1.5 h-[80px] w-full md:mt-2 md:h-[92px]">
-          <Image
-            src={carImageFor(model.name) || ROW_IMAGE}
-            alt={model.name}
-            fill
-            className="object-contain object-center transition duration-300 group-hover:scale-[1.03]"
-            sizes="(max-width: 768px) 45vw, 180px"
-          />
+          {model.photo || carImageFor(model.name) ? (
+            <Image
+              src={model.photo || carImageFor(model.name)}
+              alt={model.name}
+              fill
+              className="object-contain object-center transition duration-300 group-hover:scale-[1.03]"
+              sizes="(max-width: 768px) 45vw, 180px"
+            />
+          ) : (
+            // No I-Pace photo (EV): show its icon rather than another car.
+            <span className="flex h-full items-center justify-center">
+              <HomeIcon name="ev" isDark={isDark} className="h-20 w-20 opacity-80" />
+            </span>
+          )}
         </div>
       </div>
 
@@ -172,7 +178,7 @@ function ExampleVerdict({ data, isDark }) {
         {/* Center image — side breathing room from left + right columns */}
         <div className="relative mx-auto h-[210px] w-full md:mx-0 md:h-[240px] md:px-3.5 lg:h-[260px]">
           <Image
-            src={carImageFor(data.model) || data.image?.src || ROW_IMAGE}
+            src={data.photo || carImageFor(data.model)}
             alt={data.image?.alt || data.model || ""}
             fill
             className="object-contain object-center"

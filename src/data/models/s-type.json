@@ -339,17 +339,6 @@
           "label": "Explore X200 Generation →",
           "href": "https://jaguarengines.uk/s-type/x200"
         }
-      },
-      {
-        "title": "Facelift Matters - The S-Type's Real Dividing Line",
-        "badge": "",
-        "meta": "The S-Type's engineering story splits cleanly at the 2002 facelift (2004 model year). Pre-2002: the 4.0 V8 with Nikasil liners (a known bore-wear risk in UK cars on high-sulphur fuel). Post-2004: the revised 4.2 V8 (AJ133 family) with steel liners and better timing chain tensioner design - the engine Jaguar should have built from the start.",
-        "rating": "",
-        "verdict": "",
-        "cta": {
-          "label": "",
-          "href": "/s-type"
-        }
       }
     ],
     "rangeTable": {
@@ -360,6 +349,11 @@
     "comparisonLink": {
       "label": "Read the full comparison: Pre-2002 vs Post-2004 S-Type →",
       "href": "/compare"
+    },
+    "comparisonNote": {
+      "title": "Facelift Matters - The S-Type's Real Dividing Line",
+      "text": "The S-Type's engineering story splits cleanly at the 2002 facelift (2004 model year). Pre-2002: the 4.0 V8 with Nikasil liners (a known bore-wear risk in UK cars on high-sulphur fuel). Post-2004: the revised 4.2 V8 (AJ133 family) with steel liners and better timing chain tensioner design - the engine Jaguar should have built from the start.",
+      "href": "/s-type"
     }
   },
   "engineDatabase": {
@@ -751,12 +745,7 @@
       {
         "id": 4,
         "question": "How do I know if my S-Type engine needs replacing?",
-        "answer": "Common symptoms by engine: V6 (AJ126/AJ-V6): Overheating from coolant leaks, water pump failure, or head-gasket failure (from ignored overheating). White smoke or persistent coolant loss is a warning sign. V8 (AJ133): Rattling on cold start (timing chain tensioners), overheating from coolant crossover pipe failure, loss of power (supercharger coupler wear on R models)."
-      },
-      {
-        "id": 4,
-        "question": "0 V8 (AJ-V8): Misfires, poor compression, oil consumption - all signs of Nikasil bore wear. Get a compression test before buying any pre-2002 4.0.",
-        "answer": ""
+        "answer": "Common symptoms by engine: V6 (AJ126/AJ-V6): Overheating from coolant leaks, water pump failure, or head-gasket failure (from ignored overheating). White smoke or persistent coolant loss is a warning sign. V8 (AJ133): Rattling on cold start (timing chain tensioners), overheating from coolant crossover pipe failure, loss of power (supercharger coupler wear on R models). 4.0 V8 (AJ-V8): Misfires, poor compression, oil consumption - all signs of Nikasil bore wear. Get a compression test before buying any pre-2002 4.0."
       },
       {
         "id": 5,

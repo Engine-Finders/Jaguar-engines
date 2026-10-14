@@ -27,6 +27,13 @@ import homeSec12Data from "@/data/home/homeSec12.json";
 import homeSec13Data from "@/data/home/homeSec13.json";
 import homeSec14Data from "@/data/home/homeSec14.json";
 import homeSchema from "@/data/home/homeSchema.json";
+import { withHomeImages } from "@/components/shared/pageCarImages";
+
+// The hero XF photos (light + dark theme) are already on screen, so sections below skip them.
+const HERO_CAR_PHOTOS = [
+  "jaguar-xf-x260-r-dynamic-hse-saloon-2019-2024-new-santorini-black-xf-r-dyn-hse-front.webp",
+  "jaguar-xf-x260-portfolio-saloon-2016-2019-new-yulong-white-x260-portfolio-front.webp",
+];
 
 export function generateMetadata() {
   return {
@@ -49,6 +56,11 @@ export function generateMetadata() {
 }
 
 export default function Home() {
+  const sections = withHomeImages(
+    { homeSec2: homeSec2Data, homeSec5: homeSec5Data, homeSec6: homeSec6Data, homeSec10: homeSec10Data, homeSec11: homeSec11Data },
+    HERO_CAR_PHOTOS
+  );
+
   return (
     <main>
       <script
@@ -56,18 +68,18 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homeSchema) }}
       />
       <HomeSec1 data={homeSec1Data} />
-      <HomeSec2 data={homeSec2Data} />
+      <HomeSec2 data={sections.homeSec2} />
       <HomeSec3 data={homeSec3Data} />
       <HomeSec4 data={homeSec4Data} />
       <HomeSec9 data={homeSec9Data} />
       <HomeSec8 data={homeSec8Data} />
-      <HomeSec5 data={homeSec5Data} />
+      <HomeSec5 data={sections.homeSec5} />
 
-      <HomeSec6 data={homeSec6Data} />
+      <HomeSec6 data={sections.homeSec6} />
       {/* <HomeSec7 data={homeSec7Data} /> */}
 
-      <HomeSec10 data={homeSec10Data} />
-      <HomeSec11 data={homeSec11Data} />
+      <HomeSec10 data={sections.homeSec10} />
+      <HomeSec11 data={sections.homeSec11} />
       <HomeSec12 data={homeSec12Data} />
       <HomeSec13 data={homeSec13Data} />
       <HomeSec14 data={homeSec14Data} />

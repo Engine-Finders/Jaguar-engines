@@ -17,6 +17,7 @@ import CalculatorCTA from "@/components/models/CalculatorCTA";
 import TrustBlock from "@/components/models/TrustBlock";
 import FAQAccordion from "@/components/models/FAQAccordion";
 import ClosingActionCards from "@/components/models/ClosingActionCards";
+import { withModelPageImages } from "@/components/shared/pageCarImages";
 
 import GenHero from "@/components/generation/ModelHero";
 import GenEngineDatabase from "@/components/generation/EngineDatabase";
@@ -169,6 +170,7 @@ export default async function CatchAllPage({ params }) {
   if (!data) notFound();
 
   if (type === "models") {
+    data = withModelPageImages(data);
     return (
       <main className="flex flex-col">
         {data.meta?.jsonLd && (
@@ -207,7 +209,7 @@ export default async function CatchAllPage({ params }) {
         <GenHero data={data.hero} />
         <GenEngineDatabase data={data.engineDatabase} />
         <Overview data={data.overview} />
-        <BestWorstEngines data={data.bestWorstEngines} />
+        <BestWorstEngines data={data.bestWorstEngines && { generationCode: entry.slug, ...data.bestWorstEngines }} />
         <OwnershipEconomics data={data.ownershipEconomics} />
         <GenProblems data={data.commonProblems} />
         <GenReplacementCosts data={data.replacementCosts} />
