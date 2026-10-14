@@ -23,18 +23,19 @@
       "left": {
         "label": "XE",
         "image": {
-          "src": "/home-image/left.webp",
           "alt": "Jaguar XE"
         }
       },
       "right": {
         "label": "XF",
         "image": {
-          "src": "/home-image/right.webp",
           "alt": "Jaguar XF"
         }
       },
-      "link": { "label": "Read the verdict", "href": "/compare/xe-vs-xf" }
+      "link": {
+        "label": "Read the verdict",
+        "href": "/compare/xe-vs-xf"
+      }
     },
     {
       "id": "02",
@@ -44,18 +45,19 @@
       "left": {
         "label": "F-Pace",
         "image": {
-          "src": "/home-image/left.webp",
           "alt": "Jaguar F-Pace"
         }
       },
       "right": {
         "label": "E-Pace",
         "image": {
-          "src": "/home-image/right.webp",
           "alt": "Jaguar E-Pace"
         }
       },
-      "link": { "label": "Read the verdict", "href": "/compare/f-pace-vs-e-pace" }
+      "link": {
+        "label": "Read the verdict",
+        "href": "/compare/f-pace-vs-e-pace"
+      }
     },
     {
       "id": "03",
@@ -65,18 +67,21 @@
       "left": {
         "label": "AJ126 V6",
         "image": {
-          "src": "/home-image/left.webp",
+          "src": "/engines/aj126.webp",
           "alt": "AJ126 engine"
         }
       },
       "right": {
         "label": "AJ133 V8",
         "image": {
-          "src": "/home-image/right.webp",
+          "src": "/engines/aj133.webp",
           "alt": "AJ133 engine"
         }
       },
-      "link": { "label": "Read the verdict", "href": "/compare/aj126-vs-aj133" }
+      "link": {
+        "label": "Read the verdict",
+        "href": "/compare/aj126-vs-aj133"
+      }
     },
     {
       "id": "04",
@@ -86,18 +91,21 @@
       "left": {
         "label": "Ingenium",
         "image": {
-          "src": "/home-image/left.webp",
-          "alt": "Ingenium diesel"
+          "src": "/engines/ingenium-204dtd.webp",
+          "alt": "Ingenium 2.0 diesel (204DTD)"
         }
       },
       "right": {
         "label": "AJD-V6",
         "image": {
-          "src": "/home-image/right.webp",
-          "alt": "AJD-V6 diesel"
+          "src": "/engines/ajd-v6-306dt.webp",
+          "alt": "AJD-V6 3.0 diesel (306DT)"
         }
       },
-      "link": { "label": "Read the verdict", "href": "/compare/ingenium-vs-ajd-v6" }
+      "link": {
+        "label": "Read the verdict",
+        "href": "/compare/ingenium-vs-ajd-v6"
+      }
     },
     {
       "id": "05",
@@ -107,18 +115,19 @@
       "left": {
         "label": "XF",
         "image": {
-          "src": "/home-image/left.webp",
           "alt": "Jaguar XF"
         }
       },
       "right": {
         "label": "XJ",
         "image": {
-          "src": "/home-image/right.webp",
           "alt": "Jaguar XJ"
         }
       },
-      "link": { "label": "Read the verdict", "href": "/compare/xf-vs-xj" }
+      "link": {
+        "label": "Read the verdict",
+        "href": "/compare/xf-vs-xj"
+      }
     },
     {
       "id": "06",
@@ -128,18 +137,20 @@
       "left": {
         "label": "Jaguar",
         "image": {
-          "src": "/home-image/left.webp",
-          "alt": "Jaguar"
+          "alt": "Jaguar F-Pace"
         }
       },
       "right": {
         "label": "Land Rover",
         "image": {
-          "src": "/home-image/right.webp",
-          "alt": "Land Rover"
+          "src": "/cars/land-rover-discovery-sport-l550-lci-metropolitan-edition-2022-2024-hakuba-silver-45.webp",
+          "alt": "Land Rover Discovery Sport"
         }
       },
-      "link": { "label": "Read the verdict", "href": "/compare" }
+      "link": {
+        "label": "Read the verdict",
+        "href": "/compare"
+      }
     }
   ],
   "dataNote": {

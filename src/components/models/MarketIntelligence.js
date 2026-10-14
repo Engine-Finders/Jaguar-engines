@@ -252,15 +252,17 @@ function PullQuote({ data, isDark }) {
           &ldquo;<span dangerouslySetInnerHTML={{ __html: cleanText(data.quote) }} />&rdquo;
         </blockquote>
       </div>
-      <div className="relative min-h-[140px] md:min-h-full">
-        <Image
-          src={carImageFor(data.title, data.quote) || "/home-image/right-cutout.webp"}
-          alt=""
-          fill
-          className="object-contain object-center p-3 md:p-4"
-          sizes="(min-width: 768px) 35vw, 100vw"
-        />
-      </div>
+      {data.image || carImageFor(data.title, data.quote) ? (
+        <div className="relative min-h-[140px] md:min-h-full">
+          <Image
+            src={data.image || carImageFor(data.title, data.quote)}
+            alt=""
+            fill
+            className="object-contain object-center p-3 md:p-4"
+            sizes="(min-width: 768px) 35vw, 100vw"
+          />
+        </div>
+      ) : null}
     </div>
   );
 }

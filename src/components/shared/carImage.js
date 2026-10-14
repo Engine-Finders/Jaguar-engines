@@ -41,6 +41,9 @@ const GENERATION_ALIAS = {
   "series iii": "series ii",
 };
 
+// Photo views, in the order a section falls back to when a model runs out of unused photos.
+const VIEWS = ["45", "side", "front"];
+
 function normalise(text) {
   return text
     .toLowerCase()
@@ -70,13 +73,11 @@ function generationForYear(model, year) {
 }
 
 /**
- * 45-degree front-view photo for a Jaguar described by free text, e.g.
- * carImageFor("XF", "X250") or carImageFor("Jaguar F-Pace").
- * Picks the exact generation when one is mentioned, else the model's default photo.
- * Returns null when nothing matches, so callers can keep their own fallback.
+ * Photo pool key ("xf|x260", "xe|x760 lci", ...) for a Jaguar described by free text,
+ * or null when the text names no Jaguar we have photos of.
  */
-export function carImageFor(...hints) {
-  let text = normalise(hints.filter(Boolean).join(" ").trim());
+export function carKeyFor(...hints) {
+  let text = normalise(hints.filter((hint) => typeof hint === "string" && hint).join(" ").trim());
   if (!text) return null;
   if (!findModel(text) && !GENERATION_PATTERN.test(text)) {
     text = ENGINE_CAR.find(([pattern]) => pattern.test(text))?.[1] || text;
@@ -90,13 +91,46 @@ export function carImageFor(...hints) {
   const year = text.match(YEAR_PATTERN)?.[1];
   if (!generation && year) generation = generationForYear(model, Number(year));
 
-  const { generations, generationStart } = carImages;
+  const { pools, generationStart } = carImages;
   const faceliftKey = `${model}|${generation} lci`;
   const isFacelift =
     /\blci\b/.test(text) || (year && generationStart[faceliftKey] && Number(year) >= generationStart[faceliftKey]);
-  const facelift = generation && isFacelift && generations[faceliftKey];
-  const file = facelift || (generation && generations[`${model}|${generation}`]) || carImages.models[model];
-  return file ? `${carImages.basePath}${file}` : null;
+  if (generation && isFacelift && pools[faceliftKey]) return faceliftKey;
+  if (generation && pools[`${model}|${generation}`]) return `${model}|${generation}`;
+  return `${model}|${carImages.defaultGeneration[model]}`;
+}
+
+function photoPath(file) {
+  return `${carImages.basePath}${file}`;
+}
+
+// Pools are model|generation -> view -> [file, colour]; colours were checked from the pixels.
+const COLOUR = new Map();
+const POOL_FILES = {};
+for (const [key, views] of Object.entries(carImages.pools)) {
+  POOL_FILES[key] = {};
+  for (const [view, entries] of Object.entries(views)) {
+    POOL_FILES[key][view] = entries.map(([file, colour]) => {
+      COLOUR.set(file, colour);
+      return file;
+    });
+  }
+}
+
+function colourOf(file) {
+  return COLOUR.get(file) || "other";
+}
+
+/**
+ * 45-degree front-view photo for a Jaguar described by free text, e.g.
+ * carImageFor("XF", "X250") or carImageFor("Jaguar F-Pace").
+ * Picks the exact generation when one is mentioned, else the model's default photo.
+ * Returns null when nothing matches, so callers can keep their own fallback.
+ */
+export function carImageFor(...hints) {
+  const key = carKeyFor(...hints);
+  const file = key && POOL_FILES[key]?.["45"]?.[0];
+  return file ? photoPath(file) : null;
 }
 
 /**
@@ -104,4 +138,128 @@ export function carImageFor(...hints) {
  */
 export function carModelFor(...hints) {
   return findModel(normalise(hints.filter(Boolean).join(" ")));
+}
+
+/**
+ * Hero overlay (model photo or generation line-up, transparent background) for a model key,
+ * plus the photos it is made of so the rest of the page can avoid showing them again.
+ */
+export function heroCarFor(model) {
+  return carImages.heroes[model] || null;
+}
+
+/** Jaguar's own hero background (no car) for the current theme. */
+export function heroBackground(isDark) {
+  return isDark ? carImages.background.dark : carImages.background.light;
+}
+
+// Engine names as written in copy -> engine photo key (cut out, transparent).
+// First matching rule wins, so the most specific codes come first (P300e before P300,
+// 508PN/508PS before AJ133, AJD/276DT before the generic "Ingenium").
+const ENGINE_PATTERNS = [
+  [/\bp300e\b|\bphev\b|\baj150p?\b|plug-in hybrid/, "aj150p-hybrid"],
+  [/\b508pn\b/, "508pn"],
+  [/\b508ps\b(?!.*\bpre[\s\u2011-]?2013\b)|\bxjr ?575\b|\baj133 gen ?2\b/, "aj133-gen-2"],
+  [/\b508ps\b/, "aj133"],
+  [/\baj133\b/, "aj133"],
+  [/\baj126\b|\b306ps\b/, "aj126"],
+  [/\bajd-?v6\b|\bajd\b|\b306dt\b|\b276dt\b|\btdv6\b|\btdvi\b|\bajtdv6\b/, "ajd-v6"],
+  [/\baj20d6\b|\baj300d?\b/, "aj300d"],
+  [/\b224dt\b/, "224dt"],
+  [/\baj200p\b|\bpt204\b|\b204pt\b|\baj20p4\b|\bingenium petrol\b|\bp(?:200|250|300)\b/, "ingenium-petrol"],
+  [/\baj200d\b|\b204dtd\b|\b204dth\b|\baj20d4\b|\bd(?:150|165|180|200|240)\b|\bingenium\b/, "ingenium-diesel"],
+  [/\baj30\b/, "aj30"],
+  [/\baj25\b/, "aj25"],
+  [/\baj2[67]s?\b/, "aj27"],
+  [/\baj-?v8\b|\baj3[34]s?\b|\baj8ft\b/, "aj-v8"],
+  [/\baj-?v6\b/, "aj-v6"],
+];
+
+/** Photo of the engine named in free text ("AJ126 V6", "Ingenium", "AJD-V6"), or null. */
+export function engineImageFor(text) {
+  const clean = normalise(String(text || "").replace(/<[^>]*>/g, " "));
+  const key = ENGINE_PATTERNS.find(([pattern]) => pattern.test(clean))?.[1];
+  return key ? carImages.engines[key] : null;
+}
+
+/** The engine photo that best represents a model (e.g. the E-Pace's AJ200P Ingenium petrol). */
+export function modelEngineImage(model) {
+  const key = carImages.modelEngine[model];
+  return key ? carImages.engines[key] : null;
+}
+
+/**
+ * Card photo for the I-Pace, which has no photo of its own: a black Jaguar SUV with a blank plate.
+ */
+export function iPaceStandInImage() {
+  return carImages.iPaceStandIn;
+}
+
+/** Land Rover photo for brand-vs-brand comparisons. */
+export function landRoverImage() {
+  return carImages.landRover;
+}
+
+/**
+ * Hands out car photos for one page so no photo is shown twice. Each section asks for all
+ * its photos at once and gets one view (45-degree, side, front) for the whole section, so
+ * rows stay consistent; colours rotate through black, grey, white, silver and dark blue.
+ * When a model has fewer photos than the page needs, the least-used photo is repeated.
+ */
+export function createCarPicker(alreadyUsed = []) {
+  const used = new Map();
+  const colourCount = new Map();
+
+  const take = (file) => {
+    used.set(file, (used.get(file) || 0) + 1);
+    const colour = colourOf(file);
+    colourCount.set(colour, (colourCount.get(colour) || 0) + 1);
+    return photoPath(file);
+  };
+  alreadyUsed.forEach(take);
+
+  // Of the unused photos, the one whose colour the page has shown least so far.
+  const leastShownColour = (files) =>
+    files.reduce((best, file) =>
+      (colourCount.get(colourOf(file)) || 0) < (colourCount.get(colourOf(best)) || 0) ? file : best
+    );
+
+  return function pickSection(hintList, { view = "45" } = {}) {
+    const keys = hintList.map((hints) => carKeyFor(...[].concat(hints)));
+    const need = {};
+    keys.forEach((key) => {
+      if (key) need[key] = (need[key] || 0) + 1;
+    });
+
+    const order = [view, ...VIEWS.filter((v) => v !== view)];
+    const free = (key, v) => (POOL_FILES[key]?.[v] || []).filter((file) => !used.has(file));
+    const sectionView =
+      order.find((v) => Object.entries(need).every(([key, count]) => free(key, v).length >= count)) || view;
+
+    // Rows of one section get different colours first; across the page, the least-shown colour wins.
+    const sectionColours = new Set();
+    const takeForSection = (files) => {
+      let fresh = files.filter((file) => !sectionColours.has(colourOf(file)));
+      if (!fresh.length) {
+        // Every colour this model comes in is already in the section: start the rotation again.
+        sectionColours.clear();
+        fresh = files;
+      }
+      const file = leastShownColour(fresh);
+      sectionColours.add(colourOf(file));
+      return take(file);
+    };
+
+    return keys.map((key) => {
+      if (!key) return null;
+      for (const v of [sectionView, ...order.filter((o) => o !== sectionView)]) {
+        const files = free(key, v);
+        if (files.length) return takeForSection(files);
+      }
+      const pool = POOL_FILES[key]?.[sectionView] || POOL_FILES[key]?.["45"] || [];
+      if (!pool.length) return null;
+      const leastUsed = [...pool].sort((a, b) => (used.get(a) || 0) - (used.get(b) || 0))[0];
+      return take(leastUsed);
+    });
+  };
 }

@@ -8,7 +8,6 @@ import HomeIcon from "@/components/home/homeIcons";
 import { carImageFor } from "@/components/shared/carImage";
 import { sectionDescription, sectionH2, sectionTableText, tableHeaderClass } from "@/components/models/sectionTypography";
 
-const RIGHT_IMAGE = "/home-image/right-cutout.webp";
 
 const f30Fallback = {
   title: "F30/F31 - 3 Series (2012–2019)",
@@ -149,7 +148,10 @@ function splitFiguresNote(note = "", economicsBox) {
       ? cleanText(economicsBox.text || "")
       : cleanText(typeof economicsBox === "string" ? economicsBox : "");
 
-  const ruleSplit = clean.split(/(?=\s*The\s+[\wÀ-ÿ\-]+\s+rule\b)/i);
+  // Split once, right before "The <Model> rule"; a leading \s* in the lookahead matched twice
+  // (before and after the space) and lost the rule text.
+  const ruleIndex = clean.search(/\bThe\s+[\wÀ-ÿ\-\u2011]+\s+rule\b/i);
+  const ruleSplit = ruleIndex > -1 ? [clean.slice(0, ruleIndex), clean.slice(ruleIndex)] : [clean];
   const labourPart = (ruleSplit[0] || clean).replace(/^Labour estimate:\s*/i, "").trim();
   const ruleRaw = (ruleSplit[1] || "").trim();
   const ruleBody = ruleRaw.replace(/^The\s+.+?\s+rule\s*[-—:]\s*/i, "").trim() || econText;
@@ -267,8 +269,9 @@ function DesktopGenerationRow({ table, isDark }) {
       <div className="border border-r-0 border-[var(--color-border)] bg-[var(--color-surface-raised)] p-3.5 md:rounded-l-md md:p-4">
         <h3 className="text-[17px] font-bold leading-[1.08] text-[var(--color-text)] md:text-[19px]">{label}</h3>
         <p className={`mt-1 ${sectionTableText}`}>{years}</p>
+        {table.subtitle ? <p className={`${sectionTableText} text-[var(--color-text-muted)]`}>({cleanText(table.subtitle)})</p> : null}
         <div className="relative mt-2 h-[130px] overflow-hidden rounded-md md:h-[160px]">
-          <Image src={table.image || RIGHT_IMAGE} alt="" fill className="object-contain object-center" sizes="260px" />
+          {table.image ? <Image src={table.image} alt="" fill className="object-contain object-center" sizes="260px" /> : null}
         </div>
       </div>
       <CostTable table={table} isDark={isDark} />
@@ -322,7 +325,7 @@ function MobileTabs({ tables, isDark }) {
           ) : null}
         </h3>
         <div className="relative mt-3 h-[230px] overflow-hidden rounded-md">
-          <Image src={activeTable.image || RIGHT_IMAGE} alt="" fill className="object-contain object-center" sizes="100vw" />
+          {activeTable.image ? <Image src={activeTable.image} alt="" fill className="object-contain object-center" sizes="100vw" /> : null}
         </div>
         <div className="mt-4 overflow-x-auto">
           <div className="min-w-[720px]">
@@ -382,7 +385,7 @@ function Notes({ parts, isDark, ruleTitle }) {
 export default function ReplacementCosts({ data }) {
   const { theme } = useTheme();
   const tables = useMemo(
-    () => normalizeTables(data?.tables || []).map((table) => ({ ...table, image: carImageFor(table.title, data?.h2) })),
+    () => normalizeTables(data?.tables || []).map((table) => ({ ...table, image: table.image || carImageFor(table.title, data?.h2) })),
     [data]
   );
   if (!data) return null;

@@ -27,7 +27,7 @@ function VariantPanel({ title, icon, variants, tone, isDark }) {
         </p>
         <ul className="mt-2 grid grid-cols-2 gap-x-3 gap-y-1.5">
           {variants.map((variant, index) => (
-            <li key={variant.url || variant.name || index} className="min-w-0">
+            <li key={`${variant.name || variant.url}-${index}`} className="min-w-0">
               <Link
                 href={variant.url || "#"}
                 className={`block text-[0.88rem] font-bold leading-snug transition-colors duration-200 hover:text-[var(--color-primary)] focus-visible:text-[var(--color-primary)] focus-visible:outline-none ${textClass}`}

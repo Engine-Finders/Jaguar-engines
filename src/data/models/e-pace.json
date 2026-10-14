@@ -328,8 +328,14 @@
     "cards": [
       {
         "title": "X540 (2017–Present)",
-        "badge": "",
-        "meta": "🔥 Most Enquired - 140 enquiries (2025) [JAG-VERIFIED]",
+        "label": "E-Pace",
+        "subtitle": "2017–Present",
+        "engines": [
+          "AJ200P, AJ200D",
+          "P300e PHEV"
+        ],
+        "badge": "🔥 Most Enquired - 140 enquiries (2025) [JAG-VERIFIED]",
+        "meta": "",
         "rating": "★★★★☆",
         "verdict": "The E-Pace is Jaguar's compact SUV entry point, and it's the one Jaguar where the petrol Ingenium (AJ200P/204PT) genuinely outperforms its diesel sibling in reliability data - no caveats, just routine water pump replacement. Post-2020 cars get the revised tensioner design on the diesel, making the whole range safe. The P300e is a niche play with 148 enquiries across the JLR range, but E-Pace-specific data is thin - we'd recommend the petrol for most buyers.",
         "cta": {
@@ -338,21 +344,132 @@
         }
       },
       {
-        "title": "Comparison sub-block (bolded row-header style):",
+        "title": "X540 (2017–2019)",
+        "label": "E-Pace",
+        "subtitle": "2017–2019 (pre-facelift)",
+        "engines": [
+          "AJ200D",
+          "AJ200P"
+        ],
         "badge": "",
-        "meta": "Pre-2020 vs post-2020: The 2020 facelift brought more than cosmetic changes - pre-2020 Ingenium diesel (AJ200D/204DTD) units carry the documented tensioner wear risk that was revised from 2019 onward. Post-2020 cars with the revised diesel are a safer bet. The petrol (AJ200P/204PT) was less affected across both periods, making it the default recommendation unless you genuinely need diesel economy.",
-        "rating": "",
+        "meta": "",
+        "rating": "★★★☆☆",
         "verdict": "",
         "cta": {
-          "label": "",
-          "href": "/compare"
+          "label": "Explore pre-2020",
+          "href": "/e-pace/x540"
+        }
+      },
+      {
+        "title": "X540 (2020–Present)",
+        "label": "E-Pace",
+        "subtitle": "2020–Present (post-facelift)",
+        "engines": [
+          "AJ200D (revised)",
+          "AJ200P"
+        ],
+        "badge": "",
+        "meta": "",
+        "rating": "★★★★☆",
+        "verdict": "",
+        "cta": {
+          "label": "Explore post-2020",
+          "href": "/e-pace/x540"
+        }
+      },
+      {
+        "title": "X540 (2020–Present)",
+        "label": "E-Pace",
+        "subtitle": "2020–Present (post-facelift)",
+        "engines": [
+          "P300e PHEV"
+        ],
+        "badge": "",
+        "meta": "",
+        "rating": "★★★☆☆",
+        "verdict": "",
+        "cta": {
+          "label": "Explore P300e",
+          "href": "/e-pace/p300e"
+        }
+      },
+      {
+        "title": "X540 All Engines",
+        "label": "E-Pace",
+        "subtitle": "All Engines (Overview)",
+        "engines": [],
+        "badge": "",
+        "meta": "",
+        "rating": "★★★★☆",
+        "verdict": "",
+        "cta": {
+          "label": "Explore all",
+          "href": "/e-pace/x540"
         }
       }
     ],
     "rangeTable": {
-      "title": "",
-      "columns": [],
-      "rows": []
+      "title": "Pre-2020 vs post-2020",
+      "intro": "The 2020 facelift brought more than cosmetic changes - pre-2020 Ingenium diesel (AJ200D/204DTD) units carry the documented tensioner wear risk that was revised from 2019 onward. Post-2020 cars with the revised diesel are a safer bet. The petrol (AJ200P/204PT) was less affected across both periods, making it the default recommendation unless you genuinely need diesel economy.",
+      "columns": [
+        "Aspect",
+        "Pre-2020 (2017–2019)",
+        "Post-2020 (2020–Present)"
+      ],
+      "rows": [
+        {
+          "label": "Diesel Engines",
+          "cells": [
+            {
+              "text": "AJ200D / 204DTD (tensioner wear risk)",
+              "tone": "risk"
+            },
+            {
+              "text": "Revised design from 2019 onward (significantly reduced risk)",
+              "tone": "safe"
+            }
+          ]
+        },
+        {
+          "label": "Petrol Engines",
+          "cells": [
+            {
+              "text": "AJ200P / 204PT (low risk)",
+              "tone": "safe"
+            },
+            {
+              "text": "AJ200P / 204PT (low risk)",
+              "tone": "safe"
+            }
+          ]
+        },
+        {
+          "label": "Hybrid (PHEV)",
+          "cells": [
+            {
+              "text": "P300e available"
+            },
+            {
+              "text": "P300e continued"
+            }
+          ]
+        },
+        {
+          "label": "Overall Recommendation",
+          "cells": [
+            {
+              "text": "Choose petrol where possible"
+            },
+            {
+              "text": "All engines a safer bet post-2020"
+            }
+          ]
+        }
+      ],
+      "position": {
+        "title": "Our position",
+        "text": "The E-Pace we recommend for daily ownership is the petrol AJ200P / 204PT — simple, reliable, and proven in our data."
+      }
     },
     "comparisonLink": {
       "label": "Read the full comparison: Pre-Facelift vs Facelift E-Pace →",
@@ -596,7 +713,8 @@
     "subHeadline": "Real UK pricing for used, reconditioned and rebuilt E-Pace engines - supply-only, with labour guidance. All figures are independent specialist rates.",
     "tables": [
       {
-        "title": "",
+        "title": "E-Pace X540 (2017–Present)",
+        "subtitle": "All Engines",
         "columns": [
           "Variant",
           "Engine Code",
@@ -605,10 +723,76 @@
           "Rebuilt (Supply)",
           "Labour Hours"
         ],
-        "rows": []
+        "rows": [
+          {
+            "model": "D150 / D165 (2.0 diesel)",
+            "engineCode": "204DTD / AJ20D4",
+            "usedSupply": "£1,800–£3,200",
+            "reconditionedSupply": "£3,500–£5,500",
+            "rebuiltSupply": "£4,500–£7,000",
+            "labourHours": "12–16 hrs"
+          },
+          {
+            "model": "D180 (2.0 diesel)",
+            "engineCode": "204DTD / AJ20D4",
+            "usedSupply": "£2,000–£3,500",
+            "reconditionedSupply": "£3,800–£6,000",
+            "rebuiltSupply": "£5,000–£7,500",
+            "labourHours": "12–16 hrs"
+          },
+          {
+            "model": "D200 (2.0 diesel MHEV)",
+            "engineCode": "204DTD / AJ20D4",
+            "usedSupply": "£2,200–£4,000",
+            "reconditionedSupply": "£4,000–£6,500",
+            "rebuiltSupply": "£5,500–£8,000",
+            "labourHours": "12–16 hrs"
+          },
+          {
+            "model": "P160 (1.5 MHEV)",
+            "engineCode": "AJ150",
+            "usedSupply": "£1,500–£2,800",
+            "reconditionedSupply": "£3,000–£5,000",
+            "rebuiltSupply": "£4,000–£6,500",
+            "labourHours": "10–14 hrs"
+          },
+          {
+            "model": "P200 (2.0 MHEV)",
+            "engineCode": "PT204 / AJ20P4",
+            "usedSupply": "£1,600–£3,000",
+            "reconditionedSupply": "£3,200–£5,500",
+            "rebuiltSupply": "£4,500–£7,000",
+            "labourHours": "10–14 hrs"
+          },
+          {
+            "model": "P250 (2.0 MHEV)",
+            "engineCode": "PT204 / AJ20P4",
+            "usedSupply": "£1,800–£3,200",
+            "reconditionedSupply": "£3,500–£6,000",
+            "rebuiltSupply": "£5,000–£7,500",
+            "labourHours": "10–14 hrs"
+          },
+          {
+            "model": "P300 (2.0 twin-turbo)",
+            "engineCode": "PT204 / AJ20P4",
+            "usedSupply": "£2,500–£4,500",
+            "reconditionedSupply": "£4,500–£7,500",
+            "rebuiltSupply": "£6,000–£9,000",
+            "labourHours": "12–16 hrs"
+          },
+          {
+            "model": "P300e (1.5 PHEV)",
+            "engineCode": "AJ150 + electric motor",
+            "usedSupply": "£3,500–£6,000",
+            "reconditionedSupply": "£6,000–£9,500",
+            "rebuiltSupply": "£8,000–£12,000",
+            "labourHours": "14–18 hrs"
+          }
+        ]
       },
       {
         "title": "2.0 Diesel (pre-2020)",
+        "subtitle": "2017–2020",
         "columns": [
           "Variant",
           "Engine Code",
@@ -617,11 +801,66 @@
           "Rebuilt (Supply)",
           "Labour Hours"
         ],
-        "rows": []
+        "rows": [
+          {
+            "model": "D150 / D165 (2.0 diesel)",
+            "engineCode": "204DTD / AJ20D4",
+            "usedSupply": "£1,800–£3,200",
+            "reconditionedSupply": "£3,500–£5,500",
+            "rebuiltSupply": "£4,500–£7,000",
+            "labourHours": "12–16 hrs"
+          },
+          {
+            "model": "D180 (2.0 diesel)",
+            "engineCode": "204DTD / AJ20D4",
+            "usedSupply": "£2,000–£3,500",
+            "reconditionedSupply": "£3,800–£6,000",
+            "rebuiltSupply": "£5,000–£7,500",
+            "labourHours": "12–16 hrs"
+          }
+        ]
+      },
+      {
+        "title": "2.0 Petrol",
+        "subtitle": "2017–Present",
+        "columns": [
+          "Variant",
+          "Engine Code",
+          "Used (Supply)",
+          "Reconditioned (Supply)",
+          "Rebuilt (Supply)",
+          "Labour Hours"
+        ],
+        "rows": [
+          {
+            "model": "P200 (2.0 MHEV)",
+            "engineCode": "PT204 / AJ20P4",
+            "usedSupply": "£1,600–£3,000",
+            "reconditionedSupply": "£3,200–£5,500",
+            "rebuiltSupply": "£4,500–£7,000",
+            "labourHours": "10–14 hrs"
+          },
+          {
+            "model": "P250 (2.0 MHEV)",
+            "engineCode": "PT204 / AJ20P4",
+            "usedSupply": "£1,800–£3,200",
+            "reconditionedSupply": "£3,500–£6,000",
+            "rebuiltSupply": "£5,000–£7,500",
+            "labourHours": "10–14 hrs"
+          },
+          {
+            "model": "P300 (2.0 twin-turbo)",
+            "engineCode": "PT204 / AJ20P4",
+            "usedSupply": "£2,500–£4,500",
+            "reconditionedSupply": "£4,500–£7,500",
+            "rebuiltSupply": "£6,000–£9,000",
+            "labourHours": "12–16 hrs"
+          }
+        ]
       }
     ],
-    "figuresNote": "Labour estimate: Fitting an E-Pace engine typically takes 10–14 hours for the standard 2.0-litre Ingenium units at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE]. The P300e PHEV adds extra complexity, pushing labour closer to 12–16 hours. The E-Pace rule - gateway economics: With the E-Pace typically valued at £12,000–£30,000 [THIRD-PARTY], even the highest reconditioned cost (£5,800) sits at just 19–48% of the vehicle's value - well below our 60% scrap threshold for Jaguar. That means replacement is viable across nearly every example, making the E-Pace one of the safest used Jaguars to own. The petrol AJ200P is the most cost-effective to replace; the diesel AJ200D costs slightly more but remains comfortably within value. If you're looking at a pre-2020 diesel with a suspect tensioner, factor in an inspection before committing - but",
-    "labourEstimate": "Fitting an E-Pace engine typically takes 10–14 hours for the standard 2.0-litre Ingenium units at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE]. The P300e PHEV adds extra complexity, pushing labour closer to 12–16 hours. The E-Pace rule - gateway economics: With the E-Pace typically valued at £12,000–£30,000 [THIRD-PARTY], even the highest reconditioned cost (£5,800) sits at just 19–48% of the vehicle's value - well below our 60% scrap threshold for Jaguar. That means replacement is viable across nearly every example, making the E-Pace one of the safest used Jaguars to own. The petrol AJ200P is the most cost-effective to replace; the diesel AJ200D costs slightly more but remains comfortably within value. If you're looking at a pre-2020 diesel with a suspect tensioner, factor in an inspection before committing - but",
+    "figuresNote": "Labour estimate: Fitting an E-Pace engine typically takes 10–14 hours for the standard 2.0-litre Ingenium units at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE]. The P300e PHEV adds extra complexity, pushing labour closer to 12–16 hours. The E-Pace rule - gateway economics: With the E-Pace typically valued at £12,000–£30,000 [THIRD-PARTY], even the highest reconditioned cost (£5,800) sits at just 19–48% of the vehicle's value - well below our 60% scrap threshold for Jaguar. That means replacement is viable across nearly every example, making the E-Pace one of the safest used Jaguars to own. The petrol AJ200P is the most cost-effective to replace; the diesel AJ200D costs slightly more but remains comfortably within value. If you're looking at a pre-2020 diesel with a suspect tensioner, factor in an inspection before committing - but replacement is usually the right call.",
+    "labourEstimate": "Fitting an E-Pace engine typically takes 10–14 hours for the standard 2.0-litre Ingenium units at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE]. The P300e PHEV adds extra complexity, pushing labour closer to 12–16 hours. The E-Pace rule - gateway economics: With the E-Pace typically valued at £12,000–£30,000 [THIRD-PARTY], even the highest reconditioned cost (£5,800) sits at just 19–48% of the vehicle's value - well below our 60% scrap threshold for Jaguar. That means replacement is viable across nearly every example, making the E-Pace one of the safest used Jaguars to own. The petrol AJ200P is the most cost-effective to replace; the diesel AJ200D costs slightly more but remains comfortably within value. If you're looking at a pre-2020 diesel with a suspect tensioner, factor in an inspection before committing - but replacement is usually the right call.",
     "economicsBox": {
       "title": "",
       "text": ""
