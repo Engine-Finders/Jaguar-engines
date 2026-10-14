@@ -344,17 +344,6 @@
           "label": "Explore X152 (2019–2024) →",
           "href": "/engine/xk-straight-six"
         }
-      },
-      {
-        "title": "Comparison: The V6 vs Straight-Six Decision",
-        "badge": "",
-        "meta": "AJ126 3.0 V6 SC (2013–2019)",
-        "rating": "",
-        "verdict": "",
-        "cta": {
-          "label": "",
-          "href": "/compare"
-        }
       }
     ],
     "rangeTable": {
@@ -364,6 +353,11 @@
     },
     "comparisonLink": {
       "label": "Read the full comparison: F-Type V6 vs Straight-Six →",
+      "href": "/compare"
+    },
+    "comparisonNote": {
+      "title": "The V6 vs Straight-Six Decision",
+      "text": "AJ126 3.0 V6 SC (2013–2019)",
       "href": "/compare"
     }
   },

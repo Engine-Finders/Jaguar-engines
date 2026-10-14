@@ -114,7 +114,7 @@ export default function RepairBuyOrReplace({ data }) {
           text flows below it in normal page flow. */}
       <div className="relative w-full overflow-hidden md:hidden">
         <div className="relative h-[220px] w-full bg-[var(--color-page)]">
-          <Image src={imageMobile} alt="BMW 320d" fill className="object-contain" sizes="100vw" priority />
+          <Image src={imageMobile} alt="BMW 320d" fill className="object-contain" sizes="100vw" />
           {isDark ? (
             <div className="absolute inset-x-0 bottom-0 h-16 bg-[linear-gradient(0deg,rgba(0,0,0,0.85)_0%,transparent_100%)]" />
           ) : (

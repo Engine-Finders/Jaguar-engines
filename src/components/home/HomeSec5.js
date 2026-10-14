@@ -15,12 +15,17 @@ function ArrowIcon({ className = "h-4 w-4" }) {
   );
 }
 
-const LEFT_IMAGE = "/home-image/left.webp";
-const RIGHT_IMAGE = "/home-image/right-cutout.webp";
+// The page assigns each side its photo: engines show the engine, "Land Rover" a Land Rover, and
+// Jaguars a different colour on each side. carImageFor is only a fallback.
+function sideImage(side) {
+  return side.photo || carImageFor(side.label);
+}
 
 function ComparisonCard({ item, isDark }) {
   const left = item.left || {};
   const right = item.right || {};
+  const leftSrc = sideImage(left);
+  const rightSrc = sideImage(right);
 
   return (
     <article
@@ -75,22 +80,26 @@ function ComparisonCard({ item, isDark }) {
 
         <div className="relative mt-2 grid grid-cols-2 md:mt-2.5">
           <div className="relative h-[80px] pr-2.5 md:h-[96px] md:pr-3">
-            <Image
-              src={carImageFor(left.label) || LEFT_IMAGE}
-              alt={left.image?.alt || left.label || ""}
-              fill
-              className="object-contain object-center"
-              sizes="(max-width: 768px) 42vw, 180px"
-            />
+            {leftSrc ? (
+              <Image
+                src={leftSrc}
+                alt={left.image?.alt || left.label || ""}
+                fill
+                className="object-contain object-center"
+                sizes="(max-width: 768px) 42vw, 180px"
+              />
+            ) : null}
           </div>
           <div className="relative h-[80px] pl-2.5 md:h-[96px] md:pl-3">
-            <Image
-              src={carImageFor(right.label) || RIGHT_IMAGE}
-              alt={right.image?.alt || right.label || ""}
-              fill
-              className="object-contain object-center"
-              sizes="(max-width: 768px) 42vw, 180px"
-            />
+            {rightSrc ? (
+              <Image
+                src={rightSrc}
+                alt={right.image?.alt || right.label || ""}
+                fill
+                className="object-contain object-center"
+                sizes="(max-width: 768px) 42vw, 180px"
+              />
+            ) : null}
           </div>
         </div>
       </div>

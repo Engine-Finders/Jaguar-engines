@@ -5,6 +5,7 @@ import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
+import { engineImageFor } from "@/components/shared/carImage";
 import { sectionH2, sectionTableText } from "@/components/models/sectionTypography";
 
 const HEADER_IMAGE = "/home-image/sec2-bg.webp";
@@ -75,10 +76,17 @@ function SeverityBadge({ severity }) {
   );
 }
 
-function ProblemImage({ index, isDark }) {
+// A problem that names its engine (e.g. "AJ133 Timing Chain Tensioner Wear") shows that engine.
+function ProblemImage({ problem, index, isDark }) {
+  const engine = engineImageFor(problem.issue);
+
   return (
     <div className="relative h-full min-h-[150px] overflow-hidden bg-[var(--color-page-soft)] md:min-h-[210px]">
-      <Image src={CARD_IMAGE} alt="" fill className="object-cover object-center" sizes="280px" />
+      {engine ? (
+        <Image src={engine} alt="" fill className="object-contain object-center p-3 md:p-4" sizes="280px" />
+      ) : (
+        <Image src={CARD_IMAGE} alt="" fill className="object-cover object-center" sizes="280px" />
+      )}
       <span
         className={`absolute left-3 top-3 flex h-9 min-w-9 items-center justify-center rounded-md px-2 text-[14px] font-bold leading-none shadow-sm md:h-10 md:text-[15px] ${
           isDark ? "bg-[var(--color-chrome)] text-[var(--color-page)]" : "bg-black text-white"
@@ -96,7 +104,7 @@ function ProblemCard({ problem, index, isDark }) {
 
   return (
     <article className="grid grid-cols-[0.85fr_1.55fr] overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[0_8px_22px_var(--color-shadow)] md:grid-cols-[0.9fr_1.3fr]">
-      <ProblemImage index={index} isDark={isDark} />
+      <ProblemImage problem={problem} index={index} isDark={isDark} />
       <div className="flex min-w-0 flex-col p-2.5 md:p-4">
         <div className="flex items-start justify-between gap-4">
           <h3
@@ -143,8 +151,8 @@ function UrgencyKey({ items, isDark }) {
               key={label}
               className="min-w-0 md:flex md:items-start md:gap-3 md:border-l md:pl-4 md:first:border-l-0 md:first:pl-0"
             >
-              <span className="mx-auto flex h-8 w-8 shrink-0 items-center justify-center md:mx-0 md:h-9 md:w-9">
-                <HomeIcon name={style.icon} isDark={isDark} className="h-7 w-7 object-contain md:h-8 md:w-8" />
+              <span className="mx-auto flex h-11 w-11 shrink-0 items-center justify-center md:mx-0 md:h-12 md:w-12">
+                <HomeIcon name={style.icon} isDark={isDark} className="h-11 w-11 object-contain md:h-14 md:w-14" />
               </span>
               <p className="mt-1.5 text-center text-[11px] leading-[1.3] text-[var(--color-text-muted)] md:mt-0 md:text-left md:text-[15px] md:leading-[1.35]">
                 <strong className="block text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: label }} />

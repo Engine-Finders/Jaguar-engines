@@ -360,17 +360,6 @@
           "label": "Explore X150 →",
           "href": "https://jaguarengines.uk/xk/x150"
         }
-      },
-      {
-        "title": "The 2009 Facelift - The Dividing Line",
-        "badge": "",
-        "meta": "Pre-2009 (4.2-litre): The original X150 launched in 2006 with the 4.2 AJ34 V8 - a proven unit, but the 5.0 that replaced it is objectively better in every way.",
-        "rating": "",
-        "verdict": "",
-        "cta": {
-          "label": "",
-          "href": "/xk/x100"
-        }
       }
     ],
     "rangeTable": {
@@ -381,6 +370,11 @@
     "comparisonLink": {
       "label": "Read the full comparison: X100 vs X150 →",
       "href": "/compare/xk-x100-vs-x150"
+    },
+    "comparisonNote": {
+      "title": "The 2009 Facelift - The Dividing Line",
+      "text": "Pre-2009 (4.2-litre): The original X150 launched in 2006 with the 4.2 AJ34 V8 - a proven unit, but the 5.0 that replaced it is objectively better in every way.",
+      "href": "/xk/x100"
     }
   },
   "engineDatabase": {

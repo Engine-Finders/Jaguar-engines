@@ -321,17 +321,6 @@
           "label": "Explore XE X760 →",
           "href": "https://jaguarengines.uk/xe/x760"
         }
-      },
-      {
-        "title": "The 2019 Line - The Only Line That Matters",
-        "badge": "",
-        "meta": "Before 2019",
-        "rating": "",
-        "verdict": "Safe buy; maintain 6k oil intervals",
-        "cta": {
-          "label": "",
-          "href": "/xe"
-        }
       }
     ],
     "rangeTable": {
@@ -341,6 +330,12 @@
     },
     "comparisonLink": {
       "label": "",
+      "href": "/xe"
+    },
+    "comparisonNote": {
+      "title": "The 2019 Line - The Only Line That Matters",
+      "text": "Before 2019",
+      "verdict": "Safe buy; maintain 6k oil intervals",
       "href": "/xe"
     }
   },

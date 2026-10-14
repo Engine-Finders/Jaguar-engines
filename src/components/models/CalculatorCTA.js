@@ -53,27 +53,27 @@ function introParts(intro = "") {
   };
 }
 
-function CircleIcon({ name, isDark, large = false, compact = false }) {
+function CircleIcon({ name, isDark, large = false, compact = false, className = "" }) {
   const circleClass = large
     ? "h-[4.75rem] w-[4.75rem] md:h-[5.5rem] md:w-[5.5rem]"
     : compact
-      ? "h-8 w-8 md:h-9 md:w-9"
+      ? "h-9 w-9 md:h-10 md:w-10"
       : "h-12 w-12 md:h-14 md:w-14";
 
   return (
     <span
       className={`flex shrink-0 items-center justify-center rounded-full ${
         isDark ? "bg-white/10" : "bg-[#ececeb]"
-      } ${circleClass}`}
+      } ${circleClass} ${className}`}
     >
       <HomeIcon
         name={name}
         isDark={isDark}
         className={
           large
-            ? "h-16 w-16 md:h-20 md:w-20"
+            ? "h-[4.25rem] w-[4.25rem] md:h-[5.25rem] md:w-[5.25rem]"
             : compact
-              ? "h-6 w-6 md:h-7 md:w-7"
+              ? "h-9 w-9 md:h-10 md:w-10"
               : ICON_LG
         }
       />
@@ -84,8 +84,8 @@ function CircleIcon({ name, isDark, large = false, compact = false }) {
 function Feature({ icon, title, text, isDark }) {
   return (
     <li className="flex min-w-0 items-start gap-2.5 pr-3 last:pr-0 md:gap-3 md:pr-4">
-      <span className="mt-0.5 shrink-0">
-        <HomeIcon name={icon} isDark={isDark} className="h-8 w-8 md:h-9 md:w-9" />
+      <span className="-my-1.5 shrink-0">
+        <HomeIcon name={icon} isDark={isDark} className="h-11 w-11 md:h-12 md:w-12" />
       </span>
       <span className="min-w-0">
         <strong
@@ -133,7 +133,7 @@ function PrimaryPath({ path, modelName, isDark }) {
             Launch the Jaguar diagnostic calculator with <span dangerouslySetInnerHTML={{ __html: modelName }} /> pre-selected.
           </p>
         </div>
-        <CircleIcon name="engine-codes" isDark={isDark} large className="order-1 md:order-2" />
+        <CircleIcon name="engine" isDark={isDark} large className="order-1 md:order-2" />
       </div>
 
       <Link
@@ -141,9 +141,11 @@ function PrimaryPath({ path, modelName, isDark }) {
         className={`mt-3.5 flex min-h-12 items-center justify-between gap-2.5 rounded-md px-3.5 py-2.5 font-bold transition-all duration-200 md:min-h-[3.25rem] bg-black text-white hover:bg-[var(--color-chrome-bright)] hover:text-black ${sectionButton}`}
       >
         <span className="flex min-w-0 items-center gap-2.5">
-          <HomeIcon name="calculator" isDark={true} className="h-8 w-8 shrink-0" />
+          <HomeIcon name="calculator" isDark={true} className="-my-2 h-14 w-14 shrink-0 md:h-16 md:w-16" />
           <span className="min-w-0">
-            <span className="block leading-tight">Launch Jaguar Diagnostic Calculator</span>
+            <span className="block leading-tight">
+              Launch <span dangerouslySetInnerHTML={{ __html: modelName }} /> Diagnostic Calculator
+            </span>
             <span className={`mt-0.5 block text-[12px] font-normal leading-tight md:text-[13px] ${isDark ? "text-white/75" : "text-white/80"}`}>
               <span dangerouslySetInnerHTML={{ __html: modelName }} /> pre-selected
             </span>
@@ -153,9 +155,9 @@ function PrimaryPath({ path, modelName, isDark }) {
       </Link>
 
       <ul className="mt-4 grid grid-cols-3 gap-2.5">
-        <Feature icon="check" title={`${modelName} pre-selected`} text="All generations covered" isDark={isDark} />
+        <Feature icon="good-choice" title={`${modelName} pre-selected`} text="All generations covered" isDark={isDark} />
         <Feature icon="chart" title="Real UK cost data" text="Used, recon & rebuilt" isDark={isDark} />
-        <Feature icon="scale" title="Instant verdict" text="Repair vs replace" isDark={isDark} />
+        <Feature icon="shield" title="Instant verdict" text="Repair vs replace" isDark={isDark} />
       </ul>
     </article>
   );
@@ -186,7 +188,7 @@ function SecondaryPath({ path, isDark }) {
             We&apos;ll identify it first.
           </p>
         </div>
-        <CircleIcon name="bulb" isDark={isDark} large className="order-1 md:order-2" />
+        <CircleIcon name="scope-decision" isDark={isDark} large className="order-1 md:order-2" />
       </div>
 
       <Link
@@ -198,7 +200,7 @@ function SecondaryPath({ path, isDark }) {
         } ${sectionButton}`}
       >
         <span className="flex min-w-0 items-center gap-2.5">
-          <HomeIcon name="diagnosis" isDark={isDark} className="h-8 w-8 shrink-0" />
+          <HomeIcon name="bulb" isDark={isDark} className="-my-2 h-14 w-14 shrink-0 md:h-16 md:w-16" />
           <span className="min-w-0">
             <span className="block leading-tight">Identify My Engine First</span>
             <span className={`mt-0.5 block text-[12px] font-normal leading-tight md:text-[13px] ${isDark ? "text-white/75" : "text-[var(--color-text-muted)]"}`}>
@@ -238,7 +240,7 @@ function SmartDecision({ isDark }) {
           : "border-[#e8e8e6] bg-white shadow-[0_8px_22px_rgba(16,18,16,0.05)]"
       }`}
     >
-      <HomeIcon name="calculator" isDark={isDark} className="h-9 w-9 shrink-0 md:h-11 md:w-11" />
+      <HomeIcon name="calculator" isDark={isDark} className="-my-1 h-12 w-12 shrink-0 md:h-14 md:w-14" />
       <p className={`${sectionBody} md:text-[17px] ${isDark ? "text-white/85" : "text-[var(--color-text)]"}`}>
         <strong className={`font-bold ${isDark ? "text-[var(--color-chrome-bright)]" : "text-black"}`}>
           The smarter way to decide:
@@ -282,7 +284,7 @@ export default function CalculatorCTA({ data }) {
         </div>
 
         <div className="relative mx-auto w-full max-w-8xl px-4 pb-3 pt-5 md:px-6 md:pb-3.5 md:pt-7 lg:px-8">
-          <div className="max-w-[820px]">
+          <div className="max-w-[820px] lg:max-w-[56%]">
             <p
               className={`text-[0.64rem] font-bold uppercase tracking-[0.14em] ${
                 isDark ? "text-white/55" : "text-[var(--color-text-muted)]"
@@ -312,14 +314,22 @@ export default function CalculatorCTA({ data }) {
                 {intro.second ? <p className="mt-1.5" dangerouslySetInnerHTML={{ __html: intro.second }} /> : null}
               </div>
             ) : null}
+            <div className="mt-4">
+              <SmartDecision isDark={isDark} />
+            </div>
           </div>
+          {/* Model photo on the right, as in the reference */}
+          {data.image ? (
+            <div className="pointer-events-none absolute bottom-3 right-6 hidden w-[min(40%,520px)] lg:block xl:right-8">
+              <div className="relative aspect-[3/2] w-full">
+                <Image src={data.image} alt="" fill className="object-contain object-bottom" sizes="520px" />
+              </div>
+            </div>
+          ) : null}
         </div>
       </div>
 
       <div className="mx-auto w-full min-w-0 max-w-8xl px-4 pb-5 pt-2 md:px-6 md:pb-6 md:pt-2.5 lg:px-8">
-        <div className="lg:hidden">
-          <SmartDecision isDark={isDark} />
-        </div>
 
         <div className="mt-4 grid gap-4 lg:grid-cols-2 lg:mt-5">
           <PrimaryPath path={paths[0]} modelName={modelName} isDark={isDark} />
@@ -339,7 +349,7 @@ export default function CalculatorCTA({ data }) {
                 isDark ? "bg-white/10" : "bg-[#ececeb]"
               }`}
             >
-              <HomeIcon name="scope-decision" isDark={isDark} className={ICON_XL} />
+              <HomeIcon name="modern-choice" isDark={isDark} className={ICON_XL} />
             </span>
             <div className="max-w-[700px]">
               <h3 className={`text-[20px] font-bold leading-tight md:text-[22px] ${isDark ? "text-white" : "text-black"}`}>

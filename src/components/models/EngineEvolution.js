@@ -8,7 +8,6 @@ import HomeIcon from "@/components/home/homeIcons";
 import { carImageFor } from "@/components/shared/carImage";
 import { sectionDescription, sectionTableText, tableHeaderClass } from "@/components/models/sectionTypography";
 
-const RIGHT_IMAGE = "/home-image/right-cutout.webp";
 
 function cleanText(text = "") {
   return String(text ?? "")
@@ -155,7 +154,7 @@ function DesktopTable({ eras, columns, isDark }) {
                 ) : null}
               </h3>
               <div className="relative mt-2 h-[72px] w-full overflow-hidden rounded-md md:h-[88px]">
-                <Image src={era.image || RIGHT_IMAGE} alt="" fill className="object-contain object-center" sizes="220px" />
+                {era.image ? <Image src={era.image} alt="" fill className="object-contain object-center" sizes="220px" /> : null}
               </div>
             </div>
             <div
@@ -230,7 +229,7 @@ function MobileAccordion({ eras, isDark }) {
               className="flex w-full items-center gap-4 p-4 text-left"
             >
               <span className="relative h-[64px] w-[96px] shrink-0 overflow-hidden rounded-md">
-                <Image src={era.image || RIGHT_IMAGE} alt="" fill className="object-contain object-center" sizes="96px" />
+                {era.image ? <Image src={era.image} alt="" fill className="object-contain object-center" sizes="96px" /> : null}
               </span>
               <span className="min-w-0 flex-1">
                 <strong className="block text-[18px] leading-tight text-[var(--color-text)]">
@@ -287,7 +286,7 @@ export default function EngineEvolution({ data }) {
 
   const isDark = theme === "dark";
   const title = splitTitle(data.h2);
-  const eras = (data.eras || []).map((era) => ({ ...era, image: carImageFor(era.era, era.years, data.h2) }));
+  const eras = (data.eras || []).map((era) => ({ ...era, image: era.image || carImageFor(era.era, era.years, data.h2) }));
   const sectionBg = isDark ? "bg-[var(--color-page)]" : "bg-[var(--color-page)]";
 
   return (

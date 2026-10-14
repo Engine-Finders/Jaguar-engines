@@ -175,20 +175,22 @@ export default function OwnershipVerdict({ data }) {
               <MStripe />
             </div>
             {/* Car cut-out standing on the section background, with a soft ground shadow */}
-            <div className="relative mx-auto mt-4 aspect-[16/9] w-full max-w-[520px] md:mt-5 lg:mx-0">
-              <div
-                className={`absolute inset-x-[12%] bottom-[5%] h-[12%] rounded-[50%] blur-xl ${
-                  isDark ? "bg-black/70" : "bg-black/25"
-                }`}
-              />
-              <Image
-                src={carImageFor(data.h2) || "/home-image/right-cutout.webp"}
-                alt=""
-                fill
-                className="object-contain object-bottom px-[4%] pb-[6%]"
-                sizes="(min-width: 1024px) 520px, (min-width: 640px) 520px, 92vw"
-              />
-            </div>
+            {data.image || carImageFor(data.h2) ? (
+              <div className="relative mx-auto mt-4 aspect-[16/9] w-full max-w-[520px] md:mt-5 lg:mx-0">
+                <div
+                  className={`absolute inset-x-[12%] bottom-[5%] h-[12%] rounded-[50%] blur-xl ${
+                    isDark ? "bg-black/70" : "bg-black/25"
+                  }`}
+                />
+                <Image
+                  src={data.image || carImageFor(data.h2)}
+                  alt=""
+                  fill
+                  className="object-contain object-bottom px-[4%] pb-[6%]"
+                  sizes="(min-width: 1024px) 520px, (min-width: 640px) 520px, 92vw"
+                />
+              </div>
+            ) : null}
             {data.subHeadline ? (
               <p
                 className={`mt-5 max-w-[470px] text-[var(--color-text-muted)] ${sectionDescription}`}

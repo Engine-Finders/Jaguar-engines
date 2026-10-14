@@ -206,8 +206,7 @@ export default function Overview({ data }) {
             fill
             className="object-cover object-center"
             sizes="100vw"
-            priority
-          />
+                />
           <div
             className={`absolute inset-0 ${
               isDark
@@ -254,8 +253,7 @@ export default function Overview({ data }) {
             fill
             className="object-cover object-[20%_55%]"
             sizes="100vw"
-            priority
-          />
+                />
           {isDark ? (
             <>
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_22%_58%,transparent_0%,transparent_30%,rgba(11,12,12,0.45)_58%,rgba(11,12,12,0.85)_85%)]" />

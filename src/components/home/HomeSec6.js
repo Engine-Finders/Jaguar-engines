@@ -7,7 +7,6 @@ import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
 import { carImageFor } from "@/components/shared/carImage";
 
-const ROW_IMAGE = "/home-image/right-cutout.webp";
 
 const statusConfig = {
   scrap: {
@@ -112,13 +111,15 @@ function MatrixRow({ row, isDark }) {
     >
       <div className="flex min-w-0 items-center gap-2 md:gap-3">
         <div className="relative h-9 w-12 shrink-0 overflow-hidden rounded-sm md:h-11 md:w-16">
-          <Image
-            src={carImageFor(stripTags(row.model)) || ROW_IMAGE}
-            alt={row.image?.alt || stripTags(row.model)}
-            fill
-            className="object-contain object-center"
-            sizes="64px"
-          />
+          {row.photo || carImageFor(stripTags(row.model)) ? (
+            <Image
+              src={row.photo || carImageFor(stripTags(row.model))}
+              alt={row.image?.alt || stripTags(row.model)}
+              fill
+              className="object-contain object-center"
+              sizes="64px"
+            />
+          ) : null}
         </div>
         <p
           className={`min-w-0 text-[0.75rem] font-semibold leading-[1.25] md:text-[0.9rem] ${

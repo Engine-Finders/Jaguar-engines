@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { carModelFor } from "@/components/shared/carImage";
+import { heroBackground } from "@/components/shared/carImage";
 import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
@@ -132,31 +132,38 @@ export default function ModelHero({ data }) {
   const isDark = theme === "dark";
   const meta = splitTagPill(data.tagPill);
   const ctaHref = data.primaryCta?.href && data.primaryCta.href !== "#" ? data.primaryCta.href : "/quote";
-  const heroImageSrc = `/model/hero/${carModelFor(data.tagPill, data.h1) || "jaguar"}.webp`;
+  // Jaguar's own background fills the hero; the model's photo (or its generation line-up) is a
+  // separate overlay kept inside the content width. The I-Pace has no photo, so only the background shows.
+  const backgroundSrc = heroBackground(isDark);
+  const car = data.heroCar;
+  const wideCar = car && car.width / car.height > 2;
 
   return (
     <section className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden bg-[var(--color-page)] text-[var(--color-text)] xl:min-h-[620px]">
-      {/* Desktop: lineup photo behind the copy */}
       <div className="absolute inset-0 hidden xl:block">
-        <Image
-          src={heroImageSrc}
-          alt=""
-          fill
-          className="object-cover object-center"
-          sizes="100vw"
-          priority
-        />
+        <Image src={backgroundSrc} alt="" fill className="object-cover object-center" sizes="100vw" priority />
         <div
           className={`absolute inset-0 ${
             isDark
-              ? "bg-[linear-gradient(100deg,rgba(2,7,17,0.98)_0%,rgba(2,7,17,0.93)_41%,rgba(2,7,17,0.18)_67%,rgba(2,7,17,0.08)_100%)]"
-              : "bg-[linear-gradient(90deg,var(--color-hero-fade)_0%,rgba(255,255,255,0.91)_35%,rgba(255,255,255,0.2)_66%,rgba(255,255,255,0)_100%)]"
+              ? "bg-[linear-gradient(100deg,rgba(2,7,17,0.97)_0%,rgba(2,7,17,0.9)_41%,rgba(2,7,17,0.28)_67%,rgba(2,7,17,0.12)_100%)]"
+              : "bg-[linear-gradient(90deg,var(--color-hero-fade)_0%,rgba(255,255,255,0.91)_35%,rgba(255,255,255,0.3)_66%,rgba(255,255,255,0.06)_100%)]"
           }`}
         />
         <div className="absolute inset-x-0 bottom-0 h-44 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)]" />
       </div>
 
       <div className="relative mx-auto flex w-full max-w-8xl flex-col px-4 pb-5 pt-3 md:px-8 md:pb-7 md:pt-11 xl:min-h-[620px]">
+        {/* Desktop: the car sits on the right, wholly inside the content width, above the stats strip */}
+        {car ? (
+          <div
+            aria-hidden="true"
+            className={`pointer-events-none absolute right-8 hidden xl:block ${
+              wideCar ? "top-[30%] w-[min(46%,640px)]" : "top-[16%] w-[min(38%,520px)]"
+            }`}
+          >
+            <Image src={car.src} alt="" width={car.width} height={car.height} className="h-auto w-full" sizes="640px" priority />
+          </div>
+        ) : null}
         <div className="max-w-[650px]">
           <div
             className={`inline-flex w-fit max-w-full flex-nowrap items-center gap-x-2 overflow-x-auto whitespace-nowrap rounded-md border px-3 py-2 text-[12px] leading-none md:overflow-x-visible md:gap-x-2.5 md:px-4 md:py-2.5 md:text-[14px] ${
@@ -218,19 +225,16 @@ export default function ModelHero({ data }) {
           </div>
         </div>
 
-        {/* Phones, tablets + small laptops: lineup photo as its own band, so it never sits behind the copy */}
+        {/* Phones, tablets + small laptops: background and car as their own band, so they never sit behind the copy */}
         <div className="relative -mx-4 mt-6 aspect-[16/10] max-h-[440px] w-[calc(100%+2rem)] overflow-hidden md:-mx-8 md:w-[calc(100%+4rem)] xl:hidden">
-          <Image
-            src={heroImageSrc}
-            alt=""
-            fill
-            className="object-cover object-[72%_70%]"
-            sizes="100vw"
-            priority
-          />
+          <Image src={backgroundSrc} alt="" fill className="object-cover object-[72%_70%]" sizes="100vw" priority />
           <div className="absolute inset-x-0 top-0 h-14 bg-[linear-gradient(180deg,var(--color-page)_0%,transparent_100%)]" />
           <div className="absolute inset-x-0 bottom-0 h-14 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)]" />
-          {isDark ? <div className="absolute inset-0 bg-[rgba(2,7,17,0.28)]" /> : null}
+          {car ? (
+            <div className={`absolute bottom-[9%] left-1/2 -translate-x-1/2 ${wideCar ? "w-[88%]" : "w-[62%]"}`}>
+              <Image src={car.src} alt="" width={car.width} height={car.height} className="h-auto w-full" sizes="90vw" priority />
+            </div>
+          ) : null}
         </div>
 
         {data.trustStrip?.length > 0 ? (

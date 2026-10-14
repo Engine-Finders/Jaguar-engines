@@ -4,11 +4,38 @@ import { useState } from "react";
 import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
+import { engineImageFor } from "@/components/shared/carImage";
 import GenIcon from "./GenIcons";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { generationSectionBg, splitBestWorstEnginesH2, sectionH2 } from "./generationSection";
 
 const VISIBLE_CARDS = 4;
+
+// Engine names without a code ("4.0 V8 Supercharged (XJR)") use the V8 / V6 that generation was built with.
+const GENERATION_ENGINES = {
+  x308: { v8: "aj27" },
+  x100: { v8: "aj27" },
+  "x350-x358": { v8: "aj34", v6: "aj30" },
+  x351: { v8: "aj133", v6: "aj126" },
+  x150: { v8: "aj133" },
+  x152: { v8: "aj133", v6: "aj126" },
+  x250: { v8: "aj133", v6: "aj126" },
+  x260: { v6: "aj126" },
+  x761: { v8: "508ps", v6: "aj126" },
+  x200: { v8: "aj-v8", v6: "aj-v6" },
+  x400: { v6: "aj-v6" },
+};
+
+function engineImageForCard(item, generationCode = "") {
+  const text = `${item.engine || ""} ${item.engineNote || ""}`;
+  const direct = engineImageFor(text);
+  if (direct) return direct;
+  const family = GENERATION_ENGINES[String(generationCode).toLowerCase()];
+  const plain = text.replace(/<[^>]*>/g, " ").toLowerCase();
+  if (family?.v8 && /\bv8\b/.test(plain)) return engineImageFor(family.v8);
+  if (family?.v6 && /\bv6\b/.test(plain)) return engineImageFor(family.v6);
+  return null;
+}
 
 const typeStyles = {
   dieselBest: {
@@ -142,8 +169,11 @@ function SectionHeader({ data, isDark, sectionBg }) {
   );
 }
 
-function EngineCard({ item, isDark }) {
+function EngineCard({ item, generationCode, isDark }) {
   const style = resolveStyle(item, isDark);
+  // The Jaguar engine this card names (AJ133, AJ27, AJ30, 276DT...).
+  const engineImage = engineImageForCard(item, generationCode);
+  const engineAlt = String(item.engine || "").replace(/<[^>]*>/g, "").split(/\s[–-]\s|"/)[0].trim();
   const cardSurfaceClass = isDark
     ? "border-white/15 bg-[rgba(20,21,21,0.96)] shadow-[0_10px_28px_rgba(0,0,0,0.4)]"
     : "border-[var(--color-border)] bg-white shadow-[0_10px_28px_rgba(17,18,16,0.08)]";
@@ -173,8 +203,13 @@ function EngineCard({ item, isDark }) {
           ) : null}
         </p>
 
-        <div className="relative mx-auto my-3 h-36 w-full max-w-[210px]">
-          <Image src="/e90/engine.webp" alt="" fill className="object-contain" sizes="210px" />
+        <div className="relative mx-auto my-3 flex h-36 w-full max-w-[210px] items-center justify-center">
+          {engineImage ? (
+            <Image src={engineImage} alt={engineAlt} fill className="object-contain" sizes="210px" />
+          ) : (
+            // No photo of this engine (e.g. XK six, V12, AJ6): show the engine icon, never another make's engine.
+            <HomeIcon name="engine" isDark={isDark} className="h-24 w-24 opacity-35" />
+          )}
         </div>
 
         <p className={`text-[0.8rem] leading-[1.45] ${bodyTextClass}`}>
@@ -340,7 +375,7 @@ export default function BestWorstEngines({ data }) {
       <div className="relative mx-auto w-full max-w-8xl px-4 pb-5 pt-4 md:px-8 md:pb-6 md:pt-5">
         <div className="flex flex-col gap-3 sm:hidden">
           {carouselItems.map((item) => (
-            <EngineCard key={item.slot} item={item} isDark={isDark} />
+            <EngineCard key={item.slot} item={item} generationCode={data.generationCode} isDark={isDark} />
           ))}
         </div>
 
@@ -356,7 +391,7 @@ export default function BestWorstEngines({ data }) {
                 >
                   {carouselItems.map((item) => (
                     <div key={item.slot} className="w-[var(--card-width)] shrink-0">
-                      <EngineCard item={item} isDark={isDark} />
+                      <EngineCard item={item} generationCode={data.generationCode} isDark={isDark} />
                     </div>
                   ))}
                 </div>

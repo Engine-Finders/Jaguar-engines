@@ -7,8 +7,6 @@ import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
 import { carImageFor } from "@/components/shared/carImage";
 
-const FALLBACK_CAR_IMAGE = "/home-image/right-cutout.webp";
-
 const verdictStyles = {
   warning: {
     badge: "text-[#d97517]",
@@ -148,22 +146,6 @@ function BoltIcon() {
   );
 }
 
-function SedanIcon() {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5 md:h-4 md:w-4" fill="none" stroke="currentColor" strokeWidth="1.8">
-      <path d="M3 14h18l-1.5-4.5A3 3 0 0 0 16.6 7.5H7.4A3 3 0 0 0 4.5 9.5L3 14Zm2 0v3m14-3v3M7 17a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm10 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" />
-    </svg>
-  );
-}
-
-function SuvIcon() {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5 md:h-4 md:w-4" fill="none" stroke="currentColor" strokeWidth="1.8">
-      <path d="M4 14h16l-1-5H9L6.5 12H4v2Zm2 0v3m12-3v3M7.5 17a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm9 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM9 9V7h6" />
-    </svg>
-  );
-}
-
 function InfoBoltIcon() {
   return (
     <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6 md:h-5 md:w-5" fill="none" stroke="currentColor" strokeWidth="2">
@@ -255,7 +237,7 @@ function VerdictBadge({ verdict, variant = "plain" }) {
             : "border-[var(--color-border)] bg-[var(--color-surface)] text-[var(--color-text)]"
         }`}
       >
-        <HomeIcon name={iconKey} isDark={isDark} className="h-8 w-8 md:h-6 md:w-6" />
+        <HomeIcon name={iconKey} isDark={isDark} className="h-[2.1rem] w-[2.1rem] md:h-[1.575rem] md:w-[1.575rem]" />
         <span className={colorClass}>{text}</span>
       </span>
     );
@@ -263,7 +245,7 @@ function VerdictBadge({ verdict, variant = "plain" }) {
 
   return (
     <span className={`inline-flex items-center gap-1.5 text-[0.74rem] font-medium leading-tight ${colorClass}`}>
-      <HomeIcon name={iconKey} isDark={isDark} className="h-8 w-8 md:h-6 md:w-6" />
+      <HomeIcon name={iconKey} isDark={isDark} className="h-[2.1rem] w-[2.1rem] md:h-[1.575rem] md:w-[1.575rem]" />
       <span>{text}</span>
     </span>
   );
@@ -276,14 +258,14 @@ function CategoryHeader({ label, icon }) {
   return (
     <div className="mb-2 flex items-center gap-2.5 md:mb-2.5 md:gap-3">
       <span
-        className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full border md:h-7 md:w-7 ${
-          isDark ? "border-white/20 text-white/85" : "border-[var(--color-chrome)] text-[var(--color-text-muted)]"
+        className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full border md:h-[3.25rem] md:w-[3.25rem] ${
+          isDark ? "border-white/20" : "border-[var(--color-chrome)]"
         }`}
       >
-        {icon === "suv" ? <SuvIcon /> : <SedanIcon />}
+        <HomeIcon name={icon === "suv" ? "suv" : "vehicle"} isDark={isDark} className="h-12 w-12 md:h-14 md:w-14" />
       </span>
       <p
-        className={`shrink-0 text-[0.72rem] font-semibold uppercase tracking-[0.12em] ${
+        className={`shrink-0 text-[0.72rem] font-semibold uppercase tracking-[0.12em] md:text-[0.78rem] ${
           isDark ? "text-white/80" : "text-[var(--color-text-muted)]"
         }`}
       >
@@ -295,6 +277,19 @@ function CategoryHeader({ label, icon }) {
       ) : null}
     </div>
   );
+}
+
+// Card photo: the page assigns each model its own photo; the I-Pace has none (EV), so it shows its icon.
+function ModelPhoto({ item, name, isDark, sizes, className }) {
+  const src = item.photo || carImageFor(name);
+  if (!src) {
+    return (
+      <span className="flex h-full w-full items-center justify-center">
+        <HomeIcon name={verdictIconKey(item.verdict?.type)} isDark={isDark} className="h-3/4 w-3/4 max-h-28 max-w-28 opacity-80" />
+      </span>
+    );
+  }
+  return <Image src={src} alt={item.image?.alt || name} fill className={className} sizes={sizes} />;
 }
 
 function DesktopCard({ item }) {
@@ -321,10 +316,10 @@ function DesktopCard({ item }) {
       ) : null}
 
       <div className="relative mt-2.5 h-[120px] w-full overflow-hidden rounded-md md:h-[140px]">
-        <Image
-          src={carImageFor(name) || FALLBACK_CAR_IMAGE}
-          alt={item.image.alt || name}
-          fill
+        <ModelPhoto
+          item={item}
+          name={name}
+          isDark={isDark}
           className="object-contain object-center transition duration-300 group-hover:scale-[1.03]"
           sizes="180px"
         />
@@ -362,7 +357,7 @@ function MobileRow({ item }) {
       }`}
     >
       <div className="relative h-11 w-[4.5rem] overflow-hidden rounded-md">
-        <Image src={carImageFor(name) || FALLBACK_CAR_IMAGE} alt={item.image.alt || name} fill className="object-contain object-center" sizes="72px" />
+        <ModelPhoto item={item} name={name} isDark={isDark} className="object-contain object-center" sizes="72px" />
       </div>
 
       <div className="min-w-0">

@@ -351,17 +351,6 @@
           "label": "Explore X260 →",
           "href": "https://jaguarengines.uk/xf/x260"
         }
-      },
-      {
-        "title": "Comparison sub-block:",
-        "badge": "",
-        "meta": "The dividing line: 2015 is the line that matters. Pre-2015 X250s carry the AJ126 V6 with its cooling system and chain tensioner caveats. 2015-on X260s get the Ingenium range - the petrol is clean, the diesel is improved from 2019, and replacement economics are far more favourable.",
-        "rating": "",
-        "verdict": "",
-        "cta": {
-          "label": "",
-          "href": "/compare"
-        }
       }
     ],
     "rangeTable": {
@@ -372,6 +361,11 @@
     "comparisonLink": {
       "label": "Read the full comparison: X250 vs X260 →",
       "href": "/compare/xf-x250-vs-x260"
+    },
+    "comparisonNote": {
+      "title": "The dividing line",
+      "text": "2015 is the line that matters. Pre-2015 X250s carry the AJ126 V6 with its cooling system and chain tensioner caveats. 2015-on X260s get the Ingenium range - the petrol is clean, the diesel is improved from 2019, and replacement economics are far more favourable.",
+      "href": "/compare"
     }
   },
   "engineDatabase": {

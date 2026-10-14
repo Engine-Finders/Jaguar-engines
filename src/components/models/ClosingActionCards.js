@@ -7,33 +7,14 @@ import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
 import { sectionBody, sectionButton, sectionDescription } from "@/components/models/sectionTypography";
 
+// Monochrome cards, as in the reference: search, diagnose and specialists, each with its own art.
 const cardThemes = [
-  {
-    accent: "var(--color-primary)",
-    border: "border-blue-200",
-    bg: "bg-[linear-gradient(135deg,#f7fbff_0%,#eef6ff_100%)]",
-    image: "/model/Hero-bg-image.webp",
-    imageClass: "object-cover object-[68%_70%]",
-    cta: "Explore Now",
-    icon: "generations",
-  },
-  {
-    accent: "#078f58",
-    border: "border-emerald-200",
-    bg: "bg-[linear-gradient(135deg,#f8fffb_0%,#eefaf5_100%)]",
-    image: "/engine.webp",
-    imageClass: "object-contain object-right-bottom",
-    cta: "Start Diagnosis",
-    icon: "diagnosis",
-  },
-  {
-    accent: "#ee8500",
-    border: "border-orange-200",
-    bg: "bg-[linear-gradient(135deg,#fffdf9_0%,#fff5e8_100%)]",
-    cta: "Compare Specialists",
-    icon: "vetted-specialist",
-  },
+  { cta: "Explore Now", icon: "search", art: "lineup" },
+  { cta: "Start Diagnosis", icon: "diagnose", art: "engine" },
+  { cta: "Compare Specialists", icon: "vetted-specialist", art: "map" },
 ];
+
+const DIAGNOSIS_STEPS = ["Symptoms", "Engine Code", "Mileage", "History"];
 
 function cleanText(text = "") {
   return String(text ?? "")
@@ -83,7 +64,8 @@ function ArrowIcon({ className = "h-6 w-6" }) {
   );
 }
 
-function UkMapArt({ accent, isDark }) {
+function UkMapArt({ isDark }) {
+  const pin = isDark ? "#e6e6e4" : "#111111";
   const pins = [
     [56, 24],
     [66, 39],
@@ -98,73 +80,108 @@ function UkMapArt({ accent, isDark }) {
     <svg aria-hidden="true" viewBox="0 0 180 220" className="absolute bottom-3 right-3 h-[82%] w-[48%] opacity-80 md:right-8 md:w-[44%]">
       <path
         d="M80 10 65 24l9 15-18 12 10 17-16 13 20 13-11 20 22 8-16 28 28 8 10 31 24-17 25 13-2-31 20-11-19-21 10-28-20-16 4-28-28-1-10-28-27 8Z"
-        fill={isDark ? "#3a3a38" : "#ead9bd"}
+        fill={isDark ? "#3a3a38" : "#e2e2e0"}
       />
-      <path d="M33 105 16 121l22 8 17-12-22-12ZM72 189l-34 13 31 9 31-13-28-9Z" fill={isDark ? "#3a3a38" : "#ead9bd"} opacity="0.72" />
+      <path d="M33 105 16 121l22 8 17-12-22-12ZM72 189l-34 13 31 9 31-13-28-9Z" fill={isDark ? "#3a3a38" : "#e2e2e0"} opacity="0.72" />
       {pins.map(([cx, cy]) => (
         <g key={`${cx}-${cy}`} transform={`translate(${cx} ${cy})`}>
-          <path d="M0-10c5.2 0 9 3.8 9 8.5C9 5-0 13-0 13S-9 5-9-1.5C-9-6.2-5.2-10 0-10Z" fill={accent} />
-          <circle r="3" fill="white" />
+          <path d="M0-10c5.2 0 9 3.8 9 8.5C9 5-0 13-0 13S-9 5-9-1.5C-9-6.2-5.2-10 0-10Z" fill={pin} />
+          <circle r="3" fill={isDark ? "#1a1a1a" : "white"} />
         </g>
       ))}
     </svg>
   );
 }
 
-function ActionCard({ card, index, isDark }) {
+function DiagnosisList({ isDark }) {
+  return (
+    <div
+      className={`rounded-md border px-2.5 py-2 text-[11px] leading-none shadow-[0_8px_18px_rgba(0,0,0,0.08)] ${
+        isDark ? "border-white/12 bg-[#1b1b1b] text-white/80" : "border-[#e4e4e2] bg-white text-[#222]"
+      }`}
+    >
+      <p className={`mb-1.5 text-[9px] font-semibold uppercase tracking-[0.08em] ${isDark ? "text-white/50" : "text-[#8a8a88]"}`}>
+        Diagnosis
+      </p>
+      <ul className="space-y-1.5">
+        {DIAGNOSIS_STEPS.map((step) => (
+          <li key={step} className="flex items-center gap-1.5">
+            <span
+              aria-hidden="true"
+              className={`flex h-3 w-3 items-center justify-center rounded-[2px] text-[8px] ${
+                isDark ? "bg-white text-black" : "bg-black text-white"
+              }`}
+            >
+              {"\u2713"}
+            </span>
+            {step}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+function CardArt({ art, heroCar, engineImage, isDark }) {
+  if (art === "lineup" && heroCar) {
+    // The same picture as this model's hero.
+    return (
+      <div className="pointer-events-none absolute right-3 top-4 w-[62%] md:right-4 md:top-5">
+        <Image src={heroCar.src} alt="" width={heroCar.width} height={heroCar.height} className="h-auto w-full" sizes="(min-width: 768px) 20vw, 60vw" />
+      </div>
+    );
+  }
+  if (art === "engine" && engineImage) {
+    return (
+      <div className="pointer-events-none absolute right-2 top-3 flex w-[66%] items-start gap-2 md:right-3 md:top-4">
+        <div className="mt-1 hidden shrink-0 sm:block">
+          <DiagnosisList isDark={isDark} />
+        </div>
+        <div className="relative aspect-square min-w-0 flex-1">
+          <Image src={engineImage} alt="" fill className="object-contain object-top" sizes="(min-width: 768px) 16vw, 40vw" />
+        </div>
+      </div>
+    );
+  }
+  if (art === "map") return <UkMapArt isDark={isDark} />;
+  return null;
+}
+
+function ActionCard({ card, index, heroCar, engineImage, isDark }) {
   const theme = cardThemes[index] || cardThemes[0];
   const titleParts = splitCardTitle(card.title);
+  const title = [titleParts.before, titleParts.accent, titleParts.after].filter(Boolean).join(" ");
 
   return (
     <Link
       href={card.href || "#"}
-      className={`group relative min-h-[190px] overflow-hidden rounded-md border p-3 transition-all duration-200 hover:-translate-y-0.5 md:min-h-[270px] md:p-5 lg:min-h-[270px] ${
+      className={`group relative min-h-[230px] overflow-hidden rounded-md border p-4 transition-all duration-200 hover:-translate-y-0.5 md:min-h-[300px] md:p-5 ${
         isDark
           ? "border-[var(--color-border)] bg-[var(--color-surface-raised)] hover:border-white/25"
-          : `${theme.border} ${theme.bg} shadow-[0_10px_28px_rgba(10,26,43,0.10)] hover:shadow-[0_16px_34px_rgba(10,26,43,0.16)]`
+          : "border-[#e4e4e2] bg-white shadow-[0_10px_28px_rgba(16,18,16,0.08)] hover:shadow-[0_16px_34px_rgba(16,18,16,0.14)]"
       }`}
-      style={{ "--card-accent": theme.accent }}
     >
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_34%,rgba(255,255,255,0.92)_0%,rgba(255,255,255,0.08)_56%,transparent_100%)]" />
-      {theme.image ? (
-        <Image
-          src={theme.image}
-          alt=""
-          fill
-          className={`opacity-45 mix-blend-multiply ${theme.imageClass}`}
-          sizes="(min-width: 1024px) 31vw, 100vw"
-        />
-      ) : (
-        <UkMapArt accent={theme.accent} isDark={isDark} />
-      )}
-      <div className="relative z-10 flex h-full max-w-[78%] flex-col items-start md:max-w-[74%] lg:max-w-[78%]">
-        <span className="flex h-12 w-12 items-center justify-center rounded-md bg-white/86 text-[var(--card-accent)] shadow-[0_12px_26px_rgba(10,26,43,0.10)] md:h-20 md:w-20">
-          <HomeIcon name={theme.icon} isDark={false} className="h-9 w-9 md:h-14 md:w-14" />
+      <CardArt art={theme.art} heroCar={heroCar} engineImage={engineImage} isDark={isDark} />
+      <div className="relative z-10 flex h-full flex-col items-start">
+        <span
+          className={`flex h-16 w-16 items-center justify-center rounded-md shadow-[0_10px_24px_rgba(16,18,16,0.12)] md:h-20 md:w-20 ${
+            isDark ? "bg-[#1b1b1b]" : "bg-white"
+          }`}
+        >
+          <HomeIcon name={theme.icon} isDark={isDark} className="h-16 w-16 md:h-20 md:w-20" />
         </span>
-        <h3 className="mt-3 text-[18px] font-bold leading-[1.06] text-black dark:text-black md:mt-5 md:text-[26px] lg:text-[24px]">
-          <span dangerouslySetInnerHTML={{ __html: titleParts.before }} />
-          {titleParts.before ? <br className="md:hidden lg:block" /> : null}
-          {titleParts.accent ? (
-            <>
-              {" "}
-              <span className="text-[var(--card-accent)]" dangerouslySetInnerHTML={{ __html: titleParts.accent }} />
-            </>
-          ) : null}
-          {titleParts.after ? (
-            <>
-              {" "}
-              <span dangerouslySetInnerHTML={{ __html: titleParts.after }} />
-            </>
-          ) : null}
-        </h3>
-        <span className="mt-3 block h-1 w-10 rounded-full bg-[var(--card-accent)] md:mt-4 md:w-12" />
+        <h3
+          className={`mt-auto pt-16 text-[20px] font-bold leading-[1.1] md:pt-20 md:text-[24px] ${isDark ? "text-white" : "text-black"}`}
+          dangerouslySetInnerHTML={{ __html: title }}
+        />
+        <span className={`mt-3 block h-[3px] w-10 md:w-12 ${isDark ? "bg-white" : "bg-black"}`} />
         {card.text ? (
           <p
-            className={`mt-3 max-w-[360px] text-[var(--color-text)] ${sectionBody} md:mt-4 md:text-[17px]`}
+            className={`mt-3 max-w-[360px] ${sectionBody} md:text-[17px] ${isDark ? "text-white/80" : "text-[var(--color-text)]"}`}
             dangerouslySetInnerHTML={{ __html: cleanText(card.text) }}
           />
         ) : null}
-        <span className={`mt-auto inline-flex items-center gap-3 pt-4 font-bold text-[var(--card-accent)] md:gap-5 md:pt-6 ${sectionButton}`}>
+        <span className={`mt-4 inline-flex items-center gap-3 font-bold md:gap-4 ${sectionButton} ${isDark ? "text-white" : "text-black"}`}>
           {theme.cta}
           <ArrowIcon className="h-5 w-5 transition-transform duration-200 group-hover:translate-x-1 md:h-6 md:w-6" />
         </span>
@@ -243,7 +260,14 @@ export default function ClosingActionCards({ data }) {
       <div className="mx-auto w-full min-w-0 max-w-8xl px-4 pb-5 pt-2 md:px-6 md:pb-6 md:pt-2.5 lg:px-8">
         <div className="grid gap-4 md:grid-cols-3">
           {(data.cards || []).map((card, index) => (
-            <ActionCard key={card.title || card.href} card={card} index={index} isDark={isDark} />
+            <ActionCard
+              key={card.title || card.href}
+              card={card}
+              index={index}
+              heroCar={data.heroCar}
+              engineImage={data.engineImage}
+              isDark={isDark}
+            />
           ))}
         </div>
         {data.footerNote ? (

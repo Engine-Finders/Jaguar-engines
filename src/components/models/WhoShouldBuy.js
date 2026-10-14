@@ -8,14 +8,6 @@ import HomeIcon from "@/components/home/homeIcons";
 import { carImageFor } from "@/components/shared/carImage";
 import { sectionBody, sectionDescription, sectionTableText, tableHeaderClass } from "@/components/models/sectionTypography";
 
-const buyerImages = [
-  "/model/Hero-bg-image.webp",
-  "/model/Section 2-bg.webp",
-  "/model/Section 3-bg.webp",
-  "/hero-day.webp",
-  "/model/Hero-bg-image.webp",
-];
-
 const proofItems = [
   { title: "Built for Real Life", text: "Practical. Powerful. Proven.", icon: "best-family" },
   { title: "Data-Backed Ratings", text: "UK enquiries analysed in 2025.", icon: "chart" },
@@ -137,20 +129,22 @@ function ProofStrip({ isDark }) {
 
 function BuyerRow({ row, index, model, isDark }) {
   const iconKey = profileIconKeys[profileIconKey(row.buyerProfile)] || "shield";
-  // Model first so a generation named in the verdict (e.g. "The X260 ...") picks its photo.
-  const carImage = carImageFor(model, row.verdict);
+  // The page gives each buyer row its own photo (a different colour per row).
+  const carImage = row.image || carImageFor(model, row.verdict);
 
   return (
     <article className="grid overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_10px_26px_var(--color-shadow)] md:rounded-none md:border-0 md:border-t md:shadow-none lg:grid-cols-[40%_18%_42%]">
       <div className="grid grid-cols-[31%_69%] md:grid-cols-[300px_1fr] lg:border-r lg:border-[var(--color-border)]">
-        <div className={`relative min-h-[150px] md:min-h-[124px] ${carImage ? "flex items-center" : ""}`}>
-          <Image
-            src={carImage || buyerImages[index % buyerImages.length]}
-            alt=""
-            fill
-            className={carImage ? "object-contain p-2" : "object-cover"}
-            sizes="(min-width: 1024px) 300px, (min-width: 768px) 300px, 31vw"
-          />
+        <div className="relative flex min-h-[150px] items-center md:min-h-[124px]">
+          {carImage ? (
+            <Image
+              src={carImage}
+              alt=""
+              fill
+              className="object-contain p-2"
+              sizes="(min-width: 1024px) 300px, (min-width: 768px) 300px, 31vw"
+            />
+          ) : null}
         </div>
         <div className="flex min-w-0 items-center gap-3 px-3 py-3.5 md:px-5 md:py-4">
           <CircleIcon name={iconKey} isDark={isDark} />

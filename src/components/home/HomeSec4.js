@@ -65,17 +65,13 @@ function VerdictBadge({ verdict, fullWidth = false }) {
   );
 }
 
-/** Ranking-column icon: day = black on silver circle; night = silver on dark circle */
+/** Ranking-column icon: no backing circle, sized to sit level with the numbered circle beside it */
 function RankingIcon({ row, index, isDark }) {
   const iconName = resolveIcon(row, index);
 
   return (
-    <span
-      className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full md:h-14 md:w-14 ${
-        isDark ? "bg-[#1a1a1a] ring-1 ring-white/15" : "bg-[#d8d8d6]"
-      }`}
-    >
-      <HomeIcon name={iconName} isDark={isDark} className="h-8 w-8 md:h-9 md:w-9" />
+    <span className="flex h-8 w-8 shrink-0 items-center justify-center">
+      <HomeIcon name={iconName} isDark={isDark} className="h-11 w-11" />
     </span>
   );
 }

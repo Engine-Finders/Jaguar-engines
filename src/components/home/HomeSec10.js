@@ -288,13 +288,15 @@ function FeedTable({ data, isDark }) {
         >
           <span className={`flex min-w-0 items-center gap-2 font-semibold ${isDark ? "text-white" : "text-black"}`}>
             <span className="relative h-8 w-11 shrink-0 overflow-hidden rounded-sm md:h-9 md:w-12">
-              <Image
-                src={carImageFor(row.vehicle) || "/home-image/right-cutout.webp"}
-                alt=""
-                fill
-                className="object-contain object-center"
-                sizes="48px"
-              />
+              {row.photo || carImageFor(row.vehicle) ? (
+                <Image
+                  src={row.photo || carImageFor(row.vehicle)}
+                  alt=""
+                  fill
+                  className="object-contain object-center"
+                  sizes="48px"
+                />
+              ) : null}
             </span>
             <span className="min-w-0 leading-snug">{row.vehicle}</span>
           </span>
