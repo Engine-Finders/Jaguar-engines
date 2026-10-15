@@ -114,6 +114,61 @@ const FILES = {
   "engine-codes": "Database Icon-01.png",
   "uk-wide-delivery": "Uk wide delivery Icon-01.png",
   "users-team": "Users Icon-01.png",
+  // Inner pages (generation / variant / engine / model) - client batches 2 + 3 and unused main-set art
+  "repair-tool": "Commercial Icon-01.png",
+  "price-tag": "Best used buy icon 2-01.png",
+  "pound-shield": "Transparent-01.png",
+  premium: "best- premium-01.png",
+  "labour-time": "Labour Estimate-01.png",
+  history: "History-01.png",
+  calendar: "calendar-01.png",
+  location: "location-01.png",
+  "refresh-cycle": "refresh-01.png",
+  basket: "Cart-01.png",
+  hearing: "hearing-01.png",
+  "doc-search": "Not sure-01.png",
+  "know-engine": "Know your engine-01.png",
+  "engine-codes-book": "Engine Codes-01.png",
+  enquiries: "Enquiries-01.png",
+  platform: "Platform+ generations-01.png",
+  "predecessor-successor": "Predecessor + successor-01.png",
+  "generations-covered": "Generations covered-01.png",
+  "body-styles": "Two cars icon-01.png",
+  cylinders: "Cylinders-01.png",
+  compression: "Compression ratio-01.png",
+  piston: "piston-01.png",
+  crankshaft: "crankshaft-01.png",
+  valve: "Valve-01.png",
+  "head-gasket": "head gasket-01.png",
+  "transfer-box": "Transfer box-01.png",
+  turbo: "Turbo-01.png",
+  injector: "INjector ICON-01.png",
+  dpf: "dpf filter ICON-01.png",
+  adblue: "AdBlue-01.png",
+  egr: "Egr icon-01.png",
+  exhaust: "exhaust and emission icon-01.png",
+  cooling: "Cooling System icon-01.png",
+  "cooling-temp": "Cooling system icon 2-01.png",
+  "oil-leak": "Oil Leaks.png",
+  "oil-consumption": "Oil Consumption-01.png",
+  "cold-start": "Cold start-01.png",
+  "smoke-check": "Smoke check-01.png",
+  tappet: "Tappet Noise-01.png",
+  battery: "Starting and charging icon-01.png",
+  chassis: "Chassis Icon-01.png",
+  peak: "Peak-01.png",
+  commuter: "Commuter-01.png",
+  towing: "towing & working use-01.png",
+  heart: "Heart-01.png",
+  like: "like-01.png",
+  handshake: "handshake-01.png",
+  expert: "Expert-01.png",
+  "parts-supply": "parts supply-01.png",
+  "fitting-engine": "fitting-engine-01.png",
+  rule: "3 series rule-01.png",
+  diesel: "Diesel-01.png",
+  "suv-body": "SUV-01.png",
+  dealer: "Dealer-01.png",
 };
 
 // Silver folder uses a few different filenames
@@ -125,6 +180,11 @@ const SILVER_FILES = {
 // enough to read at a glance while keeping a little breathing room inside circles and
 // badges. The 16px floor keeps the smallest boxes legible.
 const GLYPH_SCALE = "h-[65%] w-[65%] min-h-4 min-w-4";
+
+/** True when `name` is a known icon key. */
+export function hasHomeIcon(name) {
+  return Boolean(FILES[name]);
+}
 
 export default function HomeIcon({ name, isDark, className = "h-5 w-5" }) {
   const file = FILES[name];
