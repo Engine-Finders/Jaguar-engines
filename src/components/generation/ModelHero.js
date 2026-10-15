@@ -11,11 +11,11 @@ import { splitGenerationHeroH1 } from "./generationSection";
 const TRUST_STRIP_ICON_BY_EMOJI = {
   "📊": "real-inquiries",
   "🔧": "vehicle",
-  "📖": "engine-codes",
+  "📖": "engine-codes-book",
   "🏆": "engine-finders",
 };
 
-const TRUST_STRIP_ICONS = ["real-inquiries", "vehicle", "engine-codes", "engine-finders"];
+const TRUST_STRIP_ICONS = ["real-inquiries", "vehicle", "engine-codes-book", "engine-finders"];
 
 function splitTagPill(tagPill = "") {
   const parts = tagPill.split(" • ");
@@ -38,6 +38,9 @@ function splitStat(label = "") {
 }
 
 function trustStripIcon(item, index) {
+  // The body-style stat gets the SUV artwork for SUVs, and the power stat a meter.
+  if (/\bsuv\b/i.test(item.label || "")) return "suv-body";
+  if (/\b\d+\s*(ps|bhp|hp)\b/i.test(item.label || "")) return "diagnosis";
   return TRUST_STRIP_ICON_BY_EMOJI[item.icon] || TRUST_STRIP_ICONS[index] || "real-inquiries";
 }
 
@@ -100,8 +103,8 @@ function DesktopTrustStrip({ items, isDark, cardBorderClass, dividerBorderClass 
                 index > 0 ? `border-l ${dividerBorderClass}` : ""
               }`}
             >
-              <span className="flex h-11 w-11 shrink-0 items-center justify-center">
-                <HomeIcon name={trustStripIcon(item, index)} isDark={isDark} className="h-11 w-11 object-contain" />
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center">
+                <HomeIcon name={trustStripIcon(item, index)} isDark={isDark} className="h-12 w-12 object-contain" />
               </span>
               <div className="flex w-max max-w-none flex-col gap-0.5 whitespace-normal">
                 {hasValue ? (
@@ -144,8 +147,8 @@ function MobileTrustStrip({ items, isDark, trustStripClass, dividerBorderClass, 
               key={item.label}
               className={`flex min-w-0 flex-col items-center gap-1 px-0.5 py-1 ${index > 0 ? `border-l ${dividerBorderClass}` : ""}`}
             >
-              <span className="flex h-9 w-9 shrink-0 items-center justify-center">
-                <HomeIcon name={trustStripIcon(item, index)} isDark={isDark} className="h-9 w-9 object-contain" />
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center">
+                <HomeIcon name={trustStripIcon(item, index)} isDark={isDark} className="h-12 w-12 object-contain" />
               </span>
               {stat.value ? (
                 <strong className={`text-[0.72rem] font-bold leading-none ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
@@ -168,17 +171,28 @@ function MobileTrustStrip({ items, isDark, trustStripClass, dividerBorderClass, 
   );
 }
 
+// Phones, tablets + small laptops: the scene as its own band, so it never sits behind the copy.
+function SceneBand({ src, alt, className = "" }) {
+  return (
+    <div className={`relative -mx-4 my-3 aspect-[16/10] max-h-[440px] w-[calc(100%+2rem)] overflow-hidden md:-mx-8 md:w-[calc(100%+4rem)] ${className}`}>
+      <Image src={src} alt={alt} fill className="object-cover object-[70%_center]" sizes="100vw" priority />
+      <div className="absolute inset-x-0 top-0 h-14 bg-[linear-gradient(180deg,var(--color-page)_0%,transparent_100%)]" />
+      <div className="absolute inset-x-0 bottom-0 h-14 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)]" />
+    </div>
+  );
+}
+
 export default function ModelHero({ data }) {
   const { theme } = useTheme();
   if (!data) return null;
 
   const isDark = theme === "dark";
   const pill = splitTagPill(data.tagPill);
-  const heroImage = isDark ? "/e90/hero_dark.webp" : "/e90/hero_day.webp";
-  const heroImageMobile = isDark ? "/e90/hero_mobile_dark.webp" : "/e90/hero_mobile_day.webp";
-  const desktopImage = (isDark ? data.image?.dark : data.image?.light) || heroImage;
-  const mobileImage = (isDark ? data.image?.mobileDark : data.image?.mobileLight) || heroImageMobile;
-  const heroAlt = data.image?.alt || "";
+  // This generation standing in Jaguar's own scene, light or dark (set server-side), or the client's
+  // line-up scene when the model has no photo of its own (I-Pace). Laid out like the model hero.
+  const scene = data.heroScene;
+  const sceneSrc = scene ? (isDark && scene.darkSrc) || scene.src : null;
+  const heroAlt = pill.model.replace(/<[^>]*>/g, "");
   const heroDescriptionShadow = isDark
     ? ""
     : "[text-shadow:0_0_8px_#fff,0_0_16px_#fff,0_0_24px_rgba(255,255,255,0.9),0_1px_2px_rgba(255,255,255,0.95)]";
@@ -190,40 +204,18 @@ export default function ModelHero({ data }) {
   const trustStripClass = `glass-panel rounded-md border ${cardBorderClass} backdrop-blur-sm shadow-[0_10px_30px_var(--color-shadow)]`;
 
   return (
-    <section className="relative min-h-[calc(100svh-84px)] overflow-hidden bg-[var(--color-page)] text-[var(--color-text)] md:min-h-[580px]">
-      <div className="absolute inset-0">
-        <Image
-          src={mobileImage}
-          alt={heroAlt}
-          fill
-          className="object-cover object-[center_58%] md:hidden"
-          sizes="100vw"
-          priority
-        />
-        <Image
-          src={desktopImage}
-          alt={heroAlt}
-          fill
-          className="hidden object-cover object-[68%_center] md:block"
-          sizes="100vw"
-          priority
-        />
-        {isDark ? (
-          <>
-            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(11,12,12,0.62)_0%,rgba(11,12,12,0.28)_42%,rgba(11,12,12,0.82)_100%)] md:hidden" />
-            <div className="absolute inset-0 hidden bg-[linear-gradient(90deg,var(--color-hero-fade)_0%,var(--color-hero-overlay)_35%,transparent_72%)] md:block" />
-            <div className="absolute inset-0 hidden bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_28%)] md:block" />
-          </>
-        ) : (
-          <>
-            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.94)_0%,rgba(255,255,255,0.55)_32%,rgba(255,255,255,0.12)_58%,rgba(255,255,255,0.72)_100%)] md:hidden" />
-            <div className="absolute inset-0 hidden bg-[linear-gradient(90deg,var(--color-hero-fade)_0%,var(--color-hero-overlay)_35%,transparent_72%)] md:block" />
-            <div className="absolute inset-0 hidden bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_28%)] md:block" />
-          </>
-        )}
-      </div>
+    <section className="relative overflow-hidden bg-[var(--color-page)] text-[var(--color-text)] xl:min-h-[620px]">
+      {/* Desktop: the scene sits on the right and fades in from the page colour, as on the model page.
+          Below 1600px it starts a third of the way in so the copy stays on plain page colour. */}
+      {sceneSrc ? (
+        <div className="absolute inset-y-0 left-[34%] right-0 hidden xl:block min-[1600px]:left-auto min-[1600px]:aspect-[1200/676]">
+          <Image src={sceneSrc} alt={heroAlt} fill className="object-cover object-right" sizes="(min-width: 1280px) 1200px, 100vw" priority />
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,color-mix(in_srgb,var(--color-page)_88%,transparent)_16%,color-mix(in_srgb,var(--color-page)_45%,transparent)_34%,transparent_56%)]" />
+          <div className="absolute inset-x-0 bottom-0 h-40 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)]" />
+        </div>
+      ) : null}
 
-      <div className="relative mx-auto flex min-h-[calc(100svh-84px)] w-full max-w-8xl flex-col justify-between px-4 pb-4 pt-6 md:min-h-[580px] md:justify-center md:px-8 md:py-6">
+      <div className="relative mx-auto flex w-full max-w-8xl flex-col px-4 pb-4 pt-6 md:px-8 md:py-6 xl:min-h-[620px] xl:justify-center">
         <div className="relative flex w-full flex-col gap-2.5 md:gap-3">
           <div className="relative flex w-full max-w-[720px] flex-col gap-2.5 md:gap-3">
             <span
@@ -254,7 +246,7 @@ export default function ModelHero({ data }) {
             <MStripe />
 
             <p
-              className={`max-w-[78%] text-[0.88rem] leading-[1.42] md:max-w-[620px] md:text-[1.08rem] md:leading-[1.42] ${isDark ? "text-white/88" : "text-black"} ${heroDescriptionShadow}`}
+              className={`max-w-full text-[0.88rem] leading-[1.42] md:max-w-[620px] md:text-[1.08rem] md:leading-[1.42] ${isDark ? "text-white/88" : "text-black"} ${heroDescriptionShadow}`}
               dangerouslySetInnerHTML={{ __html: data.subHeadline }}
             />
 
@@ -269,6 +261,8 @@ export default function ModelHero({ data }) {
             ) : null}
           </div>
 
+          {sceneSrc ? <SceneBand src={sceneSrc} alt={heroAlt} className="hidden md:block xl:hidden" /> : null}
+
           {data.trustStrip?.length > 0 ? (
             <div className="mt-6 hidden w-max max-w-none md:block">
               <DesktopTrustStrip
@@ -280,6 +274,9 @@ export default function ModelHero({ data }) {
             </div>
           ) : null}
         </div>
+
+        {/* Phones: the scene as its own band between the copy and the CTA */}
+        {sceneSrc ? <SceneBand src={sceneSrc} alt={heroAlt} className="md:hidden" /> : null}
 
         <div className="relative flex w-full max-w-[720px] flex-col md:hidden">
           {data.primaryCta ? (

@@ -4,11 +4,8 @@ import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
 import MStripe from "@/components/reusableComponents/MStripe";
 import HomeIcon from "@/components/home/homeIcons";
-import { carImageFor as jaguarCarImage } from "@/components/shared/carImage";
 import { sectionDescription, sectionH2 } from "@/components/models/sectionTypography";
 import { engineSectionBg } from "./engineSection";
-
-const ENGINE_IMAGE = "/e90/engine.webp";
 
 
 function cleanText(text = "") {
@@ -72,6 +69,7 @@ function groupModels(rows = []) {
         variants: [],
         years: [],
         rowCount: 0,
+        image: row.cardImage || null,
       });
     }
 
@@ -111,11 +109,6 @@ function cardClass(isDark) {
   return isDark
     ? "border-[var(--color-border)] bg-[var(--color-surface)]"
     : "border-[var(--color-border-strong)] bg-[var(--color-surface)] shadow-[0_8px_20px_var(--color-shadow)]";
-}
-
-function carImageFor(model = "", generation = "", years = "") {
-  // Models we have no photo of (e.g. XJS, Daimler) show no picture rather than another car.
-  return jaguarCarImage(cleanText(model), cleanText(generation), stripTags(years));
 }
 
 function ShieldIcon({ isDark, className = "h-4 w-4" }) {
@@ -169,9 +162,8 @@ function DesktopModelCard({ item, isDark }) {
           ) : null}
         </div>
         <div className="relative h-11 w-[84px] shrink-0 overflow-hidden rounded-md">
-          {carImageFor(item.model, item.generations[item.generations.length - 1]) ? (
-            <Image src={carImageFor(item.model, item.generations[item.generations.length - 1])} alt="" fill sizes="84px" className="object-contain object-center" />
-          ) : null}
+          {/* Photos are set server-side, none twice; models with no photo (e.g. XJS, Daimler) show none */}
+          {item.image ? <Image src={item.image} alt="" fill sizes="84px" className="object-contain object-center" /> : null}
         </div>
       </div>
 
@@ -207,9 +199,7 @@ function MobileModelRow({ row, isDark }) {
             </p>
           ) : null}
           <div className="relative mt-1.5 h-10 w-full overflow-hidden rounded">
-            {carImageFor(row.model, row.generation, row.years) ? (
-              <Image src={carImageFor(row.model, row.generation, row.years)} alt="" fill sizes="72px" className="object-contain object-center" />
-            ) : null}
+            {row.image ? <Image src={row.image} alt="" fill sizes="72px" className="object-contain object-center" /> : null}
           </div>
         </div>
 
@@ -263,6 +253,7 @@ export default function Compatibility({
   yearsProduced = "",
   modelsFitted = "",
   crossBrandFitment = "",
+  engineImage,
 }) {
   const { theme } = useTheme();
   if (!data) return null;
@@ -304,15 +295,18 @@ export default function Compatibility({
             </div>
           </div>
 
-          <div className="relative mx-auto h-[160px] w-full max-w-[280px] md:mx-0 md:h-[200px] md:max-w-none">
-            <Image
-              src={ENGINE_IMAGE}
-              alt=""
-              fill
-              sizes="(max-width: 768px) 280px, 320px"
-              className="object-contain object-right drop-shadow-[0_16px_32px_rgba(0,0,0,0.25)]"
-            />
-          </div>
+          {/* The engine's photo (set server-side); hidden for engines with none */}
+          {engineImage ? (
+            <div className="relative mx-auto h-[160px] w-full max-w-[280px] md:mx-0 md:h-[200px] md:max-w-none">
+              <Image
+                src={engineImage}
+                alt=""
+                fill
+                sizes="(max-width: 768px) 280px, 320px"
+                className="object-contain object-right drop-shadow-[0_16px_32px_rgba(0,0,0,0.25)]"
+              />
+            </div>
+          ) : null}
         </div>
 
         <ProductionTimeline start={bounds.start} end={bounds.end} span={bounds.span} isDark={isDark} />

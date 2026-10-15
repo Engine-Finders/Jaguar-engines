@@ -5,6 +5,7 @@ import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
+import { buyerIconFor } from "@/components/shared/labelIcons";
 import { carImageFor } from "@/components/shared/carImage";
 import { sectionBody, sectionDescription, sectionTableText, tableHeaderClass } from "@/components/models/sectionTypography";
 
@@ -14,14 +15,6 @@ const proofItems = [
   { title: "Honest Verdicts", text: "No hype. Just the truth about ownership.", icon: "scale" },
   { title: "Buyer-Focused", text: "Find the right model for your needs.", icon: "safest-buy" },
 ];
-
-const profileIconKeys = {
-  family: "best-family",
-  commute: "car",
-  budget: "pound",
-  performance: "trophy",
-  keeper: "shield",
-};
 
 function cleanText(text = "") {
   return String(text ?? "")
@@ -55,15 +48,6 @@ function splitTitle(title = "") {
     before: clean.slice(0, index).trim(),
     accent: clean.slice(index).trim(),
   };
-}
-
-function profileIconKey(profile = "") {
-  const value = profile.toLowerCase();
-  if (value.includes("family")) return "family";
-  if (value.includes("commuter") || value.includes("daily")) return "commute";
-  if (value.includes("budget")) return "budget";
-  if (value.includes("performance")) return "performance";
-  return "keeper";
 }
 
 function filledStars(rating = "") {
@@ -128,7 +112,7 @@ function ProofStrip({ isDark }) {
 }
 
 function BuyerRow({ row, index, model, isDark }) {
-  const iconKey = profileIconKeys[profileIconKey(row.buyerProfile)] || "shield";
+  const iconKey = buyerIconFor(row.buyerProfile);
   // The page gives each buyer row its own photo (a different colour per row).
   const carImage = row.image || carImageFor(model, row.verdict);
 

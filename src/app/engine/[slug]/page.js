@@ -7,6 +7,7 @@ import Compatibility from "@/components/engine/Compatibility";
 import CostGuide from "@/components/engine/CostGuide";
 import FAQAccordion from "@/components/engine/FAQAccordion";
 import TrustCta from "@/components/engine/TrustCta";
+import { enginePageImages } from "@/components/shared/pageCarImages";
 
 async function getPageData(dataFile) {
   try {
@@ -72,6 +73,7 @@ export default async function EnginePage({ params }) {
     glanceRows.find((row) => row.metric?.startsWith("Models Fitted"))?.value || "";
   const crossBrandFitment =
     glanceRows.find((row) => row.metric === "Cross-Brand Fitment")?.value || "";
+  const { engineImage, heroCar, compatibility } = enginePageImages(slug, engineLabel, data.compatibility);
 
   return (
     <main className="flex flex-col">
@@ -83,18 +85,19 @@ export default async function EnginePage({ params }) {
           }}
         />
       )}
-      <EngineHero data={data.hero} />
-      <AtAGlance data={data.atAGlance} />
+      <EngineHero data={data.hero} engineImage={engineImage} heroCar={heroCar} />
+      <AtAGlance data={data.atAGlance} engineImage={engineImage} />
       <VerdictRating data={data.verdictRating} />
       <Compatibility
-        data={data.compatibility}
+        data={compatibility}
         engineLabel={engineLabel}
         yearsProduced={yearsProduced}
         modelsFitted={modelsFitted}
         crossBrandFitment={crossBrandFitment}
+        engineImage={engineImage}
       />
       <CostGuide data={data.costGuide} engineLabel={engineLabel} />
-      <FAQAccordion data={data.faq} engineLabel={engineLabel} />
+      <FAQAccordion data={data.faq} engineLabel={engineLabel} engineImage={engineImage} />
       <TrustCta data={data.trustCta} engineLabel={engineLabel} />
     </main>
   );

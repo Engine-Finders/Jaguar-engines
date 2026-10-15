@@ -1,31 +1,25 @@
 "use client";
 
-import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
+import CarOnBackground from "@/components/shared/CarOnBackground";
 import CoreVariants from "./CoreVariants";
 import MarketIntelligence, { MarketIntelligenceSidebar } from "./MarketIntelligence";
-import { generationSectionBg, resolveGenerationHeroAlt, resolveGenerationHeroImage } from "./generationSection";
+import { generationSectionBg } from "./generationSection";
 
-function HeroSidebarImage({ hero, isDark, className = "" }) {
-  const src = resolveGenerationHeroImage(hero, isDark);
-  const alt = resolveGenerationHeroAlt(hero);
-
+// This generation's side-view photo (set server-side) on Jaguar's own background.
+function SidebarCarImage({ image, isDark, className = "" }) {
   return (
-    <div
-      className={`relative min-h-[320px] overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[0_10px_28px_var(--color-shadow)] ${className}`.trim()}
-    >
-      <Image
-        src={src}
-        alt={alt}
-        fill
-        className="object-cover object-[68%_center]"
-        sizes="(max-width: 1280px) 40vw, 420px"
-      />
-    </div>
+    <CarOnBackground
+      src={image}
+      isDark={isDark}
+      className={`relative min-h-[320px] rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[0_10px_28px_var(--color-shadow)] ${className}`.trim()}
+      carClassName="inset-x-[6%] bottom-[10%] top-[30%]"
+      sizes="(max-width: 1280px) 90vw, 520px"
+    />
   );
 }
 
-export default function CoreVariantsMarketGroup({ coreVariants, marketIntelligence, hero }) {
+export default function CoreVariantsMarketGroup({ coreVariants, marketIntelligence }) {
   const { theme } = useTheme();
   const isDark = theme === "dark";
   const sectionBg = generationSectionBg(isDark, true);
@@ -38,18 +32,18 @@ export default function CoreVariantsMarketGroup({ coreVariants, marketIntelligen
         {/* Mobile / tablet: stacked sections */}
         <div className="flex flex-col gap-0 pb-6 lg:hidden">
           {coreVariants ? <CoreVariants data={coreVariants} grouped /> : null}
-          {coreVariants ? <HeroSidebarImage hero={hero} isDark={isDark} className="mb-5" /> : null}
+          {coreVariants ? <SidebarCarImage image={coreVariants.image} isDark={isDark} className="mb-5" /> : null}
           {marketIntelligence ? <MarketIntelligence data={marketIntelligence} grouped /> : null}
         </div>
 
-        {/* Desktop: core variants + hero image, then market intel + live feed */}
+        {/* Desktop: core variants + car photo, then market intel + live feed */}
         <div className="hidden lg:grid lg:grid-cols-[minmax(0,1.12fr)_minmax(0,0.88fr)] lg:items-start lg:gap-6 lg:pb-6">
           {coreVariants ? (
             <CoreVariants data={coreVariants} grouped className="lg:col-start-1 lg:row-start-1" />
           ) : null}
 
           {coreVariants ? (
-            <HeroSidebarImage hero={hero} isDark={isDark} className="lg:col-start-2 lg:row-start-1" />
+            <SidebarCarImage image={coreVariants.image} isDark={isDark} className="lg:col-start-2 lg:row-start-1" />
           ) : null}
 
           {marketIntelligence ? (

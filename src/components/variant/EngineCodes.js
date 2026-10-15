@@ -5,16 +5,17 @@ import { useState } from "react";
 import { useTheme } from "@/components/shared/themeProvider";
 import MStripe from "@/components/reusableComponents/MStripe";
 import GenIcon from "../generation/GenIcons";
+import { specIconFor } from "@/components/shared/labelIcons";
 import { variantSectionBg, VariantSectionHeading, tableHeaderClass, primaryBadgeClass, primaryCtaClass } from "./variantSection";
 
 const DESKTOP_COLS = "grid-cols-[1.5fr_0.9fr_0.9fr_1.2fr_1.1fr]";
-const ENGINE_IMAGE = "/320d/engine.webp";
+// Engine photos are set server-side: row.image per engine code, data.engineImage for the banner.
+// Engines with no photo (e.g. XK6, V12) show none.
 
 function shortCode(engineCode = "") {
   return engineCode.split(" / ")[0].split(" (")[0];
 }
 
-const SPEC_ICONS = ["engine", "refresh", "gauge", "drum", "target"];
 
 function splitSpecsTitle(title = "") {
   const match = title.match(/^(.*?)\s*\(([^)]+)\)\s*:?$/);
@@ -33,7 +34,7 @@ function DesktopRow({ row, isDark }) {
     <div className={`grid ${DESKTOP_COLS} items-center gap-px ${rowClass} px-2 py-2.5 text-[0.8rem] border-b ${borderBottom} last:border-b-0`}>
       <span className="flex items-center gap-2 px-2 font-semibold">
         <span className="relative h-9 w-11 shrink-0 overflow-hidden">
-          <Image src={ENGINE_IMAGE} alt={row.engineCode} fill className="object-contain" sizes="44px" />
+          {row.image ? <Image src={row.image} alt="" fill className="object-contain" sizes="44px" /> : null}
         </span>
         <span className={codeText}>{row.engineCode}</span>
       </span>
@@ -51,35 +52,37 @@ function DesktopRow({ row, isDark }) {
 function DetailCard({ row }) {
   return (
     <div className="glass-panel flex gap-4 rounded-md p-4">
-      <span className="relative h-auto w-28 shrink-0 self-stretch">
-        <Image src={ENGINE_IMAGE} alt={row.engineCode} fill className="object-contain" sizes="112px" />
-      </span>
+      {row.image ? (
+        <span className="relative h-auto w-28 shrink-0 self-stretch">
+          <Image src={row.image} alt="" fill className="object-contain" sizes="112px" />
+        </span>
+      ) : null}
       <div className="flex min-w-0 flex-1 flex-col gap-2.5 text-[0.82rem]">
         <p className="truncate text-[1rem] font-bold text-[var(--color-text)]">{row.engineCode}</p>
         <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 border-b border-[var(--color-border)] pb-2.5">
           <span className="flex items-center gap-1.5 text-[var(--color-text-muted)]">
-            <GenIcon name="clock" className="h-3.5 w-3.5 shrink-0 text-[var(--color-primary)]" />
+            <GenIcon name="calendar" className="h-5 w-5 shrink-0" />
             Years
           </span>
           <span className="font-semibold text-[var(--color-text)]">{row.years}</span>
         </div>
         <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 border-b border-[var(--color-border)] pb-2.5">
           <span className="flex items-center gap-1.5 text-[var(--color-text-muted)]">
-            <GenIcon name="gauge" className="h-3.5 w-3.5 shrink-0 text-[var(--color-primary)]" />
+            <GenIcon name="gauge" className="h-5 w-5 shrink-0" />
             Power
           </span>
           <span className="font-semibold text-[var(--color-text)]">{row.power}</span>
         </div>
         <div className="flex items-start justify-between gap-3 border-b border-[var(--color-border)] pb-2.5">
           <span className="flex shrink-0 items-center gap-1.5 text-[var(--color-text-muted)]">
-            <GenIcon name="chart" className="h-3.5 w-3.5 shrink-0 text-[var(--color-primary)]" />
+            <GenIcon name="enquiries" className="h-5 w-5 shrink-0" />
             2025 Enquiries
           </span>
           <span className="min-w-0 flex-1 text-right font-semibold text-[var(--color-text)]">{row.enquiries}</span>
         </div>
         <div className="flex items-start justify-between gap-3">
           <span className="flex shrink-0 items-center gap-1.5 text-[var(--color-text-muted)]">
-            <GenIcon name="dollar" className="h-3.5 w-3.5 shrink-0 text-[var(--color-primary)]" />
+            <GenIcon name="dollar" className="h-5 w-5 shrink-0" />
             Avg. Recon Cost
           </span>
           <span className="min-w-0 flex-1 text-right font-semibold text-[var(--color-primary)]">{row.avgReconCost}</span>
@@ -117,7 +120,7 @@ export default function EngineCodes({ data }) {
             className={`grid grid-cols-[1fr_1fr] gap-3 px-4 py-3 ${index > 0 ? "border-t border-[var(--color-border)]" : ""}`}
           >
             <span className="flex items-center gap-2 border-r border-[var(--color-border)] pr-3 text-[0.78rem] text-[var(--color-text-muted)]">
-              <GenIcon name={SPEC_ICONS[index % SPEC_ICONS.length]} className="h-4 w-4 shrink-0 text-[var(--color-primary)]" />
+              <GenIcon name={specIconFor(item.label.replace(/^\*\s*/, ""))} className="h-6 w-6 shrink-0" />
               {item.label.replace(/^\*\s*/, "")}
             </span>
             <span className="text-[0.8rem] font-semibold text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: item.value }} />
@@ -137,7 +140,9 @@ export default function EngineCodes({ data }) {
       }`}
     >
       <div className="absolute inset-0">
-        <Image src={ENGINE_IMAGE} alt="" fill className="object-cover object-right opacity-60" sizes="400px" />
+        {data.engineImage ? (
+          <Image src={data.engineImage} alt="" fill className="object-contain object-right opacity-60" sizes="400px" />
+        ) : null}
         <div
           className={`absolute inset-0 ${
             isDark

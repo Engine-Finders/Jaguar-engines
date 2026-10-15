@@ -19,7 +19,7 @@ function VariantPanel({ title, icon, variants, tone, isDark }) {
         className={`flex w-[4.25rem] shrink-0 items-center justify-center text-white ${blockToneClass}`}
         style={{ clipPath: "polygon(0 0, 100% 0, 58% 100%, 0 100%)" }}
       >
-        <GenIcon name={icon} className="h-7 w-7" />
+        <GenIcon name={icon} onDark className="h-10 w-10" />
       </span>
       <div className="min-w-0 flex-1 py-4 pl-3 pr-4">
         <p className={`text-[0.76rem] font-semibold uppercase tracking-wide ${labelToneClass}`}>
@@ -55,9 +55,7 @@ export default function CoreVariants({ data, grouped = false, className = "" }) 
 
   const scopeNoteBlock = data.scopeNote ? (
     <div className="glass-panel flex gap-3 rounded-md p-4">
-      <span className="mt-0.5 shrink-0 text-[var(--color-primary)]">
-        <GenIcon name="info" className="h-5 w-5" />
-      </span>
+      <GenIcon name="info" className="h-6 w-6 shrink-0" />
       <p className={`text-[0.82rem] leading-[1.5] ${isDark ? "text-white/85" : "text-[var(--color-text-muted)]"}`}>
         <span className={`font-semibold ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>Scope note: </span>
         <span dangerouslySetInnerHTML={{ __html: data.scopeNote }} />
@@ -79,14 +77,14 @@ export default function CoreVariants({ data, grouped = false, className = "" }) 
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:gap-4">
           <VariantPanel
             title="Diesel Variants"
-            icon="drum"
+            icon="diesel"
             variants={data.dieselVariants}
             tone="diesel"
             isDark={isDark}
           />
           <VariantPanel
             title="Petrol Variants"
-            icon="engine"
+            icon="fuel"
             variants={data.petrolVariants}
             tone="petrol"
             isDark={isDark}

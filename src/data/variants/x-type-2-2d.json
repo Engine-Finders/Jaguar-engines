@@ -299,7 +299,7 @@
           "label": "Immediate",
           "text": "if you hear whistling or experience power loss, book an inspection immediately"
         },
-        "recommendation": "The Duratorq engine has well‑documented turbocharger issues, including turbo actuator failure and oil leaks from the turbocharger. The turbocharger can develop a leak, causing the engine to burn oil and emit smoke. If you notice a whistling sound or loss of power, have the boost system inspected immediately. Regular oil changes with the correct BMW‑approved oil and allowing the engine to cool after hard driving are the best prevention.",
+        "recommendation": "The Duratorq engine has well‑documented turbocharger issues, including turbo actuator failure and oil leaks from the turbocharger. The turbocharger can develop a leak, causing the engine to burn oil and emit smoke. If you notice a whistling sound or loss of power, have the boost system inspected immediately. Regular oil changes with the correct Jaguar‑approved oil and allowing the engine to cool after hard driving are the best prevention.",
         "failureLink": {
           "label": "",
           "href": "/failures/turbocharger-failure/"

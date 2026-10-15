@@ -57,9 +57,9 @@ const f30Fallback = {
 };
 
 const trustItems = [
-  { title: "Transparent", text: "Real UK Prices", icon: "pound" },
+  { title: "Transparent", text: "Real UK Prices", icon: "pound-shield" },
   { title: "Quality Assured", text: "Tested Engines", icon: "engine" },
-  { title: "Fitted by Experts", text: "Trusted Garages", icon: "wrench" },
+  { title: "Fitted by Experts", text: "Trusted Garages", icon: "fitting-engine" },
   { title: "12 Months", text: "Warranty", icon: "shield" },
 ];
 

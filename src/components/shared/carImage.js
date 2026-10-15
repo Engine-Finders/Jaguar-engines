@@ -37,8 +37,7 @@ const ENGINE_CAR = [
 const GENERATION_ALIAS = {
   "series 1": "series i",
   "series 2": "series ii",
-  "series 3": "series ii",
-  "series iii": "series ii",
+  "series 3": "series iii",
 };
 
 // Photo views, in the order a section falls back to when a model runs out of unused photos.
@@ -148,6 +147,14 @@ export function heroCarFor(model) {
   return carImages.heroes[model] || null;
 }
 
+/**
+ * Hero overlay for one generation ("xf|x250", from carKeyFor): a 45-degree cut-out at 20-25 KB,
+ * plus `car`, the pool photo it was made from, so the rest of the page can avoid it.
+ */
+export function generationHeroFor(key) {
+  return (key && carImages.generationHeroes[key]) || null;
+}
+
 /** Jaguar's own hero background (no car) for the current theme. */
 export function heroBackground(isDark) {
   return isDark ? carImages.background.dark : carImages.background.light;
@@ -164,6 +171,7 @@ const ENGINE_PATTERNS = [
   [/\baj133\b/, "aj133"],
   [/\baj126\b|\b306ps\b/, "aj126"],
   [/\bajd-?v6\b|\bajd\b|\b306dt\b|\b276dt\b|\btdv6\b|\btdvi\b|\bajtdv6\b/, "ajd-v6"],
+  [/\baj20p6\b|\baj300p\b/, "aj300p"],
   [/\baj20d6\b|\baj300d?\b/, "aj300d"],
   [/\b224dt\b/, "224dt"],
   [/\baj200p\b|\bpt204\b|\b204pt\b|\baj20p4\b|\bingenium petrol\b|\bp(?:200|250|300)\b/, "ingenium-petrol"],
@@ -200,13 +208,22 @@ export function landRoverImage() {
   return carImages.landRover;
 }
 
+// Other photo pools of the same model, nearest generation (by start year) first.
+function siblingKeys(key) {
+  const [model] = key.split("|");
+  const start = (k) => carImages.generationStart[k] ?? Infinity;
+  return Object.keys(POOL_FILES)
+    .filter((k) => k !== key && k.split("|")[0] === model)
+    .sort((a, b) => Math.abs(start(a) - start(key)) - Math.abs(start(b) - start(key)));
+}
+
 /**
  * Hands out car photos for one page so no photo is shown twice. Each section asks for all
  * its photos at once and gets one view (45-degree, side, front) for the whole section, so
  * rows stay consistent; colours rotate through black, grey, white, silver and dark blue.
  * When a model has fewer photos than the page needs, the least-used photo is repeated.
  */
-export function createCarPicker(alreadyUsed = []) {
+export function createCarPicker(alreadyUsed = [], { siblings = false } = {}) {
   const used = new Map();
   const colourCount = new Map();
 
@@ -255,6 +272,14 @@ export function createCarPicker(alreadyUsed = []) {
       for (const v of [sectionView, ...order.filter((o) => o !== sectionView)]) {
         const files = free(key, v);
         if (files.length) return takeForSection(files);
+      }
+      // `siblings`: out of photos of this generation, use the nearest generation of the same model
+      // rather than showing a photo twice.
+      for (const sibling of siblings ? siblingKeys(key) : []) {
+        for (const v of order) {
+          const files = free(sibling, v);
+          if (files.length) return takeForSection(files);
+        }
       }
       const pool = POOL_FILES[key]?.[sectionView] || POOL_FILES[key]?.["45"] || [];
       if (!pool.length) return null;

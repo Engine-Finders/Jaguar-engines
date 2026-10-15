@@ -9,14 +9,15 @@ import GenIcon from "../generation/GenIcons";
 import HomeIcon from "@/components/home/homeIcons";
 import { primaryCtaClass } from "./variantSection";
 
+// "🔧 Supply & Fit Available", "✅ 12-Month Warranty", "🚚 Nationwide Delivery", "👥 15+ Specialists"
 const BADGE_HOME_ICON_BY_EMOJI = {
-  "🔧": "repair",
-  "✅": "check",
+  "🔧": "fitting-engine",
+  "✅": "shield",
   "🚚": "uk-wide-delivery",
-  "👥": "users-team",
+  "👥": "expert",
 };
 
-const VARIANT_TRUST_BADGE_ICONS = ["repair", "check", "uk-wide-delivery", "users-team"];
+const VARIANT_TRUST_BADGE_ICONS = ["fitting-engine", "shield", "uk-wide-delivery", "expert"];
 
 function parseBadge(badge = "", index = 0) {
   const [emoji, ...rest] = badge.split(" ");
@@ -157,8 +158,11 @@ export default function VariantHero({ data }) {
   }
 
   const isDark = theme === "dark";
-  const heroImage = isDark ? "/320d/hero_dark.webp" : "/320d/hero_light.webp";
-  const heroImageMobile = isDark ? "/320d/hero_mobile_dark1.webp" : "/320d/hero_mobile_light1.webp";
+  // This car's generation standing in Jaguar's own scene, light or dark (set server-side), or the
+  // client's line-up scene when the model has no photo of its own (I-Pace). Laid out like the model hero.
+  const scene = data.heroScene;
+  const sceneSrc = scene ? (isDark && scene.darkSrc) || scene.src : null;
+  const carAlt = `Jaguar ${data.vehicle || ""}`.trim();
   const price = splitPriceAnchor(data.priceAnchor);
   const pill = splitTagPill(data.tagPill);
   const tickerItems = (data.ticker || "").replace(/^●\s*/, "").split(" · ").filter(Boolean);
@@ -191,8 +195,8 @@ export default function VariantHero({ data }) {
                 <span aria-hidden="true" className={`mx-3 my-0.5 w-px shrink-0 self-center ${dividerClass}`} style={{ height: "70%" }} />
               ) : null}
               <div className="flex w-full items-center gap-2 text-left">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center md:h-11 md:w-11">
-                  <HomeIcon name={icon} isDark={isDark} className="h-10 w-10 object-contain md:h-11 md:w-11" />
+                <span className="flex h-12 w-12 shrink-0 items-center justify-center md:h-14 md:w-14">
+                  <HomeIcon name={icon} isDark={isDark} className="h-12 w-12 object-contain md:h-14 md:w-14" />
                 </span>
                 <span className={`text-[0.88rem] leading-[1.3] ${badgeTextClass}`}>{label}</span>
               </div>
@@ -215,8 +219,8 @@ export default function VariantHero({ data }) {
               key={badge}
               className={`flex flex-col items-center gap-1 px-0.5 ${index > 0 ? `border-l ${dividerBorderClass}` : ""}`}
             >
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center">
-                <HomeIcon name={icon} isDark={isDark} className="h-10 w-10 object-contain" />
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center">
+                <HomeIcon name={icon} isDark={isDark} className="h-12 w-12 object-contain" />
               </span>
               <span className={`text-[0.58rem] leading-tight ${badgeTextClass}`}>{label}</span>
             </div>
@@ -232,7 +236,7 @@ export default function VariantHero({ data }) {
 
   const priceRow = data.priceAnchor ? (
     <div className="flex flex-wrap items-center gap-2 text-[0.74rem] md:text-[0.92rem]">
-      <GenIcon name="tag" className="h-4 w-4 shrink-0 text-[var(--color-primary)] md:h-5 md:w-5" />
+      <GenIcon name="tag" className="h-6 w-6 shrink-0 md:h-7 md:w-7" />
       <span className={`font-semibold ${headingClass} ${priceLinkClass}`} dangerouslySetInnerHTML={{ __html: price.headline }} />
       {price.note ? (
         <span className={`hidden md:inline ${bodyTextClass} ${priceLinkClass}`}>
@@ -281,7 +285,7 @@ export default function VariantHero({ data }) {
   // Icon sits left, vertically centered against both text lines.
   const mobileEngineSummaryCard = data.priceAnchor ? (
     <div className={`mt-1.5 flex w-full items-center gap-3 rounded-md border ${cardBorderClass} ${cardBgClass} p-2.5 backdrop-blur-sm md:hidden`}>
-      <GenIcon name="tag" className="h-4 w-4 shrink-0 text-[var(--color-primary)]" />
+      <GenIcon name="tag" className="h-9 w-9 shrink-0" />
       <div className="flex min-w-0 flex-col gap-0.5">
         <span
           className={`text-[0.74rem] font-semibold ${headingClass} ${priceLinkClass}`}
@@ -311,26 +315,18 @@ export default function VariantHero({ data }) {
 
   return (
     <>
-      {/* Mobile height accounts for the sticky Navbar above it (~84px) so the
-          hero + navbar together fit exactly one screen, instead of the navbar
-          pushing the hero's bottom content past the fold. */}
-      <section className={`relative min-h-[calc(100svh-84px)] w-full overflow-x-hidden bg-[var(--color-page)] md:h-[78svh] md:min-h-0 md:overflow-hidden ${headingClass}`}>
-        {/* Section is a fixed one-screen-tall block on mobile, so the image and
-            content both fill exactly 100svh with no overflow/scroll inside the hero. */}
-        <div className="absolute inset-0">
-          <Image src={heroImageMobile} alt="BMW 320d" fill className="object-cover object-center md:hidden" sizes="100vw" priority />
-          <Image src={heroImage} alt="BMW 320d" fill className="hidden object-cover object-[68%_center] md:block" sizes="100vw" priority />
-          {isDark ? (
-            <>
-              <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(11,12,12,0.55)_0%,rgba(11,12,12,0.3)_45%,rgba(11,12,12,0.85)_100%)] md:hidden" />
-              <div className="absolute inset-0 hidden bg-[linear-gradient(90deg,rgba(11,12,12,0.85)_0%,rgba(11,12,12,0.5)_42%,rgba(11,12,12,0.15)_75%)] md:block" />
-            </>
-          ) : (
-            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.92)_0%,rgba(255,255,255,0.5)_30%,transparent_48%)] md:hidden" />
-          )}
-        </div>
+      <section className={`relative w-full overflow-hidden bg-[var(--color-page)] xl:min-h-[640px] ${headingClass}`}>
+        {/* Desktop: the scene sits on the right and fades in from the page colour, as on the model page.
+            Below 1600px it starts a third of the way in so the copy stays on plain page colour. */}
+        {sceneSrc ? (
+          <div className="absolute inset-y-0 left-[34%] right-0 hidden xl:block min-[1600px]:left-auto min-[1600px]:aspect-[1200/676]">
+            <Image src={sceneSrc} alt={carAlt} fill className="object-cover object-right" sizes="(min-width: 1280px) 1200px, 100vw" priority />
+            <div className="absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,color-mix(in_srgb,var(--color-page)_88%,transparent)_16%,color-mix(in_srgb,var(--color-page)_45%,transparent)_34%,transparent_56%)]" />
+            <div className="absolute inset-x-0 bottom-0 h-40 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)]" />
+          </div>
+        ) : null}
 
-        <div className="relative mx-auto flex min-h-[calc(100svh-84px)] w-full max-w-8xl flex-col justify-between px-4 pb-3 pt-2 md:h-full md:min-h-0 md:justify-start md:px-8 md:pb-6 md:pt-4">
+        <div className="relative mx-auto flex w-full max-w-8xl flex-col px-4 pb-4 pt-2 md:px-8 md:pb-6 md:pt-5 xl:min-h-[640px] xl:justify-center xl:py-8">
           <div className="flex w-full max-w-[640px] flex-col gap-1.5 md:gap-2">
             <span className={`inline-flex w-fit max-w-full flex-wrap items-center gap-x-2 gap-y-1 rounded-md border px-3 py-2 text-[0.82rem] leading-[1.35] md:px-2.5 md:py-1.5 md:text-[0.78rem] ${tagPillClass}`}>
               <GenIcon name="car" className="h-3.5 w-3.5 shrink-0 text-[var(--color-primary)]" />
@@ -356,10 +352,19 @@ export default function VariantHero({ data }) {
             <MStripe />
 
             <p
-              className={`max-w-[78%] text-[0.88rem] leading-[1.42] md:max-w-[560px] md:text-[0.92rem] md:leading-[1.35] ${isDark ? "text-white/85" : "text-black"} ${heroDescriptionShadow}`}
+              className={`max-w-full text-[0.88rem] leading-[1.42] md:max-w-[560px] md:text-[0.92rem] md:leading-[1.35] ${isDark ? "text-white/85" : "text-black"} ${heroDescriptionShadow}`}
               dangerouslySetInnerHTML={{ __html: data.subHeadline }}
             />
           </div>
+
+          {/* Phones, tablets + small laptops: the scene as its own band, so it never sits behind the copy */}
+          {sceneSrc ? (
+            <div className="relative -mx-4 my-3 aspect-[16/10] max-h-[440px] w-[calc(100%+2rem)] overflow-hidden md:-mx-8 md:w-[calc(100%+4rem)] xl:hidden">
+              <Image src={sceneSrc} alt={carAlt} fill className="object-cover object-[70%_center]" sizes="100vw" priority />
+              <div className="absolute inset-x-0 top-0 h-14 bg-[linear-gradient(180deg,var(--color-page)_0%,transparent_100%)]" />
+              <div className="absolute inset-x-0 bottom-0 h-14 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)]" />
+            </div>
+          ) : null}
 
           <div className="flex w-full max-w-[820px] flex-col gap-1.5 md:gap-2">
             {desktopTrustBadges}

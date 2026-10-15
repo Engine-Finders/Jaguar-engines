@@ -148,7 +148,7 @@ function StatCard({ item, index, isDark }) {
   );
 }
 
-export default function EngineHero({ data }) {
+export default function EngineHero({ data, engineImage, heroCar }) {
   const { theme } = useTheme();
 
   if (!data) return null;
@@ -216,14 +216,26 @@ export default function EngineHero({ data }) {
           <div className="relative order-2 flex min-h-[220px] items-end justify-center md:min-h-[400px] md:justify-end">
             <div className="absolute inset-x-0 bottom-[8%] mx-auto h-[150px] w-[92%] rounded-[50%] border border-[var(--color-border-strong)]/45 md:bottom-[3%] md:h-[200px] md:w-[86%]" />
             <div className="absolute inset-x-0 bottom-[11%] mx-auto h-[104px] w-[72%] rounded-[50%] border border-[var(--color-border)]/55 md:bottom-[7%] md:h-[140px] md:w-[64%]" />
-            <Image
-              src="/e90/engine.webp"
-              alt={normalizeText(data.h1)}
-              width={522}
-              height={608}
-              priority
-              className="relative z-10 mx-auto h-auto w-[64%] max-w-[270px] object-contain drop-shadow-[0_28px_48px_rgba(0,0,0,0.35)] md:ml-auto md:w-full md:max-w-[460px]"
-            />
+            {/* The engine's photo (set server-side); engines with none show the car they are best known in */}
+            {engineImage ? (
+              <Image
+                src={engineImage}
+                alt={normalizeText(data.h1)}
+                width={540}
+                height={540}
+                priority
+                className="relative z-10 mx-auto h-auto w-[64%] max-w-[270px] object-contain drop-shadow-[0_28px_48px_rgba(0,0,0,0.35)] md:ml-auto md:w-full md:max-w-[460px]"
+              />
+            ) : heroCar ? (
+              <Image
+                src={heroCar.src}
+                alt=""
+                width={heroCar.width}
+                height={heroCar.height}
+                priority
+                className="relative z-10 mx-auto mb-[6%] h-auto w-[86%] max-w-[420px] object-contain md:mb-[4%] md:ml-auto md:w-full md:max-w-[520px]"
+              />
+            ) : null}
           </div>
         </div>
 

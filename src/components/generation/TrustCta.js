@@ -2,15 +2,11 @@
 
 import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
+import { heroBackground } from "@/components/shared/carImage";
 import GenIcon from "./GenIcons";
 import HomeIcon from "@/components/home/homeIcons";
 import GenerationSectionHeader from "./GenerationSectionHeader";
-import {
-  generationSectionBg,
-  resolveGenerationHeroAlt,
-  resolveGenerationHeroImage,
-  splitTrustCtaH2,
-} from "./generationSection";
+import { generationSectionBg, splitTrustCtaH2 } from "./generationSection";
 
 const TRUST_POINT_ICONS = ["genuine-failure-data", "honest-verdict", "vetted-specialist"];
 
@@ -44,7 +40,7 @@ function TrustPoint({ point, icon, isDark }) {
       <span
         className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-md border ${trustPointIconBoxClass(isDark)}`}
       >
-        <HomeIcon name={icon} isDark={isDark} className="h-8 w-8 object-contain" />
+        <HomeIcon name={icon} isDark={isDark} className="h-9 w-9 object-contain" />
       </span>
       <div className="min-w-0 flex-1 pt-0.5">
         <p
@@ -60,15 +56,15 @@ function TrustPoint({ point, icon, isDark }) {
   );
 }
 
-export default function TrustCta({ data, hero }) {
+export default function TrustCta({ data }) {
   const { theme } = useTheme();
   if (!data) return null;
 
   const isDark = theme === "dark";
   const sectionBg = generationSectionBg(isDark, true);
   const title = splitTrustCtaH2(data.h2 || "Trust JaguarEngine.uk");
-  const image = resolveGenerationHeroImage(hero, isDark);
-  const imageAlt = resolveGenerationHeroAlt(hero);
+  // The model's line-up scene (set server-side), else Jaguar's own background.
+  const image = data.image || heroBackground(isDark);
   const ctaHref = data.ctaButton?.href || "/quote";
   const ctaLabel = data.ctaButton?.label?.replace(/\s*→\s*$/, "").trim();
 
@@ -94,9 +90,9 @@ export default function TrustCta({ data, hero }) {
           <div className="relative h-[160px] overflow-hidden rounded-md border border-[var(--color-border)] shadow-[0_14px_40px_var(--color-shadow)] sm:h-[180px] lg:h-[200px]">
             <Image
               src={image}
-              alt={imageAlt}
+              alt=""
               fill
-              className="object-cover object-[68%_center]"
+              className="object-cover object-[center_62%]"
               sizes="(max-width: 1024px) 100vw, 520px"
             />
           </div>

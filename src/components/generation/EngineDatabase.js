@@ -24,7 +24,9 @@ const MOBILE_HEADER_CELL = "min-w-0 break-words px-2.5 py-2.5 leading-[1.3]";
 const MOBILE_HEADERS = ["Engine Code", "Fuel", "Power", "Years", "Reliability", "Enquiries", "Avg. Recon Cost"];
 
 function FuelIcon({ fuel = "", className }) {
-  return <GenIcon name={fuel.toLowerCase().includes("diesel") ? "engine" : "car"} className={className} />;
+  const value = fuel.toLowerCase();
+  const name = value.includes("diesel") ? "diesel" : /hybrid|phev|electric|\bev\b/.test(value) ? "ev" : "fuel";
+  return <GenIcon name={name} className={className} />;
 }
 
 function Stars({ value = "", className = "text-[1rem]" }) {
@@ -95,7 +97,7 @@ function DesktopRow({ engine, isDark }) {
       <span className={`min-w-0 px-2 font-semibold border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: engine.engineCode }} />
       <span className={`min-w-0 px-2 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: engine.family }} />
       <span className={`flex min-w-0 items-center gap-1.5 px-2 ${mutedText} border-r ${cellDivider}`}>
-        <FuelIcon fuel={engine.fuel} className="h-3.5 w-3.5 shrink-0" />
+        <FuelIcon fuel={engine.fuel} className="h-5 w-5 shrink-0" />
         <span className="min-w-0" dangerouslySetInnerHTML={{ __html: engine.fuel }} />
       </span>
       <span className={`min-w-0 px-2 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: engine.displacement }} />
@@ -133,7 +135,7 @@ function MobileRow({ engine, isDark }) {
         <span className={`mt-0.5 block text-[0.64rem] [overflow-wrap:anywhere] ${softText}`} dangerouslySetInnerHTML={{ __html: engine.family }} />
       </span>
       <span className={`flex items-start gap-1.5 ${MOBILE_CELL} ${mutedText} border-r ${cellDivider}`}>
-        <FuelIcon fuel={engine.fuel} className="mt-0.5 h-3.5 w-3.5 shrink-0" />
+        <FuelIcon fuel={engine.fuel} className="h-5 w-5 shrink-0" />
         <span className="min-w-0 [overflow-wrap:anywhere]" dangerouslySetInnerHTML={{ __html: engine.fuel }} />
       </span>
       <span className={`${MOBILE_CELL} ${mutedText} border-r ${cellDivider} [overflow-wrap:anywhere]`} dangerouslySetInnerHTML={{ __html: engine.power }} />
@@ -199,7 +201,7 @@ export default function EngineDatabase({ data }) {
           <div className="mt-5 grid grid-cols-1 items-center gap-4 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-4 md:grid-cols-[72px_1fr_1fr_1fr_1.4fr] md:items-start md:gap-0 md:divide-x md:divide-[var(--color-border)]">
             <div className="flex items-start justify-start md:pr-4">
               <span className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-md ${primaryBadgeClass(isDark)}`}>
-                <GenIcon name="shield" className="h-8 w-8" />
+                <GenIcon name="shield" inverted className="h-9 w-9" />
               </span>
             </div>
             {data.confidenceScore.items.map((item, index) => {
