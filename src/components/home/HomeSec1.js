@@ -7,10 +7,10 @@ import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
 import { heroBackground } from "@/components/shared/carImage";
 
-// Front-view XF cut out on a transparent background (kept at 20-25 KB for a fast first paint).
+// 45° front-view XF (nose pointing left) cut out on a transparent background (kept at 20-25 KB for a fast first paint).
 const HERO_CAR = {
-  light: { src: "/hero/home-xf-light.webp", width: 657, height: 520 },
-  dark: { src: "/hero/home-xf-dark.webp", width: 570, height: 465 },
+  light: { src: "/hero/home-xf45-light.webp", width: 639, height: 340 },
+  dark: { src: "/hero/home-xf45-dark.webp", width: 640, height: 347 },
 };
 
 const trustStripIconKeys = [
@@ -139,9 +139,9 @@ export default function HomeSec1({ data }) {
         {/* Desktop: car on the right, wholly inside the content width and clear of the badge panel */}
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute right-36 top-[25%] hidden w-[min(29%,400px)] xl:block 2xl:right-44"
+          className="pointer-events-none absolute right-24 top-[30%] hidden w-[min(36%,500px)] xl:block 2xl:right-32"
         >
-          <Image src={car.src} alt="" width={car.width} height={car.height} className="h-auto w-full" sizes="400px" priority />
+          <Image src={car.src} alt="" width={car.width} height={car.height} className="h-auto w-full" sizes="500px" priority />
         </div>
 
         <div className="relative flex w-full flex-col gap-3 md:gap-4 xl:max-w-[720px]">
