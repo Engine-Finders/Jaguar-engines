@@ -39,7 +39,7 @@ function engineImageForCard(item, generationCode = "") {
 
 const typeStyles = {
   dieselBest: {
-    icon: "check",
+    icon: "diesel",
     color: "#189454",
     colorDark: "#22a866",
     accent: "border-b-[#189454]",
@@ -47,7 +47,7 @@ const typeStyles = {
     labelDark: "text-[#3ecf7a]",
   },
   petrolBest: {
-    icon: "gauge",
+    icon: "fuel",
     color: "#2484ff",
     colorDark: "#4da0ff",
     accent: "border-b-[#2484ff]",
@@ -55,7 +55,7 @@ const typeStyles = {
     labelDark: "text-[#6bb4ff]",
   },
   danger: {
-    icon: "warning",
+    icon: "fire",
     color: "#e03232",
     colorDark: "#f04a4a",
     accent: "border-b-[#e03232]",
@@ -79,7 +79,7 @@ const typeStyles = {
     labelDark: "text-[#3ecf7a]",
   },
   crown: {
-    icon: "shield",
+    icon: "search",
     color: "#111210",
     colorDark: "#c8c9c4",
     accent: "border-b-[var(--color-primary)]",
@@ -105,12 +105,14 @@ function slotStyleKey(slot = "", type) {
 function resolveStyle(item, isDark = false) {
   const key = slotStyleKey(item.slot, item.type);
   const base = typeStyles[key] || typeStyles.dieselBest;
+  const iconInverted = key === "crown";
   if (!isDark) {
-    return { ...base, iconTextClass: "text-white" };
+    return { ...base, iconInverted, iconTextClass: "text-white" };
   }
 
   return {
     ...base,
+    iconInverted,
     color: base.colorDark || base.color,
     label: base.labelDark || base.label,
     iconTextClass: key === "crown" ? "text-black" : "text-white",
@@ -188,10 +190,10 @@ function EngineCard({ item, generationCode, isDark }) {
       <div className="flex flex-1 flex-col p-4">
         <div className="flex items-center gap-2.5">
           <span
-            className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full ${style.iconTextClass}`}
+            className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${style.iconTextClass}`}
             style={{ backgroundColor: style.color }}
           >
-            <GenIcon name={style.icon} className="h-4 w-4" />
+            <GenIcon name={style.icon} onDark={!style.iconInverted} inverted={style.iconInverted} className="h-6 w-6" />
           </span>
           <p className={`text-[0.68rem] font-bold uppercase tracking-[0.08em] ${style.label}`} dangerouslySetInnerHTML={{ __html: item.slot }} />
         </div>
@@ -306,7 +308,7 @@ function OverlookedBanner({ item, databaseCta, isDark }) {
             }`}
           >
             <span className={`flex h-12 w-12 items-center justify-center rounded-full ${isDark ? "bg-white/10" : "bg-[var(--color-page-soft)]"}`}>
-              <HomeIcon name="shield" isDark={isDark} className="h-7 w-7 object-contain" />
+              <HomeIcon name="shield" isDark={isDark} className="h-8 w-8 object-contain" />
             </span>
           </span>
         </div>

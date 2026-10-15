@@ -4,9 +4,9 @@ import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 import { useTheme } from "@/components/shared/themeProvider";
 import MStripe from "@/components/reusableComponents/MStripe";
 import GenIcon from "../generation/GenIcons";
+import { marketIconFor } from "@/components/shared/labelIcons";
 import { variantSectionBg, VariantSectionHeading, primaryBadgeClass } from "./variantSection";
 
-const ITEM_ICONS = ["warning", "gauge", "dollar", "tag", "clock", "chart"];
 const UK_REGIONS_GEO = "/320d/uk-regions-topo.json";
 
 // England's 9 electoral regions (used as a stand-in for Government Office
@@ -190,7 +190,7 @@ export default function MarketIntelligence({ data }) {
                       <div key={item.label} className="glass-panel flex flex-col gap-2 rounded-md p-4">
                         <div className="flex items-center gap-3">
                           <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
-                            <GenIcon name="chart" className="h-4.5 w-4.5" />
+                            <GenIcon name={marketIconFor(item.label)} className="h-6 w-6" />
                           </span>
                           <p className="text-[0.88rem] font-semibold uppercase tracking-wide text-[var(--color-primary)] md:text-[0.95rem]">{item.label}</p>
                         </div>
@@ -211,7 +211,7 @@ export default function MarketIntelligence({ data }) {
                     <div key={item.label} className="flex flex-col justify-between rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-5 shadow-sm">
                       <div className="flex items-center gap-3">
                         <span className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full ${primaryBadgeClass(isDark)}`}>
-                          <GenIcon name={ITEM_ICONS[index % ITEM_ICONS.length]} className="h-5 w-5" />
+                          <GenIcon name={marketIconFor(item.label)} inverted className="h-8 w-8" />
                         </span>
                         <div className="flex min-w-0 flex-col gap-0.5">
                           <p className="text-[0.88rem] font-semibold leading-snug text-[var(--color-text)] md:text-[0.95rem]">{item.label}</p>

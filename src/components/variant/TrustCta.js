@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
+import CarOnBackground from "@/components/shared/CarOnBackground";
 import MStripe from "@/components/reusableComponents/MStripe";
 import GenIcon from "../generation/GenIcons";
 import { variantSectionBg, VariantSectionHeading, primaryBadgeClass } from "./variantSection";
@@ -11,9 +12,9 @@ const pointIcons = ["shield", "scale", "truck"];
 // Generic trust guarantees, not tied to page-specific copy - same 5 columns
 // regardless of which variant page this renders on.
 const TICKER_ITEMS = [
-  { icon: "tag", title: "100% Free", text: "No hidden fees" },
-  { icon: "check", title: "No Obligation", text: "Get quotes with zero pressure" },
-  { icon: "users", title: "UK Specialists", text: "20+ vetted experts" },
+  { icon: "pound-shield", title: "100% Free", text: "No hidden fees" },
+  { icon: "handshake", title: "No Obligation", text: "Get quotes with zero pressure" },
+  { icon: "expert", title: "UK Specialists", text: "20+ vetted experts" },
   { icon: "shield", title: "12-Month Warranty", text: "As standard" },
   { icon: "truck", title: "Nationwide Delivery", text: "Supply & fit available" },
 ];
@@ -23,7 +24,9 @@ export default function TrustCta({ data }) {
   if (!data) return null;
 
   const isDark = theme === "dark";
-  const image = isDark ? "/320d/trust_dark.webp" : "/320d/trust_light.webp";
+  // This car (left) and its engine (right), set server-side, on Jaguar's own background; desktop only,
+  // so the stacked copy on phones sits on plain background.
+  const carAlt = `Jaguar ${data.vehicle || ""}`.trim();
   const headingClass = isDark ? "text-white" : "text-[var(--color-text)]";
   const bodyTextClass = isDark ? "text-white/80" : "text-[var(--color-text-muted)]";
 
@@ -41,7 +44,7 @@ export default function TrustCta({ data }) {
               <li key={point.title} className="flex flex-col gap-2.5 rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] p-5 shadow-sm">
                 <div className="flex items-start gap-4">
                   <span className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full ${primaryBadgeClass(isDark)}`}>
-                    <GenIcon name={point.icon || pointIcons[index % pointIcons.length]} className="h-5.5 w-5.5" />
+                    <GenIcon name={point.icon || pointIcons[index % pointIcons.length]} inverted className="h-8 w-8" />
                   </span>
                   <p className="font-heading min-w-0 pt-1 text-[1.15rem] font-bold leading-snug text-[var(--color-text)] md:text-[1.25rem]">{point.title}</p>
                 </div>
@@ -53,9 +56,25 @@ export default function TrustCta({ data }) {
 
         {data.finalCta || data.ctaButton ? (
           <div className="relative mt-6 overflow-hidden rounded-xl border border-[var(--color-border)]">
-            <div className="absolute inset-0">
-              <Image src={image} alt="BMW 320d" fill className="object-cover" sizes="100vw" />
-            </div>
+            <CarOnBackground
+              src={data.image}
+              alt={carAlt}
+              isDark={isDark}
+              className="absolute inset-0"
+              carClassName="left-[3%] top-[12%] bottom-[8%] hidden w-[26%] md:block"
+              overlayClassName={
+                isDark
+                  ? "bg-[radial-gradient(ellipse_at_center,rgba(11,12,12,0.88)_0%,rgba(11,12,12,0.7)_45%,rgba(11,12,12,0.2)_80%)]"
+                  : "bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.92)_0%,rgba(255,255,255,0.75)_45%,rgba(255,255,255,0.15)_80%)]"
+              }
+              sizes="360px"
+            >
+              {data.engineImage ? (
+                <div className="absolute bottom-[8%] right-[3%] top-[12%] hidden w-[22%] md:block">
+                  <Image src={data.engineImage} alt={`${carAlt} engine`} fill className="object-contain" sizes="300px" />
+                </div>
+              ) : null}
+            </CarOnBackground>
 
             <div className="relative flex w-full flex-col items-center gap-4 p-5 text-center md:min-h-[200px] md:flex-row md:justify-center md:p-8">
               <div className="flex max-w-[520px] flex-col items-center gap-3">
@@ -92,7 +111,7 @@ export default function TrustCta({ data }) {
                         <span aria-hidden="true" className="mx-3 my-1 w-px shrink-0 self-center bg-[var(--color-border)]" style={{ height: "70%" }} />
                       ) : null}
                       <div className="flex flex-1 items-center gap-2.5">
-                        <GenIcon name={item.icon} className="h-5 w-5 shrink-0 text-[var(--color-primary)]" />
+                        <GenIcon name={item.icon} className="h-8 w-8 shrink-0" />
                         <div className="min-w-0">
                           <p className="text-[0.8rem] font-semibold leading-tight text-[var(--color-text)]">{item.title}</p>
                           <p className="text-[0.7rem] leading-tight text-[var(--color-text-muted)]">{item.text}</p>
@@ -113,7 +132,7 @@ export default function TrustCta({ data }) {
                   <span aria-hidden="true" className="mx-3 my-1 w-px shrink-0 self-center bg-[var(--color-border)]" style={{ height: "70%" }} />
                 ) : null}
                 <div className="flex items-center gap-2.5">
-                  <GenIcon name={item.icon} className="h-5 w-5 shrink-0 text-[var(--color-primary)]" />
+                  <GenIcon name={item.icon} className="h-8 w-8 shrink-0" />
                   <div className="min-w-0">
                     <p className="text-[0.8rem] font-semibold leading-tight text-[var(--color-text)]">{item.title}</p>
                     <p className="text-[0.7rem] leading-tight text-[var(--color-text-muted)]">{item.text}</p>

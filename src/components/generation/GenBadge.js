@@ -1,5 +1,5 @@
 const styles = {
-  "BMW-VERIFIED": {
+  "JAG-VERIFIED": {
     light: "border-[#bfe6cd] bg-[#eafaf0] text-[#13884a]",
     dark: "border-[rgba(24,148,84,0.34)] bg-[rgba(24,148,84,0.16)] text-[#67d99a]",
   },

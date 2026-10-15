@@ -3,6 +3,7 @@
 import { Fragment } from "react";
 import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
+import CarOnBackground from "@/components/shared/CarOnBackground";
 import MStripe from "@/components/reusableComponents/MStripe";
 import GenIcon from "../generation/GenIcons";
 import { variantSectionBg, VariantSectionHeading, tableHeaderClass, primaryBadgeClass, primaryCtaClass, stripCtaArrow } from "./variantSection";
@@ -12,11 +13,11 @@ const MOBILE_COLS = "grid-cols-[220px_110px_140px_240px]";
 
 // Generic trust guarantees for the bottom ticker bar - not tied to page-specific copy.
 const TRUST_TICKER = [
-  { icon: "shield", label: "20+ Vetted Specialists UK Network" },
-  { icon: "check", label: "12-Month Warranty as Standard" },
+  { icon: "vetted-specialist", label: "20+ Vetted Specialists UK Network" },
+  { icon: "shield", label: "12-Month Warranty as Standard" },
   { icon: "truck", label: "Nationwide Delivery & Collection" },
   { icon: "dollar", label: "Transparent Pricing, No Hidden Fees" },
-  { icon: "users", label: "Thousands of 320d Owners Helped" },
+  { icon: "users", label: "Thousands of Jaguar Owners Helped" },
 ];
 
 function repairableTone(repairable = "") {
@@ -74,7 +75,7 @@ function CheckList({ title, items, icon, tone, toneBorder, toneBg }) {
   return (
     <div className={`flex h-full flex-1 flex-col rounded-md border ${toneBorder} ${toneBg}`}>
       <p className={`flex items-center gap-2 border-b ${toneBorder} px-3 py-2.5 text-[0.82rem] font-semibold uppercase tracking-wide ${tone}`}>
-        <GenIcon name={icon} className="h-4 w-4" />
+        <GenIcon name={icon} className="h-6 w-6" />
         {title}
       </p>
       <ul className="flex flex-1 flex-col">
@@ -85,7 +86,7 @@ function CheckList({ title, items, icon, tone, toneBorder, toneBg }) {
               index > 0 ? `border-t ${toneBorder}` : ""
             }`}
           >
-            <GenIcon name={icon} className={`mt-0.5 h-3.5 w-3.5 shrink-0 ${tone}`} />
+            <GenIcon name={icon} className="h-5 w-5 shrink-0" />
             <span dangerouslySetInnerHTML={{ __html: item.replace(/^\*\s*/, "") }} />
           </li>
         ))}
@@ -99,8 +100,10 @@ export default function RepairBuyOrReplace({ data }) {
   if (!data) return null;
 
   const isDark = theme === "dark";
-  const image = isDark ? "/320d/repair_dark.webp" : "/320d/repair_light.webp";
-  const imageMobile = isDark ? "/320d/repair_mobile_dark.webp" : "/320d/repair_mobile_light.webp";
+  // This car's photo and engine photo (set server-side); the engine graphic hides when there is none.
+  const vehicle = data.vehicle || "Jaguar";
+  const carAlt = `Jaguar ${data.vehicle || ""}`.trim();
+  const engineImage = data.engineImage;
   const headerBg = tableHeaderClass(isDark);
   const headerDivider = isDark ? "border-white/20" : "border-white/25";
   const headingClass = isDark ? "text-white" : "text-[var(--color-text)]";
@@ -114,7 +117,14 @@ export default function RepairBuyOrReplace({ data }) {
           text flows below it in normal page flow. */}
       <div className="relative w-full overflow-hidden md:hidden">
         <div className="relative h-[220px] w-full bg-[var(--color-page)]">
-          <Image src={imageMobile} alt="BMW 320d" fill className="object-contain" sizes="100vw" />
+          <CarOnBackground
+            src={data.image}
+            alt={carAlt}
+            isDark={isDark}
+            className="absolute inset-0"
+            carClassName="inset-x-[8%] top-[10%] bottom-[14%]"
+            sizes="100vw"
+          />
           {isDark ? (
             <div className="absolute inset-x-0 bottom-0 h-16 bg-[linear-gradient(0deg,rgba(0,0,0,0.85)_0%,transparent_100%)]" />
           ) : (
@@ -128,7 +138,7 @@ export default function RepairBuyOrReplace({ data }) {
             <MStripe />
           </div>
           <p className={`mt-4 max-w-[560px] text-[0.88rem] leading-[1.45] ${bodyTextClass}`}>
-            Every 320d has a story. Make the right call with clear data, real-world costs, and honest guidance from UK specialists.
+            Every {vehicle} has a story. Make the right call with clear data, real-world costs, and honest guidance from UK specialists.
           </p>
         </div>
       </div>
@@ -136,10 +146,15 @@ export default function RepairBuyOrReplace({ data }) {
       {/* Desktop: unchanged - bg image behind title/subtitle only */}
       <div className="relative hidden w-full overflow-hidden md:block">
         <div className="absolute inset-0">
-          <Image src={image} alt="BMW 320d" fill className="object-cover object-right" sizes="100vw" />
-          {isDark ? (
-            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(11,12,12,0.95)_0%,rgba(11,12,12,0.75)_45%,rgba(11,12,12,0.15)_85%)]" />
-          ) : null}
+          <CarOnBackground
+            src={data.image}
+            alt={carAlt}
+            isDark={isDark}
+            className="absolute inset-0"
+            carClassName="right-[5%] top-[10%] bottom-[8%] w-[min(42%,560px)]"
+            overlayClassName={isDark ? "bg-[linear-gradient(90deg,rgba(11,12,12,0.95)_0%,rgba(11,12,12,0.75)_45%,rgba(11,12,12,0.15)_85%)]" : "bg-[linear-gradient(90deg,rgba(255,255,255,0.96)_0%,rgba(255,255,255,0.84)_42%,rgba(255,255,255,0.12)_80%)]"}
+            sizes="560px"
+          />
         </div>
 
         <div className="relative mx-auto w-full max-w-8xl px-4 py-5 md:px-8 md:py-6">
@@ -148,7 +163,7 @@ export default function RepairBuyOrReplace({ data }) {
             <MStripe />
           </div>
           <p className={`mt-4 max-w-[560px] text-[0.88rem] leading-[1.45] md:text-[1rem] ${bodyTextClass}`}>
-            Every 320d has a story. Make the right call with clear data, real-world costs, and honest guidance from UK specialists.
+            Every {vehicle} has a story. Make the right call with clear data, real-world costs, and honest guidance from UK specialists.
           </p>
         </div>
       </div>
@@ -158,7 +173,7 @@ export default function RepairBuyOrReplace({ data }) {
           {data.canItBeRepaired ? (
             <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-4 shadow-lg md:border-0 md:bg-transparent md:p-0 md:shadow-none">
               <p className="flex items-center gap-2 text-[0.95rem] font-bold uppercase tracking-wide text-[var(--color-text)]">
-                <GenIcon name="wrench" className="h-4.5 w-4.5 text-[var(--color-primary)]" />
+                <GenIcon name="wrench" className="h-7 w-7" />
                 {data.canItBeRepaired.title}
               </p>
               <div className="mt-3 max-w-full overflow-x-auto overscroll-x-contain rounded-md border border-[var(--color-border)] shadow-[0_14px_40px_var(--color-shadow)]">
@@ -191,7 +206,7 @@ export default function RepairBuyOrReplace({ data }) {
           {data.buyingChecks ? (
             <div className="flex h-full flex-col rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-4 shadow-lg md:border-0 md:bg-transparent md:p-0 md:shadow-none">
               <p className="flex items-center gap-2 text-[0.95rem] font-bold uppercase tracking-wide text-[var(--color-text)]">
-                <GenIcon name="cart" className="h-4.5 w-4.5 text-[var(--color-primary)]" />
+                <GenIcon name="cart" className="h-7 w-7" />
                 {data.buyingChecks.title}
               </p>
               <div className="mt-3 grid flex-1 grid-cols-1 gap-4 md:grid-cols-2">
@@ -221,7 +236,7 @@ export default function RepairBuyOrReplace({ data }) {
             <div className="glass-panel flex flex-col gap-2 rounded-md p-4 md:px-3">
               <div className="flex items-center gap-3">
                 <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${primaryBadgeClass(isDark)}`}>
-                  <GenIcon name="shield" className="h-4.5 w-4.5" />
+                  <GenIcon name="shield" inverted className="h-6 w-6" />
                 </span>
                 <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">Closing Verdict</p>
               </div>
@@ -235,17 +250,19 @@ export default function RepairBuyOrReplace({ data }) {
           {/* Desktop: small CTA card with the engine graphic faded in on the right */}
           {ctaLabel ? (
             <div className="glass-panel relative hidden flex-col gap-3 overflow-hidden rounded-md p-4 md:flex md:px-3">
-              <div className="pointer-events-none absolute inset-y-0 right-0 w-2/3">
-                <Image src="/320d/engine.webp" alt="" fill className="object-contain object-right opacity-15" sizes="300px" />
-                <div
-                  className="absolute inset-0"
-                  style={{ background: `linear-gradient(90deg, var(--color-surface-glass) 0%, transparent 55%)` }}
-                />
-              </div>
+              {engineImage ? (
+                <div className="pointer-events-none absolute inset-y-0 right-0 w-2/3">
+                  <Image src={engineImage} alt="" fill className="object-contain object-right opacity-15" sizes="300px" />
+                  <div
+                    className="absolute inset-0"
+                    style={{ background: `linear-gradient(90deg, var(--color-surface-glass) 0%, transparent 55%)` }}
+                  />
+                </div>
+              ) : null}
 
               <div className="relative z-10 flex items-start gap-3">
                 <span className="mt-0.5 flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
-                  <GenIcon name="dollar" className="h-6 w-6" />
+                  <GenIcon name="dollar" className="h-8 w-8" />
                 </span>
                 <p className="text-[1.15rem] font-semibold leading-[1.35] text-[var(--color-text)] md:text-[1.25rem]">
                   <span className="block">Don&apos;t guess.</span>
@@ -277,18 +294,20 @@ export default function RepairBuyOrReplace({ data }) {
                 <div className="flex min-w-0 flex-1 flex-col gap-2">
                   <div className="flex items-center gap-2.5">
                     <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${primaryBadgeClass(isDark)}`}>
-                      <GenIcon name="tag" className="h-4.5 w-4.5" />
+                      <GenIcon name="tag" inverted className="h-6 w-6" />
                     </span>
                     <h3 className="text-[1rem] font-bold leading-tight text-[var(--color-text)]">Don&apos;t Guess. Compare.</h3>
                   </div>
                   <p className="text-[0.8rem] leading-[1.45] text-[var(--color-text-muted)]">
-                    Get real quotes from vetted UK specialists and make the right call for your 320d.
+                    Get real quotes from vetted UK specialists and make the right call for your {vehicle}.
                   </p>
                 </div>
 
-                <div className="relative h-[96px] w-[96px] shrink-0">
-                  <Image src="/320d/engine.webp" alt="BMW 320d engine" fill className="object-contain" sizes="96px" />
-                </div>
+                {engineImage ? (
+                  <div className="relative h-[96px] w-[96px] shrink-0">
+                    <Image src={engineImage} alt={`${carAlt} engine`} fill className="object-contain" sizes="96px" />
+                  </div>
+                ) : null}
               </div>
 
               <a
@@ -308,7 +327,7 @@ export default function RepairBuyOrReplace({ data }) {
                   <span aria-hidden="true" className="mx-1.5 my-1 w-px shrink-0 self-center bg-[var(--color-border)]" style={{ height: "70%" }} />
                 ) : null}
                 <div className="flex w-full flex-col items-center gap-1 text-center">
-                  <GenIcon name={item.icon} className="h-4 w-4 shrink-0 text-[var(--color-primary)]" />
+                  <GenIcon name={item.icon} className="h-8 w-8 shrink-0" />
                   <span className="text-[0.56rem] font-semibold leading-tight text-[var(--color-text)]">{item.label}</span>
                 </div>
               </div>

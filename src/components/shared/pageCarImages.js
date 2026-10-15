@@ -1,12 +1,15 @@
 import {
+  carKeyFor,
   carModelFor,
   createCarPicker,
   engineImageFor,
+  generationHeroFor,
   heroCarFor,
   iPaceStandInImage,
   landRoverImage,
   modelEngineImage,
 } from "@/components/shared/carImage";
+import carImages from "@/data/shared/carImages.json";
 
 // Server-side: give every car slot on a page its own photo before the page renders, so
 // the same picture never shows twice on one page and colours vary from row to row.
@@ -32,7 +35,14 @@ export function withModelPageImages(data) {
   const pick = createCarPicker(hero?.cars || []);
   const out = { ...data };
 
-  if (out.hero) out.hero = { ...out.hero, model, heroCar: hero ? { src: hero.src, width: hero.width, height: hero.height } : null };
+  if (out.hero) {
+    out.hero = {
+      ...out.hero,
+      model,
+      heroCar: hero ? { src: hero.src, width: hero.width, height: hero.height } : null,
+      heroScene: hero?.scene || null,
+    };
+  }
 
   if (out.ownershipVerdict) {
     const [image] = pick([[out.ownershipVerdict.h2]]);
@@ -88,6 +98,187 @@ export function withModelPageImages(data) {
   }
 
   return out;
+}
+
+const I_PACE = /\bi[\s‐-―-]?pace\b/i;
+
+// Hero for a generation or variant page: that generation's car standing in Jaguar's own scene
+// (light and dark), or, for the I-Pace (no photo of its own), the client's I-Pace scene.
+// `used` is the pool photo it shows, so the rest of the page avoids it.
+function generationHero(key, model) {
+  const photo = generationHeroFor(key);
+  if (photo) return { heroScene: photo.scene, used: [photo.car] };
+  return { heroScene: heroCarFor(model)?.scene || null, used: [] };
+}
+
+// Ford Duratorq diesels (X-Type) have no photo; some copy labels them with Ingenium codes (AJ20D4).
+const NO_ENGINE_PHOTO = /duratorq|\bzsd\b/i;
+
+// First engine photo matching any of the texts (engine codes, titles), or null when none does.
+function firstEngineImage(...texts) {
+  for (const text of texts) {
+    const image = text && !NO_ENGINE_PHOTO.test(text) ? engineImageFor(stripTags(text)) : null;
+    if (image) return image;
+  }
+  return null;
+}
+
+// A bare "Ingenium" reads as the diesel; on a petrol-only page it is the petrol Ingenium.
+function forFuel(image, text) {
+  const isPetrol = /\bpetrol\b/i.test(text) && !/\bdiesel\b/i.test(text);
+  return isPetrol && image === engineImageFor("ingenium") ? engineImageFor("ingenium petrol") : image;
+}
+
+/** Generation page (/xf/x250, ...): that generation's photos, none shown twice. */
+export function withGenerationPageImages(data) {
+  if (!data) return data;
+  const hints = [stripTags(data.hero?.tagPill), stripTags(data.hero?.h1)];
+  const key = carKeyFor(...hints);
+  const model = carModelFor(...hints) || (I_PACE.test(hints.join(" ")) ? "i-pace" : null);
+  const { used, ...hero } = generationHero(key, model);
+  const pick = createCarPicker(used, { siblings: true });
+  const out = { ...data };
+
+  if (out.hero) out.hero = { ...out.hero, ...hero };
+
+  if (out.overview) {
+    const [image] = pick([hints]);
+    out.overview = { ...out.overview, image: image || (model === "i-pace" ? iPaceStandInImage() : null) };
+  }
+
+  if (out.coreVariants) {
+    const [image] = pick([hints], { view: "side" });
+    out.coreVariants = { ...out.coreVariants, image };
+  }
+
+  // Engine photo per problem card: the engine it names, else this generation's engine of the same size
+  // ("5.0 V8 ..." -> its 5.0 engine), else the generation's first engine. Non-engine problems get none.
+  if (out.commonProblems?.problems) {
+    const engines = (out.engineDatabase?.engines || []).map((row) => {
+      const text = `${row.engineCode} ${row.family}`;
+      return {
+        photo: firstEngineImage(text),
+        size: String(row.displacement || row.family || "").match(/\d\.\d/)?.[0],
+      };
+    });
+    const engineImageForProblem = (problem) => {
+      const text = stripTags(`${problem.title} ${problem.affectedModels}`);
+      if (/non[\s-]?engine/i.test(text)) return null;
+      const named = firstEngineImage(text);
+      if (named) return named;
+      const sameSize = engines.filter((engine) => engine.size && text.includes(engine.size));
+      if (sameSize.length) return sameSize.find((engine) => engine.photo)?.photo || null;
+      return engines[0]?.photo || null;
+    };
+    out.commonProblems = {
+      ...out.commonProblems,
+      problems: out.commonProblems.problems.map((problem) => ({ ...problem, image: engineImageForProblem(problem) })),
+    };
+  }
+
+  // Closing block: the model's line-up scene (unless the hero already shows it).
+  if (out.trustCta) {
+    const scene = heroCarFor(model)?.scene;
+    out.trustCta = { ...out.trustCta, image: scene && scene !== hero.heroScene ? scene.src : null };
+  }
+
+  return out;
+}
+
+/** Variant page (/xf/27d, ...): hero, era map and banners get photos of that car, none shown twice. */
+export function withVariantPageImages(data) {
+  if (!data) return data;
+  const pill = stripTags(data.hero?.tagPill);
+  const firstEra = data.eraMap?.rows?.[0] || {};
+  const hints = [pill, stripTags(firstEra.generation), stripTags(firstEra.years)];
+  const key = carKeyFor(...hints);
+  const model = carModelFor(pill) || (I_PACE.test(pill) ? "i-pace" : null);
+  const { used, ...hero } = generationHero(key, model);
+  const pick = createCarPicker(used, { siblings: true });
+  // "Jaguar XF 2.7d • 2008–2015 • ..." -> "XF 2.7d", for copy such as "Every XF 2.7d has a story".
+  const vehicle = pill.split("•")[0].replace(/^\s*Jaguar\s+/i, "").trim() || "Jaguar";
+  const engineCodes = (data.engineCodes?.rows || []).map((row) => row.engineCode);
+  const eraEngines = (data.eraMap?.rows || []).map((row) => row.engineCode);
+  const engineText = stripTags([pill, ...engineCodes, ...eraEngines].join(" "));
+  const noEnginePhoto = NO_ENGINE_PHOTO.test(engineText);
+  const engineImage = noEnginePhoto ? null : forFuel(firstEngineImage(pill, ...engineCodes, ...eraEngines), engineText);
+  const modelName = model ? model.toUpperCase() : "";
+  const out = { ...data };
+
+  if (out.hero) out.hero = { ...out.hero, ...hero, vehicle };
+
+  if (out.eraMap?.rows) {
+    const images = pick(out.eraMap.rows.map((row) => [stripTags(row.generation), modelName, stripTags(row.years)]));
+    out.eraMap = { ...out.eraMap, vehicle, rows: out.eraMap.rows.map((row, index) => ({ ...row, image: images[index] })) };
+  }
+
+  if (out.quotesCta) {
+    const [image] = pick([hints]);
+    out.quotesCta = { ...out.quotesCta, image, vehicle };
+  }
+
+  if (out.repairBuyOrReplace) {
+    const [image] = pick([hints], { view: "side" });
+    out.repairBuyOrReplace = { ...out.repairBuyOrReplace, image, engineImage, vehicle };
+  }
+
+  if (out.buyingChecklist) {
+    const [image] = pick([hints]);
+    out.buyingChecklist = { ...out.buyingChecklist, image, vehicle };
+  }
+
+  if (out.engineCodes?.rows) {
+    out.engineCodes = {
+      ...out.engineCodes,
+      engineImage,
+      rows: out.engineCodes.rows.map((row) => ({
+        ...row,
+        image: noEnginePhoto ? null : forFuel(firstEngineImage(row.engineCode), engineText) || engineImage,
+      })),
+    };
+  }
+
+  if (out.trustCta) {
+    const [image] = pick([hints]);
+    out.trustCta = { ...out.trustCta, image, engineImage, vehicle };
+  }
+
+  return out;
+}
+
+/**
+ * Engine page (/engine/aj133, ...): that engine's photo for every engine slot, or null when there is
+ * none (XK6, AJ6/AJ16, V12); the hero then shows the generation the engine is best known in.
+ * Compatible models get a car photo each, none shown twice: `cardImage` for the desktop card of
+ * the row's model, `image` for the row in the mobile list (only one of the two lists shows).
+ */
+export function enginePageImages(slug, engineLabel, compatibility) {
+  const page = carImages.enginePages[slug];
+  const engineImage = page ? carImages.engines[page.engine] || null : firstEngineImage(engineLabel);
+  const car = !engineImage && page?.car ? generationHeroFor(page.car) : null;
+  const heroCar = car ? { src: car.src, width: car.width, height: car.height } : null;
+  if (!compatibility?.rows) return { engineImage, heroCar, compatibility };
+
+  const used = car ? [car.car] : [];
+  const rows = compatibility.rows;
+  const modelOf = (row) => stripTags(row.model).replace(/[‐-―]/g, "-").replace(/\s+/g, " ").trim();
+  // Desktop cards: one per model, pictured by the last generation listed for it (as the card shows).
+  const models = [...new Set(rows.map(modelOf))];
+  const lastRow = (model) => rows.filter((row) => modelOf(row) === model).at(-1);
+  const cardPhotos = createCarPicker(used, { siblings: true })(models.map((model) => [model, stripTags(lastRow(model).generation)]));
+  const cardImage = Object.fromEntries(models.map((model, index) => [model, cardPhotos[index]]));
+  const rowPhotos = createCarPicker(used, { siblings: true })(
+    rows.map((row) => [stripTags(row.model), stripTags(row.generation), stripTags(row.years)])
+  );
+
+  return {
+    engineImage,
+    heroCar,
+    compatibility: {
+      ...compatibility,
+      rows: rows.map((row, index) => ({ ...row, image: rowPhotos[index], cardImage: cardImage[modelOf(row)] })),
+    },
+  };
 }
 
 /** Home page: every section with car photos, in page order, after the hero XF. */

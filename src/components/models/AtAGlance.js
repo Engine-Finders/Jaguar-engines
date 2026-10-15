@@ -7,15 +7,15 @@ import HomeIcon from "@/components/home/homeIcons";
 import { sectionBody, sectionDescription, sectionH2, sectionTableText, tableHeaderClass } from "@/components/models/sectionTypography";
 
 const metricIconKeys = {
-  Generations: "generations",
-  "Years Produced": "timeline",
-  "Engine Codes Tracked": "engine-codes",
+  Generations: "generations-covered",
+  "Years Produced": "calendar",
+  "Engine Codes Tracked": "engine-codes-book",
   "Fuel Types": "fuel",
   "Most Enquired Engine (2025)": "most-enquired",
   "Most Reliable": "shield",
-  "Highest-Risk": "alert",
-  "Typical Replacement Cost": "pound",
-  "Typical Host Value": "value",
+  "Highest-Risk": "fire",
+  "Typical Replacement Cost": "pound-shield",
+  "Typical Host Value": "price-tag",
   "Overall Rating": "star",
 };
 

@@ -1,14 +1,20 @@
 "use client";
 
-import Image from "next/image";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
-import GenIcon from "./GenIcons";
+import CarOnBackground from "@/components/shared/CarOnBackground";
 import HomeIcon from "@/components/home/homeIcons";
 import { generationSectionBg } from "./generationSection";
 
-const factIcons = ["car", "arrow", "arrow", "car"];
-const factIconCircled = [false, true, true, false];
+// Key fact label -> client icon; the predecessor arrow is mirrored to point back.
+function factIcon(label = "") {
+  const value = label.toLowerCase();
+  if (value.includes("platform")) return { name: "platform" };
+  if (value.includes("predecessor")) return { name: "predecessor-successor", mirrored: true };
+  if (value.includes("successor")) return { name: "predecessor-successor" };
+  if (value.includes("sibling") || value.includes("body")) return { name: "body-styles" };
+  return { name: "car" };
+}
 
 // Highlight numeric figures and [TAG] markers inline within a sentence.
 function HighlightedLine({ text = "" }) {
@@ -51,7 +57,9 @@ export default function Overview({ data }) {
 
   const isDark = theme === "dark";
   const sectionBg = generationSectionBg(isDark, false);
-  const image = isDark ? "/e90/overview_dark - Copy.webp" : "/e90/overview_light.webp";
+  // This generation's photo (set server-side) on Jaguar's own background.
+  const carImage = data.image;
+  const carAlt = String(data.h2 || "").replace(/<[^>]*>/g, "");
   const keyFacts = parseKeyFacts(data.keyFacts);
 
   const headingClass = isDark ? "text-white" : "text-[var(--color-text)]";
@@ -75,25 +83,15 @@ export default function Overview({ data }) {
     : [];
 
   const factItem = (fact, index, { mobile = false } = {}) => {
-    const circled = factIconCircled[index % factIconCircled.length];
-    const iconName = factIcons[index % factIcons.length];
-    const iconBoxClass = mobile ? "h-10 w-10" : "h-8 w-8";
-    const circledIconClass = mobile ? "h-5 w-5" : "h-4 w-4";
-    const plainIconClass = mobile ? "h-7 w-7" : "h-5 w-5";
+    const icon = factIcon(fact.label);
 
     return (
       <div className="flex min-w-0 flex-1 flex-col items-center gap-2 px-1 text-center">
-        {circled ? (
-          <span
-            className={`flex shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] text-[var(--color-primary)] ${iconBoxClass}`}
-          >
-            <GenIcon name={iconName} className={circledIconClass} />
-          </span>
-        ) : (
-          <span className={`flex shrink-0 items-center justify-center text-[var(--color-primary)] ${iconBoxClass}`}>
-            <GenIcon name={iconName} className={plainIconClass} />
-          </span>
-        )}
+        <HomeIcon
+          name={icon.name}
+          isDark={isDark}
+          className={`${mobile ? "h-10 w-10" : "h-9 w-9"} ${icon.mirrored ? "-scale-x-100" : ""}`}
+        />
         <div className="min-w-0 w-full">
           <p
             className={`font-semibold leading-[1.25] ${factLabelClass} ${mobile ? "text-[0.84rem]" : "text-[0.8rem]"}`}
@@ -193,20 +191,19 @@ export default function Overview({ data }) {
     </div>
   ) : null;
 
-  const mobileImage = isDark ? "/e90/overview_mobile_dark.webp" : "/e90/overview_mobile_light.webp";
-
   return (
     <section className={`w-full ${sectionBg} ${headingClass}`}>
       {/* MOBILE: hero image up top in normal flow, content stacked below it (not overlaid) */}
       <div className="md:hidden">
         <div className="relative -mb-px h-[260px] w-full overflow-hidden">
-          <Image
-            src={mobileImage}
-            alt={data.image?.alt || "BMW 3 Series E90"}
-            fill
-            className="object-cover object-center"
+          <CarOnBackground
+            src={carImage}
+            alt={carAlt}
+            isDark={isDark}
+            className="absolute inset-0"
+            carClassName="inset-x-[10%] top-[4%] bottom-[34%]"
             sizes="100vw"
-                />
+          />
           <div
             className={`absolute inset-0 ${
               isDark
@@ -247,13 +244,14 @@ export default function Overview({ data }) {
       {/* DESKTOP: full-bleed background image with content overlaid on top */}
       <div className="relative hidden md:block md:min-h-[520px]">
         <div className="absolute inset-0">
-          <Image
-            src={image}
-            alt={data.image?.alt || "BMW 3 Series E90"}
-            fill
-            className="object-cover object-[20%_55%]"
-            sizes="100vw"
-                />
+          <CarOnBackground
+            src={carImage}
+            alt={carAlt}
+            isDark={isDark}
+            className="absolute inset-0"
+            carClassName="left-[max(2rem,calc((100%-88rem)/2+2rem))] top-[16%] bottom-[14%] w-[min(34%,560px)]"
+            sizes="(max-width: 1400px) 40vw, 560px"
+          />
           {isDark ? (
             <>
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_22%_58%,transparent_0%,transparent_30%,rgba(11,12,12,0.45)_58%,rgba(11,12,12,0.85)_85%)]" />

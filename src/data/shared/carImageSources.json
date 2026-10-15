@@ -781,78 +781,6 @@
    "label": "corris grey",
    "detected": "grey"
   },
-  "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-regency-red-xj-s1-2-front.webp": {
-   "label": "regency red",
-   "detected": "red"
-  },
-  "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-regency-red-xj-s1-front.webp": {
-   "label": "regency red",
-   "detected": "red"
-  },
-  "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-regency-red-xj-s1-2-45.webp": {
-   "label": "regency red",
-   "detected": "red"
-  },
-  "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-regency-red-xj-s1-45.webp": {
-   "label": "regency red",
-   "detected": "red"
-  },
-  "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-regency-red-xj-s1-2-side.webp": {
-   "label": "regency red",
-   "detected": "red"
-  },
-  "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-regency-red-xj-s1-side.webp": {
-   "label": "regency red",
-   "detected": "red"
-  },
-  "jaguar-xj-series-ii-xj12-saloon-1973-1979-historical-british-racing-green-xj-s2-side.webp": {
-   "label": "british racing green",
-   "detected": "grey"
-  },
-  "jaguar-xj-series-ii-xj12-saloon-1973-1979-historical-british-racing-green-xj-s2-45.webp": {
-   "label": "british racing green",
-   "detected": "grey"
-  },
-  "jaguar-xj-series-ii-xj12-saloon-1973-1979-historical-british-racing-green-xj-s2-front.webp": {
-   "label": "british racing green",
-   "detected": "grey"
-  },
-  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-2-front.webp": {
-   "label": "british racing green",
-   "detected": "grey"
-  },
-  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-3-front.webp": {
-   "label": "british racing green",
-   "detected": "red"
-  },
-  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-front.webp": {
-   "label": "british racing green",
-   "detected": "grey"
-  },
-  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-2-side.webp": {
-   "label": "british racing green",
-   "detected": "grey"
-  },
-  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-3-side.webp": {
-   "label": "british racing green",
-   "detected": "red"
-  },
-  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-side.webp": {
-   "label": "british racing green",
-   "detected": "black"
-  },
-  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-2-45.webp": {
-   "label": "british racing green",
-   "detected": "grey"
-  },
-  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-3-45.webp": {
-   "label": "british racing green",
-   "detected": "red"
-  },
-  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-45.webp": {
-   "label": "british racing green",
-   "detected": "grey"
-  },
   "jaguar-xj-x308-xjr-performance-saloon-1997-2003-special-anthracite-x308-xjr-front.webp": {
    "label": "anthracite",
    "detected": "grey"
@@ -1132,6 +1060,78 @@
   "jaguar-xk-x150-xkr-coupe-performance-coupe-2007-2011-new-ultimate-black-x150-xkr-front.webp": {
    "label": "ultimate black",
    "detected": "black"
+  },
+  "jaguar-xj-series-iii-xj6-saloon-1979-1992-historical-black-recoloured-xj-s3-front.webp": {
+   "label": "black (recoloured from regency red)",
+   "detected": "black"
+  },
+  "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-black-recoloured-xj-s1-front.webp": {
+   "label": "black (recoloured from regency red)",
+   "detected": "black"
+  },
+  "jaguar-xj-series-iii-xj6-saloon-1979-1992-historical-black-recoloured-xj-s3-45.webp": {
+   "label": "black (recoloured from regency red)",
+   "detected": "black"
+  },
+  "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-black-recoloured-xj-s1-45.webp": {
+   "label": "black (recoloured from regency red)",
+   "detected": "black"
+  },
+  "jaguar-xj-series-iii-xj6-saloon-1979-1992-historical-black-recoloured-xj-s3-side.webp": {
+   "label": "black (recoloured from regency red)",
+   "detected": "black"
+  },
+  "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-black-recoloured-xj-s1-side.webp": {
+   "label": "black (recoloured from regency red)",
+   "detected": "black"
+  },
+  "jaguar-xj-series-ii-xj12-saloon-1973-1979-historical-black-recoloured-xj-s2-side.webp": {
+   "label": "black (recoloured from british racing green)",
+   "detected": "black"
+  },
+  "jaguar-xj-series-ii-xj12-saloon-1973-1979-historical-black-recoloured-xj-s2-45.webp": {
+   "label": "black (recoloured from british racing green)",
+   "detected": "black"
+  },
+  "jaguar-xj-series-ii-xj12-saloon-1973-1979-historical-black-recoloured-xj-s2-front.webp": {
+   "label": "black (recoloured from british racing green)",
+   "detected": "black"
+  },
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-black-recoloured-x300-2-front.webp": {
+   "label": "black (recoloured from british racing green)",
+   "detected": "black"
+  },
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-black-recoloured-x300-front.webp": {
+   "label": "black (recoloured from british racing green)",
+   "detected": "black"
+  },
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-black-recoloured-x300-3-front.webp": {
+   "label": "black (recoloured from british racing green)",
+   "detected": "black"
+  },
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-black-recoloured-x300-2-side.webp": {
+   "label": "black (recoloured from british racing green)",
+   "detected": "black"
+  },
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-black-recoloured-x300-side.webp": {
+   "label": "black (recoloured from british racing green)",
+   "detected": "black"
+  },
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-black-recoloured-x300-3-side.webp": {
+   "label": "black (recoloured from british racing green)",
+   "detected": "black"
+  },
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-black-recoloured-x300-2-45.webp": {
+   "label": "black (recoloured from british racing green)",
+   "detected": "black"
+  },
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-black-recoloured-x300-45.webp": {
+   "label": "black (recoloured from british racing green)",
+   "detected": "black"
+  },
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-black-recoloured-x300-3-45.webp": {
+   "label": "black (recoloured from british racing green)",
+   "detected": "black"
   }
  },
  "sources": {
@@ -1330,24 +1330,6 @@
   "jaguar-xf-x260-portfolio-saloon-2016-2019-new-yulong-white-x260-portfolio-45.webp": "jaguar-xf-x260-portfolio-saloon-2016–2019-new-yulong white-x260 portfolio-45-angle-front-view.webp",
   "jaguar-xf-x260-r-dynamic-se-saloon-2019-2024-new-carpathian-grey-xf-r-dyn-se-45.webp": "jaguar-xf-x260-r-dynamic se-saloon-2019–2024-new-carpathian grey-xf r-dyn se-45-angle-front-view.webp",
   "jaguar-xf-x260-sportbrake-estate-2017-2020-new-corris-grey-x260-sportbrake-45.webp": "jaguar-xf-x260-sportbrake-estate-2017–2020-new-corris grey-x260 sportbrake-45-angle-front-view.webp",
-  "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-regency-red-xj-s1-2-front.webp": "jaguar-xj-series i-xj6-saloon-1968–1973-historical-regency red-xj s1 (2)-front-view.webp",
-  "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-regency-red-xj-s1-front.webp": "jaguar-xj-series i-xj6-saloon-1968–1973-historical-regency red-xj s1-front-view.webp",
-  "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-regency-red-xj-s1-2-45.webp": "jaguar-xj-series i-xj6-saloon-1968–1973-historical-regency red-xj s1 (2)-45-angle-front-view.webp",
-  "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-regency-red-xj-s1-45.webp": "jaguar-xj-series i-xj6-saloon-1968–1973-historical-regency red-xj s1-45-angle-front-view.webp",
-  "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-regency-red-xj-s1-2-side.webp": "jaguar-xj-series i-xj6-saloon-1968–1973-historical-regency red-xj s1 (2)-flat-side-view.webp",
-  "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-regency-red-xj-s1-side.webp": "jaguar-xj-series i-xj6-saloon-1968–1973-historical-regency red-xj s1-flat-side-view.webp",
-  "jaguar-xj-series-ii-xj12-saloon-1973-1979-historical-british-racing-green-xj-s2-side.webp": "jaguar-xj-series ii-xj12-saloon-1973–1979-historical-british racing green-xj s2-flat-side-view.webp",
-  "jaguar-xj-series-ii-xj12-saloon-1973-1979-historical-british-racing-green-xj-s2-45.webp": "jaguar-xj-series ii-xj12-saloon-1973–1979-historical-british racing green-xj s2-45-angle-front-view.webp",
-  "jaguar-xj-series-ii-xj12-saloon-1973-1979-historical-british-racing-green-xj-s2-front.webp": "jaguar-xj-series ii-xj12-saloon-1973–1979-historical-british racing green-xj s2-front-view.webp",
-  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-2-front.webp": "jaguar-xj-x300-xj6 sovereign-saloon-1994–1997-new-british racing green-x300 (2)-front-view.webp",
-  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-3-front.webp": "jaguar-xj-x300-xj6 sovereign-saloon-1994–1997-new-british racing green-x300 (3)-front-view.webp",
-  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-front.webp": "jaguar-xj-x300-xj6 sovereign-saloon-1994–1997-new-british racing green-x300-front-view.webp",
-  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-2-side.webp": "jaguar-xj-x300-xj6 sovereign-saloon-1994–1997-new-british racing green-x300 (2)-flat-side-view.webp",
-  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-3-side.webp": "jaguar-xj-x300-xj6 sovereign-saloon-1994–1997-new-british racing green-x300 (3)-flat-side-view.webp",
-  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-side.webp": "jaguar-xj-x300-xj6 sovereign-saloon-1994–1997-new-british racing green-x300-flat-side-view.webp",
-  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-2-45.webp": "jaguar-xj-x300-xj6 sovereign-saloon-1994–1997-new-british racing green-x300 (2)-45-angle-front-view.webp",
-  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-3-45.webp": "jaguar-xj-x300-xj6 sovereign-saloon-1994–1997-new-british racing green-x300 (3)-45-angle-front-view.webp",
-  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-45.webp": "jaguar-xj-x300-xj6 sovereign-saloon-1994–1997-new-british racing green-x300-45-angle-front-view.webp",
   "jaguar-xj-x308-xjr-performance-saloon-1997-2003-special-anthracite-x308-xjr-front.webp": "jaguar-xj-x308-xjr-performance saloon-1997–2003-special-anthracite-x308 xjr-front-view.webp",
   "jaguar-xj-x308-xjr-performance-saloon-1997-2003-special-anthracite-x308-xjr-side.webp": "jaguar-xj-x308-xjr-performance saloon-1997–2003-special-anthracite-x308 xjr-flat-side-view.webp",
   "jaguar-xj-x308-xjr-performance-saloon-1997-2003-special-anthracite-x308-xjr-45.webp": "jaguar-xj-x308-xjr-performance saloon-1997–2003-special-anthracite-x308 xjr-45-angle-front-view.webp",
@@ -1417,6 +1399,24 @@
   "jaguar-xk-x150-xk-artisan-se-coupe-special-edition-coupe-2012-special-celestial-black-artisan-front.webp": "jaguar-xk-x150-xk artisan se coupé-special edition coupé-2012-special-celestial black-artisan-front-view.webp",
   "jaguar-xk-x150-xkr-s-convertible-performance-convertible-2011-2014-special-polaris-white-xkrs-cab-front.webp": "jaguar-xk-x150-xkr-s convertible-performance convertible-2011–2014-special-polaris white-xkrs cab-front-view.webp",
   "jaguar-xk-x150-xk-dynamic-r-coupe-special-edition-coupe-2014-2015-special-ultimate-black-xk-dynamic-r-front.webp": "jaguar-xk-x150-xk dynamic r coupé-special edition coupé-2014–2015-special-ultimate black-xk dynamic r-front-view.webp",
-  "jaguar-xk-x150-xkr-coupe-performance-coupe-2007-2011-new-ultimate-black-x150-xkr-front.webp": "jaguar-xk-x150-xkr coupé-performance coupé-2007–2011-new-ultimate black-x150 xkr-front-view.webp"
+  "jaguar-xk-x150-xkr-coupe-performance-coupe-2007-2011-new-ultimate-black-x150-xkr-front.webp": "jaguar-xk-x150-xkr coupé-performance coupé-2007–2011-new-ultimate black-x150 xkr-front-view.webp",
+  "jaguar-xj-series-iii-xj6-saloon-1979-1992-historical-black-recoloured-xj-s3-front.webp": "jaguar-xj-series i-xj6-saloon-1968–1973-historical-regency red-xj s1 (2)-front-view.webp",
+  "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-black-recoloured-xj-s1-front.webp": "jaguar-xj-series i-xj6-saloon-1968–1973-historical-regency red-xj s1-front-view.webp",
+  "jaguar-xj-series-iii-xj6-saloon-1979-1992-historical-black-recoloured-xj-s3-45.webp": "jaguar-xj-series i-xj6-saloon-1968–1973-historical-regency red-xj s1 (2)-45-angle-front-view.webp",
+  "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-black-recoloured-xj-s1-45.webp": "jaguar-xj-series i-xj6-saloon-1968–1973-historical-regency red-xj s1-45-angle-front-view.webp",
+  "jaguar-xj-series-iii-xj6-saloon-1979-1992-historical-black-recoloured-xj-s3-side.webp": "jaguar-xj-series i-xj6-saloon-1968–1973-historical-regency red-xj s1 (2)-flat-side-view.webp",
+  "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-black-recoloured-xj-s1-side.webp": "jaguar-xj-series i-xj6-saloon-1968–1973-historical-regency red-xj s1-flat-side-view.webp",
+  "jaguar-xj-series-ii-xj12-saloon-1973-1979-historical-black-recoloured-xj-s2-side.webp": "jaguar-xj-series ii-xj12-saloon-1973–1979-historical-british racing green-xj s2-flat-side-view.webp",
+  "jaguar-xj-series-ii-xj12-saloon-1973-1979-historical-black-recoloured-xj-s2-45.webp": "jaguar-xj-series ii-xj12-saloon-1973–1979-historical-british racing green-xj s2-45-angle-front-view.webp",
+  "jaguar-xj-series-ii-xj12-saloon-1973-1979-historical-black-recoloured-xj-s2-front.webp": "jaguar-xj-series ii-xj12-saloon-1973–1979-historical-british racing green-xj s2-front-view.webp",
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-black-recoloured-x300-2-front.webp": "jaguar-xj-x300-xj6 sovereign-saloon-1994–1997-new-british racing green-x300 (2)-front-view.webp",
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-black-recoloured-x300-front.webp": "jaguar-xj-x300-xj6 sovereign-saloon-1994–1997-new-british racing green-x300-front-view.webp",
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-black-recoloured-x300-3-front.webp": "jaguar-xj-x300-xj6 sovereign-saloon-1994–1997-new-british racing green-x300 (3)-front-view.webp",
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-black-recoloured-x300-2-side.webp": "jaguar-xj-x300-xj6 sovereign-saloon-1994–1997-new-british racing green-x300 (2)-flat-side-view.webp",
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-black-recoloured-x300-side.webp": "jaguar-xj-x300-xj6 sovereign-saloon-1994–1997-new-british racing green-x300-flat-side-view.webp",
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-black-recoloured-x300-3-side.webp": "jaguar-xj-x300-xj6 sovereign-saloon-1994–1997-new-british racing green-x300 (3)-flat-side-view.webp",
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-black-recoloured-x300-2-45.webp": "jaguar-xj-x300-xj6 sovereign-saloon-1994–1997-new-british racing green-x300 (2)-45-angle-front-view.webp",
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-black-recoloured-x300-45.webp": "jaguar-xj-x300-xj6 sovereign-saloon-1994–1997-new-british racing green-x300-45-angle-front-view.webp",
+  "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-black-recoloured-x300-3-45.webp": "jaguar-xj-x300-xj6 sovereign-saloon-1994–1997-new-british racing green-x300 (3)-45-angle-front-view.webp"
  }
 }

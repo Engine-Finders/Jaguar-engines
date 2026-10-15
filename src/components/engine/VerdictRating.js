@@ -8,10 +8,10 @@ import { engineSectionBg } from "./engineSection";
 
 const DIMENSION_ICONS = {
   Reliability: "shield",
-  "Repair Cost": "pound",
-  Repairability: "repair",
-  "Parts Supply": "uk-wide-delivery",
-  "Replacement Economics": "real-inquiries",
+  "Repair Cost": "pound-shield",
+  Repairability: "repair-tool",
+  "Parts Supply": "parts-supply",
+  "Replacement Economics": "repair",
 };
 
 function cleanText(text = "") {

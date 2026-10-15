@@ -1,5 +1,5 @@
 {
- "_note": "Jaguar photos from the shared 'Jaguar Split' folder: background removed with rembg (u2net) and saved as PNG, then encoded once to WebP at the original pixel size (<= 49 KB). Only black, grey, silver, white and dark-blue paint, checked from the pixels because some source file names give the wrong colour; a generation with no such photo keeps what exists (XJ Series I/II, X300). Pools: model|generation -> view (45, side, front) -> [file, colour]. Heroes: transparent overlays (20-25 KB) shown over Jaguar's own background (/hero/jaguar-bg-*.webp). Provenance per file: carImageSources.json.",
+ "_note": "Jaguar photos from the shared 'Jaguar Split' folder: background removed with rembg (u2net) and saved as PNG, then encoded once to WebP at the original pixel size (<= 49 KB). Only black, grey, silver, white and dark-blue paint, checked from the pixels because some source file names give the wrong colour. Pools: model|generation -> view (45, side, front) -> [file, colour]. Heroes: transparent overlays (20-25 KB) shown over Jaguar's own background (/hero/jaguar-bg-*.webp). Provenance per file: carImageSources.json. Generation heroes: per generation (model|generation), a 45-degree cut-out of one pool photo at 20-25 KB for generation and variant page heroes; `car` is the pool photo it was made from. XJ Series I/II/III and X300 only exist in red or British Racing Green, so those photos were recoloured to black (hue-band desaturation, shading kept). Engine pages (/engine/<slug>): `enginePages` names each page's engine photo (several codes are ambiguous, e.g. 306DT/306PS, AJD4/204DTD = the 2.2 224DT); engines with no photo (XK6, AJ6/AJ16, V12) show the generation they are best known in instead. Generation scenes (generationHeroes[key].scene): the same photo composed onto Jaguar's light and dark backgrounds (contact shadow + floor reflection, 1200x676, <= 50 KB) for generation and variant heroes, laid out like the model-page scenes.",
  "basePath": "/cars/",
  "defaultGeneration": {
   "e-pace": "x540",
@@ -884,96 +884,104 @@
   "xj|series i": {
    "front": [
     [
-     "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-regency-red-xj-s1-2-front.webp",
-     "other"
-    ],
-    [
-     "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-regency-red-xj-s1-front.webp",
-     "other"
+     "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-black-recoloured-xj-s1-front.webp",
+     "black"
     ]
    ],
    "45": [
     [
-     "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-regency-red-xj-s1-2-45.webp",
-     "other"
-    ],
-    [
-     "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-regency-red-xj-s1-45.webp",
-     "other"
+     "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-black-recoloured-xj-s1-45.webp",
+     "black"
     ]
    ],
    "side": [
     [
-     "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-regency-red-xj-s1-2-side.webp",
-     "other"
-    ],
-    [
-     "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-regency-red-xj-s1-side.webp",
-     "other"
+     "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-black-recoloured-xj-s1-side.webp",
+     "black"
     ]
    ]
   },
   "xj|series ii": {
    "side": [
     [
-     "jaguar-xj-series-ii-xj12-saloon-1973-1979-historical-british-racing-green-xj-s2-side.webp",
-     "other"
+     "jaguar-xj-series-ii-xj12-saloon-1973-1979-historical-black-recoloured-xj-s2-side.webp",
+     "black"
     ]
    ],
    "45": [
     [
-     "jaguar-xj-series-ii-xj12-saloon-1973-1979-historical-british-racing-green-xj-s2-45.webp",
-     "other"
+     "jaguar-xj-series-ii-xj12-saloon-1973-1979-historical-black-recoloured-xj-s2-45.webp",
+     "black"
     ]
    ],
    "front": [
     [
-     "jaguar-xj-series-ii-xj12-saloon-1973-1979-historical-british-racing-green-xj-s2-front.webp",
-     "other"
+     "jaguar-xj-series-ii-xj12-saloon-1973-1979-historical-black-recoloured-xj-s2-front.webp",
+     "black"
+    ]
+   ]
+  },
+  "xj|series iii": {
+   "front": [
+    [
+     "jaguar-xj-series-iii-xj6-saloon-1979-1992-historical-black-recoloured-xj-s3-front.webp",
+     "black"
+    ]
+   ],
+   "45": [
+    [
+     "jaguar-xj-series-iii-xj6-saloon-1979-1992-historical-black-recoloured-xj-s3-45.webp",
+     "black"
+    ]
+   ],
+   "side": [
+    [
+     "jaguar-xj-series-iii-xj6-saloon-1979-1992-historical-black-recoloured-xj-s3-side.webp",
+     "black"
     ]
    ]
   },
   "xj|x300": {
    "front": [
     [
-     "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-2-front.webp",
-     "other"
+     "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-black-recoloured-x300-2-front.webp",
+     "black"
     ],
     [
-     "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-front.webp",
-     "other"
+     "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-black-recoloured-x300-front.webp",
+     "black"
     ],
     [
-     "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-3-front.webp",
-     "other"
+     "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-black-recoloured-x300-3-front.webp",
+     "black"
     ]
    ],
    "side": [
     [
-     "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-2-side.webp",
-     "other"
+     "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-black-recoloured-x300-2-side.webp",
+     "black"
     ],
     [
-     "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-side.webp",
-     "other"
+     "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-black-recoloured-x300-side.webp",
+     "black"
     ],
     [
-     "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-3-side.webp",
-     "other"
+     "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-black-recoloured-x300-3-side.webp",
+     "black"
     ]
    ],
    "45": [
     [
-     "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-2-45.webp",
-     "other"
+     "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-black-recoloured-x300-2-45.webp",
+     "black"
     ],
     [
-     "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-45.webp",
-     "other"
+     "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-black-recoloured-x300-45.webp",
+     "black"
     ],
     [
-     "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-british-racing-green-x300-3-45.webp",
-     "other"
+     "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-black-recoloured-x300-3-45.webp",
+     "black"
     ]
    ]
   },
@@ -1317,6 +1325,11 @@
  "heroes": {
   "e-pace": {
    "src": "/model/hero/e-pace.webp",
+   "scene": {
+    "src": "/model/hero/e-pace-scene.webp",
+    "width": 1200,
+    "height": 676
+   },
    "width": 762,
    "height": 468,
    "cars": [
@@ -1325,6 +1338,11 @@
   },
   "f-pace": {
    "src": "/model/hero/f-pace.webp",
+   "scene": {
+    "src": "/model/hero/f-pace-scene.webp",
+    "width": 1200,
+    "height": 676
+   },
    "width": 826,
    "height": 468,
    "cars": [
@@ -1333,6 +1351,11 @@
   },
   "f-type": {
    "src": "/model/hero/f-type.webp",
+   "scene": {
+    "src": "/model/hero/f-type-scene.webp",
+    "width": 1200,
+    "height": 676
+   },
    "width": 1100,
    "height": 406,
    "cars": [
@@ -1342,6 +1365,11 @@
   },
   "s-type": {
    "src": "/model/hero/s-type.webp",
+   "scene": {
+    "src": "/model/hero/s-type-scene.webp",
+    "width": 1200,
+    "height": 676
+   },
    "width": 824,
    "height": 468,
    "cars": [
@@ -1350,6 +1378,11 @@
   },
   "x-type": {
    "src": "/model/hero/x-type.webp",
+   "scene": {
+    "src": "/model/hero/x-type-scene.webp",
+    "width": 1200,
+    "height": 676
+   },
    "width": 746,
    "height": 468,
    "cars": [
@@ -1358,6 +1391,11 @@
   },
   "xe": {
    "src": "/model/hero/xe.webp",
+   "scene": {
+    "src": "/model/hero/xe-scene.webp",
+    "width": 1200,
+    "height": 676
+   },
    "width": 1100,
    "height": 420,
    "cars": [
@@ -1367,6 +1405,11 @@
   },
   "xf": {
    "src": "/model/hero/xf.webp",
+   "scene": {
+    "src": "/model/hero/xf-scene.webp",
+    "width": 1200,
+    "height": 676
+   },
    "width": 1100,
    "height": 337,
    "cars": [
@@ -1377,6 +1420,11 @@
   },
   "xj": {
    "src": "/model/hero/xj.webp",
+   "scene": {
+    "src": "/model/hero/xj-scene.webp",
+    "width": 1200,
+    "height": 676
+   },
    "width": 1100,
    "height": 335,
    "cars": [
@@ -1387,6 +1435,11 @@
   },
   "xk": {
    "src": "/model/hero/xk.webp",
+   "scene": {
+    "src": "/model/hero/xk-scene.webp",
+    "width": 1200,
+    "height": 676
+   },
    "width": 1100,
    "height": 405,
    "cars": [
@@ -1396,10 +1449,281 @@
   },
   "i-pace": {
    "src": "/model/hero/i-pace.webp",
+   "scene": {
+    "src": "/model/hero/i-pace-scene.webp",
+    "width": 1200,
+    "height": 676
+   },
    "width": 648,
    "height": 363,
    "cars": [],
-   "_note": "No I-Pace photo exists in the shared folders: black F-Pace (closest SUV shape) with a blank number plate, as requested by the client."
+   "_note": "src is a black F-Pace stand-in with a blank plate (no I-Pace cut-out exists); the hero itself uses the client's I-Pace scene."
+  }
+ },
+ "generationHeroes": {
+  "e-pace|x540": {
+   "src": "/generation/hero/e-pace-x540.webp",
+   "width": 560,
+   "height": 340,
+   "car": "jaguar-e-pace-x540-chequered-flag-edition-compact-suv-2019-2020-special-corris-grey-e-pace-chequered-45.webp",
+   "scene": {
+    "src": "/generation/scene/e-pace-x540-light.webp",
+    "darkSrc": "/generation/scene/e-pace-x540-dark.webp",
+    "width": 1200,
+    "height": 676
+   }
+  },
+  "f-pace|x761": {
+   "src": "/generation/hero/f-pace-x761.webp",
+   "width": 600,
+   "height": 336,
+   "car": "jaguar-f-pace-x761-300-sport-suv-2021-2024-new-carpathian-grey-f-pace-300-45.webp",
+   "scene": {
+    "src": "/generation/scene/f-pace-x761-light.webp",
+    "darkSrc": "/generation/scene/f-pace-x761-dark.webp",
+    "width": 1200,
+    "height": 676
+   }
+  },
+  "f-type|x152": {
+   "src": "/generation/hero/f-type-x152.webp",
+   "width": 600,
+   "height": 316,
+   "car": "jaguar-f-type-x152-400-sport-convertible-convertible-2017-2018-special-corris-grey-f-type-400-conv-45.webp",
+   "scene": {
+    "src": "/generation/scene/f-type-x152-light.webp",
+    "darkSrc": "/generation/scene/f-type-x152-dark.webp",
+    "width": 1200,
+    "height": 676
+   }
+  },
+  "f-type|x152 lci": {
+   "src": "/generation/hero/f-type-x152-lci.webp",
+   "width": 600,
+   "height": 306,
+   "car": "jaguar-f-type-x152-lci-p450-r-dynamic-coupe-2020-2024-new-santorini-black-f-type-p450-45.webp",
+   "scene": {
+    "src": "/generation/scene/f-type-x152-lci-light.webp",
+    "darkSrc": "/generation/scene/f-type-x152-lci-dark.webp",
+    "width": 1200,
+    "height": 676
+   }
+  },
+  "s-type|x200": {
+   "src": "/generation/hero/s-type-x200.webp",
+   "width": 600,
+   "height": 293,
+   "car": "jaguar-s-type-x200-3-0-v6-se-saloon-1999-2002-new-platinum-silver-x200-30-se-45.webp",
+   "scene": {
+    "src": "/generation/scene/s-type-x200-light.webp",
+    "darkSrc": "/generation/scene/s-type-x200-dark.webp",
+    "width": 1200,
+    "height": 676
+   }
+  },
+  "x-type|x400": {
+   "src": "/generation/hero/x-type-x400.webp",
+   "width": 560,
+   "height": 300,
+   "car": "jaguar-x-type-x400-2-0-v6-se-saloon-2001-2004-new-zircon-x-type-20-2-45.webp",
+   "scene": {
+    "src": "/generation/scene/x-type-x400-light.webp",
+    "darkSrc": "/generation/scene/x-type-x400-dark.webp",
+    "width": 1200,
+    "height": 676
+   }
+  },
+  "xe|x760": {
+   "src": "/generation/hero/xe-x760.webp",
+   "width": 640,
+   "height": 320,
+   "car": "jaguar-xe-x760-prestige-saloon-2015-2017-new-corris-grey-xe-prestige-45.webp",
+   "scene": {
+    "src": "/generation/scene/xe-x760-light.webp",
+    "darkSrc": "/generation/scene/xe-x760-dark.webp",
+    "width": 1200,
+    "height": 676
+   }
+  },
+  "xe|x760 lci": {
+   "src": "/generation/hero/xe-x760-lci.webp",
+   "width": 600,
+   "height": 316,
+   "car": "jaguar-xe-x760-lci-300-sport-black-saloon-2020-2021-special-carpathian-grey-xe-300-black-45.webp",
+   "scene": {
+    "src": "/generation/scene/xe-x760-lci-light.webp",
+    "darkSrc": "/generation/scene/xe-x760-lci-dark.webp",
+    "width": 1200,
+    "height": 676
+   }
+  },
+  "xf|x250": {
+   "src": "/generation/hero/xf-x250.webp",
+   "width": 560,
+   "height": 280,
+   "car": "jaguar-xf-x250-luxury-saloon-2008-2011-new-vapour-grey-xf-luxury-45.webp",
+   "scene": {
+    "src": "/generation/scene/xf-x250-light.webp",
+    "darkSrc": "/generation/scene/xf-x250-dark.webp",
+    "width": 1200,
+    "height": 676
+   }
+  },
+  "xf|x250 lci": {
+   "src": "/generation/hero/xf-x250-lci.webp",
+   "width": 560,
+   "height": 268,
+   "car": "jaguar-xf-x250-lci-luxury-saloon-2011-2015-new-stratus-grey-xf-lci-luxury-45.webp",
+   "scene": {
+    "src": "/generation/scene/xf-x250-lci-light.webp",
+    "darkSrc": "/generation/scene/xf-x250-lci-dark.webp",
+    "width": 1200,
+    "height": 676
+   }
+  },
+  "xf|x260": {
+   "src": "/generation/hero/xf-x260.webp",
+   "width": 640,
+   "height": 328,
+   "car": "jaguar-xf-x260-chequered-flag-saloon-2019-special-eiger-grey-xf-chequered-45.webp",
+   "scene": {
+    "src": "/generation/scene/xf-x260-light.webp",
+    "darkSrc": "/generation/scene/xf-x260-dark.webp",
+    "width": 1200,
+    "height": 676
+   }
+  },
+  "xj|series i": {
+   "src": "/generation/hero/xj-series-i.webp",
+   "width": 560,
+   "height": 284,
+   "car": "jaguar-xj-series-i-xj6-saloon-1968-1973-historical-black-recoloured-xj-s1-45.webp",
+   "scene": {
+    "src": "/generation/scene/xj-series-i-light.webp",
+    "darkSrc": "/generation/scene/xj-series-i-dark.webp",
+    "width": 1200,
+    "height": 676
+   }
+  },
+  "xj|series ii": {
+   "src": "/generation/hero/xj-series-ii.webp",
+   "width": 520,
+   "height": 271,
+   "car": "jaguar-xj-series-ii-xj12-saloon-1973-1979-historical-black-recoloured-xj-s2-45.webp",
+   "scene": {
+    "src": "/generation/scene/xj-series-ii-light.webp",
+    "darkSrc": "/generation/scene/xj-series-ii-dark.webp",
+    "width": 1200,
+    "height": 676
+   }
+  },
+  "xj|series iii": {
+   "src": "/generation/hero/xj-series-iii.webp",
+   "width": 560,
+   "height": 275,
+   "car": "jaguar-xj-series-iii-xj6-saloon-1979-1992-historical-black-recoloured-xj-s3-45.webp",
+   "scene": {
+    "src": "/generation/scene/xj-series-iii-light.webp",
+    "darkSrc": "/generation/scene/xj-series-iii-dark.webp",
+    "width": 1200,
+    "height": 676
+   }
+  },
+  "xj|x300": {
+   "src": "/generation/hero/xj-x300.webp",
+   "width": 560,
+   "height": 296,
+   "car": "jaguar-xj-x300-xj6-sovereign-saloon-1994-1997-new-black-recoloured-x300-2-45.webp",
+   "scene": {
+    "src": "/generation/scene/xj-x300-light.webp",
+    "darkSrc": "/generation/scene/xj-x300-dark.webp",
+    "width": 1200,
+    "height": 676
+   }
+  },
+  "xj|x308": {
+   "src": "/generation/hero/xj-x308.webp",
+   "width": 560,
+   "height": 280,
+   "car": "jaguar-xj-x308-xjr-performance-saloon-1997-2003-special-anthracite-x308-xjr-45.webp",
+   "scene": {
+    "src": "/generation/scene/xj-x308-light.webp",
+    "darkSrc": "/generation/scene/xj-x308-dark.webp",
+    "width": 1200,
+    "height": 676
+   }
+  },
+  "xj|x350": {
+   "src": "/generation/hero/xj-x350.webp",
+   "width": 560,
+   "height": 298,
+   "car": "jaguar-xj-x350-xj-super-v8-portfolio-saloon-2005-2009-new-celestial-black-x350-portfolio-45.webp",
+   "scene": {
+    "src": "/generation/scene/xj-x350-light.webp",
+    "darkSrc": "/generation/scene/xj-x350-dark.webp",
+    "width": 1200,
+    "height": 676
+   }
+  },
+  "xj|x351": {
+   "src": "/generation/hero/xj-x351.webp",
+   "width": 560,
+   "height": 289,
+   "car": "jaguar-xj-x351-xj-luxury-saloon-2010-2012-new-vapour-grey-x351-luxury-45.webp",
+   "scene": {
+    "src": "/generation/scene/xj-x351-light.webp",
+    "darkSrc": "/generation/scene/xj-x351-dark.webp",
+    "width": 1200,
+    "height": 676
+   }
+  },
+  "xj|x358": {
+   "src": "/generation/hero/xj-x358.webp",
+   "width": 560,
+   "height": 287,
+   "car": "jaguar-xj-x358-xj-3-0d-sovereign-saloon-2007-2009-new-vapour-grey-x358-30d-45.webp",
+   "scene": {
+    "src": "/generation/scene/xj-x358-light.webp",
+    "darkSrc": "/generation/scene/xj-x358-dark.webp",
+    "width": 1200,
+    "height": 676
+   }
+  },
+  "xj|xj40": {
+   "src": "/generation/hero/xj-xj40.webp",
+   "width": 560,
+   "height": 316,
+   "car": "jaguar-xj-xj40-xj6-sovereign-saloon-1986-1994-new-westminster-blue-xj40-45.webp",
+   "scene": {
+    "src": "/generation/scene/xj-xj40-light.webp",
+    "darkSrc": "/generation/scene/xj-xj40-dark.webp",
+    "width": 1200,
+    "height": 676
+   }
+  },
+  "xk|x100": {
+   "src": "/generation/hero/xk-x100.webp",
+   "width": 640,
+   "height": 319,
+   "car": "jaguar-xk-x100-xkr-100-special-edition-coupe-2001-special-platinum-silver-xkr-100-45.webp",
+   "scene": {
+    "src": "/generation/scene/xk-x100-light.webp",
+    "darkSrc": "/generation/scene/xk-x100-dark.webp",
+    "width": 1200,
+    "height": 676
+   }
+  },
+  "xk|x150": {
+   "src": "/generation/hero/xk-x150.webp",
+   "width": 520,
+   "height": 287,
+   "car": "jaguar-xk-x150-xk-signature-coupe-special-edition-coupe-2014-2015-special-dark-sapphire-xk-signature-45.webp",
+   "scene": {
+    "src": "/generation/scene/xk-x150-light.webp",
+    "darkSrc": "/generation/scene/xk-x150-dark.webp",
+    "width": 1200,
+    "height": 676
+   }
   }
  },
  "background": {
@@ -1423,7 +1747,8 @@
   "aj25": "/engines/aj25.webp",
   "aj133-gen-2": "/engines/aj133-gen-2.webp",
   "aj150p-hybrid": "/engines/aj150p-hybrid.webp",
-  "508pn": "/engines/508pn.webp"
+  "508pn": "/engines/508pn.webp",
+  "aj300p": "/engines/aj300p.webp"
  },
  "modelEngine": {
   "e-pace": "ingenium-petrol",
@@ -1435,6 +1760,50 @@
   "xk": "aj-v8",
   "s-type": "aj-v6",
   "x-type": "aj-v6"
+ },
+ "enginePages": {
+  "aj-v6-petrol": {
+   "engine": "aj-v6"
+  },
+  "ajd-v6-diesel": {
+   "engine": "ajd-v6"
+  },
+  "ingenium-20-petrol": {
+   "engine": "ingenium-petrol"
+  },
+  "306dt-306ps": {
+   "engine": "ajd-v6"
+  },
+  "aj-v8-4-0-4-2": {
+   "engine": "aj-v8"
+  },
+  "aj133": {
+   "engine": "aj133"
+  },
+  "aj20d6": {
+   "engine": "aj300d"
+  },
+  "aj20p6": {
+   "engine": "aj300p"
+  },
+  "aj6-aj16": {
+   "car": "xj|xj40"
+  },
+  "ajd4-204dtd": {
+   "engine": "224dt"
+  },
+  "ingenium-2-0-diesel": {
+   "engine": "ingenium-diesel"
+  },
+  "p510": {
+   "engine": "aj300p"
+  },
+  "xk-straight-six": {
+   "car": "xj|series i"
+  },
+  "v12-he": {
+   "car": "xj|series iii"
+  }
  },
  "landRover": "/cars/land-rover-discovery-sport-l550-lci-metropolitan-edition-2022-2024-hakuba-silver-45.webp",
  "generationModel": {
@@ -1455,7 +1824,8 @@
   "x358": "xj",
   "xj40": "xj",
   "x100": "xk",
-  "x150": "xk"
+  "x150": "xk",
+  "series iii": "xj"
  },
  "generationStart": {
   "e-pace|x540": 2017,
@@ -1471,6 +1841,7 @@
   "xf|x260": 2016,
   "xj|series i": 1968,
   "xj|series ii": 1973,
+  "xj|series iii": 1979,
   "xj|x300": 1994,
   "xj|x308": 1997,
   "xj|x350": 2003,

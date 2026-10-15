@@ -22,7 +22,7 @@ function TieredCostTable({ tiers, isDark }) {
           <div key={tier.tier} className="border-b border-[var(--color-border)] last:border-b-0">
             <div className="grid grid-cols-[1.6fr_1fr_1fr] items-stretch">
               <div className="flex items-center gap-1.5 border-b border-r border-[var(--color-border)]">
-                <GenIcon name={isCatastrophic ? "warning" : "wrench"} className="h-3.5 w-3.5 shrink-0" />
+                <GenIcon name={isCatastrophic ? "fire" : "wrench"} className="h-5 w-5 shrink-0" />
                 <p className={`text-[0.62rem] uppercase tracking-wide ${toneClass}`} dangerouslySetInnerHTML={{ __html: tier.tier }} />
               </div>
               <div className="flex items-center justify-center border-b border-r border-[var(--color-border)]">
@@ -93,7 +93,7 @@ function RiskBadge({ riskLevel }) {
 
   return (
     <span className={`inline-flex shrink-0 items-center gap-1 rounded-full border px-2 py-0.5 text-[0.7rem] font-semibold ${toneClass}`}>
-      <GenIcon name="warning" className="h-3 w-3" />
+      <GenIcon name="warning" className="h-4 w-4" />
       {riskLevel}
     </span>
   );
@@ -171,15 +171,12 @@ function AccordionCard({ problem, isDark, isOpen, onToggle }) {
   return (
     <div className="glass-panel overflow-hidden rounded-md">
       <div className="flex">
-        <div className="relative w-[92px] shrink-0 self-stretch border-r border-[var(--color-border)]">
-          <Image
-            src="/e90/section6.webp"
-            alt={problem.title}
-            fill
-            className="object-cover object-[center_20%]"
-            sizes="92px"
-          />
-        </div>
+        {/* The engine this problem affects (set server-side); hidden when there is no photo of it */}
+        {problem.image ? (
+          <div className="relative w-[92px] shrink-0 self-stretch border-r border-[var(--color-border)]">
+            <Image src={problem.image} alt="" fill className="object-contain p-1.5" sizes="92px" />
+          </div>
+        ) : null}
 
         <button type="button" onClick={onToggle} aria-expanded={isOpen} className="flex min-w-0 flex-1 flex-col gap-2 py-3 pr-3 pl-3 text-left">
           <div className="flex items-start justify-between gap-2">
@@ -246,11 +243,13 @@ function ProblemCard({ problem, isDark }) {
             {name ? <p className="mt-1 text-[1rem] font-bold leading-tight text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: name }} /> : null}
           </div>
         </div>
-        <div className="absolute right-0 top-0 h-full w-[42%] overflow-hidden rounded-bl-md">
-          <div className="relative h-full min-h-[128px] w-full">
-            <Image src="/e90/section6.webp" alt={problem.title} fill className="object-cover" sizes="180px" />
+        {problem.image ? (
+          <div className="absolute right-0 top-0 h-full w-[42%] overflow-hidden rounded-bl-md">
+            <div className="relative h-full min-h-[128px] w-full">
+              <Image src={problem.image} alt="" fill className="object-contain p-2" sizes="180px" />
+            </div>
           </div>
-        </div>
+        ) : null}
       </div>
 
       {/* Info list */}
@@ -327,7 +326,7 @@ export default function CommonProblems({ data }) {
           <div className="glass-panel mt-4 overflow-hidden rounded-md md:mt-5">
             <div className="flex items-center gap-3 border-b border-[var(--color-border)] px-4 py-3.5">
               <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
-                <GenIcon name="shield" className="h-5 w-5" />
+                <GenIcon name="shield" inverted className="h-7 w-7" />
               </span>
               <p className="text-[1rem] font-bold leading-tight text-[var(--color-text)]">
                 How confident are these ratings?
@@ -340,7 +339,7 @@ export default function CommonProblems({ data }) {
                 className={`flex items-center gap-3 px-4 py-3.5 ${index > 0 ? "border-t border-[var(--color-border)]" : ""}`}
               >
                 <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
-                  <GenIcon name={item.icon} className="h-4.5 w-4.5" />
+                  <GenIcon name={item.icon} className="h-6 w-6" />
                 </span>
                 <div className="min-w-0 flex-1">
                   <p
@@ -359,7 +358,7 @@ export default function CommonProblems({ data }) {
             {data.footerNote ? (
               <div className="flex items-center gap-3 border-t border-[var(--color-border)] px-4 py-3.5">
                 <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
-                  <GenIcon name="tag" className="h-4.5 w-4.5" />
+                  <GenIcon name="tag" className="h-6 w-6" />
                 </span>
                 <div className="min-w-0 flex-1">
                   <p className="text-[0.85rem] font-semibold text-[var(--color-primary)]">Data Note</p>
