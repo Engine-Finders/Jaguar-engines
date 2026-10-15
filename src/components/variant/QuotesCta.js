@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
+import CarOnBackground from "@/components/shared/CarOnBackground";
 import GenIcon from "../generation/GenIcons";
 import { variantSectionBg, splitSectionH2 } from "./variantSection";
 
@@ -17,7 +17,6 @@ export default function QuotesCta({ data }) {
   if (!data) return null;
 
   const isDark = theme === "dark";
-  const image = isDark ? "/320d/compare_dark.webp" : "/320d/compare_light.webp";
   const { title, subtitle } = splitHeadline(data.headline);
   const headlineParts = splitSectionH2(title);
   const headingClass = isDark ? "text-white" : "text-[var(--color-text)]";
@@ -29,10 +28,16 @@ export default function QuotesCta({ data }) {
       {/* Mobile: no background photo, plain surface card. Desktop: unchanged full-bleed photo card. */}
       <div className="relative overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-6 md:bg-[var(--color-page)] md:p-10">
         <div className="absolute inset-0 hidden md:block">
-          <Image src={image} alt="BMW 320d" fill className="object-cover object-right" sizes="100vw" />
-          {isDark ? (
-            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(11,12,12,0.95)_0%,rgba(11,12,12,0.75)_45%,rgba(11,12,12,0.15)_85%)]" />
-          ) : null}
+          {/* This car's photo (set server-side) on Jaguar's own background */}
+          <CarOnBackground
+            src={data.image}
+            alt={`Jaguar ${data.vehicle || ""}`.trim()}
+            isDark={isDark}
+            className="absolute inset-0"
+            carClassName="right-[4%] top-[8%] bottom-[8%] w-[min(40%,520px)]"
+            overlayClassName={isDark ? "bg-[linear-gradient(90deg,rgba(11,12,12,0.95)_0%,rgba(11,12,12,0.75)_45%,rgba(11,12,12,0.15)_85%)]" : "bg-[linear-gradient(90deg,rgba(255,255,255,0.96)_0%,rgba(255,255,255,0.84)_42%,rgba(255,255,255,0.12)_80%)]"}
+            sizes="520px"
+          />
         </div>
 
         <div className="relative z-10 flex flex-col justify-between gap-6 md:flex-row md:items-center">

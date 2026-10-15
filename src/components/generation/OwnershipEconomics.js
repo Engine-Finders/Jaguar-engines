@@ -12,9 +12,9 @@ import {
 import HomeIcon from "@/components/home/homeIcons";
 
 const verdictStyles = {
-  warning: { icon: "warning", light: "text-[#d97517]", dark: "text-[#ffb05a]" },
-  success: { icon: "check", light: "text-[#13884a]", dark: "text-[#67d99a]" },
-  danger: { icon: "warning", light: "text-[#db2e2e]", dark: "text-[#ff8b90]" },
+  warning: { icon: "check-watch", light: "text-[#d97517]", dark: "text-[#ffb05a]" },
+  success: { icon: "good-choice", light: "text-[#13884a]", dark: "text-[#67d99a]" },
+  danger: { icon: "fire", light: "text-[#db2e2e]", dark: "text-[#ff8b90]" },
   info: { icon: "info", light: "text-[var(--color-primary)]", dark: "text-[var(--color-chrome-bright)]" },
 };
 
@@ -59,7 +59,7 @@ function VerdictPill({ verdictType, text, isDark }) {
 
   return (
     <span className={`inline-flex items-start gap-2 text-[0.78rem] font-semibold leading-[1.25] ${toneClass}`}>
-      <GenIcon name={style.icon} className={`mt-0.5 h-4 w-4 shrink-0 ${toneClass}`} />
+      <GenIcon name={style.icon} className="h-5 w-5 shrink-0" />
       <span dangerouslySetInnerHTML={{ __html: text }} />
     </span>
   );
@@ -115,8 +115,17 @@ function MobileRow({ row, isDark }) {
   );
 }
 
-const takeawayIcons = ["diamond", "chart", "trophy"];
-const COLUMN_ICONS = ["engine", "gauge", "warning", "wrench", "refresh", "shield"];
+// Engine, Typical Mileage, Common Major Failure, Repair Cost, Replacement Cost, Ownership Verdict
+const COLUMN_ICONS = ["engine", "gauge", "fire", "wrench", "dollar", "honest-verdict"];
+
+// "Which X761 Costs Least To Own?" / "...Costs Most..." / "...Is Best Value?"
+function takeawayIcon(question = "") {
+  const value = question.toLowerCase();
+  if (value.includes("least")) return "pound-shield";
+  if (value.includes("most")) return "fire";
+  if (value.includes("value")) return "premium";
+  return "info";
+}
 
 export default function OwnershipEconomics({ data }) {
   const { theme } = useTheme();
@@ -143,7 +152,7 @@ export default function OwnershipEconomics({ data }) {
                   index === 0 ? "pr-5 pl-3" : index === 1 ? "pr-3 pl-5" : "px-4"
                 } ${headerDivider}`}
               >
-                <GenIcon name={COLUMN_ICONS[index]} className="h-4 w-4 shrink-0" />
+                <GenIcon name={COLUMN_ICONS[index]} inverted className="h-6 w-6 shrink-0" />
                 {col}
               </span>
             ))}
@@ -165,7 +174,7 @@ export default function OwnershipEconomics({ data }) {
                     index === 0 ? "pr-4 pl-2" : index === 1 ? "pr-2 pl-4" : "px-3"
                   } ${headerDivider}`}
                 >
-                  <GenIcon name={COLUMN_ICONS[index]} className="h-3.5 w-3.5 shrink-0" />
+                  <GenIcon name={COLUMN_ICONS[index]} inverted className="h-5 w-5 shrink-0" />
                   {col}
                 </span>
               ))}
@@ -182,7 +191,7 @@ export default function OwnershipEconomics({ data }) {
           {data.economicsRule ? (
             <div className="glass-panel flex items-center gap-4 rounded-md border border-[var(--color-primary)] p-3.5">
               <span className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)]">
-                <HomeIcon name="scale" isDark={!isDark} className="h-12 w-12 object-contain" />
+                <HomeIcon name="rule" isDark={!isDark} className="h-12 w-12 object-contain" />
               </span>
               <div className="min-w-0 flex-1">
                 <p
@@ -211,8 +220,8 @@ export default function OwnershipEconomics({ data }) {
               <ul className="mt-2.5 flex flex-col gap-2.5">
                 {data.keyTakeaways.map((item, index) => (
                   <li key={item.question} className="flex items-start gap-3 border-t border-[var(--color-border)] pt-3 first:border-t-0 first:pt-0">
-                    <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
-                      <GenIcon name={takeawayIcons[index % takeawayIcons.length]} className="h-4.5 w-4.5" />
+                    <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
+                      <GenIcon name={takeawayIcon(item.question)} className="h-6 w-6" />
                     </span>
                     <div className="min-w-0 flex-1">
                       <p className="text-[0.85rem] font-semibold text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: item.question }} />

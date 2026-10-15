@@ -11,10 +11,10 @@ import {
 } from "./generationSection";
 
 const STAT_ICON_MAP = {
-  chart: "real-inquiries",
+  chart: "engine",
   car: "vehicle",
-  dollar: "value",
-  warning: "warning",
+  dollar: "pound-shield",
+  warning: "fire",
 };
 
 function splitVehicle(vehicle = "") {
@@ -52,8 +52,8 @@ function splitAverageCost(text = "") {
 
 function StatCardIcon({ icon, isDark, compact = false, className = "" }) {
   const homeIcon = STAT_ICON_MAP[icon] || "real-inquiries";
-  const sizeClass = compact ? "h-8 w-8" : "h-9 w-9";
-  const iconSizeClass = compact ? "h-5 w-5" : "h-6 w-6";
+  const sizeClass = compact ? "h-9 w-9" : "h-10 w-10";
+  const iconSizeClass = compact ? "h-6 w-6" : "h-7 w-7";
 
   return (
     <span className={`flex shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] ${sizeClass} ${className}`}>
@@ -122,7 +122,7 @@ function AverageCostCard({ value, note }) {
 function LiveFeedHeader({ isDark, feedBorder, feedText }) {
   return (
     <div className={`flex items-center gap-2 border-b px-4 py-3 text-[0.82rem] font-semibold uppercase tracking-wide ${feedBorder} ${feedText}`}>
-      <HomeIcon name="live" isDark={isDark} className="h-5 w-5 object-contain" />
+      <HomeIcon name="live" isDark={isDark} className="h-6 w-6 object-contain" />
       Live Feed
     </div>
   );
@@ -147,7 +147,7 @@ function MobileLiveFeedRow({ row, feedBorder, feedText, feedMuted, feedSoft, sho
       </div>
 
       <div className={`flex items-center gap-1 border-r px-2 py-3 ${feedBorder} ${feedMuted}`}>
-        <GenIcon name="warning" className="h-3 w-3 shrink-0 text-[var(--color-primary)]" />
+        <GenIcon name="warning" className="h-4 w-4 shrink-0" />
         <span className="min-w-0 break-words leading-[1.25]" dangerouslySetInnerHTML={{ __html: row.issue }} />
       </div>
 
@@ -156,7 +156,7 @@ function MobileLiveFeedRow({ row, feedBorder, feedText, feedMuted, feedSoft, sho
         {label ? <p className={`text-[0.58rem] ${feedSoft}`} dangerouslySetInnerHTML={{ __html: label }} /> : null}
         {showUpdated && row.updated ? (
           <div className={`mt-1.5 flex items-center gap-1 text-[0.56rem] ${feedSoft}`}>
-            <GenIcon name="refresh" className="h-3 w-3 shrink-0 text-[var(--color-primary)]" />
+            <GenIcon name="refresh" className="h-4 w-4 shrink-0" />
             <span dangerouslySetInnerHTML={{ __html: row.updated }} />
           </div>
         ) : null}

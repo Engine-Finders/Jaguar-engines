@@ -8,13 +8,12 @@ import GenIcon from "../generation/GenIcons";
 import { variantSectionBg, splitSectionH2, tableHeaderClass, primaryBadgeClass } from "./variantSection";
 
 const DESKTOP_COLS = "grid-cols-[96px_110px_1.3fr_1.2fr_1.1fr_1.8fr]";
-const CAR_IMAGE = "/320d/era_map.webp";
 
 const TRUST_POINTS = [
   { icon: "dollar", label: "Real UK Cost Data" },
   { icon: "shield", label: "Verified Reliability" },
-  { icon: "users", label: "Expert Insights" },
-  { icon: "clock", label: "Updated for 2025" },
+  { icon: "expert", label: "Expert Insights" },
+  { icon: "calendar", label: "Updated for 2025" },
 ];
 
 // Splits a trailing "[TAG]" or "[TAG - detail]" marker off a value string,
@@ -36,17 +35,24 @@ function GenerationBadge({ generation, className = "", isDark }) {
   );
 }
 
-function GenerationThumb({ generation, isDark, imageOnly = false }) {
+// Each row's own generation photo is set server-side (row.image); no photo leaves the slot empty.
+function carAlt(generation = "") {
+  return `Jaguar ${String(generation).replace(/<[^>]*>/g, "")}`;
+}
+
+function GenerationThumb({ generation, image, isDark, imageOnly = false }) {
   return (
     <div className={`relative w-full ${imageOnly ? "h-14" : "h-16"}`}>
       {!imageOnly ? <GenerationBadge generation={generation} isDark={isDark} /> : null}
-      <Image
-        src={CAR_IMAGE}
-        alt={`BMW 320d ${generation}`}
-        fill
-        className={`object-contain ${imageOnly ? "" : "relative z-10"}`}
-        sizes={imageOnly ? "96px" : "130px"}
-      />
+      {image ? (
+        <Image
+          src={image}
+          alt={carAlt(generation)}
+          fill
+          className={`object-contain ${imageOnly ? "" : "relative z-10"}`}
+          sizes={imageOnly ? "96px" : "130px"}
+        />
+      ) : null}
     </div>
   );
 }
@@ -60,7 +66,7 @@ function DesktopRow({ row, isDark }) {
   return (
     <div className={`grid ${DESKTOP_COLS} items-stretch gap-px ${rowClass} text-[0.82rem] border-b ${borderBottom} last:border-b-0`}>
       <div className="flex items-center px-2 py-2">
-        <GenerationThumb generation={row.generation} isDark={isDark} imageOnly />
+        <GenerationThumb generation={row.generation} image={row.image} isDark={isDark} imageOnly />
       </div>
       <span className={`flex items-center px-3 border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.years }} />
       <span className={`flex items-center px-3 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.engineCode }} />
@@ -87,9 +93,11 @@ function MobileCard({ row, isOpen, onToggle, isDark }) {
         <div className="flex flex-col items-center gap-0.5 pr-2.5">
           <span className={`w-full rounded-md px-2 py-0.5 text-center text-[0.7rem] font-bold leading-tight ${primaryBadgeClass(isDark)}`}>{row.generation}</span>
           <span className="text-center text-[0.64rem] leading-tight text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: row.years }} />
-          <div className="relative h-20 w-full">
-            <Image src={CAR_IMAGE} alt={`BMW 320d ${row.generation}`} fill className="object-contain" sizes="104px" />
-          </div>
+          {row.image ? (
+            <div className="relative h-20 w-full">
+              <Image src={row.image} alt={carAlt(row.generation)} fill className="object-contain" sizes="104px" />
+            </div>
+          ) : null}
         </div>
 
         <div className="flex min-w-0 flex-col gap-1 border-l border-[var(--color-border)] px-2.5">
@@ -139,7 +147,7 @@ export default function EraMap({ data }) {
               <span
                 className={`hidden h-9 w-9 shrink-0 items-center justify-center rounded-md md:flex ${primaryBadgeClass(isDark)}`}
               >
-                <GenIcon name="clock" className="h-5 w-5" />
+                <GenIcon name="history" inverted className="h-7 w-7" />
               </span>
               <h2 className="text-[1.6rem] font-bold leading-[1.1] tracking-normal md:text-[2.4rem]">
                 {titleParts.before ? <span dangerouslySetInnerHTML={{ __html: titleParts.before }} /> : null}
@@ -188,7 +196,7 @@ export default function EraMap({ data }) {
         <div className="mt-6 flex flex-col items-start gap-5 rounded-xl border border-[var(--color-border)] bg-[var(--color-card)] px-5 py-4 shadow-lg lg:flex-row lg:items-center lg:justify-between md:px-6 md:py-4">
           <div className="flex items-start gap-4 lg:max-w-[45%] lg:items-center">
             <span className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full border text-[var(--color-primary)] ${isDark ? "border-white/15 bg-white/5" : "border-[var(--color-border)] bg-[var(--color-surface)]"}`}>
-              <GenIcon name="shield" className="h-5 w-5" />
+              <GenIcon name="shield" className="h-8 w-8" />
             </span>
             <div>
               <p className="text-[0.95rem] font-bold text-[var(--color-text)]">Why use this era map?</p>
@@ -212,7 +220,7 @@ export default function EraMap({ data }) {
                   <span aria-hidden="true" className="h-6 w-px shrink-0 bg-[var(--color-border)] lg:h-8" />
                 ) : null}
                 <div className="flex items-center gap-2">
-                  <GenIcon name={point.icon} className="h-7 w-7 shrink-0 text-[var(--color-primary)]" />
+                  <GenIcon name={point.icon} className="h-9 w-9 shrink-0" />
                   <span className="whitespace-nowrap text-[0.78rem] font-semibold text-[var(--color-text)]">{point.label}</span>
                 </div>
               </div>

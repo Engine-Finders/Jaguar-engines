@@ -7,8 +7,6 @@ import MStripe from "@/components/reusableComponents/MStripe";
 import { sectionDescription, sectionH2 } from "@/components/models/sectionTypography";
 import { engineSectionBg } from "./engineSection";
 
-const ENGINE_IMAGE = "/e90/engine.webp";
-
 function cleanText(text = "") {
   return String(text)
     .replace(/\u00c2\u00a3|\u00a3/g, "\u00a3")
@@ -95,7 +93,7 @@ function FaqItem({ item, open, onToggle, isLast, isDark }) {
   );
 }
 
-export default function FAQAccordion({ data, engineLabel = "Jaguar Engine" }) {
+export default function FAQAccordion({ data, engineLabel = "Jaguar Engine", engineImage }) {
   const { theme } = useTheme();
   const items = data?.items || [];
   const [openId, setOpenId] = useState(items[0]?.id ?? null);
@@ -121,15 +119,17 @@ export default function FAQAccordion({ data, engineLabel = "Jaguar Engine" }) {
               <span className="font-semibold text-[var(--color-chrome-bright)]">{engineCode}</span> engine questions.
             </p>
 
-            <div className="relative mx-auto mt-5 h-[130px] w-full max-w-[360px] md:mx-0 md:mt-6 md:h-[150px]">
-              <Image
-                src={ENGINE_IMAGE}
-                alt=""
-                fill
-                sizes="360px"
-                className="object-contain object-center drop-shadow-[0_16px_32px_rgba(0,0,0,0.25)] md:object-left"
-              />
-            </div>
+            {engineImage ? (
+              <div className="relative mx-auto mt-5 h-[130px] w-full max-w-[360px] md:mx-0 md:mt-6 md:h-[150px]">
+                <Image
+                  src={engineImage}
+                  alt=""
+                  fill
+                  sizes="360px"
+                  className="object-contain object-center drop-shadow-[0_16px_32px_rgba(0,0,0,0.25)] md:object-left"
+                />
+              </div>
+            ) : null}
           </div>
 
           <div

@@ -10,12 +10,12 @@ import { engineSectionBg } from "./engineSection";
 const METRIC_ICONS = {
   "Engine Family": "engine",
   Fuel: "fuel",
-  "Configuration / Displacement": "engine-codes",
+  "Configuration / Displacement": "cylinders",
   "Power Range": "diagnosis",
-  "Years Produced": "timeline",
+  "Years Produced": "calendar",
   "Models Fitted (Jaguar)": "vehicle",
-  "Models Fitted (BMW only)": "vehicle",
-  "Cross-Brand Fitment": "globe",
+  "Models Fitted (Jaguar only)": "vehicle",
+  "Cross-Brand Fitment": "fitting-engine",
   "Overall Engine Score": "star",
 };
 
@@ -148,7 +148,7 @@ function DesktopSmallCard({ metric, value, isDark }) {
   );
 }
 
-function DesktopWideCard({ metric, value, text, isDark, imageType = "none" }) {
+function DesktopWideCard({ metric, value, text, isDark, imageType = "none", engineImage }) {
   return (
     <article className={`glass-panel grid min-h-[180px] overflow-hidden rounded-md border md:grid-cols-[1.45fr_0.95fr] ${cardClass(isDark)}`}>
       <div className="flex items-start gap-4 px-5 py-5">
@@ -170,13 +170,13 @@ function DesktopWideCard({ metric, value, text, isDark, imageType = "none" }) {
 
       <div className="relative hidden overflow-hidden lg:flex lg:items-center lg:justify-center">
         {imageType === "engine" ? (
-          <Image src="/e90/engine.webp" alt="" width={240} height={200} className="h-auto w-[220px] object-contain opacity-90" />
+          engineImage ? <Image src={engineImage} alt="" width={240} height={240} className="h-auto w-[220px] object-contain opacity-90" /> : null
         ) : imageType === "clock" ? (
-          <HomeIcon name="timeline" isDark={isDark} className="h-24 w-24 object-contain opacity-25" />
+          <HomeIcon name="calendar" isDark={isDark} className="h-24 w-24 object-contain opacity-25" />
         ) : imageType === "car" ? (
           <HomeIcon name="vehicle" isDark={isDark} className="h-24 w-24 object-contain opacity-25" />
         ) : imageType === "globe" ? (
-          <HomeIcon name="globe" isDark={isDark} className="h-24 w-24 object-contain opacity-25" />
+          <HomeIcon name="fitting-engine" isDark={isDark} className="h-24 w-24 object-contain opacity-25" />
         ) : null}
       </div>
     </article>
@@ -252,7 +252,7 @@ function MobileRow({ metric, value, isDark }) {
   );
 }
 
-export default function AtAGlance({ data }) {
+export default function AtAGlance({ data, engineImage }) {
   const { theme } = useTheme();
   if (!data) return null;
 
@@ -295,6 +295,7 @@ export default function AtAGlance({ data }) {
                 text="Modern Jaguar architecture with proven UK workshop data behind it."
                 isDark={isDark}
                 imageType="engine"
+                engineImage={engineImage}
               />
             ) : null}
             {rowMap["Years Produced"] ? (

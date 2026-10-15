@@ -17,7 +17,7 @@ import CalculatorCTA from "@/components/models/CalculatorCTA";
 import TrustBlock from "@/components/models/TrustBlock";
 import FAQAccordion from "@/components/models/FAQAccordion";
 import ClosingActionCards from "@/components/models/ClosingActionCards";
-import { withModelPageImages } from "@/components/shared/pageCarImages";
+import { withGenerationPageImages, withModelPageImages, withVariantPageImages } from "@/components/shared/pageCarImages";
 
 import GenHero from "@/components/generation/ModelHero";
 import GenEngineDatabase from "@/components/generation/EngineDatabase";
@@ -198,6 +198,7 @@ export default async function CatchAllPage({ params }) {
   }
 
   if (type === "generations") {
+    data = withGenerationPageImages(data);
     return (
       <main className="flex flex-col overflow-x-hidden">
         {data.meta?.jsonLd && (
@@ -216,15 +217,15 @@ export default async function CatchAllPage({ params }) {
         <CoreVariantsMarketGroup
           coreVariants={data.coreVariants}
           marketIntelligence={data.marketIntelligence}
-          hero={data.hero}
         />
         <GenFAQAccordion data={data.faq} />
-        <GenTrustCta data={data.trustCta} hero={data.hero} />
+        <GenTrustCta data={data.trustCta} />
       </main>
     );
   }
 
   if (type === "variants") {
+    data = withVariantPageImages(data);
     return (
       <main className="flex flex-col overflow-x-hidden">
         {data.meta?.jsonLd && (

@@ -13,6 +13,11 @@ const URGENCY_TONE = {
   "🟡": { light: "text-[#a3860f] bg-[#fffbe6]", dark: "text-[#e6c94d] bg-[rgba(214,180,20,0.15)]" },
 };
 
+// 🔴 / 🟠 / 🟡 urgency -> client icon (GenIcon maps the emoji); no urgency reads as 🟠.
+function urgencyIcon(problem) {
+  return problem.urgency?.icon || "🟠";
+}
+
 function shortTitle(title = "") {
   const beforeParen = title.split(" (")[0];
   return beforeParen.replace(/^N47 Rear |^BMW /, "");
@@ -26,8 +31,8 @@ function ProblemDetail({ problem, index, isDark }) {
   return (
     <div className="glass-panel flex h-full flex-col gap-3 overflow-hidden rounded-md p-4" style={{ borderLeft: `4px solid ${accent}` }}>
       <div className="flex items-start gap-2">
-        <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-white" style={{ backgroundColor: accent }}>
-          <GenIcon name="warning" className="h-4 w-4" />
+        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-white" style={{ backgroundColor: accent }}>
+          <GenIcon name={urgencyIcon(problem)} onDark className="h-6 w-6" />
         </span>
         <h3 className="min-w-0 text-[0.95rem] font-bold leading-tight text-[var(--color-text)]">
           {index + 1}. {problem.title}
@@ -37,7 +42,7 @@ function ProblemDetail({ problem, index, isDark }) {
       <div className="flex flex-col gap-2 text-[0.8rem] leading-[1.4]">
         {problem.symptoms ? (
           <p className="flex items-start gap-1.5 text-[var(--color-text-muted)]">
-            <GenIcon name="info" className="mt-0.5 h-3.5 w-3.5 shrink-0 text-[var(--color-primary)]" />
+            <GenIcon name="symptoms" className="h-5 w-5 shrink-0" />
             <span>
               <span className="font-semibold text-[var(--color-text)]">Symptoms: </span>
               <span dangerouslySetInnerHTML={{ __html: problem.symptoms }} />
@@ -46,7 +51,7 @@ function ProblemDetail({ problem, index, isDark }) {
         ) : null}
         {problem.typicalMileage ? (
           <p className="flex items-start gap-1.5 text-[var(--color-text-muted)]">
-            <GenIcon name="gauge" className="mt-0.5 h-3.5 w-3.5 shrink-0 text-[var(--color-primary)]" />
+            <GenIcon name="gauge" className="h-5 w-5 shrink-0" />
             <span>
               <span className="font-semibold text-[var(--color-text)]">Typical mileage: </span>
               {problem.typicalMileage}
@@ -55,7 +60,7 @@ function ProblemDetail({ problem, index, isDark }) {
         ) : null}
         {problem.repairCost ? (
           <p className="flex items-start gap-1.5 text-[var(--color-text-muted)]">
-            <GenIcon name="wrench" className="mt-0.5 h-3.5 w-3.5 shrink-0 text-[var(--color-primary)]" />
+            <GenIcon name="wrench" className="h-5 w-5 shrink-0" />
             <span>
               <span className="font-semibold text-[var(--color-text)]">Repair cost: </span>
               {problem.repairCost}
@@ -64,7 +69,7 @@ function ProblemDetail({ problem, index, isDark }) {
         ) : null}
         {problem.replacementCost ? (
           <p className="flex items-start gap-1.5 text-[var(--color-text-muted)]">
-            <GenIcon name="engine" className="mt-0.5 h-3.5 w-3.5 shrink-0 text-[var(--color-primary)]" />
+            <GenIcon name="engine" className="h-5 w-5 shrink-0" />
             <span>
               <span className="font-semibold text-[var(--color-text)]">Replacement cost: </span>
               {problem.replacementCost}
@@ -73,7 +78,10 @@ function ProblemDetail({ problem, index, isDark }) {
         ) : null}
         {problem.urgency ? (
           <span className={`inline-flex w-fit items-center gap-1.5 rounded-full px-2.5 py-1 text-[0.72rem] font-semibold ${urgencyClass}`}>
-            {problem.urgency.icon} {problem.urgency.label} - <span dangerouslySetInnerHTML={{ __html: problem.urgency.text }} />
+            <GenIcon name={urgencyIcon(problem)} className="h-5 w-5 shrink-0" />
+            <span>
+              {problem.urgency.label} - <span dangerouslySetInnerHTML={{ __html: problem.urgency.text }} />
+            </span>
           </span>
         ) : null}
       </div>
@@ -128,8 +136,8 @@ export default function CommonProblems({ data }) {
                     : { color: "var(--color-text-muted)" }
                 }
               >
-                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-white" style={{ backgroundColor: accent }}>
-                  <GenIcon name="warning" className="h-3 w-3" />
+                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-white" style={{ backgroundColor: accent }}>
+                  <GenIcon name={urgencyIcon(problem)} onDark className="h-5 w-5" />
                 </span>
                 <span className="truncate">{shortTitle(problem.title)}</span>
               </button>

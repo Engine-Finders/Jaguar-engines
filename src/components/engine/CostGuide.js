@@ -60,13 +60,13 @@ function badgeClass(isDark) {
 function ConditionIcon({ condition, isDark }) {
   const key = cleanText(condition).toLowerCase();
   let icon = "engine";
-  if (key.includes("recondition")) icon = "refresh";
-  else if (key.includes("rebuild")) icon = "repair";
-  else if (key.includes("used")) icon = "vehicle";
+  if (key.includes("recondition")) icon = "refresh-cycle";
+  else if (key.includes("rebuil")) icon = "repair-tool";
+  else if (key.includes("used")) icon = "price-tag";
 
   return (
     <span className="mx-auto flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[var(--color-border-strong)] bg-[var(--color-primary-soft)] md:h-10 md:w-10">
-      <HomeIcon name={icon} isDark={isDark} className="h-5 w-5 object-contain md:h-6 md:w-6" />
+      <HomeIcon name={icon} isDark={isDark} className="h-6 w-6 object-contain md:h-7 md:w-7" />
     </span>
   );
 }

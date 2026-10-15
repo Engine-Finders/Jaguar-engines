@@ -1,12 +1,12 @@
 "use client";
 
-import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
+import CarOnBackground from "@/components/shared/CarOnBackground";
 import MStripe from "@/components/reusableComponents/MStripe";
 import GenIcon from "../generation/GenIcons";
+import { checkIconFor } from "@/components/shared/labelIcons";
 import { variantSectionBg, VariantSectionHeading, primaryBadgeClass, indexBadgeClass } from "./variantSection";
 
-const ITEM_ICONS = ["ear", "clipboardCheck", "cloud", "fan", "exhaust", "oilDrop", "engineWarning", "clipboardSearch"];
 
 function splitItem(item = "") {
   const clean = item.replace(/^\*\s*/, "");
@@ -15,7 +15,7 @@ function splitItem(item = "") {
   return { label: clean.slice(0, dashIndex), text: clean.slice(dashIndex + 3) };
 }
 
-function TrustCard({ className = "", isDark }) {
+function TrustCard({ className = "", isDark, vehicle = "Jaguar" }) {
   const cardBorder = isDark ? "border-white/10" : "border-[var(--color-border)]";
   const cardBg = isDark ? "bg-[var(--color-surface-glass)]" : "bg-[var(--color-surface)]";
   const titleClass = isDark ? "text-white" : "text-[var(--color-text)]";
@@ -24,12 +24,12 @@ function TrustCard({ className = "", isDark }) {
   return (
     <div className={`flex w-full max-w-[360px] items-center gap-3 rounded-xl border ${cardBorder} ${cardBg} p-3.5 shadow-sm backdrop-blur ${className}`}>
       <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${primaryBadgeClass(isDark)}`}>
-        <GenIcon name="shield" className="h-5 w-5" />
+        <GenIcon name="shield" inverted className="h-7 w-7" />
       </span>
       <div className="min-w-0">
         <p className={`text-[0.92rem] font-bold leading-tight ${titleClass}`}>Buy smart. Drive with confidence.</p>
         <p className={`mt-1 text-[0.8rem] leading-[1.4] ${bodyClass}`}>
-          A few checks today can save thousands tomorrow. Use this checklist to avoid the most common 320d pitfalls.
+          A few checks today can save thousands tomorrow. Use this checklist to avoid the most common {vehicle} pitfalls.
         </p>
       </div>
     </div>
@@ -41,8 +41,8 @@ export default function BuyingChecklist({ data }) {
   if (!data) return null;
 
   const isDark = theme === "dark";
-  const image = isDark ? "/320d/checklist_dark.webp" : "/320d/checklist_light.webp";
-  const imageMobile = isDark ? "/320d/checklist_mobile_dark.webp" : "/320d/checklist_mobile_light.webp";
+  // This car's photo (set server-side) on Jaguar's own background.
+  const carAlt = `Jaguar ${data.vehicle || ""}`.trim();
   const headingClass = isDark ? "text-white" : "text-[var(--color-text)]";
   const bodyTextClass = isDark ? "text-white/80" : "text-[var(--color-text-muted)]";
 
@@ -52,7 +52,14 @@ export default function BuyingChecklist({ data }) {
           seamless fade into the page background in light mode; desktop keeps the
           existing full-bleed background image. */}
       <div className="relative h-[220px] w-full bg-[var(--color-page)] md:hidden">
-        <Image src={imageMobile} alt="BMW 320d" fill className="object-cover" sizes="100vw" />
+        <CarOnBackground
+          src={data.image}
+          alt={carAlt}
+          isDark={isDark}
+          className="absolute inset-0"
+          carClassName="inset-x-[8%] top-[10%] bottom-[14%]"
+          sizes="100vw"
+        />
         {isDark ? (
           <div className="absolute inset-x-0 bottom-0 h-16 bg-[linear-gradient(0deg,rgba(0,0,0,0.85)_0%,transparent_100%)]" />
         ) : (
@@ -61,13 +68,26 @@ export default function BuyingChecklist({ data }) {
       </div>
 
       <div className="absolute inset-0 hidden md:block">
-        <Image src={image} alt="BMW 320d" fill className="object-cover object-right" sizes="100vw" />
-        {isDark ? (
-          <>
-            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(11,12,12,0.95)_0%,rgba(11,12,12,0.75)_38%,rgba(11,12,12,0.25)_75%)]" />
-            <div className="absolute inset-x-0 bottom-0 h-32 bg-[linear-gradient(0deg,rgba(11,12,12,0.85)_0%,transparent_100%)]" />
-          </>
-        ) : null}
+        <CarOnBackground
+          src={data.image}
+          alt={carAlt}
+          isDark={isDark}
+          className="absolute inset-0"
+          carClassName="right-[3%] top-[4%] h-[34%] w-[min(24%,360px)]"
+          overlayClassName={
+            isDark
+              ? "bg-[linear-gradient(90deg,rgba(11,12,12,0.95)_0%,rgba(11,12,12,0.75)_38%,rgba(11,12,12,0.25)_75%)]"
+              : "bg-[linear-gradient(90deg,rgba(255,255,255,0.96)_0%,rgba(255,255,255,0.84)_38%,rgba(255,255,255,0.2)_75%)]"
+          }
+          sizes="360px"
+        />
+        <div
+          className={`absolute inset-x-0 bottom-0 h-32 ${
+            isDark
+              ? "bg-[linear-gradient(0deg,rgba(11,12,12,0.85)_0%,transparent_100%)]"
+              : "bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)]"
+          }`}
+        />
       </div>
 
       <div className="relative z-10 mx-auto w-full max-w-8xl px-4 py-5 md:px-8 md:py-6">
@@ -92,7 +112,7 @@ export default function BuyingChecklist({ data }) {
                       <span className={`absolute left-3 top-3 flex h-6 w-6 shrink-0 items-center justify-center rounded-md text-[0.7rem] font-bold ${indexBadgeClass(isDark)}`}>
                         {index + 1}
                       </span>
-                      <GenIcon name={ITEM_ICONS[index % ITEM_ICONS.length]} className="mt-2 h-10 w-10 text-[var(--color-primary)]" />
+                      <GenIcon name={checkIconFor(label)} className="mt-2 h-12 w-12" />
                       <p className="text-[0.92rem] font-bold leading-tight text-[var(--color-text)]">{label}</p>
                       {text ? <p className="text-[0.8rem] leading-[1.4] text-[var(--color-text-muted)]">{text}</p> : null}
                     </div>
@@ -100,11 +120,11 @@ export default function BuyingChecklist({ data }) {
                 })}
               </div>
 
-              <TrustCard className="hidden lg:flex" isDark={isDark} />
+              <TrustCard className="hidden lg:flex" isDark={isDark} vehicle={data.vehicle} />
             </div>
           ) : null}
 
-          <TrustCard className="lg:hidden" isDark={isDark} />
+          <TrustCard className="lg:hidden" isDark={isDark} vehicle={data.vehicle} />
         </div>
       </div>
     </section>
