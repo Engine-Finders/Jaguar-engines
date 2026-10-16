@@ -73,14 +73,18 @@ export default async function ArticlePage(props) {
               <span>By <strong className="text-slate-900 font-semibold">{post.author?.name || "Jaguar Technical Editors"}</strong></span>
               <span>•</span>
               <span>{post.readingTimeMinutes || 4} min read</span>
-              <span>•</span>
-              <span>
-                {new Date(post.publishedAt).toLocaleDateString("en-GB", {
-                  day: "numeric",
-                  month: "long",
-                  year: "numeric",
-                })}
-              </span>
+              {post.publishedAt && (
+                <>
+                  <span>•</span>
+                  <span>
+                    {new Date(post.publishedAt).toLocaleDateString("en-GB", {
+                      day: "numeric",
+                      month: "long",
+                      year: "numeric",
+                    })}
+                  </span>
+                </>
+              )}
             </div>
           </header>
 
@@ -112,7 +116,6 @@ export default async function ArticlePage(props) {
             <div className="mt-6">
               <a
                 href="#top"
-                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                 className="inline-flex items-center rounded-xl bg-white px-6 py-3 text-sm font-bold text-slate-900 shadow-md hover:bg-stone-100 transition"
               >
                 Get Free Jaguar Engine Quote »
