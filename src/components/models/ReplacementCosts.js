@@ -83,11 +83,11 @@ function splitTitle(title = "") {
     const endOfWord = replacementIndex + "Replacement".length;
     return {
       main: clean.slice(0, endOfWord).trim(),
-      accent: clean.slice(endOfWord).replace(/^[\s\-—]+/, "").trim(),
+      accent: clean.slice(endOfWord).replace(/^[\s\-]+/, "").trim(),
     };
   }
 
-  const byMatch = clean.match(/^(.*?)\s*[-—]\s*(By\s+.+)$/i);
+  const byMatch = clean.match(/^(.*?)\s*[-]\s*(By\s+.+)$/i);
   if (byMatch) {
     return { main: byMatch[1].trim(), accent: byMatch[2].trim() };
   }
@@ -154,13 +154,13 @@ function splitFiguresNote(note = "", economicsBox) {
   const ruleSplit = ruleIndex > -1 ? [clean.slice(0, ruleIndex), clean.slice(ruleIndex)] : [clean];
   const labourPart = (ruleSplit[0] || clean).replace(/^Labour estimate:\s*/i, "").trim();
   const ruleRaw = (ruleSplit[1] || "").trim();
-  const ruleBody = ruleRaw.replace(/^The\s+.+?\s+rule\s*[-—:]\s*/i, "").trim() || econText;
+  const ruleBody = ruleRaw.replace(/^The\s+.+?\s+rule\s*[-:]\s*/i, "").trim() || econText;
 
   return {
     important: labourPart || clean || "Figures are UK specialist supply-only rates [JAG-QUOTE].",
     labour: labourPart || clean,
     rule: ruleBody,
-    ruleHeading: ruleRaw.match(/^(The\s+.+?\s+rule\s*[-—:][^\n:]*)/i)?.[1]?.trim() || "",
+    ruleHeading: ruleRaw.match(/^(The\s+.+?\s+rule\s*[-:][^\n:]*)/i)?.[1]?.trim() || "",
   };
 }
 

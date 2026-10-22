@@ -467,7 +467,7 @@ export default function HomeSec2({ data }) {
         </div>
       </div>
 
-      {/* Model grid / list — same bg as header */}
+      {/* Model grid / list  same bg as header */}
       <div>
         <div className="mx-auto w-full max-w-8xl px-4 pt-2 pb-5 md:px-6 md:pt-3 md:pb-7 lg:px-8">
           <div className="hidden md:block">

@@ -1,5 +1,5 @@
 {
-  "subHeadline": "Built on real data, verified by specialists, and completely independent — no sponsors, no bias, just honest advice.",
+  "subHeadline": "Built on real data, verified by specialists, and completely independent  no sponsors, no bias, just honest advice.",
   "headerImage": {
     "src": "/home-image/sec2-bg.webp",
     "alt": "Jaguar trust"
@@ -9,7 +9,7 @@
       "id": "1",
       "icon": "real-data",
       "title": "Built on Real Data",
-      "description": "Every reliability rating and cost range comes from genuine UK quote and enquiry data — not manufacturer marketing, not forum guesswork."
+      "description": "Every reliability rating and cost range comes from genuine UK quote and enquiry data  not manufacturer marketing, not forum guesswork."
     },
     {
       "id": "2",
@@ -21,13 +21,13 @@
       "id": "3",
       "icon": "vetted-specialist",
       "title": "Vetted Jaguar Specialists",
-      "description": "Every specialist in our network is vetted specifically for Jaguar work — not generalists who happen to take on Jaguar jobs."
+      "description": "Every specialist in our network is vetted specifically for Jaguar work  not generalists who happen to take on Jaguar jobs."
     },
     {
       "id": "4",
       "icon": "engine-finders",
       "title": "Part of Engine Finders",
-      "description": "<a href=\"https://JaguarEngine.uk\">JaguarEngine.uk</a> is part of the Engine Finders family, the UK's leading engine replacement marketplace — giving you the research depth of an independent authority with a vetted route to action when you need one."
+      "description": "<a href=\"https://JaguarEngine.uk\">JaguarEngine.uk</a> is part of the Engine Finders family, the UK's leading engine replacement marketplace  giving you the research depth of an independent authority with a vetted route to action when you need one."
     }
   ],
   "faq": {
@@ -36,7 +36,7 @@
       {
         "id": "1",
         "question": "Is it worth replacing a Jaguar engine?",
-        "answer": "It depends entirely on vehicle value versus replacement cost. An F-Pace or XJ will almost always justify replacement — the car is worth far more than the engine. An X-Type or S-Type often won't; replacement cost can exceed what the car is worth outright. Use our diagnostic calculator above to get a personalised verdict."
+        "answer": "It depends entirely on vehicle value versus replacement cost. An F-Pace or XJ will almost always justify replacement  the car is worth far more than the engine. An X-Type or S-Type often won't; replacement cost can exceed what the car is worth outright. Use our diagnostic calculator above to get a personalised verdict."
       },
       {
         "id": "2",
@@ -46,11 +46,11 @@
       {
         "id": "3",
         "question": "Is the Ingenium engine reliable in a Jaguar?",
-        "answer": "The petrol Ingenium (AJ200P/204PT) has a noticeably better reliability record than the diesel (AJ200D/<a href='https://jaguarengines.uk/engine/ajd4-204dtd'>204DTD</a>), which is the same engine — and the same pre-2019 timing chain tensioner caveat — as Land Rover's diesel Ingenium. JLR revised the design from 2019 onward. Check our Ingenium Knowledge Centre for full details."
+        "answer": "The petrol Ingenium (AJ200P/204PT) has a noticeably better reliability record than the diesel (AJ200D/<a href='https://jaguarengines.uk/engine/ajd4-204dtd'>204DTD</a>), which is the same engine  and the same pre-2019 timing chain tensioner caveat  as Land Rover's diesel Ingenium. JLR revised the design from 2019 onward. Check our Ingenium Knowledge Centre for full details."
       },
       {
         "id": "4",
-        "question": "XF vs XJ — which is more reliable?",
+        "question": "XF vs XJ  which is more reliable?",
         "answer": "Both carry a <span class=\"safe-verdict\">Safe verdict</span> in our data, but for different reasons. The XF benefits from the modern, more dependable Ingenium range in its later X260 generation. The XJ's flagship values comfortably absorb even the <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> V8's upper replacement cost, though pre-2013 cars warrant a chain-tensioner check. Read our full comparison here."
       },
       {
@@ -61,7 +61,7 @@
       {
         "id": "6",
         "question": "Which is the safest used Jaguar to buy?",
-        "answer": "The F-Pace X761 carries the cleanest <span class=\"safe-verdict\">Safe verdict</span> of any Jaguar in our data — strong retained values and no flagged engine-specific caveat across its range. The E-Pace and later XF X260 are close behind. See our full Jaguar Rankings for details."
+        "answer": "The F-Pace X761 carries the cleanest <span class=\"safe-verdict\">Safe verdict</span> of any Jaguar in our data  strong retained values and no flagged engine-specific caveat across its range. The E-Pace and later XF X260 are close behind. See our full Jaguar Rankings for details."
       }
     ],
     "dataNote": {

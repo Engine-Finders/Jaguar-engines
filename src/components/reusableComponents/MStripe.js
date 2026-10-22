@@ -1,5 +1,5 @@
 export default function MStripe() {
-  // Old multi-slash accent strip — kept for easy restore
+  // Old multi-slash accent strip  kept for easy restore
   // return (
   //   <div className="flex items-center gap-1" aria-hidden="true">
   //     <span className="h-2.5 w-6 -skew-x-[25deg] bg-[var(--color-accent)] md:h-3 md:w-7" />

@@ -19,7 +19,7 @@ function cleanText(value = "") {
   return String(value || "")
     .replaceAll("Â£", "£")
     .replaceAll("â€“", "–")
-    .replaceAll("â€”", "—")
+    .replaceAll("â€”", "")
     .trim();
 }
 
@@ -388,7 +388,7 @@ export default function HomeSec10({ data }) {
 
   return (
     <section className={`overflow-x-hidden ${sectionBg}`}>
-      {/* Header — same pattern as other home sections */}
+      {/* Header  same pattern as other home sections */}
       <div className={`relative overflow-hidden ${sectionBg}`}>
         <div className="absolute inset-y-0 right-0 w-[62%] md:w-[48%]">
           <Image

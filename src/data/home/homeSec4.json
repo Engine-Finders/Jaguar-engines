@@ -1,5 +1,5 @@
 {
-  "subHeadline": "The verdicts people actually want before they read a single spec sheet — the calls we'd make for a friend, backed by real UK enquiry and failure data.",
+  "subHeadline": "The verdicts people actually want before they read a single spec sheet  the calls we'd make for a friend, backed by real UK enquiry and failure data.",
   "headerImage": {
     "src": "/home-image/sec2-bg.webp",
     "alt": "Jaguar ownership rankings"
@@ -20,7 +20,7 @@
       "ranking": "Most Reliable Engine",
       "icon": "engine",
       "winner": "AJ200P / 204PT (Ingenium Petrol)",
-      "why": "Consistently outperforms its diesel sibling in our data — water pump replacement is the only meaningful weak point.",
+      "why": "Consistently outperforms its diesel sibling in our data  water pump replacement is the only meaningful weak point.",
       "verdict": { "text": "Best", "type": "best" },
       "href": "/engine/ingenium-2-0-diesel"
     },
@@ -28,7 +28,7 @@
       "ranking": "Most Reliable Model",
       "icon": "car",
       "winner": "F-Pace X761",
-      "why": "Strong retained values and a clean Safe verdict across every engine variant — no caveat in the data at all.",
+      "why": "Strong retained values and a clean Safe verdict across every engine variant  no caveat in the data at all.",
       "verdict": { "text": "Best", "type": "best" },
       "href": "/f-pace/x761"
     },
@@ -44,7 +44,7 @@
       "ranking": "Most Expensive Failure",
       "icon": "flame",
       "winner": "276DT (2.7 TDV6) Oil Pump Failure",
-      "why": "Shared with Land Rover's Discovery 3 — often kills the engine outright with little warning. £5,000–£7,500 recon.",
+      "why": "Shared with Land Rover's Discovery 3  often kills the engine outright with little warning. £5,000–£7,500 recon.",
       "verdict": { "text": "Avoid", "type": "avoid" },
       "href": "/engine/ajd-v6-diesel"
     },
@@ -52,7 +52,7 @@
       "ranking": "Safest Jaguar to Buy",
       "icon": "shield",
       "winner": "E-Pace X540 (2017–present)",
-      "why": "Compact SUV values comfortably absorb the modern Ingenium's replacement cost — safe across the board.",
+      "why": "Compact SUV values comfortably absorb the modern Ingenium's replacement cost  safe across the board.",
       "verdict": { "text": "Safe", "type": "safe" },
       "href": "/e-pace/x540"
     },
@@ -60,7 +60,7 @@
       "ranking": "Highest Risk Purchase",
       "icon": "warning",
       "winner": "X-Type X400 (2001–2009)",
-      "why": "Rapid depreciation plus genuine reliability concerns on pre-2007 cars — replacement cost frequently exceeds vehicle value.",
+      "why": "Rapid depreciation plus genuine reliability concerns on pre-2007 cars  replacement cost frequently exceeds vehicle value.",
       "verdict": { "text": "Watch", "type": "watch" },
       "href": "/x-type/x400"
     },
@@ -76,13 +76,13 @@
       "ranking": "Best Long-Term Keeper",
       "icon": "long-term",
       "winner": "XJ X351 (2010–2019)",
-      "why": "Flagship values comfortably absorb even the <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a>'s upper recon cost — the keeper's Jaguar.",
+      "why": "Flagship values comfortably absorb even the <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a>'s upper recon cost  the keeper's Jaguar.",
       "verdict": { "text": "Best", "type": "best" },
       "href": "/xj/x351"
     }
   ],
   "dataSources": {
     "title": "Data Note :",
-    "note": "Entries drawing directly on enquiry volume, replacement cost, and R-to-V flag data are marked as verified in the source file. \"Most Reliable Model,\" \"Best Family Jaguar,\" and the specific engine/model pairings are our editorial synthesis of the failure-pattern data, cross-referenced against live specialist and owner-forum sources — worth a Jaguar specialist sense-check before publishing."
+    "note": "Entries drawing directly on enquiry volume, replacement cost, and R-to-V flag data are marked as verified in the source file. \"Most Reliable Model,\" \"Best Family Jaguar,\" and the specific engine/model pairings are our editorial synthesis of the failure-pattern data, cross-referenced against live specialist and owner-forum sources  worth a Jaguar specialist sense-check before publishing."
   }
 }

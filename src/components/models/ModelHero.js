@@ -37,7 +37,7 @@ function splitTagPill(tagPill = "") {
 
 function splitStat(label = "") {
   const cleaned = String(label);
-  const [main, detail = ""] = cleaned.split(/\s+[—–-]\s+/);
+  const [main, detail = ""] = cleaned.split(/\s+[–-]\s+/);
   const [value, ...rest] = main.split(" ");
   const hasValue = /[0-9+]/.test(value);
 

@@ -293,7 +293,7 @@ export default function HomeSec4({ data }) {
         </div>
       </div>
 
-      {/* Same Sec2 / page bg — no alternate soft band */}
+      {/* Same Sec2 / page bg  no alternate soft band */}
       <div className="mx-auto w-full max-w-8xl px-3 pb-5 pt-2 md:px-6 md:pb-7 md:pt-2.5 lg:px-8">
         {/* Mobile cards */}
         <div className="grid grid-cols-2 gap-2.5 md:hidden">

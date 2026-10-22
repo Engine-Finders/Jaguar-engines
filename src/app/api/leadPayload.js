@@ -2,7 +2,7 @@ import { SITE_SOURCE } from "./site";
 
 /**
  * Build lead payload from quote form state.
- * Reusable for other forms later — keep this shape stable.
+ * Reusable for other forms later  keep this shape stable.
  */
 export function buildQuoteLeadPayload({ contact, vehicle, calculator = null }) {
   const capacityRaw = vehicle?.engineCapacity
@@ -32,7 +32,7 @@ export function buildQuoteLeadPayload({ contact, vehicle, calculator = null }) {
     honeypot: contact.honeypot || "",
   };
 
-  // Attached for email only — stripped before CRM send.
+  // Attached for email only  stripped before CRM send.
   if (calculator && typeof calculator === "object") {
     payload.calculator = calculator;
   }

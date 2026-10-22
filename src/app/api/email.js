@@ -92,7 +92,7 @@ function buildLeadEmailHtml(payload = {}) {
 
 /**
  * Send lead notification email via Resend.
- * Always to LEAD_TO_EMAIL — never emails the customer.
+ * Always to LEAD_TO_EMAIL  never emails the customer.
  */
 export async function sendLeadEmail(payload = {}) {
   const apiKey = process.env.RESEND_API_KEY;

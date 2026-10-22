@@ -41,7 +41,7 @@ function cleanText(value = "") {
   return String(value || "")
     .replaceAll("Â£", "£")
     .replaceAll("â€“", "–")
-    .replaceAll("â€”", "—")
+    .replaceAll("â€”", "")
     .trim();
 }
 
@@ -338,7 +338,7 @@ export default function HomeSec9({ data }) {
 
   return (
     <section className={`overflow-x-hidden ${sectionBg}`}>
-      {/* Header — same pattern as Sec2/Sec3 */}
+      {/* Header  same pattern as Sec2/Sec3 */}
       <div className={`relative overflow-hidden ${sectionBg}`}>
         <div className="absolute inset-y-0 right-0 w-[62%] md:w-[48%]">
           <Image
@@ -388,7 +388,7 @@ export default function HomeSec9({ data }) {
       </div>
 
       <div className="mx-auto w-full min-w-0 max-w-8xl px-4 pt-1 pb-5 md:px-6 md:pt-1.5 md:pb-6 lg:px-8">
-        {/* Engine failures — 4 cards */}
+        {/* Engine failures  4 cards */}
         {engine?.rows?.length ? (
           <div>
             <CategoryLabel title={engine.title} icon={engine.icon} isDark={isDark} />

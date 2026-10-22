@@ -37,14 +37,14 @@ const HERO_CAR_PHOTOS = [
 
 export function generateMetadata() {
   return {
-    title: "Jaguar Engines UK — The Complete Ownership Guide",
+    title: "Jaguar Engines UK  The Complete Ownership Guide",
     description:
       "The UK's Most Trusted Jaguar Ownership Guide. Reliability rankings, real failure data, honest repair-vs-replace economics for every Jaguar model. Powered by 1,700+ real UK enquiries.",
     alternates: {
       canonical: "https://jaguarengines.uk/",
     },
     openGraph: {
-      title: "Jaguar Engines UK — The Complete Ownership Guide",
+      title: "Jaguar Engines UK  The Complete Ownership Guide",
       description:
         "The UK's Most Trusted Jaguar Ownership Guide. Reliability rankings, real failure data, honest repair-vs-replace economics for every Jaguar model. Powered by 1,700+ real UK enquiries.",
       url: "https://jaguarengines.uk/",

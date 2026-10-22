@@ -22,7 +22,7 @@ const METRIC_ICONS = {
 const TRUST_ITEMS = [
   { icon: "shield", title: "Jaguar-Verified Data", text: "Verified using real UK enquiries and workshop data." },
   { icon: "real-inquiries", title: "Real-World Insights", text: "Based on UK enquiries and specialist workshop reports." },
-  { icon: "engine-finders", title: "Trusted by Enthusiasts", text: "Part of Engine Finders — the UK's engine specialists." },
+  { icon: "engine-finders", title: "Trusted by Enthusiasts", text: "Part of Engine Finders  the UK's engine specialists." },
   { icon: "check", title: "Quality You Can Trust", text: "Every engine is checked, inspected and quality assured." },
 ];
 

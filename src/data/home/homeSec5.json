@@ -1,5 +1,5 @@
 {
-  "subHeadline": "The comparisons Jaguar buyers actually want — model vs model, engine vs engine, and the one comparison nobody else can make.",
+  "subHeadline": "The comparisons Jaguar buyers actually want  model vs model, engine vs engine, and the one comparison nobody else can make.",
   "headerImage": {
     "src": "/home-image/sec2-bg.webp",
     "alt": "Jaguar comparison hub"
@@ -18,7 +18,7 @@
     {
       "id": "01",
       "title": "XE vs XF",
-      "preview": "Which compact/mid executive to buy — reliability, running costs and resale value compared.",
+      "preview": "Which compact/mid executive to buy  reliability, running costs and resale value compared.",
       "icon": "scales",
       "left": {
         "label": "XE",
@@ -40,7 +40,7 @@
     {
       "id": "02",
       "title": "F-Pace vs E-Pace",
-      "preview": "Size vs value — which SUV suits your budget and ownership horizon.",
+      "preview": "Size vs value  which SUV suits your budget and ownership horizon.",
       "icon": "car",
       "left": {
         "label": "F-Pace",
@@ -62,7 +62,7 @@
     {
       "id": "03",
       "title": "AJ126 vs AJ133",
-      "preview": "V6 vs V8 — performance, reliability and replacement costs compared side-by-side.",
+      "preview": "V6 vs V8  performance, reliability and replacement costs compared side-by-side.",
       "icon": "engine",
       "left": {
         "label": "AJ126 V6",
@@ -132,7 +132,7 @@
     {
       "id": "06",
       "title": "Jaguar vs Land Rover",
-      "preview": "Same engines, different badges — how ownership economics actually compare across the two brands.",
+      "preview": "Same engines, different badges  how ownership economics actually compare across the two brands.",
       "icon": "shield",
       "left": {
         "label": "Jaguar",

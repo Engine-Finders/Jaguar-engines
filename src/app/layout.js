@@ -15,7 +15,7 @@ const cormorantGaramond = Cormorant_Garamond({
 
 export const metadata = {
   metadataBase: new URL("https://jaguarengines.uk/"),
-  title: "Jaguar Engines UK — The Complete Ownership Guide",
+  title: "Jaguar Engines UK  The Complete Ownership Guide",
   description:
     "The UK's Most Trusted Jaguar Ownership Guide. Reliability rankings, real failure data, honest repair-vs-replace economics for every Jaguar model. Powered by 1,700+ real UK enquiries.",
   robots: {
