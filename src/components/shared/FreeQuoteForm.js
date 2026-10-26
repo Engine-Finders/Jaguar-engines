@@ -38,7 +38,7 @@ function formatEngine(value = "") {
 
 function FieldIcon({ children }) {
   return (
-    <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-[var(--color-primary)] opacity-70">
+    <span className="pointer-events-none absolute left-2.5 top-1/2 -translate-y-1/2 text-[var(--color-primary)] opacity-70">
       {children}
     </span>
   );
@@ -116,16 +116,14 @@ function ArrowSvg() {
 function RegPlate({ value, onChange, readOnly = false }) {
   return (
     <div
-      className={`flex min-h-[48px] flex-1 overflow-hidden rounded-md border-2 border-black bg-[#f5c518] shadow-[inset_0_1px_0_rgba(255,255,255,0.35)] ${
-        readOnly ? "" : ""
-      }`}
+      className="flex min-h-[44px] flex-1 overflow-hidden rounded-md border-2 border-black bg-[#f5c518] shadow-[inset_0_1px_0_rgba(255,255,255,0.35)]"
     >
-      <span className="flex w-9 shrink-0 flex-col items-center justify-center bg-[#1d4ed8] text-[10px] font-bold leading-none text-white">
-        <span className="mb-0.5 text-[11px]">🇬🇧</span>
+      <span className="flex w-8 shrink-0 flex-col items-center justify-center bg-[#1d4ed8] text-[9px] font-bold leading-none text-white">
+        <span className="mb-0.5 text-[10px]">🇬🇧</span>
         GB
       </span>
       {readOnly ? (
-        <span className="flex flex-1 items-center justify-center px-3 text-[1.15rem] font-black tracking-[0.08em] text-black">
+        <span className="flex flex-1 items-center justify-center px-2 text-[1rem] font-black tracking-[0.08em] text-black sm:text-[1.1rem]">
           {formatVrm(value) || "REG HERE"}
         </span>
       ) : (
@@ -133,7 +131,7 @@ function RegPlate({ value, onChange, readOnly = false }) {
           value={value}
           onChange={(event) => onChange(event.target.value.toUpperCase())}
           placeholder="REG HERE"
-          className="w-full bg-transparent px-3 text-center text-[1.05rem] font-black tracking-[0.08em] text-black outline-none placeholder:text-black/45"
+          className="w-full bg-transparent px-2 text-center text-[1rem] font-black tracking-[0.08em] text-black outline-none placeholder:text-black/45 sm:px-3 sm:text-[1.05rem]"
           aria-label="Vehicle registration"
           autoComplete="off"
         />
@@ -167,7 +165,8 @@ function QuoteModal({ open, onClose }) {
   const vehicleReady = Boolean(vehicle.vrm && (vehicle.brand || vehicle.series || vehicle.year));
 
   const engineDisplay = useMemo(() => formatEngine(vehicle.engineCapacity), [vehicle.engineCapacity]);
-  const vehicleImageSrc = useMemo(() => getVehicleImage(vehicle).src, [vehicle]);
+  const vehicleImage = useMemo(() => getVehicleImage(vehicle), [vehicle.brand, vehicle.series, vehicle.model, vehicle.vrm]);
+  const vehicleImageSrc = vehicleImage.src;
 
   useEffect(() => {
     if (!open) return undefined;
@@ -223,7 +222,18 @@ function QuoteModal({ open, onClose }) {
         setLookupError(data.error || "Could not find that vehicle.");
         return;
       }
-      setVehicle(data.vehicle || emptyVehicle);
+      const nextVehicle = data.vehicle || emptyVehicle;
+      setVehicle(nextVehicle);
+      if (process.env.NODE_ENV === "development") {
+        const matched = getVehicleImage(nextVehicle);
+        console.log("[quote-vehicle-image]", {
+          brand: nextVehicle.brand,
+          series: nextVehicle.series,
+          modelKey: matched.modelKey,
+          tier: matched.tier,
+          src: matched.src,
+        });
+      }
     } catch (error) {
       setVehicle(emptyVehicle);
       setLookupError(error.message || "Lookup failed. Please try again.");
@@ -254,6 +264,7 @@ function QuoteModal({ open, onClose }) {
       const payload = buildQuoteLeadPayload({
         contact: { name, phone, email, postcode, remarks, honeypot },
         vehicle,
+        pageUrl: typeof window !== "undefined" ? window.location.href : "",
       });
 
       const response = await fetch("/api/lead", {
@@ -275,20 +286,20 @@ function QuoteModal({ open, onClose }) {
   if (!open) return null;
 
   const inputClass =
-    "w-full rounded-md border border-[var(--color-border)] bg-[var(--color-page-soft)] py-2.5 pl-10 pr-3 text-sm text-[var(--color-text)] outline-none placeholder:text-[var(--color-text-soft)] focus:border-[var(--color-primary)]";
+    "w-full rounded-md border border-[var(--color-border)] bg-[var(--color-page-soft)] py-2 pl-9 pr-2.5 text-[0.8125rem] text-[var(--color-text)] outline-none placeholder:text-[var(--color-text-soft)] focus:border-[var(--color-primary)]";
 
   return (
-    <div className="fixed inset-0 z-[60] flex items-end justify-center p-3 sm:items-center sm:p-4" role="presentation">
+    <div className="fixed inset-0 z-[60] flex items-end justify-center p-2 sm:items-center sm:p-3" role="presentation">
       <button type="button" aria-label="Close quote form" className="absolute inset-0 bg-black/50" onClick={onClose} />
 
       <div
         role="dialog"
         aria-modal="true"
         aria-labelledby={titleId}
-        className="relative z-[61] max-h-[92vh] w-full max-w-[560px] overflow-y-auto overflow-x-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[0_24px_60px_rgba(0,0,0,0.35)]"
+        className="relative z-[61] max-h-[94vh] w-full max-w-[560px] overflow-y-auto overflow-x-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[0_24px_60px_rgba(0,0,0,0.35)]"
       >
         {/* Header */}
-        <div className="relative min-h-[148px] overflow-hidden">
+        <div className="relative min-h-[120px] overflow-hidden sm:min-h-[136px]">
           <Image src={HEADER_BG} alt="" fill className="object-cover object-center" sizes="560px" priority />
           <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(11,12,12,0.88)_0%,rgba(11,12,12,0.72)_55%,rgba(11,12,12,0.45)_100%)]" />
 
@@ -296,38 +307,38 @@ function QuoteModal({ open, onClose }) {
             ref={closeRef}
             type="button"
             onClick={onClose}
-            className="absolute right-3 top-3 z-10 flex h-8 w-8 items-center justify-center rounded-full border border-white/30 bg-black/35 text-white"
+            className="absolute right-2 top-2 z-10 flex h-7 w-7 items-center justify-center rounded-full border border-white/30 bg-black/35 text-sm text-white"
             aria-label="Close"
           >
             ✕
           </button>
 
-          <div className="relative z-[1] px-5 pb-5 pt-6 md:px-6">
-            <h2 id={titleId} className="max-w-[90%] text-[1.55rem] font-bold leading-[1.15] text-white md:text-[1.85rem]">
+          <div className="relative z-[1] px-3.5 pb-3.5 pt-4 sm:px-5 sm:pb-4 sm:pt-5">
+            <h2 id={titleId} className="max-w-[90%] text-[1.35rem] font-bold leading-[1.15] text-white sm:text-[1.7rem]">
               Get My Vehicle <span className="text-[var(--color-chrome-bright)]">Information</span>
             </h2>
-            <p className="mt-2 max-w-[92%] text-[0.9rem] leading-[1.4] text-white/85">
+            <p className="mt-1.5 max-w-[92%] text-[0.82rem] leading-[1.35] text-white/85 sm:text-[0.9rem]">
               Enter your vehicle registration to find best replacement engine quote.
             </p>
           </div>
         </div>
 
-        <div className="px-4 py-4 md:px-5 md:py-5">
+        <div className="px-3 py-3 sm:px-4 sm:py-4">
           {submitted ? (
-            <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-page-soft)] px-4 py-8 text-center">
-              <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[var(--color-accent-green)] text-white">
-                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-page-soft)] px-3 py-6 text-center">
+              <div className="mx-auto flex h-11 w-11 items-center justify-center rounded-full bg-[var(--color-accent-green)] text-white">
+                <svg width="26" height="26" viewBox="0 0 28 28" fill="none" aria-hidden="true">
                   <path d="M6 14l6 6 10-10" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
-              <p className="mt-3 text-lg font-bold text-[var(--color-text)]">Quote request sent</p>
+              <p className="mt-2.5 text-base font-bold text-[var(--color-text)]">Quote request sent</p>
               <p className="mt-1 text-sm text-[var(--color-text-muted)]">
                 A specialist will be in touch shortly.
               </p>
               <button
                 type="button"
                 onClick={onClose}
-                className="btn-cta mt-5 inline-flex min-h-11 items-center justify-center rounded-md px-5 text-sm font-bold"
+                className="btn-cta mt-4 inline-flex min-h-10 items-center justify-center rounded-md px-5 text-sm font-bold"
               >
                 Close
               </button>
@@ -336,12 +347,12 @@ function QuoteModal({ open, onClose }) {
             <>
               {/* State 1: reg lookup */}
               {!vehicleReady ? (
-                <form onSubmit={lookupVehicle} className="flex flex-col gap-2.5 sm:flex-row sm:items-stretch">
+                <form onSubmit={lookupVehicle} className="flex flex-col gap-2 sm:flex-row sm:items-stretch">
                   <RegPlate value={regInput} onChange={setRegInput} />
                   <button
                     type="submit"
                     disabled={lookupLoading}
-                    className="btn-cta inline-flex min-h-[48px] shrink-0 items-center justify-center gap-2 rounded-md px-4 text-sm font-bold disabled:opacity-60"
+                    className="btn-cta inline-flex min-h-[44px] shrink-0 items-center justify-center gap-2 rounded-md px-3.5 text-sm font-bold disabled:opacity-60"
                   >
                     {lookupLoading ? "Searching…" : "Get Instant Quote"}
                     {!lookupLoading ? <ArrowSvg /> : null}
@@ -350,51 +361,49 @@ function QuoteModal({ open, onClose }) {
               ) : (
                 /* State 2: vehicle summary */
                 <div className="overflow-hidden rounded-lg border border-[var(--color-border)] bg-[var(--color-page-soft)]">
-                  <div className="grid gap-3 p-3 sm:grid-cols-[minmax(0,0.95fr)_minmax(0,1.15fr)] sm:items-center sm:gap-4 sm:p-4">
-                    <div className="relative mx-auto h-[120px] w-full max-w-[220px] sm:mx-0 sm:h-[140px]">
+                  <div className="grid grid-cols-[minmax(0,0.9fr)_minmax(0,1.2fr)] items-center gap-2 p-2.5 sm:gap-3 sm:p-3">
+                    <div className="relative mx-auto h-[100px] w-full max-w-[180px] sm:mx-0 sm:h-[128px] sm:max-w-[200px]">
                       <Image
                         key={vehicleImageSrc}
                         src={vehicleImageSrc}
                         alt={[vehicle.brand, vehicle.series].filter(Boolean).join(" ") || "Vehicle"}
                         fill
+                        unoptimized
                         className="object-contain object-center"
-                        sizes="220px"
+                        sizes="200px"
                       />
                     </div>
 
                     <div className="min-w-0">
-                      <div className="mb-2 max-w-[180px]">
+                      <div className="mb-1.5 max-w-[160px]">
                         <RegPlate value={vehicle.vrm} readOnly />
                       </div>
-                      <p className="text-[1.05rem] font-bold leading-tight text-[var(--color-text)]">
+                      <p className="text-[0.95rem] font-bold leading-tight text-[var(--color-text)] sm:text-[1.05rem]">
                         {vehicle.brand || "Jaguar"} {vehicle.series || ""}
                       </p>
-                      {vehicle.series ? (
-                        <p className="mt-0.5 text-sm text-[var(--color-text-muted)]">{vehicle.series}</p>
-                      ) : null}
 
-                      <ul className="mt-2.5 grid grid-cols-2 gap-x-3 gap-y-1.5 text-[0.82rem] text-[var(--color-text)]">
-                        <li className="flex items-center gap-1.5">
-                          <HomeIcon name="calendar" isDark={isDark} className="h-4 w-4 object-contain" />
+                      <ul className="mt-1.5 grid grid-cols-2 gap-x-2 gap-y-1 text-[0.75rem] text-[var(--color-text)] sm:text-[0.82rem]">
+                        <li className="flex items-center gap-1">
+                          <HomeIcon name="calendar" isDark={isDark} className="h-3.5 w-3.5 object-contain" />
                           <span>
                             <span className="font-semibold">Year:</span> {vehicle.year || "-"}
                           </span>
                         </li>
-                        <li className="flex items-center gap-1.5">
-                          <HomeIcon name="fuel" isDark={isDark} className="h-4 w-4 object-contain" />
+                        <li className="flex items-center gap-1">
+                          <HomeIcon name="fuel" isDark={isDark} className="h-3.5 w-3.5 object-contain" />
                           <span>
-                            <span className="font-semibold">Fuel Type:</span> {vehicle.fuelType || "-"}
+                            <span className="font-semibold">Fuel:</span> {vehicle.fuelType || "-"}
                           </span>
                         </li>
-                        <li className="flex items-center gap-1.5">
-                          <HomeIcon name="engine" isDark={isDark} className="h-4 w-4 object-contain" />
+                        <li className="flex items-center gap-1">
+                          <HomeIcon name="engine" isDark={isDark} className="h-3.5 w-3.5 object-contain" />
                           <span>
                             <span className="font-semibold">Engine:</span> {engineDisplay || "-"}
                           </span>
                         </li>
-                        <li className="flex items-center gap-1.5">
+                        <li className="flex items-center gap-1">
                           <span
-                            className="inline-block h-3.5 w-3.5 rounded-full border border-[var(--color-border-strong)]"
+                            className="inline-block h-3 w-3 rounded-full border border-[var(--color-border-strong)]"
                             style={{ background: /white|polaris/i.test(vehicle.colour || "") ? "#f5f5f5" : vehicle.colour || "#d1d5db" }}
                             aria-hidden="true"
                           />
@@ -410,7 +419,7 @@ function QuoteModal({ open, onClose }) {
                           setVehicle(emptyVehicle);
                           setLookupError("");
                         }}
-                        className="mt-2 text-xs font-semibold text-[var(--color-text-muted)] underline underline-offset-2"
+                        className="mt-1.5 text-[11px] font-semibold text-[var(--color-text-muted)] underline underline-offset-2"
                       >
                         Change registration
                       </button>
@@ -420,21 +429,21 @@ function QuoteModal({ open, onClose }) {
               )}
 
               {lookupError ? (
-                <p className="mt-2 rounded-md border border-[var(--color-accent-red)]/40 bg-[var(--color-accent-red-soft)] px-3 py-2 text-sm text-[var(--color-accent-red)]">
+                <p className="mt-2 rounded-md border border-[var(--color-accent-red)]/40 bg-[var(--color-accent-red-soft)] px-2.5 py-1.5 text-sm text-[var(--color-accent-red)]">
                   {lookupError}
                 </p>
               ) : null}
 
               {/* Contact form */}
-              <form onSubmit={handleSubmit} className="mt-5">
-                <h3 className="text-[1.15rem] font-bold text-[var(--color-text)]">
+              <form onSubmit={handleSubmit} className="mt-3.5">
+                <h3 className="text-[1.05rem] font-bold text-[var(--color-text)] sm:text-[1.15rem]">
                   Enter Your <span className="text-[var(--color-chrome-bright)]">Details</span>
                 </h3>
 
-                <div className="mt-3 grid gap-3 sm:grid-cols-2">
-                  <label className="block text-xs font-semibold text-[var(--color-text-muted)]">
+                <div className="mt-2 grid grid-cols-2 gap-2">
+                  <label className="block text-[11px] font-semibold text-[var(--color-text-muted)] sm:text-xs">
                     Name
-                    <span className="relative mt-1 block">
+                    <span className="relative mt-0.5 block">
                       <FieldIcon>
                         <UserSvg />
                       </FieldIcon>
@@ -449,9 +458,9 @@ function QuoteModal({ open, onClose }) {
                     </span>
                   </label>
 
-                  <label className="block text-xs font-semibold text-[var(--color-text-muted)]">
+                  <label className="block text-[11px] font-semibold text-[var(--color-text-muted)] sm:text-xs">
                     Email
-                    <span className="relative mt-1 block">
+                    <span className="relative mt-0.5 block">
                       <FieldIcon>
                         <MailSvg />
                       </FieldIcon>
@@ -467,9 +476,9 @@ function QuoteModal({ open, onClose }) {
                     </span>
                   </label>
 
-                  <label className="block text-xs font-semibold text-[var(--color-text-muted)]">
+                  <label className="block text-[11px] font-semibold text-[var(--color-text-muted)] sm:text-xs">
                     Phone Number
-                    <span className="relative mt-1 block">
+                    <span className="relative mt-0.5 block">
                       <FieldIcon>
                         <PhoneSvg />
                       </FieldIcon>
@@ -485,9 +494,9 @@ function QuoteModal({ open, onClose }) {
                     </span>
                   </label>
 
-                  <label className="block text-xs font-semibold text-[var(--color-text-muted)]">
+                  <label className="block text-[11px] font-semibold text-[var(--color-text-muted)] sm:text-xs">
                     Post Code
-                    <span className="relative mt-1 block">
+                    <span className="relative mt-0.5 block">
                       <FieldIcon>
                         <PinSvg />
                       </FieldIcon>
@@ -503,19 +512,19 @@ function QuoteModal({ open, onClose }) {
                   </label>
                 </div>
 
-                <label className="mt-3 block text-xs font-semibold text-[var(--color-text-muted)]">
+                <label className="mt-2 block text-[11px] font-semibold text-[var(--color-text-muted)] sm:text-xs">
                   Any Remarks{" "}
-                  <span className="font-normal">(Additional Information – Optional)</span>
-                  <span className="relative mt-1 block">
-                    <span className="pointer-events-none absolute left-3 top-3 text-[var(--color-primary)] opacity-70">
+                  <span className="font-normal">(Optional)</span>
+                  <span className="relative mt-0.5 block">
+                    <span className="pointer-events-none absolute left-3 top-2.5 text-[var(--color-primary)] opacity-70">
                       <ChatSvg />
                     </span>
                     <textarea
-                      className={`${inputClass} min-h-[84px] resize-y pt-2.5`}
+                      className={`${inputClass} min-h-[72px] resize-y pt-2`}
                       value={remarks}
                       onChange={(e) => setRemarks(e.target.value)}
-                      placeholder="Please enter any info you would like us to know."
-                      rows={3}
+                      placeholder="Anything we should know."
+                      rows={2}
                     />
                   </span>
                 </label>
@@ -531,7 +540,7 @@ function QuoteModal({ open, onClose }) {
                 />
 
                 {submitError ? (
-                  <p className="mt-3 rounded-md border border-[var(--color-accent-red)]/40 bg-[var(--color-accent-red-soft)] px-3 py-2 text-sm text-[var(--color-accent-red)]">
+                  <p className="mt-2 rounded-md border border-[var(--color-accent-red)]/40 bg-[var(--color-accent-red-soft)] px-2.5 py-1.5 text-sm text-[var(--color-accent-red)]">
                     {submitError}
                   </p>
                 ) : null}
@@ -539,14 +548,14 @@ function QuoteModal({ open, onClose }) {
                 <button
                   type="submit"
                   disabled={submitLoading || !vehicleReady}
-                  className="btn-cta mt-4 flex min-h-12 w-full items-center justify-center gap-2.5 rounded-md px-4 text-sm font-bold disabled:opacity-60"
+                  className="btn-cta mt-3 flex min-h-11 w-full items-center justify-center gap-2 rounded-md px-3 text-[0.8rem] font-bold disabled:opacity-60 sm:min-h-12 sm:gap-2.5 sm:text-sm"
                 >
-                  <HomeIcon name="engine" isDark className="h-5 w-5 object-contain" />
+                  <HomeIcon name="engine" isDark className="h-4 w-4 object-contain sm:h-5 sm:w-5" />
                   <span>{submitLoading ? "Sending…" : "Get Your Free Replacement Engine Quote"}</span>
                   {!submitLoading ? <ArrowSvg /> : null}
                 </button>
 
-                <p className="mt-3 flex items-start justify-center gap-1.5 text-center text-[11px] leading-[1.35] text-[var(--color-text-soft)]">
+                <p className="mt-2 flex items-start justify-center gap-1.5 text-center text-[10px] leading-[1.35] text-[var(--color-text-soft)] sm:text-[11px]">
                   <span className="mt-0.5 shrink-0">
                     <LockSvg />
                   </span>

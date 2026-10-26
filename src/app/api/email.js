@@ -13,14 +13,19 @@ function escapeHtml(value) {
     .replace(/"/g, "&quot;");
 }
 
-function row(label, value) {
-  const display =
+function row(label, value, { href = false } = {}) {
+  const raw =
     value === undefined || value === null || String(value).trim() === ""
-      ? "-"
+      ? ""
       : String(value);
+  const display = raw
+    ? href
+      ? `<a href="${escapeHtml(raw)}" style="color:#1d4ed8;word-break:break-all;">${escapeHtml(raw)}</a>`
+      : escapeHtml(raw)
+    : "-";
   return `<tr>
     <td style="padding:8px 12px;border-bottom:1px solid #e5e7eb;color:#64748b;font-size:13px;width:38%;">${escapeHtml(label)}</td>
-    <td style="padding:8px 12px;border-bottom:1px solid #e5e7eb;color:#0f172a;font-size:14px;font-weight:600;">${escapeHtml(display)}</td>
+    <td style="padding:8px 12px;border-bottom:1px solid #e5e7eb;color:#0f172a;font-size:14px;font-weight:600;">${display}</td>
   </tr>`;
 }
 
@@ -80,6 +85,7 @@ function buildLeadEmailHtml(payload = {}) {
             ${row("Engine capacity", payload.engine_capacity || payload.engin_capacity)}
             ${row("Part", payload.vehicle_part || "Engine")}
             ${row("Source", payload.source || SITE_LABEL)}
+            ${row("Page URL", payload.page_url || payload.pageUrl, { href: true })}
           </table>
           ${buildCalculatorSection(payload.calculator)}
           <p style="font-size:11px;color:#888;margin-top:20px;">Timestamp: ${new Date().toUTCString()}</p>
