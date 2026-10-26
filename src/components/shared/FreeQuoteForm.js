@@ -5,9 +5,8 @@ import { useEffect, useId, useMemo, useRef, useState } from "react";
 import HomeIcon from "@/components/home/homeIcons";
 import { useTheme } from "@/components/shared/themeProvider";
 import { buildQuoteLeadPayload } from "@/app/api/leadPayload";
+import { getVehicleImage } from "@/lib/getVehicleImage";
 
-const CAR_IMAGE =
-  "/cars/jaguar-xj-x351-xj-premium-luxury-saloon-2010-2015-new-polaris-white-x351-premium-45.webp";
 const HEADER_BG = "/home-image/sec2-bg.webp";
 
 const emptyVehicle = {
@@ -168,6 +167,7 @@ function QuoteModal({ open, onClose }) {
   const vehicleReady = Boolean(vehicle.vrm && (vehicle.brand || vehicle.series || vehicle.year));
 
   const engineDisplay = useMemo(() => formatEngine(vehicle.engineCapacity), [vehicle.engineCapacity]);
+  const vehicleImageSrc = useMemo(() => getVehicleImage(vehicle).src, [vehicle]);
 
   useEffect(() => {
     if (!open) return undefined;
@@ -352,7 +352,14 @@ function QuoteModal({ open, onClose }) {
                 <div className="overflow-hidden rounded-lg border border-[var(--color-border)] bg-[var(--color-page-soft)]">
                   <div className="grid gap-3 p-3 sm:grid-cols-[minmax(0,0.95fr)_minmax(0,1.15fr)] sm:items-center sm:gap-4 sm:p-4">
                     <div className="relative mx-auto h-[120px] w-full max-w-[220px] sm:mx-0 sm:h-[140px]">
-                      <Image src={CAR_IMAGE} alt="" fill className="object-contain object-center" sizes="220px" />
+                      <Image
+                        key={vehicleImageSrc}
+                        src={vehicleImageSrc}
+                        alt={[vehicle.brand, vehicle.series].filter(Boolean).join(" ") || "Vehicle"}
+                        fill
+                        className="object-contain object-center"
+                        sizes="220px"
+                      />
                     </div>
 
                     <div className="min-w-0">
