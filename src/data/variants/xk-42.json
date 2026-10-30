@@ -11,14 +11,14 @@
       "description": "Jaguar XK 4.2 – AJ34 4.2-litre V8. Real UK costs, VVT and cooling system facts, and specialist quotes. Get free prices from 15+ vetted specialists today.",
       "type": "website",
       "url": "https://jaguarengines.uk/xk/42/",
-      "image": "https://jaguarengines.uk/images/jaguar/hero/xk-42.jpg",
+      "image": "https://jaguarengines.uk/hero/jaguar-bg-light.webp",
       "siteName": "JaguarEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "XK 4.2 Engine Replacement Cost UK - Compare Quotes",
       "description": "Jaguar XK 4.2 – AJ34 4.2-litre V8. Real UK costs, VVT and cooling system facts, and specialist quotes.",
-      "image": "https://jaguarengines.uk/images/jaguar/hero/xk-42.jpg"
+      "image": "https://jaguarengines.uk/hero/jaguar-bg-light.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -133,7 +133,7 @@
           "@type": "Organization",
           "name": "JaguarEngine.uk",
           "url": "https://jaguarengines.uk/",
-          "logo": "https://jaguarengines.uk/images/jaguarengine-logo.png",
+          "logo": "https://jaguarengines.uk/jaguar-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

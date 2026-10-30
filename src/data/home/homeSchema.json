@@ -21,7 +21,7 @@
       "@id": "https://jaguarengines.uk/#organization",
       "name": "JaguarEngines.uk",
       "url": "https://jaguarengines.uk/",
-      "logo": "https://jaguarengines.uk/images/jaguarengines-logo.png",
+      "logo": "https://jaguarengines.uk/jaguar-logo.png",
       "parentOrganization": {
         "@type": "Organization",
         "name": "Engine Finders",
@@ -81,7 +81,7 @@
       },
       "primaryImageOfPage": {
         "@type": "ImageObject",
-        "url": "https://jaguarengines.uk/images/jaguar-homepage-hero.jpg",
+        "url": "https://jaguarengines.uk/hero/jaguar-bg-light.webp",
         "caption": "Jaguar Engines UK  Complete Ownership Guide",
         "width": 1200,
         "height": 630

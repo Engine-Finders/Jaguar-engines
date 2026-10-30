@@ -11,14 +11,14 @@
       "description": "Every Jaguar XK 4.0 engine - AJ26 and AJ27S V8s. Real UK costs, timing chain tensioner and Nikasil advice, and honest reliability data. Get free quotes from 15 vetted Jaguar specialists today.",
       "type": "website",
       "url": "https://jaguarengines.uk/xk/40/",
-      "image": "https://jaguarengines.uk/images/jaguar/hero/xk-40.jpg",
+      "image": "https://jaguarengines.uk/hero/jaguar-bg-light.webp",
       "siteName": "JaguarEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "Jaguar XK 4.0 Engine Replacement Cost UK - Compare Quotes",
       "description": "Every Jaguar XK 4.0 engine - AJ26 and AJ27S V8s. Real UK costs, timing chain tensioner and Nikasil advice, and honest reliability data.",
-      "image": "https://jaguarengines.uk/images/jaguar/hero/xk-40.jpg"
+      "image": "https://jaguarengines.uk/hero/jaguar-bg-light.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -145,7 +145,7 @@
           "@type": "Organization",
           "name": "JaguarEngine.uk",
           "url": "https://jaguarengines.uk/",
-          "logo": "https://jaguarengines.uk/images/jaguarengine-logo.png",
+          "logo": "https://jaguarengines.uk/jaguar-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

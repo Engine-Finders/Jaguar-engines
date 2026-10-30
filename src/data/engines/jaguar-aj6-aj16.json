@@ -8,14 +8,14 @@
       "description": "The AJ6/AJ16 straight‑six is a smooth classic - robust but prone to cooling system neglect. See real replacement costs and compare specialist quotes today.",
       "type": "website",
       "url": "https://jaguarengines.uk/engine/aj6-aj16",
-      "image": "https://jaguarengines.uk/images/jaguar/engines/aj6-aj16.jpg",
+      "image": "https://jaguarengines.uk/hero/jaguar-bg-light.webp",
       "siteName": "jaguarengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "Jaguar AJ6 / AJ16 Engine - Reliability & Cost",
       "description": "The AJ6/AJ16 straight‑six is a smooth classic - robust but prone to cooling system neglect. See real replacement costs and compare specialist quotes today.",
-      "image": "https://jaguarengines.uk/images/jaguar/engines/aj6-aj16.jpg"
+      "image": "https://jaguarengines.uk/hero/jaguar-bg-light.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -122,7 +122,7 @@
           "@type": "Organization",
           "name": "jaguarengines.uk",
           "url": "https://jaguarengines.uk/",
-          "logo": "https://jaguarengines.uk/images/logo.png",
+          "logo": "https://jaguarengines.uk/jaguar-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

@@ -10,14 +10,14 @@
       "description": "Jaguar S-Type 3.0 V6 (AJ30) engine costs, reliability, and common faults. Intake gasket, variable intake and PCV insights. Get free quotes from 15+ vetted Jaguar specialists today.",
       "type": "website",
       "url": "https://jaguarengines.uk/s-type/30-v6/",
-      "image": "https://jaguarengines.uk/images/jaguar/hero/s-type-30-v6.jpg",
+      "image": "https://jaguarengines.uk/hero/jaguar-bg-light.webp",
       "siteName": "JaguarEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "S-Type 3.0 V6 Engine Cost UK - Compare Quotes",
       "description": "Jaguar S-Type 3.0 V6 (AJ30) engine costs, reliability, and common faults. Intake gasket, variable intake and PCV insights.",
-      "image": "https://jaguarengines.uk/images/jaguar/hero/s-type-30-v6.jpg"
+      "image": "https://jaguarengines.uk/hero/jaguar-bg-light.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -132,7 +132,7 @@
           "@type": "Organization",
           "name": "JaguarEngine.uk",
           "url": "https://jaguarengines.uk/",
-          "logo": "https://jaguarengines.uk/images/jaguarengines-logo.png",
+          "logo": "https://jaguarengines.uk/jaguar-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

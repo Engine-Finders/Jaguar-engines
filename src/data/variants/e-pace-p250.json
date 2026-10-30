@@ -10,14 +10,14 @@
       "description": "Every Jaguar E-Pace P250 engine - the 2.0-litre PT204 Ingenium petrol. Real UK costs, VVT and HPFP advice, and honest reliability data. Get free quotes from 15 vetted Jaguar specialists today.",
       "type": "website",
       "url": "https://jaguarengines.uk/e-pace/p250/",
-      "image": "https://jaguarengines.uk/images/jaguar/hero/e-pace-p250.jpg",
+      "image": "https://jaguarengines.uk/hero/jaguar-bg-light.webp",
       "siteName": "JaguarEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "Jaguar E-Pace P250 Engine Replacement Cost UK - Compare Quotes",
       "description": "Every Jaguar E-Pace P250 engine - the 2.0-litre PT204 Ingenium petrol. Real UK costs, VVT and HPFP advice, and honest reliability data.",
-      "image": "https://jaguarengines.uk/images/jaguar/hero/e-pace-p250.jpg"
+      "image": "https://jaguarengines.uk/hero/jaguar-bg-light.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -132,7 +132,7 @@
           "@type": "Organization",
           "name": "JaguarEngine.uk",
           "url": "https://jaguarengines.uk/",
-          "logo": "https://jaguarengines.uk/images/jaguarengine-logo.png",
+          "logo": "https://jaguarengines.uk/jaguar-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
