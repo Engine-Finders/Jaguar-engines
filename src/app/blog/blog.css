@@ -1,80 +1,97 @@
 /* =========================================================
-   Jaguar Engines UK - Blog Post Typography & Semantic Styling
+   BMW Engines UK Blog Styling
    ========================================================= */
+:root {
+  --blog-font: Arial, Helvetica, sans-serif;
+  --blog-primary: #075fd8;
+  --blog-primary-hover: #034daf;
+  --blog-accent: #1581ff;
+  --blog-accent-hover: #075fd8;
+  --blog-widget-bg: #071827;
+  --blog-widget-border: #0d2842;
+  --blog-widget-btn: #075fd8;
+  --blog-widget-btn-hover: #034daf;
+  --blog-uk-badge: #003399;
+}
+
+.cms-blog-root {
+  font-family: var(--blog-font);
+}
+
 .cms-content {
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--color-text, #111210);
-  line-height: 1.8;
+  font-family: var(--blog-font) !important;
+  color: #374151;
+  line-height: 1.75;
 }
 
 .cms-article-title,
 .cms-content h1 {
-  font-family: var(--font-heading, "Cormorant Garamond", Georgia, serif);
-  font-size: 2.65rem !important;
-  line-height: 1.15 !important;
-  font-weight: 700 !important;
-  letter-spacing: -0.01em;
-  color: var(--color-text, #111210);
+  font-family: var(--blog-font) !important;
+  font-size: 2.5rem !important;
+  line-height: 1.2 !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.02em;
+  color: #0f172a;
 }
 
 .cms-content h2 {
-  font-family: var(--font-heading, "Cormorant Garamond", Georgia, serif);
-  font-size: 2.15rem !important;
+  font-family: var(--blog-font) !important;
+  font-size: 32px !important;
   line-height: 1.25 !important;
   font-weight: 700 !important;
-  border-left: 4px solid var(--color-primary, #111210) !important;
+  border-left: 5px solid var(--blog-primary) !important;
   padding-left: 14px !important;
   margin-top: 2.25rem !important;
   margin-bottom: 1rem !important;
-  color: var(--color-text, #111210) !important;
+  color: #0f172a !important;
 }
 
 .cms-content h3 {
-  font-family: var(--font-heading, "Cormorant Garamond", Georgia, serif);
-  font-size: 1.6rem !important;
+  font-family: var(--blog-font) !important;
+  font-size: 24px !important;
   line-height: 1.35 !important;
-  font-weight: 600 !important;
+  font-weight: 700 !important;
   margin-top: 1.75rem !important;
   margin-bottom: 0.75rem !important;
-  color: var(--color-text-muted, #4a4b48) !important;
+  color: #1e293b !important;
 }
 
 .cms-content p {
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-size: 15.5px;
-  line-height: 1.8;
-  color: var(--color-text-muted, #4a4b48);
+  line-height: 1.75;
+  color: #374151;
 }
 
 .cms-content strong,
 .cms-content b {
   font-weight: 700;
-  color: var(--color-text, #111210);
+  color: #0f172a;
 }
 
 .cms-content a {
-  color: var(--color-primary, #111210);
+  color: var(--blog-primary);
   font-weight: 600;
   text-decoration: underline;
   text-underline-offset: 2px;
 }
 
 .cms-content a:hover {
-  color: var(--color-chrome-bright, #90908d);
+  color: var(--blog-primary-hover);
 }
 
 /* =========================================================
-   Responsive Tables
+   Responsive Table Styling
    ========================================================= */
 .cms-table-overflow {
   margin-top: 1.75rem;
   margin-bottom: 1.75rem;
   width: 100%;
   overflow-x: auto;
-  border-radius: 0.75rem;
-  border: 1px solid var(--color-border, #d7d7d2);
-  background-color: var(--color-surface, #f6f6f4);
+  border-radius: 0.5rem;
+  border: 1px solid #E2E8F0;
+  background-color: #ffffff;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
 }
 
@@ -82,19 +99,19 @@
   width: 100%;
   border-collapse: collapse;
   text-align: left;
+  font-family: var(--blog-font);
   font-size: 13.5px;
 }
 
 .cms-table th {
-  background-color: #111210 !important;
-  color: #ffffff !important;
+  background-color: #DDE3EA !important;
+  color: #0F172A !important;
   font-weight: 700 !important;
-  font-size: 13px !important;
-  padding: 12px 16px !important;
-  border-bottom: 2px solid var(--color-chrome, #b7b8b3) !important;
-  border-right: 1px solid #292b29 !important;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
+  font-size: 13.5px !important;
+  padding: 12px 18px !important;
+  border-bottom: 1px solid #CBD5E1 !important;
+  border-right: 1px solid #E2E8F0 !important;
+  letter-spacing: -0.01em;
 }
 
 .cms-table th:last-child {
@@ -102,10 +119,10 @@
 }
 
 .cms-table td {
-  padding: 11px 16px !important;
-  border-bottom: 1px solid #eaeae5 !important;
-  border-right: 1px solid #eaeae5 !important;
-  color: var(--color-text-muted, #4a4b48) !important;
+  padding: 11px 18px !important;
+  border-bottom: 1px solid #F1F5F9 !important;
+  border-right: 1px solid #F1F5F9 !important;
+  color: #334155 !important;
   background-color: #ffffff;
   line-height: 1.5;
 }
@@ -115,15 +132,15 @@
 }
 
 .cms-table tr:nth-child(even) td {
-  background-color: var(--color-page-soft, #ececea) !important;
+  background-color: #F8FAFC !important;
 }
 
 .cms-table tr:hover td {
-  background-color: #e4e4df !important;
+  background-color: #F1F5F9 !important;
 }
 
 /* =========================================================
-   Lists & Blockquotes
+   Lists & Typography Details
    ========================================================= */
 .cms-content ul {
   list-style-type: disc !important;
@@ -146,13 +163,11 @@
 }
 
 .cms-content blockquote {
-  border-left: 4px solid var(--color-primary, #111210) !important;
-  background-color: var(--color-page-soft, #ececea) !important;
-  padding: 1rem 1.25rem !important;
+  border-left: 4px solid var(--blog-primary) !important;
+  padding-left: 1rem !important;
   margin: 1.5rem 0 !important;
-  border-radius: 0 0.5rem 0.5rem 0;
   font-style: italic !important;
-  color: #4a4b48 !important;
+  color: #475569 !important;
 }
 
 /* =========================================================
@@ -162,8 +177,8 @@
   margin: 1.75rem 0 !important;
   padding: 1.25rem 1.5rem !important;
   border-radius: 0.75rem !important;
-  border: 1px solid var(--color-border, #d7d7d2) !important;
-  background-color: var(--color-page-soft, #ececea) !important;
+  border: 1px solid #E2E8F0 !important;
+  background-color: #F8FAFC !important;
 }
 
 .cms-callout-title {
@@ -171,39 +186,40 @@
   font-weight: 700 !important;
   font-size: 1rem !important;
   margin-bottom: 0.5rem !important;
+  letter-spacing: -0.01em;
 }
 
 .cms-callout-note {
-  background-color: #f5f5f3 !important;
-  border-color: #d7d7d2 !important;
-  color: #111210 !important;
+  background-color: #EFF6FF !important;
+  border-color: #BFDBFE !important;
+  color: #1E40AF !important;
 }
-.cms-callout-note .cms-callout-title { color: #111210 !important; }
-.cms-callout-note p { color: #4a4b48 !important; margin: 0.25rem 0 0 !important; }
+.cms-callout-note .cms-callout-title { color: #1E3A8A !important; }
+.cms-callout-note p { color: #1E40AF !important; margin: 0.25rem 0 0 !important; }
 
 .cms-callout-warning {
-  background-color: #fffbeb !important;
-  border-color: #fde68a !important;
-  color: #92400e !important;
+  background-color: #FFFBEB !important;
+  border-color: #FDE68A !important;
+  color: #92400E !important;
 }
-.cms-callout-warning .cms-callout-title { color: #78350f !important; }
-.cms-callout-warning p { color: #92400e !important; margin: 0.25rem 0 0 !important; }
+.cms-callout-warning .cms-callout-title { color: #78350F !important; }
+.cms-callout-warning p { color: #92400E !important; margin: 0.25rem 0 0 !important; }
 
 .cms-callout-tip {
-  background-color: #f0fdf4 !important;
-  border-color: #bbf7d0 !important;
+  background-color: #F0FDF4 !important;
+  border-color: #BBF7D0 !important;
   color: #166534 !important;
 }
-.cms-callout-tip .cms-callout-title { color: #14532d !important; }
+.cms-callout-tip .cms-callout-title { color: #14532D !important; }
 .cms-callout-tip p { color: #166534 !important; margin: 0.25rem 0 0 !important; }
 
 .cms-callout-destructive {
-  background-color: #fef2f2 !important;
-  border-color: #fecaca !important;
-  color: #991b1b !important;
+  background-color: #FEF2F2 !important;
+  border-color: #FECACA !important;
+  color: #991B1B !important;
 }
-.cms-callout-destructive .cms-callout-title { color: #7f1d1d !important; }
-.cms-callout-destructive p { color: #991b1b !important; margin: 0.25rem 0 0 !important; }
+.cms-callout-destructive .cms-callout-title { color: #7F1D1D !important; }
+.cms-callout-destructive p { color: #991B1B !important; margin: 0.25rem 0 0 !important; }
 
 /* =========================================================
    Call to Action (CTA) & Buttons
@@ -211,60 +227,47 @@
 .cms-cta-block {
   margin: 2.25rem 0 !important;
   border-radius: 1rem !important;
-  border: 1px solid #292b29 !important;
-  background: linear-gradient(135deg, #111210 0%, #292b29 100%) !important;
-  padding: 2.25rem !important;
+  border: 1px solid var(--blog-primary) !important;
+  background: linear-gradient(135deg, #071827 0%, var(--blog-primary) 100%) !important;
+  padding: 2rem !important;
   text-align: center !important;
-  box-shadow: 0 10px 25px -5px rgba(17, 18, 16, 0.4) !important;
-  position: relative;
-  overflow: hidden;
-}
-
-.cms-cta-block::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, #b7b8b3 0%, #ffffff 50%, #90908d 100%);
+  box-shadow: 0 10px 25px -5px rgba(7, 24, 39, 0.3) !important;
 }
 
 .cms-cta-content h3 {
-  font-family: var(--font-heading, "Cormorant Garamond", Georgia, serif) !important;
-  color: #ffffff !important;
-  font-size: 1.85rem !important;
-  font-weight: 700 !important;
+  color: #FFFFFF !important;
+  font-size: 1.5rem !important;
+  font-weight: 800 !important;
   margin: 0 0 0.5rem 0 !important;
   border-left: none !important;
   padding-left: 0 !important;
 }
 
 .cms-cta-content p {
-  color: #e5e5e3 !important;
+  color: #E2E8F0 !important;
   font-size: 0.95rem !important;
   max-width: 600px;
-  margin: 0 auto 1.5rem auto !important;
+  margin: 0 auto 1.25rem auto !important;
 }
 
 .cms-cta-btn {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  padding: 0.75rem 2rem !important;
+  padding: 0.75rem 1.75rem !important;
   border-radius: 0.5rem !important;
-  background-color: #ffffff !important;
-  color: #111210 !important;
+  background-color: var(--blog-widget-btn) !important;
+  color: #FFFFFF !important;
   font-weight: 700 !important;
-  font-size: 0.95rem !important;
+  font-size: 0.9rem !important;
   text-decoration: none !important;
   transition: all 0.2s ease-in-out !important;
-  box-shadow: 0 4px 14px rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 4px 12px rgba(7, 95, 216, 0.35) !important;
 }
 
 .cms-cta-btn:hover {
-  background-color: #ececea !important;
-  color: #000000 !important;
+  background-color: var(--blog-widget-btn-hover) !important;
+  color: #FFFFFF !important;
   transform: translateY(-1px) !important;
 }
 
@@ -279,8 +282,8 @@
   border-radius: 1rem !important;
   overflow: hidden !important;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
-  border: 1px solid var(--color-border, #d7d7d2) !important;
-  background-color: #111210 !important;
+  border: 1px solid #E2E8F0 !important;
+  background-color: #0F172A !important;
 }
 
 .cms-video iframe {
@@ -304,12 +307,12 @@
   width: 100% !important;
   height: auto !important;
   border-radius: 0.75rem !important;
-  border: 1px solid var(--color-border, #d7d7d2) !important;
+  border: 1px solid #E2E8F0 !important;
 }
 
 .cms-image-caption {
   font-size: 0.8rem !important;
-  color: var(--color-text-soft, #777873) !important;
+  color: #64748B !important;
   text-align: center !important;
   margin-top: 0.5rem !important;
   font-style: italic !important;
