@@ -1,36 +1,39 @@
 "use client";
 
-import { useState } from "react";
+import * as React from "react";
+import {
+  User,
+  Mail,
+  Phone,
+  MapPin,
+  Pencil,
+  ShieldCheck,
+  Loader2,
+  CheckCircle2,
+  Car,
+} from "lucide-react";
+import { blogConfig } from "@/lib/blog.config";
 
-export function EngineQuoteWidget({ siteName = "Jaguar Engines UK" }) {
-  const [reg, setReg] = useState("");
-  const [isLookingUp, setIsLookingUp] = useState(false);
-  const [lookupError, setLookupError] = useState("");
+export function EngineQuoteWidget({ siteName = blogConfig.siteName }) {
+  const [reg, setReg] = React.useState("");
+  const [isLookingUp, setIsLookingUp] = React.useState(false);
+  const [lookupError, setLookupError] = React.useState("");
 
-  const [vehicle, setVehicle] = useState(null);
-  const [showManualFields, setShowManualFields] = useState(false);
+  const [vehicleData, setVehicleData] = React.useState(null);
 
-  // Manual fallback fields
-  const [manualMake, setManualMake] = useState("Jaguar");
-  const [manualModel, setManualModel] = useState("");
-  const [manualYear, setManualYear] = useState("");
-  const [manualFuel, setManualFuel] = useState("");
+  const [name, setName] = React.useState("");
+  const [email, setEmail] = React.useState("");
+  const [phone, setPhone] = React.useState("");
+  const [postal, setPostal] = React.useState("");
+  const [note, setNote] = React.useState("");
 
-  // Customer contact info
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [number, setNumber] = useState("");
-  const [postcode, setPostcode] = useState("");
-  const [notes, setNotes] = useState("");
-
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [submitError, setSubmitError] = useState("");
+  const [isSubmitting, setIsSubmitting] = React.useState(false);
+  const [isSubmitted, setIsSubmitted] = React.useState(false);
+  const [submitError, setSubmitError] = React.useState("");
 
   const handleLookup = async (e) => {
     if (e) e.preventDefault();
-    const cleanReg = reg.trim().toUpperCase();
-    if (!cleanReg) {
+    if (!reg.trim()) {
       setLookupError("Please enter your vehicle registration");
       return;
     }
@@ -39,19 +42,20 @@ export function EngineQuoteWidget({ siteName = "Jaguar Engines UK" }) {
     setLookupError("");
 
     try {
-      const res = await fetch(`/api/vehicle-lookup?vrm=${encodeURIComponent(cleanReg)}`);
-      const data = await res.json().catch(() => ({}));
+      const res = await fetch("/api/vehicle-lookup", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ reg: reg.trim() }),
+      });
 
-      if (res.ok && data.vehicle) {
-        setVehicle(data.vehicle);
-        setShowManualFields(false);
+      const data = await res.json();
+      if (res.ok && data.success) {
+        setVehicleData(data.data);
       } else {
-        setShowManualFields(true);
-        setLookupError(data.error || "Vehicle details not found. Please confirm details below.");
+        setLookupError(data.message || "Vehicle lookup failed. Please check registration.");
       }
-    } catch (err) {
-      setShowManualFields(true);
-      setLookupError("Could not retrieve vehicle details. Please enter them below.");
+    } catch {
+      setLookupError("Network error during lookup. Please try again.");
     } finally {
       setIsLookingUp(false);
     }
@@ -59,245 +63,281 @@ export function EngineQuoteWidget({ siteName = "Jaguar Engines UK" }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitError("");
-
-    const brand = vehicle?.brand || manualMake || "Jaguar";
-    const series = vehicle?.series || manualModel;
-    const vrm = (vehicle?.vrm || reg || "").trim().toUpperCase();
-
-    if (!series) {
-      setSubmitError("Please specify your vehicle model/series.");
-      return;
-    }
-
-    if (!name.trim() || !number.trim()) {
-      setSubmitError("Name and contact phone number are required.");
+    if (!vehicleData?.Model) {
+      alert("Please enter your registration and click 'Find My Engine' first.");
       return;
     }
 
     setIsSubmitting(true);
+    setSubmitError("");
 
     try {
-      const payload = {
-        name: name.trim(),
-        email: email.trim(),
-        number: number.trim(),
-        postcode: postcode.trim().toUpperCase(),
-        vrm: vrm,
-        make: brand,
-        model: series,
-        year: vehicle?.year || manualYear || "",
-        engineSize: vehicle?.engineSize || "",
-        fuel: vehicle?.fuel || manualFuel || "",
-        notes: notes.trim() || "Quote requested via Jaguar Blog Guide",
-        sourceUrl: typeof window !== "undefined" ? window.location.href : "/blog",
-      };
-
-      const res = await fetch("/api/lead", {
+      const res = await fetch("/api/lead-quote", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
+        body: JSON.stringify({
+          name,
+          email,
+          phone,
+          postal,
+          note,
+          VRM: vehicleData.VRM,
+          vehicle_make: vehicleData.Make,
+          vehicle_model: vehicleData.Model,
+          vehicle_year: vehicleData.YearOfManufacture,
+          vehicle_fuel: vehicleData.FuelType,
+          vehicle_fuel_capacity: vehicleData.EngineCapacity,
+          siteName,
+          pageUrl: typeof window !== "undefined" ? window.location.href : "",
+        }),
       });
 
-      const resData = await res.json().catch(() => ({}));
-
-      if (res.ok && resData.success) {
+      const data = await res.json();
+      if (res.ok && data.success) {
         setIsSubmitted(true);
       } else {
-        setSubmitError(resData.error || "Failed to submit quote request. Please try again or call us.");
+        setSubmitError(data.error || "Failed to submit quote request. Please try again.");
       }
     } catch {
-      setSubmitError("Network connection error. Please try again.");
+      setSubmitError("Network error submitting quote. Please try again.");
     } finally {
       setIsSubmitting(false);
     }
   };
 
-  return (
-    <div className="overflow-hidden rounded-2xl border border-stone-300 bg-white shadow-sm">
-      {/* Header with Jaguar luxury dark obsidian & chrome */}
-      <div className="bg-gradient-to-r from-[#111210] to-[#292b29] px-5 py-4 text-white border-b border-stone-600">
-        <div className="flex items-center gap-2">
-          <svg className="h-5 w-5 shrink-0 text-[#b7b8b3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-          </svg>
-          <h3 className="text-lg font-bold tracking-tight">Jaguar Engine Quote</h3>
+  const { theme, copy } = blogConfig;
+
+  if (isSubmitted) {
+    return (
+      <div
+        className="rounded-2xl p-6 text-white shadow-xl text-center space-y-4"
+        style={{
+          backgroundColor: theme.widgetBg,
+          border: `1px solid ${theme.widgetBorder}`,
+          fontFamily: theme.fontFamily,
+        }}
+      >
+        <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+          <CheckCircle2 className="h-8 w-8" />
         </div>
-        <p className="mt-1 text-xs text-stone-300">
-          Tested Low-Mileage & Reconditioned Jaguar Engines in Stock
+        <h3 className="text-xl font-black text-white">{copy.widgetSuccessTitle}</h3>
+        <p className="text-xs text-slate-200 leading-relaxed">
+          Thank you, <b>{name}</b>. An engine specialist for your <b>{vehicleData?.Make} {vehicleData?.Model}</b> ({vehicleData?.VRM}) will contact you shortly with prices and warranty options.
+        </p>
+        <button
+          type="button"
+          onClick={() => {
+            setIsSubmitted(false);
+            setVehicleData(null);
+            setReg("");
+            setName("");
+            setEmail("");
+            setPhone("");
+            setPostal("");
+            setNote("");
+          }}
+          className="mt-2 inline-flex items-center gap-1.5 rounded-lg px-4 py-2.5 text-xs font-bold text-white transition hover:opacity-90"
+          style={{ backgroundColor: theme.widgetButtonBg }}
+        >
+          Submit another inquiry
+        </button>
+      </div>
+    );
+  }
+
+  const isFormDisabled = !vehicleData || !vehicleData.Model;
+
+  return (
+    <div
+      className="rounded-2xl p-6 text-white shadow-xl space-y-4"
+      style={{
+        backgroundColor: theme.widgetBg,
+        border: `1px solid ${theme.widgetBorder}`,
+        fontFamily: theme.fontFamily,
+      }}
+    >
+      {/* Title */}
+      <div>
+        <h3 className="text-2xl font-black tracking-tight text-white">
+          {copy.widgetTitle}
+        </h3>
+        <p className="mt-1.5 text-xs text-slate-200 leading-snug">
+          {copy.widgetSubtitle}
         </p>
       </div>
 
-      <div className="p-5">
-        {isSubmitted ? (
-          <div className="rounded-xl bg-green-50 p-6 text-center text-green-900 border border-green-200">
-            <svg className="mx-auto h-12 w-12 text-green-600 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            <h4 className="text-base font-bold">Quote Request Received!</h4>
-            <p className="mt-1 text-xs text-green-700">
-              Our Jaguar engine specialists will check stock and reach out with the best price and warranty options.
-            </p>
-            <button
-              onClick={() => {
-                setIsSubmitted(false);
-                setVehicle(null);
-                setReg("");
-              }}
-              className="mt-4 inline-block text-xs font-semibold text-green-800 underline hover:text-green-900"
-            >
-              Get another quote
-            </button>
+      {/* Reg Plate Input Section */}
+      <div className="space-y-2 pt-1">
+        <label htmlFor="sidebar-reg-input" className="block text-[11px] font-black uppercase tracking-wider text-white">
+          ENTER YOUR REGISTRATION
+        </label>
+
+        <div className="flex items-center rounded-lg bg-white overflow-hidden shadow-inner">
+          <div
+            className="flex flex-col items-center justify-center px-2.5 py-2 text-white select-none leading-none gap-0.5 min-w-[36px]"
+            style={{ backgroundColor: theme.ukBadgeBg }}
+          >
+            <span className="text-xs leading-none">🇬🇧</span>
+            <span className="font-black text-[9px] tracking-tight text-white">UK</span>
           </div>
-        ) : (
-          <form onSubmit={vehicle || showManualFields ? handleSubmit : handleLookup} className="space-y-4 text-left">
-            {/* Step 1: Reg lookup */}
-            <div>
-              <label className="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">
-                Enter Registration Number
-              </label>
-              <div className="flex gap-2">
-                <div className="relative flex-1">
-                  <input
-                    type="text"
-                    value={reg}
-                    onChange={(e) => setReg(e.target.value.toUpperCase())}
-                    placeholder="e.g. JG68 ENG"
-                    className="w-full rounded-lg border-2 border-amber-400 bg-amber-50/40 px-3 py-2 text-center text-sm font-black uppercase tracking-widest text-slate-900 placeholder:text-slate-400 focus:border-[#111210] focus:bg-white focus:outline-none"
-                    maxLength={10}
-                  />
-                </div>
-                <button
-                  type="button"
-                  onClick={handleLookup}
-                  disabled={isLookingUp}
-                  className="rounded-lg bg-[#111210] px-4 py-2 text-xs font-bold text-white shadow hover:bg-black disabled:opacity-60 transition border border-[#b7b8b3]/30"
-                >
-                  {isLookingUp ? "..." : "Lookup"}
-                </button>
-              </div>
-              {lookupError && (
-                <p className="mt-1.5 text-xs text-amber-600 font-medium">{lookupError}</p>
-              )}
+          <input
+            id="sidebar-reg-input"
+            type="text"
+            value={reg}
+            onChange={(e) => setReg(e.target.value.toUpperCase())}
+            onKeyDown={(e) => e.key === "Enter" && handleLookup(e)}
+            placeholder="ENTER REGISTRATION"
+            className="flex-1 bg-transparent px-3 py-2.5 text-sm font-bold tracking-wider text-slate-900 placeholder:text-slate-400 uppercase focus:outline-none"
+          />
+        </div>
+
+        <button
+          type="button"
+          onClick={() => handleLookup()}
+          disabled={isLookingUp || !reg.trim()}
+          className="flex w-full items-center justify-center gap-2 rounded-lg py-3 text-sm font-bold text-white shadow-md transition active:scale-[0.99] disabled:opacity-60"
+          style={{ backgroundColor: theme.widgetButtonBg }}
+        >
+          {isLookingUp ? <Loader2 className="h-4 w-4 animate-spin" /> : null}
+          <span>Find My Engine</span>
+          <span className="text-base leading-none">→</span>
+        </button>
+
+        {lookupError && (
+          <p className="text-[11px] font-medium text-rose-300 bg-rose-950/40 border border-rose-500/30 rounded-lg p-2">
+            {lookupError}
+          </p>
+        )}
+
+        {vehicleData && (
+          <div className="rounded-lg border border-emerald-500/30 bg-emerald-950/30 p-3 text-xs space-y-1 animate-in fade-in">
+            <div className="flex items-center justify-between">
+              <span className="font-bold text-emerald-400 uppercase tracking-wider text-[10px] flex items-center gap-1">
+                <Car className="h-3 w-3" /> Vehicle Identified:
+              </span>
+              <span className="bg-emerald-500/20 text-emerald-300 font-mono font-bold text-[10px] px-1.5 py-0.5 rounded">
+                {vehicleData.VRM}
+              </span>
             </div>
-
-            {/* Vehicle Card / Manual Confirmation */}
-            {vehicle && (
-              <div className="rounded-xl border border-stone-300 bg-stone-50 p-3.5 text-xs">
-                <div className="flex items-center justify-between font-bold text-slate-900">
-                  <span>{vehicle.brand} {vehicle.series}</span>
-                  <span className="rounded bg-white px-2 py-0.5 text-[11px] font-mono border border-stone-300">{vehicle.vrm}</span>
-                </div>
-                <div className="mt-1 text-slate-600 flex gap-3 text-[11px]">
-                  {vehicle.year && <span>Year: {vehicle.year}</span>}
-                  {vehicle.fuel && <span>Fuel: {vehicle.fuel}</span>}
-                  {vehicle.engineSize && <span>{vehicle.engineSize}</span>}
-                </div>
-              </div>
-            )}
-
-            {showManualFields && !vehicle && (
-              <div className="space-y-2 rounded-xl border border-stone-200 bg-stone-50 p-3 text-xs">
-                <p className="font-semibold text-slate-800">Confirm Jaguar Model:</p>
-                <div className="grid grid-cols-2 gap-2">
-                  <input
-                    type="text"
-                    placeholder="Model (e.g. XF, F-Pace, XE)"
-                    value={manualModel}
-                    onChange={(e) => setManualModel(e.target.value)}
-                    className="rounded border border-stone-300 bg-white px-2.5 py-1.5 text-xs"
-                    required
-                  />
-                  <input
-                    type="text"
-                    placeholder="Year (e.g. 2018)"
-                    value={manualYear}
-                    onChange={(e) => setManualYear(e.target.value)}
-                    className="rounded border border-stone-300 bg-white px-2.5 py-1.5 text-xs"
-                  />
-                </div>
-              </div>
-            )}
-
-            {/* Step 2: Customer Contact Info */}
-            {(vehicle || showManualFields) && (
-              <div className="space-y-2.5 border-t border-slate-100 pt-3">
-                <div>
-                  <label className="block text-xs font-medium text-slate-700">Full Name *</label>
-                  <input
-                    type="text"
-                    required
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    placeholder="Your Name"
-                    className="mt-0.5 w-full rounded-lg border border-slate-300 px-3 py-1.5 text-xs focus:border-[#111210] focus:outline-none"
-                  />
-                </div>
-                <div>
-                  <label className="block text-xs font-medium text-slate-700">Phone Number *</label>
-                  <input
-                    type="tel"
-                    required
-                    value={number}
-                    onChange={(e) => setNumber(e.target.value)}
-                    placeholder="Contact Number"
-                    className="mt-0.5 w-full rounded-lg border border-slate-300 px-3 py-1.5 text-xs focus:border-[#111210] focus:outline-none"
-                  />
-                </div>
-                <div className="grid grid-cols-2 gap-2">
-                  <div>
-                    <label className="block text-xs font-medium text-slate-700">Email Address</label>
-                    <input
-                      type="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      placeholder="Email"
-                      className="mt-0.5 w-full rounded-lg border border-slate-300 px-3 py-1.5 text-xs focus:border-[#111210] focus:outline-none"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-xs font-medium text-slate-700">Postcode</label>
-                    <input
-                      type="text"
-                      value={postcode}
-                      onChange={(e) => setPostcode(e.target.value.toUpperCase())}
-                      placeholder="e.g. CV1 2AB"
-                      className="mt-0.5 w-full rounded-lg border border-slate-300 px-3 py-1.5 text-xs focus:border-[#111210] focus:outline-none"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label className="block text-xs font-medium text-slate-700">Notes (Optional)</label>
-                  <textarea
-                    rows={2}
-                    value={notes}
-                    onChange={(e) => setNotes(e.target.value)}
-                    placeholder="Supply only or fitting required?"
-                    className="mt-0.5 w-full rounded-lg border border-slate-300 px-3 py-1.5 text-xs focus:border-[#111210] focus:outline-none"
-                  />
-                </div>
-
-                {submitError && (
-                  <p className="text-xs text-red-600 font-medium">{submitError}</p>
-                )}
-
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="w-full rounded-lg bg-[#111210] py-2.5 text-xs font-bold text-white shadow-md hover:bg-black disabled:opacity-60 transition border border-[#b7b8b3]/30"
-                >
-                  {isSubmitting ? "Submitting..." : "Get Free Jaguar Engine Quote"}
-                </button>
-              </div>
-            )}
-          </form>
+            <div className="font-bold text-white text-sm">
+              {vehicleData.Make} {vehicleData.Model}
+            </div>
+            <div className="flex flex-wrap gap-2 text-[10px] text-slate-300">
+              {vehicleData.YearOfManufacture && <span>Year: <b>{vehicleData.YearOfManufacture}</b></span>}
+              {vehicleData.FuelType && <span>• Fuel: <b>{vehicleData.FuelType}</b></span>}
+              {vehicleData.EngineCapacity && <span>• Size: <b>{vehicleData.EngineCapacity}.0L</b></span>}
+            </div>
+          </div>
         )}
       </div>
 
-      <div className="bg-stone-50 border-t border-stone-200 px-4 py-2.5 text-[11px] text-stone-600 flex items-center justify-around">
-        <span>✓ Up to 12m Warranty</span>
-        <span>✓ Tested & Inspected</span>
-        <span>✓ UK Delivery</span>
+      {/* Divider */}
+      <div className="relative my-4 flex items-center justify-center">
+        <div className="absolute inset-0 flex items-center">
+          <div className="w-full border-t border-white/20" />
+        </div>
+        <span
+          className="relative px-3 text-[11px] font-bold uppercase tracking-wider text-slate-200"
+          style={{ backgroundColor: theme.widgetBg }}
+        >
+          OR REQUEST A QUOTE
+        </span>
+      </div>
+
+      {/* Quote Form */}
+      <form onSubmit={handleSubmit} className="space-y-2.5">
+        <div className="relative">
+          <User className="absolute left-3.5 top-3 h-4 w-4 text-slate-400" />
+          <input
+            type="text"
+            required
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder="Name"
+            className="w-full rounded-lg bg-white pl-10 pr-3 py-2.5 text-xs text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          />
+        </div>
+
+        <div className="relative">
+          <Mail className="absolute left-3.5 top-3 h-4 w-4 text-slate-400" />
+          <input
+            type="email"
+            required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Email"
+            className="w-full rounded-lg bg-white pl-10 pr-3 py-2.5 text-xs text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          />
+        </div>
+
+        <div className="relative">
+          <Phone className="absolute left-3.5 top-3 h-4 w-4 text-slate-400" />
+          <input
+            type="tel"
+            required
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+            placeholder="Phone number"
+            className="w-full rounded-lg bg-white pl-10 pr-3 py-2.5 text-xs text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          />
+        </div>
+
+        <div className="relative">
+          <MapPin className="absolute left-3.5 top-3 h-4 w-4 text-slate-400" />
+          <input
+            type="text"
+            required
+            value={postal}
+            onChange={(e) => setPostal(e.target.value.toUpperCase())}
+            placeholder="Postal Code"
+            className="w-full rounded-lg bg-white pl-10 pr-3 py-2.5 text-xs text-slate-900 placeholder:text-slate-400 uppercase focus:outline-none focus:ring-2 focus:ring-blue-400"
+          />
+        </div>
+
+        <div className="relative">
+          <Pencil className="absolute left-3.5 top-3 h-4 w-4 text-slate-400" />
+          <textarea
+            rows={3}
+            value={note}
+            onChange={(e) => setNote(e.target.value)}
+            placeholder="Quick Note..."
+            className="w-full rounded-lg bg-white pl-10 pr-3 py-2.5 text-xs text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-400 resize-none"
+          />
+        </div>
+
+        {submitError && (
+          <p className="text-[11px] font-medium text-rose-300 bg-rose-950/40 border border-rose-500/30 rounded-lg p-2">
+            {submitError}
+          </p>
+        )}
+
+        <button
+          type="submit"
+          id="blogFormSubmitBTN"
+          disabled={isFormDisabled || isSubmitting}
+          className="flex w-full items-center justify-center gap-2 rounded-lg py-3 text-sm font-bold text-white transition disabled:cursor-not-allowed disabled:opacity-60 shadow-lg active:scale-[0.99]"
+          style={{ backgroundColor: theme.widgetButtonBg }}
+        >
+          {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin" /> : null}
+          <span>{copy.widgetSubmitText}</span>
+        </button>
+
+        {isFormDisabled && (
+          <p className="text-[10px] text-slate-300 text-center pt-0.5">
+            * Please enter your vehicle registration above to unlock quote request.
+          </p>
+        )}
+      </form>
+
+      {/* Security Footer */}
+      <div className="flex items-center gap-3 pt-2 text-left">
+        <div className="flex-shrink-0 text-white">
+          <ShieldCheck className="h-7 w-7 stroke-[1.5]" />
+        </div>
+        <div className="text-[11px] leading-tight">
+          <div className="font-bold text-white">100% Secure & Privacy Guaranteed</div>
+          <div className="text-slate-300 text-[10px] mt-0.5">We never share your details with third parties.</div>
+        </div>
       </div>
     </div>
   );
