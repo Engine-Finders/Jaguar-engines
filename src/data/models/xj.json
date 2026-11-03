@@ -10,7 +10,7 @@
       "description": "Every XJ engine - AJ133 5.0 V8, AJ126 3.0 V6, and 2.7/3.0 TDV6 diesels. 9 generations, real UK costs and reliability data. Compare prices from 15+ vetted Jaguar specialists today.",
       "type": "website",
       "url": "https://jaguarengines.uk/xj",
-      "image": "https://jaguarengines.uk/images/jaguar-xj-hero.jpg",
+      "image": "https://jaguarengines.uk/hero/jaguar-bg-light.webp",
       "siteName": "jaguarengines.uk"
     },
     "twitter": {
@@ -197,7 +197,7 @@
           "@type": "Organization",
           "name": "jaguarengines.uk",
           "url": "https://jaguarengines.uk/",
-          "logo": "https://jaguarengines.uk/images/logo.png",
+          "logo": "https://jaguarengines.uk/jaguar-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

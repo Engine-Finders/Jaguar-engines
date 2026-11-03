@@ -27,7 +27,7 @@ function cleanText(value = "") {
   return value
     .replaceAll("Â£", "£")
     .replaceAll("â€“", "–")
-    .replaceAll("â€”", "—")
+    .replaceAll("â€”", "")
     .replaceAll("â†’", "")
     .trim();
 }
@@ -246,7 +246,7 @@ function RuleCard({ data, isDark }) {
         {cleanText(rule.body)}
       </p>
 
-      {/* Tapered bottom line — matches ref */}
+      {/* Tapered bottom line  matches ref */}
       <div
         className="mt-auto w-full max-w-[220px] pt-6"
         aria-hidden="true"
@@ -371,7 +371,7 @@ export default function HomeSec6({ data }) {
 
   return (
     <section className={`overflow-x-hidden ${sectionBg}`}>
-      {/* Header — same pattern as other home sections */}
+      {/* Header  same pattern as other home sections */}
       <div className={`relative overflow-hidden ${sectionBg}`}>
         <div className="absolute inset-y-0 right-0 w-[62%] md:w-[48%]">
           <Image

@@ -204,7 +204,7 @@
           "@type": "Organization",
           "name": "JaguarEngine.uk",
           "url": "https://jaguarengines.uk/",
-          "logo": "https://jaguarengines.uk/images/jaguarengine-logo.png",
+          "logo": "https://jaguarengines.uk/jaguar-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

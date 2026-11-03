@@ -11,7 +11,7 @@ Theme colors / brand look → will be provided separately (with images).
   - Page / default: var(--color-page)  (or site page bg)
   - Tinted stripe:  #ececea
 - Dark theme: keep all sections on page bg (no tint stripe needed).
-- Example order (engine page style — adjust per page, but keep alternating):
+- Example order (engine page style  adjust per page, but keep alternating):
   1. Hero          → page
   2. Section 2     → tinted (#ececea)
   3. Section 3     → page
@@ -37,10 +37,10 @@ Theme colors / brand look → will be provided separately (with images).
 - Icon map lives in homeIcons.js (semantic key → exact filename from
   silver-black-icons.txt). Copy the same key→filename map; do not rename files.
 - Brand folder names stay "Jaguar Black" / "Jaguar Silver" unless client
-  explicitly renames folders — until then, keep these exact path strings.
+  explicitly renames folders  until then, keep these exact path strings.
 - Replace emoji / ad-hoc SVG with HomeIcon using those keys.
 - Keep circle / soft BG size the same; increase ONLY the icon graphic inside.
-- Trust / badge strips, card headers, FAQ, CTA blocks — same icon system everywhere.
+- Trust / badge strips, card headers, FAQ, CTA blocks  same icon system everywhere.
 - Hero trust badges: glassmorphism + rounded border (desktop + mobile).
 - When porting: copy public/Jaguar Black + public/Jaguar Silver + silver-black-icons.txt
   as-is, and reuse the same HomeIcon component / FILES map from this project.

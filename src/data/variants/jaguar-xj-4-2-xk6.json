@@ -10,14 +10,14 @@
       "description": "Jaguar XJ 4.2 - XK6 straight-six engine. Real UK costs, common cooling, block and tappet guide issues, and honest reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
       "type": "website",
       "url": "https://jaguarengines.uk/xj/4-2-xk6",
-      "image": "https://jaguarengines.uk/images/jaguar/hero/xj-42-xk6.jpg",
+      "image": "https://jaguarengines.uk/hero/jaguar-bg-light.webp",
       "siteName": "JaguarEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "XJ 4.2 Engine Replacement Cost UK - Compare Quotes",
       "description": "Jaguar XJ 4.2 - XK6 straight-six engine. Real UK costs, common cooling, block and tappet guide issues, and honest reliability data.",
-      "image": "https://jaguarengines.uk/images/jaguar/hero/xj-42-xk6.jpg"
+      "image": "https://jaguarengines.uk/hero/jaguar-bg-light.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -138,7 +138,7 @@
           "@type": "Organization",
           "name": "JaguarEngine.uk",
           "url": "https://jaguarengines.uk/",
-          "logo": "https://jaguarengines.uk/images/jaguarengine-logo.png",
+          "logo": "https://jaguarengines.uk/jaguar-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

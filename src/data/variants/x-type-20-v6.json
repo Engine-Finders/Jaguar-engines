@@ -10,14 +10,14 @@
       "description": "Jaguar X-Type 2.0 V6 – AJ-V6 2.0-litre petrol. Real UK costs, timing chain and ignition coil facts, and specialist quotes. Get free prices from 15+ vetted specialists today.",
       "type": "website",
       "url": "https://jaguarengines.uk/x-type/20-v6/",
-      "image": "https://jaguarengines.uk/images/jaguar/hero/x-type-20-v6.jpg",
+      "image": "https://jaguarengines.uk/hero/jaguar-bg-light.webp",
       "siteName": "JaguarEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "X-Type 2.0 V6 Engine Cost UK - Compare Quotes",
       "description": "Jaguar X-Type 2.0 V6 – AJ-V6 2.0-litre petrol. Real UK costs, timing chain and ignition coil facts, and specialist quotes.",
-      "image": "https://jaguarengines.uk/images/jaguar/hero/x-type-20-v6.jpg"
+      "image": "https://jaguarengines.uk/hero/jaguar-bg-light.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -126,7 +126,7 @@
           "@type": "Organization",
           "name": "JaguarEngine.uk",
           "url": "https://jaguarengines.uk/",
-          "logo": "https://jaguarengines.uk/images/jaguarengine-logo.png",
+          "logo": "https://jaguarengines.uk/jaguar-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

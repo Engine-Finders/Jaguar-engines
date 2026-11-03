@@ -8,14 +8,14 @@
       "description": "Modern 3.0‑litre straight‑six petrol - strong but cooling system vigilance is key. Rated from 80+ real UK enquiries. Compare quotes from 15 vetted specialists.",
       "type": "website",
       "url": "https://jaguarengines.uk/engine/aj20p6",
-      "image": "https://jaguarengines.uk/images/jaguar/engines/aj20p6.jpg",
+      "image": "https://jaguarengines.uk/hero/jaguar-bg-light.webp",
       "siteName": "jaguarengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "Jaguar AJ20P6 Engine - Specs, Reliability & Replacement Cost",
       "description": "Modern 3.0‑litre straight‑six petrol - strong but cooling system vigilance is key. Rated from 80+ real UK enquiries. Compare quotes from 15 vetted specialists.",
-      "image": "https://jaguarengines.uk/images/jaguar/engines/aj20p6.jpg"
+      "image": "https://jaguarengines.uk/hero/jaguar-bg-light.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -110,7 +110,7 @@
           "@type": "Organization",
           "name": "jaguarengines.uk",
           "url": "https://jaguarengines.uk/",
-          "logo": "https://jaguarengines.uk/images/logo.png",
+          "logo": "https://jaguarengines.uk/jaguar-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

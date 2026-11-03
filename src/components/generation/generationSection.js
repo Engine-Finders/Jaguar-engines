@@ -51,7 +51,7 @@ export function splitBestWorstEnginesH2(title = "") {
 
   if (index !== -1) {
     return {
-      main: clean.slice(0, index).trim().replace(/[-–—]\s*$/, ""),
+      main: clean.slice(0, index).trim().replace(/[-–]\s*$/, ""),
       accent: clean.slice(index).trim(),
     };
   }
@@ -74,7 +74,7 @@ export function splitOwnershipEconomicsH2(title = "") {
 
   if (index !== -1) {
     return {
-      main: clean.slice(0, index).trim().replace(/[-–—]\s*$/, ""),
+      main: clean.slice(0, index).trim().replace(/[-–]\s*$/, ""),
       accent: clean.slice(index).trim(),
     };
   }
@@ -97,7 +97,7 @@ export function splitCommonProblemsH2(title = "") {
 
   if (index !== -1) {
     return {
-      main: clean.slice(0, index).trim().replace(/[-–—]\s*$/, ""),
+      main: clean.slice(0, index).trim().replace(/[-–]\s*$/, ""),
       accent: clean.slice(index).trim(),
     };
   }
@@ -120,7 +120,7 @@ export function splitReplacementCostsH2(title = "") {
 
   if (index !== -1) {
     return {
-      main: clean.slice(0, index).trim().replace(/[-–—]\s*$/, ""),
+      main: clean.slice(0, index).trim().replace(/[-–]\s*$/, ""),
       accent: clean.slice(index).trim(),
     };
   }
@@ -128,7 +128,7 @@ export function splitReplacementCostsH2(title = "") {
   const replacement = clean.indexOf("Replacement Costs");
   if (replacement !== -1) {
     return {
-      main: clean.slice(0, replacement).trim().replace(/[-–—]\s*$/, ""),
+      main: clean.slice(0, replacement).trim().replace(/[-–]\s*$/, ""),
       accent: clean.slice(replacement).trim(),
     };
   }
@@ -151,7 +151,7 @@ export function splitCoreVariantsH2(title = "") {
 
   if (index !== -1) {
     return {
-      main: clean.slice(0, index).trim().replace(/[-–—]\s*$/, ""),
+      main: clean.slice(0, index).trim().replace(/[-–]\s*$/, ""),
       accent: clean.slice(index).trim(),
     };
   }
@@ -159,7 +159,7 @@ export function splitCoreVariantsH2(title = "") {
   const lineup = clean.indexOf("Diesel & Petrol");
   if (lineup !== -1) {
     return {
-      main: clean.slice(0, lineup).trim().replace(/[-–—]\s*$/, ""),
+      main: clean.slice(0, lineup).trim().replace(/[-–]\s*$/, ""),
       accent: clean.slice(lineup).trim(),
     };
   }
@@ -182,7 +182,7 @@ export function splitMarketIntelligenceH2(title = "") {
 
   if (index !== -1) {
     return {
-      main: clean.slice(0, index).trim().replace(/[-–—]\s*$/, ""),
+      main: clean.slice(0, index).trim().replace(/[-–]\s*$/, ""),
       accent: clean.slice(index).trim(),
     };
   }
@@ -205,7 +205,7 @@ export function splitFaqH2(title = "") {
 
   if (index !== -1) {
     return {
-      main: clean.slice(0, index).trim().replace(/[-–—]\s*$/, ""),
+      main: clean.slice(0, index).trim().replace(/[-–]\s*$/, ""),
       accent: clean.slice(index).trim(),
     };
   }
@@ -231,7 +231,7 @@ export function splitTrustCtaH2(title = "") {
 
   if (trustMatch) {
     return {
-      main: trustMatch[1].trim().replace(/[-–—]\s*$/, ""),
+      main: trustMatch[1].trim().replace(/[-–]\s*$/, ""),
       accent: trustMatch[2].trim(),
     };
   }

@@ -35,7 +35,7 @@ function ComparisonCard({ item, isDark }) {
           : "border-[#e8e8e6] bg-white shadow-[0_8px_20px_rgba(16,18,16,0.06)]"
       }`}
     >
-      {/* Number tab — top left */}
+      {/* Number tab  top left */}
       <span
         className={`absolute left-0 top-0 z-20 flex h-[22px] min-w-[30px] items-center justify-center rounded-br-[8px] px-2 font-heading text-[0.74rem] font-semibold leading-none ${
           isDark ? "bg-[var(--color-chrome)] text-[var(--color-page)]" : "bg-black text-white"
@@ -44,7 +44,7 @@ function ComparisonCard({ item, isDark }) {
         {item.id}
       </span>
 
-      {/* Visual half — labels + cars + center line */}
+      {/* Visual half  labels + cars + center line */}
       <div className="relative px-3 pb-0.5 pt-7 md:px-3.5 md:pt-8">
         <div
           className={`pointer-events-none absolute bottom-0.5 left-1/2 top-7 w-px -translate-x-1/2 md:top-8 ${
@@ -183,7 +183,7 @@ export default function HomeSec5({ data }) {
 
   return (
     <section className={`relative overflow-hidden ${sectionBg}`}>
-      {/* Header — same as Sec2/Sec3 */}
+      {/* Header  same as Sec2/Sec3 */}
       <div className={`relative overflow-hidden ${sectionBg}`}>
         <div className="absolute inset-y-0 right-0 w-[58%] md:w-[46%]">
           <Image

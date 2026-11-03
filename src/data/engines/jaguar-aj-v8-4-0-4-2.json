@@ -8,14 +8,14 @@
       "description": "AJ-V8 is smooth and characterful, but early tensioners can destroy it - rated from UK owner enquiries. Compare quotes from vetted specialists today.",
       "type": "website",
       "url": "https://jaguarengines.uk/engine/aj-v8-4-0-4-2",
-      "image": "https://jaguarengines.uk/images/jaguar/engines/aj-v8-40-42.jpg",
+      "image": "https://jaguarengines.uk/hero/jaguar-bg-light.webp",
       "siteName": "jaguarengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "Jaguar AJ-V8 4.0/4.2 Engine - Reliability & Replacement Cost",
       "description": "AJ-V8 is smooth and characterful, but early tensioners can destroy it - rated from UK owner enquiries. Compare quotes from vetted specialists today.",
-      "image": "https://jaguarengines.uk/images/jaguar/engines/aj-v8-40-42.jpg"
+      "image": "https://jaguarengines.uk/hero/jaguar-bg-light.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -138,7 +138,7 @@
           "@type": "Organization",
           "name": "jaguarengines.uk",
           "url": "https://jaguarengines.uk/",
-          "logo": "https://jaguarengines.uk/images/logo.png",
+          "logo": "https://jaguarengines.uk/jaguar-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

@@ -11,14 +11,14 @@
       "description": "Jaguar XF 2.2d 224DT diesel - real UK costs, timing belt & injector watchpoints. Get free quotes from 15+ vetted Jaguar specialists today.",
       "type": "website",
       "url": "https://jaguarengines.uk/xf/22d/",
-      "image": "https://jaguarengines.uk/images/jaguar/hero/xf-22d.jpg",
+      "image": "https://jaguarengines.uk/hero/jaguar-bg-light.webp",
       "siteName": "JaguarEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "XF 2.2d Engine Replacement Cost UK - Compare Quotes",
       "description": "Jaguar XF 2.2d 224DT diesel - real UK costs, timing belt & injector watchpoints.",
-      "image": "https://jaguarengines.uk/images/jaguar/hero/xf-22d.jpg"
+      "image": "https://jaguarengines.uk/hero/jaguar-bg-light.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -133,7 +133,7 @@
           "@type": "Organization",
           "name": "JaguarEngine.uk",
           "url": "https://jaguarengines.uk/",
-          "logo": "https://jaguarengines.uk/images/jaguarengine-logo.png",
+          "logo": "https://jaguarengines.uk/jaguar-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

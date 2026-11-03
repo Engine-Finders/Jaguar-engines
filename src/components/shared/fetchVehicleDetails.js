@@ -42,7 +42,8 @@ function pick(...values) {
 export function normalizeVehicleDetails(result, fallbackVrm = "") {
   const root = result?.VehicleRegistration || result?.vehicle || result?.data || result || {};
   const technical = result?.TechnicalDetails || result?.technicalDetails || {};
-  const engine = technical?.Engine || technical?.engine || {};
+  const engine = technical?.Engine || technical?.engine || root?.Engine || result?.Engine || {};
+  const smmt = result?.SmmtDetails || result?.smmtDetails || {};
 
   const engineCapacity = pick(
     root.EngineCapacity,
@@ -50,14 +51,32 @@ export function normalizeVehicleDetails(result, fallbackVrm = "") {
     engine.CapacityCc,
     engine.Capacity,
     engine.capacity,
+    smmt.EngineCapacity,
+  );
+
+  // Prefer Model; fall back to SMMT Range / MakeModel so image matching still has a model string.
+  const series = pick(
+    root.Model,
+    root.model,
+    smmt.Range,
+    smmt.ModelVariant,
+    root.Series,
+    root.series,
+    root.Range,
+    root.range,
+    root.MakeModel,
+    root.makeModel,
   );
 
   return {
-    vrm: pick(root.RegistrationNumber, root.vrm, root.VRM, fallbackVrm).toString().replace(/\s+/g, "").toUpperCase(),
-    brand: pick(root.Make, root.make, root.Manufacturer, root.manufacturer),
-    series: pick(root.Model, root.model, root.Series, root.series, root.Range, root.range),
+    vrm: pick(root.RegistrationNumber, root.Vrm, root.vrm, root.VRM, fallbackVrm)
+      .toString()
+      .replace(/\s+/g, "")
+      .toUpperCase(),
+    brand: pick(root.Make, root.make, smmt.Marque, root.Manufacturer, root.manufacturer),
+    series,
     year: pick(root.YearOfManufacture, root.yearOfManufacture, root.Year, root.year),
-    fuelType: pick(root.FuelType, root.fuelType, root.Fuel, root.fuel),
+    fuelType: pick(root.FuelType, root.fuelType, smmt.FuelType, root.Fuel, root.fuel),
     engineCapacity: engineCapacity === "" ? "" : String(engineCapacity),
     colour: pick(root.Colour, root.Color, root.colour, root.color),
     wheelplan: pick(root.WheelPlan, root.Wheelplan, root.wheelPlan, root.wheelplan),

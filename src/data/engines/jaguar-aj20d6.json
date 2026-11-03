@@ -8,14 +8,14 @@
       "description": "The AJ20D6 is a smooth, torquey six-cylinder diesel - but early MHEV glitches and fuel-system sensitivity are worth knowing - backed by real UK enquiries [JAG-VERIFIED]. Compare quotes from vetted specialists today.",
       "type": "website",
       "url": "https://jaguarengines.uk/engine/aj20d6",
-      "image": "https://jaguarengines.uk/images/jaguar/engines/aj20d6.jpg",
+      "image": "https://jaguarengines.uk/hero/jaguar-bg-light.webp",
       "siteName": "jaguarengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "Jaguar AJ20D6 Engine - Specs, Reliability & Replacement Cost",
       "description": "The AJ20D6 is a smooth, torquey six-cylinder diesel - but early MHEV glitches and fuel-system sensitivity are worth knowing - backed by real UK enquiries [JAG-VERIFIED]. Compare quotes from vetted specialists today.",
-      "image": "https://jaguarengines.uk/images/jaguar/engines/aj20d6.jpg"
+      "image": "https://jaguarengines.uk/hero/jaguar-bg-light.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -116,7 +116,7 @@
           "@type": "Organization",
           "name": "jaguarengines.uk",
           "url": "https://jaguarengines.uk/",
-          "logo": "https://jaguarengines.uk/images/logo.png",
+          "logo": "https://jaguarengines.uk/jaguar-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

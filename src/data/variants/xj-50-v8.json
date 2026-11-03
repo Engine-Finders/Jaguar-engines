@@ -11,14 +11,14 @@
       "description": "Jaguar XJ 5.0 V8 – AJ133 5.0-litre V8. Real UK costs, timing chain and coolant pipe facts, and specialist quotes. Get free prices from 15+ vetted specialists today.",
       "type": "website",
       "url": "https://jaguarengines.uk/xj/50-v8/",
-      "image": "https://jaguarengines.uk/images/jaguar/hero/xj-50-v8.jpg",
+      "image": "https://jaguarengines.uk/hero/jaguar-bg-light.webp",
       "siteName": "JaguarEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "XJ 5.0 V8 Engine Replacement Cost UK - Compare Quotes",
       "description": "Jaguar XJ 5.0 V8 – AJ133 5.0-litre V8. Real UK costs, timing chain and coolant pipe facts, and specialist quotes.",
-      "image": "https://jaguarengines.uk/images/jaguar/hero/xj-50-v8.jpg"
+      "image": "https://jaguarengines.uk/hero/jaguar-bg-light.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -139,7 +139,7 @@
           "@type": "Organization",
           "name": "JaguarEngine.uk",
           "url": "https://jaguarengines.uk/",
-          "logo": "https://jaguarengines.uk/images/jaguarengine-logo.png",
+          "logo": "https://jaguarengines.uk/jaguar-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

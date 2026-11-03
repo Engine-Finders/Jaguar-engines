@@ -4,6 +4,8 @@ const { rewrites: publicHtmlRewrites, redirects: publicHtmlRedirects } = getPubl
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Avoid trailing-slash 301 → 404 chains for Googlebot
+  trailingSlash: false,
   images: {
     remotePatterns: [
       {
@@ -13,7 +15,15 @@ const nextConfig = {
     ],
   },
   async redirects() {
-    return publicHtmlRedirects;
+    return [
+      ...publicHtmlRedirects,
+      // Legacy / dead paths → live routes (Jaguar clone of BMW recovery redirects)
+      { source: "/models/:series/:chassis", destination: "/:series/:chassis", permanent: true },
+      { source: "/failures/:slug*", destination: "/", permanent: true },
+      { source: "/quotes", destination: "/quote", permanent: true },
+      { source: "/fault-diagnostic-calculator", destination: "/", permanent: true },
+      { source: "/images/:path*", destination: "/jaguar-logo.png", permanent: true },
+    ];
   },
   async rewrites() {
     return {

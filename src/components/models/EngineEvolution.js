@@ -64,7 +64,7 @@ function buildStats(eras = []) {
       icon: "generations",
     },
     {
-      title: `${engineCount || "—"} Key Engines`,
+      title: `${engineCount || ""} Key Engines`,
       text: "Across the timeline",
       icon: "engine",
     },
@@ -330,7 +330,7 @@ export default function EngineEvolution({ data }) {
               <p className={`mt-3 max-w-[660px] ${sectionDescription} text-[var(--color-text-muted)]`}>
                 {data.subHeadline
                   ? cleanText(data.subHeadline)
-                  : "Follow each era of this model's engines — what launched, what was revised, and what buyers need to know before committing."}
+                  : "Follow each era of this model's engines  what launched, what was revised, and what buyers need to know before committing."}
               </p>
             </div>
             <Stats eras={eras} isDark={isDark} />

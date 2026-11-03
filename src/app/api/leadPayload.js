@@ -2,9 +2,9 @@ import { SITE_SOURCE } from "./site";
 
 /**
  * Build lead payload from quote form state.
- * Reusable for other forms later — keep this shape stable.
+ * Reusable for other forms later  keep this shape stable.
  */
-export function buildQuoteLeadPayload({ contact, vehicle, calculator = null }) {
+export function buildQuoteLeadPayload({ contact, vehicle, calculator = null, pageUrl = "" }) {
   const capacityRaw = vehicle?.engineCapacity
     ? String(vehicle.engineCapacity).replace(/[^\d.]/g, "")
     : "";
@@ -29,10 +29,11 @@ export function buildQuoteLeadPayload({ contact, vehicle, calculator = null }) {
     engine_capacity: engineCapacity,
     vehicle_part: "Engine",
     source: SITE_SOURCE,
+    page_url: pageUrl || "",
     honeypot: contact.honeypot || "",
   };
 
-  // Attached for email only — stripped before CRM send.
+  // Attached for email only  stripped before CRM send.
   if (calculator && typeof calculator === "object") {
     payload.calculator = calculator;
   }

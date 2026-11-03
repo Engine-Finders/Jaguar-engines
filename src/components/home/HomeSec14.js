@@ -53,7 +53,7 @@ export default function HomeSec14({ data }) {
 
   return (
     <section className={`overflow-x-hidden ${isDark ? "bg-[var(--color-page)]" : "bg-[#f8f8f7]"}`}>
-      {/* Header — same pattern as Sec2 */}
+      {/* Header  same pattern as Sec2 */}
       <div className="relative overflow-hidden bg-[var(--color-page)]">
         <div className="absolute inset-y-0 right-0 w-[62%] md:w-[48%]">
           <Image

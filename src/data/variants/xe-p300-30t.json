@@ -10,14 +10,14 @@
       "description": "Every Jaguar XE P300 & 30t engine - 204PT / AJ200P 2.0 Ingenium. Real UK costs, timing chain and reliability data. Get free quotes from 15+ vetted Jaguar specialists today.",
       "type": "website",
       "url": "https://jaguarengines.uk/xe/p300-30t/",
-      "image": "https://jaguarengines.uk/images/jaguar/hero/xe-p300-30t.jpg",
+      "image": "https://jaguarengines.uk/hero/jaguar-bg-light.webp",
       "siteName": "JaguarEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "XE P300 Engine Replacement Cost UK - Compare Quotes",
       "description": "Every Jaguar XE P300 & 30t engine - 204PT / AJ200P 2.0 Ingenium. Real UK costs, timing chain and reliability data.",
-      "image": "https://jaguarengines.uk/images/jaguar/hero/xe-p300-30t.jpg"
+      "image": "https://jaguarengines.uk/hero/jaguar-bg-light.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -132,7 +132,7 @@
           "@type": "Organization",
           "name": "JaguarEngine.uk",
           "url": "https://jaguarengines.uk/",
-          "logo": "https://jaguarengines.uk/images/jaguarengine-logo.png",
+          "logo": "https://jaguarengines.uk/jaguar-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

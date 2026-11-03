@@ -11,7 +11,7 @@ function cleanText(value = "") {
   return String(value || "")
     .replaceAll("Â£", "£")
     .replaceAll("â€“", "–")
-    .replaceAll("â€”", "—")
+    .replaceAll("â€”", "")
     .replaceAll("✅", "")
     .trim();
 }
@@ -40,7 +40,7 @@ function TrustCard({ item, isDark }) {
           : "border-[#e8e8e6] bg-white shadow-[0_8px_22px_rgba(16,18,16,0.05)]"
       }`}
     >
-      {/* Number tab — top left like ref */}
+      {/* Number tab  top left like ref */}
       <span
         className={`absolute left-0 top-0 flex h-[22px] min-w-[26px] items-center justify-center rounded-br-md px-1.5 font-heading text-[0.72rem] font-bold ${
           isDark ? "bg-[var(--color-chrome)] text-[var(--color-page)]" : "bg-black text-white"
@@ -49,7 +49,7 @@ function TrustCard({ item, isDark }) {
         {item.id}
       </span>
 
-      {/* Icon left — heading + description right */}
+      {/* Icon left  heading + description right */}
       <div className="mt-1 flex items-start gap-3 md:gap-3.5">
         <div
           className={`flex h-16 w-16 shrink-0 items-center justify-center rounded-full md:h-[4.5rem] md:w-[4.5rem] ${
@@ -167,7 +167,7 @@ export default function HomeSec12({ data }) {
 
   return (
     <section className={`overflow-x-hidden ${sectionBg}`}>
-      {/* Header — same pattern as other home sections */}
+      {/* Header  same pattern as other home sections */}
       <div className={`relative overflow-hidden ${sectionBg}`}>
         <div className="absolute inset-y-0 right-0 w-[62%] md:w-[48%]">
           <Image

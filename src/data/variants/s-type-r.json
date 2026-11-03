@@ -10,14 +10,14 @@
       "description": "Every Jaguar S-Type R engine - the 4.2-litre AJ34 supercharged V8. Real UK costs, timing chain tensioner advice, and honest reliability data. Get free quotes from 15 vetted Jaguar specialists today.",
       "type": "website",
       "url": "https://jaguarengines.uk/s-type/r/",
-      "image": "https://jaguarengines.uk/images/jaguar/hero/s-type-r.jpg",
+      "image": "https://jaguarengines.uk/hero/jaguar-bg-light.webp",
       "siteName": "JaguarEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "Jaguar S-Type R Engine Replacement Cost UK - Compare Quotes",
       "description": "Every Jaguar S-Type R engine - the 4.2-litre AJ34 supercharged V8. Real UK costs, timing chain tensioner advice, and honest reliability data.",
-      "image": "https://jaguarengines.uk/images/jaguar/hero/s-type-r.jpg"
+      "image": "https://jaguarengines.uk/hero/jaguar-bg-light.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -132,7 +132,7 @@
           "@type": "Organization",
           "name": "JaguarEngine.uk",
           "url": "https://jaguarengines.uk/",
-          "logo": "https://jaguarengines.uk/images/jaguarengine-logo.png",
+          "logo": "https://jaguarengines.uk/jaguar-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"

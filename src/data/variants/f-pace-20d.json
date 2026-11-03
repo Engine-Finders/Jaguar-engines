@@ -10,14 +10,14 @@
       "description": "Jaguar F-Pace 2.0 diesel (AJ200D) engine costs, reliability, and common faults. Timing chain, DPF and turbo insights. Get free quotes from 15+ vetted Jaguar specialists today.",
       "type": "website",
       "url": "https://jaguarengines.uk/f-pace/20d/",
-      "image": "https://jaguarengines.uk/images/jaguar/hero/f-pace-20d.jpg",
+      "image": "https://jaguarengines.uk/hero/jaguar-bg-light.webp",
       "siteName": "JaguarEngine.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "F-Pace 2.0 Diesel Engine Cost UK - Compare Quotes",
       "description": "Jaguar F-Pace 2.0 diesel (AJ200D) engine costs, reliability, and common faults. Timing chain, DPF and turbo insights.",
-      "image": "https://jaguarengines.uk/images/jaguar/hero/f-pace-20d.jpg"
+      "image": "https://jaguarengines.uk/hero/jaguar-bg-light.webp"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -138,7 +138,7 @@
           "@type": "Organization",
           "name": "JaguarEngine.uk",
           "url": "https://jaguarengines.uk/",
-          "logo": "https://jaguarengines.uk/images/jaguarengines-logo.png",
+          "logo": "https://jaguarengines.uk/jaguar-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
