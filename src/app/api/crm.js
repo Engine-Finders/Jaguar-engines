@@ -2,9 +2,9 @@ import { SITE_SOURCE } from "./site";
 
 export { SITE_SOURCE };
 
-const DEFAULT_SUPABASE_URL = "https://gfrnxvolaqbfalerfhsr.supabase.co";
+const DEFAULT_SUPABASE_URL = "https://invfhqaqjyvcttppnygs.supabase.co";
 const DEFAULT_ANON_KEY =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imdmcm54dm9sYXFiZmFsZXJmaHNyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzgxNjEwNTQsImV4cCI6MjA5MzczNzA1NH0.s9mXoWlIAykCuGlbu9NDZGDRYadRXgpRc0U9PUVCth8";
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImludmZocWFxanl2Y3R0cHBueWdzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTI4NTQ1NzAsImV4cCI6MjEwODQzMDU3MH0.GhZh0SG555phXYSdaP7bXPoxWN_QBhMusNJyQyDA-Rs";
 
 function getCrmConfig() {
   const supabaseUrl = (process.env.SUPABASE_URL || DEFAULT_SUPABASE_URL).trim();
