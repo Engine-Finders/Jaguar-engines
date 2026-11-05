@@ -1,9 +1,10 @@
 import Link from "next/link";
-import { getBlogPosts } from "@/lib/cms";
+import { getBlogPosts, resolvePostImage } from "@/lib/cms";
+import { blogConfig } from "@/lib/blog.config";
 
 export async function RelatedGuidesWidget({
   currentSlug,
-  title = "Related Guides",
+  title = blogConfig.copy?.relatedGuidesTitle || "Related Guides",
   limit = 5,
 }) {
   const { items } = await getBlogPosts(1, 10);
@@ -16,6 +17,8 @@ export async function RelatedGuidesWidget({
     return null;
   }
 
+  const { theme } = blogConfig;
+
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-4 sm:p-5 shadow-sm space-y-3.5">
       {/* Header */}
@@ -25,7 +28,8 @@ export async function RelatedGuidesWidget({
         </h3>
         <Link
           href="/blog"
-          className="text-xs font-bold text-[#075fd8] hover:text-[#034daf] hover:underline flex items-center gap-0.5"
+          className="text-xs font-bold hover:underline flex items-center gap-0.5"
+          style={{ color: theme.accentColor }}
         >
           <span>View all</span>
           <span className="text-sm leading-none">»</span>
@@ -41,16 +45,13 @@ export async function RelatedGuidesWidget({
             year: "numeric",
           });
 
-          const imageUrl =
-            post.seoMetadata?.featuredImage?.url ||
-            post.seoMetadata?.ogImage ||
-            "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=300&q=80";
+          const imageUrl = resolvePostImage(post);
 
           return (
             <Link
               key={post.id}
               href={`/blog/${post.slug}`}
-              className="group flex items-start gap-3 rounded-xl border border-slate-100 bg-slate-50/50 p-2.5 transition duration-200 hover:border-[#075fd8]/40 hover:bg-blue-50/30"
+              className="group flex items-start gap-3 rounded-xl border border-slate-100 bg-slate-50/50 p-2.5 transition duration-200 hover:border-slate-300 hover:bg-slate-50"
             >
               <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-lg bg-slate-200">
                 <img
@@ -63,7 +64,7 @@ export async function RelatedGuidesWidget({
 
               <div className="flex-1 min-w-0 flex flex-col justify-between self-stretch py-0.5">
                 <div>
-                  <h4 className="text-xs font-bold leading-snug text-slate-900 line-clamp-2 group-hover:text-[#075fd8] transition">
+                  <h4 className="text-xs font-bold leading-snug text-slate-900 line-clamp-2 transition group-hover:text-[var(--blog-primary)]">
                     {post.title}
                   </h4>
                   <p className="text-[10px] text-slate-400 mt-1">
@@ -71,8 +72,8 @@ export async function RelatedGuidesWidget({
                   </p>
                 </div>
                 <div className="mt-1">
-                  <span className="text-[11px] font-bold text-[#075fd8] group-hover:underline flex items-center gap-0.5">
-                    <span>Read Guide</span>
+                  <span className="text-[11px] font-bold group-hover:underline flex items-center gap-0.5" style={{ color: theme.accentColor }}>
+                    <span>{blogConfig.copy?.readMoreText || "Read Guide"}</span>
                     <span className="text-xs leading-none">»</span>
                   </span>
                 </div>

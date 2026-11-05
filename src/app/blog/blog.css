@@ -3,14 +3,14 @@
    ========================================================= */
 :root {
   --blog-font: Arial, Helvetica, sans-serif;
-  --blog-primary: #075fd8;
-  --blog-primary-hover: #034daf;
-  --blog-accent: #1581ff;
-  --blog-accent-hover: #075fd8;
-  --blog-widget-bg: #071827;
-  --blog-widget-border: #0d2842;
-  --blog-widget-btn: #075fd8;
-  --blog-widget-btn-hover: #034daf;
+  --blog-primary: #111210;
+  --blog-primary-hover: #2a2b28;
+  --blog-accent: #90908d;
+  --blog-accent-hover: #777774;
+  --blog-widget-bg: #111210;
+  --blog-widget-border: #222320;
+  --blog-widget-btn: #90908d;
+  --blog-widget-btn-hover: #777774;
   --blog-uk-badge: #003399;
 }
 

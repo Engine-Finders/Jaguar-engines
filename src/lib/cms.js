@@ -48,7 +48,7 @@ export function resolvePostImage(post, fallback) {
 }
 
 /**
- * Fetches paginated published blog posts for BMW Engines UK
+ * Fetches paginated published blog posts from CMS
  */
 export async function getBlogPosts(page = 1, limit = 9) {
   try {
