@@ -55,9 +55,9 @@ Font family for H1: "Lora"
 H2: 40px
 H3: 30px
 H4: 24px
-Body text: 14–17px
-Small text / labels: 12–13px
-Buttons: 14–16px
+Body text: 14-17px
+Small text / labels: 12-13px
+Buttons: 14-16px
 
 These sizes are for DESKTOP.
 
@@ -65,8 +65,8 @@ These sizes are for DESKTOP.
 4) TYPOGRAPHY SCALE (MOBILE)
 ----------------------------
 - Same hierarchy as desktop.
-- Reduce sizes by ~3–5px (use judgment for responsiveness / line breaks).
-- Keep H1 readable in ~2–3 intentional lines where long titles wrap.
+- Reduce sizes by ~3-5px (use judgment for responsiveness / line breaks).
+- Keep H1 readable in ~2-3 intentional lines where long titles wrap.
 - Do not shrink so much that hierarchy collapses.
 
 

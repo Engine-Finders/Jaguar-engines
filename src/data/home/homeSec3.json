@@ -967,8 +967,8 @@
     "likelihood": "High Likelihood",
     "commonOn": "Ingenium Diesel engines (pre-2019)",
     "symptomsMatch": "Cold-start rattle, rough idle, engine warning light",
-    "repairCost": "£1,500–£2,500",
-    "replaceCost": "£3,500–£5,800",
+    "repairCost": "£1,500-£2,500",
+    "replaceCost": "£3,500-£5,800",
     "footer": "Based on verified UK enquiries"
   },
   "costTable": {
@@ -984,38 +984,38 @@
     "rows": [
       {
         "failure": "Ingenium Timing Chain (AJ200D/204DTD)",
-        "recon": "£3,500–£5,800",
-        "rebuilt": "£4,800–£7,000",
-        "used": "£2,000–£3,500",
-        "dealer": "£7,000–£10,500"
+        "recon": "£3,500-£5,800",
+        "rebuilt": "£4,800-£7,000",
+        "used": "£2,000-£3,500",
+        "dealer": "£7,000-£10,500"
       },
       {
         "failure": "AJ133 5.0 V8 Chain Tensioner (pre-2013)",
-        "recon": "£5,500–£9,000",
-        "rebuilt": "£8,000–£12,000",
-        "used": "£3,000–£5,500",
-        "dealer": "£11,000–£16,500"
+        "recon": "£5,500-£9,000",
+        "rebuilt": "£8,000-£12,000",
+        "used": "£3,000-£5,500",
+        "dealer": "£11,000-£16,500"
       },
       {
         "failure": "276DT Oil Pump Failure",
-        "recon": "£5,000–£7,500",
-        "rebuilt": "£6,500–£9,500",
-        "used": "£2,800–£4,500",
-        "dealer": "£9,500–£14,000"
+        "recon": "£5,000-£7,500",
+        "rebuilt": "£6,500-£9,500",
+        "used": "£2,800-£4,500",
+        "dealer": "£9,500-£14,000"
       },
       {
         "failure": "AJ126 Cooling System / Chain Tensioner",
-        "recon": "£4,500–£7,500",
-        "rebuilt": "£6,000–£9,500",
-        "used": "£2,500–£4,500",
-        "dealer": "£8,500–£13,000"
+        "recon": "£4,500-£7,500",
+        "rebuilt": "£6,000-£9,500",
+        "used": "£2,500-£4,500",
+        "dealer": "£8,500-£13,000"
       },
       {
         "failure": "Ingenium Petrol Water Pump (AJ200P/204PT)",
-        "recon": "£3,000–£5,000",
-        "rebuilt": "£4,200–£6,500",
-        "used": "£1,500–£2,800",
-        "dealer": "£6,000–£9,000"
+        "recon": "£3,000-£5,000",
+        "rebuilt": "£4,200-£6,500",
+        "used": "£1,500-£2,800",
+        "dealer": "£6,000-£9,000"
       }
     ]
   },

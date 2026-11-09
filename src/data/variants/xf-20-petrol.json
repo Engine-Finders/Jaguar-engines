@@ -101,7 +101,7 @@
               "name": "How much does a Jaguar XF 2.0 petrol engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned XF 2.0 petrol engine (AJ200) typically costs £2,500–£5,500 supply only depending on variant (20t, 25t, P250 or P300). Labour costs are typically £1,200–£1,800. A full engine replacement with labour can cost £6,000–£10,000. Use our calculator for a figure specific to your vehicle."
+                "text": "A reconditioned XF 2.0 petrol engine (AJ200) typically costs £2,500-£5,500 supply only depending on variant (20t, 25t, P250 or P300). Labour costs are typically £1,200-£1,800. A full engine replacement with labour can cost £6,000-£10,000. Use our calculator for a figure specific to your vehicle."
               }
             },
             {
@@ -125,7 +125,7 @@
               "name": "Is it worth replacing an XF 2.0 petrol engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on vehicle value and condition. Against a tidy £5,000–£15,000 XF, a £2,500–£5,500 recon is 15‑50% of the car's value – often worth it on well‑maintained examples. If the timing chain has snapped or the engine has suffered catastrophic failure, a full engine replacement may be necessary. Get a full diagnostic assessment before committing."
+                "text": "Depends on vehicle value and condition. Against a tidy £5,000-£15,000 XF, a £2,500-£5,500 recon is 15‑50% of the car's value - often worth it on well‑maintained examples. If the timing chain has snapped or the engine has suffered catastrophic failure, a full engine replacement may be necessary. Get a full diagnostic assessment before committing."
               }
             },
             {
@@ -141,7 +141,7 @@
               "name": "Can I repair an XF 2.0 petrol engine issue, or does it need replacement?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Most issues – VCT solenoid failure, ECU limp mode (with correct reprogramming), timing chain wear (if caught early), and fuel line issues – are repairable. However, if the timing chain has snapped, the engine is an interference design – pistons will strike valves. In this case, a full engine replacement is usually more cost‑effective than a rebuild."
+                "text": "Most issues - VCT solenoid failure, ECU limp mode (with correct reprogramming), timing chain wear (if caught early), and fuel line issues - are repairable. However, if the timing chain has snapped, the engine is an interference design - pistons will strike valves. In this case, a full engine replacement is usually more cost‑effective than a rebuild."
               }
             }
           ]
@@ -202,7 +202,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar XF 2.0 Petrol • 2015–2024 • 2.0L Turbo Ingenium",
+    "tagPill": "Jaguar XF 2.0 Petrol • 2015-2024 • 2.0L Turbo Ingenium",
     "h1": "Jaguar XF 2.0 Petrol Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Jaguar specialists. Compare reconditioned, rebuilt and used AJ200 2.0‑litre turbo petrol engines for the XF 20t, 25t, P250 and P300 - the efficient, refined Ingenium petrol that powers Jaguar's executive saloon. Supply & fit available nationwide.",
     "trustBadges": [
@@ -235,34 +235,34 @@
     "rows": [
       {
         "generation": "X260 (20t)",
-        "years": "2015–2020",
+        "years": "2015-2020",
         "engineCode": "AJ200 (2.0L Turbo Petrol I4)",
         "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£2,500–£4,000 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£2,500-£4,000 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "200 PS - entry‑level Ingenium petrol, responsive and efficient"
       },
       {
         "generation": "X260 (25t)",
-        "years": "2015–2020",
+        "years": "2015-2020",
         "engineCode": "AJ200 (2.0L Turbo Petrol I4)",
         "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£2,800–£4,500 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£2,800-£4,500 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "250 PS - sweet‑spot tune, brisk performance and good economy"
       },
       {
         "generation": "X260 (P250)",
-        "years": "2020–2024",
+        "years": "2020-2024",
         "engineCode": "AJ200 (2.0L Turbo Petrol I4)",
         "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£2,800–£4,800 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£2,800-£4,800 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "250 PS - facelift version, RWD, 6.9s 0‑62 mph"
       },
       {
         "generation": "X260 (P300)",
-        "years": "2020–2024",
+        "years": "2020-2024",
         "engineCode": "AJ200 (2.0L Turbo Petrol I4)",
         "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£3,200–£5,500 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£3,200-£5,500 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "300 PS - top tune, AWD, 400 Nm, 5.8‑6.1s 0‑60 mph"
       }
     ],
@@ -281,34 +281,34 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£1,800–£3,000",
-        "fittedIndie": "£2,800–£4,500",
-        "warranty": "1–6 months",
+        "supplyOnly": "£1,800-£3,000",
+        "fittedIndie": "£2,800-£4,500",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; short‑term ownership"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£2,800–£4,500",
-        "fittedIndie": "£4,000–£6,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£2,800-£4,500",
+        "fittedIndie": "£4,000-£6,000",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£3,800–£5,500",
-        "fittedIndie": "£5,000–£7,200",
-        "warranty": "12–24 months",
+        "supplyOnly": "£3,800-£5,500",
+        "fittedIndie": "£5,000-£7,200",
+        "warranty": "12-24 months",
         "bestFor": "Long‑term ownership; maximum reliability"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£6,000–£8,500",
-        "fittedIndie": "£7,500–£10,000",
-        "warranty": "24–36 months",
+        "supplyOnly": "£6,000-£8,500",
+        "fittedIndie": "£7,500-£10,000",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs; warranty claims; full provenance"
       }
     ],
-    "figuresNote": "Figures above reflect the XF 2.0 petrol pricing across variants. A used AJ200 engine typically costs £2,400–£2,700 depending on condition. Labour costs for replacement are typically £1,200–£1,800 due to the engine bay's complexity. A full engine replacement with labour can cost £6,000–£10,000 depending on the variant and supplier.",
+    "figuresNote": "Figures above reflect the XF 2.0 petrol pricing across variants. A used AJ200 engine typically costs £2,400-£2,700 depending on condition. Labour costs for replacement are typically £1,200-£1,800 due to the engine bay's complexity. A full engine replacement with labour can cost £6,000-£10,000 depending on the variant and supplier.",
     "labourEstimate": "Fitting an XF 2.0 petrol engine typically takes 14‑18 hours at £75‑£110/hr (independent Jaguar specialist). The Ingenium engine platform was engineered with minimal service clearance, meaning removal often requires lifting the entire front subframe.",
     "cta": {
       "label": "→ Compare XF 2.0 Petrol engine prices from UK specialists",
@@ -322,7 +322,7 @@
         "title": "VCT Solenoid Failure (25t / P250)",
         "symptoms": "Rough idle, vibration at specific RPMs (around 1,500 rpm and 2,250 rpm), engine warning light, loss of power, poor fuel economy.",
         "typicalMileage": "60,000‑90,000 miles.",
-        "repairCost": "£200–£600 [PLACEHOLDER] (VCT solenoid replacement - accessible from outside the engine).",
+        "repairCost": "£200-£600 [PLACEHOLDER] (VCT solenoid replacement - accessible from outside the engine).",
         "replacementCost": "N/A - repair only.",
         "urgency": {
           "icon": "🟡",
@@ -340,7 +340,7 @@
         "title": "ECU Limp Mode After Software Update",
         "symptoms": "Sudden loss of power, engine management light, refusal to exceed 3,000 rpm shortly after a service visit or software update.",
         "typicalMileage": "Any mileage - occurs after dealership software updates.",
-        "repairCost": "£0–£500 [PLACEHOLDER] (ECU calibration correction - may be covered under TSB).",
+        "repairCost": "£0-£500 [PLACEHOLDER] (ECU calibration correction - may be covered under TSB).",
         "replacementCost": "N/A - repair only.",
         "urgency": {
           "icon": "🟠",
@@ -358,8 +358,8 @@
         "title": "Timing Chain Tensioner Wear (All 2.0 Petrol)",
         "symptoms": "Rattling noise from the engine on cold start, especially around 50,000 miles, engine warning light, loss of power, potential catastrophic failure if ignored.",
         "typicalMileage": "50,000‑80,000 miles.",
-        "repairCost": "£1,500–£3,000 [PLACEHOLDER] (timing chain tensioner and guide replacement).",
-        "replacementCost": "£2,800–£5,500 [PLACEHOLDER] (if chain snaps and damages the engine).",
+        "repairCost": "£1,500-£3,000 [PLACEHOLDER] (timing chain tensioner and guide replacement).",
+        "replacementCost": "£2,800-£5,500 [PLACEHOLDER] (if chain snaps and damages the engine).",
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
@@ -376,7 +376,7 @@
         "title": "Low‑Pressure Fuel Line Detachment (Early Cars)",
         "symptoms": "Engine cuts out and fails to restart.",
         "typicalMileage": "Any mileage - affects cars built between 1 April 2015 and 25 February 2016.",
-        "repairCost": "£0 (recall - dealer repair free) / £100–£300 [PLACEHOLDER] (if out of warranty).",
+        "repairCost": "£0 (recall - dealer repair free) / £100-£300 [PLACEHOLDER] (if out of warranty).",
         "replacementCost": "N/A - repair only.",
         "urgency": {
           "icon": "🔴",
@@ -413,37 +413,37 @@
         {
           "problem": "VCT solenoid failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£200–£600 [PLACEHOLDER]",
+          "typicalCost": "£200-£600 [PLACEHOLDER]",
           "whenItMakesSense": "Worth fixing - straightforward, accessible repair"
         },
         {
           "problem": "ECU limp mode (post‑update)",
           "repairable": "✅ Yes",
-          "typicalCost": "£0–£500 [PLACEHOLDER]",
+          "typicalCost": "£0-£500 [PLACEHOLDER]",
           "whenItMakesSense": "May be covered under TSB"
         },
         {
           "problem": "Timing chain tensioner wear",
           "repairable": "✅ Yes (if caught early)",
-          "typicalCost": "£1,500–£3,000 [PLACEHOLDER]",
+          "typicalCost": "£1,500-£3,000 [PLACEHOLDER]",
           "whenItMakesSense": "Catch it early - cheaper than engine replacement"
         },
         {
           "problem": "Timing chain snapped",
           "repairable": "❌ Usually No",
-          "typicalCost": "£2,800–£5,500+",
+          "typicalCost": "£2,800-£5,500+",
           "whenItMakesSense": "Full engine replacement - valve damage is almost certain"
         },
         {
           "problem": "Fuel line detachment (early cars)",
           "repairable": "✅ Yes (recall)",
-          "typicalCost": "£0–£300 [PLACEHOLDER]",
+          "typicalCost": "£0-£300 [PLACEHOLDER]",
           "whenItMakesSense": "Recall repair is free; out‑of‑warranty repair still cheaper than engine replacement"
         },
         {
           "problem": "Major internal failure",
           "repairable": "❌ Usually No",
-          "typicalCost": "£2,800–£5,500+",
+          "typicalCost": "£2,800-£5,500+",
           "whenItMakesSense": "Full engine replacement often more cost‑effective"
         }
       ]
@@ -493,31 +493,31 @@
     "rows": [
       {
         "engineCode": "AJ200 (20t)",
-        "years": "2015–2020",
+        "years": "2015-2020",
         "power": "200 PS (147 kW) / 320 Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£2,500–£4,000 [PLACEHOLDER]"
+        "avgReconCost": "£2,500-£4,000 [PLACEHOLDER]"
       },
       {
         "engineCode": "AJ200 (25t)",
-        "years": "2015–2020",
+        "years": "2015-2020",
         "power": "250 PS (184 kW) / 365 Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£2,800–£4,500 [PLACEHOLDER]"
+        "avgReconCost": "£2,800-£4,500 [PLACEHOLDER]"
       },
       {
         "engineCode": "AJ200 (P250)",
-        "years": "2020–2024",
+        "years": "2020-2024",
         "power": "250 PS (184 kW) / 365 Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£2,800–£4,800 [PLACEHOLDER]"
+        "avgReconCost": "£2,800-£4,800 [PLACEHOLDER]"
       },
       {
         "engineCode": "AJ200 (P300)",
-        "years": "2020–2024",
+        "years": "2020-2024",
         "power": "300 PS (221 kW) / 400 Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£3,200–£5,500 [PLACEHOLDER]"
+        "avgReconCost": "£3,200-£5,500 [PLACEHOLDER]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -600,7 +600,7 @@
       {
         "id": 1,
         "question": "How much does a Jaguar XF 2.0 petrol engine replacement cost in the UK?",
-        "answer": "A reconditioned XF 2.0 petrol engine (AJ200) typically costs £2,500–£5,500 supply only depending on variant (20t, 25t, P250 or P300). Labour costs are typically £1,200–£1,800. A full engine replacement with labour can cost £6,000–£10,000. Use our calculator for a figure specific to your vehicle."
+        "answer": "A reconditioned XF 2.0 petrol engine (AJ200) typically costs £2,500-£5,500 supply only depending on variant (20t, 25t, P250 or P300). Labour costs are typically £1,200-£1,800. A full engine replacement with labour can cost £6,000-£10,000. Use our calculator for a figure specific to your vehicle."
       },
       {
         "id": 2,
@@ -615,7 +615,7 @@
       {
         "id": 4,
         "question": "Is it worth replacing an XF 2.0 petrol engine, or should I scrap the car?",
-        "answer": "Depends on vehicle value and condition. Against a tidy £5,000–£15,000 XF, a £2,500–£5,500 recon is 15‑50% of the car's value - often worth it on well‑maintained examples. If the timing chain has snapped or the engine has suffered catastrophic failure, a full engine replacement may be necessary. Get a full diagnostic assessment before committing."
+        "answer": "Depends on vehicle value and condition. Against a tidy £5,000-£15,000 XF, a £2,500-£5,500 recon is 15‑50% of the car's value - often worth it on well‑maintained examples. If the timing chain has snapped or the engine has suffered catastrophic failure, a full engine replacement may be necessary. Get a full diagnostic assessment before committing."
       },
       {
         "id": 5,

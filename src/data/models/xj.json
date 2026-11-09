@@ -46,31 +46,31 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "XJ X300 (1994–1997)",
+              "name": "XJ X300 (1994-1997)",
               "url": "https://jaguarengines.uk/xj/x300/"
             },
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "XJ X308 (1997–2003)",
+              "name": "XJ X308 (1997-2003)",
               "url": "https://jaguarengines.uk/xj/x308/"
             },
             {
               "@type": "ListItem",
               "position": 3,
-              "name": "XJ X350 (2003–2009)",
+              "name": "XJ X350 (2003-2009)",
               "url": "https://jaguarengines.uk/xj/x350-x358"
             },
             {
               "@type": "ListItem",
               "position": 4,
-              "name": "XJ X358 (2007–2009)",
+              "name": "XJ X358 (2007-2009)",
               "url": "https://jaguarengines.uk/xj/x350-x358"
             },
             {
               "@type": "ListItem",
               "position": 5,
-              "name": "XJ X351 (2010–2019)",
+              "name": "XJ X351 (2010-2019)",
               "url": "https://jaguarengines.uk/xj/x351/"
             }
           ]
@@ -132,7 +132,7 @@
               "name": "How much does an XJ engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "For a 5.0 V8 (AJ133), expect £5,500–£9,000 supply-only for a reconditioned unit [JAG-QUOTE]. The 3.0 V6 (AJ126) is £4,500–£7,500, and the diesel Ingenium (AJ200D) is £3,500–£5,800. Add 10–18 hours of labour at £65–£95/hr (independent) for a full fitted cost. Use our diagnostic calculator for a personalised estimate."
+                "text": "For a 5.0 V8 (AJ133), expect £5,500-£9,000 supply-only for a reconditioned unit [JAG-QUOTE]. The 3.0 V6 (AJ126) is £4,500-£7,500, and the diesel Ingenium (AJ200D) is £3,500-£5,800. Add 10-18 hours of labour at £65-£95/hr (independent) for a full fitted cost. Use our diagnostic calculator for a personalised estimate."
               }
             },
             {
@@ -156,7 +156,7 @@
               "name": "How do I know if my XJ timing chain needs replacing?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Listen for a cold-start rattle that lasts 1–2 seconds - this is the chain tensioner bleeding down. If the rattle persists, stop driving and get it inspected. The AJ133 pre-2013 is the highest-risk variant; post-2013 cars have a revised tensioner design that rarely fails."
+                "text": "Listen for a cold-start rattle that lasts 1-2 seconds - this is the chain tensioner bleeding down. If the rattle persists, stop driving and get it inspected. The AJ133 pre-2013 is the highest-risk variant; post-2013 cars have a revised tensioner design that rarely fails."
               }
             },
             {
@@ -248,7 +248,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar • XJ • 1968–2019 • 9 Generations • AJ133 V8 • AJ126 V6 • AJ200D Diesel",
+    "tagPill": "Jaguar • XJ • 1968-2019 • 9 Generations • AJ133 V8 • AJ126 V6 • AJ200D Diesel",
     "h1": "XJ Engines - The Complete UK Guide",
     "subHeadline": "Every XJ generation covered - from the Series 1 to the X351. Real-world reliability data on the <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> 5.0 V8, the AJ126 3.0 V6 supercharged, and the 2.7/3.0 TDV6 diesels. Honest economics on when to repair, when to replace, and when to walk away. Backed by 1,700+ real UK Jaguar enquiries in 2025 [JAG-VERIFIED].",
     "trustStrip": [
@@ -299,11 +299,11 @@
       },
       {
         "metric": "Best Used Buy",
-        "ourCall": "X351 (2013–2019) with the 3.0 V6 diesel or post-2013 5.0 V8."
+        "ourCall": "X351 (2013-2019) with the 3.0 V6 diesel or post-2013 5.0 V8."
       },
       {
         "metric": "Average Engine Replacement",
-        "ourCall": "£4,500 – £9,000 [JAG-QUOTE]"
+        "ourCall": "£4,500 - £9,000 [JAG-QUOTE]"
       },
       {
         "metric": "Most Common Failure Enquiry",
@@ -325,7 +325,7 @@
       },
       {
         "metric": "Years Produced",
-        "value": "1968 – 2019"
+        "value": "1968 - 2019"
       },
       {
         "metric": "Engine Codes Tracked",
@@ -349,11 +349,11 @@
       },
       {
         "metric": "Typical Replacement Cost",
-        "value": "£4,500 – £9,000 [JAG-QUOTE]"
+        "value": "£4,500 - £9,000 [JAG-QUOTE]"
       },
       {
         "metric": "Typical Host Value",
-        "value": "£8,000 – £25,000 [THIRD-PARTY]"
+        "value": "£8,000 - £25,000 [THIRD-PARTY]"
       },
       {
         "metric": "Overall Rating",
@@ -366,9 +366,9 @@
     "subHeadline": "Nine generations of Jaguar's flagship - but the data-led choice for most buyers is the X351. Here's why.",
     "cards": [
       {
-        "title": "Series 1 (1968–1973)",
+        "title": "Series 1 (1968-1973)",
         "badge": "",
-        "meta": "1968–1973 • XK I6 (2.8L, 3.4L, 4.2L) • V12 5.3L",
+        "meta": "1968-1973 • XK I6 (2.8L, 3.4L, 4.2L) • V12 5.3L",
         "rating": "★★★☆☆",
         "verdict": "The original XJ-Sir William Lyons' definitive Jaguar saloon. The 4.2-litre <a href='https://jaguarengines.uk/engine/xk-straight-six'>XK straight-six</a> is the pick: 173 bhp, proven durability, and the best balance of performance and reliability. The 2.8-litre is underpowered; the V12 is glorious but complex. Values range from £5k project cars to £20k+ restored examples-replace the 4.2 only if the body is sound.",
         "cta": {
@@ -377,20 +377,20 @@
         }
       },
       {
-        "title": "Series 2 (1973–1979)",
+        "title": "Series 2 (1973-1979)",
         "badge": "",
-        "meta": "1973–1979 • XK I6 (2.8L, 3.4L, 4.2L) • V12 5.3L",
+        "meta": "1973-1979 • XK I6 (2.8L, 3.4L, 4.2L) • V12 5.3L",
         "rating": "★★★☆☆",
-        "verdict": "The revised XJ-higher bumpers, revised grille, and improved safety. The 4.2-litre XK six remains the sweet spot with 170–183 bhp and strong torque. The V12 offers effortless performance but carries significant cooling system complexity. Usable examples fetch £8k–£12k; top-tier V12s exceed £25k. Always value the body and chassis before the engine-the 4.2 recon at £5k–£9k is viable on a well-kept car.",
+        "verdict": "The revised XJ-higher bumpers, revised grille, and improved safety. The 4.2-litre XK six remains the sweet spot with 170-183 bhp and strong torque. The V12 offers effortless performance but carries significant cooling system complexity. Usable examples fetch £8k-£12k; top-tier V12s exceed £25k. Always value the body and chassis before the engine-the 4.2 recon at £5k-£9k is viable on a well-kept car.",
         "cta": {
           "label": "Explore Series 2 →",
           "href": "https://jaguarengines.uk/xj/xj-series-2"
         }
       },
       {
-        "title": "Series 3 (1979–1992)",
+        "title": "Series 3 (1979-1992)",
         "badge": "",
-        "meta": "1979–1992 • XK I6 (3.4L, 4.2L) • V12 5.3L HE • V12 6.0L",
+        "meta": "1979-1992 • XK I6 (3.4L, 4.2L) • V12 5.3L HE • V12 6.0L",
         "rating": "★★★☆☆",
         "verdict": "The final first-generation XJ-redesigned by Pininfarina with flush door handles and a more modern look. The XK 4.2-litre six is the most accessible choice at 200 bhp; the <a href='https://jaguarengines.uk/engine/v12-he'>V12 HE</a> (1981 onwards) is significantly improved over pre-HE cars. The 6.0 V12 is rare and specialist-only. For most buyers, the 4.2 six offers classic Jaguar character without the V12's running costs.",
         "cta": {
@@ -399,20 +399,20 @@
         }
       },
       {
-        "title": "XJ40 (1986–1994)",
+        "title": "XJ40 (1986-1994)",
         "badge": "",
-        "meta": "1986–1994 • AJ6 I6 (2.9L, 3.2L, 3.6L, 4.0L) • V12 6.0L",
+        "meta": "1986-1994 • AJ6 I6 (2.9L, 3.2L, 3.6L, 4.0L) • V12 6.0L",
         "rating": "★★★☆☆",
-        "verdict": "The second-generation XJ-a more modern, aerodynamic design with Jaguar's new <a href='https://jaguarengines.uk/engine/aj6-aj16'>AJ6</a> engine. The 4.0-litre AJ6 is the most refined and reliable six; the 3.6 offers classic character without the 4.0's premium. The 6.0 V12 (XJ81) is rare and magnificent but costly. Values range from £3k–£15k-the 4.0 AJ6 recon at £3k–£5.5k is viable on a well-kept £10k+ car.",
+        "verdict": "The second-generation XJ-a more modern, aerodynamic design with Jaguar's new <a href='https://jaguarengines.uk/engine/aj6-aj16'>AJ6</a> engine. The 4.0-litre AJ6 is the most refined and reliable six; the 3.6 offers classic character without the 4.0's premium. The 6.0 V12 (XJ81) is rare and magnificent but costly. Values range from £3k-£15k-the 4.0 AJ6 recon at £3k-£5.5k is viable on a well-kept £10k+ car.",
         "cta": {
           "label": "Explore XJ40 →",
           "href": "https://jaguarengines.uk/xj/xj40"
         }
       },
       {
-        "title": "XJ X300 (1994–1997)",
+        "title": "XJ X300 (1994-1997)",
         "badge": "",
-        "meta": "1994–1997 • AJ16 4.0 I6, 3.2 I6",
+        "meta": "1994-1997 • AJ16 4.0 I6, 3.2 I6",
         "rating": "★★★☆☆",
         "verdict": "The last of the traditional XJs. A genuine classic, but replacement parts and specialist knowledge are becoming scarce. For collectors only.",
         "cta": {
@@ -421,9 +421,9 @@
         }
       },
       {
-        "title": "XJ X308 (1997–2003)",
+        "title": "XJ X308 (1997-2003)",
         "badge": "",
-        "meta": "1997–2003 • AJ-V8 4.0 / 3.2",
+        "meta": "1997-2003 • AJ-V8 4.0 / 3.2",
         "rating": "★★★☆☆",
         "verdict": "Ford-era V8 power. The 4.0 V8 is characterful, but the 3.2 is the one to seek out for better long-term value. Both suffer from Nikasil bore wear on early cars - check history.",
         "cta": {
@@ -432,9 +432,9 @@
         }
       },
       {
-        "title": "XJ X350 (2003–2009)",
+        "title": "XJ X350 (2003-2009)",
         "badge": "",
-        "meta": "2003–2009 • AJ-V8 4.2 / 3.5",
+        "meta": "2003-2009 • AJ-V8 4.2 / 3.5",
         "rating": "★★★★☆",
         "verdict": "The first aluminium-bodied XJ. The 4.2 V8 is a strong, reliable unit - a genuinely good used buy if you find one with full service history.",
         "cta": {
@@ -443,9 +443,9 @@
         }
       },
       {
-        "title": "XJ X358 (2007–2009)",
+        "title": "XJ X358 (2007-2009)",
         "badge": "",
-        "meta": "2007–2009 • AJ-V8 4.2 / 3.5",
+        "meta": "2007-2009 • AJ-V8 4.2 / 3.5",
         "rating": "★★★★☆",
         "verdict": "The facelifted X350. Same reliable 4.2 V8, sharper styling. A sweet spot in the XJ lineage - values are still sensible.",
         "cta": {
@@ -454,9 +454,9 @@
         }
       },
       {
-        "title": "XJ X351 (2010–2019)",
+        "title": "XJ X351 (2010-2019)",
         "badge": "🔥 \"Most Enquired - 151 enquiries (2025) [JAG-VERIFIED]\"",
-        "meta": "2010–2019 • AJ133 5.0 V8, AJ126 3.0 V6 SC, AJ200D 3.0 V6 Diesel, 276DT 2.7 TDV6",
+        "meta": "2010-2019 • AJ133 5.0 V8, AJ126 3.0 V6 SC, AJ200D 3.0 V6 Diesel, 276DT 2.7 TDV6",
         "rating": "★★★★☆",
         "verdict": "The definitive modern XJ. The 5.0 V8 is the one to own - post-2013 cars have the revised timing chain tensioners and are the safest buy in the range. The 3.0 V6 diesel (AJ200D) is a strong alternative for high-mileage buyers.",
         "cta": {
@@ -501,12 +501,12 @@
         "family": "AJ-V8",
         "fuel": "Petrol",
         "displacement": "5.0L",
-        "power": "385–575 bhp",
-        "years": "2010–2019",
+        "power": "385-575 bhp",
+        "years": "2010-2019",
         "model": "X351",
         "reliability": "★★★★☆ (post-2013) / ★★★☆☆ (pre-2013)",
         "enquiries": "330 [JAG-VERIFIED]",
-        "avgRebuildCost": "£5,500–£9,000 [JAG-QUOTE]"
+        "avgRebuildCost": "£5,500-£9,000 [JAG-QUOTE]"
       },
       {
         "engineCode": "AJ126",
@@ -514,23 +514,23 @@
         "fuel": "Petrol",
         "displacement": "3.0L",
         "power": "340 bhp",
-        "years": "2013–2019",
+        "years": "2013-2019",
         "model": "X351",
         "reliability": "★★★★☆",
         "enquiries": "560 [JAG-VERIFIED]",
-        "avgRebuildCost": "£4,500–£7,500 [JAG-QUOTE]"
+        "avgRebuildCost": "£4,500-£7,500 [JAG-QUOTE]"
       },
       {
         "engineCode": "AJ200D / <a href='https://jaguarengines.uk/engine/ajd4-204dtd'>204DTD</a>",
         "family": "Ingenium",
         "fuel": "Diesel",
         "displacement": "2.0L",
-        "power": "163–240 bhp",
-        "years": "2015–2019",
+        "power": "163-240 bhp",
+        "years": "2015-2019",
         "model": "X351",
         "reliability": "★★★☆☆ (pre-2019) / ★★★★☆ (2019+)",
         "enquiries": "590 [JAG-VERIFIED]",
-        "avgRebuildCost": "£3,500–£5,800 [JAG-QUOTE]"
+        "avgRebuildCost": "£3,500-£5,800 [JAG-QUOTE]"
       },
       {
         "engineCode": "276DT",
@@ -538,19 +538,19 @@
         "fuel": "Diesel",
         "displacement": "2.7L",
         "power": "207 bhp",
-        "years": "2010–2015",
+        "years": "2010-2015",
         "model": "X351",
         "reliability": "🔴 Avoid (oil pump failure)",
         "enquiries": "700 [JAG-VERIFIED]",
-        "avgRebuildCost": "£5,000–£7,500 [JAG-QUOTE]"
+        "avgRebuildCost": "£5,000-£7,500 [JAG-QUOTE]"
       },
       {
         "engineCode": "<a href='https://jaguarengines.uk/engine/aj-v8-4-0-4-2'>AJ-V8 4.2</a>",
         "family": "AJ-V8",
         "fuel": "Petrol",
         "displacement": "4.2L",
-        "power": "300–400 bhp",
-        "years": "2003–2009",
+        "power": "300-400 bhp",
+        "years": "2003-2009",
         "model": "X350, X358",
         "reliability": "★★★★☆",
         "enquiries": "[PATTERN DATA]",
@@ -561,8 +561,8 @@
         "family": "AJ-V8",
         "fuel": "Petrol",
         "displacement": "4.0L",
-        "power": "290–370 bhp",
-        "years": "1997–2003",
+        "power": "290-370 bhp",
+        "years": "1997-2003",
         "model": "X308",
         "reliability": "★★★☆☆ (Nikasil risk on early cars)",
         "enquiries": "[PATTERN DATA]",
@@ -573,8 +573,8 @@
         "family": "AJ16",
         "fuel": "Petrol",
         "displacement": "4.0L",
-        "power": "240–322 bhp",
-        "years": "1994–1997",
+        "power": "240-322 bhp",
+        "years": "1994-1997",
         "model": "X300",
         "reliability": "★★★★☆",
         "enquiries": "[PATTERN DATA]",
@@ -731,7 +731,7 @@
       }
     ],
     "insights": [
-      "Interesting insight: The XJ X351 (2010–2019) accounts for nearly half of all XJ enquiries (151 of 325) [JAG-VERIFIED], confirming it is the generation most UK owners are actively researching or repairing. The AJ133 5.0 V8 is the most-enquired XJ engine, driven by concerns over pre-2013 timing chain tensioner wear. Post-2013 cars are significantly less represented in the data, suggesting the revision worked. The 276DT 2.7 TDV6, despite being fitted to the X351, carries the highest-risk profile - its oil pump failure is often terminal, and enquiries for this engine are consistently accompanied by requests for full replacement quotes."
+      "Interesting insight: The XJ X351 (2010-2019) accounts for nearly half of all XJ enquiries (151 of 325) [JAG-VERIFIED], confirming it is the generation most UK owners are actively researching or repairing. The AJ133 5.0 V8 is the most-enquired XJ engine, driven by concerns over pre-2013 timing chain tensioner wear. Post-2013 cars are significantly less represented in the data, suggesting the revision worked. The 276DT 2.7 TDV6, despite being fitted to the X351, carries the highest-risk profile - its oil pump failure is often terminal, and enquiries for this engine are consistently accompanied by requests for full replacement quotes."
     ],
     "liveEnquiryFeedNote": ""
   },
@@ -756,8 +756,8 @@
         "rows": []
       }
     ],
-    "figuresNote": "Labour estimate: Fitting an XJ engine typically takes 10–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE]. The XJ rule - flagship values absorb the cost: A £9,000 recon on an X351 worth £15,000 sits at 60% - exactly our 60% threshold. The difference? For the XJ, that £9,000 spend unlocks a car that's still worth £15,000+. For an older X-Type, that same £9,000 would be a write-off. The XJ is the keeper's Jaguar - fix it if the rest of the car is solid.",
-    "labourEstimate": "Fitting an XJ engine typically takes 10–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE]. The XJ rule - flagship values absorb the cost: A £9,000 recon on an X351 worth £15,000 sits at 60% - exactly our 60% threshold. The difference? For the XJ, that £9,000 spend unlocks a car that's still worth £15,000+. For an older X-Type, that same £9,000 would be a write-off. The XJ is the keeper's Jaguar - fix it if the rest of the car is solid.",
+    "figuresNote": "Labour estimate: Fitting an XJ engine typically takes 10-18 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [JAG-QUOTE]. The XJ rule - flagship values absorb the cost: A £9,000 recon on an X351 worth £15,000 sits at 60% - exactly our 60% threshold. The difference? For the XJ, that £9,000 spend unlocks a car that's still worth £15,000+. For an older X-Type, that same £9,000 would be a write-off. The XJ is the keeper's Jaguar - fix it if the rest of the car is solid.",
+    "labourEstimate": "Fitting an XJ engine typically takes 10-18 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [JAG-QUOTE]. The XJ rule - flagship values absorb the cost: A £9,000 recon on an X351 worth £15,000 sits at 60% - exactly our 60% threshold. The difference? For the XJ, that £9,000 spend unlocks a car that's still worth £15,000+. For an older X-Type, that same £9,000 would be a write-off. The XJ is the keeper's Jaguar - fix it if the rest of the car is solid.",
     "economicsBox": {
       "title": "",
       "text": ""
@@ -775,28 +775,28 @@
     "eras": [
       {
         "era": "Classic Era",
-        "years": "1968–1992",
+        "years": "1968-1992",
         "keyEngines": "XK I6 2.8/4.2, V12 5.3/6.0",
         "whyBmwChanged": "The original XJ formula - large saloon with a sporting heart. The V12 was added to compete with Mercedes and BMW in the luxury sector.",
         "worthKnowing": "The V12 is a masterpiece, but its complexity and fuel consumption make it a collector's item today."
       },
       {
         "era": "Ford Era - X300/X308",
-        "years": "1994–2003",
+        "years": "1994-2003",
         "keyEngines": "AJ16 I6, AJ-V8 4.0/3.2",
         "whyBmwChanged": "Jaguar's own AJ16 replaced the XK I6, but the future was V8. The AJ-V8 was Jaguar's first all-new V8, co-developed with Ford.",
         "worthKnowing": "Early AJ-V8s (pre-1999) can suffer from Nikasil bore wear due to high-sulphur fuel - check the engine number before buying."
       },
       {
         "era": "Aluminium Era - X350/X358",
-        "years": "2003–2009",
+        "years": "2003-2009",
         "keyEngines": "AJ-V8 4.2/3.5",
         "whyBmwChanged": "The X350 introduced the aluminium monocoque, saving 200kg. The AJ-V8 was revised to 4.2 litres, with the 3.5 added for lower-tax markets.",
         "worthKnowing": "The 4.2 V8 is considered one of Jaguar's most reliable engines - a safe used buy."
       },
       {
         "era": "Modern Era - X351",
-        "years": "2010–2019",
+        "years": "2010-2019",
         "keyEngines": "AJ133 5.0 V8, AJ126 3.0 V6 SC, AJ200D 3.0 V6 Diesel, 276DT 2.7 TDV6",
         "whyBmwChanged": "A completely new car, designed under Ford then launched under Tata ownership. The 5.0 V8 was new, and the 3.0 V6 diesel (AJ200D) replaced the 2.7.",
         "worthKnowing": "The 2013 revision of the AJ133 timing chain tensioners is the single most important buying check."
@@ -883,7 +883,7 @@
       {
         "id": 1,
         "question": "How much does an XJ engine replacement cost in the UK?",
-        "answer": "For a 5.0 V8 (AJ133), expect £5,500–£9,000 supply-only for a reconditioned unit [JAG-QUOTE]. The 3.0 V6 (AJ126) is £4,500–£7,500, and the diesel Ingenium (AJ200D) is £3,500–£5,800. Add 10–18 hours of labour at £65–£95/hr (independent) for a full fitted cost. Use our diagnostic calculator for a personalised estimate."
+        "answer": "For a 5.0 V8 (AJ133), expect £5,500-£9,000 supply-only for a reconditioned unit [JAG-QUOTE]. The 3.0 V6 (AJ126) is £4,500-£7,500, and the diesel Ingenium (AJ200D) is £3,500-£5,800. Add 10-18 hours of labour at £65-£95/hr (independent) for a full fitted cost. Use our diagnostic calculator for a personalised estimate."
       },
       {
         "id": 2,
@@ -898,7 +898,7 @@
       {
         "id": 4,
         "question": "How do I know if my XJ timing chain needs replacing?",
-        "answer": "Listen for a cold-start rattle that lasts 1–2 seconds - this is the chain tensioner bleeding down. If the rattle persists, stop driving and get it inspected. The AJ133 pre-2013 is the highest-risk variant; post-2013 cars have a revised tensioner design that rarely fails."
+        "answer": "Listen for a cold-start rattle that lasts 1-2 seconds - this is the chain tensioner bleeding down. If the rattle persists, stop driving and get it inspected. The AJ133 pre-2013 is the highest-risk variant; post-2013 cars have a revised tensioner design that rarely fails."
       },
       {
         "id": 5,

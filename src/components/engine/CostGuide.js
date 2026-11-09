@@ -222,7 +222,7 @@ export default function CostGuide({ data, engineLabel = "Jaguar Engine" }) {
   const isDark = theme === "dark";
   const engineCode = shortEngineName(engineLabel);
   const rows = data.rows || [];
-  const exclusiveNote = cleanText(data.sharedCostNote || "(Exclusive mode – no cross-link)");
+  const exclusiveNote = cleanText(data.sharedCostNote || "(Exclusive mode - no cross-link)");
   const quoteTag = parseQuotedPrice(rows[0]?.supplyOnly || "").tag || "[JAGUAR-QUOTE]";
 
   return (

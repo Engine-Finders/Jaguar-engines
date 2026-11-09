@@ -524,7 +524,7 @@ export default function QuoteForm({ onSuccess }) {
                   <LockSvg />
                 </span>
                 <span>
-                  Your details are secure, no spam – genuine quote from UK vetted engine specialists only.
+                  Your details are secure, no spam - genuine quote from UK vetted engine specialists only.
                 </span>
               </p>
             </form>

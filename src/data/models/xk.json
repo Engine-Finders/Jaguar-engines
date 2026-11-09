@@ -45,13 +45,13 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "X100 (1996–2006)",
+              "name": "X100 (1996-2006)",
               "url": "https://jaguarengines.uk/xk/x100/"
             },
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "X150 (2006–2014)",
+              "name": "X150 (2006-2014)",
               "url": "https://jaguarengines.uk/xk/x150/"
             }
           ]
@@ -106,7 +106,7 @@
               "name": "How much does an XK engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "An XK engine replacement costs between £3,000 and £10,000 supply-only depending on engine choice - the 4.0 AJ27 sits at the lower end (£3,000–£5,500), while the 5.0 AJ133 supercharged sits at the top (£6,500–£10,000) [JAG-QUOTE]. Labour adds approximately 12–18 hours at £65–£95/hr for an independent specialist. Use our diagnostic calculator to get a personalised estimate for your specific XK."
+                "text": "An XK engine replacement costs between £3,000 and £10,000 supply-only depending on engine choice - the 4.0 AJ27 sits at the lower end (£3,000-£5,500), while the 5.0 AJ133 supercharged sits at the top (£6,500-£10,000) [JAG-QUOTE]. Labour adds approximately 12-18 hours at £65-£95/hr for an independent specialist. Use our diagnostic calculator to get a personalised estimate for your specific XK."
               }
             },
             {
@@ -114,7 +114,7 @@
               "name": "Which XK engine is the most reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The AJ133 5.0 V8 (2009–2014) is the most reliable XK engine. The 2009 facelift brought a revised timing chain tensioner design that resolved the weakness of earlier AJ-V8s, and the 5.0-litre unit has proven robust across the X150 range. The naturally aspirated 385bhp version is the sweet spot - simpler than the supercharged variant with fewer potential failure points."
+                "text": "The AJ133 5.0 V8 (2009-2014) is the most reliable XK engine. The 2009 facelift brought a revised timing chain tensioner design that resolved the weakness of earlier AJ-V8s, and the 5.0-litre unit has proven robust across the X150 range. The naturally aspirated 385bhp version is the sweet spot - simpler than the supercharged variant with fewer potential failure points."
               }
             },
             {
@@ -122,7 +122,7 @@
               "name": "Which XK engine should I avoid?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Avoid the early AJ27 4.0 V8 (1996–2000) without documented history - these engines suffer from bore wear (blue smoke on throttle, misfires) and timing chain tensioner issues. If you're set on an X100, buy a 2003+ 4.2 car - the AJ34 is significantly more robust. For the X150, all engines are solid, but prioritise a 2009+ 5.0 car for the best reliability."
+                "text": "Avoid the early AJ27 4.0 V8 (1996-2000) without documented history - these engines suffer from bore wear (blue smoke on throttle, misfires) and timing chain tensioner issues. If you're set on an X100, buy a 2003+ 4.2 car - the AJ34 is significantly more robust. For the X150, all engines are solid, but prioritise a 2009+ 5.0 car for the best reliability."
               }
             },
             {
@@ -138,7 +138,7 @@
               "name": "Is it worth replacing an XK engine?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "It depends entirely on the car's value. A 2014 XKR-S worth £30,000–£35,000 with a £6,500–£10,000 recon cost sits at 20–30% of vehicle value - absolutely worth replacing. A 1998 XK8 worth £4,000–£5,000 facing a £5,000+ recon cost sits at over 100% of vehicle value - not worth it. If replacement cost exceeds roughly 60% of your car's market value, get a scrap valuation before committing. Use our diagnostic calculator for a personalised assessment."
+                "text": "It depends entirely on the car's value. A 2014 XKR-S worth £30,000-£35,000 with a £6,500-£10,000 recon cost sits at 20-30% of vehicle value - absolutely worth replacing. A 1998 XK8 worth £4,000-£5,000 facing a £5,000+ recon cost sits at over 100% of vehicle value - not worth it. If replacement cost exceeds roughly 60% of your car's market value, get a scrap valuation before committing. Use our diagnostic calculator for a personalised assessment."
               }
             },
             {
@@ -146,7 +146,7 @@
               "name": "Which XK should I buy - X100 or X150?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Buy an X150 (2009–2014) with the 5.0 naturally aspirated V8 - it's the best-looking generation, the most reliable engine, and values are still £10,000–£20,000, which is remarkably low for a car of this quality. The X100 is a beautiful classic but the economics are tighter - only buy one if you're prepared for classic-car ownership costs."
+                "text": "Buy an X150 (2009-2014) with the 5.0 naturally aspirated V8 - it's the best-looking generation, the most reliable engine, and values are still £10,000-£20,000, which is remarkably low for a car of this quality. The X100 is a beautiful classic but the economics are tighter - only buy one if you're prepared for classic-car ownership costs."
               }
             },
             {
@@ -222,7 +222,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar • XK • 1996–2014 • 2 Generations • AJ-V8",
+    "tagPill": "Jaguar • XK • 1996-2014 • 2 Generations • AJ-V8",
     "h1": "XK Engines - The Complete UK Guide",
     "subHeadline": "Two generations of Jaguar's V8-powered grand tourer - X100 and X150 - covered from the 4.0 AJ27 to the 5.0 <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> supercharged. Real UK failure patterns, honest replacement economics, and costs you can actually trust. Backed by 290+ real UK XK engine enquiries in 2025 [JAG-VERIFIED].",
     "trustStrip": [
@@ -273,11 +273,11 @@
       },
       {
         "metric": "Best Used Buy",
-        "ourCall": "X150 (2009–2014) 5.0 naturally aspirated - facelift car, revised engine, strong value retention"
+        "ourCall": "X150 (2009-2014) 5.0 naturally aspirated - facelift car, revised engine, strong value retention"
       },
       {
         "metric": "Average Engine Replacement",
-        "ourCall": "£3,000–£9,000 supply-only [JAG-QUOTE]"
+        "ourCall": "£3,000-£9,000 supply-only [JAG-QUOTE]"
       },
       {
         "metric": "Most Common Failure Enquiry",
@@ -295,11 +295,11 @@
     "rows": [
       {
         "metric": "Generations",
-        "value": "2 (X100 1996–2006, X150 2006–2014)"
+        "value": "2 (X100 1996-2006, X150 2006-2014)"
       },
       {
         "metric": "Years Produced",
-        "value": "1996–2014"
+        "value": "1996-2014"
       },
       {
         "metric": "Engine Codes Tracked",
@@ -323,11 +323,11 @@
       },
       {
         "metric": "Typical Replacement Cost",
-        "value": "£3,000–£9,000 supply-only [JAG-QUOTE]"
+        "value": "£3,000-£9,000 supply-only [JAG-QUOTE]"
       },
       {
         "metric": "Typical Host Value",
-        "value": "£4,000–£35,000 [THIRD-PARTY]"
+        "value": "£4,000-£35,000 [THIRD-PARTY]"
       },
       {
         "metric": "Overall Rating",
@@ -340,9 +340,9 @@
     "subHeadline": "Two generations of V8-powered grand touring - the steel-bodied X100 and the aluminium-monocoque X150.",
     "cards": [
       {
-        "title": "X100 (1996–2006) -",
+        "title": "X100 (1996-2006) -",
         "badge": "🔥 Most Enquired - 120 enquiries (2025) [JAG-VERIFIED]",
-        "meta": "1996–2006 • 4.0 AJ27 V8 • 4.2 AJ34 V8",
+        "meta": "1996-2006 • 4.0 AJ27 V8 • 4.2 AJ34 V8",
         "rating": "★★★★☆",
         "verdict": "The original modern XK - beautiful, characterful, and increasingly collectable. Buy a 2003+ 4.2 car with full history; early 4.0 cars need bore-wear checks and timing chain inspection before purchase.",
         "cta": {
@@ -351,9 +351,9 @@
         }
       },
       {
-        "title": "X150 (2006–2014)",
+        "title": "X150 (2006-2014)",
         "badge": "",
-        "meta": "2006–2014 • 4.2 AJ34 V8 • 5.0 AJ133 V8 • 5.0 AJ133 Supercharged V8",
+        "meta": "2006-2014 • 4.2 AJ34 V8 • 5.0 AJ133 V8 • 5.0 AJ133 Supercharged V8",
         "rating": "★★★★★",
         "verdict": "The definitive XK - Ian Callum's aluminium masterpiece. The 2009 facelift brought the 5.0 V8 with much-improved timing chain design. This is the one to buy, especially the naturally aspirated 5.0 Portfolio or the thunderous XKR-S.",
         "cta": {
@@ -398,12 +398,12 @@
         "family": "AJ-V8",
         "fuel": "Petrol",
         "displacement": "4.0L",
-        "power": "284–290 bhp",
-        "years": "1996–2002",
+        "power": "284-290 bhp",
+        "years": "1996-2002",
         "model": "X100",
         "reliability": "★★★☆☆",
         "enquiries": "[PATTERN DATA]",
-        "avgRebuildCost": "£3,000–£5,000 [PLACEHOLDER - confirm vs cost sheet]"
+        "avgRebuildCost": "£3,000-£5,000 [PLACEHOLDER - confirm vs cost sheet]"
       },
       {
         "engineCode": "AJ27S",
@@ -411,35 +411,35 @@
         "fuel": "Petrol",
         "displacement": "4.0L",
         "power": "370 bhp",
-        "years": "1998–2002",
+        "years": "1998-2002",
         "model": "X100",
         "reliability": "★★★☆☆",
         "enquiries": "[PATTERN DATA]",
-        "avgRebuildCost": "£3,500–£5,500 [PLACEHOLDER - confirm vs cost sheet]"
+        "avgRebuildCost": "£3,500-£5,500 [PLACEHOLDER - confirm vs cost sheet]"
       },
       {
         "engineCode": "AJ34",
         "family": "AJ-V8 Gen II",
         "fuel": "Petrol",
         "displacement": "4.2L",
-        "power": "300–305 bhp",
-        "years": "2002–2009",
-        "model": "X100 (2002–06) / X150 (2006–09)",
+        "power": "300-305 bhp",
+        "years": "2002-2009",
+        "model": "X100 (2002-06) / X150 (2006-09)",
         "reliability": "★★★★☆",
         "enquiries": "[PATTERN DATA]",
-        "avgRebuildCost": "£3,500–£6,000 [PLACEHOLDER - confirm vs cost sheet]"
+        "avgRebuildCost": "£3,500-£6,000 [PLACEHOLDER - confirm vs cost sheet]"
       },
       {
         "engineCode": "AJ34S",
         "family": "AJ-V8 Gen II Supercharged",
         "fuel": "Petrol",
         "displacement": "4.2L",
-        "power": "390–420 bhp",
-        "years": "2002–2009",
-        "model": "X100 (2002–06) / X150 (2006–09)",
+        "power": "390-420 bhp",
+        "years": "2002-2009",
+        "model": "X100 (2002-06) / X150 (2006-09)",
         "reliability": "★★★★☆",
         "enquiries": "[PATTERN DATA]",
-        "avgRebuildCost": "£4,500–£7,000 [PLACEHOLDER - confirm vs cost sheet]"
+        "avgRebuildCost": "£4,500-£7,000 [PLACEHOLDER - confirm vs cost sheet]"
       },
       {
         "engineCode": "AJ133",
@@ -447,23 +447,23 @@
         "fuel": "Petrol",
         "displacement": "5.0L",
         "power": "385 bhp",
-        "years": "2009–2014",
+        "years": "2009-2014",
         "model": "X150",
         "reliability": "★★★★★",
         "enquiries": "330 [JAG-VERIFIED]",
-        "avgRebuildCost": "£5,500–£9,000 [JAG-QUOTE]"
+        "avgRebuildCost": "£5,500-£9,000 [JAG-QUOTE]"
       },
       {
         "engineCode": "AJ133S",
         "family": "AJ-V8 Gen III Supercharged",
         "fuel": "Petrol",
         "displacement": "5.0L",
-        "power": "503–542 bhp",
-        "years": "2009–2014",
+        "power": "503-542 bhp",
+        "years": "2009-2014",
         "model": "X150",
         "reliability": "★★★★★",
         "enquiries": "[JAG-VERIFIED]",
-        "avgRebuildCost": "£6,500–£10,000 [JAG-QUOTE]"
+        "avgRebuildCost": "£6,500-£10,000 [JAG-QUOTE]"
       }
     ],
     "confidenceScore": {
@@ -611,20 +611,20 @@
       },
       {
         "signal": "Most Enquired Generation",
-        "data": "X150 (2006–2014)",
+        "data": "X150 (2006-2014)",
         "demandTrend": "⬆ Rising"
       }
     ],
     "insights": [
       "Interesting insight: The X150 generation accounts for roughly 60% of all XK enquiries in 2025 - the aluminium grand tourer is the one buyers are actively researching, while the X100 is increasingly the preserve of collectors and enthusiasts",
-      "The 5.0 AJ133 engine (fitted to 2009–2014 X150s) generates significantly more enquiry volume than any other XK engine - buyers are actively seeking the post-facelift car, and specialists report this is the generation with the strongest reliability record",
+      "The 5.0 AJ133 engine (fitted to 2009-2014 X150s) generates significantly more enquiry volume than any other XK engine - buyers are actively seeking the post-facelift car, and specialists report this is the generation with the strongest reliability record",
       "Early 4.0 X100 cars generate relatively low enquiry volume but high forum activity - the enthusiast community is active, but the cars are now cheap enough that a full engine replacement often fails the economics threshold for all but the best examples"
     ],
     "liveEnquiryFeedNote": ""
   },
   "editorialPullQuote": {
     "title": "The One Thing We'd Tell Every XK Buyer",
-    "quote": "Buy a 2009–2014 X150 with the 5.0 naturally aspirated V8, full service history, and evidence the water pump has been replaced. It's the sweet spot - the most reliable engine, the best-looking generation, and values that are still £10,000–£20,000 below where they should be."
+    "quote": "Buy a 2009-2014 X150 with the 5.0 naturally aspirated V8, full service history, and evidence the water pump has been replaced. It's the sweet spot - the most reliable engine, the best-looking generation, and values that are still £10,000-£20,000 below where they should be."
   },
   "replacementCosts": {
     "h2": "XK Engine Replacement Costs - By Generation",
@@ -643,7 +643,7 @@
         "rows": []
       },
       {
-        "title": "XKR / XKR-S 5.0 (2009–2014)",
+        "title": "XKR / XKR-S 5.0 (2009-2014)",
         "columns": [
           "Variant",
           "Engine Code",
@@ -655,8 +655,8 @@
         "rows": []
       }
     ],
-    "figuresNote": "Labour estimate: Fitting an XK engine typically takes 12–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE]. The XK rule - the value swing is the story: The XK's value range is one of the widest in the Jaguar line-up. An early X100 XK8 worth £4,000–£5,000 facing a £5,000+ reconditioned engine sits at 100%+ of vehicle value - well above our 60% scrap threshold for Jaguar. The same engine in a 2014 XKR-S worth £30,000–£35,000 sits at just 20–30% of vehicle value - a no-brainer replacement. Before committing to a recon engine, get a realistic market valuation for your specific car and run the numbers. For X100s, used engines often make more sense; for X150s, a reconditioned unit is usually the right call.",
-    "labourEstimate": "Fitting an XK engine typically takes 12–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE]. The XK rule - the value swing is the story: The XK's value range is one of the widest in the Jaguar line-up. An early X100 XK8 worth £4,000–£5,000 facing a £5,000+ reconditioned engine sits at 100%+ of vehicle value - well above our 60% scrap threshold for Jaguar. The same engine in a 2014 XKR-S worth £30,000–£35,000 sits at just 20–30% of vehicle value - a no-brainer replacement. Before committing to a recon engine, get a realistic market valuation for your specific car and run the numbers. For X100s, used engines often make more sense; for X150s, a reconditioned unit is usually the right call.",
+    "figuresNote": "Labour estimate: Fitting an XK engine typically takes 12-18 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [JAG-QUOTE]. The XK rule - the value swing is the story: The XK's value range is one of the widest in the Jaguar line-up. An early X100 XK8 worth £4,000-£5,000 facing a £5,000+ reconditioned engine sits at 100%+ of vehicle value - well above our 60% scrap threshold for Jaguar. The same engine in a 2014 XKR-S worth £30,000-£35,000 sits at just 20-30% of vehicle value - a no-brainer replacement. Before committing to a recon engine, get a realistic market valuation for your specific car and run the numbers. For X100s, used engines often make more sense; for X150s, a reconditioned unit is usually the right call.",
+    "labourEstimate": "Fitting an XK engine typically takes 12-18 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [JAG-QUOTE]. The XK rule - the value swing is the story: The XK's value range is one of the widest in the Jaguar line-up. An early X100 XK8 worth £4,000-£5,000 facing a £5,000+ reconditioned engine sits at 100%+ of vehicle value - well above our 60% scrap threshold for Jaguar. The same engine in a 2014 XKR-S worth £30,000-£35,000 sits at just 20-30% of vehicle value - a no-brainer replacement. Before committing to a recon engine, get a realistic market valuation for your specific car and run the numbers. For X100s, used engines often make more sense; for X150s, a reconditioned unit is usually the right call.",
     "economicsBox": {
       "title": "",
       "text": ""
@@ -674,28 +674,28 @@
     "eras": [
       {
         "era": "The AJ27 Era",
-        "years": "1996–2002",
+        "years": "1996-2002",
         "keyEngines": "AJ27 4.0 V8, AJ27S 4.0 Supercharged",
         "whyBmwChanged": "The original XK8 launched with Jaguar's new 4.0-litre V8 - a clean-sheet design replacing the straight-six XJS.",
         "worthKnowing": "Early cars (pre-2000) have a reputation for bore wear - always inspect before buying."
       },
       {
         "era": "The 4.2 Upgrade",
-        "years": "2002–2006",
+        "years": "2002-2006",
         "keyEngines": "AJ34 4.2 V8, AJ34S 4.2 Supercharged",
         "whyBmwChanged": "Jaguar increased displacement to 4.2 litres in 2002, bringing more power and improved reliability - the bore-wear issues were largely resolved.",
         "worthKnowing": "The 4.2 is significantly more robust than the early 4.0 - this is the X100 to target."
       },
       {
         "era": "The Aluminium Revolution",
-        "years": "2006–2009",
+        "years": "2006-2009",
         "keyEngines": "AJ34 4.2 V8, AJ34S 4.2 Supercharged",
         "whyBmwChanged": "The X150 launched with an aluminium monocoque, losing 150kg over the X100 - the 4.2 engine carried over initially.",
         "worthKnowing": "The X150 chassis is a masterpiece - Ian Callum's finest work."
       },
       {
         "era": "The 5.0 Transformation",
-        "years": "2009–2014",
+        "years": "2009-2014",
         "keyEngines": "AJ133 5.0 V8, AJ133S 5.0 Supercharged",
         "whyBmwChanged": "The 2009 facelift brought the 5.0-litre AJ133 V8 with 385bhp (naturally aspirated) and up to 542bhp (supercharged) - plus a revised timing chain tensioner design.",
         "worthKnowing": "This is the definitive XK engine - more power, stronger reliability, and the one specialists recommend."
@@ -718,7 +718,7 @@
       {
         "buyerProfile": "Daily Commuter",
         "rating": "★★★☆☆",
-        "verdict": "The XK is a genuine GT - comfortable, refined, and capable of daily use. But be realistic: fuel economy is 18–25mpg, and maintenance costs reflect the original £70,000 price tag. A 2009+ 5.0 naturally aspirated is the sweet spot."
+        "verdict": "The XK is a genuine GT - comfortable, refined, and capable of daily use. But be realistic: fuel economy is 18-25mpg, and maintenance costs reflect the original £70,000 price tag. A 2009+ 5.0 naturally aspirated is the sweet spot."
       },
       {
         "buyerProfile": "Family Buyer",
@@ -782,17 +782,17 @@
       {
         "id": 1,
         "question": "How much does an XK engine replacement cost in the UK?",
-        "answer": "An XK engine replacement costs between £3,000 and £10,000 supply-only depending on engine choice - the 4.0 AJ27 sits at the lower end (£3,000–£5,500), while the 5.0 AJ133 supercharged sits at the top (£6,500–£10,000) [JAG-QUOTE]. Labour adds approximately 12–18 hours at £65–£95/hr for an independent specialist. Use our diagnostic calculator to get a personalised estimate for your specific XK."
+        "answer": "An XK engine replacement costs between £3,000 and £10,000 supply-only depending on engine choice - the 4.0 AJ27 sits at the lower end (£3,000-£5,500), while the 5.0 AJ133 supercharged sits at the top (£6,500-£10,000) [JAG-QUOTE]. Labour adds approximately 12-18 hours at £65-£95/hr for an independent specialist. Use our diagnostic calculator to get a personalised estimate for your specific XK."
       },
       {
         "id": 2,
         "question": "Which XK engine is the most reliable?",
-        "answer": "The AJ133 5.0 V8 (2009–2014) is the most reliable XK engine. The 2009 facelift brought a revised timing chain tensioner design that resolved the weakness of earlier AJ-V8s, and the 5.0-litre unit has proven robust across the X150 range. The naturally aspirated 385bhp version is the sweet spot - simpler than the supercharged variant with fewer potential failure points."
+        "answer": "The AJ133 5.0 V8 (2009-2014) is the most reliable XK engine. The 2009 facelift brought a revised timing chain tensioner design that resolved the weakness of earlier AJ-V8s, and the 5.0-litre unit has proven robust across the X150 range. The naturally aspirated 385bhp version is the sweet spot - simpler than the supercharged variant with fewer potential failure points."
       },
       {
         "id": 3,
         "question": "Which XK engine should I avoid?",
-        "answer": "Avoid the early AJ27 4.0 V8 (1996–2000) without documented history - these engines suffer from bore wear (blue smoke on throttle, misfires) and timing chain tensioner issues. If you're set on an X100, buy a 2003+ 4.2 car - the AJ34 is significantly more robust. For the X150, all engines are solid, but prioritise a 2009+ 5.0 car for the best reliability."
+        "answer": "Avoid the early AJ27 4.0 V8 (1996-2000) without documented history - these engines suffer from bore wear (blue smoke on throttle, misfires) and timing chain tensioner issues. If you're set on an X100, buy a 2003+ 4.2 car - the AJ34 is significantly more robust. For the X150, all engines are solid, but prioritise a 2009+ 5.0 car for the best reliability."
       },
       {
         "id": 4,
@@ -802,12 +802,12 @@
       {
         "id": 5,
         "question": "Is it worth replacing an XK engine?",
-        "answer": "It depends entirely on the car's value. A 2014 XKR-S worth £30,000–£35,000 with a £6,500–£10,000 recon cost sits at 20–30% of vehicle value - absolutely worth replacing. A 1998 XK8 worth £4,000–£5,000 facing a £5,000+ recon cost sits at over 100% of vehicle value - not worth it. If replacement cost exceeds roughly 60% of your car's market value, get a scrap valuation before committing. Use our diagnostic calculator for a personalised assessment."
+        "answer": "It depends entirely on the car's value. A 2014 XKR-S worth £30,000-£35,000 with a £6,500-£10,000 recon cost sits at 20-30% of vehicle value - absolutely worth replacing. A 1998 XK8 worth £4,000-£5,000 facing a £5,000+ recon cost sits at over 100% of vehicle value - not worth it. If replacement cost exceeds roughly 60% of your car's market value, get a scrap valuation before committing. Use our diagnostic calculator for a personalised assessment."
       },
       {
         "id": 6,
         "question": "Which XK should I buy - X100 or X150?",
-        "answer": "Buy an X150 (2009–2014) with the 5.0 naturally aspirated V8 - it's the best-looking generation, the most reliable engine, and values are still £10,000–£20,000, which is remarkably low for a car of this quality. The X100 is a beautiful classic but the economics are tighter - only buy one if you're prepared for classic-car ownership costs."
+        "answer": "Buy an X150 (2009-2014) with the 5.0 naturally aspirated V8 - it's the best-looking generation, the most reliable engine, and values are still £10,000-£20,000, which is remarkably low for a car of this quality. The X100 is a beautiful classic but the economics are tighter - only buy one if you're prepared for classic-car ownership costs."
       },
       {
         "id": 7,

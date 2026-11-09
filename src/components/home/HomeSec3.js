@@ -860,8 +860,8 @@ export default function HomeSec3({ data }) {
     stepLabels: data.calculator?.stepLabels || ["Symptoms", "Vehicle", "Engine"],
     ageOptions: data.calculator?.ageOptions || [
       { id: "under5", label: "Under 5 years" },
-      { id: "5to10", label: "5–10 years" },
-      { id: "10to15", label: "10–15 years" },
+      { id: "5to10", label: "5-10 years" },
+      { id: "10to15", label: "10-15 years" },
       { id: "over15", label: "Over 15 years" },
     ],
     whyTrust: data.calculator?.whyTrust || data.whyTrust?.signals || [],

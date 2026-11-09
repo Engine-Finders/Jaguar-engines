@@ -58,13 +58,13 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "X761 25t (GTDi, 2016–2020)",
+              "name": "X761 25t (GTDi, 2016-2020)",
               "url": "https://jaguarengines.uk/f-pace/x761/"
             },
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "X761 P250 (204PT Ingenium, 2020–present)",
+              "name": "X761 P250 (204PT Ingenium, 2020-present)",
               "url": "https://jaguarengines.uk/f-pace/x761/"
             }
           ]
@@ -95,7 +95,7 @@
               "name": "How much does a Jaguar F‑Pace 25t/P250 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned 2.0‑litre turbo petrol engine typically costs £3,500–£6,500 supply only, with the earlier GTDi running lower and the 204PT Ingenium higher. Fitting adds £1,200–£1,800. Specialist suppliers typically quote £8,000–£10,000 for a full reconditioned unit. Use our calculator for a figure specific to your F‑Pace."
+                "text": "A reconditioned 2.0‑litre turbo petrol engine typically costs £3,500-£6,500 supply only, with the earlier GTDi running lower and the 204PT Ingenium higher. Fitting adds £1,200-£1,800. Specialist suppliers typically quote £8,000-£10,000 for a full reconditioned unit. Use our calculator for a figure specific to your F‑Pace."
               }
             },
             {
@@ -103,7 +103,7 @@
               "name": "Is the Jaguar F‑Pace 25t/P250 engine reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "It depends which engine and year your car has. The early GTDi (2016–2020) is prone to turbo and timing chain issues. The 204PT Ingenium (2020+) is more refined but still has cooling system and water pump watchpoints. 2019 is the critical model year - post‑2019 Ingenium engines received timing chain and fuel pump updates."
+                "text": "It depends which engine and year your car has. The early GTDi (2016-2020) is prone to turbo and timing chain issues. The 204PT Ingenium (2020+) is more refined but still has cooling system and water pump watchpoints. 2019 is the critical model year - post‑2019 Ingenium engines received timing chain and fuel pump updates."
               }
             },
             {
@@ -119,7 +119,7 @@
               "name": "Is it worth replacing an F‑Pace 25t/P250 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on vehicle value. An F‑Pace 25t/P250 is a £8,000–£25,000 vehicle - a £4,500–£5,500 recon is 18–69% of the car's value. For lower‑value examples (sub‑£10,000), replacement may approach or exceed our 60% Jaguar scrap threshold. A well‑maintained, lower‑mileage example justifies replacement; a tired, high‑mileage one may not."
+                "text": "Depends on vehicle value. An F‑Pace 25t/P250 is a £8,000-£25,000 vehicle - a £4,500-£5,500 recon is 18-69% of the car's value. For lower‑value examples (sub‑£10,000), replacement may approach or exceed our 60% Jaguar scrap threshold. A well‑maintained, lower‑mileage example justifies replacement; a tired, high‑mileage one may not."
               }
             },
             {
@@ -127,7 +127,7 @@
               "name": "How do I find my Jaguar F‑Pace 25t/P250 engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Listed on the VIN plate and vehicle documentation. The 25t/P250 covers GTDi (2016–2020) and 204PT (2020+). Tell us your registration date and we'll confirm which one you have for free."
+                "text": "Listed on the VIN plate and vehicle documentation. The 25t/P250 covers GTDi (2016-2020) and 204PT (2020+). Tell us your registration date and we'll confirm which one you have for free."
               }
             },
             {
@@ -135,7 +135,7 @@
               "name": "Can I prevent the common failures on an F‑Pace 25t/P250?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes - on pre‑2019 models, have the timing chain inspected and consider preventive replacement. Regular oil changes with JLR‑spec oil and shortened intervals (5,000–7,500 miles) are essential. On the 204PT Ingenium, monitor coolant levels and have the water pump inspected at 60,000 miles. At the first sign of cold‑start rattle, turbo noise or coolant loss, book an inspection immediately."
+                "text": "Yes - on pre‑2019 models, have the timing chain inspected and consider preventive replacement. Regular oil changes with JLR‑spec oil and shortened intervals (5,000-7,500 miles) are essential. On the 204PT Ingenium, monitor coolant levels and have the water pump inspected at 60,000 miles. At the first sign of cold‑start rattle, turbo noise or coolant loss, book an inspection immediately."
               }
             }
           ]
@@ -196,9 +196,9 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar F-Pace 25t / P250 • 2016–present • GTDi / 204PT",
+    "tagPill": "Jaguar F-Pace 25t / P250 • 2016-present • GTDi / 204PT",
     "h1": "Jaguar F-Pace 25t / P250 Engine Replacement - Compare Prices & Get Quotes",
-    "subHeadline": "The F-Pace's entry‑level petrol badge covers two distinct 2.0‑litre turbo engines - the Ford‑sourced GTDi (2016–2020) and the JLR Ingenium 204PT (2020+). Get quotes from trusted UK specialists today.",
+    "subHeadline": "The F-Pace's entry‑level petrol badge covers two distinct 2.0‑litre turbo engines - the Ford‑sourced GTDi (2016-2020) and the JLR Ingenium 204PT (2020+). Get quotes from trusted UK specialists today.",
     "trustBadges": [
       "🔧 Supply & Fit Available",
       "✅ 12-Month Warranty",
@@ -242,35 +242,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£2,000–£3,500",
-        "fittedIndie": "£3,000–£4,800",
-        "warranty": "1–6 months",
+        "supplyOnly": "£2,000-£3,500",
+        "fittedIndie": "£3,000-£4,800",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; vehicle under £8,000"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£3,500–£6,500",
-        "fittedIndie": "£4,800–£8,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£3,500-£6,500",
+        "fittedIndie": "£4,800-£8,000",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£5,000–£7,500",
-        "fittedIndie": "£6,300–£9,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£5,000-£7,500",
+        "fittedIndie": "£6,300-£9,000",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£6,500–£9,500",
-        "fittedIndie": "£7,800–£11,200",
-        "warranty": "24–36 months",
+        "supplyOnly": "£6,500-£9,500",
+        "fittedIndie": "£7,800-£11,200",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs, warranty claims"
       }
     ],
-    "figuresNote": "Figures above reflect the range across both engine eras; specific costs vary by generation - see the Era Map above. Reconditioned engines from specialist suppliers typically cost around £8,000–£10,000 for the 2.0‑litre units.",
-    "labourEstimate": "Fitting an F‑Pace 2.0‑litre petrol engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "figuresNote": "Figures above reflect the range across both engine eras; specific costs vary by generation - see the Era Map above. Reconditioned engines from specialist suppliers typically cost around £8,000-£10,000 for the 2.0‑litre units.",
+    "labourEstimate": "Fitting an F‑Pace 2.0‑litre petrol engine typically takes 12-16 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer).",
     "cta": {
       "label": "→ Compare F‑Pace 25t/P250 engine prices from UK specialists",
       "href": "/quote"
@@ -282,8 +282,8 @@
         "id": 1,
         "title": "Turbocharger Failure (GTDi & Early Ingenium)",
         "symptoms": "Loss of power, excessive smoke (blue/white), whistling or grinding noise from the turbo, engine warning light, sudden limp mode.",
-        "typicalMileage": "40,000–80,000 miles",
-        "repairCost": "£800–£2,500 (turbo rebuild or replacement) [PLACEHOLDER - confirm vs cost sheet]",
+        "typicalMileage": "40,000-80,000 miles",
+        "repairCost": "£800-£2,500 (turbo rebuild or replacement) [PLACEHOLDER - confirm vs cost sheet]",
         "replacementCost": "N/A - repair only (if caught before turbo disintegrates)",
         "urgency": {
           "icon": "🔴",
@@ -300,9 +300,9 @@
         "id": 2,
         "title": "Timing Chain Wear (Both Engines - Pre‑2019 Models at Higher Risk)",
         "symptoms": "Rattling noise on cold start, metallic ticking, engine warning light, loss of power.",
-        "typicalMileage": "50,000–80,000 miles",
-        "repairCost": "£1,500–£3,000 (chain, guides and tensioner replacement) [PLACEHOLDER - confirm vs cost sheet]",
-        "replacementCost": "£3,500–£7,500 (full engine replacement if chain snaps)",
+        "typicalMileage": "50,000-80,000 miles",
+        "repairCost": "£1,500-£3,000 (chain, guides and tensioner replacement) [PLACEHOLDER - confirm vs cost sheet]",
+        "replacementCost": "£3,500-£7,500 (full engine replacement if chain snaps)",
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
@@ -318,8 +318,8 @@
         "id": 3,
         "title": "Water Pump and Cooling System Failure (204PT Ingenium)",
         "symptoms": "Coolant loss, temperature fluctuations, overheating, heater not working properly, engine warning light.",
-        "typicalMileage": "40,000–70,000 miles",
-        "repairCost": "£400–£900 (water pump replacement) [PLACEHOLDER - confirm vs cost sheet]",
+        "typicalMileage": "40,000-70,000 miles",
+        "repairCost": "£400-£900 (water pump replacement) [PLACEHOLDER - confirm vs cost sheet]",
         "replacementCost": "N/A - repair only",
         "urgency": {
           "icon": "🟠",
@@ -356,19 +356,19 @@
         {
           "problem": "Turbocharger failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£800–£2,500",
+          "typicalCost": "£800-£2,500",
           "whenItMakesSense": "Catch it early - before oil contamination damages the engine"
         },
         {
           "problem": "Timing chain wear",
           "repairable": "✅ Yes",
-          "typicalCost": "£1,500–£3,000",
+          "typicalCost": "£1,500-£3,000",
           "whenItMakesSense": "Catch it early - before chain snaps and requires full replacement"
         },
         {
           "problem": "Water pump failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£400–£900",
+          "typicalCost": "£400-£900",
           "whenItMakesSense": "Routine maintenance - do preventatively"
         },
         {
@@ -424,17 +424,17 @@
     "rows": [
       {
         "engineCode": "GTDi (Ford 2.0 EcoBoost‑derived)",
-        "years": "2016–2020",
-        "power": "247–250 hp (184 kW) @ 5,500 rpm; 365 Nm @ 1,200 rpm",
+        "years": "2016-2020",
+        "power": "247-250 hp (184 kW) @ 5,500 rpm; 365 Nm @ 1,200 rpm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£2,500–£5,000 [PLACEHOLDER]"
+        "avgReconCost": "£2,500-£5,000 [PLACEHOLDER]"
       },
       {
         "engineCode": "204PT (Ingenium 2.0)",
-        "years": "2020–present",
-        "power": "250 PS (184 kW) @ 5,500 rpm; 365 Nm @ 1,200–4,500 rpm",
+        "years": "2020-present",
+        "power": "250 PS (184 kW) @ 5,500 rpm; 365 Nm @ 1,200-4,500 rpm",
         "enquiries": "500 [JAG-VERIFIED]",
-        "avgReconCost": "£4,000–£6,500 [PLACEHOLDER]"
+        "avgReconCost": "£4,000-£6,500 [PLACEHOLDER]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -476,7 +476,7 @@
       },
       {
         "label": "Average Enquiry Mileage",
-        "value": "50,000–70,000 miles【PATTERN DATA】"
+        "value": "50,000-70,000 miles【PATTERN DATA】"
       },
       {
         "label": "Average Replacement Cost",
@@ -501,12 +501,12 @@
       {
         "id": 1,
         "question": "How much does a Jaguar F‑Pace 25t/P250 engine replacement cost in the UK?",
-        "answer": "A reconditioned 2.0‑litre turbo petrol engine typically costs £3,500–£6,500 supply only, with the earlier GTDi running lower and the 204PT Ingenium higher. Fitting adds £1,200–£1,800. Specialist suppliers typically quote £8,000–£10,000 for a full reconditioned unit. Use our calculator for a figure specific to your F‑Pace."
+        "answer": "A reconditioned 2.0‑litre turbo petrol engine typically costs £3,500-£6,500 supply only, with the earlier GTDi running lower and the 204PT Ingenium higher. Fitting adds £1,200-£1,800. Specialist suppliers typically quote £8,000-£10,000 for a full reconditioned unit. Use our calculator for a figure specific to your F‑Pace."
       },
       {
         "id": 2,
         "question": "Is the Jaguar F‑Pace 25t/P250 engine reliable?",
-        "answer": "It depends which engine and year your car has. The early GTDi (2016–2020) is prone to turbo and timing chain issues. The 204PT Ingenium (2020+) is more refined but still has cooling system and water pump watchpoints. 2019 is the critical model year - post‑2019 Ingenium engines received timing chain and fuel pump updates."
+        "answer": "It depends which engine and year your car has. The early GTDi (2016-2020) is prone to turbo and timing chain issues. The 204PT Ingenium (2020+) is more refined but still has cooling system and water pump watchpoints. 2019 is the critical model year - post‑2019 Ingenium engines received timing chain and fuel pump updates."
       },
       {
         "id": 3,
@@ -516,17 +516,17 @@
       {
         "id": 4,
         "question": "Is it worth replacing an F‑Pace 25t/P250 engine, or should I scrap the car?",
-        "answer": "Depends on vehicle value. An F‑Pace 25t/P250 is a £8,000–£25,000 vehicle - a £4,500–£5,500 recon is 18–69% of the car's value. For lower‑value examples (sub‑£10,000), replacement may approach or exceed our 60% Jaguar scrap threshold. A well‑maintained, lower‑mileage example justifies replacement; a tired, high‑mileage one may not."
+        "answer": "Depends on vehicle value. An F‑Pace 25t/P250 is a £8,000-£25,000 vehicle - a £4,500-£5,500 recon is 18-69% of the car's value. For lower‑value examples (sub‑£10,000), replacement may approach or exceed our 60% Jaguar scrap threshold. A well‑maintained, lower‑mileage example justifies replacement; a tired, high‑mileage one may not."
       },
       {
         "id": 5,
         "question": "How do I find my Jaguar F‑Pace 25t/P250 engine code?",
-        "answer": "Listed on the VIN plate and vehicle documentation. The 25t/P250 covers GTDi (2016–2020) and 204PT (2020+). Tell us your registration date and we'll confirm which one you have for free."
+        "answer": "Listed on the VIN plate and vehicle documentation. The 25t/P250 covers GTDi (2016-2020) and 204PT (2020+). Tell us your registration date and we'll confirm which one you have for free."
       },
       {
         "id": 6,
         "question": "Can I prevent the common failures on an F‑Pace 25t/P250?",
-        "answer": "Yes - on pre‑2019 models, have the timing chain inspected and consider preventive replacement. Regular oil changes with JLR‑spec oil and shortened intervals (5,000–7,500 miles) are essential. On the 204PT Ingenium, monitor coolant levels and have the water pump inspected at 60,000 miles. At the first sign of cold‑start rattle, turbo noise or coolant loss, book an inspection immediately."
+        "answer": "Yes - on pre‑2019 models, have the timing chain inspected and consider preventive replacement. Regular oil changes with JLR‑spec oil and shortened intervals (5,000-7,500 miles) are essential. On the 204PT Ingenium, monitor coolant levels and have the water pump inspected at 60,000 miles. At the first sign of cold‑start rattle, turbo noise or coolant loss, book an inspection immediately."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty - always confirm terms with your chosen supplier."

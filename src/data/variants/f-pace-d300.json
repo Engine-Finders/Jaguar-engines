@@ -52,7 +52,7 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "X761 F-Pace D300 (AJ20D6, 2021–present)",
+              "name": "X761 F-Pace D300 (AJ20D6, 2021-present)",
               "url": "https://jaguarengines.uk/f-pace/x761/"
             }
           ]
@@ -77,7 +77,7 @@
               "name": "How much does a Jaguar F-Pace D300 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned D300 3.0-litre Ingenium diesel engine typically costs £5,500–£8,500 supply only. Used engines are available from £3,500–£5,500. Rebuilt engines start from approximately £6,500. Fitting adds £1,300–£2,000 depending on your location and workshop. Main dealer new engines can exceed £14,000."
+                "text": "A reconditioned D300 3.0-litre Ingenium diesel engine typically costs £5,500-£8,500 supply only. Used engines are available from £3,500-£5,500. Rebuilt engines start from approximately £6,500. Fitting adds £1,300-£2,000 depending on your location and workshop. Main dealer new engines can exceed £14,000."
               }
             },
             {
@@ -117,7 +117,7 @@
               "name": "Can I repair the timing chain, or does it need full engine replacement?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes - if caught early. A preventative timing chain and tensioner replacement costs £1,200–£2,500. Oil dilution from failed DPF regenerations is a key contributor to timing chain wear. If ignored and the chain snaps, the engine is an interference design - pistons and valves collide, resulting in catastrophic engine damage. At the first sign of cold-start rattle, book an inspection immediately. Regular oil changes (10,000-mile intervals) are the single most effective preventative measure."
+                "text": "Yes - if caught early. A preventative timing chain and tensioner replacement costs £1,200-£2,500. Oil dilution from failed DPF regenerations is a key contributor to timing chain wear. If ignored and the chain snaps, the engine is an interference design - pistons and valves collide, resulting in catastrophic engine damage. At the first sign of cold-start rattle, book an inspection immediately. Regular oil changes (10,000-mile intervals) are the single most effective preventative measure."
               }
             }
           ]
@@ -178,7 +178,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar F-Pace D300 • 2021–present • 3.0L Straight-Six Twin-Turbo Diesel MHEV (AJ20D6)",
+    "tagPill": "Jaguar F-Pace D300 • 2021-present • 3.0L Straight-Six Twin-Turbo Diesel MHEV (AJ20D6)",
     "h1": "Jaguar F-Pace D300 Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Jaguar F-Pace specialists. Compare reconditioned, rebuilt and used 3.0-litre straight-six twin-turbo diesel engines with MHEV - supply & fit available nationwide.",
     "trustBadges": [
@@ -211,10 +211,10 @@
     "rows": [
       {
         "generation": "X761 F-Pace (facelift)",
-        "years": "2021–present",
+        "years": "2021-present",
         "engineCode": "AJ20D6 / AJ300D (3.0L Straight-Six Twin-Turbo Diesel MHEV)",
         "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£5,500–£8,500 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£5,500-£8,500 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "One engine throughout this badge's history - no era ambiguity."
       }
     ],
@@ -233,35 +233,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£3,500–£5,500",
-        "fittedIndie": "£4,800–£7,200",
-        "warranty": "1–6 months",
+        "supplyOnly": "£3,500-£5,500",
+        "fittedIndie": "£4,800-£7,200",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; lower-mileage examples"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£5,500–£8,500",
-        "fittedIndie": "£6,800–£10,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£5,500-£8,500",
+        "fittedIndie": "£6,800-£10,000",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£6,500–£9,500",
-        "fittedIndie": "£7,800–£11,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£6,500-£9,500",
+        "fittedIndie": "£7,800-£11,000",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£10,000–£14,000+",
-        "fittedIndie": "£11,500–£16,000+",
-        "warranty": "24–36 months",
+        "supplyOnly": "£10,000-£14,000+",
+        "fittedIndie": "£11,500-£16,000+",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs, warranty claims"
       }
     ],
     "figuresNote": "Figures above reflect the AJ20D6 3.0-litre Ingenium diesel engine. Rebuilt engines are available from approximately £6,500. Main dealer new engines can exceed £14,000.",
-    "labourEstimate": "Fitting an F-Pace D300 engine typically takes 14–18 hours at £75–£110/hr (independent) or £130–£180/hr (London/SE dealer).",
+    "labourEstimate": "Fitting an F-Pace D300 engine typically takes 14-18 hours at £75-£110/hr (independent) or £130-£180/hr (London/SE dealer).",
     "cta": {
       "label": "→ Compare D300 engine prices from UK specialists",
       "href": "/quote"
@@ -273,9 +273,9 @@
         "id": 1,
         "title": "Timing Chain Stretch & Oil Dilution",
         "symptoms": "Rattling noise on cold start, metallic ticking from the engine, engine warning light, DPF filling prematurely, oil level rising on the dipstick.",
-        "typicalMileage": "50,000–100,000 miles",
-        "repairCost": "£1,200–£2,500 (chain + tensioner replacement)【PLACEHOLDER - confirm vs cost sheet】",
-        "replacementCost": "£5,500–£9,500 (if chain snaps and pistons strike valves)",
+        "typicalMileage": "50,000-100,000 miles",
+        "repairCost": "£1,200-£2,500 (chain + tensioner replacement)【PLACEHOLDER - confirm vs cost sheet】",
+        "replacementCost": "£5,500-£9,500 (if chain snaps and pistons strike valves)",
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
@@ -291,8 +291,8 @@
         "id": 2,
         "title": "DPF Clogging & Regeneration Issues",
         "symptoms": "DPF warning light, reduced performance, increased fuel consumption, failed regeneration cycles, oil dilution.",
-        "typicalMileage": "40,000–80,000 miles (urban-driven vehicles)",
-        "repairCost": "£300–£900 (forced regeneration, DPF clean)【PLACEHOLDER - confirm vs cost sheet】",
+        "typicalMileage": "40,000-80,000 miles (urban-driven vehicles)",
+        "repairCost": "£300-£900 (forced regeneration, DPF clean)【PLACEHOLDER - confirm vs cost sheet】",
         "replacementCost": "N/A - repair only",
         "urgency": {
           "icon": "🟡",
@@ -309,8 +309,8 @@
         "id": 3,
         "title": "EGR Cooler Failures",
         "symptoms": "Coolant loss with no visible external leak, white exhaust smoke, engine management light, overheating.",
-        "typicalMileage": "40,000–80,000 miles",
-        "repairCost": "£500–£1,000 (EGR cooler replacement)【PLACEHOLDER - confirm vs cost sheet】",
+        "typicalMileage": "40,000-80,000 miles",
+        "repairCost": "£500-£1,000 (EGR cooler replacement)【PLACEHOLDER - confirm vs cost sheet】",
         "replacementCost": "N/A - repair only",
         "urgency": {
           "icon": "🟠",
@@ -347,31 +347,31 @@
         {
           "problem": "Timing chain stretch",
           "repairable": "✅ Yes",
-          "typicalCost": "£1,200–£2,500",
+          "typicalCost": "£1,200-£2,500",
           "whenItMakesSense": "Preventative - catches the fault before catastrophic failure"
         },
         {
           "problem": "DPF clogging",
           "repairable": "✅ Yes",
-          "typicalCost": "£300–£900",
+          "typicalCost": "£300-£900",
           "whenItMakesSense": "Forced regeneration or DPF clean - less than replacement"
         },
         {
           "problem": "EGR cooler failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£500–£1,000",
+          "typicalCost": "£500-£1,000",
           "whenItMakesSense": "Specialist repair available; cheaper than engine replacement"
         },
         {
           "problem": "Oil dilution",
           "repairable": "✅ Yes",
-          "typicalCost": "£100–£300",
+          "typicalCost": "£100-£300",
           "whenItMakesSense": "More frequent oil changes (10,000-mile intervals)"
         },
         {
           "problem": "Timing chain snap (valve contact)",
           "repairable": "❌ Usually No",
-          "typicalCost": "£5,500–£9,500",
+          "typicalCost": "£5,500-£9,500",
           "whenItMakesSense": "Typically requires full engine replacement or complete rebuild"
         }
       ]
@@ -391,7 +391,7 @@
         "* Engine warning light with timing, EGR, or DPF codes and no diagnosis"
       ]
     },
-    "closingVerdict": "The D300 is the pick of the F-Pace diesel range - a smooth, powerful straight-six that represents JLR's most refined diesel engine. It's significantly more robust than the 2.0-litre diesel, with fewer reported issues. But it's still a modern diesel with modern diesel problems - timing chain vigilance, DPF maintenance, and EGR cooler attention are the price of entry. Buy on documented history, not on faith. A well-maintained D300 is a £35,000–£55,000 premium SUV; a neglected one is a £7,000 engine replacement waiting to happen.",
+    "closingVerdict": "The D300 is the pick of the F-Pace diesel range - a smooth, powerful straight-six that represents JLR's most refined diesel engine. It's significantly more robust than the 2.0-litre diesel, with fewer reported issues. But it's still a modern diesel with modern diesel problems - timing chain vigilance, DPF maintenance, and EGR cooler attention are the price of entry. Buy on documented history, not on faith. A well-maintained D300 is a £35,000-£55,000 premium SUV; a neglected one is a £7,000 engine replacement waiting to happen.",
     "cta": {
       "label": "→ Compare D300 engine prices before you buy",
       "href": "/quote"
@@ -401,7 +401,7 @@
     "intro": "Before you buy a used Jaguar F-Pace D300 (or before you commit to an engine replacement), check these:",
     "items": [
       "* Cold Start - Listen for rattling or metallic ticking (timing chain stretch warning)",
-      "* Service History - including the D300 era (2021–present) and confirmed oil-change intervals using 0W-20 JLR-spec oil - ideally every 10,000 miles",
+      "* Service History - including the D300 era (2021-present) and confirmed oil-change intervals using 0W-20 JLR-spec oil - ideally every 10,000 miles",
       "* DPF Check - Check for DPF warning light or evidence of regeneration issues (urban-driven vehicles are high risk)",
       "* Oil Level - Check the dipstick; rising oil level indicates fuel dilution from failed DPF regenerations",
       "* Smoke Check - White smoke on startup can indicate EGR coolant leak",
@@ -421,10 +421,10 @@
     "rows": [
       {
         "engineCode": "AJ20D6 / AJ300D (3.0L Straight-Six Twin-Turbo Diesel MHEV)",
-        "years": "2021–present",
-        "power": "300 PS (221 kW / 296 bhp) @ 4,000 rpm · 650 Nm @ 1,500–2,500 rpm",
+        "years": "2021-present",
+        "power": "300 PS (221 kW / 296 bhp) @ 4,000 rpm · 650 Nm @ 1,500-2,500 rpm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£5,500–£8,500 [PLACEHOLDER - confirm vs cost sheet]"
+        "avgReconCost": "£5,500-£8,500 [PLACEHOLDER - confirm vs cost sheet]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -466,11 +466,11 @@
       },
       {
         "label": "Average Enquiry Mileage",
-        "value": "35,000–60,000 miles [PATTERN DATA]"
+        "value": "35,000-60,000 miles [PATTERN DATA]"
       },
       {
         "label": "Average Replacement Cost",
-        "value": "£5,500–£8,500 reconditioned, supply only [PLACEHOLDER - confirm vs cost sheet]"
+        "value": "£5,500-£8,500 reconditioned, supply only [PLACEHOLDER - confirm vs cost sheet]"
       },
       {
         "label": "Most Requested Engine Code",
@@ -491,7 +491,7 @@
       {
         "id": 1,
         "question": "How much does a Jaguar F-Pace D300 engine replacement cost in the UK?",
-        "answer": "A reconditioned D300 3.0-litre Ingenium diesel engine typically costs £5,500–£8,500 supply only. Used engines are available from £3,500–£5,500. Rebuilt engines start from approximately £6,500. Fitting adds £1,300–£2,000 depending on your location and workshop. Main dealer new engines can exceed £14,000."
+        "answer": "A reconditioned D300 3.0-litre Ingenium diesel engine typically costs £5,500-£8,500 supply only. Used engines are available from £3,500-£5,500. Rebuilt engines start from approximately £6,500. Fitting adds £1,300-£2,000 depending on your location and workshop. Main dealer new engines can exceed £14,000."
       },
       {
         "id": 2,
@@ -516,7 +516,7 @@
       {
         "id": 6,
         "question": "Can I repair the timing chain, or does it need full engine replacement?",
-        "answer": "Yes - if caught early. A preventative timing chain and tensioner replacement costs £1,200–£2,500. Oil dilution from failed DPF regenerations is a key contributor to timing chain wear. If ignored and the chain snaps, the engine is an interference design - pistons and valves collide, resulting in catastrophic engine damage. At the first sign of cold-start rattle, book an inspection immediately. Regular oil changes (10,000-mile intervals) are the single most effective preventative measure."
+        "answer": "Yes - if caught early. A preventative timing chain and tensioner replacement costs £1,200-£2,500. Oil dilution from failed DPF regenerations is a key contributor to timing chain wear. If ignored and the chain snaps, the engine is an interference design - pistons and valves collide, resulting in catastrophic engine damage. At the first sign of cold-start rattle, book an inspection immediately. Regular oil changes (10,000-mile intervals) are the single most effective preventative measure."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier."

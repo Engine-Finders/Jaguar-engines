@@ -95,7 +95,7 @@
               "name": "How much does a Jaguar XE 20d engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned XE 20d engine (204DTD or 204DTH) typically costs £3,500–£6,000 supply only depending on generation. A replacement 204DTH engine costs on average £6,213 in good condition. A complete fitted replacement for a single‑turbo Ingenium diesel is approximately £8,592 including VAT. Fitting adds £1,200–£1,800. Use our calculator for a figure specific to your vehicle."
+                "text": "A reconditioned XE 20d engine (204DTD or 204DTH) typically costs £3,500-£6,000 supply only depending on generation. A replacement 204DTH engine costs on average £6,213 in good condition. A complete fitted replacement for a single‑turbo Ingenium diesel is approximately £8,592 including VAT. Fitting adds £1,200-£1,800. Use our calculator for a figure specific to your vehicle."
               }
             },
             {
@@ -103,7 +103,7 @@
               "name": "Is the Jaguar XE 20d engine reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The Ingenium 2.0 diesel offers excellent fuel economy and refinement, but it has a well‑documented weakness: premature timing chain stretch and failure. The chain is mounted at the rear of the engine, against the firewall, making access labour‑intensive. The 2020‑2024 facelift models (204DTH) offer improved injectors and ECU calibration, but the timing chain vulnerability remains a concern. With regular oil changes and proactive maintenance, it can be a capable engine – but the timing chain risk is ever‑present."
+                "text": "The Ingenium 2.0 diesel offers excellent fuel economy and refinement, but it has a well‑documented weakness: premature timing chain stretch and failure. The chain is mounted at the rear of the engine, against the firewall, making access labour‑intensive. The 2020‑2024 facelift models (204DTH) offer improved injectors and ECU calibration, but the timing chain vulnerability remains a concern. With regular oil changes and proactive maintenance, it can be a capable engine - but the timing chain risk is ever‑present."
               }
             },
             {
@@ -111,7 +111,7 @@
               "name": "What are the common problems with the Jaguar XE 20d?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The most serious issue is timing chain stretch – the chain, guides, and tensioners can wear prematurely, causing chain stretch. If it stretches too far, it can 'jump' a tooth or snap, causing catastrophic engine damage. Other common problems include EGR valve/cooler failure, DPF blockage from urban driving, turbocharger failure, and oil leaks."
+                "text": "The most serious issue is timing chain stretch - the chain, guides, and tensioners can wear prematurely, causing chain stretch. If it stretches too far, it can 'jump' a tooth or snap, causing catastrophic engine damage. Other common problems include EGR valve/cooler failure, DPF blockage from urban driving, turbocharger failure, and oil leaks."
               }
             },
             {
@@ -119,7 +119,7 @@
               "name": "Is it worth replacing an XE 20d engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on vehicle value and condition. Against a tidy £5,000–£15,000 XE, a £3,500–£6,650 recon is 25‑65% of the car's value – often worth it on well‑maintained examples. If the timing chain has snapped and caused valve damage, a full engine replacement may be necessary. A replacement 204DTH engine costs on average £6,213. Get a full diagnostic assessment before committing."
+                "text": "Depends on vehicle value and condition. Against a tidy £5,000-£15,000 XE, a £3,500-£6,650 recon is 25‑65% of the car's value - often worth it on well‑maintained examples. If the timing chain has snapped and caused valve damage, a full engine replacement may be necessary. A replacement 204DTH engine costs on average £6,213. Get a full diagnostic assessment before committing."
               }
             },
             {
@@ -127,7 +127,7 @@
               "name": "How do I find my XE's engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The pre‑facelift X760 (2015–2019) uses the 204DTD (AJ20D4) – check for the rear‑mounted timing chain design. The facelift X760 (2020–2024) uses the 204DTH (AJ20D4) – the updated variant with improved injectors and ECU. The engine code is stamped on the engine block and listed on your V5C."
+                "text": "The pre‑facelift X760 (2015-2019) uses the 204DTD (AJ20D4) - check for the rear‑mounted timing chain design. The facelift X760 (2020-2024) uses the 204DTH (AJ20D4) - the updated variant with improved injectors and ECU. The engine code is stamped on the engine block and listed on your V5C."
               }
             },
             {
@@ -135,7 +135,7 @@
               "name": "Can I repair an XE 20d engine issue, or does it need replacement?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Most issues – timing chain wear (if caught early), EGR valve failure, DPF blockage, turbocharger failure – are repairable. However, if the timing chain has snapped, the engine is an interference design – pistons will strike valves. In this case, a full engine replacement is usually more cost‑effective than a rebuild. A replacement 204DTH engine costs on average £6,213."
+                "text": "Most issues - timing chain wear (if caught early), EGR valve failure, DPF blockage, turbocharger failure - are repairable. However, if the timing chain has snapped, the engine is an interference design - pistons will strike valves. In this case, a full engine replacement is usually more cost‑effective than a rebuild. A replacement 204DTH engine costs on average £6,213."
               }
             }
           ]
@@ -196,7 +196,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar XE 20d • 2015–present • 2.0L Turbo Diesel (<a href='https://jaguarengines.uk/engine/ajd4-204dtd'>204DTD</a> / 204DTH)",
+    "tagPill": "Jaguar XE 20d • 2015-present • 2.0L Turbo Diesel (<a href='https://jaguarengines.uk/engine/ajd4-204dtd'>204DTD</a> / 204DTH)",
     "h1": "Jaguar XE 20d Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Jaguar specialists. Compare reconditioned, rebuilt and used <a href='https://jaguarengines.uk/engine/ingenium-2-0-diesel'>Ingenium 2.0-litre turbo diesel</a> engines for the XE 20d - the most popular diesel in Jaguar's compact executive saloon range. Supply & fit available nationwide.",
     "trustBadges": [
@@ -229,18 +229,18 @@
     "rows": [
       {
         "generation": "X760 (Pre‑facelift)",
-        "years": "2015–2019",
+        "years": "2015-2019",
         "engineCode": "204DTD (AJ20D4, 2.0L Turbo Diesel I4)",
         "reliability": "★★½☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£3,500–£5,500 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£3,500-£5,500 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "163‑180 PS - rear‑mounted timing chain is the defining weakness"
       },
       {
         "generation": "X760 (Facelift)",
-        "years": "2020–2024",
+        "years": "2020-2024",
         "engineCode": "204DTH (AJ20D4, 2.0L Turbo Diesel I4)",
         "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£3,800–£6,000 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£3,800-£6,000 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "163‑180 PS - updated injectors and ECU, improved but not immune to chain issues"
       }
     ],
@@ -259,30 +259,30 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£1,500–£3,000",
-        "fittedIndie": "£2,500–£4,500",
-        "warranty": "1–6 months",
+        "supplyOnly": "£1,500-£3,000",
+        "fittedIndie": "£2,500-£4,500",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; short‑term ownership"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£3,500–£5,500",
-        "fittedIndie": "£4,800–£7,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£3,500-£5,500",
+        "fittedIndie": "£4,800-£7,000",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£4,500–£6,650",
-        "fittedIndie": "£5,800–£8,200",
-        "warranty": "12–24 months",
+        "supplyOnly": "£4,500-£6,650",
+        "fittedIndie": "£5,800-£8,200",
+        "warranty": "12-24 months",
         "bestFor": "Long‑term ownership; maximum reliability"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£7,000–£9,500",
-        "fittedIndie": "£8,500–£11,500",
-        "warranty": "24–36 months",
+        "supplyOnly": "£7,000-£9,500",
+        "fittedIndie": "£8,500-£11,500",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs; warranty claims; full provenance"
       }
     ],
@@ -300,14 +300,14 @@
         "title": "Timing Chain Stretch & Failure (The Defining Weakness)",
         "symptoms": "Cold‑start rattle lasting 2‑5 seconds (especially noticeable on cold mornings), rattle persisting when warm or at idle, engine warning light with codes P0016 or P0341, rough idle, loss of power, excessive black/grey smoke under acceleration - eventual catastrophic failure if ignored.",
         "typicalMileage": "60,000‑120,000 miles - most frequently reported in vehicles built 2015‑2019.",
-        "repairCost": "£1,800–£4,500+ [PLACEHOLDER] (timing chain, guides, and tensioner replacement - engine or gearbox removal required).",
-        "replacementCost": "£4,000–£8,000+ [PLACEHOLDER] (if chain snaps and damages the engine).",
+        "repairCost": "£1,800-£4,500+ [PLACEHOLDER] (timing chain, guides, and tensioner replacement - engine or gearbox removal required).",
+        "replacementCost": "£4,000-£8,000+ [PLACEHOLDER] (if chain snaps and damages the engine).",
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
           "text": "if you hear cold‑start rattle, stop driving and book a specialist inspection immediately."
         },
-        "recommendation": "This is the single most critical issue affecting the Ingenium 2.0 diesel. The timing chain sits at the rear of the engine, against the firewall, making access disproportionately labour‑intensive. The chain, guides, and tensioners can wear prematurely, causing chain stretch. If the chain stretches too far, it can \"jump\" a tooth or snap, causing pistons to strike open valves in this interference engine. A £1,800–£4,500 preventative chain replacement is far cheaper than a £4,000–£8,000 engine replacement. At the first sign of cold‑start rattle - and if you own a 2.0‑litre Ingenium diesel from 2015 onwards - have the timing system inspected immediately.",
+        "recommendation": "This is the single most critical issue affecting the Ingenium 2.0 diesel. The timing chain sits at the rear of the engine, against the firewall, making access disproportionately labour‑intensive. The chain, guides, and tensioners can wear prematurely, causing chain stretch. If the chain stretches too far, it can \"jump\" a tooth or snap, causing pistons to strike open valves in this interference engine. A £1,800-£4,500 preventative chain replacement is far cheaper than a £4,000-£8,000 engine replacement. At the first sign of cold‑start rattle - and if you own a 2.0‑litre Ingenium diesel from 2015 onwards - have the timing system inspected immediately.",
         "failureLink": {
           "label": "",
           "href": "/failures/timing-chain-diagnosis-guide"
@@ -318,7 +318,7 @@
         "title": "EGR Valve & Cooler Failure",
         "symptoms": "Rough idle, engine warning light, loss of power, limp mode (particularly when the EGR valve is open above 1,500‑1,700 rpm), poor fuel economy, black smoke from exhaust.",
         "typicalMileage": "40,000‑80,000 miles.",
-        "repairCost": "£400–£1,200 [PLACEHOLDER] (EGR valve or cooler cleaning/replacement).",
+        "repairCost": "£400-£1,200 [PLACEHOLDER] (EGR valve or cooler cleaning/replacement).",
         "replacementCost": "N/A - repair only (if caught early; ignored EGR issues can lead to more extensive engine problems).",
         "urgency": {
           "icon": "🟠",
@@ -335,8 +335,8 @@
         "id": 3,
         "title": "DPF Blockage (Urban Driving)",
         "symptoms": "Reduced power, increased fuel consumption, engine warning light, DPF warning message, black smoke on acceleration, failed emissions test.",
-        "typicalMileage": "30,000–60,000 miles (depends on driving patterns).",
-        "repairCost": "£400–£1,500 [PLACEHOLDER] (DPF cleaning, forced regeneration, or replacement).",
+        "typicalMileage": "30,000-60,000 miles (depends on driving patterns).",
+        "repairCost": "£400-£1,500 [PLACEHOLDER] (DPF cleaning, forced regeneration, or replacement).",
         "replacementCost": "N/A - repair only (if caught early).",
         "urgency": {
           "icon": "🟡",
@@ -354,7 +354,7 @@
         "title": "Turbocharger Failure",
         "symptoms": "Sudden loss of power, excessive exhaust smoke (black or blue), whistling or grinding noise from the engine bay, engine warning light, limp mode, reduced fuel economy.",
         "typicalMileage": "60,000‑100,000 miles.",
-        "repairCost": "£800–£2,000 [PLACEHOLDER] (turbocharger replacement).",
+        "repairCost": "£800-£2,000 [PLACEHOLDER] (turbocharger replacement).",
         "replacementCost": "N/A - repair only (if caught early; ignored turbo failure can send debris into the engine).",
         "urgency": {
           "icon": "🟠",
@@ -391,37 +391,37 @@
         {
           "problem": "Timing chain stretch (early)",
           "repairable": "✅ Yes",
-          "typicalCost": "£1,800–£4,500+ [PLACEHOLDER]",
+          "typicalCost": "£1,800-£4,500+ [PLACEHOLDER]",
           "whenItMakesSense": "Catch it early - cheaper than engine replacement"
         },
         {
           "problem": "Timing chain snapped",
           "repairable": "❌ Usually No",
-          "typicalCost": "£4,000–£8,000+",
+          "typicalCost": "£4,000-£8,000+",
           "whenItMakesSense": "Full engine replacement - valve damage is almost certain"
         },
         {
           "problem": "EGR valve / cooler failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£400–£1,200 [PLACEHOLDER]",
+          "typicalCost": "£400-£1,200 [PLACEHOLDER]",
           "whenItMakesSense": "Worth fixing - common and well‑understood repair"
         },
         {
           "problem": "DPF blockage",
           "repairable": "✅ Yes",
-          "typicalCost": "£400–£1,500 [PLACEHOLDER]",
+          "typicalCost": "£400-£1,500 [PLACEHOLDER]",
           "whenItMakesSense": "Routine maintenance - always worth doing"
         },
         {
           "problem": "Turbocharger failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£800–£2,000 [PLACEHOLDER]",
+          "typicalCost": "£800-£2,000 [PLACEHOLDER]",
           "whenItMakesSense": "Worth fixing - common and well‑understood repair"
         },
         {
           "problem": "Major internal failure",
           "repairable": "❌ Usually No",
-          "typicalCost": "£3,500–£6,650+",
+          "typicalCost": "£3,500-£6,650+",
           "whenItMakesSense": "Full engine replacement often more cost‑effective"
         }
       ]
@@ -471,17 +471,17 @@
     "rows": [
       {
         "engineCode": "204DTD (AJ20D4, 2.0L Turbo Diesel I4)",
-        "years": "2015–2019",
+        "years": "2015-2019",
         "power": "163‑180 PS (120‑132 kW) / 380‑430 Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£3,500–£5,500 [PLACEHOLDER]"
+        "avgReconCost": "£3,500-£5,500 [PLACEHOLDER]"
       },
       {
         "engineCode": "204DTH (AJ20D4, 2.0L Turbo Diesel I4)",
-        "years": "2020–2024",
+        "years": "2020-2024",
         "power": "163‑180 PS (120‑132 kW) / 380‑430 Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£3,800–£6,000 [PLACEHOLDER]"
+        "avgReconCost": "£3,800-£6,000 [PLACEHOLDER]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -539,7 +539,7 @@
       },
       {
         "label": "Average Enquiry Mileage",
-        "value": "50,000–80,000 miles [PATTERN DATA]"
+        "value": "50,000-80,000 miles [PATTERN DATA]"
       },
       {
         "label": "Average Replacement Cost",
@@ -564,7 +564,7 @@
       {
         "id": 1,
         "question": "How much does a Jaguar XE 20d engine replacement cost in the UK?",
-        "answer": "A reconditioned XE 20d engine (204DTD or 204DTH) typically costs £3,500–£6,000 supply only depending on generation. A replacement 204DTH engine costs on average £6,213 in good condition. A complete fitted replacement for a single‑turbo Ingenium diesel is approximately £8,592 including VAT. Fitting adds £1,200–£1,800. Use our calculator for a figure specific to your vehicle."
+        "answer": "A reconditioned XE 20d engine (204DTD or 204DTH) typically costs £3,500-£6,000 supply only depending on generation. A replacement 204DTH engine costs on average £6,213 in good condition. A complete fitted replacement for a single‑turbo Ingenium diesel is approximately £8,592 including VAT. Fitting adds £1,200-£1,800. Use our calculator for a figure specific to your vehicle."
       },
       {
         "id": 2,
@@ -579,12 +579,12 @@
       {
         "id": 4,
         "question": "Is it worth replacing an XE 20d engine, or should I scrap the car?",
-        "answer": "Depends on vehicle value and condition. Against a tidy £5,000–£15,000 XE, a £3,500–£6,650 recon is 25‑65% of the car's value - often worth it on well‑maintained examples. If the timing chain has snapped and caused valve damage, a full engine replacement may be necessary. A replacement 204DTH engine costs on average £6,213. Get a full diagnostic assessment before committing."
+        "answer": "Depends on vehicle value and condition. Against a tidy £5,000-£15,000 XE, a £3,500-£6,650 recon is 25‑65% of the car's value - often worth it on well‑maintained examples. If the timing chain has snapped and caused valve damage, a full engine replacement may be necessary. A replacement 204DTH engine costs on average £6,213. Get a full diagnostic assessment before committing."
       },
       {
         "id": 5,
         "question": "How do I find my XE's engine code?",
-        "answer": "The pre‑facelift X760 (2015–2019) uses the 204DTD (AJ20D4) - check for the rear‑mounted timing chain design. The facelift X760 (2020–2024) uses the 204DTH (AJ20D4) - the updated variant with improved injectors and ECU. The engine code is stamped on the engine block and listed on your V5C."
+        "answer": "The pre‑facelift X760 (2015-2019) uses the 204DTD (AJ20D4) - check for the rear‑mounted timing chain design. The facelift X760 (2020-2024) uses the 204DTH (AJ20D4) - the updated variant with improved injectors and ECU. The engine code is stamped on the engine block and listed on your V5C."
       },
       {
         "id": 6,

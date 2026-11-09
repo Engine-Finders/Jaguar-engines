@@ -15,8 +15,8 @@
       {
         "model": "XF X250 (AJ126)",
         "image": { "alt": "XF X250" },
-        "vehicleValue": "£4,000–£12,000 [THIRD-PARTY]",
-        "replacementCost": "£4,500–£7,500 [EM-QUOTE]",
+        "vehicleValue": "£4,000-£12,000 [THIRD-PARTY]",
+        "replacementCost": "£4,500-£7,500 [EM-QUOTE]",
         "verdict": {
           "text": "Watch - sub-£7k examples approach the threshold",
           "type": "watch"
@@ -26,8 +26,8 @@
       {
         "model": "X-Type X400",
         "image": { "alt": "X-Type X400" },
-        "vehicleValue": "£1,500–£5,000 [THIRD-PARTY]",
-        "replacementCost": "£2,500–£5,800 [EM-QUOTE]",
+        "vehicleValue": "£1,500-£5,000 [THIRD-PARTY]",
+        "replacementCost": "£2,500-£5,800 [EM-QUOTE]",
         "verdict": {
           "text": "Scrap threshold - recon cost frequently exceeds car value",
           "type": "scrap"
@@ -37,8 +37,8 @@
       {
         "model": "F-Pace X761",
         "image": { "alt": "F-Pace X761" },
-        "vehicleValue": "£12,000–£38,000 [THIRD-PARTY]",
-        "replacementCost": "£3,000–£5,800 [EM-QUOTE]",
+        "vehicleValue": "£12,000-£38,000 [THIRD-PARTY]",
+        "replacementCost": "£3,000-£5,800 [EM-QUOTE]",
         "verdict": {
           "text": "Safe - replacement viable across all engine variants",
           "type": "safe"
@@ -48,8 +48,8 @@
       {
         "model": "XJ X351 (<a href='https://jaguarengines.uk/engine/aj133'>AJ133</a>)",
         "image": { "alt": "XJ X351" },
-        "vehicleValue": "£8,000–£25,000 [THIRD-PARTY]",
-        "replacementCost": "£4,500–£9,000 [EM-QUOTE]",
+        "vehicleValue": "£8,000-£25,000 [THIRD-PARTY]",
+        "replacementCost": "£4,500-£9,000 [EM-QUOTE]",
         "verdict": {
           "text": "Safe - flagship values absorb even the upper recon cost",
           "type": "safe"
@@ -59,8 +59,8 @@
       {
         "model": "XF X260",
         "image": { "alt": "XF X260" },
-        "vehicleValue": "£8,000–£25,000 [THIRD-PARTY]",
-        "replacementCost": "£3,000–£5,800 [EM-QUOTE]",
+        "vehicleValue": "£8,000-£25,000 [THIRD-PARTY]",
+        "replacementCost": "£3,000-£5,800 [EM-QUOTE]",
         "verdict": {
           "text": "Safe - well within value even at the upper recon cost",
           "type": "safe"
@@ -70,8 +70,8 @@
       {
         "model": "S-Type X200",
         "image": { "alt": "S-Type X200" },
-        "vehicleValue": "£1,500–£5,500 [THIRD-PARTY]",
-        "replacementCost": "£4,500–£7,500 [EM-QUOTE]",
+        "vehicleValue": "£1,500-£5,500 [THIRD-PARTY]",
+        "replacementCost": "£4,500-£7,500 [EM-QUOTE]",
         "verdict": {
           "text": "Scrap threshold - recon cost seldom justified",
           "type": "scrap"

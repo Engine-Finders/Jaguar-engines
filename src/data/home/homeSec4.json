@@ -35,7 +35,7 @@
     {
       "ranking": "Best Used Buy",
       "icon": "tag",
-      "winner": "XF X260 (2015–2024)",
+      "winner": "XF X260 (2015-2024)",
       "why": "A well-valued executive saloon with the revised Ingenium range and replacement viable across almost every example.",
       "verdict": { "text": "Safe", "type": "safe" },
       "href": "/xf/x260"
@@ -44,14 +44,14 @@
       "ranking": "Most Expensive Failure",
       "icon": "flame",
       "winner": "276DT (2.7 TDV6) Oil Pump Failure",
-      "why": "Shared with Land Rover's Discovery 3  often kills the engine outright with little warning. £5,000–£7,500 recon.",
+      "why": "Shared with Land Rover's Discovery 3  often kills the engine outright with little warning. £5,000-£7,500 recon.",
       "verdict": { "text": "Avoid", "type": "avoid" },
       "href": "/engine/ajd-v6-diesel"
     },
     {
       "ranking": "Safest Jaguar to Buy",
       "icon": "shield",
-      "winner": "E-Pace X540 (2017–present)",
+      "winner": "E-Pace X540 (2017-present)",
       "why": "Compact SUV values comfortably absorb the modern Ingenium's replacement cost  safe across the board.",
       "verdict": { "text": "Safe", "type": "safe" },
       "href": "/e-pace/x540"
@@ -59,7 +59,7 @@
     {
       "ranking": "Highest Risk Purchase",
       "icon": "warning",
-      "winner": "X-Type X400 (2001–2009)",
+      "winner": "X-Type X400 (2001-2009)",
       "why": "Rapid depreciation plus genuine reliability concerns on pre-2007 cars  replacement cost frequently exceeds vehicle value.",
       "verdict": { "text": "Watch", "type": "watch" },
       "href": "/x-type/x400"
@@ -75,7 +75,7 @@
     {
       "ranking": "Best Long-Term Keeper",
       "icon": "long-term",
-      "winner": "XJ X351 (2010–2019)",
+      "winner": "XJ X351 (2010-2019)",
       "why": "Flagship values comfortably absorb even the <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a>'s upper recon cost  the keeper's Jaguar.",
       "verdict": { "text": "Best", "type": "best" },
       "href": "/xj/x351"

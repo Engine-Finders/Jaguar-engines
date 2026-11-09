@@ -178,7 +178,7 @@ export default function HomeSec1({ data }) {
 
           </div>
 
-          {/* Stats strip — open columns below 1280px; a frosted card on desktop, where it sits over the photo */}
+          {/* Stats strip - open columns below 1280px; a frosted card on desktop, where it sits over the photo */}
           <ul
             className={`relative mt-[42vw] grid grid-cols-4 md:mt-[16vw] md:max-w-[700px] xl:mt-0 xl:rounded-lg xl:border xl:py-1.5 xl:backdrop-blur-xl ${
               isDark
@@ -220,7 +220,7 @@ export default function HomeSec1({ data }) {
           <HeroRegCta label={ctaLabel} href={ctaHref} className="relative mt-1 md:mt-2" />
         </div>
 
-        {/* Trust badges glass panel — larger icons on mobile only */}
+        {/* Trust badges glass panel - larger icons on mobile only */}
         {trustBadges.length > 0 ? (
           <div
             className={`mt-3.5 w-full max-w-[1000px] overflow-hidden rounded-md backdrop-blur-xl md:mt-5 md:rounded-xl md:border md:shadow-[0_14px_36px_rgba(16,18,16,0.1)] ${

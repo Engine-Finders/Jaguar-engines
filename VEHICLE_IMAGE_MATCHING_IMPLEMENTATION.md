@@ -30,7 +30,7 @@ visitor types reg
       │  redirect:  /form/form?vrm=..&year=..&brand={make}&series={model}
       │                       &engineCapacity=..&fuelType=..
       ▼
-[2] quote form page (form.html) reads the URL, shows "Make – Series – Year",
+[2] quote form page (form.html) reads the URL, shows "Make - Series - Year",
       and sets  <img src="/vehicle-image.php?make=..&series=..&model=..&year=..">
       │
       ▼
@@ -42,7 +42,7 @@ Nothing about the picture is stored in a database or a manifest. The folder **is
 
 ---
 
-## 2. Step 1 – the registration lookup (browser JavaScript)
+## 2. Step 1 - the registration lookup (browser JavaScript)
 
 **Endpoint (GET):**
 `https://api.checkcardetails.co.uk/vehicledata/vehicleregistration?apikey=<KEY>&vrm=<REG>`
@@ -91,7 +91,7 @@ This is the complete JSON, so these are all the fields the endpoint returned for
 
 **What the matcher does with this exact reply** (ran the real `vehicle-image.php` locally with
 `make=ROVER`, `series=RANGE ROVER`, `year=1970`): it streams
-`land rover-range rover-l460-hse-suv-2022–-new-eiger grey-l460 hse-45-angle-front-view.webp`,
+`land rover-range rover-l460-hse-suv-2022--new-eiger grey-l460 hse-45-angle-front-view.webp`,
 a 2022 grey Range Rover L460, for what is really a green 1970 car. Only the words "range rover"
 matched, the make did not, and the +40 year bonus was not available. This is a good regression
 test for any improved matcher: a 1970 Rover Range Rover should show a classic Range Rover image,
@@ -148,7 +148,7 @@ the script**, or that button does nothing (this exact gap broke 221 pages once).
 
 ---
 
-## 3. Step 2 – the quote form reads the URL and requests the picture
+## 3. Step 2 - the quote form reads the URL and requests the picture
 
 The form reads these query parameters:
 
@@ -165,7 +165,7 @@ const engine = urlParams.get("engine") || ""; // set by the engine-table "Get Qu
 - **Reg flow:** `make` = API make, `series` = API model, `model` = empty.
 - **Manual dropdown flow:** `series` and `model` both come from the dropdowns.
 - The form tidies `series` (removes a leading make word, e.g. "Range Rover Defender" → "Defender")
-  and shows a heading such as `Alfa Romeo – 145 – 1999`.
+  and shows a heading such as `Alfa Romeo - 145 - 1999`.
 
 It then requests the picture (only if it has a series or model):
 
@@ -188,7 +188,7 @@ Hidden fields posted with the lead: `vehicle_brand`, `vehicle_series`, `vehicle_
 
 ---
 
-## 4. Step 3 – `vehicle-image.php`, v1 (the matcher that was live)
+## 4. Step 3 - `vehicle-image.php`, v1 (the matcher that was live)
 
 ```php
 <?php
@@ -279,7 +279,7 @@ Highest score wins; on a tie the first file in `glob()` order wins. The file is 
   will see in the API's `model` string, and the production years (they drive the +40 year bonus).
 - The make-and-model picker on the site uses separate hard-coded paths in `data/models/*.json`
   (268 references). The reg flow does not use those.
-- Names are long and contain characters such as the en dash (–). On Windows this hits the
+- Names are long and contain characters such as the en dash (-). On Windows this hits the
   260-character path limit when copying or unzipping. Use a long-path-aware tool, keep names
   shorter, or avoid very long folder paths.
 
@@ -291,17 +291,17 @@ Inputs below are illustrative, not real API values:
 
 | make, series, year | picture chosen | problem |
 |---|---|---|
-| BMW, `320D`, 2015 | BMW **G20** 320d (2019–2022) | wrong generation (only 320d image available) |
+| BMW, `320D`, 2015 | BMW **G20** 320d (2019-2022) | wrong generation (only 320d image available) |
 | BMW, `3 SERIES`, 2015 | an **Audi A1 3-door** | the word "3" matches "3-door"; make is not required |
 | Mercedes-Benz, `A CLASS`, 2019 | a Mercedes **S-Class** | "class" matches "s-class" and the year bonus decides |
-| Audi, `A3`, 2016 | Audi A3 8V (2012–2016) | correct |
+| Audi, `A3`, 2016 | Audi A3 8V (2012-2016) | correct |
 
 Root causes: the make is never required, single-character or numeric words match anything,
 year is only a bonus, and ties are decided by file order.
 
 ---
 
-## 7. v2 – the strict tiered matcher (recommended; built and tested 2026-10-24)
+## 7. v2 - the strict tiered matcher (recommended; built and tested 2026-10-24)
 
 ### The rules
 
@@ -325,7 +325,7 @@ How it achieves that (all in the code below):
 - **Alternatives** for how the API writes the model versus how files are named: Mercedes
   `A 180 D` / `C220` → `a class` / `c class`, `GLC 220 D` → `glc`; BMW `330I` → `3 series`.
 - **Variant** = extra input words (e.g. "sportback", "m sport") also found in the file name.
-- **Year**: in range beats out of range, then the smaller gap wins. A name like `2022–` is treated as
+- **Year**: in range beats out of range, then the smaller gap wins. A name like `2022-` is treated as
   "still in production". It never overrides model or variant.
 
 ### The code (drop in as `vehicle-image.php` in the site root, next to `asset/`)
@@ -431,7 +431,7 @@ function vi_year_range(string $filename): ?array
     $years = array_map('intval', $m[0]);
     $first = min($years);
     $last = max($years);
-    if (preg_match('/((?:19|20)\d{2})\x{2013}(?!\d)/u', $filename)) {   // "2022–" = still in production
+    if (preg_match('/((?:19|20)\d{2})\x{2013}(?!\d)/u', $filename)) {   // "2022-" = still in production
         $last = max($last, (int) date('Y'));
     }
     return [$first, $last];
@@ -634,7 +634,7 @@ if (!defined('VEHICLE_IMAGE_NO_RUN')) {
 
 | make, series, year | result |
 |---|---|
-| ROVER, `RANGE ROVER`, 1970 | Land Rover Range Rover P38 (1994–2002), the oldest Range Rover in the library |
+| ROVER, `RANGE ROVER`, 1970 | Land Rover Range Rover P38 (1994-2002), the oldest Range Rover in the library |
 | BMW, `3 SERIES`, 2015 | BMW 3 Series (before: an Audi A1) |
 | BMW, `330I`, 2018 | BMW 3 Series, via the alternative `3 series` |
 | MERCEDES-BENZ, `A CLASS` / `A 180 D SE`, 2019 | A-Class (before: an S-Class) |
@@ -673,14 +673,14 @@ Bulk test: one synthetic lookup per photo (make + first model words + a year ins
 - [ ] Reg input + button with **every id bound** in JS, a double-click guard, Enter-key support and
       a clear error message for invalid regs.
 - [ ] Redirect (or ajax) to the quote form with `vrm, year, brand, series, engineCapacity, fuelType`.
-- [ ] Quote form reads those parameters, shows "Make – Series – Year", fills hidden fields
+- [ ] Quote form reads those parameters, shows "Make - Series - Year", fills hidden fields
       (including engine/capacity/fuel) and posts them with the lead.
 - [ ] Image library in one folder with consistent, descriptive filenames and only one photo type
       per car for the matcher.
 - [ ] `vehicle-image.php` (or equivalent) implementing **v2** from section 7; picture box hidden on 404.
 - [ ] Test script (below), a real-browser test, and a CDN purge after deploying.
 
-**Local test (PHP CLI)** – prints which file the script picks for given inputs:
+**Local test (PHP CLI)** - prints which file the script picks for given inputs:
 
 ```php
 <?php

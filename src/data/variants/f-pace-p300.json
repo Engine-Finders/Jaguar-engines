@@ -58,7 +58,7 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "X761 F-Pace 30t/P300 (PT204, 2017–2020)",
+              "name": "X761 F-Pace 30t/P300 (PT204, 2017-2020)",
               "url": "https://jaguarengines.uk/f-pace/x761/"
             }
           ]
@@ -83,7 +83,7 @@
               "name": "How much does a Jaguar F-Pace 30t / P300 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned F-Pace 30t/P300 engine typically costs £3,500–£5,500 supply only. Fitting adds £1,500–£2,500 depending on location and workshop rates. Customers have reported dealer quotes of around £15,000–£30,000 for engine replacement, while reconditioning or rebuilding is often in the £8,000–£10,000 range. Use our calculator for a figure specific to your car."
+                "text": "A reconditioned F-Pace 30t/P300 engine typically costs £3,500-£5,500 supply only. Fitting adds £1,500-£2,500 depending on location and workshop rates. Customers have reported dealer quotes of around £15,000-£30,000 for engine replacement, while reconditioning or rebuilding is often in the £8,000-£10,000 range. Use our calculator for a figure specific to your car."
               }
             },
             {
@@ -107,7 +107,7 @@
               "name": "Is it worth replacing a Jaguar F-Pace 30t / P300 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on vehicle value and condition. Against a well-kept £15,000–£25,000 F-Pace, a £4,500–£5,500 recon is 20–35% of the car's value. For a clean post-2019 example, replacement is almost always worth it. For pre-2019 models with no chain history, evaluate the car's overall condition before committing."
+                "text": "Depends on vehicle value and condition. Against a well-kept £15,000-£25,000 F-Pace, a £4,500-£5,500 recon is 20-35% of the car's value. For a clean post-2019 example, replacement is almost always worth it. For pre-2019 models with no chain history, evaluate the car's overall condition before committing."
               }
             },
             {
@@ -123,7 +123,7 @@
               "name": "Can I repair the PT204 timing chain, or does it need replacement?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes - if caught early. A preventative chain replacement (£1,500–£3,500) is far cheaper than a catastrophic chain failure (£5,500–£8,500 engine replacement). At the first sign of cold-start rattle, book an inspection immediately. The full fix was completed from 2019 onwards, so post-2019 Ingenium engines should be fine."
+                "text": "Yes - if caught early. A preventative chain replacement (£1,500-£3,500) is far cheaper than a catastrophic chain failure (£5,500-£8,500 engine replacement). At the first sign of cold-start rattle, book an inspection immediately. The full fix was completed from 2019 onwards, so post-2019 Ingenium engines should be fine."
               }
             }
           ]
@@ -184,7 +184,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar F-Pace 30t / P300 • 2017–2020 • 1 Engine Generation",
+    "tagPill": "Jaguar F-Pace 30t / P300 • 2017-2020 • 1 Engine Generation",
     "h1": "Jaguar F-Pace 30t / P300 Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Jaguar F-Pace specialists. The 2.0-litre Ingenium petrol (PT204) delivers 300 PS and 400 Nm - compare reconditioned, rebuilt and used engines with supply & fit available nationwide.",
     "trustBadges": [
@@ -217,10 +217,10 @@
     "rows": [
       {
         "generation": "X761",
-        "years": "2017–2020",
+        "years": "2017-2020",
         "engineCode": "PT204 (AJ200P)",
         "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£3,500–£5,500 [JAG-QUOTE]",
+        "reconCost": "£3,500-£5,500 [JAG-QUOTE]",
         "eraNote": "2.0L four-cylinder Ingenium petrol - 300 PS, 400 Nm. Timing chain and VCT issues on pre-2019 models"
       }
     ],
@@ -239,35 +239,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£1,500–£3,000",
-        "fittedIndie": "£2,500–£4,500",
-        "warranty": "1–6 months",
+        "supplyOnly": "£1,500-£3,000",
+        "fittedIndie": "£2,500-£4,500",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; lower-mileage donor"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£3,500–£5,500",
-        "fittedIndie": "£5,500–£7,500",
-        "warranty": "12–24 months",
+        "supplyOnly": "£3,500-£5,500",
+        "fittedIndie": "£5,500-£7,500",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£4,500–£6,500",
-        "fittedIndie": "£6,500–£8,500",
-        "warranty": "12–24 months",
+        "supplyOnly": "£4,500-£6,500",
+        "fittedIndie": "£6,500-£8,500",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£9,000–£15,000+",
-        "fittedIndie": "£11,000–£17,000+",
-        "warranty": "24–36 months",
+        "supplyOnly": "£9,000-£15,000+",
+        "fittedIndie": "£11,000-£17,000+",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs, warranty claims"
       }
     ],
     "figuresNote": "",
-    "labourEstimate": "Fitting an F-Pace 30t/P300 engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). The transverse engine layout adds complexity.",
+    "labourEstimate": "Fitting an F-Pace 30t/P300 engine typically takes 12-16 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer). The transverse engine layout adds complexity.",
     "cta": {
       "label": "→ Compare F-Pace 30t / P300 engine prices from UK specialists",
       "href": "/quote"
@@ -279,15 +279,15 @@
         "id": 1,
         "title": "Timing Chain Guide Failure & VCT Issues",
         "symptoms": "Rattling or knocking noise from the engine, especially on cold start, engine warning light, rough running, loss of power, misfires",
-        "typicalMileage": "40,000–80,000 miles",
-        "repairCost": "£1,500–£3,500 (timing chain kit, tensioners and guides)",
-        "replacementCost": "£5,500–£8,500 (if chain fails - full engine replacement)",
+        "typicalMileage": "40,000-80,000 miles",
+        "repairCost": "£1,500-£3,500 (timing chain kit, tensioners and guides)",
+        "replacementCost": "£5,500-£8,500 (if chain fails - full engine replacement)",
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
           "text": "if you hear rattle on cold start, book an inspection today"
         },
-        "recommendation": "The 2.0-litre Ingenium petrol engine's timing chain is a known weakness. The 2-litre weak point is the timing chain guides which do fail leading to catastrophic engine failure between 40 and 80 thousand miles. Jaguar addressed timing chain and fuel pump flaws in all Ingenium engines from 2019 onwards. A Variable Camshaft Timing (VCT) unit internal seal below specification can also cause rattling and engine warning lights. At the first sign of cold-start rattling, get the chain inspected immediately. A £1,500–£3,500 preventative repair is dramatically cheaper than a £5,500–£8,500 engine replacement.",
+        "recommendation": "The 2.0-litre Ingenium petrol engine's timing chain is a known weakness. The 2-litre weak point is the timing chain guides which do fail leading to catastrophic engine failure between 40 and 80 thousand miles. Jaguar addressed timing chain and fuel pump flaws in all Ingenium engines from 2019 onwards. A Variable Camshaft Timing (VCT) unit internal seal below specification can also cause rattling and engine warning lights. At the first sign of cold-start rattling, get the chain inspected immediately. A £1,500-£3,500 preventative repair is dramatically cheaper than a £5,500-£8,500 engine replacement.",
         "failureLink": {
           "label": "Read the full timing chain failure guide",
           "href": "/failures/ingenium-diesel-timing-chain"
@@ -297,8 +297,8 @@
         "id": 2,
         "title": "PCV Valve Failure (Excessive Oil Consumption)",
         "symptoms": "Excessive oil consumption, blue smoke from exhaust, rough idle, engine warning light, oil spots under the car",
-        "typicalMileage": "40,000–80,000 miles",
-        "repairCost": "£300–£800 (PCV valve and breather system replacement)",
+        "typicalMileage": "40,000-80,000 miles",
+        "repairCost": "£300-£800 (PCV valve and breather system replacement)",
         "replacementCost": "N/A - repair only (does not progress to engine replacement if addressed)",
         "urgency": {
           "icon": "🟡",
@@ -315,15 +315,15 @@
         "id": 3,
         "title": "Turbocharger Whine & Bearing Wear",
         "symptoms": "High-pitched whining or siren-like noise from the engine bay, especially under acceleration, loss of power, smoke from exhaust",
-        "typicalMileage": "60,000–100,000 miles",
-        "repairCost": "£1,200–£2,500 (turbocharger replacement)",
-        "replacementCost": "£5,500–£8,500 (if ignored - full engine replacement)",
+        "typicalMileage": "60,000-100,000 miles",
+        "repairCost": "£1,200-£2,500 (turbocharger replacement)",
+        "replacementCost": "£5,500-£8,500 (if ignored - full engine replacement)",
         "urgency": {
           "icon": "🟠",
           "label": "Check",
           "text": "book inspection urgently if you hear whining or experience power loss"
         },
-        "recommendation": "F-Pace 30t turbos often whine due to bearing wear and boost pressure leaks. Turbo whining typically indicates worn turbocharger bearings or boost leaks. If you hear a high-pitched whine or siren-like noise, inspect the turbocharger's shaft play and listen for unusual sounds. A £1,200–£2,500 repair is far cheaper than the engine damage that can follow if ignored. Regular oil changes with the correct specification are essential for turbo longevity.",
+        "recommendation": "F-Pace 30t turbos often whine due to bearing wear and boost pressure leaks. Turbo whining typically indicates worn turbocharger bearings or boost leaks. If you hear a high-pitched whine or siren-like noise, inspect the turbocharger's shaft play and listen for unusual sounds. A £1,200-£2,500 repair is far cheaper than the engine damage that can follow if ignored. Regular oil changes with the correct specification are essential for turbo longevity.",
         "failureLink": {
           "label": "Read the full turbo failure guide",
           "href": "/failures/turbocharger-failure"
@@ -353,7 +353,7 @@
         {
           "problem": "Timing chain rattle (early detection)",
           "repairable": "✅ Yes",
-          "typicalCost": "£1,500–£3,500",
+          "typicalCost": "£1,500-£3,500",
           "whenItMakesSense": "Preventative - catches the fault before catastrophic failure"
         },
         {
@@ -365,19 +365,19 @@
         {
           "problem": "PCV valve failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£300–£800",
+          "typicalCost": "£300-£800",
           "whenItMakesSense": "Straightforward component replacement"
         },
         {
           "problem": "Turbocharger whine / bearing wear",
           "repairable": "✅ Yes",
-          "typicalCost": "£1,200–£2,500",
+          "typicalCost": "£1,200-£2,500",
           "whenItMakesSense": "Catch early to prevent engine damage"
         },
         {
           "problem": "VCT solenoid failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£400–£800",
+          "typicalCost": "£400-£800",
           "whenItMakesSense": "Replace solenoids - restore VVT function"
         }
       ]
@@ -427,10 +427,10 @@
     "rows": [
       {
         "engineCode": "PT204 (AJ200P)",
-        "years": "2017–2020",
+        "years": "2017-2020",
         "power": "300 PS (221 kW) / 400 Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£3,500–£5,500【JAG-QUOTE】"
+        "avgReconCost": "£3,500-£5,500【JAG-QUOTE】"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -488,7 +488,7 @@
       },
       {
         "label": "Average Enquiry Mileage",
-        "value": "40,000–80,000 miles【PATTERN DATA】"
+        "value": "40,000-80,000 miles【PATTERN DATA】"
       },
       {
         "label": "Average Replacement Cost",
@@ -513,7 +513,7 @@
       {
         "id": 1,
         "question": "How much does a Jaguar F-Pace 30t / P300 engine replacement cost in the UK?",
-        "answer": "A reconditioned F-Pace 30t/P300 engine typically costs £3,500–£5,500 supply only. Fitting adds £1,500–£2,500 depending on location and workshop rates. Customers have reported dealer quotes of around £15,000–£30,000 for engine replacement, while reconditioning or rebuilding is often in the £8,000–£10,000 range. Use our calculator for a figure specific to your car."
+        "answer": "A reconditioned F-Pace 30t/P300 engine typically costs £3,500-£5,500 supply only. Fitting adds £1,500-£2,500 depending on location and workshop rates. Customers have reported dealer quotes of around £15,000-£30,000 for engine replacement, while reconditioning or rebuilding is often in the £8,000-£10,000 range. Use our calculator for a figure specific to your car."
       },
       {
         "id": 2,
@@ -528,7 +528,7 @@
       {
         "id": 4,
         "question": "Is it worth replacing a Jaguar F-Pace 30t / P300 engine, or should I scrap the car?",
-        "answer": "Depends on vehicle value and condition. Against a well-kept £15,000–£25,000 F-Pace, a £4,500–£5,500 recon is 20–35% of the car's value. For a clean post-2019 example, replacement is almost always worth it. For pre-2019 models with no chain history, evaluate the car's overall condition before committing."
+        "answer": "Depends on vehicle value and condition. Against a well-kept £15,000-£25,000 F-Pace, a £4,500-£5,500 recon is 20-35% of the car's value. For a clean post-2019 example, replacement is almost always worth it. For pre-2019 models with no chain history, evaluate the car's overall condition before committing."
       },
       {
         "id": 5,
@@ -538,7 +538,7 @@
       {
         "id": 6,
         "question": "Can I repair the PT204 timing chain, or does it need replacement?",
-        "answer": "Yes - if caught early. A preventative chain replacement (£1,500–£3,500) is far cheaper than a catastrophic chain failure (£5,500–£8,500 engine replacement). At the first sign of cold-start rattle, book an inspection immediately. The full fix was completed from 2019 onwards, so post-2019 Ingenium engines should be fine."
+        "answer": "Yes - if caught early. A preventative chain replacement (£1,500-£3,500) is far cheaper than a catastrophic chain failure (£5,500-£8,500 engine replacement). At the first sign of cold-start rattle, book an inspection immediately. The full fix was completed from 2019 onwards, so post-2019 Ingenium engines should be fine."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier."

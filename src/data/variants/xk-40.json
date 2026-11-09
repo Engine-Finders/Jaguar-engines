@@ -59,13 +59,13 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "X100 XK8 4.0 (AJ26, 1996–2005)",
+              "name": "X100 XK8 4.0 (AJ26, 1996-2005)",
               "url": "https://jaguarengines.uk/xk/x100/"
             },
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "X100 XKR 4.0 (AJ27S, 1997–2003)",
+              "name": "X100 XKR 4.0 (AJ27S, 1997-2003)",
               "url": "https://jaguarengines.uk/xk/x100/"
             }
           ]
@@ -96,7 +96,7 @@
               "name": "How much does a Jaguar XK 4.0 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned XK 4.0 engine typically costs £3,000–£6,000 supply only depending on variant. Fitting adds £1,500–£2,500 depending on location and workshop rates. A full rebuild including all bearings, pistons, valves, springs and timing gear costs approximately £5,000 (£3,000 in parts, £2,000 in labour excl. VAT). Main dealer new engines are no longer available. Use our calculator for a figure specific to your car."
+                "text": "A reconditioned XK 4.0 engine typically costs £3,000-£6,000 supply only depending on variant. Fitting adds £1,500-£2,500 depending on location and workshop rates. A full rebuild including all bearings, pistons, valves, springs and timing gear costs approximately £5,000 (£3,000 in parts, £2,000 in labour excl. VAT). Main dealer new engines are no longer available. Use our calculator for a figure specific to your car."
               }
             },
             {
@@ -120,7 +120,7 @@
               "name": "Is it worth replacing a Jaguar XK 4.0 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on vehicle value and condition. Against a well-kept £6,000–£15,000 XK, a £3,000–£5,000 recon is 20–80% of the car's value. For a clean example with good body and no rust, replacement is often worth it given the XK's rising classic status. However, if the car has other issues (convertible top, transmission, rust), evaluate total restoration costs before committing."
+                "text": "Depends on vehicle value and condition. Against a well-kept £6,000-£15,000 XK, a £3,000-£5,000 recon is 20-80% of the car's value. For a clean example with good body and no rust, replacement is often worth it given the XK's rising classic status. However, if the car has other issues (convertible top, transmission, rust), evaluate total restoration costs before committing."
               }
             },
             {
@@ -197,7 +197,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar XK 4.0 • 1996–2005 • 2 Engine Variants (AJ26 & AJ27S)",
+    "tagPill": "Jaguar XK 4.0 • 1996-2005 • 2 Engine Variants (AJ26 & AJ27S)",
     "h1": "Jaguar XK 4.0 Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Jaguar XK specialists. The 4.0-litre AJ-V8 powers the first-generation XK8 and XKR - compare reconditioned, rebuilt and used engines with supply & fit available nationwide.",
     "trustBadges": [
@@ -230,19 +230,19 @@
     "rows": [
       {
         "generation": "X100 (XK8)",
-        "years": "1996–2005",
+        "years": "1996-2005",
         "engineCode": "AJ26",
         "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£3,000–£6,000 [JAG-QUOTE]",
-        "eraNote": "4.0L naturally aspirated V8 - 284–294 hp. Nikasil liners (pre-1999) and plastic tensioners are the key risks"
+        "reconCost": "£3,000-£6,000 [JAG-QUOTE]",
+        "eraNote": "4.0L naturally aspirated V8 - 284-294 hp. Nikasil liners (pre-1999) and plastic tensioners are the key risks"
       },
       {
         "generation": "X100 (XKR)",
-        "years": "1997–2003",
+        "years": "1997-2003",
         "engineCode": "AJ27S",
         "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£3,500–£8,000 [JAG-QUOTE]",
-        "eraNote": "4.0L supercharged V8 - 360–370 hp. Same block; plastic tensioners and Eaton M112 supercharger are weak points"
+        "reconCost": "£3,500-£8,000 [JAG-QUOTE]",
+        "eraNote": "4.0L supercharged V8 - 360-370 hp. Same block; plastic tensioners and Eaton M112 supercharger are weak points"
       }
     ],
     "sourceNote": "",
@@ -260,23 +260,23 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£800–£2,500",
-        "fittedIndie": "£1,500–£4,000",
-        "warranty": "1–6 months",
+        "supplyOnly": "£800-£2,500",
+        "fittedIndie": "£1,500-£4,000",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; donor for rebuild"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£3,000–£6,000",
-        "fittedIndie": "£4,500–£8,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£3,000-£6,000",
+        "fittedIndie": "£4,500-£8,000",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£4,500–£8,000",
-        "fittedIndie": "£6,000–£10,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£4,500-£8,000",
+        "fittedIndie": "£6,000-£10,000",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
@@ -288,7 +288,7 @@
       }
     ],
     "figuresNote": "",
-    "labourEstimate": "Fitting an XK 4.0 engine typically takes 14–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). Timing chain tensioner replacement is a critical preventative job costing £250–£500 in parts and labour.",
+    "labourEstimate": "Fitting an XK 4.0 engine typically takes 14-18 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer). Timing chain tensioner replacement is a critical preventative job costing £250-£500 in parts and labour.",
     "cta": {
       "label": "→ Compare XK 4.0 engine prices from UK specialists",
       "href": "/quote"
@@ -300,9 +300,9 @@
         "id": 1,
         "title": "Plastic Timing Chain Tensioner Failure (The Achilles Heel)",
         "symptoms": "Rattling or ticking noise from the engine on cold start, especially from the top of the engine; metallic noise that subsides as oil pressure builds; sudden engine failure if tensioner breaks",
-        "typicalMileage": "50,000–80,000 miles - can fail without warning",
-        "repairCost": "£250–£500 (preventative upper tensioner replacement - DIY possible) / £1,500–£3,000 (full timing chain kit)",
-        "replacementCost": "£4,500–£10,000 (if chain snaps - full engine replacement)",
+        "typicalMileage": "50,000-80,000 miles - can fail without warning",
+        "repairCost": "£250-£500 (preventative upper tensioner replacement - DIY possible) / £1,500-£3,000 (full timing chain kit)",
+        "replacementCost": "£4,500-£10,000 (if chain snaps - full engine replacement)",
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
@@ -318,8 +318,8 @@
         "id": 2,
         "title": "Nikasil Cylinder Liner Failure (Pre-1999 Engines)",
         "symptoms": "Loss of compression, rough running, misfires, increased oil consumption, hard starting, failed emissions test",
-        "typicalMileage": "40,000–100,000 miles - affected by high sulphur fuel",
-        "repairCost": "£3,000–£6,000 (engine rebuild with new liners) / £4,500–£10,000 (engine replacement)",
+        "typicalMileage": "40,000-100,000 miles - affected by high sulphur fuel",
+        "repairCost": "£3,000-£6,000 (engine rebuild with new liners) / £4,500-£10,000 (engine replacement)",
         "replacementCost": "N/A - repair or replacement required",
         "urgency": {
           "icon": "🟠",
@@ -336,15 +336,15 @@
         "id": 3,
         "title": "Cooling System Failures (Water Pump & Crossover Pipe)",
         "symptoms": "Coolant loss, overheating, steam from engine bay, temperature gauge rising, heater blowing cold",
-        "typicalMileage": "60,000–100,000 miles - plastic components age and fail",
-        "repairCost": "£300–£800 (water pump, thermostat, crossover pipe)",
+        "typicalMileage": "60,000-100,000 miles - plastic components age and fail",
+        "repairCost": "£300-£800 (water pump, thermostat, crossover pipe)",
         "replacementCost": "N/A - repair only (does not progress to engine replacement if addressed)",
         "urgency": {
           "icon": "🟠",
           "label": "Check",
           "text": "book inspection urgently if temperature rises"
         },
-        "recommendation": "The 4.0 V8 has a \"plastic water pump\" as a known failure point. The coolant crossover pipe is another common failure, along with ageing hoses and the thermostat housing. Cooling system failures are a \"primary weakness\" that can cause \"premature engine failure if neglected\". Preventative replacement of the water pump, crossover pipe and thermostat at 60,000–80,000 miles is strongly recommended. If the temperature gauge rises, shut the engine down immediately - overheating an aluminium V8 can cause catastrophic damage.",
+        "recommendation": "The 4.0 V8 has a \"plastic water pump\" as a known failure point. The coolant crossover pipe is another common failure, along with ageing hoses and the thermostat housing. Cooling system failures are a \"primary weakness\" that can cause \"premature engine failure if neglected\". Preventative replacement of the water pump, crossover pipe and thermostat at 60,000-80,000 miles is strongly recommended. If the temperature gauge rises, shut the engine down immediately - overheating an aluminium V8 can cause catastrophic damage.",
         "failureLink": {
           "label": "Read the full cooling system failure guide",
           "href": "/failures"
@@ -354,8 +354,8 @@
         "id": 4,
         "title": "Supercharger Coupler Wear (XKR, AJ27S)",
         "symptoms": "Rattling or clattering noise from the supercharger at idle, reduced boost, loss of power, poor throttle response",
-        "typicalMileage": "60,000–100,000 miles - the Eaton M112 coupler wears over time",
-        "repairCost": "£300–£800 (supercharger coupler replacement)",
+        "typicalMileage": "60,000-100,000 miles - the Eaton M112 coupler wears over time",
+        "repairCost": "£300-£800 (supercharger coupler replacement)",
         "replacementCost": "N/A - repair only (does not progress to engine replacement if addressed)",
         "urgency": {
           "icon": "🟡",
@@ -392,7 +392,7 @@
         {
           "problem": "Plastic tensioner rattle (early detection)",
           "repairable": "✅ Yes",
-          "typicalCost": "£250–£500",
+          "typicalCost": "£250-£500",
           "whenItMakesSense": "Preventative - upgraded metal tensioners eliminate the risk"
         },
         {
@@ -404,19 +404,19 @@
         {
           "problem": "Nikasil liner failure (pre-1999)",
           "repairable": "⚠️ Sometimes",
-          "typicalCost": "£3,000–£6,000",
+          "typicalCost": "£3,000-£6,000",
           "whenItMakesSense": "Engine rebuild with new liners or replacement required"
         },
         {
           "problem": "Cooling system failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£300–£800",
-          "whenItMakesSense": "Preventative replacement recommended at 60k–80k miles"
+          "typicalCost": "£300-£800",
+          "whenItMakesSense": "Preventative replacement recommended at 60k-80k miles"
         },
         {
           "problem": "Supercharger coupler wear (XKR)",
           "repairable": "✅ Yes",
-          "typicalCost": "£300–£800",
+          "typicalCost": "£300-£800",
           "whenItMakesSense": "Straightforward component replacement"
         }
       ]
@@ -466,17 +466,17 @@
     "rows": [
       {
         "engineCode": "AJ26 (4.0 NA)",
-        "years": "1996–2005",
-        "power": "284–294 hp (209–216 kW) / 393 Nm",
+        "years": "1996-2005",
+        "power": "284-294 hp (209-216 kW) / 393 Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£3,000–£6,000【JAG-QUOTE】"
+        "avgReconCost": "£3,000-£6,000【JAG-QUOTE】"
       },
       {
         "engineCode": "AJ27S (4.0 SC)",
-        "years": "1997–2003",
-        "power": "360–370 hp (265–272 kW) / 505–525 Nm",
+        "years": "1997-2003",
+        "power": "360-370 hp (265-272 kW) / 505-525 Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£3,500–£8,000【JAG-QUOTE】"
+        "avgReconCost": "£3,500-£8,000【JAG-QUOTE】"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -517,7 +517,7 @@
         },
         {
           "label": "* Power",
-          "value": "284–294 hp (209–216 kW)"
+          "value": "284-294 hp (209-216 kW)"
         },
         {
           "label": "* Torque",
@@ -557,11 +557,11 @@
         },
         {
           "label": "* Power",
-          "value": "360–370 hp (265–272 kW)"
+          "value": "360-370 hp (265-272 kW)"
         },
         {
           "label": "* Torque",
-          "value": "505–525 Nm"
+          "value": "505-525 Nm"
         },
         {
           "label": "* 0-60 mph",
@@ -590,7 +590,7 @@
       },
       {
         "label": "Average Enquiry Mileage",
-        "value": "50,000–80,000 miles【PATTERN DATA】"
+        "value": "50,000-80,000 miles【PATTERN DATA】"
       },
       {
         "label": "Average Replacement Cost",
@@ -615,7 +615,7 @@
       {
         "id": 1,
         "question": "How much does a Jaguar XK 4.0 engine replacement cost in the UK?",
-        "answer": "A reconditioned XK 4.0 engine typically costs £3,000–£6,000 supply only depending on variant. Fitting adds £1,500–£2,500 depending on location and workshop rates. A full rebuild including all bearings, pistons, valves, springs and timing gear costs approximately £5,000 (£3,000 in parts, £2,000 in labour excl. VAT). Main dealer new engines are no longer available. Use our calculator for a figure specific to your car."
+        "answer": "A reconditioned XK 4.0 engine typically costs £3,000-£6,000 supply only depending on variant. Fitting adds £1,500-£2,500 depending on location and workshop rates. A full rebuild including all bearings, pistons, valves, springs and timing gear costs approximately £5,000 (£3,000 in parts, £2,000 in labour excl. VAT). Main dealer new engines are no longer available. Use our calculator for a figure specific to your car."
       },
       {
         "id": 2,
@@ -630,7 +630,7 @@
       {
         "id": 4,
         "question": "Is it worth replacing a Jaguar XK 4.0 engine, or should I scrap the car?",
-        "answer": "Depends on vehicle value and condition. Against a well-kept £6,000–£15,000 XK, a £3,000–£5,000 recon is 20–80% of the car's value. For a clean example with good body and no rust, replacement is often worth it given the XK's rising classic status. However, if the car has other issues (convertible top, transmission, rust), evaluate total restoration costs before committing."
+        "answer": "Depends on vehicle value and condition. Against a well-kept £6,000-£15,000 XK, a £3,000-£5,000 recon is 20-80% of the car's value. For a clean example with good body and no rust, replacement is often worth it given the XK's rising classic status. However, if the car has other issues (convertible top, transmission, rust), evaluate total restoration costs before committing."
       },
       {
         "id": 5,

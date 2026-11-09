@@ -23,7 +23,7 @@ function shortEngineName(engineLabel = "") {
 
 function parseQuestion(question = "") {
   const clean = cleanText(question);
-  const match = clean.match(/^(.+?)\s*[-–-]\s*[“"']?(.+?)[”"']?\s*$/);
+  const match = clean.match(/^(.+?)\s*[---]\s*[“"']?(.+?)[”"']?\s*$/);
   if (!match) return { topic: "", title: clean };
   return {
     topic: match[1].trim(),
@@ -68,7 +68,7 @@ function FaqItem({ item, open, onToggle, isLast, isDark }) {
           <span className={`block text-[14px] font-bold leading-[1.3] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
             {topic ? (
               <>
-                {topic} – “{title}”
+                {topic} - “{title}”
               </>
             ) : (
               title

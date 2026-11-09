@@ -52,13 +52,13 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "X350/X358 XJ8 (AJ34, 2003–2009)",
+              "name": "X350/X358 XJ8 (AJ34, 2003-2009)",
               "url": "https://jaguarengines.uk/xj/4-2-v8"
             },
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "X350/X358 XJR (AJ34S, 2003–2009)",
+              "name": "X350/X358 XJR (AJ34S, 2003-2009)",
               "url": "https://jaguarengines.uk/xj/4-2-v8"
             }
           ]
@@ -89,7 +89,7 @@
               "name": "How much does a Jaguar XJ 4.2 V8 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned Jaguar XJ 4.2 V8 engine (AJ34/AJ34S) typically costs £4,000–£7,000 supply only. Fitting adds £1,200–£1,800. A rebuilt 4.2 AJ-V8 engine starts from around £3,500. The supercharged XJR variant typically commands a premium. Check the Era Map above for your specific engine code."
+                "text": "A reconditioned Jaguar XJ 4.2 V8 engine (AJ34/AJ34S) typically costs £4,000-£7,000 supply only. Fitting adds £1,200-£1,800. A rebuilt 4.2 AJ-V8 engine starts from around £3,500. The supercharged XJR variant typically commands a premium. Check the Era Map above for your specific engine code."
               }
             },
             {
@@ -97,7 +97,7 @@
               "name": "Is the Jaguar XJ 4.2 V8 reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes - the 4.2 V8 is widely regarded as the engine to buy in the X350/X358 XJ. As one owner review states: 'The 4.2 is the only engine to buy - the 3.6 V8 has chain and tensioner problems, the 4.2 has none of them.' The engine typically lasts beyond 150,000 miles with proper maintenance. Key watchpoints are timing chain tensioners after 100,000 miles and coolant system components prone to leaks. Regular oil changes (7,500–10,000 miles) are essential."
+                "text": "Yes - the 4.2 V8 is widely regarded as the engine to buy in the X350/X358 XJ. As one owner review states: 'The 4.2 is the only engine to buy - the 3.6 V8 has chain and tensioner problems, the 4.2 has none of them.' The engine typically lasts beyond 150,000 miles with proper maintenance. Key watchpoints are timing chain tensioners after 100,000 miles and coolant system components prone to leaks. Regular oil changes (7,500-10,000 miles) are essential."
               }
             },
             {
@@ -105,7 +105,7 @@
               "name": "What are the common problems with the Jaguar XJ 4.2 V8?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Timing chain tensioner wear (rattling on cold start, £2,000–£4,500), cooling system leaks (water pump, thermostat, coolant pipes, £400–£1,200), and supercharger coupler wear on XJR models (rattling at idle, £500–£1,000). The naturally aspirated 4.2 is considered more reliable than the supercharged version."
+                "text": "Timing chain tensioner wear (rattling on cold start, £2,000-£4,500), cooling system leaks (water pump, thermostat, coolant pipes, £400-£1,200), and supercharger coupler wear on XJR models (rattling at idle, £500-£1,000). The naturally aspirated 4.2 is considered more reliable than the supercharged version."
               }
             },
             {
@@ -113,7 +113,7 @@
               "name": "Is it worth replacing a Jaguar XJ 4.2 V8 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "XJ values range from £3,000–£15,000 depending on condition, mileage and specification. A £4,000–£7,000 reconditioned engine represents 25–80% of vehicle value - our 60% Jaguar scrap threshold means careful evaluation is required. For a well-maintained, low-mileage example, replacement is often justified. The XJR (supercharged) is generally more valuable and worth the investment."
+                "text": "XJ values range from £3,000-£15,000 depending on condition, mileage and specification. A £4,000-£7,000 reconditioned engine represents 25-80% of vehicle value - our 60% Jaguar scrap threshold means careful evaluation is required. For a well-maintained, low-mileage example, replacement is often justified. The XJR (supercharged) is generally more valuable and worth the investment."
               }
             },
             {
@@ -129,7 +129,7 @@
               "name": "Can I repair the timing chain tensioner issue, or does it need replacement?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes - if caught early. Timing chain and tensioner replacement costs £2,000–£4,500 and is significantly cheaper than a full engine replacement (£4,000–£7,000). A timing chain kit including chains, tensioners, guides and blades is available. At the first sign of cold-start rattle, book an inspection immediately - ignored chain wear can lead to catastrophic engine failure."
+                "text": "Yes - if caught early. Timing chain and tensioner replacement costs £2,000-£4,500 and is significantly cheaper than a full engine replacement (£4,000-£7,000). A timing chain kit including chains, tensioners, guides and blades is available. At the first sign of cold-start rattle, book an inspection immediately - ignored chain wear can lead to catastrophic engine failure."
               }
             }
           ]
@@ -190,7 +190,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar XJ 4.2 V8 • 2003–2009 • 4.2L V8",
+    "tagPill": "Jaguar XJ 4.2 V8 • 2003-2009 • 4.2L V8",
     "h1": "Jaguar XJ 4.2 V8 Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Jaguar V8 specialists. The 4.2 AJ-V8 powered the X350 and X358 XJ - 300bhp (XJ8) and 400bhp (XJR). Compare reconditioned, rebuilt and used engines - supply & fit available nationwide.",
     "trustBadges": [
@@ -223,18 +223,18 @@
     "rows": [
       {
         "generation": "X350/X358 XJ8",
-        "years": "2003–2009",
+        "years": "2003-2009",
         "engineCode": "AJ34 (4.2L naturally aspirated V8)",
         "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£3,500–£6,500 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£3,500-£6,500 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "300bhp - smooth, refined, the 4.2 is the engine to buy"
       },
       {
         "generation": "X350/X358 XJR",
-        "years": "2003–2009",
+        "years": "2003-2009",
         "engineCode": "AJ34S (4.2L supercharged V8)",
         "reliability": "★★★½☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£5,000–£8,500 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£5,000-£8,500 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "400bhp supercharged - characterful, cooling system and supercharger coupler key"
       }
     ],
@@ -253,23 +253,23 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£3,000–£5,500",
-        "fittedIndie": "£4,000–£7,000",
-        "warranty": "1–6 months",
+        "supplyOnly": "£3,000-£5,500",
+        "fittedIndie": "£4,000-£7,000",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; lower-mileage donor"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£4,000–£7,000",
-        "fittedIndie": "£5,000–£8,500",
-        "warranty": "12–24 months",
+        "supplyOnly": "£4,000-£7,000",
+        "fittedIndie": "£5,000-£8,500",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£5,500–£8,500",
-        "fittedIndie": "£6,500–£10,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£5,500-£8,500",
+        "fittedIndie": "£6,500-£10,000",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 5+ year horizon"
       },
       {
@@ -281,7 +281,7 @@
       }
     ],
     "figuresNote": "Figures above reflect current market ranges for the AJ34/AJ34S engine. Reconditioned units are available from specialist Jaguar engine rebuilders. Prices range from £3,000 to £6,000 on average . A rebuilt 4.2 AJ-V8 engine typically starts from £3,500 . All pricing is indicative; actual costs vary by mileage, condition and workshop location.",
-    "labourEstimate": "Fitting an XJ 4.2 V8 engine typically takes 10–14 hours at £80–£120/hr (independent Jaguar specialist) or £140–£190/hr (London/SE dealer). The V8 is well-packaged in the XJ's aluminium body.",
+    "labourEstimate": "Fitting an XJ 4.2 V8 engine typically takes 10-14 hours at £80-£120/hr (independent Jaguar specialist) or £140-£190/hr (London/SE dealer). The V8 is well-packaged in the XJ's aluminium body.",
     "cta": {
       "label": "→ Compare Jaguar XJ 4.2 V8 engine prices from UK specialists",
       "href": "/quote"
@@ -367,32 +367,32 @@
         {
           "problem": "Timing chain tensioner wear",
           "repairable": "✅ Yes",
-          "typicalCost": "£2,000–£4,500",
+          "typicalCost": "£2,000-£4,500",
           "whenItMakesSense": "Preventative replacement before failure - always cheaper than engine replacement"
         },
         {
           "problem": "Cooling system leaks",
           "repairable": "✅ Yes",
-          "typicalCost": "£400–£1,200",
+          "typicalCost": "£400-£1,200",
           "whenItMakesSense": "Proactive replacement - essential maintenance"
         },
         {
           "problem": "Supercharger coupler wear (XJR)",
           "repairable": "✅ Yes",
-          "typicalCost": "£500–£1,000",
+          "typicalCost": "£500-£1,000",
           "whenItMakesSense": "Straightforward repair - always worth doing"
         },
         {
           "problem": "Injector failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£300–£800 per injector",
+          "typicalCost": "£300-£800 per injector",
           "whenItMakesSense": "Replace as a set - common on higher-mileage examples"
         },
         {
           "problem": "Major internal failure (crank/block)",
           "repairable": "❌ Usually No",
           "typicalCost": "Engine replacement required",
-          "whenItMakesSense": "Replacement often £4,000–£7,000 - assess vehicle value carefully"
+          "whenItMakesSense": "Replacement often £4,000-£7,000 - assess vehicle value carefully"
         }
       ]
     },
@@ -402,7 +402,7 @@
         "* Naturally aspirated XJ8 - the 4.2 is the engine to buy, more reliable than the 3.6",
         "* Documented timing chain tensioner history (especially on higher-mileage examples)",
         "* Cooling system proactively replaced (water pump, thermostat, hoses)",
-        "* Full service history with regular oil changes (7,500–10,000 miles)",
+        "* Full service history with regular oil changes (7,500-10,000 miles)",
         "* XJR with documented supercharger coupler history"
       ],
       "avoidIf": [
@@ -422,7 +422,7 @@
     "intro": "Before you buy a used Jaguar XJ 4.2 V8 (or before you commit to an engine replacement), check these:",
     "items": [
       "* Cold Start - Listen for any rattle on startup (timing chain tensioner wear warning)",
-      "* Service History - 7,500–10,000 mile oil changes are essential for the AJ-V8",
+      "* Service History - 7,500-10,000 mile oil changes are essential for the AJ-V8",
       "* Coolant Level - Check for any loss - cooling system components are a known weakness",
       "* Engine Performance - Test acceleration; any hesitation, flat spots, or rough idle?",
       "* Supercharger Health (XJR) - Any rattling from the supercharger at idle? (coupler wear)",
@@ -442,17 +442,17 @@
     "rows": [
       {
         "engineCode": "AJ34 (4.2L naturally aspirated V8)",
-        "years": "2003–2009",
+        "years": "2003-2009",
         "power": "300 bhp / 224 kW",
         "enquiries": "- (pattern data - heritage)",
-        "avgReconCost": "£3,500–£6,500 [PLACEHOLDER]"
+        "avgReconCost": "£3,500-£6,500 [PLACEHOLDER]"
       },
       {
         "engineCode": "AJ34S (4.2L supercharged V8)",
-        "years": "2003–2009",
+        "years": "2003-2009",
         "power": "400 bhp / 298 kW",
         "enquiries": "- (pattern data - heritage)",
-        "avgReconCost": "£5,000–£8,500 [PLACEHOLDER]"
+        "avgReconCost": "£5,000-£8,500 [PLACEHOLDER]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -512,11 +512,11 @@
           "value": "553 Nm @ 3,500 rpm"
         },
         {
-          "label": "* 0–60mph (AJ34)",
+          "label": "* 0-60mph (AJ34)",
           "value": "6.3 seconds"
         },
         {
-          "label": "* 0–60mph (AJ34S)",
+          "label": "* 0-60mph (AJ34S)",
           "value": "5.0 seconds"
         },
         {
@@ -533,11 +533,11 @@
         },
         {
           "label": "* Kerb weight",
-          "value": "1,603–1,659 kg"
+          "value": "1,603-1,659 kg"
         },
         {
           "label": "* Combined fuel economy",
-          "value": "23–25 mpg UK (XJ8) / 21–23 mpg UK (XJR)"
+          "value": "23-25 mpg UK (XJ8) / 21-23 mpg UK (XJR)"
         },
         {
           "label": "* Body",
@@ -583,22 +583,22 @@
       {
         "id": 1,
         "question": "How much does a Jaguar XJ 4.2 V8 engine replacement cost in the UK?",
-        "answer": "A reconditioned Jaguar XJ 4.2 V8 engine (AJ34/AJ34S) typically costs £4,000–£7,000 supply only. Fitting adds £1,200–£1,800. A rebuilt 4.2 AJ-V8 engine starts from around £3,500. The supercharged XJR variant typically commands a premium. Check the Era Map above for your specific engine code."
+        "answer": "A reconditioned Jaguar XJ 4.2 V8 engine (AJ34/AJ34S) typically costs £4,000-£7,000 supply only. Fitting adds £1,200-£1,800. A rebuilt 4.2 AJ-V8 engine starts from around £3,500. The supercharged XJR variant typically commands a premium. Check the Era Map above for your specific engine code."
       },
       {
         "id": 2,
         "question": "Is the Jaguar XJ 4.2 V8 reliable?",
-        "answer": "Yes - the 4.2 V8 is widely regarded as the engine to buy in the X350/X358 XJ. As one owner review states: \"The 4.2 is the only engine to buy - the 3.6 V8 has chain and tensioner problems, the 4.2 has none of them\". The engine typically lasts beyond 150,000 miles with proper maintenance. Key watchpoints are timing chain tensioners after 100,000 miles and coolant system components prone to leaks. Regular oil changes (7,500–10,000 miles) are essential."
+        "answer": "Yes - the 4.2 V8 is widely regarded as the engine to buy in the X350/X358 XJ. As one owner review states: \"The 4.2 is the only engine to buy - the 3.6 V8 has chain and tensioner problems, the 4.2 has none of them\". The engine typically lasts beyond 150,000 miles with proper maintenance. Key watchpoints are timing chain tensioners after 100,000 miles and coolant system components prone to leaks. Regular oil changes (7,500-10,000 miles) are essential."
       },
       {
         "id": 3,
         "question": "What are the common problems with the Jaguar XJ 4.2 V8?",
-        "answer": "Timing chain tensioner wear (rattling on cold start, £2,000–£4,500), cooling system leaks (water pump, thermostat, coolant pipes, £400–£1,200), and supercharger coupler wear on XJR models (rattling at idle, £500–£1,000). The naturally aspirated 4.2 is considered more reliable than the supercharged version."
+        "answer": "Timing chain tensioner wear (rattling on cold start, £2,000-£4,500), cooling system leaks (water pump, thermostat, coolant pipes, £400-£1,200), and supercharger coupler wear on XJR models (rattling at idle, £500-£1,000). The naturally aspirated 4.2 is considered more reliable than the supercharged version."
       },
       {
         "id": 4,
         "question": "Is it worth replacing a Jaguar XJ 4.2 V8 engine, or should I scrap the car?",
-        "answer": "XJ values range from £3,000–£15,000 depending on condition, mileage and specification. A £4,000–£7,000 reconditioned engine represents 25–80% of vehicle value - our 60% Jaguar scrap threshold means careful evaluation is required. For a well-maintained, low-mileage example, replacement is often justified. The XJR (supercharged) is generally more valuable and worth the investment."
+        "answer": "XJ values range from £3,000-£15,000 depending on condition, mileage and specification. A £4,000-£7,000 reconditioned engine represents 25-80% of vehicle value - our 60% Jaguar scrap threshold means careful evaluation is required. For a well-maintained, low-mileage example, replacement is often justified. The XJR (supercharged) is generally more valuable and worth the investment."
       },
       {
         "id": 5,
@@ -608,7 +608,7 @@
       {
         "id": 6,
         "question": "Can I repair the timing chain tensioner issue, or does it need replacement?",
-        "answer": "Yes - if caught early. Timing chain and tensioner replacement costs £2,000–£4,500 and is significantly cheaper than a full engine replacement (£4,000–£7,000). A timing chain kit including chains, tensioners, guides and blades is available. At the first sign of cold-start rattle, book an inspection immediately - ignored chain wear can lead to catastrophic engine failure."
+        "answer": "Yes - if caught early. Timing chain and tensioner replacement costs £2,000-£4,500 and is significantly cheaper than a full engine replacement (£4,000-£7,000). A timing chain kit including chains, tensioners, guides and blades is available. At the first sign of cold-start rattle, book an inspection immediately - ignored chain wear can lead to catastrophic engine failure."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier."

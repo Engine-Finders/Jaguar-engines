@@ -47,7 +47,7 @@ META_SECTION_RE = re.compile(
     re.MULTILINE | re.IGNORECASE,
 )
 SCHEMA_SECTION_RE = re.compile(
-    r"^[ \t]*SCHEMA\s*(?:\(JSON[-‑–-]LD\))?\s*$",
+    r"^[ \t]*SCHEMA\s*(?:\(JSON[-‑--]LD\))?\s*$",
     re.MULTILINE | re.IGNORECASE,
 )
 META_TITLE_BLOCK_RE = re.compile(
@@ -958,8 +958,8 @@ def parse_trust_cta(body: str) -> dict[str, Any]:
                 continue
             if " - " in item:
                 title, text = [clean(x) for x in item.split(" - ", 1)]
-            elif " – " in item:
-                title, text = [clean(x) for x in item.split(" – ", 1)]
+            elif " - " in item:
+                title, text = [clean(x) for x in item.split(" - ", 1)]
             else:
                 title, text = item, ""
             trust_points.append({"title": title, "text": text})

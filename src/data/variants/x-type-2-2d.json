@@ -77,7 +77,7 @@
               "name": "How much does a Jaguar X-Type 2.2d engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned X-Type 2.2d (Duratorq) engine typically costs £3,200–£7,000 supply only. A used X-Type 2.2d engine is available from approximately £300–£495. Fitting adds £800–£1,500 at independent specialist rates. Use our calculator for a figure specific to your car."
+                "text": "A reconditioned X-Type 2.2d (Duratorq) engine typically costs £3,200-£7,000 supply only. A used X-Type 2.2d engine is available from approximately £300-£495. Fitting adds £800-£1,500 at independent specialist rates. Use our calculator for a figure specific to your car."
               }
             },
             {
@@ -101,7 +101,7 @@
               "name": "Is it worth replacing a Jaguar X-Type 2.2d engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on vehicle value. Against a well-kept X-Type (values £2,000–£8,000+ depending on condition and mileage), a £3,500–£4,500 reconditioned engine is 40–80% of the vehicle's value - often worth it for a solid example. The Jaguar scrap threshold of 60% means evaluating the whole vehicle and its condition before committing."
+                "text": "Depends on vehicle value. Against a well-kept X-Type (values £2,000-£8,000+ depending on condition and mileage), a £3,500-£4,500 reconditioned engine is 40-80% of the vehicle's value - often worth it for a solid example. The Jaguar scrap threshold of 60% means evaluating the whole vehicle and its condition before committing."
               }
             },
             {
@@ -117,7 +117,7 @@
               "name": "Can I repair the Duratorq injectors, or does it require engine replacement?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Injector failure is repairable without replacing the engine - if caught early. Injector replacement costs £400–£1,200. However, if a faulty injector causes catalytic converter failure or engine damage, more extensive work may be required. At the first sign of rough idle or smoke, book an inspection immediately."
+                "text": "Injector failure is repairable without replacing the engine - if caught early. Injector replacement costs £400-£1,200. However, if a faulty injector causes catalytic converter failure or engine damage, more extensive work may be required. At the first sign of rough idle or smoke, book an inspection immediately."
               }
             }
           ]
@@ -178,7 +178,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar X‑Type 2.2d • 2005–2009 • Duratorq ZSD‑422 2.2 Diesel",
+    "tagPill": "Jaguar X‑Type 2.2d • 2005-2009 • Duratorq ZSD‑422 2.2 Diesel",
     "h1": "Jaguar X‑Type 2.2d Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Jaguar X‑Type 2.2d specialists. Compare reconditioned, rebuilt and used Duratorq 2.2‑litre diesel engines - supply & fit available nationwide for Jaguar's classic compact saloon.",
     "trustBadges": [
@@ -187,7 +187,7 @@
       "🚚 Nationwide Delivery",
       "👥 15+ Specialists"
     ],
-    "priceAnchor": "Jaguar X‑Type 2.2d Engines - from £1,500 to £7,000 · Engine code: Duratorq ZSD‑422 (2005–2009)",
+    "priceAnchor": "Jaguar X‑Type 2.2d Engines - from £1,500 to £7,000 · Engine code: Duratorq ZSD‑422 (2005-2009)",
     "registrationInput": {
       "flag": "🇬🇧 GB",
       "placeholder": "Enter your reg - e.g. AB12 CDE",
@@ -211,10 +211,10 @@
     "rows": [
       {
         "generation": "X‑Type X400 (2.2d)",
-        "years": "2005–2009",
+        "years": "2005-2009",
         "engineCode": "Duratorq ZSD‑422 (2.2L 4‑cyl diesel, 155 PS)",
         "reliability": "★★★½☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£3,200–£7,000 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£3,200-£7,000 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "Ford‑sourced Duratorq workhorse - chain‑driven and robust, but injector, turbo and DPF issues are the key watchpoints"
       }
     ],
@@ -233,23 +233,23 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£1,500–£3,000",
-        "fittedIndie": "£2,300–£4,200",
-        "warranty": "1–6 months",
+        "supplyOnly": "£1,500-£3,000",
+        "fittedIndie": "£2,300-£4,200",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; vehicle under £4,000"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£3,200–£5,500",
-        "fittedIndie": "£4,200–£6,800",
-        "warranty": "12–24 months",
+        "supplyOnly": "£3,200-£5,500",
+        "fittedIndie": "£4,200-£6,800",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£4,500–£7,000",
-        "fittedIndie": "£5,500–£8,500",
-        "warranty": "12–24 months",
+        "supplyOnly": "£4,500-£7,000",
+        "fittedIndie": "£5,500-£8,500",
+        "warranty": "12-24 months",
         "bestFor": "Long‑term ownership; 3+ year horizon"
       },
       {
@@ -260,8 +260,8 @@
         "bestFor": "Duratorq engines are no longer produced new; reconditioned units are the standard"
       }
     ],
-    "figuresNote": "Figures above reflect the X‑Type 2.2d Duratorq era (2005–2009). A used X‑Type 2.2d engine is available from approximately £300–£495. A reconditioned engine from a specialist typically costs £3,200–£5,500.",
-    "labourEstimate": "Fitting an X‑Type 2.2d engine typically takes 8–12 hours at £75–£110/hr (independent) or £130–£180/hr (London/SE dealer). The transverse engine layout makes the engine bay tight but accessible. [PLACEHOLDER - confirm vs cost sheet]",
+    "figuresNote": "Figures above reflect the X‑Type 2.2d Duratorq era (2005-2009). A used X‑Type 2.2d engine is available from approximately £300-£495. A reconditioned engine from a specialist typically costs £3,200-£5,500.",
+    "labourEstimate": "Fitting an X‑Type 2.2d engine typically takes 8-12 hours at £75-£110/hr (independent) or £130-£180/hr (London/SE dealer). The transverse engine layout makes the engine bay tight but accessible. [PLACEHOLDER - confirm vs cost sheet]",
     "cta": {
       "label": "→ Compare X‑Type 2.2d engine prices from UK specialists",
       "href": "/quote"
@@ -273,9 +273,9 @@
         "id": 1,
         "title": "Fuel Injector Failure (Duratorq)",
         "symptoms": "Rough idling, loss of power, decreased fuel efficiency, engine misfires, white or black smoke from exhaust, check engine light.",
-        "typicalMileage": "80,000–120,000 miles",
-        "repairCost": "£400–£1,200 (injector replacement)【PLACEHOLDER】",
-        "replacementCost": "£3,200–£7,000 (if injector failure leads to engine damage or catalytic converter failure)【PLACEHOLDER】",
+        "typicalMileage": "80,000-120,000 miles",
+        "repairCost": "£400-£1,200 (injector replacement)【PLACEHOLDER】",
+        "replacementCost": "£3,200-£7,000 (if injector failure leads to engine damage or catalytic converter failure)【PLACEHOLDER】",
         "urgency": {
           "icon": "🟠",
           "label": "Check",
@@ -291,9 +291,9 @@
         "id": 2,
         "title": "Turbocharger Actuator & Oil Leak Issues",
         "symptoms": "Loss of power, whistling or whining noise from the engine, excessive exhaust smoke, reduced fuel economy, engine warning light, oil spots under the vehicle.",
-        "typicalMileage": "80,000–120,000 miles",
-        "repairCost": "£500–£1,800 (turbo actuator replacement or turbo rebuild)【PLACEHOLDER】",
-        "replacementCost": "£3,200–£7,000 (if turbo failure sends debris into the engine)【PLACEHOLDER】",
+        "typicalMileage": "80,000-120,000 miles",
+        "repairCost": "£500-£1,800 (turbo actuator replacement or turbo rebuild)【PLACEHOLDER】",
+        "replacementCost": "£3,200-£7,000 (if turbo failure sends debris into the engine)【PLACEHOLDER】",
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
@@ -309,15 +309,15 @@
         "id": 3,
         "title": "DPF Blockage & Regeneration Issues",
         "symptoms": "DPF warning light, reduced power, increased fuel consumption, frequent regeneration cycles, limp mode, fans staying on after engine shut‑off.",
-        "typicalMileage": "60,000–100,000 miles (urban‑driven cars are at highest risk)",
-        "repairCost": "£200–£800 (DPF clean, forced regeneration, or sensor replacement)【PLACEHOLDER】",
-        "replacementCost": "£1,500–£3,000 (DPF replacement)【PLACEHOLDER】",
+        "typicalMileage": "60,000-100,000 miles (urban‑driven cars are at highest risk)",
+        "repairCost": "£200-£800 (DPF clean, forced regeneration, or sensor replacement)【PLACEHOLDER】",
+        "replacementCost": "£1,500-£3,000 (DPF replacement)【PLACEHOLDER】",
         "urgency": {
           "icon": "🟠",
           "label": "Check",
           "text": "book inspection urgently if DPF warning appears"
         },
-        "recommendation": "DPF clogging is a common issue on the X‑Type 2.2d, particularly on cars driven mostly in the city. A DPF regeneration cycle requires sustained motorway running; if you stop the engine before the regeneration is complete, the fans will stay on and the regen will try again next time. If you see a DPF warning light, take the car for a sustained motorway run at 2,000–2,500 rpm. If the light persists, have the DPF inspected. Regular motorway driving and using premium diesel can help keep the DPF healthy.",
+        "recommendation": "DPF clogging is a common issue on the X‑Type 2.2d, particularly on cars driven mostly in the city. A DPF regeneration cycle requires sustained motorway running; if you stop the engine before the regeneration is complete, the fans will stay on and the regen will try again next time. If you see a DPF warning light, take the car for a sustained motorway run at 2,000-2,500 rpm. If the light persists, have the DPF inspected. Regular motorway driving and using premium diesel can help keep the DPF healthy.",
         "failureLink": {
           "label": "",
           "href": "/failures/dpf-blockage"
@@ -327,8 +327,8 @@
         "id": 4,
         "title": "EGR Valve Sticking",
         "symptoms": "Engine warning light, loss of power, rough idle, stalling, increased fuel consumption, increased emissions.",
-        "typicalMileage": "60,000–100,000 miles",
-        "repairCost": "£200–£600 (EGR valve cleaning or replacement)【PLACEHOLDER】",
+        "typicalMileage": "60,000-100,000 miles",
+        "repairCost": "£200-£600 (EGR valve cleaning or replacement)【PLACEHOLDER】",
         "replacementCost": "N/A - repair only",
         "urgency": {
           "icon": "🟡",
@@ -345,9 +345,9 @@
         "id": 5,
         "title": "Automatic Transmission Issues (ZF 6‑Speed)",
         "symptoms": "Jerky gear changes, delay between selecting a gear and the vehicle moving, gearbox fault code under hard acceleration, limp mode.",
-        "typicalMileage": "80,000–120,000 miles",
-        "repairCost": "£500–£2,000 (fluid change, mechatronic repair, or solenoid replacement)【PLACEHOLDER】",
-        "replacementCost": "£2,500–£4,500 (if transmission requires full replacement)【PLACEHOLDER】",
+        "typicalMileage": "80,000-120,000 miles",
+        "repairCost": "£500-£2,000 (fluid change, mechatronic repair, or solenoid replacement)【PLACEHOLDER】",
+        "replacementCost": "£2,500-£4,500 (if transmission requires full replacement)【PLACEHOLDER】",
         "urgency": {
           "icon": "🟡",
           "label": "Monitor",
@@ -383,31 +383,31 @@
         {
           "problem": "Fuel injector failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£400–£1,200",
+          "typicalCost": "£400-£1,200",
           "whenItMakesSense": "Catch it before catalytic converter damage occurs"
         },
         {
           "problem": "Turbocharger actuator / oil leak",
           "repairable": "✅ Yes",
-          "typicalCost": "£500–£1,800",
+          "typicalCost": "£500-£1,800",
           "whenItMakesSense": "Viable if caught before debris enters engine"
         },
         {
           "problem": "DPF blockage",
           "repairable": "✅ Yes",
-          "typicalCost": "£200–£800",
+          "typicalCost": "£200-£800",
           "whenItMakesSense": "Cleaning or forced regeneration is cost‑effective"
         },
         {
           "problem": "EGR valve sticking",
           "repairable": "✅ Yes",
-          "typicalCost": "£200–£600",
+          "typicalCost": "£200-£600",
           "whenItMakesSense": "Cleaning or replacement is straightforward"
         },
         {
           "problem": "ZF 6‑speed transmission issues",
           "repairable": "✅ Yes",
-          "typicalCost": "£500–£2,000",
+          "typicalCost": "£500-£2,000",
           "whenItMakesSense": "Fluid change or mechatronic repair is cost‑effective"
         },
         {
@@ -421,7 +421,7 @@
     "buyingChecks": {
       "title": "Buying This X‑Type 2.2d? Check These First",
       "buyIf": [
-        "* Full service history with regular oil changes (every 8,000–10,000 miles)",
+        "* Full service history with regular oil changes (every 8,000-10,000 miles)",
         "* Injectors replaced or functioning correctly (no rough idle, no smoke)",
         "* Turbocharger in good condition (no whistling, no oil leaks)",
         "* DPF health checked - regular motorway use is a good sign",
@@ -447,7 +447,7 @@
     "intro": "Before you buy a used Jaguar X‑Type 2.2d (or before you commit to an engine replacement), check these:",
     "items": [
       "* Cold Start - Listen for any unusual noises (injector or turbo health indicator)",
-      "* Service History - Regular oil changes every 8,000–10,000 miles are essential for the Duratorq",
+      "* Service History - Regular oil changes every 8,000-10,000 miles are essential for the Duratorq",
       "* Injector Health - Any rough idle or smoke? (injector failure warning)",
       "* Turbo Health - Any whistling, power loss, or oil leaks? (turbo actuator warning)",
       "* DPF Health - Any warning lights? Ask about regeneration frequency; urban cars will have more issues",
@@ -467,10 +467,10 @@
     "rows": [
       {
         "engineCode": "Duratorq ZSD‑422 (2.2 TDCi)",
-        "years": "2005–2009",
+        "years": "2005-2009",
         "power": "155 PS (114 kW) @ 3,500 rpm · 360 Nm @ 1,800 rpm",
         "enquiries": "- (pattern data)【PATTERN DATA】",
-        "avgReconCost": "£3,200–£7,000【PLACEHOLDER - confirm vs cost sheet】"
+        "avgReconCost": "£3,200-£7,000【PLACEHOLDER - confirm vs cost sheet】"
       }
     ],
     "matchNote": "This table's rows exactly match Section 1B's Era Map - the same engine code, years, and generation coverage.",
@@ -516,7 +516,7 @@
       },
       {
         "label": "Average Enquiry Mileage",
-        "value": "80,000–120,000 miles【PATTERN DATA】"
+        "value": "80,000-120,000 miles【PATTERN DATA】"
       },
       {
         "label": "Average Replacement Cost",
@@ -541,7 +541,7 @@
       {
         "id": 1,
         "question": "How much does a Jaguar X‑Type 2.2d engine replacement cost in the UK?",
-        "answer": "A reconditioned X‑Type 2.2d (Duratorq) engine typically costs £3,200–£7,000 supply only. A used X‑Type 2.2d engine is available from approximately £300–£495. Fitting adds £800–£1,500 at independent specialist rates. Use our calculator for a figure specific to your car."
+        "answer": "A reconditioned X‑Type 2.2d (Duratorq) engine typically costs £3,200-£7,000 supply only. A used X‑Type 2.2d engine is available from approximately £300-£495. Fitting adds £800-£1,500 at independent specialist rates. Use our calculator for a figure specific to your car."
       },
       {
         "id": 2,
@@ -556,7 +556,7 @@
       {
         "id": 4,
         "question": "Is it worth replacing a Jaguar X‑Type 2.2d engine, or should I scrap the car?",
-        "answer": "Depends on vehicle value. Against a well‑kept X‑Type (values £2,000–£8,000+ depending on condition and mileage), a £3,500–£4,500 reconditioned engine is 40–80% of the vehicle's value - often worth it for a solid example. The Jaguar scrap threshold of 60% means evaluating the whole vehicle and its condition before committing. Given the X‑Type's status as a future classic, engine replacement is often worth it for a good example with no corrosion."
+        "answer": "Depends on vehicle value. Against a well‑kept X‑Type (values £2,000-£8,000+ depending on condition and mileage), a £3,500-£4,500 reconditioned engine is 40-80% of the vehicle's value - often worth it for a solid example. The Jaguar scrap threshold of 60% means evaluating the whole vehicle and its condition before committing. Given the X‑Type's status as a future classic, engine replacement is often worth it for a good example with no corrosion."
       },
       {
         "id": 5,
@@ -566,7 +566,7 @@
       {
         "id": 6,
         "question": "Can I repair the Duratorq injectors, or does it require engine replacement?",
-        "answer": "Injector failure is repairable without replacing the engine - if caught early. Injector replacement costs £400–£1,200. However, if a faulty injector causes catalytic converter failure or engine damage, more extensive work may be required. At the first sign of rough idle or smoke, book an inspection immediately. Regular fuel filter changes and using premium diesel are the best prevention."
+        "answer": "Injector failure is repairable without replacing the engine - if caught early. Injector replacement costs £400-£1,200. However, if a faulty injector causes catalytic converter failure or engine damage, more extensive work may be required. At the first sign of rough idle or smoke, book an inspection immediately. Regular fuel filter changes and using premium diesel are the best prevention."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty - always confirm terms with your chosen supplier."

@@ -59,7 +59,7 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "X351 XJ 3.0 SC (AJ126, 2010–2019)",
+              "name": "X351 XJ 3.0 SC (AJ126, 2010-2019)",
               "url": "https://jaguarengines.uk/xj/x351/"
             }
           ]
@@ -84,7 +84,7 @@
               "name": "How much does a Jaguar XJ 3.0 SC Petrol engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned XJ 3.0 SC engine typically costs £4,500–£7,500 supply only. Fitting adds £2,000–£3,500 depending on location and workshop rates. Customers have reported dealer quotes of around £15,000–£30,000 for engine replacement. A low-mileage replacement engine typically ranges from £3,000 to £6,000. Use our calculator for a figure specific to your car."
+                "text": "A reconditioned XJ 3.0 SC engine typically costs £4,500-£7,500 supply only. Fitting adds £2,000-£3,500 depending on location and workshop rates. Customers have reported dealer quotes of around £15,000-£30,000 for engine replacement. A low-mileage replacement engine typically ranges from £3,000 to £6,000. Use our calculator for a figure specific to your car."
               }
             },
             {
@@ -108,7 +108,7 @@
               "name": "Is it worth replacing a Jaguar XJ 3.0 SC Petrol engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on vehicle value and condition. Against a well-kept £8,000–£18,000 XJ, a £4,500–£7,500 recon is 25–90% of the car's value. For a clean, low-mileage example with good body and interior, replacement is often worth it given the XJ's rising classic status. However, if the car has other issues (air suspension, electrical faults, corrosion), evaluate total restoration costs before committing."
+                "text": "Depends on vehicle value and condition. Against a well-kept £8,000-£18,000 XJ, a £4,500-£7,500 recon is 25-90% of the car's value. For a clean, low-mileage example with good body and interior, replacement is often worth it given the XJ's rising classic status. However, if the car has other issues (air suspension, electrical faults, corrosion), evaluate total restoration costs before committing."
               }
             },
             {
@@ -124,7 +124,7 @@
               "name": "Can I replace the water pump preventatively, or does it need to fail first?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Preventative replacement is strongly recommended on pre-2015 models. Both the V8 and V6 engines were fitted with a poorly designed water pump until 2015. The obvious solution is to get the pump changed as soon as possible after buying the car. A £400–£800 preventative water pump replacement is dramatically cheaper than a £5,500–£11,000 engine replacement if it fails and destroys the engine."
+                "text": "Preventative replacement is strongly recommended on pre-2015 models. Both the V8 and V6 engines were fitted with a poorly designed water pump until 2015. The obvious solution is to get the pump changed as soon as possible after buying the car. A £400-£800 preventative water pump replacement is dramatically cheaper than a £5,500-£11,000 engine replacement if it fails and destroys the engine."
               }
             }
           ]
@@ -185,7 +185,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar XJ 3.0 SC Petrol • 2010–2019 • 1 Engine Generation",
+    "tagPill": "Jaguar XJ 3.0 SC Petrol • 2010-2019 • 1 Engine Generation",
     "h1": "Jaguar XJ 3.0 SC Petrol Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Jaguar XJ specialists. The 3.0-litre AJ126 supercharged V6 delivers effortless performance with 340 bhp - compare reconditioned, rebuilt and used engines with supply & fit available nationwide.",
     "trustBadges": [
@@ -218,10 +218,10 @@
     "rows": [
       {
         "generation": "X351",
-        "years": "2010–2019",
+        "years": "2010-2019",
         "engineCode": "AJ126 (306PS)",
         "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£4,500–£7,500 [JAG-QUOTE]",
+        "reconCost": "£4,500-£7,500 [JAG-QUOTE]",
         "eraNote": "3.0L supercharged V6 - 340 bhp, 450 Nm. Water pump and plastic coolant pipe failures; timing chain tensioner wear on higher-mileage examples"
       }
     ],
@@ -240,35 +240,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£1,500–£3,500",
-        "fittedIndie": "£2,500–£5,000",
-        "warranty": "1–6 months",
+        "supplyOnly": "£1,500-£3,500",
+        "fittedIndie": "£2,500-£5,000",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; lower-mileage donor"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£4,500–£7,500",
-        "fittedIndie": "£6,500–£9,500",
-        "warranty": "12–24 months",
+        "supplyOnly": "£4,500-£7,500",
+        "fittedIndie": "£6,500-£9,500",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£5,500–£9,000",
-        "fittedIndie": "£7,500–£11,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£5,500-£9,000",
+        "fittedIndie": "£7,500-£11,000",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£15,000–£30,000+",
-        "fittedIndie": "£17,000–£32,000+",
-        "warranty": "24–36 months",
+        "supplyOnly": "£15,000-£30,000+",
+        "fittedIndie": "£17,000-£32,000+",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs, warranty claims"
       }
     ],
     "figuresNote": "",
-    "labourEstimate": "Fitting an XJ 3.0 SC engine typically takes 14–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). The supercharger and complex cooling system add labour time.",
+    "labourEstimate": "Fitting an XJ 3.0 SC engine typically takes 14-18 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer). The supercharger and complex cooling system add labour time.",
     "cta": {
       "label": "→ Compare XJ 3.0 SC Petrol engine prices from UK specialists",
       "href": "/quote"
@@ -280,8 +280,8 @@
         "id": 1,
         "title": "Water Pump Failure (Pre-2015 Models)",
         "symptoms": "Low coolant warning light, coolant loss with no visible leak, overheating, coolant residue around the water pump pulley",
-        "typicalMileage": "20,000–60,000 miles - some fail within the first 20,000 miles",
-        "repairCost": "£400–£800 (water pump replacement; replace the small coolant pipe at the same time)",
+        "typicalMileage": "20,000-60,000 miles - some fail within the first 20,000 miles",
+        "repairCost": "£400-£800 (water pump replacement; replace the small coolant pipe at the same time)",
         "replacementCost": "N/A - repair only (does not progress to engine replacement if addressed)",
         "urgency": {
           "icon": "🔴",
@@ -298,9 +298,9 @@
         "id": 2,
         "title": "Plastic Coolant Pipe Failure (\"V Pipe\" Under Supercharger)",
         "symptoms": "Overheating, coolant loss, steam from engine bay, bubbling in the coolant reservoir",
-        "typicalMileage": "40,000–80,000 miles",
-        "repairCost": "£600–£1,200 (plastic V pipe replacement with upgraded metal pipes)",
-        "replacementCost": "£5,500–£11,000 (if ignored - engine replacement)",
+        "typicalMileage": "40,000-80,000 miles",
+        "repairCost": "£600-£1,200 (plastic V pipe replacement with upgraded metal pipes)",
+        "replacementCost": "£5,500-£11,000 (if ignored - engine replacement)",
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
@@ -316,15 +316,15 @@
         "id": 3,
         "title": "Timing Chain Tensioner & Guide Wear",
         "symptoms": "Rattling on cold start, restricted performance warning, engine warning light, metallic noise from the front of the engine",
-        "typicalMileage": "60,000–120,000 miles - more common on higher-mileage examples",
-        "repairCost": "£1,500–£3,500 (timing chain kit, tensioners and guides)",
-        "replacementCost": "£5,500–£11,000 (if chain jumps - full engine replacement)",
+        "typicalMileage": "60,000-120,000 miles - more common on higher-mileage examples",
+        "repairCost": "£1,500-£3,500 (timing chain kit, tensioners and guides)",
+        "replacementCost": "£5,500-£11,000 (if chain jumps - full engine replacement)",
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
           "text": "if you hear rattling on cold start, book an inspection today"
         },
-        "recommendation": "The AJ126 supercharged 3.0 V6 has the \"exact same tensioner/timing chain problems as the earlier <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> supercharged 5.0 V8\". A design flaw in the tensioners and guides means the steel tensioner piston slowly wears away the aluminium guide button. If the chain jumps, pistons can hit valves. A £1,500–£3,500 preventative chain replacement is dramatically cheaper than a £5,500–£11,000 engine replacement.",
+        "recommendation": "The AJ126 supercharged 3.0 V6 has the \"exact same tensioner/timing chain problems as the earlier <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> supercharged 5.0 V8\". A design flaw in the tensioners and guides means the steel tensioner piston slowly wears away the aluminium guide button. If the chain jumps, pistons can hit valves. A £1,500-£3,500 preventative chain replacement is dramatically cheaper than a £5,500-£11,000 engine replacement.",
         "failureLink": {
           "label": "Read the full timing chain failure guide → /failures/aj126-timing-chain/ [NEW FAILURE PAGE NEEDED]",
           "href": "/engine/306dt-306ps"
@@ -334,8 +334,8 @@
         "id": 4,
         "title": "Valve Cover Gasket & PCV Diaphragm Failures",
         "symptoms": "Burning oil smell, visible oil leaks, oil consumption, lean running error codes",
-        "typicalMileage": "60,000–100,000 miles",
-        "repairCost": "£400–£800 (valve cover gasket replacement) / £200–£400 (PCV diaphragm replacement)",
+        "typicalMileage": "60,000-100,000 miles",
+        "repairCost": "£400-£800 (valve cover gasket replacement) / £200-£400 (PCV diaphragm replacement)",
         "replacementCost": "N/A - repair only (does not progress to engine replacement if addressed)",
         "urgency": {
           "icon": "🟡",
@@ -372,19 +372,19 @@
         {
           "problem": "Water pump failure (pre-2015)",
           "repairable": "✅ Yes",
-          "typicalCost": "£400–£800",
+          "typicalCost": "£400-£800",
           "whenItMakesSense": "Essential preventative work - replace with revised pump"
         },
         {
           "problem": "Plastic coolant V-pipe failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£600–£1,200",
+          "typicalCost": "£600-£1,200",
           "whenItMakesSense": "Upgrade to metal pipes for permanent fix"
         },
         {
           "problem": "Timing chain rattle (early detection)",
           "repairable": "✅ Yes",
-          "typicalCost": "£1,500–£3,500",
+          "typicalCost": "£1,500-£3,500",
           "whenItMakesSense": "Preventative - catches the fault before catastrophic failure"
         },
         {
@@ -396,7 +396,7 @@
         {
           "problem": "Valve cover gasket / PCV leaks",
           "repairable": "✅ Yes",
-          "typicalCost": "£400–£800",
+          "typicalCost": "£400-£800",
           "whenItMakesSense": "Catch early to prevent oil contamination"
         }
       ]
@@ -446,10 +446,10 @@
     "rows": [
       {
         "engineCode": "AJ126 (306PS)",
-        "years": "2010–2019",
+        "years": "2010-2019",
         "power": "340 bhp (250 kW) / 450 Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£4,500–£7,500【JAG-QUOTE】"
+        "avgReconCost": "£4,500-£7,500【JAG-QUOTE】"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -531,11 +531,11 @@
       },
       {
         "label": "Average Enquiry Mileage",
-        "value": "40,000–80,000 miles【PATTERN DATA】"
+        "value": "40,000-80,000 miles【PATTERN DATA】"
       },
       {
         "label": "Average Replacement Cost",
-        "value": "£4,500–£7,500 reconditioned, supply only【JAG-QUOTE】"
+        "value": "£4,500-£7,500 reconditioned, supply only【JAG-QUOTE】"
       },
       {
         "label": "Most Requested Engine Code",
@@ -556,7 +556,7 @@
       {
         "id": 1,
         "question": "How much does a Jaguar XJ 3.0 SC Petrol engine replacement cost in the UK?",
-        "answer": "A reconditioned XJ 3.0 SC engine typically costs £4,500–£7,500 supply only. Fitting adds £2,000–£3,500 depending on location and workshop rates. Customers have reported dealer quotes of around £15,000–£30,000 for engine replacement. A low-mileage replacement engine typically ranges from £3,000 to £6,000. Use our calculator for a figure specific to your car."
+        "answer": "A reconditioned XJ 3.0 SC engine typically costs £4,500-£7,500 supply only. Fitting adds £2,000-£3,500 depending on location and workshop rates. Customers have reported dealer quotes of around £15,000-£30,000 for engine replacement. A low-mileage replacement engine typically ranges from £3,000 to £6,000. Use our calculator for a figure specific to your car."
       },
       {
         "id": 2,
@@ -571,7 +571,7 @@
       {
         "id": 4,
         "question": "Is it worth replacing a Jaguar XJ 3.0 SC Petrol engine, or should I scrap the car?",
-        "answer": "Depends on vehicle value and condition. Against a well-kept £8,000–£18,000 XJ, a £4,500–£7,500 recon is 25–90% of the car's value. For a clean, low-mileage example with good body and interior, replacement is often worth it given the XJ's rising classic status. However, if the car has other issues (air suspension, electrical faults, corrosion), evaluate total restoration costs before committing."
+        "answer": "Depends on vehicle value and condition. Against a well-kept £8,000-£18,000 XJ, a £4,500-£7,500 recon is 25-90% of the car's value. For a clean, low-mileage example with good body and interior, replacement is often worth it given the XJ's rising classic status. However, if the car has other issues (air suspension, electrical faults, corrosion), evaluate total restoration costs before committing."
       },
       {
         "id": 5,
@@ -581,7 +581,7 @@
       {
         "id": 6,
         "question": "Can I replace the water pump preventatively, or does it need to fail first?",
-        "answer": "Preventative replacement is strongly recommended on pre-2015 models. Both the V8 and V6 engines were fitted with a poorly designed water pump until 2015. The obvious solution is to get the pump changed as soon as possible after buying the car. A £400–£800 preventative water pump replacement is dramatically cheaper than a £5,500–£11,000 engine replacement if it fails and destroys the engine."
+        "answer": "Preventative replacement is strongly recommended on pre-2015 models. Both the V8 and V6 engines were fitted with a poorly designed water pump until 2015. The obvious solution is to get the pump changed as soon as possible after buying the car. A £400-£800 preventative water pump replacement is dramatically cheaper than a £5,500-£11,000 engine replacement if it fails and destroys the engine."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier."

@@ -41,12 +41,12 @@
         {
           "@type": "ItemList",
           "name": "Jaguar S-Type Generations",
-          "description": "The single generation of the Jaguar S-Type (X200, 1999–2008).",
+          "description": "The single generation of the Jaguar S-Type (X200, 1999-2008).",
           "itemListElement": [
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "X200 Generation (1999–2008)",
+              "name": "X200 Generation (1999-2008)",
               "url": "https://jaguarengines.uk/s-type/x200"
             }
           ]
@@ -96,7 +96,7 @@
               "name": "How much does a Jaguar S-Type engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned S-Type engine typically costs £4,200–£9,500 supply-only, depending on the engine variant [JAG-QUOTE]. The 3.0 V6 is the cheapest to replace at £4,500–£7,500; the 4.2 supercharged V8 is the most expensive at £6,000–£9,500. Labour adds 10–18 hours at £65–£95/hr (independent specialist) or £110–£160/hr (London/SE dealer). Use our diagnostic calculator to get a personalised estimate for your specific car."
+                "text": "A reconditioned S-Type engine typically costs £4,200-£9,500 supply-only, depending on the engine variant [JAG-QUOTE]. The 3.0 V6 is the cheapest to replace at £4,500-£7,500; the 4.2 supercharged V8 is the most expensive at £6,000-£9,500. Labour adds 10-18 hours at £65-£95/hr (independent specialist) or £110-£160/hr (London/SE dealer). Use our diagnostic calculator to get a personalised estimate for your specific car."
               }
             },
             {
@@ -128,7 +128,7 @@
               "name": "Is it worth replacing a Jaguar S-Type engine?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "It depends entirely on the car's value versus the replacement cost. A £4,500–£7,500 recon 3.0 V6 on a £4,000–£5,000 car is borderline - at the 60% threshold, you need to think hard. A £6,000–£9,500 recon 4.2 supercharged V8 on a £3,000 S-Type R is almost never worth it unless the car is a future classic with sentimental value. As a rule, if replacement cost exceeds 60% of the car's current value, get a scrap valuation before committing."
+                "text": "It depends entirely on the car's value versus the replacement cost. A £4,500-£7,500 recon 3.0 V6 on a £4,000-£5,000 car is borderline - at the 60% threshold, you need to think hard. A £6,000-£9,500 recon 4.2 supercharged V8 on a £3,000 S-Type R is almost never worth it unless the car is a future classic with sentimental value. As a rule, if replacement cost exceeds 60% of the car's current value, get a scrap valuation before committing."
               }
             },
             {
@@ -136,7 +136,7 @@
               "name": "Which S-Type should I buy?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The 2004–2008 3.0 V6 SE with full service history is the sweet spot - the later facelift gives you the revised cooling system and interior upgrades, the V6 is the most reliable engine, and SE trim gets you the equipment you actually want (leather, climate, decent audio) without the complexity of the V8s. Avoid pre-2002 4.0 V8s; buy a 4.2 V8 only if you're prepared for higher running costs."
+                "text": "The 2004-2008 3.0 V6 SE with full service history is the sweet spot - the later facelift gives you the revised cooling system and interior upgrades, the V6 is the most reliable engine, and SE trim gets you the equipment you actually want (leather, climate, decent audio) without the complexity of the V8s. Avoid pre-2002 4.0 V8s; buy a 4.2 V8 only if you're prepared for higher running costs."
               }
             },
             {
@@ -212,9 +212,9 @@
     }
   },
   "hero": {
-    "tagPill": "JAGUAR • S-TYPE • 1999–2008 • 1 Generation • AJ-V6 • AJ-V8",
+    "tagPill": "JAGUAR • S-TYPE • 1999-2008 • 1 Generation • AJ-V6 • AJ-V8",
     "h1": "S-Type Engines - The Complete UK Guide",
-    "subHeadline": "Every S-Type engine from the 2.5 V6 to the 4.2 V8 and the legendary R - 1999–2008 production, 70+ real UK enquiries, verified costs, and an honest verdict on whether replacement still makes financial sense [JAG-VERIFIED].",
+    "subHeadline": "Every S-Type engine from the 2.5 V6 to the 4.2 V8 and the legendary R - 1999-2008 production, 70+ real UK enquiries, verified costs, and an honest verdict on whether replacement still makes financial sense [JAG-VERIFIED].",
     "trustStrip": [
       {
         "icon": "📊",
@@ -263,11 +263,11 @@
       },
       {
         "metric": "Best Used Buy",
-        "ourCall": "Late 2004–2008 3.0 V6 SE with full service history - the sweet spot between performance and running costs."
+        "ourCall": "Late 2004-2008 3.0 V6 SE with full service history - the sweet spot between performance and running costs."
       },
       {
         "metric": "Average Engine Replacement",
-        "ourCall": "£4,500–£7,500 reconditioned supply-only [JAG-QUOTE]"
+        "ourCall": "£4,500-£7,500 reconditioned supply-only [JAG-QUOTE]"
       },
       {
         "metric": "Most Common Failure Enquiry",
@@ -289,7 +289,7 @@
       },
       {
         "metric": "Years Produced",
-        "value": "1999–2008"
+        "value": "1999-2008"
       },
       {
         "metric": "Engine Codes Tracked",
@@ -313,11 +313,11 @@
       },
       {
         "metric": "Typical Replacement Cost",
-        "value": "£4,500–£7,500 reconditioned [JAG-QUOTE]"
+        "value": "£4,500-£7,500 reconditioned [JAG-QUOTE]"
       },
       {
         "metric": "Typical Host Value",
-        "value": "£1,500–£5,500 [THIRD-PARTY]"
+        "value": "£1,500-£5,500 [THIRD-PARTY]"
       },
       {
         "metric": "Overall Rating",
@@ -327,12 +327,12 @@
   },
   "generations": {
     "h2": "S-Type - One Generation, Five Powertrains",
-    "subHeadline": "The S-Type ran from 1999–2008 across two distinct engineering eras - the early Jaguar-developed V6/V8 and the later Ford-era refinements.",
+    "subHeadline": "The S-Type ran from 1999-2008 across two distinct engineering eras - the early Jaguar-developed V6/V8 and the later Ford-era refinements.",
     "cards": [
       {
         "title": "X200 Generation",
         "badge": "",
-        "meta": "1999–2008 • 2.5 V6 (<a href='https://jaguarengines.uk/engine/aj-v6-petrol'>AJ-V6</a>), 3.0 V6 (AJ126), 4.0 V8, 4.2 V8 (<a href='https://jaguarengines.uk/engine/aj133'>AJ133</a>), 4.2 Supercharged V8 (AJ133-SC)",
+        "meta": "1999-2008 • 2.5 V6 (<a href='https://jaguarengines.uk/engine/aj-v6-petrol'>AJ-V6</a>), 3.0 V6 (AJ126), 4.0 V8, 4.2 V8 (<a href='https://jaguarengines.uk/engine/aj133'>AJ133</a>), 4.2 Supercharged V8 (AJ133-SC)",
         "rating": "★★★☆☆ (2003+ facelift earns ★★★★☆)",
         "verdict": "The S-Type is a single-generation car with two distinct halves: pre-2002 cars have the earlier Nikasil-lined V8s that can suffer bore wear; post-2004 cars gain the revised 4.2 V8 with better reliability. Buy the facelift, avoid the very earliest V8s unless the engine has been replaced.",
         "cta": {
@@ -358,7 +358,7 @@
   },
   "engineDatabase": {
     "h2": "S-Type Engine Codes - The Complete Database",
-    "subHeadline": "Every engine fitted to the 1999–2008 Jaguar S-Type, verified against Jaguar factory specifications.",
+    "subHeadline": "Every engine fitted to the 1999-2008 Jaguar S-Type, verified against Jaguar factory specifications.",
     "columns": [
       "Engine Code",
       "Family",
@@ -378,11 +378,11 @@
         "fuel": "Petrol",
         "displacement": "2.5L",
         "power": "197 bhp",
-        "years": "1999–2002",
+        "years": "1999-2002",
         "model": "X200",
         "reliability": "★★★☆☆",
         "enquiries": "5+ [PATTERN DATA]",
-        "avgRebuildCost": "£4,200–£6,500 [JAG-QUOTE]"
+        "avgRebuildCost": "£4,200-£6,500 [JAG-QUOTE]"
       },
       {
         "engineCode": "AJ126 3.0 V6",
@@ -390,11 +390,11 @@
         "fuel": "Petrol",
         "displacement": "3.0L",
         "power": "240 bhp",
-        "years": "1999–2008",
+        "years": "1999-2008",
         "model": "X200",
         "reliability": "★★★★☆",
         "enquiries": "30+ [JAG-VERIFIED]",
-        "avgRebuildCost": "£4,500–£7,500 [JAG-QUOTE]"
+        "avgRebuildCost": "£4,500-£7,500 [JAG-QUOTE]"
       },
       {
         "engineCode": "<a href='https://jaguarengines.uk/engine/aj-v8-4-0-4-2'>AJ-V8 4.0</a>",
@@ -402,11 +402,11 @@
         "fuel": "Petrol",
         "displacement": "4.0L",
         "power": "290 bhp",
-        "years": "1999–2002",
+        "years": "1999-2002",
         "model": "X200",
         "reliability": "★★☆☆☆",
         "enquiries": "8+ [PATTERN DATA]",
-        "avgRebuildCost": "£4,500–£7,000 [JAG-QUOTE]"
+        "avgRebuildCost": "£4,500-£7,000 [JAG-QUOTE]"
       },
       {
         "engineCode": "AJ133 4.2 V8",
@@ -414,11 +414,11 @@
         "fuel": "Petrol",
         "displacement": "4.2L",
         "power": "300 bhp",
-        "years": "2002–2008",
+        "years": "2002-2008",
         "model": "X200",
         "reliability": "★★★☆☆ (pre-2004) / ★★★★☆ (2004+)",
         "enquiries": "15+ [PATTERN DATA]",
-        "avgRebuildCost": "£5,500–£9,000 [JAG-QUOTE]"
+        "avgRebuildCost": "£5,500-£9,000 [JAG-QUOTE]"
       },
       {
         "engineCode": "AJ133 4.2 SC",
@@ -426,11 +426,11 @@
         "fuel": "Petrol",
         "displacement": "4.2L",
         "power": "395 bhp",
-        "years": "2002–2008",
+        "years": "2002-2008",
         "model": "X200 (R)",
         "reliability": "★★★☆☆ (pre-2004) / ★★★★☆ (2004+)",
         "enquiries": "12+ [PATTERN DATA]",
-        "avgRebuildCost": "£6,000–£9,500 [JAG-QUOTE]"
+        "avgRebuildCost": "£6,000-£9,500 [JAG-QUOTE]"
       }
     ],
     "confidenceScore": {
@@ -453,7 +453,7 @@
       {
         "id": 1,
         "issue": "AJ-V8 4.0 Nikasil Bore Wear",
-        "description": "Early 4.0 V8 engines (1999–2002) used Nikasil cylinder liners that could be damaged by high-sulphur UK fuel - causing loss of compression and misfires. Most affected cars are now off the road or have had replacement engines.",
+        "description": "Early 4.0 V8 engines (1999-2002) used Nikasil cylinder liners that could be damaged by high-sulphur UK fuel - causing loss of compression and misfires. Most affected cars are now off the road or have had replacement engines.",
         "severity": {
           "icon": "🟠",
           "label": "Immediate",
@@ -509,7 +509,7 @@
       {
         "id": 5,
         "issue": "V6 Water Pump Failure",
-        "description": "The 2.5 and 3.0 V6 water pump can fail with age - a well-documented weakness on the AJ-V6 family. Replacement before failure is recommended at 60k–80k miles.",
+        "description": "The 2.5 and 3.0 V6 water pump can fail with age - a well-documented weakness on the AJ-V6 family. Replacement before failure is recommended at 60k-80k miles.",
         "severity": {
           "icon": "🟢",
           "label": "Low",
@@ -578,7 +578,7 @@
       },
       {
         "signal": "Average Recon Cost (V6)",
-        "data": "£4,500–£7,500 [JAG-QUOTE]",
+        "data": "£4,500-£7,500 [JAG-QUOTE]",
         "demandTrend": "➡ Stable"
       }
     ],
@@ -610,8 +610,8 @@
         "rows": []
       }
     ],
-    "figuresNote": "Labour estimate: Fitting an S-Type engine typically takes 10–18 hours at £65–£95/hr (independent specialist) or £110–£160/hr (London/SE dealer) [JAG-QUOTE]. The S-Type rule - value check before you commit: An S-Type X200 typically sits at £1,500–£5,500 today [THIRD-PARTY]. A £4,500–£7,500 reconditioned AJ126 on a £2,500 car represents 60–100% of the car's value - putting it at or above our 60% threshold for Jaguar. If you're looking at a V8,",
-    "labourEstimate": "Fitting an S-Type engine typically takes 10–18 hours at £65–£95/hr (independent specialist) or £110–£160/hr (London/SE dealer) [JAG-QUOTE]. The S-Type rule - value check before you commit: An S-Type X200 typically sits at £1,500–£5,500 today [THIRD-PARTY]. A £4,500–£7,500 reconditioned AJ126 on a £2,500 car represents 60–100% of the car's value - putting it at or above our 60% threshold for Jaguar. If you're looking at a V8,",
+    "figuresNote": "Labour estimate: Fitting an S-Type engine typically takes 10-18 hours at £65-£95/hr (independent specialist) or £110-£160/hr (London/SE dealer) [JAG-QUOTE]. The S-Type rule - value check before you commit: An S-Type X200 typically sits at £1,500-£5,500 today [THIRD-PARTY]. A £4,500-£7,500 reconditioned AJ126 on a £2,500 car represents 60-100% of the car's value - putting it at or above our 60% threshold for Jaguar. If you're looking at a V8,",
+    "labourEstimate": "Fitting an S-Type engine typically takes 10-18 hours at £65-£95/hr (independent specialist) or £110-£160/hr (London/SE dealer) [JAG-QUOTE]. The S-Type rule - value check before you commit: An S-Type X200 typically sits at £1,500-£5,500 today [THIRD-PARTY]. A £4,500-£7,500 reconditioned AJ126 on a £2,500 car represents 60-100% of the car's value - putting it at or above our 60% threshold for Jaguar. If you're looking at a V8,",
     "economicsBox": {
       "title": "",
       "text": ""
@@ -629,21 +629,21 @@
     "eras": [
       {
         "era": "Launch Era - Ford-Jaguar Collaboration",
-        "years": "1999–2002",
+        "years": "1999-2002",
         "keyEngines": "AJ-V6 2.5, AJ126 3.0 V6, AJ-V8 4.0",
         "whyBmwChanged": "S-Type launched as Jaguar's entry-level saloon under Ford ownership. The V8 was the flagship engine, but the V6s were the volume sellers.",
         "worthKnowing": "The 4.0 V8 used Nikasil cylinder liners - a material that proved vulnerable to high-sulphur UK fuel. Many 4.0 S-Types were replaced under warranty; survivors are rare."
       },
       {
         "era": "Mid-Cycle Refresh - Engineering Improvements",
-        "years": "2002–2004",
+        "years": "2002-2004",
         "keyEngines": "AJ126 3.0 V6, AJ133 4.2 V8, AJ133 4.2 SC",
         "whyBmwChanged": "Jaguar phased out the 4.0 V8 and its problematic Nikasil liners, replacing it with the 4.2 AJ133 - a steel-lined engine with revised timing chain tensioners and improved cooling.",
         "worthKnowing": "The pre-2004 4.2 V8 still carried the older chain tensioner design; 2004-on cars got the revised, more durable tensioners - the key buying threshold."
       },
       {
         "era": "Facelift Era - R Performance Flagship",
-        "years": "2004–2008",
+        "years": "2004-2008",
         "keyEngines": "AJ126 3.0 V6, AJ133 4.2 V8, AJ133 4.2 SC",
         "whyBmwChanged": "The S-Type R launched in 2002 with the 4.2 supercharged V8, but the 2004 facelift refined the engine bay and cooling systems across the range.",
         "worthKnowing": "The supercharged 4.2 shares the same core reliability profile as the naturally aspirated 4.2 - but the supercharger itself adds a known \"coupler rattle\" weakness and more complex servicing."
@@ -666,12 +666,12 @@
       {
         "buyerProfile": "Daily Commuter",
         "rating": "★★★☆☆",
-        "verdict": "A 3.0 V6 with full service history is a comfortable, refined commuter - but 22–26 mpg and rising specialist costs mean it's not a budget-friendly daily. Buy one as a second car, not your only car."
+        "verdict": "A 3.0 V6 with full service history is a comfortable, refined commuter - but 22-26 mpg and rising specialist costs mean it's not a budget-friendly daily. Buy one as a second car, not your only car."
       },
       {
         "buyerProfile": "Budget Owner",
         "rating": "★★☆☆☆",
-        "verdict": "The S-Type is cheap to buy (£1,500–£3,000 buys a usable example) but expensive to keep. A £4,500 engine replacement on a £2,000 car is a financial mistake. If your budget is tight, buy a well-maintained V6 and accept that one major failure means scrapping it."
+        "verdict": "The S-Type is cheap to buy (£1,500-£3,000 buys a usable example) but expensive to keep. A £4,500 engine replacement on a £2,000 car is a financial mistake. If your budget is tight, buy a well-maintained V6 and accept that one major failure means scrapping it."
       },
       {
         "buyerProfile": "Performance Buyer",
@@ -710,7 +710,7 @@
       {
         "icon": "💚",
         "title": "We Tell You When Not to Repair",
-        "text": "When a £4,500–£7,500 reconditioned engine exceeds 60% of your S-Type's market value, we say so - and we tell you to get a scrap valuation alongside your repair quote. That's the difference between a knowledge base and a sales page."
+        "text": "When a £4,500-£7,500 reconditioned engine exceeds 60% of your S-Type's market value, we say so - and we tell you to get a scrap valuation alongside your repair quote. That's the difference between a knowledge base and a sales page."
       },
       {
         "icon": "🔧",
@@ -730,7 +730,7 @@
       {
         "id": 1,
         "question": "How much does a Jaguar S-Type engine replacement cost in the UK?",
-        "answer": "A reconditioned S-Type engine typically costs £4,200–£9,500 supply-only, depending on the engine variant [JAG-QUOTE]. The 3.0 V6 is the cheapest to replace at £4,500–£7,500; the 4.2 supercharged V8 is the most expensive at £6,000–£9,500. Labour adds 10–18 hours at £65–£95/hr (independent specialist) or £110–£160/hr (London/SE dealer). Use our diagnostic calculator to get a personalised estimate for your specific car."
+        "answer": "A reconditioned S-Type engine typically costs £4,200-£9,500 supply-only, depending on the engine variant [JAG-QUOTE]. The 3.0 V6 is the cheapest to replace at £4,500-£7,500; the 4.2 supercharged V8 is the most expensive at £6,000-£9,500. Labour adds 10-18 hours at £65-£95/hr (independent specialist) or £110-£160/hr (London/SE dealer). Use our diagnostic calculator to get a personalised estimate for your specific car."
       },
       {
         "id": 2,
@@ -750,12 +750,12 @@
       {
         "id": 5,
         "question": "Is it worth replacing a Jaguar S-Type engine?",
-        "answer": "It depends entirely on the car's value versus the replacement cost. A £4,500–£7,500 recon 3.0 V6 on a £4,000–£5,000 car is borderline - at the 60% threshold, you need to think hard. A £6,000–£9,500 recon 4.2 supercharged V8 on a £3,000 S-Type R is almost never worth it unless the car is a future classic with sentimental value. As a rule, if replacement cost exceeds 60% of the car's current value, get a scrap valuation before committing."
+        "answer": "It depends entirely on the car's value versus the replacement cost. A £4,500-£7,500 recon 3.0 V6 on a £4,000-£5,000 car is borderline - at the 60% threshold, you need to think hard. A £6,000-£9,500 recon 4.2 supercharged V8 on a £3,000 S-Type R is almost never worth it unless the car is a future classic with sentimental value. As a rule, if replacement cost exceeds 60% of the car's current value, get a scrap valuation before committing."
       },
       {
         "id": 6,
         "question": "Which S-Type should I buy?",
-        "answer": "The 2004–2008 3.0 V6 SE with full service history is the sweet spot - the later facelift gives you the revised cooling system and interior upgrades, the V6 is the most reliable engine, and SE trim gets you the equipment you actually want (leather, climate, decent audio) without the complexity of the V8s. Avoid pre-2002 4.0 V8s; buy a 4.2 V8 only if you're prepared for higher running costs."
+        "answer": "The 2004-2008 3.0 V6 SE with full service history is the sweet spot - the later facelift gives you the revised cooling system and interior upgrades, the V6 is the most reliable engine, and SE trim gets you the equipment you actually want (leather, climate, decent audio) without the complexity of the V8s. Avoid pre-2002 4.0 V8s; buy a 4.2 V8 only if you're prepared for higher running costs."
       },
       {
         "id": 7,

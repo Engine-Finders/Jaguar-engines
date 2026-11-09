@@ -9,7 +9,7 @@ function ArrowIcon({ className = "h-4 w-4" }) {
 }
 
 /**
- * Compact homepage quote CTA strip — button + optional one-line support text.
+ * Compact homepage quote CTA strip - button + optional one-line support text.
  * Keeps spacing tight so it slots into existing sections without redesign.
  */
 export default function HomeQuoteCta({

@@ -37,11 +37,11 @@
     "icon": "pound",
     "columns": ["ENGINE CODE", "COST RANGE"],
     "rows": [
-      { "code": "AJ200D / 204DTD", "cost": "£3,500–£5,800" },
-      { "code": "AJ126", "cost": "£4,500–£7,500" },
-      { "code": "276DT", "cost": "£5,000–£7,500" },
-      { "code": "AJ200P / 204PT", "cost": "£3,000–£5,000" },
-      { "code": "AJ133 / 508PN", "cost": "£5,500–£9,000" }
+      { "code": "AJ200D / 204DTD", "cost": "£3,500-£5,800" },
+      { "code": "AJ126", "cost": "£4,500-£7,500" },
+      { "code": "276DT", "cost": "£5,000-£7,500" },
+      { "code": "AJ200P / 204PT", "cost": "£3,000-£5,000" },
+      { "code": "AJ133 / 508PN", "cost": "£5,500-£9,000" }
     ],
     "footer": { "label": "View cost methodology", "href": "/data/methodology" }
   },

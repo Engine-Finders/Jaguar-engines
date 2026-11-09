@@ -1,7 +1,7 @@
 # BMW Web - Agent Notes
 
 ## Goal
-Build a multi-page site (3–4 pages). Start with the **home page**. Priority is **data flow**, not UI polish. UI is a basic white-theme skeleton only (minimal padding/spacing). Later: swap JSON → DB with minimal changes.
+Build a multi-page site (3-4 pages). Start with the **home page**. Priority is **data flow**, not UI polish. UI is a basic white-theme skeleton only (minimal padding/spacing). Later: swap JSON → DB with minimal changes.
 
 ## Architecture (current)
 sfd

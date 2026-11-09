@@ -87,7 +87,7 @@
               "name": "How much does a Jaguar AJ133 engine replacement cost?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned AJ133 typically costs £5,500–£9,000 supply only [JAG‑QUOTE], varying by specification and whether it's naturally aspirated or supercharged. Fitting adds £910–£1,170 depending on labour rates."
+                "text": "A reconditioned AJ133 typically costs £5,500-£9,000 supply only [JAG‑QUOTE], varying by specification and whether it's naturally aspirated or supercharged. Fitting adds £910-£1,170 depending on labour rates."
               }
             },
             {
@@ -103,7 +103,7 @@
               "name": "What is the most common AJ133 failure?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The most common AJ133 failure is timing chain tensioner wear on pre‑2013 engines, typically appearing between 60,000–120,000 miles."
+                "text": "The most common AJ133 failure is timing chain tensioner wear on pre‑2013 engines, typically appearing between 60,000-120,000 miles."
               }
             },
             {
@@ -195,7 +195,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar • AJ133 • Petrol • 5.0L V8 • 2009–2022",
+    "tagPill": "Jaguar • AJ133 • Petrol • 5.0L V8 • 2009-2022",
     "h1": "Jaguar AJ133 Engine - Specs, Reliability & Replacement Cost",
     "subHeadline": "The Jaguar AJ133 is a 5.0-litre V8 petrol - a superb engine let down by early timing‑chain issues. Backed by 330+ real UK enquiries in 2025 [JAG‑VERIFIED].",
     "trustStrip": [
@@ -237,11 +237,11 @@
       },
       {
         "metric": "Power Range",
-        "value": "385–575 bhp"
+        "value": "385-575 bhp"
       },
       {
         "metric": "Years Produced",
-        "value": "2009–2022"
+        "value": "2009-2022"
       },
       {
         "metric": "Models Fitted (Jaguar only)",
@@ -273,7 +273,7 @@
         },
         {
           "dimension": "Repair Cost",
-          "score": "8 (Midpoint of reconditioned range (£7,250) → £7,000–£9,999 bracket)"
+          "score": "8 (Midpoint of reconditioned range (£7,250) → £7,000-£9,999 bracket)"
         },
         {
           "dimension": "Repairability",
@@ -309,31 +309,31 @@
         "model": "XF",
         "generation": "X250",
         "variantBadge": "5.0 V8 NA / SC",
-        "years": "2009–2015"
+        "years": "2009-2015"
       },
       {
         "model": "XJ",
         "generation": "X351",
         "variantBadge": "5.0 V8 NA / SC",
-        "years": "2009–2019"
+        "years": "2009-2019"
       },
       {
         "model": "F‑Type",
         "generation": "X152",
         "variantBadge": "5.0 V8 SC",
-        "years": "2013–2024"
+        "years": "2013-2024"
       },
       {
         "model": "XK",
         "generation": "X150",
         "variantBadge": "5.0 V8 NA / SC",
-        "years": "2009–2014"
+        "years": "2009-2014"
       },
       {
         "model": "XFR",
         "generation": "X250",
         "variantBadge": "5.0 V8 SC",
-        "years": "2009–2015"
+        "years": "2009-2015"
       }
     ],
     "crossBrandNote": "Also powers the Land Rover Range Rover, Sport and Discovery → [link]."
@@ -348,24 +348,24 @@
     "rows": [
       {
         "condition": "Used",
-        "supplyOnly": "£3,000–£5,500 [JAG‑QUOTE]",
-        "fittedIndie": "£3,910–£6,670",
-        "warranty": "3–6 months"
+        "supplyOnly": "£3,000-£5,500 [JAG‑QUOTE]",
+        "fittedIndie": "£3,910-£6,670",
+        "warranty": "3-6 months"
       },
       {
         "condition": "Reconditioned",
-        "supplyOnly": "£5,500–£9,000 [JAG‑QUOTE]",
-        "fittedIndie": "£6,410–£10,170",
+        "supplyOnly": "£5,500-£9,000 [JAG‑QUOTE]",
+        "fittedIndie": "£6,410-£10,170",
         "warranty": "12 months"
       },
       {
         "condition": "Rebuilt",
-        "supplyOnly": "£8,000–£12,000 [JAG‑QUOTE]",
-        "fittedIndie": "£8,910–£13,170",
-        "warranty": "12–24 months"
+        "supplyOnly": "£8,000-£12,000 [JAG‑QUOTE]",
+        "fittedIndie": "£8,910-£13,170",
+        "warranty": "12-24 months"
       }
     ],
-    "labourEstimate": "Fitting an AJ133 typically takes 14–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG‑QUOTE].",
+    "labourEstimate": "Fitting an AJ133 typically takes 14-18 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [JAG‑QUOTE].",
     "sharedCostNote": "Parts cost is identical across Jaguar and Land Rover applications; labour time varies slightly by engine bay access.",
     "cta": {
       "label": "",
@@ -377,7 +377,7 @@
       {
         "id": 1,
         "question": "How much does a Jaguar AJ133 engine replacement cost?",
-        "answer": "A reconditioned AJ133 typically costs £5,500–£9,000 supply only [JAG‑QUOTE], varying by specification and whether it's naturally aspirated or supercharged. Fitting adds £910–£1,170 depending on labour rates."
+        "answer": "A reconditioned AJ133 typically costs £5,500-£9,000 supply only [JAG‑QUOTE], varying by specification and whether it's naturally aspirated or supercharged. Fitting adds £910-£1,170 depending on labour rates."
       },
       {
         "id": 2,
@@ -387,7 +387,7 @@
       {
         "id": 3,
         "question": "What is the most common AJ133 failure?",
-        "answer": "The most common AJ133 failure is timing chain tensioner wear on pre‑2013 engines, typically appearing between 60,000–120,000 miles."
+        "answer": "The most common AJ133 failure is timing chain tensioner wear on pre‑2013 engines, typically appearing between 60,000-120,000 miles."
       },
       {
         "id": 4,

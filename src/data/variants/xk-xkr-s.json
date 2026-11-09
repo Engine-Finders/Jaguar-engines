@@ -78,7 +78,7 @@
               "name": "How much does a Jaguar XKR‑S engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned AJ133 5.0 supercharged V8 engine typically costs £6,000–£9,000 supply only. Fitting adds £1,100–£1,800. Main dealer new engines can exceed £30,000. Timing chain replacement alone can cost £1,500–£4,000 if caught early. Use our calculator for a figure specific to your car."
+                "text": "A reconditioned AJ133 5.0 supercharged V8 engine typically costs £6,000-£9,000 supply only. Fitting adds £1,100-£1,800. Main dealer new engines can exceed £30,000. Timing chain replacement alone can cost £1,500-£4,000 if caught early. Use our calculator for a figure specific to your car."
               }
             },
             {
@@ -102,7 +102,7 @@
               "name": "Is it worth replacing a Jaguar XKR‑S engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on vehicle value. Against a well‑kept XKR‑S worth £25,000–£50,000, a £7,500 recon is a manageable 15–30% of the vehicle's value - worth it for a well‑maintained example. Given the XKR‑S's status as Jaguar's ultimate V8 and its strong retained values, replacement is usually viable."
+                "text": "Depends on vehicle value. Against a well‑kept XKR‑S worth £25,000-£50,000, a £7,500 recon is a manageable 15-30% of the vehicle's value - worth it for a well‑maintained example. Given the XKR‑S's status as Jaguar's ultimate V8 and its strong retained values, replacement is usually viable."
               }
             },
             {
@@ -118,7 +118,7 @@
               "name": "Can I repair the AJ133's timing chain, or does it need a new engine?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes - if caught early. A timing chain and tensioner replacement (£1,500–£4,000) is far cheaper than a catastrophic chain slip (£6,000–£12,000 engine replacement). At the first sign of cold‑start rattle, book an inspection immediately. The tensioner is a known weak point - replacing it with updated parts is strongly recommended."
+                "text": "Yes - if caught early. A timing chain and tensioner replacement (£1,500-£4,000) is far cheaper than a catastrophic chain slip (£6,000-£12,000 engine replacement). At the first sign of cold‑start rattle, book an inspection immediately. The tensioner is a known weak point - replacing it with updated parts is strongly recommended."
               }
             }
           ]
@@ -179,7 +179,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar XK XKR‑S • 2011–2014 • AJ133 5.0 Supercharged V8",
+    "tagPill": "Jaguar XK XKR‑S • 2011-2014 • AJ133 5.0 Supercharged V8",
     "h1": "Jaguar XK XKR‑S Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Jaguar XKR‑S specialists. Compare reconditioned, rebuilt and used <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> 5.0 V8 engines for the ultimate XK - supply & fit available nationwide.",
     "trustBadges": [
@@ -212,10 +212,10 @@
     "rows": [
       {
         "generation": "X150",
-        "years": "2011–2014",
+        "years": "2011-2014",
         "engineCode": "AJ133 (508PS - 5.0 Supercharged V8)",
         "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£6,000–£10,000 [JAG‑QUOTE]",
+        "reconCost": "£6,000-£10,000 [JAG‑QUOTE]",
         "eraNote": "Jaguar's ultimate V8 - 550 PS, 186 mph; water pump, timing chain tensioners and valley coolant pipes are the main watchpoints."
       }
     ],
@@ -234,35 +234,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£3,500–£6,500",
-        "fittedIndie": "£4,400–£7,700",
-        "warranty": "3–6 months",
+        "supplyOnly": "£3,500-£6,500",
+        "fittedIndie": "£4,400-£7,700",
+        "warranty": "3-6 months",
         "bestFor": "Budget priority; vehicle under £15,000"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£6,000–£9,000",
-        "fittedIndie": "£7,100–£10,400",
-        "warranty": "12–24 months",
+        "supplyOnly": "£6,000-£9,000",
+        "fittedIndie": "£7,100-£10,400",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£8,000–£12,000",
-        "fittedIndie": "£9,200–£13,500",
-        "warranty": "12–24 months",
+        "supplyOnly": "£8,000-£12,000",
+        "fittedIndie": "£9,200-£13,500",
+        "warranty": "12-24 months",
         "bestFor": "Long‑term ownership; 3+ year horizon"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£15,000–£30,000",
-        "fittedIndie": "£17,000–£33,000",
-        "warranty": "24–36 months",
+        "supplyOnly": "£15,000-£30,000",
+        "fittedIndie": "£17,000-£33,000",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs, warranty claims; dealer quotes can exceed £30,000"
       }
     ],
     "figuresNote": "",
-    "labourEstimate": "Fitting an XKR‑S engine typically takes 14–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). Supercharger removal is required for many repairs.",
+    "labourEstimate": "Fitting an XKR‑S engine typically takes 14-18 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer). Supercharger removal is required for many repairs.",
     "cta": {
       "label": "",
       "href": "/economics"
@@ -293,25 +293,25 @@
         {
           "problem": "Timing chain tensioner failure (AJ133)",
           "repairable": "✅ Yes",
-          "typicalCost": "£1,500–£4,000",
+          "typicalCost": "£1,500-£4,000",
           "whenItMakesSense": "If caught early; regular oil changes prevent recurrence"
         },
         {
           "problem": "Water pump failure (AJ133)",
           "repairable": "✅ Yes",
-          "typicalCost": "£500–£1,200",
-          "whenItMakesSense": "Preventative - replace at 30,000–40,000 miles"
+          "typicalCost": "£500-£1,200",
+          "whenItMakesSense": "Preventative - replace at 30,000-40,000 miles"
         },
         {
           "problem": "Valley coolant pipe leak (AJ133)",
           "repairable": "✅ Yes",
-          "typicalCost": "£500–£1,200",
+          "typicalCost": "£500-£1,200",
           "whenItMakesSense": "Specialist repair; supercharger removal required"
         },
         {
           "problem": "Supercharger snout bearing wear (AJ133)",
           "repairable": "✅ Yes",
-          "typicalCost": "£600–£1,500",
+          "typicalCost": "£600-£1,500",
           "whenItMakesSense": "Specialist rebuild; catch it before the supercharger fails"
         },
         {
@@ -368,10 +368,10 @@
     "rows": [
       {
         "engineCode": "AJ133 (508PS)",
-        "years": "2011–2014",
+        "years": "2011-2014",
         "power": "550 PS (542 bhp) / 680 Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£6,000–£10,000 [JAG‑QUOTE]"
+        "avgReconCost": "£6,000-£10,000 [JAG‑QUOTE]"
       }
     ],
     "matchNote": "",
@@ -442,7 +442,7 @@
       {
         "id": 1,
         "question": "How much does a Jaguar XKR‑S engine replacement cost in the UK?",
-        "answer": "A reconditioned AJ133 5.0 supercharged V8 engine typically costs £6,000–£9,000 supply only. Fitting adds £1,100–£1,800. Main dealer new engines can exceed £30,000. Timing chain replacement alone can cost £1,500–£4,000 if caught early. Use our calculator for a figure specific to your car."
+        "answer": "A reconditioned AJ133 5.0 supercharged V8 engine typically costs £6,000-£9,000 supply only. Fitting adds £1,100-£1,800. Main dealer new engines can exceed £30,000. Timing chain replacement alone can cost £1,500-£4,000 if caught early. Use our calculator for a figure specific to your car."
       },
       {
         "id": 2,
@@ -457,7 +457,7 @@
       {
         "id": 4,
         "question": "Is it worth replacing a Jaguar XKR‑S engine, or should I scrap the car?",
-        "answer": "Depends on vehicle value. Against a well‑kept XKR‑S worth £25,000–£50,000, a £7,500 recon is a manageable 15–30% of the vehicle's value - worth it for a well‑maintained example. Given the XKR‑S's status as Jaguar's ultimate V8 and its strong retained values, replacement is usually viable for vehicles in good condition."
+        "answer": "Depends on vehicle value. Against a well‑kept XKR‑S worth £25,000-£50,000, a £7,500 recon is a manageable 15-30% of the vehicle's value - worth it for a well‑maintained example. Given the XKR‑S's status as Jaguar's ultimate V8 and its strong retained values, replacement is usually viable for vehicles in good condition."
       },
       {
         "id": 5,
@@ -467,7 +467,7 @@
       {
         "id": 6,
         "question": "Can I repair the AJ133's timing chain, or does it need a new engine?",
-        "answer": "Yes - if caught early. A timing chain and tensioner replacement (£1,500–£4,000) is far cheaper than a catastrophic chain slip (£6,000–£12,000 engine replacement). At the first sign of cold‑start rattle, book an inspection immediately. The tensioner is a known weak point - replacing it with updated parts is strongly recommended."
+        "answer": "Yes - if caught early. A timing chain and tensioner replacement (£1,500-£4,000) is far cheaper than a catastrophic chain slip (£6,000-£12,000 engine replacement). At the first sign of cold‑start rattle, book an inspection immediately. The tensioner is a known weak point - replacing it with updated parts is strongly recommended."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty - always confirm terms with your chosen supplier."

@@ -78,7 +78,7 @@
               "name": "How much does a Jaguar XJ 3.0 V6 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned XJ 3.0 V6 (AJ30) engine typically costs £4,000–£7,500 supply only. Jaguar XJ 3.0 V6 engine replacement costs typically range from £4,500 – £7,500. Customers have reported dealer quotes of around £15,000–£30,000 for engine replacement, while reconditioning is often in the £8,000–£10,000 range. Fitting adds £1,000–£1,800 at independent specialist rates. Use our calculator for a figure specific to your car."
+                "text": "A reconditioned XJ 3.0 V6 (AJ30) engine typically costs £4,000-£7,500 supply only. Jaguar XJ 3.0 V6 engine replacement costs typically range from £4,500 - £7,500. Customers have reported dealer quotes of around £15,000-£30,000 for engine replacement, while reconditioning is often in the £8,000-£10,000 range. Fitting adds £1,000-£1,800 at independent specialist rates. Use our calculator for a figure specific to your car."
               }
             },
             {
@@ -102,7 +102,7 @@
               "name": "Is it worth replacing a Jaguar XJ 3.0 V6 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on vehicle value. Against a well-kept X350 XJ (values £2,000–£19,000+ depending on condition and mileage), a £4,000–£5,500 reconditioned engine is 25–80% of the vehicle's value - often worth it for a solid example. The Jaguar scrap threshold of 60% means evaluating the whole vehicle and its condition before committing. Given the X350's status as a future classic and rising interest, engine replacement is often worth it for a good example."
+                "text": "Depends on vehicle value. Against a well-kept X350 XJ (values £2,000-£19,000+ depending on condition and mileage), a £4,000-£5,500 reconditioned engine is 25-80% of the vehicle's value - often worth it for a solid example. The Jaguar scrap threshold of 60% means evaluating the whole vehicle and its condition before committing. Given the X350's status as a future classic and rising interest, engine replacement is often worth it for a good example."
               }
             },
             {
@@ -118,7 +118,7 @@
               "name": "Can I repair the AJ30 timing chain, or does it require engine replacement?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes - if caught early. A preventative timing chain, guide and tensioner replacement costs £1,200–£3,000. Early cars had more problems, as Jaguar made running changes to improve the design. However, if the chain snaps, a full engine replacement (£4,000–£7,500) is usually required. At the first sign of cold-start rattle, book an inspection immediately."
+                "text": "Yes - if caught early. A preventative timing chain, guide and tensioner replacement costs £1,200-£3,000. Early cars had more problems, as Jaguar made running changes to improve the design. However, if the chain snaps, a full engine replacement (£4,000-£7,500) is usually required. At the first sign of cold-start rattle, book an inspection immediately."
               }
             }
           ]
@@ -179,7 +179,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar XJ 3.0 V6 • 2003–2006 • AJ30 3.0 V6",
+    "tagPill": "Jaguar XJ 3.0 V6 • 2003-2006 • AJ30 3.0 V6",
     "h1": "Jaguar XJ 3.0 V6 Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Jaguar XJ 3.0 V6 specialists. Compare reconditioned, rebuilt and used AJ30 V6 engines - supply & fit available nationwide for Jaguar's flagship saloon.",
     "trustBadges": [
@@ -188,7 +188,7 @@
       "🚚 Nationwide Delivery",
       "👥 15+ Specialists"
     ],
-    "priceAnchor": "Jaguar XJ 3.0 V6 Engines - from £1,800 to £7,500 · Engine code: AJ30 (2003–2006)",
+    "priceAnchor": "Jaguar XJ 3.0 V6 Engines - from £1,800 to £7,500 · Engine code: AJ30 (2003-2006)",
     "registrationInput": {
       "flag": "🇬🇧 GB",
       "placeholder": "Enter your reg - e.g. AB12 CDE",
@@ -212,10 +212,10 @@
     "rows": [
       {
         "generation": "XJ X350 (3.0 V6)",
-        "years": "2003–2006",
+        "years": "2003-2006",
         "engineCode": "AJ30 (3.0L V6, 238 bhp)",
         "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£4,000–£7,500 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£4,000-£7,500 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "Smooth, refined Ford‑derived Duratec V6 - 238 bhp, 293 Nm; cooling system plastic pipes, timing chain tensioners and VVT issues are the key watchpoints"
       }
     ],
@@ -234,23 +234,23 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£1,800–£3,500",
-        "fittedIndie": "£2,600–£4,800",
-        "warranty": "1–6 months",
+        "supplyOnly": "£1,800-£3,500",
+        "fittedIndie": "£2,600-£4,800",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; vehicle under £5,000"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£4,000–£6,500",
-        "fittedIndie": "£5,200–£8,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£4,000-£6,500",
+        "fittedIndie": "£5,200-£8,000",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£5,500–£7,500",
-        "fittedIndie": "£6,800–£9,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£5,500-£7,500",
+        "fittedIndie": "£6,800-£9,000",
+        "warranty": "12-24 months",
         "bestFor": "Long‑term ownership; 3+ year horizon"
       },
       {
@@ -261,8 +261,8 @@
         "bestFor": "AJ30 engines are no longer produced new; reconditioned units are the standard"
       }
     ],
-    "figuresNote": "Figures above reflect the XJ 3.0 V6 AJ30 era (2003–2006). Jaguar XJ 3.0 V6 engine replacement costs typically range from £4,500 – £7,500. Customers have reported dealer quotes of around £15,000–£30,000 for engine replacement, while reconditioning is often in the £8,000–£10,000 range.",
-    "labourEstimate": "Fitting an XJ 3.0 V6 engine typically takes 10–14 hours at £75–£110/hr (independent) or £130–£180/hr (London/SE dealer). The V6 layout and longitudinal mounting make the engine reasonably accessible, but the X350's aluminium construction requires specialist knowledge. [PLACEHOLDER - confirm vs cost sheet]",
+    "figuresNote": "Figures above reflect the XJ 3.0 V6 AJ30 era (2003-2006). Jaguar XJ 3.0 V6 engine replacement costs typically range from £4,500 - £7,500. Customers have reported dealer quotes of around £15,000-£30,000 for engine replacement, while reconditioning is often in the £8,000-£10,000 range.",
+    "labourEstimate": "Fitting an XJ 3.0 V6 engine typically takes 10-14 hours at £75-£110/hr (independent) or £130-£180/hr (London/SE dealer). The V6 layout and longitudinal mounting make the engine reasonably accessible, but the X350's aluminium construction requires specialist knowledge. [PLACEHOLDER - confirm vs cost sheet]",
     "cta": {
       "label": "→ Compare XJ 3.0 V6 engine prices from UK specialists",
       "href": "/quote"
@@ -274,9 +274,9 @@
         "id": 1,
         "title": "Plastic Coolant Pipe Failure (AJ30)",
         "symptoms": "Sudden coolant loss, overheating, steam from engine bay, sweet smell, low coolant warning, bubbling in coolant reservoir, engine overheat message.",
-        "typicalMileage": "40,000–80,000 miles",
-        "repairCost": "£500–£1,500 (plastic pipe replacement - labour‑intensive)【PLACEHOLDER】",
-        "replacementCost": "£4,000–£7,500 (if overheating leads to head gasket or engine damage)【PLACEHOLDER】",
+        "typicalMileage": "40,000-80,000 miles",
+        "repairCost": "£500-£1,500 (plastic pipe replacement - labour‑intensive)【PLACEHOLDER】",
+        "replacementCost": "£4,000-£7,500 (if overheating leads to head gasket or engine damage)【PLACEHOLDER】",
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
@@ -292,9 +292,9 @@
         "id": 2,
         "title": "Timing Chain Tensioner Wear (AJ30)",
         "symptoms": "Rattling noise on cold start, metallic clattering from the front of the engine, engine warning light, loss of power, rough idling.",
-        "typicalMileage": "60,000–100,000 miles",
-        "repairCost": "£1,200–£3,000 (timing chain, guides and tensioners replacement)【PLACEHOLDER】",
-        "replacementCost": "£4,000–£7,500 (if chain skips and valves meet pistons)【PLACEHOLDER】",
+        "typicalMileage": "60,000-100,000 miles",
+        "repairCost": "£1,200-£3,000 (timing chain, guides and tensioners replacement)【PLACEHOLDER】",
+        "replacementCost": "£4,000-£7,500 (if chain skips and valves meet pistons)【PLACEHOLDER】",
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
@@ -310,8 +310,8 @@
         "id": 3,
         "title": "Variable Valve Timing (VVT) System Issues",
         "symptoms": "Rough idle, hesitation on acceleration, loss of power at low RPM, poor fuel economy, check engine light, ticking noise like a diesel.",
-        "typicalMileage": "60,000–100,000 miles",
-        "repairCost": "£300–£800 (VVT solenoid or phaser repair)【PLACEHOLDER】",
+        "typicalMileage": "60,000-100,000 miles",
+        "repairCost": "£300-£800 (VVT solenoid or phaser repair)【PLACEHOLDER】",
         "replacementCost": "N/A - repair only",
         "urgency": {
           "icon": "🟡",
@@ -328,8 +328,8 @@
         "id": 4,
         "title": "Intake Air Leaks & Vacuum System Issues",
         "symptoms": "Erratic idle, rough running, stalling, poor fuel economy, engine warning light.",
-        "typicalMileage": "60,000–100,000 miles",
-        "repairCost": "£200–£600 (vacuum leak diagnosis and repair)【PLACEHOLDER】",
+        "typicalMileage": "60,000-100,000 miles",
+        "repairCost": "£200-£600 (vacuum leak diagnosis and repair)【PLACEHOLDER】",
         "replacementCost": "N/A - repair only",
         "urgency": {
           "icon": "🟡",
@@ -346,8 +346,8 @@
         "id": 5,
         "title": "Air Suspension System Issues (X350‑Specific)",
         "symptoms": "Car sits low, warning lights on dash, compressor running constantly, uneven ride height, \"suspension fault\" message.",
-        "typicalMileage": "60,000–100,000 miles",
-        "repairCost": "£500–£2,000 (compressor, air springs or valve block replacement)【PLACEHOLDER】",
+        "typicalMileage": "60,000-100,000 miles",
+        "repairCost": "£500-£2,000 (compressor, air springs or valve block replacement)【PLACEHOLDER】",
         "replacementCost": "N/A - repair only",
         "urgency": {
           "icon": "🟠",
@@ -384,31 +384,31 @@
         {
           "problem": "Plastic coolant pipe failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£500–£1,500",
+          "typicalCost": "£500-£1,500",
           "whenItMakesSense": "Proactive replacement with updated pipes prevents catastrophic failure"
         },
         {
           "problem": "Timing chain tensioner wear (preventative)",
           "repairable": "✅ Yes",
-          "typicalCost": "£1,200–£3,000",
+          "typicalCost": "£1,200-£3,000",
           "whenItMakesSense": "Catch it early - far cheaper than engine replacement"
         },
         {
           "problem": "VVT system issues",
           "repairable": "✅ Yes",
-          "typicalCost": "£300–£800",
+          "typicalCost": "£300-£800",
           "whenItMakesSense": "Solenoid or phaser repair restores performance"
         },
         {
           "problem": "Intake air leaks",
           "repairable": "✅ Yes",
-          "typicalCost": "£200–£600",
+          "typicalCost": "£200-£600",
           "whenItMakesSense": "Gasket replacement and CCV cleaning is straightforward"
         },
         {
           "problem": "Air suspension failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£500–£2,000",
+          "typicalCost": "£500-£2,000",
           "whenItMakesSense": "Compressor and spring replacement is manageable"
         },
         {
@@ -422,7 +422,7 @@
     "buyingChecks": {
       "title": "Buying This XJ 3.0 V6? Check These First",
       "buyIf": [
-        "* Full service history with oil changes at 6,000–8,000 mile intervals (not factory intervals)",
+        "* Full service history with oil changes at 6,000-8,000 mile intervals (not factory intervals)",
         "* Plastic coolant pipes replaced with upgraded parts",
         "* No cold‑start rattle - timing chain tensioners should be healthy",
         "* Cooling system in good order (no coolant loss, no sweet smell)",
@@ -448,7 +448,7 @@
     "intro": "Before you buy a used Jaguar XJ 3.0 V6 (or before you commit to an engine replacement), check these:",
     "items": [
       "* Cold Start - Listen for rattle from the front of the engine (timing chain tensioner warning)",
-      "* Service History - Oil changes at 6,000–8,000 mile intervals are essential for the AJ30",
+      "* Service History - Oil changes at 6,000-8,000 mile intervals are essential for the AJ30",
       "* Coolant Level - Check cold and hot; any loss indicates potential plastic coolant pipe issues",
       "* Coolant Smell - Any sweet smell from the engine bay? (coolant leak warning)",
       "* Timing Chain Work - Have the tensioners been replaced? (critical for higher‑mileage cars)",
@@ -468,10 +468,10 @@
     "rows": [
       {
         "engineCode": "AJ30 (3.0 V6)",
-        "years": "2003–2006",
+        "years": "2003-2006",
         "power": "238 bhp (175 kW) @ 6,800 rpm · 293 Nm @ 4,500 rpm",
         "enquiries": "- (pattern data)【PATTERN DATA】",
-        "avgReconCost": "£4,000–£7,500【PLACEHOLDER - confirm vs cost sheet】"
+        "avgReconCost": "£4,000-£7,500【PLACEHOLDER - confirm vs cost sheet】"
       }
     ],
     "matchNote": "This table's rows exactly match Section 1B's Era Map - the same engine code, years, and generation coverage.",
@@ -537,7 +537,7 @@
       },
       {
         "label": "Average Enquiry Mileage",
-        "value": "60,000–100,000 miles【PATTERN DATA】"
+        "value": "60,000-100,000 miles【PATTERN DATA】"
       },
       {
         "label": "Average Replacement Cost",
@@ -562,7 +562,7 @@
       {
         "id": 1,
         "question": "How much does a Jaguar XJ 3.0 V6 engine replacement cost in the UK?",
-        "answer": "A reconditioned XJ 3.0 V6 (AJ30) engine typically costs £4,000–£7,500 supply only. Jaguar XJ 3.0 V6 engine replacement costs typically range from £4,500 – £7,500. Customers have reported dealer quotes of around £15,000–£30,000 for engine replacement, while reconditioning is often in the £8,000–£10,000 range. Fitting adds £1,000–£1,800 at independent specialist rates. Use our calculator for a figure specific to your car."
+        "answer": "A reconditioned XJ 3.0 V6 (AJ30) engine typically costs £4,000-£7,500 supply only. Jaguar XJ 3.0 V6 engine replacement costs typically range from £4,500 - £7,500. Customers have reported dealer quotes of around £15,000-£30,000 for engine replacement, while reconditioning is often in the £8,000-£10,000 range. Fitting adds £1,000-£1,800 at independent specialist rates. Use our calculator for a figure specific to your car."
       },
       {
         "id": 2,
@@ -577,7 +577,7 @@
       {
         "id": 4,
         "question": "Is it worth replacing a Jaguar XJ 3.0 V6 engine, or should I scrap the car?",
-        "answer": "Depends on vehicle value. Against a well‑kept X350 XJ (values £2,000–£19,000+ depending on condition and mileage), a £4,000–£5,500 reconditioned engine is 25–80% of the vehicle's value - often worth it for a solid example. The Jaguar scrap threshold of 60% means evaluating the whole vehicle and its condition before committing. Given the X350's status as a future classic and rising interest, engine replacement is often worth it for a good example."
+        "answer": "Depends on vehicle value. Against a well‑kept X350 XJ (values £2,000-£19,000+ depending on condition and mileage), a £4,000-£5,500 reconditioned engine is 25-80% of the vehicle's value - often worth it for a solid example. The Jaguar scrap threshold of 60% means evaluating the whole vehicle and its condition before committing. Given the X350's status as a future classic and rising interest, engine replacement is often worth it for a good example."
       },
       {
         "id": 5,
@@ -587,7 +587,7 @@
       {
         "id": 6,
         "question": "Can I repair the AJ30 timing chain, or does it require engine replacement?",
-        "answer": "Yes - if caught early. A preventative timing chain, guide and tensioner replacement costs £1,200–£3,000. Early cars had more problems, as Jaguar made running changes to improve the design - somewhere around model year 2014 they did the latest upgrade. However, if the chain snaps, a full engine replacement (£4,000–£7,500) is usually required. At the first sign of cold‑start rattle, book an inspection immediately."
+        "answer": "Yes - if caught early. A preventative timing chain, guide and tensioner replacement costs £1,200-£3,000. Early cars had more problems, as Jaguar made running changes to improve the design - somewhere around model year 2014 they did the latest upgrade. However, if the chain snaps, a full engine replacement (£4,000-£7,500) is usually required. At the first sign of cold‑start rattle, book an inspection immediately."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty - always confirm terms with your chosen supplier."

@@ -102,7 +102,7 @@
               "name": "How much does a Jaguar XJ 4.0 V8 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned AJ27 engine typically costs £2,500–£5,500 supply only, with the supercharged AJ27S sitting at £3,500–£8,500. Fitting adds £900–£1,500. Main dealer new engines can exceed £25,000. Timing chain tensioner replacement alone can cost £800–£2,500 if caught early."
+                "text": "A reconditioned AJ27 engine typically costs £2,500-£5,500 supply only, with the supercharged AJ27S sitting at £3,500-£8,500. Fitting adds £900-£1,500. Main dealer new engines can exceed £25,000. Timing chain tensioner replacement alone can cost £800-£2,500 if caught early."
               }
             },
             {
@@ -126,7 +126,7 @@
               "name": "Is it worth replacing a Jaguar XJ 4.0 V8 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on vehicle value and body condition. Against a well-kept X308 XJ worth £3,000–£8,000, a £3,800 recon is a significant investment - assess carefully. For an XJR with strong provenance, replacement is often worthwhile. The XJ's classic status and aluminium body mean good examples are worth saving."
+                "text": "Depends on vehicle value and body condition. Against a well-kept X308 XJ worth £3,000-£8,000, a £3,800 recon is a significant investment - assess carefully. For an XJR with strong provenance, replacement is often worthwhile. The XJ's classic status and aluminium body mean good examples are worth saving."
               }
             },
             {
@@ -142,7 +142,7 @@
               "name": "Can I repair the AJ27's timing chain tensioners, or does it need a new engine?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes - if caught early. Replacing the plastic tensioners with metal units (£800–£2,500) is far cheaper than a catastrophic chain failure (£2,500–£8,500 engine replacement). At the first sign of cold-start rattle, book an inspection immediately. Make sure the plastic timing gear has been replaced with factory metal components."
+                "text": "Yes - if caught early. Replacing the plastic tensioners with metal units (£800-£2,500) is far cheaper than a catastrophic chain failure (£2,500-£8,500 engine replacement). At the first sign of cold-start rattle, book an inspection immediately. Make sure the plastic timing gear has been replaced with factory metal components."
               }
             }
           ]
@@ -203,7 +203,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar XJ 4.0 V8 • 1997–2009 • AJ26 / AJ27",
+    "tagPill": "Jaguar XJ 4.0 V8 • 1997-2009 • AJ26 / AJ27",
     "h1": "Jaguar XJ 4.0 V8 Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Jaguar XJ 4.0 V8 specialists. Compare reconditioned, rebuilt and used AJ26 and AJ27 engines - supply & fit available nationwide.",
     "trustBadges": [
@@ -236,26 +236,26 @@
     "rows": [
       {
         "generation": "X308",
-        "years": "1997–2003",
+        "years": "1997-2003",
         "engineCode": "AJ26 / AJ27 (4.0 V8)",
         "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£2,500–£5,500 [JAG‑QUOTE]",
+        "reconCost": "£2,500-£5,500 [JAG‑QUOTE]",
         "eraNote": "The original 4.0 V8 - smooth and potent, but Nikasil liners (early cars) and plastic timing tensioners are the main watchpoints."
       },
       {
         "generation": "X308",
-        "years": "1998–2003",
+        "years": "1998-2003",
         "engineCode": "AJ27S (4.0 Supercharged V8)",
         "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£3,500–£8,500 [JAG‑QUOTE]",
+        "reconCost": "£3,500-£8,500 [JAG‑QUOTE]",
         "eraNote": "The XJR's 370 bhp supercharged version - same block with Eaton M112 blower; tensioner and cooling system risks remain."
       },
       {
         "generation": "X350",
-        "years": "2003–2009",
+        "years": "2003-2009",
         "engineCode": "AJ27 (4.0 V8)",
         "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£2,500–£5,500 [JAG‑QUOTE]",
+        "reconCost": "£2,500-£5,500 [JAG‑QUOTE]",
         "eraNote": "Early X350 carried the 4.0 V8 before the 4.2; nikasil largely resolved but plastic tensioners still need addressing."
       }
     ],
@@ -274,35 +274,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£2,000–£3,500",
-        "fittedIndie": "£2,800–£4,700",
-        "warranty": "3–6 months",
+        "supplyOnly": "£2,000-£3,500",
+        "fittedIndie": "£2,800-£4,700",
+        "warranty": "3-6 months",
         "bestFor": "Budget priority; vehicle under £5,000"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£2,500–£5,500",
-        "fittedIndie": "£3,400–£6,700",
-        "warranty": "12–24 months",
+        "supplyOnly": "£2,500-£5,500",
+        "fittedIndie": "£3,400-£6,700",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£3,500–£6,500",
-        "fittedIndie": "£4,400–£7,700",
-        "warranty": "12–24 months",
+        "supplyOnly": "£3,500-£6,500",
+        "fittedIndie": "£4,400-£7,700",
+        "warranty": "12-24 months",
         "bestFor": "Long‑term ownership; 3+ year horizon"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£15,000–£25,000",
-        "fittedIndie": "£17,000–£28,000",
-        "warranty": "24–36 months",
+        "supplyOnly": "£15,000-£25,000",
+        "fittedIndie": "£17,000-£28,000",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs, warranty claims; dealer costs can exceed £25,000"
       }
     ],
     "figuresNote": "",
-    "labourEstimate": "Fitting an XJ 4.0 V8 engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). Timing chain tensioner replacement is a significant job but well documented.",
+    "labourEstimate": "Fitting an XJ 4.0 V8 engine typically takes 12-16 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer). Timing chain tensioner replacement is a significant job but well documented.",
     "cta": {
       "label": "",
       "href": "/economics"
@@ -333,31 +333,31 @@
         {
           "problem": "Plastic timing tensioner failure (AJ26/AJ27)",
           "repairable": "✅ Yes",
-          "typicalCost": "£800–£2,500",
+          "typicalCost": "£800-£2,500",
           "whenItMakesSense": "If caught early; upgrade to metal tensioners"
         },
         {
           "problem": "Nikasil liner wear (pre‑2000 AJ26)",
           "repairable": "⚠️ Depends",
-          "typicalCost": "£3,000–£6,000",
+          "typicalCost": "£3,000-£6,000",
           "whenItMakesSense": "Rebuild with iron liners; often cheaper to replace the engine"
         },
         {
           "problem": "Water pump failure (AJ26/AJ27)",
           "repairable": "✅ Yes",
-          "typicalCost": "£400–£1,200",
+          "typicalCost": "£400-£1,200",
           "whenItMakesSense": "Preventative - replace with metal unit at 60,000 miles"
         },
         {
           "problem": "Overheating damage (AJ26/AJ27)",
           "repairable": "⚠️ Depends",
-          "typicalCost": "£2,000–£8,000",
+          "typicalCost": "£2,000-£8,000",
           "whenItMakesSense": "If head gasket or block damage has occurred, replacement may be cheaper"
         },
         {
           "problem": "ZF transmission failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£1,500–£4,000",
+          "typicalCost": "£1,500-£4,000",
           "whenItMakesSense": "Flush at 80K miles; don't trust \"sealed for life\""
         }
       ]
@@ -407,24 +407,24 @@
     "rows": [
       {
         "engineCode": "AJ26",
-        "years": "1997–2000",
-        "power": "284–290 bhp / 375–393 Nm",
+        "years": "1997-2000",
+        "power": "284-290 bhp / 375-393 Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£2,500–£5,500 [JAG‑QUOTE]"
+        "avgReconCost": "£2,500-£5,500 [JAG‑QUOTE]"
       },
       {
         "engineCode": "AJ27",
-        "years": "2000–2009",
-        "power": "284–290 bhp / 375–393 Nm",
+        "years": "2000-2009",
+        "power": "284-290 bhp / 375-393 Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£2,500–£5,500 [JAG‑QUOTE]"
+        "avgReconCost": "£2,500-£5,500 [JAG‑QUOTE]"
       },
       {
         "engineCode": "AJ27S",
-        "years": "1998–2003",
+        "years": "1998-2003",
         "power": "370 bhp / 525 Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£3,500–£8,500 [JAG‑QUOTE]"
+        "avgReconCost": "£3,500-£8,500 [JAG‑QUOTE]"
       }
     ],
     "matchNote": "",
@@ -499,7 +499,7 @@
       {
         "id": 1,
         "question": "How much does a Jaguar XJ 4.0 V8 engine replacement cost in the UK?",
-        "answer": "A reconditioned AJ27 engine typically costs £2,500–£5,500 supply only, with the supercharged AJ27S sitting at £3,500–£8,500. Fitting adds £900–£1,500. Main dealer new engines can exceed £25,000. Timing chain tensioner replacement alone can cost £800–£2,500 if caught early. Use our calculator for a figure specific to your car."
+        "answer": "A reconditioned AJ27 engine typically costs £2,500-£5,500 supply only, with the supercharged AJ27S sitting at £3,500-£8,500. Fitting adds £900-£1,500. Main dealer new engines can exceed £25,000. Timing chain tensioner replacement alone can cost £800-£2,500 if caught early. Use our calculator for a figure specific to your car."
       },
       {
         "id": 2,
@@ -514,7 +514,7 @@
       {
         "id": 4,
         "question": "Is it worth replacing a Jaguar XJ 4.0 V8 engine, or should I scrap the car?",
-        "answer": "Depends on vehicle value and body condition. Against a well‑kept X308 XJ worth £3,000–£8,000, a £3,800 recon is a significant investment - assess carefully. For an XJR with strong provenance, replacement is often worthwhile. The XJ's classic status and aluminium body mean good examples are worth saving."
+        "answer": "Depends on vehicle value and body condition. Against a well‑kept X308 XJ worth £3,000-£8,000, a £3,800 recon is a significant investment - assess carefully. For an XJR with strong provenance, replacement is often worthwhile. The XJ's classic status and aluminium body mean good examples are worth saving."
       },
       {
         "id": 5,
@@ -524,7 +524,7 @@
       {
         "id": 6,
         "question": "Can I repair the AJ27's timing chain tensioners, or does it need a new engine?",
-        "answer": "Yes - if caught early. Replacing the plastic tensioners with metal units (£800–£2,500) is far cheaper than a catastrophic chain failure (£2,500–£8,500 engine replacement). At the first sign of cold‑start rattle, book an inspection immediately. Make sure the plastic timing gear has been replaced with factory metal components."
+        "answer": "Yes - if caught early. Replacing the plastic tensioners with metal units (£800-£2,500) is far cheaper than a catastrophic chain failure (£2,500-£8,500 engine replacement). At the first sign of cold‑start rattle, book an inspection immediately. Make sure the plastic timing gear has been replaced with factory metal components."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty - always confirm terms with your chosen supplier."

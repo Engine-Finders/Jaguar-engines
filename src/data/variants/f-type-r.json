@@ -52,7 +52,7 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "X152 F-Type R (AJ133, 2014–present)",
+              "name": "X152 F-Type R (AJ133, 2014-present)",
               "url": "https://jaguarengines.uk/f-type/x152/"
             }
           ]
@@ -77,7 +77,7 @@
               "name": "How much does a Jaguar F-Type R engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned AJ133 5.0-litre supercharged V8 engine typically costs £6,500–£10,000 supply only. Used engines are available from £4,500–£7,500. Fitting adds £1,500–£2,500 depending on your location and workshop. Most Jaguar engine replacements range from £3,000 to £9,000. However, dealer quotes for a Jaguar V8 engine replacement can be around £15,000–£30,000. Reconditioned engines are available in the £8,000–£10,000 range."
+                "text": "A reconditioned AJ133 5.0-litre supercharged V8 engine typically costs £6,500-£10,000 supply only. Used engines are available from £4,500-£7,500. Fitting adds £1,500-£2,500 depending on your location and workshop. Most Jaguar engine replacements range from £3,000 to £9,000. However, dealer quotes for a Jaguar V8 engine replacement can be around £15,000-£30,000. Reconditioned engines are available in the £8,000-£10,000 range."
               }
             },
             {
@@ -117,7 +117,7 @@
               "name": "Can I repair the timing chain tensioners, or does it need full engine replacement?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes - if caught early. A preventative timing chain and tensioner replacement costs £1,500–£4,000. Early 5.0L models used aluminium guide rails that were weaker than the steel tensioner, which would dig into the guide and wear it down over time. This issue was revised by JLR in 2015 with a steel insert. If ignored and the chain snaps, the engine is an interference design - pistons and valves collide, resulting in catastrophic engine damage. At the first sign of cold-start rattle, book an inspection immediately. Regular oil changes (every 8,000 miles) are the single most effective preventative measure."
+                "text": "Yes - if caught early. A preventative timing chain and tensioner replacement costs £1,500-£4,000. Early 5.0L models used aluminium guide rails that were weaker than the steel tensioner, which would dig into the guide and wear it down over time. This issue was revised by JLR in 2015 with a steel insert. If ignored and the chain snaps, the engine is an interference design - pistons and valves collide, resulting in catastrophic engine damage. At the first sign of cold-start rattle, book an inspection immediately. Regular oil changes (every 8,000 miles) are the single most effective preventative measure."
               }
             }
           ]
@@ -178,7 +178,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar F-Type R • 2014–present • 5.0L Supercharged V8 (AJ133)",
+    "tagPill": "Jaguar F-Type R • 2014-present • 5.0L Supercharged V8 (AJ133)",
     "h1": "Jaguar F-Type R Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Jaguar F-Type specialists. Compare reconditioned, rebuilt and used 5.0-litre supercharged V8 engines - from the 550 PS R to the 575 PS SVR - supply & fit available nationwide.",
     "trustBadges": [
@@ -211,10 +211,10 @@
     "rows": [
       {
         "generation": "X152 F-Type R (550/575)",
-        "years": "2014–present",
+        "years": "2014-present",
         "engineCode": "AJ133 (5.0L Supercharged V8)",
         "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£6,500–£10,000 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£6,500-£10,000 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "One engine throughout this badge's history - no era ambiguity."
       }
     ],
@@ -233,35 +233,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£4,500–£7,500",
-        "fittedIndie": "£6,000–£9,000",
-        "warranty": "1–6 months",
+        "supplyOnly": "£4,500-£7,500",
+        "fittedIndie": "£6,000-£9,000",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; lower-mileage examples"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£6,500–£10,000",
-        "fittedIndie": "£8,000–£12,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£6,500-£10,000",
+        "fittedIndie": "£8,000-£12,000",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£8,000–£14,000",
-        "fittedIndie": "£9,500–£16,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£8,000-£14,000",
+        "fittedIndie": "£9,500-£16,000",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£15,000–£25,000+",
-        "fittedIndie": "£17,000–£28,000+",
-        "warranty": "24–36 months",
+        "supplyOnly": "£15,000-£25,000+",
+        "fittedIndie": "£17,000-£28,000+",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs, warranty claims"
       }
     ],
-    "figuresNote": "Figures above reflect the AJ133 5.0-litre supercharged V8 engine. Most Jaguar engine replacements range from £3,000 to £9,000. However, dealer quotes for a Jaguar V8 engine replacement can be around £15,000–£30,000. Reconditioned engines are available in the £8,000–£10,000 range. Main dealer new engines can exceed £25,000.",
-    "labourEstimate": "Fitting an F-Type R engine typically takes 16–22 hours at £80–£120/hr (independent) or £140–£200/hr (London/SE dealer). The supercharged V8's complexity and tight engine bay make this a specialist job.",
+    "figuresNote": "Figures above reflect the AJ133 5.0-litre supercharged V8 engine. Most Jaguar engine replacements range from £3,000 to £9,000. However, dealer quotes for a Jaguar V8 engine replacement can be around £15,000-£30,000. Reconditioned engines are available in the £8,000-£10,000 range. Main dealer new engines can exceed £25,000.",
+    "labourEstimate": "Fitting an F-Type R engine typically takes 16-22 hours at £80-£120/hr (independent) or £140-£200/hr (London/SE dealer). The supercharged V8's complexity and tight engine bay make this a specialist job.",
     "cta": {
       "label": "→ Compare F-Type R engine prices from UK specialists",
       "href": "/quote"
@@ -273,9 +273,9 @@
         "id": 1,
         "title": "Timing Chain Tensioner Wear - AJ133 V8",
         "symptoms": "Rattling noise on cold start lasting a few seconds, metallic ticking from the engine, engine management light, cam/crank correlation fault codes, eventual catastrophic failure if ignored.",
-        "typicalMileage": "60,000–100,000 miles (can occur earlier on hard-driven examples)",
-        "repairCost": "£1,500–£4,000 (timing chain kit + tensioner replacement)【PLACEHOLDER - confirm vs cost sheet】",
-        "replacementCost": "£6,500–£14,000 (if chain skips and pistons strike valves)",
+        "typicalMileage": "60,000-100,000 miles (can occur earlier on hard-driven examples)",
+        "repairCost": "£1,500-£4,000 (timing chain kit + tensioner replacement)【PLACEHOLDER - confirm vs cost sheet】",
+        "replacementCost": "£6,500-£14,000 (if chain skips and pistons strike valves)",
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
@@ -291,9 +291,9 @@
         "id": 2,
         "title": "Water Pump & Coolant System Failures",
         "symptoms": "Coolant loss with no visible external leak, belt squeal, low coolant warning light, overheating, white smoke from exhaust.",
-        "typicalMileage": "30,000–80,000 miles",
-        "repairCost": "£500–£1,200 (water pump replacement)【PLACEHOLDER - confirm vs cost sheet】",
-        "replacementCost": "£6,500–£14,000 (if overheating leads to engine failure)",
+        "typicalMileage": "30,000-80,000 miles",
+        "repairCost": "£500-£1,200 (water pump replacement)【PLACEHOLDER - confirm vs cost sheet】",
+        "replacementCost": "£6,500-£14,000 (if overheating leads to engine failure)",
         "urgency": {
           "icon": "🟠",
           "label": "Check",
@@ -309,9 +309,9 @@
         "id": 3,
         "title": "Supercharger Coupler Wear",
         "symptoms": "Rattling or clunking noise from the top of the engine, especially at idle or when the engine stops, unusual supercharger whine.",
-        "typicalMileage": "40,000–80,000 miles",
-        "repairCost": "£600–£1,500 (supercharger coupler replacement)【PLACEHOLDER - confirm vs cost sheet】",
-        "replacementCost": "£6,500–£14,000 (if left untreated)",
+        "typicalMileage": "40,000-80,000 miles",
+        "repairCost": "£600-£1,500 (supercharger coupler replacement)【PLACEHOLDER - confirm vs cost sheet】",
+        "replacementCost": "£6,500-£14,000 (if left untreated)",
         "urgency": {
           "icon": "🟡",
           "label": "Monitor",
@@ -347,31 +347,31 @@
         {
           "problem": "Timing chain tensioner wear",
           "repairable": "✅ Yes",
-          "typicalCost": "£1,500–£4,000",
+          "typicalCost": "£1,500-£4,000",
           "whenItMakesSense": "Preventative - catches the fault before catastrophic failure"
         },
         {
           "problem": "Water pump failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£500–£1,200",
+          "typicalCost": "£500-£1,200",
           "whenItMakesSense": "Straightforward fix; upgraded parts available"
         },
         {
           "problem": "Supercharger coupler wear",
           "repairable": "✅ Yes",
-          "typicalCost": "£600–£1,500",
+          "typicalCost": "£600-£1,500",
           "whenItMakesSense": "Well-understood fix; solid coupler upgrade available"
         },
         {
           "problem": "Plastic coolant pipe cracking",
           "repairable": "✅ Yes",
-          "typicalCost": "£400–£900",
+          "typicalCost": "£400-£900",
           "whenItMakesSense": "Replace with aluminium pipes for a permanent fix"
         },
         {
           "problem": "Timing chain snap (valve contact)",
           "repairable": "❌ Usually No",
-          "typicalCost": "£6,500–£14,000",
+          "typicalCost": "£6,500-£14,000",
           "whenItMakesSense": "Typically requires full engine replacement or complete rebuild"
         }
       ]
@@ -393,7 +393,7 @@
         "* Engine warning light with timing or cooling system codes and no diagnosis"
       ]
     },
-    "closingVerdict": "The F-Type R is a genuine Jaguar icon - a 5.0-litre supercharged V8 in a lightweight sports car chassis. The AJ133 is a great engine with a proven track record across the JLR range. However, it has known weak points: timing chain tensioners, water pumps, supercharger couplers, and plastic cooling system components. These are well-understood and fixable issues, but they demand attention and budget. Buy on documented history, not on faith. A well-maintained F-Type R is a £40,000–£70,000 future classic; a neglected one is a £10,000 engine replacement waiting to happen.",
+    "closingVerdict": "The F-Type R is a genuine Jaguar icon - a 5.0-litre supercharged V8 in a lightweight sports car chassis. The AJ133 is a great engine with a proven track record across the JLR range. However, it has known weak points: timing chain tensioners, water pumps, supercharger couplers, and plastic cooling system components. These are well-understood and fixable issues, but they demand attention and budget. Buy on documented history, not on faith. A well-maintained F-Type R is a £40,000-£70,000 future classic; a neglected one is a £10,000 engine replacement waiting to happen.",
     "cta": {
       "label": "→ Compare F-Type R engine prices before you buy",
       "href": "/quote"
@@ -403,7 +403,7 @@
     "intro": "Before you buy a used Jaguar F-Type R (or before you commit to an engine replacement), check these:",
     "items": [
       "* Cold Start - Listen for rattling or ticking (timing chain tensioner warning)",
-      "* Service History - including the AJ133 V8 era (2014–present) and confirmed oil-change intervals - ideally every 8,000 miles, not the 16,000-mile interval",
+      "* Service History - including the AJ133 V8 era (2014-present) and confirmed oil-change intervals - ideally every 8,000 miles, not the 16,000-mile interval",
       "* Coolant Check - Any history of coolant loss or water pump replacement? (common on the 5.0 SC)",
       "* Supercharger Noise - Any rattling, clunking, or unusual whine? (coupler wear warning)",
       "* Smoke Check - White smoke on startup can indicate coolant ingress",
@@ -423,10 +423,10 @@
     "rows": [
       {
         "engineCode": "AJ133 (5.0L Supercharged V8)",
-        "years": "2014–present",
-        "power": "550–575 PS (542–567 bhp) @ 6,500 rpm · 680–700 Nm",
+        "years": "2014-present",
+        "power": "550-575 PS (542-567 bhp) @ 6,500 rpm · 680-700 Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£6,500–£10,000 [PLACEHOLDER - confirm vs cost sheet]"
+        "avgReconCost": "£6,500-£10,000 [PLACEHOLDER - confirm vs cost sheet]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -472,11 +472,11 @@
       },
       {
         "label": "Average Enquiry Mileage",
-        "value": "30,000–60,000 miles [PATTERN DATA]"
+        "value": "30,000-60,000 miles [PATTERN DATA]"
       },
       {
         "label": "Average Replacement Cost",
-        "value": "£6,500–£10,000 reconditioned, supply only [PLACEHOLDER - confirm vs cost sheet]"
+        "value": "£6,500-£10,000 reconditioned, supply only [PLACEHOLDER - confirm vs cost sheet]"
       },
       {
         "label": "Most Requested Engine Code",
@@ -497,7 +497,7 @@
       {
         "id": 1,
         "question": "How much does a Jaguar F-Type R engine replacement cost in the UK?",
-        "answer": "A reconditioned AJ133 5.0-litre supercharged V8 engine typically costs £6,500–£10,000 supply only. Used engines are available from £4,500–£7,500. Fitting adds £1,500–£2,500 depending on your location and workshop. Most Jaguar engine replacements range from £3,000 to £9,000. However, dealer quotes for a Jaguar V8 engine replacement can be around £15,000–£30,000. Reconditioned engines are available in the £8,000–£10,000 range."
+        "answer": "A reconditioned AJ133 5.0-litre supercharged V8 engine typically costs £6,500-£10,000 supply only. Used engines are available from £4,500-£7,500. Fitting adds £1,500-£2,500 depending on your location and workshop. Most Jaguar engine replacements range from £3,000 to £9,000. However, dealer quotes for a Jaguar V8 engine replacement can be around £15,000-£30,000. Reconditioned engines are available in the £8,000-£10,000 range."
       },
       {
         "id": 2,
@@ -522,7 +522,7 @@
       {
         "id": 6,
         "question": "Can I repair the timing chain tensioners, or does it need full engine replacement?",
-        "answer": "Yes - if caught early. A preventative timing chain and tensioner replacement costs £1,500–£4,000. Early 5.0L models used aluminium guide rails that were weaker than the steel tensioner, which would dig into the guide and wear it down over time. This issue was revised by JLR in 2015 with a steel insert. If ignored and the chain snaps, the engine is an interference design - pistons and valves collide, resulting in catastrophic engine damage. At the first sign of cold-start rattle, book an inspection immediately. Regular oil changes (every 8,000 miles) are the single most effective preventative measure."
+        "answer": "Yes - if caught early. A preventative timing chain and tensioner replacement costs £1,500-£4,000. Early 5.0L models used aluminium guide rails that were weaker than the steel tensioner, which would dig into the guide and wear it down over time. This issue was revised by JLR in 2015 with a steel insert. If ignored and the chain snaps, the engine is an interference design - pistons and valves collide, resulting in catastrophic engine damage. At the first sign of cold-start rattle, book an inspection immediately. Regular oil changes (every 8,000 miles) are the single most effective preventative measure."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier."

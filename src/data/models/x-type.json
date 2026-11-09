@@ -46,7 +46,7 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "X400 (2001–2009)",
+              "name": "X400 (2001-2009)",
               "url": "https://jaguarengines.uk/x-type/x400"
             }
           ]
@@ -90,7 +90,7 @@
               "name": "How much does an X-Type engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "An X-Type engine replacement typically costs £1,800–£5,800 supply-only depending on engine type and condition. The petrol V6 engines are cheaper to replace (£1,800–£3,500 recon) than the diesel AJ200D (£2,500–£5,800 recon). Labour adds 8–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). Use our calculator above to get a personalised estimate for your specific X-Type."
+                "text": "An X-Type engine replacement typically costs £1,800-£5,800 supply-only depending on engine type and condition. The petrol V6 engines are cheaper to replace (£1,800-£3,500 recon) than the diesel AJ200D (£2,500-£5,800 recon). Labour adds 8-14 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer). Use our calculator above to get a personalised estimate for your specific X-Type."
               }
             },
             {
@@ -106,7 +106,7 @@
               "name": "Which X-Type engine should I avoid?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The early AJ200D diesel - particularly pre-2007 examples. The timing chain tensioner concerns that later became infamous in Land Rover's Ingenium diesels are present in early X-Type applications, and with typical vehicle values under £3,000, the replacement cost (£2,500–£5,800) frequently exceeds the car's worth."
+                "text": "The early AJ200D diesel - particularly pre-2007 examples. The timing chain tensioner concerns that later became infamous in Land Rover's Ingenium diesels are present in early X-Type applications, and with typical vehicle values under £3,000, the replacement cost (£2,500-£5,800) frequently exceeds the car's worth."
               }
             },
             {
@@ -122,7 +122,7 @@
               "name": "Is it worth replacing an X-Type engine?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "In most cases, no. A £2,500–£5,800 recon against a £1,500–£5,000 car puts most X-Types above our 60% scrap threshold for Jaguar. Unless your car has sentimental value or is a particularly low-mileage mint example, the replacement cost isn't financially justified. Get a scrap valuation before committing to a repair."
+                "text": "In most cases, no. A £2,500-£5,800 recon against a £1,500-£5,000 car puts most X-Types above our 60% scrap threshold for Jaguar. Unless your car has sentimental value or is a particularly low-mileage mint example, the replacement cost isn't financially justified. Get a scrap valuation before committing to a repair."
               }
             },
             {
@@ -130,7 +130,7 @@
               "name": "Which X-Type year should I buy?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A 2007+ facelift car with the 2.5 V6 and a full service history. The 2005–2007 facelift cars have better electrical reliability and more resolved interior quality than pre-2005 examples. The 2.5 V6 is the sweet spot between performance and running costs, and the later cars benefit from Ford/Jaguar's sorted production quality."
+                "text": "A 2007+ facelift car with the 2.5 V6 and a full service history. The 2005-2007 facelift cars have better electrical reliability and more resolved interior quality than pre-2005 examples. The 2.5 V6 is the sweet spot between performance and running costs, and the later cars benefit from Ford/Jaguar's sorted production quality."
               }
             },
             {
@@ -218,7 +218,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar • X-Type • 2001–2009 • 1 Generation • AJ200D • Duratec V6",
+    "tagPill": "Jaguar • X-Type • 2001-2009 • 1 Generation • AJ200D • Duratec V6",
     "h1": "X-Type Engines - The Complete UK Guide",
     "subHeadline": "One generation, three engine families - the Ford-derived 2.0/2.5/3.0 V6 and the early Ingenium diesel. Real failure data, honest repair-vs-replace economics, and a verdict on whether ownership still makes sense for the UK's most affordable entry-point Jaguar. Backed by 120+ real UK X-Type engine enquiries in 2025 [JAG-VERIFIED].",
     "trustStrip": [
@@ -253,7 +253,7 @@
       },
       {
         "metric": "Replacement Economics",
-        "ourCall": "⚠️ The X-Type rule: check the value before the engine - a £2,500–£5,800 recon against a £1,500–£5,000 car puts many examples above the 60% scrap threshold."
+        "ourCall": "⚠️ The X-Type rule: check the value before the engine - a £2,500-£5,800 recon against a £1,500-£5,000 car puts many examples above the 60% scrap threshold."
       },
       {
         "metric": "Reliability",
@@ -273,7 +273,7 @@
       },
       {
         "metric": "Average Engine Replacement",
-        "ourCall": "£2,500–£5,800 reconditioned supply-only [JAG-QUOTE]"
+        "ourCall": "£2,500-£5,800 reconditioned supply-only [JAG-QUOTE]"
       },
       {
         "metric": "Most Common Failure Enquiry",
@@ -295,7 +295,7 @@
       },
       {
         "metric": "Years Produced",
-        "value": "2001–2009"
+        "value": "2001-2009"
       },
       {
         "metric": "Engine Codes Tracked",
@@ -319,11 +319,11 @@
       },
       {
         "metric": "Typical Replacement Cost",
-        "value": "£2,500–£5,800 supply-only [JAG-QUOTE]"
+        "value": "£2,500-£5,800 supply-only [JAG-QUOTE]"
       },
       {
         "metric": "Typical Host Value",
-        "value": "£1,500–£5,000 [THIRD-PARTY - AutoTrader UK 2025]"
+        "value": "£1,500-£5,000 [THIRD-PARTY - AutoTrader UK 2025]"
       },
       {
         "metric": "Overall Rating",
@@ -336,7 +336,7 @@
     "subHeadline": "The X400 ran from 2001 to 2009 with a single body shape - but engine choice and facelift year define the ownership experience more than any other Jaguar we cover.",
     "cards": [
       {
-        "title": "X400 (2001–2009) - 1 Generation",
+        "title": "X400 (2001-2009) - 1 Generation",
         "badge": "",
         "meta": "",
         "rating": "★ ★½☆☆",
@@ -378,12 +378,12 @@
         "family": "Ingenium-derived diesel",
         "fuel": "Diesel",
         "displacement": "2.0L",
-        "power": "130–140 bhp",
-        "years": "2007–2009",
+        "power": "130-140 bhp",
+        "years": "2007-2009",
         "model": "X400",
         "reliability": "★★☆☆☆",
         "enquiries": "45 [JAG-VERIFIED]",
-        "avgRebuildCost": "£2,500–£5,800 [JAG-QUOTE]"
+        "avgRebuildCost": "£2,500-£5,800 [JAG-QUOTE]"
       },
       {
         "engineCode": "2.0 V6 (AJ-V6)",
@@ -391,11 +391,11 @@
         "fuel": "Petrol",
         "displacement": "2.0L",
         "power": "157 bhp",
-        "years": "2001–2009",
+        "years": "2001-2009",
         "model": "X400",
         "reliability": "★★★☆☆",
         "enquiries": "30 [JAG-VERIFIED]",
-        "avgRebuildCost": "£1,800–£3,500 [JAG-QUOTE]"
+        "avgRebuildCost": "£1,800-£3,500 [JAG-QUOTE]"
       },
       {
         "engineCode": "2.5 V6 (AJ-V6)",
@@ -403,11 +403,11 @@
         "fuel": "Petrol",
         "displacement": "2.5L",
         "power": "192 bhp",
-        "years": "2001–2009",
+        "years": "2001-2009",
         "model": "X400",
         "reliability": "★★★½☆",
         "enquiries": "25 [JAG-VERIFIED]",
-        "avgRebuildCost": "£1,800–£3,500 [JAG-QUOTE]"
+        "avgRebuildCost": "£1,800-£3,500 [JAG-QUOTE]"
       },
       {
         "engineCode": "3.0 V6 (AJ-V6)",
@@ -415,11 +415,11 @@
         "fuel": "Petrol",
         "displacement": "3.0L",
         "power": "231 bhp",
-        "years": "2001–2009",
+        "years": "2001-2009",
         "model": "X400",
         "reliability": "★★★☆☆",
         "enquiries": "20 [JAG-VERIFIED]",
-        "avgRebuildCost": "£2,000–£4,000 [JAG-QUOTE]"
+        "avgRebuildCost": "£2,000-£4,000 [JAG-QUOTE]"
       }
     ],
     "confidenceScore": {
@@ -470,7 +470,7 @@
       {
         "id": 3,
         "issue": "Diesel EGR & DPF Clogging",
-        "description": "Urban-driven diesel X-Types suffer EGR valve and DPF blockages - the engine's emissions system isn't designed for city-only use. Common on 2007–2009 diesel cars.",
+        "description": "Urban-driven diesel X-Types suffer EGR valve and DPF blockages - the engine's emissions system isn't designed for city-only use. Common on 2007-2009 diesel cars.",
         "severity": {
           "icon": "🟡",
           "label": "Monitor",
@@ -484,7 +484,7 @@
       {
         "id": 4,
         "issue": "Water Pump Failure (Petrol)",
-        "description": "The AJ-V6 water pump is prone to bearing failure and leakage - typically 60k–100k miles. Warning signs: coolant loss, squealing from the front of the engine, or visible leaks.",
+        "description": "The AJ-V6 water pump is prone to bearing failure and leakage - typically 60k-100k miles. Warning signs: coolant loss, squealing from the front of the engine, or visible leaks.",
         "severity": {
           "icon": "🟠",
           "label": "Immediate",
@@ -599,8 +599,8 @@
         "rows": []
       }
     ],
-    "figuresNote": "Labour estimate: Fitting an X-Type engine typically takes 8–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE]. The X-Type rule - check the value before the engine: An X-Type worth £2,000–£3,000 with a failed AJ200D diesel requiring a £2,500–£5,800 recon is sitting at 85–125% of the car's value - well above our 60% Jaguar scrap threshold. Even the cheaper petrol V6 recon at £1,800–£3,500 represents 60–120% of the car's worth on lower-value examples. We'd tell most owners to scrap it, get a valuation, and put the money towards a newer car rather than repair. This is the model where \"repair vs replace\" stops being a financial decision and becomes a question of sentiment - and sentiment doesn't pay garage bills. Use our diagnostic tool below to run the numbers for your specific car.",
-    "labourEstimate": "Fitting an X-Type engine typically takes 8–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE]. The X-Type rule - check the value before the engine: An X-Type worth £2,000–£3,000 with a failed AJ200D diesel requiring a £2,500–£5,800 recon is sitting at 85–125% of the car's value - well above our 60% Jaguar scrap threshold. Even the cheaper petrol V6 recon at £1,800–£3,500 represents 60–120% of the car's worth on lower-value examples. We'd tell most owners to scrap it, get a valuation, and put the money towards a newer car rather than repair. This is the model where \"repair vs replace\" stops being a financial decision and becomes a question of sentiment - and sentiment doesn't pay garage bills. Use our diagnostic tool below to run the numbers for your specific car.",
+    "figuresNote": "Labour estimate: Fitting an X-Type engine typically takes 8-14 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [JAG-QUOTE]. The X-Type rule - check the value before the engine: An X-Type worth £2,000-£3,000 with a failed AJ200D diesel requiring a £2,500-£5,800 recon is sitting at 85-125% of the car's value - well above our 60% Jaguar scrap threshold. Even the cheaper petrol V6 recon at £1,800-£3,500 represents 60-120% of the car's worth on lower-value examples. We'd tell most owners to scrap it, get a valuation, and put the money towards a newer car rather than repair. This is the model where \"repair vs replace\" stops being a financial decision and becomes a question of sentiment - and sentiment doesn't pay garage bills. Use our diagnostic tool below to run the numbers for your specific car.",
+    "labourEstimate": "Fitting an X-Type engine typically takes 8-14 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [JAG-QUOTE]. The X-Type rule - check the value before the engine: An X-Type worth £2,000-£3,000 with a failed AJ200D diesel requiring a £2,500-£5,800 recon is sitting at 85-125% of the car's value - well above our 60% Jaguar scrap threshold. Even the cheaper petrol V6 recon at £1,800-£3,500 represents 60-120% of the car's worth on lower-value examples. We'd tell most owners to scrap it, get a valuation, and put the money towards a newer car rather than repair. This is the model where \"repair vs replace\" stops being a financial decision and becomes a question of sentiment - and sentiment doesn't pay garage bills. Use our diagnostic tool below to run the numbers for your specific car.",
     "economicsBox": {
       "title": "",
       "text": ""
@@ -618,28 +618,28 @@
     "eras": [
       {
         "era": "Launch Era",
-        "years": "2001–2003",
+        "years": "2001-2003",
         "keyEngines": "2.5 V6, 3.0 V6",
         "whyBmwChanged": "Jaguar needed a compact executive to compete with BMW 3 Series and Mercedes C-Class - the X-Type was built on the Ford Mondeo (CD132) platform to keep costs down",
         "worthKnowing": "The 2.5 V6 was the volume seller at launch; the 3.0 V6 was the performance flagship but carried a significant fuel economy penalty"
       },
       {
         "era": "Engine Expansion",
-        "years": "2003–2005",
+        "years": "2003-2005",
         "keyEngines": "2.0 V6 added, 2.0D diesel introduced",
         "whyBmwChanged": "Emissions regulations and fuel costs pushed Jaguar to add smaller engines - the 2.0 V6 lowered the entry price, the diesel responded to corporate demand",
         "worthKnowing": "The 2.0D was a PSA/Ford-sourced HDi unit, not a Jaguar-designed engine - the first diesel in a Jaguar since the 1950s"
       },
       {
         "era": "Facelift Era",
-        "years": "2005–2007",
+        "years": "2005-2007",
         "keyEngines": "All engines carried forward, minor power hikes",
         "whyBmwChanged": "Mid-cycle refresh across the X-Type range - cosmetic updates and minor mechanical revisions rather than powertrain changes",
         "worthKnowing": "The facelift cars have better electrical reliability than the pre-2005 cars - a genuine upgrade worth chasing"
       },
       {
         "era": "Final Years",
-        "years": "2007–2009",
+        "years": "2007-2009",
         "keyEngines": "AJ200D diesel introduced (early Ingenium), petrol V6 range continued",
         "whyBmwChanged": "Jaguar began phasing in its own Ingenium diesel architecture - the first X-Types to carry the engine code that would later become infamous in Land Rovers",
         "worthKnowing": "The AJ200D in the X-Type is a rare early example of the Ingenium diesel before its widespread adoption - and before the timing chain concerns were fully understood"
@@ -669,7 +669,7 @@
       {
         "buyerProfile": "Daily Commuter",
         "rating": "★★½☆☆",
-        "verdict": "The 2.5 V6 will return 28–32 mpg on a run, 22–25 mpg around town - not terrible for a V6, but the diesel would be better if it weren't for the timing chain risk. Factor in premium fuel if you want to keep the V6 happy."
+        "verdict": "The 2.5 V6 will return 28-32 mpg on a run, 22-25 mpg around town - not terrible for a V6, but the diesel would be better if it weren't for the timing chain risk. Factor in premium fuel if you want to keep the V6 happy."
       },
       {
         "buyerProfile": "Budget Owner",
@@ -679,7 +679,7 @@
       {
         "buyerProfile": "First-Time Buyer",
         "rating": "★★½☆☆",
-        "verdict": "Cheap to buy, but the insurance group is higher than you'd expect (Group 16–18 for the V6s). The 2.0 V6 is the sensible first-time choice - lower insurance, better economy, and if it breaks, you're not losing a valuable car."
+        "verdict": "Cheap to buy, but the insurance group is higher than you'd expect (Group 16-18 for the V6s). The 2.0 V6 is the sensible first-time choice - lower insurance, better economy, and if it breaks, you're not losing a valuable car."
       },
       {
         "buyerProfile": "First-Time Premium Buyer",
@@ -690,7 +690,7 @@
   },
   "calculatorCta": {
     "h2": "Can I Repair My X-Type Engine - or Should I Replace It?",
-    "intro": "Your X-Type is worth £1,500–£5,000 on today's market. That £2,500–£5,800 recon cost sits at a critical threshold - the difference between a financially sensible repair and a car you scrap. Use our calculator to get a personalised verdict based on your actual vehicle value and symptoms.",
+    "intro": "Your X-Type is worth £1,500-£5,000 on today's market. That £2,500-£5,800 recon cost sits at a critical threshold - the difference between a financially sensible repair and a car you scrap. Use our calculator to get a personalised verdict based on your actual vehicle value and symptoms.",
     "paths": [
       {
         "label": "Path 1 - Know your engine? Launch the Jaguar calculator with X-Type pre-selected",
@@ -733,7 +733,7 @@
       {
         "id": 1,
         "question": "How much does an X-Type engine replacement cost in the UK?",
-        "answer": "An X-Type engine replacement typically costs £1,800–£5,800 supply-only depending on engine type and condition [JAG-QUOTE]. The petrol V6 engines are cheaper to replace (£1,800–£3,500 recon) than the diesel AJ200D (£2,500–£5,800 recon). Labour adds 8–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). Use our calculator above to get a personalised estimate for your specific X-Type."
+        "answer": "An X-Type engine replacement typically costs £1,800-£5,800 supply-only depending on engine type and condition [JAG-QUOTE]. The petrol V6 engines are cheaper to replace (£1,800-£3,500 recon) than the diesel AJ200D (£2,500-£5,800 recon). Labour adds 8-14 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer). Use our calculator above to get a personalised estimate for your specific X-Type."
       },
       {
         "id": 2,
@@ -743,7 +743,7 @@
       {
         "id": 3,
         "question": "Which X-Type engine should I avoid?",
-        "answer": "The early AJ200D diesel - particularly pre-2007 examples. The timing chain tensioner concerns that later became infamous in Land Rover's Ingenium diesels are present in early X-Type applications, and with typical vehicle values under £3,000, the replacement cost (£2,500–£5,800) frequently exceeds the car's worth. [JAG-VERIFIED]"
+        "answer": "The early AJ200D diesel - particularly pre-2007 examples. The timing chain tensioner concerns that later became infamous in Land Rover's Ingenium diesels are present in early X-Type applications, and with typical vehicle values under £3,000, the replacement cost (£2,500-£5,800) frequently exceeds the car's worth. [JAG-VERIFIED]"
       },
       {
         "id": 4,
@@ -753,12 +753,12 @@
       {
         "id": 5,
         "question": "Is it worth replacing an X-Type engine?",
-        "answer": "In most cases, no. A £2,500–£5,800 recon against a £1,500–£5,000 car puts most X-Types above our 60% scrap threshold for Jaguar [JAG-QUOTE]. Unless your car has sentimental value or is a particularly low-mileage mint example, the replacement cost isn't financially justified. Get a scrap valuation before committing to a repair."
+        "answer": "In most cases, no. A £2,500-£5,800 recon against a £1,500-£5,000 car puts most X-Types above our 60% scrap threshold for Jaguar [JAG-QUOTE]. Unless your car has sentimental value or is a particularly low-mileage mint example, the replacement cost isn't financially justified. Get a scrap valuation before committing to a repair."
       },
       {
         "id": 6,
         "question": "Which X-Type year should I buy?",
-        "answer": "A 2007+ facelift car with the 2.5 V6 and a full service history. The 2005–2007 facelift cars have better electrical reliability and more resolved interior quality than pre-2005 examples. The 2.5 V6 is the sweet spot between performance and running costs, and the later cars benefit from Ford/Jaguar's sorted production quality."
+        "answer": "A 2007+ facelift car with the 2.5 V6 and a full service history. The 2005-2007 facelift cars have better electrical reliability and more resolved interior quality than pre-2005 examples. The 2.5 V6 is the sweet spot between performance and running costs, and the later cars benefit from Ford/Jaguar's sorted production quality."
       },
       {
         "id": 7,

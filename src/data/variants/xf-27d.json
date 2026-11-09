@@ -59,7 +59,7 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "X250 XF 2.7d (276DT, 2008–2015)",
+              "name": "X250 XF 2.7d (276DT, 2008-2015)",
               "url": "https://jaguarengines.uk/xf/x250/"
             }
           ]
@@ -84,7 +84,7 @@
               "name": "How much does a Jaguar XF 2.7d engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned XF 2.7d (276DT) engine typically costs £2,500–£4,500 supply only. Fitting adds £1,500–£2,500 depending on location and workshop rates. A remanufactured Jaguar XF diesel engine is available from specialist suppliers at approximately £3,068. Main dealer new engines start from £6,000–£8,000+ supply only. Use our calculator for a figure specific to your car."
+                "text": "A reconditioned XF 2.7d (276DT) engine typically costs £2,500-£4,500 supply only. Fitting adds £1,500-£2,500 depending on location and workshop rates. A remanufactured Jaguar XF diesel engine is available from specialist suppliers at approximately £3,068. Main dealer new engines start from £6,000-£8,000+ supply only. Use our calculator for a figure specific to your car."
               }
             },
             {
@@ -108,7 +108,7 @@
               "name": "Is it worth replacing a Jaguar XF 2.7d engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on vehicle value and condition. Against a well-kept £4,000–£10,000 XF, a £3,000–£4,500 recon is 30–110% of the car's value. For a clean example with good body and no other issues, replacement may be worthwhile. However, if the car has other issues (air suspension, electrical faults), evaluate total repair costs before committing."
+                "text": "Depends on vehicle value and condition. Against a well-kept £4,000-£10,000 XF, a £3,000-£4,500 recon is 30-110% of the car's value. For a clean example with good body and no other issues, replacement may be worthwhile. However, if the car has other issues (air suspension, electrical faults), evaluate total repair costs before committing."
               }
             },
             {
@@ -124,7 +124,7 @@
               "name": "Can I repair the 2.7d crankshaft issue, or does it need replacement?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "If caught early, bearing replacement may be possible (£1,500–£3,000). However, if the crankshaft has snapped or bearings have spun, a full engine replacement is usually the only reliable fix (£4,000–£7,000). At the first sign of rhythmic knocking or an oil pressure warning, stop driving and arrange recovery to a specialist immediately."
+                "text": "If caught early, bearing replacement may be possible (£1,500-£3,000). However, if the crankshaft has snapped or bearings have spun, a full engine replacement is usually the only reliable fix (£4,000-£7,000). At the first sign of rhythmic knocking or an oil pressure warning, stop driving and arrange recovery to a specialist immediately."
               }
             }
           ]
@@ -185,7 +185,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar XF 2.7d • 2008–2015 • 1 Engine Generation",
+    "tagPill": "Jaguar XF 2.7d • 2008-2015 • 1 Engine Generation",
     "h1": "Jaguar XF 2.7d Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Jaguar XF specialists. The 2.7-litre AJD-V6 diesel powers the first-generation XF - compare reconditioned, rebuilt and used engines with supply & fit available nationwide.",
     "trustBadges": [
@@ -218,10 +218,10 @@
     "rows": [
       {
         "generation": "X250",
-        "years": "2008–2015",
+        "years": "2008-2015",
         "engineCode": "276DT (AJD-V6)",
         "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£2,500–£4,500 [JAG-QUOTE]",
+        "reconCost": "£2,500-£4,500 [JAG-QUOTE]",
         "eraNote": "2.7L V6 diesel - 207 hp, 435 Nm. Known for crankshaft failure, fuel injector and DPF issues"
       }
     ],
@@ -240,35 +240,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£800–£1,800",
-        "fittedIndie": "£1,500–£3,000",
-        "warranty": "1–6 months",
+        "supplyOnly": "£800-£1,800",
+        "fittedIndie": "£1,500-£3,000",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; donor for rebuild"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£2,500–£4,500",
-        "fittedIndie": "£4,000–£6,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£2,500-£4,500",
+        "fittedIndie": "£4,000-£6,000",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£3,500–£5,500",
-        "fittedIndie": "£5,000–£7,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£3,500-£5,500",
+        "fittedIndie": "£5,000-£7,000",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£6,000–£8,000+",
-        "fittedIndie": "£8,000–£10,000+",
-        "warranty": "24–36 months",
+        "supplyOnly": "£6,000-£8,000+",
+        "fittedIndie": "£8,000-£10,000+",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs, warranty claims"
       }
     ],
     "figuresNote": "",
-    "labourEstimate": "Fitting an XF 2.7d engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "labourEstimate": "Fitting an XF 2.7d engine typically takes 12-16 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer).",
     "cta": {
       "label": "→ Compare XF 2.7d engine prices from UK specialists",
       "href": "/quote"
@@ -280,15 +280,15 @@
         "id": 1,
         "title": "Crankshaft & Bearing Failure (Catastrophic)",
         "symptoms": "Rhythmic knocking from lower engine block that worsens under load, oil pressure warning, sudden engine seizure with no warning",
-        "typicalMileage": "80,000–120,000 miles - can occur without warning",
-        "repairCost": "£1,500–£3,000 (early intervention - bearing replacement if caught immediately)",
-        "replacementCost": "£4,000–£7,000 (full engine replacement)",
+        "typicalMileage": "80,000-120,000 miles - can occur without warning",
+        "repairCost": "£1,500-£3,000 (early intervention - bearing replacement if caught immediately)",
+        "replacementCost": "£4,000-£7,000 (full engine replacement)",
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
           "text": "stop driving immediately if you hear knocking or see the oil pressure warning"
         },
-        "recommendation": "This is the most devastating fault affecting the 2.7d engine. Known issues include \"snapped crankshafts\" and \"spun bearings\". One owner reported a \"2008 XF 2.7 diesel with crank that is knocking and appears to have snapped\". The 3.0-litre engine was updated to add a way of securing the bearings for the crankshaft. At the first sign of rhythmic knocking or an oil pressure warning, stop driving and arrange recovery to a specialist. A £1,500–£3,000 early intervention is dramatically cheaper than a £4,000–£7,000 engine replacement.",
+        "recommendation": "This is the most devastating fault affecting the 2.7d engine. Known issues include \"snapped crankshafts\" and \"spun bearings\". One owner reported a \"2008 XF 2.7 diesel with crank that is knocking and appears to have snapped\". The 3.0-litre engine was updated to add a way of securing the bearings for the crankshaft. At the first sign of rhythmic knocking or an oil pressure warning, stop driving and arrange recovery to a specialist. A £1,500-£3,000 early intervention is dramatically cheaper than a £4,000-£7,000 engine replacement.",
         "failureLink": {
           "label": "Read the full crankshaft failure guide → /failures/ajd-v6-crankshaft-bearing-failure/ [NEW FAILURE PAGE NEEDED]",
           "href": "/engine/ajd-v6-diesel"
@@ -298,8 +298,8 @@
         "id": 2,
         "title": "Fuel Injector Failure (Siemens System)",
         "symptoms": "Rough idle, misfires, increased fuel consumption, black smoke, hard starting, engine warning light",
-        "typicalMileage": "60,000–120,000 miles",
-        "repairCost": "£327–£800 per injector",
+        "typicalMileage": "60,000-120,000 miles",
+        "repairCost": "£327-£800 per injector",
         "replacementCost": "N/A - repair only (does not progress to engine replacement if addressed)",
         "urgency": {
           "icon": "🟡",
@@ -317,7 +317,7 @@
         "title": "DPF Clogging (Short Urban Journeys)",
         "symptoms": "DPF warning light, reduced performance, increased fuel consumption, limp mode, \"Engine Systems Fault\" warning",
         "typicalMileage": "Any mileage - short urban journeys accelerate the issue",
-        "repairCost": "£250–£800 (DPF cleaning / forced regeneration) / £1,000–£2,500 (DPF replacement)",
+        "repairCost": "£250-£800 (DPF cleaning / forced regeneration) / £1,000-£2,500 (DPF replacement)",
         "replacementCost": "N/A - repair only (does not progress to engine replacement if addressed)",
         "urgency": {
           "icon": "🟡",
@@ -334,8 +334,8 @@
         "id": 4,
         "title": "Oil Leaks (Heat Exchanger & Seals)",
         "symptoms": "Burning oil smell, oil spots under the car, visible oil residue around the engine, low oil level warning",
-        "typicalMileage": "60,000–120,000 miles",
-        "repairCost": "£300–£800 (heat exchanger gasket or seal replacement)",
+        "typicalMileage": "60,000-120,000 miles",
+        "repairCost": "£300-£800 (heat exchanger gasket or seal replacement)",
         "replacementCost": "N/A - repair only (does not progress to engine replacement if addressed)",
         "urgency": {
           "icon": "🟡",
@@ -372,7 +372,7 @@
         {
           "problem": "Crankshaft / bearing failure (early detection)",
           "repairable": "⚠️ Sometimes",
-          "typicalCost": "£1,500–£3,000",
+          "typicalCost": "£1,500-£3,000",
           "whenItMakesSense": "Viable if caught immediately - but requires specialist assessment"
         },
         {
@@ -384,19 +384,19 @@
         {
           "problem": "Fuel injector failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£327–£800 each",
+          "typicalCost": "£327-£800 each",
           "whenItMakesSense": "Straightforward component replacement"
         },
         {
           "problem": "DPF clogging",
           "repairable": "✅ Yes",
-          "typicalCost": "£250–£800",
+          "typicalCost": "£250-£800",
           "whenItMakesSense": "Cleaning or forced regeneration; replacement if severe"
         },
         {
           "problem": "Oil leaks (heat exchanger / seals)",
           "repairable": "✅ Yes",
-          "typicalCost": "£300–£800",
+          "typicalCost": "£300-£800",
           "whenItMakesSense": "Catch early to prevent oil contamination and engine damage"
         }
       ]
@@ -446,10 +446,10 @@
     "rows": [
       {
         "engineCode": "276DT (<a href='https://jaguarengines.uk/engine/ajd-v6-diesel'>AJD-V6</a>)",
-        "years": "2008–2015",
+        "years": "2008-2015",
         "power": "207 hp (152 kW) / 435 Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£2,500–£4,500【JAG-QUOTE】"
+        "avgReconCost": "£2,500-£4,500【JAG-QUOTE】"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -531,7 +531,7 @@
       },
       {
         "label": "Average Enquiry Mileage",
-        "value": "60,000–100,000 miles【PATTERN DATA】"
+        "value": "60,000-100,000 miles【PATTERN DATA】"
       },
       {
         "label": "Average Replacement Cost",
@@ -556,7 +556,7 @@
       {
         "id": 1,
         "question": "How much does a Jaguar XF 2.7d engine replacement cost in the UK?",
-        "answer": "A reconditioned XF 2.7d (276DT) engine typically costs £2,500–£4,500 supply only. Fitting adds £1,500–£2,500 depending on location and workshop rates. A remanufactured Jaguar XF diesel engine is available from specialist suppliers at approximately £3,068. Main dealer new engines start from £6,000–£8,000+ supply only. Use our calculator for a figure specific to your car."
+        "answer": "A reconditioned XF 2.7d (276DT) engine typically costs £2,500-£4,500 supply only. Fitting adds £1,500-£2,500 depending on location and workshop rates. A remanufactured Jaguar XF diesel engine is available from specialist suppliers at approximately £3,068. Main dealer new engines start from £6,000-£8,000+ supply only. Use our calculator for a figure specific to your car."
       },
       {
         "id": 2,
@@ -571,7 +571,7 @@
       {
         "id": 4,
         "question": "Is it worth replacing a Jaguar XF 2.7d engine, or should I scrap the car?",
-        "answer": "Depends on vehicle value and condition. Against a well-kept £4,000–£10,000 XF, a £3,000–£4,500 recon is 30–110% of the car's value. For a clean example with good body and no other issues, replacement may be worthwhile. However, if the car has other issues (air suspension, electrical faults), evaluate total repair costs before committing. For examples under £3,000, the replacement cost may exceed our 60% Jaguar scrap threshold."
+        "answer": "Depends on vehicle value and condition. Against a well-kept £4,000-£10,000 XF, a £3,000-£4,500 recon is 30-110% of the car's value. For a clean example with good body and no other issues, replacement may be worthwhile. However, if the car has other issues (air suspension, electrical faults), evaluate total repair costs before committing. For examples under £3,000, the replacement cost may exceed our 60% Jaguar scrap threshold."
       },
       {
         "id": 5,
@@ -581,7 +581,7 @@
       {
         "id": 6,
         "question": "Can I repair the 2.7d crankshaft issue, or does it need replacement?",
-        "answer": "If caught early, bearing replacement may be possible (£1,500–£3,000). However, if the crankshaft has snapped or bearings have spun, a full engine replacement is usually the only reliable fix (£4,000–£7,000). At the first sign of rhythmic knocking or an oil pressure warning, stop driving and arrange recovery to a specialist immediately."
+        "answer": "If caught early, bearing replacement may be possible (£1,500-£3,000). However, if the crankshaft has snapped or bearings have spun, a full engine replacement is usually the only reliable fix (£4,000-£7,000). At the first sign of rhythmic knocking or an oil pressure warning, stop driving and arrange recovery to a specialist immediately."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier."

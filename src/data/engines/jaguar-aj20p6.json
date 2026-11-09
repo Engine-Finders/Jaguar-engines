@@ -69,7 +69,7 @@
               "name": "How much does a Jaguar AJ20P6 engine replacement cost?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned AJ20P6 typically costs £4,500–£7,500 supply only [EM‑QUOTE], varying by specification and power output. Fitting adds £780–£1,040 depending on labour rates."
+                "text": "A reconditioned AJ20P6 typically costs £4,500-£7,500 supply only [EM‑QUOTE], varying by specification and power output. Fitting adds £780-£1,040 depending on labour rates."
               }
             },
             {
@@ -85,7 +85,7 @@
               "name": "What is the most common AJ20P6 failure?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The most common issue is coolant system leaks - from water pumps, expansion tanks or plastic fittings - typically appearing between 60,000–120,000 miles."
+                "text": "The most common issue is coolant system leaks - from water pumps, expansion tanks or plastic fittings - typically appearing between 60,000-120,000 miles."
               }
             },
             {
@@ -177,7 +177,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar • AJ20P6 / P400 • Petrol • 3.0L I6 Turbo • 2019–present",
+    "tagPill": "Jaguar • AJ20P6 / P400 • Petrol • 3.0L I6 Turbo • 2019-present",
     "h1": "Jaguar AJ20P6 Engine - Specs, Reliability & Replacement Cost",
     "subHeadline": "The Jaguar AJ20P6 is a modern 3.0‑litre straight‑six petrol - strong and refined, but cooling system monitoring is essential. Backed by 80+ real UK enquiries in 2025 [EM‑VERIFIED].",
     "trustStrip": [
@@ -219,11 +219,11 @@
       },
       {
         "metric": "Power Range",
-        "value": "340–400 bhp"
+        "value": "340-400 bhp"
       },
       {
         "metric": "Years Produced",
-        "value": "2019–present"
+        "value": "2019-present"
       },
       {
         "metric": "Models Fitted (Jaguar only)",
@@ -255,7 +255,7 @@
         },
         {
           "dimension": "Repair Cost",
-          "score": "12 (Midpoint of reconditioned range (£6,000) → £5,000–£6,999 bracket)"
+          "score": "12 (Midpoint of reconditioned range (£6,000) → £5,000-£6,999 bracket)"
         },
         {
           "dimension": "Repairability",
@@ -291,13 +291,13 @@
         "model": "F‑Pace",
         "generation": "X761",
         "variantBadge": "P400 (3.0 I6 MHEV)",
-        "years": "2020–present"
+        "years": "2020-present"
       },
       {
         "model": "XF",
         "generation": "X260",
         "variantBadge": "P400 (3.0 I6 MHEV)",
-        "years": "2020–present"
+        "years": "2020-present"
       }
     ],
     "crossBrandNote": "Also powers the Land Rover Range Rover, Velar and Defender → [link]."
@@ -312,24 +312,24 @@
     "rows": [
       {
         "condition": "Used",
-        "supplyOnly": "£2,500–£4,500 [EM‑QUOTE]",
-        "fittedIndie": "£3,280–£5,540",
-        "warranty": "3–6 months"
+        "supplyOnly": "£2,500-£4,500 [EM‑QUOTE]",
+        "fittedIndie": "£3,280-£5,540",
+        "warranty": "3-6 months"
       },
       {
         "condition": "Reconditioned",
-        "supplyOnly": "£4,500–£7,500 [EM‑QUOTE]",
-        "fittedIndie": "£5,280–£8,540",
+        "supplyOnly": "£4,500-£7,500 [EM‑QUOTE]",
+        "fittedIndie": "£5,280-£8,540",
         "warranty": "12 months"
       },
       {
         "condition": "Rebuilt",
-        "supplyOnly": "£6,500–£10,000 [EM‑QUOTE]",
-        "fittedIndie": "£7,280–£11,040",
-        "warranty": "12–24 months"
+        "supplyOnly": "£6,500-£10,000 [EM‑QUOTE]",
+        "fittedIndie": "£7,280-£11,040",
+        "warranty": "12-24 months"
       }
     ],
-    "labourEstimate": "Fitting an AJ20P6 typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [EM‑QUOTE].",
+    "labourEstimate": "Fitting an AJ20P6 typically takes 12-16 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [EM‑QUOTE].",
     "sharedCostNote": "Parts cost is identical across Jaguar and Land Rover applications; labour time varies slightly by engine bay access.",
     "cta": {
       "label": "",
@@ -341,7 +341,7 @@
       {
         "id": 1,
         "question": "How much does a Jaguar AJ20P6 engine replacement cost?",
-        "answer": "A reconditioned AJ20P6 typically costs £4,500–£7,500 supply only [EM‑QUOTE], varying by specification and power output. Fitting adds £780–£1,040 depending on labour rates."
+        "answer": "A reconditioned AJ20P6 typically costs £4,500-£7,500 supply only [EM‑QUOTE], varying by specification and power output. Fitting adds £780-£1,040 depending on labour rates."
       },
       {
         "id": 2,
@@ -351,7 +351,7 @@
       {
         "id": 3,
         "question": "What is the most common AJ20P6 failure?",
-        "answer": "The most common issue is coolant system leaks - from water pumps, expansion tanks or plastic fittings - typically appearing between 60,000–120,000 miles."
+        "answer": "The most common issue is coolant system leaks - from water pumps, expansion tanks or plastic fittings - typically appearing between 60,000-120,000 miles."
       },
       {
         "id": 4,

@@ -58,7 +58,7 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "X540 E-Pace P250 (PT204, 2017–2024)",
+              "name": "X540 E-Pace P250 (PT204, 2017-2024)",
               "url": "https://jaguarengines.uk/e-pace/x540/"
             }
           ]
@@ -83,7 +83,7 @@
               "name": "How much does a Jaguar E-Pace P250 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned E-Pace P250 engine typically costs £3,500–£5,500 supply only. Fitting adds £1,500–£2,500 depending on location and workshop rates. Customers have reported dealer quotes of around £15,000–£30,000 for engine replacement, while reconditioning or rebuilding is often in the £8,000–£10,000 range. Use our calculator for a figure specific to your car."
+                "text": "A reconditioned E-Pace P250 engine typically costs £3,500-£5,500 supply only. Fitting adds £1,500-£2,500 depending on location and workshop rates. Customers have reported dealer quotes of around £15,000-£30,000 for engine replacement, while reconditioning or rebuilding is often in the £8,000-£10,000 range. Use our calculator for a figure specific to your car."
               }
             },
             {
@@ -107,7 +107,7 @@
               "name": "Is it worth replacing a Jaguar E-Pace P250 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on vehicle value and condition. Against a well-kept £12,000–£22,000 E-Pace, a £4,500–£5,500 recon is 20–45% of the car's value. For a clean example with full service history, replacement is often worth it. However, if the car has other issues (transmission, electrical faults), evaluate total repair costs before committing."
+                "text": "Depends on vehicle value and condition. Against a well-kept £12,000-£22,000 E-Pace, a £4,500-£5,500 recon is 20-45% of the car's value. For a clean example with full service history, replacement is often worth it. However, if the car has other issues (transmission, electrical faults), evaluate total repair costs before committing."
               }
             },
             {
@@ -184,7 +184,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar E-Pace P250 • 2017–2024 • 1 Engine Generation",
+    "tagPill": "Jaguar E-Pace P250 • 2017-2024 • 1 Engine Generation",
     "h1": "Jaguar E-Pace P250 Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Jaguar E-Pace specialists. The 2.0-litre Ingenium petrol (PT204) delivers 249 PS and 365 Nm - compare reconditioned, rebuilt and used engines with supply & fit available nationwide.",
     "trustBadges": [
@@ -217,10 +217,10 @@
     "rows": [
       {
         "generation": "X540",
-        "years": "2017–2024",
+        "years": "2017-2024",
         "engineCode": "PT204 (AJ200P)",
         "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£3,500–£5,500 [JAG-QUOTE]",
+        "reconCost": "£3,500-£5,500 [JAG-QUOTE]",
         "eraNote": "2.0L four-cylinder Ingenium petrol - 249 PS, 365 Nm. Petrol Ingeniums are a \"safer bet\" than diesels"
       }
     ],
@@ -239,35 +239,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£1,500–£3,000",
-        "fittedIndie": "£2,500–£4,500",
-        "warranty": "1–6 months",
+        "supplyOnly": "£1,500-£3,000",
+        "fittedIndie": "£2,500-£4,500",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; lower-mileage donor"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£3,500–£5,500",
-        "fittedIndie": "£5,500–£7,500",
-        "warranty": "12–24 months",
+        "supplyOnly": "£3,500-£5,500",
+        "fittedIndie": "£5,500-£7,500",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£4,500–£7,000",
-        "fittedIndie": "£6,500–£9,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£4,500-£7,000",
+        "fittedIndie": "£6,500-£9,000",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£9,000–£15,000+",
-        "fittedIndie": "£11,000–£17,000+",
-        "warranty": "24–36 months",
+        "supplyOnly": "£9,000-£15,000+",
+        "fittedIndie": "£11,000-£17,000+",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs, warranty claims"
       }
     ],
     "figuresNote": "",
-    "labourEstimate": "Fitting an E-Pace P250 engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). The transverse engine layout adds complexity.",
+    "labourEstimate": "Fitting an E-Pace P250 engine typically takes 12-16 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer). The transverse engine layout adds complexity.",
     "cta": {
       "label": "→ Compare E-Pace P250 engine prices from UK specialists",
       "href": "/quote"
@@ -279,8 +279,8 @@
         "id": 1,
         "title": "VVT Solenoid Failure (Petrol Ingeniums)",
         "symptoms": "Ticking or rattling noise on cold start when RPM drops, rough idle, engine warning light, reduced performance",
-        "typicalMileage": "40,000–80,000 miles",
-        "repairCost": "£300–£700 (VVT solenoid replacement)",
+        "typicalMileage": "40,000-80,000 miles",
+        "repairCost": "£300-£700 (VVT solenoid replacement)",
         "replacementCost": "N/A - repair only (does not progress to engine replacement if addressed)",
         "urgency": {
           "icon": "🟡",
@@ -297,8 +297,8 @@
         "id": 2,
         "title": "High-Pressure Fuel Pump (HPFP) Failure",
         "symptoms": "Loss of power in upper rev range, poor engine performance, reduced fuel economy, potential stalling, hard starting",
-        "typicalMileage": "40,000–80,000 miles",
-        "repairCost": "£400–£900 (HPFP replacement)",
+        "typicalMileage": "40,000-80,000 miles",
+        "repairCost": "£400-£900 (HPFP replacement)",
         "replacementCost": "N/A - repair only (does not progress to engine replacement if addressed)",
         "urgency": {
           "icon": "🟠",
@@ -315,15 +315,15 @@
         "id": 3,
         "title": "Turbocharger Wear & Failure",
         "symptoms": "High-pitched whining or siren-like noise from the engine bay, especially under acceleration, loss of power, smoke from exhaust",
-        "typicalMileage": "60,000–100,000 miles",
-        "repairCost": "£1,200–£2,500 (turbocharger replacement)",
-        "replacementCost": "£5,500–£9,000 (if ignored - full engine replacement)",
+        "typicalMileage": "60,000-100,000 miles",
+        "repairCost": "£1,200-£2,500 (turbocharger replacement)",
+        "replacementCost": "£5,500-£9,000 (if ignored - full engine replacement)",
         "urgency": {
           "icon": "🟠",
           "label": "Check",
           "text": "book inspection urgently if you hear whining or experience power loss"
         },
-        "recommendation": "Some E-Pace P250 owners have reported turbocharger failure within the first few months of ownership. Turbo whining typically indicates worn turbocharger bearings or boost leaks. If you hear a high-pitched whine or siren-like noise, inspect the turbocharger's shaft play and listen for unusual sounds. A £1,200–£2,500 repair is far cheaper than the engine damage that can follow if ignored. Regular oil changes with the correct 0W-20 specification are essential for turbo longevity.",
+        "recommendation": "Some E-Pace P250 owners have reported turbocharger failure within the first few months of ownership. Turbo whining typically indicates worn turbocharger bearings or boost leaks. If you hear a high-pitched whine or siren-like noise, inspect the turbocharger's shaft play and listen for unusual sounds. A £1,200-£2,500 repair is far cheaper than the engine damage that can follow if ignored. Regular oil changes with the correct 0W-20 specification are essential for turbo longevity.",
         "failureLink": {
           "label": "Read the full turbo failure guide",
           "href": "/failures/turbocharger-failure"
@@ -353,25 +353,25 @@
         {
           "problem": "VVT solenoid failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£300–£700",
+          "typicalCost": "£300-£700",
           "whenItMakesSense": "Straightforward component replacement"
         },
         {
           "problem": "High-pressure fuel pump failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£400–£900",
+          "typicalCost": "£400-£900",
           "whenItMakesSense": "Catch early to prevent fuel system contamination"
         },
         {
           "problem": "Turbocharger wear",
           "repairable": "✅ Yes",
-          "typicalCost": "£1,200–£2,500",
+          "typicalCost": "£1,200-£2,500",
           "whenItMakesSense": "Catch early to prevent engine damage"
         },
         {
           "problem": "Timing chain failure",
           "repairable": "⚠️ Sometimes",
-          "typicalCost": "£1,500–£3,500",
+          "typicalCost": "£1,500-£3,500",
           "whenItMakesSense": "Rare on petrols; diesel-related issue"
         },
         {
@@ -427,10 +427,10 @@
     "rows": [
       {
         "engineCode": "PT204 (AJ200P)",
-        "years": "2017–2024",
-        "power": "249 PS (183–184 kW) / 365 Nm",
+        "years": "2017-2024",
+        "power": "249 PS (183-184 kW) / 365 Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£3,500–£5,500【JAG-QUOTE】"
+        "avgReconCost": "£3,500-£5,500【JAG-QUOTE】"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -492,7 +492,7 @@
       },
       {
         "label": "Average Enquiry Mileage",
-        "value": "40,000–80,000 miles【PATTERN DATA】"
+        "value": "40,000-80,000 miles【PATTERN DATA】"
       },
       {
         "label": "Average Replacement Cost",
@@ -517,7 +517,7 @@
       {
         "id": 1,
         "question": "How much does a Jaguar E-Pace P250 engine replacement cost in the UK?",
-        "answer": "A reconditioned E-Pace P250 engine typically costs £3,500–£5,500 supply only. Fitting adds £1,500–£2,500 depending on location and workshop rates. Customers have reported dealer quotes of around £15,000–£30,000 for engine replacement, while reconditioning or rebuilding is often in the £8,000–£10,000 range. Use our calculator for a figure specific to your car."
+        "answer": "A reconditioned E-Pace P250 engine typically costs £3,500-£5,500 supply only. Fitting adds £1,500-£2,500 depending on location and workshop rates. Customers have reported dealer quotes of around £15,000-£30,000 for engine replacement, while reconditioning or rebuilding is often in the £8,000-£10,000 range. Use our calculator for a figure specific to your car."
       },
       {
         "id": 2,
@@ -532,7 +532,7 @@
       {
         "id": 4,
         "question": "Is it worth replacing a Jaguar E-Pace P250 engine, or should I scrap the car?",
-        "answer": "Depends on vehicle value and condition. Against a well-kept £12,000–£22,000 E-Pace, a £4,500–£5,500 recon is 20–45% of the car's value. For a clean example with full service history, replacement is often worth it. However, if the car has other issues (transmission, electrical faults), evaluate total repair costs before committing. The P250 is a popular and capable engine."
+        "answer": "Depends on vehicle value and condition. Against a well-kept £12,000-£22,000 E-Pace, a £4,500-£5,500 recon is 20-45% of the car's value. For a clean example with full service history, replacement is often worth it. However, if the car has other issues (transmission, electrical faults), evaluate total repair costs before committing. The P250 is a popular and capable engine."
       },
       {
         "id": 5,

@@ -50,31 +50,31 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "Jaguar XF X250 (2007–2015) 3.0D / 3.0 V6 Supercharged",
+              "name": "Jaguar XF X250 (2007-2015) 3.0D / 3.0 V6 Supercharged",
               "url": "https://jaguarengines.uk/xf/x250"
             },
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "Jaguar XF X260 (2015–2024) 3.0D / 3.0 V6 Supercharged",
+              "name": "Jaguar XF X260 (2015-2024) 3.0D / 3.0 V6 Supercharged",
               "url": "https://jaguarengines.uk/xf/x260"
             },
             {
               "@type": "ListItem",
               "position": 3,
-              "name": "Jaguar XJ X351 (2009–2019) 3.0D / 3.0 V6 Supercharged",
+              "name": "Jaguar XJ X351 (2009-2019) 3.0D / 3.0 V6 Supercharged",
               "url": "https://jaguarengines.uk/xj/x351"
             },
             {
               "@type": "ListItem",
               "position": 4,
-              "name": "Jaguar F-Pace X761 (2015–2024) 3.0D / 3.0 V6 Supercharged",
+              "name": "Jaguar F-Pace X761 (2015-2024) 3.0D / 3.0 V6 Supercharged",
               "url": "https://jaguarengines.uk/f-pace/x761"
             },
             {
               "@type": "ListItem",
               "position": 5,
-              "name": "Jaguar F-Type X152 (2013–2024) 3.0 V6 Supercharged",
+              "name": "Jaguar F-Type X152 (2013-2024) 3.0 V6 Supercharged",
               "url": "https://jaguarengines.uk/f-type/x152"
             }
           ]
@@ -87,7 +87,7 @@
               "name": "How much does a Jaguar 306DT engine replacement cost?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned 306DT typically costs £6,500–£9,500 supply only [EM-QUOTE], varying by specific variant and output. Fitting adds £975–£1,300 depending on labour rates. Use our calculator for a figure specific to your car."
+                "text": "A reconditioned 306DT typically costs £6,500-£9,500 supply only [EM-QUOTE], varying by specific variant and output. Fitting adds £975-£1,300 depending on labour rates. Use our calculator for a figure specific to your car."
               }
             },
             {
@@ -103,7 +103,7 @@
               "name": "What is the most common Jaguar 306DT failure?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Crankshaft bearing failure (tin-aluminium coating fatigue) is the defining failure, typically striking from 80,000–140,000 miles. Cold-start knock is the early warning sign; catastrophic failure follows without intervention."
+                "text": "Crankshaft bearing failure (tin-aluminium coating fatigue) is the defining failure, typically striking from 80,000-140,000 miles. Cold-start knock is the early warning sign; catastrophic failure follows without intervention."
               }
             },
             {
@@ -111,7 +111,7 @@
               "name": "Which Jaguar models use the 306DT and 306PS?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The XF (both X250 and X260), XJ X351, F-Pace and the F-Type all use the 306DT diesel or 306PS petrol V6 across 2009–2020 - five model lines spanning both saloon and SUV applications."
+                "text": "The XF (both X250 and X260), XJ X351, F-Pace and the F-Type all use the 306DT diesel or 306PS petrol V6 across 2009-2020 - five model lines spanning both saloon and SUV applications."
               }
             },
             {
@@ -195,7 +195,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar • 306DT / 306PS • Diesel & Petrol • 3.0L V6 • 2009–2020",
+    "tagPill": "Jaguar • 306DT / 306PS • Diesel & Petrol • 3.0L V6 • 2009-2020",
     "h1": "Jaguar 306DT / 306PS Engine - Specs, Reliability & Replacement Cost",
     "subHeadline": "The Jaguar 306DT is a 3.0-litre V6 diesel, the 306PS a petrol supercharged version - both face similar reliability concerns with the V6 architecture. Backed by 980+ real UK enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [],
@@ -220,11 +220,11 @@
       },
       {
         "metric": "Power Range",
-        "value": "240–380 bhp [EM-VERIFIED]"
+        "value": "240-380 bhp [EM-VERIFIED]"
       },
       {
         "metric": "Years Produced",
-        "value": "2009–2020"
+        "value": "2009-2020"
       },
       {
         "metric": "Models Fitted (Jaguar only)",
@@ -256,7 +256,7 @@
         },
         {
           "dimension": "Repair Cost",
-          "score": "8 (Midpoint of Reconditioned (Supply Only) range: £6,500–£9,500 → midpoint £8,000 → falls in £7,000–£9,999 bracket → 8/20.)"
+          "score": "8 (Midpoint of Reconditioned (Supply Only) range: £6,500-£9,500 → midpoint £8,000 → falls in £7,000-£9,999 bracket → 8/20.)"
         },
         {
           "dimension": "Repairability",
@@ -268,7 +268,7 @@
         },
         {
           "dimension": "Replacement Economics",
-          "score": "4 (Reconditioned cost (£6,500–£9,500) against conservative lowest host value (XF X250 at £4,000–£12,000, worst-case £4,000) = 163%+ - over threshold.)"
+          "score": "4 (Reconditioned cost (£6,500-£9,500) against conservative lowest host value (XF X250 at £4,000-£12,000, worst-case £4,000) = 163%+ - over threshold.)"
         },
         {
           "dimension": "Total",
@@ -290,33 +290,33 @@
     "rows": [
       {
         "model": "Jaguar XF",
-        "generation": "X250 (2007–2015)",
+        "generation": "X250 (2007-2015)",
         "variantBadge": "3.0D / 3.0 V6 Supercharged",
-        "years": "2009–2015"
+        "years": "2009-2015"
       },
       {
         "model": "Jaguar XF",
-        "generation": "X260 (2015–2024)",
+        "generation": "X260 (2015-2024)",
         "variantBadge": "3.0D / 3.0 V6 Supercharged",
-        "years": "2015–2020"
+        "years": "2015-2020"
       },
       {
         "model": "Jaguar XJ",
-        "generation": "X351 (2009–2019)",
+        "generation": "X351 (2009-2019)",
         "variantBadge": "3.0D / 3.0 V6 Supercharged",
-        "years": "2010–2019"
+        "years": "2010-2019"
       },
       {
         "model": "Jaguar F-Pace",
-        "generation": "X761 (2015–2024)",
+        "generation": "X761 (2015-2024)",
         "variantBadge": "3.0D / 3.0 V6 Supercharged",
-        "years": "2016–2020"
+        "years": "2016-2020"
       },
       {
         "model": "Jaguar F-Type",
-        "generation": "X152 (2013–2024)",
+        "generation": "X152 (2013-2024)",
         "variantBadge": "3.0 V6 Supercharged",
-        "years": "2013–2020"
+        "years": "2013-2020"
       }
     ],
     "crossBrandNote": "Also powers the Land Rover Range Rover, Sport, Discovery and Velar → [link to Land Rover 306DT page]."
@@ -331,24 +331,24 @@
     "rows": [
       {
         "condition": "Used",
-        "supplyOnly": "£3,500–£5,500 [EM-QUOTE]",
-        "fittedIndie": "£4,475–£6,800",
-        "warranty": "3–6 months"
+        "supplyOnly": "£3,500-£5,500 [EM-QUOTE]",
+        "fittedIndie": "£4,475-£6,800",
+        "warranty": "3-6 months"
       },
       {
         "condition": "Reconditioned",
-        "supplyOnly": "£6,500–£9,500 [EM-QUOTE]",
-        "fittedIndie": "£7,475–£10,800",
-        "warranty": "12–24 months"
+        "supplyOnly": "£6,500-£9,500 [EM-QUOTE]",
+        "fittedIndie": "£7,475-£10,800",
+        "warranty": "12-24 months"
       },
       {
         "condition": "Rebuilt",
-        "supplyOnly": "£7,500–£11,000 [EM-QUOTE]",
-        "fittedIndie": "£8,475–£12,300",
-        "warranty": "12–24 months"
+        "supplyOnly": "£7,500-£11,000 [EM-QUOTE]",
+        "fittedIndie": "£8,475-£12,300",
+        "warranty": "12-24 months"
       }
     ],
-    "labourEstimate": "Fitting a 306DT typically takes 15–20 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [EM-QUOTE].",
+    "labourEstimate": "Fitting a 306DT typically takes 15-20 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [EM-QUOTE].",
     "sharedCostNote": "Parts cost is identical across Jaguar and Land Rover applications; labour time varies slightly by engine bay access.",
     "cta": {
       "label": "→ Compare 306DT / 306PS engine prices from UK specialists",
@@ -360,7 +360,7 @@
       {
         "id": 1,
         "question": "Cost - \"How much does a Jaguar 306DT engine replacement cost?\"",
-        "answer": "A reconditioned 306DT typically costs £6,500–£9,500 supply only [EM-QUOTE], varying by specific variant and output. Fitting adds £975–£1,300 depending on labour rates. Use our calculator for a figure specific to your car."
+        "answer": "A reconditioned 306DT typically costs £6,500-£9,500 supply only [EM-QUOTE], varying by specific variant and output. Fitting adds £975-£1,300 depending on labour rates. Use our calculator for a figure specific to your car."
       },
       {
         "id": 2,
@@ -370,12 +370,12 @@
       {
         "id": 3,
         "question": "Common failure - \"What is the most common Jaguar 306DT failure?\"",
-        "answer": "Crankshaft bearing failure (tin-aluminium coating fatigue) is the defining failure, typically striking from 80,000–140,000 miles. Cold-start knock is the early warning sign; catastrophic failure follows without intervention."
+        "answer": "Crankshaft bearing failure (tin-aluminium coating fatigue) is the defining failure, typically striking from 80,000-140,000 miles. Cold-start knock is the early warning sign; catastrophic failure follows without intervention."
       },
       {
         "id": 4,
         "question": "Fitment - \"Which Jaguar models use the 306DT and 306PS?\"",
-        "answer": "The XF (both X250 and X260), XJ X351, F-Pace and the F-Type all use the 306DT diesel or 306PS petrol V6 across 2009–2020 - five model lines spanning both saloon and SUV applications."
+        "answer": "The XF (both X250 and X260), XJ X351, F-Pace and the F-Type all use the 306DT diesel or 306PS petrol V6 across 2009-2020 - five model lines spanning both saloon and SUV applications."
       },
       {
         "id": 5,

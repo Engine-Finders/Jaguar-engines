@@ -58,7 +58,7 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "X200 4.2 V8 (AJ34, 2002–2008)",
+              "name": "X200 4.2 V8 (AJ34, 2002-2008)",
               "url": "https://jaguarengines.uk/s-type/x200/"
             }
           ]
@@ -83,7 +83,7 @@
               "name": "How much does a Jaguar S‑Type 4.2 V8 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned AJ34 V8 typically costs £3,000–£5,500 supply only, with used units from £1,500–£2,800. Fitting adds £1,000–£1,600. Engine Finders offers verified, bench‑tested units with a 12‑month warranty. Use our calculator for a figure specific to your S‑Type."
+                "text": "A reconditioned AJ34 V8 typically costs £3,000-£5,500 supply only, with used units from £1,500-£2,800. Fitting adds £1,000-£1,600. Engine Finders offers verified, bench‑tested units with a 12‑month warranty. Use our calculator for a figure specific to your S‑Type."
               }
             },
             {
@@ -107,7 +107,7 @@
               "name": "Is it worth replacing an S‑Type 4.2 V8 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on vehicle value. An S‑Type 4.2 V8 is a £2,000–£8,000 vehicle - a £3,500–£4,500 recon is 44–225% of the car's value. For lower‑value examples (sub‑£4,000), replacement may exceed our 60% Jaguar scrap threshold. A well‑maintained, low‑mileage example justifies replacement; a tired, high‑mileage one may not."
+                "text": "Depends on vehicle value. An S‑Type 4.2 V8 is a £2,000-£8,000 vehicle - a £3,500-£4,500 recon is 44-225% of the car's value. For lower‑value examples (sub‑£4,000), replacement may exceed our 60% Jaguar scrap threshold. A well‑maintained, low‑mileage example justifies replacement; a tired, high‑mileage one may not."
               }
             },
             {
@@ -123,7 +123,7 @@
               "name": "Can I prevent the common failures on an S‑Type 4.2 V8?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes - refresh the cooling system preventatively (thermostat housing, water pump, all plastic elbows). Use 5W‑30 oil and change it every 5,000–7,500 miles. Listen for cold‑start rattle - if present, have the VVT solenoids and timing chain tensioners inspected. At the first sign of coolant loss, overheating or rattle, book an inspection immediately."
+                "text": "Yes - refresh the cooling system preventatively (thermostat housing, water pump, all plastic elbows). Use 5W‑30 oil and change it every 5,000-7,500 miles. Listen for cold‑start rattle - if present, have the VVT solenoids and timing chain tensioners inspected. At the first sign of coolant loss, overheating or rattle, book an inspection immediately."
               }
             }
           ]
@@ -184,7 +184,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar S-Type 4.2 V8 • 2002–2008 • AJ34",
+    "tagPill": "Jaguar S-Type 4.2 V8 • 2002-2008 • AJ34",
     "h1": "Jaguar S‑Type 4.2 V8 Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "The 4.2‑litre AJ34 V8 brought 300 hp and effortless torque to the retro‑styled S‑Type - a smooth, characterful engine from Jaguar's golden era of naturally aspirated V8s.",
     "trustBadges": [
@@ -230,23 +230,23 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£1,500–£2,800",
-        "fittedIndie": "£2,500–£4,000",
-        "warranty": "1–6 months",
+        "supplyOnly": "£1,500-£2,800",
+        "fittedIndie": "£2,500-£4,000",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; vehicle under £5,000"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£3,000–£5,500",
-        "fittedIndie": "£4,100–£6,900",
-        "warranty": "12–24 months",
+        "supplyOnly": "£3,000-£5,500",
+        "fittedIndie": "£4,100-£6,900",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£4,500–£7,500",
-        "fittedIndie": "£5,600–£8,900",
-        "warranty": "12–24 months",
+        "supplyOnly": "£4,500-£7,500",
+        "fittedIndie": "£5,600-£8,900",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
@@ -258,7 +258,7 @@
       }
     ],
     "figuresNote": "Figures above reflect the current AJ34 V8 generation. Engine Finders offers verified, bench‑tested replacement units with VAT included and a 12‑month warranty.",
-    "labourEstimate": "Fitting an S‑Type 4.2 V8 engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "labourEstimate": "Fitting an S‑Type 4.2 V8 engine typically takes 12-16 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer).",
     "cta": {
       "label": "→ Compare S‑Type 4.2 V8 engine prices from UK specialists",
       "href": "/quote"
@@ -270,8 +270,8 @@
         "id": 1,
         "title": "Cooling System Failure (Thermostat Housing, Water Pump, Plastic Elbows)",
         "symptoms": "Coolant loss, overheating at motorway speeds, temperature gauge fluctuations, gurgling noises from the heater core.",
-        "typicalMileage": "60,000–100,000 miles",
-        "repairCost": "£400–£1,200 (thermostat housing, water pump, plastic elbows) [PLACEHOLDER - confirm vs cost sheet]",
+        "typicalMileage": "60,000-100,000 miles",
+        "repairCost": "£400-£1,200 (thermostat housing, water pump, plastic elbows) [PLACEHOLDER - confirm vs cost sheet]",
         "replacementCost": "N/A - repair only (if caught before overheating)",
         "urgency": {
           "icon": "🔴",
@@ -288,8 +288,8 @@
         "id": 2,
         "title": "VVT (Variable Valve Timing) Solenoid / Phaser Wear",
         "symptoms": "Rattling noise on cold start, rough idle, floating engine speeds, loss of low‑end power, engine warning light.",
-        "typicalMileage": "80,000–150,000 miles",
-        "repairCost": "£500–£1,500 (VVT solenoid replacement or phaser rebuild) [PLACEHOLDER - confirm vs cost sheet]",
+        "typicalMileage": "80,000-150,000 miles",
+        "repairCost": "£500-£1,500 (VVT solenoid replacement or phaser rebuild) [PLACEHOLDER - confirm vs cost sheet]",
         "replacementCost": "N/A - repair only",
         "urgency": {
           "icon": "🟡",
@@ -306,9 +306,9 @@
         "id": 3,
         "title": "Timing Chain Tensioner Wear",
         "symptoms": "Rattling or grinding noise from the front of the engine on cold start or during hard acceleration, rough idle.",
-        "typicalMileage": "80,000–150,000 miles",
-        "repairCost": "£1,000–£2,500 (tensioners, guides and chain replacement) [PLACEHOLDER - confirm vs cost sheet]",
-        "replacementCost": "£3,000–£7,500 (full engine replacement if chain jumps)",
+        "typicalMileage": "80,000-150,000 miles",
+        "repairCost": "£1,000-£2,500 (tensioners, guides and chain replacement) [PLACEHOLDER - confirm vs cost sheet]",
+        "replacementCost": "£3,000-£7,500 (full engine replacement if chain jumps)",
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
@@ -344,25 +344,25 @@
         {
           "problem": "Cooling system failure (thermostat, pump, elbows)",
           "repairable": "✅ Yes",
-          "typicalCost": "£400–£1,200",
+          "typicalCost": "£400-£1,200",
           "whenItMakesSense": "Routine maintenance - replace all plastic fittings at once"
         },
         {
           "problem": "VVT solenoid / phaser wear",
           "repairable": "✅ Yes",
-          "typicalCost": "£500–£1,500",
+          "typicalCost": "£500-£1,500",
           "whenItMakesSense": "Straightforward - replace solenoids or rebuild phasers"
         },
         {
           "problem": "Timing chain tensioner wear",
           "repairable": "✅ Yes",
-          "typicalCost": "£1,000–£2,500",
+          "typicalCost": "£1,000-£2,500",
           "whenItMakesSense": "Catch it early - before chain jumps"
         },
         {
           "problem": "PCV valve clogging",
           "repairable": "✅ Yes",
-          "typicalCost": "£200–£500",
+          "typicalCost": "£200-£500",
           "whenItMakesSense": "Routine maintenance - clean or replace"
         },
         {
@@ -418,10 +418,10 @@
     "rows": [
       {
         "engineCode": "AJ34 (4.2 V8)",
-        "years": "2002–2008",
+        "years": "2002-2008",
         "power": "300 hp (224 kW) @ 6,000 rpm; 310 lb‑ft (420 Nm) @ 4,100 rpm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£3,000–£5,500 [PLACEHOLDER]"
+        "avgReconCost": "£3,000-£5,500 [PLACEHOLDER]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -463,7 +463,7 @@
       },
       {
         "label": "Average Enquiry Mileage",
-        "value": "70,000–90,000 miles【PATTERN DATA】"
+        "value": "70,000-90,000 miles【PATTERN DATA】"
       },
       {
         "label": "Average Replacement Cost",
@@ -488,7 +488,7 @@
       {
         "id": 1,
         "question": "How much does a Jaguar S‑Type 4.2 V8 engine replacement cost in the UK?",
-        "answer": "A reconditioned AJ34 V8 typically costs £3,000–£5,500 supply only, with used units from £1,500–£2,800. Fitting adds £1,000–£1,600. Engine Finders offers verified, bench‑tested units with a 12‑month warranty. Use our calculator for a figure specific to your S‑Type."
+        "answer": "A reconditioned AJ34 V8 typically costs £3,000-£5,500 supply only, with used units from £1,500-£2,800. Fitting adds £1,000-£1,600. Engine Finders offers verified, bench‑tested units with a 12‑month warranty. Use our calculator for a figure specific to your S‑Type."
       },
       {
         "id": 2,
@@ -503,7 +503,7 @@
       {
         "id": 4,
         "question": "Is it worth replacing an S‑Type 4.2 V8 engine, or should I scrap the car?",
-        "answer": "Depends on vehicle value. An S‑Type 4.2 V8 is a £2,000–£8,000 vehicle - a £3,500–£4,500 recon is 44–225% of the car's value. For lower‑value examples (sub‑£4,000), replacement may exceed our 60% Jaguar scrap threshold. A well‑maintained, low‑mileage example justifies replacement; a tired, high‑mileage one may not."
+        "answer": "Depends on vehicle value. An S‑Type 4.2 V8 is a £2,000-£8,000 vehicle - a £3,500-£4,500 recon is 44-225% of the car's value. For lower‑value examples (sub‑£4,000), replacement may exceed our 60% Jaguar scrap threshold. A well‑maintained, low‑mileage example justifies replacement; a tired, high‑mileage one may not."
       },
       {
         "id": 5,
@@ -513,7 +513,7 @@
       {
         "id": 6,
         "question": "Can I prevent the common failures on an S‑Type 4.2 V8?",
-        "answer": "Yes - refresh the cooling system preventatively (thermostat housing, water pump, all plastic elbows). Use 5W‑30 oil and change it every 5,000–7,500 miles. Listen for cold‑start rattle - if present, have the VVT solenoids and timing chain tensioners inspected. At the first sign of coolant loss, overheating or rattle, book an inspection immediately."
+        "answer": "Yes - refresh the cooling system preventatively (thermostat housing, water pump, all plastic elbows). Use 5W‑30 oil and change it every 5,000-7,500 miles. Listen for cold‑start rattle - if present, have the VVT solenoids and timing chain tensioners inspected. At the first sign of coolant loss, overheating or rattle, book an inspection immediately."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty - always confirm terms with your chosen supplier."

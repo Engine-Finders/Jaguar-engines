@@ -16,8 +16,8 @@ const ICON_CIRCLE = "h-14 w-14 md:h-16 md:w-16";
 function cleanText(value = "") {
   return String(value || "")
     .replaceAll("Â£", "£")
-    .replaceAll("â€“", "–")
-    .replaceAll("â€”", "—")
+    .replaceAll("â€“", "-")
+    .replaceAll("â€”", "-")
     .trim();
 }
 
@@ -132,7 +132,7 @@ function ExampleVerdict({ data, isDark }) {
       }`}
     >
       <div className="grid gap-4 p-4 md:grid-cols-[minmax(0,1fr)_minmax(240px,320px)] md:items-center md:gap-5 md:p-5 xl:grid-cols-[max-content_minmax(200px,260px)_minmax(0,1fr)] xl:gap-3">
-        {/* Left — only as wide as content */}
+        {/* Left - only as wide as content */}
         <div className="xl:max-w-[240px]">
           <p
             className={`text-[0.64rem] font-bold uppercase tracking-[0.12em] ${
@@ -175,7 +175,7 @@ function ExampleVerdict({ data, isDark }) {
           </ul>
         </div>
 
-        {/* Center image — side breathing room from left + right columns */}
+        {/* Center image - side breathing room from left + right columns */}
         <div className="relative mx-auto h-[210px] w-full md:mx-0 md:h-[240px] md:px-3.5 lg:h-[260px]">
           <Image
             src={data.photo || carImageFor(data.model)}
@@ -186,7 +186,7 @@ function ExampleVerdict({ data, isDark }) {
           />
         </div>
 
-        {/* Right — takes remaining width */}
+        {/* Right - takes remaining width */}
         <div className="grid grid-cols-1 gap-3.5 sm:grid-cols-2 sm:gap-x-4 sm:gap-y-4 md:col-span-2 md:gap-x-5 md:gap-y-5 xl:col-span-1">
           {(data.details || []).map((item) => (
             <div key={item.title} className="flex items-start gap-3">
@@ -251,7 +251,7 @@ export default function HomeSec11({ data }) {
 
   return (
     <section className={`overflow-x-hidden ${sectionBg}`}>
-      {/* Header — same pattern as other home sections */}
+      {/* Header - same pattern as other home sections */}
       <div className={`relative overflow-hidden ${sectionBg}`}>
         <div className="absolute inset-y-0 right-0 w-[62%] md:w-[48%]">
           <Image

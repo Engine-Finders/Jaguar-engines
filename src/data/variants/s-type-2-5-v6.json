@@ -77,7 +77,7 @@
               "name": "How much does a Jaguar S-Type 2.5 V6 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned S-Type 2.5 V6 (AJ25) engine typically costs £3,200–£6,500 supply only. Fitting adds £1,000–£1,800 at independent specialist rates. Engine Finders reports savings of up to £1,800 versus main dealer pricing. Use our calculator for a figure specific to your car."
+                "text": "A reconditioned S-Type 2.5 V6 (AJ25) engine typically costs £3,200-£6,500 supply only. Fitting adds £1,000-£1,800 at independent specialist rates. Engine Finders reports savings of up to £1,800 versus main dealer pricing. Use our calculator for a figure specific to your car."
               }
             },
             {
@@ -101,7 +101,7 @@
               "name": "Is it worth replacing a Jaguar S-Type 2.5 V6 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on vehicle value. Against a well-kept S-Type (values £3,000–£10,000+ depending on condition and mileage), a £3,500–£4,500 reconditioned engine is 35–70% of the vehicle's value - often worth it for a solid example. The Jaguar scrap threshold of 60% means evaluating the whole vehicle and its condition before committing."
+                "text": "Depends on vehicle value. Against a well-kept S-Type (values £3,000-£10,000+ depending on condition and mileage), a £3,500-£4,500 reconditioned engine is 35-70% of the vehicle's value - often worth it for a solid example. The Jaguar scrap threshold of 60% means evaluating the whole vehicle and its condition before committing."
               }
             },
             {
@@ -117,7 +117,7 @@
               "name": "Can I repair the AJ25 timing chain, or does it require engine replacement?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes - if caught early. A preventative timing chain, guide and tensioner replacement costs £1,200–£3,000. Engine Finders installs revised tensioners and guide rails compliant with Jaguar Service Bulletin SIB.037.18. However, if the chain snaps, a full engine replacement (£3,200–£6,500) is usually required. At the first sign of cold-start rattle, book an inspection immediately."
+                "text": "Yes - if caught early. A preventative timing chain, guide and tensioner replacement costs £1,200-£3,000. Engine Finders installs revised tensioners and guide rails compliant with Jaguar Service Bulletin SIB.037.18. However, if the chain snaps, a full engine replacement (£3,200-£6,500) is usually required. At the first sign of cold-start rattle, book an inspection immediately."
               }
             }
           ]
@@ -178,7 +178,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar S‑Type 2.5 V6 • 2001–2007 • AJ25 2.5 V6",
+    "tagPill": "Jaguar S‑Type 2.5 V6 • 2001-2007 • AJ25 2.5 V6",
     "h1": "Jaguar S‑Type 2.5 V6 Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Jaguar S‑Type 2.5 V6 specialists. Compare reconditioned, rebuilt and used AJ25 V6 engines - supply & fit available nationwide for Jaguar's classic saloon.",
     "trustBadges": [
@@ -187,7 +187,7 @@
       "🚚 Nationwide Delivery",
       "👥 15+ Specialists"
     ],
-    "priceAnchor": "Jaguar S‑Type 2.5 V6 Engines - from £1,500 to £6,500 · Engine code: AJ25 (2001–2007)",
+    "priceAnchor": "Jaguar S‑Type 2.5 V6 Engines - from £1,500 to £6,500 · Engine code: AJ25 (2001-2007)",
     "registrationInput": {
       "flag": "🇬🇧 GB",
       "placeholder": "Enter your reg - e.g. AB12 CDE",
@@ -211,10 +211,10 @@
     "rows": [
       {
         "generation": "S‑Type X200 (2.5 V6)",
-        "years": "2001–2007",
+        "years": "2001-2007",
         "engineCode": "AJ25 (2.5L V6, 200 bhp)",
         "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£3,200–£6,500 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£3,200-£6,500 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "Ford‑derived Duratec V6 - smooth and refined but timing chain tensioners, VCT solenoids and cooling system are the key watchpoints"
       }
     ],
@@ -233,23 +233,23 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£1,500–£2,800",
-        "fittedIndie": "£2,300–£3,800",
-        "warranty": "1–6 months",
+        "supplyOnly": "£1,500-£2,800",
+        "fittedIndie": "£2,300-£3,800",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; vehicle under £4,000"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£3,200–£5,500",
-        "fittedIndie": "£4,200–£6,800",
-        "warranty": "12–24 months",
+        "supplyOnly": "£3,200-£5,500",
+        "fittedIndie": "£4,200-£6,800",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£4,500–£6,500",
-        "fittedIndie": "£5,500–£8,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£4,500-£6,500",
+        "fittedIndie": "£5,500-£8,000",
+        "warranty": "12-24 months",
         "bestFor": "Long‑term ownership; 3+ year horizon"
       },
       {
@@ -260,8 +260,8 @@
         "bestFor": "AJ25 engines are no longer produced new; reconditioned units are the standard"
       }
     ],
-    "figuresNote": "Figures above reflect the S‑Type 2.5 V6 AJ25 era (2001–2007). Engine Finders reports savings of up to £1,800 versus main dealer pricing on S‑Type engine replacements. Customers have reported dealer quotes of around £15,000–£30,000 for engine replacement, while reconditioning is often in the £8,000–£10,000 range.",
-    "labourEstimate": "Fitting an S‑Type 2.5 V6 engine typically takes 10–14 hours at £75–£110/hr (independent) or £130–£180/hr (London/SE dealer). The V6 layout and longitudinal mounting make the engine reasonably accessible, but timing chain work requires significant disassembly. [PLACEHOLDER - confirm vs cost sheet]",
+    "figuresNote": "Figures above reflect the S‑Type 2.5 V6 AJ25 era (2001-2007). Engine Finders reports savings of up to £1,800 versus main dealer pricing on S‑Type engine replacements. Customers have reported dealer quotes of around £15,000-£30,000 for engine replacement, while reconditioning is often in the £8,000-£10,000 range.",
+    "labourEstimate": "Fitting an S‑Type 2.5 V6 engine typically takes 10-14 hours at £75-£110/hr (independent) or £130-£180/hr (London/SE dealer). The V6 layout and longitudinal mounting make the engine reasonably accessible, but timing chain work requires significant disassembly. [PLACEHOLDER - confirm vs cost sheet]",
     "cta": {
       "label": "→ Compare S‑Type 2.5 V6 engine prices from UK specialists",
       "href": "/quote"
@@ -273,9 +273,9 @@
         "id": 1,
         "title": "Timing Chain Tensioner Failure (AJ25)",
         "symptoms": "Rattling noise on cold start, metallic clattering from the front of the engine, engine warning light, loss of power, potential engine failure if chain skips or snaps.",
-        "typicalMileage": "80,000–120,000 miles",
-        "repairCost": "£1,200–£3,000 (timing chain, guides and tensioners replacement)【PLACEHOLDER】",
-        "replacementCost": "£3,200–£6,500 (if chain snaps and valves meet pistons)【PLACEHOLDER】",
+        "typicalMileage": "80,000-120,000 miles",
+        "repairCost": "£1,200-£3,000 (timing chain, guides and tensioners replacement)【PLACEHOLDER】",
+        "replacementCost": "£3,200-£6,500 (if chain snaps and valves meet pistons)【PLACEHOLDER】",
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
@@ -291,8 +291,8 @@
         "id": 2,
         "title": "Variable Camshaft Timing (VCT) Solenoid Failure (AJ25)",
         "symptoms": "Rough idle, hesitation on acceleration, loss of power at low RPM, poor fuel economy, check engine light.",
-        "typicalMileage": "60,000–100,000 miles",
-        "repairCost": "£300–£800 (VCT solenoid replacement)【PLACEHOLDER】",
+        "typicalMileage": "60,000-100,000 miles",
+        "repairCost": "£300-£800 (VCT solenoid replacement)【PLACEHOLDER】",
         "replacementCost": "N/A - repair only",
         "urgency": {
           "icon": "🟡",
@@ -309,9 +309,9 @@
         "id": 3,
         "title": "Cooling System & Coolant Leaks (AJ25)",
         "symptoms": "Coolant loss with no visible external leak, intermittent low coolant warning, temperature gauge fluctuations, sweet smell from engine bay, overheating.",
-        "typicalMileage": "60,000–100,000 miles",
-        "repairCost": "£300–£900 (coolant hose, header tank, thermostat or water pump replacement)【PLACEHOLDER】",
-        "replacementCost": "£3,200–£6,500 (if overheating leads to head gasket damage)【PLACEHOLDER】",
+        "typicalMileage": "60,000-100,000 miles",
+        "repairCost": "£300-£900 (coolant hose, header tank, thermostat or water pump replacement)【PLACEHOLDER】",
+        "replacementCost": "£3,200-£6,500 (if overheating leads to head gasket damage)【PLACEHOLDER】",
         "urgency": {
           "icon": "🟠",
           "label": "Check",
@@ -327,8 +327,8 @@
         "id": 4,
         "title": "Air Leaks & Vacuum System Issues (AJ25)",
         "symptoms": "Erratic idle, rough running, stalling, poor fuel economy, engine warning light.",
-        "typicalMileage": "60,000–100,000 miles",
-        "repairCost": "£200–£600 (vacuum leak diagnosis and repair)【PLACEHOLDER】",
+        "typicalMileage": "60,000-100,000 miles",
+        "repairCost": "£200-£600 (vacuum leak diagnosis and repair)【PLACEHOLDER】",
         "replacementCost": "N/A - repair only",
         "urgency": {
           "icon": "🟡",
@@ -345,9 +345,9 @@
         "id": 5,
         "title": "Oil Consumption & Piston Ring Issues (AJ25)",
         "symptoms": "Low oil warning light, needing to top up oil frequently, blue smoke from exhaust, ticking noise from engine.",
-        "typicalMileage": "100,000–150,000 miles",
-        "repairCost": "£150–£300 (regular oil top‑ups and monitoring) - £1,000–£3,000+ (piston ring replacement)【PLACEHOLDER】",
-        "replacementCost": "£3,200–£6,500 (if oil starvation leads to engine damage)【PLACEHOLDER】",
+        "typicalMileage": "100,000-150,000 miles",
+        "repairCost": "£150-£300 (regular oil top‑ups and monitoring) - £1,000-£3,000+ (piston ring replacement)【PLACEHOLDER】",
+        "replacementCost": "£3,200-£6,500 (if oil starvation leads to engine damage)【PLACEHOLDER】",
         "urgency": {
           "icon": "🟡",
           "label": "Monitor",
@@ -383,31 +383,31 @@
         {
           "problem": "Timing chain tensioner wear (preventative)",
           "repairable": "✅ Yes",
-          "typicalCost": "£1,200–£3,000",
+          "typicalCost": "£1,200-£3,000",
           "whenItMakesSense": "Catch it early - far cheaper than engine replacement"
         },
         {
           "problem": "VCT solenoid failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£300–£800",
+          "typicalCost": "£300-£800",
           "whenItMakesSense": "Simple replacement; restores performance"
         },
         {
           "problem": "Coolant leaks (hoses, header tank, thermostat)",
           "repairable": "✅ Yes",
-          "typicalCost": "£300–£900",
+          "typicalCost": "£300-£900",
           "whenItMakesSense": "Straightforward replacement; catch it before overheating"
         },
         {
           "problem": "Air leaks / vacuum system issues",
           "repairable": "✅ Yes",
-          "typicalCost": "£200–£600",
+          "typicalCost": "£200-£600",
           "whenItMakesSense": "Diagnosis and repair is manageable"
         },
         {
           "problem": "Oil consumption / piston ring wear",
           "repairable": "⚠️ Sometimes",
-          "typicalCost": "£1,000–£3,000+",
+          "typicalCost": "£1,000-£3,000+",
           "whenItMakesSense": "Viable if caught early; often requires full rebuild"
         },
         {
@@ -466,10 +466,10 @@
     "rows": [
       {
         "engineCode": "AJ25 (2.5 V6)",
-        "years": "2001–2007",
+        "years": "2001-2007",
         "power": "200 bhp (147 kW) @ 6,800 rpm · 245 Nm @ 3,000 rpm",
         "enquiries": "- (pattern data; classic engine)【PATTERN DATA】",
-        "avgReconCost": "£3,200–£6,500【PLACEHOLDER - confirm vs cost sheet】"
+        "avgReconCost": "£3,200-£6,500【PLACEHOLDER - confirm vs cost sheet】"
       }
     ],
     "matchNote": "This table's rows exactly match Section 1B's Era Map - the same engine code, years, and generation coverage.",
@@ -527,7 +527,7 @@
       },
       {
         "label": "Average Enquiry Mileage",
-        "value": "70,000–110,000 miles【PATTERN DATA】"
+        "value": "70,000-110,000 miles【PATTERN DATA】"
       },
       {
         "label": "Average Replacement Cost",
@@ -552,7 +552,7 @@
       {
         "id": 1,
         "question": "How much does a Jaguar S‑Type 2.5 V6 engine replacement cost in the UK?",
-        "answer": "A reconditioned S‑Type 2.5 V6 (AJ25) engine typically costs £3,200–£6,500 supply only. Fitting adds £1,000–£1,800 at independent specialist rates. Engine Finders reports savings of up to £1,800 versus main dealer pricing. Customers have reported dealer quotes of around £15,000–£30,000 for engine replacement. Use our calculator for a figure specific to your car."
+        "answer": "A reconditioned S‑Type 2.5 V6 (AJ25) engine typically costs £3,200-£6,500 supply only. Fitting adds £1,000-£1,800 at independent specialist rates. Engine Finders reports savings of up to £1,800 versus main dealer pricing. Customers have reported dealer quotes of around £15,000-£30,000 for engine replacement. Use our calculator for a figure specific to your car."
       },
       {
         "id": 2,
@@ -567,7 +567,7 @@
       {
         "id": 4,
         "question": "Is it worth replacing a Jaguar S‑Type 2.5 V6 engine, or should I scrap the car?",
-        "answer": "Depends on vehicle value. Against a well‑kept S‑Type (values £3,000–£10,000+ depending on condition and mileage), a £3,500–£4,500 reconditioned engine is 35–70% of the vehicle's value - often worth it for a solid example. The Jaguar scrap threshold of 60% means evaluating the whole vehicle and its condition before committing. Given the S‑Type's status as a classic, engine replacement is often worth it for a good example."
+        "answer": "Depends on vehicle value. Against a well‑kept S‑Type (values £3,000-£10,000+ depending on condition and mileage), a £3,500-£4,500 reconditioned engine is 35-70% of the vehicle's value - often worth it for a solid example. The Jaguar scrap threshold of 60% means evaluating the whole vehicle and its condition before committing. Given the S‑Type's status as a classic, engine replacement is often worth it for a good example."
       },
       {
         "id": 5,
@@ -577,7 +577,7 @@
       {
         "id": 6,
         "question": "Can I repair the AJ25 timing chain, or does it require engine replacement?",
-        "answer": "Yes - if caught early. A preventative timing chain, guide and tensioner replacement costs £1,200–£3,000. Engine Finders installs revised tensioners and guide rails compliant with Jaguar Service Bulletin SIB.037.18. However, if the chain snaps, a full engine replacement (£3,200–£6,500) is usually required. At the first sign of cold‑start rattle, book an inspection immediately."
+        "answer": "Yes - if caught early. A preventative timing chain, guide and tensioner replacement costs £1,200-£3,000. Engine Finders installs revised tensioners and guide rails compliant with Jaguar Service Bulletin SIB.037.18. However, if the chain snaps, a full engine replacement (£3,200-£6,500) is usually required. At the first sign of cold‑start rattle, book an inspection immediately."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty - always confirm terms with your chosen supplier."

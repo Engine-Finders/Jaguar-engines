@@ -52,13 +52,13 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "F-Type X152 (2014–2016) 306PS 380 bhp",
+              "name": "F-Type X152 (2014-2016) 306PS 380 bhp",
               "url": "https://jaguarengines.uk/f-type/x152/"
             },
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "F-Type X152 (2016–2020) 306PS 400 bhp",
+              "name": "F-Type X152 (2016-2020) 306PS 400 bhp",
               "url": "https://jaguarengines.uk/f-type/x152/"
             }
           ]
@@ -83,7 +83,7 @@
               "name": "How much does a Jaguar F-Type 3.0 V6 S engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned F-Type V6 S (306PS AJ126) engine typically costs £5,000–£11,000 supply only depending on the power output and year. One specialist offers the engine for £4,295 supply only with fitting at £1,450. JLR have quoted £17,000 for a new engine, with a 50% goodwill contribution reducing the bill to £8,500. Reconditioning or rebuilding is often in the £8,000–£10,000 range. Use our calculator for a figure specific to your car."
+                "text": "A reconditioned F-Type V6 S (306PS AJ126) engine typically costs £5,000-£11,000 supply only depending on the power output and year. One specialist offers the engine for £4,295 supply only with fitting at £1,450. JLR have quoted £17,000 for a new engine, with a 50% goodwill contribution reducing the bill to £8,500. Reconditioning or rebuilding is often in the £8,000-£10,000 range. Use our calculator for a figure specific to your car."
               }
             },
             {
@@ -107,7 +107,7 @@
               "name": "Is it worth replacing a Jaguar F-Type 3.0 V6 S engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Apply the 60% Jaguar scrap threshold: if your F-Type is worth £20,000–£30,000 and a recon engine is £8,000 (27–40%), it's worth it. If the vehicle is a tired £15,000 example, the same engine exceeds 50% - get a scrap valuation first. These are performance vehicles that often justify replacement spend if the rest of the car is in good condition."
+                "text": "Apply the 60% Jaguar scrap threshold: if your F-Type is worth £20,000-£30,000 and a recon engine is £8,000 (27-40%), it's worth it. If the vehicle is a tired £15,000 example, the same engine exceeds 50% - get a scrap valuation first. These are performance vehicles that often justify replacement spend if the rest of the car is in good condition."
               }
             },
             {
@@ -115,7 +115,7 @@
               "name": "How do I find my Jaguar F-Type 3.0 V6 S engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The engine code is listed on the VIN plate and vehicle documentation. The F-Type V6 S uses the 306PS (also known as the AJ126) - a 3.0-litre supercharged V6. Early cars (2014–2016) produce 380 bhp, while later cars (2016–2020) produce 400 bhp. Tell us your registration date and we'll confirm it for free."
+                "text": "The engine code is listed on the VIN plate and vehicle documentation. The F-Type V6 S uses the 306PS (also known as the AJ126) - a 3.0-litre supercharged V6. Early cars (2014-2016) produce 380 bhp, while later cars (2016-2020) produce 400 bhp. Tell us your registration date and we'll confirm it for free."
               }
             },
             {
@@ -184,7 +184,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar F-Type 3.0 V6 S • 2014–2020 • 1 Engine Code (2 Power Levels)",
+    "tagPill": "Jaguar F-Type 3.0 V6 S • 2014-2020 • 1 Engine Code (2 Power Levels)",
     "h1": "Jaguar F-Type 3.0 V6 S Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "The F-Type V6 S is the definitive supercharged Jaguar sports car engine - a 3.0-litre AJ126 producing 380 or 400 bhp. Get quotes from trusted UK Jaguar specialists who understand this complex V6, supply & fit available nationwide.",
     "trustBadges": [
@@ -217,18 +217,18 @@
     "rows": [
       {
         "generation": "F-Type X152 (early)",
-        "years": "2014–2016",
+        "years": "2014-2016",
         "engineCode": "306PS (AJ126)",
         "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£5,000–£10,000 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£5,000-£10,000 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "380 bhp - timing chain, cooling system and supercharger coupler concerns"
       },
       {
         "generation": "F-Type X152 (late)",
-        "years": "2016–2020",
+        "years": "2016-2020",
         "engineCode": "306PS (AJ126)",
         "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£5,500–£11,000 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£5,500-£11,000 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "400 bhp - revised tune but same fundamental engine characteristics"
       }
     ],
@@ -247,35 +247,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£3,000–£5,500",
-        "fittedIndie": "£4,500–£7,500",
-        "warranty": "1–6 months",
+        "supplyOnly": "£3,000-£5,500",
+        "fittedIndie": "£4,500-£7,500",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; short-term ownership"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£5,000–£11,000",
-        "fittedIndie": "£6,500–£13,500",
-        "warranty": "12–24 months",
+        "supplyOnly": "£5,000-£11,000",
+        "fittedIndie": "£6,500-£13,500",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£7,000–£12,000",
-        "fittedIndie": "£8,500–£14,500",
-        "warranty": "12–24 months",
+        "supplyOnly": "£7,000-£12,000",
+        "fittedIndie": "£8,500-£14,500",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£12,000–£17,000",
-        "fittedIndie": "£14,000–£19,000",
-        "warranty": "24–36 months",
+        "supplyOnly": "£12,000-£17,000",
+        "fittedIndie": "£14,000-£19,000",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs, warranty claims"
       }
     ],
-    "figuresNote": "Figures above reflect current market rates. One specialist offers a Jaguar F-Type S 3.0 V6 engine for £4,295 supply only, with fitting at £1,450. JLR have quoted £17,000 for a new engine, with a 50% goodwill contribution reducing the bill to £8,500 - but that's still a significant figure for a 5-year-old car. Reconditioning or rebuilding is often in the £8,000–£10,000 range.",
-    "labourEstimate": "Fitting an F-Type V6 S engine typically takes 14–18 hours at £65–£95/hr (independent). The tightly packed engine bay and complex supercharger system add significant labour time.",
+    "figuresNote": "Figures above reflect current market rates. One specialist offers a Jaguar F-Type S 3.0 V6 engine for £4,295 supply only, with fitting at £1,450. JLR have quoted £17,000 for a new engine, with a 50% goodwill contribution reducing the bill to £8,500 - but that's still a significant figure for a 5-year-old car. Reconditioning or rebuilding is often in the £8,000-£10,000 range.",
+    "labourEstimate": "Fitting an F-Type V6 S engine typically takes 14-18 hours at £65-£95/hr (independent). The tightly packed engine bay and complex supercharger system add significant labour time.",
     "cta": {
       "label": "→ Compare F-Type 3.0 V6 S engine prices from UK specialists",
       "href": "/quote"
@@ -287,8 +287,8 @@
         "id": 1,
         "title": "Cooling System Failures - Plastic V-Pipe & Water Pump",
         "symptoms": "Coolant loss, overheating, white smoke from engine bay, visible coolant leak, intermittent coolant warnings. The plastic V-pipe under the supercharger is a well-known weak spot that often fails catastrophically.",
-        "typicalMileage": "40,000–80,000 miles - failure can occur suddenly.",
-        "repairCost": "£300–£800 (V-pipe replacement); £200–£500 (water pump replacement).",
+        "typicalMileage": "40,000-80,000 miles - failure can occur suddenly.",
+        "repairCost": "£300-£800 (V-pipe replacement); £200-£500 (water pump replacement).",
         "replacementCost": "N/A - repair only; ignoring coolant warnings can lead to catastrophic engine failure.",
         "urgency": {
           "icon": "🔴",
@@ -305,8 +305,8 @@
         "id": 2,
         "title": "Supercharger Coupler Wear",
         "symptoms": "A loud rattle from the top of the engine on cold start - like \"marbles in a tin can\". The rattle is irregular and non-rhythmical, fading in and out. The noise often reduces as the engine warms up.",
-        "typicalMileage": "60,000–100,000 miles.",
-        "repairCost": "£400–£800 (supercharger coupler replacement).",
+        "typicalMileage": "60,000-100,000 miles.",
+        "repairCost": "£400-£800 (supercharger coupler replacement).",
         "replacementCost": "N/A - repair only; if left for many thousands of miles, supercharger performance will degrade.",
         "urgency": {
           "icon": "🟡",
@@ -323,8 +323,8 @@
         "id": 3,
         "title": "Timing Chain Tensioner Wear",
         "symptoms": "Rattling timing chains - more regular and higher pitched than a coupler rattle, worse on cold start. The tensioners wear a hole in the guides. Can eventually lead to a stretched or skipped chain, causing pistons to hit valves.",
-        "typicalMileage": "100,000+ miles - normally they go near 100k miles, though some owners have reported issues at 47,000–51,000 miles.",
-        "repairCost": "£1,500–£3,500 (chain, tensioner, and guide replacement).",
+        "typicalMileage": "100,000+ miles - normally they go near 100k miles, though some owners have reported issues at 47,000-51,000 miles.",
+        "repairCost": "£1,500-£3,500 (chain, tensioner, and guide replacement).",
         "replacementCost": "N/A - repair only; if the chain snaps, it's an interference engine - catastrophic failure requiring full engine replacement.",
         "urgency": {
           "icon": "🔴",
@@ -361,19 +361,19 @@
         {
           "problem": "Cooling system (V-pipe, water pump)",
           "repairable": "✅ Yes",
-          "typicalCost": "£300–£800",
+          "typicalCost": "£300-£800",
           "whenItMakesSense": "Essential repair - catch early to avoid overheating"
         },
         {
           "problem": "Supercharger coupler wear",
           "repairable": "✅ Yes",
-          "typicalCost": "£400–£800",
+          "typicalCost": "£400-£800",
           "whenItMakesSense": "Cost-effective repair - prevents performance degradation"
         },
         {
           "problem": "Timing chain tensioner wear",
           "repairable": "✅ Yes (if caught early)",
-          "typicalCost": "£1,500–£3,500",
+          "typicalCost": "£1,500-£3,500",
           "whenItMakesSense": "Preventative - catches fault before catastrophic failure"
         },
         {
@@ -385,7 +385,7 @@
         {
           "problem": "Cracked cylinder head (overheating)",
           "repairable": "⚠️ Sometimes",
-          "typicalCost": "£2,000–£4,000",
+          "typicalCost": "£2,000-£4,000",
           "whenItMakesSense": "Viable if the rest of the vehicle is solid; often cheaper to fit a good used engine"
         }
       ]
@@ -405,7 +405,7 @@
         "* Overheating or coolant loss - can cause warped cylinder heads or full engine failure"
       ]
     },
-    "closingVerdict": "The AJ126 is a great engine when properly maintained, but its cooling system requires attention and it's sensitive to oil quality. The plastic cooling components are well-known weak points. Coolant warnings should never be ignored. An £8,000–£10,000 reconditioned engine on an F-Type valued at £20,000–£30,000 is 27–50% of the car's value - worth it for a well-maintained example. On a sub-£15,000 example, think carefully. The 60% Jaguar scrap threshold applies.",
+    "closingVerdict": "The AJ126 is a great engine when properly maintained, but its cooling system requires attention and it's sensitive to oil quality. The plastic cooling components are well-known weak points. Coolant warnings should never be ignored. An £8,000-£10,000 reconditioned engine on an F-Type valued at £20,000-£30,000 is 27-50% of the car's value - worth it for a well-maintained example. On a sub-£15,000 example, think carefully. The 60% Jaguar scrap threshold applies.",
     "cta": {
       "label": "→ Compare F-Type V6 S engine prices before you buy",
       "href": "/quote"
@@ -435,17 +435,17 @@
     "rows": [
       {
         "engineCode": "306PS (AJ126)",
-        "years": "2014–2016",
+        "years": "2014-2016",
         "power": "380 bhp (280 kW)",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£5,000–£10,000 [PLACEHOLDER]"
+        "avgReconCost": "£5,000-£10,000 [PLACEHOLDER]"
       },
       {
         "engineCode": "306PS (AJ126)",
-        "years": "2016–2020",
+        "years": "2016-2020",
         "power": "400 bhp (294 kW)",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£5,500–£11,000 [PLACEHOLDER]"
+        "avgReconCost": "£5,500-£11,000 [PLACEHOLDER]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -512,7 +512,7 @@
       {
         "id": 1,
         "question": "How much does a Jaguar F-Type 3.0 V6 S engine replacement cost in the UK?",
-        "answer": "A reconditioned F-Type V6 S (306PS AJ126) engine typically costs £5,000–£11,000 supply only depending on the power output and year. One specialist offers the engine for £4,295 supply only with fitting at £1,450. JLR have quoted £17,000 for a new engine, with a 50% goodwill contribution reducing the bill to £8,500. Reconditioning or rebuilding is often in the £8,000–£10,000 range. Use our calculator for a figure specific to your car."
+        "answer": "A reconditioned F-Type V6 S (306PS AJ126) engine typically costs £5,000-£11,000 supply only depending on the power output and year. One specialist offers the engine for £4,295 supply only with fitting at £1,450. JLR have quoted £17,000 for a new engine, with a 50% goodwill contribution reducing the bill to £8,500. Reconditioning or rebuilding is often in the £8,000-£10,000 range. Use our calculator for a figure specific to your car."
       },
       {
         "id": 2,
@@ -527,12 +527,12 @@
       {
         "id": 4,
         "question": "Is it worth replacing a Jaguar F-Type 3.0 V6 S engine, or should I scrap the car?",
-        "answer": "Apply the 60% Jaguar scrap threshold: if your F-Type is worth £20,000–£30,000 and a recon engine is £8,000 (27–40%), it's worth it. If the vehicle is a tired £15,000 example, the same engine exceeds 50% - get a scrap valuation first. These are performance vehicles that often justify replacement spend if the rest of the car is in good condition."
+        "answer": "Apply the 60% Jaguar scrap threshold: if your F-Type is worth £20,000-£30,000 and a recon engine is £8,000 (27-40%), it's worth it. If the vehicle is a tired £15,000 example, the same engine exceeds 50% - get a scrap valuation first. These are performance vehicles that often justify replacement spend if the rest of the car is in good condition."
       },
       {
         "id": 5,
         "question": "How do I find my Jaguar F-Type 3.0 V6 S engine code?",
-        "answer": "The engine code is listed on the VIN plate and vehicle documentation. The F-Type V6 S uses the 306PS (also known as the AJ126) - a 3.0-litre supercharged V6. Early cars (2014–2016) produce 380 bhp, while later cars (2016–2020) produce 400 bhp. Tell us your registration date and we'll confirm it for free."
+        "answer": "The engine code is listed on the VIN plate and vehicle documentation. The F-Type V6 S uses the 306PS (also known as the AJ126) - a 3.0-litre supercharged V6. Early cars (2014-2016) produce 380 bhp, while later cars (2016-2020) produce 400 bhp. Tell us your registration date and we'll confirm it for free."
       },
       {
         "id": 6,

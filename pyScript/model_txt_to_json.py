@@ -43,7 +43,7 @@ META_START_RE = re.compile(
 # Fallback when meta starts with no model header (XE / F-Type / XK style):
 #   PART A - META TITLE
 #   META TITLE
-#   META TITLE (50–60 characters)
+#   META TITLE (50-60 characters)
 META_FALLBACK_START_RE = re.compile(
     r"^(?:PART\s+A\s*[-\-]\s*)?META\s+TITLE(?:\s*\([^)]*\))?\s*$",
     re.MULTILINE | re.IGNORECASE,

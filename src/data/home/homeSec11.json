@@ -1,5 +1,5 @@
 {
-  "subHeadline": "Not a navigation grid — a verdict on every generation, drawn from real enquiry volume and replacement economics. Every model page answers six questions: which generation is best, which engines to avoid, which engines are most reliable, what replacement actually costs, what fails most often, and whether ownership still makes financial sense.",
+  "subHeadline": "Not a navigation grid - a verdict on every generation, drawn from real enquiry volume and replacement economics. Every model page answers six questions: which generation is best, which engines to avoid, which engines are most reliable, what replacement actually costs, what fails most often, and whether ownership still makes financial sense.",
   "headerImage": {
     "src": "/home-image/sec2-bg.webp",
     "alt": "Jaguar models"
@@ -71,7 +71,7 @@
           "name": "I-Pace",
           "generations": "1 Generation (X590)",
           "href": "/i-pace-drive-unit-guide",
-          "verdict": { "label": "EV — Drive Unit Info", "icon": "ev" }
+          "verdict": { "label": "EV - Drive Unit Info", "icon": "ev" }
         },
         {
           "id": "04",
@@ -122,27 +122,27 @@
       {
         "icon": "warning",
         "title": "Worst engine to buy without history",
-        "text": "Early AJ200D units without documented chain-tensioner inspection — same caveat as Land Rover's Ingenium diesel."
+        "text": "Early AJ200D units without documented chain-tensioner inspection - same caveat as Land Rover's Ingenium diesel."
       },
       {
         "icon": "check",
         "title": "Most reliable engine across the range",
-        "text": "The AJ200P/204PT Ingenium petrol — no meaningful weak point beyond routine water pump replacement."
+        "text": "The AJ200P/204PT Ingenium petrol - no meaningful weak point beyond routine water pump replacement."
       },
       {
         "icon": "safe-buy",
         "title": "Highest risk",
-        "text": "None flagged at the model level — F-Pace is the one Jaguar with a clean Safe verdict across every engine variant in our data."
+        "text": "None flagged at the model level - F-Pace is the one Jaguar with a clean Safe verdict across every engine variant in our data."
       },
       {
         "icon": "best-used",
         "title": "Best used buy",
-        "text": "A 2019+ F-Pace with full service history — the strongest all-round ownership profile of any Jaguar currently on sale."
+        "text": "A 2019+ F-Pace with full service history - the strongest all-round ownership profile of any Jaguar currently on sale."
       },
       {
         "icon": "pound",
         "title": "Replacement cost (supply-only)",
-        "text": "£3,000 – £5,800 typical reconditioned supply-only band for core F-Pace engines."
+        "text": "£3,000 - £5,800 typical reconditioned supply-only band for core F-Pace engines."
       }
     ]
   },

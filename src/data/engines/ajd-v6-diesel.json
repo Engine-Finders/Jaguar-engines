@@ -93,7 +93,7 @@
               "name": "How much does a Jaguar AJD-V6 engine replacement cost?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned AJD-V6 typically costs £4,500–£6,000 supply only [JAG-QUOTE], varying by displacement and specific sub-variant. Fitting adds £650–£1,300 depending on labour rates. Use our calculator for a figure specific to your car."
+                "text": "A reconditioned AJD-V6 typically costs £4,500-£6,000 supply only [JAG-QUOTE], varying by displacement and specific sub-variant. Fitting adds £650-£1,300 depending on labour rates. Use our calculator for a figure specific to your car."
               }
             },
             {
@@ -109,7 +109,7 @@
               "name": "What is the most common Jaguar AJD-V6 failure?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Crankshaft failure and spun bearings are the most devastating faults, with oil pump casting cracks causing sudden pressure loss. Timing belt replacement is critical at 105,000–110,000 miles."
+                "text": "Crankshaft failure and spun bearings are the most devastating faults, with oil pump casting cracks causing sudden pressure loss. Timing belt replacement is critical at 105,000-110,000 miles."
               }
             },
             {
@@ -201,7 +201,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar • AJD-V6 Diesel • Diesel • 2.7L / 3.0L V6 • 2004–2020",
+    "tagPill": "Jaguar • AJD-V6 Diesel • Diesel • 2.7L / 3.0L V6 • 2004-2020",
     "h1": "Jaguar AJD-V6 Diesel Engine - Specs, Reliability & Replacement Cost",
     "subHeadline": "The Jaguar AJD-V6 is a 2.7/3.0 V6 turbodiesel - a strong torque monster, but crankshaft and oil pump failures are well-documented. Backed by 1,680+ real UK enquiries in 2025 [JAG-VERIFIED].",
     "trustStrip": [],
@@ -226,11 +226,11 @@
       },
       {
         "metric": "Power Range",
-        "value": "190–306 PS (140–225 kW)"
+        "value": "190-306 PS (140-225 kW)"
       },
       {
         "metric": "Years Produced",
-        "value": "2004–2020"
+        "value": "2004-2020"
       },
       {
         "metric": "Models Fitted (Jaguar)",
@@ -273,37 +273,37 @@
         "model": "S-Type",
         "generation": "X200",
         "variantBadge": "2.7D V6",
-        "years": "2004–2008"
+        "years": "2004-2008"
       },
       {
         "model": "XF",
         "generation": "X250",
         "variantBadge": "2.7D / 3.0D V6",
-        "years": "2008–2015"
+        "years": "2008-2015"
       },
       {
         "model": "XF",
         "generation": "X260",
         "variantBadge": "3.0D V6",
-        "years": "2015–2020"
+        "years": "2015-2020"
       },
       {
         "model": "XJ",
         "generation": "X350 / X358",
         "variantBadge": "2.7D V6",
-        "years": "2005–2009"
+        "years": "2005-2009"
       },
       {
         "model": "XJ",
         "generation": "X351",
         "variantBadge": "3.0D V6",
-        "years": "2010–2019"
+        "years": "2010-2019"
       },
       {
         "model": "F-Pace",
         "generation": "X761",
         "variantBadge": "3.0D V6",
-        "years": "2016–2020"
+        "years": "2016-2020"
       }
     ],
     "crossBrandNote": "Also powers the Land Rover Discovery 3/4, Range Rover Sport, and Range Rover L405 → [link to Land Rover 276DT/<a href='https://jaguarengines.uk/engine/306dt-306ps'>306DT</a> pages]."
@@ -318,24 +318,24 @@
     "rows": [
       {
         "condition": "Used",
-        "supplyOnly": "£2,800–£4,500",
-        "fittedIndie": "£3,500–£5,500",
-        "warranty": "3–6 months"
+        "supplyOnly": "£2,800-£4,500",
+        "fittedIndie": "£3,500-£5,500",
+        "warranty": "3-6 months"
       },
       {
         "condition": "Reconditioned",
-        "supplyOnly": "£4,500–£6,000",
-        "fittedIndie": "£5,500–£7,500",
+        "supplyOnly": "£4,500-£6,000",
+        "fittedIndie": "£5,500-£7,500",
         "warranty": "12 months unlimited mileage"
       },
       {
         "condition": "Rebuilt",
-        "supplyOnly": "£6,000–£9,500",
-        "fittedIndie": "£7,500–£11,000",
-        "warranty": "12–24 months"
+        "supplyOnly": "£6,000-£9,500",
+        "fittedIndie": "£7,500-£11,000",
+        "warranty": "12-24 months"
       }
     ],
-    "labourEstimate": "Fitting an AJD-V6 typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE].",
+    "labourEstimate": "Fitting an AJD-V6 typically takes 12-16 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [JAG-QUOTE].",
     "sharedCostNote": "Parts cost is identical across Jaguar and Land Rover applications; labour time varies slightly by engine bay access.",
     "cta": {
       "label": "→ Compare Jaguar AJD-V6 engine prices from UK specialists",
@@ -347,7 +347,7 @@
       {
         "id": 1,
         "question": "Cost - “How much does a Jaguar AJD-V6 engine replacement cost?”",
-        "answer": "A reconditioned AJD-V6 typically costs £4,500–£6,000 supply only [JAG-QUOTE], varying by displacement and specific sub-variant. Fitting adds £650–£1,300 depending on labour rates. Use our calculator for a figure specific to your car."
+        "answer": "A reconditioned AJD-V6 typically costs £4,500-£6,000 supply only [JAG-QUOTE], varying by displacement and specific sub-variant. Fitting adds £650-£1,300 depending on labour rates. Use our calculator for a figure specific to your car."
       },
       {
         "id": 2,
@@ -357,7 +357,7 @@
       {
         "id": 3,
         "question": "Common failure - “What is the most common Jaguar AJD-V6 failure?”",
-        "answer": "Crankshaft failure and spun bearings are the most devastating faults, with oil pump casting cracks causing sudden pressure loss. Timing belt replacement is critical at 105,000–110,000 miles."
+        "answer": "Crankshaft failure and spun bearings are the most devastating faults, with oil pump casting cracks causing sudden pressure loss. Timing belt replacement is critical at 105,000-110,000 miles."
       },
       {
         "id": 4,

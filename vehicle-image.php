@@ -98,7 +98,7 @@ function vi_year_range(string $filename): ?array
     $years = array_map('intval', $m[0]);
     $first = min($years);
     $last = max($years);
-    if (preg_match('/((?:19|20)\d{2})\x{2013}(?!\d)/u', $filename)) {   // "2022–" = still in production
+    if (preg_match('/((?:19|20)\d{2})\x{2013}(?!\d)/u', $filename)) {   // "2022-" = still in production
         $last = max($last, (int) date('Y'));
     }
     return [$first, $last];

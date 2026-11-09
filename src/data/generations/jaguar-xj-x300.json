@@ -105,7 +105,7 @@
               "name": "How much does a Jaguar XJ X300 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned X300 engine typically costs £1,500–£10,000 supply only, depending on the engine - the 3.2 and 4.0 AJ16 sixes sit at £1,500–£4,000, while the V12 is £5,000–£10,000. Fitting adds £650–£1,300 depending on specialist labour rates. Classic car specialists are recommended over main dealers for these engines. Use our calculator for a personalised figure."
+                "text": "A reconditioned X300 engine typically costs £1,500-£10,000 supply only, depending on the engine - the 3.2 and 4.0 AJ16 sixes sit at £1,500-£4,000, while the V12 is £5,000-£10,000. Fitting adds £650-£1,300 depending on specialist labour rates. Classic car specialists are recommended over main dealers for these engines. Use our calculator for a personalised figure."
               }
             },
             {
@@ -169,7 +169,7 @@
               "name": "What is the difference between the X300, XJ40, and X308?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The XJ40 (1986–1994) was the previous generation with a squared‑off design and the AJ6 engine. The X300 (1994–1997) is an evolution with revised styling, distributorless ignition, and the AJ16 engine. The X308 (1997–2003) introduced the AJ‑V8 engine and a further styling update. This page covers the X300 only - earlier and later models have different engine options and reliability profiles."
+                "text": "The XJ40 (1986-1994) was the previous generation with a squared‑off design and the AJ6 engine. The X300 (1994-1997) is an evolution with revised styling, distributorless ignition, and the AJ16 engine. The X308 (1997-2003) introduced the AJ‑V8 engine and a further styling update. This page covers the X300 only - earlier and later models have different engine options and reliability profiles."
               }
             },
             {
@@ -232,7 +232,7 @@
     "authorityModelMode": ""
   },
   "hero": {
-    "tagPill": "Jaguar XJ X300 • Saloon • 1994–1997",
+    "tagPill": "Jaguar XJ X300 • Saloon • 1994-1997",
     "h1": "Jaguar XJ X300 Engines - The Complete UK Guide",
     "subHeadline": "Every engine fitted to the X300 - from the 3.2‑litre AJ16 six that delivered refined waftability, to the 4.0‑litre supercharged XJR that redefined the sporting saloon, and the 6.0‑litre V12 that marked the end of an era for Jaguar's legendary twelve‑cylinder engine. Real UK costs, honest reliability data, and the distributorless ignition that made this generation the most reliable classic XJ of them all. Backed by pattern data and Jaguar enthusiast club sources [PATTERN DATA].",
     "trustStrip": [
@@ -287,7 +287,7 @@
         "engineCode": "Petrol",
         "family": "3.2L (3239 cc)",
         "fuel": "216 bhp (161 kW)",
-        "displacement": "1994–1997",
+        "displacement": "1994-1997",
         "power": "XJ6 3.2, Sovereign 3.2",
         "years": "★★★★☆ [PATTERN DATA]",
         "variants": "",
@@ -297,7 +297,7 @@
       },
       {
         "engineCode": "- (pattern data)",
-        "family": "£1,500–£3,000 [PLACEHOLDER]",
+        "family": "£1,500-£3,000 [PLACEHOLDER]",
         "fuel": "9JPFRB",
         "displacement": "AJ16",
         "power": "Petrol",
@@ -309,11 +309,11 @@
       },
       {
         "engineCode": "241 bhp (177 kW)",
-        "family": "1994–1997",
+        "family": "1994-1997",
         "fuel": "XJ6 4.0, Sovereign 4.0, Vanden Plas",
         "displacement": "★★★★☆ [PATTERN DATA]",
         "power": "- (pattern data)",
-        "years": "£2,000–£4,000 [PLACEHOLDER]",
+        "years": "£2,000-£4,000 [PLACEHOLDER]",
         "variants": "",
         "reliability": "",
         "enquiries": "",
@@ -324,8 +324,8 @@
         "family": "AJ16 SC",
         "fuel": "Petrol",
         "displacement": "4.0L (3980 cc)",
-        "power": "322–326 bhp",
-        "years": "1994–1997",
+        "power": "322-326 bhp",
+        "years": "1994-1997",
         "variants": "",
         "reliability": "",
         "enquiries": "",
@@ -335,7 +335,7 @@
         "engineCode": "XJR",
         "family": "★★★★☆ [PATTERN DATA]",
         "fuel": "- (pattern data)",
-        "displacement": "£3,000–£6,000 [PLACEHOLDER]",
+        "displacement": "£3,000-£6,000 [PLACEHOLDER]",
         "power": "-",
         "years": "V12",
         "variants": "",
@@ -347,7 +347,7 @@
         "engineCode": "Petrol",
         "family": "6.0L (5993 cc)",
         "fuel": "311 bhp (229 kW)",
-        "displacement": "1994–1997",
+        "displacement": "1994-1997",
         "power": "XJ12, Daimler Double Six",
         "years": "★★★☆☆ [PATTERN DATA]",
         "variants": "",
@@ -384,54 +384,54 @@
         "engine": "Replacement Cost",
         "typicalMileage": "Ownership Verdict",
         "commonMajorFailure": "3.2 AJ16 (9HPGNB)",
-        "repairCostSpecialist": "100k–150k+",
+        "repairCostSpecialist": "100k-150k+",
         "replacementCostRecon": "",
         "ownershipVerdict": ""
       },
       {
         "engine": "Ignition coil pack failure",
-        "typicalMileage": "£200–£500",
-        "commonMajorFailure": "£1,500–£3,000",
+        "typicalMileage": "£200-£500",
+        "commonMajorFailure": "£1,500-£3,000",
         "repairCostSpecialist": "Solid Choice - reliable six, entry‑level running costs",
         "replacementCostRecon": "",
         "ownershipVerdict": ""
       },
       {
         "engine": "4.0 AJ16 (9JPFRB)",
-        "typicalMileage": "100k–150k+",
+        "typicalMileage": "100k-150k+",
         "commonMajorFailure": "Ignition coil pack failure",
-        "repairCostSpecialist": "£200–£500",
+        "repairCostSpecialist": "£200-£500",
         "replacementCostRecon": "",
         "ownershipVerdict": ""
       },
       {
-        "engine": "£2,000–£4,000",
+        "engine": "£2,000-£4,000",
         "typicalMileage": "Best Value - the sweet spot of the range",
         "commonMajorFailure": "4.0 SC AJ16 (9KPDRB)",
-        "repairCostSpecialist": "80k–120k",
+        "repairCostSpecialist": "80k-120k",
         "replacementCostRecon": "",
         "ownershipVerdict": ""
       },
       {
         "engine": "Supercharger coupler wear",
-        "typicalMileage": "£500–£1,200",
-        "commonMajorFailure": "£3,000–£6,000",
+        "typicalMileage": "£500-£1,200",
+        "commonMajorFailure": "£3,000-£6,000",
         "repairCostSpecialist": "Performance Choice - faster, costlier to maintain",
         "replacementCostRecon": "",
         "ownershipVerdict": ""
       },
       {
         "engine": "6.0 V12",
-        "typicalMileage": "60k–100k",
+        "typicalMileage": "60k-100k",
         "commonMajorFailure": "Ignition coil failure, cooling system",
-        "repairCostSpecialist": "£1,000–£3,000",
+        "repairCostSpecialist": "£1,000-£3,000",
         "replacementCostRecon": "",
         "ownershipVerdict": ""
       }
     ],
     "economicsRule": {
       "title": "The X300 rule",
-      "text": "A £2,000–£4,000 AJ16 recon against a £3,000–£8,000 X300 sits at 25–130% of the car's value. On a sub‑£4,000 X300, a major engine failure may exceed the car's value - our 60% Jaguar threshold applies. On a well‑kept classic with provenance, the same repair is an investment, not a cost. Value the car first, then decide."
+      "text": "A £2,000-£4,000 AJ16 recon against a £3,000-£8,000 X300 sits at 25-130% of the car's value. On a sub‑£4,000 X300, a major engine failure may exceed the car's value - our 60% Jaguar threshold applies. On a well‑kept classic with provenance, the same repair is an investment, not a cost. Value the car first, then decide."
     },
     "keyTakeaways": []
   },
@@ -441,25 +441,25 @@
         "id": 1,
         "title": "AJ16 Ignition Coil Pack Failure",
         "affectedModels": "All X300 six‑cylinder models (3.2 and 4.0, naturally aspirated and supercharged).",
-        "typicalFailureMileage": "60,000–100,000 miles.",
+        "typicalFailureMileage": "60,000-100,000 miles.",
         "rootCause": "The distributorless ignition system uses coilpacks driven by Denso ignition modules. These coilpacks can fail with age, leading to misfires, rough running, and reduced power. The system is generally reliable, but coilpack failure is the most common electrical issue on the AJ16.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
             "dealer": "",
-            "specialist": "£200–£500",
+            "specialist": "£200-£500",
             "work": "",
             "note": ""
           },
           {
             "tier": "Catastrophic (Replacement)",
             "dealer": "",
-            "specialist": "£1,500–£3,000",
+            "specialist": "£1,500-£3,000",
             "work": "",
             "note": ""
           }
         ],
-        "recommendation": "At the first sign of misfire or rough running on an X300, get the ignition system diagnosed immediately - a £200–£500 coilpack replacement is far cheaper than the £1,500–£3,000 engine replacement that follows if ignored. This is the most common issue on the AJ16 and the easiest to prevent.",
+        "recommendation": "At the first sign of misfire or rough running on an X300, get the ignition system diagnosed immediately - a £200-£500 coilpack replacement is far cheaper than the £1,500-£3,000 engine replacement that follows if ignored. This is the most common issue on the AJ16 and the easiest to prevent.",
         "cta": {
           "label": "Compare AJ16 ignition parts for your X300 →",
           "href": "/engine/aj6-aj16"
@@ -469,25 +469,25 @@
         "id": 2,
         "title": "V12 Ignition and Cooling System Issues",
         "affectedModels": "XJ12 and Daimler Double Six (6.0 V12).",
-        "typicalFailureMileage": "60,000–100,000 miles.",
+        "typicalFailureMileage": "60,000-100,000 miles.",
         "rootCause": "The V12's distributorless ignition system uses two packs of three coils each. Coil failure is common, and the cooling system is complex and prone to leaks. The V12 is also sensitive to overheating - a single overheating event can warp the aluminium cylinder heads.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
             "dealer": "",
-            "specialist": "£500–£1,500",
+            "specialist": "£500-£1,500",
             "work": "",
             "note": ""
           },
           {
             "tier": "Catastrophic (Replacement)",
             "dealer": "",
-            "specialist": "£5,000–£10,000",
+            "specialist": "£5,000-£10,000",
             "work": "",
             "note": ""
           }
         ],
-        "recommendation": "On any X300 V12, have the cooling system inspected annually and replace ignition coils at the first sign of misfire. A £500–£1,500 preventative repair is dramatically cheaper than the £5,000–£10,000 V12 rebuild that follows an overheat event. These cars are for collectors with budgets to match.",
+        "recommendation": "On any X300 V12, have the cooling system inspected annually and replace ignition coils at the first sign of misfire. A £500-£1,500 preventative repair is dramatically cheaper than the £5,000-£10,000 V12 rebuild that follows an overheat event. These cars are for collectors with budgets to match.",
         "cta": {
           "label": "Compare X300 V12 engine prices →",
           "href": "/quote"
@@ -497,25 +497,25 @@
         "id": 3,
         "title": "Supercharger Coupler Wear (XJR)",
         "affectedModels": "XJR (4.0 supercharged AJ16).",
-        "typicalFailureMileage": "80,000–120,000 miles.",
+        "typicalFailureMileage": "80,000-120,000 miles.",
         "rootCause": "The Eaton M90 supercharger has a coupler that connects the drive pulley to the rotors. This coupler can wear over time, leading to a rattling noise from the supercharger at idle. If ignored, the coupler can fail completely, causing supercharger damage.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
             "dealer": "",
-            "specialist": "£500–£1,200",
+            "specialist": "£500-£1,200",
             "work": "",
             "note": ""
           },
           {
             "tier": "Catastrophic (Replacement)",
             "dealer": "",
-            "specialist": "£2,000–£4,000",
+            "specialist": "£2,000-£4,000",
             "work": "",
             "note": ""
           }
         ],
-        "recommendation": "If you hear a rattling noise from the supercharger at idle on an XJR, get the coupler inspected immediately - a £500–£1,200 coupler replacement is far cheaper than the £2,000–£4,000 supercharger rebuild that follows if ignored. This is the XJR's most common supercharger issue and is easily preventable.",
+        "recommendation": "If you hear a rattling noise from the supercharger at idle on an XJR, get the coupler inspected immediately - a £500-£1,200 coupler replacement is far cheaper than the £2,000-£4,000 supercharger rebuild that follows if ignored. This is the XJR's most common supercharger issue and is easily preventable.",
         "cta": {
           "label": "Compare XJR supercharger repair quotes →",
           "href": "/quote"
@@ -537,34 +537,34 @@
       {
         "variant": "XJ6 3.2",
         "engineCode": "9HPGNB",
-        "usedSupply": "£800–£1,500",
-        "reconditionedSupply": "£1,500–£3,000",
-        "rebuiltSupply": "£2,500–£4,000",
-        "labourHours": "8–12 hrs"
+        "usedSupply": "£800-£1,500",
+        "reconditionedSupply": "£1,500-£3,000",
+        "rebuiltSupply": "£2,500-£4,000",
+        "labourHours": "8-12 hrs"
       },
       {
         "variant": "XJ6 4.0 / Sovereign",
         "engineCode": "9JPFRB",
-        "usedSupply": "£1,000–£2,000",
-        "reconditionedSupply": "£2,000–£4,000",
-        "rebuiltSupply": "£3,500–£5,500",
-        "labourHours": "8–12 hrs"
+        "usedSupply": "£1,000-£2,000",
+        "reconditionedSupply": "£2,000-£4,000",
+        "rebuiltSupply": "£3,500-£5,500",
+        "labourHours": "8-12 hrs"
       },
       {
         "variant": "XJR",
         "engineCode": "9KPDRB",
-        "usedSupply": "£1,500–£3,000",
-        "reconditionedSupply": "£3,000–£6,000",
-        "rebuiltSupply": "£5,000–£8,000",
-        "labourHours": "10–14 hrs"
+        "usedSupply": "£1,500-£3,000",
+        "reconditionedSupply": "£3,000-£6,000",
+        "rebuiltSupply": "£5,000-£8,000",
+        "labourHours": "10-14 hrs"
       },
       {
         "variant": "XJ12 / Daimler Double Six",
         "engineCode": "V12",
-        "usedSupply": "£2,500–£5,000",
-        "reconditionedSupply": "£5,000–£10,000",
-        "rebuiltSupply": "£8,000–£14,000",
-        "labourHours": "14–18 hrs"
+        "usedSupply": "£2,500-£5,000",
+        "reconditionedSupply": "£5,000-£10,000",
+        "rebuiltSupply": "£8,000-£14,000",
+        "labourHours": "14-18 hrs"
       }
     ],
     "note": ""
@@ -607,7 +607,7 @@
       {
         "id": 1,
         "question": "How much does a Jaguar XJ X300 engine replacement cost in the UK?",
-        "answer": "A reconditioned X300 engine typically costs £1,500–£10,000 supply only [PLACEHOLDER], depending on the engine - the 3.2 and 4.0 AJ16 sixes sit at £1,500–£4,000, while the V12 is £5,000–£10,000. Fitting adds £650–£1,300 depending on specialist labour rates. Classic car specialists are recommended over main dealers for these engines. Use our calculator for a personalised figure."
+        "answer": "A reconditioned X300 engine typically costs £1,500-£10,000 supply only [PLACEHOLDER], depending on the engine - the 3.2 and 4.0 AJ16 sixes sit at £1,500-£4,000, while the V12 is £5,000-£10,000. Fitting adds £650-£1,300 depending on specialist labour rates. Classic car specialists are recommended over main dealers for these engines. Use our calculator for a personalised figure."
       },
       {
         "id": 2,
@@ -647,7 +647,7 @@
       {
         "id": 9,
         "question": "What is the difference between the X300, XJ40, and X308?",
-        "answer": "The XJ40 (1986–1994) was the previous generation with a squared‑off design and the AJ6 engine. The X300 (1994–1997) is an evolution with revised styling, distributorless ignition, and the AJ16 engine. The X308 (1997–2003) introduced the AJ‑V8 engine and a further styling update. This page covers the X300 only - earlier and later models have different engine options and reliability profiles."
+        "answer": "The XJ40 (1986-1994) was the previous generation with a squared‑off design and the AJ6 engine. The X300 (1994-1997) is an evolution with revised styling, distributorless ignition, and the AJ16 engine. The X308 (1997-2003) introduced the AJ‑V8 engine and a further styling update. This page covers the X300 only - earlier and later models have different engine options and reliability profiles."
       },
       {
         "id": 10,

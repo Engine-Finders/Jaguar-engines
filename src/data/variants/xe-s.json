@@ -52,7 +52,7 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "XE X760 (2015–2019) 306PS",
+              "name": "XE X760 (2015-2019) 306PS",
               "url": "https://jaguarengines.uk/xe/x760/"
             }
           ]
@@ -77,7 +77,7 @@
               "name": "How much does a Jaguar XE S engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned XE S (306PS AJ126) engine typically costs £5,000–£11,000 supply only. Fitting adds £900–£2,000 depending on workshop location. JLR have quoted £16,000 for parts only, while independent specialists quote around £10,500 for a second-hand engine fitted. Use our calculator for a figure specific to your car."
+                "text": "A reconditioned XE S (306PS AJ126) engine typically costs £5,000-£11,000 supply only. Fitting adds £900-£2,000 depending on workshop location. JLR have quoted £16,000 for parts only, while independent specialists quote around £10,500 for a second-hand engine fitted. Use our calculator for a figure specific to your car."
               }
             },
             {
@@ -101,7 +101,7 @@
               "name": "Is it worth replacing a Jaguar XE S engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Apply the 60% Jaguar scrap threshold: if your XE S is worth £15,000–£20,000 and a recon engine is £7,000 (35–47%), it's worth it. If the vehicle is a tired £10,000 example, the same engine exceeds 50% - get a scrap valuation first. These are performance vehicles that often justify replacement spend."
+                "text": "Apply the 60% Jaguar scrap threshold: if your XE S is worth £15,000-£20,000 and a recon engine is £7,000 (35-47%), it's worth it. If the vehicle is a tired £10,000 example, the same engine exceeds 50% - get a scrap valuation first. These are performance vehicles that often justify replacement spend."
               }
             },
             {
@@ -178,7 +178,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar XE S • 2015–2019 • 1 Engine Code",
+    "tagPill": "Jaguar XE S • 2015-2019 • 1 Engine Code",
     "h1": "Jaguar XE S Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "The XE S is the range-topping supercharged V6 - a 3.0-litre AJ126 producing 340 bhp and 450 Nm, shared with the entry-level F-Type. Get quotes from trusted UK Jaguar specialists who understand this complex engine, supply & fit available nationwide.",
     "trustBadges": [
@@ -211,10 +211,10 @@
     "rows": [
       {
         "generation": "XE X760",
-        "years": "2015–2019",
+        "years": "2015-2019",
         "engineCode": "306PS (AJ126)",
         "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£5,000–£11,000 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£5,000-£11,000 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "One engine throughout this badge's history - no era ambiguity."
       }
     ],
@@ -233,35 +233,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£3,000–£5,500",
-        "fittedIndie": "£4,000–£7,500",
-        "warranty": "1–6 months",
+        "supplyOnly": "£3,000-£5,500",
+        "fittedIndie": "£4,000-£7,500",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; short-term ownership"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£5,000–£11,000",
-        "fittedIndie": "£6,500–£13,500",
-        "warranty": "12–24 months",
+        "supplyOnly": "£5,000-£11,000",
+        "fittedIndie": "£6,500-£13,500",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£7,000–£12,000",
-        "fittedIndie": "£8,500–£14,500",
-        "warranty": "12–24 months",
+        "supplyOnly": "£7,000-£12,000",
+        "fittedIndie": "£8,500-£14,500",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£12,000–£16,000",
-        "fittedIndie": "£14,000–£19,000",
-        "warranty": "24–36 months",
+        "supplyOnly": "£12,000-£16,000",
+        "fittedIndie": "£14,000-£19,000",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs, warranty claims"
       }
     ],
     "figuresNote": "Figures above reflect the only engine generation this badge ever used - the 306PS (AJ126). See the Era Map above for era-specific pricing. JLR have quoted £16,000 for parts only, while independent specialists quote around £10,500 for a second-hand engine fitted.",
-    "labourEstimate": "Fitting an XE S engine typically takes 12–16 hours at £65–£95/hr (independent). The tightly packed engine bay and complex supercharger system add significant labour time compared to simpler engines. The water pump replacement cost is around £300, with the pump itself under £200 from Jaguar.",
+    "labourEstimate": "Fitting an XE S engine typically takes 12-16 hours at £65-£95/hr (independent). The tightly packed engine bay and complex supercharger system add significant labour time compared to simpler engines. The water pump replacement cost is around £300, with the pump itself under £200 from Jaguar.",
     "cta": {
       "label": "→ Compare XE S engine prices from UK specialists",
       "href": "/quote"
@@ -273,8 +273,8 @@
         "id": 1,
         "title": "Cooling System Failures - Water Pump & Coolant Pipes",
         "symptoms": "Coolant level low warning, white smoke from engine bay, visible coolant leak, overheating, rattling noise from pump pulley.",
-        "typicalMileage": "50,000–70,000 miles - failure reported at just 54,000 miles.",
-        "repairCost": "£200–£500 (water pump replacement); £300–£800 (coolant pipe replacement).",
+        "typicalMileage": "50,000-70,000 miles - failure reported at just 54,000 miles.",
+        "repairCost": "£200-£500 (water pump replacement); £300-£800 (coolant pipe replacement).",
         "replacementCost": "N/A - repair only; ignoring coolant warnings can lead to catastrophic engine failure.",
         "urgency": {
           "icon": "🔴",
@@ -291,8 +291,8 @@
         "id": 2,
         "title": "Supercharger Coupler Wear",
         "symptoms": "Diesel-like ticking and rattling from the engine, loud \"clonk\" from the top of the engine when turning off, rattling that sounds like \"marbles in a tin can\" - loudest on cold start, decreasing as the engine warms up.",
-        "typicalMileage": "60,000–100,000 miles.",
-        "repairCost": "£400–£800 (supercharger coupler replacement). Not expensive if you change it yourself.",
+        "typicalMileage": "60,000-100,000 miles.",
+        "repairCost": "£400-£800 (supercharger coupler replacement). Not expensive if you change it yourself.",
         "replacementCost": "N/A - repair only; if left for many thousands of miles, supercharger performance will degrade.",
         "urgency": {
           "icon": "🟡",
@@ -310,7 +310,7 @@
         "title": "Timing Chain Tensioner Wear",
         "symptoms": "Rattling timing chains - much more regular and higher pitched than a coupler rattle, worse with a cold engine. Can eventually lead to a stretched or skipped chain, causing pistons to hit valves and destroying the engine.",
         "typicalMileage": "100,000+ miles - normally they go near 100k miles, but early cars can suffer from 57,000 miles.",
-        "repairCost": "£1,500–£3,500 (chain, tensioner, and guide replacement).",
+        "repairCost": "£1,500-£3,500 (chain, tensioner, and guide replacement).",
         "replacementCost": "N/A - repair only; if the chain snaps, it's an interference engine - catastrophic failure requiring full engine replacement.",
         "urgency": {
           "icon": "🔴",
@@ -347,25 +347,25 @@
         {
           "problem": "Water pump failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£200–£500",
+          "typicalCost": "£200-£500",
           "whenItMakesSense": "Simple fix - do it immediately to avoid overheating"
         },
         {
           "problem": "Coolant pipe failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£300–£800",
+          "typicalCost": "£300-£800",
           "whenItMakesSense": "Well-known weak point - repair when symptoms appear"
         },
         {
           "problem": "Supercharger coupler wear",
           "repairable": "✅ Yes",
-          "typicalCost": "£400–£800",
+          "typicalCost": "£400-£800",
           "whenItMakesSense": "Cost-effective repair - prevents performance degradation"
         },
         {
           "problem": "Timing chain tensioner wear",
           "repairable": "✅ Yes (if caught early)",
-          "typicalCost": "£1,500–£3,500",
+          "typicalCost": "£1,500-£3,500",
           "whenItMakesSense": "Preventative - catches fault before catastrophic failure"
         },
         {
@@ -391,7 +391,7 @@
         "* Overheating or coolant loss - can cause warped cylinder heads or full engine failure"
       ]
     },
-    "closingVerdict": "The AJ126 is a great engine when properly maintained, but its cooling system requires attention and it is sensitive to oil sludge build-up. The water pump and plastic coolant pipes are known weak points. Coolant warnings are extremely common and should never be ignored. A £7,000 reconditioned engine on an XE S valued at £15,000–£20,000 is 35–47% of the car's value - worth it for a well-maintained example. On a sub-£10,000 example, think carefully. The 60% Jaguar scrap threshold applies.",
+    "closingVerdict": "The AJ126 is a great engine when properly maintained, but its cooling system requires attention and it is sensitive to oil sludge build-up. The water pump and plastic coolant pipes are known weak points. Coolant warnings are extremely common and should never be ignored. A £7,000 reconditioned engine on an XE S valued at £15,000-£20,000 is 35-47% of the car's value - worth it for a well-maintained example. On a sub-£10,000 example, think carefully. The 60% Jaguar scrap threshold applies.",
     "cta": {
       "label": "→ Compare XE S engine prices before you buy",
       "href": "/quote"
@@ -421,10 +421,10 @@
     "rows": [
       {
         "engineCode": "306PS (AJ126)",
-        "years": "2015–2019",
+        "years": "2015-2019",
         "power": "340 bhp (250 kW)",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£5,000–£11,000 [PLACEHOLDER]"
+        "avgReconCost": "£5,000-£11,000 [PLACEHOLDER]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -491,7 +491,7 @@
       {
         "id": 1,
         "question": "How much does a Jaguar XE S engine replacement cost in the UK?",
-        "answer": "A reconditioned XE S (306PS AJ126) engine typically costs £5,000–£11,000 supply only. Fitting adds £900–£2,000 depending on workshop location. JLR have quoted £16,000 for parts only, while independent specialists quote around £10,500 for a second-hand engine fitted. Use our calculator for a figure specific to your car."
+        "answer": "A reconditioned XE S (306PS AJ126) engine typically costs £5,000-£11,000 supply only. Fitting adds £900-£2,000 depending on workshop location. JLR have quoted £16,000 for parts only, while independent specialists quote around £10,500 for a second-hand engine fitted. Use our calculator for a figure specific to your car."
       },
       {
         "id": 2,
@@ -506,7 +506,7 @@
       {
         "id": 4,
         "question": "Is it worth replacing a Jaguar XE S engine, or should I scrap the car?",
-        "answer": "Apply the 60% Jaguar scrap threshold: if your XE S is worth £15,000–£20,000 and a recon engine is £7,000 (35–47%), it's worth it. If the vehicle is a tired £10,000 example, the same engine exceeds 50% - get a scrap valuation first. These are performance vehicles that often justify replacement spend."
+        "answer": "Apply the 60% Jaguar scrap threshold: if your XE S is worth £15,000-£20,000 and a recon engine is £7,000 (35-47%), it's worth it. If the vehicle is a tired £10,000 example, the same engine exceeds 50% - get a scrap valuation first. These are performance vehicles that often justify replacement spend."
       },
       {
         "id": 5,

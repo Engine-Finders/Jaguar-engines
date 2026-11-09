@@ -27,7 +27,7 @@ const statusConfig = {
 function cleanText(value = "") {
   return value
     .replaceAll("Â£", "£")
-    .replaceAll("â€“", "–")
+    .replaceAll("â€“", "-")
     .replaceAll("â€”", "")
     .replaceAll("â†’", "")
     .trim();

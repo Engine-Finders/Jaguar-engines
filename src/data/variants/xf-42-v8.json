@@ -90,7 +90,7 @@
               "name": "How much does a Jaguar XF 4.2 V8 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned AJ34 engine typically costs £2,500–£5,000 supply only depending on variant (naturally aspirated or supercharged). Fitting adds £900–£1,500. Main dealer new engines can exceed £12,000. Use our calculator for a figure specific to your car."
+                "text": "A reconditioned AJ34 engine typically costs £2,500-£5,000 supply only depending on variant (naturally aspirated or supercharged). Fitting adds £900-£1,500. Main dealer new engines can exceed £12,000. Use our calculator for a figure specific to your car."
               }
             },
             {
@@ -114,7 +114,7 @@
               "name": "Is it worth replacing a Jaguar XF 4.2 V8 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on vehicle value. Against a well-kept XF 4.2 V8 worth £4,000–£8,000, a £3,500 recon is a manageable 44–88% of the vehicle's value - assess carefully. For a well-maintained SV8 with strong provenance, replacement is often worthwhile."
+                "text": "Depends on vehicle value. Against a well-kept XF 4.2 V8 worth £4,000-£8,000, a £3,500 recon is a manageable 44-88% of the vehicle's value - assess carefully. For a well-maintained SV8 with strong provenance, replacement is often worthwhile."
               }
             },
             {
@@ -130,7 +130,7 @@
               "name": "Can I repair the AJ34's thermostat housing, or does it need a new engine?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes - the thermostat housing is a straightforward repair costing £200–£500. Replacing the housing assembly as a preventative measure at 60,000 miles is strongly recommended, as a sudden crack can cause rapid coolant loss and overheating - which can be catastrophic for the AJ34's aluminium block."
+                "text": "Yes - the thermostat housing is a straightforward repair costing £200-£500. Replacing the housing assembly as a preventative measure at 60,000 miles is strongly recommended, as a sudden crack can cause rapid coolant loss and overheating - which can be catastrophic for the AJ34's aluminium block."
               }
             }
           ]
@@ -191,7 +191,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar XF 4.2 V8 • 2008–2009 • AJ34 / AJ34S",
+    "tagPill": "Jaguar XF 4.2 V8 • 2008-2009 • AJ34 / AJ34S",
     "h1": "Jaguar XF 4.2 V8 Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Jaguar XF 4.2 V8 specialists. Compare reconditioned, rebuilt and used AJ34 engines - supply & fit available nationwide.",
     "trustBadges": [
@@ -224,18 +224,18 @@
     "rows": [
       {
         "generation": "X250",
-        "years": "2008–2009",
+        "years": "2008-2009",
         "engineCode": "AJ34 (4.2 naturally aspirated)",
         "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£2,500–£5,000 [JAG-QUOTE]",
+        "reconCost": "£2,500-£5,000 [JAG-QUOTE]",
         "eraNote": "Jaguar's 4.2 V8 - the 300 bhp naturally aspirated version; smooth and robust, but watch the plastic thermostat housing."
       },
       {
         "generation": "X250",
-        "years": "2008–2009",
+        "years": "2008-2009",
         "engineCode": "AJ34S (4.2 supercharged)",
         "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£3,500–£6,500 [JAG-QUOTE]",
+        "reconCost": "£3,500-£6,500 [JAG-QUOTE]",
         "eraNote": "The 420 bhp SV8 - supercharged version of the same block; valley coolant pipes are the main watchpoint."
       }
     ],
@@ -254,35 +254,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£2,000–£3,500",
-        "fittedIndie": "£2,800–£4,700",
-        "warranty": "3–6 months",
+        "supplyOnly": "£2,000-£3,500",
+        "fittedIndie": "£2,800-£4,700",
+        "warranty": "3-6 months",
         "bestFor": "Budget priority; vehicle under £5,000"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£2,500–£5,000",
-        "fittedIndie": "£3,400–£6,200",
-        "warranty": "12–24 months",
+        "supplyOnly": "£2,500-£5,000",
+        "fittedIndie": "£3,400-£6,200",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£3,500–£6,500",
-        "fittedIndie": "£4,400–£7,700",
-        "warranty": "12–24 months",
+        "supplyOnly": "£3,500-£6,500",
+        "fittedIndie": "£4,400-£7,700",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£8,000–£12,000",
-        "fittedIndie": "£9,500–£14,000",
-        "warranty": "24–36 months",
+        "supplyOnly": "£8,000-£12,000",
+        "fittedIndie": "£9,500-£14,000",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs, warranty claims"
       }
     ],
     "figuresNote": "",
-    "labourEstimate": "Fitting an XF 4.2 V8 engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). Reconditioned engines typically range from £2,000 to £4,000.",
+    "labourEstimate": "Fitting an XF 4.2 V8 engine typically takes 12-16 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer). Reconditioned engines typically range from £2,000 to £4,000.",
     "cta": {
       "label": "",
       "href": "/economics"
@@ -313,19 +313,19 @@
         {
           "problem": "Thermostat housing cracking (AJ34)",
           "repairable": "✅ Yes",
-          "typicalCost": "£200–£500",
+          "typicalCost": "£200-£500",
           "whenItMakesSense": "Preventative - replace at 60,000 miles or at coolant change"
         },
         {
           "problem": "Valley coolant pipe leak (AJ34S)",
           "repairable": "✅ Yes",
-          "typicalCost": "£500–£1,200",
+          "typicalCost": "£500-£1,200",
           "whenItMakesSense": "Specialist repair; supercharger removal required"
         },
         {
           "problem": "VVT phase regulator failure (AJ34)",
           "repairable": "✅ Yes",
-          "typicalCost": "£800–£2,000",
+          "typicalCost": "£800-£2,000",
           "whenItMakesSense": "If caught early; regular oil changes prevent recurrence"
         },
         {
@@ -337,7 +337,7 @@
         {
           "problem": "Timing chain tensioner wear",
           "repairable": "✅ Yes",
-          "typicalCost": "£1,500–£3,000",
+          "typicalCost": "£1,500-£3,000",
           "whenItMakesSense": "Very rare on 4.2; if noisy, get it inspected"
         },
         {
@@ -394,17 +394,17 @@
     "rows": [
       {
         "engineCode": "AJ34",
-        "years": "2008–2009",
-        "power": "298–305 bhp / 411 Nm",
+        "years": "2008-2009",
+        "power": "298-305 bhp / 411 Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£2,500–£5,000 [JAG-QUOTE]"
+        "avgReconCost": "£2,500-£5,000 [JAG-QUOTE]"
       },
       {
         "engineCode": "AJ34S",
-        "years": "2008–2009",
-        "power": "416–420 bhp / 553 Nm",
+        "years": "2008-2009",
+        "power": "416-420 bhp / 553 Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£3,500–£6,500 [JAG-QUOTE]"
+        "avgReconCost": "£3,500-£6,500 [JAG-QUOTE]"
       }
     ],
     "matchNote": "",
@@ -475,7 +475,7 @@
       {
         "id": 1,
         "question": "How much does a Jaguar XF 4.2 V8 engine replacement cost in the UK?",
-        "answer": "A reconditioned AJ34 engine typically costs £2,500–£5,000 supply only depending on variant (naturally aspirated or supercharged). Fitting adds £900–£1,500. Main dealer new engines can exceed £12,000. Use our calculator for a figure specific to your car."
+        "answer": "A reconditioned AJ34 engine typically costs £2,500-£5,000 supply only depending on variant (naturally aspirated or supercharged). Fitting adds £900-£1,500. Main dealer new engines can exceed £12,000. Use our calculator for a figure specific to your car."
       },
       {
         "id": 2,
@@ -490,7 +490,7 @@
       {
         "id": 4,
         "question": "Is it worth replacing a Jaguar XF 4.2 V8 engine, or should I scrap the car?",
-        "answer": "Depends on vehicle value. Against a well-kept XF 4.2 V8 worth £4,000–£8,000, a £3,500 recon is a manageable 44–88% of the vehicle's value - assess carefully. For a well-maintained SV8 with strong provenance, replacement is often worthwhile."
+        "answer": "Depends on vehicle value. Against a well-kept XF 4.2 V8 worth £4,000-£8,000, a £3,500 recon is a manageable 44-88% of the vehicle's value - assess carefully. For a well-maintained SV8 with strong provenance, replacement is often worthwhile."
       },
       {
         "id": 5,
@@ -500,7 +500,7 @@
       {
         "id": 6,
         "question": "Can I repair the AJ34's thermostat housing, or does it need a new engine?",
-        "answer": "Yes - the thermostat housing is a straightforward repair costing £200–£500. Replacing the housing assembly as a preventative measure at 60,000 miles is strongly recommended, as a sudden crack can cause rapid coolant loss and overheating - which can be catastrophic for the AJ34's aluminium block."
+        "answer": "Yes - the thermostat housing is a straightforward repair costing £200-£500. Replacing the housing assembly as a preventative measure at 60,000 miles is strongly recommended, as a sudden crack can cause rapid coolant loss and overheating - which can be catastrophic for the AJ34's aluminium block."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier."

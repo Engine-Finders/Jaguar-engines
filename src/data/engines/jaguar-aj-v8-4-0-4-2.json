@@ -50,42 +50,42 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "XK8 / XKR X100 4.0L / 4.2L (NA & SC) 1996–2006"
+              "name": "XK8 / XKR X100 4.0L / 4.2L (NA & SC) 1996-2006"
             },
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "XJ8 / XJR X308 4.0L / 4.2L 1997–2003"
+              "name": "XJ8 / XJR X308 4.0L / 4.2L 1997-2003"
             },
             {
               "@type": "ListItem",
               "position": 3,
-              "name": "XJ8 / XJR X350 / X358 4.2L 2003–2009"
+              "name": "XJ8 / XJR X350 / X358 4.2L 2003-2009"
             },
             {
               "@type": "ListItem",
               "position": 4,
-              "name": "S-Type X200 4.0L / 4.2L (NA & SC) 1999–2008"
+              "name": "S-Type X200 4.0L / 4.2L (NA & SC) 1999-2008"
             },
             {
               "@type": "ListItem",
               "position": 5,
-              "name": "S-Type R X200 4.2L Supercharged 2002–2007"
+              "name": "S-Type R X200 4.2L Supercharged 2002-2007"
             },
             {
               "@type": "ListItem",
               "position": 6,
-              "name": "XF X250 4.2L 2008–2009"
+              "name": "XF X250 4.2L 2008-2009"
             },
             {
               "@type": "ListItem",
               "position": 7,
-              "name": "XK X150 4.2L 2006–2009"
+              "name": "XK X150 4.2L 2006-2009"
             },
             {
               "@type": "ListItem",
               "position": 8,
-              "name": "Daimler Super Eight X350 4.2L Supercharged 2005–2009"
+              "name": "Daimler Super Eight X350 4.2L Supercharged 2005-2009"
             }
           ]
         },
@@ -97,7 +97,7 @@
               "name": "How much does a Jaguar AJ-V8 engine replacement cost?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned AJ-V8 typically costs £4,500–£7,500 supply only, varying by displacement (4.0L vs 4.2L) and whether it's naturally aspirated or supercharged. Fitting adds £650–£1,300 depending on labour rates."
+                "text": "A reconditioned AJ-V8 typically costs £4,500-£7,500 supply only, varying by displacement (4.0L vs 4.2L) and whether it's naturally aspirated or supercharged. Fitting adds £650-£1,300 depending on labour rates."
               }
             },
             {
@@ -205,9 +205,9 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar • AJ-V8 • Petrol • 4.0–4.2L V8 • 1996–2009",
+    "tagPill": "Jaguar • AJ-V8 • Petrol • 4.0-4.2L V8 • 1996-2009",
     "h1": "Jaguar AJ-V8 4.0/4.2 Engine - Specs, Reliability & Replacement Cost",
-    "subHeadline": "The Jaguar AJ-V8 is a 4.0–4.2L DOHC V8 family - smooth and characterful, but early plastic timing chain tensioners are its Achilles' heel. Backed by real UK enquiries in 2025.",
+    "subHeadline": "The Jaguar AJ-V8 is a 4.0-4.2L DOHC V8 family - smooth and characterful, but early plastic timing chain tensioners are its Achilles' heel. Backed by real UK enquiries in 2025.",
     "trustStrip": [
       {
         "icon": "📊",
@@ -247,11 +247,11 @@
       },
       {
         "metric": "Power Range",
-        "value": "290–420 HP"
+        "value": "290-420 HP"
       },
       {
         "metric": "Years Produced",
-        "value": "1996–2009"
+        "value": "1996-2009"
       },
       {
         "metric": "Models Fitted (Jaguar only)",
@@ -283,7 +283,7 @@
         },
         {
           "dimension": "Repair Cost",
-          "score": "12 (Reconditioned supply midpoint £5,500–£7,000 → falls in £5,000–£6,999 band)"
+          "score": "12 (Reconditioned supply midpoint £5,500-£7,000 → falls in £5,000-£6,999 band)"
         },
         {
           "dimension": "Repairability",
@@ -295,7 +295,7 @@
         },
         {
           "dimension": "Replacement Economics",
-          "score": "12 (Reconditioned cost ~45–59% of lowest host-vehicle value)"
+          "score": "12 (Reconditioned cost ~45-59% of lowest host-vehicle value)"
         },
         {
           "dimension": "Total",
@@ -319,49 +319,49 @@
         "model": "XK8 / XKR",
         "generation": "X100",
         "variantBadge": "4.0L / 4.2L (NA & SC)",
-        "years": "1996–2006"
+        "years": "1996-2006"
       },
       {
         "model": "XJ8 / XJR",
         "generation": "X308",
         "variantBadge": "4.0L / 4.2L",
-        "years": "1997–2003"
+        "years": "1997-2003"
       },
       {
         "model": "XJ8 / XJR",
         "generation": "X350 / X358",
         "variantBadge": "4.2L",
-        "years": "2003–2009"
+        "years": "2003-2009"
       },
       {
         "model": "S-Type",
         "generation": "X200",
         "variantBadge": "4.0L / 4.2L (NA & SC)",
-        "years": "1999–2008"
+        "years": "1999-2008"
       },
       {
         "model": "S-Type R",
         "generation": "X200",
         "variantBadge": "4.2L Supercharged",
-        "years": "2002–2007"
+        "years": "2002-2007"
       },
       {
         "model": "XF",
         "generation": "X250",
         "variantBadge": "4.2L",
-        "years": "2008–2009"
+        "years": "2008-2009"
       },
       {
         "model": "XK",
         "generation": "X150",
         "variantBadge": "4.2L",
-        "years": "2006–2009"
+        "years": "2006-2009"
       },
       {
         "model": "Daimler Super Eight",
         "generation": "X350",
         "variantBadge": "4.2L Supercharged",
-        "years": "2005–2009"
+        "years": "2005-2009"
       }
     ],
     "crossBrandNote": "Also powers the Land Rover Range Rover L322 4.4 → landroverengine.uk"
@@ -376,24 +376,24 @@
     "rows": [
       {
         "condition": "Used",
-        "supplyOnly": "£2,500–£4,500",
-        "fittedIndie": "£3,500–£5,500",
-        "warranty": "3–6 months"
+        "supplyOnly": "£2,500-£4,500",
+        "fittedIndie": "£3,500-£5,500",
+        "warranty": "3-6 months"
       },
       {
         "condition": "Reconditioned",
-        "supplyOnly": "£4,500–£7,500",
-        "fittedIndie": "£5,500–£8,500",
+        "supplyOnly": "£4,500-£7,500",
+        "fittedIndie": "£5,500-£8,500",
         "warranty": "12 months"
       },
       {
         "condition": "Rebuilt",
-        "supplyOnly": "£6,000–£9,500",
-        "fittedIndie": "£7,000–£11,000",
-        "warranty": "12–24 months"
+        "supplyOnly": "£6,000-£9,500",
+        "fittedIndie": "£7,000-£11,000",
+        "warranty": "12-24 months"
       }
     ],
-    "labourEstimate": "Fitting a Jaguar AJ-V8 typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "labourEstimate": "Fitting a Jaguar AJ-V8 typically takes 12-16 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer).",
     "sharedCostNote": "Parts cost is similar across Jaguar and Land Rover applications; labour time varies by engine bay access - the XK's tight bay adds time versus the XJ's more generous layout.",
     "cta": {
       "label": "",
@@ -405,7 +405,7 @@
       {
         "id": 1,
         "question": "How much does a Jaguar AJ-V8 engine replacement cost?",
-        "answer": "A reconditioned AJ-V8 typically costs £4,500–£7,500 supply only, varying by displacement (4.0L vs 4.2L) and whether it's naturally aspirated or supercharged. Fitting adds £650–£1,300 depending on labour rates."
+        "answer": "A reconditioned AJ-V8 typically costs £4,500-£7,500 supply only, varying by displacement (4.0L vs 4.2L) and whether it's naturally aspirated or supercharged. Fitting adds £650-£1,300 depending on labour rates."
       },
       {
         "id": 2,

@@ -50,7 +50,7 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "Jaguar F-Pace X761 (2015–2024) P510e",
+              "name": "Jaguar F-Pace X761 (2015-2024) P510e",
               "url": "https://jaguarengines.uk/f-pace/x761"
             },
             {
@@ -69,7 +69,7 @@
               "name": "How much does a Jaguar P510 engine replacement cost?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned P510 typically costs £4,500–£7,000 supply only [ESTIMATED], varying by specific variant and PHEV system integration. Fitting adds £780–£1,300 depending on labour rates and hybrid system re-calibration."
+                "text": "A reconditioned P510 typically costs £4,500-£7,000 supply only [ESTIMATED], varying by specific variant and PHEV system integration. Fitting adds £780-£1,300 depending on labour rates and hybrid system re-calibration."
               }
             },
             {
@@ -177,7 +177,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar • P510 • Petrol PHEV • 3.0L I6 Twin-Turbo • 2021–present",
+    "tagPill": "Jaguar • P510 • Petrol PHEV • 3.0L I6 Twin-Turbo • 2021-present",
     "h1": "Jaguar P510 Engine - Specs, Reliability & Replacement Cost",
     "subHeadline": "The Jaguar P510 is a 3.0-litre inline-six petrol PHEV - combining twin-turbo power with plug-in hybrid efficiency. Backed by real UK enquiries in 2025 [ESTIMATED].",
     "trustStrip": [],
@@ -206,7 +206,7 @@
       },
       {
         "metric": "Years Produced",
-        "value": "2021–present"
+        "value": "2021-present"
       },
       {
         "metric": "Models Fitted (Jaguar only)",
@@ -238,7 +238,7 @@
         },
         {
           "dimension": "Repair Cost",
-          "score": "12 (Midpoint of Reconditioned (Supply Only) range: estimated £4,500–£7,000 → midpoint £5,750 → falls in £5,000–£6,999 bracket → 12/20 [ESTIMATED].)"
+          "score": "12 (Midpoint of Reconditioned (Supply Only) range: estimated £4,500-£7,000 → midpoint £5,750 → falls in £5,000-£6,999 bracket → 12/20 [ESTIMATED].)"
         },
         {
           "dimension": "Repairability",
@@ -250,7 +250,7 @@
         },
         {
           "dimension": "Replacement Economics",
-          "score": "16 (Reconditioned cost (£4,500–£7,000) against conservative lowest host value (F-Pace at £15,000+) = under 50% - replacement viable [ESTIMATED].)"
+          "score": "16 (Reconditioned cost (£4,500-£7,000) against conservative lowest host value (F-Pace at £15,000+) = under 50% - replacement viable [ESTIMATED].)"
         },
         {
           "dimension": "Total",
@@ -272,15 +272,15 @@
     "rows": [
       {
         "model": "Jaguar F-Pace",
-        "generation": "X761 (2015–2024)",
+        "generation": "X761 (2015-2024)",
         "variantBadge": "P510e",
-        "years": "2021–2024"
+        "years": "2021-2024"
       },
       {
         "model": "Jaguar F-Pace",
         "generation": "X761 (facelift)",
         "variantBadge": "P510e",
-        "years": "2021–2024"
+        "years": "2021-2024"
       }
     ],
     "crossBrandNote": "Also powers the Land Rover Range Rover, Range Rover Sport and Velar → [link to Land Rover P510 page]."
@@ -295,24 +295,24 @@
     "rows": [
       {
         "condition": "Used",
-        "supplyOnly": "£3,500–£5,500 [ESTIMATED]",
-        "fittedIndie": "£4,475–£6,800",
-        "warranty": "3–6 months"
+        "supplyOnly": "£3,500-£5,500 [ESTIMATED]",
+        "fittedIndie": "£4,475-£6,800",
+        "warranty": "3-6 months"
       },
       {
         "condition": "Reconditioned",
-        "supplyOnly": "£4,500–£7,000 [ESTIMATED]",
-        "fittedIndie": "£5,475–£8,300",
-        "warranty": "12–24 months"
+        "supplyOnly": "£4,500-£7,000 [ESTIMATED]",
+        "fittedIndie": "£5,475-£8,300",
+        "warranty": "12-24 months"
       },
       {
         "condition": "Rebuilt",
-        "supplyOnly": "£6,500–£9,500 [ESTIMATED]",
-        "fittedIndie": "£7,475–£10,800",
-        "warranty": "12–24 months"
+        "supplyOnly": "£6,500-£9,500 [ESTIMATED]",
+        "fittedIndie": "£7,475-£10,800",
+        "warranty": "12-24 months"
       }
     ],
-    "labourEstimate": "Fitting a P510 typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [ESTIMATED].",
+    "labourEstimate": "Fitting a P510 typically takes 12-16 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [ESTIMATED].",
     "sharedCostNote": "Parts cost is identical across Jaguar and Land Rover applications; labour time varies slightly by engine bay access.",
     "cta": {
       "label": "→ Compare P510 engine prices from UK specialists",
@@ -324,7 +324,7 @@
       {
         "id": 1,
         "question": "Cost - \"How much does a Jaguar P510 engine replacement cost?\"",
-        "answer": "A reconditioned P510 typically costs £4,500–£7,000 supply only [ESTIMATED], varying by specific variant and PHEV system integration. Fitting adds £780–£1,300 depending on labour rates and hybrid system re-calibration."
+        "answer": "A reconditioned P510 typically costs £4,500-£7,000 supply only [ESTIMATED], varying by specific variant and PHEV system integration. Fitting adds £780-£1,300 depending on labour rates and hybrid system re-calibration."
       },
       {
         "id": 2,

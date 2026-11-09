@@ -71,8 +71,8 @@ function splitTitle(title = "") {
   return { main: clean, accent: "" };
 }
 
-// Card title -> parts, e.g. "XJ X351 (2010–2019)" -> code "X351", years "2010–2019";
-// "2019–2024: Revised V8 + Straight-Six Era" -> code "2019–2024", note "Revised V8 + Straight-Six Era".
+// Card title -> parts, e.g. "XJ X351 (2010-2019)" -> code "X351", years "2010-2019";
+// "2019-2024: Revised V8 + Straight-Six Era" -> code "2019-2024", note "Revised V8 + Straight-Six Era".
 function parseCardTitle(title = "", modelName = "") {
   const clean = cleanText(title).replace(/\s*-\s*$/, "");
   const parens = clean.match(/^(.*?)\s*\(([^)]*)\)\s*(?:-\s*)?(.*)$/);
@@ -93,12 +93,12 @@ function parseCardTitle(title = "", modelName = "") {
   return { code: name.trim(), years: years.trim(), note: note.trim() };
 }
 
-// "1996–2006 • 4.0 AJ27 V8 • 4.2 AJ34 V8" -> years + engine list; anything else is a badge line.
+// "1996-2006 • 4.0 AJ27 V8 • 4.2 AJ34 V8" -> years + engine list; anything else is a badge line.
 function parseMeta(meta = "") {
   const clean = cleanText(meta);
   if (!clean) return { years: "", engines: [], extra: "" };
   const parts = clean.split(" • ");
-  if (/^\d{4}\s*[–-]\s*(\d{4}|present)?$/i.test(parts[0].trim())) {
+  if (/^\d{4}\s*[--]\s*(\d{4}|present)?$/i.test(parts[0].trim())) {
     return { years: parts[0].trim(), engines: parts.slice(1), extra: "" };
   }
   return { years: "", engines: [], extra: clean };
@@ -187,7 +187,7 @@ function GenerationCard({ card, index, modelName, defaultOpen = false, isDark })
   const [open, setOpen] = useState(defaultOpen);
   const title = parseCardTitle(card.title, modelName);
   const meta = parseMeta(card.meta);
-  const subtitle = cleanText(card.subtitle) || [title.years, title.note].filter(Boolean).join(" — ") || meta.years;
+  const subtitle = cleanText(card.subtitle) || [title.years, title.note].filter(Boolean).join(" - ") || meta.years;
   const engines = card.engines || meta.engines;
   const badge = cleanText(card.badge).replace(/^"|"$/g, "").replace(/(🔥)\s*"/, "$1 ").replace(/"$/, "");
   const extra = meta.extra;

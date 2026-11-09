@@ -99,7 +99,7 @@
               "name": "What are the common problems with the Jaguar F-Pace P400e?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The most serious issue is the coolant pump drive belt recall – if the belt fails, coolant flow is lost, causing rapid overheating and potential fire risk. Other concerns include HV battery degradation (reduced electric range), 12V battery failure, turbo oil feed pipe leaks, and timing chain tensioner wear causing cold‑start rattle."
+                "text": "The most serious issue is the coolant pump drive belt recall - if the belt fails, coolant flow is lost, causing rapid overheating and potential fire risk. Other concerns include HV battery degradation (reduced electric range), 12V battery failure, turbo oil feed pipe leaks, and timing chain tensioner wear causing cold‑start rattle."
               }
             },
             {
@@ -115,7 +115,7 @@
               "name": "How do I find my F-Pace's engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The F-Pace P400e uses the PT204 (AJ20P4) 2.0‑litre turbo petrol engine combined with a 105 kW electric motor. The engine code is stamped on the engine block and listed on your V5C. The P400e badge itself confirms the powertrain – it's the 404 PS plug‑in hybrid offered in the X761 F-Pace from 2020 onwards."
+                "text": "The F-Pace P400e uses the PT204 (AJ20P4) 2.0‑litre turbo petrol engine combined with a 105 kW electric motor. The engine code is stamped on the engine block and listed on your V5C. The P400e badge itself confirms the powertrain - it's the 404 PS plug‑in hybrid offered in the X761 F-Pace from 2020 onwards."
               }
             },
             {
@@ -123,7 +123,7 @@
               "name": "Can I repair an F-Pace P400e engine issue, or does it need replacement?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Most issues – coolant pump belt (recall), turbo oil feed pipe leaks, timing chain wear (if caught early) – are repairable. HV battery degradation may be covered under warranty if the vehicle is still within the warranty period. However, if the engine suffers major internal failure, a full engine replacement is usually more cost‑effective than a rebuild."
+                "text": "Most issues - coolant pump belt (recall), turbo oil feed pipe leaks, timing chain wear (if caught early) - are repairable. HV battery degradation may be covered under warranty if the vehicle is still within the warranty period. However, if the engine suffers major internal failure, a full engine replacement is usually more cost‑effective than a rebuild."
               }
             }
           ]
@@ -184,7 +184,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar F-Pace P400e • 2020–present • 2.0L Turbo PHEV (PT204 + e‑motor)",
+    "tagPill": "Jaguar F-Pace P400e • 2020-present • 2.0L Turbo PHEV (PT204 + e‑motor)",
     "h1": "Jaguar F-Pace P400e Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Jaguar specialists. Compare reconditioned, rebuilt and used PT204 2.0‑litre turbo plug‑in hybrid powertrains for the F-Pace P400e - the potent PHEV combining 404 PS, 640 Nm and up to 33 miles of electric‑only range. Supply & fit available nationwide.",
     "trustBadges": [
@@ -217,10 +217,10 @@
     "rows": [
       {
         "generation": "X761",
-        "years": "2020–present",
+        "years": "2020-present",
         "engineCode": "PT204 (AJ20P4, 2.0L Turbo PHEV) + 105 kW e‑motor",
         "reliability": "★★★½☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£3,500–£5,000 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£3,500-£5,000 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "404 PS, 640 Nm - PT204 is generally robust, coolant pump belt recall is the defining issue"
       }
     ],
@@ -239,30 +239,30 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£1,800–£3,000",
-        "fittedIndie": "£2,800–£4,500",
-        "warranty": "1–6 months",
+        "supplyOnly": "£1,800-£3,000",
+        "fittedIndie": "£2,800-£4,500",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; short‑term ownership"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£3,000–£4,500",
-        "fittedIndie": "£4,200–£6,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£3,000-£4,500",
+        "fittedIndie": "£4,200-£6,000",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£4,000–£5,500",
-        "fittedIndie": "£5,200–£7,200",
-        "warranty": "12–24 months",
+        "supplyOnly": "£4,000-£5,500",
+        "fittedIndie": "£5,200-£7,200",
+        "warranty": "12-24 months",
         "bestFor": "Long‑term ownership; maximum reliability"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£6,500–£8,500",
-        "fittedIndie": "£8,000–£10,500",
-        "warranty": "24–36 months",
+        "supplyOnly": "£6,500-£8,500",
+        "fittedIndie": "£8,000-£10,500",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs; warranty claims; full provenance"
       }
     ],
@@ -280,7 +280,7 @@
         "title": "Coolant Pump Drive Belt Failure - Safety Recall (R/2023/088)",
         "symptoms": "Engine overheating warning, coolant loss, steam from under bonnet, potential fire risk - may occur without prior warning. A concern has been identified on Ingenium I4 2.0L Petrol PHEV engines where the coolant pump drive belt can become damaged leading to detachment or destruction.",
         "typicalMileage": "Any mileage - recall affects vehicles built from 19 December 2019 to 6 February 2023.",
-        "repairCost": "£0 (if recalled - dealer repair free) / £500–£1,200 [PLACEHOLDER] (if out of warranty).",
+        "repairCost": "£0 (if recalled - dealer repair free) / £500-£1,200 [PLACEHOLDER] (if out of warranty).",
         "replacementCost": "N/A - repair only (if caught early; ignored overheating can lead to engine damage).",
         "urgency": {
           "icon": "🔴",
@@ -298,7 +298,7 @@
         "title": "HV Battery Degradation / 12V Battery Issues",
         "symptoms": "Reduced electric‑only range (reported drop from claimed 33 miles to 27 miles or less), hybrid system not working, vehicle running only on petrol, 12V battery starting issues, dashboard warnings.",
         "typicalMileage": "20,000‑50,000 miles (age‑related as much as mileage - the 17.1 kWh battery is subject to degradation over time).",
-        "repairCost": "£2,000‑£5,000+ [PLACEHOLDER] (HV battery replacement - if available) / £200–£500 (12V battery replacement).",
+        "repairCost": "£2,000‑£5,000+ [PLACEHOLDER] (HV battery replacement - if available) / £200-£500 (12V battery replacement).",
         "replacementCost": "N/A - battery replacement only (if ignored, the vehicle runs as a conventional petrol only).",
         "urgency": {
           "icon": "🟠",
@@ -316,7 +316,7 @@
         "title": "Turbo Oil Feed Pipe Leak (PT204)",
         "symptoms": "Oil spots under the vehicle, burning oil smell, sudden loss of power, hesitation, limp mode.",
         "typicalMileage": "20,000‑60,000 miles.",
-        "repairCost": "£300–£800 [PLACEHOLDER] (oil feed pipe seal replacement).",
+        "repairCost": "£300-£800 [PLACEHOLDER] (oil feed pipe seal replacement).",
         "replacementCost": "N/A - repair only (if caught early; ignored oil loss can lead to turbo failure).",
         "urgency": {
           "icon": "🟠",
@@ -334,8 +334,8 @@
         "title": "Timing Chain Tensioner Wear (PT204)",
         "symptoms": "Rattling noise from the engine on cold start, engine misfires or rough idling, poor acceleration and reduced power, engine warning light.",
         "typicalMileage": "50,000‑80,000 miles.",
-        "repairCost": "£1,500–£3,000 [PLACEHOLDER] (timing chain tensioner and guide replacement).",
-        "replacementCost": "£3,000–£5,500 [PLACEHOLDER] (if chain snaps and damages the engine).",
+        "repairCost": "£1,500-£3,000 [PLACEHOLDER] (timing chain tensioner and guide replacement).",
+        "replacementCost": "£3,000-£5,500 [PLACEHOLDER] (if chain snaps and damages the engine).",
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
@@ -371,7 +371,7 @@
         {
           "problem": "Coolant pump drive belt failure",
           "repairable": "✅ Yes (recall)",
-          "typicalCost": "£0–£1,200 [PLACEHOLDER]",
+          "typicalCost": "£0-£1,200 [PLACEHOLDER]",
           "whenItMakesSense": "Recall repair is free; out‑of‑warranty repair still cheaper than engine replacement"
         },
         {
@@ -383,25 +383,25 @@
         {
           "problem": "Turbo oil feed pipe leak",
           "repairable": "✅ Yes",
-          "typicalCost": "£300–£800 [PLACEHOLDER]",
+          "typicalCost": "£300-£800 [PLACEHOLDER]",
           "whenItMakesSense": "Worth fixing - common and well‑understood repair"
         },
         {
           "problem": "Timing chain tensioner wear",
           "repairable": "✅ Yes (if caught early)",
-          "typicalCost": "£1,500–£3,000 [PLACEHOLDER]",
+          "typicalCost": "£1,500-£3,000 [PLACEHOLDER]",
           "whenItMakesSense": "Catch it early - cheaper than engine replacement"
         },
         {
           "problem": "Timing chain snapped",
           "repairable": "❌ Usually No",
-          "typicalCost": "£3,000–£5,500+",
+          "typicalCost": "£3,000-£5,500+",
           "whenItMakesSense": "Full engine replacement - valve damage is almost certain"
         },
         {
           "problem": "Major internal engine failure",
           "repairable": "❌ Usually No",
-          "typicalCost": "£3,000–£5,500+",
+          "typicalCost": "£3,000-£5,500+",
           "whenItMakesSense": "Full engine replacement often more cost‑effective"
         }
       ]
@@ -451,10 +451,10 @@
     "rows": [
       {
         "engineCode": "PT204 (AJ20P4, 2.0L Turbo PHEV) + 105 kW e‑motor",
-        "years": "2020–present",
+        "years": "2020-present",
         "power": "404 PS (297 kW) / 640 Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£3,000–£4,500 [PLACEHOLDER]"
+        "avgReconCost": "£3,000-£4,500 [PLACEHOLDER]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",

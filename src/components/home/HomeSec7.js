@@ -37,7 +37,7 @@ function cleanText(value = "") {
     .replaceAll("â€“", "-")
     .replaceAll("ðŸ“Š", "")
     .replaceAll("ðŸ”§", "")
-    .replaceAll("ðŸ“–", "")
+    .replaceAll("ðŸ“-", "")
     .replaceAll("ðŸ†", "")
     .replaceAll("ðŸ›¢ï¸", "")
     .replaceAll("â›½", "")

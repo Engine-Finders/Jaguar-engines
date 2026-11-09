@@ -73,11 +73,11 @@
 
 | **Failure Type** | **Reconditioned S&F** | **Rebuilt S&F** | **Used S&F** | **Main Dealer Est.** |
 |---|---|---|---|---|
-| Ingenium Timing Chain (AJ200D/204DTD) | £3,500–£5,800 | £4,800–£7,000 | £2,000–£3,500 | £7,000–£10,500 |
-| AJ133 5.0 V8 Chain Tensioner (pre-2013) | £5,500–£9,000 | £8,000–£12,000 | £3,000–£5,500 | £11,000–£16,500 |
-| 276DT Oil Pump Failure | £5,000–£7,500 | £6,500–£9,500 | £2,800–£4,500 | £9,500–£14,000 |
-| AJ126 Cooling System / Chain Tensioner | £4,500–£7,500 | £6,000–£9,500 | £2,500–£4,500 | £8,500–£13,000 |
-| Ingenium Petrol Water Pump (AJ200P/204PT) | £3,000–£5,000 | £4,200–£6,500 | £1,500–£2,800 | £6,000–£9,000 |
+| Ingenium Timing Chain (AJ200D/204DTD) | £3,500-£5,800 | £4,800-£7,000 | £2,000-£3,500 | £7,000-£10,500 |
+| AJ133 5.0 V8 Chain Tensioner (pre-2013) | £5,500-£9,000 | £8,000-£12,000 | £3,000-£5,500 | £11,000-£16,500 |
+| 276DT Oil Pump Failure | £5,000-£7,500 | £6,500-£9,500 | £2,800-£4,500 | £9,500-£14,000 |
+| AJ126 Cooling System / Chain Tensioner | £4,500-£7,500 | £6,000-£9,500 | £2,500-£4,500 | £8,500-£13,000 |
+| Ingenium Petrol Water Pump (AJ200P/204PT) | £3,000-£5,000 | £4,200-£6,500 | £1,500-£2,800 | £6,000-£9,000 |
 
 **H3:** Why Trust This Diagnosis?
 
@@ -100,12 +100,12 @@
 |---|---|---|---|
 | **Most Reliable Engine** | AJ200P / 204PT (Ingenium Petrol) | Consistently outperforms its diesel sibling in our data  water pump replacement is the only meaningful weak point. | 🏆 Best |
 | **Most Reliable Model** | F-Pace X761 | Strong retained values and a clean ✅ Safe verdict across every engine variant  no caveat in the data at all. | 🏆 Best |
-| **Best Used Buy** | XF X260 (2015–2024) | A well-valued executive saloon with the revised Ingenium range and replacement viable across almost every example. | ✅ Safe |
-| **Most Expensive Failure** | 276DT (2.7 TDV6) Oil Pump Failure | Shared with Land Rover's Discovery 3  often kills the engine outright with little warning. £5,000–£7,500 recon. | 🔴 Avoid |
-| **Safest Jaguar to Buy** | E-Pace X540 (2017–present) | Compact SUV values comfortably absorb the modern Ingenium's replacement cost  safe across the board. | ✅ Safe |
-| **Highest Risk Purchase** | X-Type X400 (2001–2009) | Rapid depreciation plus genuine reliability concerns on pre-2007 cars  replacement cost frequently exceeds vehicle value. | ⚠️ Watch |
+| **Best Used Buy** | XF X260 (2015-2024) | A well-valued executive saloon with the revised Ingenium range and replacement viable across almost every example. | ✅ Safe |
+| **Most Expensive Failure** | 276DT (2.7 TDV6) Oil Pump Failure | Shared with Land Rover's Discovery 3  often kills the engine outright with little warning. £5,000-£7,500 recon. | 🔴 Avoid |
+| **Safest Jaguar to Buy** | E-Pace X540 (2017-present) | Compact SUV values comfortably absorb the modern Ingenium's replacement cost  safe across the board. | ✅ Safe |
+| **Highest Risk Purchase** | X-Type X400 (2001-2009) | Rapid depreciation plus genuine reliability concerns on pre-2007 cars  replacement cost frequently exceeds vehicle value. | ⚠️ Watch |
 | **Best Family Jaguar** | F-Pace X761 | The only genuinely practical SUV in the range, paired with the strongest ownership-safety profile of any Jaguar. | 👨‍👩‍👧‍👦 Best |
-| **Best Long-Term Keeper** | XJ X351 (2010–2019) | Flagship values comfortably absorb even the AJ133's upper recon cost  the keeper's Jaguar. | 🏆 Best |
+| **Best Long-Term Keeper** | XJ X351 (2010-2019) | Flagship values comfortably absorb even the AJ133's upper recon cost  the keeper's Jaguar. | 🏆 Best |
 
 **Data Note:** Entries drawing directly on enquiry volume, replacement cost, and R-to-V flag data are marked as verified in the source file. "Most Reliable Model," "Best Family Jaguar," and the specific engine/model pairings are our editorial synthesis of the failure-pattern data, cross-referenced against live specialist and owner-forum sources  worth a Jaguar specialist sense-check before publishing.
 
@@ -131,8 +131,8 @@
 | **Card** | **Title** | **Description** | **Severity** | **Link** |
 |---|---|---|---|---|
 | 1 | **Air Suspension Compressor Failure** | The most common air suspension complaint across XJ, XF and F-Pace. Burnout presents a fire risk. | 🔴 Catastrophic | Read more → |
-| 2 | **Height Sensor Faults** | Trigger warning lights and uneven ride height well before a full system failure. £200–£500 repair cost. | 🟢 Low | Read more → |
-| 3 | **Valve Block & Air Spring Leaks** | Slow leaks often mistaken for compressor failure. £300–£800 repair cost. | 🟢 Low | Read more → |
+| 2 | **Height Sensor Faults** | Trigger warning lights and uneven ride height well before a full system failure. £200-£500 repair cost. | 🟢 Low | Read more → |
+| 3 | **Valve Block & Air Spring Leaks** | Slow leaks often mistaken for compressor failure. £300-£800 repair cost. | 🟢 Low | Read more → |
 
 **⚙️ Drivetrain Failures**
 
@@ -204,12 +204,12 @@
 
 | **Model & Engine** | **Typical Vehicle Value** | **Replacement Cost** | **Verdict** |
 |---|---|---|---|
-| **XF X250 (AJ126)** | £4,000–£12,000 | £4,500–£7,500 | ⚠️ Watch  sub-£7k examples approach the threshold |
-| **X-Type X400** | £1,500–£5,000 | £2,500–£5,800 | 🔴 Scrap threshold  recon cost frequently exceeds car value |
-| **F-Pace X761** | £12,000–£38,000 | £3,000–£5,800 | ✅ Safe  replacement viable across all engine variants |
-| **XJ X351 (AJ133)** | £8,000–£25,000 | £4,500–£9,000 | ✅ Safe  flagship values absorb even the upper recon cost |
-| **XF X260** | £8,000–£25,000 | £3,000–£5,800 | ✅ Safe  well within value even at the upper recon cost |
-| **S-Type X200** | £1,500–£5,500 | £4,500–£7,500 | 🔴 Scrap threshold  recon cost seldom justified |
+| **XF X250 (AJ126)** | £4,000-£12,000 | £4,500-£7,500 | ⚠️ Watch  sub-£7k examples approach the threshold |
+| **X-Type X400** | £1,500-£5,000 | £2,500-£5,800 | 🔴 Scrap threshold  recon cost frequently exceeds car value |
+| **F-Pace X761** | £12,000-£38,000 | £3,000-£5,800 | ✅ Safe  replacement viable across all engine variants |
+| **XJ X351 (AJ133)** | £8,000-£25,000 | £4,500-£9,000 | ✅ Safe  flagship values absorb even the upper recon cost |
+| **XF X260** | £8,000-£25,000 | £3,000-£5,800 | ✅ Safe  well within value even at the upper recon cost |
+| **S-Type X200** | £1,500-£5,500 | £4,500-£7,500 | 🔴 Scrap threshold  recon cost seldom justified |
 
 **The Rule of Thumb**
 
@@ -260,11 +260,11 @@ If reconditioned engine cost runs at 60% or more of what your car is actually wo
 
 | **Engine Code** | **Cost Range** |
 |---|---|
-| AJ200D / 204DTD | £3,500–£5,800 |
-| AJ126 | £4,500–£7,500 |
-| 276DT | £5,000–£7,500 |
-| AJ200P / 204PT | £3,000–£5,000 |
-| AJ133 / 508PN | £5,500–£9,000 |
+| AJ200D / 204DTD | £3,500-£5,800 |
+| AJ126 | £4,500-£7,500 |
+| 276DT | £5,000-£7,500 |
+| AJ200P / 204PT | £3,000-£5,000 |
+| AJ133 / 508PN | £5,500-£9,000 |
 
 **Highest-Risk Failures**
 
@@ -737,7 +737,7 @@ Speak to a Jaguar expert now
           "item": {
             "@type": "Thing",
             "name": "Best Used Buy",
-            "description": "XF X260 (2015–2024)  well-valued executive saloon with the revised Ingenium range."
+            "description": "XF X260 (2015-2024)  well-valued executive saloon with the revised Ingenium range."
           }
         },
         {
@@ -746,7 +746,7 @@ Speak to a Jaguar expert now
           "item": {
             "@type": "Thing",
             "name": "Most Expensive Failure",
-            "description": "276DT (2.7 TDV6) Oil Pump Failure  often kills the engine outright. £5,000–£7,500 recon."
+            "description": "276DT (2.7 TDV6) Oil Pump Failure  often kills the engine outright. £5,000-£7,500 recon."
           }
         },
         {
@@ -755,7 +755,7 @@ Speak to a Jaguar expert now
           "item": {
             "@type": "Thing",
             "name": "Safest Jaguar to Buy",
-            "description": "E-Pace X540 (2017–present)  compact SUV values comfortably absorb modern Ingenium replacement cost."
+            "description": "E-Pace X540 (2017-present)  compact SUV values comfortably absorb modern Ingenium replacement cost."
           }
         },
         {
@@ -764,7 +764,7 @@ Speak to a Jaguar expert now
           "item": {
             "@type": "Thing",
             "name": "Highest Risk Purchase",
-            "description": "X-Type X400 (2001–2009)  rapid depreciation plus reliability concerns; replacement cost frequently exceeds vehicle value."
+            "description": "X-Type X400 (2001-2009)  rapid depreciation plus reliability concerns; replacement cost frequently exceeds vehicle value."
           }
         },
         {
@@ -782,7 +782,7 @@ Speak to a Jaguar expert now
           "item": {
             "@type": "Thing",
             "name": "Best Long-Term Keeper",
-            "description": "XJ X351 (2010–2019)  flagship values comfortably absorb even the AJ133's upper recon cost."
+            "description": "XJ X351 (2010-2019)  flagship values comfortably absorb even the AJ133's upper recon cost."
           }
         }
       ]

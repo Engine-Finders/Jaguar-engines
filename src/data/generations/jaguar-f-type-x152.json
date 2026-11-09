@@ -123,7 +123,7 @@
               "name": "How much does a Jaguar F-Type X152 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned X152 engine costs between £3,000 and £9,000 supply-only, depending on the engine - the 2.0 Ingenium P300 ranges £3,000–£5,000, while the 5.0 V8 supercharged runs £5,500–£9,000. Fitting adds 10–18 hours of labour at £65–£90/hr. Use our calculator for a personalised quote."
+                "text": "A reconditioned X152 engine costs between £3,000 and £9,000 supply-only, depending on the engine - the 2.0 Ingenium P300 ranges £3,000-£5,000, while the 5.0 V8 supercharged runs £5,500-£9,000. Fitting adds 10-18 hours of labour at £65-£90/hr. Use our calculator for a personalised quote."
               }
             },
             {
@@ -155,7 +155,7 @@
               "name": "Which Jaguar F-Type X152 engine should I avoid?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Early (2013–2014) 5.0 V8 supercharged units without documented timing chain work are the highest risk. We also advise caution on any supercharged V6 or V8 without evidence of water pump replacement by 60,000 miles. If you must have a V8, choose a post-2017 unit with comprehensive service history."
+                "text": "Early (2013-2014) 5.0 V8 supercharged units without documented timing chain work are the highest risk. We also advise caution on any supercharged V6 or V8 without evidence of water pump replacement by 60,000 miles. If you must have a V8, choose a post-2017 unit with comprehensive service history."
               }
             },
             {
@@ -179,7 +179,7 @@
               "name": "How long do Jaguar F-Type X152 engines last?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The PT204 2.0 Ingenium can comfortably reach 150,000 miles with routine maintenance. The 306PS V6 supercharged is capable of 120,000+ miles with preventative cooling system work. The 508PS V8 supercharged can exceed 100,000 miles but requires meticulous servicing - timing chain work at 60,000–80,000 miles is recommended on early units."
+                "text": "The PT204 2.0 Ingenium can comfortably reach 150,000 miles with routine maintenance. The 306PS V6 supercharged is capable of 120,000+ miles with preventative cooling system work. The 508PS V8 supercharged can exceed 100,000 miles but requires meticulous servicing - timing chain work at 60,000-80,000 miles is recommended on early units."
               }
             },
             {
@@ -187,7 +187,7 @@
               "name": "What is the difference between the pre-facelift and facelift F-Type?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The pre-facelift F-Type (2013–2019) offered 3.0 V6 supercharged and 5.0 V8 supercharged options, including the SVR (575 bhp). The 2020 facelift introduced a revised front and rear design, dropped the V6 in most markets, replaced it with the P450 (450 bhp 5.0 V8), and added the R P575 (575 bhp). The 2.0 Ingenium P300 continued. The facelift also brought improved infotainment and revised interior trim."
+                "text": "The pre-facelift F-Type (2013-2019) offered 3.0 V6 supercharged and 5.0 V8 supercharged options, including the SVR (575 bhp). The 2020 facelift introduced a revised front and rear design, dropped the V6 in most markets, replaced it with the P450 (450 bhp 5.0 V8), and added the R P575 (575 bhp). The 2.0 Ingenium P300 continued. The facelift also brought improved infotainment and revised interior trim."
               }
             },
             {
@@ -261,7 +261,7 @@
     "authorityModelMode": ""
   },
   "hero": {
-    "tagPill": "Jaguar F-Type X152 • Sports Car • 2012–2024",
+    "tagPill": "Jaguar F-Type X152 • Sports Car • 2012-2024",
     "h1": "Jaguar F-Type X152 Engines - The Complete UK Guide",
     "subHeadline": "Every engine fitted to the Jaguar F-Type X152 - from the 2.0-litre Ingenium turbo four to the 3.0-litre supercharged V6 and the fire-breathing 5.0-litre supercharged V8 SVR. Real UK costs, honest failure data, and the cooling-system questions that define this generation's ownership experience. Backed by 260+ real UK F-Type enquiries in 2025 [JAG-VERIFIED].",
     "trustStrip": [
@@ -310,11 +310,11 @@
         "fuel": "Petrol, turbo",
         "displacement": "2.0L",
         "power": "300 bhp",
-        "years": "2017–2024",
+        "years": "2017-2024",
         "variants": "P300",
         "reliability": "★★★★☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "500 JLR-wide [JAG-VERIFIED]",
-        "avgReconCost": "£3,000–£5,000"
+        "avgReconCost": "£3,000-£5,000"
       },
       {
         "engineCode": "<a href='https://jaguarengines.uk/engine/306dt-306ps'>306PS</a> (AJ126)",
@@ -322,11 +322,11 @@
         "fuel": "Petrol, supercharged",
         "displacement": "3.0L",
         "power": "340 bhp",
-        "years": "2013–2017",
+        "years": "2013-2017",
         "variants": "F-Type V6",
         "reliability": "★★★★☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "560 JLR-wide [JAG-VERIFIED]",
-        "avgReconCost": "£4,500–£7,500"
+        "avgReconCost": "£4,500-£7,500"
       },
       {
         "engineCode": "306PS (AJ126)",
@@ -334,11 +334,11 @@
         "fuel": "Petrol, supercharged",
         "displacement": "3.0L",
         "power": "380 bhp",
-        "years": "2013–2021",
+        "years": "2013-2021",
         "variants": "V6 S, P380",
         "reliability": "★★★★☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "560 JLR-wide [JAG-VERIFIED]",
-        "avgReconCost": "£4,500–£7,500"
+        "avgReconCost": "£4,500-£7,500"
       },
       {
         "engineCode": "306PS (AJ126)",
@@ -346,11 +346,11 @@
         "fuel": "Petrol, supercharged",
         "displacement": "3.0L",
         "power": "400 bhp",
-        "years": "2017–2019",
+        "years": "2017-2019",
         "variants": "400 Sport",
         "reliability": "★★★★☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "560 JLR-wide [JAG-VERIFIED]",
-        "avgReconCost": "£4,500–£7,500"
+        "avgReconCost": "£4,500-£7,500"
       },
       {
         "engineCode": "508PS (AJ133)",
@@ -358,23 +358,23 @@
         "fuel": "Petrol, supercharged",
         "displacement": "5.0L",
         "power": "495 bhp",
-        "years": "2013–2017",
+        "years": "2013-2017",
         "variants": "V8 S",
         "reliability": "★★★★☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "330 JLR-wide [JAG-VERIFIED]",
-        "avgReconCost": "£5,500–£9,000"
+        "avgReconCost": "£5,500-£9,000"
       },
       {
         "engineCode": "508PS (<a href='https://jaguarengines.uk/engine/aj133'>AJ133</a>)",
         "family": "AJ133 V8",
         "fuel": "Petrol, supercharged",
         "displacement": "5.0L",
-        "power": "550–551 bhp",
-        "years": "2013–2020",
+        "power": "550-551 bhp",
+        "years": "2013-2020",
         "variants": "R (pre-facelift)",
         "reliability": "★★★★☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "330 JLR-wide [JAG-VERIFIED]",
-        "avgReconCost": "£5,500–£9,000"
+        "avgReconCost": "£5,500-£9,000"
       },
       {
         "engineCode": "508PS (AJ133)",
@@ -382,11 +382,11 @@
         "fuel": "Petrol, supercharged",
         "displacement": "5.0L",
         "power": "575 bhp",
-        "years": "2015–2020",
+        "years": "2015-2020",
         "variants": "SVR, Project 7",
         "reliability": "★★★★☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "330 JLR-wide [JAG-VERIFIED]",
-        "avgReconCost": "£5,500–£9,000"
+        "avgReconCost": "£5,500-£9,000"
       },
       {
         "engineCode": "508PS (AJ133G2)",
@@ -394,11 +394,11 @@
         "fuel": "Petrol, supercharged",
         "displacement": "5.0L",
         "power": "450 bhp",
-        "years": "2020–2024",
+        "years": "2020-2024",
         "variants": "P450",
         "reliability": "★★★★☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "330 JLR-wide [JAG-VERIFIED]",
-        "avgReconCost": "£5,500–£9,000"
+        "avgReconCost": "£5,500-£9,000"
       },
       {
         "engineCode": "508PS (AJ133G2)",
@@ -406,11 +406,11 @@
         "fuel": "Petrol, supercharged",
         "displacement": "5.0L",
         "power": "575 bhp",
-        "years": "2020–2024",
+        "years": "2020-2024",
         "variants": "R P575",
         "reliability": "★★★★☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "330 JLR-wide [JAG-VERIFIED]",
-        "avgReconCost": "£5,500–£9,000"
+        "avgReconCost": "£5,500-£9,000"
       }
     ],
     "confidenceScore": {
@@ -435,13 +435,13 @@
       },
       {
         "slot": "Highest Risk",
-        "engine": "508PS 5.0-litre Supercharged V8 (pre-2013 era) - Early AJ133 V8s (2013–2014) suffer from timing-chain guide wear and cooling system leaks. Revised in 2013+ models with significantly more robust timing components. The 5.0 V8 is a high-performance engine that demands meticulous maintenance.",
+        "engine": "508PS 5.0-litre Supercharged V8 (pre-2013 era) - Early AJ133 V8s (2013-2014) suffer from timing-chain guide wear and cooling system leaks. Revised in 2013+ models with significantly more robust timing components. The 5.0 V8 is a high-performance engine that demands meticulous maintenance.",
         "quote": "",
         "whoItsFor": "buyers with deep pockets and a commitment to specialist servicing."
       },
       {
         "slot": "Most Expensive Failure",
-        "engine": "AJ133 5.0-litre Supercharged V8 (SVR/R) - The 575 bhp SVR V8 is the most expensive engine in the F-Type line-up to replace, with reconditioned units costing £5,500–£9,000 supply-only. Timing-chain guide wear and cooling system leaks are the primary risks. A new engine from Jaguar is approximately £15,500 + VAT.",
+        "engine": "AJ133 5.0-litre Supercharged V8 (SVR/R) - The 575 bhp SVR V8 is the most expensive engine in the F-Type line-up to replace, with reconditioned units costing £5,500-£9,000 supply-only. Timing-chain guide wear and cooling system leaks are the primary risks. A new engine from Jaguar is approximately £15,500 + VAT.",
         "quote": "",
         "whoItsFor": "enthusiasts and collectors who accept the premium."
       },
@@ -472,40 +472,40 @@
     "rows": [
       {
         "engine": "PT204 (P300)",
-        "typicalMileage": "60k–120k",
+        "typicalMileage": "60k-120k",
         "commonMajorFailure": "Cooling system, water pump",
-        "repairCostSpecialist": "£400–£800",
-        "replacementCostRecon": "£3,000–£5,000",
+        "repairCostSpecialist": "£400-£800",
+        "replacementCostRecon": "£3,000-£5,000",
         "ownershipVerdict": "Best Value - reliable, simple"
       },
       {
         "engine": "306PS (V6 340/380/400)",
-        "typicalMileage": "60k–120k",
+        "typicalMileage": "60k-120k",
         "commonMajorFailure": "Water pump, coolant leaks, supercharger coupler",
-        "repairCostSpecialist": "£600–£1,200",
-        "replacementCostRecon": "£4,500–£7,500",
+        "repairCostSpecialist": "£600-£1,200",
+        "replacementCostRecon": "£4,500-£7,500",
         "ownershipVerdict": "Solid Choice - cooling system is watch-item"
       },
       {
         "engine": "508PS (V8 495/550/575)",
-        "typicalMileage": "60k–120k",
+        "typicalMileage": "60k-120k",
         "commonMajorFailure": "Timing chain guide wear, coolant leaks",
-        "repairCostSpecialist": "£2,500–£4,500",
-        "replacementCostRecon": "£5,500–£9,000",
+        "repairCostSpecialist": "£2,500-£4,500",
+        "replacementCostRecon": "£5,500-£9,000",
         "ownershipVerdict": "Premium Choice - high running costs"
       },
       {
         "engine": "508PS (P450 post-2020)",
         "typicalMileage": "- (too new)",
         "commonMajorFailure": "Emerging cooling system patterns",
-        "repairCostSpecialist": "£300–£600",
-        "replacementCostRecon": "£5,500–£9,000",
+        "repairCostSpecialist": "£300-£600",
+        "replacementCostRecon": "£5,500-£9,000",
         "ownershipVerdict": "Too Early - no major pattern yet"
       }
     ],
     "economicsRule": {
       "title": "The X152 rule",
-      "text": "A £5,500–£9,000 V8 recon against a £15,000–£20,000 early F-Type sits at 28–60% of the car's value. On a sub-£15,000 example, that brushes our 60% Jaguar threshold - we'll honestly tell you to walk away. Against a well-kept £25,000+ example, the same recon drops to a routine 22–36% - a repair decision, not a financial one. Value the car first."
+      "text": "A £5,500-£9,000 V8 recon against a £15,000-£20,000 early F-Type sits at 28-60% of the car's value. On a sub-£15,000 example, that brushes our 60% Jaguar threshold - we'll honestly tell you to walk away. Against a well-kept £25,000+ example, the same recon drops to a routine 22-36% - a repair decision, not a financial one. Value the car first."
     },
     "keyTakeaways": [
       {
@@ -528,25 +528,25 @@
         "id": 1,
         "title": "AJ126/AJ133 Supercharged V6/V8 Cooling System Failure",
         "affectedModels": "X152 3.0 SCV6 (306PS) and 5.0 SCV8 (508PS), all years.",
-        "typicalFailureMileage": "60,000–120,000 miles.",
+        "typicalFailureMileage": "60,000-120,000 miles.",
         "rootCause": "Water pump failure and coolant leaks from crossover pipes are well-documented on both supercharged V6 and V8 petrols. The supercharger sits in the engine's 'V', making access to cooling components labour-intensive. Coolant loss can lead to overheating and, if ignored, catastrophic engine failure.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
-            "dealer": "£800–£1,600 (V6) / £1,000–£2,000 (V8)",
-            "specialist": "£600–£1,200 (V6) / £800–£1,600 (V8)",
+            "dealer": "£800-£1,600 (V6) / £1,000-£2,000 (V8)",
+            "specialist": "£600-£1,200 (V6) / £800-£1,600 (V8)",
             "work": "Water pump, thermostat, coolant pipes",
             "note": ""
           },
           {
             "tier": "Catastrophic (Replacement)",
-            "dealer": "£6,000–£9,000 (V6) / £7,000–£11,000 (V8)",
-            "specialist": "£4,500–£7,500 (V6) / £5,500–£9,000 (V8)",
+            "dealer": "£6,000-£9,000 (V6) / £7,000-£11,000 (V8)",
+            "specialist": "£4,500-£7,500 (V6) / £5,500-£9,000 (V8)",
             "work": "Full reconditioned engine",
             "note": ""
           }
         ],
-        "recommendation": "On any X152 SCV6 or SCV8 approaching 60,000 miles, replace the water pump as preventative maintenance - £600–£1,600 now is cheaper than the £4,500+ engine replacement that follows an overheat.",
+        "recommendation": "On any X152 SCV6 or SCV8 approaching 60,000 miles, replace the water pump as preventative maintenance - £600-£1,600 now is cheaper than the £4,500+ engine replacement that follows an overheat.",
         "cta": {
           "label": "Compare 306PS/508PS engine prices for your F-Type →",
           "href": "/quote"
@@ -556,25 +556,25 @@
         "id": 2,
         "title": "AJ133 5.0 V8 Timing Chain Guide Wear",
         "affectedModels": "X152 5.0 SCV8 (508PS), particularly pre-2013 era engines.",
-        "typicalFailureMileage": "60,000–120,000 miles.",
+        "typicalFailureMileage": "60,000-120,000 miles.",
         "rootCause": "Timing chain guides on early AJ133 V8s can wear, leading to chain stretch and, in catastrophic cases, valve damage. Revised in 2013+ models with significantly more robust timing components. The issue is less prevalent on post-2013 units but remains a watch-item on high-mileage examples.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
-            "dealer": "£3,000–£5,000",
-            "specialist": "£2,500–£4,500",
+            "dealer": "£3,000-£5,000",
+            "specialist": "£2,500-£4,500",
             "work": "Chain, guides, tensioners replacement",
             "note": ""
           },
           {
             "tier": "Catastrophic (Replacement)",
-            "dealer": "£7,000–£11,000",
-            "specialist": "£5,500–£9,000",
+            "dealer": "£7,000-£11,000",
+            "specialist": "£5,500-£9,000",
             "work": "Full reconditioned engine",
             "note": ""
           }
         ],
-        "recommendation": "On any X152 V8, have the timing chain inspected at 60,000 miles - a £2,500–£4,500 preventative repair is cheaper than the £5,500–£9,000 replacement that follows if ignored.",
+        "recommendation": "On any X152 V8, have the timing chain inspected at 60,000 miles - a £2,500-£4,500 preventative repair is cheaper than the £5,500-£9,000 replacement that follows if ignored.",
         "cta": {
           "label": "Compare 508PS engine prices for your F-Type →",
           "href": "/quote"
@@ -584,25 +584,25 @@
         "id": 3,
         "title": "AJ126 3.0 V6 Supercharger Coupler Wear",
         "affectedModels": "X152 3.0 SCV6 (306PS), all years.",
-        "typicalFailureMileage": "60,000–100,000 miles.",
+        "typicalFailureMileage": "60,000-100,000 miles.",
         "rootCause": "The supercharger coupler (the nylon/plastic coupling between the supercharger and the drive pulley) can wear over time, leading to a rattling noise from the supercharger at idle. While not immediately catastrophic, ignored wear can lead to supercharger failure.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
-            "dealer": "£600–£1,200",
-            "specialist": "£500–£1,000",
+            "dealer": "£600-£1,200",
+            "specialist": "£500-£1,000",
             "work": "Supercharger coupler replacement",
             "note": ""
           },
           {
             "tier": "Catastrophic (Replacement)",
-            "dealer": "£4,000–£6,000",
-            "specialist": "£3,000–£5,000",
+            "dealer": "£4,000-£6,000",
+            "specialist": "£3,000-£5,000",
             "work": "Full supercharger unit replacement",
             "note": ""
           }
         ],
-        "recommendation": "If your X152 V6 exhibits a rattling noise from the supercharger at idle, have the coupler inspected immediately - £500–£1,000 now is cheaper than the £3,000+ supercharger replacement that follows if ignored.",
+        "recommendation": "If your X152 V6 exhibits a rattling noise from the supercharger at idle, have the coupler inspected immediately - £500-£1,000 now is cheaper than the £3,000+ supercharger replacement that follows if ignored.",
         "cta": {
           "label": "Compare 306PS supercharger repair prices for your F-Type →",
           "href": "/quote"
@@ -624,58 +624,58 @@
       {
         "variant": "2.0 P300",
         "engineCode": "PT204 (AJ20P4)",
-        "usedSupply": "£1,500–£2,800",
-        "reconditionedSupply": "£3,000–£5,000",
-        "rebuiltSupply": "£4,200–£6,500",
-        "labourHours": "10–14 hrs"
+        "usedSupply": "£1,500-£2,800",
+        "reconditionedSupply": "£3,000-£5,000",
+        "rebuiltSupply": "£4,200-£6,500",
+        "labourHours": "10-14 hrs"
       },
       {
         "variant": "3.0 V6 340/380/400",
         "engineCode": "306PS (AJ126)",
-        "usedSupply": "£2,500–£4,500",
-        "reconditionedSupply": "£4,500–£7,500",
-        "rebuiltSupply": "£6,000–£9,500",
-        "labourHours": "12–16 hrs"
+        "usedSupply": "£2,500-£4,500",
+        "reconditionedSupply": "£4,500-£7,500",
+        "rebuiltSupply": "£6,000-£9,500",
+        "labourHours": "12-16 hrs"
       },
       {
         "variant": "5.0 V8 S (495 bhp)",
         "engineCode": "508PS (AJ133)",
-        "usedSupply": "£3,000–£5,500",
-        "reconditionedSupply": "£5,500–£9,000",
-        "rebuiltSupply": "£8,000–£12,000",
-        "labourHours": "14–18 hrs"
+        "usedSupply": "£3,000-£5,500",
+        "reconditionedSupply": "£5,500-£9,000",
+        "rebuiltSupply": "£8,000-£12,000",
+        "labourHours": "14-18 hrs"
       },
       {
         "variant": "5.0 V8 R (550 bhp)",
         "engineCode": "508PS (AJ133)",
-        "usedSupply": "£3,000–£5,500",
-        "reconditionedSupply": "£5,500–£9,000",
-        "rebuiltSupply": "£8,000–£12,000",
-        "labourHours": "14–18 hrs"
+        "usedSupply": "£3,000-£5,500",
+        "reconditionedSupply": "£5,500-£9,000",
+        "rebuiltSupply": "£8,000-£12,000",
+        "labourHours": "14-18 hrs"
       },
       {
         "variant": "5.0 V8 SVR (575 bhp)",
         "engineCode": "508PS (AJ133)",
-        "usedSupply": "£3,000–£5,500",
-        "reconditionedSupply": "£5,500–£9,000",
-        "rebuiltSupply": "£8,000–£12,000",
-        "labourHours": "14–18 hrs"
+        "usedSupply": "£3,000-£5,500",
+        "reconditionedSupply": "£5,500-£9,000",
+        "rebuiltSupply": "£8,000-£12,000",
+        "labourHours": "14-18 hrs"
       },
       {
         "variant": "5.0 V8 P450 (post-2020)",
         "engineCode": "508PS (AJ133G2)",
-        "usedSupply": "£3,000–£5,500",
-        "reconditionedSupply": "£5,500–£9,000",
-        "rebuiltSupply": "£8,000–£12,000",
-        "labourHours": "14–18 hrs"
+        "usedSupply": "£3,000-£5,500",
+        "reconditionedSupply": "£5,500-£9,000",
+        "rebuiltSupply": "£8,000-£12,000",
+        "labourHours": "14-18 hrs"
       },
       {
         "variant": "5.0 V8 R P575 (post-2020)",
         "engineCode": "508PS (AJ133G2)",
-        "usedSupply": "£3,000–£5,500",
-        "reconditionedSupply": "£5,500–£9,000",
-        "rebuiltSupply": "£8,000–£12,000",
-        "labourHours": "14–18 hrs"
+        "usedSupply": "£3,000-£5,500",
+        "reconditionedSupply": "£5,500-£9,000",
+        "rebuiltSupply": "£8,000-£12,000",
+        "labourHours": "14-18 hrs"
       }
     ],
     "note": ""
@@ -737,7 +737,7 @@
       "2. P300 (2.0 turbo)",
       "3. R (5.0 V8 supercharged)"
     ],
-    "averageReplacementCost": "£1,500–£9,000 supply-only [JAG-QUOTE]",
+    "averageReplacementCost": "£1,500-£9,000 supply-only [JAG-QUOTE]",
     "mostCommonFailures": [
       "1. AJ126/AJ133 cooling system leaks",
       "2. AJ126 supercharger coupler wear",
@@ -772,7 +772,7 @@
       {
         "id": 1,
         "question": "How much does a Jaguar F-Type X152 engine replacement cost in the UK?",
-        "answer": "A reconditioned X152 engine costs between £3,000 and £9,000 supply-only [JAG-QUOTE], depending on the engine - the 2.0 Ingenium P300 ranges £3,000–£5,000, while the 5.0 V8 supercharged runs £5,500–£9,000. Fitting adds 10–18 hours of labour at £65–£90/hr. Use our calculator for a personalised quote."
+        "answer": "A reconditioned X152 engine costs between £3,000 and £9,000 supply-only [JAG-QUOTE], depending on the engine - the 2.0 Ingenium P300 ranges £3,000-£5,000, while the 5.0 V8 supercharged runs £5,500-£9,000. Fitting adds 10-18 hours of labour at £65-£90/hr. Use our calculator for a personalised quote."
       },
       {
         "id": 2,
@@ -792,7 +792,7 @@
       {
         "id": 5,
         "question": "Which Jaguar F-Type X152 engine should I avoid?",
-        "answer": "Early (2013–2014) 5.0 V8 supercharged units without documented timing chain work are the highest risk. We also advise caution on any supercharged V6 or V8 without evidence of water pump replacement by 60,000 miles. If you must have a V8, choose a post-2017 unit with comprehensive service history."
+        "answer": "Early (2013-2014) 5.0 V8 supercharged units without documented timing chain work are the highest risk. We also advise caution on any supercharged V6 or V8 without evidence of water pump replacement by 60,000 miles. If you must have a V8, choose a post-2017 unit with comprehensive service history."
       },
       {
         "id": 6,
@@ -807,12 +807,12 @@
       {
         "id": 8,
         "question": "How long do Jaguar F-Type X152 engines last?",
-        "answer": "The PT204 2.0 Ingenium can comfortably reach 150,000 miles with routine maintenance. The 306PS V6 supercharged is capable of 120,000+ miles with preventative cooling system work. The 508PS V8 supercharged can exceed 100,000 miles but requires meticulous servicing - timing chain work at 60,000–80,000 miles is recommended on early units."
+        "answer": "The PT204 2.0 Ingenium can comfortably reach 150,000 miles with routine maintenance. The 306PS V6 supercharged is capable of 120,000+ miles with preventative cooling system work. The 508PS V8 supercharged can exceed 100,000 miles but requires meticulous servicing - timing chain work at 60,000-80,000 miles is recommended on early units."
       },
       {
         "id": 9,
         "question": "What is the difference between the pre-facelift and facelift F-Type?",
-        "answer": "The pre-facelift F-Type (2013–2019) offered 3.0 V6 supercharged and 5.0 V8 supercharged options, including the SVR (575 bhp). The 2020 facelift introduced a revised front and rear design, dropped the V6 in most markets, replaced it with the P450 (450 bhp 5.0 V8), and added the R P575 (575 bhp). The 2.0 Ingenium P300 continued. The facelift also brought improved infotainment and revised interior trim."
+        "answer": "The pre-facelift F-Type (2013-2019) offered 3.0 V6 supercharged and 5.0 V8 supercharged options, including the SVR (575 bhp). The 2020 facelift introduced a revised front and rear design, dropped the V6 in most markets, replaced it with the P450 (450 bhp 5.0 V8), and added the R P575 (575 bhp). The 2.0 Ingenium P300 continued. The facelift also brought improved infotainment and revised interior trim."
       },
       {
         "id": 10,

@@ -46,7 +46,7 @@ SECTION_RE = re.compile(
     r"^[ \t]*SECTION\s+(?P<num>\d+)\s*[-\-:]+\s*(?P<label>.+?)\s*$",
     re.MULTILINE | re.IGNORECASE,
 )
-# Meta Part 2 only - not "PART 2 - SECTIONS 4–7"
+# Meta Part 2 only - not "PART 2 - SECTIONS 4-7"
 PART2_META_RE = re.compile(
     r"^Part\s*2\s*[-\-]?\s*(?:Meta(?:data)?|METADATA)\b.*$",
     re.MULTILINE | re.IGNORECASE,
@@ -356,7 +356,7 @@ def find_meta_block_start(page_text: str) -> int | None:
     """
     Start index of metadata/schema block.
     Prefer Part 2 - Meta/METADATA; else plain Part 2 that leads into Meta Title;
-    else META TITLE line. Never treat 'PART 2 - SECTIONS 4–7' as meta.
+    else META TITLE line. Never treat 'PART 2 - SECTIONS 4-7' as meta.
     """
     m = PART2_META_RE.search(page_text)
     if m:

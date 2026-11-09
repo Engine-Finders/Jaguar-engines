@@ -87,7 +87,7 @@
               "name": "How much does a Jaguar AJ-V6 petrol engine replacement cost?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned AJ-V6 typically costs £2,500–£4,000 supply only [ESTIMATED], with variation by displacement and rebuild quality. Fitting adds £650–£1,300 depending on labour rates. Older X-Type examples may not justify the expense."
+                "text": "A reconditioned AJ-V6 typically costs £2,500-£4,000 supply only [ESTIMATED], with variation by displacement and rebuild quality. Fitting adds £650-£1,300 depending on labour rates. Older X-Type examples may not justify the expense."
               }
             },
             {
@@ -103,7 +103,7 @@
               "name": "What is the most common Jaguar AJ-V6 petrol failure?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Coolant leaks from the plastic crossover pipe (rear of engine) are the most frequent failure - often causing overheating and head gasket risk. Timing chain tensioner wear is also common, typically appearing around 70,000–100,000 miles."
+                "text": "Coolant leaks from the plastic crossover pipe (rear of engine) are the most frequent failure - often causing overheating and head gasket risk. Timing chain tensioner wear is also common, typically appearing around 70,000-100,000 miles."
               }
             },
             {
@@ -111,7 +111,7 @@
               "name": "Which Jaguar models use the AJ-V6 petrol?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The naturally aspirated AJ-V6 powered the X-Type (2.5/3.0), S-Type (3.0), early XF (3.0), XJ (3.0/3.2) and some XK (3.0) models - spanning roughly 2001–2015."
+                "text": "The naturally aspirated AJ-V6 powered the X-Type (2.5/3.0), S-Type (3.0), early XF (3.0), XJ (3.0/3.2) and some XK (3.0) models - spanning roughly 2001-2015."
               }
             },
             {
@@ -195,7 +195,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar • AJ‑V6 Petrol • Petrol • V6 NA • 2001–2015",
+    "tagPill": "Jaguar • AJ‑V6 Petrol • Petrol • V6 NA • 2001-2015",
     "h1": "Jaguar AJ‑V6 Petrol Engine - Specs, Reliability & Replacement Cost",
     "subHeadline": "The Jaguar AJ‑V6 is a smooth, naturally‑aspirated six‑cylinder - reliable overall, but cooling system and timing chain issues are common. Backed by strong UK demand across multiple models [ESTIMATED].",
     "trustStrip": [],
@@ -216,15 +216,15 @@
       },
       {
         "metric": "Configuration / Displacement",
-        "value": "2.5–3.2 L V6 NA"
+        "value": "2.5-3.2 L V6 NA"
       },
       {
         "metric": "Power Range",
-        "value": "200–300 bhp [ESTIMATED]"
+        "value": "200-300 bhp [ESTIMATED]"
       },
       {
         "metric": "Years Produced",
-        "value": "2001–2015"
+        "value": "2001-2015"
       },
       {
         "metric": "Models Fitted (Jaguar only)",
@@ -256,7 +256,7 @@
         },
         {
           "dimension": "Repair Cost",
-          "score": "16 (Reconditioned midpoint: £3,250 (£2,500–£4,000 [ESTIMATED]) → £3,000–£4,999 band → 16)"
+          "score": "16 (Reconditioned midpoint: £3,250 (£2,500-£4,000 [ESTIMATED]) → £3,000-£4,999 band → 16)"
         },
         {
           "dimension": "Repairability",
@@ -298,7 +298,7 @@
       "Warranty"
     ],
     "rows": [],
-    "labourEstimate": "Fitting an AJ‑V6 typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [ESTIMATED].",
+    "labourEstimate": "Fitting an AJ‑V6 typically takes 10-14 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [ESTIMATED].",
     "sharedCostNote": "Not applicable - this engine is exclusive to Jaguar.",
     "cta": {
       "label": "→ Compare AJ‑V6 Petrol engine prices from UK specialists",
@@ -310,7 +310,7 @@
       {
         "id": 1,
         "question": "How much does a Jaguar AJ‑V6 petrol engine replacement cost?",
-        "answer": "A reconditioned AJ‑V6 typically costs £2,500–£4,000 supply only [ESTIMATED], with variation by displacement and rebuild quality. Fitting adds £650–£1,300 depending on labour rates. Older X‑Type examples may not justify the expense."
+        "answer": "A reconditioned AJ‑V6 typically costs £2,500-£4,000 supply only [ESTIMATED], with variation by displacement and rebuild quality. Fitting adds £650-£1,300 depending on labour rates. Older X‑Type examples may not justify the expense."
       },
       {
         "id": 2,
@@ -320,12 +320,12 @@
       {
         "id": 3,
         "question": "What is the most common Jaguar AJ‑V6 petrol failure?",
-        "answer": "Coolant leaks from the plastic crossover pipe (rear of engine) are the most frequent failure - often causing overheating and head gasket risk. Timing chain tensioner wear is also common, typically appearing around 70,000–100,000 miles."
+        "answer": "Coolant leaks from the plastic crossover pipe (rear of engine) are the most frequent failure - often causing overheating and head gasket risk. Timing chain tensioner wear is also common, typically appearing around 70,000-100,000 miles."
       },
       {
         "id": 4,
         "question": "Which Jaguar models use the AJ‑V6 petrol?",
-        "answer": "The naturally aspirated AJ‑V6 powered the X‑Type (2.5/3.0), S‑Type (3.0), early XF (3.0), XJ (3.0/3.2) and some XK (3.0) models - spanning roughly 2001–2015."
+        "answer": "The naturally aspirated AJ‑V6 powered the X‑Type (2.5/3.0), S‑Type (3.0), early XF (3.0), XJ (3.0/3.2) and some XK (3.0) models - spanning roughly 2001-2015."
       },
       {
         "id": 5,

@@ -59,13 +59,13 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "XJ81 6.0 V12 (8C, 1993–1994)",
+              "name": "XJ81 6.0 V12 (8C, 1993-1994)",
               "url": "https://jaguarengines.uk/xj"
             },
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "X305 6.0 V12 (8C, 1994–1997)",
+              "name": "X305 6.0 V12 (8C, 1994-1997)",
               "url": "https://jaguarengines.uk/xj"
             }
           ]
@@ -90,7 +90,7 @@
               "name": "How much does a Jaguar XJ 6.0 V12 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned 8C V12 typically costs £4,000–£8,000 supply only, with rebuilt units reaching £12,000. Fitting adds £1,500–£2,500. A full reconditioning can cost $11,000–$25,000 depending on the extent of work. Use our calculator for a figure specific to your XJ."
+                "text": "A reconditioned 8C V12 typically costs £4,000-£8,000 supply only, with rebuilt units reaching £12,000. Fitting adds £1,500-£2,500. A full reconditioning can cost $11,000-$25,000 depending on the extent of work. Use our calculator for a figure specific to your XJ."
               }
             },
             {
@@ -114,7 +114,7 @@
               "name": "Is it worth replacing an XJ 6.0 V12 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on vehicle value. XJ81 and X305 V12 values range from £5,000–£20,000+ depending on condition. A £5,000–£7,000 recon is 25–140% of the car's value. For lower‑value examples (sub‑£8,000), replacement may exceed our 60% Jaguar scrap threshold. A well‑maintained, low‑mileage example justifies replacement; a tired, high‑mileage one may not."
+                "text": "Depends on vehicle value. XJ81 and X305 V12 values range from £5,000-£20,000+ depending on condition. A £5,000-£7,000 recon is 25-140% of the car's value. For lower‑value examples (sub‑£8,000), replacement may exceed our 60% Jaguar scrap threshold. A well‑maintained, low‑mileage example justifies replacement; a tired, high‑mileage one may not."
               }
             },
             {
@@ -191,7 +191,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar XJ 6.0 V12 • 1993–1997 • 8C",
+    "tagPill": "Jaguar XJ 6.0 V12 • 1993-1997 • 8C",
     "h1": "Jaguar XJ 6.0 V12 Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "The ultimate Jaguar V12 - 6.0 litres, 311 hp and 350 lb‑ft of torque. Fitted to the XJ81 and X305, this is the final and most refined iteration of the world's first mass‑production V12. Get quotes from trusted UK specialists today.",
     "trustBadges": [
@@ -237,23 +237,23 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£2,500–£4,500",
-        "fittedIndie": "£3,700–£6,000",
-        "warranty": "1–6 months",
+        "supplyOnly": "£2,500-£4,500",
+        "fittedIndie": "£3,700-£6,000",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; lower-mileage donor"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£4,000–£8,000",
-        "fittedIndie": "£5,300–£9,500",
-        "warranty": "12–24 months",
+        "supplyOnly": "£4,000-£8,000",
+        "fittedIndie": "£5,300-£9,500",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£6,000–£12,000",
-        "fittedIndie": "£7,500–£14,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£6,000-£12,000",
+        "fittedIndie": "£7,500-£14,000",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; concours‑level restoration"
       },
       {
@@ -265,7 +265,7 @@
       }
     ],
     "figuresNote": "Figures above reflect the current 6.0 V12 generation. Jaguar V12 engine rebuilds are labour‑intensive and require specialist knowledge. A full reconditioning can easily cost $11,000 to $25,000 depending on the extent of component replacement. Reconditioned long blocks are significantly more affordable than main dealer alternatives.",
-    "labourEstimate": "Fitting an XJ 6.0 V12 engine typically takes 16–22 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). V12‑specific work requires specialist knowledge.",
+    "labourEstimate": "Fitting an XJ 6.0 V12 engine typically takes 16-22 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer). V12‑specific work requires specialist knowledge.",
     "cta": {
       "label": "→ Compare XJ 6.0 V12 engine prices from UK specialists",
       "href": "/quote"
@@ -277,8 +277,8 @@
         "id": 1,
         "title": "Cooling System Failure (Water Pump, Thermostat, Radiator, Hoses)",
         "symptoms": "Coolant loss, overheating, temperature gauge fluctuations, steam from the engine bay, gurgling noises from the heater core.",
-        "typicalMileage": "40,000–80,000 miles (or age‑related)",
-        "repairCost": "£500–£2,000 (water pump, thermostat, radiator and hose replacement)【PLACEHOLDER - confirm vs cost sheet】",
+        "typicalMileage": "40,000-80,000 miles (or age‑related)",
+        "repairCost": "£500-£2,000 (water pump, thermostat, radiator and hose replacement)【PLACEHOLDER - confirm vs cost sheet】",
         "replacementCost": "N/A - repair only (if caught before overheating)",
         "urgency": {
           "icon": "🔴",
@@ -295,8 +295,8 @@
         "id": 2,
         "title": "Ignition System Deterioration (Distributor, HT Leads, Coils)",
         "symptoms": "Misfire, rough idle, loss of power, poor starting, engine cutting out, one bank not firing.",
-        "typicalMileage": "40,000–80,000 miles (or age‑related)",
-        "repairCost": "£400–£1,500 (distributor cap, rotor, HT leads, coils)【PLACEHOLDER - confirm vs cost sheet】",
+        "typicalMileage": "40,000-80,000 miles (or age‑related)",
+        "repairCost": "£400-£1,500 (distributor cap, rotor, HT leads, coils)【PLACEHOLDER - confirm vs cost sheet】",
         "replacementCost": "N/A - repair only",
         "urgency": {
           "icon": "🟠",
@@ -314,7 +314,7 @@
         "title": "Aging Fuel Hoses and Injector Seals",
         "symptoms": "Fuel smell from the engine bay, rough idle, hard starting, visible fuel leaks, engine fire risk.",
         "typicalMileage": "Age‑related - all 6.0 V12s are now over 25 years old",
-        "repairCost": "£300–£800 (fuel hose and injector seal replacement)【PLACEHOLDER - confirm vs cost sheet】",
+        "repairCost": "£300-£800 (fuel hose and injector seal replacement)【PLACEHOLDER - confirm vs cost sheet】",
         "replacementCost": "N/A - repair only",
         "urgency": {
           "icon": "🔴",
@@ -351,25 +351,25 @@
         {
           "problem": "Cooling system failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£500–£2,000",
+          "typicalCost": "£500-£2,000",
           "whenItMakesSense": "Refresh the entire system - do preventatively"
         },
         {
           "problem": "Ignition system deterioration",
           "repairable": "✅ Yes",
-          "typicalCost": "£400–£1,500",
+          "typicalCost": "£400-£1,500",
           "whenItMakesSense": "Replace distributor cap, HT leads and coils - routine maintenance"
         },
         {
           "problem": "Fuel hose / injector seal failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£300–£800",
+          "typicalCost": "£300-£800",
           "whenItMakesSense": "Replace all fuel hoses - critical safety item"
         },
         {
           "problem": "Timing chain tensioner wear",
           "repairable": "⚠️ Sometimes",
-          "typicalCost": "£800–£2,500",
+          "typicalCost": "£800-£2,500",
           "whenItMakesSense": "Less common on V12 - assess overall condition"
         },
         {
@@ -425,10 +425,10 @@
     "rows": [
       {
         "engineCode": "8C (6.0 V12)",
-        "years": "1993–1997",
+        "years": "1993-1997",
         "power": "311 hp (229 kW) @ 5,350 rpm; 350 lb‑ft (475 Nm) @ 2,850 rpm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£4,000–£8,000【PLACEHOLDER】"
+        "avgReconCost": "£4,000-£8,000【PLACEHOLDER】"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -470,7 +470,7 @@
       },
       {
         "label": "Average Enquiry Mileage",
-        "value": "50,000–70,000 miles【PATTERN DATA】"
+        "value": "50,000-70,000 miles【PATTERN DATA】"
       },
       {
         "label": "Average Replacement Cost",
@@ -495,7 +495,7 @@
       {
         "id": 1,
         "question": "How much does a Jaguar XJ 6.0 V12 engine replacement cost in the UK?",
-        "answer": "A reconditioned 8C V12 typically costs £4,000–£8,000 supply only, with rebuilt units reaching £12,000. Fitting adds £1,500–£2,500. A full reconditioning can cost $11,000–$25,000 depending on the extent of work. Use our calculator for a figure specific to your XJ."
+        "answer": "A reconditioned 8C V12 typically costs £4,000-£8,000 supply only, with rebuilt units reaching £12,000. Fitting adds £1,500-£2,500. A full reconditioning can cost $11,000-$25,000 depending on the extent of work. Use our calculator for a figure specific to your XJ."
       },
       {
         "id": 2,
@@ -510,7 +510,7 @@
       {
         "id": 4,
         "question": "Is it worth replacing an XJ 6.0 V12 engine, or should I scrap the car?",
-        "answer": "Depends on vehicle value. XJ81 and X305 V12 values range from £5,000–£20,000+ depending on condition. A £5,000–£7,000 recon is 25–140% of the car's value. For lower‑value examples (sub‑£8,000), replacement may exceed our 60% Jaguar scrap threshold. A well‑maintained, low‑mileage example justifies replacement; a tired, high‑mileage one may not."
+        "answer": "Depends on vehicle value. XJ81 and X305 V12 values range from £5,000-£20,000+ depending on condition. A £5,000-£7,000 recon is 25-140% of the car's value. For lower‑value examples (sub‑£8,000), replacement may exceed our 60% Jaguar scrap threshold. A well‑maintained, low‑mileage example justifies replacement; a tired, high‑mileage one may not."
       },
       {
         "id": 5,

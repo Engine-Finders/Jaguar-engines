@@ -87,7 +87,7 @@
               "name": "How much does a Jaguar Ingenium 2.0 petrol engine replacement cost?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned 204PT typically costs £3,200–£4,500 supply only [JAG-QUOTE], varying by power output (200PS vs 300PS) and mileage on the donor unit. Fitting adds £650–£910 depending on labour rates."
+                "text": "A reconditioned 204PT typically costs £3,200-£4,500 supply only [JAG-QUOTE], varying by power output (200PS vs 300PS) and mileage on the donor unit. Fitting adds £650-£910 depending on labour rates."
               }
             },
             {
@@ -103,7 +103,7 @@
               "name": "What is the most common Jaguar Ingenium 2.0 petrol failure?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Timing chain tensioner wear and guide degradation is the most common issue, typically appearing from 50,000–70,000 miles, often presenting as a cold-start rattle that lasts 2–5 seconds."
+                "text": "Timing chain tensioner wear and guide degradation is the most common issue, typically appearing from 50,000-70,000 miles, often presenting as a cold-start rattle that lasts 2-5 seconds."
               }
             },
             {
@@ -195,7 +195,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar • Ingenium 2.0 Petrol • Petrol • 2.0L I4 Turbo • 2017–present",
+    "tagPill": "Jaguar • Ingenium 2.0 Petrol • Petrol • 2.0L I4 Turbo • 2017-present",
     "h1": "Jaguar Ingenium 2.0 Petrol Engine - Specs, Reliability & Replacement Cost",
     "subHeadline": "The Jaguar Ingenium 2.0 petrol is a modern four-cylinder turbo - generally reliable, but timing chain tensioner wear is its defining risk. Backed by 500+ real UK enquiries in 2025 [JAG-VERIFIED].",
     "trustStrip": [
@@ -237,11 +237,11 @@
       },
       {
         "metric": "Power Range",
-        "value": "200–300 PS [THIRD-PARTY]"
+        "value": "200-300 PS [THIRD-PARTY]"
       },
       {
         "metric": "Years Produced",
-        "value": "2017–present"
+        "value": "2017-present"
       },
       {
         "metric": "Models Fitted (Jaguar only)",
@@ -273,7 +273,7 @@
         },
         {
           "dimension": "Repair Cost",
-          "score": "12 (Reconditioned midpoint ~£3,700 - falls in £3,000–£4,999 bracket)"
+          "score": "12 (Reconditioned midpoint ~£3,700 - falls in £3,000-£4,999 bracket)"
         },
         {
           "dimension": "Repairability",
@@ -285,7 +285,7 @@
         },
         {
           "dimension": "Replacement Economics",
-          "score": "12 (Recon cost ~45–60% of lowest Jaguar host value (XE ~£7,000))"
+          "score": "12 (Recon cost ~45-60% of lowest Jaguar host value (XE ~£7,000))"
         },
         {
           "dimension": "Total",
@@ -309,31 +309,31 @@
         "model": "Jaguar XE",
         "generation": "X760",
         "variantBadge": "P200 / P250 / P300",
-        "years": "2017–present"
+        "years": "2017-present"
       },
       {
         "model": "Jaguar XF",
         "generation": "X260",
         "variantBadge": "P200 / P250 / P300",
-        "years": "2017–present"
+        "years": "2017-present"
       },
       {
         "model": "Jaguar F-Pace",
         "generation": "X761",
         "variantBadge": "P200 / P250 / P300",
-        "years": "2017–present"
+        "years": "2017-present"
       },
       {
         "model": "Jaguar E-Pace",
         "generation": "X540",
         "variantBadge": "P200 / P250 / P300",
-        "years": "2018–present"
+        "years": "2018-present"
       },
       {
         "model": "Jaguar F-Type",
         "generation": "X152",
         "variantBadge": "P300",
-        "years": "2017–present"
+        "years": "2017-present"
       }
     ],
     "crossBrandNote": "Also powers the Land Rover Discovery Sport, Evoque, Velar and Freelander 2 → [Land Rover Ingenium 2.0 Petrol page]."
@@ -348,24 +348,24 @@
     "rows": [
       {
         "condition": "Used",
-        "supplyOnly": "£2,700–£3,500 [JAG-QUOTE]",
-        "fittedIndie": "£3,250–£4,050",
-        "warranty": "3–6 months"
+        "supplyOnly": "£2,700-£3,500 [JAG-QUOTE]",
+        "fittedIndie": "£3,250-£4,050",
+        "warranty": "3-6 months"
       },
       {
         "condition": "Reconditioned",
-        "supplyOnly": "£3,200–£4,500 [JAG-QUOTE]",
-        "fittedIndie": "£3,750–£5,050",
+        "supplyOnly": "£3,200-£4,500 [JAG-QUOTE]",
+        "fittedIndie": "£3,750-£5,050",
         "warranty": "12 months"
       },
       {
         "condition": "Rebuilt",
-        "supplyOnly": "£4,200–£6,500 [JAG-QUOTE]",
-        "fittedIndie": "£4,750–£7,050",
-        "warranty": "12–24 months"
+        "supplyOnly": "£4,200-£6,500 [JAG-QUOTE]",
+        "fittedIndie": "£4,750-£7,050",
+        "warranty": "12-24 months"
       }
     ],
-    "labourEstimate": "Fitting an Ingenium 2.0 petrol typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE].",
+    "labourEstimate": "Fitting an Ingenium 2.0 petrol typically takes 10-14 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [JAG-QUOTE].",
     "sharedCostNote": "Parts cost is identical across Jaguar and Land Rover applications; labour time varies slightly by engine bay access.",
     "cta": {
       "label": "→ Compare Ingenium 2.0 Petrol engine prices from UK specialists",
@@ -377,7 +377,7 @@
       {
         "id": 1,
         "question": "Cost - \"How much does a Jaguar Ingenium 2.0 petrol engine replacement cost?\"",
-        "answer": "A reconditioned 204PT typically costs £3,200–£4,500 supply only [JAG-QUOTE], varying by power output (200PS vs 300PS) and mileage on the donor unit. Fitting adds £650–£910 depending on labour rates."
+        "answer": "A reconditioned 204PT typically costs £3,200-£4,500 supply only [JAG-QUOTE], varying by power output (200PS vs 300PS) and mileage on the donor unit. Fitting adds £650-£910 depending on labour rates."
       },
       {
         "id": 2,
@@ -387,7 +387,7 @@
       {
         "id": 3,
         "question": "Common failure - \"What is the most common Jaguar Ingenium 2.0 petrol failure?\"",
-        "answer": "Timing chain tensioner wear and guide degradation is the most common issue, typically appearing from 50,000–70,000 miles, often presenting as a cold-start rattle that lasts 2–5 seconds."
+        "answer": "Timing chain tensioner wear and guide degradation is the most common issue, typically appearing from 50,000-70,000 miles, often presenting as a cold-start rattle that lasts 2-5 seconds."
       },
       {
         "id": 4,

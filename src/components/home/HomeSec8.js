@@ -11,7 +11,7 @@ const ICON_LG = "h-[3.75rem] w-[3.75rem] md:h-[4.5rem] md:w-[4.5rem]";
 function cleanText(value = "") {
   return String(value || "")
     .replaceAll("Â£", "£")
-    .replaceAll("â€“", "–")
+    .replaceAll("â€“", "-")
     .replaceAll("â€”", "")
     .replaceAll("â†’", "")
     .trim();

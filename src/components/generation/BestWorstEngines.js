@@ -175,7 +175,7 @@ function EngineCard({ item, generationCode, isDark }) {
   const style = resolveStyle(item, isDark);
   // The Jaguar engine this card names (AJ133, AJ27, AJ30, 276DT...).
   const engineImage = engineImageForCard(item, generationCode);
-  const engineAlt = String(item.engine || "").replace(/<[^>]*>/g, "").split(/\s[–-]\s|"/)[0].trim();
+  const engineAlt = String(item.engine || "").replace(/<[^>]*>/g, "").split(/\s[--]\s|"/)[0].trim();
   const cardSurfaceClass = isDark
     ? "border-white/15 bg-[rgba(20,21,21,0.96)] shadow-[0_10px_28px_rgba(0,0,0,0.4)]"
     : "border-[var(--color-border)] bg-white shadow-[0_10px_28px_rgba(17,18,16,0.08)]";

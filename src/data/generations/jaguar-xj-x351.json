@@ -153,7 +153,7 @@
               "name": "How much does a Jaguar XJ X351 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned X351 engine typically costs £2,500–£10,000 supply only [JAG-QUOTE], depending on the engine - the 3.0 V6 diesel sits at £4,500–£7,000, the 5.0 V8 at £4,000–£6,500, and the supercharged XJR at £5,500–£10,000. Fitting adds £650–£1,170. Use our calculator for a personalised figure."
+                "text": "A reconditioned X351 engine typically costs £2,500-£10,000 supply only [JAG-QUOTE], depending on the engine - the 3.0 V6 diesel sits at £4,500-£7,000, the 5.0 V8 at £4,000-£6,500, and the supercharged XJR at £5,500-£10,000. Fitting adds £650-£1,170. Use our calculator for a personalised figure."
               }
             },
             {
@@ -169,7 +169,7 @@
               "name": "What are the common problems with the Jaguar XJ X351?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Early 5.0-litre AJ133 engines (pre-2013) suffer from timing chain guide wear - an engine-out job costing £2,500–£4,500. PCV diaphragm failure on 5.0 V8s causes oil consumption and lean running codes. The 3.0 supercharged V6 has cooling system pipework leaks and supercharger insulator spring issues. Battery-related electrical gremlins and sticky buttons (rubberised coating breakdown) affect all models."
+                "text": "Early 5.0-litre AJ133 engines (pre-2013) suffer from timing chain guide wear - an engine-out job costing £2,500-£4,500. PCV diaphragm failure on 5.0 V8s causes oil consumption and lean running codes. The 3.0 supercharged V6 has cooling system pipework leaks and supercharger insulator spring issues. Battery-related electrical gremlins and sticky buttons (rubberised coating breakdown) affect all models."
               }
             },
             {
@@ -201,7 +201,7 @@
               "name": "Is it worth replacing an X351 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on the car's value. Against a £20,000 XJR, a £5,500–£9,000 recon is 28–45% of the car's value - well within our 60% Jaguar threshold. Against a £10,000 3.0 V6 diesel, a £4,500–£7,000 recon is 45–70% - borderline but often viable for a well-kept example. For a £15,000 5.0 naturally aspirated, a £4,000–£6,500 recon is 27–43% - a repair decision, not a scrap question. Value the car and its condition first; if it's a pre-2013 5.0 without chain history, walk away or budget for the work immediately."
+                "text": "Depends on the car's value. Against a £20,000 XJR, a £5,500-£9,000 recon is 28-45% of the car's value - well within our 60% Jaguar threshold. Against a £10,000 3.0 V6 diesel, a £4,500-£7,000 recon is 45-70% - borderline but often viable for a well-kept example. For a £15,000 5.0 naturally aspirated, a £4,000-£6,500 recon is 27-43% - a repair decision, not a scrap question. Value the car and its condition first; if it's a pre-2013 5.0 without chain history, walk away or budget for the work immediately."
               }
             },
             {
@@ -217,7 +217,7 @@
               "name": "What is the difference between the X351, X350, and other XJ generations?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The X351 (2010–2019) is the fourth-generation XJ - it featured an all-aluminium architecture and Ian Callum's dramatic new design language. It's fundamentally different from the X350 (2003–2009), which had a steel chassis and more traditional styling. The X350 is covered on its own Generation Page. The X351 was the last traditionally-powered XJ; it was succeeded by the all-electric XJ which was cancelled in 2021."
+                "text": "The X351 (2010-2019) is the fourth-generation XJ - it featured an all-aluminium architecture and Ian Callum's dramatic new design language. It's fundamentally different from the X350 (2003-2009), which had a steel chassis and more traditional styling. The X350 is covered on its own Generation Page. The X351 was the last traditionally-powered XJ; it was succeeded by the all-electric XJ which was cancelled in 2021."
               }
             },
             {
@@ -291,7 +291,7 @@
     "authorityModelMode": ""
   },
   "hero": {
-    "tagPill": "Jaguar XJ X351 • Saloon • 2010–2019",
+    "tagPill": "Jaguar XJ X351 • Saloon • 2010-2019",
     "h1": "Jaguar XJ X351 Engines - The Complete UK Guide",
     "subHeadline": "Every engine fitted to the X351 flagship saloon - from the 3.0-litre V6 diesel and supercharged V6 to the 5.0-litre naturally aspirated and supercharged V8s. Real UK replacement costs and honest reliability data for Jaguar's last traditionally-powered XJ. Backed by 151+ real UK enquiries in 2025 [JAG-VERIFIED].",
     "trustStrip": [
@@ -340,11 +340,11 @@
         "fuel": "Diesel",
         "displacement": "3.0L (2993cc)",
         "power": "275 PS",
-        "years": "2010–2015",
+        "years": "2010-2015",
         "variants": "3.0D, 3.0D LWB",
         "reliability": "★★★★☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£4,500–£7,000 [JAG-QUOTE]"
+        "avgReconCost": "£4,500-£7,000 [JAG-QUOTE]"
       },
       {
         "engineCode": "AJV6 / 306PS",
@@ -352,11 +352,11 @@
         "fuel": "Petrol",
         "displacement": "3.0L (2995cc)",
         "power": "340 PS",
-        "years": "2012–2019",
+        "years": "2012-2019",
         "variants": "3.0 SC V6",
         "reliability": "★★★★☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£4,500–£7,500 [JAG-QUOTE]"
+        "avgReconCost": "£4,500-£7,500 [JAG-QUOTE]"
       },
       {
         "engineCode": "AJV6 (N/A)",
@@ -364,11 +364,11 @@
         "fuel": "Petrol",
         "displacement": "3.0L (2967cc)",
         "power": "238 PS",
-        "years": "2011–2015",
+        "years": "2011-2015",
         "variants": "3.0 V6",
         "reliability": "★★★☆☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£4,000–£6,500 [JAG-QUOTE]"
+        "avgReconCost": "£4,000-£6,500 [JAG-QUOTE]"
       },
       {
         "engineCode": "2.0 i4 Turbo",
@@ -376,11 +376,11 @@
         "fuel": "Petrol",
         "displacement": "2.0L (1999cc)",
         "power": "240 PS",
-        "years": "2012–2019",
+        "years": "2012-2019",
         "variants": "2.0T, 2.0T LWB",
         "reliability": "★★★☆☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£2,500–£4,500 [JAG-QUOTE]"
+        "avgReconCost": "£2,500-£4,500 [JAG-QUOTE]"
       },
       {
         "engineCode": "AJ133 / 508PN",
@@ -388,11 +388,11 @@
         "fuel": "Petrol",
         "displacement": "5.0L (5000cc)",
         "power": "385 PS",
-        "years": "2010–2015",
+        "years": "2010-2015",
         "variants": "5.0 V8",
         "reliability": "★★★★☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£4,000–£6,500 [JAG-QUOTE]"
+        "avgReconCost": "£4,000-£6,500 [JAG-QUOTE]"
       },
       {
         "engineCode": "AJ133 / 508PS",
@@ -400,11 +400,11 @@
         "fuel": "Petrol",
         "displacement": "5.0L (5000cc)",
         "power": "510 PS",
-        "years": "2010–2019",
+        "years": "2010-2019",
         "variants": "Supersport, XJ 5.0 SC",
         "reliability": "★★★☆☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£5,500–£9,000 [JAG-QUOTE]"
+        "avgReconCost": "£5,500-£9,000 [JAG-QUOTE]"
       },
       {
         "engineCode": "AJ133 / 508PS (uprated)",
@@ -412,11 +412,11 @@
         "fuel": "Petrol",
         "displacement": "5.0L (5000cc)",
         "power": "550 PS",
-        "years": "2013–2019",
+        "years": "2013-2019",
         "variants": "XJR, XJR 575",
         "reliability": "★★★☆☆ [PROVISIONAL - pending dedicated Engine Page]",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£6,000–£10,000 [JAG-QUOTE]"
+        "avgReconCost": "£6,000-£10,000 [JAG-QUOTE]"
       }
     ],
     "confidenceScore": {
@@ -448,7 +448,7 @@
       {
         "slot": "Most Expensive Failure",
         "engine": "5.0 Supercharged V8 (508PS, XJR/XJR 575)",
-        "quote": "Timing chain replacement on the 5.0-litre AJ133 is an engine‑out job requiring specialist tooling - £2,500–£4,500 is typical. A full engine replacement can exceed £9,000. The XJR's 550 PS variant adds parts scarcity and cost.",
+        "quote": "Timing chain replacement on the 5.0-litre AJ133 is an engine‑out job requiring specialist tooling - £2,500-£4,500 is typical. A full engine replacement can exceed £9,000. The XJR's 550 PS variant adds parts scarcity and cost.",
         "whoItsFor": "buyers with deep pockets who want the ultimate XJ flagship."
       },
       {
@@ -478,64 +478,64 @@
     "rows": [
       {
         "engine": "3.0 V6 D (AJV6D)",
-        "typicalMileage": "80k–150k",
+        "typicalMileage": "80k-150k",
         "commonMajorFailure": "DPF clogging (urban use)",
-        "repairCostSpecialist": "£400–£1,200",
-        "replacementCostRecon": "£4,500–£7,000",
+        "repairCostSpecialist": "£400-£1,200",
+        "replacementCostRecon": "£4,500-£7,000",
         "ownershipVerdict": "Most Reliable - proven 200k+ mile engine"
       },
       {
         "engine": "3.0 V6 SC (306PS)",
-        "typicalMileage": "60k–100k",
+        "typicalMileage": "60k-100k",
         "commonMajorFailure": "Coolant pipework, supercharger insulator",
-        "repairCostSpecialist": "£400–£1,000",
-        "replacementCostRecon": "£4,500–£7,500",
+        "repairCostSpecialist": "£400-£1,000",
+        "replacementCostRecon": "£4,500-£7,500",
         "ownershipVerdict": "Best Petrol - modern, refined, reliable"
       },
       {
         "engine": "3.0 V6 N/A (AJV6)",
-        "typicalMileage": "60k–100k",
+        "typicalMileage": "60k-100k",
         "commonMajorFailure": "Cooling system",
-        "repairCostSpecialist": "£300–£800",
-        "replacementCostRecon": "£4,000–£6,500",
+        "repairCostSpecialist": "£300-£800",
+        "replacementCostRecon": "£4,000-£6,500",
         "ownershipVerdict": "Rare & Underpowered - for purists only"
       },
       {
         "engine": "2.0 i4 Turbo",
-        "typicalMileage": "50k–80k",
+        "typicalMileage": "50k-80k",
         "commonMajorFailure": "Turbocharger, cooling system",
-        "repairCostSpecialist": "£500–£1,500",
-        "replacementCostRecon": "£2,500–£4,500",
+        "repairCostSpecialist": "£500-£1,500",
+        "replacementCostRecon": "£2,500-£4,500",
         "ownershipVerdict": "Economy Option - Chinese market special"
       },
       {
         "engine": "5.0 V8 N/A (508PN)",
-        "typicalMileage": "60k–120k",
+        "typicalMileage": "60k-120k",
         "commonMajorFailure": "Timing chain guides (early)",
-        "repairCostSpecialist": "£2,500–£4,500",
-        "replacementCostRecon": "£4,000–£6,500",
+        "repairCostSpecialist": "£2,500-£4,500",
+        "replacementCostRecon": "£4,000-£6,500",
         "ownershipVerdict": "V8 Value - simpler than supercharged"
       },
       {
         "engine": "5.0 V8 SC (508PS 510)",
-        "typicalMileage": "50k–100k",
+        "typicalMileage": "50k-100k",
         "commonMajorFailure": "Timing chain guides, PCV, vacuum pump",
-        "repairCostSpecialist": "£2,500–£5,500",
-        "replacementCostRecon": "£5,500–£9,000",
+        "repairCostSpecialist": "£2,500-£5,500",
+        "replacementCostRecon": "£5,500-£9,000",
         "ownershipVerdict": "High Power, High Cost - budget for maintenance"
       },
       {
         "engine": "5.0 V8 SC (508PS 550)",
-        "typicalMileage": "40k–80k",
+        "typicalMileage": "40k-80k",
         "commonMajorFailure": "Timing chain, supercharger, cooling",
-        "repairCostSpecialist": "£3,000–£6,000",
-        "replacementCostRecon": "£6,000–£10,000",
+        "repairCostSpecialist": "£3,000-£6,000",
+        "replacementCostRecon": "£6,000-£10,000",
         "ownershipVerdict": "Ultimate XJ - rare, expensive, exhilarating"
       }
     ],
     "economicsRule": {
       "title": "The X351 rule",
-      "text": "A £5,500–£9,000 5.0 XJR recon against a £12,000–£25,000 XJR sits at 22–75% of the car's value - at the upper end, that brushes our 60% Jaguar scrap threshold. Against a £20,000+ example, the same recon drops to 28–45% - a repair decision, not a scrap question. For a 3.0 V6 diesel at £10,000–£18,000, a £4,500–£7,000 recon is 25–70% - borderline on lower‑value examples. Value the car first; if it's a pre‑2013 5.0 without timing chain history, walk away or budget for the work immediately."
+      "text": "A £5,500-£9,000 5.0 XJR recon against a £12,000-£25,000 XJR sits at 22-75% of the car's value - at the upper end, that brushes our 60% Jaguar scrap threshold. Against a £20,000+ example, the same recon drops to 28-45% - a repair decision, not a scrap question. For a 3.0 V6 diesel at £10,000-£18,000, a £4,500-£7,000 recon is 25-70% - borderline on lower‑value examples. Value the car first; if it's a pre‑2013 5.0 without timing chain history, walk away or budget for the work immediately."
     },
     "keyTakeaways": [
       {
@@ -561,7 +561,7 @@
         "typicalFailureMileage": "",
         "rootCause": "",
         "tieredCosts": [],
-        "recommendation": "If you're buying a pre‑2013 5.0-litre X351, look for documented timing chain work or budget £2,500–£4,500 immediately. A preventative chain and tensioner replacement is dramatically cheaper than the £5,500+ replacement that follows a failure. On a car worth under £15,000, evaluate carefully before committing.",
+        "recommendation": "If you're buying a pre‑2013 5.0-litre X351, look for documented timing chain work or budget £2,500-£4,500 immediately. A preventative chain and tensioner replacement is dramatically cheaper than the £5,500+ replacement that follows a failure. On a car worth under £15,000, evaluate carefully before committing.",
         "cta": {
           "label": "Compare AJ133 engine prices for your XJ X351 →",
           "href": "/quote"
@@ -574,7 +574,7 @@
         "typicalFailureMileage": "",
         "rootCause": "",
         "tieredCosts": [],
-        "recommendation": "If your 5.0 V8 develops oil consumption or lean running codes, have the PCV diaphragms inspected immediately - a £400–£900 repair is far cheaper than the £4,500+ replacement that follows a catastrophic failure. On supercharged cars, it's worth combining this with timing chain work as the supercharger is already off.",
+        "recommendation": "If your 5.0 V8 develops oil consumption or lean running codes, have the PCV diaphragms inspected immediately - a £400-£900 repair is far cheaper than the £4,500+ replacement that follows a catastrophic failure. On supercharged cars, it's worth combining this with timing chain work as the supercharger is already off.",
         "cta": {
           "label": "Compare AJ133 PCV repair quotes for your XJ X351 →",
           "href": "/quote"
@@ -587,7 +587,7 @@
         "typicalFailureMileage": "",
         "rootCause": "",
         "tieredCosts": [],
-        "recommendation": "Have the cooling system inspected at every service - a £400–£800 preventative repair is far cheaper than the £4,500+ replacement that follows an overheat. If you hear a knocking noise from the front of the engine, have the supercharger insulator spring checked immediately.",
+        "recommendation": "Have the cooling system inspected at every service - a £400-£800 preventative repair is far cheaper than the £4,500+ replacement that follows an overheat. If you hear a knocking noise from the front of the engine, have the supercharger insulator spring checked immediately.",
         "cta": {
           "label": "Compare 306PS cooling repair quotes for your XJ X351 →",
           "href": "/quote"
@@ -600,7 +600,7 @@
         "typicalFailureMileage": "",
         "rootCause": "",
         "tieredCosts": [],
-        "recommendation": "This engine is rare in the UK. If you're considering a 2.0T X351, ensure parts availability and specialist support exist locally. A £500–£1,200 turbo repair is manageable, but a full replacement at £2,500+ may not be justified given the car's value.",
+        "recommendation": "This engine is rare in the UK. If you're considering a 2.0T X351, ensure parts availability and specialist support exist locally. A £500-£1,200 turbo repair is manageable, but a full replacement at £2,500+ may not be justified given the car's value.",
         "cta": {
           "label": "Compare 2.0T engine prices for your XJ X351 →",
           "href": "/quote"
@@ -635,58 +635,58 @@
       {
         "variant": "3.0 V6 Diesel",
         "engineCode": "AJV6D",
-        "usedSupply": "£2,500–£4,000",
-        "reconditionedSupply": "£4,500–£7,000",
-        "rebuiltSupply": "£6,000–£8,500",
-        "labourHours": "10–14 hrs"
+        "usedSupply": "£2,500-£4,000",
+        "reconditionedSupply": "£4,500-£7,000",
+        "rebuiltSupply": "£6,000-£8,500",
+        "labourHours": "10-14 hrs"
       },
       {
         "variant": "3.0 V6 SC",
         "engineCode": "AJV6 / 306PS",
-        "usedSupply": "£2,500–£4,500",
-        "reconditionedSupply": "£4,500–£7,500",
-        "rebuiltSupply": "£6,000–£9,000",
-        "labourHours": "10–14 hrs"
+        "usedSupply": "£2,500-£4,500",
+        "reconditionedSupply": "£4,500-£7,500",
+        "rebuiltSupply": "£6,000-£9,000",
+        "labourHours": "10-14 hrs"
       },
       {
         "variant": "3.0 V6 N/A",
         "engineCode": "AJV6",
-        "usedSupply": "£2,000–£3,500",
-        "reconditionedSupply": "£4,000–£6,500",
-        "rebuiltSupply": "£5,500–£8,000",
-        "labourHours": "10–14 hrs"
+        "usedSupply": "£2,000-£3,500",
+        "reconditionedSupply": "£4,000-£6,500",
+        "rebuiltSupply": "£5,500-£8,000",
+        "labourHours": "10-14 hrs"
       },
       {
         "variant": "2.0 i4 Turbo",
         "engineCode": "2.0T",
-        "usedSupply": "£1,500–£2,800",
-        "reconditionedSupply": "£2,500–£4,500",
-        "rebuiltSupply": "£3,500–£5,500",
-        "labourHours": "8–12 hrs"
+        "usedSupply": "£1,500-£2,800",
+        "reconditionedSupply": "£2,500-£4,500",
+        "rebuiltSupply": "£3,500-£5,500",
+        "labourHours": "8-12 hrs"
       },
       {
         "variant": "5.0 V8 N/A",
         "engineCode": "AJ133 / 508PN",
-        "usedSupply": "£2,200–£4,000",
-        "reconditionedSupply": "£4,000–£6,500",
-        "rebuiltSupply": "£5,500–£8,500",
-        "labourHours": "12–16 hrs"
+        "usedSupply": "£2,200-£4,000",
+        "reconditionedSupply": "£4,000-£6,500",
+        "rebuiltSupply": "£5,500-£8,500",
+        "labourHours": "12-16 hrs"
       },
       {
         "variant": "5.0 V8 SC (510)",
         "engineCode": "AJ133 / 508PS",
-        "usedSupply": "£3,000–£5,500",
-        "reconditionedSupply": "£5,500–£9,000",
-        "rebuiltSupply": "£7,500–£11,000",
-        "labourHours": "14–18 hrs"
+        "usedSupply": "£3,000-£5,500",
+        "reconditionedSupply": "£5,500-£9,000",
+        "rebuiltSupply": "£7,500-£11,000",
+        "labourHours": "14-18 hrs"
       },
       {
         "variant": "5.0 V8 SC (550)",
         "engineCode": "AJ133 / 508PS (uprated)",
-        "usedSupply": "£3,500–£6,500",
-        "reconditionedSupply": "£6,000–£10,000",
-        "rebuiltSupply": "£8,500–£13,000",
-        "labourHours": "14–18 hrs"
+        "usedSupply": "£3,500-£6,500",
+        "reconditionedSupply": "£6,000-£10,000",
+        "rebuiltSupply": "£8,500-£13,000",
+        "labourHours": "14-18 hrs"
       }
     ],
     "note": ""
@@ -753,7 +753,7 @@
       "2. XJR (5.0 supercharged)",
       "3. Supersport (5.0 supercharged)"
     ],
-    "averageReplacementCost": "£4,500–£7,500 (reconditioned, supply only) [JAG-QUOTE]",
+    "averageReplacementCost": "£4,500-£7,500 (reconditioned, supply only) [JAG-QUOTE]",
     "mostCommonFailures": [
       "1. 5.0 AJ133 timing chain guide wear (pre-2013)",
       "2. 5.0 AJ133 PCV diaphragm failure",
@@ -788,7 +788,7 @@
       {
         "id": 1,
         "question": "How much does a Jaguar XJ X351 engine replacement cost in the UK?",
-        "answer": "A reconditioned X351 engine typically costs £2,500–£10,000 supply only [JAG-QUOTE], depending on the engine - the 3.0 V6 diesel sits at £4,500–£7,000, the 5.0 V8 at £4,000–£6,500, and the supercharged XJR at £5,500–£10,000. Fitting adds £650–£1,170. Use our calculator for a personalised figure."
+        "answer": "A reconditioned X351 engine typically costs £2,500-£10,000 supply only [JAG-QUOTE], depending on the engine - the 3.0 V6 diesel sits at £4,500-£7,000, the 5.0 V8 at £4,000-£6,500, and the supercharged XJR at £5,500-£10,000. Fitting adds £650-£1,170. Use our calculator for a personalised figure."
       },
       {
         "id": 2,
@@ -798,7 +798,7 @@
       {
         "id": 3,
         "question": "What are the common problems with the Jaguar XJ X351?",
-        "answer": "Early 5.0-litre AJ133 engines (pre-2013) suffer from timing chain guide wear - an engine-out job costing £2,500–£4,500. PCV diaphragm failure on 5.0 V8s causes oil consumption and lean running codes. The 3.0 supercharged V6 has cooling system pipework leaks and supercharger insulator spring issues. Battery-related electrical gremlins and sticky buttons (rubberised coating breakdown) affect all models."
+        "answer": "Early 5.0-litre AJ133 engines (pre-2013) suffer from timing chain guide wear - an engine-out job costing £2,500-£4,500. PCV diaphragm failure on 5.0 V8s causes oil consumption and lean running codes. The 3.0 supercharged V6 has cooling system pipework leaks and supercharger insulator spring issues. Battery-related electrical gremlins and sticky buttons (rubberised coating breakdown) affect all models."
       },
       {
         "id": 4,
@@ -818,7 +818,7 @@
       {
         "id": 7,
         "question": "Is it worth replacing an X351 engine, or should I scrap the car?",
-        "answer": "Depends on the car's value. Against a £20,000 XJR, a £5,500–£9,000 recon is 28–45% of the car's value - well within our 60% Jaguar threshold. Against a £10,000 3.0 V6 diesel, a £4,500–£7,000 recon is 45–70% - borderline but often viable for a well-kept example. For a £15,000 5.0 naturally aspirated, a £4,000–£6,500 recon is 27–43% - a repair decision, not a scrap question. Value the car and its condition first; if it's a pre-2013 5.0 without chain history, walk away or budget for the work immediately."
+        "answer": "Depends on the car's value. Against a £20,000 XJR, a £5,500-£9,000 recon is 28-45% of the car's value - well within our 60% Jaguar threshold. Against a £10,000 3.0 V6 diesel, a £4,500-£7,000 recon is 45-70% - borderline but often viable for a well-kept example. For a £15,000 5.0 naturally aspirated, a £4,000-£6,500 recon is 27-43% - a repair decision, not a scrap question. Value the car and its condition first; if it's a pre-2013 5.0 without chain history, walk away or budget for the work immediately."
       },
       {
         "id": 8,
@@ -828,7 +828,7 @@
       {
         "id": 9,
         "question": "What is the difference between the X351, X350, and other XJ generations?",
-        "answer": "The X351 (2010–2019) is the fourth-generation XJ - it featured an all-aluminium architecture and Ian Callum's dramatic new design language. It's fundamentally different from the X350 (2003–2009), which had a steel chassis and more traditional styling. The X350 is covered on its own Generation Page. The X351 was the last traditionally-powered XJ; it was succeeded by the all-electric XJ which was cancelled in 2021."
+        "answer": "The X351 (2010-2019) is the fourth-generation XJ - it featured an all-aluminium architecture and Ian Callum's dramatic new design language. It's fundamentally different from the X350 (2003-2009), which had a steel chassis and more traditional styling. The X350 is covered on its own Generation Page. The X351 was the last traditionally-powered XJ; it was succeeded by the all-electric XJ which was cancelled in 2021."
       },
       {
         "id": 10,

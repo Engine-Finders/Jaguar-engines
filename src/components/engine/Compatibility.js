@@ -264,7 +264,7 @@ export default function Compatibility({
   const bounds = yearBounds(rows, yearsProduced);
   const engineCode = shortEngineName(engineLabel);
   const modelCountLabel = stripTags(modelsFitted) || `${grouped.length}+ models`;
-  const exclusiveNote = cleanText(data.crossBrandNote || crossBrandFitment || "(Exclusive mode – no cross-link)");
+  const exclusiveNote = cleanText(data.crossBrandNote || crossBrandFitment || "(Exclusive mode - no cross-link)");
 
   return (
     <section className={`relative w-full overflow-x-hidden py-6 text-[var(--color-text)] md:py-9 ${engineSectionBg(isDark, true)}`}>

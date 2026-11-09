@@ -53,25 +53,25 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "Series 1 XJ12 (5.3 V12, 1972–1973)",
+              "name": "Series 1 XJ12 (5.3 V12, 1972-1973)",
               "url": "https://jaguarengines.uk/xj/xj-series-1"
             },
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "Series 2 XJ12 (5.3 V12, 1973–1979)",
+              "name": "Series 2 XJ12 (5.3 V12, 1973-1979)",
               "url": "https://jaguarengines.uk/xj/xj-series-2"
             },
             {
               "@type": "ListItem",
               "position": 3,
-              "name": "Series 3 XJ12 HE (5.3 V12 HE, 1979–1992)",
+              "name": "Series 3 XJ12 HE (5.3 V12 HE, 1979-1992)",
               "url": "https://jaguarengines.uk/xj/xj-series-3"
             },
             {
               "@type": "ListItem",
               "position": 4,
-              "name": "XJ81 XJ12 / Daimler Double Six (5.3 V12 HE, 1992–1994)",
+              "name": "XJ81 XJ12 / Daimler Double Six (5.3 V12 HE, 1992-1994)",
               "url": "https://jaguarengines.uk/xj"
             }
           ]
@@ -102,7 +102,7 @@
               "name": "How much does a Jaguar XJ 5.3 V12 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned 5.3 V12 engine typically costs £5,000–£9,000 supply only. Used engines are available from £3,500–£6,000. Customers have reported dealer quotes of around £15,000–£30,000 for engine replacement, while reconditioning or rebuilding is often in the £8,000–£10,000 range. A complete reconditioning of an older Jaguar V12 can cost $11,000–$25,000 depending on component replacement. Fitting adds £1,500–£2,500 depending on your location and workshop."
+                "text": "A reconditioned 5.3 V12 engine typically costs £5,000-£9,000 supply only. Used engines are available from £3,500-£6,000. Customers have reported dealer quotes of around £15,000-£30,000 for engine replacement, while reconditioning or rebuilding is often in the £8,000-£10,000 range. A complete reconditioning of an older Jaguar V12 can cost $11,000-$25,000 depending on component replacement. Fitting adds £1,500-£2,500 depending on your location and workshop."
               }
             },
             {
@@ -203,7 +203,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar XJ 5.3 V12 • 1972–1994 • 4 Generations",
+    "tagPill": "Jaguar XJ 5.3 V12 • 1972-1994 • 4 Generations",
     "h1": "Jaguar XJ 5.3 V12 Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Jaguar XJ specialists. Compare reconditioned, rebuilt and used 5.3-litre V12 engines - from the original Series 1 to the final XJ81 - supply & fit available nationwide.",
     "trustBadges": [
@@ -236,34 +236,34 @@
     "rows": [
       {
         "generation": "Series 1 XJ12",
-        "years": "1972–1973",
+        "years": "1972-1973",
         "engineCode": "Jaguar V12 5.3 (Carburetted / Early Injection)",
         "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£5,000–£8,000 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£5,000-£8,000 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "The first V12 XJ - the world's only V12 four-door saloon. Early carburettors and Lucas injection are the main challenges."
       },
       {
         "generation": "Series 2 XJ12",
-        "years": "1973–1979",
+        "years": "1973-1979",
         "engineCode": "Jaguar V12 5.3 (Carburetted / Injection)",
         "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£5,000–£8,000 [PLACEHOLDER]",
+        "reconCost": "£5,000-£8,000 [PLACEHOLDER]",
         "eraNote": "Revised styling; GM400 gearbox from 1977. Same engine; ignition and fuel systems are the weak points."
       },
       {
         "generation": "Series 3 XJ12",
-        "years": "1979–1992",
+        "years": "1979-1992",
         "engineCode": "Jaguar V12 5.3 HE (May Heads)",
         "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£5,500–£9,000 [PLACEHOLDER]",
+        "reconCost": "£5,500-£9,000 [PLACEHOLDER]",
         "eraNote": "The HE (High Efficiency) engine with Michael May-designed 'fireball' heads - smoother, more powerful, better economy."
       },
       {
         "generation": "XJ81 XJ12 / Daimler Double Six",
-        "years": "1992–1994",
+        "years": "1992-1994",
         "engineCode": "Jaguar V12 5.3 HE (Late Injection)",
         "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£6,000–£10,000 [PLACEHOLDER]",
+        "reconCost": "£6,000-£10,000 [PLACEHOLDER]",
         "eraNote": "The final 5.3 V12 in the XJ40-based XJ81. Refined and well-sorted, but rare."
       }
     ],
@@ -282,23 +282,23 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£3,500–£6,000",
-        "fittedIndie": "£4,800–£7,500",
-        "warranty": "1–6 months",
+        "supplyOnly": "£3,500-£6,000",
+        "fittedIndie": "£4,800-£7,500",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; classic car projects"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£5,000–£9,000",
-        "fittedIndie": "£6,500–£11,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£5,000-£9,000",
+        "fittedIndie": "£6,500-£11,000",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£7,000–£12,000",
-        "fittedIndie": "£8,500–£14,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£7,000-£12,000",
+        "fittedIndie": "£8,500-£14,000",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
@@ -309,8 +309,8 @@
         "bestFor": "No longer available from Jaguar - the V12 is out of production"
       }
     ],
-    "figuresNote": "Figures above reflect the Jaguar V12 5.3-litre engine. Customers have reported dealer quotes for Jaguar engine replacements of around £15,000–£30,000. Reconditioning or rebuilding is often in the £8,000–£10,000 range. A complete reconditioning of an older Jaguar V12 can cost $11,000–$25,000 depending on component replacement. Main dealer new engines are no longer available.",
-    "labourEstimate": "Fitting an XJ V12 engine typically takes 16–22 hours at £80–£120/hr (independent) or £140–£200/hr (London/SE dealer). The V12's complexity and tight engine bay make this a specialist job.",
+    "figuresNote": "Figures above reflect the Jaguar V12 5.3-litre engine. Customers have reported dealer quotes for Jaguar engine replacements of around £15,000-£30,000. Reconditioning or rebuilding is often in the £8,000-£10,000 range. A complete reconditioning of an older Jaguar V12 can cost $11,000-$25,000 depending on component replacement. Main dealer new engines are no longer available.",
+    "labourEstimate": "Fitting an XJ V12 engine typically takes 16-22 hours at £80-£120/hr (independent) or £140-£200/hr (London/SE dealer). The V12's complexity and tight engine bay make this a specialist job.",
     "cta": {
       "label": "→ Compare XJ 5.3 V12 engine prices from UK specialists",
       "href": "/quote"
@@ -323,7 +323,7 @@
         "title": "Lucas Ignition Amplifier Failure (GM Module)",
         "symptoms": "Intermittent stalling, crank/no-start condition, engine cutting out while driving, rough running, ignition failure.",
         "typicalMileage": "Any mileage - age-related failure",
-        "repairCost": "£100–£300 (GM ignition module replacement)【PLACEHOLDER - confirm vs cost sheet】",
+        "repairCost": "£100-£300 (GM ignition module replacement)【PLACEHOLDER - confirm vs cost sheet】",
         "replacementCost": "N/A - repair only",
         "urgency": {
           "icon": "🟡",
@@ -341,7 +341,7 @@
         "title": "Fuel Injection & Wiring Harness Degradation",
         "symptoms": "Injector bank failure, rough running, poor cold start, misfire, engine running lean on one bank.",
         "typicalMileage": "Age-related - original harnesses are well past due for replacement",
-        "repairCost": "£200–£600 (injector harness replacement / Lucas Power Resistor)【PLACEHOLDER - confirm vs cost sheet】",
+        "repairCost": "£200-£600 (injector harness replacement / Lucas Power Resistor)【PLACEHOLDER - confirm vs cost sheet】",
         "replacementCost": "N/A - repair only",
         "urgency": {
           "icon": "🟡",
@@ -358,9 +358,9 @@
         "id": 3,
         "title": "Timing Chain Tensioner Failure & Cooling System Blockage",
         "symptoms": "Rattling noise from the timing chain area, engine running rough, overheating, radiator blockage, coolant loss.",
-        "typicalMileage": "50,000–100,000 miles",
-        "repairCost": "£800–£2,000 (timing chain tensioner replacement) / £300–£800 (radiator flush/replacement)【PLACEHOLDER - confirm vs cost sheet】",
-        "replacementCost": "£5,000–£12,000 (if tensioner failure leads to engine damage)",
+        "typicalMileage": "50,000-100,000 miles",
+        "repairCost": "£800-£2,000 (timing chain tensioner replacement) / £300-£800 (radiator flush/replacement)【PLACEHOLDER - confirm vs cost sheet】",
+        "replacementCost": "£5,000-£12,000 (if tensioner failure leads to engine damage)",
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
@@ -396,31 +396,31 @@
         {
           "problem": "Lucas ignition amplifier failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£100–£300",
+          "typicalCost": "£100-£300",
           "whenItMakesSense": "Very easily and inexpensively replaced"
         },
         {
           "problem": "Injector wiring harness degradation",
           "repairable": "✅ Yes",
-          "typicalCost": "£200–£600",
+          "typicalCost": "£200-£600",
           "whenItMakesSense": "Age-related; replacement is straightforward"
         },
         {
           "problem": "Timing chain tensioner failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£800–£2,000",
+          "typicalCost": "£800-£2,000",
           "whenItMakesSense": "Preventative - catches the fault before major damage"
         },
         {
           "problem": "Cooling system blockage",
           "repairable": "✅ Yes",
-          "typicalCost": "£300–£800",
+          "typicalCost": "£300-£800",
           "whenItMakesSense": "Radiator flush or replacement - essential maintenance"
         },
         {
           "problem": "Internal engine failure (rare)",
           "repairable": "⚠️ Sometimes",
-          "typicalCost": "£5,000–£12,000",
+          "typicalCost": "£5,000-£12,000",
           "whenItMakesSense": "Often more cost-effective to rebuild than replace"
         }
       ]
@@ -442,7 +442,7 @@
         "* Early carburetted cars with no documented fuel system work"
       ]
     },
-    "closingVerdict": "The Jaguar 5.3 V12 is one of the most significant engines in automotive history - a smooth, refined, and characterful powerplant that defined Jaguar's flagship for over two decades. The engine itself is strong and durable, but the supporting systems - ignition, fuel injection, and cooling - are the main challenge. The HE (High Efficiency) engine introduced in 1981 is significantly more reliable. Buy on documented history, not on faith. A well-maintained XJ V12 is a £10,000–£30,000 future classic; a neglected one is a £10,000 engine replacement waiting to happen.",
+    "closingVerdict": "The Jaguar 5.3 V12 is one of the most significant engines in automotive history - a smooth, refined, and characterful powerplant that defined Jaguar's flagship for over two decades. The engine itself is strong and durable, but the supporting systems - ignition, fuel injection, and cooling - are the main challenge. The HE (High Efficiency) engine introduced in 1981 is significantly more reliable. Buy on documented history, not on faith. A well-maintained XJ V12 is a £10,000-£30,000 future classic; a neglected one is a £10,000 engine replacement waiting to happen.",
     "cta": {
       "label": "→ Compare XJ 5.3 V12 engine prices before you buy",
       "href": "/quote"
@@ -472,17 +472,17 @@
     "rows": [
       {
         "engineCode": "Jaguar V12 5.3 (Carburetted / Early Injection)",
-        "years": "1972–1979",
-        "power": "242–250 hp (180–186 kW) @ 5,500 rpm · 400 Nm",
+        "years": "1972-1979",
+        "power": "242-250 hp (180-186 kW) @ 5,500 rpm · 400 Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£5,000–£8,000 [PLACEHOLDER]"
+        "avgReconCost": "£5,000-£8,000 [PLACEHOLDER]"
       },
       {
         "engineCode": "Jaguar V12 5.3 HE (May Heads)",
-        "years": "1979–1994",
+        "years": "1979-1994",
         "power": "295 PS (217 kW) @ 5,500 rpm · 432 Nm @ 3,000 rpm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£5,500–£10,000 [PLACEHOLDER]"
+        "avgReconCost": "£5,500-£10,000 [PLACEHOLDER]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -503,7 +503,7 @@
         },
         {
           "label": "* Compression Ratio",
-          "value": "7.8:1 – 12.5:1 (HE: 12.5:1)"
+          "value": "7.8:1 - 12.5:1 (HE: 12.5:1)"
         },
         {
           "label": "* Fuel System",
@@ -536,11 +536,11 @@
       },
       {
         "label": "Average Enquiry Mileage",
-        "value": "60,000–100,000 miles [PATTERN DATA]"
+        "value": "60,000-100,000 miles [PATTERN DATA]"
       },
       {
         "label": "Average Replacement Cost",
-        "value": "£5,000–£9,000 reconditioned, supply only [PLACEHOLDER - confirm vs cost sheet]"
+        "value": "£5,000-£9,000 reconditioned, supply only [PLACEHOLDER - confirm vs cost sheet]"
       },
       {
         "label": "Most Requested Engine Code",
@@ -561,7 +561,7 @@
       {
         "id": 1,
         "question": "How much does a Jaguar XJ 5.3 V12 engine replacement cost in the UK?",
-        "answer": "A reconditioned 5.3 V12 engine typically costs £5,000–£9,000 supply only. Used engines are available from £3,500–£6,000. Customers have reported dealer quotes of around £15,000–£30,000 for engine replacement, while reconditioning or rebuilding is often in the £8,000–£10,000 range. A complete reconditioning of an older Jaguar V12 can cost $11,000–$25,000 depending on component replacement. Fitting adds £1,500–£2,500 depending on your location and workshop."
+        "answer": "A reconditioned 5.3 V12 engine typically costs £5,000-£9,000 supply only. Used engines are available from £3,500-£6,000. Customers have reported dealer quotes of around £15,000-£30,000 for engine replacement, while reconditioning or rebuilding is often in the £8,000-£10,000 range. A complete reconditioning of an older Jaguar V12 can cost $11,000-$25,000 depending on component replacement. Fitting adds £1,500-£2,500 depending on your location and workshop."
       },
       {
         "id": 2,

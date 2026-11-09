@@ -342,7 +342,7 @@
           "item": {
             "@type": "Thing",
             "name": "Best Used Buy",
-            "description": "XF X260 (2015–2024)  well-valued executive saloon with the revised Ingenium range."
+            "description": "XF X260 (2015-2024)  well-valued executive saloon with the revised Ingenium range."
           }
         },
         {
@@ -351,7 +351,7 @@
           "item": {
             "@type": "Thing",
             "name": "Most Expensive Failure",
-            "description": "276DT (2.7 TDV6) Oil Pump Failure  often kills the engine outright. £5,000–£7,500 recon."
+            "description": "276DT (2.7 TDV6) Oil Pump Failure  often kills the engine outright. £5,000-£7,500 recon."
           }
         },
         {
@@ -360,7 +360,7 @@
           "item": {
             "@type": "Thing",
             "name": "Safest Jaguar to Buy",
-            "description": "E-Pace X540 (2017–present)  compact SUV values comfortably absorb modern Ingenium replacement cost."
+            "description": "E-Pace X540 (2017-present)  compact SUV values comfortably absorb modern Ingenium replacement cost."
           }
         },
         {
@@ -369,7 +369,7 @@
           "item": {
             "@type": "Thing",
             "name": "Highest Risk Purchase",
-            "description": "X-Type X400 (2001–2009)  rapid depreciation plus reliability concerns; replacement cost frequently exceeds vehicle value."
+            "description": "X-Type X400 (2001-2009)  rapid depreciation plus reliability concerns; replacement cost frequently exceeds vehicle value."
           }
         },
         {
@@ -387,7 +387,7 @@
           "item": {
             "@type": "Thing",
             "name": "Best Long-Term Keeper",
-            "description": "XJ X351 (2010–2019)  flagship values comfortably absorb even the AJ133's upper recon cost."
+            "description": "XJ X351 (2010-2019)  flagship values comfortably absorb even the AJ133's upper recon cost."
           }
         }
       ]

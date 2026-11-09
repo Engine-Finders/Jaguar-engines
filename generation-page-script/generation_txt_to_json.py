@@ -45,7 +45,7 @@ SECTION_RE = re.compile(
 )
 META_SECTION_RE = re.compile(r"^[ \t]*META\s*$", re.MULTILINE | re.IGNORECASE)
 SCHEMA_SECTION_RE = re.compile(
-    r"^[ \t]*SCHEMA\s*(?:\(JSON[-‑–-]LD\))?\s*$",
+    r"^[ \t]*SCHEMA\s*(?:\(JSON[-‑--]LD\))?\s*$",
     re.MULTILINE | re.IGNORECASE,
 )
 META_TITLE_BLOCK_RE = re.compile(
@@ -586,7 +586,7 @@ def parse_best_worst_engines(body: str) -> dict[str, Any]:
     if re.search(r"thin-data fallback mode", joined, re.I):
         para = joined
         para = re.sub(r"^thin-data fallback mode:\s*", "", para, flags=re.I)
-        para = re.sub(r"^exactly one paragraph,\s*\d+[–\-]\d+\s*words:\s*", "", para, flags=re.I)
+        para = re.sub(r"^exactly one paragraph,\s*\d+[-\-]\d+\s*words:\s*", "", para, flags=re.I)
         items.append(
             {
                 "slot": "Thin-Data Summary",
@@ -1195,8 +1195,8 @@ def parse_trust_cta(body: str) -> dict[str, Any]:
                 continue
             if " - " in item:
                 title, text = [clean(x) for x in item.split(" - ", 1)]
-            elif " – " in item:
-                title, text = [clean(x) for x in item.split(" – ", 1)]
+            elif " - " in item:
+                title, text = [clean(x) for x in item.split(" - ", 1)]
             else:
                 title, text = item, ""
             trust_points.append({"title": title, "text": text})
@@ -1291,7 +1291,7 @@ def content_for_sections(page_text: str) -> str:
     """
     Body used for SECTION parsers.
 
-    Do NOT cut at the first META - some pages place META title before Sec 9–11.
+    Do NOT cut at the first META - some pages place META title before Sec 9-11.
     Cut only before SCHEMA, and strip META title blocks so they don't pollute Sec 8.
     """
     schema_m = None

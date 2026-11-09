@@ -560,7 +560,7 @@ function QuoteModal({ open, onClose }) {
                     <LockSvg />
                   </span>
                   <span>
-                    Your details are secure, no spam – genuine quote from UK vetted engine specialists only.
+                    Your details are secure, no spam - genuine quote from UK vetted engine specialists only.
                   </span>
                 </p>
               </form>

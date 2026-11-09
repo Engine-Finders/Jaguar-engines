@@ -52,7 +52,7 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "E-Pace X540 D200 (204DTD MHEV, 2019–present)",
+              "name": "E-Pace X540 D200 (204DTD MHEV, 2019-present)",
               "url": "https://jaguarengines.uk/e-pace/d200"
             }
           ]
@@ -77,7 +77,7 @@
               "name": "How much does a Jaguar E-Pace D200 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned Jaguar E-Pace D200 engine (204DTD MHEV) typically costs £3,500–£5,800 supply only. Fitting adds £1,200–£1,400. These are specialist-only replacements - the Ingenium diesel requires Jaguar specialist expertise."
+                "text": "A reconditioned Jaguar E-Pace D200 engine (204DTD MHEV) typically costs £3,500-£5,800 supply only. Fitting adds £1,200-£1,400. These are specialist-only replacements - the Ingenium diesel requires Jaguar specialist expertise."
               }
             },
             {
@@ -93,7 +93,7 @@
               "name": "What are the common problems with the Jaguar E-Pace D200?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "EGR cooler coolant leaks (£600–£1,200 repair), oil dilution from DPF regeneration (requires regular oil changes), and AdBlue/NOx sensor failures (£500–£1,500 repair). The pre-2019 timing chain tensioner issues are significantly less common on the X540."
+                "text": "EGR cooler coolant leaks (£600-£1,200 repair), oil dilution from DPF regeneration (requires regular oil changes), and AdBlue/NOx sensor failures (£500-£1,500 repair). The pre-2019 timing chain tensioner issues are significantly less common on the X540."
               }
             },
             {
@@ -101,7 +101,7 @@
               "name": "Is it worth replacing a Jaguar E-Pace D200 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "E-Pace D200 values range from £12,000–£30,000 depending on condition and mileage. A £4,500–£5,800 reconditioned engine replacement represents 15–40% of vehicle value - well within our 60% Jaguar threshold. For most examples, replacement is financially viable."
+                "text": "E-Pace D200 values range from £12,000-£30,000 depending on condition and mileage. A £4,500-£5,800 reconditioned engine replacement represents 15-40% of vehicle value - well within our 60% Jaguar threshold. For most examples, replacement is financially viable."
               }
             },
             {
@@ -117,7 +117,7 @@
               "name": "Can I repair the EGR cooler issue, or does it need replacement?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes - EGR cooler replacement (£600–£1,200) is a straightforward repair on the 204DTD. Ignoring coolant loss can lead to overheating and potential head gasket failure. At the first sign of coolant loss or white smoke, book an inspection immediately."
+                "text": "Yes - EGR cooler replacement (£600-£1,200) is a straightforward repair on the 204DTD. Ignoring coolant loss can lead to overheating and potential head gasket failure. At the first sign of coolant loss or white smoke, book an inspection immediately."
               }
             }
           ]
@@ -178,7 +178,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar E-Pace D200 • 2019–present • 2.0L Ingenium MHEV",
+    "tagPill": "Jaguar E-Pace D200 • 2019-present • 2.0L Ingenium MHEV",
     "h1": "Jaguar E-Pace D200 Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Jaguar Ingenium specialists. The D200 is the 163PS 2.0-litre mild-hybrid diesel - clean, efficient and improved. Compare reconditioned, rebuilt and used <a href='https://jaguarengines.uk/engine/ajd4-204dtd'>204DTD</a> engines - supply & fit available nationwide.",
     "trustBadges": [
@@ -211,10 +211,10 @@
     "rows": [
       {
         "generation": "E-Pace X540",
-        "years": "2019–present",
+        "years": "2019-present",
         "engineCode": "204DTD MHEV (2.0L Ingenium diesel)",
         "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£3,500–£5,800 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£3,500-£5,800 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "MHEV 163PS Ingenium - chain tensioner revised, risk significantly reduced vs pre-2019"
       }
     ],
@@ -233,35 +233,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£2,000–£3,500",
-        "fittedIndie": "£3,200–£4,900",
-        "warranty": "1–6 months",
+        "supplyOnly": "£2,000-£3,500",
+        "fittedIndie": "£3,200-£4,900",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; lower-mileage donor"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£3,500–£5,800",
-        "fittedIndie": "£4,700–£7,200",
-        "warranty": "12–24 months",
+        "supplyOnly": "£3,500-£5,800",
+        "fittedIndie": "£4,700-£7,200",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£4,800–£7,000",
-        "fittedIndie": "£6,000–£8,400",
-        "warranty": "12–24 months",
+        "supplyOnly": "£4,800-£7,000",
+        "fittedIndie": "£6,000-£8,400",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 5+ year horizon"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£8,000–£12,000",
-        "fittedIndie": "£10,000–£14,000",
-        "warranty": "24–36 months",
+        "supplyOnly": "£8,000-£12,000",
+        "fittedIndie": "£10,000-£14,000",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs, warranty claims"
       }
     ],
     "figuresNote": "Figures above reflect the current X540 E-Pace D200 generation - a single-generation engine. All pricing is indicative; actual costs vary by mileage, condition and workshop location.",
-    "labourEstimate": "Fitting an E-Pace 2.0 diesel engine typically takes 10–14 hours at £80–£120/hr (independent Jaguar specialist) or £140–£190/hr (London/SE dealer).",
+    "labourEstimate": "Fitting an E-Pace 2.0 diesel engine typically takes 10-14 hours at £80-£120/hr (independent Jaguar specialist) or £140-£190/hr (London/SE dealer).",
     "cta": {
       "label": "→ Compare Jaguar E-Pace D200 engine prices from UK specialists",
       "href": "/quote"
@@ -347,32 +347,32 @@
         {
           "problem": "EGR cooler coolant leak",
           "repairable": "✅ Yes",
-          "typicalCost": "£600–£1,200",
+          "typicalCost": "£600-£1,200",
           "whenItMakesSense": "Straightforward fix - always worth doing"
         },
         {
           "problem": "Oil dilution (DPF)",
           "repairable": "✅ Yes",
-          "typicalCost": "£150–£300",
+          "typicalCost": "£150-£300",
           "whenItMakesSense": "Regular oil change - essential maintenance"
         },
         {
           "problem": "AdBlue/NOx sensor failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£500–£1,500",
-          "whenItMakesSense": "Viable on a vehicle worth £12,000–£30,000"
+          "typicalCost": "£500-£1,500",
+          "whenItMakesSense": "Viable on a vehicle worth £12,000-£30,000"
         },
         {
           "problem": "Timing chain tensioner wear (post-2019)",
           "repairable": "⚠️ Rare",
-          "typicalCost": "£1,800–£3,500",
+          "typicalCost": "£1,800-£3,500",
           "whenItMakesSense": "Revised design means this is much less common"
         },
         {
           "problem": "Major internal failure (crank/block)",
           "repairable": "❌ Usually No",
           "typicalCost": "Engine replacement required",
-          "whenItMakesSense": "Replacement often £3,500–£5,800 - assess vehicle value carefully"
+          "whenItMakesSense": "Replacement often £3,500-£5,800 - assess vehicle value carefully"
         }
       ]
     },
@@ -421,10 +421,10 @@
     "rows": [
       {
         "engineCode": "204DTD MHEV (2.0L Ingenium diesel)",
-        "years": "2019–present",
+        "years": "2019-present",
         "power": "163 PS / 120 kW",
         "enquiries": "1,150 JLR-wide [EM-VERIFIED]",
-        "avgReconCost": "£3,500–£5,800 [PLACEHOLDER]"
+        "avgReconCost": "£3,500-£5,800 [PLACEHOLDER]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -457,19 +457,19 @@
         },
         {
           "label": "* Maximum torque",
-          "value": "380 Nm @ 1,500–2,500 rpm"
+          "value": "380 Nm @ 1,500-2,500 rpm"
         },
         {
-          "label": "* 0–60mph",
+          "label": "* 0-60mph",
           "value": "~8.5 seconds"
         },
         {
           "label": "* Combined fuel economy",
-          "value": "42–44 mpg UK"
+          "value": "42-44 mpg UK"
         },
         {
           "label": "* CO2 emissions",
-          "value": "167–174 g/km (varies by body spec)"
+          "value": "167-174 g/km (varies by body spec)"
         },
         {
           "label": "* Transmission",
@@ -515,7 +515,7 @@
       {
         "id": 1,
         "question": "How much does a Jaguar E-Pace D200 engine replacement cost in the UK?",
-        "answer": "A reconditioned Jaguar E-Pace D200 engine (204DTD MHEV) typically costs £3,500–£5,800 supply only. Fitting adds £1,200–£1,400. These are specialist-only replacements - the Ingenium diesel requires Jaguar specialist expertise."
+        "answer": "A reconditioned Jaguar E-Pace D200 engine (204DTD MHEV) typically costs £3,500-£5,800 supply only. Fitting adds £1,200-£1,400. These are specialist-only replacements - the Ingenium diesel requires Jaguar specialist expertise."
       },
       {
         "id": 2,
@@ -525,12 +525,12 @@
       {
         "id": 3,
         "question": "What are the common problems with the Jaguar E-Pace D200?",
-        "answer": "EGR cooler coolant leaks (£600–£1,200 repair), oil dilution from DPF regeneration (requires regular oil changes), and AdBlue/NOx sensor failures (£500–£1,500 repair). The pre-2019 timing chain tensioner issues are significantly less common on the X540."
+        "answer": "EGR cooler coolant leaks (£600-£1,200 repair), oil dilution from DPF regeneration (requires regular oil changes), and AdBlue/NOx sensor failures (£500-£1,500 repair). The pre-2019 timing chain tensioner issues are significantly less common on the X540."
       },
       {
         "id": 4,
         "question": "Is it worth replacing a Jaguar E-Pace D200 engine, or should I scrap the car?",
-        "answer": "E-Pace D200 values range from £12,000–£30,000 depending on condition and mileage. A £4,500–£5,800 reconditioned engine replacement represents 15–40% of vehicle value - well within our 60% Jaguar threshold. For most examples, replacement is financially viable."
+        "answer": "E-Pace D200 values range from £12,000-£30,000 depending on condition and mileage. A £4,500-£5,800 reconditioned engine replacement represents 15-40% of vehicle value - well within our 60% Jaguar threshold. For most examples, replacement is financially viable."
       },
       {
         "id": 5,
@@ -540,7 +540,7 @@
       {
         "id": 6,
         "question": "Can I repair the EGR cooler issue, or does it need replacement?",
-        "answer": "Yes - EGR cooler replacement (£600–£1,200) is a straightforward repair on the 204DTD. Ignoring coolant loss can lead to overheating and potential head gasket failure. At the first sign of coolant loss or white smoke, book an inspection immediately."
+        "answer": "Yes - EGR cooler replacement (£600-£1,200) is a straightforward repair on the 204DTD. Ignoring coolant loss can lead to overheating and potential head gasket failure. At the first sign of coolant loss or white smoke, book an inspection immediately."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier."

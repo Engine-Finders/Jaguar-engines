@@ -75,7 +75,7 @@
               "name": "How much does a Jaguar AJ20D6 engine replacement cost?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned AJ20D6 typically costs £5,500–£9,000 supply only [JAG-QUOTE], varying by mileage, warranty length, and supplier. Fitting adds £800–£1,500 depending on labour rates and vehicle access."
+                "text": "A reconditioned AJ20D6 typically costs £5,500-£9,000 supply only [JAG-QUOTE], varying by mileage, warranty length, and supplier. Fitting adds £800-£1,500 depending on labour rates and vehicle access."
               }
             },
             {
@@ -183,7 +183,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar • AJ20D6 • Diesel • 3.0L I6 • 2020–present",
+    "tagPill": "Jaguar • AJ20D6 • Diesel • 3.0L I6 • 2020-present",
     "h1": "Jaguar AJ20D6 Engine - Specs, Reliability & Replacement Cost",
     "subHeadline": "The Jaguar AJ20D6 is a 3.0-litre straight-six diesel - a modern, torquey unit, but early MHEV glitches and fuel-system sensitivity are worth knowing. Backed by real UK enquiries [JAG-VERIFIED].",
     "trustStrip": [
@@ -229,7 +229,7 @@
       },
       {
         "metric": "Years Produced",
-        "value": "2020–present"
+        "value": "2020-present"
       },
       {
         "metric": "Models Fitted (Jaguar)",
@@ -261,7 +261,7 @@
         },
         {
           "dimension": "Repair Cost",
-          "score": "8 (Reconditioned midpoint £7,250 (under Repair Cost threshold £5,000–£6,999 → 12? Let me recalc: wait - the fixed table says £5,000–£6,999 → 12, £7,000–£9,999 → 8. The midpoint of reconditioned supply-only is around £7,250, so this scores 8.))"
+          "score": "8 (Reconditioned midpoint £7,250 (under Repair Cost threshold £5,000-£6,999 → 12? Let me recalc: wait - the fixed table says £5,000-£6,999 → 12, £7,000-£9,999 → 8. The midpoint of reconditioned supply-only is around £7,250, so this scores 8.))"
         },
         {
           "dimension": "Repairability",
@@ -273,7 +273,7 @@
         },
         {
           "dimension": "Replacement Economics",
-          "score": "4 (Recon cost (£5,500–£9,000) as a percentage of lowest host-vehicle value (F-Pace/XF circa £8,000–£12,000 on older examples) - exceeds 75% threshold)"
+          "score": "4 (Recon cost (£5,500-£9,000) as a percentage of lowest host-vehicle value (F-Pace/XF circa £8,000-£12,000 on older examples) - exceeds 75% threshold)"
         },
         {
           "dimension": "Total",
@@ -297,19 +297,19 @@
         "model": "Jaguar F-Pace",
         "generation": "X761 (facelift)",
         "variantBadge": "3.0d D300 MHEV",
-        "years": "2020–present"
+        "years": "2020-present"
       },
       {
         "model": "Jaguar F-Pace",
         "generation": "X761",
         "variantBadge": "30d (300 PS)",
-        "years": "2020–present"
+        "years": "2020-present"
       },
       {
         "model": "Jaguar XF",
         "generation": "X260",
         "variantBadge": "3.0D",
-        "years": "2020–present"
+        "years": "2020-present"
       }
     ],
     "crossBrandNote": "Also powers the Land Rover Defender, Range Rover, and Range Rover Sport (DT306) → [link]."
@@ -324,24 +324,24 @@
     "rows": [
       {
         "condition": "Used",
-        "supplyOnly": "£4,000–£6,500",
-        "fittedIndie": "£5,200–£8,000",
-        "warranty": "3–6 months"
+        "supplyOnly": "£4,000-£6,500",
+        "fittedIndie": "£5,200-£8,000",
+        "warranty": "3-6 months"
       },
       {
         "condition": "Reconditioned",
-        "supplyOnly": "£5,500–£9,000",
-        "fittedIndie": "£6,900–£10,500",
-        "warranty": "12–24 months"
+        "supplyOnly": "£5,500-£9,000",
+        "fittedIndie": "£6,900-£10,500",
+        "warranty": "12-24 months"
       },
       {
         "condition": "Rebuilt",
-        "supplyOnly": "£7,500–£11,000",
-        "fittedIndie": "£8,900–£12,500",
-        "warranty": "12–24 months"
+        "supplyOnly": "£7,500-£11,000",
+        "fittedIndie": "£8,900-£12,500",
+        "warranty": "12-24 months"
       }
     ],
-    "labourEstimate": "Fitting an AJ20D6 typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG-QUOTE].",
+    "labourEstimate": "Fitting an AJ20D6 typically takes 12-16 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [JAG-QUOTE].",
     "sharedCostNote": "Parts cost is identical across Jaguar and Land Rover applications; labour time varies slightly by engine bay access.",
     "cta": {
       "label": "→ Compare AJ20D6 engine prices from UK specialists",
@@ -353,7 +353,7 @@
       {
         "id": 1,
         "question": "How much does a Jaguar AJ20D6 engine replacement cost?",
-        "answer": "A reconditioned AJ20D6 typically costs £5,500–£9,000 supply only [JAG-QUOTE], varying by mileage, warranty length, and supplier. Fitting adds £800–£1,500 depending on labour rates and vehicle access."
+        "answer": "A reconditioned AJ20D6 typically costs £5,500-£9,000 supply only [JAG-QUOTE], varying by mileage, warranty length, and supplier. Fitting adds £800-£1,500 depending on labour rates and vehicle access."
       },
       {
         "id": 2,

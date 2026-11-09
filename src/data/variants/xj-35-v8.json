@@ -53,13 +53,13 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "XJ X350 (2003–2007) AJ33",
+              "name": "XJ X350 (2003-2007) AJ33",
               "url": "https://jaguarengines.uk/xj/x350-x358"
             },
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "XJ X358 (2007–2009) AJ33",
+              "name": "XJ X358 (2007-2009) AJ33",
               "url": "https://jaguarengines.uk/xj/x350-x358"
             }
           ]
@@ -84,7 +84,7 @@
               "name": "How much does a Jaguar XJ 3.5 V8 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned XJ 3.5 V8 (AJ33) engine typically costs £2,500–£7,000 supply only. Fitting adds £800–£1,500 depending on workshop location. Customers have reported dealer quotes of around £15,000–£30,000 for engine replacement, while reconditioning or rebuilding is often in the £8,000–£10,000 range. Low-mileage replacement engines typically range from £3,000 to £6,000. Use our calculator for a figure specific to your car."
+                "text": "A reconditioned XJ 3.5 V8 (AJ33) engine typically costs £2,500-£7,000 supply only. Fitting adds £800-£1,500 depending on workshop location. Customers have reported dealer quotes of around £15,000-£30,000 for engine replacement, while reconditioning or rebuilding is often in the £8,000-£10,000 range. Low-mileage replacement engines typically range from £3,000 to £6,000. Use our calculator for a figure specific to your car."
               }
             },
             {
@@ -108,7 +108,7 @@
               "name": "Is it worth replacing a Jaguar XJ 3.5 V8 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Apply the 60% Jaguar scrap threshold: if your XJ is worth £5,000–£15,000 and a recon engine is £4,000–£6,000 (27–100% of the car's value), assess the overall condition carefully. Well-maintained examples with good bodywork and interior justify replacement spend. Tired examples with significant rust may not. XJs are appreciating classics - a good engine rebuild can add significant value if the rest of the car is in good condition."
+                "text": "Apply the 60% Jaguar scrap threshold: if your XJ is worth £5,000-£15,000 and a recon engine is £4,000-£6,000 (27-100% of the car's value), assess the overall condition carefully. Well-maintained examples with good bodywork and interior justify replacement spend. Tired examples with significant rust may not. XJs are appreciating classics - a good engine rebuild can add significant value if the rest of the car is in good condition."
               }
             },
             {
@@ -124,7 +124,7 @@
               "name": "Can I repair the timing chain tensioners, or does the engine need replacement?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes - if caught early. Tensioner replacement (£800–£2,500) is far cheaper than catastrophic failure requiring a full engine replacement (£3,000–£8,500+). The plastic tensioners should be replaced with metal versions. Frequent oil changes (every 7,500 miles) significantly extend tensioner life. At the first sign of rattling on startup, book an inspection immediately."
+                "text": "Yes - if caught early. Tensioner replacement (£800-£2,500) is far cheaper than catastrophic failure requiring a full engine replacement (£3,000-£8,500+). The plastic tensioners should be replaced with metal versions. Frequent oil changes (every 7,500 miles) significantly extend tensioner life. At the first sign of rattling on startup, book an inspection immediately."
               }
             }
           ]
@@ -185,7 +185,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar XJ 3.5 V8 • 2003–2009 • 1 Engine Code",
+    "tagPill": "Jaguar XJ 3.5 V8 • 2003-2009 • 1 Engine Code",
     "h1": "Jaguar XJ 3.5 V8 Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "The XJ's lightweight aluminium V8 - a 3.5-litre AJ33 producing 258 bhp, shared with the S-Type and XK. Get quotes from trusted UK Jaguar specialists who understand this refined but ageing engine, supply & fit available nationwide.",
     "trustBadges": [
@@ -218,18 +218,18 @@
     "rows": [
       {
         "generation": "XJ X350",
-        "years": "2003–2007",
+        "years": "2003-2007",
         "engineCode": "AJ33 (AJ-V8)",
         "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£2,500–£7,000 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£2,500-£7,000 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "Lightweight aluminium V8 - timing tensioners and cooling system are main concerns"
       },
       {
         "generation": "XJ X358",
-        "years": "2007–2009",
+        "years": "2007-2009",
         "engineCode": "AJ33 (AJ-V8)",
         "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£2,500–£7,000 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£2,500-£7,000 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "Revised facelift - same 258 bhp, updated electronics"
       }
     ],
@@ -248,23 +248,23 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£1,800–£3,000",
-        "fittedIndie": "£2,600–£4,500",
-        "warranty": "1–6 months",
+        "supplyOnly": "£1,800-£3,000",
+        "fittedIndie": "£2,600-£4,500",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; short-term ownership"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£2,500–£7,000",
-        "fittedIndie": "£3,300–£8,500",
-        "warranty": "12–24 months",
+        "supplyOnly": "£2,500-£7,000",
+        "fittedIndie": "£3,300-£8,500",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£4,000–£8,500",
-        "fittedIndie": "£4,800–£10,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£4,000-£8,500",
+        "fittedIndie": "£4,800-£10,000",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
@@ -275,8 +275,8 @@
         "bestFor": "No longer available - specialist reconditioning is the route"
       }
     ],
-    "figuresNote": "Figures above reflect current market rates. Customers have reported dealer quotes of around £15,000–£30,000 for engine replacement, while reconditioning or rebuilding is often in the £8,000–£10,000 range. Low-mileage replacement engines typically range from £3,000 to £6,000.",
-    "labourEstimate": "Fitting an XJ 3.5 V8 engine typically takes 10–14 hours at £65–£95/hr (independent). The aluminium-bodied XJ is relatively straightforward to work on - \"decently easy to work on for European luxury standards\".",
+    "figuresNote": "Figures above reflect current market rates. Customers have reported dealer quotes of around £15,000-£30,000 for engine replacement, while reconditioning or rebuilding is often in the £8,000-£10,000 range. Low-mileage replacement engines typically range from £3,000 to £6,000.",
+    "labourEstimate": "Fitting an XJ 3.5 V8 engine typically takes 10-14 hours at £65-£95/hr (independent). The aluminium-bodied XJ is relatively straightforward to work on - \"decently easy to work on for European luxury standards\".",
     "cta": {
       "label": "→ Compare XJ 3.5 V8 engine prices from UK specialists",
       "href": "/quote"
@@ -288,9 +288,9 @@
         "id": 1,
         "title": "Timing Chain Tensioner Failure",
         "symptoms": "Rattling, clanking or ticking noise from the engine, particularly on startup. The noise is caused by worn tensioners failing to maintain correct chain tension, potentially allowing the chain to slip on the sprockets. If ignored, chain failure can cause pistons to hit valves, destroying the engine.",
-        "typicalMileage": "50,000–77,000 miles - one owner reported tensioner replacement at ~50k miles, another at 77k miles. Extended 15,000-mile oil change intervals accelerate wear.",
-        "repairCost": "£800–£2,500 (tensioners, guides, chains and gaskets). One owner reported an indy charge of $5,600 for front engine parts.",
-        "replacementCost": "N/A - repair only if caught early; catastrophic failure requires full engine replacement (£3,000–£8,500+).",
+        "typicalMileage": "50,000-77,000 miles - one owner reported tensioner replacement at ~50k miles, another at 77k miles. Extended 15,000-mile oil change intervals accelerate wear.",
+        "repairCost": "£800-£2,500 (tensioners, guides, chains and gaskets). One owner reported an indy charge of $5,600 for front engine parts.",
+        "replacementCost": "N/A - repair only if caught early; catastrophic failure requires full engine replacement (£3,000-£8,500+).",
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
@@ -307,7 +307,7 @@
         "title": "Cooling System Failures - Thermostat Housing & Water Pump",
         "symptoms": "Coolant loss, overheating, steam from engine bay, low coolant warnings, fluctuating temperature gauge. The plastic thermostat housing can fall apart due to heat cycling. The early AJ-V8 also suffered from plastic impeller water pumps.",
         "typicalMileage": "Any mileage - age-related as plastic components become brittle.",
-        "repairCost": "£200–£800 (thermostat housing replacement, water pump, coolant flush).",
+        "repairCost": "£200-£800 (thermostat housing replacement, water pump, coolant flush).",
         "replacementCost": "N/A - repair only; if ignored, overheating can cause head gasket failure or warped cylinder heads.",
         "urgency": {
           "icon": "🔴",
@@ -324,8 +324,8 @@
         "id": 3,
         "title": "Valve Cover & VVT Seal Oil Leaks",
         "symptoms": "Burning oil smell, visible oil on the engine, oil on ignition coils, subtle misfire at idle, low oil level warnings, oil spots under the car.",
-        "typicalMileage": "60,000–100,000 miles - age-related as gaskets harden and seals degrade.",
-        "repairCost": "£200–£600 (valve cover gaskets, spark plug o-rings, VVT seals).",
+        "typicalMileage": "60,000-100,000 miles - age-related as gaskets harden and seals degrade.",
+        "repairCost": "£200-£600 (valve cover gaskets, spark plug o-rings, VVT seals).",
         "replacementCost": "N/A - repair only; if ignored, oil leaks can lead to low oil pressure, misfires, or catalytic converter damage.",
         "urgency": {
           "icon": "🟡",
@@ -362,25 +362,25 @@
         {
           "problem": "Timing chain tensioner rattle",
           "repairable": "✅ Yes (if caught early)",
-          "typicalCost": "£800–£2,500",
+          "typicalCost": "£800-£2,500",
           "whenItMakesSense": "Preventative - catches fault before catastrophic failure"
         },
         {
           "problem": "Cooling system (thermostat housing, water pump)",
           "repairable": "✅ Yes",
-          "typicalCost": "£200–£800",
+          "typicalCost": "£200-£800",
           "whenItMakesSense": "Upgraded aluminium housing available - do it preventatively"
         },
         {
           "problem": "Valve cover & VVT seal oil leaks",
           "repairable": "✅ Yes",
-          "typicalCost": "£200–£600",
+          "typicalCost": "£200-£600",
           "whenItMakesSense": "Common maintenance - repair when symptoms appear"
         },
         {
           "problem": "Head gasket failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£800–£1,500",
+          "typicalCost": "£800-£1,500",
           "whenItMakesSense": "Caused by overheating - repair with head skim"
         },
         {
@@ -406,7 +406,7 @@
         "* Poor service history - these engines are sensitive to oil quality"
       ]
     },
-    "closingVerdict": "The AJ33 V8 is a stout and reliable engine - \"stout and reliable, no real gotchas\" - but it has known weak points that require attention. Timing chain tensioners are the major concern; they should be replaced preventatively if there's any doubt. Cooling system components and valve cover gaskets are also common maintenance items. A £4,000–£6,000 reconditioned engine on an XJ valued at £5,000–£15,000 is 27–100% of the car's value - carefully assess the overall condition of the vehicle. With the 60% Jaguar scrap threshold, well-maintained examples justify replacement spend; tired examples may not.",
+    "closingVerdict": "The AJ33 V8 is a stout and reliable engine - \"stout and reliable, no real gotchas\" - but it has known weak points that require attention. Timing chain tensioners are the major concern; they should be replaced preventatively if there's any doubt. Cooling system components and valve cover gaskets are also common maintenance items. A £4,000-£6,000 reconditioned engine on an XJ valued at £5,000-£15,000 is 27-100% of the car's value - carefully assess the overall condition of the vehicle. With the 60% Jaguar scrap threshold, well-maintained examples justify replacement spend; tired examples may not.",
     "cta": {
       "label": "→ Compare XJ 3.5 V8 engine prices before you buy",
       "href": "/quote"
@@ -436,17 +436,17 @@
     "rows": [
       {
         "engineCode": "AJ33 (AJ-V8)",
-        "years": "2003–2007",
-        "power": "258–262 bhp (190–195 kW)",
+        "years": "2003-2007",
+        "power": "258-262 bhp (190-195 kW)",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£2,500–£7,000 [PLACEHOLDER]"
+        "avgReconCost": "£2,500-£7,000 [PLACEHOLDER]"
       },
       {
         "engineCode": "AJ33 (AJ-V8)",
-        "years": "2007–2009",
+        "years": "2007-2009",
         "power": "258 bhp (190 kW)",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£2,500–£7,000 [PLACEHOLDER]"
+        "avgReconCost": "£2,500-£7,000 [PLACEHOLDER]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -521,7 +521,7 @@
       {
         "id": 1,
         "question": "How much does a Jaguar XJ 3.5 V8 engine replacement cost in the UK?",
-        "answer": "A reconditioned XJ 3.5 V8 (AJ33) engine typically costs £2,500–£7,000 supply only. Fitting adds £800–£1,500 depending on workshop location. Customers have reported dealer quotes of around £15,000–£30,000 for engine replacement, while reconditioning or rebuilding is often in the £8,000–£10,000 range. Low-mileage replacement engines typically range from £3,000 to £6,000. Use our calculator for a figure specific to your car."
+        "answer": "A reconditioned XJ 3.5 V8 (AJ33) engine typically costs £2,500-£7,000 supply only. Fitting adds £800-£1,500 depending on workshop location. Customers have reported dealer quotes of around £15,000-£30,000 for engine replacement, while reconditioning or rebuilding is often in the £8,000-£10,000 range. Low-mileage replacement engines typically range from £3,000 to £6,000. Use our calculator for a figure specific to your car."
       },
       {
         "id": 2,
@@ -536,7 +536,7 @@
       {
         "id": 4,
         "question": "Is it worth replacing a Jaguar XJ 3.5 V8 engine, or should I scrap the car?",
-        "answer": "Apply the 60% Jaguar scrap threshold: if your XJ is worth £5,000–£15,000 and a recon engine is £4,000–£6,000 (27–100% of the car's value), assess the overall condition carefully. Well-maintained examples with good bodywork and interior justify replacement spend. Tired examples with significant rust may not. XJs are appreciating classics - a good engine rebuild can add significant value if the rest of the car is in good condition."
+        "answer": "Apply the 60% Jaguar scrap threshold: if your XJ is worth £5,000-£15,000 and a recon engine is £4,000-£6,000 (27-100% of the car's value), assess the overall condition carefully. Well-maintained examples with good bodywork and interior justify replacement spend. Tired examples with significant rust may not. XJs are appreciating classics - a good engine rebuild can add significant value if the rest of the car is in good condition."
       },
       {
         "id": 5,
@@ -546,7 +546,7 @@
       {
         "id": 6,
         "question": "Can I repair the timing chain tensioners, or does the engine need replacement?",
-        "answer": "Yes - if caught early. Tensioner replacement (£800–£2,500) is far cheaper than catastrophic failure requiring a full engine replacement (£3,000–£8,500+). The plastic tensioners should be replaced with metal versions. Frequent oil changes (every 7,500 miles) significantly extend tensioner life. At the first sign of rattling on startup, book an inspection immediately."
+        "answer": "Yes - if caught early. Tensioner replacement (£800-£2,500) is far cheaper than catastrophic failure requiring a full engine replacement (£3,000-£8,500+). The plastic tensioners should be replaced with metal versions. Frequent oil changes (every 7,500 miles) significantly extend tensioner life. At the first sign of rattling on startup, book an inspection immediately."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier."

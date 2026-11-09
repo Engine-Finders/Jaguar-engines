@@ -105,7 +105,7 @@
               "name": "How much does a Jaguar I‑Pace X590 battery replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A replacement 90 kWh traction battery for the I‑Pace typically costs between £9,000 and £35,000 supply only, depending on whether you go through a Jaguar main dealer or an independent EV specialist. Used battery packs are available from £5,000–£10,000. Fitting adds £800–£1,500 in labour. Use our calculator for a personalised figure based on your car's age and condition."
+                "text": "A replacement 90 kWh traction battery for the I‑Pace typically costs between £9,000 and £35,000 supply only, depending on whether you go through a Jaguar main dealer or an independent EV specialist. Used battery packs are available from £5,000-£10,000. Fitting adds £800-£1,500 in labour. Use our calculator for a personalised figure based on your car's age and condition."
               }
             },
             {
@@ -129,7 +129,7 @@
               "name": "Is the Jaguar I‑Pace X590 reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The motors themselves are reliable - permanent‑magnet synchronous designs are proven technology. The battery, however, is the X590's biggest question mark. Early (2019–2020) cars have documented thermal management concerns that have led to safety recalls. Post‑2021 cars are significantly improved. A full battery health check is essential before purchase, and extended warranty cover is strongly recommended."
+                "text": "The motors themselves are reliable - permanent‑magnet synchronous designs are proven technology. The battery, however, is the X590's biggest question mark. Early (2019-2020) cars have documented thermal management concerns that have led to safety recalls. Post‑2021 cars are significantly improved. A full battery health check is essential before purchase, and extended warranty cover is strongly recommended."
               }
             },
             {
@@ -161,7 +161,7 @@
               "name": "How long do Jaguar I‑Pace X590 powertrains last?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The motors are capable of 200,000+ miles with proper maintenance - they're proven technology with few wear parts. The battery's longevity depends on usage patterns, charging habits, and thermal management. Expect 8–10 years (100,000–150,000 miles) before significant degradation on a well‑maintained post‑2021 car. Pre‑2021 cars have less predictable longevity."
+                "text": "The motors are capable of 200,000+ miles with proper maintenance - they're proven technology with few wear parts. The battery's longevity depends on usage patterns, charging habits, and thermal management. Expect 8-10 years (100,000-150,000 miles) before significant degradation on a well‑maintained post‑2021 car. Pre‑2021 cars have less predictable longevity."
               }
             },
             {
@@ -243,7 +243,7 @@
     "authorityModelMode": ""
   },
   "hero": {
-    "tagPill": "Jaguar I‑Pace X590 • SUV • 2018–2025",
+    "tagPill": "Jaguar I‑Pace X590 • SUV • 2018-2025",
     "h1": "Jaguar I‑Pace X590 Powertrain - The Complete UK Guide",
     "subHeadline": "The Jaguar I‑Pace X590 is Jaguar’s first all‑electric vehicle - twin permanent‑magnet motors producing 400 PS, a 90 kWh battery, and a 4.8‑second 0‑60 sprint. Real UK costs, honest reliability data, and the battery degradation question every EV buyer asks. Backed by 40+ real UK X590 enquiries in 2025 [EM‑VERIFIED].",
     "trustStrip": [
@@ -310,7 +310,7 @@
       {
         "slot": "Most Overlooked",
         "engine": "Front Motor / Rear Motor Separation",
-        "quote": "“The I‑Pace’s motors are often treated as a single unit, but failures can occur on one axle independently. Replacing a single motor (around £2,500–£5,000) is far cheaper than a full powertrain replacement. Most owners don’t realise this is an option.” Who it’s for: buyers facing a motor fault who want the cheapest viable repair.",
+        "quote": "“The I‑Pace’s motors are often treated as a single unit, but failures can occur on one axle independently. Replacing a single motor (around £2,500-£5,000) is far cheaper than a full powertrain replacement. Most owners don’t realise this is an option.” Who it’s for: buyers facing a motor fault who want the cheapest viable repair.",
         "whoItsFor": ""
       }
     ]
@@ -328,7 +328,7 @@
     "rows": [],
     "economicsRule": {
       "title": "The X590 rule",
-      "text": "A £9,000–£35,000 battery replacement against a £15,000–£45,000 I‑Pace sits at 20–230% of the car’s value. On a sub‑£20,000 early I‑Pace, a battery failure is almost certainly a write‑off - our 60% Jaguar threshold is crossed immediately. On a post‑2021 car under warranty, the risk is dramatically lower. Buy with warranty, budget for extended cover, and treat battery health as the single most important pre‑purchase check."
+      "text": "A £9,000-£35,000 battery replacement against a £15,000-£45,000 I‑Pace sits at 20-230% of the car’s value. On a sub‑£20,000 early I‑Pace, a battery failure is almost certainly a write‑off - our 60% Jaguar threshold is crossed immediately. On a post‑2021 car under warranty, the risk is dramatically lower. Buy with warranty, budget for extended cover, and treat battery health as the single most important pre‑purchase check."
     },
     "keyTakeaways": []
   },
@@ -337,21 +337,21 @@
       {
         "id": 1,
         "title": "HV Battery Thermal Events (pre‑2021)",
-        "affectedModels": "Jaguar I‑Pace X590 2019–2020 model years.",
-        "typicalFailureMileage": "30,000–80,000 miles.",
+        "affectedModels": "Jaguar I‑Pace X590 2019-2020 model years.",
+        "typicalFailureMileage": "30,000-80,000 miles.",
         "rootCause": "A concern with the capability of diagnostic software introduced through safety recalls has been identified - post‑software‑update 2019 model‑year vehicles have experienced thermal overload, showing as smoke or fire from the underside where the HV battery is located.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
-            "dealer": "£1,500–£3,000",
-            "specialist": "£1,000–£2,500",
+            "dealer": "£1,500-£3,000",
+            "specialist": "£1,000-£2,500",
             "work": "",
             "note": ""
           },
           {
             "tier": "Catastrophic (Replacement)",
-            "dealer": "£25,000–£40,000",
-            "specialist": "£9,000–£20,000",
+            "dealer": "£25,000-£40,000",
+            "specialist": "£9,000-£20,000",
             "work": "",
             "note": ""
           }
@@ -366,25 +366,25 @@
         "id": 2,
         "title": "Motor Position Sensor / Wiring Harness Failure",
         "affectedModels": "Jaguar I‑Pace X590 all model years.",
-        "typicalFailureMileage": "50,000–100,000 miles.",
+        "typicalFailureMileage": "50,000-100,000 miles.",
         "rootCause": "The motor position sensors or wiring harness can fail, leading to transmission errors, loss of drive, or “gearbox error” warnings. Symptoms include shaking, inability to engage drive or reverse, and error codes P0C50‑56 or P0A40‑00.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
-            "dealer": "£1,500–£3,000",
-            "specialist": "£500–£1,500",
+            "dealer": "£1,500-£3,000",
+            "specialist": "£500-£1,500",
             "work": "",
             "note": ""
           },
           {
             "tier": "Catastrophic (Replacement)",
-            "dealer": "£5,000–£8,000",
-            "specialist": "£2,500–£5,000",
+            "dealer": "£5,000-£8,000",
+            "specialist": "£2,500-£5,000",
             "work": "",
             "note": ""
           }
         ],
-        "recommendation": "At the first sign of transmission errors or loss of drive on an I‑Pace, get a specialist diagnostic immediately - a £500–£1,500 sensor or harness repair is dramatically cheaper than the £2,500–£5,000 motor replacement that follows if ignored.",
+        "recommendation": "At the first sign of transmission errors or loss of drive on an I‑Pace, get a specialist diagnostic immediately - a £500-£1,500 sensor or harness repair is dramatically cheaper than the £2,500-£5,000 motor replacement that follows if ignored.",
         "cta": {
           "label": "Compare I‑Pace X590 motor repair quotes →",
           "href": "/quote"
@@ -394,25 +394,25 @@
         "id": 3,
         "title": "12V Battery Drain",
         "affectedModels": "Jaguar I‑Pace X590 all model years.",
-        "typicalFailureMileage": "3–5 years (age‑related).",
+        "typicalFailureMileage": "3-5 years (age‑related).",
         "rootCause": "The 12V auxiliary battery can drain prematurely due to software issues, parasitic drain from infotainment systems, or simply age. A dead 12V battery can prevent the HV battery from engaging, leaving the car immobile.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
-            "dealer": "£200–£350",
-            "specialist": "£100–£250",
+            "dealer": "£200-£350",
+            "specialist": "£100-£250",
             "work": "",
             "note": ""
           },
           {
             "tier": "Catastrophic (Replacement)",
-            "dealer": "£200–£350",
-            "specialist": "£100–£250",
+            "dealer": "£200-£350",
+            "specialist": "£100-£250",
             "work": "",
             "note": ""
           }
         ],
-        "recommendation": "Replace the 12V battery every 3‑4 years as preventative maintenance on any I‑Pace - it’s a £100–£250 job that prevents the far more disruptive “dead car” scenario.",
+        "recommendation": "Replace the 12V battery every 3‑4 years as preventative maintenance on any I‑Pace - it’s a £100-£250 job that prevents the far more disruptive “dead car” scenario.",
         "cta": {
           "label": "Compare I‑Pace X590 12V battery replacement quotes →",
           "href": "/quote"
@@ -434,34 +434,34 @@
       {
         "component": "Front Motor",
         "componentCode": "TZ‑204‑X‑S‑A",
-        "usedSupply": "£1,500–£3,000",
-        "reconditionedSupply": "£2,500–£4,000",
-        "newSupply": "£4,000–£6,000",
-        "labourHours": "6–10 hrs"
+        "usedSupply": "£1,500-£3,000",
+        "reconditionedSupply": "£2,500-£4,000",
+        "newSupply": "£4,000-£6,000",
+        "labourHours": "6-10 hrs"
       },
       {
         "component": "Rear Motor",
         "componentCode": "TZ‑204‑X‑S‑A",
-        "usedSupply": "£1,500–£3,000",
-        "reconditionedSupply": "£2,500–£4,000",
-        "newSupply": "£4,000–£6,000",
-        "labourHours": "6–10 hrs"
+        "usedSupply": "£1,500-£3,000",
+        "reconditionedSupply": "£2,500-£4,000",
+        "newSupply": "£4,000-£6,000",
+        "labourHours": "6-10 hrs"
       },
       {
         "component": "Complete Motor Set",
         "componentCode": "TZ‑204‑X‑S‑A (x2)",
-        "usedSupply": "£3,000–£5,500",
-        "reconditionedSupply": "£5,000–£8,000",
-        "newSupply": "£8,000–£12,000",
-        "labourHours": "10–16 hrs"
+        "usedSupply": "£3,000-£5,500",
+        "reconditionedSupply": "£5,000-£8,000",
+        "newSupply": "£8,000-£12,000",
+        "labourHours": "10-16 hrs"
       },
       {
         "component": "HV Battery Pack (90 kWh)",
         "componentCode": "-",
-        "usedSupply": "£5,000–£10,000",
-        "reconditionedSupply": "£9,000–£15,000",
-        "newSupply": "£20,000–£35,000",
-        "labourHours": "8–12 hrs"
+        "usedSupply": "£5,000-£10,000",
+        "reconditionedSupply": "£9,000-£15,000",
+        "newSupply": "£20,000-£35,000",
+        "labourHours": "8-12 hrs"
       }
     ],
     "note": ""
@@ -483,7 +483,7 @@
       "2. EV400 HSE",
       "3. EV400 R‑Dynamic"
     ],
-    "averageReplacementCost": "£9,000–£35,000 supply only [PLACEHOLDER - confirm vs cost sheet]",
+    "averageReplacementCost": "£9,000-£35,000 supply only [PLACEHOLDER - confirm vs cost sheet]",
     "mostCommonFailures": [
       "1. HV Battery thermal events (pre‑2021)",
       "2. Motor position sensor / wiring harness failure",
@@ -518,7 +518,7 @@
       {
         "id": 1,
         "question": "How much does a Jaguar I‑Pace X590 battery replacement cost in the UK?",
-        "answer": "A replacement 90 kWh traction battery for the I‑Pace typically costs between £9,000 and £35,000 supply only [PLACEHOLDER], depending on whether you go through a Jaguar main dealer or an independent EV specialist. Used battery packs are available from £5,000–£10,000. Fitting adds £800–£1,500 in labour. Use our calculator for a personalised figure based on your car's age and condition."
+        "answer": "A replacement 90 kWh traction battery for the I‑Pace typically costs between £9,000 and £35,000 supply only [PLACEHOLDER], depending on whether you go through a Jaguar main dealer or an independent EV specialist. Used battery packs are available from £5,000-£10,000. Fitting adds £800-£1,500 in labour. Use our calculator for a personalised figure based on your car's age and condition."
       },
       {
         "id": 2,
@@ -533,7 +533,7 @@
       {
         "id": 4,
         "question": "Is the Jaguar I‑Pace X590 reliable?",
-        "answer": "The motors themselves are reliable - permanent‑magnet synchronous designs are proven technology. The battery, however, is the X590's biggest question mark. Early (2019–2020) cars have documented thermal management concerns that have led to safety recalls. Post‑2021 cars are significantly improved. A full battery health check is essential before purchase, and extended warranty cover is strongly recommended."
+        "answer": "The motors themselves are reliable - permanent‑magnet synchronous designs are proven technology. The battery, however, is the X590's biggest question mark. Early (2019-2020) cars have documented thermal management concerns that have led to safety recalls. Post‑2021 cars are significantly improved. A full battery health check is essential before purchase, and extended warranty cover is strongly recommended."
       },
       {
         "id": 5,
@@ -553,7 +553,7 @@
       {
         "id": 8,
         "question": "How long do Jaguar I‑Pace X590 powertrains last?",
-        "answer": "The motors are capable of 200,000+ miles with proper maintenance - they're proven technology with few wear parts. The battery's longevity depends on usage patterns, charging habits, and thermal management. Expect 8–10 years (100,000–150,000 miles) before significant degradation on a well‑maintained post‑2021 car. Pre‑2021 cars have less predictable longevity."
+        "answer": "The motors are capable of 200,000+ miles with proper maintenance - they're proven technology with few wear parts. The battery's longevity depends on usage patterns, charging habits, and thermal management. Expect 8-10 years (100,000-150,000 miles) before significant degradation on a well‑maintained post‑2021 car. Pre‑2021 cars have less predictable longevity."
       },
       {
         "id": 9,

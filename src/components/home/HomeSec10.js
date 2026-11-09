@@ -19,7 +19,7 @@ const riskDot = {
 function cleanText(value = "") {
   return String(value || "")
     .replaceAll("Â£", "£")
-    .replaceAll("â€“", "–")
+    .replaceAll("â€“", "-")
     .replaceAll("â€”", "")
     .trim();
 }

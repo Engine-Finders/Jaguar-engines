@@ -52,14 +52,14 @@
       {
         "id": "2",
         "title": "Height Sensor Faults",
-        "description": "Trigger warning lights and uneven ride height well before a full system failure. £200–£500 repair cost.",
+        "description": "Trigger warning lights and uneven ride height well before a full system failure. £200-£500 repair cost.",
         "severity": { "label": "Low", "type": "low" },
         "link": { "label": "Read more", "href": "/failures" }
       },
       {
         "id": "3",
         "title": "Valve Block & Air Spring Leaks",
-        "description": "Slow leaks often mistaken for compressor failure. £300–£800 repair cost.",
+        "description": "Slow leaks often mistaken for compressor failure. £300-£800 repair cost.",
         "severity": { "label": "Low", "type": "low" },
         "link": { "label": "Read more", "href": "/failures/air-spring-valve-block" }
       }

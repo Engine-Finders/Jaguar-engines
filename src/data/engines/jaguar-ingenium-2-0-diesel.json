@@ -81,7 +81,7 @@
               "name": "How much does a Jaguar Ingenium 2.0 diesel engine replacement cost?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned Ingenium 2.0 diesel typically costs £3,500–£5,800 supply only [JAG‑QUOTE], varying by power output and specification. Fitting adds £650–£910 depending on labour rates."
+                "text": "A reconditioned Ingenium 2.0 diesel typically costs £3,500-£5,800 supply only [JAG‑QUOTE], varying by power output and specification. Fitting adds £650-£910 depending on labour rates."
               }
             },
             {
@@ -97,7 +97,7 @@
               "name": "What is the most common Ingenium 2.0 diesel failure?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The most common failure is timing‑chain stretch and tensioner wear, typically appearing between 60,000–120,000 miles - often accompanied by a cold‑start rattle."
+                "text": "The most common failure is timing‑chain stretch and tensioner wear, typically appearing between 60,000-120,000 miles - often accompanied by a cold‑start rattle."
               }
             },
             {
@@ -189,7 +189,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar • Ingenium 2.0 Diesel • Diesel • 2.0L I4 Turbo • 2015–present",
+    "tagPill": "Jaguar • Ingenium 2.0 Diesel • Diesel • 2.0L I4 Turbo • 2015-present",
     "h1": "Jaguar Ingenium 2.0 Diesel Engine - Specs, Reliability & Replacement Cost",
     "subHeadline": "The Jaguar Ingenium 2.0 diesel is a modern, efficient four-cylinder - but early timing‑chain failures are a well‑known weakness. Backed by 590+ real UK enquiries in 2025 [JAG‑VERIFIED].",
     "trustStrip": [
@@ -231,11 +231,11 @@
       },
       {
         "metric": "Power Range",
-        "value": "150–240 bhp"
+        "value": "150-240 bhp"
       },
       {
         "metric": "Years Produced",
-        "value": "2015–present"
+        "value": "2015-present"
       },
       {
         "metric": "Models Fitted (Jaguar only)",
@@ -267,7 +267,7 @@
         },
         {
           "dimension": "Repair Cost",
-          "score": "16 (Midpoint of reconditioned range (£4,650) → £3,000–£4,999 bracket)"
+          "score": "16 (Midpoint of reconditioned range (£4,650) → £3,000-£4,999 bracket)"
         },
         {
           "dimension": "Repairability",
@@ -302,26 +302,26 @@
       {
         "model": "XE",
         "generation": "X760",
-        "variantBadge": "2.0 D (150–180 bhp)",
-        "years": "2015–2024"
+        "variantBadge": "2.0 D (150-180 bhp)",
+        "years": "2015-2024"
       },
       {
         "model": "XF",
         "generation": "X260",
-        "variantBadge": "2.0 D (150–180 bhp)",
-        "years": "2015–2024"
+        "variantBadge": "2.0 D (150-180 bhp)",
+        "years": "2015-2024"
       },
       {
         "model": "F‑Pace",
         "generation": "X761",
-        "variantBadge": "2.0 D (150–180 bhp)",
-        "years": "2016–2024"
+        "variantBadge": "2.0 D (150-180 bhp)",
+        "years": "2016-2024"
       },
       {
         "model": "E‑Pace",
         "generation": "X540",
-        "variantBadge": "2.0 D (150–180 bhp)",
-        "years": "2017–present"
+        "variantBadge": "2.0 D (150-180 bhp)",
+        "years": "2017-present"
       }
     ],
     "crossBrandNote": "Also powers the Land Rover Discovery Sport, Evoque, Velar and Defender → [link]."
@@ -336,24 +336,24 @@
     "rows": [
       {
         "condition": "Used",
-        "supplyOnly": "£2,000–£3,500 [JAG‑QUOTE]",
-        "fittedIndie": "£2,650–£4,410",
-        "warranty": "3–6 months"
+        "supplyOnly": "£2,000-£3,500 [JAG‑QUOTE]",
+        "fittedIndie": "£2,650-£4,410",
+        "warranty": "3-6 months"
       },
       {
         "condition": "Reconditioned",
-        "supplyOnly": "£3,500–£5,800 [JAG‑QUOTE]",
-        "fittedIndie": "£4,150–£6,710",
+        "supplyOnly": "£3,500-£5,800 [JAG‑QUOTE]",
+        "fittedIndie": "£4,150-£6,710",
         "warranty": "12 months"
       },
       {
         "condition": "Rebuilt",
-        "supplyOnly": "£4,800–£7,000 [JAG‑QUOTE]",
-        "fittedIndie": "£5,450–£7,910",
-        "warranty": "12–24 months"
+        "supplyOnly": "£4,800-£7,000 [JAG‑QUOTE]",
+        "fittedIndie": "£5,450-£7,910",
+        "warranty": "12-24 months"
       }
     ],
-    "labourEstimate": "Fitting an Ingenium 2.0 diesel typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [JAG‑QUOTE].",
+    "labourEstimate": "Fitting an Ingenium 2.0 diesel typically takes 10-14 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [JAG‑QUOTE].",
     "sharedCostNote": "Parts cost is identical across Jaguar and Land Rover applications; labour time varies slightly by engine bay access.",
     "cta": {
       "label": "",
@@ -365,7 +365,7 @@
       {
         "id": 1,
         "question": "How much does a Jaguar Ingenium 2.0 diesel engine replacement cost?",
-        "answer": "A reconditioned Ingenium 2.0 diesel typically costs £3,500–£5,800 supply only [JAG‑QUOTE], varying by power output and specification. Fitting adds £650–£910 depending on labour rates."
+        "answer": "A reconditioned Ingenium 2.0 diesel typically costs £3,500-£5,800 supply only [JAG‑QUOTE], varying by power output and specification. Fitting adds £650-£910 depending on labour rates."
       },
       {
         "id": 2,
@@ -375,7 +375,7 @@
       {
         "id": 3,
         "question": "What is the most common Ingenium 2.0 diesel failure?",
-        "answer": "The most common failure is timing‑chain stretch and tensioner wear, typically appearing between 60,000–120,000 miles - often accompanied by a cold‑start rattle."
+        "answer": "The most common failure is timing‑chain stretch and tensioner wear, typically appearing between 60,000-120,000 miles - often accompanied by a cold‑start rattle."
       },
       {
         "id": 4,

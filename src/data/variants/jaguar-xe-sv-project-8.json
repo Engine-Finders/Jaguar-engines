@@ -52,7 +52,7 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "XE X760 Project 8 (AJ133 5.0 SC, 2018–2024)",
+              "name": "XE X760 Project 8 (AJ133 5.0 SC, 2018-2024)",
               "url": "https://jaguarengines.uk/xe/sv-project-8"
             }
           ]
@@ -77,7 +77,7 @@
               "name": "How much does a Jaguar XE Project 8 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned Jaguar XE Project 8 engine (AJ133 5.0 SC) typically costs £7,500–£12,000 supply only. Fitting adds £1,500–£2,500. These are specialist-only replacements - the 600PS supercharged V8 requires Jaguar V8 expertise. A timing chain job alone costs £2,000–£4,500."
+                "text": "A reconditioned Jaguar XE Project 8 engine (AJ133 5.0 SC) typically costs £7,500-£12,000 supply only. Fitting adds £1,500-£2,500. These are specialist-only replacements - the 600PS supercharged V8 requires Jaguar V8 expertise. A timing chain job alone costs £2,000-£4,500."
               }
             },
             {
@@ -85,7 +85,7 @@
               "name": "Is the Jaguar XE Project 8 engine reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The AJ133 5.0L V8 is fundamentally robust, but early examples (pre-2015) are known for timing chain guide wear - the defining issue of the engine family. The Project 8's 600PS tune puts additional stress on the supercharger and cooling systems. The single most important factor is oil change frequency - 5,000–7,500 mile intervals are essential. JLR revised the timing chain guides in 2015 with steel inserts."
+                "text": "The AJ133 5.0L V8 is fundamentally robust, but early examples (pre-2015) are known for timing chain guide wear - the defining issue of the engine family. The Project 8's 600PS tune puts additional stress on the supercharger and cooling systems. The single most important factor is oil change frequency - 5,000-7,500 mile intervals are essential. JLR revised the timing chain guides in 2015 with steel inserts."
               }
             },
             {
@@ -93,7 +93,7 @@
               "name": "What are the common problems with the Jaguar XE Project 8?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Timing chain guide wear (pre-2015 design, cold-start rattle, £2,000–£4,500), plastic coolant crossover pipe failure (coolant loss, overheating, £800–£2,000), and supercharger coupler wear (rattling at idle, £500–£1,000). Cooling system components are a particular concern on the 600PS tune."
+                "text": "Timing chain guide wear (pre-2015 design, cold-start rattle, £2,000-£4,500), plastic coolant crossover pipe failure (coolant loss, overheating, £800-£2,000), and supercharger coupler wear (rattling at idle, £500-£1,000). Cooling system components are a particular concern on the 600PS tune."
               }
             },
             {
@@ -101,7 +101,7 @@
               "name": "Is it worth replacing a Jaguar XE Project 8 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Project 8 values range from £80,000–£150,000+ depending on condition and mileage. A £7,500–£12,000 reconditioned engine represents 5–15% of vehicle value - well within our 60% Jaguar scrap threshold. For almost any example, replacement is financially justified."
+                "text": "Project 8 values range from £80,000-£150,000+ depending on condition and mileage. A £7,500-£12,000 reconditioned engine represents 5-15% of vehicle value - well within our 60% Jaguar scrap threshold. For almost any example, replacement is financially justified."
               }
             },
             {
@@ -117,7 +117,7 @@
               "name": "Can I repair the timing chain issue, or does it need replacement?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes - if caught early. Timing chain and guide replacement costs £2,000–£4,500 and is significantly cheaper than a full engine replacement (£7,500–£12,000). JLR revised the guide design in 2015 with steel inserts. At the first sign of cold-start rattle, book an inspection immediately - ignored chain wear can lead to catastrophic piston-valve contact."
+                "text": "Yes - if caught early. Timing chain and guide replacement costs £2,000-£4,500 and is significantly cheaper than a full engine replacement (£7,500-£12,000). JLR revised the guide design in 2015 with steel inserts. At the first sign of cold-start rattle, book an inspection immediately - ignored chain wear can lead to catastrophic piston-valve contact."
               }
             }
           ]
@@ -178,7 +178,7 @@
     }
   },
   "hero": {
-    "tagPill": "Jaguar XE SV Project 8 • 2018–2024 • 5.0L Supercharged V8",
+    "tagPill": "Jaguar XE SV Project 8 • 2018-2024 • 5.0L Supercharged V8",
     "h1": "Jaguar XE Project 8 Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK Jaguar V8 specialists. The Project 8 is Jaguar's most powerful road car ever - a 600PS 5.0-litre supercharged V8. Compare reconditioned, rebuilt and used <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> engines - supply & fit available nationwide.",
     "trustBadges": [
@@ -211,10 +211,10 @@
     "rows": [
       {
         "generation": "X760 Project 8",
-        "years": "2018–2024",
+        "years": "2018-2024",
         "engineCode": "AJ133 (5.0L supercharged V8)",
         "reliability": "★★★½☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£7,500–£12,000 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£7,500-£12,000 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "600PS supercharged V8 - timing chain guides and cooling system are key watchpoints"
       }
     ],
@@ -233,35 +233,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£6,000–£9,000",
-        "fittedIndie": "£7,500–£10,800",
-        "warranty": "1–6 months",
+        "supplyOnly": "£6,000-£9,000",
+        "fittedIndie": "£7,500-£10,800",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; lower-mileage donor"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£7,500–£12,000",
-        "fittedIndie": "£9,000–£13,800",
-        "warranty": "12–24 months",
+        "supplyOnly": "£7,500-£12,000",
+        "fittedIndie": "£9,000-£13,800",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£10,000–£15,000",
-        "fittedIndie": "£11,500–£17,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£10,000-£15,000",
+        "fittedIndie": "£11,500-£17,000",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 5+ year horizon"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£15,000–£20,000",
-        "fittedIndie": "£17,000–£22,500",
-        "warranty": "24–36 months",
+        "supplyOnly": "£15,000-£20,000",
+        "fittedIndie": "£17,000-£22,500",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs, warranty claims"
       }
     ],
     "figuresNote": "Figures above reflect the AJ133 5.0 SC engine in Project 8 specification. The 600PS tune means these engines command a premium over standard AJ133 units. All pricing is indicative; actual costs vary by mileage, condition and workshop location.",
-    "labourEstimate": "Fitting a Project 8 engine typically takes 14–18 hours at £80–£120/hr (independent Jaguar specialist) or £140–£190/hr (London/SE dealer). The supercharger and cooling system add complexity.",
+    "labourEstimate": "Fitting a Project 8 engine typically takes 14-18 hours at £80-£120/hr (independent Jaguar specialist) or £140-£190/hr (London/SE dealer). The supercharger and cooling system add complexity.",
     "cta": {
       "label": "→ Compare Jaguar XE Project 8 engine prices from UK specialists",
       "href": "/quote"
@@ -347,32 +347,32 @@
         {
           "problem": "Timing chain guide wear",
           "repairable": "✅ Yes",
-          "typicalCost": "£2,000–£4,500",
+          "typicalCost": "£2,000-£4,500",
           "whenItMakesSense": "Preventative replacement before failure - always cheaper than engine replacement"
         },
         {
           "problem": "Coolant crossover pipe failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£800–£2,000",
+          "typicalCost": "£800-£2,000",
           "whenItMakesSense": "Fit aftermarket metal pipes for a permanent fix"
         },
         {
           "problem": "Supercharger coupler wear",
           "repairable": "✅ Yes",
-          "typicalCost": "£500–£1,000",
+          "typicalCost": "£500-£1,000",
           "whenItMakesSense": "Straightforward repair - always worth doing"
         },
         {
           "problem": "Injector failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£300–£800 per injector",
+          "typicalCost": "£300-£800 per injector",
           "whenItMakesSense": "Replace as a set - common on high-mileage AJ133s"
         },
         {
           "problem": "Major internal failure (crank/block)",
           "repairable": "❌ Usually No",
           "typicalCost": "Engine replacement required",
-          "whenItMakesSense": "Replacement often £7,500–£12,000 - assess vehicle value carefully"
+          "whenItMakesSense": "Replacement often £7,500-£12,000 - assess vehicle value carefully"
         }
       ]
     },
@@ -381,7 +381,7 @@
       "buyIf": [
         "* Documented timing chain guide history (post-2015 build or retrofit)",
         "* Coolant crossover pipes replaced with metal aftermarket units",
-        "* Full service history with regular oil changes (5,000–7,500 miles)",
+        "* Full service history with regular oil changes (5,000-7,500 miles)",
         "* Low mileage (under 30,000) with documented history"
       ],
       "avoidIf": [
@@ -401,7 +401,7 @@
     "intro": "Before you buy a used Jaguar XE Project 8 (or before you commit to an engine replacement), check these:",
     "items": [
       "* Cold Start - Listen for any rattle on startup (timing chain guide wear warning)",
-      "* Service History - Oil change intervals are critical - 5,000–7,500 miles is the safe zone",
+      "* Service History - Oil change intervals are critical - 5,000-7,500 miles is the safe zone",
       "* Coolant Level - Check for any loss; inspect around crossover pipes for leaks",
       "* Supercharger Health - Any rattling from the supercharger at idle? (coupler wear)",
       "* Engine Performance - Test acceleration; any hesitation, flat spots, or rough idle?",
@@ -421,10 +421,10 @@
     "rows": [
       {
         "engineCode": "AJ133 5.0L SC (600PS)",
-        "years": "2018–2024",
+        "years": "2018-2024",
         "power": "600 PS / 592 bhp / 441 kW",
         "enquiries": "- (pattern data - ultra-low-volume halo)",
-        "avgReconCost": "£7,500–£12,000 [PLACEHOLDER]"
+        "avgReconCost": "£7,500-£12,000 [PLACEHOLDER]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -457,10 +457,10 @@
         },
         {
           "label": "* Maximum torque",
-          "value": "700 Nm / 516 lb-ft @ 3,500–5,000 rpm"
+          "value": "700 Nm / 516 lb-ft @ 3,500-5,000 rpm"
         },
         {
-          "label": "* 0–60mph",
+          "label": "* 0-60mph",
           "value": "3.3 seconds"
         },
         {
@@ -523,22 +523,22 @@
       {
         "id": 1,
         "question": "How much does a Jaguar XE Project 8 engine replacement cost in the UK?",
-        "answer": "A reconditioned Jaguar XE Project 8 engine (AJ133 5.0 SC) typically costs £7,500–£12,000 supply only. Fitting adds £1,500–£2,500. These are specialist-only replacements - the 600PS supercharged V8 requires Jaguar V8 expertise. A timing chain job alone costs £2,000–£4,500."
+        "answer": "A reconditioned Jaguar XE Project 8 engine (AJ133 5.0 SC) typically costs £7,500-£12,000 supply only. Fitting adds £1,500-£2,500. These are specialist-only replacements - the 600PS supercharged V8 requires Jaguar V8 expertise. A timing chain job alone costs £2,000-£4,500."
       },
       {
         "id": 2,
         "question": "Is the Jaguar XE Project 8 engine reliable?",
-        "answer": "The AJ133 5.0L V8 is fundamentally robust, but early examples (pre-2015) are known for timing chain guide wear - the defining issue of the engine family. The Project 8's 600PS tune puts additional stress on the supercharger and cooling systems. The single most important factor is oil change frequency - 5,000–7,500 mile intervals are essential. JLR revised the timing chain guides in 2015 with steel inserts."
+        "answer": "The AJ133 5.0L V8 is fundamentally robust, but early examples (pre-2015) are known for timing chain guide wear - the defining issue of the engine family. The Project 8's 600PS tune puts additional stress on the supercharger and cooling systems. The single most important factor is oil change frequency - 5,000-7,500 mile intervals are essential. JLR revised the timing chain guides in 2015 with steel inserts."
       },
       {
         "id": 3,
         "question": "What are the common problems with the Jaguar XE Project 8?",
-        "answer": "Timing chain guide wear (pre-2015 design, cold-start rattle, £2,000–£4,500), plastic coolant crossover pipe failure (coolant loss, overheating, £800–£2,000), and supercharger coupler wear (rattling at idle, £500–£1,000). Cooling system components are a particular concern on the 600PS tune."
+        "answer": "Timing chain guide wear (pre-2015 design, cold-start rattle, £2,000-£4,500), plastic coolant crossover pipe failure (coolant loss, overheating, £800-£2,000), and supercharger coupler wear (rattling at idle, £500-£1,000). Cooling system components are a particular concern on the 600PS tune."
       },
       {
         "id": 4,
         "question": "Is it worth replacing a Jaguar XE Project 8 engine, or should I scrap the car?",
-        "answer": "Project 8 values range from £80,000–£150,000+ depending on condition and mileage. A £7,500–£12,000 reconditioned engine represents 5–15% of vehicle value - well within our 60% Jaguar scrap threshold. For almost any example, replacement is financially justified."
+        "answer": "Project 8 values range from £80,000-£150,000+ depending on condition and mileage. A £7,500-£12,000 reconditioned engine represents 5-15% of vehicle value - well within our 60% Jaguar scrap threshold. For almost any example, replacement is financially justified."
       },
       {
         "id": 5,
@@ -548,7 +548,7 @@
       {
         "id": 6,
         "question": "Can I repair the timing chain issue, or does it need replacement?",
-        "answer": "Yes - if caught early. Timing chain and guide replacement costs £2,000–£4,500 and is significantly cheaper than a full engine replacement (£7,500–£12,000). JLR revised the guide design in 2015 with steel inserts. At the first sign of cold-start rattle, book an inspection immediately - ignored chain wear can lead to catastrophic piston-valve contact."
+        "answer": "Yes - if caught early. Timing chain and guide replacement costs £2,000-£4,500 and is significantly cheaper than a full engine replacement (£7,500-£12,000). JLR revised the guide design in 2015 with steel inserts. At the first sign of cold-start rattle, book an inspection immediately - ignored chain wear can lead to catastrophic piston-valve contact."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier."

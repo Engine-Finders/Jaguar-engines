@@ -195,7 +195,7 @@ export function withVariantPageImages(data) {
   const model = carModelFor(pill) || (I_PACE.test(pill) ? "i-pace" : null);
   const { used, ...hero } = generationHero(key, model);
   const pick = createCarPicker(used, { siblings: true });
-  // "Jaguar XF 2.7d • 2008–2015 • ..." -> "XF 2.7d", for copy such as "Every XF 2.7d has a story".
+  // "Jaguar XF 2.7d • 2008-2015 • ..." -> "XF 2.7d", for copy such as "Every XF 2.7d has a story".
   const vehicle = pill.split("•")[0].replace(/^\s*Jaguar\s+/i, "").trim() || "Jaguar";
   const engineCodes = (data.engineCodes?.rows || []).map((row) => row.engineCode);
   const eraEngines = (data.eraMap?.rows || []).map((row) => row.engineCode);
