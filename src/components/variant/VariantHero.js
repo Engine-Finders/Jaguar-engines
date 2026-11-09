@@ -7,6 +7,7 @@ import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import GenIcon from "../generation/GenIcons";
 import HomeIcon from "@/components/home/homeIcons";
+import UkPlateInput from "@/components/shared/UkPlateInput";
 import { primaryCtaClass } from "./variantSection";
 
 // "🔧 Supply & Fit Available", "✅ 12-Month Warranty", "🚚 Nationwide Delivery", "👥 15+ Specialists"
@@ -128,18 +129,6 @@ function TickerTrack({ items, isDark, dotSizeClass = "h-2 w-2" }) {
   );
 }
 
-function UkFlagIcon({ className = "h-4 w-5" }) {
-  return (
-    <svg viewBox="0 0 20 14" className={className} aria-hidden="true">
-      <rect width="20" height="14" fill="#012169" />
-      <path d="M0 0 20 14M20 0 0 14" stroke="#fff" strokeWidth="2.4" />
-      <path d="M0 0 20 14M20 0 0 14" stroke="#C8102E" strokeWidth="1.2" />
-      <path d="M10 0v14M0 7h20" stroke="#fff" strokeWidth="4" />
-      <path d="M10 0v14M0 7h20" stroke="#C8102E" strokeWidth="2.4" />
-    </svg>
-  );
-}
-
 export default function VariantHero({ data }) {
   const { theme } = useTheme();
   const router = useRouter();
@@ -246,33 +235,22 @@ export default function VariantHero({ data }) {
     </div>
   ) : null;
 
-  // Registration row → redirects to /quote with ?reg=… (lookup stays on quote page).
-  // Spec's "top split" row (country + input) holds on every breakpoint;
-  // only the full-width submit button drops to its own row.
+  // Registration row → /quote?reg=… using shared yellow UK plate input.
   const registrationRow = data.registrationInput ? (
     <form
       onSubmit={goToQuoteWithReg}
-      className="flex w-full flex-col gap-1.5 md:flex-row md:items-center md:gap-3"
+      className="flex w-full flex-col gap-1.5 md:flex-row md:items-stretch md:gap-3"
     >
-      <div className="flex w-full items-center gap-1.5 md:flex-1 md:gap-3">
-        <span className={`flex shrink-0 items-center gap-1.5 rounded-md border ${cardBorderClass} ${innerBgClass} px-2.5 py-2 text-[0.8rem] font-semibold md:py-3 md:text-[0.92rem] ${headingClass}`}>
-          <UkFlagIcon />
-          GB
-        </span>
-        <input
-          type="text"
-          name="reg"
-          value={regNumber}
-          onChange={(event) => setRegNumber(event.target.value.toUpperCase())}
-          placeholder={data.registrationInput.placeholder}
-          autoComplete="off"
-          className={`min-w-0 flex-1 rounded-md border ${cardBorderClass} ${innerBgClass} px-2.5 py-2 text-[0.8rem] uppercase focus:outline-none md:py-3 md:text-[0.92rem] ${headingClass} ${isDark ? "placeholder:text-white/50" : "placeholder:text-[var(--color-text-soft)]"}`}
-        />
-      </div>
+      <UkPlateInput
+        value={regNumber}
+        onChange={setRegNumber}
+        placeholder={data.registrationInput.placeholder || "Your Reg"}
+        className="md:w-[16rem] md:max-w-[16rem] md:flex-none md:shrink-0"
+      />
       {data.registrationInput.cta ? (
         <button
           type="submit"
-          className={`${primaryCtaClass("flex w-full shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-md px-2 py-2 text-center text-[0.68rem] md:w-auto md:py-3 md:px-6 md:text-[0.9rem]")}`}
+          className={`${primaryCtaClass("flex min-h-[3.25rem] w-full min-w-0 flex-1 items-center justify-center gap-2 whitespace-nowrap rounded-md px-3 text-center text-[0.72rem] sm:min-h-14 md:px-4 md:text-[0.82rem]")}`}
         >
           {data.registrationInput.cta.label.replace(/\s*→\s*$/, "")}
           <GenIcon name="arrow" className="h-4 w-4 shrink-0 md:h-5 md:w-5" />

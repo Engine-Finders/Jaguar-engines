@@ -53,7 +53,7 @@ export function generateMetadata() {
       type: "website",
       images: [
         {
-          url: "https://jaguarengines.uk/hero/jaguar-bg-light.webp",
+          url: "https://jaguarengines.uk/og-share.webp",
           width: 1200,
           height: 630,
           alt: "Jaguar Engines UK",
@@ -65,7 +65,7 @@ export function generateMetadata() {
       title: "Jaguar Engines UK  The Complete Ownership Guide",
       description:
         "The UK's Most Trusted Jaguar Ownership Guide. Reliability rankings, real failure data, honest repair-vs-replace economics for every Jaguar model.",
-      images: ["https://jaguarengines.uk/hero/jaguar-bg-light.webp"],
+      images: ["https://jaguarengines.uk/og-share.webp"],
     },
   };
 }

@@ -6,6 +6,7 @@ import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
 import { carImageFor } from "@/components/shared/carImage";
+import SectionQuoteCta from "@/components/shared/SectionQuoteCta";
 import { sectionDescription, sectionH2, sectionTableText, tableHeaderClass } from "@/components/models/sectionTypography";
 
 
@@ -399,6 +400,8 @@ export default function ReplacementCosts({ data }) {
     (cleanText(data.h2).match(/^([^-]+)/)?.[1]?.trim()
       ? `The ${cleanText(data.h2).match(/^([^-]+)/)[1].trim()} rule - generation is everything:`
       : "The ownership rule - generation is everything:");
+  const modelName =
+    cleanText(data.h2).match(/^(.+?)\s+Engine Replacement Costs/i)?.[1]?.trim() || "Jaguar";
 
   return (
     <section className={`overflow-x-hidden ${sectionBg} text-[var(--color-text)]`}>
@@ -474,6 +477,13 @@ export default function ReplacementCosts({ data }) {
         <div className="mt-5">
           <Notes parts={notes} isDark={isDark} ruleTitle={ruleTitle} />
         </div>
+
+        <SectionQuoteCta
+          label={`Get a Jaguar ${modelName} Engine Quote`}
+          href="/quote"
+          support={`Compare used, reconditioned and rebuilt Jaguar ${modelName} engine options with a quote tailored to your vehicle.`}
+          isDark={isDark}
+        />
 
         <p className="mt-5 text-center text-[15px] text-[var(--color-text-soft)] md:hidden">
           All prices in GBP (£) &nbsp; • &nbsp; Supply only &nbsp; • &nbsp; Subject to availability and condition

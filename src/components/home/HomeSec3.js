@@ -817,16 +817,19 @@ function ResultsScreen({ diagnosis, verdict, engineOption, ctas, isDark, calcula
               </ul>
 
               <div className="mt-5 grid gap-3">
+                <p className={`text-[0.8rem] leading-[1.4] ${isDark ? "text-white/75" : "text-[var(--color-text-muted)]"}`}>
+                  Understand the likely fault, estimated repair costs and whether replacement may be a suitable option.
+                </p>
                 <button
                   type="button"
                   onClick={goToQuoteWithCalculator}
                   className="btn-cta flex items-center justify-center gap-3 rounded-lg px-5 py-3 text-[0.86rem] font-bold"
                 >
-                  <span>{ctas.quote.label}</span>
+                  <span>{ctas.quote?.label || "Get Jaguar Specialist Advice"}</span>
                   <ArrowIcon className="h-4 w-4" />
                 </button>
-                <Link href={ctas.specialist.href} className={`flex items-center justify-center gap-3 rounded-lg border px-5 py-3 text-[0.86rem] font-bold ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface)] text-white" : "border-[var(--color-border)] bg-[var(--color-surface)] text-[var(--color-text)]"}`}>
-                  <span>{ctas.specialist.label}</span>
+                <Link href={ctas.specialist?.href || "/quote"} className={`flex items-center justify-center gap-3 rounded-lg border px-5 py-3 text-[0.86rem] font-bold ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface)] text-white" : "border-[var(--color-border)] bg-[var(--color-surface)] text-[var(--color-text)]"}`}>
+                  <span>{ctas.specialist?.label || "Speak to a Jaguar Specialist"}</span>
                   <ArrowIcon className="h-4 w-4" />
                 </Link>
               </div>
@@ -863,8 +866,8 @@ export default function HomeSec3({ data }) {
     ],
     whyTrust: data.calculator?.whyTrust || data.whyTrust?.signals || [],
     ctas: data.calculator?.ctas || {
-      quote: { label: "Get a quote", href: "/quote" },
-      specialist: { label: "Find a specialist", href: "#" },
+      quote: { label: "Get Jaguar Specialist Advice", href: "/quote" },
+      specialist: { label: "Speak to a Jaguar Specialist", href: "/quote" },
     },
   };
   const diagnosesByKey = Object.fromEntries(

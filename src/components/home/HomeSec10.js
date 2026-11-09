@@ -6,6 +6,7 @@ import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
 import { carImageFor } from "@/components/shared/carImage";
+import HomeQuoteCta from "@/components/home/HomeQuoteCta";
 
 const ICON_LG = "h-12 w-12 md:h-14 md:w-14";
 
@@ -451,6 +452,16 @@ export default function HomeSec10({ data }) {
           </DataPanel>
         </div>
 
+        {/* After Replacement Cost Index, before Highest-Risk Failures */}
+        <div className="hidden md:block">
+          <HomeQuoteCta
+            label="Request a Jaguar Engine Quote"
+            href="/quote"
+            support="Explore indicative Jaguar engine prices and request a specialist quote for your vehicle."
+            isDark={isDark}
+          />
+        </div>
+
         <div className="mt-3 hidden gap-3 md:grid md:grid-cols-2">
           <DataPanel block={data.failures} isDark={isDark}>
             <FailuresTable data={data.failures} isDark={isDark} />
@@ -475,6 +486,14 @@ export default function HomeSec10({ data }) {
           <MobileAccordion block={data.replacementCosts} isDark={isDark}>
             <CostsTable data={data.replacementCosts} isDark={isDark} />
           </MobileAccordion>
+
+          <HomeQuoteCta
+            label="Request a Jaguar Engine Quote"
+            href="/quote"
+            support="Explore indicative Jaguar engine prices and request a specialist quote for your vehicle."
+            isDark={isDark}
+            className="mt-1"
+          />
 
           <DataPanel block={data.failures} isDark={isDark} className="mt-0.5">
             <FailuresTable data={data.failures} isDark={isDark} />

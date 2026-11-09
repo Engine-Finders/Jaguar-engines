@@ -1,11 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
 import { heroBackground } from "@/components/shared/carImage";
+import HeroRegCta from "@/components/shared/HeroRegCta";
 
 // 45° front-view XF (nose pointing left) cut out on a transparent background (kept at 20-25 KB for a fast first paint).
 const HERO_CAR = {
@@ -95,14 +95,6 @@ function TrustBadgeText({ text = "" }) {
   return text;
 }
 
-function ArrowIcon({ className = "h-4 w-4" }) {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M5 12h14m-6-6 6 6-6 6" />
-    </svg>
-  );
-}
-
 export default function HomeSec1({ data }) {
   const { theme } = useTheme();
   const isDark = theme === "dark";
@@ -113,7 +105,7 @@ export default function HomeSec1({ data }) {
   const trustStrip = data.trustStrip || [];
   const trustBadges = data.trustBadges || [];
   const ctaHref = data.cta?.href || "/quote";
-  const ctaLabel = data.cta?.label || "START YOUR RESEARCH →";
+  const ctaLabel = data.cta?.label || "Explore Jaguar Engine Replacement Options";
 
   return (
     <section className="relative overflow-hidden bg-[var(--color-page)] text-[var(--color-text)] xl:min-h-[640px]">
@@ -225,14 +217,7 @@ export default function HomeSec1({ data }) {
             })}
           </ul>
 
-          {/* CTA */}
-          <Link
-            href={ctaHref}
-            className="btn-cta mt-1 inline-flex w-full items-center justify-center gap-3 rounded-md px-5 py-3.5 text-[0.82rem] font-bold tracking-[0.04em] md:mt-2 md:w-fit md:px-6 md:py-3.5 md:text-[0.9rem]"
-          >
-            <span>{ctaLabel.replace(/\s*→\s*$/, "")}</span>
-            <ArrowIcon className="h-4 w-4" />
-          </Link>
+          <HeroRegCta label={ctaLabel} href={ctaHref} className="relative mt-1 md:mt-2" />
         </div>
 
         {/* Trust badges glass panel — larger icons on mobile only */}

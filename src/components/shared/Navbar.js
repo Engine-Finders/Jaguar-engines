@@ -39,14 +39,15 @@ function ThemeIcon({ theme }) {
   );
 }
 
-function LogoMark({ isDark }) {
+function LogoMark() {
   return (
     <Image
-      src="/jaguar-logo.png"
-      alt="Jaguar"
-      width={124}
-      height={63}
-      className={`h-auto w-[104px] object-contain md:w-[124px] ${isDark ? "brightness-0 invert" : ""}`}
+      src="/jaguar-logo.webp"
+      alt="Jaguar Engines"
+      width={160}
+      height={48}
+      priority
+      className="h-9 w-auto object-contain md:h-11"
     />
   );
 }
@@ -60,7 +61,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-40 border-b border-[var(--color-border)] bg-[var(--color-navbar)] backdrop-blur">
       <nav className="mx-auto flex w-full max-w-8xl items-center justify-between gap-3 px-4 py-3 md:px-8 md:py-4">
         <Link href="/" className="flex shrink-0 items-center gap-3 text-[var(--color-text)] no-underline">
-          <LogoMark isDark={theme === "dark"} />
+          <LogoMark />
         </Link>
 
         <DesktopNavMenus />

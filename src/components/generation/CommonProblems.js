@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
+import SectionQuoteCta from "@/components/shared/SectionQuoteCta";
 import GenIcon from "./GenIcons";
 import GenerationSectionHeader from "./GenerationSectionHeader";
 import { generationSectionBg, primaryBadgeClass, splitCommonProblemsH2 } from "./generationSection";
@@ -288,7 +289,7 @@ function ProblemCard({ problem, isDark }) {
   );
 }
 
-export default function CommonProblems({ data }) {
+export default function CommonProblems({ data, contextLabel = "" }) {
   const { theme } = useTheme();
   const [openId, setOpenId] = useState(null);
   if (!data) return null;
@@ -296,6 +297,9 @@ export default function CommonProblems({ data }) {
   const isDark = theme === "dark";
   const sectionBg = generationSectionBg(isDark, true);
   const title = splitCommonProblemsH2(data.h2 || "Common Problems");
+  const diagnoseLabel = contextLabel
+    ? `Diagnose Jaguar ${contextLabel} Engine Problems`
+    : "Diagnose Jaguar Engine Problems";
 
   return (
     <section className={`w-full overflow-x-hidden text-[var(--color-text)] ${sectionBg}`}>
@@ -371,6 +375,13 @@ export default function CommonProblems({ data }) {
             ) : null}
           </div>
         ) : null}
+
+        <SectionQuoteCta
+          label={diagnoseLabel}
+          href="/quote"
+          support="Experiencing similar symptoms? Explore possible faults and understand your repair or replacement options."
+          isDark={isDark}
+        />
       </div>
     </section>
   );

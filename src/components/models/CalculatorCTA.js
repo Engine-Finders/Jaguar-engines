@@ -144,10 +144,10 @@ function PrimaryPath({ path, modelName, isDark }) {
           <HomeIcon name="calculator" isDark={true} className="-my-2 h-14 w-14 shrink-0 md:h-16 md:w-16" />
           <span className="min-w-0">
             <span className="block leading-tight">
-              Launch <span dangerouslySetInnerHTML={{ __html: modelName }} /> Diagnostic Calculator
+              Start Jaguar <span dangerouslySetInnerHTML={{ __html: modelName }} /> Diagnosis
             </span>
             <span className={`mt-0.5 block text-[12px] font-normal leading-tight md:text-[13px] ${isDark ? "text-white/75" : "text-white/80"}`}>
-              <span dangerouslySetInnerHTML={{ __html: modelName }} /> pre-selected
+              Know your engine? Explore likely faults and compare repair-versus-replacement costs.
             </span>
           </span>
         </span>
@@ -163,7 +163,7 @@ function PrimaryPath({ path, modelName, isDark }) {
   );
 }
 
-function SecondaryPath({ path, isDark }) {
+function SecondaryPath({ path, modelName, isDark }) {
   return (
     <article
       className={`rounded-xl border p-3.5 md:p-4 ${
@@ -202,9 +202,11 @@ function SecondaryPath({ path, isDark }) {
         <span className="flex min-w-0 items-center gap-2.5">
           <HomeIcon name="bulb" isDark={isDark} className="-my-2 h-14 w-14 shrink-0 md:h-16 md:w-16" />
           <span className="min-w-0">
-            <span className="block leading-tight">Identify My Engine First</span>
+            <span className="block leading-tight">
+              Identify <span dangerouslySetInnerHTML={{ __html: modelName || "Engine" }} /> Engine Code
+            </span>
             <span className={`mt-0.5 block text-[12px] font-normal leading-tight md:text-[13px] ${isDark ? "text-white/75" : "text-[var(--color-text-muted)]"}`}>
-              Then launch the diagnostic calculator
+              Not sure which engine you have? Identify your engine code before starting diagnosis.
             </span>
           </span>
         </span>
@@ -333,40 +335,7 @@ export default function CalculatorCTA({ data }) {
 
         <div className="mt-4 grid gap-4 lg:grid-cols-2 lg:mt-5">
           <PrimaryPath path={paths[0]} modelName={modelName} isDark={isDark} />
-          <SecondaryPath path={paths[1]} isDark={isDark} />
-        </div>
-
-        <div
-          className={`mt-5 flex flex-col gap-4 rounded-xl border p-4 md:flex-row md:items-center md:justify-between md:p-5 ${
-            isDark
-              ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
-              : "border-[#e8e8e6] bg-white shadow-[0_8px_24px_rgba(16,18,16,0.06)]"
-          }`}
-        >
-          <div className="flex gap-4">
-            <span
-              className={`flex h-16 w-16 shrink-0 items-center justify-center rounded-full md:h-[4.5rem] md:w-[4.5rem] ${
-                isDark ? "bg-white/10" : "bg-[#ececeb]"
-              }`}
-            >
-              <HomeIcon name="modern-choice" isDark={isDark} className={ICON_XL} />
-            </span>
-            <div className="max-w-[700px]">
-              <h3 className={`text-[20px] font-bold leading-tight md:text-[22px] ${isDark ? "text-white" : "text-black"}`}>
-                Stop guessing. Get the right answer.
-              </h3>
-              <p className={`mt-2 ${sectionDescription} ${isDark ? "text-white/75" : "text-[var(--color-text-muted)]"}`}>
-                Our calculator compares real repair and replacement costs against your car&apos;s value - so you know the financially smarter move.
-              </p>
-            </div>
-          </div>
-          <Link
-            href={paths[0]?.href || "/fault-diagnostic-calculator"}
-            className={`inline-flex min-h-14 shrink-0 items-center justify-center gap-4 rounded-md bg-black px-5 py-3.5 font-bold text-white transition-all duration-200 hover:bg-[var(--color-chrome-bright)] hover:text-black md:min-w-[360px] ${sectionButton}`}
-          >
-            Start Your Verdict Now
-            <ArrowIcon className="h-6 w-6" />
-          </Link>
+          <SecondaryPath path={paths[1]} modelName={modelName} isDark={isDark} />
         </div>
       </div>
     </section>

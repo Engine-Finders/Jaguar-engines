@@ -41,16 +41,23 @@ export async function generateMetadata({ params }) {
           description: meta.openGraph.description,
           type: meta.openGraph.type || "website",
           url: meta.openGraph.url,
-          images: meta.openGraph.image ? [meta.openGraph.image] : undefined,
+          images: [
+            {
+              url: "https://jaguarengines.uk/og-share.webp",
+              width: 1200,
+              height: 630,
+              alt: meta.openGraph.title || "Jaguar Engines UK",
+            },
+          ],
           siteName: meta.openGraph.siteName,
         }
       : undefined,
     twitter: meta.twitter
       ? {
-          card: meta.twitter.card,
+          card: meta.twitter.card || "summary_large_image",
           title: meta.twitter.title,
           description: meta.twitter.description,
-          images: meta.twitter.image ? [meta.twitter.image] : undefined,
+          images: ["https://jaguarengines.uk/og-share.webp"],
         }
       : undefined,
   };

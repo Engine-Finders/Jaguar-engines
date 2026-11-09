@@ -6,6 +6,7 @@ import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
 import { engineImageFor } from "@/components/shared/carImage";
+import SectionQuoteCta from "@/components/shared/SectionQuoteCta";
 import { sectionH2, sectionTableText } from "@/components/models/sectionTypography";
 
 const HEADER_IMAGE = "/home-image/sec2-bg.webp";
@@ -173,6 +174,8 @@ export default function CommonProblems({ data }) {
   const isDark = theme === "dark";
   const title = splitTitle(data.h2);
   const sectionBg = isDark ? "bg-[var(--color-page)]" : "bg-[#ececea]";
+  const modelName =
+    String(data.h2 || "").match(/Common\s+(.+?)\s+Engine Problems/i)?.[1]?.trim() || "Jaguar";
 
   return (
     <section data-theme-mode={theme} className={`overflow-hidden ${sectionBg} text-[var(--color-text)]`}>
@@ -230,6 +233,13 @@ export default function CommonProblems({ data }) {
         <div className="mt-4">
           <UrgencyKey items={data.urgencyKey} isDark={isDark} />
         </div>
+
+        <SectionQuoteCta
+          label={`Diagnose Jaguar ${modelName} Engine Problems`}
+          href="/quote"
+          support="Experiencing similar symptoms? Explore possible faults and understand your repair or replacement options."
+          isDark={isDark}
+        />
       </div>
     </section>
   );

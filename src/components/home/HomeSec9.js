@@ -6,6 +6,7 @@ import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
 import { engineImageFor } from "@/components/shared/carImage";
+import HomeQuoteCta from "@/components/home/HomeQuoteCta";
 
 const ENGINE_IMAGE = "/engine.webp";
 const ICON_LG = "h-10 w-10 md:h-11 md:w-11";
@@ -407,6 +408,12 @@ export default function HomeSec9({ data }) {
           ))}
         </div>
 
+        <HomeQuoteCta
+          label="Diagnose Jaguar Engine Problems"
+          href="/quote"
+          support="Experiencing similar symptoms? Explore possible causes and understand your Jaguar's repair or replacement options."
+          isDark={isDark}
+        />
         <DataNote note={data.dataNote} isDark={isDark} />
       </div>
     </section>

@@ -163,12 +163,6 @@ export default function QuoteForm({ onSuccess }) {
   const [calculator, setCalculator] = useState(null);
 
   useEffect(() => {
-    const fromUrl = searchParams?.get("reg") || searchParams?.get("vrm") || "";
-    const cleaned = fromUrl.replace(/\s+/g, "").toUpperCase();
-    if (cleaned) setRegInput(cleaned);
-  }, [searchParams]);
-
-  useEffect(() => {
     if (searchParams?.get("from") !== "calculator") return;
     try {
       const raw = sessionStorage.getItem("bmw_quote_calculator");
@@ -191,14 +185,17 @@ export default function QuoteForm({ onSuccess }) {
   const inputClass =
     "w-full rounded-md border border-[var(--color-border)] bg-[var(--color-page-soft)] py-2 pl-9 pr-2.5 text-[0.8125rem] text-[var(--color-text)] outline-none placeholder:text-[var(--color-text-soft)] focus:border-[var(--color-primary)]";
 
-  async function lookupVehicle(event) {
+  async function lookupVehicle(event, overrideReg) {
     event?.preventDefault?.();
-    const reg = regInput.replace(/\s+/g, "").toUpperCase();
+    const reg = String(overrideReg ?? regInput)
+      .replace(/\s+/g, "")
+      .toUpperCase();
     if (!reg) {
       setLookupError("Enter a registration number first.");
       return;
     }
 
+    setRegInput(reg);
     setLookupLoading(true);
     setLookupError("");
     setSubmitted(false);
@@ -219,6 +216,16 @@ export default function QuoteForm({ onSuccess }) {
       setLookupLoading(false);
     }
   }
+
+  // Prefill + auto-lookup when arriving from hero (?reg= / ?vrm=).
+  useEffect(() => {
+    const fromUrl = searchParams?.get("reg") || searchParams?.get("vrm") || "";
+    const cleaned = fromUrl.replace(/\s+/g, "").toUpperCase();
+    if (!cleaned) return;
+    setRegInput(cleaned);
+    lookupVehicle(null, cleaned);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchParams]);
 
   async function handleSubmit(event) {
     event.preventDefault();

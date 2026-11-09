@@ -6,7 +6,8 @@
     "dev": "next dev --webpack",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "png-to-webp": "node scripts/png-to-webp.js"
   },
   "dependencies": {
     "d3-geo": "^3.1.1",

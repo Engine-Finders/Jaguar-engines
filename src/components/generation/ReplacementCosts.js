@@ -1,6 +1,7 @@
 "use client";
 
 import { useTheme } from "@/components/shared/themeProvider";
+import SectionQuoteCta from "@/components/shared/SectionQuoteCta";
 import GenIcon from "./GenIcons";
 import GenerationSectionHeader from "./GenerationSectionHeader";
 import {
@@ -116,13 +117,16 @@ function FuelTable({ title, icon, rows, isDark, tone }) {
   );
 }
 
-export default function ReplacementCosts({ data }) {
+export default function ReplacementCosts({ data, contextLabel = "" }) {
   const { theme } = useTheme();
   if (!data) return null;
 
   const isDark = theme === "dark";
   const sectionBg = generationSectionBg(isDark, true);
   const title = splitReplacementCostsH2(data.h2 || "Engine Replacement Costs");
+  const quoteLabel = contextLabel
+    ? `Get a Jaguar ${contextLabel} Engine Quote`
+    : "Get a Jaguar Engine Quote";
   const headerBg = tableHeaderClass(isDark);
   const headerDivider = isDark ? "border-[var(--color-page)]/20" : "border-white/25";
   const bodyWrapperBg = isDark ? "bg-black" : "bg-[var(--color-table-surface)]";
@@ -215,6 +219,17 @@ export default function ReplacementCosts({ data }) {
         ) : null}
 
         {data.note ? <p className="mt-3 text-[0.78rem] text-[var(--color-text-soft)] md:mt-4" dangerouslySetInnerHTML={{ __html: data.note }} /> : null}
+
+        <SectionQuoteCta
+          label={quoteLabel}
+          href="/quote"
+          support={
+            contextLabel
+              ? `Compare used, reconditioned and rebuilt Jaguar ${contextLabel} engine options with a quote tailored to your vehicle.`
+              : "Compare used, reconditioned and rebuilt Jaguar engine options with a quote tailored to your vehicle."
+          }
+          isDark={isDark}
+        />
       </div>
     </section>
   );

@@ -1,10 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
+import HeroRegCta from "@/components/shared/HeroRegCta";
+import { generationLabelFromData } from "@/components/shared/SectionQuoteCta";
 import GenIcon from "./GenIcons";
 import { splitGenerationHeroH1 } from "./generationSection";
 
@@ -196,6 +197,11 @@ export default function ModelHero({ data }) {
   const heroDescriptionShadow = isDark
     ? ""
     : "[text-shadow:0_0_8px_#fff,0_0_16px_#fff,0_0_24px_rgba(255,255,255,0.9),0_1px_2px_rgba(255,255,255,0.95)]";
+  const genName = generationLabelFromData(data);
+  const ctaLabel =
+    data.primaryCta?.label?.replace(/\s*→\s*$/, "").trim() ||
+    `Explore ${genName} Engine Replacement Options`;
+  const ctaHref = data.primaryCta?.href || "/quote";
 
   const cardBorderClass = isDark ? "border-white/20" : "border-[var(--color-border)]";
   const dividerBorderClass = isDark ? "border-white/35" : "border-[rgba(7,24,39,0.25)]";
@@ -250,15 +256,7 @@ export default function ModelHero({ data }) {
               dangerouslySetInnerHTML={{ __html: data.subHeadline }}
             />
 
-            {data.primaryCta ? (
-              <Link
-                href={data.primaryCta.href || "/quote"}
-                className="btn-cta mt-4 hidden w-fit items-center gap-5 rounded-md px-7 py-3.5 text-base font-bold shadow-[0_12px_28px_var(--color-shadow)] md:inline-flex"
-              >
-                <span dangerouslySetInnerHTML={{ __html: data.primaryCta.label.replace(/\s*→\s*$/, "") }} />
-                <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
-              </Link>
-            ) : null}
+            <HeroRegCta label={ctaLabel} href={ctaHref} className="mt-4 hidden md:flex" />
           </div>
 
           {sceneSrc ? <SceneBand src={sceneSrc} alt={heroAlt} className="hidden md:block xl:hidden" /> : null}
@@ -279,15 +277,7 @@ export default function ModelHero({ data }) {
         {sceneSrc ? <SceneBand src={sceneSrc} alt={heroAlt} className="md:hidden" /> : null}
 
         <div className="relative flex w-full max-w-[720px] flex-col md:hidden">
-          {data.primaryCta ? (
-            <Link
-              href={data.primaryCta.href || "/quote"}
-              className="btn-cta mt-2 inline-flex w-full items-center justify-center gap-3 rounded-md px-6 py-3.5 text-[1rem] font-bold shadow-[0_12px_28px_var(--color-shadow)]"
-            >
-              <span dangerouslySetInnerHTML={{ __html: data.primaryCta.label.replace(/\s*→\s*$/, "") }} />
-              <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
-            </Link>
-          ) : null}
+          <HeroRegCta label={ctaLabel} href={ctaHref} className="mt-2 max-w-none" />
 
           <MobileTrustStrip
             items={data.trustStrip}

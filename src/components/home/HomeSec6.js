@@ -6,6 +6,7 @@ import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
 import { carImageFor } from "@/components/shared/carImage";
+import HomeQuoteCta from "@/components/home/HomeQuoteCta";
 
 
 const statusConfig = {
@@ -433,6 +434,12 @@ export default function HomeSec6({ data }) {
         </div>
 
         <DeeperLinks links={data.deeperLinks} isDark={isDark} />
+        <HomeQuoteCta
+          label="Get a Jaguar Engine Quote"
+          href="/quote"
+          support="Compare engine replacement costs with your Jaguar's value before deciding whether to repair or replace."
+          isDark={isDark}
+        />
         <DataNote note={data.dataNote} isDark={isDark} />
       </div>
     </section>

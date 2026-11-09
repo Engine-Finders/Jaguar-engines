@@ -1,0 +1,819 @@
+# ALL H1 + H2 HEADINGS FROM JSON
+# Generated from src/data JSON files only (keys: h1, h2).
+# Empty H2 values shown as (empty).
+# Bracket path = JSON section key.
+# NOTE: Homepage H1/most H2s are hardcoded in components; only homeSec3.json has an h2 key.
+
+============================================================
+1. HOMEPAGE  (src/data/home)
+============================================================
+# Home H1 / most H2s are hardcoded in components (not in JSON).
+# JSON-only h2 below. Hardcoded reference:
+# H1: Trusted Jaguar Ownership Guide  (HomeSec1)
+# H2: Find Your Vehicle  (HomeSec2)
+# H2: Diagnose Your Jaguar Problem  (HomeSec3 / also in JSON)
+# H2: Jaguar Ownership Rankings  (HomeSec4)
+# H2: Comparison Hub - Head-to-Head Verdicts  (HomeSec5)
+# H2: The Ownership Economics Centre  (HomeSec6)
+# H2: Jaguar Engine Families - The Pillars  (HomeSec7)
+# H2: Knowledge Centres  (HomeSec8)
+# H2: The Jaguar Failure Database  (HomeSec9)
+# H2: Jaguar Market Intelligence  (HomeSec10)
+# H2: Every Model. Every Generation. Honestly Rated.  (HomeSec11)
+# H2: Why Jaguar Owners Trust This Site  (HomeSec12)
+# H2: Frequently Asked Questions  (HomeSec13)
+# H2: Not Sure Where to Start?  (HomeSec14)
+
+--- home/homeSec3.json ---
+H2: Diagnose Your Jaguar Problem
+
+============================================================
+2. MODEL PAGES  (src/data/models)
+============================================================
+
+--- models/e-pace.json ---
+H1: E-Pace Engines - The Complete UK Guide
+H2: E-Pace - The Ownership Verdict  [ownershipVerdict]
+H2: E-Pace at a Glance  [atAGlance]
+H2: E-Pace - One Generation, Five Powertrains  [generations]
+H2: E-Pace Engine Codes - The Complete Database  [engineDatabase]
+H2: Common E-Pace Engine Problems  [commonProblems]
+H2: E-Pace Market Intelligence - What 140 UK Owners Told Us in 2025  [marketIntelligence]
+H2: E-Pace Engine Replacement Costs - By Generation  [replacementCosts]
+H2: How the E-Pace Engine Range Evolved - 2017 to Today  [engineEvolution]
+H2: Who Should Buy an E-Pace?  [whoShouldBuy]
+H2: Can I Repair My E-Pace Engine - or Should I Replace It?  [calculatorCta]
+H2: Why E-Pace Owners Trust jaguarengines.uk  [trustBlock]
+H2: E-Pace Frequently Asked Questions  [faq]
+H2: Ready to Make a Decision?  [closingActionCards]
+
+--- models/f-pace.json ---
+H1: F-Pace Engines - The Complete UK Guide
+H2: F-Pace - The Ownership Verdict  [ownershipVerdict]
+H2: F-Pace at a Glance  [atAGlance]
+H2: F-Pace - One Generation, Five Powertrains  [generations]
+H2: F-Pace Engine Codes - The Complete Database  [engineDatabase]
+H2: Common F-Pace Engine Problems  [commonProblems]
+H2: F-Pace Market Intelligence - What 220 UK Owners Told Us in 2025  [marketIntelligence]
+H2: F-Pace Engine Replacement Costs - By Generation  [replacementCosts]
+H2: How the F-Pace Engine Range Evolved - 2016 to Today  [engineEvolution]
+H2: Who Should Buy an F‑Pace?  [whoShouldBuy]
+H2: Can I Repair My F‑Pace Engine - or Should I Replace It?  [calculatorCta]
+H2: Why F‑Pace Owners Trust jaguarengines.uk  [trustBlock]
+H2: F‑Pace Frequently Asked Questions  [faq]
+H2: Ready to Make a Decision?  [closingActionCards]
+
+--- models/f-type.json ---
+H1: F-Type Engines - The Complete UK Guide
+H2: F-Type - The Ownership Verdict  [ownershipVerdict]
+H2: F-Type at a Glance  [atAGlance]
+H2: F-Type - One Generation, Three Powertrain Eras  [generations]
+H2: F-Type Engine Codes - The Complete Database  [engineDatabase]
+H2: Common F-Type Engine Problems  [commonProblems]
+H2: F-Type Market Intelligence - What 50+ UK Owners Told Us in 2025  [marketIntelligence]
+H2: F-Type Engine Replacement Costs - By Generation  [replacementCosts]
+H2: How the F-Type Engine Range Evolved - 2013 to Today  [engineEvolution]
+H2: Who Should Buy an F-Type?  [whoShouldBuy]
+H2: Can I Repair My F-Type Engine - or Should I Replace It?  [calculatorCta]
+H2: Why F-Type Owners Trust JaguarEngine.uk  [trustBlock]
+H2: F-Type Frequently Asked Questions  [faq]
+H2: Ready to Make a Decision?  [closingActionCards]
+
+--- models/i-pace-drive-unit-guide.json ---
+H1: I‑Pace Drive Unit Guide - The Complete UK EV Ownership Guide
+H2: Jaguar I‑Pace - The Ownership Verdict  [ownershipVerdict]
+H2: Jaguar I‑Pace at a Glance  [atAGlance]
+H2: Jaguar I‑Pace - One Generation, Three Powertrain Variants  [generations]
+H2: I‑Pace Drive Unit Codes - The Complete Database  [engineDatabase]
+H2: Common Jaguar I‑Pace Problems  [commonProblems]
+H2: Jaguar I‑Pace Market Intelligence - What 40+ UK Owners Told Us in 2025  [marketIntelligence]
+H2: Jaguar I‑Pace Drive Unit Replacement Costs - By Component  [replacementCosts]
+H2: How the I‑Pace Drive Unit Range Evolved - 2018 to Today  [engineEvolution]
+H2: Who Should Buy a Jaguar I‑Pace?  [whoShouldBuy]
+H2: Can I Repair My I‑Pace Drive Unit - or Should I Replace It?  [calculatorCta]
+H2: Why I‑Pace Owners Trust JaguarEngine.uk  [trustBlock]
+H2: Jaguar I‑Pace Frequently Asked Questions  [faq]
+H2: Ready to Make a Decision?  [closingActionCards]
+
+--- models/s-type.json ---
+H1: S-Type Engines - The Complete UK Guide
+H2: S-Type - The Ownership Verdict  [ownershipVerdict]
+H2: S-Type at a Glance  [atAGlance]
+H2: S-Type - One Generation, Five Powertrains  [generations]
+H2: S-Type Engine Codes - The Complete Database  [engineDatabase]
+H2: Common S-Type Engine Problems  [commonProblems]
+H2: S-Type Market Intelligence - What 70+ UK Owners Told Us in 2025  [marketIntelligence]
+H2: S-Type Engine Replacement Costs - By Generation  [replacementCosts]
+H2: How the S-Type Engine Range Evolved - 1999 to 2008  [engineEvolution]
+H2: Who Should Buy an S-Type?  [whoShouldBuy]
+H2: Can I Repair My S-Type Engine - or Should I Replace It?  [calculatorCta]
+H2: Why S-Type Owners Trust JaguarEngine.uk  [trustBlock]
+H2: S-Type Frequently Asked Questions  [faq]
+H2: Ready to Make a Decision?  [closingActionCards]
+
+--- models/x-type.json ---
+H1: X-Type Engines - The Complete UK Guide
+H2: X-Type - The Ownership Verdict  [ownershipVerdict]
+H2: X-Type at a Glance  [atAGlance]
+H2: X-Type - One Generation, Four Powertrains  [generations]
+H2: X-Type Engine Codes - The Complete Database  [engineDatabase]
+H2: Common X-Type Engine Problems  [commonProblems]
+H2: X-Type Market Intelligence - What 120 UK Owners Told Us in 2025  [marketIntelligence]
+H2: X-Type Engine Replacement Costs - By Generation  [replacementCosts]
+H2: How the X-Type Engine Range Evolved - 2001 to 2009  [engineEvolution]
+H2: Who Should Buy an X-Type?  [whoShouldBuy]
+H2: Can I Repair My X-Type Engine - or Should I Replace It?  [calculatorCta]
+H2: Why X-Type Owners Trust jaguarengines.uk  [trustBlock]
+H2: X-Type Frequently Asked Questions  [faq]
+H2: Ready to Make a Decision?  [closingActionCards]
+
+--- models/xe.json ---
+H1: XE Engines - The Complete UK Guide
+H2: XE - The Ownership Verdict  [ownershipVerdict]
+H2: XE at a Glance  [atAGlance]
+H2: XE - One Generation, Two Engine Eras  [generations]
+H2: XE Engine Codes - The Complete Database  [engineDatabase]
+H2: Common XE Engine Problems  [commonProblems]
+H2: XE Market Intelligence - What 260+ UK Owners Told Us in 2025  [marketIntelligence]
+H2: XE Engine Replacement Costs - By Generation  [replacementCosts]
+H2: How the XE Engine Range Evolved - 2015 to Today  [engineEvolution]
+H2: Who Should Buy an XE?  [whoShouldBuy]
+H2: Can I Repair My XE Engine - or Should I Replace It?  [calculatorCta]
+H2: Why XE Owners Trust jaguarengines.uk  [trustBlock]
+H2: XE Frequently Asked Questions  [faq]
+H2: Ready to Make a Decision?  [closingActionCards]
+
+--- models/xf.json ---
+H1: XF Engines - The Complete UK Guide
+H2: XF - The Ownership Verdict  [ownershipVerdict]
+H2: XF at a Glance  [atAGlance]
+H2: XF Generations - Find Your Vehicle  [generations]
+H2: XF Engine Codes - The Complete Database  [engineDatabase]
+H2: Common XF Engine Problems  [commonProblems]
+H2: XF Market Intelligence - What 454+ UK Owners Told Us in 2025  [marketIntelligence]
+H2: XF Engine Replacement Costs - By Generation  [replacementCosts]
+H2: How the XF Engine Range Evolved - 2008 to Today  [engineEvolution]
+H2: Who Should Buy an XF?  [whoShouldBuy]
+H2: Can I Repair My XF Engine - or Should I Replace It?  [calculatorCta]
+H2: Why XF Owners Trust jaguarengines.uk  [trustBlock]
+H2: XF Frequently Asked Questions  [faq]
+H2: Ready to Make a Decision?  [closingActionCards]
+
+--- models/xj.json ---
+H1: XJ Engines - The Complete UK Guide
+H2: XJ - The Ownership Verdict  [ownershipVerdict]
+H2: XJ at a Glance  [atAGlance]
+H2: XJ Generations - Find Your Vehicle  [generations]
+H2: XJ Engine Codes - The Complete Database  [engineDatabase]
+H2: Common XJ Engine Problems  [commonProblems]
+H2: XJ Market Intelligence - What 325 UK Owners Told Us in 2025  [marketIntelligence]
+H2: XJ Engine Replacement Costs - By Generation  [replacementCosts]
+H2: How the XJ Engine Range Evolved - 1968 to Today  [engineEvolution]
+H2: Who Should Buy an XJ?  [whoShouldBuy]
+H2: Can I Repair My XJ Engine - or Should I Replace It?  [calculatorCta]
+H2: Why XJ Owners Trust jaguarengines.uk  [trustBlock]
+H2: XJ Frequently Asked Questions  [faq]
+H2: Ready to Make a Decision?  [closingActionCards]
+
+--- models/xk.json ---
+H1: XK Engines - The Complete UK Guide
+H2: XK - The Ownership Verdict  [ownershipVerdict]
+H2: XK at a Glance  [atAGlance]
+H2: XK Generations - Find Your Vehicle  [generations]
+H2: XK Engine Codes - The Complete Database  [engineDatabase]
+H2: Common XK Engine Problems  [commonProblems]
+H2: XK Market Intelligence - What 290+ UK Owners Told Us in 2025  [marketIntelligence]
+H2: XK Engine Replacement Costs - By Generation  [replacementCosts]
+H2: How the XK Engine Range Evolved - 1996 to 2014  [engineEvolution]
+H2: Who Should Buy an XK?  [whoShouldBuy]
+H2: Can I Repair My XK Engine - or Should I Replace It?  [calculatorCta]
+H2: Why XK Owners Trust jaguarengines.uk  [trustBlock]
+H2: XK Frequently Asked Questions  [faq]
+H2: Ready to Make a Decision?  [closingActionCards]
+
+============================================================
+3. GENERATION PAGES  (src/data/generations)
+============================================================
+
+--- generations/jaguar-e-pace-x540.json ---
+H1: Jaguar E-Pace X540 Engines - The Complete UK Guide
+H2: Jaguar E-Pace X540 Engine Codes - The Complete Database  [engineDatabase]
+H2: Jaguar E-Pace X540 - Overview  [overview]
+H2: Jaguar E-Pace X540 - Ownership Economics  [ownershipEconomics]
+H2: X540 Engine Replacement Costs - By Engine and Condition  [replacementCosts]
+H2: Why UK Jaguar E-Pace X540 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- generations/jaguar-f-pace-x761.json ---
+H1: Jaguar F-Pace X761 Engines - The Complete UK Guide
+H2: Jaguar F-Pace X761 Engine Codes - The Complete Database  [engineDatabase]
+H2: Jaguar F-Pace X761 - Overview  [overview]
+H2: Best & Worst Engines  [bestWorstEngines]
+H2: Jaguar F-Pace X761 - Ownership Economics  [ownershipEconomics]
+H2: X761 Engine Replacement Costs - By Engine and Condition  [replacementCosts]
+H2: Why UK Jaguar F-Pace X761 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- generations/jaguar-f-type-x152.json ---
+H1: Jaguar F-Type X152 Engines - The Complete UK Guide
+H2: Jaguar F-Type X152 Engine Codes - The Complete Database  [engineDatabase]
+H2: Jaguar F-Type X152 - Overview  [overview]
+H2: Jaguar F-Type X152 - Ownership Economics  [ownershipEconomics]
+H2: X152 Engine Replacement Costs - By Engine and Condition  [replacementCosts]
+H2: Why UK Jaguar F-Type X152 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- generations/jaguar-i-pace-x590.json ---
+H1: Jaguar I‑Pace X590 Powertrain - The Complete UK Guide
+H2: Jaguar I‑Pace X590 Powertrain Specifications - The Complete Database  [engineDatabase]
+H2: Jaguar I‑Pace X590 - Overview  [overview]
+H2: Jaguar I‑Pace X590 - Ownership Economics  [ownershipEconomics]
+H2: X590 Powertrain Replacement Costs - By Component  [replacementCosts]
+H2: Why UK Jaguar I‑Pace X590 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- generations/jaguar-s-type-x200.json ---
+H1: Jaguar S-Type X200 Engines - The Complete UK Guide
+H2: Jaguar S-Type X200 Engine Codes - The Complete Database  [engineDatabase]
+H2: Jaguar S-Type X200 - Overview  [overview]
+H2: Jaguar S-Type X200 - Ownership Economics  [ownershipEconomics]
+H2: X200 Engine Replacement Costs - By Engine and Condition  [replacementCosts]
+H2: Why UK Jaguar S-Type Owners Trust JaguarEngine.uk  [trustCta]
+
+--- generations/jaguar-x-type-x400.json ---
+H1: Jaguar X-Type X400 Engines - The Complete UK Guide
+H2: Jaguar X-Type X400 Engine Codes - The Complete Database  [engineDatabase]
+H2: Jaguar X-Type X400 - Overview  [overview]
+H2: Jaguar X-Type X400 - Ownership Economics  [ownershipEconomics]
+H2: X400 Engine Replacement Costs - By Engine and Condition  [replacementCosts]
+H2: Why UK Jaguar X-Type X400 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- generations/jaguar-xe-x760.json ---
+H1: Jaguar XE X760 Engines - The Complete UK Guide
+H2: Jaguar XE X760 Engine Codes - The Complete Database  [engineDatabase]
+H2: Jaguar XE X760 - Overview  [overview]
+H2: Jaguar XE X760 - Ownership Economics  [ownershipEconomics]
+H2: X760 Engine Replacement Costs - By Engine and Condition  [replacementCosts]
+H2: Why UK Jaguar XE X760 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- generations/jaguar-xf-x250.json ---
+H1: Jaguar XF X250 Engines - The Complete UK Guide
+H2: Jaguar XF X250 Engine Codes - The Complete Database  [engineDatabase]
+H2: Jaguar XF X250 - Overview  [overview]
+H2: Jaguar XF X250 - Ownership Economics  [ownershipEconomics]
+H2: X250 Engine Replacement Costs - By Engine and Condition  [replacementCosts]
+H2: Why UK Jaguar XF X250 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- generations/jaguar-xf-x260.json ---
+H1: Jaguar XF X260 Engines - The Complete UK Guide
+H2: Jaguar XF X260 Engine Codes - The Complete Database  [engineDatabase]
+H2: Jaguar XF X260 - Overview  [overview]
+H2: Jaguar XF X260 - Ownership Economics  [ownershipEconomics]
+H2: X260 Engine Replacement Costs - By Engine and Condition  [replacementCosts]
+H2: Why UK Jaguar XF X260 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- generations/jaguar-xj-series-1.json ---
+H1: Jaguar XJ Series 1 Engines - The Complete UK Guide
+H2: Jaguar XJ Series 1 Engine Codes - The Complete Database  [engineDatabase]
+H2: Jaguar XJ Series 1 - Overview  [overview]
+H2: Jaguar XJ Series 1 - Ownership Economics  [ownershipEconomics]
+H2: XJ Series 1 Engine Replacement Costs - By Engine and Condition  [replacementCosts]
+H2: Why UK Jaguar XJ Series 1 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- generations/jaguar-xj-series-2.json ---
+H1: Jaguar XJ Series 2 Engines - The Complete UK Guide
+H2: Jaguar XJ Series 2 Engine Codes - The Complete Database  [engineDatabase]
+H2: Jaguar XJ Series 2 - Overview  [overview]
+H2: Jaguar XJ Series 2 - Ownership Economics  [ownershipEconomics]
+H2: XJ Series 2 Engine Replacement Costs - By Engine and Condition  [replacementCosts]
+H2: Why UK Jaguar XJ Series 2 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- generations/jaguar-xj-series-3.json ---
+H1: Jaguar XJ Series 3 Engines - The Complete UK Guide
+H2: Jaguar XJ Series 3 Engine Codes - The Complete Database  [engineDatabase]
+H2: Jaguar XJ Series 3 - Overview  [overview]
+H2: Jaguar XJ Series 3 - Ownership Economics  [ownershipEconomics]
+H2: Series 3 Engine Replacement Costs - By Engine and Condition  [replacementCosts]
+H2: Why UK Jaguar XJ Series 3 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- generations/jaguar-xj-x300.json ---
+H1: Jaguar XJ X300 Engines - The Complete UK Guide
+H2: Jaguar XJ X300 Engine Codes - The Complete Database  [engineDatabase]
+H2: Jaguar XJ X300 - Overview  [overview]
+H2: Jaguar XJ X300 - Ownership Economics  [ownershipEconomics]
+H2: X300 Engine Replacement Costs - By Engine and Condition  [replacementCosts]
+H2: Why UK Jaguar XJ X300 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- generations/jaguar-xj-x308.json ---
+H1: Jaguar XJ X308 Engines - The Complete UK Guide
+H2: Jaguar XJ X308 Engine Codes - The Complete Database  [engineDatabase]
+H2: Jaguar XJ X308 - Overview  [overview]
+H2: Jaguar XJ X308 - Ownership Economics  [ownershipEconomics]
+H2: X308 Engine Replacement Costs - By Engine and Condition  [replacementCosts]
+H2: Why UK Jaguar XJ X308 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- generations/jaguar-xj-x350-x358.json ---
+H1: Jaguar XJ X350/X358 Engines - The Complete UK Guide
+H2: Jaguar XJ X350/X358 Engine Codes - The Complete Database  [engineDatabase]
+H2: Jaguar XJ X350/X358 - Overview  [overview]
+H2: Jaguar XJ X350/X358 - Ownership Economics  [ownershipEconomics]
+H2: X350/X358 Engine Replacement Costs - By Engine and Condition  [replacementCosts]
+H2: Why UK Jaguar XJ X350/X358 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- generations/jaguar-xj-x351.json ---
+H1: Jaguar XJ X351 Engines - The Complete UK Guide
+H2: Jaguar XJ X351 Engine Codes - The Complete Database  [engineDatabase]
+H2: Jaguar XJ X351 - Overview  [overview]
+H2: Jaguar XJ X351 - Ownership Economics  [ownershipEconomics]
+H2: XJ X351 Engine Replacement Costs - By Engine and Condition  [replacementCosts]
+H2: Why UK Jaguar XJ X351 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- generations/jaguar-xj-xj40.json ---
+H1: Jaguar XJ XJ40 Engines - The Complete UK Guide
+H2: Jaguar XJ XJ40 Engine Codes - The Complete Database  [engineDatabase]
+H2: Jaguar XJ XJ40 - Overview  [overview]
+H2: Jaguar XJ XJ40 - Ownership Economics  [ownershipEconomics]
+H2: XJ40 Engine Replacement Costs - By Engine and Condition  [replacementCosts]
+H2: Why UK Jaguar XJ XJ40 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- generations/jaguar-xk-x100.json ---
+H1: Jaguar XK X100 Engines - The Complete UK Guide
+H2: Jaguar XK X100 Engine Codes - The Complete Database  [engineDatabase]
+H2: Jaguar XK X100 - Overview  [overview]
+H2: Jaguar XK X100 - Ownership Economics  [ownershipEconomics]
+H2: X100 Engine Replacement Costs - By Engine and Condition  [replacementCosts]
+H2: Why UK Jaguar XK X100 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- generations/jaguar-xk-x150.json ---
+H1: Jaguar XK X150 Engines - The Complete UK Guide
+H2: Jaguar XK X150 Engine Codes - The Complete Database  [engineDatabase]
+H2: Jaguar XK X150 - Overview  [overview]
+H2: Jaguar XK X150 - Ownership Economics  [ownershipEconomics]
+H2: X150 Engine Replacement Costs - By Engine and Condition  [replacementCosts]
+H2: Why UK Jaguar XK X150 Owners Trust JaguarEngine.uk  [trustCta]
+
+============================================================
+4. VARIANT PAGES  (src/data/variants)
+============================================================
+
+--- variants/e-pace-d150.json ---
+H1: Jaguar E‑Pace D150 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar E‑Pace D150 Engine Replacement Costs  [replacementCosts]
+H2: Jaguar E‑Pace D150 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: (empty)  [trustCta]
+
+--- variants/e-pace-d165.json ---
+H1: Jaguar E‑Pace D165 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar E‑Pace D165 Engine Replacement Costs  [replacementCosts]
+H2: Jaguar E‑Pace D165 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar E‑Pace D165 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/e-pace-d180.json ---
+H1: Jaguar E-Pace D180 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar E-Pace D180 Engine Replacement Costs  [replacementCosts]
+H2: E-Pace D180 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar E-Pace D180 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/e-pace-d240.json ---
+H1: Jaguar E-Pace D240 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar E-Pace D240 Engine Replacement Costs  [replacementCosts]
+H2: E-Pace D240 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar E-Pace D240 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/e-pace-p200.json ---
+H1: Jaguar E‑Pace P200 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar E‑Pace P200 Engine Replacement Costs  [replacementCosts]
+H2: E‑Pace P200 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: (empty)  [trustCta]
+
+--- variants/e-pace-p250.json ---
+H1: Jaguar E-Pace P250 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar E-Pace P250 Engine Replacement Costs  [replacementCosts]
+H2: E-Pace P250 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar E-Pace P250 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/e-pace-p300.json ---
+H1: Jaguar E-Pace P300 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar E-Pace P300 Engine Replacement Costs  [replacementCosts]
+H2: E-Pace P300 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: (empty)  [trustCta]
+
+--- variants/e-pace-p300e.json ---
+H1: Jaguar E-Pace P300e Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar E-Pace P300e Engine Replacement Costs  [replacementCosts]
+H2: Jaguar E-Pace P300e - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar E-Pace P300e Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/f-pace-20d.json ---
+H1: Jaguar F-Pace 2.0 Diesel Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar F-Pace 2.0 Diesel Engine Replacement Costs  [replacementCosts]
+H2: F-Pace 2.0 Diesel - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar F-Pace 2.0 Diesel Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/f-pace-25t-p250.json ---
+H1: Jaguar F-Pace 25t / P250 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar F‑Pace 25t/P250 Engine Replacement Costs  [replacementCosts]
+H2: F‑Pace 25t/P250 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: (empty)  [trustCta]
+
+--- variants/f-pace-d300.json ---
+H1: Jaguar F-Pace D300 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar F-Pace D300 Engine Replacement Costs  [replacementCosts]
+H2: F-Pace D300 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar F-Pace D300 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/f-pace-p300.json ---
+H1: Jaguar F-Pace 30t / P300 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar F-Pace 30t / P300 Engine Replacement Costs  [replacementCosts]
+H2: F-Pace 30t / P300 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar F-Pace 30t / P300 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/f-pace-p400.json ---
+H1: Jaguar F-Pace S 3.0 SC / P400 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar F-Pace S / P400 Engine Replacement Costs  [replacementCosts]
+H2: F-Pace S / P400 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: (empty)  [trustCta]
+
+--- variants/f-pace-p400e.json ---
+H1: Jaguar F-Pace P400e Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar F-Pace P400e Engine Replacement Costs  [replacementCosts]
+H2: Jaguar F-Pace P400e - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar F-Pace P400e Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/f-pace-svr.json ---
+H1: Jaguar F-Pace SVR Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar F-Pace SVR Engine Replacement Costs  [replacementCosts]
+H2: F-Pace SVR - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar F-Pace SVR Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/f-type-3-0-v6-340.json ---
+H1: Jaguar F‑Type 3.0 V6 (340) Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar F‑Type 3.0 V6 (340) Engine Replacement Costs  [replacementCosts]
+H2: Jaguar F‑Type 3.0 V6 (340) - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar F‑Type 3.0 V6 (340) Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/f-type-30-v6-s.json ---
+H1: Jaguar F-Type 3.0 V6 S Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar F-Type 3.0 V6 S Engine Replacement Costs  [replacementCosts]
+H2: F-Type 3.0 V6 S - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar F-Type 3.0 V6 S Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/f-type-p300.json ---
+H1: Jaguar F‑Type P300 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar F‑Type P300 Engine Replacement Costs  [replacementCosts]
+H2: Jaguar F‑Type P300 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: (empty)  [trustCta]
+
+--- variants/f-type-r.json ---
+H1: Jaguar F-Type R Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar F-Type R Engine Replacement Costs  [replacementCosts]
+H2: F-Type R - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar F-Type R Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/f-type-svr.json ---
+H1: Jaguar F-Type SVR Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar F‑Type SVR Engine Replacement Costs  [replacementCosts]
+H2: F‑Type SVR - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: (empty)  [trustCta]
+
+--- variants/i-pace-ev400.json ---
+H1: Jaguar I‑Pace EV400 Drive Unit Replacement - Compare Prices & Get Quotes
+H2: Jaguar I‑Pace EV400 Drive Unit Replacement Costs  [replacementCosts]
+H2: I‑Pace EV400 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar I‑Pace EV400 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/jaguar-e-pace-d200.json ---
+H1: Jaguar E-Pace D200 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar E-Pace D200 Engine Replacement Costs  [replacementCosts]
+H2: Jaguar E-Pace D200 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar E-Pace D200 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/jaguar-f-pace-25d-30d.json ---
+H1: Jaguar F-Pace 25d / 30d Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar F-Pace 25d / 30d Engine Replacement Costs  [replacementCosts]
+H2: Jaguar F-Pace 25d / 30d - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar F-Pace 25d / 30d Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/jaguar-f-type-p450.json ---
+H1: Jaguar F-Type P450 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar F-Type P450 Engine Replacement Costs  [replacementCosts]
+H2: Jaguar F-Type P450 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar F-Type P450 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/jaguar-s-type-2-7d.json ---
+H1: Jaguar S-Type 2.7d Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar S-Type 2.7d Engine Replacement Costs  [replacementCosts]
+H2: Jaguar S-Type 2.7d - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar S-Type 2.7d Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/jaguar-xe-sv-project-8.json ---
+H1: Jaguar XE Project 8 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar XE Project 8 Engine Replacement Costs  [replacementCosts]
+H2: Jaguar XE Project 8 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar XE Project 8 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/jaguar-xj-4-2-v8.json ---
+H1: Jaguar XJ 4.2 V8 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar XJ 4.2 V8 Engine Replacement Costs  [replacementCosts]
+H2: Jaguar XJ 4.2 V8 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar XJ 4.2 V8 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/jaguar-xj-4-2-xk6.json ---
+H1: Jaguar XJ 4.2 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar XJ 4.2 Engine Replacement Costs  [replacementCosts]
+H2: Jaguar XJ 4.2 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar XJ 4.2 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/s-type-2-5-v6.json ---
+H1: Jaguar S‑Type 2.5 V6 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar S‑Type 2.5 V6 Engine Replacement Costs  [replacementCosts]
+H2: Jaguar S‑Type 2.5 V6 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar S‑Type 2.5 V6 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/s-type-30-v6.json ---
+H1: Jaguar S-Type 3.0 V6 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar S-Type 3.0 V6 Engine Replacement Costs  [replacementCosts]
+H2: S-Type 3.0 V6 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar S-Type 3.0 V6 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/s-type-40-v8.json ---
+H1: Jaguar S-Type 4.0 V8 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar S-Type 4.0 V8 Engine Replacement Costs  [replacementCosts]
+H2: S-Type 4.0 V8 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar S-Type 4.0 V8 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/s-type-42-v8.json ---
+H1: Jaguar S‑Type 4.2 V8 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar S‑Type 4.2 V8 Engine Replacement Costs  [replacementCosts]
+H2: S‑Type 4.2 V8 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: (empty)  [trustCta]
+
+--- variants/s-type-r.json ---
+H1: Jaguar S-Type R Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar S-Type R Engine Replacement Costs  [replacementCosts]
+H2: S-Type R - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar S-Type R Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/x-type-2-2d.json ---
+H1: Jaguar X‑Type 2.2d Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar X‑Type 2.2d Engine Replacement Costs  [replacementCosts]
+H2: Jaguar X‑Type 2.2d - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar X‑Type 2.2d Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/x-type-20-v6.json ---
+H1: Jaguar X-Type 2.0 V6 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar X-Type 2.0 V6 Engine Replacement Costs  [replacementCosts]
+H2: X-Type 2.0 V6 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: (empty)  [trustCta]
+
+--- variants/x-type-20d.json ---
+H1: Jaguar X‑Type 2.0d Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar X‑Type 2.0d Engine Replacement Costs  [replacementCosts]
+H2: Jaguar X‑Type 2.0d - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: (empty)  [trustCta]
+
+--- variants/x-type-25-v6.json ---
+H1: Jaguar X-Type 2.5 V6 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar X-Type 2.5 V6 Engine Replacement Costs  [replacementCosts]
+H2: Jaguar X-Type 2.5 V6 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar X-Type 2.5 V6 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/x-type-30-v6.json ---
+H1: Jaguar X-Type 3.0 V6 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar X-Type 3.0 V6 Engine Replacement Costs  [replacementCosts]
+H2: X-Type 3.0 V6 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar X-Type 3.0 V6 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/xe-20d.json ---
+H1: Jaguar XE 20d Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar XE 20d Engine Replacement Costs  [replacementCosts]
+H2: Jaguar XE 20d - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar XE 20d Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/xe-20t-25t.json ---
+H1: Jaguar XE 20t / 25t Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar XE 20t / 25t Engine Replacement Costs  [replacementCosts]
+H2: XE 20t / 25t - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar XE 20t / 25t Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/xe-p250.json ---
+H1: Jaguar XE P250 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar XE P250 Engine Replacement Costs  [replacementCosts]
+H2: Jaguar XE P250 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: (empty)  [trustCta]
+
+--- variants/xe-p300-30t.json ---
+H1: Jaguar XE P300 / 30t Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar XE P300 / 30t Engine Replacement Costs  [replacementCosts]
+H2: Jaguar XE P300 / 30t - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar XE P300 / 30t Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/xe-s.json ---
+H1: Jaguar XE S Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar XE S Engine Replacement Costs  [replacementCosts]
+H2: XE S - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar XE S Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/xf-20-petrol.json ---
+H1: Jaguar XF 2.0 Petrol Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar XF 2.0 Petrol Engine Replacement Costs  [replacementCosts]
+H2: Jaguar XF 2.0 Petrol - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar XF 2.0 Petrol Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/xf-20d-d200.json ---
+H1: Jaguar XF 2.0d & D200 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar XF 2.0d / D200 Engine Replacement Costs  [replacementCosts]
+H2: XF 2.0d / D200 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar XF Diesel Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/xf-22d.json ---
+H1: Jaguar XF 2.2d Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar XF 2.2d Engine Replacement Costs  [replacementCosts]
+H2: XF 2.2d - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: (empty)  [trustCta]
+
+--- variants/xf-27d.json ---
+H1: Jaguar XF 2.7d Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar XF 2.7d Engine Replacement Costs  [replacementCosts]
+H2: XF 2.7d - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar XF 2.7d Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/xf-30-sc.json ---
+H1: Jaguar XF 3.0 SC Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar XF 3.0 SC Engine Replacement Costs  [replacementCosts]
+H2: XF 3.0 SC - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar XF 3.0 SC Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/xf-30d.json ---
+H1: Jaguar XF 3.0d Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar XF 3.0d Engine Replacement Costs  [replacementCosts]
+H2: XF 3.0d - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: (empty)  [trustCta]
+
+--- variants/xf-42-v8.json ---
+H1: Jaguar XF 4.2 V8 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar XF 4.2 V8 Engine Replacement Costs  [replacementCosts]
+H2: Jaguar XF 4.2 V8 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: (empty)  [trustCta]
+
+--- variants/xf-5-0-v8-xfr.json ---
+H1: Jaguar XF 5.0 V8 / XFR Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar XF 5.0 V8 / XFR Engine Replacement Costs  [replacementCosts]
+H2: Jaguar XF 5.0 V8 / XFR - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar XF 5.0 V8 / XFR Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/xj-27d.json ---
+H1: Jaguar XJ 2.7d Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar XJ 2.7d Engine Replacement Costs  [replacementCosts]
+H2: XJ 2.7d - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar XJ 2.7d Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/xj-28-34-xk6.json ---
+H1: Jaguar XJ 2.8 / 3.4 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar XJ 2.8 / 3.4 Engine Replacement Costs  [replacementCosts]
+H2: XJ 2.8 / 3.4 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar XJ 2.8 / 3.4 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/xj-3-0-v6.json ---
+H1: Jaguar XJ 3.0 V6 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar XJ 3.0 V6 Engine Replacement Costs  [replacementCosts]
+H2: Jaguar XJ 3.0 V6 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar XJ 3.0 V6 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/xj-30-sc-petrol.json ---
+H1: Jaguar XJ 3.0 SC Petrol Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar XJ 3.0 SC Petrol Engine Replacement Costs  [replacementCosts]
+H2: XJ 3.0 SC Petrol - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar XJ 3.0 SC Petrol Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/xj-30d.json ---
+H1: Jaguar XJ 3.0d Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar XJ 3.0d Engine Replacement Costs  [replacementCosts]
+H2: XJ 3.0d - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: (empty)  [trustCta]
+
+--- variants/xj-32-v8.json ---
+H1: Jaguar XJ 3.2 V8 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar XJ 3.2 V8 Engine Replacement Costs  [replacementCosts]
+H2: XJ 3.2 V8 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar XJ 3.2 V8 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/xj-32.json ---
+H1: Jaguar XJ 3.2 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar XJ 3.2 Engine Replacement Costs  [replacementCosts]
+H2: XJ 3.2 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar XJ 3.2 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/xj-35-v8.json ---
+H1: Jaguar XJ 3.5 V8 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar XJ 3.5 V8 Engine Replacement Costs  [replacementCosts]
+H2: XJ 3.5 V8 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar XJ 3.5 V8 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/xj-36-aj6.json ---
+H1: Jaguar XJ 3.6 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar XJ 3.6 Engine Replacement Costs  [replacementCosts]
+H2: XJ 3.6 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: (empty)  [trustCta]
+
+--- variants/xj-40-v8.json ---
+H1: Jaguar XJ 4.0 V8 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar XJ 4.0 V8 Engine Replacement Costs  [replacementCosts]
+H2: Jaguar XJ 4.0 V8 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: (empty)  [trustCta]
+
+--- variants/xj-40.json ---
+H1: Jaguar XJ 4.0 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar XJ 4.0 Engine Replacement Costs  [replacementCosts]
+H2: Jaguar XJ 4.0 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar XJ 4.0 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/xj-50-v8.json ---
+H1: Jaguar XJ 5.0 V8 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar XJ 5.0 V8 Engine Replacement Costs  [replacementCosts]
+H2: XJ 5.0 V8 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: (empty)  [trustCta]
+
+--- variants/xj-53-v12.json ---
+H1: Jaguar XJ 5.3 V12 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar XJ 5.3 V12 Engine Replacement Costs  [replacementCosts]
+H2: XJ 5.3 V12 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar XJ 5.3 V12 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/xj-60-v12.json ---
+H1: Jaguar XJ 6.0 V12 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar XJ 6.0 V12 Engine Replacement Costs  [replacementCosts]
+H2: XJ 6.0 V12 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: (empty)  [trustCta]
+
+--- variants/xk-40.json ---
+H1: Jaguar XK 4.0 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar XK 4.0 Engine Replacement Costs  [replacementCosts]
+H2: XK 4.0 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar XK 4.0 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/xk-42.json ---
+H1: Jaguar XK 4.2 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar XK 4.2 Engine Replacement Costs  [replacementCosts]
+H2: XK 4.2 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: (empty)  [trustCta]
+
+--- variants/xk-50-v8.json ---
+H1: Jaguar XK 5.0 V8 Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar XK 5.0 V8 Engine Replacement Costs  [replacementCosts]
+H2: Jaguar XK 5.0 V8 - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar XK 5.0 V8 Owners Trust JaguarEngine.uk  [trustCta]
+
+--- variants/xk-xkr-s.json ---
+H1: Jaguar XK XKR‑S Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar XK XKR‑S Engine Replacement Costs  [replacementCosts]
+H2: Jaguar XK XKR‑S - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: (empty)  [trustCta]
+
+--- variants/xk-xkr.json ---
+H1: Jaguar XKR Engine Replacement - Compare Prices & Get Quotes
+H2: Jaguar XKR Engine Replacement Costs  [replacementCosts]
+H2: XKR - Repair, Buy, or Replace?  [repairBuyOrReplace]
+H2: Why UK Jaguar XKR Owners Trust JaguarEngine.uk  [trustCta]
+
+============================================================
+5. ENGINE PAGES  (src/data/engines)
+============================================================
+
+--- engines/aj-v6-petrol.json ---
+H1: Jaguar AJ‑V6 Petrol Engine - Specs, Reliability & Replacement Cost
+
+--- engines/ajd-v6-diesel.json ---
+H1: Jaguar AJD-V6 Diesel Engine - Specs, Reliability & Replacement Cost
+
+--- engines/ingenium-20-petrol.json ---
+H1: Jaguar Ingenium 2.0 Petrol Engine - Specs, Reliability & Replacement Cost
+
+--- engines/jaguar-306dt-306ps.json ---
+H1: Jaguar 306DT / 306PS Engine - Specs, Reliability & Replacement Cost
+
+--- engines/jaguar-aj-v8-4-0-4-2.json ---
+H1: Jaguar AJ-V8 4.0/4.2 Engine - Specs, Reliability & Replacement Cost
+
+--- engines/jaguar-aj133.json ---
+H1: Jaguar AJ133 Engine - Specs, Reliability & Replacement Cost
+
+--- engines/jaguar-aj20d6.json ---
+H1: Jaguar AJ20D6 Engine - Specs, Reliability & Replacement Cost
+
+--- engines/jaguar-aj20p6.json ---
+H1: Jaguar AJ20P6 Engine - Specs, Reliability & Replacement Cost
+
+--- engines/jaguar-aj6-aj16.json ---
+H1: Jaguar AJ6 / AJ16 Engine - Specs, Reliability & Replacement Cost
+
+--- engines/jaguar-ajd4-204dtd.json ---
+H1: Jaguar AJD4 / 204DTD Engine - Specs, Reliability & Replacement Cost
+
+--- engines/jaguar-ingenium-2-0-diesel.json ---
+H1: Jaguar Ingenium 2.0 Diesel Engine - Specs, Reliability & Replacement Cost
+
+--- engines/jaguar-p510.json ---
+H1: Jaguar P510 Engine - Specs, Reliability & Replacement Cost
+
+--- engines/jaguar-xk-straight-six.json ---
+H1: Jaguar XK Straight-Six Engine - Specs, Reliability & Replacement Cost
+
+--- engines/v12-he.json ---
+H1: Jaguar V12 HE Engine - Specs, Reliability & Replacement Cost

@@ -56,7 +56,7 @@ function TrustPoint({ point, icon, isDark }) {
   );
 }
 
-export default function TrustCta({ data }) {
+export default function TrustCta({ data, contextLabel = "" }) {
   const { theme } = useTheme();
   if (!data) return null;
 
@@ -66,7 +66,13 @@ export default function TrustCta({ data }) {
   // The model's line-up scene (set server-side), else Jaguar's own background.
   const image = data.image || heroBackground(isDark);
   const ctaHref = data.ctaButton?.href || "/quote";
-  const ctaLabel = data.ctaButton?.label?.replace(/\s*→\s*$/, "").trim();
+  const ctaLabel =
+    data.ctaButton?.label?.replace(/\s*→\s*$/, "").trim() ||
+    (contextLabel ? `Get a Jaguar ${contextLabel} Engine Quote` : "Get a Jaguar Engine Quote");
+  const supportText = contextLabel
+    ? `Request a specialist quote based on your ${contextLabel} engine, vehicle details and replacement requirements.`
+    : null;
+  const finalCtaHtml = supportText || data.finalCta;
 
   return (
     <section className={`w-full overflow-x-hidden text-[var(--color-text)] ${sectionBg}`}>
@@ -98,7 +104,7 @@ export default function TrustCta({ data }) {
           </div>
         </div>
 
-        {data.finalCta || ctaLabel ? (
+        {finalCtaHtml || ctaLabel ? (
           <div className={`mt-5 md:mt-6 ${bottomBarClass(isDark)}`}>
             <div className="grid grid-cols-1 items-center gap-4 p-4 md:grid-cols-[72px_1fr_auto] md:gap-5 md:p-5">
               <div className="flex items-start justify-start md:justify-center">
@@ -117,10 +123,10 @@ export default function TrustCta({ data }) {
                 </span>
               </div>
 
-              {data.finalCta ? (
+              {finalCtaHtml ? (
                 <p
                   className={`text-[0.84rem] leading-[1.55] md:text-[0.92rem] ${isDark ? "text-white/88" : "text-[var(--color-text-muted)]"}`}
-                  dangerouslySetInnerHTML={{ __html: data.finalCta }}
+                  dangerouslySetInnerHTML={{ __html: finalCtaHtml }}
                 />
               ) : (
                 <span />

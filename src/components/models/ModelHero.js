@@ -2,11 +2,12 @@
 
 import Image from "next/image";
 import { heroBackground } from "@/components/shared/carImage";
-import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
-import { sectionButton, sectionDescription, sectionH1 } from "@/components/models/sectionTypography";
+import HeroRegCta from "@/components/shared/HeroRegCta";
+import { modelLabelFromData } from "@/components/shared/SectionQuoteCta";
+import { sectionDescription, sectionH1 } from "@/components/models/sectionTypography";
 
 const trustStripIconKeys = [
   "most-enquired",
@@ -14,14 +15,6 @@ const trustStripIconKeys = [
   "engine-codes",
   "engine-finders",
 ];
-
-function ArrowIcon() {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">
-      <path d="M5 12h14m-6-6 6 6-6 6" />
-    </svg>
-  );
-}
 
 function splitTagPill(tagPill = "") {
   const parts = String(tagPill).split(" • ");
@@ -132,6 +125,10 @@ export default function ModelHero({ data }) {
   const isDark = theme === "dark";
   const meta = splitTagPill(data.tagPill);
   const ctaHref = data.primaryCta?.href && data.primaryCta.href !== "#" ? data.primaryCta.href : "/quote";
+  const modelName = modelLabelFromData(data);
+  const ctaLabel =
+    data.primaryCta?.label?.replace(/\s*(?:→|â†’)\s*$/, "").trim() ||
+    `Explore ${modelName} Engine Replacement Options`;
   // The model's own line-up scene sits on the right and fades into the page from the left.
   // Without one, Jaguar's background fills the hero with the model's cut-out photo on top.
   const scene = data.heroScene;
@@ -224,15 +221,7 @@ export default function ModelHero({ data }) {
               dangerouslySetInnerHTML={{ __html: data.subHeadline }}
             />
 
-            {data.primaryCta ? (
-              <Link
-                href={ctaHref}
-                className={`btn-cta mt-5 inline-flex min-h-10 items-center justify-center gap-3 rounded-md px-4 py-2 font-bold shadow-[0_12px_28px_var(--color-shadow)] ${sectionButton} md:min-h-11 md:px-5`}
-              >
-                <span dangerouslySetInnerHTML={{ __html: data.primaryCta.label.replace(/\s*(?:→|â†’)\s*$/, "") }} />
-                <ArrowIcon />
-              </Link>
-            ) : null}
+            <HeroRegCta label={ctaLabel} href={ctaHref} className="mt-5" />
           </div>
         </div>
 

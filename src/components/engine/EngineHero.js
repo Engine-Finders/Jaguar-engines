@@ -1,11 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useTheme } from "@/components/shared/themeProvider";
 import MStripe from "@/components/reusableComponents/MStripe";
 import HomeIcon from "@/components/home/homeIcons";
-import { sectionButton, sectionDescription, sectionH1 } from "@/components/models/sectionTypography";
+import HeroRegCta from "@/components/shared/HeroRegCta";
+import { sectionDescription, sectionH1 } from "@/components/models/sectionTypography";
 
 const TRUST_STRIP_ICONS = ["real-inquiries", "vehicle", "expert-verified", "engine-finders"];
 
@@ -24,14 +24,6 @@ function splitTagPill(tagPill = "") {
     .split(" \u2022 ")
     .map((item) => item.trim())
     .filter(Boolean);
-}
-
-function ArrowIcon() {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">
-      <path d="M5 12h14m-6-6 6 6-6 6" />
-    </svg>
-  );
 }
 
 function StatIcon({ index, isDark }) {
@@ -156,7 +148,15 @@ export default function EngineHero({ data, engineImage, heroCar }) {
   const isDark = theme === "dark";
   const metaItems = splitTagPill(data.tagPill);
   const description = normalizeText(data.subHeadline);
-  const ctaLabel = data.primaryCta?.label ? normalizeText(data.primaryCta.label).replace(/\s*\u2192$/, "") : "";
+  const engineName =
+    normalizeText(data.h1 || "")
+      .replace(/\s*-\s*Specs.*$/i, "")
+      .replace(/^Jaguar\s+/i, "")
+      .replace(/\s+Engine$/i, "")
+      .trim() || "Jaguar";
+  const ctaLabel =
+    (data.primaryCta?.label ? normalizeText(data.primaryCta.label).replace(/\s*\u2192$/, "") : "") ||
+    `Explore ${engineName} Engine Replacement Options`;
 
   return (
     <section className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden bg-[var(--color-page)] text-[var(--color-text)]">
@@ -202,15 +202,7 @@ export default function EngineHero({ data, engineImage, heroCar }) {
               ))}
             </p>
 
-            {data.primaryCta ? (
-              <Link
-                href="/quote"
-                className={`btn-cta mt-4 hidden min-h-11 w-fit max-w-full items-center justify-center gap-3 rounded-md px-6 py-2.5 font-bold shadow-[0_12px_28px_var(--color-shadow)] md:inline-flex ${sectionButton}`}
-              >
-                <span className="min-w-0 text-left leading-tight">{ctaLabel}</span>
-                <ArrowIcon />
-              </Link>
-            ) : null}
+            <HeroRegCta label={ctaLabel} href="/quote" className="relative z-20 mt-4 max-w-[520px]" />
           </div>
 
           <div className="relative order-2 flex min-h-[220px] items-end justify-center md:min-h-[400px] md:justify-end">
@@ -253,15 +245,6 @@ export default function EngineHero({ data, engineImage, heroCar }) {
           </ul>
         ) : null}
 
-        {data.primaryCta ? (
-          <Link
-            href="/quote"
-            className={`btn-cta relative z-10 mt-4 inline-flex min-h-12 w-full items-center justify-center gap-3 rounded-md px-5 py-3 text-center font-bold shadow-[0_12px_28px_var(--color-shadow)] md:hidden ${sectionButton}`}
-          >
-            <span className="min-w-0 leading-tight">{ctaLabel}</span>
-            <ArrowIcon />
-          </Link>
-        ) : null}
       </div>
     </section>
   );

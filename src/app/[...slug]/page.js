@@ -141,16 +141,23 @@ export async function generateMetadata({ params }) {
           description: og.description || undefined,
           type: og.type || "website",
           url: og.url || undefined,
-          images: og.image ? [og.image] : undefined,
+          images: [
+            {
+              url: "https://jaguarengines.uk/og-share.webp",
+              width: 1200,
+              height: 630,
+              alt: og.title || "Jaguar Engines UK",
+            },
+          ],
           siteName: og.siteName || undefined,
         }
       : undefined,
     twitter: meta.twitter?.title || meta.twitter?.description
       ? {
-          card: meta.twitter.card || undefined,
+          card: meta.twitter.card || "summary_large_image",
           title: meta.twitter.title || undefined,
           description: meta.twitter.description || undefined,
-          images: meta.twitter.image ? [meta.twitter.image] : undefined,
+          images: ["https://jaguarengines.uk/og-share.webp"],
         }
       : undefined,
   };
@@ -212,14 +219,32 @@ export default async function CatchAllPage({ params }) {
         <Overview data={data.overview} />
         <BestWorstEngines data={data.bestWorstEngines && { generationCode: entry.slug, ...data.bestWorstEngines }} />
         <OwnershipEconomics data={data.ownershipEconomics} />
-        <GenProblems data={data.commonProblems} />
-        <GenReplacementCosts data={data.replacementCosts} />
+        <GenProblems
+          data={data.commonProblems}
+          contextLabel={String(data.hero?.h1 || "")
+            .replace(/\s+Engines?\s*-.*$/i, "")
+            .replace(/^Jaguar\s+/i, "")
+            .trim()}
+        />
+        <GenReplacementCosts
+          data={data.replacementCosts}
+          contextLabel={String(data.hero?.h1 || "")
+            .replace(/\s+Engines?\s*-.*$/i, "")
+            .replace(/^Jaguar\s+/i, "")
+            .trim()}
+        />
         <CoreVariantsMarketGroup
           coreVariants={data.coreVariants}
           marketIntelligence={data.marketIntelligence}
         />
         <GenFAQAccordion data={data.faq} />
-        <GenTrustCta data={data.trustCta} />
+        <GenTrustCta
+          data={data.trustCta}
+          contextLabel={String(data.hero?.h1 || "")
+            .replace(/\s+Engines?\s*-.*$/i, "")
+            .replace(/^Jaguar\s+/i, "")
+            .trim()}
+        />
       </main>
     );
   }
