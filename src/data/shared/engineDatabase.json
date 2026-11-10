@@ -1,0 +1,30 @@
+{
+  "_note": "Shared copy for the model-page Engine Database section (section 5). Per-model content lives in each model's engineDatabase.",
+  "columnHints": {
+    "Reliability": "Our rating from verified UK failure data and specialist input. Where it changes with model year, both ratings are shown.",
+    "2025 Enquiries": "Engine enquiries we received in 2025. Verified = counted in our own data; Pattern data = documented failure patterns, not a count.",
+    "Avg. Recon Cost": "Typical cost of a reconditioned replacement engine, supply only. Specialist quote = taken from real UK specialist quotes."
+  },
+  "legend": [
+    {
+      "stars": 1,
+      "label": "Poor"
+    },
+    {
+      "stars": 2.5,
+      "label": "Average"
+    },
+    {
+      "stars": 3.5,
+      "label": "Good"
+    },
+    {
+      "stars": 4.5,
+      "label": "Excellent"
+    }
+  ],
+  "visibleRows": 5,
+  "viewAllLabel": "View all {count} engine codes",
+  "viewLessLabel": "Show fewer engine codes",
+  "showingLabel": "Showing 1 to {shown} of {count} engine codes"
+}

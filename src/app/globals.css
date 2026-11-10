@@ -169,3 +169,1269 @@ main h2 {
     animation: none;
   }
 }
+
+/* Model page hero title - display serif sized from the brand reference (~51px cap height, 79px line pitch at xl) */
+main h1.model-hero-title {
+  font-weight: 600 !important;
+  font-size: clamp(2.5rem, 11vw, 3rem) !important;
+  line-height: 1 !important;
+  letter-spacing: -0.015em;
+}
+
+@media (min-width: 640px) {
+  main h1.model-hero-title {
+    font-size: 3.6rem !important;
+  }
+}
+
+/* Desktop: the title scales with the viewport, like the photo beside it, and lands on the
+   reference's exact 80px / 79px at 1536px. */
+@media (min-width: 1024px) {
+  main h1.model-hero-title {
+    font-size: 5.2vw !important;
+    line-height: 0.9875 !important;
+  }
+}
+
+@media (min-width: 1536px) {
+  main h1.model-hero-title {
+    font-size: 80px !important;
+    line-height: 79px !important;
+  }
+}
+
+/* Long model titles (e.g. "I-Pace Drive Unit Guide - The Complete UK EV Ownership Guide"):
+   smaller type on a ~600px measure (at 1536px) so the lines finish left of the hero photo's cars. */
+main h1.model-hero-title.model-hero-title--long {
+  font-size: clamp(2rem, 9vw, 2.5rem) !important;
+  line-height: 1.04 !important;
+}
+
+@media (min-width: 640px) {
+  main h1.model-hero-title.model-hero-title--long {
+    font-size: 3rem !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  main h1.model-hero-title.model-hero-title--long {
+    font-size: 3.9vw !important;
+    line-height: 0.985 !important;
+    max-width: 39vw;
+    /* smaller type sits lower in its line box: keep the cap line where the reference title starts */
+    padding-top: 0.18em;
+  }
+}
+
+@media (min-width: 1536px) {
+  main h1.model-hero-title.model-hero-title--long {
+    font-size: 60px !important;
+    line-height: 59px !important;
+    max-width: 600px;
+  }
+}
+
+/* Model page "Ownership Verdict" title - reference: 70px type on a 77px pitch, cap line 60px below the table top */
+main h2.model-verdict-title {
+  font-weight: 600 !important;
+  font-size: clamp(2.1rem, 9.4vw, 2.6rem) !important;
+  line-height: 1.06 !important;
+  letter-spacing: -0.015em;
+}
+
+@media (min-width: 640px) {
+  main h2.model-verdict-title {
+    font-size: 3.25rem !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  main h2.model-verdict-title {
+    font-size: var(--v-title) !important;
+    line-height: 1.1 !important;
+    margin-top: var(--v-title-mt);
+  }
+}
+
+/* Model page "Ownership Verdict" - layout tokens. Values come 1:1 from the 1536px brand reference
+   and scale linearly down to 1024px (the two-column layout's narrowest width). */
+@media (min-width: 1024px) {
+  .model-verdict {
+    --v-pt: calc(4px + 1.172vw);
+    --v-pb: calc(8px + 3.125vw);
+    --v-gap: calc(2px + 1.953vw);
+    --v-title: calc(-11px + 5.273vw);
+    --v-title-mt: calc(4px + 2.539vw);
+    --v-desc: calc(11.5px + 0.293vw);
+    --v-desc-lh: calc(16px + 0.6836vw);
+    --v-desc-mt: calc(4px + 0.9766vw);
+    --v-inset: calc(-8px + 1.953vw);
+    --v-head-h: calc(28px + 2.148vw);
+    --v-head: calc(10.5px + 0.3906vw);
+    --v-circle: calc(18px + 1.953vw);
+    --v-glyph: calc(5px + 1.562vw);
+    --v-metric-pl: calc(-8px + 1.172vw);
+    --v-metric-gap: calc(-2px + 1.172vw);
+    --v-label: calc(10.5px + 0.293vw);
+    --v-verdict-pl: calc(-26px + 4.102vw);
+    --v-verdict-pr: calc(-10px + 1.953vw);
+    --v-verdict: calc(9px + 0.3906vw);
+    --v-verdict-lh: calc(12px + 0.7812vw);
+    --v-strong: calc(10px + 0.3906vw);
+    --v-row-py: calc(1px + 0.5859vw);
+    --v-star: calc(6px + 1.172vw);
+    --v-card-py: calc(4px + 0.9766vw);
+    --v-card-pl: calc(-20px + 3.711vw);
+    --v-card-pr: calc(-12px + 2.734vw);
+    --v-card-gap: calc(-28px + 4.297vw);
+    --v-shield: calc(-10px + 6.836vw);
+    --v-card-head: calc(12px + 0.3906vw);
+    --v-card-text: calc(10.5px + 0.293vw);
+    --v-card-lh: calc(12px + 0.7812vw);
+    --v-quote: calc(12px + 0.7812vw);
+    --v-stats-mt: calc(6px + 0.7812vw);
+    --v-stats-h: calc(46px + 3.711vw);
+    --v-stat-circle: calc(20px + 3.125vw);
+    --v-stat-glyph: calc(16px + 2.734vw);
+    --v-stat-pl: calc(-50px + 7.031vw);
+    --v-stat-gap: calc(-6px + 1.953vw);
+    --v-stat-value: calc(11px + 0.9766vw);
+    --v-stat-label: calc(7.5px + 0.6836vw);
+    --v-stat-lh: calc(10px + 0.7812vw);
+    --v-stat-maxw: calc(60px + 5.859vw);
+  }
+}
+
+@media (min-width: 1536px) {
+  .model-verdict {
+    --v-pt: 22px;
+    --v-pb: 56px;
+    --v-gap: 32px;
+    --v-title: 70px;
+    --v-title-mt: 43px;
+    --v-desc: 16px;
+    --v-desc-lh: 26.5px;
+    --v-desc-mt: 19px;
+    --v-inset: 22px;
+    --v-head-h: 61px;
+    --v-head: 16.5px;
+    --v-circle: 48px;
+    --v-glyph: 29px;
+    --v-metric-pl: 10px;
+    --v-metric-gap: 16px;
+    --v-label: 15px;
+    --v-verdict-pl: 37px;
+    --v-verdict-pr: 20px;
+    --v-verdict: 15px;
+    --v-verdict-lh: 24px;
+    --v-strong: 16px;
+    --v-row-py: 10px;
+    --v-star: 24px;
+    --v-card-py: 19px;
+    --v-card-pl: 37px;
+    --v-card-pr: 30px;
+    --v-card-gap: 38px;
+    --v-shield: 95px;
+    --v-card-head: 18px;
+    --v-card-text: 15px;
+    --v-card-lh: 24px;
+    --v-quote: 24px;
+    --v-stats-mt: 18px;
+    --v-stats-h: 103px;
+    --v-stat-circle: 68px;
+    --v-stat-glyph: 58px;
+    --v-stat-pl: 58px;
+    --v-stat-gap: 24px;
+    --v-stat-value: 26px;
+    --v-stat-label: 18px;
+    --v-stat-lh: 22px;
+    --v-stat-maxw: 150px;
+  }
+}
+
+/* Model page "At a Glance" - layout tokens: 1:1 with the 1536px reference, scaled linearly down to 1024px. */
+main h2.model-glance-title {
+  font-weight: 600 !important;
+  font-size: clamp(2.3rem, 10.6vw, 2.75rem) !important;
+  line-height: 1.04 !important;
+  letter-spacing: -0.015em;
+}
+
+@media (min-width: 640px) {
+  main h2.model-glance-title {
+    font-size: 3.25rem !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  main h2.model-glance-title {
+    font-size: var(--g-title) !important;
+    line-height: 1 !important;
+  }
+  .model-glance {
+    --g-pt: calc(-24px + 7.812vw);
+    --g-title: calc(-8px + 5.469vw);
+    --g-div-mt: calc(6px + 0.7812vw);
+    --g-desc: calc(12px + 0.3906vw);
+    --g-desc-lh: calc(19px + 0.6836vw);
+    --g-desc-mt: calc(8px + 0.5859vw);
+    --g-band-pb: calc(12px + 1.758vw);
+    --g-inset: calc(-2px + 1.562vw);
+    --g-head-h: calc(36px + 0.9766vw);
+    --g-row-h: calc(36px + 0.9766vw);
+    --g-pb: calc(4px + 0.9766vw);
+    --g-icon-col: calc(28px + 2.344vw);
+    --g-circle: calc(18px + 1.953vw);
+    --g-circle-pl: calc(-6px + 0.5859vw);
+    --g-glyph: calc(7px + 1.172vw);
+    --g-label: calc(11.5px + 0.3906vw);
+    --g-label-pl: calc(2px + 0.9766vw);
+    --g-value: calc(11.5px + 0.3906vw);
+    --g-value-pl: calc(-4px + 2.734vw);
+    --g-badge-h: calc(18px + 0.7812vw);
+    --g-badge: calc(8.5px + 0.293vw);
+    --g-badge-ml: calc(-2px + 1.562vw);
+    --g-star: calc(12px + 1.172vw);
+    --g-score-h: calc(26px + 0.7812vw);
+    --g-score: calc(12px + 0.3906vw);
+    --g-sect-pb: calc(8px + 3.125vw);
+  }
+}
+
+@media (min-width: 1536px) {
+  .model-glance {
+    --g-pt: 96px;
+    --g-title: 76px;
+    --g-div-mt: 18px;
+    --g-desc: 18px;
+    --g-desc-lh: 29.5px;
+    --g-desc-mt: 17px;
+    --g-band-pb: 39px;
+    --g-inset: 22px;
+    --g-head-h: 51px;
+    --g-row-h: 51px;
+    --g-pb: 19px;
+    --g-icon-col: 64px;
+    --g-circle: 48px;
+    --g-circle-pl: 3px;
+    --g-glyph: 25px;
+    --g-label: 17.5px;
+    --g-label-pl: 17px;
+    --g-value: 17.5px;
+    --g-value-pl: 38px;
+    --g-badge-h: 30px;
+    --g-badge: 13px;
+    --g-badge-ml: 22px;
+    --g-star: 30px;
+    --g-score-h: 38px;
+    --g-score: 18px;
+    --g-sect-pb: 56px;
+  }
+}
+
+/* Model page "Generations" (section 4) - tokens: 1:1 with the 1536px reference, scaled linearly down to 1024px. */
+main h2.model-gens-title {
+  font-weight: 600 !important;
+  font-size: clamp(1.65rem, 8.4vw, 2.3rem) !important;
+  line-height: 1.04 !important;
+  letter-spacing: -0.015em;
+}
+
+@media (min-width: 640px) {
+  main h2.model-gens-title {
+    font-size: 2.6rem !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  main h2.model-gens-title {
+    font-size: var(--gn-title) !important;
+    line-height: 1.02 !important;
+  }
+  .model-gens {
+    --gn-px: calc(4px + 2.734vw);
+    --gn-pt: calc(10px + 1.953vw);
+    --gn-pb: calc(8px + 3.125vw);
+    --gn-title: calc(12px + 2.344vw);
+    --gn-desc-mt: calc(4px + 0.7812vw);
+    --gn-desc: calc(12px + 0.1953vw);
+    --gn-desc-lh: calc(17px + 0.293vw);
+    --gn-col-gap: calc(-4px + 1.953vw);
+    --gn-card-gap: calc(-4px + 1.562vw);
+    --gn-row-gap: calc(2px + 1.172vw);
+    --gn-lead-gap: calc(2px + 1.172vw);
+    --gn-card-px: calc(-4px + 1.562vw);
+    --gn-card-pt: calc(0px + 1.172vw);
+    --gn-card-pb: calc(4px + 0.7812vw);
+    --gn-badge: calc(12px + 0.7812vw);
+    --gn-badge-gap: calc(-3px + 1.172vw);
+    --gn-label: calc(9.5px + 0.293vw);
+    --gn-code: calc(8px + 0.9766vw);
+    --gn-meta: calc(10px + 0.1953vw);
+    --gn-meta-lh: calc(12.5px + 0.4883vw);
+    --gn-meta-mt: calc(-2px + 1.172vw);
+    --gn-meta-min: calc(50px + 1.953vw);
+    --gn-car-h: calc(16px + 6.641vw);
+    --gn-car-mt: calc(1px + 0.1953vw);
+    --gn-lead-car-h: calc(20px + 8.203vw);
+    --gn-lead-car-mt: calc(4px + -1.172vw);
+    --gn-star: calc(7px + 0.7812vw);
+    --gn-stars-mt: calc(1px + 0.1953vw);
+    --gn-btn-h: calc(24px + 0.9766vw);
+    --gn-btn: calc(7.5px + 0.4883vw);
+    --gn-btn-mt: calc(-12px + 3.125vw);
+    --gn-vhead: calc(10.5px + 0.293vw);
+    --gn-vhead-mt: calc(4px + 1.172vw);
+    --gn-verdict: calc(10px + 0.293vw);
+    --gn-verdict-lh: calc(13.5px + 0.4883vw);
+    --gn-cta-h: calc(26px + 0.7812vw);
+    --gn-cta: calc(9px + 0.3906vw);
+    --gn-cta-mt: calc(4px + 0.9766vw);
+    --gn-lead-pb: calc(-4px + 1.758vw);
+    --gn-th-h: calc(32px + 0.7812vw);
+    --gn-cell-px: calc(-8px + 1.953vw);
+    --gn-cell-py: calc(4px + 0.3906vw);
+    --gn-cell: calc(10px + 0.293vw);
+    --gn-cell-lh: calc(13.5px + 0.4883vw);
+    --gn-pos-px: calc(-20px + 3.516vw);
+    --gn-bar-h: calc(34px + 1.172vw);
+    --gn-bar-px: calc(8px + 0.7812vw);
+    --gn-bar-label: calc(10px + 0.3906vw);
+    --gn-bar-link: calc(9px + 0.5859vw);
+    --gn-bar-icon: calc(12px + 0.7812vw);
+    --gn-bar-mt: calc(8px + 0.5859vw);
+  }
+}
+
+@media (min-width: 1536px) {
+  .model-gens {
+    --gn-px: 46px;
+    --gn-pt: 40px;
+    --gn-pb: 56px;
+    --gn-title: 48px;
+    --gn-desc-mt: 16px;
+    --gn-desc: 15px;
+    --gn-desc-lh: 21.5px;
+    --gn-col-gap: 26px;
+    --gn-card-gap: 20px;
+    --gn-row-gap: 20px;
+    --gn-lead-gap: 20px;
+    --gn-card-px: 20px;
+    --gn-card-pt: 18px;
+    --gn-card-pb: 16px;
+    --gn-badge: 24px;
+    --gn-badge-gap: 15px;
+    --gn-label: 14px;
+    --gn-code: 23px;
+    --gn-meta: 13px;
+    --gn-meta-lh: 20px;
+    --gn-meta-mt: 16px;
+    --gn-meta-min: 80px;
+    --gn-car-h: 118px;
+    --gn-car-mt: 4px;
+    --gn-lead-car-h: 146px;
+    --gn-lead-car-mt: -14px;
+    --gn-star: 19px;
+    --gn-stars-mt: 4px;
+    --gn-btn-h: 39px;
+    --gn-btn: 15px;
+    --gn-btn-mt: 36px;
+    --gn-vhead: 15px;
+    --gn-vhead-mt: 22px;
+    --gn-verdict: 14.5px;
+    --gn-verdict-lh: 21px;
+    --gn-cta-h: 38px;
+    --gn-cta: 15px;
+    --gn-cta-mt: 19px;
+    --gn-lead-pb: 23px;
+    --gn-th-h: 44px;
+    --gn-cell-px: 22px;
+    --gn-cell-py: 10px;
+    --gn-cell: 14.5px;
+    --gn-cell-lh: 21px;
+    --gn-pos-px: 34px;
+    --gn-bar-h: 52px;
+    --gn-bar-px: 20px;
+    --gn-bar-label: 16px;
+    --gn-bar-link: 18px;
+    --gn-bar-icon: 24px;
+    --gn-bar-mt: 17px;
+  }
+}
+
+/* Model page "Engine Database" (section 5) - tokens: 1:1 with the 1536px reference, scaled linearly down to 1024px. */
+main h2.model-db-title {
+  font-weight: 600 !important;
+  font-size: clamp(1.75rem, 8.6vw, 2.3rem) !important;
+  line-height: 1.05 !important;
+  letter-spacing: -0.015em;
+}
+
+@media (min-width: 640px) {
+  main h2.model-db-title {
+    font-size: 2.6rem !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  main h2.model-db-title {
+    font-size: var(--db-title) !important;
+    line-height: 1 !important;
+  }
+  .model-db {
+    --db-px: calc(12px + 1.172vw);
+    --db-pt: calc(8px + 2.344vw);
+    --db-pb: calc(8px + 3.125vw);
+    --db-title: calc(16px + 1.953vw);
+    --db-desc: calc(11px + 0.293vw);
+    --db-desc-lh: calc(15px + 0.5859vw);
+    --db-desc-mt: calc(2px + 0.7812vw);
+    --db-head-gap: calc(2px + 1.172vw);
+    --db-stat-gap: calc(-4px + 1.562vw);
+    --db-stat-h: calc(66px + 3.711vw);
+    --db-stat-px: calc(-2px + 1.562vw);
+    --db-stat-icon: calc(14px + 1.953vw);
+    --db-stat-icon-gap: calc(-2px + 1.172vw);
+    --db-stat-value: calc(8px + 1.172vw);
+    --db-stat-label: calc(7.5px + 0.4883vw);
+    --db-stat-lh: calc(10px + 0.7812vw);
+    --db-table-mt: calc(6px + 0.5859vw);
+    --db-th-h: calc(32px + 1.172vw);
+    --db-th: calc(9px + 0.3906vw);
+    --db-cell: calc(7.5px + 0.4883vw);
+    --db-cell-lh: calc(12px + 0.5859vw);
+    --db-cell-px: calc(-7px + 1.367vw);
+    --db-cell-py: calc(2px + 0.9766vw);
+    --db-star: calc(6px + 0.5859vw);
+    --db-tag: calc(7.5px + 0.3906vw);
+    --db-row-gap: calc(4px + 0.3906vw);
+    --db-ctrl-h: calc(36px + 0.3906vw);
+    --db-ctrl: calc(10.5px + 0.293vw);
+    --db-legend: calc(9.5px + 0.293vw);
+    --db-legend-star: calc(7px + 0.3906vw);
+    --db-box-px: calc(8px + 0.7812vw);
+    --db-box-py: calc(8px + 0.7812vw);
+    --db-box-head: calc(11.5px + 0.293vw);
+    --db-box: calc(11px + 0.1953vw);
+    --db-box-lh: calc(16.5px + 0.1953vw);
+    --db-i: calc(20px + 0.7812vw);
+    --db-bar-h: calc(44px + 1.953vw);
+    --db-bar-link: calc(11.5px + 0.293vw);
+  }
+}
+
+@media (min-width: 1536px) {
+  .model-db {
+    --db-px: 30px;
+    --db-pt: 44px;
+    --db-pb: 56px;
+    --db-title: 46px;
+    --db-desc: 15.5px;
+    --db-desc-lh: 24px;
+    --db-desc-mt: 14px;
+    --db-head-gap: 20px;
+    --db-stat-gap: 20px;
+    --db-stat-h: 123px;
+    --db-stat-px: 22px;
+    --db-stat-icon: 44px;
+    --db-stat-icon-gap: 16px;
+    --db-stat-value: 26px;
+    --db-stat-label: 15px;
+    --db-stat-lh: 22px;
+    --db-table-mt: 15px;
+    --db-th-h: 50px;
+    --db-th: 15px;
+    --db-cell: 15px;
+    --db-cell-lh: 21px;
+    --db-cell-px: 14px;
+    --db-cell-py: 17px;
+    --db-star: 15px;
+    --db-tag: 13.5px;
+    --db-row-gap: 10px;
+    --db-ctrl-h: 42px;
+    --db-ctrl: 15px;
+    --db-legend: 14px;
+    --db-legend-star: 13px;
+    --db-box-px: 20px;
+    --db-box-py: 20px;
+    --db-box-head: 16px;
+    --db-box: 14px;
+    --db-box-lh: 19.5px;
+    --db-i: 32px;
+    --db-bar-h: 74px;
+    --db-bar-link: 16px;
+  }
+}
+
+/* Model page "Common Problems" (section 6) - tokens: 1:1 with the 1536px reference, scaled linearly down to 1024px. */
+main h2.model-problems-title {
+  font-weight: 600 !important;
+  font-size: clamp(1.8rem, 8.8vw, 2.4rem) !important;
+  line-height: 1.05 !important;
+  letter-spacing: -0.015em;
+}
+
+@media (min-width: 640px) {
+  main h2.model-problems-title {
+    font-size: 2.75rem !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  main h2.model-problems-title {
+    font-size: var(--pr-title) !important;
+    line-height: 1.02 !important;
+  }
+  .model-problems {
+    --pr-px: calc(2px + 2.93vw);
+    --pr-pt: calc(10px + 1.953vw);
+    --pr-pb: calc(8px + 3.125vw);
+    --pr-title: calc(12px + 2.734vw);
+    --pr-div-mt: calc(6px + 0.3906vw);
+    --pr-desc: calc(11.5px + 0.293vw);
+    --pr-desc-lh: calc(16px + 0.5859vw);
+    --pr-desc-mt: calc(6px + 0.3906vw);
+    --pr-stat-w: calc(170px + 9.766vw);
+    --pr-stat-h: calc(72px + 4.492vw);
+    --pr-stat-px: calc(6px + 1.172vw);
+    --pr-stat-icon: calc(30px + 2.734vw);
+    --pr-stat-gap: calc(-2px + 1.562vw);
+    --pr-stat-value: calc(13px + 0.9766vw);
+    --pr-stat-label: calc(10.5px + 0.293vw);
+    --pr-stat-lh: calc(15px + 0.3906vw);
+    --pr-grid-mt: calc(0px + 1.953vw);
+    --pr-gap: calc(-2px + 1.562vw);
+    --pr-num: calc(18px + 1.172vw);
+    --pr-num-text: calc(9px + 0.5859vw);
+    --pr-card-px: calc(6px + 0.9766vw);
+    --pr-card-py: calc(8px + 0.7812vw);
+    --pr-card-title: calc(11px + 0.3906vw);
+    --pr-card-title-lh: calc(12px + 0.7812vw);
+    --pr-sev: calc(11px + 0.1953vw);
+    --pr-sev-mt: calc(2px + 0.7812vw);
+    --pr-card-text: calc(10.5px + 0.1953vw);
+    --pr-card-text-lh: calc(14.5px + 0.3906vw);
+    --pr-card-text-mt: calc(2px + 0.7812vw);
+    --pr-more: calc(11px + 0.1953vw);
+    --pr-key-mt: calc(2px + 1.562vw);
+    --pr-key-h: calc(72px + 2.344vw);
+    --pr-key-px: calc(-4px + 2.344vw);
+    --pr-key-label: calc(10.5px + 0.293vw);
+    --pr-key-text: calc(10px + 0.1953vw);
+    --pr-key-lh: calc(14px + 0.3906vw);
+  }
+}
+
+@media (min-width: 1536px) {
+  .model-problems {
+    --pr-px: 47px;
+    --pr-pt: 40px;
+    --pr-pb: 56px;
+    --pr-title: 54px;
+    --pr-div-mt: 12px;
+    --pr-desc: 16px;
+    --pr-desc-lh: 25px;
+    --pr-desc-mt: 12px;
+    --pr-stat-w: 320px;
+    --pr-stat-h: 141px;
+    --pr-stat-px: 24px;
+    --pr-stat-icon: 72px;
+    --pr-stat-gap: 22px;
+    --pr-stat-value: 28px;
+    --pr-stat-label: 15px;
+    --pr-stat-lh: 21px;
+    --pr-grid-mt: 30px;
+    --pr-gap: 22px;
+    --pr-num: 36px;
+    --pr-num-text: 18px;
+    --pr-card-px: 21px;
+    --pr-card-py: 20px;
+    --pr-card-title: 17px;
+    --pr-card-title-lh: 24px;
+    --pr-sev: 14px;
+    --pr-sev-mt: 14px;
+    --pr-card-text: 13.5px;
+    --pr-card-text-lh: 20.5px;
+    --pr-card-text-mt: 14px;
+    --pr-more: 14px;
+    --pr-key-mt: 26px;
+    --pr-key-h: 108px;
+    --pr-key-px: 32px;
+    --pr-key-label: 15px;
+    --pr-key-text: 13px;
+    --pr-key-lh: 20px;
+  }
+}
+
+/* Model page "Market Intelligence" (section 7) - tokens: 1:1 with the 1536px reference, scaled linearly down to 1024px. */
+main h2.model-market-title {
+  font-weight: 600 !important;
+  font-size: clamp(1.75rem, 8.4vw, 2.3rem) !important;
+  line-height: 1.08 !important;
+  letter-spacing: -0.015em;
+}
+
+@media (min-width: 640px) {
+  main h2.model-market-title {
+    font-size: 2.6rem !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  main h2.model-market-title {
+    font-size: var(--mi-title) !important;
+    line-height: var(--mi-title-lh) !important;
+  }
+  .model-market {
+    --mi-px: calc(-14px + 4.492vw);
+    --mi-pt: calc(10px + 1.953vw);
+    --mi-pb: calc(8px + 3.125vw);
+    --mi-title: calc(22px + 1.562vw);
+    --mi-title-lh: calc(22px + 1.953vw);
+    --mi-stat-w: calc(194px + 5.469vw);
+    --mi-stat-h: calc(76px + 2.734vw);
+    --mi-stat-px: calc(8px + 0.7812vw);
+    --mi-stat-circle: calc(34px + 2.344vw);
+    --mi-stat-gap: calc(2px + 1.172vw);
+    --mi-stat-value: calc(13px + 0.9766vw);
+    --mi-stat-label: calc(11.5px + 0.1953vw);
+    --mi-table-mt: calc(6px + 1.172vw);
+    --mi-th-h: calc(28px + 0.7812vw);
+    --mi-th: calc(11px + 0.293vw);
+    --mi-row-h: calc(38px + 1.758vw);
+    --mi-circle: calc(26px + 1.172vw);
+    --mi-row-pl: calc(8px + 1.562vw);
+    --mi-row-gap: calc(2px + 2.148vw);
+    --mi-cell: calc(10.5px + 0.3906vw);
+    --mi-tag: calc(9.5px + 0.293vw);
+    --mi-cell-pl: calc(4px + 1.953vw);
+    --mi-gap: calc(6px + 0.7812vw);
+    --mi-ins-px: calc(4px + 1.562vw);
+    --mi-ins-pt: calc(10px + 0.7812vw);
+    --mi-ins-head: calc(11.5px + 0.3906vw);
+    --mi-ins-circle: calc(16px + 2.734vw);
+    --mi-ins-gap: calc(-2px + 1.562vw);
+    --mi-ins: calc(9.5px + 0.293vw);
+    --mi-ins-lh: calc(14px + 0.4883vw);
+    --mi-ins-col-px: calc(-4px + 1.953vw);
+    --mi-quote-h: calc(128px + 5.078vw);
+    --mi-quote-mark: calc(22px + 2.344vw);
+    --mi-quote-px: calc(12px + 0.7812vw);
+    --mi-quote-gap: calc(-10px + 3.125vw);
+    --mi-quote-label: calc(8px + 0.3906vw);
+    --mi-quote-title: calc(7px + 1.172vw);
+    --mi-quote-text: calc(10.5px + 0.3906vw);
+    --mi-quote-lh: calc(13px + 0.8789vw);
+  }
+}
+
+@media (min-width: 1536px) {
+  .model-market {
+    --mi-px: 55px;
+    --mi-pt: 40px;
+    --mi-pb: 56px;
+    --mi-title: 46px;
+    --mi-title-lh: 52px;
+    --mi-stat-w: 278px;
+    --mi-stat-h: 118px;
+    --mi-stat-px: 20px;
+    --mi-stat-circle: 70px;
+    --mi-stat-gap: 20px;
+    --mi-stat-value: 28px;
+    --mi-stat-label: 14.5px;
+    --mi-table-mt: 24px;
+    --mi-th-h: 40px;
+    --mi-th: 15.5px;
+    --mi-row-h: 65px;
+    --mi-circle: 44px;
+    --mi-row-pl: 32px;
+    --mi-row-gap: 35px;
+    --mi-cell: 16.5px;
+    --mi-tag: 14px;
+    --mi-cell-pl: 34px;
+    --mi-gap: 18px;
+    --mi-ins-px: 28px;
+    --mi-ins-pt: 22px;
+    --mi-ins-head: 17.5px;
+    --mi-ins-circle: 58px;
+    --mi-ins-gap: 22px;
+    --mi-ins: 14px;
+    --mi-ins-lh: 21.5px;
+    --mi-ins-col-px: 26px;
+    --mi-quote-h: 206px;
+    --mi-quote-mark: 58px;
+    --mi-quote-px: 24px;
+    --mi-quote-gap: 38px;
+    --mi-quote-label: 14px;
+    --mi-quote-title: 25px;
+    --mi-quote-text: 16.5px;
+    --mi-quote-lh: 26.5px;
+  }
+}
+
+/* Model page "Replacement Costs" (section 8) - tokens: 1:1 with the 1536px reference, scaled linearly down to 1024px. */
+main h2.model-costs-title {
+  font-weight: 600 !important;
+  font-size: clamp(1.8rem, 8.6vw, 2.35rem) !important;
+  line-height: 1.06 !important;
+  letter-spacing: -0.015em;
+}
+
+@media (min-width: 640px) {
+  main h2.model-costs-title {
+    font-size: 2.7rem !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  main h2.model-costs-title {
+    font-size: var(--rc-title) !important;
+    line-height: 1.1 !important;
+  }
+  .model-costs {
+    --rc-px: calc(0px + 2.734vw);
+    --rc-pt: calc(10px + 1.953vw);
+    --rc-pb: calc(8px + 3.125vw);
+    --rc-title: calc(22px + 1.562vw);
+    --rc-desc-mt: calc(4px + 0.7812vw);
+    --rc-desc: calc(12.5px + 0.1953vw);
+    --rc-desc-lh: calc(16px + 0.4883vw);
+    --rc-trust-w: calc(286px + 20.9vw);
+    --rc-trust-h: calc(80px + 3.906vw);
+    --rc-trust-icon: calc(16px + 1.953vw);
+    --rc-trust-title: calc(11.5px + 0.1953vw);
+    --rc-trust-text: calc(10.5px + 0.1953vw);
+    --rc-groups-mt: calc(10px + 0.3906vw);
+    --rc-group-gap: calc(8px + 0.7812vw);
+    --rc-card-w: calc(108px + 10.94vw);
+    --rc-card-px: calc(6px + 0.7812vw);
+    --rc-card-label: calc(11px + 0.5859vw);
+    --rc-card-years: calc(10.5px + 0.1953vw);
+    --rc-th-h: calc(24px + 0.5859vw);
+    --rc-th: calc(10.5px + 0.1953vw);
+    --rc-cell: calc(10px + 0.293vw);
+    --rc-cell-px: calc(0px + 1.367vw);
+    --rc-row-min: calc(26px + 1.172vw);
+    --rc-notes-mt: calc(8px + 0.7812vw);
+    --rc-notes-gap: calc(8px + 0.7812vw);
+    --rc-note-px: calc(8px + 0.7812vw);
+    --rc-note-py: calc(10px + 0.7812vw);
+    --rc-note-icon: calc(22px + 0.7812vw);
+    --rc-note-head: calc(12.5px + 0.1953vw);
+    --rc-note: calc(11.5px + 0.09766vw);
+    --rc-note-lh: calc(15.5px + 0.293vw);
+    --rc-rule-title: calc(12.5px + 0.293vw);
+    --rc-rule-mark: calc(26px + 4.297vw);
+    --rc-foot: calc(10.5px + 0.09766vw);
+    --rc-foot-mt: calc(10px + 0.3906vw);
+  }
+}
+
+@media (min-width: 1536px) {
+  .model-costs {
+    --rc-px: 42px;
+    --rc-pt: 40px;
+    --rc-pb: 56px;
+    --rc-title: 46px;
+    --rc-desc-mt: 16px;
+    --rc-desc: 15.5px;
+    --rc-desc-lh: 23.5px;
+    --rc-trust-w: 607px;
+    --rc-trust-h: 140px;
+    --rc-trust-icon: 46px;
+    --rc-trust-title: 14.5px;
+    --rc-trust-text: 13.5px;
+    --rc-groups-mt: 16px;
+    --rc-group-gap: 20px;
+    --rc-card-w: 276px;
+    --rc-card-px: 18px;
+    --rc-card-label: 20px;
+    --rc-card-years: 13.5px;
+    --rc-th-h: 33px;
+    --rc-th: 13.5px;
+    --rc-cell: 14.5px;
+    --rc-cell-px: 21px;
+    --rc-row-min: 44px;
+    --rc-notes-mt: 20px;
+    --rc-notes-gap: 20px;
+    --rc-note-px: 20px;
+    --rc-note-py: 22px;
+    --rc-note-icon: 34px;
+    --rc-note-head: 15.5px;
+    --rc-note: 13px;
+    --rc-note-lh: 20px;
+    --rc-rule-title: 17px;
+    --rc-rule-mark: 92px;
+    --rc-foot: 12px;
+    --rc-foot-mt: 16px;
+  }
+}
+
+/* Model page "Engine Evolution" (section 9) - tokens: 1:1 with the 1536px reference, scaled linearly down to 1024px. */
+main h2.model-evo-title {
+  font-weight: 600 !important;
+  font-size: clamp(1.8rem, 8.6vw, 2.35rem) !important;
+  line-height: 1.08 !important;
+  letter-spacing: -0.015em;
+}
+
+@media (min-width: 640px) {
+  main h2.model-evo-title {
+    font-size: 2.75rem !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  main h2.model-evo-title {
+    font-size: var(--ev-title) !important;
+    line-height: var(--ev-title-lh) !important;
+  }
+  .model-evo {
+    --ev-px: calc(-6px + 3.711vw);
+    --ev-pt: calc(10px + 1.953vw);
+    --ev-pb: calc(8px + 3.125vw);
+    --ev-title: calc(20px + 1.953vw);
+    --ev-title-lh: calc(24px + 1.953vw);
+    --ev-desc-mt: calc(4px + 0.7812vw);
+    --ev-desc: calc(11.5px + 0.293vw);
+    --ev-desc-lh: calc(14px + 0.6836vw);
+    --ev-stats-w: calc(340px + 21.48vw);
+    --ev-stats-h: calc(100px + 3.516vw);
+    --ev-stat-icon: calc(16px + 1.953vw);
+    --ev-stat-value: calc(12.5px + 0.293vw);
+    --ev-stat-label: calc(11.5px + 0.1953vw);
+    --ev-stat-text: calc(10.5px + 0.1953vw);
+    --ev-table-mt: calc(8px + 0.7812vw);
+    --ev-th-h: calc(28px + 0.5859vw);
+    --ev-th: calc(10.5px + 0.293vw);
+    --ev-row-h: calc(138px + 3.125vw);
+    --ev-cell-px: calc(-2px + 1.562vw);
+    --ev-era: calc(12.5px + 0.293vw);
+    --ev-era-lh: calc(16px + 0.3906vw);
+    --ev-era-years: calc(11px + 0.1953vw);
+    --ev-car-h: calc(26px + 5.078vw);
+    --ev-engine: calc(10.5px + 0.293vw);
+    --ev-engine-h: calc(22px + 4.688vw);
+    --ev-cell: calc(10.5px + 0.1953vw);
+    --ev-cell-lh: calc(13px + 0.5859vw);
+    --ev-info: calc(18px + 1.172vw);
+    --ev-foot-mt: calc(8px + 0.3906vw);
+    --ev-foot-h: calc(38px + 1.172vw);
+    --ev-foot: calc(10px + 0.1953vw);
+  }
+}
+
+@media (min-width: 1536px) {
+  .model-evo {
+    --ev-px: 51px;
+    --ev-pt: 40px;
+    --ev-pb: 56px;
+    --ev-title: 50px;
+    --ev-title-lh: 54px;
+    --ev-desc-mt: 16px;
+    --ev-desc: 16px;
+    --ev-desc-lh: 24.5px;
+    --ev-stats-w: 670px;
+    --ev-stats-h: 154px;
+    --ev-stat-icon: 46px;
+    --ev-stat-value: 17px;
+    --ev-stat-label: 14.5px;
+    --ev-stat-text: 13.5px;
+    --ev-table-mt: 20px;
+    --ev-th-h: 37px;
+    --ev-th: 15px;
+    --ev-row-h: 186px;
+    --ev-cell-px: 22px;
+    --ev-era: 17px;
+    --ev-era-lh: 22px;
+    --ev-era-years: 14px;
+    --ev-car-h: 104px;
+    --ev-engine: 15px;
+    --ev-engine-h: 94px;
+    --ev-cell: 13.5px;
+    --ev-cell-lh: 22px;
+    --ev-info: 36px;
+    --ev-foot-mt: 14px;
+    --ev-foot-h: 56px;
+    --ev-foot: 13px;
+  }
+}
+
+/* Model page "Who Should Buy" (section 10) - tokens: the reference (drawn at 1402px) scaled to 1536px, then linearly down to 1024px. */
+main h2.model-buyers-title {
+  font-weight: 600 !important;
+  font-size: clamp(1.9rem, 9vw, 2.4rem) !important;
+  line-height: 1.08 !important;
+  letter-spacing: -0.015em;
+}
+
+@media (min-width: 640px) {
+  main h2.model-buyers-title {
+    font-size: 2.75rem !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  main h2.model-buyers-title {
+    font-size: var(--wb-title) !important;
+    line-height: 1.1 !important;
+  }
+  .model-buyers {
+    --wb-px: calc(20.6px + 2.012vw);
+    --wb-pt: calc(13.1px + 1.289vw);
+    --wb-pb: calc(19.6px + 1.934vw);
+    --wb-title: calc(17.6px + 1.992vw);
+    --wb-desc: calc(8.5px + 0.5859vw);
+    --wb-desc-lh: calc(10.4px + 1.035vw);
+    --wb-desc-mt: calc(6px + 0.6055vw);
+    --wb-proof-w: calc(297px + 29.02vw);
+    --wb-proof-h: calc(64.4px + 6.289vw);
+    --wb-proof-icon: calc(18.4px + 1.797vw);
+    --wb-proof-title: calc(9.8px + 0.2148vw);
+    --wb-proof-text: calc(8.3px + 0.3125vw);
+    --wb-proof-lh: calc(8.2px + 0.8203vw);
+    --wb-table-mt: calc(7.5px + 0.7227vw);
+    --wb-th-h: calc(17.4px + 1.719vw);
+    --wb-th: calc(7.7px + 0.5664vw);
+    --wb-row-h: calc(62.3px + 6.074vw);
+    --wb-cell-px: calc(10.2px + 0.9766vw);
+    --wb-photo-w: calc(-48.8px + 18.44vw);
+    --wb-photo-h: calc(-11px + 9.277vw);
+    --wb-circle: calc(-8.8px + 5.352vw);
+    --wb-gap: calc(-13.8px + 2.324vw);
+    --wb-label: calc(7.9px + 0.8398vw);
+    --wb-label-lh: calc(10.9px + 1.074vw);
+    --wb-star: calc(10.2px + 0.9766vw);
+    --wb-star-gap: calc(5.3px + 0.5078vw);
+    --wb-verdict: calc(8.7px + 0.4688vw);
+    --wb-verdict-lh: calc(9.7px + 0.9375vw);
+    --wb-bar-mt: calc(6px + 0.6055vw);
+    --wb-bar-h: calc(33.2px + 3.262vw);
+    --wb-bar: calc(8.4px + 0.4492vw);
+    --wb-bar-lh: calc(9.7px + 0.9375vw);
+    --wb-info: calc(15.7px + 1.543vw);
+    --wb-cta-h: calc(19.4px + 1.875vw);
+    --wb-cta: calc(9.2px + 0.4687vw);
+  }
+}
+
+@media (min-width: 1536px) {
+  .model-buyers {
+    --wb-px: 51.5px;
+    --wb-pt: 32.9px;
+    --wb-pb: 49.3px;
+    --wb-title: 48.2px;
+    --wb-desc: 17.5px;
+    --wb-desc-lh: 26.3px;
+    --wb-desc-mt: 15.3px;
+    --wb-proof-w: 742.8px;
+    --wb-proof-h: 161px;
+    --wb-proof-icon: 46px;
+    --wb-proof-title: 13.1px;
+    --wb-proof-text: 13.1px;
+    --wb-proof-lh: 20.8px;
+    --wb-table-mt: 18.6px;
+    --wb-th-h: 43.8px;
+    --wb-th: 16.4px;
+    --wb-row-h: 155.6px;
+    --wb-cell-px: 25.2px;
+    --wb-photo-w: 234.5px;
+    --wb-photo-h: 131.5px;
+    --wb-circle: 73.4px;
+    --wb-gap: 21.9px;
+    --wb-label: 20.8px;
+    --wb-label-lh: 27.4px;
+    --wb-star: 25.2px;
+    --wb-star-gap: 13.1px;
+    --wb-verdict: 15.9px;
+    --wb-verdict-lh: 24.1px;
+    --wb-bar-mt: 15.3px;
+    --wb-bar-h: 83.3px;
+    --wb-bar: 15.3px;
+    --wb-bar-lh: 24.1px;
+    --wb-info: 39.4px;
+    --wb-cta-h: 48.2px;
+    --wb-cta: 16.4px;
+  }
+}
+
+/* Model page "Calculator CTA" (section 11) - tokens: 1:1 with the 1536px reference, scaled linearly down to 1024px. */
+main h2.model-calc-title {
+  font-weight: 600 !important;
+  font-size: clamp(1.8rem, 8.6vw, 2.35rem) !important;
+  line-height: 1.1 !important;
+  letter-spacing: -0.015em;
+}
+
+@media (min-width: 640px) {
+  main h2.model-calc-title {
+    font-size: 2.7rem !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  main h2.model-calc-title {
+    font-size: var(--cc-title) !important;
+    line-height: var(--cc-title-lh) !important;
+  }
+  .model-calc {
+    --cc-px: calc(-4px + 3.906vw);
+    --cc-pt: calc(14px + 1.172vw);
+    --cc-pb: calc(8px + 3.125vw);
+    --cc-title: calc(22px + 1.562vw);
+    --cc-title-lh: calc(26px + 1.758vw);
+    --cc-desc: calc(11.5px + 0.293vw);
+    --cc-desc-lh: calc(14px + 0.7812vw);
+    --cc-desc-mt: calc(2px + 1.172vw);
+    --cc-p-gap: calc(6px + 0.3906vw);
+    --cc-note-w: calc(316px + 19.92vw);
+    --cc-note-mt: calc(10px + 0.3906vw);
+    --cc-note-h: calc(40px + 2.344vw);
+    --cc-note-px: calc(-2px + 1.953vw);
+    --cc-note-icon: calc(26px + 1.172vw);
+    --cc-note: calc(12px + 0.1953vw);
+    --cc-scene-w: calc(80px + 46.88vw);
+    --cc-scene-h: calc(320px + 7.812vw);
+    --cc-paths-mt: calc(10px + 0.3906vw);
+    --cc-paths-gap: calc(6px + 0.7812vw);
+    --cc-path-px: calc(6px + 1.562vw);
+    --cc-path-py: calc(16px + 0.3906vw);
+    --cc-badge: calc(10px + 0.1953vw);
+    --cc-path-title: calc(16px + 1.172vw);
+    --cc-path-text: calc(11.5px + 0.293vw);
+    --cc-path-circle: calc(52px + 4.688vw);
+    --cc-btn-h: calc(42px + 2.344vw);
+    --cc-btn: calc(12.5px + 0.293vw);
+    --cc-btn-sub: calc(11.5px + 0.1953vw);
+    --cc-btn-icon: calc(18px + 1.172vw);
+    --cc-feat: calc(11px + 0.1953vw);
+    --cc-feat-icon: calc(16px + 1.172vw);
+    --cc-info: calc(22px + 0.7812vw);
+    --cc-close-mt: calc(8px + 0.5859vw);
+    --cc-close-h: calc(72px + 2.539vw);
+    --cc-close-mark: calc(36px + 1.953vw);
+    --cc-close-title: calc(13px + 0.3906vw);
+    --cc-close-text: calc(12px + 0.1953vw);
+    --cc-close-btn-h: calc(40px + 1.367vw);
+    --cc-close-btn: calc(12px + 0.3906vw);
+  }
+}
+
+@media (min-width: 1536px) {
+  .model-calc {
+    --cc-px: 56px;
+    --cc-pt: 32px;
+    --cc-pb: 56px;
+    --cc-title: 46px;
+    --cc-title-lh: 53px;
+    --cc-desc: 16px;
+    --cc-desc-lh: 26px;
+    --cc-desc-mt: 20px;
+    --cc-p-gap: 12px;
+    --cc-note-w: 622px;
+    --cc-note-mt: 16px;
+    --cc-note-h: 76px;
+    --cc-note-px: 28px;
+    --cc-note-icon: 44px;
+    --cc-note: 15px;
+    --cc-scene-w: 800px;
+    --cc-scene-h: 440px;
+    --cc-paths-mt: 16px;
+    --cc-paths-gap: 18px;
+    --cc-path-px: 30px;
+    --cc-path-py: 22px;
+    --cc-badge: 13px;
+    --cc-path-title: 34px;
+    --cc-path-text: 16px;
+    --cc-path-circle: 124px;
+    --cc-btn-h: 78px;
+    --cc-btn: 17px;
+    --cc-btn-sub: 14.5px;
+    --cc-btn-icon: 36px;
+    --cc-feat: 14px;
+    --cc-feat-icon: 34px;
+    --cc-info: 34px;
+    --cc-close-mt: 17px;
+    --cc-close-h: 111px;
+    --cc-close-mark: 66px;
+    --cc-close-title: 19px;
+    --cc-close-text: 15px;
+    --cc-close-btn-h: 61px;
+    --cc-close-btn: 18px;
+  }
+}
+
+/* Model page "Trust" + "FAQ" (sections 12-13) - tokens: 1:1 with the 1536px reference, scaled linearly down to 1024px. */
+main h2.model-trust-title {
+  font-weight: 600 !important;
+  font-size: clamp(2rem, 9.6vw, 2.5rem) !important;
+  line-height: 1.08 !important;
+  letter-spacing: -0.015em;
+}
+main h2.model-faq-title {
+  font-weight: 600 !important;
+  font-size: clamp(1.6rem, 7.4vw, 2rem) !important;
+  line-height: 1.1 !important;
+  letter-spacing: -0.01em;
+}
+
+@media (min-width: 640px) {
+  main h2.model-trust-title {
+    font-size: 2.8rem !important;
+  }
+  main h2.model-faq-title {
+    font-size: 2rem !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  main h2.model-trust-title {
+    font-size: var(--tr-title) !important;
+    line-height: var(--tr-title-lh) !important;
+  }
+  main h2.model-faq-title {
+    font-size: var(--tr-faq-title) !important;
+    line-height: 1.15 !important;
+  }
+  .model-trust {
+    --tr-px: calc(10px + 1.367vw);
+    --tr-card-px: calc(8px + 1.562vw);
+    --tr-card-pt: calc(12px + 2.344vw);
+    --tr-title: calc(20px + 1.953vw);
+    --tr-title-lh: calc(26px + 1.758vw);
+    --tr-list-mt: calc(4px + 1.172vw);
+    --tr-list-w: calc(270px + 19.53vw);
+    --tr-icon: calc(32px + 1.953vw);
+    --tr-icon-gap: calc(4px + 1.562vw);
+    --tr-item-py: calc(8px + 0.3906vw);
+    --tr-item-title: calc(12px + 0.1953vw);
+    --tr-item: calc(11.1px + 0.1367vw);
+    --tr-item-lh: calc(15px + 0.293vw);
+    --tr-scene-w: calc(-292px + 75.39vw);
+    --tr-gap: calc(8px + 0.3906vw);
+    --tr-faq-pt: calc(10px + 0.7812vw);
+    --tr-faq-title: calc(14px + 1.172vw);
+    --tr-faq-mt: calc(6px + 0.3906vw);
+    --tr-q-h: calc(28px + 0.3906vw);
+    --tr-q-gap: calc(2px + 0.1953vw);
+    --tr-q-col-gap: calc(0px + 2.344vw);
+    --tr-q: calc(11.5px + 0.1953vw);
+    --tr-num: calc(16px + 0.3906vw);
+    --tr-bar-mt: calc(6px + 0.7812vw);
+    --tr-bar-h: calc(46px + 1.562vw);
+    --tr-bar-px: calc(10px + 0.3906vw);
+    --tr-bar-title: calc(12.5px + 0.1953vw);
+    --tr-bar-text: calc(11.5px + 0.09766vw);
+    --tr-bar-btn-h: calc(32px + 0.7812vw);
+    --tr-bar-btn: calc(13px + 0.1953vw);
+  }
+}
+
+@media (min-width: 1536px) {
+  .model-trust {
+    --tr-px: 31px;
+    --tr-card-px: 32px;
+    --tr-card-pt: 48px;
+    --tr-title: 50px;
+    --tr-title-lh: 53px;
+    --tr-list-mt: 22px;
+    --tr-list-w: 570px;
+    --tr-icon: 62px;
+    --tr-icon-gap: 28px;
+    --tr-item-py: 14px;
+    --tr-item-title: 15px;
+    --tr-item: 13.2px;
+    --tr-item-lh: 19.5px;
+    --tr-scene-w: 866px;
+    --tr-gap: 14px;
+    --tr-faq-pt: 22px;
+    --tr-faq-title: 32px;
+    --tr-faq-mt: 12px;
+    --tr-q-h: 34px;
+    --tr-q-gap: 5px;
+    --tr-q-col-gap: 36px;
+    --tr-q: 14.5px;
+    --tr-num: 22px;
+    --tr-bar-mt: 18px;
+    --tr-bar-h: 70px;
+    --tr-bar-px: 16px;
+    --tr-bar-title: 15.5px;
+    --tr-bar-text: 13px;
+    --tr-bar-btn-h: 44px;
+    --tr-bar-btn: 16px;
+  }
+}
+
+/* Model page "Ready to Make a Decision?" (section 14) - tokens: 1:1 with the 1536px reference, scaled linearly down to 1024px. */
+main h2.model-close-title {
+  font-weight: 700 !important;
+  font-size: clamp(2.3rem, 11vw, 2.9rem) !important;
+  line-height: 1.06 !important;
+  letter-spacing: -0.02em;
+}
+
+@media (min-width: 640px) {
+  main h2.model-close-title {
+    font-size: 3.2rem !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  main h2.model-close-title {
+    font-size: var(--ca-title) !important;
+    line-height: var(--ca-title-lh) !important;
+  }
+  .model-close {
+    --ca-px: calc(12px + 1.172vw);
+    --ca-card-px: calc(10px + 1.953vw);
+    --ca-pt: calc(6px + 2.734vw);
+    --ca-title: calc(24px + 2.344vw);
+    --ca-title-lh: calc(34px + 1.953vw);
+    --ca-div-mt: calc(10px + 0.7812vw);
+    --ca-desc-mt: calc(10px + 1.562vw);
+    --ca-desc: calc(12px + 0.3906vw);
+    --ca-desc-lh: calc(17px + 0.9766vw);
+    --ca-scene-w: calc(-292px + 83.2vw);
+    --ca-scene-h: calc(250px + 4.883vw);
+    --ca-cards-mt: calc(12px + 1.562vw);
+    --ca-cards-px: calc(4px + 1.172vw);
+    --ca-gap: calc(4px + 1.172vw);
+    --ca-card-h: calc(194px + 10.35vw);
+    --ca-tile: calc(30px + 3.125vw);
+    --ca-card-in: calc(10px + 0.7812vw);
+    --ca-card-title: calc(13px + 0.7812vw);
+    --ca-card-div-mt: calc(6px + 0.3906vw);
+    --ca-card-text: calc(11px + 0.3906vw);
+    --ca-card-text-lh: calc(17px + 0.7812vw);
+    --ca-card-cta: calc(12.5px + 0.293vw);
+    --ca-pb: calc(10px + 0.7812vw);
+  }
+}
+
+@media (min-width: 1536px) {
+  .model-close {
+    --ca-px: 30px;
+    --ca-card-px: 40px;
+    --ca-pt: 48px;
+    --ca-title: 60px;
+    --ca-title-lh: 64px;
+    --ca-div-mt: 22px;
+    --ca-desc-mt: 34px;
+    --ca-desc: 18px;
+    --ca-desc-lh: 32px;
+    --ca-scene-w: 986px;
+    --ca-scene-h: 325px;
+    --ca-cards-mt: 36px;
+    --ca-cards-px: 22px;
+    --ca-gap: 22px;
+    --ca-card-h: 353px;
+    --ca-tile: 78px;
+    --ca-card-in: 22px;
+    --ca-card-title: 25px;
+    --ca-card-div-mt: 12px;
+    --ca-card-text: 17px;
+    --ca-card-text-lh: 29px;
+    --ca-card-cta: 17px;
+    --ca-pb: 22px;
+  }
+}

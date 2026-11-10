@@ -1330,6 +1330,27 @@
     "width": 1200,
     "height": 676
    },
+   "themedScenes": {
+    "light": { "src": "/model/hero/e-pace-scene-light.webp", "width": 1832, "height": 1322 },
+    "dark": { "src": "/model/hero/e-pace-scene-dark.webp", "width": 1842, "height": 1322 }
+   },
+   "trustScenes": {
+    "light": { "src": "/model/trust/e-pace-trust-light.webp", "width": 1720, "height": 1142 },
+    "dark": { "src": "/model/trust/e-pace-trust-dark.webp", "width": 1720, "height": 1142 }
+   },
+   "calculatorScenes": {
+    "light": { "src": "/model/calculator/e-pace-calc-light.webp", "width": 1564, "height": 856 },
+    "dark": { "src": "/model/calculator/e-pace-calc-dark.webp", "width": 1564, "height": 856 }
+   },
+   "quoteScene": { "src": "/model/market/e-pace-quote.webp", "width": 1048, "height": 402 },
+   "glanceScenes": {
+    "light": { "src": "/model/glance/e-pace-glance-light.webp", "width": 1842, "height": 612 },
+    "dark": { "src": "/model/glance/e-pace-glance-dark.webp", "width": 1842, "height": 612 }
+   },
+   "verdictScenes": {
+    "light": { "src": "/model/verdict/e-pace-verdict-scene-light.webp", "width": 1448, "height": 1604 },
+    "dark": { "src": "/model/verdict/e-pace-verdict-scene-dark.webp", "width": 1410, "height": 1580 }
+   },
    "width": 762,
    "height": 468,
    "cars": [
@@ -1727,8 +1748,8 @@
   }
  },
  "background": {
-  "light": "/hero/jaguar-bg-light.webp",
-  "dark": "/hero/jaguar-bg-dark.webp"
+  "light": "/hero/scene-bg-light.webp",
+  "dark": "/hero/scene-bg-dark.webp"
  },
  "engines": {
   "aj126": "/engines/aj126.webp",

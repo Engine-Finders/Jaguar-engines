@@ -293,6 +293,7 @@
   },
   "atAGlance": {
     "h2": "F-Pace at a Glance",
+    "subHeadline": "Everything you need to know about the Jaguar F-Pace in one quick-reference overview.",
     "rows": [
       {
         "metric": "Generations",
@@ -370,6 +371,28 @@
   "engineDatabase": {
     "h2": "F-Pace Engine Codes - The Complete Database",
     "subHeadline": "Every verified engine fitted to the Jaguar F-Pace X761 - real UK enquiry volumes and honest reliability ratings.",
+    "stats": [
+      {
+        "icon": "engine",
+        "value": "5",
+        "label": "Engine Codes Tracked"
+      },
+      {
+        "icon": "shield",
+        "value": "1",
+        "label": "Generation Covered"
+      },
+      {
+        "icon": "chart",
+        "value": "220+",
+        "label": "Enquiries in 2025"
+      },
+      {
+        "icon": "pound",
+        "value": "£3K–£5.8K",
+        "label": "Typical Recon Cost Range"
+      }
+    ],
     "columns": [
       "Engine Code",
       "Family",
@@ -446,13 +469,24 @@
     ],
     "confidenceScore": {
       "title": "",
-      "text": ""
+      "paragraphs": [],
+      "verification": []
+    },
+    "methodologyLink": {
+      "label": "How we collect engine data",
+      "href": "/data/methodology"
     },
     "dataCorrections": []
   },
   "commonProblems": {
     "h2": "Common F-Pace Engine Problems",
     "subHeadline": "The real-world failure patterns Jaguar F-Pace owners actually report - ranked by severity and backed by specialist insight.",
+    "stat": {
+      "icon": "users",
+      "value": "220+",
+      "label": "F-Pace engine enquiries analysed in 2025",
+      "tag": "[JAG-VERIFIED]"
+    },
     "columns": [
       "#",
       "Problem",
@@ -571,6 +605,11 @@
   },
   "marketIntelligence": {
     "h2": "F-Pace Market Intelligence - What 220 UK Owners Told Us in 2025",
+    "stat": {
+      "value": "220+",
+      "label": "Total Enquiries in 2025",
+      "tag": "[JAG-VERIFIED]"
+    },
     "signals": [
       {
         "signal": "F-Pace Enquiries (all engines)",
@@ -602,7 +641,8 @@
   },
   "editorialPullQuote": {
     "title": "The One Thing We'd Tell Every F-Pace Buyer",
-    "quote": "If you're buying a diesel F-Pace, prioritise a 2019+ car with documented service history and a timing-chain inspection - the pre-2019 cars can be bought safely, but only with the right paperwork. If you want the cleanest ownership profile without caveats, the AJ200P petrol is the genuinely safe choice. End of Sections 1-7 for Jaguar F-Pace Jaguar F-Pace - Sections 8-14"
+    "quote": "If you're buying a diesel F-Pace, prioritise a 2019+ car with documented service history and a timing-chain inspection - the pre-2019 cars can be bought safely, but only with the right paperwork. If you want the cleanest ownership profile without caveats, the AJ200P petrol is the genuinely safe choice.",
+    "label": "Editorial pull-quote"
   },
   "replacementCosts": {
     "h2": "F-Pace Engine Replacement Costs - By Generation",
@@ -662,15 +702,44 @@
         ]
       }
     ],
-    "figuresNote": "Labour estimate: Fitting an F-Pace engine typically takes 10-16 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [JAG-QUOTE]. The F-Pace rule - the widest safety net in the Jaguar range: With typical F-Pace values sitting between £12,000 and £38,000 [THIRD‑PARTY], even the upper end of a diesel recon (£5,800) sits at roughly 15-48% of the car’s value - well below our 60% scrap threshold for Jaguar. That means every engine variant is financially viable to replace across the model’s entire value range. The petrol AJ200P’s lower recon cost (£3,000-£5,000) pushes the ratio even lower. Unless your particular car is high‑mileage, heavily damaged or at the very bottom of the value band, replacement makes sense - and even then, we’d recommend getting a scrap valuation alongside any repair quote before deciding.",
-    "labourEstimate": "Fitting an F-Pace engine typically takes 10-16 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [JAG-QUOTE]. The F-Pace rule - the widest safety net in the Jaguar range: With typical F-Pace values sitting between £12,000 and £38,000 [THIRD‑PARTY], even the upper end of a diesel recon (£5,800) sits at roughly 15-48% of the car’s value - well below our 60% scrap threshold for Jaguar. That means every engine variant is financially viable to replace across the model’s entire value range. The petrol AJ200P’s lower recon cost (£3,000-£5,000) pushes the ratio even lower. Unless your particular car is high‑mileage, heavily damaged or at the very bottom of the value band, replacement makes sense - and even then, we’d recommend getting a scrap valuation alongside any repair quote before deciding.",
-    "economicsBox": {
-      "title": "",
-      "text": ""
+    "labourEstimate": "Fitting an F-Pace engine typically takes 10-16 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [JAG-QUOTE].",
+    "rule": {
+      "title": "The F-Pace Rule - The Widest Safety Net in the Jaguar Range",
+      "paragraphs": [
+        "With typical F-Pace values sitting between £12,000 and £38,000 [THIRD‑PARTY], even the upper end of a diesel recon (£5,800) sits at roughly 15-48% of the car’s value - well below our 60% scrap threshold for Jaguar. That means every engine variant is financially viable to replace across the model’s entire value range.",
+        "The petrol AJ200P’s lower recon cost (£3,000-£5,000) pushes the ratio even lower. Unless your particular car is high‑mileage, heavily damaged or at the very bottom of the value band, replacement makes sense - and even then, we’d recommend getting a scrap valuation alongside any repair quote before deciding."
+      ]
     }
   },
   "engineEvolution": {
     "h2": "How the F-Pace Engine Range Evolved - 2016 to Today",
+    "subHeadline": "From launch to the final powertrains, explore how engineering, emissions and performance shaped every era of F-Pace engines.",
+    "stats": [
+      {
+        "icon": "eras",
+        "value": "3",
+        "label": "Engine Eras",
+        "text": "2016 to 2024"
+      },
+      {
+        "icon": "engines",
+        "value": "6",
+        "label": "Key Engine Codes",
+        "text": "From AJ200D to AJ20P3"
+      },
+      {
+        "icon": "years",
+        "value": "8",
+        "label": "Years of Engineering",
+        "text": "Innovation & Progress"
+      },
+      {
+        "icon": "drivers",
+        "value": "",
+        "label": "Built for Drivers",
+        "text": "Reliability + Dynamics"
+      }
+    ],
     "columns": [
       "Era",
       "Years",
@@ -700,10 +769,34 @@
         "whyBmwChanged": "Emissions regulations and buyer appetite for hybridisation drove the addition of a 3.0‑litre mild‑hybrid diesel and a 2.0‑litre plug‑in hybrid - both carry the Ingenium name but are mechanically distinct.",
         "worthKnowing": "The AJ20D6 is the same engine used in later‑model Land Rovers - it shares the clean reliability record of the six‑cylinder Ingenium family, not the older V6’s crankshaft risks."
       }
-    ]
+    ],
+    "footnote": "All engine reliability insights and failure patterns are based on 220+ verified F-Pace enquiries in 2025. Data covers the UK market. [JAG-VERIFIED]"
   },
   "whoShouldBuy": {
     "h2": "Who Should Buy an F‑Pace?",
+    "subHeadline": "Different buyers, different priorities. Here's our verdict on who the F‑Pace is perfect for - and who should think twice.",
+    "proof": [
+      {
+        "icon": "users",
+        "title": "Built for Real Life",
+        "text": "Practical. Powerful. Proven."
+      },
+      {
+        "icon": "shield",
+        "title": "Data-Backed Ratings",
+        "text": "220+ UK enquiries analysed in 2025."
+      },
+      {
+        "icon": "award",
+        "title": "Honest Verdicts",
+        "text": "No hype. Just the truth about ownership."
+      },
+      {
+        "icon": "wheel",
+        "title": "Buyer-Focused",
+        "text": "Find the right F‑Pace for your needs."
+      }
+    ],
     "columns": [
       "Buyer Profile",
       "Rating",
@@ -735,21 +828,74 @@
         "rating": "★★★★★",
         "verdict": "The AJ200P petrol is the keeper’s choice - no caveats, cheap to replace relative to the car’s value, and a genuinely clean record. Buy a 2019+ car, keep it serviced, and this is the F‑Pace you can own for a decade."
       }
-    ]
+    ],
+    "realTalk": {
+      "lead": "Real talk.",
+      "text": "The right F‑Pace for you depends on your budget, your mileage, and your patience for maintenance. Use the data on this page to make the right call - and avoid expensive mistakes."
+    },
+    "cta": {
+      "label": "Explore F‑Pace Engines",
+      "href": "#engine-database"
+    }
   },
   "calculatorCta": {
     "h2": "Can I Repair My F‑Pace Engine - or Should I Replace It?",
     "intro": "Your F‑Pace’s value is strong enough that replacement almost always makes financial sense - but the real question is which engine you have. If you’re hearing a timing‑chain rattle from a pre‑2019 diesel, the calculator below will tell you whether a chain‑only repair (£1,200-£2,500) or a full recon is the better route.",
+    "smartNote": {
+      "lead": "The smarter way to decide:",
+      "text": "Get a personalised repair-vs-replace verdict using real UK cost data."
+    },
     "paths": [
       {
-        "label": "Path 1 - Know your engine? Launch the Jaguar calculator with F‑Pace pre‑selected",
-        "href": "/tools/diagnostic-wizard"
+        "badge": "Path 1",
+        "title": "Know your engine?",
+        "text": "Launch the Jaguar calculator with F‑Pace pre-selected.",
+        "button": {
+          "label": "Launch F‑Pace Diagnostic Calculator",
+          "sub": "F‑Pace pre-selected",
+          "href": "/tools/diagnostic-wizard"
+        },
+        "features": [
+          {
+            "icon": "check",
+            "title": "F‑Pace pre-selected",
+            "text": "All variants covered"
+          },
+          {
+            "icon": "chart",
+            "title": "Real UK cost data",
+            "text": "Used, recon & rebuilt"
+          },
+          {
+            "icon": "shield",
+            "title": "Instant verdict",
+            "text": "Repair vs replace"
+          }
+        ]
       },
       {
-        "label": "Path 2 - Not sure which engine you have? We’ll identify it first → /fault-diagnostic-calculator (the tool includes an engine‑identification step)",
+        "badge": "Path 2",
+        "title": "Not sure which engine you have?",
+        "text": "We'll identify it first.",
+        "button": {
+          "label": "Identify My Engine First",
+          "sub": "Then launch the diagnostic calculator",
+          "href": "/tools/diagnostic-wizard"
+        },
+        "note": {
+          "lead": "Identification is the first step inside the tool.",
+          "text": "We'll pinpoint your exact engine code before running the diagnostics."
+        }
+      }
+    ],
+    "closing": {
+      "title": "Stop guessing. Get the right answer.",
+      "text": "Our calculator compares real repair and replacement costs against your car's value - so you know the financially smarter move.",
+      "button": {
+        "label": "Start Your Verdict Now",
         "href": "/tools/diagnostic-wizard"
       }
-    ]
+    }
   },
   "trustBlock": {
     "h2": "Why F‑Pace Owners Trust jaguarengines.uk",
@@ -819,30 +965,50 @@
         "question": "F‑Pace vs E‑Pace - which is more reliable?",
         "answer": "Both carry a ✅ Safe verdict, but the F‑Pace wins on sheer safety coverage - it has a clean bill of health across every engine variant, while the E‑Pace’s data is more limited. The F‑Pace also has stronger retained values, making it the safer long‑term ownership proposition. Read our full comparison →"
       }
-    ]
+    ],
+    "comparison": {
+      "title": "Need a head-to-head comparison?",
+      "text": "Read our in-depth F‑Pace vs E‑Pace reliability guide.",
+      "button": {
+        "label": "Read the Full Head-to-Head",
+        "href": "/compare"
+      }
+    }
   },
   "closingActionCards": {
     "h2": "Ready to Make a Decision?",
+    "subHeadline": "Everything you need to choose with confidence.\nData. Honesty. Specialists. All in one place.",
     "cards": [
       {
-        "icon": "🔍",
+        "icon": "search",
+        "art": "lineup",
         "title": "Explore F‑Pace Generations",
-        "text": "",
-        "href": "/f-pace"
+        "text": "One generation, eight years, honestly rated.",
+        "cta": "Explore Now",
+        "href": "#generations"
       },
       {
-        "icon": "🩺",
+        "icon": "diagnose",
+        "art": "engine",
         "title": "Diagnose My F‑Pace",
-        "text": "",
-        "href": "/tools/diagnostic-wizard"
+        "text": "Symptoms in, verdict out - value-weighted for your generation.",
+        "cta": "Start Diagnosis",
+        "href": "/tools/diagnostic-wizard",
+        "steps": [
+          "Symptoms",
+          "Engine Code",
+          "Mileage",
+          "History"
+        ]
       },
       {
-        "icon": "🤝",
+        "icon": "specialists",
+        "art": "map",
         "title": "Compare UK Specialists",
-        "text": "",
+        "text": "15+ vetted Jaguar specialists, prices and warranties side-by-side.",
+        "cta": "Compare Specialists",
         "href": "/quote"
       }
-    ],
-    "footerNote": ""
+    ]
   }
 }

@@ -1,362 +1,325 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
-import MStripe from "@/components/reusableComponents/MStripe";
+import { ChartNoAxesCombined, FileText, History, Info, Settings, SteeringWheel } from "@/components/models/brandIcons";
 import { useTheme } from "@/components/shared/themeProvider";
-import HomeIcon from "@/components/home/homeIcons";
-import { carImageFor } from "@/components/shared/carImage";
-import { sectionDescription, sectionTableText, tableHeaderClass } from "@/components/models/sectionTypography";
+import { carImageFor, engineImageFor } from "@/components/shared/carImage";
+import { outsideTags } from "@/components/models/outsideTags";
 
+/*
+ * Model page "How the Engine Range Evolved" (section 9), built from the 1536px reference.
+ *
+ * Header: title (the year span in the silver accent) + copy, the four-item stat strip on the right. Then the
+ * era table: black header; per era a car (name, years, cut-out car), the years, key engines with their
+ * cut-out engine photos, "Why Jaguar Changed" and "Worth Knowing" (info icon); then the data footnote.
+ * Sizes come from the --ev-* tokens in globals.css. Below lg every era becomes a card.
+ */
+
+// Reference column widths at 1536px: Era, Years, Key Engines, Why Jaguar Changed, Worth Knowing.
+const WIDTHS = [300, 141, 341, 322, 334];
 
 function cleanText(text = "") {
   return String(text ?? "")
-    .replaceAll("Ã‚Â£", "\u00a3")
-    .replaceAll("Â£", "\u00a3")
-    .replaceAll("Ã¢â‚¬â€œ", "\u2013")
-    .replaceAll("â€“", "\u2013")
-    .replaceAll("Ã¢â‚¬â€", "\u2014")
-    .replaceAll("â€”", "\u2014")
+    .replaceAll("Â£", "£")
+    .replaceAll("â€“", "–")
+    .replaceAll("â€”", "—")
     .replace(/\s+/g, " ")
     .trim();
 }
 
+// Ranges take a spaced en dash ("2017 – 2019"); " - " separators an em dash.
+function typeset(text = "") {
+  return outsideTags(cleanText(text), (part) =>
+    part.replace(/(\d{4})\s*-\s*(\d{4}|Present)/gi, "$1 – $2").replace(/\s-\s/g, " — "),
+  );
+}
+
+// "How the E-Pace Engine Range Evolved - 2017 to Today" -> "How the E-Pace Engine Range" / "Evolved —" + "2017 to Today"
 function splitTitle(title = "") {
-  const clean = cleanText(title);
-  const dashIndex = clean.lastIndexOf(" - ");
-  if (dashIndex !== -1) {
-    return {
-      main: clean.slice(0, dashIndex).trim(),
-      accent: clean.slice(dashIndex + 3).trim(),
-    };
-  }
-
-  const match = clean.match(/^(.*?)(\d{4}\s+to\s+Today)$/i);
-  return {
-    main: match ? match[1].trim() : clean,
-    accent: match ? match[2] : "",
-  };
+  const match = cleanText(title).match(/^(.*?)\s+[-–—]\s+(.*)$/);
+  if (!match) return { lines: [cleanText(title)], accent: "" };
+  const words = match[1].split(" ");
+  const last = words.pop();
+  return { lines: [words.join(" "), `${last} —`], accent: match[2] };
 }
 
-function eraParts(era = "") {
-  const clean = cleanText(era);
-  const [lead, detail = ""] = clean.split(/\s+\u2014\s+| - /);
-  return { lead: lead || clean, detail };
+// "Launch - Early Ingenium" -> ["Launch —", "Early Ingenium"] (two lines, as in the reference)
+function eraLines(era = "") {
+  const parts = cleanText(era).split(/\s+[-–—]\s+/);
+  if (parts.length > 1) return [`${parts[0]} —`, parts.slice(1).join(" — ")];
+  const amp = cleanText(era).match(/^(.*?&)\s+(.*)$/);
+  return amp ? [amp[1], amp[2]] : [cleanText(era)];
 }
 
-function engineList(value = "") {
+// "AJ200D / 204DTD (diesel), AJ200P / 204PT (petrol)" -> [{ name: "AJ200D / 204DTD", note: "(diesel)" }, …]
+function engines(value = "") {
   return cleanText(value)
-    .split(",")
-    .map((item) => item.trim())
-    .filter(Boolean);
+    .split(/,\s+(?![^()]*\))/)
+    .map((item) => {
+      const match = item.match(/^(.*?)\s*(\([^)]*\))?$/);
+      return { name: typeset(match?.[1] || item), note: match?.[2] || "" };
+    })
+    .filter((item) => item.name);
 }
 
-function buildStats(eras = []) {
-  const years = eras.map((era) => cleanText(era.years)).filter(Boolean);
-  const engineCount = eras.reduce((count, era) => count + engineList(era.keyEngines).length, 0);
-  const firstYear = years[0]?.match(/\d{4}/)?.[0] || "";
-  const lastYear = years[years.length - 1] || "";
-
-  return [
-    {
-      title: `${eras.length || 1} Era${eras.length === 1 ? "" : "s"}`,
-      text: firstYear ? `${firstYear} to Present` : "Tracked generations",
-      icon: "generations",
-    },
-    {
-      title: `${engineCount || ""} Key Engines`,
-      text: "Across the timeline",
-      icon: "engine",
-    },
-    {
-      title: "Hardware Revisions",
-      text: lastYear || "Facelift & updates",
-      icon: "timeline",
-    },
-    {
-      title: "Buyer Focused",
-      text: "What changed & why",
-      icon: "insight",
-    },
-  ];
+// Up to two different engine photos for an era, matched from its engine codes.
+function enginePhotos(value = "") {
+  const photos = [];
+  for (const item of engines(value)) {
+    const photo = engineImageFor(item.name + " " + item.note);
+    if (photo && !photos.includes(photo)) photos.push(photo);
+    if (photos.length === 2) break;
+  }
+  return photos;
 }
 
-function Stats({ eras, isDark }) {
-  const items = buildStats(eras);
+function palette(isDark) {
+  return isDark
+    ? {
+        text: "text-white",
+        muted: "text-white/[0.72]",
+        accent: "bg-[linear-gradient(180deg,#e4e4e1_0%,#9a9a97_100%)] bg-clip-text text-transparent",
+        card: "border-white/[0.16] bg-[rgba(14,16,17,0.92)]",
+        head: "bg-[#2a2b2c] text-white",
+        rule: "border-white/[0.1]",
+      }
+    : {
+        text: "text-[#111210]",
+        muted: "text-[#3d3e3b]",
+        accent: "bg-[linear-gradient(180deg,#8a8b87_0%,#6b6c68_100%)] bg-clip-text text-transparent",
+        card: "border-[#e8e8e5] bg-white shadow-[0_6px_20px_rgba(16,18,16,0.05)]",
+        head: "bg-[#1a1b1a] text-white",
+        rule: "border-[#ececea]",
+      };
+}
 
+/* ---------- Header stats ---------- */
+
+const STAT_ICONS = {
+  eras: (cls) => <History aria-hidden="true" className={cls} />,
+  engines: (cls) => <Settings aria-hidden="true" className={cls} strokeWidth={1.3} />,
+  years: (cls) => <ChartNoAxesCombined aria-hidden="true" className={cls} strokeWidth={1.4} />,
+  drivers: (cls) => <SteeringWheel aria-hidden="true" className={cls} />,
+};
+
+function Stats({ stats = [], tones }) {
+  if (!stats.length) return null;
+  const icon = "block h-10 w-10 lg:h-[var(--ev-stat-icon)] lg:w-[var(--ev-stat-icon)]";
   return (
-    <div className="grid grid-cols-2 gap-px overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-border)] shadow-[0_8px_24px_var(--color-shadow)] md:grid-cols-4 md:gap-0">
-      {items.map((item) => (
-        <div
-          key={item.title}
-          className="flex flex-col items-center justify-center bg-[var(--color-surface-raised)] px-1.5 py-2.5 text-center md:px-4 md:py-3.5"
-        >
-          <span className="flex h-10 w-10 items-center justify-center md:h-14 md:w-14">
-            <HomeIcon name={item.icon} isDark={isDark} className="h-8 w-8 object-contain md:h-11 md:w-11" />
-          </span>
-          <strong className="mt-1.5 text-[12px] leading-tight text-[var(--color-text)] md:text-[15px]">
-            {item.title}
-          </strong>
-          <span className="mt-0.5 text-[11px] leading-tight text-[var(--color-text-muted)] md:text-[13px]">
-            {item.text}
-          </span>
-        </div>
-      ))}
-    </div>
-  );
-}
-
-function EngineList({ engines }) {
-  const items = engineList(engines);
-
-  return (
-    <div className="flex flex-col items-center justify-center gap-1.5 px-2">
-      {items.map((engine) => (
-        <strong
-          key={engine}
-          className={`text-center ${sectionTableText} text-[var(--color-text)]`}
-          dangerouslySetInnerHTML={{ __html: engine }}
-        />
-      ))}
-    </div>
-  );
-}
-
-function DesktopTable({ eras, columns, isDark }) {
-  return (
-    <div className="hidden overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_8px_24px_var(--color-shadow)] md:block">
-      <div className={`grid grid-cols-[19%_10%_26%_22%_23%] text-[14px] font-bold md:text-[15px] ${tableHeaderClass(isDark)}`}>
-        {(columns || []).map((column) => (
-          <div key={column} className="border-r border-white/20 px-4 py-2.5 last:border-r-0 md:px-5 md:py-3">
-            {column}
-          </div>
-        ))}
-      </div>
-      {eras.map((era) => {
-        const title = eraParts(era.era);
-
-        return (
-          <div
-            key={era.era}
-            className="grid grid-cols-[19%_10%_26%_22%_23%] border-t border-[var(--color-border)] text-[var(--color-text)]"
-          >
-            <div className="border-r border-[var(--color-border)] px-4 py-3 md:px-5 md:py-4">
-              <h3 className="text-[17px] font-bold leading-tight text-[var(--color-text)] md:text-[19px]">
-                <span dangerouslySetInnerHTML={{ __html: title.lead }} />
-                {title.detail ? (
-                  <>
-                    <br />
-                    <span
-                      className="text-[var(--color-chrome-bright)]"
-                      dangerouslySetInnerHTML={{ __html: title.detail }}
-                    />
-                  </>
-                ) : null}
-              </h3>
-              <div className="relative mt-2 h-[72px] w-full overflow-hidden rounded-md md:h-[88px]">
-                {era.image ? <Image src={era.image} alt="" fill className="object-contain object-center" sizes="220px" /> : null}
-              </div>
-            </div>
-            <div
-              className={`flex items-center justify-center border-r border-[var(--color-border)] px-3 py-3.5 font-heading text-[1.05rem] font-semibold md:px-4 md:py-4 ${sectionTableText}`}
-            >
-              {cleanText(era.years)}
-            </div>
-            <div className="flex items-center justify-center border-r border-[var(--color-border)] px-3 py-3.5 md:px-4 md:py-4">
-              <EngineList engines={era.keyEngines} />
-            </div>
-            <p
-              className={`border-r border-[var(--color-border)] px-4 py-4 leading-[1.45] text-[var(--color-text)] md:px-6 md:py-5 ${sectionTableText}`}
-              dangerouslySetInnerHTML={{ __html: cleanText(era.whyBmwChanged) }}
-            />
-            <div className="flex gap-3 px-4 py-4 md:px-6 md:py-5">
-              <span
-                className={`mt-1 flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${
-                  isDark ? "bg-white/10" : "bg-[#ececeb]"
-                }`}
-              >
-                <HomeIcon name="note" isDark={isDark} className="h-7 w-7 object-contain" />
-              </span>
-              <p
-                className={`${sectionTableText} leading-[1.45] text-[var(--color-text)]`}
-                dangerouslySetInnerHTML={{ __html: cleanText(era.worthKnowing) }}
-              />
-            </div>
-          </div>
-        );
-      })}
-    </div>
-  );
-}
-
-function MobileDetailRow({ label, icon, children, isDark, bordered = true }) {
-  return (
-    <div
-      className={`overflow-hidden p-3 ${bordered ? "border-b border-[var(--color-border)] last:border-b-0" : ""}`}
+    <ul
+      className={`grid grid-cols-2 rounded-xl border py-2 sm:grid-cols-4 lg:min-h-[var(--ev-stats-h)] xl:w-[var(--ev-stats-w)] xl:shrink-0 ${tones.card} ${tones.text}`}
     >
-      <HomeIcon
-        name={icon}
-        isDark={isDark}
-        className="float-left mr-2.5 mb-1 h-7 w-7 object-contain"
-      />
-      <p className={`leading-[1.45] ${sectionTableText} text-[var(--color-text)]`}>
-        <strong className="font-bold">{label}</strong>{" "}
-        {children}
-      </p>
-    </div>
+      {stats.map((stat) => (
+        <li
+          key={stat.label}
+          className={`flex flex-col items-center justify-center px-2 py-3 text-center even:border-l [&:nth-child(n+3)]:border-t sm:[&:nth-child(n+3)]:border-t-0 sm:[&:not(:first-child)]:border-l ${tones.rule}`}
+        >
+          {(STAT_ICONS[stat.icon] || STAT_ICONS.eras)(icon)}
+          {stat.value ? <p className="mt-2 text-[16px] font-semibold leading-none lg:text-[length:var(--ev-stat-value)]">{stat.value}</p> : null}
+          <p className={`text-[13.5px] font-medium leading-tight lg:text-[length:var(--ev-stat-label)] ${stat.value ? "mt-2" : "mt-[2.1rem]"}`}>{stat.label}</p>
+          <p className={`mt-1 text-[12.5px] leading-tight lg:text-[length:var(--ev-stat-text)] ${tones.muted}`}>{stat.text}</p>
+        </li>
+      ))}
+    </ul>
   );
 }
 
-function MobileAccordion({ eras, isDark }) {
-  const [openIndex, setOpenIndex] = useState(0);
+/* ---------- Era pieces ---------- */
 
+function EraHead({ era, tones }) {
   return (
-    <div className="space-y-3 md:hidden">
-      {eras.map((era, index) => {
-        const open = index === openIndex;
-        const title = eraParts(era.era);
+    <>
+      <h3 className="text-[16px] font-semibold leading-snug lg:text-[length:var(--ev-era)] lg:leading-[var(--ev-era-lh)]">
+        {eraLines(era.era).map((line) => (
+          <span key={line} className="block" dangerouslySetInnerHTML={{ __html: line }} />
+        ))}
+      </h3>
+      <p className={`mt-1.5 text-[13px] lg:text-[length:var(--ev-era-years)] ${tones.muted}`}>{typeset(era.years)}</p>
+    </>
+  );
+}
 
-        return (
-          <article
-            key={era.era}
-            className={`rounded-md border bg-[var(--color-surface-raised)] ${
-              open ? "border-[var(--color-chrome)]" : "border-[var(--color-border)]"
-            }`}
-          >
-            <button
-              type="button"
-              onClick={() => setOpenIndex(open ? -1 : index)}
-              className="flex w-full items-center gap-4 p-4 text-left"
-            >
-              <span className="relative h-[64px] w-[96px] shrink-0 overflow-hidden rounded-md">
-                {era.image ? <Image src={era.image} alt="" fill className="object-contain object-center" sizes="96px" /> : null}
-              </span>
-              <span className="min-w-0 flex-1">
-                <strong className="block text-[18px] leading-tight text-[var(--color-text)]">
-                  {title.lead}
-                  {title.detail ? ` - ${title.detail}` : ""}
-                </strong>
-                <span
-                  className={`mt-1 block ${sectionTableText} text-[var(--color-text-muted)]`}
-                  dangerouslySetInnerHTML={{ __html: cleanText(era.years) }}
-                />
-              </span>
-              <span
-                className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${
-                  open
-                    ? isDark
-                      ? "bg-[var(--color-chrome)] text-[var(--color-page)]"
-                      : "bg-black text-white"
-                    : isDark
-                      ? "bg-white/10"
-                      : "bg-[#ececeb]"
-                }`}
-              >
-                <HomeIcon
-                  name={open ? "note" : "insight"}
-                  isDark={open ? !isDark : isDark}
-                  className="h-6 w-6 object-contain"
-                />
-              </span>
-            </button>
-
-            {open ? (
-              <div className="mx-3 mb-3 overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] md:mx-4 md:mb-4">
-                <MobileDetailRow label="Key Engines" icon="engine" isDark={isDark}>
-                  <span dangerouslySetInnerHTML={{ __html: cleanText(era.keyEngines) }} />
-                </MobileDetailRow>
-                <MobileDetailRow label="Why It Changed" icon="timeline" isDark={isDark}>
-                  <span dangerouslySetInnerHTML={{ __html: cleanText(era.whyBmwChanged) }} />
-                </MobileDetailRow>
-                <MobileDetailRow label="Worth Knowing" icon="note" isDark={isDark} bordered={false}>
-                  <span dangerouslySetInnerHTML={{ __html: cleanText(era.worthKnowing) }} />
-                </MobileDetailRow>
-              </div>
-            ) : null}
-          </article>
-        );
-      })}
+function CarPhoto({ src, className = "" }) {
+  if (!src) return null;
+  return (
+    <div className={`relative ${className}`}>
+      <div aria-hidden="true" className="absolute inset-x-[12%] bottom-[3%] h-[12%] rounded-[50%] bg-black/25 blur-md" />
+      <Image src={src} alt="" fill sizes="(min-width: 1024px) 230px, 45vw" className="object-contain object-bottom" />
     </div>
   );
 }
+
+function Engines({ value, align = "center" }) {
+  const items = engines(value);
+  const photos = enginePhotos(value);
+  return (
+    <div className={`flex flex-col ${align === "center" ? "items-center text-center" : "items-start"}`}>
+      <ul className="text-[14px] leading-[1.45] lg:text-[length:var(--ev-engine)]">
+        {items.map((item) => (
+          <li key={item.name + item.note}>
+            <strong className="font-semibold" dangerouslySetInnerHTML={{ __html: item.name }} />
+            {item.note ? <span className="font-normal"> {item.note}</span> : null}
+          </li>
+        ))}
+      </ul>
+      {photos.length ? (
+        <div className="mt-2 flex items-end gap-4 lg:mt-3 lg:gap-[calc(var(--ev-cell-px)*1.3)]">
+          {photos.map((photo) => (
+            <span key={photo} className="relative block h-[72px] w-[90px] lg:h-[var(--ev-engine-h)] lg:w-[calc(var(--ev-engine-h)*1.1)]">
+              <Image src={photo} alt="" fill sizes="110px" className="object-contain object-bottom" />
+            </span>
+          ))}
+        </div>
+      ) : null}
+    </div>
+  );
+}
+
+function WorthKnowing({ text, tones }) {
+  if (!text) return null;
+  return (
+    <div className="flex items-start gap-4 lg:gap-[calc(var(--ev-cell-px)*0.95)]">
+      <Info aria-hidden="true" className="mt-0.5 h-8 w-8 shrink-0 lg:h-[var(--ev-info)] lg:w-[var(--ev-info)]" strokeWidth={1.3} />
+      <p className={`text-[13.5px] leading-[1.6] lg:text-[length:var(--ev-cell)] lg:leading-[var(--ev-cell-lh)] ${tones.text}`} dangerouslySetInnerHTML={{ __html: typeset(text) }} />
+    </div>
+  );
+}
+
+/* ---------- Table (lg+) ---------- */
+
+function EraTable({ eras, columns, tones }) {
+  const total = WIDTHS.reduce((sum, width) => sum + width, 0);
+  const cell = "px-[var(--ev-cell-px)] align-middle";
+  return (
+    <div className={`hidden overflow-hidden rounded-xl border lg:block ${tones.card} ${tones.text}`}>
+      <table className="w-full table-fixed border-collapse">
+        <colgroup>
+          {WIDTHS.map((width, index) => (
+            <col key={index} style={{ width: `${(width / total) * 100}%` }} />
+          ))}
+        </colgroup>
+        <thead>
+          <tr className={tones.head}>
+            {columns.map((column, index) => (
+              <th
+                key={column}
+                scope="col"
+                className={`h-[var(--ev-th-h)] px-[var(--ev-cell-px)] text-[length:var(--ev-th)] font-medium ${index === 0 ? "text-left" : "border-l border-white/[0.18] text-center"}`}
+              >
+                {column}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {eras.map((era, index) => (
+            <tr key={era.era} className={index > 0 ? `border-t ${tones.rule}` : ""}>
+              <th scope="row" className={`${cell} h-[var(--ev-row-h)] py-[calc(var(--ev-cell-px)*1.05)] text-left align-top font-normal`}>
+                <EraHead era={era} tones={tones} />
+                <CarPhoto src={era.image} className="ml-[8%] mt-1 h-[var(--ev-car-h)] w-[88%]" />
+              </th>
+              <td className={`border-l px-2 text-center align-middle text-[length:var(--ev-era-years)] ${tones.rule}`}>{typeset(era.years)}</td>
+              <td className={`${cell} border-l py-[calc(var(--ev-cell-px)*0.8)] ${tones.rule}`}>
+                <Engines value={era.keyEngines} />
+              </td>
+              <td className={`${cell} border-l ${tones.rule}`}>
+                <p className="text-[length:var(--ev-cell)] leading-[var(--ev-cell-lh)]" dangerouslySetInnerHTML={{ __html: typeset(era.whyBmwChanged || era.whyChanged) }} />
+              </td>
+              <td className={`${cell} border-l ${tones.rule}`}>
+                <WorthKnowing text={era.worthKnowing} tones={tones} />
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+/* ---------- Cards (phones / tablets) ---------- */
+
+function EraCards({ eras, columns, tones }) {
+  return (
+    <ul className="grid gap-4 md:grid-cols-2 lg:hidden">
+      {eras.map((era) => (
+        <li key={era.era} className={`overflow-hidden rounded-xl border ${tones.card} ${tones.text}`}>
+          <div className="grid grid-cols-[minmax(0,1fr)_46%] items-end gap-x-2 px-4 pt-4">
+            <div className="self-start pb-3">
+              <EraHead era={era} tones={tones} />
+            </div>
+            <CarPhoto src={era.image} className="h-[86px] w-full" />
+          </div>
+          <div className={`border-t px-4 py-4 ${tones.rule}`}>
+            <p className={`mb-2 text-[11.5px] font-medium uppercase tracking-[0.04em] ${tones.muted}`}>{columns[2]}</p>
+            <Engines value={era.keyEngines} align="start" />
+          </div>
+          <div className={`border-t px-4 py-4 ${tones.rule}`}>
+            <p className={`mb-1.5 text-[11.5px] font-medium uppercase tracking-[0.04em] ${tones.muted}`}>{columns[3]}</p>
+            <p className="text-[13.5px] leading-[1.6]" dangerouslySetInnerHTML={{ __html: typeset(era.whyBmwChanged || era.whyChanged) }} />
+          </div>
+          {era.worthKnowing ? (
+            <div className={`border-t px-4 py-4 ${tones.rule}`}>
+              <p className={`mb-2 text-[11.5px] font-medium uppercase tracking-[0.04em] ${tones.muted}`}>{columns[4]}</p>
+              <WorthKnowing text={era.worthKnowing} tones={tones} />
+            </div>
+          ) : null}
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+/* ---------- Section ---------- */
 
 export default function EngineEvolution({ data }) {
   const { theme } = useTheme();
-  if (!data) return null;
+  if (!data?.eras?.length) return null;
 
   const isDark = theme === "dark";
+  const tones = palette(isDark);
   const title = splitTitle(data.h2);
-  const eras = (data.eras || []).map((era) => ({ ...era, image: era.image || carImageFor(era.era, era.years, data.h2) }));
-  const sectionBg = isDark ? "bg-[var(--color-page)]" : "bg-[var(--color-page)]";
+  const columns = data.columns?.length === 5 ? data.columns : ["Era", "Years", "Key Engines", "Why Jaguar Changed", "Worth Knowing"];
+  const eras = data.eras.map((era) => ({ ...era, image: era.image || carImageFor(era.era, era.years, data.h2) }));
 
   return (
-    <section className={`overflow-x-hidden ${sectionBg} text-[var(--color-text)]`}>
-      <div className={`relative overflow-hidden ${sectionBg}`}>
-        <div className="absolute inset-y-0 right-0 w-[62%] md:w-[48%]">
-          <Image
-            src="/home-image/sec2-bg.webp"
-            alt=""
-            fill
-            className="object-cover object-right"
-            sizes="(max-width: 768px) 62vw, 48vw"
-          />
-          <div
-            className={
-              isDark
-                ? "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(11,12,12,0.82)_34%,rgba(11,12,12,0.18)_100%)]"
-                : "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(243,243,241,0.88)_34%,rgba(243,243,241,0.18)_100%)]"
-            }
-          />
-        </div>
-
-        <div className="relative mx-auto w-full max-w-8xl px-4 pb-3 pt-5 md:px-6 md:pb-3.5 md:pt-7 lg:px-8">
-          <div className="grid gap-6 md:grid-cols-[minmax(0,1fr)_600px] md:items-start">
-            <div>
-              <h2 className="max-w-[760px] text-[29px] font-bold leading-[1.08] tracking-normal md:text-[45px]">
-                <span dangerouslySetInnerHTML={{ __html: title.main }} />
-                {title.accent ? (
-                  <>
-                    <br />
-                    <span
-                      className="text-[var(--color-chrome-bright)]"
-                      dangerouslySetInnerHTML={{ __html: title.accent }}
-                    />
-                  </>
-                ) : null}
-              </h2>
-              <div className="mt-3">
-                <MStripe />
-              </div>
-              <p className={`mt-3 max-w-[660px] ${sectionDescription} text-[var(--color-text-muted)]`}>
-                {data.subHeadline
-                  ? cleanText(data.subHeadline)
-                  : "Follow each era of this model's engines  what launched, what was revised, and what buyers need to know before committing."}
-              </p>
-            </div>
-            <Stats eras={eras} isDark={isDark} />
+    <section id="engine-evolution" className="model-evo relative overflow-hidden bg-[var(--color-page)] text-[var(--color-text)]">
+      <div className="mx-auto w-full max-w-[1546px] px-4 pb-12 pt-10 sm:px-6 lg:px-[var(--ev-px)] lg:pb-[var(--ev-pb)] lg:pt-[var(--ev-pt)]">
+        <div className="flex flex-col gap-5 xl:flex-row xl:items-start xl:justify-between xl:gap-10">
+          <div className="min-w-0 xl:pt-[calc(var(--ev-title)*0.3)]">
+            {/* Reference break ("…Engine Range" / "Evolved — 2017 to Today") from lg, when line one is short
+                enough to hold; otherwise (phones, long names like "I-Pace Drive Unit") the title flows. */}
+            <h2 className={`model-evo-title ${tones.text}`}>
+              <span className={title.lines[0].length <= 32 ? "lg:block" : ""} dangerouslySetInnerHTML={{ __html: `${title.lines[0]} ` }} />
+              {title.lines[1] ? (
+                <span>
+                  <span dangerouslySetInnerHTML={{ __html: title.lines[1] }} />{" "}
+                  {title.accent ? <span className={`whitespace-nowrap ${tones.accent}`}>{title.accent}</span> : null}
+                </span>
+              ) : null}
+            </h2>
+            {data.subHeadline ? (
+              <p
+                className={`mt-3 max-w-[480px] text-[15px] leading-[1.6] lg:mt-[var(--ev-desc-mt)] lg:text-[length:var(--ev-desc)] lg:leading-[var(--ev-desc-lh)] ${tones.text}`}
+                dangerouslySetInnerHTML={{ __html: typeset(data.subHeadline) }}
+              />
+            ) : null}
           </div>
-        </div>
-      </div>
-
-      <div className="mx-auto w-full min-w-0 max-w-8xl px-4 pb-5 pt-2 md:px-6 md:pb-6 md:pt-2.5 lg:px-8">
-        <div className="mt-2">
-          <DesktopTable eras={eras} columns={data.columns} isDark={isDark} />
-          <MobileAccordion eras={eras} isDark={isDark} />
+          <Stats stats={data.stats} tones={tones} />
         </div>
 
-        <div className="mt-3 flex max-w-[780px] items-center gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] px-4 py-2.5 text-[14px] text-[var(--color-text-muted)] md:px-5 md:py-3 md:text-[15px]">
-          <span
-            className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${
-              isDark ? "bg-white/10" : "bg-[#ececeb]"
-            }`}
+        <div className="mt-6 lg:mt-[var(--ev-table-mt)]">
+          <EraTable eras={eras} columns={columns} tones={tones} />
+          <EraCards eras={eras} columns={columns} tones={tones} />
+        </div>
+
+        {data.footnote ? (
+          <div
+            className={`mt-4 flex items-center gap-4 rounded-xl border px-4 py-3 lg:mt-[var(--ev-foot-mt)] lg:min-h-[var(--ev-foot-h)] lg:px-[calc(var(--ev-cell-px)*0.9)] lg:py-2 ${tones.card} ${tones.text}`}
           >
-            <HomeIcon name="database" isDark={isDark} className="h-6 w-6 object-contain" />
-          </span>
-          <p>
-            Engine reliability insights and failure patterns are based on verified UK enquiry data.{" "}
-            <span className="text-[var(--color-chrome-bright)]">[JAG-VERIFIED]</span>
-          </p>
-        </div>
+            <FileText aria-hidden="true" className="h-7 w-7 shrink-0" strokeWidth={1.3} />
+            <p className={`text-[12.5px] leading-[1.55] lg:max-w-[620px] lg:text-[length:var(--ev-foot)] ${tones.muted}`}>{cleanText(data.footnote)}</p>
+          </div>
+        ) : null}
       </div>
     </section>
   );
