@@ -1,4 +1,5 @@
 import {
+  carImageFor,
   carKeyFor,
   carModelFor,
   createCarPicker,
@@ -41,12 +42,26 @@ export function withModelPageImages(data) {
       model,
       heroCar: hero ? { src: hero.src, width: hero.width, height: hero.height } : null,
       heroScene: hero?.scene || null,
+      // Art-directed light/dark scenes (already monochrome), when the model has them.
+      heroThemedScenes: hero?.themedScenes || null,
     };
   }
 
   if (out.ownershipVerdict) {
     const [image] = pick([[out.ownershipVerdict.h2]]);
-    out.ownershipVerdict = { ...out.ownershipVerdict, image };
+    // Art-directed light/dark scene behind the verdict (E-Pace); other models show the car photo.
+    out.ownershipVerdict = {
+      ...out.ownershipVerdict,
+      // No pool photo (e.g. the I-Pace): fall back to the model's own hero cut-out.
+      image: image || hero?.src || null,
+      scenes: hero?.verdictScenes || null,
+    };
+  }
+
+  if (out.atAGlance) {
+    // Art-directed light/dark scene (E-Pace); other models stand their own photo in Jaguar's scene.
+    const [image] = hero?.glanceScenes ? [null] : pick([[out.atAGlance.h2]]);
+    out.atAGlance = { ...out.atAGlance, image: image || null, scenes: hero?.glanceScenes || null };
   }
 
   if (out.generations?.cards) {
@@ -57,7 +72,8 @@ export function withModelPageImages(data) {
   if (out.editorialPullQuote) {
     const quote = out.editorialPullQuote;
     const [image] = pick([[quote.title, quote.quote]], { view: "side" });
-    out.editorialPullQuote = { ...quote, image };
+    // E-Pace: the reference photo (car on the road, skyline behind); other models: their side-view photo.
+    out.editorialPullQuote = { ...quote, image, scene: hero?.quoteScene || null };
   }
 
   if (out.replacementCosts?.tables) {
@@ -85,8 +101,17 @@ export function withModelPageImages(data) {
   }
 
   if (out.calculatorCta) {
-    const [image] = pick([[out.calculatorCta.h2]]);
-    out.calculatorCta = { ...out.calculatorCta, image };
+    // Front three-quarter photo (the reference's direction); E-Pace: the reference scene, light + dark.
+    // Always a front three-quarter shot (file names end in "-45"); reuse one if the page has used them all.
+    const [picked] = pick([[out.calculatorCta.h2]], { view: "45" });
+    const image = picked && /-45\.webp$/.test(picked) ? picked : carImageFor(out.calculatorCta.h2) || picked;
+    out.calculatorCta = { ...out.calculatorCta, image, scenes: hero?.calculatorScenes || null };
+  }
+
+  if (out.trustBlock) {
+    // E-Pace: the reference scene (light + dark); other models: a front three-quarter photo in Jaguar's scene.
+    const picked = carImageFor(out.trustBlock.h2) || null;
+    out.trustBlock = { ...out.trustBlock, image: picked, scenes: hero?.trustScenes || null };
   }
 
   if (out.closingActionCards) {
@@ -94,6 +119,8 @@ export function withModelPageImages(data) {
       ...out.closingActionCards,
       heroCar: hero ? { src: hero.src, width: hero.width, height: hero.height } : null,
       engineImage: modelEngineImage(model),
+      // Header scene: a front three-quarter photo of the model (the reference shows one car, front-left).
+      sceneCar: carImageFor(out.closingActionCards.h2, data.hero?.h1) || null,
     };
   }
 

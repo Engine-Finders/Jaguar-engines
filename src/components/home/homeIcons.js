@@ -169,6 +169,34 @@ const FILES = {
   diesel: "Diesel-01.png",
   "suv-body": "SUV-01.png",
   dealer: "Dealer-01.png",
+  // IBS icon set additions (Nov 2026)
+  faq: "Faq Icon-01.png",
+  phone: "Phone Icon-01.png",
+  "call-specialist": "Call a specialist Icon-01.png",
+  guidance: "Get Guidance Icon-01.png",
+  impartial: "Independent and impartial Icon-01.png",
+  "transparent-data": "Transparent data icon-01.png",
+  "chain-link": "Chain icon-01.png",
+  flywheel: "Flywheel Icon-01.png",
+  hpfp: "HPFP icon-01.png",
+  hill: "Hill Icon-01.png",
+  "rod-bearing": "Rod Bearing-01.png",
+  "valve-stem": "Valve stem-01.png",
+  "check-watch-2": "Check Watch 2-01.png",
+  "best-family-2": "Best Family Icon 2-01.png",
+  chip: "1-01.png",
+  "steering-wheel": "2-01.png",
+  "knowledge-gear": "Knowledge centre icon-01.png",
+  "number-1": "Number 1-01.png",
+  "number-2": "Number 2-01.png",
+  "number-3": "Number 3-01.png",
+  "number-4": "Number 4-01.png",
+  "number-5": "Number 5-01.png",
+  "number-6": "Number 6-01.png",
+  "number-7": "Numbe 7-01.png",
+  "number-8": "Number 8-01.png",
+  "number-9": "Number 9-01.png",
+  "number-10": "Number 10-01.png",
 };
 
 // Silver folder uses a few different filenames
@@ -180,6 +208,15 @@ const SILVER_FILES = {
 // enough to read at a glance while keeping a little breathing room inside circles and
 // badges. The 16px floor keeps the smallest boxes legible.
 const GLYPH_SCALE = "h-[65%] w-[65%] min-h-4 min-w-4";
+
+/** Public URL of an icon's WebP for the given theme (null for an unknown key). */
+export function homeIconSrc(name, isDark) {
+  const file = FILES[name];
+  if (!file) return null;
+  const folder = isDark ? "Jaguar Silver" : "Jaguar Black";
+  const resolved = (isDark ? SILVER_FILES[file] || file : file).replace(/\.png$/i, ".webp");
+  return `/${encodeURIComponent(folder)}/${encodeURIComponent(resolved)}`;
+}
 
 /** True when `name` is a known icon key. */
 export function hasHomeIcon(name) {

@@ -288,6 +288,7 @@
   },
   "atAGlance": {
     "h2": "X-Type at a Glance",
+    "subHeadline": "Everything you need to know about the Jaguar X-Type in one quick-reference overview.",
     "rows": [
       {
         "metric": "Generations",
@@ -360,6 +361,28 @@
   "engineDatabase": {
     "h2": "X-Type Engine Codes - The Complete Database",
     "subHeadline": "Four engines across one generation - verified factory codes, real UK enquiry data, and honest reliability ratings.",
+    "stats": [
+      {
+        "icon": "engine",
+        "value": "4",
+        "label": "Engine Codes Tracked"
+      },
+      {
+        "icon": "shield",
+        "value": "1",
+        "label": "Generation Covered"
+      },
+      {
+        "icon": "chart",
+        "value": "120+",
+        "label": "Enquiries in 2025"
+      },
+      {
+        "icon": "pound",
+        "value": "£1.8K–£5.8K",
+        "label": "Typical Recon Cost Range"
+      }
+    ],
     "columns": [
       "Engine Code",
       "Family",
@@ -424,13 +447,24 @@
     ],
     "confidenceScore": {
       "title": "",
-      "text": ""
+      "paragraphs": [],
+      "verification": []
+    },
+    "methodologyLink": {
+      "label": "How we collect engine data",
+      "href": "/data/methodology"
     },
     "dataCorrections": []
   },
   "commonProblems": {
     "h2": "Common X-Type Engine Problems",
     "subHeadline": "The failures that actually occur - from cooling system leaks to the early diesel's timing chain concerns.",
+    "stat": {
+      "icon": "users",
+      "value": "120+",
+      "label": "X-Type engine enquiries analysed in 2025",
+      "tag": "[JAG-VERIFIED]"
+    },
     "columns": [
       "#",
       "Problem",
@@ -549,6 +583,11 @@
   },
   "marketIntelligence": {
     "h2": "X-Type Market Intelligence - What 120 UK Owners Told Us in 2025",
+    "stat": {
+      "value": "120+",
+      "label": "Total Enquiries in 2025",
+      "tag": "[JAG-VERIFIED]"
+    },
     "signals": [
       {
         "signal": "Total X-Type enquiries",
@@ -572,7 +611,7 @@
       }
     ],
     "insights": [
-      "\"Interesting insight: Diesel X-Types generate fewer enquiries than petrols, but the enquiries they do generate are much more likely to be catastrophic - the AJ200D's timing chain concerns and the car's low value often combine to make replacement uneconomical.\"",
+      "Interesting insight: Diesel X-Types generate fewer enquiries than petrols, but the enquiries they do generate are much more likely to be catastrophic - the AJ200D's timing chain concerns and the car's low value often combine to make replacement uneconomical.\"",
       "The petrol V6 engines account for 70% of enquiries, with cooling system failures (thermostat housing, water pump, radiator) being the single most common complaint.",
       "With typical X-Type values now sitting under £3,000 for most examples, replacement cost consistently exceeds 60% of vehicle value across all engine variants - making the X-Type one of the highest-risk Jaguars to own in 2025."
     ],
@@ -580,7 +619,8 @@
   },
   "editorialPullQuote": {
     "title": "The One Thing We'd Tell Every X-Type Buyer",
-    "quote": "Buy the 2.5 V6, buy it with cash, and don't fall in love with it. The X-Type is a Mondeo under the skin - and when it breaks, you'll be paying Jaguar prices to fix a Ford. At under £3,000, it's a disposable car, not a keeper. End of Sections 1-7 for Jaguar X-Type. Ready for Sections 8-14. Jaguar X-Type - Sections 8-14"
+    "quote": "Buy the 2.5 V6, buy it with cash, and don't fall in love with it. The X-Type is a Mondeo under the skin - and when it breaks, you'll be paying Jaguar prices to fix a Ford. At under £3,000, it's a disposable car, not a keeper.",
+    "label": "Editorial pull-quote"
   },
   "replacementCosts": {
     "h2": "X-Type Engine Replacement Costs - By Generation",
@@ -599,15 +639,44 @@
         "rows": []
       }
     ],
-    "figuresNote": "Labour estimate: Fitting an X-Type engine typically takes 8-14 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [JAG-QUOTE]. The X-Type rule - check the value before the engine: An X-Type worth £2,000-£3,000 with a failed AJ200D diesel requiring a £2,500-£5,800 recon is sitting at 85-125% of the car's value - well above our 60% Jaguar scrap threshold. Even the cheaper petrol V6 recon at £1,800-£3,500 represents 60-120% of the car's worth on lower-value examples. We'd tell most owners to scrap it, get a valuation, and put the money towards a newer car rather than repair. This is the model where \"repair vs replace\" stops being a financial decision and becomes a question of sentiment - and sentiment doesn't pay garage bills. Use our diagnostic tool below to run the numbers for your specific car.",
-    "labourEstimate": "Fitting an X-Type engine typically takes 8-14 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [JAG-QUOTE]. The X-Type rule - check the value before the engine: An X-Type worth £2,000-£3,000 with a failed AJ200D diesel requiring a £2,500-£5,800 recon is sitting at 85-125% of the car's value - well above our 60% Jaguar scrap threshold. Even the cheaper petrol V6 recon at £1,800-£3,500 represents 60-120% of the car's worth on lower-value examples. We'd tell most owners to scrap it, get a valuation, and put the money towards a newer car rather than repair. This is the model where \"repair vs replace\" stops being a financial decision and becomes a question of sentiment - and sentiment doesn't pay garage bills. Use our diagnostic tool below to run the numbers for your specific car.",
-    "economicsBox": {
-      "title": "",
-      "text": ""
+    "labourEstimate": "Fitting an X-Type engine typically takes 8-14 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [JAG-QUOTE].",
+    "rule": {
+      "title": "The X-Type Rule - Check the Value Before the Engine",
+      "paragraphs": [
+        "An X-Type worth £2,000-£3,000 with a failed AJ200D diesel requiring a £2,500-£5,800 recon is sitting at 85-125% of the car's value - well above our 60% Jaguar scrap threshold. Even the cheaper petrol V6 recon at £1,800-£3,500 represents 60-120% of the car's worth on lower-value examples.",
+        "We'd tell most owners to scrap it, get a valuation, and put the money towards a newer car rather than repair. This is the model where \"repair vs replace\" stops being a financial decision and becomes a question of sentiment - and sentiment doesn't pay garage bills. Use our diagnostic tool below to run the numbers for your specific car."
+      ]
     }
   },
   "engineEvolution": {
     "h2": "How the X-Type Engine Range Evolved - 2001 to 2009",
+    "subHeadline": "From launch to the final powertrains, explore how engineering, emissions and performance shaped every era of X-Type engines.",
+    "stats": [
+      {
+        "icon": "eras",
+        "value": "5",
+        "label": "Engine Eras",
+        "text": "2001 to 2009"
+      },
+      {
+        "icon": "engines",
+        "value": "1",
+        "label": "Key Engine Code",
+        "text": "AJ200D"
+      },
+      {
+        "icon": "years",
+        "value": "8",
+        "label": "Years of Engineering",
+        "text": "Innovation & Progress"
+      },
+      {
+        "icon": "drivers",
+        "value": "",
+        "label": "Built for Drivers",
+        "text": "Reliability + Dynamics"
+      }
+    ],
     "columns": [
       "Era",
       "Years",
@@ -651,10 +720,34 @@
         "whyBmwChanged": "Jaguar discontinued the X-Type to focus on the XF and XJ - the compact executive segment was abandoned until the XE arrived in 2015",
         "worthKnowing": "The X-Type was the last Jaguar built on a Ford platform - a link to the Ford ownership era that ended in 2008"
       }
-    ]
+    ],
+    "footnote": "All engine reliability insights and failure patterns are based on 120+ verified X-Type enquiries in 2025. Data covers the UK market. [JAG-VERIFIED]"
   },
   "whoShouldBuy": {
     "h2": "Who Should Buy an X-Type?",
+    "subHeadline": "Different buyers, different priorities. Here's our verdict on who the X-Type is perfect for - and who should think twice.",
+    "proof": [
+      {
+        "icon": "users",
+        "title": "Built for Real Life",
+        "text": "Practical. Powerful. Proven."
+      },
+      {
+        "icon": "shield",
+        "title": "Data-Backed Ratings",
+        "text": "120+ UK enquiries analysed in 2025."
+      },
+      {
+        "icon": "award",
+        "title": "Honest Verdicts",
+        "text": "No hype. Just the truth about ownership."
+      },
+      {
+        "icon": "wheel",
+        "title": "Buyer-Focused",
+        "text": "Find the right X-Type for your needs."
+      }
+    ],
     "columns": [
       "Buyer Profile",
       "Rating",
@@ -686,21 +779,74 @@
         "rating": "★★☆☆☆",
         "verdict": "It's the cheapest way into a Jaguar badge - but it's also the least Jaguar-like Jaguar. The Mondeo underpinnings are obvious when you drive it back-to-back with an XF or XJ. Buy it for the badge, but know you're not getting the full Jaguar experience."
       }
-    ]
+    ],
+    "realTalk": {
+      "lead": "Real talk.",
+      "text": "The right X-Type for you depends on your budget, your mileage, and your patience for maintenance. Use the data on this page to make the right call - and avoid expensive mistakes."
+    },
+    "cta": {
+      "label": "Explore X-Type Engines",
+      "href": "#engine-database"
+    }
   },
   "calculatorCta": {
     "h2": "Can I Repair My X-Type Engine - or Should I Replace It?",
     "intro": "Your X-Type is worth £1,500-£5,000 on today's market. That £2,500-£5,800 recon cost sits at a critical threshold - the difference between a financially sensible repair and a car you scrap. Use our calculator to get a personalised verdict based on your actual vehicle value and symptoms.",
+    "smartNote": {
+      "lead": "The smarter way to decide:",
+      "text": "Get a personalised repair-vs-replace verdict using real UK cost data."
+    },
     "paths": [
       {
-        "label": "Path 1 - Know your engine? Launch the Jaguar calculator with X-Type pre-selected",
-        "href": "jaguarengines.uk/#engine-calculator?model=x-type"
+        "badge": "Path 1",
+        "title": "Know your engine?",
+        "text": "Launch the Jaguar calculator with X-Type pre-selected.",
+        "button": {
+          "label": "Launch X-Type Diagnostic Calculator",
+          "sub": "X-Type pre-selected",
+          "href": "/tools/diagnostic-wizard"
+        },
+        "features": [
+          {
+            "icon": "check",
+            "title": "X-Type pre-selected",
+            "text": "All variants covered"
+          },
+          {
+            "icon": "chart",
+            "title": "Real UK cost data",
+            "text": "Used, recon & rebuilt"
+          },
+          {
+            "icon": "shield",
+            "title": "Instant verdict",
+            "text": "Repair vs replace"
+          }
+        ]
       },
       {
-        "label": "Path 2 - Not sure which engine you have? We'll identify it first → jaguarengines.uk/#engine-calculator?model=x-type (identification happens as step one inside the tool)",
-        "href": "/tools/registration-lookup"
+        "badge": "Path 2",
+        "title": "Not sure which engine you have?",
+        "text": "We'll identify it first.",
+        "button": {
+          "label": "Identify My Engine First",
+          "sub": "Then launch the diagnostic calculator",
+          "href": "/tools/registration-lookup"
+        },
+        "note": {
+          "lead": "Identification is the first step inside the tool.",
+          "text": "We'll pinpoint your exact engine code before running the diagnostics."
+        }
       }
-    ]
+    ],
+    "closing": {
+      "title": "Stop guessing. Get the right answer.",
+      "text": "Our calculator compares real repair and replacement costs against your car's value - so you know the financially smarter move.",
+      "button": {
+        "label": "Start Your Verdict Now",
+        "href": "/tools/diagnostic-wizard"
+      }
+    }
   },
   "trustBlock": {
     "h2": "Why X-Type Owners Trust jaguarengines.uk",
@@ -763,57 +909,57 @@
       {
         "id": 7,
         "question": "How do I find my X-Type engine code?",
-        "answer": "Your X-Type's engine code is stamped on the engine block (visible from the front, near the timing cover) and listed on the VIN plate under the bonnet. The code also appears in your service documentation. The codes used in this guide are:"
-      },
-      {
-        "id": 2,
-        "question": "0 V6 - AJ-V6 (Ford-sourced 2.0)",
-        "answer": ""
-      },
-      {
-        "id": 2,
-        "question": "5 V6 - AJ-V6 (Ford-sourced 2.5)",
-        "answer": ""
-      },
-      {
-        "id": 3,
-        "question": "0 V6 - AJ-V6 (Ford-sourced 3.0)",
-        "answer": ""
-      },
-      {
-        "id": 2,
-        "question": "0 Diesel - AJ200D (early Ingenium derivative)",
-        "answer": "Not sure which code you have? Use our identification tool or contact one of our 15+ vetted Jaguar specialists."
+        "answer": "Your X-Type's engine code is stamped on the engine block (visible from the front, near the timing cover) and listed on the VIN plate under the bonnet. The code also appears in your service documentation. The codes used in this guide are: 2.0 V6 - AJ-V6 (Ford-sourced 2.0), 2.5 V6 - AJ-V6 (Ford-sourced 2.5), 3.0 V6 - AJ-V6 (Ford-sourced 3.0) and 2.0 Diesel - AJ200D (early Ingenium derivative). Not sure which code you have? Use our identification tool or contact one of our 15+ vetted Jaguar specialists."
       },
       {
         "id": 8,
         "question": "X-Type vs S-Type - which is more reliable?",
         "answer": "The S-Type is the more expensive, older-generation Jaguar (based on the Lincoln LS platform) while the X-Type is the cheaper, Mondeo-derived model. In our data, the X-Type's petrol V6 engines actually score slightly higher on reliability than the S-Type's AJ126 V6 and <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> V8 - but the X-Type's much lower vehicle values mean replacement cost is more likely to exceed the car's worth. The S-Type carries a higher base value, making repair more viable on a £5,000+ example. Read the full comparison: X-Type vs S-Type →"
       }
-    ]
+    ],
+    "comparison": {
+      "title": "Need a head-to-head comparison?",
+      "text": "Read our in-depth X-Type vs S-Type reliability guide.",
+      "button": {
+        "label": "Read the Full Head-to-Head",
+        "href": "/compare"
+      }
+    }
   },
   "closingActionCards": {
     "h2": "Ready to Make a Decision?",
+    "subHeadline": "Everything you need to choose with confidence.\nData. Honesty. Specialists. All in one place.",
     "cards": [
       {
-        "icon": "🔍",
-        "title": "Explore X-Type Generations → Compare the facelift and pre-facelift cars side-by-side.",
-        "text": "",
-        "href": "/compare"
+        "icon": "search",
+        "art": "lineup",
+        "title": "Explore X-Type Generations",
+        "text": "One generation, eight years, honestly rated.",
+        "cta": "Explore Now",
+        "href": "#generations"
       },
       {
-        "icon": "🩺",
-        "title": "Diagnose My X-Type → Run the calculator and find out if your car is worth repairing.",
-        "text": "",
-        "href": "/tools/diagnostic-wizard"
+        "icon": "diagnose",
+        "art": "engine",
+        "title": "Diagnose My X-Type",
+        "text": "Symptoms in, verdict out - value-weighted for your generation.",
+        "cta": "Start Diagnosis",
+        "href": "/tools/diagnostic-wizard",
+        "steps": [
+          "Symptoms",
+          "Engine Code",
+          "Mileage",
+          "History"
+        ]
       },
       {
-        "icon": "🤝",
-        "title": "Compare UK Specialists → Get quotes from 15+ vetted Jaguar specialists in minutes.",
-        "text": "",
+        "icon": "specialists",
+        "art": "map",
+        "title": "Compare UK Specialists",
+        "text": "15+ vetted Jaguar specialists, prices and warranties side-by-side.",
+        "cta": "Compare Specialists",
         "href": "/quote"
       }
-    ],
-    "footerNote": ""
+    ]
   }
 }
