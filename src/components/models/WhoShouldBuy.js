@@ -2,241 +2,267 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import MStripe from "@/components/reusableComponents/MStripe";
+import { ArrowRight, Star, StarHalf } from "lucide-react";
+import { Award, BriefcaseBusiness, Caravan, Clock, Crown, Gauge, Gem, Info, PiggyBank, Shield, ShieldCheck, UsersRound, SteeringWheel } from "@/components/models/brandIcons";
 import { useTheme } from "@/components/shared/themeProvider";
-import HomeIcon from "@/components/home/homeIcons";
-import { buyerIconFor } from "@/components/shared/labelIcons";
+import CarOnBackground from "@/components/shared/CarOnBackground";
 import { carImageFor } from "@/components/shared/carImage";
-import { sectionBody, sectionDescription, sectionTableText, tableHeaderClass } from "@/components/models/sectionTypography";
+import { outsideTags } from "@/components/models/outsideTags";
 
-const proofItems = [
-  { title: "Built for Real Life", text: "Practical. Powerful. Proven.", icon: "best-family" },
-  { title: "Data-Backed Ratings", text: "UK enquiries analysed in 2025.", icon: "chart" },
-  { title: "Honest Verdicts", text: "No hype. Just the truth about ownership.", icon: "scale" },
-  { title: "Buyer-Focused", text: "Find the right model for your needs.", icon: "safest-buy" },
-];
+/*
+ * Model page "Who Should Buy" (section 10), built from the reference (drawn at 1402px; tokens are scaled to
+ * 1536px). Header: title + copy, the four-item proof strip on the right. Then the buyer table: black header;
+ * per buyer a photo, an icon circle and the profile, the star rating and our verdict; then the "Real talk"
+ * bar with the explore button. Sizes come from the --wb-* tokens in globals.css. Below lg every buyer is a
+ * card (photo on top on phones). E-Pace rows carry the reference photos; other models stand their own car
+ * photo in Jaguar's scene.
+ */
 
 function cleanText(text = "") {
   return String(text ?? "")
-    .replaceAll("Ã‚Â£", "\u00a3")
-    .replaceAll("Ãƒâ€šÃ‚Â£", "\u00a3")
-    .replaceAll("Ã¢â‚¬â€œ", "-")
-    .replaceAll("Ã¢â‚¬â€", "-")
-    .replaceAll("ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“", "-")
-    .replaceAll("ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â", "-")
-    .replace(/\s+-\s+/g, " - ")
+    .replaceAll("Â£", "£")
+    .replaceAll("â€“", "–")
+    .replaceAll("â€”", "—")
     .replace(/\s+/g, " ")
     .trim();
 }
 
-function modelNameFromTitle(title = "") {
-  const clean = cleanText(title);
-  const match = clean.match(/Buy (?:an?|the)\s+(.+?)\?/i);
-  return match ? match[1] : "Jaguar";
-}
-
-function splitTitle(title = "") {
-  const clean = cleanText(title);
-  const modelName = modelNameFromTitle(clean);
-  const index = clean.indexOf(modelName);
-
-  if (index === -1) {
-    return { before: clean, accent: "" };
-  }
-
-  return {
-    before: clean.slice(0, index).trim(),
-    accent: clean.slice(index).trim(),
-  };
-}
-
-function filledStars(rating = "") {
-  const text = String(rating);
-  const empty = (text.match(/\u2606/g) || []).length;
-  const filled = (text.match(/\u2b50/g) || []).length + (text.match(/\u2605/g) || []).length;
-
-  if (filled > 0) return filled;
-  if (empty > 0) return Math.max(0, 5 - empty);
-
-  return 0;
-}
-
-function Stars({ rating }) {
-  const filled = filledStars(rating);
-  const star = String.fromCharCode(9733);
-
-  return (
-    <div className="flex items-center gap-1 text-[24px] leading-none text-[var(--color-chrome-bright)] md:gap-1.5 md:text-[32px]">
-      {Array.from({ length: 5 }).map((_, index) => (
-        <span key={index} className={index < filled ? "" : "opacity-35"}>
-          {star}
-        </span>
-      ))}
-    </div>
+function typeset(text = "") {
+  return outsideTags(cleanText(text), (part) =>
+    part.replace(/(\d)\s*-\s*(£?\d)/g, "$1–$2").replace(/\s-\s/g, " — "),
   );
 }
 
-function CircleIcon({ name, isDark }) {
-  return (
-    <span
-      className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full md:h-16 md:w-16 ${
-        isDark ? "bg-white/10" : "bg-[#ececeb]"
-      }`}
-    >
-      <HomeIcon name={name} isDark={isDark} className="h-10 w-10 object-contain md:h-12 md:w-12" />
-    </span>
-  );
+// Buyer profile -> line icon (reference: people, briefcase, piggy bank, caravan, shield).
+function ProfileIcon({ profile, className }) {
+  const name = cleanText(profile).toLowerCase();
+  const Icon = name.includes("family")
+    ? UsersRound
+    : name.includes("commut")
+      ? BriefcaseBusiness
+      : name.includes("budget")
+        ? PiggyBank
+        : name.includes("tow") || name.includes("working")
+          ? Caravan
+          : name.includes("performance") || name.includes("enthusiast") || name.includes("sports")
+            ? Gauge
+            : name.includes("collector")
+              ? Gem
+              : name.includes("keeper") || name.includes("long")
+                ? Clock
+                : name.includes("premium")
+                  ? Shield
+                  : Crown;
+  return <Icon aria-hidden="true" className={className} strokeWidth={1.5} />;
 }
 
-function ProofStrip({ isDark }) {
+// "★★★★½" -> 4.5; null when the rating is a word ("🏆 Best").
+function ratingValue(rating = "") {
+  const text = cleanText(rating);
+  const full = (text.match(/[★⭐]/g) || []).length;
+  const half = text.includes("½") ? 0.5 : 0;
+  return full || half ? Math.min(5, full + half) : null;
+}
+
+const PROOF_ICONS = { users: UsersRound, shield: ShieldCheck, award: Award, wheel: SteeringWheel };
+
+function palette(isDark) {
+  return isDark
+    ? {
+        text: "text-white",
+        muted: "text-white/[0.72]",
+        accent: "bg-[linear-gradient(180deg,#e4e4e1_0%,#9a9a97_100%)] bg-clip-text text-transparent",
+        card: "border-white/[0.16] bg-[rgba(14,16,17,0.92)]",
+        head: "bg-[#2a2b2c] text-white",
+        rule: "border-white/[0.1]",
+        circle: "bg-white/[0.08] text-white",
+        star: "text-[#ececea]",
+        empty: "text-[#ececea]/80",
+      }
+    : {
+        text: "text-[#111210]",
+        muted: "text-[#3d3e3b]",
+        accent: "bg-[linear-gradient(180deg,#8a8b87_0%,#6b6c68_100%)] bg-clip-text text-transparent",
+        card: "border-[#e8e8e5] bg-white shadow-[0_6px_20px_rgba(16,18,16,0.05)]",
+        head: "bg-[#1a1b1a] text-white",
+        rule: "border-[#ececea]",
+        circle: "bg-[#efefed] text-[#111210]",
+        star: "text-[#111210]",
+        empty: "text-[#111210]/80",
+      };
+}
+
+/* ---------- Pieces ---------- */
+
+function ProofStrip({ items = [], tones }) {
+  if (!items.length) return null;
   return (
-    <ul className="hidden overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_10px_30px_var(--color-shadow)] lg:grid lg:grid-cols-4">
-      {proofItems.map((item) => (
-        <li
-          key={item.title}
-          className="flex flex-col items-center justify-start border-r border-[var(--color-border)] px-5 py-3.5 text-center last:border-r-0"
-        >
-          <span
-            className={`flex h-14 w-14 items-center justify-center rounded-full ${
-              isDark ? "bg-white/10" : "bg-[#ececeb]"
-            }`}
+    <ul className={`grid grid-cols-2 rounded-xl border py-2 sm:grid-cols-4 lg:min-h-[var(--wb-proof-h)] xl:w-[var(--wb-proof-w)] xl:shrink-0 ${tones.card} ${tones.text}`}>
+      {items.map((item) => {
+        const Icon = PROOF_ICONS[item.icon] || ShieldCheck;
+        return (
+          <li
+            key={item.title}
+            className={`flex flex-col items-center justify-center px-3 py-3 text-center even:border-l [&:nth-child(n+3)]:border-t sm:[&:nth-child(n+3)]:border-t-0 sm:[&:not(:first-child)]:border-l ${tones.rule}`}
           >
-            <HomeIcon name={item.icon} isDark={isDark} className="h-10 w-10 object-contain" />
-          </span>
-          <strong className="mt-1.5 text-[14px] leading-tight text-[var(--color-text)]">{item.title}</strong>
-          <span className="mt-0.5 text-[13px] leading-[1.25] text-[var(--color-text-muted)]">{item.text}</span>
-        </li>
-      ))}
+            <Icon aria-hidden="true" className="h-10 w-10 lg:h-[var(--wb-proof-icon)] lg:w-[var(--wb-proof-icon)]" strokeWidth={1.4} />
+            <p className="mt-2.5 text-[13px] font-semibold leading-tight lg:text-[length:var(--wb-proof-title)]">{cleanText(item.title)}</p>
+            <p className={`mt-1.5 text-[12px] leading-[1.55] lg:text-[length:var(--wb-proof-text)] lg:leading-[var(--wb-proof-lh)] ${tones.muted}`}>{cleanText(item.text)}</p>
+          </li>
+        );
+      })}
     </ul>
   );
 }
 
-function BuyerRow({ row, index, model, isDark }) {
-  const iconKey = buyerIconFor(row.buyerProfile);
-  // The page gives each buyer row its own photo (a different colour per row).
-  const carImage = row.image || carImageFor(model, row.verdict);
+const STAR = "h-[22px] w-[22px] lg:h-[var(--wb-star)] lg:w-[var(--wb-star)]";
 
+function Rating({ rating, tones }) {
+  const value = ratingValue(rating);
+  if (value === null) return <span className="text-[15px] font-semibold" dangerouslySetInnerHTML={{ __html: cleanText(rating) }} />;
+  const full = Math.floor(value);
+  const half = value - full >= 0.5;
   return (
-    <article className="grid overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_10px_26px_var(--color-shadow)] md:rounded-none md:border-0 md:border-t md:shadow-none lg:grid-cols-[40%_18%_42%]">
-      <div className="grid grid-cols-[31%_69%] md:grid-cols-[300px_1fr] lg:border-r lg:border-[var(--color-border)]">
-        <div className="relative flex min-h-[150px] items-center md:min-h-[124px]">
-          {carImage ? (
-            <Image
-              src={carImage}
-              alt=""
-              fill
-              className="object-contain p-2"
-              sizes="(min-width: 1024px) 300px, (min-width: 768px) 300px, 31vw"
-            />
-          ) : null}
-        </div>
-        <div className="flex min-w-0 items-center gap-3 px-3 py-3.5 md:px-5 md:py-4">
-          <CircleIcon name={iconKey} isDark={isDark} />
-          <div className="min-w-0">
-            <h3
-              className="text-[16px] font-bold leading-[1.12] text-[var(--color-text)] md:text-[18px]"
-              dangerouslySetInnerHTML={{ __html: cleanText(row.buyerProfile) }}
-            />
-            <div className="mt-3 lg:hidden">
-              <Stars rating={row.rating} />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="hidden items-center justify-center border-r border-[var(--color-border)] px-3 py-3 lg:flex">
-        <Stars rating={row.rating} />
-      </div>
-
-      <p
-        className={`border-t border-[var(--color-border)] px-3 py-3 text-[var(--color-text)] md:px-4 md:py-3 lg:border-t-0 ${sectionTableText} md:text-[14px]`}
-        dangerouslySetInnerHTML={{ __html: cleanText(row.verdict) }}
-      />
-    </article>
+    <span className={`inline-flex items-center gap-2 lg:gap-[var(--wb-star-gap)] ${tones.star}`} role="img" aria-label={`${value} out of 5 stars`}>
+      {Array.from({ length: 5 }, (_, index) => {
+        if (index < full) return <Star key={index} aria-hidden="true" className={`${STAR} fill-current`} strokeWidth={1.3} />;
+        if (index === full && half) {
+          return (
+            <span key={index} className={`relative ${STAR}`}>
+              <Star aria-hidden="true" className={`absolute inset-0 h-full w-full ${tones.empty}`} strokeWidth={1.1} />
+              <StarHalf aria-hidden="true" className="absolute inset-0 h-full w-full fill-current" strokeWidth={1.3} />
+            </span>
+          );
+        }
+        return <Star key={index} aria-hidden="true" className={`${STAR} ${tones.empty}`} strokeWidth={1.1} />;
+      })}
+    </span>
   );
 }
 
+function BuyerPhoto({ row, className = "" }) {
+  return (
+    <div className={`relative overflow-hidden rounded-lg ${className}`}>
+      {row.photo ? (
+        <Image src={row.photo} alt="" fill sizes="(min-width: 1024px) 240px, 100vw" className="object-cover" />
+      ) : row.image ? (
+        <CarOnBackground
+          src={row.image}
+          isDark={false}
+          className="absolute inset-0"
+          bgClassName="object-cover object-[62%_78%]"
+          carClassName="inset-x-[8%] top-[18%] bottom-[9%]"
+          sizes="(min-width: 1024px) 240px, 100vw"
+        />
+      ) : null}
+    </div>
+  );
+}
+
+function ProfileCell({ row, tones }) {
+  return (
+    <div className="flex items-center gap-4 lg:gap-[var(--wb-gap)]">
+      <span className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full lg:h-[var(--wb-circle)] lg:w-[var(--wb-circle)] ${tones.circle}`}>
+        <ProfileIcon profile={row.buyerProfile} className="h-[50%] w-[50%]" />
+      </span>
+      <h3
+        className="text-[17px] font-semibold leading-snug lg:max-w-[9.5em] lg:text-[length:var(--wb-label)] lg:leading-[var(--wb-label-lh)]"
+        dangerouslySetInnerHTML={{ __html: typeset(row.buyerProfile) }}
+      />
+    </div>
+  );
+}
+
+/* ---------- Section ---------- */
+
 export default function WhoShouldBuy({ data }) {
   const { theme } = useTheme();
-  if (!data) return null;
+  if (!data?.profiles?.length) return null;
 
   const isDark = theme === "dark";
-  const title = splitTitle(data.h2);
-  const modelName = modelNameFromTitle(data.h2);
-  const profiles = data.profiles || [];
-  const sectionBg = isDark ? "bg-[var(--color-page)]" : "bg-[#ececea]";
+  const tones = palette(isDark);
+  const columns = data.columns?.length === 3 ? data.columns : ["Buyer Profile", "Rating", "Our Verdict"];
+  const model = cleanText(data.h2).match(/Buy (?:an?|the)\s+(.+?)\?/i)?.[1] || "";
+  const rows = data.profiles.map((row) => ({ ...row, image: row.image || carImageFor(model, row.verdict) }));
+  // Reference columns: Buyer Profile 547 | Rating 242 | Our Verdict 527 (of 1316).
+  const cols = "lg:grid-cols-[minmax(0,547fr)_minmax(0,242fr)_minmax(0,527fr)]";
 
   return (
-    <section className={`${sectionBg} py-6 text-[var(--color-text)] md:py-8`}>
-      <div className="mx-auto w-full max-w-8xl px-4 md:px-8">
-        <div className="flex flex-col gap-5 lg:grid lg:grid-cols-[minmax(0,0.92fr)_minmax(520px,1fr)] lg:items-start">
-          <div>
-            <h2 className="max-w-[760px] text-[29px] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[45px]">
-              <span dangerouslySetInnerHTML={{ __html: title.before }} />
-              {title.accent ? (
-                <>
-                  {" "}
-                  <span
-                    className="text-[var(--color-chrome-bright)]"
-                    dangerouslySetInnerHTML={{ __html: title.accent }}
-                  />
-                </>
-              ) : null}
-            </h2>
-            <div className="mt-3">
-              <MStripe />
-            </div>
-            <p className={`mt-3 max-w-[620px] text-[var(--color-text-muted)] ${sectionDescription}`}>
-              Different buyers, different priorities. Here is our verdict on who the{" "}
-              <span dangerouslySetInnerHTML={{ __html: modelName }} /> is perfect for - and who should think twice.
-            </p>
+    <section id="who-should-buy" className="model-buyers relative overflow-hidden bg-[var(--color-page)] text-[var(--color-text)]">
+      <div className="mx-auto w-full max-w-[1546px] px-4 pb-12 pt-10 sm:px-6 lg:px-[var(--wb-px)] lg:pb-[var(--wb-pb)] lg:pt-[var(--wb-pt)]">
+        <div className="flex flex-col gap-5 xl:flex-row xl:items-center xl:justify-between xl:gap-10">
+          <div className="min-w-0">
+            <h2 className={`model-buyers-title ${tones.text}`} dangerouslySetInnerHTML={{ __html: typeset(data.h2).replace(/(\w)-(\w)/g, "$1\u2011$2") }} />
+            {data.subHeadline ? (
+              <p
+                className={`mt-3 max-w-[520px] text-[15px] leading-[1.6] lg:mt-[var(--wb-desc-mt)] lg:text-[length:var(--wb-desc)] lg:leading-[var(--wb-desc-lh)] ${tones.muted}`}
+                dangerouslySetInnerHTML={{ __html: typeset(data.subHeadline) }}
+              />
+            ) : null}
           </div>
-
-          <ProofStrip isDark={isDark} />
+          <ProofStrip items={data.proof} tones={tones} />
         </div>
 
-        <div className="mt-6 overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_12px_32px_var(--color-shadow)]">
-          <div className={`hidden grid-cols-[40%_18%_42%] text-[14px] font-bold lg:grid ${tableHeaderClass(isDark)}`}>
-            {(data.columns || ["Buyer Profile", "Rating", "Our Verdict"]).map((column, index) => (
-              <div key={column} className={`px-3 py-2.5 ${index > 0 ? "border-l border-white/20" : ""}`}>
+        <div className={`mt-6 overflow-hidden rounded-xl border lg:mt-[var(--wb-table-mt)] ${tones.card} ${tones.text}`}>
+          <div className={`hidden h-[var(--wb-th-h)] items-center text-[length:var(--wb-th)] font-medium lg:grid ${cols} ${tones.head}`}>
+            {columns.map((column, index) => (
+              <span key={column} className={`flex h-full items-center px-[var(--wb-cell-px)] ${index > 0 ? "border-l border-white/[0.18]" : ""} ${index === 1 ? "justify-center" : ""}`}>
                 {column}
-              </div>
+              </span>
             ))}
           </div>
-
-          <div className="grid gap-5 bg-[var(--color-page)] md:gap-0 lg:block">
-            {profiles.map((row, index) => (
-              <BuyerRow key={`${row.buyerProfile}-${index}`} row={row} index={index} model={modelName} isDark={isDark} />
+          <ul>
+            {rows.map((row, index) => (
+              <li
+                key={`${row.buyerProfile}-${index}`}
+                className={`grid gap-y-3 p-4 sm:grid-cols-[minmax(0,40%)_minmax(0,1fr)] sm:gap-x-5 lg:min-h-[var(--wb-row-h)] lg:gap-0 lg:p-0 ${cols} ${index > 0 ? `border-t ${tones.rule}` : ""}`}
+              >
+                {/* Profile: photo + icon + name (lg: one cell) */}
+                <div className="contents lg:flex lg:items-center lg:gap-[calc(var(--wb-gap)*1.3)] lg:px-[var(--wb-cell-px)] lg:py-[calc(var(--wb-cell-px)*0.5)]">
+                  <BuyerPhoto
+                    row={row}
+                    className="aspect-[16/8] w-full sm:row-span-3 sm:aspect-[16/10] sm:self-start lg:aspect-auto lg:h-[var(--wb-photo-h)] lg:w-[var(--wb-photo-w)] lg:shrink-0"
+                  />
+                  <ProfileCell row={row} tones={tones} />
+                </div>
+                <div className={`flex items-center lg:justify-center lg:border-l lg:px-3 ${tones.rule}`}>
+                  <Rating rating={row.rating} tones={tones} />
+                </div>
+                <p
+                  className={`text-[14px] leading-[1.6] lg:flex lg:items-center lg:border-l lg:px-[var(--wb-cell-px)] lg:py-[calc(var(--wb-cell-px)*0.6)] lg:text-[length:var(--wb-verdict)] lg:leading-[var(--wb-verdict-lh)] ${tones.rule}`}
+                  dangerouslySetInnerHTML={{ __html: typeset(row.verdict) }}
+                />
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
 
-        <div className="mt-5 flex flex-col gap-4 rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-4 shadow-[0_8px_24px_var(--color-shadow)] md:flex-row md:items-center md:justify-between md:p-5">
-          <div className="flex gap-3.5">
-            <span
-              className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full ${
-                isDark ? "bg-white/10" : "bg-[#ececeb]"
-              }`}
-            >
-              <HomeIcon name="note" isDark={isDark} className="h-7 w-7 object-contain" />
-            </span>
-            <p className={`max-w-[760px] text-[var(--color-text)] ${sectionBody}`}>
-              <strong className="font-bold text-[var(--color-chrome-bright)]">Real talk.</strong> The right{" "}
-              <span dangerouslySetInnerHTML={{ __html: modelName }} /> for you depends on your budget, your mileage,
-              and your patience for maintenance. Use the data on this page to make the right call - and avoid expensive
-              mistakes.
-            </p>
-          </div>
-          <Link
-            href="#engine-database"
-            className="btn-cta inline-flex min-h-12 shrink-0 items-center justify-center gap-4 rounded-md px-5 py-3 text-[16px] font-bold shadow-[0_12px_28px_var(--color-shadow)] md:min-w-[260px]"
+        {data.realTalk?.text || data.cta?.href ? (
+          <div
+            className={`mt-4 flex flex-col gap-4 rounded-xl border px-4 py-4 sm:flex-row sm:items-center sm:justify-between lg:mt-[var(--wb-bar-mt)] lg:min-h-[var(--wb-bar-h)] lg:px-[calc(var(--wb-cell-px)*0.9)] lg:py-2 ${tones.card} ${tones.text}`}
           >
-            Explore <span dangerouslySetInnerHTML={{ __html: modelName }} /> Engines
-            <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M5 12h14m-6-6 6 6-6 6" />
-            </svg>
-          </Link>
-        </div>
+            {data.realTalk?.text ? (
+              <div className="flex items-start gap-4 sm:items-center">
+                <Info aria-hidden="true" className="h-8 w-8 shrink-0 lg:h-[var(--wb-info)] lg:w-[var(--wb-info)]" strokeWidth={1.3} />
+                <p className={`max-w-[760px] text-[13.5px] leading-[1.6] lg:text-[length:var(--wb-bar)] lg:leading-[var(--wb-bar-lh)] ${tones.muted}`}>
+                  {data.realTalk.lead ? <strong className={`font-semibold ${tones.text}`}>{cleanText(data.realTalk.lead)} </strong> : null}
+                  <span dangerouslySetInnerHTML={{ __html: typeset(data.realTalk.text) }} />
+                </p>
+              </div>
+            ) : null}
+            {data.cta?.href ? (
+              <Link
+                href={data.cta.href}
+                className={`btn-cta inline-flex min-h-[46px] shrink-0 items-center justify-center gap-4 rounded-md px-5 text-[15px] !font-medium lg:min-h-[var(--wb-cta-h)] lg:text-[length:var(--wb-cta)] ${
+                  isDark ? "" : "bg-[linear-gradient(180deg,#2c2d2b_0%,#121312_100%)]"
+                }`}
+              >
+                {cleanText(data.cta.label)}
+                <ArrowRight aria-hidden="true" className="h-5 w-5" strokeWidth={1.8} />
+              </Link>
+            ) : null}
+          </div>
+        ) : null}
       </div>
     </section>
   );

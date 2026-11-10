@@ -270,6 +270,7 @@
   },
   "atAGlance": {
     "h2": "Jaguar I‑Pace at a Glance",
+    "subHeadline": "Everything you need to know about the Jaguar I‑Pace in one quick-reference overview.",
     "rows": [
       {
         "metric": "Generations",
@@ -342,17 +343,29 @@
   "engineDatabase": {
     "h2": "I‑Pace Drive Unit Codes - The Complete Database",
     "subHeadline": "Every electric motor variant fitted to the X590 I‑Pace, with reliability notes and real UK enquiry data.",
+    "stats": [],
     "columns": [],
     "engines": [],
     "confidenceScore": {
       "title": "",
-      "text": ""
+      "paragraphs": [],
+      "verification": []
+    },
+    "methodologyLink": {
+      "label": "How we collect engine data",
+      "href": "/data/methodology"
     },
     "dataCorrections": []
   },
   "commonProblems": {
     "h2": "Common Jaguar I‑Pace Problems",
     "subHeadline": "What actually fails on the I‑Pace - battery, drive units, and the gremlins that come with being Jaguar's first EV.",
+    "stat": {
+      "icon": "users",
+      "value": "40+",
+      "label": "I‑Pace enquiries analysed in 2025",
+      "tag": "[JAG-VERIFIED]"
+    },
     "columns": [
       "#",
       "Problem",
@@ -471,6 +484,11 @@
   },
   "marketIntelligence": {
     "h2": "Jaguar I‑Pace Market Intelligence - What 40+ UK Owners Told Us in 2025",
+    "stat": {
+      "value": "40+",
+      "label": "Total Enquiries in 2025",
+      "tag": "[JAG-VERIFIED]"
+    },
     "signals": [
       {
         "signal": "Total I‑Pace Enquiries",
@@ -494,7 +512,7 @@
       }
     ],
     "insights": [
-      "\"Interesting insight\": The I‑Pace's most-enquired problem isn't the drive unit - it's the 12V battery. 15+ of the 40 enquiries relate to flat 12V batteries, not motor or battery pack failures. This is a manageable consumable issue, not a fundamental EV flaw. (Data point [JAG-VERIFIED].)",
+      "Interesting insight: The I‑Pace's most-enquired problem isn't the drive unit - it's the 12V battery. 15+ of the 40 enquiries relate to flat 12V batteries, not motor or battery pack failures. This is a manageable consumable issue, not a fundamental EV flaw. (Data point [JAG-VERIFIED].)",
       "The 2021 model year is a genuine dividing line - rear motor bearing enquiries drop off sharply on post-2021 cars, and infotainment complaints fall to near-zero. If you're buying used, 2021+ is the clear recommendation.",
       "The I‑Pace has no internal combustion engine replacement data because it has no internal combustion engine. What we're seeing instead is a small but growing pattern of rear motor bearing enquiries on early cars - a known wear item that's worth checking before purchase."
     ],
@@ -502,7 +520,8 @@
   },
   "editorialPullQuote": {
     "title": "The One Thing We'd Tell Every I‑Pace Buyer",
-    "quote": "Buy a 2021+ car if you can. The Pivi Pro infotainment upgrade and rear motor bearing revision transform the ownership experience - and the £7,000-£10,000 premium over a 2018 car is genuinely worth it for the reduced hassle and better residuals. End of Sections 1-7 for Jaguar I‑Pace Ready for \"8-14\" to continue with Replacement Costs, Engine Evolution, Who Should Buy, Calculator CTA, Trust, FAQ, and Closing Action Cards. JAGUAR I-PACE - SECTIONS 8-14"
+    "quote": "Buy a 2021+ car if you can. The Pivi Pro infotainment upgrade and rear motor bearing revision transform the ownership experience - and the £7,000-£10,000 premium over a 2018 car is genuinely worth it for the reduced hassle and better residuals.",
+    "label": "Editorial pull-quote"
   },
   "replacementCosts": {
     "h2": "Jaguar I‑Pace Drive Unit Replacement Costs - By Component",
@@ -533,15 +552,38 @@
         "rows": []
       }
     ],
-    "figuresNote": "Labour estimate: Fitting an I‑Pace drive unit typically takes 8-14 hours per unit (10-14 hrs for rear, 8-12 hrs for front) at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [JAG-QUOTE]. Front and rear drive units are independent - failure of one does not necessarily mean the other needs replacement. The I‑Pace rule - the squeeze is the story: Unlike the rest of the Jaguar range, the I‑Pace has no internal combustion engine to worry about. A complete dual-drive-unit replacement at £6,500-£9,000 sits at roughly 20-40% of a typical £18,000-£45,000 I‑Pace value - well below our 60% scrap threshold for Jaguar. But the real economics question isn't the drive unit - it's the battery. A battery replacement (not covered in this data) can exceed £15,000-£20,000, which pushes even a £35,000 car toward the threshold. The smart move? Buy a 2021+ car with a healthy battery health certificate and treat the 12V battery as a normal consumable. [THIRD-PARTY] - don't walk away from a drive unit repair; walk away from a car with poor battery health.",
-    "labourEstimate": "Fitting an I‑Pace drive unit typically takes 8-14 hours per unit (10-14 hrs for rear, 8-12 hrs for front) at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [JAG-QUOTE]. Front and rear drive units are independent - failure of one does not necessarily mean the other needs replacement. The I‑Pace rule - the squeeze is the story: Unlike the rest of the Jaguar range, the I‑Pace has no internal combustion engine to worry about. A complete dual-drive-unit replacement at £6,500-£9,000 sits at roughly 20-40% of a typical £18,000-£45,000 I‑Pace value - well below our 60% scrap threshold for Jaguar. But the real economics question isn't the drive unit - it's the battery. A battery replacement (not covered in this data) can exceed £15,000-£20,000, which pushes even a £35,000 car toward the threshold. The smart move? Buy a 2021+ car with a healthy battery health certificate and treat the 12V battery as a normal consumable. [THIRD-PARTY] - don't walk away from a drive unit repair; walk away from a car with poor battery health.",
-    "economicsBox": {
-      "title": "",
-      "text": ""
+    "labourEstimate": "Fitting an I‑Pace drive unit typically takes 8-14 hours per unit (10-14 hrs for rear, 8-12 hrs for front) at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [JAG-QUOTE]. Front and rear drive units are independent - failure of one does not necessarily mean the other needs replacement.",
+    "rule": {
+      "title": "The I‑Pace Rule - The Squeeze Is the Story",
+      "paragraphs": [
+        "Unlike the rest of the Jaguar range, the I‑Pace has no internal combustion engine to worry about. A complete dual-drive-unit replacement at £6,500-£9,000 sits at roughly 20-40% of a typical £18,000-£45,000 I‑Pace value - well below our 60% scrap threshold for Jaguar.",
+        "But the real economics question isn't the drive unit - it's the battery. A battery replacement (not covered in this data) can exceed £15,000-£20,000, which pushes even a £35,000 car toward the threshold. The smart move? Buy a 2021+ car with a healthy battery health certificate and treat the 12V battery as a normal consumable. [THIRD-PARTY] - don't walk away from a drive unit repair; walk away from a car with poor battery health."
+      ]
     }
   },
   "engineEvolution": {
     "h2": "How the I‑Pace Drive Unit Range Evolved - 2018 to Today",
+    "subHeadline": "From launch to the final powertrains, explore how engineering, emissions and performance shaped every era of I‑Pace engines.",
+    "stats": [
+      {
+        "icon": "eras",
+        "value": "3",
+        "label": "Engine Eras",
+        "text": "2018 to 2024"
+      },
+      {
+        "icon": "years",
+        "value": "6",
+        "label": "Years of Engineering",
+        "text": "Innovation & Progress"
+      },
+      {
+        "icon": "drivers",
+        "value": "",
+        "label": "Built for Drivers",
+        "text": "Reliability + Dynamics"
+      }
+    ],
     "columns": [
       "Era",
       "Years",
@@ -571,10 +613,34 @@
         "whyBmwChanged": "Jaguar's strategic pivot - the brand is moving upmarket with a new EV-only range starting in 2025; the I‑Pace is discontinued",
         "worthKnowing": "The I‑Pace is the end of an era - the last Jaguar with any combustion-era platform, and the only Jaguar EV until the new range arrives"
       }
-    ]
+    ],
+    "footnote": "All engine reliability insights and failure patterns are based on 40+ verified I‑Pace enquiries in 2025. Data covers the UK market. [JAG-VERIFIED]"
   },
   "whoShouldBuy": {
     "h2": "Who Should Buy a Jaguar I‑Pace?",
+    "subHeadline": "Different buyers, different priorities. Here's our verdict on who the I‑Pace is perfect for - and who should think twice.",
+    "proof": [
+      {
+        "icon": "users",
+        "title": "Built for Real Life",
+        "text": "Practical. Powerful. Proven."
+      },
+      {
+        "icon": "shield",
+        "title": "Data-Backed Ratings",
+        "text": "40+ UK enquiries analysed in 2025."
+      },
+      {
+        "icon": "award",
+        "title": "Honest Verdicts",
+        "text": "No hype. Just the truth about ownership."
+      },
+      {
+        "icon": "wheel",
+        "title": "Buyer-Focused",
+        "text": "Find the right I‑Pace for your needs."
+      }
+    ],
     "columns": [
       "Buyer Profile",
       "Rating",
@@ -606,21 +672,74 @@
         "rating": "★★★★½",
         "verdict": "The I‑Pace is a gateway car - your first premium EV, your first Jaguar, or both. It's more engaging to drive than a Tesla, more prestigious than a Kia EV6, and the 2021 update fixes the early teething issues. Buy a 2021+ car and you'll have a genuinely good ownership experience."
       }
-    ]
+    ],
+    "realTalk": {
+      "lead": "Real talk.",
+      "text": "The right I‑Pace for you depends on your budget, your mileage, and your patience for maintenance. Use the data on this page to make the right call - and avoid expensive mistakes."
+    },
+    "cta": {
+      "label": "Explore I‑Pace Engines",
+      "href": "#engine-database"
+    }
   },
   "calculatorCta": {
     "h2": "Can I Repair My I‑Pace Drive Unit - or Should I Replace It?",
-    "intro": "H3: The I‑Pace's most common failure - the 12V battery - is a simple £200-£400 fix. But if you're hearing a whine from the rear motor or your range has dropped significantly, it's time for a proper diagnosis.",
+    "intro": "The I‑Pace's most common failure - the 12V battery - is a simple £200-£400 fix. But if you're hearing a whine from the rear motor or your range has dropped significantly, it's time for a proper diagnosis.",
+    "smartNote": {
+      "lead": "The smarter way to decide:",
+      "text": "Get a personalised repair-vs-replace verdict using real UK cost data."
+    },
     "paths": [
       {
-        "label": "Path 1 - Know your component? → Launch the Jaguar diagnostic calculator",
-        "href": "/tools/diagnostic-wizard"
+        "badge": "Path 1",
+        "title": "Know your drive unit?",
+        "text": "Launch the Jaguar calculator with I‑Pace pre-selected.",
+        "button": {
+          "label": "Launch I‑Pace Diagnostic Calculator",
+          "sub": "I‑Pace pre-selected",
+          "href": "/tools/diagnostic-wizard"
+        },
+        "features": [
+          {
+            "icon": "check",
+            "title": "I‑Pace pre-selected",
+            "text": "All variants covered"
+          },
+          {
+            "icon": "chart",
+            "title": "Real UK cost data",
+            "text": "Used, recon & rebuilt"
+          },
+          {
+            "icon": "shield",
+            "title": "Instant verdict",
+            "text": "Repair vs replace"
+          }
+        ]
       },
       {
-        "label": "Path 2 - Not sure what's wrong? → Identify your I‑Pace issue first",
-        "href": "/i-pace-drive-unit-guide"
+        "badge": "Path 2",
+        "title": "Not sure which drive unit you have?",
+        "text": "We'll identify it first.",
+        "button": {
+          "label": "Identify My Drive Unit First",
+          "sub": "Then launch the diagnostic calculator",
+          "href": "/tools/registration-lookup"
+        },
+        "note": {
+          "lead": "Identification is the first step inside the tool.",
+          "text": "We'll pinpoint your exact drive unit code before running the diagnostics."
+        }
       }
-    ]
+    ],
+    "closing": {
+      "title": "Stop guessing. Get the right answer.",
+      "text": "Our calculator compares real repair and replacement costs against your car's value - so you know the financially smarter move.",
+      "button": {
+        "label": "Start Your Verdict Now",
+        "href": "/tools/diagnostic-wizard"
+      }
+    }
   },
   "trustBlock": {
     "h2": "Why I‑Pace Owners Trust JaguarEngine.uk",
@@ -690,30 +809,50 @@
         "question": "I‑Pace vs Tesla Model Y - which is more reliable?",
         "answer": "The I‑Pace is more engaging to drive and has a more premium interior; the Model Y has better range, charging infrastructure, and tech. On reliability, the I‑Pace's drive units are generally robust (post-2021), but the 12V battery is a known weak point. Tesla's build quality is more variable - the I‑Pace is the more consistent ownership proposition, especially if you value driving dynamics over range. Read the full comparison →"
       }
-    ]
+    ],
+    "comparison": {
+      "title": "Need a head-to-head comparison?",
+      "text": "Read our in-depth I‑Pace vs Tesla Model Y reliability guide.",
+      "button": {
+        "label": "Read the Full Head-to-Head",
+        "href": "/compare"
+      }
+    }
   },
   "closingActionCards": {
     "h2": "Ready to Make a Decision?",
+    "subHeadline": "Everything you need to choose with confidence.\nData. Honesty. Specialists. All in one place.",
     "cards": [
       {
-        "icon": "🔍",
-        "title": "Explore I‑Pace Generations → Explore I‑Pace X590",
-        "text": "",
-        "href": "/i-pace/x590"
+        "icon": "search",
+        "art": "lineup",
+        "title": "Explore I‑Pace Generations",
+        "text": "One generation, six years, honestly rated.",
+        "cta": "Explore Now",
+        "href": "#generations"
       },
       {
-        "icon": "🩺",
-        "title": "Diagnose My I‑Pace → Launch the Jaguar diagnostic calculator",
-        "text": "",
-        "href": "/tools/diagnostic-wizard"
+        "icon": "diagnose",
+        "art": "engine",
+        "title": "Diagnose My I‑Pace",
+        "text": "Symptoms in, verdict out - value-weighted for your generation.",
+        "cta": "Start Diagnosis",
+        "href": "/tools/diagnostic-wizard",
+        "steps": [
+          "Symptoms",
+          "Engine Code",
+          "Mileage",
+          "History"
+        ]
       },
       {
-        "icon": "🤝",
-        "title": "Compare UK Specialists → Get quotes from 15+ vetted Jaguar specialists",
-        "text": "",
+        "icon": "specialists",
+        "art": "map",
+        "title": "Compare UK Specialists",
+        "text": "15+ vetted Jaguar specialists, prices and warranties side-by-side.",
+        "cta": "Compare Specialists",
         "href": "/quote"
       }
-    ],
-    "footerNote": ""
+    ]
   }
 }

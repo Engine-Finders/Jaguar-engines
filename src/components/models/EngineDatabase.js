@@ -1,282 +1,323 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { ArrowRight, ChevronDown, ChevronsUpDown, ChevronUp, List, PoundSterling, Star, StarHalf } from "lucide-react";
+import { BarChart3, Info, ShieldCheck } from "@/components/models/brandIcons";
 import { engineHrefFor } from "@/components/shared/engineLink";
-import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
-import { sectionDescription, sectionH2, tableHeaderClass } from "@/components/models/sectionTypography";
+import shared from "@/data/shared/engineDatabase.json";
+import { outsideTags, stripTags } from "@/components/models/outsideTags";
 
-const HEADER_IMAGE = "/home-image/sec2-bg.webp";
-
-const defaultFilters = {
-  query: "",
-  fuel: "",
-  displacement: "",
-  generation: "",
-  sort: "enquiries",
-};
+/*
+ * Model page "Engine Database" (section 5), built from the 1536px brand reference.
+ *
+ * Desktop (lg+): title + copy on the left, four stat cards on the right; the full engine table (sortable by
+ * code, hints on the data columns); a controls row (view all / count / rating legend); the confidence box
+ * (ratings | data note) and the verification bar. Sizes come from the --db-* tokens in globals.css.
+ * Below lg the table becomes one card per engine (two across on tablets), everything else stacks.
+ * Per-model copy: data.engineDatabase in each model JSON; shared labels: src/data/shared/engineDatabase.json.
+ */
 
 function cleanText(text = "") {
   return String(text ?? "")
-    .replaceAll("ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£", "\u00a3")
-    .replaceAll("Ãƒâ€šÃ‚Â£", "\u00a3")
-    .replaceAll("Ã‚Â£", "\u00a3")
-    .replaceAll("Â£", "\u00a3")
-    .replaceAll("ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ", "\u2013")
-    .replaceAll("ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“", "\u2013")
-    .replaceAll("Ã¢â‚¬â€œ", "\u2013")
-    .replaceAll("â€“", "\u2013")
-    .replaceAll("ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â", "\u2014")
-    .replaceAll("ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â", "\u2014")
-    .replaceAll("Ã¢â‚¬â€", "\u2014")
-    .replaceAll("â€”", "\u2014")
-    .replaceAll("ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢", "\u2022")
-    .replaceAll("ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢", "\u2022")
-    .replaceAll("Ã¢â‚¬Â¢", "\u2022")
-    .replaceAll("â€¢", "\u2022")
-    .replaceAll("ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦", "\u2605")
-    .replaceAll("ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦", "\u2605")
-    .replaceAll("Ã¢Ëœâ€¦", "\u2605")
-    .replaceAll("â˜…", "\u2605")
-    .replaceAll("ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ", "\u2606")
-    .replaceAll("ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â ", "\u2606")
-    .replaceAll("Ã¢Ëœâ€ ", "\u2606")
-    .replaceAll("â˜†", "\u2606")
-    .replaceAll("ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â½", "\u00bd")
-    .replaceAll("Ãƒâ€šÃ‚Â½", "\u00bd")
-    .replaceAll("Ã‚Â½", "\u00bd")
-    .replaceAll("Â½", "\u00bd")
+    .replaceAll("Â£", "£")
+    .replaceAll("â€“", "–")
+    .replaceAll("â€”", "—")
+    .replaceAll("â˜…", "★")
+    .replaceAll("â˜†", "☆")
+    .replaceAll("Â½", "½")
+    .replace(/\s*【[^】]*】/g, "")
     .replace(/\s+/g, " ")
     .trim();
 }
 
+// Ranges take an en dash ("148–178 bhp", "2017–Present", "£3,500–£5,800"); " - " separators an em dash.
+function typeset(text = "") {
+  return outsideTags(cleanText(text), (part) =>
+    part
+      .replace(/(\d)\s*-\s*(£?\d|Present)/g, "$1–$2")
+      .replace(/\s-\s/g, " — "),
+  );
+}
+
 function splitTitle(title = "") {
-  const clean = cleanText(title);
-  const marker = "The Complete Database";
-  const index = clean.indexOf(marker);
-
-  if (index === -1) {
-    const dash = clean.indexOf(" - ");
-    if (dash !== -1) {
-      return { main: clean.slice(0, dash).trim(), accent: clean.slice(dash + 3).trim() };
-    }
-    return { main: clean, accent: "" };
-  }
-
-  return {
-    main: clean.slice(0, index).trim(),
-    accent: clean.slice(index).trim(),
-  };
+  const match = cleanText(title).match(/^(.*?)\s+[-–—]\s+(.*)$/);
+  if (!match) return { main: cleanText(title), accent: "" };
+  return { main: `${match[1]} —`, accent: match[2] };
 }
 
-function StatIcon({ name, isDark, className = "h-5 w-5 object-contain" }) {
-  return <HomeIcon name={name} isDark={isDark} className={className} />;
+// "140 [JAG-VERIFIED]" -> { value: "140", tag: "[JAG-VERIFIED]" }; "[PATTERN DATA]" -> { value: "", tag }
+function valueAndTag(raw = "") {
+  const text = typeset(raw);
+  const tags = text.match(/\[[^\]]*\]/g) || [];
+  const value = text.replace(/\[[^\]]*\]/g, "").replace(/^[-–—\s]+$/, "").trim();
+  return { value, tag: tags.join(" ") };
 }
 
-function Rating({ value }) {
-  const rating = cleanText(value);
-  const stars = Array.from({ length: 5 }, (_, index) => {
-    const char = rating[index] || "\u2606";
-    return char === "\u2605" || char === "\u00bd" ? "filled" : "empty";
-  });
+// "★★★☆☆ (pre-2020) / ★★★★☆ (2020+)" -> [{ stars: 3, caption: "(pre-2020)" }, { stars: 4, caption: "(2020+)" }]
+// Anything without stars ("🔴 Avoid (oil pump failure)") is kept as text.
+function ratingParts(raw = "") {
+  return cleanText(raw)
+    .split(/\s+\/\s+/)
+    .map((part) => {
+      const starChars = part.match(/[★☆½]/g) || [];
+      if (!starChars.length) return { text: typeset(part) };
+      const full = starChars.filter((char) => char === "★").length;
+      const half = starChars.includes("½") ? 0.5 : 0;
+      const caption = typeset(part.replace(/[★☆½\s]+/g, " ").trim());
+      return { stars: Math.min(5, full + half), caption };
+    });
+}
 
-  if (rating.includes("\u00bd")) stars[3] = "half";
+function fillTemplate(template = "", values = {}) {
+  return template.replace(/\{(\w+)\}/g, (_, key) => values[key] ?? "");
+}
 
+/* ---------- Palette ---------- */
+
+function palette(isDark) {
+  return isDark
+    ? {
+        text: "text-white",
+        muted: "text-white/[0.68]",
+        accent: "bg-[linear-gradient(180deg,#e4e4e1_0%,#9a9a97_100%)] bg-clip-text text-transparent",
+        card: "border-white/[0.16] bg-[rgba(14,16,17,0.92)]",
+        table: "border-white/[0.2] bg-[#111315]",
+        head: "bg-[#16181a]",
+        rule: "border-white/[0.1]",
+        star: "text-[#ececea]",
+        starEmpty: "text-white/[0.28]",
+        icon: "text-white",
+        circle: "bg-white/[0.08] text-white",
+        button: "border-white/[0.2] text-white hover:border-white/[0.45]",
+        tip: "border-white/[0.2] bg-[#1b1d1f] text-white/[0.86]",
+        link: "text-[#d4d4d2] hover:text-white",
+        leaper: "opacity-60 invert",
+        badge: "border-white/[0.3] text-white/[0.9]",
+        badgeSoft: "border-white/[0.16] text-white/[0.6]",
+      }
+    : {
+        text: "text-[#111210]",
+        muted: "text-[#4a4b48]",
+        accent: "",
+        card: "border-[#e6e6e3] bg-white shadow-[0_6px_20px_rgba(16,18,16,0.05)]",
+        table: "border-[#e6e6e3] bg-white shadow-[0_6px_20px_rgba(16,18,16,0.04)]",
+        head: "bg-white",
+        rule: "border-[#ededeb]",
+        star: "text-[#2a2b29]",
+        starEmpty: "text-[#d3d3d0]",
+        icon: "text-[#2a2b29]",
+        circle: "bg-[#efefed] text-[#111210]",
+        button: "border-[#dcdcda] text-[#111210] hover:border-[#9b9c97]",
+        tip: "border-[#e2e2df] bg-white text-[#2a2b29] shadow-[0_10px_28px_rgba(16,18,16,0.12)]",
+        link: "text-[#111210] hover:text-[#4a4b48]",
+        leaper: "opacity-80",
+        badge: "border-[#cfd0cc] bg-[#f6f6f4] text-[#2a2b29]",
+        badgeSoft: "border-[#e2e2df] text-[#6a6b67]",
+      };
+}
+
+/* ---------- Small pieces ---------- */
+
+function Stars({ value, tones, size = "h-[14px] w-[14px] lg:h-[var(--db-star)] lg:w-[var(--db-star)]" }) {
+  const full = Math.floor(value);
+  const half = value - full >= 0.5;
   return (
-    <span className="inline-flex gap-0.5 text-[15px] leading-none">
-      {stars.map((state, index) => (
-        <span
-          key={index}
-          className={state === "empty" ? "text-[#cfd5dd]" : "text-[var(--color-chrome-bright)]"}
-        >
-          {state === "half" ? "\u00bd" : "\u2605"}
-        </span>
-      ))}
+    <span className={`inline-flex items-center gap-[3px] ${tones.star}`} role="img" aria-label={`${value} out of 5 stars`}>
+      {Array.from({ length: 5 }, (_, index) => {
+        if (index < full) return <Star key={index} aria-hidden="true" className={`${size} fill-current`} strokeWidth={1.2} />;
+        if (index === full && half) {
+          return (
+            <span key={index} className={`relative ${size}`}>
+              <Star aria-hidden="true" className={`absolute inset-0 h-full w-full fill-current ${tones.starEmpty}`} strokeWidth={0} />
+              <StarHalf aria-hidden="true" className="absolute inset-0 h-full w-full fill-current" strokeWidth={1.2} />
+            </span>
+          );
+        }
+        return <Star key={index} aria-hidden="true" className={`${size} fill-current ${tones.starEmpty}`} strokeWidth={0} />;
+      })}
     </span>
   );
 }
 
-function cleanCost(value = "") {
-  return cleanText(value)
-    .replace(/\s*\[PLACEHOLDER.*?\]/, "")
-    .replace(/\s*\[BMW-QUOTE\]/, "")
-    .replace(/\s*\[JAG-QUOTE\]/, "");
-}
-
-function enquiryNumber(value = "") {
-  const clean = cleanText(value);
-  if (!/^\d/.test(clean)) return 0;
-  const match = clean.match(/^\d[\d,]*/);
-  return match ? Number(match[0].replaceAll(",", "")) : 0;
-}
-
-function fuelColor(fuel = "") {
-  return cleanText(fuel).toLowerCase().includes("diesel") ? "text-[var(--color-text)]" : "text-green-700";
-}
-
-function uniqueOptions(values) {
-  return [...new Set(values.map(cleanText).filter(Boolean))].sort((a, b) => a.localeCompare(b));
-}
-
-function engineMatchesQuery(engine, query) {
-  if (!query.trim()) return true;
-  const haystack = [
-    engine.engineCode,
-    engine.family,
-    engine.fuel,
-    engine.displacement,
-    engine.power,
-    engine.years,
-    engine.model,
-    engine.enquiries,
-    engine.avgRebuildCost,
-  ]
-    .map(cleanText)
-    .join(" ")
-    .toLowerCase();
-
-  return haystack.includes(query.trim().toLowerCase());
-}
-
-function filterAndSortEngines(engines, filters) {
-  const filtered = engines.filter((engine) => {
-    const generation = cleanText(engine.model);
-
-    return (
-      engineMatchesQuery(engine, filters.query) &&
-      (!filters.fuel || cleanText(engine.fuel) === filters.fuel) &&
-      (!filters.displacement || cleanText(engine.displacement) === filters.displacement) &&
-      (!filters.generation || generation.split(",").map((item) => item.trim()).includes(filters.generation))
-    );
-  });
-
-  return filtered.sort((a, b) => {
-    if (filters.sort === "code") return cleanText(a.engineCode).localeCompare(cleanText(b.engineCode));
-    if (filters.sort === "family") return cleanText(a.family).localeCompare(cleanText(b.family));
-
-    const enquiryDelta = enquiryNumber(b.enquiries) - enquiryNumber(a.enquiries);
-    return enquiryDelta || cleanText(a.engineCode).localeCompare(cleanText(b.engineCode));
-  });
-}
-
-function filterOptions(engines) {
-  const generations = engines.flatMap((engine) =>
-    cleanText(engine.model)
-      .split(",")
-      .map((item) => item.trim())
-      .filter(Boolean)
-  );
-
-  return {
-    fuels: uniqueOptions(engines.map((engine) => engine.fuel)),
-    displacements: uniqueOptions(engines.map((engine) => engine.displacement)),
-    generations: uniqueOptions(generations),
-  };
-}
-
-function applyNativeMobileFilters(section) {
-  const query = section.querySelector('[data-filter="query"]')?.value.trim().toLowerCase() || "";
-  const fuel = section.querySelector('[data-filter="fuel"]')?.value || "";
-  const displacement = section.querySelector('[data-filter="displacement"]')?.value || "";
-  const generation = section.querySelector('[data-filter="generation"]')?.value || "";
-  const sort = section.querySelector('[data-filter="sort"]')?.value || "enquiries";
-  const rows = [...section.querySelectorAll("[data-engine-row]")];
-  let visibleCount = 0;
-
-  rows
-    .sort((a, b) => {
-      if (sort === "code") return a.dataset.code.localeCompare(b.dataset.code);
-      if (sort === "family") return a.dataset.family.localeCompare(b.dataset.family);
-      return Number(b.dataset.enquiries) - Number(a.dataset.enquiries) || a.dataset.code.localeCompare(b.dataset.code);
-    })
-    .forEach((row, index) => {
-      row.style.order = String(index);
-      const matches =
-        (!query || row.dataset.search.includes(query)) &&
-        (!fuel || row.dataset.fuel === fuel) &&
-        (!displacement || row.dataset.displacement === displacement) &&
-        (!generation || row.dataset.generations.split("|").includes(generation));
-
-      row.hidden = !matches || visibleCount >= 9;
-      if (matches) visibleCount += 1;
-    });
-
-  const empty = section.querySelector("[data-engine-empty]");
-  if (empty) empty.hidden = visibleCount > 0;
-}
-
-function DesktopTable({ engines, isDark }) {
+function Reliability({ raw, tones, align = "center" }) {
+  const parts = ratingParts(raw);
   return (
-    <div className="overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface)]">
-      <table className="w-full border-collapse text-left text-[13px] text-[var(--color-text)]">
+    <span className={`flex flex-col gap-1.5 ${align === "center" ? "items-center text-center" : "items-start"}`}>
+      {parts.map((part, index) =>
+        part.text ? (
+          <span key={index} className="font-semibold text-[#d42a2a]" dangerouslySetInnerHTML={{ __html: part.text }} />
+        ) : (
+          <span key={index} className={`flex flex-col gap-0.5 ${align === "center" ? "items-center" : "items-start"}`}>
+            <Stars value={part.stars} tones={tones} />
+            {part.caption ? (
+              <span className="text-[12px] leading-tight lg:text-[length:var(--db-tag)]" dangerouslySetInnerHTML={{ __html: part.caption }} />
+            ) : null}
+          </span>
+        ),
+      )}
+    </span>
+  );
+}
+
+// Source tags as short, readable badges (the raw "[JAG-VERIFIED]" style reads as internal markup).
+const TAG_LABELS = [
+  [/JAG-VERIFIED|BMW-VERIFIED/i, "Verified", "verified"],
+  [/JAG-QUOTE|BMW-QUOTE/i, "Specialist quote", "quote"],
+  [/PATTERN DATA/i, "Pattern data", "pattern"],
+  [/THIRD-PARTY/i, "Third-party", "pattern"],
+];
+
+function SourceBadge({ tag, tones }) {
+  const match = TAG_LABELS.find(([pattern]) => pattern.test(tag));
+  if (!match) return null;
+  const [, label, kind] = match;
+  return (
+    <span
+      className={`mt-1 inline-flex w-fit items-center gap-1 rounded-full border px-2 py-[1px] text-[11px] font-medium leading-[1.5] lg:text-[length:calc(var(--db-tag)*0.9)] ${
+        kind === "pattern" ? tones.badgeSoft : tones.badge
+      }`}
+    >
+      {kind === "verified" ? <ShieldCheck aria-hidden="true" className="h-3 w-3" strokeWidth={2} /> : null}
+      {label}
+    </span>
+  );
+}
+
+// Value with its source badge underneath. No value: an em dash (enquiries) or, for a cost we have not
+// confirmed yet, a "Quote on request" link instead of the placeholder.
+function Tagged({ raw, tones, kind }) {
+  const { value, tag } = valueAndTag(raw);
+  const placeholder = /PLACEHOLDER/i.test(tag);
+  if (kind === "cost" && !value && placeholder) {
+    return (
+      <Link href="/quote" className={`inline-flex items-center gap-1.5 text-[13.5px] !font-semibold underline-offset-2 hover:underline lg:text-[length:var(--db-cell)] ${tones.text}`}>
+        Quote on request
+        <ArrowRight aria-hidden="true" className="h-3.5 w-3.5" strokeWidth={2} />
+      </Link>
+    );
+  }
+  return (
+    <span className="flex flex-col items-start">
+      <span className="text-[14.5px] lg:text-[length:calc(var(--db-cell)*1.05)]" dangerouslySetInnerHTML={{ __html: value || "\u2014" }} />
+      {tag && !placeholder ? <SourceBadge tag={tag} tones={tones} /> : null}
+    </span>
+  );
+}
+
+// Info icon with a hint that opens on hover, focus or tap.
+function Hint({ text, tones, label }) {
+  if (!text) return null;
+  return (
+    <span className="group relative inline-flex">
+      <button type="button" aria-label={`About ${label}`} className="inline-flex rounded-full outline-offset-2">
+        <Info aria-hidden="true" className="h-[15px] w-[15px]" strokeWidth={1.8} />
+      </button>
+      <span
+        role="tooltip"
+        className={`pointer-events-none invisible absolute right-0 top-full z-20 mt-2 w-[250px] rounded-lg border px-3 py-2 text-left text-[12.5px] font-normal leading-[1.45] opacity-0 transition-opacity group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100 ${tones.tip}`}
+      >
+        {text}
+      </span>
+    </span>
+  );
+}
+
+const STAT_ICONS = {
+  engine: (tones) => <HomeIcon name="engine" isDark={tones.text === "text-white"} className="h-full w-full" />,
+  shield: () => <ShieldCheck aria-hidden="true" className="h-full w-full" strokeWidth={1.6} />,
+  chart: () => <BarChart3 aria-hidden="true" className="h-full w-full" strokeWidth={1.6} />,
+  pound: () => <PoundSterling aria-hidden="true" className="h-full w-full rounded-full border-[1.6px] border-current p-[18%]" strokeWidth={2} />,
+};
+
+function StatCard({ stat, tones }) {
+  const Icon = STAT_ICONS[stat.icon] || STAT_ICONS.chart;
+  return (
+    <li className={`flex flex-col items-start gap-2.5 rounded-xl border px-4 py-4 sm:flex-row sm:items-center sm:gap-3 lg:min-h-[var(--db-stat-h)] lg:gap-[var(--db-stat-icon-gap)] lg:px-[var(--db-stat-px)] lg:py-0 ${tones.card} ${tones.text}`}>
+      <span className={`h-9 w-9 shrink-0 lg:h-[var(--db-stat-icon)] lg:w-[var(--db-stat-icon)] ${tones.icon}`}>{Icon(tones)}</span>
+      <div className="min-w-0">
+        <p className="text-[20px] font-semibold sm:whitespace-nowrap sm:text-[21px] leading-tight tracking-[-0.01em] lg:text-[length:var(--db-stat-value)]">{stat.value}</p>
+        <p className="mt-1 text-[13px] leading-[1.35] lg:max-w-[9.5em] lg:text-[length:var(--db-stat-label)] lg:leading-[var(--db-stat-lh)]">{stat.label}</p>
+      </div>
+    </li>
+  );
+}
+
+/* ---------- Table (lg+) ---------- */
+
+// Reference column widths (px at 1536), in data order: code, family, fuel, disp., power, years, gen., reliability,
+// enquiries, cost.
+const WIDTHS = [171, 187, 108, 97, 130, 130, 101, 165, 195, 192];
+const FIELDS = ["engineCode", "family", "fuel", "displacement", "power", "years", "model", "reliability", "enquiries", "avgRebuildCost"];
+
+function EngineTable({ rows, columns, tones, sort, onSort }) {
+  const total = WIDTHS.reduce((sum, width) => sum + width, 0);
+  const cell = "px-2 py-3 text-[13px] leading-[1.4] lg:px-[var(--db-cell-px)] lg:py-[var(--db-cell-py)] lg:text-[length:var(--db-cell)] lg:leading-[var(--db-cell-lh)]";
+
+  return (
+    <div className={`hidden overflow-hidden rounded-xl border lg:block ${tones.table} ${tones.text}`}>
+      <table className="w-full table-fixed border-collapse">
+        <colgroup>
+          {WIDTHS.map((width, index) => (
+            <col key={index} style={{ width: `${(width / total) * 100}%` }} />
+          ))}
+        </colgroup>
         <thead>
-          <tr className={tableHeaderClass(isDark)}>
-            {[
-              "Engine Code",
-              "Family",
-              "Fuel",
-              "Disp.",
-              "Power",
-              "Years",
-              "Gen.",
-              "Reliability",
-              "2025 Enquiries",
-              "Avg. Recon Cost",
-            ].map((column) => (
+          <tr className={`border-b ${tones.rule} ${tones.head}`}>
+            {columns.map((column, index) => (
               <th
                 key={column}
-                className="border-b border-r border-white/20 px-3 py-3 text-center text-[13px] font-bold last:border-r-0"
+                scope="col"
+                aria-sort={index === 0 && sort ? (sort === "asc" ? "ascending" : "descending") : undefined}
+                className={`h-[var(--db-th-h)] px-2 text-[13px] font-semibold lg:px-[var(--db-cell-px)] lg:text-[length:var(--db-th)] ${index > 0 ? `border-l text-center ${tones.rule}` : "text-left"}`}
               >
-                {column}
+                {index === 0 ? (
+                  <button type="button" onClick={onSort} className="flex w-full items-center justify-between gap-2 text-left font-semibold">
+                    {column}
+                    {sort === "asc" ? (
+                      <ChevronUp aria-hidden="true" className="h-4 w-4" strokeWidth={2} />
+                    ) : sort === "desc" ? (
+                      <ChevronDown aria-hidden="true" className="h-4 w-4" strokeWidth={2} />
+                    ) : (
+                      <ChevronsUpDown aria-hidden="true" className="h-4 w-4" strokeWidth={1.8} />
+                    )}
+                  </button>
+                ) : (
+                  <span className="inline-flex items-center gap-2">
+                    {column}
+                    <Hint text={shared.columnHints[column]} tones={tones} label={column} />
+                  </span>
+                )}
               </th>
             ))}
           </tr>
         </thead>
         <tbody>
-          {engines.slice(0, 10).map((row) => (
-            <tr key={row.engineCode}>
-              <td
-                className="border-r border-t border-[var(--color-border)] px-3 py-2.5 font-bold"
-                dangerouslySetInnerHTML={{ __html: cleanText(row.engineCode) }}
-              />
-              <td
-                className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center"
-                dangerouslySetInnerHTML={{ __html: cleanText(row.family) }}
-              />
-              <td
-                className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center"
-                dangerouslySetInnerHTML={{ __html: cleanText(row.fuel) }}
-              />
-              <td
-                className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center"
-                dangerouslySetInnerHTML={{ __html: cleanText(row.displacement) }}
-              />
-              <td
-                className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center"
-                dangerouslySetInnerHTML={{ __html: cleanText(row.power) }}
-              />
-              <td
-                className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center"
-                dangerouslySetInnerHTML={{ __html: cleanText(row.years) }}
-              />
-              <td
-                className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center"
-                dangerouslySetInnerHTML={{ __html: cleanText(row.model) }}
-              />
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center">
-                <Rating value={row.reliability} />
-              </td>
-              <td
-                className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center font-heading text-[1.05rem] font-semibold"
-                dangerouslySetInnerHTML={{ __html: cleanText(row.enquiries) }}
-              />
-              <td
-                className="border-t border-[var(--color-border)] px-3 py-2.5 text-center"
-                dangerouslySetInnerHTML={{ __html: cleanCost(row.avgRebuildCost) }}
-              />
+          {rows.map((engine) => (
+            <tr key={engine.engineCode} className={`border-t ${tones.rule}`}>
+              {FIELDS.map((field, index) => {
+                const value = engine[field];
+                const base = `${cell} ${index > 0 ? `border-l ${tones.rule}` : ""}`;
+                if (index === 0) {
+                  return (
+                    <th key={field} scope="row" className={`${base} text-left font-semibold`}>
+                      <Link href={engineHrefFor(engine.engineCode, engine.family)} className="hover:underline hover:underline-offset-2">{stripTags(typeset(value))}</Link>
+                    </th>
+                  );
+                }
+                if (field === "reliability") return <td key={field} className={base}><Reliability raw={value} tones={tones} /></td>;
+                if (field === "enquiries" || field === "avgRebuildCost") {
+                  return (
+                    <td key={field} className={`${base} lg:pl-[calc(var(--db-cell-px)*1.35)]`}>
+                      <Tagged raw={value} tones={tones} kind={field === "avgRebuildCost" ? "cost" : "enquiries"} />
+                    </td>
+                  );
+                }
+                return <td key={field} className={`${base} text-center`} dangerouslySetInnerHTML={{ __html: typeset(value) }} />;
+              })}
             </tr>
           ))}
         </tbody>
@@ -285,397 +326,200 @@ function DesktopTable({ engines, isDark }) {
   );
 }
 
-function MobileControls({ filters, options, onChange, onReset, isDark }) {
-  const selectClass =
-    "min-h-12 w-full rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] px-4 text-[15px] text-[var(--color-text)]";
-  const updateQuery = (event) => onChange({ query: event.currentTarget.value });
+/* ---------- Cards (phones / tablets) ---------- */
 
+function EngineCard({ engine, columns, tones }) {
+  const label = (field) => columns[FIELDS.indexOf(field)] || field;
+  const specs = ["fuel", "displacement", "power", "years", "model"];
   return (
-    <div className="space-y-3">
-      <label className="flex min-h-14 items-center gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] px-4 text-[15px] text-[var(--color-text-soft)]">
-        <StatIcon name="diagnosis" isDark={isDark} className="h-6 w-6 object-contain" />
-        <input
-          type="search"
-          data-filter="query"
-          value={filters.query}
-          onInput={updateQuery}
-          onChange={updateQuery}
-          placeholder="Search engine code, family or notes..."
-          className="min-w-0 flex-1 bg-transparent outline-none placeholder:text-[var(--color-text-soft)]"
-        />
-      </label>
-      <div className="grid grid-cols-2 gap-3">
-        <select
-          data-filter="fuel"
-          className={selectClass}
-          value={filters.fuel}
-          onChange={(event) => onChange({ fuel: event.target.value })}
-        >
-          <option value="">Fuel Type</option>
-          {options.fuels.map((fuel) => (
-            <option key={fuel} value={fuel}>
-              {fuel}
-            </option>
-          ))}
-        </select>
-        <select
-          data-filter="displacement"
-          className={selectClass}
-          value={filters.displacement}
-          onChange={(event) => onChange({ displacement: event.target.value })}
-        >
-          <option value="">Displacement</option>
-          {options.displacements.map((displacement) => (
-            <option key={displacement} value={displacement}>
-              {displacement}
-            </option>
-          ))}
-        </select>
-        <select
-          data-filter="generation"
-          className={selectClass}
-          value={filters.generation}
-          onChange={(event) => onChange({ generation: event.target.value })}
-        >
-          <option value="">Generations</option>
-          {options.generations.map((generation) => (
-            <option key={generation} value={generation}>
-              {generation}
-            </option>
-          ))}
-        </select>
-        <select
-          data-filter="sort"
-          className={selectClass}
-          value={filters.sort}
-          onChange={(event) => onChange({ sort: event.target.value })}
-        >
-          <option value="enquiries">Sort by Enquiries</option>
-          <option value="code">Sort by Engine Code</option>
-          <option value="family">Sort by Family</option>
-        </select>
-      </div>
-      <button
-        type="button"
-        data-filter-reset
-        onClick={onReset}
-        className="flex min-h-12 w-full items-center justify-center gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] text-[15px] text-[var(--color-text)]"
-      >
-        <StatIcon name="refresh" isDark={isDark} className="h-5 w-5 object-contain" />
-        Reset filters
-      </button>
-    </div>
+    <li className={`rounded-xl border p-4 ${tones.card} ${tones.text}`}>
+      <Link href={engineHrefFor(engine.engineCode, engine.family)} className="text-[16.5px] font-semibold leading-tight">{stripTags(typeset(engine.engineCode))}</Link>
+      <p className={`mt-0.5 text-[13.5px] ${tones.muted}`} dangerouslySetInnerHTML={{ __html: typeset(engine.family) }} />
+      <dl className={`mt-3 grid grid-cols-3 gap-x-3 gap-y-2.5 border-t pt-3 text-[13px] ${tones.rule}`}>
+        {specs.map((field) => (
+          <div key={field} className="min-w-0">
+            <dt className={`text-[11.5px] ${tones.muted}`}>{label(field)}</dt>
+            <dd className="font-medium leading-snug" dangerouslySetInnerHTML={{ __html: typeset(engine[field]) }} />
+          </div>
+        ))}
+      </dl>
+      <dl className={`mt-3 grid grid-cols-2 gap-x-3 gap-y-3 border-t pt-3 text-[13px] ${tones.rule}`}>
+        <div className="col-span-2 min-w-0">
+          <dt className={`mb-1 text-[11.5px] ${tones.muted}`}>{label("reliability")}</dt>
+          <dd className="flex"><Reliability raw={engine.reliability} tones={tones} align="start" /></dd>
+        </div>
+        <div className="min-w-0">
+          <dt className={`mb-1 text-[11.5px] ${tones.muted}`}>{label("enquiries")}</dt>
+          <dd className="leading-snug"><Tagged raw={engine.enquiries} tones={tones} kind="enquiries" /></dd>
+        </div>
+        <div className="min-w-0">
+          <dt className={`mb-1 text-[11.5px] ${tones.muted}`}>{label("avgRebuildCost")}</dt>
+          <dd className="leading-snug"><Tagged raw={engine.avgRebuildCost} tones={tones} kind="cost" /></dd>
+        </div>
+      </dl>
+    </li>
   );
 }
 
-function MobileTable({ engines, isDark }) {
-  return (
-    <div className="overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] text-[15px]">
-      <div className={`grid grid-cols-[1.2fr_0.9fr_1fr_44px] px-3 py-3 text-[15px] font-bold uppercase ${tableHeaderClass(isDark)}`}>
-        <span>Engine Code</span>
-        <span>Fuel</span>
-        <span>2025 Enquiries</span>
-        <span>View</span>
-      </div>
-      <div className="flex flex-col">
-        {engines.map((row, index) => {
-          const enquiries = enquiryNumber(row.enquiries);
-          const generations = cleanText(row.model)
-            .split(",")
-            .map((item) => item.trim())
-            .filter(Boolean);
-          const search = [
-            row.engineCode,
-            row.family,
-            row.fuel,
-            row.displacement,
-            row.power,
-            row.years,
-            row.model,
-            row.enquiries,
-            row.avgRebuildCost,
-          ]
-            .map(cleanText)
-            .join(" ")
-            .toLowerCase();
+/* ---------- Controls, confidence box, verification bar ---------- */
 
-          return (
-            <div
-              key={row.engineCode}
-              data-engine-row
-              data-search={search}
-              data-fuel={cleanText(row.fuel)}
-              data-displacement={cleanText(row.displacement)}
-              data-generations={generations.join("|")}
-              data-enquiries={enquiries}
-              data-code={cleanText(row.engineCode)}
-              data-family={cleanText(row.family)}
-              hidden={index >= 9}
-              className="grid grid-cols-[1.2fr_0.9fr_1fr_44px] items-center border-t border-[var(--color-border)] px-3 py-3"
-            >
-              <span
-                className="font-bold text-[var(--color-text)]"
-                dangerouslySetInnerHTML={{ __html: cleanText(row.engineCode) }}
+function Legend({ tones }) {
+  return (
+    <ul className={`grid grid-cols-2 gap-x-4 gap-y-2 rounded-xl border px-4 py-3 sm:flex sm:flex-wrap sm:items-center sm:justify-between lg:min-h-[var(--db-ctrl-h)] lg:py-0 ${tones.card} ${tones.text}`}>
+      {shared.legend.map((item) => (
+        <li key={item.label} className="flex items-center gap-2.5 text-[13px] lg:text-[length:var(--db-legend)]">
+          <Stars value={item.stars} tones={tones} size="h-[12px] w-[12px] lg:h-[var(--db-legend-star)] lg:w-[var(--db-legend-star)]" />
+          {item.label}
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function ConfidenceBox({ score, tones }) {
+  const paragraphs = score?.paragraphs || [];
+  const note = score?.dataNote;
+  if (!paragraphs.length && !note?.text) return null;
+  return (
+    <div
+      className={`mt-3 grid gap-5 rounded-xl border px-4 py-4 lg:mt-[var(--db-row-gap)] lg:grid-cols-[minmax(0,820fr)_minmax(0,656fr)] lg:gap-0 lg:px-[var(--db-box-px)] lg:py-[var(--db-box-py)] ${tones.card} ${tones.text}`}
+    >
+      {paragraphs.length ? (
+        <div className="flex gap-3.5 lg:gap-[calc(var(--db-box-px)*0.9)] lg:pr-[calc(var(--db-box-px)*1.6)]">
+          <span className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-[17px] font-bold lg:h-[var(--db-i)] lg:w-[var(--db-i)] ${tones.circle}`}>i</span>
+          <div className="min-w-0">
+            {score.title ? <h3 className="text-[15.5px] font-semibold lg:text-[length:var(--db-box-head)]">{cleanText(score.title)}</h3> : null}
+            {paragraphs.map((paragraph) => (
+              <p
+                key={paragraph.slice(0, 40)}
+                className={`mt-1 text-[13.5px] leading-[1.5] lg:text-[length:var(--db-box)] lg:leading-[var(--db-box-lh)] ${tones.muted}`}
+                dangerouslySetInnerHTML={{ __html: typeset(paragraph) }}
               />
-              <span className="flex items-center gap-2">
-                <span className={fuelColor(row.fuel)}>
-                  <StatIcon name="fuel" isDark={isDark} className="h-5 w-5 object-contain" />
-                </span>
-                <span dangerouslySetInnerHTML={{ __html: cleanText(row.fuel) }} />
-              </span>
-              <span className="font-heading text-[1.15rem] font-semibold text-[var(--color-text)]">
-                {enquiries ? enquiries.toLocaleString("en-GB") : "-"}
-              </span>
-              <Link href={engineHrefFor(row.engineCode, row.family)} className="text-[var(--color-text)]">
-                <StatIcon name="insight" isDark={isDark} className="h-5 w-5 object-contain" />
-              </Link>
-            </div>
-          );
-        })}
-      </div>
-      <div
-        data-engine-empty
-        hidden
-        className="border-t border-[var(--color-border)] px-3 py-5 text-center text-[15px] text-[var(--color-text-muted)]"
-      >
-        No engine codes match these filters.
-      </div>
-      {engines.length === 0 ? (
-        <div className="border-t border-[var(--color-border)] px-3 py-5 text-center text-[15px] text-[var(--color-text-muted)]">
-          No engine codes match these filters.
+            ))}
+          </div>
+        </div>
+      ) : null}
+      {note?.text ? (
+        <div className={`flex items-center gap-4 border-t pt-4 lg:border-l lg:border-t-0 lg:pl-[calc(var(--db-box-px)*2.5)] lg:pt-0 ${tones.rule}`}>
+          <div className="min-w-0 flex-1">
+            <h3 className="text-[15px] font-semibold lg:text-[length:calc(var(--db-box-head)*0.97)]">{cleanText(note.title)}</h3>
+            <p className={`mt-1.5 text-[13.5px] leading-[1.55] lg:text-[length:var(--db-box)] lg:leading-[calc(var(--db-box-lh)*1.08)] ${tones.muted}`} dangerouslySetInnerHTML={{ __html: typeset(note.text) }} />
+          </div>
+          <Image src="/model/engines/leaper-line.webp" alt="" width={327} height={132} className={`hidden h-auto w-[105px] shrink-0 sm:block ${tones.leaper}`} />
         </div>
       ) : null}
     </div>
   );
 }
 
-function SectionHeader({ title, subHeadline, isDark, sectionBg }) {
+function VerificationBar({ lines = [], link, tones }) {
+  if (!lines.length && !link?.href) return null;
   return (
-    <div className={`relative overflow-hidden ${sectionBg}`}>
-      <div className="absolute inset-y-0 right-0 w-[62%] md:w-[48%]">
-        <Image
-          src={HEADER_IMAGE}
-          alt=""
-          fill
-          className="object-cover object-right"
-          sizes="(max-width: 768px) 62vw, 48vw"
-        />
-        <div
-          className={
-            isDark
-              ? "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(11,12,12,0.82)_34%,rgba(11,12,12,0.18)_100%)]"
-              : "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(243,243,241,0.88)_34%,rgba(243,243,241,0.18)_100%)]"
-          }
-        />
-      </div>
-      <div className="relative mx-auto w-full max-w-8xl px-4 pb-3 pt-7 md:px-8 md:pb-4 md:pt-10">
-        <div className="max-w-[650px]">
-          <h2 className={`font-bold tracking-normal text-[var(--color-text)] ${sectionH2}`}>
-            <span dangerouslySetInnerHTML={{ __html: title.main }} />
-            {title.accent ? (
-              <>
-                <br />
-                <span
-                  className="text-[var(--color-chrome-bright)]"
-                  dangerouslySetInnerHTML={{ __html: title.accent }}
-                />
-              </>
-            ) : null}
-          </h2>
-          <div className="mt-3">
-            <MStripe />
+    <div
+      className={`mt-3 flex flex-col gap-3 rounded-xl border px-4 py-4 lg:mt-[var(--db-row-gap)] lg:min-h-[var(--db-bar-h)] lg:flex-row lg:items-center lg:gap-0 lg:px-[var(--db-box-px)] lg:py-2 ${tones.card} ${tones.text}`}
+    >
+      {lines.length ? (
+        <div className="flex min-w-0 flex-1 items-center gap-4 lg:gap-[calc(var(--db-box-px)*1.2)]">
+          <ShieldCheck aria-hidden="true" className="h-8 w-8 shrink-0" strokeWidth={1.5} />
+          <div className={`min-w-0 text-[13px] leading-[1.5] lg:text-[length:var(--db-box)] lg:leading-[var(--db-box-lh)] ${tones.muted}`}>
+            {lines.map((line) => (
+              <p key={line.slice(0, 40)} dangerouslySetInnerHTML={{ __html: typeset(line) }} />
+            ))}
           </div>
-          {subHeadline ? (
-            <p
-              className={`mt-3 max-w-[610px] text-[var(--color-text-muted)] ${sectionDescription}`}
-              dangerouslySetInnerHTML={{ __html: cleanText(subHeadline) }}
-            />
-          ) : null}
         </div>
-      </div>
+      ) : null}
+      {link?.href ? (
+        <Link
+          href={link.href}
+          className={`inline-flex shrink-0 items-center gap-3 text-[15px] !font-medium transition-colors lg:ml-auto lg:min-h-[44px] lg:border-l lg:pl-[calc(var(--db-box-px)*2.3)] lg:pr-[calc(var(--db-box-px)*0.6)] lg:text-[length:var(--db-bar-link)] ${tones.rule} ${tones.link}`}
+        >
+          {cleanText(link.label)}
+          <ArrowRight aria-hidden="true" className="h-5 w-5" strokeWidth={1.8} />
+        </Link>
+      ) : null}
     </div>
   );
 }
 
+/* ---------- Section ---------- */
+
 export default function EngineDatabase({ data }) {
   const { theme } = useTheme();
-  const [filters, setFilters] = useState(defaultFilters);
+  const [sort, setSort] = useState(null);
+  const [showAll, setShowAll] = useState(false);
   const engines = useMemo(() => data?.engines || [], [data]);
-  const mobileOptions = useMemo(() => filterOptions(engines), [engines]);
-  const mobileEngines = useMemo(() => filterAndSortEngines(engines, filters), [engines, filters]);
-
-  useEffect(() => {
-    const section = document.querySelector("[data-engine-database]");
-    if (!section) return undefined;
-
-    const apply = () => applyNativeMobileFilters(section);
-    const controls = [...section.querySelectorAll("[data-filter]")];
-    const reset = section.querySelector("[data-filter-reset]");
-
-    controls.forEach((control) => {
-      control.addEventListener("input", apply);
-      control.addEventListener("change", apply);
-    });
-
-    reset?.addEventListener("click", () => {
-      controls.forEach((control) => {
-        control.value = control.dataset.filter === "sort" ? "enquiries" : "";
-      });
-      apply();
-    });
-
-    section.dataset.filtersReady = "true";
-    apply();
-
-    return () => {
-      controls.forEach((control) => {
-        control.removeEventListener("input", apply);
-        control.removeEventListener("change", apply);
-      });
-    };
-  }, [engines]);
-
-  if (!data) return null;
+  const sorted = useMemo(() => {
+    if (!sort) return engines;
+    const list = [...engines].sort((a, b) => cleanText(a.engineCode).localeCompare(cleanText(b.engineCode)));
+    return sort === "desc" ? list.reverse() : list;
+  }, [engines, sort]);
+  if (!data || !engines.length) return null;
 
   const isDark = theme === "dark";
+  const tones = palette(isDark);
   const title = splitTitle(data.h2);
-  const shownDesktopCount = Math.min(10, engines.length);
-  const totalEngineCount = engines.length;
-  const sectionBg = isDark ? "bg-[var(--color-page)]" : "bg-[var(--color-page)]";
-
-  function updateFilters(next) {
-    setFilters((current) => ({ ...current, ...next }));
-  }
+  const columns = data.columns?.length === FIELDS.length ? data.columns : FIELDS;
+  const limit = shared.visibleRows;
+  const rows = showAll ? sorted : sorted.slice(0, limit);
+  const count = engines.length;
 
   return (
-    <section
-      id="engine-database"
-      data-engine-database
-      data-theme-mode={theme}
-      className={`overflow-hidden ${sectionBg} text-[var(--color-text)]`}
-    >
-      <SectionHeader title={title} subHeadline={data.subHeadline} isDark={isDark} sectionBg={sectionBg} />
-
-      <div className="relative mx-auto w-full max-w-8xl px-4 pb-7 pt-4 md:px-8 md:pb-8 md:pt-5">
-        <div className="hidden md:block">
-          <DesktopTable engines={engines} isDark={isDark} />
-
-          <div className="mt-3 flex flex-wrap items-center justify-between gap-4">
-            <button
-              type="button"
-              className="flex min-h-11 min-w-[280px] items-center justify-between rounded-md border border-[var(--color-border)] px-5 text-[14px] font-medium text-[var(--color-text)] transition-all duration-200 hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)]"
-            >
-              <span className="flex items-center gap-3">
-                <StatIcon name="database" isDark={isDark} className="h-5 w-5 object-contain" />
-                View all {totalEngineCount} engine codes
-              </span>
-              <span>v</span>
-            </button>
-            <p className="mr-auto border-l border-[var(--color-border)] pl-7 text-[12px] text-[var(--color-text-muted)]">
-              Showing {shownDesktopCount} of {totalEngineCount} engine codes
-            </p>
-            <div className="flex items-center gap-5 rounded-md border border-[var(--color-border)] px-5 py-3 text-[13px]">
-              <span>
-                <Rating value="★☆☆☆☆" /> Poor
-              </span>
-              <span>
-                <Rating value="★★★☆☆" /> Average
-              </span>
-              <span>
-                <Rating value="★★★★☆" /> Good
-              </span>
-              <span>
-                <Rating value="★★★★★" /> Excellent
-              </span>
-            </div>
+    <section id="engine-database" className="model-db relative overflow-hidden bg-[var(--color-page)] text-[var(--color-text)]">
+      <div className="mx-auto w-full max-w-[1546px] px-4 pb-12 pt-10 sm:px-6 lg:px-[var(--db-px)] lg:pb-[var(--db-pb)] lg:pt-[var(--db-pt)]">
+        {/* Header: copy left, stat cards right (reference: 544 | 911 at 1536px) */}
+        <div className="grid gap-6 lg:grid-cols-[minmax(0,544fr)_minmax(0,911fr)] lg:items-start lg:gap-[var(--db-head-gap)]">
+          <div className="lg:pt-[calc(var(--db-title)*0.2)]">
+            <h2 className={`model-db-title ${tones.text}`}>
+              <span className="block" dangerouslySetInnerHTML={{ __html: title.main }} />
+              {title.accent ? <span className={`block ${tones.accent}`} dangerouslySetInnerHTML={{ __html: title.accent }} /> : null}
+            </h2>
+            {data.subHeadline ? (
+              <p
+                className={`mt-3 max-w-[460px] text-[15px] leading-[1.6] lg:mt-[var(--db-desc-mt)] lg:max-w-[450px] lg:text-[length:var(--db-desc)] lg:leading-[var(--db-desc-lh)] ${tones.text}`}
+                dangerouslySetInnerHTML={{ __html: typeset(data.subHeadline) }}
+              />
+            ) : null}
           </div>
-
-          <div className="mt-3 flex flex-wrap items-center justify-between gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-3 text-[12px] text-[var(--color-text-muted)]">
-            <p className="flex items-center gap-3">
-              <span
-                className={`flex h-8 w-8 items-center justify-center rounded-full ${
-                  isDark ? "bg-white/10" : "bg-[#ececeb]"
-                }`}
-              >
-                <StatIcon name="note" isDark={isDark} className="h-5 w-5 object-contain" />
-              </span>
-              All enquiries are from 2025 (to date) and verified via our internal system. Recon costs are supply only and
-              exclude fitting.
-            </p>
-            <Link
-              href="/data/methodology"
-              className="flex items-center gap-2 font-bold text-[var(--color-text)] transition-all duration-200 hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)]"
-            >
-              How we collect engine data{" "}
-              <StatIcon name="insight" isDark={isDark} className="h-4 w-4 object-contain" />
-            </Link>
-          </div>
+          {data.stats?.length ? (
+            <ul className="grid grid-cols-2 gap-3 md:grid-cols-[minmax(0,209fr)_minmax(0,201fr)_minmax(0,206fr)_minmax(0,234fr)] lg:gap-[var(--db-stat-gap)]">
+              {data.stats.map((stat) => (
+                <StatCard key={stat.label} stat={stat} tones={tones} />
+              ))}
+            </ul>
+          ) : null}
         </div>
 
-        <div className="md:hidden">
-          <div className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-4">
-            <div className="flex items-center gap-2.5">
-              <span
-                className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full ${
-                  isDark ? "bg-white/10" : "bg-[#ececeb]"
-                }`}
-              >
-                <StatIcon name="database" isDark={isDark} className="h-10 w-10 object-contain" />
-              </span>
-              <h3 className="flex-1 text-left font-heading text-[1.55rem] font-semibold leading-[1.1]">
-                Proprietary UK Data
-              </h3>
-            </div>
-            <p className="mt-3 text-center text-[14px] leading-[1.5]">
-              Every figure below is powered by real UK owner enquiries in 2025. This is data you won&apos;t find anywhere
-              else.
-            </p>
-          </div>
-
-          <div className="mt-5">
-            <MobileControls
-              filters={filters}
-              options={mobileOptions}
-              onChange={updateFilters}
-              onReset={() => setFilters(defaultFilters)}
-              isDark={isDark}
-            />
-          </div>
-
-          <div className="mt-5">
-            <MobileTable engines={mobileEngines} isDark={isDark} />
-          </div>
-
-          <div className="mt-6 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-5 text-[15px] leading-[1.55]">
-            <h3 className="font-bold uppercase text-[var(--color-chrome-bright)]">Data sources:</h3>
-            <div className="mt-4 space-y-4">
-              <p className="flex gap-4">
-                <StatIcon name="chart" isDark={isDark} className="h-5 w-5 object-contain" />
-                <span>
-                  <strong>Enquiry volumes:</strong>
-                  <br />
-                  Proprietary UK enquiry data 2025 [JAG-VERIFIED]
-                </span>
-              </p>
-              <p className="flex gap-4">
-                <StatIcon name="pound" isDark={isDark} className="h-5 w-5 object-contain" />
-                <span>
-                  <strong>Costs:</strong>
-                  <br />
-                  Engine Replacement Economics [JAG-QUOTE]
-                </span>
-              </p>
-              <p className="flex gap-4">
-                <StatIcon name="database" isDark={isDark} className="h-5 w-5 object-contain" />
-                <span>
-                  <strong>Engine codes:</strong>
-                  <br />
-                  Cross-referenced from verified factory data
-                </span>
-              </p>
-            </div>
-          </div>
+        <div className="mt-6 lg:mt-[var(--db-table-mt)]">
+          <EngineTable rows={rows} columns={columns} tones={tones} sort={sort} onSort={() => setSort((value) => (value === null ? "asc" : value === "asc" ? "desc" : null))} />
+          <ul className="grid gap-3 sm:grid-cols-2 lg:hidden">
+            {rows.map((engine) => (
+              <EngineCard key={engine.engineCode} engine={engine} columns={columns} tones={tones} />
+            ))}
+          </ul>
         </div>
+
+        {/* View all / count / rating legend */}
+        <div className="mt-3 grid gap-3 lg:mt-[var(--db-row-gap)] xl:grid-cols-[minmax(0,795fr)_minmax(0,681fr)] xl:gap-[var(--db-head-gap)]">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+            {count > limit ? (
+              <button
+                type="button"
+                onClick={() => setShowAll((value) => !value)}
+                aria-expanded={showAll}
+                className={`flex min-h-[44px] items-center gap-3 rounded-lg border px-4 text-[14.5px] font-medium lg:min-h-[var(--db-ctrl-h)] lg:min-w-[267px] lg:text-[length:var(--db-ctrl)] ${tones.button} ${tones.card}`}
+              >
+                <List aria-hidden="true" className="h-[18px] w-[18px]" strokeWidth={1.7} />
+                <span className="flex-1 text-left">{fillTemplate(showAll ? shared.viewLessLabel : shared.viewAllLabel, { count })}</span>
+                {showAll ? <ChevronUp aria-hidden="true" className="h-4 w-4" strokeWidth={2} /> : <ChevronDown aria-hidden="true" className="h-4 w-4" strokeWidth={2} />}
+              </button>
+            ) : null}
+            <p className={`text-[14px] lg:text-[length:calc(var(--db-ctrl)*0.97)] ${tones.text}`}>{fillTemplate(shared.showingLabel, { shown: rows.length, count })}</p>
+          </div>
+          <Legend tones={tones} />
+        </div>
+
+        <ConfidenceBox score={data.confidenceScore} tones={tones} />
+        <VerificationBar lines={data.confidenceScore?.verification} link={data.methodologyLink} tones={tones} />
       </div>
     </section>
   );

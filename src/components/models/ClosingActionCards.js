@@ -2,280 +2,215 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import MStripe from "@/components/reusableComponents/MStripe";
+import { ArrowRight, Check } from "lucide-react";
+import { Handshake, Search, Stethoscope } from "@/components/models/brandIcons";
 import { useTheme } from "@/components/shared/themeProvider";
-import HomeIcon from "@/components/home/homeIcons";
-import { sectionBody, sectionButton, sectionDescription } from "@/components/models/sectionTypography";
+import CarOnBackground from "@/components/shared/CarOnBackground";
+import { outsideTags } from "@/components/models/outsideTags";
 
-// Monochrome cards, as in the reference: search, diagnose and specialists, each with its own art.
-const cardThemes = [
-  { cta: "Explore Now", icon: "search", art: "lineup" },
-  { cta: "Start Diagnosis", icon: "diagnose", art: "engine" },
-  { cta: "Compare Specialists", icon: "vetted-specialist", art: "map" },
-];
+/*
+ * Model page "Ready to Make a Decision?" (section 14), built from the 1536px reference: one card holding the
+ * title (second line in the silver accent), divider and two-line copy, the model's car in Jaguar's scene top
+ * right, and three action cards (generations line-up, diagnosis checklist + engine, UK specialists map),
+ * each with an icon tile, title, short rule, text and arrow link. Sizes come from the --ca-* tokens in
+ * globals.css. Below md the action cards stack; the header scene becomes a band under the copy.
+ */
 
-const DIAGNOSIS_STEPS = ["Symptoms", "Engine Code", "Mileage", "History"];
+const CARD_ICONS = { search: Search, diagnose: Stethoscope, specialists: Handshake };
 
 function cleanText(text = "") {
   return String(text ?? "")
     .replaceAll("â†’", "")
-    .replace(/\s+/g, " ")
+    .replace(/[ \t]+/g, " ")
     .trim();
 }
 
+function typeset(text = "") {
+  return outsideTags(cleanText(text), (part) =>
+    part.replace(/\s-\s/g, " — ").replace(/([A-Za-z])-([A-Za-z])/g, "$1‑$2"),
+  );
+}
+
+// "Ready to Make a Decision?" -> "Ready to Make" / accent "a Decision?"
 function splitTitle(title = "") {
-  const clean = cleanText(title);
-  const marker = "a Decision?";
-  const index = clean.indexOf(marker);
-
-  if (index === -1) return { before: clean, accent: "" };
-
-  return {
-    before: clean.slice(0, index).trim(),
-    accent: clean.slice(index).trim(),
-  };
+  const match = cleanText(title).match(/^(.*?)\s+(a\s+Decision\??)$/i);
+  return match ? { lead: match[1], accent: match[2] } : { lead: cleanText(title), accent: "" };
 }
 
-function splitCardTitle(title = "") {
-  const clean = cleanText(title);
-  const diagnoseMatch = clean.match(/^(Diagnose)\s+(My\s+.+)$/i);
-  if (diagnoseMatch) {
-    return { before: diagnoseMatch[1], accent: diagnoseMatch[2], after: "" };
-  }
-
-  const exploreMatch = clean.match(/^(Explore)\s+(.+?)\s+(Generations)$/i);
-  if (exploreMatch) {
-    return { before: exploreMatch[1], accent: exploreMatch[2], after: exploreMatch[3] };
-  }
-
-  const compareMatch = clean.match(/^(Compare)\s+(.+)$/i);
-  if (compareMatch) {
-    return { before: compareMatch[1], accent: compareMatch[2], after: "" };
-  }
-
-  return { before: clean, accent: "", after: "" };
+function palette(isDark) {
+  return isDark
+    ? {
+        text: "text-white",
+        muted: "text-white/[0.8]",
+        accent: "bg-[linear-gradient(180deg,#e4e4e1_0%,#9a9a97_100%)] bg-clip-text text-transparent",
+        outer: "border-white/[0.14] bg-[rgba(14,16,17,0.92)]",
+        card: "border-white/[0.14] bg-[#151718] hover:border-white/[0.3]",
+        tile: "border-white/[0.16] bg-[#1d1f20]",
+        rule: "bg-white",
+        list: "border-white/[0.14] bg-[#1d1f20] text-white/85",
+        tick: "bg-white text-[#111210]",
+        fade: "from-[#151718]",
+      }
+    : {
+        text: "text-[#111210]",
+        muted: "text-[#2c2d2b]",
+        accent: "bg-[linear-gradient(180deg,#8a8b87_0%,#6b6c68_100%)] bg-clip-text text-transparent",
+        outer: "border-[#ebebe8] bg-white shadow-[0_6px_20px_rgba(16,18,16,0.04)]",
+        card: "border-[#ebebe8] bg-[#fbfbfa] shadow-[0_6px_18px_rgba(16,18,16,0.06)] hover:shadow-[0_12px_28px_rgba(16,18,16,0.1)]",
+        tile: "border-[#ececea] bg-white shadow-[0_6px_16px_rgba(16,18,16,0.08)]",
+        rule: "bg-[#111210]",
+        list: "border-[#e6e6e3] bg-white text-[#222]",
+        tick: "bg-[#111210] text-white",
+        fade: "from-[#fbfbfa]",
+      };
 }
 
-function ArrowIcon({ className = "h-6 w-6" }) {
+/* ---------- Card art ---------- */
+
+// UK map with specialist pins (cut from the reference), one version per theme.
+function UkMap({ isDark }) {
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M5 12h14m-6-6 6 6-6 6" />
-    </svg>
-  );
-}
-
-function UkMapArt({ isDark }) {
-  const pin = isDark ? "#e6e6e4" : "#111111";
-  const pins = [
-    [56, 24],
-    [66, 39],
-    [58, 51],
-    [72, 58],
-    [50, 66],
-    [64, 72],
-    [76, 76],
-  ];
-
-  return (
-    <svg aria-hidden="true" viewBox="0 0 180 220" className="absolute bottom-3 right-3 h-[82%] w-[48%] opacity-80 md:right-8 md:w-[44%]">
-      <path
-        d="M80 10 65 24l9 15-18 12 10 17-16 13 20 13-11 20 22 8-16 28 28 8 10 31 24-17 25 13-2-31 20-11-19-21 10-28-20-16 4-28-28-1-10-28-27 8Z"
-        fill={isDark ? "#3a3a38" : "#e2e2e0"}
+    <span aria-hidden="true" className="absolute right-[3%] top-[3%] block h-[88%] w-[48%]">
+      <Image
+        src={isDark ? "/model/uk-specialists-map-dark.webp" : "/model/uk-specialists-map-light.webp"}
+        alt=""
+        fill
+        sizes="(min-width: 768px) 230px, 45vw"
+        className="object-contain object-right-top"
       />
-      <path d="M33 105 16 121l22 8 17-12-22-12ZM72 189l-34 13 31 9 31-13-28-9Z" fill={isDark ? "#3a3a38" : "#e2e2e0"} opacity="0.72" />
-      {pins.map(([cx, cy]) => (
-        <g key={`${cx}-${cy}`} transform={`translate(${cx} ${cy})`}>
-          <path d="M0-10c5.2 0 9 3.8 9 8.5C9 5-0 13-0 13S-9 5-9-1.5C-9-6.2-5.2-10 0-10Z" fill={pin} />
-          <circle r="3" fill={isDark ? "#1a1a1a" : "white"} />
-        </g>
-      ))}
-    </svg>
+    </span>
   );
 }
 
-function DiagnosisList({ isDark }) {
-  return (
-    <div
-      className={`rounded-md border px-2.5 py-2 text-[11px] leading-none shadow-[0_8px_18px_rgba(0,0,0,0.08)] ${
-        isDark ? "border-white/12 bg-[#1b1b1b] text-white/80" : "border-[#e4e4e2] bg-white text-[#222]"
-      }`}
-    >
-      <p className={`mb-1.5 text-[9px] font-semibold uppercase tracking-[0.08em] ${isDark ? "text-white/50" : "text-[#8a8a88]"}`}>
-        Diagnosis
-      </p>
-      <ul className="space-y-1.5">
-        {DIAGNOSIS_STEPS.map((step) => (
-          <li key={step} className="flex items-center gap-1.5">
-            <span
-              aria-hidden="true"
-              className={`flex h-3 w-3 items-center justify-center rounded-[2px] text-[8px] ${
-                isDark ? "bg-white text-black" : "bg-black text-white"
-              }`}
-            >
-              {"\u2713"}
-            </span>
-            {step}
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
-
-function CardArt({ art, heroCar, engineImage, isDark }) {
-  if (art === "lineup" && heroCar) {
-    // The same picture as this model's hero.
+function CardArt({ card, data, tones }) {
+  if (card.art === "lineup" && data.heroCar?.src) {
+    // The model's line-up photo along the top of the card, as in the reference.
     return (
-      <div className="pointer-events-none absolute right-3 top-4 w-[62%] md:right-4 md:top-5">
-        <Image src={heroCar.src} alt="" width={heroCar.width} height={heroCar.height} className="h-auto w-full" sizes="(min-width: 768px) 20vw, 60vw" />
+      <div aria-hidden="true" className="absolute inset-x-0 top-[78px] h-[110px] sm:top-[13%] sm:h-[40%]">
+        <Image src={data.heroCar.src} alt="" fill sizes="(min-width: 768px) 470px, 90vw" className="object-contain object-right-bottom px-[2%]" />
       </div>
     );
   }
-  if (art === "engine" && engineImage) {
+  if (card.art === "engine") {
     return (
-      <div className="pointer-events-none absolute right-2 top-3 flex w-[66%] items-start gap-2 md:right-3 md:top-4">
-        <div className="mt-1 hidden shrink-0 sm:block">
-          <DiagnosisList isDark={isDark} />
-        </div>
-        <div className="relative aspect-square min-w-0 flex-1">
-          <Image src={engineImage} alt="" fill className="object-contain object-top" sizes="(min-width: 768px) 16vw, 40vw" />
-        </div>
+      // Starts right of the icon tile (reference), so the checklist never slides under it.
+      <div aria-hidden="true" className="absolute left-[100px] right-[3%] top-[20px] flex h-[150px] max-w-[420px] sm:top-[5%] sm:h-[52%] items-start gap-2 lg:left-[calc(var(--ca-card-in)+var(--ca-tile)+14px)]">
+        {card.steps?.length ? (
+          <div className={`mt-[1%] w-[46%] shrink-0 rounded-md border px-2.5 py-2 text-[11px] leading-none shadow-[0_8px_18px_rgba(0,0,0,0.06)] lg:text-[12px] ${tones.list}`}>
+            <p className="mb-2 text-[9px] font-semibold uppercase tracking-[0.08em] opacity-60">Diagnosis</p>
+            <ul className="space-y-2.5">
+              {card.steps.map((step) => (
+                <li key={step} className="flex items-center gap-2">
+                  <span className={`flex h-3 w-3 shrink-0 items-center justify-center rounded-[2px] ${tones.tick}`}>
+                    <Check className="h-2.5 w-2.5" strokeWidth={3} />
+                  </span>
+                  {step}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
+        {data.engineImage ? (
+          <span className="relative h-full min-w-0 flex-1">
+            <Image src={data.engineImage} alt="" fill sizes="(min-width: 768px) 200px, 40vw" className="object-contain object-top" />
+          </span>
+        ) : null}
       </div>
     );
   }
-  if (art === "map") return <UkMapArt isDark={isDark} />;
+  if (card.art === "map") return <UkMap isDark={tones.text === "text-white"} />;
   return null;
 }
 
-function ActionCard({ card, index, heroCar, engineImage, isDark }) {
-  const theme = cardThemes[index] || cardThemes[0];
-  const titleParts = splitCardTitle(card.title);
-  const title = [titleParts.before, titleParts.accent, titleParts.after].filter(Boolean).join(" ");
-
+function ActionCard({ card, data, tones }) {
+  const Icon = CARD_ICONS[card.icon] || Search;
   return (
     <Link
       href={card.href || "#"}
-      className={`group relative min-h-[230px] overflow-hidden rounded-md border p-4 transition-all duration-200 hover:-translate-y-0.5 md:min-h-[300px] md:p-5 ${
-        isDark
-          ? "border-[var(--color-border)] bg-[var(--color-surface-raised)] hover:border-white/25"
-          : "border-[#e4e4e2] bg-white shadow-[0_10px_28px_rgba(16,18,16,0.08)] hover:shadow-[0_16px_34px_rgba(16,18,16,0.14)]"
-      }`}
+      className={`group relative flex min-h-[300px] flex-col overflow-hidden rounded-xl border px-5 pb-6 pt-5 transition-shadow sm:min-h-[330px] lg:min-h-[var(--ca-card-h)] lg:px-[var(--ca-card-in)] lg:pb-[calc(var(--ca-card-in)*1.3)] lg:pt-[var(--ca-card-in)] ${tones.card} ${tones.text}`}
     >
-      <CardArt art={theme.art} heroCar={heroCar} engineImage={engineImage} isDark={isDark} />
-      <div className="relative z-10 flex h-full flex-col items-start">
-        <span
-          className={`flex h-16 w-16 items-center justify-center rounded-md shadow-[0_10px_24px_rgba(16,18,16,0.12)] md:h-20 md:w-20 ${
-            isDark ? "bg-[#1b1b1b]" : "bg-white"
-          }`}
-        >
-          <HomeIcon name={theme.icon} isDark={isDark} className="h-16 w-16 md:h-20 md:w-20" />
-        </span>
-        <h3
-          className={`mt-auto pt-16 text-[20px] font-bold leading-[1.1] md:pt-20 md:text-[24px] ${isDark ? "text-white" : "text-black"}`}
-          dangerouslySetInnerHTML={{ __html: title }}
-        />
-        <span className={`mt-3 block h-[3px] w-10 md:w-12 ${isDark ? "bg-white" : "bg-black"}`} />
+      <CardArt card={card} data={data} tones={tones} />
+      <span className={`relative z-10 flex h-16 w-16 items-center justify-center rounded-xl border lg:h-[var(--ca-tile)] lg:w-[var(--ca-tile)] ${tones.tile}`}>
+        <Icon aria-hidden="true" className="h-[56%] w-[56%]" strokeWidth={1.6} />
+      </span>
+      {/* soft fade so the copy always reads over the art */}
+      <div aria-hidden="true" className={`absolute inset-x-0 bottom-0 h-[52%] bg-gradient-to-t ${tones.fade} to-transparent`} />
+      <div className="relative z-10 mt-auto pl-1 pt-24 lg:pl-[calc(var(--ca-card-in)*0.25)]">
+        <h3 className="text-[21px] font-semibold leading-tight tracking-[-0.01em] lg:text-[length:var(--ca-card-title)]" dangerouslySetInnerHTML={{ __html: typeset(card.title) }} />
+        <span aria-hidden="true" className={`mt-3 block h-[2px] w-10 lg:mt-[var(--ca-card-div-mt)] ${tones.rule}`} />
         {card.text ? (
           <p
-            className={`mt-3 max-w-[360px] ${sectionBody} md:text-[17px] ${isDark ? "text-white/80" : "text-[var(--color-text)]"}`}
-            dangerouslySetInnerHTML={{ __html: cleanText(card.text) }}
+            className={`mt-3.5 max-w-[22em] text-[15.5px] leading-[1.65] lg:mt-[calc(var(--ca-card-div-mt)*1.5)] lg:text-[length:var(--ca-card-text)] lg:leading-[var(--ca-card-text-lh)] ${tones.muted}`}
+            dangerouslySetInnerHTML={{ __html: typeset(card.text) }}
           />
         ) : null}
-        <span className={`mt-4 inline-flex items-center gap-3 font-bold md:gap-4 ${sectionButton} ${isDark ? "text-white" : "text-black"}`}>
-          {theme.cta}
-          <ArrowIcon className="h-5 w-5 transition-transform duration-200 group-hover:translate-x-1 md:h-6 md:w-6" />
+        <span className="mt-4 inline-flex items-center gap-4 text-[16px] font-semibold lg:mt-[calc(var(--ca-card-div-mt)*1.2)] lg:text-[length:var(--ca-card-cta)]">
+          {cleanText(card.cta)}
+          <ArrowRight aria-hidden="true" className="h-6 w-6 transition-transform group-hover:translate-x-1" strokeWidth={1.6} />
         </span>
       </div>
     </Link>
   );
 }
 
+/* ---------- Section ---------- */
+
 export default function ClosingActionCards({ data }) {
   const { theme } = useTheme();
+  if (!data?.cards?.length) return null;
+
   const isDark = theme === "dark";
-
-  if (!data) return null;
-
+  const tones = palette(isDark);
   const title = splitTitle(data.h2);
-  const sectionBg = isDark ? "bg-[var(--color-page)]" : "bg-[#ececea]";
+  const lines = cleanText(data.subHeadline).split("\n").filter(Boolean);
+  const scene = data.sceneCar ? (
+    <CarOnBackground
+      src={data.sceneCar}
+      isDark={isDark}
+      className="absolute inset-0"
+      bgClassName="object-cover object-[62%_70%]"
+      carClassName="left-[30%] right-[2%] top-[2%] bottom-[8%]"
+      sizes="(min-width: 1024px) 990px, 100vw"
+    />
+  ) : null;
 
   return (
-    <section className={`overflow-x-hidden ${sectionBg}`}>
-      <div className={`relative overflow-hidden ${sectionBg}`}>
-        <div className="absolute inset-y-0 right-0 w-[62%] md:w-[48%]">
-          <Image
-            src="/home-image/sec2-bg.webp"
-            alt=""
-            fill
-            className="object-cover object-right"
-            sizes="(max-width: 768px) 62vw, 48vw"
-          />
-          <div
-            className={
-              isDark
-                ? "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(11,12,12,0.82)_34%,rgba(11,12,12,0.18)_100%)]"
-                : "absolute inset-0 bg-[linear-gradient(90deg,#ececea_0%,rgba(236,236,234,0.88)_34%,rgba(236,236,234,0.18)_100%)]"
-            }
-          />
-        </div>
-
-        <div className="relative mx-auto w-full max-w-8xl px-4 pb-3 pt-5 md:px-6 md:pb-3.5 md:pt-7 lg:px-8">
-          <div className="max-w-[620px]">
-            <p
-              className={`text-[0.64rem] font-bold uppercase tracking-[0.14em] ${
-                isDark ? "text-white/55" : "text-[var(--color-text-muted)]"
-              }`}
-            >
-              Next Steps
-            </p>
-            <h2
-              className={`mt-1.5 text-[1.55rem] font-bold leading-[1.02] sm:text-[1.85rem] md:text-[2.35rem] md:leading-[0.98] lg:text-[2.5rem] ${
-                isDark ? "text-white" : "text-[var(--color-text)]"
-              }`}
-            >
-              <span dangerouslySetInnerHTML={{ __html: title.before }} />
-              {title.accent ? (
-                <>
-                  <br />
-                  <span className="text-[var(--color-chrome-bright)]" dangerouslySetInnerHTML={{ __html: title.accent }} />
-                </>
-              ) : null}
-            </h2>
-            <div className="mt-2.5">
-              <MStripe />
+    <section id="next-steps" className="model-close relative bg-[var(--color-page)] text-[var(--color-text)]">
+      <div className="mx-auto w-full max-w-[1546px] px-4 pb-12 pt-4 sm:px-6 lg:px-[var(--ca-px)] lg:pb-[calc(var(--ca-gap)*2.5)] lg:pt-[var(--ca-gap)]">
+        <div className={`relative isolate overflow-hidden rounded-xl border pb-4 lg:pb-[var(--ca-pb)] ${tones.outer} ${tones.text}`}>
+          {/* lg+: the car scene across the top right, fading into the card on its left and bottom */}
+          {scene ? (
+            <div aria-hidden="true" className="absolute right-0 top-0 -z-10 hidden h-[var(--ca-scene-h)] w-[min(var(--ca-scene-w),66%)] lg:block">
+              {scene}
+              <div className={`absolute inset-y-0 left-0 w-[34%] bg-gradient-to-r ${isDark ? "from-[rgba(14,16,17,1)]" : "from-white"} to-transparent`} />
+              <div className={`absolute inset-x-0 bottom-0 h-[22%] bg-gradient-to-t ${isDark ? "from-[rgba(14,16,17,1)]" : "from-white"} to-transparent`} />
             </div>
-            <p
-              className={`mt-2 max-w-[500px] ${sectionDescription} md:text-[17px] ${
-                isDark ? "text-white/75" : "text-[var(--color-text-muted)]"
-              }`}
-            >
-              Everything you need to choose with confidence.
-              <br />
-              Data. Honesty. Specialists. All in one place.
-            </p>
+          ) : null}
+
+          <div className="px-5 pt-7 sm:px-6 lg:px-[var(--ca-card-px)] lg:pt-[var(--ca-pt)]">
+            <h2 className={`model-close-title ${tones.text}`}>
+              <span className="block" dangerouslySetInnerHTML={{ __html: typeset(title.lead) }} />
+              {title.accent ? <span className={`block ${tones.accent}`}>{title.accent}</span> : null}
+            </h2>
+            <span aria-hidden="true" className={`mt-4 block h-[2px] w-14 lg:mt-[var(--ca-div-mt)] ${tones.rule}`} />
+            {lines.length ? (
+              <p className={`mt-5 text-[16px] leading-[1.75] lg:mt-[var(--ca-desc-mt)] lg:text-[length:var(--ca-desc)] lg:leading-[var(--ca-desc-lh)] ${tones.muted}`}>
+                {lines.map((line, index) => (
+                  <span key={line} className="block" dangerouslySetInnerHTML={{ __html: typeset(line) + (index < lines.length - 1 ? " " : "") }} />
+                ))}
+              </p>
+            ) : null}
+          </div>
+
+          {/* Phones / tablets: the scene as a band under the copy */}
+          {scene ? <div aria-hidden="true" className="relative mt-5 aspect-[16/9] sm:aspect-[16/7] lg:hidden">{scene}</div> : null}
+
+          <div className="mt-5 grid gap-4 px-4 sm:px-6 lg:mt-[var(--ca-cards-mt)] lg:grid-cols-3 lg:gap-[var(--ca-gap)] lg:px-[var(--ca-cards-px)]">
+            {data.cards.map((card) => (
+              <ActionCard key={card.title} card={card} data={data} tones={tones} />
+            ))}
           </div>
         </div>
-      </div>
-
-      <div className="mx-auto w-full min-w-0 max-w-8xl px-4 pb-5 pt-2 md:px-6 md:pb-6 md:pt-2.5 lg:px-8">
-        <div className="grid gap-4 md:grid-cols-3">
-          {(data.cards || []).map((card, index) => (
-            <ActionCard
-              key={card.title || card.href}
-              card={card}
-              index={index}
-              heroCar={data.heroCar}
-              engineImage={data.engineImage}
-              isDark={isDark}
-            />
-          ))}
-        </div>
-        {data.footerNote ? (
-          <p
-            className={`mt-4 text-center text-[0.82rem] ${isDark ? "text-white/60" : "text-[var(--color-text-muted)]"}`}
-            dangerouslySetInnerHTML={{ __html: cleanText(data.footerNote) }}
-          />
-        ) : null}
       </div>
     </section>
   );

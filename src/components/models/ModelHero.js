@@ -1,115 +1,196 @@
 "use client";
 
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { heroBackground } from "@/components/shared/carImage";
-import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
-import HeroRegCta from "@/components/shared/HeroRegCta";
 import { modelLabelFromData } from "@/components/shared/SectionQuoteCta";
-import { sectionDescription, sectionH1 } from "@/components/models/sectionTypography";
+import { splitStat as parseStat } from "@/components/models/statText";
 
-const trustStripIconKeys = [
-  "most-enquired",
-  "generations",
-  "engine-codes",
-  "engine-finders",
-];
+/*
+ * Model page hero. Desktop (xl) values are taken 1:1 from the 1536px brand reference:
+ * pill 63px tall, title 79px line pitch, copy 19/31px, CTA 328x64, stats card 204px with 95px icon circles.
+ * Below xl everything scales down; under lg the photo becomes a full-bleed band under the copy.
+ */
+
+// Same artwork as the home hero stats: bar chart, wrench, book, trophy.
+const STAT_ICONS = ["real-inquiries", "vetted-specialist", "generation-honest-rated", "engine-finders"];
+
+// Every scene is shown in the frame of the reference photo, so all models compose the same way.
+const SCENE_ASPECT = "aspect-[916/661]";
+
+// "2017-Present" -> "2017–Present" (date ranges take an en dash).
+function typeset(text = "") {
+  return String(text).replace(/(\d{4})\s*-\s*(\d{4}|Present)/g, "$1–$2");
+}
 
 function splitTagPill(tagPill = "") {
-  const parts = String(tagPill).split(" • ");
-
-  return {
-    brand: parts[0] || "Jaguar",
-    model: parts[1] || "",
-    years: parts[2] || "",
-    generations: parts[3] || "",
-    engines: parts.slice(4).join(" • "),
-  };
+  const parts = typeset(tagPill).split(/\s*•\s*/).filter(Boolean);
+  return { meta: parts.slice(0, 4), engines: parts.slice(4) };
 }
 
-function splitStat(label = "") {
-  const cleaned = String(label);
-  const [main, detail = ""] = cleaned.split(/\s+[--]\s+/);
-  const [value, ...rest] = main.split(" ");
-  const hasValue = /[0-9+]/.test(value);
-
-  return {
-    value: hasValue ? value : "",
-    label: hasValue ? rest.join(" ") : main,
-    detail: detail.trim(),
-  };
+// "E-Pace Engines - The Complete UK Guide" -> lead "E-Pace Engines –", rest "The Complete", accent "UK Guide".
+function splitTitle(title = "") {
+  const match = String(title).match(/^(.*?)\s+[-–—]\s+(.*)$/);
+  if (!match) return { lead: title, rest: "", accent: "" };
+  const [, lead, tail] = match;
+  const ukIndex = tail.indexOf("UK ");
+  const words = tail.split(" ");
+  const cut = ukIndex > 0 ? ukIndex : tail.length - words.slice(-2).join(" ").length;
+  // Non-breaking space: the dash never drops onto a line of its own.
+  return { lead: `${lead} –`, rest: tail.slice(0, cut).trim(), accent: tail.slice(cut).trim() };
 }
 
-function MetaSeparator({ isDark }) {
+// "140+ Enquiries (2025) [JAG-VERIFIED]" -> value "140+", label "Enquiries (2025)", detail "[JAG-VERIFIED] — …".
+// "Part of Engine Finders" (no number) -> prefix "Part of", label "Engine Finders".
+function splitStat(item) {
+  const { verified, ...stat } = parseStat(item);
+  // Non-breaking hyphens keep "E-Pace" / "Most-Enquired" whole; the verified tag keeps its own line.
+  const noBreak = (value) => String(value).replace(/-/g, "‑");
+  const extra = item?.detail ? noBreak(item.detail) : "";
+  const detail = verified
+    ? `<span class="whitespace-nowrap">[JAG‑VERIFIED]${extra ? " —" : ""}</span>${extra ? `<br />${extra}` : ""}`
+    : extra;
+  return { ...stat, detail };
+}
+
+function ArrowIcon({ className = "h-5 w-5" }) {
   return (
-    <span aria-hidden="true" className={isDark ? "text-white/35" : "text-[var(--color-chrome)]"}>
-      {"\u2022"}
-    </span>
+    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M4 12h16m-6-6 6 6-6 6" />
+    </svg>
+  );
+}
+
+function TagPill({ tagPill, isDark }) {
+  const { meta, engines } = splitTagPill(tagPill);
+  const items = [
+    ...meta.map((text, index) => ({ text, icon: index === 0 ? "shield" : null })),
+    ...engines.map((text, index) => ({ text, icon: index === 0 ? "engine" : null })),
+  ];
+
+  // Each item carries its own leading dot inside a gap the list pulls left by; the pill clips
+  // that gap, so whichever item starts a wrapped line (phones) never shows a dangling separator.
+  return (
+    <div
+      className={`inline-flex max-w-full items-center rounded-[10px] border px-3.5 py-2.5 sm:px-4 sm:py-3 xl:min-h-[63px] xl:px-[20px] xl:py-0 ${
+        isDark
+          ? "border-white/[0.16] bg-[rgba(10,10,10,0.55)] text-white/90 backdrop-blur-md"
+          : "border-[#e2e2df] bg-white/80 text-[#1c1d1b] shadow-[0_2px_10px_rgba(16,18,16,0.04)] backdrop-blur-md"
+      }`}
+    >
+      <div className="overflow-hidden">
+        <ul className="-ml-[22px] flex flex-wrap items-center gap-y-1.5 text-[13px] leading-[1.5] sm:text-[14px] lg:text-[15px] xl:-ml-[36px] xl:text-[16px]">
+          {items.map((item, index) => (
+            <li key={`${item.text}-${index}`} className="relative inline-flex items-center whitespace-nowrap pl-[22px] xl:pl-[36px]">
+              <span
+                aria-hidden="true"
+                className={`absolute left-[9px] top-1/2 h-[3px] w-[3px] -translate-y-1/2 rounded-full xl:left-[16px] xl:h-1 xl:w-1 ${isDark ? "bg-white/70" : "bg-[#2a2b29]"}`}
+              />
+              {item.icon ? (
+                <HomeIcon
+                  name={item.icon}
+                  isDark={isDark}
+                  className="mr-2 h-[26px] w-[26px] sm:h-7 sm:w-7 xl:mr-[13px] xl:h-[30px] xl:w-[30px]"
+                />
+              ) : null}
+              <span dangerouslySetInnerHTML={{ __html: item.text }} />
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
   );
 }
 
 function HeroTitle({ title, isDark }) {
-  const guideIndex = title.indexOf("UK Guide");
-  const textClass = isDark ? "text-white" : "text-[var(--color-text)]";
-
-  if (guideIndex === -1) {
-    return (
-      <h1
-        className={`max-w-[720px] font-bold tracking-normal ${sectionH1} ${textClass}`}
-        dangerouslySetInnerHTML={{ __html: title }}
-      />
-    );
-  }
+  const { lead, rest, accent } = splitTitle(title);
+  const accentClass = isDark
+    ? "bg-[linear-gradient(180deg,#b9b9b6_0%,#7e7e7b_100%)]"
+    : "bg-[linear-gradient(180deg,#8a8b87_0%,#6b6c68_100%)]";
+  // Titles longer than the reference ("E-Pace Engines – The Complete UK Guide") get a smaller size
+  // and a narrower measure, so every line still ends left of the cars instead of running over them.
+  const isLong = lead.length > 20 || `${rest} ${accent}`.trim().length > 24;
+  // Short accents ("UK Guide") never break; long ones ("UK EV Ownership Guide") take their own line
+  // and only wrap where a phone is too narrow to hold them.
+  const accentWrap = accent.length <= 12 ? "whitespace-nowrap" : "block sm:whitespace-nowrap";
 
   return (
-    <h1 className={`max-w-[760px] font-bold tracking-normal ${sectionH1} ${textClass}`}>
-      <span dangerouslySetInnerHTML={{ __html: title.slice(0, guideIndex) }} />
-      <span
-        className="text-[var(--color-chrome-bright)]"
-        dangerouslySetInnerHTML={{ __html: title.slice(guideIndex) }}
-      />
+    <h1 className={`model-hero-title ${isLong ? "model-hero-title--long" : ""} text-[var(--color-text)]`}>
+      <span className="block" dangerouslySetInnerHTML={{ __html: lead }} />
+      {rest || accent ? (
+        <span className="block">
+          {rest ? <span dangerouslySetInnerHTML={{ __html: rest }} /> : null}{" "}
+          {accent ? (
+            <span
+              className={`${accentClass} ${accentWrap} bg-clip-text text-transparent [-webkit-box-decoration-break:clone] [box-decoration-break:clone]`}
+              dangerouslySetInnerHTML={{ __html: accent }}
+            />
+          ) : null}
+        </span>
+      ) : null}
     </h1>
   );
 }
 
-function StatCard({ item, index, isDark }) {
-  const stat = splitStat(item.label);
-  const iconKey = trustStripIconKeys[index] || "real-inquiries";
+function SubHeadline({ html, isDark }) {
+  const formatted = String(html || "")
+    .replace(/\s-\s/g, " — ")
+    .replace(/\[JAG-VERIFIED\]/g, '<strong class="whitespace-nowrap font-semibold text-[var(--color-text)]">[JAG-VERIFIED]</strong>');
 
   return (
-    <li
-      className={`flex flex-col items-center gap-1.5 border-r px-1 py-0.5 text-center last:border-r-0 md:flex-row md:items-center md:gap-2.5 md:px-4 md:py-3 md:text-left ${
-        isDark ? "border-white/12" : "border-[var(--color-chrome)]/45"
+    <p
+      className={`mt-4 max-w-[560px] text-[16px] leading-[1.6] sm:text-[17px] sm:leading-[1.62] lg:max-w-[min(560px,39vw)] xl:mt-[14px] xl:max-w-[min(556px,39vw)] xl:text-[19px] xl:leading-[31px] ${
+        isDark ? "text-white/[0.78]" : "text-[#444542]"
       }`}
-    >
-      <span className="flex h-14 w-14 shrink-0 items-center justify-center md:h-14 md:w-14">
-        <HomeIcon name={iconKey} isDark={isDark} className="h-14 w-14 object-contain" />
+      dangerouslySetInnerHTML={{ __html: formatted }}
+    />
+  );
+}
+
+function StatItem({ item, index, isDark }) {
+  const stat = splitStat(item);
+  const iconKey = STAT_ICONS[index] || STAT_ICONS[0];
+  const muted = isDark ? "text-white/60" : "text-[#7a7b77]";
+  const divider = isDark ? "bg-white/[0.13]" : "bg-[#e3e3e0]";
+
+  return (
+    <li className="relative flex min-w-0 flex-col items-start gap-3 px-4 py-5 sm:flex-row sm:items-center sm:gap-4 sm:px-5 sm:py-6 lg:gap-3.5 lg:pl-5 lg:pr-3 xl:gap-[18px] xl:pl-[34px] xl:pr-4 2xl:gap-6 2xl:py-[24px] 2xl:pl-[47px]">
+      {/* Phones/tablets (2 x 2): rule right of the left column, under the top row */}
+      {index % 2 === 0 ? <span aria-hidden="true" className={`absolute inset-y-5 right-0 w-px lg:hidden ${divider}`} /> : null}
+      {index < 2 ? <span aria-hidden="true" className={`absolute inset-x-4 bottom-0 h-px lg:hidden ${divider}`} /> : null}
+      {/* Desktop (1 x 4): inset vertical rule between items */}
+      {index < 3 ? <span aria-hidden="true" className={`absolute inset-y-8 right-0 hidden w-px lg:block ${divider}`} /> : null}
+
+      <span
+        className={`flex h-[52px] w-[52px] shrink-0 items-center justify-center rounded-full border sm:h-16 sm:w-16 xl:h-20 xl:w-20 2xl:h-[95px] 2xl:w-[95px] ${
+          isDark
+            ? "border-white/[0.12] bg-[radial-gradient(circle_at_32%_28%,#262626_0%,#141414_72%)]"
+            : "border-[#e4e4e1] bg-[radial-gradient(circle_at_32%_28%,#fbfbfa_0%,#efefed_78%)]"
+        }`}
+      >
+        <HomeIcon name={iconKey} isDark={isDark} className="h-[78%] w-[78%]" />
       </span>
-      <div className={`min-w-0 flex-1 ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+
+      <div className="min-w-0 text-[var(--color-text)]">
         {stat.value ? (
-          <p className="leading-tight">
-            <strong className="block text-[0.9rem] font-bold leading-none md:inline md:text-[1.05rem]">
-              {stat.value}
-            </strong>
-            {stat.label ? (
-              <span
-                className={`mt-0.5 block text-[11px] leading-[1.25] md:mt-0 md:ml-1.5 md:inline md:text-[0.9rem] md:leading-snug ${
-                  isDark ? "text-white/88" : "text-[var(--color-text)]"
-                }`}
-              >
-                {stat.label}
-              </span>
-            ) : null}
-          </p>
-        ) : (
-          <p className="text-[11px] font-semibold leading-tight md:text-[0.88rem]">{stat.label}</p>
-        )}
+          <p className="text-[26px] font-semibold leading-none tracking-[-0.01em] sm:text-[28px] lg:text-[25px] xl:text-[28px] 2xl:text-[32px] 2xl:leading-[36px]">{stat.value}</p>
+        ) : null}
+        {stat.prefix ? <p className="text-[14px] leading-snug sm:text-[16px] lg:text-[15px] xl:text-[17px] 2xl:text-[19px]">{stat.prefix}</p> : null}
+        {stat.label ? (
+          <p
+            className={
+              stat.value
+                ? "mt-2 text-[14px] leading-snug sm:text-[16px] lg:text-[15px] xl:text-[17px] 2xl:mt-[6px] 2xl:text-[19px] 2xl:leading-[28px]"
+                : `${stat.prefix ? "mt-1" : ""} text-[15px] font-semibold leading-snug sm:text-[17px] lg:text-[16px] xl:text-[18px] 2xl:text-[20px]`
+            }
+            dangerouslySetInnerHTML={{ __html: stat.label }}
+          />
+        ) : null}
         {stat.detail ? (
           <p
-            className={`mt-0.5 text-[10px] leading-[1.25] md:text-[0.72rem] ${
-              isDark ? "text-white/65" : "text-[var(--color-text-muted)]"
-            }`}
+            className={`mt-1.5 text-[12.5px] leading-[1.5] sm:text-[14px] lg:text-[13px] xl:text-[15.5px] xl:leading-[25px] 2xl:mt-[2px] 2xl:text-[18px] 2xl:leading-[29px] ${muted}`}
             dangerouslySetInnerHTML={{ __html: stat.detail }}
           />
         ) : null}
@@ -118,139 +199,93 @@ function StatCard({ item, index, isDark }) {
   );
 }
 
+function ctaTarget(href, pathname) {
+  // The model's own page is where the visitor already is: jump to its engine database instead.
+  const clean = (value = "") => value.replace(/\/$/, "") || "/";
+  if (!href || href === "#" || clean(href) === clean(pathname || "")) return "#engine-database";
+  return href;
+}
+
 export default function ModelHero({ data }) {
   const { theme } = useTheme();
+  const pathname = usePathname();
   if (!data) return null;
 
   const isDark = theme === "dark";
-  const meta = splitTagPill(data.tagPill);
-  const ctaHref = data.primaryCta?.href && data.primaryCta.href !== "#" ? data.primaryCta.href : "/quote";
   const modelName = modelLabelFromData(data);
-  const ctaLabel =
-    data.primaryCta?.label?.replace(/\s*(?:→|â†’)\s*$/, "").trim() ||
-    `Explore ${modelName} Engine Replacement Options`;
-  // The model's own line-up scene sits on the right and fades into the page from the left.
-  // Without one, Jaguar's background fills the hero with the model's cut-out photo on top.
-  const scene = data.heroScene;
-  const backgroundSrc = scene?.src || heroBackground(isDark);
+  const ctaLabel = data.primaryCta?.label?.replace(/\s*(?:→|â†’)\s*$/, "").trim() || `Explore ${modelName} Engines`;
+  const ctaHref = ctaTarget(data.primaryCta?.href, pathname);
+
+  // Art-directed light/dark scene (E-Pace) when present; otherwise the model's colour line-up,
+  // turned monochrome to sit in the same black-and-silver look.
+  const themed = data.heroThemedScenes?.[isDark ? "dark" : "light"] || null;
+  const scene = themed || data.heroScene || null;
+  const photoSrc = scene?.src || heroBackground(isDark);
   const car = scene ? null : data.heroCar;
-  const wideCar = car && car.width / car.height > 2;
+  const photoTone = themed ? "" : isDark ? "grayscale brightness-[0.72] contrast-[1.12]" : "grayscale brightness-[1.06]";
 
   return (
-    <section className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden bg-[var(--color-page)] text-[var(--color-text)] xl:min-h-[620px]">
-      {scene ? (
-        // Below 1600px the scene starts a third of the way in (its faded left edge is cropped) so the
-        // copy stays on plain page colour; wider screens show it whole at its own aspect ratio.
-        <div className="absolute inset-y-0 left-[34%] right-0 hidden xl:block min-[1600px]:left-auto min-[1600px]:aspect-[1200/676]">
-          <Image src={scene.src} alt="" fill className="object-cover object-right" sizes="(min-width: 1280px) 1200px, 100vw" priority />
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,color-mix(in_srgb,var(--color-page)_88%,transparent)_16%,color-mix(in_srgb,var(--color-page)_45%,transparent)_34%,transparent_56%)]" />
-          <div className="absolute inset-x-0 bottom-0 h-40 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)]" />
-        </div>
-      ) : (
-      <div className="absolute inset-0 hidden xl:block">
-        <Image src={backgroundSrc} alt="" fill className="object-cover object-center" sizes="100vw" priority />
-        <div
-          className={`absolute inset-0 ${
-            isDark
-              ? "bg-[linear-gradient(100deg,rgba(2,7,17,0.97)_0%,rgba(2,7,17,0.9)_41%,rgba(2,7,17,0.28)_67%,rgba(2,7,17,0.12)_100%)]"
-              : "bg-[linear-gradient(90deg,var(--color-hero-fade)_0%,rgba(255,255,255,0.91)_35%,rgba(255,255,255,0.3)_66%,rgba(255,255,255,0.06)_100%)]"
-          }`}
-        />
-        <div className="absolute inset-x-0 bottom-0 h-44 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)]" />
-      </div>
-      )}
+    <section className="relative isolate w-full overflow-hidden bg-[var(--color-page)] text-[var(--color-text)]">
+      <div className="mx-auto w-full max-w-[1546px] px-4 pb-10 pt-5 sm:px-6 sm:pt-7 lg:px-10 lg:pb-12 lg:pt-9 xl:px-[53px] xl:pb-[56px] xl:pt-[42px]">
+        <TagPill tagPill={data.tagPill} isDark={isDark} />
 
-      <div className="relative mx-auto flex w-full max-w-8xl flex-col px-4 pb-5 pt-3 md:px-8 md:pb-7 md:pt-11 xl:min-h-[620px]">
-        {/* Desktop: the car sits on the right, wholly inside the content width, above the stats strip */}
-        {car ? (
-          <div
-            aria-hidden="true"
-            className={`pointer-events-none absolute right-8 hidden xl:block ${
-              wideCar ? "top-[30%] w-[min(46%,640px)]" : "top-[16%] w-[min(38%,520px)]"
-            }`}
-          >
-            <Image src={car.src} alt="" width={car.width} height={car.height} className="h-auto w-full" sizes="640px" priority />
-          </div>
-        ) : null}
-        <div className="max-w-[650px]">
-          <div
-            className={`inline-flex w-fit max-w-full flex-nowrap items-center gap-x-2 overflow-x-auto whitespace-nowrap rounded-md border px-3 py-2 text-[12px] leading-none md:overflow-x-visible md:gap-x-2.5 md:px-4 md:py-2.5 md:text-[14px] ${
+        <div className="mt-7 sm:mt-9 lg:max-w-[720px] xl:mt-[65px] xl:max-w-[840px]">
+          <HeroTitle title={data.h1} isDark={isDark} />
+          <div aria-hidden="true" className={`mt-4 h-px w-11 sm:mt-5 xl:mt-[14px] ${isDark ? "bg-white/40" : "bg-[#a5a6a2]"}`} />
+          <SubHeadline html={data.subHeadline} isDark={isDark} />
+
+          <a
+            href={ctaHref}
+            className={`btn-cta mt-7 inline-flex min-h-[56px] w-full items-center justify-center gap-[19px] rounded-[6px] px-6 text-[17px] !font-medium tracking-[0.005em] sm:w-auto sm:px-[30px] xl:mt-[40px] xl:min-h-[64px] xl:min-w-[328px] xl:pr-[32px] xl:text-[20px] ${
               isDark
-                ? "border-white/20 bg-[rgba(12,12,12,0.55)] text-white/88"
-                : "border-[var(--color-border)] bg-[rgba(255,255,255,0.72)] text-[var(--color-text-muted)]"
+                ? "border border-white/50 shadow-[0_12px_30px_rgba(0,0,0,0.55),inset_0_1px_0_rgba(255,255,255,0.85)]"
+                : "bg-[linear-gradient(180deg,#2c2d2b_0%,#121312_100%)] shadow-[0_10px_22px_rgba(16,18,16,0.2)]"
             }`}
           >
-            <HomeIcon name="shield" isDark={isDark} className="h-7 w-7 shrink-0 object-contain md:h-8 md:w-8" />
-            <strong className={`shrink-0 font-semibold ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
-              {meta.brand}
-            </strong>
-            {meta.model ? (
-              <>
-                <MetaSeparator isDark={isDark} />
-                <span className="shrink-0" dangerouslySetInnerHTML={{ __html: meta.model }} />
-              </>
-            ) : null}
-            {meta.years ? (
-              <>
-                <MetaSeparator isDark={isDark} />
-                <span className="shrink-0" dangerouslySetInnerHTML={{ __html: meta.years }} />
-              </>
-            ) : null}
-            {meta.generations ? (
-              <>
-                <MetaSeparator isDark={isDark} />
-                <span className="shrink-0" dangerouslySetInnerHTML={{ __html: meta.generations }} />
-              </>
-            ) : null}
-            {meta.engines ? (
-              <>
-                <MetaSeparator isDark={isDark} />
-                <HomeIcon name="engine" isDark={isDark} className="h-7 w-7 shrink-0 object-contain md:h-8 md:w-8" />
-                <span className="shrink-0" dangerouslySetInnerHTML={{ __html: meta.engines }} />
-              </>
-            ) : null}
-          </div>
-
-          <div className="mt-6 md:mt-8">
-            <HeroTitle title={data.h1} isDark={isDark} />
-            <div className="mt-3">
-              <MStripe />
-            </div>
-            <p
-              className={`mt-4 max-w-[610px] ${sectionDescription} ${isDark ? "text-white/80" : "text-[var(--color-text-muted)]"}`}
-              dangerouslySetInnerHTML={{ __html: data.subHeadline }}
-            />
-
-            <HeroRegCta label={ctaLabel} href={ctaHref} className="mt-5" />
-          </div>
+            <span>{ctaLabel}</span>
+            <ArrowIcon className="h-5 w-5 shrink-0" />
+          </a>
         </div>
 
-        {/* Phones, tablets + small laptops: background and car as their own band, so they never sit behind the copy */}
-        <div className="relative -mx-4 mt-6 aspect-[16/10] max-h-[440px] w-[calc(100%+2rem)] overflow-hidden md:-mx-8 md:w-[calc(100%+4rem)] xl:hidden">
-          <Image src={backgroundSrc} alt="" fill className={`object-cover ${scene ? "object-[70%_center]" : "object-[72%_70%]"}`} sizes="100vw" priority />
-          <div className="absolute inset-x-0 top-0 h-14 bg-[linear-gradient(180deg,var(--color-page)_0%,transparent_100%)]" />
-          <div className="absolute inset-x-0 bottom-0 h-14 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)]" />
+        {/* One photo element: a full-bleed band under the copy on phones/tablets, the right-hand
+            backdrop behind the copy from lg up (so a phone never downloads two hero images). */}
+        <div
+          aria-hidden="true"
+          className={`relative -mx-4 mt-7 overflow-hidden sm:-mx-6 sm:mt-9 lg:absolute lg:right-0 lg:top-0 lg:-z-10 lg:m-0 lg:h-[min(43vw,662px)] ${SCENE_ASPECT}`}
+        >
+          <Image
+            src={photoSrc}
+            alt=""
+            fill
+            priority
+            sizes="(min-width: 1024px) 60vw, 100vw"
+            className={`object-cover object-right ${photoTone}`}
+          />
           {car ? (
-            <div className={`absolute bottom-[9%] left-1/2 -translate-x-1/2 ${wideCar ? "w-[88%]" : "w-[62%]"}`}>
-              <Image src={car.src} alt="" width={car.width} height={car.height} className="h-auto w-full" sizes="90vw" priority />
+            <div className="absolute bottom-[12%] right-[6%] w-[72%]">
+              <Image src={car.src} alt="" width={car.width} height={car.height} sizes="(min-width: 1024px) 640px, 90vw" className={`h-auto w-full ${photoTone}`} />
             </div>
           ) : null}
+          {/* Phones: soften the top and bottom edges into the page */}
+          <div className="absolute inset-x-0 top-0 h-[14%] bg-[linear-gradient(180deg,var(--color-page)_0%,transparent_100%)] lg:hidden" />
+          {/* Desktop: fade the left edge into the copy, and the top edge under the navbar */}
+          <div className="absolute inset-0 hidden bg-[linear-gradient(90deg,var(--color-page)_0%,color-mix(in_srgb,var(--color-page)_70%,transparent)_9%,transparent_26%)] lg:block" />
+          <div className="absolute inset-x-0 top-0 hidden h-[6%] bg-[linear-gradient(180deg,var(--color-page)_0%,transparent_100%)] lg:block" />
+          <div className="absolute inset-x-0 bottom-0 h-[10%] bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)] lg:h-[12%]" />
         </div>
 
         {data.trustStrip?.length > 0 ? (
-          <div
-            className={`mt-4 w-full max-w-[1000px] overflow-hidden rounded-md backdrop-blur-xl md:rounded-xl xl:mt-auto md:border md:shadow-[0_14px_36px_rgba(16,18,16,0.1)] ${
+          <ul
+            className={`relative z-10 -mt-5 grid grid-cols-2 overflow-hidden rounded-xl border sm:-mt-8 lg:mt-12 lg:grid-cols-4 xl:mt-[47px] xl:rounded-[13px] 2xl:min-h-[204px] ${
               isDark
-                ? "bg-[rgba(12,12,12,0.55)] md:border-white/16 md:shadow-[0_16px_40px_rgba(0,0,0,0.45)]"
-                : "bg-[rgba(246,246,244,0.86)] md:border-[var(--color-border)]"
+                ? "border-white/[0.13] bg-[rgba(14,14,14,0.78)] shadow-[0_18px_44px_rgba(0,0,0,0.5)] backdrop-blur-xl"
+                : "border-[#e4e4e1] bg-[rgba(251,251,250,0.92)] shadow-[0_10px_30px_rgba(16,18,16,0.06)] backdrop-blur-xl"
             }`}
           >
-            <ul className="grid grid-cols-4">
-              {data.trustStrip.map((item, index) => (
-                <StatCard key={item.label} item={item} index={index} isDark={isDark} />
-              ))}
-            </ul>
-          </div>
+            {data.trustStrip.slice(0, 4).map((item, index) => (
+              <StatItem key={item.label} item={item} index={index} isDark={isDark} />
+            ))}
+          </ul>
         ) : null}
       </div>
     </section>
