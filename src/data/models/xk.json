@@ -292,6 +292,7 @@
   },
   "atAGlance": {
     "h2": "XK at a Glance",
+    "subHeadline": "Everything you need to know about the Jaguar XK in one quick-reference overview.",
     "rows": [
       {
         "metric": "Generations",
@@ -380,6 +381,28 @@
   "engineDatabase": {
     "h2": "XK Engine Codes - The Complete Database",
     "subHeadline": "Every V8 that powered the XK - verified factory codes, real UK enquiry data, and honest reliability ratings.",
+    "stats": [
+      {
+        "icon": "engine",
+        "value": "6",
+        "label": "Engine Codes Tracked"
+      },
+      {
+        "icon": "shield",
+        "value": "4",
+        "label": "Generations Covered"
+      },
+      {
+        "icon": "chart",
+        "value": "290+",
+        "label": "Enquiries in 2025"
+      },
+      {
+        "icon": "pound",
+        "value": "£3K–£10K",
+        "label": "Typical Recon Cost Range"
+      }
+    ],
     "columns": [
       "Engine Code",
       "Family",
@@ -468,13 +491,24 @@
     ],
     "confidenceScore": {
       "title": "",
-      "text": ""
+      "paragraphs": [],
+      "verification": []
+    },
+    "methodologyLink": {
+      "label": "How we collect engine data",
+      "href": "/data/methodology"
     },
     "dataCorrections": []
   },
   "commonProblems": {
     "h2": "Common XK Engine Problems",
     "subHeadline": "What actually fails on the XK's AJ-V8 engines - and what it costs to fix.",
+    "stat": {
+      "icon": "users",
+      "value": "290+",
+      "label": "XK engine enquiries analysed in 2025",
+      "tag": "[JAG-VERIFIED]"
+    },
     "columns": [
       "#",
       "Problem",
@@ -593,6 +627,11 @@
   },
   "marketIntelligence": {
     "h2": "XK Market Intelligence - What 290+ UK Owners Told Us in 2025",
+    "stat": {
+      "value": "290+",
+      "label": "Total Enquiries in 2025",
+      "tag": "[JAG-VERIFIED]"
+    },
     "signals": [
       {
         "signal": "X100 Enquiries",
@@ -624,7 +663,8 @@
   },
   "editorialPullQuote": {
     "title": "The One Thing We'd Tell Every XK Buyer",
-    "quote": "Buy a 2009-2014 X150 with the 5.0 naturally aspirated V8, full service history, and evidence the water pump has been replaced. It's the sweet spot - the most reliable engine, the best-looking generation, and values that are still £10,000-£20,000 below where they should be."
+    "quote": "Buy a 2009-2014 X150 with the 5.0 naturally aspirated V8, full service history, and evidence the water pump has been replaced. It's the sweet spot - the most reliable engine, the best-looking generation, and values that are still £10,000-£20,000 below where they should be.",
+    "label": "Editorial pull-quote"
   },
   "replacementCosts": {
     "h2": "XK Engine Replacement Costs - By Generation",
@@ -655,15 +695,44 @@
         "rows": []
       }
     ],
-    "figuresNote": "Labour estimate: Fitting an XK engine typically takes 12-18 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [JAG-QUOTE]. The XK rule - the value swing is the story: The XK's value range is one of the widest in the Jaguar line-up. An early X100 XK8 worth £4,000-£5,000 facing a £5,000+ reconditioned engine sits at 100%+ of vehicle value - well above our 60% scrap threshold for Jaguar. The same engine in a 2014 XKR-S worth £30,000-£35,000 sits at just 20-30% of vehicle value - a no-brainer replacement. Before committing to a recon engine, get a realistic market valuation for your specific car and run the numbers. For X100s, used engines often make more sense; for X150s, a reconditioned unit is usually the right call.",
-    "labourEstimate": "Fitting an XK engine typically takes 12-18 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [JAG-QUOTE]. The XK rule - the value swing is the story: The XK's value range is one of the widest in the Jaguar line-up. An early X100 XK8 worth £4,000-£5,000 facing a £5,000+ reconditioned engine sits at 100%+ of vehicle value - well above our 60% scrap threshold for Jaguar. The same engine in a 2014 XKR-S worth £30,000-£35,000 sits at just 20-30% of vehicle value - a no-brainer replacement. Before committing to a recon engine, get a realistic market valuation for your specific car and run the numbers. For X100s, used engines often make more sense; for X150s, a reconditioned unit is usually the right call.",
-    "economicsBox": {
-      "title": "",
-      "text": ""
+    "labourEstimate": "Fitting an XK engine typically takes 12-18 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [JAG-QUOTE].",
+    "rule": {
+      "title": "The XK Rule - The Value Swing Is the Story",
+      "paragraphs": [
+        "The XK's value range is one of the widest in the Jaguar line-up. An early X100 XK8 worth £4,000-£5,000 facing a £5,000+ reconditioned engine sits at 100%+ of vehicle value - well above our 60% scrap threshold for Jaguar.",
+        "The same engine in a 2014 XKR-S worth £30,000-£35,000 sits at just 20-30% of vehicle value - a no-brainer replacement. Before committing to a recon engine, get a realistic market valuation for your specific car and run the numbers. For X100s, used engines often make more sense; for X150s, a reconditioned unit is usually the right call."
+      ]
     }
   },
   "engineEvolution": {
     "h2": "How the XK Engine Range Evolved - 1996 to 2014",
+    "subHeadline": "From launch to the final powertrains, explore how engineering, emissions and performance shaped every era of XK engines.",
+    "stats": [
+      {
+        "icon": "eras",
+        "value": "4",
+        "label": "Engine Eras",
+        "text": "1996 to 2014"
+      },
+      {
+        "icon": "engines",
+        "value": "6",
+        "label": "Key Engine Codes",
+        "text": "From AJ27 to AJ133S"
+      },
+      {
+        "icon": "years",
+        "value": "18",
+        "label": "Years of Engineering",
+        "text": "Innovation & Progress"
+      },
+      {
+        "icon": "drivers",
+        "value": "",
+        "label": "Built for Drivers",
+        "text": "Reliability + Dynamics"
+      }
+    ],
     "columns": [
       "Era",
       "Years",
@@ -700,10 +769,34 @@
         "whyBmwChanged": "The 2009 facelift brought the 5.0-litre AJ133 V8 with 385bhp (naturally aspirated) and up to 542bhp (supercharged) - plus a revised timing chain tensioner design.",
         "worthKnowing": "This is the definitive XK engine - more power, stronger reliability, and the one specialists recommend."
       }
-    ]
+    ],
+    "footnote": "All engine reliability insights and failure patterns are based on 290+ verified XK enquiries in 2025. Data covers the UK market. [JAG-VERIFIED]"
   },
   "whoShouldBuy": {
     "h2": "Who Should Buy an XK?",
+    "subHeadline": "Different buyers, different priorities. Here's our verdict on who the XK is perfect for - and who should think twice.",
+    "proof": [
+      {
+        "icon": "users",
+        "title": "Built for Real Life",
+        "text": "Practical. Powerful. Proven."
+      },
+      {
+        "icon": "shield",
+        "title": "Data-Backed Ratings",
+        "text": "290+ UK enquiries analysed in 2025."
+      },
+      {
+        "icon": "award",
+        "title": "Honest Verdicts",
+        "text": "No hype. Just the truth about ownership."
+      },
+      {
+        "icon": "wheel",
+        "title": "Buyer-Focused",
+        "text": "Find the right XK for your needs."
+      }
+    ],
     "columns": [
       "Buyer Profile",
       "Rating",
@@ -735,21 +828,74 @@
         "rating": "★★★★★",
         "verdict": "The XK, especially the X150, is a future classic. Low-mileage examples with full service history are already appreciating. The XKR-S and Portfolio models are the ones to hold long-term."
       }
-    ]
+    ],
+    "realTalk": {
+      "lead": "Real talk.",
+      "text": "The right XK for you depends on your budget, your mileage, and your patience for maintenance. Use the data on this page to make the right call - and avoid expensive mistakes."
+    },
+    "cta": {
+      "label": "Explore XK Engines",
+      "href": "#engine-database"
+    }
   },
   "calculatorCta": {
     "h2": "Can I Repair My XK Engine - or Should I Replace It?",
     "intro": "The XK presents one of the widest economics swings in the Jaguar range - a £5,000 reconditioned engine in a £4,000 X100 is a financial mistake, but the same engine in a £30,000 XKR-S is a no-brainer. Run the numbers before you commit.",
+    "smartNote": {
+      "lead": "The smarter way to decide:",
+      "text": "Get a personalised repair-vs-replace verdict using real UK cost data."
+    },
     "paths": [
       {
-        "label": "Path 1 - Know your engine? Launch the Jaguar calculator with XK pre-selected",
-        "href": "/tools/diagnostic-wizard"
+        "badge": "Path 1",
+        "title": "Know your engine?",
+        "text": "Launch the Jaguar calculator with XK pre-selected.",
+        "button": {
+          "label": "Launch XK Diagnostic Calculator",
+          "sub": "XK pre-selected",
+          "href": "/tools/diagnostic-wizard"
+        },
+        "features": [
+          {
+            "icon": "check",
+            "title": "XK pre-selected",
+            "text": "All variants covered"
+          },
+          {
+            "icon": "chart",
+            "title": "Real UK cost data",
+            "text": "Used, recon & rebuilt"
+          },
+          {
+            "icon": "shield",
+            "title": "Instant verdict",
+            "text": "Repair vs replace"
+          }
+        ]
       },
       {
-        "label": "Path 2 - Not sure which engine you have? We'll identify it first",
+        "badge": "Path 2",
+        "title": "Not sure which engine you have?",
+        "text": "We'll identify it first.",
+        "button": {
+          "label": "Identify My Engine First",
+          "sub": "Then launch the diagnostic calculator",
+          "href": "/tools/diagnostic-wizard"
+        },
+        "note": {
+          "lead": "Identification is the first step inside the tool.",
+          "text": "We'll pinpoint your exact engine code before running the diagnostics."
+        }
+      }
+    ],
+    "closing": {
+      "title": "Stop guessing. Get the right answer.",
+      "text": "Our calculator compares real repair and replacement costs against your car's value - so you know the financially smarter move.",
+      "button": {
+        "label": "Start Your Verdict Now",
         "href": "/tools/diagnostic-wizard"
       }
-    ]
+    }
   },
   "trustBlock": {
     "h2": "Why XK Owners Trust jaguarengines.uk",
@@ -819,30 +965,50 @@
         "question": "XK vs XKR - which is more reliable?",
         "answer": "Both use the same AJ-V8 engine family - the XKR simply adds a supercharger. The naturally aspirated XK has fewer components to fail (no supercharger, no intercooler), so it's technically the more reliable option. However, the XKR's supercharged V8 is robust when maintained - 2009+ examples with the 5.0 AJ133S have proven very reliable. Our honest advice: buy the XKR if you want the performance; the reliability difference is minor. Read the full comparison: XK vs XKR →"
       }
-    ]
+    ],
+    "comparison": {
+      "title": "Need a head-to-head comparison?",
+      "text": "Read our in-depth XK vs XKR reliability guide.",
+      "button": {
+        "label": "Read the Full Head-to-Head",
+        "href": "/compare"
+      }
+    }
   },
   "closingActionCards": {
     "h2": "Ready to Make a Decision?",
+    "subHeadline": "Everything you need to choose with confidence.\nData. Honesty. Specialists. All in one place.",
     "cards": [
       {
-        "icon": "🔍",
+        "icon": "search",
+        "art": "lineup",
         "title": "Explore XK Generations",
-        "text": "Compare the X100 and X150 side-by-side to find your perfect grand tourer. → Explore XK Generations",
-        "href": "/xk/x100"
+        "text": "Two generations, 18 years, honestly rated.",
+        "cta": "Explore Now",
+        "href": "#generations"
       },
       {
-        "icon": "🩺",
+        "icon": "diagnose",
+        "art": "engine",
         "title": "Diagnose My XK",
-        "text": "Run our diagnostic calculator on your specific XK - real costs, honest verdicts, and a route to a vetted specialist. → Diagnose My XK",
-        "href": "/tools/diagnostic-wizard"
+        "text": "Symptoms in, verdict out - value-weighted for your generation.",
+        "cta": "Start Diagnosis",
+        "href": "/tools/diagnostic-wizard",
+        "steps": [
+          "Symptoms",
+          "Engine Code",
+          "Mileage",
+          "History"
+        ]
       },
       {
-        "icon": "🤝",
+        "icon": "specialists",
+        "art": "map",
         "title": "Compare UK Specialists",
-        "text": "Get matched with one of our 15+ vetted Jaguar specialists for a genuine XK engine quote. → Compare UK Specialists",
+        "text": "15+ vetted Jaguar specialists, prices and warranties side-by-side.",
+        "cta": "Compare Specialists",
         "href": "/quote"
       }
-    ],
-    "footerNote": ""
+    ]
   }
 }

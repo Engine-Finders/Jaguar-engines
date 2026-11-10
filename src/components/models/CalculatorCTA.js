@@ -2,341 +2,280 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import MStripe from "@/components/reusableComponents/MStripe";
+import { ArrowRight } from "lucide-react";
+import { Calculator, ChartColumnIncreasing, CircleCheck, FileSearch, Info, ShieldCheck, Target } from "@/components/models/brandIcons";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
-import { sectionBody, sectionButton, sectionDescription } from "@/components/models/sectionTypography";
+import CarOnBackground from "@/components/shared/CarOnBackground";
+import { carImageFor } from "@/components/shared/carImage";
+import { outsideTags } from "@/components/models/outsideTags";
 
-const ICON_LG = "h-12 w-12 md:h-14 md:w-14";
-const ICON_XL = "h-14 w-14 md:h-16 md:w-16";
+/*
+ * Model page "Can I Repair My Engine — or Should I Replace It?" (section 11), built from the 1536px
+ * reference. Left: title (second half in the silver accent), two intro paragraphs and "the smarter way to
+ * decide" note; right: the model's car in Jaguar's scene, fading into the page. Then two path cards (know
+ * your engine → calculator; not sure → identify first) and the closing "Stop guessing" bar.
+ * Sizes come from the --cc-* tokens in globals.css. All copy comes from data.calculatorCta.
+ */
 
 function cleanText(text = "") {
   return String(text ?? "")
-    .replaceAll("Ãƒâ€šÃ‚Â£", "\u00a3")
-    .replaceAll("Ã‚Â£", "\u00a3")
-    .replaceAll("Ã¢â‚¬â€œ", "-")
-    .replaceAll("Ã¢â‚¬â€", "-")
-    .replaceAll("Ã¢â€ â€™", "->")
-    .replace(/\s+-\s+/g, " - ")
+    .replaceAll("Â£", "£")
+    .replaceAll("â€“", "–")
+    .replaceAll("â€”", "—")
     .replace(/\s+/g, " ")
     .trim();
 }
 
-function modelNameFromTitle(title = "") {
-  const clean = cleanText(title);
-  const match = clean.match(/My\s+(.+?)\s+Engine/i);
-  return match ? match[1] : "Jaguar";
+// Ranges take an en dash; " - " an em dash; hyphenated names ("E-Pace", "pre-selected") never break.
+function typeset(text = "") {
+  return outsideTags(cleanText(text), (part) =>
+    part.replace(/(\d)\s*-\s*(£?\d)/g, "$1–$2").replace(/\s-\s/g, " — ").replace(/([A-Za-z])-([A-Za-z])/g, "$1\u2011$2"),
+  );
 }
 
+// "Can I Repair My E-Pace Engine - or Should I Replace It?" -> "Can I Repair My E-Pace Engine —" / "or " + accent
 function splitTitle(title = "") {
-  const clean = cleanText(title);
-  const marker = "or Should I Replace It?";
-  const index = clean.indexOf(marker);
-
-  if (index === -1) {
-    return { before: clean, accent: "" };
-  }
-
-  return {
-    before: clean.slice(0, index).trim(),
-    accent: marker,
-  };
+  const match = cleanText(title).match(/^(.*?)\s+[-–—]\s+(or)\s+(.*)$/i);
+  if (!match) return { lead: cleanText(title), or: "", accent: "" };
+  return { lead: `${match[1]} —`, or: match[2], accent: match[3] };
 }
 
-function introParts(intro = "") {
-  const clean = cleanText(intro);
-  const sentences = clean.match(/[^.!?]+[.!?]+/g) || [clean];
-
-  return {
-    first: sentences[0]?.trim() || clean,
-    second: sentences.slice(1).join(" ").trim(),
-  };
+// Intro in two paragraphs, split before the sentence that points to the calculator (reference layout).
+function introParagraphs(intro = "") {
+  const sentences = typeset(intro).match(/[^.!?]+[.!?]+/g) || [typeset(intro)];
+  if (sentences.length < 2) return sentences;
+  const cut = Math.max(1, sentences.findIndex((sentence, index) => index > 0 && /calculator|economics/i.test(sentence)));
+  return [sentences.slice(0, cut).join(" ").trim(), sentences.slice(cut).join(" ").trim()];
 }
 
-function CircleIcon({ name, isDark, large = false, compact = false, className = "" }) {
-  const circleClass = large
-    ? "h-[4.75rem] w-[4.75rem] md:h-[5.5rem] md:w-[5.5rem]"
-    : compact
-      ? "h-9 w-9 md:h-10 md:w-10"
-      : "h-12 w-12 md:h-14 md:w-14";
+function palette(isDark) {
+  return isDark
+    ? {
+        text: "text-white",
+        muted: "text-white/[0.75]",
+        accent: "bg-[linear-gradient(180deg,#e4e4e1_0%,#9a9a97_100%)] bg-clip-text text-transparent",
+        card: "border-white/[0.16] bg-[rgba(14,16,17,0.92)]",
+        soft: "bg-white/[0.05]",
+        circle: "bg-white/[0.07] text-white",
+        badge: "bg-[#ececea] text-[#111210]",
+        rule: "border-white/[0.12]",
+        primary: "btn-cta",
+        outline: "border-white/[0.35] text-white hover:border-white/70",
+        dot: "bg-[#ececea] text-[#111210]",
+      }
+    : {
+        text: "text-[#111210]",
+        muted: "text-[#2c2d2b]",
+        accent: "bg-[linear-gradient(180deg,#8a8b87_0%,#6b6c68_100%)] bg-clip-text text-transparent",
+        card: "border-[#e8e8e5] bg-white shadow-[0_6px_20px_rgba(16,18,16,0.05)]",
+        soft: "bg-[#f4f4f3]",
+        circle: "bg-[#f1f1ef] text-[#111210]",
+        badge: "bg-[#1a1b1a] text-white",
+        rule: "border-[#e8e8e5]",
+        primary: "bg-[linear-gradient(180deg,#2c2d2b_0%,#141514_100%)] text-white hover:shadow-[0_10px_24px_rgba(16,18,16,0.25)]",
+        outline: "border-[#8f908c] text-[#111210] hover:border-[#111210]",
+        dot: "bg-[#111210] text-white",
+      };
+}
 
+const FEATURE_ICONS = { check: CircleCheck, chart: ChartColumnIncreasing, shield: ShieldCheck };
+
+/* ---------- Pieces ---------- */
+
+function PathCard({ path, index, tones, isDark }) {
+  if (!path) return null;
+  const primary = index === 0;
+  const button = path.button || {};
   return (
-    <span
-      className={`flex shrink-0 items-center justify-center rounded-full ${
-        isDark ? "bg-white/10" : "bg-[#ececeb]"
-      } ${circleClass} ${className}`}
-    >
-      <HomeIcon
-        name={name}
-        isDark={isDark}
-        className={
-          large
-            ? "h-[4.25rem] w-[4.25rem] md:h-[5.25rem] md:w-[5.25rem]"
-            : compact
-              ? "h-9 w-9 md:h-10 md:w-10"
-              : ICON_LG
-        }
-      />
-    </span>
-  );
-}
-
-function Feature({ icon, title, text, isDark }) {
-  return (
-    <li className="flex min-w-0 items-start gap-2.5 pr-3 last:pr-0 md:gap-3 md:pr-4">
-      <span className="-my-1.5 shrink-0">
-        <HomeIcon name={icon} isDark={isDark} className="h-11 w-11 md:h-12 md:w-12" />
-      </span>
-      <span className="min-w-0">
-        <strong
-          className={`block text-[13px] leading-tight md:text-[14px] ${isDark ? "text-white" : "text-black"}`}
-          dangerouslySetInnerHTML={{ __html: title }}
-        />
-        <span className={`mt-0.5 block text-[12px] leading-[1.2] md:text-[13px] ${isDark ? "text-white/65" : "text-[var(--color-text-muted)]"}`}>
-          {text}
-        </span>
-      </span>
-    </li>
-  );
-}
-
-function ArrowIcon({ className = "h-5 w-5" }) {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M5 12h14m-6-6 6 6-6 6" />
-    </svg>
-  );
-}
-
-function PrimaryPath({ path, modelName, isDark }) {
-  return (
-    <article
-      className={`rounded-xl border p-3.5 md:p-4 ${
-        isDark
-          ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
-          : "border-[#e8e8e6] bg-white shadow-[0_8px_24px_rgba(16,18,16,0.06)]"
-      }`}
-    >
-      <span
-        className={`inline-flex rounded px-2 py-1 text-[12px] font-bold uppercase leading-none md:px-2.5 md:py-1 md:text-[13px] ${
-          isDark ? "bg-[var(--color-chrome)] text-[var(--color-page)]" : "bg-black text-white"
-        }`}
-      >
-        Path 1
-      </span>
-      <div className="mt-3.5 grid grid-cols-[auto_1fr] items-center gap-3.5 md:grid-cols-[1fr_auto] md:items-start">
-        <div className="order-2 md:order-1">
-          <h3 className={`text-[1.55rem] font-bold leading-[1.06] md:text-[2rem] ${isDark ? "text-white" : "text-black"}`}>
-            <span className="text-[var(--color-chrome-bright)]">Know</span> your engine?
-          </h3>
-          <p className={`mt-2 max-w-[420px] ${sectionDescription} ${isDark ? "text-white/70" : "text-[var(--color-text-muted)]"}`}>
-            Launch the Jaguar diagnostic calculator with <span dangerouslySetInnerHTML={{ __html: modelName }} /> pre-selected.
-          </p>
+    <article className={`flex flex-col rounded-xl border px-4 py-5 lg:px-[var(--cc-path-px)] lg:py-[var(--cc-path-py)] ${tones.card} ${tones.text}`}>
+      <div className="flex items-start justify-between gap-4">
+        <div className="min-w-0">
+          <span className={`inline-flex rounded-[5px] px-2 py-1 text-[12px] font-medium uppercase leading-none lg:text-[length:var(--cc-badge)] ${tones.badge}`}>
+            {cleanText(path.badge)}
+          </span>
+          <h3
+            className="mt-3 max-w-[9.6em] font-heading text-[27px] font-semibold leading-[1.08] tracking-[-0.01em] lg:text-[length:var(--cc-path-title)]"
+            dangerouslySetInnerHTML={{ __html: typeset(path.title) }}
+          />
+          <p className={`mt-2 max-w-[22em] text-[15px] leading-[1.55] lg:text-[length:var(--cc-path-text)] ${tones.muted}`} dangerouslySetInnerHTML={{ __html: typeset(path.text) }} />
         </div>
-        <CircleIcon name="engine" isDark={isDark} large className="order-1 md:order-2" />
+        <span
+          className={`flex h-20 w-20 shrink-0 items-center justify-center rounded-full sm:h-24 sm:w-24 lg:h-[var(--cc-path-circle)] lg:w-[var(--cc-path-circle)] ${tones.circle}`}
+        >
+          {primary ? (
+            <span className="relative block h-[55%] w-[55%]">
+              <HomeIcon name="engine" isDark={isDark} className="-m-[25%] h-[150%] w-[150%]" />
+            </span>
+          ) : (
+            <FileSearch aria-hidden="true" className="h-[48%] w-[48%]" strokeWidth={1.3} />
+          )}
+        </span>
       </div>
 
-      <Link
-        href={path?.href || "/fault-diagnostic-calculator"}
-        className={`mt-3.5 flex min-h-12 items-center justify-between gap-2.5 rounded-md px-3.5 py-2.5 font-bold transition-all duration-200 md:min-h-[3.25rem] bg-black text-white hover:bg-[var(--color-chrome-bright)] hover:text-black ${sectionButton}`}
-      >
-        <span className="flex min-w-0 items-center gap-2.5">
-          <HomeIcon name="calculator" isDark={true} className="-my-2 h-14 w-14 shrink-0 md:h-16 md:w-16" />
-          <span className="min-w-0">
-            <span className="block leading-tight">
-              Start Jaguar <span dangerouslySetInnerHTML={{ __html: modelName }} /> Diagnosis
+      {button.href ? (
+        <Link
+          href={button.href}
+          className={`mt-5 flex min-h-[64px] items-center gap-4 rounded-lg px-4 transition-shadow lg:mt-[calc(var(--cc-path-py)*0.9)] lg:min-h-[var(--cc-btn-h)] lg:px-[calc(var(--cc-path-px)*1.2)] ${
+            primary ? tones.primary : `border ${tones.outline}`
+          }`}
+        >
+          {primary ? (
+            <Calculator tone="current" aria-hidden="true" className="h-8 w-8 shrink-0 lg:h-[var(--cc-btn-icon)] lg:w-[var(--cc-btn-icon)]" strokeWidth={1.4} />
+          ) : (
+            <span className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full lg:h-[calc(var(--cc-btn-icon)*1.5)] lg:w-[calc(var(--cc-btn-icon)*1.5)] ${tones.circle}`}>
+              <HomeIcon name="engine" isDark={isDark} className="h-[90%] w-[90%]" />
             </span>
-            <span className={`mt-0.5 block text-[12px] font-normal leading-tight md:text-[13px] ${isDark ? "text-white/75" : "text-white/80"}`}>
-              Know your engine? Explore likely faults and compare repair-versus-replacement costs.
-            </span>
+          )}
+          <span className="min-w-0 flex-1 lg:pl-[calc(var(--cc-path-px)*0.5)]">
+            <span className="block text-[15.5px] font-medium leading-snug lg:text-[length:var(--cc-btn)]">{cleanText(button.label)}</span>
+            {button.sub ? <span className="mt-0.5 block text-[13px] font-normal leading-snug opacity-85 lg:text-[length:var(--cc-btn-sub)]">{cleanText(button.sub)}</span> : null}
           </span>
-        </span>
-        <ArrowIcon className="h-5 w-5 shrink-0" />
-      </Link>
+          <ArrowRight aria-hidden="true" className="h-6 w-6 shrink-0" strokeWidth={1.5} />
+        </Link>
+      ) : null}
 
-      <ul className="mt-4 grid grid-cols-3 gap-2.5">
-        <Feature icon="good-choice" title={`${modelName} pre-selected`} text="All generations covered" isDark={isDark} />
-        <Feature icon="chart" title="Real UK cost data" text="Used, recon & rebuilt" isDark={isDark} />
-        <Feature icon="shield" title="Instant verdict" text="Repair vs replace" isDark={isDark} />
-      </ul>
+      {path.features?.length ? (
+        <ul className="mt-5 grid gap-3 sm:grid-cols-3 sm:gap-0 lg:mt-[calc(var(--cc-path-py)*1.4)]">
+          {path.features.map((feature, featureIndex) => {
+            const Icon = FEATURE_ICONS[feature.icon] || CircleCheck;
+            return (
+              <li key={feature.title} className={`flex items-start gap-3 sm:px-3 sm:first:pl-0 ${featureIndex > 0 ? `sm:border-l ${tones.rule}` : ""}`}>
+                <Icon aria-hidden="true" className="h-7 w-7 shrink-0 lg:h-[var(--cc-feat-icon)] lg:w-[var(--cc-feat-icon)]" strokeWidth={1.4} />
+                <span className="min-w-0 text-[13px] leading-snug lg:text-[length:var(--cc-feat)]">
+                  <span className="block font-medium">{cleanText(feature.title)}</span>
+                  <span className={`block ${tones.muted}`}>{cleanText(feature.text)}</span>
+                </span>
+              </li>
+            );
+          })}
+        </ul>
+      ) : null}
+
+      {path.note?.lead || path.note?.text ? (
+        <div className={`mt-4 flex items-start gap-3.5 rounded-lg px-3.5 py-3 lg:mt-[calc(var(--cc-path-py)*1.05)] lg:items-center ${tones.soft}`}>
+          <span className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full lg:h-[var(--cc-info)] lg:w-[var(--cc-info)] ${tones.dot}`}>
+            <Info tone="current" aria-hidden="true" className="h-[62%] w-[62%]" strokeWidth={2.2} />
+          </span>
+          <p className="text-[13.5px] leading-snug lg:text-[length:var(--cc-feat)]">
+            {path.note.lead ? <strong className="block font-semibold">{cleanText(path.note.lead)}</strong> : null}
+            {path.note.text ? <span className={tones.muted}>{cleanText(path.note.text)}</span> : null}
+          </p>
+        </div>
+      ) : null}
     </article>
   );
 }
 
-function SecondaryPath({ path, modelName, isDark }) {
+// The reference composition: car three-quarter front-left, filling ~62% of the frame width, on the floor.
+function CarScene({ scene, car, isDark, sizes }) {
+  if (scene) return <Image src={scene.src} alt="" fill sizes={sizes} className="object-cover" />;
   return (
-    <article
-      className={`rounded-xl border p-3.5 md:p-4 ${
-        isDark
-          ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
-          : "border-[#e8e8e6] bg-white shadow-[0_8px_24px_rgba(16,18,16,0.06)]"
-      }`}
-    >
-      <span
-        className={`inline-flex rounded px-2 py-1 text-[12px] font-bold uppercase leading-none md:px-2.5 md:py-1 md:text-[13px] ${
-          isDark ? "bg-[var(--color-chrome)] text-[var(--color-page)]" : "bg-black text-white"
-        }`}
-      >
-        Path 2
-      </span>
-      <div className="mt-3.5 grid grid-cols-[auto_1fr] items-center gap-3.5 md:grid-cols-[1fr_auto] md:items-start">
-        <div className="order-2 md:order-1">
-          <h3 className={`max-w-[420px] text-[1.55rem] font-bold leading-[1.06] md:text-[2rem] ${isDark ? "text-white" : "text-black"}`}>
-            <span className="text-[var(--color-chrome-bright)]">Not sure</span> which engine you have?
-          </h3>
-          <p className={`mt-2 ${sectionDescription} ${isDark ? "text-white/70" : "text-[var(--color-text-muted)]"}`}>
-            We&apos;ll identify it first.
-          </p>
-        </div>
-        <CircleIcon name="scope-decision" isDark={isDark} large className="order-1 md:order-2" />
-      </div>
-
-      <Link
-        href={path?.href || "#"}
-        className={`mt-3 flex min-h-12 items-center justify-between gap-2.5 rounded-md px-3.5 py-2.5 font-bold transition-all duration-200 md:mt-3 md:min-h-[3rem] ${
-          isDark
-            ? "bg-black text-white hover:bg-[var(--color-chrome-bright)] hover:text-black"
-            : "border-[#d8d8d6] text-black hover:border-[var(--color-chrome)] hover:bg-[#f6f6f5]"
-        } ${sectionButton}`}
-      >
-        <span className="flex min-w-0 items-center gap-2.5">
-          <HomeIcon name="bulb" isDark={isDark} className="-my-2 h-14 w-14 shrink-0 md:h-16 md:w-16" />
-          <span className="min-w-0">
-            <span className="block leading-tight">
-              Identify <span dangerouslySetInnerHTML={{ __html: modelName || "Engine" }} /> Engine Code
-            </span>
-            <span className={`mt-0.5 block text-[12px] font-normal leading-tight md:text-[13px] ${isDark ? "text-white/75" : "text-[var(--color-text-muted)]"}`}>
-              Not sure which engine you have? Identify your engine code before starting diagnosis.
-            </span>
-          </span>
-        </span>
-        <ArrowIcon className="h-5 w-5 shrink-0" />
-      </Link>
-
-      <div
-        className={`mt-2 flex items-start gap-2 rounded-md p-2.5 md:mt-2 md:p-3 ${
-          isDark ? "bg-white/[0.04]" : "bg-[#f3f3f2]"
-        }`}
-      >
-        <CircleIcon name="info" isDark={isDark} compact />
-        <p className={`min-w-0 leading-[1.4] text-[var(--color-text)] ${sectionBody}`}>
-          <strong className={`font-bold ${isDark ? "text-white" : "text-black"}`}>
-            Identification is the first step inside the tool.
-          </strong>
-          <br />
-          <span className={isDark ? "text-white/65" : "text-[var(--color-text-muted)]"}>
-            We&apos;ll pinpoint your exact engine code before running the diagnostics.
-          </span>
-        </p>
-      </div>
-    </article>
+    <CarOnBackground
+      src={car}
+      isDark={isDark}
+      className="absolute inset-0"
+      bgClassName="object-cover object-[62%_72%]"
+      carClassName="left-[8%] right-[1%] top-[2%] bottom-[13%]"
+      sizes={sizes}
+    />
   );
 }
 
-function SmartDecision({ isDark }) {
-  return (
-    <div
-      className={`flex max-w-[620px] gap-3.5 rounded-xl border p-3.5 md:p-4 ${
-        isDark
-          ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
-          : "border-[#e8e8e6] bg-white shadow-[0_8px_22px_rgba(16,18,16,0.05)]"
-      }`}
-    >
-      <HomeIcon name="calculator" isDark={isDark} className="-my-1 h-12 w-12 shrink-0 md:h-14 md:w-14" />
-      <p className={`${sectionBody} md:text-[17px] ${isDark ? "text-white/85" : "text-[var(--color-text)]"}`}>
-        <strong className={`font-bold ${isDark ? "text-[var(--color-chrome-bright)]" : "text-black"}`}>
-          The smarter way to decide:
-        </strong>{" "}
-        Get a personalised repair-vs-replace verdict using real UK cost data.
-      </p>
-    </div>
-  );
-}
+/* ---------- Section ---------- */
 
 export default function CalculatorCTA({ data }) {
   const { theme } = useTheme();
-  const isDark = theme === "dark";
-
   if (!data) return null;
 
+  const isDark = theme === "dark";
+  const tones = palette(isDark);
   const title = splitTitle(data.h2);
-  const intro = introParts(data.intro);
-  const modelName = modelNameFromTitle(data.h2);
-  const paths = data.paths || [];
-  const sectionBg = isDark ? "bg-[var(--color-page)]" : "bg-[var(--color-page)]";
+  const paragraphs = introParagraphs(data.intro);
+  const scene = data.scenes?.[isDark ? "dark" : "light"] || null;
+  const car = scene ? null : data.image || carImageFor(data.h2);
+  const closing = data.closing;
 
   return (
-    <section className={`overflow-x-hidden ${sectionBg}`}>
-      <div className={`relative overflow-hidden ${sectionBg}`}>
-        <div className="absolute inset-y-0 right-0 w-[62%] md:w-[48%]">
-          <Image
-            src="/home-image/sec2-bg.webp"
-            alt=""
-            fill
-            className="object-cover object-right"
-            sizes="(max-width: 768px) 62vw, 48vw"
-          />
-          <div
-            className={
-              isDark
-                ? "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(11,12,12,0.82)_34%,rgba(11,12,12,0.18)_100%)]"
-                : "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(243,243,241,0.88)_34%,rgba(243,243,241,0.18)_100%)]"
-            }
-          />
+    <section id="repair-or-replace" className="model-calc relative isolate overflow-hidden bg-[var(--color-page)] text-[var(--color-text)]">
+      {/* lg+: the car scene top-right of the header (reference frame 1564x856), fading into the copy and page */}
+      {scene || car ? (
+        <div aria-hidden="true" className="absolute right-0 top-0 -z-10 hidden aspect-[1564/856] w-[min(58%,900px)] lg:block">
+          <CarScene scene={scene} car={car} isDark={isDark} sizes="(min-width: 1024px) 900px, 100vw" />
+          <div className="absolute inset-y-0 left-0 w-[30%] bg-[linear-gradient(90deg,var(--color-page)_0%,color-mix(in_srgb,var(--color-page)_55%,transparent)_45%,transparent_100%)]" />
+          <div className="absolute inset-x-0 bottom-0 h-[18%] bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)]" />
+          <div className="absolute inset-x-0 top-0 h-[6%] bg-[linear-gradient(180deg,var(--color-page)_0%,transparent_100%)]" />
         </div>
+      ) : null}
 
-        <div className="relative mx-auto w-full max-w-8xl px-4 pb-3 pt-5 md:px-6 md:pb-3.5 md:pt-7 lg:px-8">
-          <div className="max-w-[820px] lg:max-w-[56%]">
-            <p
-              className={`text-[0.64rem] font-bold uppercase tracking-[0.14em] ${
-                isDark ? "text-white/55" : "text-[var(--color-text-muted)]"
-              }`}
-            >
-              Diagnostic Calculator
-            </p>
-            <h2
-              className={`mt-1.5 text-[1.55rem] font-bold leading-[1.02] sm:text-[1.85rem] md:text-[2.35rem] md:leading-[0.98] lg:text-[2.5rem] ${
-                isDark ? "text-white" : "text-[var(--color-text)]"
-              }`}
-            >
-              <span dangerouslySetInnerHTML={{ __html: title.before }} />
-              {title.accent ? (
-                <>
-                  {" "}
-                  <span className="text-[var(--color-chrome-bright)]" dangerouslySetInnerHTML={{ __html: title.accent }} />
-                </>
-              ) : null}
-            </h2>
-            <div className="mt-2.5">
-              <MStripe />
-            </div>
-            {data.intro ? (
-              <div className={`mt-2 max-w-[700px] md:mt-2.5 ${sectionDescription} ${isDark ? "text-white/75" : "text-[var(--color-text-muted)]"}`}>
-                <p dangerouslySetInnerHTML={{ __html: intro.first }} />
-                {intro.second ? <p className="mt-1.5" dangerouslySetInnerHTML={{ __html: intro.second }} /> : null}
-              </div>
+      <div className="mx-auto w-full max-w-[1546px] px-4 pb-12 pt-10 sm:px-6 lg:px-[var(--cc-px)] lg:pb-[var(--cc-pb)] lg:pt-[var(--cc-pt)]">
+        <div className="lg:max-w-[52%]">
+          <h2 className={`model-calc-title ${tones.text}`}>
+            <span className="lg:block" dangerouslySetInnerHTML={{ __html: `${title.lead} ` }} />
+            {title.or ? (
+              <span>
+                {title.or} <span className={tones.accent} dangerouslySetInnerHTML={{ __html: title.accent }} />
+              </span>
             ) : null}
-            <div className="mt-4">
-              <SmartDecision isDark={isDark} />
-            </div>
+          </h2>
+          <div className={`mt-3 max-w-[520px] space-y-3 text-[15px] leading-[1.6] lg:mt-[var(--cc-desc-mt)] lg:space-y-[var(--cc-p-gap)] lg:text-[length:var(--cc-desc)] lg:leading-[var(--cc-desc-lh)] ${tones.muted}`}>
+            {paragraphs.map((paragraph) => (
+              <p key={paragraph.slice(0, 30)} dangerouslySetInnerHTML={{ __html: paragraph }} />
+            ))}
           </div>
-          {/* Model photo on the right, as in the reference */}
-          {data.image ? (
-            <div className="pointer-events-none absolute bottom-3 right-6 hidden w-[min(40%,520px)] lg:block xl:right-8">
-              <div className="relative aspect-[3/2] w-full">
-                <Image src={data.image} alt="" fill className="object-contain object-bottom" sizes="520px" />
+        </div>
+
+        {/* Phones / tablets: the same scene as a full-bleed band under the copy */}
+        {scene || car ? (
+          <div aria-hidden="true" className="relative -mx-4 mt-5 aspect-[1564/856] sm:-mx-6 lg:hidden">
+            <CarScene scene={scene} car={car} isDark={isDark} sizes="100vw" />
+            <div className="absolute inset-x-0 bottom-0 h-[12%] bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)]" />
+          </div>
+        ) : null}
+
+        {data.smartNote?.text ? (
+          <div
+            className={`relative z-10 mt-4 flex items-center gap-4 rounded-xl border px-4 py-3.5 lg:mt-[var(--cc-note-mt)] lg:min-h-[var(--cc-note-h)] lg:w-[var(--cc-note-w)] lg:gap-[calc(var(--cc-note-px)*0.95)] lg:px-[var(--cc-note-px)] lg:py-2 ${tones.card} ${tones.text}`}
+          >
+            <span className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full lg:h-[var(--cc-note-icon)] lg:w-[var(--cc-note-icon)] ${tones.circle}`}>
+              <Calculator aria-hidden="true" className="h-[58%] w-[58%]" strokeWidth={1.4} />
+            </span>
+            <p className={`text-[14px] leading-[1.55] lg:text-[length:var(--cc-note)] ${tones.muted}`}>
+              <strong className={`font-semibold ${tones.text}`}>{cleanText(data.smartNote.lead)}</strong> {cleanText(data.smartNote.text)}
+            </p>
+          </div>
+        ) : null}
+
+        <div className="relative z-10 mt-5 grid gap-4 lg:mt-[var(--cc-paths-mt)] lg:grid-cols-[minmax(0,694fr)_minmax(0,709fr)] lg:gap-[var(--cc-paths-gap)]">
+          {(data.paths || []).slice(0, 2).map((path, index) => (
+            <PathCard key={path.badge || index} path={path} index={index} tones={tones} isDark={isDark} />
+          ))}
+        </div>
+
+        {closing?.title ? (
+          <div
+            className={`mt-4 flex flex-col gap-4 rounded-xl border px-4 py-4 sm:flex-row sm:items-center sm:justify-between lg:mt-[var(--cc-close-mt)] lg:min-h-[var(--cc-close-h)] lg:px-[var(--cc-path-px)] lg:py-2 ${tones.card} ${tones.text}`}
+          >
+            <div className="flex items-center gap-4 lg:gap-[calc(var(--cc-path-px)*0.8)]">
+              <span className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full lg:h-[var(--cc-close-mark)] lg:w-[var(--cc-close-mark)] ${tones.dot}`}>
+                <Target tone="current" aria-hidden="true" className="h-[56%] w-[56%]" strokeWidth={1.8} />
+              </span>
+              <div className="min-w-0">
+                <p className="text-[16.5px] font-semibold leading-snug lg:text-[length:var(--cc-close-title)]">{cleanText(closing.title)}</p>
+                <p className={`mt-1 max-w-[560px] text-[13.5px] leading-[1.6] lg:text-[length:var(--cc-close-text)] ${tones.muted}`} dangerouslySetInnerHTML={{ __html: typeset(closing.text) }} />
               </div>
             </div>
-          ) : null}
-        </div>
-      </div>
-
-      <div className="mx-auto w-full min-w-0 max-w-8xl px-4 pb-5 pt-2 md:px-6 md:pb-6 md:pt-2.5 lg:px-8">
-
-        <div className="mt-4 grid gap-4 lg:grid-cols-2 lg:mt-5">
-          <PrimaryPath path={paths[0]} modelName={modelName} isDark={isDark} />
-          <SecondaryPath path={paths[1]} modelName={modelName} isDark={isDark} />
-        </div>
+            {closing.button?.href ? (
+              <Link
+                href={closing.button.href}
+                className={`inline-flex min-h-[52px] shrink-0 items-center justify-center gap-6 rounded-lg px-6 text-[16px] !font-medium lg:min-h-[var(--cc-close-btn-h)] lg:min-w-[332px] lg:justify-between lg:px-[calc(var(--cc-path-px)*1.4)] lg:text-[length:var(--cc-close-btn)] ${tones.primary}`}
+              >
+                {cleanText(closing.button.label)}
+                <ArrowRight aria-hidden="true" className="h-6 w-6" strokeWidth={1.6} />
+              </Link>
+            ) : null}
+          </div>
+        ) : null}
       </div>
     </section>
   );

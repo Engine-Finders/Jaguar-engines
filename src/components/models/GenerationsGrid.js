@@ -3,508 +3,609 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import MStripe from "@/components/reusableComponents/MStripe";
+import { ArrowRight, ChevronDown, ChevronUp, Star, StarHalf } from "lucide-react";
+import { BookOpen, NumberGlyph, Scale } from "@/components/models/brandIcons";
 import { useTheme } from "@/components/shared/themeProvider";
-import HomeIcon from "@/components/home/homeIcons";
 import { carImageFor } from "@/components/shared/carImage";
-import { sectionDescription, sectionH2, sectionTableText, tableHeaderClass } from "@/components/models/sectionTypography";
+import { outsideTags } from "@/components/models/outsideTags";
 
-const HEADER_IMAGE = "/home-image/sec2-bg.webp";
+/*
+ * Model page "Generations" (section 4), built from the 1536px brand references (light + dark).
+ *
+ * Desktop (lg, 1024px up), as in the reference:
+ *   title (two lines)
+ *   [ description   ] [ cards 2..5 (four across)          ]
+ *   [ card 1 (open) ] [ comparison table + "Our position" ]   <- card 1 and the table share a bottom edge
+ *   comparison note / "Read the full comparison" bar
+ * Sizes come from the --gn-* tokens in globals.css (reference values at 1536px, scaled down to 1024px).
+ *
+ * Any number of generations works: 1 card (F-Pace) puts the table's intro beside card 1; 2–4 cards fill
+ * one row (the intro takes any free slots); 9 cards (XJ) wrap into rows of four.
+ * Tablet: everything stacked, cards two/four across, real table from md. Phones: card 1 in full, the other
+ * cards in a swipeable row, the table as one block per aspect.
+ */
 
 function cleanText(text = "") {
   return String(text ?? "")
-    .replaceAll("Ã‚Â£", "\u00a3")
-    .replaceAll("Â£", "\u00a3")
-    .replaceAll("Ã¢â‚¬â€œ", "\u2013")
-    .replaceAll("â€“", "\u2013")
-    .replaceAll("Ã¢â‚¬â€", "\u2014")
-    .replaceAll("â€”", "\u2014")
-    .replaceAll("Ã¢â‚¬Â¢", "\u2022")
-    .replaceAll("â€¢", "\u2022")
-    .replaceAll("Ã¢Ëœâ€¦", "\u2605")
-    .replaceAll("â˜…", "\u2605")
-    .replaceAll("Ã¢Ëœâ€ ", "\u2606")
-    .replaceAll("â˜†", "\u2606")
-    .replaceAll("Ã‚Â½", "\u00bd")
-    .replaceAll("Â½", "\u00bd")
-    .replaceAll("Ã°Å¸â€�Â¥", "\ud83d\udd25")
-    .replaceAll("ðŸ”¥", "\ud83d\udd25")
-    .replaceAll("Ã¢â€ â€™", "\u2192")
-    .replaceAll("â†’", "\u2192")
+    .replaceAll("Ã‚Â£", "£")
+    .replaceAll("Â£", "£")
+    .replaceAll("â€“", "–")
+    .replaceAll("â€”", "—")
+    .replaceAll("â€¢", "•")
+    .replaceAll("â˜…", "★")
+    .replaceAll("â˜†", "☆")
+    .replaceAll("Â½", "½")
+    .replaceAll("â†’", "→")
     .replace(/\s+/g, " ")
     .trim();
 }
 
+// Year ranges take an en dash ("2017–2019", "2020–Present"); " - " separators become em dashes.
+function typeset(text = "") {
+  return outsideTags(cleanText(text), (part) =>
+    part
+      .replace(/(\d{4})\s*-\s*(\d{4}|Present)/gi, "$1–$2")
+      .replace(/\s-\s/g, " — "),
+  );
+}
+
+// "E-Pace - One Generation, Five Powertrains" -> "E-Pace — One Generation," / "Five Powertrains"
+// "XF Generations - Find Your Vehicle"       -> "XF Generations —" / "Find Your Vehicle"
 function splitTitle(title = "") {
   const clean = cleanText(title);
-  const findMarker = "Find Your Vehicle";
-  const findIndex = clean.indexOf(findMarker);
-
-  if (findIndex !== -1) {
-    const before = clean.slice(0, findIndex).replace(/\s*-\s*$/, "").trim();
-    return {
-      main: before ? `${before} -` : "",
-      accent: findMarker,
-    };
-  }
-
-  const dashIndex = clean.indexOf(" - ");
-  if (dashIndex !== -1) {
-    const model = clean.slice(0, dashIndex).trim();
-    const rest = clean.slice(dashIndex + 3).trim();
-    const commaIndex = rest.indexOf(",");
-
-    // Keep model name on line 1 with the first phrase: "E-Pace - One Generation,"
-    if (commaIndex !== -1) {
-      return {
-        main: `${model} - ${rest.slice(0, commaIndex + 1).trim()}`,
-        accent: rest.slice(commaIndex + 1).trim(),
-      };
-    }
-
-    return {
-      main: `${model} -`,
-      accent: rest,
-    };
-  }
-
-  return { main: clean, accent: "" };
-}
-
-// Card title -> parts, e.g. "XJ X351 (2010-2019)" -> code "X351", years "2010-2019";
-// "2019-2024: Revised V8 + Straight-Six Era" -> code "2019-2024", note "Revised V8 + Straight-Six Era".
-function parseCardTitle(title = "", modelName = "") {
-  const clean = cleanText(title).replace(/\s*-\s*$/, "");
-  const parens = clean.match(/^(.*?)\s*\(([^)]*)\)\s*(?:-\s*)?(.*)$/);
-  let name = parens ? parens[1] : clean;
-  let years = parens ? parens[2] : "";
-  let note = parens ? parens[3] : "";
-  if (!parens && clean.includes(": ")) {
-    [name, note] = clean.split(/:\s+(.*)/s);
-  }
-  if (modelName && name.toLowerCase().startsWith(`${modelName.toLowerCase()} `)) {
-    name = name.slice(modelName.length + 1);
-  }
-  const chassis = name.match(/^(X\d{3}|XJ40|Series \d)\b\s*(.*)$/i);
-  if (chassis && chassis[2] && !years) {
-    note = [chassis[2], note].filter(Boolean).join(" - ");
-    name = chassis[1];
-  }
-  return { code: name.trim(), years: years.trim(), note: note.trim() };
-}
-
-// "1996-2006 • 4.0 AJ27 V8 • 4.2 AJ34 V8" -> years + engine list; anything else is a badge line.
-function parseMeta(meta = "") {
-  const clean = cleanText(meta);
-  if (!clean) return { years: "", engines: [], extra: "" };
-  const parts = clean.split(" • ");
-  if (/^\d{4}\s*[--]\s*(\d{4}|present)?$/i.test(parts[0].trim())) {
-    return { years: parts[0].trim(), engines: parts.slice(1), extra: "" };
-  }
-  return { years: "", engines: [], extra: clean };
+  const match = clean.match(/^(.*?)\s+[-–—]\s+(.*)$/);
+  if (!match) return { main: clean, accent: "" };
+  const [, model, rest] = match;
+  const comma = rest.indexOf(",");
+  if (comma !== -1) return { main: `${model} — ${rest.slice(0, comma + 1)}`, accent: rest.slice(comma + 1).trim() };
+  return { main: `${model} —`, accent: rest };
 }
 
 function modelNameFromH2(h2 = "") {
-  return cleanText(h2).split(/\s+(?:-|Generations)\b/)[0].trim();
+  return cleanText(h2).split(/\s+(?:[-–—]|Generations)\s/)[0].replace(/^Jaguar\s+/, "").trim();
 }
 
-function ArrowIcon({ className = "h-4 w-4" }) {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2.5">
-      <path d="M5 12h14m-6-6 6 6-6 6" />
-    </svg>
-  );
+// Card title -> chassis code, e.g. "XJ X351 (2010-2019)" -> "X351"; "2019-2024: Revised V8 Era" -> "2019-2024".
+function parseCardTitle(title = "", modelName = "") {
+  let name = cleanText(title).replace(/\s*-\s*$/, "");
+  let years = "";
+  let note = "";
+  const parens = name.match(/^(.*?)\s*\(([^)]*)\)\s*(?:-\s*)?(.*)$/);
+  if (parens) [, name, years, note] = parens;
+  else if (name.includes(": ")) [name, note] = name.split(/:\s+(.*)/s);
+  const model = modelName.toLowerCase();
+  if (model && name.toLowerCase().startsWith(`${model} `)) name = name.slice(modelName.length + 1);
+  name = name.replace(/^Jaguar\s+\S+\s+/i, "").replace(/\s+(Generation|All Engines)$/i, "");
+  return { code: name.trim(), years: years.trim(), note: note.trim() };
 }
 
-function ChevronIcon({ open = false, className = "h-6 w-6" }) {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2.5">
-      <path d={open ? "m6 15 6-6 6 6" : "m6 9 6 6 6-6"} />
-    </svg>
-  );
+// "1996-2006 • 4.0 AJ27 V8 • 4.2 AJ34 V8" -> years + engine list (anything else is a marketing badge).
+function parseMeta(meta = "") {
+  const parts = cleanText(meta).split(/\s*•\s*/).filter(Boolean);
+  if (parts.length && /^\d{4}\s*-\s*(\d{4}|present)$/i.test(parts[0])) return { years: parts[0], engines: parts.slice(1) };
+  if (parts.length && /^\d{4}\s*-\s*\d{4}:/.test(parts[0])) return { years: parts[0].replace(/:.*/, ""), engines: [], note: parts[0].replace(/^[^:]*:\s*/, "") };
+  return { years: "", engines: [] };
 }
 
-function IndexBadge({ index, isDark }) {
-  return (
-    <span
-      className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-md text-[0.95rem] font-bold leading-none shadow-sm ${
-        isDark ? "bg-[var(--color-chrome)] text-[var(--color-page)]" : "bg-black text-white"
-      }`}
-    >
-      {index + 1}
-    </span>
-  );
+// Subtitle lines, e.g. "2017-2019 (pre-facelift)" -> ["2017–2019", "(pre-facelift)"], as in the reference.
+function subtitleLines(card, title, meta) {
+  const raw = cleanText(card.subtitle) || [title.years || meta.years, title.note || meta.note].filter(Boolean).join(" (") + (title.note || meta.note ? ")" : "");
+  if (!raw) return [];
+  const parts = typeset(raw).match(/^(.*?)\s*(\(.*\))$/);
+  return parts ? [parts[1], parts[2]].filter(Boolean) : [typeset(raw)];
 }
 
-function TableIcon({ name = "timeline", isDark }) {
-  return (
-    <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center">
-      <HomeIcon name={name} isDark={isDark} className="h-9 w-9 object-contain" />
-    </span>
-  );
-}
-
-// Stars only from the rating string; any words after the first five stars become a caption.
-function Rating({ value }) {
-  const rating = cleanText(value);
-  if (!rating) return null;
-  const chars = [];
+// First five ★/☆/½ in the rating string; whatever follows ("(pre-2019 cooling caveats apply)") is a caption.
+function parseRating(value = "") {
+  const text = cleanText(value);
+  let full = 0;
+  let half = 0;
+  let seen = 0;
   let end = 0;
-  for (let i = 0; i < rating.length && chars.length < 5; i += 1) {
-    if ("★☆½".includes(rating[i])) {
-      chars.push(rating[i]);
-      end = i + 1;
-    }
+  for (let i = 0; i < text.length && seen < 5; i += 1) {
+    const char = text[i];
+    if (char === "★") full += 1;
+    else if (char === "½") half = 1;
+    else if (char !== "☆") continue;
+    seen += 1;
+    end = i + 1;
   }
-  if (!chars.length) return null;
-  while (chars.length < 5) chars.push("☆");
-  const caption = rating.slice(end).trim();
+  if (!seen) return null;
+  return { value: Math.min(5, full + half * 0.5), caption: typeset(text.slice(end)) };
+}
+
+/* ---------- Palette ---------- */
+
+// Site palette, as in sections 1–3: black and silver in light, silver on black in dark. Red / green stay
+// only as risk / safe signals in the table, as elsewhere on the site.
+function palette(isDark) {
+  return isDark
+    ? {
+        text: "text-white",
+        soft: "text-white/[0.78]",
+        accent: "text-[#d4d4d2]",
+        badge: "border border-white/[0.32] bg-[#38393b] text-white",
+        card: "border-white/[0.18] bg-[rgba(14,16,17,0.92)]",
+        leadCard: "border-white/[0.38] bg-[rgba(14,16,17,0.92)]",
+        rule: "border-white/[0.11]",
+        outline: "border-white/[0.2] text-white hover:border-white/[0.45]",
+        star: "text-[#ececea]",
+        starEmpty: "text-[#ececea]/80",
+        table: "border-white/[0.22] bg-[#111315]",
+        head: "bg-[#16181a]",
+        position: "bg-[#121416] text-white",
+        positionStar: "text-[#a3a3a1] fill-current",
+        risk: "text-[#f0625a]",
+        safe: "text-white/[0.92]",
+        bar: "border-white/[0.18] bg-[#0d0f10]",
+        link: "text-[#c9cacc] hover:text-white",
+      }
+    : {
+        text: "text-[#111210]",
+        soft: "text-[#262725]",
+        // the hero's silver accent ("UK Guide")
+        accent: "bg-[linear-gradient(180deg,#8a8b87_0%,#6b6c68_100%)] bg-clip-text text-transparent",
+        badge: "bg-[#111210] text-white",
+        card: "border-[#eceeed] bg-white shadow-[0_6px_22px_rgba(16,18,16,0.06)]",
+        leadCard: "border-[#a5a6a2] bg-white shadow-[0_6px_22px_rgba(16,18,16,0.06)]",
+        rule: "border-[#ededeb]",
+        outline: "border-[#dcdcda] text-[#111210] hover:border-[#9b9c97]",
+        star: "text-[#111210]",
+        starEmpty: "text-[#111210]/80",
+        table: "border-[#e4e7e3] bg-white shadow-[0_6px_22px_rgba(16,18,16,0.05)]",
+        head: "bg-white",
+        position: "bg-[#f3f3f1] text-[#111210]",
+        positionStar: "text-[#111210] fill-current",
+        risk: "text-[#d42a2a]",
+        safe: "text-[#24613a]",
+        bar: "border-[#ececea] bg-[#f9f9f8]",
+        link: "text-[#111210] hover:text-[#4a4b48]",
+      };
+}
+
+/* ---------- Card ---------- */
+
+function Stars({ rating, tones, lead }) {
+  if (!rating) return null;
+  const full = Math.floor(rating.value);
+  const half = rating.value - full >= 0.5;
+  const size = lead
+    ? "h-[20px] w-[20px] lg:h-[calc(var(--gn-star)*1.08)] lg:w-[calc(var(--gn-star)*1.08)]"
+    : "h-[18px] w-[18px] lg:h-[var(--gn-star)] lg:w-[var(--gn-star)]";
 
   return (
-    <div>
-      <div className="flex gap-1 text-[19px] leading-none" aria-label={`${chars.filter((c) => c !== "☆").length} out of 5`}>
-        {chars.map((char, index) => (
-          <span
-            key={index}
-            className={
-              char === "☆"
-                ? "text-[var(--color-border-strong)]"
-                : char === "½"
-                  ? "text-[var(--color-text)] opacity-60"
-                  : "text-[var(--color-text)]"
-            }
-          >
-            ★
-          </span>
-        ))}
-      </div>
-      {caption ? <p className="mt-1 text-[12px] leading-snug text-[var(--color-text-muted)]">{caption}</p> : null}
+    <div className="mt-3 lg:mt-[var(--gn-stars-mt)]">
+      <span className={`inline-flex items-center gap-[5px] ${tones.star}`} role="img" aria-label={`${rating.value} out of 5 stars`}>
+        {Array.from({ length: 5 }, (_, index) => {
+          if (index < full) return <Star key={index} aria-hidden="true" className={`${size} fill-current`} strokeWidth={1.4} />;
+          if (index === full && half) {
+            return (
+              <span key={index} className={`relative ${size}`}>
+                <Star aria-hidden="true" className={`absolute inset-0 h-full w-full ${tones.starEmpty}`} strokeWidth={1.2} />
+                <StarHalf aria-hidden="true" className="absolute inset-0 h-full w-full fill-current" strokeWidth={1.4} />
+              </span>
+            );
+          }
+          return <Star key={index} aria-hidden="true" className={`${size} ${tones.starEmpty}`} strokeWidth={1.2} />;
+        })}
+      </span>
+      {rating.caption ? <p className={`mt-1 text-[12px] leading-snug ${tones.soft}`} dangerouslySetInnerHTML={{ __html: rating.caption }} /> : null}
     </div>
   );
 }
 
-function GenerationCard({ card, index, modelName, defaultOpen = false, isDark }) {
-  const [open, setOpen] = useState(defaultOpen);
+// The generation's cut-out car standing on the card, with a soft contact shadow (as in the reference).
+function CarPhoto({ src, alt, lead, wide = false, isDark }) {
+  if (!src) return null;
+  return (
+    <div
+      className={
+        lead
+          ? `relative mx-auto mt-1 h-[168px] w-[96%] sm:h-[180px] lg:mt-[var(--gn-lead-car-mt)] lg:w-[96%] ${wide ? "lg:h-[calc(var(--gn-lead-car-h)*1.4)]" : "lg:h-[var(--gn-lead-car-h)]"}`
+          : "relative mx-auto mt-1 h-[122px] w-full sm:h-[126px] lg:mt-[var(--gn-car-mt)] lg:h-[var(--gn-car-h)]"
+      }
+    >
+      <div aria-hidden="true" className={`absolute inset-x-[10%] bottom-[2%] h-[12%] rounded-[50%] blur-md ${isDark ? "bg-black/80" : "bg-black/25"}`} />
+      <Image src={src} alt={alt} fill className="object-contain object-bottom" sizes={lead ? "(min-width: 1024px) 300px, 86vw" : "(min-width: 1024px) 230px, 70vw"} />
+    </div>
+  );
+}
+
+function GenerationCard({ card, index, modelName, lead = false, wide = false, isDark }) {
+  const tones = palette(isDark);
+  const verdict = typeset(card.verdict);
+  const [open, setOpen] = useState(lead && Boolean(verdict));
   const title = parseCardTitle(card.title, modelName);
   const meta = parseMeta(card.meta);
-  const subtitle = cleanText(card.subtitle) || [title.years, title.note].filter(Boolean).join(" - ") || meta.years;
-  const engines = card.engines || meta.engines;
-  const badge = cleanText(card.badge).replace(/^"|"$/g, "").replace(/(🔥)\s*"/, "$1 ").replace(/"$/, "");
-  const extra = meta.extra;
-  const verdict = cleanText(card.verdict);
-  const label = cleanText(card.cta?.label || `Explore ${title.code}`).replace(/\s*→\s*$/, "").replace(/^Explore the\s+/i, "Explore ");
+  const lines = subtitleLines(card, title, meta);
+  const engines = (card.engines?.length ? card.engines : meta.engines).map(typeset);
+  const rating = parseRating(card.rating);
   const href = card.cta?.href || "#";
+  const label = typeset(card.cta?.label || `Explore ${title.code}`)
+    .replace(/\s*→\s*$/, "")
+    .replace(/^Explore the\s+/i, "Explore ");
+  const verdictId = `gen-verdict-${index}`;
 
   return (
     <article
-      className={`flex flex-col rounded-md border bg-[var(--color-surface-raised)] p-4 text-[var(--color-text)] shadow-[0_8px_22px_var(--color-shadow)] ${
-        open ? "border-[var(--color-text)]/70" : "border-[var(--color-border)]"
-      }`}
+      className={`relative flex min-w-0 flex-col rounded-xl border px-4 pb-4 pt-4 lg:px-[var(--gn-card-px)] lg:pt-[var(--gn-card-pt)] ${
+        lead ? `${tones.leadCard} lg:pb-[var(--gn-lead-pb)]` : `${tones.card} lg:pb-[var(--gn-card-pb)]`
+      } ${tones.text}`}
     >
-      <div className="flex items-start gap-3">
-        <IndexBadge index={index} isDark={isDark} />
-        <div className="min-w-0 flex-1">
-          <p className="text-[14px] font-semibold leading-tight text-[var(--color-text)]">{cleanText(card.label) || modelName}</p>
-          <h3 className="mt-0.5 text-[22px] font-bold leading-[1.1]" dangerouslySetInnerHTML={{ __html: title.code }} />
-        </div>
-        {verdict ? (
-          <button
-            type="button"
-            aria-label={open ? "Hide verdict" : "Show verdict"}
-            aria-expanded={open}
-            onClick={() => setOpen((value) => !value)}
-            className="shrink-0 text-[var(--color-text)]"
+      {/* sm–lg: card 1 lays out in two columns (car | verdict); phones and desktop stack it */}
+      <div
+        className={
+          lead
+            ? wide
+              ? "sm:grid sm:grid-cols-2 sm:gap-6 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-[calc(var(--gn-col-gap)*1.6)]"
+              : "sm:grid sm:grid-cols-2 sm:gap-6 lg:block"
+            : "flex flex-1 flex-col"
+        }
+      >
+        <div className={lead ? "" : "flex flex-1 flex-col"}>
+          <header className="flex items-start gap-3 lg:gap-[var(--gn-badge-gap)]">
+            {index < 10 ? (
+              <NumberGlyph value={index + 1} className="h-[26px] w-[26px] lg:h-[calc(var(--gn-badge)*1.08)] lg:w-[calc(var(--gn-badge)*1.08)]" />
+            ) : (
+              <span
+                className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-[13px] font-semibold leading-none lg:h-[var(--gn-badge)] lg:w-[var(--gn-badge)] lg:text-[calc(var(--gn-badge)*0.56)] ${tones.badge}`}
+              >
+                {index + 1}
+              </span>
+            )}
+            <div className="min-w-0 flex-1 pt-px">
+              <p className="text-[13.5px] font-medium leading-tight lg:text-[length:var(--gn-label)]" dangerouslySetInnerHTML={{ __html: cleanText(card.label) || modelName }} />
+              <h3
+                className="mt-0.5 text-[22px] font-medium leading-[1.2] tracking-[-0.005em] lg:text-[length:var(--gn-code)]"
+                dangerouslySetInnerHTML={{ __html: title.code }}
+              />
+            </div>
+            {lead && verdict ? (
+              <button
+                type="button"
+                onClick={() => setOpen((value) => !value)}
+                aria-expanded={open}
+                aria-controls={verdictId}
+                aria-label={open ? "Hide our verdict" : "Show our verdict"}
+                className="-mr-1 -mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-md"
+              >
+                {open ? <ChevronUp className="h-6 w-6" strokeWidth={2} /> : <ChevronDown className="h-6 w-6" strokeWidth={2} />}
+              </button>
+            ) : null}
+          </header>
+
+          {/* Years / notes / engines, aligned with the model name as in the reference */}
+          <div
+            className={`mt-3 pl-9 text-[13px] leading-[1.55] lg:mt-[var(--gn-meta-mt)] lg:pl-[calc(var(--gn-badge)+var(--gn-badge-gap))] lg:text-[length:var(--gn-meta)] lg:leading-[var(--gn-meta-lh)] ${
+              lead ? "" : "lg:min-h-[var(--gn-meta-min)]"
+            }`}
           >
-            <ChevronIcon open={open} />
-          </button>
-        ) : null}
-      </div>
-
-      <div className="mt-3 min-h-[5.5rem] pl-11 text-[13px] leading-[1.45] text-[var(--color-text)]">
-        {subtitle ? <p dangerouslySetInnerHTML={{ __html: subtitle }} /> : null}
-        {engines?.length ? (
-          <ul className="mt-1">
-            {engines.map((engine) => (
-              <li key={engine} className="flex gap-1.5">
-                <span aria-hidden="true">{"•"}</span>
-                <span dangerouslySetInnerHTML={{ __html: cleanText(engine) }} />
-              </li>
+            {lines.map((line) => (
+              <p key={line} dangerouslySetInnerHTML={{ __html: line }} />
             ))}
-          </ul>
-        ) : null}
-        {badge ? <p className="mt-1.5 font-semibold" dangerouslySetInnerHTML={{ __html: badge }} /> : null}
-        {extra ? <p className="mt-1.5 text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: extra }} /> : null}
-      </div>
+            {engines.length ? (
+              <ul className="mt-0.5">
+                {engines.map((engine) => (
+                  <li key={engine} className="flex gap-1.5">
+                    <span aria-hidden="true">{"•"}</span>
+                    <span dangerouslySetInnerHTML={{ __html: engine }} />
+                  </li>
+                ))}
+              </ul>
+            ) : null}
+          </div>
 
-      <div className="relative mt-3 h-[130px] w-full md:h-[140px]">
-        {card.image ? (
-          <Image src={card.image} alt={`${modelName} ${title.code}`} fill className="object-contain object-center" sizes="(min-width: 1024px) 260px, 80vw" />
-        ) : null}
-      </div>
-
-      <div className="mt-3">
-        <Rating value={card.rating} />
-      </div>
-
-      {open && verdict ? (
-        <div className="mt-4 text-[14px] leading-[1.5]">
-          <p className="font-bold">Our Verdict:</p>
-          <p className="mt-1" dangerouslySetInnerHTML={{ __html: verdict }} />
+          {/* Car, stars and button sit on the card's bottom edge, so they line up across a row */}
+          <div className={lead ? "" : "mt-auto"}>
+            <CarPhoto src={card.image} alt={`${modelName} ${title.code}`} lead={lead} wide={wide} isDark={isDark} />
+            <Stars rating={rating} tones={tones} lead={lead} />
+          </div>
         </div>
-      ) : null}
 
-      <div className="pt-4">
-        <Link
-          href={href}
-          className={`flex min-h-11 items-center justify-center gap-2.5 rounded-md px-3 text-center text-[15px] font-bold transition-all duration-200 hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)] ${
-            open
-              ? isDark
-                ? "bg-[var(--color-chrome)] text-[var(--color-page)]"
-                : "bg-black text-white"
-              : "border border-[var(--color-border-strong)] text-[var(--color-text)]"
-          }`}
-        >
-          <span dangerouslySetInnerHTML={{ __html: label }} />
-          <ArrowIcon />
-        </Link>
+        {lead ? (
+          <div className="flex flex-col">
+            {open ? (
+              <div id={verdictId} className="mt-5 lg:mt-[var(--gn-vhead-mt)]">
+                <p className="text-[15px] font-semibold lg:text-[length:var(--gn-vhead)]">Our Verdict:</p>
+                <p
+                  className={`mt-1.5 text-[14.5px] leading-[1.5] lg:text-[length:var(--gn-verdict)] lg:leading-[var(--gn-verdict-lh)] ${tones.soft}`}
+                  dangerouslySetInnerHTML={{ __html: verdict }}
+                />
+              </div>
+            ) : null}
+            <div className="mt-5 lg:mt-[var(--gn-cta-mt)]">
+              <Link
+                href={href}
+                className={`inline-flex min-h-[44px] items-center gap-2.5 rounded-md px-5 text-[15px] !font-medium transition-shadow lg:min-h-[var(--gn-cta-h)] lg:text-[length:var(--gn-cta)] ${
+                  isDark ? "btn-cta" : "bg-[linear-gradient(180deg,#2c2d2b_0%,#121312_100%)] text-white shadow-[0_8px_18px_rgba(16,18,16,0.18)] hover:shadow-[0_10px_24px_rgba(16,18,16,0.28)]"
+                }`}
+              >
+                <span dangerouslySetInnerHTML={{ __html: label }} />
+                <ArrowRight aria-hidden="true" className="h-4 w-4" strokeWidth={2} />
+              </Link>
+            </div>
+          </div>
+        ) : (
+          <Link
+            href={href}
+            className={`mt-5 flex min-h-[44px] items-center justify-center gap-2 rounded-md border px-3 text-center text-[14.5px] !font-semibold leading-tight transition-colors md:px-1.5 md:text-[13px] lg:mt-[var(--gn-btn-mt)] lg:min-h-[var(--gn-btn-h)] lg:text-[length:var(--gn-btn)] xl:px-3 ${tones.outline}`}
+          >
+            <span dangerouslySetInnerHTML={{ __html: label }} />
+            <ChevronDown aria-hidden="true" className="h-4 w-4 shrink-0 md:hidden xl:block" strokeWidth={2} />
+          </Link>
+        )}
       </div>
     </article>
   );
 }
 
-function toneClass(tone, isDark) {
-  if (tone === "risk") return isDark ? "text-[#ff8a80]" : "text-[#b3261e]";
-  if (tone === "safe") return isDark ? "text-[#7fd49b]" : "text-[#1f7a3f]";
+/* ---------- Comparison table ---------- */
+
+// "AJ200D / 204DTD (tensioner wear risk)" -> the trailing note on its own line, as in the reference.
+function CellText({ text }) {
+  const clean = typeset(text);
+  const parts = clean.match(/^(.*?)\s*(\([^)]*\))$/);
+  if (!parts) return <span dangerouslySetInnerHTML={{ __html: clean }} />;
+  return (
+    <>
+      <span className="block" dangerouslySetInnerHTML={{ __html: parts[1] }} />
+      <span className="block" dangerouslySetInnerHTML={{ __html: parts[2] }} />
+    </>
+  );
+}
+
+function tone(cellTone, tones) {
+  if (cellTone === "risk") return tones.risk;
+  if (cellTone === "safe") return tones.safe;
   return "";
 }
 
-// Aspect-by-aspect comparison (e.g. pre- vs post-facelift) with "Our position" alongside.
 function ComparisonTable({ table, isDark }) {
+  const tones = palette(isDark);
   const rows = table?.rows || [];
   if (!rows.length) return null;
-  const columns = table.columns || [];
+  const columns = (table.columns || []).map(typeset);
+  const dataColumns = Math.max(1, columns.length - 1);
+  const position = table.position?.text ? table.position : null;
+  // Reference proportions: aspect ~20% (22% here: Arial sets wider), data columns share the middle
+  // (26% / 31% in the reference), "Our position" 23%.
+  const dataWidth = (position ? 55 : 78) / dataColumns;
 
   return (
-    <div className="space-y-3">
-      {table.intro ? (
-        <p className={`${sectionTableText} text-[var(--color-text)]`}>
-          {table.title ? <strong className="font-bold">{cleanText(table.title)}: </strong> : null}
-          <span dangerouslySetInnerHTML={{ __html: cleanText(table.intro) }} />
-        </p>
-      ) : null}
-      <div className="overflow-x-auto rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_8px_22px_var(--color-shadow)]">
-        <table className="w-full min-w-[720px] border-collapse text-left text-[14px] text-[var(--color-text)]">
-          <thead>
-            <tr>
-              {columns.map((column) => (
-                <th key={column} className={`px-4 py-3 font-bold ${tableHeaderClass(isDark)}`}>
-                  {cleanText(column)}
-                </th>
+    <div className={`overflow-hidden rounded-xl border ${tones.table} ${tones.text}`}>
+      {/* md+: the reference table */}
+      <table className="hidden w-full table-fixed border-collapse text-left md:table">
+        <colgroup>
+          <col style={{ width: "22%" }} />
+          {columns.slice(1).map((column, index) => (
+            <col key={column} style={{ width: `${dataWidth * (dataColumns === 2 ? (index === 0 ? 0.92 : 1.08) : 1)}%` }} />
+          ))}
+          {position ? <col style={{ width: "23%" }} /> : null}
+        </colgroup>
+        <thead>
+          <tr className={`border-b ${tones.rule} ${tones.head}`}>
+            {columns.map((column, index) => (
+              <th
+                key={column}
+                scope="col"
+                className={`h-[42px] px-3 text-[14px] font-semibold lg:h-[var(--gn-th-h)] lg:px-[var(--gn-cell-px)] lg:text-[length:var(--gn-cell)] ${index > 0 ? `border-l ${tones.rule}` : ""}`}
+              >
+                {column}
+              </th>
+            ))}
+            {position ? (
+              <th scope="col" className={`border-l px-3 text-[14px] font-semibold lg:px-[var(--gn-pos-px)] lg:text-[length:var(--gn-cell)] ${tones.rule} ${tones.position}`}>
+                <span className="flex items-center gap-3">
+                  <Star aria-hidden="true" className={`h-[18px] w-[18px] ${tones.positionStar}`} strokeWidth={1.4} />
+                  {cleanText(position.title || "Our position")}
+                </span>
+              </th>
+            ) : null}
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((row, rowIndex) => (
+            <tr key={row.label} className={rowIndex > 0 ? `border-t ${tones.rule}` : ""}>
+              <th
+                scope="row"
+                className="px-3 py-2 text-[13.5px] font-semibold leading-[1.45] lg:px-[var(--gn-cell-px)] lg:py-[var(--gn-cell-py)] lg:text-[length:var(--gn-cell)] lg:leading-[var(--gn-cell-lh)]"
+              >
+                {cleanText(row.label)}
+              </th>
+              {(row.cells || []).map((cell, cellIndex) => (
+                <td
+                  key={cellIndex}
+                  className={`border-l px-3 py-2 text-[13.5px] leading-[1.45] lg:px-[var(--gn-cell-px)] lg:py-[var(--gn-cell-py)] lg:text-[length:var(--gn-cell)] lg:leading-[var(--gn-cell-lh)] ${tones.rule} ${tone(cell.tone, tones)}`}
+                >
+                  <CellText text={cell.text} />
+                </td>
               ))}
-              {table.position ? (
-                <th className="bg-[var(--color-page-soft)] px-4 py-3 font-bold text-[var(--color-text)]">
-                  <span className="flex items-center gap-2">
-                    <HomeIcon name="star" isDark={isDark} className="h-7 w-7" />
-                    {cleanText(table.position.title || "Our position")}
-                  </span>
-                </th>
+              {position && rowIndex === 0 ? (
+                <td
+                  rowSpan={rows.length}
+                  className={`border-l px-3 align-middle text-[13.5px] font-semibold leading-[1.6] lg:px-[var(--gn-pos-px)] lg:text-[length:var(--gn-cell)] lg:leading-[calc(var(--gn-cell-lh)*1.05)] ${tones.rule} ${tones.position} ${isDark ? "!font-normal lg:text-[length:calc(var(--gn-cell)*1.06)]" : ""}`}
+                  dangerouslySetInnerHTML={{ __html: typeset(position.text) }}
+                />
               ) : null}
             </tr>
-          </thead>
-          <tbody>
-            {rows.map((row, rowIndex) => (
-              <tr key={row.label} className="border-t border-[var(--color-border)]">
-                <th className="px-4 py-3 font-bold">{cleanText(row.label)}</th>
-                {(row.cells || []).map((cell, cellIndex) => (
-                  <td key={cellIndex} className={`px-4 py-3 ${toneClass(cell.tone, isDark)}`} dangerouslySetInnerHTML={{ __html: cleanText(cell.text) }} />
-                ))}
-                {table.position && rowIndex === 0 ? (
-                  <td
-                    rowSpan={rows.length}
-                    className="border-l border-[var(--color-border)] bg-[var(--color-page-soft)] px-4 py-3 align-middle font-semibold leading-[1.5]"
-                    dangerouslySetInnerHTML={{ __html: cleanText(table.position.text) }}
-                  />
-                ) : null}
-              </tr>
-            ))}
-          </tbody>
-        </table>
+          ))}
+        </tbody>
+      </table>
+
+      {/* Phones / small tablets: one block per aspect, the column names as labels */}
+      <div className="md:hidden">
+        {rows.map((row, rowIndex) => (
+          <div key={row.label} className={`px-4 py-3.5 ${rowIndex > 0 ? `border-t ${tones.rule}` : ""}`}>
+            <p className="text-[14.5px] font-semibold">{cleanText(row.label)}</p>
+            <dl className="mt-2 grid gap-2">
+              {(row.cells || []).map((cell, cellIndex) => (
+                <div key={cellIndex} className="grid grid-cols-[minmax(0,42%)_minmax(0,1fr)] gap-3 text-[13.5px] leading-[1.45]">
+                  <dt className={tones.soft} dangerouslySetInnerHTML={{ __html: columns[cellIndex + 1] || "" }} />
+                  <dd className={tone(cell.tone, tones)}>
+                    <CellText text={cell.text} />
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        ))}
+        {position ? (
+          <div className={`border-t px-4 py-4 ${tones.rule} ${tones.position}`}>
+            <p className="flex items-center gap-2.5 text-[14.5px] font-semibold">
+              <Star aria-hidden="true" className={`h-[17px] w-[17px] ${tones.positionStar}`} strokeWidth={1.4} />
+              {cleanText(position.title || "Our position")}
+            </p>
+            <p className="mt-2 text-[14.5px] font-medium leading-[1.55]" dangerouslySetInnerHTML={{ __html: typeset(position.text) }} />
+          </div>
+        ) : null}
       </div>
     </div>
   );
 }
 
-// A model's "dividing line" note (pre- vs post-facelift etc.) when there is no full table.
-function ComparisonNote({ note, isDark }) {
+// The table's lead-in, shown wherever the layout leaves room for it (pages with fewer than four
+// other generations); on a full row of cards it is left out, as in the reference.
+function TableIntro({ table, isDark, className = "" }) {
+  const tones = palette(isDark);
+  if (!table?.intro) return null;
+  return (
+    <div className={`rounded-xl border p-4 lg:px-[var(--gn-card-px)] lg:py-[var(--gn-card-pt)] ${tones.card} ${tones.text} ${className}`}>
+      {table.title ? <h3 className="text-[15.5px] font-semibold lg:text-[length:var(--gn-vhead)]">{typeset(table.title)}</h3> : null}
+      <p className={`mt-1.5 text-[14px] leading-[1.55] lg:text-[length:var(--gn-verdict)] lg:leading-[var(--gn-verdict-lh)] ${tones.soft}`} dangerouslySetInnerHTML={{ __html: typeset(table.intro) }} />
+    </div>
+  );
+}
+
+/* ---------- Bars under the grid ---------- */
+
+function ComparisonNote({ note, isDark, inSlot = false, className = "" }) {
+  const tones = palette(isDark);
   if (!note?.text && !note?.verdict) return null;
   return (
-    <div className="flex gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-4 shadow-[0_8px_22px_var(--color-shadow)]">
-      <TableIcon name="scale" isDark={isDark} />
-      <div className={`min-w-0 ${sectionTableText} text-[var(--color-text)]`}>
-        {note.title ? <h3 className="text-[16px] font-bold leading-tight">{cleanText(note.title)}</h3> : null}
-        {note.text ? <p className="mt-1" dangerouslySetInnerHTML={{ __html: cleanText(note.text) }} /> : null}
-        {note.verdict ? <p className="mt-1 font-semibold" dangerouslySetInnerHTML={{ __html: cleanText(note.verdict) }} /> : null}
+    <div
+      className={`flex gap-3.5 rounded-xl border px-4 py-3.5 ${
+        inSlot ? `${tones.card} lg:px-[var(--gn-card-px)] lg:py-[var(--gn-card-pt)]` : `mt-4 lg:mt-[var(--gn-bar-mt)] lg:px-[var(--gn-bar-px)] ${tones.bar}`
+      } ${tones.text} ${className}`}
+    >
+      <Scale aria-hidden="true" className="mt-0.5 h-6 w-6 shrink-0" strokeWidth={1.6} />
+      <div className="min-w-0 text-[14.5px] leading-[1.55] lg:text-[length:var(--gn-bar-label)]">
+        {note.title ? <p className="font-semibold">{typeset(note.title)}</p> : null}
+        {note.text ? <p className={tones.soft} dangerouslySetInnerHTML={{ __html: typeset(note.text) }} /> : null}
+        {note.verdict ? <p className="mt-0.5 font-semibold" dangerouslySetInnerHTML={{ __html: typeset(note.verdict) }} /> : null}
       </div>
     </div>
   );
 }
+
+function ComparisonLink({ link, isDark }) {
+  const tones = palette(isDark);
+  if (!link?.href) return null;
+  const label = typeset(link.label).replace(/^Read the full comparison:\s*/i, "").replace(/\s*→\s*$/, "");
+  // Some pages only carry an href back to themselves, with no label: no bar then.
+  if (!label) return null;
+  return (
+    <p
+      className={`mt-4 flex min-h-[52px] flex-wrap items-center gap-x-4 gap-y-1 rounded-xl border px-4 py-3 text-[15px] lg:mt-[var(--gn-bar-mt)] lg:min-h-[var(--gn-bar-h)] lg:px-[var(--gn-bar-px)] lg:py-0 lg:text-[length:var(--gn-bar-label)] ${tones.bar} ${tones.text}`}
+    >
+      <BookOpen aria-hidden="true" className="h-6 w-6 shrink-0 lg:h-[var(--gn-bar-icon)] lg:w-[var(--gn-bar-icon)]" strokeWidth={1.5} />
+      <span>Read the full comparison:</span>
+      <Link
+        href={link.href}
+        className={`inline-flex items-center gap-3 text-[16px] !font-semibold transition-colors lg:text-[length:var(--gn-bar-link)] ${tones.link}`}
+      >
+        <span dangerouslySetInnerHTML={{ __html: label }} />
+        <ArrowRight aria-hidden="true" className="h-5 w-5" strokeWidth={1.8} />
+      </Link>
+    </p>
+  );
+}
+
+/* ---------- Section ---------- */
 
 export default function GenerationsGrid({ data }) {
   const { theme } = useTheme();
-  const [desktopSlide, setDesktopSlide] = useState(0);
   if (!data) return null;
 
   const isDark = theme === "dark";
+  const tones = palette(isDark);
   const title = splitTitle(data.h2);
   const modelName = modelNameFromH2(data.h2);
   // Photos come from the page (one per card, different colours); carImageFor is a fallback.
   const cards = (data.cards || []).map((card) => ({ ...card, image: card.image || carImageFor(card.title, data.h2) }));
-  const perSlide = 5;
-  const slides = [];
-  const sectionBg = isDark ? "bg-[var(--color-page)]" : "bg-[#ececea]";
-
-  for (let index = 0; index < cards.length; index += perSlide) {
-    slides.push(cards.slice(index, index + perSlide));
-  }
+  const [lead, ...others] = cards;
+  const table = data.rangeTable?.rows?.length ? data.rangeTable : null;
+  const note = data.comparisonNote?.text || data.comparisonNote?.verdict ? data.comparisonNote : null;
+  const count = others.length;
+  // Free slots beside the other cards (row one holds four): the table's intro goes there, or, on pages
+  // without a table, the "dividing line" note.
+  const freeSlots = count > 0 && count < 4 ? 4 - count : 0;
+  const slot = freeSlots ? (table?.intro ? "intro" : !table && note ? "note" : null) : null;
+  // A single generation with no table: card 1 becomes one wide card (car | verdict).
+  const wideLead = count === 0 && !table;
+  // Cards 2..5 in one row above the table: both columns share a bottom edge, as in the reference.
+  const shareBottom = count >= 1 && count <= 4 && Boolean(table);
 
   return (
-    <section id="generations" data-theme-mode={theme} className={`overflow-hidden ${sectionBg} text-[var(--color-text)]`}>
-      <div className={`relative overflow-hidden ${sectionBg}`}>
-        <div className="absolute inset-y-0 right-0 w-[62%] md:w-[48%]">
-          <Image
-            src={HEADER_IMAGE}
-            alt=""
-            fill
-            className="object-cover object-right"
-            sizes="(max-width: 768px) 62vw, 48vw"
-          />
-          <div
-            className={
-              isDark
-                ? "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(11,12,12,0.82)_34%,rgba(11,12,12,0.18)_100%)]"
-                : "absolute inset-0 bg-[linear-gradient(90deg,#ececea_0%,rgba(236,236,234,0.88)_34%,rgba(236,236,234,0.18)_100%)]"
-            }
-          />
-        </div>
+    <section id="generations" className="model-gens relative overflow-hidden bg-[var(--color-page)] text-[var(--color-text)]">
+      <div className="mx-auto w-full max-w-[1546px] px-4 pb-12 pt-10 sm:px-6 lg:px-[var(--gn-px)] lg:pb-[var(--gn-pb)] lg:pt-[var(--gn-pt)]">
+        <h2 className={`model-gens-title ${tones.text}`}>
+          <span className="block" dangerouslySetInnerHTML={{ __html: title.main }} />
+          {title.accent ? <span className={`block ${tones.accent}`} dangerouslySetInnerHTML={{ __html: title.accent }} /> : null}
+        </h2>
 
-        <div className="relative mx-auto w-full max-w-8xl px-4 pb-3 pt-7 md:px-8 md:pb-4 md:pt-10">
-          <div className="max-w-[760px]">
-            <h2 className={`max-w-[760px] font-bold tracking-normal text-[var(--color-text)] ${sectionH2}`}>
-              <span dangerouslySetInnerHTML={{ __html: title.main || cleanText(data.h2) }} />
-              {title.accent ? (
-                <>
-                  <br />
-                  <span
-                    className="text-[var(--color-chrome-bright)]"
-                    dangerouslySetInnerHTML={{ __html: title.accent }}
-                  />
-                </>
-              ) : null}
-            </h2>
-            <div className="mt-3">
-              <MStripe />
-            </div>
-            {data.subHeadline ? (
-              <p
-                className={`mt-3 max-w-[640px] ${sectionDescription} text-[var(--color-text-muted)]`}
-                dangerouslySetInnerHTML={{ __html: cleanText(data.subHeadline) }}
-              />
-            ) : null}
+        {data.subHeadline ? (
+          <p
+            className={`mt-4 max-w-[470px] text-[15px] leading-[1.55] lg:mt-[var(--gn-desc-mt)] lg:max-w-[458px] lg:text-[length:var(--gn-desc)] lg:leading-[var(--gn-desc-lh)] ${tones.soft}`}
+            dangerouslySetInnerHTML={{ __html: typeset(data.subHeadline) }}
+          />
+        ) : null}
+
+        {/* One row of other cards: both columns share a bottom edge (card 1 = table), so the taller right
+            column starts a little above card 1, as in the reference. More rows (XJ) or none: tops align. */}
+        <div
+          className={`mt-5 grid gap-y-5 lg:mt-[var(--gn-lead-gap)] lg:gap-x-[var(--gn-col-gap)] ${
+            wideLead ? "" : "lg:grid-cols-[minmax(0,340fr)_minmax(0,1078fr)]"
+          } ${shareBottom ? "lg:items-end" : "lg:items-start"}`}
+        >
+          <div className="min-w-0">
+            {lead ? <GenerationCard card={lead} index={0} modelName={modelName} lead wide={wideLead} isDark={isDark} /> : null}
           </div>
-        </div>
-      </div>
 
-      <div className="relative mx-auto w-full max-w-8xl px-4 pb-7 pt-4 md:px-8 md:pb-8 md:pt-5">
-        {/* Desktop: up to five cards per row; the first card opens with its verdict, as in the reference */}
-        <div className="hidden lg:block">
-          <div className="overflow-hidden">
-            <div
-              className="flex items-start transition-transform duration-300 ease-out"
-              style={{ transform: `translateX(-${desktopSlide * 100}%)` }}
-            >
-              {slides.map((slide, slideIndex) => (
+          {count || table ? (
+          <div className="min-w-0">
+            {count ? (
+              <div className="md:flex md:gap-3 lg:gap-[var(--gn-card-gap)]">
+                {/* Phones: a swipeable row (the next card peeks in). sm: two across; md+: four across. */}
                 <div
-                  key={slideIndex}
-                  className="grid w-full shrink-0 items-start gap-3"
-                  style={{ gridTemplateColumns: `1.3fr repeat(${perSlide - 1}, minmax(0, 1fr))` }}
+                  className="-mx-4 flex snap-x snap-mandatory gap-3 overflow-x-auto scroll-px-4 px-4 pb-1 [scrollbar-width:none] sm:mx-0 sm:grid sm:grid-cols-2 sm:overflow-visible sm:px-0 sm:pb-0 md:shrink-0 md:[grid-template-columns:repeat(var(--cols),minmax(0,1fr))] md:[width:calc((100%_-_3*var(--gn-card-gap,12px))/4*var(--cols)_+_(var(--cols)_-_1)*var(--gn-card-gap,12px))] lg:gap-[var(--gn-card-gap)] [&::-webkit-scrollbar]:hidden"
+                  style={{ "--cols": Math.min(count, 4) }}
                 >
-                  {slide.map((card, cardIndex) => (
-                    <GenerationCard
-                      key={`${card.title}-${cardIndex}`}
-                      card={card}
-                      index={slideIndex * perSlide + cardIndex}
-                      modelName={modelName}
-                      defaultOpen={slideIndex === 0 && cardIndex === 0}
-                      isDark={isDark}
-                    />
+                  {others.map((card, index) => (
+                    <div key={`${card.title}-${index}`} className={`flex shrink-0 snap-start sm:w-auto ${count === 1 ? "w-full" : "w-[72%]"}`}>
+                      <div className="flex w-full flex-col [&>article]:flex-1">
+                        <GenerationCard card={card} index={index + 1} modelName={modelName} isDark={isDark} />
+                      </div>
+                    </div>
                   ))}
                 </div>
-              ))}
-            </div>
-          </div>
+                {slot === "intro" ? <TableIntro table={table} isDark={isDark} className="mt-4 md:mt-0 md:flex-1" /> : null}
+                {slot === "note" ? <ComparisonNote note={note} isDark={isDark} inSlot className="mt-4 md:mt-0 md:flex-1 md:self-start" /> : null}
+              </div>
+            ) : table?.intro ? (
+              <TableIntro table={table} isDark={isDark} />
+            ) : null}
 
-          {slides.length > 1 ? (
-            <div className="mt-4 flex justify-center gap-2">
-              {slides.map((_, index) => (
-                <button
-                  key={index}
-                  type="button"
-                  aria-label={`Show generation cards ${index + 1}`}
-                  onClick={() => setDesktopSlide(index)}
-                  className={`h-2.5 w-2.5 rounded-full ${
-                    desktopSlide === index ? (isDark ? "bg-white" : "bg-black") : "bg-[var(--color-border-strong)]"
-                  }`}
-                />
-              ))}
-            </div>
+            {table ? (
+              <div className={count || table.intro ? "mt-5 lg:mt-[var(--gn-row-gap)]" : ""}>
+                <ComparisonTable table={table} isDark={isDark} />
+              </div>
+            ) : null}
+          </div>
           ) : null}
         </div>
 
-        {/* Phones and tablets: the same cards, two across on tablets */}
-        <div className="grid items-start gap-3 sm:grid-cols-2 lg:hidden">
-          {cards.map((card, index) => (
-            <GenerationCard
-              key={`${card.title}-${index}`}
-              card={card}
-              index={index}
-              modelName={modelName}
-              defaultOpen={index === 0}
-              isDark={isDark}
-            />
-          ))}
-        </div>
-
-        {data.rangeTable?.rows?.length ? (
-          <div className="mt-5">
-            <ComparisonTable table={data.rangeTable} isDark={isDark} />
-          </div>
-        ) : null}
-
-        {data.comparisonNote ? (
-          <div className="mt-5">
-            <ComparisonNote note={data.comparisonNote} isDark={isDark} />
-          </div>
-        ) : null}
-
-        {data.comparisonLink ? (
-          <p className="mt-4 flex flex-wrap items-center gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] px-4 py-3 text-[15px]">
-            <TableIcon name="book" isDark={isDark} />
-            <span>Read the full comparison:</span>
-            <Link
-              href={data.comparisonLink.href}
-              className="inline-flex items-center gap-2 font-bold text-[var(--color-text)] underline decoration-[var(--color-chrome)] underline-offset-2"
-            >
-              <span
-                dangerouslySetInnerHTML={{
-                  __html: cleanText(data.comparisonLink.label)
-                    .replace("Read the full comparison:", "")
-                    .replace(/\s*→\s*$/, ""),
-                }}
-              />
-              <ArrowIcon />
-            </Link>
-          </p>
-        ) : null}
+        {slot === "note" ? null : <ComparisonNote note={note} isDark={isDark} />}
+        <ComparisonLink link={data.comparisonLink} isDark={isDark} />
       </div>
     </section>
   );

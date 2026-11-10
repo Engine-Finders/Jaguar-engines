@@ -283,6 +283,7 @@
   },
   "atAGlance": {
     "h2": "XF at a Glance",
+    "subHeadline": "Everything you need to know about the Jaguar XF in one quick-reference overview.",
     "rows": [
       {
         "metric": "Generations",
@@ -371,6 +372,28 @@
   "engineDatabase": {
     "h2": "XF Engine Codes - The Complete Database",
     "subHeadline": "Every engine fitted to the XF - verified codes, fuel types, power outputs, reliability ratings, and real 2025 enquiry volumes.",
+    "stats": [
+      {
+        "icon": "engine",
+        "value": "5",
+        "label": "Engine Codes Tracked"
+      },
+      {
+        "icon": "shield",
+        "value": "2",
+        "label": "Generations Covered"
+      },
+      {
+        "icon": "chart",
+        "value": "454+",
+        "label": "Enquiries in 2025"
+      },
+      {
+        "icon": "pound",
+        "value": "£3K–£9.5K",
+        "label": "Typical Recon Cost Range"
+      }
+    ],
     "columns": [
       "Engine Code",
       "Family",
@@ -447,13 +470,27 @@
     ],
     "confidenceScore": {
       "title": "How confident are these ratings?",
-      "text": "The AJ200D (276 enquiries) and AJ126 (178 enquiries) ratings are 75-90% confidence - based on 454 total [JAG-VERIFIED] enquiries plus cross-referenced specialist data from the Known Failure Patterns table. The AJ200P and <a href='https://jaguarengines.uk/engine/306dt-306ps'>306DT</a> ratings are Expert-knowledge tier - documented failure patterns and specialist interviews, not proprietary volume data. Data note (internal): Correction applied: Original sheet listed AJ133 (5.0 V8) as an XF engine. The <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> was fitted to XF-R models and is correctly listed in the engine table - retained. No corrections needed otherwise - source data matched live verification against Jaguar technical specifications and Parkers/Autocar sources."
+      "paragraphs": [
+        "The AJ200D (276 enquiries) and AJ126 (178 enquiries) ratings are 75-90% confidence - based on 454 total [JAG-VERIFIED] enquiries plus cross-referenced specialist data from the Known Failure Patterns table.",
+        "The AJ200P and <a href='https://jaguarengines.uk/engine/306dt-306ps'>306DT</a> ratings are Expert-knowledge tier - documented failure patterns and specialist interviews, not proprietary volume data."
+      ],
+      "verification": []
+    },
+    "methodologyLink": {
+      "label": "How we collect engine data",
+      "href": "/data/methodology"
     },
     "dataCorrections": []
   },
   "commonProblems": {
     "h2": "Common XF Engine Problems",
     "subHeadline": "The six most common XF issues by enquiry volume - what fails, which engines it affects, and what it costs to fix.",
+    "stat": {
+      "icon": "users",
+      "value": "454+",
+      "label": "XF engine enquiries analysed in 2025",
+      "tag": "[JAG-VERIFIED]"
+    },
     "columns": [
       "#",
       "Problem",
@@ -572,6 +609,11 @@
   },
   "marketIntelligence": {
     "h2": "XF Market Intelligence - What 454+ UK Owners Told Us in 2025",
+    "stat": {
+      "value": "454+",
+      "label": "Total Enquiries in 2025",
+      "tag": "[JAG-VERIFIED]"
+    },
     "signals": [
       {
         "signal": "XF X260 Enquiries",
@@ -603,7 +645,8 @@
   },
   "editorialPullQuote": {
     "title": "The One Thing We'd Tell Every XF Buyer",
-    "quote": "If you buy one XF based on this page, buy a 2019+ X260 with the AJ200P petrol Ingenium - it's the cleanest reliability profile in the range, replacement costs are well within vehicle value, and you avoid the pre-2019 diesel timing chain caveat entirely. END OF PROMPT 1 OUTPUT - SECTIONS 1-7 COMPLETE JAGUAR XF - SECTIONS 8-14 Classification: Which Generation/Engine (carried forward from Prompt 1) Verified generation list: X250 (2008-2015), X260 (2015-2024) Verified engine list: AJ126, 276DT, 306DT, AJ200D/204DTD, AJ200P/204PT"
+    "quote": "If you buy one XF based on this page, buy a 2019+ X260 with the AJ200P petrol Ingenium - it's the cleanest reliability profile in the range, replacement costs are well within vehicle value, and you avoid the pre-2019 diesel timing chain caveat entirely.",
+    "label": "Editorial pull-quote"
   },
   "replacementCosts": {
     "h2": "XF Engine Replacement Costs - By Generation",
@@ -676,15 +719,37 @@
         ]
       }
     ],
-    "figuresNote": "Labour estimate: Fitting an XF engine typically takes 10-20 hours depending on variant at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [JAG-QUOTE].",
-    "labourEstimate": "Fitting an XF engine typically takes 10-20 hours depending on variant at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [JAG-QUOTE].",
-    "economicsBox": {
-      "title": "",
-      "text": ""
-    }
+    "labourEstimate": "Fitting an XF engine typically takes 10-20 hours depending on variant at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [JAG-QUOTE]."
   },
   "engineEvolution": {
     "h2": "How the XF Engine Range Evolved - 2008 to Today",
+    "subHeadline": "From launch to the final powertrains, explore how engineering, emissions and performance shaped every era of XF engines.",
+    "stats": [
+      {
+        "icon": "eras",
+        "value": "3",
+        "label": "Engine Eras",
+        "text": "2008 to 2024"
+      },
+      {
+        "icon": "engines",
+        "value": "5",
+        "label": "Key Engine Codes",
+        "text": "From AJ126 to AJ200P"
+      },
+      {
+        "icon": "years",
+        "value": "16",
+        "label": "Years of Engineering",
+        "text": "Innovation & Progress"
+      },
+      {
+        "icon": "drivers",
+        "value": "",
+        "label": "Built for Drivers",
+        "text": "Reliability + Dynamics"
+      }
+    ],
     "columns": [
       "Era",
       "Years",
@@ -714,10 +779,34 @@
         "whyBmwChanged": "Timing chain tensioner redesign addressed the diesel's pre-2019 weakness. The revised units have a markedly cleaner reliability record.",
         "worthKnowing": "The post-2019 diesel is the engine the X260 should have launched with - it's the reason we recommend 2019+ cars."
       }
-    ]
+    ],
+    "footnote": "All engine reliability insights and failure patterns are based on 454+ verified XF enquiries in 2025. Data covers the UK market. [JAG-VERIFIED]"
   },
   "whoShouldBuy": {
     "h2": "Who Should Buy an XF?",
+    "subHeadline": "Different buyers, different priorities. Here's our verdict on who the XF is perfect for - and who should think twice.",
+    "proof": [
+      {
+        "icon": "users",
+        "title": "Built for Real Life",
+        "text": "Practical. Powerful. Proven."
+      },
+      {
+        "icon": "shield",
+        "title": "Data-Backed Ratings",
+        "text": "454+ UK enquiries analysed in 2025."
+      },
+      {
+        "icon": "award",
+        "title": "Honest Verdicts",
+        "text": "No hype. Just the truth about ownership."
+      },
+      {
+        "icon": "wheel",
+        "title": "Buyer-Focused",
+        "text": "Find the right XF for your needs."
+      }
+    ],
     "columns": [
       "Buyer Profile",
       "Rating",
@@ -749,21 +838,74 @@
         "rating": "★★★★★",
         "verdict": "The X260 with the AJ200P petrol is the keeper's choice - the cleanest reliability profile in the XF range, replacement costs are sensible, and the Ingenium is a genuinely modern engine family with a long service life. Buy 2019+ for the revised components."
       }
-    ]
+    ],
+    "realTalk": {
+      "lead": "Real talk.",
+      "text": "The right XF for you depends on your budget, your mileage, and your patience for maintenance. Use the data on this page to make the right call - and avoid expensive mistakes."
+    },
+    "cta": {
+      "label": "Explore XF Engines",
+      "href": "#engine-database"
+    }
   },
   "calculatorCta": {
     "h2": "Can I Repair My XF Engine - or Should I Replace It?",
     "intro": "Timing chain rattle on an Ingenium diesel? Coolant system failure on an AJ126 V6? We've seen every XF failure pattern in our data - and we know exactly when to repair, when to replace, and when to walk away.",
+    "smartNote": {
+      "lead": "The smarter way to decide:",
+      "text": "Get a personalised repair-vs-replace verdict using real UK cost data."
+    },
     "paths": [
       {
-        "label": "Path 1 - Know your engine? Launch the Jaguar calculator with XF pre-selected",
-        "href": "jaguarengines.uk/#engine-calculator?model=xf"
+        "badge": "Path 1",
+        "title": "Know your engine?",
+        "text": "Launch the Jaguar calculator with XF pre-selected.",
+        "button": {
+          "label": "Launch XF Diagnostic Calculator",
+          "sub": "XF pre-selected",
+          "href": "/tools/diagnostic-wizard"
+        },
+        "features": [
+          {
+            "icon": "check",
+            "title": "XF pre-selected",
+            "text": "All variants covered"
+          },
+          {
+            "icon": "chart",
+            "title": "Real UK cost data",
+            "text": "Used, recon & rebuilt"
+          },
+          {
+            "icon": "shield",
+            "title": "Instant verdict",
+            "text": "Repair vs replace"
+          }
+        ]
       },
       {
-        "label": "Path 2 - Not sure which engine you have? We'll identify it first",
-        "href": "jaguarengines.uk/#engine-calculator?model=xf"
+        "badge": "Path 2",
+        "title": "Not sure which engine you have?",
+        "text": "We'll identify it first.",
+        "button": {
+          "label": "Identify My Engine First",
+          "sub": "Then launch the diagnostic calculator",
+          "href": "/tools/registration-lookup"
+        },
+        "note": {
+          "lead": "Identification is the first step inside the tool.",
+          "text": "We'll pinpoint your exact engine code before running the diagnostics."
+        }
       }
-    ]
+    ],
+    "closing": {
+      "title": "Stop guessing. Get the right answer.",
+      "text": "Our calculator compares real repair and replacement costs against your car's value - so you know the financially smarter move.",
+      "button": {
+        "label": "Start Your Verdict Now",
+        "href": "/tools/diagnostic-wizard"
+      }
+    }
   },
   "trustBlock": {
     "h2": "Why XF Owners Trust jaguarengines.uk",
@@ -833,30 +975,50 @@
         "question": "XF vs XE - which is more reliable?",
         "answer": "Both carry a ✅ Safe verdict in our data, but for different reasons. The XF X260 benefits from the modern Ingenium range - the petrol is genuinely reliable, and the diesel is improved from 2019 onward. The XE is the more affordable entry point, but the XF offers better refinement and a more spacious cabin. Read our full comparison here: XF vs XE - Which is More Reliable?"
       }
-    ]
+    ],
+    "comparison": {
+      "title": "Need a head-to-head comparison?",
+      "text": "Read our in-depth XF vs XE reliability guide.",
+      "button": {
+        "label": "Read the Full Head-to-Head",
+        "href": "/compare"
+      }
+    }
   },
   "closingActionCards": {
     "h2": "Ready to Make a Decision?",
+    "subHeadline": "Everything you need to choose with confidence.\nData. Honesty. Specialists. All in one place.",
     "cards": [
       {
-        "icon": "🔍",
-        "title": "Explore XF Generations → Read the full X250 vs X260 breakdown before you buy. Explore Generations →",
-        "text": "",
-        "href": "/compare"
+        "icon": "search",
+        "art": "lineup",
+        "title": "Explore XF Generations",
+        "text": "Two generations, 16 years, honestly rated.",
+        "cta": "Explore Now",
+        "href": "#generations"
       },
       {
-        "icon": "🩺",
-        "title": "Diagnose My XF → Not sure if your engine is failing? Run our diagnostic tool for a personalised verdict. Diagnose My XF →",
-        "text": "",
-        "href": "/tools/diagnostic-wizard"
+        "icon": "diagnose",
+        "art": "engine",
+        "title": "Diagnose My XF",
+        "text": "Symptoms in, verdict out - value-weighted for your generation.",
+        "cta": "Start Diagnosis",
+        "href": "/tools/diagnostic-wizard",
+        "steps": [
+          "Symptoms",
+          "Engine Code",
+          "Mileage",
+          "History"
+        ]
       },
       {
-        "icon": "🤝",
-        "title": "Compare UK Specialists → Get quotes from 15+ vetted Jaguar specialists who work on XFs daily. Compare Specialists →",
-        "text": "",
+        "icon": "specialists",
+        "art": "map",
+        "title": "Compare UK Specialists",
+        "text": "15+ vetted Jaguar specialists, prices and warranties side-by-side.",
+        "cta": "Compare Specialists",
         "href": "/quote"
       }
-    ],
-    "footerNote": ""
+    ]
   }
 }

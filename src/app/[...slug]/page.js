@@ -187,7 +187,7 @@ export default async function CatchAllPage({ params }) {
           />
         )}
         <ModelHero data={data.hero} />
-        <OwnershipVerdict data={data.ownershipVerdict} />
+        <OwnershipVerdict data={data.ownershipVerdict} stats={data.hero?.trustStrip} />
         <AtAGlance data={data.atAGlance} />
         <GenerationsGrid data={data.generations} />
         <EngineDatabase data={data.engineDatabase} />

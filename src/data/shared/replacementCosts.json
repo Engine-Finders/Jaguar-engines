@@ -1,0 +1,16 @@
+{
+  "_note": "Shared copy for the model-page Replacement Costs section (section 8). Per-model tables, labour estimate and rule live in each model's replacementCosts.",
+  "trust": [
+    { "icon": "pound", "title": "Transparent", "text": "Real UK Prices" },
+    { "icon": "cog", "title": "Quality Assured", "text": "Tested Engines" },
+    { "icon": "wrench", "title": "Fitted by Experts", "text": "Trusted Garages" },
+    { "icon": "check", "title": "12 Months", "text": "Warranty" }
+  ],
+  "importantNotes": {
+    "title": "Important Notes",
+    "text": "Prices are supply-only from independent specialists and exclude VAT, delivery and fitment. All engines include a 12-month parts warranty. Prices correct at time of publication and subject to change."
+  },
+  "labourTitle": "Labour Estimate",
+  "estimateLabel": "Estimate",
+  "footnote": "All prices in GBP (£). Source: independent specialist networks, engine suppliers and live market data. Last updated: May 2025."
+}
