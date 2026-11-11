@@ -1435,3 +1435,51 @@ main h2.model-close-title {
     --ca-pb: 22px;
   }
 }
+
+/* Model hero scene (lg+): runs right up to the navbar with no top fade. The line-up scenes already
+   dissolve into the page colour on their left (baked in, cars kept solid); this short eased mask
+   only softens the very edge, so no vertical band shows in either theme. */
+@media (min-width: 1024px) {
+  .model-hero-scene {
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.1) 2%, rgba(0, 0, 0, 0.32) 4%, rgba(0, 0, 0, 0.6) 6%, rgba(0, 0, 0, 0.84) 8%, #000 10.5%);
+    mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.1) 2%, rgba(0, 0, 0, 0.32) 4%, rgba(0, 0, 0, 0.6) 6%, rgba(0, 0, 0, 0.84) 8%, #000 10.5%);
+  }
+}
+
+/* Ownership verdict scene: eased top fade into the page colour (smoothstep-like, no band). */
+.verdict-scene-top {
+  background: linear-gradient(
+    180deg,
+    var(--color-page) 0%,
+    color-mix(in srgb, var(--color-page) 97%, transparent) 10%,
+    color-mix(in srgb, var(--color-page) 88%, transparent) 22%,
+    color-mix(in srgb, var(--color-page) 72%, transparent) 36%,
+    color-mix(in srgb, var(--color-page) 50%, transparent) 50%,
+    color-mix(in srgb, var(--color-page) 28%, transparent) 64%,
+    color-mix(in srgb, var(--color-page) 12%, transparent) 78%,
+    color-mix(in srgb, var(--color-page) 3%, transparent) 90%,
+    transparent 100%
+  );
+}
+
+/* At a Glance scene (lg+): no top fade; the left side dissolves into the heading through a wide eased
+   mask (smoothstep-like stops), so there is no vertical cut line. The car sits right of 40%. */
+@media (min-width: 1024px) {
+  .glance-scene-fade {
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.03) 5%, rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.22) 15%, rgba(0, 0, 0, 0.38) 20%, rgba(0, 0, 0, 0.56) 25%, rgba(0, 0, 0, 0.74) 30%, rgba(0, 0, 0, 0.88) 35%, rgba(0, 0, 0, 0.97) 40%, #000 44%);
+    mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.03) 5%, rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.22) 15%, rgba(0, 0, 0, 0.38) 20%, rgba(0, 0, 0, 0.56) 25%, rgba(0, 0, 0, 0.74) 30%, rgba(0, 0, 0, 0.88) 35%, rgba(0, 0, 0, 0.97) 40%, #000 44%);
+  }
+}
+
+/* Model pages: every other section sits on the slightly deeper page tone, so each new section reads as
+   its own band. Redefining --color-page inside the section means its own background and every fade in
+   it (hero, verdict, glance scenes) follow the band's tone automatically. */
+.model-page > section:nth-of-type(even) {
+  --color-page: var(--color-page-soft);
+}
+
+/* Engine codes in the database: a touch lighter than bold. The site font (Arial) has no 500/600, so
+   "medium" falls back to regular; a hairline stroke in the text colour lands between the two. */
+.engine-code-weight {
+  -webkit-text-stroke: 0.3px currentColor;
+}

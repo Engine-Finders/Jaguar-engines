@@ -254,11 +254,12 @@ export default function AtAGlance({ data }) {
   // floor always meets the table's top edge (cropped from the left: the skyline gives way before the car).
   // E-Pace: the reference scene. Other models: their own photo standing in Jaguar's scene.
   const sceneBox =
-    "relative order-2 mt-6 aspect-[921/360] w-full overflow-hidden sm:aspect-[921/330] lg:absolute lg:inset-y-0 lg:right-0 lg:-z-10 lg:mt-0 lg:aspect-auto lg:w-[60%] min-[1546px]:w-[921px]";
+    "glance-scene-fade relative order-2 mt-6 aspect-[921/360] w-full overflow-hidden sm:aspect-[921/330] lg:absolute lg:inset-y-0 lg:right-0 lg:-z-10 lg:mt-0 lg:aspect-auto lg:w-[60%] min-[1546px]:w-[921px]";
   const fades = (
     <>
-      <div className="absolute inset-y-0 left-0 hidden w-[22%] bg-[linear-gradient(90deg,var(--color-page)_0%,transparent_100%)] lg:block" />
-      <div className="absolute inset-x-0 top-0 h-[14%] bg-[linear-gradient(180deg,var(--color-page)_0%,transparent_100%)]" />
+      {/* Phones/tablets: the band's top meets the copy softly. From lg the scene starts right at the
+          section's top (no fade) and dissolves into the heading on its left via .glance-scene-fade. */}
+      <div className="absolute inset-x-0 top-0 h-[14%] bg-[linear-gradient(180deg,var(--color-page)_0%,transparent_100%)] lg:hidden" />
       <div className="absolute inset-x-0 bottom-0 h-[10%] bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)] lg:h-[6%]" />
     </>
   );

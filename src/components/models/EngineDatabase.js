@@ -303,8 +303,8 @@ function EngineTable({ rows, columns, tones, sort, onSort }) {
                 const base = `${cell} ${index > 0 ? `border-l ${tones.rule}` : ""}`;
                 if (index === 0) {
                   return (
-                    <th key={field} scope="row" className={`${base} text-left font-semibold`}>
-                      <Link href={engineHrefFor(engine.engineCode, engine.family)} className="hover:underline hover:underline-offset-2">{stripTags(typeset(value))}</Link>
+                    <th key={field} scope="row" className={`${base} text-left font-medium`}>
+                      <Link href={engineHrefFor(engine.engineCode, engine.family)} className="engine-code-weight font-medium hover:underline hover:underline-offset-2">{stripTags(typeset(value))}</Link>
                     </th>
                   );
                 }
@@ -333,7 +333,7 @@ function EngineCard({ engine, columns, tones }) {
   const specs = ["fuel", "displacement", "power", "years", "model"];
   return (
     <li className={`rounded-xl border p-4 ${tones.card} ${tones.text}`}>
-      <Link href={engineHrefFor(engine.engineCode, engine.family)} className="text-[16.5px] font-semibold leading-tight">{stripTags(typeset(engine.engineCode))}</Link>
+      <Link href={engineHrefFor(engine.engineCode, engine.family)} className="engine-code-weight text-[16.5px] font-medium leading-tight">{stripTags(typeset(engine.engineCode))}</Link>
       <p className={`mt-0.5 text-[13.5px] ${tones.muted}`} dangerouslySetInnerHTML={{ __html: typeset(engine.family) }} />
       <dl className={`mt-3 grid grid-cols-3 gap-x-3 gap-y-2.5 border-t pt-3 text-[13px] ${tones.rule}`}>
         {specs.map((field) => (
