@@ -1,5 +1,5 @@
 {
- "_note": "Jaguar photos from the shared 'Jaguar Split' folder: background removed with rembg (u2net) and saved as PNG, then encoded once to WebP at the original pixel size (<= 49 KB). Only black, grey, silver, white and dark-blue paint, checked from the pixels because some source file names give the wrong colour. Pools: model|generation -> view (45, side, front) -> [file, colour]. Heroes: transparent overlays (20-25 KB) shown over Jaguar's own background (/hero/jaguar-bg-*.webp). Provenance per file: carImageSources.json. Generation heroes: per generation (model|generation), a 45-degree cut-out of one pool photo at 20-25 KB for generation and variant page heroes; `car` is the pool photo it was made from. XJ Series I/II/III and X300 only exist in red or British Racing Green, so those photos were recoloured to black (hue-band desaturation, shading kept). Engine pages (/engine/<slug>): `enginePages` names each page's engine photo (several codes are ambiguous, e.g. 306DT/306PS, AJD4/204DTD = the 2.2 224DT); engines with no photo (XK6, AJ6/AJ16, V12) show the generation they are best known in instead. Generation scenes (generationHeroes[key].scene): the same photo composed onto Jaguar's light and dark backgrounds (contact shadow + floor reflection, 1200x676, <= 50 KB) for generation and variant heroes, laid out like the model-page scenes.",
+ "_note": "Jaguar photos from the shared 'Jaguar Split' folder: background removed with rembg (u2net) and saved as PNG, then encoded once to WebP at the original pixel size (<= 49 KB). Only black, grey, silver, white and dark-blue paint, checked from the pixels because some source file names give the wrong colour. Pools: model|generation -> view (45, side, front) -> [file, colour]. Heroes: transparent overlays (20-25 KB) shown over Jaguar's own background (/hero/jaguar-bg-*.webp). Provenance per file: carImageSources.json. Generation heroes: per generation (model|generation), a 45-degree cut-out of one pool photo at 20-25 KB for generation and variant page heroes; `car` is the pool photo it was made from. XJ Series I/II/III and X300 only exist in red or British Racing Green, so those photos were recoloured to black (hue-band desaturation, shading kept). Engine pages (/engine/<slug>): `enginePages` names each page's engine photo (several codes are ambiguous, e.g. 306DT/306PS, AJD4/204DTD = the 2.2 224DT); engines with no photo (XK6, AJ6/AJ16, V12) show the generation they are best known in instead. Generation scenes (generationHeroes[key].scene): the same photo composed onto Jaguar's light and dark backgrounds (contact shadow + floor reflection, 1200x676, <= 50 KB) for generation and variant heroes, laid out like the model-page scenes. Model hero line-ups (heroes[model].themedScenes, except E-Pace's own client scenes): three 45-degree pool photos (back, middle, front) composed in colour onto the light/dark Jaguar scene backgrounds, with contact shadows and floor reflections, 1832x1322 like the E-Pace scene.",
  "basePath": "/cars/",
  "defaultGeneration": {
   "e-pace": "x540",
@@ -1331,25 +1331,71 @@
     "height": 676
    },
    "themedScenes": {
-    "light": { "src": "/model/hero/e-pace-scene-light.webp", "width": 1832, "height": 1322 },
-    "dark": { "src": "/model/hero/e-pace-scene-dark.webp", "width": 1842, "height": 1322 }
+    "light": {
+     "src": "/model/hero/e-pace-scene-light.webp",
+     "width": 1832,
+     "height": 1322
+    },
+    "dark": {
+     "src": "/model/hero/e-pace-scene-dark.webp",
+     "width": 1842,
+     "height": 1322
+    }
    },
    "trustScenes": {
-    "light": { "src": "/model/trust/e-pace-trust-light.webp", "width": 1720, "height": 1142 },
-    "dark": { "src": "/model/trust/e-pace-trust-dark.webp", "width": 1720, "height": 1142 }
+    "light": {
+     "src": "/model/trust/e-pace-trust-light.webp",
+     "width": 1720,
+     "height": 1142
+    },
+    "dark": {
+     "src": "/model/trust/e-pace-trust-dark.webp",
+     "width": 1720,
+     "height": 1142
+    }
    },
    "calculatorScenes": {
-    "light": { "src": "/model/calculator/e-pace-calc-light.webp", "width": 1564, "height": 856 },
-    "dark": { "src": "/model/calculator/e-pace-calc-dark.webp", "width": 1564, "height": 856 }
+    "light": {
+     "src": "/model/calculator/e-pace-calc-light.webp",
+     "width": 1564,
+     "height": 856
+    },
+    "dark": {
+     "src": "/model/calculator/e-pace-calc-dark.webp",
+     "width": 1564,
+     "height": 856
+    }
    },
-   "quoteScene": { "src": "/model/market/e-pace-quote.webp", "width": 1048, "height": 402 },
+   "quoteScene": {
+    "src": "/model/market/e-pace-quote.webp",
+    "width": 1048,
+    "height": 402
+   },
    "glanceScenes": {
-    "light": { "src": "/model/glance/e-pace-glance-light.webp", "width": 1842, "height": 612 },
-    "dark": { "src": "/model/glance/e-pace-glance-dark.webp", "width": 1842, "height": 612 }
+    "light": {
+     "src": "/model/glance/e-pace-glance-light.webp",
+     "width": 1842,
+     "height": 612
+    },
+    "dark": {
+     "src": "/model/glance/e-pace-glance-dark.webp",
+     "width": 1842,
+     "height": 612
+    }
    },
    "verdictScenes": {
-    "light": { "src": "/model/verdict/e-pace-verdict-scene-light.webp", "width": 1448, "height": 1604 },
-    "dark": { "src": "/model/verdict/e-pace-verdict-scene-dark.webp", "width": 1410, "height": 1580 }
+    "light": {
+     "src": "/model/verdict/e-pace-verdict-scene-light.webp",
+     "width": 1448,
+     "height": 1604,
+     "edge": "/model/verdict/e-pace-verdict-edge-light.webp"
+    },
+    "dark": {
+     "src": "/model/verdict/e-pace-verdict-scene-dark.webp",
+     "width": 1410,
+     "height": 1580,
+     "edge": "/model/verdict/e-pace-verdict-edge-dark.webp"
+    }
    },
    "width": 762,
    "height": 468,
@@ -1368,7 +1414,19 @@
    "height": 468,
    "cars": [
     "jaguar-f-pace-x761-300-sport-suv-2021-2024-new-carpathian-grey-f-pace-300-45.webp"
-   ]
+   ],
+   "themedScenes": {
+    "light": {
+     "src": "/model/hero/f-pace-hero-light.webp",
+     "width": 1832,
+     "height": 1322
+    },
+    "dark": {
+     "src": "/model/hero/f-pace-hero-dark.webp",
+     "width": 1832,
+     "height": 1322
+    }
+   }
   },
   "f-type": {
    "src": "/model/hero/f-type.webp",
@@ -1382,7 +1440,19 @@
    "cars": [
     "jaguar-f-type-x152-400-sport-convertible-convertible-2017-2018-special-corris-grey-f-type-400-conv-45.webp",
     "jaguar-f-type-x152-lci-p450-r-dynamic-coupe-2020-2024-new-santorini-black-f-type-p450-45.webp"
-   ]
+   ],
+   "themedScenes": {
+    "light": {
+     "src": "/model/hero/f-type-hero-light.webp",
+     "width": 1832,
+     "height": 1322
+    },
+    "dark": {
+     "src": "/model/hero/f-type-hero-dark.webp",
+     "width": 1832,
+     "height": 1322
+    }
+   }
   },
   "s-type": {
    "src": "/model/hero/s-type.webp",
@@ -1395,7 +1465,19 @@
    "height": 468,
    "cars": [
     "jaguar-s-type-x200-3-0-v6-se-saloon-1999-2002-new-platinum-silver-x200-30-se-2-45.webp"
-   ]
+   ],
+   "themedScenes": {
+    "light": {
+     "src": "/model/hero/s-type-hero-light.webp",
+     "width": 1832,
+     "height": 1322
+    },
+    "dark": {
+     "src": "/model/hero/s-type-hero-dark.webp",
+     "width": 1832,
+     "height": 1322
+    }
+   }
   },
   "x-type": {
    "src": "/model/hero/x-type.webp",
@@ -1408,7 +1490,19 @@
    "height": 468,
    "cars": [
     "jaguar-x-type-x400-2-2-d-se-saloon-2007-2010-new-vapour-grey-x-type-22d-45.webp"
-   ]
+   ],
+   "themedScenes": {
+    "light": {
+     "src": "/model/hero/x-type-hero-light.webp",
+     "width": 1832,
+     "height": 1322
+    },
+    "dark": {
+     "src": "/model/hero/x-type-hero-dark.webp",
+     "width": 1832,
+     "height": 1322
+    }
+   }
   },
   "xe": {
    "src": "/model/hero/xe.webp",
@@ -1422,7 +1516,19 @@
    "cars": [
     "jaguar-xe-x760-20t-prestige-saloon-2015-2017-group-glacier-white-xe-20t-45.webp",
     "jaguar-xe-x760-lci-300-sport-black-saloon-2020-2021-special-carpathian-grey-xe-300-black-45.webp"
-   ]
+   ],
+   "themedScenes": {
+    "light": {
+     "src": "/model/hero/xe-hero-light.webp",
+     "width": 1832,
+     "height": 1322
+    },
+    "dark": {
+     "src": "/model/hero/xe-hero-dark.webp",
+     "width": 1832,
+     "height": 1322
+    }
+   }
   },
   "xf": {
    "src": "/model/hero/xf.webp",
@@ -1437,7 +1543,19 @@
     "jaguar-xf-x250-premium-luxury-saloon-2008-2011-new-polaris-white-xf-premium-45.webp",
     "jaguar-xf-x250-lci-r-sport-saloon-2014-2015-new-dark-sapphire-xf-r-sport-45.webp",
     "jaguar-xf-x260-chequered-flag-saloon-2019-special-eiger-grey-xf-chequered-45.webp"
-   ]
+   ],
+   "themedScenes": {
+    "light": {
+     "src": "/model/hero/xf-hero-light.webp",
+     "width": 1832,
+     "height": 1322
+    },
+    "dark": {
+     "src": "/model/hero/xf-hero-dark.webp",
+     "width": 1832,
+     "height": 1322
+    }
+   }
   },
   "xj": {
    "src": "/model/hero/xj.webp",
@@ -1452,7 +1570,19 @@
     "jaguar-xj-x308-xjr-performance-saloon-1997-2003-special-anthracite-x308-xjr-45.webp",
     "jaguar-xj-x350-xj-super-v8-portfolio-saloon-2005-2009-new-celestial-black-x350-portfolio-45.webp",
     "jaguar-xj-x351-xj-luxury-saloon-2010-2012-new-vapour-grey-x351-luxury-45.webp"
-   ]
+   ],
+   "themedScenes": {
+    "light": {
+     "src": "/model/hero/xj-hero-light.webp",
+     "width": 1832,
+     "height": 1322
+    },
+    "dark": {
+     "src": "/model/hero/xj-hero-dark.webp",
+     "width": 1832,
+     "height": 1322
+    }
+   }
   },
   "xk": {
    "src": "/model/hero/xk.webp",
@@ -1466,7 +1596,19 @@
    "cars": [
     "jaguar-xk-x100-xkr-100-special-edition-coupe-2001-special-platinum-silver-xkr-100-45.webp",
     "jaguar-xk-x150-xk-coupe-coupe-2006-2011-new-liquid-silver-x150-xk-45.webp"
-   ]
+   ],
+   "themedScenes": {
+    "light": {
+     "src": "/model/hero/xk-hero-light.webp",
+     "width": 1832,
+     "height": 1322
+    },
+    "dark": {
+     "src": "/model/hero/xk-hero-dark.webp",
+     "width": 1832,
+     "height": 1322
+    }
+   }
   },
   "i-pace": {
    "src": "/model/hero/i-pace.webp",

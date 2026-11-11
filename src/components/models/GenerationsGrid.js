@@ -211,10 +211,12 @@ function CarPhoto({ src, alt, lead, wide = false, isDark }) {
   );
 }
 
-function GenerationCard({ card, index, modelName, lead = false, wide = false, isDark }) {
+// Every card is a dropdown: closed, it is the compact card; open (`lead`), it grows into the full card with
+// the bigger car, "Our Verdict" and the explore link. `onToggle` opens / closes it (one open at a time).
+function GenerationCard({ card, index, modelName, lead = false, wide = false, onToggle, isDark }) {
   const tones = palette(isDark);
   const verdict = typeset(card.verdict);
-  const [open, setOpen] = useState(lead && Boolean(verdict));
+  const open = lead;
   const title = parseCardTitle(card.title, modelName);
   const meta = parseMeta(card.meta);
   const lines = subtitleLines(card, title, meta);
@@ -228,7 +230,8 @@ function GenerationCard({ card, index, modelName, lead = false, wide = false, is
 
   return (
     <article
-      className={`relative flex min-w-0 flex-col rounded-xl border px-4 pb-4 pt-4 lg:px-[var(--gn-card-px)] lg:pt-[var(--gn-card-pt)] ${
+      id={lead ? `gen-card-${index}` : undefined}
+      className={`relative flex min-w-0 scroll-mt-24 flex-col rounded-xl border px-4 pb-4 pt-4 lg:px-[var(--gn-card-px)] lg:pt-[var(--gn-card-pt)] ${
         lead ? `${tones.leadCard} lg:pb-[var(--gn-lead-pb)]` : `${tones.card} lg:pb-[var(--gn-card-pb)]`
       } ${tones.text}`}
     >
@@ -260,10 +263,10 @@ function GenerationCard({ card, index, modelName, lead = false, wide = false, is
                 dangerouslySetInnerHTML={{ __html: title.code }}
               />
             </div>
-            {lead && verdict ? (
+            {lead && onToggle ? (
               <button
                 type="button"
-                onClick={() => setOpen((value) => !value)}
+                onClick={onToggle}
                 aria-expanded={open}
                 aria-controls={verdictId}
                 aria-label={open ? "Hide our verdict" : "Show our verdict"}
@@ -326,13 +329,17 @@ function GenerationCard({ card, index, modelName, lead = false, wide = false, is
             </div>
           </div>
         ) : (
-          <Link
-            href={href}
-            className={`mt-5 flex min-h-[44px] items-center justify-center gap-2 rounded-md border px-3 text-center text-[14.5px] !font-semibold leading-tight transition-colors md:px-1.5 md:text-[13px] lg:mt-[var(--gn-btn-mt)] lg:min-h-[var(--gn-btn-h)] lg:text-[length:var(--gn-btn)] xl:px-3 ${tones.outline}`}
+          // Closed card: the button opens it in place (the explore link lives in the open card)
+          <button
+            type="button"
+            onClick={onToggle}
+            aria-expanded={false}
+            aria-controls={verdictId}
+            className={`mt-5 flex min-h-[44px] w-full items-center justify-center gap-2 rounded-md border px-3 text-center text-[14.5px] !font-semibold leading-tight transition-colors md:px-1.5 md:text-[13px] lg:mt-[var(--gn-btn-mt)] lg:min-h-[var(--gn-btn-h)] lg:text-[length:var(--gn-btn)] xl:px-3 ${tones.outline}`}
           >
             <span dangerouslySetInnerHTML={{ __html: label }} />
             <ChevronDown aria-hidden="true" className="h-4 w-4 shrink-0 md:hidden xl:block" strokeWidth={2} />
-          </Link>
+          </button>
         )}
       </div>
     </article>
@@ -524,6 +531,7 @@ function ComparisonLink({ link, isDark }) {
 
 export default function GenerationsGrid({ data }) {
   const { theme } = useTheme();
+  const [openIndex, setOpenIndex] = useState(0);
   if (!data) return null;
 
   const isDark = theme === "dark";
@@ -532,7 +540,22 @@ export default function GenerationsGrid({ data }) {
   const modelName = modelNameFromH2(data.h2);
   // Photos come from the page (one per card, different colours); carImageFor is a fallback.
   const cards = (data.cards || []).map((card) => ({ ...card, image: card.image || carImageFor(card.title, data.h2) }));
-  const [lead, ...others] = cards;
+  // The open card (card 1 by default) takes the tall column; the closed ones keep their order beside it.
+  // It sits on the left when it is in the first half of the list, otherwise on the right, so the table
+  // under the closed cards moves to the other side. All closed: the cards share one row, table below.
+  const open = openIndex >= 0 && openIndex < cards.length ? openIndex : -1;
+  const lead = open >= 0 ? cards[open] : null;
+  const rest = cards.map((card, index) => ({ card, index })).filter(({ index }) => index !== open);
+  const others = rest.map(({ card }) => card);
+  const leadRight = cards.length > 1 && open > (cards.length - 1) / 2;
+  const toggle = (index) => {
+    const opening = openIndex !== index;
+    setOpenIndex(opening ? index : -1);
+    // The opened card moves into the tall slot (on phones, above the swipe row): bring it into view.
+    if (opening && typeof window !== "undefined") {
+      requestAnimationFrame(() => document.getElementById(`gen-card-${index}`)?.scrollIntoView({ behavior: "smooth", block: "nearest" }));
+    }
+  };
   const table = data.rangeTable?.rows?.length ? data.rangeTable : null;
   const note = data.comparisonNote?.text || data.comparisonNote?.verdict ? data.comparisonNote : null;
   const count = others.length;
@@ -541,7 +564,7 @@ export default function GenerationsGrid({ data }) {
   const freeSlots = count > 0 && count < 4 ? 4 - count : 0;
   const slot = freeSlots ? (table?.intro ? "intro" : !table && note ? "note" : null) : null;
   // A single generation with no table: card 1 becomes one wide card (car | verdict).
-  const wideLead = count === 0 && !table;
+  const wideLead = cards.length === 1 && !table;
   // Cards 2..5 in one row above the table: both columns share a bottom edge, as in the reference.
   const shareBottom = count >= 1 && count <= 4 && Boolean(table);
 
@@ -564,12 +587,23 @@ export default function GenerationsGrid({ data }) {
             column starts a little above card 1, as in the reference. More rows (XJ) or none: tops align. */}
         <div
           className={`mt-5 grid gap-y-5 lg:mt-[var(--gn-lead-gap)] lg:gap-x-[var(--gn-col-gap)] ${
-            wideLead ? "" : "lg:grid-cols-[minmax(0,340fr)_minmax(0,1078fr)]"
-          } ${shareBottom ? "lg:items-end" : "lg:items-start"}`}
+            wideLead || !lead ? "" : leadRight ? "lg:grid-cols-[minmax(0,1078fr)_minmax(0,340fr)]" : "lg:grid-cols-[minmax(0,340fr)_minmax(0,1078fr)]"
+          } ${shareBottom && lead ? "lg:items-end" : "lg:items-start"}`}
         >
-          <div className="min-w-0">
-            {lead ? <GenerationCard card={lead} index={0} modelName={modelName} lead wide={wideLead} isDark={isDark} /> : null}
-          </div>
+          {lead ? (
+            <div className={`min-w-0 ${leadRight ? "lg:order-last" : ""}`}>
+              <GenerationCard
+                key={open}
+                card={lead}
+                index={open}
+                modelName={modelName}
+                lead
+                wide={wideLead}
+                onToggle={cards.length > 1 ? () => toggle(open) : undefined}
+                isDark={isDark}
+              />
+            </div>
+          ) : null}
 
           {count || table ? (
           <div className="min-w-0">
@@ -577,13 +611,13 @@ export default function GenerationsGrid({ data }) {
               <div className="md:flex md:gap-3 lg:gap-[var(--gn-card-gap)]">
                 {/* Phones: a swipeable row (the next card peeks in). sm: two across; md+: four across. */}
                 <div
-                  className="-mx-4 flex snap-x snap-mandatory gap-3 overflow-x-auto scroll-px-4 px-4 pb-1 [scrollbar-width:none] sm:mx-0 sm:grid sm:grid-cols-2 sm:overflow-visible sm:px-0 sm:pb-0 md:shrink-0 md:[grid-template-columns:repeat(var(--cols),minmax(0,1fr))] md:[width:calc((100%_-_3*var(--gn-card-gap,12px))/4*var(--cols)_+_(var(--cols)_-_1)*var(--gn-card-gap,12px))] lg:gap-[var(--gn-card-gap)] [&::-webkit-scrollbar]:hidden"
-                  style={{ "--cols": Math.min(count, 4) }}
+                  className="-mx-4 flex snap-x snap-mandatory gap-3 overflow-x-auto scroll-px-4 px-4 pb-1 [scrollbar-width:none] sm:mx-0 sm:grid sm:grid-cols-2 sm:overflow-visible sm:px-0 sm:pb-0 md:shrink-0 md:[grid-template-columns:repeat(var(--cols),minmax(0,1fr))] md:[width:calc((100%_-_(var(--per)_-_1)*var(--gn-card-gap,12px))/var(--per)*var(--cols)_+_(var(--cols)_-_1)*var(--gn-card-gap,12px))] lg:gap-[var(--gn-card-gap)] [&::-webkit-scrollbar]:hidden"
+                  style={{ "--cols": lead ? Math.min(count, 4) : Math.min(count, 5), "--per": lead ? 4 : Math.max(4, Math.min(count, 5)) }}
                 >
-                  {others.map((card, index) => (
+                  {rest.map(({ card, index }) => (
                     <div key={`${card.title}-${index}`} className={`flex shrink-0 snap-start sm:w-auto ${count === 1 ? "w-full" : "w-[72%]"}`}>
                       <div className="flex w-full flex-col [&>article]:flex-1">
-                        <GenerationCard card={card} index={index + 1} modelName={modelName} isDark={isDark} />
+                        <GenerationCard card={card} index={index} modelName={modelName} onToggle={() => toggle(index)} isDark={isDark} />
                       </div>
                     </div>
                   ))}

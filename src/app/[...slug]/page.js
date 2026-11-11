@@ -179,7 +179,7 @@ export default async function CatchAllPage({ params }) {
   if (type === "models") {
     data = withModelPageImages(data);
     return (
-      <main className="flex flex-col">
+      <main className="model-page flex flex-col">
         {data.meta?.jsonLd && (
           <script
             type="application/ld+json"

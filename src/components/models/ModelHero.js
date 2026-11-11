@@ -251,7 +251,7 @@ export default function ModelHero({ data }) {
             backdrop behind the copy from lg up (so a phone never downloads two hero images). */}
         <div
           aria-hidden="true"
-          className={`relative -mx-4 mt-7 overflow-hidden sm:-mx-6 sm:mt-9 lg:absolute lg:right-0 lg:top-0 lg:-z-10 lg:m-0 lg:h-[min(43vw,662px)] ${SCENE_ASPECT}`}
+          className={`model-hero-scene relative -mx-4 mt-7 overflow-hidden sm:-mx-6 sm:mt-9 lg:absolute lg:right-0 lg:top-0 lg:-z-10 lg:m-0 lg:h-[min(43vw,662px)] ${SCENE_ASPECT}`}
         >
           <Image
             src={photoSrc}
@@ -268,9 +268,6 @@ export default function ModelHero({ data }) {
           ) : null}
           {/* Phones: soften the top and bottom edges into the page */}
           <div className="absolute inset-x-0 top-0 h-[14%] bg-[linear-gradient(180deg,var(--color-page)_0%,transparent_100%)] lg:hidden" />
-          {/* Desktop: fade the left edge into the copy, and the top edge under the navbar */}
-          <div className="absolute inset-0 hidden bg-[linear-gradient(90deg,var(--color-page)_0%,color-mix(in_srgb,var(--color-page)_70%,transparent)_9%,transparent_26%)] lg:block" />
-          <div className="absolute inset-x-0 top-0 hidden h-[6%] bg-[linear-gradient(180deg,var(--color-page)_0%,transparent_100%)] lg:block" />
           <div className="absolute inset-x-0 bottom-0 h-[10%] bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)] lg:h-[12%]" />
         </div>
 

@@ -334,13 +334,13 @@ function StatsStrip({ items, isDark }) {
 
 // The reference frame: left column from the navbar to just below the verdict card (~0.9 aspect),
 // so the floor continues beside and under the card exactly as in the mockups.
-function Scene({ photo, isScene, isDark }) {
+function Scene({ photo, isScene, edge, isDark }) {
   return (
     <div
       aria-hidden="true"
       className={[
         // phones: a full-bleed band under the copy, top of the sky cropped
-        "relative -mx-4 mt-5 aspect-[724/600] overflow-hidden",
+        "@container relative -mx-4 mt-5 aspect-[724/600] overflow-hidden lg:overflow-visible",
         // sm–lg: the full frame behind the copy (same grid cell, aligned to its bottom)
         "sm:col-start-1 sm:row-start-1 sm:-mx-6 sm:mt-0 sm:aspect-[715/796] sm:self-end",
         // lg+: behind the column, bleeding to the page edge and under the table's left edge. Its bottom
@@ -363,10 +363,24 @@ function Scene({ photo, isScene, isDark }) {
           sizes="(min-width: 1024px) 720px, 100vw"
         />
       )}
-      {/* soften the top into the page (and, from lg, the floor's lower edge beside a taller card) */}
-      <div className="absolute inset-x-0 top-0 h-[16%] bg-[linear-gradient(180deg,var(--color-page)_0%,transparent_100%)] lg:h-[8%]" />
+      {/* Screens wider than the 1546px layout: the scene's backdrop carries on to the screen edge instead
+          of stopping (or fading) at the column. It is the backdrop mirrored at the seam, so it joins with
+          no visible line: Jaguar's background without the car, or the E-Pace scene's own left strip. */}
+      <div className="absolute inset-y-0 right-full hidden w-[max(0px,calc((100vw-1546px)/2))] overflow-hidden lg:block">
+        <div className="absolute inset-y-0 right-0 w-[100cqw] -scale-x-100">
+          {isScene ? (
+            edge ? <Image src={edge} alt="" fill sizes="(min-width: 1024px) 720px, 1px" className="object-cover object-bottom" /> : null
+          ) : (
+            <CarOnBackground isDark={isDark} className="absolute inset-0" bgClassName="object-cover object-[72%_center]" sizes="(min-width: 1024px) 720px, 1px" />
+          )}
+        </div>
+        <div className="verdict-scene-top absolute inset-x-0 top-0 h-[24%]" />
+        <div className="absolute inset-x-0 bottom-0 h-[7%] bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)]" />
+      </div>
+      {/* The top dissolves into the section through an eased fade (no visible seam); the left edge is
+          left as is, and from lg the floor's lower edge softens beside a taller card. */}
+      <div className="verdict-scene-top absolute inset-x-0 top-0 h-[18%] lg:h-[24%]" />
       <div className="absolute inset-x-0 bottom-0 hidden h-[7%] bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)] lg:block" />
-      <div className="absolute inset-y-0 left-0 hidden w-[5%] bg-[linear-gradient(90deg,var(--color-page)_0%,transparent_100%)] min-[1600px]:block" />
     </div>
   );
 }
@@ -412,7 +426,7 @@ export default function OwnershipVerdict({ data, stats = [] }) {
 
             {/* lg+: the space between the copy and the card; the scene is anchored to its bottom edge */}
             <div className="contents lg:relative lg:block lg:flex-1">
-              {photo ? <Scene photo={photo} isScene={Boolean(scene)} isDark={isDark} /> : null}
+              {photo ? <Scene photo={photo} isScene={Boolean(scene)} edge={scene?.edge} isDark={isDark} /> : null}
             </div>
 
             {data.oneLineVerdict ? (
