@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
 import { heroBackground } from "@/components/shared/carImage";
+import OpenQuoteButton from "@/components/shared/OpenQuoteButton";
 import GenIcon from "./GenIcons";
 import HomeIcon from "@/components/home/homeIcons";
 import GenerationSectionHeader from "./GenerationSectionHeader";
@@ -65,7 +66,6 @@ export default function TrustCta({ data, contextLabel = "" }) {
   const title = splitTrustCtaH2(data.h2 || "Trust JaguarEngine.uk");
   // The model's line-up scene (set server-side), else Jaguar's own background.
   const image = data.image || heroBackground(isDark);
-  const ctaHref = data.ctaButton?.href || "/quote";
   const ctaLabel =
     data.ctaButton?.label?.replace(/\s*→\s*$/, "").trim() ||
     (contextLabel ? `Get a Jaguar ${contextLabel} Engine Quote` : "Get a Jaguar Engine Quote");
@@ -133,10 +133,10 @@ export default function TrustCta({ data, contextLabel = "" }) {
               )}
 
               {ctaLabel ? (
-                <a href={ctaHref} className={glassCtaClass(isDark)}>
+                <OpenQuoteButton className={glassCtaClass(isDark)}>
                   <span dangerouslySetInnerHTML={{ __html: ctaLabel }} />
                   <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
-                </a>
+                </OpenQuoteButton>
               ) : null}
             </div>
           </div>

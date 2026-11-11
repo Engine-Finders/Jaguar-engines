@@ -8,6 +8,7 @@ import { BarChart3, Info, ShieldCheck } from "@/components/models/brandIcons";
 import { engineHrefFor } from "@/components/shared/engineLink";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
+import OpenQuoteButton from "@/components/shared/OpenQuoteButton";
 import shared from "@/data/shared/engineDatabase.json";
 import { outsideTags, stripTags } from "@/components/models/outsideTags";
 
@@ -194,10 +195,10 @@ function Tagged({ raw, tones, kind }) {
   const placeholder = /PLACEHOLDER/i.test(tag);
   if (kind === "cost" && !value && placeholder) {
     return (
-      <Link href="/quote" className={`inline-flex items-center gap-1.5 text-[13.5px] !font-semibold underline-offset-2 hover:underline lg:text-[length:var(--db-cell)] ${tones.text}`}>
+      <OpenQuoteButton className={`inline-flex items-center gap-1.5 text-[13.5px] !font-semibold underline-offset-2 hover:underline lg:text-[length:var(--db-cell)] ${tones.text}`}>
         Quote on request
         <ArrowRight aria-hidden="true" className="h-3.5 w-3.5" strokeWidth={2} />
-      </Link>
+      </OpenQuoteButton>
     );
   }
   return (

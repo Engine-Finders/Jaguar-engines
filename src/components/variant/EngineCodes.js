@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { useTheme } from "@/components/shared/themeProvider";
+import OpenQuoteButton from "@/components/shared/OpenQuoteButton";
 import MStripe from "@/components/reusableComponents/MStripe";
 import GenIcon from "../generation/GenIcons";
 import { specIconFor } from "@/components/shared/labelIcons";
@@ -131,9 +132,8 @@ export default function EngineCodes({ data }) {
   ) : null;
 
   const quoteCtaBanner = data.cta?.label ? (
-    <a
-      href="/quote"
-      className={`relative flex items-center gap-4 overflow-hidden rounded-xl border p-5 no-underline backdrop-blur-xl backdrop-saturate-150 ${
+    <OpenQuoteButton
+      className={`relative flex w-full items-center gap-4 overflow-hidden rounded-xl border p-5 text-left no-underline backdrop-blur-xl backdrop-saturate-150 ${
         isDark
           ? "border-white/20 bg-[rgba(20,21,21,0.62)] text-white shadow-[0_12px_32px_rgba(0,0,0,0.45)]"
           : `${primaryCtaClass("")} border-[var(--color-border)] bg-[var(--color-primary-strong)]`
@@ -165,7 +165,7 @@ export default function EngineCodes({ data }) {
           <p className={`mt-1 text-[0.78rem] leading-[1.4] ${isDark ? "text-white/80" : "text-white/80"}`}>Get quotes from trusted UK specialists in minutes.</p>
         </div>
       </div>
-    </a>
+    </OpenQuoteButton>
   ) : null;
 
   return (

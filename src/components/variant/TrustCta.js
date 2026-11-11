@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
 import CarOnBackground from "@/components/shared/CarOnBackground";
+import OpenQuoteButton from "@/components/shared/OpenQuoteButton";
 import MStripe from "@/components/reusableComponents/MStripe";
 import GenIcon from "../generation/GenIcons";
 import { variantSectionBg, VariantSectionHeading, primaryBadgeClass } from "./variantSection";
@@ -82,13 +83,10 @@ export default function TrustCta({ data }) {
                   <p className={`font-heading text-[1.15rem] font-bold leading-[1.4] md:text-[1.4rem] ${headingClass}`} dangerouslySetInnerHTML={{ __html: data.finalCta }} />
                 ) : null}
                 {data.ctaButton ? (
-                  <a
-                    href="/quote"
-                    className="btn-cta flex w-full shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-lg bg-[#189454] px-4 py-2.5 text-center text-[0.74rem] font-bold text-white no-underline shadow-[0_12px_28px_rgba(0,0,0,0.35)] md:w-auto md:px-6 md:py-3 md:text-[0.8rem]"
-                  >
+                  <OpenQuoteButton className="btn-cta flex w-full shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-lg bg-[#189454] px-4 py-2.5 text-center text-[0.74rem] font-bold text-white no-underline shadow-[0_12px_28px_rgba(0,0,0,0.35)] md:w-auto md:px-6 md:py-3 md:text-[0.8rem]">
                     {data.ctaButton.label.replace(/\s*→\s*$/, "")}
                     <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
-                  </a>
+                  </OpenQuoteButton>
                 ) : null}
               </div>
             </div>

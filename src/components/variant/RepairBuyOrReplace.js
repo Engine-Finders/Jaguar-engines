@@ -4,6 +4,7 @@ import { Fragment } from "react";
 import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
 import CarOnBackground from "@/components/shared/CarOnBackground";
+import OpenQuoteButton from "@/components/shared/OpenQuoteButton";
 import MStripe from "@/components/reusableComponents/MStripe";
 import GenIcon from "../generation/GenIcons";
 import { variantSectionBg, VariantSectionHeading, tableHeaderClass, primaryBadgeClass, primaryCtaClass, stripCtaArrow } from "./variantSection";
@@ -269,13 +270,12 @@ export default function RepairBuyOrReplace({ data }) {
                   <span className="block">Get the right engine at the right price.</span>
                 </p>
               </div>
-              <a
-                href="/quote"
+              <OpenQuoteButton
                 className={`${primaryCtaClass("relative z-10 flex w-fit items-center justify-center gap-2 whitespace-nowrap rounded-md px-4 py-3.5 text-center text-[0.7rem] uppercase tracking-wide")}`}
               >
                 {ctaLabel}
                 <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
-              </a>
+              </OpenQuoteButton>
             </div>
           ) : null}
         </div>
@@ -310,13 +310,12 @@ export default function RepairBuyOrReplace({ data }) {
                 ) : null}
               </div>
 
-              <a
-                href="/quote"
+              <OpenQuoteButton
                 className={`${primaryCtaClass("flex w-full items-center justify-center gap-2 rounded-xl px-3 py-2.5 text-center text-[0.78rem]")}`}
               >
                 {ctaLabel}
                 <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
-              </a>
+              </OpenQuoteButton>
             </div>
           ) : null}
 

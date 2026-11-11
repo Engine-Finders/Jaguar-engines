@@ -1,9 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import { useTheme } from "@/components/shared/themeProvider";
 import MStripe from "@/components/reusableComponents/MStripe";
 import HomeIcon from "@/components/home/homeIcons";
+import OpenQuoteButton from "@/components/shared/OpenQuoteButton";
 import { sectionDescription } from "@/components/models/sectionTypography";
 import { engineSectionBg } from "./engineSection";
 
@@ -181,22 +181,20 @@ function CompareCta({ cta, engineCode, desktop = false, isDark }) {
             Get live pricing from 20+ trusted engine suppliers.
           </p>
         </div>
-        <Link
-          href="/quote"
+        <OpenQuoteButton
           className={`mt-5 inline-flex min-h-11 items-center justify-center rounded-lg px-4 text-[13px] font-bold uppercase tracking-[0.04em] ${
             isDark ? "bg-[var(--color-page)] text-white" : "bg-[var(--color-surface)] text-[var(--color-text)]"
           }`}
         >
           Compare Prices →
-        </Link>
+        </OpenQuoteButton>
       </article>
     );
   }
 
   return (
-    <Link
-      href="/quote"
-      className={`btn-cta mt-1 flex min-h-12 items-center justify-between gap-3 rounded-xl px-3.5 py-3 shadow-[0_12px_28px_var(--color-shadow)] ${
+    <OpenQuoteButton
+      className={`btn-cta mt-1 flex min-h-12 w-full items-center justify-between gap-3 rounded-xl px-3.5 py-3 shadow-[0_12px_28px_var(--color-shadow)] ${
         isDark ? "bg-[var(--color-chrome)] text-[var(--color-page)]" : "bg-[var(--color-primary)] text-white"
       }`}
     >
@@ -211,7 +209,7 @@ function CompareCta({ cta, engineCode, desktop = false, isDark }) {
         {label || `Compare Jaguar ${engineCode} engine prices from UK specialists`}
       </span>
       <span aria-hidden="true" className="text-[18px] font-bold">→</span>
-    </Link>
+    </OpenQuoteButton>
   );
 }
 

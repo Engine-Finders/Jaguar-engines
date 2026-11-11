@@ -1,9 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import { useTheme } from "@/components/shared/themeProvider";
 import MStripe from "@/components/reusableComponents/MStripe";
 import HomeIcon from "@/components/home/homeIcons";
+import OpenQuoteButton from "@/components/shared/OpenQuoteButton";
 import { sectionH2 } from "@/components/models/sectionTypography";
 import { engineSectionBg } from "./engineSection";
 
@@ -115,12 +115,9 @@ export default function TrustCta({ data, engineLabel = "Jaguar Engine" }) {
             {highlightConfidence(cleanText(data.finalCta || "").replace(/BMW/gi, "Jaguar"))}
           </p>
           {data.ctaButton?.href ? (
-            <Link
-              href="/quote"
-              className="btn-cta inline-flex min-h-11 shrink-0 items-center justify-center rounded-lg bg-[var(--color-primary)] px-5 text-[13px] font-bold text-white"
-            >
+            <OpenQuoteButton className="btn-cta inline-flex min-h-11 shrink-0 items-center justify-center rounded-lg bg-[var(--color-primary)] px-5 text-[13px] font-bold text-white">
               {ctaLabel || `Compare Jaguar ${engineCode} Engine Prices Now`} →
-            </Link>
+            </OpenQuoteButton>
           ) : null}
         </div>
 
@@ -163,13 +160,10 @@ export default function TrustCta({ data, engineLabel = "Jaguar Engine" }) {
               )}
             </p>
             {data.ctaButton?.href ? (
-              <Link
-                href="/quote"
-                className="btn-cta mt-3 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-lg bg-[var(--color-primary)] px-4 text-[13px] font-bold text-white"
-              >
+              <OpenQuoteButton className="btn-cta mt-3 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-lg bg-[var(--color-primary)] px-4 text-[13px] font-bold text-white">
                 <span>{ctaLabel || `Compare Jaguar ${engineCode} Engine Prices Now`}</span>
                 <span aria-hidden="true">→</span>
-              </Link>
+              </OpenQuoteButton>
             ) : null}
           </article>
         </div>

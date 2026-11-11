@@ -111,10 +111,7 @@
     "ctas": {
       "quote": {
         "label": "Get Jaguar Specialist Advice",
-        "href": "/quote"
-      },
-      "specialist": {
-        "label": "Speak to a Jaguar Specialist",
+        "support": "Understand the likely fault, estimated repair costs and whether replacement may be a suitable option.",
         "href": "/quote"
       }
     },
@@ -1020,10 +1017,10 @@
     ]
   },
   "bottomCta": {
-    "title": "Built on real-world data. Backed by specialists. Focused on what's best for you. No guesswork. No upselling. Just the truth about your Jaguar.",
+    "title": "Understand the likely fault, estimated repair costs and whether replacement may be a suitable option.",
     "text": "",
-    "buttonLabel": "START YOUR DIAGNOSIS →",
-    "href": "#diagnostic-calculator",
+    "buttonLabel": "Get Jaguar Specialist Advice",
+    "href": "/quote",
     "trustLine": "100% Independent • No Sponsorship • Completely Unbiased"
   },
   "iPaceNote": {

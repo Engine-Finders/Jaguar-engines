@@ -2,12 +2,12 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import GenIcon from "../generation/GenIcons";
 import HomeIcon from "@/components/home/homeIcons";
 import UkPlateInput from "@/components/shared/UkPlateInput";
+import { openFreeQuote } from "@/lib/openFreeQuote";
 import { primaryCtaClass } from "./variantSection";
 
 // "🔧 Supply & Fit Available", "✅ 12-Month Warranty", "🚚 Nationwide Delivery", "👥 15+ Specialists"
@@ -131,7 +131,6 @@ function TickerTrack({ items, isDark, dotSizeClass = "h-2 w-2" }) {
 
 export default function VariantHero({ data }) {
   const { theme } = useTheme();
-  const router = useRouter();
   const [regNumber, setRegNumber] = useState("");
 
   if (!data) return null;
@@ -139,11 +138,7 @@ export default function VariantHero({ data }) {
   function goToQuoteWithReg(event) {
     event.preventDefault();
     const cleaned = regNumber.replace(/\s+/g, "").toUpperCase();
-    if (!cleaned) {
-      router.push("/quote");
-      return;
-    }
-    router.push(`/quote?reg=${encodeURIComponent(cleaned)}`);
+    openFreeQuote({ reg: cleaned });
   }
 
   const isDark = theme === "dark";

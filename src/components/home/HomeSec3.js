@@ -6,6 +6,7 @@ import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
+import { openFreeQuote } from "@/lib/openFreeQuote";
 
 const iconPaths = {
   chart: <path d="M4 19V9m5 10V5m5 14v-7m5 7H3" />,
@@ -421,10 +422,10 @@ function LandingGrid({ steps, items, costTable, isDark, onStart }) {
   );
 }
 
-function SideInfo({ data, isDark, onStart }) {
+function SideInfo({ data, isDark }) {
   return (
     <div className="grid gap-4">
-      <HowItWorksCard steps={data.steps} isDark={isDark} onStart={onStart} />
+      <HowItWorksCard steps={data.steps} isDark={isDark} showButton={false} />
       <WhyTrustCard items={data.items} isDark={isDark} />
     </div>
   );
@@ -535,7 +536,7 @@ function CostTablePanel({ table, isDark }) {
   );
 }
 
-function BottomBar({ cta, isDark, onStart }) {
+function BottomBar({ cta, isDark }) {
   if (!cta) return null;
 
   return (
@@ -563,10 +564,10 @@ function BottomBar({ cta, isDark, onStart }) {
       </div>
       <button
         type="button"
-        onClick={onStart}
+        onClick={() => openFreeQuote()}
         className="btn-cta inline-flex shrink-0 items-center justify-center gap-2 rounded-md px-4 py-2.5 text-[0.8rem] font-bold md:px-5"
       >
-        <span>{(cta.buttonLabel || "START DIAGNOSIS").replace(/\s*→\s*$/, "")}</span>
+        <span>{(cta.buttonLabel || "Get Jaguar Specialist Advice").replace(/\s*→\s*$/, "")}</span>
         <ArrowIcon className="h-4 w-4" />
       </button>
     </div>
@@ -709,42 +710,10 @@ function CostCard({ title, value, note, highlight, isDark }) {
   );
 }
 
-function ResultsScreen({ diagnosis, verdict, engineOption, ctas, isDark, calculatorContext }) {
+function ResultsScreen({ diagnosis, verdict, engineOption, isDark }) {
   const severity = severityMeta[diagnosis.severity] || severityMeta.monitor;
   const verdictInfo = verdictMeta[verdict.decision];
   const dealerRange = getMainDealerRange(verdict.replacement, diagnosis.dealerMultiplier);
-
-  function goToQuoteWithCalculator(event) {
-    event.preventDefault();
-    const calculator = {
-      source: "diagnostic-calculator",
-      category: calculatorContext?.categoryLabel || "",
-      diagnosis: diagnosis.headline || "",
-      diagnosisKey: diagnosis.key || "",
-      severity: severity?.label || diagnosis.severity || "",
-      evidence: diagnosis.evidenceLabel || "",
-      engineCodes: (diagnosis.engineCodes || []).join(" / "),
-      vehicleAge: calculatorContext?.ageLabel || "",
-      carValue: calculatorContext?.carValue != null ? fmtCurrency(calculatorContext.carValue) : "",
-      engineRoute: engineOption?.label || "",
-      repairCost: `${fmtCurrency(diagnosis.repairCost.low)} - ${fmtCurrency(diagnosis.repairCost.high)}`,
-      replacementCost: `${fmtCurrency(verdict.replacement.low)} - ${fmtCurrency(verdict.replacement.high)}`,
-      dealerEstimate: `${fmtCurrency(dealerRange.low)} - ${fmtCurrency(dealerRange.high)}`,
-      replacementVsValue: `${verdict.replacementPct}%`,
-      repairVsValue: `${verdict.repairPct}%`,
-      verdict: verdictInfo?.title || "",
-    };
-
-    try {
-      sessionStorage.setItem("bmw_quote_calculator", JSON.stringify(calculator));
-    } catch {
-      // Quote form still works without calculator context
-    }
-
-    const href = ctas.quote?.href && ctas.quote.href !== "#" ? ctas.quote.href : "/quote";
-    const url = href.includes("?") ? `${href}&from=calculator` : `${href}?from=calculator`;
-    window.location.href = url;
-  }
 
   return (
     <div className="grid gap-5">
@@ -815,24 +784,6 @@ function ResultsScreen({ diagnosis, verdict, engineOption, ctas, isDark, calcula
                   </li>
                 ))}
               </ul>
-
-              <div className="mt-5 grid gap-3">
-                <p className={`text-[0.8rem] leading-[1.4] ${isDark ? "text-white/75" : "text-[var(--color-text-muted)]"}`}>
-                  Understand the likely fault, estimated repair costs and whether replacement may be a suitable option.
-                </p>
-                <button
-                  type="button"
-                  onClick={goToQuoteWithCalculator}
-                  className="btn-cta flex items-center justify-center gap-3 rounded-lg px-5 py-3 text-[0.86rem] font-bold"
-                >
-                  <span>{ctas.quote?.label || "Get Jaguar Specialist Advice"}</span>
-                  <ArrowIcon className="h-4 w-4" />
-                </button>
-                <Link href={ctas.specialist?.href || "/quote"} className={`flex items-center justify-center gap-3 rounded-lg border px-5 py-3 text-[0.86rem] font-bold ${isDark ? "border-[var(--color-border)] bg-[var(--color-surface)] text-white" : "border-[var(--color-border)] bg-[var(--color-surface)] text-[var(--color-text)]"}`}>
-                  <span>{ctas.specialist?.label || "Speak to a Jaguar Specialist"}</span>
-                  <ArrowIcon className="h-4 w-4" />
-                </Link>
-              </div>
             </div>
           </div>
         </div>
@@ -865,10 +816,6 @@ export default function HomeSec3({ data }) {
       { id: "over15", label: "Over 15 years" },
     ],
     whyTrust: data.calculator?.whyTrust || data.whyTrust?.signals || [],
-    ctas: data.calculator?.ctas || {
-      quote: { label: "Get Jaguar Specialist Advice", href: "/quote" },
-      specialist: { label: "Speak to a Jaguar Specialist", href: "/quote" },
-    },
   };
   const diagnosesByKey = Object.fromEntries(
     (calculator.diagnoses || []).map((item) => [item.key, item])
@@ -1021,17 +968,13 @@ export default function HomeSec3({ data }) {
         <TrustStrip items={data.trustStrip || []} isDark={isDark} />
 
         {!calculatorOpen ? (
-          <>
-            <LandingGrid
-              steps={data.howItWorks?.steps || []}
-              items={calculator.whyTrust || []}
-              costTable={data.costTable}
-              isDark={isDark}
-              onStart={openCalculator}
-            />
-            <BottomBar cta={data.bottomCta} isDark={isDark} onStart={openCalculator} />
-            {/* I-Pace note removed */}
-          </>
+          <LandingGrid
+            steps={data.howItWorks?.steps || []}
+            items={calculator.whyTrust || []}
+            costTable={data.costTable}
+            isDark={isDark}
+            onStart={openCalculator}
+          />
         ) : (
           <>
             <div className="mt-6 grid grid-cols-1 gap-4 lg:grid-cols-[minmax(0,1.6fr)_minmax(260px,320px)] lg:items-start">
@@ -1239,13 +1182,7 @@ export default function HomeSec3({ data }) {
                         diagnosis={selectedDiagnosis}
                         verdict={verdict}
                         engineOption={selectedEngineOption}
-                        ctas={calculator.ctas}
                         isDark={isDark}
-                        calculatorContext={{
-                          categoryLabel: selectedCategory?.label || "",
-                          ageLabel: calculator.ageOptions.find((item) => item.id === selectedAgeId)?.label || "",
-                          carValue,
-                        }}
                       />
                     </div>
                   ) : null}
@@ -1258,12 +1195,13 @@ export default function HomeSec3({ data }) {
                   items: calculator.whyTrust || [],
                 }}
                 isDark={isDark}
-                onStart={openCalculator}
               />
             </div>
             <IPaceNote note={data.iPaceNote} isDark={isDark} />
           </>
         )}
+
+        <BottomBar cta={data.bottomCta} isDark={isDark} />
       </div>
       </div>
     </section>

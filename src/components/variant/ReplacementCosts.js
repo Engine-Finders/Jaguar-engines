@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
+import OpenQuoteButton from "@/components/shared/OpenQuoteButton";
 import MStripe from "@/components/reusableComponents/MStripe";
 import GenIcon from "../generation/GenIcons";
 import { variantSectionBg, VariantSectionHeading, tableHeaderClass, primaryBadgeClass, primaryCtaClass, stripCtaArrow } from "./variantSection";
@@ -193,25 +194,23 @@ export default function ReplacementCosts({ data }) {
               </>
             ) : null}
             {ctaLabel ? (
-              <a
-                href="/quote"
+              <OpenQuoteButton
                 className={`${primaryCtaClass("flex shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-xl px-4 py-2.5 text-[0.8rem]")}`}
               >
                 {ctaLabel}
                 <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
-              </a>
+              </OpenQuoteButton>
             ) : null}
           </div>
         ) : null}
 
         {ctaLabel ? (
-          <a
-            href="/quote"
+          <OpenQuoteButton
             className={`${primaryCtaClass("mt-4 flex w-full items-center justify-center gap-2 rounded-xl px-3 py-2.5 md:hidden")}`}
           >
             <span className="whitespace-nowrap text-center text-[0.78rem] font-bold md:text-[0.9rem]">{ctaLabel}</span>
             <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
-          </a>
+          </OpenQuoteButton>
         ) : null}
       </div>
     </section>

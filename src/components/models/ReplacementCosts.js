@@ -1,11 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { ArrowRight, PoundSterling } from "lucide-react";
 import { BarChart3, Clock3, FileText, Settings, ShieldCheck, Wrench } from "@/components/models/brandIcons";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
+import OpenQuoteButton from "@/components/shared/OpenQuoteButton";
 import { carImageFor } from "@/components/shared/carImage";
 import { outsideTags } from "@/components/models/outsideTags";
 import shared from "@/data/shared/replacementCosts.json";
@@ -351,13 +351,12 @@ export default function ReplacementCosts({ data }) {
           </div>
         ) : (
           // No published table for this model yet: point straight to a quote.
-          <Link
-            href="/quote"
-            className={`mt-6 flex items-center justify-between gap-4 rounded-xl border px-5 py-4 text-[15px] font-semibold lg:mt-[var(--rc-groups-mt)] ${tones.card} ${tones.text}`}
+          <OpenQuoteButton
+            className={`mt-6 flex w-full items-center justify-between gap-4 rounded-xl border px-5 py-4 text-[15px] font-semibold lg:mt-[var(--rc-groups-mt)] ${tones.card} ${tones.text}`}
           >
             Get a free replacement quote for your engine
             <ArrowRight aria-hidden="true" className="h-5 w-5 shrink-0" strokeWidth={1.8} />
-          </Link>
+          </OpenQuoteButton>
         )}
 
         <div className="mt-5 grid gap-4 md:grid-cols-2 lg:mt-[var(--rc-notes-mt)] lg:grid-cols-[minmax(0,342fr)_minmax(0,334fr)_minmax(0,738fr)] lg:gap-[var(--rc-notes-gap)]">

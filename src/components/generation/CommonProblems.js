@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
 import SectionQuoteCta from "@/components/shared/SectionQuoteCta";
+import OpenQuoteButton from "@/components/shared/OpenQuoteButton";
 import GenIcon from "./GenIcons";
 import GenerationSectionHeader from "./GenerationSectionHeader";
 import { generationSectionBg, primaryBadgeClass, splitCommonProblemsH2 } from "./generationSection";
@@ -71,9 +72,24 @@ function ProblemCta({ cta }) {
   const label = ctaLabel(cta);
   if (!label) return null;
 
+  const href = cta.href || "/quote";
+  const isQuote = !href || href === "#" || href.startsWith("/quote");
+
+  if (isQuote) {
+    return (
+      <OpenQuoteButton className="btn-cta flex h-11 w-full items-center rounded-md px-4 text-[var(--color-cta-text)] no-underline hover:text-[var(--color-btn-hover-text)]">
+        <span
+          className="flex-1 text-center text-[0.8rem] font-semibold text-inherit [&_a]:text-inherit [&_a]:no-underline"
+          dangerouslySetInnerHTML={{ __html: label }}
+        />
+        <GenIcon name="arrow" className="h-4 w-4 shrink-0 text-inherit" />
+      </OpenQuoteButton>
+    );
+  }
+
   return (
     <a
-      href={cta.href || "/quote"}
+      href={href}
       className="btn-cta flex h-11 w-full items-center rounded-md px-4 text-[var(--color-cta-text)] no-underline hover:text-[var(--color-btn-hover-text)]"
     >
       <span

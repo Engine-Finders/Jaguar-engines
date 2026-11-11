@@ -6,6 +6,7 @@ import HomeIcon from "@/components/home/homeIcons";
 import { useTheme } from "@/components/shared/themeProvider";
 import { buildQuoteLeadPayload } from "@/app/api/leadPayload";
 import { getVehicleImage } from "@/lib/getVehicleImage";
+import { FREE_QUOTE_EVENT } from "@/lib/openFreeQuote";
 
 const HEADER_BG = "/home-image/sec2-bg.webp";
 
@@ -140,11 +141,12 @@ function RegPlate({ value, onChange, readOnly = false }) {
   );
 }
 
-function QuoteModal({ open, onClose }) {
+function QuoteModal({ open, onClose, initialReg = "" }) {
   const { theme } = useTheme();
   const isDark = theme === "dark";
   const titleId = useId();
   const closeRef = useRef(null);
+  const autoLookupRef = useRef("");
 
   const [regInput, setRegInput] = useState("");
   const [vehicle, setVehicle] = useState(emptyVehicle);
@@ -187,6 +189,7 @@ function QuoteModal({ open, onClose }) {
 
   useEffect(() => {
     if (open) return;
+    autoLookupRef.current = "";
     setRegInput("");
     setVehicle(emptyVehicle);
     setLookupError("");
@@ -202,14 +205,16 @@ function QuoteModal({ open, onClose }) {
     setSubmitLoading(false);
   }, [open]);
 
-  async function lookupVehicle(event) {
-    event?.preventDefault?.();
-    const reg = regInput.replace(/\s+/g, "").toUpperCase();
+  async function lookupWithReg(rawReg) {
+    const reg = String(rawReg || "")
+      .replace(/\s+/g, "")
+      .toUpperCase();
     if (!reg) {
       setLookupError("Enter a registration number first.");
       return;
     }
 
+    setRegInput(reg);
     setLookupLoading(true);
     setLookupError("");
     setSubmitted(false);
@@ -240,6 +245,21 @@ function QuoteModal({ open, onClose }) {
     } finally {
       setLookupLoading(false);
     }
+  }
+
+  useEffect(() => {
+    if (!open) return;
+    const reg = String(initialReg || "")
+      .replace(/\s+/g, "")
+      .toUpperCase();
+    if (!reg || autoLookupRef.current === reg) return;
+    autoLookupRef.current = reg;
+    void lookupWithReg(reg);
+  }, [open, initialReg]);
+
+  async function lookupVehicle(event) {
+    event?.preventDefault?.();
+    await lookupWithReg(regInput);
   }
 
   async function handleSubmit(event) {
@@ -574,12 +594,34 @@ function QuoteModal({ open, onClose }) {
 
 export default function FreeQuoteSticky() {
   const [open, setOpen] = useState(false);
+  const [initialReg, setInitialReg] = useState("");
+
+  useEffect(() => {
+    function onOpenQuote(event) {
+      const reg = String(event?.detail?.reg || "")
+        .replace(/\s+/g, "")
+        .toUpperCase();
+      setInitialReg(reg);
+      setOpen(true);
+    }
+
+    window.addEventListener(FREE_QUOTE_EVENT, onOpenQuote);
+    return () => window.removeEventListener(FREE_QUOTE_EVENT, onOpenQuote);
+  }, []);
+
+  function handleClose() {
+    setOpen(false);
+    setInitialReg("");
+  }
 
   return (
     <>
       <button
         type="button"
-        onClick={() => setOpen(true)}
+        onClick={() => {
+          setInitialReg("");
+          setOpen(true);
+        }}
         className="btn-cta fixed bottom-5 right-5 z-50 rounded-full bg-[var(--color-primary)] px-5 py-3 text-sm font-bold text-white shadow-[0_12px_28px_var(--color-shadow)] hover:bg-[var(--color-primary-strong)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)]"
         aria-haspopup="dialog"
         aria-expanded={open}
@@ -587,7 +629,7 @@ export default function FreeQuoteSticky() {
         Get a Free Quote
       </button>
 
-      <QuoteModal open={open} onClose={() => setOpen(false)} />
+      <QuoteModal open={open} initialReg={initialReg} onClose={handleClose} />
     </>
   );
 }

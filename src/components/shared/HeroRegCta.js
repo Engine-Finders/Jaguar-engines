@@ -1,8 +1,8 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 import { useState } from "react";
 import UkPlateInput from "@/components/shared/UkPlateInput";
+import { openFreeQuote } from "@/lib/openFreeQuote";
 
 function ArrowIcon({ className = "h-4 w-4" }) {
   return (
@@ -13,16 +13,14 @@ function ArrowIcon({ className = "h-4 w-4" }) {
 }
 
 /**
- * Hero-only reg plate + CTA → /quote?reg=
- * No supporting paragraph (per CTA brief).
+ * Hero-only reg plate + CTA → opens sticky free-quote modal.
+ * With a reg: prefills + vehicle lookup. Without: opens empty form.
  */
 export default function HeroRegCta({
   label = "Explore Jaguar Engine Replacement Options",
-  href = "/quote",
   className = "",
   buttonClassName = "",
 }) {
-  const router = useRouter();
   const [reg, setReg] = useState("");
 
   function onSubmit(event) {
@@ -30,11 +28,7 @@ export default function HeroRegCta({
     const cleaned = String(reg || "")
       .replace(/\s+/g, "")
       .toUpperCase();
-    if (cleaned) {
-      router.push(`/quote?reg=${encodeURIComponent(cleaned)}`);
-      return;
-    }
-    router.push(href || "/quote");
+    openFreeQuote({ reg: cleaned });
   }
 
   return (
