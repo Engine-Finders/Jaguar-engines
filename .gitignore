@@ -38,4 +38,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local env files (restored after the 2026-11 malware cleanup)
 config.bat
