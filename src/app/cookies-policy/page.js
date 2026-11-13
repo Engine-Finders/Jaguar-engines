@@ -40,8 +40,9 @@ export default function CookiesPolicyPage() {
 
       <h2>Contact</h2>
       <p>
-        For questions about cookies on this site, contact us via the Contact page on
-        jaguarengines.uk.
+        For questions about cookies on this site, contact PRESTIGE AUTO ENGINEERING LTD
+        (Company number 17406830) at Unit A5 Windsor Road Commercial Estate, Ramsden Heath,
+        Billericay, United Kingdom, CM11 1QE, or via the Contact page on jaguarengines.uk.
       </p>
     </LegalPage>
   );

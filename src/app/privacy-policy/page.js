@@ -15,6 +15,16 @@ export default function PrivacyPolicyPage() {
         jaguarengines.uk.
       </p>
 
+      <h2>Who we are</h2>
+      <p>
+        jaguarengines.uk is operated by <strong>PRESTIGE AUTO ENGINEERING LTD</strong>.
+      </p>
+      <p>
+        Registered address: Unit A5 Windsor Road Commercial Estate, Ramsden Heath,
+        Billericay, United Kingdom, CM11 1QE.
+      </p>
+      <p>Company number: 17406830</p>
+
       <h2>Information we collect</h2>
       <p>
         We may collect information you provide through forms on this site,
@@ -65,8 +75,9 @@ export default function PrivacyPolicyPage() {
 
       <h2>Contact</h2>
       <p>
-        For privacy questions, contact us via the Contact page on
-        jaguarengines.uk.
+        For privacy questions, contact PRESTIGE AUTO ENGINEERING LTD at Unit A5
+        Windsor Road Commercial Estate, Ramsden Heath, Billericay, United Kingdom,
+        CM11 1QE, or via the Contact page on jaguarengines.uk.
       </p>
     </LegalPage>
   );
