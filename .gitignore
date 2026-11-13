@@ -31,6 +31,9 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # env files — never commit secrets
+.env
+.env.local
+.env.*
 !.env.example
 
 # vercel
