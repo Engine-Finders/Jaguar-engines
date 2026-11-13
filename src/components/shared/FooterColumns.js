@@ -61,6 +61,8 @@ export const footerColumns = [
 
 export const footerLegal = {
   copyright: "© 2026 Jaguar Reliability Guide, part of the Engine Finders network.",
+  company:
+    "PRESTIGE AUTO ENGINEERING LTD · Unit A5 Windsor Road Commercial Estate, Ramsden Heath, Billericay, United Kingdom, CM11 1QE · Company number 17406830",
   disclaimer: "Independent editorial content; not affiliated with Jaguar Land Rover.",
   links: [
     { label: "Privacy Policy", href: "/privacy-policy" },
@@ -118,6 +120,7 @@ export default function FooterColumns() {
 
       <div className="mt-6 border-t border-[var(--color-border)] pt-4">
         <p className={`text-xs ${softTextClass}`}>{footerLegal.copyright}</p>
+        <p className={`mt-1 text-xs ${softTextClass}`}>{footerLegal.company}</p>
         <p className={`mt-1 text-xs ${softerTextClass}`}>{footerLegal.disclaimer}</p>
         <ul className={`mt-2 flex flex-wrap gap-x-2 gap-y-1 text-xs ${softTextClass}`}>
           {footerLegal.links.map((link, index) => (
