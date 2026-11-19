@@ -1,10 +1,13 @@
-import { fetchSiteLeads, SITE_SOURCE } from "@/app/api/crm";
+import { fetchSiteLeadsByDb, SITE_SOURCE } from "@/app/api/crm";
 
-export async function GET() {
+export async function GET(request) {
   try {
-    const leads = await fetchSiteLeads({ limit: 200 });
+    const { searchParams } = new URL(request.url);
+    const db = searchParams.get("db") === "2" ? "2" : "1";
+    const leads = await fetchSiteLeadsByDb({ limit: 200, db });
     return Response.json({
       success: true,
+      db,
       source: SITE_SOURCE,
       count: leads.length,
       leads,

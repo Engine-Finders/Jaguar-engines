@@ -57,20 +57,22 @@ const COLUMNS = [
 export default function LeadsPage() {
   const [leads, setLeads] = useState([]);
   const [source, setSource] = useState("jaguarengines.uk");
+  const [db, setDb] = useState("1");
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
-  async function loadLeads() {
+  async function loadLeads(nextDb = db) {
     setLoading(true);
     setError("");
     try {
-      const res = await fetch("/api/leads", { cache: "no-store" });
+      const res = await fetch(`/api/leads?db=${encodeURIComponent(nextDb)}`, { cache: "no-store" });
       const data = await res.json();
       if (!res.ok || !data.success) {
         throw new Error(data.error || "Failed to load leads");
       }
       setLeads(data.leads || []);
       setSource(data.source || "jaguarengines.uk");
+      setDb(data.db === "2" ? "2" : "1");
     } catch (err) {
       setError(err.message || "Failed to load leads");
       setLeads([]);
@@ -80,7 +82,8 @@ export default function LeadsPage() {
   }
 
   useEffect(() => {
-    loadLeads();
+    loadLeads("1");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -90,16 +93,44 @@ export default function LeadsPage() {
           <h1 className="text-[28px] font-bold leading-tight md:text-[36px]">Leads</h1>
           <p className="mt-1 text-sm text-[var(--color-text-muted)]">
             Source filter: <span className="font-semibold text-[var(--color-text)]">{source}</span>
+            {" · "}
+            Database: <span className="font-semibold text-[var(--color-text)]">DB{db}</span>
           </p>
         </div>
-        <button
-          type="button"
-          onClick={loadLeads}
-          disabled={loading}
-          className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-2 text-sm font-semibold disabled:opacity-60"
-        >
-          {loading ? "Loading…" : "Refresh"}
-        </button>
+        <div className="flex flex-wrap items-center gap-2">
+          <button
+            type="button"
+            onClick={() => loadLeads("1")}
+            disabled={loading}
+            className={`rounded-md border px-4 py-2 text-sm font-semibold disabled:opacity-60 ${
+              db === "1"
+                ? "border-[var(--color-primary)] bg-[var(--color-primary)] text-white"
+                : "border-[var(--color-border)] bg-[var(--color-surface)]"
+            }`}
+          >
+            DB1
+          </button>
+          <button
+            type="button"
+            onClick={() => loadLeads("2")}
+            disabled={loading}
+            className={`rounded-md border px-4 py-2 text-sm font-semibold disabled:opacity-60 ${
+              db === "2"
+                ? "border-[var(--color-primary)] bg-[var(--color-primary)] text-white"
+                : "border-[var(--color-border)] bg-[var(--color-surface)]"
+            }`}
+          >
+            DB2
+          </button>
+          <button
+            type="button"
+            onClick={() => loadLeads(db)}
+            disabled={loading}
+            className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-2 text-sm font-semibold disabled:opacity-60"
+          >
+            {loading ? "Loading…" : "Refresh"}
+          </button>
+        </div>
       </div>
 
       {error ? (
