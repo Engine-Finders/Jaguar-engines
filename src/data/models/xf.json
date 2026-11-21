@@ -214,7 +214,7 @@
   },
   "hero": {
     "tagPill": "Jaguar • XF • 2008-2024 • 2 Generations • AJ126 V6 • AJ200D Ingenium • AJ200P",
-    "h1": "XF Engines - The Complete UK Guide",
+    "h1": "Jaguar XF Engines - Reliability, Problems & Replacement Costs",
     "subHeadline": "Every XF generation, from the 2008 X250 to the 2024 X260, covered in full - engine codes, known failures, replacement costs, and the one thing every buyer needs to know. Backed by 276 real UK XF X260 engine enquiries and 178 XF X250 enquiries in 2025 [JAG-VERIFIED].",
     "trustStrip": [
       {
@@ -240,7 +240,7 @@
     }
   },
   "ownershipVerdict": {
-    "h2": "XF - The Ownership Verdict",
+    "h2": "Jaguar XF Engine Reliability & Ownership Verdict",
     "metrics": [
       {
         "metric": "Overall Ownership Rating",
@@ -282,7 +282,7 @@
     "oneLineVerdict": "The XF is the executive saloon that finally fixed Jaguar's reliability reputation - but only if you buy the right generation, and the line is 2015."
   },
   "atAGlance": {
-    "h2": "XF at a Glance",
+    "h2": "Jaguar XF at a Glance",
     "subHeadline": "Everything you need to know about the Jaguar XF in one quick-reference overview.",
     "rows": [
       {
@@ -328,7 +328,7 @@
     ]
   },
   "generations": {
-    "h2": "XF Generations - Find Your Vehicle",
+    "h2": "Jaguar XF Generations: Compare Engine Options",
     "subHeadline": "Two distinct generations, two very different ownership stories - one you buy, one you assess carefully.",
     "cards": [
       {
@@ -370,7 +370,7 @@
     }
   },
   "engineDatabase": {
-    "h2": "XF Engine Codes - The Complete Database",
+    "h2": "Jaguar XF Engine Codes: Specifications & Reliability",
     "subHeadline": "Every engine fitted to the XF - verified codes, fuel types, power outputs, reliability ratings, and real 2025 enquiry volumes.",
     "stats": [
       {
@@ -483,7 +483,7 @@
     "dataCorrections": []
   },
   "commonProblems": {
-    "h2": "Common XF Engine Problems",
+    "h2": "Jaguar XF Engine Problems: Symptoms, Risks & Repair Options",
     "subHeadline": "The six most common XF issues by enquiry volume - what fails, which engines it affects, and what it costs to fix.",
     "stat": {
       "icon": "users",
@@ -608,7 +608,7 @@
     ]
   },
   "marketIntelligence": {
-    "h2": "XF Market Intelligence - What 454+ UK Owners Told Us in 2025",
+    "h2": "Jaguar XF Engine Market Intelligence: UK Enquiry Trends",
     "stat": {
       "value": "454+",
       "label": "Total Enquiries in 2025",
@@ -649,7 +649,7 @@
     "label": "Editorial pull-quote"
   },
   "replacementCosts": {
-    "h2": "XF Engine Replacement Costs - By Generation",
+    "h2": "Jaguar XF Engine Replacement Costs - By Generation",
     "subHeadline": "Real UK pricing for used, reconditioned and rebuilt XF engines - supply-only with labour guidance, sourced from actual Jaguar specialist quotes [JAG-QUOTE].",
     "tables": [
       {
@@ -722,7 +722,7 @@
     "labourEstimate": "Fitting an XF engine typically takes 10-20 hours depending on variant at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer) [JAG-QUOTE]."
   },
   "engineEvolution": {
-    "h2": "How the XF Engine Range Evolved - 2008 to Today",
+    "h2": "How the Jaguar XF Engine Range Evolved - 2008 to 2024",
     "subHeadline": "From launch to the final powertrains, explore how engineering, emissions and performance shaped every era of XF engines.",
     "stats": [
       {
@@ -783,7 +783,7 @@
     "footnote": "All engine reliability insights and failure patterns are based on 454+ verified XF enquiries in 2025. Data covers the UK market. [JAG-VERIFIED]"
   },
   "whoShouldBuy": {
-    "h2": "Who Should Buy an XF?",
+    "h2": "Which Jaguar XF Should You Buy? Engine & Ownership Considerations",
     "subHeadline": "Different buyers, different priorities. Here's our verdict on who the XF is perfect for - and who should think twice.",
     "proof": [
       {
@@ -849,7 +849,7 @@
     }
   },
   "calculatorCta": {
-    "h2": "Can I Repair My XF Engine - or Should I Replace It?",
+    "h2": "Jaguar XF Engine Repair vs Replacement: Costs & Options",
     "intro": "Timing chain rattle on an Ingenium diesel? Coolant system failure on an AJ126 V6? We've seen every XF failure pattern in our data - and we know exactly when to repair, when to replace, and when to walk away.",
     "smartNote": {
       "lead": "The smarter way to decide:",
@@ -908,7 +908,7 @@
     }
   },
   "trustBlock": {
-    "h2": "Why XF Owners Trust jaguarengines.uk",
+    "h2": "Why Jaguar XF Owners Trust Our Engine Data & Specialist Guidance",
     "signals": [
       {
         "icon": "📊",
@@ -933,7 +933,7 @@
     ]
   },
   "faq": {
-    "h2": "XF Frequently Asked Questions",
+    "h2": "Jaguar XF Frequently Asked Questions",
     "items": [
       {
         "id": 1,
@@ -986,7 +986,7 @@
     }
   },
   "closingActionCards": {
-    "h2": "Ready to Make a Decision?",
+    "h2": "Jaguar XF Engine Guidance & Specialist Quotes",
     "subHeadline": "Everything you need to choose with confidence.\nData. Honesty. Specialists. All in one place.",
     "cards": [
       {

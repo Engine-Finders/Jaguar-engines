@@ -142,27 +142,20 @@ export default function HomeSec1({ data }) {
           <div className="relative flex flex-col gap-3 md:gap-4">
             <div
               aria-hidden="true"
-              className="pointer-events-none absolute -bottom-[38vw] -right-3 w-[72%] md:right-0 md:-bottom-[14vw] md:w-[42%] xl:hidden"
+              className="pointer-events-none absolute -bottom-[42vw] -right-3 w-[72%] md:right-0 md:-bottom-[14vw] md:w-[42%] xl:hidden"
             >
               <Image src={car.src} alt="" width={car.width} height={car.height} className="h-auto w-full" sizes="(min-width: 768px) 42vw, 72vw" priority />
             </div>
 
-          {/* H1 hardcoded - two lines like ref */}
-          <p
-            className={`relative text-[0.68rem] font-bold uppercase tracking-[0.16em] md:text-[0.73rem] md:tracking-[0.14em] ${
-              isDark ? "text-white/55" : "text-[var(--color-text-muted)]"
-            }`}
-          >
-            The UK&apos;s Most
-          </p>
+          {/* H1 hardcoded (approved SEO copy) */}
           <h1
-            className={`relative max-w-[660px] text-[32px] font-bold leading-[0.98] tracking-normal md:max-w-[720px] md:text-[3.5rem] md:leading-[0.96] lg:text-[4rem] ${
+            className={`relative max-w-[660px] text-[30px] font-bold leading-[1.02] tracking-normal md:max-w-[640px] md:text-[2.75rem] md:leading-[1] xl:max-w-[700px] xl:text-[3.15rem] ${
               isDark ? "text-white" : "text-[var(--color-text)]"
             }`}
           >
-            Trusted <span className="text-[var(--color-chrome-bright)]">Jaguar</span>
-            <br />
-            <span className="text-[var(--color-chrome-bright)]">Ownership Guide</span>
+            Jaguar Engine Reliability,{" "}
+            <span className="text-[var(--color-chrome-bright)]">Replacement Costs&nbsp;&amp; Specialist Quotes</span>{" "}
+            in&nbsp;the&nbsp;UK
           </h1>
 
           <div className="relative">
@@ -170,7 +163,7 @@ export default function HomeSec1({ data }) {
           </div>
 
           <p
-            className={`relative max-w-[46%] text-[0.84rem] leading-[1.45] md:max-w-[52%] xl:max-w-[620px] md:text-[1.08rem] md:leading-[1.45] ${
+            className={`relative max-w-none text-[0.84rem] leading-[1.45] md:max-w-[52%] xl:max-w-[620px] md:text-[1.08rem] md:leading-[1.45] ${
               isDark ? "text-white/86" : "text-[var(--color-text-muted)]"
             }`}
             dangerouslySetInnerHTML={{ __html: data.subHeadline }}
@@ -180,7 +173,7 @@ export default function HomeSec1({ data }) {
 
           {/* Stats strip - open columns below 1280px; a frosted card on desktop, where it sits over the photo */}
           <ul
-            className={`relative mt-[42vw] grid grid-cols-4 md:mt-[16vw] md:max-w-[700px] xl:mt-0 xl:rounded-lg xl:border xl:py-1.5 xl:backdrop-blur-xl ${
+            className={`relative mt-[46vw] grid grid-cols-4 md:mt-[16vw] md:max-w-[700px] xl:mt-0 xl:rounded-lg xl:border xl:py-1.5 xl:backdrop-blur-xl ${
               isDark
                 ? "xl:border-white/14 xl:bg-[rgba(12,12,12,0.62)] xl:shadow-[0_14px_32px_rgba(0,0,0,0.45)]"
                 : "xl:border-[var(--color-border)] xl:bg-[rgba(250,250,248,0.86)] xl:shadow-[0_12px_28px_rgba(16,18,16,0.1)]"

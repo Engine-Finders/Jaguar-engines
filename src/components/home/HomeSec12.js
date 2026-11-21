@@ -187,7 +187,7 @@ export default function HomeSec12({ data }) {
         </div>
 
         <div className="relative mx-auto w-full max-w-8xl px-4 pb-3 pt-5 md:px-6 md:pb-3.5 md:pt-7 lg:px-8">
-          <div className="max-w-[720px]">
+          <div className="max-w-[720px] lg:max-w-[840px]">
             <p
               className={`text-[0.64rem] font-bold uppercase tracking-[0.14em] ${
                 isDark ? "text-white/55" : "text-[var(--color-text-muted)]"
@@ -196,12 +196,12 @@ export default function HomeSec12({ data }) {
               Trust + FAQ
             </p>
             <h2
-              className={`mt-1.5 whitespace-nowrap text-[1.55rem] font-bold leading-[0.98] sm:text-[1.85rem] md:text-[2.45rem] md:leading-[0.96] lg:text-[2.6rem] ${
+              className={`mt-1.5 text-[1.55rem] font-bold leading-[0.98] sm:text-[1.85rem] md:text-[2.45rem] md:leading-[0.96] lg:text-[2.6rem] ${
                 isDark ? "text-white" : "text-[var(--color-text)]"
               }`}
             >
-              Why Jaguar Owners{" "}
-              <span className="text-[var(--color-chrome-bright)]">Trust This Site</span>
+              Why Jaguar Owners Trust{" "}
+              <span className="text-[var(--color-chrome-bright)]">Our Engine Data &amp; Specialist Guidance</span>
             </h2>
             <div className="mt-2.5">
               <MStripe />

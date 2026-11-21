@@ -298,7 +298,7 @@
   },
   "hero": {
     "tagPill": "Jaguar E-Pace X540 • Compact SUV • 2017-2024",
-    "h1": "Jaguar E-Pace X540 Engines - The Complete UK Guide",
+    "h1": "Jaguar E-Pace X540 Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the E-Pace X540 - from the 2.0-litre Ingenium diesel four to the 1.5-litre three-cylinder P300e plug-in hybrid. Real UK costs and honest reliability data for Jaguar's second-ever SUV. Backed by 140+ real UK X540 enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
       {
@@ -325,7 +325,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Jaguar E-Pace X540 Engine Codes - The Complete Database",
+    "h2": "Jaguar E-Pace X540 Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every engine fitted to the E-Pace X540 - Ingenium petrols, diesels, mild hybrids, and the P300e plug-in hybrid with its 1.5-litre three-cylinder.",
     "columns": [],
     "engines": [],
@@ -336,12 +336,13 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Jaguar E-Pace X540 - Overview",
+    "h2": "Jaguar X540 Overview: Engine Range, Design & Key Facts",
     "intro": "The X540 is Jaguar's second production SUV, revealed on 13 July 2017. Built on JLR's PTA platform, it shares its underpinnings with the second-generation Range Rover Evoque. The E-Pace was offered with a range of 2.0-litre Ingenium four-cylinder engines - both petrol and diesel - with a significant 2020 facelift introducing mild-hybrid technology across most of the range, a 1.5-litre three-cylinder petrol, and the brand's first plug-in hybrid in this segment: the P300e.",
     "keyFacts": "Platform: JLR PTA (Premium Transverse Architecture) • Predecessor: None (first-generation E-Pace) • Successor: None (current generation, production ended 2024) • Sibling body styles in this generation: None (single body style).",
     "marketIntelligenceLine": "The X540 E-Pace generated 140+ real UK engine enquiries in 2025 [EM-VERIFIED], concentrated on the 2.0-litre diesel and petrol variants as the model reaches the used market."
   },
   "bestWorstEngines": {
+    "h2": "Jaguar E-Pace X540 Engine Reliability: Best Choices & Known Risks",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -382,7 +383,7 @@
     ]
   },
   "ownershipEconomics": {
-    "h2": "Jaguar E-Pace X540 - Ownership Economics",
+    "h2": "Jaguar E-Pace X540 Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -453,6 +454,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Jaguar E-Pace X540 Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -569,7 +571,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "X540 Engine Replacement Costs - By Engine and Condition",
+    "h2": "Jaguar E-Pace X540 Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -647,6 +649,7 @@
     "note": "No Generation variance from the EM_Proprietary_Data baseline figures - X540 E-Pace shares the PTA platform with the Range Rover Evoque L551, with similar engine-bay access, so costs are inherited directly per the Authority Model, with no divergence note required."
   },
 "coreVariants": {
+  "h2": "Jaguar X540 Petrol, Diesel & Hybrid Engine Variants",
   "dieselVariants": [
     {
       "name": "D150",
@@ -690,6 +693,7 @@
     "scopeNote": "All variants listed are E-Pace X540 only. P160 and P300e use the 1.5-litre three-cylinder Ingenium AJ150; P300e is the plug-in hybrid with an 80 kW rear-axle electric motor. D165 and D200 are facelift-only variants (2020-2024)."
   },
   "marketIntelligence": {
+    "h2": "Jaguar E-Pace X540 Engine Market Intelligence: Enquiries & Replacement Costs",
     "mostRequestedEngines": [
       "1. D180/D200 (largest share of diesel enquiries)",
       "2. P250",
@@ -731,6 +735,7 @@
     ]
   },
   "faq": {
+    "h2": "Jaguar X540 Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -785,7 +790,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Jaguar E-Pace X540 Owners Trust JaguarEngine.uk",
+    "h2": "Jaguar E-Pace X540 Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted X540 Engine Suppliers",

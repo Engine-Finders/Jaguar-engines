@@ -262,7 +262,7 @@
   },
   "hero": {
     "tagPill": "Jaguar S-Type X200 • Saloon • 1999-2008",
-    "h1": "Jaguar S-Type X200 Engines - The Complete UK Guide",
+    "h1": "Jaguar S-Type X200 Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the S-Type X200 - from the 3.0-litre <a href='https://jaguarengines.uk/engine/aj-v6-petrol'>AJ-V6</a> to the 4.0-litre V8, the supercharged 4.2 S-Type R, and the PSA-developed 2.7-litre diesel. Real UK costs, honest failure data, and Jaguar's Ford-era revival. Backed by 70+ real UK X200 enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
       {
@@ -289,7 +289,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Jaguar S-Type X200 Engine Codes - The Complete Database",
+    "h2": "Jaguar S-Type X200 Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every engine fitted to the S-Type X200 specifically - from the launch 3.0 V6 and 4.0 V8 to the later 2.5 V6, 4.2 V8, supercharged S-Type R and the 2.7 diesel.",
     "columns": [
       "Engine Code",
@@ -384,12 +384,13 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Jaguar S-Type X200 - Overview",
+    "h2": "Jaguar X200 Overview: Engine Range, Design & Key Facts",
     "intro": "The S-Type (project code X200) marked Jaguar's return to the mid-size executive sector, launched at the 1998 British International Motor Show and entering UK sales in 1999. Built at Castle Bromwich, it was the first all-new saloon introduced after Ford's 1989 takeover. The engine range launched with Jaguar's AJ-V6 (3.0 litres) and AJ-V8 (4.0 litres). A 2002 revision brought a 2.5-litre V6 and replaced the 4.0 with a 4.2-litre V8; the supercharged 4.2 S-Type R followed. A 2004 facelift added a 2.7-litre diesel developed with PSA, and a final 2007 revision brought further updates before the XF replaced it in 2008.",
     "keyFacts": "Platform: Ford DEW98 (shared with Lincoln LS) • Predecessor: N/A (return to segment) • Successor: Jaguar XF (X250) • Sibling body styles in this generation: N/A - X200 is the sole body style.",
     "marketIntelligenceLine": "The S-Type X200 generated 70 real UK engine enquiries in 2025 [EM-VERIFIED], concentrated on the 3.0 V6 and 2.7 diesel as these Ford-era Jaguars enter affordable-classic territory."
   },
   "bestWorstEngines": {
+    "h2": "Jaguar S-Type X200 Engine Reliability: Best Choices & Known Risks",
     "items": [
       {
         "slot": "Best Petrol Overall",
@@ -424,7 +425,7 @@
     ]
   },
   "ownershipEconomics": {
-    "h2": "Jaguar S-Type X200 - Ownership Economics",
+    "h2": "Jaguar S-Type X200 Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -490,6 +491,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Jaguar S-Type X200 Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -578,7 +580,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "X200 Engine Replacement Costs - By Engine and Condition",
+    "h2": "Jaguar S-Type X200 Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -640,6 +642,7 @@
     "note": "No Generation variance from the Engine Page baseline - no dedicated Engine Pages exist for these families yet, so baseline figures are drawn from the EM_Proprietary_Data Table A. Labour hours estimated at 10-14 hours for V6 and diesel engines, 12-16 for V8s, and 14-18 for the supercharged V8 due to additional complexity."
   },
 "coreVariants": {
+  "h2": "Jaguar X200 Petrol & Diesel Engine Variants",
   "dieselVariants": [
     {
       "name": "2.7 D",
@@ -671,6 +674,7 @@
   "scopeNote": "All variants listed are S-Type X200 only. The S-Type R is the supercharged 4.2-litre V8 performance flagship. The 4.0 V8 was produced 1999-2002; the 4.2 V8 replaced it from 2002. The 2.5 V6 was introduced in 2002. The 2.7 diesel joined in 2004."
 },
   "marketIntelligence": {
+    "h2": "Jaguar S-Type X200 Engine Market Intelligence: Enquiries & Replacement Costs",
     "mostRequestedEngines": [
       "1. 3.0 V6 (AJ-V6) - 560 requests [EM-VERIFIED]",
       "2. 2.7 Diesel (AJD) - 590 requests [EM-VERIFIED]",
@@ -712,6 +716,7 @@
     ]
   },
   "faq": {
+    "h2": "Jaguar X200 Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -766,7 +771,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Jaguar S-Type Owners Trust JaguarEngine.uk",
+    "h2": "Jaguar S-Type X200 Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted X200 Engine Suppliers",

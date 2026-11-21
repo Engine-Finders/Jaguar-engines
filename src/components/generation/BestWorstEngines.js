@@ -159,10 +159,18 @@ function SectionHeader({ data, isDark, sectionBg }) {
       </div>
 
       <div className="relative mx-auto w-full max-w-8xl px-4 pb-3 pt-5 md:px-8 md:pb-4 md:pt-6">
-        <h2
-          className={`tracking-normal text-[var(--color-text)] ${sectionH2} ${isDark ? "text-white" : ""}`}
-          dangerouslySetInnerHTML={{ __html: heading }}
-        />
+        {title.main && title.accent ? (
+          <h2 className={`max-w-[650px] tracking-normal text-[var(--color-text)] ${sectionH2} ${isDark ? "text-white" : ""}`}>
+            <span dangerouslySetInnerHTML={{ __html: title.main }} />{" "}
+            <br />
+            <span className="text-[var(--color-chrome-bright)]" dangerouslySetInnerHTML={{ __html: title.accent }} />
+          </h2>
+        ) : (
+          <h2
+            className={`tracking-normal text-[var(--color-text)] ${sectionH2} ${isDark ? "text-white" : ""}`}
+            dangerouslySetInnerHTML={{ __html: heading }}
+          />
+        )}
         <div className="mt-2.5">
           <MStripe />
         </div>

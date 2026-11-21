@@ -238,7 +238,7 @@
   },
   "hero": {
     "tagPill": "Jaguar XJ Series 3 • Saloon • 1979-1992",
-    "h1": "Jaguar XJ Series 3 Engines - The Complete UK Guide",
+    "h1": "Jaguar XJ Series 3 Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the third-series XJ - from the carburetted 3.4-litre straight-six to the 5.3-litre V12 and the rare 6.0-litre HE. Real UK costs, honest classic ownership data, and the V12's legendary smoothness.",
     "trustStrip": [
       {
@@ -265,7 +265,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Jaguar XJ Series 3 Engine Codes - The Complete Database",
+    "h2": "Jaguar XJ Series 3 Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every engine fitted to the Series 3 - from the 3.4-litre and 4.2-litre <a href='https://jaguarengines.uk/engine/xk-straight-six'>XK straight-sixes</a> to the 5.3-litre V12 and the late-production 6.0-litre.",
     "columns": [
       "Engine Code",
@@ -392,12 +392,13 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Jaguar XJ Series 3 - Overview",
+    "h2": "Jaguar XJ Series 3 Overview: Engine Range, Design & Key Facts",
     "intro": "The Series 3 is the final evolution of the first-generation Jaguar XJ, launched in April 1979 with a subtle redesign by Pininfarina. Built on the long-wheelbase platform only, it introduced flush door handles, a revised roofline with increased glass area, and thicker rubber bumpers. The 6-cylinder models were produced until early 1987, while the V12 variants continued until 1992.",
     "keyFacts": "Platform: First-generation XJ (long-wheelbase only) • Predecessor: Jaguar XJ Series 2 • Successor: Jaguar XJ40 (6-cylinder) / XJ12 continued until 1992 • Sibling body styles in this generation: 4-door saloon only",
     "marketIntelligenceLine": "As a classic model now over 30 years old, the Series 3 is a niche enthusiast vehicle - the V12 models remain the most sought-after, while the 4.2-litre six-cylinder is the most accessible entry point."
   },
   "bestWorstEngines": {
+    "h2": "Jaguar XJ Series 3 Engine Reliability: Best Choices & Known Risks",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -408,7 +409,7 @@
     ]
   },
   "ownershipEconomics": {
-    "h2": "Jaguar XJ Series 3 - Ownership Economics",
+    "h2": "Jaguar XJ Series 3 Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -479,6 +480,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Jaguar XJ Series 3 Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -522,7 +524,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "Series 3 Engine Replacement Costs - By Engine and Condition",
+    "h2": "Jaguar XJ Series 3 Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -576,6 +578,7 @@
     "note": ""
   },
 "coreVariants": {
+  "h2": "Jaguar XJ Series 3 Engine Variants & Powertrain Options",
   "dieselVariants": [],
   "petrolVariants": [
     {
@@ -609,6 +612,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "Jaguar XJ Series 3 Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -663,7 +667,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Jaguar XJ Series 3 Owners Trust JaguarEngine.uk",
+    "h2": "Jaguar XJ Series 3 Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted Series 3 Engine Suppliers",

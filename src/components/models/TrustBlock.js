@@ -108,8 +108,8 @@ export default function TrustBlock({ data }) {
           ) : null}
 
           <div className="px-4 pb-4 pt-6 sm:px-6 lg:max-w-[calc(100%-var(--tr-scene-w)+60px)] lg:px-[var(--tr-card-px)] lg:pb-[calc(var(--tr-item-py)*0.6)] lg:pt-[var(--tr-card-pt)]">
-            <h2 className={`model-trust-title ${tones.text}`}>
-              <span className="block" dangerouslySetInnerHTML={{ __html: typeset(title.lead) }} />
+            <h2 className={`model-trust-title lg:max-w-[560px] ${tones.text}`}>
+              <span className="block" dangerouslySetInnerHTML={{ __html: typeset(title.lead) }} />{" "}
               {title.trust ? (
                 <span className="block">
                   {title.trust} <span className={tones.accent}>{title.accent}</span>

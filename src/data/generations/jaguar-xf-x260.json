@@ -262,7 +262,7 @@
   },
   "hero": {
     "tagPill": "Jaguar XF X260 • Saloon / Estate • 2015-2024",
-    "h1": "Jaguar XF X260 Engines - The Complete UK Guide",
+    "h1": "Jaguar XF X260 Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the second-generation XF X260 - from the 2.0-litre Ingenium diesel to the 3.0-litre supercharged V6 petrol. Real UK replacement costs, honest failure data, and the timing-chain risk that still haunts early Ingenium units. Backed by 276+ real UK X260 enquiries in 2025 [JAG-VERIFIED].",
     "trustStrip": [
       {
@@ -289,7 +289,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Jaguar XF X260 Engine Codes - The Complete Database",
+    "h2": "Jaguar XF X260 Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every Ingenium four-cylinder and V6 engine fitted to the second-generation XF X260 - from the entry diesel to the fire-breathing supercharged V6.",
     "columns": [
       "Engine Code",
@@ -416,12 +416,13 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Jaguar XF X260 - Overview",
+    "h2": "Jaguar X260 Overview: Engine Range, Design & Key Facts",
     "intro": "The X260 is the second-generation Jaguar XF, launched in September 2015 and produced until mid-2024. It succeeded the X250 (2008-2015) with 83% new parts, a 51 mm longer wheelbase, and significantly improved interior space. The X260 introduced Jaguar Land Rover's all-new Ingenium engine family - 2.0-litre four-cylinder petrol and diesel units - alongside carryover 3.0-litre V6 options: a twin-turbo diesel and a supercharged petrol. A subtle facelift arrived in 2020, and production ceased in 2024 with no direct successor.",
     "keyFacts": "Platform: JLR D7a (aluminium-intensive, rear-wheel-drive architecture) • Predecessor: Jaguar XF X250 (2008-2015) • Successor: None (XF line discontinued in 2024) • Sibling body styles in this generation: Saloon (4-door), Sportbrake (5-door estate)",
     "marketIntelligenceLine": "The X260 XF generated 276 real UK engine enquiries in 2025 [JAG-VERIFIED], concentrated on the 2.0-litre Ingenium diesel as these units exit warranty and timing-chain issues become a major concern for owners."
   },
   "bestWorstEngines": {
+    "h2": "Jaguar XF X260 Engine Reliability: Best Choices & Known Risks",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -462,7 +463,7 @@
     ]
   },
   "ownershipEconomics": {
-    "h2": "Jaguar XF X260 - Ownership Economics",
+    "h2": "Jaguar XF X260 Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -533,6 +534,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Jaguar XF X260 Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -649,7 +651,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "X260 Engine Replacement Costs - By Engine and Condition",
+    "h2": "Jaguar XF X260 Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -703,6 +705,7 @@
     "note": ""
   },
 "coreVariants": {
+  "h2": "Jaguar X260 Engine Variants & Powertrain Options",
   "dieselVariants": [
     {
       "name": "20d",
@@ -717,6 +720,7 @@
   "scopeNote": "All variants listed are X260 body code only - the second-generation XF produced from 2015 to 2024 in both saloon and Sportbrake estate body styles. The first-generation X250 (2008-2015) is covered on its own Generation Page."
 },
   "marketIntelligence": {
+    "h2": "Jaguar XF X260 Engine Market Intelligence: Enquiries & Replacement Costs",
     "mostRequestedEngines": [
       "1. 2.0D / D180 (2.0-litre Ingenium diesel)",
       "2. P250 (2.0-litre petrol)",
@@ -758,6 +762,7 @@
     ]
   },
   "faq": {
+    "h2": "Jaguar X260 Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -817,7 +822,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Jaguar XF X260 Owners Trust JaguarEngine.uk",
+    "h2": "Jaguar XF X260 Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted X260 Engine Suppliers",

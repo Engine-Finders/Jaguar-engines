@@ -249,7 +249,7 @@
   },
   "hero": {
     "tagPill": "Jaguar • XJ • 1968-2019 • 9 Generations • AJ133 V8 • AJ126 V6 • AJ200D Diesel",
-    "h1": "XJ Engines - The Complete UK Guide",
+    "h1": "Jaguar XJ Engines - Reliability, Problems & Replacement Costs",
     "subHeadline": "Every XJ generation covered - from the Series 1 to the X351. Real-world reliability data on the <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> 5.0 V8, the AJ126 3.0 V6 supercharged, and the 2.7/3.0 TDV6 diesels. Honest economics on when to repair, when to replace, and when to walk away. Backed by 1,700+ real UK Jaguar enquiries in 2025 [JAG-VERIFIED].",
     "trustStrip": [
       {
@@ -275,7 +275,7 @@
     }
   },
   "ownershipVerdict": {
-    "h2": "XJ - The Ownership Verdict",
+    "h2": "Jaguar XJ Engine Reliability & Ownership Verdict",
     "metrics": [
       {
         "metric": "Overall Ownership Rating",
@@ -317,7 +317,7 @@
     "oneLineVerdict": "The XJ is the keeper's Jaguar - its flagship values absorb even the costliest V8 replacements, but pre-2013 cars demand a chain-tensioner check before you commit."
   },
   "atAGlance": {
-    "h2": "XJ at a Glance",
+    "h2": "Jaguar XJ at a Glance",
     "subHeadline": "Everything you need to know about the Jaguar XJ in one quick-reference overview.",
     "rows": [
       {
@@ -363,7 +363,7 @@
     ]
   },
   "generations": {
-    "h2": "XJ Generations - Find Your Vehicle",
+    "h2": "Jaguar XJ Generations: Compare Engine Options",
     "subHeadline": "Nine generations of Jaguar's flagship - but the data-led choice for most buyers is the X351. Here's why.",
     "cards": [
       {
@@ -482,7 +482,7 @@
     }
   },
   "engineDatabase": {
-    "h2": "XJ Engine Codes - The Complete Database",
+    "h2": "Jaguar XJ Engine Codes: Specifications & Reliability",
     "subHeadline": "Every engine fitted to the XJ, verified against manufacturer data and UK specialist sources.",
     "stats": [
       {
@@ -618,7 +618,7 @@
     "dataCorrections": []
   },
   "commonProblems": {
-    "h2": "Common XJ Engine Problems",
+    "h2": "Jaguar XJ Engine Problems: Symptoms, Risks & Repair Options",
     "subHeadline": "The six most common XJ engine failures reported by UK owners and specialists.",
     "stat": {
       "icon": "users",
@@ -743,7 +743,7 @@
     ]
   },
   "marketIntelligence": {
-    "h2": "XJ Market Intelligence - What 325 UK Owners Told Us in 2025",
+    "h2": "Jaguar XJ Engine Market Intelligence: UK Enquiry Trends",
     "stat": {
       "value": "325+",
       "label": "Total Enquiries in 2025",
@@ -782,7 +782,7 @@
     "label": "Editorial pull-quote"
   },
   "replacementCosts": {
-    "h2": "XJ Engine Replacement Costs - By Generation",
+    "h2": "Jaguar XJ Engine Replacement Costs - By Generation",
     "subHeadline": "Real UK pricing for used, reconditioned and rebuilt XJ engines - supply-only, with independent labour guidance.",
     "tables": [
       {
@@ -808,7 +808,7 @@
     }
   },
   "engineEvolution": {
-    "h2": "How the XJ Engine Range Evolved - 1968 to Today",
+    "h2": "How the Jaguar XJ Engine Range Evolved - 1968 to 2019",
     "subHeadline": "From launch to the final powertrains, explore how engineering, emissions and performance shaped every era of XJ engines.",
     "stats": [
       {
@@ -876,7 +876,7 @@
     "footnote": "All engine reliability insights and failure patterns are based on 1,700+ verified XJ enquiries in 2025. Data covers the UK market. [JAG-VERIFIED]"
   },
   "whoShouldBuy": {
-    "h2": "Who Should Buy an XJ?",
+    "h2": "Which Jaguar XJ Should You Buy? Engine & Ownership Considerations",
     "subHeadline": "Different buyers, different priorities. Here's our verdict on who the XJ is perfect for - and who should think twice.",
     "proof": [
       {
@@ -942,7 +942,7 @@
     }
   },
   "calculatorCta": {
-    "h2": "Can I Repair My XJ Engine - or Should I Replace It?",
+    "h2": "Jaguar XJ Engine Repair vs Replacement: Costs & Options",
     "intro": "The AJ133's timing chain tensioner is the XJ's defining fault. If you hear a rattle on start-up, get it inspected immediately - but don't assume the worst. The XJ's value means a full engine replacement is often viable.",
     "smartNote": {
       "lead": "The smarter way to decide:",
@@ -1001,7 +1001,7 @@
     }
   },
   "trustBlock": {
-    "h2": "Why XJ Owners Trust jaguarengines.uk",
+    "h2": "Why Jaguar XJ Owners Trust Our Engine Data & Specialist Guidance",
     "signals": [
       {
         "icon": "📊",
@@ -1026,7 +1026,7 @@
     ]
   },
   "faq": {
-    "h2": "XJ Frequently Asked Questions",
+    "h2": "Jaguar XJ Frequently Asked Questions",
     "items": [
       {
         "id": 1,
@@ -1079,7 +1079,7 @@
     }
   },
   "closingActionCards": {
-    "h2": "Ready to Make a Decision?",
+    "h2": "Jaguar XJ Engine Guidance & Specialist Quotes",
     "subHeadline": "Everything you need to choose with confidence.\nData. Honesty. Specialists. All in one place.",
     "cards": [
       {

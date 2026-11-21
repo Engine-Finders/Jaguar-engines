@@ -9,6 +9,7 @@ import HomeIcon from "@/components/home/homeIcons";
 import { engineImageFor } from "@/components/shared/carImage";
 import SectionQuoteCta from "@/components/shared/SectionQuoteCta";
 import { outsideTags } from "@/components/models/outsideTags";
+import { modelFromHeading, splitHeading } from "@/components/models/seoHeading";
 
 /*
  * Model page "Common Problems" (section 6), built from the 1536px brand reference.
@@ -73,9 +74,8 @@ function typeset(text = "") {
 
 // "Common E-Pace Engine Problems" -> "Common E-Pace" + "Engine Problems" (accent), as in the reference.
 function splitTitle(title = "") {
-  const clean = cleanText(title);
-  const match = clean.match(/^(.*?)\s+((?:Engine|Drive Unit|EV)?\s*Problems)$/i);
-  return match ? { main: match[1], accent: match[2].trim() } : { main: clean, accent: "" };
+  const { lead, accent } = splitHeading(cleanText(title));
+  return { main: lead, accent };
 }
 
 // "AJ200D / 204DTD Timing Chain Tensioner Wear" -> codes on line one, the fault on line two (reference).
@@ -245,7 +245,9 @@ export default function CommonProblems({ data }) {
   const isDark = theme === "dark";
   const tones = palette(isDark);
   const title = splitTitle(data.h2);
-  const modelName = String(data.h2 || "").match(/Common\s+(?:Jaguar\s+)?(.+?)\s+(?:Engine\s+|Drive Unit\s+|EV\s+)?Problems/i)?.[1]?.trim() || "Jaguar";
+  // Old wording ("Common E-Pace Engine Problems") first, then the approved SEO wording.
+  const modelName =
+    String(data.h2 || "").match(/Common\s+(?:Jaguar\s+)?(.+?)\s+(?:Engine\s+|Drive Unit\s+|EV\s+)?Problems/i)?.[1]?.trim() || modelFromHeading(data.h2) || "Jaguar";
 
   return (
     <section id="common-problems" className="model-problems relative overflow-hidden bg-[var(--color-page)] text-[var(--color-text)]">

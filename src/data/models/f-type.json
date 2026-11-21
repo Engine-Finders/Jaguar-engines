@@ -207,7 +207,7 @@
   },
   "hero": {
     "tagPill": "JAGUAR • F-TYPE • 2013-2024 • 1 Generation • AJ126 V6 • AJ133 V8 • AJ20D6",
-    "h1": "F-Type Engines - The Complete UK Guide",
+    "h1": "Jaguar F-Type Engines - Reliability, Problems & Replacement Costs",
     "subHeadline": "Every F-Type engine, from the supercharged AJ126 V6 to the thunderous <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> V8 and the late <a href='https://jaguarengines.uk/engine/aj20d6'>AJ20D6</a> straight-six. All generations, real UK reliability data, failure patterns and honest replacement economics - backed by 50+ genuine UK F-Type enquiries in 2025 [JAG-VERIFIED].",
     "trustStrip": [
       {
@@ -233,7 +233,7 @@
     }
   },
   "ownershipVerdict": {
-    "h2": "F-Type - The Ownership Verdict",
+    "h2": "Jaguar F-Type Engine Reliability & Ownership Verdict",
     "metrics": [
       {
         "metric": "Overall Ownership Rating",
@@ -275,7 +275,7 @@
     "oneLineVerdict": "The F-Type is Jaguar's most compelling modern sports car - but buy a 2019+ car with the straight-six if you want the cleanest reliability record, and budget for cooling-system maintenance on any V6 or V8."
   },
   "atAGlance": {
-    "h2": "F-Type at a Glance",
+    "h2": "Jaguar F-Type at a Glance",
     "subHeadline": "Everything you need to know about the Jaguar F-Type in one quick-reference overview.",
     "rows": [
       {
@@ -321,7 +321,7 @@
     ]
   },
   "generations": {
-    "h2": "F-Type - One Generation, Three Powertrain Eras",
+    "h2": "Jaguar F-Type Engine Variants & Powertrains",
     "subHeadline": "The X152 ran from 2013 to 2024 with one chassis but three distinct engine families - choose by reliability as much as soundtrack.",
     "cards": [
       {
@@ -363,7 +363,7 @@
     }
   },
   "engineDatabase": {
-    "h2": "F-Type Engine Codes - The Complete Database",
+    "h2": "Jaguar F-Type Engine Codes: Specifications & Reliability",
     "subHeadline": "Every engine ever fitted to the Jaguar F-Type X152 - verified against OEM sources.",
     "stats": [
       {
@@ -456,7 +456,7 @@
     "dataCorrections": []
   },
   "commonProblems": {
-    "h2": "Common F-Type Engine Problems",
+    "h2": "Jaguar F-Type Engine Problems: Symptoms, Risks & Repair Options",
     "subHeadline": "The six most frequent F-Type failure patterns - what to check, which engines they affect, and what they cost.",
     "stat": {
       "icon": "users",
@@ -581,7 +581,7 @@
     ]
   },
   "marketIntelligence": {
-    "h2": "F-Type Market Intelligence - What 50+ UK Owners Told Us in 2025",
+    "h2": "Jaguar F-Type Engine Market Intelligence: UK Enquiry Trends",
     "stat": {
       "value": "50+",
       "label": "Total Enquiries in 2025",
@@ -622,7 +622,7 @@
     "label": "Editorial pull-quote"
   },
   "replacementCosts": {
-    "h2": "F-Type Engine Replacement Costs - By Generation",
+    "h2": "Jaguar F-Type Engine Replacement Costs - By Engine",
     "subHeadline": "Real UK pricing for every F-Type engine - used, reconditioned and rebuilt, supply-only, with independent labour guidance.",
     "tables": [
       {
@@ -702,7 +702,7 @@
     }
   },
   "engineEvolution": {
-    "h2": "How the F-Type Engine Range Evolved - 2013 to Today",
+    "h2": "How the Jaguar F-Type Engine Range Evolved - 2013 to 2024",
     "subHeadline": "From launch to the final powertrains, explore how engineering, emissions and performance shaped every era of F-Type engines.",
     "stats": [
       {
@@ -763,7 +763,7 @@
     "footnote": "All engine reliability insights and failure patterns are based on 50+ verified F-Type enquiries in 2025. Data covers the UK market. [JAG-VERIFIED]"
   },
   "whoShouldBuy": {
-    "h2": "Who Should Buy an F-Type?",
+    "h2": "Which Jaguar F-Type Should You Buy? Engine & Ownership Considerations",
     "subHeadline": "Different buyers, different priorities. Here's our verdict on who the F-Type is perfect for - and who should think twice.",
     "proof": [
       {
@@ -829,7 +829,7 @@
     }
   },
   "calculatorCta": {
-    "h2": "Can I Repair My F-Type Engine - or Should I Replace It?",
+    "h2": "Jaguar F-Type Engine Repair vs Replacement: Costs & Options",
     "intro": "The F-Type's AJ126 V6 cooling-system failures are the most common repair - if the plastic crossover pipes have cracked and you've caught it early, a repair is usually viable. If it has overheated and warped the heads, replacement is often more cost-effective. The AJ133 V8 follows the same logic - cooling system repairs are routine, but a full rebuild is serious money.",
     "smartNote": {
       "lead": "The smarter way to decide:",
@@ -888,7 +888,7 @@
     }
   },
   "trustBlock": {
-    "h2": "Why F-Type Owners Trust JaguarEngine.uk",
+    "h2": "Why Jaguar F-Type Owners Trust Our Engine Data & Specialist Guidance",
     "signals": [
       {
         "icon": "📊",
@@ -913,7 +913,7 @@
     ]
   },
   "faq": {
-    "h2": "F-Type Frequently Asked Questions",
+    "h2": "Jaguar F-Type Frequently Asked Questions",
     "items": [
       {
         "id": 1,
@@ -966,7 +966,7 @@
     }
   },
   "closingActionCards": {
-    "h2": "Ready to Make a Decision?",
+    "h2": "Jaguar F-Type Engine Guidance & Specialist Quotes",
     "subHeadline": "Everything you need to choose with confidence.\nData. Honesty. Specialists. All in one place.",
     "cards": [
       {

@@ -222,14 +222,14 @@ export default async function CatchAllPage({ params }) {
         <GenProblems
           data={data.commonProblems}
           contextLabel={String(data.hero?.h1 || "")
-            .replace(/\s+Engines?\s*-.*$/i, "")
+            .replace(/\s+Engines?(?:\s*-|\s+Replacement:).*$/i, "")
             .replace(/^Jaguar\s+/i, "")
             .trim()}
         />
         <GenReplacementCosts
           data={data.replacementCosts}
           contextLabel={String(data.hero?.h1 || "")
-            .replace(/\s+Engines?\s*-.*$/i, "")
+            .replace(/\s+Engines?(?:\s*-|\s+Replacement:).*$/i, "")
             .replace(/^Jaguar\s+/i, "")
             .trim()}
         />
@@ -241,7 +241,7 @@ export default async function CatchAllPage({ params }) {
         <GenTrustCta
           data={data.trustCta}
           contextLabel={String(data.hero?.h1 || "")
-            .replace(/\s+Engines?\s*-.*$/i, "")
+            .replace(/\s+Engines?(?:\s*-|\s+Replacement:).*$/i, "")
             .replace(/^Jaguar\s+/i, "")
             .trim()}
         />

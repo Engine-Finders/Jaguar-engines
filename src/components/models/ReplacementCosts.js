@@ -8,6 +8,7 @@ import HomeIcon from "@/components/home/homeIcons";
 import OpenQuoteButton from "@/components/shared/OpenQuoteButton";
 import { carImageFor } from "@/components/shared/carImage";
 import { outsideTags } from "@/components/models/outsideTags";
+import { splitHeading } from "@/components/models/seoHeading";
 import shared from "@/data/shared/replacementCosts.json";
 
 /*
@@ -41,8 +42,8 @@ function typeset(text = "") {
 }
 
 function splitTitle(title = "") {
-  const match = cleanText(title).match(/^(.*?)\s+[-–—]\s+(.*)$/);
-  return match ? { main: `${match[1]} —`, accent: match[2] } : { main: cleanText(title), accent: "" };
+  const { lead, accent } = splitHeading(cleanText(title));
+  return { main: lead, accent };
 }
 
 // "E-Pace X540 (2017-Present)" + "All Engines" -> name "E-Pace X540", years "2017 – Present", note "(All Engines)"
@@ -330,7 +331,7 @@ export default function ReplacementCosts({ data }) {
         <div className="flex flex-col gap-5 xl:flex-row xl:items-start xl:justify-between xl:gap-10">
           <div className="min-w-0 xl:pt-[calc(var(--rc-title)*0.35)]">
             <h2 className={`model-costs-title ${tones.text}`}>
-              <span className="block" dangerouslySetInnerHTML={{ __html: title.main }} />
+              <span className="block" dangerouslySetInnerHTML={{ __html: title.main }} />{" "}
               {title.accent ? <span className={`block ${tones.accent}`} dangerouslySetInnerHTML={{ __html: title.accent }} /> : null}
             </h2>
             {data.subHeadline ? (

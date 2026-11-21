@@ -1483,3 +1483,11 @@ main h2.model-close-title {
 .engine-code-weight {
   -webkit-text-stroke: 0.3px currentColor;
 }
+
+/* Homepage, phones: the longer SEO headings run across the header photos, so a soft halo in the page
+   colour keeps the silver accent words readable over the image. */
+@media (max-width: 767px) {
+  .home-page h2 {
+    text-shadow: 0 0 14px var(--color-page), 0 0 6px var(--color-page), 0 0 2px var(--color-page);
+  }
+}

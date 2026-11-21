@@ -40,7 +40,7 @@ function splitTitle(title = "") {
   if (!match) return { lines: [cleanText(title)], accent: "" };
   const words = match[1].split(" ");
   const last = words.pop();
-  return { lines: [words.join(" "), `${last} —`], accent: match[2] };
+  return { lines: [words.join(" "), `${last} –`], accent: match[2] };
 }
 
 // "Launch - Early Ingenium" -> ["Launch —", "Early Ingenium"] (two lines, as in the reference)

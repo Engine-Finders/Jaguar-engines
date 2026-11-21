@@ -256,7 +256,7 @@
   },
   "hero": {
     "tagPill": "Jaguar XJ XJ40 • Full-Size Luxury Saloon • 1986-1994",
-    "h1": "Jaguar XJ XJ40 Engines - The Complete UK Guide",
+    "h1": "Jaguar XJ40 Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the XJ40 - from the 2.9-litre <a href='https://jaguarengines.uk/engine/aj6-aj16'>AJ6</a> six to the 6.0-litre V12 that closed the generation. Real UK costs and honest reliability data for the XJ that replaced the legendary Series III. Backed by 120+ real UK XJ40 enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
       {
@@ -283,7 +283,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Jaguar XJ XJ40 Engine Codes - The Complete Database",
+    "h2": "Jaguar XJ40 Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every engine fitted to the XJ40 - the AJ6 straight-six family in 2.9, 3.2, 3.6 and 4.0-litre forms, plus the 6.0-litre V12 that arrived in 1993.",
     "columns": [
       "Engine Code",
@@ -366,12 +366,13 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Jaguar XJ XJ40 - Overview",
+    "h2": "Jaguar XJ40 Overview: Engine Range, Design & Key Facts",
     "intro": "The XJ40 is the second generation of the Jaguar XJ, unveiled on 8 October 1986 as the replacement for the Series III. Designed under the leadership of George Thomson and Roger Zrimec, it introduced a more aerodynamic, squared-off design and featured Jaguar's new AJ6 straight-six engine - a four-valve, twin overhead cam design that replaced the classic XK engine in Jaguar's saloon range. Initially offered with 2.9-litre and 3.6-litre AJ6 engines, the range expanded in 1990 with a 4.0-litre (replacing the 3.6) and in 1991 with a 3.2-litre (replacing the 2.9). The generation closed with the 6.0-litre V12-powered XJ12 and Daimler Double Six (model code XJ81), introduced in February 1993.",
     "keyFacts": "Platform: Jaguar XJ40 (XJ81 for V12) • Predecessor: XJ Series III • Successor: X300 • Sibling body styles: None (single 4-door saloon body style).",
     "marketIntelligenceLine": "The XJ40 generated 120+ real UK engine enquiries in 2025 [EM-VERIFIED], concentrated on the 3.6 and 4.0-litre AJ6 six-cylinder variants as classic car buyers seek the sweet spot of the range."
   },
   "bestWorstEngines": {
+    "h2": "Jaguar XJ40 Engine Reliability: Best Choices & Known Risks",
     "items": [
       {
         "slot": "Highest Risk",
@@ -400,7 +401,7 @@
     ]
   },
   "ownershipEconomics": {
-    "h2": "Jaguar XJ XJ40 - Ownership Economics",
+    "h2": "Jaguar XJ40 Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -471,6 +472,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Jaguar XJ40 Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -587,7 +589,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "XJ40 Engine Replacement Costs - By Engine and Condition",
+    "h2": "Jaguar XJ40 Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -641,6 +643,7 @@
     "note": "No Generation variance from the baseline figures - XJ40 costs are derived from specialist classic Jaguar market data, with no direct Engine Page baseline to diverge from."
   },
 "coreVariants": {
+  "h2": "Jaguar XJ40 Engine Variants & Powertrain Options",
   "dieselVariants": [],
   "petrolVariants": [
     {
@@ -659,6 +662,7 @@
   "scopeNote": "All variants listed are XJ40 only. The 6.0-litre V12 cars carry the model code XJ81 (XJ12 and Daimler Double Six) and were produced from February 1993 to October 1994. The XJR (1992-1994) featured a TWR-tuned 4.0-litre AJ6."
 },
   "marketIntelligence": {
+    "h2": "Jaguar XJ40 Engine Market Intelligence: Enquiries & Replacement Costs",
     "mostRequestedEngines": [
       "1. 4.0 AJ6 (largest share of XJ enquiries)",
       "2. 3.6 AJ6",
@@ -700,6 +704,7 @@
     ]
   },
   "faq": {
+    "h2": "Jaguar XJ40 Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -754,7 +759,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Jaguar XJ XJ40 Owners Trust JaguarEngine.uk",
+    "h2": "Jaguar XJ40 Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted XJ40 Engine Suppliers",

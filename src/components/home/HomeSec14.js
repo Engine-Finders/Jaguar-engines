@@ -73,21 +73,21 @@ export default function HomeSec14({ data }) {
         </div>
 
         <div className="relative mx-auto w-full max-w-8xl px-4 py-6 md:px-6 md:py-8 lg:px-8">
-          <div className="max-w-[640px]">
+          <div className="max-w-[640px] lg:max-w-[840px]">
             <h2
               className={`font-serif text-[2rem] font-semibold leading-[1.05] md:text-[2.85rem] md:leading-[1.02] ${
                 isDark ? "text-white" : "text-black"
               }`}
             >
-              Get the Right Answer.{" "}
-              <span className="text-[var(--color-chrome-bright)]">Not Just Any Answer.</span>
+              Get Jaguar Engine Advice&nbsp;&amp;{" "}
+              <span className="text-[var(--color-chrome-bright)]">Specialist Replacement Quotes</span>
             </h2>
             <div className="mt-3">
               <MStripe />
             </div>
             <p
-              className={`mt-3 text-[0.78rem] font-bold uppercase tracking-[0.12em] md:text-[0.84rem] ${
-                isDark ? "text-white/75" : "text-[var(--color-text-muted)]"
+              className={`mt-3 max-w-[600px] text-[0.88rem] leading-[1.45] md:text-[1rem] md:leading-[1.5] ${
+                isDark ? "text-white/80" : "text-[var(--color-text-muted)]"
               }`}
             >
               {data.subHeadline}

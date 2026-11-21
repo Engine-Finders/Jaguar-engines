@@ -9,6 +9,7 @@ import HomeIcon from "@/components/home/homeIcons";
 import CarOnBackground from "@/components/shared/CarOnBackground";
 import { carImageFor } from "@/components/shared/carImage";
 import { outsideTags } from "@/components/models/outsideTags";
+import { splitHeading } from "@/components/models/seoHeading";
 
 /*
  * Model page "Can I Repair My Engine — or Should I Replace It?" (section 11), built from the 1536px
@@ -36,9 +37,8 @@ function typeset(text = "") {
 
 // "Can I Repair My E-Pace Engine - or Should I Replace It?" -> "Can I Repair My E-Pace Engine —" / "or " + accent
 function splitTitle(title = "") {
-  const match = cleanText(title).match(/^(.*?)\s+[-–—]\s+(or)\s+(.*)$/i);
-  if (!match) return { lead: cleanText(title), or: "", accent: "" };
-  return { lead: `${match[1]} —`, or: match[2], accent: match[3] };
+  const { lead, accent } = splitHeading(cleanText(title));
+  return { lead, or: "", accent };
 }
 
 // Intro in two paragraphs, split before the sentence that points to the calculator (reference layout).
@@ -211,11 +211,13 @@ export default function CalculatorCTA({ data }) {
       <div className="mx-auto w-full max-w-[1546px] px-4 pb-12 pt-10 sm:px-6 lg:px-[var(--cc-px)] lg:pb-[var(--cc-pb)] lg:pt-[var(--cc-pt)]">
         <div className="lg:max-w-[52%]">
           <h2 className={`model-calc-title ${tones.text}`}>
-            <span className="lg:block" dangerouslySetInnerHTML={{ __html: `${title.lead} ` }} />
+            <span className={title.or ? "lg:block" : ""} dangerouslySetInnerHTML={{ __html: `${title.lead} ` }} />
             {title.or ? (
               <span>
                 {title.or} <span className={tones.accent} dangerouslySetInnerHTML={{ __html: title.accent }} />
               </span>
+            ) : title.accent ? (
+              <span className={tones.accent} dangerouslySetInnerHTML={{ __html: title.accent }} />
             ) : null}
           </h2>
           <div className={`mt-3 max-w-[520px] space-y-3 text-[15px] leading-[1.6] lg:mt-[var(--cc-desc-mt)] lg:space-y-[var(--cc-p-gap)] lg:text-[length:var(--cc-desc)] lg:leading-[var(--cc-desc-lh)] ${tones.muted}`}>

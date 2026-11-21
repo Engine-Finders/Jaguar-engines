@@ -233,7 +233,7 @@
   },
   "hero": {
     "tagPill": "Jaguar XJ X300 • Saloon • 1994-1997",
-    "h1": "Jaguar XJ X300 Engines - The Complete UK Guide",
+    "h1": "Jaguar XJ X300 Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the X300 - from the 3.2‑litre AJ16 six that delivered refined waftability, to the 4.0‑litre supercharged XJR that redefined the sporting saloon, and the 6.0‑litre V12 that marked the end of an era for Jaguar's legendary twelve‑cylinder engine. Real UK costs, honest reliability data, and the distributorless ignition that made this generation the most reliable classic XJ of them all. Backed by pattern data and Jaguar enthusiast club sources [PATTERN DATA].",
     "trustStrip": [
       {
@@ -260,7 +260,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Jaguar XJ X300 Engine Codes - The Complete Database",
+    "h2": "Jaguar XJ X300 Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every engine fitted to the X300 - from the naturally aspirated AJ16 six‑cylinder in two displacements, to the supercharged XJR, and the legendary 6.0‑litre V12 that closed the book on Jaguar's V12 era.",
     "columns": [
       "Engine Code",
@@ -363,7 +363,7 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Jaguar XJ X300 - Overview",
+    "h2": "Jaguar X300 Overview: Engine Range, Design & Key Facts",
     "intro": "The Jaguar XJ X300 is a full‑size luxury saloon manufactured by Jaguar Cars between 1994 and 1997. It was the first XJ produced entirely under Ford Motor Company ownership and can be considered an evolution of the outgoing XJ40 generation. The design placed emphasis on improved build quality, improved reliability, and a return to traditional Jaguar styling elements. Under the bonnet, the X300 offered Jaguar's revised AJ16 inline‑six in 3.2‑litre and 4.0‑litre forms, a supercharged 4.0‑litre version for the XJR, and the legendary 6.0‑litre V12 in the XJ12 and Daimler Double Six. A significant mechanical update was the switch to distributorless electronic engine management for both the six‑cylinder and V12 engines.",
     "keyFacts": "Platform: Jaguar X300 (evolution of XJ40) • Predecessor: XJ40 • Successor: X308 • Sibling body styles in this generation: None (saloon only; Daimler‑badged variants were trim‑level equivalents).",
     "marketIntelligenceLine": "The X300 is a classic car with a dedicated enthusiast following - no verified 2025 enquiry data exists for this model [PATTERN DATA]."
@@ -372,7 +372,7 @@
     "items": []
   },
   "ownershipEconomics": {
-    "h2": "Jaguar XJ X300 - Ownership Economics",
+    "h2": "Jaguar XJ X300 Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -436,6 +436,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Jaguar XJ X300 Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -524,7 +525,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "X300 Engine Replacement Costs - By Engine and Condition",
+    "h2": "Jaguar XJ X300 Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -570,6 +571,7 @@
     "note": ""
   },
 "coreVariants": {
+  "h2": "Jaguar X300 Engine Variants & Powertrain Options",
   "dieselVariants": [],
   "petrolVariants": [
     {
@@ -603,6 +605,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "Jaguar X300 Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -657,7 +660,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Jaguar XJ X300 Owners Trust JaguarEngine.uk",
+    "h2": "Jaguar XJ X300 Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted X300 Engine Suppliers",

@@ -77,7 +77,7 @@ export default function Home() {
   );
 
   return (
-    <main>
+    <main className="home-page">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homeSchema) }}

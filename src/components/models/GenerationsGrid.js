@@ -8,6 +8,7 @@ import { BookOpen, NumberGlyph, Scale } from "@/components/models/brandIcons";
 import { useTheme } from "@/components/shared/themeProvider";
 import { carImageFor } from "@/components/shared/carImage";
 import { outsideTags } from "@/components/models/outsideTags";
+import { modelFromHeading, splitHeading } from "@/components/models/seoHeading";
 
 /*
  * Model page "Generations" (section 4), built from the 1536px brand references (light + dark).
@@ -52,17 +53,12 @@ function typeset(text = "") {
 // "E-Pace - One Generation, Five Powertrains" -> "E-Pace — One Generation," / "Five Powertrains"
 // "XF Generations - Find Your Vehicle"       -> "XF Generations —" / "Find Your Vehicle"
 function splitTitle(title = "") {
-  const clean = cleanText(title);
-  const match = clean.match(/^(.*?)\s+[-–—]\s+(.*)$/);
-  if (!match) return { main: clean, accent: "" };
-  const [, model, rest] = match;
-  const comma = rest.indexOf(",");
-  if (comma !== -1) return { main: `${model} — ${rest.slice(0, comma + 1)}`, accent: rest.slice(comma + 1).trim() };
-  return { main: `${model} —`, accent: rest };
+  const { lead, accent } = splitHeading(cleanText(title));
+  return { main: lead, accent };
 }
 
 function modelNameFromH2(h2 = "") {
-  return cleanText(h2).split(/\s+(?:[-–—]|Generations)\s/)[0].replace(/^Jaguar\s+/, "").trim();
+  return modelFromHeading(cleanText(h2));
 }
 
 // Card title -> chassis code, e.g. "XJ X351 (2010-2019)" -> "X351"; "2019-2024: Revised V8 Era" -> "2019-2024".
@@ -572,7 +568,7 @@ export default function GenerationsGrid({ data }) {
     <section id="generations" className="model-gens relative overflow-hidden bg-[var(--color-page)] text-[var(--color-text)]">
       <div className="mx-auto w-full max-w-[1546px] px-4 pb-12 pt-10 sm:px-6 lg:px-[var(--gn-px)] lg:pb-[var(--gn-pb)] lg:pt-[var(--gn-pt)]">
         <h2 className={`model-gens-title ${tones.text}`}>
-          <span className="block" dangerouslySetInnerHTML={{ __html: title.main }} />
+          <span className="block" dangerouslySetInnerHTML={{ __html: title.main }} />{" "}
           {title.accent ? <span className={`block ${tones.accent}`} dangerouslySetInnerHTML={{ __html: title.accent }} /> : null}
         </h2>
 

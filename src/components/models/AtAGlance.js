@@ -270,7 +270,7 @@ export default function AtAGlance({ data }) {
       <div className="relative flex flex-col lg:block">
         {/* Copy: at least the reference scene's height (306px at 1536), so the table starts on its floor line */}
         <div className="order-1 mx-auto w-full max-w-[1546px] px-4 pt-8 sm:px-6 sm:pt-10 lg:min-h-[19.94vw] lg:px-10 lg:pb-[var(--g-band-pb)] lg:pt-[var(--g-pt)] 2xl:px-[56px] min-[1546px]:min-h-[306px]">
-          <h2 className={`model-glance-title max-w-[640px] ${isDark ? "text-white" : "text-[#111210]"}`} dangerouslySetInnerHTML={{ __html: cleanText(data.h2) }} />
+          <h2 className={`model-glance-title max-w-[640px] ${isDark ? "text-white" : "text-[#111210]"}`} dangerouslySetInnerHTML={{ __html: cleanText(data.h2).replace(/ at a Glance$/i, " at&nbsp;a&nbsp;Glance") }} />
           <div aria-hidden="true" className={`mt-4 h-px w-11 lg:mt-[var(--g-div-mt)] ${isDark ? "bg-white/70" : "bg-[#2a2b29]"}`} />
           {data.subHeadline ? (
             <p

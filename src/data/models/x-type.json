@@ -219,7 +219,7 @@
   },
   "hero": {
     "tagPill": "Jaguar • X-Type • 2001-2009 • 1 Generation • AJ200D • Duratec V6",
-    "h1": "X-Type Engines - The Complete UK Guide",
+    "h1": "Jaguar X-Type Engines - Reliability, Problems & Replacement Costs",
     "subHeadline": "One generation, three engine families - the Ford-derived 2.0/2.5/3.0 V6 and the early Ingenium diesel. Real failure data, honest repair-vs-replace economics, and a verdict on whether ownership still makes sense for the UK's most affordable entry-point Jaguar. Backed by 120+ real UK X-Type engine enquiries in 2025 [JAG-VERIFIED].",
     "trustStrip": [
       {
@@ -245,7 +245,7 @@
     }
   },
   "ownershipVerdict": {
-    "h2": "X-Type - The Ownership Verdict",
+    "h2": "Jaguar X-Type Engine Reliability & Ownership Verdict",
     "metrics": [
       {
         "metric": "Overall Ownership Rating",
@@ -287,7 +287,7 @@
     "oneLineVerdict": "The X-Type is the cheapest Jaguar you'll find on AutoTrader - and the one we're most likely to tell you to scrap if the engine fails. Buy one with cash, not credit, and treat it as a gamble you can afford to lose."
   },
   "atAGlance": {
-    "h2": "X-Type at a Glance",
+    "h2": "Jaguar X-Type at a Glance",
     "subHeadline": "Everything you need to know about the Jaguar X-Type in one quick-reference overview.",
     "rows": [
       {
@@ -333,7 +333,7 @@
     ]
   },
   "generations": {
-    "h2": "X-Type - One Generation, Four Powertrains",
+    "h2": "Jaguar X-Type Engine Variants & Powertrains",
     "subHeadline": "The X400 ran from 2001 to 2009 with a single body shape - but engine choice and facelift year define the ownership experience more than any other Jaguar we cover.",
     "cards": [
       {
@@ -359,7 +359,7 @@
     }
   },
   "engineDatabase": {
-    "h2": "X-Type Engine Codes - The Complete Database",
+    "h2": "Jaguar X-Type Engine Codes: Specifications & Reliability",
     "subHeadline": "Four engines across one generation - verified factory codes, real UK enquiry data, and honest reliability ratings.",
     "stats": [
       {
@@ -457,7 +457,7 @@
     "dataCorrections": []
   },
   "commonProblems": {
-    "h2": "Common X-Type Engine Problems",
+    "h2": "Jaguar X-Type Engine Problems: Symptoms, Risks & Repair Options",
     "subHeadline": "The failures that actually occur - from cooling system leaks to the early diesel's timing chain concerns.",
     "stat": {
       "icon": "users",
@@ -582,7 +582,7 @@
     ]
   },
   "marketIntelligence": {
-    "h2": "X-Type Market Intelligence - What 120 UK Owners Told Us in 2025",
+    "h2": "Jaguar X-Type Engine Market Intelligence: UK Enquiry Trends",
     "stat": {
       "value": "120+",
       "label": "Total Enquiries in 2025",
@@ -623,7 +623,7 @@
     "label": "Editorial pull-quote"
   },
   "replacementCosts": {
-    "h2": "X-Type Engine Replacement Costs - By Generation",
+    "h2": "Jaguar X-Type Engine Replacement Costs - By Engine",
     "subHeadline": "Real UK pricing for every X-Type engine - used, reconditioned and rebuilt supply-only, with independent labour guidance.",
     "tables": [
       {
@@ -649,7 +649,7 @@
     }
   },
   "engineEvolution": {
-    "h2": "How the X-Type Engine Range Evolved - 2001 to 2009",
+    "h2": "How the Jaguar X-Type Engine Range Evolved - 2001 to 2009",
     "subHeadline": "From launch to the final powertrains, explore how engineering, emissions and performance shaped every era of X-Type engines.",
     "stats": [
       {
@@ -724,7 +724,7 @@
     "footnote": "All engine reliability insights and failure patterns are based on 120+ verified X-Type enquiries in 2025. Data covers the UK market. [JAG-VERIFIED]"
   },
   "whoShouldBuy": {
-    "h2": "Who Should Buy an X-Type?",
+    "h2": "Which Jaguar X-Type Should You Buy? Engine & Ownership Considerations",
     "subHeadline": "Different buyers, different priorities. Here's our verdict on who the X-Type is perfect for - and who should think twice.",
     "proof": [
       {
@@ -790,7 +790,7 @@
     }
   },
   "calculatorCta": {
-    "h2": "Can I Repair My X-Type Engine - or Should I Replace It?",
+    "h2": "Jaguar X-Type Engine Repair vs Replacement: Costs & Options",
     "intro": "Your X-Type is worth £1,500-£5,000 on today's market. That £2,500-£5,800 recon cost sits at a critical threshold - the difference between a financially sensible repair and a car you scrap. Use our calculator to get a personalised verdict based on your actual vehicle value and symptoms.",
     "smartNote": {
       "lead": "The smarter way to decide:",
@@ -849,7 +849,7 @@
     }
   },
   "trustBlock": {
-    "h2": "Why X-Type Owners Trust jaguarengines.uk",
+    "h2": "Why Jaguar X-Type Owners Trust Our Engine Data & Specialist Guidance",
     "signals": [
       {
         "icon": "📊",
@@ -874,7 +874,7 @@
     ]
   },
   "faq": {
-    "h2": "X-Type Frequently Asked Questions",
+    "h2": "Jaguar X-Type Frequently Asked Questions",
     "items": [
       {
         "id": 1,
@@ -927,7 +927,7 @@
     }
   },
   "closingActionCards": {
-    "h2": "Ready to Make a Decision?",
+    "h2": "Jaguar X-Type Engine Guidance & Specialist Quotes",
     "subHeadline": "Everything you need to choose with confidence.\nData. Honesty. Specialists. All in one place.",
     "cards": [
       {

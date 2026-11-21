@@ -250,7 +250,7 @@
   },
   "hero": {
     "tagPill": "Jaguar F-Pace X761 • SUV • 2015-present",
-    "h1": "Jaguar F-Pace X761 Engines - The Complete UK Guide",
+    "h1": "Jaguar F-Pace X761 Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the Jaguar F-Pace X761 - from the Ingenium four-cylinder diesels to the 5.0-litre supercharged V8 SVR. Real UK costs, honest failure data, and the Ingenium timing chain risk that defines this generation. Backed by 220+ real UK enquiries in 2025 [JAG-VERIFIED].",
     "trustStrip": [
       {
@@ -277,7 +277,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Jaguar F-Pace X761 Engine Codes - The Complete Database",
+    "h2": "Jaguar F-Pace X761 Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every engine fitted to the F-Pace - from the 2.0-litre four-cylinder Ingenium units to the 3.0-litre supercharged V6 and the 5.0-litre supercharged V8 SVR.",
     "columns": [
       "Engine Code",
@@ -384,14 +384,14 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Jaguar F-Pace X761 - Overview",
+    "h2": "Jaguar X761 Overview: Engine Range, Design & Key Facts",
     "intro": "The X761 is the first SUV ever produced by Jaguar, launched in 2015 and entering production in February 2016. Built on the JLR D7a aluminium platform, it introduced Jaguar to the luxury crossover segment with a range of Ingenium four-cylinder engines, a supercharged V6, and later a 5.0-litre supercharged V8 SVR flagship.",
     "keyFacts": "Platform: JLR D7a aluminium architecture • Predecessor: None - first Jaguar SUV • Successor: Current model - production ended December 2025 • Sibling body styles in this generation: 5-door SUV only",
     "marketIntelligenceLine": "The X761 F-Pace generated 220 real UK engine enquiries in 2025 [JAG-VERIFIED], concentrated on the 2.0-litre Ingenium diesel as these vehicles exit warranty and face timing chain issues."
   },
   "bestWorstEngines": {
     "generationCode": "X761",
-    "h2": "Best & Worst Engines",
+    "h2": "Jaguar F-Pace X761 Engine Reliability: Best Choices & Known Risks",
     "databaseCta": {
       "label": "View Full Engine Database →",
       "href": "/engine"
@@ -436,7 +436,7 @@
     ]
   },
   "ownershipEconomics": {
-    "h2": "Jaguar F-Pace X761 - Ownership Economics",
+    "h2": "Jaguar F-Pace X761 Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -515,6 +515,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Jaguar F-Pace X761 Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -571,7 +572,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "X761 Engine Replacement Costs - By Engine and Condition",
+    "h2": "Jaguar F-Pace X761 Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -641,6 +642,7 @@
     "note": ""
   },
 "coreVariants": {
+  "h2": "Jaguar X761 Petrol, Diesel & Hybrid Engine Variants",
   "dieselVariants": [
      {
     "name": "20D",
@@ -708,6 +710,7 @@
   "scopeNote": "All variants listed are X761-generation F-Pace only (2015-2025). The F-Pace was only available as a 5-door SUV."
 },
   "marketIntelligence": {
+    "h2": "Jaguar F-Pace X761 Engine Market Intelligence: Enquiries & Replacement Costs",
     "mostRequestedEngines": [
       "1. AJ20D4 2.0 D200/D300",
       "2. AJ126 3.0 P380",
@@ -749,6 +752,7 @@
     ]
   },
   "faq": {
+    "h2": "Jaguar X761 Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -803,7 +807,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Jaguar F-Pace X761 Owners Trust JaguarEngine.uk",
+    "h2": "Jaguar F-Pace X761 Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted X761 Engine Suppliers",
