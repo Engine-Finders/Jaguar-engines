@@ -31,6 +31,8 @@ import GenFAQAccordion from "@/components/generation/FAQAccordion";
 import GenTrustCta from "@/components/generation/TrustCta";
 
 import VariantHero from "@/components/variant/VariantHero";
+import { getStaticHtmlPage, getAllStaticHtmlSlugs } from "@/lib/staticHtmlPage";
+import StaticHtmlViewer from "@/components/shared/StaticHtmlViewer";
 import EraMap from "@/components/variant/EraMap";
 import VarReplacementCosts from "@/components/variant/ReplacementCosts";
 import VarProblems from "@/components/variant/CommonProblems";
@@ -70,11 +72,12 @@ async function getVariantData(dataFile) {
 }
 
 function findEntry(slugSegments) {
+  // Model / generation / variant page for these segments, or null (then an essential page is tried).
   if (slugSegments.length === 1) {
     const single = slugSegments[0];
     const model = modelPages.find((p) => p.slug === single);
     if (model) return { entry: model, type: "models" };
-    notFound();
+    return null;
   }
 
   if (slugSegments.length === 2) {
@@ -85,10 +88,10 @@ function findEntry(slugSegments) {
     const variant = variantPages.find((p) => p.parent === parent && p.slug === child);
     if (variant) return { entry: variant, type: "variants" };
 
-    notFound();
+    return null;
   }
 
-  notFound();
+  return null;
 }
 
 export async function generateStaticParams() {
@@ -109,13 +112,21 @@ export async function generateStaticParams() {
     paths.push({ slug: [page.parent, page.slug] });
   }
 
+  // Essential pages (public/*.html), rendered inside the site layout
+  for (const slug of getAllStaticHtmlSlugs()) {
+    if (!findEntry(slug)) paths.push({ slug });
+  }
+
   return paths;
 }
 
 export async function generateMetadata({ params }) {
   const { slug: slugSegments } = await params;
   const result = findEntry(slugSegments);
-  if (!result) return {};
+  if (!result) {
+    const staticPage = await getStaticHtmlPage(slugSegments);
+    return staticPage?.metadata || {};
+  }
 
   const { entry, type } = result;
 
@@ -166,6 +177,12 @@ export async function generateMetadata({ params }) {
 export default async function CatchAllPage({ params }) {
   const { slug: slugSegments } = await params;
   const result = findEntry(slugSegments);
+
+  if (!result) {
+    const staticPage = await getStaticHtmlPage(slugSegments);
+    if (!staticPage) notFound();
+    return <StaticHtmlViewer hero={staticPage.hero} content={staticPage.bodyContent} jsonLd={staticPage.jsonLd} scripts={staticPage.scripts} />;
+  }
 
   const { entry, type } = result;
 

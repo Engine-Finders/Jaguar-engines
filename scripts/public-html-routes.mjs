@@ -24,7 +24,7 @@ function walkHtmlFiles(dir, relativeDir = "") {
   return files;
 }
 
-/** Build beforeFiles rewrites + canonical redirects for public/*.html assets. */
+/** Canonical 301 redirects for public/*.html assets (no rewrites: clean paths go through the App Router). */
 export function getPublicHtmlRoutes() {
   if (!fs.existsSync(PUBLIC_DIR)) {
     return { rewrites: [], redirects: [] };
@@ -40,7 +40,8 @@ export function getPublicHtmlRoutes() {
 
     if (!slug || RESERVED.has(slug.split("/")[0])) continue;
 
-    rewrites.push({ source: cleanPath, destination: htmlPath });
+    // Clean paths now render through the App Router (site Navbar, Footer and hero lead form, see
+    // src/lib/staticHtmlPage.js); old .html links still 301 to the clean path.
     redirects.push({ source: htmlPath, destination: cleanPath, permanent: true });
   }
 
