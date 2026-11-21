@@ -8,6 +8,8 @@ import CostGuide from "@/components/engine/CostGuide";
 import FAQAccordion from "@/components/engine/FAQAccordion";
 import TrustCta from "@/components/engine/TrustCta";
 import { enginePageImages } from "@/components/shared/pageCarImages";
+import { getAllStaticHtmlSlugs, getStaticHtmlPage } from "@/lib/staticHtmlPage";
+import StaticHtmlViewer from "@/components/shared/StaticHtmlViewer";
 
 async function getPageData(dataFile) {
   try {
@@ -19,13 +21,20 @@ async function getPageData(dataFile) {
 }
 
 export async function generateStaticParams() {
-  return pages.map((page) => ({ slug: page.slug }));
+  const slugs = new Set(pages.map((page) => page.slug));
+  for (const [section, slug] of getAllStaticHtmlSlugs()) {
+    if (section === "engine" && slug) slugs.add(slug);
+  }
+  return [...slugs].map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const entry = pages.find((page) => page.slug === slug);
-  if (!entry) return {};
+  if (!entry) {
+    const staticPage = await getStaticHtmlPage(["engine", slug]);
+    return staticPage?.metadata || {};
+  }
   const data = await getPageData(entry.dataFile);
   if (!data?.meta) return {};
 
@@ -66,7 +75,12 @@ export async function generateMetadata({ params }) {
 export default async function EnginePage({ params }) {
   const { slug } = await params;
   const entry = pages.find((page) => page.slug === slug);
-  if (!entry) notFound();
+  if (!entry) {
+    // Essential engine page (public/engine/*.html) inside the site layout
+    const staticPage = await getStaticHtmlPage(["engine", slug]);
+    if (!staticPage) notFound();
+    return <StaticHtmlViewer hero={staticPage.hero} content={staticPage.bodyContent} jsonLd={staticPage.jsonLd} scripts={staticPage.scripts} />;
+  }
 
   const data = await getPageData(entry.dataFile);
   if (!data) notFound();
