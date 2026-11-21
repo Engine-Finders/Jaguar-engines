@@ -299,7 +299,7 @@
   },
   "hero": {
     "tagPill": "Jaguar XF X250 • Saloon/Sportbrake • 2008-2015",
-    "h1": "Jaguar XF X250 Engines - The Complete UK Guide",
+    "h1": "Jaguar XF X250 Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the first‑generation XF - from the 2.7 and 3.0 V6 diesels to the 5.0 V8 and the supercharged XFR and XFR‑S. Real UK costs and honest reliability data for the executive saloon that redefined Jaguar. Backed by real UK enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
       {
@@ -326,7 +326,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Jaguar XF X250 Engine Codes - The Complete Database",
+    "h2": "Jaguar XF X250 Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every engine fitted to the first‑generation XF (X250) specifically - from the 2008 launch to the 2015 end of production.",
     "columns": [
       "Engine Code",
@@ -469,12 +469,13 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Jaguar XF X250 - Overview",
+    "h2": "Jaguar X250 Overview: Engine Range, Design & Key Facts",
     "intro": "The X250 is the first‑generation Jaguar XF, launched in March 2008 as the successor to the S‑Type. Designed by Ian Callum, it introduced a bold new design language that abandoned the retro styling of its predecessor in favour of a modern, sporting aesthetic. Built on the Ford DEW98 platform - shared with the Lincoln LS and Ford Thunderbird - the X250 offered a range of Ford‑PSA and Jaguar‑developed engines: V6 and V8 diesels, naturally aspirated and supercharged V8 petrols, and later four‑cylinder diesel and petrol options. A 2012 facelift brought revised styling, new engines and an eight‑speed automatic transmission. Production ran from 2008 to 2015, with the Sportbrake estate joining the range in 2012.",
     "keyFacts": "Platform: Ford DEW98 (shared with Lincoln LS, Ford Thunderbird) • Predecessor: Jaguar S‑Type (X200) • Successor: Jaguar XF X260 • Sibling body styles in this generation: Saloon, Sportbrake estate.",
     "marketIntelligenceLine": "The X250 generates consistent UK enquiries [PATTERN DATA], concentrated on 3.0 TDV6 diesel and 2.2 diesel variants as these executive saloons enter affordable‑maintenance territory."
   },
   "bestWorstEngines": {
+    "h2": "Jaguar XF X250 Engine Reliability: Best Choices & Known Risks",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -485,7 +486,7 @@
     ]
   },
   "ownershipEconomics": {
-    "h2": "Jaguar XF X250 - Ownership Economics",
+    "h2": "Jaguar XF X250 Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -583,6 +584,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Jaguar XF X250 Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -652,7 +654,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "X250 Engine Replacement Costs - By Engine and Condition",
+    "h2": "Jaguar XF X250 Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -746,6 +748,7 @@
     "note": "No Generation variance from the Model Page's baseline figures - X250 saloon and Sportbrake share identical engine‑bay access, so costs are inherited directly per the Authority Model, with no divergence note required. All costs are [EM-QUOTE] from Table A - Engine Replacement Economics."
   },
 "coreVariants": {
+  "h2": "Jaguar X250 Petrol & Diesel Engine Variants",
   "dieselVariants": [
     {
       "name": "2.7 TDV6",
@@ -804,6 +807,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "Jaguar X250 Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -858,7 +862,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Jaguar XF X250 Owners Trust JaguarEngine.uk",
+    "h2": "Jaguar XF X250 Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted X250 Engine Suppliers",

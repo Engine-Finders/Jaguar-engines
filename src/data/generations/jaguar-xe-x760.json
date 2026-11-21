@@ -256,7 +256,7 @@
   },
   "hero": {
     "tagPill": "Jaguar XE X760 • Saloon • 2015-2024",
-    "h1": "Jaguar XE X760 Engines - The Complete UK Guide",
+    "h1": "Jaguar XE X760 Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the X760 - from the 2.0-litre Ingenium diesel and petrol fours to the 3.0-litre supercharged V6 and the 5.0-litre V8 Project 8. Real UK replacement costs, honest failure data, and the timing chain and balance shaft issues that define this generation's ownership story. Backed by 260+ real UK X760 enquiries in 2025 [JAG-VERIFIED].",
     "trustStrip": [
       {
@@ -283,7 +283,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Jaguar XE X760 Engine Codes - The Complete Database",
+    "h2": "Jaguar XE X760 Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every engine fitted to the X760 saloon - from the 2015 launch to the 2024 phase-out, including the pre- and post-facelift Ingenium updates and the limited-edition Project 8.",
     "columns": [
       "Engine Code",
@@ -366,12 +366,13 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Jaguar XE X760 - Overview",
+    "h2": "Jaguar X760 Overview: Engine Range, Design & Key Facts",
     "intro": "The X760 is the first and only generation of the Jaguar XE, a compact executive saloon launched in April 2015 and produced until mid-2024. It was the first application of Jaguar Land Rover's new 2.0-litre Ingenium four-cylinder engine family, available in both diesel and petrol forms. The range also included a 3.0-litre supercharged V6 (AJ126) in the sportier S and 35t models until 2019, and a 5.0-litre supercharged V8 (<a href='https://jaguarengines.uk/engine/aj133'>AJ133</a>) in the limited-edition Project 8. A 2019 facelift brought updated styling and a streamlined engine lineup focused on 2.0-litre four-cylinders.",
     "keyFacts": "Platform: JLR D7a aluminium monocoque • Predecessor: Jaguar X-Type • Successor: none (XE discontinued) • Sibling body styles in this generation: none - X760 is a 4-door saloon only.",
     "marketIntelligenceLine": "The X760 generated 260 real UK engine enquiries in 2025 [JAG-VERIFIED], with strong demand for both diesel and petrol Ingenium variants."
   },
   "bestWorstEngines": {
+    "h2": "Jaguar XE X760 Engine Reliability: Best Choices & Known Risks",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -412,7 +413,7 @@
     ]
   },
   "ownershipEconomics": {
-    "h2": "Jaguar XE X760 - Ownership Economics",
+    "h2": "Jaguar XE X760 Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -483,6 +484,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Jaguar XE X760 Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -599,7 +601,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "X760 Engine Replacement Costs - By Engine and Condition",
+    "h2": "Jaguar XE X760 Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -653,6 +655,7 @@
     "note": "No Generation variance note required - no Engine Page baseline exists for these engines yet. Costs are sourced from UK specialist suppliers [JAG-QUOTE]."
   },
 "coreVariants": {
+  "h2": "Jaguar X760 Petrol & Diesel Engine Variants",
   "dieselVariants": [
     {
       "name": "20d",
@@ -692,6 +695,7 @@
   "scopeNote": "All variants listed are Jaguar XE X760 only. The XE is a single-generation model with no siblings in this generation."
 },
   "marketIntelligence": {
+    "h2": "Jaguar XE X760 Engine Market Intelligence: Enquiries & Replacement Costs",
     "mostRequestedEngines": [
       "1. 2.0 Ingenium Diesel (largest share of 590 JLR‑wide figure)",
       "2. 3.0 V6 Supercharged (largest share of 560 JLR‑wide figure)",
@@ -733,6 +737,7 @@
     ]
   },
   "faq": {
+    "h2": "Jaguar X760 Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -787,7 +792,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Jaguar XE X760 Owners Trust JaguarEngine.uk",
+    "h2": "Jaguar XE X760 Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted X760 Engine Suppliers",

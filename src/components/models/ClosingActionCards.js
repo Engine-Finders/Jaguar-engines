@@ -7,6 +7,7 @@ import { Handshake, Search, Stethoscope } from "@/components/models/brandIcons";
 import { useTheme } from "@/components/shared/themeProvider";
 import CarOnBackground from "@/components/shared/CarOnBackground";
 import { outsideTags } from "@/components/models/outsideTags";
+import { isApprovedHeading, splitHeading } from "@/components/models/seoHeading";
 
 /*
  * Model page "Ready to Make a Decision?" (section 14), built from the 1536px reference: one card holding the
@@ -32,9 +33,15 @@ function typeset(text = "") {
 }
 
 // "Ready to Make a Decision?" -> "Ready to Make" / accent "a Decision?"
-function splitTitle(title = "") {
+// Approved SEO wording: split at the colon / question / dash; older wording keeps the original split.
+function splitTitleLegacy(title = "") {
   const match = cleanText(title).match(/^(.*?)\s+(a\s+Decision\??)$/i);
   return match ? { lead: match[1], accent: match[2] } : { lead: cleanText(title), accent: "" };
+}
+
+function splitTitle(title = "") {
+  if (!isApprovedHeading(cleanText(title))) return splitTitleLegacy(title);
+  return splitHeading(cleanText(title));
 }
 
 function palette(isDark) {
@@ -188,8 +195,8 @@ export default function ClosingActionCards({ data }) {
           ) : null}
 
           <div className="px-5 pt-7 sm:px-6 lg:px-[var(--ca-card-px)] lg:pt-[var(--ca-pt)]">
-            <h2 className={`model-close-title ${tones.text}`}>
-              <span className="block" dangerouslySetInnerHTML={{ __html: typeset(title.lead) }} />
+            <h2 className={`model-close-title lg:max-w-[600px] ${tones.text}`}>
+              <span className="block" dangerouslySetInnerHTML={{ __html: typeset(title.lead) }} />{" "}
               {title.accent ? <span className={`block ${tones.accent}`}>{title.accent}</span> : null}
             </h2>
             <span aria-hidden="true" className={`mt-4 block h-[2px] w-14 lg:mt-[var(--ca-div-mt)] ${tones.rule}`} />

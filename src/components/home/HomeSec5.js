@@ -203,7 +203,7 @@ export default function HomeSec5({ data }) {
         </div>
 
         <div className="relative mx-auto w-full max-w-8xl px-3 pt-5 pb-4 md:px-6 md:pt-8 md:pb-5 lg:px-8">
-          <div className="max-w-[720px]">
+          <div className="max-w-[720px] lg:max-w-[840px]">
             <p
               className={`text-[0.64rem] font-bold uppercase tracking-[0.14em] ${
                 isDark ? "text-white/55" : "text-[var(--color-text-muted)]"
@@ -216,9 +216,8 @@ export default function HomeSec5({ data }) {
                 isDark ? "text-white" : "text-[var(--color-text)]"
               }`}
             >
-              Comparison Hub
-              <br />
-              <span className="text-[var(--color-chrome-bright)]">Head-to-Head Verdicts</span>
+              Compare Jaguar Models &amp; Engines:{" "}
+              <span className="text-[var(--color-chrome-bright)]">Reliability, Replacement Costs &amp; Ownership</span>
             </h2>
             <div className="mt-2.5">
               <MStripe />

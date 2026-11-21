@@ -262,7 +262,7 @@
   },
   "hero": {
     "tagPill": "Jaguar F-Type X152 • Sports Car • 2012-2024",
-    "h1": "Jaguar F-Type X152 Engines - The Complete UK Guide",
+    "h1": "Jaguar F-Type X152 Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the Jaguar F-Type X152 - from the 2.0-litre Ingenium turbo four to the 3.0-litre supercharged V6 and the fire-breathing 5.0-litre supercharged V8 SVR. Real UK costs, honest failure data, and the cooling-system questions that define this generation's ownership experience. Backed by 260+ real UK F-Type enquiries in 2025 [JAG-VERIFIED].",
     "trustStrip": [
       {
@@ -289,7 +289,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Jaguar F-Type X152 Engine Codes - The Complete Database",
+    "h2": "Jaguar F-Type X152 Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every engine fitted to the F-Type X152 specifically - from the 2013 launch through the 2020 facelift and the final 2024 model year.",
     "columns": [
       "Engine Code",
@@ -420,12 +420,13 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Jaguar F-Type X152 - Overview",
+    "h2": "Jaguar X152 Overview: Engine Range, Design & Key Facts",
     "intro": "The Jaguar F-Type X152 is a two-door, two-seater sports car manufactured by Jaguar Land Rover from December 2012 to June 2024 at the Castle Bromwich assembly plant in the UK. Designed by Ian Callum as the spiritual successor to the legendary E-Type, the F-Type was Jaguar's return to a two-seater sports car after almost 40 years. The engine line-up evolved significantly over its 11-year production run: early cars offered 3.0-litre supercharged V6 and 5.0-litre supercharged V8 options; a 2.0-litre Ingenium turbocharged four-cylinder was added in 2017; the 2020 facelift replaced the V6 with a detuned 5.0-litre V8 (P450), leaving the range with just the 2.0-litre four and 5.0-litre V8. The range-topping SVR and Project 7 delivered 575 bhp from the supercharged 5.0-litre V8. In total, 87,731 F-Types were built.",
     "keyFacts": "Platform: JLR D6a aluminium architecture • Predecessor: Jaguar XK • Successor: Discontinued (no direct successor) • Sibling body styles: Coupé and Convertible - both share the X152 designation",
     "marketIntelligenceLine": "The Jaguar F-Type X152 generated real UK engine enquiries in 2025, with the 3.0-litre supercharged V6 (AJ126) accounting for the largest share of the 560 JLR-wide figure, followed by the 5.0-litre supercharged V8 (AJ133) at 330 enquiries and the 2.0-litre Ingenium four (PT204) at 500 enquiries."
   },
   "bestWorstEngines": {
+    "h2": "Jaguar F-Type X152 Engine Reliability: Best Choices & Known Risks",
     "items": [
       {
         "slot": "Best Petrol Overall",
@@ -460,7 +461,7 @@
     ]
   },
   "ownershipEconomics": {
-    "h2": "Jaguar F-Type X152 - Ownership Economics",
+    "h2": "Jaguar F-Type X152 Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -523,6 +524,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Jaguar F-Type X152 Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -611,7 +613,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "X152 Engine Replacement Costs - By Engine and Condition",
+    "h2": "Jaguar F-Type X152 Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -681,6 +683,7 @@
     "note": ""
   },
 "coreVariants": {
+  "h2": "Jaguar X152 Engine Variants & Powertrain Options",
   "dieselVariants": [],
   "petrolVariants": [
     {
@@ -727,6 +730,7 @@
   "scopeNote": "All variants listed are X152 F-Type only. Engine fitment varies by year - the 2.0-litre Ingenium P300 was added in 2017; the 2020 facelift introduced the P450 (detuned 5.0 V8) and R P575, while discontinuing the V6 option in most markets. The SVR (575 bhp) was introduced in 2015 and continued through 2020. The Project 7 (575 bhp, limited to 250 units) was produced in 2015."
 },
   "marketIntelligence": {
+    "h2": "Jaguar F-Type X152 Engine Market Intelligence: Enquiries & Replacement Costs",
     "mostRequestedEngines": [
       "1. 306PS 3.0 V6 Supercharged (560 JLR-wide enquiries)",
       "2. PT204 2.0 Ingenium Turbo (500)",
@@ -768,6 +772,7 @@
     ]
   },
   "faq": {
+    "h2": "Jaguar X152 Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -822,7 +827,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Jaguar F-Type X152 Owners Trust JaguarEngine.uk",
+    "h2": "Jaguar F-Type X152 Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted X152 Engine Suppliers",

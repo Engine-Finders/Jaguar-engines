@@ -69,6 +69,21 @@ async function getVariantData(dataFile) {
   }
 }
 
+// Name used in the generation page's section buttons and quote text ("Get a Jaguar XF X260 Engine Quote").
+// Pages on the approved SEO H1 take it from the hero pill, so the button labels stay exactly as they were;
+// older H1s keep the original rule.
+function generationContextLabel(hero = {}) {
+  const h1 = String(hero?.h1 || "");
+  if (/\sEngine Replacement:\s/i.test(h1)) {
+    const pill = String(hero?.tagPill || "").split("•")[0].replace(/<[^>]*>/g, "").trim();
+    if (pill) return pill.replace(/^Jaguar\s+/i, "").trim();
+  }
+  return h1
+    .replace(/\s+Engines?\s*-.*$/i, "")
+    .replace(/^Jaguar\s+/i, "")
+    .trim();
+}
+
 function findEntry(slugSegments) {
   if (slugSegments.length === 1) {
     const single = slugSegments[0];
@@ -221,17 +236,11 @@ export default async function CatchAllPage({ params }) {
         <OwnershipEconomics data={data.ownershipEconomics} />
         <GenProblems
           data={data.commonProblems}
-          contextLabel={String(data.hero?.h1 || "")
-            .replace(/\s+Engines?\s*-.*$/i, "")
-            .replace(/^Jaguar\s+/i, "")
-            .trim()}
+          contextLabel={generationContextLabel(data.hero)}
         />
         <GenReplacementCosts
           data={data.replacementCosts}
-          contextLabel={String(data.hero?.h1 || "")
-            .replace(/\s+Engines?\s*-.*$/i, "")
-            .replace(/^Jaguar\s+/i, "")
-            .trim()}
+          contextLabel={generationContextLabel(data.hero)}
         />
         <CoreVariantsMarketGroup
           coreVariants={data.coreVariants}
@@ -240,10 +249,7 @@ export default async function CatchAllPage({ params }) {
         <GenFAQAccordion data={data.faq} />
         <GenTrustCta
           data={data.trustCta}
-          contextLabel={String(data.hero?.h1 || "")
-            .replace(/\s+Engines?\s*-.*$/i, "")
-            .replace(/^Jaguar\s+/i, "")
-            .trim()}
+          contextLabel={generationContextLabel(data.hero)}
         />
       </main>
     );

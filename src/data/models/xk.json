@@ -223,7 +223,7 @@
   },
   "hero": {
     "tagPill": "Jaguar • XK • 1996-2014 • 2 Generations • AJ-V8",
-    "h1": "XK Engines - The Complete UK Guide",
+    "h1": "Jaguar XK Engines - Reliability, Problems & Replacement Costs",
     "subHeadline": "Two generations of Jaguar's V8-powered grand tourer - X100 and X150 - covered from the 4.0 AJ27 to the 5.0 <a href='https://jaguarengines.uk/engine/aj133'>AJ133</a> supercharged. Real UK failure patterns, honest replacement economics, and costs you can actually trust. Backed by 290+ real UK XK engine enquiries in 2025 [JAG-VERIFIED].",
     "trustStrip": [
       {
@@ -249,7 +249,7 @@
     }
   },
   "ownershipVerdict": {
-    "h2": "XK - The Ownership Verdict",
+    "h2": "Jaguar XK Engine Reliability & Ownership Verdict",
     "metrics": [
       {
         "metric": "Overall Ownership Rating",
@@ -291,7 +291,7 @@
     "oneLineVerdict": ""
   },
   "atAGlance": {
-    "h2": "XK at a Glance",
+    "h2": "Jaguar XK at a Glance",
     "subHeadline": "Everything you need to know about the Jaguar XK in one quick-reference overview.",
     "rows": [
       {
@@ -337,7 +337,7 @@
     ]
   },
   "generations": {
-    "h2": "XK Generations - Find Your Vehicle",
+    "h2": "Jaguar XK Generations: Compare Engine Options",
     "subHeadline": "Two generations of V8-powered grand touring - the steel-bodied X100 and the aluminium-monocoque X150.",
     "cards": [
       {
@@ -379,7 +379,7 @@
     }
   },
   "engineDatabase": {
-    "h2": "XK Engine Codes - The Complete Database",
+    "h2": "Jaguar XK Engine Codes: Specifications & Reliability",
     "subHeadline": "Every V8 that powered the XK - verified factory codes, real UK enquiry data, and honest reliability ratings.",
     "stats": [
       {
@@ -501,7 +501,7 @@
     "dataCorrections": []
   },
   "commonProblems": {
-    "h2": "Common XK Engine Problems",
+    "h2": "Jaguar XK Engine Problems: Symptoms, Risks & Repair Options",
     "subHeadline": "What actually fails on the XK's AJ-V8 engines - and what it costs to fix.",
     "stat": {
       "icon": "users",
@@ -626,7 +626,7 @@
     ]
   },
   "marketIntelligence": {
-    "h2": "XK Market Intelligence - What 290+ UK Owners Told Us in 2025",
+    "h2": "Jaguar XK Engine Market Intelligence: UK Enquiry Trends",
     "stat": {
       "value": "290+",
       "label": "Total Enquiries in 2025",
@@ -667,7 +667,7 @@
     "label": "Editorial pull-quote"
   },
   "replacementCosts": {
-    "h2": "XK Engine Replacement Costs - By Generation",
+    "h2": "Jaguar XK Engine Replacement Costs - By Generation",
     "subHeadline": "Real UK pricing for every XK V8 - used, reconditioned and rebuilt, supply-only, with independent labour guidance.",
     "tables": [
       {
@@ -705,7 +705,7 @@
     }
   },
   "engineEvolution": {
-    "h2": "How the XK Engine Range Evolved - 1996 to 2014",
+    "h2": "How the Jaguar XK Engine Range Evolved - 1996 to 2014",
     "subHeadline": "From launch to the final powertrains, explore how engineering, emissions and performance shaped every era of XK engines.",
     "stats": [
       {
@@ -773,7 +773,7 @@
     "footnote": "All engine reliability insights and failure patterns are based on 290+ verified XK enquiries in 2025. Data covers the UK market. [JAG-VERIFIED]"
   },
   "whoShouldBuy": {
-    "h2": "Who Should Buy an XK?",
+    "h2": "Which Jaguar XK Should You Buy? Engine & Ownership Considerations",
     "subHeadline": "Different buyers, different priorities. Here's our verdict on who the XK is perfect for - and who should think twice.",
     "proof": [
       {
@@ -839,7 +839,7 @@
     }
   },
   "calculatorCta": {
-    "h2": "Can I Repair My XK Engine - or Should I Replace It?",
+    "h2": "Jaguar XK Engine Repair vs Replacement: Costs & Options",
     "intro": "The XK presents one of the widest economics swings in the Jaguar range - a £5,000 reconditioned engine in a £4,000 X100 is a financial mistake, but the same engine in a £30,000 XKR-S is a no-brainer. Run the numbers before you commit.",
     "smartNote": {
       "lead": "The smarter way to decide:",
@@ -898,7 +898,7 @@
     }
   },
   "trustBlock": {
-    "h2": "Why XK Owners Trust jaguarengines.uk",
+    "h2": "Why Jaguar XK Owners Trust Our Engine Data & Specialist Guidance",
     "signals": [
       {
         "icon": "📊",
@@ -923,7 +923,7 @@
     ]
   },
   "faq": {
-    "h2": "XK Frequently Asked Questions",
+    "h2": "Jaguar XK Frequently Asked Questions",
     "items": [
       {
         "id": 1,
@@ -976,7 +976,7 @@
     }
   },
   "closingActionCards": {
-    "h2": "Ready to Make a Decision?",
+    "h2": "Jaguar XK Engine Guidance & Specialist Quotes",
     "subHeadline": "Everything you need to choose with confidence.\nData. Honesty. Specialists. All in one place.",
     "cards": [
       {

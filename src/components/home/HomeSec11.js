@@ -271,7 +271,7 @@ export default function HomeSec11({ data }) {
         </div>
 
         <div className="relative mx-auto w-full max-w-8xl px-4 pb-3 pt-5 md:px-6 md:pb-3.5 md:pt-7 lg:px-8">
-          <div className="max-w-[760px]">
+          <div className="max-w-[760px] lg:max-w-[840px]">
             <p
               className={`text-[0.64rem] font-bold uppercase tracking-[0.14em] ${
                 isDark ? "text-white/55" : "text-[var(--color-text-muted)]"
@@ -284,8 +284,8 @@ export default function HomeSec11({ data }) {
                 isDark ? "text-white" : "text-black"
               }`}
             >
-              Every Model. Every Generation.{" "}
-              <span className="text-[var(--color-chrome-bright)]">Honestly Rated.</span>
+              Explore Jaguar Models &amp; Generations:{" "}
+              <span className="text-[var(--color-chrome-bright)]">Engine Reliability &amp; Replacement Costs</span>
             </h2>
             <div className="mt-2.5">
               <MStripe />

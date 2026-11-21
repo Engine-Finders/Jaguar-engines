@@ -264,7 +264,7 @@ export default function HomeSec4({ data }) {
         </div>
 
         <div className="relative mx-auto w-full max-w-8xl px-3 pb-3 pt-5 md:px-6 md:pb-3.5 md:pt-8 lg:px-8">
-          <div className="max-w-[720px]">
+          <div className="max-w-[720px] lg:max-w-[840px]">
             <p
               className={`text-[0.64rem] font-bold uppercase tracking-[0.14em] ${
                 isDark ? "text-white/55" : "text-[var(--color-text-muted)]"
@@ -277,8 +277,8 @@ export default function HomeSec4({ data }) {
                 isDark ? "text-white" : "text-[var(--color-text)]"
               }`}
             >
-              Jaguar{" "}
-              <span className="text-[var(--color-chrome-bright)]">Ownership Rankings</span>
+              Jaguar Engine &amp; Model{" "}
+              <span className="text-[var(--color-chrome-bright)]">Reliability Rankings</span>
             </h2>
             <div className="mt-2.5">
               <MStripe />

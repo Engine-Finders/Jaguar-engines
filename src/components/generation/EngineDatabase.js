@@ -53,11 +53,12 @@ function SectionHeader({ title, subHeadline, isDark, sectionBg }) {
         />
       </div>
       <div className="relative mx-auto w-full max-w-8xl px-4 pb-3 pt-5 md:px-8 md:pb-4 md:pt-6">
-        <div className="max-w-[650px]">
+        <div className="max-w-[650px] lg:max-w-[760px]">
           <h2 className={`font-bold tracking-normal text-[var(--color-text)] ${sectionH2}`}>
             <span dangerouslySetInnerHTML={{ __html: title.main }} />
             {title.accent ? (
               <>
+                {" "}
                 <br />
                 <span
                   className="text-[var(--color-chrome-bright)]"

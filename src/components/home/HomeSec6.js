@@ -392,7 +392,7 @@ export default function HomeSec6({ data }) {
         </div>
 
         <div className="relative mx-auto w-full max-w-8xl px-4 pb-3 pt-5 md:px-6 md:pb-3.5 md:pt-7 lg:px-8">
-          <div className="max-w-[720px]">
+          <div className="max-w-[720px] lg:max-w-[840px]">
             <p
               className={`text-[0.64rem] font-bold uppercase tracking-[0.14em] ${
                 isDark ? "text-white/55" : "text-[var(--color-text-muted)]"
@@ -401,12 +401,12 @@ export default function HomeSec6({ data }) {
               Ownership Economics
             </p>
             <h2
-              className={`mt-1.5 whitespace-nowrap font-serif text-[1.65rem] font-semibold leading-[0.98] sm:text-[2rem] md:text-[2.55rem] md:leading-[0.96] lg:text-[2.75rem] ${
+              className={`mt-1.5 font-serif text-[1.65rem] font-semibold leading-[0.98] sm:text-[2rem] md:text-[2.55rem] md:leading-[0.96] lg:text-[2.75rem] ${
                 isDark ? "text-white" : "text-black"
               }`}
             >
-              The Ownership{" "}
-              <span className="text-[var(--color-chrome-bright)]">Economics Centre</span>
+              Should You Repair, Rebuild or Replace{" "}
+              <span className="text-[var(--color-chrome-bright)]">Your Jaguar Engine?</span>
             </h2>
             <div className="mt-2.5">
               <MStripe />

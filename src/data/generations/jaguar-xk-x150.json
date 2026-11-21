@@ -256,7 +256,7 @@
   },
   "hero": {
     "tagPill": "Jaguar XK X150 • Grand Tourer • 2005-2014",
-    "h1": "Jaguar XK X150 Engines - The Complete UK Guide",
+    "h1": "Jaguar XK X150 Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the X150 grand tourer - from the 4.2-litre AJ34 V8 and supercharged XKR to the 5.0-litre AJ133 that transformed this generation. Real UK replacement costs and honest reliability data for Jaguar's last V8-powered XK. Backed by real UK enquiries [JAG-VERIFIED].",
     "trustStrip": [
       {
@@ -283,7 +283,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Jaguar XK X150 Engine Codes - The Complete Database",
+    "h2": "Jaguar XK X150 Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every engine fitted to the X150 specifically - including the 4.2-litre AJ34 (naturally aspirated and supercharged) and the 5.0-litre AJ-V8 Gen III (<a href='https://jaguarengines.uk/engine/aj133'>AJ133</a>) that arrived with the 2009 facelift.",
     "columns": [
       "Engine Code",
@@ -378,12 +378,13 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Jaguar XK X150 - Overview",
+    "h2": "Jaguar X150 Overview: Engine Range, Design & Key Facts",
     "intro": "The X150 is the second and final generation of the Jaguar XK grand tourer, launched at the 2005 Frankfurt Motor Show. It succeeded the X100 and was the last V8-powered XK before the F-Type replaced it in 2014. Designed by Ian Callum, the X150 introduced an all-aluminium monocoque construction that was significantly lighter and stiffer than its predecessor. The engine line‑up was exclusively V8 petrol: the 4.2-litre AJ34 (naturally aspirated and supercharged) was carried over from the X100, replaced in 2009 by the 5.0-litre AJ-V8 Gen III (AJ133) in both naturally aspirated and supercharged forms. A 2009 facelift brought updated styling and the new engine range.",
     "keyFacts": "Platform: Jaguar X150 (all-aluminium monocoque, front-mid-engine, rear-wheel drive) • Predecessor: Jaguar XK (X100) • Successor: Jaguar F-Type • Sibling body styles in this generation: 3-door fastback coupé, 2-door convertible",
     "marketIntelligenceLine": "The XK nameplate generated significant UK engine enquiries in 2025 [JAG-VERIFIED], with the 5.0-litre AJ133 representing the majority of X150-related demand based on market patterns."
   },
   "bestWorstEngines": {
+    "h2": "Jaguar XK X150 Engine Reliability: Best Choices & Known Risks",
     "items": [
       {
         "slot": "Highest Risk",
@@ -412,7 +413,7 @@
     ]
   },
   "ownershipEconomics": {
-    "h2": "Jaguar XK X150 - Ownership Economics",
+    "h2": "Jaguar XK X150 Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -491,6 +492,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Jaguar XK X150 Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -547,7 +549,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "X150 Engine Replacement Costs - By Engine and Condition",
+    "h2": "Jaguar XK X150 Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -609,6 +611,7 @@
     "note": ""
   },
 "coreVariants": {
+  "h2": "Jaguar X150 Engine Variants & Powertrain Options",
   "dieselVariants": [],
   "petrolVariants": [
     {
@@ -631,6 +634,7 @@
   "scopeNote": "All variants listed are X150 only. The XK and XKR were available as both coupé and convertible. The XKR-S and XKR-S GT are coupé‑only, higher‑output versions of the 5.0-litre supercharged V8."
 },
   "marketIntelligence": {
+    "h2": "Jaguar XK X150 Engine Market Intelligence: Enquiries & Replacement Costs",
     "mostRequestedEngines": [
       "1. AJ133 / 508PS 5.0 Supercharged (560 requests across XK/XJ/XF applications [JAG-VERIFIED])",
       "2. AJ133 / 508PN 5.0 Naturally Aspirated (330 requests across XJ/XF applications [JAG-VERIFIED])",
@@ -672,6 +676,7 @@
     ]
   },
   "faq": {
+    "h2": "Jaguar X150 Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -726,7 +731,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Jaguar XK X150 Owners Trust JaguarEngine.uk",
+    "h2": "Jaguar XK X150 Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted XK Engine Suppliers",

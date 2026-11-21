@@ -118,7 +118,7 @@ function HeroTitle({ title, isDark }) {
 
   return (
     <h1 className={`model-hero-title ${isLong ? "model-hero-title--long" : ""} text-[var(--color-text)]`}>
-      <span className="block" dangerouslySetInnerHTML={{ __html: lead }} />
+      <span className="block" dangerouslySetInnerHTML={{ __html: lead }} />{" "}
       {rest || accent ? (
         <span className="block">
           {rest ? <span dangerouslySetInnerHTML={{ __html: rest }} /> : null}{" "}

@@ -292,7 +292,7 @@
   },
   "hero": {
     "tagPill": "Jaguar XJ X351 • Saloon • 2010-2019",
-    "h1": "Jaguar XJ X351 Engines - The Complete UK Guide",
+    "h1": "Jaguar XJ X351 Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the X351 flagship saloon - from the 3.0-litre V6 diesel and supercharged V6 to the 5.0-litre naturally aspirated and supercharged V8s. Real UK replacement costs and honest reliability data for Jaguar's last traditionally-powered XJ. Backed by 151+ real UK enquiries in 2025 [JAG-VERIFIED].",
     "trustStrip": [
       {
@@ -319,7 +319,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Jaguar XJ X351 Engine Codes - The Complete Database",
+    "h2": "Jaguar XJ X351 Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every engine fitted to the X351 specifically - including the 3.0 V6 diesel, the 3.0 supercharged V6 that replaced it, the 2.0 turbo four for the Chinese market, and the full range of 5.0 V8s.",
     "columns": [
       "Engine Code",
@@ -426,12 +426,13 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Jaguar XJ X351 - Overview",
+    "h2": "Jaguar X351 Overview: Engine Range, Design & Key Facts",
     "intro": "The X351 is the fourth generation of Jaguar's flagship XJ saloon, launched in 2010 as the first model to feature Ian Callum's new design language. Built on a revolutionary all‑aluminium architecture - claimed to be the lightest in its class by 150 kg - it introduced a dramatic, coupé‑like silhouette that transformed the XJ's image. The engine line‑up evolved significantly: at launch, the XJ offered a 3.0‑litre V6 diesel, a 385 PS 5.0‑litre naturally aspirated V8, and a 510 PS 5.0‑litre supercharged V8. In 2012, a 3.0‑litre supercharged V6 and a 2.0‑litre turbocharged four‑cylinder were added for the growing Chinese market. The flagship XJR arrived in 2013 with a 550 PS supercharged V8. Production ended in July 2019 after more than 120,000 units.",
     "keyFacts": "Platform: Jaguar X351 (all‑aluminium monocoque, front‑engine, rear‑wheel drive) • Predecessor: Jaguar XJ (X350) • Successor: None (XJ was discontinued; no direct successor) • Sibling body styles in this generation: 4‑door saloon (standard and long wheelbase)",
     "marketIntelligenceLine": "The XJ X351 generated 151 real UK engine enquiries in 2025 [JAG-VERIFIED], with the 3.0 V6 diesel and 5.0 V8 supercharged variants accounting for the majority of demand."
   },
   "bestWorstEngines": {
+    "h2": "Jaguar XJ X351 Engine Reliability: Best Choices & Known Risks",
     "items": [
       {
         "slot": "Best Petrol Overall",
@@ -466,7 +467,7 @@
     ]
   },
   "ownershipEconomics": {
-    "h2": "Jaguar XJ X351 - Ownership Economics",
+    "h2": "Jaguar XJ X351 Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -553,6 +554,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Jaguar XJ X351 Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -622,7 +624,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "XJ X351 Engine Replacement Costs - By Engine and Condition",
+    "h2": "Jaguar XJ X351 Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -692,6 +694,7 @@
     "note": ""
   },
 "coreVariants": {
+  "h2": "Jaguar X351 Petrol & Diesel Engine Variants",
   "dieselVariants": [
     {
       "name": "3.0D",
@@ -743,6 +746,7 @@
   "scopeNote": "All variants listed are X351 only. The 2.0T was primarily offered in the Chinese market but is also present in limited numbers in the UK. The XJR (550 PS) arrived in 2013, with the XJR 575 and XJ50 special editions launched in 2018."
 },
   "marketIntelligence": {
+    "h2": "Jaguar XJ X351 Engine Market Intelligence: Enquiries & Replacement Costs",
     "mostRequestedEngines": [
       "1. AJ133 / 508PS 5.0 Supercharged (560 requests across XK/XJ/XF applications [JAG-VERIFIED])",
       "2. AJV6D 3.0 V6 Diesel (pattern data)",
@@ -784,6 +788,7 @@
     ]
   },
   "faq": {
+    "h2": "Jaguar X351 Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -838,7 +843,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Jaguar XJ X351 Owners Trust JaguarEngine.uk",
+    "h2": "Jaguar XJ X351 Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted XJ Engine Suppliers",

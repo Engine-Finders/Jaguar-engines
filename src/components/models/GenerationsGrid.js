@@ -8,6 +8,7 @@ import { BookOpen, NumberGlyph, Scale } from "@/components/models/brandIcons";
 import { useTheme } from "@/components/shared/themeProvider";
 import { carImageFor } from "@/components/shared/carImage";
 import { outsideTags } from "@/components/models/outsideTags";
+import { isApprovedHeading, modelFromHeading, splitHeading } from "@/components/models/seoHeading";
 
 /*
  * Model page "Generations" (section 4), built from the 1536px brand references (light + dark).
@@ -51,7 +52,8 @@ function typeset(text = "") {
 
 // "E-Pace - One Generation, Five Powertrains" -> "E-Pace — One Generation," / "Five Powertrains"
 // "XF Generations - Find Your Vehicle"       -> "XF Generations —" / "Find Your Vehicle"
-function splitTitle(title = "") {
+// Approved SEO wording: split at the colon / question / dash; older wording keeps the original split.
+function splitTitleLegacy(title = "") {
   const clean = cleanText(title);
   const match = clean.match(/^(.*?)\s+[-–—]\s+(.*)$/);
   if (!match) return { main: clean, accent: "" };
@@ -61,7 +63,14 @@ function splitTitle(title = "") {
   return { main: `${model} —`, accent: rest };
 }
 
+function splitTitle(title = "") {
+  if (!isApprovedHeading(cleanText(title))) return splitTitleLegacy(title);
+  const { lead, accent } = splitHeading(cleanText(title));
+  return { main: lead, accent };
+}
+
 function modelNameFromH2(h2 = "") {
+  if (isApprovedHeading(cleanText(h2))) return modelFromHeading(cleanText(h2));
   return cleanText(h2).split(/\s+(?:[-–—]|Generations)\s/)[0].replace(/^Jaguar\s+/, "").trim();
 }
 
@@ -572,7 +581,7 @@ export default function GenerationsGrid({ data }) {
     <section id="generations" className="model-gens relative overflow-hidden bg-[var(--color-page)] text-[var(--color-text)]">
       <div className="mx-auto w-full max-w-[1546px] px-4 pb-12 pt-10 sm:px-6 lg:px-[var(--gn-px)] lg:pb-[var(--gn-pb)] lg:pt-[var(--gn-pt)]">
         <h2 className={`model-gens-title ${tones.text}`}>
-          <span className="block" dangerouslySetInnerHTML={{ __html: title.main }} />
+          <span className="block" dangerouslySetInnerHTML={{ __html: title.main }} />{" "}
           {title.accent ? <span className={`block ${tones.accent}`} dangerouslySetInnerHTML={{ __html: title.accent }} /> : null}
         </h2>
 

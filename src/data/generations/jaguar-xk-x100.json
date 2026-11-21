@@ -238,7 +238,7 @@
   },
   "hero": {
     "tagPill": "Jaguar XK X100 • Coupé / Convertible • 1996-2006",
-    "h1": "Jaguar XK X100 Engines - The Complete UK Guide",
+    "h1": "Jaguar XK X100 Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the Jaguar XK X100 - from the 4.0-litre AJ-V8 that launched the XK8 to the supercharged 4.2-litre that powered the XKR. Real UK replacement costs, honest reliability data, and the plastic timing chain tensioners that define this generation's ownership story. Backed by real UK X100 enquiries in 2025 [JAG-VERIFIED].",
     "trustStrip": [
       {
@@ -265,7 +265,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Jaguar XK X100 Engine Codes - The Complete Database",
+    "h2": "Jaguar XK X100 Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every engine fitted to the X100 - from the 4.0-litre naturally aspirated and supercharged V8s to the 4.2-litre replacements.",
     "columns": [
       "Engine Code",
@@ -336,12 +336,13 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Jaguar XK X100 - Overview",
+    "h2": "Jaguar X100 Overview: Engine Range, Design & Key Facts",
     "intro": "The Jaguar XK8 (project code X100) launched in 1996 as the successor to the XJ-S, marking Jaguar's first V8-powered production car. Available as a two-door coupé or convertible, it introduced the new AJ-V8 engine family and established a design language that would define the brand for a decade. A 1998 update brought the supercharged XKR, and a major 2002 mechanical refresh enlarged both engines to 4.2 litres and introduced a six-speed automatic transmission.",
     "keyFacts": "Platform: Jaguar XJS (modified), shared with Aston Martin DB7 • Predecessor: Jaguar XJ-S • Successor: Jaguar XK X150 (2006-2014) • Sibling body styles in this generation: None (X100 is the sole XK body code)",
     "marketIntelligenceLine": "The X100 generated real UK engine enquiries in 2025 [JAG-VERIFIED], concentrated on the 4.0-litre timing chain tensioner concerns and 4.2-litre engine upgrades as owners seek preventative maintenance."
   },
   "bestWorstEngines": {
+    "h2": "Jaguar XK X100 Engine Reliability: Best Choices & Known Risks",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -382,7 +383,7 @@
     ]
   },
   "ownershipEconomics": {
-    "h2": "Jaguar XK X100 - Ownership Economics",
+    "h2": "Jaguar XK X100 Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -445,6 +446,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Jaguar XK X100 Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -561,7 +563,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "X100 Engine Replacement Costs - By Engine and Condition",
+    "h2": "Jaguar XK X100 Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -607,6 +609,7 @@
     "note": ""
   },
 "coreVariants": {
+  "h2": "Jaguar X100 Engine Variants & Powertrain Options",
   "dieselVariants": [],
   "petrolVariants": [
     {
@@ -629,6 +632,7 @@
   "scopeNote": "All variants listed are X100 only. The X150 (2006-2014) shares the XK name but is a completely different generation with its own engine line-up - see the X150 Generation Page for those specifications."
 },
   "marketIntelligence": {
+    "h2": "Jaguar XK X100 Engine Market Intelligence: Enquiries & Replacement Costs",
     "mostRequestedEngines": [
       "1. AJ26 (4.0 naturally aspirated) - highest enquiry volume due to timing chain tensioner concerns",
       "2. AJ27 (4.0 supercharged) - XKR performance enquiries",
@@ -670,6 +674,7 @@
     ]
   },
   "faq": {
+    "h2": "Jaguar X100 Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -724,7 +729,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Jaguar XK X100 Owners Trust JaguarEngine.uk",
+    "h2": "Jaguar XK X100 Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted X100 Engine Suppliers",

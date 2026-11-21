@@ -250,7 +250,7 @@
   },
   "hero": {
     "tagPill": "Jaguar XJ X350/X358 • Saloon • 2003-2009",
-    "h1": "Jaguar XJ X350/X358 Engines - The Complete UK Guide",
+    "h1": "Jaguar XJ X350/X358 Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the X350 and facelifted X358 - from the 3.0-litre V6 and 3.5/4.2-litre V8s to the supercharged 4.2 XJR and the 2.7-litre diesel that brought new buyers to the brand. Real UK replacement costs, honest reliability data, and the cooling system weaknesses that define this aluminium-bodied generation. Backed by real UK X350/X358 enquiries in 2025 [JAG-VERIFIED].",
     "trustStrip": [
       {
@@ -277,7 +277,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Jaguar XJ X350/X358 Engine Codes - The Complete Database",
+    "h2": "Jaguar XJ X350/X358 Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every engine fitted to the X350 and X358 - from the entry-level V6 to the supercharged XJR flagship.",
     "columns": [
       "Engine Code",
@@ -360,12 +360,13 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Jaguar XJ X350/X358 - Overview",
+    "h2": "Jaguar X350/X358 Overview: Engine Range, Design & Key Facts",
     "intro": "The Jaguar XJ X350, launched in 2003, was a landmark car - the first production vehicle to use an aluminium monocoque chassis constructed with aerospace-style rivet-bonding, making it 40% lighter and 50% stiffer than its steel-bodied X308 predecessor. It retained the classic Jaguar silhouette while hiding a host of technological advances beneath the skin, including adaptive air suspension, fibre-optic data transmission and a range of all-new V6, V8 and diesel engines. A 2007 facelift (X358) brought updated styling and electronics.",
     "keyFacts": "Platform: Jaguar aluminium monocoque (X350/X358) • Predecessor: Jaguar XJ X308 • Successor: Jaguar XJ X351 (2010-2019) • Sibling body styles in this generation: None (X350/X358 is the sole XJ body code for this generation)",
     "marketIntelligenceLine": "The X350/X358 generated real UK engine enquiries in 2025 [JAG-VERIFIED], with the 2.7-litre diesel and 4.2-litre V8 accounting for the majority of demand as these cars enter modern classic territory."
   },
   "bestWorstEngines": {
+    "h2": "Jaguar XJ X350/X358 Engine Reliability: Best Choices & Known Risks",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -406,7 +407,7 @@
     ]
   },
   "ownershipEconomics": {
-    "h2": "Jaguar XJ X350/X358 - Ownership Economics",
+    "h2": "Jaguar XJ X350/X358 Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -477,6 +478,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Jaguar XJ X350/X358 Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -593,7 +595,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "X350/X358 Engine Replacement Costs - By Engine and Condition",
+    "h2": "Jaguar XJ X350/X358 Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -647,6 +649,7 @@
     "note": ""
   },
 "coreVariants": {
+  "h2": "Jaguar X350/X358 Petrol & Diesel Engine Variants",
   "dieselVariants": [
     {
       "name": "2.7D",
@@ -678,6 +681,7 @@
   "scopeNote": "All variants listed are X350/X358 only. The X351 (2010-2019) is a completely different generation with its own engine line-up - see the X351 Generation Page for those specifications."
 },
   "marketIntelligence": {
+    "h2": "Jaguar XJ X350/X358 Engine Market Intelligence: Enquiries & Replacement Costs",
     "mostRequestedEngines": [
       "1. 4.2 V8 (AJ33/AJ34) - highest enquiry volume due to cooling system and general maintenance concerns",
       "2. 2.7 TDVi (AJD) - diesel economy and crankshaft bearing enquiries",
@@ -719,6 +723,7 @@
     ]
   },
   "faq": {
+    "h2": "Jaguar X350/X358 Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -773,7 +778,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Jaguar XJ X350/X358 Owners Trust JaguarEngine.uk",
+    "h2": "Jaguar XJ X350/X358 Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted X350/X358 Engine Suppliers",

@@ -8,6 +8,7 @@ import { useTheme } from "@/components/shared/themeProvider";
 import CarOnBackground from "@/components/shared/CarOnBackground";
 import { carImageFor } from "@/components/shared/carImage";
 import { outsideTags } from "@/components/models/outsideTags";
+import { modelFromHeading } from "@/components/models/seoHeading";
 
 /*
  * Model page "Who Should Buy" (section 10), built from the reference (drawn at 1402px; tokens are scaled to
@@ -182,7 +183,7 @@ export default function WhoShouldBuy({ data }) {
   const isDark = theme === "dark";
   const tones = palette(isDark);
   const columns = data.columns?.length === 3 ? data.columns : ["Buyer Profile", "Rating", "Our Verdict"];
-  const model = cleanText(data.h2).match(/Buy (?:an?|the)\s+(.+?)\?/i)?.[1] || "";
+  const model = cleanText(data.h2).match(/Buy (?:an?|the)\s+(.+?)\?/i)?.[1] || modelFromHeading(cleanText(data.h2));
   const rows = data.profiles.map((row) => ({ ...row, image: row.image || carImageFor(model, row.verdict) }));
   // Reference columns: Buyer Profile 547 | Rating 242 | Our Verdict 527 (of 1316).
   const cols = "lg:grid-cols-[minmax(0,547fr)_minmax(0,242fr)_minmax(0,527fr)]";

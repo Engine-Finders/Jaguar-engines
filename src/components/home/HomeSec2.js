@@ -442,15 +442,14 @@ export default function HomeSec2({ data }) {
         </div>
 
         <div className="relative mx-auto w-full max-w-8xl px-4 pt-7 pb-4 md:px-6 md:pt-10 md:pb-5 lg:px-8">
-          <div className="max-w-[560px]">
+          <div className="max-w-[560px] lg:max-w-[840px]">
             <h2
               className={`text-[2.2rem] font-bold leading-[0.98] md:text-[3.1rem] md:leading-[0.96] ${
                 isDark ? "text-white" : "text-[var(--color-text)]"
               }`}
             >
-              Find Your
-              <br className="md:hidden" />{" "}
-              <span className="text-[var(--color-chrome-bright)]">Vehicle</span>
+              Select Your Jaguar Model{" "}
+              <span className="text-[var(--color-chrome-bright)]">for Engine Replacement Options</span>
             </h2>
 
             <div className="mt-3">

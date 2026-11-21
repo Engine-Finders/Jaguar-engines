@@ -221,7 +221,7 @@
   },
   "hero": {
     "tagPill": "Jaguar XJ X308 • Saloon • 1997-2003",
-    "h1": "Jaguar XJ X308 Engines - The Complete UK Guide",
+    "h1": "Jaguar XJ X308 Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the X308-generation Jaguar XJ - from the 3.2-litre V8 to the 4.0-litre and the supercharged XJR. Real UK costs, honest reliability data, and the timing-chain question that defines ownership of Jaguar's first V8-powered saloon. Backed by real UK XJ enquiries in 2025 [JAG-VERIFIED].",
     "trustStrip": [
       {
@@ -248,7 +248,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Jaguar XJ X308 Engine Codes - The Complete Database",
+    "h2": "Jaguar XJ X308 Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every engine fitted to the X308-generation XJ specifically - Jaguar's first V8-powered saloon, offered exclusively with the AJ-V8 engine family from 1997 to 2003.",
     "columns": [
       "Engine Code",
@@ -307,12 +307,13 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Jaguar XJ X308 - Overview",
+    "h2": "Jaguar X308 Overview: Engine Range, Design & Key Facts",
     "intro": "The Jaguar XJ X308 is a full-size luxury saloon manufactured by Jaguar Cars from July 1997 to December 2002. It was the third and final evolution of the XJ40 platform that had been in production since 1986, and the first XJ-generation to be powered exclusively by Jaguar's new AJ-V8 engine. Offered in 3.2-litre and 4.0-litre naturally aspirated forms, plus a supercharged 4.0-litre in the XJR and Daimler Super V8, the X308 kept the rounded four-headlamp bonnet, low roofline, sloping tail, and wrap-around rear light clusters of its X300 predecessor. It was succeeded by the all-aluminium X350 in 2003.",
     "keyFacts": "Platform: XJ40 (third and final evolution) • Predecessor: Jaguar XJ (X300) • Successor: Jaguar XJ (X350) • Sibling body styles: None - X308 is sole XJ body style; available in SWB and LWB",
     "marketIntelligenceLine": "The X308-generation XJ is now a modern classic; enquiries are concentrated on timing-chain replacement and ZF 5HP24 transmission service, with values ranging from £4,000 for entry-level examples to £15,000+ for low-mileage XJRs."
   },
   "bestWorstEngines": {
+    "h2": "Jaguar XJ X308 Engine Reliability: Best Choices & Known Risks",
     "items": [
       {
         "slot": "Highest Risk",
@@ -341,7 +342,7 @@
     ]
   },
   "ownershipEconomics": {
-    "h2": "Jaguar XJ X308 - Ownership Economics",
+    "h2": "Jaguar XJ X308 Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -396,6 +397,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Jaguar XJ X308 Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -484,7 +486,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "X308 Engine Replacement Costs - By Engine and Condition",
+    "h2": "Jaguar XJ X308 Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -522,6 +524,7 @@
     "note": ""
   },
 "coreVariants": {
+  "h2": "Jaguar X308 Engine Variants & Powertrain Options",
   "dieselVariants": [],
   "petrolVariants": [
     {
@@ -551,6 +554,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "Jaguar X308 Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -605,7 +609,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Jaguar XJ X308 Owners Trust JaguarEngine.uk",
+    "h2": "Jaguar XJ X308 Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted X308 Engine Suppliers",

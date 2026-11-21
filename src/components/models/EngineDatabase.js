@@ -11,6 +11,7 @@ import HomeIcon from "@/components/home/homeIcons";
 import OpenQuoteButton from "@/components/shared/OpenQuoteButton";
 import shared from "@/data/shared/engineDatabase.json";
 import { outsideTags, stripTags } from "@/components/models/outsideTags";
+import { isApprovedHeading, splitHeading } from "@/components/models/seoHeading";
 
 /*
  * Model page "Engine Database" (section 5), built from the 1536px brand reference.
@@ -44,10 +45,17 @@ function typeset(text = "") {
   );
 }
 
-function splitTitle(title = "") {
+// Approved SEO wording: split at the colon / question / dash; older wording keeps the original split.
+function splitTitleLegacy(title = "") {
   const match = cleanText(title).match(/^(.*?)\s+[-–—]\s+(.*)$/);
   if (!match) return { main: cleanText(title), accent: "" };
   return { main: `${match[1]} —`, accent: match[2] };
+}
+
+function splitTitle(title = "") {
+  if (!isApprovedHeading(cleanText(title))) return splitTitleLegacy(title);
+  const { lead, accent } = splitHeading(cleanText(title));
+  return { main: lead, accent };
 }
 
 // "140 [JAG-VERIFIED]" -> { value: "140", tag: "[JAG-VERIFIED]" }; "[PATTERN DATA]" -> { value: "", tag }
@@ -471,7 +479,7 @@ export default function EngineDatabase({ data }) {
         <div className="grid gap-6 lg:grid-cols-[minmax(0,544fr)_minmax(0,911fr)] lg:items-start lg:gap-[var(--db-head-gap)]">
           <div className="lg:pt-[calc(var(--db-title)*0.2)]">
             <h2 className={`model-db-title ${tones.text}`}>
-              <span className="block" dangerouslySetInnerHTML={{ __html: title.main }} />
+              <span className="block" dangerouslySetInnerHTML={{ __html: title.main }} />{" "}
               {title.accent ? <span className={`block ${tones.accent}`} dangerouslySetInnerHTML={{ __html: title.accent }} /> : null}
             </h2>
             {data.subHeadline ? (

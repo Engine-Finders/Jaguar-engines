@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ChartNoAxesCombined, FileText, History, Info, Settings, SteeringWheel } from "@/components/models/brandIcons";
 import { useTheme } from "@/components/shared/themeProvider";
 import { carImageFor, engineImageFor } from "@/components/shared/carImage";
+import { isApprovedHeading } from "@/components/models/seoHeading";
 import { outsideTags } from "@/components/models/outsideTags";
 
 /*
@@ -40,7 +41,7 @@ function splitTitle(title = "") {
   if (!match) return { lines: [cleanText(title)], accent: "" };
   const words = match[1].split(" ");
   const last = words.pop();
-  return { lines: [words.join(" "), `${last} —`], accent: match[2] };
+  return { lines: [words.join(" "), `${last} ${isApprovedHeading(title) ? "–" : "—"}`], accent: match[2] };
 }
 
 // "Launch - Early Ingenium" -> ["Launch —", "Early Ingenium"] (two lines, as in the reference)

@@ -233,7 +233,7 @@
   },
   "hero": {
     "tagPill": "Jaguar XJ Series 1 • Saloon • 1968-1973",
-    "h1": "Jaguar XJ Series 1 Engines - The Complete UK Guide",
+    "h1": "Jaguar XJ Series 1 Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the original XJ - from the 2.8-litre and 4.2-litre <a href='https://jaguarengines.uk/engine/xk-straight-six'>XK straight-sixes</a> to the 5.3-litre V12 that arrived in 1972. Real UK costs and honest reliability data for the saloon that defined a generation. Backed by real UK enquiries in 2025 [EM-VERIFIED].",
     "trustStrip": [
       {
@@ -260,7 +260,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Jaguar XJ Series 1 Engine Codes - The Complete Database",
+    "h2": "Jaguar XJ Series 1 Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every engine fitted to the first‑generation XJ (Series 1) specifically - from the September 1968 launch to the 1973 end of production.",
     "columns": [
       "Engine Code",
@@ -331,12 +331,13 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Jaguar XJ Series 1 - Overview",
+    "h2": "Jaguar XJ Series 1 Overview: Engine Range, Design & Key Facts",
     "intro": "The XJ Series 1 is the original Jaguar XJ, launched in September 1968 as the successor to a confusing range of Jaguar saloons - the 420, 420G and S‑Type. Designed under the direction of Sir William Lyons, it was intended to be the definitive Jaguar saloon: combining E‑Type‑inspired styling, superb ride quality, and exceptional performance. The XJ6 launched with a choice of 2.8‑litre or 4.2‑litre versions of Jaguar's legendary XK straight‑six engine. In 1972, a long‑wheelbase option was introduced, followed in March 1973 by the V12‑powered XJ12. Production of the Series 1 ran until 1973, when it was replaced by the Series 2.",
     "keyFacts": "Platform: Monocoque with independent rear suspension • Predecessor: Jaguar 420 / 420G / S‑Type • Successor: XJ Series 2 • Sibling body styles in this generation: None (4‑door saloon only; Daimler Sovereign variants were badge‑engineered versions).",
     "marketIntelligenceLine": "The XJ Series 1 generates consistent UK enquiries [PATTERN DATA], concentrated on 4.2‑litre six‑cylinder cars as these classics enter collector and restoration territory."
   },
   "bestWorstEngines": {
+    "h2": "Jaguar XJ Series 1 Engine Reliability: Best Choices & Known Risks",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -347,7 +348,7 @@
     ]
   },
   "ownershipEconomics": {
-    "h2": "Jaguar XJ Series 1 - Ownership Economics",
+    "h2": "Jaguar XJ Series 1 Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -397,6 +398,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Jaguar XJ Series 1 Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -453,7 +455,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "XJ Series 1 Engine Replacement Costs - By Engine and Condition",
+    "h2": "Jaguar XJ Series 1 Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -499,6 +501,7 @@
     "note": "No Generation variance from the Model Page's baseline figures - XJ Series 1 saloon shares identical engine‑bay access across all variants, so costs are inherited directly per the Authority Model, with no divergence note required. All costs are [EM-QUOTE] from Table A - Engine Replacement Economics (classic engine costs estimated from specialist supplier data)."
   },
 "coreVariants": {
+  "h2": "Jaguar XJ Series 1 Engine Variants & Powertrain Options",
   "dieselVariants": [],
   "petrolVariants": [
     {
@@ -520,6 +523,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "Jaguar XJ Series 1 Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -574,7 +578,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Jaguar XJ Series 1 Owners Trust JaguarEngine.uk",
+    "h2": "Jaguar XJ Series 1 Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted XJ Series 1 Engine Suppliers",

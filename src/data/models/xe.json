@@ -195,7 +195,7 @@
   },
   "hero": {
     "tagPill": "Jaguar • XE • 2015-2024 • 1 Generation • AJ200D • AJ200P • 260 Enquiries (2025)",
-    "h1": "XE Engines - The Complete UK Guide",
+    "h1": "Jaguar XE Engines - Reliability, Problems & Replacement Costs",
     "subHeadline": "Every XE generation (one chassis, two distinct engine eras) - from the pre-2019 AJ200D timing-chain tensioner risk to the revised 2019+ units, real UK failure data, honest replacement costs, and 260 real owner enquiries in 2025 [JAG-VERIFIED]. No brand bias, just what we'd tell a friend.",
     "trustStrip": [
       {
@@ -221,7 +221,7 @@
     }
   },
   "ownershipVerdict": {
-    "h2": "XE - The Ownership Verdict",
+    "h2": "Jaguar XE Engine Reliability & Ownership Verdict",
     "metrics": [
       {
         "metric": "Overall Ownership Rating",
@@ -263,7 +263,7 @@
     "oneLineVerdict": "The XE is the gateway Jaguar that actually makes sense - but only if you buy 2019+ or stick to the petrol Ingenium; pre-2019 diesels carry the same timing-chain caveat as Land Rover's most expensive failures."
   },
   "atAGlance": {
-    "h2": "XE at a Glance",
+    "h2": "Jaguar XE at a Glance",
     "subHeadline": "Everything you need to know about the Jaguar XE in one quick-reference overview.",
     "rows": [
       {
@@ -309,7 +309,7 @@
     ]
   },
   "generations": {
-    "h2": "XE - One Generation, Two Engine Eras",
+    "h2": "Jaguar XE Engine Variants & Powertrains",
     "subHeadline": "The XE ran from 2015 to 2024 on a single chassis - but the 2019 facelift divided the engine range into two eras with meaningfully different reliability profiles.",
     "cards": [
       {
@@ -341,7 +341,7 @@
     }
   },
   "engineDatabase": {
-    "h2": "XE Engine Codes - The Complete Database",
+    "h2": "Jaguar XE Engine Codes: Specifications & Reliability",
     "subHeadline": "Every engine ever fitted to the Jaguar XE - verified against OEM specifications, with real UK enquiry data and replacement costs.",
     "stats": [
       {
@@ -433,7 +433,7 @@
     "dataCorrections": []
   },
   "commonProblems": {
-    "h2": "Common XE Engine Problems",
+    "h2": "Jaguar XE Engine Problems: Symptoms, Risks & Repair Options",
     "subHeadline": "What actually fails on Jaguar XE engines - ranked by severity, with real UK cost guidance.",
     "stat": {
       "icon": "users",
@@ -558,7 +558,7 @@
     ]
   },
   "marketIntelligence": {
-    "h2": "XE Market Intelligence - What 260+ UK Owners Told Us in 2025",
+    "h2": "Jaguar XE Engine Market Intelligence: UK Enquiry Trends",
     "stat": {
       "value": "260+",
       "label": "Total Enquiries in 2025",
@@ -597,7 +597,7 @@
     "label": "Editorial pull-quote"
   },
   "replacementCosts": {
-    "h2": "XE Engine Replacement Costs - By Generation",
+    "h2": "Jaguar XE Engine Replacement Costs - By Engine",
     "subHeadline": "Real UK supply-only pricing for used, reconditioned and rebuilt XE engines - with independent labour guidance.",
     "tables": [
       {
@@ -635,7 +635,7 @@
     }
   },
   "engineEvolution": {
-    "h2": "How the XE Engine Range Evolved - 2015 to Today",
+    "h2": "How the Jaguar XE Engine Range Evolved - 2015 to 2024",
     "subHeadline": "From launch to the final powertrains, explore how engineering, emissions and performance shaped every era of XE engines.",
     "stats": [
       {
@@ -703,7 +703,7 @@
     "footnote": "All engine reliability insights and failure patterns are based on 260+ verified XE enquiries in 2025. Data covers the UK market. [JAG-VERIFIED]"
   },
   "whoShouldBuy": {
-    "h2": "Who Should Buy an XE?",
+    "h2": "Which Jaguar XE Should You Buy? Engine & Ownership Considerations",
     "subHeadline": "Different buyers, different priorities. Here's our verdict on who the XE is perfect for - and who should think twice.",
     "proof": [
       {
@@ -769,7 +769,7 @@
     }
   },
   "calculatorCta": {
-    "h2": "Can I Repair My XE Engine - or Should I Replace It?",
+    "h2": "Jaguar XE Engine Repair vs Replacement: Costs & Options",
     "intro": "The XE's economics come down to a single question: is your car pre- or post-2019? If it's a pre-2019 diesel showing timing-chain rattle, you're facing £3,500-£5,800 of work on a car that might only be worth £7,000 - that's a serious decision. Use our diagnostic calculator to get a personalised verdict based on your exact vehicle value.",
     "smartNote": {
       "lead": "The smarter way to decide:",
@@ -828,7 +828,7 @@
     }
   },
   "trustBlock": {
-    "h2": "Why XE Owners Trust jaguarengines.uk",
+    "h2": "Why Jaguar XE Owners Trust Our Engine Data & Specialist Guidance",
     "signals": [
       {
         "icon": "📊",
@@ -853,7 +853,7 @@
     ]
   },
   "faq": {
-    "h2": "XE Frequently Asked Questions",
+    "h2": "Jaguar XE Frequently Asked Questions",
     "items": [
       {
         "id": 1,
@@ -906,7 +906,7 @@
     }
   },
   "closingActionCards": {
-    "h2": "Ready to Make a Decision?",
+    "h2": "Jaguar XE Engine Guidance & Specialist Quotes",
     "subHeadline": "Everything you need to choose with confidence.\nData. Honesty. Specialists. All in one place.",
     "cards": [
       {

@@ -359,7 +359,7 @@ export default function HomeSec9({ data }) {
         </div>
 
         <div className="relative mx-auto w-full max-w-8xl px-4 pt-5 pb-4 md:px-6 md:pt-7 md:pb-5 lg:px-8">
-          <div className="max-w-[620px]">
+          <div className="max-w-[620px] lg:max-w-[840px]">
             <p
               className={`text-[0.64rem] font-bold uppercase tracking-[0.14em] ${
                 isDark ? "text-white/55" : "text-[var(--color-text-muted)]"
@@ -372,8 +372,8 @@ export default function HomeSec9({ data }) {
                 isDark ? "text-white" : "text-[var(--color-text)]"
               }`}
             >
-              The Jaguar{" "}
-              <span className="text-[var(--color-chrome-bright)]">Failure Database</span>
+              Jaguar Engine Failures &amp; Common Vehicle Faults:{" "}
+              <span className="text-[var(--color-chrome-bright)]">Symptoms, Causes &amp; Repair Costs</span>
             </h2>
             <div className="mt-2.5">
               <MStripe />

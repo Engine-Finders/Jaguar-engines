@@ -250,7 +250,7 @@
   },
   "hero": {
     "tagPill": "Jaguar XJ Series 2 • Saloon / Coupé • 1973-1979",
-    "h1": "Jaguar XJ Series 2 Engines - The Complete UK Guide",
+    "h1": "Jaguar XJ Series 2 Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the XJ Series 2 - from the 2.8-litre XK six to the 5.3-litre V12. Real UK replacement costs, honest failure data, and the 3.4-litre addition that filled the gap in the range. Backed by 276+ real UK X260 enquiries in 2025 [JAG-VERIFIED] (classic-era XJ data pattern-derived).",
     "trustStrip": [
       {
@@ -277,7 +277,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Jaguar XJ Series 2 Engine Codes - The Complete Database",
+    "h2": "Jaguar XJ Series 2 Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every XK six-cylinder and V12 engine fitted to the XJ Series 2 - from the rare 2.8-litre export unit to the mighty 5.3-litre V12.",
     "columns": [
       "Engine Code",
@@ -380,12 +380,13 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Jaguar XJ Series 2 - Overview",
+    "h2": "Jaguar XJ Series 2 Overview: Engine Range, Design & Key Facts",
     "intro": "The XJ Series 2 is the second generation of Jaguar's flagship saloon, introduced in late 1973 for the 1974 model year. Prompted largely by tightening US safety and emissions regulations, the Series 2 brought a higher-set front bumper, revised grille, new dashboard layout, side-impact protection, and various technical upgrades. The engine range initially comprised the 2.8-litre and 4.2-litre XK six-cylinder units alongside the 5.3-litre V12 - with the 3.4-litre six joining the range in spring 1975. A beautifully styled two-door pillarless coupé (XJC) was also offered from 1975 to 1977.",
     "keyFacts": "Platform: Jaguar XJ (steel monocoque, front-engine, rear-wheel-drive) • Predecessor: Jaguar XJ Series 1 (1968-1973) • Successor: Jaguar XJ Series 3 (1979-1992) • Sibling body styles in this generation: Saloon (4-door), Coupé (2-door XJC), LWB (long-wheelbase)",
     "marketIntelligenceLine": "The XJ Series 2 generated 91,227 units worldwide, with 14,226 V12 examples. Today, these classics are sought after by enthusiasts, with usable six-cylinder examples typically fetching £8,000-£12,000 and top-tier V12s exceeding £25,000."
   },
   "bestWorstEngines": {
+    "h2": "Jaguar XJ Series 2 Engine Reliability: Best Choices & Known Risks",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -426,7 +427,7 @@
     ]
   },
   "ownershipEconomics": {
-    "h2": "Jaguar XJ Series 2 - Ownership Economics",
+    "h2": "Jaguar XJ Series 2 Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -489,6 +490,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Jaguar XJ Series 2 Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -605,7 +607,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "XJ Series 2 Engine Replacement Costs - By Engine and Condition",
+    "h2": "Jaguar XJ Series 2 Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -651,6 +653,7 @@
     "note": ""
   },
 "coreVariants": {
+  "h2": "Jaguar XJ Series 2 Engine Variants & Powertrain Options",
   "dieselVariants": [],
   "petrolVariants": [
     {
@@ -669,6 +672,7 @@
   "scopeNote": "All variants listed are XJ Series 2 body code only - produced from 1973 to 1979 in saloon, long-wheelbase saloon, and coupé (XJC) body styles. Daimler-badged variants (Sovereign, Double Six) share the same engines with different trim. The 2.8-litre was export-only and discontinued early in the Series 2 run. The 3.4-litre was introduced in spring 1975. Short-wheelbase saloons were cancelled in 1974, but a short-wheelbase coupé was sold from 1975 to 1978."
 },
   "marketIntelligence": {
+    "h2": "Jaguar XJ Series 2 Engine Market Intelligence: Enquiries & Replacement Costs",
     "mostRequestedEngines": [
       "1. 4.2 XK Six",
       "2. 5.3 V12",
@@ -710,6 +714,7 @@
     ]
   },
   "faq": {
+    "h2": "Jaguar XJ Series 2 Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -764,7 +769,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Jaguar XJ Series 2 Owners Trust JaguarEngine.uk",
+    "h2": "Jaguar XJ Series 2 Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted Series 2 Engine Suppliers",

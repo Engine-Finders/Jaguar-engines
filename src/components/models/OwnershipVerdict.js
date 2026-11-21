@@ -9,6 +9,7 @@ import { carImageFor } from "@/components/shared/carImage";
 import CarOnBackground from "@/components/shared/CarOnBackground";
 import { splitStat } from "@/components/models/statText";
 import { outsideTags } from "@/components/models/outsideTags";
+import { isApprovedHeading, splitHeading } from "@/components/models/seoHeading";
 
 /*
  * Model page "Ownership Verdict", built from the 1536px brand references (light + dark).
@@ -44,10 +45,16 @@ function typeset(text = "") {
   );
 }
 
-function splitTitle(title = "") {
+// Approved SEO wording: split at the colon / question / dash; older wording keeps the original split.
+function splitTitleLegacy(title = "") {
   const match = cleanText(title).match(/^(.*?)\s+[-–—]\s+(.*)$/);
   if (!match) return { lead: cleanText(title), accent: "" };
   return { lead: `${match[1]} —`, accent: match[2] };
+}
+
+function splitTitle(title = "") {
+  if (!isApprovedHeading(cleanText(title))) return splitTitleLegacy(title);
+  return splitHeading(cleanText(title));
 }
 
 /* ---------- Icons ---------- */
@@ -393,6 +400,7 @@ export default function OwnershipVerdict({ data, stats = [] }) {
 
   const isDark = theme === "dark";
   const title = splitTitle(data.h2);
+  const approved = isApprovedHeading(cleanText(data.h2));
   const scene = data.scenes?.[isDark ? "dark" : "light"] || null;
   const photo = scene?.src || data.image || carImageFor(data.h2) || null;
   const summary = data.summaryStats?.length ? data.summaryStats : stats;
@@ -406,10 +414,10 @@ export default function OwnershipVerdict({ data, stats = [] }) {
           <div className="relative flex min-w-0 flex-col sm:grid sm:grid-cols-1 lg:flex">
             <div className="relative z-10 sm:col-start-1 sm:row-start-1 sm:self-start lg:pl-[10px]">
               <h2 className="model-verdict-title">
-                <span className={`block ${isDark ? "text-white" : "text-[#111210]"}`} dangerouslySetInnerHTML={{ __html: title.lead }} />
+                <span className={`block ${isDark ? "text-white" : "text-[#111210]"}`} dangerouslySetInnerHTML={{ __html: title.lead }} />{" "}
                 {title.accent ? (
                   <span
-                    className={`block ${isDark ? "bg-[linear-gradient(180deg,#e4e4e1_0%,#9a9a97_100%)] bg-clip-text text-transparent" : "text-[#111210]"}`}
+                    className={`block ${isDark ? (approved ? "text-[#d9d9d6] [text-shadow:0_0_18px_rgba(0,0,0,0.85),0_0_6px_rgba(0,0,0,0.7)]" : "bg-[linear-gradient(180deg,#e4e4e1_0%,#9a9a97_100%)] bg-clip-text text-transparent") : "text-[#111210]"}`}
                     dangerouslySetInnerHTML={{ __html: title.accent }}
                   />
                 ) : null}

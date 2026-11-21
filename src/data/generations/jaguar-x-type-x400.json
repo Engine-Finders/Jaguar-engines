@@ -227,7 +227,7 @@
   },
   "hero": {
     "tagPill": "Jaguar X-Type X400 • Saloon/Estate • 2001-2009",
-    "h1": "Jaguar X-Type X400 Engines - The Complete UK Guide",
+    "h1": "Jaguar X-Type X400 Engine Replacement: UK Prices, Engine Codes & Options",
     "subHeadline": "Every engine fitted to the X400 - from the Ford-sourced 2.0-litre diesel to the 2.5 and 3.0-litre V6 petrols. Real UK replacement costs, honest failure data, and the V6 timing chain and transfer case issues that define this generation's ownership story. Backed by 120+ real UK X400 enquiries in 2025 [JAG-VERIFIED].",
     "trustStrip": [
       {
@@ -254,7 +254,7 @@
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
-    "h2": "Jaguar X-Type X400 Engine Codes - The Complete Database",
+    "h2": "Jaguar X-Type X400 Engine Codes: Specs, Variants & Reconditioned Prices",
     "subHeadline": "Every engine fitted to the X400 - from the 2001 launch to the 2009 phase-out, including the 2004 facelift updates.",
     "columns": [
       "Engine Code",
@@ -325,12 +325,13 @@
     "dataCorrections": []
   },
   "overview": {
-    "h2": "Jaguar X-Type X400 - Overview",
+    "h2": "Jaguar X400 Overview: Engine Range, Design & Key Facts",
     "intro": "The X400 - better known as the Jaguar X-Type - was Jaguar's compact executive saloon and estate, launched in 2001 and produced until 2009. It was the first Jaguar to be offered with a diesel engine, and it shared its platform and many mechanical components with the Ford Mondeo MK2. The engine lineup comprised Ford-sourced units: the 2.0-litre Duratorq diesel (2.2-litre from 2006) and the 2.5 and 3.0-litre Duratec V6 petrols. A 2004 facelift brought revised styling, but the X400 remained a single generation throughout its production run.",
     "keyFacts": "Platform: Ford Mondeo MK2-based (Ford CD132 platform) • Predecessor: none (X-Type was Jaguar's first compact executive) • Successor: XE (2015) • Sibling body styles in this generation: Saloon and Estate (Sportwagon) - both share the same X400 chassis code.",
     "marketIntelligenceLine": "The X400 generated 120 real UK engine enquiries in 2025 [JAG-VERIFIED], with the 2.0/2.2 diesel variants accounting for the majority of demand."
   },
   "bestWorstEngines": {
+    "h2": "Jaguar X-Type X400 Engine Reliability: Best Choices & Known Risks",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -341,7 +342,7 @@
     ]
   },
   "ownershipEconomics": {
-    "h2": "Jaguar X-Type X400 - Ownership Economics",
+    "h2": "Jaguar X-Type X400 Engine Repair or Replacement? Costs vs Vehicle Value",
     "columns": [
       "Engine",
       "Typical Mileage",
@@ -396,6 +397,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Jaguar X-Type X400 Common Faults: Symptoms, Risks & Repair Advice",
     "problems": [
       {
         "id": 1,
@@ -512,7 +514,7 @@
     ]
   },
   "replacementCosts": {
-    "h2": "X400 Engine Replacement Costs - By Engine and Condition",
+    "h2": "Jaguar X-Type X400 Engine Prices: Used, Reconditioned & Rebuilt Options",
     "columns": [
       "Variant",
       "Engine Code",
@@ -558,6 +560,7 @@
     "note": "No Generation variance note required - no Engine Page baseline exists for these engines yet. Costs are sourced from UK specialist suppliers [JAG-QUOTE]."
   },
 "coreVariants": {
+  "h2": "Jaguar X400 Petrol & Diesel Engine Variants",
   "dieselVariants": [
     {
       "name": "2.0D",
@@ -592,6 +595,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "Jaguar X400 Engine & Replacement FAQs",
     "items": [
       {
         "id": 1,
@@ -646,7 +650,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK Jaguar X-Type X400 Owners Trust JaguarEngine.uk",
+    "h2": "Jaguar X-Type X400 Engine Suppliers & Specialist Quote Options",
     "trustPoints": [
       {
         "title": "Trusted X400 Engine Suppliers",
