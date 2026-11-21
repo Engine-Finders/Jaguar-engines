@@ -8,7 +8,7 @@ import { BookOpen, NumberGlyph, Scale } from "@/components/models/brandIcons";
 import { useTheme } from "@/components/shared/themeProvider";
 import { carImageFor } from "@/components/shared/carImage";
 import { outsideTags } from "@/components/models/outsideTags";
-import { modelFromHeading, splitHeading } from "@/components/models/seoHeading";
+import { isApprovedHeading, modelFromHeading, splitHeading } from "@/components/models/seoHeading";
 
 /*
  * Model page "Generations" (section 4), built from the 1536px brand references (light + dark).
@@ -52,13 +52,26 @@ function typeset(text = "") {
 
 // "E-Pace - One Generation, Five Powertrains" -> "E-Pace — One Generation," / "Five Powertrains"
 // "XF Generations - Find Your Vehicle"       -> "XF Generations —" / "Find Your Vehicle"
+// Approved SEO wording: split at the colon / question / dash; older wording keeps the original split.
+function splitTitleLegacy(title = "") {
+  const clean = cleanText(title);
+  const match = clean.match(/^(.*?)\s+[-–—]\s+(.*)$/);
+  if (!match) return { main: clean, accent: "" };
+  const [, model, rest] = match;
+  const comma = rest.indexOf(",");
+  if (comma !== -1) return { main: `${model} — ${rest.slice(0, comma + 1)}`, accent: rest.slice(comma + 1).trim() };
+  return { main: `${model} —`, accent: rest };
+}
+
 function splitTitle(title = "") {
+  if (!isApprovedHeading(cleanText(title))) return splitTitleLegacy(title);
   const { lead, accent } = splitHeading(cleanText(title));
   return { main: lead, accent };
 }
 
 function modelNameFromH2(h2 = "") {
-  return modelFromHeading(cleanText(h2));
+  if (isApprovedHeading(cleanText(h2))) return modelFromHeading(cleanText(h2));
+  return cleanText(h2).split(/\s+(?:[-–—]|Generations)\s/)[0].replace(/^Jaguar\s+/, "").trim();
 }
 
 // Card title -> chassis code, e.g. "XJ X351 (2010-2019)" -> "X351"; "2019-2024: Revised V8 Era" -> "2019-2024".

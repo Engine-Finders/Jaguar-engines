@@ -8,7 +8,7 @@ import HomeIcon from "@/components/home/homeIcons";
 import OpenQuoteButton from "@/components/shared/OpenQuoteButton";
 import { carImageFor } from "@/components/shared/carImage";
 import { outsideTags } from "@/components/models/outsideTags";
-import { splitHeading } from "@/components/models/seoHeading";
+import { isApprovedHeading, splitHeading } from "@/components/models/seoHeading";
 import shared from "@/data/shared/replacementCosts.json";
 
 /*
@@ -41,7 +41,14 @@ function typeset(text = "") {
   );
 }
 
+// Approved SEO wording: split at the colon / question / dash; older wording keeps the original split.
+function splitTitleLegacy(title = "") {
+  const match = cleanText(title).match(/^(.*?)\s+[-–—]\s+(.*)$/);
+  return match ? { main: `${match[1]} —`, accent: match[2] } : { main: cleanText(title), accent: "" };
+}
+
 function splitTitle(title = "") {
+  if (!isApprovedHeading(cleanText(title))) return splitTitleLegacy(title);
   const { lead, accent } = splitHeading(cleanText(title));
   return { main: lead, accent };
 }

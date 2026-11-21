@@ -23,7 +23,12 @@ Headings below are the text as rendered in the server HTML (what search engines 
 
 ## Not changed (please confirm)
 
-- **I-Pace model page (`/i-pace-drive-unit-guide`) and I-Pace X590 generation page (`/i-pace/x590`).** The I-Pace is fully electric (drive units and battery, no engine). The homepage brief says the I-Pace stays a dedicated EV drive-unit/battery topic, not conventional engine replacement, so the "Engines – … Replacement Costs" and "Engine Replacement: … Engine Codes" formulas would be inaccurate. These two pages keep their current headings until EV-specific wording is approved.
+- **I-Pace model page (`/i-pace-drive-unit-guide`) and I-Pace X590 generation page (`/i-pace/x590`).** The I-Pace is fully electric (drive units and battery, no engine). The homepage brief says the I-Pace stays a dedicated EV drive-unit/battery topic, not conventional engine replacement, so the "Engines – … Replacement Costs" and "Engine Replacement: … Engine Codes" formulas would be inaccurate. These two pages keep their current headings and styling until EV-specific wording is approved. Two invisible fixes do reach them: the heading text now has a space where two lines met (e.g. "Owners Trust", not "OwnersTrust"), and "at a Glance" no longer breaks before "Glance".
+
+## Kept exactly as before
+
+- **Button labels and CTA text.** On generation pages these are built from the page name, so they now read it from the page's name tag instead of the new H1. Every label stays identical (e.g. "Get a Jaguar XJ XJ40 Engine Quote" on the XJ40 page).
+- Compared against `main` page by page: titles, meta descriptions, canonical tags, H3-H6, every link, button, image and all body text are unchanged on all 30 pages, apart from the approved headings and homepage descriptions.
 
 ## Existing issues found (outside this heading-only change)
 

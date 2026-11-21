@@ -11,7 +11,7 @@ import HomeIcon from "@/components/home/homeIcons";
 import OpenQuoteButton from "@/components/shared/OpenQuoteButton";
 import shared from "@/data/shared/engineDatabase.json";
 import { outsideTags, stripTags } from "@/components/models/outsideTags";
-import { splitHeading } from "@/components/models/seoHeading";
+import { isApprovedHeading, splitHeading } from "@/components/models/seoHeading";
 
 /*
  * Model page "Engine Database" (section 5), built from the 1536px brand reference.
@@ -45,7 +45,15 @@ function typeset(text = "") {
   );
 }
 
+// Approved SEO wording: split at the colon / question / dash; older wording keeps the original split.
+function splitTitleLegacy(title = "") {
+  const match = cleanText(title).match(/^(.*?)\s+[-–—]\s+(.*)$/);
+  if (!match) return { main: cleanText(title), accent: "" };
+  return { main: `${match[1]} —`, accent: match[2] };
+}
+
 function splitTitle(title = "") {
+  if (!isApprovedHeading(cleanText(title))) return splitTitleLegacy(title);
   const { lead, accent } = splitHeading(cleanText(title));
   return { main: lead, accent };
 }

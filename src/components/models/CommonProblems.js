@@ -9,7 +9,7 @@ import HomeIcon from "@/components/home/homeIcons";
 import { engineImageFor } from "@/components/shared/carImage";
 import SectionQuoteCta from "@/components/shared/SectionQuoteCta";
 import { outsideTags } from "@/components/models/outsideTags";
-import { modelFromHeading, splitHeading } from "@/components/models/seoHeading";
+import { isApprovedHeading, modelFromHeading, splitHeading } from "@/components/models/seoHeading";
 
 /*
  * Model page "Common Problems" (section 6), built from the 1536px brand reference.
@@ -73,7 +73,15 @@ function typeset(text = "") {
 }
 
 // "Common E-Pace Engine Problems" -> "Common E-Pace" + "Engine Problems" (accent), as in the reference.
+// Approved SEO wording: split at the colon / question / dash; older wording keeps the original split.
+function splitTitleLegacy(title = "") {
+  const clean = cleanText(title);
+  const match = clean.match(/^(.*?)\s+((?:Engine|Drive Unit|EV)?\s*Problems)$/i);
+  return match ? { main: match[1], accent: match[2].trim() } : { main: clean, accent: "" };
+}
+
 function splitTitle(title = "") {
+  if (!isApprovedHeading(cleanText(title))) return splitTitleLegacy(title);
   const { lead, accent } = splitHeading(cleanText(title));
   return { main: lead, accent };
 }

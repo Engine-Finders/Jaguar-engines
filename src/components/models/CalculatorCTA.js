@@ -9,7 +9,7 @@ import HomeIcon from "@/components/home/homeIcons";
 import CarOnBackground from "@/components/shared/CarOnBackground";
 import { carImageFor } from "@/components/shared/carImage";
 import { outsideTags } from "@/components/models/outsideTags";
-import { splitHeading } from "@/components/models/seoHeading";
+import { isApprovedHeading, splitHeading } from "@/components/models/seoHeading";
 
 /*
  * Model page "Can I Repair My Engine — or Should I Replace It?" (section 11), built from the 1536px
@@ -36,7 +36,15 @@ function typeset(text = "") {
 }
 
 // "Can I Repair My E-Pace Engine - or Should I Replace It?" -> "Can I Repair My E-Pace Engine —" / "or " + accent
+// Approved SEO wording: split at the colon / question / dash; older wording keeps the original split.
+function splitTitleLegacy(title = "") {
+  const match = cleanText(title).match(/^(.*?)\s+[-–—]\s+(or)\s+(.*)$/i);
+  if (!match) return { lead: cleanText(title), or: "", accent: "" };
+  return { lead: `${match[1]} —`, or: match[2], accent: match[3] };
+}
+
 function splitTitle(title = "") {
+  if (!isApprovedHeading(cleanText(title))) return splitTitleLegacy(title);
   const { lead, accent } = splitHeading(cleanText(title));
   return { lead, or: "", accent };
 }

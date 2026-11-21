@@ -35,3 +35,24 @@ export function modelFromHeading(text = "") {
   const lead = clean.replace(/^(?:Common|Why|How the)\s+/i, "").replace(/^Jaguar\s+/i, "");
   return lead.split(/\s+(?:Engines?|Drive Unit|Generations|at a Glance|Frequently|Owners|-|–|—)(?:\s|:|$)/i)[0].trim();
 }
+
+// True for headings written with the approved SEO formulas (model pages). Pages still on their older
+// wording (the I-Pace EV guide) keep each section's original split and styling.
+const APPROVED = [
+  / Engines? - Reliability, Problems & Replacement Costs$/,
+  / Engine Reliability & Ownership Verdict$/,
+  / (?:Engine Variants & Powertrains|Generations(?: & Body Styles)?: Compare Engine Options)$/,
+  / Engine Codes: Specifications & Reliability$/,
+  / Engine Problems: Symptoms, Risks & Repair Options$/,
+  / Engine Market (?:Intelligence: UK Enquiry Trends|Overview)$/,
+  / Engine Replacement Costs [-–—] By (?:Bodystyle|Generation|Engine)$/,
+  /^How the .+ Engine Range Evolved [-–—] /,
+  /^Which .+ Should You Buy\? Engine & Ownership Considerations$/,
+  / Engine Repair vs Replacement: Costs & Options$/,
+  /^Why .+ Owners Trust Our Engine Data & Specialist Guidance$/,
+  / Engine (?:Guidance & Specialist Quotes|Options & Specialist Guidance)$/,
+];
+export function isApprovedHeading(text = "") {
+  const clean = String(text ?? "").replace(/<[^>]*>/g, "").replace(/ /g, " ").replace(/\s+/g, " ").trim();
+  return APPROVED.some((pattern) => pattern.test(clean));
+}

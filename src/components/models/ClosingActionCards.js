@@ -7,7 +7,7 @@ import { Handshake, Search, Stethoscope } from "@/components/models/brandIcons";
 import { useTheme } from "@/components/shared/themeProvider";
 import CarOnBackground from "@/components/shared/CarOnBackground";
 import { outsideTags } from "@/components/models/outsideTags";
-import { splitHeading } from "@/components/models/seoHeading";
+import { isApprovedHeading, splitHeading } from "@/components/models/seoHeading";
 
 /*
  * Model page "Ready to Make a Decision?" (section 14), built from the 1536px reference: one card holding the
@@ -33,7 +33,14 @@ function typeset(text = "") {
 }
 
 // "Ready to Make a Decision?" -> "Ready to Make" / accent "a Decision?"
+// Approved SEO wording: split at the colon / question / dash; older wording keeps the original split.
+function splitTitleLegacy(title = "") {
+  const match = cleanText(title).match(/^(.*?)\s+(a\s+Decision\??)$/i);
+  return match ? { lead: match[1], accent: match[2] } : { lead: cleanText(title), accent: "" };
+}
+
 function splitTitle(title = "") {
+  if (!isApprovedHeading(cleanText(title))) return splitTitleLegacy(title);
   return splitHeading(cleanText(title));
 }
 

@@ -8,7 +8,7 @@ import HomeIcon from "@/components/home/homeIcons";
 import CarOnBackground from "@/components/shared/CarOnBackground";
 import { carImageFor } from "@/components/shared/carImage";
 import { outsideTags } from "@/components/models/outsideTags";
-import { splitHeading } from "@/components/models/seoHeading";
+import { isApprovedHeading, splitHeading } from "@/components/models/seoHeading";
 
 /*
  * Model page "Market Intelligence" + editorial pull-quote (section 7), built from the 1536px reference.
@@ -40,7 +40,16 @@ function typeset(text = "") {
 
 // "E-Pace Market Intelligence - What 140 UK Owners Told Us in 2025"
 //   -> line 1 "E-Pace Market Intelligence —", line 2 "What " + accent "140 UK Owners" + " Told Us in 2025"
+// Approved SEO wording: split at the colon / question / dash; older wording keeps the original split.
+function splitTitleLegacy(title = "") {
+  const clean = cleanText(title);
+  const [lead, tail = ""] = clean.split(/\s+[-–—]\s+/);
+  const accent = tail.match(/^(What\s+)(.+?\bOwners)(.*)$/i);
+  return { lead: tail ? `${lead} —` : lead, before: accent ? accent[1] : tail, accent: accent ? accent[2] : "", after: accent ? accent[3] : "" };
+}
+
 function splitTitle(title = "") {
+  if (!isApprovedHeading(cleanText(title))) return splitTitleLegacy(title);
   const { lead, accent } = splitHeading(cleanText(title));
   return { lead, before: "", accent, after: "" };
 }
